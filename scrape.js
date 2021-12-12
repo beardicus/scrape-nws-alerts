@@ -25,7 +25,7 @@ async function scrape() {
     // TODO: add mechanism to pull updated alerts again
     if (await exists(fullPath)) {
       skipped++
-      break
+      continue
     }
 
     // if not, make sure the directory exists,
