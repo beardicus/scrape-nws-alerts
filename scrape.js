@@ -28,8 +28,9 @@ async function scrape() {
       continue
     }
 
-    // if not, make sure the directory exists,
-    // then download and save the alert details
+    // if not, take a courtesy break, make sure the directory
+    // exists, then download and save the alert details
+    await sleep(1000)
     await mkdir(directory, { recursive: true })
     await save(fullPath, await fetch(link))
     saved++
@@ -67,4 +68,8 @@ async function exists(path) {
   } catch {
     return false
   }
+}
+
+function sleep(ms) {
+  return new Promise((resolve) => setTimeout(resolve, ms))
 }
