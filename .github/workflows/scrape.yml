@@ -11,13 +11,19 @@ jobs:
       - name: Check out repo
         uses: actions/checkout@v2
 
+      - name: Install Node
+        uses: actions/setup-node@v2
+        with:
+          node-version: '16'
+          cache: npm
+      
       - name: Install Node dependencies
         run: npm install
 
       - name: Fetch latest data
         run: npm run scrape
 
-      - name: Commit and push if it changed
+      - name: Commit and push if changed
         run: |-
           git config user.name "Automated"
           git config user.email "actions@users.noreply.github.com"
