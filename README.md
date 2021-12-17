@@ -4,9 +4,7 @@ This repo is [Git scraping](https://simonwillison.net/2020/Oct/9/git-scraping/) 
 
 The Atom XML feed of alerts can be found at [data/feed.xml](https://github.com/beardicus/scrape-nws-alerts/blob/main/data/feed.xml). This feed provides summaries of currently active alerts and links to details.
 
-Alert details are scraped to daily directories in [data/](https://github.com/beardicus/scrape-nws-alerts/tree/main/data), using their rather unruly IDs as filenames, such as [data/2021-12-11/AK1261CA107794.WinterWeatherAdvisory.1261CA1EE4F0AK.AFGWSWNSB.59726cda58a50e89751a70d0e007b4c4.xml](https://github.com/beardicus/scrape-nws-alerts/blob/main/data/2021-12-11/AK1261CA107794.WinterWeatherAdvisory.1261CA1EE4F0AK.AFGWSWNSB.59726cda58a50e89751a70d0e007b4c4.xml).
-
-The alerts are XML files that use the [Common Alerting Protocol](https://www.oasis-open.org/committees/download.php/14759/emergency-CAPv1.1.pdf). They seem to use a variety of methods of geocoding, including FIPS6 and maybe polygons for certain types of alerts.
+Alert details are scraped to daily directories in [data/](https://github.com/beardicus/scrape-nws-alerts/tree/main/data), using their rather unruly IDs as filenames. The alerts are XML files that use the [Common Alerting Protocol](https://www.oasis-open.org/committees/download.php/14759/emergency-CAPv1.1.pdf). They seem to use a variety of methods of geocoding, including FIPS6 and maybe polygons for certain types of alerts.
 
 ## Resources
 
