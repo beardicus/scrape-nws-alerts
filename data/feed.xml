@@ -16,16 +16,48 @@ xmlns = 'http://www.w3.org/2005/Atom'
 xmlns:cap = 'urn:oasis:names:tc:emergency:cap:1.1'
 xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 >
-<!-- http-date = Mon, 03 Jan 2022 20:09:00 GMT -->
+<!-- http-date = Mon, 03 Jan 2022 20:38:00 GMT -->
 <id>https://alerts.weather.gov/cap/us.php?x=0</id>
 <logo>http://alerts.weather.gov/images/xml_logo.gif</logo>
 <generator>NWS CAP Server</generator>
-<updated>2022-01-03T15:09:00-05:00</updated>
+<updated>2022-01-03T11:38:00-09:00</updated>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
 <title>Current Watches, Warnings and Advisories for the United States Issued by the National Weather Service</title>
 <link href="https://alerts.weather.gov/cap/us.php?x=0"/>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=AK1263DC1194D0.HighWindWarning.1263DC3CBBB0AK.AFCNPWAER.afeaaf139d6512e714ade01b5fb29bf9</id>
+<updated>2022-01-03T11:20:00-09:00</updated>
+<published>2022-01-03T11:20:00-09:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>High Wind Warning issued January 03 at 11:20AM AKST until January 05 at 6:00PM AKST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=AK1263DC1194D0.HighWindWarning.1263DC3CBBB0AK.AFCNPWAER.afeaaf139d6512e714ade01b5fb29bf9"/>
+<summary>...HIGH WIND WARNING NOW IN EFFECT UNTIL 6 PM AKST WEDNESDAY... * WHAT...Northeast winds 35 to 45 mph with gusts of 60 to 75 mph expected. Localized whiteout conditions possible due to blowing snow. * WHERE...Matanuska Valley. * WHEN...Until 6 PM AKST Wednesday.</summary>
+<cap:event>High Wind Warning</cap:event>
+<cap:effective>2022-01-03T11:20:00-09:00</cap:effective>
+<cap:expires>2022-01-05T18:00:00-09:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Severe</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Matanuska Valley</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>002170</value>
+<valueName>UGC</valueName>
+<value>AKZ111</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.EXT.PAFC.HW.W.0001.000000T0000Z-220106T0300Z/</value>
+</cap:parameter>
+</entry>
 <entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=AK1263DC112D4C.BlizzardWarning.1263DC1E3730AK.AFCWSWAER.48c3da21289abb5549e1b57eaa85e65c</id>
 <updated>2022-01-03T08:55:00-09:00</updated>
@@ -413,38 +445,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=AK1263DC10A368.HighWindWarning.1263DC1E3730AK.AFCNPWAER.afeaaf139d6512e714ade01b5fb29bf9</id>
-<updated>2022-01-03T05:02:00-09:00</updated>
-<published>2022-01-03T05:02:00-09:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>High Wind Warning issued January 03 at 5:02AM AKST until January 03 at 6:00PM AKST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=AK1263DC10A368.HighWindWarning.1263DC1E3730AK.AFCNPWAER.afeaaf139d6512e714ade01b5fb29bf9"/>
-<summary>...HIGH WIND WARNING REMAINS IN EFFECT UNTIL 6 PM AKST THIS EVENING... * WHAT...Northeast winds 40 to 50 mph with gusts up to 80 mph expected. Localized whiteout conditions possible due to blowing snow. * WHERE...Matanuska Valley.</summary>
-<cap:event>High Wind Warning</cap:event>
-<cap:effective>2022-01-03T05:02:00-09:00</cap:effective>
-<cap:expires>2022-01-03T18:00:00-09:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Severe</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Matanuska Valley</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>002170</value>
-<valueName>UGC</valueName>
-<value>AKZ111</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.PAFC.HW.W.0001.000000T0000Z-220104T0300Z/</value>
-</cap:parameter>
-</entry>
-<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=AK1263DC108040.HighWindWarning.1263DC1EAC60AK.AJKNPWAJK.7e04d0be5031401e218d2d1648ef2bd2</id>
 <updated>2022-01-03T04:12:00-09:00</updated>
 <published>2022-01-03T04:12:00-09:00</published>
@@ -630,6 +630,38 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <value>002090 002290</value>
 <valueName>UGC</valueName>
 <value>AKZ222</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value></value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=AL1263DC119598.SpecialWeatherStatement.1263DC1F96C0AL.HUNSPSHUN.f348800d2548ed48115cd69613a81d45</id>
+<updated>2022-01-03T14:22:00-06:00</updated>
+<published>2022-01-03T14:22:00-06:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Special Weather Statement issued January 03 at 2:22PM CST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=AL1263DC119598.SpecialWeatherStatement.1263DC1F96C0AL.HUNSPSHUN.f348800d2548ed48115cd69613a81d45"/>
+<summary>...Black Ice Possible Tuesday Morning Along and East of Interstate 65... Melting snow will refreeze this evening across the Tennessee Valley, creating patches of black ice, especially on bridges and overpasses Tuesday morning. This includes Limestone, Morgan, Cullman, Marshall, Madison, Jackson, and Dekalb Counties in Alabama. In Southern Middle Tennessee, this includes Lincoln, Franklin, and</summary>
+<cap:event>Special Weather Statement</cap:event>
+<cap:effective>2022-01-03T14:22:00-06:00</cap:effective>
+<cap:expires>2022-01-04T06:00:00-06:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Observed</cap:certainty>
+<cap:areaDesc>Cullman; DeKalb; Jackson; Limestone; Madison; Marshall; Morgan</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>001043 001049 001071 001083 001089 001095 001103</value>
+<valueName>UGC</valueName>
+<value>ALZ005 ALZ006 ALZ007 ALZ008 ALZ009 ALZ010 ALZ016</value>
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
@@ -1675,81 +1707,17 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=DE1263DC1155EC.WinterStormWarning.1263DC11B410DE.PHIWSWPHI.ceb82fdb4461b2d4d66a68b8ecbcf4a5</id>
-<updated>2022-01-03T13:59:00-05:00</updated>
-<published>2022-01-03T13:59:00-05:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=DE1263DC1197F0.CoastalFloodAdvisory.1263DC1EAC60DE.PHICFWPHI.c3a69e36729892b6f8da3e42a0b81fdf</id>
+<updated>2022-01-03T15:28:00-05:00</updated>
+<published>2022-01-03T15:28:00-05:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Winter Storm Warning issued January 03 at 1:59PM EST until January 03 at 4:00PM EST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=DE1263DC1155EC.WinterStormWarning.1263DC11B410DE.PHIWSWPHI.ceb82fdb4461b2d4d66a68b8ecbcf4a5"/>
-<summary>...WINTER STORM WARNING REMAINS IN EFFECT UNTIL 4 PM EST THIS AFTERNOON... * WHAT...Snow, heavy at times. Additional snow accumulations of up to 2 inches mainly over southern portions of these warned zones. * WHERE...In New Jersey, Gloucester, Salem and Camden. In Delaware, New Castle.</summary>
-<cap:event>Winter Storm Warning</cap:event>
-<cap:effective>2022-01-03T13:59:00-05:00</cap:effective>
-<cap:expires>2022-01-03T16:00:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>New Castle</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>010003</value>
-<valueName>UGC</valueName>
-<value>DEZ001</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KPHI.WS.W.0001.000000T0000Z-220103T2100Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=DE1263DC1155EC.WinterStormWarning.1263DC11B410DE.PHIWSWPHI.7df40412674aa705120bf54bb8ad9f3d</id>
-<updated>2022-01-03T13:59:00-05:00</updated>
-<published>2022-01-03T13:59:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Winter Storm Warning issued January 03 at 1:59PM EST until January 03 at 4:00PM EST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=DE1263DC1155EC.WinterStormWarning.1263DC11B410DE.PHIWSWPHI.7df40412674aa705120bf54bb8ad9f3d"/>
-<summary>...WINTER STORM WARNING REMAINS IN EFFECT UNTIL 4 PM EST THIS AFTERNOON... * WHAT...Heavy snow. Additional snow accumulations of 2 to 4 inches. Winds gusting as high as 40 mph. * WHERE...Portions of southern New Jersey, northeast Maryland and central and southern Delaware.</summary>
-<cap:event>Winter Storm Warning</cap:event>
-<cap:effective>2022-01-03T13:59:00-05:00</cap:effective>
-<cap:expires>2022-01-03T16:00:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Delaware Beaches; Inland Sussex; Kent</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>010001 010005</value>
-<valueName>UGC</valueName>
-<value>DEZ002 DEZ003 DEZ004</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KPHI.WS.W.0001.000000T0000Z-220103T2100Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=DE1263DC112E14.CoastalFloodAdvisory.1263DC1EAC60DE.PHICFWPHI.c3a69e36729892b6f8da3e42a0b81fdf</id>
-<updated>2022-01-03T12:57:00-05:00</updated>
-<published>2022-01-03T12:57:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Coastal Flood Advisory issued January 03 at 12:57PM EST until January 04 at 1:00AM EST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=DE1263DC112E14.CoastalFloodAdvisory.1263DC1EAC60DE.PHICFWPHI.c3a69e36729892b6f8da3e42a0b81fdf"/>
-<summary>...COASTAL FLOOD ADVISORY IN EFFECT FROM 7 PM THIS EVENING TO 1 AM EST TUESDAY... ...COASTAL FLOOD WARNING IS CANCELLED... * WHAT...Up to one foot of inundation above ground level expected in low-lying areas near shorelines and tidal waterways.</summary>
+<title>Coastal Flood Advisory issued January 03 at 3:28PM EST until January 04 at 1:00AM EST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=DE1263DC1197F0.CoastalFloodAdvisory.1263DC1EAC60DE.PHICFWPHI.c3a69e36729892b6f8da3e42a0b81fdf"/>
+<summary>...COASTAL FLOOD ADVISORY REMAINS IN EFFECT FROM 7 PM THIS EVENING TO 1 AM EST TUESDAY... * WHAT...Up to one foot of inundation above ground level expected in low-lying areas near shorelines and tidal waterways. * WHERE...Delaware Beaches and Inland Sussex.</summary>
 <cap:event>Coastal Flood Advisory</cap:event>
-<cap:effective>2022-01-03T12:57:00-05:00</cap:effective>
+<cap:effective>2022-01-03T15:28:00-05:00</cap:effective>
 <cap:expires>2022-01-04T01:00:00-05:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
@@ -1767,8 +1735,167 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
-<value>/O.CAN.KPHI.CF.W.0001.000000T0000Z-220103T1800Z/
-/O.EXB.KPHI.CF.Y.0026.220104T0000Z-220104T0600Z/</value>
+<value>/O.CON.KPHI.CF.Y.0026.220104T0000Z-220104T0600Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=DE1263DC1197F0.CoastalFloodAdvisory.1263DC208120DE.PHICFWPHI.01a8c88db9b2e3d7d0d0693feb422e13</id>
+<updated>2022-01-03T15:28:00-05:00</updated>
+<published>2022-01-03T15:28:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Coastal Flood Advisory issued January 03 at 3:28PM EST until January 04 at 1:00PM EST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=DE1263DC1197F0.CoastalFloodAdvisory.1263DC208120DE.PHICFWPHI.01a8c88db9b2e3d7d0d0693feb422e13"/>
+<summary>...COASTAL FLOOD ADVISORY IN EFFECT FROM 7 AM TO 1 PM EST TUESDAY... * WHAT...Up to one foot of inundation above ground level expected in low-lying areas near shorelines and tidal waterways. * WHERE...Kent.</summary>
+<cap:event>Coastal Flood Advisory</cap:event>
+<cap:effective>2022-01-03T15:28:00-05:00</cap:effective>
+<cap:expires>2022-01-04T13:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Kent</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>010001</value>
+<valueName>UGC</valueName>
+<value>DEZ002</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.EXB.KPHI.CF.Y.0026.220104T1200Z-220104T1800Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=DE1263DC1197F0.CoastalFloodAdvisory.1263DC20CF40DE.PHICFWPHI.52179526d68d877464e0fba8cc0f23ca</id>
+<updated>2022-01-03T15:28:00-05:00</updated>
+<published>2022-01-03T15:28:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Coastal Flood Advisory issued January 03 at 3:28PM EST until January 04 at 3:00PM EST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=DE1263DC1197F0.CoastalFloodAdvisory.1263DC20CF40DE.PHICFWPHI.52179526d68d877464e0fba8cc0f23ca"/>
+<summary>...COASTAL FLOOD ADVISORY IN EFFECT FROM 10 AM TO 3 PM EST TUESDAY... * WHAT...Up to one foot of inundation above ground level expected in low-lying areas near shorelines and tidal waterways. * WHERE...In New Jersey, Salem. In Delaware, New Castle.</summary>
+<cap:event>Coastal Flood Advisory</cap:event>
+<cap:effective>2022-01-03T15:28:00-05:00</cap:effective>
+<cap:expires>2022-01-04T15:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>New Castle</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>010003</value>
+<valueName>UGC</valueName>
+<value>DEZ001</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.EXB.KPHI.CF.Y.0026.220104T1500Z-220104T2000Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=DE1263DC119598.WinterStormWarning.1263DC120230DE.PHIWSWPHI.7df40412674aa705120bf54bb8ad9f3d</id>
+<updated>2022-01-03T15:22:00-05:00</updated>
+<published>2022-01-03T15:22:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Winter Storm Warning issued January 03 at 3:22PM EST until January 03 at 6:00PM EST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=DE1263DC119598.WinterStormWarning.1263DC120230DE.PHIWSWPHI.7df40412674aa705120bf54bb8ad9f3d"/>
+<summary>...WINTER STORM WARNING NOW IN EFFECT UNTIL 6 PM EST THIS EVENING... * WHAT...Snow, heavy at times. Additional snow accumulations of up to two inches. Winds gusting as high as 40 mph. * WHERE...Portions of southern New Jersey and central and southern Delaware.</summary>
+<cap:event>Winter Storm Warning</cap:event>
+<cap:effective>2022-01-03T15:22:00-05:00</cap:effective>
+<cap:expires>2022-01-03T18:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Delaware Beaches; Inland Sussex; Kent</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>010001 010005</value>
+<valueName>UGC</valueName>
+<value>DEZ002 DEZ003 DEZ004</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.EXT.KPHI.WS.W.0001.000000T0000Z-220103T2300Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=FL1263DC119598.RipCurrentStatement.1263DC1F96C0FL.MFLCFWMFL.7556960a40a4e8106f9e18b76fb12a1d</id>
+<updated>2022-01-03T15:22:00-05:00</updated>
+<published>2022-01-03T15:22:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Rip Current Statement issued January 03 at 3:22PM EST until January 04 at 7:00AM EST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=FL1263DC119598.RipCurrentStatement.1263DC1F96C0FL.MFLCFWMFL.7556960a40a4e8106f9e18b76fb12a1d"/>
+<summary>...HIGH RIP CURRENT RISK NOW IN EFFECT THROUGH TUESDAY MORNING... * WHAT...Dangerous rip currents. * WHERE...Coastal Collier County. * WHEN...Through Tuesday morning. * IMPACTS...Rip currents can sweep even the best swimmers away from shore into deeper water.</summary>
+<cap:event>Rip Current Statement</cap:event>
+<cap:effective>2022-01-03T15:22:00-05:00</cap:effective>
+<cap:expires>2022-01-04T07:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Coastal Collier County</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>012021</value>
+<valueName>UGC</valueName>
+<value>FLZ069</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.EXT.KMFL.RP.S.0001.000000T0000Z-220104T1200Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=FL1263DC119598.RipCurrentStatement.1263DC4B88C0FL.MFLCFWMFL.2f47c96854c959da6865597358ef1f21</id>
+<updated>2022-01-03T15:22:00-05:00</updated>
+<published>2022-01-03T15:22:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Rip Current Statement issued January 03 at 3:22PM EST until January 06 at 7:00PM EST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=FL1263DC119598.RipCurrentStatement.1263DC4B88C0FL.MFLCFWMFL.2f47c96854c959da6865597358ef1f21"/>
+<summary>...HIGH RIP CURRENT RISK NOW IN EFFECT THROUGH THURSDAY EVENING... * WHAT...Dangerous rip currents. * WHERE...Coastal Palm Beach County. * WHEN...Through Thursday evening. * IMPACTS...Rip currents can sweep even the best swimmers away from shore into deeper water.</summary>
+<cap:event>Rip Current Statement</cap:event>
+<cap:effective>2022-01-03T15:22:00-05:00</cap:effective>
+<cap:expires>2022-01-06T19:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Coastal Palm Beach County</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>012099</value>
+<valueName>UGC</valueName>
+<value>FLZ168</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.EXT.KMFL.RP.S.0001.000000T0000Z-220107T0000Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -1801,70 +1928,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value>/O.CON.KTAE.RP.S.0129.000000T0000Z-220104T1200Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=FL1263DC108D88.RipCurrentStatement.1263DC1DC200FL.MFLCFWMFL.7556960a40a4e8106f9e18b76fb12a1d</id>
-<updated>2022-01-03T08:46:00-05:00</updated>
-<published>2022-01-03T08:46:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Rip Current Statement issued January 03 at 8:46AM EST until January 03 at 7:00PM EST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=FL1263DC108D88.RipCurrentStatement.1263DC1DC200FL.MFLCFWMFL.7556960a40a4e8106f9e18b76fb12a1d"/>
-<summary>...HIGH RIP CURRENT RISK REMAINS IN EFFECT UNTIL 7 PM EST THIS EVENING... * WHAT...Dangerous rip currents. * WHERE...Coastal Collier County. * WHEN...Until 7 PM EST this evening. * IMPACTS...Rip currents can sweep even the best swimmers away</summary>
-<cap:event>Rip Current Statement</cap:event>
-<cap:effective>2022-01-03T08:46:00-05:00</cap:effective>
-<cap:expires>2022-01-03T19:00:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Coastal Collier County</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>012021</value>
-<valueName>UGC</valueName>
-<value>FLZ069</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KMFL.RP.S.0001.000000T0000Z-220104T0000Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=FL1263DC108D88.RipCurrentStatement.1263DC3C4680FL.MFLCFWMFL.2f47c96854c959da6865597358ef1f21</id>
-<updated>2022-01-03T08:46:00-05:00</updated>
-<published>2022-01-03T08:46:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Rip Current Statement issued January 03 at 8:46AM EST until January 05 at 7:00PM EST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=FL1263DC108D88.RipCurrentStatement.1263DC3C4680FL.MFLCFWMFL.2f47c96854c959da6865597358ef1f21"/>
-<summary>...HIGH RIP CURRENT RISK REMAINS IN EFFECT THROUGH WEDNESDAY EVENING... * WHAT...Dangerous rip currents. * WHERE...Coastal Palm Beach County. * WHEN...Through Wednesday evening. * IMPACTS...Rip currents can sweep even the best swimmers away</summary>
-<cap:event>Rip Current Statement</cap:event>
-<cap:effective>2022-01-03T08:46:00-05:00</cap:effective>
-<cap:expires>2022-01-05T19:00:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Coastal Palm Beach County</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>012099</value>
-<valueName>UGC</valueName>
-<value>FLZ168</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KMFL.RP.S.0001.000000T0000Z-220106T0000Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -2065,38 +2128,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=GA1263DC110448.WindAdvisory.1263DC11B410GA.CHSNPWCHS.2133656cddc9b13e95633d77e748fce6</id>
-<updated>2022-01-03T11:50:00-05:00</updated>
-<published>2022-01-03T11:50:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Wind Advisory issued January 03 at 11:50AM EST until January 03 at 4:00PM EST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=GA1263DC110448.WindAdvisory.1263DC11B410GA.CHSNPWCHS.2133656cddc9b13e95633d77e748fce6"/>
-<summary>...WIND ADVISORY NOW IN EFFECT UNTIL 4 PM EST THIS AFTERNOON... * WHAT...Northwest winds 15 to 25 mph with gusts up to 45 mph. * WHERE...Portions of southeast South Carolina and southeast Georgia, especially on elevated roadways. * WHEN...Until 4 PM EST this afternoon. * IMPACTS...Gusty winds could blow around unsecured objects.</summary>
-<cap:event>Wind Advisory</cap:event>
-<cap:effective>2022-01-03T11:50:00-05:00</cap:effective>
-<cap:expires>2022-01-03T16:00:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Coastal Chatham; Effingham; Inland Chatham; Screven</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>013051 013103 013251</value>
-<valueName>UGC</valueName>
-<value>GAZ088 GAZ101 GAZ118 GAZ119</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.EXT.KCHS.WI.Y.0001.000000T0000Z-220103T2100Z/</value>
-</cap:parameter>
-</entry>
-<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=GA1263DC10AC64.FloodWarning.1263DC1FF098GA.JAXFLWJAX.6b86dc71a931c60d49bcc420587a199f</id>
 <updated>2022-01-03T09:25:00-05:00</updated>
 <published>2022-01-03T09:25:00-05:00</published>
@@ -2193,6 +2224,39 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <valueName>VTEC</valueName>
 <value>/O.CON.PGUM.SU.Y.0001.000000T0000Z-220104T0800Z/
 /O.CON.PGUM.RP.S.0001.000000T0000Z-220107T0800Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=HI1263DC11946C.FloodAdvisory.1263DC120DE8HI.HFOFLSHFO.6aee205b78661cb4e38d458e74e45b0f</id>
+<updated>2022-01-03T10:19:00-10:00</updated>
+<published>2022-01-03T10:19:00-10:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Flood Advisory issued January 03 at 10:19AM HST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=HI1263DC11946C.FloodAdvisory.1263DC120DE8HI.HFOFLSHFO.6aee205b78661cb4e38d458e74e45b0f"/>
+<summary>...FLOOD ADVISORY IN EFFECT UNTIL 130 PM HST THIS AFTERNOON FOR THE ISLAND OF OAHU IN HONOLULU COUNTY... * WHAT...Flooding caused by excessive rainfall. * WHERE...The island of Oahu in Honolulu County. * WHEN...Until 130 PM HST. * IMPACTS...Minor flooding on roads, poor drainage areas, and in</summary>
+<cap:event>Flood Advisory</cap:event>
+<cap:effective>2022-01-03T10:19:00-10:00</cap:effective>
+<cap:expires>2022-01-03T13:30:00-10:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Oahu in Honolulu</cap:areaDesc>
+<cap:polygon>21.58,-158.3 21.6,-158.13 21.73,-157.98 21.55,-157.83 21.47,-157.83 21.43,-157.79 21.47,-157.78 21.47,-157.71 21.41,-157.73 21.31,-157.64 21.25,-157.69 21.25,-157.72 21.27,-157.73 21.24,-157.82 21.29,-157.87 21.31,-157.97 21.29,-158.12 21.36,-158.15 21.48,-158.25 21.53,-158.25 21.58,-158.3</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>015003</value>
+<valueName>UGC</valueName>
+<value>HIC003</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.NEW.PHFO.FA.Y.0011.220103T2019Z-220103T2330Z/
+/00000.N.ER.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -3765,6 +3829,38 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=KS1263DC11946C.SpecialWeatherStatement.1263DC1F2190KS.ICTSPSICT.eef750276f05d142b0efbc84159393ed</id>
+<updated>2022-01-03T14:19:00-06:00</updated>
+<published>2022-01-03T14:19:00-06:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Special Weather Statement issued January 03 at 2:19PM CST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=KS1263DC11946C.SpecialWeatherStatement.1263DC1F2190KS.ICTSPSICT.eef750276f05d142b0efbc84159393ed"/>
+<summary>...Light Snow and Dangerously Cold Temperatures Mid Week... Dangerously cold temperatures will return to the area Wednesday night through Thursday night, with wind chill values falling down into the 5 below zero to 20 below zero range. In addition to the cold temperatures, a quick round of light accumulating snow is likely Wednesday evening through early Thursday morning, with 1 to</summary>
+<cap:event>Special Weather Statement</cap:event>
+<cap:effective>2022-01-03T14:19:00-06:00</cap:effective>
+<cap:expires>2022-01-04T03:00:00-06:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Observed</cap:certainty>
+<cap:areaDesc>Allen; Barton; Butler; Chase; Chautauqua; Cowley; Elk; Ellsworth; Greenwood; Harper; Harvey; Kingman; Labette; Lincoln; Marion; McPherson; Montgomery; Neosho; Reno; Rice; Russell; Saline; Sedgwick; Sumner; Wilson; Woodson</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>020001 020009 020015 020017 020019 020035 020049 020053 020073 020077 020079 020095 020099 020105 020113 020115 020125 020133 020155 020159 020167 020169 020173 020191 020205 020207</value>
+<valueName>UGC</valueName>
+<value>KSZ032 KSZ033 KSZ047 KSZ048 KSZ049 KSZ050 KSZ051 KSZ052 KSZ053 KSZ067 KSZ068 KSZ069 KSZ070 KSZ071 KSZ072 KSZ082 KSZ083 KSZ091 KSZ092 KSZ093 KSZ094 KSZ095 KSZ096 KSZ098 KSZ099 KSZ100</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value></value>
+</cap:parameter>
+</entry>
+<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=KY1263DC11400C.FloodAdvisory.1263DC2D0440KY.LMKFLSLMK.fec0a45d182723311a9f852e65d2eae7</id>
 <updated>2022-01-03T13:03:00-05:00</updated>
 <published>2022-01-03T13:03:00-05:00</published>
@@ -4359,6 +4455,102 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=MA1263DC1199E4.WinterStormWarning.1263DC1E1020MA.BOXWSWBOX.532569799a4d6281d1345577fe8b070c</id>
+<updated>2022-01-03T15:33:00-05:00</updated>
+<published>2022-01-03T15:33:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Winter Storm Warning issued January 03 at 3:33PM EST until January 03 at 9:00PM EST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MA1263DC1199E4.WinterStormWarning.1263DC1E1020MA.BOXWSWBOX.532569799a4d6281d1345577fe8b070c"/>
+<summary>...WINTER STORM WARNING REMAINS IN EFFECT UNTIL 9 PM EST THIS EVENING... * WHAT...Moderate to heavy snow expected. Total snow accumulations of 3 to 5 inches. Winds gusting as high as 35 mph. * WHERE...Nantucket MA County. * WHEN...Until 9 PM EST this evening.</summary>
+<cap:event>Winter Storm Warning</cap:event>
+<cap:effective>2022-01-03T15:33:00-05:00</cap:effective>
+<cap:expires>2022-01-03T21:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Nantucket</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>025019</value>
+<valueName>UGC</valueName>
+<value>MAZ024</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KBOX.WS.W.0001.000000T0000Z-220104T0200Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=MA1263DC1199E4.WinterWeatherAdvisory.1263DC1E1020MA.BOXWSWBOX.59b7a0a9fde75313d8a7a868dfa920c4</id>
+<updated>2022-01-03T15:33:00-05:00</updated>
+<published>2022-01-03T15:33:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Winter Weather Advisory issued January 03 at 3:33PM EST until January 03 at 9:00PM EST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MA1263DC1199E4.WinterWeatherAdvisory.1263DC1E1020MA.BOXWSWBOX.59b7a0a9fde75313d8a7a868dfa920c4"/>
+<summary>...WINTER WEATHER ADVISORY REMAINS IN EFFECT UNTIL 9 PM EST THIS EVENING... * WHAT...Snow expected. Total snow accumulations of 1 to 3 inches. * WHERE...In Massachusetts, Barnstable MA County. In Rhode Island, Block Island RI County.</summary>
+<cap:event>Winter Weather Advisory</cap:event>
+<cap:effective>2022-01-03T15:33:00-05:00</cap:effective>
+<cap:expires>2022-01-03T21:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Barnstable</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>025001</value>
+<valueName>UGC</valueName>
+<value>MAZ022</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KBOX.WW.Y.0001.000000T0000Z-220104T0200Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=MA1263DC1199E4.WinterWeatherAdvisory.1263DC1E1020MA.BOXWSWBOX.3db11c815190f5a211335020e199a605</id>
+<updated>2022-01-03T15:33:00-05:00</updated>
+<published>2022-01-03T15:33:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Winter Weather Advisory issued January 03 at 3:33PM EST until January 03 at 9:00PM EST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MA1263DC1199E4.WinterWeatherAdvisory.1263DC1E1020MA.BOXWSWBOX.3db11c815190f5a211335020e199a605"/>
+<summary>...WINTER WEATHER ADVISORY REMAINS IN EFFECT UNTIL 9 PM EST THIS EVENING... * WHAT...Snow expected. Total snow accumulations of 2 to 4 inches. Winds gusting as high as 35 mph. * WHERE...Dukes MA County. * WHEN...Until 9 PM EST this evening.</summary>
+<cap:event>Winter Weather Advisory</cap:event>
+<cap:effective>2022-01-03T15:33:00-05:00</cap:effective>
+<cap:expires>2022-01-03T21:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Dukes</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>025007</value>
+<valueName>UGC</valueName>
+<value>MAZ023</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KBOX.WW.Y.0001.000000T0000Z-220104T0200Z/</value>
+</cap:parameter>
+</entry>
+<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=MA1263DC116BCC.CoastalFloodAdvisory.1263DC20A830MA.BOXCFWBOX.b99d8fab6201658d56422943820f8f74</id>
 <updated>2022-01-03T14:15:00-05:00</updated>
 <published>2022-01-03T14:15:00-05:00</published>
@@ -4392,102 +4584,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=MA1263DC10D950.WinterStormWarning.1263DC1E1020MA.BOXWSWBOX.532569799a4d6281d1345577fe8b070c</id>
-<updated>2022-01-03T10:40:00-05:00</updated>
-<published>2022-01-03T10:40:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Winter Storm Warning issued January 03 at 10:40AM EST until January 03 at 9:00PM EST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MA1263DC10D950.WinterStormWarning.1263DC1E1020MA.BOXWSWBOX.532569799a4d6281d1345577fe8b070c"/>
-<summary>...WINTER STORM WARNING REMAINS IN EFFECT UNTIL 9 PM EST THIS EVENING... * WHAT...Moderate to heavy snow expected. Total snow accumulations of 4 to 6 inches. Winds gusting as high as 35 mph. * WHERE...Nantucket MA County.</summary>
-<cap:event>Winter Storm Warning</cap:event>
-<cap:effective>2022-01-03T10:40:00-05:00</cap:effective>
-<cap:expires>2022-01-03T21:00:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Nantucket</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>025019</value>
-<valueName>UGC</valueName>
-<value>MAZ024</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KBOX.WS.W.0001.000000T0000Z-220104T0200Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=MA1263DC10D950.WinterWeatherAdvisory.1263DC1E1020MA.BOXWSWBOX.59b7a0a9fde75313d8a7a868dfa920c4</id>
-<updated>2022-01-03T10:40:00-05:00</updated>
-<published>2022-01-03T10:40:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Winter Weather Advisory issued January 03 at 10:40AM EST until January 03 at 9:00PM EST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MA1263DC10D950.WinterWeatherAdvisory.1263DC1E1020MA.BOXWSWBOX.59b7a0a9fde75313d8a7a868dfa920c4"/>
-<summary>...WINTER WEATHER ADVISORY REMAINS IN EFFECT UNTIL 9 PM EST THIS EVENING... * WHAT...Snow expected. Total snow accumulations of 1 to 4 inches. * WHERE...In Massachusetts, Barnstable MA County. In Rhode Island, Block Island RI County.</summary>
-<cap:event>Winter Weather Advisory</cap:event>
-<cap:effective>2022-01-03T10:40:00-05:00</cap:effective>
-<cap:expires>2022-01-03T21:00:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Barnstable</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>025001</value>
-<valueName>UGC</valueName>
-<value>MAZ022</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KBOX.WW.Y.0001.000000T0000Z-220104T0200Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=MA1263DC10D950.WinterWeatherAdvisory.1263DC1E1020MA.BOXWSWBOX.3db11c815190f5a211335020e199a605</id>
-<updated>2022-01-03T10:40:00-05:00</updated>
-<published>2022-01-03T10:40:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Winter Weather Advisory issued January 03 at 10:40AM EST until January 03 at 9:00PM EST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MA1263DC10D950.WinterWeatherAdvisory.1263DC1E1020MA.BOXWSWBOX.3db11c815190f5a211335020e199a605"/>
-<summary>...WINTER WEATHER ADVISORY REMAINS IN EFFECT UNTIL 9 PM EST THIS EVENING... * WHAT...Snow expected. Total snow accumulations of 3 to 5 inches. Winds gusting as high as 35 mph. * WHERE...Dukes MA County. * WHEN...From 9 AM this morning to 9 PM EST this evening.</summary>
-<cap:event>Winter Weather Advisory</cap:event>
-<cap:effective>2022-01-03T10:40:00-05:00</cap:effective>
-<cap:expires>2022-01-03T21:00:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Dukes</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>025007</value>
-<valueName>UGC</valueName>
-<value>MAZ023</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KBOX.WW.Y.0001.000000T0000Z-220104T0200Z/</value>
-</cap:parameter>
-</entry>
-<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=MD1263DC116974.WinterStormWarning.1263DC11B410MD.LWXWSWLWX.44a18b6d9d23d36c3f1597515861e299</id>
 <updated>2022-01-03T14:09:00-05:00</updated>
 <published>2022-01-03T14:09:00-05:00</published>
@@ -4517,38 +4613,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value>/O.CON.KLWX.WS.W.0001.000000T0000Z-220103T2100Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=MD1263DC1155EC.WinterStormWarning.1263DC11B410MD.PHIWSWPHI.3c9ffa0c9204852c4559d61dddf3cc6c</id>
-<updated>2022-01-03T13:59:00-05:00</updated>
-<published>2022-01-03T13:59:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Winter Storm Warning issued January 03 at 1:59PM EST until January 03 at 4:00PM EST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MD1263DC1155EC.WinterStormWarning.1263DC11B410MD.PHIWSWPHI.3c9ffa0c9204852c4559d61dddf3cc6c"/>
-<summary>...WINTER STORM WARNING REMAINS IN EFFECT UNTIL 4 PM EST THIS AFTERNOON... * WHAT...Heavy snow. Additional snow accumulations of 2 to 4 inches. Winds gusting as high as 40 mph. * WHERE...Portions of southern New Jersey, northeast Maryland and central and southern Delaware.</summary>
-<cap:event>Winter Storm Warning</cap:event>
-<cap:effective>2022-01-03T13:59:00-05:00</cap:effective>
-<cap:expires>2022-01-03T16:00:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Caroline; Kent; Queen Anne&apos;s; Talbot</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>024011 024029 024035 024041</value>
-<valueName>UGC</valueName>
-<value>MDZ012 MDZ015 MDZ019 MDZ020</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KPHI.WS.W.0001.000000T0000Z-220103T2100Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -4680,17 +4744,17 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=MI1263DC0FCC90.WinterStormWatch.1263DC3C4680MI.MQTWSWMQT.26178fb845a9ddb3b375120eb0403fd3</id>
-<updated>2022-01-03T03:52:00-05:00</updated>
-<published>2022-01-03T03:52:00-05:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=MI1263DC119728.WinterStormWatch.1263DC3C4680MI.MQTWSWMQT.26178fb845a9ddb3b375120eb0403fd3</id>
+<updated>2022-01-03T15:26:00-05:00</updated>
+<published>2022-01-03T15:26:00-05:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Winter Storm Watch issued January 03 at 3:52AM EST until January 05 at 7:00PM EST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MI1263DC0FCC90.WinterStormWatch.1263DC3C4680MI.MQTWSWMQT.26178fb845a9ddb3b375120eb0403fd3"/>
-<summary>...WINTER STORM WATCH IN EFFECT FROM TUESDAY EVENING THROUGH WEDNESDAY EVENING... * WHAT...Heavy snow and widespread blowing snow possible. Total snow accumulations of 8 to 13 inches possible. Winds could gust as high as 45 mph. * WHERE...Keweenaw and Northern Houghton Counties.</summary>
+<title>Winter Storm Watch issued January 03 at 3:26PM EST until January 05 at 7:00PM EST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MI1263DC119728.WinterStormWatch.1263DC3C4680MI.MQTWSWMQT.26178fb845a9ddb3b375120eb0403fd3"/>
+<summary>...WINTER STORM WATCH REMAINS IN EFFECT FROM TUESDAY EVENING THROUGH WEDNESDAY EVENING... * WHAT...Heavy snow...along with blowing snow possible. Total snow accumulations exceeding 8 inches are possible. Winds could gust as high as 45 mph. * WHERE...Northern Houghton and Keweenaw counties.</summary>
 <cap:event>Winter Storm Watch</cap:event>
-<cap:effective>2022-01-03T03:52:00-05:00</cap:effective>
+<cap:effective>2022-01-03T15:26:00-05:00</cap:effective>
 <cap:expires>2022-01-05T19:00:00-05:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
@@ -4708,21 +4772,21 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
-<value>/O.NEW.KMQT.WS.A.0001.220105T0000Z-220106T0000Z/</value>
+<value>/O.CON.KMQT.WS.A.0001.220105T0000Z-220106T0000Z/</value>
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=MI1263DC0FCC90.WinterStormWatch.1263DC3C4680MI.MQTWSWMQT.0e3ba5b5ba2941597851b42f1cf8bae3</id>
-<updated>2022-01-03T03:52:00-05:00</updated>
-<published>2022-01-03T03:52:00-05:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=MI1263DC119728.WinterStormWatch.1263DC3C4680MI.MQTWSWMQT.0e3ba5b5ba2941597851b42f1cf8bae3</id>
+<updated>2022-01-03T15:26:00-05:00</updated>
+<published>2022-01-03T15:26:00-05:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Winter Storm Watch issued January 03 at 3:52AM EST until January 05 at 7:00PM EST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MI1263DC0FCC90.WinterStormWatch.1263DC3C4680MI.MQTWSWMQT.0e3ba5b5ba2941597851b42f1cf8bae3"/>
-<summary>...WINTER STORM WATCH IN EFFECT FROM TUESDAY EVENING THROUGH WEDNESDAY EVENING... * WHAT...Heavy snow and areas of blowing snow possible. Total snow accumulations of 6 to 11 inches possible. Winds could gust as high as 40 mph. * WHERE...Ontonagon and Gogebic Counties.</summary>
+<title>Winter Storm Watch issued January 03 at 3:26PM EST until January 05 at 7:00PM EST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MI1263DC119728.WinterStormWatch.1263DC3C4680MI.MQTWSWMQT.0e3ba5b5ba2941597851b42f1cf8bae3"/>
+<summary>...WINTER STORM WATCH REMAINS IN EFFECT FROM TUESDAY EVENING THROUGH WEDNESDAY EVENING... * WHAT...Heavy snow...along with blowing snow possible. Total snow accumulations exceeding 6 inches are possible. Winds could gust as high as 40 mph. * WHERE...Ontonagon and Gogebic counties.</summary>
 <cap:event>Winter Storm Watch</cap:event>
-<cap:effective>2022-01-03T03:52:00-05:00</cap:effective>
+<cap:effective>2022-01-03T15:26:00-05:00</cap:effective>
 <cap:expires>2022-01-05T19:00:00-05:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
@@ -4740,21 +4804,21 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
-<value>/O.NEW.KMQT.WS.A.0001.220105T0300Z-220106T0000Z/</value>
+<value>/O.CON.KMQT.WS.A.0001.220105T0300Z-220106T0000Z/</value>
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=MI1263DC0FCC90.WinterStormWatch.1263DC3C4680MI.MQTWSWMQT.122343695f07e0143b83022a8a72c9e9</id>
-<updated>2022-01-03T03:52:00-05:00</updated>
-<published>2022-01-03T03:52:00-05:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=MI1263DC119728.WinterStormWatch.1263DC3C4680MI.MQTWSWMQT.122343695f07e0143b83022a8a72c9e9</id>
+<updated>2022-01-03T15:26:00-05:00</updated>
+<published>2022-01-03T15:26:00-05:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Winter Storm Watch issued January 03 at 3:52AM EST until January 05 at 7:00PM EST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MI1263DC0FCC90.WinterStormWatch.1263DC3C4680MI.MQTWSWMQT.122343695f07e0143b83022a8a72c9e9"/>
-<summary>...WINTER STORM WATCH IN EFFECT FROM LATE TUESDAY NIGHT THROUGH WEDNESDAY EVENING... * WHAT...Heavy snow possible. Total snow accumulations of 5 to 12 inches possible. Winds could gust as high as 35 mph. * WHERE...Baraga, Marquette and Southern Houghton Counties. * WHEN...From late Tuesday night through Wednesday evening.</summary>
+<title>Winter Storm Watch issued January 03 at 3:26PM EST until January 05 at 7:00PM EST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MI1263DC119728.WinterStormWatch.1263DC3C4680MI.MQTWSWMQT.122343695f07e0143b83022a8a72c9e9"/>
+<summary>...WINTER STORM WATCH REMAINS IN EFFECT FROM LATE TUESDAY NIGHT THROUGH WEDNESDAY EVENING... * WHAT...Heavy snow...along with patchy blowing snow possible. Total snow accumulations exceeding 6 inches are possible. * WHERE...Baraga, Marquette, and Southern Houghton counties. * WHEN...From late Tuesday night through Wednesday evening.</summary>
 <cap:event>Winter Storm Watch</cap:event>
-<cap:effective>2022-01-03T03:52:00-05:00</cap:effective>
+<cap:effective>2022-01-03T15:26:00-05:00</cap:effective>
 <cap:expires>2022-01-05T19:00:00-05:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
@@ -4772,7 +4836,39 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
-<value>/O.NEW.KMQT.WS.A.0001.220105T0600Z-220106T0000Z/</value>
+<value>/O.CON.KMQT.WS.A.0001.220105T0600Z-220106T0000Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=MN1263DC119AAC.WinterWeatherAdvisory.1263DC2F4E30MN.ABRWSWABR.ee2564a6dd077d4cdf92ce15b2959e2e</id>
+<updated>2022-01-03T14:35:00-06:00</updated>
+<published>2022-01-03T14:35:00-06:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Winter Weather Advisory issued January 03 at 2:35PM CST until January 05 at 9:00AM CST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MN1263DC119AAC.WinterWeatherAdvisory.1263DC2F4E30MN.ABRWSWABR.ee2564a6dd077d4cdf92ce15b2959e2e"/>
+<summary>...WINTER WEATHER ADVISORY IN EFFECT FROM 3 PM TUESDAY TO 9 AM CST WEDNESDAY... * WHAT...Snow expected. Total snow accumulations of up to one inch. Blowing and drifting snow.Winds gusting as high as 45 mph. * WHERE...In South Dakota, Marshall, Roberts and Day Counties.</summary>
+<cap:event>Winter Weather Advisory</cap:event>
+<cap:effective>2022-01-03T14:35:00-06:00</cap:effective>
+<cap:expires>2022-01-05T09:00:00-06:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Traverse</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>027155</value>
+<valueName>UGC</valueName>
+<value>MNZ039</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.NEW.KABR.WW.Y.0001.220104T2100Z-220105T1500Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -5426,49 +5522,49 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=NC1263DC119084.WindAdvisory.1263DC11B410NC.MHXNPWMHX.e32e73914a5cfdbc8dc73283af3ea448</id>
-<updated>2022-01-03T15:09:00-05:00</updated>
-<published>2022-01-03T15:09:00-05:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=NC1263DC119A48.WindAdvisory.1263DC1DC200NC.AKQNPWAKQ.b845b4937e2e4a0d05a6acbfbe9cbd45</id>
+<updated>2022-01-03T15:34:00-05:00</updated>
+<published>2022-01-03T15:34:00-05:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Wind Advisory issued January 03 at 3:09PM EST until January 03 at 4:00PM EST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=NC1263DC119084.WindAdvisory.1263DC11B410NC.MHXNPWMHX.e32e73914a5cfdbc8dc73283af3ea448"/>
-<summary>...WIND ADVISORY REMAINS IN EFFECT UNTIL 4 PM EST THIS AFTERNOON... * WHAT...North winds 25 to 35 mph with gusts up to 45 mph expected. * WHERE...Mainland Dare and Tyrrell Counties. * WHEN...Until 4 PM EST this afternoon.</summary>
+<title>Wind Advisory issued January 03 at 3:34PM EST until January 03 at 7:00PM EST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=NC1263DC119A48.WindAdvisory.1263DC1DC200NC.AKQNPWAKQ.b845b4937e2e4a0d05a6acbfbe9cbd45"/>
+<summary>...WIND ADVISORY REMAINS IN EFFECT UNTIL 7 PM EST THIS EVENING... * WHAT...North winds 25 to 35 mph with gusts up to 50 mph expected. * WHERE...In Virginia, Northampton and Norfolk/Portsmouth Counties, and Virginia Beach. In North Carolina, Eastern Currituck and Western Currituck Counties.</summary>
 <cap:event>Wind Advisory</cap:event>
-<cap:effective>2022-01-03T15:09:00-05:00</cap:effective>
-<cap:expires>2022-01-03T16:00:00-05:00</cap:expires>
+<cap:effective>2022-01-03T15:34:00-05:00</cap:effective>
+<cap:expires>2022-01-03T19:00:00-05:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
 <cap:category>Met</cap:category>
 <cap:urgency>Expected</cap:urgency>
 <cap:severity>Minor</cap:severity>
 <cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Mainland Dare; Tyrrell</cap:areaDesc>
+<cap:areaDesc>Camden; Eastern Currituck; Pasquotank; Western Currituck</cap:areaDesc>
 <cap:polygon></cap:polygon>
 <cap:geocode>
 <valueName>FIPS6</valueName>
-<value>037055 037177</value>
+<value>037029 037053 037139</value>
 <valueName>UGC</valueName>
-<value>NCZ046 NCZ047</value>
+<value>NCZ015 NCZ016 NCZ017 NCZ102</value>
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
-<value>/O.CON.KMHX.WI.Y.0001.000000T0000Z-220103T2100Z/</value>
+<value>/O.CON.KAKQ.WI.Y.0001.000000T0000Z-220104T0000Z/</value>
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=NC1263DC119084.HighWindWarning.1263DC1DC200NC.MHXNPWMHX.731fb3948274ce40acbfd949286a5fbf</id>
-<updated>2022-01-03T15:09:00-05:00</updated>
-<published>2022-01-03T15:09:00-05:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=NC1263DC1198B8.HighWindWarning.1263DC1DC200NC.MHXNPWMHX.731fb3948274ce40acbfd949286a5fbf</id>
+<updated>2022-01-03T15:30:00-05:00</updated>
+<published>2022-01-03T15:30:00-05:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>High Wind Warning issued January 03 at 3:09PM EST until January 03 at 7:00PM EST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=NC1263DC119084.HighWindWarning.1263DC1DC200NC.MHXNPWMHX.731fb3948274ce40acbfd949286a5fbf"/>
-<summary>...HIGH WIND WARNING NOW IN EFFECT UNTIL 7 PM EST THIS EVENING... * WHAT...North winds 35 to 45 mph with gusts up to 60 mph expected. * WHERE...Hatteras Island, Ocracoke Island and Northern Outer Banks. * WHEN...Until 7 PM EST this evening.</summary>
+<title>High Wind Warning issued January 03 at 3:30PM EST until January 03 at 7:00PM EST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=NC1263DC1198B8.HighWindWarning.1263DC1DC200NC.MHXNPWMHX.731fb3948274ce40acbfd949286a5fbf"/>
+<summary>...HIGH WIND WARNING REMAINS IN EFFECT UNTIL 7 PM EST THIS EVENING... * WHAT...North winds 35 to 45 mph with gusts up to 60 mph. * WHERE...Hatteras Island, Ocracoke Island and Northern Outer Banks. * WHEN...Until early this evening.</summary>
 <cap:event>High Wind Warning</cap:event>
-<cap:effective>2022-01-03T15:09:00-05:00</cap:effective>
+<cap:effective>2022-01-03T15:30:00-05:00</cap:effective>
 <cap:expires>2022-01-03T19:00:00-05:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
@@ -5486,21 +5582,53 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
-<value>/O.EXT.KMHX.HW.W.0001.000000T0000Z-220104T0000Z/</value>
+<value>/O.CON.KMHX.HW.W.0001.000000T0000Z-220104T0000Z/</value>
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=NC1263DC119084.WindAdvisory.1263DC1DC200NC.MHXNPWMHX.936665bbc5b96faf91166530052bf2a8</id>
-<updated>2022-01-03T15:09:00-05:00</updated>
-<published>2022-01-03T15:09:00-05:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=NC1263DC1198B8.WindAdvisory.1263DC1DC200NC.MHXNPWMHX.e32e73914a5cfdbc8dc73283af3ea448</id>
+<updated>2022-01-03T15:30:00-05:00</updated>
+<published>2022-01-03T15:30:00-05:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Wind Advisory issued January 03 at 3:09PM EST until January 03 at 7:00PM EST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=NC1263DC119084.WindAdvisory.1263DC1DC200NC.MHXNPWMHX.936665bbc5b96faf91166530052bf2a8"/>
-<summary>...WIND ADVISORY NOW IN EFFECT UNTIL 7 PM EST THIS EVENING... * WHAT...Northwest winds 25 to 35 mph with gusts up to 50 mph expected. * WHERE...East Carteret County. * WHEN...Until 7 PM EST this evening. * IMPACTS...Gusty winds could blow around unsecured objects.</summary>
+<title>Wind Advisory issued January 03 at 3:30PM EST until January 03 at 7:00PM EST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=NC1263DC1198B8.WindAdvisory.1263DC1DC200NC.MHXNPWMHX.e32e73914a5cfdbc8dc73283af3ea448"/>
+<summary>...WIND ADVISORY NOW IN EFFECT UNTIL 7 PM EST THIS EVENING... * WHAT...North winds 25 to 35 mph with gusts up to 45 mph. * WHERE...Mainland Dare and Tyrrell Counties. * WHEN...Until early this evening. * IMPACTS...Gusty winds could blow around unsecured objects. Tree limbs could be blown down and a few power outages may</summary>
 <cap:event>Wind Advisory</cap:event>
-<cap:effective>2022-01-03T15:09:00-05:00</cap:effective>
+<cap:effective>2022-01-03T15:30:00-05:00</cap:effective>
+<cap:expires>2022-01-03T19:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Mainland Dare; Tyrrell</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>037055 037177</value>
+<valueName>UGC</valueName>
+<value>NCZ046 NCZ047</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.EXT.KMHX.WI.Y.0001.000000T0000Z-220104T0000Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=NC1263DC1198B8.WindAdvisory.1263DC1DC200NC.MHXNPWMHX.936665bbc5b96faf91166530052bf2a8</id>
+<updated>2022-01-03T15:30:00-05:00</updated>
+<published>2022-01-03T15:30:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Wind Advisory issued January 03 at 3:30PM EST until January 03 at 7:00PM EST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=NC1263DC1198B8.WindAdvisory.1263DC1DC200NC.MHXNPWMHX.936665bbc5b96faf91166530052bf2a8"/>
+<summary>...WIND ADVISORY REMAINS IN EFFECT UNTIL 7 PM EST THIS EVENING... * WHAT...Northwest winds 25 to 35 mph with gusts up to 50 mph. * WHERE...East Carteret County. * WHEN...Until early this evening. * IMPACTS...Gusty winds could blow around unsecured objects. Tree limbs could be blown down and a few power outages may</summary>
+<cap:event>Wind Advisory</cap:event>
+<cap:effective>2022-01-03T15:30:00-05:00</cap:effective>
 <cap:expires>2022-01-03T19:00:00-05:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
@@ -5518,7 +5646,139 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
-<value>/O.EXT.KMHX.WI.Y.0001.000000T0000Z-220104T0000Z/</value>
+<value>/O.CON.KMHX.WI.Y.0001.000000T0000Z-220104T0000Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=NC1263DC1196C4.HighSurfAdvisory.1263DC1E1020NC.MHXCFWMHX.ac570724f5501fb4637ed59044f29b0d</id>
+<updated>2022-01-03T15:25:00-05:00</updated>
+<published>2022-01-03T15:25:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>High Surf Advisory issued January 03 at 3:25PM EST until January 03 at 9:00PM EST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=NC1263DC1196C4.HighSurfAdvisory.1263DC1E1020NC.MHXCFWMHX.ac570724f5501fb4637ed59044f29b0d"/>
+<summary>...COASTAL FLOOD ADVISORY REMAINS IN EFFECT UNTIL 10 AM EST TUESDAY... ...HIGH SURF ADVISORY REMAINS IN EFFECT UNTIL 9 PM EST THIS EVENING... * WHAT...One to three feet of inundation above ground level expected in low-lying areas near shorelines and tidal waterways. For</summary>
+<cap:event>High Surf Advisory</cap:event>
+<cap:effective>2022-01-03T15:25:00-05:00</cap:effective>
+<cap:expires>2022-01-03T21:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>East Carteret; Ocracoke Island</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>037031 037095</value>
+<valueName>UGC</valueName>
+<value>NCZ196 NCZ204</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KMHX.CF.Y.0001.000000T0000Z-220104T1500Z/
+/O.CON.KMHX.SU.Y.0001.000000T0000Z-220104T0200Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=NC1263DC1196C4.CoastalFloodAdvisory.1263DC200BF0NC.MHXCFWMHX.4084a2957bf0270f74c045c42eeca1c3</id>
+<updated>2022-01-03T15:25:00-05:00</updated>
+<published>2022-01-03T15:25:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Coastal Flood Advisory issued January 03 at 3:25PM EST until January 04 at 10:00AM EST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=NC1263DC1196C4.CoastalFloodAdvisory.1263DC200BF0NC.MHXCFWMHX.4084a2957bf0270f74c045c42eeca1c3"/>
+<summary>...COASTAL FLOOD ADVISORY REMAINS IN EFFECT UNTIL 10 AM EST TUESDAY... ...HIGH SURF ADVISORY REMAINS IN EFFECT UNTIL 9 PM EST THIS EVENING... * WHAT...One to three feet of inundation above ground level expected in low-lying areas near shorelines and tidal waterways. For</summary>
+<cap:event>Coastal Flood Advisory</cap:event>
+<cap:effective>2022-01-03T15:25:00-05:00</cap:effective>
+<cap:expires>2022-01-04T10:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>East Carteret; Ocracoke Island</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>037031 037095</value>
+<valueName>UGC</valueName>
+<value>NCZ196 NCZ204</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KMHX.CF.Y.0001.000000T0000Z-220104T1500Z/
+/O.CON.KMHX.SU.Y.0001.000000T0000Z-220104T0200Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=NC1263DC1196C4.CoastalFloodAdvisory.1263DC200BF0NC.MHXCFWMHX.a3c7fdcb019bc9cb3b65d11d3383885e</id>
+<updated>2022-01-03T15:25:00-05:00</updated>
+<published>2022-01-03T15:25:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Coastal Flood Advisory issued January 03 at 3:25PM EST until January 04 at 10:00AM EST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=NC1263DC1196C4.CoastalFloodAdvisory.1263DC200BF0NC.MHXCFWMHX.a3c7fdcb019bc9cb3b65d11d3383885e"/>
+<summary>...COASTAL FLOOD ADVISORY REMAINS IN EFFECT UNTIL 10 AM EST TUESDAY... ...HIGH SURF ADVISORY REMAINS IN EFFECT UNTIL 10 AM EST TUESDAY... * WHAT...For the High Surf Advisory, large breaking waves of 4 to 10 feet in the surf zone. For the Coastal Flood Advisory, one to three feet of inundation above ground level in low-lying areas</summary>
+<cap:event>Coastal Flood Advisory</cap:event>
+<cap:effective>2022-01-03T15:25:00-05:00</cap:effective>
+<cap:expires>2022-01-04T10:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Hatteras Island; Northern Outer Banks</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>037055</value>
+<valueName>UGC</valueName>
+<value>NCZ203 NCZ205</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KMHX.CF.Y.0001.000000T0000Z-220104T1500Z/
+/O.CON.KMHX.SU.Y.0001.000000T0000Z-220104T1500Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=NC1263DC1196C4.HighSurfAdvisory.1263DC200BF0NC.MHXCFWMHX.bf7f77a8373acb6cfaab5040eb8cbb1e</id>
+<updated>2022-01-03T15:25:00-05:00</updated>
+<published>2022-01-03T15:25:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>High Surf Advisory issued January 03 at 3:25PM EST until January 04 at 10:00AM EST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=NC1263DC1196C4.HighSurfAdvisory.1263DC200BF0NC.MHXCFWMHX.bf7f77a8373acb6cfaab5040eb8cbb1e"/>
+<summary>...COASTAL FLOOD ADVISORY REMAINS IN EFFECT UNTIL 10 AM EST TUESDAY... ...HIGH SURF ADVISORY REMAINS IN EFFECT UNTIL 10 AM EST TUESDAY... * WHAT...For the High Surf Advisory, large breaking waves of 4 to 10 feet in the surf zone. For the Coastal Flood Advisory, one to three feet of inundation above ground level in low-lying areas</summary>
+<cap:event>High Surf Advisory</cap:event>
+<cap:effective>2022-01-03T15:25:00-05:00</cap:effective>
+<cap:expires>2022-01-04T10:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Hatteras Island; Northern Outer Banks</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>037055</value>
+<valueName>UGC</valueName>
+<value>NCZ203 NCZ205</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KMHX.CF.Y.0001.000000T0000Z-220104T1500Z/
+/O.CON.KMHX.SU.Y.0001.000000T0000Z-220104T1500Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -5752,38 +6012,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=NC1263DC10DA18.WinterWeatherAdvisory.1263DC11B410NC.RAHWSWRAH.f1ba1f43c2e61f5bc3058bb6a7f361c1</id>
-<updated>2022-01-03T10:42:00-05:00</updated>
-<published>2022-01-03T10:42:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Winter Weather Advisory issued January 03 at 10:42AM EST until January 03 at 4:00PM EST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=NC1263DC10DA18.WinterWeatherAdvisory.1263DC11B410NC.RAHWSWRAH.f1ba1f43c2e61f5bc3058bb6a7f361c1"/>
-<summary>...WINTER WEATHER ADVISORY REMAINS IN EFFECT UNTIL 4 PM EST THIS AFTERNOON... * WHAT...Wet snow expected. Total snow accumulations averaging around one inch with close to two inches across the northern portion of Forsyth, Guilford and Person counties * WHERE...Forsyth, Guilford, Person and Granville Counties.</summary>
-<cap:event>Winter Weather Advisory</cap:event>
-<cap:effective>2022-01-03T10:42:00-05:00</cap:effective>
-<cap:expires>2022-01-03T16:00:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Forsyth; Granville; Guilford; Person</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>037067 037077 037081 037145</value>
-<valueName>UGC</valueName>
-<value>NCZ007 NCZ008 NCZ021 NCZ022</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KRAH.WW.Y.0001.000000T0000Z-220103T2100Z/</value>
-</cap:parameter>
-</entry>
-<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=NC1263DC10D4A0.FloodWarning.1263DC1FA3A4NC.RAHFLWRAH.6d86b0b146a0daa156ce8b60bbd88c9c</id>
 <updated>2022-01-03T10:28:00-05:00</updated>
 <published>2022-01-03T10:28:00-05:00</published>
@@ -5814,267 +6042,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <valueName>VTEC</valueName>
 <value>/O.NEW.KRAH.FL.W.0001.220103T1528Z-220104T1233Z/
 /NRWN7.1.ER.220103T1448Z.220103T1800Z.220104T0032Z.NO/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=NC1263DC10B754.WindAdvisory.1263DC11B410NC.RAHNPWRAH.5a54af0f96703aca87a2a1dd84fd978d</id>
-<updated>2022-01-03T09:53:00-05:00</updated>
-<published>2022-01-03T09:53:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Wind Advisory issued January 03 at 9:53AM EST until January 03 at 4:00PM EST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=NC1263DC10B754.WindAdvisory.1263DC11B410NC.RAHNPWRAH.5a54af0f96703aca87a2a1dd84fd978d"/>
-<summary>...WIND ADVISORY REMAINS IN EFFECT UNTIL 4 PM EST THIS AFTERNOON... * WHAT...Northerly winds 15 to 25 mph, with gusts up to 45 mph expected. * WHERE...All of central North Carolina. * WHEN...Through 4 PM EST Monday.</summary>
-<cap:event>Wind Advisory</cap:event>
-<cap:effective>2022-01-03T09:53:00-05:00</cap:effective>
-<cap:expires>2022-01-03T16:00:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Alamance; Anson; Chatham; Cumberland; Davidson; Durham; Edgecombe; Forsyth; Franklin; Granville; Guilford; Halifax; Harnett; Hoke; Johnston; Lee; Montgomery; Moore; Nash; Orange; Person; Randolph; Richmond; Sampson; Scotland; Stanly; Vance; Wake; Warren; Wayne; Wilson</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>037001 037007 037037 037051 037057 037063 037065 037067 037069 037077 037081 037083 037085 037093 037101 037105 037123 037125 037127 037135 037145 037151 037153 037163 037165 037167 037181 037183 037185 037191 037195</value>
-<valueName>UGC</valueName>
-<value>NCZ007 NCZ008 NCZ009 NCZ010 NCZ011 NCZ021 NCZ022 NCZ023 NCZ024 NCZ025 NCZ026 NCZ027 NCZ028 NCZ038 NCZ039 NCZ040 NCZ041 NCZ042 NCZ043 NCZ073 NCZ074 NCZ075 NCZ076 NCZ077 NCZ078 NCZ083 NCZ084 NCZ085 NCZ086 NCZ088 NCZ089</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KRAH.WI.Y.0001.000000T0000Z-220103T2100Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=NC1263DC0FC5EC.HighSurfAdvisory.1263DC11B410NC.MHXCFWMHX.a837e1c0b67e7e77ec076377ba354efc</id>
-<updated>2022-01-03T03:35:00-05:00</updated>
-<published>2022-01-03T03:35:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>High Surf Advisory issued January 03 at 3:35AM EST until January 03 at 4:00PM EST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=NC1263DC0FC5EC.HighSurfAdvisory.1263DC11B410NC.MHXCFWMHX.a837e1c0b67e7e77ec076377ba354efc"/>
-<summary>...COASTAL FLOOD ADVISORY NOW IN EFFECT UNTIL 1 PM EST THIS AFTERNOON... ...HIGH SURF ADVISORY IN EFFECT FROM 7 AM THIS MORNING TO 4 PM EST THIS AFTERNOON... * WHAT...One to two feet of inundation above ground level expected in low-lying areas near shorelines and tidal waterways. For the</summary>
-<cap:event>High Surf Advisory</cap:event>
-<cap:effective>2022-01-03T03:35:00-05:00</cap:effective>
-<cap:expires>2022-01-03T16:00:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Coastal Onslow; West Carteret</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>037031 037133</value>
-<valueName>UGC</valueName>
-<value>NCZ195 NCZ199</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.EXB.KMHX.SU.Y.0001.220103T1200Z-220103T2100Z/
-/O.EXT.KMHX.CF.Y.0001.220103T1100Z-220103T1800Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=NC1263DC0FC5EC.HighSurfAdvisory.1263DC1E1020NC.MHXCFWMHX.ac570724f5501fb4637ed59044f29b0d</id>
-<updated>2022-01-03T03:35:00-05:00</updated>
-<published>2022-01-03T03:35:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>High Surf Advisory issued January 03 at 3:35AM EST until January 03 at 9:00PM EST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=NC1263DC0FC5EC.HighSurfAdvisory.1263DC1E1020NC.MHXCFWMHX.ac570724f5501fb4637ed59044f29b0d"/>
-<summary>...COASTAL FLOOD ADVISORY REMAINS IN EFFECT UNTIL 10 AM EST TUESDAY... ...HIGH SURF ADVISORY IN EFFECT FROM 7 AM THIS MORNING TO 9 PM EST THIS EVENING... * WHAT...One to three feet of inundation above ground level expected in low-lying areas near shorelines and tidal waterways.</summary>
-<cap:event>High Surf Advisory</cap:event>
-<cap:effective>2022-01-03T03:35:00-05:00</cap:effective>
-<cap:expires>2022-01-03T21:00:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>East Carteret; Ocracoke Island</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>037031 037095</value>
-<valueName>UGC</valueName>
-<value>NCZ196 NCZ204</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.EXB.KMHX.SU.Y.0001.220103T1200Z-220104T0200Z/
-/O.CON.KMHX.CF.Y.0001.220103T1100Z-220104T1500Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=NC1263DC0FC5EC.CoastalFloodAdvisory.1263DC200BF0NC.MHXCFWMHX.4084a2957bf0270f74c045c42eeca1c3</id>
-<updated>2022-01-03T03:35:00-05:00</updated>
-<published>2022-01-03T03:35:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Coastal Flood Advisory issued January 03 at 3:35AM EST until January 04 at 10:00AM EST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=NC1263DC0FC5EC.CoastalFloodAdvisory.1263DC200BF0NC.MHXCFWMHX.4084a2957bf0270f74c045c42eeca1c3"/>
-<summary>...COASTAL FLOOD ADVISORY REMAINS IN EFFECT UNTIL 10 AM EST TUESDAY... ...HIGH SURF ADVISORY IN EFFECT FROM 7 AM THIS MORNING TO 9 PM EST THIS EVENING... * WHAT...One to three feet of inundation above ground level expected in low-lying areas near shorelines and tidal waterways.</summary>
-<cap:event>Coastal Flood Advisory</cap:event>
-<cap:effective>2022-01-03T03:35:00-05:00</cap:effective>
-<cap:expires>2022-01-04T10:00:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>East Carteret; Ocracoke Island</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>037031 037095</value>
-<valueName>UGC</valueName>
-<value>NCZ196 NCZ204</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.EXB.KMHX.SU.Y.0001.220103T1200Z-220104T0200Z/
-/O.CON.KMHX.CF.Y.0001.220103T1100Z-220104T1500Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=NC1263DC0FC5EC.CoastalFloodAdvisory.1263DC200BF0NC.MHXCFWMHX.a3c7fdcb019bc9cb3b65d11d3383885e</id>
-<updated>2022-01-03T03:35:00-05:00</updated>
-<published>2022-01-03T03:35:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Coastal Flood Advisory issued January 03 at 3:35AM EST until January 04 at 10:00AM EST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=NC1263DC0FC5EC.CoastalFloodAdvisory.1263DC200BF0NC.MHXCFWMHX.a3c7fdcb019bc9cb3b65d11d3383885e"/>
-<summary>...COASTAL FLOOD ADVISORY REMAINS IN EFFECT UNTIL 10 AM EST TUESDAY... ...HIGH SURF ADVISORY NOW IN EFFECT FROM 9 AM THIS MORNING TO 10 AM EST TUESDAY... * WHAT...For the Coastal Flood Advisory, one to three feet of inundation above ground level expected for low-lying soundside</summary>
-<cap:event>Coastal Flood Advisory</cap:event>
-<cap:effective>2022-01-03T03:35:00-05:00</cap:effective>
-<cap:expires>2022-01-04T10:00:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Hatteras Island; Northern Outer Banks</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>037055</value>
-<valueName>UGC</valueName>
-<value>NCZ203 NCZ205</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.EXT.KMHX.SU.Y.0001.220103T1400Z-220104T1500Z/
-/O.CON.KMHX.CF.Y.0001.220103T1100Z-220104T1500Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=NC1263DC0FC5EC.HighSurfAdvisory.1263DC200BF0NC.MHXCFWMHX.bf7f77a8373acb6cfaab5040eb8cbb1e</id>
-<updated>2022-01-03T03:35:00-05:00</updated>
-<published>2022-01-03T03:35:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>High Surf Advisory issued January 03 at 3:35AM EST until January 04 at 10:00AM EST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=NC1263DC0FC5EC.HighSurfAdvisory.1263DC200BF0NC.MHXCFWMHX.bf7f77a8373acb6cfaab5040eb8cbb1e"/>
-<summary>...COASTAL FLOOD ADVISORY REMAINS IN EFFECT UNTIL 10 AM EST TUESDAY... ...HIGH SURF ADVISORY NOW IN EFFECT FROM 9 AM THIS MORNING TO 10 AM EST TUESDAY... * WHAT...For the Coastal Flood Advisory, one to three feet of inundation above ground level expected for low-lying soundside</summary>
-<cap:event>High Surf Advisory</cap:event>
-<cap:effective>2022-01-03T03:35:00-05:00</cap:effective>
-<cap:expires>2022-01-04T10:00:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Hatteras Island; Northern Outer Banks</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>037055</value>
-<valueName>UGC</valueName>
-<value>NCZ203 NCZ205</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.EXT.KMHX.SU.Y.0001.220103T1400Z-220104T1500Z/
-/O.CON.KMHX.CF.Y.0001.220103T1100Z-220104T1500Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=NC1263DC0FA0D0.WindAdvisory.1263DC1DC200NC.AKQNPWAKQ.2ac2d08db3ee9b53cfae12a0365f3bb4</id>
-<updated>2022-01-03T02:40:00-05:00</updated>
-<published>2022-01-03T02:40:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Wind Advisory issued January 03 at 2:40AM EST until January 03 at 7:00PM EST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=NC1263DC0FA0D0.WindAdvisory.1263DC1DC200NC.AKQNPWAKQ.2ac2d08db3ee9b53cfae12a0365f3bb4"/>
-<summary>...WIND ADVISORY IN EFFECT FROM 7 AM THIS MORNING TO 7 PM EST THIS EVENING... * WHAT...North winds 20 to 30 mph with gusts up to 50 mph expected. * WHERE...Pasquotank and Camden Counties. * WHEN...From 7 AM this morning to 7 PM EST this evening.</summary>
-<cap:event>Wind Advisory</cap:event>
-<cap:effective>2022-01-03T02:40:00-05:00</cap:effective>
-<cap:expires>2022-01-03T19:00:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Camden; Pasquotank</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>037029 037139</value>
-<valueName>UGC</valueName>
-<value>NCZ015 NCZ016</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.EXA.KAKQ.WI.Y.0001.220103T1200Z-220104T0000Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=NC1263DC0FA0D0.WindAdvisory.1263DC1DC200NC.AKQNPWAKQ.64b05a7a9b990a62f4486872d1664f9d</id>
-<updated>2022-01-03T02:40:00-05:00</updated>
-<published>2022-01-03T02:40:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Wind Advisory issued January 03 at 2:40AM EST until January 03 at 7:00PM EST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=NC1263DC0FA0D0.WindAdvisory.1263DC1DC200NC.AKQNPWAKQ.64b05a7a9b990a62f4486872d1664f9d"/>
-<summary>...WIND ADVISORY REMAINS IN EFFECT FROM 7 AM THIS MORNING TO 7 PM EST THIS EVENING... * WHAT...North winds 25 to 35 mph with gusts up to 55 mph expected. * WHERE...In Virginia, Northampton and Norfolk/Portsmouth Counties, and Virginia Beach. In North Carolina, Eastern</summary>
-<cap:event>Wind Advisory</cap:event>
-<cap:effective>2022-01-03T02:40:00-05:00</cap:effective>
-<cap:expires>2022-01-03T19:00:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Eastern Currituck; Western Currituck</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>037053</value>
-<valueName>UGC</valueName>
-<value>NCZ017 NCZ102</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KAKQ.WI.Y.0001.220103T1200Z-220104T0000Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -6174,6 +6141,71 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=NE1263DC119A48.HighWindWarning.1263DC2D0440NE.CYSNPWCYS.288be0006075fe4c99a0de7ad4ca7cd0</id>
+<updated>2022-01-03T14:34:00-06:00</updated>
+<published>2022-01-03T14:34:00-06:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>High Wind Warning issued January 03 at 2:34PM CST until January 04 at 6:00PM CST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=NE1263DC119A48.HighWindWarning.1263DC2D0440NE.CYSNPWCYS.288be0006075fe4c99a0de7ad4ca7cd0"/>
+<summary>...HIGH WIND WARNING IN EFFECT FROM 9 AM TO 5 PM MST TUESDAY... * WHAT...West winds 30 to 40 mph with gusts around 60 mph. * WHERE...In Wyoming, Niobrara County. In Nebraska, Dawes County, Box Butte County, Northern Sioux County and Southern Sioux County. * WHEN...Winds will increase Tuesday morning and become strong</summary>
+<cap:event>High Wind Warning</cap:event>
+<cap:effective>2022-01-03T14:34:00-06:00</cap:effective>
+<cap:expires>2022-01-04T18:00:00-06:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Severe</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Banner; Cheyenne; Kimball; Morrill; Scotts Bluff</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>031007 031033 031105 031123 031157</value>
+<valueName>UGC</valueName>
+<value>NEZ019 NEZ020 NEZ021 NEZ054 NEZ055</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.UPG.KCYS.HW.A.0001.220104T1600Z-220105T0000Z/
+/O.EXB.KCYS.HW.W.0002.220104T1600Z-220105T0000Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=NE1263DC119A48.HighWindWatch.1263DC2D0440NE.CYSNPWCYS.a80238e05ef453291779dcec7bb0d14e</id>
+<updated>2022-01-03T14:34:00-06:00</updated>
+<published>2022-01-03T14:34:00-06:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>High Wind Watch issued January 03 at 2:34PM CST until January 04 at 6:00PM CST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=NE1263DC119A48.HighWindWatch.1263DC2D0440NE.CYSNPWCYS.a80238e05ef453291779dcec7bb0d14e"/>
+<summary>...HIGH WIND WATCH REMAINS IN EFFECT FROM TUESDAY MORNING THROUGH TUESDAY AFTERNOON... * WHAT...West winds 30 to 40 mph with gusts up to 60 mph possible. * WHERE...Dawes County, Box Butte County, Northern Sioux County and Southern Sioux County. * WHEN...Tuesday morning through late Tuesday afternoon.</summary>
+<cap:event>High Wind Watch</cap:event>
+<cap:effective>2022-01-03T14:34:00-06:00</cap:effective>
+<cap:expires>2022-01-04T18:00:00-06:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Future</cap:urgency>
+<cap:severity>Severe</cap:severity>
+<cap:certainty>Possible</cap:certainty>
+<cap:areaDesc>Box Butte; Dawes; North Sioux; South Sioux</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>031013 031045 031161 031165</value>
+<valueName>UGC</valueName>
+<value>NEZ002 NEZ003 NEZ095 NEZ096</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KCYS.HW.A.0001.220104T1600Z-220105T0000Z/</value>
+</cap:parameter>
+</entry>
+<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=NE1263DC10B114.FloodAdvisory.1263DC2DA080NE.LBFFLSLBF.d2a7327b9c32fdbfa743a35d655f933b</id>
 <updated>2022-01-03T08:37:00-06:00</updated>
 <published>2022-01-03T08:37:00-06:00</published>
@@ -6239,177 +6271,17 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=NE1263DC0FCDBC.HighWindWatch.1263DC2D0440NE.CYSNPWCYS.2b1948187c623d198daeac65c8518548</id>
-<updated>2022-01-03T02:55:00-06:00</updated>
-<published>2022-01-03T02:55:00-06:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=NJ1263DC1197F0.CoastalFloodAdvisory.1263DC1EAC60NJ.PHICFWPHI.9354dbd89bf283ae6bf47ab93a6e0536</id>
+<updated>2022-01-03T15:28:00-05:00</updated>
+<published>2022-01-03T15:28:00-05:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>High Wind Watch issued January 03 at 2:55AM CST until January 04 at 6:00PM CST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=NE1263DC0FCDBC.HighWindWatch.1263DC2D0440NE.CYSNPWCYS.2b1948187c623d198daeac65c8518548"/>
-<summary>...HIGH WIND WATCH REMAINS IN EFFECT FROM TUESDAY MORNING THROUGH TUESDAY AFTERNOON... * WHAT...West winds 30 to 40 mph with gusts up to 65 mph possible. * WHERE...In Wyoming, Niobrara County. In Nebraska, Dawes County, Box Butte County, Northern Sioux County and Southern</summary>
-<cap:event>High Wind Watch</cap:event>
-<cap:effective>2022-01-03T02:55:00-06:00</cap:effective>
-<cap:expires>2022-01-04T18:00:00-06:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Future</cap:urgency>
-<cap:severity>Severe</cap:severity>
-<cap:certainty>Possible</cap:certainty>
-<cap:areaDesc>Banner; Box Butte; Cheyenne; Dawes; Kimball; Morrill; North Sioux; Scotts Bluff; South Sioux</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>031007 031013 031033 031045 031105 031123 031157 031161 031165</value>
-<valueName>UGC</valueName>
-<value>NEZ002 NEZ003 NEZ019 NEZ020 NEZ021 NEZ054 NEZ055 NEZ095 NEZ096</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KCYS.HW.A.0001.220104T1600Z-220105T0000Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=NJ1263DC1155EC.WinterStormWarning.1263DC11B410NJ.PHIWSWPHI.5b17251f16ebee019d9919f3f9c09997</id>
-<updated>2022-01-03T13:59:00-05:00</updated>
-<published>2022-01-03T13:59:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Winter Storm Warning issued January 03 at 1:59PM EST until January 03 at 4:00PM EST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=NJ1263DC1155EC.WinterStormWarning.1263DC11B410NJ.PHIWSWPHI.5b17251f16ebee019d9919f3f9c09997"/>
-<summary>...WINTER STORM WARNING REMAINS IN EFFECT UNTIL 4 PM EST THIS AFTERNOON... * WHAT...Snow, heavy at times. Additional snow accumulations of up to 2 inches mainly over southern portions of these warned zones. * WHERE...In New Jersey, Gloucester, Salem and Camden. In Delaware, New Castle.</summary>
-<cap:event>Winter Storm Warning</cap:event>
-<cap:effective>2022-01-03T13:59:00-05:00</cap:effective>
-<cap:expires>2022-01-03T16:00:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Camden; Gloucester; Salem</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>034007 034015 034033</value>
-<valueName>UGC</valueName>
-<value>NJZ016 NJZ017 NJZ018</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KPHI.WS.W.0001.000000T0000Z-220103T2100Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=NJ1263DC1155EC.WinterStormWarning.1263DC11B410NJ.PHIWSWPHI.b14e2cee70b2376c811acce7d1bb8173</id>
-<updated>2022-01-03T13:59:00-05:00</updated>
-<published>2022-01-03T13:59:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Winter Storm Warning issued January 03 at 1:59PM EST until January 03 at 4:00PM EST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=NJ1263DC1155EC.WinterStormWarning.1263DC11B410NJ.PHIWSWPHI.b14e2cee70b2376c811acce7d1bb8173"/>
-<summary>...WINTER STORM WARNING REMAINS IN EFFECT UNTIL 4 PM EST THIS AFTERNOON... * WHAT...Heavy snow. Additional snow accumulations of 2 to 4 inches. Winds gusting as high as 40 mph. * WHERE...Portions of southern New Jersey, northeast Maryland and central and southern Delaware.</summary>
-<cap:event>Winter Storm Warning</cap:event>
-<cap:effective>2022-01-03T13:59:00-05:00</cap:effective>
-<cap:expires>2022-01-03T16:00:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Atlantic; Atlantic Coastal Cape May; Cape May; Coastal Atlantic; Coastal Ocean; Cumberland; Ocean; Southeastern Burlington</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>034001 034005 034009 034011 034029</value>
-<valueName>UGC</valueName>
-<value>NJZ020 NJZ021 NJZ022 NJZ023 NJZ024 NJZ025 NJZ026 NJZ027</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KPHI.WS.W.0001.000000T0000Z-220103T2100Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=NJ1263DC1155EC.WinterWeatherAdvisory.1263DC11B410NJ.PHIWSWPHI.c47a045ca779ea9d1ef70577f6aee708</id>
-<updated>2022-01-03T13:59:00-05:00</updated>
-<published>2022-01-03T13:59:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Winter Weather Advisory issued January 03 at 1:59PM EST until January 03 at 4:00PM EST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=NJ1263DC1155EC.WinterWeatherAdvisory.1263DC11B410NJ.PHIWSWPHI.c47a045ca779ea9d1ef70577f6aee708"/>
-<summary>...WINTER WEATHER ADVISORY REMAINS IN EFFECT UNTIL 4 PM EST THIS AFTERNOON... * WHAT...Snow. Additional snow accumulations of up to 2 inches. * WHERE...Eastern Monmouth, Western Monmouth and Northwestern Burlington. * WHEN...Until 4 PM EST this afternoon.</summary>
-<cap:event>Winter Weather Advisory</cap:event>
-<cap:effective>2022-01-03T13:59:00-05:00</cap:effective>
-<cap:expires>2022-01-03T16:00:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Eastern Monmouth; Northwestern Burlington; Western Monmouth</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>034005 034025</value>
-<valueName>UGC</valueName>
-<value>NJZ013 NJZ014 NJZ019</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KPHI.WW.Y.0001.000000T0000Z-220103T2100Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=NJ1263DC112E14.CoastalFloodAdvisory.1263DC11B410NJ.PHICFWPHI.b2cfb5acf858088ceeb7958fb2f1edae</id>
-<updated>2022-01-03T12:57:00-05:00</updated>
-<published>2022-01-03T12:57:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Coastal Flood Advisory issued January 03 at 12:57PM EST until January 03 at 4:00PM EST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=NJ1263DC112E14.CoastalFloodAdvisory.1263DC11B410NJ.PHICFWPHI.b2cfb5acf858088ceeb7958fb2f1edae"/>
-<summary>...COASTAL FLOOD ADVISORY REMAINS IN EFFECT UNTIL 4 PM EST THIS AFTERNOON... * WHAT...Up to one foot of inundation above ground level in low- lying areas near shorelines and tidal waterways. * WHERE...In Pennsylvania, Delaware, Philadelphia and Lower Bucks. In New Jersey, Gloucester, Northwestern Burlington and</summary>
+<title>Coastal Flood Advisory issued January 03 at 3:28PM EST until January 04 at 1:00AM EST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=NJ1263DC1197F0.CoastalFloodAdvisory.1263DC1EAC60NJ.PHICFWPHI.9354dbd89bf283ae6bf47ab93a6e0536"/>
+<summary>...COASTAL FLOOD ADVISORY REMAINS IN EFFECT FROM 7 PM THIS EVENING TO 1 AM EST TUESDAY... * WHAT...Up to one half foot of inundation above ground level expected in low-lying areas near shorelines and tidal waterways. * WHERE...Cumberland.</summary>
 <cap:event>Coastal Flood Advisory</cap:event>
-<cap:effective>2022-01-03T12:57:00-05:00</cap:effective>
-<cap:expires>2022-01-03T16:00:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Camden; Gloucester; Northwestern Burlington</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>034005 034007 034015</value>
-<valueName>UGC</valueName>
-<value>NJZ017 NJZ018 NJZ019</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KPHI.CF.Y.0026.000000T0000Z-220103T2100Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=NJ1263DC112E14.CoastalFloodAdvisory.1263DC1EAC60NJ.PHICFWPHI.9354dbd89bf283ae6bf47ab93a6e0536</id>
-<updated>2022-01-03T12:57:00-05:00</updated>
-<published>2022-01-03T12:57:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Coastal Flood Advisory issued January 03 at 12:57PM EST until January 04 at 1:00AM EST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=NJ1263DC112E14.CoastalFloodAdvisory.1263DC1EAC60NJ.PHICFWPHI.9354dbd89bf283ae6bf47ab93a6e0536"/>
-<summary>...COASTAL FLOOD ADVISORY IN EFFECT FROM 7 PM THIS EVENING TO 1 AM EST TUESDAY... * WHAT...Up to one half foot of inundation above ground level expected in low-lying areas near shorelines and tidal waterways. * WHERE...Cumberland.</summary>
-<cap:event>Coastal Flood Advisory</cap:event>
-<cap:effective>2022-01-03T12:57:00-05:00</cap:effective>
+<cap:effective>2022-01-03T15:28:00-05:00</cap:effective>
 <cap:expires>2022-01-04T01:00:00-05:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
@@ -6427,22 +6299,21 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
-<value>/O.CAN.KPHI.CF.Y.0026.000000T0000Z-220103T1800Z/
-/O.NEW.KPHI.CF.Y.0027.220104T0000Z-220104T0600Z/</value>
+<value>/O.CON.KPHI.CF.Y.0027.220104T0000Z-220104T0600Z/</value>
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=NJ1263DC112E14.CoastalFloodAdvisory.1263DC1EAC60NJ.PHICFWPHI.c5518ae038bf2ae1c50d9571049dc86f</id>
-<updated>2022-01-03T12:57:00-05:00</updated>
-<published>2022-01-03T12:57:00-05:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=NJ1263DC1197F0.CoastalFloodAdvisory.1263DC1EAC60NJ.PHICFWPHI.c5518ae038bf2ae1c50d9571049dc86f</id>
+<updated>2022-01-03T15:28:00-05:00</updated>
+<published>2022-01-03T15:28:00-05:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Coastal Flood Advisory issued January 03 at 12:57PM EST until January 04 at 1:00AM EST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=NJ1263DC112E14.CoastalFloodAdvisory.1263DC1EAC60NJ.PHICFWPHI.c5518ae038bf2ae1c50d9571049dc86f"/>
-<summary>...COASTAL FLOOD ADVISORY IN EFFECT FROM 7 PM THIS EVENING TO 1 AM EST TUESDAY... ...COASTAL FLOOD WARNING IS CANCELLED... * WHAT...Up to one foot of inundation above ground level expected in low-lying areas near shorelines and tidal waterways.</summary>
+<title>Coastal Flood Advisory issued January 03 at 3:28PM EST until January 04 at 1:00AM EST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=NJ1263DC1197F0.CoastalFloodAdvisory.1263DC1EAC60NJ.PHICFWPHI.c5518ae038bf2ae1c50d9571049dc86f"/>
+<summary>...COASTAL FLOOD ADVISORY REMAINS IN EFFECT FROM 7 PM THIS EVENING TO 1 AM EST TUESDAY... * WHAT...Up to one foot of inundation above ground level expected in low-lying areas near shorelines and tidal waterways. * WHERE...Atlantic Coastal Cape May, Coastal Atlantic, Atlantic</summary>
 <cap:event>Coastal Flood Advisory</cap:event>
-<cap:effective>2022-01-03T12:57:00-05:00</cap:effective>
+<cap:effective>2022-01-03T15:28:00-05:00</cap:effective>
 <cap:expires>2022-01-04T01:00:00-05:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
@@ -6460,22 +6331,21 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
-<value>/O.CAN.KPHI.CF.W.0001.000000T0000Z-220103T1800Z/
-/O.EXB.KPHI.CF.Y.0026.220104T0000Z-220104T0600Z/</value>
+<value>/O.CON.KPHI.CF.Y.0026.220104T0000Z-220104T0600Z/</value>
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=NJ1263DC112E14.CoastalFloodAdvisory.1263DC208120NJ.PHICFWPHI.a8dd9014160db946ba72d343a28fb3f4</id>
-<updated>2022-01-03T12:57:00-05:00</updated>
-<published>2022-01-03T12:57:00-05:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=NJ1263DC1197F0.CoastalFloodAdvisory.1263DC208120NJ.PHICFWPHI.a8dd9014160db946ba72d343a28fb3f4</id>
+<updated>2022-01-03T15:28:00-05:00</updated>
+<published>2022-01-03T15:28:00-05:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Coastal Flood Advisory issued January 03 at 12:57PM EST until January 04 at 1:00PM EST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=NJ1263DC112E14.CoastalFloodAdvisory.1263DC208120NJ.PHICFWPHI.a8dd9014160db946ba72d343a28fb3f4"/>
-<summary>...COASTAL FLOOD ADVISORY REMAINS IN EFFECT UNTIL 1 PM EST TUESDAY... * WHAT...One to two feet of inundation above ground level in low- lying areas near shorelines and tidal waterways. * WHERE...Coastal Ocean, Ocean, Eastern Monmouth, Western Monmouth, Middlesex and Southeastern Burlington.</summary>
+<title>Coastal Flood Advisory issued January 03 at 3:28PM EST until January 04 at 1:00PM EST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=NJ1263DC1197F0.CoastalFloodAdvisory.1263DC208120NJ.PHICFWPHI.a8dd9014160db946ba72d343a28fb3f4"/>
+<summary>...COASTAL FLOOD ADVISORY REMAINS IN EFFECT UNTIL 1 PM EST TUESDAY... * WHAT...Up to one foot of inundation above ground level in low- lying areas near shorelines and tidal waterways. * WHERE...Coastal Ocean, Ocean, Eastern Monmouth, Western Monmouth, Middlesex and Southeastern Burlington.</summary>
 <cap:event>Coastal Flood Advisory</cap:event>
-<cap:effective>2022-01-03T12:57:00-05:00</cap:effective>
+<cap:effective>2022-01-03T15:28:00-05:00</cap:effective>
 <cap:expires>2022-01-04T13:00:00-05:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
@@ -6494,6 +6364,167 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value>/O.CON.KPHI.CF.Y.0026.000000T0000Z-220104T1800Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=NJ1263DC1197F0.CoastalFloodAdvisory.1263DC20CF40NJ.PHICFWPHI.01af3ea00a68522875104af8948ae412</id>
+<updated>2022-01-03T15:28:00-05:00</updated>
+<published>2022-01-03T15:28:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Coastal Flood Advisory issued January 03 at 3:28PM EST until January 04 at 3:00PM EST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=NJ1263DC1197F0.CoastalFloodAdvisory.1263DC20CF40NJ.PHICFWPHI.01af3ea00a68522875104af8948ae412"/>
+<summary>...COASTAL FLOOD ADVISORY IN EFFECT FROM 10 AM TO 3 PM EST TUESDAY... * WHAT...Up to one foot of inundation above ground level expected in low-lying areas near shorelines and tidal waterways. * WHERE...In New Jersey, Salem. In Delaware, New Castle.</summary>
+<cap:event>Coastal Flood Advisory</cap:event>
+<cap:effective>2022-01-03T15:28:00-05:00</cap:effective>
+<cap:expires>2022-01-04T15:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Salem</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>034033</value>
+<valueName>UGC</valueName>
+<value>NJZ016</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.EXB.KPHI.CF.Y.0026.220104T1500Z-220104T2000Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=NJ1263DC119598.WinterStormWarning.1263DC120230NJ.PHIWSWPHI.b14e2cee70b2376c811acce7d1bb8173</id>
+<updated>2022-01-03T15:22:00-05:00</updated>
+<published>2022-01-03T15:22:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Winter Storm Warning issued January 03 at 3:22PM EST until January 03 at 6:00PM EST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=NJ1263DC119598.WinterStormWarning.1263DC120230NJ.PHIWSWPHI.b14e2cee70b2376c811acce7d1bb8173"/>
+<summary>...WINTER STORM WARNING NOW IN EFFECT UNTIL 6 PM EST THIS EVENING... * WHAT...Snow, heavy at times. Additional snow accumulations of up to two inches. Winds gusting as high as 40 mph. * WHERE...Portions of southern New Jersey and central and southern Delaware.</summary>
+<cap:event>Winter Storm Warning</cap:event>
+<cap:effective>2022-01-03T15:22:00-05:00</cap:effective>
+<cap:expires>2022-01-03T18:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Atlantic; Atlantic Coastal Cape May; Cape May; Coastal Atlantic; Coastal Ocean; Cumberland; Ocean; Southeastern Burlington</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>034001 034005 034009 034011 034029</value>
+<valueName>UGC</valueName>
+<value>NJZ020 NJZ021 NJZ022 NJZ023 NJZ024 NJZ025 NJZ026 NJZ027</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.EXT.KPHI.WS.W.0001.000000T0000Z-220103T2300Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=NM1263DC119854.HighWindWarning.1263DC20F650NM.ABQNPWABQ.402adbf0c76207dc3c8bec1b9012e65b</id>
+<updated>2022-01-03T13:29:00-07:00</updated>
+<published>2022-01-03T13:29:00-07:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>High Wind Warning issued January 03 at 1:29PM MST until January 04 at 2:00PM MST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=NM1263DC119854.HighWindWarning.1263DC20F650NM.ABQNPWABQ.402adbf0c76207dc3c8bec1b9012e65b"/>
+<summary>...HIGH WIND WARNING IN EFFECT FROM 2 AM TO 2 PM MST TUESDAY... * WHAT...West winds 25 to 40 mph with gusts up to 60 mph expected. * WHERE...Central Highlands and Glorieta Mesa Including Glorieta Pass. * WHEN...From 2 AM to 2 PM MST Tuesday. * IMPACTS...Damaging winds will blow down trees and power lines.</summary>
+<cap:event>High Wind Warning</cap:event>
+<cap:effective>2022-01-03T13:29:00-07:00</cap:effective>
+<cap:expires>2022-01-04T14:00:00-07:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Severe</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Central Highlands; Glorieta Mesa Including Glorieta Pass</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>035047 035049 035057</value>
+<valueName>UGC</valueName>
+<value>NMZ212 NMZ223</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.NEW.KABQ.HW.W.0001.220104T0900Z-220104T2100Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=NM1263DC119854.HighWindWarning.1263DC20F650NM.ABQNPWABQ.086094efb0044d60493f8b743a95c0d9</id>
+<updated>2022-01-03T13:29:00-07:00</updated>
+<published>2022-01-03T13:29:00-07:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>High Wind Warning issued January 03 at 1:29PM MST until January 04 at 2:00PM MST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=NM1263DC119854.HighWindWarning.1263DC20F650NM.ABQNPWABQ.086094efb0044d60493f8b743a95c0d9"/>
+<summary>...HIGH WIND WARNING IN EFFECT FROM 2 AM TO 2 PM MST TUESDAY... * WHAT...West winds 30 to 40 mph with gusts up to 60 mph possible. * WHERE...Sangre de Cristo Mountains. * WHEN...From 2 AM to 2 PM MST Tuesday. * IMPACTS...Damaging winds will blow down trees and power lines. Widespread power outages are expected. Travel will be difficult,</summary>
+<cap:event>High Wind Warning</cap:event>
+<cap:effective>2022-01-03T13:29:00-07:00</cap:effective>
+<cap:expires>2022-01-04T14:00:00-07:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Severe</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>East Slopes Sangre de Cristo Mountains; Northern Sangre de Cristo Mountains; Southern Sangre de Cristo Mountains</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>035007 035033 035049 035055</value>
+<valueName>UGC</valueName>
+<value>NMZ213 NMZ214 NMZ215</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.UPG.KABQ.HW.A.0001.220104T0900Z-220104T2100Z/
+/O.NEW.KABQ.HW.W.0001.220104T0900Z-220104T2100Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=NM1263DC119854.WindAdvisory.1263DC20F650NM.ABQNPWABQ.12ade3a29a898c38a5b06cc0321cd77b</id>
+<updated>2022-01-03T13:29:00-07:00</updated>
+<published>2022-01-03T13:29:00-07:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Wind Advisory issued January 03 at 1:29PM MST until January 04 at 2:00PM MST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=NM1263DC119854.WindAdvisory.1263DC20F650NM.ABQNPWABQ.12ade3a29a898c38a5b06cc0321cd77b"/>
+<summary>...WIND ADVISORY IN EFFECT FROM 2 AM TO 2 PM MST TUESDAY... * WHAT...West winds 25 to 35 mph with gusts up to 50 mph expected. * WHERE...Sandia and Manzano Mountains including Edgewood. * WHEN...From 2 AM to 2 PM MST Tuesday. * IMPACTS...Gusty winds will blow around unsecured objects. Tree limbs may be blown down. Expect strong cross winds on area</summary>
+<cap:event>Wind Advisory</cap:event>
+<cap:effective>2022-01-03T13:29:00-07:00</cap:effective>
+<cap:expires>2022-01-04T14:00:00-07:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Sandia, Manzano Mountains Including Edgewood</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>035001 035049 035057</value>
+<valueName>UGC</valueName>
+<value>NMZ221</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.NEW.KABQ.WI.Y.0002.220104T0900Z-220104T2100Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -6526,38 +6557,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value>/O.CON.KMAF.HW.A.0001.220104T1700Z-220105T0000Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=NM1263DC100B10.HighWindWatch.1263DC20F650NM.ABQNPWABQ.8b9514516111d84334e6be29ebabec07</id>
-<updated>2022-01-03T03:12:00-07:00</updated>
-<published>2022-01-03T03:12:00-07:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>High Wind Watch issued January 03 at 3:12AM MST until January 04 at 2:00PM MST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=NM1263DC100B10.HighWindWatch.1263DC20F650NM.ABQNPWABQ.8b9514516111d84334e6be29ebabec07"/>
-<summary>...HIGH WIND WATCH IN EFFECT FROM LATE TONIGHT THROUGH TUESDAY AFTERNOON... * WHAT...West winds 30 to 40 mph with gusts up to 65 mph possible. * WHERE...Sangre de Cristo Mountains. * WHEN...From late tonight through Tuesday afternoon. * IMPACTS...Damaging winds could blow down trees and power lines.</summary>
-<cap:event>High Wind Watch</cap:event>
-<cap:effective>2022-01-03T03:12:00-07:00</cap:effective>
-<cap:expires>2022-01-04T14:00:00-07:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Future</cap:urgency>
-<cap:severity>Severe</cap:severity>
-<cap:certainty>Possible</cap:certainty>
-<cap:areaDesc>East Slopes Sangre de Cristo Mountains; Northern Sangre de Cristo Mountains; Southern Sangre de Cristo Mountains</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>035007 035033 035049 035055</value>
-<valueName>UGC</valueName>
-<value>NMZ213 NMZ214 NMZ215</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.NEW.KABQ.HW.A.0001.220104T0900Z-220104T2100Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -7043,6 +7042,39 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <valueName>VTEC</valueName>
 <value>/O.EXT.KPBZ.FL.W.0002.000000T0000Z-220104T1500Z/
 /URVO1.1.ER.220102T2207Z.220103T1800Z.220104T0900Z.NO/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=OR1263DC1198B8.FloodWatch.1263DC1FE4E0OR.PQRFFAPQR.25f3cb1a2af282888b418385e2d98821</id>
+<updated>2022-01-03T12:30:00-08:00</updated>
+<published>2022-01-03T12:30:00-08:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Flood Watch issued January 03 at 12:30PM PST until further notice by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=OR1263DC1198B8.FloodWatch.1263DC1FE4E0OR.PQRFFAPQR.25f3cb1a2af282888b418385e2d98821"/>
+<summary>...The National Weather Service in Portland OR has issued a Flood Watch for the following rivers in Oregon... Luckiamute River near Suver affecting Central Willamette Valley zone. ...FLOOD WATCH IN EFFECT FROM THIS AFTERNOON UNTIL FURTHER NOTICE... * WHAT...Flooding is possible.</summary>
+<cap:event>Flood Watch</cap:event>
+<cap:effective>2022-01-03T12:30:00-08:00</cap:effective>
+<cap:expires>2022-01-04T06:00:00-08:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Future</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Possible</cap:certainty>
+<cap:areaDesc>Central Willamette Valley</cap:areaDesc>
+<cap:polygon>44.84,-123.4 44.86,-123.4 44.83,-123.33 44.81,-123.33 44.79,-123.2 44.77,-123.2 44.76,-123.16 44.73,-123.16 44.75,-123.23 44.77,-123.23 44.8,-123.36 44.82,-123.36 44.84,-123.4</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>041047 041053 041071</value>
+<valueName>UGC</valueName>
+<value>ORZ007</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.NEW.KPQR.FL.A.0003.220103T2030Z-000000T0000Z/
+/SUVO3.0.ER.000000T0000Z.000000T0000Z.000000T0000Z.NO/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -8022,38 +8054,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=PA1263DC112E14.CoastalFloodAdvisory.1263DC11B410PA.PHICFWPHI.4da34434b25a95b2d027cc4b4e4fd22c</id>
-<updated>2022-01-03T12:57:00-05:00</updated>
-<published>2022-01-03T12:57:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Coastal Flood Advisory issued January 03 at 12:57PM EST until January 03 at 4:00PM EST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=PA1263DC112E14.CoastalFloodAdvisory.1263DC11B410PA.PHICFWPHI.4da34434b25a95b2d027cc4b4e4fd22c"/>
-<summary>...COASTAL FLOOD ADVISORY REMAINS IN EFFECT UNTIL 4 PM EST THIS AFTERNOON... * WHAT...Up to one foot of inundation above ground level in low- lying areas near shorelines and tidal waterways. * WHERE...In Pennsylvania, Delaware, Philadelphia and Lower Bucks. In New Jersey, Gloucester, Northwestern Burlington and</summary>
-<cap:event>Coastal Flood Advisory</cap:event>
-<cap:effective>2022-01-03T12:57:00-05:00</cap:effective>
-<cap:expires>2022-01-03T16:00:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Delaware; Lower Bucks; Philadelphia</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>042017 042045 042101</value>
-<valueName>UGC</valueName>
-<value>PAZ070 PAZ071 PAZ106</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KPHI.CF.Y.0026.000000T0000Z-220103T2100Z/</value>
-</cap:parameter>
-</entry>
-<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=PA1263DC10CD98.FloodAdvisory.1263DC1EAC60PA.PBZFLSPBZ.efdb8fe06c4a0cf93f9d6bf8aad44c48</id>
 <updated>2022-01-03T10:10:00-05:00</updated>
 <published>2022-01-03T10:10:00-05:00</published>
@@ -8084,6 +8084,38 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <valueName>VTEC</valueName>
 <value>/O.CON.KPBZ.FL.Y.0003.000000T0000Z-220104T0600Z/
 /PTTP1.N.ER.000000T0000Z.000000T0000Z.000000T0000Z.NO/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=PR1263DC1194D0.RipCurrentStatement.1263DC3DCD20PR.JSJCFWSJU.2da9be9e073dd3e27f5290c9c361cc81</id>
+<updated>2022-01-03T16:20:00-04:00</updated>
+<published>2022-01-03T16:20:00-04:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Rip Current Statement issued January 03 at 4:20PM AST until January 06 at 6:00AM AST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=PR1263DC1194D0.RipCurrentStatement.1263DC3DCD20PR.JSJCFWSJU.2da9be9e073dd3e27f5290c9c361cc81"/>
+<summary>...HIGH RIP CURRENT RISK NOW IN EFFECT THROUGH AT LEAST LATE WEDNESDAY NIGHT... * WHAT...Dangerous rip currents expected due to breaking waves of 8 to 10 feet. * WHERE...North-facing beaches of Puerto Rico, Vieques and Saint Thomas, beaches of eastern tip of Saint Croix and most beaches</summary>
+<cap:event>Rip Current Statement</cap:event>
+<cap:effective>2022-01-03T16:20:00-04:00</cap:effective>
+<cap:expires>2022-01-06T06:00:00-04:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Culebra; Mayaguez and Vicinity; North Central; Northeast; Northwest; San Juan and Vicinity; Vieques</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>072003 072005 072011 072013 072017 072021 072027 072029 072031 072033 072037 072049 072051 072053 072054 072061 072065 072067 072069 072071 072087 072089 072091 072097 072099 072103 072115 072117 072119 072125 072127 072135 072137 072139 072143 072145 072147</value>
+<valueName>UGC</valueName>
+<value>PRZ001 PRZ002 PRZ005 PRZ008 PRZ010 PRZ012 PRZ013</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.EXT.TJSJ.RP.S.0052.000000T0000Z-220106T1000Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -8119,49 +8151,17 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=PR1263DC10A944.RipCurrentStatement.1263DC2E8AE0PR.JSJCFWSJU.2da9be9e073dd3e27f5290c9c361cc81</id>
-<updated>2022-01-03T10:17:00-04:00</updated>
-<published>2022-01-03T10:17:00-04:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=RI1263DC1199E4.WinterWeatherAdvisory.1263DC1E1020RI.BOXWSWBOX.05d8b02a32aea39e1e08dc0701a3c10a</id>
+<updated>2022-01-03T15:33:00-05:00</updated>
+<published>2022-01-03T15:33:00-05:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Rip Current Statement issued January 03 at 10:17AM AST until January 05 at 6:00AM AST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=PR1263DC10A944.RipCurrentStatement.1263DC2E8AE0PR.JSJCFWSJU.2da9be9e073dd3e27f5290c9c361cc81"/>
-<summary>...HIGH RIP CURRENT RISK REMAINS IN EFFECT THROUGH LATE TUESDAY NIGHT... * WHAT...Dangerous rip currents expected due to breaking waves of 8 to 11 feet. * WHERE...North-facing beaches of Puerto Rico, Vieques and Saint Thomas; beaches of eastern Saint Croix and most beaches of</summary>
-<cap:event>Rip Current Statement</cap:event>
-<cap:effective>2022-01-03T10:17:00-04:00</cap:effective>
-<cap:expires>2022-01-05T06:00:00-04:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Culebra; Mayaguez and Vicinity; North Central; Northeast; Northwest; San Juan and Vicinity; Vieques</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>072003 072005 072011 072013 072017 072021 072027 072029 072031 072033 072037 072049 072051 072053 072054 072061 072065 072067 072069 072071 072087 072089 072091 072097 072099 072103 072115 072117 072119 072125 072127 072135 072137 072139 072143 072145 072147</value>
-<valueName>UGC</valueName>
-<value>PRZ001 PRZ002 PRZ005 PRZ008 PRZ010 PRZ012 PRZ013</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.TJSJ.RP.S.0052.000000T0000Z-220105T1000Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=RI1263DC10D950.WinterWeatherAdvisory.1263DC1E1020RI.BOXWSWBOX.05d8b02a32aea39e1e08dc0701a3c10a</id>
-<updated>2022-01-03T10:40:00-05:00</updated>
-<published>2022-01-03T10:40:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Winter Weather Advisory issued January 03 at 10:40AM EST until January 03 at 9:00PM EST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=RI1263DC10D950.WinterWeatherAdvisory.1263DC1E1020RI.BOXWSWBOX.05d8b02a32aea39e1e08dc0701a3c10a"/>
-<summary>...WINTER WEATHER ADVISORY REMAINS IN EFFECT UNTIL 9 PM EST THIS EVENING... * WHAT...Snow expected. Total snow accumulations of 1 to 4 inches. * WHERE...In Massachusetts, Barnstable MA County. In Rhode Island, Block Island RI County.</summary>
+<title>Winter Weather Advisory issued January 03 at 3:33PM EST until January 03 at 9:00PM EST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=RI1263DC1199E4.WinterWeatherAdvisory.1263DC1E1020RI.BOXWSWBOX.05d8b02a32aea39e1e08dc0701a3c10a"/>
+<summary>...WINTER WEATHER ADVISORY REMAINS IN EFFECT UNTIL 9 PM EST THIS EVENING... * WHAT...Snow expected. Total snow accumulations of 1 to 3 inches. * WHERE...In Massachusetts, Barnstable MA County. In Rhode Island, Block Island RI County.</summary>
 <cap:event>Winter Weather Advisory</cap:event>
-<cap:effective>2022-01-03T10:40:00-05:00</cap:effective>
+<cap:effective>2022-01-03T15:33:00-05:00</cap:effective>
 <cap:expires>2022-01-03T21:00:00-05:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
@@ -8180,38 +8180,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value>/O.CON.KBOX.WW.Y.0001.000000T0000Z-220104T0200Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=SC1263DC110448.WindAdvisory.1263DC11B410SC.CHSNPWCHS.2fd37a48d3cc8ec7ae24fb3c72c7ff8a</id>
-<updated>2022-01-03T11:50:00-05:00</updated>
-<published>2022-01-03T11:50:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Wind Advisory issued January 03 at 11:50AM EST until January 03 at 4:00PM EST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=SC1263DC110448.WindAdvisory.1263DC11B410SC.CHSNPWCHS.2fd37a48d3cc8ec7ae24fb3c72c7ff8a"/>
-<summary>...WIND ADVISORY NOW IN EFFECT UNTIL 4 PM EST THIS AFTERNOON... * WHAT...Northwest winds 15 to 25 mph with gusts up to 45 mph. * WHERE...Portions of southeast South Carolina and southeast Georgia, especially on elevated roadways. * WHEN...Until 4 PM EST this afternoon. * IMPACTS...Gusty winds could blow around unsecured objects.</summary>
-<cap:event>Wind Advisory</cap:event>
-<cap:effective>2022-01-03T11:50:00-05:00</cap:effective>
-<cap:expires>2022-01-03T16:00:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Allendale; Beaufort; Charleston; Coastal Colleton; Coastal Jasper; Dorchester; Hampton; Inland Berkeley; Inland Colleton; Inland Jasper; Tidal Berkeley</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>045005 045013 045015 045019 045029 045035 045049 045053 045089</value>
-<valueName>UGC</valueName>
-<value>SCZ040 SCZ042 SCZ043 SCZ044 SCZ045 SCZ047 SCZ048 SCZ049 SCZ050 SCZ051 SCZ052</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.EXT.KCHS.WI.Y.0001.000000T0000Z-220103T2100Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -8314,17 +8282,81 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=SD1263DC0FCBC8.HighWindWatch.1263DC2D0440SD.UNRNPWUNR.cf0dcb9d304de348ac29211e411514e5</id>
-<updated>2022-01-03T01:50:00-07:00</updated>
-<published>2022-01-03T01:50:00-07:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=SD1263DC119AAC.WinterWeatherAdvisory.1263DC2ED900SD.ABRWSWABR.de730ca5be1194953f85328142a895d6</id>
+<updated>2022-01-03T13:35:00-07:00</updated>
+<published>2022-01-03T13:35:00-07:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>High Wind Watch issued January 03 at 1:50AM MST until January 04 at 5:00PM MST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=SD1263DC0FCBC8.HighWindWatch.1263DC2D0440SD.UNRNPWUNR.cf0dcb9d304de348ac29211e411514e5"/>
-<summary>...HIGH WIND WATCH IN EFFECT FROM TUESDAY MORNING THROUGH TUESDAY AFTERNOON... * WHAT...Northwest winds 30 to 40 mph with gusts up to 65 mph possible. * WHERE...The Rapid City area, the Pennington County Plains, the Sturgis/Piedmont Foot Hills and the Southern Meade County</summary>
+<title>Winter Weather Advisory issued January 03 at 1:35PM MST until January 05 at 5:00AM MST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=SD1263DC119AAC.WinterWeatherAdvisory.1263DC2ED900SD.ABRWSWABR.de730ca5be1194953f85328142a895d6"/>
+<summary>...WINTER WEATHER ADVISORY IN EFFECT FROM NOON TUESDAY TO 6 AM CST WEDNESDAY... * WHAT...Snow expected. Total snow accumulations of up to one inch. Blowing and drifting snow. Winds gusting as high as 55 mph. * WHERE...Campbell, McPherson and Brown Counties.</summary>
+<cap:event>Winter Weather Advisory</cap:event>
+<cap:effective>2022-01-03T13:35:00-07:00</cap:effective>
+<cap:expires>2022-01-05T05:00:00-07:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Brown; Campbell; McPherson</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>046013 046021 046089</value>
+<valueName>UGC</valueName>
+<value>SDZ004 SDZ005 SDZ006</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.NEW.KABR.WW.Y.0001.220104T1800Z-220105T1200Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=SD1263DC119AAC.WinterWeatherAdvisory.1263DC2F4E30SD.ABRWSWABR.e3428e64536d3800eb3f376262200434</id>
+<updated>2022-01-03T13:35:00-07:00</updated>
+<published>2022-01-03T13:35:00-07:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Winter Weather Advisory issued January 03 at 1:35PM MST until January 05 at 8:00AM MST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=SD1263DC119AAC.WinterWeatherAdvisory.1263DC2F4E30SD.ABRWSWABR.e3428e64536d3800eb3f376262200434"/>
+<summary>...WINTER WEATHER ADVISORY IN EFFECT FROM 3 PM TUESDAY TO 9 AM CST WEDNESDAY... * WHAT...Snow expected. Total snow accumulations of up to one inch. Blowing and drifting snow.Winds gusting as high as 45 mph. * WHERE...In South Dakota, Marshall, Roberts and Day Counties.</summary>
+<cap:event>Winter Weather Advisory</cap:event>
+<cap:effective>2022-01-03T13:35:00-07:00</cap:effective>
+<cap:expires>2022-01-05T08:00:00-07:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Day; Marshall; Roberts</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>046037 046091 046109</value>
+<valueName>UGC</valueName>
+<value>SDZ007 SDZ008 SDZ011</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.NEW.KABR.WW.Y.0001.220104T2100Z-220105T1500Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=SD1263DC119340.HighWindWatch.1263DC2D0440SD.UNRNPWUNR.cf0dcb9d304de348ac29211e411514e5</id>
+<updated>2022-01-03T13:16:00-07:00</updated>
+<published>2022-01-03T13:16:00-07:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>High Wind Watch issued January 03 at 1:16PM MST until January 04 at 5:00PM MST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=SD1263DC119340.HighWindWatch.1263DC2D0440SD.UNRNPWUNR.cf0dcb9d304de348ac29211e411514e5"/>
+<summary>...HIGH WIND WATCH REMAINS IN EFFECT FROM TUESDAY MORNING THROUGH TUESDAY AFTERNOON... * WHAT...Northwest winds 30 to 40 mph with gusts up to 60 mph possible. * WHERE...The Sturgis/Piedmont Foot Hills, the Southern Meade County Plains, the Rapid City area and the Pennington County</summary>
 <cap:event>High Wind Watch</cap:event>
-<cap:effective>2022-01-03T01:50:00-07:00</cap:effective>
+<cap:effective>2022-01-03T13:16:00-07:00</cap:effective>
 <cap:expires>2022-01-04T17:00:00-07:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
@@ -8342,7 +8374,72 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
-<value>/O.NEW.KUNR.HW.A.0001.220104T1700Z-220105T0000Z/</value>
+<value>/O.CON.KUNR.HW.A.0001.220104T1700Z-220105T0000Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=TN1263DC119598.SpecialWeatherStatement.1263DC1F96C0TN.HUNSPSHUN.c4b9948381c0de247cc22fa7f11c1158</id>
+<updated>2022-01-03T14:22:00-06:00</updated>
+<published>2022-01-03T14:22:00-06:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Special Weather Statement issued January 03 at 2:22PM CST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=TN1263DC119598.SpecialWeatherStatement.1263DC1F96C0TN.HUNSPSHUN.c4b9948381c0de247cc22fa7f11c1158"/>
+<summary>...Black Ice Possible Tuesday Morning Along and East of Interstate 65... Melting snow will refreeze this evening across the Tennessee Valley, creating patches of black ice, especially on bridges and overpasses Tuesday morning. This includes Limestone, Morgan, Cullman, Marshall, Madison, Jackson, and Dekalb Counties in Alabama. In Southern Middle Tennessee, this includes Lincoln, Franklin, and</summary>
+<cap:event>Special Weather Statement</cap:event>
+<cap:effective>2022-01-03T14:22:00-06:00</cap:effective>
+<cap:expires>2022-01-04T06:00:00-06:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Observed</cap:certainty>
+<cap:areaDesc>Franklin; Lincoln; Moore</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>047051 047103 047127</value>
+<valueName>UGC</valueName>
+<value>TNZ076 TNZ096 TNZ097</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value></value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=TN1263DC1192DC.FloodAdvisory.1263DC2E429CTN.MEGFLSMEG.8aa4f92dc36651b4f1c29e3b71d8e41f</id>
+<updated>2022-01-03T14:15:00-06:00</updated>
+<published>2022-01-03T14:15:00-06:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Flood Advisory issued January 03 at 2:15PM CST until further notice by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=TN1263DC1192DC.FloodAdvisory.1263DC2E429CTN.MEGFLSMEG.8aa4f92dc36651b4f1c29e3b71d8e41f"/>
+<summary>...The Flood Advisory continues for the following rivers in Tennessee... Tennessee River at Savannah For the Tennessee River...including Pickwick Dam, Savannah, Saltillo, Perryville, Johnsonville...elevated river levels are forecast.</summary>
+<cap:event>Flood Advisory</cap:event>
+<cap:effective>2022-01-03T14:15:00-06:00</cap:effective>
+<cap:expires>2022-01-05T02:15:00-06:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Decatur; Hardin</cap:areaDesc>
+<cap:polygon>35.48,-88.36 35.48,-88.05 35.27,-88.05 35.14,-88.23 35.01,-88.23 35.01,-88.38 35.48,-88.36</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>047039 047071</value>
+<valueName>UGC</valueName>
+<value>TNC039 TNC071</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KMEG.FL.Y.0001.000000T0000Z-000000T0000Z/
+/SAVT1.N.ER.000000T0000Z.000000T0000Z.000000T0000Z.NO/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -8478,39 +8575,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=TN1263DC0EF9A0.FloodAdvisory.1263DC2011CCTN.MEGFLSMEG.8aa4f92dc36651b4f1c29e3b71d8e41f</id>
-<updated>2022-01-02T21:12:00-06:00</updated>
-<published>2022-01-02T21:12:00-06:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Flood Advisory issued January 02 at 9:12PM CST until further notice by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=TN1263DC0EF9A0.FloodAdvisory.1263DC2011CCTN.MEGFLSMEG.8aa4f92dc36651b4f1c29e3b71d8e41f"/>
-<summary>...The Flood Advisory continues for the following rivers in Tennessee... Tennessee River at Savannah ...FLOOD ADVISORY REMAINS IN EFFECT FROM THIS EVENING UNTIL FURTHER NOTICE... * WHAT...Flooding caused by excessive rainfall continues.</summary>
-<cap:event>Flood Advisory</cap:event>
-<cap:effective>2022-01-02T21:12:00-06:00</cap:effective>
-<cap:expires>2022-01-04T09:15:00-06:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Decatur; Hardin</cap:areaDesc>
-<cap:polygon>35.48,-88.36 35.48,-88.05 35.27,-88.05 35.14,-88.23 35.01,-88.23 35.01,-88.38 35.48,-88.36</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>047039 047071</value>
-<valueName>UGC</valueName>
-<value>TNC039 TNC071</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KMEG.FL.Y.0001.000000T0000Z-000000T0000Z/
-/SAVT1.N.ER.000000T0000Z.000000T0000Z.000000T0000Z.NO/</value>
-</cap:parameter>
-</entry>
-<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=TX1263DC10D630.HighWindWatch.1263DC2D0440TX.MAFNPWMAF.0e866c1f71f24810a6fe9419e02762e2</id>
 <updated>2022-01-03T09:32:00-06:00</updated>
 <published>2022-01-03T09:32:00-06:00</published>
@@ -8572,6 +8636,38 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value>/O.NEW.KBRO.RP.S.0003.220103T1003Z-220103T2200Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=VA1263DC119A48.WindAdvisory.1263DC1DC200VA.AKQNPWAKQ.b60cb35f7cccd836eede7d2cacd0d1b7</id>
+<updated>2022-01-03T15:34:00-05:00</updated>
+<published>2022-01-03T15:34:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Wind Advisory issued January 03 at 3:34PM EST until January 03 at 7:00PM EST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=VA1263DC119A48.WindAdvisory.1263DC1DC200VA.AKQNPWAKQ.b60cb35f7cccd836eede7d2cacd0d1b7"/>
+<summary>...WIND ADVISORY REMAINS IN EFFECT UNTIL 7 PM EST THIS EVENING... * WHAT...North winds 25 to 35 mph with gusts up to 50 mph expected. * WHERE...In Virginia, Northampton and Norfolk/Portsmouth Counties, and Virginia Beach. In North Carolina, Eastern Currituck and Western Currituck Counties.</summary>
+<cap:event>Wind Advisory</cap:event>
+<cap:effective>2022-01-03T15:34:00-05:00</cap:effective>
+<cap:expires>2022-01-03T19:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Norfolk, Portsmouth; Northampton; Virginia Beach</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>051131 051710 051740 051810</value>
+<valueName>UGC</valueName>
+<value>VAZ095 VAZ098 VAZ100</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KAKQ.WI.Y.0001.000000T0000Z-220104T0000Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -9162,50 +9258,18 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=VA1263DC0FA0D0.WindAdvisory.1263DC1DC200VA.AKQNPWAKQ.b60cb35f7cccd836eede7d2cacd0d1b7</id>
-<updated>2022-01-03T02:40:00-05:00</updated>
-<published>2022-01-03T02:40:00-05:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=VI1263DC1194D0.RipCurrentStatement.1263DC3DCD20VI.JSJCFWSJU.797d6ffbaeecb7cc03bb31616e319976</id>
+<updated>2022-01-03T16:20:00-04:00</updated>
+<published>2022-01-03T16:20:00-04:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Wind Advisory issued January 03 at 2:40AM EST until January 03 at 7:00PM EST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=VA1263DC0FA0D0.WindAdvisory.1263DC1DC200VA.AKQNPWAKQ.b60cb35f7cccd836eede7d2cacd0d1b7"/>
-<summary>...WIND ADVISORY REMAINS IN EFFECT FROM 7 AM THIS MORNING TO 7 PM EST THIS EVENING... * WHAT...North winds 25 to 35 mph with gusts up to 55 mph expected. * WHERE...In Virginia, Northampton and Norfolk/Portsmouth Counties, and Virginia Beach. In North Carolina, Eastern</summary>
-<cap:event>Wind Advisory</cap:event>
-<cap:effective>2022-01-03T02:40:00-05:00</cap:effective>
-<cap:expires>2022-01-03T19:00:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Norfolk, Portsmouth; Northampton; Virginia Beach</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>051131 051710 051740 051810</value>
-<valueName>UGC</valueName>
-<value>VAZ095 VAZ098 VAZ100</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KAKQ.WI.Y.0001.220103T1200Z-220104T0000Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=VI1263DC10A944.RipCurrentStatement.1263DC2E8AE0VI.JSJCFWSJU.797d6ffbaeecb7cc03bb31616e319976</id>
-<updated>2022-01-03T10:17:00-04:00</updated>
-<published>2022-01-03T10:17:00-04:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Rip Current Statement issued January 03 at 10:17AM AST until January 05 at 6:00AM AST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=VI1263DC10A944.RipCurrentStatement.1263DC2E8AE0VI.JSJCFWSJU.797d6ffbaeecb7cc03bb31616e319976"/>
-<summary>...HIGH RIP CURRENT RISK REMAINS IN EFFECT THROUGH LATE TUESDAY NIGHT... * WHAT...Dangerous rip currents expected due to breaking waves of 8 to 11 feet. * WHERE...North-facing beaches of Puerto Rico, Vieques and Saint Thomas; beaches of eastern Saint Croix and most beaches of</summary>
+<title>Rip Current Statement issued January 03 at 4:20PM AST until January 06 at 6:00AM AST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=VI1263DC1194D0.RipCurrentStatement.1263DC3DCD20VI.JSJCFWSJU.797d6ffbaeecb7cc03bb31616e319976"/>
+<summary>...HIGH RIP CURRENT RISK NOW IN EFFECT THROUGH AT LEAST LATE WEDNESDAY NIGHT... * WHAT...Dangerous rip currents expected due to breaking waves of 8 to 10 feet. * WHERE...North-facing beaches of Puerto Rico, Vieques and Saint Thomas, beaches of eastern tip of Saint Croix and most beaches</summary>
 <cap:event>Rip Current Statement</cap:event>
-<cap:effective>2022-01-03T10:17:00-04:00</cap:effective>
-<cap:expires>2022-01-05T06:00:00-04:00</cap:expires>
+<cap:effective>2022-01-03T16:20:00-04:00</cap:effective>
+<cap:expires>2022-01-06T06:00:00-04:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
 <cap:category>Met</cap:category>
@@ -9222,7 +9286,7 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
-<value>/O.CON.TJSJ.RP.S.0052.000000T0000Z-220105T1000Z/</value>
+<value>/O.EXT.TJSJ.RP.S.0052.000000T0000Z-220106T1000Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -10092,6 +10156,137 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=WY1263DC119A48.HighWindWarning.1263DC2D0440WY.CYSNPWCYS.f06ac3d56b571b44268fba34c435669c</id>
+<updated>2022-01-03T13:34:00-07:00</updated>
+<published>2022-01-03T13:34:00-07:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>High Wind Warning issued January 03 at 1:34PM MST until January 04 at 5:00PM MST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=WY1263DC119A48.HighWindWarning.1263DC2D0440WY.CYSNPWCYS.f06ac3d56b571b44268fba34c435669c"/>
+<summary>...HIGH WIND WARNING REMAINS IN EFFECT UNTIL 5 PM MST TUESDAY... * WHAT...West winds 40 to 50 mph with gusts up to 75 mph expected. * WHERE...Central Laramie Range and Southwest Platte County, North Snowy Range Foothills, South Laramie Range and South Laramie Range Foothills.</summary>
+<cap:event>High Wind Warning</cap:event>
+<cap:effective>2022-01-03T13:34:00-07:00</cap:effective>
+<cap:expires>2022-01-04T17:00:00-07:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Severe</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Central Laramie Range and Southwest Platte County; North Snowy Range Foothills; South Laramie Range; South Laramie Range Foothills</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>056001 056007 056021 056031</value>
+<valueName>UGC</valueName>
+<value>WYZ106 WYZ110 WYZ116 WYZ117</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KCYS.HW.W.0002.000000T0000Z-220105T0000Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=WY1263DC119A48.HighWindWarning.1263DC2D0440WY.CYSNPWCYS.7a2429cbb66a9d059fa0ac70b22cd89c</id>
+<updated>2022-01-03T13:34:00-07:00</updated>
+<published>2022-01-03T13:34:00-07:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>High Wind Warning issued January 03 at 1:34PM MST until January 04 at 5:00PM MST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=WY1263DC119A48.HighWindWarning.1263DC2D0440WY.CYSNPWCYS.7a2429cbb66a9d059fa0ac70b22cd89c"/>
+<summary>...HIGH WIND WARNING IN EFFECT FROM 3 AM TO 5 PM MST TUESDAY... * WHAT...West winds 30 to 40 mph with gusts up to 65 mph possible. * WHERE...Southeast including portions of Interstate 80 and most of Interstate 25. * WHEN....Winds will increase early Tuesday morning and become</summary>
+<cap:event>High Wind Warning</cap:event>
+<cap:effective>2022-01-03T13:34:00-07:00</cap:effective>
+<cap:expires>2022-01-04T17:00:00-07:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Severe</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Central Laramie County; Converse County Lower Elevations; East Platte County</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>056009 056021 056031</value>
+<valueName>UGC</valueName>
+<value>WYZ101 WYZ107 WYZ118</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.UPG.KCYS.HW.A.0001.220104T1100Z-220105T0000Z/
+/O.EXB.KCYS.HW.W.0002.220104T1000Z-220105T0000Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=WY1263DC119A48.HighWindWarning.1263DC2D0440WY.CYSNPWCYS.7369ecc0affa9c87ddea8e94ec35553d</id>
+<updated>2022-01-03T13:34:00-07:00</updated>
+<published>2022-01-03T13:34:00-07:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>High Wind Warning issued January 03 at 1:34PM MST until January 04 at 5:00PM MST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=WY1263DC119A48.HighWindWarning.1263DC2D0440WY.CYSNPWCYS.7369ecc0affa9c87ddea8e94ec35553d"/>
+<summary>...HIGH WIND WARNING IN EFFECT FROM 3 AM TO 5 PM MST TUESDAY... * WHAT...West winds 30 to 45 mph with gusts up to 70 mph possible. * WHERE...South central Wyoming including the lower elevations of Carbon and Albany counties. * WHEN...Winds will increase early Tuesday morning and become</summary>
+<cap:event>High Wind Warning</cap:event>
+<cap:effective>2022-01-03T13:34:00-07:00</cap:effective>
+<cap:expires>2022-01-04T17:00:00-07:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Severe</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Central Carbon County; Ferris, Seminoe, Shirley Mountains; Laramie Valley; Shirley Basin</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>056001 056007</value>
+<valueName>UGC</valueName>
+<value>WYZ104 WYZ105 WYZ109 WYZ115</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.UPG.KCYS.HW.A.0001.220104T1100Z-220105T0000Z/
+/O.EXB.KCYS.HW.W.0002.220104T1000Z-220105T0000Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=WY1263DC119A48.HighWindWarning.1263DC2D0440WY.CYSNPWCYS.146621798716d40fa5e2eacbd4ea47f7</id>
+<updated>2022-01-03T13:34:00-07:00</updated>
+<published>2022-01-03T13:34:00-07:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>High Wind Warning issued January 03 at 1:34PM MST until January 04 at 5:00PM MST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=WY1263DC119A48.HighWindWarning.1263DC2D0440WY.CYSNPWCYS.146621798716d40fa5e2eacbd4ea47f7"/>
+<summary>...HIGH WIND WARNING IN EFFECT FROM 9 AM TO 5 PM MST TUESDAY... * WHAT...West winds 30 to 40 mph with gusts around 60 mph. * WHERE...In Wyoming, Niobrara County. In Nebraska, Dawes County, Box Butte County, Northern Sioux County and Southern Sioux County. * WHEN...Winds will increase Tuesday morning and become strong</summary>
+<cap:event>High Wind Warning</cap:event>
+<cap:effective>2022-01-03T13:34:00-07:00</cap:effective>
+<cap:expires>2022-01-04T17:00:00-07:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Severe</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>East Laramie County; Goshen County; Niobrara County</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>056015 056021 056027</value>
+<valueName>UGC</valueName>
+<value>WYZ102 WYZ108 WYZ119</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.UPG.KCYS.HW.A.0001.220104T1600Z-220105T0000Z/
+/O.EXB.KCYS.HW.W.0002.220104T1600Z-220105T0000Z/</value>
+</cap:parameter>
+</entry>
+<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=WY1263DC114BC4.WinterWeatherAdvisory.1263DC4D8490WY.BYZWSWBYZ.c5ebcdab400293e0aba56ba374e52083</id>
 <updated>2022-01-03T11:33:00-07:00</updated>
 <published>2022-01-03T11:33:00-07:00</published>
@@ -10345,102 +10540,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value>/O.NEW.KCYS.WS.A.0001.220104T1800Z-220106T0600Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=WY1263DC0FCDBC.HighWindWarning.1263DC2D0440WY.CYSNPWCYS.f06ac3d56b571b44268fba34c435669c</id>
-<updated>2022-01-03T01:55:00-07:00</updated>
-<published>2022-01-03T01:55:00-07:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>High Wind Warning issued January 03 at 1:55AM MST until January 04 at 5:00PM MST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=WY1263DC0FCDBC.HighWindWarning.1263DC2D0440WY.CYSNPWCYS.f06ac3d56b571b44268fba34c435669c"/>
-<summary>...HIGH WIND WARNING NOW IN EFFECT UNTIL 5 PM MST TUESDAY... * WHAT...West winds 40 to 50 mph with gusts up to 75 mph expected. * WHERE...Central Laramie Range and Southwest Platte County, North Snowy Range Foothills, South Laramie Range and South Laramie Range Foothills.</summary>
-<cap:event>High Wind Warning</cap:event>
-<cap:effective>2022-01-03T01:55:00-07:00</cap:effective>
-<cap:expires>2022-01-04T17:00:00-07:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Severe</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Central Laramie Range and Southwest Platte County; North Snowy Range Foothills; South Laramie Range; South Laramie Range Foothills</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>056001 056007 056021 056031</value>
-<valueName>UGC</valueName>
-<value>WYZ106 WYZ110 WYZ116 WYZ117</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.EXT.KCYS.HW.W.0002.220103T0900Z-220105T0000Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=WY1263DC0FCDBC.HighWindWatch.1263DC2D0440WY.CYSNPWCYS.e7cab625d5b5ab3dcad70908177a58c7</id>
-<updated>2022-01-03T01:55:00-07:00</updated>
-<published>2022-01-03T01:55:00-07:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>High Wind Watch issued January 03 at 1:55AM MST until January 04 at 5:00PM MST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=WY1263DC0FCDBC.HighWindWatch.1263DC2D0440WY.CYSNPWCYS.e7cab625d5b5ab3dcad70908177a58c7"/>
-<summary>...HIGH WIND WATCH REMAINS IN EFFECT FROM LATE TONIGHT THROUGH TUESDAY AFTERNOON... * WHAT...West winds 30 to 40 mph with gusts up to 65 mph possible. * WHERE...Most of southeast and south central Wyoming including Interstate 25 and most of Interstate 80.</summary>
-<cap:event>High Wind Watch</cap:event>
-<cap:effective>2022-01-03T01:55:00-07:00</cap:effective>
-<cap:expires>2022-01-04T17:00:00-07:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Future</cap:urgency>
-<cap:severity>Severe</cap:severity>
-<cap:certainty>Possible</cap:certainty>
-<cap:areaDesc>Central Carbon County; Central Laramie County; Converse County Lower Elevations; East Platte County; Ferris, Seminoe, Shirley Mountains; Laramie Valley; Shirley Basin</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>056001 056007 056009 056021 056031</value>
-<valueName>UGC</valueName>
-<value>WYZ101 WYZ104 WYZ105 WYZ107 WYZ109 WYZ115 WYZ118</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KCYS.HW.A.0001.220104T1100Z-220105T0000Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=WY1263DC0FCDBC.HighWindWatch.1263DC2D0440WY.CYSNPWCYS.155c04a89837dd50f954a5583b884ab0</id>
-<updated>2022-01-03T01:55:00-07:00</updated>
-<published>2022-01-03T01:55:00-07:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>High Wind Watch issued January 03 at 1:55AM MST until January 04 at 5:00PM MST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=WY1263DC0FCDBC.HighWindWatch.1263DC2D0440WY.CYSNPWCYS.155c04a89837dd50f954a5583b884ab0"/>
-<summary>...HIGH WIND WATCH REMAINS IN EFFECT FROM TUESDAY MORNING THROUGH TUESDAY AFTERNOON... * WHAT...West winds 30 to 40 mph with gusts up to 65 mph possible. * WHERE...In Wyoming, Niobrara County. In Nebraska, Dawes County, Box Butte County, Northern Sioux County and Southern</summary>
-<cap:event>High Wind Watch</cap:event>
-<cap:effective>2022-01-03T01:55:00-07:00</cap:effective>
-<cap:expires>2022-01-04T17:00:00-07:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Future</cap:urgency>
-<cap:severity>Severe</cap:severity>
-<cap:certainty>Possible</cap:certainty>
-<cap:areaDesc>East Laramie County; Goshen County; Niobrara County</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>056015 056021 056027</value>
-<valueName>UGC</valueName>
-<value>WYZ102 WYZ108 WYZ119</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KCYS.HW.A.0001.220104T1600Z-220105T0000Z/</value>
 </cap:parameter>
 </entry>
 </feed>
