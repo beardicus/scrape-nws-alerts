@@ -16,16 +16,48 @@ xmlns = 'http://www.w3.org/2005/Atom'
 xmlns:cap = 'urn:oasis:names:tc:emergency:cap:1.1'
 xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 >
-<!-- http-date = Mon, 10 Jan 2022 13:59:00 GMT -->
+<!-- http-date = Mon, 10 Jan 2022 14:30:00 GMT -->
 <id>https://alerts.weather.gov/cap/us.php?x=0</id>
 <logo>http://alerts.weather.gov/images/xml_logo.gif</logo>
 <generator>NWS CAP Server</generator>
-<updated>2022-01-10T04:59:00-09:00</updated>
+<updated>2022-01-10T05:30:00-09:00</updated>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
 <title>Current Watches, Warnings and Advisories for the United States Issued by the National Weather Service</title>
 <link href="https://alerts.weather.gov/cap/us.php?x=0"/>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=AK1263DC7B7E18.HighWindWarning.1263DC7B9970AK.AJKNPWAJK.ed5289340c4d003769b1a2ede9a807f0</id>
+<updated>2022-01-10T05:30:00-09:00</updated>
+<published>2022-01-10T05:30:00-09:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>High Wind Warning issued January 10 at 5:30AM AKST until January 10 at 6:00AM AKST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=AK1263DC7B7E18.HighWindWarning.1263DC7B9970AK.AJKNPWAJK.ed5289340c4d003769b1a2ede9a807f0"/>
+<summary>...HIGH WIND WARNING WILL EXPIRE AT 6 AM AKST EARLY THIS MORNING... Winds are expected to slowly diminish through the morning.</summary>
+<cap:event>High Wind Warning</cap:event>
+<cap:effective>2022-01-10T05:30:00-09:00</cap:effective>
+<cap:expires>2022-01-10T06:00:00-09:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Severe</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Dixon Entrance to Cape Decision Coastal Area; Southern Inner Channels</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>002130 002195 002198 002275</value>
+<valueName>UGC</valueName>
+<value>AKZ027 AKZ028</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.EXP.PAJK.HW.W.0004.000000T0000Z-220110T1500Z/</value>
+</cap:parameter>
+</entry>
 <entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=AK1263DC7B625C.BlizzardWarning.1263DC7C0EA0AK.AFCWSWAER.2bc8b3193dab62df399e6542afc6e79d</id>
 <updated>2022-01-10T04:59:00-09:00</updated>
@@ -56,38 +88,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value>/O.CON.PAFC.BZ.W.0002.000000T0000Z-220110T1800Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=AK1263DC7B5D48.SpecialWeatherStatement.1263DC8906F0AK.AJKSPSAJK.a6930ac893d1b300def75e28f95de0e1</id>
-<updated>2022-01-10T04:46:00-09:00</updated>
-<published>2022-01-10T04:46:00-09:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Special Weather Statement issued January 10 at 4:46AM AKST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=AK1263DC7B5D48.SpecialWeatherStatement.1263DC8906F0AK.AJKSPSAJK.a6930ac893d1b300def75e28f95de0e1"/>
-<summary>...RAIN AND HIGH FREEZING LEVELS ON TOP OF A HIGH SNOWPACK COULD PROMPT NUISANCE FLOODING INTO MONDAY... Light to moderate rain continues across the southern panhandle. With a deep snow pack in many locations, nuisance flooding could develop in parts of the southern Panhandle from the rain combined with rapid snow melt. A flood watch has been posted for the</summary>
-<cap:event>Special Weather Statement</cap:event>
-<cap:effective>2022-01-10T04:46:00-09:00</cap:effective>
-<cap:expires>2022-01-10T18:00:00-09:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Observed</cap:certainty>
-<cap:areaDesc>Dixon Entrance to Cape Decision Coastal Area; Southern Inner Channels</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>002130 002195 002198 002275</value>
-<valueName>UGC</valueName>
-<value>AKZ027 AKZ028</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value></value>
 </cap:parameter>
 </entry>
 <entry>
@@ -148,6 +148,38 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <value>002100 002110 002130 002198 002230 002275</value>
 <valueName>UGC</valueName>
 <value>AKZ018 AKZ019 AKZ029</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value></value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=AK1263DC7B5D48.SpecialWeatherStatement.1263DC8906F0AK.AJKSPSAJK.a6930ac893d1b300def75e28f95de0e1</id>
+<updated>2022-01-10T04:46:00-09:00</updated>
+<published>2022-01-10T04:46:00-09:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Special Weather Statement issued January 10 at 4:46AM AKST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=AK1263DC7B5D48.SpecialWeatherStatement.1263DC8906F0AK.AJKSPSAJK.a6930ac893d1b300def75e28f95de0e1"/>
+<summary>...RAIN AND HIGH FREEZING LEVELS ON TOP OF A HIGH SNOWPACK COULD PROMPT NUISANCE FLOODING INTO MONDAY... Light to moderate rain continues across the southern panhandle. With a deep snow pack in many locations, nuisance flooding could develop in parts of the southern Panhandle from the rain combined with rapid snow melt. A flood watch has been posted for the</summary>
+<cap:event>Special Weather Statement</cap:event>
+<cap:effective>2022-01-10T04:46:00-09:00</cap:effective>
+<cap:expires>2022-01-10T18:00:00-09:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Observed</cap:certainty>
+<cap:areaDesc>Dixon Entrance to Cape Decision Coastal Area; Southern Inner Channels</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>002130 002195 002198 002275</value>
+<valueName>UGC</valueName>
+<value>AKZ027 AKZ028</value>
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
@@ -474,38 +506,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <valueName>VTEC</valueName>
 <value>/O.CAN.PAFG.WC.Y.0006.000000T0000Z-220110T1200Z/
 /O.EXB.PAFG.WW.Y.0003.000000T0000Z-220110T2100Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=AK1263DC7A973C.HighWindWarning.1263DC7B9970AK.AJKNPWAJK.ed5289340c4d003769b1a2ede9a807f0</id>
-<updated>2022-01-09T23:39:00-09:00</updated>
-<published>2022-01-09T23:39:00-09:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>High Wind Warning issued January 09 at 11:39PM AKST until January 10 at 6:00AM AKST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=AK1263DC7A973C.HighWindWarning.1263DC7B9970AK.AJKNPWAJK.ed5289340c4d003769b1a2ede9a807f0"/>
-<summary>...HIGH WIND WARNING REMAINS IN EFFECT UNTIL 6 AM AKST MONDAY... * WHAT...Southeast winds 20 to 30 mph with gusts up to 60 mph. * WHERE...Hydaburg, Ketchikan, and Metlakatla. * WHEN...Until 6 AM AKST Monday. * IMPACTS...Damaging winds could blow down trees and power lines. Power outages are possible.</summary>
-<cap:event>High Wind Warning</cap:event>
-<cap:effective>2022-01-09T23:39:00-09:00</cap:effective>
-<cap:expires>2022-01-10T06:00:00-09:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Severe</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Dixon Entrance to Cape Decision Coastal Area; Southern Inner Channels</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>002130 002195 002198 002275</value>
-<valueName>UGC</valueName>
-<value>AKZ027 AKZ028</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.PAJK.HW.W.0004.000000T0000Z-220110T1500Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -4023,6 +4023,38 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=NY1263DC7B77D8.SpecialWeatherStatement.1263DC7BC65CNY.BGMSPSBGM.4ea9ecfd6470e44f6a4cc7d6a1b56cb8</id>
+<updated>2022-01-10T09:14:00-05:00</updated>
+<published>2022-01-10T09:14:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Special Weather Statement issued January 10 at 9:14AM EST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=NY1263DC7B77D8.SpecialWeatherStatement.1263DC7BC65CNY.BGMSPSBGM.4ea9ecfd6470e44f6a4cc7d6a1b56cb8"/>
+<summary>...STRONG LAKE EFFECT SNOW BAND CONTINUES TO AFFECT ONEIDA COUNTY... HAZARDS...A lake effect snow band accompanied by winds of 25 MPH which can rapidly reduce visibility to less than a quarter of a mile. This lake effect snow band is producing extremely heavy snow at the rate of 1 to 2 inches per hour.</summary>
+<cap:event>Special Weather Statement</cap:event>
+<cap:effective>2022-01-10T09:14:00-05:00</cap:effective>
+<cap:expires>2022-01-10T11:15:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Observed</cap:certainty>
+<cap:areaDesc>Madison; Northern Oneida; Onondaga; Southern Oneida</cap:areaDesc>
+<cap:polygon>43.33,-75.08 43.3,-75.15 43.26,-75.16 43.22,-75.07 43.12,-75.16 43.06,-75.83 43.1,-76.5 43.23,-76.47 43.21,-76.26 43.24,-76.27 43.24,-76.26 43.2,-76.22 43.27,-76.21 43.2,-76.08 43.15,-75.89 43.33,-75.88 43.48,-75.81 43.42,-75.53 43.61,-75.11 43.33,-75.08</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>036053 036065 036067</value>
+<valueName>UGC</valueName>
+<value>NYZ009 NYZ018 NYZ036 NYZ037</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value></value>
+</cap:parameter>
+</entry>
+<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=NY1263DC7B5D48.SpecialWeatherStatement.1263DC7BAB04NY.BUFSPSBUF.1747ffd96a5c20591a6f1ef3f25ffe93</id>
 <updated>2022-01-10T08:46:00-05:00</updated>
 <published>2022-01-10T08:46:00-05:00</published>
@@ -4378,38 +4410,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value>/O.CON.KBUF.WW.Y.0002.220110T2300Z-220111T1800Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=NY1263DC7B5A28.SpecialWeatherStatement.1263DC7B7E18NY.BUFSPSBUF.9cfe59592ae11af3cc50bc1558c4628a</id>
-<updated>2022-01-10T08:38:00-05:00</updated>
-<published>2022-01-10T08:38:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Special Weather Statement issued January 10 at 8:38AM EST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=NY1263DC7B5A28.SpecialWeatherStatement.1263DC7B7E18NY.BUFSPSBUF.9cfe59592ae11af3cc50bc1558c4628a"/>
-<summary>...A BAND OF LAKE EFFECT SNOW WILL AFFECT PARTS OF SOUTHERN ERIE... WYOMING...AND NORTHERN ERIE COUNTIES... HAZARDS...A band of lake effect snow accompanied by wind gusts of up to 30 MPH which can rapidly reduce visibility to less than one-half mile and produce as much as a quick inch of snow accumulation. LOCATION AND MOVEMENT...At 836 AM EST, a band of snow was over Wales</summary>
-<cap:event>Special Weather Statement</cap:event>
-<cap:effective>2022-01-10T08:38:00-05:00</cap:effective>
-<cap:expires>2022-01-10T09:30:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Observed</cap:certainty>
-<cap:areaDesc>Northern Erie; Southern Erie; Wyoming</cap:areaDesc>
-<cap:polygon>42.73,-79.06 42.76,-78.98 42.8,-78.92 42.82,-78.92 42.81,-77.96 42.67,-77.95 42.62,-77.99 42.6,-78.03 42.7,-79.07 42.73,-79.06</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>036029 036121</value>
-<valueName>UGC</valueName>
-<value>NYZ010 NYZ012 NYZ085</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value></value>
 </cap:parameter>
 </entry>
 <entry>
