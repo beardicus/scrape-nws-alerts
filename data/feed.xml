@@ -16,16 +16,48 @@ xmlns = 'http://www.w3.org/2005/Atom'
 xmlns:cap = 'urn:oasis:names:tc:emergency:cap:1.1'
 xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 >
-<!-- http-date = Tue, 11 Jan 2022 11:57:00 GMT -->
+<!-- http-date = Tue, 11 Jan 2022 12:53:00 GMT -->
 <id>https://alerts.weather.gov/cap/us.php?x=0</id>
 <logo>http://alerts.weather.gov/images/xml_logo.gif</logo>
 <generator>NWS CAP Server</generator>
-<updated>2022-01-11T03:57:00-08:00</updated>
+<updated>2022-01-11T01:53:00-11:00</updated>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
 <title>Current Watches, Warnings and Advisories for the United States Issued by the National Weather Service</title>
 <link href="https://alerts.weather.gov/cap/us.php?x=0"/>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=AK1263DC8A77B0.WinterStormWarning.1263DC8BC610AK.AJKWSWAJK.eba5b0f18ebddab6afccd674829526cc</id>
+<updated>2022-01-11T03:44:00-09:00</updated>
+<published>2022-01-11T03:44:00-09:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Winter Storm Warning issued January 11 at 3:44AM AKST until January 11 at 12:00PM AKST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=AK1263DC8A77B0.WinterStormWarning.1263DC8BC610AK.AJKWSWAJK.eba5b0f18ebddab6afccd674829526cc"/>
+<summary>...WINTER STORM WARNING REMAINS IN EFFECT UNTIL NOON AKST TODAY... * WHAT...Freezing rain. Ice accumulation of up to a quarter inch. * WHERE...Haines, and Haines Highway. * WHEN...Until noon AKST Tuesday. * IMPACTS...Travel could be very difficult to impossible. Rain on top of hard pack snow will make conditions very icy, even</summary>
+<cap:event>Winter Storm Warning</cap:event>
+<cap:effective>2022-01-11T03:44:00-09:00</cap:effective>
+<cap:expires>2022-01-11T12:00:00-09:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Haines Borough and Lynn Canal</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>002100 002110</value>
+<valueName>UGC</valueName>
+<value>AKZ019</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.PAJK.WS.W.0001.000000T0000Z-220111T2100Z/</value>
+</cap:parameter>
+</entry>
 <entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=AK1263DC89B848.SpecialWeatherStatement.1263DC8B9F00AK.AJKSPSAJK.eed907cf2a0327ac9290f282c0bcfc11</id>
 <updated>2022-01-10T22:54:00-09:00</updated>
@@ -56,38 +88,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value></value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=AK1263DC893F94.WinterStormWarning.1263DC8BC610AK.AJKWSWAJK.eba5b0f18ebddab6afccd674829526cc</id>
-<updated>2022-01-10T19:45:00-09:00</updated>
-<published>2022-01-10T19:45:00-09:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Winter Storm Warning issued January 10 at 7:45PM AKST until January 11 at 12:00PM AKST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=AK1263DC893F94.WinterStormWarning.1263DC8BC610AK.AJKWSWAJK.eba5b0f18ebddab6afccd674829526cc"/>
-<summary>...WINTER STORM WARNING NOW IN EFFECT UNTIL NOON AKST TUESDAY... * WHAT...Freezing rain. Ice accumulation of up to a quarter inch. * WHERE...Haines, and Haines Highway. * WHEN...Until noon AKST Tuesday. * IMPACTS...Travel could be very difficult to impossible. Rain on top of hard pack snow will make conditions very icy, even as</summary>
-<cap:event>Winter Storm Warning</cap:event>
-<cap:effective>2022-01-10T19:45:00-09:00</cap:effective>
-<cap:expires>2022-01-11T12:00:00-09:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Haines Borough and Lynn Canal</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>002100 002110</value>
-<valueName>UGC</valueName>
-<value>AKZ019</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.COR.PAJK.WS.W.0001.000000T0000Z-220111T2100Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -451,18 +451,18 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=AS1263DC88A6D8.HighSurfAdvisory.1263DC8A8D90AS.STUCFWPPG.b673bfeec0acffde87780c37d97b9b46</id>
-<updated>2022-01-10T13:54:00-11:00</updated>
-<published>2022-01-10T13:54:00-11:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=AS1263DC8A7B34.HighSurfAdvisory.1263DC97FB10AS.STUCFWPPG.b673bfeec0acffde87780c37d97b9b46</id>
+<updated>2022-01-11T01:53:00-11:00</updated>
+<published>2022-01-11T01:53:00-11:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>High Surf Advisory issued January 10 at 1:54PM SST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=AS1263DC88A6D8.HighSurfAdvisory.1263DC8A8D90AS.STUCFWPPG.b673bfeec0acffde87780c37d97b9b46"/>
-<summary>...A High Surf Advisory is in effect... * SURF...Surfs of 10 to 12 feet will impact all shores of American Samoa. * TIMING...through Wednesday * IMPACTS...High surfs and strong rip currents. Fautuaga mo galu maualuluga</summary>
+<title>High Surf Advisory issued January 11 at 1:53AM SST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=AS1263DC8A7B34.HighSurfAdvisory.1263DC97FB10AS.STUCFWPPG.b673bfeec0acffde87780c37d97b9b46"/>
+<summary>...A High Surf Advisory remains in effect... * SURF...Surfs of 10 to 12 feet will impact all shores of American Samoa. * TIMING...through Wednesday * IMPACTS...High surfs and strong rip currents. Fautuaga mo galu maualuluga</summary>
 <cap:event>High Surf Advisory</cap:event>
-<cap:effective>2022-01-10T13:54:00-11:00</cap:effective>
-<cap:expires>2022-01-11T02:00:00-11:00</cap:expires>
+<cap:effective>2022-01-11T01:53:00-11:00</cap:effective>
+<cap:expires>2022-01-11T14:00:00-11:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
 <cap:category>Met</cap:category>
@@ -932,6 +932,38 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=FL1263DC8A7170.BeachHazardsStatement.1263DC8C1430FL.MLBCFWMLB.bf7980acfe1d78300843d2cfdb5f9bb9</id>
+<updated>2022-01-11T07:28:00-05:00</updated>
+<published>2022-01-11T07:28:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Beach Hazards Statement issued January 11 at 7:28AM EST until January 11 at 6:00PM EST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=FL1263DC8A7170.BeachHazardsStatement.1263DC8C1430FL.MLBCFWMLB.bf7980acfe1d78300843d2cfdb5f9bb9"/>
+<summary>...BEACH HAZARDS STATEMENT IN EFFECT UNTIL 6 PM THIS EVENING... * WHAT...Rough surf and a moderate risk of life threatening rip currents are expected at all east central Florida beaches. * WHERE...Volusia, Brevard, Indian River, St. Lucie, and Martin counties. * WHEN...Until 6 PM EST this evening.</summary>
+<cap:event>Beach Hazards Statement</cap:event>
+<cap:effective>2022-01-11T07:28:00-05:00</cap:effective>
+<cap:expires>2022-01-11T18:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Coastal Volusia; Indian River; Martin; Northern Brevard County; Southern Brevard County; St. Lucie</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>012009 012061 012085 012111 012127</value>
+<valueName>UGC</valueName>
+<value>FLZ047 FLZ054 FLZ059 FLZ064 FLZ141 FLZ147</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.NEW.KMLB.BH.S.0001.220111T1228Z-220111T2300Z/</value>
+</cap:parameter>
+</entry>
+<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=FL1263DC8A07F8.RipCurrentStatement.1263DC97D400FL.TAECFWTAE.27435d5fa31ea1a242ba44bbf6086634</id>
 <updated>2022-01-11T04:58:00-05:00</updated>
 <published>2022-01-11T04:58:00-05:00</published>
@@ -1288,6 +1320,38 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=ID1263DC8A7620.WinterWeatherAdvisory.1263DC99F6E0ID.OTXWSWOTX.1453741aa673aed70ba52e21ba35a3fe</id>
+<updated>2022-01-11T05:40:00-07:00</updated>
+<published>2022-01-11T05:40:00-07:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Winter Weather Advisory issued January 11 at 5:40AM MST until January 12 at 7:00AM MST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=ID1263DC8A7620.WinterWeatherAdvisory.1263DC99F6E0ID.OTXWSWOTX.1453741aa673aed70ba52e21ba35a3fe"/>
+<summary>...WINTRY MIX OF PRECIPITATION TUESDAY INCLUDING FREEZING RAIN... .A mix of winter precipitation is expected today for portions of the Columbia Basin, West Plains and Washington Palouse. Precipitation may transition from sleet to freezing rain to rain or snow, however some areas will see several hours of freezing rain or sleet which will impact already cold surfaces and bare roads and sidewalks.</summary>
+<cap:event>Winter Weather Advisory</cap:event>
+<cap:effective>2022-01-11T05:40:00-07:00</cap:effective>
+<cap:expires>2022-01-12T07:00:00-07:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Northern Panhandle</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>016017 016021</value>
+<valueName>UGC</valueName>
+<value>IDZ001</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.EXB.KOTX.WW.Y.0005.000000T0000Z-220112T1400Z/</value>
+</cap:parameter>
+</entry>
+<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=ID1263DC6D1BAC.AirStagnationAdvisory.1263DCC59AC0ID.MSONPWMSO.2358455955944c71b961909d727d5e11</id>
 <updated>2022-01-09T13:03:00-07:00</updated>
 <published>2022-01-09T13:03:00-07:00</published>
@@ -1515,39 +1579,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <valueName>VTEC</valueName>
 <value>/O.EXT.KPAH.FL.W.0006.000000T0000Z-220118T0000Z/
 /SHNI2.1.ER.220104T1214Z.220110T0930Z.220117T1800Z.NO/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=IN1263DC890FEC.FloodWarning.1263DC8B6274IN.INDFLSIND.3668532d32470254c40318ed21df0ddd</id>
-<updated>2022-01-10T22:23:00-05:00</updated>
-<published>2022-01-10T22:23:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Flood Warning issued January 10 at 10:23PM EST until January 11 at 1:45PM EST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=IN1263DC890FEC.FloodWarning.1263DC8B6274IN.INDFLSIND.3668532d32470254c40318ed21df0ddd"/>
-<summary>...The Flood Warning continues for the following rivers in Indiana... White River, East Fork White River. .Rainfall of 1.00 to 1.50 inches across southwestern Indiana this past Saturday night is prolonging minor flooding on the White River from near Petersburg to Hazleton. Flooding is expected to continue until the end of the week.</summary>
-<cap:event>Flood Warning</cap:event>
-<cap:effective>2022-01-10T22:23:00-05:00</cap:effective>
-<cap:expires>2022-01-11T13:45:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Jackson; Lawrence; Washington</cap:areaDesc>
-<cap:polygon>39.05,-85.83 38.86,-85.99 38.77,-86.13 38.79,-86.2 38.93,-86.04 39.06,-85.87 39.05,-85.83</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>018071 018093 018175</value>
-<valueName>UGC</valueName>
-<value>INC071 INC093 INC175</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KIND.FL.W.0004.000000T0000Z-220111T1845Z/
-/SERI3.1.ER.220110T0154Z.220110T1245Z.220111T0645Z.NO/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -1944,39 +1975,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <valueName>VTEC</valueName>
 <value>/O.CON.KLMK.FL.W.0016.000000T0000Z-220115T0000Z/
 /RCHK2.1.ER.220110T0905Z.220112T1800Z.220114T1800Z.NO/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=KY1263DC88E0A8.FloodWarning.1263DC8A9240KY.LMKFLSLMK.6234a022c60382acd60c93eed74f27cc</id>
-<updated>2022-01-10T21:02:00-05:00</updated>
-<published>2022-01-10T21:02:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Flood Warning issued January 10 at 9:02PM EST until January 11 at 8:12AM EST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=KY1263DC88E0A8.FloodWarning.1263DC8A9240KY.LMKFLSLMK.6234a022c60382acd60c93eed74f27cc"/>
-<summary>...The Flood Warning continues for the following rivers in Kentucky... Rough River near Dundee affecting Ohio County.PRECAUTIONARY/PREPAREDNESS ACTIONS... Motorists should not attempt to drive around barricades or drive cars through flooded areas.</summary>
-<cap:event>Flood Warning</cap:event>
-<cap:effective>2022-01-10T21:02:00-05:00</cap:effective>
-<cap:expires>2022-01-11T08:12:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Ohio</cap:areaDesc>
-<cap:polygon>37.55,-86.49 37.43,-86.94 37.43,-87.1 37.52,-87.13 37.51,-86.96 37.66,-86.53 37.55,-86.49</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>021183</value>
-<valueName>UGC</valueName>
-<value>KYC183</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.EXT.KLMK.FL.W.0013.000000T0000Z-220111T1312Z/
-/DUNK2.1.ER.220109T2215Z.220110T1800Z.220111T0712Z.NO/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -4253,6 +4251,298 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=WA1263DC8A76E8.SpecialWeatherStatement.1263DC99BA54WA.SEWSPSSEW.a3af9228b918408b64c9fe0ac8faf644</id>
+<updated>2022-01-11T04:42:00-08:00</updated>
+<published>2022-01-11T04:42:00-08:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Special Weather Statement issued January 11 at 4:42AM PST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=WA1263DC8A76E8.SpecialWeatherStatement.1263DC99BA54WA.SEWSPSSEW.a3af9228b918408b64c9fe0ac8faf644"/>
+<summary>...HEAVY RAINFALL THROUGH WEDNESDAY WILL LEAD TO AN INCREASED THREAT OF LANDSLIDES IN WESTERN WASHINGTON... Heavy precipitation over the past few days and weeks has increased soil moisture to saturated levels across Western Washington. Heavy rainfall is expected through Wednesday with another 1 to 3 inches in the lowlands. This amount of rain will</summary>
+<cap:event>Special Weather Statement</cap:event>
+<cap:effective>2022-01-11T04:42:00-08:00</cap:effective>
+<cap:expires>2022-01-12T04:45:00-08:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Observed</cap:certainty>
+<cap:areaDesc>Admiralty Inlet Area; Bellevue and Vicinity; Bremerton and Vicinity; Central Coast; East Puget Sound Lowlands; Eastern Strait of Juan de Fuca; Everett and Vicinity; Hood Canal Area; Lower Chehalis Valley Area; North Coast; San Juan County; Seattle and Vicinity; Southwest Interior; Tacoma Area; Western Skagit County; Western Strait of Juan De Fuca; Western Whatcom County</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>053009 053027 053029 053031 053033 053035 053041 053045 053053 053055 053057 053061 053067 053073</value>
+<valueName>UGC</valueName>
+<value>WAZ001 WAZ503 WAZ504 WAZ506 WAZ507 WAZ509 WAZ510 WAZ511 WAZ512 WAZ514 WAZ515 WAZ516 WAZ517 WAZ555 WAZ556 WAZ558 WAZ559</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value></value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=WA1263DC8A7620.WinterWeatherAdvisory.1263DC8BC610WA.OTXWSWOTX.8ea1793d9e4cac45ac163bd3f39cf225</id>
+<updated>2022-01-11T04:40:00-08:00</updated>
+<published>2022-01-11T04:40:00-08:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Winter Weather Advisory issued January 11 at 4:40AM PST until January 11 at 1:00PM PST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=WA1263DC8A7620.WinterWeatherAdvisory.1263DC8BC610WA.OTXWSWOTX.8ea1793d9e4cac45ac163bd3f39cf225"/>
+<summary>...WINTRY MIX OF PRECIPITATION TUESDAY INCLUDING FREEZING RAIN... .A mix of winter precipitation is expected today for portions of the Columbia Basin, West Plains and Washington Palouse. Precipitation may transition from sleet to freezing rain to rain or snow, however some areas will see several hours of freezing rain or sleet which will impact already cold surfaces and bare roads and sidewalks.</summary>
+<cap:event>Winter Weather Advisory</cap:event>
+<cap:effective>2022-01-11T04:40:00-08:00</cap:effective>
+<cap:expires>2022-01-11T13:00:00-08:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Spokane Area; Washington Palouse</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>053019 053043 053063 053075</value>
+<valueName>UGC</valueName>
+<value>WAZ033 WAZ036</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.EXT.KOTX.WW.Y.0005.220111T1240Z-220111T2100Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=WA1263DC8A7620.WinterWeatherAdvisory.1263DC97D400WA.OTXWSWOTX.8e30d1a40face2e6df5e411a98445c07</id>
+<updated>2022-01-11T04:40:00-08:00</updated>
+<published>2022-01-11T04:40:00-08:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Winter Weather Advisory issued January 11 at 4:40AM PST until January 11 at 4:00PM PST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=WA1263DC8A7620.WinterWeatherAdvisory.1263DC97D400WA.OTXWSWOTX.8e30d1a40face2e6df5e411a98445c07"/>
+<summary>...WINTRY MIX OF PRECIPITATION TUESDAY INCLUDING FREEZING RAIN... .A mix of winter precipitation is expected today for portions of the Columbia Basin, West Plains and Washington Palouse. Precipitation may transition from sleet to freezing rain to rain or snow, however some areas will see several hours of freezing rain or sleet which will impact already cold surfaces and bare roads and sidewalks.</summary>
+<cap:event>Winter Weather Advisory</cap:event>
+<cap:effective>2022-01-11T04:40:00-08:00</cap:effective>
+<cap:expires>2022-01-11T16:00:00-08:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Moses Lake Area; Upper Columbia Basin; Waterville Plateau; Wenatchee Area</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>053001 053007 053017 053019 053025 053043</value>
+<valueName>UGC</valueName>
+<value>WAZ034 WAZ035 WAZ041 WAZ044</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KOTX.WW.Y.0005.000000T0000Z-220112T0000Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=WA1263DC8A7620.WinterWeatherAdvisory.1263DC97D400WA.OTXWSWOTX.475a67d73d2aec8f99ec4e7d42bc32ac</id>
+<updated>2022-01-11T04:40:00-08:00</updated>
+<published>2022-01-11T04:40:00-08:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Winter Weather Advisory issued January 11 at 4:40AM PST until January 11 at 4:00PM PST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=WA1263DC8A7620.WinterWeatherAdvisory.1263DC97D400WA.OTXWSWOTX.475a67d73d2aec8f99ec4e7d42bc32ac"/>
+<summary>...WINTRY MIX OF PRECIPITATION TUESDAY INCLUDING FREEZING RAIN... .A mix of winter precipitation is expected today for portions of the Columbia Basin, West Plains and Washington Palouse. Precipitation may transition from sleet to freezing rain to rain or snow, however some areas will see several hours of freezing rain or sleet which will impact already cold surfaces and bare roads and sidewalks.</summary>
+<cap:event>Winter Weather Advisory</cap:event>
+<cap:effective>2022-01-11T04:40:00-08:00</cap:effective>
+<cap:expires>2022-01-11T16:00:00-08:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Central Chelan County</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>053007</value>
+<valueName>UGC</valueName>
+<value>WAZ047</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KOTX.WW.Y.0005.000000T0000Z-220112T0000Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=WA1263DC8A7620.WinterWeatherAdvisory.1263DC99F6E0WA.OTXWSWOTX.745217d77839a907ff4b6031bf0184b3</id>
+<updated>2022-01-11T04:40:00-08:00</updated>
+<published>2022-01-11T04:40:00-08:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Winter Weather Advisory issued January 11 at 4:40AM PST until January 12 at 6:00AM PST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=WA1263DC8A7620.WinterWeatherAdvisory.1263DC99F6E0WA.OTXWSWOTX.745217d77839a907ff4b6031bf0184b3"/>
+<summary>...WINTRY MIX OF PRECIPITATION TUESDAY INCLUDING FREEZING RAIN... .A mix of winter precipitation is expected today for portions of the Columbia Basin, West Plains and Washington Palouse. Precipitation may transition from sleet to freezing rain to rain or snow, however some areas will see several hours of freezing rain or sleet which will impact already cold surfaces and bare roads and sidewalks.</summary>
+<cap:event>Winter Weather Advisory</cap:event>
+<cap:effective>2022-01-11T04:40:00-08:00</cap:effective>
+<cap:expires>2022-01-12T06:00:00-08:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Northeast Mountains</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>053051 053065</value>
+<valueName>UGC</valueName>
+<value>WAZ037</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.EXB.KOTX.WW.Y.0005.000000T0000Z-220112T1400Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=WA1263DC8A7364.FloodWatch.1263DC8BAE3CWA.SEWFFASEW.a61a87d61c98cacc1c95a03f20d3f5c5</id>
+<updated>2022-01-11T04:33:00-08:00</updated>
+<published>2022-01-11T04:33:00-08:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Flood Watch issued January 11 at 4:33AM PST until January 11 at 12:39PM PST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=WA1263DC8A7364.FloodWatch.1263DC8BAE3CWA.SEWFFASEW.a61a87d61c98cacc1c95a03f20d3f5c5"/>
+<summary>.Heavy rain in the mountains the next couple of days with snow levels rising to 6500 to 7500 feet. Rainfall totals by the end of Wednesday forecasted to be 5 to 10 inches in the Olympics, 3 to 5 inches in the North Cascades and 2 to 4 inches in the Central and Southern Cascades. ...FLOOD WATCH REMAINS IN EFFECT THROUGH THURSDAY MORNING...</summary>
+<cap:event>Flood Watch</cap:event>
+<cap:effective>2022-01-11T04:33:00-08:00</cap:effective>
+<cap:expires>2022-01-11T12:39:00-08:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Future</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Possible</cap:certainty>
+<cap:areaDesc>Grays Harbor; Jefferson; King</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>053027 053031 053033</value>
+<valueName>UGC</valueName>
+<value>WAC027 WAC031 WAC033</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KSEW.FA.A.0002.000000T0000Z-220113T1900Z/
+/00000.0.ER.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=WA1263DC8A7364.FloodWatch.1263DCA9FC70WA.SEWFFASEW.376e1d8e2dd88af54ff4b968075d72dd</id>
+<updated>2022-01-11T04:33:00-08:00</updated>
+<published>2022-01-11T04:33:00-08:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Flood Watch issued January 11 at 4:33AM PST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=WA1263DC8A7364.FloodWatch.1263DCA9FC70WA.SEWFFASEW.376e1d8e2dd88af54ff4b968075d72dd"/>
+<summary>.Heavy rain in the mountains the next couple of days with snow levels rising to 6500 to 7500 feet. Rainfall totals by the end of Wednesday forecasted to be 5 to 10 inches in the Olympics, 3 to 5 inches in the North Cascades and 2 to 4 inches in the Central and Southern Cascades. ...FLOOD WATCH REMAINS IN EFFECT THROUGH THURSDAY MORNING...</summary>
+<cap:event>Flood Watch</cap:event>
+<cap:effective>2022-01-11T04:33:00-08:00</cap:effective>
+<cap:expires>2022-01-13T11:00:00-08:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Future</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Possible</cap:certainty>
+<cap:areaDesc>Clallam</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>053009</value>
+<valueName>UGC</valueName>
+<value>WAC009</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KSEW.FA.A.0002.000000T0000Z-220113T1900Z/
+/00000.0.ER.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=WA1263DC8A7364.FloodWatch.1263DCB917A0WA.SEWFFASEW.9ff52fe006239ed3096c8e2545b1b1e1</id>
+<updated>2022-01-11T04:33:00-08:00</updated>
+<published>2022-01-11T04:33:00-08:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Flood Watch issued January 11 at 4:33AM PST until January 14 at 10:00AM PST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=WA1263DC8A7364.FloodWatch.1263DCB917A0WA.SEWFFASEW.9ff52fe006239ed3096c8e2545b1b1e1"/>
+<summary>.Heavy rain in the mountains the next couple of days with snow levels rising to 6500 to 7500 feet. Rainfall totals by the end of Wednesday forecasted to be 5 to 10 inches in the Olympics, 3 to 5 inches in the North Cascades and 2 to 4 inches in the Central and Southern Cascades. ...FLOOD WATCH REMAINS IN EFFECT THROUGH THURSDAY MORNING...</summary>
+<cap:event>Flood Watch</cap:event>
+<cap:effective>2022-01-11T04:33:00-08:00</cap:effective>
+<cap:expires>2022-01-14T10:00:00-08:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Future</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Possible</cap:certainty>
+<cap:areaDesc>Mason; Skagit; Snohomish; Whatcom</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>053045 053057 053061 053073</value>
+<valueName>UGC</valueName>
+<value>WAC045 WAC057 WAC061 WAC073</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KSEW.FA.A.0002.000000T0000Z-220113T1900Z/
+/00000.0.ER.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=WA1263DC8A6F18.FloodWarning.1263DCB917A0WA.SEWFLWSEW.0d1137056ca4384dd358df2929fbd7eb</id>
+<updated>2022-01-11T04:22:00-08:00</updated>
+<published>2022-01-11T04:22:00-08:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Flood Warning issued January 11 at 4:22AM PST until January 14 at 10:00AM PST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=WA1263DC8A6F18.FloodWarning.1263DCB917A0WA.SEWFLWSEW.0d1137056ca4384dd358df2929fbd7eb"/>
+<summary>...The National Weather Service in Seattle WA has issued a Flood Warning for the following rivers in Washington... Skokomish River At Potlatch affecting Mason County. .Another round of heavy rain over the south slopes of the Olympics will push the Skokomish River at Potlatch above flood stage today. Heavy rain will continue along the south slopes of the Olympics into</summary>
+<cap:event>Flood Warning</cap:event>
+<cap:effective>2022-01-11T04:22:00-08:00</cap:effective>
+<cap:expires>2022-01-14T10:00:00-08:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Mason</cap:areaDesc>
+<cap:polygon>47.44,-123.26 47.33,-123.21 47.36,-123.17 47.33,-123.08 47.21,-123.21 47.38,-123.4 47.44,-123.26</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>053045</value>
+<valueName>UGC</valueName>
+<value>WAC045</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.NEW.KSEW.FL.W.0018.220111T1541Z-220114T1800Z/
+/SRPW1.2.ER.220111T1541Z.220112T1800Z.000000T0000Z.NR/</value>
+</cap:parameter>
+</entry>
+<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=WA1263DC8A55B4.WinterWeatherAdvisory.1263DC8B9F00WA.SEWWSWSEW.15655bc143acbbd4b1ce8707f8d2da26</id>
 <updated>2022-01-11T03:57:00-08:00</updated>
 <published>2022-01-11T03:57:00-08:00</published>
@@ -4349,18 +4639,18 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=WA1263DC89CFB8.FloodWatch.1263DC8BAE3CWA.PQRFFAPQR.c9b9137735aa09e25ccd95019dea39da</id>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=WA1263DC89CFB8.FloodWatch.1263DC99BA54WA.PQRFFAPQR.c9b9137735aa09e25ccd95019dea39da</id>
 <updated>2022-01-11T00:14:00-08:00</updated>
 <published>2022-01-11T00:14:00-08:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Flood Watch issued January 11 at 12:14AM PST until January 11 at 12:39PM PST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=WA1263DC89CFB8.FloodWatch.1263DC8BAE3CWA.PQRFFAPQR.c9b9137735aa09e25ccd95019dea39da"/>
+<title>Flood Watch issued January 11 at 12:14AM PST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=WA1263DC89CFB8.FloodWatch.1263DC99BA54WA.PQRFFAPQR.c9b9137735aa09e25ccd95019dea39da"/>
 <summary>...FLOOD WATCH IN EFFECT FROM 4 AM PST TUESDAY THROUGH LATE TUESDAY NIGHT... * WHAT...Flooding caused by rain and snowmelt is possible. Around 2 to 4 inches of rain is expected Tuesday morning through Tuesday night. * WHERE...Pacific County and Wahkiakum County in southwest</summary>
 <cap:event>Flood Watch</cap:event>
 <cap:effective>2022-01-11T00:14:00-08:00</cap:effective>
-<cap:expires>2022-01-11T12:39:00-08:00</cap:expires>
+<cap:expires>2022-01-12T04:45:00-08:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
 <cap:category>Met</cap:category>
@@ -4412,168 +4702,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <valueName>VTEC</valueName>
 <value>/O.EXT.KSEW.FL.W.0005.000000T0000Z-220111T2039Z/
 /CRPW1.2.RS.220107T0010Z.220108T2230Z.220111T1139Z.NO/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=WA1263DC88EEB8.WinterWeatherAdvisory.1263DC8BC610WA.OTXWSWOTX.8ea1793d9e4cac45ac163bd3f39cf225</id>
-<updated>2022-01-10T18:38:00-08:00</updated>
-<published>2022-01-10T18:38:00-08:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Winter Weather Advisory issued January 10 at 6:38PM PST until January 11 at 1:00PM PST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=WA1263DC88EEB8.WinterWeatherAdvisory.1263DC8BC610WA.OTXWSWOTX.8ea1793d9e4cac45ac163bd3f39cf225"/>
-<summary>...WINTER WEATHER ADVISORY NOW IN EFFECT FROM 5 AM TO 1 PM PST TUESDAY... * WHAT...Mixed precipitation expected. Total snow accumulations up to half an inch and ice accumulations from a light glaze to a few hundreths of an inch. * WHERE...Rockford, Colfax, Rosalia, Downtown Spokane, Tekoa,</summary>
-<cap:event>Winter Weather Advisory</cap:event>
-<cap:effective>2022-01-10T18:38:00-08:00</cap:effective>
-<cap:expires>2022-01-11T13:00:00-08:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Spokane Area; Washington Palouse</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>053019 053043 053063 053075</value>
-<valueName>UGC</valueName>
-<value>WAZ033 WAZ036</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.EXT.KOTX.WW.Y.0005.220111T1300Z-220111T2100Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=WA1263DC88EEB8.WinterWeatherAdvisory.1263DC97D400WA.OTXWSWOTX.475a67d73d2aec8f99ec4e7d42bc32ac</id>
-<updated>2022-01-10T18:38:00-08:00</updated>
-<published>2022-01-10T18:38:00-08:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Winter Weather Advisory issued January 10 at 6:38PM PST until January 11 at 4:00PM PST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=WA1263DC88EEB8.WinterWeatherAdvisory.1263DC97D400WA.OTXWSWOTX.475a67d73d2aec8f99ec4e7d42bc32ac"/>
-<summary>...WINTER WEATHER ADVISORY IN EFFECT FROM 1 AM TO 4 PM PST TUESDAY... * WHAT...Mixed precipitation expected. Ice accumulations around one tenth of an inch in the valleys. Mountain snow accumulation of 1 to 4 inches. * WHERE...Plain and Leavenworth. * WHEN...From 1 AM to 4 PM PST Tuesday.</summary>
-<cap:event>Winter Weather Advisory</cap:event>
-<cap:effective>2022-01-10T18:38:00-08:00</cap:effective>
-<cap:expires>2022-01-11T16:00:00-08:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Central Chelan County</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>053007</value>
-<valueName>UGC</valueName>
-<value>WAZ047</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.EXB.KOTX.WW.Y.0005.220111T0900Z-220112T0000Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=WA1263DC88EEB8.WinterWeatherAdvisory.1263DC97D400WA.OTXWSWOTX.8e30d1a40face2e6df5e411a98445c07</id>
-<updated>2022-01-10T18:38:00-08:00</updated>
-<published>2022-01-10T18:38:00-08:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Winter Weather Advisory issued January 10 at 6:38PM PST until January 11 at 4:00PM PST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=WA1263DC88EEB8.WinterWeatherAdvisory.1263DC97D400WA.OTXWSWOTX.8e30d1a40face2e6df5e411a98445c07"/>
-<summary>...WINTER WEATHER ADVISORY NOW IN EFFECT FROM 4 AM TO 4 PM PST TUESDAY... * WHAT...Mixed precipitation expected. Total snow accumulations up to one inch and ice accumulations up to one tenth of an inch. * WHERE...Grand Coulee, Coulee City, Quincy, Mansfield, Waterville, Cashmere, Badger Mountain Road, Wilbur, Wenatchee, Pangborn</summary>
-<cap:event>Winter Weather Advisory</cap:event>
-<cap:effective>2022-01-10T18:38:00-08:00</cap:effective>
-<cap:expires>2022-01-11T16:00:00-08:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Moses Lake Area; Upper Columbia Basin; Waterville Plateau; Wenatchee Area</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>053001 053007 053017 053019 053025 053043</value>
-<valueName>UGC</valueName>
-<value>WAZ034 WAZ035 WAZ041 WAZ044</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.EXT.KOTX.WW.Y.0005.220111T1200Z-220112T0000Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=WA1263DC88A804.FloodWatch.1263DC8BAE3CWA.SEWFFASEW.7eb8cfa667bebbb688cab0dbe4c3b7a4</id>
-<updated>2022-01-10T16:57:00-08:00</updated>
-<published>2022-01-10T16:57:00-08:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Flood Watch issued January 10 at 4:57PM PST until January 11 at 12:39PM PST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=WA1263DC88A804.FloodWatch.1263DC8BAE3CWA.SEWFFASEW.7eb8cfa667bebbb688cab0dbe4c3b7a4"/>
-<summary>.Atmospheric river moving into Western Washington tonight and stalling over the area until Wednesday. Snow levels rising up to 5000 feet tonight and to 6500 to 8000 feet by Wednesday. Heavy rain forecast for the mountains with the heaviest rains over the Olympics. Rainfall totals for tonight through Wednesday in the Olympics in the 5 to 10 inch range, North Cascades 3 to 5 inches and</summary>
-<cap:event>Flood Watch</cap:event>
-<cap:effective>2022-01-10T16:57:00-08:00</cap:effective>
-<cap:expires>2022-01-11T12:39:00-08:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Future</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Possible</cap:certainty>
-<cap:areaDesc>Grays Harbor; Jefferson; King; Mason; Skagit; Snohomish; Whatcom</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>053027 053031 053033 053045 053057 053061 053073</value>
-<valueName>UGC</valueName>
-<value>WAC027 WAC031 WAC033 WAC045 WAC057 WAC061 WAC073</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KSEW.FA.A.0002.000000T0000Z-220113T1900Z/
-/00000.0.ER.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=WA1263DC88A804.FloodWatch.1263DCA9FC70WA.SEWFFASEW.376e1d8e2dd88af54ff4b968075d72dd</id>
-<updated>2022-01-10T16:57:00-08:00</updated>
-<published>2022-01-10T16:57:00-08:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Flood Watch issued January 10 at 4:57PM PST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=WA1263DC88A804.FloodWatch.1263DCA9FC70WA.SEWFFASEW.376e1d8e2dd88af54ff4b968075d72dd"/>
-<summary>.Atmospheric river moving into Western Washington tonight and stalling over the area until Wednesday. Snow levels rising up to 5000 feet tonight and to 6500 to 8000 feet by Wednesday. Heavy rain forecast for the mountains with the heaviest rains over the Olympics. Rainfall totals for tonight through Wednesday in the Olympics in the 5 to 10 inch range, North Cascades 3 to 5 inches and</summary>
-<cap:event>Flood Watch</cap:event>
-<cap:effective>2022-01-10T16:57:00-08:00</cap:effective>
-<cap:expires>2022-01-13T11:00:00-08:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Future</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Possible</cap:certainty>
-<cap:areaDesc>Clallam</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>053009</value>
-<valueName>UGC</valueName>
-<value>WAC009</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KSEW.FA.A.0002.000000T0000Z-220113T1900Z/
-/00000.0.ER.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
 </cap:parameter>
 </entry>
 <entry>
