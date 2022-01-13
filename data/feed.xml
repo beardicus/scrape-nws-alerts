@@ -16,16 +16,48 @@ xmlns = 'http://www.w3.org/2005/Atom'
 xmlns:cap = 'urn:oasis:names:tc:emergency:cap:1.1'
 xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 >
-<!-- http-date = Thu, 13 Jan 2022 05:03:00 GMT -->
+<!-- http-date = Thu, 13 Jan 2022 05:26:00 GMT -->
 <id>https://alerts.weather.gov/cap/us.php?x=0</id>
 <logo>http://alerts.weather.gov/images/xml_logo.gif</logo>
 <generator>NWS CAP Server</generator>
-<updated>2022-01-12T20:03:00-09:00</updated>
+<updated>2022-01-12T18:26:00-11:00</updated>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
 <title>Current Watches, Warnings and Advisories for the United States Issued by the National Weather Service</title>
 <link href="https://alerts.weather.gov/cap/us.php?x=0"/>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=AK1263DCA7DF08.WindChillAdvisory.1263DCA96030AK.AFGWSWNSB.64a2884b86990815900bf25e0703ca12</id>
+<updated>2022-01-12T20:14:00-09:00</updated>
+<published>2022-01-12T20:14:00-09:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Wind Chill Advisory issued January 12 at 8:14PM AKST until January 13 at 6:00AM AKST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=AK1263DCA7DF08.WindChillAdvisory.1263DCA96030AK.AFGWSWNSB.64a2884b86990815900bf25e0703ca12"/>
+<summary>...WIND CHILL ADVISORY NOW IN EFFECT UNTIL 6 AM AKST THURSDAY... * WHAT...Very cold wind chills to 50 below are occurring. The cold wind chills will cause frostbite in as little as 10 minutes to exposed skin. * WHERE...Eastern Beaufort Sea Coast. * WHEN....Through 6am Thursday.</summary>
+<cap:event>Wind Chill Advisory</cap:event>
+<cap:effective>2022-01-12T20:14:00-09:00</cap:effective>
+<cap:expires>2022-01-13T06:00:00-09:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Eastern Beaufort Sea Coast</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>002185</value>
+<valueName>UGC</valueName>
+<value>AKZ204</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.EXT.PAFG.WC.Y.0008.000000T0000Z-220113T1500Z/</value>
+</cap:parameter>
+</entry>
 <entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=AK1263DCA7DABC.WindAdvisory.1263DCA96030AK.AFGNPWAFG.d538b8af246bc00268ffee5dc92f6a71</id>
 <updated>2022-01-12T20:03:00-09:00</updated>
@@ -382,38 +414,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=AK1263DC99639C.WindChillAdvisory.1263DCA800A0AK.AFGWSWNSB.64a2884b86990815900bf25e0703ca12</id>
-<updated>2022-01-12T01:23:00-09:00</updated>
-<published>2022-01-12T01:23:00-09:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Wind Chill Advisory issued January 12 at 1:23AM AKST until January 12 at 9:00PM AKST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=AK1263DC99639C.WindChillAdvisory.1263DCA800A0AK.AFGWSWNSB.64a2884b86990815900bf25e0703ca12"/>
-<summary>...WIND CHILL ADVISORY REMAINS IN EFFECT UNTIL 9 PM AKST THIS EVENING... * WHAT...Very cold wind chills ranging 40 to 55 below are occurring. The cold wind chills will cause frostbite in as little as 10 minutes to exposed skin. * WHERE...Eastern Beaufort Sea Coast.</summary>
-<cap:event>Wind Chill Advisory</cap:event>
-<cap:effective>2022-01-12T01:23:00-09:00</cap:effective>
-<cap:expires>2022-01-12T21:00:00-09:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Eastern Beaufort Sea Coast</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>002185</value>
-<valueName>UGC</valueName>
-<value>AKZ204</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.PAFG.WC.Y.0008.000000T0000Z-220113T0600Z/</value>
-</cap:parameter>
-</entry>
-<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=AR1263DCA79214.FloodAdvisory.1263DCD4DD00AR.MEGFLSMEG.c27a29a4f928f7a26f8ea2a693a6bf6b</id>
 <updated>2022-01-12T21:17:00-06:00</updated>
 <published>2022-01-12T21:17:00-06:00</published>
@@ -609,6 +609,38 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <valueName>VTEC</valueName>
 <value>/O.CON.KLZK.FL.W.0003.000000T0000Z-000000T0000Z/
 /PTTA4.2.ER.220103T0945Z.220109T1530Z.000000T0000Z.NO/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=AS1263DCA7E3B8.SpecialWeatherStatement.1263DCA83368AS.STUSPSPPG.b0d7b284ff40aa93f2ec25cc63b6de9a</id>
+<updated>2022-01-12T18:26:00-11:00</updated>
+<published>2022-01-12T18:26:00-11:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Special Weather Statement issued January 12 at 6:26PM SST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=AS1263DCA7E3B8.SpecialWeatherStatement.1263DCA83368AS.STUSPSPPG.b0d7b284ff40aa93f2ec25cc63b6de9a"/>
+<summary>...Flash flooding possible starting Thursday, followed by windy conditions Thursday night through Friday... A low pressure system embedded within the South Pacific Convergence Zone (SPCZ), as well as the SPCZ itself, could produce hazardous conditions for the territory Thursday through Friday. The main threat from this pattern is flash flooding,</summary>
+<cap:event>Special Weather Statement</cap:event>
+<cap:effective>2022-01-12T18:26:00-11:00</cap:effective>
+<cap:expires>2022-01-12T20:30:00-11:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Observed</cap:certainty>
+<cap:areaDesc>Manua; Swains Island; Tutuila and Aunuu</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>060010 060020 060040 060050</value>
+<valueName>UGC</valueName>
+<value>ASZ001 ASZ002 ASZ003</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value></value>
 </cap:parameter>
 </entry>
 <entry>
@@ -1223,6 +1255,38 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value>/O.CON.KDVN.WS.A.0001.220114T1800Z-220115T1800Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=ID1263DCA7E034.DenseFogAdvisory.1263DCA91210ID.OTXNPWOTX.2d7cb01809dd51884251a22ead56e60f</id>
+<updated>2022-01-12T22:17:00-07:00</updated>
+<published>2022-01-12T22:17:00-07:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Dense Fog Advisory issued January 12 at 10:17PM MST until January 13 at 6:00AM MST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=ID1263DCA7E034.DenseFogAdvisory.1263DCA91210ID.OTXNPWOTX.2d7cb01809dd51884251a22ead56e60f"/>
+<summary>...DENSE FOG ADVISORY IN EFFECT UNTIL 5 AM PST THURSDAY... * WHAT...Visibility one quarter mile or less in dense fog. * WHERE...Porthill, Elk, Chewelah, Cheney, Rathdrum, Naples, Coolin, Eastport, Colville, Arden, Newman Lake, Bonners Ferry, Clayton, Kettle Falls, Rockford, Spokane, Sandpoint, Newport, Davenport, Priest River, Orin, and Deer Park.</summary>
+<cap:event>Dense Fog Advisory</cap:event>
+<cap:effective>2022-01-12T22:17:00-07:00</cap:effective>
+<cap:expires>2022-01-13T06:00:00-07:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Northern Panhandle</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>016017 016021</value>
+<valueName>UGC</valueName>
+<value>IDZ001</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.NEW.KOTX.FG.Y.0002.220113T0517Z-220113T1300Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -3493,6 +3557,38 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value>/O.CON.KBTV.WC.A.0001.220115T0000Z-220115T2100Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=WA1263DCA7E034.DenseFogAdvisory.1263DCA91210WA.OTXNPWOTX.e67bf8c93e27ddcf963ae0d755c6b879</id>
+<updated>2022-01-12T21:17:00-08:00</updated>
+<published>2022-01-12T21:17:00-08:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Dense Fog Advisory issued January 12 at 9:17PM PST until January 13 at 5:00AM PST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=WA1263DCA7E034.DenseFogAdvisory.1263DCA91210WA.OTXNPWOTX.e67bf8c93e27ddcf963ae0d755c6b879"/>
+<summary>...DENSE FOG ADVISORY IN EFFECT UNTIL 5 AM PST THURSDAY... * WHAT...Visibility one quarter mile or less in dense fog. * WHERE...Porthill, Elk, Chewelah, Cheney, Rathdrum, Naples, Coolin, Eastport, Colville, Arden, Newman Lake, Bonners Ferry, Clayton, Kettle Falls, Rockford, Spokane, Sandpoint, Newport, Davenport, Priest River, Orin, and Deer Park.</summary>
+<cap:event>Dense Fog Advisory</cap:event>
+<cap:effective>2022-01-12T21:17:00-08:00</cap:effective>
+<cap:expires>2022-01-13T05:00:00-08:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Northeast Mountains; Spokane Area</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>053019 053043 053051 053063 053065</value>
+<valueName>UGC</valueName>
+<value>WAZ036 WAZ037</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.NEW.KOTX.FG.Y.0002.220113T0517Z-220113T1300Z/</value>
 </cap:parameter>
 </entry>
 <entry>
