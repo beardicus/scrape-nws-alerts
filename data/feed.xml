@@ -16,16 +16,48 @@ xmlns = 'http://www.w3.org/2005/Atom'
 xmlns:cap = 'urn:oasis:names:tc:emergency:cap:1.1'
 xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 >
-<!-- http-date = Mon, 24 Jan 2022 13:33:00 GMT -->
+<!-- http-date = Mon, 24 Jan 2022 14:10:00 GMT -->
 <id>https://alerts.weather.gov/cap/us.php?x=0</id>
 <logo>http://alerts.weather.gov/images/xml_logo.gif</logo>
 <generator>NWS CAP Server</generator>
-<updated>2022-01-24T08:33:00-05:00</updated>
+<updated>2022-01-24T09:10:00-05:00</updated>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
 <title>Current Watches, Warnings and Advisories for the United States Issued by the National Weather Service</title>
 <link href="https://alerts.weather.gov/cap/us.php?x=0"/>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=AK1263DD5101DC.HighWindWarning.1263DD51D530AK.AFCNPWAER.4421c9a107df15c231b34d5b84c1f05d</id>
+<updated>2022-01-24T04:59:00-09:00</updated>
+<published>2022-01-24T04:59:00-09:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>High Wind Warning issued January 24 at 4:59AM AKST until January 24 at 10:00AM AKST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=AK1263DD5101DC.HighWindWarning.1263DD51D530AK.AFCNPWAER.4421c9a107df15c231b34d5b84c1f05d"/>
+<summary>...HIGH WIND WARNING REMAINS IN EFFECT UNTIL 10 AM AKST THIS MORNING FOR TURNAGAIN ARM AND HIGHER ELEVATIONS... * WHAT...Southeast winds 40 to 60 mph with gusts up to 80 mph expected. * WHERE...Anchorage Hillside and Turnagain Arm. * WHEN...Until 10 AM AKST this morning.</summary>
+<cap:event>High Wind Warning</cap:event>
+<cap:effective>2022-01-24T04:59:00-09:00</cap:effective>
+<cap:expires>2022-01-24T10:00:00-09:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Severe</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Anchorage</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>002020</value>
+<valueName>UGC</valueName>
+<value>AKZ101</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.PAFC.HW.W.0003.000000T0000Z-220124T1900Z/</value>
+</cap:parameter>
+</entry>
 <entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=AK1263DD50CEB0.WinterWeatherAdvisory.1263DD600600AK.AFGWSWNSB.4341880b15c06849f6e1462471cf3081</id>
 <updated>2022-01-24T03:28:00-09:00</updated>
@@ -603,38 +635,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=AK1263DD4345D8.HighWindWarning.1263DD51D530AK.AFCNPWAER.4421c9a107df15c231b34d5b84c1f05d</id>
-<updated>2022-01-23T14:58:00-09:00</updated>
-<published>2022-01-23T14:58:00-09:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>High Wind Warning issued January 23 at 2:58PM AKST until January 24 at 10:00AM AKST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=AK1263DD4345D8.HighWindWarning.1263DD51D530AK.AFCNPWAER.4421c9a107df15c231b34d5b84c1f05d"/>
-<summary>...HIGH WIND WARNING REMAINS IN EFFECT FROM 10 PM THIS EVENING TO 10 AM AKST MONDAY... * WHAT...Southeast winds 40 to 60 mph with gusts up to 80 mph expected. * WHERE...Anchorage Hillside and Turnagain Arm. * WHEN...From 10 PM this evening to 10 AM AKST Monday.</summary>
-<cap:event>High Wind Warning</cap:event>
-<cap:effective>2022-01-23T14:58:00-09:00</cap:effective>
-<cap:expires>2022-01-24T10:00:00-09:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Severe</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Anchorage</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>002020</value>
-<valueName>UGC</valueName>
-<value>AKZ101</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.PAFC.HW.W.0003.220124T0700Z-220124T1900Z/</value>
-</cap:parameter>
-</entry>
-<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=AL1263DD5083B0.RipCurrentStatement.1263DD7E8A80AL.MOBCFWMOB.67a790760093327139ad9df54fd07a00</id>
 <updated>2022-01-24T04:36:00-06:00</updated>
 <published>2022-01-24T04:36:00-06:00</published>
@@ -864,6 +864,38 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=CA1263DD50FC00.BeachHazardsStatement.1263DD522350CA.MTRCFWMTR.7510f635b71c7bc48273f9efe0123fee</id>
+<updated>2022-01-24T05:44:00-08:00</updated>
+<published>2022-01-24T05:44:00-08:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Beach Hazards Statement issued January 24 at 5:44AM PST until January 24 at 1:00PM PST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CA1263DD50FC00.BeachHazardsStatement.1263DD522350CA.MTRCFWMTR.7510f635b71c7bc48273f9efe0123fee"/>
+<summary>...LONG PERIOD NORTHWEST SWELL WILL BRING RISK OF SNEAKER WAVES TO BEACHES THIS AFTERNOON UNTIL MIDDAY MONDAY... .A long period northwest swell train has arrived to the coastal waters. Offshore buoys are reporting wave heights of 7 to 8 feet at 17 to 18 seconds, presenting a threat of sneaker waves and rip currents through the morning. A beach hazard statement for</summary>
+<cap:event>Beach Hazards Statement</cap:event>
+<cap:effective>2022-01-24T05:44:00-08:00</cap:effective>
+<cap:expires>2022-01-24T13:00:00-08:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Coastal North Bay Including Point Reyes National Seashore; Northern Monterey Bay; San Francisco; San Francisco Peninsula Coast; Southern Monterey Bay and Big Sur Coast</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>006041 006053 006075 006081 006087 006097</value>
+<valueName>UGC</valueName>
+<value>CAZ006 CAZ505 CAZ509 CAZ529 CAZ530</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KMTR.BH.S.0002.000000T0000Z-220124T2100Z/</value>
+</cap:parameter>
+</entry>
+<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=CA1263DD50A160.BeachHazardsStatement.1263DD7D5200CA.LOXCFWLOX.9ce46d2d0e4c49fa94454e46d861548c</id>
 <updated>2022-01-24T03:12:00-08:00</updated>
 <published>2022-01-24T03:12:00-08:00</published>
@@ -1021,38 +1053,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value>/O.CON.KEKA.BH.S.0002.000000T0000Z-220125T0300Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=CA1263DD4F98EC.BeachHazardsStatement.1263DD522350CA.MTRCFWMTR.7510f635b71c7bc48273f9efe0123fee</id>
-<updated>2022-01-23T20:35:00-08:00</updated>
-<published>2022-01-23T20:35:00-08:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Beach Hazards Statement issued January 23 at 8:35PM PST until January 24 at 1:00PM PST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CA1263DD4F98EC.BeachHazardsStatement.1263DD522350CA.MTRCFWMTR.7510f635b71c7bc48273f9efe0123fee"/>
-<summary>...LONG PERIOD NORTHWEST SWELL WILL BRING RISK OF SNEAKER WAVES TO BEACHES THIS AFTERNOON UNTIL MIDDAY MONDAY... .A northwest swell train will bring an increased risk of sneaker waves to area beaches. The main risk will be the 3 to 6 foot waves at 17 to 20 seconds lasting through Monday morning. A beach hazard statement for sneaker waves is issued when the ocean state</summary>
-<cap:event>Beach Hazards Statement</cap:event>
-<cap:effective>2022-01-23T20:35:00-08:00</cap:effective>
-<cap:expires>2022-01-24T13:00:00-08:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Coastal North Bay Including Point Reyes National Seashore; Northern Monterey Bay; San Francisco; San Francisco Peninsula Coast; Southern Monterey Bay and Big Sur Coast</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>006041 006053 006075 006081 006087 006097</value>
-<valueName>UGC</valueName>
-<value>CAZ006 CAZ505 CAZ509 CAZ529 CAZ530</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KMTR.BH.S.0002.000000T0000Z-220124T2100Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -1312,38 +1312,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=CT1263DD507924.SpecialWeatherStatement.1263DD5111E0CT.OKXSPSOKX.c5e8c1b3eab04e3365031a5224eea886</id>
-<updated>2022-01-24T05:09:00-05:00</updated>
-<published>2022-01-24T05:09:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Special Weather Statement issued January 24 at 5:09AM EST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CT1263DD507924.SpecialWeatherStatement.1263DD5111E0CT.OKXSPSOKX.c5e8c1b3eab04e3365031a5224eea886"/>
-<summary>Light snow early this morning may bring a coating of snow. Slippery travel is possible and motorists should use extra caution if driving this morning as temperatures are below freezing. The light snow should end between 7 am and 9 am.</summary>
-<cap:event>Special Weather Statement</cap:event>
-<cap:effective>2022-01-24T05:09:00-05:00</cap:effective>
-<cap:expires>2022-01-24T09:00:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Observed</cap:certainty>
-<cap:areaDesc>Southern Fairfield; Southern Middlesex; Southern New Haven; Southern New London</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>009001 009007 009009 009011</value>
-<valueName>UGC</valueName>
-<value>CTZ009 CTZ010 CTZ011 CTZ012</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value></value>
-</cap:parameter>
-</entry>
-<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=FL1263DD5083B0.RipCurrentStatement.1263DD7E8A80FL.MOBCFWMOB.052554ccbbfe1a05054f719d4db8758c</id>
 <updated>2022-01-24T05:36:00-05:00</updated>
 <published>2022-01-24T05:36:00-05:00</published>
@@ -1474,102 +1442,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=FL1263DD4F23BC.FreezeWarning.1263DD5111E0FL.JAXNPWJAX.85bf48c105b7b206ef74a92628c003dc</id>
-<updated>2022-01-23T20:35:00-05:00</updated>
-<published>2022-01-23T20:35:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Freeze Warning issued January 23 at 8:35PM EST until January 24 at 9:00AM EST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=FL1263DD4F23BC.FreezeWarning.1263DD5111E0FL.JAXNPWJAX.85bf48c105b7b206ef74a92628c003dc"/>
-<summary>...FREEZE WARNING REMAINS IN EFFECT FROM 1 AM TO 9 AM EST MONDAY... * WHAT...Sub-freezing temperatures as low as 28 expected. * WHERE...Portions of southeast Georgia and northeast and northern Florida. * WHEN...From 1 AM to 9 AM EST Monday.</summary>
-<cap:event>Freeze Warning</cap:event>
-<cap:effective>2022-01-23T20:35:00-05:00</cap:effective>
-<cap:expires>2022-01-24T09:00:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Baker; Bradford; Central Marion; Eastern Alachua; Eastern Clay; Eastern Marion; Eastern Putnam; Gilchrist; Hamilton; Inland Flagler; Inland Nassau; Inland St. Johns; Northern Columbia; South Central Duval; Southern Columbia; Suwannee; Trout River; Union; Western Alachua; Western Clay; Western Duval; Western Marion; Western Putnam</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>012001 012003 012007 012019 012023 012031 012035 012041 012047 012083 012089 012107 012109 012121 012125</value>
-<valueName>UGC</valueName>
-<value>FLZ020 FLZ021 FLZ023 FLZ024 FLZ030 FLZ031 FLZ033 FLZ035 FLZ038 FLZ122 FLZ132 FLZ136 FLZ137 FLZ140 FLZ222 FLZ225 FLZ232 FLZ236 FLZ237 FLZ240 FLZ325 FLZ340 FLZ425</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KJAX.FZ.W.0005.220124T0600Z-220124T1400Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=FL1263DD4F23BC.FrostAdvisory.1263DD5111E0FL.JAXNPWJAX.1e9fbac603450ae4daccae95c77356e0</id>
-<updated>2022-01-23T20:35:00-05:00</updated>
-<published>2022-01-23T20:35:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Frost Advisory issued January 23 at 8:35PM EST until January 24 at 9:00AM EST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=FL1263DD4F23BC.FrostAdvisory.1263DD5111E0FL.JAXNPWJAX.1e9fbac603450ae4daccae95c77356e0"/>
-<summary>...FROST ADVISORY REMAINS IN EFFECT FROM 1 AM TO 9 AM EST MONDAY... * WHAT...Temperatures as low as 32 will result in frost formation. * WHERE...Coastal St. Johns, Coastal Flagler, Coastal Nassau and Coastal Duval Counties.</summary>
-<cap:event>Frost Advisory</cap:event>
-<cap:effective>2022-01-23T20:35:00-05:00</cap:effective>
-<cap:expires>2022-01-24T09:00:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Coastal Duval; Coastal Flagler; Coastal Nassau; Coastal St. Johns</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>012031 012035 012089 012109</value>
-<valueName>UGC</valueName>
-<value>FLZ124 FLZ125 FLZ133 FLZ138</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KJAX.FR.Y.0005.220124T0600Z-220124T1400Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=GA1263DD4F23BC.FreezeWarning.1263DD5111E0GA.JAXNPWJAX.fe4564f65740e5c7c343f5458368f73b</id>
-<updated>2022-01-23T20:35:00-05:00</updated>
-<published>2022-01-23T20:35:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Freeze Warning issued January 23 at 8:35PM EST until January 24 at 9:00AM EST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=GA1263DD4F23BC.FreezeWarning.1263DD5111E0GA.JAXNPWJAX.fe4564f65740e5c7c343f5458368f73b"/>
-<summary>...FREEZE WARNING REMAINS IN EFFECT FROM 1 AM TO 9 AM EST MONDAY... * WHAT...Sub-freezing temperatures as low as 28 expected. * WHERE...Portions of southeast Georgia and northeast and northern Florida. * WHEN...From 1 AM to 9 AM EST Monday.</summary>
-<cap:event>Freeze Warning</cap:event>
-<cap:effective>2022-01-23T20:35:00-05:00</cap:effective>
-<cap:expires>2022-01-24T09:00:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Appling; Atkinson; Bacon; Brantley; Clinch; Coastal Camden; Coastal Glynn; Coffee; Echols; Inland Camden; Inland Glynn; Jeff Davis; Northeastern Charlton; Northern Ware; Pierce; Southern Ware; Wayne; Western Charlton</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>012089 013001 013003 013005 013025 013039 013049 013065 013069 013101 013127 013161 013229 013299 013305</value>
-<valueName>UGC</valueName>
-<value>GAZ132 GAZ133 GAZ134 GAZ135 GAZ136 GAZ149 GAZ151 GAZ152 GAZ153 GAZ154 GAZ162 GAZ163 GAZ165 GAZ166 GAZ250 GAZ264 GAZ350 GAZ364</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KJAX.FZ.W.0005.220124T0600Z-220124T1400Z/</value>
-</cap:parameter>
-</entry>
-<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=GU1263DD4FBE6C.HighSurfAdvisory.1263DD5E3140GU.GUMCFWGUM.5f587bd7aab2a31ad5e961fdee01738f</id>
 <updated>2022-01-24T15:31:00+10:00</updated>
 <published>2022-01-24T15:31:00+10:00</published>
@@ -1636,18 +1508,18 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=HI1263DD4F1EA8.HighSurfAdvisory.1263DD516000HI.HFOCFWHFO.20ee713fdb53e198fd891444b9895798</id>
-<updated>2022-01-23T15:22:00-10:00</updated>
-<published>2022-01-23T15:22:00-10:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=HI1263DD50FAD4.HighSurfAdvisory.1263DD5ECD80HI.HFOCFWHFO.20ee713fdb53e198fd891444b9895798</id>
+<updated>2022-01-24T03:41:00-10:00</updated>
+<published>2022-01-24T03:41:00-10:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>High Surf Advisory issued January 23 at 3:22PM HST until January 24 at 6:00AM HST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=HI1263DD4F1EA8.HighSurfAdvisory.1263DD516000HI.HFOCFWHFO.20ee713fdb53e198fd891444b9895798"/>
-<summary>...HIGH SURF ADVISORY FOR NORTH AND WEST FACING SHORES OF NIIHAU KAUAI OAHU AND MOLOKAI...NORTH FACING SHORES OF MAUI...AND WEST FACING SHORES OF THE BIG ISLAND... .Surf along exposed north and west facing shores will ease to around the advisory levels this evening as the current west- northwest swell lowers. A new west-northwest swell building</summary>
+<title>High Surf Advisory issued January 24 at 3:41AM HST until January 24 at 6:00PM HST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=HI1263DD50FAD4.HighSurfAdvisory.1263DD5ECD80HI.HFOCFWHFO.20ee713fdb53e198fd891444b9895798"/>
+<summary>...HIGH SURF ADVISORY FOR NORTH AND WEST FACING SHORES OF NIIHAU KAUAI OAHU AND MOLOKAI...NORTH FACING SHORES OF MAUI...AND WEST FACING SHORES OF THE BIG ISLAND... .Surf along exposed north and west facing shores will remain above advisory levels through this afternoon as a new west- northwest swell builds into the region.</summary>
 <cap:event>High Surf Advisory</cap:event>
-<cap:effective>2022-01-23T15:22:00-10:00</cap:effective>
-<cap:expires>2022-01-24T06:00:00-10:00</cap:expires>
+<cap:effective>2022-01-24T03:41:00-10:00</cap:effective>
+<cap:expires>2022-01-24T18:00:00-10:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
 <cap:category>Met</cap:category>
@@ -1664,7 +1536,7 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
-<value>/O.CON.PHFO.SU.Y.0006.000000T0000Z-220124T1600Z/</value>
+<value>/O.EXT.PHFO.SU.Y.0006.000000T0000Z-220125T0400Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -2052,17 +1924,17 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=IN1263DD505FC0.WinterWeatherAdvisory.1263DD522350IN.IWXWSWIWX.69de0f3f8543c3ca63214f35b9725613</id>
-<updated>2022-01-24T04:44:00-05:00</updated>
-<published>2022-01-24T04:44:00-05:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=IN1263DD5115C8.WinterWeatherAdvisory.1263DD522350IN.IWXWSWIWX.69de0f3f8543c3ca63214f35b9725613</id>
+<updated>2022-01-24T09:10:00-05:00</updated>
+<published>2022-01-24T09:10:00-05:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Winter Weather Advisory issued January 24 at 4:44AM EST until January 24 at 4:00PM EST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=IN1263DD505FC0.WinterWeatherAdvisory.1263DD522350IN.IWXWSWIWX.69de0f3f8543c3ca63214f35b9725613"/>
-<summary>...WINTER WEATHER ADVISORY REMAINS IN EFFECT UNTIL 4 PM EST /3 PM CST/ THIS AFTERNOON... * WHAT...Snow expected. Total snow accumulations of 2 to 4 inches. Patchy blowing and drifting snow will be possible in rural areas. * WHERE...Portions of northern Indiana and southwest Michigan.</summary>
+<title>Winter Weather Advisory issued January 24 at 9:10AM EST until January 24 at 4:00PM EST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=IN1263DD5115C8.WinterWeatherAdvisory.1263DD522350IN.IWXWSWIWX.69de0f3f8543c3ca63214f35b9725613"/>
+<summary>...WINTER WEATHER ADVISORY REMAINS IN EFFECT UNTIL 4 PM EST /3 PM CST/ THIS AFTERNOON... * WHAT...Moderate to occasional heavy snow will continue through this afternoon. The heaviest snow will fall along and north of US 30. With increasing winds...blowing and drifting snow will be possible especially in rural areas. Total snow accumulation 2 to</summary>
 <cap:event>Winter Weather Advisory</cap:event>
-<cap:effective>2022-01-24T04:44:00-05:00</cap:effective>
+<cap:effective>2022-01-24T09:10:00-05:00</cap:effective>
 <cap:expires>2022-01-24T16:00:00-05:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
@@ -2080,21 +1952,21 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
-<value>/O.CON.KIWX.WW.Y.0007.220124T1100Z-220124T2100Z/</value>
+<value>/O.CON.KIWX.WW.Y.0007.000000T0000Z-220124T2100Z/</value>
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=IN1263DD505FC0.WinterWeatherAdvisory.1263DD60F060IN.IWXWSWIWX.623cc2a1c61826a3a7a38233c2995a75</id>
-<updated>2022-01-24T04:44:00-05:00</updated>
-<published>2022-01-24T04:44:00-05:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=IN1263DD5115C8.WinterWeatherAdvisory.1263DD60F060IN.IWXWSWIWX.623cc2a1c61826a3a7a38233c2995a75</id>
+<updated>2022-01-24T09:10:00-05:00</updated>
+<published>2022-01-24T09:10:00-05:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Winter Weather Advisory issued January 24 at 4:44AM EST until January 25 at 1:00PM EST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=IN1263DD505FC0.WinterWeatherAdvisory.1263DD60F060IN.IWXWSWIWX.623cc2a1c61826a3a7a38233c2995a75"/>
+<title>Winter Weather Advisory issued January 24 at 9:10AM EST until January 25 at 1:00PM EST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=IN1263DD5115C8.WinterWeatherAdvisory.1263DD60F060IN.IWXWSWIWX.623cc2a1c61826a3a7a38233c2995a75"/>
 <summary>...WINTER WEATHER ADVISORY REMAINS IN EFFECT UNTIL 1 PM EST /NOON CST/ TUESDAY... * WHAT...Snow expected. Total snow accumulations of 4 to 8 inches with localized higher amounts where lake banding persists. Patchy blowing and drifting snow will be possible in rural areas.</summary>
 <cap:event>Winter Weather Advisory</cap:event>
-<cap:effective>2022-01-24T04:44:00-05:00</cap:effective>
+<cap:effective>2022-01-24T09:10:00-05:00</cap:effective>
 <cap:expires>2022-01-25T13:00:00-05:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
@@ -2112,7 +1984,7 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
-<value>/O.CON.KIWX.WW.Y.0007.220124T1100Z-220125T1800Z/</value>
+<value>/O.CON.KIWX.WW.Y.0007.000000T0000Z-220125T1800Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -2310,17 +2182,17 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=MI1263DD505FC0.WinterWeatherAdvisory.1263DD522350MI.IWXWSWIWX.a5ba6141463bf47886bfd8ad584acee9</id>
-<updated>2022-01-24T04:44:00-05:00</updated>
-<published>2022-01-24T04:44:00-05:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=MI1263DD5115C8.WinterWeatherAdvisory.1263DD522350MI.IWXWSWIWX.a5ba6141463bf47886bfd8ad584acee9</id>
+<updated>2022-01-24T09:10:00-05:00</updated>
+<published>2022-01-24T09:10:00-05:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Winter Weather Advisory issued January 24 at 4:44AM EST until January 24 at 4:00PM EST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MI1263DD505FC0.WinterWeatherAdvisory.1263DD522350MI.IWXWSWIWX.a5ba6141463bf47886bfd8ad584acee9"/>
-<summary>...WINTER WEATHER ADVISORY REMAINS IN EFFECT UNTIL 4 PM EST /3 PM CST/ THIS AFTERNOON... * WHAT...Snow expected. Total snow accumulations of 2 to 4 inches. Patchy blowing and drifting snow will be possible in rural areas. * WHERE...Portions of northern Indiana and southwest Michigan.</summary>
+<title>Winter Weather Advisory issued January 24 at 9:10AM EST until January 24 at 4:00PM EST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MI1263DD5115C8.WinterWeatherAdvisory.1263DD522350MI.IWXWSWIWX.a5ba6141463bf47886bfd8ad584acee9"/>
+<summary>...WINTER WEATHER ADVISORY REMAINS IN EFFECT UNTIL 4 PM EST /3 PM CST/ THIS AFTERNOON... * WHAT...Moderate to occasional heavy snow will continue through this afternoon. The heaviest snow will fall along and north of US 30. With increasing winds...blowing and drifting snow will be possible especially in rural areas. Total snow accumulation 2 to</summary>
 <cap:event>Winter Weather Advisory</cap:event>
-<cap:effective>2022-01-24T04:44:00-05:00</cap:effective>
+<cap:effective>2022-01-24T09:10:00-05:00</cap:effective>
 <cap:expires>2022-01-24T16:00:00-05:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
@@ -2338,21 +2210,21 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
-<value>/O.CON.KIWX.WW.Y.0007.220124T1100Z-220124T2100Z/</value>
+<value>/O.CON.KIWX.WW.Y.0007.000000T0000Z-220124T2100Z/</value>
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=MI1263DD505FC0.WinterWeatherAdvisory.1263DD60F060MI.IWXWSWIWX.5860a852b145696e228d2c344ae58c7d</id>
-<updated>2022-01-24T04:44:00-05:00</updated>
-<published>2022-01-24T04:44:00-05:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=MI1263DD5115C8.WinterWeatherAdvisory.1263DD60F060MI.IWXWSWIWX.5860a852b145696e228d2c344ae58c7d</id>
+<updated>2022-01-24T09:10:00-05:00</updated>
+<published>2022-01-24T09:10:00-05:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Winter Weather Advisory issued January 24 at 4:44AM EST until January 25 at 1:00PM EST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MI1263DD505FC0.WinterWeatherAdvisory.1263DD60F060MI.IWXWSWIWX.5860a852b145696e228d2c344ae58c7d"/>
+<title>Winter Weather Advisory issued January 24 at 9:10AM EST until January 25 at 1:00PM EST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MI1263DD5115C8.WinterWeatherAdvisory.1263DD60F060MI.IWXWSWIWX.5860a852b145696e228d2c344ae58c7d"/>
 <summary>...WINTER WEATHER ADVISORY REMAINS IN EFFECT UNTIL 1 PM EST /NOON CST/ TUESDAY... * WHAT...Snow expected. Total snow accumulations of 4 to 8 inches with localized higher amounts where lake banding persists. Patchy blowing and drifting snow will be possible in rural areas.</summary>
 <cap:event>Winter Weather Advisory</cap:event>
-<cap:effective>2022-01-24T04:44:00-05:00</cap:effective>
+<cap:effective>2022-01-24T09:10:00-05:00</cap:effective>
 <cap:expires>2022-01-25T13:00:00-05:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
@@ -2370,7 +2242,71 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
-<value>/O.CON.KIWX.WW.Y.0007.220124T1100Z-220125T1800Z/</value>
+<value>/O.CON.KIWX.WW.Y.0007.000000T0000Z-220125T1800Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=MI1263DD5101DC.SpecialWeatherStatement.1263DD516BB8MI.DTXSPSDTX.16772e54e82b98fa717aa2c12d6d07cb</id>
+<updated>2022-01-24T08:59:00-05:00</updated>
+<published>2022-01-24T08:59:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Special Weather Statement issued January 24 at 8:59AM EST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MI1263DD5101DC.SpecialWeatherStatement.1263DD516BB8MI.DTXSPSDTX.16772e54e82b98fa717aa2c12d6d07cb"/>
+<summary>...CAUTIOUS TRAVEL IS ADVISED FOR SNOW-COVERED ROADWAYS AND REDUCED VISIBILITIES THROUGH THE MORNING HOURS... WEATHER... * Light to occasionally moderate snow will continue to impact portions of southeastern Michigan north of the I-69 corridor and south of the I-94 corridor through the remainder of the</summary>
+<cap:event>Special Weather Statement</cap:event>
+<cap:effective>2022-01-24T08:59:00-05:00</cap:effective>
+<cap:expires>2022-01-24T11:30:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Observed</cap:certainty>
+<cap:areaDesc>Bay; Huron; Lenawee; Midland; Monroe; Saginaw; Sanilac; Tuscola</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>026017 026063 026091 026111 026115 026145 026151 026157</value>
+<valueName>UGC</valueName>
+<value>MIZ047 MIZ048 MIZ049 MIZ053 MIZ054 MIZ055 MIZ082 MIZ083</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value></value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=MI1263DD5101DC.SpecialWeatherStatement.1263DD516BB8MI.DTXSPSDTX.45b33e89cb45487ad047c766c5407f38</id>
+<updated>2022-01-24T08:59:00-05:00</updated>
+<published>2022-01-24T08:59:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Special Weather Statement issued January 24 at 8:59AM EST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MI1263DD5101DC.SpecialWeatherStatement.1263DD516BB8MI.DTXSPSDTX.45b33e89cb45487ad047c766c5407f38"/>
+<summary>...CAUTIOUS TRAVEL IS ADVISED FOR SNOW-COVERED ROADWAYS AND REDUCED VISIBILITIES THROUGH THE MORNING HOURS... WEATHER... * Moderate snow will continue to impact portions of southeastern Michigan between the I-69 and I-94 corridors through the remainder of the morning hours.</summary>
+<cap:event>Special Weather Statement</cap:event>
+<cap:effective>2022-01-24T08:59:00-05:00</cap:effective>
+<cap:expires>2022-01-24T11:30:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Observed</cap:certainty>
+<cap:areaDesc>Genesee; Lapeer; Livingston; Macomb; Oakland; Shiawassee; St. Clair; Washtenaw; Wayne</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>026049 026087 026093 026099 026125 026147 026155 026161 026163</value>
+<valueName>UGC</valueName>
+<value>MIZ060 MIZ061 MIZ062 MIZ063 MIZ068 MIZ069 MIZ070 MIZ075 MIZ076</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value></value>
 </cap:parameter>
 </entry>
 <entry>
@@ -3411,6 +3347,104 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=ND1263DD511500.WindChillAdvisory.1263DD5EA670ND.BISWSWBIS.a4203622d5d5a0002cc622969e6e2d87</id>
+<updated>2022-01-24T08:08:00-06:00</updated>
+<published>2022-01-24T08:08:00-06:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Wind Chill Advisory issued January 24 at 8:08AM CST until January 24 at 9:00PM CST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=ND1263DD511500.WindChillAdvisory.1263DD5EA670ND.BISWSWBIS.a4203622d5d5a0002cc622969e6e2d87"/>
+<summary>...WIND CHILL ADVISORY REMAINS IN EFFECT UNTIL 9 PM CST THIS EVENING... ...WIND CHILL WARNING REMAINS IN EFFECT FROM 9 PM THIS EVENING TO NOON CST TUESDAY... * WHAT...For the Wind Chill Advisory, very cold wind chills expected. Wind chills as low as 35 below zero. For the Wind Chill</summary>
+<cap:event>Wind Chill Advisory</cap:event>
+<cap:effective>2022-01-24T08:08:00-06:00</cap:effective>
+<cap:expires>2022-01-24T21:00:00-06:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Bottineau; Burke; Burleigh; Dickey; Foster; Kidder; La Moure; Logan; McHenry; McIntosh; McLean; Mountrail; Pierce; Renville; Rolette; Sheridan; Stutsman; Ward; Wells</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>038009 038013 038015 038021 038025 038031 038043 038045 038047 038049 038051 038055 038061 038069 038075 038079 038083 038093 038101 038103</value>
+<valueName>UGC</valueName>
+<value>NDZ002 NDZ003 NDZ004 NDZ005 NDZ010 NDZ011 NDZ012 NDZ013 NDZ021 NDZ022 NDZ023 NDZ025 NDZ035 NDZ036 NDZ037 NDZ047 NDZ048 NDZ050 NDZ051</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KBIS.WC.W.0005.220125T0300Z-220125T1800Z/
+/O.CON.KBIS.WC.Y.0009.000000T0000Z-220125T0300Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=ND1263DD511500.WindChillAdvisory.1263DD60F060ND.BISWSWBIS.b78b41ed5728a525a0d28064a579fae0</id>
+<updated>2022-01-24T08:08:00-06:00</updated>
+<published>2022-01-24T08:08:00-06:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Wind Chill Advisory issued January 24 at 8:08AM CST until January 25 at 12:00PM CST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=ND1263DD511500.WindChillAdvisory.1263DD60F060ND.BISWSWBIS.b78b41ed5728a525a0d28064a579fae0"/>
+<summary>...WIND CHILL ADVISORY REMAINS IN EFFECT FROM 6 PM CST /5 PM MST/ THIS EVENING TO NOON CST /11 AM MST/ TUESDAY... * WHAT...Very cold wind chills expected. Wind chills as low as 35 below zero. * WHERE...Portions of northwest North Dakota, as well as, counties immediately south and west of the Missouri River.</summary>
+<cap:event>Wind Chill Advisory</cap:event>
+<cap:effective>2022-01-24T08:08:00-06:00</cap:effective>
+<cap:expires>2022-01-25T12:00:00-06:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Divide; Dunn; Emmons; McKenzie; Mercer; Morton; Oliver; Williams</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>038023 038025 038029 038053 038055 038057 038059 038065 038105</value>
+<valueName>UGC</valueName>
+<value>NDZ001 NDZ009 NDZ017 NDZ018 NDZ019 NDZ020 NDZ034 NDZ046</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KBIS.WC.Y.0009.220125T0000Z-220125T1800Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=ND1263DD511500.WindChillWarning.1263DD60F060ND.BISWSWBIS.626b684e93db4cb10fda3a901b809294</id>
+<updated>2022-01-24T08:08:00-06:00</updated>
+<published>2022-01-24T08:08:00-06:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Wind Chill Warning issued January 24 at 8:08AM CST until January 25 at 12:00PM CST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=ND1263DD511500.WindChillWarning.1263DD60F060ND.BISWSWBIS.626b684e93db4cb10fda3a901b809294"/>
+<summary>...WIND CHILL ADVISORY REMAINS IN EFFECT UNTIL 9 PM CST THIS EVENING... ...WIND CHILL WARNING REMAINS IN EFFECT FROM 9 PM THIS EVENING TO NOON CST TUESDAY... * WHAT...For the Wind Chill Advisory, very cold wind chills expected. Wind chills as low as 35 below zero. For the Wind Chill</summary>
+<cap:event>Wind Chill Warning</cap:event>
+<cap:effective>2022-01-24T08:08:00-06:00</cap:effective>
+<cap:expires>2022-01-25T12:00:00-06:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Bottineau; Burke; Burleigh; Dickey; Foster; Kidder; La Moure; Logan; McHenry; McIntosh; McLean; Mountrail; Pierce; Renville; Rolette; Sheridan; Stutsman; Ward; Wells</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>038009 038013 038015 038021 038025 038031 038043 038045 038047 038049 038051 038055 038061 038069 038075 038079 038083 038093 038101 038103</value>
+<valueName>UGC</valueName>
+<value>NDZ002 NDZ003 NDZ004 NDZ005 NDZ010 NDZ011 NDZ012 NDZ013 NDZ021 NDZ022 NDZ023 NDZ025 NDZ035 NDZ036 NDZ037 NDZ047 NDZ048 NDZ050 NDZ051</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KBIS.WC.W.0005.220125T0300Z-220125T1800Z/
+/O.CON.KBIS.WC.Y.0009.000000T0000Z-220125T0300Z/</value>
+</cap:parameter>
+</entry>
+<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=ND1263DD5053A4.WindChillAdvisory.1263DD5EA670ND.FGFWSWFGF.1d590b2280517197db3c92712aaba4dc</id>
 <updated>2022-01-24T03:13:00-06:00</updated>
 <published>2022-01-24T03:13:00-06:00</published>
@@ -3474,104 +3508,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <valueName>VTEC</valueName>
 <value>/O.NEW.KFGF.WC.W.0005.220125T0300Z-220125T1800Z/
 /O.NEW.KFGF.WC.Y.0010.220124T1000Z-220125T0300Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=ND1263DD503BD0.WindChillAdvisory.1263DD5EA670ND.BISWSWBIS.a4203622d5d5a0002cc622969e6e2d87</id>
-<updated>2022-01-24T02:52:00-06:00</updated>
-<published>2022-01-24T02:52:00-06:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Wind Chill Advisory issued January 24 at 2:52AM CST until January 24 at 9:00PM CST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=ND1263DD503BD0.WindChillAdvisory.1263DD5EA670ND.BISWSWBIS.a4203622d5d5a0002cc622969e6e2d87"/>
-<summary>...WIND CHILL ADVISORY IN EFFECT FROM 6 AM THIS MORNING TO 9 PM CST THIS EVENING... ...WIND CHILL WARNING IN EFFECT FROM 9 PM THIS EVENING TO NOON CST TUESDAY... * WHAT...For the Wind Chill Advisory, very cold wind chills expected. Wind chills as low as 35 below zero. For the Wind Chill</summary>
-<cap:event>Wind Chill Advisory</cap:event>
-<cap:effective>2022-01-24T02:52:00-06:00</cap:effective>
-<cap:expires>2022-01-24T21:00:00-06:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Bottineau; Burke; Burleigh; Dickey; Foster; Kidder; La Moure; Logan; McHenry; McIntosh; McLean; Mountrail; Pierce; Renville; Rolette; Sheridan; Stutsman; Ward; Wells</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>038009 038013 038015 038021 038025 038031 038043 038045 038047 038049 038051 038055 038061 038069 038075 038079 038083 038093 038101 038103</value>
-<valueName>UGC</valueName>
-<value>NDZ002 NDZ003 NDZ004 NDZ005 NDZ010 NDZ011 NDZ012 NDZ013 NDZ021 NDZ022 NDZ023 NDZ025 NDZ035 NDZ036 NDZ037 NDZ047 NDZ048 NDZ050 NDZ051</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.NEW.KBIS.WC.W.0005.220125T0300Z-220125T1800Z/
-/O.NEW.KBIS.WC.Y.0009.220124T1200Z-220125T0300Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=ND1263DD503BD0.WindChillAdvisory.1263DD60F060ND.BISWSWBIS.0d3520e82bb22d3dbf00d0311a28f463</id>
-<updated>2022-01-24T02:52:00-06:00</updated>
-<published>2022-01-24T02:52:00-06:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Wind Chill Advisory issued January 24 at 2:52AM CST until January 25 at 12:00PM CST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=ND1263DD503BD0.WindChillAdvisory.1263DD60F060ND.BISWSWBIS.0d3520e82bb22d3dbf00d0311a28f463"/>
-<summary>...WIND CHILL ADVISORY IN EFFECT FROM 6 PM CST /5 PM MST/ THIS EVENING TO NOON CST /11 AM MST/ TUESDAY... * WHAT...Very cold wind chills expected. Wind chills as low as 35 below zero. * WHERE...Portions of northwest North Dakota, as well as, counties immediately south and west of the Missouri River.</summary>
-<cap:event>Wind Chill Advisory</cap:event>
-<cap:effective>2022-01-24T02:52:00-06:00</cap:effective>
-<cap:expires>2022-01-25T12:00:00-06:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Divide; Dunn; Emmons; McKenzie; Mercer; Morton; Oliver; Sioux; Williams</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>038023 038025 038029 038053 038055 038057 038059 038065 038085 038105</value>
-<valueName>UGC</valueName>
-<value>NDZ001 NDZ009 NDZ017 NDZ018 NDZ019 NDZ020 NDZ034 NDZ045 NDZ046</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.NEW.KBIS.WC.Y.0009.220125T0000Z-220125T1800Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=ND1263DD503BD0.WindChillWarning.1263DD60F060ND.BISWSWBIS.626b684e93db4cb10fda3a901b809294</id>
-<updated>2022-01-24T02:52:00-06:00</updated>
-<published>2022-01-24T02:52:00-06:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Wind Chill Warning issued January 24 at 2:52AM CST until January 25 at 12:00PM CST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=ND1263DD503BD0.WindChillWarning.1263DD60F060ND.BISWSWBIS.626b684e93db4cb10fda3a901b809294"/>
-<summary>...WIND CHILL ADVISORY IN EFFECT FROM 6 AM THIS MORNING TO 9 PM CST THIS EVENING... ...WIND CHILL WARNING IN EFFECT FROM 9 PM THIS EVENING TO NOON CST TUESDAY... * WHAT...For the Wind Chill Advisory, very cold wind chills expected. Wind chills as low as 35 below zero. For the Wind Chill</summary>
-<cap:event>Wind Chill Warning</cap:event>
-<cap:effective>2022-01-24T02:52:00-06:00</cap:effective>
-<cap:expires>2022-01-25T12:00:00-06:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Bottineau; Burke; Burleigh; Dickey; Foster; Kidder; La Moure; Logan; McHenry; McIntosh; McLean; Mountrail; Pierce; Renville; Rolette; Sheridan; Stutsman; Ward; Wells</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>038009 038013 038015 038021 038025 038031 038043 038045 038047 038049 038051 038055 038061 038069 038075 038079 038083 038093 038101 038103</value>
-<valueName>UGC</valueName>
-<value>NDZ002 NDZ003 NDZ004 NDZ005 NDZ010 NDZ011 NDZ012 NDZ013 NDZ021 NDZ022 NDZ023 NDZ025 NDZ035 NDZ036 NDZ037 NDZ047 NDZ048 NDZ050 NDZ051</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.NEW.KBIS.WC.W.0005.220125T0300Z-220125T1800Z/
-/O.NEW.KBIS.WC.Y.0009.220124T1200Z-220125T0300Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -3639,31 +3575,31 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=NY1263DD507924.SpecialWeatherStatement.1263DD5111E0NY.OKXSPSOKX.8ea77b900b20c5208af27dbd89dd6ddc</id>
-<updated>2022-01-24T05:09:00-05:00</updated>
-<published>2022-01-24T05:09:00-05:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=NY1263DD510114.SpecialWeatherStatement.1263DD518710NY.OKXSPSOKX.34bebb184f4d1d56287b504d35f9609a</id>
+<updated>2022-01-24T08:57:00-05:00</updated>
+<published>2022-01-24T08:57:00-05:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Special Weather Statement issued January 24 at 5:09AM EST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=NY1263DD507924.SpecialWeatherStatement.1263DD5111E0NY.OKXSPSOKX.8ea77b900b20c5208af27dbd89dd6ddc"/>
-<summary>Light snow early this morning may bring a coating of snow. Slippery travel is possible and motorists should use extra caution if driving this morning as temperatures are below freezing. The light snow should end between 7 am and 9 am.</summary>
+<title>Special Weather Statement issued January 24 at 8:57AM EST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=NY1263DD510114.SpecialWeatherStatement.1263DD518710NY.OKXSPSOKX.34bebb184f4d1d56287b504d35f9609a"/>
+<summary>...LIGHT TO OCCASIONALLY MODERATE SNOW THIS MORNING... Light to occasionally moderate snow this morning may bring a half to 1 inch of snow in some locations. Snow will cause visibilities will be reduced to around 1 to 3 miles with some brief reductions to a half to three quarters of a mile possible. Slippery travel is possible, especially on less traveled and untreated roadways,</summary>
 <cap:event>Special Weather Statement</cap:event>
-<cap:effective>2022-01-24T05:09:00-05:00</cap:effective>
-<cap:expires>2022-01-24T09:00:00-05:00</cap:expires>
+<cap:effective>2022-01-24T08:57:00-05:00</cap:effective>
+<cap:expires>2022-01-24T12:00:00-05:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
 <cap:category>Met</cap:category>
 <cap:urgency>Expected</cap:urgency>
 <cap:severity>Minor</cap:severity>
 <cap:certainty>Observed</cap:certainty>
-<cap:areaDesc>Northeast Suffolk; Northern Nassau; Northern Westchester; Northwest Suffolk; Southeast Suffolk; Southern Nassau; Southern Westchester; Southwest Suffolk</cap:areaDesc>
+<cap:areaDesc>Northeast Suffolk; Northern Nassau; Northwest Suffolk; Southeast Suffolk; Southern Nassau; Southwest Suffolk</cap:areaDesc>
 <cap:polygon></cap:polygon>
 <cap:geocode>
 <valueName>FIPS6</valueName>
-<value>036059 036103 036119</value>
+<value>036059 036103</value>
 <valueName>UGC</valueName>
-<value>NYZ070 NYZ071 NYZ078 NYZ079 NYZ080 NYZ081 NYZ177 NYZ179</value>
+<value>NYZ078 NYZ079 NYZ080 NYZ081 NYZ177 NYZ179</value>
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
@@ -3767,17 +3703,17 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=OR1263DD50A034.FreezingFogAdvisory.1263DD522350OR.PDTNPWPDT.91370b78db1bb84ecd3c7a8da051b89f</id>
-<updated>2022-01-24T03:09:00-08:00</updated>
-<published>2022-01-24T03:09:00-08:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=OR1263DD50FF84.FreezingFogAdvisory.1263DD522350OR.PDTNPWPDT.91370b78db1bb84ecd3c7a8da051b89f</id>
+<updated>2022-01-24T05:53:00-08:00</updated>
+<published>2022-01-24T05:53:00-08:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Freezing Fog Advisory issued January 24 at 3:09AM PST until January 24 at 1:00PM PST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=OR1263DD50A034.FreezingFogAdvisory.1263DD522350OR.PDTNPWPDT.91370b78db1bb84ecd3c7a8da051b89f"/>
+<title>Freezing Fog Advisory issued January 24 at 5:53AM PST until January 24 at 1:00PM PST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=OR1263DD50FF84.FreezingFogAdvisory.1263DD522350OR.PDTNPWPDT.91370b78db1bb84ecd3c7a8da051b89f"/>
 <summary>...FREEZING FOG ADVISORY REMAINS IN EFFECT UNTIL 1 PM PST THIS AFTERNOON... * WHAT...Visibility one quarter mile or less in freezing fog. * WHERE...In Washington, Lower Columbia Basin of Washington, Foothills of the Blue Mountains of Washington, Kittitas Valley and Yakima Valley. In Oregon, Foothills of the Northern Blue</summary>
 <cap:event>Freezing Fog Advisory</cap:event>
-<cap:effective>2022-01-24T03:09:00-08:00</cap:effective>
+<cap:effective>2022-01-24T05:53:00-08:00</cap:effective>
 <cap:expires>2022-01-24T13:00:00-08:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
@@ -3799,17 +3735,17 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=OR1263DD50A034.FreezingFogAdvisory.1263DD522350OR.PDTNPWPDT.e79a469678fd8584d7bd0ef24c678d9b</id>
-<updated>2022-01-24T03:09:00-08:00</updated>
-<published>2022-01-24T03:09:00-08:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=OR1263DD50FF84.FreezingFogAdvisory.1263DD522350OR.PDTNPWPDT.e79a469678fd8584d7bd0ef24c678d9b</id>
+<updated>2022-01-24T05:53:00-08:00</updated>
+<published>2022-01-24T05:53:00-08:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Freezing Fog Advisory issued January 24 at 3:09AM PST until January 24 at 1:00PM PST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=OR1263DD50A034.FreezingFogAdvisory.1263DD522350OR.PDTNPWPDT.e79a469678fd8584d7bd0ef24c678d9b"/>
+<title>Freezing Fog Advisory issued January 24 at 5:53AM PST until January 24 at 1:00PM PST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=OR1263DD50FF84.FreezingFogAdvisory.1263DD522350OR.PDTNPWPDT.e79a469678fd8584d7bd0ef24c678d9b"/>
 <summary>...FREEZING FOG ADVISORY REMAINS IN EFFECT UNTIL 1 PM PST THIS AFTERNOON... * WHAT...Visibility one quarter mile or less in freezing fog. * WHERE...Wallowa County. * WHEN...Until 1 PM PST Monday. * IMPACTS...Hazardous driving conditions due to low visibility</summary>
 <cap:event>Freezing Fog Advisory</cap:event>
-<cap:effective>2022-01-24T03:09:00-08:00</cap:effective>
+<cap:effective>2022-01-24T05:53:00-08:00</cap:effective>
 <cap:expires>2022-01-24T13:00:00-08:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
@@ -4706,6 +4642,70 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=WA1263DD50FF84.FreezingFogAdvisory.1263DD522350WA.PDTNPWPDT.ae703297df91d42f6707abd078f6d5cc</id>
+<updated>2022-01-24T05:53:00-08:00</updated>
+<published>2022-01-24T05:53:00-08:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Freezing Fog Advisory issued January 24 at 5:53AM PST until January 24 at 1:00PM PST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=WA1263DD50FF84.FreezingFogAdvisory.1263DD522350WA.PDTNPWPDT.ae703297df91d42f6707abd078f6d5cc"/>
+<summary>...FREEZING FOG ADVISORY REMAINS IN EFFECT UNTIL 1 PM PST THIS AFTERNOON... * WHAT...Visibility one quarter mile or less in freezing fog. * WHERE...In Washington, Lower Columbia Basin of Washington, Foothills of the Blue Mountains of Washington, Kittitas Valley and Yakima Valley. In Oregon, Foothills of the Northern Blue</summary>
+<cap:event>Freezing Fog Advisory</cap:event>
+<cap:effective>2022-01-24T05:53:00-08:00</cap:effective>
+<cap:expires>2022-01-24T13:00:00-08:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Foothills of the Blue Mountains of Washington; Kittitas Valley; Lower Columbia Basin of Washington; Yakima Valley</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>053005 053013 053021 053037 053071 053077</value>
+<valueName>UGC</valueName>
+<value>WAZ026 WAZ027 WAZ028 WAZ029</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KPDT.ZF.Y.0008.000000T0000Z-220124T2100Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=WA1263DD50FF84.FreezingFogAdvisory.1263DD522350WA.PDTNPWPDT.c47ab7f80cfc539ad423429231b71c2d</id>
+<updated>2022-01-24T05:53:00-08:00</updated>
+<published>2022-01-24T05:53:00-08:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Freezing Fog Advisory issued January 24 at 5:53AM PST until January 24 at 1:00PM PST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=WA1263DD50FF84.FreezingFogAdvisory.1263DD522350WA.PDTNPWPDT.c47ab7f80cfc539ad423429231b71c2d"/>
+<summary>...FREEZING FOG ADVISORY IN EFFECT UNTIL 1 PM PST THIS AFTERNOON... * WHAT...Visibility less than one quarter mile in freezing fog at times. * WHERE...Simcoe Highlands. * WHEN...Until 1 PM PST Monday.</summary>
+<cap:event>Freezing Fog Advisory</cap:event>
+<cap:effective>2022-01-24T05:53:00-08:00</cap:effective>
+<cap:expires>2022-01-24T13:00:00-08:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Simcoe Highlands</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>053039 053077</value>
+<valueName>UGC</valueName>
+<value>WAZ521</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.EXA.KPDT.ZF.Y.0008.000000T0000Z-220124T2100Z/</value>
+</cap:parameter>
+</entry>
+<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=WA1263DD50C99C.DenseFogAdvisory.1263DD522350WA.OTXNPWOTX.e2631224894287a71f27fb9b3a459e6d</id>
 <updated>2022-01-24T04:15:00-08:00</updated>
 <published>2022-01-24T04:15:00-08:00</published>
@@ -4929,38 +4929,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value>/O.CON.KSEW.AS.Y.0001.000000T0000Z-220126T2000Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=WA1263DD50A034.FreezingFogAdvisory.1263DD522350WA.PDTNPWPDT.ae703297df91d42f6707abd078f6d5cc</id>
-<updated>2022-01-24T03:09:00-08:00</updated>
-<published>2022-01-24T03:09:00-08:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Freezing Fog Advisory issued January 24 at 3:09AM PST until January 24 at 1:00PM PST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=WA1263DD50A034.FreezingFogAdvisory.1263DD522350WA.PDTNPWPDT.ae703297df91d42f6707abd078f6d5cc"/>
-<summary>...FREEZING FOG ADVISORY REMAINS IN EFFECT UNTIL 1 PM PST THIS AFTERNOON... * WHAT...Visibility one quarter mile or less in freezing fog. * WHERE...In Washington, Lower Columbia Basin of Washington, Foothills of the Blue Mountains of Washington, Kittitas Valley and Yakima Valley. In Oregon, Foothills of the Northern Blue</summary>
-<cap:event>Freezing Fog Advisory</cap:event>
-<cap:effective>2022-01-24T03:09:00-08:00</cap:effective>
-<cap:expires>2022-01-24T13:00:00-08:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Foothills of the Blue Mountains of Washington; Kittitas Valley; Lower Columbia Basin of Washington; Yakima Valley</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>053005 053013 053021 053037 053071 053077</value>
-<valueName>UGC</valueName>
-<value>WAZ026 WAZ027 WAZ028 WAZ029</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KPDT.ZF.Y.0008.000000T0000Z-220124T2100Z/</value>
 </cap:parameter>
 </entry>
 <entry>
