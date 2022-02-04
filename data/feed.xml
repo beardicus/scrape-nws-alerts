@@ -16,16 +16,48 @@ xmlns = 'http://www.w3.org/2005/Atom'
 xmlns:cap = 'urn:oasis:names:tc:emergency:cap:1.1'
 xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 >
-<!-- http-date = Fri, 04 Feb 2022 03:05:00 GMT -->
+<!-- http-date = Fri, 04 Feb 2022 03:32:00 GMT -->
 <id>https://alerts.weather.gov/cap/us.php?x=0</id>
 <logo>http://alerts.weather.gov/images/xml_logo.gif</logo>
 <generator>NWS CAP Server</generator>
-<updated>2022-02-03T21:05:00-06:00</updated>
+<updated>2022-02-03T21:32:00-06:00</updated>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
 <title>Current Watches, Warnings and Advisories for the United States Issued by the National Weather Service</title>
 <link href="https://alerts.weather.gov/cap/us.php?x=0"/>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=AK1263E2141C18.BlizzardWarning.1263E21529A0AK.AFCWSWALU.da77ee09251b4b59017b4f9eb3360413</id>
+<updated>2022-02-03T18:10:00-09:00</updated>
+<published>2022-02-03T18:10:00-09:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Blizzard Warning issued February 03 at 6:10PM AKST until February 04 at 1:00AM AKST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=AK1263E2141C18.BlizzardWarning.1263E21529A0AK.AFCWSWALU.da77ee09251b4b59017b4f9eb3360413"/>
+<summary>...BLIZZARD WARNING REMAINS IN EFFECT UNTIL 1 AM AKST FRIDAY... * WHAT...Blizzard conditions occurring. Additional snow accumulations of up to two inches. Northeasterly winds gusting as high as 50 mph. Visibility reductions to one-quarter mile. * WHERE...Kuskokwim Delta coast. * WHEN...Until 1 AM AKST Friday.</summary>
+<cap:event>Blizzard Warning</cap:event>
+<cap:effective>2022-02-03T18:10:00-09:00</cap:effective>
+<cap:expires>2022-02-04T01:00:00-09:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Severe</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Kuskokwim Delta</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>002050 002158</value>
+<valueName>UGC</valueName>
+<value>AKZ155</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.PAFC.BZ.W.0003.000000T0000Z-220204T1000Z/</value>
+</cap:parameter>
+</entry>
 <entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=AK1263E213D1E0.WinterWeatherAdvisory.1263E214DB80AK.AFCWSWAER.05a2e07e656814e3baf4e1005e0e7ffb</id>
 <updated>2022-02-03T16:20:00-09:00</updated>
@@ -88,38 +120,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value>/O.CON.PAFC.BZ.W.0004.000000T0000Z-220204T1400Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=AK1263E207F078.BlizzardWarning.1263E21529A0AK.AFCWSWALU.da77ee09251b4b59017b4f9eb3360413</id>
-<updated>2022-02-03T14:34:00-09:00</updated>
-<published>2022-02-03T14:34:00-09:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Blizzard Warning issued February 03 at 2:34PM AKST until February 04 at 1:00AM AKST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=AK1263E207F078.BlizzardWarning.1263E21529A0AK.AFCWSWALU.da77ee09251b4b59017b4f9eb3360413"/>
-<summary>...BLIZZARD WARNING REMAINS IN EFFECT UNTIL 1 AM AKST FRIDAY FOR THE KUSKOKWIM DELTA COAST... * WHAT...Blizzard conditions occurring. Additional snow accumulations of up to two inches. Northeasterly winds gusting as high as 50 mph. Visibility reductions to one-quarter mile. * WHERE...Kuskokwim Delta coast.</summary>
-<cap:event>Blizzard Warning</cap:event>
-<cap:effective>2022-02-03T14:34:00-09:00</cap:effective>
-<cap:expires>2022-02-04T01:00:00-09:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Severe</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Kuskokwim Delta</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>002050 002158</value>
-<valueName>UGC</valueName>
-<value>AKZ155</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.PAFC.BZ.W.0003.000000T0000Z-220204T1000Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -507,6 +507,171 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=AL1263E21421F4.FloodWarning.1263E223CFA0AL.HUNFLSHUN.683408025b9789821d4a7fd970a4f2ce</id>
+<updated>2022-02-03T21:25:00-06:00</updated>
+<published>2022-02-03T21:25:00-06:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Flood Warning issued February 03 at 9:25PM CST until February 05 at 12:00AM CST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=AL1263E21421F4.FloodWarning.1263E223CFA0AL.HUNFLSHUN.683408025b9789821d4a7fd970a4f2ce"/>
+<summary>...The Flood Warning continues for the following rivers in Alabama... Big Nance Creek at Courtland affecting Lawrence County. ...FLOOD WARNING REMAINS IN EFFECT FROM FRIDAY EVENING TO EARLY SATURDAY MORNING... * WHAT...Minor flooding is forecast. * WHERE...Big Nance Creek at Courtland.</summary>
+<cap:event>Flood Warning</cap:event>
+<cap:effective>2022-02-03T21:25:00-06:00</cap:effective>
+<cap:expires>2022-02-05T00:00:00-06:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Lawrence</cap:areaDesc>
+<cap:polygon>34.79,-87.42 34.76,-87.33 34.68,-87.25 34.57,-87.28 34.58,-87.41 34.79,-87.42</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>001079</value>
+<valueName>UGC</valueName>
+<value>ALC079</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KHUN.FL.W.0008.220205T0000Z-220205T0600Z/
+/BNAA1.1.ER.220205T0000Z.220205T0000Z.220205T0000Z.NO/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=AL1263E2142190.FloodWarning.1263E223D964AL.HUNFLSHUN.a4f1736ec917b930e4b642d122c275b0</id>
+<updated>2022-02-03T21:24:00-06:00</updated>
+<published>2022-02-03T21:24:00-06:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Flood Warning issued February 03 at 9:24PM CST until February 05 at 12:25AM CST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=AL1263E2142190.FloodWarning.1263E223D964AL.HUNFLSHUN.a4f1736ec917b930e4b642d122c275b0"/>
+<summary>...The Flood Warning continues for the following rivers in Alabama... Flint River at Brownsboro affecting Madison County. ...FLOOD WARNING REMAINS IN EFFECT FROM LATE TONIGHT TO EARLY SATURDAY MORNING... * WHAT...Minor flooding is forecast. * WHERE...Flint River at Brownsboro.</summary>
+<cap:event>Flood Warning</cap:event>
+<cap:effective>2022-02-03T21:24:00-06:00</cap:effective>
+<cap:expires>2022-02-05T00:25:00-06:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Madison</cap:areaDesc>
+<cap:polygon>34.76,-86.49 34.75,-86.38 34.61,-86.39 34.47,-86.47 34.54,-86.55 34.76,-86.49</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>001089</value>
+<valueName>UGC</valueName>
+<value>ALC089</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KHUN.FL.W.0007.220204T0913Z-220205T0625Z/
+/BSBA1.1.ER.220204T0913Z.220204T1800Z.220205T0025Z.NO/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=AL1263E21420C8.FloodWarning.1263E233B2D0AL.HUNFLSHUN.acd9f7845338f708bb0127ca880c7702</id>
+<updated>2022-02-03T21:22:00-06:00</updated>
+<published>2022-02-03T21:22:00-06:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Flood Warning issued February 03 at 9:22PM CST until February 06 at 4:12AM CST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=AL1263E21420C8.FloodWarning.1263E233B2D0AL.HUNFLSHUN.acd9f7845338f708bb0127ca880c7702"/>
+<summary>...The Flood Warning continues for the following rivers in Alabama... Paint Rock River near Woodville affecting Madison, Jackson and Marshall Counties. ...FLOOD WARNING REMAINS IN EFFECT FROM FRIDAY AFTERNOON TO EARLY SUNDAY MORNING... * WHAT...Minor flooding is forecast.</summary>
+<cap:event>Flood Warning</cap:event>
+<cap:effective>2022-02-03T21:22:00-06:00</cap:effective>
+<cap:expires>2022-02-06T04:12:00-06:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Jackson; Madison; Marshall</cap:areaDesc>
+<cap:polygon>34.91,-86.28 34.89,-86.06 34.42,-86.37 34.5,-86.53 34.91,-86.28</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>001071 001089 001095</value>
+<valueName>UGC</valueName>
+<value>ALC071 ALC089 ALC095</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KHUN.FL.W.0006.220204T1950Z-220206T1012Z/
+/WDVA1.1.ER.220204T1950Z.220205T1200Z.220206T0412Z.NO/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=AL1263E2141F9C.FloodAdvisory.1263E214B470AL.BMXFLSBMX.6563df3dbb70217c53beea125442b4b7</id>
+<updated>2022-02-03T21:19:00-06:00</updated>
+<published>2022-02-03T21:19:00-06:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Flood Advisory issued February 03 at 9:19PM CST until February 04 at 1:00AM CST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=AL1263E2141F9C.FloodAdvisory.1263E214B470AL.BMXFLSBMX.6563df3dbb70217c53beea125442b4b7"/>
+<summary>...FLOOD ADVISORY IN EFFECT UNTIL 315 AM CST FRIDAY... * WHAT...Urban and small stream flooding caused by excessive rainfall is expected. * WHERE...A portion of central Alabama, including the following counties, Lowndes and Montgomery. * WHEN...Until 315 AM CST.</summary>
+<cap:event>Flood Advisory</cap:event>
+<cap:effective>2022-02-03T21:19:00-06:00</cap:effective>
+<cap:expires>2022-02-04T01:00:00-06:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Montgomery</cap:areaDesc>
+<cap:polygon>31.96,-86.52 31.96,-86.78 32.43,-86.4 32.43,-86.35 32.41,-86.31 32.44,-86.32 32.49,-86.31 32.47,-86.29 32.5,-86.25 32.48,-86.23 32.47,-86.23 32.47,-86.21 32.45,-86.18 32.43,-86.19 32.43,-86.13 32.41,-86.05 32.42,-86.03 32.41,-86.01 32.38,-86.01 31.96,-86.52</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>001101</value>
+<valueName>UGC</valueName>
+<value>ALC101</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.NEW.KBMX.FA.Y.0005.220204T0319Z-220204T0915Z/
+/00000.N.ER.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=AL1263E2141F9C.FloodAdvisory.1263E223CFA0AL.BMXFLSBMX.745c1032799315caeebebf280109cee6</id>
+<updated>2022-02-03T21:19:00-06:00</updated>
+<published>2022-02-03T21:19:00-06:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Flood Advisory issued February 03 at 9:19PM CST until February 05 at 12:00AM CST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=AL1263E2141F9C.FloodAdvisory.1263E223CFA0AL.BMXFLSBMX.745c1032799315caeebebf280109cee6"/>
+<summary>...FLOOD ADVISORY IN EFFECT UNTIL 315 AM CST FRIDAY... * WHAT...Urban and small stream flooding caused by excessive rainfall is expected. * WHERE...A portion of central Alabama, including the following counties, Lowndes and Montgomery. * WHEN...Until 315 AM CST.</summary>
+<cap:event>Flood Advisory</cap:event>
+<cap:effective>2022-02-03T21:19:00-06:00</cap:effective>
+<cap:expires>2022-02-05T00:00:00-06:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Lowndes</cap:areaDesc>
+<cap:polygon>31.96,-86.52 31.96,-86.78 32.43,-86.4 32.43,-86.35 32.41,-86.31 32.44,-86.32 32.49,-86.31 32.47,-86.29 32.5,-86.25 32.48,-86.23 32.47,-86.23 32.47,-86.21 32.45,-86.18 32.43,-86.19 32.43,-86.13 32.41,-86.05 32.42,-86.03 32.41,-86.01 32.38,-86.01 31.96,-86.52</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>001085</value>
+<valueName>UGC</valueName>
+<value>ALC085</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.NEW.KBMX.FA.Y.0005.220204T0319Z-220204T0915Z/
+/00000.N.ER.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
+</cap:parameter>
+</entry>
+<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=AL1263E214050C.FloodAdvisory.1263E214B470AL.BMXFLSBMX.b163e0c44d1f759e73397d0129a72118</id>
 <updated>2022-02-03T20:51:00-06:00</updated>
 <published>2022-02-03T20:51:00-06:00</published>
@@ -738,72 +903,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=AL1263E213A940.FloodAdvisory.1263E2148D60AL.BMXFLSBMX.251337cd5a8df137d9b644a4b7cb5e6e</id>
-<updated>2022-02-03T18:16:00-06:00</updated>
-<published>2022-02-03T18:16:00-06:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Flood Advisory issued February 03 at 6:16PM CST until February 04 at 12:00AM CST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=AL1263E213A940.FloodAdvisory.1263E2148D60AL.BMXFLSBMX.251337cd5a8df137d9b644a4b7cb5e6e"/>
-<summary>...FLOOD ADVISORY IN EFFECT UNTIL 930 PM CST THIS EVENING... * WHAT...Urban and small stream flooding caused by excessive rainfall is expected. * WHERE...A portion of central Alabama, including the following counties, Elmore and Montgomery. * WHEN...Until 930 PM CST.</summary>
-<cap:event>Flood Advisory</cap:event>
-<cap:effective>2022-02-03T18:16:00-06:00</cap:effective>
-<cap:expires>2022-02-04T00:00:00-06:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Elmore</cap:areaDesc>
-<cap:polygon>32.27,-86.47 32.3,-86.48 32.58,-86.22 32.58,-85.94 32.46,-85.97 32.44,-85.99 32.45,-85.99 32.43,-86 32.42,-86.02 32.41,-86.01 32.18,-86.22 32.2,-86.41 32.24,-86.41 32.27,-86.47</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>001051</value>
-<valueName>UGC</valueName>
-<value>ALC051</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.NEW.KBMX.FA.Y.0003.220204T0016Z-220204T0330Z/
-/00000.N.ER.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=AL1263E213A940.FloodAdvisory.1263E214B470AL.BMXFLSBMX.44d9049e05d84685f59f9c9ddee01ce9</id>
-<updated>2022-02-03T18:16:00-06:00</updated>
-<published>2022-02-03T18:16:00-06:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Flood Advisory issued February 03 at 6:16PM CST until February 04 at 1:00AM CST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=AL1263E213A940.FloodAdvisory.1263E214B470AL.BMXFLSBMX.44d9049e05d84685f59f9c9ddee01ce9"/>
-<summary>...FLOOD ADVISORY IN EFFECT UNTIL 930 PM CST THIS EVENING... * WHAT...Urban and small stream flooding caused by excessive rainfall is expected. * WHERE...A portion of central Alabama, including the following counties, Elmore and Montgomery. * WHEN...Until 930 PM CST.</summary>
-<cap:event>Flood Advisory</cap:event>
-<cap:effective>2022-02-03T18:16:00-06:00</cap:effective>
-<cap:expires>2022-02-04T01:00:00-06:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Montgomery</cap:areaDesc>
-<cap:polygon>32.27,-86.47 32.3,-86.48 32.58,-86.22 32.58,-85.94 32.46,-85.97 32.44,-85.99 32.45,-85.99 32.43,-86 32.42,-86.02 32.41,-86.01 32.18,-86.22 32.2,-86.41 32.24,-86.41 32.27,-86.47</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>001101</value>
-<valueName>UGC</valueName>
-<value>ALC101</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.NEW.KBMX.FA.Y.0003.220204T0016Z-220204T0330Z/
-/00000.N.ER.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
-</cap:parameter>
-</entry>
-<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=AL1263E207F6B8.FlashFloodWarning.1263E2148D60AL.MOBFFWMOB.9465120751a57e24bb3006b54011ce84</id>
 <updated>2022-02-03T17:50:00-06:00</updated>
 <published>2022-02-03T17:50:00-06:00</published>
@@ -936,105 +1035,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=AL1263E2068EF4.FloodWarning.1263E223CFA0AL.HUNFLSHUN.683408025b9789821d4a7fd970a4f2ce</id>
-<updated>2022-02-03T08:29:00-06:00</updated>
-<published>2022-02-03T08:29:00-06:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Flood Warning issued February 03 at 8:29AM CST until February 05 at 12:00AM CST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=AL1263E2068EF4.FloodWarning.1263E223CFA0AL.HUNFLSHUN.683408025b9789821d4a7fd970a4f2ce"/>
-<summary>...The Flood Warning continues for the following rivers in Alabama... Big Nance Creek at Courtland affecting Lawrence County. ...FLOOD WARNING NOW IN EFFECT FROM FRIDAY EVENING TO EARLY SATURDAY MORNING... * WHAT...Minor flooding is forecast. * WHERE...Big Nance Creek at Courtland.</summary>
-<cap:event>Flood Warning</cap:event>
-<cap:effective>2022-02-03T08:29:00-06:00</cap:effective>
-<cap:expires>2022-02-05T00:00:00-06:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Lawrence</cap:areaDesc>
-<cap:polygon>34.79,-87.42 34.76,-87.33 34.68,-87.25 34.57,-87.28 34.58,-87.41 34.79,-87.42</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>001079</value>
-<valueName>UGC</valueName>
-<value>ALC079</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.EXT.KHUN.FL.W.0008.220205T0000Z-220205T0600Z/
-/BNAA1.1.ER.220205T0000Z.220205T0000Z.220205T0000Z.NO/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=AL1263E2068E2C.FloodWarning.1263E223D964AL.HUNFLSHUN.a4f1736ec917b930e4b642d122c275b0</id>
-<updated>2022-02-03T08:27:00-06:00</updated>
-<published>2022-02-03T08:27:00-06:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Flood Warning issued February 03 at 8:27AM CST until February 05 at 12:25AM CST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=AL1263E2068E2C.FloodWarning.1263E223D964AL.HUNFLSHUN.a4f1736ec917b930e4b642d122c275b0"/>
-<summary>...The Flood Warning continues for the following rivers in Alabama... Flint River at Brownsboro affecting Madison County. ...FLOOD WARNING NOW IN EFFECT FROM LATE TONIGHT TO EARLY SATURDAY MORNING... * WHAT...Minor flooding is forecast. * WHERE...Flint River at Brownsboro.</summary>
-<cap:event>Flood Warning</cap:event>
-<cap:effective>2022-02-03T08:27:00-06:00</cap:effective>
-<cap:expires>2022-02-05T00:25:00-06:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Madison</cap:areaDesc>
-<cap:polygon>34.76,-86.49 34.75,-86.38 34.61,-86.39 34.47,-86.47 34.54,-86.55 34.76,-86.49</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>001089</value>
-<valueName>UGC</valueName>
-<value>ALC089</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.EXT.KHUN.FL.W.0007.220204T0913Z-220205T0625Z/
-/BSBA1.1.ER.220204T0913Z.220204T1800Z.220205T0025Z.NO/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=AL1263E2068E2C.FloodWarning.1263E233B2D0AL.HUNFLSHUN.acd9f7845338f708bb0127ca880c7702</id>
-<updated>2022-02-03T08:27:00-06:00</updated>
-<published>2022-02-03T08:27:00-06:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Flood Warning issued February 03 at 8:27AM CST until February 06 at 4:12AM CST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=AL1263E2068E2C.FloodWarning.1263E233B2D0AL.HUNFLSHUN.acd9f7845338f708bb0127ca880c7702"/>
-<summary>...The Flood Warning continues for the following rivers in Alabama... Paint Rock River near Woodville affecting Madison, Jackson and Marshall Counties. ...FLOOD WARNING NOW IN EFFECT FROM FRIDAY AFTERNOON TO EARLY SUNDAY MORNING... * WHAT...Minor flooding is forecast.</summary>
-<cap:event>Flood Warning</cap:event>
-<cap:effective>2022-02-03T08:27:00-06:00</cap:effective>
-<cap:expires>2022-02-06T04:12:00-06:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Jackson; Madison; Marshall</cap:areaDesc>
-<cap:polygon>34.91,-86.28 34.89,-86.06 34.42,-86.37 34.5,-86.53 34.91,-86.28</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>001071 001089 001095</value>
-<valueName>UGC</valueName>
-<value>ALC071 ALC089 ALC095</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.EXT.KHUN.FL.W.0006.220204T1950Z-220206T1012Z/
-/WDVA1.1.ER.220204T1950Z.220205T1200Z.220206T0412Z.NO/</value>
-</cap:parameter>
-</entry>
-<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=AR1263E2140124.WinterStormWarning.1263E2150290AR.TSAWSWTSA.c6ecb0e59ca844d799307a77dc6b2dbe</id>
 <updated>2022-02-03T20:41:00-06:00</updated>
 <published>2022-02-03T20:41:00-06:00</published>
@@ -1128,71 +1128,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value></value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=AR1263E207F1A4.WinterWeatherAdvisory.1263E2148D60AR.SHVWSWSHV.5ca0c7f5eff65061969bd13a1dd83d27</id>
-<updated>2022-02-03T17:37:00-06:00</updated>
-<published>2022-02-03T17:37:00-06:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Winter Weather Advisory issued February 03 at 5:37PM CST until February 04 at 12:00AM CST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=AR1263E207F1A4.WinterWeatherAdvisory.1263E2148D60AR.SHVWSWSHV.5ca0c7f5eff65061969bd13a1dd83d27"/>
-<summary>...WINTER WEATHER ADVISORY IN EFFECT UNTIL MIDNIGHT CST TONIGHT... ...WINTER STORM WARNING IS CANCELLED... * WHAT...Mixed precipitation. Additional snow accumulations of up to one inch and ice accumulations of less than one tenth of an inch. * WHERE...In Arkansas, Hempstead, Nevada, Columbia and Union</summary>
-<cap:event>Winter Weather Advisory</cap:event>
-<cap:effective>2022-02-03T17:37:00-06:00</cap:effective>
-<cap:expires>2022-02-04T00:00:00-06:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Columbia; Hempstead; Nevada; Union</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>005027 005057 005099 005139</value>
-<valueName>UGC</valueName>
-<value>ARZ060 ARZ061 ARZ072 ARZ073</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CAN.KSHV.WS.W.0002.000000T0000Z-220204T0000Z/
-/O.EXB.KSHV.WW.Y.0003.000000T0000Z-220204T0600Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=AR1263E207F1A4.WinterWeatherAdvisory.1263E2148D60AR.SHVWSWSHV.ffdedafa4be8c1bbb2097ed73e649c85</id>
-<updated>2022-02-03T17:37:00-06:00</updated>
-<published>2022-02-03T17:37:00-06:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Winter Weather Advisory issued February 03 at 5:37PM CST until February 04 at 12:00AM CST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=AR1263E207F1A4.WinterWeatherAdvisory.1263E2148D60AR.SHVWSWSHV.ffdedafa4be8c1bbb2097ed73e649c85"/>
-<summary>...WINTER WEATHER ADVISORY NOW IN EFFECT UNTIL MIDNIGHT CST TONIGHT... * WHAT...Mixed winter precipitation continuing. Light freezing rain mixed with some sleet and light snow will continue across portions of East Texas, Southern Arkansas, and North Louisiana through this evening, as freezing temperatures begin to settle</summary>
-<cap:event>Winter Weather Advisory</cap:event>
-<cap:effective>2022-02-03T17:37:00-06:00</cap:effective>
-<cap:expires>2022-02-04T00:00:00-06:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Lafayette; Miller</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>005073 005091</value>
-<valueName>UGC</valueName>
-<value>ARZ070 ARZ071</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.EXT.KSHV.WW.Y.0003.000000T0000Z-220204T0600Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -2295,31 +2230,64 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=GA1263E213FF94.SpecialWeatherStatement.1263E21423E8GA.FFCSPSFFC.f9e0218e72ae3e5831dcfa2f7c11df6e</id>
-<updated>2022-02-03T21:37:00-05:00</updated>
-<published>2022-02-03T21:37:00-05:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=GA1263E21424B0.FloodWarning.1263E234FAF0GA.FFCFLWFFC.8618b9943fba04067d59906ca6b67d9f</id>
+<updated>2022-02-03T22:32:00-05:00</updated>
+<published>2022-02-03T22:32:00-05:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Special Weather Statement issued February 03 at 9:37PM EST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=GA1263E213FF94.SpecialWeatherStatement.1263E21423E8GA.FFCSPSFFC.f9e0218e72ae3e5831dcfa2f7c11df6e"/>
-<summary>...Heavy rain will impact portions of central Rockdale, DeKalb, southwestern Forsyth, Cobb, Gwinnett, north central Henry, Fulton and northern Clayton Counties through 1030 PM EST... At 936 PM EST, a line of heavy rain showers was along a line extending from near Snellville to near Sandy Creek, and moving east at 25 mph.</summary>
+<title>Flood Warning issued February 03 at 10:32PM EST until February 06 at 1:52PM EST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=GA1263E21424B0.FloodWarning.1263E234FAF0GA.FFCFLWFFC.8618b9943fba04067d59906ca6b67d9f"/>
+<summary>...The National Weather Service in Peachtree City GA has issued a Flood Warning for the following rivers in Georgia... Big Creek near Alpharetta affecting Fulton and Forsyth Counties. For the Big Creek...including Cumming, Alpharetta, Roswell...Minor flooding is forecast. ...FLOOD WARNING IN EFFECT FROM LATE TONIGHT TO EARLY SUNDAY</summary>
+<cap:event>Flood Warning</cap:event>
+<cap:effective>2022-02-03T22:32:00-05:00</cap:effective>
+<cap:expires>2022-02-06T13:52:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Forsyth; Fulton</cap:areaDesc>
+<cap:polygon>34.1,-84.25 34.1,-84.2 34.04,-84.25 34.02,-84.3 34.04,-84.33 34.07,-84.27 34.1,-84.25</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>013117 013121</value>
+<valueName>UGC</valueName>
+<value>GAC117 GAC121</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.NEW.KFFC.FL.W.0012.220204T0900Z-220206T1852Z/
+/APHG1.1.ER.220204T0900Z.220205T1200Z.220206T1251Z.NO/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=GA1263E214244C.SpecialWeatherStatement.1263E2144AF8GA.FFCSPSFFC.d12a459587a789206463e3a182b37934</id>
+<updated>2022-02-03T22:31:00-05:00</updated>
+<published>2022-02-03T22:31:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Special Weather Statement issued February 03 at 10:31PM EST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=GA1263E214244C.SpecialWeatherStatement.1263E2144AF8GA.FFCSPSFFC.d12a459587a789206463e3a182b37934"/>
+<summary>...Heavy rain will impact portions of Muscogee County through 1130 PM EST... At 1030 PM EST, a line of heavy rain showers was along a line extending from near Talbotton to Phenix City, and moving northeast at 45 mph. HAZARD...Heavy rain.</summary>
 <cap:event>Special Weather Statement</cap:event>
-<cap:effective>2022-02-03T21:37:00-05:00</cap:effective>
-<cap:expires>2022-02-03T22:30:00-05:00</cap:expires>
+<cap:effective>2022-02-03T22:31:00-05:00</cap:effective>
+<cap:expires>2022-02-03T23:30:00-05:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
 <cap:category>Met</cap:category>
 <cap:urgency>Expected</cap:urgency>
 <cap:severity>Minor</cap:severity>
 <cap:certainty>Observed</cap:certainty>
-<cap:areaDesc>Clayton; Cobb; DeKalb; Forsyth; Gwinnett; Henry; North Fulton; Rockdale; South Fulton</cap:areaDesc>
-<cap:polygon>34.08,-84.61 34.07,-84.42 34.11,-84.42 34.13,-84.36 34.18,-84.35 34.19,-84.33 34.19,-84.26 34.14,-84.26 34.05,-84.12 34,-83.87 33.79,-83.98 33.58,-84.14 33.56,-84.45 33.6,-84.54 33.73,-84.59 33.75,-84.58 33.8,-84.62 33.81,-84.72 33.95,-84.72 33.96,-84.74 34.08,-84.61</cap:polygon>
+<cap:areaDesc>Muscogee</cap:areaDesc>
+<cap:polygon>32.61,-84.91 32.58,-84.91 32.58,-84.7 32.56,-84.69 32.56,-84.67 32.52,-84.69 32.51,-84.73 32.42,-84.77 32.41,-84.88 32.37,-84.96 32.38,-84.99 32.39,-84.97 32.41,-84.98 32.43,-84.96 32.44,-84.97 32.45,-85 32.52,-85 32.58,-85.07 32.61,-85.08 32.61,-84.91</cap:polygon>
 <cap:geocode>
 <valueName>FIPS6</valueName>
-<value>013063 013067 013089 013117 013121 013135 013151 013247</value>
+<value>013215</value>
 <valueName>UGC</valueName>
-<value>GAZ022 GAZ032 GAZ033 GAZ034 GAZ044 GAZ045 GAZ046 GAZ055 GAZ057</value>
+<value>GAZ089</value>
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
@@ -2327,18 +2295,18 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=GA1263E213FBAC.FloodAdvisory.1263E215C5E0GA.GSPFLSGSP.c4a2f0ed15ee17ae8210a97c05e956be</id>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=GA1263E213FBAC.FloodAdvisory.1263E234FAF0GA.GSPFLSGSP.c4a2f0ed15ee17ae8210a97c05e956be</id>
 <updated>2022-02-03T21:27:00-05:00</updated>
 <published>2022-02-03T21:27:00-05:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Flood Advisory issued February 03 at 9:27PM EST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=GA1263E213FBAC.FloodAdvisory.1263E215C5E0GA.GSPFLSGSP.c4a2f0ed15ee17ae8210a97c05e956be"/>
+<title>Flood Advisory issued February 03 at 9:27PM EST until February 06 at 1:52PM EST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=GA1263E213FBAC.FloodAdvisory.1263E234FAF0GA.GSPFLSGSP.c4a2f0ed15ee17ae8210a97c05e956be"/>
 <summary>...FLOOD ADVISORY IN EFFECT UNTIL 9 AM EST FRIDAY... * WHAT...Flooding caused by excessive rainfall is expected. * WHERE...A portion of northeast Georgia, including the following counties, Habersham and Rabun. * WHEN...Until 900 AM EST Friday. * IMPACTS...Nuisance to Minor flooding of common, flood-prone areas</summary>
 <cap:event>Flood Advisory</cap:event>
 <cap:effective>2022-02-03T21:27:00-05:00</cap:effective>
-<cap:expires>2022-02-04T09:00:00-05:00</cap:expires>
+<cap:expires>2022-02-06T13:52:00-05:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
 <cap:category>Met</cap:category>
@@ -2360,18 +2328,18 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=GA1263E207EDBC.FloodWatch.1263E215C5E0GA.GSPFFAGSP.bf6f40356adbbf966830d5e8179d7014</id>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=GA1263E207EDBC.FloodWatch.1263E234FAF0GA.GSPFFAGSP.bf6f40356adbbf966830d5e8179d7014</id>
 <updated>2022-02-03T18:27:00-05:00</updated>
 <published>2022-02-03T18:27:00-05:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Flood Watch issued February 03 at 6:27PM EST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=GA1263E207EDBC.FloodWatch.1263E215C5E0GA.GSPFFAGSP.bf6f40356adbbf966830d5e8179d7014"/>
+<title>Flood Watch issued February 03 at 6:27PM EST until February 06 at 1:52PM EST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=GA1263E207EDBC.FloodWatch.1263E234FAF0GA.GSPFFAGSP.bf6f40356adbbf966830d5e8179d7014"/>
 <summary>...FLOOD WATCH REMAINS IN EFFECT THROUGH FRIDAY AFTERNOON... * WHAT...Flooding caused by excessive rainfall continues to be possible. * WHERE...Portions of northeast Georgia, western North Carolina and upstate South Carolina, including the following areas, in northeast Georgia, Habersham and Rabun. In western North Carolina,</summary>
 <cap:event>Flood Watch</cap:event>
 <cap:effective>2022-02-03T18:27:00-05:00</cap:effective>
-<cap:expires>2022-02-04T09:00:00-05:00</cap:expires>
+<cap:expires>2022-02-06T13:52:00-05:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
 <cap:category>Met</cap:category>
@@ -2425,105 +2393,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=GA1263E2074BA0.FloodWatch.1263E21423E8GA.FFCFFAFFC.b01fe2cb93a7445943df847a81bb196b</id>
-<updated>2022-02-03T14:12:00-05:00</updated>
-<published>2022-02-03T14:12:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Flood Watch issued February 03 at 2:12PM EST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=GA1263E2074BA0.FloodWatch.1263E21423E8GA.FFCFFAFFC.b01fe2cb93a7445943df847a81bb196b"/>
-<summary>...FLOOD WATCH REMAINS IN EFFECT THROUGH FRIDAY AFTERNOON... * WHAT...Flash flooding caused by excessive rainfall continues to be possible. * WHERE...Portions of north central Georgia, northeast Georgia and northwest Georgia, including the following counties, in north central Georgia, Cherokee, Dawson, Fannin, Forsyth, Gilmer, Hall,</summary>
-<cap:event>Flood Watch</cap:event>
-<cap:effective>2022-02-03T14:12:00-05:00</cap:effective>
-<cap:expires>2022-02-03T22:30:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Future</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Possible</cap:certainty>
-<cap:areaDesc>Banks; Hall; Paulding; Polk</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>013011 013139 013223 013233</value>
-<valueName>UGC</valueName>
-<value>GAZ023 GAZ024 GAZ030 GAZ031</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KFFC.FA.A.0002.000000T0000Z-220204T1800Z/
-/00000.0.ER.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=GA1263E2074BA0.FloodWatch.1263E21423E8GA.FFCFFAFFC.4d881fae080a98aaded3b8b9bc661bdc</id>
-<updated>2022-02-03T14:12:00-05:00</updated>
-<published>2022-02-03T14:12:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Flood Watch issued February 03 at 2:12PM EST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=GA1263E2074BA0.FloodWatch.1263E21423E8GA.FFCFFAFFC.4d881fae080a98aaded3b8b9bc661bdc"/>
-<summary>...FLOOD WATCH IN EFFECT THROUGH FRIDAY AFTERNOON... * WHAT...Flash flooding caused by excessive rainfall is possible. * WHERE...Portions of north central Georgia, northwest Georgia and west central Georgia, including the following areas, in north central Georgia, Clayton, Cobb, DeKalb, Douglas, Fayette, Gwinnett, North Fulton and South Fulton. In northwest Georgia,</summary>
-<cap:event>Flood Watch</cap:event>
-<cap:effective>2022-02-03T14:12:00-05:00</cap:effective>
-<cap:expires>2022-02-03T22:30:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Future</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Possible</cap:certainty>
-<cap:areaDesc>Clayton; Cobb; Coweta; DeKalb; Fayette; Gwinnett; Heard; North Fulton</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>013063 013067 013077 013089 013113 013121 013135 013149</value>
-<valueName>UGC</valueName>
-<value>GAZ032 GAZ033 GAZ034 GAZ045 GAZ052 GAZ053 GAZ054 GAZ055</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.EXA.KFFC.FA.A.0002.000000T0000Z-220204T1800Z/
-/00000.0.ER.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=GA1263E2074BA0.FloodWatch.1263E215C5E0GA.FFCFFAFFC.f19ce7c4e951917db0cc715fe0d78764</id>
-<updated>2022-02-03T14:12:00-05:00</updated>
-<published>2022-02-03T14:12:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Flood Watch issued February 03 at 2:12PM EST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=GA1263E2074BA0.FloodWatch.1263E215C5E0GA.FFCFFAFFC.f19ce7c4e951917db0cc715fe0d78764"/>
-<summary>...FLOOD WATCH REMAINS IN EFFECT THROUGH FRIDAY AFTERNOON... * WHAT...Flash flooding caused by excessive rainfall continues to be possible. * WHERE...Portions of north central Georgia, northeast Georgia and northwest Georgia, including the following counties, in north central Georgia, Cherokee, Dawson, Fannin, Forsyth, Gilmer, Hall,</summary>
-<cap:event>Flood Watch</cap:event>
-<cap:effective>2022-02-03T14:12:00-05:00</cap:effective>
-<cap:expires>2022-02-04T09:00:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Future</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Possible</cap:certainty>
-<cap:areaDesc>Bartow; Catoosa; Chattooga; Cherokee; Dade; Dawson; Fannin; Floyd; Forsyth; Gilmer; Gordon; Lumpkin; Murray; Pickens; Towns; Union; Walker; White; Whitfield</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>013015 013047 013055 013057 013083 013085 013111 013115 013117 013123 013129 013187 013213 013227 013281 013291 013295 013311 013313</value>
-<valueName>UGC</valueName>
-<value>GAZ001 GAZ002 GAZ003 GAZ004 GAZ005 GAZ006 GAZ007 GAZ008 GAZ009 GAZ011 GAZ012 GAZ013 GAZ014 GAZ015 GAZ016 GAZ019 GAZ020 GAZ021 GAZ022</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KFFC.FA.A.0002.000000T0000Z-220204T1800Z/
-/00000.0.ER.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
-</cap:parameter>
-</entry>
-<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=GA1263E2074BA0.FloodWatch.1263E215ECF0GA.FFCFFAFFC.97630c0379f0b69bd66196a44e17ee50</id>
 <updated>2022-02-03T14:12:00-05:00</updated>
 <published>2022-02-03T14:12:00-05:00</published>
@@ -2557,14 +2426,14 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=GA1263E2074BA0.FloodWatch.1263E215ECF0GA.FFCFFAFFC.0318337f79f6c51cb1ceaa64d3a47970</id>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=GA1263E2074BA0.FloodWatch.1263E215ECF0GA.FFCFFAFFC.795c9cae61857c4cfae12512d025ee97</id>
 <updated>2022-02-03T14:12:00-05:00</updated>
 <published>2022-02-03T14:12:00-05:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
 <title>Flood Watch issued February 03 at 2:12PM EST until February 04 at 10:00AM EST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=GA1263E2074BA0.FloodWatch.1263E215ECF0GA.FFCFFAFFC.0318337f79f6c51cb1ceaa64d3a47970"/>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=GA1263E2074BA0.FloodWatch.1263E215ECF0GA.FFCFFAFFC.795c9cae61857c4cfae12512d025ee97"/>
 <summary>...FLOOD WATCH IN EFFECT THROUGH FRIDAY AFTERNOON... * WHAT...Flash flooding caused by excessive rainfall is possible. * WHERE...Portions of north central Georgia, northwest Georgia and west central Georgia, including the following areas, in north central Georgia, Clayton, Cobb, DeKalb, Douglas, Fayette, Gwinnett, North Fulton and South Fulton. In northwest Georgia,</summary>
 <cap:event>Flood Watch</cap:event>
 <cap:effective>2022-02-03T14:12:00-05:00</cap:effective>
@@ -2575,13 +2444,79 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:urgency>Future</cap:urgency>
 <cap:severity>Moderate</cap:severity>
 <cap:certainty>Possible</cap:certainty>
-<cap:areaDesc>Carroll; Douglas; Meriwether; South Fulton; Troup</cap:areaDesc>
+<cap:areaDesc>Carroll; Clayton; Coweta; DeKalb; Douglas; Fayette; Heard; Meriwether; South Fulton; Troup</cap:areaDesc>
 <cap:polygon></cap:polygon>
 <cap:geocode>
 <valueName>FIPS6</valueName>
-<value>013045 013097 013121 013199 013285</value>
+<value>013045 013063 013077 013089 013097 013113 013121 013149 013199 013285</value>
 <valueName>UGC</valueName>
-<value>GAZ042 GAZ043 GAZ044 GAZ066 GAZ067</value>
+<value>GAZ042 GAZ043 GAZ044 GAZ045 GAZ052 GAZ053 GAZ054 GAZ055 GAZ066 GAZ067</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.EXA.KFFC.FA.A.0002.000000T0000Z-220204T1800Z/
+/00000.0.ER.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=GA1263E2074BA0.FloodWatch.1263E234FAF0GA.FFCFFAFFC.3dc433c15bf747bc727dc94c31dd1bcf</id>
+<updated>2022-02-03T14:12:00-05:00</updated>
+<published>2022-02-03T14:12:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Flood Watch issued February 03 at 2:12PM EST until February 06 at 1:52PM EST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=GA1263E2074BA0.FloodWatch.1263E234FAF0GA.FFCFFAFFC.3dc433c15bf747bc727dc94c31dd1bcf"/>
+<summary>...FLOOD WATCH REMAINS IN EFFECT THROUGH FRIDAY AFTERNOON... * WHAT...Flash flooding caused by excessive rainfall continues to be possible. * WHERE...Portions of north central Georgia, northeast Georgia and northwest Georgia, including the following counties, in north central Georgia, Cherokee, Dawson, Fannin, Forsyth, Gilmer, Hall,</summary>
+<cap:event>Flood Watch</cap:event>
+<cap:effective>2022-02-03T14:12:00-05:00</cap:effective>
+<cap:expires>2022-02-06T13:52:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Future</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Possible</cap:certainty>
+<cap:areaDesc>Banks; Bartow; Catoosa; Chattooga; Cherokee; Dade; Dawson; Fannin; Floyd; Forsyth; Gilmer; Gordon; Hall; Lumpkin; Murray; Paulding; Pickens; Polk; Towns; Union; Walker; White; Whitfield</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>013011 013015 013047 013055 013057 013083 013085 013111 013115 013117 013123 013129 013139 013187 013213 013223 013227 013233 013281 013291 013295 013311 013313</value>
+<valueName>UGC</valueName>
+<value>GAZ001 GAZ002 GAZ003 GAZ004 GAZ005 GAZ006 GAZ007 GAZ008 GAZ009 GAZ011 GAZ012 GAZ013 GAZ014 GAZ015 GAZ016 GAZ019 GAZ020 GAZ021 GAZ022 GAZ023 GAZ024 GAZ030 GAZ031</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KFFC.FA.A.0002.000000T0000Z-220204T1800Z/
+/00000.0.ER.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=GA1263E2074BA0.FloodWatch.1263E234FAF0GA.FFCFFAFFC.7791f1851b82f0b80c961e5bfbb9ec73</id>
+<updated>2022-02-03T14:12:00-05:00</updated>
+<published>2022-02-03T14:12:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Flood Watch issued February 03 at 2:12PM EST until February 06 at 1:52PM EST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=GA1263E2074BA0.FloodWatch.1263E234FAF0GA.FFCFFAFFC.7791f1851b82f0b80c961e5bfbb9ec73"/>
+<summary>...FLOOD WATCH IN EFFECT THROUGH FRIDAY AFTERNOON... * WHAT...Flash flooding caused by excessive rainfall is possible. * WHERE...Portions of north central Georgia, northwest Georgia and west central Georgia, including the following areas, in north central Georgia, Clayton, Cobb, DeKalb, Douglas, Fayette, Gwinnett, North Fulton and South Fulton. In northwest Georgia,</summary>
+<cap:event>Flood Watch</cap:event>
+<cap:effective>2022-02-03T14:12:00-05:00</cap:effective>
+<cap:expires>2022-02-06T13:52:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Future</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Possible</cap:certainty>
+<cap:areaDesc>Cobb; Gwinnett; North Fulton</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>013067 013121 013135</value>
+<valueName>UGC</valueName>
+<value>GAZ032 GAZ033 GAZ034</value>
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
@@ -2683,6 +2618,38 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value>/O.CON.KDMX.WC.Y.0015.000000T0000Z-220204T1300Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=IL1263E2142064.WinterWeatherAdvisory.1263E2150290IL.LOTWSWLOT.5d21616a12320c7024081e58eb0038bb</id>
+<updated>2022-02-03T21:21:00-06:00</updated>
+<published>2022-02-03T21:21:00-06:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Winter Weather Advisory issued February 03 at 9:21PM CST until February 04 at 3:00AM CST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=IL1263E2142064.WinterWeatherAdvisory.1263E2150290IL.LOTWSWLOT.5d21616a12320c7024081e58eb0038bb"/>
+<summary>...WINTER WEATHER ADVISORY REMAINS IN EFFECT UNTIL 3 AM CST /4 AM EST/ FRIDAY... * WHAT...Blowing and drifting snow resulting in snow covered roads. * WHERE...In Indiana, Benton, Jasper, and Newton Counties. In Illinois, Ford, Iroquois, and Livingston Counties.</summary>
+<cap:event>Winter Weather Advisory</cap:event>
+<cap:effective>2022-02-03T21:21:00-06:00</cap:effective>
+<cap:expires>2022-02-04T03:00:00-06:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Ford; Iroquois; Livingston</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>017053 017075 017105</value>
+<valueName>UGC</valueName>
+<value>ILZ032 ILZ033 ILZ039</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KLOT.WW.Y.0008.000000T0000Z-220204T0900Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -2846,68 +2813,35 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=IL1263E207F8AC.WinterWeatherAdvisory.1263E2150290IL.LOTWSWLOT.fa84dc5e11596b542766b4788aff8e91</id>
-<updated>2022-02-03T17:55:00-06:00</updated>
-<published>2022-02-03T17:55:00-06:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=IN1263E2142064.WinterWeatherAdvisory.1263E2150290IN.LOTWSWLOT.66d327cdf3cf3c02b3d38a8638753719</id>
+<updated>2022-02-03T22:21:00-05:00</updated>
+<published>2022-02-03T22:21:00-05:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Winter Weather Advisory issued February 03 at 5:55PM CST until February 04 at 3:00AM CST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=IL1263E207F8AC.WinterWeatherAdvisory.1263E2150290IL.LOTWSWLOT.fa84dc5e11596b542766b4788aff8e91"/>
-<summary>...WINTER WEATHER ADVISORY NOW IN EFFECT UNTIL 3 AM CST FRIDAY... * WHAT...Blowing and drifting snow resulting in snow covered roads. * WHERE...Livingston County. * WHEN...Until 3 AM CST Friday. * IMPACTS...Plan on snow covered and slippery road conditions</summary>
+<title>Winter Weather Advisory issued February 03 at 10:21PM EST until February 04 at 4:00AM EST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=IN1263E2142064.WinterWeatherAdvisory.1263E2150290IN.LOTWSWLOT.66d327cdf3cf3c02b3d38a8638753719"/>
+<summary>...WINTER WEATHER ADVISORY REMAINS IN EFFECT UNTIL 3 AM CST /4 AM EST/ FRIDAY... * WHAT...Blowing and drifting snow resulting in snow covered roads. * WHERE...In Indiana, Benton, Jasper, and Newton Counties. In Illinois, Ford, Iroquois, and Livingston Counties.</summary>
 <cap:event>Winter Weather Advisory</cap:event>
-<cap:effective>2022-02-03T17:55:00-06:00</cap:effective>
-<cap:expires>2022-02-04T03:00:00-06:00</cap:expires>
+<cap:effective>2022-02-03T22:21:00-05:00</cap:effective>
+<cap:expires>2022-02-04T04:00:00-05:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
 <cap:category>Met</cap:category>
 <cap:urgency>Expected</cap:urgency>
 <cap:severity>Minor</cap:severity>
 <cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Livingston</cap:areaDesc>
+<cap:areaDesc>Benton; Jasper; Newton</cap:areaDesc>
 <cap:polygon></cap:polygon>
 <cap:geocode>
 <valueName>FIPS6</valueName>
-<value>017105</value>
+<value>018007 018073 018111</value>
 <valueName>UGC</valueName>
-<value>ILZ032</value>
+<value>INZ010 INZ011 INZ019</value>
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
-<value>/O.COR.KLOT.WW.Y.0008.000000T0000Z-220204T0900Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=IL1263E207F8AC.WinterWeatherAdvisory.1263E2150290IL.LOTWSWLOT.0e6614d33807e29d30fc030f029668ae</id>
-<updated>2022-02-03T17:55:00-06:00</updated>
-<published>2022-02-03T17:55:00-06:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Winter Weather Advisory issued February 03 at 5:55PM CST until February 04 at 3:00AM CST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=IL1263E207F8AC.WinterWeatherAdvisory.1263E2150290IL.LOTWSWLOT.0e6614d33807e29d30fc030f029668ae"/>
-<summary>...WINTER WEATHER ADVISORY IN EFFECT UNTIL 3 AM CST /4 AM EST/ FRIDAY... ...WINTER STORM WARNING WILL EXPIRE AT 6 PM CST /7 PM EST/ THIS EVENING... * WHAT...Blowing and drifting snow resulting in snow covered roads.</summary>
-<cap:event>Winter Weather Advisory</cap:event>
-<cap:effective>2022-02-03T17:55:00-06:00</cap:effective>
-<cap:expires>2022-02-04T03:00:00-06:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Ford; Iroquois</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>017053 017075</value>
-<valueName>UGC</valueName>
-<value>ILZ033 ILZ039</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.EXP.KLOT.WS.W.0003.000000T0000Z-220204T0000Z/
-/O.COR.KLOT.WW.Y.0008.220204T0000Z-220204T0900Z/</value>
+<value>/O.CON.KLOT.WW.Y.0008.000000T0000Z-220204T0900Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -3068,39 +3002,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value>/O.CON.KILN.WS.W.0003.000000T0000Z-220204T1200Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=IN1263E207F8AC.WinterWeatherAdvisory.1263E2150290IN.LOTWSWLOT.66d327cdf3cf3c02b3d38a8638753719</id>
-<updated>2022-02-03T18:55:00-05:00</updated>
-<published>2022-02-03T18:55:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Winter Weather Advisory issued February 03 at 6:55PM EST until February 04 at 4:00AM EST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=IN1263E207F8AC.WinterWeatherAdvisory.1263E2150290IN.LOTWSWLOT.66d327cdf3cf3c02b3d38a8638753719"/>
-<summary>...WINTER WEATHER ADVISORY IN EFFECT UNTIL 3 AM CST /4 AM EST/ FRIDAY... ...WINTER STORM WARNING WILL EXPIRE AT 6 PM CST /7 PM EST/ THIS EVENING... * WHAT...Blowing and drifting snow resulting in snow covered roads.</summary>
-<cap:event>Winter Weather Advisory</cap:event>
-<cap:effective>2022-02-03T18:55:00-05:00</cap:effective>
-<cap:expires>2022-02-04T04:00:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Benton; Jasper; Newton</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>018007 018073 018111</value>
-<valueName>UGC</valueName>
-<value>INZ010 INZ011 INZ019</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.EXP.KLOT.WS.W.0003.000000T0000Z-220204T0000Z/
-/O.COR.KLOT.WW.Y.0008.220204T0000Z-220204T0900Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -3293,6 +3194,233 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value>/O.NEW.KGLD.WC.Y.0003.220204T0100Z-220204T1500Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=KY1263E21422BC.IceStormWarning.1263E215ECF0KY.JKLWSWJKL.91c8760dabba5beefc5375439cd00f50</id>
+<updated>2022-02-03T22:27:00-05:00</updated>
+<published>2022-02-03T22:27:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Ice Storm Warning issued February 03 at 10:27PM EST until February 04 at 10:00AM EST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=KY1263E21422BC.IceStormWarning.1263E215ECF0KY.JKLWSWJKL.91c8760dabba5beefc5375439cd00f50"/>
+<summary>...ICE STORM WARNING REMAINS IN EFFECT UNTIL 10 AM EST FRIDAY... * WHAT...Significant icing. Ice accumulations of around one quarter of an inch. Elevated surfaces and ridges are expected to see the highest amounts of ice while valleys will see the lightest ice accumulations. Snow accumulations of up to one inch.</summary>
+<cap:event>Ice Storm Warning</cap:event>
+<cap:effective>2022-02-03T22:27:00-05:00</cap:effective>
+<cap:expires>2022-02-04T10:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Bath; Fleming; Montgomery; Rowan</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>021011 021069 021173 021175 021205</value>
+<valueName>UGC</valueName>
+<value>KYZ044 KYZ050 KYZ051 KYZ052</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KJKL.IS.W.0001.000000T0000Z-220204T1500Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=KY1263E21422BC.WinterStormWarning.1263E215ECF0KY.JKLWSWJKL.1f8d25381bb0e4580f5f79067e48d4c1</id>
+<updated>2022-02-03T22:27:00-05:00</updated>
+<published>2022-02-03T22:27:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Winter Storm Warning issued February 03 at 10:27PM EST until February 04 at 10:00AM EST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=KY1263E21422BC.WinterStormWarning.1263E215ECF0KY.JKLWSWJKL.1f8d25381bb0e4580f5f79067e48d4c1"/>
+<summary>...WINTER STORM WARNING REMAINS IN EFFECT UNTIL 10 AM EST FRIDAY... * WHAT...Heavy mixed precipitation. Ice accumulations up to a quarter of an inch. Elevated surfaces and ridges are expected to see the highest amounts of ice while valleys will see the lightest ice accumulations. Snow accumulations of up to one</summary>
+<cap:event>Winter Storm Warning</cap:event>
+<cap:effective>2022-02-03T22:27:00-05:00</cap:effective>
+<cap:expires>2022-02-04T10:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Elliott; Estill; Jackson; Lee; Menifee; Morgan; Powell; Rockcastle; Wolfe</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>021063 021065 021109 021129 021165 021175 021197 021203 021237</value>
+<valueName>UGC</valueName>
+<value>KYZ058 KYZ059 KYZ060 KYZ068 KYZ069 KYZ104 KYZ106 KYZ108 KYZ111</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KJKL.WS.W.0004.000000T0000Z-220204T1500Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=KY1263E21422BC.WinterStormWarning.1263E215ECF0KY.JKLWSWJKL.46af0475287fbb75c608d0f5e40d7405</id>
+<updated>2022-02-03T22:27:00-05:00</updated>
+<published>2022-02-03T22:27:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Winter Storm Warning issued February 03 at 10:27PM EST until February 04 at 10:00AM EST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=KY1263E21422BC.WinterStormWarning.1263E215ECF0KY.JKLWSWJKL.46af0475287fbb75c608d0f5e40d7405"/>
+<summary>...WINTER STORM WARNING REMAINS IN EFFECT UNTIL 10 AM EST FRIDAY... * WHAT...Heavy mixed precipitation. Ice accumulations up to a quarter of an inch. Elevated surfaces and ridges are expected to see the highest amounts of ice while valleys will see the lightest ice accumulations. Snow accumulations of up to one</summary>
+<cap:event>Winter Storm Warning</cap:event>
+<cap:effective>2022-02-03T22:27:00-05:00</cap:effective>
+<cap:expires>2022-02-04T10:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Breathitt; Johnson; Laurel; Magoffin; Owsley; Pulaski</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>021025 021115 021125 021153 021189 021199</value>
+<valueName>UGC</valueName>
+<value>KYZ079 KYZ080 KYZ107 KYZ109 KYZ112 KYZ114</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KJKL.WS.W.0004.000000T0000Z-220204T1500Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=KY1263E21422BC.WinterWeatherAdvisory.1263E216B040KY.JKLWSWJKL.ad4f265ba3e3709d0dc7f64f0a3e0caf</id>
+<updated>2022-02-03T22:27:00-05:00</updated>
+<published>2022-02-03T22:27:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Winter Weather Advisory issued February 03 at 10:27PM EST until February 04 at 3:00PM EST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=KY1263E21422BC.WinterWeatherAdvisory.1263E216B040KY.JKLWSWJKL.ad4f265ba3e3709d0dc7f64f0a3e0caf"/>
+<summary>...WINTER WEATHER ADVISORY REMAINS IN EFFECT UNTIL 3 PM EST FRIDAY... * WHAT...Freezing rain expected. Total ice accumulations of up to two tenths of an inch. * WHERE...Portions of northeast, south central and southeast Kentucky.</summary>
+<cap:event>Winter Weather Advisory</cap:event>
+<cap:effective>2022-02-03T22:27:00-05:00</cap:effective>
+<cap:expires>2022-02-04T15:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Bell; Clay; Floyd; Harlan; Knott; Knox; Leslie; Letcher; Martin; McCreary; Perry; Pike; Wayne; Whitley</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>021013 021051 021071 021095 021119 021121 021131 021133 021147 021159 021189 021193 021195 021231 021235</value>
+<valueName>UGC</valueName>
+<value>KYZ083 KYZ084 KYZ085 KYZ086 KYZ087 KYZ088 KYZ110 KYZ113 KYZ115 KYZ116 KYZ117 KYZ118 KYZ119 KYZ120</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KJKL.WW.Y.0007.220204T0600Z-220204T2000Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=KY1263E2141E0C.FloodWarning.1263E2241DC0KY.RLXFLWRLX.9ecb9452c0077bb866d5b1fd2627c494</id>
+<updated>2022-02-03T22:15:00-05:00</updated>
+<published>2022-02-03T22:15:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Flood Warning issued February 03 at 10:15PM EST until February 05 at 3:00AM EST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=KY1263E2141E0C.FloodWarning.1263E2241DC0KY.RLXFLWRLX.9ecb9452c0077bb866d5b1fd2627c494"/>
+<summary>...FLOOD WARNING IN EFFECT UNTIL 4 AM EST FRIDAY... * WHAT...Small stream flooding caused by excessive rainfall is expected. * WHERE...Portions of northeast Kentucky and West Virginia, including the following counties, in northeast Kentucky, Boyd, Carter and Lawrence. In West Virginia, Cabell, Jackson, Kanawha,</summary>
+<cap:event>Flood Warning</cap:event>
+<cap:effective>2022-02-03T22:15:00-05:00</cap:effective>
+<cap:expires>2022-02-05T03:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Boyd; Carter</cap:areaDesc>
+<cap:polygon>38.24,-83.14 38.32,-82.76 38.42,-82.59 38.44,-82.33 38.48,-82.27 38.8,-82.01 38.93,-81.69 38.59,-81.52 38.13,-82.13 37.9,-82.47 37.96,-82.53 37.95,-82.58 37.88,-82.61 38,-82.94 37.96,-82.99 37.98,-83.02 38.11,-82.89 38.16,-82.91 38.2,-83.01 38.18,-83.05 38.24,-83.14</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>021019 021043</value>
+<valueName>UGC</valueName>
+<value>KYC019 KYC043</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.NEW.KRLX.FA.W.0024.220204T0315Z-220204T0900Z/
+/00000.0.ER.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=KY1263E2141E0C.FloodWarning.1263E225A460KY.RLXFLWRLX.b1b2de7fde30e42e874f8a0d75efbca7</id>
+<updated>2022-02-03T22:15:00-05:00</updated>
+<published>2022-02-03T22:15:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Flood Warning issued February 03 at 10:15PM EST until February 05 at 1:00PM EST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=KY1263E2141E0C.FloodWarning.1263E225A460KY.RLXFLWRLX.b1b2de7fde30e42e874f8a0d75efbca7"/>
+<summary>...FLOOD WARNING IN EFFECT UNTIL 4 AM EST FRIDAY... * WHAT...Small stream flooding caused by excessive rainfall is expected. * WHERE...Portions of northeast Kentucky and West Virginia, including the following counties, in northeast Kentucky, Boyd, Carter and Lawrence. In West Virginia, Cabell, Jackson, Kanawha,</summary>
+<cap:event>Flood Warning</cap:event>
+<cap:effective>2022-02-03T22:15:00-05:00</cap:effective>
+<cap:expires>2022-02-05T13:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Lawrence</cap:areaDesc>
+<cap:polygon>38.24,-83.14 38.32,-82.76 38.42,-82.59 38.44,-82.33 38.48,-82.27 38.8,-82.01 38.93,-81.69 38.59,-81.52 38.13,-82.13 37.9,-82.47 37.96,-82.53 37.95,-82.58 37.88,-82.61 38,-82.94 37.96,-82.99 37.98,-83.02 38.11,-82.89 38.16,-82.91 38.2,-83.01 38.18,-83.05 38.24,-83.14</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>021127</value>
+<valueName>UGC</valueName>
+<value>KYC127</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.NEW.KRLX.FA.W.0024.220204T0315Z-220204T0900Z/
+/00000.0.ER.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=KY1263E2141DA8.FloodWarning.1263E2241DC0KY.LMKFLSLMK.059a079acdcf6e9f4860a7fb2ce2878f</id>
+<updated>2022-02-03T22:14:00-05:00</updated>
+<published>2022-02-03T22:14:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Flood Warning issued February 03 at 10:14PM EST until February 05 at 3:00AM EST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=KY1263E2141DA8.FloodWarning.1263E2241DC0KY.LMKFLSLMK.059a079acdcf6e9f4860a7fb2ce2878f"/>
+<summary>...The Flood Warning continues for the following rivers in Kentucky... Stoner Creek at Paris affecting Bourbon County. .Steady rains from Thursday will continue to cause the river to rise. ...FLOOD WARNING REMAINS IN EFFECT UNTIL EARLY SATURDAY MORNING... * WHAT...Minor flooding is occurring and minor flooding is forecast.</summary>
+<cap:event>Flood Warning</cap:event>
+<cap:effective>2022-02-03T22:14:00-05:00</cap:effective>
+<cap:expires>2022-02-05T03:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Bourbon</cap:areaDesc>
+<cap:polygon>38.04,-84.13 38.16,-84.25 38.29,-84.33 38.35,-84.22 38.23,-84.14 38.11,-84.01 38.04,-84.13</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>021017</value>
+<valueName>UGC</valueName>
+<value>KYC017</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KLMK.FL.W.0020.000000T0000Z-220205T0800Z/
+/PRSK2.1.ER.220203T2345Z.220204T0700Z.220205T0200Z.NO/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -4344,165 +4472,68 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=KY1263E207850C.FloodWarning.1263E2241DC0KY.LMKFLWLMK.059a079acdcf6e9f4860a7fb2ce2878f</id>
-<updated>2022-02-03T15:59:00-05:00</updated>
-<published>2022-02-03T15:59:00-05:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=LA1263E21424B0.WinterWeatherAdvisory.1263E2148D60LA.SHVWSWSHV.b3bd5a29efb08e6bdb4e2ca30418bf34</id>
+<updated>2022-02-03T21:32:00-06:00</updated>
+<published>2022-02-03T21:32:00-06:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Flood Warning issued February 03 at 3:59PM EST until February 05 at 3:00AM EST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=KY1263E207850C.FloodWarning.1263E2241DC0KY.LMKFLWLMK.059a079acdcf6e9f4860a7fb2ce2878f"/>
-<summary>...The National Weather Service in Louisville KY has issued a Flood Warning for the following rivers in Kentucky... Stoner Creek at Paris affecting Bourbon County. .Steady light to moderate rainfall today will cause the river to rise. ...FLOOD WARNING IN EFFECT FROM THIS EVENING TO EARLY SATURDAY</summary>
-<cap:event>Flood Warning</cap:event>
-<cap:effective>2022-02-03T15:59:00-05:00</cap:effective>
-<cap:expires>2022-02-05T03:00:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Bourbon</cap:areaDesc>
-<cap:polygon>38.04,-84.13 38.16,-84.25 38.29,-84.33 38.35,-84.22 38.23,-84.14 38.11,-84.01 38.04,-84.13</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>021017</value>
-<valueName>UGC</valueName>
-<value>KYC017</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.NEW.KLMK.FL.W.0020.220204T0120Z-220205T0800Z/
-/PRSK2.1.ER.220204T0120Z.220204T0700Z.220205T0200Z.NO/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=KY1263E206BE38.IceStormWarning.1263E215ECF0KY.JKLWSWJKL.91c8760dabba5beefc5375439cd00f50</id>
-<updated>2022-02-03T10:50:00-05:00</updated>
-<published>2022-02-03T10:50:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Ice Storm Warning issued February 03 at 10:50AM EST until February 04 at 10:00AM EST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=KY1263E206BE38.IceStormWarning.1263E215ECF0KY.JKLWSWJKL.91c8760dabba5beefc5375439cd00f50"/>
-<summary>...ICE STORM WARNING IN EFFECT UNTIL 10 AM EST FRIDAY... * WHAT...Heavy freezing rain changing to sleet and snow. Total ice accumulations of one quarter to three quarters of an inch are expected. The greatest icing amounts are expected north of I-64, and also across slopes and ridges south of I-64. The lightest icing amounts are anticipated in valleys south of I-64.</summary>
-<cap:event>Ice Storm Warning</cap:event>
-<cap:effective>2022-02-03T10:50:00-05:00</cap:effective>
-<cap:expires>2022-02-04T10:00:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Bath; Fleming; Montgomery; Rowan</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>021011 021069 021173 021175 021205</value>
-<valueName>UGC</valueName>
-<value>KYZ044 KYZ050 KYZ051 KYZ052</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.UPG.KJKL.WS.W.0004.000000T0000Z-220204T1500Z/
-/O.NEW.KJKL.IS.W.0001.220203T1550Z-220204T1500Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=KY1263E206BE38.WinterStormWarning.1263E215ECF0KY.JKLWSWJKL.1f8d25381bb0e4580f5f79067e48d4c1</id>
-<updated>2022-02-03T10:50:00-05:00</updated>
-<published>2022-02-03T10:50:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Winter Storm Warning issued February 03 at 10:50AM EST until February 04 at 10:00AM EST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=KY1263E206BE38.WinterStormWarning.1263E215ECF0KY.JKLWSWJKL.1f8d25381bb0e4580f5f79067e48d4c1"/>
-<summary>...WINTER STORM WARNING REMAINS IN EFFECT FROM 4 PM THIS AFTERNOON TO 10 AM EST FRIDAY... * WHAT...Heavy freezing rain changing to sleet and snow. Total ice accumulations of one tenth to four tenths of an inch. The greatest icing amounts are expected on higher slopes and atop ridges, with lighter icing amounts expected in valleys. Total</summary>
-<cap:event>Winter Storm Warning</cap:event>
-<cap:effective>2022-02-03T10:50:00-05:00</cap:effective>
-<cap:expires>2022-02-04T10:00:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Elliott; Estill; Jackson; Lee; Menifee; Morgan; Powell; Rockcastle; Wolfe</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>021063 021065 021109 021129 021165 021175 021197 021203 021237</value>
-<valueName>UGC</valueName>
-<value>KYZ058 KYZ059 KYZ060 KYZ068 KYZ069 KYZ104 KYZ106 KYZ108 KYZ111</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KJKL.WS.W.0004.220203T2100Z-220204T1500Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=KY1263E206BE38.WinterStormWarning.1263E215ECF0KY.JKLWSWJKL.46af0475287fbb75c608d0f5e40d7405</id>
-<updated>2022-02-03T10:50:00-05:00</updated>
-<published>2022-02-03T10:50:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Winter Storm Warning issued February 03 at 10:50AM EST until February 04 at 10:00AM EST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=KY1263E206BE38.WinterStormWarning.1263E215ECF0KY.JKLWSWJKL.46af0475287fbb75c608d0f5e40d7405"/>
-<summary>...WINTER STORM WARNING REMAINS IN EFFECT FROM 7 PM THIS EVENING TO 10 AM EST FRIDAY... * WHAT...Freezing rain changing to a little sleet and snow. Total ice accumulations of one tenth to three tenths of an inch on higher slopes and ridges and up to two tenths of an inch in valleys. Total sleet and snow accumulations up to one</summary>
-<cap:event>Winter Storm Warning</cap:event>
-<cap:effective>2022-02-03T10:50:00-05:00</cap:effective>
-<cap:expires>2022-02-04T10:00:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Breathitt; Johnson; Laurel; Magoffin; Owsley; Pulaski</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>021025 021115 021125 021153 021189 021199</value>
-<valueName>UGC</valueName>
-<value>KYZ079 KYZ080 KYZ107 KYZ109 KYZ112 KYZ114</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KJKL.WS.W.0004.220204T0000Z-220204T1500Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=KY1263E206BE38.WinterWeatherAdvisory.1263E216B040KY.JKLWSWJKL.ad4f265ba3e3709d0dc7f64f0a3e0caf</id>
-<updated>2022-02-03T10:50:00-05:00</updated>
-<published>2022-02-03T10:50:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Winter Weather Advisory issued February 03 at 10:50AM EST until February 04 at 3:00PM EST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=KY1263E206BE38.WinterWeatherAdvisory.1263E216B040KY.JKLWSWJKL.ad4f265ba3e3709d0dc7f64f0a3e0caf"/>
-<summary>...WINTER WEATHER ADVISORY REMAINS IN EFFECT FROM 1 AM TO 3 PM EST FRIDAY... * WHAT...Rain changing to freezing rain and possibly mixing with sleet and snow. Total ice accumulations up to one tenth of an inch in deeper valleys and one to two tenths on ridges. Little or no snow and sleet accumulation is anticipated.</summary>
+<title>Winter Weather Advisory issued February 03 at 9:32PM CST until February 04 at 12:00AM CST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=LA1263E21424B0.WinterWeatherAdvisory.1263E2148D60LA.SHVWSWSHV.b3bd5a29efb08e6bdb4e2ca30418bf34"/>
+<summary>...WINTER WEATHER ADVISORY REMAINS IN EFFECT UNTIL MIDNIGHT CST TONIGHT... * WHAT...Mixed winter precipitation continuing. Areas of light freezing rain, freezing drizzle, mixed with light snow will continue across portions of extreme Eastern Texas and North Louisiana through late evening before diminishing. Additional</summary>
 <cap:event>Winter Weather Advisory</cap:event>
-<cap:effective>2022-02-03T10:50:00-05:00</cap:effective>
-<cap:expires>2022-02-04T15:00:00-05:00</cap:expires>
+<cap:effective>2022-02-03T21:32:00-06:00</cap:effective>
+<cap:expires>2022-02-04T00:00:00-06:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
 <cap:category>Met</cap:category>
 <cap:urgency>Expected</cap:urgency>
 <cap:severity>Minor</cap:severity>
 <cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Bell; Clay; Floyd; Harlan; Knott; Knox; Leslie; Letcher; Martin; McCreary; Perry; Pike; Wayne; Whitley</cap:areaDesc>
+<cap:areaDesc>Bienville; Bossier; Caddo; Caldwell; Claiborne; Jackson; Lincoln; Ouachita; Union; Webster</cap:areaDesc>
 <cap:polygon></cap:polygon>
 <cap:geocode>
 <valueName>FIPS6</valueName>
-<value>021013 021051 021071 021095 021119 021121 021131 021133 021147 021159 021189 021193 021195 021231 021235</value>
+<value>022013 022015 022017 022021 022027 022049 022061 022073 022111 022119</value>
 <valueName>UGC</valueName>
-<value>KYZ083 KYZ084 KYZ085 KYZ086 KYZ087 KYZ088 KYZ110 KYZ113 KYZ115 KYZ116 KYZ117 KYZ118 KYZ119 KYZ120</value>
+<value>LAZ001 LAZ002 LAZ003 LAZ004 LAZ005 LAZ006 LAZ012 LAZ013 LAZ014 LAZ021</value>
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
-<value>/O.CON.KJKL.WW.Y.0007.220204T0600Z-220204T2000Z/</value>
+<value>/O.CON.KSHV.WW.Y.0003.000000T0000Z-220204T0600Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=LA1263E2142000.FloodWarning.1263E222E540LA.LIXFLWLIX.eb2a19c71dc4c245e3a8e584358d7c2e</id>
+<updated>2022-02-03T21:20:00-06:00</updated>
+<published>2022-02-03T21:20:00-06:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Flood Warning issued February 03 at 9:20PM CST until February 04 at 6:00PM CST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=LA1263E2142000.FloodWarning.1263E222E540LA.LIXFLWLIX.eb2a19c71dc4c245e3a8e584358d7c2e"/>
+<summary>...The National Weather Service in New Orleans LA has issued a Flood Warning for the following rivers in Louisiana... Tangipahoa River Near Robert affecting Tangipahoa Parish. For the Tangipahoa River...including Osyka, Kentwood, Amite, Robert...Minor flooding is forecast. ...FLOOD WARNING IN EFFECT FROM TOMORROW AFTERNOON TO TOMORROW</summary>
+<cap:event>Flood Warning</cap:event>
+<cap:effective>2022-02-03T21:20:00-06:00</cap:effective>
+<cap:expires>2022-02-04T18:00:00-06:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Tangipahoa</cap:areaDesc>
+<cap:polygon>30.36,-90.25 30.3,-90.3 30.69,-90.5 30.69,-90.43 30.36,-90.25</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>022105</value>
+<valueName>UGC</valueName>
+<value>LAC105</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.NEW.KLIX.FL.W.0004.220204T1800Z-220205T0000Z/
+/ROBL1.1.ER.220204T1800Z.220204T1800Z.220204T1800Z.NO/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -4567,38 +4598,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value></value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=LA1263E207F1A4.WinterWeatherAdvisory.1263E2148D60LA.SHVWSWSHV.b3bd5a29efb08e6bdb4e2ca30418bf34</id>
-<updated>2022-02-03T17:37:00-06:00</updated>
-<published>2022-02-03T17:37:00-06:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Winter Weather Advisory issued February 03 at 5:37PM CST until February 04 at 12:00AM CST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=LA1263E207F1A4.WinterWeatherAdvisory.1263E2148D60LA.SHVWSWSHV.b3bd5a29efb08e6bdb4e2ca30418bf34"/>
-<summary>...WINTER WEATHER ADVISORY NOW IN EFFECT UNTIL MIDNIGHT CST TONIGHT... * WHAT...Mixed winter precipitation continuing. Light freezing rain mixed with some sleet and light snow will continue across portions of East Texas, Southern Arkansas, and North Louisiana through this evening, as freezing temperatures begin to settle</summary>
-<cap:event>Winter Weather Advisory</cap:event>
-<cap:effective>2022-02-03T17:37:00-06:00</cap:effective>
-<cap:expires>2022-02-04T00:00:00-06:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Bienville; Bossier; Caddo; Caldwell; Claiborne; Jackson; Lincoln; Ouachita; Union; Webster</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>022013 022015 022017 022021 022027 022049 022061 022073 022111 022119</value>
-<valueName>UGC</valueName>
-<value>LAZ001 LAZ002 LAZ003 LAZ004 LAZ005 LAZ006 LAZ012 LAZ013 LAZ014 LAZ021</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.EXT.KSHV.WW.Y.0003.000000T0000Z-220204T0600Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -4890,6 +4889,39 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=MD1263E2142384.FloodWarning.1263E21577C0MD.LWXFLWLWX.9308f2da2e8b503090f5b0e378058f50</id>
+<updated>2022-02-03T22:29:00-05:00</updated>
+<published>2022-02-03T22:29:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Flood Warning issued February 03 at 10:29PM EST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MD1263E2142384.FloodWarning.1263E21577C0MD.LWXFLWLWX.9308f2da2e8b503090f5b0e378058f50"/>
+<summary>...FLOOD WARNING IN EFFECT UNTIL 7 AM EST FRIDAY... * WHAT...Flooding caused by rain and snowmelt is expected. * WHERE...Portions of western Maryland and eastern West Virginia, including the following counties: in western Maryland, Garrett. In eastern West Virginia, Grant and Mineral. * WHEN...Until 700 AM EST Friday.</summary>
+<cap:event>Flood Warning</cap:event>
+<cap:effective>2022-02-03T22:29:00-05:00</cap:effective>
+<cap:expires>2022-02-04T07:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Garrett</cap:areaDesc>
+<cap:polygon>39.72,-79.48 39.72,-78.94 39.48,-79.08 39.47,-79.08 39.21,-79.31 39.21,-79.34 39.2,-79.36 39.2,-79.38 39.19,-79.4 39.19,-79.43 39.19,-79.44 39.18,-79.47 39.19,-79.49 39.72,-79.48</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>024023</value>
+<valueName>UGC</valueName>
+<value>MDC023</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.NEW.KLWX.FA.W.0001.220204T0329Z-220204T1200Z/
+/00000.0.RS.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
+</cap:parameter>
+</entry>
+<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=MD1263E213F760.WinterWeatherAdvisory.1263E2166220MD.LWXWSWLWX.3b8dbcb90e1fd79a371d668e22d2be8c</id>
 <updated>2022-02-03T21:16:00-05:00</updated>
 <published>2022-02-03T21:16:00-05:00</published>
@@ -4986,18 +5018,18 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=MD1263E213A74C.FloodWatch.1263E2163B10MD.LWXFFALWX.8b693f5d38e5fcce6ea6373fd18596ae</id>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=MD1263E213A74C.FloodWatch.1263E21577C0MD.LWXFFALWX.8b693f5d38e5fcce6ea6373fd18596ae</id>
 <updated>2022-02-03T19:11:00-05:00</updated>
 <published>2022-02-03T19:11:00-05:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
 <title>Flood Watch issued February 03 at 7:11PM EST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MD1263E213A74C.FloodWatch.1263E2163B10MD.LWXFFALWX.8b693f5d38e5fcce6ea6373fd18596ae"/>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MD1263E213A74C.FloodWatch.1263E21577C0MD.LWXFFALWX.8b693f5d38e5fcce6ea6373fd18596ae"/>
 <summary>...FLOOD WATCH REMAINS IN EFFECT THROUGH FRIDAY MORNING... * WHAT...Flooding caused by rain and snowmelt continues to be possible. * WHERE...Portions of western Maryland and eastern West Virginia, including the following areas: in western Maryland, Extreme Western Allegany and Garrett. In eastern West Virginia, Western</summary>
 <cap:event>Flood Watch</cap:event>
 <cap:effective>2022-02-03T19:11:00-05:00</cap:effective>
-<cap:expires>2022-02-04T12:00:00-05:00</cap:expires>
+<cap:expires>2022-02-04T07:00:00-05:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
 <cap:category>Met</cap:category>
@@ -5598,6 +5630,39 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=MS1263E214244C.FloodWarning.1263E2536B20MS.JANFLSJAN.064c65fae0c26f154261ca4b272461b3</id>
+<updated>2022-02-03T21:31:00-06:00</updated>
+<published>2022-02-03T21:31:00-06:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Flood Warning issued February 03 at 9:31PM CST until February 08 at 12:00PM CST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MS1263E214244C.FloodWarning.1263E2536B20MS.JANFLSJAN.064c65fae0c26f154261ca4b272461b3"/>
+<summary>...The Flood Warning continues for the following rivers in Mississippi... Big Black River At West affecting Holmes and Attala Counties. ...FLOOD WARNING REMAINS IN EFFECT FROM FRIDAY MORNING TO TUESDAY AFTERNOON... * WHAT...Minor flooding is forecast.</summary>
+<cap:event>Flood Warning</cap:event>
+<cap:effective>2022-02-03T21:31:00-06:00</cap:effective>
+<cap:expires>2022-02-08T12:00:00-06:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Attala; Holmes</cap:areaDesc>
+<cap:polygon>32.91,-90.06 33.14,-89.9 33.3,-89.81 33.22,-89.63 33.13,-89.69 32.85,-89.87 32.91,-90.06</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>028007 028051</value>
+<valueName>UGC</valueName>
+<value>MSC007 MSC051</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KJAN.FL.W.0003.220204T1600Z-220208T1800Z/
+/WSTM6.1.ER.220204T1600Z.220205T0600Z.220208T0000Z.NO/</value>
+</cap:parameter>
+</entry>
+<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=MS1263E214069C.FloodWarning.1263E224F4FCMS.LIXFLWLIX.172524bcd379521fc690cf344e49d725</id>
 <updated>2022-02-03T20:55:00-06:00</updated>
 <published>2022-02-03T20:55:00-06:00</published>
@@ -5828,39 +5893,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=MS1263E2077D3C.FloodWarning.1263E2536B20MS.JANFLSJAN.064c65fae0c26f154261ca4b272461b3</id>
-<updated>2022-02-03T14:39:00-06:00</updated>
-<published>2022-02-03T14:39:00-06:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Flood Warning issued February 03 at 2:39PM CST until February 08 at 12:00PM CST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MS1263E2077D3C.FloodWarning.1263E2536B20MS.JANFLSJAN.064c65fae0c26f154261ca4b272461b3"/>
-<summary>...The Flood Warning continues for the following rivers in Mississippi... Big Black River At West affecting Holmes and Attala Counties. ...FLOOD WARNING NOW IN EFFECT FROM FRIDAY MORNING TO TUESDAY AFTERNOON... * WHAT...Minor flooding is forecast.</summary>
-<cap:event>Flood Warning</cap:event>
-<cap:effective>2022-02-03T14:39:00-06:00</cap:effective>
-<cap:expires>2022-02-08T12:00:00-06:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Attala; Holmes</cap:areaDesc>
-<cap:polygon>32.91,-90.06 33.14,-89.9 33.3,-89.81 33.22,-89.63 33.13,-89.69 32.85,-89.87 32.91,-90.06</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>028007 028051</value>
-<valueName>UGC</valueName>
-<value>MSC007 MSC051</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.EXT.KJAN.FL.W.0003.220204T1600Z-220208T1800Z/
-/WSTM6.1.ER.220204T1600Z.220205T0600Z.220208T0000Z.NO/</value>
-</cap:parameter>
-</entry>
-<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=MS1263E2075244.IceStormWarning.1263E2148D60MS.MEGWSWMEG.59b1f5ede4c468ffa0c44ffd5801d6ff</id>
 <updated>2022-02-03T13:29:00-06:00</updated>
 <published>2022-02-03T13:29:00-06:00</published>
@@ -5922,39 +5954,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value>/O.CON.KMEG.WW.Y.0005.000000T0000Z-220204T0600Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=MS1263E206AFC4.FloodWarning.1263E2141E0CMS.JANFLSJAN.4aa53d9fb12a0cfa559f1d2124b8e520</id>
-<updated>2022-02-03T09:13:00-06:00</updated>
-<published>2022-02-03T09:13:00-06:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Flood Warning issued February 03 at 9:13AM CST until further notice by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MS1263E206AFC4.FloodWarning.1263E2141E0CMS.JANFLSJAN.4aa53d9fb12a0cfa559f1d2124b8e520"/>
-<summary>...The Flood Warning continues for the following rivers in Mississippi... Pearl River Above Philadelphia affecting Neshoba County. ...FLOOD WARNING REMAINS IN EFFECT FROM FRIDAY MORNING UNTIL FURTHER NOTICE... * WHAT...Minor flooding is forecast.</summary>
-<cap:event>Flood Warning</cap:event>
-<cap:effective>2022-02-03T09:13:00-06:00</cap:effective>
-<cap:expires>2022-02-03T21:15:00-06:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Neshoba</cap:areaDesc>
-<cap:polygon>32.89,-89.22 32.91,-89.15 32.93,-89.02 32.92,-88.93 32.84,-88.92 32.77,-89.18 32.89,-89.22</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>028099</value>
-<valueName>UGC</valueName>
-<value>MSC099</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KJAN.FL.W.0004.220204T1600Z-000000T0000Z/
-/PLAM6.1.ER.220204T1600Z.220205T1800Z.000000T0000Z.NO/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -8537,47 +8536,14 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=PA1263E213D370.FloodAdvisory.1263E21577C0PA.PBZFLSPBZ.ab4decd9d63bf85144213aa16c121b22</id>
-<updated>2022-02-03T20:24:00-05:00</updated>
-<published>2022-02-03T20:24:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Flood Advisory issued February 03 at 8:24PM EST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=PA1263E213D370.FloodAdvisory.1263E21577C0PA.PBZFLSPBZ.ab4decd9d63bf85144213aa16c121b22"/>
-<summary>...FLOOD ADVISORY REMAINS IN EFFECT UNTIL 7 AM EST FRIDAY... * WHAT...Flooding caused by rain and snowmelt continues. * WHERE...Portions of east central Ohio, including the following counties, Belmont, Harrison and Jefferson OH. Portions of Pennsylvania, including the following counties, Allegheny, Armstrong, Beaver, Butler, Indiana, Washington and Westmoreland.</summary>
-<cap:event>Flood Advisory</cap:event>
-<cap:effective>2022-02-03T20:24:00-05:00</cap:effective>
-<cap:expires>2022-02-04T07:00:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Allegheny</cap:areaDesc>
-<cap:polygon>40.15,-80.93 40.16,-80.93 40.38,-80.86 40.56,-80.52 40.63,-80.39 40.87,-79.98 40.87,-79.69 40.86,-79.22 40.85,-78.81 40.82,-78.81 40.78,-78.81 40.77,-78.81 40.37,-79.01 40.38,-79.09 40.42,-79.5 40.18,-79.75 40.14,-80.92 40.15,-80.93</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>042003</value>
-<valueName>UGC</valueName>
-<value>PAC003</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KPBZ.FA.Y.0001.000000T0000Z-220204T1200Z/
-/00000.N.RS.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=PA1263E213D370.FloodAdvisory.1263E2329CB0PA.PBZFLSPBZ.c246f7f09ae9866a8e32beb5a0170a2c</id>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=PA1263E213D370.FloodAdvisory.1263E2329CB0PA.PBZFLSPBZ.826138769588181f6e860260351f61ea</id>
 <updated>2022-02-03T20:24:00-05:00</updated>
 <published>2022-02-03T20:24:00-05:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
 <title>Flood Advisory issued February 03 at 8:24PM EST until February 05 at 10:00PM EST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=PA1263E213D370.FloodAdvisory.1263E2329CB0PA.PBZFLSPBZ.c246f7f09ae9866a8e32beb5a0170a2c"/>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=PA1263E213D370.FloodAdvisory.1263E2329CB0PA.PBZFLSPBZ.826138769588181f6e860260351f61ea"/>
 <summary>...FLOOD ADVISORY REMAINS IN EFFECT UNTIL 7 AM EST FRIDAY... * WHAT...Flooding caused by rain and snowmelt continues. * WHERE...Portions of east central Ohio, including the following counties, Belmont, Harrison and Jefferson OH. Portions of Pennsylvania, including the following counties, Allegheny, Armstrong, Beaver, Butler, Indiana, Washington and Westmoreland.</summary>
 <cap:event>Flood Advisory</cap:event>
 <cap:effective>2022-02-03T20:24:00-05:00</cap:effective>
@@ -8588,13 +8554,13 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:urgency>Expected</cap:urgency>
 <cap:severity>Minor</cap:severity>
 <cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Armstrong; Beaver; Butler; Indiana; Washington; Westmoreland</cap:areaDesc>
+<cap:areaDesc>Allegheny; Armstrong; Beaver; Butler; Indiana; Washington; Westmoreland</cap:areaDesc>
 <cap:polygon>40.15,-80.93 40.16,-80.93 40.38,-80.86 40.56,-80.52 40.63,-80.39 40.87,-79.98 40.87,-79.69 40.86,-79.22 40.85,-78.81 40.82,-78.81 40.78,-78.81 40.77,-78.81 40.37,-79.01 40.38,-79.09 40.42,-79.5 40.18,-79.75 40.14,-80.92 40.15,-80.93</cap:polygon>
 <cap:geocode>
 <valueName>FIPS6</valueName>
-<value>042005 042007 042019 042063 042125 042129</value>
+<value>042003 042005 042007 042019 042063 042125 042129</value>
 <valueName>UGC</valueName>
-<value>PAC005 PAC007 PAC019 PAC063 PAC125 PAC129</value>
+<value>PAC003 PAC005 PAC007 PAC019 PAC063 PAC125 PAC129</value>
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
@@ -9342,6 +9308,70 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=TN1263E2142064.WinterWeatherAdvisory.1263E2163B10TN.MRXWSWMRX.82eb147442c708060f20e7b994aee5ee</id>
+<updated>2022-02-03T21:21:00-06:00</updated>
+<published>2022-02-03T21:21:00-06:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Winter Weather Advisory issued February 03 at 9:21PM CST until February 04 at 11:00AM CST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=TN1263E2142064.WinterWeatherAdvisory.1263E2163B10TN.MRXWSWMRX.82eb147442c708060f20e7b994aee5ee"/>
+<summary>...WINTER WEATHER ADVISORY REMAINS IN EFFECT UNTIL NOON EST FRIDAY... * WHAT...Freezing rain expected. Total ice accumulations of up to one tenth of an inch. * WHERE...Scott TN, Campbell, Claiborne and Morgan Counties. * WHEN...From 1 AM to noon EST Friday.</summary>
+<cap:event>Winter Weather Advisory</cap:event>
+<cap:effective>2022-02-03T21:21:00-06:00</cap:effective>
+<cap:expires>2022-02-04T11:00:00-06:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Campbell; Claiborne; Morgan; Scott</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>047013 047025 047129 047151</value>
+<valueName>UGC</valueName>
+<value>TNZ012 TNZ013 TNZ014 TNZ035</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KMRX.WW.Y.0008.220204T0600Z-220204T1700Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=TN1263E2142064.WinterWeatherAdvisory.1263E222E540TN.MRXWSWMRX.b4202b4e385fe7c5b97b91d113184573</id>
+<updated>2022-02-03T21:21:00-06:00</updated>
+<published>2022-02-03T21:21:00-06:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Winter Weather Advisory issued February 03 at 9:21PM CST until February 04 at 6:00PM CST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=TN1263E2142064.WinterWeatherAdvisory.1263E222E540TN.MRXWSWMRX.b4202b4e385fe7c5b97b91d113184573"/>
+<summary>...WINTER WEATHER ADVISORY REMAINS IN EFFECT UNTIL 7 PM EST FRIDAY... * WHAT...Mixed precipitation expected. Total snow accumulations of less than one inch and ice accumulations of around one tenth of an inch. * WHERE...In Tennessee, Hancock County. In Virginia, Lee, Wise,</summary>
+<cap:event>Winter Weather Advisory</cap:event>
+<cap:effective>2022-02-03T21:21:00-06:00</cap:effective>
+<cap:expires>2022-02-04T18:00:00-06:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Hancock</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>047067</value>
+<valueName>UGC</valueName>
+<value>TNZ015</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KMRX.WW.Y.0008.220204T0600Z-220205T0000Z/</value>
+</cap:parameter>
+</entry>
+<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=TN1263E2140700.HighWindWarning.1263E2148D60TN.MRXNPWMRX.cb9609e0c9d8a487f1c3e05d2a1ef900</id>
 <updated>2022-02-03T20:56:00-06:00</updated>
 <published>2022-02-03T20:56:00-06:00</published>
@@ -9534,72 +9564,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <valueName>VTEC</valueName>
 <value>/O.CON.KMRX.FL.W.0004.220204T1621Z-220206T0000Z/
 /WHTT1.1.ER.220205T0600Z.220205T0600Z.220205T1200Z.NO/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=TN1263E213D438.FloodAdvisory.1263E216BBF8TN.MRXFLSMRX.00d2521347f0955ea0ff0b2d6df46f0c</id>
-<updated>2022-02-03T19:26:00-06:00</updated>
-<published>2022-02-03T19:26:00-06:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Flood Advisory issued February 03 at 7:26PM CST until further notice by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=TN1263E213D438.FloodAdvisory.1263E216BBF8TN.MRXFLSMRX.00d2521347f0955ea0ff0b2d6df46f0c"/>
-<summary>...FLOOD ADVISORY IN EFFECT UNTIL 930 PM CST THIS EVENING... * WHAT...Flooding caused by excessive rainfall is expected. * WHERE...A portion of east Tennessee, including the following counties, Bledsoe and Sequatchie. * WHEN...Until 930 PM CST. * IMPACTS...Minor flooding in low-lying and poor drainage areas.</summary>
-<cap:event>Flood Advisory</cap:event>
-<cap:effective>2022-02-03T19:26:00-06:00</cap:effective>
-<cap:expires>2022-02-04T14:30:00-06:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Bledsoe</cap:areaDesc>
-<cap:polygon>35.22,-85.36 35.31,-85.56 35.34,-85.54 35.36,-85.51 35.41,-85.49 35.41,-85.51 35.42,-85.51 35.43,-85.54 35.49,-85.54 35.53,-85.61 35.55,-85.46 35.57,-85.42 35.71,-85.27 35.76,-85.27 35.77,-85.25 35.77,-85.11 35.76,-85.07 35.77,-85.04 35.75,-85.03 35.76,-84.98 35.22,-85.36</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>047007</value>
-<valueName>UGC</valueName>
-<value>TNC007</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.NEW.KMRX.FA.Y.0003.220204T0126Z-220204T0330Z/
-/00000.N.ER.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=TN1263E213D438.FloodAdvisory.1263E2322780TN.MRXFLSMRX.d1ccf68060000f7e415bfbaa087e7de8</id>
-<updated>2022-02-03T19:26:00-06:00</updated>
-<published>2022-02-03T19:26:00-06:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Flood Advisory issued February 03 at 7:26PM CST until February 05 at 6:00PM CST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=TN1263E213D438.FloodAdvisory.1263E2322780TN.MRXFLSMRX.d1ccf68060000f7e415bfbaa087e7de8"/>
-<summary>...FLOOD ADVISORY IN EFFECT UNTIL 930 PM CST THIS EVENING... * WHAT...Flooding caused by excessive rainfall is expected. * WHERE...A portion of east Tennessee, including the following counties, Bledsoe and Sequatchie. * WHEN...Until 930 PM CST. * IMPACTS...Minor flooding in low-lying and poor drainage areas.</summary>
-<cap:event>Flood Advisory</cap:event>
-<cap:effective>2022-02-03T19:26:00-06:00</cap:effective>
-<cap:expires>2022-02-05T18:00:00-06:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Sequatchie</cap:areaDesc>
-<cap:polygon>35.22,-85.36 35.31,-85.56 35.34,-85.54 35.36,-85.51 35.41,-85.49 35.41,-85.51 35.42,-85.51 35.43,-85.54 35.49,-85.54 35.53,-85.61 35.55,-85.46 35.57,-85.42 35.71,-85.27 35.76,-85.27 35.77,-85.25 35.77,-85.11 35.76,-85.07 35.77,-85.04 35.75,-85.03 35.76,-84.98 35.22,-85.36</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>047153</value>
-<valueName>UGC</valueName>
-<value>TNC153</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.NEW.KMRX.FA.Y.0003.220204T0126Z-220204T0330Z/
-/00000.N.ER.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -9797,67 +9761,35 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=TN1263E206E2F0.WinterWeatherAdvisory.1263E2163B10TN.MRXWSWMRX.82eb147442c708060f20e7b994aee5ee</id>
-<updated>2022-02-03T10:44:00-06:00</updated>
-<published>2022-02-03T10:44:00-06:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=TX1263E21424B0.WinterWeatherAdvisory.1263E2148D60TX.SHVWSWSHV.fefeb09a9e1861517379ce3d58ad44e2</id>
+<updated>2022-02-03T21:32:00-06:00</updated>
+<published>2022-02-03T21:32:00-06:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Winter Weather Advisory issued February 03 at 10:44AM CST until February 04 at 11:00AM CST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=TN1263E206E2F0.WinterWeatherAdvisory.1263E2163B10TN.MRXWSWMRX.82eb147442c708060f20e7b994aee5ee"/>
-<summary>...WINTER WEATHER ADVISORY REMAINS IN EFFECT FROM 1 AM TO NOON EST FRIDAY... * WHAT...Freezing rain expected. Total ice accumulations of around one tenth of an inch. * WHERE...Scott TN, Campbell, Claiborne and Morgan Counties. * WHEN...From 1 AM to noon EST Friday.</summary>
+<title>Winter Weather Advisory issued February 03 at 9:32PM CST until February 04 at 12:00AM CST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=TX1263E21424B0.WinterWeatherAdvisory.1263E2148D60TX.SHVWSWSHV.fefeb09a9e1861517379ce3d58ad44e2"/>
+<summary>...WINTER WEATHER ADVISORY REMAINS IN EFFECT UNTIL MIDNIGHT CST TONIGHT... * WHAT...Mixed winter precipitation continuing. Areas of light freezing rain, freezing drizzle, mixed with light snow will continue across portions of extreme Eastern Texas and North Louisiana through late evening before diminishing. Additional</summary>
 <cap:event>Winter Weather Advisory</cap:event>
-<cap:effective>2022-02-03T10:44:00-06:00</cap:effective>
-<cap:expires>2022-02-04T11:00:00-06:00</cap:expires>
+<cap:effective>2022-02-03T21:32:00-06:00</cap:effective>
+<cap:expires>2022-02-04T00:00:00-06:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
 <cap:category>Met</cap:category>
 <cap:urgency>Expected</cap:urgency>
 <cap:severity>Minor</cap:severity>
 <cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Campbell; Claiborne; Morgan; Scott</cap:areaDesc>
+<cap:areaDesc>Cass; Harrison; Marion; Panola</cap:areaDesc>
 <cap:polygon></cap:polygon>
 <cap:geocode>
 <valueName>FIPS6</valueName>
-<value>047013 047025 047129 047151</value>
+<value>048067 048203 048315 048365</value>
 <valueName>UGC</valueName>
-<value>TNZ012 TNZ013 TNZ014 TNZ035</value>
+<value>TXZ112 TXZ126 TXZ138 TXZ151</value>
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
-<value>/O.CON.KMRX.WW.Y.0008.220204T0600Z-220204T1700Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=TN1263E206E2F0.WinterWeatherAdvisory.1263E222E540TN.MRXWSWMRX.b4202b4e385fe7c5b97b91d113184573</id>
-<updated>2022-02-03T10:44:00-06:00</updated>
-<published>2022-02-03T10:44:00-06:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Winter Weather Advisory issued February 03 at 10:44AM CST until February 04 at 6:00PM CST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=TN1263E206E2F0.WinterWeatherAdvisory.1263E222E540TN.MRXWSWMRX.b4202b4e385fe7c5b97b91d113184573"/>
-<summary>...WINTER WEATHER ADVISORY REMAINS IN EFFECT FROM 1 AM TO 7 PM EST FRIDAY... * WHAT...Mixed precipitation expected. Total snow accumulations of less than one inch and ice accumulations of around one tenth of an inch. * WHERE...In Tennessee, Hancock County. In Virginia, Lee, Wise,</summary>
-<cap:event>Winter Weather Advisory</cap:event>
-<cap:effective>2022-02-03T10:44:00-06:00</cap:effective>
-<cap:expires>2022-02-04T18:00:00-06:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Hancock</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>047067</value>
-<valueName>UGC</valueName>
-<value>TNZ015</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KMRX.WW.Y.0008.220204T0600Z-220205T0000Z/</value>
+<value>/O.CON.KSHV.WW.Y.0003.000000T0000Z-220204T0600Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -10682,103 +10614,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <valueName>VTEC</valueName>
 <value>/O.EXP.KFWD.WS.W.0001.000000T0000Z-220204T0000Z/
 /O.CON.KFWD.WC.Y.0001.220204T0300Z-220204T1500Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=TX1263E207F1A4.WinterWeatherAdvisory.1263E2148D60TX.SHVWSWSHV.3780873e34a77a1b07a6fef35db1a746</id>
-<updated>2022-02-03T17:37:00-06:00</updated>
-<published>2022-02-03T17:37:00-06:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Winter Weather Advisory issued February 03 at 5:37PM CST until February 04 at 12:00AM CST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=TX1263E207F1A4.WinterWeatherAdvisory.1263E2148D60TX.SHVWSWSHV.3780873e34a77a1b07a6fef35db1a746"/>
-<summary>...WINTER WEATHER ADVISORY NOW IN EFFECT UNTIL MIDNIGHT CST TONIGHT... * WHAT...Mixed winter precipitation continuing. Light freezing rain mixed with some sleet and light snow will continue across portions of East Texas, Southern Arkansas, and North Louisiana through this evening, as freezing temperatures begin to settle</summary>
-<cap:event>Winter Weather Advisory</cap:event>
-<cap:effective>2022-02-03T17:37:00-06:00</cap:effective>
-<cap:expires>2022-02-04T00:00:00-06:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Angelina; Cass; Gregg; Harrison; Marion; Nacogdoches; Rusk</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>048005 048067 048183 048203 048315 048347 048401</value>
-<valueName>UGC</valueName>
-<value>TXZ112 TXZ126 TXZ137 TXZ138 TXZ150 TXZ152 TXZ165</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.EXT.KSHV.WW.Y.0003.000000T0000Z-220204T0600Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=TX1263E207F1A4.WinterWeatherAdvisory.1263E2148D60TX.SHVWSWSHV.2b8a9f8fb2f4c8ae05dc57548c0b5250</id>
-<updated>2022-02-03T17:37:00-06:00</updated>
-<published>2022-02-03T17:37:00-06:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Winter Weather Advisory issued February 03 at 5:37PM CST until February 04 at 12:00AM CST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=TX1263E207F1A4.WinterWeatherAdvisory.1263E2148D60TX.SHVWSWSHV.2b8a9f8fb2f4c8ae05dc57548c0b5250"/>
-<summary>...WINTER WEATHER ADVISORY IN EFFECT UNTIL MIDNIGHT CST TONIGHT... ...WINTER STORM WARNING IS CANCELLED... * WHAT...Mixed precipitation. Additional snow accumulations of up to one inch and ice accumulations of less than one tenth of an inch. * WHERE...In Arkansas, Hempstead, Nevada, Columbia and Union</summary>
-<cap:event>Winter Weather Advisory</cap:event>
-<cap:effective>2022-02-03T17:37:00-06:00</cap:effective>
-<cap:expires>2022-02-04T00:00:00-06:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Cherokee</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>048073</value>
-<valueName>UGC</valueName>
-<value>TXZ149</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CAN.KSHV.WS.W.0002.000000T0000Z-220204T0000Z/
-/O.EXB.KSHV.WW.Y.0003.000000T0000Z-220204T0600Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=TX1263E207F1A4.WinterWeatherAdvisory.1263E2148D60TX.SHVWSWSHV.7116108342da5255d11dcf848b531110</id>
-<updated>2022-02-03T17:37:00-06:00</updated>
-<published>2022-02-03T17:37:00-06:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Winter Weather Advisory issued February 03 at 5:37PM CST until February 04 at 12:00AM CST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=TX1263E207F1A4.WinterWeatherAdvisory.1263E2148D60TX.SHVWSWSHV.7116108342da5255d11dcf848b531110"/>
-<summary>...WINTER WEATHER ADVISORY IN EFFECT UNTIL MIDNIGHT CST TONIGHT... * WHAT...Freezing rain. Areas of light rain and freezing rain will move across Panola and Shelby Counties through mid evening, which will create light ice accumulations of up to several hundreths of an inch on elevated objects such as trees and power lines, bridges and overpasses.</summary>
-<cap:event>Winter Weather Advisory</cap:event>
-<cap:effective>2022-02-03T17:37:00-06:00</cap:effective>
-<cap:expires>2022-02-04T00:00:00-06:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Panola; Shelby</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>048365 048419</value>
-<valueName>UGC</valueName>
-<value>TXZ151 TXZ153</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.EXB.KSHV.WW.Y.0003.000000T0000Z-220204T0600Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -11633,6 +11468,38 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=VA1263E2142064.WinterWeatherAdvisory.1263E222E540VA.MRXWSWMRX.130910dbad10fe067104f547d4af52c8</id>
+<updated>2022-02-03T22:21:00-05:00</updated>
+<published>2022-02-03T22:21:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Winter Weather Advisory issued February 03 at 10:21PM EST until February 04 at 7:00PM EST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=VA1263E2142064.WinterWeatherAdvisory.1263E222E540VA.MRXWSWMRX.130910dbad10fe067104f547d4af52c8"/>
+<summary>...WINTER WEATHER ADVISORY REMAINS IN EFFECT UNTIL 7 PM EST FRIDAY... * WHAT...Mixed precipitation expected. Total snow accumulations of less than one inch and ice accumulations of around one tenth of an inch. * WHERE...In Tennessee, Hancock County. In Virginia, Lee, Wise,</summary>
+<cap:event>Winter Weather Advisory</cap:event>
+<cap:effective>2022-02-03T22:21:00-05:00</cap:effective>
+<cap:expires>2022-02-04T19:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Lee; Russell; Scott; Wise</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>051105 051167 051169 051195 051720</value>
+<valueName>UGC</valueName>
+<value>VAZ001 VAZ002 VAZ005 VAZ006</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KMRX.WW.Y.0008.220204T0600Z-220205T0000Z/</value>
+</cap:parameter>
+</entry>
+<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=VA1263E213A74C.FloodWatch.1263E222E540VA.LWXFFALWX.f8e328fe2a5f63cb6a614bc4342b9eb2</id>
 <updated>2022-02-03T19:11:00-05:00</updated>
 <published>2022-02-03T19:11:00-05:00</published>
@@ -11760,38 +11627,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value>/O.CON.KRNK.WW.Y.0007.220204T0600Z-220205T0000Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=VA1263E206E2F0.WinterWeatherAdvisory.1263E222E540VA.MRXWSWMRX.130910dbad10fe067104f547d4af52c8</id>
-<updated>2022-02-03T11:44:00-05:00</updated>
-<published>2022-02-03T11:44:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Winter Weather Advisory issued February 03 at 11:44AM EST until February 04 at 7:00PM EST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=VA1263E206E2F0.WinterWeatherAdvisory.1263E222E540VA.MRXWSWMRX.130910dbad10fe067104f547d4af52c8"/>
-<summary>...WINTER WEATHER ADVISORY REMAINS IN EFFECT FROM 1 AM TO 7 PM EST FRIDAY... * WHAT...Mixed precipitation expected. Total snow accumulations of less than one inch and ice accumulations of around one tenth of an inch. * WHERE...In Tennessee, Hancock County. In Virginia, Lee, Wise,</summary>
-<cap:event>Winter Weather Advisory</cap:event>
-<cap:effective>2022-02-03T11:44:00-05:00</cap:effective>
-<cap:expires>2022-02-04T19:00:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Lee; Russell; Scott; Wise</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>051105 051167 051169 051195 051720</value>
-<valueName>UGC</valueName>
-<value>VAZ001 VAZ002 VAZ005 VAZ006</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KMRX.WW.Y.0008.220204T0600Z-220205T0000Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -11923,35 +11758,69 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=WI1263E213B87C.SpecialWeatherStatement.1263E2141E0CWI.MKXSPSMKX.b1a6251b4f8f8cc89bd2f415190c3200</id>
-<updated>2022-02-03T18:55:00-06:00</updated>
-<published>2022-02-03T18:55:00-06:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=WV1263E2142384.FloodWarning.1263E21577C0WV.LWXFLWLWX.296060b02374d2b30402f85d43b601ef</id>
+<updated>2022-02-03T22:29:00-05:00</updated>
+<published>2022-02-03T22:29:00-05:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Special Weather Statement issued February 03 at 6:55PM CST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=WI1263E213B87C.SpecialWeatherStatement.1263E2141E0CWI.MKXSPSMKX.b1a6251b4f8f8cc89bd2f415190c3200"/>
-<summary>...Slippery Roads Due to Lake Effect Snow Showers This Evening... Lake effect snow showers will continue to affect the area from Oak Creek south to Wind Point, Racine and Kenosha through the early evening. The snow showers will cause snow covered roads close to the lakeshore, and slippery stretches farther inland. Between 1 and 3 inches of snowfall is expected through the evening</summary>
-<cap:event>Special Weather Statement</cap:event>
-<cap:effective>2022-02-03T18:55:00-06:00</cap:effective>
-<cap:expires>2022-02-03T21:15:00-06:00</cap:expires>
+<title>Flood Warning issued February 03 at 10:29PM EST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=WV1263E2142384.FloodWarning.1263E21577C0WV.LWXFLWLWX.296060b02374d2b30402f85d43b601ef"/>
+<summary>...FLOOD WARNING IN EFFECT UNTIL 7 AM EST FRIDAY... * WHAT...Flooding caused by rain and snowmelt is expected. * WHERE...Portions of western Maryland and eastern West Virginia, including the following counties: in western Maryland, Garrett. In eastern West Virginia, Grant and Mineral. * WHEN...Until 700 AM EST Friday.</summary>
+<cap:event>Flood Warning</cap:event>
+<cap:effective>2022-02-03T22:29:00-05:00</cap:effective>
+<cap:expires>2022-02-04T07:00:00-05:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
 <cap:category>Met</cap:category>
 <cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Observed</cap:certainty>
-<cap:areaDesc>Kenosha; Milwaukee; Ozaukee; Racine; Sheboygan</cap:areaDesc>
-<cap:polygon></cap:polygon>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Grant; Mineral</cap:areaDesc>
+<cap:polygon>39.72,-79.48 39.72,-78.94 39.48,-79.08 39.47,-79.08 39.21,-79.31 39.21,-79.34 39.2,-79.36 39.2,-79.38 39.19,-79.4 39.19,-79.43 39.19,-79.44 39.18,-79.47 39.19,-79.49 39.72,-79.48</cap:polygon>
 <cap:geocode>
 <valueName>FIPS6</valueName>
-<value>055059 055079 055089 055101 055117</value>
+<value>054023 054057</value>
 <valueName>UGC</valueName>
-<value>WIZ052 WIZ060 WIZ066 WIZ071 WIZ072</value>
+<value>WVC023 WVC057</value>
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
-<value></value>
+<value>/O.NEW.KLWX.FA.W.0001.220204T0329Z-220204T1200Z/
+/00000.0.RS.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=WV1263E2141E0C.FloodWarning.1263E21577C0WV.RLXFLWRLX.a41c69fe37aef523f772195018806d51</id>
+<updated>2022-02-03T22:15:00-05:00</updated>
+<published>2022-02-03T22:15:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Flood Warning issued February 03 at 10:15PM EST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=WV1263E2141E0C.FloodWarning.1263E21577C0WV.RLXFLWRLX.a41c69fe37aef523f772195018806d51"/>
+<summary>...FLOOD WARNING IN EFFECT UNTIL 4 AM EST FRIDAY... * WHAT...Small stream flooding caused by excessive rainfall is expected. * WHERE...Portions of northeast Kentucky and West Virginia, including the following counties, in northeast Kentucky, Boyd, Carter and Lawrence. In West Virginia, Cabell, Jackson, Kanawha,</summary>
+<cap:event>Flood Warning</cap:event>
+<cap:effective>2022-02-03T22:15:00-05:00</cap:effective>
+<cap:expires>2022-02-04T07:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Cabell; Jackson; Kanawha; Lincoln; Mason; Putnam; Wayne</cap:areaDesc>
+<cap:polygon>38.24,-83.14 38.32,-82.76 38.42,-82.59 38.44,-82.33 38.48,-82.27 38.8,-82.01 38.93,-81.69 38.59,-81.52 38.13,-82.13 37.9,-82.47 37.96,-82.53 37.95,-82.58 37.88,-82.61 38,-82.94 37.96,-82.99 37.98,-83.02 38.11,-82.89 38.16,-82.91 38.2,-83.01 38.18,-83.05 38.24,-83.14</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>054011 054035 054039 054043 054053 054079 054099</value>
+<valueName>UGC</valueName>
+<value>WVC011 WVC035 WVC039 WVC043 WVC053 WVC079 WVC099</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.NEW.KRLX.FA.W.0024.220204T0315Z-220204T0900Z/
+/00000.0.ER.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
 </cap:parameter>
 </entry>
 <entry>
