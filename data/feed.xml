@@ -16,16 +16,48 @@ xmlns = 'http://www.w3.org/2005/Atom'
 xmlns:cap = 'urn:oasis:names:tc:emergency:cap:1.1'
 xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 >
-<!-- http-date = Mon, 14 Feb 2022 09:32:00 GMT -->
+<!-- http-date = Mon, 14 Feb 2022 10:02:00 GMT -->
 <id>https://alerts.weather.gov/cap/us.php?x=0</id>
 <logo>http://alerts.weather.gov/images/xml_logo.gif</logo>
 <generator>NWS CAP Server</generator>
-<updated>2022-02-13T23:32:00-10:00</updated>
+<updated>2022-02-14T05:02:00-05:00</updated>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
 <title>Current Watches, Warnings and Advisories for the United States Issued by the National Weather Service</title>
 <link href="https://alerts.weather.gov/cap/us.php?x=0"/>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=AK1263E2ADA720.WinterWeatherAdvisory.1263E2BEB010AK.AJKWSWAJK.c9df22b9077188ca8cb8ce0fb71b3059</id>
+<updated>2022-02-14T00:36:00-09:00</updated>
+<published>2022-02-14T00:36:00-09:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Winter Weather Advisory issued February 14 at 12:36AM AKST until February 15 at 12:00PM AKST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=AK1263E2ADA720.WinterWeatherAdvisory.1263E2BEB010AK.AJKWSWAJK.c9df22b9077188ca8cb8ce0fb71b3059"/>
+<summary>...WINTER WEATHER ADVISORY REMAINS IN EFFECT FROM 7 PM THIS EVENING TO NOON AKST TUESDAY... * WHAT...Snow expected. Total snow accumulations of 4 to 6 inches. * WHERE...Yakutat Area. * WHEN...From 7 PM Monday to noon AKST Tuesday.</summary>
+<cap:event>Winter Weather Advisory</cap:event>
+<cap:effective>2022-02-14T00:36:00-09:00</cap:effective>
+<cap:expires>2022-02-15T12:00:00-09:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Cape Fairweather to Cape Suckling Coastal Area</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>002282</value>
+<valueName>UGC</valueName>
+<value>AKZ017</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.PAJK.WW.Y.0013.220215T0400Z-220215T2100Z/</value>
+</cap:parameter>
+</entry>
 <entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=AK1263E2ACD6EC.WinterWeatherAdvisory.1263E2AE8370AK.AFGWSWAFG.6472d2ce411ac54d01cac5a672e16f41</id>
 <updated>2022-02-13T19:03:00-09:00</updated>
@@ -88,38 +120,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value></value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=AK1263E2AC4A4C.WinterWeatherAdvisory.1263E2BEB010AK.AJKWSWAJK.c9df22b9077188ca8cb8ce0fb71b3059</id>
-<updated>2022-02-13T15:43:00-09:00</updated>
-<published>2022-02-13T15:43:00-09:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Winter Weather Advisory issued February 13 at 3:43PM AKST until February 15 at 12:00PM AKST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=AK1263E2AC4A4C.WinterWeatherAdvisory.1263E2BEB010AK.AJKWSWAJK.c9df22b9077188ca8cb8ce0fb71b3059"/>
-<summary>...WINTER WEATHER ADVISORY IN EFFECT FROM 7 PM MONDAY TO NOON AKST TUESDAY... * WHAT...Snow expected. Total snow accumulations of 4 to 6 inches. * WHERE...Yakutat Area. * WHEN...From 7 PM Monday to noon AKST Tuesday.</summary>
-<cap:event>Winter Weather Advisory</cap:event>
-<cap:effective>2022-02-13T15:43:00-09:00</cap:effective>
-<cap:expires>2022-02-15T12:00:00-09:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Cape Fairweather to Cape Suckling Coastal Area</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>002282</value>
-<valueName>UGC</valueName>
-<value>AKZ017</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.NEW.PAJK.WW.Y.0013.220215T0400Z-220215T2100Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -1441,6 +1441,134 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=ID1263E2ADAC98.WinterWeatherAdvisory.1263E2BE3AE0ID.MSOWSWMSO.a457d9e3f2a1120921b0a61871a1d24e</id>
+<updated>2022-02-14T02:50:00-07:00</updated>
+<published>2022-02-14T02:50:00-07:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Winter Weather Advisory issued February 14 at 2:50AM MST until February 15 at 11:00AM MST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=ID1263E2ADAC98.WinterWeatherAdvisory.1263E2BE3AE0ID.MSOWSWMSO.a457d9e3f2a1120921b0a61871a1d24e"/>
+<summary>...WINTER WEATHER ADVISORY IN EFFECT FROM 4 PM THIS AFTERNOON TO 10 AM PST TUESDAY ABOVE 2500 FEET... * WHAT...Snow expected above 2500 feet. Total snow accumulations of 3 to 6 inches. * WHERE...Elk River, Highway 11 Pierce to Headquarters, Pierce, Dixie, Elk City, and Highway 12 Lowell to Lolo Pass.</summary>
+<cap:event>Winter Weather Advisory</cap:event>
+<cap:effective>2022-02-14T02:50:00-07:00</cap:effective>
+<cap:expires>2022-02-15T11:00:00-07:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Northern Clearwater Mountains; Southern Clearwater Mountains</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>016035 016049 016085</value>
+<valueName>UGC</valueName>
+<value>IDZ005 IDZ006</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.NEW.KMSO.WW.Y.0013.220215T0000Z-220215T1800Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=ID1263E2ADAC98.WinterWeatherAdvisory.1263E2BE3AE0ID.MSOWSWMSO.4c3f15fba98fb9aaf48269b7d97eec20</id>
+<updated>2022-02-14T02:50:00-07:00</updated>
+<published>2022-02-14T02:50:00-07:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Winter Weather Advisory issued February 14 at 2:50AM MST until February 15 at 11:00AM MST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=ID1263E2ADAC98.WinterWeatherAdvisory.1263E2BE3AE0ID.MSOWSWMSO.4c3f15fba98fb9aaf48269b7d97eec20"/>
+<summary>...WINTER WEATHER ADVISORY IN EFFECT FROM 5 PM THIS AFTERNOON TO 11 AM MST TUESDAY... * WHAT...Snow expected. Total snow accumulations of 1 to 2 inches in the valleys and 3 to 5 inches over the higher terrain and mountain passes. * WHERE...Shoup, Bannock Pass, Highway 28 Tendoy to Lone Pine,</summary>
+<cap:event>Winter Weather Advisory</cap:event>
+<cap:effective>2022-02-14T02:50:00-07:00</cap:effective>
+<cap:expires>2022-02-15T11:00:00-07:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Eastern Lemhi County; Western Lemhi County</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>016037 016059 030001</value>
+<valueName>UGC</valueName>
+<value>IDZ009 IDZ010</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.NEW.KMSO.WW.Y.0013.220215T0000Z-220215T1800Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=IL1263E2ADAE28.HydrologicOutlook.1263E2AF94E0IL.LOTESFLOT.90f3a874605d3a0abfbdbec30dc7bd50</id>
+<updated>2022-02-14T03:54:00-06:00</updated>
+<published>2022-02-14T03:54:00-06:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Hydrologic Outlook issued February 14 at 3:54AM CST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=IL1263E2ADAE28.HydrologicOutlook.1263E2AF94E0IL.LOTESFLOT.90f3a874605d3a0abfbdbec30dc7bd50"/>
+<summary>...Heavy Rainfall Likely Wednesday Night... Current indications are that widespread significant rainfall is likely Wednesday night. Rainfall totals of 1 to 1.5 inches are expected, especially near and south of a Chicago to LaSalle Peru line including northwest Indiana. Latest analysis from the National Operational Hydrologic Remote</summary>
+<cap:event>Hydrologic Outlook</cap:event>
+<cap:effective>2022-02-14T03:54:00-06:00</cap:effective>
+<cap:expires>2022-02-14T16:00:00-06:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Future</cap:urgency>
+<cap:severity>Unknown</cap:severity>
+<cap:certainty>Possible</cap:certainty>
+<cap:areaDesc>Boone; Cook; De Kalb; DuPage; Ford; Grundy; Iroquois; Kane; Kankakee; Kendall; La Salle; Lake; Lee; Livingston; McHenry; Ogle; Will; Winnebago</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>017007 017031 017037 017043 017053 017063 017075 017089 017091 017093 017097 017099 017103 017105 017111 017141 017197 017201</value>
+<valueName>UGC</valueName>
+<value>ILC007 ILC031 ILC037 ILC043 ILC053 ILC063 ILC075 ILC089 ILC091 ILC093 ILC097 ILC099 ILC103 ILC105 ILC111 ILC141 ILC197 ILC201</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value></value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=IN1263E2ADAE28.HydrologicOutlook.1263E2AF94E0IN.LOTESFLOT.5556d6b8faadcad67b0504d52f1c38b2</id>
+<updated>2022-02-14T04:54:00-05:00</updated>
+<published>2022-02-14T04:54:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Hydrologic Outlook issued February 14 at 4:54AM EST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=IN1263E2ADAE28.HydrologicOutlook.1263E2AF94E0IN.LOTESFLOT.5556d6b8faadcad67b0504d52f1c38b2"/>
+<summary>...Heavy Rainfall Likely Wednesday Night... Current indications are that widespread significant rainfall is likely Wednesday night. Rainfall totals of 1 to 1.5 inches are expected, especially near and south of a Chicago to LaSalle Peru line including northwest Indiana. Latest analysis from the National Operational Hydrologic Remote</summary>
+<cap:event>Hydrologic Outlook</cap:event>
+<cap:effective>2022-02-14T04:54:00-05:00</cap:effective>
+<cap:expires>2022-02-14T17:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Future</cap:urgency>
+<cap:severity>Unknown</cap:severity>
+<cap:certainty>Possible</cap:certainty>
+<cap:areaDesc>Benton; Jasper; Lake; Newton; Porter</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>018007 018073 018089 018111 018127</value>
+<valueName>UGC</valueName>
+<value>INC007 INC073 INC089 INC111 INC127</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value></value>
+</cap:parameter>
+</entry>
+<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=KS1263E2ADA07C.FireWeatherWatch.1263E2CABE00KS.GIDRFWGID.12fcef28df754b9e43857d33f10e2f46</id>
 <updated>2022-02-14T03:19:00-06:00</updated>
 <published>2022-02-14T03:19:00-06:00</published>
@@ -1826,35 +1954,195 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=NC1263E2AD2958.SpecialWeatherStatement.1263E2ADC020NC.RNKSPSRNK.e33395f4772c323f5e3ddf2c839e98c5</id>
-<updated>2022-02-14T01:14:00-05:00</updated>
-<published>2022-02-14T01:14:00-05:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=MT1263E2ADAEF0.WinterWeatherAdvisory.1263E2DA0040MT.BYZWSWBYZ.a23c2e7767a542132bde72e069d5b55e</id>
+<updated>2022-02-14T02:56:00-07:00</updated>
+<published>2022-02-14T02:56:00-07:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Special Weather Statement issued February 14 at 1:14AM EST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=NC1263E2AD2958.SpecialWeatherStatement.1263E2ADC020NC.RNKSPSRNK.e33395f4772c323f5e3ddf2c839e98c5"/>
-<summary>...Freezing Fog Developing Across Southside Virginia and Parts of the North Carolina Piedmont... As a result of moist ground and light to calm winds in the general area of Danville, South Boston, and Yanceyville, dense fog has formed during the last few hours. With temperatures well down into the 20s across this region, the fog has become freezing fog. Thus,</summary>
-<cap:event>Special Weather Statement</cap:event>
-<cap:effective>2022-02-14T01:14:00-05:00</cap:effective>
-<cap:expires>2022-02-14T05:00:00-05:00</cap:expires>
+<title>Winter Weather Advisory issued February 14 at 2:56AM MST until February 16 at 5:00PM MST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MT1263E2ADAEF0.WinterWeatherAdvisory.1263E2DA0040MT.BYZWSWBYZ.a23c2e7767a542132bde72e069d5b55e"/>
+<summary>...WINTER WEATHER ADVISORY IN EFFECT FROM 2 AM TUESDAY TO 5 PM MST WEDNESDAY... * WHAT...Snow expected. Total snow accumulations between 1 and 4 inches. Winds gusting as high as 35 mph. * WHERE...Livingston Area and Paradise Valley. * WHEN...From 2 AM Tuesday to 5 PM MST Wednesday.</summary>
+<cap:event>Winter Weather Advisory</cap:event>
+<cap:effective>2022-02-14T02:56:00-07:00</cap:effective>
+<cap:expires>2022-02-16T17:00:00-07:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
 <cap:category>Met</cap:category>
 <cap:urgency>Expected</cap:urgency>
 <cap:severity>Minor</cap:severity>
-<cap:certainty>Observed</cap:certainty>
-<cap:areaDesc>Caswell</cap:areaDesc>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Livingston Area; Paradise Valley</cap:areaDesc>
 <cap:polygon></cap:polygon>
 <cap:geocode>
 <valueName>FIPS6</valueName>
-<value>037033</value>
+<value>030067 030097</value>
 <valueName>UGC</valueName>
-<value>NCZ006</value>
+<value>MTZ064 MTZ065</value>
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
-<value></value>
+<value>/O.NEW.KBYZ.WW.Y.0010.220215T0900Z-220217T0000Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=MT1263E2ADAEF0.WinterWeatherAdvisory.1263E2DA0040MT.BYZWSWBYZ.91d3469b2be172ddb48b5499051183c2</id>
+<updated>2022-02-14T02:56:00-07:00</updated>
+<published>2022-02-14T02:56:00-07:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Winter Weather Advisory issued February 14 at 2:56AM MST until February 16 at 5:00PM MST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MT1263E2ADAEF0.WinterWeatherAdvisory.1263E2DA0040MT.BYZWSWBYZ.91d3469b2be172ddb48b5499051183c2"/>
+<summary>...WINTER WEATHER ADVISORY IN EFFECT FROM 5 AM TUESDAY TO 5 PM MST WEDNESDAY... * WHAT...Snow expected. Total snow accumulations between 1 and 4 inches. Locally higher amounts possible. Winds gusting as high as 35 mph. * WHERE...Beartooth Foothills and Red Lodge Foothills.</summary>
+<cap:event>Winter Weather Advisory</cap:event>
+<cap:effective>2022-02-14T02:56:00-07:00</cap:effective>
+<cap:expires>2022-02-16T17:00:00-07:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Beartooth Foothills; Red Lodge Foothills</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>030009 030067 030095 030097</value>
+<valueName>UGC</valueName>
+<value>MTZ056 MTZ066</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.NEW.KBYZ.WW.Y.0010.220215T1200Z-220217T0000Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=MT1263E2ADAC98.WinterWeatherAdvisory.1263E2BE3AE0MT.MSOWSWMSO.c6266d20b9604f65945daa28173f96b4</id>
+<updated>2022-02-14T02:50:00-07:00</updated>
+<published>2022-02-14T02:50:00-07:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Winter Weather Advisory issued February 14 at 2:50AM MST until February 15 at 11:00AM MST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MT1263E2ADAC98.WinterWeatherAdvisory.1263E2BE3AE0MT.MSOWSWMSO.c6266d20b9604f65945daa28173f96b4"/>
+<summary>...WINTER WEATHER ADVISORY IN EFFECT FROM 5 PM THIS AFTERNOON TO 11 AM MST TUESDAY... * WHAT...Snow expected. Total snow accumulations of 1 to 3 inches in the valleys and 3 to 5 inches over the higher terrain and mountain passes. * WHERE...Highway 93 Sula to Lost Trail Pass, Lolo Pass, Butte,</summary>
+<cap:event>Winter Weather Advisory</cap:event>
+<cap:effective>2022-02-14T02:50:00-07:00</cap:effective>
+<cap:expires>2022-02-15T11:00:00-07:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Bitterroot, Sapphire Mountains; Butte, Blackfoot Region</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>030023 030039 030077 030081 030093</value>
+<valueName>UGC</valueName>
+<value>MTZ006 MTZ007</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.NEW.KMSO.WW.Y.0013.220215T0000Z-220215T1800Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=MT1263E2ADAA40.WinterWeatherAdvisory.1263E2BE3AE0MT.TFXWSWTFX.bc1f95e84a2a467f3cd841c37b5e722b</id>
+<updated>2022-02-14T02:44:00-07:00</updated>
+<published>2022-02-14T02:44:00-07:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Winter Weather Advisory issued February 14 at 2:44AM MST until February 15 at 11:00AM MST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MT1263E2ADAA40.WinterWeatherAdvisory.1263E2BE3AE0MT.TFXWSWTFX.bc1f95e84a2a467f3cd841c37b5e722b"/>
+<summary>...WINTER WEATHER ADVISORY IN EFFECT FROM 7 PM THIS EVENING TO 11 AM MST TUESDAY... * WHAT...Snow expected. Total snow accumulations between 2 and 4 inches over the mountains with up to 2 inches in the valleys. * WHERE...Beaverhead, Jefferson and Central and Southern Lewis and Clark Counties.</summary>
+<cap:event>Winter Weather Advisory</cap:event>
+<cap:effective>2022-02-14T02:44:00-07:00</cap:effective>
+<cap:expires>2022-02-15T11:00:00-07:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Beaverhead; Central and Southern Lewis and Clark; Jefferson</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>016033 016043 016059 030001 030043 030049</value>
+<valueName>UGC</valueName>
+<value>MTZ008 MTZ014 MTZ052</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.NEW.KTFX.WW.Y.0015.220215T0200Z-220215T1800Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=MT1263E2ADAA40.WinterWeatherAdvisory.1263E2BEB010MT.TFXWSWTFX.07199aa7b17cb53fae972fa146f8fd30</id>
+<updated>2022-02-14T02:44:00-07:00</updated>
+<published>2022-02-14T02:44:00-07:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Winter Weather Advisory issued February 14 at 2:44AM MST until February 15 at 2:00PM MST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MT1263E2ADAA40.WinterWeatherAdvisory.1263E2BEB010MT.TFXWSWTFX.07199aa7b17cb53fae972fa146f8fd30"/>
+<summary>...WINTER WEATHER ADVISORY IN EFFECT FROM 11 PM THIS EVENING TO 2 PM MST TUESDAY... * WHAT...Snow expected. Total snow accumulations between 2 and 5 inches with up to 8 inches in northern portions of the Gallatin and Madison Ranges. * WHERE...Gallatin and Madison Counties.</summary>
+<cap:event>Winter Weather Advisory</cap:event>
+<cap:effective>2022-02-14T02:44:00-07:00</cap:effective>
+<cap:expires>2022-02-15T14:00:00-07:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Gallatin; Madison</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>030031 030057</value>
+<valueName>UGC</valueName>
+<value>MTZ015 MTZ055</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.NEW.KTFX.WW.Y.0015.220215T0600Z-220215T2100Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=MT1263E2ADAA40.WinterWeatherAdvisory.1263E2CABE00MT.TFXWSWTFX.ba5b244ee181781cbb56ad3cfecd33c3</id>
+<updated>2022-02-14T02:44:00-07:00</updated>
+<published>2022-02-14T02:44:00-07:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Winter Weather Advisory issued February 14 at 2:44AM MST until February 15 at 5:00PM MST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MT1263E2ADAA40.WinterWeatherAdvisory.1263E2CABE00MT.TFXWSWTFX.ba5b244ee181781cbb56ad3cfecd33c3"/>
+<summary>...WINTER WEATHER ADVISORY IN EFFECT FROM 9 PM THIS EVENING TO 5 PM MST TUESDAY... * WHAT...Snow expected. Total snow accumulations 3 to 6 inches in the mountains and foothills between the Little Belts and Highwoods with up to 2 inches at lower elevations. Winds gusting as high as 30 mph Tuesday afternoon.</summary>
+<cap:event>Winter Weather Advisory</cap:event>
+<cap:effective>2022-02-14T02:44:00-07:00</cap:effective>
+<cap:expires>2022-02-15T17:00:00-07:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Broadwater; Cascade; Fergus; Judith Basin; Meagher</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>030007 030013 030027 030045 030049 030059</value>
+<valueName>UGC</valueName>
+<value>MTZ012 MTZ050 MTZ051 MTZ053 MTZ054</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.NEW.KTFX.WW.Y.0015.220215T0400Z-220216T0000Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -2723,38 +3011,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=PA1263E2AD86B4.SpecialWeatherStatement.1263E2ADAAA4PA.CTPSPSCTP.0ddf919cbf84ca4bd8ee92d3c774a5dc</id>
-<updated>2022-02-14T03:53:00-05:00</updated>
-<published>2022-02-14T03:53:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Special Weather Statement issued February 14 at 3:53AM EST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=PA1263E2AD86B4.SpecialWeatherStatement.1263E2ADAAA4PA.CTPSPSCTP.0ddf919cbf84ca4bd8ee92d3c774a5dc"/>
-<summary>...A SNOW SQUALL WILL AFFECT PARTS OF PERRY...FULTON...FRANKLIN... CUMBERLAND...JUNIATA...AND HUNTINGDON COUNTIES... HAZARDS...A snow squall which can rapidly reduce visibility to less than one half of a mile and quickly leave a coating of snow on roads. LOCATION AND MOVEMENT...At 352 AM EST, a snow squall was along a line extending from 22 miles northwest of Shippensburg to 23 miles north</summary>
-<cap:event>Special Weather Statement</cap:event>
-<cap:effective>2022-02-14T03:53:00-05:00</cap:effective>
-<cap:expires>2022-02-14T04:45:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Observed</cap:certainty>
-<cap:areaDesc>Cumberland; Franklin; Fulton; Huntingdon; Juniata; Perry</cap:areaDesc>
-<cap:polygon>39.97,-77.98 40.32,-78.25 40.35,-78.22 40.37,-78.07 40.36,-77.72 40.04,-77.34 39.9,-77.54 39.9,-77.66 39.97,-77.98</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>042041 042055 042057 042061 042067 042099</value>
-<valueName>UGC</valueName>
-<value>PAZ026 PAZ028 PAZ035 PAZ036 PAZ056 PAZ063</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value></value>
-</cap:parameter>
-</entry>
-<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=PR1263E2AD7200.RipCurrentStatement.1263E2BD0260PR.JSJCFWSJU.161cf4257e9e7fa32348641456bcd5ab</id>
 <updated>2022-02-14T04:00:00-04:00</updated>
 <published>2022-02-14T04:00:00-04:00</published>
@@ -3075,6 +3331,38 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=VA1263E2ADC0E8.SpecialWeatherStatement.1263E2ADCBD8VA.LWXSPSLWX.c20cfb96310ae0885c66f6b1ce4ea666</id>
+<updated>2022-02-14T05:02:00-05:00</updated>
+<published>2022-02-14T05:02:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Special Weather Statement issued February 14 at 5:02AM EST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=VA1263E2ADC0E8.SpecialWeatherStatement.1263E2ADCBD8VA.LWXSPSLWX.c20cfb96310ae0885c66f6b1ce4ea666"/>
+<summary>...SNOW SHOWERS WILL AFFECT SOUTHEASTERN STAFFORD...KING GEORGE AND NORTHEASTERN SPOTSYLVANIA COUNTIES AND THE CITY OF FREDERICKSBURG... At 501 AM EST, snow showers were located 7 miles southwest of Fairview Beach, moving east at 20 mph. Snowfall will coat the ground causing slippery conditions. Visibility will be locally reduced to one-half mile at times. Be</summary>
+<cap:event>Special Weather Statement</cap:event>
+<cap:effective>2022-02-14T05:02:00-05:00</cap:effective>
+<cap:expires>2022-02-14T05:30:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Observed</cap:certainty>
+<cap:areaDesc>King George; Spotsylvania; Stafford</cap:areaDesc>
+<cap:polygon>38.16,-77.09 38.15,-77.12 38.2,-77.22 38.2,-77.25 38.23,-77.25 38.24,-77.22 38.25,-77.25 38.22,-77.29 38.24,-77.29 38.25,-77.34 38.24,-77.38 38.26,-77.45 38.26,-77.56 38.31,-77.54 38.32,-77.39 38.31,-77.03 38.28,-77 38.26,-77.05 38.18,-77.05 38.14,-77.07 38.16,-77.09</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>051099 051177 051179 051630</value>
+<valueName>UGC</valueName>
+<value>VAZ055 VAZ056 VAZ057</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value></value>
+</cap:parameter>
+</entry>
+<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=VA1263E2AD7D54.SpecialWeatherStatement.1263E2AE8370VA.RLXSPSRLX.f49d6bf2b3ffdb978b29f68d9dfe3b7b</id>
 <updated>2022-02-14T03:29:00-05:00</updated>
 <published>2022-02-14T03:29:00-05:00</published>
@@ -3132,38 +3420,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <value>051005 051021 051023 051035 051045 051063 051071 051077 051121 051155 051161 051173 051185 051197 051580 051640 051750 051770 051775</value>
 <valueName>UGC</valueName>
 <value>VAZ007 VAZ009 VAZ010 VAZ011 VAZ012 VAZ013 VAZ014 VAZ015 VAZ016 VAZ017 VAZ018 VAZ019 VAZ022 VAZ023</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value></value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=VA1263E2AD2958.SpecialWeatherStatement.1263E2ADC020VA.RNKSPSRNK.4227eb90c428835ea85fe8cadb50b0fa</id>
-<updated>2022-02-14T01:14:00-05:00</updated>
-<published>2022-02-14T01:14:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Special Weather Statement issued February 14 at 1:14AM EST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=VA1263E2AD2958.SpecialWeatherStatement.1263E2ADC020VA.RNKSPSRNK.4227eb90c428835ea85fe8cadb50b0fa"/>
-<summary>...Freezing Fog Developing Across Southside Virginia and Parts of the North Carolina Piedmont... As a result of moist ground and light to calm winds in the general area of Danville, South Boston, and Yanceyville, dense fog has formed during the last few hours. With temperatures well down into the 20s across this region, the fog has become freezing fog. Thus,</summary>
-<cap:event>Special Weather Statement</cap:event>
-<cap:effective>2022-02-14T01:14:00-05:00</cap:effective>
-<cap:expires>2022-02-14T05:00:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Observed</cap:certainty>
-<cap:areaDesc>Halifax; Pittsylvania</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>051083 051143 051590</value>
-<valueName>UGC</valueName>
-<value>VAZ044 VAZ058</value>
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
