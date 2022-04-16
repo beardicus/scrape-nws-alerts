@@ -16,16 +16,48 @@ xmlns = 'http://www.w3.org/2005/Atom'
 xmlns:cap = 'urn:oasis:names:tc:emergency:cap:1.1'
 xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 >
-<!-- http-date = Sat, 16 Apr 2022 15:33:00 GMT -->
+<!-- http-date = Sat, 16 Apr 2022 16:02:00 GMT -->
 <id>https://alerts.weather.gov/cap/us.php?x=0</id>
 <logo>http://alerts.weather.gov/images/xml_logo.gif</logo>
 <generator>NWS CAP Server</generator>
-<updated>2022-04-16T10:33:00-05:00</updated>
+<updated>2022-04-16T10:02:00-06:00</updated>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
 <title>Current Watches, Warnings and Advisories for the United States Issued by the National Weather Service</title>
 <link href="https://alerts.weather.gov/cap/us.php?x=0"/>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=AL1263EEB8E0FC.SpecialWeatherStatement.1263EEB90294AL.MOBSPSMOB.e7f145c96408deccca65cd1e1c92fecf</id>
+<updated>2022-04-16T10:59:00-05:00</updated>
+<published>2022-04-16T10:59:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Special Weather Statement issued April 16 at 10:59AM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=AL1263EEB8E0FC.SpecialWeatherStatement.1263EEB90294AL.MOBSPSMOB.e7f145c96408deccca65cd1e1c92fecf"/>
+<summary>...A strong thunderstorm will impact portions of central Monroe and central Conecuh Counties through 1145 AM CDT... At 1059 AM CDT, National Weather Service doppler radar indicated a strong thunderstorm near Monroeville, moving southeast at 15 mph. HAZARD...Winds in excess of 30 to 40 mph and pea size hail. SOURCE...Radar indicated.</summary>
+<cap:event>Special Weather Statement</cap:event>
+<cap:effective>2022-04-16T10:59:00-05:00</cap:effective>
+<cap:expires>2022-04-16T11:45:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Observed</cap:certainty>
+<cap:areaDesc>Conecuh; Monroe</cap:areaDesc>
+<cap:polygon>31.53,-86.86 31.26,-87.4 31.26,-87.42 31.6,-87.56 31.72,-87.25 31.53,-86.86</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>001035 001099</value>
+<valueName>UGC</valueName>
+<value>ALZ055 ALZ056</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value></value>
+</cap:parameter>
+</entry>
 <entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=AL1263EEB8D6D4.FloodWarning.1263EEC81DC4AL.MOBFLSMOB.177c2e3754c8e9dccd2512b75d31185a</id>
 <updated>2022-04-16T10:33:00-05:00</updated>
@@ -90,38 +122,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <valueName>VTEC</valueName>
 <value>/O.CON.KMOB.FL.W.0031.000000T0000Z-000000T0000Z/
 /CLDA1.1.ER.220414T2244Z.220421T0600Z.000000T0000Z.NO/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=AL1263EEB8D094.SpecialWeatherStatement.1263EEB8F100AL.MOBSPSMOB.e33b2a1863f4622bb9bc89b16c208ad1</id>
-<updated>2022-04-16T10:17:00-05:00</updated>
-<published>2022-04-16T10:17:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Special Weather Statement issued April 16 at 10:17AM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=AL1263EEB8D094.SpecialWeatherStatement.1263EEB8F100AL.MOBSPSMOB.e33b2a1863f4622bb9bc89b16c208ad1"/>
-<summary>...A strong thunderstorm will impact portions of Monroe, east central Clarke and northwestern Conecuh Counties through 1100 AM CDT... At 1016 AM CDT, National Weather Service doppler radar indicated a strong thunderstorm 10 miles southwest of Vredenburgh, or 15 miles northwest of Monroeville, moving southeast at 20 mph. HAZARD...Winds in excess of 40 mph and half inch hail.</summary>
-<cap:event>Special Weather Statement</cap:event>
-<cap:effective>2022-04-16T10:17:00-05:00</cap:effective>
-<cap:expires>2022-04-16T11:00:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Observed</cap:certainty>
-<cap:areaDesc>Clarke; Conecuh; Monroe</cap:areaDesc>
-<cap:polygon>31.6,-86.89 31.24,-87.53 31.69,-87.66 31.83,-87.41 31.83,-87.25 31.6,-86.89</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>001025 001035 001099</value>
-<valueName>UGC</valueName>
-<value>ALZ053 ALZ055 ALZ056</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value></value>
 </cap:parameter>
 </entry>
 <entry>
@@ -290,31 +290,64 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=AR1263EEB8D2EC.SpecialWeatherStatement.1263EEB8F100AR.LZKSPSLZK.12b6620d181a43bdb7cb90aa0c6f61f9</id>
-<updated>2022-04-16T10:23:00-05:00</updated>
-<published>2022-04-16T10:23:00-05:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=AR1263EEB8DEA4.FlashFloodWarning.1263EEB952A8AR.LZKFFWLZK.d81190345c1f774a50ce939666f03fc9</id>
+<updated>2022-04-16T10:53:00-05:00</updated>
+<published>2022-04-16T10:53:00-05:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Special Weather Statement issued April 16 at 10:23AM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=AR1263EEB8D2EC.SpecialWeatherStatement.1263EEB8F100AR.LZKSPSLZK.12b6620d181a43bdb7cb90aa0c6f61f9"/>
-<summary>...A strong thunderstorm will impact portions of northwestern Garland, south central Yell and northeastern Montgomery Counties through 1100 AM CDT... At 1023 AM CDT, Doppler radar was tracking a strong thunderstorm 7 miles northeast of Mauldin, or 9 miles north of Mount Ida, moving southeast at 30 mph.</summary>
+<title>Flash Flood Warning issued April 16 at 10:53AM CDT until April 16 at 1:50PM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=AR1263EEB8DEA4.FlashFloodWarning.1263EEB952A8AR.LZKFFWLZK.d81190345c1f774a50ce939666f03fc9"/>
+<summary>The National Weather Service in Little Rock has issued a * Flash Flood Warning for... Southern Garland County in central Arkansas... Northeastern Clark County in southwestern Arkansas... Hot Spring County in southwestern Arkansas... * Until 150 PM CDT.</summary>
+<cap:event>Flash Flood Warning</cap:event>
+<cap:effective>2022-04-16T10:53:00-05:00</cap:effective>
+<cap:expires>2022-04-16T13:50:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Immediate</cap:urgency>
+<cap:severity>Severe</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Clark; Garland; Hot Spring</cap:areaDesc>
+<cap:polygon>34.37,-93.39 34.53,-93.22 34.55,-93.09 34.51,-92.92 34.44,-92.76 34.37,-92.68 34.17,-92.71 34.15,-92.83 34.15,-92.84 34.15,-92.86 34.16,-92.88 34.16,-92.89 34.15,-92.89 34.16,-92.97 34.16,-93 34.2,-93.18 34.26,-93.38 34.37,-93.39</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>005019 005051 005059</value>
+<valueName>UGC</valueName>
+<value>ARC019 ARC051 ARC059</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.NEW.KLZK.FF.W.0021.220416T1553Z-220416T1850Z/
+/00000.0.ER.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=AR1263EEB8DCB0.SpecialWeatherStatement.1263EEB8F6DCAR.LZKSPSLZK.8bc4d49c8c6ebbb5eb64486e44382938</id>
+<updated>2022-04-16T10:48:00-05:00</updated>
+<published>2022-04-16T10:48:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Special Weather Statement issued April 16 at 10:48AM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=AR1263EEB8DCB0.SpecialWeatherStatement.1263EEB8F6DCAR.LZKSPSLZK.8bc4d49c8c6ebbb5eb64486e44382938"/>
+<summary>...A strong thunderstorm will impact portions of Garland, central Hot Spring and east central Montgomery Counties through 1115 AM CDT... At 1048 AM CDT, Doppler radar was tracking a strong thunderstorm near Meyers, or 13 miles east of Mount Ida, moving southeast at 35 mph. HAZARD...Winds in excess of 40 mph and nickel size hail. SOURCE...Radar indicated.</summary>
 <cap:event>Special Weather Statement</cap:event>
-<cap:effective>2022-04-16T10:23:00-05:00</cap:effective>
-<cap:expires>2022-04-16T11:00:00-05:00</cap:expires>
+<cap:effective>2022-04-16T10:48:00-05:00</cap:effective>
+<cap:expires>2022-04-16T11:15:00-05:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
 <cap:category>Met</cap:category>
 <cap:urgency>Expected</cap:urgency>
 <cap:severity>Minor</cap:severity>
 <cap:certainty>Observed</cap:certainty>
-<cap:areaDesc>Central and Eastern Montgomery County; Garland; Northern Montgomery County Higher Elevations; Yell Excluding Northwest</cap:areaDesc>
-<cap:polygon>34.81,-93.58 34.75,-93.11 34.45,-93.4 34.62,-93.71 34.81,-93.58</cap:polygon>
+<cap:areaDesc>Central and Eastern Montgomery County; Garland; Hot Spring</cap:areaDesc>
+<cap:polygon>34.68,-93.4 34.69,-93.39 34.64,-92.98 34.64,-92.97 34.63,-92.88 34.32,-93.05 34.5,-93.52 34.68,-93.4</cap:polygon>
 <cap:geocode>
 <valueName>FIPS6</valueName>
-<value>005051 005097 005149</value>
+<value>005051 005059 005097</value>
 <valueName>UGC</valueName>
-<value>ARZ042 ARZ141 ARZ238 ARZ241</value>
+<value>ARZ042 ARZ054 ARZ141</value>
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
@@ -322,63 +355,97 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=AR1263EEB8D1C0.SevereThunderstormWarning.1263EEB8F100AR.LZKSVRLZK.b5ac6594cb60b3ee6e1567136193b0c3</id>
-<updated>2022-04-16T10:20:00-05:00</updated>
-<published>2022-04-16T10:20:00-05:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=AR1263EEB8DCB0.FloodAdvisory.1263EF3266C0AR.MEGFLSMEG.2d9f6ba027967fdf7ba3d96cb89755ce</id>
+<updated>2022-04-16T10:48:00-05:00</updated>
+<published>2022-04-16T10:48:00-05:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Severe Thunderstorm Warning issued April 16 at 10:20AM CDT until April 16 at 11:00AM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=AR1263EEB8D1C0.SevereThunderstormWarning.1263EEB8F100AR.LZKSVRLZK.b5ac6594cb60b3ee6e1567136193b0c3"/>
-<summary>The National Weather Service in Little Rock has issued a * Severe Thunderstorm Warning for... Northeastern Clark County in southwestern Arkansas... Southwestern Grant County in central Arkansas... Northern Dallas County in southwestern Arkansas... Southeastern Hot Spring County in southwestern Arkansas...</summary>
-<cap:event>Severe Thunderstorm Warning</cap:event>
-<cap:effective>2022-04-16T10:20:00-05:00</cap:effective>
-<cap:expires>2022-04-16T11:00:00-05:00</cap:expires>
+<title>Flood Advisory issued April 16 at 10:48AM CDT until April 24 at 7:00AM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=AR1263EEB8DCB0.FloodAdvisory.1263EF3266C0AR.MEGFLSMEG.2d9f6ba027967fdf7ba3d96cb89755ce"/>
+<summary>...The Flood Advisory is extended for the following rivers in Tennessee...Arkansas...Missouri... Mississippi River at Caruthersville Mississippi River at Osceola For the Lower Mississippi River...including Tiptonville, Caruthersville, Osceola, Memphis, Tunica Mhoon Landing, Helena...</summary>
+<cap:event>Flood Advisory</cap:event>
+<cap:effective>2022-04-16T10:48:00-05:00</cap:effective>
+<cap:expires>2022-04-24T07:00:00-05:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
 <cap:category>Met</cap:category>
-<cap:urgency>Immediate</cap:urgency>
-<cap:severity>Severe</cap:severity>
-<cap:certainty>Observed</cap:certainty>
-<cap:areaDesc>Clark; Dallas; Grant; Hot Spring</cap:areaDesc>
-<cap:polygon>34.19,-92.95 34.3,-92.9 34.37,-92.69 34.35,-92.34 34.11,-92.42 33.99,-92.54 34.08,-92.86 34.19,-92.95</cap:polygon>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Mississippi</cap:areaDesc>
+<cap:polygon>36.23,-89.77 36.23,-89.48 36.06,-89.5 35.95,-89.48 35.82,-89.56 35.82,-89.85 36.23,-89.77</cap:polygon>
 <cap:geocode>
 <valueName>FIPS6</valueName>
-<value>005019 005039 005053 005059</value>
+<value>005093</value>
 <valueName>UGC</valueName>
-<value>ARC019 ARC039 ARC053 ARC059</value>
+<value>ARC093</value>
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
-<value>/O.NEW.KLZK.SV.W.0107.220416T1520Z-220416T1600Z/</value>
+<value>/O.EXT.KMEG.FL.Y.0023.000000T0000Z-220424T1200Z/
+/CRTM7.N.ER.000000T0000Z.000000T0000Z.000000T0000Z.NO/</value>
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=AR1263EEB8B53C.SpecialWeatherStatement.1263EEB8DB84AR.JANSPSJAN.d527492f0fde774904a95c7981d3be1f</id>
-<updated>2022-04-16T09:47:00-05:00</updated>
-<published>2022-04-16T09:47:00-05:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=AR1263EEB8DCB0.FloodAdvisory.1263EF335120AR.MEGFLSMEG.85dd278aa2635f4a3a075c4753c86208</id>
+<updated>2022-04-16T10:48:00-05:00</updated>
+<published>2022-04-16T10:48:00-05:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Special Weather Statement issued April 16 at 9:47AM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=AR1263EEB8B53C.SpecialWeatherStatement.1263EEB8DB84AR.JANSPSJAN.d527492f0fde774904a95c7981d3be1f"/>
-<summary>...A strong thunderstorm will impact portions of southwestern Chicot County, northeastern East Carroll and northeastern West Carroll Parishes, southwestern Washington and northwestern Issaquena Counties through 1045 AM CDT... At 946 AM CDT, Doppler radar was tracking a strong thunderstorm near Gassoway, or 9 miles south of Eudora, moving east at 25 mph.</summary>
+<title>Flood Advisory issued April 16 at 10:48AM CDT until April 24 at 1:00PM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=AR1263EEB8DCB0.FloodAdvisory.1263EF335120AR.MEGFLSMEG.85dd278aa2635f4a3a075c4753c86208"/>
+<summary>...The Flood Advisory is extended for the following rivers in Tennessee...Arkansas...Missouri... Mississippi River at Caruthersville Mississippi River at Osceola For the Lower Mississippi River...including Tiptonville, Caruthersville, Osceola, Memphis, Tunica Mhoon Landing, Helena...</summary>
+<cap:event>Flood Advisory</cap:event>
+<cap:effective>2022-04-16T10:48:00-05:00</cap:effective>
+<cap:expires>2022-04-24T13:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Mississippi</cap:areaDesc>
+<cap:polygon>35.82,-89.96 35.82,-89.56 35.6,-89.79 35.39,-89.95 35.39,-90.25 35.82,-89.96</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>005093</value>
+<valueName>UGC</valueName>
+<value>ARC093</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.EXT.KMEG.FL.Y.0022.000000T0000Z-220424T1800Z/
+/OSGA4.N.ER.000000T0000Z.000000T0000Z.000000T0000Z.NO/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=AR1263EEB8DC4C.SpecialWeatherStatement.1263EEB8F6DCAR.LZKSPSLZK.f1e8c0c4919377b0df417bc80a0f0287</id>
+<updated>2022-04-16T10:47:00-05:00</updated>
+<published>2022-04-16T10:47:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Special Weather Statement issued April 16 at 10:47AM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=AR1263EEB8DC4C.SpecialWeatherStatement.1263EEB8F6DCAR.LZKSPSLZK.f1e8c0c4919377b0df417bc80a0f0287"/>
+<summary>...A strong thunderstorm will impact portions of northwestern Cleveland, southeastern Grant, northeastern Dallas and southwestern Jefferson Counties through 1115 AM CDT... At 1046 AM CDT, Doppler radar was tracking a strong thunderstorm over Carthage, or 17 miles north of Fordyce, moving east at 30 mph. HAZARD...Wind gusts of 50 to 55 mph and nickel size hail.</summary>
 <cap:event>Special Weather Statement</cap:event>
-<cap:effective>2022-04-16T09:47:00-05:00</cap:effective>
-<cap:expires>2022-04-16T10:45:00-05:00</cap:expires>
+<cap:effective>2022-04-16T10:47:00-05:00</cap:effective>
+<cap:expires>2022-04-16T11:15:00-05:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
 <cap:category>Met</cap:category>
 <cap:urgency>Expected</cap:urgency>
 <cap:severity>Minor</cap:severity>
 <cap:certainty>Observed</cap:certainty>
-<cap:areaDesc>Chicot</cap:areaDesc>
-<cap:polygon>33.11,-91.41 33.13,-90.9 33.1,-90.9 33.1,-90.92 33,-90.91 32.91,-90.92 32.89,-90.94 32.86,-90.94 32.85,-90.96 32.84,-90.96 32.89,-91.41 33.11,-91.41</cap:polygon>
+<cap:areaDesc>Cleveland; Dallas; Grant; Jefferson</cap:areaDesc>
+<cap:polygon>34.02,-92.63 34.16,-92.56 34.17,-92.13 33.87,-92.24 34.02,-92.63</cap:polygon>
 <cap:geocode>
 <valueName>FIPS6</valueName>
-<value>005017</value>
+<value>005025 005039 005053 005069</value>
 <valueName>UGC</valueName>
-<value>ARZ075</value>
+<value>ARZ055 ARZ056 ARZ062 ARZ063</value>
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
@@ -419,18 +486,18 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=AR1263EEB88EF4.FloodAdvisory.1263EEB8F100AR.TSAFLSTSA.2ebebe60d54d87a6e6befe1876ad3178</id>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=AR1263EEB88EF4.FloodAdvisory.1263EEB952A8AR.TSAFLSTSA.2ebebe60d54d87a6e6befe1876ad3178</id>
 <updated>2022-04-16T08:49:00-05:00</updated>
 <published>2022-04-16T08:49:00-05:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Flood Advisory issued April 16 at 8:49AM CDT until April 16 at 11:00AM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=AR1263EEB88EF4.FloodAdvisory.1263EEB8F100AR.TSAFLSTSA.2ebebe60d54d87a6e6befe1876ad3178"/>
+<title>Flood Advisory issued April 16 at 8:49AM CDT until April 16 at 1:50PM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=AR1263EEB88EF4.FloodAdvisory.1263EEB952A8AR.TSAFLSTSA.2ebebe60d54d87a6e6befe1876ad3178"/>
 <summary>...FLOOD ADVISORY IN EFFECT UNTIL NOON CDT TODAY... * WHAT...Urban and small stream flooding caused by excessive rainfall is expected. * WHERE...Portions of northwest Arkansas and west central Arkansas, including the following counties, in northwest Arkansas, Crawford. In west central Arkansas, Franklin and Sebastian.</summary>
 <cap:event>Flood Advisory</cap:event>
 <cap:effective>2022-04-16T08:49:00-05:00</cap:effective>
-<cap:expires>2022-04-16T11:00:00-05:00</cap:expires>
+<cap:expires>2022-04-16T13:50:00-05:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
 <cap:category>Met</cap:category>
@@ -485,64 +552,31 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=AR1263EEB7C8E8.FloodWatch.1263EEB8DB84AR.LZKFFALZK.6e0dd0accc1b9d233eade75f7aacf198</id>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=AR1263EEB7C8E8.FloodWatch.1263EEB8F6DCAR.LZKFFALZK.8df5989445e23b5abfdcf28fb4e0c445</id>
 <updated>2022-04-16T03:42:00-05:00</updated>
 <published>2022-04-16T03:42:00-05:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
 <title>Flood Watch issued April 16 at 3:42AM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=AR1263EEB7C8E8.FloodWatch.1263EEB8DB84AR.LZKFFALZK.6e0dd0accc1b9d233eade75f7aacf198"/>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=AR1263EEB7C8E8.FloodWatch.1263EEB8F6DCAR.LZKFFALZK.8df5989445e23b5abfdcf28fb4e0c445"/>
 <summary>...FLOOD WATCH REMAINS IN EFFECT UNTIL 1 PM CDT THIS AFTERNOON... * WHAT...Flooding caused by excessive rainfall continues to be possible. * WHERE...Portions of central Arkansas, eastern Arkansas, north central Arkansas, southeast Arkansas, southwest Arkansas and western Arkansas, including the following areas, in central</summary>
 <cap:event>Flood Watch</cap:event>
 <cap:effective>2022-04-16T03:42:00-05:00</cap:effective>
-<cap:expires>2022-04-16T10:45:00-05:00</cap:expires>
+<cap:expires>2022-04-16T11:15:00-05:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
 <cap:category>Met</cap:category>
 <cap:urgency>Future</cap:urgency>
 <cap:severity>Moderate</cap:severity>
 <cap:certainty>Possible</cap:certainty>
-<cap:areaDesc>Central and Eastern Montgomery County; Northern Scott County; Northwest Yell County; Southeast Van Buren County; Southern Johnson County; Southern Pope County; Western and Northern Logan County</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>005071 005083 005097 005115 005127 005141 005149</value>
-<valueName>UGC</valueName>
-<value>ARZ121 ARZ122 ARZ123 ARZ130 ARZ137 ARZ138 ARZ141</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KLZK.FA.A.0003.000000T0000Z-220416T1800Z/
-/00000.0.ER.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=AR1263EEB7C8E8.FloodWatch.1263EEB8F100AR.LZKFFALZK.e5fd4a097c4f373d9f2e3665456458ea</id>
-<updated>2022-04-16T03:42:00-05:00</updated>
-<published>2022-04-16T03:42:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Flood Watch issued April 16 at 3:42AM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=AR1263EEB7C8E8.FloodWatch.1263EEB8F100AR.LZKFFALZK.e5fd4a097c4f373d9f2e3665456458ea"/>
-<summary>...FLOOD WATCH REMAINS IN EFFECT UNTIL 1 PM CDT THIS AFTERNOON... * WHAT...Flooding caused by excessive rainfall continues to be possible. * WHERE...Portions of central Arkansas, eastern Arkansas, north central Arkansas, southeast Arkansas, southwest Arkansas and western Arkansas, including the following areas, in central</summary>
-<cap:event>Flood Watch</cap:event>
-<cap:effective>2022-04-16T03:42:00-05:00</cap:effective>
-<cap:expires>2022-04-16T11:00:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Future</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Possible</cap:certainty>
-<cap:areaDesc>Arkansas; Central and Southern Scott County; Grant; Hot Spring; Jefferson; Johnson County Higher Elevations; Lincoln; Lonoke; Monroe; Northern Montgomery County Higher Elevations; Pope County Higher Elevations; Prairie; Pulaski; Saline; Southern and Eastern Logan County; Southwest Montgomery County Higher Elevations; Van Buren County Higher Elevations; Yell Excluding Northwest</cap:areaDesc>
+<cap:areaDesc>Arkansas; Central and Eastern Montgomery County; Central and Southern Scott County; Grant; Hot Spring; Jefferson; Johnson County Higher Elevations; Lincoln; Lonoke; Monroe; Northern Montgomery County Higher Elevations; Northern Scott County; Northwest Yell County; Pope County Higher Elevations; Prairie; Pulaski; Saline; Southeast Van Buren County; Southern Johnson County; Southern Pope County; Southern and Eastern Logan County; Southwest Montgomery County Higher Elevations; Van Buren County Higher Elevations; Western and Northern Logan County; Yell Excluding Northwest</cap:areaDesc>
 <cap:polygon></cap:polygon>
 <cap:geocode>
 <valueName>FIPS6</valueName>
 <value>005001 005053 005059 005069 005071 005079 005083 005085 005095 005097 005115 005117 005119 005125 005127 005141 005149</value>
 <valueName>UGC</valueName>
-<value>ARZ043 ARZ044 ARZ045 ARZ046 ARZ047 ARZ054 ARZ055 ARZ056 ARZ057 ARZ064 ARZ221 ARZ222 ARZ223 ARZ230 ARZ237 ARZ238 ARZ241 ARZ341</value>
+<value>ARZ043 ARZ044 ARZ045 ARZ046 ARZ047 ARZ054 ARZ055 ARZ056 ARZ057 ARZ064 ARZ121 ARZ122 ARZ123 ARZ130 ARZ137 ARZ138 ARZ141 ARZ221 ARZ222 ARZ223 ARZ230 ARZ237 ARZ238 ARZ241 ARZ341</value>
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
@@ -584,18 +618,18 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=AR1263EEB7C050.FloodWatch.1263EEB8F100AR.MEGFFAMEG.8c4050519fdea02e3b72d605e82f42b6</id>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=AR1263EEB7C050.FloodWatch.1263EEB8F6DCAR.MEGFFAMEG.8c4050519fdea02e3b72d605e82f42b6</id>
 <updated>2022-04-16T03:20:00-05:00</updated>
 <published>2022-04-16T03:20:00-05:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
 <title>Flood Watch issued April 16 at 3:20AM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=AR1263EEB7C050.FloodWatch.1263EEB8F100AR.MEGFFAMEG.8c4050519fdea02e3b72d605e82f42b6"/>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=AR1263EEB7C050.FloodWatch.1263EEB8F6DCAR.MEGFFAMEG.8c4050519fdea02e3b72d605e82f42b6"/>
 <summary>...FLOOD WATCH REMAINS IN EFFECT THROUGH THIS EVENING... * WHAT...Flooding caused by excessive rainfall continues to be possible. * WHERE...Portions of East Arkansas and North Mississippi, including the following areas, in East Arkansas, Lee AR and Phillips. In North Mississippi, Alcorn, Benton MS, Calhoun, Chickasaw, Coahoma,</summary>
 <cap:event>Flood Watch</cap:event>
 <cap:effective>2022-04-16T03:20:00-05:00</cap:effective>
-<cap:expires>2022-04-16T11:00:00-05:00</cap:expires>
+<cap:expires>2022-04-16T11:15:00-05:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
 <cap:category>Met</cap:category>
@@ -914,69 +948,35 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=AR1263EEA99A0C.FloodAdvisory.1263EF223A20AR.MEGFLSMEG.2d9f6ba027967fdf7ba3d96cb89755ce</id>
-<updated>2022-04-15T10:47:00-05:00</updated>
-<published>2022-04-15T10:47:00-05:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=AZ1263EEB8E098.RedFlagWarning.1263EEC63770AZ.FGZRFWFGZ.9cd605b81e1d6bfca9420919d481ccd3</id>
+<updated>2022-04-16T08:58:00-07:00</updated>
+<published>2022-04-16T08:58:00-07:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Flood Advisory issued April 15 at 10:47AM CDT until April 23 at 1:00AM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=AR1263EEA99A0C.FloodAdvisory.1263EF223A20AR.MEGFLSMEG.2d9f6ba027967fdf7ba3d96cb89755ce"/>
-<summary>...The National Weather Service in Memphis has issued a Flood Advisory for the following rivers in Tennessee...Arkansas... Missouri... Mississippi River at Caruthersville For the Lower Mississippi River...including Caruthersville, Osceola...elevated river levels are forecast.</summary>
-<cap:event>Flood Advisory</cap:event>
-<cap:effective>2022-04-15T10:47:00-05:00</cap:effective>
-<cap:expires>2022-04-23T01:00:00-05:00</cap:expires>
+<title>Red Flag Warning issued April 16 at 8:58AM MST until April 16 at 8:00PM MST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=AZ1263EEB8E098.RedFlagWarning.1263EEC63770AZ.FGZRFWFGZ.9cd605b81e1d6bfca9420919d481ccd3"/>
+<summary>...RED FLAG WARNING IN EFFECT FROM 11 AM UNTIL 8 PM ARIZONA TIME (12 PM TO 9 PM NAVAJO NATION TIME) DUE TO STRONG WINDS AND LOW RELATIVE HUMIDITY ACROSS NORTHERN ARIZONA AND THE NAVAJO NATION BELOW 7000 FEET ELEVATION. The National Weather Service in Flagstaff has issued a Red Flag Warning due to strong winds and low relative humidity, which is</summary>
+<cap:event>Red Flag Warning</cap:event>
+<cap:effective>2022-04-16T08:58:00-07:00</cap:effective>
+<cap:expires>2022-04-16T20:00:00-07:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
 <cap:category>Met</cap:category>
 <cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
+<cap:severity>Severe</cap:severity>
 <cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Mississippi</cap:areaDesc>
-<cap:polygon>36.23,-89.77 36.23,-89.48 36.06,-89.5 35.95,-89.48 35.82,-89.56 35.82,-89.85 36.23,-89.77</cap:polygon>
+<cap:areaDesc>Black Mesa Area; Chinle Valley; Chuska Mountains and Defiance Plateau; Eastern Mogollon Rim; Little Colorado River Valley in Apache County; Little Colorado River Valley in Coconino County; Little Colorado River Valley in Navajo County; Northeast Plateaus and Mesas Hwy 264 Northward; Northeast Plateaus and Mesas South of Hwy 264; White Mountains</cap:areaDesc>
+<cap:polygon></cap:polygon>
 <cap:geocode>
 <valueName>FIPS6</valueName>
-<value>005093</value>
+<value>004001 004005 004017</value>
 <valueName>UGC</valueName>
-<value>ARC093</value>
+<value>AZZ109 AZZ110 AZZ111 AZZ112 AZZ113 AZZ114 AZZ116 AZZ117 AZZ139 AZZ140</value>
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
-<value>/O.NEW.KMEG.FL.Y.0023.220415T1547Z-220423T0600Z/
-/CRTM7.N.ER.000000T0000Z.000000T0000Z.000000T0000Z.NO/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=AR1263EEA999A8.FloodAdvisory.1263EF240EE0AR.MEGFLSMEG.85dd278aa2635f4a3a075c4753c86208</id>
-<updated>2022-04-15T10:46:00-05:00</updated>
-<published>2022-04-15T10:46:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Flood Advisory issued April 15 at 10:46AM CDT until April 23 at 1:00PM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=AR1263EEA999A8.FloodAdvisory.1263EF240EE0AR.MEGFLSMEG.85dd278aa2635f4a3a075c4753c86208"/>
-<summary>...The Flood Advisory is extended for the following rivers in Tennessee...Arkansas... Mississippi River at Osceola For the Lower Mississippi River...including Caruthersville, Osceola...elevated river levels are forecast. ...FLOOD ADVISORY NOW IN EFFECT UNTIL SATURDAY, APRIL 23...</summary>
-<cap:event>Flood Advisory</cap:event>
-<cap:effective>2022-04-15T10:46:00-05:00</cap:effective>
-<cap:expires>2022-04-23T13:00:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Mississippi</cap:areaDesc>
-<cap:polygon>35.82,-89.96 35.82,-89.56 35.6,-89.79 35.39,-89.95 35.39,-90.25 35.82,-89.96</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>005093</value>
-<valueName>UGC</valueName>
-<value>ARC093</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.EXT.KMEG.FL.Y.0022.000000T0000Z-220423T1800Z/
-/OSGA4.N.ER.000000T0000Z.000000T0000Z.000000T0000Z.NO/</value>
+<value>/O.NEW.KFGZ.FW.W.0001.220416T1800Z-220417T0300Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -1750,6 +1750,70 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=FL1263EEB8DBE8.RipCurrentStatement.1263EEC5E950FL.TAECFWTAE.be0b0ed9961f9d18c0321155420cc533</id>
+<updated>2022-04-16T11:46:00-04:00</updated>
+<published>2022-04-16T11:46:00-04:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Rip Current Statement issued April 16 at 11:46AM EDT until April 16 at 9:00PM EDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=FL1263EEB8DBE8.RipCurrentStatement.1263EEC5E950FL.TAECFWTAE.be0b0ed9961f9d18c0321155420cc533"/>
+<summary>...HIGH RIP CURRENT RISK IN EFFECT UNTIL 8 PM CDT THIS EVENING... * WHAT...Dangerous rip currents. * WHERE...Walton County Beaches. * WHEN...Through this evening. * IMPACTS...Rip currents can sweep even the best swimmers away from shore into deeper water.</summary>
+<cap:event>Rip Current Statement</cap:event>
+<cap:effective>2022-04-16T11:46:00-04:00</cap:effective>
+<cap:expires>2022-04-16T21:00:00-04:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>South Walton</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>012131</value>
+<valueName>UGC</valueName>
+<value>FLZ108</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.EXA.KTAE.RP.S.0041.000000T0000Z-220417T0100Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=FL1263EEB8DBE8.RipCurrentStatement.1263EEC5E950FL.TAECFWTAE.8fe5d019c27cad8d9bdaa3c34a858939</id>
+<updated>2022-04-16T11:46:00-04:00</updated>
+<published>2022-04-16T11:46:00-04:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Rip Current Statement issued April 16 at 11:46AM EDT until April 16 at 9:00PM EDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=FL1263EEB8DBE8.RipCurrentStatement.1263EEC5E950FL.TAECFWTAE.8fe5d019c27cad8d9bdaa3c34a858939"/>
+<summary>...HIGH RIP CURRENT RISK REMAINS IN EFFECT UNTIL 9 PM EDT THIS EVENING... * WHAT...Dangerous rip currents. * WHERE...Franklin County Beaches. * WHEN...Through this evening. * IMPACTS...Rip currents can sweep even the best swimmers away</summary>
+<cap:event>Rip Current Statement</cap:event>
+<cap:effective>2022-04-16T11:46:00-04:00</cap:effective>
+<cap:expires>2022-04-16T21:00:00-04:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Coastal Franklin</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>012037</value>
+<valueName>UGC</valueName>
+<value>FLZ115</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KTAE.RP.S.0041.000000T0000Z-220417T0100Z/</value>
+</cap:parameter>
+</entry>
+<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=FL1263EEB8AC40.FloodWarning.1263EEC7F0D8FL.JAXFLSJAX.25718a19b45305bbc50624dc2cce8df3</id>
 <updated>2022-04-16T10:24:00-04:00</updated>
 <published>2022-04-16T10:24:00-04:00</published>
@@ -1780,38 +1844,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <valueName>VTEC</valueName>
 <value>/O.CON.KJAX.FL.W.0014.000000T0000Z-000000T0000Z/
 /TREF1.1.ER.220326T2000Z.220401T0600Z.000000T0000Z.NO/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=FL1263EEB7C758.RipCurrentStatement.1263EEC5E950FL.TAECFWTAE.8fe5d019c27cad8d9bdaa3c34a858939</id>
-<updated>2022-04-16T04:38:00-04:00</updated>
-<published>2022-04-16T04:38:00-04:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Rip Current Statement issued April 16 at 4:38AM EDT until April 16 at 9:00PM EDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=FL1263EEB7C758.RipCurrentStatement.1263EEC5E950FL.TAECFWTAE.8fe5d019c27cad8d9bdaa3c34a858939"/>
-<summary>...HIGH RIP CURRENT RISK IN EFFECT THROUGH THIS EVENING... * WHAT...Dangerous rip currents. * WHERE...Franklin County Beaches. * WHEN...Through this evening. * IMPACTS...Rip currents can sweep even the best swimmers away from shore into deeper water.</summary>
-<cap:event>Rip Current Statement</cap:event>
-<cap:effective>2022-04-16T04:38:00-04:00</cap:effective>
-<cap:expires>2022-04-16T21:00:00-04:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Coastal Franklin</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>012037</value>
-<valueName>UGC</valueName>
-<value>FLZ115</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.NEW.KTAE.RP.S.0041.220416T0838Z-220417T0100Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -2498,6 +2530,72 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=IL1263EEB8F164.FloodWarning.1263EEE61B80IL.LSXFLSLSX.69388538b02f15005a08a97575cede94</id>
+<updated>2022-04-16T11:01:00-05:00</updated>
+<published>2022-04-16T11:01:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Flood Warning issued April 16 at 11:01AM CDT until April 19 at 7:00AM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=IL1263EEB8F164.FloodWarning.1263EEE61B80IL.LSXFLSLSX.69388538b02f15005a08a97575cede94"/>
+<summary>...The Flood Warning is extended for the following rivers in Illinois... Illinois River at Valley City. ...The Flood Warning continues for the following rivers in Illinois... Illinois River at Meredosia.</summary>
+<cap:event>Flood Warning</cap:event>
+<cap:effective>2022-04-16T11:01:00-05:00</cap:effective>
+<cap:expires>2022-04-19T07:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Morgan; Pike</cap:areaDesc>
+<cap:polygon>39.88,-90.63 39.88,-90.51 39.77,-90.53 39.77,-90.67 39.88,-90.63</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>017137 017149</value>
+<valueName>UGC</valueName>
+<value>ILC137 ILC149</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.EXT.KLSX.FL.W.0030.000000T0000Z-220419T1200Z/
+/MROI2.1.ER.220408T1500Z.220416T1530Z.220418T0600Z.NO/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=IL1263EEB8F164.FloodWarning.1263EF04A000IL.LSXFLSLSX.f2cb0ece0007ae9afb607650740ad54e</id>
+<updated>2022-04-16T11:01:00-05:00</updated>
+<published>2022-04-16T11:01:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Flood Warning issued April 16 at 11:01AM CDT until April 21 at 7:00AM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=IL1263EEB8F164.FloodWarning.1263EF04A000IL.LSXFLSLSX.f2cb0ece0007ae9afb607650740ad54e"/>
+<summary>...The Flood Warning is extended for the following rivers in Illinois... Illinois River at Valley City. ...The Flood Warning continues for the following rivers in Illinois... Illinois River at Meredosia.</summary>
+<cap:event>Flood Warning</cap:event>
+<cap:effective>2022-04-16T11:01:00-05:00</cap:effective>
+<cap:expires>2022-04-21T07:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Pike; Scott</cap:areaDesc>
+<cap:polygon>39.77,-90.67 39.77,-90.53 39.52,-90.52 39.52,-90.64 39.77,-90.67</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>017149 017171</value>
+<valueName>UGC</valueName>
+<value>ILC149 ILC171</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.EXT.KLSX.FL.W.0025.000000T0000Z-220421T1200Z/
+/VALI2.1.ER.220404T2000Z.220414T1030Z.220420T0600Z.NO/</value>
+</cap:parameter>
+</entry>
+<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=IL1263EEB8B028.FloodWarning.1263EED56434IL.LSXFLSLSX.3faa9cd4de1d97ce92e16ae0e6dfb09d</id>
 <updated>2022-04-16T09:34:00-05:00</updated>
 <published>2022-04-16T09:34:00-05:00</published>
@@ -2659,72 +2757,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <valueName>VTEC</valueName>
 <value>/O.CON.KLSX.FL.W.0031.000000T0000Z-220418T1200Z/
 /NLGI2.1.ER.220408T0545Z.220412T2230Z.220417T0600Z.NO/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=IL1263EEAAD3B8.FloodWarning.1263EEE705E0IL.LSXFLSLSX.69388538b02f15005a08a97575cede94</id>
-<updated>2022-04-15T18:50:00-05:00</updated>
-<published>2022-04-15T18:50:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Flood Warning issued April 15 at 6:50PM CDT until April 19 at 1:00PM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=IL1263EEAAD3B8.FloodWarning.1263EEE705E0IL.LSXFLSLSX.69388538b02f15005a08a97575cede94"/>
-<summary>...The Flood Warning continues for the following river in Illinois... Illinois River at Valley City. Illinois River at La Grange Lock and Dam. Illinois River at Meredosia. River forecasts are based on observed precipitation and forecast precipitation for the next 24 hours.</summary>
-<cap:event>Flood Warning</cap:event>
-<cap:effective>2022-04-15T18:50:00-05:00</cap:effective>
-<cap:expires>2022-04-19T13:00:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Morgan; Pike</cap:areaDesc>
-<cap:polygon>39.88,-90.63 39.88,-90.51 39.77,-90.53 39.77,-90.67 39.88,-90.63</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>017137 017149</value>
-<valueName>UGC</valueName>
-<value>ILC137 ILC149</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KLSX.FL.W.0030.000000T0000Z-220419T1800Z/
-/MROI2.1.ER.220408T1500Z.220414T1500Z.220418T1200Z.NO/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=IL1263EEAAD3B8.FloodWarning.1263EF02CB40IL.LSXFLSLSX.f2cb0ece0007ae9afb607650740ad54e</id>
-<updated>2022-04-15T18:50:00-05:00</updated>
-<published>2022-04-15T18:50:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Flood Warning issued April 15 at 6:50PM CDT until April 20 at 7:00PM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=IL1263EEAAD3B8.FloodWarning.1263EF02CB40IL.LSXFLSLSX.f2cb0ece0007ae9afb607650740ad54e"/>
-<summary>...The Flood Warning continues for the following river in Illinois... Illinois River at Valley City. Illinois River at La Grange Lock and Dam. Illinois River at Meredosia. River forecasts are based on observed precipitation and forecast precipitation for the next 24 hours.</summary>
-<cap:event>Flood Warning</cap:event>
-<cap:effective>2022-04-15T18:50:00-05:00</cap:effective>
-<cap:expires>2022-04-20T19:00:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Pike; Scott</cap:areaDesc>
-<cap:polygon>39.77,-90.67 39.77,-90.53 39.52,-90.52 39.52,-90.64 39.77,-90.67</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>017149 017171</value>
-<valueName>UGC</valueName>
-<value>ILC149 ILC171</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.EXT.KLSX.FL.W.0025.000000T0000Z-220421T0000Z/
-/VALI2.1.ER.220404T2000Z.220414T1030Z.220419T1800Z.NO/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -3248,6 +3280,72 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=LA1263EEB8DBE8.FloodWarning.1263EEC83340LA.LCHFLWLCH.e0e937d4f0e4f5a5940e09f04575ce4f</id>
+<updated>2022-04-16T10:46:00-05:00</updated>
+<published>2022-04-16T10:46:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Flood Warning issued April 16 at 10:46AM CDT until further notice by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=LA1263EEB8DBE8.FloodWarning.1263EEC83340LA.LCHFLWLCH.e0e937d4f0e4f5a5940e09f04575ce4f"/>
+<summary>...The National Weather Service in Lake Charles LA has issued a Flood Warning for the following rivers in Louisiana... Calcasieu River Near Glenmora Additional information is available at www.weather.gov. ...FLOOD WARNING IN EFFECT FROM THIS MORNING UNTIL FURTHER NOTICE... * WHAT...Minor flooding is occurring and minor flooding is forecast.</summary>
+<cap:event>Flood Warning</cap:event>
+<cap:effective>2022-04-16T10:46:00-05:00</cap:effective>
+<cap:expires>2022-04-17T11:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Rapides</cap:areaDesc>
+<cap:polygon>31.15,-92.75 31.05,-92.65 30.9,-92.62 30.9,-92.69 31.13,-92.79 31.15,-92.75</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>022079</value>
+<valueName>UGC</valueName>
+<value>LAC079</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.NEW.KLCH.FL.W.0015.220416T1546Z-000000T0000Z/
+/GLML1.1.ER.220416T1230Z.220419T1200Z.000000T0000Z.NO/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=LA1263EEB8DBE8.FloodWarning.1263EF042AD0LA.LCHFLSLCH.eff5f169b40b9257cc3fe3a0637911e4</id>
+<updated>2022-04-16T10:46:00-05:00</updated>
+<published>2022-04-16T10:46:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Flood Warning issued April 16 at 10:46AM CDT until April 21 at 4:00AM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=LA1263EEB8DBE8.FloodWarning.1263EF042AD0LA.LCHFLSLCH.eff5f169b40b9257cc3fe3a0637911e4"/>
+<summary>...The Flood Warning is extended for the following rivers in Louisiana... Calcasieu River NEAR White Oak Park Additional information is available at www.weather.gov. ...FLOOD WARNING NOW IN EFFECT FROM THIS MORNING THROUGH LATE WEDNESDAY NIGHT...</summary>
+<cap:event>Flood Warning</cap:event>
+<cap:effective>2022-04-16T10:46:00-05:00</cap:effective>
+<cap:expires>2022-04-21T04:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Calcasieu</cap:areaDesc>
+<cap:polygon>30.38,-93.14 30.31,-93.03 30.25,-93.08 30.19,-93.21 30.3,-93.29 30.38,-93.14</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>022019</value>
+<valueName>UGC</valueName>
+<value>LAC019</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.EXT.KLCH.FL.W.0014.000000T0000Z-220421T0900Z/
+/CWOL1.1.ER.220413T1157Z.220414T0235Z.220421T0300Z.NO/</value>
+</cap:parameter>
+</entry>
+<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=LA1263EEB8D418.FloodWarning.1263EF8D7F10LA.JANFLSJAN.25835e1e4be5c7cbaae8821269df63de</id>
 <updated>2022-04-16T10:26:00-05:00</updated>
 <published>2022-04-16T10:26:00-05:00</published>
@@ -3311,38 +3409,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <valueName>VTEC</valueName>
 <value>/O.EXT.KLIX.FL.W.0025.000000T0000Z-220417T2200Z/
 /CUSL1.1.ER.220414T1848Z.220415T2145Z.220417T1600Z.NO/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=LA1263EEB8B53C.SpecialWeatherStatement.1263EEB8DB84LA.JANSPSJAN.d09e958cb174737b65210075399b84de</id>
-<updated>2022-04-16T09:47:00-05:00</updated>
-<published>2022-04-16T09:47:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Special Weather Statement issued April 16 at 9:47AM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=LA1263EEB8B53C.SpecialWeatherStatement.1263EEB8DB84LA.JANSPSJAN.d09e958cb174737b65210075399b84de"/>
-<summary>...A strong thunderstorm will impact portions of southwestern Chicot County, northeastern East Carroll and northeastern West Carroll Parishes, southwestern Washington and northwestern Issaquena Counties through 1045 AM CDT... At 946 AM CDT, Doppler radar was tracking a strong thunderstorm near Gassoway, or 9 miles south of Eudora, moving east at 25 mph.</summary>
-<cap:event>Special Weather Statement</cap:event>
-<cap:effective>2022-04-16T09:47:00-05:00</cap:effective>
-<cap:expires>2022-04-16T10:45:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Observed</cap:certainty>
-<cap:areaDesc>East Carroll; West Carroll</cap:areaDesc>
-<cap:polygon>33.11,-91.41 33.13,-90.9 33.1,-90.9 33.1,-90.92 33,-90.91 32.91,-90.92 32.89,-90.94 32.86,-90.94 32.85,-90.96 32.84,-90.96 32.89,-91.41 33.11,-91.41</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>022035 022123</value>
-<valueName>UGC</valueName>
-<value>LAZ008 LAZ009</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value></value>
 </cap:parameter>
 </entry>
 <entry>
@@ -3445,39 +3511,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=LA1263EEB6A83C.FloodWarning.1263EEC79700LA.LCHFLSLCH.eff5f169b40b9257cc3fe3a0637911e4</id>
-<updated>2022-04-15T20:03:00-05:00</updated>
-<published>2022-04-15T20:03:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Flood Warning issued April 15 at 8:03PM CDT until April 17 at 7:00AM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=LA1263EEB6A83C.FloodWarning.1263EEC79700LA.LCHFLSLCH.eff5f169b40b9257cc3fe3a0637911e4"/>
-<summary>...The Flood Warning is extended for the following rivers in Louisiana... Calcasieu River NEAR White Oak Park Additional information is available at www.weather.gov. ...FLOOD WARNING NOW IN EFFECT FROM THIS EVENING THROUGH SUNDAY MORNING...</summary>
-<cap:event>Flood Warning</cap:event>
-<cap:effective>2022-04-15T20:03:00-05:00</cap:effective>
-<cap:expires>2022-04-17T07:00:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Calcasieu</cap:areaDesc>
-<cap:polygon>30.38,-93.14 30.31,-93.03 30.25,-93.08 30.19,-93.21 30.3,-93.29 30.38,-93.14</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>022019</value>
-<valueName>UGC</valueName>
-<value>LAC019</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.EXT.KLCH.FL.W.0014.000000T0000Z-220417T1200Z/
-/CWOL1.1.ER.220413T1157Z.220414T0235Z.220417T0600Z.NO/</value>
-</cap:parameter>
-</entry>
-<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=MD1263EEB88E90.FreezeWatch.1263EED70050MD.LWXNPWLWX.9365f958940bcdd2c2269831ea1923d9</id>
 <updated>2022-04-16T09:48:00-04:00</updated>
 <published>2022-04-16T09:48:00-04:00</published>
@@ -3543,36 +3576,102 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=ME1263EEB6F530.FloodAdvisory.1263EEB9DB60ME.CARFLSCAR.f07626cc6bbd47b7e0c7fb47b2b3354c</id>
-<updated>2022-04-15T23:00:00-04:00</updated>
-<published>2022-04-15T23:00:00-04:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=MI1263EEB8DFD0.FloodWarning.1263EEC63770MI.MQTFLSMQT.1bd2d46f397e2e2630709612fba5af79</id>
+<updated>2022-04-16T11:56:00-04:00</updated>
+<published>2022-04-16T11:56:00-04:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Flood Advisory issued April 15 at 11:00PM EDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=ME1263EEB6F530.FloodAdvisory.1263EEB9DB60ME.CARFLSCAR.f07626cc6bbd47b7e0c7fb47b2b3354c"/>
-<summary>...FLOOD ADVISORY FOR AN ICE JAM NOW IN EFFECT UNTIL NOON EDT SATURDAY... * WHAT...Flooding caused by an ice jam continues. * WHERE...A portion of Northern Maine, including the following county, Aroostook. * WHEN...Until noon EDT Saturday.</summary>
+<title>Flood Warning issued April 16 at 11:56AM EDT until further notice by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MI1263EEB8DFD0.FloodWarning.1263EEC63770MI.MQTFLSMQT.1bd2d46f397e2e2630709612fba5af79"/>
+<summary>...The Flood Warning continues for the following rivers in Michigan... Sturgeon River near Chassell affecting Houghton and Baraga Counties. ...FLOOD WARNING REMAINS IN EFFECT UNTIL FURTHER NOTICE... * WHAT...Minor flooding is occurring, but river levels are falling.</summary>
+<cap:event>Flood Warning</cap:event>
+<cap:effective>2022-04-16T11:56:00-04:00</cap:effective>
+<cap:expires>2022-04-16T23:00:00-04:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Baraga; Houghton</cap:areaDesc>
+<cap:polygon>46.92,-88.61 47.04,-88.56 47.03,-88.5 47,-88.45 46.92,-88.48 46.92,-88.61</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>026013 026061</value>
+<valueName>UGC</valueName>
+<value>MIC013 MIC061</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KMQT.FL.W.0005.000000T0000Z-000000T0000Z/
+/CLLM4.N.RS.000000T0000Z.000000T0000Z.000000T0000Z.UU/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=MI1263EEB8DE40.FloodAdvisory.1263EEC63770MI.MQTFLSMQT.74d3a03d956b37fdabd3da70aecb6d88</id>
+<updated>2022-04-16T11:52:00-04:00</updated>
+<published>2022-04-16T11:52:00-04:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Flood Advisory issued April 16 at 11:52AM EDT until further notice by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MI1263EEB8DE40.FloodAdvisory.1263EEC63770MI.MQTFLSMQT.74d3a03d956b37fdabd3da70aecb6d88"/>
+<summary>...The National Weather Service in Marquette has issued a Flood Advisory for the following rivers in Michigan... Sturgeon River near Nahma Junction affecting Delta County. For the Sturgeon River in Delta County...including Nahma Junction... elevated river levels are forecast. ...FLOOD ADVISORY IN EFFECT FROM THIS MORNING UNTIL FURTHER NOTICE...</summary>
 <cap:event>Flood Advisory</cap:event>
-<cap:effective>2022-04-15T23:00:00-04:00</cap:effective>
-<cap:expires>2022-04-16T18:00:00-04:00</cap:expires>
+<cap:effective>2022-04-16T11:52:00-04:00</cap:effective>
+<cap:expires>2022-04-16T23:00:00-04:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
 <cap:category>Met</cap:category>
 <cap:urgency>Expected</cap:urgency>
 <cap:severity>Minor</cap:severity>
 <cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Aroostook</cap:areaDesc>
-<cap:polygon>47.23,-68.03 47.27,-68.12 47.3,-68.15 47.3,-68.14 47.27,-68.08 47.26,-68.07 47.24,-68.02 47.21,-67.99 47.2,-67.96 47.16,-67.93 47.13,-67.89 47.12,-67.9 47.23,-68.03</cap:polygon>
+<cap:areaDesc>Delta</cap:areaDesc>
+<cap:polygon>46.02,-86.63 45.87,-86.63 45.84,-86.67 45.85,-86.72 46,-86.77 46.02,-86.63</cap:polygon>
 <cap:geocode>
 <valueName>FIPS6</valueName>
-<value>023003</value>
+<value>026041</value>
 <valueName>UGC</valueName>
-<value>MEC003</value>
+<value>MIC041</value>
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
-<value>/O.EXT.KCAR.FA.Y.0009.000000T0000Z-220416T1600Z/
-/00000.N.IJ.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
+<value>/O.NEW.KMQT.FL.Y.0006.220416T1552Z-000000T0000Z/
+/NJNM4.N.RS.000000T0000Z.000000T0000Z.000000T0000Z.NO/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=MI1263EEB8DCB0.FloodAdvisory.1263EEC88160MI.MQTFLSMQT.bc161f02170b353feefd3f762f534a7e</id>
+<updated>2022-04-16T11:48:00-04:00</updated>
+<published>2022-04-16T11:48:00-04:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Flood Advisory issued April 16 at 11:48AM EDT until April 17 at 2:00PM EDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MI1263EEB8DCB0.FloodAdvisory.1263EEC88160MI.MQTFLSMQT.bc161f02170b353feefd3f762f534a7e"/>
+<summary>...The Flood Advisory is extended for the following rivers in Michigan... Paint River at Crystal Falls (Paint) affecting Iron County. For the Paint River...including Crystal Falls (Paint)...elevated river levels are forecast to continue. ...FLOOD ADVISORY NOW IN EFFECT UNTIL EARLY SUNDAY AFTERNOON...</summary>
+<cap:event>Flood Advisory</cap:event>
+<cap:effective>2022-04-16T11:48:00-04:00</cap:effective>
+<cap:expires>2022-04-17T14:00:00-04:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Iron</cap:areaDesc>
+<cap:polygon>46.01,-88.31 46.1,-88.39 46.12,-88.28 46.04,-88.21 46.01,-88.31</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>026071</value>
+<valueName>UGC</valueName>
+<value>MIC071</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.EXT.KMQT.FL.Y.0002.000000T0000Z-220417T1800Z/
+/CRYM4.N.RS.000000T0000Z.000000T0000Z.000000T0000Z.NO/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -3606,105 +3705,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <valueName>VTEC</valueName>
 <value>/O.CON.KGRB.FL.W.0015.000000T0000Z-220419T0600Z/
 /MCAW3.1.ER.220415T1552Z.220416T1800Z.220418T1200Z.NO/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=MI1263EEB6D078.FloodAdvisory.1263EEB8F100MI.MQTFLSMQT.bc161f02170b353feefd3f762f534a7e</id>
-<updated>2022-04-15T22:06:00-04:00</updated>
-<published>2022-04-15T22:06:00-04:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Flood Advisory issued April 15 at 10:06PM EDT until April 16 at 12:00PM EDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MI1263EEB6D078.FloodAdvisory.1263EEB8F100MI.MQTFLSMQT.bc161f02170b353feefd3f762f534a7e"/>
-<summary>...The Flood Advisory continues for the following rivers in Michigan... Paint River at Crystal Falls (Paint) affecting Iron County. .Water levels on the Paint River have crested and have begun to slowly fall. With no additional significant precipitation expected for the next few days, river levels are expected to continue falling.</summary>
-<cap:event>Flood Advisory</cap:event>
-<cap:effective>2022-04-15T22:06:00-04:00</cap:effective>
-<cap:expires>2022-04-16T12:00:00-04:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Iron</cap:areaDesc>
-<cap:polygon>46.01,-88.31 46.1,-88.39 46.12,-88.28 46.04,-88.21 46.01,-88.31</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>026071</value>
-<valueName>UGC</valueName>
-<value>MIC071</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.EXT.KMQT.FL.Y.0002.000000T0000Z-220416T1600Z/
-/CRYM4.N.RS.000000T0000Z.000000T0000Z.000000T0000Z.NO/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=MI1263EEB6BCF0.FloodWarning.1263EEC5C240MI.MQTFLSMQT.1bd2d46f397e2e2630709612fba5af79</id>
-<updated>2022-04-15T21:56:00-04:00</updated>
-<published>2022-04-15T21:56:00-04:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Flood Warning issued April 15 at 9:56PM EDT until further notice by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MI1263EEB6BCF0.FloodWarning.1263EEC5C240MI.MQTFLSMQT.1bd2d46f397e2e2630709612fba5af79"/>
-<summary>...The Flood Warning continues for the following rivers in Michigan... Sturgeon River near Chassell affecting Houghton and Baraga Counties. .Minor flooding from recent rainfall and snow melt is expected to continue. However, with no significant precipitation expected in the</summary>
-<cap:event>Flood Warning</cap:event>
-<cap:effective>2022-04-15T21:56:00-04:00</cap:effective>
-<cap:expires>2022-04-16T20:00:00-04:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Baraga; Houghton</cap:areaDesc>
-<cap:polygon>46.92,-88.61 47.04,-88.56 47.03,-88.5 47,-88.45 46.92,-88.48 46.92,-88.61</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>026013 026061</value>
-<valueName>UGC</valueName>
-<value>MIC013 MIC061</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KMQT.FL.W.0005.000000T0000Z-000000T0000Z/
-/CLLM4.N.RS.000000T0000Z.220414T1800Z.000000T0000Z.UU/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=MI1263EEB6BAFC.FloodWarning.1263EEB8F100MI.MQTFLSMQT.7504b33ea38c5734b59ddb2bed3ae08d</id>
-<updated>2022-04-15T21:51:00-04:00</updated>
-<published>2022-04-15T21:51:00-04:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Flood Warning issued April 15 at 9:51PM EDT until further notice by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MI1263EEB6BAFC.FloodWarning.1263EEB8F100MI.MQTFLSMQT.7504b33ea38c5734b59ddb2bed3ae08d"/>
-<summary>...The Flood Warning continues for the following rivers in Michigan... Sturgeon River near Nahma Junction affecting Delta County. .The Sturgeon River near Nahma Junction has peaked. With no significant precipitation expected in the next few days, the river is expected to continue receding through the weekend.</summary>
-<cap:event>Flood Warning</cap:event>
-<cap:effective>2022-04-15T21:51:00-04:00</cap:effective>
-<cap:expires>2022-04-16T12:00:00-04:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Delta</cap:areaDesc>
-<cap:polygon>46.02,-86.63 45.87,-86.63 45.84,-86.67 45.85,-86.72 46,-86.77 46.02,-86.63</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>026041</value>
-<valueName>UGC</valueName>
-<value>MIC041</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KMQT.FL.W.0004.000000T0000Z-000000T0000Z/
-/NJNM4.N.RS.220414T1300Z.220415T0945Z.000000T0000Z.NR/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -3840,18 +3840,18 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=MO1263EEA99A0C.FloodAdvisory.1263EF223A20MO.MEGFLSMEG.e485a5aab6855eaa14cf4fdf6e3ffaea</id>
-<updated>2022-04-15T10:47:00-05:00</updated>
-<published>2022-04-15T10:47:00-05:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=MO1263EEB8DCB0.FloodAdvisory.1263EF3266C0MO.MEGFLSMEG.e485a5aab6855eaa14cf4fdf6e3ffaea</id>
+<updated>2022-04-16T10:48:00-05:00</updated>
+<published>2022-04-16T10:48:00-05:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Flood Advisory issued April 15 at 10:47AM CDT until April 23 at 1:00AM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MO1263EEA99A0C.FloodAdvisory.1263EF223A20MO.MEGFLSMEG.e485a5aab6855eaa14cf4fdf6e3ffaea"/>
-<summary>...The National Weather Service in Memphis has issued a Flood Advisory for the following rivers in Tennessee...Arkansas... Missouri... Mississippi River at Caruthersville For the Lower Mississippi River...including Caruthersville, Osceola...elevated river levels are forecast.</summary>
+<title>Flood Advisory issued April 16 at 10:48AM CDT until April 24 at 7:00AM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MO1263EEB8DCB0.FloodAdvisory.1263EF3266C0MO.MEGFLSMEG.e485a5aab6855eaa14cf4fdf6e3ffaea"/>
+<summary>...The Flood Advisory is extended for the following rivers in Tennessee...Arkansas...Missouri... Mississippi River at Caruthersville Mississippi River at Osceola For the Lower Mississippi River...including Tiptonville, Caruthersville, Osceola, Memphis, Tunica Mhoon Landing, Helena...</summary>
 <cap:event>Flood Advisory</cap:event>
-<cap:effective>2022-04-15T10:47:00-05:00</cap:effective>
-<cap:expires>2022-04-23T01:00:00-05:00</cap:expires>
+<cap:effective>2022-04-16T10:48:00-05:00</cap:effective>
+<cap:expires>2022-04-24T07:00:00-05:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
 <cap:category>Met</cap:category>
@@ -3868,8 +3868,73 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
-<value>/O.NEW.KMEG.FL.Y.0023.220415T1547Z-220423T0600Z/
+<value>/O.EXT.KMEG.FL.Y.0023.000000T0000Z-220424T1200Z/
 /CRTM7.N.ER.000000T0000Z.000000T0000Z.000000T0000Z.NO/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=MS1263EEB8E098.SpecialWeatherStatement.1263EEB91810MS.JANSPSJAN.7e1c57b6a41a33fb71977d815b8e3cd9</id>
+<updated>2022-04-16T10:58:00-05:00</updated>
+<published>2022-04-16T10:58:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Special Weather Statement issued April 16 at 10:58AM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MS1263EEB8E098.SpecialWeatherStatement.1263EEB91810MS.JANSPSJAN.7e1c57b6a41a33fb71977d815b8e3cd9"/>
+<summary>...A strong thunderstorm will impact portions of western Holmes, northern Yazoo, Humphreys and eastern Sharkey Counties through NOON CDT... At 1058 AM CDT, Doppler radar was tracking a strong thunderstorm 7 miles northwest of Yazoo City, moving east at 30 mph. HAZARD...Winds in excess of 40 mph and nickel size hail.</summary>
+<cap:event>Special Weather Statement</cap:event>
+<cap:effective>2022-04-16T10:58:00-05:00</cap:effective>
+<cap:expires>2022-04-16T12:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Observed</cap:certainty>
+<cap:areaDesc>Holmes; Humphreys; Sharkey; Yazoo</cap:areaDesc>
+<cap:polygon>32.9,-90.11 32.7,-90.83 33.05,-90.82 33.1,-90.72 33.1,-90.69 33.12,-90.69 33.25,-90.42 33.24,-90.38 33.27,-90.37 33.32,-90.27 32.9,-90.11</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>028051 028053 028125 028163</value>
+<valueName>UGC</valueName>
+<value>MSZ035 MSZ036 MSZ041 MSZ042</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value></value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=MS1263EEB8D864.FloodWarning.1263EF120D80MS.JANFLSJAN.0757103dc1640cc5db035c72a2520fef</id>
+<updated>2022-04-16T10:37:00-05:00</updated>
+<published>2022-04-16T10:37:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Flood Warning issued April 16 at 10:37AM CDT until April 21 at 7:00PM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MS1263EEB8D864.FloodWarning.1263EF120D80MS.JANFLSJAN.0757103dc1640cc5db035c72a2520fef"/>
+<summary>...The Flood Warning is extended for the following rivers in Mississippi... Big Sunflower River At Sunflower affecting Sunflower County. ...FLOOD WARNING NOW IN EFFECT UNTIL THURSDAY EVENING... * WHAT...Minor flooding is occurring and minor flooding is forecast. * WHERE...Big Sunflower River At Sunflower.</summary>
+<cap:event>Flood Warning</cap:event>
+<cap:effective>2022-04-16T10:37:00-05:00</cap:effective>
+<cap:expires>2022-04-21T19:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Sunflower</cap:areaDesc>
+<cap:polygon>33.24,-90.81 33.63,-90.62 33.88,-90.75 33.99,-90.59 33.63,-90.48 33.24,-90.64 33.24,-90.81</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>028133</value>
+<valueName>UGC</valueName>
+<value>MSC133</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.EXT.KJAN.FL.W.0061.000000T0000Z-220422T0000Z/
+/SUNM6.1.ER.220416T0000Z.220417T1200Z.220421T0600Z.NO/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -4035,38 +4100,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <valueName>VTEC</valueName>
 <value>/O.NEW.KJAN.FL.W.0063.220418T0000Z-000000T0000Z/
 /PLAM6.1.ER.220418T0000Z.220419T1200Z.000000T0000Z.NO/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=MS1263EEB8B53C.SpecialWeatherStatement.1263EEB8DB84MS.JANSPSJAN.08f2b59b1408b2746b49551ee4fae37c</id>
-<updated>2022-04-16T09:47:00-05:00</updated>
-<published>2022-04-16T09:47:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Special Weather Statement issued April 16 at 9:47AM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MS1263EEB8B53C.SpecialWeatherStatement.1263EEB8DB84MS.JANSPSJAN.08f2b59b1408b2746b49551ee4fae37c"/>
-<summary>...A strong thunderstorm will impact portions of southwestern Chicot County, northeastern East Carroll and northeastern West Carroll Parishes, southwestern Washington and northwestern Issaquena Counties through 1045 AM CDT... At 946 AM CDT, Doppler radar was tracking a strong thunderstorm near Gassoway, or 9 miles south of Eudora, moving east at 25 mph.</summary>
-<cap:event>Special Weather Statement</cap:event>
-<cap:effective>2022-04-16T09:47:00-05:00</cap:effective>
-<cap:expires>2022-04-16T10:45:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Observed</cap:certainty>
-<cap:areaDesc>Issaquena; Washington</cap:areaDesc>
-<cap:polygon>33.11,-91.41 33.13,-90.9 33.1,-90.9 33.1,-90.92 33,-90.91 32.91,-90.92 32.89,-90.94 32.86,-90.94 32.85,-90.96 32.84,-90.96 32.89,-91.41 33.11,-91.41</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>028055 028151</value>
-<valueName>UGC</valueName>
-<value>MSZ034 MSZ040</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value></value>
 </cap:parameter>
 </entry>
 <entry>
@@ -4334,39 +4367,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=MS1263EEB866B8.FloodAdvisory.1263EEB90294MS.MEGFLSMEG.aa5483a35e0e91bbe4446f9e5ad1b0e2</id>
-<updated>2022-04-16T07:46:00-05:00</updated>
-<published>2022-04-16T07:46:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Flood Advisory issued April 16 at 7:46AM CDT until April 16 at 11:45AM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MS1263EEB866B8.FloodAdvisory.1263EEB90294MS.MEGFLSMEG.aa5483a35e0e91bbe4446f9e5ad1b0e2"/>
-<summary>...FLOOD ADVISORY IN EFFECT UNTIL 1045 AM CDT THIS MORNING... * WHAT...Urban and small stream flooding caused by excessive rainfall is expected. * WHERE...A portion of North Mississippi, including the following counties, Calhoun and Yalobusha. * WHEN...Until 1045 AM CDT.</summary>
-<cap:event>Flood Advisory</cap:event>
-<cap:effective>2022-04-16T07:46:00-05:00</cap:effective>
-<cap:expires>2022-04-16T11:45:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Calhoun; Yalobusha</cap:areaDesc>
-<cap:polygon>34.16,-89.7 34.12,-89.51 34.09,-89.38 33.81,-89.14 33.81,-89.19 33.75,-89.19 33.74,-89.19 33.81,-89.45 33.92,-89.57 34.1,-89.73 34.16,-89.7</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>028013 028161</value>
-<valueName>UGC</valueName>
-<value>MSC013 MSC161</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.NEW.KMEG.FA.Y.0037.220416T1246Z-220416T1545Z/
-/00000.N.ER.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
-</cap:parameter>
-</entry>
-<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=MS1263EEB7C050.FloodWatch.1263EEC64328MS.MEGFFAMEG.36ef04befe67e9dce05f1b987c3b99cb</id>
 <updated>2022-04-16T03:20:00-05:00</updated>
 <published>2022-04-16T03:20:00-05:00</published>
@@ -4397,39 +4397,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <valueName>VTEC</valueName>
 <value>/O.CON.KMEG.FA.A.0005.000000T0000Z-220417T0000Z/
 /00000.0.ER.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=MS1263EEB6FB0C.FloodWarning.1263EEE75400MS.JANFLSJAN.0757103dc1640cc5db035c72a2520fef</id>
-<updated>2022-04-15T22:15:00-05:00</updated>
-<published>2022-04-15T22:15:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Flood Warning issued April 15 at 10:15PM CDT until April 19 at 3:00PM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MS1263EEB6FB0C.FloodWarning.1263EEE75400MS.JANFLSJAN.0757103dc1640cc5db035c72a2520fef"/>
-<summary>...The Flood Warning is extended for the following rivers in Mississippi... Big Sunflower River At Sunflower affecting Sunflower County. ...FLOOD WARNING NOW IN EFFECT FROM THIS EVENING TO TUESDAY AFTERNOON... * WHAT...Minor flooding is occurring and minor flooding is forecast.</summary>
-<cap:event>Flood Warning</cap:event>
-<cap:effective>2022-04-15T22:15:00-05:00</cap:effective>
-<cap:expires>2022-04-19T15:00:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Sunflower</cap:areaDesc>
-<cap:polygon>33.24,-90.81 33.63,-90.62 33.88,-90.75 33.99,-90.59 33.63,-90.48 33.24,-90.64 33.24,-90.81</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>028133</value>
-<valueName>UGC</valueName>
-<value>MSC133</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.EXT.KJAN.FL.W.0061.220416T0315Z-220419T2000Z/
-/SUNM6.1.ER.220416T0000Z.220417T1200Z.220419T0200Z.NO/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -4981,6 +4948,38 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=NM1263EEB8F164.WindAdvisory.1263EEC65E80NM.ABQNPWABQ.8118d4c7f8d31a2f435a425560c74e92</id>
+<updated>2022-04-16T10:01:00-06:00</updated>
+<published>2022-04-16T10:01:00-06:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Wind Advisory issued April 16 at 10:01AM MDT until April 16 at 10:00PM MDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=NM1263EEB8F164.WindAdvisory.1263EEC65E80NM.ABQNPWABQ.8118d4c7f8d31a2f435a425560c74e92"/>
+<summary>...WIND ADVISORY REMAINS IN EFFECT FROM 3 PM THIS AFTERNOON TO 10 PM MDT THIS EVENING... * WHAT...West and southwest winds 25 to 35 mph with gusts up to 50 mph expected. * WHERE...Chuska Mountains, Northwest Plateau, West Central Mountains and West Central Plateau.</summary>
+<cap:event>Wind Advisory</cap:event>
+<cap:effective>2022-04-16T10:01:00-06:00</cap:effective>
+<cap:expires>2022-04-16T22:00:00-06:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Chuska Mountains; Northwest Plateau; West Central Mountains; West Central Plateau</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>035006 035031 035045</value>
+<valueName>UGC</valueName>
+<value>NMZ201 NMZ202 NMZ205 NMZ206</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KABQ.WI.Y.0034.220416T2100Z-220417T0400Z/</value>
+</cap:parameter>
+</entry>
+<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=NM1263EEB7EF94.RedFlagWarning.1263EEC61060NM.ABQRFWABQ.81505064116826fac7a0677d5c538b6b</id>
 <updated>2022-04-16T03:41:00-06:00</updated>
 <published>2022-04-16T03:41:00-06:00</published>
@@ -5010,38 +5009,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value>/O.CON.KABQ.FW.W.0023.220416T1800Z-220417T0200Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=NM1263EEB7A750.WindAdvisory.1263EEC65E80NM.ABQNPWABQ.8118d4c7f8d31a2f435a425560c74e92</id>
-<updated>2022-04-16T01:56:00-06:00</updated>
-<published>2022-04-16T01:56:00-06:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Wind Advisory issued April 16 at 1:56AM MDT until April 16 at 10:00PM MDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=NM1263EEB7A750.WindAdvisory.1263EEC65E80NM.ABQNPWABQ.8118d4c7f8d31a2f435a425560c74e92"/>
-<summary>...WIND ADVISORY IN EFFECT FROM 3 PM THIS AFTERNOON TO 10 PM MDT THIS EVENING... * WHAT...West winds 25 to 35 mph with gusts up to 50 mph expected. * WHERE...Chuska Mountains, Northwest Plateau, West Central Mountains and West Central Plateau. * WHEN...From 3 PM this afternoon to 10 PM MDT this evening.</summary>
-<cap:event>Wind Advisory</cap:event>
-<cap:effective>2022-04-16T01:56:00-06:00</cap:effective>
-<cap:expires>2022-04-16T22:00:00-06:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Chuska Mountains; Northwest Plateau; West Central Mountains; West Central Plateau</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>035006 035031 035045</value>
-<valueName>UGC</valueName>
-<value>NMZ201 NMZ202 NMZ205 NMZ206</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.NEW.KABQ.WI.Y.0034.220416T2100Z-220417T0400Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -5911,38 +5878,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=SC1263EEB8D60C.SpecialWeatherStatement.1263EEB8F100SC.CAESPSCAE.5a0d99288d380ee12cb3870e067b19d1</id>
-<updated>2022-04-16T11:31:00-04:00</updated>
-<published>2022-04-16T11:31:00-04:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Special Weather Statement issued April 16 at 11:31AM EDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=SC1263EEB8D60C.SpecialWeatherStatement.1263EEB8F100SC.CAESPSCAE.5a0d99288d380ee12cb3870e067b19d1"/>
-<summary>...A strong thunderstorm will impact portions of northern Clarendon and central Sumter Counties through NOON EDT... At 1130 AM EDT, Doppler radar was tracking a strong thunderstorm near Alcolu, or 8 miles south of South Sumter, moving northeast at 40 mph. HAZARD...Wind gusts of 30 to 40 mph. SOURCE...Radar indicated.</summary>
-<cap:event>Special Weather Statement</cap:event>
-<cap:effective>2022-04-16T11:31:00-04:00</cap:effective>
-<cap:expires>2022-04-16T12:00:00-04:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Observed</cap:certainty>
-<cap:areaDesc>Clarendon; Sumter</cap:areaDesc>
-<cap:polygon>33.64,-80.34 33.76,-80.48 33.99,-80.2 33.98,-80.18 33.95,-80.18 33.97,-80.14 33.88,-79.94 33.64,-80.34</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>045027 045085</value>
-<valueName>UGC</valueName>
-<value>SCZ031 SCZ038</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value></value>
-</cap:parameter>
-</entry>
-<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=SC1263EEB8A984.FloodWarning.1263EEC7F0D8SC.CHSFLSCHS.be90309918c824528f75f5f5c2af6f02</id>
 <updated>2022-04-16T10:17:00-04:00</updated>
 <published>2022-04-16T10:17:00-04:00</published>
@@ -6072,6 +6007,72 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <valueName>VTEC</valueName>
 <value>/O.EXT.KCHS.FL.W.0014.000000T0000Z-220419T1200Z/
 /GIVS1.1.ER.220411T1645Z.220414T1330Z.220419T0000Z.NO/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=TN1263EEB8DCB0.FloodAdvisory.1263EF3266C0TN.MEGFLSMEG.3c9a3e7a4bd7d34e89baaa9a713c28bd</id>
+<updated>2022-04-16T10:48:00-05:00</updated>
+<published>2022-04-16T10:48:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Flood Advisory issued April 16 at 10:48AM CDT until April 24 at 7:00AM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=TN1263EEB8DCB0.FloodAdvisory.1263EF3266C0TN.MEGFLSMEG.3c9a3e7a4bd7d34e89baaa9a713c28bd"/>
+<summary>...The Flood Advisory is extended for the following rivers in Tennessee...Arkansas...Missouri... Mississippi River at Caruthersville Mississippi River at Osceola For the Lower Mississippi River...including Tiptonville, Caruthersville, Osceola, Memphis, Tunica Mhoon Landing, Helena...</summary>
+<cap:event>Flood Advisory</cap:event>
+<cap:effective>2022-04-16T10:48:00-05:00</cap:effective>
+<cap:expires>2022-04-24T07:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Dyer; Lake; Lauderdale</cap:areaDesc>
+<cap:polygon>36.23,-89.77 36.23,-89.48 36.06,-89.5 35.95,-89.48 35.82,-89.56 35.82,-89.85 36.23,-89.77</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>047045 047095 047097</value>
+<valueName>UGC</valueName>
+<value>TNC045 TNC095 TNC097</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.EXT.KMEG.FL.Y.0023.000000T0000Z-220424T1200Z/
+/CRTM7.N.ER.000000T0000Z.000000T0000Z.000000T0000Z.NO/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=TN1263EEB8DCB0.FloodAdvisory.1263EF335120TN.MEGFLSMEG.4307bff0e9083304cc2bf643b8fc5b58</id>
+<updated>2022-04-16T10:48:00-05:00</updated>
+<published>2022-04-16T10:48:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Flood Advisory issued April 16 at 10:48AM CDT until April 24 at 1:00PM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=TN1263EEB8DCB0.FloodAdvisory.1263EF335120TN.MEGFLSMEG.4307bff0e9083304cc2bf643b8fc5b58"/>
+<summary>...The Flood Advisory is extended for the following rivers in Tennessee...Arkansas...Missouri... Mississippi River at Caruthersville Mississippi River at Osceola For the Lower Mississippi River...including Tiptonville, Caruthersville, Osceola, Memphis, Tunica Mhoon Landing, Helena...</summary>
+<cap:event>Flood Advisory</cap:event>
+<cap:effective>2022-04-16T10:48:00-05:00</cap:effective>
+<cap:expires>2022-04-24T13:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Lauderdale; Tipton</cap:areaDesc>
+<cap:polygon>35.82,-89.96 35.82,-89.56 35.6,-89.79 35.39,-89.95 35.39,-90.25 35.82,-89.96</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>047097 047167</value>
+<valueName>UGC</valueName>
+<value>TNC097 TNC167</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.EXT.KMEG.FL.Y.0022.000000T0000Z-220424T1800Z/
+/OSGA4.N.ER.000000T0000Z.000000T0000Z.000000T0000Z.NO/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -6237,72 +6238,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <valueName>VTEC</valueName>
 <value>/O.CON.KMEG.FL.Y.0024.000000T0000Z-220423T1100Z/
 /SAVT1.N.ER.000000T0000Z.000000T0000Z.000000T0000Z.NO/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=TN1263EEA99A0C.FloodAdvisory.1263EF223A20TN.MEGFLSMEG.3c9a3e7a4bd7d34e89baaa9a713c28bd</id>
-<updated>2022-04-15T10:47:00-05:00</updated>
-<published>2022-04-15T10:47:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Flood Advisory issued April 15 at 10:47AM CDT until April 23 at 1:00AM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=TN1263EEA99A0C.FloodAdvisory.1263EF223A20TN.MEGFLSMEG.3c9a3e7a4bd7d34e89baaa9a713c28bd"/>
-<summary>...The National Weather Service in Memphis has issued a Flood Advisory for the following rivers in Tennessee...Arkansas... Missouri... Mississippi River at Caruthersville For the Lower Mississippi River...including Caruthersville, Osceola...elevated river levels are forecast.</summary>
-<cap:event>Flood Advisory</cap:event>
-<cap:effective>2022-04-15T10:47:00-05:00</cap:effective>
-<cap:expires>2022-04-23T01:00:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Dyer; Lake; Lauderdale</cap:areaDesc>
-<cap:polygon>36.23,-89.77 36.23,-89.48 36.06,-89.5 35.95,-89.48 35.82,-89.56 35.82,-89.85 36.23,-89.77</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>047045 047095 047097</value>
-<valueName>UGC</valueName>
-<value>TNC045 TNC095 TNC097</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.NEW.KMEG.FL.Y.0023.220415T1547Z-220423T0600Z/
-/CRTM7.N.ER.000000T0000Z.000000T0000Z.000000T0000Z.NO/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=TN1263EEA999A8.FloodAdvisory.1263EF240EE0TN.MEGFLSMEG.4307bff0e9083304cc2bf643b8fc5b58</id>
-<updated>2022-04-15T10:46:00-05:00</updated>
-<published>2022-04-15T10:46:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Flood Advisory issued April 15 at 10:46AM CDT until April 23 at 1:00PM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=TN1263EEA999A8.FloodAdvisory.1263EF240EE0TN.MEGFLSMEG.4307bff0e9083304cc2bf643b8fc5b58"/>
-<summary>...The Flood Advisory is extended for the following rivers in Tennessee...Arkansas... Mississippi River at Osceola For the Lower Mississippi River...including Caruthersville, Osceola...elevated river levels are forecast. ...FLOOD ADVISORY NOW IN EFFECT UNTIL SATURDAY, APRIL 23...</summary>
-<cap:event>Flood Advisory</cap:event>
-<cap:effective>2022-04-15T10:46:00-05:00</cap:effective>
-<cap:expires>2022-04-23T13:00:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Lauderdale; Tipton</cap:areaDesc>
-<cap:polygon>35.82,-89.96 35.82,-89.56 35.6,-89.79 35.39,-89.95 35.39,-90.25 35.82,-89.96</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>047097 047167</value>
-<valueName>UGC</valueName>
-<value>TNC097 TNC167</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.EXT.KMEG.FL.Y.0022.000000T0000Z-220423T1800Z/
-/OSGA4.N.ER.000000T0000Z.000000T0000Z.000000T0000Z.NO/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -6789,39 +6724,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <valueName>VTEC</valueName>
 <value>/O.EXT.KMPX.FL.W.0002.000000T0000Z-220419T1000Z/
 /DURW3.1.ER.220415T1123Z.220417T0600Z.220418T1600Z.NO/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=WI1263EEB6B390.FloodWarning.1263EEB90294WI.GRBFLSGRB.55b0f1ccb5b224e92b79237dd7ac5978</id>
-<updated>2022-04-15T20:32:00-05:00</updated>
-<published>2022-04-15T20:32:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Flood Warning issued April 15 at 8:32PM CDT until further notice by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=WI1263EEB6B390.FloodWarning.1263EEB90294WI.GRBFLSGRB.55b0f1ccb5b224e92b79237dd7ac5978"/>
-<summary>...The Flood Warning continues for the following rivers in Wisconsin... Wisconsin River below Stevens Point affecting Portage County. Wisconsin River below Whiting Dam affecting Portage County. Wisconsin River below Wausau affecting Marathon County. ...FLOOD WARNING REMAINS IN EFFECT UNTIL FURTHER NOTICE...</summary>
-<cap:event>Flood Warning</cap:event>
-<cap:effective>2022-04-15T20:32:00-05:00</cap:effective>
-<cap:expires>2022-04-16T11:45:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Portage</cap:areaDesc>
-<cap:polygon>44.58,-89.61 44.5,-89.56 44.48,-89.64 44.58,-89.67 44.58,-89.61</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>055097</value>
-<valueName>UGC</valueName>
-<value>WIC097</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KGRB.FL.W.0014.000000T0000Z-000000T0000Z/
-/STPW3.U.ER.220414T1343Z.220415T1510Z.000000T0000Z.UU/</value>
 </cap:parameter>
 </entry>
 <entry>
