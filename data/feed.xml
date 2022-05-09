@@ -16,11 +16,11 @@ xmlns = 'http://www.w3.org/2005/Atom'
 xmlns:cap = 'urn:oasis:names:tc:emergency:cap:1.1'
 xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 >
-<!-- http-date = Mon, 09 May 2022 19:28:00 GMT -->
+<!-- http-date = Mon, 09 May 2022 20:01:00 GMT -->
 <id>https://alerts.weather.gov/cap/us.php?x=0</id>
 <logo>http://alerts.weather.gov/images/xml_logo.gif</logo>
 <generator>NWS CAP Server</generator>
-<updated>2022-05-09T13:28:00-06:00</updated>
+<updated>2022-05-09T14:01:00-06:00</updated>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
@@ -684,6 +684,38 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=AZ1263F44484B8.RedFlagWarning.1263F45148B0AZ.VEFRFWVEF.8936eb0507a407800930b543086e161f</id>
+<updated>2022-05-09T12:34:00-07:00</updated>
+<published>2022-05-09T12:34:00-07:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Red Flag Warning issued May 09 at 12:34PM MST until May 09 at 8:00PM MST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=AZ1263F44484B8.RedFlagWarning.1263F45148B0AZ.VEFRFWVEF.8936eb0507a407800930b543086e161f"/>
+<summary>...RED FLAG WARNING REMAINS IN EFFECT UNTIL 8 PM PDT /8 PM MST/ THIS EVENING FOR STRONG WINDS AND LOW HUMIDITY FOR MOHAVE AND CLARK COUNTIES... * AFFECTED AREA...In Arizona...Fire weather zones 101 and 102.In Nevada...Fire weather zones 463, 464, 465, and 466. * TIMING...Through the evening.</summary>
+<cap:event>Red Flag Warning</cap:event>
+<cap:effective>2022-05-09T12:34:00-07:00</cap:effective>
+<cap:expires>2022-05-09T20:00:00-07:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Severe</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Lake Mead NRA, Colorado River-AZ side; Northwest Deserts, Northwest Plateau</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>004015</value>
+<valueName>UGC</valueName>
+<value>AZZ101 AZZ102</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KVEF.FW.W.0009.000000T0000Z-220510T0300Z/</value>
+</cap:parameter>
+</entry>
+<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=AZ1263F44429B4.RedFlagWarning.1263F45121A0AZ.TWCRFWTWC.ef61e9fb66eff95e9da1d3f69a638cb1</id>
 <updated>2022-05-09T10:01:00-07:00</updated>
 <published>2022-05-09T10:01:00-07:00</published>
@@ -777,38 +809,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value>/O.CON.KFGZ.WI.Y.0021.220509T1700Z-220510T0300Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=AZ1263F442CF38.RedFlagWarning.1263F45148B0AZ.VEFRFWVEF.8936eb0507a407800930b543086e161f</id>
-<updated>2022-05-09T01:14:00-07:00</updated>
-<published>2022-05-09T01:14:00-07:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Red Flag Warning issued May 09 at 1:14AM MST until May 09 at 8:00PM MST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=AZ1263F442CF38.RedFlagWarning.1263F45148B0AZ.VEFRFWVEF.8936eb0507a407800930b543086e161f"/>
-<summary>...RED FLAG WARNING IN EFFECT FROM NOON PDT /NOON MST/ TODAY TO 8 PM PDT /8 PM MST/ THIS EVENING FOR STRONG WINDS AND LOW HUMIDITY FOR MOHAVE AND CLARK COUNTIES... The National Weather Service in Las Vegas has issued a Red Flag Warning, which is in effect from noon today to 8 PM this evening. * AFFECTED AREA...In Arizona...Fire weather zones 101 and 102.In</summary>
-<cap:event>Red Flag Warning</cap:event>
-<cap:effective>2022-05-09T01:14:00-07:00</cap:effective>
-<cap:expires>2022-05-09T20:00:00-07:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Severe</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Lake Mead NRA, Colorado River-AZ side; Northwest Deserts, Northwest Plateau</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>004015</value>
-<valueName>UGC</valueName>
-<value>AZZ101 AZZ102</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.NEW.KVEF.FW.W.0009.220509T1900Z-220510T0300Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -1202,6 +1202,141 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <valueName>VTEC</valueName>
 <value>/O.CAN.KLOX.SU.Y.0016.000000T0000Z-220509T1300Z/
 /O.NEW.KLOX.BH.S.0015.220509T0820Z-220509T2200Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=CO1263F4449EE4.RedFlagWarning.1263F45148B0CO.GLDRFWGLD.93efe34629f3766fb17ddc5ac1fa00c5</id>
+<updated>2022-05-09T14:01:00-06:00</updated>
+<published>2022-05-09T14:01:00-06:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Red Flag Warning issued May 09 at 2:01PM MDT until May 09 at 9:00PM MDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CO1263F4449EE4.RedFlagWarning.1263F45148B0CO.GLDRFWGLD.93efe34629f3766fb17ddc5ac1fa00c5"/>
+<summary>...Red Flag Warning Today, Fire Weather Watch Tuesday and Wednesday... A Red Flag Warning for critical fire weather conditions remains in effect today south of a line from Kit Carson county Colorado to Gove county Kansas. Counties not in the warning. Fire Weather Watches are in effect for the far southwestern and</summary>
+<cap:event>Red Flag Warning</cap:event>
+<cap:effective>2022-05-09T14:01:00-06:00</cap:effective>
+<cap:expires>2022-05-09T21:00:00-06:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Severe</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Cheyenne; Kit Carson County</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>008017 008063</value>
+<valueName>UGC</valueName>
+<value>COZ253 COZ254</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.NEW.KGLD.FW.A.0020.220510T1700Z-220511T0300Z/
+/O.NEW.KGLD.FW.A.0021.220511T1500Z-220512T0300Z/
+/O.CON.KGLD.FW.W.0025.000000T0000Z-220510T0300Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=CO1263F4449EE4.FireWeatherWatch.1263F4608AF0CO.GLDRFWGLD.4f2e3209223e9a87d8464dddda8f6324</id>
+<updated>2022-05-09T14:01:00-06:00</updated>
+<published>2022-05-09T14:01:00-06:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Fire Weather Watch issued May 09 at 2:01PM MDT until May 10 at 9:00PM MDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CO1263F4449EE4.FireWeatherWatch.1263F4608AF0CO.GLDRFWGLD.4f2e3209223e9a87d8464dddda8f6324"/>
+<summary>...Red Flag Warning Today, Fire Weather Watch Tuesday and Wednesday... A Red Flag Warning for critical fire weather conditions remains in effect today south of a line from Kit Carson county Colorado to Gove county Kansas. Counties not in the warning. Fire Weather Watches are in effect for the far southwestern and</summary>
+<cap:event>Fire Weather Watch</cap:event>
+<cap:effective>2022-05-09T14:01:00-06:00</cap:effective>
+<cap:expires>2022-05-10T21:00:00-06:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Future</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Possible</cap:certainty>
+<cap:areaDesc>Cheyenne; Kit Carson County</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>008017 008063</value>
+<valueName>UGC</valueName>
+<value>COZ253 COZ254</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.NEW.KGLD.FW.A.0020.220510T1700Z-220511T0300Z/
+/O.NEW.KGLD.FW.A.0021.220511T1500Z-220512T0300Z/
+/O.CON.KGLD.FW.W.0025.000000T0000Z-220510T0300Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=CO1263F4449EE4.FireWeatherWatch.1263F46FCD30CO.GLDRFWGLD.f5a63cee48ad84f41f4390d03ad69fce</id>
+<updated>2022-05-09T14:01:00-06:00</updated>
+<published>2022-05-09T14:01:00-06:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Fire Weather Watch issued May 09 at 2:01PM MDT until May 11 at 9:00PM MDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CO1263F4449EE4.FireWeatherWatch.1263F46FCD30CO.GLDRFWGLD.f5a63cee48ad84f41f4390d03ad69fce"/>
+<summary>...Red Flag Warning Today, Fire Weather Watch Tuesday and Wednesday... A Red Flag Warning for critical fire weather conditions remains in effect today south of a line from Kit Carson county Colorado to Gove county Kansas. Counties not in the warning. Fire Weather Watches are in effect for the far southwestern and</summary>
+<cap:event>Fire Weather Watch</cap:event>
+<cap:effective>2022-05-09T14:01:00-06:00</cap:effective>
+<cap:expires>2022-05-11T21:00:00-06:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Future</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Possible</cap:certainty>
+<cap:areaDesc>Yuma</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>008125</value>
+<valueName>UGC</valueName>
+<value>COZ252</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CAN.KGLD.FW.W.0025.000000T0000Z-220510T0300Z/
+/O.NEW.KGLD.FW.A.0021.220511T1500Z-220512T0300Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=CO1263F4449EE4.FireWeatherWatch.1263F46FCD30CO.GLDRFWGLD.723c1584f3756570c3a25055b517b176</id>
+<updated>2022-05-09T14:01:00-06:00</updated>
+<published>2022-05-09T14:01:00-06:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Fire Weather Watch issued May 09 at 2:01PM MDT until May 11 at 9:00PM MDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CO1263F4449EE4.FireWeatherWatch.1263F46FCD30CO.GLDRFWGLD.723c1584f3756570c3a25055b517b176"/>
+<summary>...Red Flag Warning Today, Fire Weather Watch Tuesday and Wednesday... A Red Flag Warning for critical fire weather conditions remains in effect today south of a line from Kit Carson county Colorado to Gove county Kansas. Counties not in the warning. Fire Weather Watches are in effect for the far southwestern and</summary>
+<cap:event>Fire Weather Watch</cap:event>
+<cap:effective>2022-05-09T14:01:00-06:00</cap:effective>
+<cap:expires>2022-05-11T21:00:00-06:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Future</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Possible</cap:certainty>
+<cap:areaDesc>Cheyenne; Kit Carson County</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>008017 008063</value>
+<valueName>UGC</valueName>
+<value>COZ253 COZ254</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.NEW.KGLD.FW.A.0020.220510T1700Z-220511T0300Z/
+/O.NEW.KGLD.FW.A.0021.220511T1500Z-220512T0300Z/
+/O.CON.KGLD.FW.W.0025.000000T0000Z-220510T0300Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -1665,38 +1800,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=CO1263F442FB5C.RedFlagWarning.1263F45148B0CO.GLDRFWGLD.9ea40b2bb9ce7152393114446b57a350</id>
-<updated>2022-05-09T03:27:00-06:00</updated>
-<published>2022-05-09T03:27:00-06:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Red Flag Warning issued May 09 at 3:27AM MDT until May 09 at 9:00PM MDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CO1263F442FB5C.RedFlagWarning.1263F45148B0CO.GLDRFWGLD.9ea40b2bb9ce7152393114446b57a350"/>
-<summary>...Red Flag Warning Today... A Red Flag Warning for critical fire weather conditions remains in effect today south of a line from Yuma, Colorado to Gove Kansas. Counties not in the warning will still see very dry air resulting low relative humidity values. Outdoor burning is highly discouraged across the entire area today.</summary>
-<cap:event>Red Flag Warning</cap:event>
-<cap:effective>2022-05-09T03:27:00-06:00</cap:effective>
-<cap:expires>2022-05-09T21:00:00-06:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Severe</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Cheyenne; Kit Carson County; Yuma</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>008017 008063 008125</value>
-<valueName>UGC</valueName>
-<value>COZ252 COZ253 COZ254</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KGLD.FW.W.0025.220509T1600Z-220510T0300Z/</value>
-</cap:parameter>
-</entry>
-<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=CO1263F442D640.RedFlagWarning.1263F4516FC0CO.GJTRFWGJT.044b2f3615acff4960dc04bdcd5e9e94</id>
 <updated>2022-05-09T02:32:00-06:00</updated>
 <published>2022-05-09T02:32:00-06:00</published>
@@ -1965,18 +2068,18 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=DC1263F4439F6C.CoastalFloodWarning.1263F4525A20DC.LWXCFWLWX.7777b32883dad3f0805e87d23bc8cf99</id>
-<updated>2022-05-09T09:47:00-04:00</updated>
-<published>2022-05-09T09:47:00-04:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=DC1263F4448580.CoastalFloodWarning.1263F4619C60DC.LWXCFWLWX.7777b32883dad3f0805e87d23bc8cf99</id>
+<updated>2022-05-09T15:36:00-04:00</updated>
+<published>2022-05-09T15:36:00-04:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Coastal Flood Warning issued May 09 at 9:47AM EDT until May 10 at 6:00AM EDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=DC1263F4439F6C.CoastalFloodWarning.1263F4525A20DC.LWXCFWLWX.7777b32883dad3f0805e87d23bc8cf99"/>
-<summary>...COASTAL FLOOD WARNING REMAINS IN EFFECT UNTIL 6 AM EDT TUESDAY... ...COASTAL FLOOD WATCH REMAINS IN EFFECT FROM TUESDAY MORNING THROUGH LATE TUESDAY NIGHT... * WHAT...For the Coastal Flood Warning, up to one foot of inundation above ground level in low lying areas due to tidal</summary>
+<title>Coastal Flood Warning issued May 09 at 3:36PM EDT until May 11 at 6:00AM EDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=DC1263F4448580.CoastalFloodWarning.1263F4619C60DC.LWXCFWLWX.7777b32883dad3f0805e87d23bc8cf99"/>
+<summary>...COASTAL FLOOD WARNING NOW IN EFFECT UNTIL 6 AM EDT WEDNESDAY... ...COASTAL FLOOD WATCH IS CANCELLED... * WHAT...Up to one foot of inundation above ground level in low lying areas due to tidal flooding. * WHERE...Shoreline in the District of Columbia. * WHEN...Until 6 AM EDT Wednesday, especially around the time of</summary>
 <cap:event>Coastal Flood Warning</cap:event>
-<cap:effective>2022-05-09T09:47:00-04:00</cap:effective>
-<cap:expires>2022-05-10T06:00:00-04:00</cap:expires>
+<cap:effective>2022-05-09T15:36:00-04:00</cap:effective>
+<cap:expires>2022-05-11T06:00:00-04:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
 <cap:category>Met</cap:category>
@@ -1993,41 +2096,8 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
-<value>/O.CON.KLWX.CF.W.0002.000000T0000Z-220510T1000Z/
-/O.CON.KLWX.CF.A.0004.220510T1000Z-220511T1000Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=DC1263F4439F6C.CoastalFloodWatch.1263F4619C60DC.LWXCFWLWX.b6bd3b1466f908470ae210844699db55</id>
-<updated>2022-05-09T09:47:00-04:00</updated>
-<published>2022-05-09T09:47:00-04:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Coastal Flood Watch issued May 09 at 9:47AM EDT until May 11 at 6:00AM EDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=DC1263F4439F6C.CoastalFloodWatch.1263F4619C60DC.LWXCFWLWX.b6bd3b1466f908470ae210844699db55"/>
-<summary>...COASTAL FLOOD WARNING REMAINS IN EFFECT UNTIL 6 AM EDT TUESDAY... ...COASTAL FLOOD WATCH REMAINS IN EFFECT FROM TUESDAY MORNING THROUGH LATE TUESDAY NIGHT... * WHAT...For the Coastal Flood Warning, up to one foot of inundation above ground level in low lying areas due to tidal</summary>
-<cap:event>Coastal Flood Watch</cap:event>
-<cap:effective>2022-05-09T09:47:00-04:00</cap:effective>
-<cap:expires>2022-05-11T06:00:00-04:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Future</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Possible</cap:certainty>
-<cap:areaDesc>District of Columbia</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>011001</value>
-<valueName>UGC</valueName>
-<value>DCZ001</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KLWX.CF.W.0002.000000T0000Z-220510T1000Z/
-/O.CON.KLWX.CF.A.0004.220510T1000Z-220511T1000Z/</value>
+<value>/O.CAN.KLWX.CF.A.0004.220510T1000Z-220511T1000Z/
+/O.EXT.KLWX.CF.W.0002.000000T0000Z-220511T1000Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -3398,17 +3468,17 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=KS1263F442FB5C.RedFlagWarning.1263F45148B0KS.GLDRFWGLD.5aa360cdbeb4a9838195af09bef18671</id>
-<updated>2022-05-09T04:27:00-05:00</updated>
-<published>2022-05-09T04:27:00-05:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=KS1263F4449EE4.RedFlagWarning.1263F45148B0KS.GLDRFWGLD.0e5792e9c9bfa099e4d2398ac3bac08e</id>
+<updated>2022-05-09T15:01:00-05:00</updated>
+<published>2022-05-09T15:01:00-05:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Red Flag Warning issued May 09 at 4:27AM CDT until May 09 at 10:00PM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=KS1263F442FB5C.RedFlagWarning.1263F45148B0KS.GLDRFWGLD.5aa360cdbeb4a9838195af09bef18671"/>
-<summary>...Red Flag Warning Today... A Red Flag Warning for critical fire weather conditions remains in effect today south of a line from Yuma, Colorado to Gove Kansas. Counties not in the warning will still see very dry air resulting low relative humidity values. Outdoor burning is highly discouraged across the entire area today.</summary>
+<title>Red Flag Warning issued May 09 at 3:01PM CDT until May 09 at 10:00PM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=KS1263F4449EE4.RedFlagWarning.1263F45148B0KS.GLDRFWGLD.0e5792e9c9bfa099e4d2398ac3bac08e"/>
+<summary>...Red Flag Warning Today, Fire Weather Watch Tuesday and Wednesday... A Red Flag Warning for critical fire weather conditions remains in effect today south of a line from Kit Carson county Colorado to Gove county Kansas. Counties not in the warning. Fire Weather Watches are in effect for the far southwestern and</summary>
 <cap:event>Red Flag Warning</cap:event>
-<cap:effective>2022-05-09T04:27:00-05:00</cap:effective>
+<cap:effective>2022-05-09T15:01:00-05:00</cap:effective>
 <cap:expires>2022-05-09T22:00:00-05:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
@@ -3416,17 +3486,83 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:urgency>Expected</cap:urgency>
 <cap:severity>Severe</cap:severity>
 <cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Cheyenne; Gove; Greeley; Logan; Sherman; Thomas; Wallace; Wichita</cap:areaDesc>
+<cap:areaDesc>Gove; Logan; Sherman; Thomas; Wallace; Wichita</cap:areaDesc>
 <cap:polygon></cap:polygon>
 <cap:geocode>
 <valueName>FIPS6</valueName>
-<value>020023 020063 020071 020109 020181 020193 020199 020203</value>
+<value>020063 020109 020181 020193 020199 020203</value>
 <valueName>UGC</valueName>
-<value>KSZ001 KSZ013 KSZ014 KSZ027 KSZ028 KSZ029 KSZ041 KSZ042</value>
+<value>KSZ013 KSZ014 KSZ027 KSZ028 KSZ029 KSZ042</value>
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
-<value>/O.CON.KGLD.FW.W.0025.220509T1600Z-220510T0300Z/</value>
+<value>/O.CON.KGLD.FW.W.0025.000000T0000Z-220510T0300Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=KS1263F4449EE4.RedFlagWarning.1263F45148B0KS.GLDRFWGLD.07bac644714830b7392b7235640ac046</id>
+<updated>2022-05-09T15:01:00-05:00</updated>
+<published>2022-05-09T15:01:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Red Flag Warning issued May 09 at 3:01PM CDT until May 09 at 10:00PM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=KS1263F4449EE4.RedFlagWarning.1263F45148B0KS.GLDRFWGLD.07bac644714830b7392b7235640ac046"/>
+<summary>...Red Flag Warning Today, Fire Weather Watch Tuesday and Wednesday... A Red Flag Warning for critical fire weather conditions remains in effect today south of a line from Kit Carson county Colorado to Gove county Kansas. Counties not in the warning. Fire Weather Watches are in effect for the far southwestern and</summary>
+<cap:event>Red Flag Warning</cap:event>
+<cap:effective>2022-05-09T15:01:00-05:00</cap:effective>
+<cap:expires>2022-05-09T22:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Severe</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Greeley</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>020071</value>
+<valueName>UGC</valueName>
+<value>KSZ041</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.NEW.KGLD.FW.A.0020.220510T1700Z-220511T0300Z/
+/O.CON.KGLD.FW.W.0025.000000T0000Z-220510T0300Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=KS1263F4449EE4.FireWeatherWatch.1263F4608AF0KS.GLDRFWGLD.15e58b0e4612cd62ca9a914cd6797994</id>
+<updated>2022-05-09T15:01:00-05:00</updated>
+<published>2022-05-09T15:01:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Fire Weather Watch issued May 09 at 3:01PM CDT until May 10 at 10:00PM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=KS1263F4449EE4.FireWeatherWatch.1263F4608AF0KS.GLDRFWGLD.15e58b0e4612cd62ca9a914cd6797994"/>
+<summary>...Red Flag Warning Today, Fire Weather Watch Tuesday and Wednesday... A Red Flag Warning for critical fire weather conditions remains in effect today south of a line from Kit Carson county Colorado to Gove county Kansas. Counties not in the warning. Fire Weather Watches are in effect for the far southwestern and</summary>
+<cap:event>Fire Weather Watch</cap:event>
+<cap:effective>2022-05-09T15:01:00-05:00</cap:effective>
+<cap:expires>2022-05-10T22:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Future</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Possible</cap:certainty>
+<cap:areaDesc>Greeley</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>020071</value>
+<valueName>UGC</valueName>
+<value>KSZ041</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.NEW.KGLD.FW.A.0020.220510T1700Z-220511T0300Z/
+/O.CON.KGLD.FW.W.0025.000000T0000Z-220510T0300Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -3689,6 +3825,200 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=MD1263F4448580.CoastalFloodWarning.1263F4534480MD.LWXCFWLWX.ec07b88b9bd54f83b1cd25358ca2f8f5</id>
+<updated>2022-05-09T15:36:00-04:00</updated>
+<published>2022-05-09T15:36:00-04:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Coastal Flood Warning issued May 09 at 3:36PM EDT until May 10 at 12:00PM EDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MD1263F4448580.CoastalFloodWarning.1263F4534480MD.LWXCFWLWX.ec07b88b9bd54f83b1cd25358ca2f8f5"/>
+<summary>...COASTAL FLOOD WARNING NOW IN EFFECT UNTIL NOON EDT TUESDAY... ...COASTAL FLOOD WATCH NOW IN EFFECT FROM TUESDAY AFTERNOON THROUGH WEDNESDAY AFTERNOON... * WHAT...For the Coastal Flood Warning, up to one foot of inundation above ground level in low lying areas due to tidal flooding. For the Coastal Flood Watch, up to one foot of</summary>
+<cap:event>Coastal Flood Warning</cap:event>
+<cap:effective>2022-05-09T15:36:00-04:00</cap:effective>
+<cap:expires>2022-05-10T12:00:00-04:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>St. Marys</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>024037</value>
+<valueName>UGC</valueName>
+<value>MDZ017</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.EXT.KLWX.CF.W.0002.000000T0000Z-220510T1600Z/
+/O.EXT.KLWX.CF.A.0003.220510T1600Z-220511T2200Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=MD1263F4448580.CoastalFloodAdvisory.1263F4619C60MD.LWXCFWLWX.f0bed072bfa674bc157f15afd4a7ab9a</id>
+<updated>2022-05-09T15:36:00-04:00</updated>
+<published>2022-05-09T15:36:00-04:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Coastal Flood Advisory issued May 09 at 3:36PM EDT until May 11 at 6:00AM EDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MD1263F4448580.CoastalFloodAdvisory.1263F4619C60MD.LWXCFWLWX.f0bed072bfa674bc157f15afd4a7ab9a"/>
+<summary>...COASTAL FLOOD ADVISORY NOW IN EFFECT UNTIL 6 AM EDT WEDNESDAY... * WHAT...Up to one half foot of inundation above ground level in low lying areas due to tidal flooding. * WHERE...Shoreline in Southern Baltimore County and the city of Baltimore.</summary>
+<cap:event>Coastal Flood Advisory</cap:event>
+<cap:effective>2022-05-09T15:36:00-04:00</cap:effective>
+<cap:expires>2022-05-11T06:00:00-04:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Southern Baltimore</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>024005 024510</value>
+<valueName>UGC</valueName>
+<value>MDZ011</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.EXT.KLWX.CF.Y.0014.000000T0000Z-220511T1000Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=MD1263F4448580.CoastalFloodAdvisory.1263F4619C60MD.LWXCFWLWX.0bc1fdf28a8d1107e6877abfce6f697b</id>
+<updated>2022-05-09T15:36:00-04:00</updated>
+<published>2022-05-09T15:36:00-04:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Coastal Flood Advisory issued May 09 at 3:36PM EDT until May 11 at 6:00AM EDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MD1263F4448580.CoastalFloodAdvisory.1263F4619C60MD.LWXCFWLWX.0bc1fdf28a8d1107e6877abfce6f697b"/>
+<summary>...COASTAL FLOOD ADVISORY NOW IN EFFECT UNTIL 6 AM EDT WEDNESDAY... * WHAT...Up to one foot of inundation above ground level in low lying areas due to tidal flooding. * WHERE...Shoreline in Anne Arundel County. * WHEN...Until 6 AM EDT Wednesday, especially around the time of</summary>
+<cap:event>Coastal Flood Advisory</cap:event>
+<cap:effective>2022-05-09T15:36:00-04:00</cap:effective>
+<cap:expires>2022-05-11T06:00:00-04:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Anne Arundel</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>024003</value>
+<valueName>UGC</valueName>
+<value>MDZ014</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.EXT.KLWX.CF.Y.0014.000000T0000Z-220511T1000Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=MD1263F4448580.CoastalFloodAdvisory.1263F4619C60MD.LWXCFWLWX.92d487f0c9d87ba2722f13aa7cc8738d</id>
+<updated>2022-05-09T15:36:00-04:00</updated>
+<published>2022-05-09T15:36:00-04:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Coastal Flood Advisory issued May 09 at 3:36PM EDT until May 11 at 6:00AM EDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MD1263F4448580.CoastalFloodAdvisory.1263F4619C60MD.LWXCFWLWX.92d487f0c9d87ba2722f13aa7cc8738d"/>
+<summary>...COASTAL FLOOD ADVISORY NOW IN EFFECT UNTIL 6 AM EDT WEDNESDAY... * WHAT...Up to one foot of inundation above ground level in low lying areas due to tidal flooding. * WHERE...Shoreline in Charles and King George Counties. * WHEN...Until 6 AM EDT Wednesday, especially around the time of</summary>
+<cap:event>Coastal Flood Advisory</cap:event>
+<cap:effective>2022-05-09T15:36:00-04:00</cap:effective>
+<cap:expires>2022-05-11T06:00:00-04:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Charles</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>024017</value>
+<valueName>UGC</valueName>
+<value>MDZ016</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.EXT.KLWX.CF.Y.0014.000000T0000Z-220511T1000Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=MD1263F4448580.CoastalFloodAdvisory.1263F4619C60MD.LWXCFWLWX.2f6e4b278896e822fdf0f2fd1a60b51e</id>
+<updated>2022-05-09T15:36:00-04:00</updated>
+<published>2022-05-09T15:36:00-04:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Coastal Flood Advisory issued May 09 at 3:36PM EDT until May 11 at 6:00AM EDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MD1263F4448580.CoastalFloodAdvisory.1263F4619C60MD.LWXCFWLWX.2f6e4b278896e822fdf0f2fd1a60b51e"/>
+<summary>...COASTAL FLOOD ADVISORY NOW IN EFFECT UNTIL 6 AM EDT WEDNESDAY... * WHAT...Up to one foot of inundation above ground level in low lying areas due to tidal flooding. * WHERE...Shoreline in Calvert County. * WHEN...Until 6 AM EDT Wednesday, especially around the time of</summary>
+<cap:event>Coastal Flood Advisory</cap:event>
+<cap:effective>2022-05-09T15:36:00-04:00</cap:effective>
+<cap:expires>2022-05-11T06:00:00-04:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Calvert</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>024009</value>
+<valueName>UGC</valueName>
+<value>MDZ018</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.EXT.KLWX.CF.Y.0014.000000T0000Z-220511T1000Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=MD1263F4448580.CoastalFloodWatch.1263F4637120MD.LWXCFWLWX.c757123abb4e5878cbfa5fa0499a2d5f</id>
+<updated>2022-05-09T15:36:00-04:00</updated>
+<published>2022-05-09T15:36:00-04:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Coastal Flood Watch issued May 09 at 3:36PM EDT until May 11 at 6:00PM EDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MD1263F4448580.CoastalFloodWatch.1263F4637120MD.LWXCFWLWX.c757123abb4e5878cbfa5fa0499a2d5f"/>
+<summary>...COASTAL FLOOD WARNING NOW IN EFFECT UNTIL NOON EDT TUESDAY... ...COASTAL FLOOD WATCH NOW IN EFFECT FROM TUESDAY AFTERNOON THROUGH WEDNESDAY AFTERNOON... * WHAT...For the Coastal Flood Warning, up to one foot of inundation above ground level in low lying areas due to tidal flooding. For the Coastal Flood Watch, up to one foot of</summary>
+<cap:event>Coastal Flood Watch</cap:event>
+<cap:effective>2022-05-09T15:36:00-04:00</cap:effective>
+<cap:expires>2022-05-11T18:00:00-04:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Future</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Possible</cap:certainty>
+<cap:areaDesc>St. Marys</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>024037</value>
+<valueName>UGC</valueName>
+<value>MDZ017</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.EXT.KLWX.CF.W.0002.000000T0000Z-220510T1600Z/
+/O.EXT.KLWX.CF.A.0003.220510T1600Z-220511T2200Z/</value>
+</cap:parameter>
+</entry>
+<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=MD1263F4447FA4.WindAdvisory.1263F4528130MD.AKQNPWAKQ.7427ffab8941169b28ea644bb86afc72</id>
 <updated>2022-05-09T15:21:00-04:00</updated>
 <published>2022-05-09T15:21:00-04:00</published>
@@ -3852,197 +4182,35 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=MD1263F4439F6C.CoastalFloodAdvisory.1263F45196D0MD.LWXCFWLWX.92d487f0c9d87ba2722f13aa7cc8738d</id>
-<updated>2022-05-09T09:47:00-04:00</updated>
-<published>2022-05-09T09:47:00-04:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=ME1263F444851C.SpecialWeatherStatement.1263F444ECA0ME.CARSPSCAR.22aeb1103adec3bf77f4f8faee56327a</id>
+<updated>2022-05-09T15:35:00-04:00</updated>
+<published>2022-05-09T15:35:00-04:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Coastal Flood Advisory issued May 09 at 9:47AM EDT until May 10 at 1:00AM EDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MD1263F4439F6C.CoastalFloodAdvisory.1263F45196D0MD.LWXCFWLWX.92d487f0c9d87ba2722f13aa7cc8738d"/>
-<summary>...COASTAL FLOOD ADVISORY IN EFFECT UNTIL 1 AM EDT TUESDAY... * WHAT...Up to one half foot of inundation above ground level in low lying areas due to tidal flooding. * WHERE...Shoreline in Charles and King George Counties. * WHEN...Until 1 AM EDT Tuesday, especially around the time of high tide.</summary>
-<cap:event>Coastal Flood Advisory</cap:event>
-<cap:effective>2022-05-09T09:47:00-04:00</cap:effective>
-<cap:expires>2022-05-10T01:00:00-04:00</cap:expires>
+<title>Special Weather Statement issued May 09 at 3:35PM EDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=ME1263F444851C.SpecialWeatherStatement.1263F444ECA0ME.CARSPSCAR.22aeb1103adec3bf77f4f8faee56327a"/>
+<summary>...Elevated Fire Weather Danger Predicted Today... A very dry air mass over the area and breezy conditions will combine with dead and dry fuels such as grass, leaves, and twigs to create the potential for uncontrolled fire spread across interior Northern Maine today. This afternoon, relative humidities will decrease to low levels between 15 to 25 percent.</summary>
+<cap:event>Special Weather Statement</cap:event>
+<cap:effective>2022-05-09T15:35:00-04:00</cap:effective>
+<cap:expires>2022-05-09T18:00:00-04:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
 <cap:category>Met</cap:category>
 <cap:urgency>Expected</cap:urgency>
 <cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Charles</cap:areaDesc>
+<cap:certainty>Observed</cap:certainty>
+<cap:areaDesc>Central Penobscot; Central Piscataquis; Central Washington; Interior Hancock; Northeast Aroostook; Northern Penobscot; Northern Piscataquis; Northern Somerset; Northern Washington; Northwest Aroostook; Southeast Aroostook; Southern Penobscot; Southern Piscataquis</cap:areaDesc>
 <cap:polygon></cap:polygon>
 <cap:geocode>
 <valueName>FIPS6</valueName>
-<value>024017</value>
+<value>023003 023009 023019 023021 023025 023029</value>
 <valueName>UGC</valueName>
-<value>MDZ016</value>
+<value>MEZ001 MEZ002 MEZ003 MEZ004 MEZ005 MEZ006 MEZ010 MEZ011 MEZ015 MEZ016 MEZ017 MEZ031 MEZ032</value>
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
-<value>/O.EXB.KLWX.CF.Y.0014.220509T1347Z-220510T0500Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=MD1263F4439F6C.CoastalFloodWarning.1263F451BDE0MD.LWXCFWLWX.ec07b88b9bd54f83b1cd25358ca2f8f5</id>
-<updated>2022-05-09T09:47:00-04:00</updated>
-<published>2022-05-09T09:47:00-04:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Coastal Flood Warning issued May 09 at 9:47AM EDT until May 10 at 2:00AM EDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MD1263F4439F6C.CoastalFloodWarning.1263F451BDE0MD.LWXCFWLWX.ec07b88b9bd54f83b1cd25358ca2f8f5"/>
-<summary>...COASTAL FLOOD WARNING REMAINS IN EFFECT UNTIL 2 AM EDT TUESDAY... ...COASTAL FLOOD WATCH REMAINS IN EFFECT FROM LATE TONIGHT THROUGH LATE TUESDAY NIGHT... * WHAT...For the Coastal Flood Warning, up to one foot of inundation above ground level in low lying areas due to tidal</summary>
-<cap:event>Coastal Flood Warning</cap:event>
-<cap:effective>2022-05-09T09:47:00-04:00</cap:effective>
-<cap:expires>2022-05-10T02:00:00-04:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>St. Marys</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>024037</value>
-<valueName>UGC</valueName>
-<value>MDZ017</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KLWX.CF.W.0002.000000T0000Z-220510T0600Z/
-/O.CON.KLWX.CF.A.0003.220510T0600Z-220511T0600Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=MD1263F4439F6C.CoastalFloodAdvisory.1263F4523310MD.LWXCFWLWX.f0bed072bfa674bc157f15afd4a7ab9a</id>
-<updated>2022-05-09T09:47:00-04:00</updated>
-<published>2022-05-09T09:47:00-04:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Coastal Flood Advisory issued May 09 at 9:47AM EDT until May 10 at 5:00AM EDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MD1263F4439F6C.CoastalFloodAdvisory.1263F4523310MD.LWXCFWLWX.f0bed072bfa674bc157f15afd4a7ab9a"/>
-<summary>...COASTAL FLOOD ADVISORY REMAINS IN EFFECT UNTIL 5 AM EDT TUESDAY... * WHAT...Up to one half foot of inundation above ground level expected in low lying areas due to tidal flooding. * WHERE...Shoreline in Southern Baltimore County and the city of Baltimore.</summary>
-<cap:event>Coastal Flood Advisory</cap:event>
-<cap:effective>2022-05-09T09:47:00-04:00</cap:effective>
-<cap:expires>2022-05-10T05:00:00-04:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Southern Baltimore</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>024005 024510</value>
-<valueName>UGC</valueName>
-<value>MDZ011</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KLWX.CF.Y.0014.220509T1400Z-220510T0900Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=MD1263F4439F6C.CoastalFloodAdvisory.1263F4525A20MD.LWXCFWLWX.0bc1fdf28a8d1107e6877abfce6f697b</id>
-<updated>2022-05-09T09:47:00-04:00</updated>
-<published>2022-05-09T09:47:00-04:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Coastal Flood Advisory issued May 09 at 9:47AM EDT until May 10 at 6:00AM EDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MD1263F4439F6C.CoastalFloodAdvisory.1263F4525A20MD.LWXCFWLWX.0bc1fdf28a8d1107e6877abfce6f697b"/>
-<summary>...COASTAL FLOOD ADVISORY REMAINS IN EFFECT UNTIL 6 AM EDT TUESDAY... * WHAT...Up to one half foot of inundation above ground level in low lying areas due to tidal flooding. * WHERE...Shoreline in Anne Arundel County. * WHEN...Until 6 AM EDT Tuesday, especially around the time of</summary>
-<cap:event>Coastal Flood Advisory</cap:event>
-<cap:effective>2022-05-09T09:47:00-04:00</cap:effective>
-<cap:expires>2022-05-10T06:00:00-04:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Anne Arundel</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>024003</value>
-<valueName>UGC</valueName>
-<value>MDZ014</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KLWX.CF.Y.0014.000000T0000Z-220510T1000Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=MD1263F4439F6C.CoastalFloodAdvisory.1263F4525A20MD.LWXCFWLWX.2f6e4b278896e822fdf0f2fd1a60b51e</id>
-<updated>2022-05-09T09:47:00-04:00</updated>
-<published>2022-05-09T09:47:00-04:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Coastal Flood Advisory issued May 09 at 9:47AM EDT until May 10 at 6:00AM EDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MD1263F4439F6C.CoastalFloodAdvisory.1263F4525A20MD.LWXCFWLWX.2f6e4b278896e822fdf0f2fd1a60b51e"/>
-<summary>...COASTAL FLOOD ADVISORY REMAINS IN EFFECT UNTIL 6 AM EDT TUESDAY... * WHAT...Up to one half foot of inundation above ground level in low lying areas due to tidal flooding. * WHERE...Shoreline in Calvert County. * WHEN...Until 6 AM EDT Tuesday, especially around the time of</summary>
-<cap:event>Coastal Flood Advisory</cap:event>
-<cap:effective>2022-05-09T09:47:00-04:00</cap:effective>
-<cap:expires>2022-05-10T06:00:00-04:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Calvert</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>024009</value>
-<valueName>UGC</valueName>
-<value>MDZ018</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KLWX.CF.Y.0014.000000T0000Z-220510T1000Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=MD1263F4439F6C.CoastalFloodWatch.1263F4610020MD.LWXCFWLWX.c757123abb4e5878cbfa5fa0499a2d5f</id>
-<updated>2022-05-09T09:47:00-04:00</updated>
-<published>2022-05-09T09:47:00-04:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Coastal Flood Watch issued May 09 at 9:47AM EDT until May 11 at 2:00AM EDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MD1263F4439F6C.CoastalFloodWatch.1263F4610020MD.LWXCFWLWX.c757123abb4e5878cbfa5fa0499a2d5f"/>
-<summary>...COASTAL FLOOD WARNING REMAINS IN EFFECT UNTIL 2 AM EDT TUESDAY... ...COASTAL FLOOD WATCH REMAINS IN EFFECT FROM LATE TONIGHT THROUGH LATE TUESDAY NIGHT... * WHAT...For the Coastal Flood Warning, up to one foot of inundation above ground level in low lying areas due to tidal</summary>
-<cap:event>Coastal Flood Watch</cap:event>
-<cap:effective>2022-05-09T09:47:00-04:00</cap:effective>
-<cap:expires>2022-05-11T02:00:00-04:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Future</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Possible</cap:certainty>
-<cap:areaDesc>St. Marys</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>024037</value>
-<valueName>UGC</valueName>
-<value>MDZ017</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KLWX.CF.W.0002.000000T0000Z-220510T0600Z/
-/O.CON.KLWX.CF.A.0003.220510T0600Z-220511T0600Z/</value>
+<value></value>
 </cap:parameter>
 </entry>
 <entry>
@@ -4075,6 +4243,38 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value>/O.NEW.KGYX.FR.Y.0003.220510T0600Z-220510T1000Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=MI1263F4448710.RedFlagWarning.1263F450D380MI.APXRFWAPX.311089b83995f84dcc93df9e51bbe86f</id>
+<updated>2022-05-09T15:40:00-04:00</updated>
+<published>2022-05-09T15:40:00-04:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Red Flag Warning issued May 09 at 3:40PM EDT until May 09 at 8:00PM EDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MI1263F4448710.RedFlagWarning.1263F450D380MI.APXRFWAPX.311089b83995f84dcc93df9e51bbe86f"/>
+<summary>...RED FLAG WARNING REMAINS IN EFFECT UNTIL 8 PM EDT THIS EVENING FOR ALL OF NORTHERN LOWER MICHIGAN... * WIND...Southeast winds of 15 to 25 mph with gusts to 40 mph. * HUMIDITY...Minimum relative humidity of 20 to 25 percent. * TEMPERATURES...Highs of 70 to 77 degrees. * IMPACTS...Any fires that develop will likely spread rapidly.</summary>
+<cap:event>Red Flag Warning</cap:event>
+<cap:effective>2022-05-09T15:40:00-04:00</cap:effective>
+<cap:expires>2022-05-09T20:00:00-04:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Severe</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Alcona; Alpena; Antrim; Arenac; Benzie; Charlevoix; Cheboygan; Crawford; Emmet; Gladwin; Grand Traverse; Iosco; Kalkaska; Leelanau; Manistee; Missaukee; Montmorency; Ogemaw; Oscoda; Otsego; Presque Isle; Roscommon; Wexford</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>026001 026007 026009 026011 026019 026029 026031 026039 026047 026051 026055 026069 026079 026089 026101 026113 026119 026129 026135 026137 026141 026143 026165</value>
+<valueName>UGC</valueName>
+<value>MIZ016 MIZ017 MIZ018 MIZ020 MIZ021 MIZ022 MIZ023 MIZ024 MIZ025 MIZ026 MIZ027 MIZ028 MIZ029 MIZ030 MIZ031 MIZ032 MIZ033 MIZ034 MIZ035 MIZ036 MIZ041 MIZ042 MIZ099</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KAPX.FW.W.0001.000000T0000Z-220510T0000Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -4271,36 +4471,35 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=MI1263F442A698.RedFlagWarning.1263F450D380MI.APXRFWAPX.311089b83995f84dcc93df9e51bbe86f</id>
-<updated>2022-05-09T03:10:00-04:00</updated>
-<published>2022-05-09T03:10:00-04:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=MN1263F4448A30.TornadoWatch.1263F45148B0MN.WNSWOU4.b8160c28c27291b9d12a62d4490c7a80</id>
+<updated>2022-05-09T14:48:00-05:00</updated>
+<published>2022-05-09T14:48:00-05:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Red Flag Warning issued May 09 at 3:10AM EDT until May 09 at 8:00PM EDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MI1263F442A698.RedFlagWarning.1263F450D380MI.APXRFWAPX.311089b83995f84dcc93df9e51bbe86f"/>
-<summary>...RED FLAG WARNING IN EFFECT FROM 8 AM THIS MORNING TO 8 PM EDT THIS EVENING FOR LOW RELATIVE HUMIDITY...GUSTY WINDS...AND VERY WARM TEMPERATURES ACROSS ALL OF NORTHERN LOWER MICHIGAN... The National Weather Service in Gaylord has issued a RED FLAG WARNING, which is in effect from 8 AM this morning to 8 PM EDT this evening. The FIRE WEATHER WATCH is no longer in effect.</summary>
-<cap:event>Red Flag Warning</cap:event>
-<cap:effective>2022-05-09T03:10:00-04:00</cap:effective>
-<cap:expires>2022-05-09T20:00:00-04:00</cap:expires>
+<title>Tornado Watch issued May 09 at 2:48PM CDT until May 09 at 10:00PM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MN1263F4448A30.TornadoWatch.1263F45148B0MN.WNSWOU4.b8160c28c27291b9d12a62d4490c7a80"/>
+<summary>TORNADO WATCH 194 IS IN EFFECT UNTIL 1000 PM CDT FOR THE FOLLOWING LOCATIONS MN . MINNESOTA COUNTIES INCLUDED ARE AITKIN ANOKA BENTON BLUE EARTH CARVER CHISAGO</summary>
+<cap:event>Tornado Watch</cap:event>
+<cap:effective>2022-05-09T14:48:00-05:00</cap:effective>
+<cap:expires>2022-05-09T22:00:00-05:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
 <cap:category>Met</cap:category>
 <cap:urgency>Expected</cap:urgency>
 <cap:severity>Severe</cap:severity>
 <cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Alcona; Alpena; Antrim; Arenac; Benzie; Charlevoix; Cheboygan; Crawford; Emmet; Gladwin; Grand Traverse; Iosco; Kalkaska; Leelanau; Manistee; Missaukee; Montmorency; Ogemaw; Oscoda; Otsego; Presque Isle; Roscommon; Wexford</cap:areaDesc>
+<cap:areaDesc>Aitkin; Anoka; Benton; Blue Earth; Carver; Chisago; Crow Wing; Dakota; Dodge; Faribault; Fillmore; Freeborn; Goodhue; Hennepin; Houston; Isanti; Kanabec; Le Sueur; McLeod; Meeker; Mille Lacs; Morrison; Mower; Nicollet; Olmsted; Pine; Ramsey; Rice; Scott; Sherburne; Sibley; Stearns; Steele; Wabasha; Waseca; Washington; Winona; Wright</cap:areaDesc>
 <cap:polygon></cap:polygon>
 <cap:geocode>
 <valueName>FIPS6</valueName>
-<value>026001 026007 026009 026011 026019 026029 026031 026039 026047 026051 026055 026069 026079 026089 026101 026113 026119 026129 026135 026137 026141 026143 026165</value>
+<value>027001 027003 027009 027013 027019 027025 027035 027037 027039 027043 027045 027047 027049 027053 027055 027059 027065 027079 027085 027093 027095 027097 027099 027103 027109 027115 027123 027131 027139 027141 027143 027145 027147 027157 027161 027163 027169 027171</value>
 <valueName>UGC</valueName>
-<value>MIZ016 MIZ017 MIZ018 MIZ020 MIZ021 MIZ022 MIZ023 MIZ024 MIZ025 MIZ026 MIZ027 MIZ028 MIZ029 MIZ030 MIZ031 MIZ032 MIZ033 MIZ034 MIZ035 MIZ036 MIZ041 MIZ042 MIZ099</value>
+<value>MNC001 MNC003 MNC009 MNC013 MNC019 MNC025 MNC035 MNC037 MNC039 MNC043 MNC045 MNC047 MNC049 MNC053 MNC055 MNC059 MNC065 MNC079 MNC085 MNC093 MNC095 MNC097 MNC099 MNC103 MNC109 MNC115 MNC123 MNC131 MNC139 MNC141 MNC143 MNC145 MNC147 MNC157 MNC161 MNC163 MNC169 MNC171</value>
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
-<value>/O.UPG.KAPX.FW.A.0002.220509T1200Z-220510T0000Z/
-/O.NEW.KAPX.FW.W.0001.220509T1200Z-220510T0000Z/</value>
+<value>/O.NEW.KWNS.TO.A.0194.220509T1950Z-220510T0300Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -5119,18 +5318,18 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=MN1263F4350F4C.FloodWarning.1263F46307A8MN.FGFFLSFGF.38e320e37f984aa7864651dea0f51fa0</id>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=MN1263F4350F4C.FloodWarning.1263F45148B0MN.FGFFLSFGF.38e320e37f984aa7864651dea0f51fa0</id>
 <updated>2022-05-08T13:03:00-05:00</updated>
 <published>2022-05-08T13:03:00-05:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Flood Warning issued May 08 at 1:03PM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MN1263F4350F4C.FloodWarning.1263F46307A8MN.FGFFLSFGF.38e320e37f984aa7864651dea0f51fa0"/>
+<title>Flood Warning issued May 08 at 1:03PM CDT until May 09 at 10:00PM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MN1263F4350F4C.FloodWarning.1263F45148B0MN.FGFFLSFGF.38e320e37f984aa7864651dea0f51fa0"/>
 <summary>...FLOOD WARNING REMAINS IN EFFECT UNTIL 630 PM CDT TUESDAY... * WHAT...Flooding caused by excessive rainfall continues. * WHERE...Portions of northwest Minnesota and northeast North Dakota, including the following counties, in northwest Minnesota, Kittson. In northeast North Dakota, Cavalier and Pembina. * WHEN...Until 630 PM CDT Tuesday.</summary>
 <cap:event>Flood Warning</cap:event>
 <cap:effective>2022-05-08T13:03:00-05:00</cap:effective>
-<cap:expires>2022-05-11T14:30:00-05:00</cap:expires>
+<cap:expires>2022-05-09T22:00:00-05:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
 <cap:category>Met</cap:category>
@@ -5152,31 +5351,31 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=MN1263F434F6B0.FloodWarning.1263F45434BCMN.FGFFLWFGF.9e9f830911e1c4cee76080248902feff</id>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=MN1263F434F6B0.FloodWarning.1263F45148B0MN.FGFFLWFGF.b6f248d4d2b1e2978dca4632cf38f7d8</id>
 <updated>2022-05-08T12:40:00-05:00</updated>
 <published>2022-05-08T12:40:00-05:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Flood Warning issued May 08 at 12:40PM CDT until further notice by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MN1263F434F6B0.FloodWarning.1263F45434BCMN.FGFFLWFGF.9e9f830911e1c4cee76080248902feff"/>
+<title>Flood Warning issued May 08 at 12:40PM CDT until May 09 at 10:00PM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MN1263F434F6B0.FloodWarning.1263F45148B0MN.FGFFLWFGF.b6f248d4d2b1e2978dca4632cf38f7d8"/>
 <summary>...FLOOD WARNING NOW IN EFFECT UNTIL 545 PM CDT TUESDAY... * WHAT...Flooding caused by excessive rainfall continues. * WHERE...Portions of northwest Minnesota and northeast North Dakota, including the following counties, in northwest Minnesota, Marshall and Polk. In northeast North Dakota, Grand Forks and Walsh.</summary>
 <cap:event>Flood Warning</cap:event>
 <cap:effective>2022-05-08T12:40:00-05:00</cap:effective>
-<cap:expires>2022-05-10T17:15:00-05:00</cap:expires>
+<cap:expires>2022-05-09T22:00:00-05:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
 <cap:category>Met</cap:category>
 <cap:urgency>Expected</cap:urgency>
 <cap:severity>Moderate</cap:severity>
 <cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Polk</cap:areaDesc>
+<cap:areaDesc>Marshall; Polk</cap:areaDesc>
 <cap:polygon>48.19,-97.47 48.2,-97.44 48.38,-96.9 47.9,-96.75 47.79,-97.24 48.19,-97.47</cap:polygon>
 <cap:geocode>
 <valueName>FIPS6</valueName>
-<value>027119</value>
+<value>027089 027119</value>
 <valueName>UGC</valueName>
-<value>MNC119</value>
+<value>MNC089 MNC119</value>
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
@@ -5185,51 +5384,18 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=MN1263F434F6B0.FloodWarning.1263F46307A8MN.FGFFLWFGF.46ab5cae1b193e1b911cef6358031af1</id>
-<updated>2022-05-08T12:40:00-05:00</updated>
-<published>2022-05-08T12:40:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Flood Warning issued May 08 at 12:40PM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MN1263F434F6B0.FloodWarning.1263F46307A8MN.FGFFLWFGF.46ab5cae1b193e1b911cef6358031af1"/>
-<summary>...FLOOD WARNING NOW IN EFFECT UNTIL 545 PM CDT TUESDAY... * WHAT...Flooding caused by excessive rainfall continues. * WHERE...Portions of northwest Minnesota and northeast North Dakota, including the following counties, in northwest Minnesota, Marshall and Polk. In northeast North Dakota, Grand Forks and Walsh.</summary>
-<cap:event>Flood Warning</cap:event>
-<cap:effective>2022-05-08T12:40:00-05:00</cap:effective>
-<cap:expires>2022-05-11T14:30:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Marshall</cap:areaDesc>
-<cap:polygon>48.19,-97.47 48.2,-97.44 48.38,-96.9 47.9,-96.75 47.79,-97.24 48.19,-97.47</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>027089</value>
-<valueName>UGC</valueName>
-<value>MNC089</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.EXT.KFGF.FA.W.0012.000000T0000Z-220510T2245Z/
-/00000.0.ER.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=MN1263F434ECEC.FloodWarning.1263F46307A8MN.FGFFLWFGF.a1a86bc7db9c10f6b9f7d771bbce1ee9</id>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=MN1263F434ECEC.FloodWarning.1263F45148B0MN.FGFFLWFGF.a1a86bc7db9c10f6b9f7d771bbce1ee9</id>
 <updated>2022-05-08T12:15:00-05:00</updated>
 <published>2022-05-08T12:15:00-05:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Flood Warning issued May 08 at 12:15PM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MN1263F434ECEC.FloodWarning.1263F46307A8MN.FGFFLWFGF.a1a86bc7db9c10f6b9f7d771bbce1ee9"/>
+<title>Flood Warning issued May 08 at 12:15PM CDT until May 09 at 10:00PM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MN1263F434ECEC.FloodWarning.1263F45148B0MN.FGFFLWFGF.a1a86bc7db9c10f6b9f7d771bbce1ee9"/>
 <summary>...FLOOD WARNING NOW IN EFFECT UNTIL 645 PM CDT TUESDAY... * WHAT...Flooding caused by excessive rainfall continues. * WHERE...Portions of northwest Minnesota and northeast North Dakota, including the following counties, in northwest Minnesota, Marshall. In northeast North Dakota, Grand Forks and Walsh. * WHEN...Until 645 PM CDT Tuesday.</summary>
 <cap:event>Flood Warning</cap:event>
 <cap:effective>2022-05-08T12:15:00-05:00</cap:effective>
-<cap:expires>2022-05-11T14:30:00-05:00</cap:expires>
+<cap:expires>2022-05-09T22:00:00-05:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
 <cap:category>Met</cap:category>
@@ -8080,6 +8246,38 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=NV1263F44484B8.RedFlagWarning.1263F45148B0NV.VEFRFWVEF.b3eb54ee0d59b1509a8fad9f8d639b70</id>
+<updated>2022-05-09T12:34:00-07:00</updated>
+<published>2022-05-09T12:34:00-07:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Red Flag Warning issued May 09 at 12:34PM PDT until May 09 at 8:00PM PDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=NV1263F44484B8.RedFlagWarning.1263F45148B0NV.VEFRFWVEF.b3eb54ee0d59b1509a8fad9f8d639b70"/>
+<summary>...RED FLAG WARNING REMAINS IN EFFECT UNTIL 8 PM PDT /8 PM MST/ THIS EVENING FOR STRONG WINDS AND LOW HUMIDITY FOR MOHAVE AND CLARK COUNTIES... * AFFECTED AREA...In Arizona...Fire weather zones 101 and 102.In Nevada...Fire weather zones 463, 464, 465, and 466. * TIMING...Through the evening.</summary>
+<cap:event>Red Flag Warning</cap:event>
+<cap:effective>2022-05-09T12:34:00-07:00</cap:effective>
+<cap:expires>2022-05-09T20:00:00-07:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Severe</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Clark and SW Lincoln County Deserts, Las Vegas Dispatch; Lake Mead NRA, Colorado River-NV side; Sheep Range; Spring Mountains</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>032003 032017</value>
+<valueName>UGC</valueName>
+<value>NVZ463 NVZ464 NVZ465 NVZ466</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KVEF.FW.W.0009.000000T0000Z-220510T0300Z/</value>
+</cap:parameter>
+</entry>
+<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=NV1263F443E8DC.SpecialWeatherStatement.1263F4528130NV.REVSPSREV.f979f97d7abeb60543a0c0683ad0d61c</id>
 <updated>2022-05-09T08:35:00-07:00</updated>
 <published>2022-05-09T08:35:00-07:00</published>
@@ -8109,38 +8307,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value></value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=NV1263F442CF38.RedFlagWarning.1263F45148B0NV.VEFRFWVEF.b3eb54ee0d59b1509a8fad9f8d639b70</id>
-<updated>2022-05-09T01:14:00-07:00</updated>
-<published>2022-05-09T01:14:00-07:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Red Flag Warning issued May 09 at 1:14AM PDT until May 09 at 8:00PM PDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=NV1263F442CF38.RedFlagWarning.1263F45148B0NV.VEFRFWVEF.b3eb54ee0d59b1509a8fad9f8d639b70"/>
-<summary>...RED FLAG WARNING IN EFFECT FROM NOON PDT /NOON MST/ TODAY TO 8 PM PDT /8 PM MST/ THIS EVENING FOR STRONG WINDS AND LOW HUMIDITY FOR MOHAVE AND CLARK COUNTIES... The National Weather Service in Las Vegas has issued a Red Flag Warning, which is in effect from noon today to 8 PM this evening. * AFFECTED AREA...In Arizona...Fire weather zones 101 and 102.In</summary>
-<cap:event>Red Flag Warning</cap:event>
-<cap:effective>2022-05-09T01:14:00-07:00</cap:effective>
-<cap:expires>2022-05-09T20:00:00-07:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Severe</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Clark and SW Lincoln County Deserts, Las Vegas Dispatch; Lake Mead NRA, Colorado River-NV side; Sheep Range; Spring Mountains</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>032003 032017</value>
-<valueName>UGC</valueName>
-<value>NVZ463 NVZ464 NVZ465 NVZ466</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.NEW.KVEF.FW.W.0009.220509T1900Z-220510T0300Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -8370,6 +8536,104 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=OK1263F4448A30.RedFlagWarning.1263F451BDE0OK.AMARFWAMA.5df2856a12a383225b638c4a0ad60bed</id>
+<updated>2022-05-09T14:48:00-05:00</updated>
+<published>2022-05-09T14:48:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Red Flag Warning issued May 09 at 2:48PM CDT until May 10 at 1:00AM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=OK1263F4448A30.RedFlagWarning.1263F451BDE0OK.AMARFWAMA.5df2856a12a383225b638c4a0ad60bed"/>
+<summary>...RED FLAG WARNING REMAINS IN EFFECT UNTIL 1 AM CDT TUESDAY FOR STRONG WINDS AND LOW RELATIVE HUMIDITY FOR THE ENTIRETY OF THE OKLAHOMA AND TEXAS PANHANDLES... ...FIRE WEATHER WATCH IN EFFECT FROM TUESDAY AFTERNOON THROUGH TUESDAY EVENING FOR STRONG WINDS AND LOW RELATIVE HUMIDITY FOR THE NORTHWESTERN TWO THIRDS OF THE PANHANDLES...</summary>
+<cap:event>Red Flag Warning</cap:event>
+<cap:effective>2022-05-09T14:48:00-05:00</cap:effective>
+<cap:expires>2022-05-10T01:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Severe</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Cimarron; Texas</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>040025 040139</value>
+<valueName>UGC</valueName>
+<value>OKZ001 OKZ002</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.NEW.KAMA.FW.A.0032.220510T1700Z-220511T0300Z/
+/O.CON.KAMA.FW.W.0036.000000T0000Z-220510T0600Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=OK1263F4448A30.RedFlagWarning.1263F451BDE0OK.AMARFWAMA.5380ad2fbc882af847281dac3d91ffa7</id>
+<updated>2022-05-09T14:48:00-05:00</updated>
+<published>2022-05-09T14:48:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Red Flag Warning issued May 09 at 2:48PM CDT until May 10 at 1:00AM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=OK1263F4448A30.RedFlagWarning.1263F451BDE0OK.AMARFWAMA.5380ad2fbc882af847281dac3d91ffa7"/>
+<summary>...RED FLAG WARNING REMAINS IN EFFECT UNTIL 1 AM CDT TUESDAY FOR STRONG WINDS AND LOW RELATIVE HUMIDITY FOR THE ENTIRETY OF THE OKLAHOMA AND TEXAS PANHANDLES... * Affected Area...In Oklahoma...Beaver. In Texas...Ochiltree... Lipscomb...Roberts...Hemphill...Gray...Wheeler...Armstrong... Donley and Collingsworth.</summary>
+<cap:event>Red Flag Warning</cap:event>
+<cap:effective>2022-05-09T14:48:00-05:00</cap:effective>
+<cap:expires>2022-05-10T01:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Severe</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Beaver</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>040007</value>
+<valueName>UGC</valueName>
+<value>OKZ003</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KAMA.FW.W.0036.000000T0000Z-220510T0600Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=OK1263F4448A30.FireWeatherWatch.1263F4608AF0OK.AMARFWAMA.597c4eb072777445cde90bd54d14e73a</id>
+<updated>2022-05-09T14:48:00-05:00</updated>
+<published>2022-05-09T14:48:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Fire Weather Watch issued May 09 at 2:48PM CDT until May 10 at 10:00PM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=OK1263F4448A30.FireWeatherWatch.1263F4608AF0OK.AMARFWAMA.597c4eb072777445cde90bd54d14e73a"/>
+<summary>...RED FLAG WARNING REMAINS IN EFFECT UNTIL 1 AM CDT TUESDAY FOR STRONG WINDS AND LOW RELATIVE HUMIDITY FOR THE ENTIRETY OF THE OKLAHOMA AND TEXAS PANHANDLES... ...FIRE WEATHER WATCH IN EFFECT FROM TUESDAY AFTERNOON THROUGH TUESDAY EVENING FOR STRONG WINDS AND LOW RELATIVE HUMIDITY FOR THE NORTHWESTERN TWO THIRDS OF THE PANHANDLES...</summary>
+<cap:event>Fire Weather Watch</cap:event>
+<cap:effective>2022-05-09T14:48:00-05:00</cap:effective>
+<cap:expires>2022-05-10T22:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Future</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Possible</cap:certainty>
+<cap:areaDesc>Cimarron; Texas</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>040025 040139</value>
+<valueName>UGC</valueName>
+<value>OKZ001 OKZ002</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.NEW.KAMA.FW.A.0032.220510T1700Z-220511T0300Z/
+/O.CON.KAMA.FW.W.0036.000000T0000Z-220510T0600Z/</value>
+</cap:parameter>
+</entry>
+<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=OK1263F4446064.FloodWarning.1263F4612F64OK.TSAFLSTSA.715bd7ed5fc097b5f8e655d676d83498</id>
 <updated>2022-05-09T13:41:00-05:00</updated>
 <published>2022-05-09T13:41:00-05:00</published>
@@ -8468,35 +8732,35 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=OK1263F442D898.RedFlagWarning.1263F451BDE0OK.AMARFWAMA.80791bb433916bf2913d44fa5bd26a01</id>
-<updated>2022-05-09T03:38:00-05:00</updated>
-<published>2022-05-09T03:38:00-05:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=OR1263F4448C24.FreezeWarning.1263F4531D70OR.PDTNPWPDT.9aaf765b19e6d42efe19ff398062bc3d</id>
+<updated>2022-05-09T12:53:00-07:00</updated>
+<published>2022-05-09T12:53:00-07:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Red Flag Warning issued May 09 at 3:38AM CDT until May 10 at 1:00AM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=OK1263F442D898.RedFlagWarning.1263F451BDE0OK.AMARFWAMA.80791bb433916bf2913d44fa5bd26a01"/>
-<summary>...RED FLAG WARNING REMAINS IN EFFECT FROM 10 AM THIS MORNING TO 1 AM CDT TUESDAY FOR STRONG WINDS AND LOW RELATIVE HUMIDITY FOR THE ENTIRETY OF THE OKLAHOMA AND TEXAS PANHANDLES... * Affected Area...In Oklahoma...Cimarron...Texas and Beaver. In Texas...Dallam...Sherman...Hansford...Ochiltree...Lipscomb... Hartley...Moore...Hutchinson...Roberts...Hemphill...Oldham...</summary>
-<cap:event>Red Flag Warning</cap:event>
-<cap:effective>2022-05-09T03:38:00-05:00</cap:effective>
-<cap:expires>2022-05-10T01:00:00-05:00</cap:expires>
+<title>Freeze Warning issued May 09 at 12:53PM PDT until May 10 at 8:00AM PDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=OR1263F4448C24.FreezeWarning.1263F4531D70OR.PDTNPWPDT.9aaf765b19e6d42efe19ff398062bc3d"/>
+<summary>...FREEZE WARNING IN EFFECT FROM 2 AM TO 8 AM PDT TUESDAY... * WHAT...Overnight temperatures expected to drop into the low to mid 30s with sub-freezing temperatures as low as 30 to 32 in the cold prone areas of these zones. * WHERE...In Washington, Kittitas Valley and Yakima Valley. In Oregon, Foothills of the Northern Blue Mountains of Oregon and</summary>
+<cap:event>Freeze Warning</cap:event>
+<cap:effective>2022-05-09T12:53:00-07:00</cap:effective>
+<cap:expires>2022-05-10T08:00:00-07:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
 <cap:category>Met</cap:category>
 <cap:urgency>Expected</cap:urgency>
-<cap:severity>Severe</cap:severity>
+<cap:severity>Moderate</cap:severity>
 <cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Beaver; Cimarron; Texas</cap:areaDesc>
+<cap:areaDesc>Foothills of the Northern Blue Mountains of Oregon; Foothills of the Southern Blue Mountains of Oregon</cap:areaDesc>
 <cap:polygon></cap:polygon>
 <cap:geocode>
 <valueName>FIPS6</valueName>
-<value>040007 040025 040139</value>
+<value>041021 041049 041059</value>
 <valueName>UGC</valueName>
-<value>OKZ001 OKZ002 OKZ003</value>
+<value>ORZ507 ORZ508</value>
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
-<value>/O.CON.KAMA.FW.W.0036.220509T1500Z-220510T0600Z/</value>
+<value>/O.NEW.KPDT.FZ.W.0002.220510T0900Z-220510T1500Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -9120,6 +9384,104 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=TX1263F4448A30.RedFlagWarning.1263F451BDE0TX.AMARFWAMA.897f5e23141a4b332b87ed6fda560be3</id>
+<updated>2022-05-09T14:48:00-05:00</updated>
+<published>2022-05-09T14:48:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Red Flag Warning issued May 09 at 2:48PM CDT until May 10 at 1:00AM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=TX1263F4448A30.RedFlagWarning.1263F451BDE0TX.AMARFWAMA.897f5e23141a4b332b87ed6fda560be3"/>
+<summary>...RED FLAG WARNING REMAINS IN EFFECT UNTIL 1 AM CDT TUESDAY FOR STRONG WINDS AND LOW RELATIVE HUMIDITY FOR THE ENTIRETY OF THE OKLAHOMA AND TEXAS PANHANDLES... ...FIRE WEATHER WATCH IN EFFECT FROM TUESDAY AFTERNOON THROUGH TUESDAY EVENING FOR STRONG WINDS AND LOW RELATIVE HUMIDITY FOR THE NORTHWESTERN TWO THIRDS OF THE PANHANDLES...</summary>
+<cap:event>Red Flag Warning</cap:event>
+<cap:effective>2022-05-09T14:48:00-05:00</cap:effective>
+<cap:expires>2022-05-10T01:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Severe</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Carson; Dallam; Deaf Smith; Hansford; Hartley; Hutchinson; Moore; Oldham; Palo Duro Canyon; Potter; Randall; Sherman</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>048065 048111 048117 048195 048205 048233 048341 048359 048375 048381 048421</value>
+<valueName>UGC</valueName>
+<value>TXZ001 TXZ002 TXZ003 TXZ006 TXZ007 TXZ008 TXZ011 TXZ012 TXZ013 TXZ016 TXZ017 TXZ317</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.NEW.KAMA.FW.A.0032.220510T1700Z-220511T0300Z/
+/O.CON.KAMA.FW.W.0036.000000T0000Z-220510T0600Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=TX1263F4448A30.RedFlagWarning.1263F451BDE0TX.AMARFWAMA.bcbe763cd4268e9ce0ccf8a60119fa6f</id>
+<updated>2022-05-09T14:48:00-05:00</updated>
+<published>2022-05-09T14:48:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Red Flag Warning issued May 09 at 2:48PM CDT until May 10 at 1:00AM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=TX1263F4448A30.RedFlagWarning.1263F451BDE0TX.AMARFWAMA.bcbe763cd4268e9ce0ccf8a60119fa6f"/>
+<summary>...RED FLAG WARNING REMAINS IN EFFECT UNTIL 1 AM CDT TUESDAY FOR STRONG WINDS AND LOW RELATIVE HUMIDITY FOR THE ENTIRETY OF THE OKLAHOMA AND TEXAS PANHANDLES... * Affected Area...In Oklahoma...Beaver. In Texas...Ochiltree... Lipscomb...Roberts...Hemphill...Gray...Wheeler...Armstrong... Donley and Collingsworth.</summary>
+<cap:event>Red Flag Warning</cap:event>
+<cap:effective>2022-05-09T14:48:00-05:00</cap:effective>
+<cap:expires>2022-05-10T01:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Severe</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Armstrong; Collingsworth; Donley; Gray; Hemphill; Lipscomb; Ochiltree; Roberts; Wheeler</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>048011 048087 048129 048179 048211 048295 048357 048393 048483</value>
+<valueName>UGC</valueName>
+<value>TXZ004 TXZ005 TXZ009 TXZ010 TXZ014 TXZ015 TXZ018 TXZ019 TXZ020</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KAMA.FW.W.0036.000000T0000Z-220510T0600Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=TX1263F4448A30.FireWeatherWatch.1263F4608AF0TX.AMARFWAMA.b1c1d4d3aca1047f59adce6759f0c806</id>
+<updated>2022-05-09T14:48:00-05:00</updated>
+<published>2022-05-09T14:48:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Fire Weather Watch issued May 09 at 2:48PM CDT until May 10 at 10:00PM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=TX1263F4448A30.FireWeatherWatch.1263F4608AF0TX.AMARFWAMA.b1c1d4d3aca1047f59adce6759f0c806"/>
+<summary>...RED FLAG WARNING REMAINS IN EFFECT UNTIL 1 AM CDT TUESDAY FOR STRONG WINDS AND LOW RELATIVE HUMIDITY FOR THE ENTIRETY OF THE OKLAHOMA AND TEXAS PANHANDLES... ...FIRE WEATHER WATCH IN EFFECT FROM TUESDAY AFTERNOON THROUGH TUESDAY EVENING FOR STRONG WINDS AND LOW RELATIVE HUMIDITY FOR THE NORTHWESTERN TWO THIRDS OF THE PANHANDLES...</summary>
+<cap:event>Fire Weather Watch</cap:event>
+<cap:effective>2022-05-09T14:48:00-05:00</cap:effective>
+<cap:expires>2022-05-10T22:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Future</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Possible</cap:certainty>
+<cap:areaDesc>Carson; Dallam; Deaf Smith; Hansford; Hartley; Hutchinson; Moore; Oldham; Palo Duro Canyon; Potter; Randall; Sherman</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>048065 048111 048117 048195 048205 048233 048341 048359 048375 048381 048421</value>
+<valueName>UGC</valueName>
+<value>TXZ001 TXZ002 TXZ003 TXZ006 TXZ007 TXZ008 TXZ011 TXZ012 TXZ013 TXZ016 TXZ017 TXZ317</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.NEW.KAMA.FW.A.0032.220510T1700Z-220511T0300Z/
+/O.CON.KAMA.FW.W.0036.000000T0000Z-220510T0600Z/</value>
+</cap:parameter>
+</entry>
+<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=TX1263F4447D4C.RedFlagWarning.1263F45148B0TX.LUBRFWLUB.54a50ee4689dfb6ed5744d95ba09180a</id>
 <updated>2022-05-09T14:15:00-05:00</updated>
 <published>2022-05-09T14:15:00-05:00</published>
@@ -9505,38 +9867,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=TX1263F442D898.RedFlagWarning.1263F451BDE0TX.AMARFWAMA.d0c35aa53ffe6afc4a8484be565b643e</id>
-<updated>2022-05-09T03:38:00-05:00</updated>
-<published>2022-05-09T03:38:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Red Flag Warning issued May 09 at 3:38AM CDT until May 10 at 1:00AM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=TX1263F442D898.RedFlagWarning.1263F451BDE0TX.AMARFWAMA.d0c35aa53ffe6afc4a8484be565b643e"/>
-<summary>...RED FLAG WARNING REMAINS IN EFFECT FROM 10 AM THIS MORNING TO 1 AM CDT TUESDAY FOR STRONG WINDS AND LOW RELATIVE HUMIDITY FOR THE ENTIRETY OF THE OKLAHOMA AND TEXAS PANHANDLES... * Affected Area...In Oklahoma...Cimarron...Texas and Beaver. In Texas...Dallam...Sherman...Hansford...Ochiltree...Lipscomb... Hartley...Moore...Hutchinson...Roberts...Hemphill...Oldham...</summary>
-<cap:event>Red Flag Warning</cap:event>
-<cap:effective>2022-05-09T03:38:00-05:00</cap:effective>
-<cap:expires>2022-05-10T01:00:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Severe</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Armstrong; Carson; Collingsworth; Dallam; Deaf Smith; Donley; Gray; Hansford; Hartley; Hemphill; Hutchinson; Lipscomb; Moore; Ochiltree; Oldham; Palo Duro Canyon; Potter; Randall; Roberts; Sherman; Wheeler</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>048011 048065 048087 048111 048117 048129 048179 048195 048205 048211 048233 048295 048341 048357 048359 048375 048381 048393 048421 048483</value>
-<valueName>UGC</valueName>
-<value>TXZ001 TXZ002 TXZ003 TXZ004 TXZ005 TXZ006 TXZ007 TXZ008 TXZ009 TXZ010 TXZ011 TXZ012 TXZ013 TXZ014 TXZ015 TXZ016 TXZ017 TXZ018 TXZ019 TXZ020 TXZ317</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KAMA.FW.W.0036.220509T1500Z-220510T0600Z/</value>
-</cap:parameter>
-</entry>
-<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=TX1263F442B958.SpecialWeatherStatement.1263F44513B0TX.CRPSPSCRP.6aa853181cc3da01beafc5476a8dfc31</id>
 <updated>2022-05-09T02:58:00-05:00</updated>
 <published>2022-05-09T02:58:00-05:00</published>
@@ -9662,6 +9992,71 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value>/O.CON.KSLC.HZ.W.0003.220510T0900Z-220510T1500Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=VA1263F4448580.CoastalFloodAdvisory.1263F4619C60VA.LWXCFWLWX.5e74ecb64b1b0d6e9fc8457b85949113</id>
+<updated>2022-05-09T15:36:00-04:00</updated>
+<published>2022-05-09T15:36:00-04:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Coastal Flood Advisory issued May 09 at 3:36PM EDT until May 11 at 6:00AM EDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=VA1263F4448580.CoastalFloodAdvisory.1263F4619C60VA.LWXCFWLWX.5e74ecb64b1b0d6e9fc8457b85949113"/>
+<summary>...COASTAL FLOOD ADVISORY NOW IN EFFECT UNTIL 6 AM EDT WEDNESDAY... ...COASTAL FLOOD WATCH IS CANCELLED... * WHAT...Up to one half foot of inundation above ground level in low lying areas due to tidal flooding. * WHERE...Shoreline in the City of Alexandria and Arlington</summary>
+<cap:event>Coastal Flood Advisory</cap:event>
+<cap:effective>2022-05-09T15:36:00-04:00</cap:effective>
+<cap:expires>2022-05-11T06:00:00-04:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Arlington, Falls Church, Alexandria</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>051013 051510 051610</value>
+<valueName>UGC</valueName>
+<value>VAZ054</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CAN.KLWX.CF.A.0003.220510T0300Z-220511T1000Z/
+/O.EXT.KLWX.CF.Y.0014.000000T0000Z-220511T1000Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=VA1263F4448580.CoastalFloodAdvisory.1263F4619C60VA.LWXCFWLWX.e9718d95ec14b8541b29962586097a08</id>
+<updated>2022-05-09T15:36:00-04:00</updated>
+<published>2022-05-09T15:36:00-04:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Coastal Flood Advisory issued May 09 at 3:36PM EDT until May 11 at 6:00AM EDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=VA1263F4448580.CoastalFloodAdvisory.1263F4619C60VA.LWXCFWLWX.e9718d95ec14b8541b29962586097a08"/>
+<summary>...COASTAL FLOOD ADVISORY NOW IN EFFECT UNTIL 6 AM EDT WEDNESDAY... * WHAT...Up to one foot of inundation above ground level in low lying areas due to tidal flooding. * WHERE...Shoreline in Charles and King George Counties. * WHEN...Until 6 AM EDT Wednesday, especially around the time of</summary>
+<cap:event>Coastal Flood Advisory</cap:event>
+<cap:effective>2022-05-09T15:36:00-04:00</cap:effective>
+<cap:expires>2022-05-11T06:00:00-04:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>King George</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>051099</value>
+<valueName>UGC</valueName>
+<value>VAZ057</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.EXT.KLWX.CF.Y.0014.000000T0000Z-220511T1000Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -10024,101 +10419,67 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=VA1263F4439F6C.CoastalFloodAdvisory.1263F44513B0VA.LWXCFWLWX.5e74ecb64b1b0d6e9fc8457b85949113</id>
-<updated>2022-05-09T09:47:00-04:00</updated>
-<published>2022-05-09T09:47:00-04:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=WA1263F4448C24.FreezeWarning.1263F4531D70WA.PDTNPWPDT.440595cc0bc167d1c544c3433a275679</id>
+<updated>2022-05-09T12:53:00-07:00</updated>
+<published>2022-05-09T12:53:00-07:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Coastal Flood Advisory issued May 09 at 9:47AM EDT until May 09 at 7:00PM EDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=VA1263F4439F6C.CoastalFloodAdvisory.1263F44513B0VA.LWXCFWLWX.5e74ecb64b1b0d6e9fc8457b85949113"/>
-<summary>...COASTAL FLOOD ADVISORY REMAINS IN EFFECT UNTIL 7 PM EDT THIS EVENING... ...COASTAL FLOOD WATCH REMAINS IN EFFECT FROM THIS EVENING THROUGH LATE TUESDAY NIGHT... * WHAT...For the Coastal Flood Advisory, up to one half foot of inundation above ground level expected in low lying areas due</summary>
-<cap:event>Coastal Flood Advisory</cap:event>
-<cap:effective>2022-05-09T09:47:00-04:00</cap:effective>
-<cap:expires>2022-05-09T19:00:00-04:00</cap:expires>
+<title>Freeze Warning issued May 09 at 12:53PM PDT until May 10 at 8:00AM PDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=WA1263F4448C24.FreezeWarning.1263F4531D70WA.PDTNPWPDT.440595cc0bc167d1c544c3433a275679"/>
+<summary>...FREEZE WARNING IN EFFECT FROM 2 AM TO 8 AM PDT TUESDAY... * WHAT...Overnight temperatures expected to drop into the low to mid 30s with sub-freezing temperatures as low as 30 to 32 in the cold prone areas of these zones. * WHERE...In Washington, Kittitas Valley and Yakima Valley. In Oregon, Foothills of the Northern Blue Mountains of Oregon and</summary>
+<cap:event>Freeze Warning</cap:event>
+<cap:effective>2022-05-09T12:53:00-07:00</cap:effective>
+<cap:expires>2022-05-10T08:00:00-07:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
 <cap:category>Met</cap:category>
 <cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Arlington, Falls Church, Alexandria</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>051013 051510 051610</value>
-<valueName>UGC</valueName>
-<value>VAZ054</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KLWX.CF.Y.0014.220509T1600Z-220509T2300Z/
-/O.CON.KLWX.CF.A.0003.220510T0300Z-220511T1000Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=VA1263F4439F6C.CoastalFloodAdvisory.1263F45196D0VA.LWXCFWLWX.e9718d95ec14b8541b29962586097a08</id>
-<updated>2022-05-09T09:47:00-04:00</updated>
-<published>2022-05-09T09:47:00-04:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Coastal Flood Advisory issued May 09 at 9:47AM EDT until May 10 at 1:00AM EDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=VA1263F4439F6C.CoastalFloodAdvisory.1263F45196D0VA.LWXCFWLWX.e9718d95ec14b8541b29962586097a08"/>
-<summary>...COASTAL FLOOD ADVISORY IN EFFECT UNTIL 1 AM EDT TUESDAY... * WHAT...Up to one half foot of inundation above ground level in low lying areas due to tidal flooding. * WHERE...Shoreline in Charles and King George Counties. * WHEN...Until 1 AM EDT Tuesday, especially around the time of high tide.</summary>
-<cap:event>Coastal Flood Advisory</cap:event>
-<cap:effective>2022-05-09T09:47:00-04:00</cap:effective>
-<cap:expires>2022-05-10T01:00:00-04:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>King George</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>051099</value>
-<valueName>UGC</valueName>
-<value>VAZ057</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.EXB.KLWX.CF.Y.0014.220509T1347Z-220510T0500Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=VA1263F4439F6C.CoastalFloodWatch.1263F4619C60VA.LWXCFWLWX.5bef1f6a1274198498d1d0e74cf1acfd</id>
-<updated>2022-05-09T09:47:00-04:00</updated>
-<published>2022-05-09T09:47:00-04:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Coastal Flood Watch issued May 09 at 9:47AM EDT until May 11 at 6:00AM EDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=VA1263F4439F6C.CoastalFloodWatch.1263F4619C60VA.LWXCFWLWX.5bef1f6a1274198498d1d0e74cf1acfd"/>
-<summary>...COASTAL FLOOD ADVISORY REMAINS IN EFFECT UNTIL 7 PM EDT THIS EVENING... ...COASTAL FLOOD WATCH REMAINS IN EFFECT FROM THIS EVENING THROUGH LATE TUESDAY NIGHT... * WHAT...For the Coastal Flood Advisory, up to one half foot of inundation above ground level expected in low lying areas due</summary>
-<cap:event>Coastal Flood Watch</cap:event>
-<cap:effective>2022-05-09T09:47:00-04:00</cap:effective>
-<cap:expires>2022-05-11T06:00:00-04:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Future</cap:urgency>
 <cap:severity>Moderate</cap:severity>
-<cap:certainty>Possible</cap:certainty>
-<cap:areaDesc>Arlington, Falls Church, Alexandria</cap:areaDesc>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Kittitas Valley; Yakima Valley</cap:areaDesc>
 <cap:polygon></cap:polygon>
 <cap:geocode>
 <valueName>FIPS6</valueName>
-<value>051013 051510 051610</value>
+<value>053037 053077</value>
 <valueName>UGC</valueName>
-<value>VAZ054</value>
+<value>WAZ026 WAZ027</value>
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
-<value>/O.CON.KLWX.CF.Y.0014.220509T1600Z-220509T2300Z/
-/O.CON.KLWX.CF.A.0003.220510T0300Z-220511T1000Z/</value>
+<value>/O.NEW.KPDT.FZ.W.0002.220510T0900Z-220510T1500Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=WI1263F4448A30.TornadoWatch.1263F45148B0WI.WNSWOU4.e5b866c3edd848589f0a898e6a3cf6f0</id>
+<updated>2022-05-09T14:48:00-05:00</updated>
+<published>2022-05-09T14:48:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Tornado Watch issued May 09 at 2:48PM CDT until May 09 at 10:00PM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=WI1263F4448A30.TornadoWatch.1263F45148B0WI.WNSWOU4.e5b866c3edd848589f0a898e6a3cf6f0"/>
+<summary>TORNADO WATCH 194 IS IN EFFECT UNTIL 1000 PM CDT FOR THE FOLLOWING LOCATIONS WI . WISCONSIN COUNTIES INCLUDED ARE BARRON BUFFALO BURNETT CHIPPEWA DUNN EAU CLAIRE</summary>
+<cap:event>Tornado Watch</cap:event>
+<cap:effective>2022-05-09T14:48:00-05:00</cap:effective>
+<cap:expires>2022-05-09T22:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Severe</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Barron; Buffalo; Burnett; Chippewa; Dunn; Eau Claire; Pepin; Pierce; Polk; Rusk; Sawyer; St. Croix; Trempealeau; Washburn</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>055005 055011 055013 055017 055033 055035 055091 055093 055095 055107 055109 055113 055121 055129</value>
+<valueName>UGC</valueName>
+<value>WIC005 WIC011 WIC013 WIC017 WIC033 WIC035 WIC091 WIC093 WIC095 WIC107 WIC109 WIC113 WIC121 WIC129</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.NEW.KWNS.TO.A.0194.220509T1950Z-220510T0300Z/</value>
 </cap:parameter>
 </entry>
 <entry>
