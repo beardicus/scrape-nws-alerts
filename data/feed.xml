@@ -16,16 +16,49 @@ xmlns = 'http://www.w3.org/2005/Atom'
 xmlns:cap = 'urn:oasis:names:tc:emergency:cap:1.1'
 xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 >
-<!-- http-date = Mon, 09 May 2022 23:31:00 GMT -->
+<!-- http-date = Tue, 10 May 2022 00:11:00 GMT -->
 <id>https://alerts.weather.gov/cap/us.php?x=0</id>
 <logo>http://alerts.weather.gov/images/xml_logo.gif</logo>
 <generator>NWS CAP Server</generator>
-<updated>2022-05-09T18:31:00-05:00</updated>
+<updated>2022-05-09T19:11:00-05:00</updated>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
 <title>Current Watches, Warnings and Advisories for the United States Issued by the National Weather Service</title>
 <link href="https://alerts.weather.gov/cap/us.php?x=0"/>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=AK1263F450D6A0.FloodWarning.1263F45121A0AK.AFGFLWAFG.0ce2cb4daf60016ae35f2d6d7697b90d</id>
+<updated>2022-05-09T16:08:00-08:00</updated>
+<published>2022-05-09T16:08:00-08:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Flood Warning issued May 09 at 4:08PM AKDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=AK1263F450D6A0.FloodWarning.1263F45121A0AK.AFGFLWAFG.0ce2cb4daf60016ae35f2d6d7697b90d"/>
+<summary>...FLOOD WARNING FOR AN ICE JAM IN EFFECT UNTIL 4 PM AKDT WEDNESDAY... ...REPLACES FLOOD WATCH... * WHAT...Flooding caused by an ice jam is occurring. * WHERE...Yukon River at Circle. * WHEN...Until 400 PM AKDT Wednesday.</summary>
+<cap:event>Flood Warning</cap:event>
+<cap:effective>2022-05-09T16:08:00-08:00</cap:effective>
+<cap:expires>2022-05-09T18:00:00-08:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Yukon Flats and Surrounding Uplands</cap:areaDesc>
+<cap:polygon>65.93,-144.17 65.97,-143.88 65.71,-143.86 65.71,-144.16 65.93,-144.17</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>002290</value>
+<valueName>UGC</valueName>
+<value>AKZ220</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.NEW.PAFG.FA.W.0002.220510T0008Z-220512T0000Z/
+/00000.0.IJ.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
+</cap:parameter>
+</entry>
 <entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=AK1263F4447EDC.SpecialWeatherStatement.1263F452F660AK.AFCSPSAER.090c3028ec3d2ad61196684e208cbb8e</id>
 <updated>2022-05-09T11:19:00-08:00</updated>
@@ -88,39 +121,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value></value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=AK1263F4421BEC.FloodWatch.1263F45121A0AK.AFGFFAAFG.d5f2df66c1957fc6f8c8c109bd9eae6b</id>
-<updated>2022-05-08T19:55:00-08:00</updated>
-<published>2022-05-08T19:55:00-08:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Flood Watch issued May 08 at 7:55PM AKDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=AK1263F4421BEC.FloodWatch.1263F45121A0AK.AFGFFAAFG.d5f2df66c1957fc6f8c8c109bd9eae6b"/>
-<summary>...FLOOD WATCH FOR AN ICE JAM REMAINS IN EFFECT THROUGH MONDAY EVENING... * WHAT...Flooding caused by an ice jam continues to be possible. * WHERE...Yukon River at Circle. * WHEN...Through Monday evening. * IMPACTS...If ice jams form downstream of Circle, flooding could</summary>
-<cap:event>Flood Watch</cap:event>
-<cap:effective>2022-05-08T19:55:00-08:00</cap:effective>
-<cap:expires>2022-05-09T18:00:00-08:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Future</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Possible</cap:certainty>
-<cap:areaDesc>Yukon Flats and Surrounding Uplands</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>002290</value>
-<valueName>UGC</valueName>
-<value>AKZ220</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.PAFG.FA.A.0001.000000T0000Z-220510T0600Z/
-/00000.0.IJ.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -1172,6 +1172,140 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=CO1263F44529F4.RedFlagWarning.1263F45148B0CO.GLDRFWGLD.93efe34629f3766fb17ddc5ac1fa00c5</id>
+<updated>2022-05-09T17:57:00-06:00</updated>
+<published>2022-05-09T17:57:00-06:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Red Flag Warning issued May 09 at 5:57PM MDT until May 09 at 9:00PM MDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CO1263F44529F4.RedFlagWarning.1263F45148B0CO.GLDRFWGLD.93efe34629f3766fb17ddc5ac1fa00c5"/>
+<summary>...RED FLAG WARNING REMAINS IN EFFECT UNTIL 9 PM MDT THIS EVENING FOR WIND AND LOW RELATIVE HUMIDITY FOR FIRE WEATHER ZONES 253 AND 254... ...FIRE WEATHER WATCH REMAINS IN EFFECT FROM TUESDAY MORNING THROUGH TUESDAY EVENING FOR WIND AND LOW RELATIVE HUMIDITY FOR FIRE WEATHER ZONES 253 AND 254...</summary>
+<cap:event>Red Flag Warning</cap:event>
+<cap:effective>2022-05-09T17:57:00-06:00</cap:effective>
+<cap:expires>2022-05-09T21:00:00-06:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Severe</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Cheyenne; Kit Carson County</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>008017 008063</value>
+<valueName>UGC</valueName>
+<value>COZ253 COZ254</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KGLD.FW.W.0025.000000T0000Z-220510T0300Z/
+/O.CON.KGLD.FW.A.0020.220510T1700Z-220511T0300Z/
+/O.CON.KGLD.FW.A.0021.220511T1500Z-220512T0300Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=CO1263F44529F4.FireWeatherWatch.1263F4608AF0CO.GLDRFWGLD.4f2e3209223e9a87d8464dddda8f6324</id>
+<updated>2022-05-09T17:57:00-06:00</updated>
+<published>2022-05-09T17:57:00-06:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Fire Weather Watch issued May 09 at 5:57PM MDT until May 10 at 9:00PM MDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CO1263F44529F4.FireWeatherWatch.1263F4608AF0CO.GLDRFWGLD.4f2e3209223e9a87d8464dddda8f6324"/>
+<summary>...RED FLAG WARNING REMAINS IN EFFECT UNTIL 9 PM MDT THIS EVENING FOR WIND AND LOW RELATIVE HUMIDITY FOR FIRE WEATHER ZONES 253 AND 254... ...FIRE WEATHER WATCH REMAINS IN EFFECT FROM TUESDAY MORNING THROUGH TUESDAY EVENING FOR WIND AND LOW RELATIVE HUMIDITY FOR FIRE WEATHER ZONES 253 AND 254...</summary>
+<cap:event>Fire Weather Watch</cap:event>
+<cap:effective>2022-05-09T17:57:00-06:00</cap:effective>
+<cap:expires>2022-05-10T21:00:00-06:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Future</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Possible</cap:certainty>
+<cap:areaDesc>Cheyenne; Kit Carson County</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>008017 008063</value>
+<valueName>UGC</valueName>
+<value>COZ253 COZ254</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KGLD.FW.W.0025.000000T0000Z-220510T0300Z/
+/O.CON.KGLD.FW.A.0020.220510T1700Z-220511T0300Z/
+/O.CON.KGLD.FW.A.0021.220511T1500Z-220512T0300Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=CO1263F44529F4.FireWeatherWatch.1263F46FCD30CO.GLDRFWGLD.f5a63cee48ad84f41f4390d03ad69fce</id>
+<updated>2022-05-09T17:57:00-06:00</updated>
+<published>2022-05-09T17:57:00-06:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Fire Weather Watch issued May 09 at 5:57PM MDT until May 11 at 9:00PM MDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CO1263F44529F4.FireWeatherWatch.1263F46FCD30CO.GLDRFWGLD.f5a63cee48ad84f41f4390d03ad69fce"/>
+<summary>...FIRE WEATHER WATCH REMAINS IN EFFECT FROM WEDNESDAY MORNING THROUGH WEDNESDAY EVENING FOR WIND AND LOW RELATIVE HUMIDITY FOR FIRE WEATHER ZONE 252... * Affected Area...In Colorado...Fire Weather Zone 252 Yuma. * Winds...Southwest at 20 to 40 mph. * Relative Humidity...As low as 10 to 15 percent.</summary>
+<cap:event>Fire Weather Watch</cap:event>
+<cap:effective>2022-05-09T17:57:00-06:00</cap:effective>
+<cap:expires>2022-05-11T21:00:00-06:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Future</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Possible</cap:certainty>
+<cap:areaDesc>Yuma</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>008125</value>
+<valueName>UGC</valueName>
+<value>COZ252</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KGLD.FW.A.0021.220511T1500Z-220512T0300Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=CO1263F44529F4.FireWeatherWatch.1263F46FCD30CO.GLDRFWGLD.723c1584f3756570c3a25055b517b176</id>
+<updated>2022-05-09T17:57:00-06:00</updated>
+<published>2022-05-09T17:57:00-06:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Fire Weather Watch issued May 09 at 5:57PM MDT until May 11 at 9:00PM MDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CO1263F44529F4.FireWeatherWatch.1263F46FCD30CO.GLDRFWGLD.723c1584f3756570c3a25055b517b176"/>
+<summary>...RED FLAG WARNING REMAINS IN EFFECT UNTIL 9 PM MDT THIS EVENING FOR WIND AND LOW RELATIVE HUMIDITY FOR FIRE WEATHER ZONES 253 AND 254... ...FIRE WEATHER WATCH REMAINS IN EFFECT FROM TUESDAY MORNING THROUGH TUESDAY EVENING FOR WIND AND LOW RELATIVE HUMIDITY FOR FIRE WEATHER ZONES 253 AND 254...</summary>
+<cap:event>Fire Weather Watch</cap:event>
+<cap:effective>2022-05-09T17:57:00-06:00</cap:effective>
+<cap:expires>2022-05-11T21:00:00-06:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Future</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Possible</cap:certainty>
+<cap:areaDesc>Cheyenne; Kit Carson County</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>008017 008063</value>
+<valueName>UGC</valueName>
+<value>COZ253 COZ254</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KGLD.FW.W.0025.000000T0000Z-220510T0300Z/
+/O.CON.KGLD.FW.A.0020.220510T1700Z-220511T0300Z/
+/O.CON.KGLD.FW.A.0021.220511T1500Z-220512T0300Z/</value>
+</cap:parameter>
+</entry>
+<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=CO1263F444CC98.RedFlagWarning.1263F45148B0CO.PUBRFWPUB.251b81f124eb5af5f5d2bbda23e6a409</id>
 <updated>2022-05-09T15:18:00-06:00</updated>
 <published>2022-05-09T15:18:00-06:00</published>
@@ -1952,40 +2086,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=CO1263F444A0D8.RedFlagWarning.1263F45148B0CO.GLDRFWGLD.93efe34629f3766fb17ddc5ac1fa00c5</id>
-<updated>2022-05-09T14:06:00-06:00</updated>
-<published>2022-05-09T14:06:00-06:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Red Flag Warning issued May 09 at 2:06PM MDT until May 09 at 9:00PM MDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CO1263F444A0D8.RedFlagWarning.1263F45148B0CO.GLDRFWGLD.93efe34629f3766fb17ddc5ac1fa00c5"/>
-<summary>...Red Flag Warning Today, Fire Weather Watch Tuesday and Wednesday... A Red Flag Warning for critical fire weather conditions remains in effect today south of a line from Kit Carson county Colorado to Gove county Kansas. Fire Weather Watches are in effect for the far southwestern and</summary>
-<cap:event>Red Flag Warning</cap:event>
-<cap:effective>2022-05-09T14:06:00-06:00</cap:effective>
-<cap:expires>2022-05-09T21:00:00-06:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Severe</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Cheyenne; Kit Carson County</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>008017 008063</value>
-<valueName>UGC</valueName>
-<value>COZ253 COZ254</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KGLD.FW.W.0025.000000T0000Z-220510T0300Z/
-/O.CON.KGLD.FW.A.0020.220510T1700Z-220511T0300Z/
-/O.CON.KGLD.FW.A.0021.220511T1500Z-220512T0300Z/</value>
-</cap:parameter>
-</entry>
-<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=CO1263F444A0D8.RedFlagWarning.1263F4516FC0CO.GJTRFWGJT.044b2f3615acff4960dc04bdcd5e9e94</id>
 <updated>2022-05-09T14:06:00-06:00</updated>
 <published>2022-05-09T14:06:00-06:00</published>
@@ -2088,40 +2188,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=CO1263F444A0D8.FireWeatherWatch.1263F4608AF0CO.GLDRFWGLD.4f2e3209223e9a87d8464dddda8f6324</id>
-<updated>2022-05-09T14:06:00-06:00</updated>
-<published>2022-05-09T14:06:00-06:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Fire Weather Watch issued May 09 at 2:06PM MDT until May 10 at 9:00PM MDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CO1263F444A0D8.FireWeatherWatch.1263F4608AF0CO.GLDRFWGLD.4f2e3209223e9a87d8464dddda8f6324"/>
-<summary>...Red Flag Warning Today, Fire Weather Watch Tuesday and Wednesday... A Red Flag Warning for critical fire weather conditions remains in effect today south of a line from Kit Carson county Colorado to Gove county Kansas. Fire Weather Watches are in effect for the far southwestern and</summary>
-<cap:event>Fire Weather Watch</cap:event>
-<cap:effective>2022-05-09T14:06:00-06:00</cap:effective>
-<cap:expires>2022-05-10T21:00:00-06:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Future</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Possible</cap:certainty>
-<cap:areaDesc>Cheyenne; Kit Carson County</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>008017 008063</value>
-<valueName>UGC</valueName>
-<value>COZ253 COZ254</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KGLD.FW.W.0025.000000T0000Z-220510T0300Z/
-/O.CON.KGLD.FW.A.0020.220510T1700Z-220511T0300Z/
-/O.CON.KGLD.FW.A.0021.220511T1500Z-220512T0300Z/</value>
-</cap:parameter>
-</entry>
-<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=CO1263F444A0D8.RedFlagWarning.1263F460B200CO.GJTRFWGJT.c51b979107ea886363027a0b28adc430</id>
 <updated>2022-05-09T14:06:00-06:00</updated>
 <published>2022-05-09T14:06:00-06:00</published>
@@ -2221,72 +2287,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <value>/O.NEW.KGJT.FW.A.0015.220511T1700Z-220512T0400Z/
 /O.CON.KGJT.FW.W.0016.000000T0000Z-220510T0400Z/
 /O.CON.KGJT.FW.W.0017.220510T1700Z-220511T0400Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=CO1263F444A0D8.FireWeatherWatch.1263F46FCD30CO.GLDRFWGLD.f5a63cee48ad84f41f4390d03ad69fce</id>
-<updated>2022-05-09T14:06:00-06:00</updated>
-<published>2022-05-09T14:06:00-06:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Fire Weather Watch issued May 09 at 2:06PM MDT until May 11 at 9:00PM MDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CO1263F444A0D8.FireWeatherWatch.1263F46FCD30CO.GLDRFWGLD.f5a63cee48ad84f41f4390d03ad69fce"/>
-<summary>...Red Flag Warning Today, Fire Weather Watch Tuesday and Wednesday... A Red Flag Warning for critical fire weather conditions remains in effect today south of a line from Kit Carson county Colorado to Gove county Kansas. Fire Weather Watches are in effect for the far southwestern and</summary>
-<cap:event>Fire Weather Watch</cap:event>
-<cap:effective>2022-05-09T14:06:00-06:00</cap:effective>
-<cap:expires>2022-05-11T21:00:00-06:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Future</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Possible</cap:certainty>
-<cap:areaDesc>Yuma</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>008125</value>
-<valueName>UGC</valueName>
-<value>COZ252</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KGLD.FW.A.0021.220511T1500Z-220512T0300Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=CO1263F444A0D8.FireWeatherWatch.1263F46FCD30CO.GLDRFWGLD.723c1584f3756570c3a25055b517b176</id>
-<updated>2022-05-09T14:06:00-06:00</updated>
-<published>2022-05-09T14:06:00-06:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Fire Weather Watch issued May 09 at 2:06PM MDT until May 11 at 9:00PM MDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CO1263F444A0D8.FireWeatherWatch.1263F46FCD30CO.GLDRFWGLD.723c1584f3756570c3a25055b517b176"/>
-<summary>...Red Flag Warning Today, Fire Weather Watch Tuesday and Wednesday... A Red Flag Warning for critical fire weather conditions remains in effect today south of a line from Kit Carson county Colorado to Gove county Kansas. Fire Weather Watches are in effect for the far southwestern and</summary>
-<cap:event>Fire Weather Watch</cap:event>
-<cap:effective>2022-05-09T14:06:00-06:00</cap:effective>
-<cap:expires>2022-05-11T21:00:00-06:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Future</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Possible</cap:certainty>
-<cap:areaDesc>Cheyenne; Kit Carson County</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>008017 008063</value>
-<valueName>UGC</valueName>
-<value>COZ253 COZ254</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KGLD.FW.W.0025.000000T0000Z-220510T0300Z/
-/O.CON.KGLD.FW.A.0020.220510T1700Z-220511T0300Z/
-/O.CON.KGLD.FW.A.0021.220511T1500Z-220512T0300Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -2424,70 +2424,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=CT1263F442D0C8.SpecialWeatherStatement.1263F450D380CT.ALYSPSALY.f327157991dd13ace8b1c95d694dcaec</id>
-<updated>2022-05-09T04:18:00-04:00</updated>
-<published>2022-05-09T04:18:00-04:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Special Weather Statement issued May 09 at 4:18AM EDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CT1263F442D0C8.SpecialWeatherStatement.1263F450D380CT.ALYSPSALY.f327157991dd13ace8b1c95d694dcaec"/>
-<summary>...ELEVATED FIRE WEATHER CONCERNS TODAY FOR WESTERN CONNECTICUT AND WESTERN MASSACHUSETTS... A very dry airmass combined with gusty winds will result in elevated fire weather concerns today. Specifically, east/northeast winds will gust to 20 to 30 mph. Minimum relative humidities will drop to 15 to 25 percent in western CT and western MA this</summary>
-<cap:event>Special Weather Statement</cap:event>
-<cap:effective>2022-05-09T04:18:00-04:00</cap:effective>
-<cap:expires>2022-05-09T20:00:00-04:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Observed</cap:certainty>
-<cap:areaDesc>Northern Litchfield; Southern Litchfield</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>009005</value>
-<valueName>UGC</valueName>
-<value>CTZ001 CTZ013</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value></value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=CT1263F442CE0C.SpecialWeatherStatement.1263F450D380CT.BOXSPSBOX.a1a94fe5cc8165c5bc339a3fb402552e</id>
-<updated>2022-05-09T04:11:00-04:00</updated>
-<published>2022-05-09T04:11:00-04:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Special Weather Statement issued May 09 at 4:11AM EDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CT1263F442CE0C.SpecialWeatherStatement.1263F450D380CT.BOXSPSBOX.a1a94fe5cc8165c5bc339a3fb402552e"/>
-<summary>...ELEVATED FIRE WEATHER CONCERNS TODAY FOR NORTHERN CONNECTICUT, NORTHERN RHODE ISLAND AND INTERIOR MASSACHUSETTS... A very dry airmass combined with gusty winds will result in elevated fire weather concerns today. Specifically, northeast winds will gust to 20 to 30 mph. Minimum relative humidities will be 15 to 25 percent in northern CT and central and western</summary>
-<cap:event>Special Weather Statement</cap:event>
-<cap:effective>2022-05-09T04:11:00-04:00</cap:effective>
-<cap:expires>2022-05-09T20:00:00-04:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Observed</cap:certainty>
-<cap:areaDesc>Hartford; Tolland; Windham</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>009003 009013 009015</value>
-<valueName>UGC</valueName>
-<value>CTZ002 CTZ003 CTZ004</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value></value>
-</cap:parameter>
-</entry>
-<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=DC1263F4448580.CoastalFloodWarning.1263F4619C60DC.LWXCFWLWX.7777b32883dad3f0805e87d23bc8cf99</id>
 <updated>2022-05-09T15:36:00-04:00</updated>
 <published>2022-05-09T15:36:00-04:00</published>
@@ -2550,6 +2486,38 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value>/O.EXT.KPHI.CF.Y.0035.000000T0000Z-220510T1200Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=FL1263F450D6A0.RipCurrentStatement.1263F4617550FL.JAXCFWJAX.08d433e4a106705801d3e0670b3647fc</id>
+<updated>2022-05-09T20:08:00-04:00</updated>
+<published>2022-05-09T20:08:00-04:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Rip Current Statement issued May 09 at 8:08PM EDT until May 11 at 5:00AM EDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=FL1263F450D6A0.RipCurrentStatement.1263F4617550FL.JAXCFWJAX.08d433e4a106705801d3e0670b3647fc"/>
+<summary>...HIGH RIP CURRENT RISK REMAINS IN EFFECT THROUGH LATE TUESDAY NIGHT... * WHAT...Dangerous rip currents. * WHERE...Northeast Florida Beaches. * WHEN...Through late Tuesday night. * IMPACTS...Rip currents can sweep even the best swimmers away</summary>
+<cap:event>Rip Current Statement</cap:event>
+<cap:effective>2022-05-09T20:08:00-04:00</cap:effective>
+<cap:expires>2022-05-11T05:00:00-04:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Coastal Duval; Coastal Flagler; Coastal Nassau; Coastal St. Johns</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>012031 012035 012089 012109</value>
+<valueName>UGC</valueName>
+<value>FLZ124 FLZ125 FLZ133 FLZ138</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KJAX.RP.S.0019.000000T0000Z-220511T0900Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -2681,35 +2649,35 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=FL1263F4428D98.RipCurrentStatement.1263F4617550FL.JAXCFWJAX.08d433e4a106705801d3e0670b3647fc</id>
-<updated>2022-05-09T02:46:00-04:00</updated>
-<published>2022-05-09T02:46:00-04:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=IA1263F4452418.SpecialWeatherStatement.1263F450FA90IA.ARXSPSARX.9a9ca6924f2b38e355f6793b17e08b2d</id>
+<updated>2022-05-09T18:42:00-05:00</updated>
+<published>2022-05-09T18:42:00-05:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Rip Current Statement issued May 09 at 2:46AM EDT until May 11 at 5:00AM EDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=FL1263F4428D98.RipCurrentStatement.1263F4617550FL.JAXCFWJAX.08d433e4a106705801d3e0670b3647fc"/>
-<summary>...HIGH RIP CURRENT RISK IN EFFECT FROM 11 AM EDT THIS MORNING THROUGH LATE TUESDAY NIGHT... * WHAT...Dangerous rip currents expected. * WHERE...Northeast Florida Beaches. * WHEN...From 11 AM EDT this morning through late Tuesday night. * IMPACTS...Rip currents can sweep even the best swimmers away</summary>
-<cap:event>Rip Current Statement</cap:event>
-<cap:effective>2022-05-09T02:46:00-04:00</cap:effective>
-<cap:expires>2022-05-11T05:00:00-04:00</cap:expires>
+<title>Special Weather Statement issued May 09 at 6:42PM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=IA1263F4452418.SpecialWeatherStatement.1263F450FA90IA.ARXSPSARX.9a9ca6924f2b38e355f6793b17e08b2d"/>
+<summary>...Thunderstorms developing along Interstate 35... Thunderstorms are developing east of Interstate 35 in north- central Iowa. Storms that develop will have potential to turn severe quickly with a threat of large hail and damaging winds. The storms will advance into north-central Iowa and parts of southeast Minnesota through 8 PM. Have multiple ways to receive</summary>
+<cap:event>Special Weather Statement</cap:event>
+<cap:effective>2022-05-09T18:42:00-05:00</cap:effective>
+<cap:expires>2022-05-09T20:00:00-05:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
 <cap:category>Met</cap:category>
 <cap:urgency>Expected</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Coastal Duval; Coastal Flagler; Coastal Nassau; Coastal St. Johns</cap:areaDesc>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Observed</cap:certainty>
+<cap:areaDesc>Chickasaw; Floyd; Howard; Mitchell</cap:areaDesc>
 <cap:polygon></cap:polygon>
 <cap:geocode>
 <valueName>FIPS6</valueName>
-<value>012031 012035 012089 012109</value>
+<value>019037 019067 019089 019131</value>
 <valueName>UGC</valueName>
-<value>FLZ124 FLZ125 FLZ133 FLZ138</value>
+<value>IAZ008 IAZ009 IAZ018 IAZ019</value>
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
-<value>/O.NEW.KJAX.RP.S.0019.220509T1500Z-220511T0900Z/</value>
+<value></value>
 </cap:parameter>
 </entry>
 <entry>
@@ -3567,6 +3535,104 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=KS1263F44529F4.RedFlagWarning.1263F45148B0KS.GLDRFWGLD.73cfa512e151f138edf7e97d9201de0d</id>
+<updated>2022-05-09T18:57:00-05:00</updated>
+<published>2022-05-09T18:57:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Red Flag Warning issued May 09 at 6:57PM CDT until May 09 at 10:00PM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=KS1263F44529F4.RedFlagWarning.1263F45148B0KS.GLDRFWGLD.73cfa512e151f138edf7e97d9201de0d"/>
+<summary>...RED FLAG WARNING REMAINS IN EFFECT UNTIL 9 PM MDT /10 PM CDT/ THIS EVENING FOR WIND AND LOW RELATIVE HUMIDITY FOR FIRE WEATHER ZONES 027...028...029 AND 042... * Affected Area...In Kansas...Fire Weather Zone 027 Wallace... Fire Weather Zone 028 Logan...Fire Weather Zone 029 Gove and Fire Weather Zone 042 Wichita.</summary>
+<cap:event>Red Flag Warning</cap:event>
+<cap:effective>2022-05-09T18:57:00-05:00</cap:effective>
+<cap:expires>2022-05-09T22:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Severe</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Gove; Logan; Wallace; Wichita</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>020063 020109 020199 020203</value>
+<valueName>UGC</valueName>
+<value>KSZ027 KSZ028 KSZ029 KSZ042</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KGLD.FW.W.0025.000000T0000Z-220510T0300Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=KS1263F44529F4.RedFlagWarning.1263F45148B0KS.GLDRFWGLD.07bac644714830b7392b7235640ac046</id>
+<updated>2022-05-09T18:57:00-05:00</updated>
+<published>2022-05-09T18:57:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Red Flag Warning issued May 09 at 6:57PM CDT until May 09 at 10:00PM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=KS1263F44529F4.RedFlagWarning.1263F45148B0KS.GLDRFWGLD.07bac644714830b7392b7235640ac046"/>
+<summary>...RED FLAG WARNING REMAINS IN EFFECT UNTIL 9 PM MDT THIS EVENING FOR WIND AND LOW RELATIVE HUMIDITY FOR FIRE WEATHER ZONE 041... ...FIRE WEATHER WATCH REMAINS IN EFFECT FROM TUESDAY MORNING THROUGH TUESDAY EVENING FOR WIND AND LOW RELATIVE HUMIDITY FOR FIRE WEATHER ZONE 041... * Affected Area...In Kansas...Fire Weather Zone 041 Greeley.</summary>
+<cap:event>Red Flag Warning</cap:event>
+<cap:effective>2022-05-09T18:57:00-05:00</cap:effective>
+<cap:expires>2022-05-09T22:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Severe</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Greeley</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>020071</value>
+<valueName>UGC</valueName>
+<value>KSZ041</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KGLD.FW.W.0025.000000T0000Z-220510T0300Z/
+/O.CON.KGLD.FW.A.0020.220510T1700Z-220511T0300Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=KS1263F44529F4.FireWeatherWatch.1263F4608AF0KS.GLDRFWGLD.15e58b0e4612cd62ca9a914cd6797994</id>
+<updated>2022-05-09T18:57:00-05:00</updated>
+<published>2022-05-09T18:57:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Fire Weather Watch issued May 09 at 6:57PM CDT until May 10 at 10:00PM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=KS1263F44529F4.FireWeatherWatch.1263F4608AF0KS.GLDRFWGLD.15e58b0e4612cd62ca9a914cd6797994"/>
+<summary>...RED FLAG WARNING REMAINS IN EFFECT UNTIL 9 PM MDT THIS EVENING FOR WIND AND LOW RELATIVE HUMIDITY FOR FIRE WEATHER ZONE 041... ...FIRE WEATHER WATCH REMAINS IN EFFECT FROM TUESDAY MORNING THROUGH TUESDAY EVENING FOR WIND AND LOW RELATIVE HUMIDITY FOR FIRE WEATHER ZONE 041... * Affected Area...In Kansas...Fire Weather Zone 041 Greeley.</summary>
+<cap:event>Fire Weather Watch</cap:event>
+<cap:effective>2022-05-09T18:57:00-05:00</cap:effective>
+<cap:expires>2022-05-10T22:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Future</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Possible</cap:certainty>
+<cap:areaDesc>Greeley</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>020071</value>
+<valueName>UGC</valueName>
+<value>KSZ041</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KGLD.FW.W.0025.000000T0000Z-220510T0300Z/
+/O.CON.KGLD.FW.A.0020.220510T1700Z-220511T0300Z/</value>
+</cap:parameter>
+</entry>
+<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=KS1263F444AE84.RedFlagWarning.1263F45148B0KS.DDCRFWDDC.22b29f5bafdfa6c8a4ba540e764a74cb</id>
 <updated>2022-05-09T15:41:00-05:00</updated>
 <published>2022-05-09T15:41:00-05:00</published>
@@ -3665,104 +3731,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=KS1263F444A0D8.RedFlagWarning.1263F45148B0KS.GLDRFWGLD.0e5792e9c9bfa099e4d2398ac3bac08e</id>
-<updated>2022-05-09T15:06:00-05:00</updated>
-<published>2022-05-09T15:06:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Red Flag Warning issued May 09 at 3:06PM CDT until May 09 at 10:00PM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=KS1263F444A0D8.RedFlagWarning.1263F45148B0KS.GLDRFWGLD.0e5792e9c9bfa099e4d2398ac3bac08e"/>
-<summary>...Red Flag Warning Today, Fire Weather Watch Tuesday and Wednesday... A Red Flag Warning for critical fire weather conditions remains in effect today south of a line from Kit Carson county Colorado to Gove county Kansas. Fire Weather Watches are in effect for the far southwestern and</summary>
-<cap:event>Red Flag Warning</cap:event>
-<cap:effective>2022-05-09T15:06:00-05:00</cap:effective>
-<cap:expires>2022-05-09T22:00:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Severe</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Gove; Logan; Sherman; Thomas; Wallace; Wichita</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>020063 020109 020181 020193 020199 020203</value>
-<valueName>UGC</valueName>
-<value>KSZ013 KSZ014 KSZ027 KSZ028 KSZ029 KSZ042</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KGLD.FW.W.0025.000000T0000Z-220510T0300Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=KS1263F444A0D8.RedFlagWarning.1263F45148B0KS.GLDRFWGLD.07bac644714830b7392b7235640ac046</id>
-<updated>2022-05-09T15:06:00-05:00</updated>
-<published>2022-05-09T15:06:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Red Flag Warning issued May 09 at 3:06PM CDT until May 09 at 10:00PM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=KS1263F444A0D8.RedFlagWarning.1263F45148B0KS.GLDRFWGLD.07bac644714830b7392b7235640ac046"/>
-<summary>...Red Flag Warning Today, Fire Weather Watch Tuesday and Wednesday... A Red Flag Warning for critical fire weather conditions remains in effect today south of a line from Kit Carson county Colorado to Gove county Kansas. Fire Weather Watches are in effect for the far southwestern and</summary>
-<cap:event>Red Flag Warning</cap:event>
-<cap:effective>2022-05-09T15:06:00-05:00</cap:effective>
-<cap:expires>2022-05-09T22:00:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Severe</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Greeley</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>020071</value>
-<valueName>UGC</valueName>
-<value>KSZ041</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KGLD.FW.W.0025.000000T0000Z-220510T0300Z/
-/O.CON.KGLD.FW.A.0020.220510T1700Z-220511T0300Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=KS1263F444A0D8.FireWeatherWatch.1263F4608AF0KS.GLDRFWGLD.15e58b0e4612cd62ca9a914cd6797994</id>
-<updated>2022-05-09T15:06:00-05:00</updated>
-<published>2022-05-09T15:06:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Fire Weather Watch issued May 09 at 3:06PM CDT until May 10 at 10:00PM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=KS1263F444A0D8.FireWeatherWatch.1263F4608AF0KS.GLDRFWGLD.15e58b0e4612cd62ca9a914cd6797994"/>
-<summary>...Red Flag Warning Today, Fire Weather Watch Tuesday and Wednesday... A Red Flag Warning for critical fire weather conditions remains in effect today south of a line from Kit Carson county Colorado to Gove county Kansas. Fire Weather Watches are in effect for the far southwestern and</summary>
-<cap:event>Fire Weather Watch</cap:event>
-<cap:effective>2022-05-09T15:06:00-05:00</cap:effective>
-<cap:expires>2022-05-10T22:00:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Future</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Possible</cap:certainty>
-<cap:areaDesc>Greeley</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>020071</value>
-<valueName>UGC</valueName>
-<value>KSZ041</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KGLD.FW.W.0025.000000T0000Z-220510T0300Z/
-/O.CON.KGLD.FW.A.0020.220510T1700Z-220511T0300Z/</value>
-</cap:parameter>
-</entry>
-<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=LA1263F4447964.FloodWarning.1263F52847C0LA.JANFLSJAN.85aacd2bf7c157ad6d0aabbd6c77ec9e</id>
 <updated>2022-05-09T14:05:00-05:00</updated>
 <published>2022-05-09T14:05:00-05:00</published>
@@ -3826,102 +3794,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <valueName>VTEC</valueName>
 <value>/O.CON.KLIX.FL.W.0014.000000T0000Z-220529T0900Z/
 /RRLL1.1.ER.220306T1208Z.220324T0000Z.220528T0200Z.NO/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=MA1263F4447964.WindAdvisory.1263F450D380MA.BOXNPWBOX.b1e1c5ca1f4c622b68b02be953ad8180</id>
-<updated>2022-05-09T15:05:00-04:00</updated>
-<published>2022-05-09T15:05:00-04:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Wind Advisory issued May 09 at 3:05PM EDT until May 09 at 8:00PM EDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MA1263F4447964.WindAdvisory.1263F450D380MA.BOXNPWBOX.b1e1c5ca1f4c622b68b02be953ad8180"/>
-<summary>...WIND ADVISORY REMAINS IN EFFECT UNTIL 8 PM EDT THIS EVENING... * WHAT...Northeast winds 25 to 35 mph with gusts up to 50 mph expected. * WHERE...Nantucket MA County. * WHEN...Until 8 PM EDT this evening. * IMPACTS...Gusty winds could blow around unsecured objects.</summary>
-<cap:event>Wind Advisory</cap:event>
-<cap:effective>2022-05-09T15:05:00-04:00</cap:effective>
-<cap:expires>2022-05-09T20:00:00-04:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Nantucket</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>025019</value>
-<valueName>UGC</valueName>
-<value>MAZ024</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KBOX.WI.Y.0012.000000T0000Z-220510T0000Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=MA1263F442D0C8.SpecialWeatherStatement.1263F450D380MA.ALYSPSALY.24005902cdfd1b82fe796d8701ea79e8</id>
-<updated>2022-05-09T04:18:00-04:00</updated>
-<published>2022-05-09T04:18:00-04:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Special Weather Statement issued May 09 at 4:18AM EDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MA1263F442D0C8.SpecialWeatherStatement.1263F450D380MA.ALYSPSALY.24005902cdfd1b82fe796d8701ea79e8"/>
-<summary>...ELEVATED FIRE WEATHER CONCERNS TODAY FOR WESTERN CONNECTICUT AND WESTERN MASSACHUSETTS... A very dry airmass combined with gusty winds will result in elevated fire weather concerns today. Specifically, east/northeast winds will gust to 20 to 30 mph. Minimum relative humidities will drop to 15 to 25 percent in western CT and western MA this</summary>
-<cap:event>Special Weather Statement</cap:event>
-<cap:effective>2022-05-09T04:18:00-04:00</cap:effective>
-<cap:expires>2022-05-09T20:00:00-04:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Observed</cap:certainty>
-<cap:areaDesc>Northern Berkshire; Southern Berkshire</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>025003</value>
-<valueName>UGC</valueName>
-<value>MAZ001 MAZ025</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value></value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=MA1263F442CE0C.SpecialWeatherStatement.1263F450D380MA.BOXSPSBOX.2f7eacda9f51955a19ffbe9b4186d655</id>
-<updated>2022-05-09T04:11:00-04:00</updated>
-<published>2022-05-09T04:11:00-04:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Special Weather Statement issued May 09 at 4:11AM EDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MA1263F442CE0C.SpecialWeatherStatement.1263F450D380MA.BOXSPSBOX.2f7eacda9f51955a19ffbe9b4186d655"/>
-<summary>...ELEVATED FIRE WEATHER CONCERNS TODAY FOR NORTHERN CONNECTICUT, NORTHERN RHODE ISLAND AND INTERIOR MASSACHUSETTS... A very dry airmass combined with gusty winds will result in elevated fire weather concerns today. Specifically, northeast winds will gust to 20 to 30 mph. Minimum relative humidities will be 15 to 25 percent in northern CT and central and western</summary>
-<cap:event>Special Weather Statement</cap:event>
-<cap:effective>2022-05-09T04:11:00-04:00</cap:effective>
-<cap:expires>2022-05-09T20:00:00-04:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Observed</cap:certainty>
-<cap:areaDesc>Central Middlesex County; Eastern Franklin; Eastern Hampden; Eastern Hampshire; Northern Worcester; Northwest Middlesex County; Southern Worcester; Western Essex; Western Franklin; Western Hampden; Western Hampshire; Western Norfolk</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>025009 025011 025013 025015 025017 025021 025027</value>
-<valueName>UGC</valueName>
-<value>MAZ002 MAZ003 MAZ004 MAZ005 MAZ006 MAZ008 MAZ009 MAZ010 MAZ011 MAZ012 MAZ013 MAZ026</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value></value>
 </cap:parameter>
 </entry>
 <entry>
@@ -4346,102 +4218,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=MI1263F4448710.RedFlagWarning.1263F450D380MI.APXRFWAPX.311089b83995f84dcc93df9e51bbe86f</id>
-<updated>2022-05-09T15:40:00-04:00</updated>
-<published>2022-05-09T15:40:00-04:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Red Flag Warning issued May 09 at 3:40PM EDT until May 09 at 8:00PM EDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MI1263F4448710.RedFlagWarning.1263F450D380MI.APXRFWAPX.311089b83995f84dcc93df9e51bbe86f"/>
-<summary>...RED FLAG WARNING REMAINS IN EFFECT UNTIL 8 PM EDT THIS EVENING FOR ALL OF NORTHERN LOWER MICHIGAN... * WIND...Southeast winds of 15 to 25 mph with gusts to 40 mph. * HUMIDITY...Minimum relative humidity of 20 to 25 percent. * TEMPERATURES...Highs of 70 to 77 degrees. * IMPACTS...Any fires that develop will likely spread rapidly.</summary>
-<cap:event>Red Flag Warning</cap:event>
-<cap:effective>2022-05-09T15:40:00-04:00</cap:effective>
-<cap:expires>2022-05-09T20:00:00-04:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Severe</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Alcona; Alpena; Antrim; Arenac; Benzie; Charlevoix; Cheboygan; Crawford; Emmet; Gladwin; Grand Traverse; Iosco; Kalkaska; Leelanau; Manistee; Missaukee; Montmorency; Ogemaw; Oscoda; Otsego; Presque Isle; Roscommon; Wexford</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>026001 026007 026009 026011 026019 026029 026031 026039 026047 026051 026055 026069 026079 026089 026101 026113 026119 026129 026135 026137 026141 026143 026165</value>
-<valueName>UGC</valueName>
-<value>MIZ016 MIZ017 MIZ018 MIZ020 MIZ021 MIZ022 MIZ023 MIZ024 MIZ025 MIZ026 MIZ027 MIZ028 MIZ029 MIZ030 MIZ031 MIZ032 MIZ033 MIZ034 MIZ035 MIZ036 MIZ041 MIZ042 MIZ099</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KAPX.FW.W.0001.000000T0000Z-220510T0000Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=MI1263F44480D0.RedFlagWarning.1263F450D380MI.DTXRFWDTX.2a26958d3a991f48fd41ed6c4d998048</id>
-<updated>2022-05-09T15:24:00-04:00</updated>
-<published>2022-05-09T15:24:00-04:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Red Flag Warning issued May 09 at 3:24PM EDT until May 09 at 8:00PM EDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MI1263F44480D0.RedFlagWarning.1263F450D380MI.DTXRFWDTX.2a26958d3a991f48fd41ed6c4d998048"/>
-<summary>...RED FLAG WARNING REMAINS IN EFFECT UNTIL 8 PM EDT THIS EVENING... * Winds...Southeast 15 to 20 mph with gusts up to 30 mph. * Humidity...As low as 25 percent. * Temperatures...In the low to mid 70s. * Impacts...Burn restrictions are in effect across parts of the Saginaw Valley. For more information on burn restrictions visit</summary>
-<cap:event>Red Flag Warning</cap:event>
-<cap:effective>2022-05-09T15:24:00-04:00</cap:effective>
-<cap:expires>2022-05-09T20:00:00-04:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Severe</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Bay; Midland; Saginaw</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>026017 026111 026145</value>
-<valueName>UGC</valueName>
-<value>MIZ047 MIZ048 MIZ053</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KDTX.FW.W.0001.000000T0000Z-220510T0000Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=MI1263F4447D4C.RedFlagWarning.1263F450D380MI.GRRRFWGRR.72d9bbf6a00ef75aac54317de90f0ec7</id>
-<updated>2022-05-09T15:15:00-04:00</updated>
-<published>2022-05-09T15:15:00-04:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Red Flag Warning issued May 09 at 3:15PM EDT until May 09 at 8:00PM EDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MI1263F4447D4C.RedFlagWarning.1263F450D380MI.GRRRFWGRR.72d9bbf6a00ef75aac54317de90f0ec7"/>
-<summary>...RED FLAG WARNING REMAINS IN EFFECT UNTIL 8 PM EDT THIS EVENING... * Winds...Southeast 15 to 20 mph with gusts up to 35 mph. * Relative Humidity...As low as 25 percent. * Temperatures...75 to 80 * Impacts...burn restrictions are likely in effect. for more</summary>
-<cap:event>Red Flag Warning</cap:event>
-<cap:effective>2022-05-09T15:15:00-04:00</cap:effective>
-<cap:expires>2022-05-09T20:00:00-04:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Severe</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Clare; Gratiot; Isabella; Lake; Mason; Mecosta; Montcalm; Newaygo; Oceana; Osceola</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>026035 026057 026073 026085 026105 026107 026117 026123 026127 026133</value>
-<valueName>UGC</valueName>
-<value>MIZ037 MIZ038 MIZ039 MIZ040 MIZ043 MIZ044 MIZ045 MIZ046 MIZ051 MIZ052</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KGRR.FW.W.0001.000000T0000Z-220510T0000Z/</value>
-</cap:parameter>
-</entry>
-<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=MI1263F4440F88.HighWindWarning.1263F4516FC0MI.MQTNPWMQT.6503e3e5c4adc8521c0a35688cb39311</id>
 <updated>2022-05-09T12:34:00-04:00</updated>
 <published>2022-05-09T12:34:00-04:00</published>
@@ -4539,31 +4315,127 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=MN1263F4451FCC.SpecialWeatherStatement.1263F450D380MN.DLHSPSDLH.c6dcbe89d6191947d4c6e31ab048db5b</id>
-<updated>2022-05-09T18:31:00-05:00</updated>
-<published>2022-05-09T18:31:00-05:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=MN1263F445292C.SevereThunderstormWarning.1263F450DF38MN.ARXSVRARX.f15195ac3643451d7ad9317af768c924</id>
+<updated>2022-05-09T18:55:00-05:00</updated>
+<published>2022-05-09T18:55:00-05:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Special Weather Statement issued May 09 at 6:31PM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MN1263F4451FCC.SpecialWeatherStatement.1263F450D380MN.DLHSPSDLH.c6dcbe89d6191947d4c6e31ab048db5b"/>
-<summary>...Strong thunderstorms will impact portions of northeastern Pine, southeastern St. Louis, eastern Carlton and northwestern Douglas Counties through 700 PM CDT... At 631 PM CDT, Doppler radar was tracking strong thunderstorms along a line extending from Wisconsin Point, to 9 miles northwest of Cloverton, moving northeast at 50 mph.</summary>
+<title>Severe Thunderstorm Warning issued May 09 at 6:55PM CDT until May 09 at 7:30PM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MN1263F445292C.SevereThunderstormWarning.1263F450DF38MN.ARXSVRARX.f15195ac3643451d7ad9317af768c924"/>
+<summary>The National Weather Service in La Crosse has issued a * Severe Thunderstorm Warning for... Northwestern Wabasha County in southeastern Minnesota... * Until 730 PM CDT. * At 654 PM CDT, a severe thunderstorm was located 7 miles southwest of Frontenac, or 8 miles southeast of Red Wing, moving northeast at</summary>
+<cap:event>Severe Thunderstorm Warning</cap:event>
+<cap:effective>2022-05-09T18:55:00-05:00</cap:effective>
+<cap:expires>2022-05-09T19:30:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Immediate</cap:urgency>
+<cap:severity>Severe</cap:severity>
+<cap:certainty>Observed</cap:certainty>
+<cap:areaDesc>Wabasha</cap:areaDesc>
+<cap:polygon>44.37,-92.55 44.37,-92.43 44.45,-92.43 44.45,-92.24 44.29,-92.55 44.37,-92.55</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>027157</value>
+<valueName>UGC</valueName>
+<value>MNC157</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.NEW.KARX.SV.W.0020.220509T2355Z-220510T0030Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=MN1263F4452738.TornadoWatch.1263F45148B0MN.MPXWCNMPX.afed79c7db0d73ce3dc8c312c97aabff</id>
+<updated>2022-05-09T18:50:00-05:00</updated>
+<published>2022-05-09T18:50:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Tornado Watch issued May 09 at 6:50PM CDT until May 09 at 10:00PM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MN1263F4452738.TornadoWatch.1263F45148B0MN.MPXWCNMPX.afed79c7db0d73ce3dc8c312c97aabff"/>
+<summary>TORNADO WATCH 194 REMAINS VALID UNTIL 10 PM CDT THIS EVENING FOR THE FOLLOWING AREAS IN MINNESOTA THIS WATCH INCLUDES 1 COUNTY IN SOUTHEAST MINNESOTA GOODHUE IN WISCONSIN THIS WATCH INCLUDES 9 COUNTIES</summary>
+<cap:event>Tornado Watch</cap:event>
+<cap:effective>2022-05-09T18:50:00-05:00</cap:effective>
+<cap:expires>2022-05-09T22:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Severe</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Goodhue</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>027049</value>
+<valueName>UGC</valueName>
+<value>MNC049</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KMPX.TO.A.0194.000000T0000Z-220510T0300Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=MN1263F4452670.SevereThunderstormWarning.1263F450DF38MN.MPXSVRMPX.0679b07e403437db92c8f18520ea1467</id>
+<updated>2022-05-09T18:48:00-05:00</updated>
+<published>2022-05-09T18:48:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Severe Thunderstorm Warning issued May 09 at 6:48PM CDT until May 09 at 7:30PM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MN1263F4452670.SevereThunderstormWarning.1263F450DF38MN.MPXSVRMPX.0679b07e403437db92c8f18520ea1467"/>
+<summary>The National Weather Service in the Twin Cities has issued a * Severe Thunderstorm Warning for... East central Goodhue County in southeastern Minnesota... Northwestern Pepin County in west central Wisconsin... Southeastern Pierce County in west central Wisconsin... Southwestern Dunn County in west central Wisconsin...</summary>
+<cap:event>Severe Thunderstorm Warning</cap:event>
+<cap:effective>2022-05-09T18:48:00-05:00</cap:effective>
+<cap:expires>2022-05-09T19:30:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Immediate</cap:urgency>
+<cap:severity>Severe</cap:severity>
+<cap:certainty>Observed</cap:certainty>
+<cap:areaDesc>Goodhue</cap:areaDesc>
+<cap:polygon>44.66,-91.86 44.59,-91.99 44.59,-92.02 44.57,-92.04 44.45,-92.27 44.45,-92.43 44.37,-92.44 44.37,-92.54 44.35,-92.55 44.42,-92.64 44.82,-92.13 44.66,-91.86</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>027049</value>
+<valueName>UGC</valueName>
+<value>MNC049</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.NEW.KMPX.SV.W.0048.220509T2348Z-220510T0030Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=MN1263F4452418.SpecialWeatherStatement.1263F450FA90MN.ARXSPSARX.0f5f717bfa9a7bd0d5c6e3e86652ce1c</id>
+<updated>2022-05-09T18:42:00-05:00</updated>
+<published>2022-05-09T18:42:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Special Weather Statement issued May 09 at 6:42PM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MN1263F4452418.SpecialWeatherStatement.1263F450FA90MN.ARXSPSARX.0f5f717bfa9a7bd0d5c6e3e86652ce1c"/>
+<summary>...Thunderstorms developing along Interstate 35... Thunderstorms are developing east of Interstate 35 in north- central Iowa. Storms that develop will have potential to turn severe quickly with a threat of large hail and damaging winds. The storms will advance into north-central Iowa and parts of southeast Minnesota through 8 PM. Have multiple ways to receive</summary>
 <cap:event>Special Weather Statement</cap:event>
-<cap:effective>2022-05-09T18:31:00-05:00</cap:effective>
-<cap:expires>2022-05-09T19:00:00-05:00</cap:expires>
+<cap:effective>2022-05-09T18:42:00-05:00</cap:effective>
+<cap:expires>2022-05-09T20:00:00-05:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
 <cap:category>Met</cap:category>
 <cap:urgency>Expected</cap:urgency>
 <cap:severity>Minor</cap:severity>
 <cap:certainty>Observed</cap:certainty>
-<cap:areaDesc>Carlton, South St. Louis; Pine; Southern Lake, North Shore</cap:areaDesc>
-<cap:polygon>46.76,-92.38 47.09,-91.53 47.05,-91.55 47,-91.6 46.98,-91.67 46.92,-91.74 46.87,-91.86 46.78,-92.03 46.72,-91.95 46.73,-91.8 46.77,-91.66 46.41,-91.81 46.28,-92.54 46.76,-92.38</cap:polygon>
+<cap:areaDesc>Fillmore; Mower</cap:areaDesc>
+<cap:polygon></cap:polygon>
 <cap:geocode>
 <valueName>FIPS6</valueName>
-<value>027017 027075 027115 027137</value>
+<value>027045 027099</value>
 <valueName>UGC</valueName>
-<value>MNZ020 MNZ037 MNZ038</value>
+<value>MNZ094 MNZ095</value>
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
@@ -4600,70 +4472,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value>/O.CON.KDLH.TO.A.0194.000000T0000Z-220510T0300Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=MN1263F444FAB0.TornadoWatch.1263F45148B0MN.MPXWCNMPX.38d8c7d14b65ac0bced28f23e7b1a6f9</id>
-<updated>2022-05-09T17:36:00-05:00</updated>
-<published>2022-05-09T17:36:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Tornado Watch issued May 09 at 5:36PM CDT until May 09 at 10:00PM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MN1263F444FAB0.TornadoWatch.1263F45148B0MN.MPXWCNMPX.38d8c7d14b65ac0bced28f23e7b1a6f9"/>
-<summary>TORNADO WATCH 194 REMAINS VALID UNTIL 10 PM CDT THIS EVENING FOR THE FOLLOWING AREAS IN MINNESOTA THIS WATCH INCLUDES 13 COUNTIES IN EAST CENTRAL MINNESOTA ANOKA CHISAGO DAKOTA HENNEPIN ISANTI KANABEC</summary>
-<cap:event>Tornado Watch</cap:event>
-<cap:effective>2022-05-09T17:36:00-05:00</cap:effective>
-<cap:expires>2022-05-09T22:00:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Severe</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Anoka; Chisago; Dakota; Freeborn; Goodhue; Hennepin; Isanti; Kanabec; Ramsey; Rice; Scott; Steele; Washington</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>027003 027025 027037 027047 027049 027053 027059 027065 027123 027131 027139 027147 027163</value>
-<valueName>UGC</valueName>
-<value>MNC003 MNC025 MNC037 MNC047 MNC049 MNC053 MNC059 MNC065 MNC123 MNC131 MNC139 MNC147 MNC163</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KMPX.TO.A.0194.000000T0000Z-220510T0300Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=MN1263F444B58C.WindAdvisory.1263F450D380MN.MPXNPWMPX.7d9501e3c911a3dc197b7a6978387d69</id>
-<updated>2022-05-09T15:59:00-05:00</updated>
-<published>2022-05-09T15:59:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Wind Advisory issued May 09 at 3:59PM CDT until May 09 at 7:00PM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MN1263F444B58C.WindAdvisory.1263F450D380MN.MPXNPWMPX.7d9501e3c911a3dc197b7a6978387d69"/>
-<summary>...WIND ADVISORY REMAINS IN EFFECT UNTIL 7 PM CDT THIS EVENING... * WHAT...Southwest winds 20 to 30 mph with gusts up to 50 mph. * WHERE...Portions of central, southwest and west central Minnesota. * WHEN...Until 7 PM CDT this evening. * IMPACTS...Gusty winds could blow around unsecured objects.</summary>
-<cap:event>Wind Advisory</cap:event>
-<cap:effective>2022-05-09T15:59:00-05:00</cap:effective>
-<cap:expires>2022-05-09T19:00:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Chippewa; Douglas; Kandiyohi; Lac Qui Parle; Meeker; Pope; Redwood; Renville; Stearns; Stevens; Swift; Todd; Yellow Medicine</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>027023 027041 027067 027073 027093 027121 027127 027129 027145 027149 027151 027153 027173</value>
-<valueName>UGC</valueName>
-<value>MNZ041 MNZ042 MNZ047 MNZ048 MNZ049 MNZ054 MNZ055 MNZ056 MNZ057 MNZ058 MNZ064 MNZ065 MNZ073</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KMPX.WI.Y.0012.000000T0000Z-220510T0000Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -5160,18 +4968,18 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=MN1263F444A6B4.FloodWarning.1263F45148B0MN.FGFFLSFGF.9e9f830911e1c4cee76080248902feff</id>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=MN1263F444A6B4.FloodWarning.1263F4606F98MN.FGFFLSFGF.9e9f830911e1c4cee76080248902feff</id>
 <updated>2022-05-09T15:21:00-05:00</updated>
 <published>2022-05-09T15:21:00-05:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Flood Warning issued May 09 at 3:21PM CDT until May 09 at 10:00PM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MN1263F444A6B4.FloodWarning.1263F45148B0MN.FGFFLSFGF.9e9f830911e1c4cee76080248902feff"/>
+<title>Flood Warning issued May 09 at 3:21PM CDT until further notice by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MN1263F444A6B4.FloodWarning.1263F4606F98MN.FGFFLSFGF.9e9f830911e1c4cee76080248902feff"/>
 <summary>...FLOOD WARNING REMAINS IN EFFECT UNTIL 545 PM CDT TUESDAY... * WHAT...Flooding caused by excessive rainfall continues. * WHERE...Portions of northwest Minnesota and northeast North Dakota, including the following counties, in northwest Minnesota, Marshall and Polk. In northeast North Dakota, Grand Forks and Walsh.</summary>
 <cap:event>Flood Warning</cap:event>
 <cap:effective>2022-05-09T15:21:00-05:00</cap:effective>
-<cap:expires>2022-05-09T22:00:00-05:00</cap:expires>
+<cap:expires>2022-05-10T21:30:00-05:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
 <cap:category>Met</cap:category>
@@ -5226,18 +5034,18 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=MN1263F444A650.FloodWarning.1263F45148B0MN.FGFFLSFGF.38e320e37f984aa7864651dea0f51fa0</id>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=MN1263F444A650.FloodWarning.1263F49EF380MN.FGFFLSFGF.38e320e37f984aa7864651dea0f51fa0</id>
 <updated>2022-05-09T15:20:00-05:00</updated>
 <published>2022-05-09T15:20:00-05:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Flood Warning issued May 09 at 3:20PM CDT until May 09 at 10:00PM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MN1263F444A650.FloodWarning.1263F45148B0MN.FGFFLSFGF.38e320e37f984aa7864651dea0f51fa0"/>
+<title>Flood Warning issued May 09 at 3:20PM CDT until May 15 at 7:00AM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MN1263F444A650.FloodWarning.1263F49EF380MN.FGFFLSFGF.38e320e37f984aa7864651dea0f51fa0"/>
 <summary>...FLOOD WARNING REMAINS IN EFFECT UNTIL 630 PM CDT TUESDAY... * WHAT...Flooding caused by excessive rainfall continues. * WHERE...Portions of northwest Minnesota and northeast North Dakota, including the following counties, in northwest Minnesota, Kittson. In northeast North Dakota, Cavalier and Pembina. * WHEN...Until 630 PM CDT Tuesday.</summary>
 <cap:event>Flood Warning</cap:event>
 <cap:effective>2022-05-09T15:20:00-05:00</cap:effective>
-<cap:expires>2022-05-09T22:00:00-05:00</cap:expires>
+<cap:expires>2022-05-15T07:00:00-05:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
 <cap:category>Met</cap:category>
@@ -5259,18 +5067,18 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=MN1263F444A588.FloodWarning.1263F46307A8MN.FGFFLSFGF.a1a86bc7db9c10f6b9f7d771bbce1ee9</id>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=MN1263F444A588.FloodWarning.1263F4608AF0MN.FGFFLSFGF.a1a86bc7db9c10f6b9f7d771bbce1ee9</id>
 <updated>2022-05-09T15:18:00-05:00</updated>
 <published>2022-05-09T15:18:00-05:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Flood Warning issued May 09 at 3:18PM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MN1263F444A588.FloodWarning.1263F46307A8MN.FGFFLSFGF.a1a86bc7db9c10f6b9f7d771bbce1ee9"/>
+<title>Flood Warning issued May 09 at 3:18PM CDT until further notice by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MN1263F444A588.FloodWarning.1263F4608AF0MN.FGFFLSFGF.a1a86bc7db9c10f6b9f7d771bbce1ee9"/>
 <summary>...FLOOD WARNING REMAINS IN EFFECT UNTIL 645 PM CDT TUESDAY... * WHAT...Flooding caused by excessive rainfall continues. * WHERE...Portions of northwest Minnesota and northeast North Dakota, including the following counties, in northwest Minnesota, Marshall. In northeast North Dakota, Grand Forks and Walsh. * WHEN...Until 645 PM CDT Tuesday.</summary>
 <cap:event>Flood Warning</cap:event>
 <cap:effective>2022-05-09T15:18:00-05:00</cap:effective>
-<cap:expires>2022-05-11T14:30:00-05:00</cap:expires>
+<cap:expires>2022-05-10T22:00:00-05:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
 <cap:category>Met</cap:category>
@@ -6243,6 +6051,206 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=NC1263F4452A58.BeachHazardsStatement.1263F46015C0NC.MHXCFWMHX.81edd4f07478002c9fc29c91ecc297a7</id>
+<updated>2022-05-09T19:58:00-04:00</updated>
+<published>2022-05-09T19:58:00-04:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Beach Hazards Statement issued May 09 at 7:58PM EDT until May 10 at 8:00PM EDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=NC1263F4452A58.BeachHazardsStatement.1263F46015C0NC.MHXCFWMHX.81edd4f07478002c9fc29c91ecc297a7"/>
+<summary>...BEACH HAZARDS STATEMENT NOW IN EFFECT THROUGH TUESDAY EVENING... ...COASTAL FLOOD ADVISORY REMAINS IN EFFECT UNTIL 8 PM EDT WEDNESDAY... * WHAT...For the Coastal Flood Advisory, 1 to 3 feet of inundation above ground level in low-lying areas near</summary>
+<cap:event>Beach Hazards Statement</cap:event>
+<cap:effective>2022-05-09T19:58:00-04:00</cap:effective>
+<cap:expires>2022-05-10T20:00:00-04:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>East Carteret; Ocracoke Island</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>037031 037095</value>
+<valueName>UGC</valueName>
+<value>NCZ196 NCZ204</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.EXT.KMHX.BH.S.0007.000000T0000Z-220511T0000Z/
+/O.CON.KMHX.CF.Y.0011.000000T0000Z-220512T0000Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=NC1263F4452A58.BeachHazardsStatement.1263F46015C0NC.MHXCFWMHX.5785e5f3e3dad0d258bbd4e178f60ebb</id>
+<updated>2022-05-09T19:58:00-04:00</updated>
+<published>2022-05-09T19:58:00-04:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Beach Hazards Statement issued May 09 at 7:58PM EDT until May 10 at 8:00PM EDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=NC1263F4452A58.BeachHazardsStatement.1263F46015C0NC.MHXCFWMHX.5785e5f3e3dad0d258bbd4e178f60ebb"/>
+<summary>...BEACH HAZARDS STATEMENT NOW IN EFFECT THROUGH TUESDAY EVENING... ...COASTAL FLOOD WARNING REMAINS IN EFFECT UNTIL 6 AM EDT THURSDAY... ...HIGH SURF ADVISORY REMAINS IN EFFECT UNTIL 8 AM EDT THURSDAY... * WHAT...For the Coastal Flood Warning, 2 to 4 feet of</summary>
+<cap:event>Beach Hazards Statement</cap:event>
+<cap:effective>2022-05-09T19:58:00-04:00</cap:effective>
+<cap:expires>2022-05-10T20:00:00-04:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Hatteras Island; Northern Outer Banks</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>037055</value>
+<valueName>UGC</valueName>
+<value>NCZ203 NCZ205</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.EXT.KMHX.BH.S.0007.000000T0000Z-220511T0000Z/
+/O.CON.KMHX.CF.W.0002.000000T0000Z-220512T1000Z/
+/O.CON.KMHX.SU.Y.0010.000000T0000Z-220512T1200Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=NC1263F4452A58.CoastalFloodAdvisory.1263F46F5800NC.MHXCFWMHX.11e852831a1c6511da7181217e111737</id>
+<updated>2022-05-09T19:58:00-04:00</updated>
+<published>2022-05-09T19:58:00-04:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Coastal Flood Advisory issued May 09 at 7:58PM EDT until May 11 at 8:00PM EDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=NC1263F4452A58.CoastalFloodAdvisory.1263F46F5800NC.MHXCFWMHX.11e852831a1c6511da7181217e111737"/>
+<summary>...COASTAL FLOOD ADVISORY REMAINS IN EFFECT UNTIL 8 PM EDT WEDNESDAY... * WHAT...1 to 3 feet of inundation above ground level expected in low-lying areas near shorelines and tidal waterways. * WHERE...Areas along the southern Pamlico Sound, Trent, Bay and lower Neuse Rivers, and adjacent tidal creeks.</summary>
+<cap:event>Coastal Flood Advisory</cap:event>
+<cap:effective>2022-05-09T19:58:00-04:00</cap:effective>
+<cap:expires>2022-05-11T20:00:00-04:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Pamlico; Southern Craven</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>037049 037137</value>
+<valueName>UGC</valueName>
+<value>NCZ094 NCZ194</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KMHX.CF.Y.0011.000000T0000Z-220512T0000Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=NC1263F4452A58.CoastalFloodAdvisory.1263F46F5800NC.MHXCFWMHX.b17679db2d3bd944d4c0a5995f53a60d</id>
+<updated>2022-05-09T19:58:00-04:00</updated>
+<published>2022-05-09T19:58:00-04:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Coastal Flood Advisory issued May 09 at 7:58PM EDT until May 11 at 8:00PM EDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=NC1263F4452A58.CoastalFloodAdvisory.1263F46F5800NC.MHXCFWMHX.b17679db2d3bd944d4c0a5995f53a60d"/>
+<summary>...BEACH HAZARDS STATEMENT NOW IN EFFECT THROUGH TUESDAY EVENING... ...COASTAL FLOOD ADVISORY REMAINS IN EFFECT UNTIL 8 PM EDT WEDNESDAY... * WHAT...For the Coastal Flood Advisory, 1 to 3 feet of inundation above ground level in low-lying areas near</summary>
+<cap:event>Coastal Flood Advisory</cap:event>
+<cap:effective>2022-05-09T19:58:00-04:00</cap:effective>
+<cap:expires>2022-05-11T20:00:00-04:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>East Carteret; Ocracoke Island</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>037031 037095</value>
+<valueName>UGC</valueName>
+<value>NCZ196 NCZ204</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.EXT.KMHX.BH.S.0007.000000T0000Z-220511T0000Z/
+/O.CON.KMHX.CF.Y.0011.000000T0000Z-220512T0000Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=NC1263F4452A58.CoastalFloodWarning.1263F470DEA0NC.MHXCFWMHX.4f7b39c52d689be1cd552415b7a7a900</id>
+<updated>2022-05-09T19:58:00-04:00</updated>
+<published>2022-05-09T19:58:00-04:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Coastal Flood Warning issued May 09 at 7:58PM EDT until May 12 at 6:00AM EDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=NC1263F4452A58.CoastalFloodWarning.1263F470DEA0NC.MHXCFWMHX.4f7b39c52d689be1cd552415b7a7a900"/>
+<summary>...BEACH HAZARDS STATEMENT NOW IN EFFECT THROUGH TUESDAY EVENING... ...COASTAL FLOOD WARNING REMAINS IN EFFECT UNTIL 6 AM EDT THURSDAY... ...HIGH SURF ADVISORY REMAINS IN EFFECT UNTIL 8 AM EDT THURSDAY... * WHAT...For the Coastal Flood Warning, 2 to 4 feet of</summary>
+<cap:event>Coastal Flood Warning</cap:event>
+<cap:effective>2022-05-09T19:58:00-04:00</cap:effective>
+<cap:expires>2022-05-12T06:00:00-04:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Hatteras Island; Northern Outer Banks</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>037055</value>
+<valueName>UGC</valueName>
+<value>NCZ203 NCZ205</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.EXT.KMHX.BH.S.0007.000000T0000Z-220511T0000Z/
+/O.CON.KMHX.CF.W.0002.000000T0000Z-220512T1000Z/
+/O.CON.KMHX.SU.Y.0010.000000T0000Z-220512T1200Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=NC1263F4452A58.HighSurfAdvisory.1263F4712CC0NC.MHXCFWMHX.47b20f293f195666e8739cf3971ac8ec</id>
+<updated>2022-05-09T19:58:00-04:00</updated>
+<published>2022-05-09T19:58:00-04:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>High Surf Advisory issued May 09 at 7:58PM EDT until May 12 at 8:00AM EDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=NC1263F4452A58.HighSurfAdvisory.1263F4712CC0NC.MHXCFWMHX.47b20f293f195666e8739cf3971ac8ec"/>
+<summary>...BEACH HAZARDS STATEMENT NOW IN EFFECT THROUGH TUESDAY EVENING... ...COASTAL FLOOD WARNING REMAINS IN EFFECT UNTIL 6 AM EDT THURSDAY... ...HIGH SURF ADVISORY REMAINS IN EFFECT UNTIL 8 AM EDT THURSDAY... * WHAT...For the Coastal Flood Warning, 2 to 4 feet of</summary>
+<cap:event>High Surf Advisory</cap:event>
+<cap:effective>2022-05-09T19:58:00-04:00</cap:effective>
+<cap:expires>2022-05-12T08:00:00-04:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Hatteras Island; Northern Outer Banks</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>037055</value>
+<valueName>UGC</valueName>
+<value>NCZ203 NCZ205</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.EXT.KMHX.BH.S.0007.000000T0000Z-220511T0000Z/
+/O.CON.KMHX.CF.W.0002.000000T0000Z-220512T1000Z/
+/O.CON.KMHX.SU.Y.0010.000000T0000Z-220512T1200Z/</value>
+</cap:parameter>
+</entry>
+<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=NC1263F444A6B4.CoastalFloodWarning.1263F452A840NC.AKQCFWAKQ.ad3a963c175f226281c1ccd56077a998</id>
 <updated>2022-05-09T16:21:00-04:00</updated>
 <published>2022-05-09T16:21:00-04:00</published>
@@ -6341,206 +6349,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=NC1263F4447838.BeachHazardsStatement.1263F450D380NC.MHXCFWMHX.81edd4f07478002c9fc29c91ecc297a7</id>
-<updated>2022-05-09T15:02:00-04:00</updated>
-<published>2022-05-09T15:02:00-04:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Beach Hazards Statement issued May 09 at 3:02PM EDT until May 09 at 8:00PM EDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=NC1263F4447838.BeachHazardsStatement.1263F450D380NC.MHXCFWMHX.81edd4f07478002c9fc29c91ecc297a7"/>
-<summary>...COASTAL FLOOD ADVISORY NOW IN EFFECT UNTIL 8 PM EDT WEDNESDAY... ...BEACH HAZARDS STATEMENT REMAINS IN EFFECT UNTIL 8 PM EDT THIS EVENING... * WHAT...For the Coastal Flood Advisory, 1 to 3 feet of inundation above ground level in low-lying areas near</summary>
-<cap:event>Beach Hazards Statement</cap:event>
-<cap:effective>2022-05-09T15:02:00-04:00</cap:effective>
-<cap:expires>2022-05-09T20:00:00-04:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>East Carteret; Ocracoke Island</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>037031 037095</value>
-<valueName>UGC</valueName>
-<value>NCZ196 NCZ204</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.EXT.KMHX.CF.Y.0011.000000T0000Z-220512T0000Z/
-/O.CON.KMHX.BH.S.0007.000000T0000Z-220510T0000Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=NC1263F4447838.BeachHazardsStatement.1263F450D380NC.MHXCFWMHX.5785e5f3e3dad0d258bbd4e178f60ebb</id>
-<updated>2022-05-09T15:02:00-04:00</updated>
-<published>2022-05-09T15:02:00-04:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Beach Hazards Statement issued May 09 at 3:02PM EDT until May 09 at 8:00PM EDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=NC1263F4447838.BeachHazardsStatement.1263F450D380NC.MHXCFWMHX.5785e5f3e3dad0d258bbd4e178f60ebb"/>
-<summary>...HIGH SURF ADVISORY NOW IN EFFECT UNTIL 8 AM EDT THURSDAY... ...COASTAL FLOOD WARNING REMAINS IN EFFECT UNTIL 6 AM EDT THURSDAY... ...BEACH HAZARDS STATEMENT REMAINS IN EFFECT UNTIL 8 PM EDT THIS EVENING... * WHAT...For the Coastal Flood Warning, 2 to 4 feet of</summary>
-<cap:event>Beach Hazards Statement</cap:event>
-<cap:effective>2022-05-09T15:02:00-04:00</cap:effective>
-<cap:expires>2022-05-09T20:00:00-04:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Hatteras Island; Northern Outer Banks</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>037055</value>
-<valueName>UGC</valueName>
-<value>NCZ203 NCZ205</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.EXT.KMHX.SU.Y.0010.000000T0000Z-220512T1200Z/
-/O.CON.KMHX.CF.W.0002.000000T0000Z-220512T1000Z/
-/O.CON.KMHX.BH.S.0007.000000T0000Z-220510T0000Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=NC1263F4447838.CoastalFloodAdvisory.1263F46F5800NC.MHXCFWMHX.11e852831a1c6511da7181217e111737</id>
-<updated>2022-05-09T15:02:00-04:00</updated>
-<published>2022-05-09T15:02:00-04:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Coastal Flood Advisory issued May 09 at 3:02PM EDT until May 11 at 8:00PM EDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=NC1263F4447838.CoastalFloodAdvisory.1263F46F5800NC.MHXCFWMHX.11e852831a1c6511da7181217e111737"/>
-<summary>...COASTAL FLOOD ADVISORY NOW IN EFFECT UNTIL 8 PM EDT WEDNESDAY... * WHAT...1 to 3 feet of inundation above ground level expected in low-lying areas near shorelines and tidal waterways. * WHERE...Areas along the southern Pamlico Sound, Trent, Bay and lower Neuse Rivers, and adjacent tidal creeks.</summary>
-<cap:event>Coastal Flood Advisory</cap:event>
-<cap:effective>2022-05-09T15:02:00-04:00</cap:effective>
-<cap:expires>2022-05-11T20:00:00-04:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Pamlico; Southern Craven</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>037049 037137</value>
-<valueName>UGC</valueName>
-<value>NCZ094 NCZ194</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.EXT.KMHX.CF.Y.0011.000000T0000Z-220512T0000Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=NC1263F4447838.CoastalFloodAdvisory.1263F46F5800NC.MHXCFWMHX.b17679db2d3bd944d4c0a5995f53a60d</id>
-<updated>2022-05-09T15:02:00-04:00</updated>
-<published>2022-05-09T15:02:00-04:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Coastal Flood Advisory issued May 09 at 3:02PM EDT until May 11 at 8:00PM EDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=NC1263F4447838.CoastalFloodAdvisory.1263F46F5800NC.MHXCFWMHX.b17679db2d3bd944d4c0a5995f53a60d"/>
-<summary>...COASTAL FLOOD ADVISORY NOW IN EFFECT UNTIL 8 PM EDT WEDNESDAY... ...BEACH HAZARDS STATEMENT REMAINS IN EFFECT UNTIL 8 PM EDT THIS EVENING... * WHAT...For the Coastal Flood Advisory, 1 to 3 feet of inundation above ground level in low-lying areas near</summary>
-<cap:event>Coastal Flood Advisory</cap:event>
-<cap:effective>2022-05-09T15:02:00-04:00</cap:effective>
-<cap:expires>2022-05-11T20:00:00-04:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>East Carteret; Ocracoke Island</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>037031 037095</value>
-<valueName>UGC</valueName>
-<value>NCZ196 NCZ204</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.EXT.KMHX.CF.Y.0011.000000T0000Z-220512T0000Z/
-/O.CON.KMHX.BH.S.0007.000000T0000Z-220510T0000Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=NC1263F4447838.CoastalFloodWarning.1263F470DEA0NC.MHXCFWMHX.4f7b39c52d689be1cd552415b7a7a900</id>
-<updated>2022-05-09T15:02:00-04:00</updated>
-<published>2022-05-09T15:02:00-04:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Coastal Flood Warning issued May 09 at 3:02PM EDT until May 12 at 6:00AM EDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=NC1263F4447838.CoastalFloodWarning.1263F470DEA0NC.MHXCFWMHX.4f7b39c52d689be1cd552415b7a7a900"/>
-<summary>...HIGH SURF ADVISORY NOW IN EFFECT UNTIL 8 AM EDT THURSDAY... ...COASTAL FLOOD WARNING REMAINS IN EFFECT UNTIL 6 AM EDT THURSDAY... ...BEACH HAZARDS STATEMENT REMAINS IN EFFECT UNTIL 8 PM EDT THIS EVENING... * WHAT...For the Coastal Flood Warning, 2 to 4 feet of</summary>
-<cap:event>Coastal Flood Warning</cap:event>
-<cap:effective>2022-05-09T15:02:00-04:00</cap:effective>
-<cap:expires>2022-05-12T06:00:00-04:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Hatteras Island; Northern Outer Banks</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>037055</value>
-<valueName>UGC</valueName>
-<value>NCZ203 NCZ205</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.EXT.KMHX.SU.Y.0010.000000T0000Z-220512T1200Z/
-/O.CON.KMHX.CF.W.0002.000000T0000Z-220512T1000Z/
-/O.CON.KMHX.BH.S.0007.000000T0000Z-220510T0000Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=NC1263F4447838.HighSurfAdvisory.1263F4712CC0NC.MHXCFWMHX.47b20f293f195666e8739cf3971ac8ec</id>
-<updated>2022-05-09T15:02:00-04:00</updated>
-<published>2022-05-09T15:02:00-04:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>High Surf Advisory issued May 09 at 3:02PM EDT until May 12 at 8:00AM EDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=NC1263F4447838.HighSurfAdvisory.1263F4712CC0NC.MHXCFWMHX.47b20f293f195666e8739cf3971ac8ec"/>
-<summary>...HIGH SURF ADVISORY NOW IN EFFECT UNTIL 8 AM EDT THURSDAY... ...COASTAL FLOOD WARNING REMAINS IN EFFECT UNTIL 6 AM EDT THURSDAY... ...BEACH HAZARDS STATEMENT REMAINS IN EFFECT UNTIL 8 PM EDT THIS EVENING... * WHAT...For the Coastal Flood Warning, 2 to 4 feet of</summary>
-<cap:event>High Surf Advisory</cap:event>
-<cap:effective>2022-05-09T15:02:00-04:00</cap:effective>
-<cap:expires>2022-05-12T08:00:00-04:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Hatteras Island; Northern Outer Banks</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>037055</value>
-<valueName>UGC</valueName>
-<value>NCZ203 NCZ205</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.EXT.KMHX.SU.Y.0010.000000T0000Z-220512T1200Z/
-/O.CON.KMHX.CF.W.0002.000000T0000Z-220512T1000Z/
-/O.CON.KMHX.BH.S.0007.000000T0000Z-220510T0000Z/</value>
-</cap:parameter>
-</entry>
-<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=NC1263F44461F4.WindAdvisory.1263F45455F0NC.MHXNPWMHX.48107701aaa8fa09f6896be9dd0639a3</id>
 <updated>2022-05-09T14:45:00-04:00</updated>
 <published>2022-05-09T14:45:00-04:00</published>
@@ -6570,72 +6378,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value>/O.EXT.KMHX.WI.Y.0009.000000T0000Z-220510T2300Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=NC1263F4440560.BeachHazardsStatement.1263F450D380NC.ILMCFWILM.da250bedd92e2ba8a34871257f06d0c4</id>
-<updated>2022-05-09T12:08:00-04:00</updated>
-<published>2022-05-09T12:08:00-04:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Beach Hazards Statement issued May 09 at 12:08PM EDT until May 09 at 8:00PM EDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=NC1263F4440560.BeachHazardsStatement.1263F450D380NC.ILMCFWILM.da250bedd92e2ba8a34871257f06d0c4"/>
-<summary>...BEACH HAZARDS STATEMENT REMAINS IN EFFECT UNTIL 8 PM EDT THIS EVENING... ...HIGH RIP CURRENT RISK REMAINS IN EFFECT UNTIL 8 PM EDT THIS EVENING... * WHAT...For the Beach Hazards Statement, Strong north to south longshore current. For the High Rip Current Risk, dangerous rip currents.</summary>
-<cap:event>Beach Hazards Statement</cap:event>
-<cap:effective>2022-05-09T12:08:00-04:00</cap:effective>
-<cap:expires>2022-05-09T20:00:00-04:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Coastal New Hanover; Coastal Pender</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>037129 037141</value>
-<valueName>UGC</valueName>
-<value>NCZ106 NCZ108</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KILM.BH.S.0010.000000T0000Z-220510T0000Z/
-/O.CON.KILM.RP.S.0002.000000T0000Z-220510T0000Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=NC1263F4440560.RipCurrentStatement.1263F450D380NC.ILMCFWILM.53aaa207e6f2e67473b97a0353e26a1c</id>
-<updated>2022-05-09T12:08:00-04:00</updated>
-<published>2022-05-09T12:08:00-04:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Rip Current Statement issued May 09 at 12:08PM EDT until May 09 at 8:00PM EDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=NC1263F4440560.RipCurrentStatement.1263F450D380NC.ILMCFWILM.53aaa207e6f2e67473b97a0353e26a1c"/>
-<summary>...BEACH HAZARDS STATEMENT REMAINS IN EFFECT UNTIL 8 PM EDT THIS EVENING... ...HIGH RIP CURRENT RISK REMAINS IN EFFECT UNTIL 8 PM EDT THIS EVENING... * WHAT...For the Beach Hazards Statement, Strong north to south longshore current. For the High Rip Current Risk, dangerous rip currents.</summary>
-<cap:event>Rip Current Statement</cap:event>
-<cap:effective>2022-05-09T12:08:00-04:00</cap:effective>
-<cap:expires>2022-05-09T20:00:00-04:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Coastal New Hanover; Coastal Pender</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>037129 037141</value>
-<valueName>UGC</valueName>
-<value>NCZ106 NCZ108</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KILM.BH.S.0010.000000T0000Z-220510T0000Z/
-/O.CON.KILM.RP.S.0002.000000T0000Z-220510T0000Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -8319,38 +8061,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=NM1263F44451F0.HighWindWarning.1263F450D380NM.MAFNPWMAF.686427ddbcf42ad2aaa73fe83009282e</id>
-<updated>2022-05-09T12:04:00-06:00</updated>
-<published>2022-05-09T12:04:00-06:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>High Wind Warning issued May 09 at 12:04PM MDT until May 09 at 6:00PM MDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=NM1263F44451F0.HighWindWarning.1263F450D380NM.MAFNPWMAF.686427ddbcf42ad2aaa73fe83009282e"/>
-<summary>...HIGH WIND WARNING REMAINS IN EFFECT UNTIL 7 PM CDT /6 PM MDT/ THIS EVENING... * WHAT...West winds 35 to 45 mph with gusts up to 65 mph. * WHERE...Guadalupe and Delaware Mountains. * WHEN...Until 7 PM CDT /6 PM MDT/ this evening. * IMPACTS...High winds could make driving difficult for motorists</summary>
-<cap:event>High Wind Warning</cap:event>
-<cap:effective>2022-05-09T12:04:00-06:00</cap:effective>
-<cap:expires>2022-05-09T18:00:00-06:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Severe</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Guadalupe Mountains of Eddy County</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>035015</value>
-<valueName>UGC</valueName>
-<value>NMZ027</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KMAF.HW.W.0029.000000T0000Z-220510T0000Z/</value>
-</cap:parameter>
-</entry>
-<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=NM1263F4443DA0.HighWindWarning.1263F45121A0NM.ABQNPWABQ.e286c96e6cbcf80785b85eb41cdb8d6e</id>
 <updated>2022-05-09T11:52:00-06:00</updated>
 <published>2022-05-09T11:52:00-06:00</published>
@@ -8572,102 +8282,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value>/O.CON.KALY.FR.Y.0003.220510T0500Z-220510T1100Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=NY1263F443190C.SpecialWeatherStatement.1263F450D380NY.BGMSPSBGM.3057f47a83dbe6fe128335d6b6893c47</id>
-<updated>2022-05-09T06:03:00-04:00</updated>
-<published>2022-05-09T06:03:00-04:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Special Weather Statement issued May 09 at 6:03AM EDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=NY1263F443190C.SpecialWeatherStatement.1263F450D380NY.BGMSPSBGM.3057f47a83dbe6fe128335d6b6893c47"/>
-<summary>...ELEVATED RISK OF WILDFIRE SPREAD TODAY IN CENTRAL NEW YORK... The combination of relative humidity values between 15 to 25 percent this afternoon, east-northeast winds gusting up to 15 mph and very dry conditions recently will lead to an elevated risk for wildfire spread today across portions of central NY. The annual statewide burn ban is in effect until May 14th. No</summary>
-<cap:event>Special Weather Statement</cap:event>
-<cap:effective>2022-05-09T06:03:00-04:00</cap:effective>
-<cap:expires>2022-05-09T20:00:00-04:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Observed</cap:certainty>
-<cap:areaDesc>Madison; Northern Oneida; Onondaga; Otsego; Southern Oneida</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>036053 036065 036067 036077</value>
-<valueName>UGC</valueName>
-<value>NYZ009 NYZ018 NYZ036 NYZ037 NYZ046</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value></value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=NY1263F442F51C.SpecialWeatherStatement.1263F450D380NY.BTVSPSBTV.8eb1a23e997d783a419509e3990149b3</id>
-<updated>2022-05-09T05:11:00-04:00</updated>
-<published>2022-05-09T05:11:00-04:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Special Weather Statement issued May 09 at 5:11AM EDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=NY1263F442F51C.SpecialWeatherStatement.1263F450D380NY.BTVSPSBTV.8eb1a23e997d783a419509e3990149b3"/>
-<summary>...Fire Weather Concerns Across Northern New York Today... The combination of relative humidity values dropping to 20 to 30 percent, winds gusting up to around 20 miles per hour, and dry fuels will contribute to wildfire spread today across northern New York. The annual statewide burn ban is in effect until May 14. No burn permits are issued.</summary>
-<cap:event>Special Weather Statement</cap:event>
-<cap:effective>2022-05-09T05:11:00-04:00</cap:effective>
-<cap:expires>2022-05-09T20:00:00-04:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Observed</cap:certainty>
-<cap:areaDesc>Eastern Clinton; Eastern Essex; Northern Franklin; Northern St. Lawrence; Southeastern St. Lawrence; Southern Franklin; Southwestern St. Lawrence; Western Clinton; Western Essex</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>036019 036031 036033 036089</value>
-<valueName>UGC</valueName>
-<value>NYZ026 NYZ027 NYZ028 NYZ029 NYZ030 NYZ031 NYZ034 NYZ035 NYZ087</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value></value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=NY1263F442A9B8.SpecialWeatherStatement.1263F450D380NY.ALYSPSALY.d488691b3a1376caa7bc4526b5950202</id>
-<updated>2022-05-09T03:18:00-04:00</updated>
-<published>2022-05-09T03:18:00-04:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Special Weather Statement issued May 09 at 3:18AM EDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=NY1263F442A9B8.SpecialWeatherStatement.1263F450D380NY.ALYSPSALY.d488691b3a1376caa7bc4526b5950202"/>
-<summary>...ELEVATED RISK OF WILDFIRE SPREAD TODAY IN EASTERN NEW YORK... The combination of relative humidity values dropping to 15 to 25 percent, winds gusting up to 25 miles per hour, and dry fuels will contribute to an elevated risk of wildfire spread today for all of eastern New York. The annual statewide burn ban is in effect until May 14. No burn</summary>
-<cap:event>Special Weather Statement</cap:event>
-<cap:effective>2022-05-09T03:18:00-04:00</cap:effective>
-<cap:expires>2022-05-09T20:00:00-04:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Observed</cap:certainty>
-<cap:areaDesc>Eastern Albany; Eastern Columbia; Eastern Dutchess; Eastern Greene; Eastern Rensselaer; Eastern Schenectady; Eastern Ulster; Hamilton; Montgomery; Northern Fulton; Northern Herkimer; Northern Saratoga; Northern Warren; Northern Washington; Schoharie; Southeast Warren; Southern Fulton; Southern Herkimer; Southern Saratoga; Southern Washington; Western Albany; Western Columbia; Western Dutchess; Western Greene; Western Rensselaer; Western Schenectady; Western Ulster</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>036001 036021 036027 036035 036039 036041 036043 036057 036083 036091 036093 036095 036111 036113 036115</value>
-<valueName>UGC</valueName>
-<value>NYZ032 NYZ033 NYZ038 NYZ039 NYZ040 NYZ041 NYZ042 NYZ043 NYZ047 NYZ048 NYZ049 NYZ050 NYZ051 NYZ052 NYZ053 NYZ054 NYZ058 NYZ059 NYZ060 NYZ061 NYZ063 NYZ064 NYZ065 NYZ066 NYZ082 NYZ083 NYZ084</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value></value>
 </cap:parameter>
 </entry>
 <entry>
@@ -9094,102 +8708,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <value>/O.UPG.KMFR.FZ.A.0006.220510T0800Z-220510T1500Z/
 /O.NEW.KMFR.FZ.W.0007.220510T0600Z-220510T1600Z/
 /O.NEW.KMFR.FZ.A.0007.220511T0600Z-220511T1600Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=RI1263F442CE0C.SpecialWeatherStatement.1263F450D380RI.BOXSPSBOX.86dd59aa9e505196ea530be9e5857b3e</id>
-<updated>2022-05-09T04:11:00-04:00</updated>
-<published>2022-05-09T04:11:00-04:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Special Weather Statement issued May 09 at 4:11AM EDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=RI1263F442CE0C.SpecialWeatherStatement.1263F450D380RI.BOXSPSBOX.86dd59aa9e505196ea530be9e5857b3e"/>
-<summary>...ELEVATED FIRE WEATHER CONCERNS TODAY FOR NORTHERN CONNECTICUT, NORTHERN RHODE ISLAND AND INTERIOR MASSACHUSETTS... A very dry airmass combined with gusty winds will result in elevated fire weather concerns today. Specifically, northeast winds will gust to 20 to 30 mph. Minimum relative humidities will be 15 to 25 percent in northern CT and central and western</summary>
-<cap:event>Special Weather Statement</cap:event>
-<cap:effective>2022-05-09T04:11:00-04:00</cap:effective>
-<cap:expires>2022-05-09T20:00:00-04:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Observed</cap:certainty>
-<cap:areaDesc>Eastern Kent; Northwest Providence; Southeast Providence; Western Kent</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>044003 044007</value>
-<valueName>UGC</valueName>
-<value>RIZ001 RIZ002 RIZ003 RIZ004</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value></value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=SC1263F4440560.BeachHazardsStatement.1263F450D380SC.ILMCFWILM.beb3cfc4a1d5a734dd469dcb79206096</id>
-<updated>2022-05-09T12:08:00-04:00</updated>
-<published>2022-05-09T12:08:00-04:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Beach Hazards Statement issued May 09 at 12:08PM EDT until May 09 at 8:00PM EDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=SC1263F4440560.BeachHazardsStatement.1263F450D380SC.ILMCFWILM.beb3cfc4a1d5a734dd469dcb79206096"/>
-<summary>...BEACH HAZARDS STATEMENT REMAINS IN EFFECT UNTIL 8 PM EDT THIS EVENING... * WHAT...Strong north to south longshore current and a moderate risk of rip currents are both expected especially south of Myrtle Beach. * WHERE...Coastal Horry County.</summary>
-<cap:event>Beach Hazards Statement</cap:event>
-<cap:effective>2022-05-09T12:08:00-04:00</cap:effective>
-<cap:expires>2022-05-09T20:00:00-04:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Coastal Horry</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>045051</value>
-<valueName>UGC</valueName>
-<value>SCZ054</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KILM.BH.S.0010.000000T0000Z-220510T0000Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=SC1263F4440560.BeachHazardsStatement.1263F450D380SC.ILMCFWILM.8599f13d602f324fab1f364eb5be3ae9</id>
-<updated>2022-05-09T12:08:00-04:00</updated>
-<published>2022-05-09T12:08:00-04:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Beach Hazards Statement issued May 09 at 12:08PM EDT until May 09 at 8:00PM EDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=SC1263F4440560.BeachHazardsStatement.1263F450D380SC.ILMCFWILM.8599f13d602f324fab1f364eb5be3ae9"/>
-<summary>...BEACH HAZARDS STATEMENT REMAINS IN EFFECT UNTIL 8 PM EDT THIS EVENING... * WHAT...Strong north to south longshore current and a moderate risk of rip currents are both expected. * WHERE...Coastal Georgetown County. * WHEN...Until 8 PM EDT this evening.</summary>
-<cap:event>Beach Hazards Statement</cap:event>
-<cap:effective>2022-05-09T12:08:00-04:00</cap:effective>
-<cap:expires>2022-05-09T20:00:00-04:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Coastal Georgetown</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>045043</value>
-<valueName>UGC</valueName>
-<value>SCZ056</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KILM.BH.S.0010.000000T0000Z-220510T0000Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -9779,38 +9297,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=TX1263F44451F0.HighWindWarning.1263F450D380TX.MAFNPWMAF.bf99b7bae680bbb6a7ed0880a9c49feb</id>
-<updated>2022-05-09T13:04:00-05:00</updated>
-<published>2022-05-09T13:04:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>High Wind Warning issued May 09 at 1:04PM CDT until May 09 at 7:00PM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=TX1263F44451F0.HighWindWarning.1263F450D380TX.MAFNPWMAF.bf99b7bae680bbb6a7ed0880a9c49feb"/>
-<summary>...HIGH WIND WARNING REMAINS IN EFFECT UNTIL 7 PM CDT /6 PM MDT/ THIS EVENING... * WHAT...West winds 35 to 45 mph with gusts up to 65 mph. * WHERE...Guadalupe and Delaware Mountains. * WHEN...Until 7 PM CDT /6 PM MDT/ this evening. * IMPACTS...High winds could make driving difficult for motorists</summary>
-<cap:event>High Wind Warning</cap:event>
-<cap:effective>2022-05-09T13:04:00-05:00</cap:effective>
-<cap:expires>2022-05-09T19:00:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Severe</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Guadalupe Mountains Above 7000 Feet; Guadalupe and Delaware Mountains</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>048109</value>
-<valueName>UGC</valueName>
-<value>TXZ270 TXZ271</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KMAF.HW.W.0029.000000T0000Z-220510T0000Z/</value>
-</cap:parameter>
-</entry>
-<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=TX1263F44451F0.HeatAdvisory.1263F450FA90TX.MAFNPWMAF.05f8d6ab7b7c446146a466ef8b8f5cb5</id>
 <updated>2022-05-09T13:04:00-05:00</updated>
 <published>2022-05-09T13:04:00-05:00</published>
@@ -9969,38 +9455,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value>/O.COR.KCRP.HT.Y.0003.220509T1800Z-220510T0100Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=TX1263F443190C.SpecialWeatherStatement.1263F450D380TX.EWXSPSEWX.bf391f2e627b7983bad144680d77a5d2</id>
-<updated>2022-05-09T05:03:00-05:00</updated>
-<published>2022-05-09T05:03:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Special Weather Statement issued May 09 at 5:03AM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=TX1263F443190C.SpecialWeatherStatement.1263F450D380TX.EWXSPSEWX.bf391f2e627b7983bad144680d77a5d2"/>
-<summary>...UNSEASONABLY HOT WEATHER TO CONTINUE TODAY... An early warm season heat wave will continue today with high temperatures climbing into the mid 90s to near 103 across much of the area. High humidities over the region will lead to even higher heat index values that could reach the upper 90s to near 108 across most locations. Should conditions warrant, a Heat</summary>
-<cap:event>Special Weather Statement</cap:event>
-<cap:effective>2022-05-09T05:03:00-05:00</cap:effective>
-<cap:expires>2022-05-09T19:00:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Observed</cap:certainty>
-<cap:areaDesc>Atascosa; Bandera; Bastrop; Bexar; Blanco; Burnet; Caldwell; Comal; De Witt; Dimmit; Edwards; Fayette; Frio; Gillespie; Gonzales; Guadalupe; Hays; Karnes; Kendall; Kerr; Kinney; Lavaca; Lee; Llano; Maverick; Medina; Real; Travis; Uvalde; Val Verde; Williamson; Wilson; Zavala</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>048013 048019 048021 048029 048031 048053 048055 048091 048123 048127 048137 048149 048163 048171 048177 048187 048209 048255 048259 048265 048271 048285 048287 048299 048323 048325 048385 048453 048463 048465 048491 048493 048507</value>
-<valueName>UGC</valueName>
-<value>TXZ171 TXZ172 TXZ173 TXZ183 TXZ184 TXZ185 TXZ186 TXZ187 TXZ188 TXZ189 TXZ190 TXZ191 TXZ192 TXZ193 TXZ194 TXZ202 TXZ203 TXZ204 TXZ205 TXZ206 TXZ207 TXZ208 TXZ209 TXZ217 TXZ218 TXZ219 TXZ220 TXZ221 TXZ222 TXZ223 TXZ224 TXZ225 TXZ228</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value></value>
 </cap:parameter>
 </entry>
 <entry>
@@ -10752,31 +10206,95 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=WI1263F4451FCC.SpecialWeatherStatement.1263F450D380WI.DLHSPSDLH.8f6e487ef5dc1ab7fb9f2feaaf259f2e</id>
-<updated>2022-05-09T18:31:00-05:00</updated>
-<published>2022-05-09T18:31:00-05:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=WI1263F450D7CC.SevereThunderstormWarning.1263F450DF38WI.DLHSVSDLH.fb7e1b3202f70cbb119811d7b24531a7</id>
+<updated>2022-05-09T19:11:00-05:00</updated>
+<published>2022-05-09T19:11:00-05:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Special Weather Statement issued May 09 at 6:31PM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=WI1263F4451FCC.SpecialWeatherStatement.1263F450D380WI.DLHSPSDLH.8f6e487ef5dc1ab7fb9f2feaaf259f2e"/>
-<summary>...Strong thunderstorms will impact portions of northeastern Pine, southeastern St. Louis, eastern Carlton and northwestern Douglas Counties through 700 PM CDT... At 631 PM CDT, Doppler radar was tracking strong thunderstorms along a line extending from Wisconsin Point, to 9 miles northwest of Cloverton, moving northeast at 50 mph.</summary>
+<title>Severe Thunderstorm Warning issued May 09 at 7:11PM CDT until May 09 at 7:30PM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=WI1263F450D7CC.SevereThunderstormWarning.1263F450DF38WI.DLHSVSDLH.fb7e1b3202f70cbb119811d7b24531a7"/>
+<summary>...A SEVERE THUNDERSTORM WARNING REMAINS IN EFFECT UNTIL 730 PM CDT FOR SOUTHEASTERN WASHBURN COUNTY... At 711 PM CDT, a severe thunderstorm was located 8 miles east of Shell Lake, or 8 miles southeast of Spooner, moving northeast at 30 mph. HAZARD...60 mph wind gusts and quarter size hail.</summary>
+<cap:event>Severe Thunderstorm Warning</cap:event>
+<cap:effective>2022-05-09T19:11:00-05:00</cap:effective>
+<cap:expires>2022-05-09T19:30:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Immediate</cap:urgency>
+<cap:severity>Severe</cap:severity>
+<cap:certainty>Observed</cap:certainty>
+<cap:areaDesc>Washburn</cap:areaDesc>
+<cap:polygon>45.97,-91.54 45.77,-91.54 45.72,-91.74 45.88,-91.79 45.97,-91.54</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>055129</value>
+<valueName>UGC</valueName>
+<value>WIC129</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KDLH.SV.W.0009.000000T0000Z-220510T0030Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=WI1263F450D7CC.SevereWeatherStatement.1263F450DF38WI.DLHSVSDLH.8e31c87493542909c88c5ebf0c6cd9f9</id>
+<updated>2022-05-09T19:11:00-05:00</updated>
+<published>2022-05-09T19:11:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Severe Weather Statement issued May 09 at 7:11PM CDT until May 09 at 7:30PM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=WI1263F450D7CC.SevereWeatherStatement.1263F450DF38WI.DLHSVSDLH.8e31c87493542909c88c5ebf0c6cd9f9"/>
+<summary>...A SEVERE THUNDERSTORM WARNING REMAINS IN EFFECT UNTIL 730 PM CDT FOR SOUTHEASTERN WASHBURN COUNTY... At 711 PM CDT, a severe thunderstorm was located 8 miles east of Shell Lake, or 8 miles southeast of Spooner, moving northeast at 30 mph. HAZARD...60 mph wind gusts and quarter size hail.</summary>
+<cap:event>Severe Weather Statement</cap:event>
+<cap:effective>2022-05-09T19:11:00-05:00</cap:effective>
+<cap:expires>2022-05-09T19:30:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Immediate</cap:urgency>
+<cap:severity>Severe</cap:severity>
+<cap:certainty>Observed</cap:certainty>
+<cap:areaDesc>Washburn</cap:areaDesc>
+<cap:polygon>45.97,-91.54 45.77,-91.54 45.72,-91.74 45.88,-91.79 45.97,-91.54</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>055129</value>
+<valueName>UGC</valueName>
+<value>WIC129</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KDLH.SV.W.0009.000000T0000Z-220510T0030Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=WI1263F450D768.SpecialWeatherStatement.1263F450E514WI.DLHSPSDLH.5232e4d64ec8e78fae808e78a5a6748a</id>
+<updated>2022-05-09T19:10:00-05:00</updated>
+<published>2022-05-09T19:10:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Special Weather Statement issued May 09 at 7:10PM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=WI1263F450D768.SpecialWeatherStatement.1263F450E514WI.DLHSPSDLH.5232e4d64ec8e78fae808e78a5a6748a"/>
+<summary>...A strong thunderstorm will impact portions of south central Bayfield, northeastern Washburn and northwestern Sawyer Counties through 745 PM CDT... At 710 PM CDT, Doppler radar was tracking a strong thunderstorm over Stone Lake, or 10 miles south of Hayward, moving northeast at 45 mph. HAZARD...Wind gusts up to 50 mph and penny size hail.</summary>
 <cap:event>Special Weather Statement</cap:event>
-<cap:effective>2022-05-09T18:31:00-05:00</cap:effective>
-<cap:expires>2022-05-09T19:00:00-05:00</cap:expires>
+<cap:effective>2022-05-09T19:10:00-05:00</cap:effective>
+<cap:expires>2022-05-09T19:45:00-05:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
 <cap:category>Met</cap:category>
 <cap:urgency>Expected</cap:urgency>
 <cap:severity>Minor</cap:severity>
 <cap:certainty>Observed</cap:certainty>
-<cap:areaDesc>Douglas</cap:areaDesc>
-<cap:polygon>46.76,-92.38 47.09,-91.53 47.05,-91.55 47,-91.6 46.98,-91.67 46.92,-91.74 46.87,-91.86 46.78,-92.03 46.72,-91.95 46.73,-91.8 46.77,-91.66 46.41,-91.81 46.28,-92.54 46.76,-92.38</cap:polygon>
+<cap:areaDesc>Bayfield; Sawyer; Washburn</cap:areaDesc>
+<cap:polygon>45.76,-91.54 45.96,-91.54 45.93,-91.66 46.08,-91.63 46.24,-91.09 45.9,-90.94 45.76,-91.54</cap:polygon>
 <cap:geocode>
 <valueName>FIPS6</valueName>
-<value>055031</value>
+<value>055007 055113 055129</value>
 <valueName>UGC</valueName>
-<value>WIZ001</value>
+<value>WIZ002 WIZ007 WIZ008</value>
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
@@ -10784,195 +10302,227 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=WI1263F4451EA0.SpecialWeatherStatement.1263F450D380WI.DLHSPSDLH.1964f14fd067be615cf36068f9113ff3</id>
-<updated>2022-05-09T18:28:00-05:00</updated>
-<published>2022-05-09T18:28:00-05:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=WI1263F450D6A0.TornadoWarning.1263F450E514WI.MPXTORMPX.95d4ad77da2c9a5b0e945a6bab9d86d6</id>
+<updated>2022-05-09T19:08:00-05:00</updated>
+<published>2022-05-09T19:08:00-05:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Special Weather Statement issued May 09 at 6:28PM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=WI1263F4451EA0.SpecialWeatherStatement.1263F450D380WI.DLHSPSDLH.1964f14fd067be615cf36068f9113ff3"/>
-<summary>...A strong thunderstorm will impact portions of Washburn, southeastern Burnett and western Sawyer Counties through 700 PM CDT... At 627 PM CDT, Doppler radar was tracking a strong thunderstorm near Shell Lake, or 9 miles southwest of Spooner, moving northeast at 60 mph.</summary>
-<cap:event>Special Weather Statement</cap:event>
-<cap:effective>2022-05-09T18:28:00-05:00</cap:effective>
-<cap:expires>2022-05-09T19:00:00-05:00</cap:expires>
+<title>Tornado Warning issued May 09 at 7:08PM CDT until May 09 at 7:45PM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=WI1263F450D6A0.TornadoWarning.1263F450E514WI.MPXTORMPX.95d4ad77da2c9a5b0e945a6bab9d86d6"/>
+<summary>The National Weather Service in the Twin Cities has issued a * Tornado Warning for... Northwestern Pepin County in west central Wisconsin... Southeastern Pierce County in west central Wisconsin... Southwestern Dunn County in west central Wisconsin... * Until 745 PM CDT.</summary>
+<cap:event>Tornado Warning</cap:event>
+<cap:effective>2022-05-09T19:08:00-05:00</cap:effective>
+<cap:expires>2022-05-09T19:45:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Immediate</cap:urgency>
+<cap:severity>Extreme</cap:severity>
+<cap:certainty>Observed</cap:certainty>
+<cap:areaDesc>Dunn; Pepin; Pierce</cap:areaDesc>
+<cap:polygon>44.59,-91.99 44.58,-92.03 44.57,-92.03 44.46,-92.25 44.5,-92.3 44.55,-92.32 44.83,-92.04 44.69,-91.8 44.59,-91.99</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>055033 055091 055093</value>
+<valueName>UGC</valueName>
+<value>WIC033 WIC091 WIC093</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.NEW.KMPX.TO.W.0009.220510T0008Z-220510T0045Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=WI1263F450D63C.SevereWeatherStatement.1263F450D95CWI.MPXSVSMPX.023f97ba6fb7801fb7bf19cc770c28ae</id>
+<updated>2022-05-09T19:07:00-05:00</updated>
+<published>2022-05-09T19:07:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Severe Weather Statement issued May 09 at 7:07PM CDT until May 09 at 7:15PM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=WI1263F450D63C.SevereWeatherStatement.1263F450D95CWI.MPXSVSMPX.023f97ba6fb7801fb7bf19cc770c28ae"/>
+<summary>...THE TORNADO WARNING FOR NORTHEASTERN DUNN COUNTY WILL EXPIRE AT 715 PM CDT... The storm which prompted the warning has weakened below severe limits, and no longer appears capable of producing a tornado. Therefore, the warning will be allowed to expire. A Tornado Watch remains in effect until 1000 PM CDT for west central</summary>
+<cap:event>Severe Weather Statement</cap:event>
+<cap:effective>2022-05-09T19:07:00-05:00</cap:effective>
+<cap:expires>2022-05-09T19:15:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Immediate</cap:urgency>
+<cap:severity>Severe</cap:severity>
+<cap:certainty>Observed</cap:certainty>
+<cap:areaDesc>Dunn</cap:areaDesc>
+<cap:polygon>45.01,-91.95 45.12,-91.98 45.19,-91.83 45.16,-91.73 45.09,-91.7 45.01,-91.95</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>055033</value>
+<valueName>UGC</valueName>
+<value>WIC033</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.EXP.KMPX.TO.W.0008.000000T0000Z-220510T0015Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=WI1263F450D63C.TornadoWarning.1263F450D95CWI.MPXSVSMPX.26b505d53e26d3b7e0df7aefec8ada23</id>
+<updated>2022-05-09T19:07:00-05:00</updated>
+<published>2022-05-09T19:07:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Tornado Warning issued May 09 at 7:07PM CDT until May 09 at 7:15PM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=WI1263F450D63C.TornadoWarning.1263F450D95CWI.MPXSVSMPX.26b505d53e26d3b7e0df7aefec8ada23"/>
+<summary>...THE TORNADO WARNING FOR NORTHEASTERN DUNN COUNTY WILL EXPIRE AT 715 PM CDT... The storm which prompted the warning has weakened below severe limits, and no longer appears capable of producing a tornado. Therefore, the warning will be allowed to expire. A Tornado Watch remains in effect until 1000 PM CDT for west central</summary>
+<cap:event>Tornado Warning</cap:event>
+<cap:effective>2022-05-09T19:07:00-05:00</cap:effective>
+<cap:expires>2022-05-09T19:15:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Immediate</cap:urgency>
+<cap:severity>Extreme</cap:severity>
+<cap:certainty>Observed</cap:certainty>
+<cap:areaDesc>Dunn</cap:areaDesc>
+<cap:polygon>45.01,-91.95 45.12,-91.98 45.19,-91.83 45.16,-91.73 45.09,-91.7 45.01,-91.95</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>055033</value>
+<valueName>UGC</valueName>
+<value>WIC033</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.EXP.KMPX.TO.W.0008.000000T0000Z-220510T0015Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=WI1263F44529F4.SevereThunderstormWarning.1263F450DF38WI.MPXSVRMPX.8c106d8d400c31f3ca3882013de539fb</id>
+<updated>2022-05-09T18:57:00-05:00</updated>
+<published>2022-05-09T18:57:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Severe Thunderstorm Warning issued May 09 at 6:57PM CDT until May 09 at 7:30PM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=WI1263F44529F4.SevereThunderstormWarning.1263F450DF38WI.MPXSVRMPX.8c106d8d400c31f3ca3882013de539fb"/>
+<summary>The National Weather Service in the Twin Cities has issued a * Severe Thunderstorm Warning for... West central Dunn County in west central Wisconsin... Southeastern St. Croix County in west central Wisconsin... * Until 730 PM CDT. * At 656 PM CDT, a severe thunderstorm was located near Woodville, or</summary>
+<cap:event>Severe Thunderstorm Warning</cap:event>
+<cap:effective>2022-05-09T18:57:00-05:00</cap:effective>
+<cap:expires>2022-05-09T19:30:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Immediate</cap:urgency>
+<cap:severity>Severe</cap:severity>
+<cap:certainty>Observed</cap:certainty>
+<cap:areaDesc>Dunn; St. Croix</cap:areaDesc>
+<cap:polygon>44.85,-92.32 44.86,-92.33 44.86,-92.39 44.9,-92.45 45.06,-92.12 45.03,-92.05 44.95,-92.02 44.85,-92.32</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>055033 055109</value>
+<valueName>UGC</valueName>
+<value>WIC033 WIC109</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.NEW.KMPX.SV.W.0049.220509T2357Z-220510T0030Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=WI1263F4452738.TornadoWatch.1263F45148B0WI.MPXWCNMPX.84c82e5da8b86677c09f8aefc43dcb08</id>
+<updated>2022-05-09T18:50:00-05:00</updated>
+<published>2022-05-09T18:50:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Tornado Watch issued May 09 at 6:50PM CDT until May 09 at 10:00PM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=WI1263F4452738.TornadoWatch.1263F45148B0WI.MPXWCNMPX.84c82e5da8b86677c09f8aefc43dcb08"/>
+<summary>TORNADO WATCH 194 REMAINS VALID UNTIL 10 PM CDT THIS EVENING FOR THE FOLLOWING AREAS IN MINNESOTA THIS WATCH INCLUDES 1 COUNTY IN SOUTHEAST MINNESOTA GOODHUE IN WISCONSIN THIS WATCH INCLUDES 9 COUNTIES</summary>
+<cap:event>Tornado Watch</cap:event>
+<cap:effective>2022-05-09T18:50:00-05:00</cap:effective>
+<cap:expires>2022-05-09T22:00:00-05:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
 <cap:category>Met</cap:category>
 <cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Observed</cap:certainty>
-<cap:areaDesc>Burnett; Sawyer; Washburn</cap:areaDesc>
-<cap:polygon>45.73,-92.15 45.73,-92.24 45.94,-92.21 46.14,-91.5 45.74,-91.22 45.64,-91.71 45.64,-92.15 45.73,-92.15</cap:polygon>
+<cap:severity>Severe</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Barron; Chippewa; Dunn; Eau Claire; Pepin; Pierce; Polk; Rusk; St. Croix</cap:areaDesc>
+<cap:polygon></cap:polygon>
 <cap:geocode>
 <valueName>FIPS6</valueName>
-<value>055013 055113 055129</value>
+<value>055005 055017 055033 055035 055091 055093 055095 055107 055109</value>
 <valueName>UGC</valueName>
-<value>WIZ006 WIZ007 WIZ008</value>
+<value>WIC005 WIC017 WIC033 WIC035 WIC091 WIC093 WIC095 WIC107 WIC109</value>
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
-<value></value>
+<value>/O.CON.KMPX.TO.A.0194.000000T0000Z-220510T0300Z/</value>
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=WI1263F4451D10.SevereThunderstormWarning.1263F4452544WI.MPXSVSMPX.05a95d99fcaa4ce11597ce26761d9c4c</id>
-<updated>2022-05-09T18:24:00-05:00</updated>
-<published>2022-05-09T18:24:00-05:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=WI1263F4452670.SevereThunderstormWarning.1263F450DF38WI.MPXSVRMPX.3a3a9ff3fe766a5106f23db5803c2fac</id>
+<updated>2022-05-09T18:48:00-05:00</updated>
+<published>2022-05-09T18:48:00-05:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Severe Thunderstorm Warning issued May 09 at 6:24PM CDT until May 09 at 6:45PM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=WI1263F4451D10.SevereThunderstormWarning.1263F4452544WI.MPXSVSMPX.05a95d99fcaa4ce11597ce26761d9c4c"/>
-<summary>...A SEVERE THUNDERSTORM WARNING REMAINS IN EFFECT UNTIL 645 PM CDT FOR NORTHEASTERN POLK COUNTY... At 624 PM CDT, a severe thunderstorm was located 6 miles east of Luck, or 27 miles southwest of Spooner, moving northeast at 55 mph. HAZARD...60 mph wind gusts and quarter size hail. SOURCE...Radar indicated.</summary>
+<title>Severe Thunderstorm Warning issued May 09 at 6:48PM CDT until May 09 at 7:30PM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=WI1263F4452670.SevereThunderstormWarning.1263F450DF38WI.MPXSVRMPX.3a3a9ff3fe766a5106f23db5803c2fac"/>
+<summary>The National Weather Service in the Twin Cities has issued a * Severe Thunderstorm Warning for... East central Goodhue County in southeastern Minnesota... Northwestern Pepin County in west central Wisconsin... Southeastern Pierce County in west central Wisconsin... Southwestern Dunn County in west central Wisconsin...</summary>
 <cap:event>Severe Thunderstorm Warning</cap:event>
-<cap:effective>2022-05-09T18:24:00-05:00</cap:effective>
-<cap:expires>2022-05-09T18:45:00-05:00</cap:expires>
+<cap:effective>2022-05-09T18:48:00-05:00</cap:effective>
+<cap:expires>2022-05-09T19:30:00-05:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
 <cap:category>Met</cap:category>
 <cap:urgency>Immediate</cap:urgency>
 <cap:severity>Severe</cap:severity>
 <cap:certainty>Observed</cap:certainty>
-<cap:areaDesc>Polk</cap:areaDesc>
-<cap:polygon>45.56,-92.16 45.4,-92.47 45.5,-92.66 45.64,-92.6 45.65,-92.53 45.72,-92.53 45.72,-92.16 45.56,-92.16</cap:polygon>
+<cap:areaDesc>Dunn; Pepin; Pierce</cap:areaDesc>
+<cap:polygon>44.66,-91.86 44.59,-91.99 44.59,-92.02 44.57,-92.04 44.45,-92.27 44.45,-92.43 44.37,-92.44 44.37,-92.54 44.35,-92.55 44.42,-92.64 44.82,-92.13 44.66,-91.86</cap:polygon>
 <cap:geocode>
 <valueName>FIPS6</valueName>
-<value>055095</value>
+<value>055033 055091 055093</value>
 <valueName>UGC</valueName>
-<value>WIC095</value>
+<value>WIC033 WIC091 WIC093</value>
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
-<value>/O.CON.KMPX.SV.W.0046.000000T0000Z-220509T2345Z/</value>
+<value>/O.NEW.KMPX.SV.W.0048.220509T2348Z-220510T0030Z/</value>
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=WI1263F4451D10.SevereWeatherStatement.1263F4452544WI.MPXSVSMPX.8913be5b8c887e028dcfe895a4f82788</id>
-<updated>2022-05-09T18:24:00-05:00</updated>
-<published>2022-05-09T18:24:00-05:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=WI1263F4452670.SevereWeatherStatement.1263F45148B0WI.DLHSVSDLH.e3036be00992e97100a78bc4b551984e</id>
+<updated>2022-05-09T18:48:00-05:00</updated>
+<published>2022-05-09T18:48:00-05:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Severe Weather Statement issued May 09 at 6:24PM CDT until May 09 at 6:45PM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=WI1263F4451D10.SevereWeatherStatement.1263F4452544WI.MPXSVSMPX.8913be5b8c887e028dcfe895a4f82788"/>
-<summary>...A SEVERE THUNDERSTORM WARNING REMAINS IN EFFECT UNTIL 645 PM CDT FOR NORTHEASTERN POLK COUNTY... At 624 PM CDT, a severe thunderstorm was located 6 miles east of Luck, or 27 miles southwest of Spooner, moving northeast at 55 mph. HAZARD...60 mph wind gusts and quarter size hail. SOURCE...Radar indicated.</summary>
+<title>Severe Weather Statement issued May 09 at 6:48PM CDT until May 09 at 10:00PM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=WI1263F4452670.SevereWeatherStatement.1263F45148B0WI.DLHSVSDLH.e3036be00992e97100a78bc4b551984e"/>
+<summary>...A SEVERE THUNDERSTORM WARNING REMAINS IN EFFECT UNTIL 730 PM CDT FOR SOUTHERN WASHBURN AND SOUTHEASTERN BURNETT COUNTIES... At 648 PM CDT, a severe thunderstorm was located near Shell Lake, or 9 miles southwest of Spooner, moving northeast at 30 mph. HAZARD...Two inch hail and 60 mph wind gusts. SOURCE...Radar indicated.</summary>
 <cap:event>Severe Weather Statement</cap:event>
-<cap:effective>2022-05-09T18:24:00-05:00</cap:effective>
-<cap:expires>2022-05-09T18:45:00-05:00</cap:expires>
+<cap:effective>2022-05-09T18:48:00-05:00</cap:effective>
+<cap:expires>2022-05-09T22:00:00-05:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
 <cap:category>Met</cap:category>
 <cap:urgency>Immediate</cap:urgency>
 <cap:severity>Severe</cap:severity>
 <cap:certainty>Observed</cap:certainty>
-<cap:areaDesc>Polk</cap:areaDesc>
-<cap:polygon>45.56,-92.16 45.4,-92.47 45.5,-92.66 45.64,-92.6 45.65,-92.53 45.72,-92.53 45.72,-92.16 45.56,-92.16</cap:polygon>
+<cap:areaDesc>Burnett</cap:areaDesc>
+<cap:polygon>45.73,-92.15 45.73,-92.21 45.97,-91.54 45.71,-91.54 45.64,-91.83 45.64,-92.15 45.73,-92.15</cap:polygon>
 <cap:geocode>
 <valueName>FIPS6</valueName>
-<value>055095</value>
+<value>055013</value>
 <valueName>UGC</valueName>
-<value>WIC095</value>
+<value>WIC013</value>
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
-<value>/O.CON.KMPX.SV.W.0046.000000T0000Z-220509T2345Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=WI1263F44519F0.SevereThunderstormWarning.1263F4452544WI.MPXSVSMPX.b6e93b2d0792f4d6da8bb714156ac173</id>
-<updated>2022-05-09T18:16:00-05:00</updated>
-<published>2022-05-09T18:16:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Severe Thunderstorm Warning issued May 09 at 6:16PM CDT until May 09 at 6:45PM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=WI1263F44519F0.SevereThunderstormWarning.1263F4452544WI.MPXSVSMPX.b6e93b2d0792f4d6da8bb714156ac173"/>
-<summary>...A SEVERE THUNDERSTORM WARNING REMAINS IN EFFECT UNTIL 645 PM CDT FOR SOUTHEASTERN ST. CROIX COUNTY... At 616 PM CDT, a severe thunderstorm was located near Baldwin, or 16 miles northeast of River Falls, moving northeast at 50 mph. HAZARD...60 mph wind gusts and quarter size hail. SOURCE...Radar indicated.</summary>
-<cap:event>Severe Thunderstorm Warning</cap:event>
-<cap:effective>2022-05-09T18:16:00-05:00</cap:effective>
-<cap:expires>2022-05-09T18:45:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Immediate</cap:urgency>
-<cap:severity>Severe</cap:severity>
-<cap:certainty>Observed</cap:certainty>
-<cap:areaDesc>St. Croix</cap:areaDesc>
-<cap:polygon>44.89,-92.18 44.87,-92.39 44.93,-92.55 45.14,-92.16 45.12,-92.13 44.91,-92.14 44.89,-92.18</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>055109</value>
-<valueName>UGC</valueName>
-<value>WIC109</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KMPX.SV.W.0045.000000T0000Z-220509T2345Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=WI1263F44519F0.SevereWeatherStatement.1263F4452544WI.MPXSVSMPX.1bad252f954eadff8a886c33d709a8ca</id>
-<updated>2022-05-09T18:16:00-05:00</updated>
-<published>2022-05-09T18:16:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Severe Weather Statement issued May 09 at 6:16PM CDT until May 09 at 6:45PM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=WI1263F44519F0.SevereWeatherStatement.1263F4452544WI.MPXSVSMPX.1bad252f954eadff8a886c33d709a8ca"/>
-<summary>...A SEVERE THUNDERSTORM WARNING REMAINS IN EFFECT UNTIL 645 PM CDT FOR SOUTHEASTERN ST. CROIX COUNTY... At 616 PM CDT, a severe thunderstorm was located near Baldwin, or 16 miles northeast of River Falls, moving northeast at 50 mph. HAZARD...60 mph wind gusts and quarter size hail. SOURCE...Radar indicated.</summary>
-<cap:event>Severe Weather Statement</cap:event>
-<cap:effective>2022-05-09T18:16:00-05:00</cap:effective>
-<cap:expires>2022-05-09T18:45:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Immediate</cap:urgency>
-<cap:severity>Severe</cap:severity>
-<cap:certainty>Observed</cap:certainty>
-<cap:areaDesc>St. Croix</cap:areaDesc>
-<cap:polygon>44.89,-92.18 44.87,-92.39 44.93,-92.55 45.14,-92.16 45.12,-92.13 44.91,-92.14 44.89,-92.18</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>055109</value>
-<valueName>UGC</valueName>
-<value>WIC109</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KMPX.SV.W.0045.000000T0000Z-220509T2345Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=WI1263F4451860.SevereThunderstormWarning.1263F4452544WI.MPXSVRMPX.f011364e4497b8650d09a9dd449966c0</id>
-<updated>2022-05-09T18:12:00-05:00</updated>
-<published>2022-05-09T18:12:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Severe Thunderstorm Warning issued May 09 at 6:12PM CDT until May 09 at 6:45PM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=WI1263F4451860.SevereThunderstormWarning.1263F4452544WI.MPXSVRMPX.f011364e4497b8650d09a9dd449966c0"/>
-<summary>The National Weather Service in the Twin Cities has issued a * Severe Thunderstorm Warning for... Northern St. Croix County in west central Wisconsin... South central Polk County in northwestern Wisconsin... * Until 645 PM CDT. * At 611 PM CDT, a severe thunderstorm was located near North Hudson,</summary>
-<cap:event>Severe Thunderstorm Warning</cap:event>
-<cap:effective>2022-05-09T18:12:00-05:00</cap:effective>
-<cap:expires>2022-05-09T18:45:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Immediate</cap:urgency>
-<cap:severity>Severe</cap:severity>
-<cap:certainty>Observed</cap:certainty>
-<cap:areaDesc>Polk; St. Croix</cap:areaDesc>
-<cap:polygon>45.35,-92.41 45.19,-92.17 44.93,-92.74 44.95,-92.76 44.97,-92.77 45.03,-92.76 45.05,-92.79 45.22,-92.63 45.35,-92.41</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>055095 055109</value>
-<valueName>UGC</valueName>
-<value>WIC095 WIC109</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.NEW.KMPX.SV.W.0047.220509T2312Z-220509T2345Z/</value>
+<value>/O.CON.KDLH.SV.W.0009.000000T0000Z-220510T0030Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -11005,38 +10555,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value>/O.CON.KDLH.TO.A.0194.000000T0000Z-220510T0300Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=WI1263F444FAB0.TornadoWatch.1263F45148B0WI.MPXWCNMPX.84c82e5da8b86677c09f8aefc43dcb08</id>
-<updated>2022-05-09T17:36:00-05:00</updated>
-<published>2022-05-09T17:36:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Tornado Watch issued May 09 at 5:36PM CDT until May 09 at 10:00PM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=WI1263F444FAB0.TornadoWatch.1263F45148B0WI.MPXWCNMPX.84c82e5da8b86677c09f8aefc43dcb08"/>
-<summary>TORNADO WATCH 194 REMAINS VALID UNTIL 10 PM CDT THIS EVENING FOR THE FOLLOWING AREAS IN MINNESOTA THIS WATCH INCLUDES 13 COUNTIES IN EAST CENTRAL MINNESOTA ANOKA CHISAGO DAKOTA HENNEPIN ISANTI KANABEC</summary>
-<cap:event>Tornado Watch</cap:event>
-<cap:effective>2022-05-09T17:36:00-05:00</cap:effective>
-<cap:expires>2022-05-09T22:00:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Severe</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Barron; Chippewa; Dunn; Eau Claire; Pepin; Pierce; Polk; Rusk; St. Croix</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>055005 055017 055033 055035 055091 055093 055095 055107 055109</value>
-<valueName>UGC</valueName>
-<value>WIC005 WIC017 WIC033 WIC035 WIC091 WIC093 WIC095 WIC107 WIC109</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KMPX.TO.A.0194.000000T0000Z-220510T0300Z/</value>
 </cap:parameter>
 </entry>
 <entry>
