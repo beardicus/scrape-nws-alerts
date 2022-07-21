@@ -16,16 +16,48 @@ xmlns = 'http://www.w3.org/2005/Atom'
 xmlns:cap = 'urn:oasis:names:tc:emergency:cap:1.1'
 xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 >
-<!-- http-date = Thu, 21 Jul 2022 08:03:00 GMT -->
+<!-- http-date = Thu, 21 Jul 2022 08:35:00 GMT -->
 <id>https://alerts.weather.gov/cap/us.php?x=0</id>
 <logo>http://alerts.weather.gov/images/xml_logo.gif</logo>
 <generator>NWS CAP Server</generator>
-<updated>2022-07-21T04:03:00-04:00</updated>
+<updated>2022-07-21T04:35:00-04:00</updated>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
 <title>Current Watches, Warnings and Advisories for the United States Issued by the National Weather Service</title>
 <link href="https://alerts.weather.gov/cap/us.php?x=0"/>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=AK126400E5B214.HighSurfAdvisory.126400F49AE0AK.AFGCFWAFG.19ffb2a1b3b78f55e2615d6fbe1e1e85</id>
+<updated>2022-07-21T00:29:00-08:00</updated>
+<published>2022-07-21T00:29:00-08:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>High Surf Advisory issued July 21 at 12:29AM AKDT until July 21 at 10:00PM AKDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=AK126400E5B214.HighSurfAdvisory.126400F49AE0AK.AFGCFWAFG.19ffb2a1b3b78f55e2615d6fbe1e1e85"/>
+<summary>...HIGH SURF ADVISORY IN EFFECT FROM 5 AM EARLY THIS MORNING TO 10 PM AKDT THIS EVENING... The National Weather Service in Fairbanks has issued a High Surf Advisory, which is in effect from 5 AM early this morning to 10 PM AKDT this evening. * LOCATION...Kotlik to Hooper Bay.</summary>
+<cap:event>High Surf Advisory</cap:event>
+<cap:effective>2022-07-21T00:29:00-08:00</cap:effective>
+<cap:expires>2022-07-21T22:00:00-08:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Yukon Delta</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>002158</value>
+<valueName>UGC</valueName>
+<value>AKZ214</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.NEW.PAFG.SU.Y.0002.220721T1300Z-220722T0600Z/</value>
+</cap:parameter>
+</entry>
 <entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=AK126400E4A810.FloodAdvisory.12640104CD5CAK.AFCFLSAFC.15dfdd9a911c234347591a0b6c6502fa</id>
 <updated>2022-07-20T17:48:00-08:00</updated>
@@ -90,38 +122,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <valueName>VTEC</valueName>
 <value>/O.CON.PAFC.FA.Y.0004.000000T0000Z-220723T1215Z/
 /00000.N.ER.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=AK126400E4A1D0.WindAdvisory.126400E69120AK.AFGNPWWCZ.5b1247b86aa4ff9d262f1b6f259b2d54</id>
-<updated>2022-07-20T17:32:00-08:00</updated>
-<published>2022-07-20T17:32:00-08:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Wind Advisory issued July 20 at 5:32PM AKDT until July 21 at 6:00AM AKDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=AK126400E4A1D0.WindAdvisory.126400E69120AK.AFGNPWWCZ.5b1247b86aa4ff9d262f1b6f259b2d54"/>
-<summary>...WIND ADVISORY IN EFFECT UNTIL 6 AM AKDT THURSDAY... * WHAT...South winds 25 mph with gusts to 45 mph. * WHERE...Lower Yukon Valley. * WHEN...Until 6 AM AKDT Thursday. * IMPACTS...Gusty winds could blow around unsecured objects. Tree limbs could be blown down and a few power outages may</summary>
-<cap:event>Wind Advisory</cap:event>
-<cap:effective>2022-07-20T17:32:00-08:00</cap:effective>
-<cap:expires>2022-07-21T06:00:00-08:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Lower Yukon Valley</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>002290</value>
-<valueName>UGC</valueName>
-<value>AKZ215</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.NEW.PAFG.WI.Y.0015.220721T0132Z-220721T1400Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -413,6 +413,134 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=AR126400E5B278.HeatAdvisory.126400F3D790AR.LZKNPWLZK.1641d86889ce3f38d01aba319d50df7b</id>
+<updated>2022-07-21T03:30:00-05:00</updated>
+<published>2022-07-21T03:30:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Heat Advisory issued July 21 at 3:30AM CDT until July 21 at 8:00PM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=AR126400E5B278.HeatAdvisory.126400F3D790AR.LZKNPWLZK.1641d86889ce3f38d01aba319d50df7b"/>
+<summary>...HEAT ADVISORY REMAINS IN EFFECT FROM 1 PM THIS AFTERNOON TO 8 PM CDT THIS EVENING... * WHAT...Heat index values up to 110 degrees expected. * WHERE...Portions of central, eastern, southeast, southwest and western Arkansas. * WHEN...From 1 PM this afternoon to 8 PM CDT this evening.</summary>
+<cap:event>Heat Advisory</cap:event>
+<cap:effective>2022-07-21T03:30:00-05:00</cap:effective>
+<cap:expires>2022-07-21T20:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Arkansas; Bradley; Calhoun; Central and Eastern Montgomery County; Central and Southern Scott County; Clark; Cleveland; Conway; Dallas; Desha; Drew; Faulkner; Garland; Grant; Hot Spring; Jefferson; Lincoln; Lonoke; Monroe; Northern Montgomery County Higher Elevations; Northern Polk County Higher Elevations; Northern Scott County; Northwest Yell County; Ouachita; Perry; Pike; Polk County Lower Elevations; Prairie; Pulaski; Saline; Southeast Polk County Higher Elevations; Southern Johnson County; Southern Pope County; Southern and Eastern Logan County; Southwest Montgomery County Higher Elevations; Western and Northern Logan County; White; Woodruff; Yell Excluding Northwest</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>005001 005011 005013 005019 005025 005029 005039 005041 005043 005045 005051 005053 005059 005069 005071 005079 005083 005085 005095 005097 005103 005105 005109 005113 005115 005117 005119 005125 005127 005145 005147 005149</value>
+<valueName>UGC</valueName>
+<value>ARZ031 ARZ032 ARZ033 ARZ034 ARZ039 ARZ042 ARZ043 ARZ044 ARZ045 ARZ046 ARZ047 ARZ052 ARZ053 ARZ054 ARZ055 ARZ056 ARZ057 ARZ062 ARZ063 ARZ064 ARZ065 ARZ066 ARZ067 ARZ068 ARZ069 ARZ121 ARZ122 ARZ130 ARZ137 ARZ138 ARZ140 ARZ141 ARZ230 ARZ237 ARZ238 ARZ240 ARZ241 ARZ340 ARZ341</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KLZK.HT.Y.0025.220721T1800Z-220722T0100Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=AR126400E5AF58.HeatAdvisory.126400F3D790AR.TSANPWTSA.b2139c7a844ca3864a95fd38489daf47</id>
+<updated>2022-07-21T03:22:00-05:00</updated>
+<published>2022-07-21T03:22:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Heat Advisory issued July 21 at 3:22AM CDT until July 21 at 8:00PM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=AR126400E5AF58.HeatAdvisory.126400F3D790AR.TSANPWTSA.b2139c7a844ca3864a95fd38489daf47"/>
+<summary>...HEAT ADVISORY IN EFFECT FROM NOON TODAY TO 8 PM CDT THIS EVENING... * WHAT...Heat index values up to 107 expected. * WHERE...In Arkansas, Benton and Washington counties. * WHEN...From noon to 8 PM CDT Thursday. * IMPACTS...The combination of hot temperatures and high</summary>
+<cap:event>Heat Advisory</cap:event>
+<cap:effective>2022-07-21T03:22:00-05:00</cap:effective>
+<cap:expires>2022-07-21T20:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Benton; Washington</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>005007 005143</value>
+<valueName>UGC</valueName>
+<value>ARZ001 ARZ010</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.EXA.KTSA.HT.Y.0027.220721T1700Z-220722T0100Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=AR126400E5AF58.HeatAdvisory.126400F3D790AR.TSANPWTSA.dc9533fea259fc290eecc6e683ae4731</id>
+<updated>2022-07-21T03:22:00-05:00</updated>
+<published>2022-07-21T03:22:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Heat Advisory issued July 21 at 3:22AM CDT until July 21 at 8:00PM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=AR126400E5AF58.HeatAdvisory.126400F3D790AR.TSANPWTSA.dc9533fea259fc290eecc6e683ae4731"/>
+<summary>...HEAT ADVISORY REMAINS IN EFFECT FROM NOON TODAY TO 8 PM CDT THIS EVENING... * WHAT...Heat index values up to 108 expected. * WHERE...Portions of east central, northeast and southeast Oklahoma and northwest and west central Arkansas. * WHEN...For the Excessive Heat Warning, until 8 PM CDT this</summary>
+<cap:event>Heat Advisory</cap:event>
+<cap:effective>2022-07-21T03:22:00-05:00</cap:effective>
+<cap:expires>2022-07-21T20:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Crawford; Franklin; Sebastian</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>005033 005047 005131</value>
+<valueName>UGC</valueName>
+<value>ARZ019 ARZ020 ARZ029</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KTSA.HT.Y.0027.220721T1700Z-220722T0100Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=AR126400E5ADC8.HeatAdvisory.126400F3B080AR.SHVNPWSHV.565b86c3faee98a92eb822fc20acff68</id>
+<updated>2022-07-21T03:18:00-05:00</updated>
+<published>2022-07-21T03:18:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Heat Advisory issued July 21 at 3:18AM CDT until July 21 at 7:00PM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=AR126400E5ADC8.HeatAdvisory.126400F3B080AR.SHVNPWSHV.565b86c3faee98a92eb822fc20acff68"/>
+<summary>...HEAT ADVISORY REMAINS IN EFFECT FROM 1 PM THIS AFTERNOON TO 7 PM CDT THIS EVENING... * WHAT...Heat index values between 105 and 110 are expected. * WHERE...Portions of north central and northwest Louisiana, southeast Oklahoma, south central and southwest Arkansas and northeast Texas.</summary>
+<cap:event>Heat Advisory</cap:event>
+<cap:effective>2022-07-21T03:18:00-05:00</cap:effective>
+<cap:expires>2022-07-21T19:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Columbia; Hempstead; Howard; Lafayette; Little River; Miller; Nevada; Sevier; Union</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>005027 005057 005061 005073 005081 005091 005099 005133 005139</value>
+<valueName>UGC</valueName>
+<value>ARZ050 ARZ051 ARZ059 ARZ060 ARZ061 ARZ070 ARZ071 ARZ072 ARZ073</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KSHV.HT.Y.0017.220721T1800Z-220722T0000Z/</value>
+</cap:parameter>
+</entry>
+<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=AR126400E5907C.HeatAdvisory.126400F3FEA0AR.MEGNPWMEG.210a19752505dd1d93103ff4d7ea6190</id>
 <updated>2022-07-21T02:43:00-05:00</updated>
 <published>2022-07-21T02:43:00-05:00</published>
@@ -477,105 +605,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=AR126400D81C58.HeatAdvisory.126400F3B080AR.SHVNPWSHV.565b86c3faee98a92eb822fc20acff68</id>
-<updated>2022-07-20T14:26:00-05:00</updated>
-<published>2022-07-20T14:26:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Heat Advisory issued July 20 at 2:26PM CDT until July 21 at 7:00PM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=AR126400D81C58.HeatAdvisory.126400F3B080AR.SHVNPWSHV.565b86c3faee98a92eb822fc20acff68"/>
-<summary>...EXCESSIVE HEAT WARNING REMAINS IN EFFECT UNTIL 7 PM CDT THIS EVENING... ...HEAT ADVISORY IN EFFECT FROM 1 PM TO 7 PM CDT THURSDAY... * WHAT...For the Excessive Heat Warning, dangerously hot conditions with heat index values above 110 degrees expected. For the Heat Advisory, heat index values above 105 expected.</summary>
-<cap:event>Heat Advisory</cap:event>
-<cap:effective>2022-07-20T14:26:00-05:00</cap:effective>
-<cap:expires>2022-07-21T19:00:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Columbia; Hempstead; Howard; Lafayette; Little River; Miller; Nevada; Sevier; Union</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>005027 005057 005061 005073 005081 005091 005099 005133 005139</value>
-<valueName>UGC</valueName>
-<value>ARZ050 ARZ051 ARZ059 ARZ060 ARZ061 ARZ070 ARZ071 ARZ072 ARZ073</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.NEW.KSHV.HT.Y.0017.220721T1800Z-220722T0000Z/
-/O.CON.KSHV.EH.W.0002.000000T0000Z-220721T0000Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=AR126400D81938.HeatAdvisory.126400F3D790AR.LZKNPWLZK.1641d86889ce3f38d01aba319d50df7b</id>
-<updated>2022-07-20T14:18:00-05:00</updated>
-<published>2022-07-20T14:18:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Heat Advisory issued July 20 at 2:18PM CDT until July 21 at 8:00PM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=AR126400D81938.HeatAdvisory.126400F3D790AR.LZKNPWLZK.1641d86889ce3f38d01aba319d50df7b"/>
-<summary>...EXCESSIVE HEAT WARNING REMAINS IN EFFECT UNTIL 8 PM CDT THIS EVENING... ...HEAT ADVISORY IN EFFECT FROM 1 PM TO 8 PM CDT THURSDAY... * WHAT...For the Excessive Heat Warning today, dangerously hot conditions with heat index values up to 115 degrees. For the Heat Advisory Thursday, heat index values of 105 degrees or</summary>
-<cap:event>Heat Advisory</cap:event>
-<cap:effective>2022-07-20T14:18:00-05:00</cap:effective>
-<cap:expires>2022-07-21T20:00:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Arkansas; Bradley; Calhoun; Central and Eastern Montgomery County; Central and Southern Scott County; Clark; Cleveland; Conway; Dallas; Desha; Drew; Faulkner; Garland; Grant; Hot Spring; Jefferson; Lincoln; Lonoke; Monroe; Northern Montgomery County Higher Elevations; Northern Polk County Higher Elevations; Northern Scott County; Northwest Yell County; Ouachita; Perry; Pike; Polk County Lower Elevations; Prairie; Pulaski; Saline; Southeast Polk County Higher Elevations; Southern Johnson County; Southern Pope County; Southern and Eastern Logan County; Southwest Montgomery County Higher Elevations; Western and Northern Logan County; White; Woodruff; Yell Excluding Northwest</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>005001 005011 005013 005019 005025 005029 005039 005041 005043 005045 005051 005053 005059 005069 005071 005079 005083 005085 005095 005097 005103 005105 005109 005113 005115 005117 005119 005125 005127 005145 005147 005149</value>
-<valueName>UGC</valueName>
-<value>ARZ031 ARZ032 ARZ033 ARZ034 ARZ039 ARZ042 ARZ043 ARZ044 ARZ045 ARZ046 ARZ047 ARZ052 ARZ053 ARZ054 ARZ055 ARZ056 ARZ057 ARZ062 ARZ063 ARZ064 ARZ065 ARZ066 ARZ067 ARZ068 ARZ069 ARZ121 ARZ122 ARZ130 ARZ137 ARZ138 ARZ140 ARZ141 ARZ230 ARZ237 ARZ238 ARZ240 ARZ241 ARZ340 ARZ341</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.NEW.KLZK.HT.Y.0025.220721T1800Z-220722T0100Z/
-/O.CON.KLZK.EH.W.0007.000000T0000Z-220721T0100Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=AR126400D81938.HeatAdvisory.126400F3D790AR.TSANPWTSA.dc9533fea259fc290eecc6e683ae4731</id>
-<updated>2022-07-20T14:18:00-05:00</updated>
-<published>2022-07-20T14:18:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Heat Advisory issued July 20 at 2:18PM CDT until July 21 at 8:00PM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=AR126400D81938.HeatAdvisory.126400F3D790AR.TSANPWTSA.dc9533fea259fc290eecc6e683ae4731"/>
-<summary>...EXCESSIVE HEAT WARNING REMAINS IN EFFECT UNTIL 8 PM CDT THIS EVENING... ...HEAT ADVISORY IN EFFECT FROM NOON TO 8 PM CDT THURSDAY... * WHAT...For the Excessive Heat Warning, dangerously hot conditions with heat index values up to 110. For the Heat Advisory, heat index values up to 108 expected.</summary>
-<cap:event>Heat Advisory</cap:event>
-<cap:effective>2022-07-20T14:18:00-05:00</cap:effective>
-<cap:expires>2022-07-21T20:00:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Crawford; Franklin; Sebastian</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>005033 005047 005131</value>
-<valueName>UGC</valueName>
-<value>ARZ019 ARZ020 ARZ029</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.NEW.KTSA.HT.Y.0027.220721T1700Z-220722T0100Z/
-/O.CON.KTSA.EH.W.0006.000000T0000Z-220721T0100Z/</value>
-</cap:parameter>
-</entry>
-<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=AS126400E5619C.WindAdvisory.126400E64EB8AS.STUNPWPPG.f4c000d50d02482a466d23ad3b08cc0b</id>
 <updated>2022-07-20T19:23:00-11:00</updated>
 <published>2022-07-20T19:23:00-11:00</published>
@@ -637,6 +666,102 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value></value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=AZ126400E5B0E8.ExcessiveHeatWarning.1264010367F0AZ.PSRNPWPSR.72104f3b474fb20b9571cf762827654f</id>
+<updated>2022-07-21T01:26:00-07:00</updated>
+<published>2022-07-21T01:26:00-07:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Excessive Heat Warning issued July 21 at 1:26AM MST until July 22 at 8:00PM MST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=AZ126400E5B0E8.ExcessiveHeatWarning.1264010367F0AZ.PSRNPWPSR.72104f3b474fb20b9571cf762827654f"/>
+<summary>...EXCESSIVE HEAT WARNING REMAINS IN EFFECT FROM 11 AM MST /11 AM PDT/ THIS MORNING TO 8 PM MST /8 PM PDT/ FRIDAY... * WHAT...Dangerously hot conditions. Afternoon temperatures 110 to 118 expected. * WHERE...Portions of southwest Arizona and southeast and southern California.</summary>
+<cap:event>Excessive Heat Warning</cap:event>
+<cap:effective>2022-07-21T01:26:00-07:00</cap:effective>
+<cap:expires>2022-07-22T20:00:00-07:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Parker Valley; Yuma</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>004012 004027</value>
+<valueName>UGC</valueName>
+<value>AZZ530 AZZ532</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KPSR.EH.W.0005.220721T1800Z-220723T0300Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=AZ126400E5B0E8.ExcessiveHeatWarning.1264010367F0AZ.PSRNPWPSR.24047fd080c6f151503528d2dd7e1072</id>
+<updated>2022-07-21T01:26:00-07:00</updated>
+<published>2022-07-21T01:26:00-07:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Excessive Heat Warning issued July 21 at 1:26AM MST until July 22 at 8:00PM MST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=AZ126400E5B0E8.ExcessiveHeatWarning.1264010367F0AZ.PSRNPWPSR.24047fd080c6f151503528d2dd7e1072"/>
+<summary>...EXCESSIVE HEAT WARNING REMAINS IN EFFECT FROM 11 AM THIS MORNING TO 8 PM MST FRIDAY... * WHAT...Dangerously hot conditions. Afternoon temperatures 108 to 115 expected. * WHERE...Sonoran Desert National Monument, Southeast Yuma County, Aguila Valley, Gila River Valley, Kofa, Central La Paz</summary>
+<cap:event>Excessive Heat Warning</cap:event>
+<cap:effective>2022-07-21T01:26:00-07:00</cap:effective>
+<cap:expires>2022-07-22T20:00:00-07:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Aguila Valley; Central La Paz; Gila Bend; Gila River Valley; Kofa; Sonoran Desert Natl Monument; Southeast Yuma County; Tonopah Desert</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>004012 004013 004027</value>
+<valueName>UGC</valueName>
+<value>AZZ531 AZZ533 AZZ534 AZZ535 AZZ536 AZZ538 AZZ539 AZZ559</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KPSR.EH.W.0005.220721T1800Z-220723T0300Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=AZ126400E5B0E8.ExcessiveHeatWarning.1264010367F0AZ.PSRNPWPSR.4a3558ed90ed0da05866be7d1f645903</id>
+<updated>2022-07-21T01:26:00-07:00</updated>
+<published>2022-07-21T01:26:00-07:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Excessive Heat Warning issued July 21 at 1:26AM MST until July 22 at 8:00PM MST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=AZ126400E5B0E8.ExcessiveHeatWarning.1264010367F0AZ.PSRNPWPSR.4a3558ed90ed0da05866be7d1f645903"/>
+<summary>...EXCESSIVE HEAT WARNING REMAINS IN EFFECT FROM 11 AM THIS MORNING TO 8 PM MST FRIDAY... * WHAT...Dangerously hot conditions. Afternoon temperatures 108 to 115 expected. * WHERE...Portions of south central Arizona. * WHEN...From 11 AM this morning to 8 PM MST Friday.</summary>
+<cap:event>Excessive Heat Warning</cap:event>
+<cap:effective>2022-07-21T01:26:00-07:00</cap:effective>
+<cap:expires>2022-07-22T20:00:00-07:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Apache Junction, Gold Canyon; Buckeye, Avondale; Cave Creek, New River; Central Phoenix; Deer Valley; East Valley; Fountain Hills, East Mesa; North Phoenix, Glendale; Northwest Pinal County; Northwest Valley; Scottsdale, Paradise Valley; South Mountain, Ahwatukee; Southeast Valley, Queen Creek; West Pinal County</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>004013 004021</value>
+<valueName>UGC</valueName>
+<value>AZZ537 AZZ540 AZZ541 AZZ542 AZZ543 AZZ544 AZZ546 AZZ548 AZZ549 AZZ550 AZZ551 AZZ553 AZZ554 AZZ555</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KPSR.EH.W.0005.220721T1800Z-220723T0300Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -770,166 +895,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=AZ126400D84430.ExcessiveHeatWarning.1264010367F0AZ.PSRNPWPSR.1d7e1faa9f4bc99bb63a40d27862b254</id>
-<updated>2022-07-20T13:28:00-07:00</updated>
-<published>2022-07-20T13:28:00-07:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Excessive Heat Warning issued July 20 at 1:28PM MST until July 22 at 8:00PM MST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=AZ126400D84430.ExcessiveHeatWarning.1264010367F0AZ.PSRNPWPSR.1d7e1faa9f4bc99bb63a40d27862b254"/>
-<summary>...EXCESSIVE HEAT WARNING REMAINS IN EFFECT FROM 11 AM MST /11 AM PDT/ THURSDAY TO 8 PM MST /8 PM PDT/ FRIDAY... * WHAT...Dangerously hot conditions. Afternoon temperatures 111 to 116 degrees. * WHERE...In Arizona, Parker Valley. In California, Imperial Valley and Palo Verde Valley.</summary>
-<cap:event>Excessive Heat Warning</cap:event>
-<cap:effective>2022-07-20T13:28:00-07:00</cap:effective>
-<cap:expires>2022-07-22T20:00:00-07:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Parker Valley</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>004012</value>
-<valueName>UGC</valueName>
-<value>AZZ530</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KPSR.EH.W.0005.220721T1800Z-220723T0300Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=AZ126400D84430.ExcessiveHeatWarning.1264010367F0AZ.PSRNPWPSR.59615d363ba06c9755fa2a49ddadce74</id>
-<updated>2022-07-20T13:28:00-07:00</updated>
-<published>2022-07-20T13:28:00-07:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Excessive Heat Warning issued July 20 at 1:28PM MST until July 22 at 8:00PM MST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=AZ126400D84430.ExcessiveHeatWarning.1264010367F0AZ.PSRNPWPSR.59615d363ba06c9755fa2a49ddadce74"/>
-<summary>...EXCESSIVE HEAT WARNING IN EFFECT FROM 11 AM THURSDAY TO 8 PM MST FRIDAY... * WHAT...Dangerously hot conditions. Afternoon temperatures 110 to 115 degrees. * WHERE...Kofa, Southeast Yuma County, Gila River Valley, Tonopah Desert, Gila Bend and Sonoran Desert National Monument.</summary>
-<cap:event>Excessive Heat Warning</cap:event>
-<cap:effective>2022-07-20T13:28:00-07:00</cap:effective>
-<cap:expires>2022-07-22T20:00:00-07:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Gila Bend; Gila River Valley; Kofa; Sonoran Desert Natl Monument; Southeast Yuma County; Tonopah Desert</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>004012 004013 004027</value>
-<valueName>UGC</valueName>
-<value>AZZ531 AZZ535 AZZ536 AZZ538 AZZ539 AZZ559</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.EXA.KPSR.EH.W.0005.220721T1800Z-220723T0300Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=AZ126400D84430.ExcessiveHeatWarning.1264010367F0AZ.PSRNPWPSR.cbb8186df8b2769e87b8996f1cbdb387</id>
-<updated>2022-07-20T13:28:00-07:00</updated>
-<published>2022-07-20T13:28:00-07:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Excessive Heat Warning issued July 20 at 1:28PM MST until July 22 at 8:00PM MST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=AZ126400D84430.ExcessiveHeatWarning.1264010367F0AZ.PSRNPWPSR.cbb8186df8b2769e87b8996f1cbdb387"/>
-<summary>...EXCESSIVE HEAT WARNING IN EFFECT FROM 11 AM MST /11 AM PDT/ THURSDAY TO 8 PM MST /8 PM PDT/ FRIDAY... * WHAT...Dangerously hot conditions. Afternoon temperatures 110 to 116 degrees. * WHERE...In Arizona, Yuma. In California, Chuckwalla Mountains, Southeastern Imperial County and Chiriaco Summit.</summary>
-<cap:event>Excessive Heat Warning</cap:event>
-<cap:effective>2022-07-20T13:28:00-07:00</cap:effective>
-<cap:expires>2022-07-22T20:00:00-07:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Yuma</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>004027</value>
-<valueName>UGC</valueName>
-<value>AZZ532</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.EXA.KPSR.EH.W.0005.220721T1800Z-220723T0300Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=AZ126400D84430.ExcessiveHeatWarning.1264010367F0AZ.PSRNPWPSR.cc11d110c37c347bf5887f8409d4369b</id>
-<updated>2022-07-20T13:28:00-07:00</updated>
-<published>2022-07-20T13:28:00-07:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Excessive Heat Warning issued July 20 at 1:28PM MST until July 22 at 8:00PM MST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=AZ126400D84430.ExcessiveHeatWarning.1264010367F0AZ.PSRNPWPSR.cc11d110c37c347bf5887f8409d4369b"/>
-<summary>...EXCESSIVE HEAT WARNING REMAINS IN EFFECT FROM 11 AM THURSDAY TO 8 PM MST FRIDAY... * WHAT...Dangerously hot conditions. Afternoon temperatures 108 to 115 degrees. * WHERE...Central La Paz County and Aguila Valley. * WHEN...From 11 AM Thursday to 8 PM MST Friday.</summary>
-<cap:event>Excessive Heat Warning</cap:event>
-<cap:effective>2022-07-20T13:28:00-07:00</cap:effective>
-<cap:expires>2022-07-22T20:00:00-07:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Aguila Valley; Central La Paz</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>004012 004013</value>
-<valueName>UGC</valueName>
-<value>AZZ533 AZZ534</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KPSR.EH.W.0005.220721T1800Z-220723T0300Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=AZ126400D84430.ExcessiveHeatWarning.1264010367F0AZ.PSRNPWPSR.4a3558ed90ed0da05866be7d1f645903</id>
-<updated>2022-07-20T13:28:00-07:00</updated>
-<published>2022-07-20T13:28:00-07:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Excessive Heat Warning issued July 20 at 1:28PM MST until July 22 at 8:00PM MST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=AZ126400D84430.ExcessiveHeatWarning.1264010367F0AZ.PSRNPWPSR.4a3558ed90ed0da05866be7d1f645903"/>
-<summary>...EXCESSIVE HEAT WARNING IN EFFECT FROM 11 AM THURSDAY TO 8 PM MST FRIDAY... * WHAT...Dangerously hot conditions. Afternoon temperatures 109 to 114 degrees * WHERE...Portions of south central Arizona including the Phoenix metropolitan area.</summary>
-<cap:event>Excessive Heat Warning</cap:event>
-<cap:effective>2022-07-20T13:28:00-07:00</cap:effective>
-<cap:expires>2022-07-22T20:00:00-07:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Apache Junction, Gold Canyon; Buckeye, Avondale; Cave Creek, New River; Central Phoenix; Deer Valley; East Valley; Fountain Hills, East Mesa; North Phoenix, Glendale; Northwest Pinal County; Northwest Valley; Scottsdale, Paradise Valley; South Mountain, Ahwatukee; Southeast Valley, Queen Creek; West Pinal County</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>004013 004021</value>
-<valueName>UGC</valueName>
-<value>AZZ537 AZZ540 AZZ541 AZZ542 AZZ543 AZZ544 AZZ546 AZZ548 AZZ549 AZZ550 AZZ551 AZZ553 AZZ554 AZZ555</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.EXA.KPSR.EH.W.0005.220721T1800Z-220723T0300Z/</value>
-</cap:parameter>
-</entry>
-<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=AZ126400D79E2C.AirQualityAlert.126400F4529CAZ.PSRAQAPSR.e90e209b6f3ec87028b67a6893309694</id>
 <updated>2022-07-20T09:03:00-07:00</updated>
 <published>2022-07-20T09:03:00-07:00</published>
@@ -1056,6 +1021,38 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <valueName>VTEC</valueName>
 <value>/O.UPG.KFGZ.EH.A.0004.220721T1700Z-220723T0300Z/
 /O.EXB.KFGZ.EH.W.0008.220721T1800Z-220723T0300Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=CA126400E5B0E8.ExcessiveHeatWarning.1264010367F0CA.PSRNPWPSR.2c2dca97bce2f7924ee8ac2d96d56692</id>
+<updated>2022-07-21T01:26:00-07:00</updated>
+<published>2022-07-21T01:26:00-07:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Excessive Heat Warning issued July 21 at 1:26AM PDT until July 22 at 8:00PM PDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CA126400E5B0E8.ExcessiveHeatWarning.1264010367F0CA.PSRNPWPSR.2c2dca97bce2f7924ee8ac2d96d56692"/>
+<summary>...EXCESSIVE HEAT WARNING REMAINS IN EFFECT FROM 11 AM MST /11 AM PDT/ THIS MORNING TO 8 PM MST /8 PM PDT/ FRIDAY... * WHAT...Dangerously hot conditions. Afternoon temperatures 110 to 118 expected. * WHERE...Portions of southwest Arizona and southeast and southern California.</summary>
+<cap:event>Excessive Heat Warning</cap:event>
+<cap:effective>2022-07-21T01:26:00-07:00</cap:effective>
+<cap:expires>2022-07-22T20:00:00-07:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Chiriaco Summit; Chuckwalla Mountains; Chuckwalla Valley; Imperial County Southeast; Imperial County Southwest; Imperial County West; Imperial Valley; Palo Verde Valley; Salton Sea</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>006025 006065</value>
+<valueName>UGC</valueName>
+<value>CAZ562 CAZ563 CAZ564 CAZ565 CAZ566 CAZ567 CAZ568 CAZ569 CAZ570</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KPSR.EH.W.0005.220721T1800Z-220723T0300Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -1347,70 +1344,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value>/O.CON.KVEF.EH.W.0002.220721T1800Z-220723T0300Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=CA126400D84430.ExcessiveHeatWarning.1264010367F0CA.PSRNPWPSR.2a68f5c4a266b2fa5db8fea9ffe9edb6</id>
-<updated>2022-07-20T13:28:00-07:00</updated>
-<published>2022-07-20T13:28:00-07:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Excessive Heat Warning issued July 20 at 1:28PM PDT until July 22 at 8:00PM PDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CA126400D84430.ExcessiveHeatWarning.1264010367F0CA.PSRNPWPSR.2a68f5c4a266b2fa5db8fea9ffe9edb6"/>
-<summary>...EXCESSIVE HEAT WARNING REMAINS IN EFFECT FROM 11 AM MST /11 AM PDT/ THURSDAY TO 8 PM MST /8 PM PDT/ FRIDAY... * WHAT...Dangerously hot conditions. Afternoon temperatures 111 to 116 degrees. * WHERE...In Arizona, Parker Valley. In California, Imperial Valley and Palo Verde Valley.</summary>
-<cap:event>Excessive Heat Warning</cap:event>
-<cap:effective>2022-07-20T13:28:00-07:00</cap:effective>
-<cap:expires>2022-07-22T20:00:00-07:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Chuckwalla Valley; Imperial County Southwest; Imperial County West; Imperial Valley; Palo Verde Valley; Salton Sea</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>006025 006065</value>
-<valueName>UGC</valueName>
-<value>CAZ562 CAZ563 CAZ566 CAZ567 CAZ569 CAZ570</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KPSR.EH.W.0005.220721T1800Z-220723T0300Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=CA126400D84430.ExcessiveHeatWarning.1264010367F0CA.PSRNPWPSR.abad5258714af43083850cb7e4431448</id>
-<updated>2022-07-20T13:28:00-07:00</updated>
-<published>2022-07-20T13:28:00-07:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Excessive Heat Warning issued July 20 at 1:28PM PDT until July 22 at 8:00PM PDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CA126400D84430.ExcessiveHeatWarning.1264010367F0CA.PSRNPWPSR.abad5258714af43083850cb7e4431448"/>
-<summary>...EXCESSIVE HEAT WARNING IN EFFECT FROM 11 AM MST /11 AM PDT/ THURSDAY TO 8 PM MST /8 PM PDT/ FRIDAY... * WHAT...Dangerously hot conditions. Afternoon temperatures 110 to 116 degrees. * WHERE...In Arizona, Yuma. In California, Chuckwalla Mountains, Southeastern Imperial County and Chiriaco Summit.</summary>
-<cap:event>Excessive Heat Warning</cap:event>
-<cap:effective>2022-07-20T13:28:00-07:00</cap:effective>
-<cap:expires>2022-07-22T20:00:00-07:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Chiriaco Summit; Chuckwalla Mountains; Imperial County Southeast</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>006025 006065</value>
-<valueName>UGC</valueName>
-<value>CAZ564 CAZ565 CAZ568</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.EXA.KPSR.EH.W.0005.220721T1800Z-220723T0300Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -1864,6 +1797,39 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=KY126400E5AD00.FlashFloodWarning.126400E60098KY.LMKFFWLMK.d32f589e4697d75b45f486920cc2b28c</id>
+<updated>2022-07-21T04:16:00-04:00</updated>
+<published>2022-07-21T04:16:00-04:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Flash Flood Warning issued July 21 at 4:16AM EDT until July 21 at 6:30AM EDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=KY126400E5AD00.FlashFloodWarning.126400E60098KY.LMKFFWLMK.d32f589e4697d75b45f486920cc2b28c"/>
+<summary>The National Weather Service in Louisville has extended the * Flash Flood Warning for... Southern Adair County in south central Kentucky... North Central Allen County in south central Kentucky... Barren County in south central Kentucky... Clinton County in south central Kentucky...</summary>
+<cap:event>Flash Flood Warning</cap:event>
+<cap:effective>2022-07-21T04:16:00-04:00</cap:effective>
+<cap:expires>2022-07-21T06:30:00-04:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Immediate</cap:urgency>
+<cap:severity>Severe</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Adair; Allen; Barren; Clinton; Cumberland; Metcalfe; Monroe; Russell</cap:areaDesc>
+<cap:polygon>37.06,-86.09 37.05,-86.07 37.11,-86.06 37.1,-84.9 36.96,-84.93 36.96,-84.95 36.92,-84.96 36.86,-85.06 36.83,-85.06 36.81,-85.03 36.75,-85 36.7,-85.02 36.68,-85 36.63,-85 36.86,-86.19 37.06,-86.09</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>021001 021003 021009 021053 021057 021169 021171 021207</value>
+<valueName>UGC</valueName>
+<value>KYC001 KYC003 KYC009 KYC053 KYC057 KYC169 KYC171 KYC207</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.EXT.KLMK.FF.W.0013.000000T0000Z-220721T1030Z/
+/00000.0.ER.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
+</cap:parameter>
+</entry>
+<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=KY126400E59464.FlashFloodWarning.126400E5D988KY.JKLFFSJKL.9d02b884133948f11b7c5650fe4449b9</id>
 <updated>2022-07-21T03:53:00-04:00</updated>
 <published>2022-07-21T03:53:00-04:00</published>
@@ -1897,83 +1863,18 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=KY126400E58B04.SpecialWeatherStatement.126400E5AC9CKY.JKLSPSJKL.829d8fdf1dac2834f3296638016b0f09</id>
-<updated>2022-07-21T03:29:00-04:00</updated>
-<published>2022-07-21T03:29:00-04:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Special Weather Statement issued July 21 at 3:29AM EDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=KY126400E58B04.SpecialWeatherStatement.126400E5AC9CKY.JKLSPSJKL.829d8fdf1dac2834f3296638016b0f09"/>
-<summary>...A strong thunderstorm will impact portions of southeastern Wayne, southern McCreary and southwestern Whitley Counties through 415 AM EDT... At 329 AM EDT, Doppler radar was tracking a strong thunderstorm over Great Meadows Campsites, or 12 miles west of Whitley City, moving east at 40 mph.</summary>
-<cap:event>Special Weather Statement</cap:event>
-<cap:effective>2022-07-21T03:29:00-04:00</cap:effective>
-<cap:expires>2022-07-21T04:15:00-04:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Observed</cap:certainty>
-<cap:areaDesc>McCreary; Wayne; Whitley</cap:areaDesc>
-<cap:polygon>36.6,-84.76 36.75,-84.72 36.66,-84.11 36.59,-84.15 36.6,-84.76</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>021147 021231 021235</value>
-<valueName>UGC</valueName>
-<value>KYZ083 KYZ084 KYZ085</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value></value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=KY126400E5470C.FlashFloodWarning.126400E5CDD0KY.LMKFFWLMK.d32f589e4697d75b45f486920cc2b28c</id>
-<updated>2022-07-21T01:55:00-04:00</updated>
-<published>2022-07-21T01:55:00-04:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Flash Flood Warning issued July 21 at 1:55AM EDT until July 21 at 5:00AM EDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=KY126400E5470C.FlashFloodWarning.126400E5CDD0KY.LMKFFWLMK.d32f589e4697d75b45f486920cc2b28c"/>
-<summary>The National Weather Service in Louisville has extended the * Flash Flood Warning for... Southern Adair County in south central Kentucky... North Central Allen County in south central Kentucky... Barren County in south central Kentucky... Clinton County in south central Kentucky...</summary>
-<cap:event>Flash Flood Warning</cap:event>
-<cap:effective>2022-07-21T01:55:00-04:00</cap:effective>
-<cap:expires>2022-07-21T05:00:00-04:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Immediate</cap:urgency>
-<cap:severity>Severe</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Adair; Allen; Barren; Clinton; Cumberland; Metcalfe; Monroe; Russell</cap:areaDesc>
-<cap:polygon>37.06,-86.09 37.05,-86.07 37.11,-86.06 37.1,-84.9 36.96,-84.93 36.96,-84.95 36.92,-84.96 36.86,-85.06 36.83,-85.06 36.81,-85.03 36.75,-85 36.7,-85.02 36.68,-85 36.63,-85 36.86,-86.19 37.06,-86.09</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>021001 021003 021009 021053 021057 021169 021171 021207</value>
-<valueName>UGC</valueName>
-<value>KYC001 KYC003 KYC009 KYC053 KYC057 KYC169 KYC171 KYC207</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.EXT.KLMK.FF.W.0013.000000T0000Z-220721T0900Z/
-/00000.0.ER.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=KY126400E543EC.FloodAdvisory.126400E5CDD0KY.LMKFLSLMK.9f209d4722c8a5f77095a46e3015e8b9</id>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=KY126400E543EC.FloodAdvisory.126400E60098KY.LMKFLSLMK.9f209d4722c8a5f77095a46e3015e8b9</id>
 <updated>2022-07-21T01:47:00-04:00</updated>
 <published>2022-07-21T01:47:00-04:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Flood Advisory issued July 21 at 1:47AM EDT until July 21 at 5:00AM EDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=KY126400E543EC.FloodAdvisory.126400E5CDD0KY.LMKFLSLMK.9f209d4722c8a5f77095a46e3015e8b9"/>
+<title>Flood Advisory issued July 21 at 1:47AM EDT until July 21 at 6:30AM EDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=KY126400E543EC.FloodAdvisory.126400E60098KY.LMKFLSLMK.9f209d4722c8a5f77095a46e3015e8b9"/>
 <summary>...FLOOD ADVISORY IN EFFECT UNTIL 4 AM CDT EARLY THIS MORNING... * WHAT...Flooding caused by excessive rainfall is expected. * WHERE...A portion of SOUTH CENTRAL Kentucky, including the following county, Hart. * WHEN...Until 400 AM CDT. * IMPACTS...Minor flooding in low-lying and poor drainage areas.</summary>
 <cap:event>Flood Advisory</cap:event>
 <cap:effective>2022-07-21T01:47:00-04:00</cap:effective>
-<cap:expires>2022-07-21T05:00:00-04:00</cap:expires>
+<cap:expires>2022-07-21T06:30:00-04:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
 <cap:category>Met</cap:category>
@@ -1992,6 +1893,102 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <valueName>VTEC</valueName>
 <value>/O.NEW.KLMK.FA.Y.0076.220721T0547Z-220721T0900Z/
 /00000.N.ER.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=LA126400E5ADC8.HeatAdvisory.126400F3B080LA.SHVNPWSHV.e3ff204dac3252e4c0dcbaf91118e848</id>
+<updated>2022-07-21T03:18:00-05:00</updated>
+<published>2022-07-21T03:18:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Heat Advisory issued July 21 at 3:18AM CDT until July 21 at 7:00PM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=LA126400E5ADC8.HeatAdvisory.126400F3B080LA.SHVNPWSHV.e3ff204dac3252e4c0dcbaf91118e848"/>
+<summary>...HEAT ADVISORY REMAINS IN EFFECT FROM 1 PM THIS AFTERNOON TO 7 PM CDT THIS EVENING... * WHAT...Heat index values between 105 and 110 are expected. * WHERE...Portions of north central and northwest Louisiana, southeast Oklahoma, south central and southwest Arkansas and northeast Texas.</summary>
+<cap:event>Heat Advisory</cap:event>
+<cap:effective>2022-07-21T03:18:00-05:00</cap:effective>
+<cap:expires>2022-07-21T19:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Bienville; Bossier; Caddo; Caldwell; Claiborne; De Soto; Grant; Jackson; La Salle; Lincoln; Natchitoches; Ouachita; Red River; Union; Webster; Winn</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>022013 022015 022017 022021 022027 022031 022043 022049 022059 022061 022069 022073 022081 022111 022119 022127</value>
+<valueName>UGC</valueName>
+<value>LAZ001 LAZ002 LAZ003 LAZ004 LAZ005 LAZ006 LAZ010 LAZ011 LAZ012 LAZ013 LAZ014 LAZ018 LAZ019 LAZ020 LAZ021 LAZ022</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KSHV.HT.Y.0017.220721T1800Z-220722T0000Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=LA126400E5ADC8.HeatAdvisory.126400F3B080LA.SHVNPWSHV.68d728153fea2a580f5a2f48b9942bab</id>
+<updated>2022-07-21T03:18:00-05:00</updated>
+<published>2022-07-21T03:18:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Heat Advisory issued July 21 at 3:18AM CDT until July 21 at 7:00PM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=LA126400E5ADC8.HeatAdvisory.126400F3B080LA.SHVNPWSHV.68d728153fea2a580f5a2f48b9942bab"/>
+<summary>...HEAT ADVISORY IN EFFECT FROM 1 PM THIS AFTERNOON TO 7 PM CDT THIS EVENING... * WHAT...Heat index values between 105 and 110 are expected. * WHERE...Portions of northwest Louisiana and east and northeast Texas. * WHEN...From 1 PM to 7 PM CDT today.</summary>
+<cap:event>Heat Advisory</cap:event>
+<cap:effective>2022-07-21T03:18:00-05:00</cap:effective>
+<cap:expires>2022-07-21T19:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Sabine</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>022085</value>
+<valueName>UGC</valueName>
+<value>LAZ017</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.EXA.KSHV.HT.Y.0017.220721T1800Z-220722T0000Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=LA126400E5AD64.HeatAdvisory.126400F3B080LA.LIXNPWLIX.219821000039574ff30c0080e15d5409</id>
+<updated>2022-07-21T03:17:00-05:00</updated>
+<published>2022-07-21T03:17:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Heat Advisory issued July 21 at 3:17AM CDT until July 21 at 7:00PM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=LA126400E5AD64.HeatAdvisory.126400F3B080LA.LIXNPWLIX.219821000039574ff30c0080e15d5409"/>
+<summary>...HEAT ADVISORY REMAINS IN EFFECT FROM 11 AM THIS MORNING TO 7 PM CDT THIS EVENING... * WHAT...Heat index values up to 110 expected. * WHERE...Portions of southern Mississippi and southeast Louisiana. * WHEN..11 AM to 7 PM CDT Thursday.</summary>
+<cap:event>Heat Advisory</cap:event>
+<cap:effective>2022-07-21T03:17:00-05:00</cap:effective>
+<cap:expires>2022-07-21T19:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Assumption; Central Plaquemines; Central Tangipahoa; East Baton Rouge; East Feliciana; Eastern Ascension; Eastern Orleans; Iberville; Lower Jefferson; Lower St. Bernard; Lower Tangipahoa; Northern Livingston; Northern St. Tammany; Northern Tangipahoa; Pointe Coupee; Southeast St. Tammany; Southern Livingston; Southwestern St. Tammany; St. Charles; St. Helena; St. James; St. John The Baptist; Upper Jefferson; Upper Lafourche; Upper Plaquemines; Upper St. Bernard; Upper Terrebonne; Washington; West Baton Rouge; West Feliciana; Western Ascension; Western Orleans</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>022005 022007 022033 022037 022047 022051 022057 022063 022071 022075 022077 022087 022089 022091 022093 022095 022103 022105 022109 022117 022121 022125</value>
+<valueName>UGC</valueName>
+<value>LAZ034 LAZ035 LAZ036 LAZ037 LAZ039 LAZ046 LAZ047 LAZ048 LAZ056 LAZ057 LAZ058 LAZ059 LAZ060 LAZ064 LAZ065 LAZ070 LAZ071 LAZ076 LAZ077 LAZ078 LAZ079 LAZ080 LAZ081 LAZ082 LAZ083 LAZ084 LAZ085 LAZ086 LAZ087 LAZ088 LAZ089 LAZ090</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KLIX.HT.Y.0014.220721T1600Z-220722T0000Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -2024,71 +2021,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value>/O.CON.KJAN.HT.Y.0018.220721T1600Z-220722T0000Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=LA126400E4EADC.HeatAdvisory.126400F3B080LA.LIXNPWLIX.219821000039574ff30c0080e15d5409</id>
-<updated>2022-07-20T22:19:00-05:00</updated>
-<published>2022-07-20T22:19:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Heat Advisory issued July 20 at 10:19PM CDT until July 21 at 7:00PM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=LA126400E4EADC.HeatAdvisory.126400F3B080LA.LIXNPWLIX.219821000039574ff30c0080e15d5409"/>
-<summary>...HEAT ADVISORY REMAINS IN EFFECT FROM 11 AM TO 7 PM CDT THURSDAY... * WHAT...Heat index values up to 110 expected. * WHERE...Portions of southern Mississippi and southeast Louisiana. * WHEN..11 AM to 7 PM CDT Thursday.</summary>
-<cap:event>Heat Advisory</cap:event>
-<cap:effective>2022-07-20T22:19:00-05:00</cap:effective>
-<cap:expires>2022-07-21T19:00:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Assumption; Central Plaquemines; Central Tangipahoa; East Baton Rouge; East Feliciana; Eastern Ascension; Eastern Orleans; Iberville; Lower Jefferson; Lower St. Bernard; Lower Tangipahoa; Northern Livingston; Northern St. Tammany; Northern Tangipahoa; Pointe Coupee; Southeast St. Tammany; Southern Livingston; Southwestern St. Tammany; St. Charles; St. Helena; St. James; St. John The Baptist; Upper Jefferson; Upper Lafourche; Upper Plaquemines; Upper St. Bernard; Upper Terrebonne; Washington; West Baton Rouge; West Feliciana; Western Ascension; Western Orleans</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>022005 022007 022033 022037 022047 022051 022057 022063 022071 022075 022077 022087 022089 022091 022093 022095 022103 022105 022109 022117 022121 022125</value>
-<valueName>UGC</valueName>
-<value>LAZ034 LAZ035 LAZ036 LAZ037 LAZ039 LAZ046 LAZ047 LAZ048 LAZ056 LAZ057 LAZ058 LAZ059 LAZ060 LAZ064 LAZ065 LAZ070 LAZ071 LAZ076 LAZ077 LAZ078 LAZ079 LAZ080 LAZ081 LAZ082 LAZ083 LAZ084 LAZ085 LAZ086 LAZ087 LAZ088 LAZ089 LAZ090</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KLIX.HT.Y.0014.220721T1600Z-220722T0000Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=LA126400D81C58.HeatAdvisory.126400F3B080LA.SHVNPWSHV.e3ff204dac3252e4c0dcbaf91118e848</id>
-<updated>2022-07-20T14:26:00-05:00</updated>
-<published>2022-07-20T14:26:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Heat Advisory issued July 20 at 2:26PM CDT until July 21 at 7:00PM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=LA126400D81C58.HeatAdvisory.126400F3B080LA.SHVNPWSHV.e3ff204dac3252e4c0dcbaf91118e848"/>
-<summary>...EXCESSIVE HEAT WARNING REMAINS IN EFFECT UNTIL 7 PM CDT THIS EVENING... ...HEAT ADVISORY IN EFFECT FROM 1 PM TO 7 PM CDT THURSDAY... * WHAT...For the Excessive Heat Warning, dangerously hot conditions with heat index values above 110 degrees expected. For the Heat Advisory, heat index values above 105 expected.</summary>
-<cap:event>Heat Advisory</cap:event>
-<cap:effective>2022-07-20T14:26:00-05:00</cap:effective>
-<cap:expires>2022-07-21T19:00:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Bienville; Bossier; Caddo; Caldwell; Claiborne; De Soto; Grant; Jackson; La Salle; Lincoln; Natchitoches; Ouachita; Red River; Union; Webster; Winn</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>022013 022015 022017 022021 022027 022031 022043 022049 022059 022061 022069 022073 022081 022111 022119 022127</value>
-<valueName>UGC</valueName>
-<value>LAZ001 LAZ002 LAZ003 LAZ004 LAZ005 LAZ006 LAZ010 LAZ011 LAZ012 LAZ013 LAZ014 LAZ018 LAZ019 LAZ020 LAZ021 LAZ022</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.NEW.KSHV.HT.Y.0017.220721T1800Z-220722T0000Z/
-/O.CON.KSHV.EH.W.0002.000000T0000Z-220721T0000Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -2316,35 +2248,35 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=MN126400E59464.SpecialWeatherStatement.126400E5B278MN.MPXSPSMPX.e1413d7852c029c2f3838e80d3ffded8</id>
-<updated>2022-07-21T02:53:00-05:00</updated>
-<published>2022-07-21T02:53:00-05:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=MS126400E5AD64.HeatAdvisory.126400F3B080MS.LIXNPWLIX.d17c7f941b2cd8c997e630b0ea5d1db7</id>
+<updated>2022-07-21T03:17:00-05:00</updated>
+<published>2022-07-21T03:17:00-05:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Special Weather Statement issued July 21 at 2:53AM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MN126400E59464.SpecialWeatherStatement.126400E5B278MN.MPXSPSMPX.e1413d7852c029c2f3838e80d3ffded8"/>
-<summary>...A strong thunderstorm will impact portions of southwestern Sibley and northeastern Nicollet Counties through 330 AM CDT... At 253 AM CDT, Doppler radar was tracking a strong thunderstorm over Gibbon, or 18 miles north of New Ulm, moving east at 40 mph. HAZARD...Wind gusts up to 50 mph and penny size hail. SOURCE...Radar indicated.</summary>
-<cap:event>Special Weather Statement</cap:event>
-<cap:effective>2022-07-21T02:53:00-05:00</cap:effective>
-<cap:expires>2022-07-21T03:30:00-05:00</cap:expires>
+<title>Heat Advisory issued July 21 at 3:17AM CDT until July 21 at 7:00PM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MS126400E5AD64.HeatAdvisory.126400F3B080MS.LIXNPWLIX.d17c7f941b2cd8c997e630b0ea5d1db7"/>
+<summary>...HEAT ADVISORY REMAINS IN EFFECT FROM 11 AM THIS MORNING TO 7 PM CDT THIS EVENING... * WHAT...Heat index values up to 110 expected. * WHERE...Portions of southern Mississippi and southeast Louisiana. * WHEN..11 AM to 7 PM CDT Thursday.</summary>
+<cap:event>Heat Advisory</cap:event>
+<cap:effective>2022-07-21T03:17:00-05:00</cap:effective>
+<cap:expires>2022-07-21T19:00:00-05:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
 <cap:category>Met</cap:category>
 <cap:urgency>Expected</cap:urgency>
 <cap:severity>Minor</cap:severity>
-<cap:certainty>Observed</cap:certainty>
-<cap:areaDesc>Nicollet; Sibley</cap:areaDesc>
-<cap:polygon>44.53,-94.63 44.56,-94.63 44.61,-94.62 44.58,-93.98 44.31,-94.08 44.53,-94.63</cap:polygon>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Amite; Hancock; Harrison; Jackson; Pearl River; Pike; Walthall; Wilkinson</cap:areaDesc>
+<cap:polygon></cap:polygon>
 <cap:geocode>
 <valueName>FIPS6</valueName>
-<value>027103 027143</value>
+<value>028005 028045 028047 028059 028109 028113 028147 028157</value>
 <valueName>UGC</valueName>
-<value>MNZ067 MNZ075</value>
+<value>MSZ068 MSZ069 MSZ070 MSZ071 MSZ077 MSZ080 MSZ081 MSZ082</value>
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
-<value></value>
+<value>/O.CON.KLIX.HT.Y.0014.220721T1600Z-220722T0000Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -2444,38 +2376,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=MS126400E4EADC.HeatAdvisory.126400F3B080MS.LIXNPWLIX.d17c7f941b2cd8c997e630b0ea5d1db7</id>
-<updated>2022-07-20T22:19:00-05:00</updated>
-<published>2022-07-20T22:19:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Heat Advisory issued July 20 at 10:19PM CDT until July 21 at 7:00PM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MS126400E4EADC.HeatAdvisory.126400F3B080MS.LIXNPWLIX.d17c7f941b2cd8c997e630b0ea5d1db7"/>
-<summary>...HEAT ADVISORY REMAINS IN EFFECT FROM 11 AM TO 7 PM CDT THURSDAY... * WHAT...Heat index values up to 110 expected. * WHERE...Portions of southern Mississippi and southeast Louisiana. * WHEN..11 AM to 7 PM CDT Thursday.</summary>
-<cap:event>Heat Advisory</cap:event>
-<cap:effective>2022-07-20T22:19:00-05:00</cap:effective>
-<cap:expires>2022-07-21T19:00:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Amite; Hancock; Harrison; Jackson; Pearl River; Pike; Walthall; Wilkinson</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>028005 028045 028047 028059 028109 028113 028147 028157</value>
-<valueName>UGC</valueName>
-<value>MSZ068 MSZ069 MSZ070 MSZ071 MSZ077 MSZ080 MSZ081 MSZ082</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KLIX.HT.Y.0014.220721T1600Z-220722T0000Z/</value>
-</cap:parameter>
-</entry>
-<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=MT126400D84FE8.FireWeatherWatch.1264010367F0MT.MSORFWMSO.e36d5388a01401386c937b68e1e1469a</id>
 <updated>2022-07-20T14:58:00-06:00</updated>
 <published>2022-07-20T14:58:00-06:00</published>
@@ -2505,6 +2405,71 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value>/O.NEW.KMSO.FW.A.0001.220722T1800Z-220723T0300Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=NC126400E5B1B0.FloodWarning.126400E66A10NC.MRXFLWMRX.50a3a6e554436576a482297ed91daced</id>
+<updated>2022-07-21T04:28:00-04:00</updated>
+<published>2022-07-21T04:28:00-04:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Flood Warning issued July 21 at 4:28AM EDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=NC126400E5B1B0.FloodWarning.126400E66A10NC.MRXFLWMRX.50a3a6e554436576a482297ed91daced"/>
+<summary>...FLOOD WARNING IN EFFECT UNTIL 9 AM EDT THIS MORNING... ...REPLACES FLASH FLOOD WARNING... * WHAT...Flooding caused by excessive rainfall is expected to continue into the morning hours. * WHERE...A portion of southwest North Carolina, including the following counties, Cherokee and Clay.</summary>
+<cap:event>Flood Warning</cap:event>
+<cap:effective>2022-07-21T04:28:00-04:00</cap:effective>
+<cap:expires>2022-07-21T09:00:00-04:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Cherokee; Clay</cap:areaDesc>
+<cap:polygon>35.07,-84.07 35.16,-84.14 35.21,-84.13 35.28,-84.02 35.27,-84.01 35.23,-84 35.22,-83.97 35.22,-83.94 35.24,-83.9 35.23,-83.89 35.26,-83.84 35.19,-83.78 35.15,-83.8 35.1,-83.79 35.07,-83.8 35.06,-83.83 35.03,-83.87 35.07,-84.07</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>037039 037043</value>
+<valueName>UGC</valueName>
+<value>NCC039 NCC043</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.NEW.KMRX.FA.W.0001.220721T0828Z-220721T1300Z/
+/00000.0.ER.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=NC126400E5B1B0.HeatAdvisory.126400F3B080NC.RAHNPWRAH.7df43bd3d27983c89914578bfb82d4df</id>
+<updated>2022-07-21T04:28:00-04:00</updated>
+<published>2022-07-21T04:28:00-04:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Heat Advisory issued July 21 at 4:28AM EDT until July 21 at 8:00PM EDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=NC126400E5B1B0.HeatAdvisory.126400F3B080NC.RAHNPWRAH.7df43bd3d27983c89914578bfb82d4df"/>
+<summary>...HEAT ADVISORY REMAINS IN EFFECT FROM NOON TODAY TO 8 PM EDT THIS EVENING... * WHAT...Heat index values of 105 to 109 expected. * WHERE...The Coastal Plain, Sandhills, and portions of the Northeast Piedmont of central North Carolina. * WHEN...From noon to 8 PM EDT Thursday.</summary>
+<cap:event>Heat Advisory</cap:event>
+<cap:effective>2022-07-21T04:28:00-04:00</cap:effective>
+<cap:expires>2022-07-21T20:00:00-04:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Chatham; Cumberland; Durham; Edgecombe; Franklin; Halifax; Harnett; Hoke; Johnston; Lee; Moore; Nash; Orange; Richmond; Sampson; Scotland; Wake; Warren; Wayne; Wilson</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>037037 037051 037063 037065 037069 037083 037085 037093 037101 037105 037125 037127 037135 037153 037163 037165 037183 037185 037191 037195</value>
+<valueName>UGC</valueName>
+<value>NCZ010 NCZ011 NCZ024 NCZ025 NCZ026 NCZ027 NCZ028 NCZ040 NCZ041 NCZ042 NCZ043 NCZ075 NCZ076 NCZ077 NCZ078 NCZ084 NCZ085 NCZ086 NCZ088 NCZ089</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KRAH.HT.Y.0008.220721T1600Z-220722T0000Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -2670,39 +2635,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=NC126400E56200.FlashFloodWarning.126400E5CDD0NC.MRXFFWMRX.9a5aa75360445224928ef9e30afd8c93</id>
-<updated>2022-07-21T02:24:00-04:00</updated>
-<published>2022-07-21T02:24:00-04:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Flash Flood Warning issued July 21 at 2:24AM EDT until July 21 at 5:00AM EDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=NC126400E56200.FlashFloodWarning.126400E5CDD0NC.MRXFFWMRX.9a5aa75360445224928ef9e30afd8c93"/>
-<summary>The National Weather Service in Morristown has extended the * Flash Flood Warning for... Eastern Cherokee County in southwestern North Carolina... Clay County in southwestern North Carolina... * Until 500 AM EDT. * At 224 AM EDT, Doppler radar indicated thunderstorms producing</summary>
-<cap:event>Flash Flood Warning</cap:event>
-<cap:effective>2022-07-21T02:24:00-04:00</cap:effective>
-<cap:expires>2022-07-21T05:00:00-04:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Immediate</cap:urgency>
-<cap:severity>Severe</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Cherokee; Clay</cap:areaDesc>
-<cap:polygon>35.08,-84.05 35.13,-84.06 35.21,-84.03 35.23,-83.99 35.22,-83.96 35.26,-83.84 35.24,-83.76 35.26,-83.71 35.23,-83.69 35.2,-83.73 35.2,-83.72 35.16,-83.74 35.16,-83.66 35.14,-83.65 35.13,-83.62 35,-83.52 34.99,-83.48 34.99,-83.64 35.03,-83.86 35.08,-84.05</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>037039 037043</value>
-<valueName>UGC</valueName>
-<value>NCC039 NCC043</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.EXT.KMRX.FF.W.0015.000000T0000Z-220721T0900Z/
-/00000.0.ER.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
-</cap:parameter>
-</entry>
-<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=NC126400E56138.FlashFloodWarning.126400E5D988NC.GSPFFWGSP.875643b873641f84e7f721169c086beb</id>
 <updated>2022-07-21T02:22:00-04:00</updated>
 <published>2022-07-21T02:22:00-04:00</published>
@@ -2733,39 +2665,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <valueName>VTEC</valueName>
 <value>/O.NEW.KGSP.FF.W.0017.220721T0622Z-220721T0930Z/
 /00000.0.ER.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=NC126400E5344C.FloodAdvisory.126400E5D988NC.GSPFLSGSP.aa31f5dcf8e563048763237bf32f89d2</id>
-<updated>2022-07-21T01:07:00-04:00</updated>
-<published>2022-07-21T01:07:00-04:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Flood Advisory issued July 21 at 1:07AM EDT until July 21 at 5:30AM EDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=NC126400E5344C.FloodAdvisory.126400E5D988NC.GSPFLSGSP.aa31f5dcf8e563048763237bf32f89d2"/>
-<summary>...FLOOD ADVISORY IN EFFECT UNTIL 415 AM EDT EARLY THIS MORNING... * WHAT...Small stream flooding caused by excessive rainfall is expected. * WHERE...A portion of western North Carolina, including the following county, Swain. * WHEN...Until 415 AM EDT.</summary>
-<cap:event>Flood Advisory</cap:event>
-<cap:effective>2022-07-21T01:07:00-04:00</cap:effective>
-<cap:expires>2022-07-21T05:30:00-04:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Swain</cap:areaDesc>
-<cap:polygon>35.45,-83.79 35.51,-83.76 35.49,-83.64 35.44,-83.59 35.44,-83.62 35.44,-83.64 35.43,-83.65 35.43,-83.66 35.44,-83.7 35.45,-83.74 35.45,-83.79</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>037173</value>
-<valueName>UGC</valueName>
-<value>NCC173</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.NEW.KGSP.FA.Y.0093.220721T0507Z-220721T0815Z/
-/00000.N.ER.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -2830,38 +2729,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value>/O.NEW.KMHX.BH.S.0034.220721T1200Z-220722T0000Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=NC126400D8022C.HeatAdvisory.126400F3B080NC.RAHNPWRAH.7df43bd3d27983c89914578bfb82d4df</id>
-<updated>2022-07-20T14:59:00-04:00</updated>
-<published>2022-07-20T14:59:00-04:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Heat Advisory issued July 20 at 2:59PM EDT until July 21 at 8:00PM EDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=NC126400D8022C.HeatAdvisory.126400F3B080NC.RAHNPWRAH.7df43bd3d27983c89914578bfb82d4df"/>
-<summary>...HEAT ADVISORY IN EFFECT FROM NOON TO 8 PM EDT THURSDAY... * WHAT...Heat index values of 105 to 109 expected. * WHERE...The Coastal Plain, Sandhills, and portions of the Northeast Piedmont of central North Carolina. * WHEN...From noon to 8 PM EDT Thursday. * IMPACTS...Hot temperatures and high humidity may cause heat</summary>
-<cap:event>Heat Advisory</cap:event>
-<cap:effective>2022-07-20T14:59:00-04:00</cap:effective>
-<cap:expires>2022-07-21T20:00:00-04:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Chatham; Cumberland; Durham; Edgecombe; Franklin; Halifax; Harnett; Hoke; Johnston; Lee; Moore; Nash; Orange; Richmond; Sampson; Scotland; Wake; Warren; Wayne; Wilson</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>037037 037051 037063 037065 037069 037083 037085 037093 037101 037105 037125 037127 037135 037153 037163 037165 037183 037185 037191 037195</value>
-<valueName>UGC</valueName>
-<value>NCZ010 NCZ011 NCZ024 NCZ025 NCZ026 NCZ027 NCZ028 NCZ040 NCZ041 NCZ042 NCZ043 NCZ075 NCZ076 NCZ077 NCZ078 NCZ084 NCZ085 NCZ086 NCZ088 NCZ089</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.NEW.KRAH.HT.Y.0008.220721T1600Z-220722T0000Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -3347,6 +3214,38 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=NY126400E5AD00.BeachHazardsStatement.126400F3B080NY.BUFCFWBUF.dca75218c539306400d6d9f441484381</id>
+<updated>2022-07-21T04:16:00-04:00</updated>
+<published>2022-07-21T04:16:00-04:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Beach Hazards Statement issued July 21 at 4:16AM EDT until July 21 at 8:00PM EDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=NY126400E5AD00.BeachHazardsStatement.126400F3B080NY.BUFCFWBUF.dca75218c539306400d6d9f441484381"/>
+<summary>...BEACH HAZARDS STATEMENT IN EFFECT FROM 11 AM EDT THIS MORNING THROUGH THIS EVENING... * WHAT...Strong currents and dangerous swimming conditions expected. * WHERE...Beaches of Erie county. * WHEN...From 11 AM EDT this morning through this evening.</summary>
+<cap:event>Beach Hazards Statement</cap:event>
+<cap:effective>2022-07-21T04:16:00-04:00</cap:effective>
+<cap:expires>2022-07-21T20:00:00-04:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Northern Erie; Southern Erie</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>036029</value>
+<valueName>UGC</valueName>
+<value>NYZ010 NYZ085</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.NEW.KBUF.BH.S.0009.220721T1500Z-220722T0000Z/</value>
+</cap:parameter>
+</entry>
+<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=NY126400E59464.HeatAdvisory.126400F3B080NY.ALYNPWALY.9aa3fd88754d655a567904ce816b3886</id>
 <updated>2022-07-21T03:53:00-04:00</updated>
 <published>2022-07-21T03:53:00-04:00</published>
@@ -3539,6 +3438,70 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=OK126400E5AF58.HeatAdvisory.126400F3D790OK.TSANPWTSA.2122bf66680c52fee3755bab27764fd2</id>
+<updated>2022-07-21T03:22:00-05:00</updated>
+<published>2022-07-21T03:22:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Heat Advisory issued July 21 at 3:22AM CDT until July 21 at 8:00PM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=OK126400E5AF58.HeatAdvisory.126400F3D790OK.TSANPWTSA.2122bf66680c52fee3755bab27764fd2"/>
+<summary>...HEAT ADVISORY REMAINS IN EFFECT FROM NOON TODAY TO 8 PM CDT THIS EVENING... * WHAT...Heat index values up to 108 expected. * WHERE...Portions of east central, northeast and southeast Oklahoma and northwest and west central Arkansas. * WHEN...For the Excessive Heat Warning, until 8 PM CDT this</summary>
+<cap:event>Heat Advisory</cap:event>
+<cap:effective>2022-07-21T03:22:00-05:00</cap:effective>
+<cap:expires>2022-07-21T20:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Adair; Cherokee; Choctaw; Craig; Creek; Delaware; Haskell; Latimer; Le Flore; Mayes; McIntosh; Muskogee; Nowata; Okfuskee; Okmulgee; Osage; Ottawa; Pawnee; Pittsburg; Pushmataha; Rogers; Sequoyah; Tulsa; Wagoner; Washington</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>040001 040021 040023 040035 040037 040041 040061 040077 040079 040091 040097 040101 040105 040107 040111 040113 040115 040117 040121 040127 040131 040135 040143 040145 040147</value>
+<valueName>UGC</valueName>
+<value>OKZ049 OKZ053 OKZ054 OKZ055 OKZ056 OKZ057 OKZ058 OKZ059 OKZ060 OKZ061 OKZ062 OKZ063 OKZ064 OKZ065 OKZ066 OKZ067 OKZ068 OKZ069 OKZ070 OKZ071 OKZ072 OKZ073 OKZ074 OKZ075 OKZ076</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KTSA.HT.Y.0027.220721T1700Z-220722T0100Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=OK126400E5ADC8.HeatAdvisory.126400F3B080OK.SHVNPWSHV.05aef32847e201f01e720ebdae99e23a</id>
+<updated>2022-07-21T03:18:00-05:00</updated>
+<published>2022-07-21T03:18:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Heat Advisory issued July 21 at 3:18AM CDT until July 21 at 7:00PM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=OK126400E5ADC8.HeatAdvisory.126400F3B080OK.SHVNPWSHV.05aef32847e201f01e720ebdae99e23a"/>
+<summary>...HEAT ADVISORY REMAINS IN EFFECT FROM 1 PM THIS AFTERNOON TO 7 PM CDT THIS EVENING... * WHAT...Heat index values between 105 and 110 are expected. * WHERE...Portions of north central and northwest Louisiana, southeast Oklahoma, south central and southwest Arkansas and northeast Texas.</summary>
+<cap:event>Heat Advisory</cap:event>
+<cap:effective>2022-07-21T03:18:00-05:00</cap:effective>
+<cap:expires>2022-07-21T19:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>McCurtain</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>040089</value>
+<valueName>UGC</valueName>
+<value>OKZ077</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KSHV.HT.Y.0017.220721T1800Z-220722T0000Z/</value>
+</cap:parameter>
+</entry>
+<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=OK126400E59144.HeatAdvisory.126400F3D790OK.OUNNPWOUN.cf71c0a998f1201ab396852ba07133de</id>
 <updated>2022-07-21T02:45:00-05:00</updated>
 <published>2022-07-21T02:45:00-05:00</published>
@@ -3571,39 +3534,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=OK126400D81C58.HeatAdvisory.126400F3B080OK.SHVNPWSHV.05aef32847e201f01e720ebdae99e23a</id>
-<updated>2022-07-20T14:26:00-05:00</updated>
-<published>2022-07-20T14:26:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Heat Advisory issued July 20 at 2:26PM CDT until July 21 at 7:00PM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=OK126400D81C58.HeatAdvisory.126400F3B080OK.SHVNPWSHV.05aef32847e201f01e720ebdae99e23a"/>
-<summary>...EXCESSIVE HEAT WARNING REMAINS IN EFFECT UNTIL 7 PM CDT THIS EVENING... ...HEAT ADVISORY IN EFFECT FROM 1 PM TO 7 PM CDT THURSDAY... * WHAT...For the Excessive Heat Warning, dangerously hot conditions with heat index values above 110 degrees expected. For the Heat Advisory, heat index values above 105 expected.</summary>
-<cap:event>Heat Advisory</cap:event>
-<cap:effective>2022-07-20T14:26:00-05:00</cap:effective>
-<cap:expires>2022-07-21T19:00:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>McCurtain</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>040089</value>
-<valueName>UGC</valueName>
-<value>OKZ077</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.NEW.KSHV.HT.Y.0017.220721T1800Z-220722T0000Z/
-/O.CON.KSHV.EH.W.0002.000000T0000Z-220721T0000Z/</value>
-</cap:parameter>
-</entry>
-<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=OK126400D8199C.AirQualityAlert.126400F3E348OK.TSAAQATSA.fd8865d955af11605ef4258a6d8eb08b</id>
 <updated>2022-07-20T14:19:00-05:00</updated>
 <published>2022-07-20T14:19:00-05:00</published>
@@ -3633,72 +3563,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value></value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=OK126400D81938.HeatAdvisory.126400F3D790OK.TSANPWTSA.ad4f2ec5d59e57ba6eab600d183ed971</id>
-<updated>2022-07-20T14:18:00-05:00</updated>
-<published>2022-07-20T14:18:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Heat Advisory issued July 20 at 2:18PM CDT until July 21 at 8:00PM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=OK126400D81938.HeatAdvisory.126400F3D790OK.TSANPWTSA.ad4f2ec5d59e57ba6eab600d183ed971"/>
-<summary>...EXCESSIVE HEAT WARNING REMAINS IN EFFECT UNTIL 8 PM CDT THIS EVENING... ...HEAT ADVISORY IN EFFECT FROM NOON TO 8 PM CDT THURSDAY... * WHAT...For the Excessive Heat Warning, dangerously hot conditions with heat index values up to 110. For the Heat Advisory, heat index values up to 108 expected.</summary>
-<cap:event>Heat Advisory</cap:event>
-<cap:effective>2022-07-20T14:18:00-05:00</cap:effective>
-<cap:expires>2022-07-21T20:00:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Choctaw; Craig; Creek; Haskell; Latimer; Le Flore; Mayes; McIntosh; Muskogee; Nowata; Okfuskee; Okmulgee; Osage; Pawnee; Pittsburg; Pushmataha; Rogers; Sequoyah; Tulsa; Wagoner; Washington</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>040023 040035 040037 040061 040077 040079 040091 040097 040101 040105 040107 040111 040113 040117 040121 040127 040131 040135 040143 040145 040147</value>
-<valueName>UGC</valueName>
-<value>OKZ049 OKZ053 OKZ054 OKZ055 OKZ056 OKZ057 OKZ059 OKZ060 OKZ061 OKZ062 OKZ064 OKZ065 OKZ066 OKZ067 OKZ070 OKZ071 OKZ072 OKZ073 OKZ074 OKZ075 OKZ076</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.NEW.KTSA.HT.Y.0027.220721T1700Z-220722T0100Z/
-/O.CON.KTSA.EH.W.0006.000000T0000Z-220721T0100Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=OK126400D81938.HeatAdvisory.126400F3D790OK.TSANPWTSA.d5e7be6de0e4c385dcea4d523b3e0c18</id>
-<updated>2022-07-20T14:18:00-05:00</updated>
-<published>2022-07-20T14:18:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Heat Advisory issued July 20 at 2:18PM CDT until July 21 at 8:00PM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=OK126400D81938.HeatAdvisory.126400F3D790OK.TSANPWTSA.d5e7be6de0e4c385dcea4d523b3e0c18"/>
-<summary>...HEAT ADVISORY REMAINS IN EFFECT UNTIL 8 PM CDT THIS EVENING... ...HEAT ADVISORY IN EFFECT FROM NOON TO 8 PM CDT THURSDAY... * WHAT...For the first Heat Advisory, heat index values up to 109. For the second Heat Advisory, heat index values up to 107 expected. * WHERE...Ottawa, Delaware, Cherokee and Adair Counties.</summary>
-<cap:event>Heat Advisory</cap:event>
-<cap:effective>2022-07-20T14:18:00-05:00</cap:effective>
-<cap:expires>2022-07-21T20:00:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Adair; Cherokee; Delaware; Ottawa</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>040001 040021 040041 040115</value>
-<valueName>UGC</valueName>
-<value>OKZ058 OKZ063 OKZ068 OKZ069</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.NEW.KTSA.HT.Y.0027.220721T1700Z-220722T0100Z/
-/O.CON.KTSA.HT.Y.0026.000000T0000Z-220721T0100Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -4286,67 +4150,427 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=TN126400E5A7EC.SevereWeatherStatement.126400E60674TN.MRXSVSMRX.f5c433ea94fd2475af3b0339b551b61b</id>
-<updated>2022-07-21T03:03:00-05:00</updated>
-<published>2022-07-21T03:03:00-05:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=TN126400E5B46C.FloodAdvisory.126400E5D3ACTN.MRXFLSMRX.9564271ea450c80f17468d6535ea1f58</id>
+<updated>2022-07-21T03:35:00-05:00</updated>
+<published>2022-07-21T03:35:00-05:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Severe Weather Statement issued July 21 at 3:03AM CDT until July 21 at 5:45AM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=TN126400E5A7EC.SevereWeatherStatement.126400E60674TN.MRXSVSMRX.f5c433ea94fd2475af3b0339b551b61b"/>
-<summary>...THE SEVERE THUNDERSTORM WARNING FOR NORTHWESTERN ANDERSON... SOUTHWESTERN CAMPBELL AND SCOTT COUNTIES IS CANCELLED... The storm which prompted the warning has weakened below severe limits, and no longer poses an immediate threat to life or property. Therefore, the warning has been cancelled. However gusty winds and heavy rain are still possible with this thunderstorm.</summary>
-<cap:event>Severe Weather Statement</cap:event>
-<cap:effective>2022-07-21T03:03:00-05:00</cap:effective>
+<title>Flood Advisory issued July 21 at 3:35AM CDT until July 21 at 4:15AM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=TN126400E5B46C.FloodAdvisory.126400E5D3ACTN.MRXFLSMRX.9564271ea450c80f17468d6535ea1f58"/>
+<summary>...FLOOD ADVISORY NOW IN EFFECT UNTIL 715 AM EDT THIS MORNING... * WHAT...Flooding caused by excessive rainfall continues. * WHERE...A portion of east Tennessee, including the following counties, Blount, Cocke and Sevier. * WHEN...Until 715 AM EDT. * IMPACTS...Minor flooding in low-lying and poor drainage areas.</summary>
+<cap:event>Flood Advisory</cap:event>
+<cap:effective>2022-07-21T03:35:00-05:00</cap:effective>
+<cap:expires>2022-07-21T04:15:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Sevier</cap:areaDesc>
+<cap:polygon>35.65,-83.82 35.87,-83.15 35.77,-83.11 35.77,-83.16 35.73,-83.19 35.73,-83.24 35.72,-83.26 35.7,-83.25 35.66,-83.3 35.66,-83.35 35.62,-83.4 35.61,-83.45 35.56,-83.5 35.56,-83.59 35.58,-83.6 35.57,-83.64 35.56,-83.77 35.65,-83.82</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>047155</value>
+<valueName>UGC</valueName>
+<value>TNC155</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.EXT.KMRX.FA.Y.0083.000000T0000Z-220721T1115Z/
+/00000.N.ER.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=TN126400E5B46C.FloodAdvisory.126400E60674TN.MRXFLSMRX.81993b7284f096d09d67f9d373685c71</id>
+<updated>2022-07-21T03:35:00-05:00</updated>
+<published>2022-07-21T03:35:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Flood Advisory issued July 21 at 3:35AM CDT until July 21 at 5:45AM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=TN126400E5B46C.FloodAdvisory.126400E60674TN.MRXFLSMRX.81993b7284f096d09d67f9d373685c71"/>
+<summary>...FLOOD ADVISORY NOW IN EFFECT UNTIL 715 AM EDT THIS MORNING... * WHAT...Flooding caused by excessive rainfall continues. * WHERE...A portion of east Tennessee, including the following counties, Blount, Cocke and Sevier. * WHEN...Until 715 AM EDT. * IMPACTS...Minor flooding in low-lying and poor drainage areas.</summary>
+<cap:event>Flood Advisory</cap:event>
+<cap:effective>2022-07-21T03:35:00-05:00</cap:effective>
 <cap:expires>2022-07-21T05:45:00-05:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
 <cap:category>Met</cap:category>
-<cap:urgency>Immediate</cap:urgency>
-<cap:severity>Severe</cap:severity>
-<cap:certainty>Observed</cap:certainty>
-<cap:areaDesc>Anderson; Campbell</cap:areaDesc>
-<cap:polygon>36.6,-84.6 36.38,-84.09 36.1,-84.28 36.37,-84.7 36.39,-84.69 36.4,-84.66 36.41,-84.67 36.41,-84.66 36.44,-84.69 36.5,-84.71 36.6,-84.78 36.6,-84.6</cap:polygon>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Blount</cap:areaDesc>
+<cap:polygon>35.65,-83.82 35.87,-83.15 35.77,-83.11 35.77,-83.16 35.73,-83.19 35.73,-83.24 35.72,-83.26 35.7,-83.25 35.66,-83.3 35.66,-83.35 35.62,-83.4 35.61,-83.45 35.56,-83.5 35.56,-83.59 35.58,-83.6 35.57,-83.64 35.56,-83.77 35.65,-83.82</cap:polygon>
 <cap:geocode>
 <valueName>FIPS6</valueName>
-<value>047001 047013</value>
+<value>047009</value>
 <valueName>UGC</valueName>
-<value>TNC001 TNC013</value>
+<value>TNC009</value>
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
-<value>/O.CAN.KMRX.SV.W.0140.000000T0000Z-220721T0815Z/</value>
+<value>/O.EXT.KMRX.FA.Y.0083.000000T0000Z-220721T1115Z/
+/00000.N.ER.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=TN126400E5A7EC.SevereWeatherStatement.126400E61BF0TN.MRXSVSMRX.0d8272b77907c9525e10df9917de49b2</id>
-<updated>2022-07-21T03:03:00-05:00</updated>
-<published>2022-07-21T03:03:00-05:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=TN126400E5B46C.FloodAdvisory.126400E61BF0TN.MRXFLSMRX.74e521a68dddea8180ae861ac072b282</id>
+<updated>2022-07-21T03:35:00-05:00</updated>
+<published>2022-07-21T03:35:00-05:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Severe Weather Statement issued July 21 at 3:03AM CDT until July 21 at 6:00AM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=TN126400E5A7EC.SevereWeatherStatement.126400E61BF0TN.MRXSVSMRX.0d8272b77907c9525e10df9917de49b2"/>
-<summary>...THE SEVERE THUNDERSTORM WARNING FOR NORTHWESTERN ANDERSON... SOUTHWESTERN CAMPBELL AND SCOTT COUNTIES IS CANCELLED... The storm which prompted the warning has weakened below severe limits, and no longer poses an immediate threat to life or property. Therefore, the warning has been cancelled. However gusty winds and heavy rain are still possible with this thunderstorm.</summary>
-<cap:event>Severe Weather Statement</cap:event>
-<cap:effective>2022-07-21T03:03:00-05:00</cap:effective>
+<title>Flood Advisory issued July 21 at 3:35AM CDT until July 21 at 6:00AM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=TN126400E5B46C.FloodAdvisory.126400E61BF0TN.MRXFLSMRX.74e521a68dddea8180ae861ac072b282"/>
+<summary>...FLOOD ADVISORY NOW IN EFFECT UNTIL 715 AM EDT THIS MORNING... * WHAT...Flooding caused by excessive rainfall continues. * WHERE...A portion of east Tennessee, including the following counties, Blount, Cocke and Sevier. * WHEN...Until 715 AM EDT. * IMPACTS...Minor flooding in low-lying and poor drainage areas.</summary>
+<cap:event>Flood Advisory</cap:event>
+<cap:effective>2022-07-21T03:35:00-05:00</cap:effective>
 <cap:expires>2022-07-21T06:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Cocke</cap:areaDesc>
+<cap:polygon>35.65,-83.82 35.87,-83.15 35.77,-83.11 35.77,-83.16 35.73,-83.19 35.73,-83.24 35.72,-83.26 35.7,-83.25 35.66,-83.3 35.66,-83.35 35.62,-83.4 35.61,-83.45 35.56,-83.5 35.56,-83.59 35.58,-83.6 35.57,-83.64 35.56,-83.77 35.65,-83.82</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>047029</value>
+<valueName>UGC</valueName>
+<value>TNC029</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.EXT.KMRX.FA.Y.0083.000000T0000Z-220721T1115Z/
+/00000.N.ER.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=TN126400E5B3A4.FloodAdvisory.126400E5B854TN.OHXFLSOHX.1beb93f34ec8246274f0b9cdba0439a7</id>
+<updated>2022-07-21T03:33:00-05:00</updated>
+<published>2022-07-21T03:33:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Flood Advisory issued July 21 at 3:33AM CDT until July 21 at 3:45AM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=TN126400E5B3A4.FloodAdvisory.126400E5B854TN.OHXFLSOHX.1beb93f34ec8246274f0b9cdba0439a7"/>
+<summary>...FLOOD ADVISORY IN EFFECT UNTIL 530 AM CDT EARLY THIS MORNING... * WHAT...Flooding caused by excessive rainfall is expected. * WHERE...A portion of Middle Tennessee, including the following counties, De Kalb, Smith and Wilson. * WHEN...Until 530 AM CDT. * IMPACTS...Minor flooding in low-lying and poor drainage areas.</summary>
+<cap:event>Flood Advisory</cap:event>
+<cap:effective>2022-07-21T03:33:00-05:00</cap:effective>
+<cap:expires>2022-07-21T03:45:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Wilson</cap:areaDesc>
+<cap:polygon>35.98,-86.12 36.11,-86.49 36.3,-86.5 36.24,-86.16 36.2,-85.8 36.18,-85.8 36.17,-85.8 36.13,-85.81 36.11,-85.79 35.99,-85.78 35.98,-86.12</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>047189</value>
+<valueName>UGC</valueName>
+<value>TNC189</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.NEW.KOHX.FA.Y.0052.220721T0833Z-220721T1030Z/
+/00000.N.ER.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=TN126400E5B3A4.FloodAdvisory.126400E5D3ACTN.OHXFLSOHX.ed5b40c6b6cc41b8deb7fd6be7578a9e</id>
+<updated>2022-07-21T03:33:00-05:00</updated>
+<published>2022-07-21T03:33:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Flood Advisory issued July 21 at 3:33AM CDT until July 21 at 4:15AM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=TN126400E5B3A4.FloodAdvisory.126400E5D3ACTN.OHXFLSOHX.ed5b40c6b6cc41b8deb7fd6be7578a9e"/>
+<summary>...FLOOD ADVISORY IN EFFECT UNTIL 530 AM CDT EARLY THIS MORNING... * WHAT...Flooding caused by excessive rainfall is expected. * WHERE...A portion of Middle Tennessee, including the following counties, De Kalb, Smith and Wilson. * WHEN...Until 530 AM CDT. * IMPACTS...Minor flooding in low-lying and poor drainage areas.</summary>
+<cap:event>Flood Advisory</cap:event>
+<cap:effective>2022-07-21T03:33:00-05:00</cap:effective>
+<cap:expires>2022-07-21T04:15:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>De Kalb; Smith</cap:areaDesc>
+<cap:polygon>35.98,-86.12 36.11,-86.49 36.3,-86.5 36.24,-86.16 36.2,-85.8 36.18,-85.8 36.17,-85.8 36.13,-85.81 36.11,-85.79 35.99,-85.78 35.98,-86.12</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>047041 047159</value>
+<valueName>UGC</valueName>
+<value>TNC041 TNC159</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.NEW.KOHX.FA.Y.0052.220721T0833Z-220721T1030Z/
+/00000.N.ER.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=TN126400E5B278.SevereThunderstormWarning.126400E5D3ACTN.OHXSVROHX.d420f691b59638b7d58406e269a369ef</id>
+<updated>2022-07-21T03:30:00-05:00</updated>
+<published>2022-07-21T03:30:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Severe Thunderstorm Warning issued July 21 at 3:30AM CDT until July 21 at 4:15AM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=TN126400E5B278.SevereThunderstormWarning.126400E5D3ACTN.OHXSVROHX.d420f691b59638b7d58406e269a369ef"/>
+<summary>The National Weather Service in Nashville has issued a * Severe Thunderstorm Warning for... Southern Overton County in Middle Tennessee... Northwestern Cumberland County in Middle Tennessee... Southeastern Smith County in Middle Tennessee... Northeastern De Kalb County in Middle Tennessee...</summary>
+<cap:event>Severe Thunderstorm Warning</cap:event>
+<cap:effective>2022-07-21T03:30:00-05:00</cap:effective>
+<cap:expires>2022-07-21T04:15:00-05:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
 <cap:category>Met</cap:category>
 <cap:urgency>Immediate</cap:urgency>
 <cap:severity>Severe</cap:severity>
 <cap:certainty>Observed</cap:certainty>
-<cap:areaDesc>Scott</cap:areaDesc>
-<cap:polygon>36.6,-84.6 36.38,-84.09 36.1,-84.28 36.37,-84.7 36.39,-84.69 36.4,-84.66 36.41,-84.67 36.41,-84.66 36.44,-84.69 36.5,-84.71 36.6,-84.78 36.6,-84.6</cap:polygon>
+<cap:areaDesc>Cumberland; De Kalb; Fentress; Jackson; Overton; Putnam; Smith; White</cap:areaDesc>
+<cap:polygon>35.87,-85.32 35.99,-85.96 36.35,-85.73 36.4,-85.4 36.27,-84.88 36.24,-84.88 36.24,-84.89 36.23,-84.89 36.21,-84.91 36.18,-84.9 36.15,-84.91 36.13,-84.87 35.87,-85.32</cap:polygon>
 <cap:geocode>
 <valueName>FIPS6</valueName>
-<value>047151</value>
+<value>047035 047041 047049 047087 047133 047141 047159 047185</value>
 <valueName>UGC</valueName>
-<value>TNC151</value>
+<value>TNC035 TNC041 TNC049 TNC087 TNC133 TNC141 TNC159 TNC185</value>
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
-<value>/O.CAN.KMRX.SV.W.0140.000000T0000Z-220721T0815Z/</value>
+<value>/O.NEW.KOHX.SV.W.0136.220721T0830Z-220721T0915Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=TN126400E5B214.SevereThunderstormWarning.126400E5B854TN.OHXSVSOHX.60a543085cf2a4b3bde3950009ecd789</id>
+<updated>2022-07-21T03:29:00-05:00</updated>
+<published>2022-07-21T03:29:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Severe Thunderstorm Warning issued July 21 at 3:29AM CDT until July 21 at 3:45AM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=TN126400E5B214.SevereThunderstormWarning.126400E5B854TN.OHXSVSOHX.60a543085cf2a4b3bde3950009ecd789"/>
+<summary>...A SEVERE THUNDERSTORM WARNING REMAINS IN EFFECT UNTIL 345 AM CDT FOR NORTHEASTERN DE KALB...NORTHWESTERN WHITE AND SOUTHWESTERN PUTNAM COUNTIES... At 329 AM CDT, a severe thunderstorm was located 7 miles southwest of Baxter, or 9 miles northeast of Smithville, moving east at 40 mph. HAZARD...70 mph wind gusts and penny size hail.</summary>
+<cap:event>Severe Thunderstorm Warning</cap:event>
+<cap:effective>2022-07-21T03:29:00-05:00</cap:effective>
+<cap:expires>2022-07-21T03:45:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Immediate</cap:urgency>
+<cap:severity>Severe</cap:severity>
+<cap:certainty>Observed</cap:certainty>
+<cap:areaDesc>De Kalb; Putnam; White</cap:areaDesc>
+<cap:polygon>35.9,-85.43 36.03,-85.88 36.12,-85.85 36.12,-85.84 36.13,-85.84 36.12,-85.83 36.13,-85.81 36.14,-85.8 36.15,-85.81 36.15,-85.8 36.21,-85.4 35.9,-85.43</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>047041 047141 047185</value>
+<valueName>UGC</valueName>
+<value>TNC041 TNC141 TNC185</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KOHX.SV.W.0135.000000T0000Z-220721T0845Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=TN126400E5B214.SevereWeatherStatement.126400E5B854TN.OHXSVSOHX.c1e703e97d8a63120d232aa205bbe9a5</id>
+<updated>2022-07-21T03:29:00-05:00</updated>
+<published>2022-07-21T03:29:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Severe Weather Statement issued July 21 at 3:29AM CDT until July 21 at 3:45AM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=TN126400E5B214.SevereWeatherStatement.126400E5B854TN.OHXSVSOHX.c1e703e97d8a63120d232aa205bbe9a5"/>
+<summary>...A SEVERE THUNDERSTORM WARNING REMAINS IN EFFECT UNTIL 345 AM CDT FOR NORTHEASTERN DE KALB...NORTHWESTERN WHITE AND SOUTHWESTERN PUTNAM COUNTIES... At 329 AM CDT, a severe thunderstorm was located 7 miles southwest of Baxter, or 9 miles northeast of Smithville, moving east at 40 mph. HAZARD...70 mph wind gusts and penny size hail.</summary>
+<cap:event>Severe Weather Statement</cap:event>
+<cap:effective>2022-07-21T03:29:00-05:00</cap:effective>
+<cap:expires>2022-07-21T03:45:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Immediate</cap:urgency>
+<cap:severity>Severe</cap:severity>
+<cap:certainty>Observed</cap:certainty>
+<cap:areaDesc>De Kalb; Putnam</cap:areaDesc>
+<cap:polygon>35.9,-85.43 36.03,-85.88 36.12,-85.85 36.12,-85.84 36.13,-85.84 36.12,-85.83 36.13,-85.81 36.14,-85.8 36.15,-85.81 36.15,-85.8 36.21,-85.4 35.9,-85.43</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>047041 047141</value>
+<valueName>UGC</valueName>
+<value>TNC041 TNC141</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KOHX.SV.W.0135.000000T0000Z-220721T0845Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=TN126400E5B214.SevereWeatherStatement.126400E5D3ACTN.OHXSVSOHX.72b38e6497e606d69429743ddebc7dd4</id>
+<updated>2022-07-21T03:29:00-05:00</updated>
+<published>2022-07-21T03:29:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Severe Weather Statement issued July 21 at 3:29AM CDT until July 21 at 4:15AM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=TN126400E5B214.SevereWeatherStatement.126400E5D3ACTN.OHXSVSOHX.72b38e6497e606d69429743ddebc7dd4"/>
+<summary>...A SEVERE THUNDERSTORM WARNING REMAINS IN EFFECT UNTIL 345 AM CDT FOR NORTHEASTERN DE KALB...NORTHWESTERN WHITE AND SOUTHWESTERN PUTNAM COUNTIES... At 329 AM CDT, a severe thunderstorm was located 7 miles southwest of Baxter, or 9 miles northeast of Smithville, moving east at 40 mph. HAZARD...70 mph wind gusts and penny size hail.</summary>
+<cap:event>Severe Weather Statement</cap:event>
+<cap:effective>2022-07-21T03:29:00-05:00</cap:effective>
+<cap:expires>2022-07-21T04:15:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Immediate</cap:urgency>
+<cap:severity>Severe</cap:severity>
+<cap:certainty>Observed</cap:certainty>
+<cap:areaDesc>White</cap:areaDesc>
+<cap:polygon>35.9,-85.43 36.03,-85.88 36.12,-85.85 36.12,-85.84 36.13,-85.84 36.12,-85.83 36.13,-85.81 36.14,-85.8 36.15,-85.81 36.15,-85.8 36.21,-85.4 35.9,-85.43</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>047185</value>
+<valueName>UGC</valueName>
+<value>TNC185</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KOHX.SV.W.0135.000000T0000Z-220721T0845Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=TN126400E5B0E8.FlashFloodWarning.126400E627A8TN.OHXFFWOHX.3805f252ca65a2337c1977bbba406ae2</id>
+<updated>2022-07-21T03:26:00-05:00</updated>
+<published>2022-07-21T03:26:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Flash Flood Warning issued July 21 at 3:26AM CDT until July 21 at 6:30AM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=TN126400E5B0E8.FlashFloodWarning.126400E627A8TN.OHXFFWOHX.3805f252ca65a2337c1977bbba406ae2"/>
+<summary>The National Weather Service in Nashville has issued a * Flash Flood Warning for... Southwestern Clay County in middle Tennessee... Southern Fentress County in middle Tennessee... Jackson County in middle Tennessee... Overton County in middle Tennessee...</summary>
+<cap:event>Flash Flood Warning</cap:event>
+<cap:effective>2022-07-21T03:26:00-05:00</cap:effective>
+<cap:expires>2022-07-21T06:30:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Immediate</cap:urgency>
+<cap:severity>Severe</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Clay; Fentress; Jackson; Overton; Putnam</cap:areaDesc>
+<cap:polygon>36.51,-85.81 36.35,-84.73 36.35,-84.74 36.34,-84.74 36.33,-84.79 36.3,-84.8 36.28,-84.88 36.24,-84.88 36.21,-84.91 36.16,-84.91 36.15,-84.93 36.16,-84.97 36.15,-85 36.17,-85.03 36.15,-85.05 36.26,-85.83 36.29,-85.85 36.34,-85.83 36.51,-85.81</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>047027 047049 047087 047133 047141</value>
+<valueName>UGC</valueName>
+<value>TNC027 TNC049 TNC087 TNC133 TNC141</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.NEW.KOHX.FF.W.0009.220721T0826Z-220721T1130Z/
+/00000.0.ER.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=TN126400E5AB70.SpecialWeatherStatement.126400E5CDD0TN.MRXSPSMRX.dc0163067fbea18ef3883776a544b14d</id>
+<updated>2022-07-21T03:12:00-05:00</updated>
+<published>2022-07-21T03:12:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Special Weather Statement issued July 21 at 3:12AM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=TN126400E5AB70.SpecialWeatherStatement.126400E5CDD0TN.MRXSPSMRX.dc0163067fbea18ef3883776a544b14d"/>
+<summary>...Strong thunderstorms will impact portions of Morgan, Anderson, Knox, Jefferson, southwestern Campbell, Cocke, southwestern Greene, southwestern Grainger, Sevier, southern Scott, southern Union, northeastern Loudon, northern Blount, Roane and southwestern Hamblen Counties through 500 AM EDT... At 412 AM EDT, Doppler radar was tracking strong thunderstorms along</summary>
+<cap:event>Special Weather Statement</cap:event>
+<cap:effective>2022-07-21T03:12:00-05:00</cap:effective>
+<cap:expires>2022-07-21T04:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Observed</cap:certainty>
+<cap:areaDesc>Anderson; Blount Smoky Mountains; Campbell; Cocke Smoky Mountains; Grainger; Hamblen; Jefferson; Knox; Loudon; Morgan; NW Blount; North Sevier; Northwest Cocke; Northwest Greene; Roane; Scott; Sevier Smoky Mountains; Southeast Greene; Union</cap:areaDesc>
+<cap:polygon>35.78,-84.74 35.82,-84.79 35.91,-84.68 36.09,-84.8 36.16,-84.91 36.21,-84.91 36.28,-84.88 36.3,-84.8 36.35,-84.74 36.15,-82.96 35.88,-82.9 35.77,-82.99 35.77,-83.16 35.72,-83.25 35.66,-83.3 35.66,-83.34 35.59,-83.47 35.78,-84.74</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>047001 047009 047013 047029 047057 047059 047063 047089 047093 047105 047129 047145 047151 047155 047173</value>
+<valueName>UGC</valueName>
+<value>TNZ012 TNZ013 TNZ035 TNZ036 TNZ037 TNZ038 TNZ039 TNZ040 TNZ041 TNZ042 TNZ043 TNZ067 TNZ068 TNZ069 TNZ070 TNZ071 TNZ072 TNZ073 TNZ074</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value></value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=TN126400E5AB0C.FloodAdvisory.126400E5D3ACTN.MRXFLSMRX.05b690776478eefe2937e6f8fdbe6e5d</id>
+<updated>2022-07-21T03:11:00-05:00</updated>
+<published>2022-07-21T03:11:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Flood Advisory issued July 21 at 3:11AM CDT until July 21 at 4:15AM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=TN126400E5AB0C.FloodAdvisory.126400E5D3ACTN.MRXFLSMRX.05b690776478eefe2937e6f8fdbe6e5d"/>
+<summary>...FLOOD ADVISORY IN EFFECT UNTIL 715 AM EDT THIS MORNING... * WHAT...Flooding caused by excessive rainfall is expected. * WHERE...A portion of east Tennessee, including the following counties, Cocke, Grainger, Greene, Hamblen and Jefferson. * WHEN...Until 715 AM EDT. * IMPACTS...Minor flooding in low-lying and poor drainage areas.</summary>
+<cap:event>Flood Advisory</cap:event>
+<cap:effective>2022-07-21T03:11:00-05:00</cap:effective>
+<cap:expires>2022-07-21T04:15:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Grainger; Greene; Hamblen; Jefferson</cap:areaDesc>
+<cap:polygon>36.27,-83.1 36.24,-83.08 36.27,-83.04 36.27,-82.64 36.15,-82.65 36.08,-82.58 36.04,-82.6 36.07,-82.64 36,-82.78 35.92,-82.82 35.95,-82.87 35.93,-82.9 35.99,-83.56 36.06,-83.69 36.09,-83.71 36.08,-83.67 36.09,-83.67 36.15,-83.73 36.27,-83.7 36.27,-83.1</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>047057 047059 047063 047089</value>
+<valueName>UGC</valueName>
+<value>TNC057 TNC059 TNC063 TNC089</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.NEW.KMRX.FA.Y.0087.220721T0811Z-220721T1115Z/
+/00000.N.ER.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=TN126400E5AB0C.FloodAdvisory.126400E61BF0TN.MRXFLSMRX.c88798240ddd17cffa2c8e80d5ac93b1</id>
+<updated>2022-07-21T03:11:00-05:00</updated>
+<published>2022-07-21T03:11:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Flood Advisory issued July 21 at 3:11AM CDT until July 21 at 6:00AM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=TN126400E5AB0C.FloodAdvisory.126400E61BF0TN.MRXFLSMRX.c88798240ddd17cffa2c8e80d5ac93b1"/>
+<summary>...FLOOD ADVISORY IN EFFECT UNTIL 715 AM EDT THIS MORNING... * WHAT...Flooding caused by excessive rainfall is expected. * WHERE...A portion of east Tennessee, including the following counties, Cocke, Grainger, Greene, Hamblen and Jefferson. * WHEN...Until 715 AM EDT. * IMPACTS...Minor flooding in low-lying and poor drainage areas.</summary>
+<cap:event>Flood Advisory</cap:event>
+<cap:effective>2022-07-21T03:11:00-05:00</cap:effective>
+<cap:expires>2022-07-21T06:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Cocke</cap:areaDesc>
+<cap:polygon>36.27,-83.1 36.24,-83.08 36.27,-83.04 36.27,-82.64 36.15,-82.65 36.08,-82.58 36.04,-82.6 36.07,-82.64 36,-82.78 35.92,-82.82 35.95,-82.87 35.93,-82.9 35.99,-83.56 36.06,-83.69 36.09,-83.71 36.08,-83.67 36.09,-83.67 36.15,-83.73 36.27,-83.7 36.27,-83.1</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>047029</value>
+<valueName>UGC</valueName>
+<value>TNC029</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.NEW.KMRX.FA.Y.0087.220721T0811Z-220721T1115Z/
+/00000.N.ER.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -4379,134 +4603,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value></value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=TN126400E59464.SevereThunderstormWarning.126400E5AC9CTN.OHXSVSOHX.7e9dbe257dfe79cee5cc1a1f9590f66f</id>
-<updated>2022-07-21T02:53:00-05:00</updated>
-<published>2022-07-21T02:53:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Severe Thunderstorm Warning issued July 21 at 2:53AM CDT until July 21 at 3:15AM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=TN126400E59464.SevereThunderstormWarning.126400E5AC9CTN.OHXSVSOHX.7e9dbe257dfe79cee5cc1a1f9590f66f"/>
-<summary>...A SEVERE THUNDERSTORM WARNING REMAINS IN EFFECT UNTIL 315 AM CDT FOR SOUTHWESTERN SMITH...NORTHWESTERN DE KALB AND SOUTHEASTERN WILSON COUNTIES... At 253 AM CDT, a severe thunderstorm was located over Watertown, or 13 miles southeast of Lebanon, moving east at 40 mph. HAZARD...60 mph wind gusts and penny size hail.</summary>
-<cap:event>Severe Thunderstorm Warning</cap:event>
-<cap:effective>2022-07-21T02:53:00-05:00</cap:effective>
-<cap:expires>2022-07-21T03:15:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Immediate</cap:urgency>
-<cap:severity>Severe</cap:severity>
-<cap:certainty>Observed</cap:certainty>
-<cap:areaDesc>De Kalb; Smith; Wilson</cap:areaDesc>
-<cap:polygon>36.21,-85.89 35.96,-86.01 35.96,-86.08 35.97,-86.09 36.1,-86.36 36.25,-86.29 36.21,-85.89</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>047041 047159 047189</value>
-<valueName>UGC</valueName>
-<value>TNC041 TNC159 TNC189</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KOHX.SV.W.0133.000000T0000Z-220721T0815Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=TN126400E59464.SevereWeatherStatement.126400E5AC9CTN.OHXSVSOHX.b5e2d7a051a8c9a3764c0106a1450301</id>
-<updated>2022-07-21T02:53:00-05:00</updated>
-<published>2022-07-21T02:53:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Severe Weather Statement issued July 21 at 2:53AM CDT until July 21 at 3:15AM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=TN126400E59464.SevereWeatherStatement.126400E5AC9CTN.OHXSVSOHX.b5e2d7a051a8c9a3764c0106a1450301"/>
-<summary>...A SEVERE THUNDERSTORM WARNING REMAINS IN EFFECT UNTIL 315 AM CDT FOR SOUTHWESTERN SMITH...NORTHWESTERN DE KALB AND SOUTHEASTERN WILSON COUNTIES... At 253 AM CDT, a severe thunderstorm was located over Watertown, or 13 miles southeast of Lebanon, moving east at 40 mph. HAZARD...60 mph wind gusts and penny size hail.</summary>
-<cap:event>Severe Weather Statement</cap:event>
-<cap:effective>2022-07-21T02:53:00-05:00</cap:effective>
-<cap:expires>2022-07-21T03:15:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Immediate</cap:urgency>
-<cap:severity>Severe</cap:severity>
-<cap:certainty>Observed</cap:certainty>
-<cap:areaDesc>De Kalb</cap:areaDesc>
-<cap:polygon>36.21,-85.89 35.96,-86.01 35.96,-86.08 35.97,-86.09 36.1,-86.36 36.25,-86.29 36.21,-85.89</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>047041</value>
-<valueName>UGC</valueName>
-<value>TNC041</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KOHX.SV.W.0133.000000T0000Z-220721T0815Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=TN126400E59464.SevereWeatherStatement.126400E5B278TN.OHXSVSOHX.9acbdc4df5e91e7d30fcec9cd099ae40</id>
-<updated>2022-07-21T02:53:00-05:00</updated>
-<published>2022-07-21T02:53:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Severe Weather Statement issued July 21 at 2:53AM CDT until July 21 at 3:30AM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=TN126400E59464.SevereWeatherStatement.126400E5B278TN.OHXSVSOHX.9acbdc4df5e91e7d30fcec9cd099ae40"/>
-<summary>...A SEVERE THUNDERSTORM WARNING REMAINS IN EFFECT UNTIL 315 AM CDT FOR SOUTHWESTERN SMITH...NORTHWESTERN DE KALB AND SOUTHEASTERN WILSON COUNTIES... At 253 AM CDT, a severe thunderstorm was located over Watertown, or 13 miles southeast of Lebanon, moving east at 40 mph. HAZARD...60 mph wind gusts and penny size hail.</summary>
-<cap:event>Severe Weather Statement</cap:event>
-<cap:effective>2022-07-21T02:53:00-05:00</cap:effective>
-<cap:expires>2022-07-21T03:30:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Immediate</cap:urgency>
-<cap:severity>Severe</cap:severity>
-<cap:certainty>Observed</cap:certainty>
-<cap:areaDesc>Wilson</cap:areaDesc>
-<cap:polygon>36.21,-85.89 35.96,-86.01 35.96,-86.08 35.97,-86.09 36.1,-86.36 36.25,-86.29 36.21,-85.89</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>047189</value>
-<valueName>UGC</valueName>
-<value>TNC189</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KOHX.SV.W.0133.000000T0000Z-220721T0815Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=TN126400E59464.SevereWeatherStatement.126400E61BF0TN.OHXSVSOHX.c7f4a2b5c2b66db8f7c45e41eb8bca8a</id>
-<updated>2022-07-21T02:53:00-05:00</updated>
-<published>2022-07-21T02:53:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Severe Weather Statement issued July 21 at 2:53AM CDT until July 21 at 6:00AM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=TN126400E59464.SevereWeatherStatement.126400E61BF0TN.OHXSVSOHX.c7f4a2b5c2b66db8f7c45e41eb8bca8a"/>
-<summary>...A SEVERE THUNDERSTORM WARNING REMAINS IN EFFECT UNTIL 315 AM CDT FOR SOUTHWESTERN SMITH...NORTHWESTERN DE KALB AND SOUTHEASTERN WILSON COUNTIES... At 253 AM CDT, a severe thunderstorm was located over Watertown, or 13 miles southeast of Lebanon, moving east at 40 mph. HAZARD...60 mph wind gusts and penny size hail.</summary>
-<cap:event>Severe Weather Statement</cap:event>
-<cap:effective>2022-07-21T02:53:00-05:00</cap:effective>
-<cap:expires>2022-07-21T06:00:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Immediate</cap:urgency>
-<cap:severity>Severe</cap:severity>
-<cap:certainty>Observed</cap:certainty>
-<cap:areaDesc>Smith</cap:areaDesc>
-<cap:polygon>36.21,-85.89 35.96,-86.01 35.96,-86.08 35.97,-86.09 36.1,-86.36 36.25,-86.29 36.21,-85.89</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>047159</value>
-<valueName>UGC</valueName>
-<value>TNC159</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KOHX.SV.W.0133.000000T0000Z-220721T0815Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -4576,38 +4672,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=TN126400E5907C.SevereThunderstormWarning.126400E5B278TN.OHXSVROHX.652283c57aeca5688f5482339595c987</id>
-<updated>2022-07-21T02:43:00-05:00</updated>
-<published>2022-07-21T02:43:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Severe Thunderstorm Warning issued July 21 at 2:43AM CDT until July 21 at 3:30AM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=TN126400E5907C.SevereThunderstormWarning.126400E5B278TN.OHXSVROHX.652283c57aeca5688f5482339595c987"/>
-<summary>The National Weather Service in Nashville has issued a * Severe Thunderstorm Warning for... Northern Smith County in Middle Tennessee... Jackson County in Middle Tennessee... Western Clay County in Middle Tennessee... Macon County in Middle Tennessee...</summary>
-<cap:event>Severe Thunderstorm Warning</cap:event>
-<cap:effective>2022-07-21T02:43:00-05:00</cap:effective>
-<cap:expires>2022-07-21T03:30:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Immediate</cap:urgency>
-<cap:severity>Severe</cap:severity>
-<cap:certainty>Observed</cap:certainty>
-<cap:areaDesc>Clay; Jackson; Macon; Smith; Trousdale</cap:areaDesc>
-<cap:polygon>36.62,-85.63 36.38,-85.49 36.28,-85.49 36.31,-86.04 36.58,-86.22 36.64,-86.21 36.62,-85.63</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>047027 047087 047111 047159 047169</value>
-<valueName>UGC</valueName>
-<value>TNC027 TNC087 TNC111 TNC159 TNC169</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.NEW.KOHX.SV.W.0134.220721T0743Z-220721T0830Z/</value>
-</cap:parameter>
-</entry>
-<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=TN126400E5907C.HeatAdvisory.126400F3FEA0TN.MEGNPWMEG.19bc31d6c383b9aa9f7ddd32e4ee6bef</id>
 <updated>2022-07-21T02:43:00-05:00</updated>
 <published>2022-07-21T02:43:00-05:00</published>
@@ -4637,38 +4701,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value>/O.CON.KMEG.HT.Y.0018.220721T1500Z-220722T0200Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=TN126400E58A3C.SevereThunderstormWarning.126400E5B278TN.OHXSVROHX.916e4bbdd7c356875e182cc39fb87132</id>
-<updated>2022-07-21T02:27:00-05:00</updated>
-<published>2022-07-21T02:27:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Severe Thunderstorm Warning issued July 21 at 2:27AM CDT until July 21 at 3:30AM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=TN126400E58A3C.SevereThunderstormWarning.126400E5B278TN.OHXSVROHX.916e4bbdd7c356875e182cc39fb87132"/>
-<summary>The National Weather Service in Nashville has issued a * Severe Thunderstorm Warning for... Overton County in Middle Tennessee... Pickett County in Middle Tennessee... Clay County in Middle Tennessee... Fentress County in Middle Tennessee...</summary>
-<cap:event>Severe Thunderstorm Warning</cap:event>
-<cap:effective>2022-07-21T02:27:00-05:00</cap:effective>
-<cap:expires>2022-07-21T03:30:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Immediate</cap:urgency>
-<cap:severity>Severe</cap:severity>
-<cap:certainty>Observed</cap:certainty>
-<cap:areaDesc>Clay; Fentress; Overton; Pickett</cap:areaDesc>
-<cap:polygon>36.37,-84.7 36.38,-84.72 36.35,-84.73 36.35,-84.74 36.34,-84.74 36.33,-84.77 36.3,-84.8 36.29,-84.87 36.2,-84.91 36.27,-85.46 36.3,-85.47 36.3,-85.49 36.4,-85.5 36.47,-85.57 36.47,-85.58 36.62,-85.65 36.63,-85.23 36.6,-84.79 36.4,-84.66 36.37,-84.7</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>047027 047049 047133 047137</value>
-<valueName>UGC</valueName>
-<value>TNC027 TNC049 TNC133 TNC137</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.NEW.KOHX.SV.W.0132.220721T0727Z-220721T0830Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -4704,6 +4736,39 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=TN126400E57FB0.FloodAdvisory.126400E5D3ACTN.MRXFLSMRX.aa504cdd45f1bb7ef86503d5c5714812</id>
+<updated>2022-07-21T02:00:00-05:00</updated>
+<published>2022-07-21T02:00:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Flood Advisory issued July 21 at 2:00AM CDT until July 21 at 4:15AM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=TN126400E57FB0.FloodAdvisory.126400E5D3ACTN.MRXFLSMRX.aa504cdd45f1bb7ef86503d5c5714812"/>
+<summary>...FLOOD ADVISORY IN EFFECT UNTIL 6 AM EDT EARLY THIS MORNING... * WHAT...Flooding caused by excessive rainfall is expected. * WHERE...A portion of east Tennessee, including the following counties, Campbell and Scott. * WHEN...Until 600 AM EDT. * IMPACTS...Minor flooding in low-lying and poor drainage areas.</summary>
+<cap:event>Flood Advisory</cap:event>
+<cap:effective>2022-07-21T02:00:00-05:00</cap:effective>
+<cap:expires>2022-07-21T04:15:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Scott</cap:areaDesc>
+<cap:polygon>36.59,-84.23 36.29,-84.04 36.25,-84.07 36.23,-84.07 36.24,-84.23 36.18,-84.24 36.22,-84.3 36.22,-84.37 36.18,-84.4 36.16,-84.44 36.2,-84.47 36.23,-84.57 36.27,-84.57 36.27,-84.61 36.37,-84.7 36.37,-84.69 36.4,-84.66 36.41,-84.66 36.6,-84.79 36.59,-84.23</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>047151</value>
+<valueName>UGC</valueName>
+<value>TNC151</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.NEW.KMRX.FA.Y.0085.220721T0700Z-220721T1000Z/
+/00000.N.ER.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
+</cap:parameter>
+</entry>
+<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=TN126400E57FB0.FloodAdvisory.126400E60674TN.MRXFLSMRX.5472f8d30b0b18cec35c59950fa71e37</id>
 <updated>2022-07-21T02:00:00-05:00</updated>
 <published>2022-07-21T02:00:00-05:00</published>
@@ -4729,39 +4794,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <value>047013</value>
 <valueName>UGC</valueName>
 <value>TNC013</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.NEW.KMRX.FA.Y.0085.220721T0700Z-220721T1000Z/
-/00000.N.ER.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=TN126400E57FB0.FloodAdvisory.126400E61BF0TN.MRXFLSMRX.aa504cdd45f1bb7ef86503d5c5714812</id>
-<updated>2022-07-21T02:00:00-05:00</updated>
-<published>2022-07-21T02:00:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Flood Advisory issued July 21 at 2:00AM CDT until July 21 at 6:00AM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=TN126400E57FB0.FloodAdvisory.126400E61BF0TN.MRXFLSMRX.aa504cdd45f1bb7ef86503d5c5714812"/>
-<summary>...FLOOD ADVISORY IN EFFECT UNTIL 6 AM EDT EARLY THIS MORNING... * WHAT...Flooding caused by excessive rainfall is expected. * WHERE...A portion of east Tennessee, including the following counties, Campbell and Scott. * WHEN...Until 600 AM EDT. * IMPACTS...Minor flooding in low-lying and poor drainage areas.</summary>
-<cap:event>Flood Advisory</cap:event>
-<cap:effective>2022-07-21T02:00:00-05:00</cap:effective>
-<cap:expires>2022-07-21T06:00:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Scott</cap:areaDesc>
-<cap:polygon>36.59,-84.23 36.29,-84.04 36.25,-84.07 36.23,-84.07 36.24,-84.23 36.18,-84.24 36.22,-84.3 36.22,-84.37 36.18,-84.4 36.16,-84.44 36.2,-84.47 36.23,-84.57 36.27,-84.57 36.27,-84.61 36.37,-84.7 36.37,-84.69 36.4,-84.66 36.41,-84.66 36.6,-84.79 36.59,-84.23</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>047151</value>
-<valueName>UGC</valueName>
-<value>TNC151</value>
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
@@ -4803,18 +4835,18 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=TN126400E56584.FloodAdvisory.126400E5B278TN.MRXFLSMRX.9ac0d3e19f5ed73b96fe1ac10b3994c7</id>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=TN126400E56584.FloodAdvisory.126400E5D3ACTN.MRXFLSMRX.9ac0d3e19f5ed73b96fe1ac10b3994c7</id>
 <updated>2022-07-21T01:33:00-05:00</updated>
 <published>2022-07-21T01:33:00-05:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Flood Advisory issued July 21 at 1:33AM CDT until July 21 at 3:30AM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=TN126400E56584.FloodAdvisory.126400E5B278TN.MRXFLSMRX.9ac0d3e19f5ed73b96fe1ac10b3994c7"/>
+<title>Flood Advisory issued July 21 at 1:33AM CDT until July 21 at 4:15AM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=TN126400E56584.FloodAdvisory.126400E5D3ACTN.MRXFLSMRX.9ac0d3e19f5ed73b96fe1ac10b3994c7"/>
 <summary>...FLOOD ADVISORY IN EFFECT UNTIL 545 AM EDT EARLY THIS MORNING... * WHAT...Flooding caused by excessive rainfall is expected. * WHERE...A portion of east Tennessee, including the following counties, Campbell, Claiborne and Union. * WHEN...Until 545 AM EDT. * IMPACTS...Minor flooding in low-lying and poor drainage areas.</summary>
 <cap:event>Flood Advisory</cap:event>
 <cap:effective>2022-07-21T01:33:00-05:00</cap:effective>
-<cap:expires>2022-07-21T03:30:00-05:00</cap:expires>
+<cap:expires>2022-07-21T04:15:00-05:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
 <cap:category>Met</cap:category>
@@ -4869,105 +4901,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=TN126400E55E7C.FloodAdvisory.126400E5B278TN.MRXFLSMRX.74e521a68dddea8180ae861ac072b282</id>
-<updated>2022-07-21T01:15:00-05:00</updated>
-<published>2022-07-21T01:15:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Flood Advisory issued July 21 at 1:15AM CDT until July 21 at 3:30AM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=TN126400E55E7C.FloodAdvisory.126400E5B278TN.MRXFLSMRX.74e521a68dddea8180ae861ac072b282"/>
-<summary>...FLOOD ADVISORY IN EFFECT UNTIL 515 AM EDT EARLY THIS MORNING... * WHAT...Flooding caused by excessive rainfall is expected. * WHERE...A portion of east Tennessee, including the following counties, Blount, Cocke and Sevier. * WHEN...Until 515 AM EDT. * IMPACTS...Minor flooding in low-lying and poor drainage areas.</summary>
-<cap:event>Flood Advisory</cap:event>
-<cap:effective>2022-07-21T01:15:00-05:00</cap:effective>
-<cap:expires>2022-07-21T03:30:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Cocke</cap:areaDesc>
-<cap:polygon>35.65,-83.82 35.87,-83.15 35.77,-83.11 35.77,-83.16 35.73,-83.19 35.73,-83.24 35.72,-83.26 35.7,-83.25 35.66,-83.3 35.66,-83.35 35.62,-83.4 35.61,-83.45 35.56,-83.5 35.56,-83.59 35.58,-83.6 35.57,-83.64 35.56,-83.77 35.65,-83.82</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>047029</value>
-<valueName>UGC</valueName>
-<value>TNC029</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.NEW.KMRX.FA.Y.0083.220721T0615Z-220721T0915Z/
-/00000.N.ER.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=TN126400E55E7C.FloodAdvisory.126400E60674TN.MRXFLSMRX.81993b7284f096d09d67f9d373685c71</id>
-<updated>2022-07-21T01:15:00-05:00</updated>
-<published>2022-07-21T01:15:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Flood Advisory issued July 21 at 1:15AM CDT until July 21 at 5:45AM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=TN126400E55E7C.FloodAdvisory.126400E60674TN.MRXFLSMRX.81993b7284f096d09d67f9d373685c71"/>
-<summary>...FLOOD ADVISORY IN EFFECT UNTIL 515 AM EDT EARLY THIS MORNING... * WHAT...Flooding caused by excessive rainfall is expected. * WHERE...A portion of east Tennessee, including the following counties, Blount, Cocke and Sevier. * WHEN...Until 515 AM EDT. * IMPACTS...Minor flooding in low-lying and poor drainage areas.</summary>
-<cap:event>Flood Advisory</cap:event>
-<cap:effective>2022-07-21T01:15:00-05:00</cap:effective>
-<cap:expires>2022-07-21T05:45:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Blount</cap:areaDesc>
-<cap:polygon>35.65,-83.82 35.87,-83.15 35.77,-83.11 35.77,-83.16 35.73,-83.19 35.73,-83.24 35.72,-83.26 35.7,-83.25 35.66,-83.3 35.66,-83.35 35.62,-83.4 35.61,-83.45 35.56,-83.5 35.56,-83.59 35.58,-83.6 35.57,-83.64 35.56,-83.77 35.65,-83.82</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>047009</value>
-<valueName>UGC</valueName>
-<value>TNC009</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.NEW.KMRX.FA.Y.0083.220721T0615Z-220721T0915Z/
-/00000.N.ER.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=TN126400E55E7C.FloodAdvisory.126400E61BF0TN.MRXFLSMRX.9564271ea450c80f17468d6535ea1f58</id>
-<updated>2022-07-21T01:15:00-05:00</updated>
-<published>2022-07-21T01:15:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Flood Advisory issued July 21 at 1:15AM CDT until July 21 at 6:00AM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=TN126400E55E7C.FloodAdvisory.126400E61BF0TN.MRXFLSMRX.9564271ea450c80f17468d6535ea1f58"/>
-<summary>...FLOOD ADVISORY IN EFFECT UNTIL 515 AM EDT EARLY THIS MORNING... * WHAT...Flooding caused by excessive rainfall is expected. * WHERE...A portion of east Tennessee, including the following counties, Blount, Cocke and Sevier. * WHEN...Until 515 AM EDT. * IMPACTS...Minor flooding in low-lying and poor drainage areas.</summary>
-<cap:event>Flood Advisory</cap:event>
-<cap:effective>2022-07-21T01:15:00-05:00</cap:effective>
-<cap:expires>2022-07-21T06:00:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Sevier</cap:areaDesc>
-<cap:polygon>35.65,-83.82 35.87,-83.15 35.77,-83.11 35.77,-83.16 35.73,-83.19 35.73,-83.24 35.72,-83.26 35.7,-83.25 35.66,-83.3 35.66,-83.35 35.62,-83.4 35.61,-83.45 35.56,-83.5 35.56,-83.59 35.58,-83.6 35.57,-83.64 35.56,-83.77 35.65,-83.82</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>047155</value>
-<valueName>UGC</valueName>
-<value>TNC155</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.NEW.KMRX.FA.Y.0083.220721T0615Z-220721T0915Z/
-/00000.N.ER.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
-</cap:parameter>
-</entry>
-<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=TN126400E55DB4.HeatAdvisory.126400E7F0B0TN.OHXNPWOHX.81d0ba8cea4a1a316a080c0d78a84025</id>
 <updated>2022-07-21T01:13:00-05:00</updated>
 <published>2022-07-21T01:13:00-05:00</published>
@@ -4997,6 +4930,198 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value>/O.CON.KOHX.HT.Y.0006.220721T1500Z-220721T2300Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=TX126400E5B0E8.HeatAdvisory.126400F3B080TX.LCHNPWLCH.58b75341084d462c3e844ace4691aefa</id>
+<updated>2022-07-21T03:26:00-05:00</updated>
+<published>2022-07-21T03:26:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Heat Advisory issued July 21 at 3:26AM CDT until July 21 at 7:00PM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=TX126400E5B0E8.HeatAdvisory.126400F3B080TX.LCHNPWLCH.58b75341084d462c3e844ace4691aefa"/>
+<summary>...HEAT ADVISORY IN EFFECT FROM NOON TODAY TO 7 PM CDT THIS EVENING... * WHAT...Heat index values up to 109 expected. * WHERE...Tyler, Hardin, Jefferson, Orange, Northern Jasper and Southern Jasper Counties. * WHEN...From noon today to 7 PM CDT this evening.</summary>
+<cap:event>Heat Advisory</cap:event>
+<cap:effective>2022-07-21T03:26:00-05:00</cap:effective>
+<cap:expires>2022-07-21T19:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Hardin; Jefferson; Northern Jasper; Orange; Southern Jasper; Tyler</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>048199 048241 048245 048361 048457</value>
+<valueName>UGC</valueName>
+<value>TXZ180 TXZ201 TXZ215 TXZ216 TXZ259 TXZ261</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.NEW.KLCH.HT.Y.0012.220721T1700Z-220722T0000Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=TX126400E5ADC8.SpecialWeatherStatement.126400F3B080TX.BROSPSBRO.994d6d2dc04886765abadabf93b94b3e</id>
+<updated>2022-07-21T03:18:00-05:00</updated>
+<published>2022-07-21T03:18:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Special Weather Statement issued July 21 at 3:18AM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=TX126400E5ADC8.SpecialWeatherStatement.126400F3B080TX.BROSPSBRO.994d6d2dc04886765abadabf93b94b3e"/>
+<summary>...CONDITIONS AGAIN MORE FAVORABLE FOR WILDFIRES TODAY... Several weeks of little to no rainfall across Deep South Texas and the Rio Grande Valley have produced abnormally dry to moderate drought conditions with abundant very dry and dead grasses and brush. Additionally, breezy winds and lowered relative humidity percentages will occur today. These factors will combine to create</summary>
+<cap:event>Special Weather Statement</cap:event>
+<cap:effective>2022-07-21T03:18:00-05:00</cap:effective>
+<cap:expires>2022-07-21T19:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Observed</cap:certainty>
+<cap:areaDesc>Brooks; Coastal Cameron; Coastal Kenedy; Coastal Willacy; Inland Cameron; Inland Kenedy; Inland Willacy; Jim Hogg; Northern Hidalgo; Southern Hidalgo; Starr; Zapata</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>048047 048061 048215 048247 048261 048427 048489 048505</value>
+<valueName>UGC</valueName>
+<value>TXZ248 TXZ249 TXZ250 TXZ251 TXZ252 TXZ253 TXZ254 TXZ255 TXZ351 TXZ353 TXZ354 TXZ355</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value></value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=TX126400E5ADC8.HeatAdvisory.126400F3B080TX.SHVNPWSHV.556ec3393501e0fe49ba7e66b38320ea</id>
+<updated>2022-07-21T03:18:00-05:00</updated>
+<published>2022-07-21T03:18:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Heat Advisory issued July 21 at 3:18AM CDT until July 21 at 7:00PM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=TX126400E5ADC8.HeatAdvisory.126400F3B080TX.SHVNPWSHV.556ec3393501e0fe49ba7e66b38320ea"/>
+<summary>...HEAT ADVISORY REMAINS IN EFFECT FROM 1 PM THIS AFTERNOON TO 7 PM CDT THIS EVENING... * WHAT...Heat index values between 105 and 110 are expected. * WHERE...Portions of north central and northwest Louisiana, southeast Oklahoma, south central and southwest Arkansas and northeast Texas.</summary>
+<cap:event>Heat Advisory</cap:event>
+<cap:effective>2022-07-21T03:18:00-05:00</cap:effective>
+<cap:expires>2022-07-21T19:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Bowie</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>048037</value>
+<valueName>UGC</valueName>
+<value>TXZ097</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KSHV.HT.Y.0017.220721T1800Z-220722T0000Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=TX126400E5ADC8.HeatAdvisory.126400F3B080TX.SHVNPWSHV.ece9d15f9fa7033fdb4a98cfaa27b3cc</id>
+<updated>2022-07-21T03:18:00-05:00</updated>
+<published>2022-07-21T03:18:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Heat Advisory issued July 21 at 3:18AM CDT until July 21 at 7:00PM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=TX126400E5ADC8.HeatAdvisory.126400F3B080TX.SHVNPWSHV.ece9d15f9fa7033fdb4a98cfaa27b3cc"/>
+<summary>...HEAT ADVISORY IN EFFECT FROM 1 PM THIS AFTERNOON TO 7 PM CDT THIS EVENING... * WHAT...Heat index values between 105 and 110 are expected. * WHERE...Portions of northwest Louisiana and east and northeast Texas. * WHEN...From 1 PM to 7 PM CDT today.</summary>
+<cap:event>Heat Advisory</cap:event>
+<cap:effective>2022-07-21T03:18:00-05:00</cap:effective>
+<cap:expires>2022-07-21T19:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Angelina; Cass; Cherokee; Harrison; Marion; Nacogdoches; Panola; Rusk; Sabine; San Augustine; Shelby</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>048005 048067 048073 048203 048315 048347 048365 048401 048403 048405 048419</value>
+<valueName>UGC</valueName>
+<value>TXZ112 TXZ126 TXZ138 TXZ149 TXZ150 TXZ151 TXZ152 TXZ153 TXZ165 TXZ166 TXZ167</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.EXA.KSHV.HT.Y.0017.220721T1800Z-220722T0000Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=TX126400E5AD64.HeatAdvisory.126400F3D790TX.HGXNPWHGX.613f923b14b9d59ee85ccd9770e75dc3</id>
+<updated>2022-07-21T03:17:00-05:00</updated>
+<published>2022-07-21T03:17:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Heat Advisory issued July 21 at 3:17AM CDT until July 21 at 8:00PM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=TX126400E5AD64.HeatAdvisory.126400F3D790TX.HGXNPWHGX.613f923b14b9d59ee85ccd9770e75dc3"/>
+<summary>...HEAT ADVISORY IN EFFECT FROM 10 AM THIS MORNING TO 8 PM CDT THIS EVENING... * WHAT...Temperatures 95 to 105 with heat index 105 to 110 expected. * WHERE...Portions of south central and southeast Texas. * WHEN...From 10 AM this morning to 8 PM CDT this evening.</summary>
+<cap:event>Heat Advisory</cap:event>
+<cap:effective>2022-07-21T03:17:00-05:00</cap:effective>
+<cap:expires>2022-07-21T20:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Austin; Bolivar Peninsula; Brazoria Islands; Brazos; Burleson; Chambers; Coastal Brazoria; Coastal Galveston; Coastal Harris; Coastal Jackson; Coastal Matagorda; Colorado; Fort Bend; Galveston Island; Grimes; Houston; Inland Brazoria; Inland Galveston; Inland Harris; Inland Jackson; Inland Matagorda; Madison; Matagorda Islands; Montgomery; Northern Liberty; Polk; San Jacinto; Southern Liberty; Trinity; Walker; Waller; Washington; Wharton</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>048015 048039 048041 048051 048071 048089 048157 048167 048185 048201 048225 048239 048291 048313 048321 048339 048373 048407 048455 048471 048473 048477 048481</value>
+<valueName>UGC</valueName>
+<value>TXZ163 TXZ164 TXZ176 TXZ177 TXZ178 TXZ179 TXZ195 TXZ196 TXZ197 TXZ198 TXZ199 TXZ200 TXZ210 TXZ211 TXZ212 TXZ213 TXZ214 TXZ226 TXZ227 TXZ235 TXZ236 TXZ237 TXZ238 TXZ300 TXZ313 TXZ335 TXZ336 TXZ337 TXZ338 TXZ436 TXZ437 TXZ438 TXZ439</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.NEW.KHGX.HT.Y.0009.220721T1500Z-220722T0100Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=TX126400E5A918.HeatAdvisory.126400F3B080TX.CRPNPWCRP.3ead4d49124e9e23dee8e8cac5b1a728</id>
+<updated>2022-07-21T03:06:00-05:00</updated>
+<published>2022-07-21T03:06:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Heat Advisory issued July 21 at 3:06AM CDT until July 21 at 7:00PM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=TX126400E5A918.HeatAdvisory.126400F3B080TX.CRPNPWCRP.3ead4d49124e9e23dee8e8cac5b1a728"/>
+<summary>...HEAT ADVISORY IN EFFECT FROM 1 PM THIS AFTERNOON TO 7 PM CDT THIS EVENING... * WHAT...Heat index values up to 114 expected. * WHERE...Portions of south Texas. * WHEN...From 1 PM this afternoon to 7 PM CDT this evening. * IMPACTS...Hot temperatures and high humidity may cause heat</summary>
+<cap:event>Heat Advisory</cap:event>
+<cap:effective>2022-07-21T03:06:00-05:00</cap:effective>
+<cap:expires>2022-07-21T19:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Bee; Coastal Aransas; Coastal Calhoun; Coastal Kleberg; Coastal Nueces; Coastal Refugio; Coastal San Patricio; Duval; Goliad; Inland Calhoun; Inland Kleberg; Inland Nueces; Inland Refugio; Inland San Patricio; Jim Wells; La Salle; Live Oak; McMullen; Victoria; Webb</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>048007 048025 048057 048131 048175 048249 048273 048283 048297 048311 048355 048391 048409 048469 048479</value>
+<valueName>UGC</valueName>
+<value>TXZ229 TXZ230 TXZ231 TXZ232 TXZ233 TXZ234 TXZ239 TXZ240 TXZ241 TXZ242 TXZ243 TXZ244 TXZ245 TXZ246 TXZ247 TXZ342 TXZ343 TXZ344 TXZ346 TXZ347</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.NEW.KCRP.HT.Y.0024.220721T1800Z-220722T0000Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -5126,39 +5251,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <valueName>VTEC</valueName>
 <value>/O.EXP.KFWD.EH.W.0004.000000T0000Z-220721T0200Z/
 /O.NEW.KFWD.HT.Y.0006.220721T0200Z-220722T0200Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=TX126400D81C58.HeatAdvisory.126400F3B080TX.SHVNPWSHV.556ec3393501e0fe49ba7e66b38320ea</id>
-<updated>2022-07-20T14:26:00-05:00</updated>
-<published>2022-07-20T14:26:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Heat Advisory issued July 20 at 2:26PM CDT until July 21 at 7:00PM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=TX126400D81C58.HeatAdvisory.126400F3B080TX.SHVNPWSHV.556ec3393501e0fe49ba7e66b38320ea"/>
-<summary>...EXCESSIVE HEAT WARNING REMAINS IN EFFECT UNTIL 7 PM CDT THIS EVENING... ...HEAT ADVISORY IN EFFECT FROM 1 PM TO 7 PM CDT THURSDAY... * WHAT...For the Excessive Heat Warning, dangerously hot conditions with heat index values above 110 degrees expected. For the Heat Advisory, heat index values above 105 expected.</summary>
-<cap:event>Heat Advisory</cap:event>
-<cap:effective>2022-07-20T14:26:00-05:00</cap:effective>
-<cap:expires>2022-07-21T19:00:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Bowie</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>048037</value>
-<valueName>UGC</valueName>
-<value>TXZ097</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.NEW.KSHV.HT.Y.0017.220721T1800Z-220722T0000Z/
-/O.CON.KSHV.EH.W.0002.000000T0000Z-220721T0000Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -5351,38 +5443,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value>/O.NEW.KGJT.EH.A.0001.220722T1800Z-220724T0200Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=VA126400E590E0.SpecialWeatherStatement.126400E5B278VA.RNKSPSRNK.355e049f4853e76a5af34d0cbbdef8f1</id>
-<updated>2022-07-21T03:44:00-04:00</updated>
-<published>2022-07-21T03:44:00-04:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Special Weather Statement issued July 21 at 3:44AM EDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=VA126400E590E0.SpecialWeatherStatement.126400E5B278VA.RNKSPSRNK.355e049f4853e76a5af34d0cbbdef8f1"/>
-<summary>...A strong thunderstorm will impact portions of Smyth, southwestern Wythe and Grayson Counties through 430 AM EDT... At 344 AM EDT, Doppler radar was tracking a strong thunderstorm over Adwolf, or near Marion, moving east at 35 mph. HAZARD...Winds in excess of 40 mph and pea size hail. SOURCE...Radar indicated.</summary>
-<cap:event>Special Weather Statement</cap:event>
-<cap:effective>2022-07-21T03:44:00-04:00</cap:effective>
-<cap:expires>2022-07-21T04:30:00-04:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Observed</cap:certainty>
-<cap:areaDesc>Grayson; Smyth; Wythe</cap:areaDesc>
-<cap:polygon>36.91,-81.81 36.95,-81.37 36.87,-81.02 36.57,-81.15 36.59,-81.67 36.61,-81.65 36.62,-81.62 36.64,-81.61 36.64,-81.62 36.79,-81.7 36.89,-81.8 36.91,-81.81</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>051077 051173 051197</value>
-<valueName>UGC</valueName>
-<value>VAZ009 VAZ012 VAZ015</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value></value>
 </cap:parameter>
 </entry>
 <entry>
@@ -5579,95 +5639,31 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=WV126400E58FB4.SpecialWeatherStatement.126400E5AC9CWV.RLXSPSRLX.c8f92bf1b3467dc713684c9cb0f823fb</id>
-<updated>2022-07-21T03:41:00-04:00</updated>
-<published>2022-07-21T03:41:00-04:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=WV126400E5AAA8.SpecialWeatherStatement.126400E5B854WV.RNKSPSRNK.cf83a4366ab36ab5ce4f1814c406c429</id>
+<updated>2022-07-21T04:10:00-04:00</updated>
+<published>2022-07-21T04:10:00-04:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Special Weather Statement issued July 21 at 3:41AM EDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=WV126400E58FB4.SpecialWeatherStatement.126400E5AC9CWV.RLXSPSRLX.c8f92bf1b3467dc713684c9cb0f823fb"/>
-<summary>...A strong thunderstorm will impact portions of west central Kanawha, central Lincoln and northwestern Boone Counties through 415 AM EDT... At 341 AM EDT, Doppler radar was tracking a strong thunderstorm near Spurlockville, or 8 miles south of Hamlin, moving east at 20 mph. HAZARD...Winds in excess of 40 mph.</summary>
+<title>Special Weather Statement issued July 21 at 4:10AM EDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=WV126400E5AAA8.SpecialWeatherStatement.126400E5B854WV.RNKSPSRNK.cf83a4366ab36ab5ce4f1814c406c429"/>
+<summary>...Strong thunderstorms will impact portions of Greenbrier, Summers and Monroe Counties through 500 AM EDT... At 400 AM EDT, Doppler radar was tracking strong thunderstorms along a line extending from the mountains northwest of Lewisburg, to near Hinton. Movement was east at 30 mph. HAZARD...Winds in excess of 40 mph, and pea to penny size hail.</summary>
 <cap:event>Special Weather Statement</cap:event>
-<cap:effective>2022-07-21T03:41:00-04:00</cap:effective>
-<cap:expires>2022-07-21T04:15:00-04:00</cap:expires>
+<cap:effective>2022-07-21T04:10:00-04:00</cap:effective>
+<cap:expires>2022-07-21T04:45:00-04:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
 <cap:category>Met</cap:category>
 <cap:urgency>Expected</cap:urgency>
 <cap:severity>Minor</cap:severity>
 <cap:certainty>Observed</cap:certainty>
-<cap:areaDesc>Boone; Kanawha; Lincoln</cap:areaDesc>
-<cap:polygon>38.08,-82.14 38.26,-82.13 38.28,-81.7 38.01,-81.73 38.08,-82.14</cap:polygon>
+<cap:areaDesc>Eastern Greenbrier; Monroe; Summers; Western Greenbrier</cap:areaDesc>
+<cap:polygon>38.05,-80.26 38.06,-79.96 37.69,-80.3 37.63,-80.22 37.56,-80.33 37.52,-80.29 37.43,-80.46 37.47,-80.55 37.37,-80.77 37.59,-81.09 37.72,-80.97 37.68,-80.88 37.82,-80.94 37.87,-80.75 38.06,-80.8 38.06,-80.87 38.1,-80.88 38.08,-80.71 38.27,-80.44 38.05,-80.26</cap:polygon>
 <cap:geocode>
 <valueName>FIPS6</valueName>
-<value>054005 054039 054043</value>
+<value>054025 054063 054089</value>
 <valueName>UGC</valueName>
-<value>WVZ013 WVZ015 WVZ026</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value></value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=WV126400E58F50.SpecialWeatherStatement.126400E5AC9CWV.RLXSPSRLX.069377b4b36ef1fda6b41616a49c3bad</id>
-<updated>2022-07-21T03:40:00-04:00</updated>
-<published>2022-07-21T03:40:00-04:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Special Weather Statement issued July 21 at 3:40AM EDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=WV126400E58F50.SpecialWeatherStatement.126400E5AC9CWV.RLXSPSRLX.069377b4b36ef1fda6b41616a49c3bad"/>
-<summary>...A strong thunderstorm will impact portions of western Nicholas, east central Kanawha, southwestern Clay and northwestern Fayette Counties through 415 AM EDT... At 340 AM EDT, Doppler radar was tracking a strong thunderstorm near Coal Fork, or 10 miles east of Charleston, moving east at 20 mph. HAZARD...Winds in excess of 40 mph and pea size hail.</summary>
-<cap:event>Special Weather Statement</cap:event>
-<cap:effective>2022-07-21T03:40:00-04:00</cap:effective>
-<cap:expires>2022-07-21T04:15:00-04:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Observed</cap:certainty>
-<cap:areaDesc>Clay; Northwest Fayette; Northwest Nicholas</cap:areaDesc>
-<cap:polygon>38.2,-81.53 38.38,-81.53 38.43,-81.11 38.16,-81.1 38.2,-81.53</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>054015 054019 054067</value>
-<valueName>UGC</valueName>
-<value>WVZ027 WVZ517 WVZ519</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value></value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=WV126400E58D5C.SpecialWeatherStatement.126400E5AC9CWV.RNKSPSRNK.5bdb8cc4765b010a0c4fdedba988a21f</id>
-<updated>2022-07-21T03:35:00-04:00</updated>
-<published>2022-07-21T03:35:00-04:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Special Weather Statement issued July 21 at 3:35AM EDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=WV126400E58D5C.SpecialWeatherStatement.126400E5AC9CWV.RNKSPSRNK.5bdb8cc4765b010a0c4fdedba988a21f"/>
-<summary>...A strong thunderstorm will impact portions of northwestern Greenbrier County through 415 AM EDT... At 334 AM EDT, Doppler radar was tracking a strong thunderstorm over Babcock State Park, moving east at 30 to 35 mph. HAZARD...Winds in excess of 40 mph and pea size hail. SOURCE...Radar indicated.</summary>
-<cap:event>Special Weather Statement</cap:event>
-<cap:effective>2022-07-21T03:35:00-04:00</cap:effective>
-<cap:expires>2022-07-21T04:15:00-04:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Observed</cap:certainty>
-<cap:areaDesc>Eastern Greenbrier; Western Greenbrier</cap:areaDesc>
-<cap:polygon>37.85,-80.5 37.87,-80.75 37.95,-80.81 37.99,-80.77 37.99,-80.79 38.02,-80.8 38.03,-80.82 38.04,-80.83 38.06,-80.8 38.06,-80.82 38.05,-80.84 38.06,-80.87 38.08,-80.89 38.1,-80.88 38.08,-80.71 38.14,-80.63 38.15,-80.47 37.85,-80.5</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>054025</value>
-<valueName>UGC</valueName>
-<value>WVZ507 WVZ508</value>
+<value>WVZ043 WVZ044 WVZ507 WVZ508</value>
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
