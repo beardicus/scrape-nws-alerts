@@ -16,11 +16,11 @@ xmlns = 'http://www.w3.org/2005/Atom'
 xmlns:cap = 'urn:oasis:names:tc:emergency:cap:1.1'
 xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 >
-<!-- http-date = Sat, 23 Jul 2022 17:34:00 GMT -->
+<!-- http-date = Sat, 23 Jul 2022 18:02:00 GMT -->
 <id>https://alerts.weather.gov/cap/us.php?x=0</id>
 <logo>http://alerts.weather.gov/images/xml_logo.gif</logo>
 <generator>NWS CAP Server</generator>
-<updated>2022-07-23T13:34:00-04:00</updated>
+<updated>2022-07-23T14:02:00-04:00</updated>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
@@ -52,6 +52,38 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <value>002050 002060 002070 002164</value>
 <valueName>UGC</valueName>
 <value>AKZ155 AKZ161</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value></value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=AL126401059AD4.SpecialWeatherStatement.12640105BD98AL.TAESPSTAE.6116b6d02011a468307f3b509d84ff73</id>
+<updated>2022-07-23T12:41:00-05:00</updated>
+<published>2022-07-23T12:41:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Special Weather Statement issued July 23 at 12:41PM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=AL126401059AD4.SpecialWeatherStatement.12640105BD98AL.TAESPSTAE.6116b6d02011a468307f3b509d84ff73"/>
+<summary>...A strong thunderstorm will impact portions of southwestern Dale, southeastern Coffee, central Geneva and northwestern Houston Counties through 130 PM CDT... At 1241 PM CDT, Doppler radar was tracking a strong thunderstorm over Geneva, moving northeast at 20 mph. HAZARD...Winds in excess of 40 mph.</summary>
+<cap:event>Special Weather Statement</cap:event>
+<cap:effective>2022-07-23T12:41:00-05:00</cap:effective>
+<cap:expires>2022-07-23T13:30:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Observed</cap:certainty>
+<cap:areaDesc>Coffee; Dale; Geneva; Houston</cap:areaDesc>
+<cap:polygon>31.35,-85.88 31.26,-85.58 31,-85.73 30.99,-85.85 31.04,-86.01 31.35,-85.88</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>001031 001045 001061 001069</value>
+<valueName>UGC</valueName>
+<value>ALZ065 ALZ066 ALZ068 ALZ069</value>
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
@@ -447,6 +479,39 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=CO12640105A0B0.FlashFloodWatch.12640112AA30CO.GJTFFAGJT.66fb864d04d391345af45a0a4bbdf176</id>
+<updated>2022-07-23T11:56:00-06:00</updated>
+<published>2022-07-23T11:56:00-06:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Flash Flood Watch issued July 23 at 11:56AM MDT until July 23 at 9:00PM MDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CO12640105A0B0.FlashFloodWatch.12640112AA30CO.GJTFFAGJT.66fb864d04d391345af45a0a4bbdf176"/>
+<summary>...FLASH FLOOD WATCH FOR THE GRIZZLY CREEK FIRE BURN AREA IN EFFECT FROM 2 PM UNTIL 9 PM MDT THIS EVENING... * WHAT...Flash flooding and debris flows caused by excessive rainfall are possible over the Grizzly Creek Fire Burn Area. * WHERE...The Grizzly Creek Fire Burn Area within Glenwood Canyon east of Glenwood Springs, CO.</summary>
+<cap:event>Flash Flood Watch</cap:event>
+<cap:effective>2022-07-23T11:56:00-06:00</cap:effective>
+<cap:expires>2022-07-23T21:00:00-06:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Severe</cap:severity>
+<cap:certainty>Possible</cap:certainty>
+<cap:areaDesc>Central Colorado River Basin; Flat Tops; Gore and Elk Mountains, Central Mountain Valleys</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>008037 008045 008097 008103</value>
+<valueName>UGC</valueName>
+<value>COZ008 COZ010 COZ013</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.NEW.KGJT.FF.A.0014.220723T2000Z-220724T0300Z/
+/00000.0.ER.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
+</cap:parameter>
+</entry>
+<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=CO126401058B34.HeatAdvisory.126401128320CO.GJTNPWGJT.794f5dd7dc53705811b3eb4b42634785</id>
 <updated>2022-07-23T11:01:00-06:00</updated>
 <published>2022-07-23T11:01:00-06:00</published>
@@ -799,31 +864,63 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=FL1264010594F8.SpecialWeatherStatement.12640105B1E0FL.JAXSPSJAX.3816f22e77323246b736418a138409f5</id>
-<updated>2022-07-23T13:26:00-04:00</updated>
-<published>2022-07-23T13:26:00-04:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=FL12640105B1E0.SpecialWeatherStatement.12640105BD98FL.JAXSPSJAX.71251c8afe72ec601f8abea95302c360</id>
+<updated>2022-07-23T14:00:00-04:00</updated>
+<published>2022-07-23T14:00:00-04:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Special Weather Statement issued July 23 at 1:26PM EDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=FL1264010594F8.SpecialWeatherStatement.12640105B1E0FL.JAXSPSJAX.3816f22e77323246b736418a138409f5"/>
-<summary>...A strong thunderstorm will impact portions of east central Nassau and northeastern Duval Counties through 200 PM EDT... At 125 PM EDT, Doppler radar was tracking a strong thunderstorm over Yulee, or just west of Fernandina Beach, moving southwest at 5 mph. HAZARD...Winds around 40 mph. SOURCE...Radar indicated.</summary>
+<title>Special Weather Statement issued July 23 at 2:00PM EDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=FL12640105B1E0.SpecialWeatherStatement.12640105BD98FL.JAXSPSJAX.71251c8afe72ec601f8abea95302c360"/>
+<summary>...A strong thunderstorm will impact portions of east central Nassau and north central Duval Counties through 230 PM EDT... At 159 PM EDT, Doppler radar was tracking a strong thunderstorm just south of Yulee, or 9 miles southwest of Fernandina Beach, moving southwest at 10 mph. HAZARD...Winds around 40 mph.</summary>
 <cap:event>Special Weather Statement</cap:event>
-<cap:effective>2022-07-23T13:26:00-04:00</cap:effective>
-<cap:expires>2022-07-23T14:00:00-04:00</cap:expires>
+<cap:effective>2022-07-23T14:00:00-04:00</cap:effective>
+<cap:expires>2022-07-23T14:30:00-04:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
 <cap:category>Met</cap:category>
 <cap:urgency>Expected</cap:urgency>
 <cap:severity>Minor</cap:severity>
 <cap:certainty>Observed</cap:certainty>
-<cap:areaDesc>Coastal Duval; Coastal Nassau; Inland Nassau; Western Duval</cap:areaDesc>
-<cap:polygon>30.71,-81.55 30.61,-81.45 30.41,-81.53 30.57,-81.74 30.71,-81.55</cap:polygon>
+<cap:areaDesc>Coastal Duval; Coastal Nassau; Inland Nassau; Trout River; Western Duval</cap:areaDesc>
+<cap:polygon>30.7,-81.55 30.54,-81.44 30.42,-81.65 30.6,-81.78 30.7,-81.55</cap:polygon>
 <cap:geocode>
 <valueName>FIPS6</valueName>
 <value>012031 012089</value>
 <valueName>UGC</valueName>
-<value>FLZ024 FLZ124 FLZ125 FLZ425</value>
+<value>FLZ024 FLZ124 FLZ125 FLZ225 FLZ425</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value></value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=FL126401059A70.SpecialWeatherStatement.12640105C374FL.MOBSPSMOB.665b4da824505176e8cfaed249cfdd79</id>
+<updated>2022-07-23T13:40:00-04:00</updated>
+<published>2022-07-23T13:40:00-04:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Special Weather Statement issued July 23 at 1:40PM EDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=FL126401059A70.SpecialWeatherStatement.12640105C374FL.MOBSPSMOB.665b4da824505176e8cfaed249cfdd79"/>
+<summary>...A strong thunderstorm will impact portions of northern Santa Rosa County through 145 PM CDT... At 1239 PM CDT, National Weather Service doppler radar indicated a strong thunderstorm 7 miles north of Point Baker, or 10 miles north of Milton, moving northeast at 20 mph. HAZARD...Winds in excess of 40 mph.</summary>
+<cap:event>Special Weather Statement</cap:event>
+<cap:effective>2022-07-23T13:40:00-04:00</cap:effective>
+<cap:expires>2022-07-23T14:45:00-04:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Observed</cap:certainty>
+<cap:areaDesc>Santa Rosa Inland</cap:areaDesc>
+<cap:polygon>30.74,-87.25 30.94,-87.25 30.96,-87.24 30.97,-87.23 30.96,-87.22 31,-87.18 31,-86.79 30.94,-86.79 30.63,-87.05 30.74,-87.25</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>012113</value>
+<valueName>UGC</valueName>
+<value>FLZ203</value>
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
@@ -892,6 +989,38 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value>/O.NEW.KMFL.RP.S.0027.220723T0653Z-220725T0000Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=GA126401059C00.SpecialWeatherStatement.12640105B7BCGA.JAXSPSJAX.d624325a279952325ae1e02c4846f796</id>
+<updated>2022-07-23T13:44:00-04:00</updated>
+<published>2022-07-23T13:44:00-04:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Special Weather Statement issued July 23 at 1:44PM EDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=GA126401059C00.SpecialWeatherStatement.12640105B7BCGA.JAXSPSJAX.d624325a279952325ae1e02c4846f796"/>
+<summary>...A strong thunderstorm will impact portions of northeastern Nassau and southeastern Camden Counties through 215 PM EDT... At 143 PM EDT, Doppler radar was tracking a cluster of strong thunderstorms around St. Marys, moving west at 10 mph. HAZARD...Winds in excess of 40 mph. SOURCE...Radar indicated.</summary>
+<cap:event>Special Weather Statement</cap:event>
+<cap:effective>2022-07-23T13:44:00-04:00</cap:effective>
+<cap:expires>2022-07-23T14:15:00-04:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Observed</cap:certainty>
+<cap:areaDesc>Coastal Camden; Inland Camden</cap:areaDesc>
+<cap:polygon>30.97,-81.52 30.77,-81.49 30.73,-81.5 30.65,-81.65 30.82,-81.75 30.96,-81.59 30.97,-81.52</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>013039</value>
+<valueName>UGC</valueName>
+<value>GAZ165 GAZ166</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value></value>
 </cap:parameter>
 </entry>
 <entry>
@@ -1673,38 +1802,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=IN12640105955C.SpecialWeatherStatement.12640105B1E0IN.INDSPSIND.105011e4a1a1c47cf67393381d4e3e81</id>
-<updated>2022-07-23T13:27:00-04:00</updated>
-<published>2022-07-23T13:27:00-04:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Special Weather Statement issued July 23 at 1:27PM EDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=IN12640105955C.SpecialWeatherStatement.12640105B1E0IN.INDSPSIND.105011e4a1a1c47cf67393381d4e3e81"/>
-<summary>...A strong thunderstorm will impact portions of Carroll and northern Tippecanoe Counties through 200 PM EDT... At 126 PM EDT, Doppler radar was tracking a strong thunderstorm over Brookston, or 12 miles southwest of Monticello, moving southeast at 30 mph. HAZARD...Winds in excess of 40 mph and pea size hail.</summary>
-<cap:event>Special Weather Statement</cap:event>
-<cap:effective>2022-07-23T13:27:00-04:00</cap:effective>
-<cap:expires>2022-07-23T14:00:00-04:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Observed</cap:certainty>
-<cap:areaDesc>Carroll; Tippecanoe</cap:areaDesc>
-<cap:polygon>40.74,-86.53 40.69,-86.52 40.69,-86.37 40.55,-86.38 40.43,-86.69 40.44,-87.09 40.56,-87.09 40.56,-86.77 40.57,-86.76 40.66,-86.76 40.68,-86.74 40.68,-86.76 40.69,-86.75 40.71,-86.76 40.74,-86.75 40.74,-86.53</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>018015 018157</value>
-<valueName>UGC</valueName>
-<value>INZ021 INZ029</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value></value>
-</cap:parameter>
-</entry>
-<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=IN1264010593CC.FlashFloodWarning.126401067B0CIN.LOTFFWLOT.d217cac1f313a0a4350cb532638e5cac</id>
 <updated>2022-07-23T13:23:00-04:00</updated>
 <published>2022-07-23T13:23:00-04:00</published>
@@ -1770,38 +1867,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=IN1264010576E4.SevereThunderstormWatch.12640105B1E0IN.INDWCNIND.854fe8927b3d84fb14a6103d034d3c60</id>
-<updated>2022-07-23T12:49:00-04:00</updated>
-<published>2022-07-23T12:49:00-04:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Severe Thunderstorm Watch issued July 23 at 12:49PM EDT until July 23 at 2:00PM EDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=IN1264010576E4.SevereThunderstormWatch.12640105B1E0IN.INDWCNIND.854fe8927b3d84fb14a6103d034d3c60"/>
-<summary>SEVERE THUNDERSTORM WATCH 488 REMAINS VALID UNTIL 2 PM EDT THIS AFTERNOON FOR THE FOLLOWING AREAS IN INDIANA THIS WATCH INCLUDES 10 COUNTIES IN CENTRAL INDIANA BOONE CLINTON HAMILTON HOWARD MADISON TIPTON</summary>
-<cap:event>Severe Thunderstorm Watch</cap:event>
-<cap:effective>2022-07-23T12:49:00-04:00</cap:effective>
-<cap:expires>2022-07-23T14:00:00-04:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Severe</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Boone; Carroll; Clinton; Delaware; Hamilton; Howard; Madison; Randolph; Tippecanoe; Tipton</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>018011 018015 018023 018035 018057 018067 018095 018135 018157 018159</value>
-<valueName>UGC</valueName>
-<value>INC011 INC015 INC023 INC035 INC057 INC067 INC095 INC135 INC157 INC159</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KIND.SV.A.0488.000000T0000Z-220723T1800Z/</value>
-</cap:parameter>
-</entry>
-<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=IN1264010575B8.FloodAdvisory.126401067B0CIN.LOTFLSLOT.0a89039aa57df74f108f5185164c3cdc</id>
 <updated>2022-07-23T12:46:00-04:00</updated>
 <published>2022-07-23T12:46:00-04:00</published>
@@ -1864,38 +1929,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value>/O.CON.KILN.HT.Y.0007.220723T1600Z-220724T0000Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=IN126401054A5C.SevereThunderstormWatch.12640105B1E0IN.IWXWCNIWX.14ab11aa36bd68b54633e28992c3cd9e</id>
-<updated>2022-07-23T11:35:00-04:00</updated>
-<published>2022-07-23T11:35:00-04:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Severe Thunderstorm Watch issued July 23 at 11:35AM EDT until July 23 at 2:00PM EDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=IN126401054A5C.SevereThunderstormWatch.12640105B1E0IN.IWXWCNIWX.14ab11aa36bd68b54633e28992c3cd9e"/>
-<summary>SEVERE THUNDERSTORM WATCH 488 REMAINS VALID UNTIL 2 PM EDT THIS AFTERNOON FOR THE FOLLOWING AREAS IN INDIANA THIS WATCH INCLUDES 1 COUNTY IN NORTHERN INDIANA WHITE THIS INCLUDES THE CITIES OF BROOKSTON, MONON, AND MONTICELLO.</summary>
-<cap:event>Severe Thunderstorm Watch</cap:event>
-<cap:effective>2022-07-23T11:35:00-04:00</cap:effective>
-<cap:expires>2022-07-23T14:00:00-04:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Severe</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>White</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>018181</value>
-<valueName>UGC</valueName>
-<value>INC181</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KIWX.SV.A.0488.000000T0000Z-220723T1800Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -2377,6 +2410,38 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value>/O.CON.KDDC.HT.Y.0013.220723T1800Z-220724T0100Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=KY12640105B244.SpecialWeatherStatement.12640105BD98KY.ILNSPSILN.927362ff24ac46f975942ddf34b7d497</id>
+<updated>2022-07-23T14:01:00-04:00</updated>
+<published>2022-07-23T14:01:00-04:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Special Weather Statement issued July 23 at 2:01PM EDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=KY12640105B244.SpecialWeatherStatement.12640105BD98KY.ILNSPSILN.927362ff24ac46f975942ddf34b7d497"/>
+<summary>...STRONG THUNDERSTORMS WILL IMPACT PORTIONS OF SOUTHERN MASON, LEWIS, SOUTHERN ADAMS AND SCIOTO COUNTIES THROUGH 230 PM EDT... At 200 PM EDT, strong thunderstorms were located along a line extending from South Webster to Lewisburg, moving southeast at 25 mph. HAZARD...Wind gusts up to 40 mph and half inch hail.</summary>
+<cap:event>Special Weather Statement</cap:event>
+<cap:effective>2022-07-23T14:01:00-04:00</cap:effective>
+<cap:expires>2022-07-23T14:30:00-04:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Observed</cap:certainty>
+<cap:areaDesc>Lewis; Mason</cap:areaDesc>
+<cap:polygon>38.43,-83.58 38.49,-83.59 38.52,-83.64 38.46,-83.87 38.58,-83.91 38.94,-82.79 38.93,-82.76 38.85,-82.76 38.85,-82.65 38.76,-82.66 38.75,-82.7 38.68,-82.71 38.68,-82.76 38.65,-82.77 38.62,-82.86 38.76,-82.89 38.73,-83.02 38.68,-83.03 38.54,-83.12 38.41,-83.51 38.43,-83.58</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>021135 021161</value>
+<valueName>UGC</valueName>
+<value>KYZ099 KYZ100</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value></value>
 </cap:parameter>
 </entry>
 <entry>
@@ -2924,18 +2989,18 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=MI126401052860.BeachHazardsStatement.12640105B1E0MI.GRRCFWGRR.ac95bf745d1836b4b5a88b5647e5ebb3</id>
-<updated>2022-07-23T10:48:00-04:00</updated>
-<published>2022-07-23T10:48:00-04:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=MI12640105987C.BeachHazardsStatement.126401060000MI.GRRCFWGRR.ac95bf745d1836b4b5a88b5647e5ebb3</id>
+<updated>2022-07-23T13:35:00-04:00</updated>
+<published>2022-07-23T13:35:00-04:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Beach Hazards Statement issued July 23 at 10:48AM EDT until July 23 at 2:00PM EDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MI126401052860.BeachHazardsStatement.12640105B1E0MI.GRRCFWGRR.ac95bf745d1836b4b5a88b5647e5ebb3"/>
-<summary>...BEACH HAZARDS STATEMENT REMAINS IN EFFECT UNTIL 2 PM EDT THIS AFTERNOON... * WHAT...High wave action, strong currents, and dangerous swimming conditions expected. Piers may be heavily swamped by waves. * WHERE...Muskegon, Ottawa, Allegan and Van Buren counties.</summary>
+<title>Beach Hazards Statement issued July 23 at 1:35PM EDT until July 23 at 4:00PM EDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MI12640105987C.BeachHazardsStatement.126401060000MI.GRRCFWGRR.ac95bf745d1836b4b5a88b5647e5ebb3"/>
+<summary>...BEACH HAZARDS STATEMENT NOW IN EFFECT UNTIL 4 PM EDT THIS AFTERNOON... * WHAT...High wave action, strong currents, and dangerous swimming conditions expected. Piers may be heavily swamped by waves. * WHERE...Muskegon, Ottawa, Allegan and Van Buren counties.</summary>
 <cap:event>Beach Hazards Statement</cap:event>
-<cap:effective>2022-07-23T10:48:00-04:00</cap:effective>
-<cap:expires>2022-07-23T14:00:00-04:00</cap:expires>
+<cap:effective>2022-07-23T13:35:00-04:00</cap:effective>
+<cap:expires>2022-07-23T16:00:00-04:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
 <cap:category>Met</cap:category>
@@ -2952,30 +3017,94 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
-<value>/O.CON.KGRR.BH.S.0011.000000T0000Z-220723T1800Z/</value>
+<value>/O.EXT.KGRR.BH.S.0011.000000T0000Z-220723T2000Z/</value>
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=MN126401059750.SevereWeatherStatement.12640105D8F0MN.MPXSVSMPX.ddd26fa3a1a4b1aa966fac7dd6854a48</id>
-<updated>2022-07-23T12:32:00-05:00</updated>
-<published>2022-07-23T12:32:00-05:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=MN12640105A04C.SevereThunderstormWarning.12640105BD98MN.ARXSVSARX.0fdf00778d493b5c3ba2c652cc116087</id>
+<updated>2022-07-23T12:55:00-05:00</updated>
+<published>2022-07-23T12:55:00-05:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Severe Weather Statement issued July 23 at 12:32PM CDT until July 23 at 2:00PM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MN126401059750.SevereWeatherStatement.12640105D8F0MN.MPXSVSMPX.ddd26fa3a1a4b1aa966fac7dd6854a48"/>
-<summary>...THE SEVERE THUNDERSTORM WARNING FOR SOUTHEASTERN LE SUEUR... STEELE...NORTHEASTERN WASECA AND RICE COUNTIES HAS EXPIRED... The storms which prompted the warning have weakened below severe limits, and no longer pose an immediate threat to life or property. Therefore, the warning has been allowed to expire. However gusty winds and heavy rain are still possible with these thunderstorms.</summary>
-<cap:event>Severe Weather Statement</cap:event>
-<cap:effective>2022-07-23T12:32:00-05:00</cap:effective>
-<cap:expires>2022-07-23T14:00:00-05:00</cap:expires>
+<title>Severe Thunderstorm Warning issued July 23 at 12:55PM CDT until July 23 at 1:30PM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MN12640105A04C.SevereThunderstormWarning.12640105BD98MN.ARXSVSARX.0fdf00778d493b5c3ba2c652cc116087"/>
+<summary>...A SEVERE THUNDERSTORM WARNING REMAINS IN EFFECT UNTIL 130 PM CDT FOR DODGE COUNTY... At 1254 PM CDT, severe thunderstorms were located along a line extending from West Concord to near Claremont, moving east at 35 mph. HAZARD...60 mph wind gusts and quarter size hail. SOURCE...Radar indicated.</summary>
+<cap:event>Severe Thunderstorm Warning</cap:event>
+<cap:effective>2022-07-23T12:55:00-05:00</cap:effective>
+<cap:expires>2022-07-23T13:30:00-05:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
 <cap:category>Met</cap:category>
 <cap:urgency>Immediate</cap:urgency>
 <cap:severity>Severe</cap:severity>
 <cap:certainty>Observed</cap:certainty>
+<cap:areaDesc>Dodge</cap:areaDesc>
+<cap:polygon>44.2,-93.04 44.19,-92.68 43.85,-92.68 43.85,-93.05 44.2,-93.04</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>027039</value>
+<valueName>UGC</valueName>
+<value>MNC039</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KARX.SV.W.0103.000000T0000Z-220723T1830Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=MN12640105A04C.SevereWeatherStatement.12640105BD98MN.ARXSVSARX.0051fda04967478603a6bd23184bb011</id>
+<updated>2022-07-23T12:55:00-05:00</updated>
+<published>2022-07-23T12:55:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Severe Weather Statement issued July 23 at 12:55PM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MN12640105A04C.SevereWeatherStatement.12640105BD98MN.ARXSVSARX.0051fda04967478603a6bd23184bb011"/>
+<summary>...A SEVERE THUNDERSTORM WARNING REMAINS IN EFFECT UNTIL 130 PM CDT FOR DODGE COUNTY... At 1254 PM CDT, severe thunderstorms were located along a line extending from West Concord to near Claremont, moving east at 35 mph. HAZARD...60 mph wind gusts and quarter size hail. SOURCE...Radar indicated.</summary>
+<cap:event>Severe Weather Statement</cap:event>
+<cap:effective>2022-07-23T12:55:00-05:00</cap:effective>
+<cap:expires>2022-07-23T13:30:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Immediate</cap:urgency>
+<cap:severity>Severe</cap:severity>
+<cap:certainty>Observed</cap:certainty>
+<cap:areaDesc>Dodge</cap:areaDesc>
+<cap:polygon>44.2,-93.04 44.19,-92.68 43.85,-92.68 43.85,-93.05 44.2,-93.04</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>027039</value>
+<valueName>UGC</valueName>
+<value>MNC039</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KARX.SV.W.0103.000000T0000Z-220723T1830Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=MN12640105A04C.SevereThunderstormWatch.12640105D8F0MN.MPXWCNMPX.cd4fae9a3a812d4bff768750daa35b54</id>
+<updated>2022-07-23T12:55:00-05:00</updated>
+<published>2022-07-23T12:55:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Severe Thunderstorm Watch issued July 23 at 12:55PM CDT until July 23 at 2:00PM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MN12640105A04C.SevereThunderstormWatch.12640105D8F0MN.MPXWCNMPX.cd4fae9a3a812d4bff768750daa35b54"/>
+<summary>SEVERE THUNDERSTORM WATCH 489 REMAINS VALID UNTIL 2 PM CDT THIS AFTERNOON FOR THE FOLLOWING AREAS IN MINNESOTA THIS WATCH INCLUDES 3 COUNTIES IN SOUTH CENTRAL MINNESOTA RICE STEELE WASECA THIS INCLUDES THE CITIES OF FARIBAULT, OWATONNA, AND WASECA.</summary>
+<cap:event>Severe Thunderstorm Watch</cap:event>
+<cap:effective>2022-07-23T12:55:00-05:00</cap:effective>
+<cap:expires>2022-07-23T14:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Severe</cap:severity>
+<cap:certainty>Likely</cap:certainty>
 <cap:areaDesc>Rice; Steele; Waseca</cap:areaDesc>
-<cap:polygon>44.02,-93.05 43.95,-93.06 43.98,-93.68 44.18,-93.56 44.42,-93.57 44.41,-93.36 44.39,-93.04 44.02,-93.05</cap:polygon>
+<cap:polygon></cap:polygon>
 <cap:geocode>
 <valueName>FIPS6</valueName>
 <value>027131 027147 027161</value>
@@ -2984,85 +3113,21 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
-<value>/O.EXP.KMPX.SV.W.0225.000000T0000Z-220723T1730Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=MN126401059750.SevereWeatherStatement.126401123500MN.MPXSVSMPX.fcd1b2d61a03de6c831e0a90f98f161a</id>
-<updated>2022-07-23T12:32:00-05:00</updated>
-<published>2022-07-23T12:32:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Severe Weather Statement issued July 23 at 12:32PM CDT until July 23 at 7:00PM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MN126401059750.SevereWeatherStatement.126401123500MN.MPXSVSMPX.fcd1b2d61a03de6c831e0a90f98f161a"/>
-<summary>...THE SEVERE THUNDERSTORM WARNING FOR SOUTHEASTERN LE SUEUR... STEELE...NORTHEASTERN WASECA AND RICE COUNTIES HAS EXPIRED... The storms which prompted the warning have weakened below severe limits, and no longer pose an immediate threat to life or property. Therefore, the warning has been allowed to expire. However gusty winds and heavy rain are still possible with these thunderstorms.</summary>
-<cap:event>Severe Weather Statement</cap:event>
-<cap:effective>2022-07-23T12:32:00-05:00</cap:effective>
-<cap:expires>2022-07-23T19:00:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Immediate</cap:urgency>
-<cap:severity>Severe</cap:severity>
-<cap:certainty>Observed</cap:certainty>
-<cap:areaDesc>Le Sueur</cap:areaDesc>
-<cap:polygon>44.02,-93.05 43.95,-93.06 43.98,-93.68 44.18,-93.56 44.42,-93.57 44.41,-93.36 44.39,-93.04 44.02,-93.05</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>027079</value>
-<valueName>UGC</valueName>
-<value>MNC079</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.EXP.KMPX.SV.W.0225.000000T0000Z-220723T1730Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=MN126401059688.SevereThunderstormWatch.12640105D8F0MN.MPXWCNMPX.89ce5be6bed8276a2b9a8094be7885de</id>
-<updated>2022-07-23T12:30:00-05:00</updated>
-<published>2022-07-23T12:30:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Severe Thunderstorm Watch issued July 23 at 12:30PM CDT until July 23 at 2:00PM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MN126401059688.SevereThunderstormWatch.12640105D8F0MN.MPXWCNMPX.89ce5be6bed8276a2b9a8094be7885de"/>
-<summary>SEVERE THUNDERSTORM WATCH 489 REMAINS VALID UNTIL 2 PM CDT THIS AFTERNOON FOR THE FOLLOWING AREAS IN MINNESOTA THIS WATCH INCLUDES 8 COUNTIES IN EAST CENTRAL MINNESOTA DAKOTA SCOTT IN SOUTH CENTRAL MINNESOTA</summary>
-<cap:event>Severe Thunderstorm Watch</cap:event>
-<cap:effective>2022-07-23T12:30:00-05:00</cap:effective>
-<cap:expires>2022-07-23T14:00:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Severe</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Blue Earth; Dakota; Le Sueur; Nicollet; Rice; Scott; Steele; Waseca</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>027013 027037 027079 027103 027131 027139 027147 027161</value>
-<valueName>UGC</valueName>
-<value>MNC013 MNC037 MNC079 MNC103 MNC131 MNC139 MNC147 MNC161</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
 <value>/O.CON.KMPX.SV.A.0489.000000T0000Z-220723T1900Z/</value>
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=MN126401059688.SevereThunderstormWatch.126401123500MN.MPXWCNMPX.c9ac6a92da9c73ea6747bbd914cf73e8</id>
-<updated>2022-07-23T12:30:00-05:00</updated>
-<published>2022-07-23T12:30:00-05:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=MN12640105A04C.SevereThunderstormWatch.126401123500MN.MPXWCNMPX.c9ac6a92da9c73ea6747bbd914cf73e8</id>
+<updated>2022-07-23T12:55:00-05:00</updated>
+<published>2022-07-23T12:55:00-05:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Severe Thunderstorm Watch issued July 23 at 12:30PM CDT until July 23 at 7:00PM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MN126401059688.SevereThunderstormWatch.126401123500MN.MPXWCNMPX.c9ac6a92da9c73ea6747bbd914cf73e8"/>
+<title>Severe Thunderstorm Watch issued July 23 at 12:55PM CDT until July 23 at 7:00PM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MN12640105A04C.SevereThunderstormWatch.126401123500MN.MPXWCNMPX.c9ac6a92da9c73ea6747bbd914cf73e8"/>
 <summary>SEVERE THUNDERSTORM WATCH 491 REMAINS VALID UNTIL 7 PM CDT THIS EVENING FOR THE FOLLOWING AREAS IN MINNESOTA THIS WATCH INCLUDES 3 COUNTIES IN SOUTH CENTRAL MINNESOTA FARIBAULT FREEBORN IN SOUTHEAST MINNESOTA</summary>
 <cap:event>Severe Thunderstorm Watch</cap:event>
-<cap:effective>2022-07-23T12:30:00-05:00</cap:effective>
+<cap:effective>2022-07-23T12:55:00-05:00</cap:effective>
 <cap:expires>2022-07-23T19:00:00-05:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
@@ -3084,35 +3149,35 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=MN126401059624.SevereThunderstormWarning.12640105BD98MN.ARXSVRARX.0fdf00778d493b5c3ba2c652cc116087</id>
-<updated>2022-07-23T12:29:00-05:00</updated>
-<published>2022-07-23T12:29:00-05:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=MN1264010598E0.SpecialWeatherStatement.12640105B7BCMN.MPXSPSMPX.0f38cbc1e909b50955f92dfd0a9dd5c3</id>
+<updated>2022-07-23T12:36:00-05:00</updated>
+<published>2022-07-23T12:36:00-05:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Severe Thunderstorm Warning issued July 23 at 12:29PM CDT until July 23 at 1:30PM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MN126401059624.SevereThunderstormWarning.12640105BD98MN.ARXSVRARX.0fdf00778d493b5c3ba2c652cc116087"/>
-<summary>The National Weather Service in La Crosse has issued a * Severe Thunderstorm Warning for... Dodge County in southeastern Minnesota... * Until 130 PM CDT. * At 1229 PM CDT, severe thunderstorms were located along a line extending from near Medford to 6 miles northeast of Ellendale,</summary>
-<cap:event>Severe Thunderstorm Warning</cap:event>
-<cap:effective>2022-07-23T12:29:00-05:00</cap:effective>
-<cap:expires>2022-07-23T13:30:00-05:00</cap:expires>
+<title>Special Weather Statement issued July 23 at 12:36PM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MN1264010598E0.SpecialWeatherStatement.12640105B7BCMN.MPXSPSMPX.0f38cbc1e909b50955f92dfd0a9dd5c3"/>
+<summary>...Strong thunderstorms will impact portions of northern Steele, southwestern Goodhue and southeastern Rice Counties through 115 PM CDT... At 1236 PM CDT, Doppler radar was tracking strong thunderstorms along a line extending from near Nerstrand to near Medford to 8 miles southwest of Owatonna. Movement was east at 45 mph.</summary>
+<cap:event>Special Weather Statement</cap:event>
+<cap:effective>2022-07-23T12:36:00-05:00</cap:effective>
+<cap:expires>2022-07-23T13:15:00-05:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
 <cap:category>Met</cap:category>
-<cap:urgency>Immediate</cap:urgency>
-<cap:severity>Severe</cap:severity>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
 <cap:certainty>Observed</cap:certainty>
-<cap:areaDesc>Dodge</cap:areaDesc>
-<cap:polygon>44.2,-93.04 44.19,-92.68 43.85,-92.68 43.85,-93.05 44.2,-93.04</cap:polygon>
+<cap:areaDesc>Goodhue; Rice; Steele</cap:areaDesc>
+<cap:polygon>43.99,-93.35 44.43,-93.16 44.43,-92.43 44.37,-92.44 44.36,-92.55 44.2,-92.56 44.19,-93.04 43.97,-93.05 43.99,-93.35</cap:polygon>
 <cap:geocode>
 <valueName>FIPS6</valueName>
-<value>027039</value>
+<value>027049 027131 027147</value>
 <valueName>UGC</valueName>
-<value>MNC039</value>
+<value>MNZ077 MNZ078 MNZ085</value>
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
-<value>/O.NEW.KARX.SV.W.0103.220723T1729Z-220723T1830Z/</value>
+<value></value>
 </cap:parameter>
 </entry>
 <entry>
@@ -3596,18 +3661,18 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=NC126401059818.SpecialWeatherStatement.12640105B1E0NC.GSPSPSGSP.6a8d125180a3bb4435148ab562a7374b</id>
-<updated>2022-07-23T13:34:00-04:00</updated>
-<published>2022-07-23T13:34:00-04:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=NC12640105B2A8.SpecialWeatherStatement.12640105C374NC.GSPSPSGSP.6a8d125180a3bb4435148ab562a7374b</id>
+<updated>2022-07-23T14:02:00-04:00</updated>
+<published>2022-07-23T14:02:00-04:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Special Weather Statement issued July 23 at 1:34PM EDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=NC126401059818.SpecialWeatherStatement.12640105B1E0NC.GSPSPSGSP.6a8d125180a3bb4435148ab562a7374b"/>
-<summary>...A strong thunderstorm will impact portions of west central Caldwell, southern Avery and northwestern Burke Counties through 200 PM EDT... At 134 PM EDT, Doppler radar was tracking a strong thunderstorm 8 miles southeast of Newland, or 4 miles east of B.R. Parkway-Linville Falls To Grandfather, moving southwest at 5 mph.</summary>
+<title>Special Weather Statement issued July 23 at 2:02PM EDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=NC12640105B2A8.SpecialWeatherStatement.12640105C374NC.GSPSPSGSP.6a8d125180a3bb4435148ab562a7374b"/>
+<summary>...A strong thunderstorm will impact portions of west central Caldwell, southern Avery and northwestern Burke Counties through 245 PM EDT... At 202 PM EDT, Doppler radar was tracking a strong thunderstorm 8 miles southeast of Newland, or 4 miles south of B.R. Parkway-Linville Falls To Grandfather, moving southwest at 5 mph.</summary>
 <cap:event>Special Weather Statement</cap:event>
-<cap:effective>2022-07-23T13:34:00-04:00</cap:effective>
-<cap:expires>2022-07-23T14:00:00-04:00</cap:expires>
+<cap:effective>2022-07-23T14:02:00-04:00</cap:effective>
+<cap:expires>2022-07-23T14:45:00-04:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
 <cap:category>Met</cap:category>
@@ -3615,12 +3680,108 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:severity>Minor</cap:severity>
 <cap:certainty>Observed</cap:certainty>
 <cap:areaDesc>Avery; Burke Mountains; Caldwell Mountains</cap:areaDesc>
-<cap:polygon>36.03,-81.69 35.85,-81.8 36.01,-82.01 36.11,-81.79 36.03,-81.69</cap:polygon>
+<cap:polygon>36.02,-81.69 35.84,-81.81 35.83,-81.84 35.87,-81.91 35.91,-81.91 35.96,-81.94 35.94,-81.96 35.93,-81.95 35.93,-81.96 35.91,-81.98 35.96,-82.05 35.97,-82.04 36.09,-81.81 36.02,-81.69</cap:polygon>
 <cap:geocode>
 <valueName>FIPS6</valueName>
 <value>037011 037023 037027</value>
 <valueName>UGC</valueName>
 <value>NCZ033 NCZ501 NCZ503</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value></value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=NC12640105B1E0.SpecialWeatherStatement.12640105BD98NC.GSPSPSGSP.4b48518b7061d32f2f29d7a14edaa365</id>
+<updated>2022-07-23T14:00:00-04:00</updated>
+<published>2022-07-23T14:00:00-04:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Special Weather Statement issued July 23 at 2:00PM EDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=NC12640105B1E0.SpecialWeatherStatement.12640105BD98NC.GSPSPSGSP.4b48518b7061d32f2f29d7a14edaa365"/>
+<summary>...A strong thunderstorm will impact portions of northeastern Caldwell County through 230 PM EDT... At 200 PM EDT, Doppler radar was tracking a strong thunderstorm 6 miles east of Blowing Rock, or near Darby, moving east at 20 mph. HAZARD...Wind gusts up to 40 mph and pea size hail. SOURCE...Radar indicated.</summary>
+<cap:event>Special Weather Statement</cap:event>
+<cap:effective>2022-07-23T14:00:00-04:00</cap:effective>
+<cap:expires>2022-07-23T14:30:00-04:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Observed</cap:certainty>
+<cap:areaDesc>Greater Caldwell</cap:areaDesc>
+<cap:polygon>36.1,-81.52 36.1,-81.5 36.09,-81.47 36.09,-81.45 36.07,-81.44 36.07,-81.41 36.05,-81.39 36.04,-81.39 36.04,-81.37 36.02,-81.34 35.99,-81.33 35.95,-81.34 36.01,-81.66 36.12,-81.64 36.12,-81.55 36.1,-81.52</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>037027</value>
+<valueName>UGC</valueName>
+<value>NCZ502</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value></value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=NC126401059EBC.SpecialWeatherStatement.12640105B7BCNC.RAHSPSRAH.47d0b1e7aa560d14db8bdd716c66a07e</id>
+<updated>2022-07-23T13:51:00-04:00</updated>
+<published>2022-07-23T13:51:00-04:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Special Weather Statement issued July 23 at 1:51PM EDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=NC126401059EBC.SpecialWeatherStatement.12640105B7BCNC.RAHSPSRAH.47d0b1e7aa560d14db8bdd716c66a07e"/>
+<summary>...A strong thunderstorm will impact portions of east central Randolph and northwestern Chatham Counties through 215 PM EDT... At 151 PM EDT, Doppler radar was tracking a strong thunderstorm near Siler City. This storm was nearly stationary. HAZARD...Winds in excess of 40 mph. SOURCE...Radar indicated.</summary>
+<cap:event>Special Weather Statement</cap:event>
+<cap:effective>2022-07-23T13:51:00-04:00</cap:effective>
+<cap:expires>2022-07-23T14:15:00-04:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Observed</cap:certainty>
+<cap:areaDesc>Chatham; Randolph</cap:areaDesc>
+<cap:polygon>35.84,-79.54 35.84,-79.46 35.77,-79.29 35.6,-79.49 35.78,-79.64 35.85,-79.54 35.84,-79.54</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>037037 037151</value>
+<valueName>UGC</valueName>
+<value>NCZ039 NCZ040</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value></value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=NC126401059A70.SpecialWeatherStatement.12640105B7BCNC.GSPSPSGSP.105ad5b557165458fa57d1ad7378b3ac</id>
+<updated>2022-07-23T13:40:00-04:00</updated>
+<published>2022-07-23T13:40:00-04:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Special Weather Statement issued July 23 at 1:40PM EDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=NC126401059A70.SpecialWeatherStatement.12640105B7BCNC.GSPSPSGSP.105ad5b557165458fa57d1ad7378b3ac"/>
+<summary>...A strong thunderstorm will impact portions of west central McDowell, northeastern Buncombe and southeastern Yancey Counties through 215 PM EDT... At 140 PM EDT, Doppler radar was tracking a strong thunderstorm 12 miles south of Burnsville, or near B.R. Parkway-Craggy To Little Switzerland, moving southwest at 5 mph.</summary>
+<cap:event>Special Weather Statement</cap:event>
+<cap:effective>2022-07-23T13:40:00-04:00</cap:effective>
+<cap:expires>2022-07-23T14:15:00-04:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Observed</cap:certainty>
+<cap:areaDesc>Buncombe; McDowell Mountains; Yancey</cap:areaDesc>
+<cap:polygon>35.82,-82.22 35.73,-82.1 35.62,-82.25 35.73,-82.36 35.82,-82.22</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>037021 037111 037199</value>
+<valueName>UGC</valueName>
+<value>NCZ049 NCZ053 NCZ505</value>
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
@@ -3653,38 +3814,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <value>037013 037049 037055 037061 037079 037095 037103 037107 037117 037133 037137 037147 037177 037187</value>
 <valueName>UGC</valueName>
 <value>NCZ029 NCZ044 NCZ045 NCZ046 NCZ047 NCZ079 NCZ080 NCZ081 NCZ090 NCZ091 NCZ092 NCZ094 NCZ193 NCZ194 NCZ198</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value></value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=NE126401058DF0.SpecialWeatherStatement.12640105B1E0NE.CYSSPSCYS.6f51d37dcc718ea94d44f7666f290208</id>
-<updated>2022-07-23T12:08:00-05:00</updated>
-<published>2022-07-23T12:08:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Special Weather Statement issued July 23 at 12:08PM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=NE126401058DF0.SpecialWeatherStatement.12640105B1E0NE.CYSSPSCYS.6f51d37dcc718ea94d44f7666f290208"/>
-<summary>...A strong thunderstorm will impact portions of Cheyenne, eastern Kimball and southeastern Banner Counties through NOON MDT... At 1107 AM MDT, Doppler radar was tracking a strong thunderstorm over Dix, or 7 miles east of Kimball, moving east at 45 mph. HAZARD...Wind gusts up to 50 mph. SOURCE...Radar indicated.</summary>
-<cap:event>Special Weather Statement</cap:event>
-<cap:effective>2022-07-23T12:08:00-05:00</cap:effective>
-<cap:expires>2022-07-23T13:00:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Observed</cap:certainty>
-<cap:areaDesc>Cheyenne; Kimball</cap:areaDesc>
-<cap:polygon>41.39,-103.71 41.41,-102.86 41,-102.84 41,-103.31 41.01,-103.74 41.39,-103.71</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>031033 031105</value>
-<valueName>UGC</valueName>
-<value>NEZ054 NEZ055</value>
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
@@ -4365,6 +4494,38 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=NM12640105A1DC.HeatAdvisory.126401128320NM.ABQNPWABQ.9ea2e01ba77f64f5873b328d2fe6776d</id>
+<updated>2022-07-23T11:59:00-06:00</updated>
+<published>2022-07-23T11:59:00-06:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Heat Advisory issued July 23 at 11:59AM MDT until July 23 at 8:00PM MDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=NM12640105A1DC.HeatAdvisory.126401128320NM.ABQNPWABQ.9ea2e01ba77f64f5873b328d2fe6776d"/>
+<summary>...HEAT ADVISORY REMAINS IN EFFECT UNTIL 8 PM MDT THIS EVENING... * WHAT...Temperatures up to 97 expected. * WHERE...Northwest Plateau. * WHEN...Until 8 PM MDT this evening. * IMPACTS...Hot temperatures may cause heat illnesses.</summary>
+<cap:event>Heat Advisory</cap:event>
+<cap:effective>2022-07-23T11:59:00-06:00</cap:effective>
+<cap:expires>2022-07-23T20:00:00-06:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Northwest Plateau</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>035045</value>
+<valueName>UGC</valueName>
+<value>NMZ201</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KABQ.HT.Y.0013.220723T1800Z-220724T0200Z/</value>
+</cap:parameter>
+</entry>
+<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=NM1264010457C8.FloodWatch.126401128320NM.ABQFFAABQ.f782dae4d39ba294315b5b692331cd80</id>
 <updated>2022-07-23T03:14:00-06:00</updated>
 <published>2022-07-23T03:14:00-06:00</published>
@@ -4395,38 +4556,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <valueName>VTEC</valueName>
 <value>/O.NEW.KABQ.FA.A.0014.220723T1800Z-220724T0600Z/
 /00000.0.ER.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=NM1264010455D4.HeatAdvisory.126401128320NM.ABQNPWABQ.9ea2e01ba77f64f5873b328d2fe6776d</id>
-<updated>2022-07-23T03:09:00-06:00</updated>
-<published>2022-07-23T03:09:00-06:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Heat Advisory issued July 23 at 3:09AM MDT until July 23 at 8:00PM MDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=NM1264010455D4.HeatAdvisory.126401128320NM.ABQNPWABQ.9ea2e01ba77f64f5873b328d2fe6776d"/>
-<summary>...HEAT ADVISORY IN EFFECT FROM NOON TODAY TO 8 PM MDT THIS EVENING... * WHAT...Temperatures up to 100 expected. * WHERE...Northwest Plateau, including Farmington, Aztec and Bloomfield. * WHEN...From Noon today to 8 PM MDT this evening.</summary>
-<cap:event>Heat Advisory</cap:event>
-<cap:effective>2022-07-23T03:09:00-06:00</cap:effective>
-<cap:expires>2022-07-23T20:00:00-06:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Northwest Plateau</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>035045</value>
-<valueName>UGC</valueName>
-<value>NMZ201</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.NEW.KABQ.HT.Y.0013.220723T1800Z-220724T0200Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -4750,49 +4879,113 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=OH1264010597B4.SevereThunderstormWarning.126401059C64OH.PBZSVSPBZ.6557e3d4a9c587ae2e1705da3ccf261d</id>
-<updated>2022-07-23T13:33:00-04:00</updated>
-<published>2022-07-23T13:33:00-04:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=OH12640105B244.SpecialWeatherStatement.12640105BD98OH.ILNSPSILN.c800c8fc7341ca8c65e2ac8c39c91d40</id>
+<updated>2022-07-23T14:01:00-04:00</updated>
+<published>2022-07-23T14:01:00-04:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Severe Thunderstorm Warning issued July 23 at 1:33PM EDT until July 23 at 1:45PM EDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=OH1264010597B4.SevereThunderstormWarning.126401059C64OH.PBZSVSPBZ.6557e3d4a9c587ae2e1705da3ccf261d"/>
-<summary>...A SEVERE THUNDERSTORM WARNING REMAINS IN EFFECT UNTIL 145 PM EDT FOR NORTHEASTERN HARRISON...NORTHWESTERN JEFFERSON...CARROLL AND NORTHEASTERN TUSCARAWAS COUNTIES... At 133 PM EDT, a severe thunderstorm was located 7 miles southwest of Carrollton, moving east at 25 mph. HAZARD...60 mph wind gusts.</summary>
+<title>Special Weather Statement issued July 23 at 2:01PM EDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=OH12640105B244.SpecialWeatherStatement.12640105BD98OH.ILNSPSILN.c800c8fc7341ca8c65e2ac8c39c91d40"/>
+<summary>...STRONG THUNDERSTORMS WILL IMPACT PORTIONS OF SOUTHERN MASON, LEWIS, SOUTHERN ADAMS AND SCIOTO COUNTIES THROUGH 230 PM EDT... At 200 PM EDT, strong thunderstorms were located along a line extending from South Webster to Lewisburg, moving southeast at 25 mph. HAZARD...Wind gusts up to 40 mph and half inch hail.</summary>
+<cap:event>Special Weather Statement</cap:event>
+<cap:effective>2022-07-23T14:01:00-04:00</cap:effective>
+<cap:expires>2022-07-23T14:30:00-04:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Observed</cap:certainty>
+<cap:areaDesc>Adams; Scioto</cap:areaDesc>
+<cap:polygon>38.43,-83.58 38.49,-83.59 38.52,-83.64 38.46,-83.87 38.58,-83.91 38.94,-82.79 38.93,-82.76 38.85,-82.76 38.85,-82.65 38.76,-82.66 38.75,-82.7 38.68,-82.71 38.68,-82.76 38.65,-82.77 38.62,-82.86 38.76,-82.89 38.73,-83.02 38.68,-83.03 38.54,-83.12 38.41,-83.51 38.43,-83.58</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>039001 039145</value>
+<valueName>UGC</valueName>
+<value>OHZ081 OHZ088</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value></value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=OH12640105A1DC.SpecialWeatherStatement.12640105BD98OH.PBZSPSPBZ.a3c6f067deb71e8df5ac496c01b3be87</id>
+<updated>2022-07-23T13:59:00-04:00</updated>
+<published>2022-07-23T13:59:00-04:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Special Weather Statement issued July 23 at 1:59PM EDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=OH12640105A1DC.SpecialWeatherStatement.12640105BD98OH.PBZSPSPBZ.a3c6f067deb71e8df5ac496c01b3be87"/>
+<summary>...STRONG THUNDERSTORMS WILL IMPACT SOUTHEASTERN GUERNSEY...MONROE... SOUTHERN BELMONT...NOBLE...NORTHWESTERN WETZEL AND MARSHALL COUNTIES THROUGH 230 PM EDT... At 158 PM EDT, Doppler radar was tracking strong thunderstorms along a line extending from 8 miles northeast of Barnesville to 6 miles east of McConnelsville. Movement was east at 50 mph.</summary>
+<cap:event>Special Weather Statement</cap:event>
+<cap:effective>2022-07-23T13:59:00-04:00</cap:effective>
+<cap:expires>2022-07-23T14:30:00-04:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Observed</cap:certainty>
+<cap:areaDesc>Belmont; Guernsey; Monroe; Noble</cap:areaDesc>
+<cap:polygon>39.89,-81.5 40.04,-81.08 39.89,-80.53 39.6,-80.84 39.58,-80.89 39.61,-80.95 39.54,-81.03 39.57,-81.05 39.58,-81.26 39.61,-81.27 39.59,-81.29 39.6,-81.39 39.65,-81.45 39.64,-81.47 39.58,-81.47 39.59,-81.59 39.66,-81.59 39.67,-81.64 39.72,-81.64 39.89,-81.5</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>039013 039059 039111 039121</value>
+<valueName>UGC</valueName>
+<value>OHZ058 OHZ059 OHZ068 OHZ069</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value></value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=OH12640105A114.SevereThunderstormWarning.12640105B7BCOH.PBZSVSPBZ.ab7d2c508db3e69d4585b21b0c64f5e0</id>
+<updated>2022-07-23T13:57:00-04:00</updated>
+<published>2022-07-23T13:57:00-04:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Severe Thunderstorm Warning issued July 23 at 1:57PM EDT until July 23 at 2:15PM EDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=OH12640105A114.SevereThunderstormWarning.12640105B7BCOH.PBZSVSPBZ.ab7d2c508db3e69d4585b21b0c64f5e0"/>
+<summary>...A SEVERE THUNDERSTORM WARNING REMAINS IN EFFECT UNTIL 215 PM EDT FOR NORTHEASTERN HARRISON...NORTHWESTERN JEFFERSON AND SOUTHEASTERN CARROLL COUNTIES... At 157 PM EDT, a severe thunderstorm was located 9 miles southeast of Carrollton, moving east at 25 mph. HAZARD...60 mph wind gusts and quarter size hail.</summary>
 <cap:event>Severe Thunderstorm Warning</cap:event>
-<cap:effective>2022-07-23T13:33:00-04:00</cap:effective>
-<cap:expires>2022-07-23T13:45:00-04:00</cap:expires>
+<cap:effective>2022-07-23T13:57:00-04:00</cap:effective>
+<cap:expires>2022-07-23T14:15:00-04:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
 <cap:category>Met</cap:category>
 <cap:urgency>Immediate</cap:urgency>
 <cap:severity>Severe</cap:severity>
 <cap:certainty>Observed</cap:certainty>
-<cap:areaDesc>Carroll; Harrison; Jefferson; Tuscarawas</cap:areaDesc>
-<cap:polygon>40.42,-81.36 40.64,-81.32 40.66,-80.99 40.4,-80.91 40.42,-81.36</cap:polygon>
+<cap:areaDesc>Carroll; Harrison; Jefferson</cap:areaDesc>
+<cap:polygon>40.38,-81.16 40.57,-81.14 40.58,-80.86 40.28,-80.89 40.38,-81.16</cap:polygon>
 <cap:geocode>
 <valueName>FIPS6</valueName>
-<value>039019 039067 039081 039157</value>
+<value>039019 039067 039081</value>
 <valueName>UGC</valueName>
-<value>OHC019 OHC067 OHC081 OHC157</value>
+<value>OHC019 OHC067 OHC081</value>
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
-<value>/O.CON.KPBZ.SV.W.0144.000000T0000Z-220723T1745Z/</value>
+<value>/O.CON.KPBZ.SV.W.0146.000000T0000Z-220723T1815Z/</value>
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=OH1264010597B4.SevereWeatherStatement.126401064E20OH.PBZSVSPBZ.391186ae4a453fd1e64b0d33efeb3e41</id>
-<updated>2022-07-23T13:33:00-04:00</updated>
-<published>2022-07-23T13:33:00-04:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=OH12640105A114.SevereWeatherStatement.126401064E20OH.PBZSVSPBZ.5c5fb1f20c81a2200403d8a4cf51c74d</id>
+<updated>2022-07-23T13:57:00-04:00</updated>
+<published>2022-07-23T13:57:00-04:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Severe Weather Statement issued July 23 at 1:33PM EDT until July 23 at 6:00PM EDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=OH1264010597B4.SevereWeatherStatement.126401064E20OH.PBZSVSPBZ.391186ae4a453fd1e64b0d33efeb3e41"/>
-<summary>...A SEVERE THUNDERSTORM WARNING REMAINS IN EFFECT UNTIL 145 PM EDT FOR NORTHEASTERN HARRISON...NORTHWESTERN JEFFERSON...CARROLL AND NORTHEASTERN TUSCARAWAS COUNTIES... At 133 PM EDT, a severe thunderstorm was located 7 miles southwest of Carrollton, moving east at 25 mph. HAZARD...60 mph wind gusts.</summary>
+<title>Severe Weather Statement issued July 23 at 1:57PM EDT until July 23 at 6:00PM EDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=OH12640105A114.SevereWeatherStatement.126401064E20OH.PBZSVSPBZ.5c5fb1f20c81a2200403d8a4cf51c74d"/>
+<summary>...A SEVERE THUNDERSTORM WARNING REMAINS IN EFFECT UNTIL 215 PM EDT FOR NORTHEASTERN HARRISON...NORTHWESTERN JEFFERSON AND SOUTHEASTERN CARROLL COUNTIES... At 157 PM EDT, a severe thunderstorm was located 9 miles southeast of Carrollton, moving east at 25 mph. HAZARD...60 mph wind gusts and quarter size hail.</summary>
 <cap:event>Severe Weather Statement</cap:event>
-<cap:effective>2022-07-23T13:33:00-04:00</cap:effective>
+<cap:effective>2022-07-23T13:57:00-04:00</cap:effective>
 <cap:expires>2022-07-23T18:00:00-04:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
@@ -4800,64 +4993,160 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:urgency>Immediate</cap:urgency>
 <cap:severity>Severe</cap:severity>
 <cap:certainty>Observed</cap:certainty>
-<cap:areaDesc>Carroll; Harrison; Jefferson; Tuscarawas</cap:areaDesc>
-<cap:polygon>40.42,-81.36 40.64,-81.32 40.66,-80.99 40.4,-80.91 40.42,-81.36</cap:polygon>
+<cap:areaDesc>Carroll; Harrison; Jefferson</cap:areaDesc>
+<cap:polygon>40.38,-81.16 40.57,-81.14 40.58,-80.86 40.28,-80.89 40.38,-81.16</cap:polygon>
 <cap:geocode>
 <valueName>FIPS6</valueName>
-<value>039019 039067 039081 039157</value>
+<value>039019 039067 039081</value>
 <valueName>UGC</valueName>
-<value>OHC019 OHC067 OHC081 OHC157</value>
+<value>OHC019 OHC067 OHC081</value>
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
-<value>/O.CON.KPBZ.SV.W.0144.000000T0000Z-220723T1745Z/</value>
+<value>/O.CON.KPBZ.SV.W.0146.000000T0000Z-220723T1815Z/</value>
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=OH126401059750.SevereThunderstormWarning.12640105B1E0OH.PBZSVRPBZ.3f2864c2b26e5ee0e1e15f6266c65795</id>
-<updated>2022-07-23T13:32:00-04:00</updated>
-<published>2022-07-23T13:32:00-04:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=OH12640105A0B0.SpecialWeatherStatement.12640105C374OH.RLXSPSRLX.102526837dfef6d0444b78f8e7de540c</id>
+<updated>2022-07-23T13:56:00-04:00</updated>
+<published>2022-07-23T13:56:00-04:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Severe Thunderstorm Warning issued July 23 at 1:32PM EDT until July 23 at 2:00PM EDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=OH126401059750.SevereThunderstormWarning.12640105B1E0OH.PBZSVRPBZ.3f2864c2b26e5ee0e1e15f6266c65795"/>
-<summary>The National Weather Service in Pittsburgh has issued a * Severe Thunderstorm Warning for... Harrison County in east central Ohio... Southwestern Jefferson County in east central Ohio... Eastern Guernsey County in east central Ohio... North central Monroe County in east central Ohio...</summary>
+<title>Special Weather Statement issued July 23 at 1:56PM EDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=OH12640105A0B0.SpecialWeatherStatement.12640105C374OH.RLXSPSRLX.102526837dfef6d0444b78f8e7de540c"/>
+<summary>...A strong thunderstorm will impact portions of Gallia, southeastern Jackson, central Lawrence and Mason Counties through 245 PM EDT... At 155 PM EDT, Doppler radar was tracking a strong thunderstorm over Oak Hill, moving southeast at 35 mph. HAZARD...Winds in excess of 40 mph. SOURCE...Radar indicated.</summary>
+<cap:event>Special Weather Statement</cap:event>
+<cap:effective>2022-07-23T13:56:00-04:00</cap:effective>
+<cap:expires>2022-07-23T14:45:00-04:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Observed</cap:certainty>
+<cap:areaDesc>Gallia; Jackson; Lawrence</cap:areaDesc>
+<cap:polygon>39.04,-82.56 38.98,-82.1 38.96,-82.1 38.98,-82.08 38.96,-81.91 38.93,-81.9 38.89,-81.93 38.83,-81.87 38.59,-82.08 38.57,-82.2 38.59,-82.22 38.6,-82.26 38.58,-82.29 38.56,-82.29 38.53,-82.52 38.8,-82.66 38.85,-82.65 38.85,-82.69 38.9,-82.71 39.04,-82.56</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>039053 039079 039087</value>
+<valueName>UGC</valueName>
+<value>OHZ083 OHZ086 OHZ087</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value></value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=OH126401059F20.SpecialWeatherStatement.12640105BD98OH.CLESPSCLE.dc26f4d45048ebb49d4a4ba042c3d52d</id>
+<updated>2022-07-23T13:52:00-04:00</updated>
+<published>2022-07-23T13:52:00-04:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Special Weather Statement issued July 23 at 1:52PM EDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=OH126401059F20.SpecialWeatherStatement.12640105BD98OH.CLESPSCLE.dc26f4d45048ebb49d4a4ba042c3d52d"/>
+<summary>...A strong thunderstorm will impact portions of southeastern Trumbull County through 230 PM EDT... At 152 PM EDT, Doppler radar was tracking a strong thunderstorm over Hilltop, or near Warren, moving east at 20 mph. HAZARD...Winds in excess of 30 mph and half inch hail. SOURCE...Radar indicated.</summary>
+<cap:event>Special Weather Statement</cap:event>
+<cap:effective>2022-07-23T13:52:00-04:00</cap:effective>
+<cap:expires>2022-07-23T14:30:00-04:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Observed</cap:certainty>
+<cap:areaDesc>Trumbull</cap:areaDesc>
+<cap:polygon>41.14,-80.52 41.13,-80.67 41.13,-80.77 41.29,-80.76 41.38,-80.52 41.14,-80.52</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>039155</value>
+<valueName>UGC</valueName>
+<value>OHZ023</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value></value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=OH126401059E58.SevereThunderstormWarning.12640105BD98OH.PBZSVRPBZ.8397b1418c768fca457c1325476ddffa</id>
+<updated>2022-07-23T13:50:00-04:00</updated>
+<published>2022-07-23T13:50:00-04:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Severe Thunderstorm Warning issued July 23 at 1:50PM EDT until July 23 at 2:30PM EDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=OH126401059E58.SevereThunderstormWarning.12640105BD98OH.PBZSVRPBZ.8397b1418c768fca457c1325476ddffa"/>
+<summary>The National Weather Service in Pittsburgh has issued a * Severe Thunderstorm Warning for... Southeastern Carroll County in east central Ohio... Eastern Harrison County in east central Ohio... Jefferson County in east central Ohio... Southeastern Columbiana County in east central Ohio...</summary>
 <cap:event>Severe Thunderstorm Warning</cap:event>
-<cap:effective>2022-07-23T13:32:00-04:00</cap:effective>
-<cap:expires>2022-07-23T14:00:00-04:00</cap:expires>
+<cap:effective>2022-07-23T13:50:00-04:00</cap:effective>
+<cap:expires>2022-07-23T14:30:00-04:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
 <cap:category>Met</cap:category>
 <cap:urgency>Immediate</cap:urgency>
 <cap:severity>Severe</cap:severity>
 <cap:certainty>Observed</cap:certainty>
-<cap:areaDesc>Belmont; Guernsey; Harrison; Jefferson; Monroe; Noble</cap:areaDesc>
-<cap:polygon>40.18,-80.71 39.81,-80.95 39.97,-81.57 40.38,-81.15 40.18,-80.71</cap:polygon>
+<cap:areaDesc>Belmont; Carroll; Columbiana; Harrison; Jefferson</cap:areaDesc>
+<cap:polygon>40.04,-81.08 40.23,-80.96 40.58,-80.95 40.64,-80.56 40.51,-80.24 40.18,-80.21 39.89,-80.54 40.04,-81.08</cap:polygon>
 <cap:geocode>
 <valueName>FIPS6</valueName>
-<value>039013 039059 039067 039081 039111 039121</value>
+<value>039013 039019 039029 039067 039081</value>
 <valueName>UGC</valueName>
-<value>OHC013 OHC059 OHC067 OHC081 OHC111 OHC121</value>
+<value>OHC013 OHC019 OHC029 OHC067 OHC081</value>
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
-<value>/O.NEW.KPBZ.SV.W.0145.220723T1732Z-220723T1800Z/</value>
+<value>/O.NEW.KPBZ.SV.W.0147.220723T1750Z-220723T1830Z/</value>
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=OH126401059368.SevereThunderstormWarning.126401059C64OH.RLXSVRRLX.78abcc0f3fd91a362755b6c31c7aaf3f</id>
-<updated>2022-07-23T13:22:00-04:00</updated>
-<published>2022-07-23T13:22:00-04:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=OH126401059D2C.SevereThunderstormWarning.12640105BD98OH.RLXSVRRLX.3d4455091764e7ff38913fc49e527495</id>
+<updated>2022-07-23T13:47:00-04:00</updated>
+<published>2022-07-23T13:47:00-04:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Severe Thunderstorm Warning issued July 23 at 1:22PM EDT until July 23 at 1:45PM EDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=OH126401059368.SevereThunderstormWarning.126401059C64OH.RLXSVRRLX.78abcc0f3fd91a362755b6c31c7aaf3f"/>
-<summary>The National Weather Service in Charleston West Virginia has issued a * Severe Thunderstorm Warning for... Vinton County in southeastern Ohio... * Until 145 PM EDT. * At 122 PM EDT, a severe thunderstorm was located near Mcarthur, moving southeast at 35 mph.</summary>
+<title>Severe Thunderstorm Warning issued July 23 at 1:47PM EDT until July 23 at 2:30PM EDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=OH126401059D2C.SevereThunderstormWarning.12640105BD98OH.RLXSVRRLX.3d4455091764e7ff38913fc49e527495"/>
+<summary>The National Weather Service in Charleston West Virginia has issued a * Severe Thunderstorm Warning for... Meigs County in southeastern Ohio... Northeastern Gallia County in southeastern Ohio... West central Washington County in southeastern Ohio... Southwestern Morgan County in southeastern Ohio...</summary>
 <cap:event>Severe Thunderstorm Warning</cap:event>
-<cap:effective>2022-07-23T13:22:00-04:00</cap:effective>
-<cap:expires>2022-07-23T13:45:00-04:00</cap:expires>
+<cap:effective>2022-07-23T13:47:00-04:00</cap:effective>
+<cap:expires>2022-07-23T14:30:00-04:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Immediate</cap:urgency>
+<cap:severity>Severe</cap:severity>
+<cap:certainty>Observed</cap:certainty>
+<cap:areaDesc>Athens; Gallia; Meigs; Morgan; Vinton; Washington</cap:areaDesc>
+<cap:polygon>39.54,-81.72 39.08,-81.79 39.09,-81.81 39.06,-81.81 39.04,-81.8 38.95,-81.81 39.03,-82.42 39.47,-82.26 39.47,-82.17 39.56,-82.16 39.54,-81.72</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>039009 039053 039105 039115 039163 039167</value>
+<valueName>UGC</valueName>
+<value>OHC009 OHC053 OHC105 OHC115 OHC163 OHC167</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.NEW.KRLX.SV.W.0192.220723T1747Z-220723T1830Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=OH126401059B9C.SevereThunderstormWarning.12640105BD98OH.RLXSVRRLX.3d5e50e2745fcb3597c1dc68d3b11e2d</id>
+<updated>2022-07-23T13:43:00-04:00</updated>
+<published>2022-07-23T13:43:00-04:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Severe Thunderstorm Warning issued July 23 at 1:43PM EDT until July 23 at 2:30PM EDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=OH126401059B9C.SevereThunderstormWarning.12640105BD98OH.RLXSVRRLX.3d5e50e2745fcb3597c1dc68d3b11e2d"/>
+<summary>The National Weather Service in Charleston West Virginia has issued a * Severe Thunderstorm Warning for... Vinton County in southeastern Ohio... * Until 230 PM EDT. * At 143 PM EDT, a severe thunderstorm was located near Albany, moving east at 35 mph.</summary>
+<cap:event>Severe Thunderstorm Warning</cap:event>
+<cap:effective>2022-07-23T13:43:00-04:00</cap:effective>
+<cap:expires>2022-07-23T14:30:00-04:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
 <cap:category>Met</cap:category>
@@ -4865,7 +5154,7 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:severity>Severe</cap:severity>
 <cap:certainty>Observed</cap:certainty>
 <cap:areaDesc>Vinton</cap:areaDesc>
-<cap:polygon>39.37,-82.56 39.37,-82.52 39.4,-82.51 39.38,-82.29 39.09,-82.32 39.13,-82.43 39.14,-82.43 39.14,-82.46 39.17,-82.54 39.18,-82.54 39.18,-82.58 39.21,-82.66 39.37,-82.56</cap:polygon>
+<cap:polygon>39.37,-82.56 39.37,-82.52 39.4,-82.51 39.38,-82.29 39.09,-82.32 39.13,-82.43 39.14,-82.43 39.14,-82.46 39.17,-82.54 39.18,-82.54 39.18,-82.59 39.21,-82.66 39.37,-82.56</cap:polygon>
 <cap:geocode>
 <valueName>FIPS6</valueName>
 <value>039163</value>
@@ -4874,39 +5163,7 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
-<value>/O.NEW.KRLX.SV.W.0190.220723T1722Z-220723T1745Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=OH126401059048.SpecialWeatherStatement.126401059C64OH.RLXSPSRLX.2e82d3c80239eb2b72fa2791d133da44</id>
-<updated>2022-07-23T13:14:00-04:00</updated>
-<published>2022-07-23T13:14:00-04:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Special Weather Statement issued July 23 at 1:14PM EDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=OH126401059048.SpecialWeatherStatement.126401059C64OH.RLXSPSRLX.2e82d3c80239eb2b72fa2791d133da44"/>
-<summary>...A strong thunderstorm will impact portions of Perry, Morgan and Athens Counties through 145 PM EDT... At 114 PM EDT, Doppler radar was tracking a strong thunderstorm 7 miles southeast of New Lexington, moving southeast at 45 mph. HAZARD...Winds in excess of 40 mph and pea size hail. SOURCE...Radar indicated.</summary>
-<cap:event>Special Weather Statement</cap:event>
-<cap:effective>2022-07-23T13:14:00-04:00</cap:effective>
-<cap:expires>2022-07-23T13:45:00-04:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Observed</cap:certainty>
-<cap:areaDesc>Athens; Morgan; Perry</cap:areaDesc>
-<cap:polygon>39.91,-82.16 39.82,-82.17 39.81,-82.08 39.77,-82.08 39.75,-81.64 39.67,-81.63 39.45,-81.85 39.19,-81.92 39.2,-82.27 39.29,-82.26 39.33,-82.3 39.47,-82.28 39.47,-82.17 39.55,-82.16 39.6,-82.38 39.74,-82.36 39.74,-82.41 39.83,-82.4 39.84,-82.47 39.93,-82.46 39.91,-82.16</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>039009 039115 039127</value>
-<valueName>UGC</valueName>
-<value>OHZ066 OHZ067 OHZ075</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value></value>
+<value>/O.NEW.KRLX.SV.W.0191.220723T1743Z-220723T1830Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -4935,38 +5192,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <value>039011 039021 039023 039037 039057 039065 039091 039107 039109 039113 039135 039149</value>
 <valueName>UGC</valueName>
 <value>OHZ026 OHZ034 OHZ035 OHZ042 OHZ043 OHZ044 OHZ051 OHZ052 OHZ053 OHZ060 OHZ061 OHZ062</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value></value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=OH126401057A68.SpecialWeatherStatement.126401059C64OH.RLXSPSRLX.39aafb9476d3b6334ba20ea73ca5c225</id>
-<updated>2022-07-23T12:58:00-04:00</updated>
-<published>2022-07-23T12:58:00-04:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Special Weather Statement issued July 23 at 12:58PM EDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=OH126401057A68.SpecialWeatherStatement.126401059C64OH.RLXSPSRLX.39aafb9476d3b6334ba20ea73ca5c225"/>
-<summary>...A strong thunderstorm will impact portions of Jackson and Vinton Counties through 145 PM EDT... At 1258 PM EDT, Doppler radar was tracking a strong thunderstorm 10 miles southwest of Hocking Hills State Park, or 12 miles northwest of Mcarthur, moving southeast at 50 mph. HAZARD...Winds in excess of 40 mph and pea size hail.</summary>
-<cap:event>Special Weather Statement</cap:event>
-<cap:effective>2022-07-23T12:58:00-04:00</cap:effective>
-<cap:expires>2022-07-23T13:45:00-04:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Observed</cap:certainty>
-<cap:areaDesc>Jackson; Vinton</cap:areaDesc>
-<cap:polygon>39.17,-82.78 39.17,-82.77 39.37,-82.75 39.36,-82.64 39.37,-82.63 39.37,-82.52 39.4,-82.51 39.39,-82.3 39.11,-82.33 39.03,-82.44 38.93,-82.45 38.99,-82.8 39.17,-82.78</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>039079 039163</value>
-<valueName>UGC</valueName>
-<value>OHZ083 OHZ084</value>
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
@@ -5523,6 +5748,70 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value></value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=PA12640105B244.HeatAdvisory.12640115B770PA.CTPNPWCTP.3c2f9e0a9e59585529be622a30d33c74</id>
+<updated>2022-07-23T14:01:00-04:00</updated>
+<published>2022-07-23T14:01:00-04:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Heat Advisory issued July 23 at 2:01PM EDT until July 24 at 7:00PM EDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=PA12640105B244.HeatAdvisory.12640115B770PA.CTPNPWCTP.3c2f9e0a9e59585529be622a30d33c74"/>
+<summary>...HEAT ADVISORY IN EFFECT FROM 11 AM TO 7 PM EDT SUNDAY... * WHAT...Heat index values up to 103 expected. * WHERE...Franklin, Columbia, Perry, Dauphin, Lebanon, Cumberland, Adams, York and Lancaster Counties. * WHEN...From 11 AM to 7 PM EDT Sunday. * IMPACTS...Hot temperatures and high humidity may cause heat</summary>
+<cap:event>Heat Advisory</cap:event>
+<cap:effective>2022-07-23T14:01:00-04:00</cap:effective>
+<cap:expires>2022-07-24T19:00:00-04:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Adams; Columbia; Cumberland; Dauphin; Franklin; Lancaster; Lebanon; Perry; York</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>042001 042037 042041 042043 042055 042071 042075 042099 042133</value>
+<valueName>UGC</valueName>
+<value>PAZ036 PAZ053 PAZ056 PAZ057 PAZ059 PAZ063 PAZ064 PAZ065 PAZ066</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.NEW.KCTP.HT.Y.0002.220724T1500Z-220724T2300Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=PA126401059E58.SevereThunderstormWarning.12640105BD98PA.PBZSVRPBZ.1c4149990b2218d9169671ab985d6c7c</id>
+<updated>2022-07-23T13:50:00-04:00</updated>
+<published>2022-07-23T13:50:00-04:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Severe Thunderstorm Warning issued July 23 at 1:50PM EDT until July 23 at 2:30PM EDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=PA126401059E58.SevereThunderstormWarning.12640105BD98PA.PBZSVRPBZ.1c4149990b2218d9169671ab985d6c7c"/>
+<summary>The National Weather Service in Pittsburgh has issued a * Severe Thunderstorm Warning for... Southeastern Carroll County in east central Ohio... Eastern Harrison County in east central Ohio... Jefferson County in east central Ohio... Southeastern Columbiana County in east central Ohio...</summary>
+<cap:event>Severe Thunderstorm Warning</cap:event>
+<cap:effective>2022-07-23T13:50:00-04:00</cap:effective>
+<cap:expires>2022-07-23T14:30:00-04:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Immediate</cap:urgency>
+<cap:severity>Severe</cap:severity>
+<cap:certainty>Observed</cap:certainty>
+<cap:areaDesc>Allegheny; Beaver; Greene; Washington</cap:areaDesc>
+<cap:polygon>40.04,-81.08 40.23,-80.96 40.58,-80.95 40.64,-80.56 40.51,-80.24 40.18,-80.21 39.89,-80.54 40.04,-81.08</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>042003 042007 042059 042125</value>
+<valueName>UGC</valueName>
+<value>PAC003 PAC007 PAC059 PAC125</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.NEW.KPBZ.SV.W.0147.220723T1750Z-220723T1830Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -6172,6 +6461,38 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=TX12640105A1DC.SpecialWeatherStatement.12640105C374TX.BROSPSBRO.4686b598d1130652f5a4e13c6f30fac1</id>
+<updated>2022-07-23T12:59:00-05:00</updated>
+<published>2022-07-23T12:59:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Special Weather Statement issued July 23 at 12:59PM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=TX12640105A1DC.SpecialWeatherStatement.12640105C374TX.BROSPSBRO.4686b598d1130652f5a4e13c6f30fac1"/>
+<summary>...A strong thunderstorm will impact portions of south central Kenedy and central Willacy Counties through 145 PM CDT... At 1258 PM CDT, Doppler radar was tracking a strong thunderstorm near San Perlita, or 9 miles west of Port Mansfield, moving north at 30 mph. HAZARD...Wind gusts up to 40 mph.</summary>
+<cap:event>Special Weather Statement</cap:event>
+<cap:effective>2022-07-23T12:59:00-05:00</cap:effective>
+<cap:expires>2022-07-23T13:45:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Observed</cap:certainty>
+<cap:areaDesc>Coastal Kenedy; Coastal Willacy; Inland Kenedy; Inland Willacy</cap:areaDesc>
+<cap:polygon>26.42,-97.45 26.41,-97.44 26.41,-97.45 26.36,-97.6 26.72,-97.85 26.83,-97.54 26.49,-97.45 26.48,-97.46 26.48,-97.45 26.46,-97.44 26.46,-97.45 26.47,-97.45 26.45,-97.46 26.44,-97.45 26.45,-97.44 26.42,-97.43 26.42,-97.45</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>048261 048489</value>
+<valueName>UGC</valueName>
+<value>TXZ251 TXZ254 TXZ351 TXZ354</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value></value>
+</cap:parameter>
+</entry>
+<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=TX126401054994.HeatAdvisory.126401067530TX.CRPNPWCRP.358b25b14eba27028d9fde374a720005</id>
 <updated>2022-07-23T10:33:00-05:00</updated>
 <published>2022-07-23T10:33:00-05:00</published>
@@ -6686,17 +7007,17 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=WI126401059688.SevereThunderstormWatch.126401123500WI.MPXWCNMPX.5583c2f4cdc3de9e1f4b7b817b73934a</id>
-<updated>2022-07-23T12:30:00-05:00</updated>
-<published>2022-07-23T12:30:00-05:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=WI12640105A04C.SevereThunderstormWatch.126401123500WI.MPXWCNMPX.5583c2f4cdc3de9e1f4b7b817b73934a</id>
+<updated>2022-07-23T12:55:00-05:00</updated>
+<published>2022-07-23T12:55:00-05:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Severe Thunderstorm Watch issued July 23 at 12:30PM CDT until July 23 at 7:00PM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=WI126401059688.SevereThunderstormWatch.126401123500WI.MPXWCNMPX.5583c2f4cdc3de9e1f4b7b817b73934a"/>
+<title>Severe Thunderstorm Watch issued July 23 at 12:55PM CDT until July 23 at 7:00PM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=WI12640105A04C.SevereThunderstormWatch.126401123500WI.MPXWCNMPX.5583c2f4cdc3de9e1f4b7b817b73934a"/>
 <summary>SEVERE THUNDERSTORM WATCH 491 REMAINS VALID UNTIL 7 PM CDT THIS EVENING FOR THE FOLLOWING AREAS IN MINNESOTA THIS WATCH INCLUDES 3 COUNTIES IN SOUTH CENTRAL MINNESOTA FARIBAULT FREEBORN IN SOUTHEAST MINNESOTA</summary>
 <cap:event>Severe Thunderstorm Watch</cap:event>
-<cap:effective>2022-07-23T12:30:00-05:00</cap:effective>
+<cap:effective>2022-07-23T12:55:00-05:00</cap:effective>
 <cap:expires>2022-07-23T19:00:00-05:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
@@ -6811,6 +7132,134 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value>/O.CON.KMKX.HT.Y.0004.220723T1700Z-220724T0100Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=WV12640105A1DC.SpecialWeatherStatement.12640105BD98WV.PBZSPSPBZ.e2b1ff2eb1691828e0601e81e64adaf4</id>
+<updated>2022-07-23T13:59:00-04:00</updated>
+<published>2022-07-23T13:59:00-04:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Special Weather Statement issued July 23 at 1:59PM EDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=WV12640105A1DC.SpecialWeatherStatement.12640105BD98WV.PBZSPSPBZ.e2b1ff2eb1691828e0601e81e64adaf4"/>
+<summary>...STRONG THUNDERSTORMS WILL IMPACT SOUTHEASTERN GUERNSEY...MONROE... SOUTHERN BELMONT...NOBLE...NORTHWESTERN WETZEL AND MARSHALL COUNTIES THROUGH 230 PM EDT... At 158 PM EDT, Doppler radar was tracking strong thunderstorms along a line extending from 8 miles northeast of Barnesville to 6 miles east of McConnelsville. Movement was east at 50 mph.</summary>
+<cap:event>Special Weather Statement</cap:event>
+<cap:effective>2022-07-23T13:59:00-04:00</cap:effective>
+<cap:expires>2022-07-23T14:30:00-04:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Observed</cap:certainty>
+<cap:areaDesc>Marshall; Wetzel</cap:areaDesc>
+<cap:polygon>39.89,-81.5 40.04,-81.08 39.89,-80.53 39.6,-80.84 39.58,-80.89 39.61,-80.95 39.54,-81.03 39.57,-81.05 39.58,-81.26 39.61,-81.27 39.59,-81.29 39.6,-81.39 39.65,-81.45 39.64,-81.47 39.58,-81.47 39.59,-81.59 39.66,-81.59 39.67,-81.64 39.72,-81.64 39.89,-81.5</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>054051 054103</value>
+<valueName>UGC</valueName>
+<value>WVZ004 WVZ012</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value></value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=WV12640105A0B0.SpecialWeatherStatement.12640105C374WV.RLXSPSRLX.0c3bb9c1a22648450bf0c4ecf26a9ff1</id>
+<updated>2022-07-23T13:56:00-04:00</updated>
+<published>2022-07-23T13:56:00-04:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Special Weather Statement issued July 23 at 1:56PM EDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=WV12640105A0B0.SpecialWeatherStatement.12640105C374WV.RLXSPSRLX.0c3bb9c1a22648450bf0c4ecf26a9ff1"/>
+<summary>...A strong thunderstorm will impact portions of Gallia, southeastern Jackson, central Lawrence and Mason Counties through 245 PM EDT... At 155 PM EDT, Doppler radar was tracking a strong thunderstorm over Oak Hill, moving southeast at 35 mph. HAZARD...Winds in excess of 40 mph. SOURCE...Radar indicated.</summary>
+<cap:event>Special Weather Statement</cap:event>
+<cap:effective>2022-07-23T13:56:00-04:00</cap:effective>
+<cap:expires>2022-07-23T14:45:00-04:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Observed</cap:certainty>
+<cap:areaDesc>Mason</cap:areaDesc>
+<cap:polygon>39.04,-82.56 38.98,-82.1 38.96,-82.1 38.98,-82.08 38.96,-81.91 38.93,-81.9 38.89,-81.93 38.83,-81.87 38.59,-82.08 38.57,-82.2 38.59,-82.22 38.6,-82.26 38.58,-82.29 38.56,-82.29 38.53,-82.52 38.8,-82.66 38.85,-82.65 38.85,-82.69 38.9,-82.71 39.04,-82.56</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>054053</value>
+<valueName>UGC</valueName>
+<value>WVZ007</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value></value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=WV126401059E58.SevereThunderstormWarning.12640105BD98WV.PBZSVRPBZ.3ec44e0a6ce1481dc919a01c9e22cef5</id>
+<updated>2022-07-23T13:50:00-04:00</updated>
+<published>2022-07-23T13:50:00-04:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Severe Thunderstorm Warning issued July 23 at 1:50PM EDT until July 23 at 2:30PM EDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=WV126401059E58.SevereThunderstormWarning.12640105BD98WV.PBZSVRPBZ.3ec44e0a6ce1481dc919a01c9e22cef5"/>
+<summary>The National Weather Service in Pittsburgh has issued a * Severe Thunderstorm Warning for... Southeastern Carroll County in east central Ohio... Eastern Harrison County in east central Ohio... Jefferson County in east central Ohio... Southeastern Columbiana County in east central Ohio...</summary>
+<cap:event>Severe Thunderstorm Warning</cap:event>
+<cap:effective>2022-07-23T13:50:00-04:00</cap:effective>
+<cap:expires>2022-07-23T14:30:00-04:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Immediate</cap:urgency>
+<cap:severity>Severe</cap:severity>
+<cap:certainty>Observed</cap:certainty>
+<cap:areaDesc>Brooke; Hancock; Marshall; Ohio</cap:areaDesc>
+<cap:polygon>40.04,-81.08 40.23,-80.96 40.58,-80.95 40.64,-80.56 40.51,-80.24 40.18,-80.21 39.89,-80.54 40.04,-81.08</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>054009 054029 054051 054069</value>
+<valueName>UGC</valueName>
+<value>WVC009 WVC029 WVC051 WVC069</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.NEW.KPBZ.SV.W.0147.220723T1750Z-220723T1830Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=WV126401059D2C.SevereThunderstormWarning.12640105BD98WV.RLXSVRRLX.1d53b303bbeffa951a544d6dee403d83</id>
+<updated>2022-07-23T13:47:00-04:00</updated>
+<published>2022-07-23T13:47:00-04:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Severe Thunderstorm Warning issued July 23 at 1:47PM EDT until July 23 at 2:30PM EDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=WV126401059D2C.SevereThunderstormWarning.12640105BD98WV.RLXSVRRLX.1d53b303bbeffa951a544d6dee403d83"/>
+<summary>The National Weather Service in Charleston West Virginia has issued a * Severe Thunderstorm Warning for... Meigs County in southeastern Ohio... Northeastern Gallia County in southeastern Ohio... West central Washington County in southeastern Ohio... Southwestern Morgan County in southeastern Ohio...</summary>
+<cap:event>Severe Thunderstorm Warning</cap:event>
+<cap:effective>2022-07-23T13:47:00-04:00</cap:effective>
+<cap:expires>2022-07-23T14:30:00-04:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Immediate</cap:urgency>
+<cap:severity>Severe</cap:severity>
+<cap:certainty>Observed</cap:certainty>
+<cap:areaDesc>Mason</cap:areaDesc>
+<cap:polygon>39.54,-81.72 39.08,-81.79 39.09,-81.81 39.06,-81.81 39.04,-81.8 38.95,-81.81 39.03,-82.42 39.47,-82.26 39.47,-82.17 39.56,-82.16 39.54,-81.72</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>054053</value>
+<valueName>UGC</valueName>
+<value>WVC053</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.NEW.KRLX.SV.W.0192.220723T1747Z-220723T1830Z/</value>
 </cap:parameter>
 </entry>
 <entry>
