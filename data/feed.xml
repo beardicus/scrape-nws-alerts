@@ -16,16 +16,48 @@ xmlns = 'http://www.w3.org/2005/Atom'
 xmlns:cap = 'urn:oasis:names:tc:emergency:cap:1.1'
 xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 >
-<!-- http-date = Sun, 24 Jul 2022 13:03:00 GMT -->
+<!-- http-date = Sun, 24 Jul 2022 13:31:00 GMT -->
 <id>https://alerts.weather.gov/cap/us.php?x=0</id>
 <logo>http://alerts.weather.gov/images/xml_logo.gif</logo>
 <generator>NWS CAP Server</generator>
-<updated>2022-07-24T06:03:00-07:00</updated>
+<updated>2022-07-24T09:31:00-04:00</updated>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
 <title>Current Watches, Warnings and Advisories for the United States Issued by the National Weather Service</title>
 <link href="https://alerts.weather.gov/cap/us.php?x=0"/>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=AK126401143CEC.SpecialWeatherStatement.12640123EE1CAK.AFGSPSWCZ.2f74a550c1f7c1d2e9bead64dc87b017</id>
+<updated>2022-07-24T05:31:00-08:00</updated>
+<published>2022-07-24T05:31:00-08:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Special Weather Statement issued July 24 at 5:31AM AKDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=AK126401143CEC.SpecialWeatherStatement.12640123EE1CAK.AFGSPSWCZ.2f74a550c1f7c1d2e9bead64dc87b017"/>
+<summary>...Elevated Surf, High Winds, And Heavy Rain Early This Week... A strong low pressure system is expected to bring elevated surf to south and west facing shores from the Yukon Delta to Point Hope Monday and Tuesday. At this time, the highest water levels look to be Monday night and Tuesday for areas south of Nome. Areas north of Nome can expect the highest water on Tuesday and Tuesday</summary>
+<cap:event>Special Weather Statement</cap:event>
+<cap:effective>2022-07-24T05:31:00-08:00</cap:effective>
+<cap:expires>2022-07-25T08:15:00-08:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Observed</cap:certainty>
+<cap:areaDesc>Baldwin Peninsula and Selawik Valley; Chukchi Sea Coast; Eastern Norton Sound and Nulato Hills; Northern and Interior Seward Peninsula; Southern Seward Peninsula Coast; St Lawrence Island and Bering Strait Coast; Yukon Delta</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>002158 002180 002188</value>
+<valueName>UGC</valueName>
+<value>AKZ207 AKZ209 AKZ210 AKZ211 AKZ212 AKZ213 AKZ214</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value></value>
+</cap:parameter>
+</entry>
 <entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=AK126401140F9C.HighSurfAdvisory.12640130B980AK.AFCCFWALU.782cf622ff60638d9498127f036ef3ed</id>
 <updated>2022-07-24T04:15:00-08:00</updated>
@@ -152,38 +184,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value>/O.NEW.PAFG.HW.A.0004.220725T0900Z-220726T0500Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=AK1264010659D8.SpecialWeatherStatement.126401217740AK.AFGSPSWCZ.2f74a550c1f7c1d2e9bead64dc87b017</id>
-<updated>2022-07-23T14:30:00-08:00</updated>
-<published>2022-07-23T14:30:00-08:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Special Weather Statement issued July 23 at 2:30PM AKDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=AK1264010659D8.SpecialWeatherStatement.126401217740AK.AFGSPSWCZ.2f74a550c1f7c1d2e9bead64dc87b017"/>
-<summary>...Elevated Surf, High Winds, And Heavy Rain Early This Week... An unseasonably strong low pressure system is expected to bring elevated surf to south and west facing shores from the Yukon Delta to Point Hope early this week. At this time, the highest water levels look to be Monday night and Tuesday for areas south of Nome. Areas north of Nome can expect the highest water on</summary>
-<cap:event>Special Weather Statement</cap:event>
-<cap:effective>2022-07-23T14:30:00-08:00</cap:effective>
-<cap:expires>2022-07-24T16:00:00-08:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Observed</cap:certainty>
-<cap:areaDesc>Baldwin Peninsula and Selawik Valley; Chukchi Sea Coast; Eastern Norton Sound and Nulato Hills; Northern and Interior Seward Peninsula; Southern Seward Peninsula Coast; St Lawrence Island and Bering Strait Coast; Yukon Delta</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>002158 002180 002188</value>
-<valueName>UGC</valueName>
-<value>AKZ207 AKZ209 AKZ210 AKZ211 AKZ212 AKZ213 AKZ214</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value></value>
 </cap:parameter>
 </entry>
 <entry>
@@ -415,6 +415,105 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=AZ1264011435E4.FloodWatch.1264011457E0AZ.PSRFFAPSR.daa1ea88dc1a82d11b0affdc5454faa2</id>
+<updated>2022-07-24T06:13:00-07:00</updated>
+<published>2022-07-24T06:13:00-07:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Flood Watch issued July 24 at 6:13AM MST until July 24 at 7:00AM MST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=AZ1264011435E4.FloodWatch.1264011457E0AZ.PSRFFAPSR.daa1ea88dc1a82d11b0affdc5454faa2"/>
+<summary>...FLOOD WATCH REMAINS IN EFFECT FROM LATE TONIGHT THROUGH LATE TUESDAY NIGHT... * WHAT...Flash flooding caused by excessive rainfall continues to be possible. * WHERE...A portion of southwest Arizona, including the following areas, Central La Paz and Kofa.</summary>
+<cap:event>Flood Watch</cap:event>
+<cap:effective>2022-07-24T06:13:00-07:00</cap:effective>
+<cap:expires>2022-07-24T07:00:00-07:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Future</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Possible</cap:certainty>
+<cap:areaDesc>Central La Paz; Kofa</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>004012 004027</value>
+<valueName>UGC</valueName>
+<value>AZZ531 AZZ533</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KPSR.FA.A.0001.220725T1200Z-220727T1200Z/
+/00000.0.ER.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=AZ1264011435E4.FloodWatch.1264011457E0AZ.PSRFFAPSR.52b052d19c1c98df27c242dad4483d74</id>
+<updated>2022-07-24T06:13:00-07:00</updated>
+<published>2022-07-24T06:13:00-07:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Flood Watch issued July 24 at 6:13AM MST until July 24 at 7:00AM MST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=AZ1264011435E4.FloodWatch.1264011457E0AZ.PSRFFAPSR.52b052d19c1c98df27c242dad4483d74"/>
+<summary>...FLOOD WATCH NOW IN EFFECT THIS MORNING THROUGH LATE TUESDAY NIGHT... * WHAT...Flash flooding caused by excessive rainfall continues to be possible. * WHERE...A portion of south central Arizona, including the following areas, Aguila Valley, Apache Junction/Gold Canyon,</summary>
+<cap:event>Flood Watch</cap:event>
+<cap:effective>2022-07-24T06:13:00-07:00</cap:effective>
+<cap:expires>2022-07-24T07:00:00-07:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Future</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Possible</cap:certainty>
+<cap:areaDesc>Aguila Valley; Apache Junction, Gold Canyon; Buckeye, Avondale; Cave Creek, New River; Central Phoenix; Deer Valley; Dripping Springs; East Valley; Fountain Hills, East Mesa; Gila Bend; Globe, Miami; Mazatzal Mountains; New River Mesa; North Phoenix, Glendale; Northwest Pinal County; Northwest Valley; Pinal, Superstition Mountains; Rio Verde, Salt River; San Carlos; Scottsdale, Paradise Valley; Sonoran Desert Natl Monument; South Mountain, Ahwatukee; Southeast Gila County; Southeast Valley, Queen Creek; Superior; Tonopah Desert; Tonto Basin; West Pinal County</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>004007 004013 004021</value>
+<valueName>UGC</valueName>
+<value>AZZ534 AZZ537 AZZ538 AZZ539 AZZ540 AZZ541 AZZ542 AZZ543 AZZ544 AZZ545 AZZ546 AZZ547 AZZ548 AZZ549 AZZ550 AZZ551 AZZ552 AZZ553 AZZ554 AZZ555 AZZ556 AZZ557 AZZ558 AZZ559 AZZ560 AZZ561 AZZ562 AZZ563</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.EXT.KPSR.FA.A.0001.220724T1313Z-220727T1200Z/
+/00000.0.ER.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=AZ126401143454.FloodAdvisory.1264011457E0AZ.PSRFLSPSR.531490048d9d0afd89a861206d8ac755</id>
+<updated>2022-07-24T06:09:00-07:00</updated>
+<published>2022-07-24T06:09:00-07:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Flood Advisory issued July 24 at 6:09AM MST until July 24 at 7:00AM MST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=AZ126401143454.FloodAdvisory.1264011457E0AZ.PSRFLSPSR.531490048d9d0afd89a861206d8ac755"/>
+<summary>...FLOOD ADVISORY IN EFFECT UNTIL 915 AM MST THIS MORNING... * WHAT...Flooding caused by excessive rainfall is expected. * WHERE...A portion of south-central Arizona, including the following county, Pinal. * WHEN...Until 915 AM MST. * IMPACTS...Minor flooding in low-lying and poor drainage areas.</summary>
+<cap:event>Flood Advisory</cap:event>
+<cap:effective>2022-07-24T06:09:00-07:00</cap:effective>
+<cap:expires>2022-07-24T07:00:00-07:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Pinal</cap:areaDesc>
+<cap:polygon>32.79,-111.8 33.1,-111.62 33.35,-111.26 33.2,-111.01 33.12,-111.13 32.85,-111.53 32.81,-111.56 32.77,-111.6 32.76,-111.61 32.74,-111.67 32.73,-111.74 32.76,-111.74 32.76,-111.78 32.79,-111.77 32.79,-111.8</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>004021</value>
+<valueName>UGC</valueName>
+<value>AZC021</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.NEW.KPSR.FA.Y.0030.220724T1309Z-220724T1615Z/
+/00000.N.ER.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
+</cap:parameter>
+</entry>
+<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=AZ1264011431FC.DustStormWarning.1264011457E0AZ.PSRDSWPSR.775ef6f0ea0f8ef118ada989491a34ba</id>
 <updated>2022-07-24T06:03:00-07:00</updated>
 <published>2022-07-24T06:03:00-07:00</published>
@@ -444,38 +543,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value>/O.NEW.KPSR.DS.W.0020.220724T1303Z-220724T1400Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=AZ126401141DAC.SpecialWeatherStatement.126401143C88AZ.PSRSPSPSR.ed5902352f841db86438819ae4c2fab9</id>
-<updated>2022-07-24T05:51:00-07:00</updated>
-<published>2022-07-24T05:51:00-07:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Special Weather Statement issued July 24 at 5:51AM MST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=AZ126401141DAC.SpecialWeatherStatement.126401143C88AZ.PSRSPSPSR.ed5902352f841db86438819ae4c2fab9"/>
-<summary>...A strong thunderstorm will impact portions of Maricopa and Pinal Counties through 630 AM MST... At 550 AM MST, Doppler radar was tracking a strong thunderstorm near Queen Creek, moving northwest at 25 mph. HAZARD...Wind gusts up to 50 mph. SOURCE...Radar indicated.</summary>
-<cap:event>Special Weather Statement</cap:event>
-<cap:effective>2022-07-24T05:51:00-07:00</cap:effective>
-<cap:expires>2022-07-24T06:30:00-07:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Observed</cap:certainty>
-<cap:areaDesc>Apache Junction, Gold Canyon; East Valley; Fountain Hills, East Mesa; Northwest Pinal County; Scottsdale, Paradise Valley; South Mountain, Ahwatukee; Southeast Valley, Queen Creek; West Pinal County</cap:areaDesc>
-<cap:polygon>33.4,-111.47 32.9,-111.78 33.13,-112.21 33.49,-111.88 33.4,-111.47</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>004013 004021</value>
-<valueName>UGC</valueName>
-<value>AZZ546 AZZ548 AZZ549 AZZ550 AZZ551 AZZ553 AZZ554 AZZ555</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value></value>
 </cap:parameter>
 </entry>
 <entry>
@@ -512,38 +579,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=AZ12640113E828.DustAdvisory.1264011436ACAZ.PSRDSWPSR.875d1324ae7d98de12b717fccf2789d6</id>
-<updated>2022-07-24T04:14:00-07:00</updated>
-<published>2022-07-24T04:14:00-07:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Dust Advisory issued July 24 at 4:14AM MST until July 24 at 6:15AM MST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=AZ12640113E828.DustAdvisory.1264011436ACAZ.PSRDSWPSR.875d1324ae7d98de12b717fccf2789d6"/>
-<summary>The National Weather Service in Phoenix has issued a * Dust Advisory for... Maricopa County in south central Arizona... Pinal County in southeastern Arizona... * Until 615 AM MST. * At 411 AM MST, a wall of dust was along a line extending from 15</summary>
-<cap:event>Dust Advisory</cap:event>
-<cap:effective>2022-07-24T04:14:00-07:00</cap:effective>
-<cap:expires>2022-07-24T06:15:00-07:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Maricopa; Pinal</cap:areaDesc>
-<cap:polygon>32.76,-111.74 32.76,-111.77 32.8,-111.78 32.79,-111.85 33.31,-111.82 33.6,-111.51 33.23,-110.99 32.9,-111.45 32.73,-111.67 32.73,-111.74 32.76,-111.74 32.76,-111.74</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>004013 004021</value>
-<valueName>UGC</valueName>
-<value>AZC013 AZC021</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.NEW.KPSR.DS.Y.0051.220724T1114Z-220724T1315Z/</value>
-</cap:parameter>
-</entry>
-<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=AZ1264011398DC.FloodWatch.1264011457E0AZ.VEFFFAVEF.4ea2993673b72eec81a562c9fbc875a8</id>
 <updated>2022-07-24T02:11:00-07:00</updated>
 <published>2022-07-24T02:11:00-07:00</published>
@@ -573,105 +608,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value>/O.NEW.KVEF.FA.A.0002.220725T1200Z-220727T1200Z/
-/00000.0.ER.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=AZ126401138360.FloodWatch.126401143C88AZ.PSRFFAPSR.13ebc4d40749fc609240b34e2eab9cd0</id>
-<updated>2022-07-24T01:56:00-07:00</updated>
-<published>2022-07-24T01:56:00-07:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Flood Watch issued July 24 at 1:56AM MST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=AZ126401138360.FloodWatch.126401143C88AZ.PSRFFAPSR.13ebc4d40749fc609240b34e2eab9cd0"/>
-<summary>...FLOOD WATCH REMAINS IN EFFECT FROM 1 PM MST THIS AFTERNOON THROUGH LATE TUESDAY NIGHT... * WHAT...Flash flooding caused by excessive rainfall continues to be possible. * WHERE...A portion of south central Arizona, including the following areas, Aguila Valley, Apache Junction/Gold Canyon,</summary>
-<cap:event>Flood Watch</cap:event>
-<cap:effective>2022-07-24T01:56:00-07:00</cap:effective>
-<cap:expires>2022-07-24T06:30:00-07:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Future</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Possible</cap:certainty>
-<cap:areaDesc>Apache Junction, Gold Canyon; Dripping Springs; East Valley; Fountain Hills, East Mesa; Globe, Miami; Mazatzal Mountains; Northwest Pinal County; Pinal, Superstition Mountains; Rio Verde, Salt River; San Carlos; Sonoran Desert Natl Monument; South Mountain, Ahwatukee; Southeast Gila County; Southeast Valley, Queen Creek; Superior; Tonto Basin; West Pinal County</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>004007 004013 004021</value>
-<valueName>UGC</valueName>
-<value>AZZ547 AZZ548 AZZ549 AZZ550 AZZ551 AZZ552 AZZ553 AZZ554 AZZ555 AZZ556 AZZ557 AZZ558 AZZ559 AZZ560 AZZ561 AZZ562 AZZ563</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KPSR.FA.A.0001.220724T2000Z-220727T1200Z/
-/00000.0.ER.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=AZ126401138360.FloodWatch.1264011457E0AZ.PSRFFAPSR.daa1ea88dc1a82d11b0affdc5454faa2</id>
-<updated>2022-07-24T01:56:00-07:00</updated>
-<published>2022-07-24T01:56:00-07:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Flood Watch issued July 24 at 1:56AM MST until July 24 at 7:00AM MST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=AZ126401138360.FloodWatch.1264011457E0AZ.PSRFFAPSR.daa1ea88dc1a82d11b0affdc5454faa2"/>
-<summary>...FLOOD WATCH NOW IN EFFECT FROM LATE TONIGHT THROUGH LATE TUESDAY NIGHT... * WHAT...Flash flooding caused by excessive rainfall continues to be possible. * WHERE...A portion of southwest Arizona, including the following areas, Central La Paz and Kofa.</summary>
-<cap:event>Flood Watch</cap:event>
-<cap:effective>2022-07-24T01:56:00-07:00</cap:effective>
-<cap:expires>2022-07-24T07:00:00-07:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Future</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Possible</cap:certainty>
-<cap:areaDesc>Central La Paz; Kofa</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>004012 004027</value>
-<valueName>UGC</valueName>
-<value>AZZ531 AZZ533</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.EXT.KPSR.FA.A.0001.220725T1200Z-220727T1200Z/
-/00000.0.ER.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=AZ126401138360.FloodWatch.1264011457E0AZ.PSRFFAPSR.e057c95e95d478dc8b666032e63fd788</id>
-<updated>2022-07-24T01:56:00-07:00</updated>
-<published>2022-07-24T01:56:00-07:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Flood Watch issued July 24 at 1:56AM MST until July 24 at 7:00AM MST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=AZ126401138360.FloodWatch.1264011457E0AZ.PSRFFAPSR.e057c95e95d478dc8b666032e63fd788"/>
-<summary>...FLOOD WATCH REMAINS IN EFFECT FROM 1 PM MST THIS AFTERNOON THROUGH LATE TUESDAY NIGHT... * WHAT...Flash flooding caused by excessive rainfall continues to be possible. * WHERE...A portion of south central Arizona, including the following areas, Aguila Valley, Apache Junction/Gold Canyon,</summary>
-<cap:event>Flood Watch</cap:event>
-<cap:effective>2022-07-24T01:56:00-07:00</cap:effective>
-<cap:expires>2022-07-24T07:00:00-07:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Future</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Possible</cap:certainty>
-<cap:areaDesc>Aguila Valley; Buckeye, Avondale; Cave Creek, New River; Central Phoenix; Deer Valley; Gila Bend; New River Mesa; North Phoenix, Glendale; Northwest Valley; Scottsdale, Paradise Valley; Tonopah Desert</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>004013</value>
-<valueName>UGC</valueName>
-<value>AZZ534 AZZ537 AZZ538 AZZ539 AZZ540 AZZ541 AZZ542 AZZ543 AZZ544 AZZ545 AZZ546</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KPSR.FA.A.0001.220724T2000Z-220727T1200Z/
 /00000.0.ER.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
 </cap:parameter>
 </entry>
@@ -1390,17 +1326,17 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=IL12640113BDF8.FloodWatch.12640115481CIL.LOTFFALOT.f18661c499668d6d4c2c4826a9cf6f66</id>
-<updated>2022-07-24T05:06:00-05:00</updated>
-<published>2022-07-24T05:06:00-05:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=IL12640114351C.FloodWatch.12640115481CIL.LOTFFALOT.12a5db6e3875a1b09ac8144b17ebb609</id>
+<updated>2022-07-24T08:11:00-05:00</updated>
+<published>2022-07-24T08:11:00-05:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Flood Watch issued July 24 at 5:06AM CDT until further notice by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=IL12640113BDF8.FloodWatch.12640115481CIL.LOTFFALOT.f18661c499668d6d4c2c4826a9cf6f66"/>
-<summary>...FLOOD WATCH REMAINS IN EFFECT UNTIL NOON CDT TODAY... * WHAT...Flash flooding caused by excessive rainfall continues to be possible. * WHERE...Portions of Illinois and northwest Indiana, including the following areas, in Illinois, Boone, Central Cook, De Kalb, DuPage, Eastern Will, Grundy, Kane, Kankakee, Kendall, Lake IL,</summary>
+<title>Flood Watch issued July 24 at 8:11AM CDT until further notice by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=IL12640114351C.FloodWatch.12640115481CIL.LOTFFALOT.12a5db6e3875a1b09ac8144b17ebb609"/>
+<summary>...FLOOD WATCH REMAINS IN EFFECT UNTIL NOON CDT TODAY... * WHAT...Flash flooding caused by excessive rainfall continues to be possible. * WHERE...Portions of northeast Illinois and northwest Indiana, including the following areas, in northeast Illinois, Eastern Will, Grundy, Kankakee, Kendall, Northern Will, Southern Cook and</summary>
 <cap:event>Flood Watch</cap:event>
-<cap:effective>2022-07-24T05:06:00-05:00</cap:effective>
+<cap:effective>2022-07-24T08:11:00-05:00</cap:effective>
 <cap:expires>2022-07-24T15:15:00-05:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
@@ -1408,13 +1344,13 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:urgency>Future</cap:urgency>
 <cap:severity>Moderate</cap:severity>
 <cap:certainty>Possible</cap:certainty>
-<cap:areaDesc>Boone; De Kalb; DuPage; Grundy; Kane; Kankakee; Kendall; Lake; McHenry</cap:areaDesc>
+<cap:areaDesc>Grundy; Kankakee; Kendall</cap:areaDesc>
 <cap:polygon></cap:polygon>
 <cap:geocode>
 <valueName>FIPS6</valueName>
-<value>017007 017037 017043 017063 017089 017091 017093 017097 017111</value>
+<value>017063 017091 017093</value>
 <valueName>UGC</valueName>
-<value>ILZ004 ILZ005 ILZ006 ILZ011 ILZ012 ILZ013 ILZ020 ILZ021 ILZ023</value>
+<value>ILZ020 ILZ021 ILZ023</value>
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
@@ -1423,17 +1359,17 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=IL12640113BDF8.FloodWatch.126401219E50IL.LOTFFALOT.95b5047b083b96905a884c7b8cbc8394</id>
-<updated>2022-07-24T05:06:00-05:00</updated>
-<published>2022-07-24T05:06:00-05:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=IL12640114351C.FloodWatch.126401219E50IL.LOTFFALOT.fb239946486b4031a7b44b93bd7c4dc8</id>
+<updated>2022-07-24T08:11:00-05:00</updated>
+<published>2022-07-24T08:11:00-05:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Flood Watch issued July 24 at 5:06AM CDT until July 24 at 8:00PM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=IL12640113BDF8.FloodWatch.126401219E50IL.LOTFFALOT.95b5047b083b96905a884c7b8cbc8394"/>
-<summary>...FLOOD WATCH REMAINS IN EFFECT UNTIL NOON CDT TODAY... * WHAT...Flash flooding caused by excessive rainfall continues to be possible. * WHERE...Portions of Illinois and northwest Indiana, including the following areas, in Illinois, Boone, Central Cook, De Kalb, DuPage, Eastern Will, Grundy, Kane, Kankakee, Kendall, Lake IL,</summary>
+<title>Flood Watch issued July 24 at 8:11AM CDT until July 24 at 8:00PM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=IL12640114351C.FloodWatch.126401219E50IL.LOTFFALOT.fb239946486b4031a7b44b93bd7c4dc8"/>
+<summary>...FLOOD WATCH REMAINS IN EFFECT UNTIL NOON CDT TODAY... * WHAT...Flash flooding caused by excessive rainfall continues to be possible. * WHERE...Portions of northeast Illinois and northwest Indiana, including the following areas, in northeast Illinois, Eastern Will, Grundy, Kankakee, Kendall, Northern Will, Southern Cook and</summary>
 <cap:event>Flood Watch</cap:event>
-<cap:effective>2022-07-24T05:06:00-05:00</cap:effective>
+<cap:effective>2022-07-24T08:11:00-05:00</cap:effective>
 <cap:expires>2022-07-24T20:00:00-05:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
@@ -1441,13 +1377,13 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:urgency>Future</cap:urgency>
 <cap:severity>Moderate</cap:severity>
 <cap:certainty>Possible</cap:certainty>
-<cap:areaDesc>Central Cook; Eastern Will; Northern Cook; Northern Will; Southern Cook; Southern Will</cap:areaDesc>
+<cap:areaDesc>Eastern Will; Northern Will; Southern Cook; Southern Will</cap:areaDesc>
 <cap:polygon></cap:polygon>
 <cap:geocode>
 <valueName>FIPS6</valueName>
 <value>017031 017197</value>
 <valueName>UGC</valueName>
-<value>ILZ103 ILZ104 ILZ105 ILZ106 ILZ107 ILZ108</value>
+<value>ILZ105 ILZ106 ILZ107 ILZ108</value>
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
@@ -1650,17 +1586,17 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=IN12640113BDF8.FloodWatch.12640114CD10IN.LOTFFALOT.e140c53cc0aad452b57fa7908a73310d</id>
-<updated>2022-07-24T06:06:00-04:00</updated>
-<published>2022-07-24T06:06:00-04:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=IN12640114351C.FloodWatch.12640114CD10IN.LOTFFALOT.e140c53cc0aad452b57fa7908a73310d</id>
+<updated>2022-07-24T09:11:00-04:00</updated>
+<published>2022-07-24T09:11:00-04:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Flood Watch issued July 24 at 6:06AM EDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=IN12640113BDF8.FloodWatch.12640114CD10IN.LOTFFALOT.e140c53cc0aad452b57fa7908a73310d"/>
-<summary>...FLOOD WATCH REMAINS IN EFFECT UNTIL NOON CDT TODAY... * WHAT...Flash flooding caused by excessive rainfall continues to be possible. * WHERE...Portions of Illinois and northwest Indiana, including the following areas, in Illinois, Boone, Central Cook, De Kalb, DuPage, Eastern Will, Grundy, Kane, Kankakee, Kendall, Lake IL,</summary>
+<title>Flood Watch issued July 24 at 9:11AM EDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=IN12640114351C.FloodWatch.12640114CD10IN.LOTFFALOT.e140c53cc0aad452b57fa7908a73310d"/>
+<summary>...FLOOD WATCH REMAINS IN EFFECT UNTIL NOON CDT TODAY... * WHAT...Flash flooding caused by excessive rainfall continues to be possible. * WHERE...Portions of northeast Illinois and northwest Indiana, including the following areas, in northeast Illinois, Eastern Will, Grundy, Kankakee, Kendall, Northern Will, Southern Cook and</summary>
 <cap:event>Flood Watch</cap:event>
-<cap:effective>2022-07-24T06:06:00-04:00</cap:effective>
+<cap:effective>2022-07-24T09:11:00-04:00</cap:effective>
 <cap:expires>2022-07-24T13:00:00-04:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
@@ -2484,6 +2420,70 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=ME126401143CEC.BeachHazardsStatement.126401217740ME.CARCFWCAR.6a95f194e4c0fed0fa78d35981bff7e5</id>
+<updated>2022-07-24T09:31:00-04:00</updated>
+<published>2022-07-24T09:31:00-04:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Beach Hazards Statement issued July 24 at 9:31AM EDT until July 24 at 8:00PM EDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=ME126401143CEC.BeachHazardsStatement.126401217740ME.CARCFWCAR.6a95f194e4c0fed0fa78d35981bff7e5"/>
+<summary>...BEACH HAZARDS STATEMENT REMAINS IN EFFECT UNTIL 8 PM EDT THIS EVENING... * WHAT...The warm air temperatures in the low to mid 80s may cause people to underestimate the dangers of the cold water temperatures which are currently only in the mid 50s. * WHERE...Coastal Washington and Coastal Hancock Counties.</summary>
+<cap:event>Beach Hazards Statement</cap:event>
+<cap:effective>2022-07-24T09:31:00-04:00</cap:effective>
+<cap:expires>2022-07-24T20:00:00-04:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Coastal Hancock; Coastal Washington</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>023009 023029</value>
+<valueName>UGC</valueName>
+<value>MEZ029 MEZ030</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KCAR.BH.S.0016.000000T0000Z-220725T0000Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=ME126401143C88.HeatAdvisory.126401159060ME.CARNPWCAR.ec173ecbf72c7c2cf35546d0b3c019e8</id>
+<updated>2022-07-24T09:30:00-04:00</updated>
+<published>2022-07-24T09:30:00-04:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Heat Advisory issued July 24 at 9:30AM EDT until July 24 at 6:00PM EDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=ME126401143C88.HeatAdvisory.126401159060ME.CARNPWCAR.ec173ecbf72c7c2cf35546d0b3c019e8"/>
+<summary>...HEAT ADVISORY REMAINS IN EFFECT UNTIL 6 PM EDT THIS EVENING... * WHAT...Heat index values up to 96 expected. * WHERE...Central Penobscot, Southern Piscataquis and Southern Penobscot Counties. * WHEN...Until 6 PM EDT this evening. * IMPACTS...Hot temperatures and high humidity may cause heat</summary>
+<cap:event>Heat Advisory</cap:event>
+<cap:effective>2022-07-24T09:30:00-04:00</cap:effective>
+<cap:expires>2022-07-24T18:00:00-04:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Central Penobscot; Southern Penobscot; Southern Piscataquis</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>023019 023021</value>
+<valueName>UGC</valueName>
+<value>MEZ011 MEZ015 MEZ031</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KCAR.HT.Y.0001.220724T1500Z-220724T2200Z/</value>
+</cap:parameter>
+</entry>
+<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=ME126401137424.SpecialWeatherStatement.126401159060ME.CARSPSCAR.6516ec51a7ed143f79ac8c22fd623bed</id>
 <updated>2022-07-24T04:17:00-04:00</updated>
 <published>2022-07-24T04:17:00-04:00</published>
@@ -2609,70 +2609,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value>/O.CON.KGYX.HT.Y.0003.220724T1500Z-220725T0000Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=ME1264011334DC.HeatAdvisory.126401159060ME.CARNPWCAR.ec173ecbf72c7c2cf35546d0b3c019e8</id>
-<updated>2022-07-24T02:55:00-04:00</updated>
-<published>2022-07-24T02:55:00-04:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Heat Advisory issued July 24 at 2:55AM EDT until July 24 at 6:00PM EDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=ME1264011334DC.HeatAdvisory.126401159060ME.CARNPWCAR.ec173ecbf72c7c2cf35546d0b3c019e8"/>
-<summary>...HEAT ADVISORY REMAINS IN EFFECT FROM 11 AM THIS MORNING TO 6 PM EDT THIS EVENING... * WHAT...Heat index values up to 97 expected. * WHERE...Central Penobscot, Southern Piscataquis and Southern Penobscot Counties. * WHEN...From 11 AM this morning to 6 PM EDT this evening.</summary>
-<cap:event>Heat Advisory</cap:event>
-<cap:effective>2022-07-24T02:55:00-04:00</cap:effective>
-<cap:expires>2022-07-24T18:00:00-04:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Central Penobscot; Southern Penobscot; Southern Piscataquis</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>023019 023021</value>
-<valueName>UGC</valueName>
-<value>MEZ011 MEZ015 MEZ031</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KCAR.HT.Y.0001.220724T1500Z-220724T2200Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=ME126401133414.BeachHazardsStatement.126401217740ME.CARCFWCAR.6a95f194e4c0fed0fa78d35981bff7e5</id>
-<updated>2022-07-24T02:53:00-04:00</updated>
-<published>2022-07-24T02:53:00-04:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Beach Hazards Statement issued July 24 at 2:53AM EDT until July 24 at 8:00PM EDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=ME126401133414.BeachHazardsStatement.126401217740ME.CARCFWCAR.6a95f194e4c0fed0fa78d35981bff7e5"/>
-<summary>...BEACH HAZARDS STATEMENT REMAINS IN EFFECT FROM 8 AM EDT THIS MORNING THROUGH THIS EVENING... * WHAT...The warm air temperatures in the low to mid 80s may cause people to underestimate the dangers of the cold water temperatures which are currently only in the mid 50s. * WHERE...Coastal Washington and Coastal Hancock Counties.</summary>
-<cap:event>Beach Hazards Statement</cap:event>
-<cap:effective>2022-07-24T02:53:00-04:00</cap:effective>
-<cap:expires>2022-07-24T20:00:00-04:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Coastal Hancock; Coastal Washington</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>023009 023029</value>
-<valueName>UGC</valueName>
-<value>MEZ029 MEZ030</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KCAR.BH.S.0016.220724T1200Z-220725T0000Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -3800,17 +3736,17 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=OH12640113A1D8.BeachHazardsStatement.126401234C00OH.CLECFWCLE.2d5f50384d30b14776028bdc8409ca09</id>
-<updated>2022-07-24T05:34:00-04:00</updated>
-<published>2022-07-24T05:34:00-04:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=OH126401143B5C.BeachHazardsStatement.126401234C00OH.CLECFWCLE.2d5f50384d30b14776028bdc8409ca09</id>
+<updated>2022-07-24T09:27:00-04:00</updated>
+<published>2022-07-24T09:27:00-04:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Beach Hazards Statement issued July 24 at 5:34AM EDT until July 25 at 8:00AM EDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=OH12640113A1D8.BeachHazardsStatement.126401234C00OH.CLECFWCLE.2d5f50384d30b14776028bdc8409ca09"/>
-<summary>...BEACH HAZARDS STATEMENT IN EFFECT FROM THIS EVENING THROUGH MONDAY MORNING... * WHAT...High risk of rip currents expected. * WHERE...In Ohio, Cuyahoga, Lake and Ashtabula Lakeshore Counties. In Pennsylvania, Northern Erie County. * WHEN...From this evening through Monday morning.</summary>
+<title>Beach Hazards Statement issued July 24 at 9:27AM EDT until July 25 at 8:00AM EDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=OH126401143B5C.BeachHazardsStatement.126401234C00OH.CLECFWCLE.2d5f50384d30b14776028bdc8409ca09"/>
+<summary>...BEACH HAZARDS STATEMENT REMAINS IN EFFECT FROM THIS EVENING THROUGH MONDAY MORNING... * WHAT...High risk of rip currents expected. * WHERE...In Ohio, Cuyahoga, Lake and Ashtabula Lakeshore Counties. In Pennsylvania, Northern Erie County. * WHEN...From this evening through Monday morning.</summary>
 <cap:event>Beach Hazards Statement</cap:event>
-<cap:effective>2022-07-24T05:34:00-04:00</cap:effective>
+<cap:effective>2022-07-24T09:27:00-04:00</cap:effective>
 <cap:expires>2022-07-25T08:00:00-04:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
@@ -3828,7 +3764,7 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
-<value>/O.NEW.KCLE.BH.S.0012.220725T0200Z-220725T1200Z/</value>
+<value>/O.CON.KCLE.BH.S.0012.220725T0200Z-220725T1200Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -4360,6 +4296,38 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=PA126401143B5C.BeachHazardsStatement.126401234C00PA.CLECFWCLE.70b80fc743cab7b559fa70e03d7b047c</id>
+<updated>2022-07-24T09:27:00-04:00</updated>
+<published>2022-07-24T09:27:00-04:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Beach Hazards Statement issued July 24 at 9:27AM EDT until July 25 at 8:00AM EDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=PA126401143B5C.BeachHazardsStatement.126401234C00PA.CLECFWCLE.70b80fc743cab7b559fa70e03d7b047c"/>
+<summary>...BEACH HAZARDS STATEMENT REMAINS IN EFFECT FROM THIS EVENING THROUGH MONDAY MORNING... * WHAT...High risk of rip currents expected. * WHERE...In Ohio, Cuyahoga, Lake and Ashtabula Lakeshore Counties. In Pennsylvania, Northern Erie County. * WHEN...From this evening through Monday morning.</summary>
+<cap:event>Beach Hazards Statement</cap:event>
+<cap:effective>2022-07-24T09:27:00-04:00</cap:effective>
+<cap:expires>2022-07-25T08:00:00-04:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Northern Erie</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>042049</value>
+<valueName>UGC</valueName>
+<value>PAZ001</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KCLE.BH.S.0012.220725T0200Z-220725T1200Z/</value>
+</cap:parameter>
+</entry>
+<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=PA126401142068.SpecialWeatherStatement.126401144264PA.PBZSPSPBZ.2cec81afd90d1665704307b72456bb2d</id>
 <updated>2022-07-24T08:58:00-04:00</updated>
 <published>2022-07-24T08:58:00-04:00</published>
@@ -4389,38 +4357,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value></value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=PA12640113A1D8.BeachHazardsStatement.126401234C00PA.CLECFWCLE.70b80fc743cab7b559fa70e03d7b047c</id>
-<updated>2022-07-24T05:34:00-04:00</updated>
-<published>2022-07-24T05:34:00-04:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Beach Hazards Statement issued July 24 at 5:34AM EDT until July 25 at 8:00AM EDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=PA12640113A1D8.BeachHazardsStatement.126401234C00PA.CLECFWCLE.70b80fc743cab7b559fa70e03d7b047c"/>
-<summary>...BEACH HAZARDS STATEMENT IN EFFECT FROM THIS EVENING THROUGH MONDAY MORNING... * WHAT...High risk of rip currents expected. * WHERE...In Ohio, Cuyahoga, Lake and Ashtabula Lakeshore Counties. In Pennsylvania, Northern Erie County. * WHEN...From this evening through Monday morning.</summary>
-<cap:event>Beach Hazards Statement</cap:event>
-<cap:effective>2022-07-24T05:34:00-04:00</cap:effective>
-<cap:expires>2022-07-25T08:00:00-04:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Northern Erie</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>042049</value>
-<valueName>UGC</valueName>
-<value>PAZ001</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.NEW.KCLE.BH.S.0012.220725T0200Z-220725T1200Z/</value>
 </cap:parameter>
 </entry>
 <entry>
