@@ -16,16 +16,49 @@ xmlns = 'http://www.w3.org/2005/Atom'
 xmlns:cap = 'urn:oasis:names:tc:emergency:cap:1.1'
 xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 >
-<!-- http-date = Wed, 17 Aug 2022 18:35:00 GMT -->
+<!-- http-date = Wed, 17 Aug 2022 18:59:00 GMT -->
 <id>https://alerts.weather.gov/cap/us.php?x=0</id>
 <logo>http://alerts.weather.gov/images/xml_logo.gif</logo>
 <generator>NWS CAP Server</generator>
-<updated>2022-08-17T12:35:00-06:00</updated>
+<updated>2022-08-17T14:59:00-04:00</updated>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
 <title>Current Watches, Warnings and Advisories for the United States Issued by the National Weather Service</title>
 <link href="https://alerts.weather.gov/cap/us.php?x=0"/>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=AK126406A01500.FloodWatch.126406ACE258AK.AJKFFAAJK.8df106440ed32fe2144a5aa9bee546f4</id>
+<updated>2022-08-17T10:40:00-08:00</updated>
+<published>2022-08-17T10:40:00-08:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Flood Watch issued August 17 at 10:40AM AKDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=AK126406A01500.FloodWatch.126406ACE258AK.AJKFFAAJK.8df106440ed32fe2144a5aa9bee546f4"/>
+<summary>...FLOOD WATCH REMAINS IN EFFECT UNTIL 10 PM AKDT THIS EVENING... * WHAT...Flooding caused by excessive rainfall continues to be possible. * WHERE...The following area, Northern Inner Channels. This includes the city of Skagway. * WHEN...Until 10 PM AKDT this evening.</summary>
+<cap:event>Flood Watch</cap:event>
+<cap:effective>2022-08-17T10:40:00-08:00</cap:effective>
+<cap:expires>2022-08-17T18:30:00-08:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Future</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Possible</cap:certainty>
+<cap:areaDesc>Taiya Inlet and Klondike Highway</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>002230</value>
+<valueName>UGC</valueName>
+<value>AKZ018</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.PAJK.FA.A.0005.000000T0000Z-220818T0600Z/
+/00000.0.ER.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
+</cap:parameter>
+</entry>
 <entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=AK126406A00EC0.SpecialWeatherStatement.126406ACE258AK.AJKSPSAJK.4cc913391e33d4fed688a452ef87af44</id>
 <updated>2022-08-17T10:24:00-08:00</updated>
@@ -88,39 +121,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value>/O.NEW.PAJK.FA.W.0002.220817T1818Z-220818T1815Z/
-/00000.0.ER.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=AK1264069F7F00.FloodWatch.126406ACE258AK.AJKFFAAJK.8df106440ed32fe2144a5aa9bee546f4</id>
-<updated>2022-08-17T06:56:00-08:00</updated>
-<published>2022-08-17T06:56:00-08:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Flood Watch issued August 17 at 6:56AM AKDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=AK1264069F7F00.FloodWatch.126406ACE258AK.AJKFFAAJK.8df106440ed32fe2144a5aa9bee546f4"/>
-<summary>...FLOOD WATCH REMAINS IN EFFECT THROUGH THIS EVENING... * WHAT...Flooding caused by excessive rainfall continues to be possible. * WHERE...The following area, Taiya River. This includes the cities of Dyea and Skagway. * WHEN...Through this evening.</summary>
-<cap:event>Flood Watch</cap:event>
-<cap:effective>2022-08-17T06:56:00-08:00</cap:effective>
-<cap:expires>2022-08-17T18:30:00-08:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Future</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Possible</cap:certainty>
-<cap:areaDesc>Taiya Inlet and Klondike Highway</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>002230</value>
-<valueName>UGC</valueName>
-<value>AKZ018</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.PAJK.FA.A.0005.000000T0000Z-220818T0600Z/
 /00000.0.ER.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
 </cap:parameter>
 </entry>
@@ -443,6 +443,39 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value></value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=AZ126406A019B0.FlashFloodWarning.126406A0A1A0AZ.FGZFFWFGZ.42ac5c0b36a603700693165a32524f7d</id>
+<updated>2022-08-17T11:52:00-07:00</updated>
+<published>2022-08-17T11:52:00-07:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Flash Flood Warning issued August 17 at 11:52AM MST until August 17 at 3:00PM MST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=AZ126406A019B0.FlashFloodWarning.126406A0A1A0AZ.FGZFFWFGZ.42ac5c0b36a603700693165a32524f7d"/>
+<summary>The National Weather Service in Flagstaff has issued a * Flash Flood Warning for... The Pipeline Fire Scar in... Coconino County in north central Arizona... * Until 300 PM MST. * At 1152 AM MST, Doppler radar and automated rain gauges indicated</summary>
+<cap:event>Flash Flood Warning</cap:event>
+<cap:effective>2022-08-17T11:52:00-07:00</cap:effective>
+<cap:expires>2022-08-17T15:00:00-07:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Immediate</cap:urgency>
+<cap:severity>Severe</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Coconino</cap:areaDesc>
+<cap:polygon>35.37,-111.61 35.37,-111.57 35.32,-111.54 35.3,-111.54 35.31,-111.62 35.33,-111.63 35.37,-111.61</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>004005</value>
+<valueName>UGC</valueName>
+<value>AZC005</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.NEW.KFGZ.FF.W.0231.220817T1852Z-220817T2200Z/
+/00000.0.ER.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -1057,38 +1090,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=DC1264069FA28C.CoastalFloodAdvisory.126406A02C70DC.LWXCFWLWX.f04a01111a6b25d5f6b3506539dbd4c0</id>
-<updated>2022-08-17T11:47:00-04:00</updated>
-<published>2022-08-17T11:47:00-04:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Coastal Flood Advisory issued August 17 at 11:47AM EDT until August 17 at 3:00PM EDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=DC1264069FA28C.CoastalFloodAdvisory.126406A02C70DC.LWXCFWLWX.f04a01111a6b25d5f6b3506539dbd4c0"/>
-<summary>...COASTAL FLOOD ADVISORY IN EFFECT UNTIL 3 PM EDT THIS AFTERNOON... * WHAT...Up to one half foot of of inundation above ground level expected in low lying areas due to tidal flooding. * WHERE...Shoreline in the District of Columbia. * WHEN...Until 3 PM EDT this afternoon, especially around the</summary>
-<cap:event>Coastal Flood Advisory</cap:event>
-<cap:effective>2022-08-17T11:47:00-04:00</cap:effective>
-<cap:expires>2022-08-17T15:00:00-04:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>District of Columbia</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>011001</value>
-<valueName>UGC</valueName>
-<value>DCZ001</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.NEW.KLWX.CF.Y.0034.220817T1600Z-220817T1900Z/</value>
-</cap:parameter>
-</entry>
-<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=DE1264069FEA08.FloodAdvisory.126406A05F38DE.PHIFLSPHI.ae1a4af91a0a1541841ce508dfd58539</id>
 <updated>2022-08-17T13:30:00-04:00</updated>
 <published>2022-08-17T13:30:00-04:00</published>
@@ -1154,18 +1155,18 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=FL126406A01244.SevereThunderstormWarning.126406A02C70FL.JAXSVRJAX.b766bea1d14fef52a03cabd2362c34d7</id>
-<updated>2022-08-17T14:33:00-04:00</updated>
-<published>2022-08-17T14:33:00-04:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=FL126406A01C6C.SevereThunderstormWarning.126406A03828FL.JAXSVRJAX.1b280e92df5affef4c23b5b7f54d6d11</id>
+<updated>2022-08-17T14:59:00-04:00</updated>
+<published>2022-08-17T14:59:00-04:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Severe Thunderstorm Warning issued August 17 at 2:33PM EDT until August 17 at 3:00PM EDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=FL126406A01244.SevereThunderstormWarning.126406A02C70FL.JAXSVRJAX.b766bea1d14fef52a03cabd2362c34d7"/>
-<summary>The National Weather Service in Jacksonville has issued a * Severe Thunderstorm Warning for... South central Marion County in northern Florida... * Until 300 PM EDT. * At 233 PM EDT, a severe thunderstorm was located near Ocala Airport, or near Ocala, moving east at 30 mph.</summary>
+<title>Severe Thunderstorm Warning issued August 17 at 2:59PM EDT until August 17 at 3:30PM EDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=FL126406A01C6C.SevereThunderstormWarning.126406A03828FL.JAXSVRJAX.1b280e92df5affef4c23b5b7f54d6d11"/>
+<summary>The National Weather Service in Jacksonville has issued a * Severe Thunderstorm Warning for... South central Marion County in northern Florida... * Until 330 PM EDT. * At 259 PM EDT, a severe thunderstorm was located near Santos, or 10 miles south of Ocala, moving southeast at 30 mph.</summary>
 <cap:event>Severe Thunderstorm Warning</cap:event>
-<cap:effective>2022-08-17T14:33:00-04:00</cap:effective>
-<cap:expires>2022-08-17T15:00:00-04:00</cap:expires>
+<cap:effective>2022-08-17T14:59:00-04:00</cap:effective>
+<cap:expires>2022-08-17T15:30:00-04:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
 <cap:category>Met</cap:category>
@@ -1173,7 +1174,7 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:severity>Severe</cap:severity>
 <cap:certainty>Observed</cap:certainty>
 <cap:areaDesc>Marion</cap:areaDesc>
-<cap:polygon>29.05,-82.28 29.19,-82.22 29.15,-81.88 28.96,-81.94 28.96,-82.01 29.05,-82.28</cap:polygon>
+<cap:polygon>29.01,-82.22 29.09,-82.19 29.11,-82.1 28.96,-81.83 28.96,-82.16 29.01,-82.22</cap:polygon>
 <cap:geocode>
 <valueName>FIPS6</valueName>
 <value>012083</value>
@@ -1182,22 +1183,55 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
-<value>/O.NEW.KJAX.SV.W.0204.220817T1833Z-220817T1900Z/</value>
+<value>/O.NEW.KJAX.SV.W.0205.220817T1859Z-220817T1930Z/</value>
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=FL126406A00880.SpecialWeatherStatement.126406A016F4FL.JAXSPSJAX.1608a12b7a7e84593651a678dd9fdda1</id>
-<updated>2022-08-17T14:08:00-04:00</updated>
-<published>2022-08-17T14:08:00-04:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=FL126406A01BA4.FlashFloodWarning.126406A05F38FL.JAXFFWJAX.f5d4af039b754ccac3fc96f3d7794cad</id>
+<updated>2022-08-17T14:57:00-04:00</updated>
+<published>2022-08-17T14:57:00-04:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Special Weather Statement issued August 17 at 2:08PM EDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=FL126406A00880.SpecialWeatherStatement.126406A016F4FL.JAXSPSJAX.1608a12b7a7e84593651a678dd9fdda1"/>
-<summary>...A cluster of thunderstorms will impact portions of southwestern and central Marion County through 245 PM EDT... At 208 PM EDT, Doppler radar was tracking a strong thunderstorm near Rainbow Lakes Estates, moving east at 20 mph. Additional storms will be near Ocala and the Interstate 75 corridor moving east at 15 mph.</summary>
+<title>Flash Flood Warning issued August 17 at 2:57PM EDT until August 17 at 4:30PM EDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=FL126406A01BA4.FlashFloodWarning.126406A05F38FL.JAXFFWJAX.f5d4af039b754ccac3fc96f3d7794cad"/>
+<summary>The National Weather Service in Jacksonville has issued a * Flash Flood Warning for... South Central Marion County in northern Florida... * Until 430 PM EDT. * At 257 PM EDT, Doppler radar indicated thunderstorms producing heavy rain across the warned area. Between 2 and 3 inches of rain</summary>
+<cap:event>Flash Flood Warning</cap:event>
+<cap:effective>2022-08-17T14:57:00-04:00</cap:effective>
+<cap:expires>2022-08-17T16:30:00-04:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Immediate</cap:urgency>
+<cap:severity>Severe</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Marion</cap:areaDesc>
+<cap:polygon>29.07,-82.16 29.09,-82.12 29.07,-82.06 29.04,-82.07 29.02,-82.06 29.01,-82.09 29.01,-82.15 29.05,-82.17 29.07,-82.16</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>012083</value>
+<valueName>UGC</valueName>
+<value>FLC083</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.NEW.KJAX.FF.W.0004.220817T1857Z-220817T2030Z/
+/00000.0.ER.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=FL126406A015C8.SpecialWeatherStatement.126406A0324CFL.JAXSPSJAX.1608a12b7a7e84593651a678dd9fdda1</id>
+<updated>2022-08-17T14:42:00-04:00</updated>
+<published>2022-08-17T14:42:00-04:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Special Weather Statement issued August 17 at 2:42PM EDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=FL126406A015C8.SpecialWeatherStatement.126406A0324CFL.JAXSPSJAX.1608a12b7a7e84593651a678dd9fdda1"/>
+<summary>...Strong thunderstorms will impact portions of southwestern Marion County through 315 PM EDT... At 242 PM EDT, Doppler radar was tracking strong thunderstorms along a line extending from near Santos to 8 miles southwest of Ocala Airport. Movement was southeast at 20 mph. HAZARD...Wind gusts of 45 to 55 mph and minor flooding due to heavy</summary>
 <cap:event>Special Weather Statement</cap:event>
-<cap:effective>2022-08-17T14:08:00-04:00</cap:effective>
-<cap:expires>2022-08-17T14:45:00-04:00</cap:expires>
+<cap:effective>2022-08-17T14:42:00-04:00</cap:effective>
+<cap:expires>2022-08-17T15:15:00-04:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
 <cap:category>Met</cap:category>
@@ -1205,44 +1239,12 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:severity>Minor</cap:severity>
 <cap:certainty>Observed</cap:certainty>
 <cap:areaDesc>Central Marion; Western Marion</cap:areaDesc>
-<cap:polygon>29.12,-82.54 29.21,-82.54 29.22,-82.4 29.28,-82.4 29.16,-82.02 29.05,-82.03 29.04,-82.34 29.12,-82.54</cap:polygon>
+<cap:polygon>29.08,-82.4 29.14,-82.32 28.96,-82 28.96,-82.3 29.08,-82.4</cap:polygon>
 <cap:geocode>
 <valueName>FIPS6</valueName>
 <value>012083</value>
 <valueName>UGC</valueName>
 <value>FLZ240 FLZ340</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value></value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=FL126406A0068C.SpecialWeatherStatement.126406A016F4FL.JAXSPSJAX.092c43bed4c69c32d487750f2de82ff5</id>
-<updated>2022-08-17T14:03:00-04:00</updated>
-<published>2022-08-17T14:03:00-04:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Special Weather Statement issued August 17 at 2:03PM EDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=FL126406A0068C.SpecialWeatherStatement.126406A016F4FL.JAXSPSJAX.092c43bed4c69c32d487750f2de82ff5"/>
-<summary>...A strong thunderstorm will impact portions of southeastern Marion County through 245 PM EDT... At 203 PM EDT, Doppler radar was tracking a strong thunderstorm near Moss Bluff, or near Lynne, moving east at 15 mph. HAZARD...Wind gusts up to 50 mph. SOURCE...Radar indicated.</summary>
-<cap:event>Special Weather Statement</cap:event>
-<cap:effective>2022-08-17T14:03:00-04:00</cap:effective>
-<cap:expires>2022-08-17T14:45:00-04:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Observed</cap:certainty>
-<cap:areaDesc>Eastern Marion</cap:areaDesc>
-<cap:polygon>29.04,-82.03 29.17,-82.02 29.25,-81.64 29.05,-81.64 29.05,-81.66 29.01,-81.66 29.04,-82.03</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>012083</value>
-<valueName>UGC</valueName>
-<value>FLZ140</value>
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
@@ -1636,31 +1638,95 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=LA126406A0117C.SpecialWeatherStatement.126406A02C70LA.SHVSPSSHV.efaec9d1278a22d148920d617912672a</id>
-<updated>2022-08-17T13:31:00-05:00</updated>
-<published>2022-08-17T13:31:00-05:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=LA126406A01ADC.SevereThunderstormWarning.126406A03828LA.SHVSVRSHV.de29f40561ae818c858fa8cfe4e7168b</id>
+<updated>2022-08-17T13:55:00-05:00</updated>
+<published>2022-08-17T13:55:00-05:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Special Weather Statement issued August 17 at 1:31PM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=LA126406A0117C.SpecialWeatherStatement.126406A02C70LA.SHVSPSSHV.efaec9d1278a22d148920d617912672a"/>
-<summary>...Strong thunderstorms will impact portions of southwestern Caddo Parish, southeastern Harrison and northeastern Panola Counties through 200 PM CDT... At 130 PM CDT, Doppler radar was tracking several strong thunderstorms around Deberry, or 12 miles northeast of Carthage, moving southeast at 15 mph.</summary>
+<title>Severe Thunderstorm Warning issued August 17 at 1:55PM CDT until August 17 at 2:30PM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=LA126406A01ADC.SevereThunderstormWarning.126406A03828LA.SHVSVRSHV.de29f40561ae818c858fa8cfe4e7168b"/>
+<summary>The National Weather Service in Shreveport has issued a * Severe Thunderstorm Warning for... Southwestern De Soto Parish in northwestern Louisiana... * Until 230 PM CDT. * At 154 PM CDT, a severe thunderstorm was located 10 miles north of Logansport, or 14 miles west of Mansfield, moving southeast at 15</summary>
+<cap:event>Severe Thunderstorm Warning</cap:event>
+<cap:effective>2022-08-17T13:55:00-05:00</cap:effective>
+<cap:expires>2022-08-17T14:30:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Immediate</cap:urgency>
+<cap:severity>Severe</cap:severity>
+<cap:certainty>Observed</cap:certainty>
+<cap:areaDesc>De Soto</cap:areaDesc>
+<cap:polygon>31.9,-93.9 31.89,-93.92 31.89,-93.93 31.91,-93.93 31.91,-93.95 31.92,-93.96 31.92,-93.97 32.08,-94.05 32.14,-94.04 32.22,-93.88 31.98,-93.67 31.87,-93.89 31.88,-93.9 31.9,-93.9</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>022031</value>
+<valueName>UGC</valueName>
+<value>LAC031</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.NEW.KSHV.SV.W.0201.220817T1855Z-220817T1930Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=LA126406A018E8.HeatAdvisory.126406A0C8B0LA.SHVNPWSHV.31620c5482367135199c9b80d04c83d9</id>
+<updated>2022-08-17T13:50:00-05:00</updated>
+<published>2022-08-17T13:50:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Heat Advisory issued August 17 at 1:50PM CDT until August 17 at 6:00PM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=LA126406A018E8.HeatAdvisory.126406A0C8B0LA.SHVNPWSHV.31620c5482367135199c9b80d04c83d9"/>
+<summary>...HEAT ADVISORY REMAINS IN EFFECT UNTIL 6 PM CDT THIS EVENING... * WHAT...Heat index values up to 108. * WHERE...Portions of north central and northwest Louisiana and east and northeast Texas. * WHEN...Until 6 PM CDT this evening. * IMPACTS...Hot temperatures and high humidity may cause heat</summary>
+<cap:event>Heat Advisory</cap:event>
+<cap:effective>2022-08-17T13:50:00-05:00</cap:effective>
+<cap:expires>2022-08-17T18:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Bienville; Bossier; Caddo; Caldwell; De Soto; Grant; Jackson; La Salle; Natchitoches; Red River; Sabine; Webster; Winn</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>022013 022015 022017 022021 022031 022043 022049 022059 022069 022081 022085 022119 022127</value>
+<valueName>UGC</valueName>
+<value>LAZ001 LAZ002 LAZ003 LAZ010 LAZ011 LAZ012 LAZ013 LAZ017 LAZ018 LAZ019 LAZ020 LAZ021 LAZ022</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KSHV.HT.Y.0027.000000T0000Z-220817T2300Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=LA126406A015C8.SpecialWeatherStatement.126406A0324CLA.SHVSPSSHV.90ff127091415e1a50b53585b17668ab</id>
+<updated>2022-08-17T13:42:00-05:00</updated>
+<published>2022-08-17T13:42:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Special Weather Statement issued August 17 at 1:42PM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=LA126406A015C8.SpecialWeatherStatement.126406A0324CLA.SHVSPSSHV.90ff127091415e1a50b53585b17668ab"/>
+<summary>...A strong thunderstorm will impact portions of southwestern De Soto Parish through 215 PM CDT... At 142 PM CDT, Doppler radar was tracking a strong thunderstorm near Mansfield, moving southeast at 15 mph. HAZARD...Wind gusts up to 50 mph. SOURCE...Radar indicated.</summary>
 <cap:event>Special Weather Statement</cap:event>
-<cap:effective>2022-08-17T13:31:00-05:00</cap:effective>
-<cap:expires>2022-08-17T14:00:00-05:00</cap:expires>
+<cap:effective>2022-08-17T13:42:00-05:00</cap:effective>
+<cap:expires>2022-08-17T14:15:00-05:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
 <cap:category>Met</cap:category>
 <cap:urgency>Expected</cap:urgency>
 <cap:severity>Minor</cap:severity>
 <cap:certainty>Observed</cap:certainty>
-<cap:areaDesc>Caddo</cap:areaDesc>
-<cap:polygon>32.51,-94.25 32.36,-93.82 32.12,-94.17 32.39,-94.48 32.39,-94.49 32.4,-94.51 32.51,-94.25</cap:polygon>
+<cap:areaDesc>De Soto</cap:areaDesc>
+<cap:polygon>32.15,-94.01 32.2,-93.81 32.09,-93.64 31.87,-93.44 31.85,-93.44 31.85,-93.76 32.15,-94.01</cap:polygon>
 <cap:geocode>
 <valueName>FIPS6</valueName>
-<value>022017</value>
+<value>022031</value>
 <valueName>UGC</valueName>
-<value>LAZ001</value>
+<value>LAZ010</value>
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
@@ -1732,38 +1798,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=LA1264069E8D34.HeatAdvisory.126406A0C8B0LA.SHVNPWSHV.5a9d151f2f9ea9d670db027feb8deb0f</id>
-<updated>2022-08-17T03:37:00-05:00</updated>
-<published>2022-08-17T03:37:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Heat Advisory issued August 17 at 3:37AM CDT until August 17 at 6:00PM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=LA1264069E8D34.HeatAdvisory.126406A0C8B0LA.SHVNPWSHV.5a9d151f2f9ea9d670db027feb8deb0f"/>
-<summary>...HEAT ADVISORY IN EFFECT UNTIL 6 PM CDT THIS EVENING... * WHAT...Heat index values up to 108. * WHERE...Portions of north central and northwest Louisiana and east and northeast Texas. * WHEN...Until 6 PM CDT this evening. * IMPACTS...Hot temperatures and high humidity may cause heat</summary>
-<cap:event>Heat Advisory</cap:event>
-<cap:effective>2022-08-17T03:37:00-05:00</cap:effective>
-<cap:expires>2022-08-17T18:00:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Bienville; Bossier; Caddo; Caldwell; Claiborne; De Soto; Grant; Jackson; La Salle; Lincoln; Natchitoches; Ouachita; Red River; Sabine; Union; Webster; Winn</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>022013 022015 022017 022021 022027 022031 022043 022049 022059 022061 022069 022073 022081 022085 022111 022119 022127</value>
-<valueName>UGC</valueName>
-<value>LAZ001 LAZ002 LAZ003 LAZ004 LAZ005 LAZ006 LAZ010 LAZ011 LAZ012 LAZ013 LAZ014 LAZ017 LAZ018 LAZ019 LAZ020 LAZ021 LAZ022</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.NEW.KSHV.HT.Y.0027.220817T0837Z-220817T2300Z/</value>
-</cap:parameter>
-</entry>
-<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=MA1264069E3744.HighSurfAdvisory.126406AC8880MA.BOXCFWBOX.88ad936e8f5c7a8d8cd23f777107b4f1</id>
 <updated>2022-08-17T02:17:00-04:00</updated>
 <published>2022-08-17T02:17:00-04:00</published>
@@ -1796,17 +1830,17 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=MD1264069FBD1C.BeachHazardsStatement.126406AC8880MD.AKQCFWAKQ.3d578a642c004523b1dbe0ec50745f4f</id>
-<updated>2022-08-17T12:15:00-04:00</updated>
-<published>2022-08-17T12:15:00-04:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=MD126406A01884.BeachHazardsStatement.126406AC8880MD.AKQCFWAKQ.3d578a642c004523b1dbe0ec50745f4f</id>
+<updated>2022-08-17T14:49:00-04:00</updated>
+<published>2022-08-17T14:49:00-04:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Beach Hazards Statement issued August 17 at 12:15PM EDT until August 17 at 8:00PM EDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MD1264069FBD1C.BeachHazardsStatement.126406AC8880MD.AKQCFWAKQ.3d578a642c004523b1dbe0ec50745f4f"/>
+<title>Beach Hazards Statement issued August 17 at 2:49PM EDT until August 17 at 8:00PM EDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MD126406A01884.BeachHazardsStatement.126406AC8880MD.AKQCFWAKQ.3d578a642c004523b1dbe0ec50745f4f"/>
 <summary>...BEACH HAZARDS STATEMENT REMAINS IN EFFECT UNTIL 8 PM EDT THIS EVENING... * WHAT...High risk of rip currents. * WHERE...In Maryland, the Atlantic facing beaches of Worchester County including Ocean City and Assateague. In North Carolina, the Atlantic facing beaches of the Northern Outer Banks. In</summary>
 <cap:event>Beach Hazards Statement</cap:event>
-<cap:effective>2022-08-17T12:15:00-04:00</cap:effective>
+<cap:effective>2022-08-17T14:49:00-04:00</cap:effective>
 <cap:expires>2022-08-17T20:00:00-04:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
@@ -1857,6 +1891,70 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value>/O.CON.KGYX.SU.Y.0001.220817T1200Z-220818T0000Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=MI126406A01C6C.SpecialWeatherStatement.126406A03828MI.DTXSPSDTX.bea231dbdbd87981f2d8fb60332d6b28</id>
+<updated>2022-08-17T14:59:00-04:00</updated>
+<published>2022-08-17T14:59:00-04:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Special Weather Statement issued August 17 at 2:59PM EDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MI126406A01C6C.SpecialWeatherStatement.126406A03828MI.DTXSPSDTX.bea231dbdbd87981f2d8fb60332d6b28"/>
+<summary>...A strong thunderstorm will impact portions of southwestern Oakland County through 330 PM EDT... At 259 PM EDT, Doppler radar was tracking a strong thunderstorm over West Bloomfield, or near Pontiac, moving southwest at 20 mph. HAZARD...Winds in excess of 40 mph and penny size hail. SOURCE...Radar indicated.</summary>
+<cap:event>Special Weather Statement</cap:event>
+<cap:effective>2022-08-17T14:59:00-04:00</cap:effective>
+<cap:expires>2022-08-17T15:30:00-04:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Observed</cap:certainty>
+<cap:areaDesc>Oakland</cap:areaDesc>
+<cap:polygon>42.56,-83.21 42.44,-83.33 42.43,-83.66 42.5,-83.67 42.8,-83.49 42.56,-83.21</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>026125</value>
+<valueName>UGC</valueName>
+<value>MIZ069</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value></value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=MN126406A01BA4.SpecialWeatherStatement.126406A03828MN.DLHSPSDLH.87efee1db0a47a228c429f7cd2b4f466</id>
+<updated>2022-08-17T13:57:00-05:00</updated>
+<published>2022-08-17T13:57:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Special Weather Statement issued August 17 at 1:57PM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MN126406A01BA4.SpecialWeatherStatement.126406A03828MN.DLHSPSDLH.87efee1db0a47a228c429f7cd2b4f466"/>
+<summary>...A strong thunderstorm will impact portions of south central St. Louis and northeastern Carlton Counties through 230 PM CDT... At 156 PM CDT, Doppler radar was tracking a strong thunderstorm near Saginaw, or near Cloquet, moving east at 10 mph. HAZARD...Winds gusts up to 30 mph and nickel size hail. SOURCE...Radar indicated.</summary>
+<cap:event>Special Weather Statement</cap:event>
+<cap:effective>2022-08-17T13:57:00-05:00</cap:effective>
+<cap:expires>2022-08-17T14:30:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Observed</cap:certainty>
+<cap:areaDesc>Carlton, South St. Louis</cap:areaDesc>
+<cap:polygon>46.75,-92.51 46.85,-92.56 46.92,-92.35 46.73,-92.34 46.75,-92.51</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>027017 027137</value>
+<valueName>UGC</valueName>
+<value>MNZ037</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value></value>
 </cap:parameter>
 </entry>
 <entry>
@@ -1956,49 +2054,17 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=MT126406A00F88.SpecialWeatherStatement.126406A02C70MT.GGWSPSGGW.c432924470f7c392755a3d2db4782f13</id>
-<updated>2022-08-17T12:26:00-06:00</updated>
-<published>2022-08-17T12:26:00-06:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=NC126406A01884.BeachHazardsStatement.126406AC8880NC.AKQCFWAKQ.98dff72f62eb585f00bde6d0351c0bb8</id>
+<updated>2022-08-17T14:49:00-04:00</updated>
+<published>2022-08-17T14:49:00-04:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Special Weather Statement issued August 17 at 12:26PM MDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MT126406A00F88.SpecialWeatherStatement.126406A02C70MT.GGWSPSGGW.c432924470f7c392755a3d2db4782f13"/>
-<summary>...Strong thunderstorms will impact portions of southern Dawson Counties through 100 PM MDT... At 1224 PM MDT, Doppler radar was tracking strong thunderstorms along a line extending from Lindsay to 7 miles southwest of Bloomfield. Movement was east at 30 mph. HAZARD...Winds in excess of 40 mph.</summary>
-<cap:event>Special Weather Statement</cap:event>
-<cap:effective>2022-08-17T12:26:00-06:00</cap:effective>
-<cap:expires>2022-08-17T13:00:00-06:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Observed</cap:certainty>
-<cap:areaDesc>Dawson</cap:areaDesc>
-<cap:polygon>46.91,-104.69 47.19,-105.32 47.43,-105.16 47.32,-104.43 47.29,-104.38 47.26,-104.37 46.91,-104.69</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>030021</value>
-<valueName>UGC</valueName>
-<value>MTZ025</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value></value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=NC1264069FBD1C.BeachHazardsStatement.126406AC8880NC.AKQCFWAKQ.98dff72f62eb585f00bde6d0351c0bb8</id>
-<updated>2022-08-17T12:15:00-04:00</updated>
-<published>2022-08-17T12:15:00-04:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Beach Hazards Statement issued August 17 at 12:15PM EDT until August 17 at 8:00PM EDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=NC1264069FBD1C.BeachHazardsStatement.126406AC8880NC.AKQCFWAKQ.98dff72f62eb585f00bde6d0351c0bb8"/>
+<title>Beach Hazards Statement issued August 17 at 2:49PM EDT until August 17 at 8:00PM EDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=NC126406A01884.BeachHazardsStatement.126406AC8880NC.AKQCFWAKQ.98dff72f62eb585f00bde6d0351c0bb8"/>
 <summary>...BEACH HAZARDS STATEMENT REMAINS IN EFFECT UNTIL 8 PM EDT THIS EVENING... * WHAT...High risk of rip currents. * WHERE...In Maryland, the Atlantic facing beaches of Worchester County including Ocean City and Assateague. In North Carolina, the Atlantic facing beaches of the Northern Outer Banks. In</summary>
 <cap:event>Beach Hazards Statement</cap:event>
-<cap:effective>2022-08-17T12:15:00-04:00</cap:effective>
+<cap:effective>2022-08-17T14:49:00-04:00</cap:effective>
 <cap:expires>2022-08-17T20:00:00-04:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
@@ -2049,38 +2115,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value>/O.NEW.KMHX.BH.S.0038.220817T1200Z-220818T0000Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=ND126406A0130C.SpecialWeatherStatement.126406A02C70ND.BISSPSBIS.10753e091116ebc07273309e815cfd0e</id>
-<updated>2022-08-17T13:35:00-05:00</updated>
-<published>2022-08-17T13:35:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Special Weather Statement issued August 17 at 1:35PM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=ND126406A0130C.SpecialWeatherStatement.126406A02C70ND.BISSPSBIS.10753e091116ebc07273309e815cfd0e"/>
-<summary>...A STRONG THUNDERSTORM WILL IMPACT PORTIONS OF EASTERN BOWMAN, SOUTHWESTERN HETTINGER, SOUTHEASTERN SLOPE AND WESTERN ADAMS COUNTIES THROUGH 100 PM MDT... At 1233 PM MDT, a strong thunderstorm was located 9 miles north of Scranton, or 15 miles northeast of Bowman, moving east at 20 mph. HAZARD...Wind gusts to 50 mph and penny size hail.</summary>
-<cap:event>Special Weather Statement</cap:event>
-<cap:effective>2022-08-17T13:35:00-05:00</cap:effective>
-<cap:expires>2022-08-17T14:00:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Observed</cap:certainty>
-<cap:areaDesc>Adams; Bowman; Hettinger; Slope</cap:areaDesc>
-<cap:polygon>45.95,-103.01 45.98,-103.3 46.5,-103.36 46.52,-102.66 45.95,-102.73 45.95,-103.01</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>038001 038011 038041 038087</value>
-<valueName>UGC</valueName>
-<value>NDZ040 NDZ041 NDZ043 NDZ044</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value></value>
 </cap:parameter>
 </entry>
 <entry>
@@ -2378,31 +2412,31 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=NY126406A01244.SpecialWeatherStatement.126406A02C70NY.BGMSPSBGM.401f71442958ed64c66febaca6c80f97</id>
-<updated>2022-08-17T14:33:00-04:00</updated>
-<published>2022-08-17T14:33:00-04:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=NY126406A01A78.SpecialWeatherStatement.126406A03828NY.ALYSPSALY.273bb4ed084aaf4d47dcf1f6c5f03c03</id>
+<updated>2022-08-17T14:54:00-04:00</updated>
+<published>2022-08-17T14:54:00-04:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Special Weather Statement issued August 17 at 2:33PM EDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=NY126406A01244.SpecialWeatherStatement.126406A02C70NY.BGMSPSBGM.401f71442958ed64c66febaca6c80f97"/>
-<summary>...A strong thunderstorm will impact portions of south central Steuben County through 300 PM EDT... At 233 PM EDT, Doppler radar was tracking a strong thunderstorm over Woodhull, or 16 miles west of Corning, moving south at 5 mph. HAZARD...Wind gusts up to 40 mph and penny size hail. SOURCE...Radar indicated.</summary>
+<title>Special Weather Statement issued August 17 at 2:54PM EDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=NY126406A01A78.SpecialWeatherStatement.126406A03828NY.ALYSPSALY.273bb4ed084aaf4d47dcf1f6c5f03c03"/>
+<summary>...A strong thunderstorm will impact portions of east central Rensselaer and southwestern Bennington Counties through 330 PM EDT... At 254 PM EDT, Doppler radar was tracking a strong thunderstorm near Bennington, moving southwest at 10 mph. HAZARD...Winds in excess of 30 mph and pea size hail. SOURCE...Radar indicated.</summary>
 <cap:event>Special Weather Statement</cap:event>
-<cap:effective>2022-08-17T14:33:00-04:00</cap:effective>
-<cap:expires>2022-08-17T15:00:00-04:00</cap:expires>
+<cap:effective>2022-08-17T14:54:00-04:00</cap:effective>
+<cap:expires>2022-08-17T15:30:00-04:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
 <cap:category>Met</cap:category>
 <cap:urgency>Expected</cap:urgency>
 <cap:severity>Minor</cap:severity>
 <cap:certainty>Observed</cap:certainty>
-<cap:areaDesc>Steuben</cap:areaDesc>
-<cap:polygon>42.14,-77.43 42.13,-77.24 42,-77.26 42,-77.51 42.14,-77.43</cap:polygon>
+<cap:areaDesc>Eastern Rensselaer</cap:areaDesc>
+<cap:polygon>42.82,-73.14 42.74,-73.22 42.75,-73.27 42.68,-73.29 42.66,-73.31 42.81,-73.46 42.88,-73.2 42.82,-73.14</cap:polygon>
 <cap:geocode>
 <valueName>FIPS6</valueName>
-<value>036101</value>
+<value>036083</value>
 <valueName>UGC</valueName>
-<value>NYZ022</value>
+<value>NYZ054</value>
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
@@ -2410,95 +2444,31 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=NY126406A00F88.SpecialWeatherStatement.126406A02C70NY.BGMSPSBGM.8c7ccd46272e34c9a2a7b4160fe0f1d3</id>
-<updated>2022-08-17T14:26:00-04:00</updated>
-<published>2022-08-17T14:26:00-04:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=NY126406A01758.SpecialWeatherStatement.126406A05380NY.BUFSPSBUF.3a16c1a6837cbaae85da26ff161a3c51</id>
+<updated>2022-08-17T14:46:00-04:00</updated>
+<published>2022-08-17T14:46:00-04:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Special Weather Statement issued August 17 at 2:26PM EDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=NY126406A00F88.SpecialWeatherStatement.126406A02C70NY.BGMSPSBGM.8c7ccd46272e34c9a2a7b4160fe0f1d3"/>
-<summary>...A strong thunderstorm will impact portions of south central Yates and northeastern Steuben Counties through 300 PM EDT... At 225 PM EDT, Doppler radar was tracking a strong thunderstorm near Pulteney, or near Dundee. This storm was nearly stationary. HAZARD...Wind gusts up to 40 mph and penny size hail. SOURCE...Radar indicated.</summary>
+<title>Special Weather Statement issued August 17 at 2:46PM EDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=NY126406A01758.SpecialWeatherStatement.126406A05380NY.BUFSPSBUF.3a16c1a6837cbaae85da26ff161a3c51"/>
+<summary>...Strong thunderstorms will impact portions of Wyoming, Cattaraugus, Erie, Livingston, south central Niagara, Chautauqua, Allegany, Genesee, southern Monroe and western Ontario Counties through 400 PM EDT... At 242 PM EDT, Doppler radar was tracking clusters of strong thunderstorms across the area this afternoon. These storms are</summary>
 <cap:event>Special Weather Statement</cap:event>
-<cap:effective>2022-08-17T14:26:00-04:00</cap:effective>
-<cap:expires>2022-08-17T15:00:00-04:00</cap:expires>
+<cap:effective>2022-08-17T14:46:00-04:00</cap:effective>
+<cap:expires>2022-08-17T16:00:00-04:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
 <cap:category>Met</cap:category>
 <cap:urgency>Expected</cap:urgency>
 <cap:severity>Minor</cap:severity>
 <cap:certainty>Observed</cap:certainty>
-<cap:areaDesc>Yates</cap:areaDesc>
-<cap:polygon>42.55,-77.12 42.53,-77.04 42.49,-77.06 42.48,-77.1 42.41,-77.1 42.41,-77.11 42.45,-77.23 42.55,-77.12</cap:polygon>
+<cap:areaDesc>Allegany; Cattaraugus; Chautauqua; Genesee; Livingston; Monroe; Niagara; Northern Erie; Ontario; Southern Erie; Wyoming</cap:areaDesc>
+<cap:polygon>42,-79.7 42.57,-79.28 42.59,-79.19 42.72,-79.09 42.8,-78.92 42.92,-78.9 42.97,-78.98 43.07,-78.91 43.07,-77.4 42.58,-77.45 42.58,-77.66 42.53,-77.66 42.53,-77.72 42,-77.75 42,-79.7</cap:polygon>
 <cap:geocode>
 <valueName>FIPS6</valueName>
-<value>036123</value>
+<value>036003 036009 036013 036029 036037 036051 036055 036063 036069 036121</value>
 <valueName>UGC</valueName>
-<value>NYZ015</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value></value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=NY126406A0068C.SpecialWeatherStatement.126406A02C70NY.BUFSPSBUF.33a7f2df886a487b0fae1eda0179373c</id>
-<updated>2022-08-17T14:03:00-04:00</updated>
-<published>2022-08-17T14:03:00-04:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Special Weather Statement issued August 17 at 2:03PM EDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=NY126406A0068C.SpecialWeatherStatement.126406A02C70NY.BUFSPSBUF.33a7f2df886a487b0fae1eda0179373c"/>
-<summary>...A strong thunderstorm will impact portions of northeastern Erie and southwestern Genesee Counties through 300 PM EDT... At 203 PM EDT, Doppler radar was tracking a strong thunderstorm over Clarence, moving southwest at 10 mph. HAZARD...Winds in excess of 40 mph and half inch hail. SOURCE...Radar indicated.</summary>
-<cap:event>Special Weather Statement</cap:event>
-<cap:effective>2022-08-17T14:03:00-04:00</cap:effective>
-<cap:expires>2022-08-17T15:00:00-04:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Observed</cap:certainty>
-<cap:areaDesc>Genesee; Northern Erie; Southern Erie</cap:areaDesc>
-<cap:polygon>43.01,-78.61 42.92,-78.4 42.87,-78.44 42.87,-78.49 42.81,-78.49 42.68,-78.59 42.88,-78.87 43.01,-78.61</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>036029 036037</value>
-<valueName>UGC</valueName>
-<value>NYZ010 NYZ011 NYZ085</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value></value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=NY126406A005C4.SpecialWeatherStatement.126406A02C70NY.BUFSPSBUF.3cd341a5428ccdaa2f78ade0e1d77994</id>
-<updated>2022-08-17T14:01:00-04:00</updated>
-<published>2022-08-17T14:01:00-04:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Special Weather Statement issued August 17 at 2:01PM EDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=NY126406A005C4.SpecialWeatherStatement.126406A02C70NY.BUFSPSBUF.3cd341a5428ccdaa2f78ade0e1d77994"/>
-<summary>...A strong thunderstorm will impact portions of central Livingston and west central Ontario Counties through 300 PM EDT... At 201 PM EDT, Doppler radar was tracking a strong thunderstorm over Hemlock and moving southwest at 5 mph. HAZARD...Winds in excess of 40 mph and half inch hail. SOURCE...Radar indicated.</summary>
-<cap:event>Special Weather Statement</cap:event>
-<cap:effective>2022-08-17T14:01:00-04:00</cap:effective>
-<cap:expires>2022-08-17T15:00:00-04:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Observed</cap:certainty>
-<cap:areaDesc>Livingston; Ontario</cap:areaDesc>
-<cap:polygon>42.66,-77.96 42.68,-77.96 42.88,-77.67 42.81,-77.5 42.54,-77.69 42.66,-77.96</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>036051 036069</value>
-<valueName>UGC</valueName>
-<value>NYZ013 NYZ014</value>
+<value>NYZ001 NYZ003 NYZ010 NYZ011 NYZ012 NYZ013 NYZ014 NYZ019 NYZ020 NYZ021 NYZ085</value>
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
@@ -3084,35 +3054,100 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=PA126406A00880.SpecialWeatherStatement.126406A016F4PA.CTPSPSCTP.ae98ccc36daa3d73673675f9621fc82c</id>
-<updated>2022-08-17T14:08:00-04:00</updated>
-<published>2022-08-17T14:08:00-04:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=PA126406A019B0.SpecialWeatherStatement.126406A03828PA.CTPSPSCTP.0d4b13c8ccf5fc79447bacd53324fcd1</id>
+<updated>2022-08-17T14:52:00-04:00</updated>
+<published>2022-08-17T14:52:00-04:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Special Weather Statement issued August 17 at 2:08PM EDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=PA126406A00880.SpecialWeatherStatement.126406A016F4PA.CTPSPSCTP.ae98ccc36daa3d73673675f9621fc82c"/>
-<summary>...STRONG THUNDERSTORMS WILL IMPACT NORTHWESTERN LANCASTER AND SOUTHEASTERN LEBANON COUNTIES THROUGH 245 PM EDT... At 208 PM EDT, Doppler radar was tracking strong thunderstorms along a line extending from Cornwall to Lititz. Movement was south at 15 mph. HAZARD...Wind gusts up to 50 mph and penny size hail.</summary>
+<title>Special Weather Statement issued August 17 at 2:52PM EDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=PA126406A019B0.SpecialWeatherStatement.126406A03828PA.CTPSPSCTP.0d4b13c8ccf5fc79447bacd53324fcd1"/>
+<summary>...STRONG THUNDERSTORMS WILL IMPACT SOUTHEASTERN MCKEAN...CENTRAL POTTER AND WEST CENTRAL TIOGA COUNTIES THROUGH 330 PM EDT... At 252 PM EDT, Doppler radar was tracking strong thunderstorms along a line extending from 24 miles northeast of St. Marys to 33 miles south of Wellsville to 15 miles west of Wellsboro. These storms were nearly stationary.</summary>
 <cap:event>Special Weather Statement</cap:event>
-<cap:effective>2022-08-17T14:08:00-04:00</cap:effective>
-<cap:expires>2022-08-17T14:45:00-04:00</cap:expires>
+<cap:effective>2022-08-17T14:52:00-04:00</cap:effective>
+<cap:expires>2022-08-17T15:30:00-04:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
 <cap:category>Met</cap:category>
 <cap:urgency>Expected</cap:urgency>
 <cap:severity>Minor</cap:severity>
 <cap:certainty>Observed</cap:certainty>
-<cap:areaDesc>Lancaster; Lebanon</cap:areaDesc>
-<cap:polygon>40.09,-76.55 39.92,-76.12 40.28,-76.12 40.38,-76.46 40.09,-76.55</cap:polygon>
+<cap:areaDesc>McKean; Potter; Tioga</cap:areaDesc>
+<cap:polygon>41.73,-78.07 41.69,-77.86 41.88,-77.55 41.68,-77.51 41.52,-77.78 41.61,-78.2 41.62,-78.2 41.62,-78.23 41.64,-78.34 41.89,-78.34 41.9,-78.17 41.73,-78.07</cap:polygon>
 <cap:geocode>
 <valueName>FIPS6</valueName>
-<value>042071 042075</value>
+<value>042083 042105 042117</value>
 <valueName>UGC</valueName>
-<value>PAZ059 PAZ066</value>
+<value>PAZ005 PAZ006 PAZ037</value>
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value></value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=PA126406A01820.SpecialWeatherStatement.126406A0324CPA.CTPSPSCTP.ee8c93e5d9014327c717e9bc0a35e148</id>
+<updated>2022-08-17T14:48:00-04:00</updated>
+<published>2022-08-17T14:48:00-04:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Special Weather Statement issued August 17 at 2:48PM EDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=PA126406A01820.SpecialWeatherStatement.126406A0324CPA.CTPSPSCTP.ee8c93e5d9014327c717e9bc0a35e148"/>
+<summary>...A STRONG THUNDERSTORM WILL IMPACT NORTHWESTERN LANCASTER COUNTY THROUGH 315 PM EDT... At 247 PM EDT, Doppler radar was tracking a strong thunderstorm over Mount Joy, moving south at 5 mph. HAZARD...Wind gusts up to 55 mph and nickel size hail. SOURCE...Radar indicated.</summary>
+<cap:event>Special Weather Statement</cap:event>
+<cap:effective>2022-08-17T14:48:00-04:00</cap:effective>
+<cap:expires>2022-08-17T15:15:00-04:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Observed</cap:certainty>
+<cap:areaDesc>Lancaster</cap:areaDesc>
+<cap:polygon>40.01,-76.52 40.05,-76.54 40.04,-76.57 40.05,-76.59 40.2,-76.55 40.22,-76.49 40.22,-76.36 40,-76.31 40.01,-76.52</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>042071</value>
+<valueName>UGC</valueName>
+<value>PAZ066</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value></value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=PR126406A01820.FloodAdvisory.126406A03E04PR.JSJFLSSJU.14a03559d01381a9f1074d79e06080e2</id>
+<updated>2022-08-17T15:48:00-03:00</updated>
+<published>2022-08-17T15:48:00-03:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Flood Advisory issued August 17 at 3:48PM ADT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=PR126406A01820.FloodAdvisory.126406A03E04PR.JSJFLSSJU.14a03559d01381a9f1074d79e06080e2"/>
+<summary>...FLOOD ADVISORY IN EFFECT UNTIL 445 PM AST THIS AFTERNOON... * WHAT...Urban and small stream flooding caused by excessive rainfall is expected. * WHERE...Cayey. * WHEN...Until 445 PM AST. * IMPACTS...Minor flooding in low-lying and poor drainage areas.</summary>
+<cap:event>Flood Advisory</cap:event>
+<cap:effective>2022-08-17T15:48:00-03:00</cap:effective>
+<cap:expires>2022-08-17T16:45:00-03:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Cayey</cap:areaDesc>
+<cap:polygon>18.15,-66.07 18.11,-66.05 18.11,-66.1 18.09,-66.11 18.1,-66.13 18.06,-66.12 18.04,-66.14 18.05,-66.17 18.05,-66.2 18.07,-66.2 18.1,-66.23 18.14,-66.22 18.13,-66.17 18.15,-66.16 18.13,-66.13 18.14,-66.11 18.17,-66.09 18.15,-66.07</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>072035</value>
+<valueName>UGC</valueName>
+<value>PRC035</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.NEW.TJSJ.FA.Y.0191.220817T1848Z-220817T2045Z/
+/00000.N.ER.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -3378,95 +3413,63 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=TX126406A012A8.SevereThunderstormWarning.126406A02C70TX.SHVSVRSHV.cfad6be94178445e9433ba21c17bbf1e</id>
-<updated>2022-08-17T13:34:00-05:00</updated>
-<published>2022-08-17T13:34:00-05:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=TX126406A018E8.HeatAdvisory.126406A0C8B0TX.SHVNPWSHV.bfff81d049fc6ac532032510ae8c0d3b</id>
+<updated>2022-08-17T13:50:00-05:00</updated>
+<published>2022-08-17T13:50:00-05:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Severe Thunderstorm Warning issued August 17 at 1:34PM CDT until August 17 at 2:00PM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=TX126406A012A8.SevereThunderstormWarning.126406A02C70TX.SHVSVRSHV.cfad6be94178445e9433ba21c17bbf1e"/>
-<summary>The National Weather Service in Shreveport has issued a * Severe Thunderstorm Warning for... Central Harrison County in northeastern Texas... * Until 200 PM CDT. * At 134 PM CDT, a severe thunderstorm was located near Marshall, moving southeast at 15 mph.</summary>
-<cap:event>Severe Thunderstorm Warning</cap:event>
-<cap:effective>2022-08-17T13:34:00-05:00</cap:effective>
-<cap:expires>2022-08-17T14:00:00-05:00</cap:expires>
+<title>Heat Advisory issued August 17 at 1:50PM CDT until August 17 at 6:00PM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=TX126406A018E8.HeatAdvisory.126406A0C8B0TX.SHVNPWSHV.bfff81d049fc6ac532032510ae8c0d3b"/>
+<summary>...HEAT ADVISORY REMAINS IN EFFECT UNTIL 6 PM CDT THIS EVENING... * WHAT...Heat index values up to 108. * WHERE...Portions of north central and northwest Louisiana and east and northeast Texas. * WHEN...Until 6 PM CDT this evening. * IMPACTS...Hot temperatures and high humidity may cause heat</summary>
+<cap:event>Heat Advisory</cap:event>
+<cap:effective>2022-08-17T13:50:00-05:00</cap:effective>
+<cap:expires>2022-08-17T18:00:00-05:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
 <cap:category>Met</cap:category>
-<cap:urgency>Immediate</cap:urgency>
-<cap:severity>Severe</cap:severity>
-<cap:certainty>Observed</cap:certainty>
-<cap:areaDesc>Harrison</cap:areaDesc>
-<cap:polygon>32.6,-94.48 32.68,-94.29 32.47,-94.09 32.34,-94.37 32.6,-94.48</cap:polygon>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Angelina; Cherokee; Gregg; Harrison; Nacogdoches; Panola; Rusk; Sabine; San Augustine; Shelby; Smith; Wood</cap:areaDesc>
+<cap:polygon></cap:polygon>
 <cap:geocode>
 <valueName>FIPS6</valueName>
-<value>048203</value>
+<value>048005 048073 048183 048203 048347 048365 048401 048403 048405 048419 048423 048499</value>
 <valueName>UGC</valueName>
-<value>TXC203</value>
+<value>TXZ124 TXZ136 TXZ137 TXZ138 TXZ149 TXZ150 TXZ151 TXZ152 TXZ153 TXZ165 TXZ166 TXZ167</value>
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
-<value>/O.NEW.KSHV.SV.W.0200.220817T1834Z-220817T1900Z/</value>
+<value>/O.CON.KSHV.HT.Y.0027.000000T0000Z-220817T2300Z/</value>
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=TX126406A0117C.SpecialWeatherStatement.126406A02C70TX.SHVSPSSHV.68153d8885278bc5ac62f05a5dae1f99</id>
-<updated>2022-08-17T13:31:00-05:00</updated>
-<published>2022-08-17T13:31:00-05:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=TX126406A01820.SpecialWeatherStatement.126406A0324CTX.SHVSPSSHV.8e6b65e0957a0635b75d52369b97e55e</id>
+<updated>2022-08-17T13:48:00-05:00</updated>
+<published>2022-08-17T13:48:00-05:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Special Weather Statement issued August 17 at 1:31PM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=TX126406A0117C.SpecialWeatherStatement.126406A02C70TX.SHVSPSSHV.68153d8885278bc5ac62f05a5dae1f99"/>
-<summary>...Strong thunderstorms will impact portions of southwestern Caddo Parish, southeastern Harrison and northeastern Panola Counties through 200 PM CDT... At 130 PM CDT, Doppler radar was tracking several strong thunderstorms around Deberry, or 12 miles northeast of Carthage, moving southeast at 15 mph.</summary>
+<title>Special Weather Statement issued August 17 at 1:48PM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=TX126406A01820.SpecialWeatherStatement.126406A0324CTX.SHVSPSSHV.8e6b65e0957a0635b75d52369b97e55e"/>
+<summary>...Strong thunderstorms will impact portions of central Smith, northwestern Rusk, southern Wood, southwestern Upshur and Gregg Counties through 215 PM CDT... At 147 PM CDT, Doppler radar was tracking strong thunderstorms extending from near Mineola to near Kilgore. Movement was southeast at 20 mph.</summary>
 <cap:event>Special Weather Statement</cap:event>
-<cap:effective>2022-08-17T13:31:00-05:00</cap:effective>
-<cap:expires>2022-08-17T14:00:00-05:00</cap:expires>
+<cap:effective>2022-08-17T13:48:00-05:00</cap:effective>
+<cap:expires>2022-08-17T14:15:00-05:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
 <cap:category>Met</cap:category>
 <cap:urgency>Expected</cap:urgency>
 <cap:severity>Minor</cap:severity>
 <cap:certainty>Observed</cap:certainty>
-<cap:areaDesc>Harrison; Panola</cap:areaDesc>
-<cap:polygon>32.51,-94.25 32.36,-93.82 32.12,-94.17 32.39,-94.48 32.39,-94.49 32.4,-94.51 32.51,-94.25</cap:polygon>
+<cap:areaDesc>Gregg; Rusk; Smith; Upshur; Wood</cap:areaDesc>
+<cap:polygon>32.79,-95.62 32.52,-94.7 32.44,-94.7 32.33,-94.75 32.3,-95.12 32.56,-95.54 32.79,-95.62</cap:polygon>
 <cap:geocode>
 <valueName>FIPS6</valueName>
-<value>048203 048365</value>
+<value>048183 048401 048423 048459 048499</value>
 <valueName>UGC</valueName>
-<value>TXZ138 TXZ151</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value></value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=TX126406A00BA0.SpecialWeatherStatement.126406A02C70TX.SHVSPSSHV.0d80f87eff64d99b68193594f96d180c</id>
-<updated>2022-08-17T13:16:00-05:00</updated>
-<published>2022-08-17T13:16:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Special Weather Statement issued August 17 at 1:16PM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=TX126406A00BA0.SpecialWeatherStatement.126406A02C70TX.SHVSPSSHV.0d80f87eff64d99b68193594f96d180c"/>
-<summary>...A strong thunderstorm will impact portions of west central Harrison, southeastern Upshur and central Gregg Counties through 200 PM CDT... At 116 PM CDT, Doppler radar was tracking a strong thunderstorm near Diana, or 7 miles north of Longview, moving southeast at 10 mph. HAZARD...Winds in excess of 40 mph and nickel size hail.</summary>
-<cap:event>Special Weather Statement</cap:event>
-<cap:effective>2022-08-17T13:16:00-05:00</cap:effective>
-<cap:expires>2022-08-17T14:00:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Observed</cap:certainty>
-<cap:areaDesc>Gregg; Upshur</cap:areaDesc>
-<cap:polygon>32.76,-94.74 32.54,-94.44 32.37,-94.68 32.37,-94.75 32.63,-94.9 32.76,-94.74</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>048183 048459</value>
-<valueName>UGC</valueName>
-<value>TXZ125 TXZ137</value>
+<value>TXZ124 TXZ125 TXZ136 TXZ137 TXZ150</value>
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
@@ -3669,38 +3672,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=TX1264069E8D34.HeatAdvisory.126406A0C8B0TX.SHVNPWSHV.89bcd4f9105923ed1e75e9f5b60fc550</id>
-<updated>2022-08-17T03:37:00-05:00</updated>
-<published>2022-08-17T03:37:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Heat Advisory issued August 17 at 3:37AM CDT until August 17 at 6:00PM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=TX1264069E8D34.HeatAdvisory.126406A0C8B0TX.SHVNPWSHV.89bcd4f9105923ed1e75e9f5b60fc550"/>
-<summary>...HEAT ADVISORY IN EFFECT UNTIL 6 PM CDT THIS EVENING... * WHAT...Heat index values up to 108. * WHERE...Portions of north central and northwest Louisiana and east and northeast Texas. * WHEN...Until 6 PM CDT this evening. * IMPACTS...Hot temperatures and high humidity may cause heat</summary>
-<cap:event>Heat Advisory</cap:event>
-<cap:effective>2022-08-17T03:37:00-05:00</cap:effective>
-<cap:expires>2022-08-17T18:00:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Angelina; Cherokee; Gregg; Harrison; Marion; Nacogdoches; Panola; Rusk; Sabine; San Augustine; Shelby; Smith; Upshur; Wood</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>048005 048073 048183 048203 048315 048347 048365 048401 048403 048405 048419 048423 048459 048499</value>
-<valueName>UGC</valueName>
-<value>TXZ124 TXZ125 TXZ126 TXZ136 TXZ137 TXZ138 TXZ149 TXZ150 TXZ151 TXZ152 TXZ153 TXZ165 TXZ166 TXZ167</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.NEW.KSHV.HT.Y.0027.220817T0837Z-220817T2300Z/</value>
-</cap:parameter>
-</entry>
-<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=TX1264069E8B40.SpecialWeatherStatement.126406AC8880TX.CRPSPSCRP.8cc2a79a410eabdc45e0eea363b7b970</id>
 <updated>2022-08-17T03:32:00-05:00</updated>
 <published>2022-08-17T03:32:00-05:00</published>
@@ -3733,17 +3704,17 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=VA1264069FBD1C.BeachHazardsStatement.126406AC8880VA.AKQCFWAKQ.68c5e6c6166d5c964b7e36689392c4c4</id>
-<updated>2022-08-17T12:15:00-04:00</updated>
-<published>2022-08-17T12:15:00-04:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=VA126406A01884.BeachHazardsStatement.126406AC8880VA.AKQCFWAKQ.68c5e6c6166d5c964b7e36689392c4c4</id>
+<updated>2022-08-17T14:49:00-04:00</updated>
+<published>2022-08-17T14:49:00-04:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Beach Hazards Statement issued August 17 at 12:15PM EDT until August 17 at 8:00PM EDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=VA1264069FBD1C.BeachHazardsStatement.126406AC8880VA.AKQCFWAKQ.68c5e6c6166d5c964b7e36689392c4c4"/>
+<title>Beach Hazards Statement issued August 17 at 2:49PM EDT until August 17 at 8:00PM EDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=VA126406A01884.BeachHazardsStatement.126406AC8880VA.AKQCFWAKQ.68c5e6c6166d5c964b7e36689392c4c4"/>
 <summary>...BEACH HAZARDS STATEMENT REMAINS IN EFFECT UNTIL 8 PM EDT THIS EVENING... * WHAT...High risk of rip currents. * WHERE...In Maryland, the Atlantic facing beaches of Worchester County including Ocean City and Assateague. In North Carolina, the Atlantic facing beaches of the Northern Outer Banks. In</summary>
 <cap:event>Beach Hazards Statement</cap:event>
-<cap:effective>2022-08-17T12:15:00-04:00</cap:effective>
+<cap:effective>2022-08-17T14:49:00-04:00</cap:effective>
 <cap:expires>2022-08-17T20:00:00-04:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
@@ -3762,6 +3733,38 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value>/O.CON.KAKQ.BH.S.0004.000000T0000Z-220818T0000Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=VT126406A01A78.SpecialWeatherStatement.126406A03828VT.ALYSPSALY.35a497405fb35e7f79cb5a34fef214f1</id>
+<updated>2022-08-17T14:54:00-04:00</updated>
+<published>2022-08-17T14:54:00-04:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Special Weather Statement issued August 17 at 2:54PM EDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=VT126406A01A78.SpecialWeatherStatement.126406A03828VT.ALYSPSALY.35a497405fb35e7f79cb5a34fef214f1"/>
+<summary>...A strong thunderstorm will impact portions of east central Rensselaer and southwestern Bennington Counties through 330 PM EDT... At 254 PM EDT, Doppler radar was tracking a strong thunderstorm near Bennington, moving southwest at 10 mph. HAZARD...Winds in excess of 30 mph and pea size hail. SOURCE...Radar indicated.</summary>
+<cap:event>Special Weather Statement</cap:event>
+<cap:effective>2022-08-17T14:54:00-04:00</cap:effective>
+<cap:expires>2022-08-17T15:30:00-04:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Observed</cap:certainty>
+<cap:areaDesc>Bennington</cap:areaDesc>
+<cap:polygon>42.82,-73.14 42.74,-73.22 42.75,-73.27 42.68,-73.29 42.66,-73.31 42.81,-73.46 42.88,-73.2 42.82,-73.14</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>050003</value>
+<valueName>UGC</valueName>
+<value>VTZ013</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value></value>
 </cap:parameter>
 </entry>
 <entry>
@@ -4307,6 +4310,38 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value>/O.CON.KPQR.HT.Y.0004.220817T1900Z-220819T0500Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=WY126406A01884.SpecialWeatherStatement.126406A0324CWY.RIWSPSRIW.ba981c32ceed11df40f17fff49035fc0</id>
+<updated>2022-08-17T12:49:00-06:00</updated>
+<published>2022-08-17T12:49:00-06:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Special Weather Statement issued August 17 at 12:49PM MDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=WY126406A01884.SpecialWeatherStatement.126406A0324CWY.RIWSPSRIW.ba981c32ceed11df40f17fff49035fc0"/>
+<summary>...A strong thunderstorm will impact portions of northwestern Johnson County through 115 PM MDT... At 1249 PM MDT, Doppler radar was tracking a strong thunderstorm 9 miles southeast of Cloud Peak, or 14 miles west of Buffalo, moving south at 20 mph. HAZARD...Winds in excess of 40 mph and half inch hail.</summary>
+<cap:event>Special Weather Statement</cap:event>
+<cap:effective>2022-08-17T12:49:00-06:00</cap:effective>
+<cap:expires>2022-08-17T13:15:00-06:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Observed</cap:certainty>
+<cap:areaDesc>Bighorn Mountains Southeast; Bighorn Mountains West; Northeast Johnson County</cap:areaDesc>
+<cap:polygon>44.16,-106.72 44.16,-106.82 44.15,-106.82 44.11,-107.13 44.37,-107.1 44.4,-106.97 44.17,-106.67 44.16,-106.72</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>056003 056019 056025 056043</value>
+<valueName>UGC</valueName>
+<value>WYZ008 WYZ009 WYZ010</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value></value>
 </cap:parameter>
 </entry>
 </feed>
