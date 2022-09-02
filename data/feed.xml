@@ -16,11 +16,11 @@ xmlns = 'http://www.w3.org/2005/Atom'
 xmlns:cap = 'urn:oasis:names:tc:emergency:cap:1.1'
 xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 >
-<!-- http-date = Fri, 02 Sep 2022 14:26:00 GMT -->
+<!-- http-date = Fri, 02 Sep 2022 14:55:00 GMT -->
 <id>https://alerts.weather.gov/cap/us.php?x=0</id>
 <logo>http://alerts.weather.gov/images/xml_logo.gif</logo>
 <generator>NWS CAP Server</generator>
-<updated>2022-09-02T10:26:00-04:00</updated>
+<updated>2022-09-02T10:55:00-04:00</updated>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
@@ -88,6 +88,39 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value></value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=AR12640BB07ABC.FloodAdvisory.12640BB0EF24AR.LZKFLSLZK.ec11e2301478ff7b55fced37461fbd8b</id>
+<updated>2022-09-02T09:47:00-05:00</updated>
+<published>2022-09-02T09:47:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Flood Advisory issued September 02 at 9:47AM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=AR12640BB07ABC.FloodAdvisory.12640BB0EF24AR.LZKFLSLZK.ec11e2301478ff7b55fced37461fbd8b"/>
+<summary>The National Weather Service in Little Rock has issued a * Flood Advisory for... Northwestern Clark County in southwestern Arkansas... Northern Pike County in southwestern Arkansas... Southwestern Garland County in central Arkansas... West central Hot Spring County in southwestern Arkansas...</summary>
+<cap:event>Flood Advisory</cap:event>
+<cap:effective>2022-09-02T09:47:00-05:00</cap:effective>
+<cap:expires>2022-09-02T12:45:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Clark; Garland; Hot Spring; Montgomery; Pike</cap:areaDesc>
+<cap:polygon>34.48,-93.42 34.46,-93.26 34.37,-93.08 34.12,-93.34 34.16,-93.7 34.28,-93.89 34.4,-93.71 34.48,-93.42</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>005019 005051 005059 005097 005109</value>
+<valueName>UGC</valueName>
+<value>ARC019 ARC051 ARC059 ARC097 ARC109</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.NEW.KLZK.FA.Y.0002.220902T1447Z-220902T1745Z/
+/00000.N.ER.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -1277,38 +1310,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=FL12640BB07288.SpecialWeatherStatement.12640BB08F70FL.MLBSPSMLB.8b090445466a185aada510dce2138ac0</id>
-<updated>2022-09-02T10:26:00-04:00</updated>
-<published>2022-09-02T10:26:00-04:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Special Weather Statement issued September 02 at 10:26AM EDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=FL12640BB07288.SpecialWeatherStatement.12640BB08F70FL.MLBSPSMLB.8b090445466a185aada510dce2138ac0"/>
-<summary>...A strong thunderstorm will impact portions of north central Volusia County through 1100 AM EDT... At 1025 AM EDT, Doppler radar was tracking a strong thunderstorm over Ormond-By-the-Sea, moving north at 5 mph. HAZARD...Winds in excess of 40 mph. SOURCE...Radar indicated.</summary>
-<cap:event>Special Weather Statement</cap:event>
-<cap:effective>2022-09-02T10:26:00-04:00</cap:effective>
-<cap:expires>2022-09-02T11:00:00-04:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Observed</cap:certainty>
-<cap:areaDesc>Coastal Volusia</cap:areaDesc>
-<cap:polygon>29.43,-81.07 29.25,-80.98 29.22,-81.11 29.3,-81.15 29.36,-81.15 29.41,-81.16 29.42,-81.14 29.43,-81.11 29.42,-81.11 29.43,-81.07</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>012127</value>
-<valueName>UGC</valueName>
-<value>FLZ141</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value></value>
-</cap:parameter>
-</entry>
-<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=FL12640BB02F58.FloodWarning.12640BDC0C40FL.JAXFLSJAX.b40c499f53424d863d77f7ad9648a943</id>
 <updated>2022-09-02T08:54:00-04:00</updated>
 <published>2022-09-02T08:54:00-04:00</published>
@@ -1986,51 +1987,150 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=MS12640BAE7780.FloodWarning.12640BBEFBA0MS.JANFLSJAN.efa9f58852066c5a1d41bad17c5db74e</id>
-<updated>2022-09-01T20:28:00-05:00</updated>
-<published>2022-09-01T20:28:00-05:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=MO12640BB07990.FloodWatch.12640BBE4B10MO.SGFFFASGF.9966247f113d647d0a8d3ef1303fe260</id>
+<updated>2022-09-02T09:44:00-05:00</updated>
+<published>2022-09-02T09:44:00-05:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Flood Warning issued September 01 at 8:28PM CDT until September 03 at 4:52AM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MS12640BAE7780.FloodWarning.12640BBEFBA0MS.JANFLSJAN.efa9f58852066c5a1d41bad17c5db74e"/>
-<summary>...The Flood Warning is extended for the following rivers in Mississippi... Big Black River Near Bovina affecting Warren and Hinds Counties. For the Big Black/Homochitto...including West, Bentonia, Bovina, Rosetta...Minor flooding is forecast. ...FLOOD WARNING NOW IN EFFECT UNTIL EARLY SATURDAY MORNING...</summary>
+<title>Flood Watch issued September 02 at 9:44AM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MO12640BB07990.FloodWatch.12640BBE4B10MO.SGFFFASGF.9966247f113d647d0a8d3ef1303fe260"/>
+<summary>...FLOOD WATCH IN EFFECT THROUGH THIS EVENING... * WHAT...Flash flooding caused by excessive rainfall is possible. * WHERE...A portion of southwest Missouri, including the following counties, Barry, Christian, Douglas, Ozark, Stone and Taney. * WHEN...Through this evening. * IMPACTS...Excessive runoff may result in flooding of rivers,</summary>
+<cap:event>Flood Watch</cap:event>
+<cap:effective>2022-09-02T09:44:00-05:00</cap:effective>
+<cap:expires>2022-09-03T00:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Future</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Possible</cap:certainty>
+<cap:areaDesc>Barry; Christian; Douglas; Ozark; Stone; Taney</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>029009 029043 029067 029153 029209 029213</value>
+<valueName>UGC</valueName>
+<value>MOZ095 MOZ096 MOZ102 MOZ103 MOZ104 MOZ105</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.NEW.KSGF.FA.A.0014.220902T1444Z-220903T0500Z/
+/00000.0.ER.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=MS12640BB07800.FloodWarning.12640BBDE774MS.JANFLSJAN.e0e582262d73ea2cf1f908fa8587afa8</id>
+<updated>2022-09-02T09:40:00-05:00</updated>
+<published>2022-09-02T09:40:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Flood Warning issued September 02 at 9:40AM CDT until further notice by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MS12640BB07800.FloodWarning.12640BBDE774MS.JANFLSJAN.e0e582262d73ea2cf1f908fa8587afa8"/>
+<summary>...The Flood Warning continues for the following rivers in Mississippi... Pearl River Near Monticello affecting Lawrence County. Pearl River Near Rockport affecting Copiah and Simpson Counties. Pearl River Near Columbia affecting Marion County. For the Lower Pearl River ...including D`lo, Rockport, Monticello,</summary>
 <cap:event>Flood Warning</cap:event>
-<cap:effective>2022-09-01T20:28:00-05:00</cap:effective>
-<cap:expires>2022-09-03T04:52:00-05:00</cap:expires>
+<cap:effective>2022-09-02T09:40:00-05:00</cap:effective>
+<cap:expires>2022-09-02T21:45:00-05:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
 <cap:category>Met</cap:category>
 <cap:urgency>Expected</cap:urgency>
 <cap:severity>Moderate</cap:severity>
 <cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Hinds; Warren</cap:areaDesc>
-<cap:polygon>32.17,-90.93 32.24,-90.78 32.56,-90.64 32.45,-90.52 32.18,-90.65 32.04,-91.02 32.17,-90.93</cap:polygon>
+<cap:areaDesc>Marion</cap:areaDesc>
+<cap:polygon>31,-89.79 31.21,-89.92 31.4,-90.08 31.4,-89.92 31.24,-89.81 31,-89.69 31,-89.79</cap:polygon>
 <cap:geocode>
 <valueName>FIPS6</valueName>
-<value>028049 028149</value>
+<value>028091</value>
 <valueName>UGC</valueName>
-<value>MSC049 MSC149</value>
+<value>MSC091</value>
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
-<value>/O.EXT.KJAN.FL.W.0081.000000T0000Z-220903T0952Z/
-/BOVM6.1.ER.220824T0040Z.220830T0415Z.220902T1552Z.NO/</value>
+<value>/O.CON.KJAN.FL.W.0092.000000T0000Z-000000T0000Z/
+/CLMM6.1.ER.220828T1800Z.220903T0000Z.000000T0000Z.NO/</value>
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=MS12640BAE73FC.FloodWarning.12640BBDD5E0MS.MOBFLSMOB.d2340a898fb3bb8a2c04e57c88a1e27d</id>
-<updated>2022-09-01T20:19:00-05:00</updated>
-<published>2022-09-01T20:19:00-05:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=MS12640BB07800.FloodWarning.12640BEBFAC4MS.JANFLSJAN.4b6c4da2597cd997d9ea19a5b3496fc1</id>
+<updated>2022-09-02T09:40:00-05:00</updated>
+<published>2022-09-02T09:40:00-05:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Flood Warning issued September 01 at 8:19PM CDT until September 02 at 9:00PM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MS12640BAE73FC.FloodWarning.12640BBDD5E0MS.MOBFLSMOB.d2340a898fb3bb8a2c04e57c88a1e27d"/>
-<summary>...The Flood Warning continues for the following rivers in Mississippi... Pascagoula At Merrill affecting George, Jackson and Greene Counties. For the Pascagoula River...including Merrill...Minor flooding is forecast.</summary>
+<title>Flood Warning issued September 02 at 9:40AM CDT until September 05 at 11:41PM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MS12640BB07800.FloodWarning.12640BEBFAC4MS.JANFLSJAN.4b6c4da2597cd997d9ea19a5b3496fc1"/>
+<summary>...The Flood Warning continues for the following rivers in Mississippi... Pearl River Near Monticello affecting Lawrence County. Pearl River Near Rockport affecting Copiah and Simpson Counties. Pearl River Near Columbia affecting Marion County. For the Lower Pearl River ...including D`lo, Rockport, Monticello,</summary>
 <cap:event>Flood Warning</cap:event>
-<cap:effective>2022-09-01T20:19:00-05:00</cap:effective>
-<cap:expires>2022-09-02T21:00:00-05:00</cap:expires>
+<cap:effective>2022-09-02T09:40:00-05:00</cap:effective>
+<cap:expires>2022-09-05T23:41:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Copiah; Simpson</cap:areaDesc>
+<cap:polygon>31.68,-90.19 31.78,-90.19 31.93,-90.25 31.98,-90.12 31.82,-90.05 31.69,-90.05 31.68,-90.19</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>028029 028127</value>
+<valueName>UGC</valueName>
+<value>MSC029 MSC127</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.EXT.KJAN.FL.W.0084.000000T0000Z-220906T0441Z/
+/ROCM6.1.ER.220824T2046Z.220831T1845Z.220905T1040Z.NO/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=MS12640BB07800.FloodWarning.12640BFB1784MS.JANFLSJAN.6607d1e0520ecba4fec47810dc92d531</id>
+<updated>2022-09-02T09:40:00-05:00</updated>
+<published>2022-09-02T09:40:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Flood Warning issued September 02 at 9:40AM CDT until September 06 at 10:45PM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MS12640BB07800.FloodWarning.12640BFB1784MS.JANFLSJAN.6607d1e0520ecba4fec47810dc92d531"/>
+<summary>...The Flood Warning continues for the following rivers in Mississippi... Pearl River Near Monticello affecting Lawrence County. Pearl River Near Rockport affecting Copiah and Simpson Counties. Pearl River Near Columbia affecting Marion County. For the Lower Pearl River ...including D`lo, Rockport, Monticello,</summary>
+<cap:event>Flood Warning</cap:event>
+<cap:effective>2022-09-02T09:40:00-05:00</cap:effective>
+<cap:expires>2022-09-06T22:45:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Lawrence</cap:areaDesc>
+<cap:polygon>31.4,-90.08 31.55,-90.17 31.68,-90.19 31.69,-90.05 31.55,-90.02 31.4,-89.92 31.4,-90.08</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>028077</value>
+<valueName>UGC</valueName>
+<value>MSC077</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.EXT.KJAN.FL.W.0085.000000T0000Z-220907T0345Z/
+/MTCM6.2.ER.220825T1005Z.220901T1315Z.220906T0945Z.NO/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=MS12640BB0779C.FloodWarning.12640BBD87C0MS.MOBFLSMOB.d2340a898fb3bb8a2c04e57c88a1e27d</id>
+<updated>2022-09-02T09:39:00-05:00</updated>
+<published>2022-09-02T09:39:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Flood Warning issued September 02 at 9:39AM CDT until September 02 at 7:00PM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MS12640BB0779C.FloodWarning.12640BBD87C0MS.MOBFLSMOB.d2340a898fb3bb8a2c04e57c88a1e27d"/>
+<summary>...The Flood Warning continues for the following river in Mississippi... Pascagoula At Merrill affecting Jackson, Greene and George Counties. For the Pascagoula River...including Merrill...Minor flooding is forecast.</summary>
+<cap:event>Flood Warning</cap:event>
+<cap:effective>2022-09-02T09:39:00-05:00</cap:effective>
+<cap:expires>2022-09-02T19:00:00-05:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
 <cap:category>Met</cap:category>
@@ -2047,23 +2147,23 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
-<value>/O.CON.KMOB.FL.W.0052.000000T0000Z-220903T0200Z/
-/MRRM6.1.ER.220827T0922Z.220830T2330Z.220902T2000Z.NO/</value>
+<value>/O.EXT.KMOB.FL.W.0052.000000T0000Z-220903T0000Z/
+/MRRM6.1.ER.220827T0922Z.220830T2330Z.220902T1800Z.NO/</value>
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=MS12640BAE72D0.FloodWarning.12640BCCF8E0MS.MOBFLSMOB.a579c81b03417bf871834e7efabac3ec</id>
-<updated>2022-09-01T20:16:00-05:00</updated>
-<published>2022-09-01T20:16:00-05:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=MS12640BB076D4.FloodWarning.12640BCF6210MS.MOBFLSMOB.a579c81b03417bf871834e7efabac3ec</id>
+<updated>2022-09-02T09:37:00-05:00</updated>
+<published>2022-09-02T09:37:00-05:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Flood Warning issued September 01 at 8:16PM CDT until September 03 at 8:20PM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MS12640BAE72D0.FloodWarning.12640BCCF8E0MS.MOBFLSMOB.a579c81b03417bf871834e7efabac3ec"/>
-<summary>...The Flood Warning is extended for the following rivers in Mississippi... Chickasawhay At Leakesville affecting George, Greene and Wayne Counties. For the Chickasawhay River...including Waynesboro, Leakesville... Minor flooding is forecast.</summary>
+<title>Flood Warning issued September 02 at 9:37AM CDT until September 04 at 12:00PM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MS12640BB076D4.FloodWarning.12640BCF6210MS.MOBFLSMOB.a579c81b03417bf871834e7efabac3ec"/>
+<summary>...The Flood Warning continues for the following river in Mississippi... Chickasawhay At Leakesville affecting Greene, George and Wayne Counties. For the Chickasawhay River...including Leakesville...Minor flooding is forecast.</summary>
 <cap:event>Flood Warning</cap:event>
-<cap:effective>2022-09-01T20:16:00-05:00</cap:effective>
-<cap:expires>2022-09-03T20:20:00-05:00</cap:expires>
+<cap:effective>2022-09-02T09:37:00-05:00</cap:effective>
+<cap:expires>2022-09-04T12:00:00-05:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
 <cap:category>Met</cap:category>
@@ -2080,8 +2180,8 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
-<value>/O.EXT.KMOB.FL.W.0051.000000T0000Z-220904T0120Z/
-/LEKM6.1.ER.220826T0031Z.220901T0015Z.220903T1920Z.NO/</value>
+<value>/O.EXT.KMOB.FL.W.0051.000000T0000Z-220904T1700Z/
+/LEKM6.1.ER.220826T0031Z.220901T0015Z.220904T1100Z.NO/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -2850,6 +2950,38 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <value>041015 041029 041033</value>
 <valueName>UGC</valueName>
 <value>ORC015 ORC029 ORC033</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value></value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=SC12640BB07DDC.SpecialWeatherStatement.12640BB09B28SC.CHSSPSCHS.5ecc0c544838773745da1afba46face5</id>
+<updated>2022-09-02T10:55:00-04:00</updated>
+<published>2022-09-02T10:55:00-04:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Special Weather Statement issued September 02 at 10:55AM EDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=SC12640BB07DDC.SpecialWeatherStatement.12640BB09B28SC.CHSSPSCHS.5ecc0c544838773745da1afba46face5"/>
+<summary>...STRONG THUNDERSTORMS WILL IMPACT PORTIONS OF BEAUFORT COUNTY... At 1054 AM EDT, National Weather Service doppler radar indicated a strong thunderstorm near Forest Beach, or near Hilton Head Island, moving northwest at 5 mph. This storm has the capability of producing waterspouts that could briefly move onshore. HAZARD...strong winds 45 to 55 mph.</summary>
+<cap:event>Special Weather Statement</cap:event>
+<cap:effective>2022-09-02T10:55:00-04:00</cap:effective>
+<cap:expires>2022-09-02T11:30:00-04:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Observed</cap:certainty>
+<cap:areaDesc>Beaufort; Coastal Jasper</cap:areaDesc>
+<cap:polygon>32.14,-80.95 32.29,-80.73 32.19,-80.65 32.12,-80.72 32.06,-80.84 32.14,-80.95</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>045013 045053</value>
+<valueName>UGC</valueName>
+<value>SCZ048 SCZ051</value>
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
