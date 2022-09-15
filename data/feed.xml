@@ -16,16 +16,48 @@ xmlns = 'http://www.w3.org/2005/Atom'
 xmlns:cap = 'urn:oasis:names:tc:emergency:cap:1.1'
 xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 >
-<!-- http-date = Thu, 15 Sep 2022 13:15:00 GMT -->
+<!-- http-date = Thu, 15 Sep 2022 13:31:00 GMT -->
 <id>https://alerts.weather.gov/cap/us.php?x=0</id>
 <logo>http://alerts.weather.gov/images/xml_logo.gif</logo>
 <generator>NWS CAP Server</generator>
-<updated>2022-09-15T09:15:00-04:00</updated>
+<updated>2022-09-15T09:31:00-04:00</updated>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
 <title>Current Watches, Warnings and Advisories for the United States Issued by the National Weather Service</title>
 <link href="https://alerts.weather.gov/cap/us.php?x=0"/>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=AK12640C76A534.CoastalFloodWatch.12640CA26980AK.AFCCFWALU.78552cd353b52461ad54f1f226d25ec9</id>
+<updated>2022-09-15T05:17:00-08:00</updated>
+<published>2022-09-15T05:17:00-08:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Coastal Flood Watch issued September 15 at 5:17AM AKDT until September 17 at 4:00PM AKDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=AK12640C76A534.CoastalFloodWatch.12640CA26980AK.AFCCFWALU.78552cd353b52461ad54f1f226d25ec9"/>
+<summary>...COASTAL FLOOD WATCH REMAINS IN EFFECT FROM FRIDAY AFTERNOON THROUGH SATURDAY AFTERNOON FOR THE KUSKOKWIM DELTA COAST... * LOCATION...The Kuskokwim Delta Coast, including Kuskokwim Bay. * COASTAL FLOODING...Water levels are expected to rise 4 to 7 feet above the normal highest tide line. * TIMING...From Friday afternoon through Saturday morning.</summary>
+<cap:event>Coastal Flood Watch</cap:event>
+<cap:effective>2022-09-15T05:17:00-08:00</cap:effective>
+<cap:expires>2022-09-17T16:00:00-08:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Future</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Possible</cap:certainty>
+<cap:areaDesc>Kuskokwim Delta</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>002050</value>
+<valueName>UGC</valueName>
+<value>AKZ155</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.EXT.PAFC.CF.A.0001.220917T0000Z-220918T0000Z/</value>
+</cap:parameter>
+</entry>
 <entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=AK12640C76A46C.HighWindWarning.12640C86A420AK.AFCNPWALU.5379b486f9c41772a98674e65cba1af5</id>
 <updated>2022-09-15T05:15:00-08:00</updated>
@@ -515,38 +547,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=AK12640C74AA2C.CoastalFloodWatch.12640C95E660AK.AFCCFWALU.78552cd353b52461ad54f1f226d25ec9</id>
-<updated>2022-09-14T16:19:00-08:00</updated>
-<published>2022-09-14T16:19:00-08:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Coastal Flood Watch issued September 14 at 4:19PM AKDT until September 17 at 10:00AM AKDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=AK12640C74AA2C.CoastalFloodWatch.12640C95E660AK.AFCCFWALU.78552cd353b52461ad54f1f226d25ec9"/>
-<summary>...COASTAL FLOOD WATCH IN EFFECT FROM FRIDAY AFTERNOON THROUGH SATURDAY MORNING FOR THE KUSKOKWIM DELTA COAST... The National Weather Service in Anchorage has issued a Coastal Flood Watch, which is in effect from Friday afternoon through Saturday morning. * LOCATION...The Kuskokwim Delta Coast, including Kuskokwim Bay.</summary>
-<cap:event>Coastal Flood Watch</cap:event>
-<cap:effective>2022-09-14T16:19:00-08:00</cap:effective>
-<cap:expires>2022-09-17T10:00:00-08:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Future</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Possible</cap:certainty>
-<cap:areaDesc>Kuskokwim Delta</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>002050</value>
-<valueName>UGC</valueName>
-<value>AKZ155</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.NEW.PAFC.CF.A.0001.220917T0000Z-220917T1800Z/</value>
-</cap:parameter>
-</entry>
-<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=CA12640C762CE4.WindAdvisory.12640C856BA0CA.LOXNPWLOX.9fdf5bf9582d2dc53eb0ef0f8518190e</id>
 <updated>2022-09-15T03:09:00-07:00</updated>
 <published>2022-09-15T03:09:00-07:00</published>
@@ -609,6 +609,171 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value></value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=FL12640C76AAAC.FloodWarning.12640C8492D4FL.TBWFLSTBW.319373658d142a023516c3712179a4c9</id>
+<updated>2022-09-15T09:31:00-04:00</updated>
+<published>2022-09-15T09:31:00-04:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Flood Warning issued September 15 at 9:31AM EDT until further notice by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=FL12640C76AAAC.FloodWarning.12640C8492D4FL.TBWFLSTBW.319373658d142a023516c3712179a4c9"/>
+<summary>...The Flood Warning is extended for the following rivers in Florida... Peace River At Arcadia at SR 70 affecting DeSoto County. .With recent heavy rainfall, area rivers are expected to reach minor flood stage in the coming days. For the Peace...including Bartow, Arcadia at SR 70...Minor flooding</summary>
+<cap:event>Flood Warning</cap:event>
+<cap:effective>2022-09-15T09:31:00-04:00</cap:effective>
+<cap:expires>2022-09-16T00:45:00-04:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>DeSoto</cap:areaDesc>
+<cap:polygon>27.35,-81.79 27.14,-81.89 27.04,-81.97 27.04,-82.02 27.14,-81.97 27.35,-81.86 27.35,-81.79</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>012027</value>
+<valueName>UGC</valueName>
+<value>FLC027</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.EXT.KTBW.FL.W.0006.220917T0300Z-000000T0000Z/
+/ARCF1.1.ER.220917T0300Z.220919T0600Z.000000T0000Z.NO/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=FL12640C76AA48.FloodWarning.12640C848CF8FL.TBWFLSTBW.cc351501976a0eba37296440084a10d0</id>
+<updated>2022-09-15T09:30:00-04:00</updated>
+<published>2022-09-15T09:30:00-04:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Flood Warning issued September 15 at 9:30AM EDT until further notice by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=FL12640C76AA48.FloodWarning.12640C848CF8FL.TBWFLSTBW.cc351501976a0eba37296440084a10d0"/>
+<summary>...The Flood Warning continues for the following rivers in Florida... Peace River At Bartow affecting Polk County. .With recent heavy rainfall, area rivers have reached minor flood stage. For the Peace...including Bartow, Arcadia at SR 70...Minor flooding is forecast.</summary>
+<cap:event>Flood Warning</cap:event>
+<cap:effective>2022-09-15T09:30:00-04:00</cap:effective>
+<cap:expires>2022-09-16T00:30:00-04:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Polk</cap:areaDesc>
+<cap:polygon>27.91,-81.78 27.62,-81.76 27.62,-81.84 27.91,-81.86 27.91,-81.78</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>012105</value>
+<valueName>UGC</valueName>
+<value>FLC105</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KTBW.FL.W.0004.000000T0000Z-000000T0000Z/
+/BARF1.1.ER.220915T0230Z.220917T0000Z.000000T0000Z.NO/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=FL12640C76AA48.FloodWarning.12640C848CF8FL.TBWFLSTBW.8cc6fa7fbb9aee2e546070bec189c0f2</id>
+<updated>2022-09-15T09:30:00-04:00</updated>
+<published>2022-09-15T09:30:00-04:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Flood Warning issued September 15 at 9:30AM EDT until further notice by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=FL12640C76AA48.FloodWarning.12640C848CF8FL.TBWFLSTBW.8cc6fa7fbb9aee2e546070bec189c0f2"/>
+<summary>...The Flood Warning continues for the following rivers in Florida... Myakka River At Myakka River State Park affecting Sarasota County. .With recent heavy rainfall, area rivers have reached minor flood stage. For the Myakka...including Myakka River State Park...Minor flooding is forecast.</summary>
+<cap:event>Flood Warning</cap:event>
+<cap:effective>2022-09-15T09:30:00-04:00</cap:effective>
+<cap:expires>2022-09-16T00:30:00-04:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Sarasota</cap:areaDesc>
+<cap:polygon>27.26,-82.26 27.15,-82.34 27.15,-82.38 27.31,-82.26 27.26,-82.26</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>012115</value>
+<valueName>UGC</valueName>
+<value>FLC115</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KTBW.FL.W.0005.000000T0000Z-000000T0000Z/
+/MKCF1.1.ER.220914T0745Z.220914T1215Z.000000T0000Z.NO/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=FL12640C76A9E4.FloodWarning.12640C848CF8FL.TBWFLSTBW.5c1dfd861c4af57e5755a40e41da5740</id>
+<updated>2022-09-15T09:29:00-04:00</updated>
+<published>2022-09-15T09:29:00-04:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Flood Warning issued September 15 at 9:29AM EDT until further notice by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=FL12640C76A9E4.FloodWarning.12640C848CF8FL.TBWFLSTBW.5c1dfd861c4af57e5755a40e41da5740"/>
+<summary>...The Flood Warning continues for the following rivers in Florida... Horse Creek Near Arcadia at SR 72 affecting DeSoto County. .With recent heavy rainfall, area rivers are expected to reach minor flood stage in the coming days. For the Horse Creek...including Arcadia at SR 72...Minor flooding is forecast.</summary>
+<cap:event>Flood Warning</cap:event>
+<cap:effective>2022-09-15T09:29:00-04:00</cap:effective>
+<cap:expires>2022-09-16T00:30:00-04:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>DeSoto</cap:areaDesc>
+<cap:polygon>27.26,-81.94 27.08,-81.98 27.08,-82.02 27.26,-82.01 27.26,-81.94</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>012027</value>
+<valueName>UGC</valueName>
+<value>FLC027</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KTBW.FL.W.0003.000000T0000Z-000000T0000Z/
+/ARHF1.1.ER.220905T2252Z.220906T1045Z.000000T0000Z.NO/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=FL12640C76A980.FloodWarning.12640C848CF8FL.TBWFLSTBW.eb2fd4bbe6ed20e940e1cb0b029c702b</id>
+<updated>2022-09-15T09:28:00-04:00</updated>
+<published>2022-09-15T09:28:00-04:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Flood Warning issued September 15 at 9:28AM EDT until further notice by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=FL12640C76A980.FloodWarning.12640C848CF8FL.TBWFLSTBW.eb2fd4bbe6ed20e940e1cb0b029c702b"/>
+<summary>...The Flood Warning continues for the following rivers in Florida... Cypress Creek At SR 54 Worthington Gardens affecting Pasco County. .With recent heavy rainfall, area rivers have reached minor flood stage. For the Cypress Creek...including SR 54 Worthington Gardens...Minor flooding is forecast.</summary>
+<cap:event>Flood Warning</cap:event>
+<cap:effective>2022-09-15T09:28:00-04:00</cap:effective>
+<cap:expires>2022-09-16T00:30:00-04:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Pasco</cap:areaDesc>
+<cap:polygon>28.19,-82.34 28.14,-82.34 28.14,-82.4 28.19,-82.4 28.19,-82.34</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>012101</value>
+<valueName>UGC</valueName>
+<value>FLC101</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KTBW.FL.W.0002.000000T0000Z-000000T0000Z/
+/WRGF1.1.ER.220906T0030Z.220916T1200Z.000000T0000Z.NO/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -839,171 +1004,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=FL12640C74DF4C.FloodWarning.12640C773AD0FL.TBWFLSTBW.5c1dfd861c4af57e5755a40e41da5740</id>
-<updated>2022-09-14T21:55:00-04:00</updated>
-<published>2022-09-14T21:55:00-04:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Flood Warning issued September 14 at 9:55PM EDT until further notice by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=FL12640C74DF4C.FloodWarning.12640C773AD0FL.TBWFLSTBW.5c1dfd861c4af57e5755a40e41da5740"/>
-<summary>...The Flood Warning is extended for the following rivers in Florida... Peace River At Arcadia at SR 70 affecting DeSoto County. ...The Flood Warning continues for the following rivers in Florida... Cypress Creek At SR 54 Worthington Gardens affecting Pasco County. Myakka River At Myakka River State Park affecting Sarasota County.</summary>
-<cap:event>Flood Warning</cap:event>
-<cap:effective>2022-09-14T21:55:00-04:00</cap:effective>
-<cap:expires>2022-09-15T13:00:00-04:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>DeSoto</cap:areaDesc>
-<cap:polygon>27.26,-81.94 27.08,-81.98 27.08,-82.02 27.26,-82.01 27.26,-81.94</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>012027</value>
-<valueName>UGC</valueName>
-<value>FLC027</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KTBW.FL.W.0003.000000T0000Z-000000T0000Z/
-/ARHF1.1.ER.220905T2252Z.220906T1045Z.000000T0000Z.NO/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=FL12640C74DF4C.FloodWarning.12640C773AD0FL.TBWFLSTBW.eb2fd4bbe6ed20e940e1cb0b029c702b</id>
-<updated>2022-09-14T21:55:00-04:00</updated>
-<published>2022-09-14T21:55:00-04:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Flood Warning issued September 14 at 9:55PM EDT until further notice by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=FL12640C74DF4C.FloodWarning.12640C773AD0FL.TBWFLSTBW.eb2fd4bbe6ed20e940e1cb0b029c702b"/>
-<summary>...The Flood Warning is extended for the following rivers in Florida... Peace River At Arcadia at SR 70 affecting DeSoto County. ...The Flood Warning continues for the following rivers in Florida... Cypress Creek At SR 54 Worthington Gardens affecting Pasco County. Myakka River At Myakka River State Park affecting Sarasota County.</summary>
-<cap:event>Flood Warning</cap:event>
-<cap:effective>2022-09-14T21:55:00-04:00</cap:effective>
-<cap:expires>2022-09-15T13:00:00-04:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Pasco</cap:areaDesc>
-<cap:polygon>28.19,-82.34 28.14,-82.34 28.14,-82.4 28.19,-82.4 28.19,-82.34</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>012101</value>
-<valueName>UGC</valueName>
-<value>FLC101</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KTBW.FL.W.0002.000000T0000Z-000000T0000Z/
-/WRGF1.1.ER.220906T0030Z.220916T0000Z.000000T0000Z.NO/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=FL12640C74DF4C.FloodWarning.12640C773AD0FL.TBWFLSTBW.cc351501976a0eba37296440084a10d0</id>
-<updated>2022-09-14T21:55:00-04:00</updated>
-<published>2022-09-14T21:55:00-04:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Flood Warning issued September 14 at 9:55PM EDT until further notice by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=FL12640C74DF4C.FloodWarning.12640C773AD0FL.TBWFLSTBW.cc351501976a0eba37296440084a10d0"/>
-<summary>...The Flood Warning is extended for the following rivers in Florida... Peace River At Arcadia at SR 70 affecting DeSoto County. ...The Flood Warning continues for the following rivers in Florida... Cypress Creek At SR 54 Worthington Gardens affecting Pasco County. Myakka River At Myakka River State Park affecting Sarasota County.</summary>
-<cap:event>Flood Warning</cap:event>
-<cap:effective>2022-09-14T21:55:00-04:00</cap:effective>
-<cap:expires>2022-09-15T13:00:00-04:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Polk</cap:areaDesc>
-<cap:polygon>27.91,-81.78 27.62,-81.76 27.62,-81.84 27.91,-81.86 27.91,-81.78</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>012105</value>
-<valueName>UGC</valueName>
-<value>FLC105</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KTBW.FL.W.0004.000000T0000Z-000000T0000Z/
-/BARF1.1.ER.220915T0600Z.220917T0000Z.000000T0000Z.NO/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=FL12640C74DF4C.FloodWarning.12640C773AD0FL.TBWFLSTBW.8cc6fa7fbb9aee2e546070bec189c0f2</id>
-<updated>2022-09-14T21:55:00-04:00</updated>
-<published>2022-09-14T21:55:00-04:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Flood Warning issued September 14 at 9:55PM EDT until further notice by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=FL12640C74DF4C.FloodWarning.12640C773AD0FL.TBWFLSTBW.8cc6fa7fbb9aee2e546070bec189c0f2"/>
-<summary>...The Flood Warning is extended for the following rivers in Florida... Peace River At Arcadia at SR 70 affecting DeSoto County. ...The Flood Warning continues for the following rivers in Florida... Cypress Creek At SR 54 Worthington Gardens affecting Pasco County. Myakka River At Myakka River State Park affecting Sarasota County.</summary>
-<cap:event>Flood Warning</cap:event>
-<cap:effective>2022-09-14T21:55:00-04:00</cap:effective>
-<cap:expires>2022-09-15T13:00:00-04:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Sarasota</cap:areaDesc>
-<cap:polygon>27.26,-82.26 27.15,-82.34 27.15,-82.38 27.31,-82.26 27.26,-82.26</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>012115</value>
-<valueName>UGC</valueName>
-<value>FLC115</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KTBW.FL.W.0005.000000T0000Z-000000T0000Z/
-/MKCF1.1.ER.220914T0745Z.220914T1215Z.000000T0000Z.NO/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=FL12640C74DF4C.FloodWarning.12640C773AD0FL.TBWFLSTBW.319373658d142a023516c3712179a4c9</id>
-<updated>2022-09-14T21:55:00-04:00</updated>
-<published>2022-09-14T21:55:00-04:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Flood Warning issued September 14 at 9:55PM EDT until further notice by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=FL12640C74DF4C.FloodWarning.12640C773AD0FL.TBWFLSTBW.319373658d142a023516c3712179a4c9"/>
-<summary>...The Flood Warning is extended for the following rivers in Florida... Peace River At Arcadia at SR 70 affecting DeSoto County. ...The Flood Warning continues for the following rivers in Florida... Cypress Creek At SR 54 Worthington Gardens affecting Pasco County. Myakka River At Myakka River State Park affecting Sarasota County.</summary>
-<cap:event>Flood Warning</cap:event>
-<cap:effective>2022-09-14T21:55:00-04:00</cap:effective>
-<cap:expires>2022-09-15T13:00:00-04:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>DeSoto</cap:areaDesc>
-<cap:polygon>27.35,-81.79 27.14,-81.89 27.04,-81.97 27.04,-82.02 27.14,-81.97 27.35,-81.86 27.35,-81.79</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>012027</value>
-<valueName>UGC</valueName>
-<value>FLC027</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.EXT.KTBW.FL.W.0006.220916T1800Z-000000T0000Z/
-/ARCF1.1.ER.220916T1800Z.220918T1800Z.000000T0000Z.NO/</value>
-</cap:parameter>
-</entry>
-<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=GA12640C759DEC.RipCurrentStatement.12640C854490GA.JAXCFWJAX.e1e3f72877c15566e960922ba4e48560</id>
 <updated>2022-09-15T02:43:00-04:00</updated>
 <published>2022-09-15T02:43:00-04:00</published>
@@ -1065,38 +1065,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value>/O.NEW.PGUM.SU.Y.0017.220915T0800Z-220916T2000Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=IA12640C76519C.SpecialWeatherStatement.12640C76AA48IA.DVNSPSDVN.e4077394b05e1276de9eed0618b020f1</id>
-<updated>2022-09-15T06:03:00-05:00</updated>
-<published>2022-09-15T06:03:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Special Weather Statement issued September 15 at 6:03AM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=IA12640C76519C.SpecialWeatherStatement.12640C76AA48IA.DVNSPSDVN.e4077394b05e1276de9eed0618b020f1"/>
-<summary>...Patchy Dense Fog Early This Morning... Patchy dense fog will be found through sunrise, especially along the Mississippi River and other valleys and low-lying areas. The fog will reduce visibility to a quarter mile or less, and visibilities could vary greatly over short distances. If traveling, be prepared for fog and sudden reductions in visibility.</summary>
-<cap:event>Special Weather Statement</cap:event>
-<cap:effective>2022-09-15T06:03:00-05:00</cap:effective>
-<cap:expires>2022-09-15T08:30:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Observed</cap:certainty>
-<cap:areaDesc>Clinton; Dubuque; Jackson</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>019045 019061 019097</value>
-<valueName>UGC</valueName>
-<value>IAZ042 IAZ054 IAZ066</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value></value>
 </cap:parameter>
 </entry>
 <entry>
@@ -1933,31 +1901,31 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=ND12640C7656B0.SpecialWeatherStatement.12640C76AA48ND.BISSPSBIS.9dd7f74e286a5b35982fa99f773eab23</id>
-<updated>2022-09-15T06:16:00-05:00</updated>
-<published>2022-09-15T06:16:00-05:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=ND12640C76A9E4.SpecialWeatherStatement.12640C7713C0ND.BISSPSBIS.1233c326ee57243c5a49a5c66864a91f</id>
+<updated>2022-09-15T08:29:00-05:00</updated>
+<published>2022-09-15T08:29:00-05:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Special Weather Statement issued September 15 at 6:16AM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=ND12640C7656B0.SpecialWeatherStatement.12640C76AA48ND.BISSPSBIS.9dd7f74e286a5b35982fa99f773eab23"/>
-<summary>...AREAS OF FOG ACROSS NORTHWEST NORTH DAKOTA THIS MORNING... Areas of fog will reduce visibility to one quarter mile or less across parts of northwest North Dakota this morning. This includes Highway 2 from Stanley to the Montana border, and Highway 85 from Grassy Butte to the Canadian border. Motorists should be prepared for rapidly changing conditions. Slow down, use low beam</summary>
+<title>Special Weather Statement issued September 15 at 8:29AM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=ND12640C76A9E4.SpecialWeatherStatement.12640C7713C0ND.BISSPSBIS.1233c326ee57243c5a49a5c66864a91f"/>
+<summary>...AREAS OF FOG IN WESTERN NORTH DAKOTA THIS MORNING... Areas of fog continue to reduce visibility to one quarter mile or less in much of western North Dakota this morning. This includes Highway 2 from Stanley to the Montana border, Interstate 94 from Dickinson to the Montana border, and Highway 85 from Belfield to the Canadian border. Motorists should be prepared for rapidly</summary>
 <cap:event>Special Weather Statement</cap:event>
-<cap:effective>2022-09-15T06:16:00-05:00</cap:effective>
-<cap:expires>2022-09-15T08:30:00-05:00</cap:expires>
+<cap:effective>2022-09-15T08:29:00-05:00</cap:effective>
+<cap:expires>2022-09-15T11:00:00-05:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
 <cap:category>Met</cap:category>
 <cap:urgency>Expected</cap:urgency>
 <cap:severity>Minor</cap:severity>
 <cap:certainty>Observed</cap:certainty>
-<cap:areaDesc>Billings; Burke; Divide; Golden Valley; McKenzie; Mountrail; Williams</cap:areaDesc>
+<cap:areaDesc>Billings; Burke; Divide; Dunn; Golden Valley; McKenzie; Mountrail; Stark; Williams</cap:areaDesc>
 <cap:polygon></cap:polygon>
 <cap:geocode>
 <valueName>FIPS6</valueName>
-<value>038007 038013 038023 038033 038053 038061 038105</value>
+<value>038007 038013 038023 038025 038033 038053 038061 038089 038105</value>
 <valueName>UGC</valueName>
-<value>NDZ001 NDZ002 NDZ009 NDZ010 NDZ017 NDZ031 NDZ032</value>
+<value>NDZ001 NDZ002 NDZ009 NDZ010 NDZ017 NDZ018 NDZ031 NDZ032 NDZ033</value>
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
@@ -2354,6 +2322,38 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=TX12640C76A660.SpecialWeatherStatement.12640C773AD0TX.CRPSPSCRP.04a8be994e75cc59b18f2d1c7aba79b4</id>
+<updated>2022-09-15T08:20:00-05:00</updated>
+<published>2022-09-15T08:20:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Special Weather Statement issued September 15 at 8:20AM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=TX12640C76A660.SpecialWeatherStatement.12640C773AD0TX.CRPSPSCRP.04a8be994e75cc59b18f2d1c7aba79b4"/>
+<summary>...TROPICAL FUNNEL CLOUDS POSSIBLE TODAY... The combination of light winds and abundant tropical moisture will make the atmosphere favorable for the development of weak tropical funnels today. Most of these funnel clouds will be short lived and usually do not touch the ground. However, you should be prepared to seek shelter in the event a funnel does reach the</summary>
+<cap:event>Special Weather Statement</cap:event>
+<cap:effective>2022-09-15T08:20:00-05:00</cap:effective>
+<cap:expires>2022-09-15T12:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Observed</cap:certainty>
+<cap:areaDesc>Aransas Islands; Calhoun Islands; Coastal Aransas; Coastal Calhoun; Coastal Kleberg; Coastal Nueces; Coastal Refugio; Coastal San Patricio; Inland Calhoun; Inland Kleberg; Inland Nueces; Inland Refugio; Inland San Patricio; Kleberg Islands; Nueces Islands; Victoria</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>048007 048057 048273 048355 048391 048409 048469</value>
+<valueName>UGC</valueName>
+<value>TXZ234 TXZ242 TXZ243 TXZ244 TXZ245 TXZ246 TXZ247 TXZ342 TXZ343 TXZ344 TXZ345 TXZ346 TXZ347 TXZ442 TXZ443 TXZ447</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value></value>
+</cap:parameter>
+</entry>
+<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=TX12640C74CB60.FloodWarning.12640C77B000TX.CRPFLSCRP.7c514a3c2ab1e301aa8557bf66f38f77</id>
 <updated>2022-09-14T20:04:00-05:00</updated>
 <published>2022-09-14T20:04:00-05:00</published>
@@ -2669,6 +2669,38 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <value>053007</value>
 <valueName>UGC</valueName>
 <value>WAC007</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value></value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=WI12640C76A78C.SpecialWeatherStatement.12640C76ECB0WI.MKXSPSMKX.18ffd58f77a79495412349537a5025fd</id>
+<updated>2022-09-15T08:23:00-05:00</updated>
+<published>2022-09-15T08:23:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Special Weather Statement issued September 15 at 8:23AM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=WI12640C76A78C.SpecialWeatherStatement.12640C76ECB0WI.MKXSPSMKX.18ffd58f77a79495412349537a5025fd"/>
+<summary>...Significant Weather Advisory for Patchy Dense Fog across south central Wisconsin Until 10 AM... Patchy Dense Fog has developed across portions of south central Wisconsin, with visibilities dropping to 1/2 mile or less in isolated areas. Motorists are urged to drive with extreme caution, as</summary>
+<cap:event>Special Weather Statement</cap:event>
+<cap:effective>2022-09-15T08:23:00-05:00</cap:effective>
+<cap:expires>2022-09-15T10:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Observed</cap:certainty>
+<cap:areaDesc>Dane; Green; Iowa; Lafayette; Rock</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>055025 055045 055049 055065 055105</value>
+<valueName>UGC</valueName>
+<value>WIZ062 WIZ063 WIZ067 WIZ068 WIZ069</value>
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
