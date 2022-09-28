@@ -16,16 +16,48 @@ xmlns = 'http://www.w3.org/2005/Atom'
 xmlns:cap = 'urn:oasis:names:tc:emergency:cap:1.1'
 xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 >
-<!-- http-date = Wed, 28 Sep 2022 00:15:00 GMT -->
+<!-- http-date = Wed, 28 Sep 2022 00:44:00 GMT -->
 <id>https://alerts.weather.gov/cap/us.php?x=0</id>
 <logo>http://alerts.weather.gov/images/xml_logo.gif</logo>
 <generator>NWS CAP Server</generator>
-<updated>2022-09-27T20:15:00-04:00</updated>
+<updated>2022-09-27T20:44:00-04:00</updated>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
 <title>Current Watches, Warnings and Advisories for the United States Issued by the National Weather Service</title>
 <link href="https://alerts.weather.gov/cap/us.php?x=0"/>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=AK12640D3B0F3C.HighWindWatch.12640D5CB8D0AK.AFCNPWALU.9abac5142cb91cac649f2686c55d0bc7</id>
+<updated>2022-09-27T16:39:00-08:00</updated>
+<published>2022-09-27T16:39:00-08:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>High Wind Watch issued September 27 at 4:39PM AKDT until September 30 at 1:00PM AKDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=AK12640D3B0F3C.HighWindWatch.12640D5CB8D0AK.AFCNPWALU.9abac5142cb91cac649f2686c55d0bc7"/>
+<summary>...HIGH WIND WATCH IN EFFECT FROM THURSDAY AFTERNOON THROUGH FRIDAY AFTERNOON... * WHAT...Southwest winds 60 to 75 mph with gusts up to 100 mph possible. * WHERE...Western Aleutians. * WHEN...From Thursday afternoon through Friday afternoon.</summary>
+<cap:event>High Wind Watch</cap:event>
+<cap:effective>2022-09-27T16:39:00-08:00</cap:effective>
+<cap:expires>2022-09-30T13:00:00-08:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Future</cap:urgency>
+<cap:severity>Severe</cap:severity>
+<cap:certainty>Possible</cap:certainty>
+<cap:areaDesc>Western Aleutians</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>002016</value>
+<valueName>UGC</valueName>
+<value>AKZ191</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.COR.PAFC.HW.A.0003.220929T2100Z-220930T2100Z/</value>
+</cap:parameter>
+</entry>
 <entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=AK12640D2F45A8.SpecialWeatherStatement.12640D4A4240AK.AJKSPSAJK.cc9c76c3a76390e82d013b203d155997</id>
 <updated>2022-09-27T15:14:00-08:00</updated>
@@ -56,38 +88,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value></value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=AK12640D2F4224.HighWindWatch.12640D5CB8D0AK.AFCNPWALU.9abac5142cb91cac649f2686c55d0bc7</id>
-<updated>2022-09-27T15:05:00-08:00</updated>
-<published>2022-09-27T15:05:00-08:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>High Wind Watch issued September 27 at 3:05PM AKDT until September 30 at 1:00PM AKDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=AK12640D2F4224.HighWindWatch.12640D5CB8D0AK.AFCNPWALU.9abac5142cb91cac649f2686c55d0bc7"/>
-<summary>...HIGH WIND WATCH IN EFFECT FROM THURSDAY AFTERNOON THROUGH FRIDAY AFTERNOON... * WHAT...Southwest winds 60 to 75 mph with gusts up to 100 mph possible. * WHERE...Western Aleutians. * WHEN...From Thursday afternoon through Friday afternoon.</summary>
-<cap:event>High Wind Watch</cap:event>
-<cap:effective>2022-09-27T15:05:00-08:00</cap:effective>
-<cap:expires>2022-09-30T13:00:00-08:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Future</cap:urgency>
-<cap:severity>Severe</cap:severity>
-<cap:certainty>Possible</cap:certainty>
-<cap:areaDesc>Western Aleutians</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>002016</value>
-<valueName>UGC</valueName>
-<value>AKZ191</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.NEW.PAFC.HW.A.0003.220929T2100Z-220930T2100Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -152,6 +152,38 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value>/O.CON.PAFG.WI.Y.0032.220928T0800Z-220930T1800Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=AL12640D3B0DAC.RedFlagWarning.12640D4A4240AL.BMXRFWBMX.58493293f95196304032a7dbaef53bd4</id>
+<updated>2022-09-27T19:35:00-05:00</updated>
+<published>2022-09-27T19:35:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Red Flag Warning issued September 27 at 7:35PM CDT until September 28 at 7:00PM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=AL12640D3B0DAC.RedFlagWarning.12640D4A4240AL.BMXRFWBMX.58493293f95196304032a7dbaef53bd4"/>
+<summary>...DRY AND BREEZY CONDITIONS ARE EXPECTED WEDNESDAY... ...RED FLAG WARNING REMAINS IN EFFECT FROM 11 AM TO 7 PM CDT WEDNESDAY FOR ALL OF CENTRAL ALABAMA... * WINDS...North 10 to 20 mph with gusts up to 30 mph. * RELATIVE HUMIDITY...As low as 20 percent. * IMPACTS...The combination of a dry air mass and windy</summary>
+<cap:event>Red Flag Warning</cap:event>
+<cap:effective>2022-09-27T19:35:00-05:00</cap:effective>
+<cap:expires>2022-09-28T19:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Severe</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Autauga; Barbour; Bibb; Blount; Bullock; Calhoun; Chambers; Cherokee; Chilton; Clay; Cleburne; Coosa; Dallas; Elmore; Etowah; Fayette; Greene; Hale; Jefferson; Lamar; Lee; Lowndes; Macon; Marengo; Marion; Montgomery; Perry; Pickens; Pike; Randolph; Russell; Shelby; St. Clair; Sumter; Talladega; Tallapoosa; Tuscaloosa; Walker</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>001001 001005 001007 001009 001011 001015 001017 001019 001021 001027 001029 001037 001047 001051 001055 001057 001063 001065 001073 001075 001081 001085 001087 001091 001093 001101 001105 001107 001109 001111 001113 001115 001117 001119 001121 001123 001125 001127</value>
+<valueName>UGC</valueName>
+<value>ALZ011 ALZ012 ALZ013 ALZ015 ALZ017 ALZ018 ALZ019 ALZ020 ALZ021 ALZ022 ALZ023 ALZ024 ALZ025 ALZ026 ALZ027 ALZ028 ALZ029 ALZ030 ALZ031 ALZ032 ALZ033 ALZ034 ALZ035 ALZ036 ALZ037 ALZ038 ALZ039 ALZ040 ALZ041 ALZ042 ALZ043 ALZ044 ALZ045 ALZ046 ALZ047 ALZ048 ALZ049 ALZ050</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KBMX.FW.W.0002.220928T1600Z-220929T0000Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -284,73 +316,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=AL12640D2EA8A0.RedFlagWarning.12640D4A4240AL.BMXRFWBMX.c606234e5191bc6468dcd6eef0f22a51</id>
-<updated>2022-09-27T14:12:00-05:00</updated>
-<published>2022-09-27T14:12:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Red Flag Warning issued September 27 at 2:12PM CDT until September 28 at 7:00PM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=AL12640D2EA8A0.RedFlagWarning.12640D4A4240AL.BMXRFWBMX.c606234e5191bc6468dcd6eef0f22a51"/>
-<summary>...DRY AND BREEZY CONDITIONS ARE EXPECTED TODAY AND WEDNESDAY... ...RED FLAG WARNING IN EFFECT FROM 11 AM TO 7 PM CDT WEDNESDAY FOR ALL OF CENTRAL ALABAMA... The National Weather Service in Birmingham has issued a Red Flag Warning for all of Central Alabama, which is in effect from 11 AM to 7 PM CDT Wednesday. The Fire Weather Watch is no longer in</summary>
-<cap:event>Red Flag Warning</cap:event>
-<cap:effective>2022-09-27T14:12:00-05:00</cap:effective>
-<cap:expires>2022-09-28T19:00:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Severe</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Blount; Cherokee; Etowah; Fayette; Lamar; Marion; Walker</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>001009 001019 001055 001057 001075 001093 001127</value>
-<valueName>UGC</valueName>
-<value>ALZ011 ALZ012 ALZ013 ALZ015 ALZ017 ALZ018 ALZ020</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.UPG.KBMX.FW.A.0001.220928T1600Z-220929T0000Z/
-/O.NEW.KBMX.FW.W.0002.220928T1600Z-220929T0000Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=AL12640D2EA8A0.RedFlagWarning.12640D4A4240AL.BMXRFWBMX.bd4289f0b5e79a0aa2adebd5eb22daf2</id>
-<updated>2022-09-27T14:12:00-05:00</updated>
-<published>2022-09-27T14:12:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Red Flag Warning issued September 27 at 2:12PM CDT until September 28 at 7:00PM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=AL12640D2EA8A0.RedFlagWarning.12640D4A4240AL.BMXRFWBMX.bd4289f0b5e79a0aa2adebd5eb22daf2"/>
-<summary>...DRY AND BREEZY CONDITIONS ARE EXPECTED TODAY AND WEDNESDAY... ...RED FLAG WARNING IN EFFECT UNTIL 7 PM CDT THIS EVENING FOR MUCH OF CENTRAL ALABAMA... ...RED FLAG WARNING IN EFFECT FROM 11 AM TO 7 PM CDT WEDNESDAY FOR ALL OF CENTRAL ALABAMA... The National Weather Service in Birmingham has issued a Red Flag Warning for much of Central Alabama, which is in effect until 7</summary>
-<cap:event>Red Flag Warning</cap:event>
-<cap:effective>2022-09-27T14:12:00-05:00</cap:effective>
-<cap:expires>2022-09-28T19:00:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Severe</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Autauga; Barbour; Bibb; Bullock; Calhoun; Chambers; Chilton; Clay; Cleburne; Coosa; Dallas; Elmore; Greene; Hale; Jefferson; Lee; Lowndes; Macon; Marengo; Montgomery; Perry; Pickens; Pike; Randolph; Russell; Shelby; St. Clair; Sumter; Talladega; Tallapoosa; Tuscaloosa</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>001001 001005 001007 001011 001015 001017 001021 001027 001029 001037 001047 001051 001063 001065 001073 001081 001085 001087 001091 001101 001105 001107 001109 001111 001113 001115 001117 001119 001121 001123 001125</value>
-<valueName>UGC</valueName>
-<value>ALZ019 ALZ021 ALZ022 ALZ023 ALZ024 ALZ025 ALZ026 ALZ027 ALZ028 ALZ029 ALZ030 ALZ031 ALZ032 ALZ033 ALZ034 ALZ035 ALZ036 ALZ037 ALZ038 ALZ039 ALZ040 ALZ041 ALZ042 ALZ043 ALZ044 ALZ045 ALZ046 ALZ047 ALZ048 ALZ049 ALZ050</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.UPG.KBMX.FW.A.0001.220928T1600Z-220929T0000Z/
-/O.NEW.KBMX.FW.W.0002.220928T1600Z-220929T0000Z/
-/O.NEW.KBMX.FW.W.0001.220927T1912Z-220928T0000Z/</value>
-</cap:parameter>
-</entry>
-<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=AL12640D2EA5E4.RedFlagWarning.12640D4A4240AL.TAERFWTAE.effc565e2186e93a3761ad91fe334d8c</id>
 <updated>2022-09-27T14:05:00-05:00</updated>
 <published>2022-09-27T14:05:00-05:00</published>
@@ -448,31 +413,31 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=CA12640D2F4F08.SpecialWeatherStatement.12640D3B0BB8CA.PSRSPSPSR.b6e5aca497cc63fa3ccf89c471708bd3</id>
-<updated>2022-09-27T16:38:00-07:00</updated>
-<published>2022-09-27T16:38:00-07:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=CA12640D3B0F3C.EvacuationImmediate.12640D3BAB7CCA.MFREVIMFR.962d35ddd6757b8763dd54609942b7a4</id>
+<updated>2022-09-27T17:39:00-07:00</updated>
+<published>2022-09-27T17:39:00-07:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Special Weather Statement issued September 27 at 4:38PM PDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CA12640D2F4F08.SpecialWeatherStatement.12640D3B0BB8CA.PSRSPSPSR.b6e5aca497cc63fa3ccf89c471708bd3"/>
-<summary>...A strong thunderstorm will impact portions of north central Imperial and Riverside Counties through 530 PM PDT... At 437 PM PDT, Doppler radar was tracking a strong thunderstorm 23 miles northeast of Brawley, moving northwest at 10 mph. HAZARD...Wind gusts up to 50 mph. SOURCE...Radar indicated.</summary>
-<cap:event>Special Weather Statement</cap:event>
-<cap:effective>2022-09-27T16:38:00-07:00</cap:effective>
-<cap:expires>2022-09-27T17:30:00-07:00</cap:expires>
+<title>Evacuation Immediate issued September 27 at 5:39PM PDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CA12640D3B0F3C.EvacuationImmediate.12640D3BAB7CCA.MFREVIMFR.962d35ddd6757b8763dd54609942b7a4"/>
+<summary>...Evacuation Immediate... The following message is transmitted at the request of Siskiyou County. ...Evacuation Order for Siskiyou Zones 5221 and 5224 east of Big Springs Road and West of Hwy 97 due to a wildfire. If you are in this area evacuate immediately...</summary>
+<cap:event>Evacuation Immediate</cap:event>
+<cap:effective>2022-09-27T17:39:00-07:00</cap:effective>
+<cap:expires>2022-09-27T21:39:00-07:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
 <cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Observed</cap:certainty>
-<cap:areaDesc>Chuckwalla Mountains; Imperial County Southeast</cap:areaDesc>
-<cap:polygon>33.2,-115.08 33.09,-115.25 33.29,-115.51 33.46,-115.26 33.2,-115.08</cap:polygon>
+<cap:urgency></cap:urgency>
+<cap:severity></cap:severity>
+<cap:certainty></cap:certainty>
+<cap:areaDesc>Siskiyou</cap:areaDesc>
+<cap:polygon></cap:polygon>
 <cap:geocode>
 <valueName>FIPS6</valueName>
-<value>006025 006065</value>
+<value>006093</value>
 <valueName>UGC</valueName>
-<value>CAZ564 CAZ565</value>
+<value>CAC093</value>
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
@@ -929,90 +894,26 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=FL12640D3B05DC.TornadoWarning.12640D3B0BB8FL.MFLSVSMFL.1c590fbdc0cee8b6dc459b00433b8b31</id>
-<updated>2022-09-27T20:15:00-04:00</updated>
-<published>2022-09-27T20:15:00-04:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=FL12640D3B1130.TornadoWarning.12640D3B2710FL.MFLSVSMFL.3880831f76ecc390e888c434a8fcfb89</id>
+<updated>2022-09-27T20:44:00-04:00</updated>
+<published>2022-09-27T20:44:00-04:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Tornado Warning issued September 27 at 8:15PM EDT until September 27 at 8:30PM EDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=FL12640D3B05DC.TornadoWarning.12640D3B0BB8FL.MFLSVSMFL.1c590fbdc0cee8b6dc459b00433b8b31"/>
-<summary>...A TORNADO WARNING REMAINS IN EFFECT UNTIL 830 PM EDT FOR WEST CENTRAL COLLIER COUNTY... At 815 PM EDT, a severe thunderstorm capable of producing a tornado was located over North Naples, or near Naples, moving northwest at 25 mph. HAZARD...Tornado.</summary>
+<title>Tornado Warning issued September 27 at 8:44PM EDT until September 27 at 9:00PM EDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=FL12640D3B1130.TornadoWarning.12640D3B2710FL.MFLSVSMFL.3880831f76ecc390e888c434a8fcfb89"/>
+<summary>...A TORNADO WARNING REMAINS IN EFFECT UNTIL 900 PM EDT FOR NORTH CENTRAL BROWARD COUNTY... At 844 PM EDT, a severe thunderstorm capable of producing a tornado was located near Tamarac, moving northwest at 20 mph. HAZARD...Tornado. SOURCE...Radar indicated rotation.</summary>
 <cap:event>Tornado Warning</cap:event>
-<cap:effective>2022-09-27T20:15:00-04:00</cap:effective>
-<cap:expires>2022-09-27T20:30:00-04:00</cap:expires>
+<cap:effective>2022-09-27T20:44:00-04:00</cap:effective>
+<cap:expires>2022-09-27T21:00:00-04:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
 <cap:category>Met</cap:category>
 <cap:urgency>Immediate</cap:urgency>
 <cap:severity>Extreme</cap:severity>
 <cap:certainty>Observed</cap:certainty>
-<cap:areaDesc>Collier</cap:areaDesc>
-<cap:polygon>26.33,-81.84 26.33,-81.82 26.32,-81.82 26.32,-81.7 26.1,-81.64 26.14,-81.76 26.17,-81.81 26.33,-81.84</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>012021</value>
-<valueName>UGC</valueName>
-<value>FLC021</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KMFL.TO.W.0035.000000T0000Z-220928T0030Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=FL12640D3B05DC.SevereWeatherStatement.12640D3D2E98FL.MFLSVSMFL.5ffb93c65426676803b80dd2b4a641b4</id>
-<updated>2022-09-27T20:15:00-04:00</updated>
-<published>2022-09-27T20:15:00-04:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Severe Weather Statement issued September 27 at 8:15PM EDT until further notice by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=FL12640D3B05DC.SevereWeatherStatement.12640D3D2E98FL.MFLSVSMFL.5ffb93c65426676803b80dd2b4a641b4"/>
-<summary>...A TORNADO WARNING REMAINS IN EFFECT UNTIL 830 PM EDT FOR WEST CENTRAL COLLIER COUNTY... At 815 PM EDT, a severe thunderstorm capable of producing a tornado was located over North Naples, or near Naples, moving northwest at 25 mph. HAZARD...Tornado.</summary>
-<cap:event>Severe Weather Statement</cap:event>
-<cap:effective>2022-09-27T20:15:00-04:00</cap:effective>
-<cap:expires>2022-09-28T10:30:00-04:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Immediate</cap:urgency>
-<cap:severity>Severe</cap:severity>
-<cap:certainty>Observed</cap:certainty>
-<cap:areaDesc>Collier</cap:areaDesc>
-<cap:polygon>26.33,-81.84 26.33,-81.82 26.32,-81.82 26.32,-81.7 26.1,-81.64 26.14,-81.76 26.17,-81.81 26.33,-81.84</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>012021</value>
-<valueName>UGC</valueName>
-<value>FLC021</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KMFL.TO.W.0035.000000T0000Z-220928T0030Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=FL12640D3B0578.FloodAdvisory.12640D3B1194FL.MFLFLSMFL.d439ecfc8fed27c26b0e87c71d7f86f5</id>
-<updated>2022-09-27T20:14:00-04:00</updated>
-<published>2022-09-27T20:14:00-04:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Flood Advisory issued September 27 at 8:14PM EDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=FL12640D3B0578.FloodAdvisory.12640D3B1194FL.MFLFLSMFL.d439ecfc8fed27c26b0e87c71d7f86f5"/>
-<summary>...FLOOD ADVISORY IN EFFECT UNTIL 1015 PM EDT THIS EVENING... * WHAT...Flooding caused by excessive rainfall is expected. * WHERE...A portion of South Florida, including the following counties, Broward and Miami-Dade. * WHEN...Until 1015 PM EDT. * IMPACTS...Minor flooding in low-lying and poor drainage areas.</summary>
-<cap:event>Flood Advisory</cap:event>
-<cap:effective>2022-09-27T20:14:00-04:00</cap:effective>
-<cap:expires>2022-09-27T20:45:00-04:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
 <cap:areaDesc>Broward</cap:areaDesc>
-<cap:polygon>26.33,-80.34 26.33,-80.22 26.18,-80.11 26.13,-80.11 26.11,-80.11 26.06,-80.11 25.97,-80.11 25.97,-80.13 25.97,-80.39 26.16,-80.44 26.17,-80.38 26.24,-80.36 26.33,-80.34</cap:polygon>
+<cap:polygon>26.22,-80.29 26.21,-80.36 26.33,-80.48 26.33,-80.29 26.22,-80.29</cap:polygon>
 <cap:geocode>
 <valueName>FIPS6</valueName>
 <value>012011</value>
@@ -1021,8 +922,200 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
-<value>/O.NEW.KMFL.FA.Y.0248.220928T0014Z-220928T0215Z/
-/00000.N.ER.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
+<value>/O.CON.KMFL.TO.W.0038.000000T0000Z-220928T0100Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=FL12640D3B1130.SevereWeatherStatement.12640D3B59D8FL.MFLSVSMFL.c05e4d74caedc955a7978bf67177c971</id>
+<updated>2022-09-27T20:44:00-04:00</updated>
+<published>2022-09-27T20:44:00-04:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Severe Weather Statement issued September 27 at 8:44PM EDT until September 27 at 10:30PM EDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=FL12640D3B1130.SevereWeatherStatement.12640D3B59D8FL.MFLSVSMFL.c05e4d74caedc955a7978bf67177c971"/>
+<summary>...A TORNADO WARNING REMAINS IN EFFECT UNTIL 900 PM EDT FOR NORTH CENTRAL BROWARD COUNTY... At 844 PM EDT, a severe thunderstorm capable of producing a tornado was located near Tamarac, moving northwest at 20 mph. HAZARD...Tornado. SOURCE...Radar indicated rotation.</summary>
+<cap:event>Severe Weather Statement</cap:event>
+<cap:effective>2022-09-27T20:44:00-04:00</cap:effective>
+<cap:expires>2022-09-27T22:30:00-04:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Immediate</cap:urgency>
+<cap:severity>Severe</cap:severity>
+<cap:certainty>Observed</cap:certainty>
+<cap:areaDesc>Broward</cap:areaDesc>
+<cap:polygon>26.22,-80.29 26.21,-80.36 26.33,-80.48 26.33,-80.29 26.22,-80.29</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>012011</value>
+<valueName>UGC</valueName>
+<value>FLC011</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KMFL.TO.W.0038.000000T0000Z-220928T0100Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=FL12640D3B10CC.TornadoWarning.12640D3B2710FL.MFLSVSMFL.12351d57729f0d3e5fba94240d8c46ea</id>
+<updated>2022-09-27T20:43:00-04:00</updated>
+<published>2022-09-27T20:43:00-04:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Tornado Warning issued September 27 at 8:43PM EDT until September 27 at 9:00PM EDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=FL12640D3B10CC.TornadoWarning.12640D3B2710FL.MFLSVSMFL.12351d57729f0d3e5fba94240d8c46ea"/>
+<summary>...A TORNADO WARNING REMAINS IN EFFECT UNTIL 900 PM EDT FOR SOUTH CENTRAL PALM BEACH COUNTY... At 842 PM EDT, a severe thunderstorm capable of producing a tornado was located 8 miles southwest of Loxahatchee NWR, or 14 miles northwest of Coral Springs, moving northwest at 25 mph. HAZARD...Tornado.</summary>
+<cap:event>Tornado Warning</cap:event>
+<cap:effective>2022-09-27T20:43:00-04:00</cap:effective>
+<cap:expires>2022-09-27T21:00:00-04:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Immediate</cap:urgency>
+<cap:severity>Extreme</cap:severity>
+<cap:certainty>Observed</cap:certainty>
+<cap:areaDesc>Palm Beach</cap:areaDesc>
+<cap:polygon>26.38,-80.33 26.37,-80.44 26.45,-80.51 26.51,-80.35 26.38,-80.33</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>012099</value>
+<valueName>UGC</valueName>
+<value>FLC099</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KMFL.TO.W.0037.000000T0000Z-220928T0100Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=FL12640D3B10CC.SevereWeatherStatement.12640D3C5F90FL.MFLSVSMFL.fd7d40fa4b0fb824fb8e60d353b8dfcd</id>
+<updated>2022-09-27T20:43:00-04:00</updated>
+<published>2022-09-27T20:43:00-04:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Severe Weather Statement issued September 27 at 8:43PM EDT until September 28 at 5:00AM EDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=FL12640D3B10CC.SevereWeatherStatement.12640D3C5F90FL.MFLSVSMFL.fd7d40fa4b0fb824fb8e60d353b8dfcd"/>
+<summary>...A TORNADO WARNING REMAINS IN EFFECT UNTIL 900 PM EDT FOR SOUTH CENTRAL PALM BEACH COUNTY... At 842 PM EDT, a severe thunderstorm capable of producing a tornado was located 8 miles southwest of Loxahatchee NWR, or 14 miles northwest of Coral Springs, moving northwest at 25 mph. HAZARD...Tornado.</summary>
+<cap:event>Severe Weather Statement</cap:event>
+<cap:effective>2022-09-27T20:43:00-04:00</cap:effective>
+<cap:expires>2022-09-28T05:00:00-04:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Immediate</cap:urgency>
+<cap:severity>Severe</cap:severity>
+<cap:certainty>Observed</cap:certainty>
+<cap:areaDesc>Palm Beach</cap:areaDesc>
+<cap:polygon>26.38,-80.33 26.37,-80.44 26.45,-80.51 26.51,-80.35 26.38,-80.33</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>012099</value>
+<valueName>UGC</valueName>
+<value>FLC099</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KMFL.TO.W.0037.000000T0000Z-220928T0100Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=FL12640D3B1068.TornadoWarning.12640D3B2710FL.MFLSVSMFL.5d8240ef5372d607ed51f104814f6f02</id>
+<updated>2022-09-27T20:42:00-04:00</updated>
+<published>2022-09-27T20:42:00-04:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Tornado Warning issued September 27 at 8:42PM EDT until September 27 at 9:00PM EDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=FL12640D3B1068.TornadoWarning.12640D3B2710FL.MFLSVSMFL.5d8240ef5372d607ed51f104814f6f02"/>
+<summary>...A TORNADO WARNING REMAINS IN EFFECT UNTIL 900 PM EDT FOR WEST CENTRAL COLLIER COUNTY... At 842 PM EDT, a severe thunderstorm capable of producing a tornado was located near Naples, moving northwest at 20 mph. HAZARD...Tornado. SOURCE...Radar indicated rotation.</summary>
+<cap:event>Tornado Warning</cap:event>
+<cap:effective>2022-09-27T20:42:00-04:00</cap:effective>
+<cap:expires>2022-09-27T21:00:00-04:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Immediate</cap:urgency>
+<cap:severity>Extreme</cap:severity>
+<cap:certainty>Observed</cap:certainty>
+<cap:areaDesc>Collier</cap:areaDesc>
+<cap:polygon>26.23,-81.67 26.14,-81.71 26.16,-81.81 26.21,-81.84 26.27,-81.83 26.23,-81.67</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>012021</value>
+<valueName>UGC</valueName>
+<value>FLC021</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KMFL.TO.W.0036.000000T0000Z-220928T0100Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=FL12640D3B1068.SevereWeatherStatement.12640D3D2E98FL.MFLSVSMFL.5ffb93c65426676803b80dd2b4a641b4</id>
+<updated>2022-09-27T20:42:00-04:00</updated>
+<published>2022-09-27T20:42:00-04:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Severe Weather Statement issued September 27 at 8:42PM EDT until further notice by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=FL12640D3B1068.SevereWeatherStatement.12640D3D2E98FL.MFLSVSMFL.5ffb93c65426676803b80dd2b4a641b4"/>
+<summary>...A TORNADO WARNING REMAINS IN EFFECT UNTIL 900 PM EDT FOR WEST CENTRAL COLLIER COUNTY... At 842 PM EDT, a severe thunderstorm capable of producing a tornado was located near Naples, moving northwest at 20 mph. HAZARD...Tornado. SOURCE...Radar indicated rotation.</summary>
+<cap:event>Severe Weather Statement</cap:event>
+<cap:effective>2022-09-27T20:42:00-04:00</cap:effective>
+<cap:expires>2022-09-28T10:30:00-04:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Immediate</cap:urgency>
+<cap:severity>Severe</cap:severity>
+<cap:certainty>Observed</cap:certainty>
+<cap:areaDesc>Collier</cap:areaDesc>
+<cap:polygon>26.23,-81.67 26.14,-81.71 26.16,-81.81 26.21,-81.84 26.27,-81.83 26.23,-81.67</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>012021</value>
+<valueName>UGC</valueName>
+<value>FLC021</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KMFL.TO.W.0036.000000T0000Z-220928T0100Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=FL12640D3B0A28.FlashFloodWarning.12640D3B59D8FL.MFLFFWMFL.8d5ba3a60c9e15313ab4dcde1719febb</id>
+<updated>2022-09-27T20:26:00-04:00</updated>
+<published>2022-09-27T20:26:00-04:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Flash Flood Warning issued September 27 at 8:26PM EDT until September 27 at 10:30PM EDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=FL12640D3B0A28.FlashFloodWarning.12640D3B59D8FL.MFLFFWMFL.8d5ba3a60c9e15313ab4dcde1719febb"/>
+<summary>The National Weather Service in Miami has issued a * Flash Flood Warning for... Central Broward County in southeastern Florida... * Until 1030 PM EDT. * At 826 PM EDT, Doppler radar and automated rain gauges indicated thunderstorms producing heavy rain across the warned area. Between</summary>
+<cap:event>Flash Flood Warning</cap:event>
+<cap:effective>2022-09-27T20:26:00-04:00</cap:effective>
+<cap:expires>2022-09-27T22:30:00-04:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Immediate</cap:urgency>
+<cap:severity>Severe</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Broward</cap:areaDesc>
+<cap:polygon>26.16,-80.34 26.18,-80.29 26.17,-80.2 26.04,-80.2 26.05,-80.31 26.12,-80.34 26.16,-80.34</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>012011</value>
+<valueName>UGC</valueName>
+<value>FLC011</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.NEW.KMFL.FF.W.0031.220928T0026Z-220928T0230Z/
+/00000.0.ER.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -1051,6 +1144,39 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <value>012086</value>
 <valueName>UGC</valueName>
 <value>FLC086</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.NEW.KMFL.FA.Y.0248.220928T0014Z-220928T0215Z/
+/00000.N.ER.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=FL12640D3B0578.FloodAdvisory.12640D3B59D8FL.MFLFLSMFL.d439ecfc8fed27c26b0e87c71d7f86f5</id>
+<updated>2022-09-27T20:14:00-04:00</updated>
+<published>2022-09-27T20:14:00-04:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Flood Advisory issued September 27 at 8:14PM EDT until September 27 at 10:30PM EDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=FL12640D3B0578.FloodAdvisory.12640D3B59D8FL.MFLFLSMFL.d439ecfc8fed27c26b0e87c71d7f86f5"/>
+<summary>...FLOOD ADVISORY IN EFFECT UNTIL 1015 PM EDT THIS EVENING... * WHAT...Flooding caused by excessive rainfall is expected. * WHERE...A portion of South Florida, including the following counties, Broward and Miami-Dade. * WHEN...Until 1015 PM EDT. * IMPACTS...Minor flooding in low-lying and poor drainage areas.</summary>
+<cap:event>Flood Advisory</cap:event>
+<cap:effective>2022-09-27T20:14:00-04:00</cap:effective>
+<cap:expires>2022-09-27T22:30:00-04:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Broward</cap:areaDesc>
+<cap:polygon>26.33,-80.34 26.33,-80.22 26.18,-80.11 26.13,-80.11 26.11,-80.11 26.06,-80.11 25.97,-80.11 25.97,-80.13 25.97,-80.39 26.16,-80.44 26.17,-80.38 26.24,-80.36 26.33,-80.34</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>012011</value>
+<valueName>UGC</valueName>
+<value>FLC011</value>
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
@@ -1155,39 +1281,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <valueName>VTEC</valueName>
 <value>/O.NEW.KMFL.FF.W.0030.220928T0005Z-220928T0200Z/
 /00000.0.ER.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=FL12640D2F52F0.FloodAdvisory.12640D3B4E20FL.MFLFLSMFL.3573c5b9dcfcaee41854a54d5a024e76</id>
-<updated>2022-09-27T19:48:00-04:00</updated>
-<published>2022-09-27T19:48:00-04:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Flood Advisory issued September 27 at 7:48PM EDT until September 27 at 10:00PM EDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=FL12640D2F52F0.FloodAdvisory.12640D3B4E20FL.MFLFLSMFL.3573c5b9dcfcaee41854a54d5a024e76"/>
-<summary>...FLOOD ADVISORY IN EFFECT UNTIL 845 PM EDT THIS EVENING... * WHAT...Flooding caused by excessive rainfall is expected. * WHERE...A portion of South Florida, including the following county, Miami-Dade. * WHEN...Until 845 PM EDT. * IMPACTS...Minor flooding in low-lying and poor drainage areas.</summary>
-<cap:event>Flood Advisory</cap:event>
-<cap:effective>2022-09-27T19:48:00-04:00</cap:effective>
-<cap:expires>2022-09-27T22:00:00-04:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Miami-Dade</cap:areaDesc>
-<cap:polygon>25.78,-80.46 25.75,-80.21 25.74,-80.17 25.73,-80.15 25.72,-80.13 25.66,-80.15 25.66,-80.25 25.6,-80.3 25.52,-80.3 25.53,-80.53 25.69,-80.53 25.74,-80.49 25.78,-80.46</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>012086</value>
-<valueName>UGC</valueName>
-<value>FLC086</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.NEW.KMFL.FA.Y.0247.220927T2348Z-220928T0045Z/
-/00000.N.ER.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -2880,72 +2973,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value>/O.CON.KTBW.TR.W.1009.000000T0000Z-000000T0000Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=FL12640D2F2A50.FloodAdvisory.12640D3B1194FL.MFLFLSMFL.03c5e1f04c498ac87c6a6af63134ff4f</id>
-<updated>2022-09-27T18:44:00-04:00</updated>
-<published>2022-09-27T18:44:00-04:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Flood Advisory issued September 27 at 6:44PM EDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=FL12640D2F2A50.FloodAdvisory.12640D3B1194FL.MFLFLSMFL.03c5e1f04c498ac87c6a6af63134ff4f"/>
-<summary>...FLOOD ADVISORY IN EFFECT UNTIL 845 PM EDT THIS EVENING... * WHAT...Flooding caused by excessive rainfall is expected. * WHERE...A portion of South Florida, including the following counties, Broward and Miami-Dade. * WHEN...Until 845 PM EDT. * IMPACTS...Minor flooding in low-lying and poor drainage areas.</summary>
-<cap:event>Flood Advisory</cap:event>
-<cap:effective>2022-09-27T18:44:00-04:00</cap:effective>
-<cap:expires>2022-09-27T20:45:00-04:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Broward</cap:areaDesc>
-<cap:polygon>26.11,-80.45 26.13,-80.4 26.09,-80.23 26.06,-80.11 26.06,-80.1 25.76,-80.12 25.73,-80.16 25.74,-80.18 25.74,-80.21 25.77,-80.42 26.11,-80.45</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>012011</value>
-<valueName>UGC</valueName>
-<value>FLC011</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.NEW.KMFL.FA.Y.0246.220927T2244Z-220928T0045Z/
-/00000.N.ER.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=FL12640D2F2A50.FloodAdvisory.12640D3B4E20FL.MFLFLSMFL.c38a144eade43fbeda8fcc640ebb8c45</id>
-<updated>2022-09-27T18:44:00-04:00</updated>
-<published>2022-09-27T18:44:00-04:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Flood Advisory issued September 27 at 6:44PM EDT until September 27 at 10:00PM EDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=FL12640D2F2A50.FloodAdvisory.12640D3B4E20FL.MFLFLSMFL.c38a144eade43fbeda8fcc640ebb8c45"/>
-<summary>...FLOOD ADVISORY IN EFFECT UNTIL 845 PM EDT THIS EVENING... * WHAT...Flooding caused by excessive rainfall is expected. * WHERE...A portion of South Florida, including the following counties, Broward and Miami-Dade. * WHEN...Until 845 PM EDT. * IMPACTS...Minor flooding in low-lying and poor drainage areas.</summary>
-<cap:event>Flood Advisory</cap:event>
-<cap:effective>2022-09-27T18:44:00-04:00</cap:effective>
-<cap:expires>2022-09-27T22:00:00-04:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Miami-Dade</cap:areaDesc>
-<cap:polygon>26.11,-80.45 26.13,-80.4 26.09,-80.23 26.06,-80.11 26.06,-80.1 25.76,-80.12 25.73,-80.16 25.74,-80.18 25.74,-80.21 25.77,-80.42 26.11,-80.45</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>012086</value>
-<valueName>UGC</valueName>
-<value>FLC086</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.NEW.KMFL.FA.Y.0246.220927T2244Z-220928T0045Z/
-/00000.N.ER.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -8529,17 +8556,17 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=MN12640D2EB64C.FrostAdvisory.12640D3CFBD0MN.ABRNPWABR.1f62bbddc5042646f772bb58a628c503</id>
-<updated>2022-09-27T14:47:00-05:00</updated>
-<published>2022-09-27T14:47:00-05:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=MN12640D3B0A28.FrostAdvisory.12640D3CFBD0MN.ABRNPWABR.1f62bbddc5042646f772bb58a628c503</id>
+<updated>2022-09-27T19:26:00-05:00</updated>
+<published>2022-09-27T19:26:00-05:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Frost Advisory issued September 27 at 2:47PM CDT until September 28 at 8:00AM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MN12640D2EB64C.FrostAdvisory.12640D3CFBD0MN.ABRNPWABR.1f62bbddc5042646f772bb58a628c503"/>
-<summary>...FROST ADVISORY IN EFFECT FROM 2 AM TO 8 AM CDT WEDNESDAY... * WHAT...Temperatures as low as 33 will result in frost formation. * WHERE...In Minnesota, Traverse and Big Stone Counties. In South Dakota, Marshall, Roberts, Day, Clark, Codington, Grant, Hamlin and Deuel Counties.</summary>
+<title>Frost Advisory issued September 27 at 7:26PM CDT until September 28 at 8:00AM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MN12640D3B0A28.FrostAdvisory.12640D3CFBD0MN.ABRNPWABR.1f62bbddc5042646f772bb58a628c503"/>
+<summary>...FROST ADVISORY REMAINS IN EFFECT FROM 2 AM TO 8 AM CDT WEDNESDAY... * WHAT...Temperatures from 33 to 36 degrees will result in frost formation. * WHERE...In Minnesota, Traverse and Big Stone Counties. In South Dakota, Marshall, Roberts, Day, Clark, Codington, Grant,</summary>
 <cap:event>Frost Advisory</cap:event>
-<cap:effective>2022-09-27T14:47:00-05:00</cap:effective>
+<cap:effective>2022-09-27T19:26:00-05:00</cap:effective>
 <cap:expires>2022-09-28T08:00:00-05:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
@@ -8557,7 +8584,7 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
-<value>/O.NEW.KABR.FR.Y.0004.220928T0700Z-220928T1300Z/</value>
+<value>/O.CON.KABR.FR.Y.0004.220928T0700Z-220928T1300Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -9724,6 +9751,72 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=OH12640D3B10CC.FloodWatch.12640D3CD4C0OH.CLEFFACLE.c9752789257cc474130c981143163fd3</id>
+<updated>2022-09-27T20:43:00-04:00</updated>
+<published>2022-09-27T20:43:00-04:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Flood Watch issued September 27 at 8:43PM EDT until September 28 at 8:00AM EDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=OH12640D3B10CC.FloodWatch.12640D3CD4C0OH.CLEFFACLE.c9752789257cc474130c981143163fd3"/>
+<summary>...FLOOD WATCH NOW IN EFFECT THROUGH WEDNESDAY MORNING... * WHAT...Flooding caused by excessive rainfall remains possible. * WHERE...Ashtabula, Cuyahoga, Geauga and Lake Counties in northeast Ohio and Erie County in northwest Pennsylvania. * WHEN...Through Wednesday morning. * IMPACTS...Excessive runoff from heavy lake effect rain may result</summary>
+<cap:event>Flood Watch</cap:event>
+<cap:effective>2022-09-27T20:43:00-04:00</cap:effective>
+<cap:expires>2022-09-28T08:00:00-04:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Future</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Possible</cap:certainty>
+<cap:areaDesc>Ashtabula Lakeshore</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>039007</value>
+<valueName>UGC</valueName>
+<value>OHZ089</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.EXT.KCLE.FA.A.0005.000000T0000Z-220928T1600Z/
+/00000.0.ER.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=OH12640D3B10CC.FloodWatch.12640D4A9060OH.CLEFFACLE.cd62b6b7330ed348151cbb308651374b</id>
+<updated>2022-09-27T20:43:00-04:00</updated>
+<published>2022-09-27T20:43:00-04:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Flood Watch issued September 27 at 8:43PM EDT until September 28 at 10:00PM EDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=OH12640D3B10CC.FloodWatch.12640D4A9060OH.CLEFFACLE.cd62b6b7330ed348151cbb308651374b"/>
+<summary>...FLOOD WATCH NOW IN EFFECT THROUGH WEDNESDAY MORNING... * WHAT...Flooding caused by excessive rainfall remains possible. * WHERE...Ashtabula, Cuyahoga, Geauga and Lake Counties in northeast Ohio and Erie County in northwest Pennsylvania. * WHEN...Through Wednesday morning. * IMPACTS...Excessive runoff from heavy lake effect rain may result</summary>
+<cap:event>Flood Watch</cap:event>
+<cap:effective>2022-09-27T20:43:00-04:00</cap:effective>
+<cap:expires>2022-09-28T22:00:00-04:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Future</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Possible</cap:certainty>
+<cap:areaDesc>Ashtabula Inland; Cuyahoga; Geauga; Lake</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>039007 039035 039055 039085</value>
+<valueName>UGC</valueName>
+<value>OHZ011 OHZ012 OHZ013 OHZ014</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.EXT.KCLE.FA.A.0005.000000T0000Z-220928T1600Z/
+/00000.0.ER.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
+</cap:parameter>
+</entry>
+<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=OH12640D2F5674.FloodWarning.12640D3C5F90OH.CLEFLWCLE.fefdcf414f6d22a5ad5831d97c41f0d6</id>
 <updated>2022-09-27T19:57:00-04:00</updated>
 <published>2022-09-27T19:57:00-04:00</published>
@@ -9853,72 +9946,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=OH12640D2E3D98.FloodWatch.12640D3CD4C0OH.CLEFFACLE.c9752789257cc474130c981143163fd3</id>
-<updated>2022-09-27T12:38:00-04:00</updated>
-<published>2022-09-27T12:38:00-04:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Flood Watch issued September 27 at 12:38PM EDT until September 28 at 8:00AM EDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=OH12640D2E3D98.FloodWatch.12640D3CD4C0OH.CLEFFACLE.c9752789257cc474130c981143163fd3"/>
-<summary>...FLOOD WATCH REMAINS IN EFFECT THROUGH LATE TONIGHT... * WHAT...Flooding caused by excessive rainfall continues to be possible. * WHERE...Portions of northeast Ohio and northwest Pennsylvania, including the following areas, in northeast Ohio, Ashtabula Inland, Ashtabula Lakeshore, Cuyahoga, Geauga and Lake. In</summary>
-<cap:event>Flood Watch</cap:event>
-<cap:effective>2022-09-27T12:38:00-04:00</cap:effective>
-<cap:expires>2022-09-28T08:00:00-04:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Future</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Possible</cap:certainty>
-<cap:areaDesc>Ashtabula Lakeshore</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>039007</value>
-<valueName>UGC</valueName>
-<value>OHZ089</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KCLE.FA.A.0005.000000T0000Z-220928T0900Z/
-/00000.0.ER.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=OH12640D2E3D98.FloodWatch.12640D4A9060OH.CLEFFACLE.cd62b6b7330ed348151cbb308651374b</id>
-<updated>2022-09-27T12:38:00-04:00</updated>
-<published>2022-09-27T12:38:00-04:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Flood Watch issued September 27 at 12:38PM EDT until September 28 at 10:00PM EDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=OH12640D2E3D98.FloodWatch.12640D4A9060OH.CLEFFACLE.cd62b6b7330ed348151cbb308651374b"/>
-<summary>...FLOOD WATCH REMAINS IN EFFECT THROUGH LATE TONIGHT... * WHAT...Flooding caused by excessive rainfall continues to be possible. * WHERE...Portions of northeast Ohio and northwest Pennsylvania, including the following areas, in northeast Ohio, Ashtabula Inland, Ashtabula Lakeshore, Cuyahoga, Geauga and Lake. In</summary>
-<cap:event>Flood Watch</cap:event>
-<cap:effective>2022-09-27T12:38:00-04:00</cap:effective>
-<cap:expires>2022-09-28T22:00:00-04:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Future</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Possible</cap:certainty>
-<cap:areaDesc>Ashtabula Inland; Cuyahoga; Geauga; Lake</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>039007 039035 039055 039085</value>
-<valueName>UGC</valueName>
-<value>OHZ011 OHZ012 OHZ013 OHZ014</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KCLE.FA.A.0005.000000T0000Z-220928T0900Z/
-/00000.0.ER.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
-</cap:parameter>
-</entry>
-<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=OR12640D2D0068.RedFlagWarning.12640D3B7530OR.MFRRFWMFR.2f2d194868692bdc2aa36b2b2cbb707a</id>
 <updated>2022-09-27T01:26:00-07:00</updated>
 <published>2022-09-27T01:26:00-07:00</published>
@@ -9948,6 +9975,39 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value>/O.CON.KMFR.FW.W.0031.220927T2100Z-220928T0300Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=PA12640D3B10CC.FloodWatch.12640D3CD4C0PA.CLEFFACLE.940f5251f1363b7dcd893794e1466879</id>
+<updated>2022-09-27T20:43:00-04:00</updated>
+<published>2022-09-27T20:43:00-04:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Flood Watch issued September 27 at 8:43PM EDT until September 28 at 8:00AM EDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=PA12640D3B10CC.FloodWatch.12640D3CD4C0PA.CLEFFACLE.940f5251f1363b7dcd893794e1466879"/>
+<summary>...FLOOD WATCH NOW IN EFFECT THROUGH WEDNESDAY MORNING... * WHAT...Flooding caused by excessive rainfall remains possible. * WHERE...Ashtabula, Cuyahoga, Geauga and Lake Counties in northeast Ohio and Erie County in northwest Pennsylvania. * WHEN...Through Wednesday morning. * IMPACTS...Excessive runoff from heavy lake effect rain may result</summary>
+<cap:event>Flood Watch</cap:event>
+<cap:effective>2022-09-27T20:43:00-04:00</cap:effective>
+<cap:expires>2022-09-28T08:00:00-04:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Future</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Possible</cap:certainty>
+<cap:areaDesc>Northern Erie; Southern Erie</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>042049</value>
+<valueName>UGC</valueName>
+<value>PAZ001 PAZ002</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.EXT.KCLE.FA.A.0005.000000T0000Z-220928T1600Z/
+/00000.0.ER.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -10013,39 +10073,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value>/O.CON.KCLE.BH.S.0025.000000T0000Z-220928T1200Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=PA12640D2E3D98.FloodWatch.12640D3CD4C0PA.CLEFFACLE.940f5251f1363b7dcd893794e1466879</id>
-<updated>2022-09-27T12:38:00-04:00</updated>
-<published>2022-09-27T12:38:00-04:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Flood Watch issued September 27 at 12:38PM EDT until September 28 at 8:00AM EDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=PA12640D2E3D98.FloodWatch.12640D3CD4C0PA.CLEFFACLE.940f5251f1363b7dcd893794e1466879"/>
-<summary>...FLOOD WATCH REMAINS IN EFFECT THROUGH LATE TONIGHT... * WHAT...Flooding caused by excessive rainfall continues to be possible. * WHERE...Portions of northeast Ohio and northwest Pennsylvania, including the following areas, in northeast Ohio, Ashtabula Inland, Ashtabula Lakeshore, Cuyahoga, Geauga and Lake. In</summary>
-<cap:event>Flood Watch</cap:event>
-<cap:effective>2022-09-27T12:38:00-04:00</cap:effective>
-<cap:expires>2022-09-28T08:00:00-04:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Future</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Possible</cap:certainty>
-<cap:areaDesc>Northern Erie; Southern Erie</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>042049</value>
-<valueName>UGC</valueName>
-<value>PAZ001 PAZ002</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KCLE.FA.A.0005.000000T0000Z-220928T0900Z/
-/00000.0.ER.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -10567,17 +10594,49 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=SD12640D2EB64C.FrostAdvisory.12640D3CFBD0SD.ABRNPWABR.65706d0362a94062a58181f41690b99f</id>
-<updated>2022-09-27T13:47:00-06:00</updated>
-<published>2022-09-27T13:47:00-06:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=SD12640D3B0A28.FrostAdvisory.12640D3CFBD0SD.ABRNPWABR.68d2775bbd54bcde4c71fedf30e7b315</id>
+<updated>2022-09-27T18:26:00-06:00</updated>
+<published>2022-09-27T18:26:00-06:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Frost Advisory issued September 27 at 1:47PM MDT until September 28 at 7:00AM MDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=SD12640D2EB64C.FrostAdvisory.12640D3CFBD0SD.ABRNPWABR.65706d0362a94062a58181f41690b99f"/>
-<summary>...FROST ADVISORY IN EFFECT FROM 2 AM TO 8 AM CDT WEDNESDAY... * WHAT...Temperatures as low as 33 will result in frost formation. * WHERE...In Minnesota, Traverse and Big Stone Counties. In South Dakota, Marshall, Roberts, Day, Clark, Codington, Grant, Hamlin and Deuel Counties.</summary>
+<title>Frost Advisory issued September 27 at 6:26PM MDT until September 28 at 7:00AM MDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=SD12640D3B0A28.FrostAdvisory.12640D3CFBD0SD.ABRNPWABR.68d2775bbd54bcde4c71fedf30e7b315"/>
+<summary>...FROST ADVISORY IN EFFECT FROM 2 AM TO 8 AM CDT WEDNESDAY... * WHAT...Temperatures from 33 to 36 degrees will result in frost formation. * WHERE...Brown and Spink Counties. * WHEN...From 2 AM to 8 AM CDT Wednesday. * IMPACTS...Frost could kill sensitive outdoor vegetation if</summary>
 <cap:event>Frost Advisory</cap:event>
-<cap:effective>2022-09-27T13:47:00-06:00</cap:effective>
+<cap:effective>2022-09-27T18:26:00-06:00</cap:effective>
+<cap:expires>2022-09-28T07:00:00-06:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Brown; Spink</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>046013 046115</value>
+<valueName>UGC</valueName>
+<value>SDZ006 SDZ018</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.EXA.KABR.FR.Y.0004.220928T0700Z-220928T1300Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=SD12640D3B0A28.FrostAdvisory.12640D3CFBD0SD.ABRNPWABR.65706d0362a94062a58181f41690b99f</id>
+<updated>2022-09-27T18:26:00-06:00</updated>
+<published>2022-09-27T18:26:00-06:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Frost Advisory issued September 27 at 6:26PM MDT until September 28 at 7:00AM MDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=SD12640D3B0A28.FrostAdvisory.12640D3CFBD0SD.ABRNPWABR.65706d0362a94062a58181f41690b99f"/>
+<summary>...FROST ADVISORY REMAINS IN EFFECT FROM 2 AM TO 8 AM CDT WEDNESDAY... * WHAT...Temperatures from 33 to 36 degrees will result in frost formation. * WHERE...In Minnesota, Traverse and Big Stone Counties. In South Dakota, Marshall, Roberts, Day, Clark, Codington, Grant,</summary>
+<cap:event>Frost Advisory</cap:event>
+<cap:effective>2022-09-27T18:26:00-06:00</cap:effective>
 <cap:expires>2022-09-28T07:00:00-06:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
@@ -10595,7 +10654,7 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
-<value>/O.NEW.KABR.FR.Y.0004.220928T0700Z-220928T1300Z/</value>
+<value>/O.CON.KABR.FR.Y.0004.220928T0700Z-220928T1300Z/</value>
 </cap:parameter>
 </entry>
 <entry>
