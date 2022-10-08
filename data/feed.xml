@@ -16,16 +16,48 @@ xmlns = 'http://www.w3.org/2005/Atom'
 xmlns:cap = 'urn:oasis:names:tc:emergency:cap:1.1'
 xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 >
-<!-- http-date = Sat, 08 Oct 2022 09:58:00 GMT -->
+<!-- http-date = Sat, 08 Oct 2022 10:30:00 GMT -->
 <id>https://alerts.weather.gov/cap/us.php?x=0</id>
 <logo>http://alerts.weather.gov/images/xml_logo.gif</logo>
 <generator>NWS CAP Server</generator>
-<updated>2022-10-08T03:58:00-06:00</updated>
+<updated>2022-10-08T10:30:00+00:00</updated>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
 <title>Current Watches, Warnings and Advisories for the United States Issued by the National Weather Service</title>
 <link href="https://alerts.weather.gov/cap/us.php?x=0"/>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=AK126412013DC0.CoastalFloodWatch.1264122E6520AK.AFCCFWALU.76e72dd356151c8366043735acfb0743</id>
+<updated>2022-10-08T02:08:00-08:00</updated>
+<published>2022-10-08T02:08:00-08:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Coastal Flood Watch issued October 08 at 2:08AM AKDT until October 10 at 10:00PM AKDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=AK126412013DC0.CoastalFloodWatch.1264122E6520AK.AFCCFWALU.76e72dd356151c8366043735acfb0743"/>
+<summary>...COASTAL FLOOD WATCH NOW IN EFFECT FROM MONDAY MORNING THROUGH MONDAY EVENING FOR BRISTOL BAY... * LOCATION...Bristol Bay coast. * COASTAL FLOODING...Water level rises from 2 to 5 feet above normal highest tide line are possible. * TIMING...Water levels will rise with high tide Monday. They are</summary>
+<cap:event>Coastal Flood Watch</cap:event>
+<cap:effective>2022-10-08T02:08:00-08:00</cap:effective>
+<cap:expires>2022-10-10T22:00:00-08:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Future</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Possible</cap:certainty>
+<cap:areaDesc>Bristol Bay</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>002060 002070 002164</value>
+<valueName>UGC</valueName>
+<value>AKZ161</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.EXT.PAFC.CF.A.0002.221010T1800Z-221011T0600Z/</value>
+</cap:parameter>
+</entry>
 <entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=AK1264120085C4.CoastalFloodWarning.12641201D6E0AK.AFGCFWAFG.8a34501d6d9f5a39976d1561972e5b95</id>
 <updated>2022-10-07T21:37:00-08:00</updated>
@@ -120,38 +152,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value></value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=AK126411F3B8D0.CoastalFloodWatch.1264123039E0AK.AFCCFWALU.557fa012abd6216fa53d5c86407cf9be</id>
-<updated>2022-10-07T13:48:00-08:00</updated>
-<published>2022-10-07T13:48:00-08:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Coastal Flood Watch issued October 07 at 1:48PM AKDT until October 11 at 10:00AM AKDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=AK126411F3B8D0.CoastalFloodWatch.1264123039E0AK.AFCCFWALU.557fa012abd6216fa53d5c86407cf9be"/>
-<summary>...COASTAL FLOOD WATCH IN EFFECT FROM LATE SUNDAY NIGHT THROUGH TUESDAY MORNING... The National Weather Service in Anchorage has issued a Coastal Flood Watch, which is in effect from late Sunday night through Tuesday morning. * LOCATION...Kuskokwim Delta and Bristol Bay coasts.</summary>
-<cap:event>Coastal Flood Watch</cap:event>
-<cap:effective>2022-10-07T13:48:00-08:00</cap:effective>
-<cap:expires>2022-10-11T10:00:00-08:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Future</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Possible</cap:certainty>
-<cap:areaDesc>Bristol Bay; Kuskokwim Delta</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>002050 002060 002070 002164</value>
-<valueName>UGC</valueName>
-<value>AKZ155 AKZ161</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.NEW.PAFC.CF.A.0002.221010T1200Z-221011T1800Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -997,6 +997,38 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <valueName>VTEC</valueName>
 <value>/O.CON.KTBW.FL.W.0009.000000T0000Z-221010T0600Z/
 /ARHF1.1.ER.220928T1042Z.220929T1445Z.221010T0000Z.NO/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=GU126412014658.HydrologicOutlook.126412027ED8GU.GUMESFGUM.05a8c2f769ba2a12e0b9db4515b669c1</id>
+<updated>2022-10-08T20:30:00+10:00</updated>
+<published>2022-10-08T20:30:00+10:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Hydrologic Outlook issued October 08 at 8:30PM ChST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=GU126412014658.HydrologicOutlook.126412027ED8GU.GUMESFGUM.05a8c2f769ba2a12e0b9db4515b669c1"/>
+<summary>...HEAVY RAINFALL POSSIBLE NEXT WEEK... This Hydrologic Outlook is for Guam, Rota, Tinian and Saipan in the Mariana Islands. A developing monsoon trough and moderate surge combined with a possible tropical disturbance is expected to bring heavy rain to the Marianas from Tuesday to Friday next week. A monsoon trough is</summary>
+<cap:event>Hydrologic Outlook</cap:event>
+<cap:effective>2022-10-08T20:30:00+10:00</cap:effective>
+<cap:expires>2022-10-09T04:30:00+10:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Future</cap:urgency>
+<cap:severity>Unknown</cap:severity>
+<cap:certainty>Possible</cap:certainty>
+<cap:areaDesc>GUC100; GUC110; GUC120; Guam</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>066010</value>
+<valueName>UGC</valueName>
+<value>GUC010 GUC100 GUC110 GUC120</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value></value>
 </cap:parameter>
 </entry>
 <entry>
@@ -3701,6 +3733,38 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=MT1264120145F4.SpecialWeatherStatement.12641201D6E0MT.TFXSPSTFX.57e6d2ee2314b06a69e93e2023207401</id>
+<updated>2022-10-08T04:29:00-06:00</updated>
+<published>2022-10-08T04:29:00-06:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Special Weather Statement issued October 08 at 4:29AM MDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MT1264120145F4.SpecialWeatherStatement.12641201D6E0MT.TFXSPSTFX.57e6d2ee2314b06a69e93e2023207401"/>
+<summary>...Patchy dense fog this morning... Patch dense fog will affect portions of North Central and Southwest MT this morning. The fog will reduce visibility to near a quarter of a mile at times. The fog will diminish by late morning. Those traveling this morning should be alert for quickly changing</summary>
+<cap:event>Special Weather Statement</cap:event>
+<cap:effective>2022-10-08T04:29:00-06:00</cap:effective>
+<cap:expires>2022-10-08T08:00:00-06:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Observed</cap:certainty>
+<cap:areaDesc>Beaverhead and Western Madison below 6000ft; Big Belt, Bridger and Castle Mountains; Canyon Ferry Area; Cascade County below 5000ft; Eastern Glacier, Western Toole, and Central Pondera; Eastern Pondera and Eastern Teton; Elkhorn and Boulder Mountains; Gallatin Valley; Gates of the Mountains; Helena Valley; Little Belt and Highwood Mountains; Madison River Valley; Meagher County Valleys; Missouri Headwaters; Northern High Plains; Southern High Plains</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>030001 030007 030013 030031 030035 030043 030045 030049 030057 030059 030073 030099 030101</value>
+<valueName>UGC</valueName>
+<value>MTZ302 MTZ303 MTZ308 MTZ309 MTZ312 MTZ316 MTZ317 MTZ319 MTZ320 MTZ321 MTZ322 MTZ323 MTZ324 MTZ325 MTZ326 MTZ328</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value></value>
+</cap:parameter>
+</entry>
+<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=NC12641200CCDC.FrostAdvisory.126412111920NC.GSPNPWGSP.035f7fd4761b958704b636c5ff5450ed</id>
 <updated>2022-10-08T03:19:00-04:00</updated>
 <published>2022-10-08T03:19:00-04:00</published>
@@ -4801,6 +4865,38 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <value>/O.UPG.KRLX.FZ.A.0001.221009T0600Z-221009T1300Z/
 /O.NEW.KRLX.FZ.W.0005.221009T0600Z-221009T1300Z/
 /O.CON.KRLX.FR.Y.0007.000000T0000Z-221008T1400Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=OR126412013EEC.DenseFogAdvisory.126412027320OR.PQRNPWPQR.5556ec0d4be7183582ec0182565c878c</id>
+<updated>2022-10-08T03:11:00-07:00</updated>
+<published>2022-10-08T03:11:00-07:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Dense Fog Advisory issued October 08 at 3:11AM PDT until October 08 at 11:00AM PDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=OR126412013EEC.DenseFogAdvisory.126412027320OR.PQRNPWPQR.5556ec0d4be7183582ec0182565c878c"/>
+<summary>...DENSE FOG ADVISORY IN EFFECT UNTIL 11 AM PDT THIS MORNING... * WHAT...Areas of visibility less than one-quarter mile in dense fog. * WHERE...Central Willamette Valley and South Willamette Valley. * WHEN...Until 11 AM PDT this morning. * IMPACTS...Hazardous driving conditions due to low visibility.</summary>
+<cap:event>Dense Fog Advisory</cap:event>
+<cap:effective>2022-10-08T03:11:00-07:00</cap:effective>
+<cap:expires>2022-10-08T11:00:00-07:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Central Willamette Valley; South Willamette Valley</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>041003 041039 041043 041047 041053 041071</value>
+<valueName>UGC</valueName>
+<value>ORZ007 ORZ008</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.NEW.KPQR.FG.Y.0028.221008T1200Z-221008T1800Z/</value>
 </cap:parameter>
 </entry>
 <entry>
