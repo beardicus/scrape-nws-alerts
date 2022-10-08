@@ -16,16 +16,48 @@ xmlns = 'http://www.w3.org/2005/Atom'
 xmlns:cap = 'urn:oasis:names:tc:emergency:cap:1.1'
 xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 >
-<!-- http-date = Sat, 08 Oct 2022 20:01:00 GMT -->
+<!-- http-date = Sat, 08 Oct 2022 20:32:00 GMT -->
 <id>https://alerts.weather.gov/cap/us.php?x=0</id>
 <logo>http://alerts.weather.gov/images/xml_logo.gif</logo>
 <generator>NWS CAP Server</generator>
-<updated>2022-10-08T13:01:00-07:00</updated>
+<updated>2022-10-08T13:32:00-07:00</updated>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
 <title>Current Watches, Warnings and Advisories for the United States Issued by the National Weather Service</title>
 <link href="https://alerts.weather.gov/cap/us.php?x=0"/>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=AK12641202CB04.HighWindWarning.1264121055D0AK.AFCNPWAER.72731399166b66a512439cee0147e5e8</id>
+<updated>2022-10-08T12:25:00-08:00</updated>
+<published>2022-10-08T12:25:00-08:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>High Wind Warning issued October 08 at 12:25PM AKDT until October 09 at 1:00AM AKDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=AK12641202CB04.HighWindWarning.1264121055D0AK.AFCNPWAER.72731399166b66a512439cee0147e5e8"/>
+<summary>...HIGH WIND WARNING REMAINS IN EFFECT UNTIL 1 AM AKDT SUNDAY... * WHAT...Southeast winds 40 to 50 mph with gusts up to 70 mph. * WHERE...Turnagain Arm, Anchorage Hillside, and higher elevations. * WHEN...Until 1 AM AKDT Sunday. * IMPACTS...Damaging winds will blow down trees and power lines. Widespread power outages are expected. Travel will be</summary>
+<cap:event>High Wind Warning</cap:event>
+<cap:effective>2022-10-08T12:25:00-08:00</cap:effective>
+<cap:expires>2022-10-09T01:00:00-08:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Severe</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Anchorage</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>002020</value>
+<valueName>UGC</valueName>
+<value>AKZ101</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.PAFC.HW.W.0004.000000T0000Z-221009T0900Z/</value>
+</cap:parameter>
+</entry>
 <entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=AK12641202AEE4.DenseFogAdvisory.126412030F60AK.AJKNPWAJK.fb488f7cf255a4b893bebf774af85990</id>
 <updated>2022-10-08T11:53:00-08:00</updated>
@@ -56,38 +88,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value>/O.EXT.PAJK.FG.Y.0047.000000T0000Z-221008T2200Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=AK126412023C0C.HighWindWarning.1264121055D0AK.AFCNPWAER.72731399166b66a512439cee0147e5e8</id>
-<updated>2022-10-08T08:59:00-08:00</updated>
-<published>2022-10-08T08:59:00-08:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>High Wind Warning issued October 08 at 8:59AM AKDT until October 09 at 1:00AM AKDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=AK126412023C0C.HighWindWarning.1264121055D0AK.AFCNPWAER.72731399166b66a512439cee0147e5e8"/>
-<summary>...HIGH WIND WARNING IN EFFECT UNTIL 1 AM AKDT SUNDAY FOR TURNAGAIN ARM, ANCHORAGE HILLSIDE, AND HIGHER ELEVATIONS... * WHAT...Southeast winds 40 to 50 mph with gusts up to 65 mph. * WHERE...Turnagain Arm, Anchorage Hillside, and higher elevations. * WHEN...Until 1 AM AKDT Sunday. * IMPACTS...High winds may move loose debris, damage property, and</summary>
-<cap:event>High Wind Warning</cap:event>
-<cap:effective>2022-10-08T08:59:00-08:00</cap:effective>
-<cap:expires>2022-10-09T01:00:00-08:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Severe</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Anchorage</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>002020</value>
-<valueName>UGC</valueName>
-<value>AKZ101</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.NEW.PAFC.HW.W.0004.221008T1659Z-221009T0900Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -347,14 +347,209 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=AZ12641202C1A4.SpecialWeatherStatement.12641202D2D4AZ.TWCSPSTWC.867075efd69edebfb7c75457e9648af3</id>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=AZ12641202CDC0.SevereThunderstormWarning.12641202EE2CAZ.TWCSVSTWC.223d7bcea4883e6a07baab67f2cdb2ba</id>
+<updated>2022-10-08T13:32:00-07:00</updated>
+<published>2022-10-08T13:32:00-07:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Severe Thunderstorm Warning issued October 08 at 1:32PM MST until October 08 at 2:15PM MST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=AZ12641202CDC0.SevereThunderstormWarning.12641202EE2CAZ.TWCSVSTWC.223d7bcea4883e6a07baab67f2cdb2ba"/>
+<summary>...A SEVERE THUNDERSTORM WARNING REMAINS IN EFFECT UNTIL 215 PM MST FOR SOUTHWESTERN COCHISE AND NORTHEASTERN SANTA CRUZ COUNTIES... At 131 PM MST, a severe thunderstorm was located near Fort Huachuca, or 10 miles northwest of Sierra Vista, moving north at 5 mph. HAZARD...60 mph wind gusts and quarter size hail. SOURCE...Radar indicated.</summary>
+<cap:event>Severe Thunderstorm Warning</cap:event>
+<cap:effective>2022-10-08T13:32:00-07:00</cap:effective>
+<cap:expires>2022-10-08T14:15:00-07:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Immediate</cap:urgency>
+<cap:severity>Severe</cap:severity>
+<cap:certainty>Observed</cap:certainty>
+<cap:areaDesc>Cochise; Santa Cruz</cap:areaDesc>
+<cap:polygon>31.51,-110.32 31.53,-110.44 31.68,-110.46 31.68,-110.31 31.51,-110.32</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>004003 004023</value>
+<valueName>UGC</valueName>
+<value>AZC003 AZC023</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KTWC.SV.W.0216.000000T0000Z-221008T2115Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=AZ12641202CDC0.SevereWeatherStatement.12641202EE2CAZ.TWCSVSTWC.74d186d36e7589f6b45f4e00f85d9250</id>
+<updated>2022-10-08T13:32:00-07:00</updated>
+<published>2022-10-08T13:32:00-07:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Severe Weather Statement issued October 08 at 1:32PM MST until October 08 at 2:15PM MST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=AZ12641202CDC0.SevereWeatherStatement.12641202EE2CAZ.TWCSVSTWC.74d186d36e7589f6b45f4e00f85d9250"/>
+<summary>...A SEVERE THUNDERSTORM WARNING REMAINS IN EFFECT UNTIL 215 PM MST FOR SOUTHWESTERN COCHISE AND NORTHEASTERN SANTA CRUZ COUNTIES... At 131 PM MST, a severe thunderstorm was located near Fort Huachuca, or 10 miles northwest of Sierra Vista, moving north at 5 mph. HAZARD...60 mph wind gusts and quarter size hail. SOURCE...Radar indicated.</summary>
+<cap:event>Severe Weather Statement</cap:event>
+<cap:effective>2022-10-08T13:32:00-07:00</cap:effective>
+<cap:expires>2022-10-08T14:15:00-07:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Immediate</cap:urgency>
+<cap:severity>Severe</cap:severity>
+<cap:certainty>Observed</cap:certainty>
+<cap:areaDesc>Cochise; Santa Cruz</cap:areaDesc>
+<cap:polygon>31.51,-110.32 31.53,-110.44 31.68,-110.46 31.68,-110.31 31.51,-110.32</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>004003 004023</value>
+<valueName>UGC</valueName>
+<value>AZC003 AZC023</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KTWC.SV.W.0216.000000T0000Z-221008T2115Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=AZ12641202C8AC.SpecialWeatherStatement.12641202E850AZ.TWCSPSTWC.d9e4f7c1b40ce1aff9d1db9b74dff5bf</id>
+<updated>2022-10-08T13:19:00-07:00</updated>
+<published>2022-10-08T13:19:00-07:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Special Weather Statement issued October 08 at 1:19PM MST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=AZ12641202C8AC.SpecialWeatherStatement.12641202E850AZ.TWCSPSTWC.d9e4f7c1b40ce1aff9d1db9b74dff5bf"/>
+<summary>...A cluster of strong thunderstorms will impact portions of southwestern Cochise and far northeastern corner of Santa Cruz Counties through 200 PM MST... At 118 PM MST, Doppler radar was tracking a cluster of strong thunderstorms near Fort Huachuca and Serra Vista, moving north at 5 mph.</summary>
+<cap:event>Special Weather Statement</cap:event>
+<cap:effective>2022-10-08T13:19:00-07:00</cap:effective>
+<cap:expires>2022-10-08T14:00:00-07:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Observed</cap:certainty>
+<cap:areaDesc>Dragoon, Mule, Huachuca and Santa Rita Mountains including Bisbee, Canelo Hills, Madera Canyon; Upper San Pedro River Valley including Sierra Vista, Benson</cap:areaDesc>
+<cap:polygon>31.5,-110.3 31.52,-110.47 31.72,-110.51 31.74,-110.3 31.5,-110.3</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>004003 004023</value>
+<valueName>UGC</valueName>
+<value>AZZ507 AZZ513</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value></value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=AZ12641202C780.FloodAdvisory.12641202EE2CAZ.TWCFLSTWC.2f0727398a050887ef5f65ccca6ae4a4</id>
+<updated>2022-10-08T13:16:00-07:00</updated>
+<published>2022-10-08T13:16:00-07:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Flood Advisory issued October 08 at 1:16PM MST until October 08 at 2:15PM MST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=AZ12641202C780.FloodAdvisory.12641202EE2CAZ.TWCFLSTWC.2f0727398a050887ef5f65ccca6ae4a4"/>
+<summary>...FLOOD ADVISORY IN EFFECT UNTIL 315 PM MST THIS AFTERNOON... * WHAT...Small stream flooding caused by excessive rainfall is expected. * WHERE...Portions of South Central Arizona and Southeast Arizona, including the following counties, in South Central Arizona, Pima. In Southeast Arizona, Cochise.</summary>
+<cap:event>Flood Advisory</cap:event>
+<cap:effective>2022-10-08T13:16:00-07:00</cap:effective>
+<cap:expires>2022-10-08T14:15:00-07:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Pima</cap:areaDesc>
+<cap:polygon>32.05,-110.75 32.07,-110.71 32.04,-110.56 31.99,-110.4 31.92,-110.41 31.88,-110.42 31.94,-110.58 31.97,-110.66 32.05,-110.75</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>004019</value>
+<valueName>UGC</valueName>
+<value>AZC019</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.NEW.KTWC.FA.Y.0306.221008T2016Z-221008T2215Z/
+/00000.N.ER.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=AZ12641202C780.FloodAdvisory.12641203153CAZ.TWCFLSTWC.787cfa42e4da3ebd8d46c0ecb1c75840</id>
+<updated>2022-10-08T13:16:00-07:00</updated>
+<published>2022-10-08T13:16:00-07:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Flood Advisory issued October 08 at 1:16PM MST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=AZ12641202C780.FloodAdvisory.12641203153CAZ.TWCFLSTWC.787cfa42e4da3ebd8d46c0ecb1c75840"/>
+<summary>...FLOOD ADVISORY IN EFFECT UNTIL 315 PM MST THIS AFTERNOON... * WHAT...Small stream flooding caused by excessive rainfall is expected. * WHERE...Portions of South Central Arizona and Southeast Arizona, including the following counties, in South Central Arizona, Pima. In Southeast Arizona, Cochise.</summary>
+<cap:event>Flood Advisory</cap:event>
+<cap:effective>2022-10-08T13:16:00-07:00</cap:effective>
+<cap:expires>2022-10-08T15:15:00-07:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Cochise</cap:areaDesc>
+<cap:polygon>32.05,-110.75 32.07,-110.71 32.04,-110.56 31.99,-110.4 31.92,-110.41 31.88,-110.42 31.94,-110.58 31.97,-110.66 32.05,-110.75</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>004003</value>
+<valueName>UGC</valueName>
+<value>AZC003</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.NEW.KTWC.FA.Y.0306.221008T2016Z-221008T2215Z/
+/00000.N.ER.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=AZ12641202C58C.FloodAdvisory.12641202EE2CAZ.TWCFLSTWC.36a9a7708eb4aac028003f42e0de3895</id>
+<updated>2022-10-08T13:11:00-07:00</updated>
+<published>2022-10-08T13:11:00-07:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Flood Advisory issued October 08 at 1:11PM MST until October 08 at 2:15PM MST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=AZ12641202C58C.FloodAdvisory.12641202EE2CAZ.TWCFLSTWC.36a9a7708eb4aac028003f42e0de3895"/>
+<summary>...FLOOD ADVISORY IN EFFECT UNTIL 315 PM MST THIS AFTERNOON... * WHAT...Small stream flooding caused by excessive rainfall is expected. * WHERE...A portion of Southeast Arizona, including the following county, Santa Cruz. * WHEN...Until 315 PM MST.</summary>
+<cap:event>Flood Advisory</cap:event>
+<cap:effective>2022-10-08T13:11:00-07:00</cap:effective>
+<cap:expires>2022-10-08T14:15:00-07:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Santa Cruz</cap:areaDesc>
+<cap:polygon>31.33,-110.81 31.38,-110.72 31.48,-110.63 31.51,-110.58 31.5,-110.51 31.44,-110.54 31.36,-110.57 31.33,-110.59 31.33,-110.65 31.33,-110.75 31.33,-110.8 31.33,-110.81</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>004023</value>
+<valueName>UGC</valueName>
+<value>AZC023</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.NEW.KTWC.FA.Y.0305.221008T2011Z-221008T2215Z/
+/00000.N.ER.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=AZ12641202C1A4.SpecialWeatherStatement.12641202D2D4AZ.TWCSPSTWC.fbfec30df8bd06e56d8253ac263d347c</id>
 <updated>2022-10-08T13:01:00-07:00</updated>
 <published>2022-10-08T13:01:00-07:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
 <title>Special Weather Statement issued October 08 at 1:01PM MST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=AZ12641202C1A4.SpecialWeatherStatement.12641202D2D4AZ.TWCSPSTWC.867075efd69edebfb7c75457e9648af3"/>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=AZ12641202C1A4.SpecialWeatherStatement.12641202D2D4AZ.TWCSPSTWC.fbfec30df8bd06e56d8253ac263d347c"/>
 <summary>...Strong thunderstorms will impact portions of east central Pima and west central Cochise Counties through 145 PM MST... At 100 PM MST, Doppler radar was tracking strong thunderstorms along a line extending from near Vail to near Kartchner Caverns State Park. Movement was north at 10 mph. HAZARD...Winds in excess of 40 mph and nickel size hail.</summary>
 <cap:event>Special Weather Statement</cap:event>
 <cap:effective>2022-10-08T13:01:00-07:00</cap:effective>
@@ -365,13 +560,13 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:urgency>Expected</cap:urgency>
 <cap:severity>Minor</cap:severity>
 <cap:certainty>Observed</cap:certainty>
-<cap:areaDesc>Dragoon, Mule, Huachuca and Santa Rita Mountains including Bisbee, Canelo Hills, Madera Canyon; Santa Catalina and Rincon Mountains including Mount Lemmon, Summerhaven; Tucson Metro Area including Tucson, Green Valley, Marana, Vail; Upper San Pedro River Valley including Sierra Vista, Benson</cap:areaDesc>
+<cap:areaDesc>Santa Catalina and Rincon Mountains including Mount Lemmon, Summerhaven; Tucson Metro Area including Tucson, Green Valley, Marana, Vail</cap:areaDesc>
 <cap:polygon>32.24,-110.68 32.02,-110.29 31.85,-110.43 31.99,-110.73 32.07,-110.72 32.24,-110.68</cap:polygon>
 <cap:geocode>
 <valueName>FIPS6</valueName>
-<value>004003 004019 004023</value>
+<value>004019</value>
 <valueName>UGC</valueName>
-<value>AZZ504 AZZ507 AZZ513 AZZ514</value>
+<value>AZZ504 AZZ514</value>
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
@@ -411,18 +606,18 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=AZ12641202A9D0.FloodAdvisory.12641202F9E4AZ.TWCFLSTWC.702697ddf412ae2a440c17a8e8f53c6f</id>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=AZ12641202A9D0.FloodAdvisory.12641202EE2CAZ.TWCFLSTWC.702697ddf412ae2a440c17a8e8f53c6f</id>
 <updated>2022-10-08T12:40:00-07:00</updated>
 <published>2022-10-08T12:40:00-07:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Flood Advisory issued October 08 at 12:40PM MST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=AZ12641202A9D0.FloodAdvisory.12641202F9E4AZ.TWCFLSTWC.702697ddf412ae2a440c17a8e8f53c6f"/>
+<title>Flood Advisory issued October 08 at 12:40PM MST until October 08 at 2:15PM MST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=AZ12641202A9D0.FloodAdvisory.12641202EE2CAZ.TWCFLSTWC.702697ddf412ae2a440c17a8e8f53c6f"/>
 <summary>...FLOOD ADVISORY IN EFFECT UNTIL 245 PM MST THIS AFTERNOON... * WHAT...Small stream flooding caused by excessive rainfall is expected. * WHERE...A portion of South Central Arizona, including the following county, Pima. * WHEN...Until 245 PM MST.</summary>
 <cap:event>Flood Advisory</cap:event>
 <cap:effective>2022-10-08T12:40:00-07:00</cap:effective>
-<cap:expires>2022-10-08T14:45:00-07:00</cap:expires>
+<cap:expires>2022-10-08T14:15:00-07:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
 <cap:category>Met</cap:category>
@@ -1129,6 +1324,38 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=IL12641202C5F0.FrostAdvisory.12641210F210IL.PAHNPWPAH.2cb140845b9fd764be5e8c4969f4409f</id>
+<updated>2022-10-08T15:12:00-05:00</updated>
+<published>2022-10-08T15:12:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Frost Advisory issued October 08 at 3:12PM CDT until October 09 at 8:00AM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=IL12641202C5F0.FrostAdvisory.12641210F210IL.PAHNPWPAH.2cb140845b9fd764be5e8c4969f4409f"/>
+<summary>...FROST ADVISORY REMAINS IN EFFECT FROM 1 AM TO 8 AM CDT SUNDAY... * WHAT...Temperatures as low as 33 will result in frost formation. A few of the typical cold spots may see temperatures drop below freezing. * WHERE...Portions of southern Illinois, southwest Indiana,</summary>
+<cap:event>Frost Advisory</cap:event>
+<cap:effective>2022-10-08T15:12:00-05:00</cap:effective>
+<cap:expires>2022-10-09T08:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Alexander; Edwards; Franklin; Gallatin; Hamilton; Hardin; Jackson; Jefferson; Johnson; Massac; Perry; Pope; Pulaski; Saline; Union; Wabash; Wayne; White; Williamson</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>017003 017047 017055 017059 017065 017069 017077 017081 017087 017127 017145 017151 017153 017165 017181 017185 017191 017193 017199</value>
+<valueName>UGC</valueName>
+<value>ILZ075 ILZ076 ILZ077 ILZ078 ILZ080 ILZ081 ILZ082 ILZ083 ILZ084 ILZ085 ILZ086 ILZ087 ILZ088 ILZ089 ILZ090 ILZ091 ILZ092 ILZ093 ILZ094</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KPAH.FR.Y.0007.221009T0600Z-221009T1300Z/</value>
+</cap:parameter>
+</entry>
+<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=IL12641202ADB8.FrostAdvisory.12641210F210IL.ILXNPWILX.970c2ccdecdad7680e0c49b098ba6dc6</id>
 <updated>2022-10-08T14:50:00-05:00</updated>
 <published>2022-10-08T14:50:00-05:00</published>
@@ -1193,64 +1420,31 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=IL126412019860.FrostAdvisory.12641210F210IL.PAHNPWPAH.9817aa11e90d4dd01d4addbbc8143758</id>
-<updated>2022-10-08T07:40:00-05:00</updated>
-<published>2022-10-08T07:40:00-05:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=IN12641202C5F0.FrostAdvisory.12641210F210IN.PAHNPWPAH.8b2f8b808fbfe7c8cfe133f06ac4c78b</id>
+<updated>2022-10-08T16:12:00-04:00</updated>
+<published>2022-10-08T16:12:00-04:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Frost Advisory issued October 08 at 7:40AM CDT until October 09 at 8:00AM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=IL126412019860.FrostAdvisory.12641210F210IL.PAHNPWPAH.9817aa11e90d4dd01d4addbbc8143758"/>
-<summary>...FROST ADVISORY REMAINS IN EFFECT FROM 1 AM TO 8 AM CDT SUNDAY... ...THIS MORNING`S FROST ADVISORY IS CANCELLED... * WHAT...Temperatures as low as 33 will result in frost formation. * WHERE...Portions of southern Illinois, southwest Indiana,</summary>
+<title>Frost Advisory issued October 08 at 4:12PM EDT until October 09 at 9:00AM EDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=IN12641202C5F0.FrostAdvisory.12641210F210IN.PAHNPWPAH.8b2f8b808fbfe7c8cfe133f06ac4c78b"/>
+<summary>...FROST ADVISORY REMAINS IN EFFECT FROM 1 AM TO 8 AM CDT SUNDAY... * WHAT...Temperatures as low as 33 will result in frost formation. A few of the typical cold spots may see temperatures drop below freezing. * WHERE...Portions of southern Illinois, southwest Indiana,</summary>
 <cap:event>Frost Advisory</cap:event>
-<cap:effective>2022-10-08T07:40:00-05:00</cap:effective>
-<cap:expires>2022-10-09T08:00:00-05:00</cap:expires>
+<cap:effective>2022-10-08T16:12:00-04:00</cap:effective>
+<cap:expires>2022-10-09T09:00:00-04:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
 <cap:category>Met</cap:category>
 <cap:urgency>Expected</cap:urgency>
 <cap:severity>Minor</cap:severity>
 <cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Edwards; Franklin; Gallatin; Hamilton; Jackson; Jefferson; Perry; Saline; Wabash; Wayne; White; Williamson</cap:areaDesc>
+<cap:areaDesc>Gibson; Pike; Posey; Spencer; Vanderburgh; Warrick</cap:areaDesc>
 <cap:polygon></cap:polygon>
 <cap:geocode>
 <valueName>FIPS6</valueName>
-<value>017047 017055 017059 017065 017077 017081 017145 017165 017185 017191 017193 017199</value>
+<value>018051 018125 018129 018147 018163 018173</value>
 <valueName>UGC</valueName>
-<value>ILZ075 ILZ076 ILZ077 ILZ078 ILZ080 ILZ081 ILZ082 ILZ083 ILZ084 ILZ085 ILZ086 ILZ087</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CAN.KPAH.FR.Y.0006.000000T0000Z-221008T1400Z/
-/O.CON.KPAH.FR.Y.0007.221009T0600Z-221009T1300Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=IL126412019860.FrostAdvisory.12641210F210IL.PAHNPWPAH.189854bce0caf4f021e55b04c7d9d0a8</id>
-<updated>2022-10-08T07:40:00-05:00</updated>
-<published>2022-10-08T07:40:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Frost Advisory issued October 08 at 7:40AM CDT until October 09 at 8:00AM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=IL126412019860.FrostAdvisory.12641210F210IL.PAHNPWPAH.189854bce0caf4f021e55b04c7d9d0a8"/>
-<summary>...FROST ADVISORY REMAINS IN EFFECT FROM 1 AM TO 8 AM CDT SUNDAY... * WHAT...Temperatures as low as 34 will result in frost formation. * WHERE...Portions of southern Illinois, western Kentucky and southeast Missouri.</summary>
-<cap:event>Frost Advisory</cap:event>
-<cap:effective>2022-10-08T07:40:00-05:00</cap:effective>
-<cap:expires>2022-10-09T08:00:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Alexander; Hardin; Johnson; Massac; Pope; Pulaski; Union</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>017003 017069 017087 017127 017151 017153 017181</value>
-<valueName>UGC</valueName>
-<value>ILZ088 ILZ089 ILZ090 ILZ091 ILZ092 ILZ093 ILZ094</value>
+<value>INZ081 INZ082 INZ085 INZ086 INZ087 INZ088</value>
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
@@ -1388,39 +1582,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=IN126412019860.FrostAdvisory.12641210F210IN.PAHNPWPAH.8b2f8b808fbfe7c8cfe133f06ac4c78b</id>
-<updated>2022-10-08T08:40:00-04:00</updated>
-<published>2022-10-08T08:40:00-04:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Frost Advisory issued October 08 at 8:40AM EDT until October 09 at 9:00AM EDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=IN126412019860.FrostAdvisory.12641210F210IN.PAHNPWPAH.8b2f8b808fbfe7c8cfe133f06ac4c78b"/>
-<summary>...FROST ADVISORY REMAINS IN EFFECT FROM 1 AM TO 8 AM CDT SUNDAY... ...THIS MORNING`S FROST ADVISORY IS CANCELLED... * WHAT...Temperatures as low as 33 will result in frost formation. * WHERE...Portions of southern Illinois, southwest Indiana,</summary>
-<cap:event>Frost Advisory</cap:event>
-<cap:effective>2022-10-08T08:40:00-04:00</cap:effective>
-<cap:expires>2022-10-09T09:00:00-04:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Gibson; Pike; Posey; Spencer; Vanderburgh; Warrick</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>018051 018125 018129 018147 018163 018173</value>
-<valueName>UGC</valueName>
-<value>INZ081 INZ082 INZ085 INZ086 INZ087 INZ088</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CAN.KPAH.FR.Y.0006.000000T0000Z-221008T1400Z/
-/O.CON.KPAH.FR.Y.0007.221009T0600Z-221009T1300Z/</value>
-</cap:parameter>
-</entry>
-<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=KS12641202AE1C.FrostAdvisory.126412111920KS.GLDNPWGLD.83f42fe99f05c1a4657de190ed255c93</id>
 <updated>2022-10-08T14:51:00-05:00</updated>
 <published>2022-10-08T14:51:00-05:00</published>
@@ -1450,6 +1611,102 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value>/O.NEW.KGLD.FR.Y.0004.221009T0700Z-221009T1400Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=KY12641202C71C.FreezeWarning.12641210F210KY.JKLNPWJKL.fb381f0193d90902a012412b6bb4cfda</id>
+<updated>2022-10-08T16:15:00-04:00</updated>
+<published>2022-10-08T16:15:00-04:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Freeze Warning issued October 08 at 4:15PM EDT until October 09 at 9:00AM EDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=KY12641202C71C.FreezeWarning.12641210F210KY.JKLNPWJKL.fb381f0193d90902a012412b6bb4cfda"/>
+<summary>...FREEZE WARNING REMAINS IN EFFECT FROM 3 AM TO 9 AM EDT SUNDAY... * WHAT...Sub-freezing temperatures as low as 30 expected along with widespread frost. * WHERE...Portions of east central, south central and southeast Kentucky.</summary>
+<cap:event>Freeze Warning</cap:event>
+<cap:effective>2022-10-08T16:15:00-04:00</cap:effective>
+<cap:expires>2022-10-09T09:00:00-04:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Bath; Bell; Breathitt; Clay; Elliott; Estill; Fleming; Floyd; Jackson; Johnson; Knott; Knox; Laurel; Lee; Leslie; Magoffin; Martin; McCreary; Menifee; Montgomery; Morgan; Owsley; Perry; Powell; Pulaski; Rockcastle; Rowan; Wayne; Whitley; Wolfe</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>021011 021013 021025 021051 021063 021065 021069 021071 021109 021115 021119 021121 021125 021129 021131 021147 021153 021159 021165 021173 021175 021189 021193 021197 021199 021203 021205 021231 021235 021237</value>
+<valueName>UGC</valueName>
+<value>KYZ044 KYZ050 KYZ051 KYZ052 KYZ058 KYZ059 KYZ060 KYZ068 KYZ069 KYZ079 KYZ080 KYZ083 KYZ084 KYZ085 KYZ086 KYZ087 KYZ104 KYZ106 KYZ107 KYZ108 KYZ109 KYZ110 KYZ111 KYZ112 KYZ113 KYZ114 KYZ115 KYZ116 KYZ117 KYZ119</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KJKL.FZ.W.0004.221009T0700Z-221009T1300Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=KY12641202C71C.FrostAdvisory.12641210F210KY.JKLNPWJKL.fb168c5e7511456645441f220bde4faa</id>
+<updated>2022-10-08T16:15:00-04:00</updated>
+<published>2022-10-08T16:15:00-04:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Frost Advisory issued October 08 at 4:15PM EDT until October 09 at 9:00AM EDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=KY12641202C71C.FrostAdvisory.12641210F210KY.JKLNPWJKL.fb168c5e7511456645441f220bde4faa"/>
+<summary>...FROST ADVISORY REMAINS IN EFFECT FROM 3 AM TO 9 AM EDT SUNDAY... * WHAT...Temperatures as low as 32 will result in widespread frost formation. * WHERE...Harlan, Letcher and Pike Counties. * WHEN...From 3 AM to 9 AM EDT Sunday.</summary>
+<cap:event>Frost Advisory</cap:event>
+<cap:effective>2022-10-08T16:15:00-04:00</cap:effective>
+<cap:expires>2022-10-09T09:00:00-04:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Harlan; Letcher; Pike</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>021095 021133 021195</value>
+<valueName>UGC</valueName>
+<value>KYZ088 KYZ118 KYZ120</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KJKL.FR.Y.0009.221009T0700Z-221009T1300Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=KY12641202C5F0.FrostAdvisory.12641210F210KY.PAHNPWPAH.76efeba270845f119fdf385f88717184</id>
+<updated>2022-10-08T16:12:00-04:00</updated>
+<published>2022-10-08T16:12:00-04:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Frost Advisory issued October 08 at 4:12PM EDT until October 09 at 9:00AM EDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=KY12641202C5F0.FrostAdvisory.12641210F210KY.PAHNPWPAH.76efeba270845f119fdf385f88717184"/>
+<summary>...FROST ADVISORY REMAINS IN EFFECT FROM 1 AM TO 8 AM CDT SUNDAY... * WHAT...Temperatures as low as 33 will result in frost formation. A few of the typical cold spots may see temperatures drop below freezing. * WHERE...Portions of southern Illinois, southwest Indiana,</summary>
+<cap:event>Frost Advisory</cap:event>
+<cap:effective>2022-10-08T16:12:00-04:00</cap:effective>
+<cap:expires>2022-10-09T09:00:00-04:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Ballard; Caldwell; Calloway; Carlisle; Christian; Crittenden; Daviess; Fulton; Graves; Henderson; Hickman; Hopkins; Livingston; Lyon; Marshall; McCracken; McLean; Muhlenberg; Todd; Trigg; Union; Webster</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>021007 021033 021035 021039 021047 021055 021059 021075 021083 021101 021105 021107 021139 021143 021145 021149 021157 021177 021219 021221 021225 021233</value>
+<valueName>UGC</valueName>
+<value>KYZ001 KYZ002 KYZ003 KYZ004 KYZ005 KYZ006 KYZ007 KYZ008 KYZ009 KYZ010 KYZ011 KYZ012 KYZ013 KYZ014 KYZ015 KYZ016 KYZ017 KYZ018 KYZ019 KYZ020 KYZ021 KYZ022</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KPAH.FR.Y.0007.221009T0600Z-221009T1300Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -1649,103 +1906,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=KY12641201DAC8.FreezeWarning.12641210F210KY.JKLNPWJKL.231f7ec13679c2152b7fa0e19c7aa104</id>
-<updated>2022-10-08T10:10:00-04:00</updated>
-<published>2022-10-08T10:10:00-04:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Freeze Warning issued October 08 at 10:10AM EDT until October 09 at 9:00AM EDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=KY12641201DAC8.FreezeWarning.12641210F210KY.JKLNPWJKL.231f7ec13679c2152b7fa0e19c7aa104"/>
-<summary>...FREEZE WARNING REMAINS IN EFFECT FROM 3 AM TO 9 AM EDT SUNDAY... ...FROST ADVISORY HAS EXPIRED... * WHAT...Sub-freezing temperatures as low as 30 expected along with widespread frost. * WHERE...Portions of east central, south central and southeast</summary>
-<cap:event>Freeze Warning</cap:event>
-<cap:effective>2022-10-08T10:10:00-04:00</cap:effective>
-<cap:expires>2022-10-09T09:00:00-04:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Bath; Elliott; Estill; Fleming; Jackson; Lee; Menifee; Montgomery; Morgan; Powell; Pulaski; Rockcastle; Rowan; Wayne; Wolfe</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>021011 021063 021065 021069 021109 021129 021165 021173 021175 021197 021199 021203 021205 021231 021237</value>
-<valueName>UGC</valueName>
-<value>KYZ044 KYZ050 KYZ051 KYZ052 KYZ058 KYZ059 KYZ060 KYZ068 KYZ069 KYZ079 KYZ083 KYZ104 KYZ106 KYZ108 KYZ111</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.EXP.KJKL.FR.Y.0008.000000T0000Z-221008T1400Z/
-/O.CON.KJKL.FZ.W.0004.221009T0700Z-221009T1300Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=KY12641201DAC8.FreezeWarning.12641210F210KY.JKLNPWJKL.32898eda1d528d889164d090fba5098d</id>
-<updated>2022-10-08T10:10:00-04:00</updated>
-<published>2022-10-08T10:10:00-04:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Freeze Warning issued October 08 at 10:10AM EDT until October 09 at 9:00AM EDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=KY12641201DAC8.FreezeWarning.12641210F210KY.JKLNPWJKL.32898eda1d528d889164d090fba5098d"/>
-<summary>...FREEZE WARNING REMAINS IN EFFECT FROM 3 AM TO 9 AM EDT SUNDAY... * WHAT...Sub-freezing temperatures as low as 30 expected along with widespread frost. * WHERE...Portions of northeast, south central and southeast Kentucky.</summary>
-<cap:event>Freeze Warning</cap:event>
-<cap:effective>2022-10-08T10:10:00-04:00</cap:effective>
-<cap:expires>2022-10-09T09:00:00-04:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Bell; Breathitt; Clay; Floyd; Johnson; Knott; Knox; Laurel; Leslie; Magoffin; Martin; McCreary; Owsley; Perry; Whitley</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>021013 021025 021051 021071 021115 021119 021121 021125 021131 021147 021153 021159 021189 021193 021235</value>
-<valueName>UGC</valueName>
-<value>KYZ080 KYZ084 KYZ085 KYZ086 KYZ087 KYZ107 KYZ109 KYZ110 KYZ112 KYZ113 KYZ114 KYZ115 KYZ116 KYZ117 KYZ119</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KJKL.FZ.W.0004.221009T0700Z-221009T1300Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=KY12641201DAC8.FrostAdvisory.12641210F210KY.JKLNPWJKL.fb168c5e7511456645441f220bde4faa</id>
-<updated>2022-10-08T10:10:00-04:00</updated>
-<published>2022-10-08T10:10:00-04:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Frost Advisory issued October 08 at 10:10AM EDT until October 09 at 9:00AM EDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=KY12641201DAC8.FrostAdvisory.12641210F210KY.JKLNPWJKL.fb168c5e7511456645441f220bde4faa"/>
-<summary>...FROST ADVISORY REMAINS IN EFFECT FROM 3 AM TO 9 AM EDT SUNDAY... * WHAT...Temperatures as low as 32 will result in widespread frost formation. * WHERE...Harlan, Letcher and Pike Counties. * WHEN...From 3 AM to 9 AM EDT Sunday.</summary>
-<cap:event>Frost Advisory</cap:event>
-<cap:effective>2022-10-08T10:10:00-04:00</cap:effective>
-<cap:expires>2022-10-09T09:00:00-04:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Harlan; Letcher; Pike</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>021095 021133 021195</value>
-<valueName>UGC</valueName>
-<value>KYZ088 KYZ118 KYZ120</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KJKL.FR.Y.0009.221009T0700Z-221009T1300Z/</value>
-</cap:parameter>
-</entry>
-<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=KY12641201BB24.FreezeWarning.12641210F210KY.RLXNPWRLX.2d667b04cf271f5d175153adba2d6f0a</id>
 <updated>2022-10-08T09:29:00-04:00</updated>
 <published>2022-10-08T09:29:00-04:00</published>
@@ -1808,71 +1968,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value>/O.CON.KRLX.FZ.W.0005.221009T0600Z-221009T1300Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=KY126412019860.FrostAdvisory.12641210F210KY.PAHNPWPAH.186555ad35b7e842078f4789cc84c914</id>
-<updated>2022-10-08T08:40:00-04:00</updated>
-<published>2022-10-08T08:40:00-04:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Frost Advisory issued October 08 at 8:40AM EDT until October 09 at 9:00AM EDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=KY126412019860.FrostAdvisory.12641210F210KY.PAHNPWPAH.186555ad35b7e842078f4789cc84c914"/>
-<summary>...FROST ADVISORY REMAINS IN EFFECT FROM 1 AM TO 8 AM CDT SUNDAY... * WHAT...Temperatures as low as 34 will result in frost formation. * WHERE...Portions of southern Illinois, western Kentucky and southeast Missouri.</summary>
-<cap:event>Frost Advisory</cap:event>
-<cap:effective>2022-10-08T08:40:00-04:00</cap:effective>
-<cap:expires>2022-10-09T09:00:00-04:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Ballard; Caldwell; Calloway; Carlisle; Christian; Crittenden; Fulton; Graves; Hickman; Hopkins; Livingston; Lyon; Marshall; McCracken; McLean; Muhlenberg; Todd; Trigg; Webster</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>021007 021033 021035 021039 021047 021055 021075 021083 021105 021107 021139 021143 021145 021149 021157 021177 021219 021221 021233</value>
-<valueName>UGC</valueName>
-<value>KYZ001 KYZ002 KYZ003 KYZ004 KYZ005 KYZ006 KYZ007 KYZ008 KYZ009 KYZ010 KYZ011 KYZ012 KYZ013 KYZ015 KYZ016 KYZ017 KYZ020 KYZ021 KYZ022</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KPAH.FR.Y.0007.221009T0600Z-221009T1300Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=KY126412019860.FrostAdvisory.12641210F210KY.PAHNPWPAH.93c9ad28641267ae13cb3fbf132396fc</id>
-<updated>2022-10-08T08:40:00-04:00</updated>
-<published>2022-10-08T08:40:00-04:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Frost Advisory issued October 08 at 8:40AM EDT until October 09 at 9:00AM EDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=KY126412019860.FrostAdvisory.12641210F210KY.PAHNPWPAH.93c9ad28641267ae13cb3fbf132396fc"/>
-<summary>...FROST ADVISORY REMAINS IN EFFECT FROM 1 AM TO 8 AM CDT SUNDAY... ...THIS MORNING`S FROST ADVISORY IS CANCELLED... * WHAT...Temperatures as low as 33 will result in frost formation. * WHERE...Portions of southern Illinois, southwest Indiana,</summary>
-<cap:event>Frost Advisory</cap:event>
-<cap:effective>2022-10-08T08:40:00-04:00</cap:effective>
-<cap:expires>2022-10-09T09:00:00-04:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Daviess; Henderson; Union</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>021059 021101 021225</value>
-<valueName>UGC</valueName>
-<value>KYZ014 KYZ018 KYZ019</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CAN.KPAH.FR.Y.0006.000000T0000Z-221008T1400Z/
-/O.CON.KPAH.FR.Y.0007.221009T0600Z-221009T1300Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -2036,6 +2131,38 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=ME12641202C460.FrostAdvisory.12641210F210ME.GYXNPWGYX.c4c50746ea617198085832aeb28ad654</id>
+<updated>2022-10-08T16:08:00-04:00</updated>
+<published>2022-10-08T16:08:00-04:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Frost Advisory issued October 08 at 4:08PM EDT until October 09 at 9:00AM EDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=ME12641202C460.FrostAdvisory.12641210F210ME.GYXNPWGYX.c4c50746ea617198085832aeb28ad654"/>
+<summary>...FROST ADVISORY REMAINS IN EFFECT FROM MIDNIGHT TONIGHT TO 9 AM EDT SUNDAY... * WHAT...Temperatures as low as 31 will result in frost formation. * WHERE...Portions of south central, southwest, and western Maine. Portions of central, northern, and southern New Hampshire. * WHEN...From Midnight tonight to 9 AM EDT Sunday.</summary>
+<cap:event>Frost Advisory</cap:event>
+<cap:effective>2022-10-08T16:08:00-04:00</cap:effective>
+<cap:expires>2022-10-09T09:00:00-04:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Androscoggin; Central Interior Cumberland; Coastal Waldo; Interior Cumberland Highlands; Interior Waldo; Interior York; Kennebec; Knox; Lincoln; Sagadahoc; Southern Franklin; Southern Oxford; Southern Somerset</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>023001 023005 023007 023011 023013 023015 023017 023023 023025 023027 023031</value>
+<valueName>UGC</valueName>
+<value>MEZ012 MEZ013 MEZ014 MEZ018 MEZ019 MEZ020 MEZ021 MEZ022 MEZ025 MEZ026 MEZ027 MEZ028 MEZ033</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KGYX.FR.Y.0010.221009T0400Z-221009T1300Z/</value>
+</cap:parameter>
+</entry>
+<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=ME126412029AF8.FrostAdvisory.12641210F210ME.CARNPWCAR.25053a3c16feaf8489100c2ed323f511</id>
 <updated>2022-10-08T15:02:00-04:00</updated>
 <published>2022-10-08T15:02:00-04:00</published>
@@ -2068,38 +2195,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=ME12641201E4F0.FrostAdvisory.12641210F210ME.GYXNPWGYX.c4c50746ea617198085832aeb28ad654</id>
-<updated>2022-10-08T10:36:00-04:00</updated>
-<published>2022-10-08T10:36:00-04:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Frost Advisory issued October 08 at 10:36AM EDT until October 09 at 9:00AM EDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=ME12641201E4F0.FrostAdvisory.12641210F210ME.GYXNPWGYX.c4c50746ea617198085832aeb28ad654"/>
-<summary>...FROST ADVISORY REMAINS IN EFFECT FROM MIDNIGHT TONIGHT TO 9 AM EDT SUNDAY... * WHAT...Temperatures as low as 32 will result in frost formation. * WHERE...Portions of south central, southwest, and western Maine. Portions of central, northern, and southern New Hampshire. * WHEN...From Midnight tonight to 9 AM EDT Sunday.</summary>
-<cap:event>Frost Advisory</cap:event>
-<cap:effective>2022-10-08T10:36:00-04:00</cap:effective>
-<cap:expires>2022-10-09T09:00:00-04:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Androscoggin; Central Interior Cumberland; Coastal Waldo; Interior Cumberland Highlands; Interior Waldo; Interior York; Kennebec; Knox; Lincoln; Sagadahoc; Southern Franklin; Southern Oxford; Southern Somerset</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>023001 023005 023007 023011 023013 023015 023017 023023 023025 023027 023031</value>
-<valueName>UGC</valueName>
-<value>MEZ012 MEZ013 MEZ014 MEZ018 MEZ019 MEZ020 MEZ021 MEZ022 MEZ025 MEZ026 MEZ027 MEZ028 MEZ033</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KGYX.FR.Y.0010.221009T0400Z-221009T1300Z/</value>
-</cap:parameter>
-</entry>
-<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=MI126412020EBC.ShelterInPlaceWarning.1264120EF640MI.MQTSPWMQT.00702d66360a17b1a7fe6bf06056a06a</id>
 <updated>2022-10-08T11:43:00-04:00</updated>
 <published>2022-10-08T11:43:00-04:00</published>
@@ -2129,6 +2224,38 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value></value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=MO12641202C5F0.FrostAdvisory.12641210F210MO.PAHNPWPAH.50062508cc72fb97739a437323dceb9b</id>
+<updated>2022-10-08T15:12:00-05:00</updated>
+<published>2022-10-08T15:12:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Frost Advisory issued October 08 at 3:12PM CDT until October 09 at 8:00AM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MO12641202C5F0.FrostAdvisory.12641210F210MO.PAHNPWPAH.50062508cc72fb97739a437323dceb9b"/>
+<summary>...FROST ADVISORY REMAINS IN EFFECT FROM 1 AM TO 8 AM CDT SUNDAY... * WHAT...Temperatures as low as 33 will result in frost formation. A few of the typical cold spots may see temperatures drop below freezing. * WHERE...Portions of southern Illinois, southwest Indiana,</summary>
+<cap:event>Frost Advisory</cap:event>
+<cap:effective>2022-10-08T15:12:00-05:00</cap:effective>
+<cap:expires>2022-10-09T08:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Bollinger; Cape Girardeau; Carter; Mississippi; New Madrid; Perry; Scott; Stoddard; Wayne</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>029017 029031 029035 029133 029143 029157 029201 029207 029223</value>
+<valueName>UGC</valueName>
+<value>MOZ076 MOZ086 MOZ087 MOZ100 MOZ107 MOZ110 MOZ111 MOZ112 MOZ114</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KPAH.FR.Y.0007.221009T0600Z-221009T1300Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -2225,71 +2352,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value>/O.CON.KMEG.FR.Y.0005.221009T0600Z-221009T1300Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=MO126412019860.FrostAdvisory.12641210F210MO.PAHNPWPAH.6c7ba2e77378c18228cb76a849706766</id>
-<updated>2022-10-08T07:40:00-05:00</updated>
-<published>2022-10-08T07:40:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Frost Advisory issued October 08 at 7:40AM CDT until October 09 at 8:00AM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MO126412019860.FrostAdvisory.12641210F210MO.PAHNPWPAH.6c7ba2e77378c18228cb76a849706766"/>
-<summary>...FROST ADVISORY REMAINS IN EFFECT FROM 1 AM TO 8 AM CDT SUNDAY... ...THIS MORNING`S FROST ADVISORY IS CANCELLED... * WHAT...Temperatures as low as 33 will result in frost formation. * WHERE...Portions of southern Illinois, southwest Indiana,</summary>
-<cap:event>Frost Advisory</cap:event>
-<cap:effective>2022-10-08T07:40:00-05:00</cap:effective>
-<cap:expires>2022-10-09T08:00:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Perry</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>029157</value>
-<valueName>UGC</valueName>
-<value>MOZ076</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CAN.KPAH.FR.Y.0006.000000T0000Z-221008T1400Z/
-/O.CON.KPAH.FR.Y.0007.221009T0600Z-221009T1300Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=MO126412019860.FrostAdvisory.12641210F210MO.PAHNPWPAH.3d4b924912e96f536931a5481d3024eb</id>
-<updated>2022-10-08T07:40:00-05:00</updated>
-<published>2022-10-08T07:40:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Frost Advisory issued October 08 at 7:40AM CDT until October 09 at 8:00AM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MO126412019860.FrostAdvisory.12641210F210MO.PAHNPWPAH.3d4b924912e96f536931a5481d3024eb"/>
-<summary>...FROST ADVISORY REMAINS IN EFFECT FROM 1 AM TO 8 AM CDT SUNDAY... * WHAT...Temperatures as low as 34 will result in frost formation. * WHERE...Portions of southern Illinois, western Kentucky and southeast Missouri.</summary>
-<cap:event>Frost Advisory</cap:event>
-<cap:effective>2022-10-08T07:40:00-05:00</cap:effective>
-<cap:expires>2022-10-09T08:00:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Bollinger; Cape Girardeau; Carter; Mississippi; New Madrid; Scott; Stoddard; Wayne</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>029017 029031 029035 029133 029143 029201 029207 029223</value>
-<valueName>UGC</valueName>
-<value>MOZ086 MOZ087 MOZ100 MOZ107 MOZ110 MOZ111 MOZ112 MOZ114</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KPAH.FR.Y.0007.221009T0600Z-221009T1300Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -2549,17 +2611,17 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=NH12641201E4F0.FrostAdvisory.12641210F210NH.GYXNPWGYX.54cee9316991a8fbd4daaeb8f564ef37</id>
-<updated>2022-10-08T10:36:00-04:00</updated>
-<published>2022-10-08T10:36:00-04:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=NH12641202C460.FrostAdvisory.12641210F210NH.GYXNPWGYX.54cee9316991a8fbd4daaeb8f564ef37</id>
+<updated>2022-10-08T16:08:00-04:00</updated>
+<published>2022-10-08T16:08:00-04:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Frost Advisory issued October 08 at 10:36AM EDT until October 09 at 9:00AM EDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=NH12641201E4F0.FrostAdvisory.12641210F210NH.GYXNPWGYX.54cee9316991a8fbd4daaeb8f564ef37"/>
-<summary>...FROST ADVISORY REMAINS IN EFFECT FROM MIDNIGHT TONIGHT TO 9 AM EDT SUNDAY... * WHAT...Temperatures as low as 32 will result in frost formation. * WHERE...Portions of south central, southwest, and western Maine. Portions of central, northern, and southern New Hampshire. * WHEN...From Midnight tonight to 9 AM EDT Sunday.</summary>
+<title>Frost Advisory issued October 08 at 4:08PM EDT until October 09 at 9:00AM EDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=NH12641202C460.FrostAdvisory.12641210F210NH.GYXNPWGYX.54cee9316991a8fbd4daaeb8f564ef37"/>
+<summary>...FROST ADVISORY REMAINS IN EFFECT FROM MIDNIGHT TONIGHT TO 9 AM EDT SUNDAY... * WHAT...Temperatures as low as 31 will result in frost formation. * WHERE...Portions of south central, southwest, and western Maine. Portions of central, northern, and southern New Hampshire. * WHEN...From Midnight tonight to 9 AM EDT Sunday.</summary>
 <cap:event>Frost Advisory</cap:event>
-<cap:effective>2022-10-08T10:36:00-04:00</cap:effective>
+<cap:effective>2022-10-08T16:08:00-04:00</cap:effective>
 <cap:expires>2022-10-09T09:00:00-04:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
