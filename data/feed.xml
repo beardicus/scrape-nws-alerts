@@ -16,16 +16,48 @@ xmlns = 'http://www.w3.org/2005/Atom'
 xmlns:cap = 'urn:oasis:names:tc:emergency:cap:1.1'
 xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 >
-<!-- http-date = Mon, 17 Oct 2022 17:09:00 GMT -->
+<!-- http-date = Mon, 17 Oct 2022 18:11:00 GMT -->
 <id>https://alerts.weather.gov/cap/us.php?x=0</id>
 <logo>http://alerts.weather.gov/images/xml_logo.gif</logo>
 <generator>NWS CAP Server</generator>
-<updated>2022-10-17T13:09:00-04:00</updated>
+<updated>2022-10-17T14:11:00-04:00</updated>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
 <title>Current Watches, Warnings and Advisories for the United States Issued by the National Weather Service</title>
 <link href="https://alerts.weather.gov/cap/us.php?x=0"/>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=AK1264128BB374.WindAdvisory.1264129A9470AK.AFGNPWAFG.652c4fe037d321daf29a9100be0c5323</id>
+<updated>2022-10-17T09:49:00-08:00</updated>
+<published>2022-10-17T09:49:00-08:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Wind Advisory issued October 17 at 9:49AM AKDT until October 18 at 7:00AM AKDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=AK1264128BB374.WindAdvisory.1264129A9470AK.AFGNPWAFG.652c4fe037d321daf29a9100be0c5323"/>
+<summary>...WIND ADVISORY NOW IN EFFECT UNTIL 7 AM AKDT TUESDAY... * WHAT...South winds 25 to 40 mph with gusts up to 60 mph. * WHERE...Eastern Alaska Range. * WHEN...Until 7 AM AKDT Tuesday. * IMPACTS...Gusty winds could blow around unsecured objects. Tree limbs could be blown down and a few power outages may</summary>
+<cap:event>Wind Advisory</cap:event>
+<cap:effective>2022-10-17T09:49:00-08:00</cap:effective>
+<cap:expires>2022-10-18T07:00:00-08:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Eastern Alaska Range</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>002068 002240</value>
+<valueName>UGC</valueName>
+<value>AKZ226</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.EXT.PAFG.WI.Y.0037.000000T0000Z-221018T1500Z/</value>
+</cap:parameter>
+</entry>
 <entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=AK1264128B2C4C.SpecialWeatherStatement.1264129898A0AK.AJKSPSAJK.cc9c76c3a76390e82d013b203d155997</id>
 <updated>2022-10-17T06:03:00-08:00</updated>
@@ -89,38 +121,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <valueName>VTEC</valueName>
 <value>/O.COR.PAJK.FA.Y.0031.221017T1346Z-221017T2100Z/
 /00000.N.ER.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=AK1264128A73EC.WindAdvisory.1264128C1580AK.AFGNPWAFG.652c4fe037d321daf29a9100be0c5323</id>
-<updated>2022-10-17T01:31:00-08:00</updated>
-<published>2022-10-17T01:31:00-08:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Wind Advisory issued October 17 at 1:31AM AKDT until October 17 at 12:00PM AKDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=AK1264128A73EC.WindAdvisory.1264128C1580AK.AFGNPWAFG.652c4fe037d321daf29a9100be0c5323"/>
-<summary>...WIND ADVISORY IN EFFECT UNTIL NOON AKDT TODAY... * WHAT...South winds 25 to 40 mph with gusts up to 60 mph. * WHERE...Eastern Alaska Range. * WHEN...Until noon AKDT today. * IMPACTS...Gusty winds could blow around unsecured objects. Tree limbs could be blown down and a few power outages may</summary>
-<cap:event>Wind Advisory</cap:event>
-<cap:effective>2022-10-17T01:31:00-08:00</cap:effective>
-<cap:expires>2022-10-17T12:00:00-08:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Eastern Alaska Range</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>002068 002240</value>
-<valueName>UGC</valueName>
-<value>AKZ226</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.NEW.PAFG.WI.Y.0037.221017T0931Z-221017T2000Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -908,6 +908,38 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=AS1264128BB43C.FloodStatement.1264128C1580AS.STUFLSPPG.46c3af3d69b4d93a043dbda91bdc58ae</id>
+<updated>2022-10-17T06:51:00-11:00</updated>
+<published>2022-10-17T06:51:00-11:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Flood Statement issued October 17 at 6:51AM SST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=AS1264128BB43C.FloodStatement.1264128C1580AS.STUFLSPPG.46c3af3d69b4d93a043dbda91bdc58ae"/>
+<summary>...FLOOD ADVISORY IN EFFECT THROUGH 10 AM... WHAT...Minor flooding resulting from Heavy Rainfall WHERE...Tutuila WHEN...Through 10 AM IMPACTS...Heavy rainfall and runoff may cause elevated stream and drainage ditch levels. Ponding may occur on roads and low lying areas.</summary>
+<cap:event>Flood Statement</cap:event>
+<cap:effective>2022-10-17T06:51:00-11:00</cap:effective>
+<cap:expires>2022-10-17T09:00:00-11:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Manua; Swains Island; Tutuila and Aunuu</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>060010 060020 060040 060050</value>
+<valueName>UGC</valueName>
+<value>ASZ001 ASZ002 ASZ003</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value></value>
+</cap:parameter>
+</entry>
+<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=FL1264128B3AC0.FloodWarning.1264129898A0FL.MLBFLSMLB.4c66ef1e60e32a067d46212176ce556f</id>
 <updated>2022-10-17T10:40:00-04:00</updated>
 <published>2022-10-17T10:40:00-04:00</published>
@@ -1269,6 +1301,38 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=GA1264128BCBAC.SpecialWeatherStatement.1264128BD8F4GA.TAESPSTAE.5e298dcbf1fe44a8f726b33b3ecc417e</id>
+<updated>2022-10-17T14:11:00-04:00</updated>
+<published>2022-10-17T14:11:00-04:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Special Weather Statement issued October 17 at 2:11PM EDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=GA1264128BCBAC.SpecialWeatherStatement.1264128BD8F4GA.TAESPSTAE.5e298dcbf1fe44a8f726b33b3ecc417e"/>
+<summary>...A strong thunderstorm will impact portions of central Irwin and southeastern Ben Hill Counties through 245 PM EDT... At 211 PM EDT, Doppler radar was tracking a strong thunderstorm near Ocilla, moving east at 30 mph. HAZARD...Winds in excess of 30 mph. SOURCE...Radar indicated.</summary>
+<cap:event>Special Weather Statement</cap:event>
+<cap:effective>2022-10-17T14:11:00-04:00</cap:effective>
+<cap:expires>2022-10-17T14:45:00-04:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Observed</cap:certainty>
+<cap:areaDesc>Ben Hill; Irwin</cap:areaDesc>
+<cap:polygon>31.66,-83 31.66,-83.01 31.64,-83.01 31.64,-83.03 31.62,-83.03 31.62,-83.04 31.61,-83.05 31.61,-83.06 31.58,-83.1 31.55,-83.3 31.69,-83.34 31.8,-83.07 31.79,-83.04 31.78,-83.03 31.78,-82.99 31.66,-83</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>013017 013155</value>
+<valueName>UGC</valueName>
+<value>GAZ130 GAZ131</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value></value>
+</cap:parameter>
+</entry>
+<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=GA1264128B3610.FreezeWarning.1264129A6D60GA.FFCNPWFFC.f6148208545b79a1db2b1291de31a01e</id>
 <updated>2022-10-17T10:28:00-04:00</updated>
 <published>2022-10-17T10:28:00-04:00</published>
@@ -1529,6 +1593,38 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=IA1264128BB504.SpecialWeatherStatement.126412984A80IA.FSDSPSFSD.4e7cc7f447e675a8513976548bc5ff4a</id>
+<updated>2022-10-17T12:53:00-05:00</updated>
+<published>2022-10-17T12:53:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Special Weather Statement issued October 17 at 12:53PM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=IA1264128BB504.SpecialWeatherStatement.126412984A80IA.FSDSPSFSD.4e7cc7f447e675a8513976548bc5ff4a"/>
+<summary>...NEAR CRITICAL FIRE WEATHER DANGER EXPECTED THIS AFTERNOON... Low humidity and breezy north-northwesterly winds will generate near critical fire danger this afternoon. The worst conditions will take place between 1 pm and 7 pm today. People are urged to exercise extreme care with respect to outdoor activities that could cause grass or crop fires. Use extra caution</summary>
+<cap:event>Special Weather Statement</cap:event>
+<cap:effective>2022-10-17T12:53:00-05:00</cap:effective>
+<cap:expires>2022-10-17T19:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Observed</cap:certainty>
+<cap:areaDesc>Buena Vista; Cherokee; Clay; Dickinson; Ida; Lyon; O&apos;Brien; Osceola; Plymouth; Sioux; Woodbury</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>019021 019035 019041 019059 019093 019119 019141 019143 019149 019167 019193</value>
+<valueName>UGC</valueName>
+<value>IAZ001 IAZ002 IAZ003 IAZ012 IAZ013 IAZ014 IAZ020 IAZ021 IAZ022 IAZ031 IAZ032</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value></value>
+</cap:parameter>
+</entry>
+<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=ID1264127CDA48.AirStagnationAdvisory.126412B918F0ID.MSONPWMSO.7f7d6921c69b739ddb2b637b7d674445</id>
 <updated>2022-10-16T14:18:00-06:00</updated>
 <published>2022-10-16T14:18:00-06:00</published>
@@ -1752,38 +1848,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value>/O.CON.KPAH.FZ.W.0004.221018T0200Z-221018T1400Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=IL1264128A4188.SpecialWeatherStatement.1264128BC760IL.PAHSPSPAH.728b21cd1ac0b8a1ec58fbabd04ea2c5</id>
-<updated>2022-10-17T03:02:00-05:00</updated>
-<published>2022-10-17T03:02:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Special Weather Statement issued October 17 at 3:02AM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=IL1264128A4188.SpecialWeatherStatement.1264128BC760IL.PAHSPSPAH.728b21cd1ac0b8a1ec58fbabd04ea2c5"/>
-<summary>...ELEVATED FIRE DANGER EXPECTED THIS AFTERNOON... Northwest winds will be sustained at 10 to 15 mph with wind gusts in the 20 to 25 mph range this afternoon. Relative humidity values are expected to drop to around 20 to 30 percent this afternoon. The combination of dry air, gusty winds and the continued drought conditions, will lead to elevated fire danger</summary>
-<cap:event>Special Weather Statement</cap:event>
-<cap:effective>2022-10-17T03:02:00-05:00</cap:effective>
-<cap:expires>2022-10-17T13:00:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Observed</cap:certainty>
-<cap:areaDesc>Alexander; Edwards; Franklin; Gallatin; Hamilton; Hardin; Jackson; Jefferson; Johnson; Massac; Perry; Pope; Pulaski; Saline; Union; Wabash; Wayne; White; Williamson</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>017003 017047 017055 017059 017065 017069 017077 017081 017087 017127 017145 017151 017153 017165 017181 017185 017191 017193 017199</value>
-<valueName>UGC</valueName>
-<value>ILZ075 ILZ076 ILZ077 ILZ078 ILZ080 ILZ081 ILZ082 ILZ083 ILZ084 ILZ085 ILZ086 ILZ087 ILZ088 ILZ089 ILZ090 ILZ091 ILZ092 ILZ093 ILZ094</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value></value>
 </cap:parameter>
 </entry>
 <entry>
@@ -2139,38 +2203,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=IN1264128A4188.SpecialWeatherStatement.1264128BC760IN.PAHSPSPAH.0734c1b25d2d1fe2729f74fb09e72119</id>
-<updated>2022-10-17T04:02:00-04:00</updated>
-<published>2022-10-17T04:02:00-04:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Special Weather Statement issued October 17 at 4:02AM EDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=IN1264128A4188.SpecialWeatherStatement.1264128BC760IN.PAHSPSPAH.0734c1b25d2d1fe2729f74fb09e72119"/>
-<summary>...ELEVATED FIRE DANGER EXPECTED THIS AFTERNOON... Northwest winds will be sustained at 10 to 15 mph with wind gusts in the 20 to 25 mph range this afternoon. Relative humidity values are expected to drop to around 20 to 30 percent this afternoon. The combination of dry air, gusty winds and the continued drought conditions, will lead to elevated fire danger</summary>
-<cap:event>Special Weather Statement</cap:event>
-<cap:effective>2022-10-17T04:02:00-04:00</cap:effective>
-<cap:expires>2022-10-17T14:00:00-04:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Observed</cap:certainty>
-<cap:areaDesc>Gibson; Pike; Posey; Spencer; Vanderburgh; Warrick</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>018051 018125 018129 018147 018163 018173</value>
-<valueName>UGC</valueName>
-<value>INZ081 INZ082 INZ085 INZ086 INZ087 INZ088</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value></value>
-</cap:parameter>
-</entry>
-<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=IN1264128A2F90.FreezeWarning.1264129A6D60IN.LMKNPWLMK.80a5fe052c7a3fdd83ea1ecdfa8df7f4</id>
 <updated>2022-10-17T03:56:00-04:00</updated>
 <published>2022-10-17T03:56:00-04:00</published>
@@ -2264,6 +2296,103 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value>/O.CON.KILN.FZ.W.0008.221018T0200Z-221018T1400Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=KS1264128BB310.FreezeWarning.1264129A9470KS.DDCNPWDDC.9974b578cb3f94d06d52ce87a02c8725</id>
+<updated>2022-10-17T12:48:00-05:00</updated>
+<published>2022-10-17T12:48:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Freeze Warning issued October 17 at 12:48PM CDT until October 18 at 10:00AM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=KS1264128BB310.FreezeWarning.1264129A9470KS.DDCNPWDDC.9974b578cb3f94d06d52ce87a02c8725"/>
+<summary>...FREEZE WARNING IN EFFECT FROM 1 AM TO 10 AM CDT TUESDAY... * WHAT...Sub-freezing temperatures as low as 29 expected. * WHERE...Portions of south central and southwest Kansas. * WHEN...From 1 AM to 10 AM CDT Tuesday. * IMPACTS...Frost and freeze conditions will kill crops, other sensitive vegetation and possibly damage unprotected outdoor</summary>
+<cap:event>Freeze Warning</cap:event>
+<cap:effective>2022-10-17T12:48:00-05:00</cap:effective>
+<cap:expires>2022-10-18T10:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Barber; Clark; Comanche; Edwards; Ford; Grant; Gray; Haskell; Hodgeman; Kiowa; Meade; Pratt</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>020007 020025 020033 020047 020057 020067 020069 020081 020083 020097 020119 020151</value>
+<valueName>UGC</valueName>
+<value>KSZ064 KSZ075 KSZ076 KSZ077 KSZ078 KSZ079 KSZ080 KSZ081 KSZ087 KSZ088 KSZ089 KSZ090</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.UPG.KDDC.FZ.A.0004.221018T0600Z-221018T1500Z/
+/O.EXA.KDDC.FZ.W.0003.221018T0600Z-221018T1500Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=KS1264128BB310.FreezeWarning.1264129A9470KS.DDCNPWDDC.be9f1587696af8fcbac20a3a918f0086</id>
+<updated>2022-10-17T12:48:00-05:00</updated>
+<published>2022-10-17T12:48:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Freeze Warning issued October 17 at 12:48PM CDT until October 18 at 10:00AM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=KS1264128BB310.FreezeWarning.1264129A9470KS.DDCNPWDDC.be9f1587696af8fcbac20a3a918f0086"/>
+<summary>...FREEZE WARNING REMAINS IN EFFECT FROM 1 AM TO 10 AM CDT TUESDAY... * WHAT...Sub-freezing temperatures as low as 28 expected. * WHERE...Pawnee and Stafford Counties. * WHEN...From 1 AM to 10 AM CDT Tuesday. * IMPACTS...Frost and freeze conditions will kill crops, other</summary>
+<cap:event>Freeze Warning</cap:event>
+<cap:effective>2022-10-17T12:48:00-05:00</cap:effective>
+<cap:expires>2022-10-18T10:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Pawnee; Stafford</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>020145 020185</value>
+<valueName>UGC</valueName>
+<value>KSZ065 KSZ066</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KDDC.FZ.W.0003.221018T0600Z-221018T1500Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=KS1264128BB310.FreezeWarning.1264129A9470KS.DDCNPWDDC.c68bf109f7aed64bd5824e6dc85808e8</id>
+<updated>2022-10-17T12:48:00-05:00</updated>
+<published>2022-10-17T12:48:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Freeze Warning issued October 17 at 12:48PM CDT until October 18 at 10:00AM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=KS1264128BB310.FreezeWarning.1264129A9470KS.DDCNPWDDC.c68bf109f7aed64bd5824e6dc85808e8"/>
+<summary>...FREEZE WARNING IN EFFECT FROM 1 AM TO 10 AM CDT TUESDAY... * WHAT...Sub-freezing temperatures as low as 29 expected. * WHERE...Stanton, Morton, Stevens and Seward Counties. * WHEN...From 1 AM to 10 AM CDT Tuesday. * IMPACTS...Frost and freeze conditions will kill crops, other sensitive vegetation and possibly damage unprotected outdoor</summary>
+<cap:event>Freeze Warning</cap:event>
+<cap:effective>2022-10-17T12:48:00-05:00</cap:effective>
+<cap:expires>2022-10-18T10:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Morton; Seward; Stanton; Stevens</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>020129 020175 020187 020189</value>
+<valueName>UGC</valueName>
+<value>KSZ074 KSZ084 KSZ085 KSZ086</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.EXA.KDDC.FZ.W.0003.221018T0600Z-221018T1500Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -2526,201 +2655,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=KS1264128A24A0.FreezeWarning.1264129A9470KS.DDCNPWDDC.d6bbf870d0e2fab347a2ba7298c2128f</id>
-<updated>2022-10-17T02:28:00-05:00</updated>
-<published>2022-10-17T02:28:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Freeze Warning issued October 17 at 2:28AM CDT until October 18 at 10:00AM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=KS1264128A24A0.FreezeWarning.1264129A9470KS.DDCNPWDDC.d6bbf870d0e2fab347a2ba7298c2128f"/>
-<summary>...FREEZE WARNING REMAINS IN EFFECT UNTIL 10 AM CDT THIS MORNING... ...FREEZE WARNING REMAINS IN EFFECT FROM 1 AM TO 10 AM CDT TUESDAY... * WHAT...For the first Freeze Warning, sub-freezing temperatures as low as 29 expected. For the second Freeze Warning, sub-</summary>
-<cap:event>Freeze Warning</cap:event>
-<cap:effective>2022-10-17T02:28:00-05:00</cap:effective>
-<cap:expires>2022-10-18T10:00:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Ellis; Ness; Rush; Trego</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>020051 020135 020165 020195</value>
-<valueName>UGC</valueName>
-<value>KSZ030 KSZ031 KSZ045 KSZ046</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KDDC.FZ.W.0002.000000T0000Z-221017T1500Z/
-/O.CON.KDDC.FZ.W.0003.221018T0600Z-221018T1500Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=KS1264128A24A0.FreezeWarning.1264129A9470KS.DDCNPWDDC.be9f1587696af8fcbac20a3a918f0086</id>
-<updated>2022-10-17T02:28:00-05:00</updated>
-<published>2022-10-17T02:28:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Freeze Warning issued October 17 at 2:28AM CDT until October 18 at 10:00AM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=KS1264128A24A0.FreezeWarning.1264129A9470KS.DDCNPWDDC.be9f1587696af8fcbac20a3a918f0086"/>
-<summary>...FREEZE WARNING REMAINS IN EFFECT FROM 1 AM TO 10 AM CDT TUESDAY... * WHAT...Sub-freezing temperatures as low as 29 expected. * WHERE...Pawnee and Stafford Counties. * WHEN...From 1 AM to 10 AM CDT Tuesday. * IMPACTS...Frost and freeze conditions will kill crops, other</summary>
-<cap:event>Freeze Warning</cap:event>
-<cap:effective>2022-10-17T02:28:00-05:00</cap:effective>
-<cap:expires>2022-10-18T10:00:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Pawnee; Stafford</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>020145 020185</value>
-<valueName>UGC</valueName>
-<value>KSZ065 KSZ066</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KDDC.FZ.W.0003.221018T0600Z-221018T1500Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=KS1264128A24A0.FreezeWatch.1264129A9470KS.DDCNPWDDC.347c10bf857bf5684558d6e9e2f8f38b</id>
-<updated>2022-10-17T02:28:00-05:00</updated>
-<published>2022-10-17T02:28:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Freeze Watch issued October 17 at 2:28AM CDT until October 18 at 10:00AM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=KS1264128A24A0.FreezeWatch.1264129A9470KS.DDCNPWDDC.347c10bf857bf5684558d6e9e2f8f38b"/>
-<summary>...FREEZE WARNING REMAINS IN EFFECT UNTIL 10 AM CDT THIS MORNING... ...FREEZE WATCH IN EFFECT FROM LATE TONIGHT THROUGH TUESDAY MORNING... * WHAT...For the Freeze Warning, sub-freezing temperatures as low as 29. For the Freeze Watch, sub-freezing temperatures as low</summary>
-<cap:event>Freeze Watch</cap:event>
-<cap:effective>2022-10-17T02:28:00-05:00</cap:effective>
-<cap:expires>2022-10-18T10:00:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Future</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Possible</cap:certainty>
-<cap:areaDesc>Finney; Hamilton; Kearny; Lane; Scott</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>020055 020075 020093 020101 020171</value>
-<valueName>UGC</valueName>
-<value>KSZ043 KSZ044 KSZ061 KSZ062 KSZ063</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.EXA.KDDC.FZ.A.0004.221018T0600Z-221018T1500Z/
-/O.CON.KDDC.FZ.W.0002.000000T0000Z-221017T1500Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=KS1264128A24A0.FreezeWatch.1264129A9470KS.DDCNPWDDC.e4bd184cf832a6c6808ec228bf94a157</id>
-<updated>2022-10-17T02:28:00-05:00</updated>
-<published>2022-10-17T02:28:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Freeze Watch issued October 17 at 2:28AM CDT until October 18 at 10:00AM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=KS1264128A24A0.FreezeWatch.1264129A9470KS.DDCNPWDDC.e4bd184cf832a6c6808ec228bf94a157"/>
-<summary>...FREEZE WARNING REMAINS IN EFFECT UNTIL 10 AM CDT THIS MORNING... ...FREEZE WATCH REMAINS IN EFFECT FROM LATE TONIGHT THROUGH TUESDAY MORNING... * WHAT...For the Freeze Warning, sub-freezing temperatures as low as 30 expected. For the Freeze Watch, sub-freezing temperatures</summary>
-<cap:event>Freeze Watch</cap:event>
-<cap:effective>2022-10-17T02:28:00-05:00</cap:effective>
-<cap:expires>2022-10-18T10:00:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Future</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Possible</cap:certainty>
-<cap:areaDesc>Hodgeman</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>020083</value>
-<valueName>UGC</valueName>
-<value>KSZ064</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KDDC.FZ.W.0002.000000T0000Z-221017T1500Z/
-/O.CON.KDDC.FZ.A.0004.221018T0600Z-221018T1500Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=KS1264128A24A0.FreezeWatch.1264129A9470KS.DDCNPWDDC.b5d83db5ce010fa6fa4e4e25f1a85d0f</id>
-<updated>2022-10-17T02:28:00-05:00</updated>
-<published>2022-10-17T02:28:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Freeze Watch issued October 17 at 2:28AM CDT until October 18 at 10:00AM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=KS1264128A24A0.FreezeWatch.1264129A9470KS.DDCNPWDDC.b5d83db5ce010fa6fa4e4e25f1a85d0f"/>
-<summary>...FREEZE WATCH IN EFFECT FROM LATE TONIGHT THROUGH TUESDAY MORNING... * WHAT...Sub-freezing temperatures as low as 30 possible. * WHERE...Grant, Haskell, Gray and Meade Counties. * WHEN...From late Monday night through Tuesday morning. * IMPACTS...Frost and freeze conditions could kill crops, other</summary>
-<cap:event>Freeze Watch</cap:event>
-<cap:effective>2022-10-17T02:28:00-05:00</cap:effective>
-<cap:expires>2022-10-18T10:00:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Future</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Possible</cap:certainty>
-<cap:areaDesc>Grant; Gray; Haskell; Meade</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>020067 020069 020081 020119</value>
-<valueName>UGC</valueName>
-<value>KSZ075 KSZ076 KSZ077 KSZ087</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.EXA.KDDC.FZ.A.0004.221018T0600Z-221018T1500Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=KS1264128A24A0.FreezeWatch.1264129A9470KS.DDCNPWDDC.0dd6ed8d61489ca3ba7b018f144d845c</id>
-<updated>2022-10-17T02:28:00-05:00</updated>
-<published>2022-10-17T02:28:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Freeze Watch issued October 17 at 2:28AM CDT until October 18 at 10:00AM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=KS1264128A24A0.FreezeWatch.1264129A9470KS.DDCNPWDDC.0dd6ed8d61489ca3ba7b018f144d845c"/>
-<summary>...FREEZE WATCH REMAINS IN EFFECT FROM LATE TONIGHT THROUGH TUESDAY MORNING... * WHAT...Sub-freezing temperatures as low as 30 possible. * WHERE...Ford, Edwards, Kiowa, Pratt, Clark, Comanche and Barber Counties. * WHEN...From late Monday night through Tuesday morning.</summary>
-<cap:event>Freeze Watch</cap:event>
-<cap:effective>2022-10-17T02:28:00-05:00</cap:effective>
-<cap:expires>2022-10-18T10:00:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Future</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Possible</cap:certainty>
-<cap:areaDesc>Barber; Clark; Comanche; Edwards; Ford; Kiowa; Pratt</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>020007 020025 020033 020047 020057 020097 020151</value>
-<valueName>UGC</valueName>
-<value>KSZ078 KSZ079 KSZ080 KSZ081 KSZ088 KSZ089 KSZ090</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KDDC.FZ.A.0004.221018T0600Z-221018T1500Z/</value>
-</cap:parameter>
-</entry>
-<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=KY1264128B6680.FreezeWarning.1264129A6D60KY.RLXNPWRLX.16baa17dae08ea22a718ec233d34aa0f</id>
 <updated>2022-10-17T11:52:00-04:00</updated>
 <published>2022-10-17T11:52:00-04:00</published>
@@ -2879,38 +2813,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value>/O.CON.KPAH.FZ.W.0004.221018T0200Z-221018T1400Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=KY1264128A4188.SpecialWeatherStatement.1264128BC760KY.PAHSPSPAH.879db7cd14810aa411c8cb3c47296903</id>
-<updated>2022-10-17T04:02:00-04:00</updated>
-<published>2022-10-17T04:02:00-04:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Special Weather Statement issued October 17 at 4:02AM EDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=KY1264128A4188.SpecialWeatherStatement.1264128BC760KY.PAHSPSPAH.879db7cd14810aa411c8cb3c47296903"/>
-<summary>...ELEVATED FIRE DANGER EXPECTED THIS AFTERNOON... Northwest winds will be sustained at 10 to 15 mph with wind gusts in the 20 to 25 mph range this afternoon. Relative humidity values are expected to drop to around 20 to 30 percent this afternoon. The combination of dry air, gusty winds and the continued drought conditions, will lead to elevated fire danger</summary>
-<cap:event>Special Weather Statement</cap:event>
-<cap:effective>2022-10-17T04:02:00-04:00</cap:effective>
-<cap:expires>2022-10-17T14:00:00-04:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Observed</cap:certainty>
-<cap:areaDesc>Ballard; Caldwell; Calloway; Carlisle; Christian; Crittenden; Daviess; Fulton; Graves; Henderson; Hickman; Hopkins; Livingston; Lyon; Marshall; McCracken; McLean; Muhlenberg; Todd; Trigg; Union; Webster</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>021007 021033 021035 021039 021047 021055 021059 021075 021083 021101 021105 021107 021139 021143 021145 021149 021157 021177 021219 021221 021225 021233</value>
-<valueName>UGC</valueName>
-<value>KYZ001 KYZ002 KYZ003 KYZ004 KYZ005 KYZ006 KYZ007 KYZ008 KYZ009 KYZ010 KYZ011 KYZ012 KYZ013 KYZ014 KYZ015 KYZ016 KYZ017 KYZ018 KYZ019 KYZ020 KYZ021 KYZ022</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value></value>
 </cap:parameter>
 </entry>
 <entry>
@@ -3266,38 +3168,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value>/O.CON.KMQT.LS.W.0002.221017T2100Z-221019T0600Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=MI1264128B8174.WinterStormWarning.1264128BC760MI.MQTWSWMQT.b9f9e4cc314447a61f0d917d86e306f8</id>
-<updated>2022-10-17T12:21:00-04:00</updated>
-<published>2022-10-17T12:21:00-04:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Winter Storm Warning issued October 17 at 12:21PM EDT until October 17 at 2:00PM EDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MI1264128B8174.WinterStormWarning.1264128BC760MI.MQTWSWMQT.b9f9e4cc314447a61f0d917d86e306f8"/>
-<summary>...WINTER STORM WARNING REMAINS IN EFFECT UNTIL 2 PM EDT THIS AFTERNOON... * WHAT...Heavy, wet snow will result in hazardous winter driving conditions into the afternoon hours. Additional snow accumulations of 1 to 2 inches are expected. Northwest winds will gust as high as 35 mph. Snow will diminish late this</summary>
-<cap:event>Winter Storm Warning</cap:event>
-<cap:effective>2022-10-17T12:21:00-04:00</cap:effective>
-<cap:expires>2022-10-17T14:00:00-04:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Gogebic; Ontonagon; Southern Houghton</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>026053 026061 026131</value>
-<valueName>UGC</valueName>
-<value>MIZ002 MIZ009 MIZ084</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KMQT.WS.W.0009.000000T0000Z-221017T1800Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -3751,6 +3621,38 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=MN1264128BB504.SpecialWeatherStatement.126412984A80MN.FSDSPSFSD.aef2f04a16a1ad6282798073c88a42f0</id>
+<updated>2022-10-17T12:53:00-05:00</updated>
+<published>2022-10-17T12:53:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Special Weather Statement issued October 17 at 12:53PM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MN1264128BB504.SpecialWeatherStatement.126412984A80MN.FSDSPSFSD.aef2f04a16a1ad6282798073c88a42f0"/>
+<summary>...NEAR CRITICAL FIRE WEATHER DANGER EXPECTED THIS AFTERNOON... Low humidity and breezy north-northwesterly winds will generate near critical fire danger this afternoon. The worst conditions will take place between 1 pm and 7 pm today. People are urged to exercise extreme care with respect to outdoor activities that could cause grass or crop fires. Use extra caution</summary>
+<cap:event>Special Weather Statement</cap:event>
+<cap:effective>2022-10-17T12:53:00-05:00</cap:effective>
+<cap:expires>2022-10-17T19:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Observed</cap:certainty>
+<cap:areaDesc>Jackson; Murray; Nobles; Pipestone; Rock</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>027063 027101 027105 027117 027133</value>
+<valueName>UGC</valueName>
+<value>MNZ080 MNZ089 MNZ090 MNZ097 MNZ098</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value></value>
+</cap:parameter>
+</entry>
+<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=MO1264128B65B8.SpecialWeatherStatement.126412984A80MO.EAXSPSEAX.095274dc896464a721e937c4a83254cb</id>
 <updated>2022-10-17T10:50:00-05:00</updated>
 <published>2022-10-17T10:50:00-05:00</published>
@@ -4007,38 +3909,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value>/O.CON.KPAH.FZ.W.0004.221018T0200Z-221018T1400Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=MO1264128A4188.SpecialWeatherStatement.1264128BC760MO.PAHSPSPAH.2d9afe00642709342a9da8eec96563a0</id>
-<updated>2022-10-17T03:02:00-05:00</updated>
-<published>2022-10-17T03:02:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Special Weather Statement issued October 17 at 3:02AM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MO1264128A4188.SpecialWeatherStatement.1264128BC760MO.PAHSPSPAH.2d9afe00642709342a9da8eec96563a0"/>
-<summary>...ELEVATED FIRE DANGER EXPECTED THIS AFTERNOON... Northwest winds will be sustained at 10 to 15 mph with wind gusts in the 20 to 25 mph range this afternoon. Relative humidity values are expected to drop to around 20 to 30 percent this afternoon. The combination of dry air, gusty winds and the continued drought conditions, will lead to elevated fire danger</summary>
-<cap:event>Special Weather Statement</cap:event>
-<cap:effective>2022-10-17T03:02:00-05:00</cap:effective>
-<cap:expires>2022-10-17T13:00:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Observed</cap:certainty>
-<cap:areaDesc>Bollinger; Butler; Cape Girardeau; Carter; Mississippi; New Madrid; Perry; Ripley; Scott; Stoddard; Wayne</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>029017 029023 029031 029035 029133 029143 029157 029181 029201 029207 029223</value>
-<valueName>UGC</valueName>
-<value>MOZ076 MOZ086 MOZ087 MOZ100 MOZ107 MOZ108 MOZ109 MOZ110 MOZ111 MOZ112 MOZ114</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value></value>
 </cap:parameter>
 </entry>
 <entry>
@@ -4465,6 +4335,70 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=NC1264128BB43C.FreezeWarning.1264129A6D60NC.RNKNPWRNK.b6cbc0c508100c3bf9ff9ada8c1918f0</id>
+<updated>2022-10-17T13:51:00-04:00</updated>
+<published>2022-10-17T13:51:00-04:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Freeze Warning issued October 17 at 1:51PM EDT until October 18 at 10:00AM EDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=NC1264128BB43C.FreezeWarning.1264129A6D60NC.RNKNPWRNK.b6cbc0c508100c3bf9ff9ada8c1918f0"/>
+<summary>...FREEZE WARNING REMAINS IN EFFECT FROM 4 AM TO 10 AM EDT TUESDAY... * WHAT...Sub-freezing temperatures as low as 26 expected. * WHERE...In North Carolina, Watauga County. In Virginia, Carroll County. * WHEN...From 4 AM to 10 AM EDT Tuesday.</summary>
+<cap:event>Freeze Warning</cap:event>
+<cap:effective>2022-10-17T13:51:00-04:00</cap:effective>
+<cap:expires>2022-10-18T10:00:00-04:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Watauga</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>037189</value>
+<valueName>UGC</valueName>
+<value>NCZ018</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KRNK.FZ.W.0004.221018T0800Z-221018T1400Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=NC1264128BB43C.FreezeWatch.126412A98890NC.RNKNPWRNK.10ba9a2de088a9023ef49b9e6ef7e1a2</id>
+<updated>2022-10-17T13:51:00-04:00</updated>
+<published>2022-10-17T13:51:00-04:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Freeze Watch issued October 17 at 1:51PM EDT until October 19 at 9:00AM EDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=NC1264128BB43C.FreezeWatch.126412A98890NC.RNKNPWRNK.10ba9a2de088a9023ef49b9e6ef7e1a2"/>
+<summary>...FREEZE WATCH REMAINS IN EFFECT FROM LATE TUESDAY NIGHT THROUGH WEDNESDAY MORNING... * WHAT...Sub-freezing temperatures as low as 30 possible and widespread frost. * WHERE...In North Carolina, Surry, Stokes, Rockingham, Caswell, Wilkes and Yadkin Counties. In Virginia, Patrick, Henry,</summary>
+<cap:event>Freeze Watch</cap:event>
+<cap:effective>2022-10-17T13:51:00-04:00</cap:effective>
+<cap:expires>2022-10-19T09:00:00-04:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Future</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Possible</cap:certainty>
+<cap:areaDesc>Caswell; Rockingham; Stokes; Surry; Wilkes; Yadkin</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>037033 037157 037169 037171 037193 037197</value>
+<valueName>UGC</valueName>
+<value>NCZ003 NCZ004 NCZ005 NCZ006 NCZ019 NCZ020</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KRNK.FZ.A.0003.221019T0800Z-221019T1300Z/</value>
+</cap:parameter>
+</entry>
+<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=NC1264128A437C.BeachHazardsStatement.126412984A80NC.ILMCFWILM.c6ec7420bdafebb22fea927cdc398c96</id>
 <updated>2022-10-17T04:07:00-04:00</updated>
 <published>2022-10-17T04:07:00-04:00</published>
@@ -4494,70 +4428,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value>/O.CON.KILM.BH.S.0043.221017T1000Z-221018T0000Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=NC1264128A41EC.FreezeWarning.1264129A6D60NC.RNKNPWRNK.b6cbc0c508100c3bf9ff9ada8c1918f0</id>
-<updated>2022-10-17T04:03:00-04:00</updated>
-<published>2022-10-17T04:03:00-04:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Freeze Warning issued October 17 at 4:03AM EDT until October 18 at 10:00AM EDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=NC1264128A41EC.FreezeWarning.1264129A6D60NC.RNKNPWRNK.b6cbc0c508100c3bf9ff9ada8c1918f0"/>
-<summary>...FREEZE WARNING IN EFFECT FROM 4 AM TO 10 AM EDT TUESDAY... * WHAT...Sub-freezing temperatures as low as 26 expected. * WHERE...In North Carolina, Watauga County. In Virginia, Carroll County. * WHEN...From 4 AM to 10 AM EDT Tuesday. * IMPACTS...Frost and freeze conditions will kill crops, other</summary>
-<cap:event>Freeze Warning</cap:event>
-<cap:effective>2022-10-17T04:03:00-04:00</cap:effective>
-<cap:expires>2022-10-18T10:00:00-04:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Watauga</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>037189</value>
-<valueName>UGC</valueName>
-<value>NCZ018</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.NEW.KRNK.FZ.W.0004.221018T0800Z-221018T1400Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=NC1264128A41EC.FreezeWatch.126412A98890NC.RNKNPWRNK.10ba9a2de088a9023ef49b9e6ef7e1a2</id>
-<updated>2022-10-17T04:03:00-04:00</updated>
-<published>2022-10-17T04:03:00-04:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Freeze Watch issued October 17 at 4:03AM EDT until October 19 at 9:00AM EDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=NC1264128A41EC.FreezeWatch.126412A98890NC.RNKNPWRNK.10ba9a2de088a9023ef49b9e6ef7e1a2"/>
-<summary>...FREEZE WATCH IN EFFECT FROM LATE TUESDAY NIGHT THROUGH WEDNESDAY MORNING... * WHAT...Sub-freezing temperatures as low as 30 possible and widespread frost. * WHERE...In North Carolina, Surry, Stokes, Rockingham, Caswell, Wilkes and Yadkin Counties. In Virginia, Patrick, Henry,</summary>
-<cap:event>Freeze Watch</cap:event>
-<cap:effective>2022-10-17T04:03:00-04:00</cap:effective>
-<cap:expires>2022-10-19T09:00:00-04:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Future</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Possible</cap:certainty>
-<cap:areaDesc>Caswell; Rockingham; Stokes; Surry; Wilkes; Yadkin</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>037033 037157 037169 037171 037193 037197</value>
-<valueName>UGC</valueName>
-<value>NCZ003 NCZ004 NCZ005 NCZ006 NCZ019 NCZ020</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.NEW.KRNK.FZ.A.0003.221019T0800Z-221019T1300Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -5244,38 +5114,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=OR126412890D54.AirQualityAlert.1264128BC760OR.MFRAQAMFR.12c648e8912d215f28a8da2eeb5d77ee</id>
-<updated>2022-10-16T17:13:00-07:00</updated>
-<published>2022-10-16T17:13:00-07:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Air Quality Alert issued October 16 at 5:13PM PDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=OR126412890D54.AirQualityAlert.1264128BC760OR.MFRAQAMFR.12c648e8912d215f28a8da2eeb5d77ee"/>
-<summary>...AIR QUALITY ALERT REMAINS IN EFFECT UNTIL 11 AM PDT MONDAY... An Air Pollution Advisory, issued by the Oregon Department of Environmental Quality this past Friday, remains in effect until 11 AM PDT Monday. Smoke from the Cedar Creek Fire in Willamette National Forest has thinned such Air Quality is Moderate this afternoon across Douglas</summary>
-<cap:event>Air Quality Alert</cap:event>
-<cap:effective>2022-10-16T17:13:00-07:00</cap:effective>
-<cap:expires>2022-10-17T11:00:00-07:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Unknown</cap:urgency>
-<cap:severity>Unknown</cap:severity>
-<cap:certainty>Unknown</cap:certainty>
-<cap:areaDesc>Douglas</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>041019</value>
-<valueName>UGC</valueName>
-<value>ORC019</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value></value>
-</cap:parameter>
-</entry>
-<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=OR1264125E28DC.AirQualityAlert.126412984A80OR.PQRAQAPQR.c3d77a5bdb647b03efd84de60a689c8e</id>
 <updated>2022-10-14T12:03:00-07:00</updated>
 <published>2022-10-14T12:03:00-07:00</published>
@@ -5794,6 +5632,70 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=VA1264128BB43C.FreezeWarning.1264129A6D60VA.RNKNPWRNK.705168e80c0912efc3528667c9a8837e</id>
+<updated>2022-10-17T13:51:00-04:00</updated>
+<published>2022-10-17T13:51:00-04:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Freeze Warning issued October 17 at 1:51PM EDT until October 18 at 10:00AM EDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=VA1264128BB43C.FreezeWarning.1264129A6D60VA.RNKNPWRNK.705168e80c0912efc3528667c9a8837e"/>
+<summary>...FREEZE WARNING REMAINS IN EFFECT FROM 4 AM TO 10 AM EDT TUESDAY... * WHAT...Sub-freezing temperatures as low as 26 expected. * WHERE...In North Carolina, Watauga County. In Virginia, Carroll County. * WHEN...From 4 AM to 10 AM EDT Tuesday.</summary>
+<cap:event>Freeze Warning</cap:event>
+<cap:effective>2022-10-17T13:51:00-04:00</cap:effective>
+<cap:expires>2022-10-18T10:00:00-04:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Carroll</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>051035 051640</value>
+<valueName>UGC</valueName>
+<value>VAZ016</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KRNK.FZ.W.0004.221018T0800Z-221018T1400Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=VA1264128BB43C.FreezeWatch.126412A98890VA.RNKNPWRNK.de74b8a8ee50cce81c59ba8f04a6e603</id>
+<updated>2022-10-17T13:51:00-04:00</updated>
+<published>2022-10-17T13:51:00-04:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Freeze Watch issued October 17 at 1:51PM EDT until October 19 at 9:00AM EDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=VA1264128BB43C.FreezeWatch.126412A98890VA.RNKNPWRNK.de74b8a8ee50cce81c59ba8f04a6e603"/>
+<summary>...FREEZE WATCH REMAINS IN EFFECT FROM LATE TUESDAY NIGHT THROUGH WEDNESDAY MORNING... * WHAT...Sub-freezing temperatures as low as 30 possible and widespread frost. * WHERE...In North Carolina, Surry, Stokes, Rockingham, Caswell, Wilkes and Yadkin Counties. In Virginia, Patrick, Henry,</summary>
+<cap:event>Freeze Watch</cap:event>
+<cap:effective>2022-10-17T13:51:00-04:00</cap:effective>
+<cap:expires>2022-10-19T09:00:00-04:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Future</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Possible</cap:certainty>
+<cap:areaDesc>Halifax; Henry; Patrick; Pittsylvania</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>051083 051089 051141 051143 051590 051690</value>
+<valueName>UGC</valueName>
+<value>VAZ032 VAZ043 VAZ044 VAZ058</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KRNK.FZ.A.0003.221019T0800Z-221019T1300Z/</value>
+</cap:parameter>
+</entry>
+<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=VA1264128B6680.FreezeWarning.1264129A6D60VA.RLXNPWRLX.9589e020d323f75b903d4033512920f9</id>
 <updated>2022-10-17T11:52:00-04:00</updated>
 <published>2022-10-17T11:52:00-04:00</published>
@@ -5824,70 +5726,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <valueName>VTEC</valueName>
 <value>/O.UPG.KRLX.FZ.A.0002.221018T0200Z-221018T1400Z/
 /O.NEW.KRLX.FZ.W.0006.221018T0200Z-221018T1400Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=VA1264128A41EC.FreezeWarning.1264129A6D60VA.RNKNPWRNK.705168e80c0912efc3528667c9a8837e</id>
-<updated>2022-10-17T04:03:00-04:00</updated>
-<published>2022-10-17T04:03:00-04:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Freeze Warning issued October 17 at 4:03AM EDT until October 18 at 10:00AM EDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=VA1264128A41EC.FreezeWarning.1264129A6D60VA.RNKNPWRNK.705168e80c0912efc3528667c9a8837e"/>
-<summary>...FREEZE WARNING IN EFFECT FROM 4 AM TO 10 AM EDT TUESDAY... * WHAT...Sub-freezing temperatures as low as 26 expected. * WHERE...In North Carolina, Watauga County. In Virginia, Carroll County. * WHEN...From 4 AM to 10 AM EDT Tuesday. * IMPACTS...Frost and freeze conditions will kill crops, other</summary>
-<cap:event>Freeze Warning</cap:event>
-<cap:effective>2022-10-17T04:03:00-04:00</cap:effective>
-<cap:expires>2022-10-18T10:00:00-04:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Carroll</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>051035 051640</value>
-<valueName>UGC</valueName>
-<value>VAZ016</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.NEW.KRNK.FZ.W.0004.221018T0800Z-221018T1400Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=VA1264128A41EC.FreezeWatch.126412A98890VA.RNKNPWRNK.de74b8a8ee50cce81c59ba8f04a6e603</id>
-<updated>2022-10-17T04:03:00-04:00</updated>
-<published>2022-10-17T04:03:00-04:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Freeze Watch issued October 17 at 4:03AM EDT until October 19 at 9:00AM EDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=VA1264128A41EC.FreezeWatch.126412A98890VA.RNKNPWRNK.de74b8a8ee50cce81c59ba8f04a6e603"/>
-<summary>...FREEZE WATCH IN EFFECT FROM LATE TUESDAY NIGHT THROUGH WEDNESDAY MORNING... * WHAT...Sub-freezing temperatures as low as 30 possible and widespread frost. * WHERE...In North Carolina, Surry, Stokes, Rockingham, Caswell, Wilkes and Yadkin Counties. In Virginia, Patrick, Henry,</summary>
-<cap:event>Freeze Watch</cap:event>
-<cap:effective>2022-10-17T04:03:00-04:00</cap:effective>
-<cap:expires>2022-10-19T09:00:00-04:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Future</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Possible</cap:certainty>
-<cap:areaDesc>Halifax; Henry; Patrick; Pittsylvania</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>051083 051089 051141 051143 051590 051690</value>
-<valueName>UGC</valueName>
-<value>VAZ032 VAZ043 VAZ044 VAZ058</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.NEW.KRNK.FZ.A.0003.221019T0800Z-221019T1300Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -5923,31 +5761,31 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=WA1264127CE470.AirQualityAlert.1264128BC760WA.SEWAQASEW.41d18af33f6ff759643c9922802cda41</id>
-<updated>2022-10-16T13:44:00-07:00</updated>
-<published>2022-10-16T13:44:00-07:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=WA1264128BB6F8.AirQualityAlert.1264129BA5E0WA.SEWAQASEW.d34fcfc8f376642777df958cc6908980</id>
+<updated>2022-10-17T10:58:00-07:00</updated>
+<published>2022-10-17T10:58:00-07:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Air Quality Alert issued October 16 at 1:44PM PDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=WA1264127CE470.AirQualityAlert.1264128BC760WA.SEWAQASEW.41d18af33f6ff759643c9922802cda41"/>
-<summary>...AIR QUALITY ALERT IN EFFECT UNTIL 11 AM PDT MONDAY... An Air Quality Alert for Smoke has been issued by the following agencies: Olympic Region Clean Air Agency Puget Sound Clean Air Agency Washington State Department of Ecology</summary>
+<title>Air Quality Alert issued October 17 at 10:58AM PDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=WA1264128BB6F8.AirQualityAlert.1264129BA5E0WA.SEWAQASEW.d34fcfc8f376642777df958cc6908980"/>
+<summary>...AIR QUALITY ALERT IN EFFECT UNTIL 5 PM PDT THURSDAY... An Air Quality Alert for Smoke has been issued by the following agencies: Olympic Region Clean Air Agency Puget Sound Clean Air Agency Washington State Department of Ecology</summary>
 <cap:event>Air Quality Alert</cap:event>
-<cap:effective>2022-10-16T13:44:00-07:00</cap:effective>
-<cap:expires>2022-10-17T11:00:00-07:00</cap:expires>
+<cap:effective>2022-10-17T10:58:00-07:00</cap:effective>
+<cap:expires>2022-10-18T15:00:00-07:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
 <cap:category>Met</cap:category>
 <cap:urgency>Unknown</cap:urgency>
 <cap:severity>Unknown</cap:severity>
 <cap:certainty>Unknown</cap:certainty>
-<cap:areaDesc>Clallam; Grays Harbor; Jefferson; King; Kitsap; Mason; Pierce; San Juan; Snohomish; Thurston</cap:areaDesc>
+<cap:areaDesc>Clallam; Jefferson; King; Kitsap; Mason; Pierce; San Juan; Snohomish; Thurston</cap:areaDesc>
 <cap:polygon></cap:polygon>
 <cap:geocode>
 <valueName>FIPS6</valueName>
-<value>053009 053027 053031 053033 053035 053045 053053 053055 053061 053067</value>
+<value>053009 053031 053033 053035 053045 053053 053055 053061 053067</value>
 <valueName>UGC</valueName>
-<value>WAC009 WAC027 WAC031 WAC033 WAC035 WAC045 WAC053 WAC055 WAC061 WAC067</value>
+<value>WAC009 WAC031 WAC033 WAC035 WAC045 WAC053 WAC055 WAC061 WAC067</value>
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
@@ -5955,18 +5793,18 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=WA1264127CE470.AirQualityAlert.1264128BC760WA.SEWAQASEW.de7bf2eba4b6748eb77230432ce8715a</id>
-<updated>2022-10-16T13:44:00-07:00</updated>
-<published>2022-10-16T13:44:00-07:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=WA1264128BB6F8.AirQualityAlert.1264129BA5E0WA.SEWAQASEW.de7bf2eba4b6748eb77230432ce8715a</id>
+<updated>2022-10-17T10:58:00-07:00</updated>
+<published>2022-10-17T10:58:00-07:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Air Quality Alert issued October 16 at 1:44PM PDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=WA1264127CE470.AirQualityAlert.1264128BC760WA.SEWAQASEW.de7bf2eba4b6748eb77230432ce8715a"/>
-<summary>...AIR QUALITY ALERT IN EFFECT UNTIL 11 AM PDT MONDAY... An Air Quality Alert for Smoke has been issued by the following agencies: Northwest Clean Air Agency Southwest Clean Air Agency until 11 AM PDT Monday.</summary>
+<title>Air Quality Alert issued October 17 at 10:58AM PDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=WA1264128BB6F8.AirQualityAlert.1264129BA5E0WA.SEWAQASEW.de7bf2eba4b6748eb77230432ce8715a"/>
+<summary>...AIR QUALITY ALERT IN EFFECT UNTIL 5 PM PDT THURSDAY... An Air Quality Alert for Smoke has been issued by the following agencies: Northwest Clean Air Agency Southwest Clean Air Agency until 5 PM PDT Thursday.</summary>
 <cap:event>Air Quality Alert</cap:event>
-<cap:effective>2022-10-16T13:44:00-07:00</cap:effective>
-<cap:expires>2022-10-17T11:00:00-07:00</cap:expires>
+<cap:effective>2022-10-17T10:58:00-07:00</cap:effective>
+<cap:expires>2022-10-18T15:00:00-07:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
 <cap:category>Met</cap:category>
