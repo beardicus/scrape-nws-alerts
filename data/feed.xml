@@ -16,11 +16,11 @@ xmlns = 'http://www.w3.org/2005/Atom'
 xmlns:cap = 'urn:oasis:names:tc:emergency:cap:1.1'
 xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 >
-<!-- http-date = Tue, 01 Nov 2022 08:59:00 GMT -->
+<!-- http-date = Tue, 01 Nov 2022 09:35:00 GMT -->
 <id>https://alerts.weather.gov/cap/us.php?x=0</id>
 <logo>http://alerts.weather.gov/images/xml_logo.gif</logo>
 <generator>NWS CAP Server</generator>
-<updated>2022-11-01T04:59:00-04:00</updated>
+<updated>2022-11-01T03:35:00-06:00</updated>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
@@ -606,17 +606,49 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=CO1264178BE268.RedFlagWarning.1264179A0780CO.GLDRFWGLD.7c836e803d1ed54ac7b0e5da3063a6ba</id>
-<updated>2022-11-01T01:30:00-06:00</updated>
-<published>2022-11-01T01:30:00-06:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=CO1264178C27F0.WinterStormWatch.126417BAD5F0CO.GJTWSWGJT.4c3c41c2b86f8650ed9e605e4ad7b86f</id>
+<updated>2022-11-01T03:08:00-06:00</updated>
+<published>2022-11-01T03:08:00-06:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Red Flag Warning issued November 01 at 1:30AM MDT until November 01 at 6:00PM MDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CO1264178BE268.RedFlagWarning.1264179A0780CO.GLDRFWGLD.7c836e803d1ed54ac7b0e5da3063a6ba"/>
-<summary>...RED FLAG WARNING IN EFFECT FROM NOON TODAY TO 6 PM MDT THIS EVENING FOR WIND AND LOW RELATIVE HUMIDITY FOR FIRE WEATHER ZONES 252 AND 253... The National Weather Service in Goodland has issued a Red Flag Warning for wind and low relative humidity, which is in effect from noon today to 6 PM MDT this evening.</summary>
+<title>Winter Storm Watch issued November 01 at 3:08AM MDT until November 04 at 9:00AM MDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CO1264178C27F0.WinterStormWatch.126417BAD5F0CO.GJTWSWGJT.4c3c41c2b86f8650ed9e605e4ad7b86f"/>
+<summary>...WINTER STORM WATCH IN EFFECT FROM WEDNESDAY EVENING THROUGH FRIDAY MORNING... * WHAT...Heavy snow possible. Total snow accumulations of 12 to 20 inches possible. Winds could gust as high as 45 mph. * WHERE...Southwest San Juan Mountains. * WHEN...From Wednesday evening through Friday morning.</summary>
+<cap:event>Winter Storm Watch</cap:event>
+<cap:effective>2022-11-01T03:08:00-06:00</cap:effective>
+<cap:expires>2022-11-04T09:00:00-06:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Future</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Possible</cap:certainty>
+<cap:areaDesc>Southwest San Juan Mountains</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>008007 008033 008053 008067 008083 008111</value>
+<valueName>UGC</valueName>
+<value>COZ019</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.NEW.KGJT.WS.A.0009.221103T0000Z-221104T1500Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=CO1264178C2728.RedFlagWarning.1264179A0780CO.GLDRFWGLD.7c836e803d1ed54ac7b0e5da3063a6ba</id>
+<updated>2022-11-01T03:06:00-06:00</updated>
+<published>2022-11-01T03:06:00-06:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Red Flag Warning issued November 01 at 3:06AM MDT until November 01 at 6:00PM MDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CO1264178C2728.RedFlagWarning.1264179A0780CO.GLDRFWGLD.7c836e803d1ed54ac7b0e5da3063a6ba"/>
+<summary>...RED FLAG WARNING REMAINS IN EFFECT FROM NOON TODAY TO 6 PM MDT THIS EVENING FOR WIND AND LOW RELATIVE HUMIDITY FOR FIRE WEATHER ZONES 252 AND 253... ...FIRE WEATHER WATCH IN EFFECT WEDNESDAY AFTERNOON FOR WIND AND LOW RELATIVE HUMIDITY FOR FIRE WEATHER ZONES 252 AND 253... The National Weather Service in Goodland has issued a Fire</summary>
 <cap:event>Red Flag Warning</cap:event>
-<cap:effective>2022-11-01T01:30:00-06:00</cap:effective>
+<cap:effective>2022-11-01T03:06:00-06:00</cap:effective>
 <cap:expires>2022-11-01T18:00:00-06:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
@@ -634,7 +666,105 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
-<value>/O.NEW.KGLD.FW.W.0042.221101T1800Z-221102T0000Z/</value>
+<value>/O.NEW.KGLD.FW.A.0036.221102T1800Z-221103T0000Z/
+/O.CON.KGLD.FW.W.0042.221101T1800Z-221102T0000Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=CO1264178C2728.FireWeatherWatch.126417A949C0CO.GLDRFWGLD.3f58d73cde342ea294ac0eb5c0c224c6</id>
+<updated>2022-11-01T03:06:00-06:00</updated>
+<published>2022-11-01T03:06:00-06:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Fire Weather Watch issued November 01 at 3:06AM MDT until November 02 at 6:00PM MDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CO1264178C2728.FireWeatherWatch.126417A949C0CO.GLDRFWGLD.3f58d73cde342ea294ac0eb5c0c224c6"/>
+<summary>...RED FLAG WARNING REMAINS IN EFFECT FROM NOON TODAY TO 6 PM MDT THIS EVENING FOR WIND AND LOW RELATIVE HUMIDITY FOR FIRE WEATHER ZONES 252 AND 253... ...FIRE WEATHER WATCH IN EFFECT WEDNESDAY AFTERNOON FOR WIND AND LOW RELATIVE HUMIDITY FOR FIRE WEATHER ZONES 252 AND 253... The National Weather Service in Goodland has issued a Fire</summary>
+<cap:event>Fire Weather Watch</cap:event>
+<cap:effective>2022-11-01T03:06:00-06:00</cap:effective>
+<cap:expires>2022-11-02T18:00:00-06:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Future</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Possible</cap:certainty>
+<cap:areaDesc>Kit Carson County; Yuma</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>008063 008125</value>
+<valueName>UGC</valueName>
+<value>COZ252 COZ253</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.NEW.KGLD.FW.A.0036.221102T1800Z-221103T0000Z/
+/O.CON.KGLD.FW.W.0042.221101T1800Z-221102T0000Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=CO1264178C2728.FireWeatherWatch.126417A949C0CO.GLDRFWGLD.33f0a2580bdfb62659f2b43f7e250d2f</id>
+<updated>2022-11-01T03:06:00-06:00</updated>
+<published>2022-11-01T03:06:00-06:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Fire Weather Watch issued November 01 at 3:06AM MDT until November 02 at 6:00PM MDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CO1264178C2728.FireWeatherWatch.126417A949C0CO.GLDRFWGLD.33f0a2580bdfb62659f2b43f7e250d2f"/>
+<summary>...FIRE WEATHER WATCH IN EFFECT WEDNESDAY AFTERNOON FOR WIND AND LOW RELATIVE HUMIDITY FOR FIRE WEATHER ZONES 001, 002, 013, 014, 027, 028, 041, 042, 079, 080, 081, AND 254... The National Weather Service in Goodland has issued a Fire Weather Watch for wind and low relative humidity, which is in effect Wednesday afternoon.</summary>
+<cap:event>Fire Weather Watch</cap:event>
+<cap:effective>2022-11-01T03:06:00-06:00</cap:effective>
+<cap:expires>2022-11-02T18:00:00-06:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Future</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Possible</cap:certainty>
+<cap:areaDesc>Cheyenne</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>008017</value>
+<valueName>UGC</valueName>
+<value>COZ254</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.NEW.KGLD.FW.A.0036.221102T1800Z-221103T0000Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=DC1264178C3150.DenseFogAdvisory.1264178CE820DC.LWXNPWLWX.01ec2a36c6a08bb56b2cdd82a2e76ed2</id>
+<updated>2022-11-01T05:32:00-04:00</updated>
+<published>2022-11-01T05:32:00-04:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Dense Fog Advisory issued November 01 at 5:32AM EDT until November 01 at 10:00AM EDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=DC1264178C3150.DenseFogAdvisory.1264178CE820DC.LWXNPWLWX.01ec2a36c6a08bb56b2cdd82a2e76ed2"/>
+<summary>...DENSE FOG ADVISORY IN EFFECT UNTIL 10 AM EDT THIS MORNING... * WHAT...Visibility one quarter mile or less in dense fog. * WHERE...In District of Columbia, District of Columbia. In Maryland, Prince Georges and Central and Southeast Montgomery Counties. In Virginia, Fairfax County, and Arlington/Falls Church/Alexandria.</summary>
+<cap:event>Dense Fog Advisory</cap:event>
+<cap:effective>2022-11-01T05:32:00-04:00</cap:effective>
+<cap:expires>2022-11-01T10:00:00-04:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>District of Columbia</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>011001</value>
+<valueName>UGC</valueName>
+<value>DCZ001</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.EXA.KLWX.FG.Y.0017.000000T0000Z-221101T1400Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -1090,6 +1220,39 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=ID1264178C25FC.HighWindWarning.1264179CC6A0ID.PIHNPWPIH.e3e5fab8642da063e4985d507da70bf8</id>
+<updated>2022-11-01T03:03:00-06:00</updated>
+<published>2022-11-01T03:03:00-06:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>High Wind Warning issued November 01 at 3:03AM MDT until November 02 at 12:00PM MDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=ID1264178C25FC.HighWindWarning.1264179CC6A0ID.PIHNPWPIH.e3e5fab8642da063e4985d507da70bf8"/>
+<summary>...HIGH WIND WARNING IN EFFECT FROM 6 PM THIS EVENING TO NOON MDT WEDNESDAY... * WHAT...Southwest winds 30 to 40 mph with gusts up to 60 mph expected. * WHERE...Mud Lake, INL, Idaho Falls, Rexburg, St. Anthony, Pocatello, Blackfoot, American Falls, Shelley, Fort Hall,</summary>
+<cap:event>High Wind Warning</cap:event>
+<cap:effective>2022-11-01T03:03:00-06:00</cap:effective>
+<cap:expires>2022-11-02T12:00:00-06:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Severe</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Arco, Mud Lake Desert; Bear Lake Valley; Bear River Range; Big Hole Mountains; Blackfoot Mountains; Caribou Range; Centennial Mountains, Island Park; Eastern Magic Valley; Franklin, Eastern Oneida Region; Lower Snake River Plain; Marsh and Arbon Highlands; Raft River Region; Southern Hills, Albion Mountains; Teton Valley; Upper Snake River Plain</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>016005 016007 016011 016019 016023 016029 016031 016033 016041 016043 016051 016065 016067 016071 016077 016081</value>
+<valueName>UGC</valueName>
+<value>IDZ052 IDZ053 IDZ054 IDZ055 IDZ056 IDZ057 IDZ058 IDZ059 IDZ060 IDZ061 IDZ062 IDZ063 IDZ064 IDZ065 IDZ066</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.UPG.KPIH.HW.A.0003.221102T0000Z-221102T1800Z/
+/O.NEW.KPIH.HW.W.0004.221102T0000Z-221102T1800Z/</value>
+</cap:parameter>
+</entry>
+<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=ID126413622A94.SpecialWeatherStatement.1264179A5B7CID.OTXSPSOTX.429034f8a627731591a4348517f6ab1a</id>
 <updated>2022-10-31T17:01:00-06:00</updated>
 <published>2022-10-31T17:01:00-06:00</published>
@@ -1151,70 +1314,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value></value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=ID12641361C5CC.HighWindWatch.1264179CC6A0ID.PIHNPWPIH.cb8a0cad276ec2d2c589f35c4dd2c4c6</id>
-<updated>2022-10-31T14:43:00-06:00</updated>
-<published>2022-10-31T14:43:00-06:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>High Wind Watch issued October 31 at 2:43PM MDT until November 02 at 12:00PM MDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=ID12641361C5CC.HighWindWatch.1264179CC6A0ID.PIHNPWPIH.cb8a0cad276ec2d2c589f35c4dd2c4c6"/>
-<summary>...HIGH WIND WATCH IN EFFECT FROM TUESDAY EVENING THROUGH WEDNESDAY MORNING... * WHAT...Southwest winds 30 to 40 mph with gusts up to 60 mph possible. * WHERE...The Snake River plain...Mud Lake Desert...and Eastern Magic Valley, including the towns and cities of Mud Lake, Idaho</summary>
-<cap:event>High Wind Watch</cap:event>
-<cap:effective>2022-10-31T14:43:00-06:00</cap:effective>
-<cap:expires>2022-11-02T12:00:00-06:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Future</cap:urgency>
-<cap:severity>Severe</cap:severity>
-<cap:certainty>Possible</cap:certainty>
-<cap:areaDesc>Arco, Mud Lake Desert; Eastern Magic Valley; Lower Snake River Plain; Upper Snake River Plain</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>016011 016019 016023 016031 016043 016051 016065 016067 016077</value>
-<valueName>UGC</valueName>
-<value>IDZ052 IDZ053 IDZ054 IDZ055</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.NEW.KPIH.HW.A.0003.221102T0000Z-221102T1800Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=ID12641361C5CC.HighWindWatch.1264179CC6A0ID.PIHNPWPIH.f3fc7621a53e38ef256ea04bd74657f5</id>
-<updated>2022-10-31T14:43:00-06:00</updated>
-<published>2022-10-31T14:43:00-06:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>High Wind Watch issued October 31 at 2:43PM MDT until November 02 at 12:00PM MDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=ID12641361C5CC.HighWindWatch.1264179CC6A0ID.PIHNPWPIH.f3fc7621a53e38ef256ea04bd74657f5"/>
-<summary>...HIGH WIND WATCH IN EFFECT FROM TUESDAY EVENING THROUGH WEDNESDAY MORNING... * WHAT...Southwest winds 35 to 45 mph with gusts up to 65 mph possible. * WHERE...The southern and eastern highlands of east Idaho, mainly at lower elevations in valleys oriented north-south.</summary>
-<cap:event>High Wind Watch</cap:event>
-<cap:effective>2022-10-31T14:43:00-06:00</cap:effective>
-<cap:expires>2022-11-02T12:00:00-06:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Future</cap:urgency>
-<cap:severity>Severe</cap:severity>
-<cap:certainty>Possible</cap:certainty>
-<cap:areaDesc>Bear Lake Valley; Bear River Range; Big Hole Mountains; Blackfoot Mountains; Caribou Range; Centennial Mountains, Island Park; Franklin, Eastern Oneida Region; Marsh and Arbon Highlands; Raft River Region; Southern Hills, Albion Mountains; Teton Valley</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>016005 016007 016011 016019 016029 016031 016033 016041 016043 016065 016071 016077 016081</value>
-<valueName>UGC</valueName>
-<value>IDZ056 IDZ057 IDZ058 IDZ059 IDZ060 IDZ061 IDZ062 IDZ063 IDZ064 IDZ065 IDZ066</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.NEW.KPIH.HW.A.0003.221102T0000Z-221102T1800Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -1378,31 +1477,31 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=IL1264178B1428.SpecialWeatherStatement.1264178C3088IL.PAHSPSPAH.81813ef3f6484e0d5850fceeedbac2ce</id>
-<updated>2022-10-31T21:02:00-05:00</updated>
-<published>2022-10-31T21:02:00-05:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=IN1264178C291C.SpecialWeatherStatement.1264178C7EA8IN.IWXSPSIWX.c1ed9a3293514a6b8c12e56b8ace3c60</id>
+<updated>2022-11-01T05:11:00-04:00</updated>
+<published>2022-11-01T05:11:00-04:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Special Weather Statement issued October 31 at 9:02PM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=IL1264178B1428.SpecialWeatherStatement.1264178C3088IL.PAHSPSPAH.81813ef3f6484e0d5850fceeedbac2ce"/>
-<summary>...DENSE FOG MAY DEVELOP LATER TONIGHT... Clearing skies and calm winds will combine with high humidity overnight to make conditions increasingly favorable for areas of dense fog, especially late, and into the early morning Tuesday. Visibilities may be reduced to one quarter of a mile or less in some areas. We may need a Dense Fog Advisory later tonight should</summary>
+<title>Special Weather Statement issued November 01 at 5:11AM EDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=IN1264178C291C.SpecialWeatherStatement.1264178C7EA8IN.IWXSPSIWX.c1ed9a3293514a6b8c12e56b8ace3c60"/>
+<summary>...Patchy dense fog early this morning... Patchy dense fog had developed overnight in the midst of less dense fog mainly west of Highway 31 from Peru to Niles. The fog should lift by mid morning. If you are driving this morning, slow down, and allow extra time to reach your destination. Watch out for children in the dark waiting for the school bus.</summary>
 <cap:event>Special Weather Statement</cap:event>
-<cap:effective>2022-10-31T21:02:00-05:00</cap:effective>
-<cap:expires>2022-11-01T04:30:00-05:00</cap:expires>
+<cap:effective>2022-11-01T05:11:00-04:00</cap:effective>
+<cap:expires>2022-11-01T07:30:00-04:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
 <cap:category>Met</cap:category>
 <cap:urgency>Expected</cap:urgency>
 <cap:severity>Minor</cap:severity>
 <cap:certainty>Observed</cap:certainty>
-<cap:areaDesc>Alexander; Hardin; Massac; Pope; Pulaski</cap:areaDesc>
+<cap:areaDesc>Eastern St. Joseph; Marshall; Northern La Porte; Pulaski; Southern La Porte; Starke; Western St. Joseph; White</cap:areaDesc>
 <cap:polygon></cap:polygon>
 <cap:geocode>
 <valueName>FIPS6</valueName>
-<value>017003 017069 017127 017151 017153</value>
+<value>018091 018099 018131 018141 018149 018181</value>
 <valueName>UGC</valueName>
-<value>ILZ090 ILZ091 ILZ092 ILZ093 ILZ094</value>
+<value>INZ012 INZ013 INZ014 INZ020 INZ103 INZ104 INZ203 INZ204</value>
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
@@ -1471,6 +1570,38 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value></value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=KS1264178C2728.FireWeatherWatch.126417A949C0KS.GLDRFWGLD.79391edc57856595d56a080c1d07aff1</id>
+<updated>2022-11-01T04:06:00-05:00</updated>
+<published>2022-11-01T04:06:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Fire Weather Watch issued November 01 at 4:06AM CDT until November 02 at 7:00PM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=KS1264178C2728.FireWeatherWatch.126417A949C0KS.GLDRFWGLD.79391edc57856595d56a080c1d07aff1"/>
+<summary>...FIRE WEATHER WATCH IN EFFECT WEDNESDAY AFTERNOON FOR WIND AND LOW RELATIVE HUMIDITY FOR FIRE WEATHER ZONES 001, 002, 013, 014, 027, 028, 041, 042, 079, 080, 081, AND 254... The National Weather Service in Goodland has issued a Fire Weather Watch for wind and low relative humidity, which is in effect Wednesday afternoon.</summary>
+<cap:event>Fire Weather Watch</cap:event>
+<cap:effective>2022-11-01T04:06:00-05:00</cap:effective>
+<cap:expires>2022-11-02T19:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Future</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Possible</cap:certainty>
+<cap:areaDesc>Cheyenne; Greeley; Logan; Rawlins; Sherman; Thomas; Wallace; Wichita</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>020023 020071 020109 020153 020181 020193 020199 020203</value>
+<valueName>UGC</valueName>
+<value>KSZ001 KSZ002 KSZ013 KSZ014 KSZ027 KSZ028 KSZ041 KSZ042</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.NEW.KGLD.FW.A.0036.221102T1800Z-221103T0000Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -1570,31 +1701,95 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=KY1264178B1428.SpecialWeatherStatement.1264178C3088KY.PAHSPSPAH.fd25783b202fd54fea88bbe7467a78a6</id>
-<updated>2022-10-31T22:02:00-04:00</updated>
-<published>2022-10-31T22:02:00-04:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=MD1264178C3150.DenseFogAdvisory.1264178CE820MD.LWXNPWLWX.c6dbbd9ee696627eb43dcdc0f662c452</id>
+<updated>2022-11-01T05:32:00-04:00</updated>
+<published>2022-11-01T05:32:00-04:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Special Weather Statement issued October 31 at 10:02PM EDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=KY1264178B1428.SpecialWeatherStatement.1264178C3088KY.PAHSPSPAH.fd25783b202fd54fea88bbe7467a78a6"/>
-<summary>...DENSE FOG MAY DEVELOP LATER TONIGHT... Clearing skies and calm winds will combine with high humidity overnight to make conditions increasingly favorable for areas of dense fog, especially late, and into the early morning Tuesday. Visibilities may be reduced to one quarter of a mile or less in some areas. We may need a Dense Fog Advisory later tonight should</summary>
+<title>Dense Fog Advisory issued November 01 at 5:32AM EDT until November 01 at 10:00AM EDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MD1264178C3150.DenseFogAdvisory.1264178CE820MD.LWXNPWLWX.c6dbbd9ee696627eb43dcdc0f662c452"/>
+<summary>...DENSE FOG ADVISORY IN EFFECT UNTIL 10 AM EDT THIS MORNING... * WHAT...Visibility one quarter mile or less in dense fog. * WHERE...In District of Columbia, District of Columbia. In Maryland, Prince Georges and Central and Southeast Montgomery Counties. In Virginia, Fairfax County, and Arlington/Falls Church/Alexandria.</summary>
+<cap:event>Dense Fog Advisory</cap:event>
+<cap:effective>2022-11-01T05:32:00-04:00</cap:effective>
+<cap:expires>2022-11-01T10:00:00-04:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Central and Southeast Montgomery; Prince Georges</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>024031 024033</value>
+<valueName>UGC</valueName>
+<value>MDZ013 MDZ504</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.EXA.KLWX.FG.Y.0017.000000T0000Z-221101T1400Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=MI1264178C30EC.SpecialWeatherStatement.1264178C9A00MI.APXSPSAPX.126bb5a23e787a6c435093c640801277</id>
+<updated>2022-11-01T05:31:00-04:00</updated>
+<published>2022-11-01T05:31:00-04:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Special Weather Statement issued November 01 at 5:31AM EDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MI1264178C30EC.SpecialWeatherStatement.1264178C9A00MI.APXSPSAPX.126bb5a23e787a6c435093c640801277"/>
+<summary>...Locally dense fog this morning... Locally dense fog has formed across parts of northern Michigan this morning, including along parts of I-75, US-127, M-55 and US-23. Rapidly changing visibilites to less than one quarter of a mile in spots are likely. Improvement is not expected until after sunrise this morning.</summary>
 <cap:event>Special Weather Statement</cap:event>
-<cap:effective>2022-10-31T22:02:00-04:00</cap:effective>
-<cap:expires>2022-11-01T05:30:00-04:00</cap:expires>
+<cap:effective>2022-11-01T05:31:00-04:00</cap:effective>
+<cap:expires>2022-11-01T08:00:00-04:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
 <cap:category>Met</cap:category>
 <cap:urgency>Expected</cap:urgency>
 <cap:severity>Minor</cap:severity>
 <cap:certainty>Observed</cap:certainty>
-<cap:areaDesc>Ballard; Livingston; McCracken</cap:areaDesc>
+<cap:areaDesc>Alcona; Alpena; Arenac; Gladwin; Iosco; Manistee; Missaukee; Ogemaw; Roscommon; Wexford</cap:areaDesc>
 <cap:polygon></cap:polygon>
 <cap:geocode>
 <valueName>FIPS6</valueName>
-<value>021007 021139 021145</value>
+<value>026001 026007 026011 026051 026069 026101 026113 026129 026143 026165</value>
 <valueName>UGC</valueName>
-<value>KYZ004 KYZ005 KYZ007</value>
+<value>MIZ024 MIZ030 MIZ031 MIZ032 MIZ033 MIZ034 MIZ035 MIZ036 MIZ041 MIZ042</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value></value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=MI1264178C291C.SpecialWeatherStatement.1264178C7EA8MI.IWXSPSIWX.f23a480072fc8b2eb1148040dbade3bc</id>
+<updated>2022-11-01T05:11:00-04:00</updated>
+<published>2022-11-01T05:11:00-04:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Special Weather Statement issued November 01 at 5:11AM EDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MI1264178C291C.SpecialWeatherStatement.1264178C7EA8MI.IWXSPSIWX.f23a480072fc8b2eb1148040dbade3bc"/>
+<summary>...Patchy dense fog early this morning... Patchy dense fog had developed overnight in the midst of less dense fog mainly west of Highway 31 from Peru to Niles. The fog should lift by mid morning. If you are driving this morning, slow down, and allow extra time to reach your destination. Watch out for children in the dark waiting for the school bus.</summary>
+<cap:event>Special Weather Statement</cap:event>
+<cap:effective>2022-11-01T05:11:00-04:00</cap:effective>
+<cap:expires>2022-11-01T07:30:00-04:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Observed</cap:certainty>
+<cap:areaDesc>Northern Berrien; Southern Berrien</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>026021</value>
+<valueName>UGC</valueName>
+<value>MIZ177 MIZ277</value>
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
@@ -1730,35 +1925,132 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=MO1264178B1428.SpecialWeatherStatement.1264178C3088MO.PAHSPSPAH.5d8139af0531cba6eaf1c755b18a183f</id>
-<updated>2022-10-31T21:02:00-05:00</updated>
-<published>2022-10-31T21:02:00-05:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=MT1264178C2660.HighWindWarning.1264179C5170MT.TFXNPWTFX.f4fa9bda4b2230a90d50490b2147aa4c</id>
+<updated>2022-11-01T03:04:00-06:00</updated>
+<published>2022-11-01T03:04:00-06:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Special Weather Statement issued October 31 at 9:02PM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MO1264178B1428.SpecialWeatherStatement.1264178C3088MO.PAHSPSPAH.5d8139af0531cba6eaf1c755b18a183f"/>
-<summary>...DENSE FOG MAY DEVELOP LATER TONIGHT... Clearing skies and calm winds will combine with high humidity overnight to make conditions increasingly favorable for areas of dense fog, especially late, and into the early morning Tuesday. Visibilities may be reduced to one quarter of a mile or less in some areas. We may need a Dense Fog Advisory later tonight should</summary>
-<cap:event>Special Weather Statement</cap:event>
-<cap:effective>2022-10-31T21:02:00-05:00</cap:effective>
-<cap:expires>2022-11-01T04:30:00-05:00</cap:expires>
+<title>High Wind Warning issued November 01 at 3:04AM MDT until November 02 at 9:00AM MDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MT1264178C2660.HighWindWarning.1264179C5170MT.TFXNPWTFX.f4fa9bda4b2230a90d50490b2147aa4c"/>
+<summary>...HIGH WIND WARNING REMAINS IN EFFECT UNTIL 9 AM MDT WEDNESDAY... * WHAT...South winds 30 to 40 mph, with gusts up to 60 mph. * WHERE...Gallatin and Madison County Mountains and Centennial Mountains, Madison River Valley and Ruby Mountains and Southern Beaverhead Mountains. * WHEN...Until 9 AM MDT Wednesday.</summary>
+<cap:event>High Wind Warning</cap:event>
+<cap:effective>2022-11-01T03:04:00-06:00</cap:effective>
+<cap:expires>2022-11-02T09:00:00-06:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Severe</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Gallatin and Madison County Mountains and Centennial Mountains; Madison River Valley; Ruby Mountains and Southern Beaverhead Mountains</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>030001 030031 030057</value>
+<valueName>UGC</valueName>
+<value>MTZ325 MTZ329 MTZ330</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KTFX.HW.W.0033.221101T1200Z-221102T1500Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=MT1264178C2598.WinterWeatherAdvisory.126417A949C0MT.TFXWSWTFX.adfd16ea46ac18e4e79c2578b5c40163</id>
+<updated>2022-11-01T03:02:00-06:00</updated>
+<published>2022-11-01T03:02:00-06:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Winter Weather Advisory issued November 01 at 3:02AM MDT until November 02 at 6:00PM MDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MT1264178C2598.WinterWeatherAdvisory.126417A949C0MT.TFXWSWTFX.adfd16ea46ac18e4e79c2578b5c40163"/>
+<summary>...WINTER WEATHER ADVISORY IN EFFECT FROM 3 AM TO 6 PM MDT WEDNESDAY... * WHAT...Snow expected. Total snow accumulations between 1 and 4 inches. Winds gusting as high as 40 mph. * WHERE...Southern Rocky Mountain Front and adjacent foothills and plains, Eastern Toole and Liberty, Eastern Pondera and Eastern</summary>
+<cap:event>Winter Weather Advisory</cap:event>
+<cap:effective>2022-11-01T03:02:00-06:00</cap:effective>
+<cap:expires>2022-11-02T18:00:00-06:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
 <cap:category>Met</cap:category>
 <cap:urgency>Expected</cap:urgency>
 <cap:severity>Minor</cap:severity>
-<cap:certainty>Observed</cap:certainty>
-<cap:areaDesc>Scott</cap:areaDesc>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Eastern Pondera and Eastern Teton; Eastern Toole and Liberty; Southern High Plains; Southern Rocky Mountain Front; Upper Blackfoot and MacDonald Pass</cap:areaDesc>
 <cap:polygon></cap:polygon>
 <cap:geocode>
 <valueName>FIPS6</valueName>
-<value>029201</value>
+<value>030049 030051 030073 030099 030101</value>
 <valueName>UGC</valueName>
-<value>MOZ111</value>
+<value>MTZ304 MTZ307 MTZ308 MTZ309 MTZ315</value>
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
-<value></value>
+<value>/O.NEW.KTFX.WW.Y.0037.221102T0900Z-221103T0000Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=MT1264178C2598.WinterStormWarning.126417AA3420MT.TFXWSWTFX.1f6f2cafebeafaedea9d597c98dd9e42</id>
+<updated>2022-11-01T03:02:00-06:00</updated>
+<published>2022-11-01T03:02:00-06:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Winter Storm Warning issued November 01 at 3:02AM MDT until November 03 at 12:00AM MDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MT1264178C2598.WinterStormWarning.126417AA3420MT.TFXWSWTFX.1f6f2cafebeafaedea9d597c98dd9e42"/>
+<summary>...WINTER STORM WARNING IN EFFECT FROM 6 PM THIS EVENING TO MIDNIGHT MDT WEDNESDAY NIGHT... * WHAT...Heavy snow expected. Total snow accumulations between 5 and 12 inches. Winds gusting as high as 40 mph. * WHERE...East Glacier Park Region. * WHEN...From 6 PM this evening to Midnight MDT Wednesday Night.</summary>
+<cap:event>Winter Storm Warning</cap:event>
+<cap:effective>2022-11-01T03:02:00-06:00</cap:effective>
+<cap:expires>2022-11-03T00:00:00-06:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>East Glacier Park Region</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>030035</value>
+<valueName>UGC</valueName>
+<value>MTZ301</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.UPG.KTFX.WS.A.0010.221102T0000Z-221103T0600Z/
+/O.NEW.KTFX.WS.W.0009.221102T0000Z-221103T0600Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=MT1264178C2598.WinterStormWarning.126417AA3420MT.TFXWSWTFX.84a51b773fd9f9bc4e7bda71d188418f</id>
+<updated>2022-11-01T03:02:00-06:00</updated>
+<published>2022-11-01T03:02:00-06:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Winter Storm Warning issued November 01 at 3:02AM MDT until November 03 at 12:00AM MDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MT1264178C2598.WinterStormWarning.126417AA3420MT.TFXWSWTFX.84a51b773fd9f9bc4e7bda71d188418f"/>
+<summary>...WINTER STORM WARNING IN EFFECT FROM 6 PM THIS EVENING TO MIDNIGHT MDT WEDNESDAY NIGHT... * WHAT...Heavy snow expected. Total snow accumulations between 2 and 6 inches. Winds gusting as high as 40 mph. * WHERE...Eastern Glacier, Western Toole, and Central Pondera and Northern High Plains.</summary>
+<cap:event>Winter Storm Warning</cap:event>
+<cap:effective>2022-11-01T03:02:00-06:00</cap:effective>
+<cap:expires>2022-11-03T00:00:00-06:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Eastern Glacier, Western Toole, and Central Pondera; Northern High Plains</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>030035 030073 030101</value>
+<valueName>UGC</valueName>
+<value>MTZ302 MTZ303</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.NEW.KTFX.WS.W.0009.221102T0000Z-221103T0600Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -1794,68 +2086,35 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=MT12641361BA78.HighWindWarning.1264179C5170MT.TFXNPWTFX.f4fa9bda4b2230a90d50490b2147aa4c</id>
-<updated>2022-10-31T14:14:00-06:00</updated>
-<published>2022-10-31T14:14:00-06:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=NC1264178C3024.SpecialWeatherStatement.1264178CC110NC.RAHSPSRAH.688972d3f569763bbf5f5cacb33c9b21</id>
+<updated>2022-11-01T05:29:00-04:00</updated>
+<published>2022-11-01T05:29:00-04:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>High Wind Warning issued October 31 at 2:14PM MDT until November 02 at 9:00AM MDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MT12641361BA78.HighWindWarning.1264179C5170MT.TFXNPWTFX.f4fa9bda4b2230a90d50490b2147aa4c"/>
-<summary>...HIGH WIND WARNING IN EFFECT FROM 6 AM TUESDAY TO 9 AM MDT WEDNESDAY... * WHAT...South winds 30 to 40 mph, with gusts up to 60 mph. * WHERE...Gallatin and Madison County Mountains and Centennial Mountains, Madison River Valley and Ruby Mountains and Southern Beaverhead Mountains.</summary>
-<cap:event>High Wind Warning</cap:event>
-<cap:effective>2022-10-31T14:14:00-06:00</cap:effective>
-<cap:expires>2022-11-02T09:00:00-06:00</cap:expires>
+<title>Special Weather Statement issued November 01 at 5:29AM EDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=NC1264178C3024.SpecialWeatherStatement.1264178CC110NC.RAHSPSRAH.688972d3f569763bbf5f5cacb33c9b21"/>
+<summary>...Locally dense fog will reduce visibility to around one quarter mile this morning... Fog will disperse between 8 AM and 9 AM. Motorists are encouraged to be alert for sudden reduction in visibility to a quarter mile or less, use low beam headlights, and slow down.</summary>
+<cap:event>Special Weather Statement</cap:event>
+<cap:effective>2022-11-01T05:29:00-04:00</cap:effective>
+<cap:expires>2022-11-01T09:00:00-04:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
 <cap:category>Met</cap:category>
 <cap:urgency>Expected</cap:urgency>
-<cap:severity>Severe</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Gallatin and Madison County Mountains and Centennial Mountains; Madison River Valley; Ruby Mountains and Southern Beaverhead Mountains</cap:areaDesc>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Observed</cap:certainty>
+<cap:areaDesc>Alamance; Davidson; Forsyth; Guilford; Orange; Person; Randolph</cap:areaDesc>
 <cap:polygon></cap:polygon>
 <cap:geocode>
 <valueName>FIPS6</valueName>
-<value>030001 030031 030057</value>
+<value>037001 037057 037067 037081 037135 037145 037151</value>
 <valueName>UGC</valueName>
-<value>MTZ325 MTZ329 MTZ330</value>
+<value>NCZ007 NCZ021 NCZ022 NCZ023 NCZ024 NCZ038 NCZ039</value>
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
-<value>/O.UPG.KTFX.HW.A.0032.221101T1800Z-221102T1200Z/
-/O.NEW.KTFX.HW.W.0033.221101T1200Z-221102T1500Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=MT12641361A4FC.WinterStormWatch.126417AA3420MT.TFXWSWTFX.4e47653cca86dd4238c378afdcaf9006</id>
-<updated>2022-10-31T13:59:00-06:00</updated>
-<published>2022-10-31T13:59:00-06:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Winter Storm Watch issued October 31 at 1:59PM MDT until November 03 at 12:00AM MDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MT12641361A4FC.WinterStormWatch.126417AA3420MT.TFXWSWTFX.4e47653cca86dd4238c378afdcaf9006"/>
-<summary>...WINTER STORM WATCH IN EFFECT FROM TUESDAY EVENING THROUGH WEDNESDAY EVENING... * WHAT...Heavy snow possible. Total snow accumulations between 4 and 10 inches possible. * WHERE...East Glacier Park Region. * WHEN...From Tuesday evening through Wednesday evening.</summary>
-<cap:event>Winter Storm Watch</cap:event>
-<cap:effective>2022-10-31T13:59:00-06:00</cap:effective>
-<cap:expires>2022-11-03T00:00:00-06:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Future</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Possible</cap:certainty>
-<cap:areaDesc>East Glacier Park Region</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>030035</value>
-<valueName>UGC</valueName>
-<value>MTZ301</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.NEW.KTFX.WS.A.0010.221102T0000Z-221103T0600Z/</value>
+<value></value>
 </cap:parameter>
 </entry>
 <entry>
@@ -1952,6 +2211,38 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value>/O.NEW.KBIS.FW.A.0005.221102T1700Z-221103T0100Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=NE1264178C2728.FireWeatherWatch.126417A949C0NE.GLDRFWGLD.5be919f6bade6eae6c96f2d3066eefad</id>
+<updated>2022-11-01T04:06:00-05:00</updated>
+<published>2022-11-01T04:06:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Fire Weather Watch issued November 01 at 4:06AM CDT until November 02 at 7:00PM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=NE1264178C2728.FireWeatherWatch.126417A949C0NE.GLDRFWGLD.5be919f6bade6eae6c96f2d3066eefad"/>
+<summary>...FIRE WEATHER WATCH IN EFFECT WEDNESDAY AFTERNOON FOR WIND AND LOW RELATIVE HUMIDITY FOR FIRE WEATHER ZONES 001, 002, 013, 014, 027, 028, 041, 042, 079, 080, 081, AND 254... The National Weather Service in Goodland has issued a Fire Weather Watch for wind and low relative humidity, which is in effect Wednesday afternoon.</summary>
+<cap:event>Fire Weather Watch</cap:event>
+<cap:effective>2022-11-01T04:06:00-05:00</cap:effective>
+<cap:expires>2022-11-02T19:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Future</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Possible</cap:certainty>
+<cap:areaDesc>Dundy; Hitchcock; Red Willow</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>031057 031087 031145</value>
+<valueName>UGC</valueName>
+<value>NEZ079 NEZ080 NEZ081</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.NEW.KGLD.FW.A.0036.221102T1800Z-221103T0000Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -2470,6 +2761,38 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=SC1264178C29E4.DenseFogAdvisory.1264178CC110SC.ILMNPWILM.b17a5bbfda6e2529232cd491f8f9c1d3</id>
+<updated>2022-11-01T05:13:00-04:00</updated>
+<published>2022-11-01T05:13:00-04:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Dense Fog Advisory issued November 01 at 5:13AM EDT until November 01 at 9:00AM EDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=SC1264178C29E4.DenseFogAdvisory.1264178CC110SC.ILMNPWILM.b17a5bbfda6e2529232cd491f8f9c1d3"/>
+<summary>...DENSE FOG ADVISORY IN EFFECT UNTIL 9 AM EDT THIS MORNING... * WHAT...Visibility one quarter mile or less in dense fog. * WHERE...Williamsburg, Inland Georgetown and Coastal Georgetown Counties. * WHEN...Until 9 AM EDT this morning. * IMPACTS...Hazardous driving conditions due to low visibility.</summary>
+<cap:event>Dense Fog Advisory</cap:event>
+<cap:effective>2022-11-01T05:13:00-04:00</cap:effective>
+<cap:expires>2022-11-01T09:00:00-04:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Coastal Georgetown; Inland Georgetown; Williamsburg</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>045043 045089</value>
+<valueName>UGC</valueName>
+<value>SCZ039 SCZ055 SCZ056</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.NEW.KILM.FG.Y.0008.221101T0913Z-221101T1300Z/</value>
+</cap:parameter>
+</entry>
+<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=SC1264178C14CC.DenseFogAdvisory.1264178CC110SC.CHSNPWCHS.8aae3a2a1606b55abf12f11874e2562f</id>
 <updated>2022-11-01T04:59:00-04:00</updated>
 <published>2022-11-01T04:59:00-04:00</published>
@@ -2890,17 +3213,17 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=UT1264178B42A4.WinterWeatherAdvisory.126417AB1E80UT.SLCWSWSLC.6a5a89187efba7c9d45a7badaac22cfa</id>
-<updated>2022-10-31T21:21:00-06:00</updated>
-<published>2022-10-31T21:21:00-06:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=UT1264178C327C.WinterWeatherAdvisory.126417AB1E80UT.SLCWSWSLC.6a5a89187efba7c9d45a7badaac22cfa</id>
+<updated>2022-11-01T03:35:00-06:00</updated>
+<published>2022-11-01T03:35:00-06:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Winter Weather Advisory issued October 31 at 9:21PM MDT until November 03 at 6:00AM MDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=UT1264178B42A4.WinterWeatherAdvisory.126417AB1E80UT.SLCWSWSLC.6a5a89187efba7c9d45a7badaac22cfa"/>
-<summary>...WINTER WEATHER ADVISORY REMAINS IN EFFECT FROM 6 AM WEDNESDAY TO 6 AM MDT THURSDAY... * WHAT...Snow expected. For the Wasatch Mountains I-80 North, total snow accumulations of 3 to 10 inches with locally higher amounts. For the Wasatch Mountains South of I-80, total snow accumulations of 6 to 12 inches with locally higher amounts.</summary>
+<title>Winter Weather Advisory issued November 01 at 3:35AM MDT until November 03 at 6:00AM MDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=UT1264178C327C.WinterWeatherAdvisory.126417AB1E80UT.SLCWSWSLC.6a5a89187efba7c9d45a7badaac22cfa"/>
+<summary>...WINTER WEATHER ADVISORY REMAINS IN EFFECT FROM 6 AM WEDNESDAY TO 6 AM MDT THURSDAY... * WHAT...Snow expected. For the Wasatch Mountains I-80 North, total snow accumulations of 5 to 10 inches with locally higher amounts. For the Wasatch Mountains South of I-80, total snow accumulations of 8 to 14 inches with locally higher amounts.</summary>
 <cap:event>Winter Weather Advisory</cap:event>
-<cap:effective>2022-10-31T21:21:00-06:00</cap:effective>
+<cap:effective>2022-11-01T03:35:00-06:00</cap:effective>
 <cap:expires>2022-11-03T06:00:00-06:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
@@ -2922,17 +3245,17 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=UT1264178B42A4.WinterWeatherAdvisory.126417B97660UT.SLCWSWSLC.3a330aebe3a3d3c4622a901c4b8464cd</id>
-<updated>2022-10-31T21:21:00-06:00</updated>
-<published>2022-10-31T21:21:00-06:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=UT1264178C327C.WinterWeatherAdvisory.126417B97660UT.SLCWSWSLC.3a330aebe3a3d3c4622a901c4b8464cd</id>
+<updated>2022-11-01T03:35:00-06:00</updated>
+<published>2022-11-01T03:35:00-06:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Winter Weather Advisory issued October 31 at 9:21PM MDT until November 04 at 12:00AM MDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=UT1264178B42A4.WinterWeatherAdvisory.126417B97660UT.SLCWSWSLC.3a330aebe3a3d3c4622a901c4b8464cd"/>
-<summary>...WINTER WEATHER ADVISORY REMAINS IN EFFECT FROM NOON WEDNESDAY TO MIDNIGHT MDT THURSDAY NIGHT... * WHAT...Snow expected. Total snow accumulations of 6 to 12 inches, with locally higher amounts. * WHERE...Western Uinta Mountains, Wasatch Plateau/Book Cliffs, Central Mountains and Southern Mountains.</summary>
+<title>Winter Weather Advisory issued November 01 at 3:35AM MDT until November 04 at 12:00AM MDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=UT1264178C327C.WinterWeatherAdvisory.126417B97660UT.SLCWSWSLC.3a330aebe3a3d3c4622a901c4b8464cd"/>
+<summary>...WINTER WEATHER ADVISORY REMAINS IN EFFECT FROM NOON WEDNESDAY TO MIDNIGHT MDT THURSDAY NIGHT... * WHAT...Snow expected. Total snow accumulations of 8 to 16 inches, with locally higher amounts. * WHERE...Western Uinta Mountains, Wasatch Plateau/Book Cliffs, Central Mountains and Southern Mountains.</summary>
 <cap:event>Winter Weather Advisory</cap:event>
-<cap:effective>2022-10-31T21:21:00-06:00</cap:effective>
+<cap:effective>2022-11-01T03:35:00-06:00</cap:effective>
 <cap:expires>2022-11-04T00:00:00-06:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
@@ -2954,17 +3277,17 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=UT1264178B42A4.WinterWeatherAdvisory.126417B97660UT.SLCWSWSLC.1649e8c90c44f3b0d44e24039d8c3041</id>
-<updated>2022-10-31T21:21:00-06:00</updated>
-<published>2022-10-31T21:21:00-06:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=UT1264178C327C.WinterWeatherAdvisory.126417B97660UT.SLCWSWSLC.1649e8c90c44f3b0d44e24039d8c3041</id>
+<updated>2022-11-01T03:35:00-06:00</updated>
+<published>2022-11-01T03:35:00-06:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Winter Weather Advisory issued October 31 at 9:21PM MDT until November 04 at 12:00AM MDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=UT1264178B42A4.WinterWeatherAdvisory.126417B97660UT.SLCWSWSLC.1649e8c90c44f3b0d44e24039d8c3041"/>
+<title>Winter Weather Advisory issued November 01 at 3:35AM MDT until November 04 at 12:00AM MDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=UT1264178C327C.WinterWeatherAdvisory.126417B97660UT.SLCWSWSLC.1649e8c90c44f3b0d44e24039d8c3041"/>
 <summary>...WINTER WEATHER ADVISORY REMAINS IN EFFECT FROM NOON WEDNESDAY TO MIDNIGHT MDT THURSDAY NIGHT... * WHAT...Snow expected. Total snow accumulations of 2 to 6 inches in lower elevation areas. Total snow accumulations of 6 to 12 inches in higher elevation areas. * WHERE...Western Millard and Juab Counties, Eastern</summary>
 <cap:event>Winter Weather Advisory</cap:event>
-<cap:effective>2022-10-31T21:21:00-06:00</cap:effective>
+<cap:effective>2022-11-01T03:35:00-06:00</cap:effective>
 <cap:expires>2022-11-04T00:00:00-06:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
@@ -2986,17 +3309,17 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=UT1264178B42A4.WinterWeatherAdvisory.126417B97660UT.SLCWSWSLC.09c46ab26da50b6ea5fdfb0136110a47</id>
-<updated>2022-10-31T21:21:00-06:00</updated>
-<published>2022-10-31T21:21:00-06:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=UT1264178C327C.WinterWeatherAdvisory.126417B97660UT.SLCWSWSLC.09c46ab26da50b6ea5fdfb0136110a47</id>
+<updated>2022-11-01T03:35:00-06:00</updated>
+<published>2022-11-01T03:35:00-06:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Winter Weather Advisory issued October 31 at 9:21PM MDT until November 04 at 12:00AM MDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=UT1264178B42A4.WinterWeatherAdvisory.126417B97660UT.SLCWSWSLC.09c46ab26da50b6ea5fdfb0136110a47"/>
-<summary>...WINTER WEATHER ADVISORY REMAINS IN EFFECT FROM MIDNIGHT WEDNESDAY NIGHT TO MIDNIGHT MDT THURSDAY NIGHT... * WHAT...Snow expected. Total snow accumulations of 2 to 5 inches, with the greatest snow accumulation in and near Bryce Canyon. * WHERE...Upper Sevier River Valleys and Bryce Canyon Country. * WHEN...From midnight Wednesday night to midnight MDT Thursday</summary>
+<title>Winter Weather Advisory issued November 01 at 3:35AM MDT until November 04 at 12:00AM MDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=UT1264178C327C.WinterWeatherAdvisory.126417B97660UT.SLCWSWSLC.09c46ab26da50b6ea5fdfb0136110a47"/>
+<summary>...WINTER WEATHER ADVISORY REMAINS IN EFFECT FROM MIDNIGHT WEDNESDAY NIGHT TO MIDNIGHT MDT THURSDAY NIGHT... * WHAT...Snow expected. Total snow accumulations of 2 to 5 inches, with the greatest snow accumulation in and near Bryce Canyon. * WHERE...Upper Sevier River Valleys and Bryce Canyon Country.</summary>
 <cap:event>Winter Weather Advisory</cap:event>
-<cap:effective>2022-10-31T21:21:00-06:00</cap:effective>
+<cap:effective>2022-11-01T03:35:00-06:00</cap:effective>
 <cap:expires>2022-11-04T00:00:00-06:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
@@ -3018,17 +3341,17 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=UT1264178B3B9C.HighWindWarning.1264179BDC40UT.SLCNPWSLC.1a8b60a0f12dec9fcaf569319a2f5176</id>
-<updated>2022-10-31T21:03:00-06:00</updated>
-<published>2022-10-31T21:03:00-06:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=UT1264178C2CA0.HighWindWarning.1264179BDC40UT.SLCNPWSLC.1a8b60a0f12dec9fcaf569319a2f5176</id>
+<updated>2022-11-01T03:20:00-06:00</updated>
+<published>2022-11-01T03:20:00-06:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>High Wind Warning issued October 31 at 9:03PM MDT until November 02 at 6:00AM MDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=UT1264178B3B9C.HighWindWarning.1264179BDC40UT.SLCNPWSLC.1a8b60a0f12dec9fcaf569319a2f5176"/>
-<summary>...HIGH WIND WARNING REMAINS IN EFFECT FROM NOON TUESDAY TO 6 AM MDT WEDNESDAY... * WHAT...Southwest winds 30 to 40 mph with gusts up to 60 mph expected. * WHERE...Great Salt Lake Desert and Mountains, Tooele and Rush Valleys, Western Millard and Juab Counties and Southwest Utah.</summary>
+<title>High Wind Warning issued November 01 at 3:20AM MDT until November 02 at 6:00AM MDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=UT1264178C2CA0.HighWindWarning.1264179BDC40UT.SLCNPWSLC.1a8b60a0f12dec9fcaf569319a2f5176"/>
+<summary>...HIGH WIND WARNING REMAINS IN EFFECT FROM NOON TODAY TO 6 AM MDT WEDNESDAY... * WHAT...Southwest winds 30 to 40 mph with gusts up to 60 mph expected. * WHERE...Great Salt Lake Desert and Mountains, Tooele and Rush Valleys, Western Millard and Juab Counties and Southwest Utah.</summary>
 <cap:event>High Wind Warning</cap:event>
-<cap:effective>2022-10-31T21:03:00-06:00</cap:effective>
+<cap:effective>2022-11-01T03:20:00-06:00</cap:effective>
 <cap:expires>2022-11-02T06:00:00-06:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
@@ -3050,17 +3373,17 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=UT1264178B3B9C.WindAdvisory.1264179BDC40UT.SLCNPWSLC.aa4ea1173730bdcb9d4288558587ec7f</id>
-<updated>2022-10-31T21:03:00-06:00</updated>
-<published>2022-10-31T21:03:00-06:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=UT1264178C2CA0.WindAdvisory.1264179BDC40UT.SLCNPWSLC.aa4ea1173730bdcb9d4288558587ec7f</id>
+<updated>2022-11-01T03:20:00-06:00</updated>
+<published>2022-11-01T03:20:00-06:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Wind Advisory issued October 31 at 9:03PM MDT until November 02 at 6:00AM MDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=UT1264178B3B9C.WindAdvisory.1264179BDC40UT.SLCNPWSLC.aa4ea1173730bdcb9d4288558587ec7f"/>
-<summary>...WIND ADVISORY REMAINS IN EFFECT FROM NOON TUESDAY TO 6 AM MDT WEDNESDAY... * WHAT...South winds 25 to 35 mph with gusts 45 to 55 mph expected. * WHERE...Eastern Box Elder County, Northern Wasatch Front, Salt Lake Valley and Cache Valley/Utah Portion.</summary>
+<title>Wind Advisory issued November 01 at 3:20AM MDT until November 02 at 6:00AM MDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=UT1264178C2CA0.WindAdvisory.1264179BDC40UT.SLCNPWSLC.aa4ea1173730bdcb9d4288558587ec7f"/>
+<summary>...WIND ADVISORY REMAINS IN EFFECT FROM NOON TODAY TO 6 AM MDT WEDNESDAY... * WHAT...South winds 25 to 35 mph with gusts 45 to 55 mph expected. * WHERE...Eastern Box Elder County, Northern Wasatch Front, Salt Lake Valley and Cache Valley/Utah Portion.</summary>
 <cap:event>Wind Advisory</cap:event>
-<cap:effective>2022-10-31T21:03:00-06:00</cap:effective>
+<cap:effective>2022-11-01T03:20:00-06:00</cap:effective>
 <cap:expires>2022-11-02T06:00:00-06:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
@@ -3082,17 +3405,17 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=VA1264178C0A40.DenseFogAdvisory.1264178CE820VA.LWXNPWLWX.aa51cd929c6f396eecdc8914368c3983</id>
-<updated>2022-11-01T04:32:00-04:00</updated>
-<published>2022-11-01T04:32:00-04:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=VA1264178C3150.DenseFogAdvisory.1264178CE820VA.LWXNPWLWX.b18dd565d3cff6019022659035978466</id>
+<updated>2022-11-01T05:32:00-04:00</updated>
+<published>2022-11-01T05:32:00-04:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Dense Fog Advisory issued November 01 at 4:32AM EDT until November 01 at 10:00AM EDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=VA1264178C0A40.DenseFogAdvisory.1264178CE820VA.LWXNPWLWX.aa51cd929c6f396eecdc8914368c3983"/>
-<summary>...DENSE FOG ADVISORY IN EFFECT UNTIL 10 AM EDT THIS MORNING... * WHAT...Visibility one quarter mile or less in dense fog. * WHERE...Augusta, Rockingham, Shenandoah and Page Counties. * WHEN...Until 10 AM EDT this morning. * IMPACTS...Hazardous driving conditions due to low visibility.</summary>
+<title>Dense Fog Advisory issued November 01 at 5:32AM EDT until November 01 at 10:00AM EDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=VA1264178C3150.DenseFogAdvisory.1264178CE820VA.LWXNPWLWX.b18dd565d3cff6019022659035978466"/>
+<summary>...DENSE FOG ADVISORY REMAINS IN EFFECT UNTIL 10 AM EDT THIS MORNING... * WHAT...Visibility one quarter mile or less in dense fog. * WHERE...Portions of central, northern, northwest and western Virginia. * WHEN...Until 10 AM EDT this morning.</summary>
 <cap:event>Dense Fog Advisory</cap:event>
-<cap:effective>2022-11-01T04:32:00-04:00</cap:effective>
+<cap:effective>2022-11-01T05:32:00-04:00</cap:effective>
 <cap:expires>2022-11-01T10:00:00-04:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
@@ -3100,49 +3423,49 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:urgency>Expected</cap:urgency>
 <cap:severity>Minor</cap:severity>
 <cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Augusta; Page; Rockingham; Shenandoah</cap:areaDesc>
+<cap:areaDesc>Albemarle; Augusta; Culpeper; Greene; King George; Madison; Nelson; Northern Fauquier; Orange; Page; Prince William, Manassas, Manassas Park; Rappahannock; Rockingham; Shenandoah; Southern Fauquier; Spotsylvania; Stafford</cap:areaDesc>
 <cap:polygon></cap:polygon>
 <cap:geocode>
 <valueName>FIPS6</valueName>
-<value>051015 051139 051165 051171 051660 051790 051820</value>
+<value>051003 051015 051047 051061 051079 051099 051113 051125 051137 051139 051153 051157 051165 051171 051177 051179 051540 051630 051660 051683 051685 051790 051820</value>
 <valueName>UGC</valueName>
-<value>VAZ025 VAZ026 VAZ027 VAZ029</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.EXA.KLWX.FG.Y.0017.000000T0000Z-221101T1400Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=VA1264178C0A40.DenseFogAdvisory.1264178CE820VA.LWXNPWLWX.12c9bcf04404e515257ce98607abac1c</id>
-<updated>2022-11-01T04:32:00-04:00</updated>
-<published>2022-11-01T04:32:00-04:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Dense Fog Advisory issued November 01 at 4:32AM EDT until November 01 at 10:00AM EDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=VA1264178C0A40.DenseFogAdvisory.1264178CE820VA.LWXNPWLWX.12c9bcf04404e515257ce98607abac1c"/>
-<summary>...DENSE FOG ADVISORY REMAINS IN EFFECT UNTIL 10 AM EDT THIS MORNING... * WHAT...Visibility one quarter mile or less in dense fog. * WHERE...Portions of central, northern and northwest Virginia. * WHEN...Until 10 AM EDT this morning. * IMPACTS...Hazardous driving conditions due to low visibility.</summary>
-<cap:event>Dense Fog Advisory</cap:event>
-<cap:effective>2022-11-01T04:32:00-04:00</cap:effective>
-<cap:expires>2022-11-01T10:00:00-04:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Albemarle; Culpeper; Greene; King George; Madison; Nelson; Northern Fauquier; Orange; Prince William, Manassas, Manassas Park; Rappahannock; Southern Fauquier; Spotsylvania; Stafford</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>051003 051047 051061 051079 051099 051113 051125 051137 051153 051157 051177 051179 051540 051630 051683 051685</value>
-<valueName>UGC</valueName>
-<value>VAZ036 VAZ037 VAZ038 VAZ039 VAZ040 VAZ050 VAZ051 VAZ052 VAZ055 VAZ056 VAZ057 VAZ501 VAZ502</value>
+<value>VAZ025 VAZ026 VAZ027 VAZ029 VAZ036 VAZ037 VAZ038 VAZ039 VAZ040 VAZ050 VAZ051 VAZ052 VAZ055 VAZ056 VAZ057 VAZ501 VAZ502</value>
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value>/O.CON.KLWX.FG.Y.0017.000000T0000Z-221101T1400Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=VA1264178C3150.DenseFogAdvisory.1264178CE820VA.LWXNPWLWX.8606290ec745571417ee7ae15ad52af4</id>
+<updated>2022-11-01T05:32:00-04:00</updated>
+<published>2022-11-01T05:32:00-04:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Dense Fog Advisory issued November 01 at 5:32AM EDT until November 01 at 10:00AM EDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=VA1264178C3150.DenseFogAdvisory.1264178CE820VA.LWXNPWLWX.8606290ec745571417ee7ae15ad52af4"/>
+<summary>...DENSE FOG ADVISORY IN EFFECT UNTIL 10 AM EDT THIS MORNING... * WHAT...Visibility one quarter mile or less in dense fog. * WHERE...In District of Columbia, District of Columbia. In Maryland, Prince Georges and Central and Southeast Montgomery Counties. In Virginia, Fairfax County, and Arlington/Falls Church/Alexandria.</summary>
+<cap:event>Dense Fog Advisory</cap:event>
+<cap:effective>2022-11-01T05:32:00-04:00</cap:effective>
+<cap:expires>2022-11-01T10:00:00-04:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Arlington, Falls Church, Alexandria; Fairfax</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>051013 051059 051510 051600 051610</value>
+<valueName>UGC</valueName>
+<value>VAZ053 VAZ054</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.EXA.KLWX.FG.Y.0017.000000T0000Z-221101T1400Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -3367,6 +3690,38 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value>/O.NEW.KRNK.FG.Y.0010.221101T0810Z-221101T1400Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=WY1264178C327C.WinterWeatherAdvisory.126417AB1E80WY.SLCWSWSLC.8c64cc937ae96694d474cb5b32656e45</id>
+<updated>2022-11-01T03:35:00-06:00</updated>
+<published>2022-11-01T03:35:00-06:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Winter Weather Advisory issued November 01 at 3:35AM MDT until November 03 at 6:00AM MDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=WY1264178C327C.WinterWeatherAdvisory.126417AB1E80WY.SLCWSWSLC.8c64cc937ae96694d474cb5b32656e45"/>
+<summary>...WINTER WEATHER ADVISORY REMAINS IN EFFECT FROM NOON WEDNESDAY TO 6 AM MDT THURSDAY... * WHAT...Snow expected. Total snow accumulations of 1 to 4 inches in lower elevation areas. Up to 8 inches of snow accumulation is possible in higher elevation areas in southern Uinta County.</summary>
+<cap:event>Winter Weather Advisory</cap:event>
+<cap:effective>2022-11-01T03:35:00-06:00</cap:effective>
+<cap:expires>2022-11-03T06:00:00-06:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Southwest Wyoming</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>056041</value>
+<valueName>UGC</valueName>
+<value>WYZ021</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KSLC.WW.Y.0017.221102T1800Z-221103T1200Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -3882,38 +4237,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value>/O.NEW.KUNR.HW.A.0008.221102T0600Z-221103T0000Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=WY1264178B42A4.WinterWeatherAdvisory.126417AB1E80WY.SLCWSWSLC.8c64cc937ae96694d474cb5b32656e45</id>
-<updated>2022-10-31T21:21:00-06:00</updated>
-<published>2022-10-31T21:21:00-06:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Winter Weather Advisory issued October 31 at 9:21PM MDT until November 03 at 6:00AM MDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=WY1264178B42A4.WinterWeatherAdvisory.126417AB1E80WY.SLCWSWSLC.8c64cc937ae96694d474cb5b32656e45"/>
-<summary>...WINTER WEATHER ADVISORY REMAINS IN EFFECT FROM NOON WEDNESDAY TO 6 AM MDT THURSDAY... * WHAT...Snow expected. Total snow accumulations of 1 to 4 inches in lower elevation areas. Up to 8 inches of snow accumulation is possible in higher elevation areas in southern Uinta County.</summary>
-<cap:event>Winter Weather Advisory</cap:event>
-<cap:effective>2022-10-31T21:21:00-06:00</cap:effective>
-<cap:expires>2022-11-03T06:00:00-06:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Southwest Wyoming</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>056041</value>
-<valueName>UGC</valueName>
-<value>WYZ021</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KSLC.WW.Y.0017.221102T1800Z-221103T1200Z/</value>
 </cap:parameter>
 </entry>
 <entry>
