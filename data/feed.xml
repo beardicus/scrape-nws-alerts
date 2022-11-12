@@ -16,16 +16,48 @@ xmlns = 'http://www.w3.org/2005/Atom'
 xmlns:cap = 'urn:oasis:names:tc:emergency:cap:1.1'
 xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 >
-<!-- http-date = Sat, 12 Nov 2022 21:26:00 GMT -->
+<!-- http-date = Sat, 12 Nov 2022 21:58:00 GMT -->
 <id>https://alerts.weather.gov/cap/us.php?x=0</id>
 <logo>http://alerts.weather.gov/images/xml_logo.gif</logo>
 <generator>NWS CAP Server</generator>
-<updated>2022-11-12T12:26:00-09:00</updated>
+<updated>2022-11-12T13:58:00-08:00</updated>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
 <title>Current Watches, Warnings and Advisories for the United States Issued by the National Weather Service</title>
 <link href="https://alerts.weather.gov/cap/us.php?x=0"/>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=AK12641835E18C.WinterWeatherAdvisory.126418442A30AK.AJKWSWAJK.d750d1bf1b5c47c140773d32be883fd7</id>
+<updated>2022-11-12T12:39:00-09:00</updated>
+<published>2022-11-12T12:39:00-09:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Winter Weather Advisory issued November 12 at 12:39PM AKST until November 13 at 6:00AM AKST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=AK12641835E18C.WinterWeatherAdvisory.126418442A30AK.AJKWSWAJK.d750d1bf1b5c47c140773d32be883fd7"/>
+<summary>...WINTER WEATHER ADVISORY REMAINS IN EFFECT UNTIL 6 AM AKST SUNDAY... * WHAT...Snow expected. Total snow accumulations of 3 to 7 inches for the Klondike Highway. Winds gusting as high as 45 mph. * WHERE...The Klondike Highway above 2000 feet.</summary>
+<cap:event>Winter Weather Advisory</cap:event>
+<cap:effective>2022-11-12T12:39:00-09:00</cap:effective>
+<cap:expires>2022-11-13T06:00:00-09:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Municipality of Skagway</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>002230</value>
+<valueName>UGC</valueName>
+<value>AKZ318</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.PAJK.WW.Y.0027.000000T0000Z-221113T1500Z/</value>
+</cap:parameter>
+</entry>
 <entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=AK12641835DC78.WinterStormWarning.126418528210AK.AFGWSWNSB.e728856ae57d13c746d9687bace52da1</id>
 <updated>2022-11-12T12:26:00-09:00</updated>
@@ -315,38 +347,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=AK12641834AF4C.WinterWeatherAdvisory.126418442A30AK.AJKWSWAJK.d750d1bf1b5c47c140773d32be883fd7</id>
-<updated>2022-11-12T04:55:00-09:00</updated>
-<published>2022-11-12T04:55:00-09:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Winter Weather Advisory issued November 12 at 4:55AM AKST until November 13 at 6:00AM AKST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=AK12641834AF4C.WinterWeatherAdvisory.126418442A30AK.AJKWSWAJK.d750d1bf1b5c47c140773d32be883fd7"/>
-<summary>...WINTER WEATHER ADVISORY IN EFFECT UNTIL 6 AM AKST SUNDAY... * WHAT...Snow expected. Total snow accumulations of 3 to 7 inches for the Klondike Highway. Winds gusting as high as 45 mph. * WHERE...The Klondike Highway above 2000 feet. * WHEN...Until 6 AM AKST Sunday. * IMPACTS...Travel could be very difficult.</summary>
-<cap:event>Winter Weather Advisory</cap:event>
-<cap:effective>2022-11-12T04:55:00-09:00</cap:effective>
-<cap:expires>2022-11-13T06:00:00-09:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Municipality of Skagway</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>002230</value>
-<valueName>UGC</valueName>
-<value>AKZ318</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.NEW.PAJK.WW.Y.0027.221112T1600Z-221113T1500Z/</value>
-</cap:parameter>
-</entry>
-<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=AK126418240A5C.SpecialWeatherStatement.1264185197B0AK.AFCSPSAER.b72c191e1dfc537502c611393b3286f1</id>
 <updated>2022-11-10T19:47:00-09:00</updated>
 <published>2022-11-10T19:47:00-09:00</published>
@@ -475,6 +475,102 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=CA12641835E8F8.BeachHazardsStatement.12641852F740CA.EKACFWEKA.4b826638f9d410853ee2935ffcbb8846</id>
+<updated>2022-11-12T13:58:00-08:00</updated>
+<published>2022-11-12T13:58:00-08:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Beach Hazards Statement issued November 12 at 1:58PM PST until November 14 at 4:00AM PST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CA12641835E8F8.BeachHazardsStatement.12641852F740CA.EKACFWEKA.4b826638f9d410853ee2935ffcbb8846"/>
+<summary>...BEACH HAZARDS STATEMENT REMAINS IN EFFECT FROM SUNDAY MORNING THROUGH LATE SUNDAY NIGHT... * WHAT...Large unexpected waves along the coast. * WHERE...Coastal Del Norte, Northern Humboldt Coast, Southwestern Humboldt and Mendocino Coast Counties. * WHEN...From Sunday morning through late Sunday night.. .</summary>
+<cap:event>Beach Hazards Statement</cap:event>
+<cap:effective>2022-11-12T13:58:00-08:00</cap:effective>
+<cap:expires>2022-11-14T04:00:00-08:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Coastal Del Norte; Mendocino Coast; Northern Humboldt Coast; Southwestern Humboldt</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>006015 006023 006045</value>
+<valueName>UGC</valueName>
+<value>CAZ101 CAZ103 CAZ104 CAZ109</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KEKA.BH.S.0008.221113T1800Z-221114T1200Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=CA12641835E0C4.WindAdvisory.126418440320CA.LOXNPWLOX.5df9f7be24c8f238967b2ccac506c9e4</id>
+<updated>2022-11-12T13:37:00-08:00</updated>
+<published>2022-11-12T13:37:00-08:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Wind Advisory issued November 12 at 1:37PM PST until November 13 at 6:00AM PST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CA12641835E0C4.WindAdvisory.126418440320CA.LOXNPWLOX.5df9f7be24c8f238967b2ccac506c9e4"/>
+<summary>...WIND ADVISORY IN EFFECT FROM 6 PM THIS EVENING TO 6 AM PST SUNDAY... * WHAT...North winds 20 to 30 mph with gusts to 50 mph. * WHERE...Santa Barbara County Southwestern Coast, Santa Barbara County Southeastern Coast, Santa Ynez Mountains Western Range and Santa Ynez Mountains Eastern Range.</summary>
+<cap:event>Wind Advisory</cap:event>
+<cap:effective>2022-11-12T13:37:00-08:00</cap:effective>
+<cap:expires>2022-11-13T06:00:00-08:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Santa Barbara County Southeastern Coast; Santa Barbara County Southwestern Coast; Santa Ynez Mountains Eastern Range; Santa Ynez Mountains Western Range</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>006083 006111</value>
+<valueName>UGC</valueName>
+<value>CAZ349 CAZ350 CAZ351 CAZ352</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.NEW.KLOX.WI.Y.0117.221113T0200Z-221113T1400Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=CA12641835E0C4.WindAdvisory.126418449F60CA.LOXNPWLOX.43c0c1e729c4a0aea7e85142ea1b85bf</id>
+<updated>2022-11-12T13:37:00-08:00</updated>
+<published>2022-11-12T13:37:00-08:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Wind Advisory issued November 12 at 1:37PM PST until November 13 at 10:00AM PST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CA12641835E0C4.WindAdvisory.126418449F60CA.LOXNPWLOX.43c0c1e729c4a0aea7e85142ea1b85bf"/>
+<summary>...WIND ADVISORY IN EFFECT FROM 10 PM THIS EVENING TO 10 AM PST SUNDAY... * WHAT...North winds 20 to 30 mph with gusts up to 50 mph expected. The strongest winds will occur through and near the Interstate 5 Corridor. * WHERE...Ventura County Mountains and Los Angeles County</summary>
+<cap:event>Wind Advisory</cap:event>
+<cap:effective>2022-11-12T13:37:00-08:00</cap:effective>
+<cap:expires>2022-11-13T10:00:00-08:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Los Angeles County Mountains; Ventura County Mountains</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>006037 006111</value>
+<valueName>UGC</valueName>
+<value>CAZ053 CAZ054</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.NEW.KLOX.WI.Y.0117.221113T0600Z-221113T1800Z/</value>
+</cap:parameter>
+</entry>
+<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=CA12641835D50C.BeachHazardsStatement.12641853E1A0CA.MTRCFWMTR.5597de8edf9af8a96be1b9966f2c7744</id>
 <updated>2022-11-12T13:07:00-08:00</updated>
 <published>2022-11-12T13:07:00-08:00</published>
@@ -504,38 +600,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value>/O.CON.KMTR.BH.S.0014.221113T1800Z-221114T1800Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=CA126418355DE8.BeachHazardsStatement.12641852F740CA.EKACFWEKA.4b826638f9d410853ee2935ffcbb8846</id>
-<updated>2022-11-12T10:02:00-08:00</updated>
-<published>2022-11-12T10:02:00-08:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Beach Hazards Statement issued November 12 at 10:02AM PST until November 14 at 4:00AM PST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CA126418355DE8.BeachHazardsStatement.12641852F740CA.EKACFWEKA.4b826638f9d410853ee2935ffcbb8846"/>
-<summary>...BEACH HAZARDS STATEMENT REMAINS IN EFFECT FROM SUNDAY MORNING THROUGH LATE SUNDAY NIGHT... * WHAT...Large unexpected waves along the coast. * WHERE...Coastal Del Norte, Northern Humboldt Coast, Southwestern Humboldt and Mendocino Coast Counties. * WHEN...From Sunday morning through late Sunday night.. .</summary>
-<cap:event>Beach Hazards Statement</cap:event>
-<cap:effective>2022-11-12T10:02:00-08:00</cap:effective>
-<cap:expires>2022-11-14T04:00:00-08:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Coastal Del Norte; Mendocino Coast; Northern Humboldt Coast; Southwestern Humboldt</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>006015 006023 006045</value>
-<valueName>UGC</valueName>
-<value>CAZ101 CAZ103 CAZ104 CAZ109</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KEKA.BH.S.0008.221113T1800Z-221114T1200Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -1506,6 +1570,38 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=NM12641835E3E4.SpecialWeatherStatement.126418438DF0NM.ABQSPSABQ.65f67a1f967653587e6e9cd2eb9c00b7</id>
+<updated>2022-11-12T14:45:00-07:00</updated>
+<published>2022-11-12T14:45:00-07:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Special Weather Statement issued November 12 at 2:45PM MST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=NM12641835E3E4.SpecialWeatherStatement.126418438DF0NM.ABQSPSABQ.65f67a1f967653587e6e9cd2eb9c00b7"/>
+<summary>...WINTER WEATHER FOR PORTIONS OF NM SUNDAY NIGHT AND MONDAY... A strong weather system will move across northern and central NM Sunday night and Monday with much colder temperatures, stronger winds, areas of snow, blowing snow, and potential winter travel impacts. There is still some uncertainty with regard to snowfall intensity and location of greatest impacts. However, this system</summary>
+<cap:event>Special Weather Statement</cap:event>
+<cap:effective>2022-11-12T14:45:00-07:00</cap:effective>
+<cap:expires>2022-11-13T04:00:00-07:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Observed</cap:certainty>
+<cap:areaDesc>Central Highlands; Chuska Mountains; Curry County; De Baca County; East Slopes Sangre de Cristo Mountains; Eastern San Miguel County; Espanola Valley; Estancia Valley; Far Northeast Highlands; Far Northwest Highlands; Glorieta Mesa Including Glorieta Pass; Guadalupe County; Harding County; Jemez Mountains; Johnson and Bartlett Mesas Including Raton Pass; Middle Rio Grande Valley, Albuquerque Metro Area; Northeast Highlands; Northern Sangre de Cristo Mountains; Northwest Highlands; Northwest Plateau; Quay County; Roosevelt County; Sandia, Manzano Mountains Including Edgewood; Santa Fe Metro Area; Southern Sangre de Cristo Mountains; Tusas Mountains Including Chama; Union County; Upper Rio Grande Valley; West Central Highlands; West Central Mountains; West Central Plateau</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>035001 035006 035007 035009 035011 035019 035021 035028 035031 035033 035037 035039 035041 035043 035045 035047 035049 035055 035057 035059 035061</value>
+<valueName>UGC</valueName>
+<value>NMZ201 NMZ202 NMZ203 NMZ204 NMZ205 NMZ206 NMZ207 NMZ210 NMZ211 NMZ212 NMZ213 NMZ214 NMZ215 NMZ216 NMZ217 NMZ218 NMZ219 NMZ221 NMZ222 NMZ223 NMZ227 NMZ228 NMZ229 NMZ230 NMZ231 NMZ232 NMZ233 NMZ234 NMZ235 NMZ236 NMZ237</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value></value>
+</cap:parameter>
+</entry>
+<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=NM126418358624.HighWindWatch.12641853E1A0NM.MAFNPWMAF.6639f891ef7735a765677691299395c3</id>
 <updated>2022-11-12T12:05:00-07:00</updated>
 <published>2022-11-12T12:05:00-07:00</published>
@@ -1793,39 +1889,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value>/O.CON.KPHI.FZ.A.0002.221114T0500Z-221114T1300Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=PR1264183598E4.HighSurfAdvisory.12641835F960PR.JSJCFWSJU.bebc31e05e3a039ec8bfa51d674c042b</id>
-<updated>2022-11-12T15:53:00-04:00</updated>
-<published>2022-11-12T15:53:00-04:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>High Surf Advisory issued November 12 at 3:53PM AST until November 12 at 6:00PM AST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=PR1264183598E4.HighSurfAdvisory.12641835F960PR.JSJCFWSJU.bebc31e05e3a039ec8bfa51d674c042b"/>
-<summary>...HIGH SURF ADVISORY REMAINS IN EFFECT UNTIL 6 PM AST THIS EVENING... ...HIGH RIP CURRENT RISK REMAINS IN EFFECT THROUGH SUNDAY AFTERNOON... * WHAT...Dangerous surf conditions and rip currents expected due to breaking waves of 6 to 10 feet.</summary>
-<cap:event>High Surf Advisory</cap:event>
-<cap:effective>2022-11-12T15:53:00-04:00</cap:effective>
-<cap:expires>2022-11-12T18:00:00-04:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Culebra; North Central; Northeast; Northwest; San Juan and Vicinity</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>072005 072013 072017 072021 072027 072029 072031 072033 072037 072049 072051 072053 072054 072061 072065 072069 072071 072087 072089 072091 072103 072115 072119 072127 072135 072137 072139 072143 072145</value>
-<valueName>UGC</valueName>
-<value>PRZ001 PRZ002 PRZ005 PRZ008 PRZ012</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.TJSJ.SU.Y.0012.000000T0000Z-221112T2200Z/
-/O.CON.TJSJ.RP.S.0073.000000T0000Z-221113T2200Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -2279,72 +2342,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value>/O.NEW.KLWX.FZ.A.0009.221114T0500Z-221114T1400Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=VI1264183598E4.HighSurfAdvisory.12641835F960VI.JSJCFWSJU.e3393e2573de7c28cc04f8b0d9eea466</id>
-<updated>2022-11-12T15:53:00-04:00</updated>
-<published>2022-11-12T15:53:00-04:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>High Surf Advisory issued November 12 at 3:53PM AST until November 12 at 6:00PM AST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=VI1264183598E4.HighSurfAdvisory.12641835F960VI.JSJCFWSJU.e3393e2573de7c28cc04f8b0d9eea466"/>
-<summary>...HIGH SURF ADVISORY REMAINS IN EFFECT UNTIL 6 PM AST THIS EVENING... ...HIGH RIP CURRENT RISK REMAINS IN EFFECT UNTIL 6 PM AST THIS EVENING... * WHAT...Dangerous surf conditions and rip currents expected due to breaking waves of 6 to 10 feet.</summary>
-<cap:event>High Surf Advisory</cap:event>
-<cap:effective>2022-11-12T15:53:00-04:00</cap:effective>
-<cap:expires>2022-11-12T18:00:00-04:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>St.Thomas...St. John.. and Adjacent Islands</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>078020 078030</value>
-<valueName>UGC</valueName>
-<value>VIZ001</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.TJSJ.SU.Y.0012.000000T0000Z-221112T2200Z/
-/O.CON.TJSJ.RP.S.0073.000000T0000Z-221112T2200Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=VI1264183598E4.RipCurrentStatement.12641835F960VI.JSJCFWSJU.46001d7a04ec4b34e78b0d77ca244c66</id>
-<updated>2022-11-12T15:53:00-04:00</updated>
-<published>2022-11-12T15:53:00-04:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Rip Current Statement issued November 12 at 3:53PM AST until November 12 at 6:00PM AST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=VI1264183598E4.RipCurrentStatement.12641835F960VI.JSJCFWSJU.46001d7a04ec4b34e78b0d77ca244c66"/>
-<summary>...HIGH SURF ADVISORY REMAINS IN EFFECT UNTIL 6 PM AST THIS EVENING... ...HIGH RIP CURRENT RISK REMAINS IN EFFECT UNTIL 6 PM AST THIS EVENING... * WHAT...Dangerous surf conditions and rip currents expected due to breaking waves of 6 to 10 feet.</summary>
-<cap:event>Rip Current Statement</cap:event>
-<cap:effective>2022-11-12T15:53:00-04:00</cap:effective>
-<cap:expires>2022-11-12T18:00:00-04:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>St.Thomas...St. John.. and Adjacent Islands</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>078020 078030</value>
-<valueName>UGC</valueName>
-<value>VIZ001</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.TJSJ.SU.Y.0012.000000T0000Z-221112T2200Z/
-/O.CON.TJSJ.RP.S.0073.000000T0000Z-221112T2200Z/</value>
 </cap:parameter>
 </entry>
 <entry>
