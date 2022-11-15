@@ -16,16 +16,48 @@ xmlns = 'http://www.w3.org/2005/Atom'
 xmlns:cap = 'urn:oasis:names:tc:emergency:cap:1.1'
 xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 >
-<!-- http-date = Tue, 15 Nov 2022 20:31:00 GMT -->
+<!-- http-date = Tue, 15 Nov 2022 20:58:00 GMT -->
 <id>https://alerts.weather.gov/cap/us.php?x=0</id>
 <logo>http://alerts.weather.gov/images/xml_logo.gif</logo>
 <generator>NWS CAP Server</generator>
-<updated>2022-11-15T15:31:00-05:00</updated>
+<updated>2022-11-15T13:58:00-07:00</updated>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
 <title>Current Watches, Warnings and Advisories for the United States Issued by the National Weather Service</title>
 <link href="https://alerts.weather.gov/cap/us.php?x=0"/>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=AK126418637FAC.DenseFogAdvisory.1264186FA700AK.AFGNPWAFG.47ed7e84275c94643cdd39136b0884ce</id>
+<updated>2022-11-15T11:35:00-09:00</updated>
+<published>2022-11-15T11:35:00-09:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Dense Fog Advisory issued November 15 at 11:35AM AKST until November 15 at 3:00PM AKST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=AK126418637FAC.DenseFogAdvisory.1264186FA700AK.AFGNPWAFG.47ed7e84275c94643cdd39136b0884ce"/>
+<summary>...DENSE FOG ADVISORY IN EFFECT UNTIL 3 PM AKST THIS AFTERNOON... * WHAT...Visibility a quarter mile or less in dense fog. * WHERE...East of Tok to the AlCan border. * WHEN...Until 3 PM AKST this afternoon. * IMPACTS...Hazardous driving conditions due to low visibility.</summary>
+<cap:event>Dense Fog Advisory</cap:event>
+<cap:effective>2022-11-15T11:35:00-09:00</cap:effective>
+<cap:expires>2022-11-15T15:00:00-09:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Upper Tanana Valley and the Fortymile Country</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>002090 002240</value>
+<valueName>UGC</valueName>
+<value>AKZ224</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.NEW.PAFG.FG.Y.0012.221115T2035Z-221116T0000Z/</value>
+</cap:parameter>
+</entry>
 <entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=AK126418634ED8.HighWindWarning.1264187F5E70AK.AFGNPWWCZ.38fd5093aab978957c71bd2d7ca92545</id>
 <updated>2022-11-15T10:10:00-09:00</updated>
@@ -284,38 +316,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=AK12641854692C.SpecialWeatherStatement.126418639910AK.AFGSPSNSB.6170494ac7e629b896adabcf58e1a0c7</id>
-<updated>2022-11-14T12:47:00-09:00</updated>
-<published>2022-11-14T12:47:00-09:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Special Weather Statement issued November 14 at 12:47PM AKST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=AK12641854692C.SpecialWeatherStatement.126418639910AK.AFGSPSNSB.6170494ac7e629b896adabcf58e1a0c7"/>
-<summary>...High Surf Possible Tuesday evening through Thursday... Southwest winds 30 to 40 mph with gusts to 60 mph will cause elevated water levels and high surf along the coast from Point Hope to Utqiagvik Tuesday night through Thursday. Minor coastal flooding is also possible with waves 2 to 4 feet above the normal high tide line. Beach erosion is also possible.</summary>
-<cap:event>Special Weather Statement</cap:event>
-<cap:effective>2022-11-14T12:47:00-09:00</cap:effective>
-<cap:expires>2022-11-15T12:00:00-09:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Observed</cap:certainty>
-<cap:areaDesc>Northern Arctic Coast; Western Arctic Coast</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>002185</value>
-<valueName>UGC</valueName>
-<value>AKZ201 AKZ202</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value></value>
-</cap:parameter>
-</entry>
-<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=AL126418634BB8.RipCurrentStatement.1264186FA700AL.MOBCFWMOB.a412ca4e7047d131339d168a3ce86544</id>
 <updated>2022-11-15T13:02:00-06:00</updated>
 <published>2022-11-15T13:02:00-06:00</published>
@@ -473,6 +473,134 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value>/O.CON.KVEF.WI.Y.0038.221115T1500Z-221117T0200Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=CA1264186383F8.HighWindWarning.1264187FD3A0CA.SGXNPWSGX.86f225ebba07dc4102e570afa76af84a</id>
+<updated>2022-11-15T12:46:00-08:00</updated>
+<published>2022-11-15T12:46:00-08:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>High Wind Warning issued November 15 at 12:46PM PST until November 16 at 10:00PM PST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CA1264186383F8.HighWindWarning.1264187FD3A0CA.SGXNPWSGX.86f225ebba07dc4102e570afa76af84a"/>
+<summary>...HIGH WIND WARNING REMAINS IN EFFECT FROM 8 PM THIS EVENING TO 10 PM PST WEDNESDAY... * WHAT...Northeast winds 25 to 35 mph with gusts up to 60 mph expected. Gusts to 70 mph below the Cajon pass and near the coastal foothills of the Santa Ana Mountains. * WHERE...San Bernardino and Riverside County Valleys-The Inland</summary>
+<cap:event>High Wind Warning</cap:event>
+<cap:effective>2022-11-15T12:46:00-08:00</cap:effective>
+<cap:expires>2022-11-16T22:00:00-08:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Severe</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Orange County Inland; San Bernardino County Mountains; San Bernardino and Riverside County Valleys-The Inland Empire; Santa Ana Mountains and Foothills</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>006059 006065 006071</value>
+<valueName>UGC</valueName>
+<value>CAZ048 CAZ055 CAZ057 CAZ554</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KSGX.HW.W.0012.221116T0400Z-221117T0600Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=CA1264186383F8.HighWindWarning.1264187FD3A0CA.SGXNPWSGX.12c165da45c96c828dea5fdf9e0237e7</id>
+<updated>2022-11-15T12:46:00-08:00</updated>
+<published>2022-11-15T12:46:00-08:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>High Wind Warning issued November 15 at 12:46PM PST until November 16 at 10:00PM PST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CA1264186383F8.HighWindWarning.1264187FD3A0CA.SGXNPWSGX.12c165da45c96c828dea5fdf9e0237e7"/>
+<summary>...HIGH WIND WARNING REMAINS IN EFFECT FROM 8 PM THIS EVENING TO 10 PM PST WEDNESDAY... * WHAT...Northeast winds 30 to 40 mph with gusts up to 65 mph expected. * WHERE...San Diego County Valleys and San Diego County Mountains.</summary>
+<cap:event>High Wind Warning</cap:event>
+<cap:effective>2022-11-15T12:46:00-08:00</cap:effective>
+<cap:expires>2022-11-16T22:00:00-08:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Severe</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>San Diego County Inland Valleys; San Diego County Mountains</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>006073</value>
+<valueName>UGC</valueName>
+<value>CAZ050 CAZ058</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KSGX.HW.W.0012.221116T0400Z-221117T0600Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=CA1264186383F8.HighWindWarning.1264187FD3A0CA.SGXNPWSGX.541c8c752e2362cbf2439bbfc09312c1</id>
+<updated>2022-11-15T12:46:00-08:00</updated>
+<published>2022-11-15T12:46:00-08:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>High Wind Warning issued November 15 at 12:46PM PST until November 16 at 10:00PM PST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CA1264186383F8.HighWindWarning.1264187FD3A0CA.SGXNPWSGX.541c8c752e2362cbf2439bbfc09312c1"/>
+<summary>...HIGH WIND WARNING REMAINS IN EFFECT FROM 8 PM THIS EVENING TO 10 PM PST WEDNESDAY... * WHAT...Northeast winds 25 to 35 mph with gusts up to 60 mph expected. * WHERE...Riverside County Mountains and San Gorgonio Pass Near Banning.</summary>
+<cap:event>High Wind Warning</cap:event>
+<cap:effective>2022-11-15T12:46:00-08:00</cap:effective>
+<cap:expires>2022-11-16T22:00:00-08:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Severe</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Riverside County Mountains; San Gorgonio Pass Near Banning</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>006065</value>
+<valueName>UGC</valueName>
+<value>CAZ056 CAZ065</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KSGX.HW.W.0012.221116T0400Z-221117T0600Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=CA1264186383F8.WindAdvisory.1264187FD3A0CA.SGXNPWSGX.b613715d8231a2ce8c1240317c4fed6b</id>
+<updated>2022-11-15T12:46:00-08:00</updated>
+<published>2022-11-15T12:46:00-08:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Wind Advisory issued November 15 at 12:46PM PST until November 16 at 10:00PM PST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CA1264186383F8.WindAdvisory.1264187FD3A0CA.SGXNPWSGX.b613715d8231a2ce8c1240317c4fed6b"/>
+<summary>...WIND ADVISORY REMAINS IN EFFECT FROM 8 PM THIS EVENING TO 10 PM PST WEDNESDAY... * WHAT...Northeast winds 20 to 30 mph with gusts up to 50 mph expected. * WHERE...Orange County Coastal Areas. * WHEN...From 8 PM this evening to 10 PM PST Wednesday.</summary>
+<cap:event>Wind Advisory</cap:event>
+<cap:effective>2022-11-15T12:46:00-08:00</cap:effective>
+<cap:expires>2022-11-16T22:00:00-08:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Orange County Coastal</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>006059</value>
+<valueName>UGC</valueName>
+<value>CAZ552</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KSGX.WI.Y.0051.221116T0400Z-221117T0600Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -697,134 +825,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value>/O.CON.KLOX.FW.W.0002.221116T1500Z-221117T0300Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=CA12641861FC2C.HighWindWarning.1264187FD3A0CA.SGXNPWSGX.86f225ebba07dc4102e570afa76af84a</id>
-<updated>2022-11-15T02:43:00-08:00</updated>
-<published>2022-11-15T02:43:00-08:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>High Wind Warning issued November 15 at 2:43AM PST until November 16 at 10:00PM PST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CA12641861FC2C.HighWindWarning.1264187FD3A0CA.SGXNPWSGX.86f225ebba07dc4102e570afa76af84a"/>
-<summary>...HIGH WIND WARNING NOW IN EFFECT FROM 8 PM THIS EVENING TO 10 PM PST WEDNESDAY... * WHAT...Northeast winds 25 to 35 mph with gusts to 60 mph expected. Gusts to 70 mph below the Cajon pass and near the coastal foothills of the Santa Ana Mountains. * WHERE...San Bernardino and Riverside County Valleys-The Inland</summary>
-<cap:event>High Wind Warning</cap:event>
-<cap:effective>2022-11-15T02:43:00-08:00</cap:effective>
-<cap:expires>2022-11-16T22:00:00-08:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Severe</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Orange County Inland; San Bernardino County Mountains; San Bernardino and Riverside County Valleys-The Inland Empire; Santa Ana Mountains and Foothills</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>006059 006065 006071</value>
-<valueName>UGC</valueName>
-<value>CAZ048 CAZ055 CAZ057 CAZ554</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.EXT.KSGX.HW.W.0012.221116T0400Z-221117T0600Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=CA12641861FC2C.HighWindWarning.1264187FD3A0CA.SGXNPWSGX.12c165da45c96c828dea5fdf9e0237e7</id>
-<updated>2022-11-15T02:43:00-08:00</updated>
-<published>2022-11-15T02:43:00-08:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>High Wind Warning issued November 15 at 2:43AM PST until November 16 at 10:00PM PST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CA12641861FC2C.HighWindWarning.1264187FD3A0CA.SGXNPWSGX.12c165da45c96c828dea5fdf9e0237e7"/>
-<summary>...HIGH WIND WARNING NOW IN EFFECT FROM 8 PM THIS EVENING TO 10 PM PST WEDNESDAY... * WHAT...Northeast winds 30 to 40 mph with gusts to 65 mph expected. * WHERE...San Diego County Valleys and San Diego County Mountains.</summary>
-<cap:event>High Wind Warning</cap:event>
-<cap:effective>2022-11-15T02:43:00-08:00</cap:effective>
-<cap:expires>2022-11-16T22:00:00-08:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Severe</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>San Diego County Inland Valleys; San Diego County Mountains</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>006073</value>
-<valueName>UGC</valueName>
-<value>CAZ050 CAZ058</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.EXT.KSGX.HW.W.0012.221116T0400Z-221117T0600Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=CA12641861FC2C.HighWindWarning.1264187FD3A0CA.SGXNPWSGX.541c8c752e2362cbf2439bbfc09312c1</id>
-<updated>2022-11-15T02:43:00-08:00</updated>
-<published>2022-11-15T02:43:00-08:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>High Wind Warning issued November 15 at 2:43AM PST until November 16 at 10:00PM PST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CA12641861FC2C.HighWindWarning.1264187FD3A0CA.SGXNPWSGX.541c8c752e2362cbf2439bbfc09312c1"/>
-<summary>...HIGH WIND WARNING NOW IN EFFECT FROM 8 PM THIS EVENING TO 10 PM PST WEDNESDAY... * WHAT...Northeast winds 25 to 35 mph with gusts to 60 mph expected. * WHERE...Riverside County Mountains and San Gorgonio Pass Near Banning.</summary>
-<cap:event>High Wind Warning</cap:event>
-<cap:effective>2022-11-15T02:43:00-08:00</cap:effective>
-<cap:expires>2022-11-16T22:00:00-08:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Severe</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Riverside County Mountains; San Gorgonio Pass Near Banning</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>006065</value>
-<valueName>UGC</valueName>
-<value>CAZ056 CAZ065</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.EXT.KSGX.HW.W.0012.221116T0400Z-221117T0600Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=CA12641861FC2C.WindAdvisory.1264187FD3A0CA.SGXNPWSGX.b613715d8231a2ce8c1240317c4fed6b</id>
-<updated>2022-11-15T02:43:00-08:00</updated>
-<published>2022-11-15T02:43:00-08:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Wind Advisory issued November 15 at 2:43AM PST until November 16 at 10:00PM PST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CA12641861FC2C.WindAdvisory.1264187FD3A0CA.SGXNPWSGX.b613715d8231a2ce8c1240317c4fed6b"/>
-<summary>...WIND ADVISORY IN EFFECT FROM 8 PM THIS EVENING TO 10 PM PST WEDNESDAY... * WHAT...Northeast winds 20 to 30 mph with gusts to 50 mph expected. * WHERE...Orange County Coastal Areas. * WHEN...From 8 PM this evening to 10 PM PST Wednesday.</summary>
-<cap:event>Wind Advisory</cap:event>
-<cap:effective>2022-11-15T02:43:00-08:00</cap:effective>
-<cap:expires>2022-11-16T22:00:00-08:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Orange County Coastal</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>006059</value>
-<valueName>UGC</valueName>
-<value>CAZ552</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.NEW.KSGX.WI.Y.0051.221116T0400Z-221117T0600Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -1348,49 +1348,17 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=IA12641862FE60.WinterWeatherAdvisory.1264186FA700IA.DMXWSWDMX.f22ba0b06122fc3be15f0b6fdc105c66</id>
-<updated>2022-11-15T11:04:00-06:00</updated>
-<published>2022-11-15T11:04:00-06:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=IA1264186386B4.WinterWeatherAdvisory.1264186FF520IA.DMXWSWDMX.277cff991fbc589a301a5982e783361a</id>
+<updated>2022-11-15T14:53:00-06:00</updated>
+<published>2022-11-15T14:53:00-06:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Winter Weather Advisory issued November 15 at 11:04AM CST until November 15 at 6:00PM CST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=IA12641862FE60.WinterWeatherAdvisory.1264186FA700IA.DMXWSWDMX.f22ba0b06122fc3be15f0b6fdc105c66"/>
-<summary>.Light snowfall continues to fall over much of central Iowa, although temperatures near to above freezing have helped limit the extent of impacts to roadways. Expect additional light snowfall to linger through the afternoon hours, which could still pose a hazard for the evening commute in some areas. ...WINTER WEATHER ADVISORY REMAINS IN EFFECT UNTIL 6 PM CST THIS</summary>
+<title>Winter Weather Advisory issued November 15 at 2:53PM CST until November 15 at 8:00PM CST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=IA1264186386B4.WinterWeatherAdvisory.1264186FF520IA.DMXWSWDMX.277cff991fbc589a301a5982e783361a"/>
+<summary>.Light snowfall continues to fall over parts of the area, but has shifted mostly into north central into eastern Iowa. Additional accumulations of an inch or less are possible, including the potential for scattered slick road conditions. ...WINTER WEATHER ADVISORY REMAINS IN EFFECT UNTIL 8 PM CST THIS EVENING...</summary>
 <cap:event>Winter Weather Advisory</cap:event>
-<cap:effective>2022-11-15T11:04:00-06:00</cap:effective>
-<cap:expires>2022-11-15T18:00:00-06:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Adair; Boone; Dallas; Greene; Guthrie; Hamilton; Humboldt; Jasper; Kossuth; Madison; Polk; Story; Warren; Webster</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>019001 019015 019049 019073 019077 019079 019091 019099 019109 019121 019153 019169 019181 019187</value>
-<valueName>UGC</valueName>
-<value>IAZ005 IAZ024 IAZ035 IAZ036 IAZ046 IAZ047 IAZ048 IAZ058 IAZ059 IAZ060 IAZ061 IAZ071 IAZ072 IAZ073</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KDMX.WW.Y.0014.000000T0000Z-221116T0000Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=IA12641862FE60.WinterWeatherAdvisory.1264186FF520IA.DMXWSWDMX.277cff991fbc589a301a5982e783361a</id>
-<updated>2022-11-15T11:04:00-06:00</updated>
-<published>2022-11-15T11:04:00-06:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Winter Weather Advisory issued November 15 at 11:04AM CST until November 15 at 8:00PM CST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=IA12641862FE60.WinterWeatherAdvisory.1264186FF520IA.DMXWSWDMX.277cff991fbc589a301a5982e783361a"/>
-<summary>.Light snowfall continues to fall over much of central Iowa, although temperatures near to above freezing have helped limit the extent of impacts to roadways. Expect additional light snowfall to linger through the afternoon hours, which could still pose a hazard for the evening commute in some areas. ...WINTER WEATHER ADVISORY NOW IN EFFECT UNTIL 8 PM CST THIS</summary>
-<cap:event>Winter Weather Advisory</cap:event>
-<cap:effective>2022-11-15T11:04:00-06:00</cap:effective>
+<cap:effective>2022-11-15T14:53:00-06:00</cap:effective>
 <cap:expires>2022-11-15T20:00:00-06:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
@@ -1408,21 +1376,21 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
-<value>/O.EXT.KDMX.WW.Y.0014.000000T0000Z-221116T0200Z/</value>
+<value>/O.CON.KDMX.WW.Y.0014.000000T0000Z-221116T0200Z/</value>
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=IA12641862ECCC.WinterWeatherAdvisory.1264186FF520IA.DVNWSWDVN.be4b89211e6381bf3c69342ab5a33de5</id>
-<updated>2022-11-15T10:59:00-06:00</updated>
-<published>2022-11-15T10:59:00-06:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=IA126418638074.WinterWeatherAdvisory.1264186FF520IA.DVNWSWDVN.37188c4fc18259a35e6c659af43dc8bc</id>
+<updated>2022-11-15T14:37:00-06:00</updated>
+<published>2022-11-15T14:37:00-06:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Winter Weather Advisory issued November 15 at 10:59AM CST until November 15 at 8:00PM CST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=IA12641862ECCC.WinterWeatherAdvisory.1264186FF520IA.DVNWSWDVN.be4b89211e6381bf3c69342ab5a33de5"/>
-<summary>...WINTER WEATHER ADVISORY NOW IN EFFECT UNTIL 8 PM CST THIS EVENING... * WHAT...Snow. Additional snow accumulations of up to one inch. * WHERE...Portions of northwest Illinois and east central and northeast Iowa. * WHEN...Until 8 PM CST this evening.</summary>
+<title>Winter Weather Advisory issued November 15 at 2:37PM CST until November 15 at 8:00PM CST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=IA126418638074.WinterWeatherAdvisory.1264186FF520IA.DVNWSWDVN.37188c4fc18259a35e6c659af43dc8bc"/>
+<summary>...WINTER WEATHER ADVISORY REMAINS IN EFFECT UNTIL 8 PM CST THIS EVENING... * WHAT...Snow. Additional snow accumulations of up to one inch. * WHERE...Portions of east central and northeast Iowa. * WHEN...Until 8 PM CST this evening. * IMPACTS...Plan on slippery road conditions. The hazardous</summary>
 <cap:event>Winter Weather Advisory</cap:event>
-<cap:effective>2022-11-15T10:59:00-06:00</cap:effective>
+<cap:effective>2022-11-15T14:37:00-06:00</cap:effective>
 <cap:expires>2022-11-15T20:00:00-06:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
@@ -1430,17 +1398,17 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:urgency>Expected</cap:urgency>
 <cap:severity>Minor</cap:severity>
 <cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Benton; Buchanan; Cedar; Clinton; Delaware; Dubuque; Iowa; Jackson; Johnson; Jones; Linn</cap:areaDesc>
+<cap:areaDesc>Benton; Buchanan; Delaware; Dubuque; Iowa; Johnson; Jones; Linn</cap:areaDesc>
 <cap:polygon></cap:polygon>
 <cap:geocode>
 <valueName>FIPS6</valueName>
-<value>019011 019019 019031 019045 019055 019061 019095 019097 019103 019105 019113</value>
+<value>019011 019019 019055 019061 019095 019103 019105 019113</value>
 <valueName>UGC</valueName>
-<value>IAZ040 IAZ041 IAZ042 IAZ051 IAZ052 IAZ053 IAZ054 IAZ063 IAZ064 IAZ065 IAZ066</value>
+<value>IAZ040 IAZ041 IAZ042 IAZ051 IAZ052 IAZ053 IAZ063 IAZ064</value>
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
-<value>/O.EXT.KDVN.WW.Y.0012.000000T0000Z-221116T0200Z/</value>
+<value>/O.CON.KDVN.WW.Y.0012.000000T0000Z-221116T0200Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -1537,38 +1505,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value>/O.CON.KLOT.WW.Y.0019.000000T0000Z-221116T1200Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=IL12641862ECCC.WinterWeatherAdvisory.1264186FF520IL.DVNWSWDVN.803f1700e7a8f07807a93b15aa75f963</id>
-<updated>2022-11-15T10:59:00-06:00</updated>
-<published>2022-11-15T10:59:00-06:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Winter Weather Advisory issued November 15 at 10:59AM CST until November 15 at 8:00PM CST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=IL12641862ECCC.WinterWeatherAdvisory.1264186FF520IL.DVNWSWDVN.803f1700e7a8f07807a93b15aa75f963"/>
-<summary>...WINTER WEATHER ADVISORY NOW IN EFFECT UNTIL 8 PM CST THIS EVENING... * WHAT...Snow. Additional snow accumulations of up to one inch. * WHERE...Portions of northwest Illinois and east central and northeast Iowa. * WHEN...Until 8 PM CST this evening.</summary>
-<cap:event>Winter Weather Advisory</cap:event>
-<cap:effective>2022-11-15T10:59:00-06:00</cap:effective>
-<cap:expires>2022-11-15T20:00:00-06:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Carroll; Jo Daviess; Stephenson; Whiteside</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>017015 017085 017177 017195</value>
-<valueName>UGC</valueName>
-<value>ILZ001 ILZ002 ILZ007 ILZ009</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.EXT.KDVN.WW.Y.0012.000000T0000Z-221116T0200Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -1957,6 +1893,102 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=MI12641863877C.SpecialWeatherStatement.12641863E730MI.GRRSPSGRR.47968ad45a7baa826de02cc84ec9535e</id>
+<updated>2022-11-15T15:55:00-05:00</updated>
+<published>2022-11-15T15:55:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Special Weather Statement issued November 15 at 3:55PM EST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MI12641863877C.SpecialWeatherStatement.12641863E730MI.GRRSPSGRR.47968ad45a7baa826de02cc84ec9535e"/>
+<summary>...Slick Travel Possible Late Tonight and Early Wednesday... Even though snow will diminish late tonight, roads could turn slick as temperatures fall slightly below freezing. Bridges and overpasses will be most susceptible to icing. Roads have been mainly just wet so far with limited travel impacts but freezing of residual moisture on the roads could lead to patches of black ice, including the</summary>
+<cap:event>Special Weather Statement</cap:event>
+<cap:effective>2022-11-15T15:55:00-05:00</cap:effective>
+<cap:expires>2022-11-15T18:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Observed</cap:certainty>
+<cap:areaDesc>Allegan; Barry; Calhoun; Clare; Clinton; Eaton; Gratiot; Ingham; Ionia; Isabella; Jackson; Kalamazoo; Kent; Lake; Mason; Mecosta; Montcalm; Muskegon; Newaygo; Oceana; Osceola; Ottawa; Van Buren</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>026005 026015 026025 026035 026037 026045 026057 026065 026067 026073 026075 026077 026081 026085 026105 026107 026117 026121 026123 026127 026133 026139 026159</value>
+<valueName>UGC</valueName>
+<value>MIZ037 MIZ038 MIZ039 MIZ040 MIZ043 MIZ044 MIZ045 MIZ046 MIZ050 MIZ051 MIZ052 MIZ056 MIZ057 MIZ058 MIZ059 MIZ064 MIZ065 MIZ066 MIZ067 MIZ071 MIZ072 MIZ073 MIZ074</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value></value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=MI126418637FAC.WinterWeatherAdvisory.126418717BC0MI.APXWSWAPX.571aa3fc3e47ad6742639be113582714</id>
+<updated>2022-11-15T15:35:00-05:00</updated>
+<published>2022-11-15T15:35:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Winter Weather Advisory issued November 15 at 3:35PM EST until November 16 at 7:00AM EST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MI126418637FAC.WinterWeatherAdvisory.126418717BC0MI.APXWSWAPX.571aa3fc3e47ad6742639be113582714"/>
+<summary>...WINTER WEATHER ADVISORY REMAINS IN EFFECT UNTIL 7 AM EST WEDNESDAY... * WHAT...Snow. Additional snow accumulations of 3 to 7 inches. * WHERE...Presque Isle, Montmorency, Alpena, Oscoda and Alcona Counties. * WHEN...Until 7 AM EST Wednesday.</summary>
+<cap:event>Winter Weather Advisory</cap:event>
+<cap:effective>2022-11-15T15:35:00-05:00</cap:effective>
+<cap:expires>2022-11-16T07:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Alcona; Alpena; Montmorency; Oscoda; Presque Isle</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>026001 026007 026119 026135 026141</value>
+<valueName>UGC</valueName>
+<value>MIZ018 MIZ023 MIZ024 MIZ029 MIZ030</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KAPX.WW.Y.0027.000000T0000Z-221116T1200Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=MI126418637FAC.WinterWeatherAdvisory.126418717BC0MI.APXWSWAPX.fc5228e6e59b677a5a674a00576ebf3c</id>
+<updated>2022-11-15T15:35:00-05:00</updated>
+<published>2022-11-15T15:35:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Winter Weather Advisory issued November 15 at 3:35PM EST until November 16 at 7:00AM EST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MI126418637FAC.WinterWeatherAdvisory.126418717BC0MI.APXWSWAPX.fc5228e6e59b677a5a674a00576ebf3c"/>
+<summary>...WINTER WEATHER ADVISORY REMAINS IN EFFECT UNTIL 7 AM EST WEDNESDAY... * WHAT...Snow. Additional snow accumulations of 2 to 5 inches. * WHERE...Otsego, Crawford, Ogemaw and Iosco Counties. * WHEN...Until 7 AM EST Wednesday. * IMPACTS...Plan on slippery road conditions. The hazardous</summary>
+<cap:event>Winter Weather Advisory</cap:event>
+<cap:effective>2022-11-15T15:35:00-05:00</cap:effective>
+<cap:expires>2022-11-16T07:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Crawford; Iosco; Ogemaw; Otsego</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>026039 026069 026129 026137</value>
+<valueName>UGC</valueName>
+<value>MIZ022 MIZ028 MIZ035 MIZ036</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KAPX.WW.Y.0027.000000T0000Z-221116T1200Z/</value>
+</cap:parameter>
+</entry>
+<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=MI1264186372C8.WinterWeatherAdvisory.1264187FAC90MI.DTXWSWDTX.86369baaf82f508b3d5618ce2e7c308a</id>
 <updated>2022-11-15T15:02:00-05:00</updated>
 <published>2022-11-15T15:02:00-05:00</published>
@@ -2083,102 +2115,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <valueName>VTEC</valueName>
 <value>/O.UPG.KIWX.WS.A.0004.221116T0900Z-221117T1500Z/
 /O.NEW.KIWX.WS.W.0005.221116T0900Z-221117T1500Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=MI12641862D6EC.WinterWeatherAdvisory.126418717BC0MI.APXWSWAPX.571aa3fc3e47ad6742639be113582714</id>
-<updated>2022-11-15T11:03:00-05:00</updated>
-<published>2022-11-15T11:03:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Winter Weather Advisory issued November 15 at 11:03AM EST until November 16 at 7:00AM EST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MI12641862D6EC.WinterWeatherAdvisory.126418717BC0MI.APXWSWAPX.571aa3fc3e47ad6742639be113582714"/>
-<summary>...WINTER WEATHER ADVISORY REMAINS IN EFFECT UNTIL 7 AM EST WEDNESDAY... * WHAT...Snow. Total snow accumulations of 4 to 7 inches. * WHERE...Presque Isle, Montmorency, Alpena, Oscoda and Alcona Counties. * WHEN...Until 7 AM EST Wednesday.</summary>
-<cap:event>Winter Weather Advisory</cap:event>
-<cap:effective>2022-11-15T11:03:00-05:00</cap:effective>
-<cap:expires>2022-11-16T07:00:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Alcona; Alpena; Montmorency; Oscoda; Presque Isle</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>026001 026007 026119 026135 026141</value>
-<valueName>UGC</valueName>
-<value>MIZ018 MIZ023 MIZ024 MIZ029 MIZ030</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KAPX.WW.Y.0027.000000T0000Z-221116T1200Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=MI12641862D6EC.WinterWeatherAdvisory.126418717BC0MI.APXWSWAPX.8c979f92cb44990d9e1aa48d68ebbde4</id>
-<updated>2022-11-15T11:03:00-05:00</updated>
-<published>2022-11-15T11:03:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Winter Weather Advisory issued November 15 at 11:03AM EST until November 16 at 7:00AM EST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MI12641862D6EC.WinterWeatherAdvisory.126418717BC0MI.APXWSWAPX.8c979f92cb44990d9e1aa48d68ebbde4"/>
-<summary>...WINTER WEATHER ADVISORY REMAINS IN EFFECT UNTIL 7 AM EST WEDNESDAY... * WHAT...Snow. Total snow accumulations of 3 to 6 inches. * WHERE...Otsego and Crawford Counties. * WHEN...Until 7 AM EST Wednesday. * IMPACTS...Plan on slippery road conditions. The hazardous</summary>
-<cap:event>Winter Weather Advisory</cap:event>
-<cap:effective>2022-11-15T11:03:00-05:00</cap:effective>
-<cap:expires>2022-11-16T07:00:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Crawford; Otsego</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>026039 026137</value>
-<valueName>UGC</valueName>
-<value>MIZ022 MIZ028</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KAPX.WW.Y.0027.000000T0000Z-221116T1200Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=MI12641862D6EC.WinterWeatherAdvisory.126418717BC0MI.APXWSWAPX.c4837aa8d2aa61cf6cca98c48b397108</id>
-<updated>2022-11-15T11:03:00-05:00</updated>
-<published>2022-11-15T11:03:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Winter Weather Advisory issued November 15 at 11:03AM EST until November 16 at 7:00AM EST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MI12641862D6EC.WinterWeatherAdvisory.126418717BC0MI.APXWSWAPX.c4837aa8d2aa61cf6cca98c48b397108"/>
-<summary>...WINTER WEATHER ADVISORY IN EFFECT UNTIL 7 AM EST WEDNESDAY... * WHAT...Snow. Total snow accumulations of 3 to 6 inches. * WHERE...Ogemaw and Iosco Counties. * WHEN...Until 7 AM EST Wednesday. * IMPACTS...Plan on slippery road conditions. The hazardous conditions could impact the evening and morning commute.</summary>
-<cap:event>Winter Weather Advisory</cap:event>
-<cap:effective>2022-11-15T11:03:00-05:00</cap:effective>
-<cap:expires>2022-11-16T07:00:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Iosco; Ogemaw</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>026069 026129</value>
-<valueName>UGC</valueName>
-<value>MIZ035 MIZ036</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.EXA.KAPX.WW.Y.0027.000000T0000Z-221116T1200Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -3720,135 +3656,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=PR126418629BF0.FloodWarning.126418638394PR.JSJFLWSJU.dc915202f1de3b06ec589166b60b0c31</id>
-<updated>2022-11-15T10:52:00-04:00</updated>
-<published>2022-11-15T10:52:00-04:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Flood Warning issued November 15 at 10:52AM AST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=PR126418629BF0.FloodWarning.126418638394PR.JSJFLWSJU.dc915202f1de3b06ec589166b60b0c31"/>
-<summary>...FLOOD WARNING IN EFFECT UNTIL 445 PM AST THIS AFTERNOON... * WHAT...Small stream flooding caused by excessive rainfall is expected. * WHERE...Gurabo. * WHEN...Until 445 PM AST. * IMPACTS...Flooding of rivers, creeks, streams, and other low-lying</summary>
-<cap:event>Flood Warning</cap:event>
-<cap:effective>2022-11-15T10:52:00-04:00</cap:effective>
-<cap:expires>2022-11-15T16:45:00-04:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Gurabo</cap:areaDesc>
-<cap:polygon>18.26,-65.94 18.25,-65.95 18.27,-66.01 18.28,-66.01 18.26,-65.94</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>072063</value>
-<valueName>UGC</valueName>
-<value>PRC063</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.NEW.TJSJ.FA.W.0041.221115T1452Z-221115T2045Z/
-/00000.0.ER.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=SD12641862E240.WinterWeatherAdvisory.126418639910SD.UNRWSWUNR.34d060c6c20e2f5478b73114fe45b529</id>
-<updated>2022-11-15T09:32:00-07:00</updated>
-<published>2022-11-15T09:32:00-07:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Winter Weather Advisory issued November 15 at 9:32AM MST until November 15 at 2:00PM MST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=SD12641862E240.WinterWeatherAdvisory.126418639910SD.UNRWSWUNR.34d060c6c20e2f5478b73114fe45b529"/>
-<summary>...WINTER WEATHER ADVISORY NOW IN EFFECT UNTIL 2 PM MST THIS AFTERNOON... * WHAT...Snow. Additional snow accumulations of up to 3 inches. * WHERE...In South Dakota, the Northern Black Hills. In Wyoming, the Wyoming Black Hills. * WHEN...Until 2 PM MST this afternoon.</summary>
-<cap:event>Winter Weather Advisory</cap:event>
-<cap:effective>2022-11-15T09:32:00-07:00</cap:effective>
-<cap:expires>2022-11-15T14:00:00-07:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Northern Black Hills</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>046081</value>
-<valueName>UGC</valueName>
-<value>SDZ024</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.EXT.KUNR.WW.Y.0021.000000T0000Z-221115T2100Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=SD12641862E240.WinterWeatherAdvisory.126418639910SD.UNRWSWUNR.534aa8042f2aa2f91dba13ed6cff20e3</id>
-<updated>2022-11-15T09:32:00-07:00</updated>
-<published>2022-11-15T09:32:00-07:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Winter Weather Advisory issued November 15 at 9:32AM MST until November 15 at 2:00PM MST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=SD12641862E240.WinterWeatherAdvisory.126418639910SD.UNRWSWUNR.534aa8042f2aa2f91dba13ed6cff20e3"/>
-<summary>...WINTER WEATHER ADVISORY NOW IN EFFECT UNTIL 2 PM MST THIS AFTERNOON... * WHAT...Snow. Additional snow accumulations of up to 3 inches. * WHERE...The Northern Foot Hills and the Sturgis/Piedmont Foot Hills. * WHEN...Until 2 PM MST this afternoon.</summary>
-<cap:event>Winter Weather Advisory</cap:event>
-<cap:effective>2022-11-15T09:32:00-07:00</cap:effective>
-<cap:expires>2022-11-15T14:00:00-07:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Northern Foot Hills; Sturgis, Piedmont Foot Hills</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>046081 046093</value>
-<valueName>UGC</valueName>
-<value>SDZ025 SDZ072</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.EXT.KUNR.WW.Y.0021.000000T0000Z-221115T2100Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=SD12641862E240.WinterWeatherAdvisory.126418639910SD.UNRWSWUNR.99dc4a3f913e430f4c222565671dbe0d</id>
-<updated>2022-11-15T09:32:00-07:00</updated>
-<published>2022-11-15T09:32:00-07:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Winter Weather Advisory issued November 15 at 9:32AM MST until November 15 at 2:00PM MST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=SD12641862E240.WinterWeatherAdvisory.126418639910SD.UNRWSWUNR.99dc4a3f913e430f4c222565671dbe0d"/>
-<summary>...WINTER WEATHER ADVISORY IN EFFECT UNTIL 2 PM MST THIS AFTERNOON... * WHAT...Snow. Additional snow accumulations of up to 3 inches. * WHERE...The Rapid City area. * WHEN...Until 2 PM MST this afternoon. * IMPACTS...Plan on slippery road conditions.</summary>
-<cap:event>Winter Weather Advisory</cap:event>
-<cap:effective>2022-11-15T09:32:00-07:00</cap:effective>
-<cap:expires>2022-11-15T14:00:00-07:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Rapid City</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>046103</value>
-<valueName>UGC</valueName>
-<value>SDZ026</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.EXB.KUNR.WW.Y.0021.000000T0000Z-221115T2100Z/</value>
-</cap:parameter>
-</entry>
-<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=TX12641861F2CC.RipCurrentStatement.1264187EE940TX.BROCFWBRO.7a4e110aba3f8db4fd9a8235e4a43642</id>
 <updated>2022-11-15T04:19:00-06:00</updated>
 <published>2022-11-15T04:19:00-06:00</published>
@@ -4137,17 +3944,17 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=WI126418633254.WinterWeatherAdvisory.1264186FA700WI.MKXWSWMKX.2719aab975f05e729b6435b632ecf96e</id>
-<updated>2022-11-15T12:37:00-06:00</updated>
-<published>2022-11-15T12:37:00-06:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=WI126418637F48.WinterWeatherAdvisory.1264186FA700WI.MKXWSWMKX.2719aab975f05e729b6435b632ecf96e</id>
+<updated>2022-11-15T14:34:00-06:00</updated>
+<published>2022-11-15T14:34:00-06:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Winter Weather Advisory issued November 15 at 12:37PM CST until November 15 at 6:00PM CST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=WI126418633254.WinterWeatherAdvisory.1264186FA700WI.MKXWSWMKX.2719aab975f05e729b6435b632ecf96e"/>
-<summary>...WINTER WEATHER ADVISORY IN EFFECT UNTIL 6 PM CST THIS EVENING... * WHAT...Slushy, wet snow. Additional snow accumulations of up to two to three inches. * WHERE...Waukesha, Milwaukee, Walworth, Racine and Kenosha Counties.</summary>
+<title>Winter Weather Advisory issued November 15 at 2:34PM CST until November 15 at 6:00PM CST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=WI126418637F48.WinterWeatherAdvisory.1264186FA700WI.MKXWSWMKX.2719aab975f05e729b6435b632ecf96e"/>
+<summary>...WINTER WEATHER ADVISORY REMAINS IN EFFECT UNTIL 6 PM CST THIS EVENING... * WHAT...Slushy, wet snow. Additional snow accumulations of up to one to two inches. * WHERE...Waukesha, Milwaukee, Walworth, Racine and Kenosha Counties.</summary>
 <cap:event>Winter Weather Advisory</cap:event>
-<cap:effective>2022-11-15T12:37:00-06:00</cap:effective>
+<cap:effective>2022-11-15T14:34:00-06:00</cap:effective>
 <cap:expires>2022-11-15T18:00:00-06:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
@@ -4165,39 +3972,7 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
-<value>/O.NEW.KMKX.WW.Y.0010.221115T1837Z-221116T0000Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=WI126418630950.SpecialWeatherStatement.126418639910WI.MKXSPSMKX.61b271cac5cd1abb78830dbfb9fa054a</id>
-<updated>2022-11-15T11:32:00-06:00</updated>
-<published>2022-11-15T11:32:00-06:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Special Weather Statement issued November 15 at 11:32AM CST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=WI126418630950.SpecialWeatherStatement.126418639910WI.MKXSPSMKX.61b271cac5cd1abb78830dbfb9fa054a"/>
-<summary>...Hazardous Driving Conditions Possible With Snow Showers Across Southeast Wisconsin... Snow Showers with intermittent higher snowfall rates will continue to fall across portions of southeast Wisconsin through 3 PM. These snow showers may leave a slushy accumulation on roadways, especially bridges and overpasses. Widespread travel</summary>
-<cap:event>Special Weather Statement</cap:event>
-<cap:effective>2022-11-15T11:32:00-06:00</cap:effective>
-<cap:expires>2022-11-15T15:00:00-06:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Observed</cap:certainty>
-<cap:areaDesc>Kenosha; Milwaukee; Racine; Walworth; Waukesha</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>055059 055079 055101 055127 055133</value>
-<valueName>UGC</valueName>
-<value>WIZ065 WIZ066 WIZ070 WIZ071 WIZ072</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value></value>
+<value>/O.CON.KMKX.WW.Y.0010.000000T0000Z-221116T0000Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -4425,6 +4200,134 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=WY1264186388A8.SpecialWeatherStatement.126418709160WY.RIWSPSRIW.c716b26f49e368766d7540655b125e6e</id>
+<updated>2022-11-15T13:58:00-07:00</updated>
+<published>2022-11-15T13:58:00-07:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Special Weather Statement issued November 15 at 1:58PM MST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=WY1264186388A8.SpecialWeatherStatement.126418709160WY.RIWSPSRIW.c716b26f49e368766d7540655b125e6e"/>
+<summary>...Light Snow and Gusty Winds Starting Wednesday Evening... This is a special weather statement from the National Weather Service Office in Riverton. * WHAT...Light to moderate snow. Snowfall accumulations of 1 to 2 inches. Locally higher amounts of 2 to 4 inches near Cody, Meeteetse and Clark. North winds, with gusts of 30 to 40 mph,</summary>
+<cap:event>Special Weather Statement</cap:event>
+<cap:effective>2022-11-15T13:58:00-07:00</cap:effective>
+<cap:expires>2022-11-15T23:00:00-07:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Observed</cap:certainty>
+<cap:areaDesc>Absaroka Mountains; Cody Foothills; North Big Horn Basin</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>056003 056013 056029</value>
+<valueName>UGC</valueName>
+<value>WYZ002 WYZ003 WYZ004</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value></value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=WY1264186388A8.SpecialWeatherStatement.126418709160WY.RIWSPSRIW.cc92571a386b9da3dec624a9e7087955</id>
+<updated>2022-11-15T13:58:00-07:00</updated>
+<published>2022-11-15T13:58:00-07:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Special Weather Statement issued November 15 at 1:58PM MST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=WY1264186388A8.SpecialWeatherStatement.126418709160WY.RIWSPSRIW.cc92571a386b9da3dec624a9e7087955"/>
+<summary>...Light Snow and Gusty Winds Starting Wednesday Night... This is a special weather statement from the National Weather Service Office in Riverton. * WHAT...Light to possibly moderate snow. Snowfall accumulations up to 1 inch expected; 1 to 2 inches in the mountains. North to northwest winds, with gusts of 25 to 35 mph, will lead to</summary>
+<cap:event>Special Weather Statement</cap:event>
+<cap:effective>2022-11-15T13:58:00-07:00</cap:effective>
+<cap:expires>2022-11-15T23:00:00-07:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Observed</cap:certainty>
+<cap:areaDesc>Owl Creek and Bridger Mountains; Southeast Big Horn Basin; Southwest Big Horn Basin</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>056017 056043</value>
+<valueName>UGC</valueName>
+<value>WYZ005 WYZ006 WYZ007</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value></value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=WY1264186388A8.SpecialWeatherStatement.126418709160WY.RIWSPSRIW.c9cb778a2f18c921e4e84d7d769b89e9</id>
+<updated>2022-11-15T13:58:00-07:00</updated>
+<published>2022-11-15T13:58:00-07:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Special Weather Statement issued November 15 at 1:58PM MST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=WY1264186388A8.SpecialWeatherStatement.126418709160WY.RIWSPSRIW.c9cb778a2f18c921e4e84d7d769b89e9"/>
+<summary>...Light Snow and Gusty Winds Starting Wednesday Evening... This is a special weather statement from the National Weather Service Office in Riverton. * WHAT...Light to moderate snow. Snowfall accumulations of 1 to 2 inches. 2 to 4 inches over northern and southern portions of the Bighorns. North to northwest winds, with gusts of 30 to 45 mph,</summary>
+<cap:event>Special Weather Statement</cap:event>
+<cap:effective>2022-11-15T13:58:00-07:00</cap:effective>
+<cap:expires>2022-11-15T23:00:00-07:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Observed</cap:certainty>
+<cap:areaDesc>Bighorn Mountains Southeast; Bighorn Mountains West; Northeast Johnson County; Southeast Johnson County</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>056003 056019 056025 056043</value>
+<valueName>UGC</valueName>
+<value>WYZ008 WYZ009 WYZ010 WYZ011</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value></value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=WY1264186388A8.SpecialWeatherStatement.126418709160WY.RIWSPSRIW.c6ee12f251af6e06ad4998cef985e280</id>
+<updated>2022-11-15T13:58:00-07:00</updated>
+<published>2022-11-15T13:58:00-07:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Special Weather Statement issued November 15 at 1:58PM MST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=WY1264186388A8.SpecialWeatherStatement.126418709160WY.RIWSPSRIW.c6ee12f251af6e06ad4998cef985e280"/>
+<summary>...Light Snow and Gusty Winds Starting Wednesday Night... This is a special weather statement from the National Weather Service Office in Riverton. * WHAT...Light to possibly moderate snow. Snowfall accumulations of 1 to 2 inches; 2 to 4 inches in Casper Mountain. North to northeast winds, with gusts of 25 to 30 mph, will lead to</summary>
+<cap:event>Special Weather Statement</cap:event>
+<cap:effective>2022-11-15T13:58:00-07:00</cap:effective>
+<cap:expires>2022-11-15T23:00:00-07:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Observed</cap:certainty>
+<cap:areaDesc>Casper Mountain; Natrona County Lower Elevations</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>056025</value>
+<valueName>UGC</valueName>
+<value>WYZ020 WYZ022</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value></value>
+</cap:parameter>
+</entry>
+<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=WY1264186379D0.WinterWeatherAdvisory.126418815A40WY.BYZWSWBYZ.8989aa77d7fa31f4d2df06cb616da87b</id>
 <updated>2022-11-15T13:20:00-07:00</updated>
 <published>2022-11-15T13:20:00-07:00</published>
@@ -4486,38 +4389,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value>/O.NEW.KBYZ.WW.Y.0029.221117T0000Z-221117T1600Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=WY12641862E240.WinterWeatherAdvisory.126418639910WY.UNRWSWUNR.abba62e9f1d79c4d6b1a048be9e122da</id>
-<updated>2022-11-15T09:32:00-07:00</updated>
-<published>2022-11-15T09:32:00-07:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Winter Weather Advisory issued November 15 at 9:32AM MST until November 15 at 2:00PM MST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=WY12641862E240.WinterWeatherAdvisory.126418639910WY.UNRWSWUNR.abba62e9f1d79c4d6b1a048be9e122da"/>
-<summary>...WINTER WEATHER ADVISORY NOW IN EFFECT UNTIL 2 PM MST THIS AFTERNOON... * WHAT...Snow. Additional snow accumulations of up to 3 inches. * WHERE...In South Dakota, the Northern Black Hills. In Wyoming, the Wyoming Black Hills. * WHEN...Until 2 PM MST this afternoon.</summary>
-<cap:event>Winter Weather Advisory</cap:event>
-<cap:effective>2022-11-15T09:32:00-07:00</cap:effective>
-<cap:expires>2022-11-15T14:00:00-07:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Wyoming Black Hills</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>056011 056045</value>
-<valueName>UGC</valueName>
-<value>WYZ057</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.EXT.KUNR.WW.Y.0021.000000T0000Z-221115T2100Z/</value>
 </cap:parameter>
 </entry>
 </feed>
