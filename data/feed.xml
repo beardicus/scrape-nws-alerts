@@ -16,16 +16,48 @@ xmlns = 'http://www.w3.org/2005/Atom'
 xmlns:cap = 'urn:oasis:names:tc:emergency:cap:1.1'
 xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 >
-<!-- http-date = Wed, 23 Nov 2022 20:31:00 GMT -->
+<!-- http-date = Wed, 23 Nov 2022 21:01:00 GMT -->
 <id>https://alerts.weather.gov/cap/us.php?x=0</id>
 <logo>http://alerts.weather.gov/images/xml_logo.gif</logo>
 <generator>NWS CAP Server</generator>
-<updated>2022-11-23T11:31:00-09:00</updated>
+<updated>2022-11-23T16:01:00-05:00</updated>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
 <title>Current Watches, Warnings and Advisories for the United States Issued by the National Weather Service</title>
 <link href="https://alerts.weather.gov/cap/us.php?x=0"/>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=AK126418DD9918.DenseFogAdvisory.126418EA5540AK.AFGNPWAFG.ec95579b3a7516a0a6a3de9b5d2826f9</id>
+<updated>2022-11-23T11:54:00-09:00</updated>
+<published>2022-11-23T11:54:00-09:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Dense Fog Advisory issued November 23 at 11:54AM AKST until November 23 at 7:00PM AKST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=AK126418DD9918.DenseFogAdvisory.126418EA5540AK.AFGNPWAFG.ec95579b3a7516a0a6a3de9b5d2826f9"/>
+<summary>...DENSE FOG ADVISORY REMAINS IN EFFECT UNTIL 7 PM AKST THIS EVENING... * WHAT...Visibility one quarter mile or less in dense fog. * WHERE...Middle Tanana Valley. * WHEN...Until 7 PM AKST this evening. * IMPACTS...Hazardous driving conditions due to low visibility.</summary>
+<cap:event>Dense Fog Advisory</cap:event>
+<cap:effective>2022-11-23T11:54:00-09:00</cap:effective>
+<cap:expires>2022-11-23T19:00:00-09:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Middle Tanana Valley</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>002090 002290</value>
+<valueName>UGC</valueName>
+<value>AKZ222</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.EXT.PAFG.FG.Y.0013.000000T0000Z-221124T0400Z/</value>
+</cap:parameter>
+</entry>
 <entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=AK126418DD901C.FloodAdvisory.126418EB1890AK.AJKFLSAJK.6e7bf992aa39f310e957f666b2e7dcde</id>
 <updated>2022-11-23T11:31:00-09:00</updated>
@@ -57,38 +89,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <valueName>VTEC</valueName>
 <value>/O.CON.PAJK.FA.Y.0034.000000T0000Z-221125T0000Z/
 /00000.N.ER.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=AK126418DD7334.DenseFogAdvisory.126418DDAB10AK.AFGNPWAFG.ec95579b3a7516a0a6a3de9b5d2826f9</id>
-<updated>2022-11-23T10:57:00-09:00</updated>
-<published>2022-11-23T10:57:00-09:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Dense Fog Advisory issued November 23 at 10:57AM AKST until November 23 at 12:00PM AKST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=AK126418DD7334.DenseFogAdvisory.126418DDAB10AK.AFGNPWAFG.ec95579b3a7516a0a6a3de9b5d2826f9"/>
-<summary>...DENSE FOG ADVISORY IN EFFECT UNTIL NOON AKST TODAY... * WHAT...Visibility one quarter mile or less in dense fog. * WHERE...Middle Tanana Valley. * WHEN...Until noon AKST today. * IMPACTS...Hazardous driving conditions due to low visibility.</summary>
-<cap:event>Dense Fog Advisory</cap:event>
-<cap:effective>2022-11-23T10:57:00-09:00</cap:effective>
-<cap:expires>2022-11-23T12:00:00-09:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Middle Tanana Valley</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>002090 002290</value>
-<valueName>UGC</valueName>
-<value>AKZ222</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.NEW.PAFG.FG.Y.0013.221123T1957Z-221123T2100Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -254,6 +254,166 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=CA126418DD9918.WindAdvisory.126418F94960CA.SGXNPWSGX.bf3445dfaef2fe048daa7194b9bb1483</id>
+<updated>2022-11-23T12:54:00-08:00</updated>
+<published>2022-11-23T12:54:00-08:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Wind Advisory issued November 23 at 12:54PM PST until November 24 at 6:00PM PST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CA126418DD9918.WindAdvisory.126418F94960CA.SGXNPWSGX.bf3445dfaef2fe048daa7194b9bb1483"/>
+<summary>...WIND ADVISORY REMAINS IN EFFECT FROM 6 AM TO 6 PM THURSDAY... * WHAT...Northeast winds 10 to 20 mph with gusts to 45 mph expected. * WHERE...San Diego County Coastal Areas. * WHEN...From 6 AM to 6 PM Thursday. * IMPACTS...Gusty winds could blow around unsecured objects.</summary>
+<cap:event>Wind Advisory</cap:event>
+<cap:effective>2022-11-23T12:54:00-08:00</cap:effective>
+<cap:expires>2022-11-24T18:00:00-08:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>San Diego County Coastal Areas</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>006073</value>
+<valueName>UGC</valueName>
+<value>CAZ043</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KSGX.WI.Y.0053.221124T1400Z-221125T0200Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=CA126418DD9918.WindAdvisory.126418F99780CA.SGXNPWSGX.bfe96ce7d5c6719e08bec9ef7d14eb8f</id>
+<updated>2022-11-23T12:54:00-08:00</updated>
+<published>2022-11-23T12:54:00-08:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Wind Advisory issued November 23 at 12:54PM PST until November 24 at 8:00PM PST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CA126418DD9918.WindAdvisory.126418F99780CA.SGXNPWSGX.bfe96ce7d5c6719e08bec9ef7d14eb8f"/>
+<summary>...WIND ADVISORY REMAINS IN EFFECT FROM 6 AM TO 8 PM THURSDAY... * WHAT...Northeast winds 15 to 25 mph with gusts to 40 mph expected. * WHERE...Orange County Coastal Areas. * IMPACTS...Gusty winds could blow around unsecured objects. Tree limbs could be blown down and a few power outages may result.</summary>
+<cap:event>Wind Advisory</cap:event>
+<cap:effective>2022-11-23T12:54:00-08:00</cap:effective>
+<cap:expires>2022-11-24T20:00:00-08:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Orange County Coastal</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>006059</value>
+<valueName>UGC</valueName>
+<value>CAZ552</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KSGX.WI.Y.0053.221124T1400Z-221125T0400Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=CA126418DD9918.WindAdvisory.126418FBBA60CA.SGXNPWSGX.3ff54aaa72dbdd665222b0038bef5ed0</id>
+<updated>2022-11-23T12:54:00-08:00</updated>
+<published>2022-11-23T12:54:00-08:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Wind Advisory issued November 23 at 12:54PM PST until November 25 at 10:00AM PST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CA126418DD9918.WindAdvisory.126418FBBA60CA.SGXNPWSGX.3ff54aaa72dbdd665222b0038bef5ed0"/>
+<summary>...WIND ADVISORY REMAINS IN EFFECT FROM 10 PM THIS EVENING TO 10 AM FRIDAY... * WHAT...Northeast winds 20 to 30 mph with gusts to 55 mph. * WHERE...The Inland Empire, San Bernardino County Mountains, Santa Ana Mountains and Foothills and Orange County Inland Areas.</summary>
+<cap:event>Wind Advisory</cap:event>
+<cap:effective>2022-11-23T12:54:00-08:00</cap:effective>
+<cap:expires>2022-11-25T10:00:00-08:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Orange County Inland; San Bernardino County Mountains; San Bernardino and Riverside County Valleys-The Inland Empire; Santa Ana Mountains and Foothills</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>006059 006065 006071</value>
+<valueName>UGC</valueName>
+<value>CAZ048 CAZ055 CAZ057 CAZ554</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KSGX.WI.Y.0053.221124T0600Z-221125T1800Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=CA126418DD9918.WindAdvisory.126418FBBA60CA.SGXNPWSGX.2851dee894fea99cdf2a2aee9a020317</id>
+<updated>2022-11-23T12:54:00-08:00</updated>
+<published>2022-11-23T12:54:00-08:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Wind Advisory issued November 23 at 12:54PM PST until November 25 at 10:00AM PST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CA126418DD9918.WindAdvisory.126418FBBA60CA.SGXNPWSGX.2851dee894fea99cdf2a2aee9a020317"/>
+<summary>...WIND ADVISORY REMAINS IN EFFECT FROM 4 AM THURSDAY TO 10 AM FRIDAY... * WHAT...Northeast winds 25 to 35 mph with gusts to 60 mph. * WHERE...Riverside County Mountains and San Gorgonio Pass Near Banning. * IMPACTS...Gusty winds could blow around unsecured objects.</summary>
+<cap:event>Wind Advisory</cap:event>
+<cap:effective>2022-11-23T12:54:00-08:00</cap:effective>
+<cap:expires>2022-11-25T10:00:00-08:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Riverside County Mountains; San Gorgonio Pass Near Banning</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>006065</value>
+<valueName>UGC</valueName>
+<value>CAZ056 CAZ065</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KSGX.WI.Y.0053.221124T1200Z-221125T1800Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=CA126418DD9918.WindAdvisory.126418FC0880CA.SGXNPWSGX.9e112518fcd9961e01d1d0041e329b5d</id>
+<updated>2022-11-23T12:54:00-08:00</updated>
+<published>2022-11-23T12:54:00-08:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Wind Advisory issued November 23 at 12:54PM PST until November 25 at 12:00PM PST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CA126418DD9918.WindAdvisory.126418FC0880CA.SGXNPWSGX.9e112518fcd9961e01d1d0041e329b5d"/>
+<summary>...WIND ADVISORY REMAINS IN EFFECT FROM 2 AM THURSDAY TO NOON FRIDAY... * WHAT...East winds 30 to 40 mph with gusts to 70 mph. * WHERE...San Diego County Valleys and San Diego County Mountains. * WHEN...From 2 AM Thursday to noon Friday. * IMPACTS...Gusty winds could blow around unsecured objects.</summary>
+<cap:event>Wind Advisory</cap:event>
+<cap:effective>2022-11-23T12:54:00-08:00</cap:effective>
+<cap:expires>2022-11-25T12:00:00-08:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>San Diego County Inland Valleys; San Diego County Mountains</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>006073</value>
+<valueName>UGC</valueName>
+<value>CAZ050 CAZ058</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KSGX.WI.Y.0053.221124T1000Z-221125T2000Z/</value>
+</cap:parameter>
+</entry>
+<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=CA126418DD2578.RedFlagWarning.126418FBE170CA.LOXRFWLOX.131be6ed6d38050352fbcf6ededf7bfe</id>
 <updated>2022-11-23T09:58:00-08:00</updated>
 <published>2022-11-23T09:58:00-08:00</published>
@@ -381,166 +541,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value>/O.CON.KMFR.AS.Y.0003.000000T0000Z-221126T0600Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=CA126418DC26C8.WindAdvisory.126418F94960CA.SGXNPWSGX.bf3445dfaef2fe048daa7194b9bb1483</id>
-<updated>2022-11-23T03:06:00-08:00</updated>
-<published>2022-11-23T03:06:00-08:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Wind Advisory issued November 23 at 3:06AM PST until November 24 at 6:00PM PST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CA126418DC26C8.WindAdvisory.126418F94960CA.SGXNPWSGX.bf3445dfaef2fe048daa7194b9bb1483"/>
-<summary>...WIND ADVISORY IN EFFECT FROM 6 AM TO 6 PM PST THURSDAY... * WHAT...Northeast winds 10 to 20 mph with gusts to 45 mph expected. * WHERE...San Diego County Coastal Areas. * WHEN...From 6 AM to 6 PM PST Thursday. * IMPACTS...Gusty winds could blow around unsecured objects.</summary>
-<cap:event>Wind Advisory</cap:event>
-<cap:effective>2022-11-23T03:06:00-08:00</cap:effective>
-<cap:expires>2022-11-24T18:00:00-08:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>San Diego County Coastal Areas</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>006073</value>
-<valueName>UGC</valueName>
-<value>CAZ043</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.EXB.KSGX.WI.Y.0053.221124T1400Z-221125T0200Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=CA126418DC26C8.WindAdvisory.126418F99780CA.SGXNPWSGX.bfe96ce7d5c6719e08bec9ef7d14eb8f</id>
-<updated>2022-11-23T03:06:00-08:00</updated>
-<published>2022-11-23T03:06:00-08:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Wind Advisory issued November 23 at 3:06AM PST until November 24 at 8:00PM PST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CA126418DC26C8.WindAdvisory.126418F99780CA.SGXNPWSGX.bfe96ce7d5c6719e08bec9ef7d14eb8f"/>
-<summary>...WIND ADVISORY IN EFFECT FROM 6 AM TO 8 PM PST THURSDAY... * WHAT...Northeast winds 15 to 25 mph with gusts to 40 mph expected. * WHERE...Orange County Coastal Areas. * WHEN...From 6 AM to 8 PM PST Thursday. * IMPACTS...Gusty winds could blow around unsecured objects.</summary>
-<cap:event>Wind Advisory</cap:event>
-<cap:effective>2022-11-23T03:06:00-08:00</cap:effective>
-<cap:expires>2022-11-24T20:00:00-08:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Orange County Coastal</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>006059</value>
-<valueName>UGC</valueName>
-<value>CAZ552</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.EXB.KSGX.WI.Y.0053.221124T1400Z-221125T0400Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=CA126418DC26C8.WindAdvisory.126418FBBA60CA.SGXNPWSGX.3ff54aaa72dbdd665222b0038bef5ed0</id>
-<updated>2022-11-23T03:06:00-08:00</updated>
-<published>2022-11-23T03:06:00-08:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Wind Advisory issued November 23 at 3:06AM PST until November 25 at 10:00AM PST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CA126418DC26C8.WindAdvisory.126418FBBA60CA.SGXNPWSGX.3ff54aaa72dbdd665222b0038bef5ed0"/>
-<summary>...WIND ADVISORY NOW IN EFFECT FROM 10 PM WEDNESDAY TO 10 AM PST FRIDAY... * WHAT...Northeast winds 20 to 30 mph with gusts to 55 mph expected. * WHERE...San Bernardino and Riverside County Valleys-The Inland Empire, San Bernardino County Mountains, Santa Ana Mountains</summary>
-<cap:event>Wind Advisory</cap:event>
-<cap:effective>2022-11-23T03:06:00-08:00</cap:effective>
-<cap:expires>2022-11-25T10:00:00-08:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Orange County Inland; San Bernardino County Mountains; San Bernardino and Riverside County Valleys-The Inland Empire; Santa Ana Mountains and Foothills</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>006059 006065 006071</value>
-<valueName>UGC</valueName>
-<value>CAZ048 CAZ055 CAZ057 CAZ554</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.EXT.KSGX.WI.Y.0053.221124T0600Z-221125T1800Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=CA126418DC26C8.WindAdvisory.126418FBBA60CA.SGXNPWSGX.2851dee894fea99cdf2a2aee9a020317</id>
-<updated>2022-11-23T03:06:00-08:00</updated>
-<published>2022-11-23T03:06:00-08:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Wind Advisory issued November 23 at 3:06AM PST until November 25 at 10:00AM PST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CA126418DC26C8.WindAdvisory.126418FBBA60CA.SGXNPWSGX.2851dee894fea99cdf2a2aee9a020317"/>
-<summary>...WIND ADVISORY NOW IN EFFECT FROM 4 AM THURSDAY TO 10 AM PST FRIDAY... * WHAT...Northeast winds 25 to 35 mph with gusts to 60 mph expected. * WHERE...Riverside County Mountains and San Gorgonio Pass Near Banning.</summary>
-<cap:event>Wind Advisory</cap:event>
-<cap:effective>2022-11-23T03:06:00-08:00</cap:effective>
-<cap:expires>2022-11-25T10:00:00-08:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Riverside County Mountains; San Gorgonio Pass Near Banning</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>006065</value>
-<valueName>UGC</valueName>
-<value>CAZ056 CAZ065</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.EXT.KSGX.WI.Y.0053.221124T1200Z-221125T1800Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=CA126418DC26C8.WindAdvisory.126418FC0880CA.SGXNPWSGX.9e112518fcd9961e01d1d0041e329b5d</id>
-<updated>2022-11-23T03:06:00-08:00</updated>
-<published>2022-11-23T03:06:00-08:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Wind Advisory issued November 23 at 3:06AM PST until November 25 at 12:00PM PST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CA126418DC26C8.WindAdvisory.126418FC0880CA.SGXNPWSGX.9e112518fcd9961e01d1d0041e329b5d"/>
-<summary>...WIND ADVISORY NOW IN EFFECT FROM 2 AM THURSDAY TO NOON PST FRIDAY... * WHAT...East winds 30 to 40 mph with gusts to 70 mph expected. * WHERE...San Diego County Valleys and San Diego County Mountains. * WHEN...From 2 AM Thursday to noon PST Friday.</summary>
-<cap:event>Wind Advisory</cap:event>
-<cap:effective>2022-11-23T03:06:00-08:00</cap:effective>
-<cap:expires>2022-11-25T12:00:00-08:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>San Diego County Inland Valleys; San Diego County Mountains</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>006073</value>
-<valueName>UGC</valueName>
-<value>CAZ050 CAZ058</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.EXT.KSGX.WI.Y.0053.221124T1000Z-221125T2000Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -863,6 +863,38 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value>/O.EXA.KPUB.FW.W.0070.221123T1800Z-221124T0100Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=FL126418DDAB74.CoastalFloodStatement.126418ED1460FL.KEYCFWKEY.02a4d5222d21a8233c5d2abfbf13e455</id>
+<updated>2022-11-23T16:01:00-05:00</updated>
+<published>2022-11-23T16:01:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Coastal Flood Statement issued November 23 at 4:01PM EST until November 24 at 5:00PM EST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=FL126418DDAB74.CoastalFloodStatement.126418ED1460FL.KEYCFWKEY.02a4d5222d21a8233c5d2abfbf13e455"/>
+<summary>...COASTAL FLOOD STATEMENT REMAINS IN EFFECT... * WHAT...Minor saltwater flooding. * WHERE...All the Florida Keys. * WHEN...Through Thursday afternoon. * IMPACTS...Minor saltwater flooding of low elevation streets and lots is likely. Some storm drains will overflow, and some</summary>
+<cap:event>Coastal Flood Statement</cap:event>
+<cap:effective>2022-11-23T16:01:00-05:00</cap:effective>
+<cap:expires>2022-11-24T17:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Unknown</cap:urgency>
+<cap:severity>Unknown</cap:severity>
+<cap:certainty>Unknown</cap:certainty>
+<cap:areaDesc>Monroe Lower Keys; Monroe Middle Keys; Monroe Upper Keys</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>012087</value>
+<valueName>UGC</valueName>
+<value>FLZ076 FLZ077 FLZ078</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KKEY.CF.S.0033.000000T0000Z-221124T2200Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -1223,38 +1255,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <valueName>VTEC</valueName>
 <value>/O.CON.KMLB.FL.W.0008.000000T0000Z-000000T0000Z/
 /SNFF1.1.ER.220929T1415Z.221009T2145Z.000000T0000Z.NO/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=FL126418DBE1A4.CoastalFloodStatement.126418ED1460FL.KEYCFWKEY.02a4d5222d21a8233c5d2abfbf13e455</id>
-<updated>2022-11-23T04:29:00-05:00</updated>
-<published>2022-11-23T04:29:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Coastal Flood Statement issued November 23 at 4:29AM EST until November 24 at 5:00PM EST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=FL126418DBE1A4.CoastalFloodStatement.126418ED1460FL.KEYCFWKEY.02a4d5222d21a8233c5d2abfbf13e455"/>
-<summary>...COASTAL FLOOD STATEMENT REMAINS IN EFFECT... * WHAT...Minor saltwater flooding. * WHERE...All the Florida Keys. * WHEN...Through Thursday afternoon. * IMPACTS...Minor saltwater flooding of low elevation streets and lots is likely. Some storm drains will overflow, and some</summary>
-<cap:event>Coastal Flood Statement</cap:event>
-<cap:effective>2022-11-23T04:29:00-05:00</cap:effective>
-<cap:expires>2022-11-24T17:00:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Unknown</cap:urgency>
-<cap:severity>Unknown</cap:severity>
-<cap:certainty>Unknown</cap:certainty>
-<cap:areaDesc>Monroe Lower Keys; Monroe Middle Keys; Monroe Upper Keys</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>012087</value>
-<valueName>UGC</valueName>
-<value>FLZ076 FLZ077 FLZ078</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KKEY.CF.S.0033.000000T0000Z-221124T2200Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -1710,6 +1710,102 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=NM126418DD9AA8.WinterWeatherAdvisory.126419083D80NM.ABQWSWABQ.6acc710c114eaf18dd5751c00601185b</id>
+<updated>2022-11-23T13:58:00-07:00</updated>
+<published>2022-11-23T13:58:00-07:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Winter Weather Advisory issued November 23 at 1:58PM MST until November 25 at 5:00PM MST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=NM126418DD9AA8.WinterWeatherAdvisory.126419083D80NM.ABQWSWABQ.6acc710c114eaf18dd5751c00601185b"/>
+<summary>...WINTER WEATHER ADVISORY IN EFFECT FROM 11 PM THIS EVENING TO 5 PM MST FRIDAY... * WHAT...Snow expected. Total snow accumulations up to 8 inches. Winds gusting as high as 45 to 55 mph. * WHERE...Johnson and Bartlett Mesas Including Raton Pass. * WHEN...From 11 PM this evening to 5 PM MST Friday.</summary>
+<cap:event>Winter Weather Advisory</cap:event>
+<cap:effective>2022-11-23T13:58:00-07:00</cap:effective>
+<cap:expires>2022-11-25T17:00:00-07:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Johnson and Bartlett Mesas Including Raton Pass</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>035007 035059</value>
+<valueName>UGC</valueName>
+<value>NMZ227</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.NEW.KABQ.WW.Y.0020.221124T0600Z-221126T0000Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=NM126418DD9AA8.WinterStormWatch.126419094EF0NM.ABQWSWABQ.d593dcb903f7b686b17cfef2aadf53a5</id>
+<updated>2022-11-23T13:58:00-07:00</updated>
+<published>2022-11-23T13:58:00-07:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Winter Storm Watch issued November 23 at 1:58PM MST until November 26 at 12:00AM MST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=NM126418DD9AA8.WinterStormWatch.126419094EF0NM.ABQWSWABQ.d593dcb903f7b686b17cfef2aadf53a5"/>
+<summary>...WINTER STORM WATCH REMAINS IN EFFECT FROM THURSDAY EVENING THROUGH FRIDAY EVENING... * WHAT...Heavy snow possible. Total snow accumulations up to 7 inches except between 6 and 12 inches above 7500 feet possible. Winds could gust as high as 35 mph. * WHERE...Eastern Lincoln County, South Central Highlands, South</summary>
+<cap:event>Winter Storm Watch</cap:event>
+<cap:effective>2022-11-23T13:58:00-07:00</cap:effective>
+<cap:expires>2022-11-26T00:00:00-07:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Future</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Possible</cap:certainty>
+<cap:areaDesc>Chaves County Plains; De Baca County; Eastern Lincoln County; South Central Highlands; South Central Mountains; Southwest Chaves County; Upper Tularosa Valley</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>035005 035011 035027 035053 035057</value>
+<valueName>UGC</valueName>
+<value>NMZ224 NMZ225 NMZ226 NMZ237 NMZ238 NMZ239 NMZ240</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KABQ.WS.A.0006.221125T0100Z-221126T0700Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=NM126418DD9AA8.WinterStormWatch.126419094EF0NM.ABQWSWABQ.2d8be76d2265b29e08895b98286051f5</id>
+<updated>2022-11-23T13:58:00-07:00</updated>
+<published>2022-11-23T13:58:00-07:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Winter Storm Watch issued November 23 at 1:58PM MST until November 26 at 12:00AM MST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=NM126418DD9AA8.WinterStormWatch.126419094EF0NM.ABQWSWABQ.2d8be76d2265b29e08895b98286051f5"/>
+<summary>...WINTER STORM WATCH REMAINS IN EFFECT FROM THURSDAY EVENING THROUGH FRIDAY EVENING... * WHAT...Heavy snow possible. Total snow accumulations between 2 and 4 inches possible. Winds could gust as high as 35 mph. * WHERE...Curry County, Quay County, and Roosevelt County. * WHEN...From Thursday evening through Friday evening.</summary>
+<cap:event>Winter Storm Watch</cap:event>
+<cap:effective>2022-11-23T13:58:00-07:00</cap:effective>
+<cap:expires>2022-11-26T00:00:00-07:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Future</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Possible</cap:certainty>
+<cap:areaDesc>Curry County; Quay County; Roosevelt County</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>035009 035037 035041</value>
+<valueName>UGC</valueName>
+<value>NMZ234 NMZ235 NMZ236</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KABQ.WS.A.0006.221125T0100Z-221126T0700Z/</value>
+</cap:parameter>
+</entry>
+<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=NM126418DD63F8.WinterStormWatch.1264190AFCA0NM.MAFWSWMAF.67a84c0c8b0ddbf4708272ac23274474</id>
 <updated>2022-11-23T12:18:00-07:00</updated>
 <published>2022-11-23T12:18:00-07:00</published>
@@ -1739,70 +1835,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value>/O.NEW.KMAF.WS.A.0002.221125T0300Z-221126T1800Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=NM126418DD212C.WinterStormWatch.126419094EF0NM.ABQWSWABQ.d593dcb903f7b686b17cfef2aadf53a5</id>
-<updated>2022-11-23T10:47:00-07:00</updated>
-<published>2022-11-23T10:47:00-07:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Winter Storm Watch issued November 23 at 10:47AM MST until November 26 at 12:00AM MST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=NM126418DD212C.WinterStormWatch.126419094EF0NM.ABQWSWABQ.d593dcb903f7b686b17cfef2aadf53a5"/>
-<summary>...WINTER STORM WATCH IN EFFECT FROM THURSDAY EVENING THROUGH FRIDAY EVENING... * WHAT...Heavy snow possible. Total snow accumulations up to 3 inches with locally higher amounts above 7500 feet possible. * WHERE...Eastern Lincoln County, South Central Highlands, South Central Mountains, Upper Tularosa Valley, De Baca County, Chaves</summary>
-<cap:event>Winter Storm Watch</cap:event>
-<cap:effective>2022-11-23T10:47:00-07:00</cap:effective>
-<cap:expires>2022-11-26T00:00:00-07:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Future</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Possible</cap:certainty>
-<cap:areaDesc>Chaves County Plains; De Baca County; Eastern Lincoln County; South Central Highlands; South Central Mountains; Southwest Chaves County; Upper Tularosa Valley</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>035005 035011 035027 035053 035057</value>
-<valueName>UGC</valueName>
-<value>NMZ224 NMZ225 NMZ226 NMZ237 NMZ238 NMZ239 NMZ240</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.EXA.KABQ.WS.A.0006.221125T0100Z-221126T0700Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=NM126418DD212C.WinterStormWatch.126419094EF0NM.ABQWSWABQ.2d8be76d2265b29e08895b98286051f5</id>
-<updated>2022-11-23T10:47:00-07:00</updated>
-<published>2022-11-23T10:47:00-07:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Winter Storm Watch issued November 23 at 10:47AM MST until November 26 at 12:00AM MST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=NM126418DD212C.WinterStormWatch.126419094EF0NM.ABQWSWABQ.2d8be76d2265b29e08895b98286051f5"/>
-<summary>...WINTER STORM WATCH REMAINS IN EFFECT FROM THURSDAY EVENING THROUGH FRIDAY EVENING... * WHAT...Heavy snow and blowing snow possible. Total snow accumulations in excess of 4 inches possible. Winds could gust as high as 35 mph. * WHERE...Curry County, Quay County, and Roosevelt County.</summary>
-<cap:event>Winter Storm Watch</cap:event>
-<cap:effective>2022-11-23T10:47:00-07:00</cap:effective>
-<cap:expires>2022-11-26T00:00:00-07:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Future</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Possible</cap:certainty>
-<cap:areaDesc>Curry County; Quay County; Roosevelt County</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>035009 035037 035041</value>
-<valueName>UGC</valueName>
-<value>NMZ234 NMZ235 NMZ236</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KABQ.WS.A.0006.221125T0100Z-221126T0700Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -1867,6 +1899,38 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value>/O.CON.KVEF.WI.Y.0039.221124T0400Z-221125T0200Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=OR126418DD9274.WindAdvisory.126418FB1E20OR.PDTNPWPDT.20b79af4974632e3627aa648741b8acc</id>
+<updated>2022-11-23T12:37:00-08:00</updated>
+<published>2022-11-23T12:37:00-08:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Wind Advisory issued November 23 at 12:37PM PST until November 25 at 6:00AM PST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=OR126418DD9274.WindAdvisory.126418FB1E20OR.PDTNPWPDT.20b79af4974632e3627aa648741b8acc"/>
+<summary>...WIND ADVISORY IN EFFECT FROM NOON THURSDAY TO 6 AM PST FRIDAY... * WHAT...South winds 25 to 35 mph with gusts up to 55 mph expected. * WHERE...Grande Ronde Valley. * WHEN...From noon Thursday to 6 AM PST Friday.</summary>
+<cap:event>Wind Advisory</cap:event>
+<cap:effective>2022-11-23T12:37:00-08:00</cap:effective>
+<cap:expires>2022-11-25T06:00:00-08:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Grande Ronde Valley</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>041061</value>
+<valueName>UGC</valueName>
+<value>ORZ049</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.NEW.KPDT.WI.Y.0034.221124T2000Z-221125T1400Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -2613,6 +2677,38 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=WA126418DD9274.AirStagnationAdvisory.126418FBBA60WA.PDTNPWPDT.e4bb80b86bc3d07b276b70ddb5655ca4</id>
+<updated>2022-11-23T12:37:00-08:00</updated>
+<published>2022-11-23T12:37:00-08:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Air Stagnation Advisory issued November 23 at 12:37PM PST until November 25 at 10:00AM PST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=WA126418DD9274.AirStagnationAdvisory.126418FBBA60WA.PDTNPWPDT.e4bb80b86bc3d07b276b70ddb5655ca4"/>
+<summary>...AIR STAGNATION ADVISORY REMAINS IN EFFECT UNTIL 10 AM PST FRIDAY... * WHAT...Poor air quality. * WHERE...Yakima Valley. * WHEN...Until 10 AM PST Friday. * IMPACTS...Poor air quality may cause issues for people with</summary>
+<cap:event>Air Stagnation Advisory</cap:event>
+<cap:effective>2022-11-23T12:37:00-08:00</cap:effective>
+<cap:expires>2022-11-25T10:00:00-08:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Yakima Valley</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>053077</value>
+<valueName>UGC</valueName>
+<value>WAZ027</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KPDT.AS.Y.0002.000000T0000Z-221125T1800Z/</value>
+</cap:parameter>
+</entry>
+<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=WA126418DBFE28.BeachHazardsStatement.126418F9E5A0WA.PQRCFWPQR.309d49d94d11fff477c8649342f31442</id>
 <updated>2022-11-23T02:02:00-08:00</updated>
 <published>2022-11-23T02:02:00-08:00</published>
@@ -2642,38 +2738,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value>/O.CON.KPQR.BH.S.0009.221124T2000Z-221125T0600Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=WA126418DB4C6C.AirStagnationAdvisory.126418FBBA60WA.PDTNPWPDT.e4bb80b86bc3d07b276b70ddb5655ca4</id>
-<updated>2022-11-22T21:47:00-08:00</updated>
-<published>2022-11-22T21:47:00-08:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Air Stagnation Advisory issued November 22 at 9:47PM PST until November 25 at 10:00AM PST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=WA126418DB4C6C.AirStagnationAdvisory.126418FBBA60WA.PDTNPWPDT.e4bb80b86bc3d07b276b70ddb5655ca4"/>
-<summary>...AIR STAGNATION ADVISORY REMAINS IN EFFECT UNTIL 10 AM PST FRIDAY... * WHAT...Poor air quality. * WHERE...Yakima Valley. * WHEN...Until 10 AM PST Friday. * IMPACTS...Poor air quality may cause issues for people with</summary>
-<cap:event>Air Stagnation Advisory</cap:event>
-<cap:effective>2022-11-22T21:47:00-08:00</cap:effective>
-<cap:expires>2022-11-25T10:00:00-08:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Yakima Valley</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>053077</value>
-<valueName>UGC</valueName>
-<value>WAZ027</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KPDT.AS.Y.0002.000000T0000Z-221125T1800Z/</value>
 </cap:parameter>
 </entry>
 <entry>
