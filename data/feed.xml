@@ -16,16 +16,48 @@ xmlns = 'http://www.w3.org/2005/Atom'
 xmlns:cap = 'urn:oasis:names:tc:emergency:cap:1.1'
 xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 >
-<!-- http-date = Sat, 26 Nov 2022 11:18:00 GMT -->
+<!-- http-date = Sat, 26 Nov 2022 12:01:00 GMT -->
 <id>https://alerts.weather.gov/cap/us.php?x=0</id>
 <logo>http://alerts.weather.gov/images/xml_logo.gif</logo>
 <generator>NWS CAP Server</generator>
-<updated>2022-11-26T05:18:00-06:00</updated>
+<updated>2022-11-26T05:01:00-07:00</updated>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
 <title>Current Watches, Warnings and Advisories for the United States Issued by the National Weather Service</title>
 <link href="https://alerts.weather.gov/cap/us.php?x=0"/>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=AK12641909FFE4.WinterWeatherAdvisory.12641926C200AK.AFGWSWAFG.443c91ed24b85096dc5e6a56c8c8f6e7</id>
+<updated>2022-11-26T02:53:00-09:00</updated>
+<published>2022-11-26T02:53:00-09:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Winter Weather Advisory issued November 26 at 2:53AM AKST until November 27 at 3:00PM AKST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=AK12641909FFE4.WinterWeatherAdvisory.12641926C200AK.AFGWSWAFG.443c91ed24b85096dc5e6a56c8c8f6e7"/>
+<summary>...WINTER WEATHER ADVISORY REMAINS IN EFFECT UNTIL 3 PM AKST SUNDAY... * WHAT...Snow and blowing snow expected. Additional snow accumulations of 2 to 5 inches is expected. Winds gusting as high as 30 mph may reduce visibilities down to half mile or less at times.</summary>
+<cap:event>Winter Weather Advisory</cap:event>
+<cap:effective>2022-11-26T02:53:00-09:00</cap:effective>
+<cap:expires>2022-11-27T15:00:00-09:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Eastern Alaska Range</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>002068 002240</value>
+<valueName>UGC</valueName>
+<value>AKZ226</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.PAFG.WW.Y.0096.000000T0000Z-221128T0000Z/</value>
+</cap:parameter>
+</entry>
 <entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=AK1264190910D4.WinterWeatherAdvisory.1264190A8770AK.AJKWSWAJK.9fbd7df82ca3e41505ace8f2adfa0893</id>
 <updated>2022-11-25T20:41:00-09:00</updated>
@@ -56,38 +88,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value>/O.CON.PAJK.WW.Y.0031.000000T0000Z-221126T1500Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=AK126418FC356C.WinterWeatherAdvisory.12641926C200AK.AFGWSWAFG.443c91ed24b85096dc5e6a56c8c8f6e7</id>
-<updated>2022-11-25T12:15:00-09:00</updated>
-<published>2022-11-25T12:15:00-09:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Winter Weather Advisory issued November 25 at 12:15PM AKST until November 27 at 3:00PM AKST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=AK126418FC356C.WinterWeatherAdvisory.12641926C200AK.AFGWSWAFG.443c91ed24b85096dc5e6a56c8c8f6e7"/>
-<summary>...WINTER WEATHER ADVISORY IN EFFECT UNTIL 3 PM AKST SUNDAY... * WHAT...Snow and blowing snow expected. Additional snow accumulations of 4 to 8 inches is expected. Winds gusting as high as 40 mph may reduce visibilities down to half mile or less at times. * WHERE...Along the Richardson Highway.</summary>
-<cap:event>Winter Weather Advisory</cap:event>
-<cap:effective>2022-11-25T12:15:00-09:00</cap:effective>
-<cap:expires>2022-11-27T15:00:00-09:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Eastern Alaska Range</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>002068 002240</value>
-<valueName>UGC</valueName>
-<value>AKZ226</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.NEW.PAFG.WW.Y.0096.221125T2115Z-221128T0000Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -900,17 +900,17 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=GA12641909ACB0.DenseFogAdvisory.1264190A6060GA.FFCNPWFFC.a0ce9bdabcca2aaa98e7d7e0e85e3c59</id>
-<updated>2022-11-26T04:40:00-05:00</updated>
-<published>2022-11-26T04:40:00-05:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=GA12641909FF80.DenseFogAdvisory.1264190A6060GA.FFCNPWFFC.dee17841b22ebed09c00dcbf8a0ef8d1</id>
+<updated>2022-11-26T06:52:00-05:00</updated>
+<published>2022-11-26T06:52:00-05:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Dense Fog Advisory issued November 26 at 4:40AM EST until November 26 at 9:00AM EST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=GA12641909ACB0.DenseFogAdvisory.1264190A6060GA.FFCNPWFFC.a0ce9bdabcca2aaa98e7d7e0e85e3c59"/>
-<summary>...DENSE FOG ADVISORY IN EFFECT UNTIL 9 AM EST THIS MORNING... * WHAT...Visibility one quarter mile or less in dense fog. * WHERE...Portions of central, north central, northeast and west central Georgia. * WHEN...Until 9 AM EST this morning. * IMPACTS...Hazardous driving conditions due to low visibility.</summary>
+<title>Dense Fog Advisory issued November 26 at 6:52AM EST until November 26 at 9:00AM EST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=GA12641909FF80.DenseFogAdvisory.1264190A6060GA.FFCNPWFFC.dee17841b22ebed09c00dcbf8a0ef8d1"/>
+<summary>...DENSE FOG ADVISORY REMAINS IN EFFECT UNTIL 9 AM EST THIS MORNING... * WHAT...Visibility one quarter mile or less in dense fog. * WHERE...Portions of central, north central, northeast and west central Georgia. * WHEN...Until 9 AM EST this morning.</summary>
 <cap:event>Dense Fog Advisory</cap:event>
-<cap:effective>2022-11-26T04:40:00-05:00</cap:effective>
+<cap:effective>2022-11-26T06:52:00-05:00</cap:effective>
 <cap:expires>2022-11-26T09:00:00-05:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
@@ -918,49 +918,17 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:urgency>Expected</cap:urgency>
 <cap:severity>Minor</cap:severity>
 <cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Barrow; Clayton; Coweta; Crisp; Dodge; Dooly; Fayette; Heard; Henry; Jackson; Newton; Rockdale; Stewart; Sumter; Walton; Webster; Wilcox</cap:areaDesc>
+<cap:areaDesc>Barrow; Bibb; Butts; Chattahoochee; Clayton; Coweta; Crawford; Crisp; Dooly; Fayette; Harris; Heard; Henry; Houston; Jackson; Lamar; Macon; Marion; Meriwether; Monroe; Muscogee; Newton; Peach; Pike; Rockdale; Schley; Spalding; Stewart; Sumter; Talbot; Taylor; Troup; Upson; Walton; Webster</cap:areaDesc>
 <cap:polygon></cap:polygon>
 <cap:geocode>
 <valueName>FIPS6</valueName>
-<value>013013 013063 013077 013081 013091 013093 013113 013149 013151 013157 013217 013247 013259 013261 013297 013307 013315</value>
+<value>013013 013021 013035 013053 013063 013077 013079 013081 013093 013113 013145 013149 013151 013153 013157 013171 013193 013197 013199 013207 013215 013217 013225 013231 013247 013249 013255 013259 013261 013263 013269 013285 013293 013297 013307</value>
 <valueName>UGC</valueName>
-<value>GAZ025 GAZ035 GAZ046 GAZ047 GAZ048 GAZ052 GAZ053 GAZ054 GAZ055 GAZ057 GAZ102 GAZ103 GAZ104 GAZ105 GAZ106 GAZ108 GAZ109</value>
+<value>GAZ025 GAZ035 GAZ046 GAZ047 GAZ048 GAZ052 GAZ053 GAZ054 GAZ055 GAZ056 GAZ057 GAZ058 GAZ066 GAZ067 GAZ068 GAZ069 GAZ070 GAZ071 GAZ078 GAZ079 GAZ080 GAZ081 GAZ082 GAZ089 GAZ090 GAZ091 GAZ092 GAZ093 GAZ094 GAZ095 GAZ102 GAZ103 GAZ104 GAZ105 GAZ106</value>
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
-<value>/O.EXB.KFFC.FG.Y.0009.000000T0000Z-221126T1400Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=GA12641909ACB0.DenseFogAdvisory.1264190A6060GA.FFCNPWFFC.5c500da83f4de0a63e0c134b2bfb85e8</id>
-<updated>2022-11-26T04:40:00-05:00</updated>
-<published>2022-11-26T04:40:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Dense Fog Advisory issued November 26 at 4:40AM EST until November 26 at 9:00AM EST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=GA12641909ACB0.DenseFogAdvisory.1264190A6060GA.FFCNPWFFC.5c500da83f4de0a63e0c134b2bfb85e8"/>
-<summary>...DENSE FOG ADVISORY NOW IN EFFECT UNTIL 9 AM EST THIS MORNING... * WHAT...Visibility one quarter mile or less in dense fog. * WHERE...Portions of central, east central, north central, northeast and west central Georgia. * WHEN...Until 9 AM EST this morning. * IMPACTS...Hazardous driving conditions due to low visibility.</summary>
-<cap:event>Dense Fog Advisory</cap:event>
-<cap:effective>2022-11-26T04:40:00-05:00</cap:effective>
-<cap:expires>2022-11-26T09:00:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Baldwin; Bibb; Bleckley; Butts; Chattahoochee; Clarke; Crawford; Glascock; Greene; Hancock; Harris; Houston; Jasper; Jefferson; Johnson; Jones; Lamar; Laurens; Macon; Marion; Meriwether; Monroe; Morgan; Muscogee; Oconee; Peach; Pike; Pulaski; Putnam; Schley; Spalding; Talbot; Taylor; Troup; Twiggs; Upson; Washington; Wilkinson</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>013009 013021 013023 013035 013053 013059 013079 013125 013133 013141 013145 013153 013159 013163 013167 013169 013171 013175 013193 013197 013199 013207 013211 013215 013219 013225 013231 013235 013237 013249 013255 013263 013269 013285 013289 013293 013303 013319</value>
-<valueName>UGC</valueName>
-<value>GAZ036 GAZ037 GAZ049 GAZ050 GAZ056 GAZ058 GAZ059 GAZ060 GAZ061 GAZ066 GAZ067 GAZ068 GAZ069 GAZ070 GAZ071 GAZ072 GAZ073 GAZ074 GAZ075 GAZ076 GAZ078 GAZ079 GAZ080 GAZ081 GAZ082 GAZ083 GAZ084 GAZ085 GAZ089 GAZ090 GAZ091 GAZ092 GAZ093 GAZ094 GAZ095 GAZ096 GAZ097 GAZ107</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.EXT.KFFC.FG.Y.0009.000000T0000Z-221126T1400Z/</value>
+<value>/O.CON.KFFC.FG.Y.0009.000000T0000Z-221126T1400Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -1028,6 +996,72 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=ID1264190A12A4.WinterWeatherAdvisory.1264190A8770ID.MSOWSWMSO.d164ec26cabe4e8b48c4a9966aa32dc3</id>
+<updated>2022-11-26T05:01:00-07:00</updated>
+<published>2022-11-26T05:01:00-07:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Winter Weather Advisory issued November 26 at 5:01AM MST until November 26 at 8:00AM MST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=ID1264190A12A4.WinterWeatherAdvisory.1264190A8770ID.MSOWSWMSO.d164ec26cabe4e8b48c4a9966aa32dc3"/>
+<summary>...WINTER WEATHER ADVISORY REMAINS IN EFFECT UNTIL 7 AM PST THIS MORNING... ...WINTER STORM WATCH REMAINS IN EFFECT FROM LATE TONIGHT THROUGH SUNDAY AFTERNOON... * WHAT...For the Winter Weather Advisory, snow. Additional snow accumulations of up to one inch. For the Winter Storm Watch,</summary>
+<cap:event>Winter Weather Advisory</cap:event>
+<cap:effective>2022-11-26T05:01:00-07:00</cap:effective>
+<cap:expires>2022-11-26T08:00:00-07:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Northern Clearwater Mountains; Southern Clearwater Mountains</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>016035 016049</value>
+<valueName>UGC</valueName>
+<value>IDZ005 IDZ006</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KMSO.WW.Y.0047.000000T0000Z-221126T1500Z/
+/O.CON.KMSO.WS.A.0011.221127T1200Z-221128T0000Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=ID1264190A12A4.WinterStormWatch.12641926C200ID.MSOWSWMSO.cd81afbf2eee65ed4a7a7d604965433e</id>
+<updated>2022-11-26T05:01:00-07:00</updated>
+<published>2022-11-26T05:01:00-07:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Winter Storm Watch issued November 26 at 5:01AM MST until November 27 at 5:00PM MST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=ID1264190A12A4.WinterStormWatch.12641926C200ID.MSOWSWMSO.cd81afbf2eee65ed4a7a7d604965433e"/>
+<summary>...WINTER WEATHER ADVISORY REMAINS IN EFFECT UNTIL 7 AM PST THIS MORNING... ...WINTER STORM WATCH REMAINS IN EFFECT FROM LATE TONIGHT THROUGH SUNDAY AFTERNOON... * WHAT...For the Winter Weather Advisory, snow. Additional snow accumulations of up to one inch. For the Winter Storm Watch,</summary>
+<cap:event>Winter Storm Watch</cap:event>
+<cap:effective>2022-11-26T05:01:00-07:00</cap:effective>
+<cap:expires>2022-11-27T17:00:00-07:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Future</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Possible</cap:certainty>
+<cap:areaDesc>Northern Clearwater Mountains; Southern Clearwater Mountains</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>016035 016049</value>
+<valueName>UGC</valueName>
+<value>IDZ005 IDZ006</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KMSO.WW.Y.0047.000000T0000Z-221126T1500Z/
+/O.CON.KMSO.WS.A.0011.221127T1200Z-221128T0000Z/</value>
+</cap:parameter>
+</entry>
+<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=ID12641909D0A0.WinterStormWatch.12641927AC60ID.OTXWSWOTX.d1d3874b6e07e78a4d21066e1f9a1594</id>
 <updated>2022-11-26T03:32:00-07:00</updated>
 <published>2022-11-26T03:32:00-07:00</published>
@@ -1058,104 +1092,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <valueName>VTEC</valueName>
 <value>/O.CAN.KOTX.WW.Y.0032.000000T0000Z-221126T1500Z/
 /O.NEW.KOTX.WS.A.0009.221127T1200Z-221128T0600Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=ID126418FC0A74.WinterWeatherAdvisory.1264190A8770ID.MSOWSWMSO.d164ec26cabe4e8b48c4a9966aa32dc3</id>
-<updated>2022-11-25T13:05:00-07:00</updated>
-<published>2022-11-25T13:05:00-07:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Winter Weather Advisory issued November 25 at 1:05PM MST until November 26 at 8:00AM MST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=ID126418FC0A74.WinterWeatherAdvisory.1264190A8770ID.MSOWSWMSO.d164ec26cabe4e8b48c4a9966aa32dc3"/>
-<summary>...WINTER WEATHER ADVISORY REMAINS IN EFFECT FROM 4 PM THIS AFTERNOON TO 7 AM PST SATURDAY... ...WINTER STORM WATCH IN EFFECT FROM LATE SATURDAY NIGHT THROUGH SUNDAY AFTERNOON... * WHAT...For the Winter Weather Advisory, snow expected. Total snow accumulations of 2 to 4 inches. 1 to 2 inches for</summary>
-<cap:event>Winter Weather Advisory</cap:event>
-<cap:effective>2022-11-25T13:05:00-07:00</cap:effective>
-<cap:expires>2022-11-26T08:00:00-07:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Northern Clearwater Mountains; Southern Clearwater Mountains</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>016035 016049</value>
-<valueName>UGC</valueName>
-<value>IDZ005 IDZ006</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.NEW.KMSO.WS.A.0011.221127T1200Z-221128T0000Z/
-/O.CON.KMSO.WW.Y.0047.221126T0000Z-221126T1500Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=ID126418FC0A74.WinterStormWatch.12641926C200ID.MSOWSWMSO.cd81afbf2eee65ed4a7a7d604965433e</id>
-<updated>2022-11-25T13:05:00-07:00</updated>
-<published>2022-11-25T13:05:00-07:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Winter Storm Watch issued November 25 at 1:05PM MST until November 27 at 5:00PM MST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=ID126418FC0A74.WinterStormWatch.12641926C200ID.MSOWSWMSO.cd81afbf2eee65ed4a7a7d604965433e"/>
-<summary>...WINTER WEATHER ADVISORY REMAINS IN EFFECT FROM 4 PM THIS AFTERNOON TO 7 AM PST SATURDAY... ...WINTER STORM WATCH IN EFFECT FROM LATE SATURDAY NIGHT THROUGH SUNDAY AFTERNOON... * WHAT...For the Winter Weather Advisory, snow expected. Total snow accumulations of 2 to 4 inches. 1 to 2 inches for</summary>
-<cap:event>Winter Storm Watch</cap:event>
-<cap:effective>2022-11-25T13:05:00-07:00</cap:effective>
-<cap:expires>2022-11-27T17:00:00-07:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Future</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Possible</cap:certainty>
-<cap:areaDesc>Northern Clearwater Mountains; Southern Clearwater Mountains</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>016035 016049</value>
-<valueName>UGC</valueName>
-<value>IDZ005 IDZ006</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.NEW.KMSO.WS.A.0011.221127T1200Z-221128T0000Z/
-/O.CON.KMSO.WW.Y.0047.221126T0000Z-221126T1500Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=ID126418FBF23C.AirStagnationAdvisory.1264190A1240ID.BOINPWBOI.e42e5627a126813c4b29063ec06e0490</id>
-<updated>2022-11-25T12:43:00-07:00</updated>
-<published>2022-11-25T12:43:00-07:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Air Stagnation Advisory issued November 25 at 12:43PM MST until November 26 at 5:00AM MST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=ID126418FBF23C.AirStagnationAdvisory.1264190A1240ID.BOINPWBOI.e42e5627a126813c4b29063ec06e0490"/>
-<summary>...AIR STAGNATION ADVISORY REMAINS IN EFFECT UNTIL 5 AM MST SATURDAY... * WHAT...An extended period of stagnant air, with light winds and little vertical mixing. * WHERE...Portions of southwest and west central Idaho and northeast and southeast Oregon.</summary>
-<cap:event>Air Stagnation Advisory</cap:event>
-<cap:effective>2022-11-25T12:43:00-07:00</cap:effective>
-<cap:expires>2022-11-26T05:00:00-07:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Boise Mountains; Camas Prairie; Lower Treasure Valley; Owyhee Mountains; Southwest Highlands; Upper Treasure Valley; Upper Weiser River; West Central Mountains</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>016001 016003 016015 016025 016027 016039 016045 016073 016075 016085 016087</value>
-<valueName>UGC</valueName>
-<value>IDZ011 IDZ012 IDZ013 IDZ014 IDZ015 IDZ028 IDZ029 IDZ033</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KBOI.AS.Y.0003.000000T0000Z-221126T1200Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -1928,6 +1864,232 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=MT1264190A12A4.WinterWeatherAdvisory.1264190A8770MT.MSOWSWMSO.683eb3a6b5d7db1ec7c8d84dd0560864</id>
+<updated>2022-11-26T05:01:00-07:00</updated>
+<published>2022-11-26T05:01:00-07:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Winter Weather Advisory issued November 26 at 5:01AM MST until November 26 at 8:00AM MST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MT1264190A12A4.WinterWeatherAdvisory.1264190A8770MT.MSOWSWMSO.683eb3a6b5d7db1ec7c8d84dd0560864"/>
+<summary>...WINTER WEATHER ADVISORY REMAINS IN EFFECT UNTIL 8 AM MST THIS MORNING... * WHAT...Freezing rain. Additional ice accumulations of a light glaze. * WHERE...Highway 2 Kalispell to Libby, Highway 37 Eureka to Libby, Highway 56 Bull Lake Road, and Highway 93 Eureka to</summary>
+<cap:event>Winter Weather Advisory</cap:event>
+<cap:effective>2022-11-26T05:01:00-07:00</cap:effective>
+<cap:expires>2022-11-26T08:00:00-07:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Kootenai, Cabinet Region</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>030029 030053 030089</value>
+<valueName>UGC</valueName>
+<value>MTZ001</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KMSO.WW.Y.0047.000000T0000Z-221126T1500Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=MT1264190A12A4.WinterWeatherAdvisory.1264190A8770MT.MSOWSWMSO.53317a25b8cefb961fd7b2e89d61932e</id>
+<updated>2022-11-26T05:01:00-07:00</updated>
+<published>2022-11-26T05:01:00-07:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Winter Weather Advisory issued November 26 at 5:01AM MST until November 26 at 8:00AM MST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MT1264190A12A4.WinterWeatherAdvisory.1264190A8770MT.MSOWSWMSO.53317a25b8cefb961fd7b2e89d61932e"/>
+<summary>...WINTER WEATHER ADVISORY REMAINS IN EFFECT UNTIL 8 AM MST THIS MORNING... * WHAT...Mixed precipitation. Additional snow accumulations of up to one inch and ice accumulations of a light glaze. * WHERE...Bad Rock Canyon, Essex, Highway 83 Bigfork to Swan Lake, Marias Pass, and Polebridge.</summary>
+<cap:event>Winter Weather Advisory</cap:event>
+<cap:effective>2022-11-26T05:01:00-07:00</cap:effective>
+<cap:expires>2022-11-26T08:00:00-07:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>West Glacier Region</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>030029 030047</value>
+<valueName>UGC</valueName>
+<value>MTZ002</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KMSO.WW.Y.0047.000000T0000Z-221126T1500Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=MT1264190A12A4.WinterWeatherAdvisory.1264190A8770MT.MSOWSWMSO.50c5be88aad6be469cc27e9a0b2c369a</id>
+<updated>2022-11-26T05:01:00-07:00</updated>
+<published>2022-11-26T05:01:00-07:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Winter Weather Advisory issued November 26 at 5:01AM MST until November 26 at 8:00AM MST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MT1264190A12A4.WinterWeatherAdvisory.1264190A8770MT.MSOWSWMSO.50c5be88aad6be469cc27e9a0b2c369a"/>
+<summary>...WINTER WEATHER ADVISORY REMAINS IN EFFECT UNTIL 8 AM MST THIS MORNING... * WHAT...Mixed precipitation. Additional snow accumulations of up to one inch and ice accumulations of a light glaze. * WHERE...Flathead Lake, Flathead Valley, Mission Valley, and Polson.</summary>
+<cap:event>Winter Weather Advisory</cap:event>
+<cap:effective>2022-11-26T05:01:00-07:00</cap:effective>
+<cap:expires>2022-11-26T08:00:00-07:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Flathead, Mission Valleys</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>030029 030047 030089</value>
+<valueName>UGC</valueName>
+<value>MTZ003</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KMSO.WW.Y.0047.000000T0000Z-221126T1500Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=MT1264190A12A4.WinterWeatherAdvisory.1264190A8770MT.MSOWSWMSO.89a95397166453d17e8c15a5fd57fb29</id>
+<updated>2022-11-26T05:01:00-07:00</updated>
+<published>2022-11-26T05:01:00-07:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Winter Weather Advisory issued November 26 at 5:01AM MST until November 26 at 8:00AM MST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MT1264190A12A4.WinterWeatherAdvisory.1264190A8770MT.MSOWSWMSO.89a95397166453d17e8c15a5fd57fb29"/>
+<summary>...WINTER WEATHER ADVISORY REMAINS IN EFFECT UNTIL 8 AM MST THIS MORNING... ...WINTER STORM WATCH REMAINS IN EFFECT FROM LATE TONIGHT THROUGH SUNDAY AFTERNOON... * WHAT...For the Winter Weather Advisory, mixed precipitation. Additional snow accumulations of up to one inch and ice</summary>
+<cap:event>Winter Weather Advisory</cap:event>
+<cap:effective>2022-11-26T05:01:00-07:00</cap:effective>
+<cap:expires>2022-11-26T08:00:00-07:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Lower Clark Fork Region</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>030061 030063 030089</value>
+<valueName>UGC</valueName>
+<value>MTZ004</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KMSO.WW.Y.0047.000000T0000Z-221126T1500Z/
+/O.CON.KMSO.WS.A.0011.221127T1200Z-221128T0000Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=MT1264190A12A4.WinterWeatherAdvisory.1264190A8770MT.MSOWSWMSO.cc05eab37422c56139d9abfef52499db</id>
+<updated>2022-11-26T05:01:00-07:00</updated>
+<published>2022-11-26T05:01:00-07:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Winter Weather Advisory issued November 26 at 5:01AM MST until November 26 at 8:00AM MST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MT1264190A12A4.WinterWeatherAdvisory.1264190A8770MT.MSOWSWMSO.cc05eab37422c56139d9abfef52499db"/>
+<summary>...WINTER WEATHER ADVISORY REMAINS IN EFFECT UNTIL 8 AM MST THIS MORNING... * WHAT...Snow. Additional snow accumulations of up to one inch. * WHERE...Bitterroot/Sapphire Mountains. * WHEN...Until 8 AM MST this morning. * IMPACTS...Plan on slippery road conditions.</summary>
+<cap:event>Winter Weather Advisory</cap:event>
+<cap:effective>2022-11-26T05:01:00-07:00</cap:effective>
+<cap:expires>2022-11-26T08:00:00-07:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Bitterroot, Sapphire Mountains</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>030039 030081</value>
+<valueName>UGC</valueName>
+<value>MTZ006</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KMSO.WW.Y.0047.000000T0000Z-221126T1500Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=MT1264190A12A4.WinterWeatherAdvisory.1264190A8770MT.MSOWSWMSO.4aae11be2983ff94af74546e45bd87e4</id>
+<updated>2022-11-26T05:01:00-07:00</updated>
+<published>2022-11-26T05:01:00-07:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Winter Weather Advisory issued November 26 at 5:01AM MST until November 26 at 8:00AM MST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MT1264190A12A4.WinterWeatherAdvisory.1264190A8770MT.MSOWSWMSO.4aae11be2983ff94af74546e45bd87e4"/>
+<summary>...WINTER WEATHER ADVISORY REMAINS IN EFFECT UNTIL 8 AM MST THIS MORNING... * WHAT...Snow. Additional snow accumulations of up to one inch. * WHERE...Highway 200 Bonner to Greenough, Highway 83 Seeley Lake to Condon, and I-90 East Missoula to Bearmouth. * WHEN...Until 8 AM MST this morning.</summary>
+<cap:event>Winter Weather Advisory</cap:event>
+<cap:effective>2022-11-26T05:01:00-07:00</cap:effective>
+<cap:expires>2022-11-26T08:00:00-07:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Potomac, Seeley Lake Region</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>030063 030077</value>
+<valueName>UGC</valueName>
+<value>MTZ043</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KMSO.WW.Y.0047.000000T0000Z-221126T1500Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=MT1264190A12A4.WinterStormWatch.12641926C200MT.MSOWSWMSO.7a3bd1ce57d1ceb57969c17192d50351</id>
+<updated>2022-11-26T05:01:00-07:00</updated>
+<published>2022-11-26T05:01:00-07:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Winter Storm Watch issued November 26 at 5:01AM MST until November 27 at 5:00PM MST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MT1264190A12A4.WinterStormWatch.12641926C200MT.MSOWSWMSO.7a3bd1ce57d1ceb57969c17192d50351"/>
+<summary>...WINTER WEATHER ADVISORY REMAINS IN EFFECT UNTIL 8 AM MST THIS MORNING... ...WINTER STORM WATCH REMAINS IN EFFECT FROM LATE TONIGHT THROUGH SUNDAY AFTERNOON... * WHAT...For the Winter Weather Advisory, mixed precipitation. Additional snow accumulations of up to one inch and ice</summary>
+<cap:event>Winter Storm Watch</cap:event>
+<cap:effective>2022-11-26T05:01:00-07:00</cap:effective>
+<cap:expires>2022-11-27T17:00:00-07:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Future</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Possible</cap:certainty>
+<cap:areaDesc>Lower Clark Fork Region</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>030061 030063 030089</value>
+<valueName>UGC</valueName>
+<value>MTZ004</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KMSO.WW.Y.0047.000000T0000Z-221126T1500Z/
+/O.CON.KMSO.WS.A.0011.221127T1200Z-221128T0000Z/</value>
+</cap:parameter>
+</entry>
+<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=MT126419098474.WinterWeatherAdvisory.1264190A8770MT.TFXWSWTFX.b9d3b8d3e66fb8a9d073aa6b07179a9c</id>
 <updated>2022-11-26T01:37:00-07:00</updated>
 <published>2022-11-26T01:37:00-07:00</published>
@@ -2220,232 +2382,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=MT126418FC0A74.WinterWeatherAdvisory.1264190A8770MT.MSOWSWMSO.683eb3a6b5d7db1ec7c8d84dd0560864</id>
-<updated>2022-11-25T13:05:00-07:00</updated>
-<published>2022-11-25T13:05:00-07:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Winter Weather Advisory issued November 25 at 1:05PM MST until November 26 at 8:00AM MST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MT126418FC0A74.WinterWeatherAdvisory.1264190A8770MT.MSOWSWMSO.683eb3a6b5d7db1ec7c8d84dd0560864"/>
-<summary>...WINTER WEATHER ADVISORY REMAINS IN EFFECT FROM 5 PM THIS AFTERNOON TO 8 AM MST SATURDAY... * WHAT...Mixed precipitation expected. Total snow accumulations of up to two inches and ice accumulations of a light glaze. * WHERE...Highway 2 Kalispell to Libby, Highway 37 Eureka to Libby, Highway 56 Bull Lake Road, and Highway 93 Eureka to</summary>
-<cap:event>Winter Weather Advisory</cap:event>
-<cap:effective>2022-11-25T13:05:00-07:00</cap:effective>
-<cap:expires>2022-11-26T08:00:00-07:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Kootenai, Cabinet Region</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>030029 030053 030089</value>
-<valueName>UGC</valueName>
-<value>MTZ001</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KMSO.WW.Y.0047.221126T0000Z-221126T1500Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=MT126418FC0A74.WinterWeatherAdvisory.1264190A8770MT.MSOWSWMSO.53317a25b8cefb961fd7b2e89d61932e</id>
-<updated>2022-11-25T13:05:00-07:00</updated>
-<published>2022-11-25T13:05:00-07:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Winter Weather Advisory issued November 25 at 1:05PM MST until November 26 at 8:00AM MST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MT126418FC0A74.WinterWeatherAdvisory.1264190A8770MT.MSOWSWMSO.53317a25b8cefb961fd7b2e89d61932e"/>
-<summary>...WINTER WEATHER ADVISORY REMAINS IN EFFECT FROM 5 PM THIS AFTERNOON TO 8 AM MST SATURDAY... * WHAT...Mixed precipitation expected. Total snow accumulations of 1 to 2 inches and ice accumulations of a light glaze. 2 to 4 inches over Marias Pass. * WHERE...Bad Rock Canyon, Essex, Highway 83 Bigfork to Swan</summary>
-<cap:event>Winter Weather Advisory</cap:event>
-<cap:effective>2022-11-25T13:05:00-07:00</cap:effective>
-<cap:expires>2022-11-26T08:00:00-07:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>West Glacier Region</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>030029 030047</value>
-<valueName>UGC</valueName>
-<value>MTZ002</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KMSO.WW.Y.0047.221126T0000Z-221126T1500Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=MT126418FC0A74.WinterWeatherAdvisory.1264190A8770MT.MSOWSWMSO.50c5be88aad6be469cc27e9a0b2c369a</id>
-<updated>2022-11-25T13:05:00-07:00</updated>
-<published>2022-11-25T13:05:00-07:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Winter Weather Advisory issued November 25 at 1:05PM MST until November 26 at 8:00AM MST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MT126418FC0A74.WinterWeatherAdvisory.1264190A8770MT.MSOWSWMSO.50c5be88aad6be469cc27e9a0b2c369a"/>
-<summary>...WINTER WEATHER ADVISORY IN EFFECT FROM 5 PM THIS AFTERNOON TO 8 AM MST SATURDAY... * WHAT...Mixed precipitation expected. Total snow accumulations of up to one inch and ice accumulations of a light glaze. * WHERE...Flathead Lake, Flathead Valley, Mission Valley, and Polson.</summary>
-<cap:event>Winter Weather Advisory</cap:event>
-<cap:effective>2022-11-25T13:05:00-07:00</cap:effective>
-<cap:expires>2022-11-26T08:00:00-07:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Flathead, Mission Valleys</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>030029 030047 030089</value>
-<valueName>UGC</valueName>
-<value>MTZ003</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.EXA.KMSO.WW.Y.0047.221126T0000Z-221126T1500Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=MT126418FC0A74.WinterWeatherAdvisory.1264190A8770MT.MSOWSWMSO.89a95397166453d17e8c15a5fd57fb29</id>
-<updated>2022-11-25T13:05:00-07:00</updated>
-<published>2022-11-25T13:05:00-07:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Winter Weather Advisory issued November 25 at 1:05PM MST until November 26 at 8:00AM MST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MT126418FC0A74.WinterWeatherAdvisory.1264190A8770MT.MSOWSWMSO.89a95397166453d17e8c15a5fd57fb29"/>
-<summary>...WINTER WEATHER ADVISORY REMAINS IN EFFECT FROM 5 PM THIS AFTERNOON TO 8 AM MST SATURDAY... ...WINTER STORM WATCH IN EFFECT FROM LATE SATURDAY NIGHT THROUGH SUNDAY AFTERNOON... * WHAT...For the Winter Weather Advisory, mixed precipitation expected. Total snow accumulations of 1 to 3 inches and ice</summary>
-<cap:event>Winter Weather Advisory</cap:event>
-<cap:effective>2022-11-25T13:05:00-07:00</cap:effective>
-<cap:expires>2022-11-26T08:00:00-07:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Lower Clark Fork Region</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>030061 030063 030089</value>
-<valueName>UGC</valueName>
-<value>MTZ004</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.NEW.KMSO.WS.A.0011.221127T1200Z-221128T0000Z/
-/O.CON.KMSO.WW.Y.0047.221126T0000Z-221126T1500Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=MT126418FC0A74.WinterWeatherAdvisory.1264190A8770MT.MSOWSWMSO.cc05eab37422c56139d9abfef52499db</id>
-<updated>2022-11-25T13:05:00-07:00</updated>
-<published>2022-11-25T13:05:00-07:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Winter Weather Advisory issued November 25 at 1:05PM MST until November 26 at 8:00AM MST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MT126418FC0A74.WinterWeatherAdvisory.1264190A8770MT.MSOWSWMSO.cc05eab37422c56139d9abfef52499db"/>
-<summary>...WINTER WEATHER ADVISORY IN EFFECT FROM 8 PM THIS EVENING TO 8 AM MST SATURDAY... * WHAT...Snow expected. Total snow accumulations of up to two inches. 2 to 4 inches over Lolo Pass. * WHERE...Lolo Pass, and Bitterroot/Sapphire Mountains. * WHEN...From 8 PM this evening to 8 AM MST Saturday.</summary>
-<cap:event>Winter Weather Advisory</cap:event>
-<cap:effective>2022-11-25T13:05:00-07:00</cap:effective>
-<cap:expires>2022-11-26T08:00:00-07:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Bitterroot, Sapphire Mountains</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>030039 030081</value>
-<valueName>UGC</valueName>
-<value>MTZ006</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.EXB.KMSO.WW.Y.0047.221126T0300Z-221126T1500Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=MT126418FC0A74.WinterWeatherAdvisory.1264190A8770MT.MSOWSWMSO.4aae11be2983ff94af74546e45bd87e4</id>
-<updated>2022-11-25T13:05:00-07:00</updated>
-<published>2022-11-25T13:05:00-07:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Winter Weather Advisory issued November 25 at 1:05PM MST until November 26 at 8:00AM MST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MT126418FC0A74.WinterWeatherAdvisory.1264190A8770MT.MSOWSWMSO.4aae11be2983ff94af74546e45bd87e4"/>
-<summary>...WINTER WEATHER ADVISORY IN EFFECT FROM 10 PM THIS EVENING TO 8 AM MST SATURDAY... * WHAT...Mixed precipitation expected. Total snow accumulations of 1 to 3 inches and ice accumulations of a light glaze. * WHERE...Highway 200 Bonner to Greenough, Highway 83 Seeley Lake to Condon, and I-90 East Missoula to Bearmouth.</summary>
-<cap:event>Winter Weather Advisory</cap:event>
-<cap:effective>2022-11-25T13:05:00-07:00</cap:effective>
-<cap:expires>2022-11-26T08:00:00-07:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Potomac, Seeley Lake Region</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>030063 030077</value>
-<valueName>UGC</valueName>
-<value>MTZ043</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.EXB.KMSO.WW.Y.0047.221126T0500Z-221126T1500Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=MT126418FC0A74.WinterStormWatch.12641926C200MT.MSOWSWMSO.7a3bd1ce57d1ceb57969c17192d50351</id>
-<updated>2022-11-25T13:05:00-07:00</updated>
-<published>2022-11-25T13:05:00-07:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Winter Storm Watch issued November 25 at 1:05PM MST until November 27 at 5:00PM MST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MT126418FC0A74.WinterStormWatch.12641926C200MT.MSOWSWMSO.7a3bd1ce57d1ceb57969c17192d50351"/>
-<summary>...WINTER WEATHER ADVISORY REMAINS IN EFFECT FROM 5 PM THIS AFTERNOON TO 8 AM MST SATURDAY... ...WINTER STORM WATCH IN EFFECT FROM LATE SATURDAY NIGHT THROUGH SUNDAY AFTERNOON... * WHAT...For the Winter Weather Advisory, mixed precipitation expected. Total snow accumulations of 1 to 3 inches and ice</summary>
-<cap:event>Winter Storm Watch</cap:event>
-<cap:effective>2022-11-25T13:05:00-07:00</cap:effective>
-<cap:expires>2022-11-27T17:00:00-07:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Future</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Possible</cap:certainty>
-<cap:areaDesc>Lower Clark Fork Region</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>030061 030063 030089</value>
-<valueName>UGC</valueName>
-<value>MTZ004</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.NEW.KMSO.WS.A.0011.221127T1200Z-221128T0000Z/
-/O.CON.KMSO.WW.Y.0047.221126T0000Z-221126T1500Z/</value>
-</cap:parameter>
-</entry>
-<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=NC126419099F04.CoastalFloodStatement.1264190AAE80NC.AKQCFWAKQ.088c14225bdff9e00e51d83bf28ec14e</id>
 <updated>2022-11-26T04:05:00-05:00</updated>
 <published>2022-11-26T04:05:00-05:00</published>
@@ -2671,6 +2607,38 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=OR12641909FB34.WinterStormWatch.126419360440OR.MFRWSWMFR.ab46f9769758a569026ed94aa0039658</id>
+<updated>2022-11-26T03:41:00-08:00</updated>
+<published>2022-11-26T03:41:00-08:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Winter Storm Watch issued November 26 at 3:41AM PST until November 28 at 4:00PM PST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=OR12641909FB34.WinterStormWatch.126419360440OR.MFRWSWMFR.ab46f9769758a569026ed94aa0039658"/>
+<summary>...WINTER STORM WATCH REMAINS IN EFFECT FROM SUNDAY EVENING THROUGH MONDAY AFTERNOON ABOVE 2500 FEET... * WHAT...Heavy snow and blowing snow possible above 2500 feet. Total snow accumulations of 3 to 8 inches possible, with up to a foot over higher peaks and ridges. Winds could gust as high as 50 mph.</summary>
+<cap:event>Winter Storm Watch</cap:event>
+<cap:effective>2022-11-26T03:41:00-08:00</cap:effective>
+<cap:expires>2022-11-28T16:00:00-08:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Future</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Possible</cap:certainty>
+<cap:areaDesc>Eastern Douglas County Foothills; Jackson County; Siskiyou Mountains and Southern Oregon Cascades; South Central Oregon Cascades</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>041019 041029 041035</value>
+<valueName>UGC</valueName>
+<value>ORZ025 ORZ026 ORZ027 ORZ028</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KMFR.WS.A.0004.221128T0300Z-221129T0000Z/</value>
+</cap:parameter>
+</entry>
+<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=OR12641909ED88.WinterStormWarning.126419298120OR.PDTWSWPDT.a863969a4e78b8019ce4f843b6afae78</id>
 <updated>2022-11-26T03:06:00-08:00</updated>
 <published>2022-11-26T03:06:00-08:00</published>
@@ -2866,70 +2834,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=OR126418FC0948.WinterStormWatch.126419360440OR.MFRWSWMFR.ab46f9769758a569026ed94aa0039658</id>
-<updated>2022-11-25T12:02:00-08:00</updated>
-<published>2022-11-25T12:02:00-08:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Winter Storm Watch issued November 25 at 12:02PM PST until November 28 at 4:00PM PST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=OR126418FC0948.WinterStormWatch.126419360440OR.MFRWSWMFR.ab46f9769758a569026ed94aa0039658"/>
-<summary>...WINTER STORM WATCH IN EFFECT FROM SUNDAY EVENING THROUGH MONDAY AFTERNOON ABOVE 2500 FEET... * WHAT...Heavy snow and blowing snow possible above 2500 feet. Total snow accumulations of 3 to 8 inches possible, with up to a foot over higher peaks and ridges. Winds could gust as high as 50 mph.</summary>
-<cap:event>Winter Storm Watch</cap:event>
-<cap:effective>2022-11-25T12:02:00-08:00</cap:effective>
-<cap:expires>2022-11-28T16:00:00-08:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Future</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Possible</cap:certainty>
-<cap:areaDesc>Eastern Douglas County Foothills; Jackson County; Siskiyou Mountains and Southern Oregon Cascades; South Central Oregon Cascades</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>041019 041029 041035</value>
-<valueName>UGC</valueName>
-<value>ORZ025 ORZ026 ORZ027 ORZ028</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.NEW.KMFR.WS.A.0004.221128T0300Z-221129T0000Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=OR126418FBF23C.AirStagnationAdvisory.1264190A1240OR.BOINPWBOI.94d8a86ed376c057b8a1a46c6791c7c4</id>
-<updated>2022-11-25T11:43:00-08:00</updated>
-<published>2022-11-25T11:43:00-08:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Air Stagnation Advisory issued November 25 at 11:43AM PST until November 26 at 4:00AM PST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=OR126418FBF23C.AirStagnationAdvisory.1264190A1240OR.BOINPWBOI.94d8a86ed376c057b8a1a46c6791c7c4"/>
-<summary>...AIR STAGNATION ADVISORY REMAINS IN EFFECT UNTIL 5 AM MST SATURDAY... * WHAT...An extended period of stagnant air, with light winds and little vertical mixing. * WHERE...Portions of southwest and west central Idaho and northeast and southeast Oregon.</summary>
-<cap:event>Air Stagnation Advisory</cap:event>
-<cap:effective>2022-11-25T11:43:00-08:00</cap:effective>
-<cap:expires>2022-11-26T04:00:00-08:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Baker County; Harney County; Malheur County; Oregon Lower Treasure Valley</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>041001 041025 041045</value>
-<valueName>UGC</valueName>
-<value>ORZ061 ORZ062 ORZ063 ORZ064</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KBOI.AS.Y.0003.000000T0000Z-221126T1200Z/</value>
-</cap:parameter>
-</entry>
-<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=PA126419093A3C.SpecialWeatherStatement.1264190A6060PA.CLESPSCLE.f48b53b1ae8a6264bcd1085879f3cc0c</id>
 <updated>2022-11-26T01:47:00-05:00</updated>
 <published>2022-11-26T01:47:00-05:00</published>
@@ -2994,17 +2898,17 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=SC12641909565C.CoastalFloodAdvisory.1264190AD590SC.CHSCFWCHS.5111341decbaecae2ed90537cdd461e4</id>
-<updated>2022-11-26T02:19:00-05:00</updated>
-<published>2022-11-26T02:19:00-05:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=SC12641909F940.CoastalFloodAdvisory.1264190AD590SC.CHSCFWCHS.5111341decbaecae2ed90537cdd461e4</id>
+<updated>2022-11-26T06:36:00-05:00</updated>
+<published>2022-11-26T06:36:00-05:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Coastal Flood Advisory issued November 26 at 2:19AM EST until November 26 at 12:00PM EST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=SC12641909565C.CoastalFloodAdvisory.1264190AD590SC.CHSCFWCHS.5111341decbaecae2ed90537cdd461e4"/>
-<summary>...COASTAL FLOOD ADVISORY IN EFFECT FROM 7 AM THIS MORNING TO NOON EST TODAY... * WHAT...Up to one foot of inundation above ground level expected along shorelines and tidal waterways (7.4 to 7.6 feet Mean Lower Low Water at Charleston). * WHERE...Coastal Colleton and Charleston Counties.</summary>
+<title>Coastal Flood Advisory issued November 26 at 6:36AM EST until November 26 at 12:00PM EST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=SC12641909F940.CoastalFloodAdvisory.1264190AD590SC.CHSCFWCHS.5111341decbaecae2ed90537cdd461e4"/>
+<summary>...COASTAL FLOOD ADVISORY REMAINS IN EFFECT UNTIL NOON EST TODAY... * WHAT...Up to one foot of inundation above ground level expected along shorelines and tidal waterways (7.4 to 7.6 feet Mean Lower Low Water at Charleston). * WHERE...Coastal Colleton and Charleston Counties.</summary>
 <cap:event>Coastal Flood Advisory</cap:event>
-<cap:effective>2022-11-26T02:19:00-05:00</cap:effective>
+<cap:effective>2022-11-26T06:36:00-05:00</cap:effective>
 <cap:expires>2022-11-26T12:00:00-05:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
@@ -3022,7 +2926,7 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
-<value>/O.NEW.KCHS.CF.Y.0067.221126T1200Z-221126T1700Z/</value>
+<value>/O.CON.KCHS.CF.Y.0067.221126T1200Z-221126T1700Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -3058,17 +2962,17 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=TN1264190979E8.DenseFogAdvisory.1264190A6060TN.OHXNPWOHX.3152d4d70ca0fd48a4ca39316e1c1ed0</id>
-<updated>2022-11-26T02:10:00-06:00</updated>
-<published>2022-11-26T02:10:00-06:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=TN1264190A1240.DenseFogAdvisory.1264190A6060TN.OHXNPWOHX.bbf45ce2a440a6cfa324e3e0f678fcc0</id>
+<updated>2022-11-26T06:00:00-06:00</updated>
+<published>2022-11-26T06:00:00-06:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Dense Fog Advisory issued November 26 at 2:10AM CST until November 26 at 8:00AM CST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=TN1264190979E8.DenseFogAdvisory.1264190A6060TN.OHXNPWOHX.3152d4d70ca0fd48a4ca39316e1c1ed0"/>
-<summary>...DENSE FOG ADVISORY REMAINS IN EFFECT UNTIL 8 AM CST THIS MORNING... * WHAT...Visibility of a quarter mile or less in dense fog. * WHERE...Stewart, Montgomery and Robertson Counties. * WHEN...Until 8 AM CST Saturday. * IMPACTS...Hazardous driving conditions due to low visibility.</summary>
+<title>Dense Fog Advisory issued November 26 at 6:00AM CST until November 26 at 8:00AM CST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=TN1264190A1240.DenseFogAdvisory.1264190A6060TN.OHXNPWOHX.bbf45ce2a440a6cfa324e3e0f678fcc0"/>
+<summary>...DENSE FOG ADVISORY REMAINS IN EFFECT UNTIL 8 AM CST THIS MORNING... * WHAT...Visibility of one quarter mile or less in dense fog. * WHERE...Stewart, Montgomery and Robertson Counties. * WHEN...Until 8 AM CST Saturday. * IMPACTS...Hazardous driving conditions due to low visibility.</summary>
 <cap:event>Dense Fog Advisory</cap:event>
-<cap:effective>2022-11-26T02:10:00-06:00</cap:effective>
+<cap:effective>2022-11-26T06:00:00-06:00</cap:effective>
 <cap:expires>2022-11-26T08:00:00-06:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
@@ -3076,13 +2980,13 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:urgency>Expected</cap:urgency>
 <cap:severity>Minor</cap:severity>
 <cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Montgomery; Robertson; Stewart</cap:areaDesc>
+<cap:areaDesc>Clay; Macon; Montgomery; Pickett; Robertson; Stewart; Sumner</cap:areaDesc>
 <cap:polygon></cap:polygon>
 <cap:geocode>
 <valueName>FIPS6</valueName>
-<value>047125 047147 047161</value>
+<value>047027 047111 047125 047137 047147 047161 047165</value>
 <valueName>UGC</valueName>
-<value>TNZ005 TNZ006 TNZ007</value>
+<value>TNZ005 TNZ006 TNZ007 TNZ008 TNZ009 TNZ010 TNZ011</value>
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
@@ -3090,17 +2994,17 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=TN1264190979E8.DenseFogAdvisory.1264190A6060TN.OHXNPWOHX.64db6d4db6ef7b0b2d9a9e0a04541f76</id>
-<updated>2022-11-26T02:10:00-06:00</updated>
-<published>2022-11-26T02:10:00-06:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=TN1264190A1240.DenseFogAdvisory.1264190A6060TN.OHXNPWOHX.1542ddc6fbf63622a0af9c146302e5a6</id>
+<updated>2022-11-26T06:00:00-06:00</updated>
+<published>2022-11-26T06:00:00-06:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Dense Fog Advisory issued November 26 at 2:10AM CST until November 26 at 8:00AM CST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=TN1264190979E8.DenseFogAdvisory.1264190A6060TN.OHXNPWOHX.64db6d4db6ef7b0b2d9a9e0a04541f76"/>
-<summary>...DENSE FOG ADVISORY IN EFFECT UNTIL 8 AM CST THIS MORNING... * WHAT...Visibility of a quarter of a mile or less in dense fog. * WHERE...Sumner, Macon, Clay and Pickett Counties. * WHEN...Until 8 AM CST Saturday. * IMPACTS...Hazardous driving conditions due to low visibility.</summary>
+<title>Dense Fog Advisory issued November 26 at 6:00AM CST until November 26 at 8:00AM CST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=TN1264190A1240.DenseFogAdvisory.1264190A6060TN.OHXNPWOHX.1542ddc6fbf63622a0af9c146302e5a6"/>
+<summary>...DENSE FOG ADVISORY IN EFFECT UNTIL 8 AM CST THIS MORNING... * WHAT...Visibility of one quarter mile or less in dense fog. * WHERE...All of Middle Tennessee. * WHEN...Until 8 AM CST Saturday. * IMPACTS...Hazardous driving conditions due to low visibility.</summary>
 <cap:event>Dense Fog Advisory</cap:event>
-<cap:effective>2022-11-26T02:10:00-06:00</cap:effective>
+<cap:effective>2022-11-26T06:00:00-06:00</cap:effective>
 <cap:expires>2022-11-26T08:00:00-06:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
@@ -3108,13 +3012,13 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:urgency>Expected</cap:urgency>
 <cap:severity>Minor</cap:severity>
 <cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Clay; Macon; Pickett; Sumner</cap:areaDesc>
+<cap:areaDesc>Bedford; Cannon; Cheatham; Coffee; Cumberland; Davidson; De Kalb; Dickson; Fentress; Giles; Grundy; Hickman; Houston; Humphreys; Jackson; Lawrence; Lewis; Marshall; Maury; Overton; Perry; Putnam; Rutherford; Smith; Trousdale; Van Buren; Warren; Wayne; White; Williamson; Wilson</cap:areaDesc>
 <cap:polygon></cap:polygon>
 <cap:geocode>
 <valueName>FIPS6</valueName>
-<value>047027 047111 047137 047165</value>
+<value>047003 047015 047021 047031 047035 047037 047041 047043 047049 047055 047061 047081 047083 047085 047087 047099 047101 047117 047119 047133 047135 047141 047149 047159 047169 047175 047177 047181 047185 047187 047189</value>
 <valueName>UGC</valueName>
-<value>TNZ008 TNZ009 TNZ010 TNZ011</value>
+<value>TNZ023 TNZ024 TNZ025 TNZ026 TNZ027 TNZ028 TNZ029 TNZ030 TNZ031 TNZ032 TNZ033 TNZ034 TNZ056 TNZ057 TNZ058 TNZ059 TNZ060 TNZ061 TNZ062 TNZ063 TNZ064 TNZ065 TNZ066 TNZ075 TNZ077 TNZ078 TNZ079 TNZ080 TNZ093 TNZ094 TNZ095</value>
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
@@ -3218,14 +3122,79 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=TX12641909D80C.FloodWatch.1264190A8770TX.HGXFFAHGX.f54acce808dcd4da360066493d58c5a4</id>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=TX12641909FDF0.SpecialWeatherStatement.1264190A1DF8TX.HGXSPSHGX.e14a0a5245b36f0a5fbe3692a176bd2c</id>
+<updated>2022-11-26T05:48:00-06:00</updated>
+<published>2022-11-26T05:48:00-06:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Special Weather Statement issued November 26 at 5:48AM CST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=TX12641909FDF0.SpecialWeatherStatement.1264190A1DF8TX.HGXSPSHGX.e14a0a5245b36f0a5fbe3692a176bd2c"/>
+<summary>...Strong thunderstorms will impact portions of Galveston, east central Fort Bend, eastern Brazoria, western Chambers and southeastern Harris Counties through 630 AM CST... At 547 AM CST, Doppler radar was tracking strong thunderstorms along a line extending from near Fresno to near Lake Jackson. Movement was east at 30 mph.</summary>
+<cap:event>Special Weather Statement</cap:event>
+<cap:effective>2022-11-26T05:48:00-06:00</cap:effective>
+<cap:expires>2022-11-26T06:30:00-06:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Observed</cap:certainty>
+<cap:areaDesc>Brazoria Islands; Chambers; Coastal Brazoria; Coastal Galveston; Coastal Harris; Fort Bend; Galveston Island; Inland Brazoria; Inland Galveston; Inland Harris</cap:areaDesc>
+<cap:polygon>29.01,-95.55 29.63,-95.52 29.82,-94.94 28.97,-94.98 28.93,-95.03 29.01,-95.55</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>048039 048071 048157 048167 048201</value>
+<valueName>UGC</valueName>
+<value>TXZ213 TXZ214 TXZ227 TXZ237 TXZ238 TXZ313 TXZ337 TXZ338 TXZ437 TXZ438</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value></value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=TX12641909D80C.FloodWatch.1264190A1DF8TX.HGXFFAHGX.11d9b9ace6f655dbfc670c7256611fb1</id>
+<updated>2022-11-26T04:51:00-06:00</updated>
+<published>2022-11-26T04:51:00-06:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Flood Watch issued November 26 at 4:51AM CST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=TX12641909D80C.FloodWatch.1264190A1DF8TX.HGXFFAHGX.11d9b9ace6f655dbfc670c7256611fb1"/>
+<summary>...FLOOD WATCH REMAINS IN EFFECT UNTIL NOON CST TODAY... * WHAT...Flooding caused by excessive rainfall continues to be possible. * WHERE...Portions of south central Texas and southeast Texas, including the following areas, in south central Texas, Coastal Jackson and Inland Jackson. In southeast Texas, Austin, Bolivar</summary>
+<cap:event>Flood Watch</cap:event>
+<cap:effective>2022-11-26T04:51:00-06:00</cap:effective>
+<cap:expires>2022-11-26T06:30:00-06:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Future</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Possible</cap:certainty>
+<cap:areaDesc>Bolivar Peninsula; Chambers; Coastal Brazoria; Coastal Galveston; Coastal Jackson; Coastal Matagorda; Fort Bend; Galveston Island; Inland Brazoria; Inland Galveston; Inland Jackson; Inland Matagorda; Matagorda Islands; Wharton</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>048039 048071 048157 048167 048239 048321 048481</value>
+<valueName>UGC</valueName>
+<value>TXZ214 TXZ226 TXZ227 TXZ235 TXZ236 TXZ237 TXZ238 TXZ335 TXZ336 TXZ337 TXZ338 TXZ436 TXZ438 TXZ439</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KHGX.FA.A.0005.000000T0000Z-221126T1800Z/
+/00000.0.ER.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=TX12641909D80C.FloodWatch.1264190A8770TX.HGXFFAHGX.f9fb940f492d51602d84271c8138a6c7</id>
 <updated>2022-11-26T04:51:00-06:00</updated>
 <published>2022-11-26T04:51:00-06:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
 <title>Flood Watch issued November 26 at 4:51AM CST until November 26 at 9:00AM CST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=TX12641909D80C.FloodWatch.1264190A8770TX.HGXFFAHGX.f54acce808dcd4da360066493d58c5a4"/>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=TX12641909D80C.FloodWatch.1264190A8770TX.HGXFFAHGX.f9fb940f492d51602d84271c8138a6c7"/>
 <summary>...FLOOD WATCH REMAINS IN EFFECT UNTIL NOON CST TODAY... * WHAT...Flooding caused by excessive rainfall continues to be possible. * WHERE...Portions of south central Texas and southeast Texas, including the following areas, in south central Texas, Coastal Jackson and Inland Jackson. In southeast Texas, Austin, Bolivar</summary>
 <cap:event>Flood Watch</cap:event>
 <cap:effective>2022-11-26T04:51:00-06:00</cap:effective>
@@ -3236,46 +3205,13 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:urgency>Future</cap:urgency>
 <cap:severity>Moderate</cap:severity>
 <cap:certainty>Possible</cap:certainty>
-<cap:areaDesc>Austin; Chambers; Coastal Brazoria; Coastal Galveston; Coastal Harris; Coastal Jackson; Coastal Matagorda; Colorado; Fort Bend; Inland Brazoria; Inland Galveston; Inland Harris; Inland Jackson; Inland Matagorda; Matagorda Islands; Montgomery; Northern Liberty; Southern Liberty; Waller; Wharton</cap:areaDesc>
+<cap:areaDesc>Austin; Coastal Harris; Colorado; Inland Harris; Montgomery; Northern Liberty; Southern Liberty; Waller</cap:areaDesc>
 <cap:polygon></cap:polygon>
 <cap:geocode>
 <valueName>FIPS6</valueName>
-<value>048015 048039 048071 048089 048157 048167 048201 048239 048291 048321 048339 048473 048481</value>
+<value>048015 048089 048201 048291 048339 048473</value>
 <valueName>UGC</valueName>
-<value>TXZ199 TXZ200 TXZ210 TXZ211 TXZ212 TXZ213 TXZ214 TXZ226 TXZ227 TXZ235 TXZ236 TXZ237 TXZ238 TXZ300 TXZ313 TXZ335 TXZ336 TXZ337 TXZ338 TXZ436</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KHGX.FA.A.0005.000000T0000Z-221126T1800Z/
-/00000.0.ER.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=TX12641909D80C.FloodWatch.12641917F4F0TX.HGXFFAHGX.47bcd9699f4f7c7f85c0e81ec0da6881</id>
-<updated>2022-11-26T04:51:00-06:00</updated>
-<published>2022-11-26T04:51:00-06:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Flood Watch issued November 26 at 4:51AM CST until November 26 at 9:00PM CST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=TX12641909D80C.FloodWatch.12641917F4F0TX.HGXFFAHGX.47bcd9699f4f7c7f85c0e81ec0da6881"/>
-<summary>...FLOOD WATCH REMAINS IN EFFECT UNTIL NOON CST TODAY... * WHAT...Flooding caused by excessive rainfall continues to be possible. * WHERE...Portions of south central Texas and southeast Texas, including the following areas, in south central Texas, Coastal Jackson and Inland Jackson. In southeast Texas, Austin, Bolivar</summary>
-<cap:event>Flood Watch</cap:event>
-<cap:effective>2022-11-26T04:51:00-06:00</cap:effective>
-<cap:expires>2022-11-26T21:00:00-06:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Future</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Possible</cap:certainty>
-<cap:areaDesc>Bolivar Peninsula; Galveston Island</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>048167</value>
-<valueName>UGC</valueName>
-<value>TXZ438 TXZ439</value>
+<value>TXZ199 TXZ200 TXZ210 TXZ211 TXZ212 TXZ213 TXZ300 TXZ313</value>
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
@@ -3415,14 +3351,47 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=TX126419095B70.FloodWatch.1264190A8770TX.LCHFFALCH.19f3d88b18dca032de50b253eacbd916</id>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=TX126419095B70.FloodWatch.1264190A1DF8TX.LCHFFALCH.abf6cff516f70423babbc7565f8a14e7</id>
+<updated>2022-11-26T01:32:00-06:00</updated>
+<published>2022-11-26T01:32:00-06:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Flood Watch issued November 26 at 1:32AM CST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=TX126419095B70.FloodWatch.1264190A1DF8TX.LCHFFALCH.abf6cff516f70423babbc7565f8a14e7"/>
+<summary>...FLOOD WATCH REMAINS IN EFFECT UNTIL NOON CST TODAY... * WHAT...Flooding caused by excessive rainfall continues to be possible. * WHERE...A portion of southeast Texas, including the following areas, Hardin, Jefferson, Orange, Southern Jasper and Southern Newton.</summary>
+<cap:event>Flood Watch</cap:event>
+<cap:effective>2022-11-26T01:32:00-06:00</cap:effective>
+<cap:expires>2022-11-26T06:30:00-06:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Future</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Possible</cap:certainty>
+<cap:areaDesc>Jefferson; Orange; Southern Jasper; Southern Newton</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>048241 048245 048351 048361</value>
+<valueName>UGC</valueName>
+<value>TXZ215 TXZ216 TXZ261 TXZ262</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KLCH.FA.A.0005.000000T0000Z-221126T1800Z/
+/00000.0.ER.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=TX126419095B70.FloodWatch.1264190A8770TX.LCHFFALCH.f62cbada214ba74f26254f3f567c66c5</id>
 <updated>2022-11-26T01:32:00-06:00</updated>
 <published>2022-11-26T01:32:00-06:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
 <title>Flood Watch issued November 26 at 1:32AM CST until November 26 at 9:00AM CST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=TX126419095B70.FloodWatch.1264190A8770TX.LCHFFALCH.19f3d88b18dca032de50b253eacbd916"/>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=TX126419095B70.FloodWatch.1264190A8770TX.LCHFFALCH.f62cbada214ba74f26254f3f567c66c5"/>
 <summary>...FLOOD WATCH REMAINS IN EFFECT UNTIL NOON CST TODAY... * WHAT...Flooding caused by excessive rainfall continues to be possible. * WHERE...A portion of southeast Texas, including the following areas, Hardin, Jefferson, Orange, Southern Jasper and Southern Newton.</summary>
 <cap:event>Flood Watch</cap:event>
 <cap:effective>2022-11-26T01:32:00-06:00</cap:effective>
@@ -3433,13 +3402,13 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:urgency>Future</cap:urgency>
 <cap:severity>Moderate</cap:severity>
 <cap:certainty>Possible</cap:certainty>
-<cap:areaDesc>Hardin; Jefferson; Orange; Southern Jasper; Southern Newton</cap:areaDesc>
+<cap:areaDesc>Hardin</cap:areaDesc>
 <cap:polygon></cap:polygon>
 <cap:geocode>
 <valueName>FIPS6</valueName>
-<value>048199 048241 048245 048351 048361</value>
+<value>048199</value>
 <valueName>UGC</valueName>
-<value>TXZ201 TXZ215 TXZ216 TXZ261 TXZ262</value>
+<value>TXZ201</value>
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
