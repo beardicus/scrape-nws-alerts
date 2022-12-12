@@ -16,16 +16,48 @@ xmlns = 'http://www.w3.org/2005/Atom'
 xmlns:cap = 'urn:oasis:names:tc:emergency:cap:1.1'
 xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 >
-<!-- http-date = Mon, 12 Dec 2022 21:00:00 GMT -->
+<!-- http-date = Mon, 12 Dec 2022 21:31:00 GMT -->
 <id>https://alerts.weather.gov/cap/us.php?x=0</id>
 <logo>http://alerts.weather.gov/images/xml_logo.gif</logo>
 <generator>NWS CAP Server</generator>
-<updated>2022-12-12T14:00:00-07:00</updated>
+<updated>2022-12-12T13:31:00-08:00</updated>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
 <title>Current Watches, Warnings and Advisories for the United States Issued by the National Weather Service</title>
 <link href="https://alerts.weather.gov/cap/us.php?x=0"/>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=AK12641E2BB738.WinterStormWarning.12641E38ABA0AK.AFCWSWAER.689a643ab7c1b26f253fb6c89d6f413c</id>
+<updated>2022-12-12T12:10:00-09:00</updated>
+<published>2022-12-12T12:10:00-09:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Winter Storm Warning issued December 12 at 12:10PM AKST until December 12 at 9:00PM AKST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=AK12641E2BB738.WinterStormWarning.12641E38ABA0AK.AFCWSWAER.689a643ab7c1b26f253fb6c89d6f413c"/>
+<summary>...WINTER STORM WARNING REMAINS IN EFFECT UNTIL 9 PM AKST THIS EVENING... * WHAT...Heavy snow. Additional snow accumulations of up to four inches. * WHERE...Copper River Basin. * WHEN...Until 9 PM AKST this evening.</summary>
+<cap:event>Winter Storm Warning</cap:event>
+<cap:effective>2022-12-12T12:10:00-09:00</cap:effective>
+<cap:expires>2022-12-12T21:00:00-09:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Copper River Basin</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>002063 002066 002170</value>
+<valueName>UGC</valueName>
+<value>AKZ141</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.PAFC.WS.W.0005.000000T0000Z-221213T0600Z/</value>
+</cap:parameter>
+</entry>
 <entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=AK12641E2BA284.WinterWeatherAdvisory.12641E38ABA0AK.AJKWSWAJK.176b1de68a3dbbecd053b29b03e86806</id>
 <updated>2022-12-12T11:57:00-09:00</updated>
@@ -56,38 +88,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value>/O.CON.PAJK.WW.Y.0035.000000T0000Z-221213T0600Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=AK12641E2B4528.WinterStormWarning.12641E38ABA0AK.AFCWSWAER.689a643ab7c1b26f253fb6c89d6f413c</id>
-<updated>2022-12-12T09:18:00-09:00</updated>
-<published>2022-12-12T09:18:00-09:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Winter Storm Warning issued December 12 at 9:18AM AKST until December 12 at 9:00PM AKST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=AK12641E2B4528.WinterStormWarning.12641E38ABA0AK.AFCWSWAER.689a643ab7c1b26f253fb6c89d6f413c"/>
-<summary>...WINTER STORM WARNING REMAINS IN EFFECT UNTIL 9 PM AKST THIS EVENING... * WHAT...Heavy snow. Additional snow accumulations of 2 to 6 inches. * WHERE...Copper River Basin. * WHEN...Until 9 PM AKST this evening.</summary>
-<cap:event>Winter Storm Warning</cap:event>
-<cap:effective>2022-12-12T09:18:00-09:00</cap:effective>
-<cap:expires>2022-12-12T21:00:00-09:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Copper River Basin</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>002063 002066 002170</value>
-<valueName>UGC</valueName>
-<value>AKZ141</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.PAFC.WS.W.0005.000000T0000Z-221213T0600Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -509,6 +509,268 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=AZ12641E2BBEA4.FreezeWatch.12641E497480AZ.PSRNPWPSR.7984eb3f562f2250a3ff23eac20b4163</id>
+<updated>2022-12-12T14:29:00-07:00</updated>
+<published>2022-12-12T14:29:00-07:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Freeze Watch issued December 12 at 2:29PM MST until December 14 at 9:00AM MST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=AZ12641E2BBEA4.FreezeWatch.12641E497480AZ.PSRNPWPSR.7984eb3f562f2250a3ff23eac20b4163"/>
+<summary>...FREEZE WATCH REMAINS IN EFFECT FROM LATE TUESDAY NIGHT THROUGH WEDNESDAY MORNING... ...FREEZE WATCH REMAINS IN EFFECT FROM LATE WEDNESDAY NIGHT THROUGH THURSDAY MORNING... * WHAT...For the first Freeze Watch, temperatures in the lower 30s possible. For the second Freeze Watch, temperatures in the</summary>
+<cap:event>Freeze Watch</cap:event>
+<cap:effective>2022-12-12T14:29:00-07:00</cap:effective>
+<cap:expires>2022-12-14T09:00:00-07:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Future</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Possible</cap:certainty>
+<cap:areaDesc>Central La Paz; Dripping Springs; Gila River Valley; Kofa; Northwest Pinal County; Parker Valley; Tonopah Desert; Tonto Basin</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>004007 004012 004013 004021 004027</value>
+<valueName>UGC</valueName>
+<value>AZZ530 AZZ531 AZZ533 AZZ536 AZZ538 AZZ553 AZZ556 AZZ561</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KPSR.FZ.A.0001.221214T0700Z-221214T1600Z/
+/O.CON.KPSR.FZ.A.0002.221215T0700Z-221215T1600Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=AZ12641E2BBEA4.FreezeWatch.12641E497480AZ.PSRNPWPSR.f837a6bc70f23842ffb01e9a26e843c1</id>
+<updated>2022-12-12T14:29:00-07:00</updated>
+<published>2022-12-12T14:29:00-07:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Freeze Watch issued December 12 at 2:29PM MST until December 14 at 9:00AM MST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=AZ12641E2BBEA4.FreezeWatch.12641E497480AZ.PSRNPWPSR.f837a6bc70f23842ffb01e9a26e843c1"/>
+<summary>...FREEZE WATCH REMAINS IN EFFECT FROM LATE TUESDAY NIGHT THROUGH WEDNESDAY MORNING... ...FREEZE WATCH IN EFFECT FROM LATE WEDNESDAY NIGHT THROUGH THURSDAY MORNING... * WHAT...For the first Freeze Watch, temperatures in the lower 30s possible. For the second Freeze Watch, temperatures around</summary>
+<cap:event>Freeze Watch</cap:event>
+<cap:effective>2022-12-12T14:29:00-07:00</cap:effective>
+<cap:expires>2022-12-14T09:00:00-07:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Future</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Possible</cap:certainty>
+<cap:areaDesc>Superior</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>004021</value>
+<valueName>UGC</valueName>
+<value>AZZ552</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.EXA.KPSR.FZ.A.0002.221215T0700Z-221215T1600Z/
+/O.CON.KPSR.FZ.A.0001.221214T0700Z-221214T1600Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=AZ12641E2BBEA4.HardFreezeWatch.12641E497480AZ.PSRNPWPSR.95727697b8e9b8b57dafe8a4fdba2392</id>
+<updated>2022-12-12T14:29:00-07:00</updated>
+<published>2022-12-12T14:29:00-07:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Hard Freeze Watch issued December 12 at 2:29PM MST until December 14 at 9:00AM MST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=AZ12641E2BBEA4.HardFreezeWatch.12641E497480AZ.PSRNPWPSR.95727697b8e9b8b57dafe8a4fdba2392"/>
+<summary>...HARD FREEZE WATCH REMAINS IN EFFECT FROM LATE TUESDAY NIGHT THROUGH WEDNESDAY MORNING... ...HARD FREEZE WATCH REMAINS IN EFFECT FROM LATE WEDNESDAY NIGHT THROUGH THURSDAY MORNING... * WHAT...For the first Hard Freeze Watch, temperatures in the upper 20s possible. For the second Hard Freeze Watch,</summary>
+<cap:event>Hard Freeze Watch</cap:event>
+<cap:effective>2022-12-12T14:29:00-07:00</cap:effective>
+<cap:expires>2022-12-14T09:00:00-07:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Future</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Possible</cap:certainty>
+<cap:areaDesc>Aguila Valley; Globe, Miami; San Carlos</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>004007 004013</value>
+<valueName>UGC</valueName>
+<value>AZZ534 AZZ560 AZZ562</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KPSR.HZ.A.0001.221214T0700Z-221214T1600Z/
+/O.CON.KPSR.HZ.A.0002.221215T0700Z-221215T1600Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=AZ12641E2BBEA4.FreezeWatch.12641E58B6C0AZ.PSRNPWPSR.60bc01b0e0a49e31430529b29fcd13a7</id>
+<updated>2022-12-12T14:29:00-07:00</updated>
+<published>2022-12-12T14:29:00-07:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Freeze Watch issued December 12 at 2:29PM MST until December 15 at 9:00AM MST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=AZ12641E2BBEA4.FreezeWatch.12641E58B6C0AZ.PSRNPWPSR.60bc01b0e0a49e31430529b29fcd13a7"/>
+<summary>...FREEZE WATCH REMAINS IN EFFECT FROM LATE TUESDAY NIGHT THROUGH WEDNESDAY MORNING... ...FREEZE WATCH REMAINS IN EFFECT FROM LATE WEDNESDAY NIGHT THROUGH THURSDAY MORNING... * WHAT...For the first Freeze Watch, temperatures in the lower 30s possible. For the second Freeze Watch, temperatures in the</summary>
+<cap:event>Freeze Watch</cap:event>
+<cap:effective>2022-12-12T14:29:00-07:00</cap:effective>
+<cap:expires>2022-12-15T09:00:00-07:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Future</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Possible</cap:certainty>
+<cap:areaDesc>Central La Paz; Dripping Springs; Gila River Valley; Kofa; Northwest Pinal County; Parker Valley; Tonopah Desert; Tonto Basin</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>004007 004012 004013 004021 004027</value>
+<valueName>UGC</valueName>
+<value>AZZ530 AZZ531 AZZ533 AZZ536 AZZ538 AZZ553 AZZ556 AZZ561</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KPSR.FZ.A.0001.221214T0700Z-221214T1600Z/
+/O.CON.KPSR.FZ.A.0002.221215T0700Z-221215T1600Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=AZ12641E2BBEA4.FreezeWatch.12641E58B6C0AZ.PSRNPWPSR.4fa5255f9e6d0d8d023959a78b9b369c</id>
+<updated>2022-12-12T14:29:00-07:00</updated>
+<published>2022-12-12T14:29:00-07:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Freeze Watch issued December 12 at 2:29PM MST until December 15 at 9:00AM MST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=AZ12641E2BBEA4.FreezeWatch.12641E58B6C0AZ.PSRNPWPSR.4fa5255f9e6d0d8d023959a78b9b369c"/>
+<summary>...FREEZE WATCH IN EFFECT FROM LATE WEDNESDAY NIGHT THROUGH THURSDAY MORNING... * WHAT...Temperatures in the lower 30s possible. * WHERE...South Mountain/Ahwatukee and Southeast Valley/Queen Creek. * WHEN...From late Wednesday night through Thursday morning.</summary>
+<cap:event>Freeze Watch</cap:event>
+<cap:effective>2022-12-12T14:29:00-07:00</cap:effective>
+<cap:expires>2022-12-15T09:00:00-07:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Future</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Possible</cap:certainty>
+<cap:areaDesc>South Mountain, Ahwatukee; Southeast Valley, Queen Creek</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>004013</value>
+<valueName>UGC</valueName>
+<value>AZZ550 AZZ551</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.EXA.KPSR.FZ.A.0002.221215T0700Z-221215T1600Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=AZ12641E2BBEA4.FreezeWatch.12641E58B6C0AZ.PSRNPWPSR.1a2fa4dd9192941625c22f46c007c2c5</id>
+<updated>2022-12-12T14:29:00-07:00</updated>
+<published>2022-12-12T14:29:00-07:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Freeze Watch issued December 12 at 2:29PM MST until December 15 at 9:00AM MST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=AZ12641E2BBEA4.FreezeWatch.12641E58B6C0AZ.PSRNPWPSR.1a2fa4dd9192941625c22f46c007c2c5"/>
+<summary>...FREEZE WATCH REMAINS IN EFFECT FROM LATE TUESDAY NIGHT THROUGH WEDNESDAY MORNING... ...FREEZE WATCH IN EFFECT FROM LATE WEDNESDAY NIGHT THROUGH THURSDAY MORNING... * WHAT...For the first Freeze Watch, temperatures in the lower 30s possible. For the second Freeze Watch, temperatures around</summary>
+<cap:event>Freeze Watch</cap:event>
+<cap:effective>2022-12-12T14:29:00-07:00</cap:effective>
+<cap:expires>2022-12-15T09:00:00-07:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Future</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Possible</cap:certainty>
+<cap:areaDesc>Superior</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>004021</value>
+<valueName>UGC</valueName>
+<value>AZZ552</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.EXA.KPSR.FZ.A.0002.221215T0700Z-221215T1600Z/
+/O.CON.KPSR.FZ.A.0001.221214T0700Z-221214T1600Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=AZ12641E2BBEA4.HardFreezeWatch.12641E58B6C0AZ.PSRNPWPSR.d70aa830242d518b33ae7fbb4229e7c3</id>
+<updated>2022-12-12T14:29:00-07:00</updated>
+<published>2022-12-12T14:29:00-07:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Hard Freeze Watch issued December 12 at 2:29PM MST until December 15 at 9:00AM MST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=AZ12641E2BBEA4.HardFreezeWatch.12641E58B6C0AZ.PSRNPWPSR.d70aa830242d518b33ae7fbb4229e7c3"/>
+<summary>...HARD FREEZE WATCH REMAINS IN EFFECT FROM LATE TUESDAY NIGHT THROUGH WEDNESDAY MORNING... ...HARD FREEZE WATCH REMAINS IN EFFECT FROM LATE WEDNESDAY NIGHT THROUGH THURSDAY MORNING... * WHAT...For the first Hard Freeze Watch, temperatures in the upper 20s possible. For the second Hard Freeze Watch,</summary>
+<cap:event>Hard Freeze Watch</cap:event>
+<cap:effective>2022-12-12T14:29:00-07:00</cap:effective>
+<cap:expires>2022-12-15T09:00:00-07:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Future</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Possible</cap:certainty>
+<cap:areaDesc>Aguila Valley; Globe, Miami; San Carlos</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>004007 004013</value>
+<valueName>UGC</valueName>
+<value>AZZ534 AZZ560 AZZ562</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KPSR.HZ.A.0001.221214T0700Z-221214T1600Z/
+/O.CON.KPSR.HZ.A.0002.221215T0700Z-221215T1600Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=AZ12641E2BB47C.WinterWeatherAdvisory.12641E399600AZ.PSRWSWPSR.3450505d9242b083e2de5aa478e58e32</id>
+<updated>2022-12-12T14:03:00-07:00</updated>
+<published>2022-12-12T14:03:00-07:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Winter Weather Advisory issued December 12 at 2:03PM MST until December 13 at 5:00AM MST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=AZ12641E2BB47C.WinterWeatherAdvisory.12641E399600AZ.PSRWSWPSR.3450505d9242b083e2de5aa478e58e32"/>
+<summary>...WINTER WEATHER ADVISORY REMAINS IN EFFECT UNTIL 5 AM MST TUESDAY ABOVE 4500 FEET... * WHAT...Snow above 4500 feet. Additional snow accumulations of up to 3 inches. * WHERE...New River Mesa, Mazatzal Mountains, Pinal/Superstition Mountains and Southeast Gila County.</summary>
+<cap:event>Winter Weather Advisory</cap:event>
+<cap:effective>2022-12-12T14:03:00-07:00</cap:effective>
+<cap:expires>2022-12-13T05:00:00-07:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Mazatzal Mountains; New River Mesa; Pinal, Superstition Mountains; Southeast Gila County</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>004007 004013 004021</value>
+<valueName>UGC</valueName>
+<value>AZZ545 AZZ557 AZZ558 AZZ563</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KPSR.WW.Y.0002.000000T0000Z-221213T1200Z/</value>
+</cap:parameter>
+</entry>
+<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=AZ12641E2BA34C.WinterWeatherAdvisory.12641E38ABA0AZ.FGZWSWFGZ.23946058be6ca64330ec5654bffd0e1e</id>
 <updated>2022-12-12T13:59:00-07:00</updated>
 <published>2022-12-12T13:59:00-07:00</published>
@@ -769,231 +1031,229 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=AZ12641E2B8D08.FreezeWatch.12641E497480AZ.PSRNPWPSR.7984eb3f562f2250a3ff23eac20b4163</id>
-<updated>2022-12-12T13:02:00-07:00</updated>
-<published>2022-12-12T13:02:00-07:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=CA12641E2BBEA4.FreezeWatch.12641E497480CA.PSRNPWPSR.dbac5c217124210a69d6cee1f8f2e73d</id>
+<updated>2022-12-12T13:29:00-08:00</updated>
+<published>2022-12-12T13:29:00-08:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Freeze Watch issued December 12 at 1:02PM MST until December 14 at 9:00AM MST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=AZ12641E2B8D08.FreezeWatch.12641E497480AZ.PSRNPWPSR.7984eb3f562f2250a3ff23eac20b4163"/>
-<summary>...FREEZE WATCH IN EFFECT FROM LATE TUESDAY NIGHT THROUGH WEDNESDAY MORNING... ...FREEZE WATCH IN EFFECT FROM LATE WEDNESDAY NIGHT THROUGH THURSDAY MORNING... * WHAT...For the first Freeze Watch, temperatures in the lower 30s possible. For the second Freeze Watch, temperatures in the</summary>
+<title>Freeze Watch issued December 12 at 1:29PM PST until December 14 at 8:00AM PST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CA12641E2BBEA4.FreezeWatch.12641E497480CA.PSRNPWPSR.dbac5c217124210a69d6cee1f8f2e73d"/>
+<summary>...FREEZE WATCH REMAINS IN EFFECT FROM LATE TUESDAY NIGHT THROUGH WEDNESDAY MORNING... ...FREEZE WATCH REMAINS IN EFFECT FROM LATE WEDNESDAY NIGHT THROUGH THURSDAY MORNING... * WHAT...For the first Freeze Watch, temperatures in the lower 30s possible. For the second Freeze Watch, temperatures in the</summary>
 <cap:event>Freeze Watch</cap:event>
-<cap:effective>2022-12-12T13:02:00-07:00</cap:effective>
-<cap:expires>2022-12-14T09:00:00-07:00</cap:expires>
+<cap:effective>2022-12-12T13:29:00-08:00</cap:effective>
+<cap:expires>2022-12-14T08:00:00-08:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
 <cap:category>Met</cap:category>
 <cap:urgency>Future</cap:urgency>
 <cap:severity>Moderate</cap:severity>
 <cap:certainty>Possible</cap:certainty>
-<cap:areaDesc>Central La Paz; Dripping Springs; Gila River Valley; Kofa; Northwest Pinal County; Parker Valley; Tonopah Desert; Tonto Basin</cap:areaDesc>
+<cap:areaDesc>Palo Verde Valley</cap:areaDesc>
 <cap:polygon></cap:polygon>
 <cap:geocode>
 <valueName>FIPS6</valueName>
-<value>004007 004012 004013 004021 004027</value>
+<value>006025 006065</value>
 <valueName>UGC</valueName>
-<value>AZZ530 AZZ531 AZZ533 AZZ536 AZZ538 AZZ553 AZZ556 AZZ561</value>
+<value>CAZ569</value>
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
-<value>/O.NEW.KPSR.FZ.A.0001.221214T0700Z-221214T1600Z/
-/O.NEW.KPSR.FZ.A.0002.221215T0700Z-221215T1600Z/</value>
+<value>/O.CON.KPSR.FZ.A.0001.221214T0700Z-221214T1600Z/
+/O.CON.KPSR.FZ.A.0002.221215T0700Z-221215T1600Z/</value>
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=AZ12641E2B8D08.FreezeWatch.12641E497480AZ.PSRNPWPSR.f837a6bc70f23842ffb01e9a26e843c1</id>
-<updated>2022-12-12T13:02:00-07:00</updated>
-<published>2022-12-12T13:02:00-07:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=CA12641E2BBEA4.FreezeWatch.12641E58B6C0CA.PSRNPWPSR.74fcecf6a51cb8392d64f77d28b7f689</id>
+<updated>2022-12-12T13:29:00-08:00</updated>
+<published>2022-12-12T13:29:00-08:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Freeze Watch issued December 12 at 1:02PM MST until December 14 at 9:00AM MST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=AZ12641E2B8D08.FreezeWatch.12641E497480AZ.PSRNPWPSR.f837a6bc70f23842ffb01e9a26e843c1"/>
-<summary>...FREEZE WATCH IN EFFECT FROM LATE TUESDAY NIGHT THROUGH WEDNESDAY MORNING... * WHAT...Temperatures in the lower 30s possible. * WHERE...Superior. * WHEN...From late Tuesday night through Wednesday morning. * IMPACTS...Frost and freeze conditions could kill crops, other</summary>
+<title>Freeze Watch issued December 12 at 1:29PM PST until December 15 at 8:00AM PST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CA12641E2BBEA4.FreezeWatch.12641E58B6C0CA.PSRNPWPSR.74fcecf6a51cb8392d64f77d28b7f689"/>
+<summary>...FREEZE WATCH REMAINS IN EFFECT FROM LATE TUESDAY NIGHT THROUGH WEDNESDAY MORNING... ...FREEZE WATCH REMAINS IN EFFECT FROM LATE WEDNESDAY NIGHT THROUGH THURSDAY MORNING... * WHAT...For the first Freeze Watch, temperatures in the lower 30s possible. For the second Freeze Watch, temperatures in the</summary>
 <cap:event>Freeze Watch</cap:event>
-<cap:effective>2022-12-12T13:02:00-07:00</cap:effective>
-<cap:expires>2022-12-14T09:00:00-07:00</cap:expires>
+<cap:effective>2022-12-12T13:29:00-08:00</cap:effective>
+<cap:expires>2022-12-15T08:00:00-08:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
 <cap:category>Met</cap:category>
 <cap:urgency>Future</cap:urgency>
 <cap:severity>Moderate</cap:severity>
 <cap:certainty>Possible</cap:certainty>
-<cap:areaDesc>Superior</cap:areaDesc>
+<cap:areaDesc>Palo Verde Valley</cap:areaDesc>
 <cap:polygon></cap:polygon>
 <cap:geocode>
 <valueName>FIPS6</valueName>
-<value>004021</value>
+<value>006025 006065</value>
 <valueName>UGC</valueName>
-<value>AZZ552</value>
+<value>CAZ569</value>
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
-<value>/O.NEW.KPSR.FZ.A.0001.221214T0700Z-221214T1600Z/</value>
+<value>/O.CON.KPSR.FZ.A.0001.221214T0700Z-221214T1600Z/
+/O.CON.KPSR.FZ.A.0002.221215T0700Z-221215T1600Z/</value>
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=AZ12641E2B8D08.HardFreezeWatch.12641E497480AZ.PSRNPWPSR.95727697b8e9b8b57dafe8a4fdba2392</id>
-<updated>2022-12-12T13:02:00-07:00</updated>
-<published>2022-12-12T13:02:00-07:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=CA12641E2BB9F4.WinterWeatherAdvisory.12641E37C140CA.SGXWSWSGX.7a91839835d9f02e84bb37df39aabd6c</id>
+<updated>2022-12-12T13:17:00-08:00</updated>
+<published>2022-12-12T13:17:00-08:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Hard Freeze Watch issued December 12 at 1:02PM MST until December 14 at 9:00AM MST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=AZ12641E2B8D08.HardFreezeWatch.12641E497480AZ.PSRNPWPSR.95727697b8e9b8b57dafe8a4fdba2392"/>
-<summary>...HARD FREEZE WATCH IN EFFECT FROM LATE TUESDAY NIGHT THROUGH WEDNESDAY MORNING... ...HARD FREEZE WATCH IN EFFECT FROM LATE WEDNESDAY NIGHT THROUGH THURSDAY MORNING... * WHAT...For the first Hard Freeze Watch, temperatures in the upper 20s possible. For the second Hard Freeze Watch,</summary>
-<cap:event>Hard Freeze Watch</cap:event>
-<cap:effective>2022-12-12T13:02:00-07:00</cap:effective>
-<cap:expires>2022-12-14T09:00:00-07:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Future</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Possible</cap:certainty>
-<cap:areaDesc>Aguila Valley; Globe, Miami; San Carlos</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>004007 004013</value>
-<valueName>UGC</valueName>
-<value>AZZ534 AZZ560 AZZ562</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.NEW.KPSR.HZ.A.0001.221214T0700Z-221214T1600Z/
-/O.NEW.KPSR.HZ.A.0002.221215T0700Z-221215T1600Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=AZ12641E2B8D08.FreezeWatch.12641E58B6C0AZ.PSRNPWPSR.60bc01b0e0a49e31430529b29fcd13a7</id>
-<updated>2022-12-12T13:02:00-07:00</updated>
-<published>2022-12-12T13:02:00-07:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Freeze Watch issued December 12 at 1:02PM MST until December 15 at 9:00AM MST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=AZ12641E2B8D08.FreezeWatch.12641E58B6C0AZ.PSRNPWPSR.60bc01b0e0a49e31430529b29fcd13a7"/>
-<summary>...FREEZE WATCH IN EFFECT FROM LATE TUESDAY NIGHT THROUGH WEDNESDAY MORNING... ...FREEZE WATCH IN EFFECT FROM LATE WEDNESDAY NIGHT THROUGH THURSDAY MORNING... * WHAT...For the first Freeze Watch, temperatures in the lower 30s possible. For the second Freeze Watch, temperatures in the</summary>
-<cap:event>Freeze Watch</cap:event>
-<cap:effective>2022-12-12T13:02:00-07:00</cap:effective>
-<cap:expires>2022-12-15T09:00:00-07:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Future</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Possible</cap:certainty>
-<cap:areaDesc>Central La Paz; Dripping Springs; Gila River Valley; Kofa; Northwest Pinal County; Parker Valley; Tonopah Desert; Tonto Basin</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>004007 004012 004013 004021 004027</value>
-<valueName>UGC</valueName>
-<value>AZZ530 AZZ531 AZZ533 AZZ536 AZZ538 AZZ553 AZZ556 AZZ561</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.NEW.KPSR.FZ.A.0001.221214T0700Z-221214T1600Z/
-/O.NEW.KPSR.FZ.A.0002.221215T0700Z-221215T1600Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=AZ12641E2B8D08.FreezeWatch.12641E58B6C0AZ.PSRNPWPSR.d84f0a2ba2961b99406d87bf85e08d9d</id>
-<updated>2022-12-12T13:02:00-07:00</updated>
-<published>2022-12-12T13:02:00-07:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Freeze Watch issued December 12 at 1:02PM MST until December 15 at 9:00AM MST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=AZ12641E2B8D08.FreezeWatch.12641E58B6C0AZ.PSRNPWPSR.d84f0a2ba2961b99406d87bf85e08d9d"/>
-<summary>...FREEZE WATCH IN EFFECT FROM LATE WEDNESDAY NIGHT THROUGH THURSDAY MORNING... * WHAT...Temperatures in the mid 30s possible. * WHERE...Apache Junction/Gold Canyon. * WHEN...From late Wednesday night through Thursday morning. * IMPACTS...Frost and freeze conditions could kill crops, other</summary>
-<cap:event>Freeze Watch</cap:event>
-<cap:effective>2022-12-12T13:02:00-07:00</cap:effective>
-<cap:expires>2022-12-15T09:00:00-07:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Future</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Possible</cap:certainty>
-<cap:areaDesc>Apache Junction, Gold Canyon</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>004021</value>
-<valueName>UGC</valueName>
-<value>AZZ555</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.NEW.KPSR.FZ.A.0002.221215T0700Z-221215T1600Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=AZ12641E2B8D08.HardFreezeWatch.12641E58B6C0AZ.PSRNPWPSR.d70aa830242d518b33ae7fbb4229e7c3</id>
-<updated>2022-12-12T13:02:00-07:00</updated>
-<published>2022-12-12T13:02:00-07:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Hard Freeze Watch issued December 12 at 1:02PM MST until December 15 at 9:00AM MST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=AZ12641E2B8D08.HardFreezeWatch.12641E58B6C0AZ.PSRNPWPSR.d70aa830242d518b33ae7fbb4229e7c3"/>
-<summary>...HARD FREEZE WATCH IN EFFECT FROM LATE TUESDAY NIGHT THROUGH WEDNESDAY MORNING... ...HARD FREEZE WATCH IN EFFECT FROM LATE WEDNESDAY NIGHT THROUGH THURSDAY MORNING... * WHAT...For the first Hard Freeze Watch, temperatures in the upper 20s possible. For the second Hard Freeze Watch,</summary>
-<cap:event>Hard Freeze Watch</cap:event>
-<cap:effective>2022-12-12T13:02:00-07:00</cap:effective>
-<cap:expires>2022-12-15T09:00:00-07:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Future</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Possible</cap:certainty>
-<cap:areaDesc>Aguila Valley; Globe, Miami; San Carlos</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>004007 004013</value>
-<valueName>UGC</valueName>
-<value>AZZ534 AZZ560 AZZ562</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.NEW.KPSR.HZ.A.0001.221214T0700Z-221214T1600Z/
-/O.NEW.KPSR.HZ.A.0002.221215T0700Z-221215T1600Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=AZ12641E1C3808.WinterWeatherAdvisory.12641E399600AZ.PSRWSWPSR.3450505d9242b083e2de5aa478e58e32</id>
-<updated>2022-12-11T12:54:00-07:00</updated>
-<published>2022-12-11T12:54:00-07:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Winter Weather Advisory issued December 11 at 12:54PM MST until December 13 at 5:00AM MST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=AZ12641E1C3808.WinterWeatherAdvisory.12641E399600AZ.PSRWSWPSR.3450505d9242b083e2de5aa478e58e32"/>
-<summary>...WINTER WEATHER ADVISORY REMAINS IN EFFECT FROM 5 AM MONDAY TO 5 AM MST TUESDAY ABOVE 4500 FEET... * WHAT...Snow level dropping to as low as 3500 feet Monday night. Total snow accumulations up to 1 inch between 4000 feet and 4500 feet. Total snow accumulations of 2 to 7 inches above 4500 feet. Winds gusting as high as 35 mph.</summary>
+<title>Winter Weather Advisory issued December 12 at 1:17PM PST until December 12 at 4:00PM PST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CA12641E2BB9F4.WinterWeatherAdvisory.12641E37C140CA.SGXWSWSGX.7a91839835d9f02e84bb37df39aabd6c"/>
+<summary>...WINTER WEATHER ADVISORY REMAINS IN EFFECT UNTIL 4 PM TODAY... * WHAT...Snow showers and gusty winds this afternoon. * WHERE...Santa Ana Mountains and Foothills. * IMPACTS...Hazardous travel conditions.</summary>
 <cap:event>Winter Weather Advisory</cap:event>
-<cap:effective>2022-12-11T12:54:00-07:00</cap:effective>
-<cap:expires>2022-12-13T05:00:00-07:00</cap:expires>
+<cap:effective>2022-12-12T13:17:00-08:00</cap:effective>
+<cap:expires>2022-12-12T16:00:00-08:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
 <cap:category>Met</cap:category>
 <cap:urgency>Expected</cap:urgency>
 <cap:severity>Minor</cap:severity>
 <cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Mazatzal Mountains; New River Mesa; Pinal, Superstition Mountains; Southeast Gila County</cap:areaDesc>
+<cap:areaDesc>Santa Ana Mountains and Foothills</cap:areaDesc>
 <cap:polygon></cap:polygon>
 <cap:geocode>
 <valueName>FIPS6</valueName>
-<value>004007 004013 004021</value>
+<value>006059 006065</value>
 <valueName>UGC</valueName>
-<value>AZZ545 AZZ557 AZZ558 AZZ563</value>
+<value>CAZ057</value>
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
-<value>/O.CON.KPSR.WW.Y.0002.221212T1200Z-221213T1200Z/</value>
+<value>/O.CON.KSGX.WW.Y.0005.000000T0000Z-221213T0000Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=CA12641E2BB9F4.WinterStormWarning.12641E38ABA0CA.SGXWSWSGX.40c62cbf04f67766848e337979574e90</id>
+<updated>2022-12-12T13:17:00-08:00</updated>
+<published>2022-12-12T13:17:00-08:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Winter Storm Warning issued December 12 at 1:17PM PST until December 12 at 10:00PM PST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CA12641E2BB9F4.WinterStormWarning.12641E38ABA0CA.SGXWSWSGX.40c62cbf04f67766848e337979574e90"/>
+<summary>...WINTER STORM WARNING REMAINS IN EFFECT UNTIL 10 PM THIS EVENING ABOVE 5000 FEET... * WHAT...Snow showers, gusty winds and low visibility at times in fog and blowing snow. * WHERE...San Bernardino County Mountains and Riverside County Mountains.</summary>
+<cap:event>Winter Storm Warning</cap:event>
+<cap:effective>2022-12-12T13:17:00-08:00</cap:effective>
+<cap:expires>2022-12-12T22:00:00-08:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Riverside County Mountains; San Bernardino County Mountains</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>006065 006071</value>
+<valueName>UGC</valueName>
+<value>CAZ055 CAZ056</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KSGX.WS.W.0005.000000T0000Z-221213T0600Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=CA12641E2BB9F4.WinterStormWarning.12641E38ABA0CA.SGXWSWSGX.66bd09ca13b47e0d75989a64cd700139</id>
+<updated>2022-12-12T13:17:00-08:00</updated>
+<published>2022-12-12T13:17:00-08:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Winter Storm Warning issued December 12 at 1:17PM PST until December 12 at 10:00PM PST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CA12641E2BB9F4.WinterStormWarning.12641E38ABA0CA.SGXWSWSGX.66bd09ca13b47e0d75989a64cd700139"/>
+<summary>...WINTER STORM WARNING REMAINS IN EFFECT UNTIL 10 PM THIS EVENING ABOVE 4500 FEET... * WHAT...Snow showers, gusty winds and low visibility at times in fog and blowing snow. * WHERE...San Diego County Mountains. * WHEN...Through 10 PM today.</summary>
+<cap:event>Winter Storm Warning</cap:event>
+<cap:effective>2022-12-12T13:17:00-08:00</cap:effective>
+<cap:expires>2022-12-12T22:00:00-08:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>San Diego County Mountains</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>006073</value>
+<valueName>UGC</valueName>
+<value>CAZ058</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KSGX.WS.W.0005.000000T0000Z-221213T0600Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=CA12641E2BB4E0.FrostAdvisory.12641E3A5950CA.SGXNPWSGX.7549173bb998977bc0cb721b0704dad6</id>
+<updated>2022-12-12T13:04:00-08:00</updated>
+<published>2022-12-12T13:04:00-08:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Frost Advisory issued December 12 at 1:04PM PST until December 13 at 9:00AM PST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CA12641E2BB4E0.FrostAdvisory.12641E3A5950CA.SGXNPWSGX.7549173bb998977bc0cb721b0704dad6"/>
+<summary>...FROST ADVISORY IN EFFECT FROM 10 PM THIS EVENING TO 9 AM TUESDAY... * WHAT...Frost in the valleys tonight with temperatures falling into the low 30s. * WHERE...San Bernardino and Riverside County Valleys-The Inland Empire and San Diego County Valleys. * WHEN...From 10 PM this evening to 9 AM Tuesday.</summary>
+<cap:event>Frost Advisory</cap:event>
+<cap:effective>2022-12-12T13:04:00-08:00</cap:effective>
+<cap:expires>2022-12-13T09:00:00-08:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>San Bernardino and Riverside County Valleys-The Inland Empire; San Diego County Inland Valleys</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>006065 006071 006073</value>
+<valueName>UGC</valueName>
+<value>CAZ048 CAZ050</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.NEW.KSGX.FR.Y.0009.221213T0600Z-221213T1700Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=CA12641E2BB4E0.FrostAdvisory.12641E3A5950CA.SGXNPWSGX.04933ab9aa5d05b91d919aa8c504eca1</id>
+<updated>2022-12-12T13:04:00-08:00</updated>
+<published>2022-12-12T13:04:00-08:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Frost Advisory issued December 12 at 1:04PM PST until December 13 at 9:00AM PST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CA12641E2BB4E0.FrostAdvisory.12641E3A5950CA.SGXNPWSGX.04933ab9aa5d05b91d919aa8c504eca1"/>
+<summary>...FROST ADVISORY IN EFFECT FROM 10 PM THIS EVENING TO 9 AM TUESDAY... * WHAT...Frost in the low deserts tonight with temperatures falling into the low to mid 30s, coldest in the southern Coachella Valley. * WHERE...Coachella Valley, San Diego County Deserts and San Gorgonio Pass Near Banning.</summary>
+<cap:event>Frost Advisory</cap:event>
+<cap:effective>2022-12-12T13:04:00-08:00</cap:effective>
+<cap:expires>2022-12-13T09:00:00-08:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Coachella Valley; San Diego County Deserts; San Gorgonio Pass Near Banning</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>006065 006073</value>
+<valueName>UGC</valueName>
+<value>CAZ061 CAZ062 CAZ065</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.NEW.KSGX.FR.Y.0009.221213T0600Z-221213T1700Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -1123,72 +1383,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value>/O.CON.KHNX.WW.Y.0008.000000T0000Z-221213T0000Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=CA12641E2B8D08.FreezeWatch.12641E497480CA.PSRNPWPSR.dbac5c217124210a69d6cee1f8f2e73d</id>
-<updated>2022-12-12T12:02:00-08:00</updated>
-<published>2022-12-12T12:02:00-08:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Freeze Watch issued December 12 at 12:02PM PST until December 14 at 8:00AM PST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CA12641E2B8D08.FreezeWatch.12641E497480CA.PSRNPWPSR.dbac5c217124210a69d6cee1f8f2e73d"/>
-<summary>...FREEZE WATCH IN EFFECT FROM LATE TUESDAY NIGHT THROUGH WEDNESDAY MORNING... ...FREEZE WATCH IN EFFECT FROM LATE WEDNESDAY NIGHT THROUGH THURSDAY MORNING... * WHAT...For the first Freeze Watch, temperatures in the lower 30s possible. For the second Freeze Watch, temperatures in the</summary>
-<cap:event>Freeze Watch</cap:event>
-<cap:effective>2022-12-12T12:02:00-08:00</cap:effective>
-<cap:expires>2022-12-14T08:00:00-08:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Future</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Possible</cap:certainty>
-<cap:areaDesc>Palo Verde Valley</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>006025 006065</value>
-<valueName>UGC</valueName>
-<value>CAZ569</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.NEW.KPSR.FZ.A.0001.221214T0700Z-221214T1600Z/
-/O.NEW.KPSR.FZ.A.0002.221215T0700Z-221215T1600Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=CA12641E2B8D08.FreezeWatch.12641E58B6C0CA.PSRNPWPSR.74fcecf6a51cb8392d64f77d28b7f689</id>
-<updated>2022-12-12T12:02:00-08:00</updated>
-<published>2022-12-12T12:02:00-08:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Freeze Watch issued December 12 at 12:02PM PST until December 15 at 8:00AM PST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CA12641E2B8D08.FreezeWatch.12641E58B6C0CA.PSRNPWPSR.74fcecf6a51cb8392d64f77d28b7f689"/>
-<summary>...FREEZE WATCH IN EFFECT FROM LATE TUESDAY NIGHT THROUGH WEDNESDAY MORNING... ...FREEZE WATCH IN EFFECT FROM LATE WEDNESDAY NIGHT THROUGH THURSDAY MORNING... * WHAT...For the first Freeze Watch, temperatures in the lower 30s possible. For the second Freeze Watch, temperatures in the</summary>
-<cap:event>Freeze Watch</cap:event>
-<cap:effective>2022-12-12T12:02:00-08:00</cap:effective>
-<cap:expires>2022-12-15T08:00:00-08:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Future</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Possible</cap:certainty>
-<cap:areaDesc>Palo Verde Valley</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>006025 006065</value>
-<valueName>UGC</valueName>
-<value>CAZ569</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.NEW.KPSR.FZ.A.0001.221214T0700Z-221214T1600Z/
-/O.NEW.KPSR.FZ.A.0002.221215T0700Z-221215T1600Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -1352,99 +1546,419 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=CA12641E2A648C.WinterWeatherAdvisory.12641E37C140CA.SGXWSWSGX.7a91839835d9f02e84bb37df39aabd6c</id>
-<updated>2022-12-12T04:43:00-08:00</updated>
-<published>2022-12-12T04:43:00-08:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=CO12641E2BBDDC.WinterWeatherAdvisory.12641E37C140CO.GJTWSWGJT.d58a085bfacbd02ebfe3a342204433f4</id>
+<updated>2022-12-12T14:27:00-07:00</updated>
+<published>2022-12-12T14:27:00-07:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Winter Weather Advisory issued December 12 at 4:43AM PST until December 12 at 4:00PM PST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CA12641E2A648C.WinterWeatherAdvisory.12641E37C140CA.SGXWSWSGX.7a91839835d9f02e84bb37df39aabd6c"/>
-<summary>...WINTER WEATHER ADVISORY REMAINS IN EFFECT UNTIL 4 PM PST THIS AFTERNOON... * WHAT...Snow expected. 1 to 6 inches likely above 4000 feet. * WHERE...Santa Ana Mountains and Foothills. * WHEN...Through this afternoon. * IMPACTS...Hazardous travel conditions.</summary>
+<title>Winter Weather Advisory issued December 12 at 2:27PM MST until December 12 at 5:00PM MST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CO12641E2BBDDC.WinterWeatherAdvisory.12641E37C140CO.GJTWSWGJT.d58a085bfacbd02ebfe3a342204433f4"/>
+<summary>...WINTER WEATHER ADVISORY REMAINS IN EFFECT UNTIL 5 PM MST THIS AFTERNOON ABOVE 7500 FEET... * WHAT...Snow above 7500 feet. Additional snow accumulations of 2 to 3 inches. * WHERE...In Colorado, Uncompahgre Plateau and Dallas Divide. In Utah, Tavaputs Plateau and La Sal and Abajo Mountains.</summary>
 <cap:event>Winter Weather Advisory</cap:event>
-<cap:effective>2022-12-12T04:43:00-08:00</cap:effective>
-<cap:expires>2022-12-12T16:00:00-08:00</cap:expires>
+<cap:effective>2022-12-12T14:27:00-07:00</cap:effective>
+<cap:expires>2022-12-12T17:00:00-07:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
 <cap:category>Met</cap:category>
 <cap:urgency>Expected</cap:urgency>
 <cap:severity>Minor</cap:severity>
 <cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Santa Ana Mountains and Foothills</cap:areaDesc>
+<cap:areaDesc>Uncompahgre Plateau, Dallas Divide</cap:areaDesc>
 <cap:polygon></cap:polygon>
 <cap:geocode>
 <valueName>FIPS6</valueName>
-<value>006059 006065</value>
+<value>008077 008085 008091</value>
 <valueName>UGC</valueName>
-<value>CAZ057</value>
+<value>COZ017</value>
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
-<value>/O.CON.KSGX.WW.Y.0005.000000T0000Z-221213T0000Z/</value>
+<value>/O.CON.KGJT.WW.Y.0025.000000T0000Z-221213T0000Z/</value>
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=CA12641E2A648C.WinterStormWarning.12641E38ABA0CA.SGXWSWSGX.40c62cbf04f67766848e337979574e90</id>
-<updated>2022-12-12T04:43:00-08:00</updated>
-<published>2022-12-12T04:43:00-08:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=CO12641E2BBDDC.WinterWeatherAdvisory.12641E37C140CO.GJTWSWGJT.64172bc6b419e6a2284656e1a5658530</id>
+<updated>2022-12-12T14:27:00-07:00</updated>
+<published>2022-12-12T14:27:00-07:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Winter Storm Warning issued December 12 at 4:43AM PST until December 12 at 10:00PM PST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CA12641E2A648C.WinterStormWarning.12641E38ABA0CA.SGXWSWSGX.40c62cbf04f67766848e337979574e90"/>
-<summary>...WINTER STORM WARNING REMAINS IN EFFECT UNTIL 10 PM PST THIS EVENING ABOVE 5000 FEET... * WHAT...Heavy snow showers and gusty southwest winds expected. Additional snow accumulations of 2 to 4 inches from 4000 to 6000 ft, 4 to 6 inches possible from 6000 to 7000 feet, and up to 8 inches possible above 7000 feet.</summary>
+<title>Winter Weather Advisory issued December 12 at 2:27PM MST until December 12 at 5:00PM MST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CO12641E2BBDDC.WinterWeatherAdvisory.12641E37C140CO.GJTWSWGJT.64172bc6b419e6a2284656e1a5658530"/>
+<summary>...WINTER WEATHER ADVISORY REMAINS IN EFFECT UNTIL 5 PM MST THIS AFTERNOON ABOVE 6500 FEET... * WHAT...Snow amounts favoring areas above 6500 feet. Additional snow accumulations of 1 to 2 inches with isolated amounts up to 3 inches. * WHERE...Four Corners/Upper Dolores River, Animas River Basin</summary>
+<cap:event>Winter Weather Advisory</cap:event>
+<cap:effective>2022-12-12T14:27:00-07:00</cap:effective>
+<cap:expires>2022-12-12T17:00:00-07:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Animas River Basin; Four Corners, Upper Dolores River; San Juan River Basin</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>008007 008033 008067 008083</value>
+<valueName>UGC</valueName>
+<value>COZ021 COZ022 COZ023</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KGJT.WW.Y.0025.000000T0000Z-221213T0000Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=CO12641E2BBDDC.WinterStormWarning.12641E38ABA0CO.GJTWSWGJT.7a87ff844f7e44a7806f4c2b81d0d797</id>
+<updated>2022-12-12T14:27:00-07:00</updated>
+<published>2022-12-12T14:27:00-07:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Winter Storm Warning issued December 12 at 2:27PM MST until December 12 at 11:00PM MST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CO12641E2BBDDC.WinterStormWarning.12641E38ABA0CO.GJTWSWGJT.7a87ff844f7e44a7806f4c2b81d0d797"/>
+<summary>...WINTER STORM WARNING REMAINS IN EFFECT UNTIL 11 PM MST THIS EVENING... * WHAT...Moderate to heavy snow and gusty winds. Additional snow accumulations of 1 to 3 inches. Winds gusting 35 to 45 mph above 10000 feet. * WHERE...Southwest San Juan Mountains.</summary>
 <cap:event>Winter Storm Warning</cap:event>
-<cap:effective>2022-12-12T04:43:00-08:00</cap:effective>
-<cap:expires>2022-12-12T22:00:00-08:00</cap:expires>
+<cap:effective>2022-12-12T14:27:00-07:00</cap:effective>
+<cap:expires>2022-12-12T23:00:00-07:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
 <cap:category>Met</cap:category>
 <cap:urgency>Expected</cap:urgency>
 <cap:severity>Moderate</cap:severity>
 <cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Riverside County Mountains; San Bernardino County Mountains</cap:areaDesc>
+<cap:areaDesc>Southwest San Juan Mountains</cap:areaDesc>
 <cap:polygon></cap:polygon>
 <cap:geocode>
 <valueName>FIPS6</valueName>
-<value>006065 006071</value>
+<value>008007 008033 008053 008067 008083 008111</value>
 <valueName>UGC</valueName>
-<value>CAZ055 CAZ056</value>
+<value>COZ019</value>
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
-<value>/O.CON.KSGX.WS.W.0005.000000T0000Z-221213T0600Z/</value>
+<value>/O.CON.KGJT.WS.W.0011.000000T0000Z-221213T0600Z/</value>
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=CA12641E2A648C.WinterStormWarning.12641E38ABA0CA.SGXWSWSGX.66bd09ca13b47e0d75989a64cd700139</id>
-<updated>2022-12-12T04:43:00-08:00</updated>
-<published>2022-12-12T04:43:00-08:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=CO12641E2BBDDC.WinterWeatherAdvisory.12641E38ABA0CO.GJTWSWGJT.36ce2cce1183937daf04c310c2045ae7</id>
+<updated>2022-12-12T14:27:00-07:00</updated>
+<published>2022-12-12T14:27:00-07:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Winter Storm Warning issued December 12 at 4:43AM PST until December 12 at 10:00PM PST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CA12641E2A648C.WinterStormWarning.12641E38ABA0CA.SGXWSWSGX.66bd09ca13b47e0d75989a64cd700139"/>
-<summary>...WINTER STORM WARNING REMAINS IN EFFECT UNTIL 10 PM PST THIS EVENING ABOVE 4500 FEET... * WHAT...Heavy snow showers and gusty west winds expected. Additional snow accumulations of 3 to 6 inches. Isolated amounts to 10 inches. * WHERE...San Diego County Mountains.</summary>
+<title>Winter Weather Advisory issued December 12 at 2:27PM MST until December 12 at 11:00PM MST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CO12641E2BBDDC.WinterWeatherAdvisory.12641E38ABA0CO.GJTWSWGJT.36ce2cce1183937daf04c310c2045ae7"/>
+<summary>...WINTER WEATHER ADVISORY REMAINS IN EFFECT UNTIL 11 PM MST THIS EVENING ABOVE 8000 FEET... * WHAT...Snow above 8000 feet. Additional snow accumulations of 2 to 4 inches with locally higher amounts possible. * WHERE...Northwest San Juan Mountains. * WHEN...Until 11 PM MST this evening.</summary>
+<cap:event>Winter Weather Advisory</cap:event>
+<cap:effective>2022-12-12T14:27:00-07:00</cap:effective>
+<cap:expires>2022-12-12T23:00:00-07:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Northwestern San Juan Mountains</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>008051 008053 008091 008113</value>
+<valueName>UGC</valueName>
+<value>COZ018</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KGJT.WW.Y.0025.000000T0000Z-221213T0600Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=CO12641E2BBDDC.WinterWeatherAdvisory.12641E399600CO.GJTWSWGJT.3959b747afd387c99723cd742c19eede</id>
+<updated>2022-12-12T14:27:00-07:00</updated>
+<published>2022-12-12T14:27:00-07:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Winter Weather Advisory issued December 12 at 2:27PM MST until December 13 at 5:00AM MST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CO12641E2BBDDC.WinterWeatherAdvisory.12641E399600CO.GJTWSWGJT.3959b747afd387c99723cd742c19eede"/>
+<summary>...WINTER WEATHER ADVISORY REMAINS IN EFFECT UNTIL 5 AM MST TUESDAY... * WHAT...Snow...moderate at times. Additional snow accumulations of 1 to 3 inches. * WHERE...Debeque to Silt Corridor and Central Colorado River Basin.</summary>
+<cap:event>Winter Weather Advisory</cap:event>
+<cap:effective>2022-12-12T14:27:00-07:00</cap:effective>
+<cap:expires>2022-12-13T05:00:00-07:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Central Colorado River Basin; Debeque to Silt Corridor</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>008037 008045 008077</value>
+<valueName>UGC</valueName>
+<value>COZ007 COZ008</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KGJT.WW.Y.0025.000000T0000Z-221213T1200Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=CO12641E2BBDDC.WinterWeatherAdvisory.12641E470380CO.GJTWSWGJT.f663a23a6d6608543de83161f31b1db4</id>
+<updated>2022-12-12T14:27:00-07:00</updated>
+<published>2022-12-12T14:27:00-07:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Winter Weather Advisory issued December 12 at 2:27PM MST until December 13 at 5:00PM MST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CO12641E2BBDDC.WinterWeatherAdvisory.12641E470380CO.GJTWSWGJT.f663a23a6d6608543de83161f31b1db4"/>
+<summary>...WINTER WEATHER ADVISORY REMAINS IN EFFECT UNTIL 5 PM MST TUESDAY... * WHAT...Snow. Additional snow accumulations of 3 to 5 inches with locally higher amounts on north facing slopes. * WHERE...Roan and Tavaputs Plateaus. * WHEN...Until 5 PM MST Tuesday.</summary>
+<cap:event>Winter Weather Advisory</cap:event>
+<cap:effective>2022-12-12T14:27:00-07:00</cap:effective>
+<cap:expires>2022-12-13T17:00:00-07:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Roan and Tavaputs Plateaus</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>008045 008103</value>
+<valueName>UGC</valueName>
+<value>COZ003</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KGJT.WW.Y.0025.000000T0000Z-221214T0000Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=CO12641E2BBDDC.WinterWeatherAdvisory.12641E470380CO.GJTWSWGJT.8a51b94896882d220f0bafb15d592c90</id>
+<updated>2022-12-12T14:27:00-07:00</updated>
+<published>2022-12-12T14:27:00-07:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Winter Weather Advisory issued December 12 at 2:27PM MST until December 13 at 5:00PM MST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CO12641E2BBDDC.WinterWeatherAdvisory.12641E470380CO.GJTWSWGJT.8a51b94896882d220f0bafb15d592c90"/>
+<summary>...WINTER WEATHER ADVISORY REMAINS IN EFFECT UNTIL 5 PM MST TUESDAY... * WHAT...Snow moderate to heavy at times. Additional snow accumulations of 4 to 8 inches with locally higher amounts favoring north facing slopes. * WHERE...Grand and Battlement Mesas.</summary>
+<cap:event>Winter Weather Advisory</cap:event>
+<cap:effective>2022-12-12T14:27:00-07:00</cap:effective>
+<cap:expires>2022-12-13T17:00:00-07:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Grand and Battlement Mesas</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>008029 008077</value>
+<valueName>UGC</valueName>
+<value>COZ009</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KGJT.WW.Y.0025.000000T0000Z-221214T0000Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=CO12641E2BBDDC.WinterWeatherAdvisory.12641E47EDE0CO.GJTWSWGJT.c0c3f079e48c6d9b364d82ee1906a58e</id>
+<updated>2022-12-12T14:27:00-07:00</updated>
+<published>2022-12-12T14:27:00-07:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Winter Weather Advisory issued December 12 at 2:27PM MST until December 13 at 11:00PM MST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CO12641E2BBDDC.WinterWeatherAdvisory.12641E47EDE0CO.GJTWSWGJT.c0c3f079e48c6d9b364d82ee1906a58e"/>
+<summary>...WINTER WEATHER ADVISORY REMAINS IN EFFECT UNTIL 11 PM MST TUESDAY ABOVE 8500 FEET... * WHAT...Snow and blowing snow above 8500 feet. Additional snow accumulations of 4 to 8 inches with locally higher amounts . Winds gusting as high as 45 mph. * WHERE...West Elk and Sawatch Mountains.</summary>
+<cap:event>Winter Weather Advisory</cap:event>
+<cap:effective>2022-12-12T14:27:00-07:00</cap:effective>
+<cap:expires>2022-12-13T23:00:00-07:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>West Elk and Sawatch Mountains</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>008051</value>
+<valueName>UGC</valueName>
+<value>COZ012</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KGJT.WW.Y.0025.000000T0000Z-221214T0600Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=CO12641E2BBDDC.WinterStormWarning.12641E5645C0CO.GJTWSWGJT.b9cfe09f90e70cb60bed669fd2ce802b</id>
+<updated>2022-12-12T14:27:00-07:00</updated>
+<published>2022-12-12T14:27:00-07:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Winter Storm Warning issued December 12 at 2:27PM MST until December 14 at 5:00PM MST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CO12641E2BBDDC.WinterStormWarning.12641E5645C0CO.GJTWSWGJT.b9cfe09f90e70cb60bed669fd2ce802b"/>
+<summary>...WINTER STORM WARNING REMAINS IN EFFECT UNTIL 5 PM MST WEDNESDAY... * WHAT...Prolonged period of snow...moderate to heavy at times. Additional snow accumulations of 12 to 24 inches with locally higher amounts above 11000 feet. The greatest accumulation looks to occur overnight.</summary>
 <cap:event>Winter Storm Warning</cap:event>
-<cap:effective>2022-12-12T04:43:00-08:00</cap:effective>
-<cap:expires>2022-12-12T22:00:00-08:00</cap:expires>
+<cap:effective>2022-12-12T14:27:00-07:00</cap:effective>
+<cap:expires>2022-12-14T17:00:00-07:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
 <cap:category>Met</cap:category>
 <cap:urgency>Expected</cap:urgency>
 <cap:severity>Moderate</cap:severity>
 <cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>San Diego County Mountains</cap:areaDesc>
+<cap:areaDesc>Elkhead and Park Mountains</cap:areaDesc>
 <cap:polygon></cap:polygon>
 <cap:geocode>
 <valueName>FIPS6</valueName>
-<value>006073</value>
+<value>008107</value>
 <valueName>UGC</valueName>
-<value>CAZ058</value>
+<value>COZ004</value>
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
-<value>/O.CON.KSGX.WS.W.0005.000000T0000Z-221213T0600Z/</value>
+<value>/O.CON.KGJT.WS.W.0011.000000T0000Z-221215T0000Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=CO12641E2BBDDC.WinterWeatherAdvisory.12641E5645C0CO.GJTWSWGJT.f2be67c9db6f266ca9b693f1869e462c</id>
+<updated>2022-12-12T14:27:00-07:00</updated>
+<published>2022-12-12T14:27:00-07:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Winter Weather Advisory issued December 12 at 2:27PM MST until December 14 at 5:00PM MST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CO12641E2BBDDC.WinterWeatherAdvisory.12641E5645C0CO.GJTWSWGJT.f2be67c9db6f266ca9b693f1869e462c"/>
+<summary>...WINTER WEATHER ADVISORY REMAINS IN EFFECT UNTIL 5 PM MST WEDNESDAY... * WHAT...Prolonged period of snow...moderate at times. Additional snow accumulations of 4 to 8 inches with locally higher amounts. * WHERE...Central Yampa River Basin. * WHEN...Until 5 PM MST Wednesday.</summary>
+<cap:event>Winter Weather Advisory</cap:event>
+<cap:effective>2022-12-12T14:27:00-07:00</cap:effective>
+<cap:expires>2022-12-14T17:00:00-07:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Central Yampa River Basin</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>008081 008103</value>
+<valueName>UGC</valueName>
+<value>COZ002</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KGJT.WW.Y.0025.000000T0000Z-221215T0000Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=CO12641E2BBDDC.WinterWeatherAdvisory.12641E5645C0CO.GJTWSWGJT.c8ddf0061f3e51e94a1eb8a4d3624999</id>
+<updated>2022-12-12T14:27:00-07:00</updated>
+<published>2022-12-12T14:27:00-07:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Winter Weather Advisory issued December 12 at 2:27PM MST until December 14 at 5:00PM MST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CO12641E2BBDDC.WinterWeatherAdvisory.12641E5645C0CO.GJTWSWGJT.c8ddf0061f3e51e94a1eb8a4d3624999"/>
+<summary>...WINTER WEATHER ADVISORY REMAINS IN EFFECT UNTIL 5 PM MST WEDNESDAY... * WHAT...Prolonged period of snow...moderate to heavy at times. Additional snow accumulations of 9 to 15 inches. The greatest accumulation looks to occur overnight. * WHERE...Upper Yampa River Basin.</summary>
+<cap:event>Winter Weather Advisory</cap:event>
+<cap:effective>2022-12-12T14:27:00-07:00</cap:effective>
+<cap:expires>2022-12-14T17:00:00-07:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Upper Yampa River Basin</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>008107</value>
+<valueName>UGC</valueName>
+<value>COZ005</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KGJT.WW.Y.0025.000000T0000Z-221215T0000Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=CO12641E2BBDDC.WinterWeatherAdvisory.12641E5645C0CO.GJTWSWGJT.c525a548895e0238b2ef51bce32bd974</id>
+<updated>2022-12-12T14:27:00-07:00</updated>
+<published>2022-12-12T14:27:00-07:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Winter Weather Advisory issued December 12 at 2:27PM MST until December 14 at 5:00PM MST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CO12641E2BBDDC.WinterWeatherAdvisory.12641E5645C0CO.GJTWSWGJT.c525a548895e0238b2ef51bce32bd974"/>
+<summary>...WINTER WEATHER ADVISORY REMAINS IN EFFECT UNTIL 5 PM MST WEDNESDAY... * WHAT...Prolonged period of snow...moderate to heavy at times. Additional snow accumulations of 6 to 12 inches with locally higher amounts favored on north facing slopes. Winds gusting as high as 40 mph above timberline.</summary>
+<cap:event>Winter Weather Advisory</cap:event>
+<cap:effective>2022-12-12T14:27:00-07:00</cap:effective>
+<cap:expires>2022-12-14T17:00:00-07:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Gore and Elk Mountains, Central Mountain Valleys</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>008037 008097</value>
+<valueName>UGC</valueName>
+<value>COZ010</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KGJT.WW.Y.0025.000000T0000Z-221215T0000Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=CO12641E2BBDDC.WinterWeatherAdvisory.12641E5645C0CO.GJTWSWGJT.70d3fbbdd22e66f5aeec72662e7c9bf6</id>
+<updated>2022-12-12T14:27:00-07:00</updated>
+<published>2022-12-12T14:27:00-07:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Winter Weather Advisory issued December 12 at 2:27PM MST until December 14 at 5:00PM MST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CO12641E2BBDDC.WinterWeatherAdvisory.12641E5645C0CO.GJTWSWGJT.70d3fbbdd22e66f5aeec72662e7c9bf6"/>
+<summary>...WINTER WEATHER ADVISORY REMAINS IN EFFECT UNTIL 5 PM MST WEDNESDAY... * WHAT...Prolonged period of snow...moderate to heavy at times. Additional snow accumulations of 8 to 12 inches with locally higher amounts on north facing slopes. Winds gusting as high as 35 mph.</summary>
+<cap:event>Winter Weather Advisory</cap:event>
+<cap:effective>2022-12-12T14:27:00-07:00</cap:effective>
+<cap:expires>2022-12-14T17:00:00-07:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Flat Tops</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>008045 008103</value>
+<valueName>UGC</valueName>
+<value>COZ013</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KGJT.WW.Y.0025.000000T0000Z-221215T0000Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -1704,423 +2218,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <valueName>VTEC</valueName>
 <value>/O.UPG.KGLD.HW.A.0011.221213T1200Z-221215T0000Z/
 /O.NEW.KGLD.HW.W.0016.221213T1200Z-221215T0000Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=CO12641E2AB7C0.WinterWeatherAdvisory.12641E37C140CO.GJTWSWGJT.d58a085bfacbd02ebfe3a342204433f4</id>
-<updated>2022-12-12T07:56:00-07:00</updated>
-<published>2022-12-12T07:56:00-07:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Winter Weather Advisory issued December 12 at 7:56AM MST until December 12 at 5:00PM MST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CO12641E2AB7C0.WinterWeatherAdvisory.12641E37C140CO.GJTWSWGJT.d58a085bfacbd02ebfe3a342204433f4"/>
-<summary>...WINTER WEATHER ADVISORY REMAINS IN EFFECT UNTIL 5 PM MST THIS AFTERNOON ABOVE 7500 FEET... * WHAT...Snow above 7500 feet. Additional snow accumulations of 5 to 10 inches. Winds gusting as high as 45 mph. * WHERE...In Colorado, Uncompahgre Plateau and Dallas Divide. In Utah, Tavaputs Plateau and La Sal and Abajo Mountains.</summary>
-<cap:event>Winter Weather Advisory</cap:event>
-<cap:effective>2022-12-12T07:56:00-07:00</cap:effective>
-<cap:expires>2022-12-12T17:00:00-07:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Uncompahgre Plateau, Dallas Divide</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>008077 008085 008091</value>
-<valueName>UGC</valueName>
-<value>COZ017</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KGJT.WW.Y.0025.000000T0000Z-221213T0000Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=CO12641E2AB7C0.WinterWeatherAdvisory.12641E37C140CO.GJTWSWGJT.64172bc6b419e6a2284656e1a5658530</id>
-<updated>2022-12-12T07:56:00-07:00</updated>
-<published>2022-12-12T07:56:00-07:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Winter Weather Advisory issued December 12 at 7:56AM MST until December 12 at 5:00PM MST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CO12641E2AB7C0.WinterWeatherAdvisory.12641E37C140CO.GJTWSWGJT.64172bc6b419e6a2284656e1a5658530"/>
-<summary>...WINTER WEATHER ADVISORY REMAINS IN EFFECT UNTIL 5 PM MST THIS AFTERNOON ABOVE 6500 FEET... * WHAT...Snow expected above 6500 feet. Total snow accumulations of 2 to 5 inches. Winds gusting as high as 45 mph. * WHERE...Four Corners/Upper Dolores River, Animas River Basin and San Juan River Basin.</summary>
-<cap:event>Winter Weather Advisory</cap:event>
-<cap:effective>2022-12-12T07:56:00-07:00</cap:effective>
-<cap:expires>2022-12-12T17:00:00-07:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Animas River Basin; Four Corners, Upper Dolores River; San Juan River Basin</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>008007 008033 008067 008083</value>
-<valueName>UGC</valueName>
-<value>COZ021 COZ022 COZ023</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KGJT.WW.Y.0025.000000T0000Z-221213T0000Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=CO12641E2AB7C0.WinterStormWarning.12641E38ABA0CO.GJTWSWGJT.7a87ff844f7e44a7806f4c2b81d0d797</id>
-<updated>2022-12-12T07:56:00-07:00</updated>
-<published>2022-12-12T07:56:00-07:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Winter Storm Warning issued December 12 at 7:56AM MST until December 12 at 11:00PM MST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CO12641E2AB7C0.WinterStormWarning.12641E38ABA0CO.GJTWSWGJT.7a87ff844f7e44a7806f4c2b81d0d797"/>
-<summary>...WINTER STORM WARNING REMAINS IN EFFECT UNTIL 11 PM MST THIS EVENING... * WHAT...Heavy snow expected. Total snow accumulations of 6 to 12 inches with locally higher amounts. Winds gusting 45 to 60 mph above 10000 feet. * WHERE...Southwest San Juan Mountains.</summary>
-<cap:event>Winter Storm Warning</cap:event>
-<cap:effective>2022-12-12T07:56:00-07:00</cap:effective>
-<cap:expires>2022-12-12T23:00:00-07:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Southwest San Juan Mountains</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>008007 008033 008053 008067 008083 008111</value>
-<valueName>UGC</valueName>
-<value>COZ019</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KGJT.WS.W.0011.000000T0000Z-221213T0600Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=CO12641E2AB7C0.WinterWeatherAdvisory.12641E38ABA0CO.GJTWSWGJT.36ce2cce1183937daf04c310c2045ae7</id>
-<updated>2022-12-12T07:56:00-07:00</updated>
-<published>2022-12-12T07:56:00-07:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Winter Weather Advisory issued December 12 at 7:56AM MST until December 12 at 11:00PM MST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CO12641E2AB7C0.WinterWeatherAdvisory.12641E38ABA0CO.GJTWSWGJT.36ce2cce1183937daf04c310c2045ae7"/>
-<summary>...WINTER WEATHER ADVISORY REMAINS IN EFFECT UNTIL 11 PM MST THIS EVENING ABOVE 8000 FEET... * WHAT...Snow expected above 8000 feet. Total snow accumulations of 4 to 8 inches with locally higher amounts. Winds gusting as high as 50 mph. * WHERE...Northwest San Juan Mountains.</summary>
-<cap:event>Winter Weather Advisory</cap:event>
-<cap:effective>2022-12-12T07:56:00-07:00</cap:effective>
-<cap:expires>2022-12-12T23:00:00-07:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Northwestern San Juan Mountains</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>008051 008053 008091 008113</value>
-<valueName>UGC</valueName>
-<value>COZ018</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KGJT.WW.Y.0025.000000T0000Z-221213T0600Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=CO12641E2AB7C0.WinterWeatherAdvisory.12641E399600CO.GJTWSWGJT.3959b747afd387c99723cd742c19eede</id>
-<updated>2022-12-12T07:56:00-07:00</updated>
-<published>2022-12-12T07:56:00-07:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Winter Weather Advisory issued December 12 at 7:56AM MST until December 13 at 5:00AM MST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CO12641E2AB7C0.WinterWeatherAdvisory.12641E399600CO.GJTWSWGJT.3959b747afd387c99723cd742c19eede"/>
-<summary>...WINTER WEATHER ADVISORY REMAINS IN EFFECT UNTIL 5 AM MST TUESDAY... * WHAT...Snow expected. Total snow accumulations of 2 to 5 inches with locally higher amounts traveling up Hwy 82 corridor and through Glenwood Canyon. * WHERE...Debeque to Silt Corridor and Central Colorado River</summary>
-<cap:event>Winter Weather Advisory</cap:event>
-<cap:effective>2022-12-12T07:56:00-07:00</cap:effective>
-<cap:expires>2022-12-13T05:00:00-07:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Central Colorado River Basin; Debeque to Silt Corridor</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>008037 008045 008077</value>
-<valueName>UGC</valueName>
-<value>COZ007 COZ008</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KGJT.WW.Y.0025.000000T0000Z-221213T1200Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=CO12641E2AB7C0.WinterWeatherAdvisory.12641E470380CO.GJTWSWGJT.f663a23a6d6608543de83161f31b1db4</id>
-<updated>2022-12-12T07:56:00-07:00</updated>
-<published>2022-12-12T07:56:00-07:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Winter Weather Advisory issued December 12 at 7:56AM MST until December 13 at 5:00PM MST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CO12641E2AB7C0.WinterWeatherAdvisory.12641E470380CO.GJTWSWGJT.f663a23a6d6608543de83161f31b1db4"/>
-<summary>...WINTER WEATHER ADVISORY REMAINS IN EFFECT UNTIL 5 PM MST TUESDAY... * WHAT...Snow. Additional snow accumulations of 5 to 10 inches. Winds gusting as high as 40 mph. * WHERE...Roan and Tavaputs Plateaus. * WHEN...Until 5 PM MST Tuesday.</summary>
-<cap:event>Winter Weather Advisory</cap:event>
-<cap:effective>2022-12-12T07:56:00-07:00</cap:effective>
-<cap:expires>2022-12-13T17:00:00-07:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Roan and Tavaputs Plateaus</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>008045 008103</value>
-<valueName>UGC</valueName>
-<value>COZ003</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KGJT.WW.Y.0025.000000T0000Z-221214T0000Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=CO12641E2AB7C0.WinterWeatherAdvisory.12641E470380CO.GJTWSWGJT.8a51b94896882d220f0bafb15d592c90</id>
-<updated>2022-12-12T07:56:00-07:00</updated>
-<published>2022-12-12T07:56:00-07:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Winter Weather Advisory issued December 12 at 7:56AM MST until December 13 at 5:00PM MST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CO12641E2AB7C0.WinterWeatherAdvisory.12641E470380CO.GJTWSWGJT.8a51b94896882d220f0bafb15d592c90"/>
-<summary>...WINTER WEATHER ADVISORY REMAINS IN EFFECT UNTIL 5 PM MST TUESDAY... * WHAT...Snow. Additional snow accumulations of 6 to 12 inches with locally higher amounts. Winds gusting as high as 40 mph. * WHERE...Grand and Battlement Mesas. * WHEN...Until 5 PM MST Tuesday.</summary>
-<cap:event>Winter Weather Advisory</cap:event>
-<cap:effective>2022-12-12T07:56:00-07:00</cap:effective>
-<cap:expires>2022-12-13T17:00:00-07:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Grand and Battlement Mesas</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>008029 008077</value>
-<valueName>UGC</valueName>
-<value>COZ009</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KGJT.WW.Y.0025.000000T0000Z-221214T0000Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=CO12641E2AB7C0.WinterWeatherAdvisory.12641E47EDE0CO.GJTWSWGJT.c0c3f079e48c6d9b364d82ee1906a58e</id>
-<updated>2022-12-12T07:56:00-07:00</updated>
-<published>2022-12-12T07:56:00-07:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Winter Weather Advisory issued December 12 at 7:56AM MST until December 13 at 11:00PM MST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CO12641E2AB7C0.WinterWeatherAdvisory.12641E47EDE0CO.GJTWSWGJT.c0c3f079e48c6d9b364d82ee1906a58e"/>
-<summary>...WINTER WEATHER ADVISORY REMAINS IN EFFECT FROM 11 AM THIS MORNING TO 11 PM MST TUESDAY ABOVE 8500 FEET... * WHAT...Snow expected above 8500 feet. Total snow accumulations of 5 to 10 inches with locally higher amounts. Winds gusting as high as 35 mph. * WHERE...West Elk and Sawatch Mountains.</summary>
-<cap:event>Winter Weather Advisory</cap:event>
-<cap:effective>2022-12-12T07:56:00-07:00</cap:effective>
-<cap:expires>2022-12-13T23:00:00-07:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>West Elk and Sawatch Mountains</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>008051</value>
-<valueName>UGC</valueName>
-<value>COZ012</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KGJT.WW.Y.0025.221212T1800Z-221214T0600Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=CO12641E2AB7C0.WinterStormWarning.12641E5645C0CO.GJTWSWGJT.b9cfe09f90e70cb60bed669fd2ce802b</id>
-<updated>2022-12-12T07:56:00-07:00</updated>
-<published>2022-12-12T07:56:00-07:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Winter Storm Warning issued December 12 at 7:56AM MST until December 14 at 5:00PM MST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CO12641E2AB7C0.WinterStormWarning.12641E5645C0CO.GJTWSWGJT.b9cfe09f90e70cb60bed669fd2ce802b"/>
-<summary>...WINTER STORM WARNING IN EFFECT FROM 11 AM THIS MORNING TO 5 PM MST WEDNESDAY... * WHAT...Prolonged period of snow...moderate to heavy at times. Total snow accumulations of 18 to 25 inches with locally higher amounts. * WHERE...Elkhead and Park Mountains.</summary>
-<cap:event>Winter Storm Warning</cap:event>
-<cap:effective>2022-12-12T07:56:00-07:00</cap:effective>
-<cap:expires>2022-12-14T17:00:00-07:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Elkhead and Park Mountains</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>008107</value>
-<valueName>UGC</valueName>
-<value>COZ004</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.UPG.KGJT.WW.Y.0025.221212T1800Z-221215T0000Z/
-/O.EXB.KGJT.WS.W.0011.221212T1800Z-221215T0000Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=CO12641E2AB7C0.WinterWeatherAdvisory.12641E5645C0CO.GJTWSWGJT.70d3fbbdd22e66f5aeec72662e7c9bf6</id>
-<updated>2022-12-12T07:56:00-07:00</updated>
-<published>2022-12-12T07:56:00-07:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Winter Weather Advisory issued December 12 at 7:56AM MST until December 14 at 5:00PM MST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CO12641E2AB7C0.WinterWeatherAdvisory.12641E5645C0CO.GJTWSWGJT.70d3fbbdd22e66f5aeec72662e7c9bf6"/>
-<summary>...WINTER WEATHER ADVISORY REMAINS IN EFFECT UNTIL 5 PM MST WEDNESDAY... * WHAT...Snow expected. Total snow accumulations of 8 to 12 inches with locally higher amounts. Winds gusting as high as 40 mph. * WHERE...Flat Tops.</summary>
-<cap:event>Winter Weather Advisory</cap:event>
-<cap:effective>2022-12-12T07:56:00-07:00</cap:effective>
-<cap:expires>2022-12-14T17:00:00-07:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Flat Tops</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>008045 008103</value>
-<valueName>UGC</valueName>
-<value>COZ013</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KGJT.WW.Y.0025.000000T0000Z-221215T0000Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=CO12641E2AB7C0.WinterWeatherAdvisory.12641E5645C0CO.GJTWSWGJT.f2be67c9db6f266ca9b693f1869e462c</id>
-<updated>2022-12-12T07:56:00-07:00</updated>
-<published>2022-12-12T07:56:00-07:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Winter Weather Advisory issued December 12 at 7:56AM MST until December 14 at 5:00PM MST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CO12641E2AB7C0.WinterWeatherAdvisory.12641E5645C0CO.GJTWSWGJT.f2be67c9db6f266ca9b693f1869e462c"/>
-<summary>...WINTER WEATHER ADVISORY REMAINS IN EFFECT FROM 11 AM THIS MORNING TO 5 PM MST WEDNESDAY... * WHAT...Snow expected. Total snow accumulations of 6 to 10 inches with locally higher amounts. * WHERE...Central Yampa River Basin. * WHEN...From 11 AM this morning to 5 PM MST Wednesday.</summary>
-<cap:event>Winter Weather Advisory</cap:event>
-<cap:effective>2022-12-12T07:56:00-07:00</cap:effective>
-<cap:expires>2022-12-14T17:00:00-07:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Central Yampa River Basin</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>008081 008103</value>
-<valueName>UGC</valueName>
-<value>COZ002</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KGJT.WW.Y.0025.221212T1800Z-221215T0000Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=CO12641E2AB7C0.WinterWeatherAdvisory.12641E5645C0CO.GJTWSWGJT.c8ddf0061f3e51e94a1eb8a4d3624999</id>
-<updated>2022-12-12T07:56:00-07:00</updated>
-<published>2022-12-12T07:56:00-07:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Winter Weather Advisory issued December 12 at 7:56AM MST until December 14 at 5:00PM MST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CO12641E2AB7C0.WinterWeatherAdvisory.12641E5645C0CO.GJTWSWGJT.c8ddf0061f3e51e94a1eb8a4d3624999"/>
-<summary>...WINTER WEATHER ADVISORY REMAINS IN EFFECT FROM 11 AM THIS MORNING TO 5 PM MST WEDNESDAY... * WHAT...Prolonged period of snow expected...moderate at times. Total snow accumulations of 12 to 16 inches with locally higher amounts. * WHERE...Upper Yampa River Basin.</summary>
-<cap:event>Winter Weather Advisory</cap:event>
-<cap:effective>2022-12-12T07:56:00-07:00</cap:effective>
-<cap:expires>2022-12-14T17:00:00-07:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Upper Yampa River Basin</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>008107</value>
-<valueName>UGC</valueName>
-<value>COZ005</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KGJT.WW.Y.0025.221212T1800Z-221215T0000Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=CO12641E2AB7C0.WinterWeatherAdvisory.12641E5645C0CO.GJTWSWGJT.c525a548895e0238b2ef51bce32bd974</id>
-<updated>2022-12-12T07:56:00-07:00</updated>
-<published>2022-12-12T07:56:00-07:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Winter Weather Advisory issued December 12 at 7:56AM MST until December 14 at 5:00PM MST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CO12641E2AB7C0.WinterWeatherAdvisory.12641E5645C0CO.GJTWSWGJT.c525a548895e0238b2ef51bce32bd974"/>
-<summary>...WINTER WEATHER ADVISORY REMAINS IN EFFECT FROM 11 AM THIS MORNING TO 5 PM MST WEDNESDAY... * WHAT...Snow expected. Total snow accumulations of 5 to 10 inches with locally higher amounts. Winds gusting as high as 35 mph. * WHERE...Gore and Elk Mountains/Central Mountain Valleys.</summary>
-<cap:event>Winter Weather Advisory</cap:event>
-<cap:effective>2022-12-12T07:56:00-07:00</cap:effective>
-<cap:expires>2022-12-14T17:00:00-07:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Gore and Elk Mountains, Central Mountain Valleys</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>008037 008097</value>
-<valueName>UGC</valueName>
-<value>COZ010</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KGJT.WW.Y.0025.221212T1800Z-221215T0000Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -2637,6 +2734,103 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=IA12641E2BBABC.WindAdvisory.12641E4778B0IA.DMXNPWDMX.7e30b13378343370bf7aa530bab91eb3</id>
+<updated>2022-12-12T15:19:00-06:00</updated>
+<published>2022-12-12T15:19:00-06:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Wind Advisory issued December 12 at 3:19PM CST until December 13 at 9:00PM CST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=IA12641E2BBABC.WindAdvisory.12641E4778B0IA.DMXNPWDMX.7e30b13378343370bf7aa530bab91eb3"/>
+<summary>...WIND ADVISORY IN EFFECT FROM 6 AM TO 9 PM CST TUESDAY... * WHAT...Southeast winds 25 to 30 mph with gusts of 45 to 50 mph expected. * WHERE...Much of Central Iowa. * WHEN...From 6 AM to 9 PM CST Tuesday. * IMPACTS...Gusty winds could blow around unsecured objects.</summary>
+<cap:event>Wind Advisory</cap:event>
+<cap:effective>2022-12-12T15:19:00-06:00</cap:effective>
+<cap:expires>2022-12-13T21:00:00-06:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Adair; Adams; Appanoose; Audubon; Black Hawk; Boone; Bremer; Butler; Carroll; Cass; Clarke; Crawford; Dallas; Davis; Decatur; Greene; Grundy; Guthrie; Hamilton; Hardin; Jasper; Lucas; Madison; Mahaska; Marion; Marshall; Monroe; Polk; Poweshiek; Ringgold; Story; Tama; Taylor; Union; Wapello; Warren; Wayne</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>019001 019003 019007 019009 019013 019015 019017 019023 019027 019029 019039 019047 019049 019051 019053 019073 019075 019077 019079 019083 019099 019117 019121 019123 019125 019127 019135 019153 019157 019159 019169 019171 019173 019175 019179 019181 019185</value>
+<valueName>UGC</valueName>
+<value>IAZ027 IAZ028 IAZ036 IAZ037 IAZ038 IAZ039 IAZ044 IAZ045 IAZ046 IAZ047 IAZ048 IAZ049 IAZ050 IAZ057 IAZ058 IAZ059 IAZ060 IAZ061 IAZ062 IAZ070 IAZ071 IAZ072 IAZ073 IAZ074 IAZ075 IAZ081 IAZ082 IAZ083 IAZ084 IAZ085 IAZ086 IAZ092 IAZ093 IAZ094 IAZ095 IAZ096 IAZ097</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.NEW.KDMX.WI.Y.0017.221213T1200Z-221214T0300Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=IA12641E2BB990.WinterWeatherAdvisory.12641E3A8060IA.DMXWSWDMX.3a05d40b91a569bfadef209260d9ab4c</id>
+<updated>2022-12-12T15:16:00-06:00</updated>
+<published>2022-12-12T15:16:00-06:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Winter Weather Advisory issued December 12 at 3:16PM CST until December 13 at 12:00PM CST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=IA12641E2BB990.WinterWeatherAdvisory.12641E3A8060IA.DMXWSWDMX.3a05d40b91a569bfadef209260d9ab4c"/>
+<summary>...Freezing Rain Potential Late Tonight into Tuesday Morning... .A strong winter storm is set to impact much of the region including Iowa. A mix of snow and freezing drizzle or freezing rain is expected across portions of north and northwest Iowa tonight into Tuesday morning. This may produce substantial glazing before changing to rain by Tuesday afternoon. In addition, strong</summary>
+<cap:event>Winter Weather Advisory</cap:event>
+<cap:effective>2022-12-12T15:16:00-06:00</cap:effective>
+<cap:expires>2022-12-13T12:00:00-06:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Calhoun; Emmet; Humboldt; Kossuth; Palo Alto; Pocahontas; Sac; Webster</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>019025 019063 019091 019109 019147 019151 019161 019187</value>
+<valueName>UGC</valueName>
+<value>IAZ004 IAZ005 IAZ015 IAZ023 IAZ024 IAZ033 IAZ034 IAZ035</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.UPG.KDMX.WS.A.0003.221213T0600Z-221214T0000Z/
+/O.NEW.KDMX.WW.Y.0020.221213T0000Z-221213T1800Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=IA12641E2BB990.WinterWeatherAdvisory.12641E3A8060IA.DMXWSWDMX.8b48575e0eca03e65ef91f4393ea8a2c</id>
+<updated>2022-12-12T15:16:00-06:00</updated>
+<published>2022-12-12T15:16:00-06:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Winter Weather Advisory issued December 12 at 3:16PM CST until December 13 at 12:00PM CST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=IA12641E2BB990.WinterWeatherAdvisory.12641E3A8060IA.DMXWSWDMX.8b48575e0eca03e65ef91f4393ea8a2c"/>
+<summary>...Freezing Rain Potential Late Tonight into Tuesday Morning... .A strong winter storm is set to impact much of the region including Iowa. A mix of snow and freezing drizzle or freezing rain is expected across portions of north and northwest Iowa tonight into Tuesday morning. This may produce substantial glazing before changing to rain by Tuesday afternoon. In addition, strong</summary>
+<cap:event>Winter Weather Advisory</cap:event>
+<cap:effective>2022-12-12T15:16:00-06:00</cap:effective>
+<cap:expires>2022-12-13T12:00:00-06:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Cerro Gordo; Franklin; Hancock; Winnebago; Worth; Wright</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>019033 019069 019081 019189 019195 019197</value>
+<valueName>UGC</valueName>
+<value>IAZ006 IAZ007 IAZ016 IAZ017 IAZ025 IAZ026</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.NEW.KDMX.WW.Y.0020.221213T0600Z-221213T1800Z/</value>
+</cap:parameter>
+</entry>
+<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=IA12641E2BA220.IceStormWarning.12641E3A8060IA.FSDWSWFSD.909f13e18b0771a74418f00507ea3a3f</id>
 <updated>2022-12-12T14:56:00-06:00</updated>
 <published>2022-12-12T14:56:00-06:00</published>
@@ -2796,38 +2990,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value>/O.NEW.KDVN.WI.Y.0011.221213T1500Z-221214T0300Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=IA12641E2B296C.WinterStormWatch.12641E470380IA.DMXWSWDMX.5595969b2231124b37433cf911043e7a</id>
-<updated>2022-12-12T11:47:00-06:00</updated>
-<published>2022-12-12T11:47:00-06:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Winter Storm Watch issued December 12 at 11:47AM CST until December 13 at 6:00PM CST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=IA12641E2B296C.WinterStormWatch.12641E470380IA.DMXWSWDMX.5595969b2231124b37433cf911043e7a"/>
-<summary>...Freezing Rain Potential Late Tonight into Tuesday Morning... .A strong winter storm is set to impact much of the region including Iowa. Freezing rain is expected across portions of western and northern Iowa late tonight into Tuesday morning. This may produce substantial glazing before changing to rain by Tuesday afternoon. In addition, strong winds are forecast for much</summary>
-<cap:event>Winter Storm Watch</cap:event>
-<cap:effective>2022-12-12T11:47:00-06:00</cap:effective>
-<cap:expires>2022-12-13T18:00:00-06:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Future</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Possible</cap:certainty>
-<cap:areaDesc>Calhoun; Carroll; Emmet; Greene; Humboldt; Kossuth; Palo Alto; Pocahontas; Sac; Webster</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>019025 019027 019063 019073 019091 019109 019147 019151 019161 019187</value>
-<valueName>UGC</valueName>
-<value>IAZ004 IAZ005 IAZ015 IAZ023 IAZ024 IAZ033 IAZ034 IAZ035 IAZ045 IAZ046</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KDMX.WS.A.0003.221213T0600Z-221214T0000Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -3999,38 +4161,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value>/O.CON.KTFX.WW.Y.0052.000000T0000Z-221213T0600Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=MT12641E2B3E20.WinterWeatherAdvisory.12641E37C140MT.MSOWSWMSO.9f49a0ece00fd6646c9fd64dc772e286</id>
-<updated>2022-12-12T11:00:00-07:00</updated>
-<published>2022-12-12T11:00:00-07:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Winter Weather Advisory issued December 12 at 11:00AM MST until December 12 at 5:00PM MST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MT12641E2B3E20.WinterWeatherAdvisory.12641E37C140MT.MSOWSWMSO.9f49a0ece00fd6646c9fd64dc772e286"/>
-<summary>...WINTER WEATHER ADVISORY REMAINS IN EFFECT UNTIL 5 PM MST THIS AFTERNOON... * WHAT...Snow expected. Total snow accumulations of up to two inches, except up to 3 inches west of Anaconda. Northeast winds 15 to 25 mph with gusts to 35 mph are expected along Highways 200 and 12 will cause blowing snow that will reduce</summary>
-<cap:event>Winter Weather Advisory</cap:event>
-<cap:effective>2022-12-12T11:00:00-07:00</cap:effective>
-<cap:expires>2022-12-12T17:00:00-07:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Butte, Blackfoot Region</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>030023 030039 030077 030093</value>
-<valueName>UGC</valueName>
-<value>MTZ007</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KMSO.WW.Y.0056.000000T0000Z-221213T0000Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -5491,6 +5621,166 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=NV12641E2BBF6C.WinterStormWarning.12641E38ABA0NV.LKNWSWLKN.2f83642e2868a5ff3e029e2a2f4d85af</id>
+<updated>2022-12-12T13:31:00-08:00</updated>
+<published>2022-12-12T13:31:00-08:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Winter Storm Warning issued December 12 at 1:31PM PST until December 12 at 10:00PM PST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=NV12641E2BBF6C.WinterStormWarning.12641E38ABA0NV.LKNWSWLKN.2f83642e2868a5ff3e029e2a2f4d85af"/>
+<summary>...WINTER STORM WARNING REMAINS IN EFFECT UNTIL 10 PM PST THIS EVENING... * WHAT...Heavy snow. Additional snow accumulations of up to 4 inches. * WHERE...Ruby Mountains and East Humboldt Range. * WHEN...Until 10 PM PST this evening.</summary>
+<cap:event>Winter Storm Warning</cap:event>
+<cap:effective>2022-12-12T13:31:00-08:00</cap:effective>
+<cap:expires>2022-12-12T22:00:00-08:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Ruby Mountains and East Humboldt Range</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>032007</value>
+<valueName>UGC</valueName>
+<value>NVZ034</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KLKN.WS.W.0004.000000T0000Z-221213T0600Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=NV12641E2BBF6C.WinterWeatherAdvisory.12641E38ABA0NV.LKNWSWLKN.d83f1ca2d7f3970dcd72e78e13f01d83</id>
+<updated>2022-12-12T13:31:00-08:00</updated>
+<published>2022-12-12T13:31:00-08:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Winter Weather Advisory issued December 12 at 1:31PM PST until December 12 at 10:00PM PST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=NV12641E2BBF6C.WinterWeatherAdvisory.12641E38ABA0NV.LKNWSWLKN.d83f1ca2d7f3970dcd72e78e13f01d83"/>
+<summary>...WINTER WEATHER ADVISORY REMAINS IN EFFECT UNTIL 10 PM PST THIS EVENING... * WHAT...Snow. Additional snow accumulations of up to 3 inches. * WHERE...Humboldt County, Northern Lander County and Northern Eureka County and Southwest Elko County. * WHEN...Until 10 PM PST this evening.</summary>
+<cap:event>Winter Weather Advisory</cap:event>
+<cap:effective>2022-12-12T13:31:00-08:00</cap:effective>
+<cap:expires>2022-12-12T22:00:00-08:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Humboldt County; Northern Lander County and Northern Eureka County; Southwest Elko County</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>032007 032011 032013 032015</value>
+<valueName>UGC</valueName>
+<value>NVZ030 NVZ036 NVZ038</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KLKN.WW.Y.0021.000000T0000Z-221213T0600Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=NV12641E2BBF6C.WinterWeatherAdvisory.12641E38ABA0NV.LKNWSWLKN.e9d1dedf95106c1f026006e407682426</id>
+<updated>2022-12-12T13:31:00-08:00</updated>
+<published>2022-12-12T13:31:00-08:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Winter Weather Advisory issued December 12 at 1:31PM PST until December 12 at 10:00PM PST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=NV12641E2BBF6C.WinterWeatherAdvisory.12641E38ABA0NV.LKNWSWLKN.e9d1dedf95106c1f026006e407682426"/>
+<summary>...WINTER WEATHER ADVISORY REMAINS IN EFFECT UNTIL 10 PM PST THIS EVENING... * WHAT...Snow. Additional snow accumulations of up to two inches. * WHERE...Northern Elko County. * WHEN...Until 10 PM PST this evening. * IMPACTS...Plan on slippery road conditions. The hazardous</summary>
+<cap:event>Winter Weather Advisory</cap:event>
+<cap:effective>2022-12-12T13:31:00-08:00</cap:effective>
+<cap:expires>2022-12-12T22:00:00-08:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Northern Elko County</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>032007</value>
+<valueName>UGC</valueName>
+<value>NVZ031</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KLKN.WW.Y.0021.000000T0000Z-221213T0600Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=NV12641E2BBF6C.WinterWeatherAdvisory.12641E38ABA0NV.LKNWSWLKN.18cdfffb1af160e3abc5c7d04e43038a</id>
+<updated>2022-12-12T13:31:00-08:00</updated>
+<published>2022-12-12T13:31:00-08:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Winter Weather Advisory issued December 12 at 1:31PM PST until December 12 at 10:00PM PST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=NV12641E2BBF6C.WinterWeatherAdvisory.12641E38ABA0NV.LKNWSWLKN.18cdfffb1af160e3abc5c7d04e43038a"/>
+<summary>...WINTER WEATHER ADVISORY IN EFFECT UNTIL 10 PM PST THIS EVENING... * WHAT...Snow. Additional snow accumulations of 1 to 3 inches in valleys and 4 to 8 inches in the mountains. * WHERE...Southern Lander County and Southern Eureka County. * WHEN...Until 10 PM PST this evening.</summary>
+<cap:event>Winter Weather Advisory</cap:event>
+<cap:effective>2022-12-12T13:31:00-08:00</cap:effective>
+<cap:expires>2022-12-12T22:00:00-08:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Southern Lander County and Southern Eureka County</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>032011 032015</value>
+<valueName>UGC</valueName>
+<value>NVZ037</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.EXA.KLKN.WW.Y.0021.000000T0000Z-221213T0600Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=NV12641E2BB670.LakeWindAdvisory.12641E385D80NV.REVNPWREV.ec117ed2c2d07cd7b8295549dc690279</id>
+<updated>2022-12-12T13:08:00-08:00</updated>
+<published>2022-12-12T13:08:00-08:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Lake Wind Advisory issued December 12 at 1:08PM PST until December 12 at 8:00PM PST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=NV12641E2BB670.LakeWindAdvisory.12641E385D80NV.REVNPWREV.ec117ed2c2d07cd7b8295549dc690279"/>
+<summary>...LAKE WIND ADVISORY NOW IN EFFECT UNTIL 8 PM PST THIS EVENING FOR PYRAMID LAKE... * CHANGES...Extended duration of advisory to until 8 PM. * WHAT...Northwest winds 15 to 20 mph with gusts of 30 to 35 mph. Waves 2 to 3 feet. Waves to 4 feet around Anaho Island. * WHERE...Pyramid Lake.</summary>
+<cap:event>Lake Wind Advisory</cap:event>
+<cap:effective>2022-12-12T13:08:00-08:00</cap:effective>
+<cap:expires>2022-12-12T20:00:00-08:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Western Nevada Basin and Range including Pyramid Lake</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>032001 032019 032027</value>
+<valueName>UGC</valueName>
+<value>NVZ004</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.EXT.KREV.LW.Y.0045.000000T0000Z-221213T0400Z/</value>
+</cap:parameter>
+</entry>
+<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=NV12641E2B6A44.SpecialWeatherStatement.12641E380F60NV.REVSPSREV.cee78f4db86d9ef6e3341c329259a56e</id>
 <updated>2022-12-12T11:13:00-08:00</updated>
 <published>2022-12-12T11:13:00-08:00</published>
@@ -5520,134 +5810,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value></value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=NV12641E2AA49C.WinterStormWarning.12641E38ABA0NV.LKNWSWLKN.2f83642e2868a5ff3e029e2a2f4d85af</id>
-<updated>2022-12-12T06:07:00-08:00</updated>
-<published>2022-12-12T06:07:00-08:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Winter Storm Warning issued December 12 at 6:07AM PST until December 12 at 10:00PM PST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=NV12641E2AA49C.WinterStormWarning.12641E38ABA0NV.LKNWSWLKN.2f83642e2868a5ff3e029e2a2f4d85af"/>
-<summary>...WINTER STORM WARNING REMAINS IN EFFECT UNTIL 10 PM PST THIS EVENING... * WHAT...Heavy snow. Additional snow accumulations of 6 to 12 inches. Wind gusts of 25 to 40 mph. * WHERE...Ruby Mountains and East Humboldt Range. * WHEN...Until 10 PM PST this evening.</summary>
-<cap:event>Winter Storm Warning</cap:event>
-<cap:effective>2022-12-12T06:07:00-08:00</cap:effective>
-<cap:expires>2022-12-12T22:00:00-08:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Ruby Mountains and East Humboldt Range</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>032007</value>
-<valueName>UGC</valueName>
-<value>NVZ034</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KLKN.WS.W.0004.000000T0000Z-221213T0600Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=NV12641E2AA49C.WinterWeatherAdvisory.12641E38ABA0NV.LKNWSWLKN.d83f1ca2d7f3970dcd72e78e13f01d83</id>
-<updated>2022-12-12T06:07:00-08:00</updated>
-<published>2022-12-12T06:07:00-08:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Winter Weather Advisory issued December 12 at 6:07AM PST until December 12 at 10:00PM PST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=NV12641E2AA49C.WinterWeatherAdvisory.12641E38ABA0NV.LKNWSWLKN.d83f1ca2d7f3970dcd72e78e13f01d83"/>
-<summary>...WINTER WEATHER ADVISORY REMAINS IN EFFECT UNTIL 10 PM PST THIS EVENING... * WHAT...Snow. Additional snow accumulations, valleys 1 to 3 inches with locally higher amounts, mountains 5 to 10 inches. Westerly wind gusts of 10 to 20 mph in valleys, and 20 to 35 mph in mountains and over higher summits.</summary>
-<cap:event>Winter Weather Advisory</cap:event>
-<cap:effective>2022-12-12T06:07:00-08:00</cap:effective>
-<cap:expires>2022-12-12T22:00:00-08:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Humboldt County; Northern Lander County and Northern Eureka County; Southwest Elko County</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>032007 032011 032013 032015</value>
-<valueName>UGC</valueName>
-<value>NVZ030 NVZ036 NVZ038</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KLKN.WW.Y.0021.000000T0000Z-221213T0600Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=NV12641E2AA49C.WinterWeatherAdvisory.12641E38ABA0NV.LKNWSWLKN.e9d1dedf95106c1f026006e407682426</id>
-<updated>2022-12-12T06:07:00-08:00</updated>
-<published>2022-12-12T06:07:00-08:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Winter Weather Advisory issued December 12 at 6:07AM PST until December 12 at 10:00PM PST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=NV12641E2AA49C.WinterWeatherAdvisory.12641E38ABA0NV.LKNWSWLKN.e9d1dedf95106c1f026006e407682426"/>
-<summary>...WINTER WEATHER ADVISORY REMAINS IN EFFECT UNTIL 10 PM PST THIS EVENING... * WHAT...Snow. Additional snow accumulations of 1 to 3 inches along and east of Highway 93. Across western and central portions of Northern Elko County (including the Mountain City and Wildhorse areas) additional snow accumulations of 3 to 10</summary>
-<cap:event>Winter Weather Advisory</cap:event>
-<cap:effective>2022-12-12T06:07:00-08:00</cap:effective>
-<cap:expires>2022-12-12T22:00:00-08:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Northern Elko County</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>032007</value>
-<valueName>UGC</valueName>
-<value>NVZ031</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KLKN.WW.Y.0021.000000T0000Z-221213T0600Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=NV12641E2A0D0C.LakeWindAdvisory.12641E37E850NV.REVNPWREV.ec117ed2c2d07cd7b8295549dc690279</id>
-<updated>2022-12-12T02:19:00-08:00</updated>
-<published>2022-12-12T02:19:00-08:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Lake Wind Advisory issued December 12 at 2:19AM PST until December 12 at 5:00PM PST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=NV12641E2A0D0C.LakeWindAdvisory.12641E37E850NV.REVNPWREV.ec117ed2c2d07cd7b8295549dc690279"/>
-<summary>...LAKE WIND ADVISORY IN EFFECT FROM 10 AM THIS MORNING TO 5 PM PST THIS AFTERNOON FOR PYRAMID LAKE... * WHAT...Northwest winds 15 to 20 mph with gusts up to 30 mph expected. Waves 1 to 3 feet. * WHERE...Pyramid Lake. * WHEN...From 10 AM this morning to 5 PM PST this afternoon.</summary>
-<cap:event>Lake Wind Advisory</cap:event>
-<cap:effective>2022-12-12T02:19:00-08:00</cap:effective>
-<cap:expires>2022-12-12T17:00:00-08:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Western Nevada Basin and Range including Pyramid Lake</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>032001 032019 032027</value>
-<valueName>UGC</valueName>
-<value>NVZ004</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.NEW.KREV.LW.Y.0045.221212T1800Z-221213T0100Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -6619,49 +6781,17 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=UT12641E2AB7C0.WinterWeatherAdvisory.12641E2BDA60UT.GJTWSWGJT.a8eb05d78de22168c395b49a417da7e5</id>
-<updated>2022-12-12T07:56:00-07:00</updated>
-<published>2022-12-12T07:56:00-07:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=UT12641E2BBDDC.WinterWeatherAdvisory.12641E37C140UT.GJTWSWGJT.9711f0bfa78d9731ce573cd5d908abdb</id>
+<updated>2022-12-12T14:27:00-07:00</updated>
+<published>2022-12-12T14:27:00-07:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Winter Weather Advisory issued December 12 at 7:56AM MST until December 12 at 3:00PM MST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=UT12641E2AB7C0.WinterWeatherAdvisory.12641E2BDA60UT.GJTWSWGJT.a8eb05d78de22168c395b49a417da7e5"/>
-<summary>...WINTER WEATHER ADVISORY REMAINS IN EFFECT UNTIL 3 PM MST THIS AFTERNOON... * WHAT...Snow. Total snow accumulations of 2 to 5 inches. * WHERE...Eastern Uinta Basin. * WHEN...Until 3 PM MST this afternoon. * IMPACTS...Plan on slippery road conditions. A detailed map of</summary>
+<title>Winter Weather Advisory issued December 12 at 2:27PM MST until December 12 at 5:00PM MST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=UT12641E2BBDDC.WinterWeatherAdvisory.12641E37C140UT.GJTWSWGJT.9711f0bfa78d9731ce573cd5d908abdb"/>
+<summary>...WINTER WEATHER ADVISORY REMAINS IN EFFECT UNTIL 5 PM MST THIS AFTERNOON... * WHAT...Snow. Additional snow accumulations of up to two inches. * WHERE...Eastern Uinta Mountains. * WHEN...Until 5 PM MST this afternoon. * IMPACTS...Plan on slippery road conditions. A detailed map of</summary>
 <cap:event>Winter Weather Advisory</cap:event>
-<cap:effective>2022-12-12T07:56:00-07:00</cap:effective>
-<cap:expires>2022-12-12T15:00:00-07:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Eastern Uinta Basin</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>049047</value>
-<valueName>UGC</valueName>
-<value>UTZ024</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KGJT.WW.Y.0025.000000T0000Z-221212T2200Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=UT12641E2AB7C0.WinterWeatherAdvisory.12641E37C140UT.GJTWSWGJT.9711f0bfa78d9731ce573cd5d908abdb</id>
-<updated>2022-12-12T07:56:00-07:00</updated>
-<published>2022-12-12T07:56:00-07:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Winter Weather Advisory issued December 12 at 7:56AM MST until December 12 at 5:00PM MST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=UT12641E2AB7C0.WinterWeatherAdvisory.12641E37C140UT.GJTWSWGJT.9711f0bfa78d9731ce573cd5d908abdb"/>
-<summary>...WINTER WEATHER ADVISORY REMAINS IN EFFECT UNTIL 5 PM MST THIS AFTERNOON... * WHAT...Snow above 8500 feet. Additional snow accumulations of 5 to 10 inches. Expect total snowfall accumulations of 6 to 12 inches with locally higher amounts. * WHERE...Eastern Uinta Mountains.</summary>
-<cap:event>Winter Weather Advisory</cap:event>
-<cap:effective>2022-12-12T07:56:00-07:00</cap:effective>
+<cap:effective>2022-12-12T14:27:00-07:00</cap:effective>
 <cap:expires>2022-12-12T17:00:00-07:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
@@ -6683,17 +6813,49 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=UT12641E2AB7C0.WinterWeatherAdvisory.12641E37C140UT.GJTWSWGJT.698e1f63e428e3dc194edd6954c1d0f2</id>
-<updated>2022-12-12T07:56:00-07:00</updated>
-<published>2022-12-12T07:56:00-07:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=UT12641E2BBDDC.WinterWeatherAdvisory.12641E37C140UT.GJTWSWGJT.a8eb05d78de22168c395b49a417da7e5</id>
+<updated>2022-12-12T14:27:00-07:00</updated>
+<published>2022-12-12T14:27:00-07:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Winter Weather Advisory issued December 12 at 7:56AM MST until December 12 at 5:00PM MST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=UT12641E2AB7C0.WinterWeatherAdvisory.12641E37C140UT.GJTWSWGJT.698e1f63e428e3dc194edd6954c1d0f2"/>
-<summary>...WINTER WEATHER ADVISORY REMAINS IN EFFECT UNTIL 5 PM MST THIS AFTERNOON ABOVE 7500 FEET... * WHAT...Snow above 7500 feet. Additional snow accumulations of 5 to 10 inches. Winds gusting as high as 45 mph. * WHERE...In Colorado, Uncompahgre Plateau and Dallas Divide. In Utah, Tavaputs Plateau and La Sal and Abajo Mountains.</summary>
+<title>Winter Weather Advisory issued December 12 at 2:27PM MST until December 12 at 5:00PM MST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=UT12641E2BBDDC.WinterWeatherAdvisory.12641E37C140UT.GJTWSWGJT.a8eb05d78de22168c395b49a417da7e5"/>
+<summary>...WINTER WEATHER ADVISORY NOW IN EFFECT UNTIL 5 PM MST THIS AFTERNOON... * WHAT...Snow. Additional snow accumulations of 1 to 2 inches mainly on vegetation and unplowed surfaces. * WHERE...Eastern Uinta Basin. * WHEN...Until 5 PM MST this afternoon.</summary>
 <cap:event>Winter Weather Advisory</cap:event>
-<cap:effective>2022-12-12T07:56:00-07:00</cap:effective>
+<cap:effective>2022-12-12T14:27:00-07:00</cap:effective>
+<cap:expires>2022-12-12T17:00:00-07:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Eastern Uinta Basin</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>049047</value>
+<valueName>UGC</valueName>
+<value>UTZ024</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.EXT.KGJT.WW.Y.0025.000000T0000Z-221213T0000Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=UT12641E2BBDDC.WinterWeatherAdvisory.12641E37C140UT.GJTWSWGJT.698e1f63e428e3dc194edd6954c1d0f2</id>
+<updated>2022-12-12T14:27:00-07:00</updated>
+<published>2022-12-12T14:27:00-07:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Winter Weather Advisory issued December 12 at 2:27PM MST until December 12 at 5:00PM MST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=UT12641E2BBDDC.WinterWeatherAdvisory.12641E37C140UT.GJTWSWGJT.698e1f63e428e3dc194edd6954c1d0f2"/>
+<summary>...WINTER WEATHER ADVISORY REMAINS IN EFFECT UNTIL 5 PM MST THIS AFTERNOON ABOVE 7500 FEET... * WHAT...Snow above 7500 feet. Additional snow accumulations of 2 to 3 inches. * WHERE...In Colorado, Uncompahgre Plateau and Dallas Divide. In Utah, Tavaputs Plateau and La Sal and Abajo Mountains.</summary>
+<cap:event>Winter Weather Advisory</cap:event>
+<cap:effective>2022-12-12T14:27:00-07:00</cap:effective>
 <cap:expires>2022-12-12T17:00:00-07:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
