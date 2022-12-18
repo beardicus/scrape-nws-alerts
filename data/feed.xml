@@ -16,16 +16,48 @@ xmlns = 'http://www.w3.org/2005/Atom'
 xmlns:cap = 'urn:oasis:names:tc:emergency:cap:1.1'
 xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 >
-<!-- http-date = Sun, 18 Dec 2022 06:59:00 GMT -->
+<!-- http-date = Sun, 18 Dec 2022 08:04:00 GMT -->
 <id>https://alerts.weather.gov/cap/us.php?x=0</id>
 <logo>http://alerts.weather.gov/images/xml_logo.gif</logo>
 <generator>NWS CAP Server</generator>
-<updated>2022-12-18T06:59:00+00:00</updated>
+<updated>2022-12-18T03:04:00-05:00</updated>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
 <title>Current Watches, Warnings and Advisories for the United States Issued by the National Weather Service</title>
 <link href="https://alerts.weather.gov/cap/us.php?x=0"/>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=AK12641E85304C.WindChillAdvisory.12641EB4B970AK.AJKWSWAJK.acab49871e29d4b86c4c5784ec209cf6</id>
+<updated>2022-12-17T22:47:00-09:00</updated>
+<published>2022-12-17T22:47:00-09:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Wind Chill Advisory issued December 17 at 10:47PM AKST until December 21 at 10:00AM AKST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=AK12641E85304C.WindChillAdvisory.12641EB4B970AK.AJKWSWAJK.acab49871e29d4b86c4c5784ec209cf6"/>
+<summary>...WIND CHILL ADVISORY REMAINS IN EFFECT UNTIL 10 AM AKST WEDNESDAY... * WHAT...Very cold wind chills expected. Wind chills as low as 30 to 45 below zero. * WHERE...Near White Pass. * WHEN...Until 10 AM AKST Wednesday.</summary>
+<cap:event>Wind Chill Advisory</cap:event>
+<cap:effective>2022-12-17T22:47:00-09:00</cap:effective>
+<cap:expires>2022-12-21T10:00:00-09:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Municipality of Skagway</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>002230</value>
+<valueName>UGC</valueName>
+<value>AKZ318</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.PAJK.WC.Y.0006.000000T0000Z-221221T1900Z/</value>
+</cap:parameter>
+</entry>
 <entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=AK12641E841900.SpecialWeatherStatement.12641E936054AK.AJKSPSAJK.cc9c76c3a76390e82d013b203d155997</id>
 <updated>2022-12-17T15:32:00-09:00</updated>
@@ -56,38 +88,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value></value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=AK12641E8411F8.WindChillAdvisory.12641EB4B970AK.AJKWSWAJK.acab49871e29d4b86c4c5784ec209cf6</id>
-<updated>2022-12-17T15:14:00-09:00</updated>
-<published>2022-12-17T15:14:00-09:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Wind Chill Advisory issued December 17 at 3:14PM AKST until December 21 at 10:00AM AKST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=AK12641E8411F8.WindChillAdvisory.12641EB4B970AK.AJKWSWAJK.acab49871e29d4b86c4c5784ec209cf6"/>
-<summary>...WIND CHILL ADVISORY NOW IN EFFECT UNTIL 10 AM AKST WEDNESDAY... * WHAT...Very cold wind chills expected. Wind chills as low as 30 to 45 below zero. * WHERE...Near White Pass. * WHEN...Until 10 AM AKST Wednesday. * IMPACTS...The dangerously cold wind chills could cause</summary>
-<cap:event>Wind Chill Advisory</cap:event>
-<cap:effective>2022-12-17T15:14:00-09:00</cap:effective>
-<cap:expires>2022-12-21T10:00:00-09:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Municipality of Skagway</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>002230</value>
-<valueName>UGC</valueName>
-<value>AKZ318</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.EXT.PAJK.WC.Y.0006.221218T0014Z-221221T1900Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -740,6 +740,136 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=FL12641E8534FC.FreezeWarning.12641E954A90FL.TAENPWTAE.2f78a092ee37795c05193d644a588586</id>
+<updated>2022-12-18T02:59:00-05:00</updated>
+<published>2022-12-18T02:59:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Freeze Warning issued December 18 at 2:59AM EST until December 19 at 8:00AM EST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=FL12641E8534FC.FreezeWarning.12641E954A90FL.TAENPWTAE.2f78a092ee37795c05193d644a588586"/>
+<summary>...FREEZE WARNING IN EFFECT FROM 1 AM TO 8 AM EST MONDAY... * WHAT...Sub-freezing temperatures as low as 30 expected. * WHERE...Portions of Big Bend and Panhandle Florida. * WHEN...From 1 AM to 8 AM EST Monday. * IMPACTS...Frost and freeze conditions will kill crops, other sensitive vegetation and possibly damage unprotected outdoor</summary>
+<cap:event>Freeze Warning</cap:event>
+<cap:effective>2022-12-18T02:59:00-05:00</cap:effective>
+<cap:expires>2022-12-19T08:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Calhoun; Gadsden; Inland Bay; Inland Dixie; Inland Franklin; Inland Gulf; Inland Jefferson; Inland Taylor; Inland Wakulla; Lafayette; Leon; Liberty; Madison</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>012005 012013 012029 012037 012039 012045 012065 012067 012073 012077 012079 012123 012129</value>
+<valueName>UGC</valueName>
+<value>FLZ012 FLZ013 FLZ014 FLZ015 FLZ016 FLZ017 FLZ018 FLZ019 FLZ026 FLZ027 FLZ028 FLZ029 FLZ034</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.UPG.KTAE.FZ.A.0004.221219T0600Z-221219T1300Z/
+/O.NEW.KTAE.FZ.W.0006.221219T0600Z-221219T1300Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=FL12641E852EBC.FreezeWarning.12641E954A90FL.JAXNPWJAX.3f26b45ac0c37b9264f8434c5c5c3e08</id>
+<updated>2022-12-18T02:43:00-05:00</updated>
+<published>2022-12-18T02:43:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Freeze Warning issued December 18 at 2:43AM EST until December 19 at 8:00AM EST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=FL12641E852EBC.FreezeWarning.12641E954A90FL.JAXNPWJAX.3f26b45ac0c37b9264f8434c5c5c3e08"/>
+<summary>...FREEZE WARNING IN EFFECT FROM 4 AM TO 8 AM EST MONDAY... * WHAT...Sub-freezing temperatures as low as 28 degrees expected. * WHERE...Portions of northern Florida and southeast Georgia. * WHEN...From 4 AM to 8 AM EST Monday. * IMPACTS...Frost and freeze conditions could kill crops and other sensitive vegetation.</summary>
+<cap:event>Freeze Warning</cap:event>
+<cap:effective>2022-12-18T02:43:00-05:00</cap:effective>
+<cap:expires>2022-12-19T08:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Hamilton; Northern Columbia; Suwannee</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>012023 012047 012121</value>
+<valueName>UGC</valueName>
+<value>FLZ020 FLZ021 FLZ122</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.UPG.KJAX.FZ.A.0009.221219T0900Z-221219T1300Z/
+/O.NEW.KJAX.FZ.W.0011.221219T0900Z-221219T1300Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=FL12641E852EBC.FreezeWatch.12641E954A90FL.JAXNPWJAX.c77f4d227967164abef55134a826925f</id>
+<updated>2022-12-18T02:43:00-05:00</updated>
+<published>2022-12-18T02:43:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Freeze Watch issued December 18 at 2:43AM EST until December 19 at 8:00AM EST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=FL12641E852EBC.FreezeWatch.12641E954A90FL.JAXNPWJAX.c77f4d227967164abef55134a826925f"/>
+<summary>...FREEZE WATCH REMAINS IN EFFECT FROM LATE TONIGHT THROUGH MONDAY MORNING... * WHAT...Sub-freezing temperatures as low as 31 degrees possible. * WHERE...Inland portions of northeast and northern Florida and southeast Georgia. * WHEN...From late Sunday night through Monday morning.</summary>
+<cap:event>Freeze Watch</cap:event>
+<cap:effective>2022-12-18T02:43:00-05:00</cap:effective>
+<cap:expires>2022-12-19T08:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Future</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Possible</cap:certainty>
+<cap:areaDesc>Baker; Gilchrist; Southern Columbia; Union</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>012003 012023 012041 012125</value>
+<valueName>UGC</valueName>
+<value>FLZ023 FLZ030 FLZ035 FLZ222</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KJAX.FZ.A.0009.221219T0900Z-221219T1300Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=FL12641E852EBC.FreezeWatch.12641E954A90FL.JAXNPWJAX.c674cbe0d362e8b90387f8843b5f63be</id>
+<updated>2022-12-18T02:43:00-05:00</updated>
+<published>2022-12-18T02:43:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Freeze Watch issued December 18 at 2:43AM EST until December 19 at 8:00AM EST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=FL12641E852EBC.FreezeWatch.12641E954A90FL.JAXNPWJAX.c674cbe0d362e8b90387f8843b5f63be"/>
+<summary>...FREEZE WATCH IN EFFECT FROM LATE TONIGHT THROUGH MONDAY MORNING... * WHAT...Sub-freezing temperatures as low as 31 degrees possible. * WHERE...In Florida, Inland Nassau County. In Georgia, Inland Glynn and Inland Camden Counties. * WHEN...From late Sunday night through Monday morning.</summary>
+<cap:event>Freeze Watch</cap:event>
+<cap:effective>2022-12-18T02:43:00-05:00</cap:effective>
+<cap:expires>2022-12-19T08:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Future</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Possible</cap:certainty>
+<cap:areaDesc>Inland Nassau</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>012089</value>
+<valueName>UGC</valueName>
+<value>FLZ024</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.EXA.KJAX.FZ.A.0009.221219T0900Z-221219T1300Z/</value>
+</cap:parameter>
+</entry>
+<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=FL12641E850B94.RipCurrentStatement.12641E934EC0FL.MFLCFWMFL.48a8e26d4edf46d93829c8cef8e0f1fa</id>
 <updated>2022-12-18T01:53:00-05:00</updated>
 <published>2022-12-18T01:53:00-05:00</published>
@@ -805,70 +935,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=FL12641E77B96C.FreezeWatch.12641E954A90FL.TAENPWTAE.15b4205eb9175e98f66921208df54e4b</id>
-<updated>2022-12-17T14:23:00-05:00</updated>
-<published>2022-12-17T14:23:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Freeze Watch issued December 17 at 2:23PM EST until December 19 at 8:00AM EST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=FL12641E77B96C.FreezeWatch.12641E954A90FL.TAENPWTAE.15b4205eb9175e98f66921208df54e4b"/>
-<summary>...FREEZE WATCH IN EFFECT FROM LATE SUNDAY NIGHT THROUGH MONDAY MORNING... * WHAT...Sub-freezing temperatures as low as 30 possible. * WHERE...Portions of Big Bend and Panhandle Florida. * WHEN...From late Sunday night through Monday morning. * IMPACTS...Frost and freeze conditions could kill crops, other</summary>
-<cap:event>Freeze Watch</cap:event>
-<cap:effective>2022-12-17T14:23:00-05:00</cap:effective>
-<cap:expires>2022-12-19T08:00:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Future</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Possible</cap:certainty>
-<cap:areaDesc>Calhoun; Gadsden; Inland Bay; Inland Dixie; Inland Franklin; Inland Gulf; Inland Jefferson; Inland Taylor; Inland Wakulla; Lafayette; Leon; Liberty; Madison</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>012005 012013 012029 012037 012039 012045 012065 012067 012073 012077 012079 012123 012129</value>
-<valueName>UGC</valueName>
-<value>FLZ012 FLZ013 FLZ014 FLZ015 FLZ016 FLZ017 FLZ018 FLZ019 FLZ026 FLZ027 FLZ028 FLZ029 FLZ034</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.NEW.KTAE.FZ.A.0004.221219T0600Z-221219T1300Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=FL12641E77B32C.FreezeWatch.12641E954A90FL.JAXNPWJAX.f53af51aca7ef680fa75d150b7367a21</id>
-<updated>2022-12-17T14:07:00-05:00</updated>
-<published>2022-12-17T14:07:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Freeze Watch issued December 17 at 2:07PM EST until December 19 at 8:00AM EST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=FL12641E77B32C.FreezeWatch.12641E954A90FL.JAXNPWJAX.f53af51aca7ef680fa75d150b7367a21"/>
-<summary>...FREEZE WATCH IN EFFECT FROM LATE SUNDAY NIGHT THROUGH MONDAY MORNING... * WHAT...Sub-freezing temperatures as low as 29 possible. * WHERE...Inland portions of northeast and northern Florida and southeast Georgia. * WHEN...From late Sunday night through Monday morning.</summary>
-<cap:event>Freeze Watch</cap:event>
-<cap:effective>2022-12-17T14:07:00-05:00</cap:effective>
-<cap:expires>2022-12-19T08:00:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Future</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Possible</cap:certainty>
-<cap:areaDesc>Baker; Gilchrist; Hamilton; Northern Columbia; Southern Columbia; Suwannee; Union</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>012003 012023 012041 012047 012121 012125</value>
-<valueName>UGC</valueName>
-<value>FLZ020 FLZ021 FLZ023 FLZ030 FLZ035 FLZ122 FLZ222</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.NEW.KJAX.FZ.A.0009.221219T0900Z-221219T1300Z/</value>
-</cap:parameter>
-</entry>
-<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=FL12641E7619CC.RipCurrentStatement.12641E856C10FL.MLBCFWMLB.09a0256bede6991afae2b65b652ff735</id>
 <updated>2022-12-17T03:59:00-05:00</updated>
 <published>2022-12-17T03:59:00-05:00</published>
@@ -901,24 +967,24 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=GA12641E77B32C.FreezeWatch.12641E954A90GA.JAXNPWJAX.b9a0bfbe65994c42e2b69e43fb61ce13</id>
-<updated>2022-12-17T14:07:00-05:00</updated>
-<published>2022-12-17T14:07:00-05:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=GA12641E852EBC.FreezeWarning.12641E954A90GA.JAXNPWJAX.761c8fa286bbaa2cadc717c5b37e3ce9</id>
+<updated>2022-12-18T02:43:00-05:00</updated>
+<published>2022-12-18T02:43:00-05:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Freeze Watch issued December 17 at 2:07PM EST until December 19 at 8:00AM EST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=GA12641E77B32C.FreezeWatch.12641E954A90GA.JAXNPWJAX.b9a0bfbe65994c42e2b69e43fb61ce13"/>
-<summary>...FREEZE WATCH IN EFFECT FROM LATE SUNDAY NIGHT THROUGH MONDAY MORNING... * WHAT...Sub-freezing temperatures as low as 29 possible. * WHERE...Inland portions of northeast and northern Florida and southeast Georgia. * WHEN...From late Sunday night through Monday morning.</summary>
-<cap:event>Freeze Watch</cap:event>
-<cap:effective>2022-12-17T14:07:00-05:00</cap:effective>
+<title>Freeze Warning issued December 18 at 2:43AM EST until December 19 at 8:00AM EST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=GA12641E852EBC.FreezeWarning.12641E954A90GA.JAXNPWJAX.761c8fa286bbaa2cadc717c5b37e3ce9"/>
+<summary>...FREEZE WARNING IN EFFECT FROM 4 AM TO 8 AM EST MONDAY... * WHAT...Sub-freezing temperatures as low as 28 degrees expected. * WHERE...Portions of northern Florida and southeast Georgia. * WHEN...From 4 AM to 8 AM EST Monday. * IMPACTS...Frost and freeze conditions could kill crops and other sensitive vegetation.</summary>
+<cap:event>Freeze Warning</cap:event>
+<cap:effective>2022-12-18T02:43:00-05:00</cap:effective>
 <cap:expires>2022-12-19T08:00:00-05:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
 <cap:category>Met</cap:category>
-<cap:urgency>Future</cap:urgency>
+<cap:urgency>Expected</cap:urgency>
 <cap:severity>Moderate</cap:severity>
-<cap:certainty>Possible</cap:certainty>
+<cap:certainty>Likely</cap:certainty>
 <cap:areaDesc>Appling; Atkinson; Bacon; Brantley; Clinch; Coffee; Echols; Jeff Davis; Northeastern Charlton; Northern Ware; Pierce; Southern Ware; Wayne; Western Charlton</cap:areaDesc>
 <cap:polygon></cap:polygon>
 <cap:geocode>
@@ -929,7 +995,40 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
-<value>/O.NEW.KJAX.FZ.A.0009.221219T0900Z-221219T1300Z/</value>
+<value>/O.UPG.KJAX.FZ.A.0009.221219T0900Z-221219T1300Z/
+/O.NEW.KJAX.FZ.W.0011.221219T0900Z-221219T1300Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=GA12641E852EBC.FreezeWatch.12641E954A90GA.JAXNPWJAX.93af50e3ffec60ddff95e2e7f3085167</id>
+<updated>2022-12-18T02:43:00-05:00</updated>
+<published>2022-12-18T02:43:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Freeze Watch issued December 18 at 2:43AM EST until December 19 at 8:00AM EST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=GA12641E852EBC.FreezeWatch.12641E954A90GA.JAXNPWJAX.93af50e3ffec60ddff95e2e7f3085167"/>
+<summary>...FREEZE WATCH IN EFFECT FROM LATE TONIGHT THROUGH MONDAY MORNING... * WHAT...Sub-freezing temperatures as low as 31 degrees possible. * WHERE...In Florida, Inland Nassau County. In Georgia, Inland Glynn and Inland Camden Counties. * WHEN...From late Sunday night through Monday morning.</summary>
+<cap:event>Freeze Watch</cap:event>
+<cap:effective>2022-12-18T02:43:00-05:00</cap:effective>
+<cap:expires>2022-12-19T08:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Future</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Possible</cap:certainty>
+<cap:areaDesc>Inland Camden; Inland Glynn</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>013039 013127</value>
+<valueName>UGC</valueName>
+<value>GAZ153 GAZ165</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.EXA.KJAX.FZ.A.0009.221219T0900Z-221219T1300Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -1352,6 +1451,38 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=IN12641E854690.SpecialWeatherStatement.12641E860850IN.ILNSPSILN.0f4d5c6c8e226d03a08aa4c624461f10</id>
+<updated>2022-12-18T03:04:00-05:00</updated>
+<published>2022-12-18T03:04:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Special Weather Statement issued December 18 at 3:04AM EST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=IN12641E854690.SpecialWeatherStatement.12641E860850IN.ILNSPSILN.0f4d5c6c8e226d03a08aa4c624461f10"/>
+<summary>...Scattered Slick Spots Through Sunrise... Patchy light snow and flurries will combine with cold pavement temperatures to allow for scattered slick spots through the sunrise hour. Even in areas where snow has not fallen for several hours, a light dusting on untreated and lesser traveled roads could produce slippery travel, especially on bridge decks, ramps,</summary>
+<cap:event>Special Weather Statement</cap:event>
+<cap:effective>2022-12-18T03:04:00-05:00</cap:effective>
+<cap:expires>2022-12-18T08:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Observed</cap:certainty>
+<cap:areaDesc>Dearborn; Fayette; Franklin; Ohio; Ripley; Switzerland; Union; Wayne</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>018029 018041 018047 018115 018137 018155 018161 018177</value>
+<valueName>UGC</valueName>
+<value>INZ050 INZ058 INZ059 INZ066 INZ073 INZ074 INZ075 INZ080</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value></value>
+</cap:parameter>
+</entry>
+<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=IN12641E8484D0.SpecialWeatherStatement.12641E85E140IN.INDSPSIND.9428912e974cb68835681513842b89bf</id>
 <updated>2022-12-17T22:08:00-05:00</updated>
 <published>2022-12-17T22:08:00-05:00</published>
@@ -1384,67 +1515,35 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=IN12641E84701C.SpecialWeatherStatement.12641E854500IN.ILNSPSILN.b6f5b6a08f54f16bdf8f91b68ff18c57</id>
-<updated>2022-12-17T21:55:00-05:00</updated>
-<published>2022-12-17T21:55:00-05:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=KY12641E854690.SpecialWeatherStatement.12641E860850KY.ILNSPSILN.75c24f43168f5ef2f4b6a5662538a853</id>
+<updated>2022-12-18T03:04:00-05:00</updated>
+<published>2022-12-18T03:04:00-05:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Special Weather Statement issued December 17 at 9:55PM EST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=IN12641E84701C.SpecialWeatherStatement.12641E854500IN.ILNSPSILN.b6f5b6a08f54f16bdf8f91b68ff18c57"/>
-<summary>...SLICK SPOTS POSSIBLE OVERNIGHT... Light snow will continue to move across the area overnight. Any snow accumulations are expected to be light. As temperatures continue to fall slick spots will be possible especially on elevated surfaces such as bridge decks. Use extra caution if traveling tonight or walking on elevated surfaces.</summary>
+<title>Special Weather Statement issued December 18 at 3:04AM EST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=KY12641E854690.SpecialWeatherStatement.12641E860850KY.ILNSPSILN.75c24f43168f5ef2f4b6a5662538a853"/>
+<summary>...Scattered Slick Spots Through Sunrise... Patchy light snow and flurries will combine with cold pavement temperatures to allow for scattered slick spots through the sunrise hour. Even in areas where snow has not fallen for several hours, a light dusting on untreated and lesser traveled roads could produce slippery travel, especially on bridge decks, ramps,</summary>
 <cap:event>Special Weather Statement</cap:event>
-<cap:effective>2022-12-17T21:55:00-05:00</cap:effective>
-<cap:expires>2022-12-18T03:00:00-05:00</cap:expires>
+<cap:effective>2022-12-18T03:04:00-05:00</cap:effective>
+<cap:expires>2022-12-18T08:00:00-05:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
 <cap:category>Met</cap:category>
 <cap:urgency>Expected</cap:urgency>
 <cap:severity>Minor</cap:severity>
 <cap:certainty>Observed</cap:certainty>
-<cap:areaDesc>Dearborn; Franklin; Ohio; Ripley; Switzerland</cap:areaDesc>
+<cap:areaDesc>Boone; Campbell; Kenton</cap:areaDesc>
 <cap:polygon></cap:polygon>
 <cap:geocode>
 <valueName>FIPS6</valueName>
-<value>018029 018047 018115 018137 018155</value>
+<value>021015 021037 021117</value>
 <valueName>UGC</valueName>
-<value>INZ066 INZ073 INZ074 INZ075 INZ080</value>
+<value>KYZ091 KYZ092 KYZ093</value>
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value></value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=IN12641E846C34.WinterWeatherAdvisory.12641E854500IN.ILNWSWILN.083c72541581d611312dfe52ef7d94c9</id>
-<updated>2022-12-17T21:45:00-05:00</updated>
-<published>2022-12-17T21:45:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Winter Weather Advisory issued December 17 at 9:45PM EST until December 18 at 3:00AM EST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=IN12641E846C34.WinterWeatherAdvisory.12641E854500IN.ILNWSWILN.083c72541581d611312dfe52ef7d94c9"/>
-<summary>...WINTER WEATHER ADVISORY IN EFFECT UNTIL 3 AM EST SUNDAY... * WHAT...Snow continuing. Additional snow accumulations of up to one inch. Falling temperatures will lead to slick conditions. * WHERE...Portions of East Central Indiana and Central and West Central Ohio. * WHEN...Until 3 AM EST Sunday.</summary>
-<cap:event>Winter Weather Advisory</cap:event>
-<cap:effective>2022-12-17T21:45:00-05:00</cap:effective>
-<cap:expires>2022-12-18T03:00:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Fayette; Union; Wayne</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>018041 018161 018177</value>
-<valueName>UGC</valueName>
-<value>INZ050 INZ058 INZ059</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.NEW.KILN.WW.Y.0011.221218T0245Z-221218T0800Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -1775,82 +1874,51 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=ME12641E844A38.WinterStormWarning.12641E856C10ME.CARWSWCAR.8fb0a4fc4c4cae1b0e91a3a358d972c8</id>
-<updated>2022-12-17T20:58:00-05:00</updated>
-<published>2022-12-17T20:58:00-05:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=ME12641E8530B0.WinterStormWarning.12641E960DE0ME.CARWSWCAR.c1e03384da5a6b3d8e386e42048e5819</id>
+<updated>2022-12-18T02:48:00-05:00</updated>
+<published>2022-12-18T02:48:00-05:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Winter Storm Warning issued December 17 at 8:58PM EST until December 18 at 4:00AM EST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=ME12641E844A38.WinterStormWarning.12641E856C10ME.CARWSWCAR.8fb0a4fc4c4cae1b0e91a3a358d972c8"/>
-<summary>...WINTER STORM WARNING NOW IN EFFECT UNTIL 4 AM EST SUNDAY... * WHAT...Additional snow accumulations between 2 and 4 inches for a storm total of 12 to 18 inches. * WHERE...Central Piscataquis, Southern Piscataquis, Northern Washington, and Central Penobscot Counties. * WHEN...Until 4 AM EST Sunday.</summary>
+<title>Winter Storm Warning issued December 18 at 2:48AM EST until December 19 at 1:00PM EST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=ME12641E8530B0.WinterStormWarning.12641E960DE0ME.CARWSWCAR.c1e03384da5a6b3d8e386e42048e5819"/>
+<summary>...WINTER STORM WARNING IN EFFECT UNTIL 1 PM EST MONDAY... * WHAT...Heavy snow. Additional snow accumulations between 7 and 14 inches for a storm total of 12 to 24 inches. The heaviest snow accumulations will be south and west of Presque Isle. * WHERE...Northeast Aroostook and Northwest Aroostook Counties. * WHEN...Until 1 PM EST Monday.</summary>
 <cap:event>Winter Storm Warning</cap:event>
-<cap:effective>2022-12-17T20:58:00-05:00</cap:effective>
-<cap:expires>2022-12-18T04:00:00-05:00</cap:expires>
+<cap:effective>2022-12-18T02:48:00-05:00</cap:effective>
+<cap:expires>2022-12-19T13:00:00-05:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
 <cap:category>Met</cap:category>
 <cap:urgency>Expected</cap:urgency>
 <cap:severity>Moderate</cap:severity>
 <cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Central Penobscot; Central Piscataquis; Northern Washington; Southern Piscataquis</cap:areaDesc>
+<cap:areaDesc>Northeast Aroostook; Northwest Aroostook</cap:areaDesc>
 <cap:polygon></cap:polygon>
 <cap:geocode>
 <valueName>FIPS6</valueName>
-<value>023019 023021 023029</value>
+<value>023003</value>
 <valueName>UGC</valueName>
-<value>MEZ010 MEZ011 MEZ031 MEZ032</value>
+<value>MEZ001 MEZ002</value>
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
-<value>/O.EXT.KCAR.WS.W.0010.000000T0000Z-221218T0900Z/</value>
+<value>/O.UPG.KCAR.WW.Y.0031.000000T0000Z-221219T0600Z/
+/O.EXB.KCAR.WS.W.0010.000000T0000Z-221219T1800Z/</value>
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=ME12641E844A38.WinterStormWarning.12641E856C10ME.CARWSWCAR.f8070d7ca90e051cc21dcfb818125687</id>
-<updated>2022-12-17T20:58:00-05:00</updated>
-<published>2022-12-17T20:58:00-05:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=ME12641E8530B0.WinterStormWarning.12641E960DE0ME.CARWSWCAR.19df30756f9288ff2a5fd2fec6bf67c7</id>
+<updated>2022-12-18T02:48:00-05:00</updated>
+<published>2022-12-18T02:48:00-05:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Winter Storm Warning issued December 17 at 8:58PM EST until December 18 at 4:00AM EST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=ME12641E844A38.WinterStormWarning.12641E856C10ME.CARWSWCAR.f8070d7ca90e051cc21dcfb818125687"/>
-<summary>...WINTER STORM WARNING NOW IN EFFECT UNTIL 4 AM EST SUNDAY... * WHAT...Heavy snow. Additional snow accumulations between 2 and 4 inches for a storm total of 6 to 12 inches. The heaviest snow accumulations will be across higher terrain. * WHERE...Central Washington, Interior Hancock, and Southern Penobscot Counties.</summary>
+<title>Winter Storm Warning issued December 18 at 2:48AM EST until December 19 at 1:00PM EST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=ME12641E8530B0.WinterStormWarning.12641E960DE0ME.CARWSWCAR.19df30756f9288ff2a5fd2fec6bf67c7"/>
+<summary>...WINTER STORM WARNING NOW IN EFFECT UNTIL 1 PM EST MONDAY... * WHAT...Heavy snow. Additional snow accumulations between 6 and 12 inches for a storm total of 14 to 24 inches. * WHERE...Northern Penobscot, Southeast Aroostook, Northern Piscataquis, and Northern Somerset Counties. * WHEN...Until 1 PM EST Monday.</summary>
 <cap:event>Winter Storm Warning</cap:event>
-<cap:effective>2022-12-17T20:58:00-05:00</cap:effective>
-<cap:expires>2022-12-18T04:00:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Central Washington; Interior Hancock; Southern Penobscot</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>023009 023019 023029</value>
-<valueName>UGC</valueName>
-<value>MEZ015 MEZ016 MEZ017</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.EXT.KCAR.WS.W.0010.000000T0000Z-221218T0900Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=ME12641E844A38.WinterStormWarning.12641E943920ME.CARWSWCAR.19df30756f9288ff2a5fd2fec6bf67c7</id>
-<updated>2022-12-17T20:58:00-05:00</updated>
-<published>2022-12-17T20:58:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Winter Storm Warning issued December 17 at 8:58PM EST until December 19 at 1:00AM EST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=ME12641E844A38.WinterStormWarning.12641E943920ME.CARWSWCAR.19df30756f9288ff2a5fd2fec6bf67c7"/>
-<summary>...WINTER STORM WARNING REMAINS IN EFFECT UNTIL 1 AM EST MONDAY... * WHAT...Heavy snow expected. Total snow accumulations between 10 and 18 inches. * WHERE...Northern Penobscot, Southeast Aroostook, Northern Piscataquis, and Northern Somerset Counties. * WHEN...Until 1 AM EST Monday.</summary>
-<cap:event>Winter Storm Warning</cap:event>
-<cap:effective>2022-12-17T20:58:00-05:00</cap:effective>
-<cap:expires>2022-12-19T01:00:00-05:00</cap:expires>
+<cap:effective>2022-12-18T02:48:00-05:00</cap:effective>
+<cap:expires>2022-12-19T13:00:00-05:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
 <cap:category>Met</cap:category>
@@ -1867,39 +1935,71 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
-<value>/O.CON.KCAR.WS.W.0010.000000T0000Z-221219T0600Z/</value>
+<value>/O.EXT.KCAR.WS.W.0010.000000T0000Z-221219T1800Z/</value>
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=ME12641E844A38.WinterWeatherAdvisory.12641E943920ME.CARWSWCAR.018c1a9f007617b2ae0b15d038bcb2f1</id>
-<updated>2022-12-17T20:58:00-05:00</updated>
-<published>2022-12-17T20:58:00-05:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=ME12641E8530B0.WinterStormWarning.12641E960DE0ME.CARWSWCAR.2b109af5868199000af99daa8f49b3f8</id>
+<updated>2022-12-18T02:48:00-05:00</updated>
+<published>2022-12-18T02:48:00-05:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Winter Weather Advisory issued December 17 at 8:58PM EST until December 19 at 1:00AM EST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=ME12641E844A38.WinterWeatherAdvisory.12641E943920ME.CARWSWCAR.018c1a9f007617b2ae0b15d038bcb2f1"/>
-<summary>...WINTER WEATHER ADVISORY REMAINS IN EFFECT UNTIL 1 AM EST MONDAY... * WHAT...Snow. Total snow accumulations between 7 and 13 inches. * WHERE...Northeast Aroostook and Northwest Aroostook Counties. * WHEN...Until 1 AM EST Monday. * IMPACTS...Travel could be very difficult.</summary>
-<cap:event>Winter Weather Advisory</cap:event>
-<cap:effective>2022-12-17T20:58:00-05:00</cap:effective>
-<cap:expires>2022-12-19T01:00:00-05:00</cap:expires>
+<title>Winter Storm Warning issued December 18 at 2:48AM EST until December 19 at 1:00PM EST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=ME12641E8530B0.WinterStormWarning.12641E960DE0ME.CARWSWCAR.2b109af5868199000af99daa8f49b3f8"/>
+<summary>...WINTER STORM WARNING NOW IN EFFECT UNTIL 1 PM EST MONDAY... * WHAT...Heavy snow. Additional snow accumulations between 5 and 10 inches for a storm total of 15 to 22 inches. * WHERE...Northern Washington and Central Penobscot Counties. * WHEN...Until 1 PM EST Monday. * IMPACTS...Travel could be very difficult. The hazardous conditions</summary>
+<cap:event>Winter Storm Warning</cap:event>
+<cap:effective>2022-12-18T02:48:00-05:00</cap:effective>
+<cap:expires>2022-12-19T13:00:00-05:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
 <cap:category>Met</cap:category>
 <cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
+<cap:severity>Moderate</cap:severity>
 <cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Northeast Aroostook; Northwest Aroostook</cap:areaDesc>
+<cap:areaDesc>Central Penobscot; Northern Washington</cap:areaDesc>
 <cap:polygon></cap:polygon>
 <cap:geocode>
 <valueName>FIPS6</valueName>
-<value>023003</value>
+<value>023019 023029</value>
 <valueName>UGC</valueName>
-<value>MEZ001 MEZ002</value>
+<value>MEZ011 MEZ032</value>
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
-<value>/O.CON.KCAR.WW.Y.0031.000000T0000Z-221219T0600Z/</value>
+<value>/O.EXT.KCAR.WS.W.0010.000000T0000Z-221219T1800Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=ME12641E8530B0.WinterStormWarning.12641E960DE0ME.CARWSWCAR.3a2afde5a59bfcec31afd6bf76851fa9</id>
+<updated>2022-12-18T02:48:00-05:00</updated>
+<published>2022-12-18T02:48:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Winter Storm Warning issued December 18 at 2:48AM EST until December 19 at 1:00PM EST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=ME12641E8530B0.WinterStormWarning.12641E960DE0ME.CARWSWCAR.3a2afde5a59bfcec31afd6bf76851fa9"/>
+<summary>...WINTER STORM WARNING NOW IN EFFECT UNTIL 1 PM EST MONDAY... * WHAT...Heavy snow. Additional snow accumulations between 3 and 8 inches for a storm total of 10 to 20 inches. * WHERE...Central Washington County. * WHEN...Until 1 PM EST Monday. * IMPACTS...Plan on slippery road conditions. The hazardous</summary>
+<cap:event>Winter Storm Warning</cap:event>
+<cap:effective>2022-12-18T02:48:00-05:00</cap:effective>
+<cap:expires>2022-12-19T13:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Central Washington</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>023029</value>
+<valueName>UGC</valueName>
+<value>MEZ017</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.EXT.KCAR.WS.W.0010.000000T0000Z-221219T1800Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -3296,6 +3396,38 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=OH12641E854690.SpecialWeatherStatement.12641E860850OH.ILNSPSILN.698ec783f67b8ab544e6792de2cda8f9</id>
+<updated>2022-12-18T03:04:00-05:00</updated>
+<published>2022-12-18T03:04:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Special Weather Statement issued December 18 at 3:04AM EST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=OH12641E854690.SpecialWeatherStatement.12641E860850OH.ILNSPSILN.698ec783f67b8ab544e6792de2cda8f9"/>
+<summary>...Scattered Slick Spots Through Sunrise... Patchy light snow and flurries will combine with cold pavement temperatures to allow for scattered slick spots through the sunrise hour. Even in areas where snow has not fallen for several hours, a light dusting on untreated and lesser traveled roads could produce slippery travel, especially on bridge decks, ramps,</summary>
+<cap:event>Special Weather Statement</cap:event>
+<cap:effective>2022-12-18T03:04:00-05:00</cap:effective>
+<cap:expires>2022-12-18T08:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Observed</cap:certainty>
+<cap:areaDesc>Adams; Brown; Butler; Champaign; Clark; Clermont; Clinton; Darke; Fairfield; Fayette; Franklin; Greene; Hamilton; Highland; Hocking; Licking; Madison; Miami; Montgomery; Pickaway; Pike; Preble; Ross; Scioto; Warren</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>039001 039015 039017 039021 039023 039025 039027 039037 039045 039047 039049 039057 039061 039071 039073 039089 039097 039109 039113 039129 039131 039135 039141 039145 039165</value>
+<valueName>UGC</valueName>
+<value>OHZ042 OHZ051 OHZ052 OHZ053 OHZ054 OHZ055 OHZ056 OHZ060 OHZ061 OHZ062 OHZ063 OHZ064 OHZ065 OHZ070 OHZ071 OHZ072 OHZ073 OHZ074 OHZ077 OHZ078 OHZ079 OHZ080 OHZ081 OHZ082 OHZ088</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value></value>
+</cap:parameter>
+</entry>
+<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=OH12641E847080.WinterWeatherAdvisory.12641E94AE50OH.CLEWSWCLE.7d339eedf6d0cffd9985477868dead50</id>
 <updated>2022-12-17T21:56:00-05:00</updated>
 <published>2022-12-17T21:56:00-05:00</published>
@@ -3325,70 +3457,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value>/O.CON.KCLE.WW.Y.0029.221218T0300Z-221219T0900Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=OH12641E84701C.SpecialWeatherStatement.12641E854500OH.ILNSPSILN.ce1664a95886b4111947cceea070a121</id>
-<updated>2022-12-17T21:55:00-05:00</updated>
-<published>2022-12-17T21:55:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Special Weather Statement issued December 17 at 9:55PM EST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=OH12641E84701C.SpecialWeatherStatement.12641E854500OH.ILNSPSILN.ce1664a95886b4111947cceea070a121"/>
-<summary>...SLICK SPOTS POSSIBLE OVERNIGHT... Light snow will continue to move across the area overnight. Any snow accumulations are expected to be light. As temperatures continue to fall slick spots will be possible especially on elevated surfaces such as bridge decks. Use extra caution if traveling tonight or walking on elevated surfaces.</summary>
-<cap:event>Special Weather Statement</cap:event>
-<cap:effective>2022-12-17T21:55:00-05:00</cap:effective>
-<cap:expires>2022-12-18T03:00:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Observed</cap:certainty>
-<cap:areaDesc>Butler; Clinton; Fairfield; Fayette; Hamilton; Highland; Hocking; Pickaway; Ross; Warren</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>039017 039027 039045 039047 039061 039071 039073 039129 039141 039165</value>
-<valueName>UGC</valueName>
-<value>OHZ063 OHZ064 OHZ065 OHZ070 OHZ071 OHZ072 OHZ073 OHZ074 OHZ077 OHZ080</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value></value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=OH12641E846C34.WinterWeatherAdvisory.12641E854500OH.ILNWSWILN.51d5b4b36b1fdb5410dd38307db9e752</id>
-<updated>2022-12-17T21:45:00-05:00</updated>
-<published>2022-12-17T21:45:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Winter Weather Advisory issued December 17 at 9:45PM EST until December 18 at 3:00AM EST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=OH12641E846C34.WinterWeatherAdvisory.12641E854500OH.ILNWSWILN.51d5b4b36b1fdb5410dd38307db9e752"/>
-<summary>...WINTER WEATHER ADVISORY IN EFFECT UNTIL 3 AM EST SUNDAY... * WHAT...Snow continuing. Additional snow accumulations of up to one inch. Falling temperatures will lead to slick conditions. * WHERE...Portions of East Central Indiana and Central and West Central Ohio. * WHEN...Until 3 AM EST Sunday.</summary>
-<cap:event>Winter Weather Advisory</cap:event>
-<cap:effective>2022-12-17T21:45:00-05:00</cap:effective>
-<cap:expires>2022-12-18T03:00:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Auglaize; Champaign; Clark; Darke; Delaware; Franklin; Greene; Hardin; Licking; Logan; Madison; Mercer; Miami; Montgomery; Preble; Shelby; Union</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>039011 039021 039023 039037 039041 039049 039057 039065 039089 039091 039097 039107 039109 039113 039135 039149 039159</value>
-<valueName>UGC</valueName>
-<value>OHZ026 OHZ034 OHZ035 OHZ042 OHZ043 OHZ044 OHZ045 OHZ046 OHZ051 OHZ052 OHZ053 OHZ054 OHZ055 OHZ056 OHZ060 OHZ061 OHZ062</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.NEW.KILN.WW.Y.0011.221218T0245Z-221218T0800Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -3553,50 +3621,17 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=PR12641E844A38.HighSurfAdvisory.12641E94D560PR.JSJCFWSJU.acbde320199c988b5dc75c1d31eb89ab</id>
-<updated>2022-12-17T21:58:00-04:00</updated>
-<published>2022-12-17T21:58:00-04:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=PR12641E854564.HighSurfAdvisory.12641E94D560PR.JSJCFWSJU.5639d49b597f705a29e6c74c2718cee9</id>
+<updated>2022-12-18T04:01:00-04:00</updated>
+<published>2022-12-18T04:01:00-04:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>High Surf Advisory issued December 17 at 9:58PM AST until December 19 at 6:00AM AST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=PR12641E844A38.HighSurfAdvisory.12641E94D560PR.JSJCFWSJU.acbde320199c988b5dc75c1d31eb89ab"/>
-<summary>...HIGH SURF ADVISORY REMAINS IN EFFECT UNTIL 6 AM AST MONDAY... ...HIGH RIP CURRENT RISK REMAINS IN EFFECT THROUGH LATE SUNDAY NIGHT... * WHAT...Dangerous surf conditions and rip currents expected due to breaking waves of 6 to 13 feet. Localized beach erosion is possible.</summary>
+<title>High Surf Advisory issued December 18 at 4:01AM AST until December 19 at 6:00AM AST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=PR12641E854564.HighSurfAdvisory.12641E94D560PR.JSJCFWSJU.5639d49b597f705a29e6c74c2718cee9"/>
+<summary>...HIGH RIP CURRENT RISK NOW IN EFFECT UNTIL 6 PM AST MONDAY... ...HIGH SURF ADVISORY REMAINS IN EFFECT UNTIL 6 AM AST MONDAY... * WHAT...Dangerous surf conditions and rip currents expected due to breaking waves of 6 to 10 feet. Localized beach erosion is possible. * WHERE...Beaches of northern and eastern Vieques.</summary>
 <cap:event>High Surf Advisory</cap:event>
-<cap:effective>2022-12-17T21:58:00-04:00</cap:effective>
-<cap:expires>2022-12-19T06:00:00-04:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Culebra; Mayaguez and Vicinity; North Central; Northeast; Northwest; San Juan and Vicinity</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>072003 072005 072011 072013 072017 072021 072027 072029 072031 072033 072037 072049 072051 072053 072054 072061 072065 072067 072069 072071 072087 072089 072091 072097 072099 072103 072115 072117 072119 072125 072127 072135 072137 072139 072143 072145</value>
-<valueName>UGC</valueName>
-<value>PRZ001 PRZ002 PRZ005 PRZ008 PRZ010 PRZ012</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.TJSJ.SU.Y.0015.000000T0000Z-221219T1000Z/
-/O.CON.TJSJ.RP.S.0076.000000T0000Z-221219T1000Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=PR12641E844A38.HighSurfAdvisory.12641E94D560PR.JSJCFWSJU.5639d49b597f705a29e6c74c2718cee9</id>
-<updated>2022-12-17T21:58:00-04:00</updated>
-<published>2022-12-17T21:58:00-04:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>High Surf Advisory issued December 17 at 9:58PM AST until December 19 at 6:00AM AST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=PR12641E844A38.HighSurfAdvisory.12641E94D560PR.JSJCFWSJU.5639d49b597f705a29e6c74c2718cee9"/>
-<summary>...HIGH SURF ADVISORY REMAINS IN EFFECT UNTIL 6 AM AST MONDAY... ...HIGH RIP CURRENT RISK REMAINS IN EFFECT THROUGH LATE SUNDAY NIGHT... * WHAT...Dangerous surf conditions and rip currents expected due to breaking waves of 6 to 10 feet. Localized beach erosion is possible.</summary>
-<cap:event>High Surf Advisory</cap:event>
-<cap:effective>2022-12-17T21:58:00-04:00</cap:effective>
+<cap:effective>2022-12-18T04:01:00-04:00</cap:effective>
 <cap:expires>2022-12-19T06:00:00-04:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
@@ -3614,23 +3649,56 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
-<value>/O.CON.TJSJ.SU.Y.0017.000000T0000Z-221219T1000Z/
-/O.CON.TJSJ.RP.S.0076.000000T0000Z-221219T1000Z/</value>
+<value>/O.EXT.TJSJ.RP.S.0076.000000T0000Z-221219T2200Z/
+/O.CON.TJSJ.SU.Y.0017.000000T0000Z-221219T1000Z/</value>
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=PR12641E844A38.RipCurrentStatement.12641E94D560PR.JSJCFWSJU.e9d286980297dc83fe7a72af3974e5a2</id>
-<updated>2022-12-17T21:58:00-04:00</updated>
-<published>2022-12-17T21:58:00-04:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=PR12641E854564.HighSurfAdvisory.12641E96AA20PR.JSJCFWSJU.acbde320199c988b5dc75c1d31eb89ab</id>
+<updated>2022-12-18T04:01:00-04:00</updated>
+<published>2022-12-18T04:01:00-04:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Rip Current Statement issued December 17 at 9:58PM AST until December 19 at 6:00AM AST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=PR12641E844A38.RipCurrentStatement.12641E94D560PR.JSJCFWSJU.e9d286980297dc83fe7a72af3974e5a2"/>
-<summary>...HIGH SURF ADVISORY REMAINS IN EFFECT UNTIL 6 AM AST MONDAY... ...HIGH RIP CURRENT RISK REMAINS IN EFFECT THROUGH LATE SUNDAY NIGHT... * WHAT...Dangerous surf conditions and rip currents expected due to breaking waves of 6 to 13 feet. Localized beach erosion is possible.</summary>
+<title>High Surf Advisory issued December 18 at 4:01AM AST until December 19 at 6:00PM AST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=PR12641E854564.HighSurfAdvisory.12641E96AA20PR.JSJCFWSJU.acbde320199c988b5dc75c1d31eb89ab"/>
+<summary>...HIGH SURF ADVISORY NOW IN EFFECT UNTIL 6 PM AST MONDAY... ...HIGH RIP CURRENT RISK NOW IN EFFECT UNTIL 6 PM AST MONDAY... * WHAT...Dangerous surf conditions and rip currents expected due to breaking waves of 6 to 13 feet. Localized beach erosion is possible. * WHERE...Beaches along the northern coast of Puerto Rico,</summary>
+<cap:event>High Surf Advisory</cap:event>
+<cap:effective>2022-12-18T04:01:00-04:00</cap:effective>
+<cap:expires>2022-12-19T18:00:00-04:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Culebra; Mayaguez and Vicinity; North Central; Northeast; Northwest; San Juan and Vicinity</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>072003 072005 072011 072013 072017 072021 072027 072029 072031 072033 072037 072049 072051 072053 072054 072061 072065 072067 072069 072071 072087 072089 072091 072097 072099 072103 072115 072117 072119 072125 072127 072135 072137 072139 072143 072145</value>
+<valueName>UGC</valueName>
+<value>PRZ001 PRZ002 PRZ005 PRZ008 PRZ010 PRZ012</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.EXT.TJSJ.SU.Y.0015.000000T0000Z-221219T2200Z/
+/O.EXT.TJSJ.RP.S.0076.000000T0000Z-221219T2200Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=PR12641E854564.RipCurrentStatement.12641E96AA20PR.JSJCFWSJU.e9d286980297dc83fe7a72af3974e5a2</id>
+<updated>2022-12-18T04:01:00-04:00</updated>
+<published>2022-12-18T04:01:00-04:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Rip Current Statement issued December 18 at 4:01AM AST until December 19 at 6:00PM AST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=PR12641E854564.RipCurrentStatement.12641E96AA20PR.JSJCFWSJU.e9d286980297dc83fe7a72af3974e5a2"/>
+<summary>...HIGH SURF ADVISORY NOW IN EFFECT UNTIL 6 PM AST MONDAY... ...HIGH RIP CURRENT RISK NOW IN EFFECT UNTIL 6 PM AST MONDAY... * WHAT...Dangerous surf conditions and rip currents expected due to breaking waves of 6 to 13 feet. Localized beach erosion is possible. * WHERE...Beaches along the northern coast of Puerto Rico,</summary>
 <cap:event>Rip Current Statement</cap:event>
-<cap:effective>2022-12-17T21:58:00-04:00</cap:effective>
-<cap:expires>2022-12-19T06:00:00-04:00</cap:expires>
+<cap:effective>2022-12-18T04:01:00-04:00</cap:effective>
+<cap:expires>2022-12-19T18:00:00-04:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
 <cap:category>Met</cap:category>
@@ -3647,23 +3715,23 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
-<value>/O.CON.TJSJ.SU.Y.0015.000000T0000Z-221219T1000Z/
-/O.CON.TJSJ.RP.S.0076.000000T0000Z-221219T1000Z/</value>
+<value>/O.EXT.TJSJ.SU.Y.0015.000000T0000Z-221219T2200Z/
+/O.EXT.TJSJ.RP.S.0076.000000T0000Z-221219T2200Z/</value>
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=PR12641E844A38.RipCurrentStatement.12641E94D560PR.JSJCFWSJU.4b7678ab671af304cc9675bb5a941858</id>
-<updated>2022-12-17T21:58:00-04:00</updated>
-<published>2022-12-17T21:58:00-04:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=PR12641E854564.RipCurrentStatement.12641E96AA20PR.JSJCFWSJU.4b7678ab671af304cc9675bb5a941858</id>
+<updated>2022-12-18T04:01:00-04:00</updated>
+<published>2022-12-18T04:01:00-04:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Rip Current Statement issued December 17 at 9:58PM AST until December 19 at 6:00AM AST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=PR12641E844A38.RipCurrentStatement.12641E94D560PR.JSJCFWSJU.4b7678ab671af304cc9675bb5a941858"/>
-<summary>...HIGH SURF ADVISORY REMAINS IN EFFECT UNTIL 6 AM AST MONDAY... ...HIGH RIP CURRENT RISK REMAINS IN EFFECT THROUGH LATE SUNDAY NIGHT... * WHAT...Dangerous surf conditions and rip currents expected due to breaking waves of 6 to 10 feet. Localized beach erosion is possible.</summary>
+<title>Rip Current Statement issued December 18 at 4:01AM AST until December 19 at 6:00PM AST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=PR12641E854564.RipCurrentStatement.12641E96AA20PR.JSJCFWSJU.4b7678ab671af304cc9675bb5a941858"/>
+<summary>...HIGH RIP CURRENT RISK NOW IN EFFECT UNTIL 6 PM AST MONDAY... ...HIGH SURF ADVISORY REMAINS IN EFFECT UNTIL 6 AM AST MONDAY... * WHAT...Dangerous surf conditions and rip currents expected due to breaking waves of 6 to 10 feet. Localized beach erosion is possible. * WHERE...Beaches of northern and eastern Vieques.</summary>
 <cap:event>Rip Current Statement</cap:event>
-<cap:effective>2022-12-17T21:58:00-04:00</cap:effective>
-<cap:expires>2022-12-19T06:00:00-04:00</cap:expires>
+<cap:effective>2022-12-18T04:01:00-04:00</cap:effective>
+<cap:expires>2022-12-19T18:00:00-04:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
 <cap:category>Met</cap:category>
@@ -3680,23 +3748,23 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
-<value>/O.CON.TJSJ.SU.Y.0017.000000T0000Z-221219T1000Z/
-/O.CON.TJSJ.RP.S.0076.000000T0000Z-221219T1000Z/</value>
+<value>/O.EXT.TJSJ.RP.S.0076.000000T0000Z-221219T2200Z/
+/O.CON.TJSJ.SU.Y.0017.000000T0000Z-221219T1000Z/</value>
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=PR12641E844A38.RipCurrentStatement.12641E94D560PR.JSJCFWSJU.ff4422c619bf7a8ed7f894d0e426e315</id>
-<updated>2022-12-17T21:58:00-04:00</updated>
-<published>2022-12-17T21:58:00-04:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=PR12641E854564.RipCurrentStatement.12641E96AA20PR.JSJCFWSJU.ff4422c619bf7a8ed7f894d0e426e315</id>
+<updated>2022-12-18T04:01:00-04:00</updated>
+<published>2022-12-18T04:01:00-04:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Rip Current Statement issued December 17 at 9:58PM AST until December 19 at 6:00AM AST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=PR12641E844A38.RipCurrentStatement.12641E94D560PR.JSJCFWSJU.ff4422c619bf7a8ed7f894d0e426e315"/>
-<summary>...HIGH RIP CURRENT RISK REMAINS IN EFFECT FROM 6 AM AST SUNDAY THROUGH LATE SUNDAY NIGHT... * WHAT...High Risk of Rip Currents due to breaking waves around 6 feet. * WHERE...Beaches in the Southwest of Puerto Rico. * WHEN...Through 6 AM AST Monday.</summary>
+<title>Rip Current Statement issued December 18 at 4:01AM AST until December 19 at 6:00PM AST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=PR12641E854564.RipCurrentStatement.12641E96AA20PR.JSJCFWSJU.ff4422c619bf7a8ed7f894d0e426e315"/>
+<summary>...HIGH RIP CURRENT RISK NOW IN EFFECT UNTIL 6 PM AST MONDAY... * WHAT...High Risk of Rip Currents due to breaking waves around 7 feet. * WHERE...Beaches in the Southwest of Puerto Rico. * WHEN...Through 6 PM AST Monday. * IMPACTS...Strong currents that can carry even the best swimmers</summary>
 <cap:event>Rip Current Statement</cap:event>
-<cap:effective>2022-12-17T21:58:00-04:00</cap:effective>
-<cap:expires>2022-12-19T06:00:00-04:00</cap:expires>
+<cap:effective>2022-12-18T04:01:00-04:00</cap:effective>
+<cap:expires>2022-12-19T18:00:00-04:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
 <cap:category>Met</cap:category>
@@ -3713,7 +3781,7 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
-<value>/O.CON.TJSJ.RP.S.0076.221218T1000Z-221219T1000Z/</value>
+<value>/O.EXT.TJSJ.RP.S.0076.221218T1000Z-221219T2200Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -4170,18 +4238,18 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=VI12641E844A38.HighSurfAdvisory.12641E94D560VI.JSJCFWSJU.e6ce73b8c16b04ed56d699e0c7bc6693</id>
-<updated>2022-12-17T21:58:00-04:00</updated>
-<published>2022-12-17T21:58:00-04:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=VI12641E854564.HighSurfAdvisory.12641E96AA20VI.JSJCFWSJU.e6ce73b8c16b04ed56d699e0c7bc6693</id>
+<updated>2022-12-18T04:01:00-04:00</updated>
+<published>2022-12-18T04:01:00-04:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>High Surf Advisory issued December 17 at 9:58PM AST until December 19 at 6:00AM AST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=VI12641E844A38.HighSurfAdvisory.12641E94D560VI.JSJCFWSJU.e6ce73b8c16b04ed56d699e0c7bc6693"/>
-<summary>...HIGH SURF ADVISORY REMAINS IN EFFECT UNTIL 6 AM AST MONDAY... ...HIGH RIP CURRENT RISK REMAINS IN EFFECT THROUGH LATE SUNDAY NIGHT... * WHAT...Dangerous surf conditions and rip currents expected due to breaking waves of 6 to 13 feet. Localized beach erosion is possible.</summary>
+<title>High Surf Advisory issued December 18 at 4:01AM AST until December 19 at 6:00PM AST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=VI12641E854564.HighSurfAdvisory.12641E96AA20VI.JSJCFWSJU.e6ce73b8c16b04ed56d699e0c7bc6693"/>
+<summary>...HIGH SURF ADVISORY NOW IN EFFECT UNTIL 6 PM AST MONDAY... ...HIGH RIP CURRENT RISK NOW IN EFFECT UNTIL 6 PM AST MONDAY... * WHAT...Dangerous surf conditions and rip currents expected due to breaking waves of 6 to 13 feet. Localized beach erosion is possible. * WHERE...Beaches along the northern coast of Puerto Rico,</summary>
 <cap:event>High Surf Advisory</cap:event>
-<cap:effective>2022-12-17T21:58:00-04:00</cap:effective>
-<cap:expires>2022-12-19T06:00:00-04:00</cap:expires>
+<cap:effective>2022-12-18T04:01:00-04:00</cap:effective>
+<cap:expires>2022-12-19T18:00:00-04:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
 <cap:category>Met</cap:category>
@@ -4198,23 +4266,23 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
-<value>/O.CON.TJSJ.SU.Y.0015.000000T0000Z-221219T1000Z/
-/O.CON.TJSJ.RP.S.0076.000000T0000Z-221219T1000Z/</value>
+<value>/O.EXT.TJSJ.SU.Y.0015.000000T0000Z-221219T2200Z/
+/O.EXT.TJSJ.RP.S.0076.000000T0000Z-221219T2200Z/</value>
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=VI12641E844A38.HighSurfAdvisory.12641E94D560VI.JSJCFWSJU.c1f0d17f7f9084f262c80ff045bef278</id>
-<updated>2022-12-17T21:58:00-04:00</updated>
-<published>2022-12-17T21:58:00-04:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=VI12641E854564.HighSurfAdvisory.12641E96AA20VI.JSJCFWSJU.c1f0d17f7f9084f262c80ff045bef278</id>
+<updated>2022-12-18T04:01:00-04:00</updated>
+<published>2022-12-18T04:01:00-04:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>High Surf Advisory issued December 17 at 9:58PM AST until December 19 at 6:00AM AST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=VI12641E844A38.HighSurfAdvisory.12641E94D560VI.JSJCFWSJU.c1f0d17f7f9084f262c80ff045bef278"/>
-<summary>...HIGH SURF ADVISORY REMAINS IN EFFECT UNTIL 6 AM AST MONDAY... ...HIGH RIP CURRENT RISK REMAINS IN EFFECT THROUGH LATE SUNDAY NIGHT... * WHAT...Dangerous surf conditions and rip currents expected due to breaking waves of 6 to 10 feet. Localized beach erosion is possible.</summary>
+<title>High Surf Advisory issued December 18 at 4:01AM AST until December 19 at 6:00PM AST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=VI12641E854564.HighSurfAdvisory.12641E96AA20VI.JSJCFWSJU.c1f0d17f7f9084f262c80ff045bef278"/>
+<summary>...HIGH SURF ADVISORY NOW IN EFFECT UNTIL 6 PM AST MONDAY... ...HIGH RIP CURRENT RISK NOW IN EFFECT UNTIL 6 PM AST MONDAY... * WHAT...Dangerous surf conditions and rip currents expected due to breaking waves of 6 to 11 feet. Localized beach erosion is possible. * WHERE...Beaches of northeastern St. Croix.</summary>
 <cap:event>High Surf Advisory</cap:event>
-<cap:effective>2022-12-17T21:58:00-04:00</cap:effective>
-<cap:expires>2022-12-19T06:00:00-04:00</cap:expires>
+<cap:effective>2022-12-18T04:01:00-04:00</cap:effective>
+<cap:expires>2022-12-19T18:00:00-04:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
 <cap:category>Met</cap:category>
@@ -4231,23 +4299,23 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
-<value>/O.CON.TJSJ.SU.Y.0016.000000T0000Z-221219T1000Z/
-/O.CON.TJSJ.RP.S.0076.000000T0000Z-221219T1000Z/</value>
+<value>/O.EXT.TJSJ.SU.Y.0016.000000T0000Z-221219T2200Z/
+/O.EXT.TJSJ.RP.S.0076.000000T0000Z-221219T2200Z/</value>
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=VI12641E844A38.RipCurrentStatement.12641E94D560VI.JSJCFWSJU.9450510bed8d61045c93d7799ce983fd</id>
-<updated>2022-12-17T21:58:00-04:00</updated>
-<published>2022-12-17T21:58:00-04:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=VI12641E854564.RipCurrentStatement.12641E96AA20VI.JSJCFWSJU.9450510bed8d61045c93d7799ce983fd</id>
+<updated>2022-12-18T04:01:00-04:00</updated>
+<published>2022-12-18T04:01:00-04:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Rip Current Statement issued December 17 at 9:58PM AST until December 19 at 6:00AM AST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=VI12641E844A38.RipCurrentStatement.12641E94D560VI.JSJCFWSJU.9450510bed8d61045c93d7799ce983fd"/>
-<summary>...HIGH SURF ADVISORY REMAINS IN EFFECT UNTIL 6 AM AST MONDAY... ...HIGH RIP CURRENT RISK REMAINS IN EFFECT THROUGH LATE SUNDAY NIGHT... * WHAT...Dangerous surf conditions and rip currents expected due to breaking waves of 6 to 13 feet. Localized beach erosion is possible.</summary>
+<title>Rip Current Statement issued December 18 at 4:01AM AST until December 19 at 6:00PM AST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=VI12641E854564.RipCurrentStatement.12641E96AA20VI.JSJCFWSJU.9450510bed8d61045c93d7799ce983fd"/>
+<summary>...HIGH SURF ADVISORY NOW IN EFFECT UNTIL 6 PM AST MONDAY... ...HIGH RIP CURRENT RISK NOW IN EFFECT UNTIL 6 PM AST MONDAY... * WHAT...Dangerous surf conditions and rip currents expected due to breaking waves of 6 to 13 feet. Localized beach erosion is possible. * WHERE...Beaches along the northern coast of Puerto Rico,</summary>
 <cap:event>Rip Current Statement</cap:event>
-<cap:effective>2022-12-17T21:58:00-04:00</cap:effective>
-<cap:expires>2022-12-19T06:00:00-04:00</cap:expires>
+<cap:effective>2022-12-18T04:01:00-04:00</cap:effective>
+<cap:expires>2022-12-19T18:00:00-04:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
 <cap:category>Met</cap:category>
@@ -4264,23 +4332,23 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
-<value>/O.CON.TJSJ.SU.Y.0015.000000T0000Z-221219T1000Z/
-/O.CON.TJSJ.RP.S.0076.000000T0000Z-221219T1000Z/</value>
+<value>/O.EXT.TJSJ.SU.Y.0015.000000T0000Z-221219T2200Z/
+/O.EXT.TJSJ.RP.S.0076.000000T0000Z-221219T2200Z/</value>
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=VI12641E844A38.RipCurrentStatement.12641E94D560VI.JSJCFWSJU.432e571a5655bf42bc6301f69880e5f1</id>
-<updated>2022-12-17T21:58:00-04:00</updated>
-<published>2022-12-17T21:58:00-04:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=VI12641E854564.RipCurrentStatement.12641E96AA20VI.JSJCFWSJU.432e571a5655bf42bc6301f69880e5f1</id>
+<updated>2022-12-18T04:01:00-04:00</updated>
+<published>2022-12-18T04:01:00-04:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Rip Current Statement issued December 17 at 9:58PM AST until December 19 at 6:00AM AST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=VI12641E844A38.RipCurrentStatement.12641E94D560VI.JSJCFWSJU.432e571a5655bf42bc6301f69880e5f1"/>
-<summary>...HIGH SURF ADVISORY REMAINS IN EFFECT UNTIL 6 AM AST MONDAY... ...HIGH RIP CURRENT RISK REMAINS IN EFFECT THROUGH LATE SUNDAY NIGHT... * WHAT...Dangerous surf conditions and rip currents expected due to breaking waves of 6 to 10 feet. Localized beach erosion is possible.</summary>
+<title>Rip Current Statement issued December 18 at 4:01AM AST until December 19 at 6:00PM AST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=VI12641E854564.RipCurrentStatement.12641E96AA20VI.JSJCFWSJU.432e571a5655bf42bc6301f69880e5f1"/>
+<summary>...HIGH SURF ADVISORY NOW IN EFFECT UNTIL 6 PM AST MONDAY... ...HIGH RIP CURRENT RISK NOW IN EFFECT UNTIL 6 PM AST MONDAY... * WHAT...Dangerous surf conditions and rip currents expected due to breaking waves of 6 to 11 feet. Localized beach erosion is possible. * WHERE...Beaches of northeastern St. Croix.</summary>
 <cap:event>Rip Current Statement</cap:event>
-<cap:effective>2022-12-17T21:58:00-04:00</cap:effective>
-<cap:expires>2022-12-19T06:00:00-04:00</cap:expires>
+<cap:effective>2022-12-18T04:01:00-04:00</cap:effective>
+<cap:expires>2022-12-19T18:00:00-04:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
 <cap:category>Met</cap:category>
@@ -4297,8 +4365,8 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
-<value>/O.CON.TJSJ.SU.Y.0016.000000T0000Z-221219T1000Z/
-/O.CON.TJSJ.RP.S.0076.000000T0000Z-221219T1000Z/</value>
+<value>/O.EXT.TJSJ.SU.Y.0016.000000T0000Z-221219T2200Z/
+/O.EXT.TJSJ.RP.S.0076.000000T0000Z-221219T2200Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -4560,38 +4628,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=WV12641E7814D4.SpecialWeatherStatement.12641E854500WV.PBZSPSPBZ.5be4093ac21990fe0e150bae6a8502c7</id>
-<updated>2022-12-17T16:57:00-05:00</updated>
-<published>2022-12-17T16:57:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Special Weather Statement issued December 17 at 4:57PM EST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=WV12641E7814D4.SpecialWeatherStatement.12641E854500WV.PBZSPSPBZ.5be4093ac21990fe0e150bae6a8502c7"/>
-<summary>...ACCUMULATING SNOW WITH TRAVEL IMPACTS TONIGHT... Snow showers are expected to increase in coverage tonight, with 1 to 3 inches of snow accumulation expected by Sunday morning. This snow, combined with cold temperatures, could result in snow covered roads and travel difficulties. Use caution if traveling, and allow extra time to reach your destination.</summary>
-<cap:event>Special Weather Statement</cap:event>
-<cap:effective>2022-12-17T16:57:00-05:00</cap:effective>
-<cap:expires>2022-12-18T03:00:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Observed</cap:certainty>
-<cap:areaDesc>Eastern Preston; Eastern Tucker</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>054077 054093</value>
-<valueName>UGC</valueName>
-<value>WVZ512 WVZ514</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value></value>
-</cap:parameter>
-</entry>
-<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=WV12641E7809E4.SpecialWeatherStatement.12641E856C10WV.LWXSPSLWX.2566c3937ece4e3244e124745afc68eb</id>
 <updated>2022-12-17T16:29:00-05:00</updated>
 <published>2022-12-17T16:29:00-05:00</published>
@@ -4624,6 +4660,136 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=WY12641E852D2C.HighWindWarning.12641E86CBA0WY.CYSNPWCYS.d4cefc809c72f4449e57f2aa1a361ee9</id>
+<updated>2022-12-18T00:39:00-07:00</updated>
+<published>2022-12-18T00:39:00-07:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>High Wind Warning issued December 18 at 12:39AM MST until December 18 at 11:00AM MST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=WY12641E852D2C.HighWindWarning.12641E86CBA0WY.CYSNPWCYS.d4cefc809c72f4449e57f2aa1a361ee9"/>
+<summary>...HIGH WIND WARNING REMAINS IN EFFECT UNTIL 11 AM MST THIS MORNING... * WHAT...West to southwest winds 30 to 40 MPH with gusts up to 60 MPH. * WHERE...North Snowy Range Foothills including Arlington and Elk Mountain along Interstate 80 between Laramie and Rawlins,</summary>
+<cap:event>High Wind Warning</cap:event>
+<cap:effective>2022-12-18T00:39:00-07:00</cap:effective>
+<cap:expires>2022-12-18T11:00:00-07:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Severe</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Central Laramie Range and Southwest Platte County</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>056001 056031</value>
+<valueName>UGC</valueName>
+<value>WYZ106</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KCYS.HW.W.0061.000000T0000Z-221218T1800Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=WY12641E852D2C.HighWindWarning.12641E86CBA0WY.CYSNPWCYS.43274c5927912521c993b304757443f9</id>
+<updated>2022-12-18T00:39:00-07:00</updated>
+<published>2022-12-18T00:39:00-07:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>High Wind Warning issued December 18 at 12:39AM MST until December 18 at 11:00AM MST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=WY12641E852D2C.HighWindWarning.12641E86CBA0WY.CYSNPWCYS.43274c5927912521c993b304757443f9"/>
+<summary>...HIGH WIND WARNING REMAINS IN EFFECT UNTIL 11 AM MST THIS MORNING... ...HIGH WIND WATCH IN EFFECT FROM LATE TONIGHT THROUGH MONDAY AFTERNOON... * WHAT...For the High Wind Warning, southwest winds 25 to 35 mph with gusts up to 65 mph. For the High Wind Watch, west winds</summary>
+<cap:event>High Wind Warning</cap:event>
+<cap:effective>2022-12-18T00:39:00-07:00</cap:effective>
+<cap:expires>2022-12-18T11:00:00-07:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Severe</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>North Snowy Range Foothills</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>056001 056007</value>
+<valueName>UGC</valueName>
+<value>WYZ110</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.NEW.KCYS.HW.A.0060.221219T0800Z-221220T0000Z/
+/O.CON.KCYS.HW.W.0061.000000T0000Z-221218T1800Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=WY12641E852D2C.HighWindWatch.12641EA29100WY.CYSNPWCYS.db7188b91ca455c338473ce81230292a</id>
+<updated>2022-12-18T00:39:00-07:00</updated>
+<published>2022-12-18T00:39:00-07:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>High Wind Watch issued December 18 at 12:39AM MST until December 19 at 5:00PM MST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=WY12641E852D2C.HighWindWatch.12641EA29100WY.CYSNPWCYS.db7188b91ca455c338473ce81230292a"/>
+<summary>...HIGH WIND WARNING REMAINS IN EFFECT UNTIL 11 AM MST THIS MORNING... ...HIGH WIND WATCH IN EFFECT FROM LATE TONIGHT THROUGH MONDAY AFTERNOON... * WHAT...For the High Wind Warning, southwest winds 25 to 35 mph with gusts up to 65 mph. For the High Wind Watch, west winds</summary>
+<cap:event>High Wind Watch</cap:event>
+<cap:effective>2022-12-18T00:39:00-07:00</cap:effective>
+<cap:expires>2022-12-19T17:00:00-07:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Future</cap:urgency>
+<cap:severity>Severe</cap:severity>
+<cap:certainty>Possible</cap:certainty>
+<cap:areaDesc>North Snowy Range Foothills</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>056001 056007</value>
+<valueName>UGC</valueName>
+<value>WYZ110</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.NEW.KCYS.HW.A.0060.221219T0800Z-221220T0000Z/
+/O.CON.KCYS.HW.W.0061.000000T0000Z-221218T1800Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=WY12641E852D2C.HighWindWatch.12641EA29100WY.CYSNPWCYS.02343aebf69c29d72c0b94b343134bcc</id>
+<updated>2022-12-18T00:39:00-07:00</updated>
+<published>2022-12-18T00:39:00-07:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>High Wind Watch issued December 18 at 12:39AM MST until December 19 at 5:00PM MST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=WY12641E852D2C.HighWindWatch.12641EA29100WY.CYSNPWCYS.02343aebf69c29d72c0b94b343134bcc"/>
+<summary>...HIGH WIND WATCH IN EFFECT FROM LATE TONIGHT THROUGH MONDAY AFTERNOON... * WHAT...West winds 30 to 40 mph with gusts up to 65 mph possible. * WHERE...South Laramie Range and South Laramie Range Foothills. * WHEN...From late tonight through Monday afternoon.</summary>
+<cap:event>High Wind Watch</cap:event>
+<cap:effective>2022-12-18T00:39:00-07:00</cap:effective>
+<cap:expires>2022-12-19T17:00:00-07:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Future</cap:urgency>
+<cap:severity>Severe</cap:severity>
+<cap:certainty>Possible</cap:certainty>
+<cap:areaDesc>South Laramie Range; South Laramie Range Foothills</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>056001 056021</value>
+<valueName>UGC</valueName>
+<value>WYZ116 WYZ117</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.NEW.KCYS.HW.A.0060.221219T0800Z-221220T0000Z/</value>
+</cap:parameter>
+</entry>
+<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=WY12641E84FCBC.FreezingFogAdvisory.12641E86F2B0WY.UNRNPWUNR.4f5e6ba400f00e24957ff670e394ab81</id>
 <updated>2022-12-17T23:15:00-07:00</updated>
 <published>2022-12-17T23:15:00-07:00</published>
@@ -4653,38 +4819,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value>/O.NEW.KUNR.ZF.Y.0001.221218T0615Z-221218T1900Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=WY12641E780A48.HighWindWarning.12641E86CBA0WY.CYSNPWCYS.6e843fade61ac4d0d54f277cfb88cd23</id>
-<updated>2022-12-17T14:30:00-07:00</updated>
-<published>2022-12-17T14:30:00-07:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>High Wind Warning issued December 17 at 2:30PM MST until December 18 at 11:00AM MST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=WY12641E780A48.HighWindWarning.12641E86CBA0WY.CYSNPWCYS.6e843fade61ac4d0d54f277cfb88cd23"/>
-<summary>...HIGH WIND WARNING REMAINS IN EFFECT UNTIL 11 AM MST SUNDAY... * WHAT...West to southwest winds 30 to 40 MPH with gusts up to 60 MPH. * WHERE...North Snowy Range Foothills including Arlington and Elk Mountain along Interstate 80 between Laramie and Rawlins, Central Laramie Range and southwest Platte County including</summary>
-<cap:event>High Wind Warning</cap:event>
-<cap:effective>2022-12-17T14:30:00-07:00</cap:effective>
-<cap:expires>2022-12-18T11:00:00-07:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Severe</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Central Laramie Range and Southwest Platte County; North Snowy Range Foothills</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>056001 056007 056031</value>
-<valueName>UGC</valueName>
-<value>WYZ106 WYZ110</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KCYS.HW.W.0061.000000T0000Z-221218T1800Z/</value>
 </cap:parameter>
 </entry>
 <entry>
