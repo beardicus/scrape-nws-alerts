@@ -16,16 +16,48 @@ xmlns = 'http://www.w3.org/2005/Atom'
 xmlns:cap = 'urn:oasis:names:tc:emergency:cap:1.1'
 xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 >
-<!-- http-date = Sat, 24 Dec 2022 21:00:00 GMT -->
+<!-- http-date = Sat, 24 Dec 2022 21:30:00 GMT -->
 <id>https://alerts.weather.gov/cap/us.php?x=0</id>
 <logo>http://alerts.weather.gov/images/xml_logo.gif</logo>
 <generator>NWS CAP Server</generator>
-<updated>2022-12-24T16:00:00-05:00</updated>
+<updated>2022-12-24T13:30:00-08:00</updated>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
 <title>Current Watches, Warnings and Advisories for the United States Issued by the National Weather Service</title>
 <link href="https://alerts.weather.gov/cap/us.php?x=0"/>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=AK12641EE2D10C.WindChillAdvisory.12641EEFEDB0AK.AFCWSWAER.68e55c4218a46903b9066123f40a0a17</id>
+<updated>2022-12-24T12:07:00-09:00</updated>
+<published>2022-12-24T12:07:00-09:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Wind Chill Advisory issued December 24 at 12:07PM AKST until December 24 at 10:00PM AKST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=AK12641EE2D10C.WindChillAdvisory.12641EEFEDB0AK.AFCWSWAER.68e55c4218a46903b9066123f40a0a17"/>
+<summary>...WIND CHILL ADVISORY NOW IN EFFECT UNTIL 10 PM AKST THIS EVENING... * WHAT...Very cold wind chills. Wind chills as low as 45 below zero. Blowing snow is still expected with visibilities as low as 3/4 mile. * WHERE...Thompson Pass.</summary>
+<cap:event>Wind Chill Advisory</cap:event>
+<cap:effective>2022-12-24T12:07:00-09:00</cap:effective>
+<cap:expires>2022-12-24T22:00:00-09:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Northeast Prince William Sound</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>002063 002066</value>
+<valueName>UGC</valueName>
+<value>AKZ131</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.EXT.PAFC.WC.Y.0004.000000T0000Z-221225T0700Z/</value>
+</cap:parameter>
+</entry>
 <entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=AK12641EE2BD84.WinterStormWarning.12641EEF5170AK.AJKWSWAJK.439f49e4313655c94935706ece85c143</id>
 <updated>2022-12-24T11:57:00-09:00</updated>
@@ -120,38 +152,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value>/O.CON.PAJK.WS.W.0014.000000T0000Z-221225T1500Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=AK12641EE25CA4.WindChillAdvisory.12641EE2F560AK.AFCWSWAER.68e55c4218a46903b9066123f40a0a17</id>
-<updated>2022-12-24T09:09:00-09:00</updated>
-<published>2022-12-24T09:09:00-09:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Wind Chill Advisory issued December 24 at 9:09AM AKST until December 24 at 1:00PM AKST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=AK12641EE25CA4.WindChillAdvisory.12641EE2F560AK.AFCWSWAER.68e55c4218a46903b9066123f40a0a17"/>
-<summary>...WIND CHILL ADVISORY REMAINS IN EFFECT UNTIL 1 PM AKST THIS AFTERNOON... * WHAT...Very cold wind chills. Wind chills as low as 45 below zero. Winds will still be gusty with gusts around 40 mph possible. Blowing snow is still expected with visibilities as low as 3/4 mile.</summary>
-<cap:event>Wind Chill Advisory</cap:event>
-<cap:effective>2022-12-24T09:09:00-09:00</cap:effective>
-<cap:expires>2022-12-24T13:00:00-09:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Northeast Prince William Sound</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>002063 002066</value>
-<valueName>UGC</valueName>
-<value>AKZ131</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.PAFC.WC.Y.0004.000000T0000Z-221224T2200Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -1049,6 +1049,38 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value></value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=CA12641EE2DA08.HighWindWatch.12641F1D8D60CA.REVNPWREV.9a5bbbcfa0fee9367d147ee2c9973cc1</id>
+<updated>2022-12-24T13:30:00-08:00</updated>
+<published>2022-12-24T13:30:00-08:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>High Wind Watch issued December 24 at 1:30PM PST until December 27 at 10:00PM PST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CA12641EE2DA08.HighWindWatch.12641F1D8D60CA.REVNPWREV.9a5bbbcfa0fee9367d147ee2c9973cc1"/>
+<summary>...HIGH WIND WATCH IN EFFECT FROM MONDAY EVENING THROUGH TUESDAY EVENING... * WHAT...Southwest winds 25 to 40 mph with gusts up to 60 mph possible. * WHERE...Greater Reno-Carson City-Minden Area, Northern Washoe County, Mono County, Greater Lake Tahoe Area, Lassen-Eastern</summary>
+<cap:event>High Wind Watch</cap:event>
+<cap:effective>2022-12-24T13:30:00-08:00</cap:effective>
+<cap:expires>2022-12-27T22:00:00-08:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Future</cap:urgency>
+<cap:severity>Severe</cap:severity>
+<cap:certainty>Possible</cap:certainty>
+<cap:areaDesc>Greater Lake Tahoe Area; Lassen-Eastern Plumas-Eastern Sierra Counties; Mono; Surprise Valley California</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>006003 006017 006035 006049 006051 006061 006063 006091</value>
+<valueName>UGC</valueName>
+<value>CAZ070 CAZ071 CAZ072 CAZ073</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.NEW.KREV.HW.A.0004.221227T0600Z-221228T0600Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -3170,6 +3202,70 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=IA12641EE2D558.WindChillAdvisory.12641EF14D40IA.DMXWSWDMX.c8151d1f8fbb8769b2bc7d62f429c3c3</id>
+<updated>2022-12-24T15:18:00-06:00</updated>
+<published>2022-12-24T15:18:00-06:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Wind Chill Advisory issued December 24 at 3:18PM CST until December 25 at 10:00AM CST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=IA12641EE2D558.WindChillAdvisory.12641EF14D40IA.DMXWSWDMX.c8151d1f8fbb8769b2bc7d62f429c3c3"/>
+<summary>...Another Night of Bitter Cold Wind Chills... .Although it will not be as extreme as the past few nights, the combination of brisk northwest winds and bitter cold temperatures will drive wind chills down into the 20 to 30 below zero range again tonight and into early Christmas Day. ...WIND CHILL ADVISORY IN EFFECT UNTIL 10 AM CST SUNDAY...</summary>
+<cap:event>Wind Chill Advisory</cap:event>
+<cap:effective>2022-12-24T15:18:00-06:00</cap:effective>
+<cap:expires>2022-12-25T10:00:00-06:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Adair; Adams; Audubon; Black Hawk; Boone; Bremer; Butler; Calhoun; Carroll; Cass; Cerro Gordo; Clarke; Crawford; Dallas; Emmet; Franklin; Greene; Grundy; Guthrie; Hamilton; Hancock; Hardin; Humboldt; Jasper; Kossuth; Lucas; Madison; Mahaska; Marion; Marshall; Monroe; Palo Alto; Pocahontas; Polk; Poweshiek; Sac; Story; Tama; Union; Wapello; Warren; Webster; Winnebago; Worth; Wright</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>019001 019003 019009 019013 019015 019017 019023 019025 019027 019029 019033 019039 019047 019049 019063 019069 019073 019075 019077 019079 019081 019083 019091 019099 019109 019117 019121 019123 019125 019127 019135 019147 019151 019153 019157 019161 019169 019171 019175 019179 019181 019187 019189 019195 019197</value>
+<valueName>UGC</valueName>
+<value>IAZ004 IAZ005 IAZ006 IAZ007 IAZ015 IAZ016 IAZ017 IAZ023 IAZ024 IAZ025 IAZ026 IAZ027 IAZ028 IAZ033 IAZ034 IAZ035 IAZ036 IAZ037 IAZ038 IAZ039 IAZ044 IAZ045 IAZ046 IAZ047 IAZ048 IAZ049 IAZ050 IAZ057 IAZ058 IAZ059 IAZ060 IAZ061 IAZ062 IAZ070 IAZ071 IAZ072 IAZ073 IAZ074 IAZ075 IAZ081 IAZ082 IAZ083 IAZ084 IAZ085 IAZ086</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.NEW.KDMX.WC.Y.0020.221225T0000Z-221225T1600Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=IA12641EE2D1D4.WindChillAdvisory.12641EF12630IA.OAXWSWOAX.51e8c4a6de8543205c32c59e0aedcd39</id>
+<updated>2022-12-24T15:09:00-06:00</updated>
+<published>2022-12-24T15:09:00-06:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Wind Chill Advisory issued December 24 at 3:09PM CST until December 25 at 9:00AM CST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=IA12641EE2D1D4.WindChillAdvisory.12641EF12630IA.OAXWSWOAX.51e8c4a6de8543205c32c59e0aedcd39"/>
+<summary>...WIND CHILL ADVISORY IN EFFECT FROM 8 PM THIS EVENING TO 9 AM CST SUNDAY... * WHAT...Very cold wind chills expected. Wind chills as low as 25 below zero. * WHERE...Portions of southwest and west central Iowa and east central and northeast Nebraska.</summary>
+<cap:event>Wind Chill Advisory</cap:event>
+<cap:effective>2022-12-24T15:09:00-06:00</cap:effective>
+<cap:expires>2022-12-25T09:00:00-06:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Harrison; Mills; Monona; Montgomery; Pottawattamie; Shelby</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>019085 019129 019133 019137 019155 019165</value>
+<valueName>UGC</valueName>
+<value>IAZ043 IAZ055 IAZ056 IAZ069 IAZ079 IAZ080</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.NEW.KOAX.WC.Y.0011.221225T0200Z-221225T1500Z/</value>
+</cap:parameter>
+</entry>
+<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=IA12641EE2B550.WindChillAdvisory.12641EF0FF20IA.FSDWSWFSD.fa99b1e12af5b76276be12df377f7a3f</id>
 <updated>2022-12-24T14:36:00-06:00</updated>
 <published>2022-12-24T14:36:00-06:00</published>
@@ -4166,6 +4262,38 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=LA12641EE2D170.HardFreezeWarning.12641EF12630LA.LCHNPWLCH.8fff4b79c1ce522fed6db1fac826c062</id>
+<updated>2022-12-24T15:08:00-06:00</updated>
+<published>2022-12-24T15:08:00-06:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Hard Freeze Warning issued December 24 at 3:08PM CST until December 25 at 9:00AM CST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=LA12641EE2D170.HardFreezeWarning.12641EF12630LA.LCHNPWLCH.8fff4b79c1ce522fed6db1fac826c062"/>
+<summary>...HARD FREEZE WARNING REMAINS IN EFFECT FROM 8 PM THIS EVENING TO 9 AM CST SUNDAY... * WHAT...Sub-freezing temperatures as low as 21 expected. * WHERE...Portions of central, south central, southwest and west central Louisiana and southeast Texas. * WHEN...For the first Hard Freeze Warning, until noon CST</summary>
+<cap:event>Hard Freeze Warning</cap:event>
+<cap:effective>2022-12-24T15:08:00-06:00</cap:effective>
+<cap:expires>2022-12-25T09:00:00-06:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Acadia; Allen; Avoyelles; Beauregard; Calcasieu; East Cameron; Evangeline; Iberia; Jefferson Davis; Lafayette; Lower St. Martin; Rapides; St. Landry; St. Mary; Upper St. Martin; Vermilion; Vernon; West Cameron</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>022001 022003 022009 022011 022019 022023 022039 022045 022053 022055 022079 022097 022099 022101 022113 022115</value>
+<valueName>UGC</valueName>
+<value>LAZ027 LAZ028 LAZ029 LAZ030 LAZ031 LAZ032 LAZ033 LAZ041 LAZ042 LAZ043 LAZ044 LAZ045 LAZ052 LAZ053 LAZ054 LAZ055 LAZ073 LAZ074</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KLCH.HZ.W.0007.221225T0200Z-221225T1500Z/</value>
+</cap:parameter>
+</entry>
+<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=LA12641EE2BAC8.HardFreezeWarning.12641EF14D40LA.JANNPWJAN.7ff75a88f49b818f25e3febe95d32e0d</id>
 <updated>2022-12-24T14:50:00-06:00</updated>
 <published>2022-12-24T14:50:00-06:00</published>
@@ -4227,39 +4355,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value>/O.NEW.KSHV.HZ.W.0004.221225T0100Z-221225T1600Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=LA12641EE259E8.HardFreezeWarning.12641EF12630LA.LCHNPWLCH.8fff4b79c1ce522fed6db1fac826c062</id>
-<updated>2022-12-24T12:02:00-06:00</updated>
-<published>2022-12-24T12:02:00-06:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Hard Freeze Warning issued December 24 at 12:02PM CST until December 25 at 9:00AM CST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=LA12641EE259E8.HardFreezeWarning.12641EF12630LA.LCHNPWLCH.8fff4b79c1ce522fed6db1fac826c062"/>
-<summary>...HARD FREEZE WARNING REMAINS IN EFFECT FROM 8 PM THIS EVENING TO 9 AM CST SUNDAY... ...HARD FREEZE WARNING HAS EXPIRED... * WHAT...Sub-freezing temperatures as low as 21 expected. * WHERE...Portions of central, south central, southwest and west central Louisiana and southeast Texas.</summary>
-<cap:event>Hard Freeze Warning</cap:event>
-<cap:effective>2022-12-24T12:02:00-06:00</cap:effective>
-<cap:expires>2022-12-25T09:00:00-06:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Acadia; Allen; Avoyelles; Beauregard; Calcasieu; East Cameron; Evangeline; Iberia; Jefferson Davis; Lafayette; Lower St. Martin; Rapides; St. Landry; St. Mary; Upper St. Martin; Vermilion; Vernon; West Cameron</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>022001 022003 022009 022011 022019 022023 022039 022045 022053 022055 022079 022097 022099 022101 022113 022115</value>
-<valueName>UGC</valueName>
-<value>LAZ027 LAZ028 LAZ029 LAZ030 LAZ031 LAZ032 LAZ033 LAZ041 LAZ042 LAZ043 LAZ044 LAZ045 LAZ052 LAZ053 LAZ054 LAZ055 LAZ073 LAZ074</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.EXP.KLCH.HZ.W.0006.000000T0000Z-221224T1800Z/
-/O.CON.KLCH.HZ.W.0007.221225T0200Z-221225T1500Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -4749,6 +4844,200 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <valueName>VTEC</valueName>
 <value>/O.CON.KGYX.FL.W.0009.000000T0000Z-221225T1720Z/
 /ASTM1.1.ER.221224T1633Z.221224T2100Z.221225T1120Z.UU/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=MI12641EE2D044.BlizzardWarning.12641EF0B100MI.APXWSWAPX.115db56eac40ee93f20548ec33f26027</id>
+<updated>2022-12-24T16:05:00-05:00</updated>
+<published>2022-12-24T16:05:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Blizzard Warning issued December 24 at 4:05PM EST until December 25 at 7:00AM EST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MI12641EE2D044.BlizzardWarning.12641EF0B100MI.APXWSWAPX.115db56eac40ee93f20548ec33f26027"/>
+<summary>...BLIZZARD WARNING NOW IN EFFECT UNTIL 7 AM EST SUNDAY... * WHAT...Blizzard conditions. Additional snow accumulations of 2 to 4 inches. Winds gusting as high as 45 mph...producing significant blowing and drifting snow. * WHERE...Emmet and Cheboygan Counties, and Mackinac Island/Bois Blanc Island and Beaver Island and surrounding islands.</summary>
+<cap:event>Blizzard Warning</cap:event>
+<cap:effective>2022-12-24T16:05:00-05:00</cap:effective>
+<cap:expires>2022-12-25T07:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Severe</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Beaver Island and surrounding islands; Cheboygan; Emmet; Mackinac Island, Bois Blanc Island</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>026029 026031 026047 026097</value>
+<valueName>UGC</valueName>
+<value>MIZ016 MIZ017 MIZ097 MIZ098</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.EXT.KAPX.BZ.W.0001.000000T0000Z-221225T1200Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=MI12641EE2D044.BlizzardWarning.12641EF0B100MI.APXWSWAPX.227f16422edec49e26fd091ba19141ae</id>
+<updated>2022-12-24T16:05:00-05:00</updated>
+<published>2022-12-24T16:05:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Blizzard Warning issued December 24 at 4:05PM EST until December 25 at 7:00AM EST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MI12641EE2D044.BlizzardWarning.12641EF0B100MI.APXWSWAPX.227f16422edec49e26fd091ba19141ae"/>
+<summary>...BLIZZARD WARNING NOW IN EFFECT UNTIL 7 AM EST SUNDAY... * WHAT...Blizzard conditions. Additional snow accumulations of 2 to 4 inches. Winds gusting as high as 45 mph...producing significant blowing and drifting snow. * WHERE...Antrim, Otsego, Kalkaska, Crawford and Charlevoix Counties.</summary>
+<cap:event>Blizzard Warning</cap:event>
+<cap:effective>2022-12-24T16:05:00-05:00</cap:effective>
+<cap:expires>2022-12-25T07:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Severe</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Antrim; Charlevoix; Crawford; Kalkaska; Otsego</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>026009 026029 026039 026079 026137</value>
+<valueName>UGC</valueName>
+<value>MIZ021 MIZ022 MIZ027 MIZ028 MIZ099</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.EXT.KAPX.BZ.W.0001.000000T0000Z-221225T1200Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=MI12641EE2D044.BlizzardWarning.12641EF0B100MI.APXWSWAPX.98f3f243b0342344301da1759d463c47</id>
+<updated>2022-12-24T16:05:00-05:00</updated>
+<published>2022-12-24T16:05:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Blizzard Warning issued December 24 at 4:05PM EST until December 25 at 7:00AM EST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MI12641EE2D044.BlizzardWarning.12641EF0B100MI.APXWSWAPX.98f3f243b0342344301da1759d463c47"/>
+<summary>...BLIZZARD WARNING NOW IN EFFECT UNTIL 7 AM EST SUNDAY... * WHAT...Blizzard conditions. Additional snow accumulations of 4 to 8 inches. Winds gusting as high as 40 mph...producing significant blowing and drifting snow. * WHERE...Western Chippewa, Central Chippewa, Southeast Chippewa, Western Mackinac and Eastern Mackinac Counties.</summary>
+<cap:event>Blizzard Warning</cap:event>
+<cap:effective>2022-12-24T16:05:00-05:00</cap:effective>
+<cap:expires>2022-12-25T07:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Severe</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Central Chippewa; Eastern Mackinac; Southeast Chippewa; Western Chippewa; Western Mackinac</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>026033 026097</value>
+<valueName>UGC</valueName>
+<value>MIZ086 MIZ087 MIZ088 MIZ095 MIZ096</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.EXT.KAPX.BZ.W.0001.000000T0000Z-221225T1200Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=MI12641EE2D044.WinterStormWarning.12641EF0B100MI.APXWSWAPX.a081e0724f23eaaabd85128f53248325</id>
+<updated>2022-12-24T16:05:00-05:00</updated>
+<published>2022-12-24T16:05:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Winter Storm Warning issued December 24 at 4:05PM EST until December 25 at 7:00AM EST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MI12641EE2D044.WinterStormWarning.12641EF0B100MI.APXWSWAPX.a081e0724f23eaaabd85128f53248325"/>
+<summary>...WINTER STORM WARNING IN EFFECT UNTIL 7 AM EST SUNDAY... ...BLIZZARD WARNING IS CANCELLED... * WHAT...Snow. Additional snow accumulations of 1 to 3 inches. Winds gusting as high as 40 mph...producing blowing and drifting snow. * WHERE...Presque Isle and Montmorency Counties.</summary>
+<cap:event>Winter Storm Warning</cap:event>
+<cap:effective>2022-12-24T16:05:00-05:00</cap:effective>
+<cap:expires>2022-12-25T07:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Montmorency; Presque Isle</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>026119 026141</value>
+<valueName>UGC</valueName>
+<value>MIZ018 MIZ023</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CAN.KAPX.BZ.W.0001.000000T0000Z-221225T0000Z/
+/O.EXB.KAPX.WS.W.0008.000000T0000Z-221225T1200Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=MI12641EE2D044.WinterStormWarning.12641EF0B100MI.APXWSWAPX.9f067051e83075524fa2310fc587ede5</id>
+<updated>2022-12-24T16:05:00-05:00</updated>
+<published>2022-12-24T16:05:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Winter Storm Warning issued December 24 at 4:05PM EST until December 25 at 7:00AM EST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MI12641EE2D044.WinterStormWarning.12641EF0B100MI.APXWSWAPX.9f067051e83075524fa2310fc587ede5"/>
+<summary>...WINTER STORM WARNING IN EFFECT UNTIL 7 AM EST SUNDAY... ...BLIZZARD WARNING IS CANCELLED... * WHAT...Snow. Additional snow accumulations of 1 to 3 inches. Winds gusting as high as 40 mph...producing blowing and drifting snow. * WHERE...Leelanau, Benzie, Grand Traverse, Manistee and Wexford</summary>
+<cap:event>Winter Storm Warning</cap:event>
+<cap:effective>2022-12-24T16:05:00-05:00</cap:effective>
+<cap:expires>2022-12-25T07:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Benzie; Grand Traverse; Leelanau; Manistee; Wexford</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>026019 026055 026089 026101 026165</value>
+<valueName>UGC</valueName>
+<value>MIZ020 MIZ025 MIZ026 MIZ031 MIZ032</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CAN.KAPX.BZ.W.0001.000000T0000Z-221225T0000Z/
+/O.EXB.KAPX.WS.W.0008.000000T0000Z-221225T1200Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=MI12641EE2D044.WinterStormWarning.12641EF0B100MI.APXWSWAPX.2494b836e4ca788e4f63004df0e5db24</id>
+<updated>2022-12-24T16:05:00-05:00</updated>
+<published>2022-12-24T16:05:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Winter Storm Warning issued December 24 at 4:05PM EST until December 25 at 7:00AM EST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MI12641EE2D044.WinterStormWarning.12641EF0B100MI.APXWSWAPX.2494b836e4ca788e4f63004df0e5db24"/>
+<summary>...WINTER STORM WARNING NOW IN EFFECT UNTIL 7 AM EST SUNDAY... * WHAT...Snow. Additional snow accumulations of up to two inches. Winds gusting as high as 40 mph...producing blowing and drifting snow. * WHERE...Alpena, Oscoda, Missaukee and Roscommon Counties. * WHEN...Until 7 AM EST Sunday.</summary>
+<cap:event>Winter Storm Warning</cap:event>
+<cap:effective>2022-12-24T16:05:00-05:00</cap:effective>
+<cap:expires>2022-12-25T07:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Alpena; Missaukee; Oscoda; Roscommon</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>026007 026113 026135 026143</value>
+<valueName>UGC</valueName>
+<value>MIZ024 MIZ029 MIZ033 MIZ034</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.EXT.KAPX.WS.W.0008.000000T0000Z-221225T1200Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -5365,198 +5654,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=MI12641EE1E904.BlizzardWarning.12641EEEDC40MI.APXWSWAPX.115db56eac40ee93f20548ec33f26027</id>
-<updated>2022-12-24T10:13:00-05:00</updated>
-<published>2022-12-24T10:13:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Blizzard Warning issued December 24 at 10:13AM EST until December 24 at 7:00PM EST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MI12641EE1E904.BlizzardWarning.12641EEEDC40MI.APXWSWAPX.115db56eac40ee93f20548ec33f26027"/>
-<summary>...BLIZZARD WARNING REMAINS IN EFFECT UNTIL 7 PM EST THIS EVENING... * WHAT...Blizzard conditions. Additional snow accumulations of 1 to 3 inches. Winds gusting as high as 45 mph. * WHERE...Emmet and Cheboygan Counties, and Mackinac Island/Bois Blanc Island and Beaver Island and surrounding islands.</summary>
-<cap:event>Blizzard Warning</cap:event>
-<cap:effective>2022-12-24T10:13:00-05:00</cap:effective>
-<cap:expires>2022-12-24T19:00:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Severe</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Beaver Island and surrounding islands; Cheboygan; Emmet; Mackinac Island, Bois Blanc Island</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>026029 026031 026047 026097</value>
-<valueName>UGC</valueName>
-<value>MIZ016 MIZ017 MIZ097 MIZ098</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KAPX.BZ.W.0001.000000T0000Z-221225T0000Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=MI12641EE1E904.BlizzardWarning.12641EEEDC40MI.APXWSWAPX.708c7dca266e23efd4f689f07714932f</id>
-<updated>2022-12-24T10:13:00-05:00</updated>
-<published>2022-12-24T10:13:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Blizzard Warning issued December 24 at 10:13AM EST until December 24 at 7:00PM EST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MI12641EE1E904.BlizzardWarning.12641EEEDC40MI.APXWSWAPX.708c7dca266e23efd4f689f07714932f"/>
-<summary>...BLIZZARD WARNING REMAINS IN EFFECT UNTIL 7 PM EST THIS EVENING... * WHAT...Blizzard conditions. Additional snow accumulations of up to two inches. Winds gusting as high as 40 mph. * WHERE...Presque Isle and Montmorency Counties. * WHEN...Until 7 PM EST this evening.</summary>
-<cap:event>Blizzard Warning</cap:event>
-<cap:effective>2022-12-24T10:13:00-05:00</cap:effective>
-<cap:expires>2022-12-24T19:00:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Severe</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Montmorency; Presque Isle</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>026119 026141</value>
-<valueName>UGC</valueName>
-<value>MIZ018 MIZ023</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KAPX.BZ.W.0001.000000T0000Z-221225T0000Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=MI12641EE1E904.BlizzardWarning.12641EEEDC40MI.APXWSWAPX.2c31f556002370490b7dcf874d5bbfc9</id>
-<updated>2022-12-24T10:13:00-05:00</updated>
-<published>2022-12-24T10:13:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Blizzard Warning issued December 24 at 10:13AM EST until December 24 at 7:00PM EST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MI12641EE1E904.BlizzardWarning.12641EEEDC40MI.APXWSWAPX.2c31f556002370490b7dcf874d5bbfc9"/>
-<summary>...BLIZZARD WARNING REMAINS IN EFFECT UNTIL 7 PM EST THIS EVENING... * WHAT...Blizzard conditions. Additional snow accumulations of 1 to 3 inches. Winds gusting as high as 45 mph. * WHERE...Leelanau, Benzie, Grand Traverse, Manistee and Wexford Counties.</summary>
-<cap:event>Blizzard Warning</cap:event>
-<cap:effective>2022-12-24T10:13:00-05:00</cap:effective>
-<cap:expires>2022-12-24T19:00:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Severe</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Benzie; Grand Traverse; Leelanau; Manistee; Wexford</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>026019 026055 026089 026101 026165</value>
-<valueName>UGC</valueName>
-<value>MIZ020 MIZ025 MIZ026 MIZ031 MIZ032</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KAPX.BZ.W.0001.000000T0000Z-221225T0000Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=MI12641EE1E904.BlizzardWarning.12641EEEDC40MI.APXWSWAPX.227f16422edec49e26fd091ba19141ae</id>
-<updated>2022-12-24T10:13:00-05:00</updated>
-<published>2022-12-24T10:13:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Blizzard Warning issued December 24 at 10:13AM EST until December 24 at 7:00PM EST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MI12641EE1E904.BlizzardWarning.12641EEEDC40MI.APXWSWAPX.227f16422edec49e26fd091ba19141ae"/>
-<summary>...BLIZZARD WARNING REMAINS IN EFFECT UNTIL 7 PM EST THIS EVENING... * WHAT...Blizzard conditions. Additional snow accumulations of 2 to 4 inches. Winds gusting as high as 45 mph. * WHERE...Antrim, Otsego, Kalkaska, Crawford and Charlevoix Counties.</summary>
-<cap:event>Blizzard Warning</cap:event>
-<cap:effective>2022-12-24T10:13:00-05:00</cap:effective>
-<cap:expires>2022-12-24T19:00:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Severe</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Antrim; Charlevoix; Crawford; Kalkaska; Otsego</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>026009 026029 026039 026079 026137</value>
-<valueName>UGC</valueName>
-<value>MIZ021 MIZ022 MIZ027 MIZ028 MIZ099</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KAPX.BZ.W.0001.000000T0000Z-221225T0000Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=MI12641EE1E904.BlizzardWarning.12641EEEDC40MI.APXWSWAPX.98f3f243b0342344301da1759d463c47</id>
-<updated>2022-12-24T10:13:00-05:00</updated>
-<published>2022-12-24T10:13:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Blizzard Warning issued December 24 at 10:13AM EST until December 24 at 7:00PM EST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MI12641EE1E904.BlizzardWarning.12641EEEDC40MI.APXWSWAPX.98f3f243b0342344301da1759d463c47"/>
-<summary>...BLIZZARD WARNING REMAINS IN EFFECT UNTIL 7 PM EST THIS EVENING... * WHAT...Blizzard conditions. Additional snow accumulations of 3 to 6 inches. Winds gusting as high as 40 mph. * WHERE...Western Chippewa, Central Chippewa, Southeast Chippewa, Western Mackinac and Eastern Mackinac Counties.</summary>
-<cap:event>Blizzard Warning</cap:event>
-<cap:effective>2022-12-24T10:13:00-05:00</cap:effective>
-<cap:expires>2022-12-24T19:00:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Severe</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Central Chippewa; Eastern Mackinac; Southeast Chippewa; Western Chippewa; Western Mackinac</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>026033 026097</value>
-<valueName>UGC</valueName>
-<value>MIZ086 MIZ087 MIZ088 MIZ095 MIZ096</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KAPX.BZ.W.0001.000000T0000Z-221225T0000Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=MI12641EE1E904.WinterStormWarning.12641EEEDC40MI.APXWSWAPX.2494b836e4ca788e4f63004df0e5db24</id>
-<updated>2022-12-24T10:13:00-05:00</updated>
-<published>2022-12-24T10:13:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Winter Storm Warning issued December 24 at 10:13AM EST until December 24 at 7:00PM EST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MI12641EE1E904.WinterStormWarning.12641EEEDC40MI.APXWSWAPX.2494b836e4ca788e4f63004df0e5db24"/>
-<summary>...WINTER STORM WARNING REMAINS IN EFFECT UNTIL 7 PM EST THIS EVENING... * WHAT...Heavy snow. Additional snow accumulations of up to two inches. Winds gusting as high as 40 mph. * WHERE...Alpena, Oscoda, Missaukee and Roscommon Counties. * WHEN...Until 7 PM EST this evening.</summary>
-<cap:event>Winter Storm Warning</cap:event>
-<cap:effective>2022-12-24T10:13:00-05:00</cap:effective>
-<cap:expires>2022-12-24T19:00:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Alpena; Missaukee; Oscoda; Roscommon</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>026007 026113 026135 026143</value>
-<valueName>UGC</valueName>
-<value>MIZ024 MIZ029 MIZ033 MIZ034</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KAPX.WS.W.0008.000000T0000Z-221225T0000Z/</value>
-</cap:parameter>
-</entry>
-<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=MI12641EE10BEC.LakeshoreFloodAdvisory.12641EEF5170MI.MQTCFWMQT.3f246867ca8f19afc5ccbf8cdbbe5c64</id>
 <updated>2022-12-24T04:47:00-05:00</updated>
 <published>2022-12-24T04:47:00-05:00</published>
@@ -5682,6 +5779,199 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value>/O.CON.KMQT.LS.W.0006.000000T0000Z-221225T1200Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=MN12641EE2D490.WindAdvisory.12641EF0FF20MN.DLHNPWDLH.e3e81d56ac126986aaa4a8258f212e5c</id>
+<updated>2022-12-24T15:16:00-06:00</updated>
+<published>2022-12-24T15:16:00-06:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Wind Advisory issued December 24 at 3:16PM CST until December 25 at 8:00AM CST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MN12641EE2D490.WindAdvisory.12641EF0FF20MN.DLHNPWDLH.e3e81d56ac126986aaa4a8258f212e5c"/>
+<summary>...WIND ADVISORY IN EFFECT UNTIL 8 AM CST SUNDAY... * WHAT...Northwest winds 20 to 30 mph with gusts up to 60 mph. * WHERE...Southern Lake and Southern Cook Counties. This includes the Tribal Lands of the Grand Portage Reservation. * WHEN...Until 8 AM CST Sunday. * IMPACTS...Gusty winds could blow around unsecured objects. Tree</summary>
+<cap:event>Wind Advisory</cap:event>
+<cap:effective>2022-12-24T15:16:00-06:00</cap:effective>
+<cap:expires>2022-12-25T08:00:00-06:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Southern Cook, North Shore; Southern Lake, North Shore</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>027031 027075</value>
+<valueName>UGC</valueName>
+<value>MNZ020 MNZ021</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.NEW.KDLH.WI.Y.0015.221224T2116Z-221225T1400Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=MN12641EE2D300.WindChillAdvisory.12641EF14D40MN.MPXWSWMPX.166d8fc1486732c86fad0f07fb7e28c8</id>
+<updated>2022-12-24T15:12:00-06:00</updated>
+<published>2022-12-24T15:12:00-06:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Wind Chill Advisory issued December 24 at 3:12PM CST until December 25 at 10:00AM CST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MN12641EE2D300.WindChillAdvisory.12641EF14D40MN.MPXWSWMPX.166d8fc1486732c86fad0f07fb7e28c8"/>
+<summary>...WIND CHILL ADVISORY REMAINS IN EFFECT UNTIL 10 AM CST SUNDAY... * WHAT...For the Wind Chill Warning, dangerously cold wind chills. Wind chills as low as 40 below zero. For the Wind Chill Advisory, very cold wind chills expected. Wind chills as low as 30 below zero. * WHERE...Douglas County.</summary>
+<cap:event>Wind Chill Advisory</cap:event>
+<cap:effective>2022-12-24T15:12:00-06:00</cap:effective>
+<cap:expires>2022-12-25T10:00:00-06:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Carver; Douglas; McLeod; Meeker; Pope; Rice; Scott; Stearns; Steele; Stevens; Todd; Wright</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>027019 027041 027085 027093 027121 027131 027139 027145 027147 027149 027153 027171</value>
+<valueName>UGC</valueName>
+<value>MNZ041 MNZ042 MNZ047 MNZ048 MNZ049 MNZ058 MNZ059 MNZ066 MNZ068 MNZ069 MNZ077 MNZ085</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KMPX.WC.Y.0022.000000T0000Z-221225T1600Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=MN12641EE2D300.WindChillAdvisory.12641EF14D40MN.MPXWSWMPX.8e4b6bf8dc1cb99cb2e8b18ad702f14b</id>
+<updated>2022-12-24T15:12:00-06:00</updated>
+<published>2022-12-24T15:12:00-06:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Wind Chill Advisory issued December 24 at 3:12PM CST until December 25 at 10:00AM CST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MN12641EE2D300.WindChillAdvisory.12641EF14D40MN.MPXWSWMPX.8e4b6bf8dc1cb99cb2e8b18ad702f14b"/>
+<summary>...WIND CHILL ADVISORY REMAINS IN EFFECT UNTIL 10 AM CST SUNDAY... * WHAT...Very cold wind chills. Wind chills as low as 35 below zero. * WHERE...Portions of central and east central Minnesota and northwest and west central Wisconsin. * WHEN...Until 10 AM CST Sunday.</summary>
+<cap:event>Wind Chill Advisory</cap:event>
+<cap:effective>2022-12-24T15:12:00-06:00</cap:effective>
+<cap:expires>2022-12-25T10:00:00-06:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Benton; Chisago; Goodhue; Isanti; Kanabec; Mille Lacs; Morrison; Sherburne</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>027009 027025 027049 027059 027065 027095 027097 027141</value>
+<valueName>UGC</valueName>
+<value>MNZ043 MNZ044 MNZ045 MNZ050 MNZ051 MNZ052 MNZ053 MNZ078</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KMPX.WC.Y.0022.000000T0000Z-221225T1600Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=MN12641EE2D300.WindChillAdvisory.12641EF14D40MN.MPXWSWMPX.26ef3714c8079caf441f739a24252eb7</id>
+<updated>2022-12-24T15:12:00-06:00</updated>
+<published>2022-12-24T15:12:00-06:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Wind Chill Advisory issued December 24 at 3:12PM CST until December 25 at 10:00AM CST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MN12641EE2D300.WindChillAdvisory.12641EF14D40MN.MPXWSWMPX.26ef3714c8079caf441f739a24252eb7"/>
+<summary>...WIND CHILL ADVISORY REMAINS IN EFFECT UNTIL 10 AM CST SUNDAY... ...WINTER WEATHER ADVISORY HAS EXPIRED... * WHAT...Very cold wind chills. Wind chills as low as 30 below zero. * WHERE...Portions of central, south central, southwest and west central Minnesota.</summary>
+<cap:event>Wind Chill Advisory</cap:event>
+<cap:effective>2022-12-24T15:12:00-06:00</cap:effective>
+<cap:expires>2022-12-25T10:00:00-06:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Blue Earth; Brown; Chippewa; Faribault; Freeborn; Kandiyohi; Lac Qui Parle; Le Sueur; Martin; Nicollet; Redwood; Renville; Sibley; Swift; Waseca; Watonwan; Yellow Medicine</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>027013 027015 027023 027043 027047 027067 027073 027079 027091 027103 027127 027129 027143 027151 027161 027165 027173</value>
+<valueName>UGC</valueName>
+<value>MNZ054 MNZ055 MNZ056 MNZ057 MNZ064 MNZ065 MNZ067 MNZ073 MNZ074 MNZ075 MNZ076 MNZ082 MNZ083 MNZ084 MNZ091 MNZ092 MNZ093</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.EXP.KMPX.WW.Y.0028.000000T0000Z-221224T2100Z/
+/O.CON.KMPX.WC.Y.0022.000000T0000Z-221225T1600Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=MN12641EE2D300.WindChillAdvisory.12641EF14D40MN.MPXWSWMPX.f4c6e73e4414318d7476bded3e755a43</id>
+<updated>2022-12-24T15:12:00-06:00</updated>
+<published>2022-12-24T15:12:00-06:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Wind Chill Advisory issued December 24 at 3:12PM CST until December 25 at 10:00AM CST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MN12641EE2D300.WindChillAdvisory.12641EF14D40MN.MPXWSWMPX.f4c6e73e4414318d7476bded3e755a43"/>
+<summary>...WIND CHILL ADVISORY REMAINS IN EFFECT UNTIL 10 AM CST SUNDAY... * WHAT...Very cold wind chills. Wind chills as low as 30 below zero. * WHERE...Hennepin, Anoka, Ramsey, Washington and Dakota Counties. * WHEN...Until 10 AM CST Sunday.</summary>
+<cap:event>Wind Chill Advisory</cap:event>
+<cap:effective>2022-12-24T15:12:00-06:00</cap:effective>
+<cap:expires>2022-12-25T10:00:00-06:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Anoka; Dakota; Hennepin; Ramsey; Washington</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>027003 027037 027053 027123 027163</value>
+<valueName>UGC</valueName>
+<value>MNZ060 MNZ061 MNZ062 MNZ063 MNZ070</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KMPX.WC.Y.0023.000000T0000Z-221225T1600Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=MN12641EE2D29C.SpecialWeatherStatement.12641EF062E0MN.ABRSPSABR.7a8407883c2dda9174719b443fd7e653</id>
+<updated>2022-12-24T15:11:00-06:00</updated>
+<published>2022-12-24T15:11:00-06:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Special Weather Statement issued December 24 at 3:11PM CST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MN12641EE2D29C.SpecialWeatherStatement.12641EF062E0MN.ABRSPSABR.7a8407883c2dda9174719b443fd7e653"/>
+<summary>...WINTRY WEATHER MAKES A RETURN SUNDAY INTO SUNDAY NIGHT... A low pressure clipper system will move southeast across the region on Sunday. This area of low pressure will spread snow across northeast South Dakota and west central Minnesota where 1 to 3 inches are possible. On the back side of this low, strong northwest winds with gusts in excess of 50 mph are expected across</summary>
+<cap:event>Special Weather Statement</cap:event>
+<cap:effective>2022-12-24T15:11:00-06:00</cap:effective>
+<cap:expires>2022-12-25T04:00:00-06:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Observed</cap:certainty>
+<cap:areaDesc>Big Stone; Traverse</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>027011 027155</value>
+<valueName>UGC</valueName>
+<value>MNZ039 MNZ046</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value></value>
 </cap:parameter>
 </entry>
 <entry>
@@ -6041,204 +6331,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value></value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=MN12641EE1730C.WindChillAdvisory.12641EF14D40MN.MPXWSWMPX.8e4b6bf8dc1cb99cb2e8b18ad702f14b</id>
-<updated>2022-12-24T06:11:00-06:00</updated>
-<published>2022-12-24T06:11:00-06:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Wind Chill Advisory issued December 24 at 6:11AM CST until December 25 at 10:00AM CST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MN12641EE1730C.WindChillAdvisory.12641EF14D40MN.MPXWSWMPX.8e4b6bf8dc1cb99cb2e8b18ad702f14b"/>
-<summary>.Weather conditions have improved across the region compared to yesterday, but drifting snow will continue through the afternoon so have a Winter Weather Advisory across western and southern Minnesota. Meanwhile cold wind chills will continue through Sunday morning. ...WIND CHILL ADVISORY REMAINS IN EFFECT UNTIL 10 AM CST SUNDAY...</summary>
-<cap:event>Wind Chill Advisory</cap:event>
-<cap:effective>2022-12-24T06:11:00-06:00</cap:effective>
-<cap:expires>2022-12-25T10:00:00-06:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Benton; Chisago; Goodhue; Isanti; Kanabec; Mille Lacs; Morrison; Sherburne</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>027009 027025 027049 027059 027065 027095 027097 027141</value>
-<valueName>UGC</valueName>
-<value>MNZ043 MNZ044 MNZ045 MNZ050 MNZ051 MNZ052 MNZ053 MNZ078</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KMPX.WC.Y.0022.000000T0000Z-221225T1600Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=MN12641EE1730C.WindChillAdvisory.12641EF14D40MN.MPXWSWMPX.f4c6e73e4414318d7476bded3e755a43</id>
-<updated>2022-12-24T06:11:00-06:00</updated>
-<published>2022-12-24T06:11:00-06:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Wind Chill Advisory issued December 24 at 6:11AM CST until December 25 at 10:00AM CST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MN12641EE1730C.WindChillAdvisory.12641EF14D40MN.MPXWSWMPX.f4c6e73e4414318d7476bded3e755a43"/>
-<summary>.Weather conditions have improved across the region compared to yesterday, but drifting snow will continue through the afternoon so have a Winter Weather Advisory across western and southern Minnesota. Meanwhile cold wind chills will continue through Sunday morning. ...WIND CHILL ADVISORY REMAINS IN EFFECT UNTIL 10 AM CST SUNDAY...</summary>
-<cap:event>Wind Chill Advisory</cap:event>
-<cap:effective>2022-12-24T06:11:00-06:00</cap:effective>
-<cap:expires>2022-12-25T10:00:00-06:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Anoka; Dakota; Hennepin; Ramsey; Washington</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>027003 027037 027053 027123 027163</value>
-<valueName>UGC</valueName>
-<value>MNZ060 MNZ061 MNZ062 MNZ063 MNZ070</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KMPX.WC.Y.0023.000000T0000Z-221225T1600Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=MN12641EE1730C.WindChillAdvisory.12641EF14D40MN.MPXWSWMPX.95da1015dc93161d4cca4179aa72eb28</id>
-<updated>2022-12-24T06:11:00-06:00</updated>
-<published>2022-12-24T06:11:00-06:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Wind Chill Advisory issued December 24 at 6:11AM CST until December 25 at 10:00AM CST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MN12641EE1730C.WindChillAdvisory.12641EF14D40MN.MPXWSWMPX.95da1015dc93161d4cca4179aa72eb28"/>
-<summary>.Weather conditions have improved across the region compared to yesterday, but drifting snow will continue through the afternoon so have a Winter Weather Advisory across western and southern Minnesota. Meanwhile cold wind chills will continue through Sunday morning. ...WIND CHILL WARNING REMAINS IN EFFECT UNTIL NOON CST TODAY...</summary>
-<cap:event>Wind Chill Advisory</cap:event>
-<cap:effective>2022-12-24T06:11:00-06:00</cap:effective>
-<cap:expires>2022-12-25T10:00:00-06:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Douglas; Pope; Stevens</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>027041 027121 027149</value>
-<valueName>UGC</valueName>
-<value>MNZ041 MNZ047 MNZ048</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KMPX.WC.W.0005.000000T0000Z-221224T1800Z/
-/O.CON.KMPX.WC.Y.0022.221224T1800Z-221225T1600Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=MN12641EE1730C.WindChillAdvisory.12641EF14D40MN.MPXWSWMPX.907f3d7a823bac180d6388916c0fe2e7</id>
-<updated>2022-12-24T06:11:00-06:00</updated>
-<published>2022-12-24T06:11:00-06:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Wind Chill Advisory issued December 24 at 6:11AM CST until December 25 at 10:00AM CST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MN12641EE1730C.WindChillAdvisory.12641EF14D40MN.MPXWSWMPX.907f3d7a823bac180d6388916c0fe2e7"/>
-<summary>.Weather conditions have improved across the region compared to yesterday, but drifting snow will continue through the afternoon so have a Winter Weather Advisory across western and southern Minnesota. Meanwhile cold wind chills will continue through Sunday morning. ...WIND CHILL WARNING REMAINS IN EFFECT UNTIL NOON CST TODAY...</summary>
-<cap:event>Wind Chill Advisory</cap:event>
-<cap:effective>2022-12-24T06:11:00-06:00</cap:effective>
-<cap:expires>2022-12-25T10:00:00-06:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Carver; McLeod; Meeker; Rice; Scott; Stearns; Steele; Todd; Wright</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>027019 027085 027093 027131 027139 027145 027147 027153 027171</value>
-<valueName>UGC</valueName>
-<value>MNZ042 MNZ049 MNZ058 MNZ059 MNZ066 MNZ068 MNZ069 MNZ077 MNZ085</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KMPX.WC.W.0005.000000T0000Z-221224T1800Z/
-/O.CON.KMPX.WC.Y.0022.221224T1800Z-221225T1600Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=MN12641EE1730C.WindChillAdvisory.12641EF14D40MN.MPXWSWMPX.ec025bd3e2ba8ddb5f1897edcb274c99</id>
-<updated>2022-12-24T06:11:00-06:00</updated>
-<published>2022-12-24T06:11:00-06:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Wind Chill Advisory issued December 24 at 6:11AM CST until December 25 at 10:00AM CST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MN12641EE1730C.WindChillAdvisory.12641EF14D40MN.MPXWSWMPX.ec025bd3e2ba8ddb5f1897edcb274c99"/>
-<summary>.Weather conditions have improved across the region compared to yesterday, but drifting snow will continue through the afternoon so have a Winter Weather Advisory across western and southern Minnesota. Meanwhile cold wind chills will continue through Sunday morning. ...WIND CHILL WARNING REMAINS IN EFFECT UNTIL NOON CST TODAY...</summary>
-<cap:event>Wind Chill Advisory</cap:event>
-<cap:effective>2022-12-24T06:11:00-06:00</cap:effective>
-<cap:expires>2022-12-25T10:00:00-06:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Brown; Chippewa; Kandiyohi; Lac Qui Parle; Martin; Redwood; Renville; Swift; Watonwan; Yellow Medicine</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>027015 027023 027067 027073 027091 027127 027129 027151 027165 027173</value>
-<valueName>UGC</valueName>
-<value>MNZ054 MNZ055 MNZ056 MNZ057 MNZ064 MNZ065 MNZ073 MNZ074 MNZ082 MNZ091</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KMPX.WC.W.0005.000000T0000Z-221224T1800Z/
-/O.CON.KMPX.WW.Y.0028.000000T0000Z-221224T2100Z/
-/O.CON.KMPX.WC.Y.0022.221224T1800Z-221225T1600Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=MN12641EE1730C.WindChillAdvisory.12641EF14D40MN.MPXWSWMPX.8eadc2bafc31b17f3478171a3ba45d24</id>
-<updated>2022-12-24T06:11:00-06:00</updated>
-<published>2022-12-24T06:11:00-06:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Wind Chill Advisory issued December 24 at 6:11AM CST until December 25 at 10:00AM CST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MN12641EE1730C.WindChillAdvisory.12641EF14D40MN.MPXWSWMPX.8eadc2bafc31b17f3478171a3ba45d24"/>
-<summary>.Weather conditions have improved across the region compared to yesterday, but drifting snow will continue through the afternoon so have a Winter Weather Advisory across western and southern Minnesota. Meanwhile cold wind chills will continue through Sunday morning. ...WIND CHILL WARNING REMAINS IN EFFECT UNTIL NOON CST TODAY...</summary>
-<cap:event>Wind Chill Advisory</cap:event>
-<cap:effective>2022-12-24T06:11:00-06:00</cap:effective>
-<cap:expires>2022-12-25T10:00:00-06:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Blue Earth; Faribault; Freeborn; Le Sueur; Nicollet; Sibley; Waseca</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>027013 027043 027047 027079 027103 027143 027161</value>
-<valueName>UGC</valueName>
-<value>MNZ067 MNZ075 MNZ076 MNZ083 MNZ084 MNZ092 MNZ093</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KMPX.WC.W.0005.000000T0000Z-221224T1800Z/
-/O.CON.KMPX.WW.Y.0028.000000T0000Z-221224T2100Z/
-/O.CON.KMPX.WC.Y.0022.221224T1800Z-221225T1600Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -7770,6 +7862,38 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=NE12641EE2D1D4.WindChillAdvisory.12641EF12630NE.OAXWSWOAX.dc4bef300bc6eb9d5cf5f3e575da0fd0</id>
+<updated>2022-12-24T15:09:00-06:00</updated>
+<published>2022-12-24T15:09:00-06:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Wind Chill Advisory issued December 24 at 3:09PM CST until December 25 at 9:00AM CST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=NE12641EE2D1D4.WindChillAdvisory.12641EF12630NE.OAXWSWOAX.dc4bef300bc6eb9d5cf5f3e575da0fd0"/>
+<summary>...WIND CHILL ADVISORY IN EFFECT FROM 8 PM THIS EVENING TO 9 AM CST SUNDAY... * WHAT...Very cold wind chills expected. Wind chills as low as 25 below zero. * WHERE...Portions of southwest and west central Iowa and east central and northeast Nebraska.</summary>
+<cap:event>Wind Chill Advisory</cap:event>
+<cap:effective>2022-12-24T15:09:00-06:00</cap:effective>
+<cap:expires>2022-12-25T09:00:00-06:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Burt; Cedar; Cuming; Knox; Pierce; Thurston; Washington; Wayne</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>031021 031027 031039 031107 031139 031173 031177 031179</value>
+<valueName>UGC</valueName>
+<value>NEZ011 NEZ012 NEZ015 NEZ017 NEZ018 NEZ033 NEZ034 NEZ045</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.NEW.KOAX.WC.Y.0011.221225T0200Z-221225T1500Z/</value>
+</cap:parameter>
+</entry>
+<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=NE12641EE2B550.WindChillAdvisory.12641EF0FF20NE.FSDWSWFSD.697488f238596c8f8f081dee765c9f7b</id>
 <updated>2022-12-24T14:36:00-06:00</updated>
 <published>2022-12-24T14:36:00-06:00</published>
@@ -7864,6 +7988,38 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <valueName>VTEC</valueName>
 <value>/O.CON.KGYX.FL.W.0005.000000T0000Z-221226T0448Z/
 /NCHN3.1.ER.221223T2140Z.221224T0630Z.221225T2248Z.UU/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=NV12641EE2DA08.HighWindWatch.12641F1D8D60NV.REVNPWREV.b6cd039240832a3850ecd79c3254b48b</id>
+<updated>2022-12-24T13:30:00-08:00</updated>
+<published>2022-12-24T13:30:00-08:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>High Wind Watch issued December 24 at 1:30PM PST until December 27 at 10:00PM PST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=NV12641EE2DA08.HighWindWatch.12641F1D8D60NV.REVNPWREV.b6cd039240832a3850ecd79c3254b48b"/>
+<summary>...HIGH WIND WATCH IN EFFECT FROM MONDAY EVENING THROUGH TUESDAY EVENING... * WHAT...Southwest winds 25 to 40 mph with gusts up to 60 mph possible. * WHERE...Greater Reno-Carson City-Minden Area, Northern Washoe County, Mono County, Greater Lake Tahoe Area, Lassen-Eastern</summary>
+<cap:event>High Wind Watch</cap:event>
+<cap:effective>2022-12-24T13:30:00-08:00</cap:effective>
+<cap:expires>2022-12-27T22:00:00-08:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Future</cap:urgency>
+<cap:severity>Severe</cap:severity>
+<cap:certainty>Possible</cap:certainty>
+<cap:areaDesc>Greater Lake Tahoe Area; Greater Reno-Carson City-Minden Area; Northern Washoe County</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>032005 032029 032031 032510</value>
+<valueName>UGC</valueName>
+<value>NVZ002 NVZ003 NVZ005</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.NEW.KREV.HW.A.0004.221227T0600Z-221228T0600Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -8313,38 +8469,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value>/O.CON.KBTV.LE.W.0002.000000T0000Z-221226T0000Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=NY12641EE286D4.SpecialWeatherStatement.12641EE2D42CNY.BUFSPSBUF.d8474d72086599cda9ecef1cacc41074</id>
-<updated>2022-12-24T14:17:00-05:00</updated>
-<published>2022-12-24T14:17:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Special Weather Statement issued December 24 at 2:17PM EST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=NY12641EE286D4.SpecialWeatherStatement.12641EE2D42CNY.BUFSPSBUF.d8474d72086599cda9ecef1cacc41074"/>
-<summary>...BLIZZARD CONDITIONS WILL ARRIVE BACK INTO THE BUFFALO METRO AREA THIS AFTERNOON... HAZARDS...The combination of a band of heavy snow and winds gusting to 55 mph at times is producing BLIZZARD conditions. Visibility within the band is ZERO. There are numerous vehicles stranded on the roadways with many roads impassable. DO NOT attempt to travel in</summary>
-<cap:event>Special Weather Statement</cap:event>
-<cap:effective>2022-12-24T14:17:00-05:00</cap:effective>
-<cap:expires>2022-12-24T16:15:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Observed</cap:certainty>
-<cap:areaDesc>Genesee; Niagara; Northern Erie; Orleans</cap:areaDesc>
-<cap:polygon>42.76,-78.98 42.8,-78.92 42.84,-78.93 42.91,-78.9 42.95,-78.93 42.96,-78.96 42.99,-79.01 43.02,-79.02 43.06,-79 43.08,-79.07 43.1,-79.06 43.42,-78.3 43.42,-78.18 43.16,-78.04 42.72,-79.06 42.73,-79.07 42.76,-78.98</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>036029 036037 036063 036073</value>
-<valueName>UGC</valueName>
-<value>NYZ001 NYZ002 NYZ010 NYZ011</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value></value>
 </cap:parameter>
 </entry>
 <entry>
@@ -9546,6 +9670,38 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=SD12641EE2D29C.SpecialWeatherStatement.12641EF062E0SD.ABRSPSABR.cedc792659ab230010ec062bd9e94aaf</id>
+<updated>2022-12-24T14:11:00-07:00</updated>
+<published>2022-12-24T14:11:00-07:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Special Weather Statement issued December 24 at 2:11PM MST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=SD12641EE2D29C.SpecialWeatherStatement.12641EF062E0SD.ABRSPSABR.cedc792659ab230010ec062bd9e94aaf"/>
+<summary>...WINTRY WEATHER MAKES A RETURN SUNDAY INTO SUNDAY NIGHT... A low pressure clipper system will move southeast across the region on Sunday. This area of low pressure will spread snow across northeast South Dakota and west central Minnesota where 1 to 3 inches are possible. On the back side of this low, strong northwest winds with gusts in excess of 50 mph are expected across</summary>
+<cap:event>Special Weather Statement</cap:event>
+<cap:effective>2022-12-24T14:11:00-07:00</cap:effective>
+<cap:expires>2022-12-25T03:00:00-07:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Observed</cap:certainty>
+<cap:areaDesc>Brown; Buffalo; Campbell; Clark; Codington; Corson; Day; Deuel; Dewey; Edmunds; Faulk; Grant; Hamlin; Hand; Hughes; Hyde; Jones; Lyman; Marshall; McPherson; Potter; Roberts; Spink; Stanley; Sully; Walworth</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>046013 046017 046021 046025 046029 046031 046037 046039 046041 046045 046049 046051 046057 046059 046065 046069 046075 046085 046089 046091 046107 046109 046115 046117 046119 046129</value>
+<valueName>UGC</valueName>
+<value>SDZ003 SDZ004 SDZ005 SDZ006 SDZ007 SDZ008 SDZ009 SDZ010 SDZ011 SDZ015 SDZ016 SDZ017 SDZ018 SDZ019 SDZ020 SDZ021 SDZ022 SDZ023 SDZ033 SDZ034 SDZ035 SDZ036 SDZ037 SDZ045 SDZ048 SDZ051</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value></value>
+</cap:parameter>
+</entry>
+<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=SD12641EE2B5B4.WindChillAdvisory.12641EF0B100SD.ABRWSWABR.b0f4e5578b2c44da3a8c1aa36f20f6dd</id>
 <updated>2022-12-24T13:37:00-07:00</updated>
 <published>2022-12-24T13:37:00-07:00</published>
@@ -9835,6 +9991,38 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <valueName>VTEC</valueName>
 <value>/O.EXP.KOHX.WC.W.0001.000000T0000Z-221224T1800Z/
 /O.NEW.KOHX.WC.Y.0002.221224T1805Z-221225T0000Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=TX12641EE2D170.HardFreezeWarning.12641EF12630TX.LCHNPWLCH.997272c6978aaf7450a437fd407e5fc4</id>
+<updated>2022-12-24T15:08:00-06:00</updated>
+<published>2022-12-24T15:08:00-06:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Hard Freeze Warning issued December 24 at 3:08PM CST until December 25 at 9:00AM CST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=TX12641EE2D170.HardFreezeWarning.12641EF12630TX.LCHNPWLCH.997272c6978aaf7450a437fd407e5fc4"/>
+<summary>...HARD FREEZE WARNING REMAINS IN EFFECT FROM 8 PM THIS EVENING TO 9 AM CST SUNDAY... * WHAT...Sub-freezing temperatures as low as 21 expected. * WHERE...Portions of central, south central, southwest and west central Louisiana and southeast Texas. * WHEN...For the first Hard Freeze Warning, until noon CST</summary>
+<cap:event>Hard Freeze Warning</cap:event>
+<cap:effective>2022-12-24T15:08:00-06:00</cap:effective>
+<cap:expires>2022-12-25T09:00:00-06:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Hardin; Jefferson; Northern Jasper; Northern Newton; Orange; Southern Jasper; Southern Newton; Tyler</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>048199 048241 048245 048351 048361 048457</value>
+<valueName>UGC</valueName>
+<value>TXZ180 TXZ201 TXZ215 TXZ216 TXZ259 TXZ260 TXZ261 TXZ262</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KLCH.HZ.W.0007.221225T0200Z-221225T1500Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -10133,39 +10321,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=TX12641EE259E8.HardFreezeWarning.12641EF12630TX.LCHNPWLCH.997272c6978aaf7450a437fd407e5fc4</id>
-<updated>2022-12-24T12:02:00-06:00</updated>
-<published>2022-12-24T12:02:00-06:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Hard Freeze Warning issued December 24 at 12:02PM CST until December 25 at 9:00AM CST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=TX12641EE259E8.HardFreezeWarning.12641EF12630TX.LCHNPWLCH.997272c6978aaf7450a437fd407e5fc4"/>
-<summary>...HARD FREEZE WARNING REMAINS IN EFFECT FROM 8 PM THIS EVENING TO 9 AM CST SUNDAY... ...HARD FREEZE WARNING HAS EXPIRED... * WHAT...Sub-freezing temperatures as low as 21 expected. * WHERE...Portions of central, south central, southwest and west central Louisiana and southeast Texas.</summary>
-<cap:event>Hard Freeze Warning</cap:event>
-<cap:effective>2022-12-24T12:02:00-06:00</cap:effective>
-<cap:expires>2022-12-25T09:00:00-06:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Hardin; Jefferson; Northern Jasper; Northern Newton; Orange; Southern Jasper; Southern Newton; Tyler</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>048199 048241 048245 048351 048361 048457</value>
-<valueName>UGC</valueName>
-<value>TXZ180 TXZ201 TXZ215 TXZ216 TXZ259 TXZ260 TXZ261 TXZ262</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.EXP.KLCH.HZ.W.0006.000000T0000Z-221224T1800Z/
-/O.CON.KLCH.HZ.W.0007.221225T0200Z-221225T1500Z/</value>
-</cap:parameter>
-</entry>
-<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=TX12641EE1F908.FloodWarning.12641EF14D40TX.LCHFLSLCH.20a68a8285c8b81593c59f060bf84623</id>
 <updated>2022-12-24T09:54:00-06:00</updated>
 <published>2022-12-24T09:54:00-06:00</published>
@@ -10262,6 +10417,39 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <valueName>VTEC</valueName>
 <value>/O.NEW.KGJT.FA.Y.0143.221224T1917Z-221227T0000Z/
 /00000.N.IJ.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=VA12641EE2D0A8.WindChillAdvisory.12641EEF0350VA.RLXWSWRLX.30df4b606020e54a2e93533722886dc0</id>
+<updated>2022-12-24T16:06:00-05:00</updated>
+<published>2022-12-24T16:06:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Wind Chill Advisory issued December 24 at 4:06PM EST until December 24 at 8:00PM EST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=VA12641EE2D0A8.WindChillAdvisory.12641EEF0350VA.RLXWSWRLX.30df4b606020e54a2e93533722886dc0"/>
+<summary>...WIND CHILL ADVISORY IN EFFECT UNTIL 8 PM EST THIS EVENING... ...WIND CHILL ADVISORY HAS EXPIRED... * WHAT...Very cold wind chills. Wind chills as low as 15 below zero. * WHERE...Portions of southwest Virginia and central, northeast, northern, southeast and southern West Virginia.</summary>
+<cap:event>Wind Chill Advisory</cap:event>
+<cap:effective>2022-12-24T16:06:00-05:00</cap:effective>
+<cap:expires>2022-12-24T20:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Buchanan; Dickenson</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>051027 051051</value>
+<valueName>UGC</valueName>
+<value>VAZ003 VAZ004</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.EXP.KRLX.WC.Y.0011.000000T0000Z-221224T2100Z/
+/O.NEW.KRLX.WC.Y.0012.221224T2106Z-221225T0100Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -11395,6 +11583,38 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=WI12641EE2D300.WindChillAdvisory.12641EF14D40WI.MPXWSWMPX.1e3369db4da052993e3161d735f25e1c</id>
+<updated>2022-12-24T15:12:00-06:00</updated>
+<published>2022-12-24T15:12:00-06:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Wind Chill Advisory issued December 24 at 3:12PM CST until December 25 at 10:00AM CST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=WI12641EE2D300.WindChillAdvisory.12641EF14D40WI.MPXWSWMPX.1e3369db4da052993e3161d735f25e1c"/>
+<summary>...WIND CHILL ADVISORY REMAINS IN EFFECT UNTIL 10 AM CST SUNDAY... * WHAT...Very cold wind chills. Wind chills as low as 35 below zero. * WHERE...Portions of central and east central Minnesota and northwest and west central Wisconsin. * WHEN...Until 10 AM CST Sunday.</summary>
+<cap:event>Wind Chill Advisory</cap:event>
+<cap:effective>2022-12-24T15:12:00-06:00</cap:effective>
+<cap:expires>2022-12-25T10:00:00-06:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Barron; Chippewa; Dunn; Eau Claire; Pepin; Pierce; Polk; Rusk; St. Croix</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>055005 055017 055033 055035 055091 055093 055095 055107 055109</value>
+<valueName>UGC</valueName>
+<value>WIZ014 WIZ015 WIZ016 WIZ023 WIZ024 WIZ025 WIZ026 WIZ027 WIZ028</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KMPX.WC.Y.0022.000000T0000Z-221225T1600Z/</value>
+</cap:parameter>
+</entry>
+<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=WI12641EE2BD84.WinterWeatherAdvisory.12641EF0B100WI.DLHWSWDLH.2daebc5f6dbe554cad67c8d9c79a3b4b</id>
 <updated>2022-12-24T14:57:00-06:00</updated>
 <published>2022-12-24T14:57:00-06:00</published>
@@ -11815,35 +12035,68 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=WI12641EE1730C.WindChillAdvisory.12641EF14D40WI.MPXWSWMPX.1e3369db4da052993e3161d735f25e1c</id>
-<updated>2022-12-24T06:11:00-06:00</updated>
-<published>2022-12-24T06:11:00-06:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=WV12641EE2D0A8.WindChillAdvisory.12641EEF0350WV.RLXWSWRLX.af8fd881c7078a962746e41ab80c3031</id>
+<updated>2022-12-24T16:06:00-05:00</updated>
+<published>2022-12-24T16:06:00-05:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Wind Chill Advisory issued December 24 at 6:11AM CST until December 25 at 10:00AM CST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=WI12641EE1730C.WindChillAdvisory.12641EF14D40WI.MPXWSWMPX.1e3369db4da052993e3161d735f25e1c"/>
-<summary>.Weather conditions have improved across the region compared to yesterday, but drifting snow will continue through the afternoon so have a Winter Weather Advisory across western and southern Minnesota. Meanwhile cold wind chills will continue through Sunday morning. ...WIND CHILL ADVISORY REMAINS IN EFFECT UNTIL 10 AM CST SUNDAY...</summary>
+<title>Wind Chill Advisory issued December 24 at 4:06PM EST until December 24 at 8:00PM EST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=WV12641EE2D0A8.WindChillAdvisory.12641EEF0350WV.RLXWSWRLX.af8fd881c7078a962746e41ab80c3031"/>
+<summary>...WIND CHILL ADVISORY IN EFFECT UNTIL 8 PM EST THIS EVENING... ...WIND CHILL ADVISORY HAS EXPIRED... * WHAT...Very cold wind chills. Wind chills as low as 15 below zero. * WHERE...Portions of southwest Virginia and central, northeast, northern, southeast and southern West Virginia.</summary>
 <cap:event>Wind Chill Advisory</cap:event>
-<cap:effective>2022-12-24T06:11:00-06:00</cap:effective>
-<cap:expires>2022-12-25T10:00:00-06:00</cap:expires>
+<cap:effective>2022-12-24T16:06:00-05:00</cap:effective>
+<cap:expires>2022-12-24T20:00:00-05:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
 <cap:category>Met</cap:category>
 <cap:urgency>Expected</cap:urgency>
 <cap:severity>Minor</cap:severity>
 <cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Barron; Chippewa; Dunn; Eau Claire; Pepin; Pierce; Polk; Rusk; St. Croix</cap:areaDesc>
+<cap:areaDesc>Barbour; McDowell; Northwest Fayette; Northwest Nicholas; Northwest Raleigh; Northwest Randolph; Northwest Webster; Southeast Pocahontas; Taylor; Upshur; Wyoming</cap:areaDesc>
 <cap:polygon></cap:polygon>
 <cap:geocode>
 <valueName>FIPS6</valueName>
-<value>055005 055017 055033 055035 055091 055093 055095 055107 055109</value>
+<value>054001 054019 054047 054067 054075 054081 054083 054091 054097 054101 054109</value>
 <valueName>UGC</valueName>
-<value>WIZ014 WIZ015 WIZ016 WIZ023 WIZ024 WIZ025 WIZ026 WIZ027 WIZ028</value>
+<value>WVZ032 WVZ033 WVZ034 WVZ039 WVZ040 WVZ515 WVZ517 WVZ519 WVZ521 WVZ524 WVZ525</value>
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
-<value>/O.CON.KMPX.WC.Y.0022.000000T0000Z-221225T1600Z/</value>
+<value>/O.EXP.KRLX.WC.Y.0011.000000T0000Z-221224T2100Z/
+/O.NEW.KRLX.WC.Y.0012.221224T2106Z-221225T0100Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=WV12641EE2D0A8.WindChillWarning.12641EF17450WV.RLXWSWRLX.ef62948a10abcc838e313c6f97c8d450</id>
+<updated>2022-12-24T16:06:00-05:00</updated>
+<published>2022-12-24T16:06:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Wind Chill Warning issued December 24 at 4:06PM EST until December 25 at 12:00PM EST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=WV12641EE2D0A8.WindChillWarning.12641EF17450WV.RLXWSWRLX.ef62948a10abcc838e313c6f97c8d450"/>
+<summary>...WIND CHILL WARNING REMAINS IN EFFECT UNTIL NOON EST SUNDAY... * WHAT...Dangerously cold wind chills. Wind chills as low as 25 below zero. * WHERE...Portions of northeast and southeast West Virginia. * WHEN...Until noon EST Sunday. * IMPACTS...The cold wind chills could cause frostbite on</summary>
+<cap:event>Wind Chill Warning</cap:event>
+<cap:effective>2022-12-24T16:06:00-05:00</cap:effective>
+<cap:expires>2022-12-25T12:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Northwest Pocahontas; Southeast Fayette; Southeast Nicholas; Southeast Raleigh; Southeast Randolph; Southeast Webster</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>054019 054067 054075 054081 054083 054101</value>
+<valueName>UGC</valueName>
+<value>WVZ516 WVZ518 WVZ520 WVZ522 WVZ523 WVZ526</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KRLX.WC.W.0001.000000T0000Z-221225T1700Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -12106,38 +12359,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=WV12641EE24340.WindChillWarning.12641EF17450WV.RLXWSWRLX.ef62948a10abcc838e313c6f97c8d450</id>
-<updated>2022-12-24T12:44:00-05:00</updated>
-<published>2022-12-24T12:44:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Wind Chill Warning issued December 24 at 12:44PM EST until December 25 at 12:00PM EST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=WV12641EE24340.WindChillWarning.12641EF17450WV.RLXWSWRLX.ef62948a10abcc838e313c6f97c8d450"/>
-<summary>...WIND CHILL WARNING REMAINS IN EFFECT UNTIL NOON EST SUNDAY... * WHAT...Dangerously cold wind chills. Wind chills as low as 35 below zero. * WHERE...The higher terrain of the northern and central mountains of West Virginia. * WHEN...Until noon EST Sunday.</summary>
-<cap:event>Wind Chill Warning</cap:event>
-<cap:effective>2022-12-24T12:44:00-05:00</cap:effective>
-<cap:expires>2022-12-25T12:00:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Northwest Pocahontas; Southeast Fayette; Southeast Nicholas; Southeast Raleigh; Southeast Randolph; Southeast Webster</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>054019 054067 054075 054081 054083 054101</value>
-<valueName>UGC</valueName>
-<value>WVZ516 WVZ518 WVZ520 WVZ522 WVZ523 WVZ526</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KRLX.WC.W.0001.000000T0000Z-221225T1700Z/</value>
-</cap:parameter>
-</entry>
-<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=WV12641EE1C1F4.WindAdvisory.12641EF089F0WV.RLXNPWRLX.757dfac5101840ccae0357460bdfb366</id>
 <updated>2022-12-24T09:13:00-05:00</updated>
 <published>2022-12-24T09:13:00-05:00</published>
@@ -12268,17 +12489,17 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=WY12641EE2478C.HighWindWarning.12641EFE1E80WY.CYSNPWCYS.9eddce2380d4da254099dc7d224c11c1</id>
-<updated>2022-12-24T10:55:00-07:00</updated>
-<published>2022-12-24T10:55:00-07:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=WY12641EE2D620.HighWindWarning.12641EFE1E80WY.CYSNPWCYS.9eddce2380d4da254099dc7d224c11c1</id>
+<updated>2022-12-24T14:20:00-07:00</updated>
+<published>2022-12-24T14:20:00-07:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>High Wind Warning issued December 24 at 10:55AM MST until December 25 at 5:00PM MST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=WY12641EE2478C.HighWindWarning.12641EFE1E80WY.CYSNPWCYS.9eddce2380d4da254099dc7d224c11c1"/>
-<summary>...HIGH WIND WARNING IN EFFECT FROM 8 PM THIS EVENING TO 5 PM MST SUNDAY... * WHAT...Sustained west winds 35 to 45 MPH with gusts up to 65 MPH. * WHERE...Central Laramie Range and Southwest Platte County. * WHEN...From 8 PM this evening to 5 PM MST Sunday.</summary>
+<title>High Wind Warning issued December 24 at 2:20PM MST until December 25 at 5:00PM MST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=WY12641EE2D620.HighWindWarning.12641EFE1E80WY.CYSNPWCYS.9eddce2380d4da254099dc7d224c11c1"/>
+<summary>...HIGH WIND WARNING REMAINS IN EFFECT FROM 8 PM THIS EVENING TO 5 PM MST SUNDAY... * WHAT...Sustained west winds 35 to 45 MPH with gusts up to 65 MPH. * WHERE...Central Laramie Range and Southwest Platte County. * WHEN...From 8 PM this evening to 5 PM MST Sunday.</summary>
 <cap:event>High Wind Warning</cap:event>
-<cap:effective>2022-12-24T10:55:00-07:00</cap:effective>
+<cap:effective>2022-12-24T14:20:00-07:00</cap:effective>
 <cap:expires>2022-12-25T17:00:00-07:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
@@ -12296,22 +12517,21 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
-<value>/O.UPG.KCYS.HW.A.0063.221225T0600Z-221226T0600Z/
-/O.EXB.KCYS.HW.W.0065.221225T0300Z-221226T0000Z/</value>
+<value>/O.CON.KCYS.HW.W.0065.221225T0300Z-221226T0000Z/</value>
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=WY12641EE2478C.HighWindWarning.12641EFF08E0WY.CYSNPWCYS.f3fd146994e8388156333d8d17487e51</id>
-<updated>2022-12-24T10:55:00-07:00</updated>
-<published>2022-12-24T10:55:00-07:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=WY12641EE2D620.HighWindWarning.12641EFF08E0WY.CYSNPWCYS.f3fd146994e8388156333d8d17487e51</id>
+<updated>2022-12-24T14:20:00-07:00</updated>
+<published>2022-12-24T14:20:00-07:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>High Wind Warning issued December 24 at 10:55AM MST until December 25 at 11:00PM MST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=WY12641EE2478C.HighWindWarning.12641EFF08E0WY.CYSNPWCYS.f3fd146994e8388156333d8d17487e51"/>
-<summary>...HIGH WIND WARNING REMAINS IN EFFECT FROM 5 PM THIS AFTERNOON TO 11 PM MST SUNDAY... ...HIGH WIND WARNING WILL EXPIRE AT 11 AM MST THIS MORNING... * WHAT...Sustained west winds 30 to 40 MPH with gusts up to 65 MPH. * WHERE...North Snowy Range Foothills.</summary>
+<title>High Wind Warning issued December 24 at 2:20PM MST until December 25 at 11:00PM MST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=WY12641EE2D620.HighWindWarning.12641EFF08E0WY.CYSNPWCYS.f3fd146994e8388156333d8d17487e51"/>
+<summary>...HIGH WIND WARNING REMAINS IN EFFECT FROM 5 PM THIS AFTERNOON TO 11 PM MST SUNDAY... * WHAT...Sustained west winds 30 to 40 MPH with gusts up to 65 MPH. * WHERE...North Snowy Range Foothills. * WHEN...From 5 PM this afternoon to 11 PM MST Sunday.</summary>
 <cap:event>High Wind Warning</cap:event>
-<cap:effective>2022-12-24T10:55:00-07:00</cap:effective>
+<cap:effective>2022-12-24T14:20:00-07:00</cap:effective>
 <cap:expires>2022-12-25T23:00:00-07:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
@@ -12329,22 +12549,21 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
-<value>/O.EXP.KCYS.HW.W.0064.000000T0000Z-221224T1800Z/
-/O.CON.KCYS.HW.W.0065.221225T0000Z-221226T0600Z/</value>
+<value>/O.CON.KCYS.HW.W.0065.221225T0000Z-221226T0600Z/</value>
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=WY12641EE2478C.HighWindWarning.12641EFF08E0WY.CYSNPWCYS.a14abbe770cc610848c9f7ed04c3243a</id>
-<updated>2022-12-24T10:55:00-07:00</updated>
-<published>2022-12-24T10:55:00-07:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=WY12641EE2D620.HighWindWarning.12641EFF08E0WY.CYSNPWCYS.e6068ba949dfb4bc8d2029ead0a153e5</id>
+<updated>2022-12-24T14:20:00-07:00</updated>
+<published>2022-12-24T14:20:00-07:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>High Wind Warning issued December 24 at 10:55AM MST until December 25 at 11:00PM MST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=WY12641EE2478C.HighWindWarning.12641EFF08E0WY.CYSNPWCYS.a14abbe770cc610848c9f7ed04c3243a"/>
-<summary>...HIGH WIND WARNING NOW IN EFFECT FROM 5 PM THIS AFTERNOON TO 11 PM MST SUNDAY... ...HIGH WIND WARNING WILL EXPIRE AT 11 AM MST THIS MORNING... * WHAT...Sustained west winds 30 to 40 MPH with gusts up to 65 MPH. * WHERE...South Laramie Range.</summary>
+<title>High Wind Warning issued December 24 at 2:20PM MST until December 25 at 11:00PM MST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=WY12641EE2D620.HighWindWarning.12641EFF08E0WY.CYSNPWCYS.e6068ba949dfb4bc8d2029ead0a153e5"/>
+<summary>...HIGH WIND WARNING REMAINS IN EFFECT FROM 5 PM THIS AFTERNOON TO 11 PM MST SUNDAY... * WHAT...Sustained west winds 30 to 40 MPH with gusts up to 65 MPH. * WHERE...South Laramie Range and South Laramie Range Foothills. * WHEN...From 5 PM this afternoon to 11 PM MST Sunday.</summary>
 <cap:event>High Wind Warning</cap:event>
-<cap:effective>2022-12-24T10:55:00-07:00</cap:effective>
+<cap:effective>2022-12-24T14:20:00-07:00</cap:effective>
 <cap:expires>2022-12-25T23:00:00-07:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
@@ -12352,50 +12571,17 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:urgency>Expected</cap:urgency>
 <cap:severity>Severe</cap:severity>
 <cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>South Laramie Range</cap:areaDesc>
+<cap:areaDesc>South Laramie Range; South Laramie Range Foothills</cap:areaDesc>
 <cap:polygon></cap:polygon>
 <cap:geocode>
 <valueName>FIPS6</valueName>
 <value>056001 056021</value>
 <valueName>UGC</valueName>
-<value>WYZ116</value>
+<value>WYZ116 WYZ117</value>
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
-<value>/O.EXP.KCYS.HW.W.0064.000000T0000Z-221224T1800Z/
-/O.EXT.KCYS.HW.W.0065.221225T0000Z-221226T0600Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=WY12641EE2478C.HighWindWarning.12641EFF08E0WY.CYSNPWCYS.8b43a0791799993d6847d61df3c456f4</id>
-<updated>2022-12-24T10:55:00-07:00</updated>
-<published>2022-12-24T10:55:00-07:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>High Wind Warning issued December 24 at 10:55AM MST until December 25 at 11:00PM MST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=WY12641EE2478C.HighWindWarning.12641EFF08E0WY.CYSNPWCYS.8b43a0791799993d6847d61df3c456f4"/>
-<summary>...HIGH WIND WARNING NOW IN EFFECT FROM 5 PM THIS AFTERNOON TO 11 PM MST SUNDAY... * WHAT...Sustained west winds 30 to 40 MPH with gusts up to 65 MPH. * WHERE...South Laramie Range Foothills. * WHEN...From 5 PM this afternoon to 11 PM MST Sunday.</summary>
-<cap:event>High Wind Warning</cap:event>
-<cap:effective>2022-12-24T10:55:00-07:00</cap:effective>
-<cap:expires>2022-12-25T23:00:00-07:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Severe</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>South Laramie Range Foothills</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>056021</value>
-<valueName>UGC</valueName>
-<value>WYZ117</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.EXT.KCYS.HW.W.0065.221225T0000Z-221226T0600Z/</value>
+<value>/O.CON.KCYS.HW.W.0065.221225T0000Z-221226T0600Z/</value>
 </cap:parameter>
 </entry>
 </feed>
