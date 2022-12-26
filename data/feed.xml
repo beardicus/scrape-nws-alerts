@@ -16,11 +16,11 @@ xmlns = 'http://www.w3.org/2005/Atom'
 xmlns:cap = 'urn:oasis:names:tc:emergency:cap:1.1'
 xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 >
-<!-- http-date = Mon, 26 Dec 2022 08:04:00 GMT -->
+<!-- http-date = Mon, 26 Dec 2022 08:30:00 GMT -->
 <id>https://alerts.weather.gov/cap/us.php?x=0</id>
 <logo>http://alerts.weather.gov/images/xml_logo.gif</logo>
 <generator>NWS CAP Server</generator>
-<updated>2022-12-26T03:04:00-05:00</updated>
+<updated>2022-12-26T01:30:00-07:00</updated>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
@@ -731,18 +731,50 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=CA12641EFF0F84.WindAdvisory.12641F0FAAB0CA.MTRNPWMTR.f7df42e7ddf97df019556961e094fdd2</id>
-<updated>2022-12-25T22:17:00-08:00</updated>
-<published>2022-12-25T22:17:00-08:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=CA12641EFF5DA4.DenseFogAdvisory.12641F00B690CA.MTRNPWMTR.2ef5dc42ff255ae4c4087b6a732124ec</id>
+<updated>2022-12-26T00:17:00-08:00</updated>
+<published>2022-12-26T00:17:00-08:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Wind Advisory issued December 25 at 10:17PM PST until December 27 at 7:00AM PST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CA12641EFF0F84.WindAdvisory.12641F0FAAB0CA.MTRNPWMTR.f7df42e7ddf97df019556961e094fdd2"/>
-<summary>...WIND ADVISORY REMAINS IN EFFECT FROM 10 PM MONDAY TO 7 AM PST TUESDAY... * WHAT...South winds 20 to 30 mph with gusts up to 50 mph expected. Local gusts up to 60 mph over the ridges and peaks. * WHERE...Marin Coastal Range, Sonoma Coastal Range, North Bay Interior Mountains, Coastal North Bay, Including Point Reyes</summary>
+<title>Dense Fog Advisory issued December 26 at 12:17AM PST until December 26 at 9:00AM PST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CA12641EFF5DA4.DenseFogAdvisory.12641F00B690CA.MTRNPWMTR.2ef5dc42ff255ae4c4087b6a732124ec"/>
+<summary>...DENSE FOG ADVISORY IN EFFECT UNTIL 9 AM PST THIS MORNING... * WHAT...Visibility one quarter mile or less in dense fog. * WHERE...East Bay Interior Valleys. * WHEN...Until 9 AM PST this morning. * IMPACTS...Hazardous driving conditions due to low visibility.</summary>
+<cap:event>Dense Fog Advisory</cap:event>
+<cap:effective>2022-12-26T00:17:00-08:00</cap:effective>
+<cap:expires>2022-12-26T09:00:00-08:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>East Bay Interior Valleys</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>006001 006013</value>
+<valueName>UGC</valueName>
+<value>CAZ510</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.NEW.KMTR.FG.Y.0026.221226T0817Z-221226T1700Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=CA12641EFF5DA4.WindAdvisory.12641F0F83A0CA.MTRNPWMTR.f7df42e7ddf97df019556961e094fdd2</id>
+<updated>2022-12-26T00:17:00-08:00</updated>
+<published>2022-12-26T00:17:00-08:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Wind Advisory issued December 26 at 12:17AM PST until December 27 at 6:00AM PST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CA12641EFF5DA4.WindAdvisory.12641F0F83A0CA.MTRNPWMTR.f7df42e7ddf97df019556961e094fdd2"/>
+<summary>...WIND ADVISORY NOW IN EFFECT FROM 10 PM THIS EVENING TO 6 AM PST TUESDAY... * WHAT...South winds 20 to 30 mph with gusts up to 50 mph expected. Local gusts up to 60 mph over the ridges and peaks. * WHERE...Marin Coastal Range, Sonoma Coastal Range, North Bay Interior Mountains, Coastal North Bay, Including Point Reyes</summary>
 <cap:event>Wind Advisory</cap:event>
-<cap:effective>2022-12-25T22:17:00-08:00</cap:effective>
-<cap:expires>2022-12-27T07:00:00-08:00</cap:expires>
+<cap:effective>2022-12-26T00:17:00-08:00</cap:effective>
+<cap:expires>2022-12-27T06:00:00-08:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
 <cap:category>Met</cap:category>
@@ -759,7 +791,139 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
-<value>/O.CON.KMTR.WI.Y.0015.221227T0600Z-221227T1500Z/</value>
+<value>/O.EXT.KMTR.WI.Y.0015.221227T0600Z-221227T1400Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=CA12641EFF5C78.FlashFloodWatch.12641F0F3580CA.EKAFFAEKA.ce614f3d324fb410a8d59100586520a7</id>
+<updated>2022-12-26T00:14:00-08:00</updated>
+<published>2022-12-26T00:14:00-08:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Flash Flood Watch issued December 26 at 12:14AM PST until December 27 at 4:00AM PST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CA12641EFF5C78.FlashFloodWatch.12641F0F3580CA.EKAFFAEKA.ce614f3d324fb410a8d59100586520a7"/>
+<summary>...FLASH FLOOD WATCH FOR THE EASTERN PORTIONS OF THE RIVER COMPLEX BURN SCAR IN EFFECT FROM THIS EVENING THROUGH LATE TONIGHT... * WHAT...Flash flooding and debris flows caused by excessive rainfall are possible over the eastern portions of the River Complex burn scar. * WHERE...The Coffee Creek drainage basin in Northern Trinity County.</summary>
+<cap:event>Flash Flood Watch</cap:event>
+<cap:effective>2022-12-26T00:14:00-08:00</cap:effective>
+<cap:expires>2022-12-27T04:00:00-08:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Severe</cap:severity>
+<cap:certainty>Possible</cap:certainty>
+<cap:areaDesc>Northern Trinity</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>006105</value>
+<valueName>UGC</valueName>
+<value>CAZ107</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.NEW.KEKA.FF.A.0002.221227T0300Z-221227T1200Z/
+/00000.0.ER.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=CA12641EFF5C78.FloodWatch.12641F0F3580CA.EKAFFAEKA.bb9760b4fa52565a6b84532e85fcb0c7</id>
+<updated>2022-12-26T00:14:00-08:00</updated>
+<published>2022-12-26T00:14:00-08:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Flood Watch issued December 26 at 12:14AM PST until December 27 at 4:00AM PST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CA12641EFF5C78.FloodWatch.12641F0F3580CA.EKAFFAEKA.bb9760b4fa52565a6b84532e85fcb0c7"/>
+<summary>...FLOOD WATCH REMAINS IN EFFECT FROM THIS EVENING THROUGH TUESDAY MORNING... * WHAT...Flooding caused by excessive rainfall continues to be possible. * WHERE...A portion of northwest California, including the following areas, Mendocino Coast, Northeastern Mendocino Interior, Northern</summary>
+<cap:event>Flood Watch</cap:event>
+<cap:effective>2022-12-26T00:14:00-08:00</cap:effective>
+<cap:expires>2022-12-27T04:00:00-08:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Future</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Possible</cap:certainty>
+<cap:areaDesc>Mendocino Coast; Northeastern Mendocino Interior; Northern Lake County; Northwestern Mendocino Interior; Southeastern Mendocino Interior; Southern Humboldt Interior; Southern Trinity; Southwestern Mendocino Interior</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>006023 006033 006045 006105</value>
+<valueName>UGC</valueName>
+<value>CAZ106 CAZ108 CAZ109 CAZ110 CAZ111 CAZ112 CAZ113 CAZ114</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KEKA.FA.A.0002.221227T0600Z-221227T1800Z/
+/00000.0.ER.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=CA12641EFF5C78.FloodWatch.12641F0F83A0CA.EKAFFAEKA.a10fc9cd506b49cd14ca18e566f009ac</id>
+<updated>2022-12-26T00:14:00-08:00</updated>
+<published>2022-12-26T00:14:00-08:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Flood Watch issued December 26 at 12:14AM PST until December 27 at 6:00AM PST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CA12641EFF5C78.FloodWatch.12641F0F83A0CA.EKAFFAEKA.a10fc9cd506b49cd14ca18e566f009ac"/>
+<summary>...FLOOD WATCH REMAINS IN EFFECT FROM THIS EVENING THROUGH TUESDAY MORNING... * WHAT...Flooding caused by excessive rainfall continues to be possible. * WHERE...A portion of northwest California, including the following areas, Mendocino Coast, Northeastern Mendocino Interior, Northern</summary>
+<cap:event>Flood Watch</cap:event>
+<cap:effective>2022-12-26T00:14:00-08:00</cap:effective>
+<cap:expires>2022-12-27T06:00:00-08:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Future</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Possible</cap:certainty>
+<cap:areaDesc>Southwestern Humboldt</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>006023</value>
+<valueName>UGC</valueName>
+<value>CAZ104</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KEKA.FA.A.0002.221227T0600Z-221227T1800Z/
+/00000.0.ER.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=CA12641EFF5C14.WinterStormWarning.12641F1F6220CA.HNXWSWHNX.a889747212423b8a2a28a530499c8095</id>
+<updated>2022-12-26T00:13:00-08:00</updated>
+<published>2022-12-26T00:13:00-08:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Winter Storm Warning issued December 26 at 12:13AM PST until December 28 at 10:00AM PST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CA12641EFF5C14.WinterStormWarning.12641F1F6220CA.HNXWSWHNX.a889747212423b8a2a28a530499c8095"/>
+<summary>...A WINTER STORM WARNING IS IN EFFECT FROM 10 PM PST MONDAY NIGHT UNTIL 10 AM PST WEDNESDAY MORNING ABOVE 6000 FEET... * WHAT...Heavy snow expected above 6000 feet. Total snow accumulations of two to three feet anticipated above 8,000 feet. Total snow amounts of one to two feet expected from 7,000 feet to 8,000 feet. Total snow accumulations of four to eight inches</summary>
+<cap:event>Winter Storm Warning</cap:event>
+<cap:effective>2022-12-26T00:13:00-08:00</cap:effective>
+<cap:expires>2022-12-28T10:00:00-08:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Grant Grove Area; Kaiser to Rodgers Ridge; Kings Canyon NP; Sequoia NP; Upper San Joaquin River; Yosemite NP outside of the valley</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>006019 006039 006043 006107 006109</value>
+<valueName>UGC</valueName>
+<value>CAZ323 CAZ326 CAZ327 CAZ328 CAZ329 CAZ330</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.UPG.KHNX.WS.A.0009.221227T0600Z-221228T1800Z/
+/O.NEW.KHNX.WS.W.0007.221227T0600Z-221228T1800Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -989,38 +1153,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=CA12641EFEA0F8.WinterStormWatch.12641F1F6220CA.HNXWSWHNX.bef2c30395c1c30a430c2f0aa4834e98</id>
-<updated>2022-12-25T19:34:00-08:00</updated>
-<published>2022-12-25T19:34:00-08:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Winter Storm Watch issued December 25 at 7:34PM PST until December 28 at 10:00AM PST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CA12641EFEA0F8.WinterStormWatch.12641F1F6220CA.HNXWSWHNX.bef2c30395c1c30a430c2f0aa4834e98"/>
-<summary>...WINTER STORM WATCH REMAINS IN EFFECT FROM MONDAY EVENING THROUGH WEDNESDAY MORNING ABOVE 6000 FEET... * WHAT...Heavy snow possible above 6,000 feet. Total snow accumulations of two to three feet conceivable above 8,000 feet. Total snow amounts of one to two feet possible from 7,000 feet to 8,000 feet. Total snow accumulations of three to</summary>
-<cap:event>Winter Storm Watch</cap:event>
-<cap:effective>2022-12-25T19:34:00-08:00</cap:effective>
-<cap:expires>2022-12-28T10:00:00-08:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Future</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Possible</cap:certainty>
-<cap:areaDesc>Grant Grove Area; Kaiser to Rodgers Ridge; Kings Canyon NP; Sequoia NP; Upper San Joaquin River; Yosemite NP outside of the valley</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>006019 006039 006043 006107 006109</value>
-<valueName>UGC</valueName>
-<value>CAZ323 CAZ326 CAZ327 CAZ328 CAZ329 CAZ330</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KHNX.WS.A.0009.221227T0600Z-221228T1800Z/</value>
-</cap:parameter>
-</entry>
-<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=CA12641EFE9928.HighWindWarning.12641F0F3580CA.EKANPWEKA.37d0ddb4af6acac85de0bcdd39f1a217</id>
 <updated>2022-12-25T19:14:00-08:00</updated>
 <published>2022-12-25T19:14:00-08:00</published>
@@ -1114,72 +1246,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value>/O.CON.KEKA.WI.Y.0011.221227T0300Z-221227T1400Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=CA12641EFE9540.FloodWatch.12641F0F3580CA.EKAFFAEKA.bb9760b4fa52565a6b84532e85fcb0c7</id>
-<updated>2022-12-25T19:04:00-08:00</updated>
-<published>2022-12-25T19:04:00-08:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Flood Watch issued December 25 at 7:04PM PST until December 27 at 4:00AM PST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CA12641EFE9540.FloodWatch.12641F0F3580CA.EKAFFAEKA.bb9760b4fa52565a6b84532e85fcb0c7"/>
-<summary>.A significant rainstorm will bring heavy rainfall to Northwest California Monday night through Tuesday morning. Rainfall totals of 2 to 5 inches in 24 hours are forecast. ...FLOOD WATCH REMAINS IN EFFECT FROM MONDAY EVENING THROUGH TUESDAY MORNING... * WHAT...Flooding caused by excessive rainfall.</summary>
-<cap:event>Flood Watch</cap:event>
-<cap:effective>2022-12-25T19:04:00-08:00</cap:effective>
-<cap:expires>2022-12-27T04:00:00-08:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Future</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Possible</cap:certainty>
-<cap:areaDesc>Mendocino Coast; Northeastern Mendocino Interior; Northern Lake County; Northwestern Mendocino Interior; Southeastern Mendocino Interior; Southern Humboldt Interior; Southern Trinity; Southwestern Mendocino Interior</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>006023 006033 006045 006105</value>
-<valueName>UGC</valueName>
-<value>CAZ106 CAZ108 CAZ109 CAZ110 CAZ111 CAZ112 CAZ113 CAZ114</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KEKA.FA.A.0002.221227T0600Z-221227T1800Z/
-/00000.0.ER.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=CA12641EFE9540.FloodWatch.12641F0F83A0CA.EKAFFAEKA.a10fc9cd506b49cd14ca18e566f009ac</id>
-<updated>2022-12-25T19:04:00-08:00</updated>
-<published>2022-12-25T19:04:00-08:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Flood Watch issued December 25 at 7:04PM PST until December 27 at 6:00AM PST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CA12641EFE9540.FloodWatch.12641F0F83A0CA.EKAFFAEKA.a10fc9cd506b49cd14ca18e566f009ac"/>
-<summary>.A significant rainstorm will bring heavy rainfall to Northwest California Monday night through Tuesday morning. Rainfall totals of 2 to 5 inches in 24 hours are forecast. ...FLOOD WATCH REMAINS IN EFFECT FROM MONDAY EVENING THROUGH TUESDAY MORNING... * WHAT...Flooding caused by excessive rainfall.</summary>
-<cap:event>Flood Watch</cap:event>
-<cap:effective>2022-12-25T19:04:00-08:00</cap:effective>
-<cap:expires>2022-12-27T06:00:00-08:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Future</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Possible</cap:certainty>
-<cap:areaDesc>Southwestern Humboldt</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>006023</value>
-<valueName>UGC</valueName>
-<value>CAZ104</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KEKA.FA.A.0002.221227T0600Z-221227T1800Z/
-/00000.0.ER.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -1443,6 +1509,39 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=CA12641EF21F04.FloodWatch.12641F00B690CA.MTRFFAMTR.1681410036599f9bd93a77c908608e3f</id>
+<updated>2022-12-25T13:37:00-08:00</updated>
+<published>2022-12-25T13:37:00-08:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Flood Watch issued December 25 at 1:37PM PST until December 26 at 9:00AM PST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CA12641EF21F04.FloodWatch.12641F00B690CA.MTRFFAMTR.1681410036599f9bd93a77c908608e3f"/>
+<summary>.A potent Pacific storm will bring periods of moderate to heavy rain causing localized flooding as well as rapid rises on area streams and creeks late Monday night through Tuesday. ...FLOOD WATCH IN EFFECT FROM LATE MONDAY NIGHT THROUGH TUESDAY AFTERNOON... * WHAT...Flooding caused by excessive rainfall is possible.</summary>
+<cap:event>Flood Watch</cap:event>
+<cap:effective>2022-12-25T13:37:00-08:00</cap:effective>
+<cap:expires>2022-12-26T09:00:00-08:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Future</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Possible</cap:certainty>
+<cap:areaDesc>Santa Cruz Mountains</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>006081 006085 006087</value>
+<valueName>UGC</valueName>
+<value>CAZ512</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.NEW.KMTR.FA.A.0002.221227T1200Z-221228T0000Z/
+/00000.0.ER.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
+</cap:parameter>
+</entry>
+<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=CA12641EF21F04.FloodWatch.12641F0E9940CA.MTRFFAMTR.abd147eb88288dc852c90114a4966b5d</id>
 <updated>2022-12-25T13:37:00-08:00</updated>
 <published>2022-12-25T13:37:00-08:00</published>
@@ -1476,18 +1575,18 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=CA12641EF21F04.FloodWatch.12641F0FAAB0CA.MTRFFAMTR.93b05d6d115d9977bb3c628273912be1</id>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=CA12641EF21F04.FloodWatch.12641F0F83A0CA.MTRFFAMTR.93b05d6d115d9977bb3c628273912be1</id>
 <updated>2022-12-25T13:37:00-08:00</updated>
 <published>2022-12-25T13:37:00-08:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Flood Watch issued December 25 at 1:37PM PST until December 27 at 7:00AM PST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CA12641EF21F04.FloodWatch.12641F0FAAB0CA.MTRFFAMTR.93b05d6d115d9977bb3c628273912be1"/>
+<title>Flood Watch issued December 25 at 1:37PM PST until December 27 at 6:00AM PST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CA12641EF21F04.FloodWatch.12641F0F83A0CA.MTRFFAMTR.93b05d6d115d9977bb3c628273912be1"/>
 <summary>.A potent Pacific storm will bring periods of moderate to heavy rain causing localized flooding as well as rapid rises on area streams and creeks late Monday night through Tuesday. ...FLOOD WATCH IN EFFECT FROM LATE MONDAY NIGHT THROUGH TUESDAY AFTERNOON... * WHAT...Flooding caused by excessive rainfall is possible.</summary>
 <cap:event>Flood Watch</cap:event>
 <cap:effective>2022-12-25T13:37:00-08:00</cap:effective>
-<cap:expires>2022-12-27T07:00:00-08:00</cap:expires>
+<cap:expires>2022-12-27T06:00:00-08:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
 <cap:category>Met</cap:category>
@@ -1509,51 +1608,18 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=CA12641EF21F04.FloodWatch.12641F0FAAB0CA.MTRFFAMTR.1681410036599f9bd93a77c908608e3f</id>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=CA12641EF21F04.FloodWatch.12641F0F83A0CA.MTRFFAMTR.4dcf03606ccd0bd208387925754d9856</id>
 <updated>2022-12-25T13:37:00-08:00</updated>
 <published>2022-12-25T13:37:00-08:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Flood Watch issued December 25 at 1:37PM PST until December 27 at 7:00AM PST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CA12641EF21F04.FloodWatch.12641F0FAAB0CA.MTRFFAMTR.1681410036599f9bd93a77c908608e3f"/>
-<summary>.A potent Pacific storm will bring periods of moderate to heavy rain causing localized flooding as well as rapid rises on area streams and creeks late Monday night through Tuesday. ...FLOOD WATCH IN EFFECT FROM LATE MONDAY NIGHT THROUGH TUESDAY AFTERNOON... * WHAT...Flooding caused by excessive rainfall is possible.</summary>
-<cap:event>Flood Watch</cap:event>
-<cap:effective>2022-12-25T13:37:00-08:00</cap:effective>
-<cap:expires>2022-12-27T07:00:00-08:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Future</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Possible</cap:certainty>
-<cap:areaDesc>Santa Cruz Mountains</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>006081 006085 006087</value>
-<valueName>UGC</valueName>
-<value>CAZ512</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.NEW.KMTR.FA.A.0002.221227T1200Z-221228T0000Z/
-/00000.0.ER.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=CA12641EF21F04.FloodWatch.12641F0FAAB0CA.MTRFFAMTR.4dcf03606ccd0bd208387925754d9856</id>
-<updated>2022-12-25T13:37:00-08:00</updated>
-<published>2022-12-25T13:37:00-08:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Flood Watch issued December 25 at 1:37PM PST until December 27 at 7:00AM PST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CA12641EF21F04.FloodWatch.12641F0FAAB0CA.MTRFFAMTR.4dcf03606ccd0bd208387925754d9856"/>
+<title>Flood Watch issued December 25 at 1:37PM PST until December 27 at 6:00AM PST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CA12641EF21F04.FloodWatch.12641F0F83A0CA.MTRFFAMTR.4dcf03606ccd0bd208387925754d9856"/>
 <summary>.A potent Pacific storm will bring periods of moderate to heavy rain causing localized flooding as well as rapid rises on area streams and creeks late Monday night through Tuesday. ...FLOOD WATCH IN EFFECT FROM TUESDAY MORNING THROUGH TUESDAY AFTERNOON... * WHAT...Flooding caused by excessive rainfall is possible.</summary>
 <cap:event>Flood Watch</cap:event>
 <cap:effective>2022-12-25T13:37:00-08:00</cap:effective>
-<cap:expires>2022-12-27T07:00:00-08:00</cap:expires>
+<cap:expires>2022-12-27T06:00:00-08:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
 <cap:category>Met</cap:category>
@@ -3754,18 +3820,50 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=IN12641EFE8280.SpecialWeatherStatement.12641EFFA520IN.INDSPSIND.9428912e974cb68835681513842b89bf</id>
-<updated>2022-12-25T21:56:00-05:00</updated>
-<published>2022-12-25T21:56:00-05:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=IN12641EFF59BC.WinterWeatherAdvisory.12641F00DDA0IN.LMKWSWLMK.4e5499948ef7e603897229b34746a57f</id>
+<updated>2022-12-26T03:07:00-05:00</updated>
+<published>2022-12-26T03:07:00-05:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Special Weather Statement issued December 25 at 9:56PM EST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=IN12641EFE8280.SpecialWeatherStatement.12641EFFA520IN.INDSPSIND.9428912e974cb68835681513842b89bf"/>
-<summary>...LIGHT SNOW ACCUMULATION POSSIBLE LATE TONIGHT THROUGH MONDAY EVENING... A Clipper system will bring light snow accumulation to central Indiana late tonight then continuing Monday before ending Monday evening. Snow accumulation will generally be up to an inch with localized higher amounts approaching 2 inches mainly over the</summary>
+<title>Winter Weather Advisory issued December 26 at 3:07AM EST until December 26 at 1:00PM EST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=IN12641EFF59BC.WinterWeatherAdvisory.12641F00DDA0IN.LMKWSWLMK.4e5499948ef7e603897229b34746a57f"/>
+<summary>...WINTER WEATHER ADVISORY REMAINS IN EFFECT UNTIL 1 PM EST /NOON CST/ THIS AFTERNOON... * WHAT...Snow expected. Total snow accumulations of 0.5 to 1.5 inches. * WHERE...Portions of and south central Indiana and north central, northwest and south central Kentucky.</summary>
+<cap:event>Winter Weather Advisory</cap:event>
+<cap:effective>2022-12-26T03:07:00-05:00</cap:effective>
+<cap:expires>2022-12-26T13:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Clark; Crawford; Dubois; Floyd; Harrison; Jefferson; Orange; Perry; Scott; Washington</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>018019 018025 018037 018043 018061 018077 018117 018123 018143 018175</value>
+<valueName>UGC</valueName>
+<value>INZ076 INZ077 INZ078 INZ079 INZ083 INZ084 INZ089 INZ090 INZ091 INZ092</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KLMK.WW.Y.0011.221226T0900Z-221226T1800Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=IN12641EFF5890.SpecialWeatherStatement.12641F01319CIN.INDSPSIND.9428912e974cb68835681513842b89bf</id>
+<updated>2022-12-26T03:04:00-05:00</updated>
+<published>2022-12-26T03:04:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Special Weather Statement issued December 26 at 3:04AM EST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=IN12641EFF5890.SpecialWeatherStatement.12641F01319CIN.INDSPSIND.9428912e974cb68835681513842b89bf"/>
+<summary>...LIGHT SNOW ACCUMULATION POSSIBLE TODAY AND EARLY THIS EVENING... A quick moving area of low pressure may bring some light snow accumulation to central Indiana early this morning and late this afternoon before ending early this evening. Snow accumulation will generally be up to an inch. Isolated higher amounts</summary>
 <cap:event>Special Weather Statement</cap:event>
-<cap:effective>2022-12-25T21:56:00-05:00</cap:effective>
-<cap:expires>2022-12-26T05:00:00-05:00</cap:expires>
+<cap:effective>2022-12-26T03:04:00-05:00</cap:effective>
+<cap:expires>2022-12-26T15:15:00-05:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
 <cap:category>Met</cap:category>
@@ -3850,38 +3948,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=IN12641EF1F470.WinterWeatherAdvisory.12641F00DDA0IN.LMKWSWLMK.4e5499948ef7e603897229b34746a57f</id>
-<updated>2022-12-25T15:28:00-05:00</updated>
-<published>2022-12-25T15:28:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Winter Weather Advisory issued December 25 at 3:28PM EST until December 26 at 1:00PM EST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=IN12641EF1F470.WinterWeatherAdvisory.12641F00DDA0IN.LMKWSWLMK.4e5499948ef7e603897229b34746a57f"/>
-<summary>...WINTER WEATHER ADVISORY IN EFFECT FROM 4 AM EST /3 AM CST/ TO 1 PM EST /NOON CST/ MONDAY... * WHAT...Snow expected. Total snow accumulations of up to two inches. * WHERE...Portions of south central Indiana and north central, northwest and south central Kentucky.</summary>
-<cap:event>Winter Weather Advisory</cap:event>
-<cap:effective>2022-12-25T15:28:00-05:00</cap:effective>
-<cap:expires>2022-12-26T13:00:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Clark; Crawford; Dubois; Floyd; Harrison; Jefferson; Orange; Perry; Scott; Washington</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>018019 018025 018037 018043 018061 018077 018117 018123 018143 018175</value>
-<valueName>UGC</valueName>
-<value>INZ076 INZ077 INZ078 INZ079 INZ083 INZ084 INZ089 INZ090 INZ091 INZ092</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.NEW.KLMK.WW.Y.0011.221226T0900Z-221226T1800Z/</value>
-</cap:parameter>
-</entry>
-<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=IN12641EF1CC34.WinterWeatherAdvisory.12641F00DDA0IN.PAHWSWPAH.1bcc702009464171bef930db7e68ba40</id>
 <updated>2022-12-25T14:25:00-05:00</updated>
 <published>2022-12-25T14:25:00-05:00</published>
@@ -3946,6 +4012,102 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=KY12641EFF5CDC.SpecialWeatherStatement.12641F012BC0KY.JKLSPSJKL.545ee81241da3aa92d441c53d8c412b5</id>
+<updated>2022-12-26T03:15:00-05:00</updated>
+<published>2022-12-26T03:15:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Special Weather Statement issued December 26 at 3:15AM EST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=KY12641EFF5CDC.SpecialWeatherStatement.12641F012BC0KY.JKLSPSJKL.545ee81241da3aa92d441c53d8c412b5"/>
+<summary>...Light Snow Possible Through Early This Evening... A weakening low pressure system will move into the OH Valley today. This system will likely bring light snow to portions of eastern Kentucky. Locations near and west of Interstate 75 and along and northwest of Interstate 64 are more likely to receive snow late this</summary>
+<cap:event>Special Weather Statement</cap:event>
+<cap:effective>2022-12-26T03:15:00-05:00</cap:effective>
+<cap:expires>2022-12-26T15:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Observed</cap:certainty>
+<cap:areaDesc>Bath; Bell; Breathitt; Clay; Elliott; Estill; Fleming; Floyd; Harlan; Jackson; Johnson; Knott; Knox; Laurel; Lee; Leslie; Letcher; Magoffin; Martin; McCreary; Menifee; Montgomery; Morgan; Owsley; Perry; Pike; Powell; Pulaski; Rockcastle; Rowan; Wayne; Whitley; Wolfe</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>021011 021013 021025 021051 021063 021065 021069 021071 021095 021109 021115 021119 021121 021125 021129 021131 021133 021147 021153 021159 021165 021173 021175 021189 021193 021195 021197 021199 021203 021205 021231 021235 021237</value>
+<valueName>UGC</valueName>
+<value>KYZ044 KYZ050 KYZ051 KYZ052 KYZ058 KYZ059 KYZ060 KYZ068 KYZ069 KYZ079 KYZ080 KYZ083 KYZ084 KYZ085 KYZ086 KYZ087 KYZ088 KYZ104 KYZ106 KYZ107 KYZ108 KYZ109 KYZ110 KYZ111 KYZ112 KYZ113 KYZ114 KYZ115 KYZ116 KYZ117 KYZ118 KYZ119 KYZ120</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value></value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=KY12641EFF5C78.SpecialWeatherStatement.12641F013778KY.LMKSPSLMK.597a3f57ea22d3b685d3f28857fff51b</id>
+<updated>2022-12-26T03:14:00-05:00</updated>
+<published>2022-12-26T03:14:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Special Weather Statement issued December 26 at 3:14AM EST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=KY12641EFF5C78.SpecialWeatherStatement.12641F013778KY.LMKSPSLMK.597a3f57ea22d3b685d3f28857fff51b"/>
+<summary>...Light Snow Accumulations Possible Today... Light snow is expected to begin by mid-morning and continue into the afternoon. Snow accumulation of less than 1 inch will be possible. Slick spots may develop on roads and walkways. Use caution if traveling today.</summary>
+<cap:event>Special Weather Statement</cap:event>
+<cap:effective>2022-12-26T03:14:00-05:00</cap:effective>
+<cap:expires>2022-12-26T15:30:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Observed</cap:certainty>
+<cap:areaDesc>Adair; Allen; Anderson; Barren; Bourbon; Boyle; Casey; Clark; Clinton; Cumberland; Fayette; Franklin; Garrard; Green; Harrison; Hart; Jessamine; Larue; Lincoln; Logan; Madison; Marion; Mercer; Metcalfe; Monroe; Nelson; Nicholas; Russell; Scott; Simpson; Spencer; Taylor; Warren; Washington; Woodford</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>021001 021003 021005 021009 021017 021021 021045 021049 021053 021057 021067 021073 021079 021087 021097 021099 021113 021123 021137 021141 021151 021155 021167 021169 021171 021179 021181 021207 021209 021213 021215 021217 021227 021229 021239</value>
+<valueName>UGC</valueName>
+<value>KYZ035 KYZ036 KYZ037 KYZ038 KYZ039 KYZ040 KYZ041 KYZ042 KYZ043 KYZ045 KYZ046 KYZ047 KYZ048 KYZ049 KYZ053 KYZ054 KYZ055 KYZ056 KYZ057 KYZ063 KYZ064 KYZ065 KYZ066 KYZ067 KYZ070 KYZ071 KYZ072 KYZ073 KYZ074 KYZ075 KYZ076 KYZ077 KYZ078 KYZ081 KYZ082</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value></value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=KY12641EFF59BC.WinterWeatherAdvisory.12641F00DDA0KY.LMKWSWLMK.bfac8c26660513d362b236c39a857d1b</id>
+<updated>2022-12-26T03:07:00-05:00</updated>
+<published>2022-12-26T03:07:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Winter Weather Advisory issued December 26 at 3:07AM EST until December 26 at 1:00PM EST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=KY12641EFF59BC.WinterWeatherAdvisory.12641F00DDA0KY.LMKWSWLMK.bfac8c26660513d362b236c39a857d1b"/>
+<summary>...WINTER WEATHER ADVISORY REMAINS IN EFFECT UNTIL 1 PM EST /NOON CST/ THIS AFTERNOON... * WHAT...Snow expected. Total snow accumulations of 0.5 to 1.5 inches. * WHERE...Portions of and south central Indiana and north central, northwest and south central Kentucky.</summary>
+<cap:event>Winter Weather Advisory</cap:event>
+<cap:effective>2022-12-26T03:07:00-05:00</cap:effective>
+<cap:expires>2022-12-26T13:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Breckinridge; Bullitt; Butler; Edmonson; Grayson; Hancock; Hardin; Henry; Jefferson; Meade; Ohio; Oldham; Shelby; Trimble</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>021027 021029 021031 021061 021085 021091 021093 021103 021111 021163 021183 021185 021211 021223</value>
+<valueName>UGC</valueName>
+<value>KYZ023 KYZ024 KYZ025 KYZ026 KYZ027 KYZ028 KYZ029 KYZ030 KYZ031 KYZ032 KYZ033 KYZ034 KYZ061 KYZ062</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KLMK.WW.Y.0011.221226T0900Z-221226T1800Z/</value>
+</cap:parameter>
+</entry>
+<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=KY12641EFE4658.SpecialWeatherStatement.12641EFFA520KY.PAHSPSPAH.98bfb78ef92829268d294275c8e53628</id>
 <updated>2022-12-25T20:02:00-05:00</updated>
 <published>2022-12-25T20:02:00-05:00</published>
@@ -3971,70 +4133,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <value>021035 021039 021047 021075 021083 021105 021157 021219 021221</value>
 <valueName>UGC</valueName>
 <value>KYZ001 KYZ002 KYZ003 KYZ006 KYZ008 KYZ009 KYZ012 KYZ017 KYZ022</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value></value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=KY12641EF21608.SpecialWeatherStatement.12641EFFA520KY.LMKSPSLMK.597a3f57ea22d3b685d3f28857fff51b</id>
-<updated>2022-12-25T16:14:00-05:00</updated>
-<published>2022-12-25T16:14:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Special Weather Statement issued December 25 at 4:14PM EST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=KY12641EF21608.SpecialWeatherStatement.12641EFFA520KY.LMKSPSLMK.597a3f57ea22d3b685d3f28857fff51b"/>
-<summary>...Light Snow Accumulations Possible Monday... Light snow is expected to begin early Monday morning and continue into the afternoon. Minor accumulations of less than one inch will be possible. Slick spots may develop on roadways and walkways. Use extra caution during the morning commute.</summary>
-<cap:event>Special Weather Statement</cap:event>
-<cap:effective>2022-12-25T16:14:00-05:00</cap:effective>
-<cap:expires>2022-12-26T05:00:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Observed</cap:certainty>
-<cap:areaDesc>Adair; Allen; Anderson; Barren; Bourbon; Boyle; Casey; Clark; Clinton; Cumberland; Fayette; Franklin; Garrard; Green; Harrison; Hart; Jessamine; Larue; Lincoln; Logan; Madison; Marion; Mercer; Metcalfe; Monroe; Nelson; Nicholas; Russell; Scott; Simpson; Spencer; Taylor; Warren; Washington; Woodford</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>021001 021003 021005 021009 021017 021021 021045 021049 021053 021057 021067 021073 021079 021087 021097 021099 021113 021123 021137 021141 021151 021155 021167 021169 021171 021179 021181 021207 021209 021213 021215 021217 021227 021229 021239</value>
-<valueName>UGC</valueName>
-<value>KYZ035 KYZ036 KYZ037 KYZ038 KYZ039 KYZ040 KYZ041 KYZ042 KYZ043 KYZ045 KYZ046 KYZ047 KYZ048 KYZ049 KYZ053 KYZ054 KYZ055 KYZ056 KYZ057 KYZ063 KYZ064 KYZ065 KYZ066 KYZ067 KYZ070 KYZ071 KYZ072 KYZ073 KYZ074 KYZ075 KYZ076 KYZ077 KYZ078 KYZ081 KYZ082</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value></value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=KY12641EF1FF60.SpecialWeatherStatement.12641EFFA520KY.JKLSPSJKL.545ee81241da3aa92d441c53d8c412b5</id>
-<updated>2022-12-25T15:56:00-05:00</updated>
-<published>2022-12-25T15:56:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Special Weather Statement issued December 25 at 3:56PM EST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=KY12641EF1FF60.SpecialWeatherStatement.12641EFFA520KY.JKLSPSJKL.545ee81241da3aa92d441c53d8c412b5"/>
-<summary>...Very Light Snow Accumulations Possible Monday Into Monday Evening... A dying low pressure system will move into the OH Valley on Monday. This system will likely bring light snow to portions of eastern Kentucky. Locations near and west of Interstate 75 and west of the</summary>
-<cap:event>Special Weather Statement</cap:event>
-<cap:effective>2022-12-25T15:56:00-05:00</cap:effective>
-<cap:expires>2022-12-26T05:00:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Observed</cap:certainty>
-<cap:areaDesc>Bath; Bell; Breathitt; Clay; Elliott; Estill; Fleming; Floyd; Harlan; Jackson; Johnson; Knott; Knox; Laurel; Lee; Leslie; Letcher; Magoffin; Martin; McCreary; Menifee; Montgomery; Morgan; Owsley; Perry; Pike; Powell; Pulaski; Rockcastle; Rowan; Wayne; Whitley; Wolfe</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>021011 021013 021025 021051 021063 021065 021069 021071 021095 021109 021115 021119 021121 021125 021129 021131 021133 021147 021153 021159 021165 021173 021175 021189 021193 021195 021197 021199 021203 021205 021231 021235 021237</value>
-<valueName>UGC</valueName>
-<value>KYZ044 KYZ050 KYZ051 KYZ052 KYZ058 KYZ059 KYZ060 KYZ068 KYZ069 KYZ079 KYZ080 KYZ083 KYZ084 KYZ085 KYZ086 KYZ087 KYZ088 KYZ104 KYZ106 KYZ107 KYZ108 KYZ109 KYZ110 KYZ111 KYZ112 KYZ113 KYZ114 KYZ115 KYZ116 KYZ117 KYZ118 KYZ119 KYZ120</value>
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
@@ -4071,38 +4169,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value></value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=KY12641EF1F470.WinterWeatherAdvisory.12641F00DDA0KY.LMKWSWLMK.bfac8c26660513d362b236c39a857d1b</id>
-<updated>2022-12-25T15:28:00-05:00</updated>
-<published>2022-12-25T15:28:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Winter Weather Advisory issued December 25 at 3:28PM EST until December 26 at 1:00PM EST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=KY12641EF1F470.WinterWeatherAdvisory.12641F00DDA0KY.LMKWSWLMK.bfac8c26660513d362b236c39a857d1b"/>
-<summary>...WINTER WEATHER ADVISORY IN EFFECT FROM 4 AM EST /3 AM CST/ TO 1 PM EST /NOON CST/ MONDAY... * WHAT...Snow expected. Total snow accumulations of up to two inches. * WHERE...Portions of south central Indiana and north central, northwest and south central Kentucky.</summary>
-<cap:event>Winter Weather Advisory</cap:event>
-<cap:effective>2022-12-25T15:28:00-05:00</cap:effective>
-<cap:expires>2022-12-26T13:00:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Breckinridge; Bullitt; Butler; Edmonson; Grayson; Hancock; Hardin; Henry; Jefferson; Meade; Ohio; Oldham; Shelby; Trimble</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>021027 021029 021031 021061 021085 021091 021093 021103 021111 021163 021183 021185 021211 021223</value>
-<valueName>UGC</valueName>
-<value>KYZ023 KYZ024 KYZ025 KYZ026 KYZ027 KYZ028 KYZ029 KYZ030 KYZ031 KYZ032 KYZ033 KYZ034 KYZ061 KYZ062</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.NEW.KLMK.WW.Y.0011.221226T0900Z-221226T1800Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -4366,17 +4432,17 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=MI12641EFEF300.WinterWeatherAdvisory.12641F00DDA0MI.APXWSWAPX.b6a82a52a025da09a39d42f2d896958e</id>
-<updated>2022-12-26T00:44:00-05:00</updated>
-<published>2022-12-26T00:44:00-05:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=MI12641EFF61F0.WinterWeatherAdvisory.12641F00DDA0MI.APXWSWAPX.b6a82a52a025da09a39d42f2d896958e</id>
+<updated>2022-12-26T03:28:00-05:00</updated>
+<published>2022-12-26T03:28:00-05:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Winter Weather Advisory issued December 26 at 12:44AM EST until December 26 at 1:00PM EST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MI12641EFEF300.WinterWeatherAdvisory.12641F00DDA0MI.APXWSWAPX.b6a82a52a025da09a39d42f2d896958e"/>
-<summary>...WINTER WEATHER ADVISORY REMAINS IN EFFECT UNTIL 1 PM EST THIS AFTERNOON... * WHAT...Lake effect snow. Additional snow accumulations of 2 to 4 inches, with locally higher amounts possible. The heaviest additional accumulation is expected along and north of M-28. * WHERE...Western Chippewa and Central Chippewa Counties.</summary>
+<title>Winter Weather Advisory issued December 26 at 3:28AM EST until December 26 at 1:00PM EST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MI12641EFF61F0.WinterWeatherAdvisory.12641F00DDA0MI.APXWSWAPX.b6a82a52a025da09a39d42f2d896958e"/>
+<summary>...WINTER WEATHER ADVISORY REMAINS IN EFFECT UNTIL 1 PM EST THIS AFTERNOON... * WHAT...Lake effect snow. Additional snow accumulations of 2 to 3 inches, with locally higher amounts possible. The heaviest additional accumulation is expected along and north of M-28. * WHERE...Western Chippewa and Central Chippewa Counties.</summary>
 <cap:event>Winter Weather Advisory</cap:event>
-<cap:effective>2022-12-26T00:44:00-05:00</cap:effective>
+<cap:effective>2022-12-26T03:28:00-05:00</cap:effective>
 <cap:expires>2022-12-26T13:00:00-05:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
@@ -5015,6 +5081,103 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=MT12641EFF62B8.WinterStormWatch.12641F1EECF0MT.TFXWSWTFX.ae78b0a1dd42fd3c32b13b6dbd6346f6</id>
+<updated>2022-12-26T01:30:00-07:00</updated>
+<published>2022-12-26T01:30:00-07:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Winter Storm Watch issued December 26 at 1:30AM MST until December 28 at 8:00AM MST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MT12641EFF62B8.WinterStormWatch.12641F1EECF0MT.TFXWSWTFX.ae78b0a1dd42fd3c32b13b6dbd6346f6"/>
+<summary>...WINTER STORM WATCH IN EFFECT FROM MIDNIGHT TONIGHT THROUGH WEDNESDAY MORNING... * WHAT...Heavy snow possible. Total snow accumulations of 2 to 4 inches, with 6 to 12 inches possible in the Centennial Mountains and the West Yellowstone area. Winds could gust as high as 65 mph and may cause impactful blowing and drifting snow.</summary>
+<cap:event>Winter Storm Watch</cap:event>
+<cap:effective>2022-12-26T01:30:00-07:00</cap:effective>
+<cap:expires>2022-12-28T08:00:00-07:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Future</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Possible</cap:certainty>
+<cap:areaDesc>Gallatin and Madison County Mountains and Centennial Mountains; Ruby Mountains and Southern Beaverhead Mountains</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>030001 030031 030057</value>
+<valueName>UGC</valueName>
+<value>MTZ329 MTZ330</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.NEW.KTFX.WS.A.0016.221227T0700Z-221228T1500Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=MT12641EFF5DA4.HighWindWarning.12641F1D8D60MT.TFXNPWTFX.23c2029519765ea3c1165ce186ffc6d5</id>
+<updated>2022-12-26T01:17:00-07:00</updated>
+<published>2022-12-26T01:17:00-07:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>High Wind Warning issued December 26 at 1:17AM MST until December 27 at 11:00PM MST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MT12641EFF5DA4.HighWindWarning.12641F1D8D60MT.TFXNPWTFX.23c2029519765ea3c1165ce186ffc6d5"/>
+<summary>...HIGH WIND WARNING IN EFFECT FROM MIDNIGHT TONIGHT TO 11 PM MST TUESDAY... * WHAT...South winds 35 to 45 mph with gusts up to 65 mph expected. * WHERE...Madison River Valley. * WHEN...From Midnight tonight to 11 PM MST Tuesday. * IMPACTS...High winds may move loose debris, damage property and</summary>
+<cap:event>High Wind Warning</cap:event>
+<cap:effective>2022-12-26T01:17:00-07:00</cap:effective>
+<cap:expires>2022-12-27T23:00:00-07:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Severe</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Madison River Valley</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>030057</value>
+<valueName>UGC</valueName>
+<value>MTZ325</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.UPG.KTFX.HW.A.0036.221227T1200Z-221228T0700Z/
+/O.NEW.KTFX.HW.W.0038.221227T0700Z-221228T0600Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=MT12641EFF5DA4.HighWindWatch.12641F1D8D60MT.TFXNPWTFX.831e9db97a018ce6db789a8ec884566a</id>
+<updated>2022-12-26T01:17:00-07:00</updated>
+<published>2022-12-26T01:17:00-07:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>High Wind Watch issued December 26 at 1:17AM MST until December 27 at 11:00PM MST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MT12641EFF5DA4.HighWindWatch.12641F1D8D60MT.TFXNPWTFX.831e9db97a018ce6db789a8ec884566a"/>
+<summary>...HIGH WIND WATCH NOW IN EFFECT FROM MIDNIGHT TONIGHT TO 11 PM MST TUESDAY... * WHAT...South winds 30 to 40 mph with gusts up to 60 mph possible. * WHERE...Gallatin and Madison County Mountains and Centennial Mountains and Ruby Mountains and Southern Beaverhead Mountains. * WHEN...From Midnight tonight to 11 PM MST Tuesday.</summary>
+<cap:event>High Wind Watch</cap:event>
+<cap:effective>2022-12-26T01:17:00-07:00</cap:effective>
+<cap:expires>2022-12-27T23:00:00-07:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Future</cap:urgency>
+<cap:severity>Severe</cap:severity>
+<cap:certainty>Possible</cap:certainty>
+<cap:areaDesc>Gallatin and Madison County Mountains and Centennial Mountains; Ruby Mountains and Southern Beaverhead Mountains</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>030001 030031 030057</value>
+<valueName>UGC</valueName>
+<value>MTZ329 MTZ330</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.EXT.KTFX.HW.A.0036.221227T0700Z-221228T0600Z/</value>
+</cap:parameter>
+</entry>
+<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=MT12641EFE2268.SpecialWeatherStatement.12641EFFF91CMT.TFXSPSTFX.12197965ffcd8df9caaeb658e8db5ccb</id>
 <updated>2022-12-25T17:10:00-07:00</updated>
 <published>2022-12-25T17:10:00-07:00</published>
@@ -5208,38 +5371,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=MT12641EF12C0C.HighWindWatch.12641F1DB470MT.TFXNPWTFX.65094261e44131ee18799eddd820a6b2</id>
-<updated>2022-12-25T08:15:00-07:00</updated>
-<published>2022-12-25T08:15:00-07:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>High Wind Watch issued December 25 at 8:15AM MST until December 28 at 12:00AM MST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MT12641EF12C0C.HighWindWatch.12641F1DB470MT.TFXNPWTFX.65094261e44131ee18799eddd820a6b2"/>
-<summary>...HIGH WIND WATCH REMAINS IN EFFECT FROM LATE MONDAY NIGHT THROUGH TUESDAY EVENING... * WHAT...South winds 30 to 40 mph, with gusts up to 65 mph, are possible. * WHERE...Gallatin and Madison County Mountains and Centennial Mountains, Madison River Valley and Ruby Mountains and Southern</summary>
-<cap:event>High Wind Watch</cap:event>
-<cap:effective>2022-12-25T08:15:00-07:00</cap:effective>
-<cap:expires>2022-12-28T00:00:00-07:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Future</cap:urgency>
-<cap:severity>Severe</cap:severity>
-<cap:certainty>Possible</cap:certainty>
-<cap:areaDesc>Gallatin and Madison County Mountains and Centennial Mountains; Madison River Valley; Ruby Mountains and Southern Beaverhead Mountains</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>030001 030031 030057</value>
-<valueName>UGC</valueName>
-<value>MTZ325 MTZ329 MTZ330</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KTFX.HW.A.0036.221227T1200Z-221228T0700Z/</value>
-</cap:parameter>
-</entry>
-<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=NC12641EF02398.SpecialWeatherStatement.12641EFFA520NC.GSPSPSGSP.135543688358f71cb37285cefb9a3c4f</id>
 <updated>2022-12-25T03:38:00-05:00</updated>
 <published>2022-12-25T03:38:00-05:00</published>
@@ -5430,6 +5561,38 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value></value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=NV12641EFF58F4.WindAdvisory.12641F1D8D60NV.LKNNPWLKN.d2eeb99830fffaa792f3a4c054ca2cb4</id>
+<updated>2022-12-26T00:05:00-08:00</updated>
+<published>2022-12-26T00:05:00-08:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Wind Advisory issued December 26 at 12:05AM PST until December 27 at 10:00PM PST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=NV12641EFF58F4.WindAdvisory.12641F1D8D60NV.LKNNPWLKN.d2eeb99830fffaa792f3a4c054ca2cb4"/>
+<summary>...WIND ADVISORY IN EFFECT FROM 4 AM TO 10 PM PST TUESDAY... * WHAT...Southwest winds 25 to 35 mph with gusts up to 55 mph expected. * WHERE...Humboldt County and Northern Elko County. * WHEN...From 4 AM to 10 PM PST Tuesday. * IMPACTS...Gusty winds could blow around unsecured objects. A few</summary>
+<cap:event>Wind Advisory</cap:event>
+<cap:effective>2022-12-26T00:05:00-08:00</cap:effective>
+<cap:expires>2022-12-27T22:00:00-08:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Humboldt County; Northern Elko County</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>032007 032013</value>
+<valueName>UGC</valueName>
+<value>NVZ030 NVZ031</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.NEW.KLKN.WI.Y.0032.221227T1200Z-221228T0600Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -5629,6 +5792,38 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=NY12641EFF5DA4.SpecialWeatherStatement.12641EFF8FA4NY.BUFSPSBUF.1747ffd96a5c20591a6f1ef3f25ffe93</id>
+<updated>2022-12-26T03:17:00-05:00</updated>
+<published>2022-12-26T03:17:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Special Weather Statement issued December 26 at 3:17AM EST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=NY12641EFF5DA4.SpecialWeatherStatement.12641EFF8FA4NY.BUFSPSBUF.1747ffd96a5c20591a6f1ef3f25ffe93"/>
+<summary>...A BAND OF HEAVY SNOW WILL AFFECT PARTS OF JEFFERSON...OSWEGO...AND LEWIS COUNTIES... HAZARDS...A band of heavy snow will continue across southern and central Jefferson County, northern Lewis County and far northern Oswego County through the wee hours of the morning. This band of snow is producing 2 to 3 inch per hour snowfall rates.</summary>
+<cap:event>Special Weather Statement</cap:event>
+<cap:effective>2022-12-26T03:17:00-05:00</cap:effective>
+<cap:expires>2022-12-26T04:45:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Observed</cap:certainty>
+<cap:areaDesc>Jefferson; Lewis; Oswego</cap:areaDesc>
+<cap:polygon>43.57,-76.27 43.69,-76.26 43.8,-76.3 43.93,-75.84 44.08,-75.65 44.15,-75.3 44.1,-75.17 43.9,-75.15 43.57,-76.27</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>036045 036049 036075</value>
+<valueName>UGC</valueName>
+<value>NYZ006 NYZ007 NYZ008</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value></value>
+</cap:parameter>
+</entry>
+<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=NY12641EFF4378.LakeEffectSnowWarning.12641F004160NY.ALYWSWALY.4fa86296dbeddc701cf72b17e54a990b</id>
 <updated>2022-12-26T02:50:00-05:00</updated>
 <published>2022-12-26T02:50:00-05:00</published>
@@ -5658,38 +5853,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value>/O.CON.KALY.LE.W.0005.000000T0000Z-221226T1400Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=NY12641EFF1A10.SpecialWeatherStatement.12641EFF5CDCNY.BUFSPSBUF.1747ffd96a5c20591a6f1ef3f25ffe93</id>
-<updated>2022-12-26T01:44:00-05:00</updated>
-<published>2022-12-26T01:44:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Special Weather Statement issued December 26 at 1:44AM EST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=NY12641EFF1A10.SpecialWeatherStatement.12641EFF5CDCNY.BUFSPSBUF.1747ffd96a5c20591a6f1ef3f25ffe93"/>
-<summary>...A BAND OF HEAVY SNOW WILL AFFECT PARTS OF JEFFERSON...OSWEGO...AND LEWIS COUNTIES... HAZARDS...A band of heavy snow will continue across southern and central Jefferson County, northern Lewis County and far northern Oswego County through the wee hours of the morning. This band of snow is producing 2 to 3 inch per hour snowfall rates.</summary>
-<cap:event>Special Weather Statement</cap:event>
-<cap:effective>2022-12-26T01:44:00-05:00</cap:effective>
-<cap:expires>2022-12-26T03:15:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Observed</cap:certainty>
-<cap:areaDesc>Jefferson; Lewis; Oswego</cap:areaDesc>
-<cap:polygon>43.54,-76.35 43.57,-76.36 43.56,-76.31 43.58,-76.26 43.69,-76.26 43.78,-76.29 43.83,-76.36 43.87,-76.36 43.85,-76.43 43.86,-76.43 44.13,-75.24 44.1,-75.17 43.78,-75.13 43.54,-76.35</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>036045 036049 036075</value>
-<valueName>UGC</valueName>
-<value>NYZ006 NYZ007 NYZ008</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value></value>
 </cap:parameter>
 </entry>
 <entry>
@@ -6307,17 +6470,17 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=PR12641EFE358C.HighSurfAdvisory.12641F0EE760PR.JSJCFWSJU.902c283e28c73304a451156d453a96ab</id>
-<updated>2022-12-25T20:59:00-04:00</updated>
-<published>2022-12-25T20:59:00-04:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=PR12641EFF6060.HighSurfAdvisory.12641F0EE760PR.JSJCFWSJU.902c283e28c73304a451156d453a96ab</id>
+<updated>2022-12-26T04:24:00-04:00</updated>
+<published>2022-12-26T04:24:00-04:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>High Surf Advisory issued December 25 at 8:59PM AST until December 27 at 6:00AM AST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=PR12641EFE358C.HighSurfAdvisory.12641F0EE760PR.JSJCFWSJU.902c283e28c73304a451156d453a96ab"/>
+<title>High Surf Advisory issued December 26 at 4:24AM AST until December 27 at 6:00AM AST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=PR12641EFF6060.HighSurfAdvisory.12641F0EE760PR.JSJCFWSJU.902c283e28c73304a451156d453a96ab"/>
 <summary>...HIGH SURF ADVISORY REMAINS IN EFFECT UNTIL 6 AM AST TUESDAY... ...HIGH RIP CURRENT RISK REMAINS IN EFFECT THROUGH LATE WEDNESDAY NIGHT... * WHAT...Dangerous surf conditions and rip currents expected due to breaking waves between 8 and 14 feet. * WHERE...The north-facing beaches from northwest to northeast</summary>
 <cap:event>High Surf Advisory</cap:event>
-<cap:effective>2022-12-25T20:59:00-04:00</cap:effective>
+<cap:effective>2022-12-26T04:24:00-04:00</cap:effective>
 <cap:expires>2022-12-27T06:00:00-04:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
@@ -6340,17 +6503,17 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=PR12641EFE358C.HighSurfAdvisory.12641F0EE760PR.JSJCFWSJU.775071d52dd6da8970c4607d29555762</id>
-<updated>2022-12-25T20:59:00-04:00</updated>
-<published>2022-12-25T20:59:00-04:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=PR12641EFF6060.HighSurfAdvisory.12641F0EE760PR.JSJCFWSJU.775071d52dd6da8970c4607d29555762</id>
+<updated>2022-12-26T04:24:00-04:00</updated>
+<published>2022-12-26T04:24:00-04:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>High Surf Advisory issued December 25 at 8:59PM AST until December 27 at 6:00AM AST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=PR12641EFE358C.HighSurfAdvisory.12641F0EE760PR.JSJCFWSJU.775071d52dd6da8970c4607d29555762"/>
-<summary>...HIGH SURF ADVISORY REMAINS IN EFFECT UNTIL 6 AM AST TUESDAY... ...HIGH RIP CURRENT RISK REMAINS IN EFFECT THROUGH LATE TUESDAY NIGHT... * WHAT...Dangerous surf conditions and rip currents expected due to breaking waves between 7 and 12 feet. * WHERE...Beaches of Vieques, St.Thomas, St John, and Adjacent</summary>
+<title>High Surf Advisory issued December 26 at 4:24AM AST until December 27 at 6:00AM AST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=PR12641EFF6060.HighSurfAdvisory.12641F0EE760PR.JSJCFWSJU.775071d52dd6da8970c4607d29555762"/>
+<summary>...HIGH SURF ADVISORY REMAINS IN EFFECT UNTIL 6 AM AST TUESDAY... ...HIGH RIP CURRENT RISK REMAINS IN EFFECT THROUGH LATE TUESDAY NIGHT... * WHAT...Dangerous surf conditions and rip currents expected due to breaking waves up to around 7 feet. * WHERE...Beaches of Vieques.</summary>
 <cap:event>High Surf Advisory</cap:event>
-<cap:effective>2022-12-25T20:59:00-04:00</cap:effective>
+<cap:effective>2022-12-26T04:24:00-04:00</cap:effective>
 <cap:expires>2022-12-27T06:00:00-04:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
@@ -6373,17 +6536,17 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=PR12641EFE358C.RipCurrentStatement.12641F10BC20PR.JSJCFWSJU.c0ce6a28809baded2f8efec4d4d9b23b</id>
-<updated>2022-12-25T20:59:00-04:00</updated>
-<published>2022-12-25T20:59:00-04:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=PR12641EFF6060.RipCurrentStatement.12641F10BC20PR.JSJCFWSJU.c0ce6a28809baded2f8efec4d4d9b23b</id>
+<updated>2022-12-26T04:24:00-04:00</updated>
+<published>2022-12-26T04:24:00-04:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Rip Current Statement issued December 25 at 8:59PM AST until December 27 at 6:00PM AST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=PR12641EFE358C.RipCurrentStatement.12641F10BC20PR.JSJCFWSJU.c0ce6a28809baded2f8efec4d4d9b23b"/>
+<title>Rip Current Statement issued December 26 at 4:24AM AST until December 27 at 6:00PM AST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=PR12641EFF6060.RipCurrentStatement.12641F10BC20PR.JSJCFWSJU.c0ce6a28809baded2f8efec4d4d9b23b"/>
 <summary>...HIGH RIP CURRENT RISK REMAINS IN EFFECT THROUGH TUESDAY AFTERNOON... * WHAT...Strong rip currents expected due to breaking waves of up to around 8 feet. * WHERE...Beaches of Aguada and Rincon. * WHEN...Through Tuesday afternoon.</summary>
 <cap:event>Rip Current Statement</cap:event>
-<cap:effective>2022-12-25T20:59:00-04:00</cap:effective>
+<cap:effective>2022-12-26T04:24:00-04:00</cap:effective>
 <cap:expires>2022-12-27T18:00:00-04:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
@@ -6405,17 +6568,17 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=PR12641EFE358C.RipCurrentStatement.12641F1E29A0PR.JSJCFWSJU.4b7678ab671af304cc9675bb5a941858</id>
-<updated>2022-12-25T20:59:00-04:00</updated>
-<published>2022-12-25T20:59:00-04:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=PR12641EFF6060.RipCurrentStatement.12641F1E29A0PR.JSJCFWSJU.4b7678ab671af304cc9675bb5a941858</id>
+<updated>2022-12-26T04:24:00-04:00</updated>
+<published>2022-12-26T04:24:00-04:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Rip Current Statement issued December 25 at 8:59PM AST until December 28 at 6:00AM AST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=PR12641EFE358C.RipCurrentStatement.12641F1E29A0PR.JSJCFWSJU.4b7678ab671af304cc9675bb5a941858"/>
-<summary>...HIGH SURF ADVISORY REMAINS IN EFFECT UNTIL 6 AM AST TUESDAY... ...HIGH RIP CURRENT RISK REMAINS IN EFFECT THROUGH LATE TUESDAY NIGHT... * WHAT...Dangerous surf conditions and rip currents expected due to breaking waves between 7 and 12 feet. * WHERE...Beaches of Vieques, St.Thomas, St John, and Adjacent</summary>
+<title>Rip Current Statement issued December 26 at 4:24AM AST until December 28 at 6:00AM AST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=PR12641EFF6060.RipCurrentStatement.12641F1E29A0PR.JSJCFWSJU.4b7678ab671af304cc9675bb5a941858"/>
+<summary>...HIGH SURF ADVISORY REMAINS IN EFFECT UNTIL 6 AM AST TUESDAY... ...HIGH RIP CURRENT RISK REMAINS IN EFFECT THROUGH LATE TUESDAY NIGHT... * WHAT...Dangerous surf conditions and rip currents expected due to breaking waves up to around 7 feet. * WHERE...Beaches of Vieques.</summary>
 <cap:event>Rip Current Statement</cap:event>
-<cap:effective>2022-12-25T20:59:00-04:00</cap:effective>
+<cap:effective>2022-12-26T04:24:00-04:00</cap:effective>
 <cap:expires>2022-12-28T06:00:00-04:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
@@ -6438,17 +6601,17 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=PR12641EFE358C.RipCurrentStatement.12641F2D6BE0PR.JSJCFWSJU.af1f6ee70002d4080d35333eacd14c8a</id>
-<updated>2022-12-25T20:59:00-04:00</updated>
-<published>2022-12-25T20:59:00-04:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=PR12641EFF6060.RipCurrentStatement.12641F2D6BE0PR.JSJCFWSJU.af1f6ee70002d4080d35333eacd14c8a</id>
+<updated>2022-12-26T04:24:00-04:00</updated>
+<published>2022-12-26T04:24:00-04:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Rip Current Statement issued December 25 at 8:59PM AST until December 29 at 6:00AM AST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=PR12641EFE358C.RipCurrentStatement.12641F2D6BE0PR.JSJCFWSJU.af1f6ee70002d4080d35333eacd14c8a"/>
+<title>Rip Current Statement issued December 26 at 4:24AM AST until December 29 at 6:00AM AST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=PR12641EFF6060.RipCurrentStatement.12641F2D6BE0PR.JSJCFWSJU.af1f6ee70002d4080d35333eacd14c8a"/>
 <summary>...HIGH SURF ADVISORY REMAINS IN EFFECT UNTIL 6 AM AST TUESDAY... ...HIGH RIP CURRENT RISK REMAINS IN EFFECT THROUGH LATE WEDNESDAY NIGHT... * WHAT...Dangerous surf conditions and rip currents expected due to breaking waves between 8 and 14 feet. * WHERE...The north-facing beaches from northwest to northeast</summary>
 <cap:event>Rip Current Statement</cap:event>
-<cap:effective>2022-12-25T20:59:00-04:00</cap:effective>
+<cap:effective>2022-12-26T04:24:00-04:00</cap:effective>
 <cap:expires>2022-12-29T06:00:00-04:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
@@ -6954,17 +7117,17 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=VI12641EFE358C.HighSurfAdvisory.12641F0EE760VI.JSJCFWSJU.668e3bd4ced2853a07df540d3568bb6c</id>
-<updated>2022-12-25T20:59:00-04:00</updated>
-<published>2022-12-25T20:59:00-04:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=VI12641EFF6060.HighSurfAdvisory.12641F0EE760VI.JSJCFWSJU.668e3bd4ced2853a07df540d3568bb6c</id>
+<updated>2022-12-26T04:24:00-04:00</updated>
+<published>2022-12-26T04:24:00-04:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>High Surf Advisory issued December 25 at 8:59PM AST until December 27 at 6:00AM AST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=VI12641EFE358C.HighSurfAdvisory.12641F0EE760VI.JSJCFWSJU.668e3bd4ced2853a07df540d3568bb6c"/>
-<summary>...HIGH SURF ADVISORY REMAINS IN EFFECT UNTIL 6 AM AST TUESDAY... ...HIGH RIP CURRENT RISK REMAINS IN EFFECT THROUGH LATE TUESDAY NIGHT... * WHAT...Dangerous surf conditions and rip currents expected due to breaking waves between 7 and 12 feet. * WHERE...Beaches of Vieques, St.Thomas, St John, and Adjacent</summary>
+<title>High Surf Advisory issued December 26 at 4:24AM AST until December 27 at 6:00AM AST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=VI12641EFF6060.HighSurfAdvisory.12641F0EE760VI.JSJCFWSJU.668e3bd4ced2853a07df540d3568bb6c"/>
+<summary>...HIGH RIP CURRENT RISK NOW IN EFFECT THROUGH LATE WEDNESDAY NIGHT... ...HIGH SURF ADVISORY REMAINS IN EFFECT UNTIL 6 AM AST TUESDAY... * WHAT...Dangerous surf conditions and rip currents expected due to breaking waves between 7 and 12 feet. * WHERE...Beaches of St.Thomas, St John, and Adjacent Islands.</summary>
 <cap:event>High Surf Advisory</cap:event>
-<cap:effective>2022-12-25T20:59:00-04:00</cap:effective>
+<cap:effective>2022-12-26T04:24:00-04:00</cap:effective>
 <cap:expires>2022-12-27T06:00:00-04:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
@@ -6982,22 +7145,22 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
-<value>/O.CON.TJSJ.SU.Y.0018.000000T0000Z-221227T1000Z/
-/O.CON.TJSJ.RP.S.0076.000000T0000Z-221228T1000Z/</value>
+<value>/O.EXT.TJSJ.RP.S.0076.000000T0000Z-221229T1000Z/
+/O.CON.TJSJ.SU.Y.0018.000000T0000Z-221227T1000Z/</value>
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=VI12641EFE358C.HighSurfAdvisory.12641F0EE760VI.JSJCFWSJU.49bdaad0b225bb440c9377a56c1c54aa</id>
-<updated>2022-12-25T20:59:00-04:00</updated>
-<published>2022-12-25T20:59:00-04:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=VI12641EFF6060.HighSurfAdvisory.12641F0EE760VI.JSJCFWSJU.49bdaad0b225bb440c9377a56c1c54aa</id>
+<updated>2022-12-26T04:24:00-04:00</updated>
+<published>2022-12-26T04:24:00-04:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>High Surf Advisory issued December 25 at 8:59PM AST until December 27 at 6:00AM AST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=VI12641EFE358C.HighSurfAdvisory.12641F0EE760VI.JSJCFWSJU.49bdaad0b225bb440c9377a56c1c54aa"/>
+<title>High Surf Advisory issued December 26 at 4:24AM AST until December 27 at 6:00AM AST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=VI12641EFF6060.HighSurfAdvisory.12641F0EE760VI.JSJCFWSJU.49bdaad0b225bb440c9377a56c1c54aa"/>
 <summary>...HIGH SURF ADVISORY REMAINS IN EFFECT UNTIL 6 AM AST TUESDAY... ...HIGH RIP CURRENT RISK REMAINS IN EFFECT THROUGH LATE WEDNESDAY NIGHT... * WHAT...Dangerous surf conditions and rip currents expected due to breaking waves between 8 and 14 feet. * WHERE...The north-facing beaches from northwest to northeast</summary>
 <cap:event>High Surf Advisory</cap:event>
-<cap:effective>2022-12-25T20:59:00-04:00</cap:effective>
+<cap:effective>2022-12-26T04:24:00-04:00</cap:effective>
 <cap:expires>2022-12-27T06:00:00-04:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
@@ -7020,18 +7183,18 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=VI12641EFE358C.RipCurrentStatement.12641F1E29A0VI.JSJCFWSJU.9450510bed8d61045c93d7799ce983fd</id>
-<updated>2022-12-25T20:59:00-04:00</updated>
-<published>2022-12-25T20:59:00-04:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=VI12641EFF6060.RipCurrentStatement.12641F2D6BE0VI.JSJCFWSJU.9450510bed8d61045c93d7799ce983fd</id>
+<updated>2022-12-26T04:24:00-04:00</updated>
+<published>2022-12-26T04:24:00-04:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Rip Current Statement issued December 25 at 8:59PM AST until December 28 at 6:00AM AST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=VI12641EFE358C.RipCurrentStatement.12641F1E29A0VI.JSJCFWSJU.9450510bed8d61045c93d7799ce983fd"/>
-<summary>...HIGH SURF ADVISORY REMAINS IN EFFECT UNTIL 6 AM AST TUESDAY... ...HIGH RIP CURRENT RISK REMAINS IN EFFECT THROUGH LATE TUESDAY NIGHT... * WHAT...Dangerous surf conditions and rip currents expected due to breaking waves between 7 and 12 feet. * WHERE...Beaches of Vieques, St.Thomas, St John, and Adjacent</summary>
+<title>Rip Current Statement issued December 26 at 4:24AM AST until December 29 at 6:00AM AST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=VI12641EFF6060.RipCurrentStatement.12641F2D6BE0VI.JSJCFWSJU.9450510bed8d61045c93d7799ce983fd"/>
+<summary>...HIGH RIP CURRENT RISK NOW IN EFFECT THROUGH LATE WEDNESDAY NIGHT... ...HIGH SURF ADVISORY REMAINS IN EFFECT UNTIL 6 AM AST TUESDAY... * WHAT...Dangerous surf conditions and rip currents expected due to breaking waves between 7 and 12 feet. * WHERE...Beaches of St.Thomas, St John, and Adjacent Islands.</summary>
 <cap:event>Rip Current Statement</cap:event>
-<cap:effective>2022-12-25T20:59:00-04:00</cap:effective>
-<cap:expires>2022-12-28T06:00:00-04:00</cap:expires>
+<cap:effective>2022-12-26T04:24:00-04:00</cap:effective>
+<cap:expires>2022-12-29T06:00:00-04:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
 <cap:category>Met</cap:category>
@@ -7048,22 +7211,22 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
-<value>/O.CON.TJSJ.SU.Y.0018.000000T0000Z-221227T1000Z/
-/O.CON.TJSJ.RP.S.0076.000000T0000Z-221228T1000Z/</value>
+<value>/O.EXT.TJSJ.RP.S.0076.000000T0000Z-221229T1000Z/
+/O.CON.TJSJ.SU.Y.0018.000000T0000Z-221227T1000Z/</value>
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=VI12641EFE358C.RipCurrentStatement.12641F2D6BE0VI.JSJCFWSJU.432e571a5655bf42bc6301f69880e5f1</id>
-<updated>2022-12-25T20:59:00-04:00</updated>
-<published>2022-12-25T20:59:00-04:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=VI12641EFF6060.RipCurrentStatement.12641F2D6BE0VI.JSJCFWSJU.432e571a5655bf42bc6301f69880e5f1</id>
+<updated>2022-12-26T04:24:00-04:00</updated>
+<published>2022-12-26T04:24:00-04:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Rip Current Statement issued December 25 at 8:59PM AST until December 29 at 6:00AM AST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=VI12641EFE358C.RipCurrentStatement.12641F2D6BE0VI.JSJCFWSJU.432e571a5655bf42bc6301f69880e5f1"/>
+<title>Rip Current Statement issued December 26 at 4:24AM AST until December 29 at 6:00AM AST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=VI12641EFF6060.RipCurrentStatement.12641F2D6BE0VI.JSJCFWSJU.432e571a5655bf42bc6301f69880e5f1"/>
 <summary>...HIGH SURF ADVISORY REMAINS IN EFFECT UNTIL 6 AM AST TUESDAY... ...HIGH RIP CURRENT RISK REMAINS IN EFFECT THROUGH LATE WEDNESDAY NIGHT... * WHAT...Dangerous surf conditions and rip currents expected due to breaking waves between 8 and 14 feet. * WHERE...The north-facing beaches from northwest to northeast</summary>
 <cap:event>Rip Current Statement</cap:event>
-<cap:effective>2022-12-25T20:59:00-04:00</cap:effective>
+<cap:effective>2022-12-26T04:24:00-04:00</cap:effective>
 <cap:expires>2022-12-29T06:00:00-04:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
