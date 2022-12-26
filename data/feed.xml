@@ -16,16 +16,48 @@ xmlns = 'http://www.w3.org/2005/Atom'
 xmlns:cap = 'urn:oasis:names:tc:emergency:cap:1.1'
 xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 >
-<!-- http-date = Mon, 26 Dec 2022 19:02:00 GMT -->
+<!-- http-date = Mon, 26 Dec 2022 19:17:00 GMT -->
 <id>https://alerts.weather.gov/cap/us.php?x=0</id>
 <logo>http://alerts.weather.gov/images/xml_logo.gif</logo>
 <generator>NWS CAP Server</generator>
-<updated>2022-12-26T10:02:00-09:00</updated>
+<updated>2022-12-26T14:17:00-05:00</updated>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
 <title>Current Watches, Warnings and Advisories for the United States Issued by the National Weather Service</title>
 <link href="https://alerts.weather.gov/cap/us.php?x=0"/>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=AK12641F010578.WinterWeatherAdvisory.12641F0DD5F0AK.AJKWSWAJK.04c392d2d64fe389adae25b4b1ad0d88</id>
+<updated>2022-12-26T10:02:00-09:00</updated>
+<published>2022-12-26T10:02:00-09:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Winter Weather Advisory issued December 26 at 10:02AM AKST until December 26 at 6:00PM AKST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=AK12641F010578.WinterWeatherAdvisory.12641F0DD5F0AK.AJKWSWAJK.04c392d2d64fe389adae25b4b1ad0d88"/>
+<summary>...SNOW AND FREEZING RAIN CONTINUE ACROSS THE NORTHERN PANHANDLE... Freezing rain and Snowfall will continue through the day across Haines. ...WINTER WEATHER ADVISORY REMAINS IN EFFECT UNTIL 6 PM AKST THIS EVENING...</summary>
+<cap:event>Winter Weather Advisory</cap:event>
+<cap:effective>2022-12-26T10:02:00-09:00</cap:effective>
+<cap:expires>2022-12-26T18:00:00-09:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Haines Borough and Klukwan</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>002100</value>
+<valueName>UGC</valueName>
+<value>AKZ319</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.PAJK.WW.Y.0038.000000T0000Z-221227T0300Z/</value>
+</cap:parameter>
+</entry>
 <entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=AK12641F00CBA8.WinterWeatherAdvisory.12641F0E9940AK.AFCWSWAER.4ac9fd9af8a7f41d08df8ee849004249</id>
 <updated>2022-12-26T08:54:00-09:00</updated>
@@ -120,38 +152,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value>/O.EXT.PAFC.WW.Y.0051.000000T0000Z-221227T1900Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=AK12641F00CA7C.WinterWeatherAdvisory.12641F0DD5F0AK.AJKWSWAJK.04c392d2d64fe389adae25b4b1ad0d88</id>
-<updated>2022-12-26T08:51:00-09:00</updated>
-<published>2022-12-26T08:51:00-09:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Winter Weather Advisory issued December 26 at 8:51AM AKST until December 26 at 6:00PM AKST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=AK12641F00CA7C.WinterWeatherAdvisory.12641F0DD5F0AK.AJKWSWAJK.04c392d2d64fe389adae25b4b1ad0d88"/>
-<summary>...SNOW AND FREEZING RAIN CONTINUE ACROSS THE NORTHERN PANHANDLE... Snowfall will continue through the morning hours across Skagway and Haines, with periods of freezing rain. ...WINTER WEATHER ADVISORY NOW IN EFFECT UNTIL 6 PM AKST THIS EVENING...</summary>
-<cap:event>Winter Weather Advisory</cap:event>
-<cap:effective>2022-12-26T08:51:00-09:00</cap:effective>
-<cap:expires>2022-12-26T18:00:00-09:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Haines Borough and Klukwan</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>002100</value>
-<valueName>UGC</valueName>
-<value>AKZ319</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.EXT.PAJK.WW.Y.0038.000000T0000Z-221227T0300Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -2232,6 +2232,72 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=FL12641F010B54.FreezeWarning.12641F0FAAB0FL.JAXNPWJAX.bad8e5191edf193c746632ff659e9db8</id>
+<updated>2022-12-26T14:17:00-05:00</updated>
+<published>2022-12-26T14:17:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Freeze Warning issued December 26 at 2:17PM EST until December 27 at 10:00AM EST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=FL12641F010B54.FreezeWarning.12641F0FAAB0FL.JAXNPWJAX.bad8e5191edf193c746632ff659e9db8"/>
+<summary>...FREEZE WARNING IN EFFECT FROM 1 AM TO 10 AM EST TUESDAY... * WHAT...Sub-freezing temperatures as low as 26 expected. * WHERE...Portions of northeast and northern Florida and southeast Georgia. * WHEN...From 1 AM to 10 AM EST Tuesday. * IMPACTS...Frost and freeze conditions could kill crops and</summary>
+<cap:event>Freeze Warning</cap:event>
+<cap:effective>2022-12-26T14:17:00-05:00</cap:effective>
+<cap:expires>2022-12-27T10:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Baker; Bradford; Eastern Alachua; Gilchrist; Hamilton; Inland Nassau; Northern Columbia; Southern Columbia; Suwannee; Trout River; Union; Western Alachua; Western Clay; Western Duval</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>012001 012003 012007 012019 012023 012031 012041 012047 012089 012121 012125</value>
+<valueName>UGC</valueName>
+<value>FLZ020 FLZ021 FLZ023 FLZ024 FLZ030 FLZ031 FLZ035 FLZ122 FLZ136 FLZ222 FLZ225 FLZ232 FLZ236 FLZ425</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.UPG.KJAX.HZ.A.0005.221227T0600Z-221227T1500Z/
+/O.NEW.KJAX.FZ.W.0013.221227T0600Z-221227T1500Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=FL12641F010B54.FreezeWarning.12641F0FAAB0FL.JAXNPWJAX.945f1720f49f1c43335255a1c76c9666</id>
+<updated>2022-12-26T14:17:00-05:00</updated>
+<published>2022-12-26T14:17:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Freeze Warning issued December 26 at 2:17PM EST until December 27 at 10:00AM EST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=FL12641F010B54.FreezeWarning.12641F0FAAB0FL.JAXNPWJAX.945f1720f49f1c43335255a1c76c9666"/>
+<summary>...FREEZE WARNING IN EFFECT FROM 1 AM TO 10 AM EST TUESDAY... * WHAT...Sub-freezing temperatures as low as 30 expected. * WHERE...Portions of northeast and northern Florida and southeast Georgia. * WHEN...From 1 AM to 10 AM EST Tuesday. * IMPACTS...Frost and freeze conditions could kill crops and</summary>
+<cap:event>Freeze Warning</cap:event>
+<cap:effective>2022-12-26T14:17:00-05:00</cap:effective>
+<cap:expires>2022-12-27T10:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Central Marion; Coastal Duval; Coastal Nassau; Eastern Clay; Eastern Marion; Eastern Putnam; South Central Duval; Western Marion; Western Putnam</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>012019 012031 012083 012089 012107</value>
+<valueName>UGC</valueName>
+<value>FLZ124 FLZ125 FLZ132 FLZ137 FLZ140 FLZ237 FLZ240 FLZ325 FLZ340</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.UPG.KJAX.FZ.A.0011.221227T0600Z-221227T1500Z/
+/O.NEW.KJAX.FZ.W.0013.221227T0600Z-221227T1500Z/</value>
+</cap:parameter>
+</entry>
+<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=FL12641F00E5D4.FreezeWarning.12641F0FAAB0FL.TBWNPWTBW.2ba3ee107aa22ff0f139e2202a370df0</id>
 <updated>2022-12-26T13:21:00-05:00</updated>
 <published>2022-12-26T13:21:00-05:00</published>
@@ -2297,105 +2363,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=FL12641F005614.FreezeWatch.12641F0FAAB0FL.JAXNPWJAX.2ed7f186d86ce0665694e63e5a4ec0c6</id>
-<updated>2022-12-26T09:53:00-05:00</updated>
-<published>2022-12-26T09:53:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Freeze Watch issued December 26 at 9:53AM EST until December 27 at 10:00AM EST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=FL12641F005614.FreezeWatch.12641F0FAAB0FL.JAXNPWJAX.2ed7f186d86ce0665694e63e5a4ec0c6"/>
-<summary>...FREEZE WATCH REMAINS IN EFFECT FROM LATE TONIGHT THROUGH TUESDAY MORNING... ...FREEZE WARNING IS CANCELLED... * WHAT...Sub-freezing temperatures as low as 30 possible. * WHERE...Inland St. Johns, Inland Flagler, Coastal Duval and South Central Duval Counties.</summary>
-<cap:event>Freeze Watch</cap:event>
-<cap:effective>2022-12-26T09:53:00-05:00</cap:effective>
-<cap:expires>2022-12-27T10:00:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Future</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Possible</cap:certainty>
-<cap:areaDesc>Coastal Duval; Inland Flagler; Inland St. Johns; South Central Duval</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>012031 012035 012109</value>
-<valueName>UGC</valueName>
-<value>FLZ033 FLZ038 FLZ125 FLZ325</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CAN.KJAX.FZ.W.0012.000000T0000Z-221226T1500Z/
-/O.CON.KJAX.FZ.A.0011.221227T0600Z-221227T1500Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=FL12641F005614.FreezeWatch.12641F0FAAB0FL.JAXNPWJAX.c6ddc1c4b1e3fb55a99e101b33841d57</id>
-<updated>2022-12-26T09:53:00-05:00</updated>
-<published>2022-12-26T09:53:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Freeze Watch issued December 26 at 9:53AM EST until December 27 at 10:00AM EST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=FL12641F005614.FreezeWatch.12641F0FAAB0FL.JAXNPWJAX.c6ddc1c4b1e3fb55a99e101b33841d57"/>
-<summary>...FREEZE WATCH REMAINS IN EFFECT FROM LATE TONIGHT THROUGH TUESDAY MORNING... ...HARD FREEZE WARNING IS CANCELLED... * WHAT...Sub-freezing temperatures as low as 27 possible. * WHERE...In Florida, Coastal Nassau, Eastern Clay, Eastern Putnam, Eastern Marion, Western Putnam, Central Marion and</summary>
-<cap:event>Freeze Watch</cap:event>
-<cap:effective>2022-12-26T09:53:00-05:00</cap:effective>
-<cap:expires>2022-12-27T10:00:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Future</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Possible</cap:certainty>
-<cap:areaDesc>Central Marion; Coastal Nassau; Eastern Clay; Eastern Marion; Eastern Putnam; Western Marion; Western Putnam</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>012019 012083 012089 012107</value>
-<valueName>UGC</valueName>
-<value>FLZ124 FLZ132 FLZ137 FLZ140 FLZ237 FLZ240 FLZ340</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CAN.KJAX.HZ.W.0005.000000T0000Z-221226T1500Z/
-/O.CON.KJAX.FZ.A.0011.221227T0600Z-221227T1500Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=FL12641F005614.HardFreezeWatch.12641F0FAAB0FL.JAXNPWJAX.de242cf0a207505620342238b47a2ba0</id>
-<updated>2022-12-26T09:53:00-05:00</updated>
-<published>2022-12-26T09:53:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Hard Freeze Watch issued December 26 at 9:53AM EST until December 27 at 10:00AM EST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=FL12641F005614.HardFreezeWatch.12641F0FAAB0FL.JAXNPWJAX.de242cf0a207505620342238b47a2ba0"/>
-<summary>...HARD FREEZE WATCH REMAINS IN EFFECT FROM LATE TONIGHT THROUGH TUESDAY MORNING... ...HARD FREEZE WARNING IS CANCELLED... * WHAT...Sub-freezing temperatures as low as 22 possible. * WHERE...Portions of northeast and northern Florida and southeast Georgia.</summary>
-<cap:event>Hard Freeze Watch</cap:event>
-<cap:effective>2022-12-26T09:53:00-05:00</cap:effective>
-<cap:expires>2022-12-27T10:00:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Future</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Possible</cap:certainty>
-<cap:areaDesc>Baker; Bradford; Eastern Alachua; Gilchrist; Hamilton; Inland Nassau; Northern Columbia; Southern Columbia; Suwannee; Trout River; Union; Western Alachua; Western Clay; Western Duval</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>012001 012003 012007 012019 012023 012031 012041 012047 012089 012121 012125</value>
-<valueName>UGC</valueName>
-<value>FLZ020 FLZ021 FLZ023 FLZ024 FLZ030 FLZ031 FLZ035 FLZ122 FLZ136 FLZ222 FLZ225 FLZ232 FLZ236 FLZ425</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CAN.KJAX.HZ.W.0005.000000T0000Z-221226T1500Z/
-/O.CON.KJAX.HZ.A.0005.221227T0600Z-221227T1500Z/</value>
-</cap:parameter>
-</entry>
-<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=FL12641F002FCC.FloodWarning.12641F2BE540FL.MLBFLSMLB.4c66ef1e60e32a067d46212176ce556f</id>
 <updated>2022-12-26T08:55:00-05:00</updated>
 <published>2022-12-26T08:55:00-05:00</published>
@@ -2429,57 +2396,24 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=GA12641F005614.FreezeWatch.12641F0FAAB0GA.JAXNPWJAX.0bfc2076ed1cfea476601097b561c60b</id>
-<updated>2022-12-26T09:53:00-05:00</updated>
-<published>2022-12-26T09:53:00-05:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=GA12641F010B54.FreezeWarning.12641F0FAAB0GA.JAXNPWJAX.7b8cc201e0260f822e2a307a1e911598</id>
+<updated>2022-12-26T14:17:00-05:00</updated>
+<published>2022-12-26T14:17:00-05:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Freeze Watch issued December 26 at 9:53AM EST until December 27 at 10:00AM EST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=GA12641F005614.FreezeWatch.12641F0FAAB0GA.JAXNPWJAX.0bfc2076ed1cfea476601097b561c60b"/>
-<summary>...FREEZE WATCH REMAINS IN EFFECT FROM LATE TONIGHT THROUGH TUESDAY MORNING... ...HARD FREEZE WARNING IS CANCELLED... * WHAT...Sub-freezing temperatures as low as 27 possible. * WHERE...In Florida, Coastal Nassau, Eastern Clay, Eastern Putnam, Eastern Marion, Western Putnam, Central Marion and</summary>
-<cap:event>Freeze Watch</cap:event>
-<cap:effective>2022-12-26T09:53:00-05:00</cap:effective>
+<title>Freeze Warning issued December 26 at 2:17PM EST until December 27 at 10:00AM EST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=GA12641F010B54.FreezeWarning.12641F0FAAB0GA.JAXNPWJAX.7b8cc201e0260f822e2a307a1e911598"/>
+<summary>...FREEZE WARNING IN EFFECT FROM 1 AM TO 10 AM EST TUESDAY... * WHAT...Sub-freezing temperatures as low as 26 expected. * WHERE...Portions of northeast and northern Florida and southeast Georgia. * WHEN...From 1 AM to 10 AM EST Tuesday. * IMPACTS...Frost and freeze conditions could kill crops and</summary>
+<cap:event>Freeze Warning</cap:event>
+<cap:effective>2022-12-26T14:17:00-05:00</cap:effective>
 <cap:expires>2022-12-27T10:00:00-05:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
 <cap:category>Met</cap:category>
-<cap:urgency>Future</cap:urgency>
+<cap:urgency>Expected</cap:urgency>
 <cap:severity>Moderate</cap:severity>
-<cap:certainty>Possible</cap:certainty>
-<cap:areaDesc>Coastal Camden; Coastal Glynn</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>013039 013127</value>
-<valueName>UGC</valueName>
-<value>GAZ154 GAZ166</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CAN.KJAX.HZ.W.0005.000000T0000Z-221226T1500Z/
-/O.CON.KJAX.FZ.A.0011.221227T0600Z-221227T1500Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=GA12641F005614.HardFreezeWatch.12641F0FAAB0GA.JAXNPWJAX.9fb568c8351ef1ce438d8b7a087b52cf</id>
-<updated>2022-12-26T09:53:00-05:00</updated>
-<published>2022-12-26T09:53:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Hard Freeze Watch issued December 26 at 9:53AM EST until December 27 at 10:00AM EST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=GA12641F005614.HardFreezeWatch.12641F0FAAB0GA.JAXNPWJAX.9fb568c8351ef1ce438d8b7a087b52cf"/>
-<summary>...HARD FREEZE WATCH REMAINS IN EFFECT FROM LATE TONIGHT THROUGH TUESDAY MORNING... ...HARD FREEZE WARNING IS CANCELLED... * WHAT...Sub-freezing temperatures as low as 22 possible. * WHERE...Portions of northeast and northern Florida and southeast Georgia.</summary>
-<cap:event>Hard Freeze Watch</cap:event>
-<cap:effective>2022-12-26T09:53:00-05:00</cap:effective>
-<cap:expires>2022-12-27T10:00:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Future</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Possible</cap:certainty>
+<cap:certainty>Likely</cap:certainty>
 <cap:areaDesc>Appling; Atkinson; Bacon; Brantley; Clinch; Coffee; Echols; Inland Camden; Inland Glynn; Jeff Davis; Northeastern Charlton; Northern Ware; Pierce; Southern Ware; Wayne; Western Charlton</cap:areaDesc>
 <cap:polygon></cap:polygon>
 <cap:geocode>
@@ -2490,8 +2424,41 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
-<value>/O.CAN.KJAX.HZ.W.0005.000000T0000Z-221226T1500Z/
-/O.CON.KJAX.HZ.A.0005.221227T0600Z-221227T1500Z/</value>
+<value>/O.UPG.KJAX.HZ.A.0005.221227T0600Z-221227T1500Z/
+/O.NEW.KJAX.FZ.W.0013.221227T0600Z-221227T1500Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=GA12641F010B54.FreezeWarning.12641F0FAAB0GA.JAXNPWJAX.6189cba62d6886a3200ec43406b3713c</id>
+<updated>2022-12-26T14:17:00-05:00</updated>
+<published>2022-12-26T14:17:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Freeze Warning issued December 26 at 2:17PM EST until December 27 at 10:00AM EST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=GA12641F010B54.FreezeWarning.12641F0FAAB0GA.JAXNPWJAX.6189cba62d6886a3200ec43406b3713c"/>
+<summary>...FREEZE WARNING IN EFFECT FROM 1 AM TO 10 AM EST TUESDAY... * WHAT...Sub-freezing temperatures as low as 30 expected. * WHERE...Portions of northeast and northern Florida and southeast Georgia. * WHEN...From 1 AM to 10 AM EST Tuesday. * IMPACTS...Frost and freeze conditions could kill crops and</summary>
+<cap:event>Freeze Warning</cap:event>
+<cap:effective>2022-12-26T14:17:00-05:00</cap:effective>
+<cap:expires>2022-12-27T10:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Coastal Camden; Coastal Glynn</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>013039 013127</value>
+<valueName>UGC</valueName>
+<value>GAZ154 GAZ166</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.UPG.KJAX.FZ.A.0011.221227T0600Z-221227T1500Z/
+/O.NEW.KJAX.FZ.W.0013.221227T0600Z-221227T1500Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -2693,35 +2660,35 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=HI12641F001C44.HighSurfAdvisory.12641F0179E0HI.HFOCFWHFO.8ffc534cecf24942134a11e0ee5882ff</id>
-<updated>2022-12-26T03:05:00-10:00</updated>
-<published>2022-12-26T03:05:00-10:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=ID12641F010A8C.AirQualityAlert.12641F104CCCID.PIHAQAPIH.acfd4f840f97c31a019a3e5ac9f15179</id>
+<updated>2022-12-26T12:15:00-07:00</updated>
+<published>2022-12-26T12:15:00-07:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>High Surf Advisory issued December 26 at 3:05AM HST until December 26 at 12:00PM HST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=HI12641F001C44.HighSurfAdvisory.12641F0179E0HI.HFOCFWHFO.8ffc534cecf24942134a11e0ee5882ff"/>
-<summary>...HIGH SURF ADVISORY FOR NORTH AND WEST FACING SHORES OF NIIHAU KAUAI OAHU MOLOKAI AND NORTH FACING SHORES OF MAUI... .The current declining northwest swell (310-320 degrees) will maintain advisory level surf for north and west facing shores through mid to late morning. Surf is expected to drop below advisory levels by early afternoon today.</summary>
-<cap:event>High Surf Advisory</cap:event>
-<cap:effective>2022-12-26T03:05:00-10:00</cap:effective>
-<cap:expires>2022-12-26T12:00:00-10:00</cap:expires>
+<title>Air Quality Alert issued December 26 at 12:15PM MST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=ID12641F010A8C.AirQualityAlert.12641F104CCCID.PIHAQAPIH.acfd4f840f97c31a019a3e5ac9f15179"/>
+<summary>...AIR QUALITY ADVISORY FROM THE IDAHO DEPARTMENT OF ENVIRONMENTAL QUALITY FOR Franklin County... * WHAT...Air Quality Advisory because of forecasted poor air quality. Air Quality Index is forecast to be Moderate. * WHERE...Franklin County.</summary>
+<cap:event>Air Quality Alert</cap:event>
+<cap:effective>2022-12-26T12:15:00-07:00</cap:effective>
+<cap:expires>2022-12-27T12:15:00-07:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
 <cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Kauai North; Kauai Southwest; Maui Central Valley North; Maui Windward West; Molokai North; Molokai West; Molokai Windward; Niihau; Oahu North Shore; Waianae Coast; Windward Haleakala</cap:areaDesc>
+<cap:urgency>Unknown</cap:urgency>
+<cap:severity>Unknown</cap:severity>
+<cap:certainty>Unknown</cap:certainty>
+<cap:areaDesc>Franklin</cap:areaDesc>
 <cap:polygon></cap:polygon>
 <cap:geocode>
 <valueName>FIPS6</valueName>
-<value>015003 015007 015009</value>
+<value>016041</value>
 <valueName>UGC</valueName>
-<value>HIZ001 HIZ003 HIZ006 HIZ007 HIZ017 HIZ029 HIZ037 HIZ039 HIZ040 HIZ045 HIZ047</value>
+<value>IDC041</value>
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
-<value>/O.EXT.PHFO.SU.Y.0050.000000T0000Z-221226T2200Z/</value>
+<value></value>
 </cap:parameter>
 </entry>
 <entry>
@@ -2975,38 +2942,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <value>016017 016021 016055 016079</value>
 <valueName>UGC</valueName>
 <value>IDC017 IDC021 IDC055 IDC079</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value></value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=ID12641EF1D404.AirQualityAlert.12641F011644ID.PIHAQAPIH.acfd4f840f97c31a019a3e5ac9f15179</id>
-<updated>2022-12-25T12:45:00-07:00</updated>
-<published>2022-12-25T12:45:00-07:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Air Quality Alert issued December 25 at 12:45PM MST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=ID12641EF1D404.AirQualityAlert.12641F011644ID.PIHAQAPIH.acfd4f840f97c31a019a3e5ac9f15179"/>
-<summary>...AIR QUALITY ADVISORY FROM THE IDAHO DEPARTMENT OF ENVIRONMENTAL QUALITY FOR Franklin County... * WHAT...Air Quality Advisory because of forecasted poor air quality. Air Quality Index is forecast to be Unhealthy for Sensitive Groups.</summary>
-<cap:event>Air Quality Alert</cap:event>
-<cap:effective>2022-12-25T12:45:00-07:00</cap:effective>
-<cap:expires>2022-12-26T12:45:00-07:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Unknown</cap:urgency>
-<cap:severity>Unknown</cap:severity>
-<cap:certainty>Unknown</cap:certainty>
-<cap:areaDesc>Franklin</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>016041</value>
-<valueName>UGC</valueName>
-<value>IDC041</value>
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
