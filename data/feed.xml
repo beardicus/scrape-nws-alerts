@@ -16,16 +16,48 @@ xmlns = 'http://www.w3.org/2005/Atom'
 xmlns:cap = 'urn:oasis:names:tc:emergency:cap:1.1'
 xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 >
-<!-- http-date = Thu, 19 Jan 2023 22:01:00 GMT -->
+<!-- http-date = Thu, 19 Jan 2023 22:26:00 GMT -->
 <id>https://alerts.weather.gov/cap/us.php?x=0</id>
 <logo>http://alerts.weather.gov/images/xml_logo.gif</logo>
 <generator>NWS CAP Server</generator>
-<updated>2023-01-19T16:01:00-06:00</updated>
+<updated>2023-01-19T17:26:00-05:00</updated>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
 <title>Current Watches, Warnings and Advisories for the United States Issued by the National Weather Service</title>
 <link href="https://alerts.weather.gov/cap/us.php?x=0"/>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=AK12663111E5DC.AirQualityAlert.1266312DCF90AK.AFGAQAAFG.0cea83c5a2b9072803849fb841d40c82</id>
+<updated>2023-01-19T13:07:00-09:00</updated>
+<published>2023-01-19T13:07:00-09:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Air Quality Alert issued January 19 at 1:07PM AKST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=AK12663111E5DC.AirQualityAlert.1266312DCF90AK.AFGAQAAFG.0cea83c5a2b9072803849fb841d40c82"/>
+<summary>...AIR QUALITY ALERT IN EFFECT UNTIL 8 PM AKST FRIDAY... The Department of Environmental Conservation has issued an Air Quality Alert which is in effect until 8 PM AKST Friday. North Pole has a Stage 2 alert. Fairbanks has a Stage 1 alert. &amp;&amp;</summary>
+<cap:event>Air Quality Alert</cap:event>
+<cap:effective>2023-01-19T13:07:00-09:00</cap:effective>
+<cap:expires>2023-01-20T20:00:00-09:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Unknown</cap:urgency>
+<cap:severity>Unknown</cap:severity>
+<cap:certainty>Unknown</cap:certainty>
+<cap:areaDesc>Middle Tanana Valley</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>002090 002290</value>
+<valueName>UGC</valueName>
+<value>AKZ222</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value></value>
+</cap:parameter>
+</entry>
 <entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=AK126631107134.WinterWeatherAdvisory.1266311E3F30AK.AJKWSWAJK.9bb7eecb533283dc92397d2d34492ab5</id>
 <updated>2023-01-19T03:53:00-09:00</updated>
@@ -88,38 +120,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value>/O.EXT.PAFG.WW.Y.0009.000000T0000Z-230120T0300Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=AK1266310282CC.AirQualityAlert.126631120A30AK.AFGAQAAFG.0cea83c5a2b9072803849fb841d40c82</id>
-<updated>2023-01-18T12:23:00-09:00</updated>
-<published>2023-01-18T12:23:00-09:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Air Quality Alert issued January 18 at 12:23PM AKST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=AK1266310282CC.AirQualityAlert.126631120A30AK.AFGAQAAFG.0cea83c5a2b9072803849fb841d40c82"/>
-<summary>...AIR QUALITY ALERT IN EFFECT UNTIL 2 PM AKST THURSDAY... The Department of Environmental Conservation has issued an Air Quality Alert which is in effect until 2 PM AKST Thursday. North Pole has a Stage 2 alert. Fairbanks has a Stage 1 alert. &amp;&amp;</summary>
-<cap:event>Air Quality Alert</cap:event>
-<cap:effective>2023-01-18T12:23:00-09:00</cap:effective>
-<cap:expires>2023-01-19T14:00:00-09:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Unknown</cap:urgency>
-<cap:severity>Unknown</cap:severity>
-<cap:certainty>Unknown</cap:certainty>
-<cap:areaDesc>Middle Tanana Valley</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>002090 002290</value>
-<valueName>UGC</valueName>
-<value>AKZ222</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value></value>
 </cap:parameter>
 </entry>
 <entry>
@@ -606,6 +606,104 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <valueName>VTEC</valueName>
 <value>/O.EXT.KTWC.FA.Y.0002.000000T0000Z-230122T0645Z/
 /00000.N.ER.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=CA12663111E960.FreezeWarning.126631206210CA.MTRNPWMTR.a1e746b662f01bcdd6b89f65d6b38ab7</id>
+<updated>2023-01-19T14:16:00-08:00</updated>
+<published>2023-01-19T14:16:00-08:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Freeze Warning issued January 19 at 2:16PM PST until January 20 at 9:00AM PST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CA12663111E960.FreezeWarning.126631206210CA.MTRNPWMTR.a1e746b662f01bcdd6b89f65d6b38ab7"/>
+<summary>...FREEZE WARNING REMAINS IN EFFECT FROM MIDNIGHT TONIGHT TO 9 AM PST FRIDAY... ...FREEZE WARNING IN EFFECT FROM MIDNIGHT FRIDAY NIGHT TO 9 AM PST SATURDAY... * WHAT...Widespread freezing temperatures ranging 29 to 32 expected.</summary>
+<cap:event>Freeze Warning</cap:event>
+<cap:effective>2023-01-19T14:16:00-08:00</cap:effective>
+<cap:expires>2023-01-20T09:00:00-08:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>East Bay Hills; East Bay Interior Valleys; Eastern Santa Clara Hills; Mountains Of San Benito County And Interior Monterey County Including Pinnacles National Monument; North Bay Interior Valleys; Northern Salinas Valley, Hollister Valley and Carmel Valley; Santa Clara Valley Including San Jose; Santa Lucia Mountains and Los Padres National Forest; Southern Salinas Valley, Arroyo Seco and Lake San Antonio</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>006001 006013 006041 006053 006055 006069 006085 006097</value>
+<valueName>UGC</valueName>
+<value>CAZ506 CAZ510 CAZ513 CAZ514 CAZ515 CAZ516 CAZ517 CAZ518 CAZ528</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.NEW.KMTR.FZ.W.0002.230121T0800Z-230121T1700Z/
+/O.CON.KMTR.FZ.W.0001.230120T0800Z-230120T1700Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=CA12663111E960.FreezeWarning.1266312FA450CA.MTRNPWMTR.310c58c739b985006a0ce22bc511c4e8</id>
+<updated>2023-01-19T14:16:00-08:00</updated>
+<published>2023-01-19T14:16:00-08:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Freeze Warning issued January 19 at 2:16PM PST until January 21 at 9:00AM PST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CA12663111E960.FreezeWarning.1266312FA450CA.MTRNPWMTR.310c58c739b985006a0ce22bc511c4e8"/>
+<summary>...FREEZE WARNING REMAINS IN EFFECT FROM MIDNIGHT TONIGHT TO 9 AM PST FRIDAY... ...FREEZE WARNING IN EFFECT FROM MIDNIGHT FRIDAY NIGHT TO 9 AM PST SATURDAY... * WHAT...Widespread freezing temperatures ranging 29 to 32 expected.</summary>
+<cap:event>Freeze Warning</cap:event>
+<cap:effective>2023-01-19T14:16:00-08:00</cap:effective>
+<cap:expires>2023-01-21T09:00:00-08:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>East Bay Hills; East Bay Interior Valleys; Eastern Santa Clara Hills; Mountains Of San Benito County And Interior Monterey County Including Pinnacles National Monument; North Bay Interior Valleys; Northern Salinas Valley, Hollister Valley and Carmel Valley; Santa Clara Valley Including San Jose; Santa Lucia Mountains and Los Padres National Forest; Southern Salinas Valley, Arroyo Seco and Lake San Antonio</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>006001 006013 006041 006053 006055 006069 006085 006097</value>
+<valueName>UGC</valueName>
+<value>CAZ506 CAZ510 CAZ513 CAZ514 CAZ515 CAZ516 CAZ517 CAZ518 CAZ528</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.NEW.KMTR.FZ.W.0002.230121T0800Z-230121T1700Z/
+/O.CON.KMTR.FZ.W.0001.230120T0800Z-230120T1700Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=CA12663111E578.FrostAdvisory.126631203B00CA.LOXNPWLOX.7d874c7eaaf1cb706e3ca127a7d36b66</id>
+<updated>2023-01-19T14:06:00-08:00</updated>
+<published>2023-01-19T14:06:00-08:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Frost Advisory issued January 19 at 2:06PM PST until January 20 at 8:00AM PST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CA12663111E578.FrostAdvisory.126631203B00CA.LOXNPWLOX.7d874c7eaaf1cb706e3ca127a7d36b66"/>
+<summary>...FROST ADVISORY IN EFFECT FROM 1 AM TO 8 AM PST FRIDAY... * WHAT...Temperatures as low as 30 will result in frost formation. Isolated temperatures in the mid to upper 20s are possible in and around the Santa Monica Mountains and in the Ojai Valley. * WHERE...Portions of southwest California. * WHEN...From 1 AM to 8 AM PST Friday.</summary>
+<cap:event>Frost Advisory</cap:event>
+<cap:effective>2023-01-19T14:06:00-08:00</cap:effective>
+<cap:expires>2023-01-20T08:00:00-08:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Central Ventura County Valleys; Los Angeles County San Fernando Valley; Los Angeles County San Gabriel Valley; Ojai Valley; San Luis Obispo County Inland Central Coast; Santa Barbara County Central Coast Beaches; Santa Barbara County Inland Central Coast; Santa Clarita Valley; Santa Monica Mountains; Santa Ynez Valley; Southeastern Ventura County Valleys</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>006037 006079 006083 006111</value>
+<valueName>UGC</valueName>
+<value>CAZ088 CAZ341 CAZ346 CAZ347 CAZ348 CAZ357 CAZ358 CAZ359 CAZ363 CAZ547 CAZ548</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.NEW.KLOX.FR.Y.0003.230120T0900Z-230120T1600Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -1124,38 +1222,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value></value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=CA126631106FA4.FreezeWarning.126631206210CA.MTRNPWMTR.a1e746b662f01bcdd6b89f65d6b38ab7</id>
-<updated>2023-01-19T04:49:00-08:00</updated>
-<published>2023-01-19T04:49:00-08:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Freeze Warning issued January 19 at 4:49AM PST until January 20 at 9:00AM PST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CA126631106FA4.FreezeWarning.126631206210CA.MTRNPWMTR.a1e746b662f01bcdd6b89f65d6b38ab7"/>
-<summary>...FREEZE WARNING REMAINS IN EFFECT FROM MIDNIGHT TONIGHT TO 9 AM PST FRIDAY... * WHAT...Widespread freezing temperatures ranging 29 to 32 expected. * WHERE...North Bay valleys, East Bay interior valleys &amp; hills, portions of Santa Clara county including the valley and</summary>
-<cap:event>Freeze Warning</cap:event>
-<cap:effective>2023-01-19T04:49:00-08:00</cap:effective>
-<cap:expires>2023-01-20T09:00:00-08:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>East Bay Hills; East Bay Interior Valleys; Eastern Santa Clara Hills; Mountains Of San Benito County And Interior Monterey County Including Pinnacles National Monument; North Bay Interior Valleys; Northern Salinas Valley, Hollister Valley and Carmel Valley; Santa Clara Valley Including San Jose; Santa Lucia Mountains and Los Padres National Forest; Southern Salinas Valley, Arroyo Seco and Lake San Antonio</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>006001 006013 006041 006053 006055 006069 006085 006097</value>
-<valueName>UGC</valueName>
-<value>CAZ506 CAZ510 CAZ513 CAZ514 CAZ515 CAZ516 CAZ517 CAZ518 CAZ528</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KMTR.FZ.W.0001.230120T0800Z-230120T1700Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -1933,38 +1999,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=IN126631115B30.SevereThunderstormWatch.1266311DCA00IN.WNSWOU6.a17cfe53567fb7b0a016f9668364ba80</id>
-<updated>2023-01-19T13:52:00-05:00</updated>
-<published>2023-01-19T13:52:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Severe Thunderstorm Watch issued January 19 at 1:52PM EST until January 19 at 7:00PM EST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=IN126631115B30.SevereThunderstormWatch.1266311DCA00IN.WNSWOU6.a17cfe53567fb7b0a016f9668364ba80"/>
-<summary>SEVERE THUNDERSTORM WATCH 26 IS IN EFFECT UNTIL 700 PM EST FOR THE FOLLOWING LOCATIONS IN . INDIANA COUNTIES INCLUDED ARE ADAMS ALLEN BLACKFORD DEARBORN DECATUR DELAWARE</summary>
-<cap:event>Severe Thunderstorm Watch</cap:event>
-<cap:effective>2023-01-19T13:52:00-05:00</cap:effective>
-<cap:expires>2023-01-19T19:00:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Severe</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Adams; Allen; Blackford; Jay; Wells</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>018001 018003 018009 018075 018179</value>
-<valueName>UGC</valueName>
-<value>INC001 INC003 INC009 INC075 INC179</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.NEW.KWNS.SV.A.0026.230119T1855Z-230120T0000Z/</value>
-</cap:parameter>
-</entry>
-<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=KS12663111D1F0.WinterStormWatch.1266313C4E80KS.DDCWSWDDC.b1242bf031e592ce33d48bfd58f6515e</id>
 <updated>2023-01-19T15:56:00-06:00</updated>
 <published>2023-01-19T15:56:00-06:00</published>
@@ -2155,38 +2189,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value></value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=KY12663111C2B4.SevereThunderstormWatch.1266311DCA00KY.ILNWCNILN.8425f1097d09e8f4a29e19ce0fc3dba4</id>
-<updated>2023-01-19T16:17:00-05:00</updated>
-<published>2023-01-19T16:17:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Severe Thunderstorm Watch issued January 19 at 4:17PM EST until January 19 at 7:00PM EST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=KY12663111C2B4.SevereThunderstormWatch.1266311DCA00KY.ILNWCNILN.8425f1097d09e8f4a29e19ce0fc3dba4"/>
-<summary>SEVERE THUNDERSTORM WATCH 26 REMAINS VALID UNTIL 7 PM EST THIS EVENING FOR THE FOLLOWING AREAS IN KENTUCKY THIS WATCH INCLUDES 3 COUNTIES IN NORTHERN KENTUCKY BOONE CAMPBELL KENTON IN OHIO THIS WATCH INCLUDES 32 COUNTIES</summary>
-<cap:event>Severe Thunderstorm Watch</cap:event>
-<cap:effective>2023-01-19T16:17:00-05:00</cap:effective>
-<cap:expires>2023-01-19T19:00:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Severe</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Boone; Campbell; Kenton</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>021015 021037 021117</value>
-<valueName>UGC</valueName>
-<value>KYC015 KYC037 KYC117</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KILN.SV.A.0026.000000T0000Z-230120T0000Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -3027,6 +3029,71 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=MN12663111E514.WinterWeatherAdvisory.1266311DCA00MN.DLHWSWDLH.3610d1b7a463b1afc4636dcc71918cef</id>
+<updated>2023-01-19T16:05:00-06:00</updated>
+<published>2023-01-19T16:05:00-06:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Winter Weather Advisory issued January 19 at 4:05PM CST until January 19 at 6:00PM CST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MN12663111E514.WinterWeatherAdvisory.1266311DCA00MN.DLHWSWDLH.3610d1b7a463b1afc4636dcc71918cef"/>
+<summary>...WINTER WEATHER ADVISORY IN EFFECT UNTIL 6 PM CST THIS EVENING... * WHAT...Additional snow accumulations of up to one inch. * WHERE...Southern Lake County. * WHEN...Until 6 PM CST this evening. * IMPACTS...Plan on slippery road conditions. The hazardous</summary>
+<cap:event>Winter Weather Advisory</cap:event>
+<cap:effective>2023-01-19T16:05:00-06:00</cap:effective>
+<cap:expires>2023-01-19T18:00:00-06:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Southern Lake, North Shore</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>027075</value>
+<valueName>UGC</valueName>
+<value>MNZ020</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.EXP.KDLH.WW.Y.0006.000000T0000Z-230119T2200Z/
+/O.NEW.KDLH.WW.Y.0007.230119T2205Z-230120T0000Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=MN12663111E514.WinterWeatherAdvisory.1266311DCA00MN.DLHWSWDLH.a0560e2c9524291d8a4cab8bfba119a6</id>
+<updated>2023-01-19T16:05:00-06:00</updated>
+<published>2023-01-19T16:05:00-06:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Winter Weather Advisory issued January 19 at 4:05PM CST until January 19 at 6:00PM CST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MN12663111E514.WinterWeatherAdvisory.1266311DCA00MN.DLHWSWDLH.a0560e2c9524291d8a4cab8bfba119a6"/>
+<summary>...WINTER WEATHER ADVISORY REMAINS IN EFFECT UNTIL 6 PM CST THIS EVENING... * WHAT...Additional snow accumulations of 1 to 3 inches. Winds gusting as high as 35 mph. * WHERE...In Minnesota, Carlton and South St. Louis County. In Wisconsin, Douglas County. This includes the Tribal Lands of</summary>
+<cap:event>Winter Weather Advisory</cap:event>
+<cap:effective>2023-01-19T16:05:00-06:00</cap:effective>
+<cap:expires>2023-01-19T18:00:00-06:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Carlton, South St. Louis</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>027017 027137</value>
+<valueName>UGC</valueName>
+<value>MNZ037</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KDLH.WW.Y.0006.000000T0000Z-230120T0000Z/</value>
+</cap:parameter>
+</entry>
+<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=MN1266311134E8.SpecialWeatherStatement.1266311DCA00MN.ABRSPSABR.7a8407883c2dda9174719b443fd7e653</id>
 <updated>2023-01-19T11:54:00-06:00</updated>
 <published>2023-01-19T11:54:00-06:00</published>
@@ -3088,38 +3155,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value></value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=MN1266311108C4.WinterWeatherAdvisory.1266311DCA00MN.DLHWSWDLH.a0560e2c9524291d8a4cab8bfba119a6</id>
-<updated>2023-01-19T10:41:00-06:00</updated>
-<published>2023-01-19T10:41:00-06:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Winter Weather Advisory issued January 19 at 10:41AM CST until January 19 at 6:00PM CST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MN1266311108C4.WinterWeatherAdvisory.1266311DCA00MN.DLHWSWDLH.a0560e2c9524291d8a4cab8bfba119a6"/>
-<summary>...WINTER WEATHER ADVISORY REMAINS IN EFFECT UNTIL 6 PM CST THIS EVENING... * WHAT...Snow. Additional snow accumulations of 1 to 3 inches. Winds gusting as high as 35 mph. * WHERE...In Minnesota, Carlton and South St. Louis County. In Wisconsin, Douglas County. This includes the Tribal Lands of</summary>
-<cap:event>Winter Weather Advisory</cap:event>
-<cap:effective>2023-01-19T10:41:00-06:00</cap:effective>
-<cap:expires>2023-01-19T18:00:00-06:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Carlton, South St. Louis</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>027017 027137</value>
-<valueName>UGC</valueName>
-<value>MNZ037</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KDLH.WW.Y.0006.000000T0000Z-230120T0000Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -4343,163 +4378,131 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=OH12663111D1F0.SevereWeatherStatement.1266311DCA00OH.CLESVSCLE.d8b640fe036a8f70d093b6ef187dc95f</id>
-<updated>2023-01-19T16:56:00-05:00</updated>
-<published>2023-01-19T16:56:00-05:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=OH12663111ED48.SevereThunderstormWarning.12663112100COH.CLESVRCLE.37455eb4c7babd01e06f7404dda9216d</id>
+<updated>2023-01-19T17:26:00-05:00</updated>
+<published>2023-01-19T17:26:00-05:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Severe Weather Statement issued January 19 at 4:56PM EST until January 19 at 7:00PM EST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=OH12663111D1F0.SevereWeatherStatement.1266311DCA00OH.CLESVSCLE.d8b640fe036a8f70d093b6ef187dc95f"/>
-<summary>...THE SEVERE THUNDERSTORM WARNING FOR SOUTHERN WOOD AND NORTHWESTERN HANCOCK COUNTIES WILL EXPIRE AT 500 PM EST... The storm which prompted the warning has weakened below severe limits, and no longer poses an immediate threat to life or property. Therefore, the warning will be allowed to expire. However gusty winds are still possible with this thunderstorm.</summary>
-<cap:event>Severe Weather Statement</cap:event>
-<cap:effective>2023-01-19T16:56:00-05:00</cap:effective>
-<cap:expires>2023-01-19T19:00:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Immediate</cap:urgency>
-<cap:severity>Severe</cap:severity>
-<cap:certainty>Observed</cap:certainty>
-<cap:areaDesc>Hancock; Wood</cap:areaDesc>
-<cap:polygon>40.98,-83.69 41.11,-83.87 41.43,-83.7 41.26,-83.46 41.25,-83.44 40.98,-83.69</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>039063 039173</value>
-<valueName>UGC</valueName>
-<value>OHC063 OHC173</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.EXP.KCLE.SV.W.0002.000000T0000Z-230119T2200Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=OH12663111D0C4.SevereThunderstormWarning.12663111EED8OH.ILNSVSILN.54337d85a94db9dfa05ee2b35f911a1c</id>
-<updated>2023-01-19T16:53:00-05:00</updated>
-<published>2023-01-19T16:53:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Severe Thunderstorm Warning issued January 19 at 4:53PM EST until January 19 at 5:30PM EST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=OH12663111D0C4.SevereThunderstormWarning.12663111EED8OH.ILNSVSILN.54337d85a94db9dfa05ee2b35f911a1c"/>
-<summary>...A SEVERE THUNDERSTORM WARNING REMAINS IN EFFECT UNTIL 530 PM EST FOR CHAMPAIGN...SOUTHEASTERN LOGAN AND NORTHEASTERN CLARK COUNTIES IN WEST CENTRAL OHIO...NORTH CENTRAL MADISON AND SOUTHWESTERN UNION COUNTIES IN CENTRAL OHIO... At 453 PM EST, a severe thunderstorm was located near Urbana, moving northeast at 45 mph.</summary>
+<title>Severe Thunderstorm Warning issued January 19 at 5:26PM EST until January 19 at 6:15PM EST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=OH12663111ED48.SevereThunderstormWarning.12663112100COH.CLESVRCLE.37455eb4c7babd01e06f7404dda9216d"/>
+<summary>The National Weather Service in Cleveland has issued a * Severe Thunderstorm Warning for... Huron County in north central Ohio... Eastern Seneca County in northwestern Ohio... Erie County in north central Ohio... Southeastern Sandusky County in northwestern Ohio...</summary>
 <cap:event>Severe Thunderstorm Warning</cap:event>
-<cap:effective>2023-01-19T16:53:00-05:00</cap:effective>
-<cap:expires>2023-01-19T17:30:00-05:00</cap:expires>
+<cap:effective>2023-01-19T17:26:00-05:00</cap:effective>
+<cap:expires>2023-01-19T18:15:00-05:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
 <cap:category>Met</cap:category>
 <cap:urgency>Immediate</cap:urgency>
 <cap:severity>Severe</cap:severity>
 <cap:certainty>Observed</cap:certainty>
-<cap:areaDesc>Champaign; Clark; Logan; Madison; Union</cap:areaDesc>
-<cap:polygon>39.84,-83.82 40.24,-83.85 40.37,-83.33 40.02,-83.33 39.84,-83.82</cap:polygon>
+<cap:areaDesc>Erie; Huron; Sandusky; Seneca</cap:areaDesc>
+<cap:polygon>41.21,-83.28 41.5,-82.63 41.45,-82.56 41.42,-82.49 41.46,-82.4 41.36,-82.34 41.16,-82.35 40.99,-83.14 41.21,-83.28</cap:polygon>
 <cap:geocode>
 <valueName>FIPS6</valueName>
-<value>039021 039023 039091 039097 039159</value>
+<value>039043 039077 039143 039147</value>
 <valueName>UGC</valueName>
-<value>OHC021 OHC023 OHC091 OHC097 OHC159</value>
+<value>OHC043 OHC077 OHC143 OHC147</value>
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
-<value>/O.CON.KILN.SV.W.0009.000000T0000Z-230119T2230Z/</value>
+<value>/O.NEW.KCLE.SV.W.0003.230119T2226Z-230119T2315Z/</value>
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=OH12663111D0C4.SevereWeatherStatement.1266311DCA00OH.ILNSVSILN.fed98831f43acc6136a3b22eb15a6530</id>
-<updated>2023-01-19T16:53:00-05:00</updated>
-<published>2023-01-19T16:53:00-05:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=OH12663111E640.SpecialWeatherStatement.12663111F4B4OH.CLESPSCLE.55fed6745d1947f3f6cc9287226d765b</id>
+<updated>2023-01-19T17:08:00-05:00</updated>
+<published>2023-01-19T17:08:00-05:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Severe Weather Statement issued January 19 at 4:53PM EST until January 19 at 7:00PM EST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=OH12663111D0C4.SevereWeatherStatement.1266311DCA00OH.ILNSVSILN.fed98831f43acc6136a3b22eb15a6530"/>
-<summary>...A SEVERE THUNDERSTORM WARNING REMAINS IN EFFECT UNTIL 530 PM EST FOR CHAMPAIGN...SOUTHEASTERN LOGAN AND NORTHEASTERN CLARK COUNTIES IN WEST CENTRAL OHIO...NORTH CENTRAL MADISON AND SOUTHWESTERN UNION COUNTIES IN CENTRAL OHIO... At 453 PM EST, a severe thunderstorm was located near Urbana, moving northeast at 45 mph.</summary>
-<cap:event>Severe Weather Statement</cap:event>
-<cap:effective>2023-01-19T16:53:00-05:00</cap:effective>
+<title>Special Weather Statement issued January 19 at 5:08PM EST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=OH12663111E640.SpecialWeatherStatement.12663111F4B4OH.CLESPSCLE.55fed6745d1947f3f6cc9287226d765b"/>
+<summary>...A strong thunderstorm will impact portions of Ottawa, western Sandusky, eastern Wood and northeastern Lucas Counties through 545 PM EST... At 506 PM EST, Doppler radar was tracking strong thunderstorms near Elmore and Bowling Green moving northeast at 20 mph. HAZARD...Wind gusts up to 50 mph and penny size hail.</summary>
+<cap:event>Special Weather Statement</cap:event>
+<cap:effective>2023-01-19T17:08:00-05:00</cap:effective>
+<cap:expires>2023-01-19T17:45:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Observed</cap:certainty>
+<cap:areaDesc>Lucas; Ottawa; Sandusky; Wood</cap:areaDesc>
+<cap:polygon>41.42,-83.71 41.56,-83.46 41.69,-83.31 41.66,-83.25 41.64,-83.23 41.62,-83.11 41.6,-83.07 41.56,-83.03 41.31,-83.27 41.17,-83.72 41.42,-83.71</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>039095 039123 039143 039173</value>
+<valueName>UGC</valueName>
+<value>OHZ003 OHZ006 OHZ007 OHZ008</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value></value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=OH12663111E5DC.SevereThunderstormWatch.1266311DCA00OH.ILNWCNILN.b5127d592da105ace96d7246e767b0db</id>
+<updated>2023-01-19T17:07:00-05:00</updated>
+<published>2023-01-19T17:07:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Severe Thunderstorm Watch issued January 19 at 5:07PM EST until January 19 at 7:00PM EST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=OH12663111E5DC.SevereThunderstormWatch.1266311DCA00OH.ILNWCNILN.b5127d592da105ace96d7246e767b0db"/>
+<summary>SEVERE THUNDERSTORM WATCH 26 REMAINS VALID UNTIL 7 PM EST THIS EVENING FOR THE FOLLOWING AREAS IN OHIO THIS WATCH INCLUDES 21 COUNTIES IN CENTRAL OHIO DELAWARE FAIRFIELD FAYETTE OH FRANKLIN OH HOCKING LICKING</summary>
+<cap:event>Severe Thunderstorm Watch</cap:event>
+<cap:effective>2023-01-19T17:07:00-05:00</cap:effective>
 <cap:expires>2023-01-19T19:00:00-05:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
 <cap:category>Met</cap:category>
-<cap:urgency>Immediate</cap:urgency>
+<cap:urgency>Expected</cap:urgency>
 <cap:severity>Severe</cap:severity>
-<cap:certainty>Observed</cap:certainty>
-<cap:areaDesc>Champaign; Clark; Logan; Madison; Union</cap:areaDesc>
-<cap:polygon>39.84,-83.82 40.24,-83.85 40.37,-83.33 40.02,-83.33 39.84,-83.82</cap:polygon>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Adams; Brown; Champaign; Clark; Clinton; Delaware; Fairfield; Fayette; Franklin; Greene; Hardin; Highland; Hocking; Licking; Logan; Madison; Pickaway; Pike; Ross; Scioto; Union</cap:areaDesc>
+<cap:polygon></cap:polygon>
 <cap:geocode>
 <valueName>FIPS6</valueName>
-<value>039021 039023 039091 039097 039159</value>
+<value>039001 039015 039021 039023 039027 039041 039045 039047 039049 039057 039065 039071 039073 039089 039091 039097 039129 039131 039141 039145 039159</value>
 <valueName>UGC</valueName>
-<value>OHC021 OHC023 OHC091 OHC097 OHC159</value>
+<value>OHC001 OHC015 OHC021 OHC023 OHC027 OHC041 OHC045 OHC047 OHC049 OHC057 OHC065 OHC071 OHC073 OHC089 OHC091 OHC097 OHC129 OHC131 OHC141 OHC145 OHC159</value>
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
-<value>/O.CON.KILN.SV.W.0009.000000T0000Z-230119T2230Z/</value>
+<value>/O.CON.KILN.SV.A.0026.000000T0000Z-230120T0000Z/</value>
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=OH12663111D060.SevereThunderstormWarning.12663111E8FCOH.ILNSVSILN.c346608c80e88d40a6354c5902342aa0</id>
-<updated>2023-01-19T16:52:00-05:00</updated>
-<published>2023-01-19T16:52:00-05:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=OH12663111E514.SpecialWeatherStatement.12663111F4B4OH.CLESPSCLE.fc1658405022c37cae7b35dc8278694b</id>
+<updated>2023-01-19T17:05:00-05:00</updated>
+<published>2023-01-19T17:05:00-05:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Severe Thunderstorm Warning issued January 19 at 4:52PM EST until January 19 at 5:15PM EST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=OH12663111D060.SevereThunderstormWarning.12663111E8FCOH.ILNSVSILN.c346608c80e88d40a6354c5902342aa0"/>
-<summary>...A SEVERE THUNDERSTORM WARNING REMAINS IN EFFECT UNTIL 515 PM EST FOR NORTHWESTERN FAYETTE...NORTHERN CLINTON...SOUTHEASTERN CLARK... EASTERN GREENE AND SOUTHWESTERN MADISON COUNTIES... At 451 PM EST, a severe thunderstorm was located near Wilmington, moving east at 35 mph. HAZARD...60 mph wind gusts.</summary>
-<cap:event>Severe Thunderstorm Warning</cap:event>
-<cap:effective>2023-01-19T16:52:00-05:00</cap:effective>
-<cap:expires>2023-01-19T17:15:00-05:00</cap:expires>
+<title>Special Weather Statement issued January 19 at 5:05PM EST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=OH12663111E514.SpecialWeatherStatement.12663111F4B4OH.CLESPSCLE.fc1658405022c37cae7b35dc8278694b"/>
+<summary>...Strong thunderstorms will impact portions of Richland, southwestern Huron, Seneca, Marion, southwestern Ashland, Wyandot, Morrow, southeastern Sandusky, Crawford and Knox Counties through 545 PM EST... At 505 PM EST, Doppler radar was tracking strong thunderstorms along a line extending from near Vanlue to 8 miles northeast of Marion to</summary>
+<cap:event>Special Weather Statement</cap:event>
+<cap:effective>2023-01-19T17:05:00-05:00</cap:effective>
+<cap:expires>2023-01-19T17:45:00-05:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
 <cap:category>Met</cap:category>
-<cap:urgency>Immediate</cap:urgency>
-<cap:severity>Severe</cap:severity>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
 <cap:certainty>Observed</cap:certainty>
-<cap:areaDesc>Clark; Clinton; Fayette; Greene; Madison</cap:areaDesc>
-<cap:polygon>39.96,-83.52 39.45,-83.6 39.41,-83.97 39.83,-83.92 39.96,-83.52</cap:polygon>
+<cap:areaDesc>Ashland; Crawford; Huron; Knox; Marion; Morrow; Richland; Seneca; Wyandot</cap:areaDesc>
+<cap:polygon>40.24,-82.48 40.27,-82.48 40.27,-82.74 40.35,-82.75 40.36,-82.93 40.42,-82.94 40.44,-83.22 40.58,-83.25 40.99,-83.46 41,-83.42 41.07,-83.42 41.32,-82.87 40.86,-82.35 40.24,-82.24 40.24,-82.48</cap:polygon>
 <cap:geocode>
 <valueName>FIPS6</valueName>
-<value>039023 039027 039047 039057 039097</value>
+<value>039005 039033 039077 039083 039101 039117 039139 039147 039175</value>
 <valueName>UGC</valueName>
-<value>OHC023 OHC027 OHC047 OHC057 OHC097</value>
+<value>OHZ018 OHZ019 OHZ027 OHZ028 OHZ029 OHZ030 OHZ036 OHZ037 OHZ047</value>
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
-<value>/O.CON.KILN.SV.W.0008.000000T0000Z-230119T2215Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=OH12663111D060.SevereWeatherStatement.1266311DCA00OH.ILNSVSILN.4934fe0118fe7b987e20ae7f843b252e</id>
-<updated>2023-01-19T16:52:00-05:00</updated>
-<published>2023-01-19T16:52:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Severe Weather Statement issued January 19 at 4:52PM EST until January 19 at 7:00PM EST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=OH12663111D060.SevereWeatherStatement.1266311DCA00OH.ILNSVSILN.4934fe0118fe7b987e20ae7f843b252e"/>
-<summary>...A SEVERE THUNDERSTORM WARNING REMAINS IN EFFECT UNTIL 515 PM EST FOR NORTHWESTERN FAYETTE...NORTHERN CLINTON...SOUTHEASTERN CLARK... EASTERN GREENE AND SOUTHWESTERN MADISON COUNTIES... At 451 PM EST, a severe thunderstorm was located near Wilmington, moving east at 35 mph. HAZARD...60 mph wind gusts.</summary>
-<cap:event>Severe Weather Statement</cap:event>
-<cap:effective>2023-01-19T16:52:00-05:00</cap:effective>
-<cap:expires>2023-01-19T19:00:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Immediate</cap:urgency>
-<cap:severity>Severe</cap:severity>
-<cap:certainty>Observed</cap:certainty>
-<cap:areaDesc>Clinton; Fayette; Greene</cap:areaDesc>
-<cap:polygon>39.96,-83.52 39.45,-83.6 39.41,-83.97 39.83,-83.92 39.96,-83.52</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>039027 039047 039057</value>
-<valueName>UGC</valueName>
-<value>OHC027 OHC047 OHC057</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KILN.SV.W.0008.000000T0000Z-230119T2215Z/</value>
+<value></value>
 </cap:parameter>
 </entry>
 <entry>
@@ -4567,102 +4570,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=OH12663111CB4C.SevereWeatherStatement.1266311DCA00OH.ILNSVSILN.f9d3d176e796aa4966a443cdfb1a2797</id>
-<updated>2023-01-19T16:39:00-05:00</updated>
-<published>2023-01-19T16:39:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Severe Weather Statement issued January 19 at 4:39PM EST until January 19 at 7:00PM EST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=OH12663111CB4C.SevereWeatherStatement.1266311DCA00OH.ILNSVSILN.f9d3d176e796aa4966a443cdfb1a2797"/>
-<summary>...A SEVERE THUNDERSTORM WARNING REMAINS IN EFFECT UNTIL 515 PM EST FOR NORTHEASTERN WARREN...NORTHWESTERN FAYETTE...NORTHERN CLINTON... SOUTHEASTERN CLARK...GREENE AND SOUTHWESTERN MADISON COUNTIES... At 439 PM EST, a severe thunderstorm was located near Xenia, moving northeast at 45 mph. HAZARD...60 mph wind gusts.</summary>
-<cap:event>Severe Weather Statement</cap:event>
-<cap:effective>2023-01-19T16:39:00-05:00</cap:effective>
-<cap:expires>2023-01-19T19:00:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Immediate</cap:urgency>
-<cap:severity>Severe</cap:severity>
-<cap:certainty>Observed</cap:certainty>
-<cap:areaDesc>Warren</cap:areaDesc>
-<cap:polygon>39.96,-83.52 39.45,-83.6 39.39,-84.12 39.78,-84.06 39.96,-83.52</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>039165</value>
-<valueName>UGC</valueName>
-<value>OHC165</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KILN.SV.W.0008.000000T0000Z-230119T2215Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=OH12663111C5D4.SpecialWeatherStatement.12663111EED8OH.IWXSPSIWX.0660c8b5526adef8220f541f74f20942</id>
-<updated>2023-01-19T16:25:00-05:00</updated>
-<published>2023-01-19T16:25:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Special Weather Statement issued January 19 at 4:25PM EST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=OH12663111C5D4.SpecialWeatherStatement.12663111EED8OH.IWXSPSIWX.0660c8b5526adef8220f541f74f20942"/>
-<summary>...Strong thunderstorms will impact portions of Defiance, Putnam, eastern Paulding, Henry, southeastern Williams, Allen and Fulton Counties through 530 PM EST... At 424 PM EST, Doppler radar was tracking strong thunderstorms along a line extending from 6 miles northeast of Hicksville to near Bluffton. Movement was north at 55 mph.</summary>
-<cap:event>Special Weather Statement</cap:event>
-<cap:effective>2023-01-19T16:25:00-05:00</cap:effective>
-<cap:expires>2023-01-19T17:30:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Observed</cap:certainty>
-<cap:areaDesc>Allen; Defiance; Fulton; Henry; Paulding; Putnam; Williams</cap:areaDesc>
-<cap:polygon>40.66,-84.16 40.86,-84.34 40.9,-84.34 40.93,-84.4 40.99,-84.4 40.99,-84.45 41.36,-84.78 41.71,-84.34 41.72,-83.88 40.64,-83.88 40.66,-84.16</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>039003 039039 039051 039069 039125 039137 039171</value>
-<valueName>UGC</valueName>
-<value>OHZ001 OHZ002 OHZ004 OHZ005 OHZ015 OHZ016 OHZ025</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value></value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=OH12663111C2B4.SevereThunderstormWatch.1266311DCA00OH.ILNWCNILN.31633af421ac302468c714dff5b27faa</id>
-<updated>2023-01-19T16:17:00-05:00</updated>
-<published>2023-01-19T16:17:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Severe Thunderstorm Watch issued January 19 at 4:17PM EST until January 19 at 7:00PM EST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=OH12663111C2B4.SevereThunderstormWatch.1266311DCA00OH.ILNWCNILN.31633af421ac302468c714dff5b27faa"/>
-<summary>SEVERE THUNDERSTORM WATCH 26 REMAINS VALID UNTIL 7 PM EST THIS EVENING FOR THE FOLLOWING AREAS IN KENTUCKY THIS WATCH INCLUDES 3 COUNTIES IN NORTHERN KENTUCKY BOONE CAMPBELL KENTON IN OHIO THIS WATCH INCLUDES 32 COUNTIES</summary>
-<cap:event>Severe Thunderstorm Watch</cap:event>
-<cap:effective>2023-01-19T16:17:00-05:00</cap:effective>
-<cap:expires>2023-01-19T19:00:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Severe</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Adams; Auglaize; Brown; Butler; Champaign; Clark; Clermont; Clinton; Darke; Delaware; Fairfield; Fayette; Franklin; Greene; Hamilton; Hardin; Highland; Hocking; Licking; Logan; Madison; Mercer; Miami; Montgomery; Pickaway; Pike; Preble; Ross; Scioto; Shelby; Union; Warren</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>039001 039011 039015 039017 039021 039023 039025 039027 039037 039041 039045 039047 039049 039057 039061 039065 039071 039073 039089 039091 039097 039107 039109 039113 039129 039131 039135 039141 039145 039149 039159 039165</value>
-<valueName>UGC</valueName>
-<value>OHC001 OHC011 OHC015 OHC017 OHC021 OHC023 OHC025 OHC027 OHC037 OHC041 OHC045 OHC047 OHC049 OHC057 OHC061 OHC065 OHC071 OHC073 OHC089 OHC091 OHC097 OHC107 OHC109 OHC113 OHC129 OHC131 OHC135 OHC141 OHC145 OHC149 OHC159 OHC165</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KILN.SV.A.0026.000000T0000Z-230120T0000Z/</value>
-</cap:parameter>
-</entry>
-<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=OH126631119F8C.WindAdvisory.1266311E1820OH.ILNNPWILN.ee4d5ad24795d69042d967200975043b</id>
 <updated>2023-01-19T15:27:00-05:00</updated>
 <published>2023-01-19T15:27:00-05:00</published>
@@ -4724,38 +4631,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value>/O.EXT.KILN.WI.Y.0001.000000T0000Z-230120T0200Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=OH126631115B30.SevereThunderstormWatch.1266311DCA00OH.WNSWOU6.7beab7fd0430d4789b3c4060a10d8775</id>
-<updated>2023-01-19T13:52:00-05:00</updated>
-<published>2023-01-19T13:52:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Severe Thunderstorm Watch issued January 19 at 1:52PM EST until January 19 at 7:00PM EST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=OH126631115B30.SevereThunderstormWatch.1266311DCA00OH.WNSWOU6.7beab7fd0430d4789b3c4060a10d8775"/>
-<summary>SEVERE THUNDERSTORM WATCH 26 IS IN EFFECT UNTIL 700 PM EST FOR THE FOLLOWING LOCATIONS OH . OHIO COUNTIES INCLUDED ARE ADAMS ALLEN ASHLAND AUGLAIZE BROWN BUTLER</summary>
-<cap:event>Severe Thunderstorm Watch</cap:event>
-<cap:effective>2023-01-19T13:52:00-05:00</cap:effective>
-<cap:expires>2023-01-19T19:00:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Severe</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Allen; Paulding; Putnam; Van Wert</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>039003 039125 039137 039161</value>
-<valueName>UGC</valueName>
-<value>OHC003 OHC125 OHC137 OHC161</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.NEW.KWNS.SV.A.0026.230119T1855Z-230120T0000Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -5820,36 +5695,131 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=WA1266311041F0.FloodWarning.1266311EE46CWA.SEWFLSSEW.e7db28c936c8eaf73da1e0b1bf617966</id>
-<updated>2023-01-19T03:32:00-08:00</updated>
-<published>2023-01-19T03:32:00-08:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=WI12663111E514.WinterWeatherAdvisory.1266311DCA00WI.DLHWSWDLH.29cd62e3e3716140cbfb237f78823d46</id>
+<updated>2023-01-19T16:05:00-06:00</updated>
+<published>2023-01-19T16:05:00-06:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Flood Warning issued January 19 at 3:32AM PST until January 19 at 11:23PM PST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=WA1266311041F0.FloodWarning.1266311EE46CWA.SEWFLSSEW.e7db28c936c8eaf73da1e0b1bf617966"/>
-<summary>...The Flood Warning continues for the following rivers in Washington... Skokomish River At Potlatch affecting Mason County. .The Skokomish River will continue to slowly recede today. ...FLOOD WARNING REMAINS IN EFFECT UNTIL LATE THIS EVENING... * WHAT...Minor flooding is occurring and minor flooding is forecast.</summary>
-<cap:event>Flood Warning</cap:event>
-<cap:effective>2023-01-19T03:32:00-08:00</cap:effective>
-<cap:expires>2023-01-19T23:23:00-08:00</cap:expires>
+<title>Winter Weather Advisory issued January 19 at 4:05PM CST until January 19 at 6:00PM CST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=WI12663111E514.WinterWeatherAdvisory.1266311DCA00WI.DLHWSWDLH.29cd62e3e3716140cbfb237f78823d46"/>
+<summary>...WINTER WEATHER ADVISORY REMAINS IN EFFECT UNTIL 6 PM CST THIS EVENING... * WHAT...Additional snow accumulations of 1 to 3 inches. Winds gusting as high as 35 mph. * WHERE...In Minnesota, Carlton and South St. Louis County. In Wisconsin, Douglas County. This includes the Tribal Lands of</summary>
+<cap:event>Winter Weather Advisory</cap:event>
+<cap:effective>2023-01-19T16:05:00-06:00</cap:effective>
+<cap:expires>2023-01-19T18:00:00-06:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Douglas</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>055031</value>
+<valueName>UGC</valueName>
+<value>WIZ001</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KDLH.WW.Y.0006.000000T0000Z-230120T0000Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=WI12663111E514.WinterWeatherAdvisory.1266311DCA00WI.DLHWSWDLH.06ebc51c34211122719242f126ddeb58</id>
+<updated>2023-01-19T16:05:00-06:00</updated>
+<published>2023-01-19T16:05:00-06:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Winter Weather Advisory issued January 19 at 4:05PM CST until January 19 at 6:00PM CST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=WI12663111E514.WinterWeatherAdvisory.1266311DCA00WI.DLHWSWDLH.06ebc51c34211122719242f126ddeb58"/>
+<summary>...WINTER WEATHER ADVISORY REMAINS IN EFFECT UNTIL 6 PM CST THIS EVENING... * WHAT...Additional snow accumulations of 1 to 3 inches. * WHERE...Burnett and Washburn Counties. * WHEN...Until 6 PM CST this evening. * IMPACTS...Plan on slippery road conditions. The hazardous</summary>
+<cap:event>Winter Weather Advisory</cap:event>
+<cap:effective>2023-01-19T16:05:00-06:00</cap:effective>
+<cap:expires>2023-01-19T18:00:00-06:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Burnett; Washburn</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>055013 055129</value>
+<valueName>UGC</valueName>
+<value>WIZ006 WIZ007</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KDLH.WW.Y.0006.000000T0000Z-230120T0000Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=WI12663111E514.WinterWeatherAdvisory.1266311DCA00WI.DLHWSWDLH.3cd608810bc6f98858eee1d350c0c870</id>
+<updated>2023-01-19T16:05:00-06:00</updated>
+<published>2023-01-19T16:05:00-06:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Winter Weather Advisory issued January 19 at 4:05PM CST until January 19 at 6:00PM CST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=WI12663111E514.WinterWeatherAdvisory.1266311DCA00WI.DLHWSWDLH.3cd608810bc6f98858eee1d350c0c870"/>
+<summary>...WINTER WEATHER ADVISORY REMAINS IN EFFECT UNTIL 6 PM CST THIS EVENING... * WHAT...Additional snow accumulations of 1 to 3 inches. * WHERE...Sawyer and Price Counties. This includes the Tribal Lands of the Lac Courte Oreilles Reservation. * WHEN...Until 6 PM CST this evening.</summary>
+<cap:event>Winter Weather Advisory</cap:event>
+<cap:effective>2023-01-19T16:05:00-06:00</cap:effective>
+<cap:expires>2023-01-19T18:00:00-06:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Price; Sawyer</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>055099 055113</value>
+<valueName>UGC</valueName>
+<value>WIZ008 WIZ009</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KDLH.WW.Y.0006.000000T0000Z-230120T0000Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=WI12663111E514.WinterStormWarning.1266311EB460WI.DLHWSWDLH.c37adc7eb4c15db7839ceacf0909435a</id>
+<updated>2023-01-19T16:05:00-06:00</updated>
+<published>2023-01-19T16:05:00-06:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Winter Storm Warning issued January 19 at 4:05PM CST until January 20 at 12:00AM CST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=WI12663111E514.WinterStormWarning.1266311EB460WI.DLHWSWDLH.c37adc7eb4c15db7839ceacf0909435a"/>
+<summary>...WINTER STORM WARNING REMAINS IN EFFECT UNTIL MIDNIGHT CST TONIGHT... * WHAT...Heavy lake effect snow. Additional snow accumulations of 4 to 6 inches. Winds gusting as high as 35 mph. * WHERE...Bayfield, Ashland and Iron Counties. This includes the Tribal Lands of the Red Cliff Band and the Bad River</summary>
+<cap:event>Winter Storm Warning</cap:event>
+<cap:effective>2023-01-19T16:05:00-06:00</cap:effective>
+<cap:expires>2023-01-20T00:00:00-06:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
 <cap:category>Met</cap:category>
 <cap:urgency>Expected</cap:urgency>
 <cap:severity>Moderate</cap:severity>
 <cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Mason</cap:areaDesc>
-<cap:polygon>47.44,-123.26 47.33,-123.21 47.36,-123.17 47.33,-123.08 47.21,-123.21 47.38,-123.4 47.44,-123.26</cap:polygon>
+<cap:areaDesc>Ashland; Bayfield; Iron</cap:areaDesc>
+<cap:polygon></cap:polygon>
 <cap:geocode>
 <valueName>FIPS6</valueName>
-<value>053045</value>
+<value>055003 055007 055051</value>
 <valueName>UGC</valueName>
-<value>WAC045</value>
+<value>WIZ002 WIZ003 WIZ004</value>
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
-<value>/O.CON.KSEW.FL.W.0002.000000T0000Z-230120T0723Z/
-/SRPW1.1.ER.230112T1333Z.230113T1000Z.230119T2223Z.NO/</value>
+<value>/O.CON.KDLH.WS.W.0002.000000T0000Z-230120T0600Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -5882,134 +5852,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value>/O.CON.KGRB.WS.W.0001.000000T0000Z-230120T0000Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=WI1266311108C4.WinterWeatherAdvisory.1266311DCA00WI.DLHWSWDLH.29cd62e3e3716140cbfb237f78823d46</id>
-<updated>2023-01-19T10:41:00-06:00</updated>
-<published>2023-01-19T10:41:00-06:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Winter Weather Advisory issued January 19 at 10:41AM CST until January 19 at 6:00PM CST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=WI1266311108C4.WinterWeatherAdvisory.1266311DCA00WI.DLHWSWDLH.29cd62e3e3716140cbfb237f78823d46"/>
-<summary>...WINTER WEATHER ADVISORY REMAINS IN EFFECT UNTIL 6 PM CST THIS EVENING... * WHAT...Snow. Additional snow accumulations of 1 to 3 inches. Winds gusting as high as 35 mph. * WHERE...In Minnesota, Carlton and South St. Louis County. In Wisconsin, Douglas County. This includes the Tribal Lands of</summary>
-<cap:event>Winter Weather Advisory</cap:event>
-<cap:effective>2023-01-19T10:41:00-06:00</cap:effective>
-<cap:expires>2023-01-19T18:00:00-06:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Douglas</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>055031</value>
-<valueName>UGC</valueName>
-<value>WIZ001</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KDLH.WW.Y.0006.000000T0000Z-230120T0000Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=WI1266311108C4.WinterWeatherAdvisory.1266311DCA00WI.DLHWSWDLH.06ebc51c34211122719242f126ddeb58</id>
-<updated>2023-01-19T10:41:00-06:00</updated>
-<published>2023-01-19T10:41:00-06:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Winter Weather Advisory issued January 19 at 10:41AM CST until January 19 at 6:00PM CST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=WI1266311108C4.WinterWeatherAdvisory.1266311DCA00WI.DLHWSWDLH.06ebc51c34211122719242f126ddeb58"/>
-<summary>...WINTER WEATHER ADVISORY REMAINS IN EFFECT UNTIL 6 PM CST THIS EVENING... * WHAT...Snow. Additional snow accumulations of 1 to 3 inches. * WHERE...Burnett and Washburn Counties. * WHEN...Until 6 PM CST this evening. * IMPACTS...Plan on slippery road conditions. The hazardous</summary>
-<cap:event>Winter Weather Advisory</cap:event>
-<cap:effective>2023-01-19T10:41:00-06:00</cap:effective>
-<cap:expires>2023-01-19T18:00:00-06:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Burnett; Washburn</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>055013 055129</value>
-<valueName>UGC</valueName>
-<value>WIZ006 WIZ007</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KDLH.WW.Y.0006.000000T0000Z-230120T0000Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=WI1266311108C4.WinterWeatherAdvisory.1266311DCA00WI.DLHWSWDLH.3cd608810bc6f98858eee1d350c0c870</id>
-<updated>2023-01-19T10:41:00-06:00</updated>
-<published>2023-01-19T10:41:00-06:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Winter Weather Advisory issued January 19 at 10:41AM CST until January 19 at 6:00PM CST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=WI1266311108C4.WinterWeatherAdvisory.1266311DCA00WI.DLHWSWDLH.3cd608810bc6f98858eee1d350c0c870"/>
-<summary>...WINTER WEATHER ADVISORY REMAINS IN EFFECT UNTIL 6 PM CST THIS EVENING... * WHAT...Snow. Additional snow accumulations of 1 to 3 inches. * WHERE...Sawyer and Price Counties. This includes the Tribal Lands of the Lac Courte Oreilles Reservation. * WHEN...Until 6 PM CST this evening.</summary>
-<cap:event>Winter Weather Advisory</cap:event>
-<cap:effective>2023-01-19T10:41:00-06:00</cap:effective>
-<cap:expires>2023-01-19T18:00:00-06:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Price; Sawyer</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>055099 055113</value>
-<valueName>UGC</valueName>
-<value>WIZ008 WIZ009</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KDLH.WW.Y.0006.000000T0000Z-230120T0000Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=WI1266311108C4.WinterStormWarning.1266311EB460WI.DLHWSWDLH.c37adc7eb4c15db7839ceacf0909435a</id>
-<updated>2023-01-19T10:41:00-06:00</updated>
-<published>2023-01-19T10:41:00-06:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Winter Storm Warning issued January 19 at 10:41AM CST until January 20 at 12:00AM CST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=WI1266311108C4.WinterStormWarning.1266311EB460WI.DLHWSWDLH.c37adc7eb4c15db7839ceacf0909435a"/>
-<summary>...WINTER STORM WARNING REMAINS IN EFFECT UNTIL MIDNIGHT CST TONIGHT... * WHAT...Heavy lake effect snow. Additional snow accumulations of 4 to 6 inches. Winds gusting as high as 35 mph. * WHERE...Bayfield, Ashland and Iron Counties. This includes the Tribal Lands of the Bad River Reservation and the Red Cliff</summary>
-<cap:event>Winter Storm Warning</cap:event>
-<cap:effective>2023-01-19T10:41:00-06:00</cap:effective>
-<cap:expires>2023-01-20T00:00:00-06:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Ashland; Bayfield; Iron</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>055003 055007 055051</value>
-<valueName>UGC</valueName>
-<value>WIZ002 WIZ003 WIZ004</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KDLH.WS.W.0002.000000T0000Z-230120T0600Z/</value>
 </cap:parameter>
 </entry>
 <entry>
