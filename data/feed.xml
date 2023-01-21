@@ -16,16 +16,48 @@ xmlns = 'http://www.w3.org/2005/Atom'
 xmlns:cap = 'urn:oasis:names:tc:emergency:cap:1.1'
 xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 >
-<!-- http-date = Sat, 21 Jan 2023 17:30:00 GMT -->
+<!-- http-date = Sat, 21 Jan 2023 17:58:00 GMT -->
 <id>https://alerts.weather.gov/cap/us.php?x=0</id>
 <logo>http://alerts.weather.gov/images/xml_logo.gif</logo>
 <generator>NWS CAP Server</generator>
-<updated>2023-01-21T11:30:00-06:00</updated>
+<updated>2023-01-21T08:58:00-09:00</updated>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
 <title>Current Watches, Warnings and Advisories for the United States Issued by the National Weather Service</title>
 <link href="https://alerts.weather.gov/cap/us.php?x=0"/>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=AK1266312FBAF8.HighWindWarning.1266313D38E0AK.AFCNPWALU.0f4b9f2f4de52949be97da47d3a3f037</id>
+<updated>2023-01-21T08:58:00-09:00</updated>
+<published>2023-01-21T08:58:00-09:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>High Wind Warning issued January 21 at 8:58AM AKST until January 21 at 9:00PM AKST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=AK1266312FBAF8.HighWindWarning.1266313D38E0AK.AFCNPWALU.0f4b9f2f4de52949be97da47d3a3f037"/>
+<summary>...HIGH WIND WARNING NOW IN EFFECT UNTIL 9 PM AKST THIS EVENING... * WHAT...East winds 50 to 60 mph with gusts up to 75 mph. * WHERE...Eastern Aleutians. * WHEN...Nikolski area begins this morning, Unalaska area mid- afternoon. * IMPACTS...High winds may move loose debris, damage property,</summary>
+<cap:event>High Wind Warning</cap:event>
+<cap:effective>2023-01-21T08:58:00-09:00</cap:effective>
+<cap:expires>2023-01-21T21:00:00-09:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Severe</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Eastern Aleutians</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>002016</value>
+<valueName>UGC</valueName>
+<value>AKZ185</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.EXT.PAFC.HW.W.0002.230121T1800Z-230122T0600Z/</value>
+</cap:parameter>
+</entry>
 <entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=AK1266312F5EC8.WindChillAdvisory.1266313D38E0AK.AFGWSWWCZ.8f1b552ff268b6531a593a5fe6d07284</id>
 <updated>2023-01-21T06:22:00-09:00</updated>
@@ -377,38 +409,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value>/O.CON.PAFC.WC.Y.0001.000000T0000Z-230121T2100Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=AK1266312EF6E0.HighWindWarning.1266313D38E0AK.AFCNPWALU.0f4b9f2f4de52949be97da47d3a3f037</id>
-<updated>2023-01-21T03:56:00-09:00</updated>
-<published>2023-01-21T03:56:00-09:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>High Wind Warning issued January 21 at 3:56AM AKST until January 21 at 9:00PM AKST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=AK1266312EF6E0.HighWindWarning.1266313D38E0AK.AFCNPWALU.0f4b9f2f4de52949be97da47d3a3f037"/>
-<summary>...HIGH WIND WARNING REMAINS IN EFFECT FROM 2 PM THIS AFTERNOON TO 9 PM AKST THIS EVENING... * WHAT...East winds 50 to 60 mph with gusts up to 75 mph. * WHERE...Eastern Aleutians. * WHEN...From 2 PM to 9 PM AKST Saturday. * IMPACTS...High winds may move loose debris, damage property,</summary>
-<cap:event>High Wind Warning</cap:event>
-<cap:effective>2023-01-21T03:56:00-09:00</cap:effective>
-<cap:expires>2023-01-21T21:00:00-09:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Severe</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Eastern Aleutians</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>002016</value>
-<valueName>UGC</valueName>
-<value>AKZ185</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.PAFC.HW.W.0002.230121T2300Z-230122T0600Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -1025,6 +1025,136 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=CA1266312FB7D8.DenseFogAdvisory.1266313F34B0CA.HNXNPWHNX.192aee18a9afd741af693213ba0d125b</id>
+<updated>2023-01-21T09:50:00-08:00</updated>
+<published>2023-01-21T09:50:00-08:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Dense Fog Advisory issued January 21 at 9:50AM PST until January 22 at 11:00AM PST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CA1266312FB7D8.DenseFogAdvisory.1266313F34B0CA.HNXNPWHNX.192aee18a9afd741af693213ba0d125b"/>
+<summary>...FREEZE WARNING REMAINS IN EFFECT UNTIL 9 AM PST TUESDAY... ...DENSE FOG ADVISORY IN EFFECT FROM 1 AM TO 11 AM PST SUNDAY... * WHAT...For the Freeze Warning, sub-freezing temperatures as low as 31. For the Dense Fog Advisory, visibility one quarter mile or less in dense fog as low as 200 feet. * WHERE...Los Banos -Dos Palos, Merced -Madera -Mendota,</summary>
+<cap:event>Dense Fog Advisory</cap:event>
+<cap:effective>2023-01-21T09:50:00-08:00</cap:effective>
+<cap:expires>2023-01-22T11:00:00-08:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Buttonwillow - Lost Hills - I5; Caruthers - San Joaquin - Selma; Delano-Wasco-Shafter; Hanford - Corcoran - Lemoore; Los Banos - Dos Palos; Merced - Madera - Mendota; Planada - Le Grand - Snelling; Southeast San Joaquin Valley; Visalia - Porterville - Reedley; West Side of Fresno and Kings Counties</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>006019 006029 006031 006039 006047 006107</value>
+<valueName>UGC</valueName>
+<value>CAZ301 CAZ302 CAZ303 CAZ305 CAZ306 CAZ309 CAZ310 CAZ311 CAZ312 CAZ315</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.NEW.KHNX.FG.Y.0005.230122T0900Z-230122T1900Z/
+/O.CON.KHNX.FZ.W.0002.000000T0000Z-230124T1700Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=CA1266312FB7D8.DenseFogAdvisory.1266313F34B0CA.HNXNPWHNX.3d4bb899d8f07dffe82fb18568cea269</id>
+<updated>2023-01-21T09:50:00-08:00</updated>
+<published>2023-01-21T09:50:00-08:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Dense Fog Advisory issued January 21 at 9:50AM PST until January 22 at 11:00AM PST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CA1266312FB7D8.DenseFogAdvisory.1266313F34B0CA.HNXNPWHNX.3d4bb899d8f07dffe82fb18568cea269"/>
+<summary>...DENSE FOG ADVISORY IN EFFECT FROM 1 AM TO 11 AM PST SUNDAY... * WHAT...Visibility one quarter mile or less in dense fog as low as 200 feet. * WHERE...Fresno-Clovis, Bakersfield and South End San Joaquin Valley. * WHEN...From 1 AM to 11 AM PST Sunday.</summary>
+<cap:event>Dense Fog Advisory</cap:event>
+<cap:effective>2023-01-21T09:50:00-08:00</cap:effective>
+<cap:expires>2023-01-22T11:00:00-08:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Bakersfield; Fresno-Clovis; South End San Joaquin Valley</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>006019 006029</value>
+<valueName>UGC</valueName>
+<value>CAZ307 CAZ314 CAZ316</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.NEW.KHNX.FG.Y.0005.230122T0900Z-230122T1900Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=CA1266312FB7D8.HighWindWatch.1266314DDAB0CA.HNXNPWHNX.7035f172d86a50ad4426fab5e514b544</id>
+<updated>2023-01-21T09:50:00-08:00</updated>
+<published>2023-01-21T09:50:00-08:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>High Wind Watch issued January 21 at 9:50AM PST until January 23 at 7:00AM PST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CA1266312FB7D8.HighWindWatch.1266314DDAB0CA.HNXNPWHNX.7035f172d86a50ad4426fab5e514b544"/>
+<summary>...HIGH WIND WATCH IN EFFECT FROM SUNDAY AFTERNOON THROUGH MONDAY MORNING... * WHAT...North winds 30 to 40 mph with gusts up to 70 mph possible. * WHERE...Yosemite NP outside of the valley, Upper San Joaquin River, Kings Canyon NP, Sequoia NP and South End of the Upper</summary>
+<cap:event>High Wind Watch</cap:event>
+<cap:effective>2023-01-21T09:50:00-08:00</cap:effective>
+<cap:expires>2023-01-23T07:00:00-08:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Future</cap:urgency>
+<cap:severity>Severe</cap:severity>
+<cap:certainty>Possible</cap:certainty>
+<cap:areaDesc>Kings Canyon NP; Sequoia NP; South End of the Upper Sierra; Upper San Joaquin River; Yosemite NP outside of the valley</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>006019 006039 006043 006107 006109</value>
+<valueName>UGC</valueName>
+<value>CAZ323 CAZ326 CAZ328 CAZ330 CAZ331</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.NEW.KHNX.HW.A.0001.230122T2100Z-230123T1500Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=CA1266312FB7D8.FreezeWarning.1266315D6B10CA.HNXNPWHNX.934be10e3ac5d54a409cac3330b750c7</id>
+<updated>2023-01-21T09:50:00-08:00</updated>
+<published>2023-01-21T09:50:00-08:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Freeze Warning issued January 21 at 9:50AM PST until January 24 at 9:00AM PST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CA1266312FB7D8.FreezeWarning.1266315D6B10CA.HNXNPWHNX.934be10e3ac5d54a409cac3330b750c7"/>
+<summary>...FREEZE WARNING REMAINS IN EFFECT UNTIL 9 AM PST TUESDAY... ...DENSE FOG ADVISORY IN EFFECT FROM 1 AM TO 11 AM PST SUNDAY... * WHAT...For the Freeze Warning, sub-freezing temperatures as low as 31. For the Dense Fog Advisory, visibility one quarter mile or less in dense fog as low as 200 feet. * WHERE...Los Banos -Dos Palos, Merced -Madera -Mendota,</summary>
+<cap:event>Freeze Warning</cap:event>
+<cap:effective>2023-01-21T09:50:00-08:00</cap:effective>
+<cap:expires>2023-01-24T09:00:00-08:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Buttonwillow - Lost Hills - I5; Caruthers - San Joaquin - Selma; Delano-Wasco-Shafter; Hanford - Corcoran - Lemoore; Los Banos - Dos Palos; Merced - Madera - Mendota; Planada - Le Grand - Snelling; Southeast San Joaquin Valley; Visalia - Porterville - Reedley; West Side of Fresno and Kings Counties</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>006019 006029 006031 006039 006047 006107</value>
+<valueName>UGC</valueName>
+<value>CAZ301 CAZ302 CAZ303 CAZ305 CAZ306 CAZ309 CAZ310 CAZ311 CAZ312 CAZ315</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.NEW.KHNX.FG.Y.0005.230122T0900Z-230122T1900Z/
+/O.CON.KHNX.FZ.W.0002.000000T0000Z-230124T1700Z/</value>
+</cap:parameter>
+</entry>
+<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=CA1266312F7ED0.HighWindWatch.1266314EEC20CA.SGXNPWSGX.d9792bda9a2c9de4e1e95e6b332bb742</id>
 <updated>2023-01-21T08:04:00-08:00</updated>
 <published>2023-01-21T08:04:00-08:00</published>
@@ -1119,136 +1249,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value>/O.CON.KSGX.BH.S.0003.000000T0000Z-230123T2000Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=CA1266312F14F4.DenseFogAdvisory.1266312FCB60CA.HNXNPWHNX.a16d13649814822b7fede8390a5bb757</id>
-<updated>2023-01-21T05:33:00-08:00</updated>
-<published>2023-01-21T05:33:00-08:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Dense Fog Advisory issued January 21 at 5:33AM PST until January 21 at 10:00AM PST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CA1266312F14F4.DenseFogAdvisory.1266312FCB60CA.HNXNPWHNX.a16d13649814822b7fede8390a5bb757"/>
-<summary>...FREEZE WARNING NOW IN EFFECT UNTIL 9 AM PST TUESDAY... ...DENSE FOG ADVISORY REMAINS IN EFFECT UNTIL 10 AM PST THIS MORNING... * WHAT...For the Freeze Warning, sub-freezing temperatures as low as 30 expected. For the Dense Fog Advisory, visibility one quarter mile or less in dense fog.</summary>
-<cap:event>Dense Fog Advisory</cap:event>
-<cap:effective>2023-01-21T05:33:00-08:00</cap:effective>
-<cap:expires>2023-01-21T10:00:00-08:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Caruthers - San Joaquin - Selma; Hanford - Corcoran - Lemoore; Merced - Madera - Mendota; Visalia - Porterville - Reedley</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>006019 006031 006039 006047 006107</value>
-<valueName>UGC</valueName>
-<value>CAZ302 CAZ306 CAZ311 CAZ312</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.EXT.KHNX.FZ.W.0002.000000T0000Z-230124T1700Z/
-/O.CON.KHNX.FG.Y.0004.000000T0000Z-230121T1800Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=CA1266312F14F4.DenseFogAdvisory.1266312FCB60CA.HNXNPWHNX.506796d1f9560d8a760128c2ad9b5e62</id>
-<updated>2023-01-21T05:33:00-08:00</updated>
-<published>2023-01-21T05:33:00-08:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Dense Fog Advisory issued January 21 at 5:33AM PST until January 21 at 10:00AM PST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CA1266312F14F4.DenseFogAdvisory.1266312FCB60CA.HNXNPWHNX.506796d1f9560d8a760128c2ad9b5e62"/>
-<summary>...DENSE FOG ADVISORY REMAINS IN EFFECT UNTIL 10 AM PST THIS MORNING... * WHAT...Visibility one quarter mile or less in dense fog. * WHERE...Fresno-Clovis. * WHEN...From 3 AM to 10 AM PST Saturday. * IMPACTS...Hazardous driving conditions due to low visibility.</summary>
-<cap:event>Dense Fog Advisory</cap:event>
-<cap:effective>2023-01-21T05:33:00-08:00</cap:effective>
-<cap:expires>2023-01-21T10:00:00-08:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Fresno-Clovis</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>006019</value>
-<valueName>UGC</valueName>
-<value>CAZ307</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KHNX.FG.Y.0004.000000T0000Z-230121T1800Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=CA1266312F14F4.FreezeWarning.1266315D6B10CA.HNXNPWHNX.aa5ee7b7dcab1c8174d29004aeaf1214</id>
-<updated>2023-01-21T05:33:00-08:00</updated>
-<published>2023-01-21T05:33:00-08:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Freeze Warning issued January 21 at 5:33AM PST until January 24 at 9:00AM PST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CA1266312F14F4.FreezeWarning.1266315D6B10CA.HNXNPWHNX.aa5ee7b7dcab1c8174d29004aeaf1214"/>
-<summary>...FREEZE WARNING NOW IN EFFECT UNTIL 9 AM PST TUESDAY... * WHAT...Sub-freezing temperatures as low as 29 degrees expected. * WHERE...Most of the San Joaquin Valley. * WHEN...Until 9 AM PST Tuesday. * IMPACTS...Frost and freeze conditions will kill crops, other sensitive vegetation and possibly damage unprotected outdoor</summary>
-<cap:event>Freeze Warning</cap:event>
-<cap:effective>2023-01-21T05:33:00-08:00</cap:effective>
-<cap:expires>2023-01-24T09:00:00-08:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Buttonwillow - Lost Hills - I5; Delano-Wasco-Shafter; Los Banos - Dos Palos; Planada - Le Grand - Snelling; Southeast San Joaquin Valley; West Side of Fresno and Kings Counties</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>006019 006029 006031 006039 006047 006107</value>
-<valueName>UGC</valueName>
-<value>CAZ301 CAZ303 CAZ305 CAZ309 CAZ310 CAZ315</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.EXT.KHNX.FZ.W.0002.000000T0000Z-230124T1700Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=CA1266312F14F4.FreezeWarning.1266315D6B10CA.HNXNPWHNX.7319dda6d172c68de16d5dad0972156b</id>
-<updated>2023-01-21T05:33:00-08:00</updated>
-<published>2023-01-21T05:33:00-08:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Freeze Warning issued January 21 at 5:33AM PST until January 24 at 9:00AM PST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CA1266312F14F4.FreezeWarning.1266315D6B10CA.HNXNPWHNX.7319dda6d172c68de16d5dad0972156b"/>
-<summary>...FREEZE WARNING NOW IN EFFECT UNTIL 9 AM PST TUESDAY... ...DENSE FOG ADVISORY REMAINS IN EFFECT UNTIL 10 AM PST THIS MORNING... * WHAT...For the Freeze Warning, sub-freezing temperatures as low as 30 expected. For the Dense Fog Advisory, visibility one quarter mile or less in dense fog.</summary>
-<cap:event>Freeze Warning</cap:event>
-<cap:effective>2023-01-21T05:33:00-08:00</cap:effective>
-<cap:expires>2023-01-24T09:00:00-08:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Caruthers - San Joaquin - Selma; Hanford - Corcoran - Lemoore; Merced - Madera - Mendota; Visalia - Porterville - Reedley</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>006019 006031 006039 006047 006107</value>
-<valueName>UGC</valueName>
-<value>CAZ302 CAZ306 CAZ311 CAZ312</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.EXT.KHNX.FZ.W.0002.000000T0000Z-230124T1700Z/
-/O.CON.KHNX.FG.Y.0004.000000T0000Z-230121T1800Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -2507,6 +2507,39 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=LA1266312FB198.FloodWarning.1266313E0DC4LA.LIXFLWLIX.d0b4215ac521ccbd3e69df01789374e7</id>
+<updated>2023-01-21T11:34:00-06:00</updated>
+<published>2023-01-21T11:34:00-06:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Flood Warning issued January 21 at 11:34AM CST until further notice by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=LA1266312FB198.FloodWarning.1266313E0DC4LA.LIXFLWLIX.d0b4215ac521ccbd3e69df01789374e7"/>
+<summary>...The National Weather Service in New Orleans LA has issued a Flood Warning for the following rivers in Louisiana...Mississippi... Pearl River Near Pearl River affecting Hancock, Pearl River and St. Tammany Counties. For the Lower Pearl River...including Bogalusa, Pearl River...Minor flooding is forecast.</summary>
+<cap:event>Flood Warning</cap:event>
+<cap:effective>2023-01-21T11:34:00-06:00</cap:effective>
+<cap:expires>2023-01-22T05:45:00-06:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>St. Tammany</cap:areaDesc>
+<cap:polygon>30.2,-89.55 30.18,-89.64 30.67,-89.9 30.67,-89.76 30.2,-89.55</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>022103</value>
+<valueName>UGC</valueName>
+<value>LAC103</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.NEW.KLIX.FL.W.0017.230125T1800Z-000000T0000Z/
+/PERL1.1.ER.000000T0000Z.000000T0000Z.000000T0000Z.NO/</value>
+</cap:parameter>
+</entry>
+<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=LA1266312FB008.FloodWarning.126631C77780LA.LIXFLSLIX.3b5e26a9eab157106d21efdf88e58fc1</id>
 <updated>2023-01-21T11:30:00-06:00</updated>
 <published>2023-01-21T11:30:00-06:00</published>
@@ -2762,6 +2795,39 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value>/O.CON.PGUM.RP.S.0003.000000T0000Z-230123T2000Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=MS1266312FB198.FloodWarning.1266313E0DC4MS.LIXFLWLIX.7ffd9eb1539be899c7d7d68c7a24050c</id>
+<updated>2023-01-21T11:34:00-06:00</updated>
+<published>2023-01-21T11:34:00-06:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Flood Warning issued January 21 at 11:34AM CST until further notice by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MS1266312FB198.FloodWarning.1266313E0DC4MS.LIXFLWLIX.7ffd9eb1539be899c7d7d68c7a24050c"/>
+<summary>...The National Weather Service in New Orleans LA has issued a Flood Warning for the following rivers in Louisiana...Mississippi... Pearl River Near Pearl River affecting Hancock, Pearl River and St. Tammany Counties. For the Lower Pearl River...including Bogalusa, Pearl River...Minor flooding is forecast.</summary>
+<cap:event>Flood Warning</cap:event>
+<cap:effective>2023-01-21T11:34:00-06:00</cap:effective>
+<cap:expires>2023-01-22T05:45:00-06:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Hancock; Pearl River</cap:areaDesc>
+<cap:polygon>30.2,-89.55 30.18,-89.64 30.67,-89.9 30.67,-89.76 30.2,-89.55</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>028045 028109</value>
+<valueName>UGC</valueName>
+<value>MSC045 MSC109</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.NEW.KLIX.FL.W.0017.230125T1800Z-000000T0000Z/
+/PERL1.1.ER.000000T0000Z.000000T0000Z.000000T0000Z.NO/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -3280,38 +3346,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=NM1266312ECD14.WinterStormWarning.1266312FCB60NM.ABQWSWABQ.0f9fdd429b580f0fe4ae96f76ffb6786</id>
-<updated>2023-01-21T04:49:00-07:00</updated>
-<published>2023-01-21T04:49:00-07:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Winter Storm Warning issued January 21 at 4:49AM MST until January 21 at 11:00AM MST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=NM1266312ECD14.WinterStormWarning.1266312FCB60NM.ABQWSWABQ.0f9fdd429b580f0fe4ae96f76ffb6786"/>
-<summary>...WINTER STORM WARNING REMAINS IN EFFECT UNTIL 11 AM MST THIS MORNING... * WHAT...Heavy snow. Additional snow accumulations up to 3 inches. Winds gusting as high as 50 mph. * WHERE...Johnson and Bartlett Mesas Including Raton Pass and Union County.</summary>
-<cap:event>Winter Storm Warning</cap:event>
-<cap:effective>2023-01-21T04:49:00-07:00</cap:effective>
-<cap:expires>2023-01-21T11:00:00-07:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Johnson and Bartlett Mesas Including Raton Pass; Union County</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>035007 035059</value>
-<valueName>UGC</valueName>
-<value>NMZ227 NMZ230</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KABQ.WS.W.0003.000000T0000Z-230121T1800Z/</value>
-</cap:parameter>
-</entry>
-<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=NV1266312EA9EC.WindAdvisory.1266315AD300NV.VEFNPWVEF.8757246eda857f47368a2192422f6fdf</id>
 <updated>2023-01-21T02:59:00-08:00</updated>
 <published>2023-01-21T02:59:00-08:00</published>
@@ -3437,38 +3471,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value>/O.CON.KOKX.CF.S.0003.230122T1100Z-230122T1500Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=OK1266312EA154.WinterWeatherAdvisory.1266313C4E80OK.AMAWSWAMA.4cf2271d446a661977db7f818737b1de</id>
-<updated>2023-01-21T04:37:00-06:00</updated>
-<published>2023-01-21T04:37:00-06:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Winter Weather Advisory issued January 21 at 4:37AM CST until January 21 at 6:00PM CST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=OK1266312EA154.WinterWeatherAdvisory.1266313C4E80OK.AMAWSWAMA.4cf2271d446a661977db7f818737b1de"/>
-<summary>...WINTER WEATHER ADVISORY REMAINS IN EFFECT UNTIL 6 PM CST THIS EVENING... * WHAT...Snow. Additional snow accumulations up to two inches. Winds gusting as high as 35 mph. * WHERE...Cimarron County. * WHEN...Until 6 PM CST this evening.</summary>
-<cap:event>Winter Weather Advisory</cap:event>
-<cap:effective>2023-01-21T04:37:00-06:00</cap:effective>
-<cap:expires>2023-01-21T18:00:00-06:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Cimarron</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>040025</value>
-<valueName>UGC</valueName>
-<value>OKZ001</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KAMA.WW.Y.0001.000000T0000Z-230122T0000Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -3666,39 +3668,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=SD1266312F7F34.DenseFogAdvisory.1266312FCB60SD.ABRNPWABR.244d499d34f39114303cf50db4ea91d1</id>
-<updated>2023-01-21T09:05:00-07:00</updated>
-<published>2023-01-21T09:05:00-07:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Dense Fog Advisory issued January 21 at 9:05AM MST until January 21 at 11:00AM MST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=SD1266312F7F34.DenseFogAdvisory.1266312FCB60SD.ABRNPWABR.244d499d34f39114303cf50db4ea91d1"/>
-<summary>...DENSE FOG ADVISORY IN EFFECT UNTIL NOON CST TODAY... * WHAT...Visibility one quarter mile or less in dense fog. * WHERE...Day, Clark, Codington, Hamlin and Deuel Counties. * WHEN...Until noon CST today. * IMPACTS...Hazardous driving conditions due to low visibility.</summary>
-<cap:event>Dense Fog Advisory</cap:event>
-<cap:effective>2023-01-21T09:05:00-07:00</cap:effective>
-<cap:expires>2023-01-21T11:00:00-07:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Clark; Codington; Day; Deuel; Hamlin</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>046025 046029 046037 046039 046057</value>
-<valueName>UGC</valueName>
-<value>SDZ011 SDZ019 SDZ020 SDZ022 SDZ023</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.EXP.KABR.FG.Y.0009.000000T0000Z-230121T1600Z/
-/O.NEW.KABR.FG.Y.0010.230121T1605Z-230121T1800Z/</value>
-</cap:parameter>
-</entry>
-<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=TX1266312F8060.FloodWarning.1266313E2340TX.LCHFLSLCH.162782527abe70f4255481b9d17b048f</id>
 <updated>2023-01-21T10:08:00-06:00</updated>
 <published>2023-01-21T10:08:00-06:00</published>
@@ -3761,38 +3730,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value>/O.NEW.KHGX.RP.S.0004.230121T1544Z-230122T0100Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=TX1266312E78B4.RipCurrentStatement.1266312FCB60TX.CRPCFWCRP.0cae46879e29017708ed41f369945ea3</id>
-<updated>2023-01-21T03:33:00-06:00</updated>
-<published>2023-01-21T03:33:00-06:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Rip Current Statement issued January 21 at 3:33AM CST until January 21 at 12:00PM CST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=TX1266312E78B4.RipCurrentStatement.1266312FCB60TX.CRPCFWCRP.0cae46879e29017708ed41f369945ea3"/>
-<summary>...HIGH RIP CURRENT RISK NOW IN EFFECT UNTIL NOON CST TODAY... * WHAT...For the Coastal Flood Advisory, minor coastal flooding expected. For the High Rip Current Risk, dangerous rip currents. * WHERE...Aransas Islands, Kleberg Islands, Nueces Islands and Calhoun Islands Counties.</summary>
-<cap:event>Rip Current Statement</cap:event>
-<cap:effective>2023-01-21T03:33:00-06:00</cap:effective>
-<cap:expires>2023-01-21T12:00:00-06:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Aransas Islands; Calhoun Islands; Kleberg Islands; Nueces Islands</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>048007 048057 048273 048355</value>
-<valueName>UGC</valueName>
-<value>TXZ345 TXZ442 TXZ443 TXZ447</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.EXT.KCRP.RP.S.0003.000000T0000Z-230121T1800Z/</value>
 </cap:parameter>
 </entry>
 <entry>
