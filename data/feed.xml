@@ -16,16 +16,48 @@ xmlns = 'http://www.w3.org/2005/Atom'
 xmlns:cap = 'urn:oasis:names:tc:emergency:cap:1.1'
 xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 >
-<!-- http-date = Thu, 09 Feb 2023 14:00:00 GMT -->
+<!-- http-date = Thu, 09 Feb 2023 14:29:00 GMT -->
 <id>https://alerts.weather.gov/cap/us.php?x=0</id>
 <logo>http://alerts.weather.gov/images/xml_logo.gif</logo>
 <generator>NWS CAP Server</generator>
-<updated>2023-02-09T09:00:00-05:00</updated>
+<updated>2023-02-09T08:29:00-06:00</updated>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
 <title>Current Watches, Warnings and Advisories for the United States Issued by the National Weather Service</title>
 <link href="https://alerts.weather.gov/cap/us.php?x=0"/>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=AK1266366DF96C.HighWindWarning.1266367BB0C0AK.AFCNPWALU.ac63be6cd9b7faf1716491f6568e0faa</id>
+<updated>2023-02-09T05:11:00-09:00</updated>
+<published>2023-02-09T05:11:00-09:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>High Wind Warning issued February 09 at 5:11AM AKST until February 09 at 7:00PM AKST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=AK1266366DF96C.HighWindWarning.1266367BB0C0AK.AFCNPWALU.ac63be6cd9b7faf1716491f6568e0faa"/>
+<summary>...HIGH WIND WARNING REMAINS IN EFFECT UNTIL 7 PM AKST THIS EVENING... * WHAT...Northeast winds 35 to 55 mph with gusts up to 75 mph expected. * WHERE...Central Aleutians. * WHEN...Until 7 PM AKST this evening.</summary>
+<cap:event>High Wind Warning</cap:event>
+<cap:effective>2023-02-09T05:11:00-09:00</cap:effective>
+<cap:expires>2023-02-09T19:00:00-09:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Severe</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Central Aleutians</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>002016</value>
+<valueName>UGC</valueName>
+<value>AKZ187</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.PAFC.HW.W.0004.230209T1600Z-230210T0400Z/</value>
+</cap:parameter>
+</entry>
 <entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=AK1266366D8054.WindChillAdvisory.1266368BB650AK.AFGWSWWCZ.b67990373b1e26d126ddbffe564f5a50</id>
 <updated>2023-02-09T02:01:00-09:00</updated>
@@ -249,38 +281,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <valueName>VTEC</valueName>
 <value>/O.UPG.PAFC.WS.A.0001.230210T0200Z-230210T2200Z/
 /O.NEW.PAFC.BZ.W.0002.230210T0100Z-230210T2200Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=AK1266366BF9B4.HighWindWarning.1266367BB0C0AK.AFCNPWALU.ac63be6cd9b7faf1716491f6568e0faa</id>
-<updated>2023-02-08T16:01:00-09:00</updated>
-<published>2023-02-08T16:01:00-09:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>High Wind Warning issued February 08 at 4:01PM AKST until February 09 at 7:00PM AKST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=AK1266366BF9B4.HighWindWarning.1266367BB0C0AK.AFCNPWALU.ac63be6cd9b7faf1716491f6568e0faa"/>
-<summary>...HIGH WIND WARNING REMAINS IN EFFECT FROM 7 AM TO 7 PM AKST THURSDAY... * WHAT...Northeast winds 35 to 55 mph with gusts up to 75 mph expected. * WHERE...Central Aleutians. * WHEN...From 7 AM to 7 PM AKST Thursday.</summary>
-<cap:event>High Wind Warning</cap:event>
-<cap:effective>2023-02-08T16:01:00-09:00</cap:effective>
-<cap:expires>2023-02-09T19:00:00-09:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Severe</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Central Aleutians</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>002016</value>
-<valueName>UGC</valueName>
-<value>AKZ187</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.PAFC.HW.W.0004.230209T1600Z-230210T0400Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -511,6 +511,138 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=AR1266366E0074.FloodWarning.1266367E2B84AR.LZKFLSLZK.d8575a00cab06decce51c48e3c9028fc</id>
+<updated>2023-02-09T08:29:00-06:00</updated>
+<published>2023-02-09T08:29:00-06:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Flood Warning issued February 09 at 8:29AM CST until February 10 at 2:25PM CST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=AR1266366E0074.FloodWarning.1266367E2B84AR.LZKFLSLZK.d8575a00cab06decce51c48e3c9028fc"/>
+<summary>...The Flood Warning continues for the following rivers in Arkansas... Petit Jean River At Danville affecting Yell County. Fourche Lafave River Near Houston affecting Perry County. ...The Flood Warning is extended for the following rivers in Arkansas...</summary>
+<cap:event>Flood Warning</cap:event>
+<cap:effective>2023-02-09T08:29:00-06:00</cap:effective>
+<cap:expires>2023-02-10T14:25:00-06:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Yell</cap:areaDesc>
+<cap:polygon>34.89,-93.27 34.87,-93.49 34.81,-93.69 34.9,-93.7 34.95,-93.53 34.98,-93.28 34.89,-93.27</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>005149</value>
+<valueName>UGC</valueName>
+<value>ARC149</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.EXT.KLZK.FL.W.0013.000000T0000Z-230210T2025Z/
+/GRVA4.1.ER.230208T2109Z.230209T0545Z.230209T1425Z.NO/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=AR1266366E0074.FloodWarning.1266369BC540AR.LZKFLSLZK.907f4cbaf2cd195a2986d9ed680c3d22</id>
+<updated>2023-02-09T08:29:00-06:00</updated>
+<published>2023-02-09T08:29:00-06:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Flood Warning issued February 09 at 8:29AM CST until February 12 at 8:24AM CST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=AR1266366E0074.FloodWarning.1266369BC540AR.LZKFLSLZK.907f4cbaf2cd195a2986d9ed680c3d22"/>
+<summary>...The Flood Warning continues for the following rivers in Arkansas... Petit Jean River At Danville affecting Yell County. Fourche Lafave River Near Houston affecting Perry County. ...The Flood Warning is extended for the following rivers in Arkansas...</summary>
+<cap:event>Flood Warning</cap:event>
+<cap:effective>2023-02-09T08:29:00-06:00</cap:effective>
+<cap:expires>2023-02-12T08:24:00-06:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Yell</cap:areaDesc>
+<cap:polygon>35.07,-93.05 35.05,-93.27 35.02,-93.43 35.09,-93.42 35.13,-93.28 35.14,-93.13 35.07,-93.05</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>005149</value>
+<valueName>UGC</valueName>
+<value>ARC149</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.EXT.KLZK.FL.W.0011.000000T0000Z-230212T1424Z/
+/DANA4.2.ER.230208T1504Z.230210T0000Z.230211T0824Z.NO/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=AR1266366E0074.FloodWarning.1266369C67C0AR.LZKFLSLZK.27910e934ae880145258070fc50177fa</id>
+<updated>2023-02-09T08:29:00-06:00</updated>
+<published>2023-02-09T08:29:00-06:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Flood Warning issued February 09 at 8:29AM CST until February 12 at 12:40PM CST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=AR1266366E0074.FloodWarning.1266369C67C0AR.LZKFLSLZK.27910e934ae880145258070fc50177fa"/>
+<summary>...The Flood Warning continues for the following rivers in Arkansas... Petit Jean River At Danville affecting Yell County. Fourche Lafave River Near Houston affecting Perry County. ...The Flood Warning is extended for the following rivers in Arkansas...</summary>
+<cap:event>Flood Warning</cap:event>
+<cap:effective>2023-02-09T08:29:00-06:00</cap:effective>
+<cap:expires>2023-02-12T12:40:00-06:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Perry</cap:areaDesc>
+<cap:polygon>34.94,-92.62 34.95,-92.7 34.92,-92.84 35.01,-92.88 35.03,-92.74 35.05,-92.59 34.94,-92.62</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>005105</value>
+<valueName>UGC</valueName>
+<value>ARC105</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.EXT.KLZK.FL.W.0012.000000T0000Z-230212T1840Z/
+/HUSA4.1.ER.230209T0200Z.230210T1200Z.230211T1240Z.NO/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=AR1266366DFE1C.FloodWarning.1266369BC540AR.MEGFLWMEG.62eb079a8583c5ef24834a40d4475fe5</id>
+<updated>2023-02-09T08:23:00-06:00</updated>
+<published>2023-02-09T08:23:00-06:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Flood Warning issued February 09 at 8:23AM CST until February 12 at 8:24AM CST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=AR1266366DFE1C.FloodWarning.1266369BC540AR.MEGFLWMEG.62eb079a8583c5ef24834a40d4475fe5"/>
+<summary>...The National Weather Service in Memphis TN has issued a Flood Warning for the following rivers in Missouri...Arkansas... Saint Francis River near Saint Francis For the Saint Francis River...including Saint Francis, Lake City, Madison...Minor flooding is forecast. ...FLOOD WARNING IN EFFECT FROM THIS MORNING TO SUNDAY MORNING...</summary>
+<cap:event>Flood Warning</cap:event>
+<cap:effective>2023-02-09T08:23:00-06:00</cap:effective>
+<cap:expires>2023-02-12T08:24:00-06:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Clay; Greene</cap:areaDesc>
+<cap:polygon>36.63,-90.14 36.36,-90 36.03,-90.28 36.1,-90.38 36.33,-90.18 36.49,-90.21 36.63,-90.14</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>005021 005055</value>
+<valueName>UGC</valueName>
+<value>ARC021 ARC055</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.NEW.KMEG.FL.W.0014.230209T1423Z-230212T1424Z/
+/SFRA4.1.ER.230209T1052Z.230210T1200Z.230211T1424Z.NO/</value>
+</cap:parameter>
+</entry>
+<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=AR1266366D9508.FloodWarning.1266368B7A8CAR.LZKFLWLZK.4833d231811adaa955994e7288733f98</id>
 <updated>2023-02-09T05:54:00-06:00</updated>
 <published>2023-02-09T05:54:00-06:00</published>
@@ -675,39 +807,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=AR1266366D4238.FloodWarning.1266369C5820AR.LZKFLSLZK.907f4cbaf2cd195a2986d9ed680c3d22</id>
-<updated>2023-02-09T03:42:00-06:00</updated>
-<published>2023-02-09T03:42:00-06:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Flood Warning issued February 09 at 3:42AM CST until February 12 at 12:00PM CST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=AR1266366D4238.FloodWarning.1266369C5820AR.LZKFLSLZK.907f4cbaf2cd195a2986d9ed680c3d22"/>
-<summary>...The Flood Warning is extended for the following river in Arkansas... Petit Jean River At Danville affecting Yell County. ...FLOOD WARNING NOW IN EFFECT UNTIL EARLY SUNDAY AFTERNOON... * WHAT...Moderate flooding is occurring and moderate flooding is forecast.</summary>
-<cap:event>Flood Warning</cap:event>
-<cap:effective>2023-02-09T03:42:00-06:00</cap:effective>
-<cap:expires>2023-02-12T12:00:00-06:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Yell</cap:areaDesc>
-<cap:polygon>35.07,-93.05 35.05,-93.27 35.02,-93.43 35.09,-93.42 35.13,-93.28 35.14,-93.13 35.07,-93.05</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>005149</value>
-<valueName>UGC</valueName>
-<value>ARC149</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.EXT.KLZK.FL.W.0011.000000T0000Z-230212T1800Z/
-/DANA4.2.ER.230208T1504Z.230209T1800Z.230211T1200Z.NO/</value>
-</cap:parameter>
-</entry>
-<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=AR1266366D3B30.WindAdvisory.1266366E1C30AR.LZKNPWLZK.f76034c0f8033f476c47b7167566ecb9</id>
 <updated>2023-02-09T03:24:00-06:00</updated>
 <published>2023-02-09T03:24:00-06:00</published>
@@ -737,138 +836,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value>/O.CON.KLZK.WI.Y.0005.000000T0000Z-230209T1500Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=AR1266366D1290.FloodWarning.126636A8EF2CAR.LZKFLSLZK.27910e934ae880145258070fc50177fa</id>
-<updated>2023-02-09T02:20:00-06:00</updated>
-<published>2023-02-09T02:20:00-06:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Flood Warning issued February 09 at 2:20AM CST until February 12 at 6:51PM CST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=AR1266366D1290.FloodWarning.126636A8EF2CAR.LZKFLSLZK.27910e934ae880145258070fc50177fa"/>
-<summary>...The Flood Warning is extended for the following river in Arkansas... Fourche Lafave River Near Houston affecting Perry County. ...FLOOD WARNING NOW IN EFFECT UNTIL SUNDAY EVENING... * WHAT...Minor flooding is occurring and minor flooding is forecast. * WHERE...Fourche Lafave River Near Houston.</summary>
-<cap:event>Flood Warning</cap:event>
-<cap:effective>2023-02-09T02:20:00-06:00</cap:effective>
-<cap:expires>2023-02-12T18:51:00-06:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Perry</cap:areaDesc>
-<cap:polygon>34.94,-92.62 34.95,-92.7 34.92,-92.84 35.01,-92.88 35.03,-92.74 35.05,-92.59 34.94,-92.62</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>005105</value>
-<valueName>UGC</valueName>
-<value>ARC105</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.EXT.KLZK.FL.W.0012.000000T0000Z-230213T0051Z/
-/HUSA4.1.ER.230209T0200Z.230210T1200Z.230211T1851Z.NO/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=AR1266366D1164.FloodWarning.1266367E01B8AR.LZKFLSLZK.d8575a00cab06decce51c48e3c9028fc</id>
-<updated>2023-02-09T02:17:00-06:00</updated>
-<published>2023-02-09T02:17:00-06:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Flood Warning issued February 09 at 2:17AM CST until February 10 at 1:18PM CST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=AR1266366D1164.FloodWarning.1266367E01B8AR.LZKFLSLZK.d8575a00cab06decce51c48e3c9028fc"/>
-<summary>...The Flood Warning is extended for the following river in Arkansas... Fourche Lafave River Near Gravelly affecting Yell County. ...FLOOD WARNING NOW IN EFFECT UNTIL EARLY TOMORROW AFTERNOON... * WHAT...Minor flooding is occurring and minor flooding is forecast. * WHERE...Fourche Lafave River Near Gravelly.</summary>
-<cap:event>Flood Warning</cap:event>
-<cap:effective>2023-02-09T02:17:00-06:00</cap:effective>
-<cap:expires>2023-02-10T13:18:00-06:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Yell</cap:areaDesc>
-<cap:polygon>34.89,-93.27 34.87,-93.49 34.81,-93.69 34.9,-93.7 34.95,-93.53 34.98,-93.28 34.89,-93.27</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>005149</value>
-<valueName>UGC</valueName>
-<value>ARC149</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.EXT.KLZK.FL.W.0013.000000T0000Z-230210T1918Z/
-/GRVA4.1.ER.230208T2109Z.230209T0545Z.230209T1318Z.NO/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=AR1266366D109C.FloodAdvisory.1266367BFEE0AR.TSAFLSTSA.65ed42fe4aaed505cc7b535b9255a1c3</id>
-<updated>2023-02-09T02:15:00-06:00</updated>
-<published>2023-02-09T02:15:00-06:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Flood Advisory issued February 09 at 2:15AM CST until February 10 at 12:00AM CST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=AR1266366D109C.FloodAdvisory.1266367BFEE0AR.TSAFLSTSA.65ed42fe4aaed505cc7b535b9255a1c3"/>
-<summary>...The Flood Advisory continues for the following rivers in Arkansas... Mulberry River near Mulberry affecting Crawford and Franklin Counties. ...FLOOD ADVISORY REMAINS IN EFFECT UNTIL JUST AFTER MIDNIGHT TONIGHT...</summary>
-<cap:event>Flood Advisory</cap:event>
-<cap:effective>2023-02-09T02:15:00-06:00</cap:effective>
-<cap:expires>2023-02-10T00:00:00-06:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Crawford; Franklin</cap:areaDesc>
-<cap:polygon>35.45,-94.06 35.61,-94.04 35.62,-93.94 35.57,-94 35.46,-94.03 35.45,-94.06</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>005033 005047</value>
-<valueName>UGC</valueName>
-<value>ARC033 ARC047</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KTSA.FL.Y.0004.000000T0000Z-230210T0600Z/
-/MLBA4.N.ER.000000T0000Z.000000T0000Z.000000T0000Z.NO/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=AR1266366D0FD4.FloodAdvisory.1266367BFEE0AR.TSAFLSTSA.ac20f3191559aa36adc0f7149b0b1268</id>
-<updated>2023-02-09T02:13:00-06:00</updated>
-<published>2023-02-09T02:13:00-06:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Flood Advisory issued February 09 at 2:13AM CST until February 10 at 12:00AM CST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=AR1266366D0FD4.FloodAdvisory.1266367BFEE0AR.TSAFLSTSA.ac20f3191559aa36adc0f7149b0b1268"/>
-<summary>...The Flood Advisory continues for the following rivers in Oklahoma...Arkansas... Lee Creek near Van Buren affecting Sequoyah and Crawford Counties. ...FLOOD ADVISORY REMAINS IN EFFECT UNTIL JUST AFTER MIDNIGHT TONIGHT... * WHAT...Flooding caused by excessive rainfall continues.</summary>
-<cap:event>Flood Advisory</cap:event>
-<cap:effective>2023-02-09T02:13:00-06:00</cap:effective>
-<cap:expires>2023-02-10T00:00:00-06:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Crawford</cap:areaDesc>
-<cap:polygon>35.54,-94.37 35.42,-94.37 35.42,-94.42 35.54,-94.52 35.54,-94.37</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>005033</value>
-<valueName>UGC</valueName>
-<value>ARC033</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KTSA.FL.Y.0005.000000T0000Z-230210T0600Z/
-/VBRA4.N.ER.000000T0000Z.000000T0000Z.000000T0000Z.UU/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -2498,38 +2465,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=IA1266366DA958.SpecialWeatherStatement.1266366DFAFCIA.DVNSPSDVN.a41ea4d07c15782f411f9b29d6e8b134</id>
-<updated>2023-02-09T06:06:00-06:00</updated>
-<published>2023-02-09T06:06:00-06:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Special Weather Statement issued February 09 at 6:06AM CST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=IA1266366DA958.SpecialWeatherStatement.1266366DFAFCIA.DVNSPSDVN.a41ea4d07c15782f411f9b29d6e8b134"/>
-<summary>...Rain changing to Heavy Snow... Rain and sleet are changing to heavy wet snow, west of a line from Dubuque through Williamsburg Iowa. The transition to snow will continue to move east, through the Dubuque, Cedar Rapids, and Iowa City metro areas through 8 AM. Expect roads to become rapidly covered in snow, sleet, and slush, and visibility to be under 1</summary>
-<cap:event>Special Weather Statement</cap:event>
-<cap:effective>2023-02-09T06:06:00-06:00</cap:effective>
-<cap:expires>2023-02-09T08:15:00-06:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Observed</cap:certainty>
-<cap:areaDesc>Benton; Delaware; Dubuque; Iowa; Jefferson; Johnson; Jones; Keokuk; Linn; Washington</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>019011 019055 019061 019095 019101 019103 019105 019107 019113 019183</value>
-<valueName>UGC</valueName>
-<value>IAZ041 IAZ042 IAZ051 IAZ052 IAZ053 IAZ063 IAZ064 IAZ076 IAZ077 IAZ087</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value></value>
-</cap:parameter>
-</entry>
-<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=IA1266366D3B30.WinterWeatherAdvisory.1266367B1480IA.ARXWSWARX.b52125e92fd2adca2271146121156584</id>
 <updated>2023-02-09T03:24:00-06:00</updated>
 <published>2023-02-09T03:24:00-06:00</published>
@@ -3591,6 +3526,72 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=LA1266366DF778.FloodWarning.126636B907E0LA.LIXFLWLIX.214aa06fda2fe7bc66f67e6010f4c572</id>
+<updated>2023-02-09T08:06:00-06:00</updated>
+<published>2023-02-09T08:06:00-06:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Flood Warning issued February 09 at 8:06AM CST until February 14 at 12:00AM CST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=LA1266366DF778.FloodWarning.126636B907E0LA.LIXFLWLIX.214aa06fda2fe7bc66f67e6010f4c572"/>
+<summary>...Forecast flooding changed from Minor to Moderate severity and increased in duration for the following rivers in Louisiana... Tangipahoa River Near Robert affecting Tangipahoa Parish. For the Tangipahoa River...including Robert...Moderate flooding is forecast. ...FLOOD WARNING NOW IN EFFECT FROM THIS EVENING TO EARLY TUESDAY</summary>
+<cap:event>Flood Warning</cap:event>
+<cap:effective>2023-02-09T08:06:00-06:00</cap:effective>
+<cap:expires>2023-02-14T00:00:00-06:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Tangipahoa</cap:areaDesc>
+<cap:polygon>30.36,-90.25 30.3,-90.3 30.69,-90.5 30.69,-90.43 30.36,-90.25</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>022105</value>
+<valueName>UGC</valueName>
+<value>LAC105</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.EXT.KLIX.FL.W.0045.230210T0246Z-230214T0600Z/
+/ROBL1.2.ER.230210T0246Z.230212T0600Z.230214T0000Z.NO/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=LA1266366DF714.FloodWarning.1266368B8F40LA.LIXFLSLIX.b5d77784cd43301e3eeb3a8fb996a151</id>
+<updated>2023-02-09T08:05:00-06:00</updated>
+<published>2023-02-09T08:05:00-06:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Flood Warning issued February 09 at 8:05AM CST until February 11 at 2:00AM CST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=LA1266366DF714.FloodWarning.1266368B8F40LA.LIXFLSLIX.b5d77784cd43301e3eeb3a8fb996a151"/>
+<summary>...The Flood Warning is extended for the following rivers in Louisiana... Bogue Falaya River At Boston St in Covington affecting St. Tammany Parish. For the Bogue Falaya...including Boston St in Covington...Minor flooding is forecast.</summary>
+<cap:event>Flood Warning</cap:event>
+<cap:effective>2023-02-09T08:05:00-06:00</cap:effective>
+<cap:expires>2023-02-11T02:00:00-06:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>St. Tammany</cap:areaDesc>
+<cap:polygon>30.42,-90.04 30.42,-90.16 30.52,-90.14 30.52,-90.04 30.42,-90.04</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>022103</value>
+<valueName>UGC</valueName>
+<value>LAC103</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.EXT.KLIX.FL.W.0046.000000T0000Z-230211T0800Z/
+/CVEL1.1.ER.230209T0854Z.230210T0600Z.230211T0200Z.NO/</value>
+</cap:parameter>
+</entry>
+<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=LA1266366DD644.FloodWarning.1266368CEF34LA.LIXFLWLIX.5ec869c147fc60863106c320dda0bb2f</id>
 <updated>2023-02-09T07:21:00-06:00</updated>
 <published>2023-02-09T07:21:00-06:00</published>
@@ -3753,72 +3754,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <valueName>VTEC</valueName>
 <value>/O.NEW.KJAN.FL.W.0025.230209T1200Z-230211T0000Z/
 /NECL1.1.ER.230209T1200Z.000000T0000Z.230210T0600Z.NO/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=LA1266366CE414.FloodWarning.1266368AAEA4LA.LIXFLWLIX.b5d77784cd43301e3eeb3a8fb996a151</id>
-<updated>2023-02-09T01:01:00-06:00</updated>
-<published>2023-02-09T01:01:00-06:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Flood Warning issued February 09 at 1:01AM CST until February 10 at 8:25PM CST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=LA1266366CE414.FloodWarning.1266368AAEA4LA.LIXFLWLIX.b5d77784cd43301e3eeb3a8fb996a151"/>
-<summary>...The National Weather Service in New Orleans LA has issued a Flood Warning for the following rivers in Louisiana... Bogue Falaya River At Boston St in Covington affecting St. Tammany Parish. For the Bogue Falaya...including Boston St in Covington...Minor flooding is forecast.</summary>
-<cap:event>Flood Warning</cap:event>
-<cap:effective>2023-02-09T01:01:00-06:00</cap:effective>
-<cap:expires>2023-02-10T20:25:00-06:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>St. Tammany</cap:areaDesc>
-<cap:polygon>30.42,-90.04 30.42,-90.16 30.52,-90.14 30.52,-90.04 30.42,-90.04</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>022103</value>
-<valueName>UGC</valueName>
-<value>LAC103</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.NEW.KLIX.FL.W.0046.230209T1100Z-230211T0225Z/
-/CVEL1.1.ER.230209T1100Z.230210T0000Z.230210T2024Z.NO/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=LA1266366CD3AC.FloodWarning.1266369C5820LA.LIXFLWLIX.214aa06fda2fe7bc66f67e6010f4c572</id>
-<updated>2023-02-09T00:59:00-06:00</updated>
-<published>2023-02-09T00:59:00-06:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Flood Warning issued February 09 at 12:59AM CST until February 12 at 12:00PM CST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=LA1266366CD3AC.FloodWarning.1266369C5820LA.LIXFLWLIX.214aa06fda2fe7bc66f67e6010f4c572"/>
-<summary>...The National Weather Service in New Orleans LA has issued a Flood Warning for the following rivers in Louisiana... Tangipahoa River Near Robert affecting Tangipahoa Parish. For the Tangipahoa River...including Robert...Minor flooding is forecast. ...FLOOD WARNING IN EFFECT FROM FRIDAY AFTERNOON TO EARLY SUNDAY</summary>
-<cap:event>Flood Warning</cap:event>
-<cap:effective>2023-02-09T00:59:00-06:00</cap:effective>
-<cap:expires>2023-02-12T12:00:00-06:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Tangipahoa</cap:areaDesc>
-<cap:polygon>30.36,-90.25 30.3,-90.3 30.69,-90.5 30.69,-90.43 30.36,-90.25</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>022105</value>
-<valueName>UGC</valueName>
-<value>LAC105</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.NEW.KLIX.FL.W.0045.230210T1800Z-230212T1800Z/
-/ROBL1.1.ER.230210T1800Z.230211T1200Z.230212T1200Z.NO/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -4729,6 +4664,237 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=MO1266366DFEE4.FloodAdvisory.1266366F3958MO.SGFFLSSGF.f284058d910af2163e4ad47f0fb77c7c</id>
+<updated>2023-02-09T08:25:00-06:00</updated>
+<published>2023-02-09T08:25:00-06:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Flood Advisory issued February 09 at 8:25AM CST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MO1266366DFEE4.FloodAdvisory.1266366F3958MO.SGFFLSSGF.f284058d910af2163e4ad47f0fb77c7c"/>
+<summary>...FLOOD ADVISORY IN EFFECT UNTIL 430 PM CST THIS AFTERNOON... * WHAT...Residual flooding from yesterdays heavy rainfall will continue into the afternoon. * WHERE...A portion of southwest Missouri, including the following counties, Barry, Lawrence, McDonald, Newton and Stone. * WHEN...Until 430 PM CST Thursday.</summary>
+<cap:event>Flood Advisory</cap:event>
+<cap:effective>2023-02-09T08:25:00-06:00</cap:effective>
+<cap:expires>2023-02-09T16:30:00-06:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Barry</cap:areaDesc>
+<cap:polygon>36.73,-94.62 36.76,-94.52 36.75,-94.06 36.94,-94.04 36.92,-93.62 36.87,-93.62 36.79,-93.58 36.73,-93.61 36.58,-94.03 36.57,-94.58 36.7,-94.62 36.71,-94.62 36.73,-94.62</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>029009</value>
+<valueName>UGC</valueName>
+<value>MOC009</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.NEW.KSGF.FA.Y.0009.230209T1425Z-230209T2230Z/
+/00000.N.ER.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=MO1266366DFEE4.FloodAdvisory.1266369BC540MO.SGFFLSSGF.2416ebc94dba0e9c8843fff9587d4ffe</id>
+<updated>2023-02-09T08:25:00-06:00</updated>
+<published>2023-02-09T08:25:00-06:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Flood Advisory issued February 09 at 8:25AM CST until February 12 at 8:24AM CST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MO1266366DFEE4.FloodAdvisory.1266369BC540MO.SGFFLSSGF.2416ebc94dba0e9c8843fff9587d4ffe"/>
+<summary>...FLOOD ADVISORY IN EFFECT UNTIL 430 PM CST THIS AFTERNOON... * WHAT...Residual flooding from yesterdays heavy rainfall will continue into the afternoon. * WHERE...A portion of southwest Missouri, including the following counties, Barry, Lawrence, McDonald, Newton and Stone. * WHEN...Until 430 PM CST Thursday.</summary>
+<cap:event>Flood Advisory</cap:event>
+<cap:effective>2023-02-09T08:25:00-06:00</cap:effective>
+<cap:expires>2023-02-12T08:24:00-06:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Lawrence; McDonald; Newton; Stone</cap:areaDesc>
+<cap:polygon>36.73,-94.62 36.76,-94.52 36.75,-94.06 36.94,-94.04 36.92,-93.62 36.87,-93.62 36.79,-93.58 36.73,-93.61 36.58,-94.03 36.57,-94.58 36.7,-94.62 36.71,-94.62 36.73,-94.62</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>029109 029119 029145 029209</value>
+<valueName>UGC</valueName>
+<value>MOC109 MOC119 MOC145 MOC209</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.NEW.KSGF.FA.Y.0009.230209T1425Z-230209T2230Z/
+/00000.N.ER.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=MO1266366DFE1C.FloodWarning.1266369BC540MO.MEGFLWMEG.d32285b1d41a8d8a2492aafecc2762ab</id>
+<updated>2023-02-09T08:23:00-06:00</updated>
+<published>2023-02-09T08:23:00-06:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Flood Warning issued February 09 at 8:23AM CST until February 12 at 8:24AM CST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MO1266366DFE1C.FloodWarning.1266369BC540MO.MEGFLWMEG.d32285b1d41a8d8a2492aafecc2762ab"/>
+<summary>...The National Weather Service in Memphis TN has issued a Flood Warning for the following rivers in Missouri...Arkansas... Saint Francis River near Saint Francis For the Saint Francis River...including Saint Francis, Lake City, Madison...Minor flooding is forecast. ...FLOOD WARNING IN EFFECT FROM THIS MORNING TO SUNDAY MORNING...</summary>
+<cap:event>Flood Warning</cap:event>
+<cap:effective>2023-02-09T08:23:00-06:00</cap:effective>
+<cap:expires>2023-02-12T08:24:00-06:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Dunklin</cap:areaDesc>
+<cap:polygon>36.63,-90.14 36.36,-90 36.03,-90.28 36.1,-90.38 36.33,-90.18 36.49,-90.21 36.63,-90.14</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>029069</value>
+<valueName>UGC</valueName>
+<value>MOC069</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.NEW.KMEG.FL.W.0014.230209T1423Z-230212T1424Z/
+/SFRA4.1.ER.230209T1052Z.230210T1200Z.230211T1424Z.NO/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=MO1266366DFC28.FloodAdvisory.1266366F3958MO.SGFFLSSGF.6cf961ae98793f5c9c4d6e54fec445b2</id>
+<updated>2023-02-09T08:18:00-06:00</updated>
+<published>2023-02-09T08:18:00-06:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Flood Advisory issued February 09 at 8:18AM CST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MO1266366DFC28.FloodAdvisory.1266366F3958MO.SGFFLSSGF.6cf961ae98793f5c9c4d6e54fec445b2"/>
+<summary>...FLOOD ADVISORY IN EFFECT UNTIL 415 PM CST THIS AFTERNOON... * WHAT...Residual flooding will continue into this afternoon from yesterdays heavy rainfall. * WHERE...Portions of south central and southwest Missouri, including the following counties, in south central Missouri, Dent, Howell, Oregon, Shannon and Texas. In southwest Missouri, Douglas,</summary>
+<cap:event>Flood Advisory</cap:event>
+<cap:effective>2023-02-09T08:18:00-06:00</cap:effective>
+<cap:expires>2023-02-09T16:30:00-06:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Dent; Douglas</cap:areaDesc>
+<cap:polygon>36.82,-92.91 37.18,-92.86 37.48,-92.77 37.46,-92.25 37.52,-91.9 37.44,-91.65 36.5,-91.65 36.5,-92.78 36.82,-92.91</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>029065 029067</value>
+<valueName>UGC</valueName>
+<value>MOC065 MOC067</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.NEW.KSGF.FA.Y.0008.230209T1418Z-230209T2215Z/
+/00000.N.ER.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=MO1266366DFC28.FloodAdvisory.1266367EA1E0MO.SGFFLSSGF.6a77cf4a43bdde3d242a92df009f62d7</id>
+<updated>2023-02-09T08:18:00-06:00</updated>
+<published>2023-02-09T08:18:00-06:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Flood Advisory issued February 09 at 8:18AM CST until February 10 at 5:28PM CST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MO1266366DFC28.FloodAdvisory.1266367EA1E0MO.SGFFLSSGF.6a77cf4a43bdde3d242a92df009f62d7"/>
+<summary>...FLOOD ADVISORY IN EFFECT UNTIL 415 PM CST THIS AFTERNOON... * WHAT...Residual flooding will continue into this afternoon from yesterdays heavy rainfall. * WHERE...Portions of south central and southwest Missouri, including the following counties, in south central Missouri, Dent, Howell, Oregon, Shannon and Texas. In southwest Missouri, Douglas,</summary>
+<cap:event>Flood Advisory</cap:event>
+<cap:effective>2023-02-09T08:18:00-06:00</cap:effective>
+<cap:expires>2023-02-10T17:28:00-06:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Webster; Wright</cap:areaDesc>
+<cap:polygon>36.82,-92.91 37.18,-92.86 37.48,-92.77 37.46,-92.25 37.52,-91.9 37.44,-91.65 36.5,-91.65 36.5,-92.78 36.82,-92.91</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>029225 029229</value>
+<valueName>UGC</valueName>
+<value>MOC225 MOC229</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.NEW.KSGF.FA.Y.0008.230209T1418Z-230209T2215Z/
+/00000.N.ER.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=MO1266366DFC28.FloodAdvisory.1266369BC540MO.SGFFLSSGF.2250de4752b74e24f7968635e229deeb</id>
+<updated>2023-02-09T08:18:00-06:00</updated>
+<published>2023-02-09T08:18:00-06:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Flood Advisory issued February 09 at 8:18AM CST until February 12 at 8:24AM CST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MO1266366DFC28.FloodAdvisory.1266369BC540MO.SGFFLSSGF.2250de4752b74e24f7968635e229deeb"/>
+<summary>...FLOOD ADVISORY IN EFFECT UNTIL 415 PM CST THIS AFTERNOON... * WHAT...Residual flooding will continue into this afternoon from yesterdays heavy rainfall. * WHERE...Portions of south central and southwest Missouri, including the following counties, in south central Missouri, Dent, Howell, Oregon, Shannon and Texas. In southwest Missouri, Douglas,</summary>
+<cap:event>Flood Advisory</cap:event>
+<cap:effective>2023-02-09T08:18:00-06:00</cap:effective>
+<cap:expires>2023-02-12T08:24:00-06:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Howell; Oregon; Ozark; Shannon; Taney; Texas</cap:areaDesc>
+<cap:polygon>36.82,-92.91 37.18,-92.86 37.48,-92.77 37.46,-92.25 37.52,-91.9 37.44,-91.65 36.5,-91.65 36.5,-92.78 36.82,-92.91</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>029091 029149 029153 029203 029213 029215</value>
+<valueName>UGC</valueName>
+<value>MOC091 MOC149 MOC153 MOC203 MOC213 MOC215</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.NEW.KSGF.FA.Y.0008.230209T1418Z-230209T2215Z/
+/00000.N.ER.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=MO1266366DFA34.FloodWarning.1266367EA1E0MO.PAHFLWPAH.da52983eb344f44ddc28e1655757561a</id>
+<updated>2023-02-09T08:13:00-06:00</updated>
+<published>2023-02-09T08:13:00-06:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Flood Warning issued February 09 at 8:13AM CST until February 10 at 5:28PM CST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MO1266366DFA34.FloodWarning.1266367EA1E0MO.PAHFLWPAH.da52983eb344f44ddc28e1655757561a"/>
+<summary>...The National Weather Service in Paducah KY has issued a Flood Warning for the following rivers in Missouri... St. Francis River near Patterson affecting Wayne County. .Recent heavy rainfall of 2 to 3 inches over the past 24 hours has caused river levels to rapidly rise along the St Francis River. The river is expected to rise above flood stage at Patterson this</summary>
+<cap:event>Flood Warning</cap:event>
+<cap:effective>2023-02-09T08:13:00-06:00</cap:effective>
+<cap:expires>2023-02-10T17:28:00-06:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Wayne</cap:areaDesc>
+<cap:polygon>37.32,-90.5 37.32,-90.41 37.17,-90.46 37.03,-90.37 36.99,-90.42 37.14,-90.54 37.32,-90.5</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>029223</value>
+<valueName>UGC</valueName>
+<value>MOC223</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.NEW.KPAH.FL.W.0002.230209T2131Z-230210T2328Z/
+/PAZM7.1.ER.230209T2131Z.230210T0600Z.230210T1727Z.NO/</value>
+</cap:parameter>
+</entry>
+<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=MO1266366DDAF4.WinterWeatherAdvisory.1266366E9160MO.EAXWSWEAX.b46f0c27f53f7feb1774d99d49acf7a8</id>
 <updated>2023-02-09T07:33:00-06:00</updated>
 <published>2023-02-09T07:33:00-06:00</published>
@@ -4889,18 +5055,18 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=MO1266366C344C.FloodWarning.1266366E1C30MO.SGFFLWSGF.bb094d9cf135368b198a0c1da9087489</id>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=MO1266366C344C.FloodWarning.1266366F3958MO.SGFFLWSGF.bb094d9cf135368b198a0c1da9087489</id>
 <updated>2023-02-08T20:51:00-06:00</updated>
 <published>2023-02-08T20:51:00-06:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
 <title>Flood Warning issued February 08 at 8:51PM CST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MO1266366C344C.FloodWarning.1266366E1C30MO.SGFFLWSGF.bb094d9cf135368b198a0c1da9087489"/>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MO1266366C344C.FloodWarning.1266366F3958MO.SGFFLWSGF.bb094d9cf135368b198a0c1da9087489"/>
 <summary>...FLOOD WARNING NOW IN EFFECT UNTIL 9 AM CST THURSDAY... * WHAT...Flooding caused by excessive rainfall continues. * WHERE...A portion of southwest Missouri, including the following county, Barry. * WHEN...Until 900 AM CST Thursday. * IMPACTS...Flooding of rivers, creeks, streams, and other low-lying</summary>
 <cap:event>Flood Warning</cap:event>
 <cap:effective>2023-02-08T20:51:00-06:00</cap:effective>
-<cap:expires>2023-02-09T09:00:00-06:00</cap:expires>
+<cap:expires>2023-02-09T16:30:00-06:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
 <cap:category>Met</cap:category>
@@ -4922,31 +5088,97 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=MO1266366C3258.FloodWarning.1266366E1C30MO.SGFFLSSGF.3fde474f7ee2e748c131b3456649c277</id>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=MO1266366C3258.FloodWarning.1266366F3958MO.SGFFLSSGF.17bbad4927316ad982b05d0f0a0b6deb</id>
 <updated>2023-02-08T20:46:00-06:00</updated>
 <published>2023-02-08T20:46:00-06:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
 <title>Flood Warning issued February 08 at 8:46PM CST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MO1266366C3258.FloodWarning.1266366E1C30MO.SGFFLSSGF.3fde474f7ee2e748c131b3456649c277"/>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MO1266366C3258.FloodWarning.1266366F3958MO.SGFFLSSGF.17bbad4927316ad982b05d0f0a0b6deb"/>
 <summary>...FLOOD WARNING REMAINS IN EFFECT UNTIL 9 AM CST THURSDAY... * WHAT...Flooding caused by excessive rainfall continues. * WHERE...Portions of south central and southwest Missouri, including the following counties, in south central Missouri, Howell, Oregon and Texas. In southwest Missouri, Douglas, Ozark and Wright.</summary>
 <cap:event>Flood Warning</cap:event>
 <cap:effective>2023-02-08T20:46:00-06:00</cap:effective>
-<cap:expires>2023-02-09T09:00:00-06:00</cap:expires>
+<cap:expires>2023-02-09T16:30:00-06:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
 <cap:category>Met</cap:category>
 <cap:urgency>Expected</cap:urgency>
 <cap:severity>Moderate</cap:severity>
 <cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Douglas; Howell; Oregon; Ozark; Texas; Wright</cap:areaDesc>
+<cap:areaDesc>Douglas</cap:areaDesc>
 <cap:polygon>36.81,-92.76 36.82,-92.89 37.06,-92.89 37.07,-92.68 37.3,-92.67 37.4,-92.19 37.26,-91.92 37.11,-91.67 36.88,-91.66 36.88,-91.23 36.82,-91.23 36.82,-91.12 36.5,-91.13 36.5,-91.67 36.5,-92.77 36.79,-92.75 36.81,-92.76</cap:polygon>
 <cap:geocode>
 <valueName>FIPS6</valueName>
-<value>029067 029091 029149 029153 029215 029229</value>
+<value>029067</value>
 <valueName>UGC</valueName>
-<value>MOC067 MOC091 MOC149 MOC153 MOC215 MOC229</value>
+<value>MOC067</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KSGF.FA.W.0002.000000T0000Z-230209T1500Z/
+/00000.0.ER.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=MO1266366C3258.FloodWarning.1266367EA1E0MO.SGFFLSSGF.4a5091bf93dc8574486aca25200a1cc4</id>
+<updated>2023-02-08T20:46:00-06:00</updated>
+<published>2023-02-08T20:46:00-06:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Flood Warning issued February 08 at 8:46PM CST until February 10 at 5:28PM CST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MO1266366C3258.FloodWarning.1266367EA1E0MO.SGFFLSSGF.4a5091bf93dc8574486aca25200a1cc4"/>
+<summary>...FLOOD WARNING REMAINS IN EFFECT UNTIL 9 AM CST THURSDAY... * WHAT...Flooding caused by excessive rainfall continues. * WHERE...Portions of south central and southwest Missouri, including the following counties, in south central Missouri, Howell, Oregon and Texas. In southwest Missouri, Douglas, Ozark and Wright.</summary>
+<cap:event>Flood Warning</cap:event>
+<cap:effective>2023-02-08T20:46:00-06:00</cap:effective>
+<cap:expires>2023-02-10T17:28:00-06:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Wright</cap:areaDesc>
+<cap:polygon>36.81,-92.76 36.82,-92.89 37.06,-92.89 37.07,-92.68 37.3,-92.67 37.4,-92.19 37.26,-91.92 37.11,-91.67 36.88,-91.66 36.88,-91.23 36.82,-91.23 36.82,-91.12 36.5,-91.13 36.5,-91.67 36.5,-92.77 36.79,-92.75 36.81,-92.76</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>029229</value>
+<valueName>UGC</valueName>
+<value>MOC229</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KSGF.FA.W.0002.000000T0000Z-230209T1500Z/
+/00000.0.ER.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=MO1266366C3258.FloodWarning.1266369BC540MO.SGFFLSSGF.f11e187f4bb4faae31d7bfcd0a2319b5</id>
+<updated>2023-02-08T20:46:00-06:00</updated>
+<published>2023-02-08T20:46:00-06:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Flood Warning issued February 08 at 8:46PM CST until February 12 at 8:24AM CST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MO1266366C3258.FloodWarning.1266369BC540MO.SGFFLSSGF.f11e187f4bb4faae31d7bfcd0a2319b5"/>
+<summary>...FLOOD WARNING REMAINS IN EFFECT UNTIL 9 AM CST THURSDAY... * WHAT...Flooding caused by excessive rainfall continues. * WHERE...Portions of south central and southwest Missouri, including the following counties, in south central Missouri, Howell, Oregon and Texas. In southwest Missouri, Douglas, Ozark and Wright.</summary>
+<cap:event>Flood Warning</cap:event>
+<cap:effective>2023-02-08T20:46:00-06:00</cap:effective>
+<cap:expires>2023-02-12T08:24:00-06:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Howell; Oregon; Ozark; Texas</cap:areaDesc>
+<cap:polygon>36.81,-92.76 36.82,-92.89 37.06,-92.89 37.07,-92.68 37.3,-92.67 37.4,-92.19 37.26,-91.92 37.11,-91.67 36.88,-91.66 36.88,-91.23 36.82,-91.23 36.82,-91.12 36.5,-91.13 36.5,-91.67 36.5,-92.77 36.79,-92.75 36.81,-92.76</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>029091 029149 029153 029215</value>
+<valueName>UGC</valueName>
+<value>MOC091 MOC149 MOC153 MOC215</value>
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
@@ -4984,6 +5216,39 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value>/O.CON.PGUM.RP.S.0005.000000T0000Z-230212T1800Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=MS1266366DF64C.FloodWarning.1266369B1FA0MS.JANFLWJAN.254780386e9457b020cc146f9fe17a52</id>
+<updated>2023-02-09T08:03:00-06:00</updated>
+<published>2023-02-09T08:03:00-06:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Flood Warning issued February 09 at 8:03AM CST until February 12 at 4:00AM CST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MS1266366DF64C.FloodWarning.1266369B1FA0MS.JANFLWJAN.254780386e9457b020cc146f9fe17a52"/>
+<summary>...The National Weather Service in Jackson MS has issued a Flood Warning for the following rivers in Mississippi... Noxubee River At Macon affecting Noxubee County. For the Tennesse-Tombigbee River ...including Tibbee, Stennis Lock &amp; Dam, Columbus, Macon...Minor flooding is forecast. ...FLOOD WARNING IN EFFECT FROM LATE TONIGHT TO EARLY SUNDAY</summary>
+<cap:event>Flood Warning</cap:event>
+<cap:effective>2023-02-09T08:03:00-06:00</cap:effective>
+<cap:expires>2023-02-12T04:00:00-06:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Noxubee</cap:areaDesc>
+<cap:polygon>33,-88.52 33.07,-88.62 33.14,-88.75 33.2,-88.67 33.13,-88.55 33.04,-88.45 33,-88.52</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>028103</value>
+<valueName>UGC</valueName>
+<value>MSC103</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.NEW.KJAN.FL.W.0026.230210T0900Z-230212T1000Z/
+/MCNM6.1.ER.230210T0900Z.230211T0000Z.230211T1600Z.NO/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -5613,38 +5878,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=NC1266366DB060.SpecialWeatherStatement.1266366E00D8NC.ILMSPSILM.6f22ad0ea190de9c50a309fef718238b</id>
-<updated>2023-02-09T07:24:00-05:00</updated>
-<published>2023-02-09T07:24:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Special Weather Statement issued February 09 at 7:24AM EST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=NC1266366DB060.SpecialWeatherStatement.1266366E00D8NC.ILMSPSILM.6f22ad0ea190de9c50a309fef718238b"/>
-<summary>Localized patches of dense fog will affect the area for the next hour or so. The fog is very localized with visibilities down to one quarter mile or less in some places. Conditions should improve through the morning hours.</summary>
-<cap:event>Special Weather Statement</cap:event>
-<cap:effective>2023-02-09T07:24:00-05:00</cap:effective>
-<cap:expires>2023-02-09T09:30:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Observed</cap:certainty>
-<cap:areaDesc>Bladen; Coastal Brunswick; Coastal New Hanover; Coastal Pender; Columbus; Inland Brunswick; Inland New Hanover; Inland Pender; Robeson</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>037017 037019 037047 037129 037141 037155</value>
-<valueName>UGC</valueName>
-<value>NCZ087 NCZ096 NCZ099 NCZ105 NCZ106 NCZ107 NCZ108 NCZ109 NCZ110</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value></value>
-</cap:parameter>
-</entry>
-<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=NE1266366DDAF4.SpecialWeatherStatement.1266366E9160NE.CYSSPSCYS.13ff640a7214d9745026eef808cc7ce6</id>
 <updated>2023-02-09T07:33:00-06:00</updated>
 <published>2023-02-09T07:33:00-06:00</published>
@@ -5994,6 +6227,38 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value>/O.CON.KVEF.LW.Y.0001.230209T1200Z-230210T0000Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=NY1266366DF840.SpecialWeatherStatement.1266366E4340NY.OKXSPSOKX.8231006f6ee20e5344c6a2d57e55e59f</id>
+<updated>2023-02-09T09:08:00-05:00</updated>
+<published>2023-02-09T09:08:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Special Weather Statement issued February 09 at 9:08AM EST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=NY1266366DF840.SpecialWeatherStatement.1266366E4340NY.OKXSPSOKX.8231006f6ee20e5344c6a2d57e55e59f"/>
+<summary>Patches of light freezing rain are possible this morning, mainly along Interstate-84 in Orange County NY as well as points north and west. Little to no ice accumulation, if any, is expected. Temperatures should be above freezing across these locations by 11AM. If traveling outside this morning, be on the lookout for</summary>
+<cap:event>Special Weather Statement</cap:event>
+<cap:effective>2023-02-09T09:08:00-05:00</cap:effective>
+<cap:expires>2023-02-09T11:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Observed</cap:certainty>
+<cap:areaDesc>Orange</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>036071</value>
+<valueName>UGC</valueName>
+<value>NYZ067</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value></value>
 </cap:parameter>
 </entry>
 <entry>
@@ -6605,6 +6870,39 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=OK1266366DF96C.FloodWarning.1266368A6AACOK.TSAFLSTSA.abc3e4e4172af117c8dd9335b40bd3f5</id>
+<updated>2023-02-09T08:11:00-06:00</updated>
+<published>2023-02-09T08:11:00-06:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Flood Warning issued February 09 at 8:11AM CST until February 10 at 6:51PM CST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=OK1266366DF96C.FloodWarning.1266368A6AACOK.TSAFLSTSA.abc3e4e4172af117c8dd9335b40bd3f5"/>
+<summary>...The Flood Warning is extended for the following rivers in Oklahoma... Poteau River near Panama affecting Le Flore County. ...FLOOD WARNING NOW IN EFFECT UNTIL TOMORROW EVENING... * WHAT...Moderate flooding is occurring and moderate flooding is forecast.</summary>
+<cap:event>Flood Warning</cap:event>
+<cap:effective>2023-02-09T08:11:00-06:00</cap:effective>
+<cap:expires>2023-02-10T18:51:00-06:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Le Flore</cap:areaDesc>
+<cap:polygon>35.4,-94.49 35.4,-94.39 35.23,-94.42 35.04,-94.62 35.21,-94.7 35.4,-94.49</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>040079</value>
+<valueName>UGC</valueName>
+<value>OKC079</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.EXT.KTSA.FL.W.0001.000000T0000Z-230211T0051Z/
+/PANO2.2.ER.230208T2118Z.230210T0000Z.230210T1851Z.NO/</value>
+</cap:parameter>
+</entry>
+<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=OK1266366DDAF4.FloodWarning.1266367D20B8OK.TSAFLSTSA.ce92bea107a5181db649344aee5422a3</id>
 <updated>2023-02-09T07:33:00-06:00</updated>
 <published>2023-02-09T07:33:00-06:00</published>
@@ -6799,105 +7097,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=OK1266366D0FD4.FloodAdvisory.1266367BFEE0OK.TSAFLSTSA.06a93d04e32136457040b4fdbdb6efb9</id>
-<updated>2023-02-09T02:13:00-06:00</updated>
-<published>2023-02-09T02:13:00-06:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Flood Advisory issued February 09 at 2:13AM CST until February 10 at 12:00AM CST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=OK1266366D0FD4.FloodAdvisory.1266367BFEE0OK.TSAFLSTSA.06a93d04e32136457040b4fdbdb6efb9"/>
-<summary>...The Flood Advisory continues for the following rivers in Oklahoma...Arkansas... Lee Creek near Van Buren affecting Sequoyah and Crawford Counties. ...FLOOD ADVISORY REMAINS IN EFFECT UNTIL JUST AFTER MIDNIGHT TONIGHT... * WHAT...Flooding caused by excessive rainfall continues.</summary>
-<cap:event>Flood Advisory</cap:event>
-<cap:effective>2023-02-09T02:13:00-06:00</cap:effective>
-<cap:expires>2023-02-10T00:00:00-06:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Sequoyah</cap:areaDesc>
-<cap:polygon>35.54,-94.37 35.42,-94.37 35.42,-94.42 35.54,-94.52 35.54,-94.37</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>040135</value>
-<valueName>UGC</valueName>
-<value>OKC135</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KTSA.FL.Y.0005.000000T0000Z-230210T0600Z/
-/VBRA4.N.ER.000000T0000Z.000000T0000Z.000000T0000Z.UU/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=OK1266366D0E44.FloodWarning.1266366E2B08OK.TSAFLSTSA.7c540839f088ff51d33366187f836d6d</id>
-<updated>2023-02-09T02:09:00-06:00</updated>
-<published>2023-02-09T02:09:00-06:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Flood Warning issued February 09 at 2:09AM CST until February 09 at 9:38AM CST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=OK1266366D0E44.FloodWarning.1266366E2B08OK.TSAFLSTSA.7c540839f088ff51d33366187f836d6d"/>
-<summary>...The Flood Warning is extended for the following rivers in Oklahoma... Poteau River near Poteau affecting Le Flore County. ...The Flood Warning continues for the following rivers in Oklahoma... Poteau River near Panama affecting Le Flore County.</summary>
-<cap:event>Flood Warning</cap:event>
-<cap:effective>2023-02-09T02:09:00-06:00</cap:effective>
-<cap:expires>2023-02-09T09:38:00-06:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Le Flore</cap:areaDesc>
-<cap:polygon>35.13,-94.56 35.06,-94.54 34.95,-94.61 34.95,-94.71 35.13,-94.68 35.13,-94.56</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>040079</value>
-<valueName>UGC</valueName>
-<value>OKC079</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.EXT.KTSA.FL.W.0005.000000T0000Z-230209T1538Z/
-/PTAO2.1.ER.230208T2223Z.230209T0415Z.230209T0938Z.NO/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=OK1266366D0E44.FloodWarning.1266368A6340OK.TSAFLSTSA.abc3e4e4172af117c8dd9335b40bd3f5</id>
-<updated>2023-02-09T02:09:00-06:00</updated>
-<published>2023-02-09T02:09:00-06:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Flood Warning issued February 09 at 2:09AM CST until February 10 at 6:32PM CST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=OK1266366D0E44.FloodWarning.1266368A6340OK.TSAFLSTSA.abc3e4e4172af117c8dd9335b40bd3f5"/>
-<summary>...The Flood Warning is extended for the following rivers in Oklahoma... Poteau River near Poteau affecting Le Flore County. ...The Flood Warning continues for the following rivers in Oklahoma... Poteau River near Panama affecting Le Flore County.</summary>
-<cap:event>Flood Warning</cap:event>
-<cap:effective>2023-02-09T02:09:00-06:00</cap:effective>
-<cap:expires>2023-02-10T18:32:00-06:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Le Flore</cap:areaDesc>
-<cap:polygon>35.4,-94.49 35.4,-94.39 35.23,-94.42 35.04,-94.62 35.21,-94.7 35.4,-94.49</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>040079</value>
-<valueName>UGC</valueName>
-<value>OKC079</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.EXT.KTSA.FL.W.0001.000000T0000Z-230211T0032Z/
-/PANO2.2.ER.230208T2118Z.230209T1800Z.230210T1832Z.NO/</value>
-</cap:parameter>
-</entry>
-<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=OK1266366C29C0.FloodWarning.1266368D15E0OK.SHVFLSSHV.d9d4a6e609b8ab4bb196fa4dc35b5f83</id>
 <updated>2023-02-08T20:24:00-06:00</updated>
 <published>2023-02-08T20:24:00-06:00</published>
@@ -7030,6 +7229,70 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=OR1266366DFB60.WindAdvisory.1266367D5E70OR.PDTNPWPDT.2d827ef2fcaff75ee4577ef7e528d786</id>
+<updated>2023-02-09T06:16:00-08:00</updated>
+<published>2023-02-09T06:16:00-08:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Wind Advisory issued February 09 at 6:16AM PST until February 10 at 7:00AM PST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=OR1266366DFB60.WindAdvisory.1266367D5E70OR.PDTNPWPDT.2d827ef2fcaff75ee4577ef7e528d786"/>
+<summary>...WIND ADVISORY REMAINS IN EFFECT FROM 1 PM THIS AFTERNOON TO 7 AM PST FRIDAY FOR LADD AND PYLES CANYONS... * WHAT...South winds 25 to 35 mph with gusts up to 50 mph expected for Ladd and Pyles Canyons. * WHERE...Grande Ronde Valley. * WHEN...From 1 PM this afternoon to 7 AM PST Friday.</summary>
+<cap:event>Wind Advisory</cap:event>
+<cap:effective>2023-02-09T06:16:00-08:00</cap:effective>
+<cap:expires>2023-02-10T07:00:00-08:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Grande Ronde Valley</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>041061</value>
+<valueName>UGC</valueName>
+<value>ORZ049</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KPDT.WI.Y.0011.230209T2100Z-230210T1500Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=OR1266366DFB60.WindAdvisory.1266367D5E70OR.PDTNPWPDT.dca5e26329c22ac1baae863175364c87</id>
+<updated>2023-02-09T06:16:00-08:00</updated>
+<published>2023-02-09T06:16:00-08:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Wind Advisory issued February 09 at 6:16AM PST until February 10 at 7:00AM PST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=OR1266366DFB60.WindAdvisory.1266367D5E70OR.PDTNPWPDT.dca5e26329c22ac1baae863175364c87"/>
+<summary>...WIND ADVISORY REMAINS IN EFFECT FROM 1 PM THIS AFTERNOON TO 7 AM PST FRIDAY ALONG THE BASE OF THE OREGON BLUE MOUNTAINS... * WHAT...Southeast winds 20 to 30 mph with gusts up to 55 mph expected along the base of the Blue Mountains. * WHERE...Northern Blue Mountains of Oregon and Foothills of the Northern Blue Mountains of Oregon.</summary>
+<cap:event>Wind Advisory</cap:event>
+<cap:effective>2023-02-09T06:16:00-08:00</cap:effective>
+<cap:expires>2023-02-10T07:00:00-08:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Foothills of the Northern Blue Mountains of Oregon; Northern Blue Mountains of Oregon</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>041059 041061 041063</value>
+<valueName>UGC</valueName>
+<value>ORZ502 ORZ507</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KPDT.WI.Y.0011.230209T2100Z-230210T1500Z/</value>
+</cap:parameter>
+</entry>
+<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=OR1266366D5A0C.BeachHazardsStatement.126636999900OR.PQRCFWPQR.051bd4dd459ab5c4e33c6a0dc6379e91</id>
 <updated>2023-02-09T02:03:00-08:00</updated>
 <published>2023-02-09T02:03:00-08:00</published>
@@ -7059,70 +7322,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value>/O.NEW.KPQR.BH.S.0003.230210T1200Z-230212T0000Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=OR1266365FF5EC.WindAdvisory.1266367D5E70OR.PDTNPWPDT.2d827ef2fcaff75ee4577ef7e528d786</id>
-<updated>2023-02-08T14:27:00-08:00</updated>
-<published>2023-02-08T14:27:00-08:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Wind Advisory issued February 08 at 2:27PM PST until February 10 at 7:00AM PST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=OR1266365FF5EC.WindAdvisory.1266367D5E70OR.PDTNPWPDT.2d827ef2fcaff75ee4577ef7e528d786"/>
-<summary>...WIND ADVISORY IN EFFECT FROM 1 PM THURSDAY TO 7 AM PST FRIDAY FOR LADD AND PYLES CANYONS... * WHAT...South winds 25 to 35 mph with gusts up to 50 mph expected for Ladd and Pyles Canyons. * WHERE...Grande Ronde Valley. * WHEN...From 1 PM Thursday to 7 AM PST Friday.</summary>
-<cap:event>Wind Advisory</cap:event>
-<cap:effective>2023-02-08T14:27:00-08:00</cap:effective>
-<cap:expires>2023-02-10T07:00:00-08:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Grande Ronde Valley</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>041061</value>
-<valueName>UGC</valueName>
-<value>ORZ049</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.NEW.KPDT.WI.Y.0011.230209T2100Z-230210T1500Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=OR1266365FF5EC.WindAdvisory.1266367D5E70OR.PDTNPWPDT.dca5e26329c22ac1baae863175364c87</id>
-<updated>2023-02-08T14:27:00-08:00</updated>
-<published>2023-02-08T14:27:00-08:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Wind Advisory issued February 08 at 2:27PM PST until February 10 at 7:00AM PST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=OR1266365FF5EC.WindAdvisory.1266367D5E70OR.PDTNPWPDT.dca5e26329c22ac1baae863175364c87"/>
-<summary>...WIND ADVISORY IN EFFECT FROM 1 PM THURSDAY TO 7 AM PST FRIDAY ALONG THE BASE OF THE OREGON BLUE MOUNTAINS... * WHAT...Southeast winds 25 to 35 mph with gusts up to 50 mph expected along the base of the Blue Mountains. * WHERE...Northern Blue Mountains of Oregon and Foothills of the Northern Blue Mountains of Oregon.</summary>
-<cap:event>Wind Advisory</cap:event>
-<cap:effective>2023-02-08T14:27:00-08:00</cap:effective>
-<cap:expires>2023-02-10T07:00:00-08:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Foothills of the Northern Blue Mountains of Oregon; Northern Blue Mountains of Oregon</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>041059 041061 041063</value>
-<valueName>UGC</valueName>
-<value>ORZ502 ORZ507</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.NEW.KPDT.WI.Y.0011.230209T2100Z-230210T1500Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -7549,38 +7748,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <valueName>VTEC</valueName>
 <value>/O.CON.TJSJ.SU.Y.0003.230209T2200Z-230211T1000Z/
 /O.CON.TJSJ.RP.S.0011.000000T0000Z-230211T2200Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=SC1266366DB060.SpecialWeatherStatement.1266366E00D8SC.ILMSPSILM.6937138a7954b5abcc87425906c14c9f</id>
-<updated>2023-02-09T07:24:00-05:00</updated>
-<published>2023-02-09T07:24:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Special Weather Statement issued February 09 at 7:24AM EST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=SC1266366DB060.SpecialWeatherStatement.1266366E00D8SC.ILMSPSILM.6937138a7954b5abcc87425906c14c9f"/>
-<summary>Localized patches of dense fog will affect the area for the next hour or so. The fog is very localized with visibilities down to one quarter mile or less in some places. Conditions should improve through the morning hours.</summary>
-<cap:event>Special Weather Statement</cap:event>
-<cap:effective>2023-02-09T07:24:00-05:00</cap:effective>
-<cap:expires>2023-02-09T09:30:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Observed</cap:certainty>
-<cap:areaDesc>Central Horry; Coastal Georgetown; Coastal Horry; Darlington; Dillon; Florence; Inland Georgetown; Marion; Marlboro; Northern Horry; Williamsburg</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>045031 045033 045041 045043 045051 045067 045069 045089</value>
-<valueName>UGC</valueName>
-<value>SCZ017 SCZ023 SCZ024 SCZ032 SCZ033 SCZ039 SCZ054 SCZ055 SCZ056 SCZ058 SCZ059</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value></value>
 </cap:parameter>
 </entry>
 <entry>
@@ -8068,6 +8235,72 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=TX1266366DF908.FloodWarning.1266367C25F0TX.FWDFLSFWD.b259e728cceaf7bc000e534e969d31a4</id>
+<updated>2023-02-09T08:10:00-06:00</updated>
+<published>2023-02-09T08:10:00-06:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Flood Warning issued February 09 at 8:10AM CST until February 10 at 1:00AM CST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=TX1266366DF908.FloodWarning.1266367C25F0TX.FWDFLSFWD.b259e728cceaf7bc000e534e969d31a4"/>
+<summary>...The Flood Warning continues for the following rivers in Texas... Cowleech Fork Sabine River At Greenville affecting Hunt County. ...The Flood Warning is extended for the following rivers in Texas... South Fork Sabine River Near Quinlan affecting Hunt, Kaufman and Rockwall Counties. Additional information is available at www.weather.gov/fwd.</summary>
+<cap:event>Flood Warning</cap:event>
+<cap:effective>2023-02-09T08:10:00-06:00</cap:effective>
+<cap:expires>2023-02-10T01:00:00-06:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Hunt; Kaufman; Rockwall</cap:areaDesc>
+<cap:polygon>32.97,-96.27 32.93,-96.15 32.83,-96.2 32.87,-96.34 32.97,-96.27</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>048231 048257 048397</value>
+<valueName>UGC</valueName>
+<value>TXC231 TXC257 TXC397</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.EXT.KFWD.FL.W.0004.000000T0000Z-230210T0700Z/
+/QLAT2.1.ER.230208T0529Z.230208T1830Z.230209T1900Z.NO/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=TX1266366DF908.FloodWarning.1266367C2F50TX.FWDFLSFWD.e944fc7e7739b7c4d92f1678b6082d2c</id>
+<updated>2023-02-09T08:10:00-06:00</updated>
+<published>2023-02-09T08:10:00-06:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Flood Warning issued February 09 at 8:10AM CST until February 10 at 1:24AM CST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=TX1266366DF908.FloodWarning.1266367C2F50TX.FWDFLSFWD.e944fc7e7739b7c4d92f1678b6082d2c"/>
+<summary>...The Flood Warning continues for the following rivers in Texas... Cowleech Fork Sabine River At Greenville affecting Hunt County. ...The Flood Warning is extended for the following rivers in Texas... South Fork Sabine River Near Quinlan affecting Hunt, Kaufman and Rockwall Counties. Additional information is available at www.weather.gov/fwd.</summary>
+<cap:event>Flood Warning</cap:event>
+<cap:effective>2023-02-09T08:10:00-06:00</cap:effective>
+<cap:expires>2023-02-10T01:24:00-06:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Hunt</cap:areaDesc>
+<cap:polygon>33.19,-96.05 33.09,-95.95 33.03,-96.07 33.17,-96.19 33.19,-96.05</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>048231</value>
+<valueName>UGC</valueName>
+<value>TXC231</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.EXT.KFWD.FL.W.0003.000000T0000Z-230210T0724Z/
+/GNVT2.1.ER.230208T0713Z.230208T2345Z.230209T1924Z.NO/</value>
+</cap:parameter>
+</entry>
+<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=TX1266366DD644.SpecialWeatherStatement.1266366E1C30TX.EWXSPSEWX.e8b7fd3a1936ec6f39bdf44d1780bb11</id>
 <updated>2023-02-09T07:21:00-06:00</updated>
 <published>2023-02-09T07:21:00-06:00</published>
@@ -8225,38 +8458,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value>/O.CON.KOUN.ZF.Y.0001.000000T0000Z-230209T1600Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=TX1266366D5C64.SpecialWeatherStatement.1266366DFAFCTX.CRPSPSCRP.1638b6fe28ead859d2d38706e0757cfb</id>
-<updated>2023-02-09T04:09:00-06:00</updated>
-<published>2023-02-09T04:09:00-06:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Special Weather Statement issued February 09 at 4:09AM CST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=TX1266366D5C64.SpecialWeatherStatement.1266366DFAFCTX.CRPSPSCRP.1638b6fe28ead859d2d38706e0757cfb"/>
-<summary>...AREAS OF FOG THIS MORNING... Areas of fog have developed across portions of South Texas this morning. Expect visibilities generally 1 mile or less with a few locations seeing visibilities 1/4 mile or less at times. Use caution if traveling as visibility may change rapidly</summary>
-<cap:event>Special Weather Statement</cap:event>
-<cap:effective>2023-02-09T04:09:00-06:00</cap:effective>
-<cap:expires>2023-02-09T08:15:00-06:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Observed</cap:certainty>
-<cap:areaDesc>Aransas Islands; Bee; Calhoun Islands; Coastal Aransas; Coastal Calhoun; Coastal Kleberg; Coastal Nueces; Coastal Refugio; Coastal San Patricio; Goliad; Inland Calhoun; Inland Kleberg; Inland Nueces; Inland Refugio; Inland San Patricio; Jim Wells; Kleberg Islands; Nueces Islands; Victoria</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>048007 048025 048057 048175 048249 048273 048355 048391 048409 048469</value>
-<valueName>UGC</valueName>
-<value>TXZ232 TXZ233 TXZ234 TXZ241 TXZ242 TXZ243 TXZ244 TXZ245 TXZ246 TXZ247 TXZ342 TXZ343 TXZ344 TXZ345 TXZ346 TXZ347 TXZ442 TXZ443 TXZ447</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value></value>
 </cap:parameter>
 </entry>
 <entry>
@@ -8750,72 +8951,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <valueName>VTEC</valueName>
 <value>/O.EXT.KFWD.FL.W.0008.000000T0000Z-230210T0500Z/
 /DALT2.1.ER.230208T1801Z.230209T0600Z.230209T1700Z.NO/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=TX1266366BFA18.FloodWarning.1266367BC060TX.FWDFLSFWD.b259e728cceaf7bc000e534e969d31a4</id>
-<updated>2023-02-08T19:02:00-06:00</updated>
-<published>2023-02-08T19:02:00-06:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Flood Warning issued February 08 at 7:02PM CST until February 09 at 10:40PM CST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=TX1266366BFA18.FloodWarning.1266367BC060TX.FWDFLSFWD.b259e728cceaf7bc000e534e969d31a4"/>
-<summary>...The Flood Warning continues for the following rivers in Texas... Cowleech Fork Sabine River At Greenville affecting Hunt County. South Fork Sabine River Near Quinlan affecting Kaufman, Rockwall and Hunt Counties. Additional information is available at www.weather.gov/fwd. ...FLOOD WARNING NOW IN EFFECT UNTIL LATE TOMORROW EVENING...</summary>
-<cap:event>Flood Warning</cap:event>
-<cap:effective>2023-02-08T19:02:00-06:00</cap:effective>
-<cap:expires>2023-02-09T22:40:00-06:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Hunt; Kaufman; Rockwall</cap:areaDesc>
-<cap:polygon>32.97,-96.27 32.93,-96.15 32.83,-96.2 32.87,-96.34 32.97,-96.27</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>048231 048257 048397</value>
-<valueName>UGC</valueName>
-<value>TXC231 TXC257 TXC397</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.EXT.KFWD.FL.W.0004.000000T0000Z-230210T0440Z/
-/QLAT2.1.ER.230208T0529Z.230208T1830Z.230209T1640Z.NO/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=TX1266366BFA18.FloodWarning.1266367C3B08TX.FWDFLSFWD.e944fc7e7739b7c4d92f1678b6082d2c</id>
-<updated>2023-02-08T19:02:00-06:00</updated>
-<published>2023-02-08T19:02:00-06:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Flood Warning issued February 08 at 7:02PM CST until February 10 at 1:54AM CST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=TX1266366BFA18.FloodWarning.1266367C3B08TX.FWDFLSFWD.e944fc7e7739b7c4d92f1678b6082d2c"/>
-<summary>...The Flood Warning continues for the following rivers in Texas... Cowleech Fork Sabine River At Greenville affecting Hunt County. South Fork Sabine River Near Quinlan affecting Kaufman, Rockwall and Hunt Counties. Additional information is available at www.weather.gov/fwd. ...FLOOD WARNING NOW IN EFFECT UNTIL EARLY FRIDAY MORNING...</summary>
-<cap:event>Flood Warning</cap:event>
-<cap:effective>2023-02-08T19:02:00-06:00</cap:effective>
-<cap:expires>2023-02-10T01:54:00-06:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Hunt</cap:areaDesc>
-<cap:polygon>33.19,-96.05 33.09,-95.95 33.03,-96.07 33.17,-96.19 33.19,-96.05</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>048231</value>
-<valueName>UGC</valueName>
-<value>TXC231</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.EXT.KFWD.FL.W.0003.000000T0000Z-230210T0754Z/
-/GNVT2.2.ER.230208T0713Z.230208T2345Z.230209T1954Z.NO/</value>
 </cap:parameter>
 </entry>
 <entry>
