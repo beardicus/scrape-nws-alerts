@@ -16,16 +16,48 @@ xmlns = 'http://www.w3.org/2005/Atom'
 xmlns:cap = 'urn:oasis:names:tc:emergency:cap:1.1'
 xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 >
-<!-- http-date = Fri, 10 Feb 2023 15:03:00 GMT -->
+<!-- http-date = Fri, 10 Feb 2023 15:31:00 GMT -->
 <id>https://alerts.weather.gov/cap/us.php?x=0</id>
 <logo>http://alerts.weather.gov/images/xml_logo.gif</logo>
 <generator>NWS CAP Server</generator>
-<updated>2023-02-10T10:03:00-05:00</updated>
+<updated>2023-02-10T10:31:00-05:00</updated>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
 <title>Current Watches, Warnings and Advisories for the United States Issued by the National Weather Service</title>
 <link href="https://alerts.weather.gov/cap/us.php?x=0"/>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=AK1266367D6320.WindChillAdvisory.1266369AF890AK.AFGWSWNSB.074d407706c85a6871e839f6f43775da</id>
+<updated>2023-02-10T06:12:00-09:00</updated>
+<published>2023-02-10T06:12:00-09:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Wind Chill Advisory issued February 10 at 6:12AM AKST until February 12 at 12:00AM AKST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=AK1266367D6320.WindChillAdvisory.1266369AF890AK.AFGWSWNSB.074d407706c85a6871e839f6f43775da"/>
+<summary>...WIND CHILL ADVISORY NOW IN EFFECT UNTIL MIDNIGHT AKST SATURDAY NIGHT... * WHAT...Very cold wind chills. Wind chills as low as 55 below zero. * WHERE...Western Arctic Coast. * WHEN...Until midnight AKST Saturday night.</summary>
+<cap:event>Wind Chill Advisory</cap:event>
+<cap:effective>2023-02-10T06:12:00-09:00</cap:effective>
+<cap:expires>2023-02-12T00:00:00-09:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Western Arctic Coast</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>002185</value>
+<valueName>UGC</valueName>
+<value>AKZ201</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.EXT.PAFG.WC.Y.0007.230210T1512Z-230212T0900Z/</value>
+</cap:parameter>
+</entry>
 <entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=AK1266367D469C.WinterWeatherAdvisory.1266368CA0B0AK.AJKWSWAJK.4516bc7eef80ce32e28d6dc1825f2276</id>
 <updated>2023-02-10T05:39:00-09:00</updated>
@@ -313,38 +345,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value>/O.CON.PAFC.WW.Y.0015.230210T2000Z-230211T0600Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=AK1266367CF87C.WindChillAdvisory.1266369AF890AK.AFGWSWNSB.074d407706c85a6871e839f6f43775da</id>
-<updated>2023-02-10T03:39:00-09:00</updated>
-<published>2023-02-10T03:39:00-09:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Wind Chill Advisory issued February 10 at 3:39AM AKST until February 12 at 12:00AM AKST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=AK1266367CF87C.WindChillAdvisory.1266369AF890AK.AFGWSWNSB.074d407706c85a6871e839f6f43775da"/>
-<summary>...WIND CHILL ADVISORY IN EFFECT FROM 6 PM THIS EVENING TO MIDNIGHT AKST SATURDAY NIGHT... * WHAT...Very cold wind chills expected. Wind chills as low as 55 below zero. * WHERE...Western Arctic Coast. * WHEN...From 6 PM this evening to midnight AKST Saturday night.</summary>
-<cap:event>Wind Chill Advisory</cap:event>
-<cap:effective>2023-02-10T03:39:00-09:00</cap:effective>
-<cap:expires>2023-02-12T00:00:00-09:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Western Arctic Coast</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>002185</value>
-<valueName>UGC</valueName>
-<value>AKZ201</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.NEW.PAFG.WC.Y.0007.230211T0300Z-230212T0900Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -1912,6 +1912,171 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=GA1266367D6384.FloodAdvisory.1266368AAABCGA.JAXFLSJAX.3824cd154cdb96a9bcf4f9987e199e66</id>
+<updated>2023-02-10T10:13:00-05:00</updated>
+<published>2023-02-10T10:13:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Flood Advisory issued February 10 at 10:13AM EST until further notice by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=GA1266367D6384.FloodAdvisory.1266368AAABCGA.JAXFLSJAX.3824cd154cdb96a9bcf4f9987e199e66"/>
+<summary>...FLOOD ADVISORY IN EFFECT UNTIL 130 PM EST THIS AFTERNOON... * WHAT...Flooding caused by excessive rainfall is expected. * WHERE...A portion of southeast Georgia, including the following counties, Clinch, Echols and Ware. * WHEN...Until 130 PM EST. * IMPACTS...Minor flooding in low-lying and poor drainage areas.</summary>
+<cap:event>Flood Advisory</cap:event>
+<cap:effective>2023-02-10T10:13:00-05:00</cap:effective>
+<cap:expires>2023-02-10T21:15:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Clinch; Echols; Ware</cap:areaDesc>
+<cap:polygon>30.87,-82.97 30.95,-82.97 31,-82.9 31.14,-82.57 31.09,-82.52 30.71,-82.97 30.63,-83.14 30.72,-83.13 30.77,-83.14 30.8,-83.13 30.8,-83.1 30.83,-83.1 30.83,-83.09 30.85,-83.09 30.85,-83.01 30.86,-83.01 30.87,-82.98 30.87,-82.97</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>013065 013101 013299</value>
+<valueName>UGC</valueName>
+<value>GAC065 GAC101 GAC299</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.NEW.KJAX.FA.Y.0001.230210T1513Z-230210T1830Z/
+/00000.N.ER.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=GA1266367D6384.FloodWarning.1266368CA68CGA.JAXFLSJAX.25771d2fa247435b7a98c78edaeb9be6</id>
+<updated>2023-02-10T10:13:00-05:00</updated>
+<published>2023-02-10T10:13:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Flood Warning issued February 10 at 10:13AM EST until further notice by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=GA1266367D6384.FloodWarning.1266368CA68CGA.JAXFLSJAX.25771d2fa247435b7a98c78edaeb9be6"/>
+<summary>...The Flood Warning continues for the following rivers in Georgia... Altamaha River At Charlotteville affecting Jeff Davis, Montgomery and Toombs Counties. Altamaha River At Baxley affecting Toombs, Wayne, Tattnall and Appling Counties. Satilla River At Atkinson affecting Brantley County.</summary>
+<cap:event>Flood Warning</cap:event>
+<cap:effective>2023-02-10T10:13:00-05:00</cap:effective>
+<cap:expires>2023-02-11T10:15:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Appling; Tattnall; Toombs; Wayne</cap:areaDesc>
+<cap:polygon>32,-82.43 31.93,-82.13 31.83,-81.95 31.76,-81.99 31.88,-82.22 31.94,-82.43 32,-82.43</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>013001 013267 013279 013305</value>
+<valueName>UGC</valueName>
+<value>GAC001 GAC267 GAC279 GAC305</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KJAX.FL.W.0002.000000T0000Z-000000T0000Z/
+/BAXG1.1.ER.230131T0315Z.230206T1900Z.000000T0000Z.NO/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=GA1266367D6384.FloodWarning.1266368CA68CGA.JAXFLSJAX.26cd9302aa13c5e6e27fc1192fecc1aa</id>
+<updated>2023-02-10T10:13:00-05:00</updated>
+<published>2023-02-10T10:13:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Flood Warning issued February 10 at 10:13AM EST until further notice by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=GA1266367D6384.FloodWarning.1266368CA68CGA.JAXFLSJAX.26cd9302aa13c5e6e27fc1192fecc1aa"/>
+<summary>...The Flood Warning continues for the following rivers in Georgia... Altamaha River At Charlotteville affecting Jeff Davis, Montgomery and Toombs Counties. Altamaha River At Baxley affecting Toombs, Wayne, Tattnall and Appling Counties. Satilla River At Atkinson affecting Brantley County.</summary>
+<cap:event>Flood Warning</cap:event>
+<cap:effective>2023-02-10T10:13:00-05:00</cap:effective>
+<cap:expires>2023-02-11T10:15:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Brantley</cap:areaDesc>
+<cap:polygon>31.29,-81.84 31.14,-81.83 31.14,-81.9 31.28,-81.91 31.29,-81.84</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>013025</value>
+<valueName>UGC</valueName>
+<value>GAC025</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KJAX.FL.W.0005.000000T0000Z-000000T0000Z/
+/ATKG1.1.ER.230205T0500Z.230209T1215Z.000000T0000Z.NO/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=GA1266367D6384.FloodWarning.1266368CA68CGA.JAXFLSJAX.582e44a03df43828b53f32ecc39e8dd7</id>
+<updated>2023-02-10T10:13:00-05:00</updated>
+<published>2023-02-10T10:13:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Flood Warning issued February 10 at 10:13AM EST until further notice by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=GA1266367D6384.FloodWarning.1266368CA68CGA.JAXFLSJAX.582e44a03df43828b53f32ecc39e8dd7"/>
+<summary>...The Flood Warning continues for the following rivers in Georgia... Altamaha River At Charlotteville affecting Jeff Davis, Montgomery and Toombs Counties. Altamaha River At Baxley affecting Toombs, Wayne, Tattnall and Appling Counties. Satilla River At Atkinson affecting Brantley County.</summary>
+<cap:event>Flood Warning</cap:event>
+<cap:effective>2023-02-10T10:13:00-05:00</cap:effective>
+<cap:expires>2023-02-11T10:15:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Jeff Davis; Montgomery; Toombs</cap:areaDesc>
+<cap:polygon>31.99,-82.54 32,-82.43 31.94,-82.43 31.94,-82.55 31.99,-82.54</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>013161 013209 013279</value>
+<valueName>UGC</valueName>
+<value>GAC161 GAC209 GAC279</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KJAX.FL.W.0003.000000T0000Z-000000T0000Z/
+/CHRG1.1.ER.230131T1915Z.230205T2130Z.000000T0000Z.NO/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=GA1266367D6384.FloodWarning.126636B9F240GA.JAXFLWJAX.9ca5cd328a97b2bb679f310ad05276c5</id>
+<updated>2023-02-10T10:13:00-05:00</updated>
+<published>2023-02-10T10:13:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Flood Warning issued February 10 at 10:13AM EST until February 14 at 7:00AM EST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=GA1266367D6384.FloodWarning.126636B9F240GA.JAXFLWJAX.9ca5cd328a97b2bb679f310ad05276c5"/>
+<summary>...The National Weather Service in Jacksonville FL has issued a Flood Warning for the following rivers in Georgia... Altamaha River At Everett City affecting Glynn, McIntosh and Wayne Counties. Additional information is available at https://water.weather.gov/ahps2/forecasts.php?wfo=jax.</summary>
+<cap:event>Flood Warning</cap:event>
+<cap:effective>2023-02-10T10:13:00-05:00</cap:effective>
+<cap:expires>2023-02-14T07:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Glynn; McIntosh; Wayne</cap:areaDesc>
+<cap:polygon>31.55,-81.62 31.43,-81.55 31.38,-81.42 31.3,-81.44 31.39,-81.62 31.52,-81.72 31.55,-81.62</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>013127 013191 013305</value>
+<valueName>UGC</valueName>
+<value>GAC127 GAC191 GAC305</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.NEW.KJAX.FL.W.0006.230212T1200Z-230214T1200Z/
+/EVRG1.1.ER.230212T1200Z.230213T0600Z.230214T0600Z.NO/</value>
+</cap:parameter>
+</entry>
+<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=GA1266367D47C8.FlashFloodWarning.1266367E3354GA.TAEFFWTAE.f25191910f86b867fca9d2b201b389fa</id>
 <updated>2023-02-10T09:42:00-05:00</updated>
 <published>2023-02-10T09:42:00-05:00</published>
@@ -1945,39 +2110,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=GA1266367C5B74.FloodWatch.1266368A8F64GA.TAEFFATAE.ec2c418a348f18832abd4e3dbe9772bd</id>
-<updated>2023-02-10T03:37:00-05:00</updated>
-<published>2023-02-10T03:37:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Flood Watch issued February 10 at 3:37AM EST until further notice by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=GA1266367C5B74.FloodWatch.1266368A8F64GA.TAEFFATAE.ec2c418a348f18832abd4e3dbe9772bd"/>
-<summary>...FLOOD WATCH IN EFFECT THROUGH THIS AFTERNOON... * WHAT...Flash flooding caused by excessive rainfall is possible. * WHERE...Portions of Florida and Georgia, including the following areas, in Florida, Coastal Franklin, Coastal Gulf, Coastal Jefferson, Coastal Wakulla, Gadsden, Inland Franklin, Inland Gulf, Inland Jefferson, Inland Wakulla, Leon, Liberty and Madison. In</summary>
-<cap:event>Flood Watch</cap:event>
-<cap:effective>2023-02-10T03:37:00-05:00</cap:effective>
-<cap:expires>2023-02-10T20:45:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Future</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Possible</cap:certainty>
-<cap:areaDesc>Berrien; Colquitt; Cook</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>013019 013071 013075</value>
-<valueName>UGC</valueName>
-<value>GAZ146 GAZ147 GAZ148</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.NEW.KTAE.FA.A.0002.230210T0837Z-230210T2200Z/
-/00000.0.ER.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
-</cap:parameter>
-</entry>
-<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=GA1266367C5B74.FloodWatch.1266368ACBF0GA.TAEFFATAE.acab4d5d319dce955210261a7f2c8ca4</id>
 <updated>2023-02-10T03:37:00-05:00</updated>
 <published>2023-02-10T03:37:00-05:00</published>
@@ -2003,6 +2135,39 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <value>013027 013131 013173 013185 013275</value>
 <valueName>UGC</valueName>
 <value>GAZ157 GAZ158 GAZ159 GAZ160 GAZ161</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.NEW.KTAE.FA.A.0002.230210T0837Z-230210T2200Z/
+/00000.0.ER.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=GA1266367C5B74.FloodWatch.126636B9F240GA.TAEFFATAE.ec2c418a348f18832abd4e3dbe9772bd</id>
+<updated>2023-02-10T03:37:00-05:00</updated>
+<published>2023-02-10T03:37:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Flood Watch issued February 10 at 3:37AM EST until February 14 at 7:00AM EST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=GA1266367C5B74.FloodWatch.126636B9F240GA.TAEFFATAE.ec2c418a348f18832abd4e3dbe9772bd"/>
+<summary>...FLOOD WATCH IN EFFECT THROUGH THIS AFTERNOON... * WHAT...Flash flooding caused by excessive rainfall is possible. * WHERE...Portions of Florida and Georgia, including the following areas, in Florida, Coastal Franklin, Coastal Gulf, Coastal Jefferson, Coastal Wakulla, Gadsden, Inland Franklin, Inland Gulf, Inland Jefferson, Inland Wakulla, Leon, Liberty and Madison. In</summary>
+<cap:event>Flood Watch</cap:event>
+<cap:effective>2023-02-10T03:37:00-05:00</cap:effective>
+<cap:expires>2023-02-14T07:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Future</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Possible</cap:certainty>
+<cap:areaDesc>Berrien; Colquitt; Cook</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>013019 013071 013075</value>
+<valueName>UGC</valueName>
+<value>GAZ146 GAZ147 GAZ148</value>
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
@@ -2172,138 +2337,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <valueName>VTEC</valueName>
 <value>/O.CON.KCHS.FL.W.0006.000000T0000Z-000000T0000Z/
 /REDG1.1.ER.230131T1400Z.230203T0045Z.000000T0000Z.NO/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=GA1266367B4B30.FloodWarning.1266368A8F64GA.JAXFLSJAX.26cd9302aa13c5e6e27fc1192fecc1aa</id>
-<updated>2023-02-09T20:40:00-05:00</updated>
-<published>2023-02-09T20:40:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Flood Warning issued February 09 at 8:40PM EST until further notice by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=GA1266367B4B30.FloodWarning.1266368A8F64GA.JAXFLSJAX.26cd9302aa13c5e6e27fc1192fecc1aa"/>
-<summary>...The Flood Warning continues for the following rivers in Georgia... Satilla River At Atkinson affecting Brantley County. Additional information is available at https://water.weather.gov/ahps2/forecasts.php?wfo=jax. &amp;&amp; ...FLOOD WARNING REMAINS IN EFFECT UNTIL FURTHER NOTICE...</summary>
-<cap:event>Flood Warning</cap:event>
-<cap:effective>2023-02-09T20:40:00-05:00</cap:effective>
-<cap:expires>2023-02-10T20:45:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Brantley</cap:areaDesc>
-<cap:polygon>31.29,-81.84 31.14,-81.83 31.14,-81.9 31.28,-81.91 31.29,-81.84</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>013025</value>
-<valueName>UGC</valueName>
-<value>GAC025</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KJAX.FL.W.0005.000000T0000Z-000000T0000Z/
-/ATKG1.1.ER.230205T0500Z.230209T1215Z.000000T0000Z.NO/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=GA1266367B4B30.FloodWarning.1266368A8F64GA.JAXFLSJAX.e71b0d4433f2c97642d0fe37973d7ef6</id>
-<updated>2023-02-09T20:40:00-05:00</updated>
-<published>2023-02-09T20:40:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Flood Warning issued February 09 at 8:40PM EST until further notice by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=GA1266367B4B30.FloodWarning.1266368A8F64GA.JAXFLSJAX.e71b0d4433f2c97642d0fe37973d7ef6"/>
-<summary>...The Flood Warning is extended for the following rivers in Georgia... Altamaha River At Doctortown affecting Wayne and Long Counties. Additional information is available at https://water.weather.gov/ahps2/forecasts.php?wfo=jax. &amp;&amp;</summary>
-<cap:event>Flood Warning</cap:event>
-<cap:effective>2023-02-09T20:40:00-05:00</cap:effective>
-<cap:expires>2023-02-10T20:45:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Long; Wayne</cap:areaDesc>
-<cap:polygon>31.83,-81.95 31.55,-81.62 31.52,-81.72 31.76,-81.99 31.83,-81.95</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>013183 013305</value>
-<valueName>UGC</valueName>
-<value>GAC183 GAC305</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.EXT.KJAX.FL.W.0004.000000T0000Z-000000T0000Z/
-/DCTG1.1.ER.230207T1325Z.230208T2115Z.000000T0000Z.NO/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=GA1266367B4ACC.FloodWarning.1266368A8F64GA.JAXFLSJAX.582e44a03df43828b53f32ecc39e8dd7</id>
-<updated>2023-02-09T20:39:00-05:00</updated>
-<published>2023-02-09T20:39:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Flood Warning issued February 09 at 8:39PM EST until further notice by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=GA1266367B4ACC.FloodWarning.1266368A8F64GA.JAXFLSJAX.582e44a03df43828b53f32ecc39e8dd7"/>
-<summary>...The Flood Warning continues for the following rivers in Georgia... Altamaha River At Charlotteville affecting Jeff Davis, Toombs and Montgomery Counties. Additional information is available at https://water.weather.gov/ahps2/forecasts.php?wfo=jax. &amp;&amp;</summary>
-<cap:event>Flood Warning</cap:event>
-<cap:effective>2023-02-09T20:39:00-05:00</cap:effective>
-<cap:expires>2023-02-10T20:45:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Jeff Davis; Montgomery; Toombs</cap:areaDesc>
-<cap:polygon>31.99,-82.54 32,-82.43 31.94,-82.43 31.94,-82.55 31.99,-82.54</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>013161 013209 013279</value>
-<valueName>UGC</valueName>
-<value>GAC161 GAC209 GAC279</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KJAX.FL.W.0003.000000T0000Z-000000T0000Z/
-/CHRG1.1.ER.230131T1915Z.230205T2130Z.000000T0000Z.NO/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=GA1266367B4A68.FloodWarning.1266368A8F64GA.JAXFLSJAX.25771d2fa247435b7a98c78edaeb9be6</id>
-<updated>2023-02-09T20:38:00-05:00</updated>
-<published>2023-02-09T20:38:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Flood Warning issued February 09 at 8:38PM EST until further notice by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=GA1266367B4A68.FloodWarning.1266368A8F64GA.JAXFLSJAX.25771d2fa247435b7a98c78edaeb9be6"/>
-<summary>...The Flood Warning continues for the following rivers in Georgia... Altamaha River At Baxley affecting Wayne, Toombs, Tattnall and Appling Counties. Additional information is available at https://water.weather.gov/ahps2/forecasts.php?wfo=jax. &amp;&amp;</summary>
-<cap:event>Flood Warning</cap:event>
-<cap:effective>2023-02-09T20:38:00-05:00</cap:effective>
-<cap:expires>2023-02-10T20:45:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Appling; Tattnall; Toombs; Wayne</cap:areaDesc>
-<cap:polygon>32,-82.43 31.93,-82.13 31.83,-81.95 31.76,-81.99 31.88,-82.22 31.94,-82.43 32,-82.43</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>013001 013267 013279 013305</value>
-<valueName>UGC</valueName>
-<value>GAC001 GAC267 GAC279 GAC305</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KJAX.FL.W.0002.000000T0000Z-000000T0000Z/
-/BAXG1.1.ER.230131T0315Z.230206T1900Z.000000T0000Z.NO/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -2532,6 +2565,39 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value>/O.EXT.PHFO.SU.W.0005.000000T0000Z-230212T0400Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=LA1266367D63E8.FloodAdvisory.1266368D15E0LA.LIXFLSLIX.4b5f93397d3e51994242062ea9bb163c</id>
+<updated>2023-02-10T09:14:00-06:00</updated>
+<published>2023-02-10T09:14:00-06:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Flood Advisory issued February 10 at 9:14AM CST until February 11 at 12:00PM CST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=LA1266367D63E8.FloodAdvisory.1266368D15E0LA.LIXFLSLIX.4b5f93397d3e51994242062ea9bb163c"/>
+<summary>...The Flood Advisory continues for the following rivers in Louisiana... Tickfaw River Near Montpelier affecting St. Helena Parish. For the Tickfaw River...including Liverpool, Holden, Killian, Montpelier...elevated river levels are forecast. Additional information is available at www.weather.gov/lix. Click</summary>
+<cap:event>Flood Advisory</cap:event>
+<cap:effective>2023-02-10T09:14:00-06:00</cap:effective>
+<cap:expires>2023-02-11T12:00:00-06:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>St. Helena</cap:areaDesc>
+<cap:polygon>30.61,-90.57 30.61,-90.7 30.88,-90.74 30.88,-90.61 30.61,-90.57</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>022091</value>
+<valueName>UGC</valueName>
+<value>LAC091</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.EXT.KLIX.FL.Y.0001.000000T0000Z-230211T1800Z/
+/MONL1.N.ER.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -3420,6 +3486,39 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=MS1266367D6064.FloodWarning.126636999900MS.JANFLSJAN.d22b1e0ec974d0c714c82096b2972f45</id>
+<updated>2023-02-10T09:05:00-06:00</updated>
+<published>2023-02-10T09:05:00-06:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Flood Warning issued February 10 at 9:05AM CST until February 11 at 6:00PM CST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MS1266367D6064.FloodWarning.126636999900MS.JANFLSJAN.d22b1e0ec974d0c714c82096b2972f45"/>
+<summary>...The Flood Warning continues for the following rivers in Mississippi... Yalobusha At Whaley affecting Carroll and Leflore Counties. For the Lower Yazoo ...including Whaley, Greenwood, Belzoni, Yazoo City, Sunflower, Anguilla...Minor flooding is forecast. ...FLOOD WARNING NOW IN EFFECT UNTIL TOMORROW EVENING...</summary>
+<cap:event>Flood Warning</cap:event>
+<cap:effective>2023-02-10T09:05:00-06:00</cap:effective>
+<cap:expires>2023-02-11T18:00:00-06:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Carroll; Leflore</cap:areaDesc>
+<cap:polygon>33.62,-90.15 33.75,-90.15 33.83,-89.89 33.8,-89.84 33.68,-90.06 33.54,-90.14 33.62,-90.15</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>028015 028083</value>
+<valueName>UGC</valueName>
+<value>MSC015 MSC083</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.EXT.KJAN.FL.W.0027.000000T0000Z-230212T0000Z/
+/YWGM6.1.ER.230209T2112Z.230210T1400Z.230211T0600Z.NO/</value>
+</cap:parameter>
+</entry>
+<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=MS1266367D4DA4.FloodWarning.1266368ACBF0MS.JANFLSJAN.1fb604d0e78898558c2b226a77e22c6d</id>
 <updated>2023-02-10T08:57:00-06:00</updated>
 <published>2023-02-10T08:57:00-06:00</published>
@@ -3981,39 +4080,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=MS1266367B6688.FloodWarning.126636A9C5A0MS.JANFLSJAN.d22b1e0ec974d0c714c82096b2972f45</id>
-<updated>2023-02-09T20:10:00-06:00</updated>
-<published>2023-02-09T20:10:00-06:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Flood Warning issued February 09 at 8:10PM CST until February 13 at 12:00AM CST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MS1266367B6688.FloodWarning.126636A9C5A0MS.JANFLSJAN.d22b1e0ec974d0c714c82096b2972f45"/>
-<summary>...The Flood Warning continues for the following rivers in Mississippi... Yalobusha At Whaley affecting Carroll and Leflore Counties. For the Lower Yazoo ...including Whaley, Greenwood, Belzoni, Yazoo City, Sunflower, Anguilla...Minor flooding is forecast. ...FLOOD WARNING REMAINS IN EFFECT UNTIL EARLY MONDAY MORNING...</summary>
-<cap:event>Flood Warning</cap:event>
-<cap:effective>2023-02-09T20:10:00-06:00</cap:effective>
-<cap:expires>2023-02-13T00:00:00-06:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Carroll; Leflore</cap:areaDesc>
-<cap:polygon>33.62,-90.15 33.75,-90.15 33.83,-89.89 33.8,-89.84 33.68,-90.06 33.54,-90.14 33.62,-90.15</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>028015 028083</value>
-<valueName>UGC</valueName>
-<value>MSC015 MSC083</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KJAN.FL.W.0027.000000T0000Z-230213T0600Z/
-/YWGM6.1.ER.230209T2112Z.230210T0600Z.230212T1200Z.NO/</value>
-</cap:parameter>
-</entry>
-<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=MT1266367C4D64.WindAdvisory.1266367DD3A0MT.BYZNPWBYZ.9a94e501d2bebdac43b4c2798e0d1736</id>
 <updated>2023-02-10T01:01:00-07:00</updated>
 <published>2023-02-10T01:01:00-07:00</published>
@@ -4142,6 +4208,39 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=OH1266367D5F9C.FloodWarning.1266368ACBF0OH.CLEFLSCLE.a5bbcc7f387c73649e85d0ee8bbb7530</id>
+<updated>2023-02-10T10:03:00-05:00</updated>
+<published>2023-02-10T10:03:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Flood Warning issued February 10 at 10:03AM EST until February 10 at 10:00PM EST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=OH1266367D5F9C.FloodWarning.1266368ACBF0OH.CLEFLSCLE.a5bbcc7f387c73649e85d0ee8bbb7530"/>
+<summary>...The Flood Warning is extended for the following rivers in Ohio... Portage River At Woodville affecting Wood and Sandusky Counties. For the Portage River...including Woodville...Minor flooding is forecast. ...FLOOD WARNING NOW IN EFFECT UNTIL LATE THIS EVENING... * WHAT...Minor flooding is occurring and minor flooding is forecast.</summary>
+<cap:event>Flood Warning</cap:event>
+<cap:effective>2023-02-10T10:03:00-05:00</cap:effective>
+<cap:expires>2023-02-10T22:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Sandusky; Wood</cap:areaDesc>
+<cap:polygon>41.36,-83.54 41.48,-83.34 41.43,-83.34 41.35,-83.49 41.36,-83.54</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>039143 039173</value>
+<valueName>UGC</valueName>
+<value>OHC143 OHC173</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.EXT.KCLE.FL.W.0004.000000T0000Z-230211T0300Z/
+/WDVO1.1.ER.230210T0720Z.230210T1430Z.230210T2100Z.NO/</value>
+</cap:parameter>
+</entry>
+<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=OH1266367C7E9C.FloodWarning.126636CA51A8OH.IWXFLWIWX.7c53e2b265581a8f59d9ea6f7c754ef3</id>
 <updated>2023-02-10T04:27:00-05:00</updated>
 <published>2023-02-10T04:27:00-05:00</published>
@@ -4172,39 +4271,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <valueName>VTEC</valueName>
 <value>/O.NEW.KIWX.FL.W.0001.230210T1200Z-230215T1930Z/
 /STRO1.1.ER.230210T1200Z.230213T0600Z.230214T1930Z.NO/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=OH1266367BEA2C.FloodWarning.1266367DD3A0OH.CLEFLWCLE.a5bbcc7f387c73649e85d0ee8bbb7530</id>
-<updated>2023-02-10T00:47:00-05:00</updated>
-<published>2023-02-10T00:47:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Flood Warning issued February 10 at 12:47AM EST until February 10 at 1:00PM EST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=OH1266367BEA2C.FloodWarning.1266367DD3A0OH.CLEFLWCLE.a5bbcc7f387c73649e85d0ee8bbb7530"/>
-<summary>...The National Weather Service in Cleveland OH has issued a Flood Warning for the following rivers in Ohio... Portage River At Woodville affecting Wood and Sandusky Counties. For the Portage River...including Woodville...Minor flooding is forecast. ...FLOOD WARNING IN EFFECT UNTIL THIS AFTERNOON...</summary>
-<cap:event>Flood Warning</cap:event>
-<cap:effective>2023-02-10T00:47:00-05:00</cap:effective>
-<cap:expires>2023-02-10T13:00:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Sandusky; Wood</cap:areaDesc>
-<cap:polygon>41.36,-83.54 41.48,-83.34 41.43,-83.34 41.35,-83.49 41.36,-83.54</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>039143 039173</value>
-<valueName>UGC</valueName>
-<value>OHC143 OHC173</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.NEW.KCLE.FL.W.0004.230210T0805Z-230210T1800Z/
-/WDVO1.1.ER.230210T0805Z.230210T1200Z.230210T1200Z.NO/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -4307,6 +4373,38 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=OR1266367D644C.BeachHazardsStatement.126636999900OR.PQRCFWPQR.051bd4dd459ab5c4e33c6a0dc6379e91</id>
+<updated>2023-02-10T07:15:00-08:00</updated>
+<published>2023-02-10T07:15:00-08:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Beach Hazards Statement issued February 10 at 7:15AM PST until February 11 at 4:00PM PST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=OR1266367D644C.BeachHazardsStatement.126636999900OR.PQRCFWPQR.051bd4dd459ab5c4e33c6a0dc6379e91"/>
+<summary>...BEACH HAZARDS STATEMENT REMAINS IN EFFECT THROUGH SATURDAY AFTERNOON FOR BEACHES... * WHAT...Sneaker waves possible on the beaches. * WHERE...In Oregon, North Oregon Coast and Central Oregon Coast. In Washington, South Washington Coast. * WHEN...Through Saturday afternoon.</summary>
+<cap:event>Beach Hazards Statement</cap:event>
+<cap:effective>2023-02-10T07:15:00-08:00</cap:effective>
+<cap:expires>2023-02-11T16:00:00-08:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Central Oregon Coast; North Oregon Coast</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>041007 041039 041041 041057</value>
+<valueName>UGC</valueName>
+<value>ORZ001 ORZ002</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KPQR.BH.S.0003.000000T0000Z-230212T0000Z/</value>
+</cap:parameter>
+</entry>
+<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=OR1266367D3F94.BeachHazardsStatement.126636A97780OR.MFRCFWMFR.a85d7b94d3bac2961b8b4dd1b91a2da0</id>
 <updated>2023-02-10T06:21:00-08:00</updated>
 <published>2023-02-10T06:21:00-08:00</published>
@@ -4336,38 +4434,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value>/O.NEW.KMFR.BH.S.0005.230212T1600Z-230213T0400Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=OR1266366F1950.BeachHazardsStatement.126636999900OR.PQRCFWPQR.051bd4dd459ab5c4e33c6a0dc6379e91</id>
-<updated>2023-02-09T13:48:00-08:00</updated>
-<published>2023-02-09T13:48:00-08:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Beach Hazards Statement issued February 09 at 1:48PM PST until February 11 at 4:00PM PST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=OR1266366F1950.BeachHazardsStatement.126636999900OR.PQRCFWPQR.051bd4dd459ab5c4e33c6a0dc6379e91"/>
-<summary>...BEACH HAZARDS STATEMENT REMAINS IN EFFECT FROM LATE TONIGHT THROUGH SATURDAY AFTERNOON FOR BEACHES... * WHAT...Sneaker waves possible on the beaches. * WHERE...In Oregon, North Oregon Coast and Central Oregon Coast. In Washington, South Washington Coast. * WHEN...From late tonight through Saturday afternoon.</summary>
-<cap:event>Beach Hazards Statement</cap:event>
-<cap:effective>2023-02-09T13:48:00-08:00</cap:effective>
-<cap:expires>2023-02-11T16:00:00-08:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Central Oregon Coast; North Oregon Coast</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>041007 041039 041041 041057</value>
-<valueName>UGC</valueName>
-<value>ORZ001 ORZ002</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KPQR.BH.S.0003.230210T1200Z-230212T0000Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -4667,18 +4733,18 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=SC1266367B66EC.FloodWarning.1266368AAABCSC.CHSFLSCHS.e91cc885edad807e4f1a7c268c9af331</id>
-<updated>2023-02-09T21:11:00-05:00</updated>
-<published>2023-02-09T21:11:00-05:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=SC1266367D6A8C.FloodWarning.1266368CB244SC.CHSFLSCHS.e91cc885edad807e4f1a7c268c9af331</id>
+<updated>2023-02-10T10:31:00-05:00</updated>
+<published>2023-02-10T10:31:00-05:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Flood Warning issued February 09 at 9:11PM EST until further notice by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=SC1266367B66EC.FloodWarning.1266368AAABCSC.CHSFLSCHS.e91cc885edad807e4f1a7c268c9af331"/>
-<summary>...FLOOD WARNING NOW IN EFFECT UNTIL FURTHER NOTICE... * WHAT...Minor flooding is occurring and minor flooding is forecast. * WHERE...Savannah River at Burtons Ferry. * WHEN...Until further notice. * IMPACTS...At 15.0 feet, flooding of some adjacent agricultural lands occurs. Most boat ramps along the river are unusable.</summary>
+<title>Flood Warning issued February 10 at 10:31AM EST until further notice by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=SC1266367D6A8C.FloodWarning.1266368CB244SC.CHSFLSCHS.e91cc885edad807e4f1a7c268c9af331"/>
+<summary>...FLOOD WARNING REMAINS IN EFFECT UNTIL FURTHER NOTICE... * WHAT...Minor flooding is occurring and minor flooding is forecast. * WHERE...Savannah River at Burtons Ferry. * WHEN...Until further notice. * IMPACTS...At 15.0 feet, flooding of some adjacent agricultural lands occurs. Most boat ramps along the river are unusable.</summary>
 <cap:event>Flood Warning</cap:event>
-<cap:effective>2023-02-09T21:11:00-05:00</cap:effective>
-<cap:expires>2023-02-10T21:15:00-05:00</cap:expires>
+<cap:effective>2023-02-10T10:31:00-05:00</cap:effective>
+<cap:expires>2023-02-11T10:45:00-05:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
 <cap:category>Met</cap:category>
@@ -4695,23 +4761,23 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
-<value>/O.EXT.KCHS.FL.W.0007.000000T0000Z-000000T0000Z/
+<value>/O.CON.KCHS.FL.W.0007.000000T0000Z-000000T0000Z/
 /BFYG1.1.ER.230201T1122Z.230205T1315Z.000000T0000Z.NO/</value>
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=SC1266367B66EC.FloodWarning.1266368AAABCSC.CHSFLSCHS.d9addfe4450fd2e694b71e248af6c77a</id>
-<updated>2023-02-09T21:11:00-05:00</updated>
-<published>2023-02-09T21:11:00-05:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=SC1266367D6A8C.FloodWarning.1266368CB244SC.CHSFLSCHS.d9addfe4450fd2e694b71e248af6c77a</id>
+<updated>2023-02-10T10:31:00-05:00</updated>
+<published>2023-02-10T10:31:00-05:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Flood Warning issued February 09 at 9:11PM EST until further notice by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=SC1266367B66EC.FloodWarning.1266368AAABCSC.CHSFLSCHS.d9addfe4450fd2e694b71e248af6c77a"/>
-<summary>...FLOOD WARNING NOW IN EFFECT UNTIL FURTHER NOTICE... * WHAT...Minor flooding is occurring and minor flooding is forecast. * WHERE...Edisto River near Givhans Ferry. * WHEN...Until further notice. * IMPACTS...At 11.0 feet, Weeks Landing in Canadys is not accessible. * ADDITIONAL DETAILS...</summary>
+<title>Flood Warning issued February 10 at 10:31AM EST until further notice by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=SC1266367D6A8C.FloodWarning.1266368CB244SC.CHSFLSCHS.d9addfe4450fd2e694b71e248af6c77a"/>
+<summary>...FLOOD WARNING REMAINS IN EFFECT UNTIL FURTHER NOTICE... * WHAT...Minor flooding is occurring and minor flooding is forecast. * WHERE...Edisto River near Givhans Ferry. * WHEN...Until further notice. * IMPACTS...At 11.0 feet, Weeks Landing in Canadys is not accessible. * ADDITIONAL DETAILS...</summary>
 <cap:event>Flood Warning</cap:event>
-<cap:effective>2023-02-09T21:11:00-05:00</cap:effective>
-<cap:expires>2023-02-10T21:15:00-05:00</cap:expires>
+<cap:effective>2023-02-10T10:31:00-05:00</cap:effective>
+<cap:expires>2023-02-11T10:45:00-05:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
 <cap:category>Met</cap:category>
@@ -4728,23 +4794,23 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
-<value>/O.EXT.KCHS.FL.W.0005.000000T0000Z-000000T0000Z/
+<value>/O.CON.KCHS.FL.W.0005.000000T0000Z-000000T0000Z/
 /GIVS1.1.ER.230129T2315Z.230205T1430Z.000000T0000Z.NO/</value>
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=SC1266367B66EC.FloodWarning.1266368AAABCSC.CHSFLSCHS.1940cca5cd605d673145c2daeea52e58</id>
-<updated>2023-02-09T21:11:00-05:00</updated>
-<published>2023-02-09T21:11:00-05:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=SC1266367D6A8C.FloodWarning.1266368CB244SC.CHSFLSCHS.1940cca5cd605d673145c2daeea52e58</id>
+<updated>2023-02-10T10:31:00-05:00</updated>
+<published>2023-02-10T10:31:00-05:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Flood Warning issued February 09 at 9:11PM EST until further notice by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=SC1266367B66EC.FloodWarning.1266368AAABCSC.CHSFLSCHS.1940cca5cd605d673145c2daeea52e58"/>
+<title>Flood Warning issued February 10 at 10:31AM EST until further notice by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=SC1266367D6A8C.FloodWarning.1266368CB244SC.CHSFLSCHS.1940cca5cd605d673145c2daeea52e58"/>
 <summary>...FLOOD WARNING REMAINS IN EFFECT UNTIL FURTHER NOTICE... * WHAT...Minor flooding is occurring and minor flooding is forecast. * WHERE...Savannah River near Clyo. * WHEN...Until further notice. * IMPACTS...At 14.5 feet, the bottom floor of several riverfront homes along Tom Goethe Road begin to flood.</summary>
 <cap:event>Flood Warning</cap:event>
-<cap:effective>2023-02-09T21:11:00-05:00</cap:effective>
-<cap:expires>2023-02-10T21:15:00-05:00</cap:expires>
+<cap:effective>2023-02-10T10:31:00-05:00</cap:effective>
+<cap:expires>2023-02-11T10:45:00-05:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
 <cap:category>Met</cap:category>
@@ -4762,22 +4828,22 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value>/O.CON.KCHS.FL.W.0002.000000T0000Z-000000T0000Z/
-/CLYG1.1.ER.230115T0945Z.230214T0000Z.000000T0000Z.NO/</value>
+/CLYG1.1.ER.230115T0945Z.230214T1800Z.000000T0000Z.NO/</value>
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=SC1266367B66EC.FloodWarning.126636BADCA0SC.CHSFLSCHS.2434f95bb994ba3d16a36b301ae809b4</id>
-<updated>2023-02-09T21:11:00-05:00</updated>
-<published>2023-02-09T21:11:00-05:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=SC1266367D6A8C.FloodWarning.126636C75FC0SC.CHSFLSCHS.2434f95bb994ba3d16a36b301ae809b4</id>
+<updated>2023-02-10T10:31:00-05:00</updated>
+<published>2023-02-10T10:31:00-05:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Flood Warning issued February 09 at 9:11PM EST until February 14 at 1:00PM EST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=SC1266367B66EC.FloodWarning.126636BADCA0SC.CHSFLSCHS.2434f95bb994ba3d16a36b301ae809b4"/>
-<summary>...FLOOD WARNING NOW IN EFFECT UNTIL EARLY TUESDAY AFTERNOON... * WHAT...Minor flooding is occurring and minor flooding is forecast. * WHERE...Santee River near Jamestown. * WHEN...Until early Tuesday afternoon. * IMPACTS...At 10.0 feet, water covers numerous logging roads and inundates timber land adjacent to the river. Most access points to</summary>
+<title>Flood Warning issued February 10 at 10:31AM EST until February 14 at 7:00PM EST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=SC1266367D6A8C.FloodWarning.126636C75FC0SC.CHSFLSCHS.2434f95bb994ba3d16a36b301ae809b4"/>
+<summary>...FLOOD WARNING NOW IN EFFECT UNTIL TUESDAY EVENING... * WHAT...Minor flooding is occurring and minor flooding is forecast. * WHERE...Santee River near Jamestown. * WHEN...Until Tuesday evening. * IMPACTS...At 10.0 feet, water covers numerous logging roads and inundates timber land adjacent to the river. Most access points to</summary>
 <cap:event>Flood Warning</cap:event>
-<cap:effective>2023-02-09T21:11:00-05:00</cap:effective>
-<cap:expires>2023-02-14T13:00:00-05:00</cap:expires>
+<cap:effective>2023-02-10T10:31:00-05:00</cap:effective>
+<cap:expires>2023-02-14T19:00:00-05:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
 <cap:category>Met</cap:category>
@@ -4794,8 +4860,40 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
-<value>/O.EXT.KCHS.FL.W.0001.000000T0000Z-230214T1800Z/
-/JAMS1.1.ER.230108T0245Z.230203T0600Z.230214T0600Z.NO/</value>
+<value>/O.EXT.KCHS.FL.W.0001.000000T0000Z-230215T0000Z/
+/JAMS1.1.ER.230108T0245Z.230203T0600Z.230214T1200Z.NO/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=TX1266367D66A4.SpecialWeatherStatement.1266367DB848TX.EWXSPSEWX.f6ae4284c76a82d15edc5371a36b8894</id>
+<updated>2023-02-10T09:21:00-06:00</updated>
+<published>2023-02-10T09:21:00-06:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Special Weather Statement issued February 10 at 9:21AM CST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=TX1266367D66A4.SpecialWeatherStatement.1266367DB848TX.EWXSPSEWX.f6ae4284c76a82d15edc5371a36b8894"/>
+<summary>...BREEZY TO WINDY CONDITIONS THROUGH EARLY AFTERNOON... Behind last evening`s cold front, north to north-northwest winds are sustained at 15-28 mph with widespread gusts to 25-35 mph and isolated gusts to 40 mph. Although a few sites are exceeding Wind Advisory criteria, these conditions should only last through around the noon hour with gradually diminishing winds this</summary>
+<cap:event>Special Weather Statement</cap:event>
+<cap:effective>2023-02-10T09:21:00-06:00</cap:effective>
+<cap:expires>2023-02-10T11:30:00-06:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Observed</cap:certainty>
+<cap:areaDesc>Bandera; Bastrop; Bexar; Blanco; Caldwell; Comal; Gillespie; Guadalupe; Hays; Kendall; Kerr; Medina; Real; Travis; Uvalde</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>048019 048021 048029 048031 048055 048091 048171 048187 048209 048259 048265 048325 048385 048453 048463</value>
+<valueName>UGC</valueName>
+<value>TXZ185 TXZ186 TXZ187 TXZ188 TXZ189 TXZ190 TXZ191 TXZ192 TXZ193 TXZ203 TXZ204 TXZ205 TXZ206 TXZ207 TXZ208</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value></value>
 </cap:parameter>
 </entry>
 <entry>
@@ -5355,17 +5453,17 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=WA1266366F1950.BeachHazardsStatement.126636999900WA.PQRCFWPQR.42bcdbae0b20c3b3494641e8df59ca80</id>
-<updated>2023-02-09T13:48:00-08:00</updated>
-<published>2023-02-09T13:48:00-08:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=WA1266367D644C.BeachHazardsStatement.126636999900WA.PQRCFWPQR.42bcdbae0b20c3b3494641e8df59ca80</id>
+<updated>2023-02-10T07:15:00-08:00</updated>
+<published>2023-02-10T07:15:00-08:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Beach Hazards Statement issued February 09 at 1:48PM PST until February 11 at 4:00PM PST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=WA1266366F1950.BeachHazardsStatement.126636999900WA.PQRCFWPQR.42bcdbae0b20c3b3494641e8df59ca80"/>
-<summary>...BEACH HAZARDS STATEMENT REMAINS IN EFFECT FROM LATE TONIGHT THROUGH SATURDAY AFTERNOON FOR BEACHES... * WHAT...Sneaker waves possible on the beaches. * WHERE...In Oregon, North Oregon Coast and Central Oregon Coast. In Washington, South Washington Coast. * WHEN...From late tonight through Saturday afternoon.</summary>
+<title>Beach Hazards Statement issued February 10 at 7:15AM PST until February 11 at 4:00PM PST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=WA1266367D644C.BeachHazardsStatement.126636999900WA.PQRCFWPQR.42bcdbae0b20c3b3494641e8df59ca80"/>
+<summary>...BEACH HAZARDS STATEMENT REMAINS IN EFFECT THROUGH SATURDAY AFTERNOON FOR BEACHES... * WHAT...Sneaker waves possible on the beaches. * WHERE...In Oregon, North Oregon Coast and Central Oregon Coast. In Washington, South Washington Coast. * WHEN...Through Saturday afternoon.</summary>
 <cap:event>Beach Hazards Statement</cap:event>
-<cap:effective>2023-02-09T13:48:00-08:00</cap:effective>
+<cap:effective>2023-02-10T07:15:00-08:00</cap:effective>
 <cap:expires>2023-02-11T16:00:00-08:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
@@ -5383,7 +5481,7 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
-<value>/O.CON.KPQR.BH.S.0003.230210T1200Z-230212T0000Z/</value>
+<value>/O.CON.KPQR.BH.S.0003.000000T0000Z-230212T0000Z/</value>
 </cap:parameter>
 </entry>
 <entry>
