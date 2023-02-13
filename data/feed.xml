@@ -16,16 +16,48 @@ xmlns = 'http://www.w3.org/2005/Atom'
 xmlns:cap = 'urn:oasis:names:tc:emergency:cap:1.1'
 xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 >
-<!-- http-date = Sun, 12 Feb 2023 23:50:00 GMT -->
+<!-- http-date = Mon, 13 Feb 2023 00:42:00 GMT -->
 <id>https://alerts.weather.gov/cap/us.php?x=0</id>
 <logo>http://alerts.weather.gov/images/xml_logo.gif</logo>
 <generator>NWS CAP Server</generator>
-<updated>2023-02-12T15:50:00-08:00</updated>
+<updated>2023-02-12T17:42:00-07:00</updated>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
 <title>Current Watches, Warnings and Advisories for the United States Issued by the National Weather Service</title>
 <link href="https://alerts.weather.gov/cap/us.php?x=0"/>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=AK126636A8E9B4.WinterWeatherAdvisory.126636AAFE20AK.AFCWSWAER.1cb7d1ce34b0ed8b693046d21c8fa359</id>
+<updated>2023-02-12T15:37:00-09:00</updated>
+<published>2023-02-12T15:37:00-09:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Winter Weather Advisory issued February 12 at 3:37PM AKST until February 13 at 5:00AM AKST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=AK126636A8E9B4.WinterWeatherAdvisory.126636AAFE20AK.AFCWSWAER.1cb7d1ce34b0ed8b693046d21c8fa359"/>
+<summary>...WINTER WEATHER ADVISORY IN EFFECT UNTIL 5 AM AKST MONDAY... * WHAT...Snow. Additional snow accumulations of 4 to 8 inches, highest amounts along the hillside, east Anchorage, and Eagle River. * WHERE...Anchorage. * WHEN...Until 5 AM AKST Monday.</summary>
+<cap:event>Winter Weather Advisory</cap:event>
+<cap:effective>2023-02-12T15:37:00-09:00</cap:effective>
+<cap:expires>2023-02-13T05:00:00-09:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Anchorage</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>002020</value>
+<valueName>UGC</valueName>
+<value>AKZ101</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.NEW.PAFC.WW.Y.0016.230213T0037Z-230213T1400Z/</value>
+</cap:parameter>
+</entry>
 <entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=AK1266369CF974.WinterWeatherAdvisory.126636B81D80AK.AFGWSWAFG.8f69f62ba4367662c4fd50cdc73e133b</id>
 <updated>2023-02-12T13:13:00-09:00</updated>
@@ -121,38 +153,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <valueName>VTEC</valueName>
 <value>/O.CAN.PAFG.BZ.W.0011.000000T0000Z-230212T2100Z/
 /O.NEW.PAFG.WW.Y.0039.230212T2100Z-230213T1500Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=AK1266369B94D0.BlizzardWarning.126636AA3AD0AK.AFCWSWAER.b9997bdf15125684c45f3dbc0764eee7</id>
-<updated>2023-02-12T04:00:00-09:00</updated>
-<published>2023-02-12T04:00:00-09:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Blizzard Warning issued February 12 at 4:00AM AKST until February 13 at 12:00AM AKST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=AK1266369B94D0.BlizzardWarning.126636AA3AD0AK.AFCWSWAER.b9997bdf15125684c45f3dbc0764eee7"/>
-<summary>...BLIZZARD WARNING REMAINS IN EFFECT FROM NOON TODAY TO MIDNIGHT AKST TONIGHT... * WHAT...Blizzard conditions expected. Total snow accumulations of up to 3 inches. West to southwest winds 15 to 30 mph with gusts as high as 40 mph. Reduced visibilities to one quarter mile. * WHERE...Homer.</summary>
-<cap:event>Blizzard Warning</cap:event>
-<cap:effective>2023-02-12T04:00:00-09:00</cap:effective>
-<cap:expires>2023-02-13T00:00:00-09:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Severe</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Western Kenai Peninsula</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>002122</value>
-<valueName>UGC</valueName>
-<value>AKZ121</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.PAFC.BZ.W.0003.230212T2100Z-230213T0900Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -3809,49 +3809,82 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=MD1266369D05F4.SpecialWeatherStatement.126636A8E6F8MD.AKQSPSAKQ.12c16a2de06813853f9e2ed6413a52b0</id>
-<updated>2023-02-12T17:45:00-05:00</updated>
-<published>2023-02-12T17:45:00-05:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=MD126636A8E504.CoastalFloodStatement.126636AA61E0MD.AKQCFWAKQ.875a8d22a2a987c3c7c935b1cd62d240</id>
+<updated>2023-02-12T19:25:00-05:00</updated>
+<published>2023-02-12T19:25:00-05:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Special Weather Statement issued February 12 at 5:45PM EST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MD1266369D05F4.SpecialWeatherStatement.126636A8E6F8MD.AKQSPSAKQ.12c16a2de06813853f9e2ed6413a52b0"/>
-<summary>...STRONG GUSTY WINDS THIS EVENING... Northeast winds will gust to 40 to 45 mph through 730 PM EST this evening across portions of the eastern shore, as strong low pressure passes by south of the area. The highest winds will generally be along the immediate Atlantic coast. Use extra caution when driving, especially if operating a high</summary>
-<cap:event>Special Weather Statement</cap:event>
-<cap:effective>2023-02-12T17:45:00-05:00</cap:effective>
-<cap:expires>2023-02-12T19:30:00-05:00</cap:expires>
+<title>Coastal Flood Statement issued February 12 at 7:25PM EST until February 13 at 5:00AM EST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MD126636A8E504.CoastalFloodStatement.126636AA61E0MD.AKQCFWAKQ.875a8d22a2a987c3c7c935b1cd62d240"/>
+<summary>...COASTAL FLOOD STATEMENT IN EFFECT FROM 11 PM THIS EVENING TO 5 AM EST MONDAY... * WHAT...Up to one half foot of inundation above ground level expected in low- lying areas near shorelines and tidal waterways. * WHERE...Inland Worcester County. * WHEN...From 11 PM this evening to 5 AM EST Monday.</summary>
+<cap:event>Coastal Flood Statement</cap:event>
+<cap:effective>2023-02-12T19:25:00-05:00</cap:effective>
+<cap:expires>2023-02-13T05:00:00-05:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
 <cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Observed</cap:certainty>
-<cap:areaDesc>Inland Worcester; Maryland Beaches</cap:areaDesc>
+<cap:urgency>Unknown</cap:urgency>
+<cap:severity>Unknown</cap:severity>
+<cap:certainty>Unknown</cap:certainty>
+<cap:areaDesc>Inland Worcester</cap:areaDesc>
 <cap:polygon></cap:polygon>
 <cap:geocode>
 <valueName>FIPS6</valueName>
 <value>024047</value>
 <valueName>UGC</valueName>
-<value>MDZ024 MDZ025</value>
+<value>MDZ024</value>
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
-<value></value>
+<value>/O.NEW.KAKQ.CF.S.0002.230213T0400Z-230213T1000Z/</value>
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=MD1266369CAFA0.HighSurfAdvisory.126636AAB000MD.AKQCFWAKQ.3af41dd0856777d4dddfb92cc28196ef</id>
-<updated>2023-02-12T15:24:00-05:00</updated>
-<published>2023-02-12T15:24:00-05:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=MD126636A8E504.CoastalFloodStatement.126636AA61E0MD.AKQCFWAKQ.58f9c61f6f447dcd83720ea5c05e7476</id>
+<updated>2023-02-12T19:25:00-05:00</updated>
+<published>2023-02-12T19:25:00-05:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>High Surf Advisory issued February 12 at 3:24PM EST until February 13 at 7:00AM EST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MD1266369CAFA0.HighSurfAdvisory.126636AAB000MD.AKQCFWAKQ.3af41dd0856777d4dddfb92cc28196ef"/>
-<summary>...HIGH SURF ADVISORY IN EFFECT UNTIL 7 AM EST MONDAY... * WHAT...Large breaking waves of 7 to 9 feet in the surf zone. * WHERE...In Maryland, the Atlantic beaches including Ocean City. In Virginia, the barrier islands of Accomack and Northampton Counties. * WHEN...Until 7 AM EST Monday.</summary>
+<title>Coastal Flood Statement issued February 12 at 7:25PM EST until February 13 at 5:00AM EST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MD126636A8E504.CoastalFloodStatement.126636AA61E0MD.AKQCFWAKQ.58f9c61f6f447dcd83720ea5c05e7476"/>
+<summary>...HIGH SURF ADVISORY REMAINS IN EFFECT UNTIL 7 AM EST MONDAY... ...COASTAL FLOOD STATEMENT IN EFFECT FROM 11 PM THIS EVENING TO 5 AM EST MONDAY... * WHAT...For the High Surf Advisory, large breaking waves of 7 to 9 feet in the surf zone. For the Coastal Flood Statement, up to one half foot of inundation above ground level expected</summary>
+<cap:event>Coastal Flood Statement</cap:event>
+<cap:effective>2023-02-12T19:25:00-05:00</cap:effective>
+<cap:expires>2023-02-13T05:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Unknown</cap:urgency>
+<cap:severity>Unknown</cap:severity>
+<cap:certainty>Unknown</cap:certainty>
+<cap:areaDesc>Maryland Beaches</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>024047</value>
+<valueName>UGC</valueName>
+<value>MDZ025</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.NEW.KAKQ.CF.S.0002.230213T0400Z-230213T1000Z/
+/O.CON.KAKQ.SU.Y.0003.000000T0000Z-230213T1200Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=MD126636A8E504.HighSurfAdvisory.126636AAB000MD.AKQCFWAKQ.3af41dd0856777d4dddfb92cc28196ef</id>
+<updated>2023-02-12T19:25:00-05:00</updated>
+<published>2023-02-12T19:25:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>High Surf Advisory issued February 12 at 7:25PM EST until February 13 at 7:00AM EST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MD126636A8E504.HighSurfAdvisory.126636AAB000MD.AKQCFWAKQ.3af41dd0856777d4dddfb92cc28196ef"/>
+<summary>...HIGH SURF ADVISORY REMAINS IN EFFECT UNTIL 7 AM EST MONDAY... ...COASTAL FLOOD STATEMENT IN EFFECT FROM 11 PM THIS EVENING TO 5 AM EST MONDAY... * WHAT...For the High Surf Advisory, large breaking waves of 7 to 9 feet in the surf zone. For the Coastal Flood Statement, up to one half foot of inundation above ground level expected</summary>
 <cap:event>High Surf Advisory</cap:event>
-<cap:effective>2023-02-12T15:24:00-05:00</cap:effective>
+<cap:effective>2023-02-12T19:25:00-05:00</cap:effective>
 <cap:expires>2023-02-13T07:00:00-05:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
@@ -3869,7 +3902,8 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
-<value>/O.EXB.KAKQ.SU.Y.0003.000000T0000Z-230213T1200Z/</value>
+<value>/O.NEW.KAKQ.CF.S.0002.230213T0400Z-230213T1000Z/
+/O.CON.KAKQ.SU.Y.0003.000000T0000Z-230213T1200Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -4695,6 +4729,166 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=MT126636A8EBA8.WinterStormWarning.126636C84A20MT.TFXWSWTFX.bc8f865976a2d52650a96f9b28a61fdb</id>
+<updated>2023-02-12T17:42:00-07:00</updated>
+<published>2023-02-12T17:42:00-07:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Winter Storm Warning issued February 12 at 5:42PM MST until February 14 at 11:00PM MST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MT126636A8EBA8.WinterStormWarning.126636C84A20MT.TFXWSWTFX.bc8f865976a2d52650a96f9b28a61fdb"/>
+<summary>...WINTER STORM WARNING REMAINS IN EFFECT FROM 5 PM MONDAY TO 11 PM MST TUESDAY... * WHAT...Heavy snow expected. Total snow accumulations between 4 and 10 inches possible up to pass level, with 10 to 20 inches possible over higher peaks. Winds gusting as high as 35 mph, at times. * WHERE...Big Belt, Bridger and Castle Mountains, Gallatin Valley</summary>
+<cap:event>Winter Storm Warning</cap:event>
+<cap:effective>2023-02-12T17:42:00-07:00</cap:effective>
+<cap:expires>2023-02-14T23:00:00-07:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Big Belt, Bridger and Castle Mountains; Gallatin Valley; Gallatin and Madison County Mountains and Centennial Mountains</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>030007 030031 030057 030059</value>
+<valueName>UGC</valueName>
+<value>MTZ320 MTZ326 MTZ330</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KTFX.WS.W.0003.230214T0000Z-230215T0600Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=MT126636A8EBA8.WinterWeatherAdvisory.126636C84A20MT.TFXWSWTFX.42710bf08701d185a8df9075cce56160</id>
+<updated>2023-02-12T17:42:00-07:00</updated>
+<published>2023-02-12T17:42:00-07:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Winter Weather Advisory issued February 12 at 5:42PM MST until February 14 at 11:00PM MST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MT126636A8EBA8.WinterWeatherAdvisory.126636C84A20MT.TFXWSWTFX.42710bf08701d185a8df9075cce56160"/>
+<summary>...WINTER WEATHER ADVISORY NOW IN EFFECT FROM 5 AM MONDAY TO 11 PM MST TUESDAY... * WHAT...Snow expected. Total snow accumulations between 3 and 6 inches. Winds gusting as high as 55 mph. * WHERE...East Glacier Park Region. * WHEN...From 5 AM Monday to 11 PM MST Tuesday.</summary>
+<cap:event>Winter Weather Advisory</cap:event>
+<cap:effective>2023-02-12T17:42:00-07:00</cap:effective>
+<cap:expires>2023-02-14T23:00:00-07:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>East Glacier Park Region</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>030035</value>
+<valueName>UGC</valueName>
+<value>MTZ301</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.EXT.KTFX.WW.Y.0015.230213T1200Z-230215T0600Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=MT126636A8EBA8.WinterWeatherAdvisory.126636C84A20MT.TFXWSWTFX.19c098cf7d2e29ce987e85aa9cba9f5c</id>
+<updated>2023-02-12T17:42:00-07:00</updated>
+<published>2023-02-12T17:42:00-07:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Winter Weather Advisory issued February 12 at 5:42PM MST until February 14 at 11:00PM MST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MT126636A8EBA8.WinterWeatherAdvisory.126636C84A20MT.TFXWSWTFX.19c098cf7d2e29ce987e85aa9cba9f5c"/>
+<summary>...WINTER WEATHER ADVISORY IN EFFECT FROM 3 PM MONDAY TO 11 PM MST TUESDAY... * WHAT...Snow expected. Total snow accumulations 1 to 4 inches. Winds gusting as high as 45 mph. * WHERE...Northern High Plains. * WHEN...From 3 PM Monday to 11 PM MST Tuesday.</summary>
+<cap:event>Winter Weather Advisory</cap:event>
+<cap:effective>2023-02-12T17:42:00-07:00</cap:effective>
+<cap:expires>2023-02-14T23:00:00-07:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Northern High Plains</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>030035 030073</value>
+<valueName>UGC</valueName>
+<value>MTZ302</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.EXB.KTFX.WW.Y.0014.230213T2200Z-230215T0600Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=MT126636A8EBA8.WinterWeatherAdvisory.126636C84A20MT.TFXWSWTFX.efd0fdb12ffd284f6e2eeb6d94e435f1</id>
+<updated>2023-02-12T17:42:00-07:00</updated>
+<published>2023-02-12T17:42:00-07:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Winter Weather Advisory issued February 12 at 5:42PM MST until February 14 at 11:00PM MST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MT126636A8EBA8.WinterWeatherAdvisory.126636C84A20MT.TFXWSWTFX.efd0fdb12ffd284f6e2eeb6d94e435f1"/>
+<summary>...WINTER WEATHER ADVISORY REMAINS IN EFFECT FROM 5 PM MONDAY TO 11 PM MST TUESDAY... * WHAT...Snow expected. Total snow accumulations between 1 and 4 inches. Winds gusting as high as 40 mph. * WHERE...Portions of central, north central, and southwest Montana. * WHEN...From 5 PM Monday to 11 PM MST Tuesday.</summary>
+<cap:event>Winter Weather Advisory</cap:event>
+<cap:effective>2023-02-12T17:42:00-07:00</cap:effective>
+<cap:expires>2023-02-14T23:00:00-07:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Cascade County below 5000ft; Elkhorn and Boulder Mountains; Fergus County below 4500ft; Gates of the Mountains; Helena Valley; Judith Basin County and Judith Gap; Little Belt and Highwood Mountains; Madison River Valley; Meagher County Valleys; Northwest Beaverhead County; Snowy and Judith Mountains; Southern High Plains; Southern Rocky Mountain Front; Upper Blackfoot and MacDonald Pass</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>030001 030013 030027 030043 030045 030049 030057 030059 030099</value>
+<valueName>UGC</valueName>
+<value>MTZ307 MTZ308 MTZ312 MTZ313 MTZ314 MTZ315 MTZ316 MTZ317 MTZ318 MTZ319 MTZ321 MTZ322 MTZ325 MTZ327</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KTFX.WW.Y.0014.230214T0000Z-230215T0600Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=MT126636A8EBA8.WinterWeatherAdvisory.126636C84A20MT.TFXWSWTFX.610e6ecce03c89356b552931e859aff3</id>
+<updated>2023-02-12T17:42:00-07:00</updated>
+<published>2023-02-12T17:42:00-07:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Winter Weather Advisory issued February 12 at 5:42PM MST until February 14 at 11:00PM MST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MT126636A8EBA8.WinterWeatherAdvisory.126636C84A20MT.TFXWSWTFX.610e6ecce03c89356b552931e859aff3"/>
+<summary>...WINTER WEATHER ADVISORY REMAINS IN EFFECT FROM 5 PM MONDAY TO 11 PM MST TUESDAY... * WHAT...Snow expected. Total snow accumulations between 1 and 4 inches. Winds gusting as high as 45 mph. * WHERE...Canyon Ferry Area, Beaverhead and Western Madison below 6000ft, Missouri Headwaters and Ruby Mountains and Southern</summary>
+<cap:event>Winter Weather Advisory</cap:event>
+<cap:effective>2023-02-12T17:42:00-07:00</cap:effective>
+<cap:expires>2023-02-14T23:00:00-07:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Beaverhead and Western Madison below 6000ft; Canyon Ferry Area; Missouri Headwaters; Ruby Mountains and Southern Beaverhead Mountains</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>030001 030007 030031 030043 030057</value>
+<valueName>UGC</valueName>
+<value>MTZ323 MTZ324 MTZ328 MTZ329</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KTFX.WW.Y.0014.230214T0000Z-230215T0600Z/</value>
+</cap:parameter>
+</entry>
+<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=MT1266369D20E8.HighWindWarning.126636AC36A0MT.TFXNPWTFX.efe58e0b932c4d5e1078e4867c0e0348</id>
 <updated>2023-02-12T16:14:00-07:00</updated>
 <published>2023-02-12T16:14:00-07:00</published>
@@ -4980,168 +5174,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value>/O.CON.KBYZ.WS.A.0002.230214T0600Z-230215T0600Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=MT1266369C8AE8.WinterStormWarning.126636C84A20MT.TFXWSWTFX.853310d7151a16c87599293fbdd7256e</id>
-<updated>2023-02-12T12:30:00-07:00</updated>
-<published>2023-02-12T12:30:00-07:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Winter Storm Warning issued February 12 at 12:30PM MST until February 14 at 11:00PM MST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MT1266369C8AE8.WinterStormWarning.126636C84A20MT.TFXWSWTFX.853310d7151a16c87599293fbdd7256e"/>
-<summary>...WINTER STORM WARNING IN EFFECT FROM 5 PM MONDAY TO 11 PM MST TUESDAY... * WHAT...Heavy snow expected. Total snow accumulations of between 4 and 10 inches possible up to pass level, with 10 to 20 inches possible over the higher peaks. Winds could gust over 35 mph at times.</summary>
-<cap:event>Winter Storm Warning</cap:event>
-<cap:effective>2023-02-12T12:30:00-07:00</cap:effective>
-<cap:expires>2023-02-14T23:00:00-07:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Big Belt, Bridger and Castle Mountains; Gallatin and Madison County Mountains and Centennial Mountains</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>030007 030031 030057 030059</value>
-<valueName>UGC</valueName>
-<value>MTZ320 MTZ330</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.UPG.KTFX.WS.A.0003.230214T0000Z-230215T0600Z/
-/O.NEW.KTFX.WS.W.0003.230214T0000Z-230215T0600Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=MT1266369C8AE8.WinterStormWarning.126636C84A20MT.TFXWSWTFX.6f827acf6e9fa092d8ac836541e1f3e0</id>
-<updated>2023-02-12T12:30:00-07:00</updated>
-<published>2023-02-12T12:30:00-07:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Winter Storm Warning issued February 12 at 12:30PM MST until February 14 at 11:00PM MST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MT1266369C8AE8.WinterStormWarning.126636C84A20MT.TFXWSWTFX.6f827acf6e9fa092d8ac836541e1f3e0"/>
-<summary>...WINTER STORM WARNING IN EFFECT FROM 5 PM MONDAY TO 11 PM MST TUESDAY... * WHAT...Heavy snow expected. Total snow accumulations between 4 and 9 inches. Winds gusting as high as 35 mph. * WHERE...Gallatin Valley. * WHEN...From 5 PM Monday to 11 PM MST Tuesday.</summary>
-<cap:event>Winter Storm Warning</cap:event>
-<cap:effective>2023-02-12T12:30:00-07:00</cap:effective>
-<cap:expires>2023-02-14T23:00:00-07:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Gallatin Valley</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>030031</value>
-<valueName>UGC</valueName>
-<value>MTZ326</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.NEW.KTFX.WS.W.0003.230214T0000Z-230215T0600Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=MT1266369C8AE8.WinterWeatherAdvisory.126636C84A20MT.TFXWSWTFX.748da443cfeed7159928722373d01bb2</id>
-<updated>2023-02-12T12:30:00-07:00</updated>
-<published>2023-02-12T12:30:00-07:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Winter Weather Advisory issued February 12 at 12:30PM MST until February 14 at 11:00PM MST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MT1266369C8AE8.WinterWeatherAdvisory.126636C84A20MT.TFXWSWTFX.748da443cfeed7159928722373d01bb2"/>
-<summary>...WINTER WEATHER ADVISORY IN EFFECT FROM 5 PM MONDAY TO 11 PM MST TUESDAY... * WHAT...Snow expected. Total snow accumulations between 3 and 6 inches, with localized higher amounts possible. Winds gusting as high as 40 mph. * WHERE...Portions of central and north central Montana.</summary>
-<cap:event>Winter Weather Advisory</cap:event>
-<cap:effective>2023-02-12T12:30:00-07:00</cap:effective>
-<cap:expires>2023-02-14T23:00:00-07:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>East Glacier Park Region; Elkhorn and Boulder Mountains; Gates of the Mountains; Little Belt and Highwood Mountains; Snowy and Judith Mountains; Southern Rocky Mountain Front; Upper Blackfoot and MacDonald Pass</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>030013 030027 030035 030043 030045 030049 030059 030099</value>
-<valueName>UGC</valueName>
-<value>MTZ301 MTZ307 MTZ315 MTZ316 MTZ317 MTZ318 MTZ322</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.UPG.KTFX.WS.A.0003.230214T0000Z-230215T0600Z/
-/O.NEW.KTFX.WW.Y.0014.230214T0000Z-230215T0600Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=MT1266369C8AE8.WinterWeatherAdvisory.126636C84A20MT.TFXWSWTFX.12256c5f8e1caab4b527005674482aec</id>
-<updated>2023-02-12T12:30:00-07:00</updated>
-<published>2023-02-12T12:30:00-07:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Winter Weather Advisory issued February 12 at 12:30PM MST until February 14 at 11:00PM MST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MT1266369C8AE8.WinterWeatherAdvisory.126636C84A20MT.TFXWSWTFX.12256c5f8e1caab4b527005674482aec"/>
-<summary>...WINTER WEATHER ADVISORY IN EFFECT FROM 5 PM MONDAY TO 11 PM MST TUESDAY... * WHAT...Snow expected. Total snow accumulations between 2 and 5 inches. Winds gusting as high as 35 mph. * WHERE...Portions of central, north central, and southwest Montana. * WHEN...From 5 PM Monday to 11 PM MST Tuesday.</summary>
-<cap:event>Winter Weather Advisory</cap:event>
-<cap:effective>2023-02-12T12:30:00-07:00</cap:effective>
-<cap:expires>2023-02-14T23:00:00-07:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Cascade County below 5000ft; Fergus County below 4500ft; Helena Valley; Judith Basin County and Judith Gap; Madison River Valley; Meagher County Valleys; Northern High Plains; Northwest Beaverhead County; Southern High Plains</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>030001 030013 030027 030035 030045 030049 030057 030059 030073 030099</value>
-<valueName>UGC</valueName>
-<value>MTZ302 MTZ308 MTZ312 MTZ313 MTZ314 MTZ319 MTZ321 MTZ325 MTZ327</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.NEW.KTFX.WW.Y.0014.230214T0000Z-230215T0600Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=MT1266369C8AE8.WinterWeatherAdvisory.126636C84A20MT.TFXWSWTFX.610e6ecce03c89356b552931e859aff3</id>
-<updated>2023-02-12T12:30:00-07:00</updated>
-<published>2023-02-12T12:30:00-07:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Winter Weather Advisory issued February 12 at 12:30PM MST until February 14 at 11:00PM MST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MT1266369C8AE8.WinterWeatherAdvisory.126636C84A20MT.TFXWSWTFX.610e6ecce03c89356b552931e859aff3"/>
-<summary>...WINTER WEATHER ADVISORY IN EFFECT FROM 5 PM MONDAY TO 11 PM MST TUESDAY... * WHAT...Snow expected. Total snow accumulations between 1 and 4 inches. Winds gusting as high as 45 mph. * WHERE...Canyon Ferry Area, Beaverhead and Western Madison below 6000ft, Missouri Headwaters and Ruby Mountains and Southern</summary>
-<cap:event>Winter Weather Advisory</cap:event>
-<cap:effective>2023-02-12T12:30:00-07:00</cap:effective>
-<cap:expires>2023-02-14T23:00:00-07:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Beaverhead and Western Madison below 6000ft; Canyon Ferry Area; Missouri Headwaters; Ruby Mountains and Southern Beaverhead Mountains</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>030001 030007 030031 030043 030057</value>
-<valueName>UGC</valueName>
-<value>MTZ323 MTZ324 MTZ328 MTZ329</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.NEW.KTFX.WW.Y.0014.230214T0000Z-230215T0600Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -6705,17 +6737,17 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=PR1266369CA6A4.RipCurrentStatement.126636AA61E0PR.JSJCFWSJU.b3ca125b6ef9a617ecceb68e608d844a</id>
-<updated>2023-02-12T16:01:00-04:00</updated>
-<published>2023-02-12T16:01:00-04:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=PR126636A8E374.RipCurrentStatement.126636AA61E0PR.JSJCFWSJU.b3ca125b6ef9a617ecceb68e608d844a</id>
+<updated>2023-02-12T20:21:00-04:00</updated>
+<published>2023-02-12T20:21:00-04:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Rip Current Statement issued February 12 at 4:01PM AST until February 13 at 6:00AM AST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=PR1266369CA6A4.RipCurrentStatement.126636AA61E0PR.JSJCFWSJU.b3ca125b6ef9a617ecceb68e608d844a"/>
-<summary>...HIGH RIP CURRENT RISK REMAINS IN EFFECT THROUGH LATE TONIGHT... * WHAT...Life threatening rip currents expected due to breaking waves around 6 feet. * WHERE...Beaches along of north central and northwestern Puerto Rico. * WHEN...Through late tonight.</summary>
+<title>Rip Current Statement issued February 12 at 8:21PM AST until February 13 at 6:00AM AST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=PR126636A8E374.RipCurrentStatement.126636AA61E0PR.JSJCFWSJU.b3ca125b6ef9a617ecceb68e608d844a"/>
+<summary>...HIGH RIP CURRENT RISK REMAINS IN EFFECT UNTIL 6 AM AST MONDAY... * WHAT...Life threatening rip currents expected due to breaking waves around 6 feet. * WHERE...Beaches along of north central and northwestern Puerto Rico.</summary>
 <cap:event>Rip Current Statement</cap:event>
-<cap:effective>2023-02-12T16:01:00-04:00</cap:effective>
+<cap:effective>2023-02-12T20:21:00-04:00</cap:effective>
 <cap:expires>2023-02-13T06:00:00-04:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
@@ -7586,49 +7618,17 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=VA1266369D05F4.SpecialWeatherStatement.126636A8E6F8VA.AKQSPSAKQ.e3e4b2886b093627a910cf7728e5f63c</id>
-<updated>2023-02-12T17:45:00-05:00</updated>
-<published>2023-02-12T17:45:00-05:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=VA126636A8E504.CoastalFloodAdvisory.126636AA61E0VA.AKQCFWAKQ.1d076cae6a93c2c35dd7c7cd948a9ba4</id>
+<updated>2023-02-12T19:25:00-05:00</updated>
+<published>2023-02-12T19:25:00-05:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Special Weather Statement issued February 12 at 5:45PM EST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=VA1266369D05F4.SpecialWeatherStatement.126636A8E6F8VA.AKQSPSAKQ.e3e4b2886b093627a910cf7728e5f63c"/>
-<summary>...STRONG GUSTY WINDS THIS EVENING... Northeast winds will gust to 40 to 45 mph through 730 PM EST this evening across portions of the eastern shore, as strong low pressure passes by south of the area. The highest winds will generally be along the immediate Atlantic coast. Use extra caution when driving, especially if operating a high</summary>
-<cap:event>Special Weather Statement</cap:event>
-<cap:effective>2023-02-12T17:45:00-05:00</cap:effective>
-<cap:expires>2023-02-12T19:30:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Observed</cap:certainty>
-<cap:areaDesc>Accomack; Northampton</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>051001 051131</value>
-<valueName>UGC</valueName>
-<value>VAZ099 VAZ100</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value></value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=VA1266369CAFA0.CoastalFloodAdvisory.126636AA61E0VA.AKQCFWAKQ.1d076cae6a93c2c35dd7c7cd948a9ba4</id>
-<updated>2023-02-12T15:24:00-05:00</updated>
-<published>2023-02-12T15:24:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Coastal Flood Advisory issued February 12 at 3:24PM EST until February 13 at 5:00AM EST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=VA1266369CAFA0.CoastalFloodAdvisory.126636AA61E0VA.AKQCFWAKQ.1d076cae6a93c2c35dd7c7cd948a9ba4"/>
-<summary>...COASTAL FLOOD ADVISORY IN EFFECT FROM MIDNIGHT TONIGHT TO 5 AM EST MONDAY... * WHAT...Up to one half foot of inundation above ground level expected in low- lying areas near shorelines and tidal waterways. * WHERE...Coastal portions of the cities of Chesapeake, Hampton,</summary>
+<title>Coastal Flood Advisory issued February 12 at 7:25PM EST until February 13 at 5:00AM EST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=VA126636A8E504.CoastalFloodAdvisory.126636AA61E0VA.AKQCFWAKQ.1d076cae6a93c2c35dd7c7cd948a9ba4"/>
+<summary>...COASTAL FLOOD ADVISORY NOW IN EFFECT FROM 11 PM THIS EVENING TO 5 AM EST MONDAY... * WHAT...Up to one foot of inundation above ground level expected in low-lying areas near shorelines and tidal waterways. * WHERE...Isle of Wight, Norfolk/Portsmouth, Newport News and</summary>
 <cap:event>Coastal Flood Advisory</cap:event>
-<cap:effective>2023-02-12T15:24:00-05:00</cap:effective>
+<cap:effective>2023-02-12T19:25:00-05:00</cap:effective>
 <cap:expires>2023-02-13T05:00:00-05:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
@@ -7646,21 +7646,21 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
-<value>/O.NEW.KAKQ.CF.Y.0002.230213T0500Z-230213T1000Z/</value>
+<value>/O.EXT.KAKQ.CF.Y.0002.230213T0400Z-230213T1000Z/</value>
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=VA1266369CAFA0.CoastalFloodAdvisory.126636AA61E0VA.AKQCFWAKQ.eeea16910f6dbc57869e530fb75598ac</id>
-<updated>2023-02-12T15:24:00-05:00</updated>
-<published>2023-02-12T15:24:00-05:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=VA126636A8E504.CoastalFloodAdvisory.126636AA61E0VA.AKQCFWAKQ.eeea16910f6dbc57869e530fb75598ac</id>
+<updated>2023-02-12T19:25:00-05:00</updated>
+<published>2023-02-12T19:25:00-05:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Coastal Flood Advisory issued February 12 at 3:24PM EST until February 13 at 5:00AM EST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=VA1266369CAFA0.CoastalFloodAdvisory.126636AA61E0VA.AKQCFWAKQ.eeea16910f6dbc57869e530fb75598ac"/>
-<summary>...HIGH SURF ADVISORY IN EFFECT UNTIL 7 PM EST THIS EVENING... ...COASTAL FLOOD ADVISORY IN EFFECT FROM MIDNIGHT TONIGHT TO 5 AM EST MONDAY... * WHAT...For the High Surf Advisory, large breaking waves of 7 to 9 feet in the surf zone. For the Coastal Flood Advisory, up to one half foot of inundation above ground level expected in low-</summary>
+<title>Coastal Flood Advisory issued February 12 at 7:25PM EST until February 13 at 5:00AM EST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=VA126636A8E504.CoastalFloodAdvisory.126636AA61E0VA.AKQCFWAKQ.eeea16910f6dbc57869e530fb75598ac"/>
+<summary>...COASTAL FLOOD ADVISORY NOW IN EFFECT FROM 11 PM THIS EVENING TO 5 AM EST MONDAY... ...HIGH SURF ADVISORY HAS EXPIRED... * WHAT...Up to one foot of inundation above ground level expected in low-lying areas near shorelines and tidal waterways.</summary>
 <cap:event>Coastal Flood Advisory</cap:event>
-<cap:effective>2023-02-12T15:24:00-05:00</cap:effective>
+<cap:effective>2023-02-12T19:25:00-05:00</cap:effective>
 <cap:expires>2023-02-13T05:00:00-05:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
@@ -7678,22 +7678,55 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
-<value>/O.NEW.KAKQ.CF.Y.0002.230213T0500Z-230213T1000Z/
-/O.EXA.KAKQ.SU.Y.0003.000000T0000Z-230213T0000Z/</value>
+<value>/O.EXP.KAKQ.SU.Y.0003.000000T0000Z-230213T0000Z/
+/O.EXT.KAKQ.CF.Y.0002.230213T0400Z-230213T1000Z/</value>
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=VA1266369CAFA0.HighSurfAdvisory.126636AAB000VA.AKQCFWAKQ.91cf34db9cd7b35e386bec1f446cfd3d</id>
-<updated>2023-02-12T15:24:00-05:00</updated>
-<published>2023-02-12T15:24:00-05:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=VA126636A8E504.CoastalFloodStatement.126636AA61E0VA.AKQCFWAKQ.3ca84bda32beb53ced6d4d69314ed92b</id>
+<updated>2023-02-12T19:25:00-05:00</updated>
+<published>2023-02-12T19:25:00-05:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>High Surf Advisory issued February 12 at 3:24PM EST until February 13 at 7:00AM EST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=VA1266369CAFA0.HighSurfAdvisory.126636AAB000VA.AKQCFWAKQ.91cf34db9cd7b35e386bec1f446cfd3d"/>
-<summary>...HIGH SURF ADVISORY IN EFFECT UNTIL 7 AM EST MONDAY... * WHAT...Large breaking waves of 7 to 9 feet in the surf zone. * WHERE...In Maryland, the Atlantic beaches including Ocean City. In Virginia, the barrier islands of Accomack and Northampton Counties. * WHEN...Until 7 AM EST Monday.</summary>
+<title>Coastal Flood Statement issued February 12 at 7:25PM EST until February 13 at 5:00AM EST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=VA126636A8E504.CoastalFloodStatement.126636AA61E0VA.AKQCFWAKQ.3ca84bda32beb53ced6d4d69314ed92b"/>
+<summary>...HIGH SURF ADVISORY REMAINS IN EFFECT UNTIL 7 AM EST MONDAY... ...COASTAL FLOOD STATEMENT IN EFFECT FROM 11 PM THIS EVENING TO 5 AM EST MONDAY... * WHAT...For the High Surf Advisory, large breaking waves of 7 to 9 feet in the surf zone. For the Coastal Flood Statement, up to one half foot of inundation above ground level expected</summary>
+<cap:event>Coastal Flood Statement</cap:event>
+<cap:effective>2023-02-12T19:25:00-05:00</cap:effective>
+<cap:expires>2023-02-13T05:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Unknown</cap:urgency>
+<cap:severity>Unknown</cap:severity>
+<cap:certainty>Unknown</cap:certainty>
+<cap:areaDesc>Accomack; Northampton</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>051001 051131</value>
+<valueName>UGC</valueName>
+<value>VAZ099 VAZ100</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.NEW.KAKQ.CF.S.0002.230213T0400Z-230213T1000Z/
+/O.CON.KAKQ.SU.Y.0003.000000T0000Z-230213T1200Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=VA126636A8E504.HighSurfAdvisory.126636AAB000VA.AKQCFWAKQ.91cf34db9cd7b35e386bec1f446cfd3d</id>
+<updated>2023-02-12T19:25:00-05:00</updated>
+<published>2023-02-12T19:25:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>High Surf Advisory issued February 12 at 7:25PM EST until February 13 at 7:00AM EST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=VA126636A8E504.HighSurfAdvisory.126636AAB000VA.AKQCFWAKQ.91cf34db9cd7b35e386bec1f446cfd3d"/>
+<summary>...HIGH SURF ADVISORY REMAINS IN EFFECT UNTIL 7 AM EST MONDAY... ...COASTAL FLOOD STATEMENT IN EFFECT FROM 11 PM THIS EVENING TO 5 AM EST MONDAY... * WHAT...For the High Surf Advisory, large breaking waves of 7 to 9 feet in the surf zone. For the Coastal Flood Statement, up to one half foot of inundation above ground level expected</summary>
 <cap:event>High Surf Advisory</cap:event>
-<cap:effective>2023-02-12T15:24:00-05:00</cap:effective>
+<cap:effective>2023-02-12T19:25:00-05:00</cap:effective>
 <cap:expires>2023-02-13T07:00:00-05:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
@@ -7711,7 +7744,8 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
-<value>/O.EXB.KAKQ.SU.Y.0003.000000T0000Z-230213T1200Z/</value>
+<value>/O.NEW.KAKQ.CF.S.0002.230213T0400Z-230213T1000Z/
+/O.CON.KAKQ.SU.Y.0003.000000T0000Z-230213T1200Z/</value>
 </cap:parameter>
 </entry>
 <entry>
