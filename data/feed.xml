@@ -16,11 +16,11 @@ xmlns = 'http://www.w3.org/2005/Atom'
 xmlns:cap = 'urn:oasis:names:tc:emergency:cap:1.1'
 xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 >
-<!-- http-date = Mon, 13 Mar 2023 02:38:00 GMT -->
+<!-- http-date = Mon, 13 Mar 2023 03:02:00 GMT -->
 <id>https://alerts.weather.gov/cap/us.php?x=0</id>
 <logo>http://alerts.weather.gov/images/xml_logo.gif</logo>
 <generator>NWS CAP Server</generator>
-<updated>2023-03-12T19:38:00-07:00</updated>
+<updated>2023-03-12T23:02:00-04:00</updated>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
@@ -187,6 +187,38 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=AL12663C9F1B2C.RipCurrentStatement.12663CA09100AL.MOBCFWMOB.c3b384429874768f662cfc158f642755</id>
+<updated>2023-03-12T21:43:00-05:00</updated>
+<published>2023-03-12T21:43:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Rip Current Statement issued March 12 at 9:43PM CDT until March 13 at 7:00AM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=AL12663C9F1B2C.RipCurrentStatement.12663CA09100AL.MOBCFWMOB.c3b384429874768f662cfc158f642755"/>
+<summary>...HIGH RIP CURRENT RISK REMAINS IN EFFECT UNTIL 7 AM CDT MONDAY... * WHAT...Dangerous rip currents. * WHERE...In Alabama, Mobile Coastal and Baldwin Coastal Counties. In Florida, Escambia Coastal, Santa Rosa Coastal and Okaloosa Coastal Counties.</summary>
+<cap:event>Rip Current Statement</cap:event>
+<cap:effective>2023-03-12T21:43:00-05:00</cap:effective>
+<cap:expires>2023-03-13T07:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Baldwin Coastal; Mobile Coastal</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>001003 001097</value>
+<valueName>UGC</valueName>
+<value>ALZ265 ALZ266</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KMOB.RP.S.0014.000000T0000Z-230313T1200Z/</value>
+</cap:parameter>
+</entry>
+<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=AL12663C928A60.FreezeWatch.12663CBF3C90AL.BMXNPWBMX.ef3d37c2f8a0bab632d868ce6f917228</id>
 <updated>2023-03-12T15:08:00-05:00</updated>
 <published>2023-03-12T15:08:00-05:00</published>
@@ -216,38 +248,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value>/O.NEW.KBMX.FZ.A.0001.230314T0600Z-230315T1300Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=AL12663C9269F4.RipCurrentStatement.12663CA09100AL.MOBCFWMOB.c3b384429874768f662cfc158f642755</id>
-<updated>2023-03-12T14:25:00-05:00</updated>
-<published>2023-03-12T14:25:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Rip Current Statement issued March 12 at 2:25PM CDT until March 13 at 7:00AM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=AL12663C9269F4.RipCurrentStatement.12663CA09100AL.MOBCFWMOB.c3b384429874768f662cfc158f642755"/>
-<summary>...HIGH RIP CURRENT RISK REMAINS IN EFFECT THROUGH MONDAY MORNING... * WHAT...Dangerous rip currents. * WHERE...In Alabama, Mobile Coastal and Baldwin Coastal Counties. In Florida, Escambia Coastal, Santa Rosa Coastal and Okaloosa Coastal Counties.</summary>
-<cap:event>Rip Current Statement</cap:event>
-<cap:effective>2023-03-12T14:25:00-05:00</cap:effective>
-<cap:expires>2023-03-13T07:00:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Baldwin Coastal; Mobile Coastal</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>001003 001097</value>
-<valueName>UGC</valueName>
-<value>ALZ265 ALZ266</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KMOB.RP.S.0014.000000T0000Z-230313T1200Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -1342,14 +1342,145 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=CA12663C9F1938.SpecialWeatherStatement.12663C9F3D28CA.HNXSPSHNX.614c2533f31bac35cc47a1f2a9cbc808</id>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=CA12663C9F20A4.FloodAdvisory.12663C9F6A14CA.HNXFLSHNX.96011dda676c5e359a5c869eafdd82fd</id>
+<updated>2023-03-12T19:57:00-07:00</updated>
+<published>2023-03-12T19:57:00-07:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Flood Advisory issued March 12 at 7:57PM PDT until March 12 at 9:45PM PDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CA12663C9F20A4.FloodAdvisory.12663C9F6A14CA.HNXFLSHNX.96011dda676c5e359a5c869eafdd82fd"/>
+<summary>...FLOOD ADVISORY NOW IN EFFECT UNTIL 9 PM PDT THIS EVENING... * WHAT...Urban and small stream flooding caused by excessive rainfall continues. * WHERE...A portion of central California, including the following counties, Fresno, Madera, Mariposa and Merced. * WHEN...Until 900 PM PDT.</summary>
+<cap:event>Flood Advisory</cap:event>
+<cap:effective>2023-03-12T19:57:00-07:00</cap:effective>
+<cap:expires>2023-03-12T21:45:00-07:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Madera; Mariposa; Merced</cap:areaDesc>
+<cap:polygon>37.02,-120.68 37.27,-120.82 37.44,-120.89 37.63,-120.39 37.65,-120.38 37.68,-120.39 37.65,-120.33 37.66,-120.31 37.7,-120.33 37.72,-120.34 37.24,-120 37.11,-120.04 36.83,-119.83 36.74,-120.35 37.02,-120.68</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>006039 006043 006047</value>
+<valueName>UGC</valueName>
+<value>CAC039 CAC043 CAC047</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.EXT.KHNX.FA.Y.0055.000000T0000Z-230313T0400Z/
+/00000.N.ER.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=CA12663C9F20A4.FloodAdvisory.12663C9F856CCA.HNXFLSHNX.eb004580decf912896556ff5ac5772fe</id>
+<updated>2023-03-12T19:57:00-07:00</updated>
+<published>2023-03-12T19:57:00-07:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Flood Advisory issued March 12 at 7:57PM PDT until March 12 at 10:15PM PDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CA12663C9F20A4.FloodAdvisory.12663C9F856CCA.HNXFLSHNX.eb004580decf912896556ff5ac5772fe"/>
+<summary>...FLOOD ADVISORY NOW IN EFFECT UNTIL 9 PM PDT THIS EVENING... * WHAT...Urban and small stream flooding caused by excessive rainfall continues. * WHERE...A portion of central California, including the following counties, Fresno, Madera, Mariposa and Merced. * WHEN...Until 900 PM PDT.</summary>
+<cap:event>Flood Advisory</cap:event>
+<cap:effective>2023-03-12T19:57:00-07:00</cap:effective>
+<cap:expires>2023-03-12T22:15:00-07:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Fresno</cap:areaDesc>
+<cap:polygon>37.02,-120.68 37.27,-120.82 37.44,-120.89 37.63,-120.39 37.65,-120.38 37.68,-120.39 37.65,-120.33 37.66,-120.31 37.7,-120.33 37.72,-120.34 37.24,-120 37.11,-120.04 36.83,-119.83 36.74,-120.35 37.02,-120.68</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>006019</value>
+<valueName>UGC</valueName>
+<value>CAC019</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.EXT.KHNX.FA.Y.0055.000000T0000Z-230313T0400Z/
+/00000.N.ER.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=CA12663C9F2040.SpecialWeatherStatement.12663C9F3D28CA.HNXSPSHNX.5eae2ea0c9a2ab8aae1eb76fcfdc9e7f</id>
+<updated>2023-03-12T19:56:00-07:00</updated>
+<published>2023-03-12T19:56:00-07:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Special Weather Statement issued March 12 at 7:56PM PDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CA12663C9F2040.SpecialWeatherStatement.12663C9F3D28CA.HNXSPSHNX.5eae2ea0c9a2ab8aae1eb76fcfdc9e7f"/>
+<summary>...A strong thunderstorm will impact portions of southwestern Madera and west central Fresno Counties through 830 PM PDT... At 756 PM PDT, Doppler radar was tracking a strong thunderstorm near Firebaugh, or 14 miles southwest of Madera, moving east at 25 mph. HAZARD...Pea size hail. SOURCE...Radar indicated.</summary>
+<cap:event>Special Weather Statement</cap:event>
+<cap:effective>2023-03-12T19:56:00-07:00</cap:effective>
+<cap:expires>2023-03-12T20:30:00-07:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Observed</cap:certainty>
+<cap:areaDesc>Caruthers - San Joaquin - Selma; Merced - Madera - Mendota; Planada - Le Grand - Snelling</cap:areaDesc>
+<cap:polygon>36.79,-120.43 36.99,-120.39 36.96,-119.95 36.69,-120 36.79,-120.43</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>006019 006039 006047</value>
+<valueName>UGC</valueName>
+<value>CAZ302 CAZ303 CAZ306</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value></value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=CA12663C9F1EB0.FloodWarning.12663C9F3D28CA.MTRFLWMTR.e142bacc2227e5df958f0f9f48568ef9</id>
+<updated>2023-03-12T19:52:00-07:00</updated>
+<published>2023-03-12T19:52:00-07:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Flood Warning issued March 12 at 7:52PM PDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CA12663C9F1EB0.FloodWarning.12663C9F3D28CA.MTRFLWMTR.e142bacc2227e5df958f0f9f48568ef9"/>
+<summary>...FLOOD WARNING NOW IN EFFECT UNTIL 10 PM PDT THIS EVENING... * WHAT...Flooding of Alameda Creek caused by excessive rainfall this morning has kept the creek in minor flood stage, though it is starting to recede. * WHERE...Alameda Creek near Niles in Alameda county. * WHEN...Until 1000 PM PDT.</summary>
+<cap:event>Flood Warning</cap:event>
+<cap:effective>2023-03-12T19:52:00-07:00</cap:effective>
+<cap:expires>2023-03-12T20:30:00-07:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Alameda</cap:areaDesc>
+<cap:polygon>37.57,-122.07 37.6,-122.04 37.59,-121.99 37.62,-121.94 37.61,-121.89 37.56,-121.84 37.51,-121.81 37.5,-121.82 37.49,-121.84 37.55,-121.89 37.56,-121.95 37.55,-122 37.56,-122.06 37.57,-122.07</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>006001</value>
+<valueName>UGC</valueName>
+<value>CAC001</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.EXT.KMTR.FA.W.0050.000000T0000Z-230313T0500Z/
+/00000.0.ER.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=CA12663C9F1938.SpecialWeatherStatement.12663C9F3D28CA.HNXSPSHNX.6d5faa1a346cc5dd3c1e1da7bd1bc3aa</id>
 <updated>2023-03-12T19:38:00-07:00</updated>
 <published>2023-03-12T19:38:00-07:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
 <title>Special Weather Statement issued March 12 at 7:38PM PDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CA12663C9F1938.SpecialWeatherStatement.12663C9F3D28CA.HNXSPSHNX.614c2533f31bac35cc47a1f2a9cbc808"/>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CA12663C9F1938.SpecialWeatherStatement.12663C9F3D28CA.HNXSPSHNX.6d5faa1a346cc5dd3c1e1da7bd1bc3aa"/>
 <summary>...A strong thunderstorm will impact portions of northeastern Kings, west central Tulare and southeastern Fresno Counties through 830 PM PDT... At 737 PM PDT, Doppler radar was tracking a strong thunderstorm over London moving southeast at 30 mph. HAZARD...Winds in excess of 30 mph.</summary>
 <cap:event>Special Weather Statement</cap:event>
 <cap:effective>2023-03-12T19:38:00-07:00</cap:effective>
@@ -1360,81 +1491,17 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:urgency>Expected</cap:urgency>
 <cap:severity>Minor</cap:severity>
 <cap:certainty>Observed</cap:certainty>
-<cap:areaDesc>Caruthers - San Joaquin - Selma; Fresno-Tulare Foothills; Hanford - Corcoran - Lemoore; Visalia - Porterville - Reedley</cap:areaDesc>
+<cap:areaDesc>Fresno-Tulare Foothills; Hanford - Corcoran - Lemoore; Visalia - Porterville - Reedley</cap:areaDesc>
 <cap:polygon>36.39,-119.62 36.6,-119.48 36.48,-119.03 36.15,-119.18 36.39,-119.62</cap:polygon>
 <cap:geocode>
 <valueName>FIPS6</valueName>
 <value>006019 006031 006107</value>
 <valueName>UGC</valueName>
-<value>CAZ306 CAZ311 CAZ312 CAZ319</value>
+<value>CAZ311 CAZ312 CAZ319</value>
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value></value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=CA12663C9F180C.SevereThunderstormWarning.12663C9F1BF4CA.HNXSVSHNX.b21a7d4131b5009c366aec6b5685d913</id>
-<updated>2023-03-12T19:35:00-07:00</updated>
-<published>2023-03-12T19:35:00-07:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Severe Thunderstorm Warning issued March 12 at 7:35PM PDT until March 12 at 7:45PM PDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CA12663C9F180C.SevereThunderstormWarning.12663C9F1BF4CA.HNXSVSHNX.b21a7d4131b5009c366aec6b5685d913"/>
-<summary>...THE SEVERE THUNDERSTORM WARNING FOR NORTHEASTERN KINGS...WEST CENTRAL TULARE AND CENTRAL FRESNO COUNTIES WILL EXPIRE AT 745 PM PDT... The storm which prompted the warning has weakened below severe limits, and no longer poses an immediate threat to life or property. Therefore, the warning will be allowed to expire. However gusty</summary>
-<cap:event>Severe Thunderstorm Warning</cap:event>
-<cap:effective>2023-03-12T19:35:00-07:00</cap:effective>
-<cap:expires>2023-03-12T19:45:00-07:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Immediate</cap:urgency>
-<cap:severity>Severe</cap:severity>
-<cap:certainty>Observed</cap:certainty>
-<cap:areaDesc>Fresno; Kings; Tulare</cap:areaDesc>
-<cap:polygon>36.53,-119.8 36.68,-119.72 36.59,-119.34 36.25,-119.6 36.53,-119.8</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>006019 006031 006107</value>
-<valueName>UGC</valueName>
-<value>CAC019 CAC031 CAC107</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.EXP.KHNX.SV.W.0009.000000T0000Z-230313T0245Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=CA12663C9F180C.SevereWeatherStatement.12663C9F1BF4CA.HNXSVSHNX.ca476c1ddce63094521d2f9a7bba79e9</id>
-<updated>2023-03-12T19:35:00-07:00</updated>
-<published>2023-03-12T19:35:00-07:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Severe Weather Statement issued March 12 at 7:35PM PDT until March 12 at 7:45PM PDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CA12663C9F180C.SevereWeatherStatement.12663C9F1BF4CA.HNXSVSHNX.ca476c1ddce63094521d2f9a7bba79e9"/>
-<summary>...THE SEVERE THUNDERSTORM WARNING FOR NORTHEASTERN KINGS...WEST CENTRAL TULARE AND CENTRAL FRESNO COUNTIES WILL EXPIRE AT 745 PM PDT... The storm which prompted the warning has weakened below severe limits, and no longer poses an immediate threat to life or property. Therefore, the warning will be allowed to expire. However gusty</summary>
-<cap:event>Severe Weather Statement</cap:event>
-<cap:effective>2023-03-12T19:35:00-07:00</cap:effective>
-<cap:expires>2023-03-12T19:45:00-07:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Immediate</cap:urgency>
-<cap:severity>Severe</cap:severity>
-<cap:certainty>Observed</cap:certainty>
-<cap:areaDesc>Fresno; Kings; Tulare</cap:areaDesc>
-<cap:polygon>36.53,-119.8 36.68,-119.72 36.59,-119.34 36.25,-119.6 36.53,-119.8</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>006019 006031 006107</value>
-<valueName>UGC</valueName>
-<value>CAC019 CAC031 CAC107</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.EXP.KHNX.SV.W.0009.000000T0000Z-230313T0245Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -1471,39 +1538,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=CA12663C9F1618.FloodAdvisory.12663C9F1BF4CA.HNXFLSHNX.b9aa79b48e37259ac788b196245f55b7</id>
-<updated>2023-03-12T19:30:00-07:00</updated>
-<published>2023-03-12T19:30:00-07:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Flood Advisory issued March 12 at 7:30PM PDT until March 12 at 7:45PM PDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CA12663C9F1618.FloodAdvisory.12663C9F1BF4CA.HNXFLSHNX.b9aa79b48e37259ac788b196245f55b7"/>
-<summary>...FLOOD ADVISORY IN EFFECT UNTIL 1030 PM PDT THIS EVENING... * WHAT...Flooding caused by excessive rainfall is expected. * WHERE...A portion of central California, including the following counties, Fresno, Kings and Tulare. * WHEN...Until 1030 PM PDT. * IMPACTS...Minor flooding in low-lying and poor drainage areas.</summary>
-<cap:event>Flood Advisory</cap:event>
-<cap:effective>2023-03-12T19:30:00-07:00</cap:effective>
-<cap:expires>2023-03-12T19:45:00-07:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Kings</cap:areaDesc>
-<cap:polygon>36.45,-119.69 36.64,-119.52 36.57,-119.34 36.48,-119.09 36.22,-119.43 36.45,-119.69</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>006031</value>
-<valueName>UGC</valueName>
-<value>CAC031</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.NEW.KHNX.FA.Y.0059.230313T0230Z-230313T0530Z/
-/00000.N.ER.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
-</cap:parameter>
-</entry>
-<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=CA12663C9F1618.FlashFloodWarning.12663C9F6A14CA.HNXFFWHNX.6b595c6308aae0d0fc174921a69819d4</id>
 <updated>2023-03-12T19:30:00-07:00</updated>
 <published>2023-03-12T19:30:00-07:00</published>
@@ -1537,14 +1571,14 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=CA12663C9F1618.FloodAdvisory.12663C9F856CCA.HNXFLSHNX.e87bfa07aaffa0f680775153557ec7a9</id>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=CA12663C9F1618.FloodAdvisory.12663C9F856CCA.HNXFLSHNX.e9ac14612fb9ae05cafb26b1abce1045</id>
 <updated>2023-03-12T19:30:00-07:00</updated>
 <published>2023-03-12T19:30:00-07:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
 <title>Flood Advisory issued March 12 at 7:30PM PDT until March 12 at 10:15PM PDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CA12663C9F1618.FloodAdvisory.12663C9F856CCA.HNXFLSHNX.e87bfa07aaffa0f680775153557ec7a9"/>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CA12663C9F1618.FloodAdvisory.12663C9F856CCA.HNXFLSHNX.e9ac14612fb9ae05cafb26b1abce1045"/>
 <summary>...FLOOD ADVISORY IN EFFECT UNTIL 1030 PM PDT THIS EVENING... * WHAT...Flooding caused by excessive rainfall is expected. * WHERE...A portion of central California, including the following counties, Fresno, Kings and Tulare. * WHEN...Until 1030 PM PDT. * IMPACTS...Minor flooding in low-lying and poor drainage areas.</summary>
 <cap:event>Flood Advisory</cap:event>
 <cap:effective>2023-03-12T19:30:00-07:00</cap:effective>
@@ -1555,13 +1589,13 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:urgency>Expected</cap:urgency>
 <cap:severity>Minor</cap:severity>
 <cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Fresno</cap:areaDesc>
+<cap:areaDesc>Fresno; Kings</cap:areaDesc>
 <cap:polygon>36.45,-119.69 36.64,-119.52 36.57,-119.34 36.48,-119.09 36.22,-119.43 36.45,-119.69</cap:polygon>
 <cap:geocode>
 <valueName>FIPS6</valueName>
-<value>006019</value>
+<value>006019 006031</value>
 <valueName>UGC</valueName>
-<value>CAC019</value>
+<value>CAC019 CAC031</value>
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
@@ -1600,38 +1634,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <valueName>VTEC</valueName>
 <value>/O.NEW.KHNX.FA.Y.0059.230313T0230Z-230313T0530Z/
 /00000.N.ER.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=CA12663C9F15B4.SpecialWeatherStatement.12663C9F3170CA.HNXSPSHNX.16c9ec1ad40d3b3e775538d08728b23b</id>
-<updated>2023-03-12T19:29:00-07:00</updated>
-<published>2023-03-12T19:29:00-07:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Special Weather Statement issued March 12 at 7:29PM PDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CA12663C9F15B4.SpecialWeatherStatement.12663C9F3170CA.HNXSPSHNX.16c9ec1ad40d3b3e775538d08728b23b"/>
-<summary>...A strong thunderstorm will impact portions of southwestern Madera and west central Fresno Counties through 800 PM PDT... At 728 PM PDT, Doppler radar was tracking a strong thunderstorm near Firebaugh, or 23 miles west of Madera, moving east at 25 mph. HAZARD...Half inch hail. SOURCE...Radar indicated.</summary>
-<cap:event>Special Weather Statement</cap:event>
-<cap:effective>2023-03-12T19:29:00-07:00</cap:effective>
-<cap:expires>2023-03-12T20:00:00-07:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Observed</cap:certainty>
-<cap:areaDesc>Los Banos - Dos Palos; Merced - Madera - Mendota</cap:areaDesc>
-<cap:polygon>36.85,-120.58 37.02,-120.55 36.99,-120.16 36.72,-120.21 36.85,-120.58</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>006019 006039 006047</value>
-<valueName>UGC</valueName>
-<value>CAZ301 CAZ302</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value></value>
 </cap:parameter>
 </entry>
 <entry>
@@ -1733,47 +1735,14 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=CA12663C9EF4E4.FloodWatch.12663C9F3170CA.HNXFFAHNX.061712c2fba150b796eb42f354c4a460</id>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=CA12663C9EF4E4.FloodWatch.12663C9F3D28CA.HNXFFAHNX.22e7fed236ca2fedad969171f89bcdae</id>
 <updated>2023-03-12T18:45:00-07:00</updated>
 <published>2023-03-12T18:45:00-07:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
 <title>Flood Watch issued March 12 at 6:45PM PDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CA12663C9EF4E4.FloodWatch.12663C9F3170CA.HNXFFAHNX.061712c2fba150b796eb42f354c4a460"/>
-<summary>...FLOOD WATCH REMAINS IN EFFECT THROUGH WEDNESDAY MORNING... * WHAT...Flooding caused by excessive rainfall continues to be possible. * WHERE...A portion of central California, including the following areas, Bakersfield, Buena Vista, Buttonwillow - Lost Hills - I5, Caruthers - San Joaquin - Selma, Coalinga - Avenal,</summary>
-<cap:event>Flood Watch</cap:event>
-<cap:effective>2023-03-12T18:45:00-07:00</cap:effective>
-<cap:expires>2023-03-12T20:00:00-07:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Future</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Possible</cap:certainty>
-<cap:areaDesc>Caruthers - San Joaquin - Selma; Coalinga - Avenal; Merced - Madera - Mendota; Planada - Le Grand - Snelling; West Side of Fresno and Kings Counties</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>006019 006031 006039 006047</value>
-<valueName>UGC</valueName>
-<value>CAZ302 CAZ303 CAZ304 CAZ305 CAZ306</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KHNX.FA.A.0005.000000T0000Z-230315T1700Z/
-/00000.0.ER.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=CA12663C9EF4E4.FloodWatch.12663C9F3D28CA.HNXFFAHNX.97e8a149468b84070417290be0303ccd</id>
-<updated>2023-03-12T18:45:00-07:00</updated>
-<published>2023-03-12T18:45:00-07:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Flood Watch issued March 12 at 6:45PM PDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CA12663C9EF4E4.FloodWatch.12663C9F3D28CA.HNXFFAHNX.97e8a149468b84070417290be0303ccd"/>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CA12663C9EF4E4.FloodWatch.12663C9F3D28CA.HNXFFAHNX.22e7fed236ca2fedad969171f89bcdae"/>
 <summary>...FLOOD WATCH REMAINS IN EFFECT THROUGH WEDNESDAY MORNING... * WHAT...Flooding caused by excessive rainfall continues to be possible. * WHERE...A portion of central California, including the following areas, Bakersfield, Buena Vista, Buttonwillow - Lost Hills - I5, Caruthers - San Joaquin - Selma, Coalinga - Avenal,</summary>
 <cap:event>Flood Watch</cap:event>
 <cap:effective>2023-03-12T18:45:00-07:00</cap:effective>
@@ -1784,13 +1753,13 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:urgency>Future</cap:urgency>
 <cap:severity>Moderate</cap:severity>
 <cap:certainty>Possible</cap:certainty>
-<cap:areaDesc>Bakersfield; Buena Vista; Buttonwillow - Lost Hills - I5; Delano-Wasco-Shafter; Fresno-Clovis; Fresno-Tulare Foothills; Fresno-Tulare Lower Sierra; Hanford - Corcoran - Lemoore; Mariposa Madera Foothills; Mariposa-Madera Lower Sierra; South End San Joaquin Valley; South End Sierra Foothills; South End of the Lower Sierra; Southeast San Joaquin Valley; Visalia - Porterville - Reedley; West Side Mountains South of 198; Yosemite NP outside of the valley</cap:areaDesc>
+<cap:areaDesc>Bakersfield; Buena Vista; Buttonwillow - Lost Hills - I5; Caruthers - San Joaquin - Selma; Coalinga - Avenal; Delano-Wasco-Shafter; Fresno-Clovis; Fresno-Tulare Foothills; Fresno-Tulare Lower Sierra; Hanford - Corcoran - Lemoore; Mariposa Madera Foothills; Mariposa-Madera Lower Sierra; Planada - Le Grand - Snelling; South End San Joaquin Valley; South End Sierra Foothills; South End of the Lower Sierra; Southeast San Joaquin Valley; Visalia - Porterville - Reedley; West Side Mountains South of 198; West Side of Fresno and Kings Counties; Yosemite NP outside of the valley</cap:areaDesc>
 <cap:polygon></cap:polygon>
 <cap:geocode>
 <valueName>FIPS6</valueName>
-<value>006019 006029 006031 006039 006043 006107 006109</value>
+<value>006019 006029 006031 006039 006043 006047 006107 006109</value>
 <valueName>UGC</valueName>
-<value>CAZ307 CAZ308 CAZ309 CAZ310 CAZ311 CAZ312 CAZ313 CAZ314 CAZ315 CAZ316 CAZ317 CAZ318 CAZ319 CAZ320 CAZ321 CAZ322 CAZ323</value>
+<value>CAZ303 CAZ304 CAZ305 CAZ306 CAZ307 CAZ308 CAZ309 CAZ310 CAZ311 CAZ312 CAZ313 CAZ314 CAZ315 CAZ316 CAZ317 CAZ318 CAZ319 CAZ320 CAZ321 CAZ322 CAZ323</value>
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
@@ -1799,14 +1768,14 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=CA12663C9EF4E4.FloodWatch.12663CBD40C0CA.HNXFFAHNX.7a86127a834497b172a869bf9f640327</id>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=CA12663C9EF4E4.FloodWatch.12663CBD40C0CA.HNXFFAHNX.80368fbe253aa5303837c43f83e330ef</id>
 <updated>2023-03-12T18:45:00-07:00</updated>
 <published>2023-03-12T18:45:00-07:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
 <title>Flood Watch issued March 12 at 6:45PM PDT until March 14 at 5:00PM PDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CA12663C9EF4E4.FloodWatch.12663CBD40C0CA.HNXFFAHNX.7a86127a834497b172a869bf9f640327"/>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CA12663C9EF4E4.FloodWatch.12663CBD40C0CA.HNXFFAHNX.80368fbe253aa5303837c43f83e330ef"/>
 <summary>...FLOOD WATCH REMAINS IN EFFECT THROUGH WEDNESDAY MORNING... * WHAT...Flooding caused by excessive rainfall continues to be possible. * WHERE...A portion of central California, including the following areas, Bakersfield, Buena Vista, Buttonwillow - Lost Hills - I5, Caruthers - San Joaquin - Selma, Coalinga - Avenal,</summary>
 <cap:event>Flood Watch</cap:event>
 <cap:effective>2023-03-12T18:45:00-07:00</cap:effective>
@@ -1817,13 +1786,13 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:urgency>Future</cap:urgency>
 <cap:severity>Moderate</cap:severity>
 <cap:certainty>Possible</cap:certainty>
-<cap:areaDesc>Los Banos - Dos Palos; West Side Mountains north of 198</cap:areaDesc>
+<cap:areaDesc>Los Banos - Dos Palos; Merced - Madera - Mendota; West Side Mountains north of 198</cap:areaDesc>
 <cap:polygon></cap:polygon>
 <cap:geocode>
 <valueName>FIPS6</valueName>
-<value>006019 006047</value>
+<value>006019 006039 006047</value>
 <valueName>UGC</valueName>
-<value>CAZ300 CAZ301</value>
+<value>CAZ300 CAZ301 CAZ302</value>
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
@@ -2327,72 +2296,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=CA12663C9EBFC4.FloodAdvisory.12663C9F6A14CA.HNXFLSHNX.96011dda676c5e359a5c869eafdd82fd</id>
-<updated>2023-03-12T17:09:00-07:00</updated>
-<published>2023-03-12T17:09:00-07:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Flood Advisory issued March 12 at 5:09PM PDT until March 12 at 9:45PM PDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CA12663C9EBFC4.FloodAdvisory.12663C9F6A14CA.HNXFLSHNX.96011dda676c5e359a5c869eafdd82fd"/>
-<summary>...FLOOD ADVISORY IN EFFECT UNTIL 815 PM PDT THIS EVENING... * WHAT...Urban and small stream flooding caused by excessive rainfall is expected. * WHERE...A portion of central California, including the following counties, Fresno, Madera, Mariposa and Merced. * WHEN...Until 815 PM PDT.</summary>
-<cap:event>Flood Advisory</cap:event>
-<cap:effective>2023-03-12T17:09:00-07:00</cap:effective>
-<cap:expires>2023-03-12T21:45:00-07:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Madera; Mariposa; Merced</cap:areaDesc>
-<cap:polygon>37.02,-120.68 37.27,-120.82 37.44,-120.89 37.63,-120.39 37.65,-120.38 37.68,-120.39 37.65,-120.33 37.66,-120.31 37.7,-120.33 37.72,-120.34 37.24,-120 37.11,-120.04 36.83,-119.83 36.74,-120.35 37.02,-120.68</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>006039 006043 006047</value>
-<valueName>UGC</valueName>
-<value>CAC039 CAC043 CAC047</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.NEW.KHNX.FA.Y.0055.230313T0009Z-230313T0315Z/
-/00000.N.ER.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=CA12663C9EBFC4.FloodAdvisory.12663C9F856CCA.HNXFLSHNX.eb004580decf912896556ff5ac5772fe</id>
-<updated>2023-03-12T17:09:00-07:00</updated>
-<published>2023-03-12T17:09:00-07:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Flood Advisory issued March 12 at 5:09PM PDT until March 12 at 10:15PM PDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CA12663C9EBFC4.FloodAdvisory.12663C9F856CCA.HNXFLSHNX.eb004580decf912896556ff5ac5772fe"/>
-<summary>...FLOOD ADVISORY IN EFFECT UNTIL 815 PM PDT THIS EVENING... * WHAT...Urban and small stream flooding caused by excessive rainfall is expected. * WHERE...A portion of central California, including the following counties, Fresno, Madera, Mariposa and Merced. * WHEN...Until 815 PM PDT.</summary>
-<cap:event>Flood Advisory</cap:event>
-<cap:effective>2023-03-12T17:09:00-07:00</cap:effective>
-<cap:expires>2023-03-12T22:15:00-07:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Fresno</cap:areaDesc>
-<cap:polygon>37.02,-120.68 37.27,-120.82 37.44,-120.89 37.63,-120.39 37.65,-120.38 37.68,-120.39 37.65,-120.33 37.66,-120.31 37.7,-120.33 37.72,-120.34 37.24,-120 37.11,-120.04 36.83,-119.83 36.74,-120.35 37.02,-120.68</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>006019</value>
-<valueName>UGC</valueName>
-<value>CAC019</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.NEW.KHNX.FA.Y.0055.230313T0009Z-230313T0315Z/
-/00000.N.ER.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
-</cap:parameter>
-</entry>
-<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=CA12663C9EBE34.FloodWatch.12663CA1A270CA.EKAFFAEKA.3f6fcad5420e031a7ca1cc876cf465bd</id>
 <updated>2023-03-12T17:05:00-07:00</updated>
 <published>2023-03-12T17:05:00-07:00</published>
@@ -2848,39 +2751,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <valueName>VTEC</valueName>
 <value>/O.CON.KMTR.FL.W.0012.000000T0000Z-000000T0000Z/
 /BRDC1.1.ER.230311T0106Z.230311T0815Z.230312T2300Z.NO/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=CA12663C92C0AC.FloodWarning.12663C9F3D28CA.MTRFLWMTR.e142bacc2227e5df958f0f9f48568ef9</id>
-<updated>2023-03-12T14:47:00-07:00</updated>
-<published>2023-03-12T14:47:00-07:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Flood Warning issued March 12 at 2:47PM PDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CA12663C92C0AC.FloodWarning.12663C9F3D28CA.MTRFLWMTR.e142bacc2227e5df958f0f9f48568ef9"/>
-<summary>.The Alameda Creek near Niles is forecast to remain above flood stage into this evening. ...FLOOD WARNING NOW IN EFFECT UNTIL 8 PM PDT THIS EVENING... * WHAT...Flooding of Alameda Creek caused by excessive rainfall will continue. * WHERE...A portion of northern California, including the following</summary>
-<cap:event>Flood Warning</cap:event>
-<cap:effective>2023-03-12T14:47:00-07:00</cap:effective>
-<cap:expires>2023-03-12T20:30:00-07:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Alameda</cap:areaDesc>
-<cap:polygon>37.57,-122.07 37.6,-122.04 37.59,-121.99 37.62,-121.94 37.61,-121.89 37.56,-121.84 37.51,-121.81 37.5,-121.82 37.49,-121.84 37.55,-121.89 37.56,-121.95 37.55,-122 37.56,-122.06 37.57,-122.07</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>006001</value>
-<valueName>UGC</valueName>
-<value>CAC001</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.EXT.KMTR.FA.W.0050.000000T0000Z-230313T0300Z/
-/00000.0.ER.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -4021,17 +3891,17 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=DC12663C930508.CoastalFloodAdvisory.12663C9FCDB0DC.LWXCFWLWX.eca2ed9fc663427c4c937e282d73c433</id>
-<updated>2023-03-12T19:22:00-04:00</updated>
-<published>2023-03-12T19:22:00-04:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=DC12663C9F1C58.CoastalFloodAdvisory.12663C9FCDB0DC.LWXCFWLWX.eca2ed9fc663427c4c937e282d73c433</id>
+<updated>2023-03-12T22:46:00-04:00</updated>
+<published>2023-03-12T22:46:00-04:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Coastal Flood Advisory issued March 12 at 7:22PM EDT until March 13 at 3:00AM EDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=DC12663C930508.CoastalFloodAdvisory.12663C9FCDB0DC.LWXCFWLWX.eca2ed9fc663427c4c937e282d73c433"/>
-<summary>...COASTAL FLOOD ADVISORY REMAINS IN EFFECT UNTIL 3 AM EDT MONDAY... ...COASTAL FLOOD ADVISORY IN EFFECT FROM 9 AM TO 4 PM EDT MONDAY... * WHAT...For the first Coastal Flood Advisory, up to one half foot of inundation above ground level expected in low lying</summary>
+<title>Coastal Flood Advisory issued March 12 at 10:46PM EDT until March 13 at 3:00AM EDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=DC12663C9F1C58.CoastalFloodAdvisory.12663C9FCDB0DC.LWXCFWLWX.eca2ed9fc663427c4c937e282d73c433"/>
+<summary>...COASTAL FLOOD ADVISORY REMAINS IN EFFECT UNTIL 3 AM EDT MONDAY... ...COASTAL FLOOD ADVISORY REMAINS IN EFFECT FROM 9 AM TO 4 PM EDT MONDAY... * WHAT...For the first Coastal Flood Advisory, up to one half foot of inundation above ground level expected in low lying areas due</summary>
 <cap:event>Coastal Flood Advisory</cap:event>
-<cap:effective>2023-03-12T19:22:00-04:00</cap:effective>
+<cap:effective>2023-03-12T22:46:00-04:00</cap:effective>
 <cap:expires>2023-03-13T03:00:00-04:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
@@ -4049,22 +3919,22 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
-<value>/O.NEW.KLWX.CF.Y.0015.230313T1300Z-230313T2000Z/
-/O.CON.KLWX.CF.Y.0014.230313T0200Z-230313T0700Z/</value>
+<value>/O.CON.KLWX.CF.Y.0014.000000T0000Z-230313T0700Z/
+/O.CON.KLWX.CF.Y.0015.230313T1300Z-230313T2000Z/</value>
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=DC12663C930508.CoastalFloodAdvisory.12663CA1C980DC.LWXCFWLWX.38ab173a674e5986813e65a7d6c4ec11</id>
-<updated>2023-03-12T19:22:00-04:00</updated>
-<published>2023-03-12T19:22:00-04:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=DC12663C9F1C58.CoastalFloodAdvisory.12663CA1C980DC.LWXCFWLWX.38ab173a674e5986813e65a7d6c4ec11</id>
+<updated>2023-03-12T22:46:00-04:00</updated>
+<published>2023-03-12T22:46:00-04:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Coastal Flood Advisory issued March 12 at 7:22PM EDT until March 13 at 4:00PM EDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=DC12663C930508.CoastalFloodAdvisory.12663CA1C980DC.LWXCFWLWX.38ab173a674e5986813e65a7d6c4ec11"/>
-<summary>...COASTAL FLOOD ADVISORY REMAINS IN EFFECT UNTIL 3 AM EDT MONDAY... ...COASTAL FLOOD ADVISORY IN EFFECT FROM 9 AM TO 4 PM EDT MONDAY... * WHAT...For the first Coastal Flood Advisory, up to one half foot of inundation above ground level expected in low lying</summary>
+<title>Coastal Flood Advisory issued March 12 at 10:46PM EDT until March 13 at 4:00PM EDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=DC12663C9F1C58.CoastalFloodAdvisory.12663CA1C980DC.LWXCFWLWX.38ab173a674e5986813e65a7d6c4ec11"/>
+<summary>...COASTAL FLOOD ADVISORY REMAINS IN EFFECT UNTIL 3 AM EDT MONDAY... ...COASTAL FLOOD ADVISORY REMAINS IN EFFECT FROM 9 AM TO 4 PM EDT MONDAY... * WHAT...For the first Coastal Flood Advisory, up to one half foot of inundation above ground level expected in low lying areas due</summary>
 <cap:event>Coastal Flood Advisory</cap:event>
-<cap:effective>2023-03-12T19:22:00-04:00</cap:effective>
+<cap:effective>2023-03-12T22:46:00-04:00</cap:effective>
 <cap:expires>2023-03-13T16:00:00-04:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
@@ -4082,36 +3952,36 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
-<value>/O.NEW.KLWX.CF.Y.0015.230313T1300Z-230313T2000Z/
-/O.CON.KLWX.CF.Y.0014.230313T0200Z-230313T0700Z/</value>
+<value>/O.CON.KLWX.CF.Y.0014.000000T0000Z-230313T0700Z/
+/O.CON.KLWX.CF.Y.0015.230313T1300Z-230313T2000Z/</value>
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=FL12663C9F1744.SpecialWeatherStatement.12663C9F3170FL.JAXSPSJAX.db07756c97fffb5bbe0ebfb412c54860</id>
-<updated>2023-03-12T22:33:00-04:00</updated>
-<published>2023-03-12T22:33:00-04:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=FL12663C9F3238.SpecialWeatherStatement.12663C9F3D28FL.JAXSPSJAX.82ee3abe943cd6d52d523f8c5258a659</id>
+<updated>2023-03-12T23:02:00-04:00</updated>
+<published>2023-03-12T23:02:00-04:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Special Weather Statement issued March 12 at 10:33PM EDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=FL12663C9F1744.SpecialWeatherStatement.12663C9F3170FL.JAXSPSJAX.db07756c97fffb5bbe0ebfb412c54860"/>
-<summary>...A strong thunderstorm will impact portions of east central Bradford, northwestern St. Johns and central Clay Counties through 1100 PM EDT... At 1033 PM EDT, Doppler radar was tracking a strong thunderstorm capable of producing a landspout over Kingsley, or 8 miles southwest of Middleburg, moving east at 30 mph.</summary>
+<title>Special Weather Statement issued March 12 at 11:02PM EDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=FL12663C9F3238.SpecialWeatherStatement.12663C9F3D28FL.JAXSPSJAX.82ee3abe943cd6d52d523f8c5258a659"/>
+<summary>...A strong thunderstorm will impact portions of central St. Johns and central Clay Counties through 1130 PM EDT... At 1101 PM EDT, Doppler radar was tracking a strong thunderstorm capable of producing a landspout near Green Cove Springs, moving east at 25 mph. HAZARD...Landspouts and winds around 40 mph.</summary>
 <cap:event>Special Weather Statement</cap:event>
-<cap:effective>2023-03-12T22:33:00-04:00</cap:effective>
-<cap:expires>2023-03-12T23:00:00-04:00</cap:expires>
+<cap:effective>2023-03-12T23:02:00-04:00</cap:effective>
+<cap:expires>2023-03-12T23:30:00-04:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
 <cap:category>Met</cap:category>
 <cap:urgency>Expected</cap:urgency>
 <cap:severity>Minor</cap:severity>
 <cap:certainty>Observed</cap:certainty>
-<cap:areaDesc>Bradford; Eastern Clay; Inland St. Johns; South Central Duval; Western Clay</cap:areaDesc>
-<cap:polygon>29.89,-82.11 30.03,-82.1 30.14,-81.59 29.83,-81.46 29.89,-82.11</cap:polygon>
+<cap:areaDesc>Coastal St. Johns; Eastern Clay; Inland St. Johns; Western Clay</cap:areaDesc>
+<cap:polygon>29.84,-81.95 30.05,-81.87 30.11,-81.5 30.1,-81.45 30.12,-81.43 30.13,-81.34 29.86,-81.25 29.84,-81.95</cap:polygon>
 <cap:geocode>
 <valueName>FIPS6</valueName>
-<value>012007 012019 012031 012109</value>
+<value>012019 012109</value>
 <valueName>UGC</valueName>
-<value>FLZ031 FLZ033 FLZ132 FLZ232 FLZ325</value>
+<value>FLZ033 FLZ132 FLZ133 FLZ232</value>
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
@@ -4119,31 +3989,31 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=FL12663C9F16E0.SpecialWeatherStatement.12663C9F3170FL.JAXSPSJAX.0f2f220f07d59790ad19970012e0850f</id>
-<updated>2023-03-12T22:32:00-04:00</updated>
-<published>2023-03-12T22:32:00-04:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=FL12663C9F2040.SpecialWeatherStatement.12663C9F374CFL.TAESPSTAE.e8f59fe33537ac83a6cb1f63e1f649cb</id>
+<updated>2023-03-12T22:56:00-04:00</updated>
+<published>2023-03-12T22:56:00-04:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Special Weather Statement issued March 12 at 10:32PM EDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=FL12663C9F16E0.SpecialWeatherStatement.12663C9F3170FL.JAXSPSJAX.0f2f220f07d59790ad19970012e0850f"/>
-<summary>...A strong thunderstorm will impact portions of north central St. Johns and southeastern Duval Counties through 1100 PM EDT... At 1031 PM EDT, Doppler radar was tracking a strong thunderstorm capable of producing a landspout over Bayard, or near Fruit Cove, moving east at 25 mph. HAZARD...Landspouts and winds around 40 mph.</summary>
+<title>Special Weather Statement issued March 12 at 10:56PM EDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=FL12663C9F2040.SpecialWeatherStatement.12663C9F374CFL.TAESPSTAE.e8f59fe33537ac83a6cb1f63e1f649cb"/>
+<summary>...A strong thunderstorm will impact portions of south central Wakulla and northeastern Franklin Counties through 1115 PM EDT... At 1056 PM EDT, Doppler radar was tracking a strong thunderstorm 14 miles south of Crawfordville, moving east at 15 mph. HAZARD...Wind gusts up to 50 mph. SOURCE...Radar indicated.</summary>
 <cap:event>Special Weather Statement</cap:event>
-<cap:effective>2023-03-12T22:32:00-04:00</cap:effective>
-<cap:expires>2023-03-12T23:00:00-04:00</cap:expires>
+<cap:effective>2023-03-12T22:56:00-04:00</cap:effective>
+<cap:expires>2023-03-12T23:15:00-04:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
 <cap:category>Met</cap:category>
 <cap:urgency>Expected</cap:urgency>
 <cap:severity>Minor</cap:severity>
 <cap:certainty>Observed</cap:certainty>
-<cap:areaDesc>Coastal Duval; Coastal St. Johns</cap:areaDesc>
-<cap:polygon>30.07,-81.54 30.17,-81.6 30.26,-81.35 30.02,-81.27 30.07,-81.54</cap:polygon>
+<cap:areaDesc>Coastal Franklin; Coastal Wakulla</cap:areaDesc>
+<cap:polygon>29.9,-84.48 30.05,-84.46 30.05,-84.2 30,-84.21 29.99,-84.26 29.85,-84.28 29.9,-84.48</cap:polygon>
 <cap:geocode>
 <valueName>FIPS6</valueName>
-<value>012031 012109</value>
+<value>012037 012129</value>
 <valueName>UGC</valueName>
-<value>FLZ125 FLZ133</value>
+<value>FLZ115 FLZ127</value>
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
@@ -4151,35 +4021,35 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=FL12663C9F14EC.SpecialWeatherStatement.12663C9F3170FL.TAESPSTAE.b802cb221ed9c77421c3f98d42260f5b</id>
-<updated>2023-03-12T22:27:00-04:00</updated>
-<published>2023-03-12T22:27:00-04:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=FL12663C9F1B2C.RipCurrentStatement.12663CA09100FL.MOBCFWMOB.c07ea9c996e2d87438dd48d424102898</id>
+<updated>2023-03-12T22:43:00-04:00</updated>
+<published>2023-03-12T22:43:00-04:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Special Weather Statement issued March 12 at 10:27PM EDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=FL12663C9F14EC.SpecialWeatherStatement.12663C9F3170FL.TAESPSTAE.b802cb221ed9c77421c3f98d42260f5b"/>
-<summary>...A strong thunderstorm will impact portions of southwestern Wakulla, southern Liberty and northeastern Franklin Counties through 1100 PM EDT... At 1027 PM EDT, Doppler radar was tracking a strong thunderstorm 16 miles northwest of Carrabelle, moving east at 30 mph. HAZARD...Wind gusts up to 50 mph.</summary>
-<cap:event>Special Weather Statement</cap:event>
-<cap:effective>2023-03-12T22:27:00-04:00</cap:effective>
-<cap:expires>2023-03-12T23:00:00-04:00</cap:expires>
+<title>Rip Current Statement issued March 12 at 10:43PM EDT until March 13 at 8:00AM EDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=FL12663C9F1B2C.RipCurrentStatement.12663CA09100FL.MOBCFWMOB.c07ea9c996e2d87438dd48d424102898"/>
+<summary>...HIGH RIP CURRENT RISK REMAINS IN EFFECT UNTIL 7 AM CDT MONDAY... * WHAT...Dangerous rip currents. * WHERE...In Alabama, Mobile Coastal and Baldwin Coastal Counties. In Florida, Escambia Coastal, Santa Rosa Coastal and Okaloosa Coastal Counties.</summary>
+<cap:event>Rip Current Statement</cap:event>
+<cap:effective>2023-03-12T22:43:00-04:00</cap:effective>
+<cap:expires>2023-03-13T08:00:00-04:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
 <cap:category>Met</cap:category>
 <cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Observed</cap:certainty>
-<cap:areaDesc>Coastal Franklin; Coastal Wakulla; Inland Franklin; Inland Wakulla; Liberty</cap:areaDesc>
-<cap:polygon>29.95,-85.02 29.98,-85.03 29.99,-85.04 30.16,-85.02 30.14,-84.39 29.89,-84.4 29.95,-85.02</cap:polygon>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Escambia Coastal; Okaloosa Coastal; Santa Rosa Coastal</cap:areaDesc>
+<cap:polygon></cap:polygon>
 <cap:geocode>
 <valueName>FIPS6</valueName>
-<value>012037 012077 012129</value>
+<value>012033 012091 012113</value>
 <valueName>UGC</valueName>
-<value>FLZ015 FLZ026 FLZ027 FLZ115 FLZ127</value>
+<value>FLZ202 FLZ204 FLZ206</value>
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
-<value></value>
+<value>/O.CON.KMOB.RP.S.0014.000000T0000Z-230313T1200Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -4244,38 +4114,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value></value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=FL12663C9269F4.RipCurrentStatement.12663CA09100FL.MOBCFWMOB.c07ea9c996e2d87438dd48d424102898</id>
-<updated>2023-03-12T15:25:00-04:00</updated>
-<published>2023-03-12T15:25:00-04:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Rip Current Statement issued March 12 at 3:25PM EDT until March 13 at 8:00AM EDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=FL12663C9269F4.RipCurrentStatement.12663CA09100FL.MOBCFWMOB.c07ea9c996e2d87438dd48d424102898"/>
-<summary>...HIGH RIP CURRENT RISK REMAINS IN EFFECT THROUGH MONDAY MORNING... * WHAT...Dangerous rip currents. * WHERE...In Alabama, Mobile Coastal and Baldwin Coastal Counties. In Florida, Escambia Coastal, Santa Rosa Coastal and Okaloosa Coastal Counties.</summary>
-<cap:event>Rip Current Statement</cap:event>
-<cap:effective>2023-03-12T15:25:00-04:00</cap:effective>
-<cap:expires>2023-03-13T08:00:00-04:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Escambia Coastal; Okaloosa Coastal; Santa Rosa Coastal</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>012033 012091 012113</value>
-<valueName>UGC</valueName>
-<value>FLZ202 FLZ204 FLZ206</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KMOB.RP.S.0014.000000T0000Z-230313T1200Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -4929,38 +4767,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=IL12663C928934.SpecialWeatherStatement.12663C9F3170IL.PAHSPSPAH.728b21cd1ac0b8a1ec58fbabd04ea2c5</id>
-<updated>2023-03-12T15:05:00-05:00</updated>
-<published>2023-03-12T15:05:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Special Weather Statement issued March 12 at 3:05PM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=IL12663C928934.SpecialWeatherStatement.12663C9F3170IL.PAHSPSPAH.728b21cd1ac0b8a1ec58fbabd04ea2c5"/>
-<summary>...Freezing Conditions Could Harm Sensitive Vegetation Monday Night and Tuesday Night... Temperatures will drop below freezing throughout the Quad State each night from tonight through Tuesday night. A hard freeze will be possible in far western portions of the region Monday night and over much of the region Tuesday night. These freezing conditions</summary>
-<cap:event>Special Weather Statement</cap:event>
-<cap:effective>2023-03-12T15:05:00-05:00</cap:effective>
-<cap:expires>2023-03-12T22:00:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Observed</cap:certainty>
-<cap:areaDesc>Alexander; Edwards; Franklin; Gallatin; Hamilton; Hardin; Jackson; Jefferson; Johnson; Massac; Perry; Pope; Pulaski; Saline; Union; Wabash; Wayne; White; Williamson</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>017003 017047 017055 017059 017065 017069 017077 017081 017087 017127 017145 017151 017153 017165 017181 017185 017191 017193 017199</value>
-<valueName>UGC</valueName>
-<value>ILZ075 ILZ076 ILZ077 ILZ078 ILZ080 ILZ081 ILZ082 ILZ083 ILZ084 ILZ085 ILZ086 ILZ087 ILZ088 ILZ089 ILZ090 ILZ091 ILZ092 ILZ093 ILZ094</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value></value>
-</cap:parameter>
-</entry>
-<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=IL12663C919F9C.FloodWarning.12663CDD24D0IL.PAHFLSPAH.da4b65ee52f3898e5a01dd81074d21d0</id>
 <updated>2023-03-12T09:07:00-05:00</updated>
 <published>2023-03-12T09:07:00-05:00</published>
@@ -5324,38 +5130,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=IN12663C928934.SpecialWeatherStatement.12663C9F3170IN.PAHSPSPAH.0734c1b25d2d1fe2729f74fb09e72119</id>
-<updated>2023-03-12T16:05:00-04:00</updated>
-<published>2023-03-12T16:05:00-04:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Special Weather Statement issued March 12 at 4:05PM EDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=IN12663C928934.SpecialWeatherStatement.12663C9F3170IN.PAHSPSPAH.0734c1b25d2d1fe2729f74fb09e72119"/>
-<summary>...Freezing Conditions Could Harm Sensitive Vegetation Monday Night and Tuesday Night... Temperatures will drop below freezing throughout the Quad State each night from tonight through Tuesday night. A hard freeze will be possible in far western portions of the region Monday night and over much of the region Tuesday night. These freezing conditions</summary>
-<cap:event>Special Weather Statement</cap:event>
-<cap:effective>2023-03-12T16:05:00-04:00</cap:effective>
-<cap:expires>2023-03-12T23:00:00-04:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Observed</cap:certainty>
-<cap:areaDesc>Gibson; Pike; Posey; Spencer; Vanderburgh; Warrick</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>018051 018125 018129 018147 018163 018173</value>
-<valueName>UGC</valueName>
-<value>INZ081 INZ082 INZ085 INZ086 INZ087 INZ088</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value></value>
-</cap:parameter>
-</entry>
-<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=IN12663C926224.SpecialWeatherStatement.12663CA01BD0IN.LMKSPSLMK.62ac46d495325b6abdb0e9a93e10a704</id>
 <updated>2023-03-12T15:05:00-04:00</updated>
 <published>2023-03-12T15:05:00-04:00</published>
@@ -5517,38 +5291,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <valueName>VTEC</valueName>
 <value>/O.CON.KPAH.FL.W.0015.000000T0000Z-230314T1630Z/
 /CIRI2.1.ER.230305T1220Z.230310T1400Z.230314T1030Z.NO/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=KY12663C928934.SpecialWeatherStatement.12663C9F3170KY.PAHSPSPAH.879db7cd14810aa411c8cb3c47296903</id>
-<updated>2023-03-12T16:05:00-04:00</updated>
-<published>2023-03-12T16:05:00-04:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Special Weather Statement issued March 12 at 4:05PM EDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=KY12663C928934.SpecialWeatherStatement.12663C9F3170KY.PAHSPSPAH.879db7cd14810aa411c8cb3c47296903"/>
-<summary>...Freezing Conditions Could Harm Sensitive Vegetation Monday Night and Tuesday Night... Temperatures will drop below freezing throughout the Quad State each night from tonight through Tuesday night. A hard freeze will be possible in far western portions of the region Monday night and over much of the region Tuesday night. These freezing conditions</summary>
-<cap:event>Special Weather Statement</cap:event>
-<cap:effective>2023-03-12T16:05:00-04:00</cap:effective>
-<cap:expires>2023-03-12T23:00:00-04:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Observed</cap:certainty>
-<cap:areaDesc>Ballard; Caldwell; Calloway; Carlisle; Christian; Crittenden; Daviess; Fulton; Graves; Henderson; Hickman; Hopkins; Livingston; Lyon; Marshall; McCracken; McLean; Muhlenberg; Todd; Trigg; Union; Webster</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>021007 021033 021035 021039 021047 021055 021059 021075 021083 021101 021105 021107 021139 021143 021145 021149 021157 021177 021219 021221 021225 021233</value>
-<valueName>UGC</valueName>
-<value>KYZ001 KYZ002 KYZ003 KYZ004 KYZ005 KYZ006 KYZ007 KYZ008 KYZ009 KYZ010 KYZ011 KYZ012 KYZ013 KYZ014 KYZ015 KYZ016 KYZ017 KYZ018 KYZ019 KYZ020 KYZ021 KYZ022</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value></value>
 </cap:parameter>
 </entry>
 <entry>
@@ -5973,6 +5715,232 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=MD12663C9F1DE8.WinterWeatherAdvisory.12663CA042E0MD.LWXWSWLWX.3b827eefcaf4a20ae0f1b9670644f58f</id>
+<updated>2023-03-12T22:50:00-04:00</updated>
+<published>2023-03-12T22:50:00-04:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Winter Weather Advisory issued March 12 at 10:50PM EDT until March 13 at 6:00AM EDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MD12663C9F1DE8.WinterWeatherAdvisory.12663CA042E0MD.LWXWSWLWX.3b827eefcaf4a20ae0f1b9670644f58f"/>
+<summary>...WINTER WEATHER ADVISORY REMAINS IN EFFECT UNTIL 6 AM EDT MONDAY... * WHAT...Mixed precipitation. Total snow accumulations around 1 to 3 inches. A glaze of ice up to one tenth of an inch from freezing rain is also expected. * WHERE...In Maryland, Garrett and Extreme Western Allegany</summary>
+<cap:event>Winter Weather Advisory</cap:event>
+<cap:effective>2023-03-12T22:50:00-04:00</cap:effective>
+<cap:expires>2023-03-13T06:00:00-04:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Extreme Western Allegany; Garrett</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>024001 024023</value>
+<valueName>UGC</valueName>
+<value>MDZ001 MDZ501</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KLWX.WW.Y.0016.000000T0000Z-230313T1000Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=MD12663C9F1C58.CoastalFloodAdvisory.12663C9F7F90MD.LWXCFWLWX.7e840559c80ef03aaa4bc5802fe40ef5</id>
+<updated>2023-03-12T22:46:00-04:00</updated>
+<published>2023-03-12T22:46:00-04:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Coastal Flood Advisory issued March 12 at 10:46PM EDT until March 13 at 1:00AM EDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MD12663C9F1C58.CoastalFloodAdvisory.12663C9F7F90MD.LWXCFWLWX.7e840559c80ef03aaa4bc5802fe40ef5"/>
+<summary>...COASTAL FLOOD ADVISORY REMAINS IN EFFECT UNTIL 1 AM EDT MONDAY... ...COASTAL FLOOD WARNING REMAINS IN EFFECT FROM 5 AM TO 2 PM EDT MONDAY... * WHAT...For the Coastal Flood Warning, up to one foot of inundation above ground level expected in low lying areas due</summary>
+<cap:event>Coastal Flood Advisory</cap:event>
+<cap:effective>2023-03-12T22:46:00-04:00</cap:effective>
+<cap:expires>2023-03-13T01:00:00-04:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Anne Arundel</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>024003</value>
+<valueName>UGC</valueName>
+<value>MDZ014</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KLWX.CF.W.0002.230313T0900Z-230313T1800Z/
+/O.CON.KLWX.CF.Y.0013.000000T0000Z-230313T0500Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=MD12663C9F1C58.CoastalFloodAdvisory.12663CA01BD0MD.LWXCFWLWX.1766b6848046e660736d52cf3d10435d</id>
+<updated>2023-03-12T22:46:00-04:00</updated>
+<published>2023-03-12T22:46:00-04:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Coastal Flood Advisory issued March 12 at 10:46PM EDT until March 13 at 5:00AM EDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MD12663C9F1C58.CoastalFloodAdvisory.12663CA01BD0MD.LWXCFWLWX.1766b6848046e660736d52cf3d10435d"/>
+<summary>...COASTAL FLOOD ADVISORY IN EFFECT UNTIL 5 AM EDT MONDAY... * WHAT...Up to one half foot of inundation above ground level expected in low lying areas due to tidal flooding. * WHERE...Shoreline in Southeast Harford County. * WHEN...Until 5 AM EDT Monday, especially around the time of high tide.</summary>
+<cap:event>Coastal Flood Advisory</cap:event>
+<cap:effective>2023-03-12T22:46:00-04:00</cap:effective>
+<cap:expires>2023-03-13T05:00:00-04:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Southeast Harford</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>024025</value>
+<valueName>UGC</valueName>
+<value>MDZ508</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.EXB.KLWX.CF.Y.0015.230313T0400Z-230313T0900Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=MD12663C9F1C58.CoastalFloodWarning.12663CA0DF20MD.LWXCFWLWX.ec07b88b9bd54f83b1cd25358ca2f8f5</id>
+<updated>2023-03-12T22:46:00-04:00</updated>
+<published>2023-03-12T22:46:00-04:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Coastal Flood Warning issued March 12 at 10:46PM EDT until March 13 at 10:00AM EDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MD12663C9F1C58.CoastalFloodWarning.12663CA0DF20MD.LWXCFWLWX.ec07b88b9bd54f83b1cd25358ca2f8f5"/>
+<summary>...COASTAL FLOOD WARNING REMAINS IN EFFECT FROM 2 AM TO 10 AM EDT MONDAY... * WHAT...For the Coastal Flood Warning, up to one foot of inundation above ground level expected in low lying areas due to tidal flooding. For the Coastal Flood Advisory, up to one half foot of inundation above ground level in low lying areas</summary>
+<cap:event>Coastal Flood Warning</cap:event>
+<cap:effective>2023-03-12T22:46:00-04:00</cap:effective>
+<cap:expires>2023-03-13T10:00:00-04:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>St. Marys</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>024037</value>
+<valueName>UGC</valueName>
+<value>MDZ017</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KLWX.CF.W.0002.230313T0600Z-230313T1400Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=MD12663C9F1C58.CoastalFloodAdvisory.12663CA10630MD.LWXCFWLWX.2f6e4b278896e822fdf0f2fd1a60b51e</id>
+<updated>2023-03-12T22:46:00-04:00</updated>
+<published>2023-03-12T22:46:00-04:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Coastal Flood Advisory issued March 12 at 10:46PM EDT until March 13 at 11:00AM EDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MD12663C9F1C58.CoastalFloodAdvisory.12663CA10630MD.LWXCFWLWX.2f6e4b278896e822fdf0f2fd1a60b51e"/>
+<summary>...COASTAL FLOOD ADVISORY REMAINS IN EFFECT FROM 3 AM TO 11 AM EDT MONDAY... * WHAT...Up to one half foot of inundation above ground level expected in low lying areas due to tidal flooding. * WHERE...Shoreline in Calvert County. * WHEN...From 3 AM to 11 AM EDT Monday, especially around the</summary>
+<cap:event>Coastal Flood Advisory</cap:event>
+<cap:effective>2023-03-12T22:46:00-04:00</cap:effective>
+<cap:expires>2023-03-13T11:00:00-04:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Calvert</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>024009</value>
+<valueName>UGC</valueName>
+<value>MDZ018</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KLWX.CF.Y.0014.230313T0700Z-230313T1500Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=MD12663C9F1C58.CoastalFloodAdvisory.12663CA10630MD.LWXCFWLWX.491486ad6eda86cb287b4ad6dd71779c</id>
+<updated>2023-03-12T22:46:00-04:00</updated>
+<published>2023-03-12T22:46:00-04:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Coastal Flood Advisory issued March 12 at 10:46PM EDT until March 13 at 11:00AM EDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MD12663C9F1C58.CoastalFloodAdvisory.12663CA10630MD.LWXCFWLWX.491486ad6eda86cb287b4ad6dd71779c"/>
+<summary>...COASTAL FLOOD ADVISORY REMAINS IN EFFECT FROM 5 AM TO 11 AM EDT MONDAY... * WHAT...Up to 1 foot of inundation above ground level expected in low lying areas due to tidal flooding. * WHERE...Shoreline in Charles and King George Counties. * WHEN...From 5 AM to 11 AM EDT Monday, especially around the</summary>
+<cap:event>Coastal Flood Advisory</cap:event>
+<cap:effective>2023-03-12T22:46:00-04:00</cap:effective>
+<cap:expires>2023-03-13T11:00:00-04:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Charles</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>024017</value>
+<valueName>UGC</valueName>
+<value>MDZ016</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KLWX.CF.Y.0015.230313T0900Z-230313T1500Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=MD12663C9F1C58.CoastalFloodWarning.12663CA17B60MD.LWXCFWLWX.9661a25d45eea574785d97a23e4eebda</id>
+<updated>2023-03-12T22:46:00-04:00</updated>
+<published>2023-03-12T22:46:00-04:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Coastal Flood Warning issued March 12 at 10:46PM EDT until March 13 at 2:00PM EDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MD12663C9F1C58.CoastalFloodWarning.12663CA17B60MD.LWXCFWLWX.9661a25d45eea574785d97a23e4eebda"/>
+<summary>...COASTAL FLOOD ADVISORY REMAINS IN EFFECT UNTIL 1 AM EDT MONDAY... ...COASTAL FLOOD WARNING REMAINS IN EFFECT FROM 5 AM TO 2 PM EDT MONDAY... * WHAT...For the Coastal Flood Warning, up to one foot of inundation above ground level expected in low lying areas due</summary>
+<cap:event>Coastal Flood Warning</cap:event>
+<cap:effective>2023-03-12T22:46:00-04:00</cap:effective>
+<cap:expires>2023-03-13T14:00:00-04:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Anne Arundel</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>024003</value>
+<valueName>UGC</valueName>
+<value>MDZ014</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KLWX.CF.W.0002.230313T0900Z-230313T1800Z/
+/O.CON.KLWX.CF.Y.0013.000000T0000Z-230313T0500Z/</value>
+</cap:parameter>
+</entry>
+<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=MD12663C9EC730.CoastalFloodStatement.12663C9FCDB0MD.AKQCFWAKQ.69238c9c0721ab4ced79f2d22376b631</id>
 <updated>2023-03-12T20:28:00-04:00</updated>
 <published>2023-03-12T20:28:00-04:00</published>
@@ -6037,204 +6005,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=MD12663C930508.CoastalFloodAdvisory.12663C9F7F90MD.LWXCFWLWX.7e840559c80ef03aaa4bc5802fe40ef5</id>
-<updated>2023-03-12T19:22:00-04:00</updated>
-<published>2023-03-12T19:22:00-04:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Coastal Flood Advisory issued March 12 at 7:22PM EDT until March 13 at 1:00AM EDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MD12663C930508.CoastalFloodAdvisory.12663C9F7F90MD.LWXCFWLWX.7e840559c80ef03aaa4bc5802fe40ef5"/>
-<summary>...COASTAL FLOOD ADVISORY REMAINS IN EFFECT UNTIL 1 AM EDT MONDAY... ...COASTAL FLOOD WARNING IN EFFECT FROM 5 AM TO 2 PM EDT MONDAY... * WHAT...For the Coastal Flood Warning, up to one foot of inundation above ground level expected in low lying areas due to tidal flooding. For the Coastal Flood Advisory, up to one</summary>
-<cap:event>Coastal Flood Advisory</cap:event>
-<cap:effective>2023-03-12T19:22:00-04:00</cap:effective>
-<cap:expires>2023-03-13T01:00:00-04:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Anne Arundel</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>024003</value>
-<valueName>UGC</valueName>
-<value>MDZ014</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.UPG.KLWX.CF.A.0002.230313T1000Z-230313T1800Z/
-/O.NEW.KLWX.CF.W.0002.230313T0900Z-230313T1800Z/
-/O.CON.KLWX.CF.Y.0013.000000T0000Z-230313T0500Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=MD12663C930508.CoastalFloodWarning.12663CA0DF20MD.LWXCFWLWX.ec07b88b9bd54f83b1cd25358ca2f8f5</id>
-<updated>2023-03-12T19:22:00-04:00</updated>
-<published>2023-03-12T19:22:00-04:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Coastal Flood Warning issued March 12 at 7:22PM EDT until March 13 at 10:00AM EDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MD12663C930508.CoastalFloodWarning.12663CA0DF20MD.LWXCFWLWX.ec07b88b9bd54f83b1cd25358ca2f8f5"/>
-<summary>...COASTAL FLOOD ADVISORY REMAINS IN EFFECT UNTIL 9 PM EDT THIS EVENING... ...COASTAL FLOOD WARNING IN EFFECT FROM 2 AM TO 10 AM EDT MONDAY... * WHAT...For the Coastal Flood Warning, up to one foot of inundation above ground level expected in low lying areas due</summary>
-<cap:event>Coastal Flood Warning</cap:event>
-<cap:effective>2023-03-12T19:22:00-04:00</cap:effective>
-<cap:expires>2023-03-13T10:00:00-04:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>St. Marys</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>024037</value>
-<valueName>UGC</valueName>
-<value>MDZ017</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.UPG.KLWX.CF.A.0002.230313T0100Z-230314T0100Z/
-/O.NEW.KLWX.CF.W.0002.230313T0600Z-230313T1400Z/
-/O.CON.KLWX.CF.Y.0013.000000T0000Z-230313T0100Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=MD12663C930508.CoastalFloodAdvisory.12663CA10630MD.LWXCFWLWX.2f6e4b278896e822fdf0f2fd1a60b51e</id>
-<updated>2023-03-12T19:22:00-04:00</updated>
-<published>2023-03-12T19:22:00-04:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Coastal Flood Advisory issued March 12 at 7:22PM EDT until March 13 at 11:00AM EDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MD12663C930508.CoastalFloodAdvisory.12663CA10630MD.LWXCFWLWX.2f6e4b278896e822fdf0f2fd1a60b51e"/>
-<summary>...COASTAL FLOOD ADVISORY IN EFFECT FROM 3 AM TO 11 AM EDT MONDAY... * WHAT...Up to one half foot of inundation above ground level expected in low lying areas due to tidal flooding. * WHERE...Shoreline in Calvert County. * WHEN...From 3 AM to 11 AM EDT Monday, especially around the</summary>
-<cap:event>Coastal Flood Advisory</cap:event>
-<cap:effective>2023-03-12T19:22:00-04:00</cap:effective>
-<cap:expires>2023-03-13T11:00:00-04:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Calvert</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>024009</value>
-<valueName>UGC</valueName>
-<value>MDZ018</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.EXB.KLWX.CF.Y.0014.230313T0700Z-230313T1500Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=MD12663C930508.CoastalFloodAdvisory.12663CA10630MD.LWXCFWLWX.491486ad6eda86cb287b4ad6dd71779c</id>
-<updated>2023-03-12T19:22:00-04:00</updated>
-<published>2023-03-12T19:22:00-04:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Coastal Flood Advisory issued March 12 at 7:22PM EDT until March 13 at 11:00AM EDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MD12663C930508.CoastalFloodAdvisory.12663CA10630MD.LWXCFWLWX.491486ad6eda86cb287b4ad6dd71779c"/>
-<summary>...COASTAL FLOOD ADVISORY IN EFFECT FROM 5 AM TO 11 AM EDT MONDAY... * WHAT...Up to 1 foot of inundation above ground level expected in low lying areas due to tidal flooding. * WHERE...Shoreline in Charles and King George Counties. * WHEN...From 5 AM to 11 AM EDT Monday, especially around the</summary>
-<cap:event>Coastal Flood Advisory</cap:event>
-<cap:effective>2023-03-12T19:22:00-04:00</cap:effective>
-<cap:expires>2023-03-13T11:00:00-04:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Charles</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>024017</value>
-<valueName>UGC</valueName>
-<value>MDZ016</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.NEW.KLWX.CF.Y.0015.230313T0900Z-230313T1500Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=MD12663C930508.CoastalFloodWarning.12663CA17B60MD.LWXCFWLWX.9661a25d45eea574785d97a23e4eebda</id>
-<updated>2023-03-12T19:22:00-04:00</updated>
-<published>2023-03-12T19:22:00-04:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Coastal Flood Warning issued March 12 at 7:22PM EDT until March 13 at 2:00PM EDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MD12663C930508.CoastalFloodWarning.12663CA17B60MD.LWXCFWLWX.9661a25d45eea574785d97a23e4eebda"/>
-<summary>...COASTAL FLOOD ADVISORY REMAINS IN EFFECT UNTIL 1 AM EDT MONDAY... ...COASTAL FLOOD WARNING IN EFFECT FROM 5 AM TO 2 PM EDT MONDAY... * WHAT...For the Coastal Flood Warning, up to one foot of inundation above ground level expected in low lying areas due to tidal flooding. For the Coastal Flood Advisory, up to one</summary>
-<cap:event>Coastal Flood Warning</cap:event>
-<cap:effective>2023-03-12T19:22:00-04:00</cap:effective>
-<cap:expires>2023-03-13T14:00:00-04:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Anne Arundel</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>024003</value>
-<valueName>UGC</valueName>
-<value>MDZ014</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.UPG.KLWX.CF.A.0002.230313T1000Z-230313T1800Z/
-/O.NEW.KLWX.CF.W.0002.230313T0900Z-230313T1800Z/
-/O.CON.KLWX.CF.Y.0013.000000T0000Z-230313T0500Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=MD12663C9296E0.WinterWeatherAdvisory.12663CA042E0MD.LWXWSWLWX.3b827eefcaf4a20ae0f1b9670644f58f</id>
-<updated>2023-03-12T16:40:00-04:00</updated>
-<published>2023-03-12T16:40:00-04:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Winter Weather Advisory issued March 12 at 4:40PM EDT until March 13 at 6:00AM EDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MD12663C9296E0.WinterWeatherAdvisory.12663CA042E0MD.LWXWSWLWX.3b827eefcaf4a20ae0f1b9670644f58f"/>
-<summary>...WINTER WEATHER ADVISORY NOW IN EFFECT UNTIL 6 AM EDT MONDAY... * WHAT...Mixed precipitation. Total snow accumulations around 1 to 3 inches. A glaze of ice up to one tenth of an inch from freezing rain is also expected. * WHERE...In Maryland, Garrett and Extreme Western Allegany Counties. In Virginia, Northern Virginia Blue Ridge. In West</summary>
-<cap:event>Winter Weather Advisory</cap:event>
-<cap:effective>2023-03-12T16:40:00-04:00</cap:effective>
-<cap:expires>2023-03-13T06:00:00-04:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Extreme Western Allegany; Garrett</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>024001 024023</value>
-<valueName>UGC</valueName>
-<value>MDZ001 MDZ501</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.EXT.KLWX.WW.Y.0016.000000T0000Z-230313T1000Z/</value>
-</cap:parameter>
-</entry>
-<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=ME12663C926ABC.WinterStormWatch.12663CBFFFE0ME.GYXWSWGYX.db68782ad8a0b5812c1ab4117a75a343</id>
 <updated>2023-03-12T15:27:00-04:00</updated>
 <published>2023-03-12T15:27:00-04:00</published>
@@ -6267,17 +6037,17 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=MI12663C9272F0.WinterWeatherAdvisory.12663CA15450MI.GRRWSWGRR.dd436def18a453e6db4a63e68cc1c3d7</id>
-<updated>2023-03-12T15:48:00-04:00</updated>
-<published>2023-03-12T15:48:00-04:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=MI12663C9F1CBC.WinterWeatherAdvisory.12663CA15450MI.GRRWSWGRR.dd436def18a453e6db4a63e68cc1c3d7</id>
+<updated>2023-03-12T22:47:00-04:00</updated>
+<published>2023-03-12T22:47:00-04:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Winter Weather Advisory issued March 12 at 3:48PM EDT until March 13 at 1:00PM EDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MI12663C9272F0.WinterWeatherAdvisory.12663CA15450MI.GRRWSWGRR.dd436def18a453e6db4a63e68cc1c3d7"/>
-<summary>...WINTER WEATHER ADVISORY IN EFFECT FROM 8 PM THIS EVENING TO 1 PM EDT MONDAY... * WHAT...Snow expected. Total snow accumulations of 1 to 4 inches. Locally higher amounts possible. * WHERE...Portions of central, south central, southwest and west central Michigan.</summary>
+<title>Winter Weather Advisory issued March 12 at 10:47PM EDT until March 13 at 1:00PM EDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MI12663C9F1CBC.WinterWeatherAdvisory.12663CA15450MI.GRRWSWGRR.dd436def18a453e6db4a63e68cc1c3d7"/>
+<summary>...WINTER WEATHER ADVISORY REMAINS IN EFFECT UNTIL 1 PM EDT MONDAY... * WHAT...Snow. Accumulations of 1 to 4 inches, although localized higher amounts of 4 to 6 inches are possible. * WHERE...Portions of central, south central, southwest and west central Michigan.</summary>
 <cap:event>Winter Weather Advisory</cap:event>
-<cap:effective>2023-03-12T15:48:00-04:00</cap:effective>
+<cap:effective>2023-03-12T22:47:00-04:00</cap:effective>
 <cap:expires>2023-03-13T13:00:00-04:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
@@ -6295,7 +6065,7 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
-<value>/O.NEW.KGRR.WW.Y.0014.230313T0000Z-230313T1700Z/</value>
+<value>/O.CON.KGRR.WW.Y.0014.000000T0000Z-230313T1700Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -6562,38 +6332,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=MO12663C928934.SpecialWeatherStatement.12663C9F3170MO.PAHSPSPAH.2d9afe00642709342a9da8eec96563a0</id>
-<updated>2023-03-12T15:05:00-05:00</updated>
-<published>2023-03-12T15:05:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Special Weather Statement issued March 12 at 3:05PM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MO12663C928934.SpecialWeatherStatement.12663C9F3170MO.PAHSPSPAH.2d9afe00642709342a9da8eec96563a0"/>
-<summary>...Freezing Conditions Could Harm Sensitive Vegetation Monday Night and Tuesday Night... Temperatures will drop below freezing throughout the Quad State each night from tonight through Tuesday night. A hard freeze will be possible in far western portions of the region Monday night and over much of the region Tuesday night. These freezing conditions</summary>
-<cap:event>Special Weather Statement</cap:event>
-<cap:effective>2023-03-12T15:05:00-05:00</cap:effective>
-<cap:expires>2023-03-12T22:00:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Observed</cap:certainty>
-<cap:areaDesc>Bollinger; Butler; Cape Girardeau; Carter; Mississippi; New Madrid; Perry; Ripley; Scott; Stoddard; Wayne</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>029017 029023 029031 029035 029133 029143 029157 029181 029201 029207 029223</value>
-<valueName>UGC</valueName>
-<value>MOZ076 MOZ086 MOZ087 MOZ100 MOZ107 MOZ108 MOZ109 MOZ110 MOZ111 MOZ112 MOZ114</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value></value>
-</cap:parameter>
-</entry>
-<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=MO12663C91FEEC.FloodAdvisory.12663CAEE8E0MO.MEGFLSMEG.b839cb4511af51317c71259f7cc98249</id>
 <updated>2023-03-12T11:51:00-05:00</updated>
 <published>2023-03-12T11:51:00-05:00</published>
@@ -6627,67 +6365,35 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=MS12663C9F167C.SevereThunderstormWarning.12663C9F3170MS.LIXSVSLIX.661c5ff70a917b662f563ecea883ee4d</id>
-<updated>2023-03-12T21:31:00-05:00</updated>
-<published>2023-03-12T21:31:00-05:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=MS12663C9F2108.SevereThunderstormWarning.12663C9F4304MS.LIXSVRLIX.a3385a380ee96c16d875a84e300ec34b</id>
+<updated>2023-03-12T21:58:00-05:00</updated>
+<published>2023-03-12T21:58:00-05:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Severe Thunderstorm Warning issued March 12 at 9:31PM CDT until March 12 at 10:00PM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MS12663C9F167C.SevereThunderstormWarning.12663C9F3170MS.LIXSVSLIX.661c5ff70a917b662f563ecea883ee4d"/>
-<summary>...A SEVERE THUNDERSTORM WARNING REMAINS IN EFFECT UNTIL 1000 PM CDT FOR HARRISON...EAST CENTRAL HANCOCK AND NORTHWESTERN JACKSON COUNTIES... At 931 PM CDT, a severe thunderstorm was located near Lyman, or 8 miles northwest of Gulfport, moving east at 55 mph. HAZARD...Golf ball size hail.</summary>
+<title>Severe Thunderstorm Warning issued March 12 at 9:58PM CDT until March 12 at 10:45PM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MS12663C9F2108.SevereThunderstormWarning.12663C9F4304MS.LIXSVRLIX.a3385a380ee96c16d875a84e300ec34b"/>
+<summary>The National Weather Service in New Orleans has issued a * Severe Thunderstorm Warning for... Northeastern Harrison County in southern Mississippi... Northern Jackson County in southern Mississippi... * Until 1045 PM CDT. * At 957 PM CDT, a severe thunderstorm was located near Latimer, or</summary>
 <cap:event>Severe Thunderstorm Warning</cap:event>
-<cap:effective>2023-03-12T21:31:00-05:00</cap:effective>
-<cap:expires>2023-03-12T22:00:00-05:00</cap:expires>
+<cap:effective>2023-03-12T21:58:00-05:00</cap:effective>
+<cap:expires>2023-03-12T22:45:00-05:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
 <cap:category>Met</cap:category>
 <cap:urgency>Immediate</cap:urgency>
 <cap:severity>Severe</cap:severity>
 <cap:certainty>Observed</cap:certainty>
-<cap:areaDesc>Hancock; Harrison; Jackson</cap:areaDesc>
-<cap:polygon>30.36,-89.38 30.55,-89.41 30.71,-88.7 30.44,-88.64 30.36,-89.38</cap:polygon>
+<cap:areaDesc>Harrison; Jackson</cap:areaDesc>
+<cap:polygon>30.46,-88.94 30.63,-89.03 30.68,-88.93 30.67,-88.89 30.7,-88.88 30.74,-88.81 30.74,-88.41 30.64,-88.41 30.46,-88.94</cap:polygon>
 <cap:geocode>
 <valueName>FIPS6</valueName>
-<value>028045 028047 028059</value>
+<value>028047 028059</value>
 <valueName>UGC</valueName>
-<value>MSC045 MSC047 MSC059</value>
+<value>MSC047 MSC059</value>
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
-<value>/O.CON.KLIX.SV.W.0026.000000T0000Z-230313T0300Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=MS12663C9F167C.SevereWeatherStatement.12663C9F3170MS.LIXSVSLIX.6857a31c755cdd2adc19255d9c060a55</id>
-<updated>2023-03-12T21:31:00-05:00</updated>
-<published>2023-03-12T21:31:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Severe Weather Statement issued March 12 at 9:31PM CDT until March 12 at 10:00PM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MS12663C9F167C.SevereWeatherStatement.12663C9F3170MS.LIXSVSLIX.6857a31c755cdd2adc19255d9c060a55"/>
-<summary>...A SEVERE THUNDERSTORM WARNING REMAINS IN EFFECT UNTIL 1000 PM CDT FOR HARRISON...EAST CENTRAL HANCOCK AND NORTHWESTERN JACKSON COUNTIES... At 931 PM CDT, a severe thunderstorm was located near Lyman, or 8 miles northwest of Gulfport, moving east at 55 mph. HAZARD...Golf ball size hail.</summary>
-<cap:event>Severe Weather Statement</cap:event>
-<cap:effective>2023-03-12T21:31:00-05:00</cap:effective>
-<cap:expires>2023-03-12T22:00:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Immediate</cap:urgency>
-<cap:severity>Severe</cap:severity>
-<cap:certainty>Observed</cap:certainty>
-<cap:areaDesc>Hancock; Harrison; Jackson</cap:areaDesc>
-<cap:polygon>30.36,-89.38 30.55,-89.41 30.71,-88.7 30.44,-88.64 30.36,-89.38</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>028045 028047 028059</value>
-<valueName>UGC</valueName>
-<value>MSC045 MSC047 MSC059</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KLIX.SV.W.0026.000000T0000Z-230313T0300Z/</value>
+<value>/O.NEW.KLIX.SV.W.0027.230313T0258Z-230313T0345Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -7563,31 +7269,31 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=NM12663C9F167C.SpecialWeatherStatement.12663C9F3170NM.ABQSPSABQ.d4ea5108e8029b5d5f3bbf96f0b59ab2</id>
-<updated>2023-03-12T20:31:00-06:00</updated>
-<published>2023-03-12T20:31:00-06:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=NM12663C9F216C.SpecialWeatherStatement.12663C9F4304NM.ABQSPSABQ.92b89f17f9ce8d6541805d82f5a055b9</id>
+<updated>2023-03-12T20:59:00-06:00</updated>
+<published>2023-03-12T20:59:00-06:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Special Weather Statement issued March 12 at 8:31PM MDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=NM12663C9F167C.SpecialWeatherStatement.12663C9F3170NM.ABQSPSABQ.d4ea5108e8029b5d5f3bbf96f0b59ab2"/>
-<summary>...A STRONG THUNDERSTORM WILL IMPACT PORTIONS OF NORTHWESTERN DE BACA AND SOUTH CENTRAL GUADALUPE COUNTIES THROUGH 900 PM MDT... At 830 PM MDT, Doppler radar was tracking a strong thunderstorm 10 miles southeast of Pastura, or 20 miles southwest of Santa Rosa, moving southeast at 40 mph. HAZARD...Wind gusts of 50 to 55 mph and pea size hail.</summary>
+<title>Special Weather Statement issued March 12 at 8:59PM MDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=NM12663C9F216C.SpecialWeatherStatement.12663C9F4304NM.ABQSPSABQ.92b89f17f9ce8d6541805d82f5a055b9"/>
+<summary>...A STRONG THUNDERSTORM WILL IMPACT PORTIONS OF WEST CENTRAL ROOSEVELT, EASTERN DE BACA AND SOUTHEASTERN GUADALUPE COUNTIES THROUGH 945 PM MDT... At 859 PM MDT, Doppler radar was tracking a strong thunderstorm near Sumner Lake, or 11 miles west of Fort Sumner, moving southeast at 55 mph.</summary>
 <cap:event>Special Weather Statement</cap:event>
-<cap:effective>2023-03-12T20:31:00-06:00</cap:effective>
-<cap:expires>2023-03-12T21:00:00-06:00</cap:expires>
+<cap:effective>2023-03-12T20:59:00-06:00</cap:effective>
+<cap:expires>2023-03-12T21:45:00-06:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
 <cap:category>Met</cap:category>
 <cap:urgency>Expected</cap:urgency>
 <cap:severity>Minor</cap:severity>
 <cap:certainty>Observed</cap:certainty>
-<cap:areaDesc>De Baca County; Guadalupe County</cap:areaDesc>
-<cap:polygon>34.58,-105.01 34.77,-104.85 34.56,-104.2 34.22,-104.59 34.58,-105.01</cap:polygon>
+<cap:areaDesc>De Baca County; Guadalupe County; Roosevelt County</cap:areaDesc>
+<cap:polygon>34.07,-104.22 34.51,-104.64 34.66,-104.47 34.3,-103.73 34.07,-104.22</cap:polygon>
 <cap:geocode>
 <valueName>FIPS6</valueName>
-<value>035011 035019</value>
+<value>035011 035019 035041</value>
 <valueName>UGC</valueName>
-<value>NMZ233 NMZ237</value>
+<value>NMZ233 NMZ236 NMZ237</value>
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
@@ -9776,6 +9482,166 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=VA12663C9F1DE8.WinterWeatherAdvisory.12663C9FA6A0VA.LWXWSWLWX.7e873b2c59706c8f4f859b26207b9a15</id>
+<updated>2023-03-12T22:50:00-04:00</updated>
+<published>2023-03-12T22:50:00-04:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Winter Weather Advisory issued March 12 at 10:50PM EDT until March 13 at 2:00AM EDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=VA12663C9F1DE8.WinterWeatherAdvisory.12663C9FA6A0VA.LWXWSWLWX.7e873b2c59706c8f4f859b26207b9a15"/>
+<summary>...WINTER WEATHER ADVISORY REMAINS IN EFFECT UNTIL 2 AM EDT MONDAY... * WHAT...Mixed precipitation. Total snow accumulations around 1 to 3 inches, generally for elevation above 1,500 feet. A glaze of ice up to one tenth of an inch from freezing rain is expected along the ridges above 1,500 feet.</summary>
+<cap:event>Winter Weather Advisory</cap:event>
+<cap:effective>2023-03-12T22:50:00-04:00</cap:effective>
+<cap:expires>2023-03-13T02:00:00-04:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Augusta; Eastern Highland; Rockingham</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>051015 051091 051165 051660 051790 051820</value>
+<valueName>UGC</valueName>
+<value>VAZ025 VAZ026 VAZ504</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KLWX.WW.Y.0016.000000T0000Z-230313T0600Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=VA12663C9F1DE8.WinterWeatherAdvisory.12663CA042E0VA.LWXWSWLWX.9494a316f4a821847cbdbc3182a514a0</id>
+<updated>2023-03-12T22:50:00-04:00</updated>
+<published>2023-03-12T22:50:00-04:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Winter Weather Advisory issued March 12 at 10:50PM EDT until March 13 at 6:00AM EDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=VA12663C9F1DE8.WinterWeatherAdvisory.12663CA042E0VA.LWXWSWLWX.9494a316f4a821847cbdbc3182a514a0"/>
+<summary>...WINTER WEATHER ADVISORY REMAINS IN EFFECT UNTIL 6 AM EDT MONDAY... * WHAT...Mixed precipitation. Total snow accumulations around 1 to 3 inches and a glaze of ice up to one tenth of an inch from freezing rain. * WHERE...Western Highland and the Central Virginia Blue ridge</summary>
+<cap:event>Winter Weather Advisory</cap:event>
+<cap:effective>2023-03-12T22:50:00-04:00</cap:effective>
+<cap:expires>2023-03-13T06:00:00-04:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Central Virginia Blue Ridge; Western Highland</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>051015 051091 051125</value>
+<valueName>UGC</valueName>
+<value>VAZ503 VAZ508</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KLWX.WW.Y.0016.000000T0000Z-230313T1000Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=VA12663C9F1DE8.WinterWeatherAdvisory.12663CA042E0VA.LWXWSWLWX.0515a4a35fc59c6e097d2ce01c739bdc</id>
+<updated>2023-03-12T22:50:00-04:00</updated>
+<published>2023-03-12T22:50:00-04:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Winter Weather Advisory issued March 12 at 10:50PM EDT until March 13 at 6:00AM EDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=VA12663C9F1DE8.WinterWeatherAdvisory.12663CA042E0VA.LWXWSWLWX.0515a4a35fc59c6e097d2ce01c739bdc"/>
+<summary>...WINTER WEATHER ADVISORY REMAINS IN EFFECT UNTIL 6 AM EDT MONDAY... * WHAT...Mixed precipitation. Total snow accumulations around 1 to 3 inches. A glaze of ice up to one tenth of an inch from freezing rain is also expected. * WHERE...In Maryland, Garrett and Extreme Western Allegany</summary>
+<cap:event>Winter Weather Advisory</cap:event>
+<cap:effective>2023-03-12T22:50:00-04:00</cap:effective>
+<cap:expires>2023-03-13T06:00:00-04:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Northern Virginia Blue Ridge</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>051079 051113 051139 051157</value>
+<valueName>UGC</valueName>
+<value>VAZ507</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KLWX.WW.Y.0016.000000T0000Z-230313T1000Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=VA12663C9F1C58.CoastalFloodAdvisory.12663CA10630VA.LWXCFWLWX.c2c661bbbe016d055231256c07fe7a58</id>
+<updated>2023-03-12T22:46:00-04:00</updated>
+<published>2023-03-12T22:46:00-04:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Coastal Flood Advisory issued March 12 at 10:46PM EDT until March 13 at 11:00AM EDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=VA12663C9F1C58.CoastalFloodAdvisory.12663CA10630VA.LWXCFWLWX.c2c661bbbe016d055231256c07fe7a58"/>
+<summary>...COASTAL FLOOD ADVISORY REMAINS IN EFFECT FROM 5 AM TO 11 AM EDT MONDAY... * WHAT...Up to 1 foot of inundation above ground level expected in low lying areas due to tidal flooding. * WHERE...Shoreline in Charles and King George Counties. * WHEN...From 5 AM to 11 AM EDT Monday, especially around the</summary>
+<cap:event>Coastal Flood Advisory</cap:event>
+<cap:effective>2023-03-12T22:46:00-04:00</cap:effective>
+<cap:expires>2023-03-13T11:00:00-04:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>King George</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>051099</value>
+<valueName>UGC</valueName>
+<value>VAZ057</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KLWX.CF.Y.0015.230313T0900Z-230313T1500Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=VA12663C9F1C58.CoastalFloodAdvisory.12663CA1C980VA.LWXCFWLWX.db639cb0712e55fbacc7c13963500433</id>
+<updated>2023-03-12T22:46:00-04:00</updated>
+<published>2023-03-12T22:46:00-04:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Coastal Flood Advisory issued March 12 at 10:46PM EDT until March 13 at 4:00PM EDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=VA12663C9F1C58.CoastalFloodAdvisory.12663CA1C980VA.LWXCFWLWX.db639cb0712e55fbacc7c13963500433"/>
+<summary>...COASTAL FLOOD ADVISORY REMAINS IN EFFECT FROM 9 AM TO 4 PM EDT MONDAY... * WHAT...Up to one foot of inundation above ground level expected in low lying areas due to tidal flooding. * WHERE...Shoreline in the City of Alexandria and Arlington County.</summary>
+<cap:event>Coastal Flood Advisory</cap:event>
+<cap:effective>2023-03-12T22:46:00-04:00</cap:effective>
+<cap:expires>2023-03-13T16:00:00-04:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Arlington, Falls Church, Alexandria</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>051013 051510 051610</value>
+<valueName>UGC</valueName>
+<value>VAZ054</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KLWX.CF.Y.0015.230313T1300Z-230313T2000Z/</value>
+</cap:parameter>
+</entry>
+<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=VA12663C9F0BF0.WinterWeatherAdvisory.12663C9FA6A0VA.RNKWSWRNK.f7fcced0d124e1e3768b21e8e6f9aa0e</id>
 <updated>2023-03-12T22:04:00-04:00</updated>
 <published>2023-03-12T22:04:00-04:00</published>
@@ -9933,166 +9799,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value>/O.CON.KAKQ.CF.S.0009.230313T0400Z-230313T1200Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=VA12663C930508.CoastalFloodAdvisory.12663CA10630VA.LWXCFWLWX.c2c661bbbe016d055231256c07fe7a58</id>
-<updated>2023-03-12T19:22:00-04:00</updated>
-<published>2023-03-12T19:22:00-04:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Coastal Flood Advisory issued March 12 at 7:22PM EDT until March 13 at 11:00AM EDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=VA12663C930508.CoastalFloodAdvisory.12663CA10630VA.LWXCFWLWX.c2c661bbbe016d055231256c07fe7a58"/>
-<summary>...COASTAL FLOOD ADVISORY IN EFFECT FROM 5 AM TO 11 AM EDT MONDAY... * WHAT...Up to 1 foot of inundation above ground level expected in low lying areas due to tidal flooding. * WHERE...Shoreline in Charles and King George Counties. * WHEN...From 5 AM to 11 AM EDT Monday, especially around the</summary>
-<cap:event>Coastal Flood Advisory</cap:event>
-<cap:effective>2023-03-12T19:22:00-04:00</cap:effective>
-<cap:expires>2023-03-13T11:00:00-04:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>King George</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>051099</value>
-<valueName>UGC</valueName>
-<value>VAZ057</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.NEW.KLWX.CF.Y.0015.230313T0900Z-230313T1500Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=VA12663C930508.CoastalFloodAdvisory.12663CA1C980VA.LWXCFWLWX.db639cb0712e55fbacc7c13963500433</id>
-<updated>2023-03-12T19:22:00-04:00</updated>
-<published>2023-03-12T19:22:00-04:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Coastal Flood Advisory issued March 12 at 7:22PM EDT until March 13 at 4:00PM EDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=VA12663C930508.CoastalFloodAdvisory.12663CA1C980VA.LWXCFWLWX.db639cb0712e55fbacc7c13963500433"/>
-<summary>...COASTAL FLOOD ADVISORY IN EFFECT FROM 9 AM TO 4 PM EDT MONDAY... * WHAT...Up to one foot of inundation above ground level expected in low lying areas due to tidal flooding. * WHERE...Shoreline in the City of Alexandria and Arlington County.</summary>
-<cap:event>Coastal Flood Advisory</cap:event>
-<cap:effective>2023-03-12T19:22:00-04:00</cap:effective>
-<cap:expires>2023-03-13T16:00:00-04:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Arlington, Falls Church, Alexandria</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>051013 051510 051610</value>
-<valueName>UGC</valueName>
-<value>VAZ054</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.NEW.KLWX.CF.Y.0015.230313T1300Z-230313T2000Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=VA12663C9296E0.WinterWeatherAdvisory.12663C9FA6A0VA.LWXWSWLWX.7e873b2c59706c8f4f859b26207b9a15</id>
-<updated>2023-03-12T16:40:00-04:00</updated>
-<published>2023-03-12T16:40:00-04:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Winter Weather Advisory issued March 12 at 4:40PM EDT until March 13 at 2:00AM EDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=VA12663C9296E0.WinterWeatherAdvisory.12663C9FA6A0VA.LWXWSWLWX.7e873b2c59706c8f4f859b26207b9a15"/>
-<summary>...WINTER WEATHER ADVISORY REMAINS IN EFFECT UNTIL 2 AM EDT MONDAY... * WHAT...Mixed precipitation. Total snow accumulations around 1 to 3 inches, generally for elevation above 1,500 feet. A glaze of ice up to one tenth of an inch from freezing rain is expected along the ridges above 1,500 feet.</summary>
-<cap:event>Winter Weather Advisory</cap:event>
-<cap:effective>2023-03-12T16:40:00-04:00</cap:effective>
-<cap:expires>2023-03-13T02:00:00-04:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Augusta; Eastern Highland; Rockingham</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>051015 051091 051165 051660 051790 051820</value>
-<valueName>UGC</valueName>
-<value>VAZ025 VAZ026 VAZ504</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KLWX.WW.Y.0016.000000T0000Z-230313T0600Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=VA12663C9296E0.WinterWeatherAdvisory.12663CA042E0VA.LWXWSWLWX.9494a316f4a821847cbdbc3182a514a0</id>
-<updated>2023-03-12T16:40:00-04:00</updated>
-<published>2023-03-12T16:40:00-04:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Winter Weather Advisory issued March 12 at 4:40PM EDT until March 13 at 6:00AM EDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=VA12663C9296E0.WinterWeatherAdvisory.12663CA042E0VA.LWXWSWLWX.9494a316f4a821847cbdbc3182a514a0"/>
-<summary>...WINTER WEATHER ADVISORY NOW IN EFFECT UNTIL 6 AM EDT MONDAY... * WHAT...Mixed precipitation. Total snow accumulations around 1 to 3 inches and a glaze of ice up to one tenth of an inch from freezing rain. * WHERE...Western Highland and the Central Virginia Blue ridge Mountains in Virginia, and western Pendleton County in West</summary>
-<cap:event>Winter Weather Advisory</cap:event>
-<cap:effective>2023-03-12T16:40:00-04:00</cap:effective>
-<cap:expires>2023-03-13T06:00:00-04:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Central Virginia Blue Ridge; Western Highland</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>051015 051091 051125</value>
-<valueName>UGC</valueName>
-<value>VAZ503 VAZ508</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.EXT.KLWX.WW.Y.0016.000000T0000Z-230313T1000Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=VA12663C9296E0.WinterWeatherAdvisory.12663CA042E0VA.LWXWSWLWX.0515a4a35fc59c6e097d2ce01c739bdc</id>
-<updated>2023-03-12T16:40:00-04:00</updated>
-<published>2023-03-12T16:40:00-04:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Winter Weather Advisory issued March 12 at 4:40PM EDT until March 13 at 6:00AM EDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=VA12663C9296E0.WinterWeatherAdvisory.12663CA042E0VA.LWXWSWLWX.0515a4a35fc59c6e097d2ce01c739bdc"/>
-<summary>...WINTER WEATHER ADVISORY NOW IN EFFECT UNTIL 6 AM EDT MONDAY... * WHAT...Mixed precipitation. Total snow accumulations around 1 to 3 inches. A glaze of ice up to one tenth of an inch from freezing rain is also expected. * WHERE...In Maryland, Garrett and Extreme Western Allegany Counties. In Virginia, Northern Virginia Blue Ridge. In West</summary>
-<cap:event>Winter Weather Advisory</cap:event>
-<cap:effective>2023-03-12T16:40:00-04:00</cap:effective>
-<cap:expires>2023-03-13T06:00:00-04:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Northern Virginia Blue Ridge</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>051079 051113 051139 051157</value>
-<valueName>UGC</valueName>
-<value>VAZ507</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.EXT.KLWX.WW.Y.0016.000000T0000Z-230313T1000Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -10549,6 +10255,262 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=WI12663C9F2040.WinterStormWarning.12663CA01BD0WI.GRBWSWGRB.99db86af38a9326f97354a1f5da75edf</id>
+<updated>2023-03-12T21:56:00-05:00</updated>
+<published>2023-03-12T21:56:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Winter Storm Warning issued March 12 at 9:56PM CDT until March 13 at 4:00AM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=WI12663C9F2040.WinterStormWarning.12663CA01BD0WI.GRBWSWGRB.99db86af38a9326f97354a1f5da75edf"/>
+<summary>...PROLONGED PERIOD OF ACCUMULATING SNOW CONTINUES... .A prolonged snow event will continue tonight as low pressure slowly moves southeast across Wisconsin. Light to moderate snow will continue across the region tonight, then come to an end from west to east Monday morning. A narrow band of heavier snow is expected to continue tonight, roughly along/near Highway 29. Minor blowing and</summary>
+<cap:event>Winter Storm Warning</cap:event>
+<cap:effective>2023-03-12T21:56:00-05:00</cap:effective>
+<cap:expires>2023-03-13T04:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Lincoln; Marathon</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>055069 055073</value>
+<valueName>UGC</valueName>
+<value>WIZ018 WIZ030</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KGRB.WS.W.0005.000000T0000Z-230313T0900Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=WI12663C9F2040.WinterStormWarning.12663CA01BD0WI.GRBWSWGRB.a67ad791bf08161b3138acf9ab94e056</id>
+<updated>2023-03-12T21:56:00-05:00</updated>
+<published>2023-03-12T21:56:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Winter Storm Warning issued March 12 at 9:56PM CDT until March 13 at 4:00AM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=WI12663C9F2040.WinterStormWarning.12663CA01BD0WI.GRBWSWGRB.a67ad791bf08161b3138acf9ab94e056"/>
+<summary>...PROLONGED PERIOD OF ACCUMULATING SNOW CONTINUES... .A prolonged snow event will continue tonight as low pressure slowly moves southeast across Wisconsin. Light to moderate snow will continue across the region tonight, then come to an end from west to east Monday morning. A narrow band of heavier snow is expected to continue tonight, roughly along/near Highway 29. Minor blowing and</summary>
+<cap:event>Winter Storm Warning</cap:event>
+<cap:effective>2023-03-12T21:56:00-05:00</cap:effective>
+<cap:expires>2023-03-13T04:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Portage</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>055097</value>
+<valueName>UGC</valueName>
+<value>WIZ036</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KGRB.WS.W.0005.000000T0000Z-230313T0900Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=WI12663C9F2040.WinterWeatherAdvisory.12663CA01BD0WI.GRBWSWGRB.079107c31dab9755d1dc7bff8d032864</id>
+<updated>2023-03-12T21:56:00-05:00</updated>
+<published>2023-03-12T21:56:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Winter Weather Advisory issued March 12 at 9:56PM CDT until March 13 at 4:00AM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=WI12663C9F2040.WinterWeatherAdvisory.12663CA01BD0WI.GRBWSWGRB.079107c31dab9755d1dc7bff8d032864"/>
+<summary>...PROLONGED PERIOD OF ACCUMULATING SNOW CONTINUES... .A prolonged snow event will continue tonight as low pressure slowly moves southeast across Wisconsin. Light to moderate snow will continue across the region tonight, then come to an end from west to east Monday morning. A narrow band of heavier snow is expected to continue tonight, roughly along/near Highway 29. Minor blowing and</summary>
+<cap:event>Winter Weather Advisory</cap:event>
+<cap:effective>2023-03-12T21:56:00-05:00</cap:effective>
+<cap:expires>2023-03-13T04:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Forest; Langlade; Oneida; Vilas</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>055041 055067 055085 055125</value>
+<valueName>UGC</valueName>
+<value>WIZ005 WIZ010 WIZ011 WIZ019</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KGRB.WW.Y.0017.000000T0000Z-230313T0900Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=WI12663C9F2040.WinterWeatherAdvisory.12663CA01BD0WI.GRBWSWGRB.5c4219fff0e49a6d3deb55cdad2cae32</id>
+<updated>2023-03-12T21:56:00-05:00</updated>
+<published>2023-03-12T21:56:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Winter Weather Advisory issued March 12 at 9:56PM CDT until March 13 at 4:00AM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=WI12663C9F2040.WinterWeatherAdvisory.12663CA01BD0WI.GRBWSWGRB.5c4219fff0e49a6d3deb55cdad2cae32"/>
+<summary>...PROLONGED PERIOD OF ACCUMULATING SNOW CONTINUES... .A prolonged snow event will continue tonight as low pressure slowly moves southeast across Wisconsin. Light to moderate snow will continue across the region tonight, then come to an end from west to east Monday morning. A narrow band of heavier snow is expected to continue tonight, roughly along/near Highway 29. Minor blowing and</summary>
+<cap:event>Winter Weather Advisory</cap:event>
+<cap:effective>2023-03-12T21:56:00-05:00</cap:effective>
+<cap:expires>2023-03-13T04:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Waushara; Wood</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>055137 055141</value>
+<valueName>UGC</valueName>
+<value>WIZ035 WIZ045</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KGRB.WW.Y.0017.000000T0000Z-230313T0900Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=WI12663C9F2040.WinterStormWarning.12663CA10630WI.GRBWSWGRB.b7986d6fe9b0e26e2d3bc0f339b676bb</id>
+<updated>2023-03-12T21:56:00-05:00</updated>
+<published>2023-03-12T21:56:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Winter Storm Warning issued March 12 at 9:56PM CDT until March 13 at 10:00AM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=WI12663C9F2040.WinterStormWarning.12663CA10630WI.GRBWSWGRB.b7986d6fe9b0e26e2d3bc0f339b676bb"/>
+<summary>...PROLONGED PERIOD OF ACCUMULATING SNOW CONTINUES... .A prolonged snow event will continue tonight as low pressure slowly moves southeast across Wisconsin. Light to moderate snow will continue across the region tonight, then come to an end from west to east Monday morning. A narrow band of heavier snow is expected to continue tonight, roughly along/near Highway 29. Minor blowing and</summary>
+<cap:event>Winter Storm Warning</cap:event>
+<cap:effective>2023-03-12T21:56:00-05:00</cap:effective>
+<cap:expires>2023-03-13T10:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Brown; Calumet; Manitowoc; Outagamie; Shawano; Waupaca; Winnebago</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>055009 055015 055071 055087 055115 055135 055139</value>
+<valueName>UGC</valueName>
+<value>WIZ031 WIZ037 WIZ038 WIZ039 WIZ048 WIZ049 WIZ050</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KGRB.WS.W.0005.000000T0000Z-230313T1500Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=WI12663C9F2040.WinterWeatherAdvisory.12663CA10630WI.GRBWSWGRB.9238b868550f6cec97c4bfc70ebb7311</id>
+<updated>2023-03-12T21:56:00-05:00</updated>
+<published>2023-03-12T21:56:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Winter Weather Advisory issued March 12 at 9:56PM CDT until March 13 at 10:00AM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=WI12663C9F2040.WinterWeatherAdvisory.12663CA10630WI.GRBWSWGRB.9238b868550f6cec97c4bfc70ebb7311"/>
+<summary>...PROLONGED PERIOD OF ACCUMULATING SNOW CONTINUES... .A prolonged snow event will continue tonight as low pressure slowly moves southeast across Wisconsin. Light to moderate snow will continue across the region tonight, then come to an end from west to east Monday morning. A narrow band of heavier snow is expected to continue tonight, roughly along/near Highway 29. Minor blowing and</summary>
+<cap:event>Winter Weather Advisory</cap:event>
+<cap:effective>2023-03-12T21:56:00-05:00</cap:effective>
+<cap:expires>2023-03-13T10:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Kewaunee; Menominee; Northern Oconto County; Southern Oconto County</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>055061 055078 055083</value>
+<valueName>UGC</valueName>
+<value>WIZ020 WIZ021 WIZ040 WIZ074</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KGRB.WW.Y.0017.000000T0000Z-230313T1500Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=WI12663C9F1B90.WinterWeatherAdvisory.12663CA01BD0WI.MKXWSWMKX.b1fb11fac0d65dc32704c1d2b1dc50e3</id>
+<updated>2023-03-12T21:44:00-05:00</updated>
+<published>2023-03-12T21:44:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Winter Weather Advisory issued March 12 at 9:44PM CDT until March 13 at 4:00AM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=WI12663C9F1B90.WinterWeatherAdvisory.12663CA01BD0WI.MKXWSWMKX.b1fb11fac0d65dc32704c1d2b1dc50e3"/>
+<summary>...WINTER WEATHER ADVISORY REMAINS IN EFFECT UNTIL 4 AM CDT MONDAY... * WHAT...Snow expected. Total snow accumulations of 2 to 3 inches. * WHERE...Marquette and Green Lake Counties. * WHEN...Until 4 AM CDT Monday.</summary>
+<cap:event>Winter Weather Advisory</cap:event>
+<cap:effective>2023-03-12T21:44:00-05:00</cap:effective>
+<cap:expires>2023-03-13T04:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Green Lake; Marquette</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>055047 055077</value>
+<valueName>UGC</valueName>
+<value>WIZ046 WIZ047</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KMKX.WW.Y.0013.000000T0000Z-230313T0900Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=WI12663C9F1B90.WinterWeatherAdvisory.12663CA09100WI.MKXWSWMKX.e48c84a9544a5802ada114729fdd5577</id>
+<updated>2023-03-12T21:44:00-05:00</updated>
+<published>2023-03-12T21:44:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Winter Weather Advisory issued March 12 at 9:44PM CDT until March 13 at 7:00AM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=WI12663C9F1B90.WinterWeatherAdvisory.12663CA09100WI.MKXWSWMKX.e48c84a9544a5802ada114729fdd5577"/>
+<summary>...WINTER WEATHER ADVISORY REMAINS IN EFFECT UNTIL 7 AM CDT MONDAY... * WHAT...Snow expected. Total snow accumulations of 3 to 6 inches. * WHERE...Fond du Lac and Sheboygan Counties. * WHEN...Until 7 AM CDT Monday.</summary>
+<cap:event>Winter Weather Advisory</cap:event>
+<cap:effective>2023-03-12T21:44:00-05:00</cap:effective>
+<cap:expires>2023-03-13T07:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Fond Du Lac; Sheboygan</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>055039 055117</value>
+<valueName>UGC</valueName>
+<value>WIZ051 WIZ052</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KMKX.WW.Y.0013.000000T0000Z-230313T1200Z/</value>
+</cap:parameter>
+</entry>
+<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=WI12663C9EF9F8.WinterStormWarning.12663CA01BD0WI.DLHWSWDLH.f41307dc19660aaaf6bb2cf11055b15e</id>
 <updated>2023-03-12T20:58:00-05:00</updated>
 <published>2023-03-12T20:58:00-05:00</published>
@@ -10710,262 +10672,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=WI12663C929618.WinterWeatherAdvisory.12663CA01BD0WI.MKXWSWMKX.b1fb11fac0d65dc32704c1d2b1dc50e3</id>
-<updated>2023-03-12T15:38:00-05:00</updated>
-<published>2023-03-12T15:38:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Winter Weather Advisory issued March 12 at 3:38PM CDT until March 13 at 4:00AM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=WI12663C929618.WinterWeatherAdvisory.12663CA01BD0WI.MKXWSWMKX.b1fb11fac0d65dc32704c1d2b1dc50e3"/>
-<summary>...WINTER WEATHER ADVISORY REMAINS IN EFFECT UNTIL 4 AM CDT MONDAY... * WHAT...Snow expected. Total snow accumulations of 2 to 3 inches. * WHERE...Marquette and Green Lake Counties. * WHEN...Until 4 AM CDT Monday.</summary>
-<cap:event>Winter Weather Advisory</cap:event>
-<cap:effective>2023-03-12T15:38:00-05:00</cap:effective>
-<cap:expires>2023-03-13T04:00:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Green Lake; Marquette</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>055047 055077</value>
-<valueName>UGC</valueName>
-<value>WIZ046 WIZ047</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KMKX.WW.Y.0013.000000T0000Z-230313T0900Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=WI12663C929618.WinterWeatherAdvisory.12663CA09100WI.MKXWSWMKX.e48c84a9544a5802ada114729fdd5577</id>
-<updated>2023-03-12T15:38:00-05:00</updated>
-<published>2023-03-12T15:38:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Winter Weather Advisory issued March 12 at 3:38PM CDT until March 13 at 7:00AM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=WI12663C929618.WinterWeatherAdvisory.12663CA09100WI.MKXWSWMKX.e48c84a9544a5802ada114729fdd5577"/>
-<summary>...WINTER WEATHER ADVISORY REMAINS IN EFFECT UNTIL 7 AM CDT MONDAY... * WHAT...Snow expected. Total snow accumulations of 3 to 6 inches. * WHERE...Fond du Lac and Sheboygan Counties. * WHEN...Until 7 AM CDT Monday.</summary>
-<cap:event>Winter Weather Advisory</cap:event>
-<cap:effective>2023-03-12T15:38:00-05:00</cap:effective>
-<cap:expires>2023-03-13T07:00:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Fond Du Lac; Sheboygan</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>055039 055117</value>
-<valueName>UGC</valueName>
-<value>WIZ051 WIZ052</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KMKX.WW.Y.0013.000000T0000Z-230313T1200Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=WI12663C9272F0.WinterStormWarning.12663CA01BD0WI.GRBWSWGRB.99db86af38a9326f97354a1f5da75edf</id>
-<updated>2023-03-12T14:48:00-05:00</updated>
-<published>2023-03-12T14:48:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Winter Storm Warning issued March 12 at 2:48PM CDT until March 13 at 4:00AM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=WI12663C9272F0.WinterStormWarning.12663CA01BD0WI.GRBWSWGRB.99db86af38a9326f97354a1f5da75edf"/>
-<summary>...PROLONGED PERIOD OF ACCUMULATING SNOW CONTINUES... .A prolonged snow event will continue this afternoon as low pressure slowly moves southeast across Wisconsin. Light to moderate snow will continue across the region this afternoon, then come to an end from west to east Monday morning. A narrow band of heavier snow is expected to develop later this afternoon, roughly along/near Highway</summary>
-<cap:event>Winter Storm Warning</cap:event>
-<cap:effective>2023-03-12T14:48:00-05:00</cap:effective>
-<cap:expires>2023-03-13T04:00:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Lincoln; Marathon</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>055069 055073</value>
-<valueName>UGC</valueName>
-<value>WIZ018 WIZ030</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KGRB.WS.W.0005.000000T0000Z-230313T0900Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=WI12663C9272F0.WinterStormWarning.12663CA01BD0WI.GRBWSWGRB.a67ad791bf08161b3138acf9ab94e056</id>
-<updated>2023-03-12T14:48:00-05:00</updated>
-<published>2023-03-12T14:48:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Winter Storm Warning issued March 12 at 2:48PM CDT until March 13 at 4:00AM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=WI12663C9272F0.WinterStormWarning.12663CA01BD0WI.GRBWSWGRB.a67ad791bf08161b3138acf9ab94e056"/>
-<summary>...PROLONGED PERIOD OF ACCUMULATING SNOW CONTINUES... .A prolonged snow event will continue this afternoon as low pressure slowly moves southeast across Wisconsin. Light to moderate snow will continue across the region this afternoon, then come to an end from west to east Monday morning. A narrow band of heavier snow is expected to develop later this afternoon, roughly along/near Highway</summary>
-<cap:event>Winter Storm Warning</cap:event>
-<cap:effective>2023-03-12T14:48:00-05:00</cap:effective>
-<cap:expires>2023-03-13T04:00:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Portage</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>055097</value>
-<valueName>UGC</valueName>
-<value>WIZ036</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KGRB.WS.W.0005.000000T0000Z-230313T0900Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=WI12663C9272F0.WinterWeatherAdvisory.12663CA01BD0WI.GRBWSWGRB.079107c31dab9755d1dc7bff8d032864</id>
-<updated>2023-03-12T14:48:00-05:00</updated>
-<published>2023-03-12T14:48:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Winter Weather Advisory issued March 12 at 2:48PM CDT until March 13 at 4:00AM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=WI12663C9272F0.WinterWeatherAdvisory.12663CA01BD0WI.GRBWSWGRB.079107c31dab9755d1dc7bff8d032864"/>
-<summary>...PROLONGED PERIOD OF ACCUMULATING SNOW CONTINUES... .A prolonged snow event will continue this afternoon as low pressure slowly moves southeast across Wisconsin. Light to moderate snow will continue across the region this afternoon, then come to an end from west to east Monday morning. A narrow band of heavier snow is expected to develop later this afternoon, roughly along/near Highway</summary>
-<cap:event>Winter Weather Advisory</cap:event>
-<cap:effective>2023-03-12T14:48:00-05:00</cap:effective>
-<cap:expires>2023-03-13T04:00:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Forest; Langlade; Oneida; Vilas</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>055041 055067 055085 055125</value>
-<valueName>UGC</valueName>
-<value>WIZ005 WIZ010 WIZ011 WIZ019</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KGRB.WW.Y.0017.000000T0000Z-230313T0900Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=WI12663C9272F0.WinterWeatherAdvisory.12663CA01BD0WI.GRBWSWGRB.5c4219fff0e49a6d3deb55cdad2cae32</id>
-<updated>2023-03-12T14:48:00-05:00</updated>
-<published>2023-03-12T14:48:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Winter Weather Advisory issued March 12 at 2:48PM CDT until March 13 at 4:00AM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=WI12663C9272F0.WinterWeatherAdvisory.12663CA01BD0WI.GRBWSWGRB.5c4219fff0e49a6d3deb55cdad2cae32"/>
-<summary>...PROLONGED PERIOD OF ACCUMULATING SNOW CONTINUES... .A prolonged snow event will continue this afternoon as low pressure slowly moves southeast across Wisconsin. Light to moderate snow will continue across the region this afternoon, then come to an end from west to east Monday morning. A narrow band of heavier snow is expected to develop later this afternoon, roughly along/near Highway</summary>
-<cap:event>Winter Weather Advisory</cap:event>
-<cap:effective>2023-03-12T14:48:00-05:00</cap:effective>
-<cap:expires>2023-03-13T04:00:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Waushara; Wood</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>055137 055141</value>
-<valueName>UGC</valueName>
-<value>WIZ035 WIZ045</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KGRB.WW.Y.0017.000000T0000Z-230313T0900Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=WI12663C9272F0.WinterStormWarning.12663CA10630WI.GRBWSWGRB.b7986d6fe9b0e26e2d3bc0f339b676bb</id>
-<updated>2023-03-12T14:48:00-05:00</updated>
-<published>2023-03-12T14:48:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Winter Storm Warning issued March 12 at 2:48PM CDT until March 13 at 10:00AM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=WI12663C9272F0.WinterStormWarning.12663CA10630WI.GRBWSWGRB.b7986d6fe9b0e26e2d3bc0f339b676bb"/>
-<summary>...PROLONGED PERIOD OF ACCUMULATING SNOW CONTINUES... .A prolonged snow event will continue this afternoon as low pressure slowly moves southeast across Wisconsin. Light to moderate snow will continue across the region this afternoon, then come to an end from west to east Monday morning. A narrow band of heavier snow is expected to develop later this afternoon, roughly along/near Highway</summary>
-<cap:event>Winter Storm Warning</cap:event>
-<cap:effective>2023-03-12T14:48:00-05:00</cap:effective>
-<cap:expires>2023-03-13T10:00:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Brown; Calumet; Manitowoc; Outagamie; Shawano; Waupaca; Winnebago</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>055009 055015 055071 055087 055115 055135 055139</value>
-<valueName>UGC</valueName>
-<value>WIZ031 WIZ037 WIZ038 WIZ039 WIZ048 WIZ049 WIZ050</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KGRB.WS.W.0005.000000T0000Z-230313T1500Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=WI12663C9272F0.WinterWeatherAdvisory.12663CA10630WI.GRBWSWGRB.9238b868550f6cec97c4bfc70ebb7311</id>
-<updated>2023-03-12T14:48:00-05:00</updated>
-<published>2023-03-12T14:48:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Winter Weather Advisory issued March 12 at 2:48PM CDT until March 13 at 10:00AM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=WI12663C9272F0.WinterWeatherAdvisory.12663CA10630WI.GRBWSWGRB.9238b868550f6cec97c4bfc70ebb7311"/>
-<summary>...PROLONGED PERIOD OF ACCUMULATING SNOW CONTINUES... .A prolonged snow event will continue this afternoon as low pressure slowly moves southeast across Wisconsin. Light to moderate snow will continue across the region this afternoon, then come to an end from west to east Monday morning. A narrow band of heavier snow is expected to develop later this afternoon, roughly along/near Highway</summary>
-<cap:event>Winter Weather Advisory</cap:event>
-<cap:effective>2023-03-12T14:48:00-05:00</cap:effective>
-<cap:expires>2023-03-13T10:00:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Kewaunee; Menominee; Northern Oconto County; Southern Oconto County</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>055061 055078 055083</value>
-<valueName>UGC</valueName>
-<value>WIZ020 WIZ021 WIZ040 WIZ074</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KGRB.WW.Y.0017.000000T0000Z-230313T1500Z/</value>
-</cap:parameter>
-</entry>
-<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=WI12663C91D2C8.WinterStormWarning.12663C9FA6A0WI.MPXWSWMPX.6b41ab9f82581e2be56a4e3fddf09a16</id>
 <updated>2023-03-12T10:38:00-05:00</updated>
 <published>2023-03-12T10:38:00-05:00</published>
@@ -11027,6 +10733,102 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value>/O.CON.KMPX.WW.Y.0015.000000T0000Z-230313T0600Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=WV12663C9F1DE8.WinterWeatherAdvisory.12663C9FA6A0WV.LWXWSWLWX.7779e67f4ec33e58592bd6c22f3f99a9</id>
+<updated>2023-03-12T22:50:00-04:00</updated>
+<published>2023-03-12T22:50:00-04:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Winter Weather Advisory issued March 12 at 10:50PM EDT until March 13 at 2:00AM EDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=WV12663C9F1DE8.WinterWeatherAdvisory.12663C9FA6A0WV.LWXWSWLWX.7779e67f4ec33e58592bd6c22f3f99a9"/>
+<summary>...WINTER WEATHER ADVISORY REMAINS IN EFFECT UNTIL 2 AM EDT MONDAY... * WHAT...Mixed precipitation. Total snow accumulations around 1 to 3 inches, generally for elevation above 1,500 feet. A glaze of ice up to one tenth of an inch from freezing rain is expected along the ridges above 1,500 feet.</summary>
+<cap:event>Winter Weather Advisory</cap:event>
+<cap:effective>2023-03-12T22:50:00-04:00</cap:effective>
+<cap:expires>2023-03-13T02:00:00-04:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Eastern Pendleton</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>054071</value>
+<valueName>UGC</valueName>
+<value>WVZ506</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KLWX.WW.Y.0016.000000T0000Z-230313T0600Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=WV12663C9F1DE8.WinterWeatherAdvisory.12663CA042E0WV.LWXWSWLWX.655c06559f9c0680efc4497176e38b23</id>
+<updated>2023-03-12T22:50:00-04:00</updated>
+<published>2023-03-12T22:50:00-04:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Winter Weather Advisory issued March 12 at 10:50PM EDT until March 13 at 6:00AM EDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=WV12663C9F1DE8.WinterWeatherAdvisory.12663CA042E0WV.LWXWSWLWX.655c06559f9c0680efc4497176e38b23"/>
+<summary>...WINTER WEATHER ADVISORY REMAINS IN EFFECT UNTIL 6 AM EDT MONDAY... * WHAT...Mixed precipitation. Total snow accumulations around 1 to 3 inches. A glaze of ice up to one tenth of an inch from freezing rain is also expected. * WHERE...In Maryland, Garrett and Extreme Western Allegany</summary>
+<cap:event>Winter Weather Advisory</cap:event>
+<cap:effective>2023-03-12T22:50:00-04:00</cap:effective>
+<cap:expires>2023-03-13T06:00:00-04:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Western Grant; Western Mineral</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>054023 054057</value>
+<valueName>UGC</valueName>
+<value>WVZ501 WVZ503</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KLWX.WW.Y.0016.000000T0000Z-230313T1000Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=WV12663C9F1DE8.WinterWeatherAdvisory.12663CA042E0WV.LWXWSWLWX.70014d7dceb917fabb609433dc095c64</id>
+<updated>2023-03-12T22:50:00-04:00</updated>
+<published>2023-03-12T22:50:00-04:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Winter Weather Advisory issued March 12 at 10:50PM EDT until March 13 at 6:00AM EDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=WV12663C9F1DE8.WinterWeatherAdvisory.12663CA042E0WV.LWXWSWLWX.70014d7dceb917fabb609433dc095c64"/>
+<summary>...WINTER WEATHER ADVISORY REMAINS IN EFFECT UNTIL 6 AM EDT MONDAY... * WHAT...Mixed precipitation. Total snow accumulations around 1 to 3 inches and a glaze of ice up to one tenth of an inch from freezing rain. * WHERE...Western Highland and the Central Virginia Blue ridge</summary>
+<cap:event>Winter Weather Advisory</cap:event>
+<cap:effective>2023-03-12T22:50:00-04:00</cap:effective>
+<cap:expires>2023-03-13T06:00:00-04:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Western Pendleton</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>054071</value>
+<valueName>UGC</valueName>
+<value>WVZ505</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KLWX.WW.Y.0016.000000T0000Z-230313T1000Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -11219,102 +11021,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value>/O.EXT.KPBZ.WW.Y.0011.000000T0000Z-230313T1200Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=WV12663C9296E0.WinterWeatherAdvisory.12663C9FA6A0WV.LWXWSWLWX.7779e67f4ec33e58592bd6c22f3f99a9</id>
-<updated>2023-03-12T16:40:00-04:00</updated>
-<published>2023-03-12T16:40:00-04:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Winter Weather Advisory issued March 12 at 4:40PM EDT until March 13 at 2:00AM EDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=WV12663C9296E0.WinterWeatherAdvisory.12663C9FA6A0WV.LWXWSWLWX.7779e67f4ec33e58592bd6c22f3f99a9"/>
-<summary>...WINTER WEATHER ADVISORY REMAINS IN EFFECT UNTIL 2 AM EDT MONDAY... * WHAT...Mixed precipitation. Total snow accumulations around 1 to 3 inches, generally for elevation above 1,500 feet. A glaze of ice up to one tenth of an inch from freezing rain is expected along the ridges above 1,500 feet.</summary>
-<cap:event>Winter Weather Advisory</cap:event>
-<cap:effective>2023-03-12T16:40:00-04:00</cap:effective>
-<cap:expires>2023-03-13T02:00:00-04:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Eastern Pendleton</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>054071</value>
-<valueName>UGC</valueName>
-<value>WVZ506</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KLWX.WW.Y.0016.000000T0000Z-230313T0600Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=WV12663C9296E0.WinterWeatherAdvisory.12663CA042E0WV.LWXWSWLWX.655c06559f9c0680efc4497176e38b23</id>
-<updated>2023-03-12T16:40:00-04:00</updated>
-<published>2023-03-12T16:40:00-04:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Winter Weather Advisory issued March 12 at 4:40PM EDT until March 13 at 6:00AM EDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=WV12663C9296E0.WinterWeatherAdvisory.12663CA042E0WV.LWXWSWLWX.655c06559f9c0680efc4497176e38b23"/>
-<summary>...WINTER WEATHER ADVISORY NOW IN EFFECT UNTIL 6 AM EDT MONDAY... * WHAT...Mixed precipitation. Total snow accumulations around 1 to 3 inches. A glaze of ice up to one tenth of an inch from freezing rain is also expected. * WHERE...In Maryland, Garrett and Extreme Western Allegany Counties. In Virginia, Northern Virginia Blue Ridge. In West</summary>
-<cap:event>Winter Weather Advisory</cap:event>
-<cap:effective>2023-03-12T16:40:00-04:00</cap:effective>
-<cap:expires>2023-03-13T06:00:00-04:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Western Grant; Western Mineral</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>054023 054057</value>
-<valueName>UGC</valueName>
-<value>WVZ501 WVZ503</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.EXT.KLWX.WW.Y.0016.000000T0000Z-230313T1000Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=WV12663C9296E0.WinterWeatherAdvisory.12663CA042E0WV.LWXWSWLWX.70014d7dceb917fabb609433dc095c64</id>
-<updated>2023-03-12T16:40:00-04:00</updated>
-<published>2023-03-12T16:40:00-04:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Winter Weather Advisory issued March 12 at 4:40PM EDT until March 13 at 6:00AM EDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=WV12663C9296E0.WinterWeatherAdvisory.12663CA042E0WV.LWXWSWLWX.70014d7dceb917fabb609433dc095c64"/>
-<summary>...WINTER WEATHER ADVISORY NOW IN EFFECT UNTIL 6 AM EDT MONDAY... * WHAT...Mixed precipitation. Total snow accumulations around 1 to 3 inches and a glaze of ice up to one tenth of an inch from freezing rain. * WHERE...Western Highland and the Central Virginia Blue ridge Mountains in Virginia, and western Pendleton County in West</summary>
-<cap:event>Winter Weather Advisory</cap:event>
-<cap:effective>2023-03-12T16:40:00-04:00</cap:effective>
-<cap:expires>2023-03-13T06:00:00-04:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Western Pendleton</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>054071</value>
-<valueName>UGC</valueName>
-<value>WVZ505</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.EXT.KLWX.WW.Y.0016.000000T0000Z-230313T1000Z/</value>
 </cap:parameter>
 </entry>
 <entry>
