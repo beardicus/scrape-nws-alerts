@@ -16,16 +16,48 @@ xmlns = 'http://www.w3.org/2005/Atom'
 xmlns:cap = 'urn:oasis:names:tc:emergency:cap:1.1'
 xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 >
-<!-- http-date = Fri, 17 Mar 2023 20:01:00 GMT -->
+<!-- http-date = Fri, 17 Mar 2023 20:27:00 GMT -->
 <id>https://alerts.weather.gov/cap/us.php?x=0</id>
 <logo>http://alerts.weather.gov/images/xml_logo.gif</logo>
 <generator>NWS CAP Server</generator>
-<updated>2023-03-17T16:01:00-04:00</updated>
+<updated>2023-03-17T15:27:00-05:00</updated>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
 <title>Current Watches, Warnings and Advisories for the United States Issued by the National Weather Service</title>
 <link href="https://alerts.weather.gov/cap/us.php?x=0"/>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=AK12663CDED4D8.WinterWeatherAdvisory.12663CEBA3C0AK.AFCWSWAER.1ab37651530f5b80a833b42bf1f0cfb7</id>
+<updated>2023-03-17T12:06:00-08:00</updated>
+<published>2023-03-17T12:06:00-08:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Winter Weather Advisory issued March 17 at 12:06PM AKDT until March 17 at 8:00PM AKDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=AK12663CDED4D8.WinterWeatherAdvisory.12663CEBA3C0AK.AFCWSWAER.1ab37651530f5b80a833b42bf1f0cfb7"/>
+<summary>...WINTER WEATHER ADVISORY REMAINS IN EFFECT UNTIL 8 PM AKDT THIS EVENING... * WHAT...Snow and blowing snow expected. Total snow accumulations of 3 to 5 inches along the coast, with higher accumulations of up to 10 inches further inland. Northwest winds gusting as high as 40 mph.</summary>
+<cap:event>Winter Weather Advisory</cap:event>
+<cap:effective>2023-03-17T12:06:00-08:00</cap:effective>
+<cap:expires>2023-03-17T20:00:00-08:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Kodiak Island</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>002122 002150</value>
+<valueName>UGC</valueName>
+<value>AKZ171</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.PAFC.WW.Y.0027.000000T0000Z-230318T0400Z/</value>
+</cap:parameter>
+</entry>
 <entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=AK12663CDE7268.SpecialWeatherStatement.12663CEB0780AK.AFCSPSAER.83b378a3fb44dfc35d9590ac6f8262b6</id>
 <updated>2023-03-17T09:54:00-08:00</updated>
@@ -56,38 +88,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value></value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=AK12663CDE0FF8.WinterWeatherAdvisory.12663CEBA3C0AK.AFCWSWAER.1ab37651530f5b80a833b42bf1f0cfb7</id>
-<updated>2023-03-17T07:02:00-08:00</updated>
-<published>2023-03-17T07:02:00-08:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Winter Weather Advisory issued March 17 at 7:02AM AKDT until March 17 at 8:00PM AKDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=AK12663CDE0FF8.WinterWeatherAdvisory.12663CEBA3C0AK.AFCWSWAER.1ab37651530f5b80a833b42bf1f0cfb7"/>
-<summary>...WINTER WEATHER ADVISORY REMAINS IN EFFECT UNTIL 8 PM AKDT THIS EVENING... * WHAT...Snow and blowing snow expected. Total snow accumulations of 3 to 5 inches along the coast, with higher accumulations of up to 10 inches further inland. Northwest winds gusting as high as 40 mph.</summary>
-<cap:event>Winter Weather Advisory</cap:event>
-<cap:effective>2023-03-17T07:02:00-08:00</cap:effective>
-<cap:expires>2023-03-17T20:00:00-08:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Kodiak Island</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>002122 002150</value>
-<valueName>UGC</valueName>
-<value>AKZ171</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.PAFC.WW.Y.0027.230317T1600Z-230318T0400Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -148,6 +148,70 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <value>002020 002063 002122</value>
 <valueName>UGC</valueName>
 <value>AKZ125</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value></value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=AL12663CDEDD0C.SpecialWeatherStatement.12663CDEF990AL.MOBSPSMOB.ecfb3f0978ece7dcf68235d1ed3ba7ec</id>
+<updated>2023-03-17T15:27:00-05:00</updated>
+<published>2023-03-17T15:27:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Special Weather Statement issued March 17 at 3:27PM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=AL12663CDEDD0C.SpecialWeatherStatement.12663CDEF990AL.MOBSPSMOB.ecfb3f0978ece7dcf68235d1ed3ba7ec"/>
+<summary>...Strong thunderstorms will impact portions of southeastern Escambia, southwestern Covington, northwestern Okaloosa and northern Santa Rosa Counties through 400 PM CDT... At 326 PM CDT, National Weather Service doppler radar indicated strong thunderstorms along a line extending from 14 miles east of Riverview to 5 miles north of Pace. Movement was east at 30 mph.</summary>
+<cap:event>Special Weather Statement</cap:event>
+<cap:effective>2023-03-17T15:27:00-05:00</cap:effective>
+<cap:expires>2023-03-17T16:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Observed</cap:certainty>
+<cap:areaDesc>Covington; Escambia</cap:areaDesc>
+<cap:polygon>31.18,-86.44 30.86,-86.58 30.64,-86.68 30.68,-87.26 31.08,-87.08 31.18,-86.44</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>001039 001053</value>
+<valueName>UGC</valueName>
+<value>ALZ059 ALZ060</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value></value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=AL12663CDED53C.SpecialWeatherStatement.12663CDEE414AL.MOBSPSMOB.aad27172a949080a94648c85d9debf82</id>
+<updated>2023-03-17T15:07:00-05:00</updated>
+<published>2023-03-17T15:07:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Special Weather Statement issued March 17 at 3:07PM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=AL12663CDED53C.SpecialWeatherStatement.12663CDEE414AL.MOBSPSMOB.aad27172a949080a94648c85d9debf82"/>
+<summary>...Strong thunderstorms will impact portions of southeastern Baldwin, northwestern Santa Rosa and central Escambia Counties through 345 PM CDT... At 306 PM CDT, National Weather Service doppler radar indicated strong thunderstorms along a line extending from 9 miles south of Bratt to 3 miles west of Molino to 11 miles west of Gonzalez.</summary>
+<cap:event>Special Weather Statement</cap:event>
+<cap:effective>2023-03-17T15:07:00-05:00</cap:effective>
+<cap:expires>2023-03-17T15:45:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Observed</cap:certainty>
+<cap:areaDesc>Baldwin Central</cap:areaDesc>
+<cap:polygon>30.57,-87.15 30.58,-87.15 30.58,-87.18 30.57,-87.19 30.57,-87.22 30.6,-87.23 30.61,-87.26 30.58,-87.29 30.6,-87.49 30.83,-87.46 30.9,-87.11 30.74,-87.04 30.56,-87.09 30.57,-87.15</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>001003</value>
+<valueName>UGC</valueName>
+<value>ALZ264</value>
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
@@ -1835,6 +1899,70 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=FL12663CDEDD0C.SpecialWeatherStatement.12663CDEF990FL.MOBSPSMOB.232c628de69ae919202a3de4ce2a49ba</id>
+<updated>2023-03-17T16:27:00-04:00</updated>
+<published>2023-03-17T16:27:00-04:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Special Weather Statement issued March 17 at 4:27PM EDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=FL12663CDEDD0C.SpecialWeatherStatement.12663CDEF990FL.MOBSPSMOB.232c628de69ae919202a3de4ce2a49ba"/>
+<summary>...Strong thunderstorms will impact portions of southeastern Escambia, southwestern Covington, northwestern Okaloosa and northern Santa Rosa Counties through 400 PM CDT... At 326 PM CDT, National Weather Service doppler radar indicated strong thunderstorms along a line extending from 14 miles east of Riverview to 5 miles north of Pace. Movement was east at 30 mph.</summary>
+<cap:event>Special Weather Statement</cap:event>
+<cap:effective>2023-03-17T16:27:00-04:00</cap:effective>
+<cap:expires>2023-03-17T17:00:00-04:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Observed</cap:certainty>
+<cap:areaDesc>Okaloosa Inland; Santa Rosa Inland</cap:areaDesc>
+<cap:polygon>31.18,-86.44 30.86,-86.58 30.64,-86.68 30.68,-87.26 31.08,-87.08 31.18,-86.44</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>012091 012113</value>
+<valueName>UGC</valueName>
+<value>FLZ203 FLZ205</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value></value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=FL12663CDED53C.SpecialWeatherStatement.12663CDEE414FL.MOBSPSMOB.6d0f2fa3f346969b198e6263e87409e0</id>
+<updated>2023-03-17T16:07:00-04:00</updated>
+<published>2023-03-17T16:07:00-04:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Special Weather Statement issued March 17 at 4:07PM EDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=FL12663CDED53C.SpecialWeatherStatement.12663CDEE414FL.MOBSPSMOB.6d0f2fa3f346969b198e6263e87409e0"/>
+<summary>...Strong thunderstorms will impact portions of southeastern Baldwin, northwestern Santa Rosa and central Escambia Counties through 345 PM CDT... At 306 PM CDT, National Weather Service doppler radar indicated strong thunderstorms along a line extending from 9 miles south of Bratt to 3 miles west of Molino to 11 miles west of Gonzalez.</summary>
+<cap:event>Special Weather Statement</cap:event>
+<cap:effective>2023-03-17T16:07:00-04:00</cap:effective>
+<cap:expires>2023-03-17T16:45:00-04:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Observed</cap:certainty>
+<cap:areaDesc>Escambia Inland; Santa Rosa Coastal</cap:areaDesc>
+<cap:polygon>30.57,-87.15 30.58,-87.15 30.58,-87.18 30.57,-87.19 30.57,-87.22 30.6,-87.23 30.61,-87.26 30.58,-87.29 30.6,-87.49 30.83,-87.46 30.9,-87.11 30.74,-87.04 30.56,-87.09 30.57,-87.15</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>012033 012113</value>
+<valueName>UGC</valueName>
+<value>FLZ201 FLZ204</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value></value>
+</cap:parameter>
+</entry>
+<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=FL12663CDED2E4.RipCurrentStatement.12663CEB7CB0FL.TAECFWTAE.aaf1be39ff5a3a7ea0fc56e029166a75</id>
 <updated>2023-03-17T16:01:00-04:00</updated>
 <published>2023-03-17T16:01:00-04:00</published>
@@ -2650,6 +2778,134 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=MI12663CDEDA50.WinterStormWarning.12663CEDC6A0MI.MQTWSWMQT.a8768ecdb0ffee1fd9c97aa57c74eadb</id>
+<updated>2023-03-17T16:20:00-04:00</updated>
+<published>2023-03-17T16:20:00-04:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Winter Storm Warning issued March 17 at 4:20PM EDT until March 18 at 2:00PM EDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MI12663CDEDA50.WinterStormWarning.12663CEDC6A0MI.MQTWSWMQT.a8768ecdb0ffee1fd9c97aa57c74eadb"/>
+<summary>...WINTER STORM WARNING NOW IN EFFECT UNTIL 2 PM EDT /1 PM CDT/ SATURDAY... * WHAT...Periods of heavy lake effect snow. Additional snow accumulations of 5 to 12 inches, greatest in the high terrain. Snow will quickly diminish early Saturday afternoon. Winds gusting as high as 45 mph across the Keweenaw and in areas</summary>
+<cap:event>Winter Storm Warning</cap:event>
+<cap:effective>2023-03-17T16:20:00-04:00</cap:effective>
+<cap:expires>2023-03-18T14:00:00-04:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Baraga; Gogebic; Houghton; Keweenaw; Ontonagon; Southern Houghton</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>026013 026053 026061 026083 026131</value>
+<valueName>UGC</valueName>
+<value>MIZ001 MIZ002 MIZ003 MIZ004 MIZ009 MIZ084</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.EXT.KMQT.WS.W.0003.000000T0000Z-230318T1800Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=MI12663CDEDA50.WinterWeatherAdvisory.12663CFA49C0MI.MQTWSWMQT.00c0548f9413398b857858be0d69d95a</id>
+<updated>2023-03-17T16:20:00-04:00</updated>
+<published>2023-03-17T16:20:00-04:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Winter Weather Advisory issued March 17 at 4:20PM EDT until March 18 at 8:00PM EDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MI12663CDEDA50.WinterWeatherAdvisory.12663CFA49C0MI.MQTWSWMQT.00c0548f9413398b857858be0d69d95a"/>
+<summary>...WINTER WEATHER ADVISORY REMAINS IN EFFECT UNTIL 8 PM EDT SATURDAY... * WHAT...Lake effect snow with occasional heavy snowfall expected. Additional snow accumulations of 3 to 7 inches, locally up to 10 inches in the higher terrain from west of Big Bay to Negaunee, Ishpeming and Skandia. The heaviest snow will fall</summary>
+<cap:event>Winter Weather Advisory</cap:event>
+<cap:effective>2023-03-17T16:20:00-04:00</cap:effective>
+<cap:expires>2023-03-18T20:00:00-04:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Marquette</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>026103</value>
+<valueName>UGC</valueName>
+<value>MIZ005</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KMQT.WW.Y.0017.000000T0000Z-230319T0000Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=MI12663CDEDA50.WinterWeatherAdvisory.12663CFA49C0MI.MQTWSWMQT.ad409ec3625ee804a323116680fda660</id>
+<updated>2023-03-17T16:20:00-04:00</updated>
+<published>2023-03-17T16:20:00-04:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Winter Weather Advisory issued March 17 at 4:20PM EDT until March 18 at 8:00PM EDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MI12663CDEDA50.WinterWeatherAdvisory.12663CFA49C0MI.MQTWSWMQT.ad409ec3625ee804a323116680fda660"/>
+<summary>...WINTER WEATHER ADVISORY REMAINS IN EFFECT UNTIL 8 PM EDT SATURDAY... * WHAT...Lake effect snow with occasional heavy snowfall expected. Additional snow accumulations of 4 to 8 inches, locally up to 10 inches. The heaviest snow will fall between 2 AM EDT tonight and noon EDT on Saturday. Winds gusting as high</summary>
+<cap:event>Winter Weather Advisory</cap:event>
+<cap:effective>2023-03-17T16:20:00-04:00</cap:effective>
+<cap:expires>2023-03-18T20:00:00-04:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Alger; Luce; Northern Schoolcraft</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>026003 026095 026153</value>
+<valueName>UGC</valueName>
+<value>MIZ006 MIZ007 MIZ085</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KMQT.WW.Y.0018.230317T2100Z-230319T0000Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=MI12663CDEDA50.WinterWeatherAdvisory.12663CFA49C0MI.MQTWSWMQT.ee654283fea18e7fe299374e2bf4161d</id>
+<updated>2023-03-17T16:20:00-04:00</updated>
+<published>2023-03-17T16:20:00-04:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Winter Weather Advisory issued March 17 at 4:20PM EDT until March 18 at 8:00PM EDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MI12663CDEDA50.WinterWeatherAdvisory.12663CFA49C0MI.MQTWSWMQT.ee654283fea18e7fe299374e2bf4161d"/>
+<summary>...WINTER WEATHER ADVISORY IN EFFECT FROM 5 AM TO 8 PM EDT SATURDAY... * WHAT...Lake effect snow showers off of Lake Superior expected. Total snow accumulations of 3 to 7 inches, greatest to the north of Rapid River. However, snow accumulations will only be around 1 inch to the south and west of Escanaba. Winds gusting as high</summary>
+<cap:event>Winter Weather Advisory</cap:event>
+<cap:effective>2023-03-17T16:20:00-04:00</cap:effective>
+<cap:expires>2023-03-18T20:00:00-04:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Delta; Southern Schoolcraft</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>026041 026153</value>
+<valueName>UGC</valueName>
+<value>MIZ013 MIZ014</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.EXB.KMQT.WW.Y.0018.230318T0900Z-230319T0000Z/</value>
+</cap:parameter>
+</entry>
+<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=MI12663CDEC0EC.WinterStormWarning.12663CFA49C0MI.APXWSWAPX.5779a541028416526d3c245883d33237</id>
 <updated>2023-03-17T15:55:00-04:00</updated>
 <published>2023-03-17T15:55:00-04:00</published>
@@ -2875,131 +3131,67 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=MI12663CDE3E10.WinterStormWarning.12663CFA49C0MI.MQTWSWMQT.1ccc2430f0bd310d251697273e312ba1</id>
-<updated>2023-03-17T12:20:00-04:00</updated>
-<published>2023-03-17T12:20:00-04:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=MN12663CDED924.WinterWeatherAdvisory.12663CEBF1E0MN.DLHWSWDLH.72e72e982b0b7f628643d5ad504f8314</id>
+<updated>2023-03-17T15:17:00-05:00</updated>
+<published>2023-03-17T15:17:00-05:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Winter Storm Warning issued March 17 at 12:20PM EDT until March 18 at 8:00PM EDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MI12663CDE3E10.WinterStormWarning.12663CFA49C0MI.MQTWSWMQT.1ccc2430f0bd310d251697273e312ba1"/>
-<summary>...WINTER STORM WARNING REMAINS IN EFFECT UNTIL 8 PM EDT /7 PM CDT/ SATURDAY... * WHAT...Heavy snow. Additional snow accumulations of 6 to 12 inches, locally higher in higher terrain and in the northern snow belts. Winds gusting as high as 50 mph will be possible near the Lake Superior shoreline.</summary>
-<cap:event>Winter Storm Warning</cap:event>
-<cap:effective>2023-03-17T12:20:00-04:00</cap:effective>
-<cap:expires>2023-03-18T20:00:00-04:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Gogebic; Houghton; Keweenaw; Ontonagon; Southern Houghton</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>026053 026061 026083 026131</value>
-<valueName>UGC</valueName>
-<value>MIZ001 MIZ002 MIZ003 MIZ009 MIZ084</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KMQT.WS.W.0003.000000T0000Z-230319T0000Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=MI12663CDE3E10.WinterStormWarning.12663CFA49C0MI.MQTWSWMQT.05f0cf884bd6c46efac12b43b6e28419</id>
-<updated>2023-03-17T12:20:00-04:00</updated>
-<published>2023-03-17T12:20:00-04:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Winter Storm Warning issued March 17 at 12:20PM EDT until March 18 at 8:00PM EDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MI12663CDE3E10.WinterStormWarning.12663CFA49C0MI.MQTWSWMQT.05f0cf884bd6c46efac12b43b6e28419"/>
-<summary>...WINTER STORM WARNING REMAINS IN EFFECT UNTIL 8 PM EDT SATURDAY... * WHAT...Heavy snow. Additional snow accumulations of 6 to 12 inches, locally higher in the Huron Mountains and in the northern snow belts. Winds gusting as high as 35 mph. * WHERE...Baraga County.</summary>
-<cap:event>Winter Storm Warning</cap:event>
-<cap:effective>2023-03-17T12:20:00-04:00</cap:effective>
-<cap:expires>2023-03-18T20:00:00-04:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Baraga</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>026013</value>
-<valueName>UGC</valueName>
-<value>MIZ004</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KMQT.WS.W.0003.000000T0000Z-230319T0000Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=MI12663CDE3E10.WinterWeatherAdvisory.12663CFA49C0MI.MQTWSWMQT.00c0548f9413398b857858be0d69d95a</id>
-<updated>2023-03-17T12:20:00-04:00</updated>
-<published>2023-03-17T12:20:00-04:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Winter Weather Advisory issued March 17 at 12:20PM EDT until March 18 at 8:00PM EDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MI12663CDE3E10.WinterWeatherAdvisory.12663CFA49C0MI.MQTWSWMQT.00c0548f9413398b857858be0d69d95a"/>
-<summary>...WINTER WEATHER ADVISORY REMAINS IN EFFECT UNTIL 8 PM EDT SATURDAY... * WHAT...Snow. Additional snow accumulations of 6 to 12 inches, mainly north of the US-41 corridor tonight through Saturday. Winds gusting as high as 45 mph near the Lake Superior shoreline. * WHERE...Marquette County.</summary>
+<title>Winter Weather Advisory issued March 17 at 3:17PM CDT until March 18 at 1:00AM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MN12663CDED924.WinterWeatherAdvisory.12663CEBF1E0MN.DLHWSWDLH.72e72e982b0b7f628643d5ad504f8314"/>
+<summary>...WINTER WEATHER ADVISORY REMAINS IN EFFECT UNTIL 1 AM CDT SATURDAY... * WHAT...Snow. Additional snow accumulations of 1 to 4 inches. * WHERE...North St. Louis and Central St. Louis Counties. This includes the Tribal Lands of the Bois Forte Band, Lake Vermilion and, Nett Lake areas.</summary>
 <cap:event>Winter Weather Advisory</cap:event>
-<cap:effective>2023-03-17T12:20:00-04:00</cap:effective>
-<cap:expires>2023-03-18T20:00:00-04:00</cap:expires>
+<cap:effective>2023-03-17T15:17:00-05:00</cap:effective>
+<cap:expires>2023-03-18T01:00:00-05:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
 <cap:category>Met</cap:category>
 <cap:urgency>Expected</cap:urgency>
 <cap:severity>Minor</cap:severity>
 <cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Marquette</cap:areaDesc>
+<cap:areaDesc>Central St. Louis; North St. Louis</cap:areaDesc>
 <cap:polygon></cap:polygon>
 <cap:geocode>
 <valueName>FIPS6</valueName>
-<value>026103</value>
+<value>027137</value>
 <valueName>UGC</valueName>
-<value>MIZ005</value>
+<value>MNZ011 MNZ019</value>
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
-<value>/O.CON.KMQT.WW.Y.0017.000000T0000Z-230319T0000Z/</value>
+<value>/O.CON.KDLH.WW.Y.0021.000000T0000Z-230318T0600Z/</value>
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=MI12663CDE3E10.WinterWeatherAdvisory.12663CFA49C0MI.MQTWSWMQT.ad409ec3625ee804a323116680fda660</id>
-<updated>2023-03-17T12:20:00-04:00</updated>
-<published>2023-03-17T12:20:00-04:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=MN12663CDED924.WinterWeatherAdvisory.12663CEC8E20MN.DLHWSWDLH.774b93b4ede36736f34104be5023ab97</id>
+<updated>2023-03-17T15:17:00-05:00</updated>
+<published>2023-03-17T15:17:00-05:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Winter Weather Advisory issued March 17 at 12:20PM EDT until March 18 at 8:00PM EDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MI12663CDE3E10.WinterWeatherAdvisory.12663CFA49C0MI.MQTWSWMQT.ad409ec3625ee804a323116680fda660"/>
-<summary>...WINTER WEATHER ADVISORY REMAINS IN EFFECT FROM 5 PM THIS AFTERNOON TO 8 PM EDT SATURDAY... * WHAT...Heavy snow expected. Additional snow accumulations of 4 to 10 inches. Winds gusting as high as 45 mph will be possible near the Lake Superior shoreline. * WHERE...Alger, Luce and Northern Schoolcraft Counties.</summary>
+<title>Winter Weather Advisory issued March 17 at 3:17PM CDT until March 18 at 5:00AM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MN12663CDED924.WinterWeatherAdvisory.12663CEC8E20MN.DLHWSWDLH.774b93b4ede36736f34104be5023ab97"/>
+<summary>...WINTER WEATHER ADVISORY NOW IN EFFECT UNTIL 5 AM CDT SATURDAY... * WHAT...Snow. Additional snow accumulations of 2 to 5 inches, the higher amounts will be most likely in northern Lake and Cook Counties.. Winds gusting as high as 35 mph. * WHERE...Northern Cook and Lake, Southern Lake and Southern</summary>
 <cap:event>Winter Weather Advisory</cap:event>
-<cap:effective>2023-03-17T12:20:00-04:00</cap:effective>
-<cap:expires>2023-03-18T20:00:00-04:00</cap:expires>
+<cap:effective>2023-03-17T15:17:00-05:00</cap:effective>
+<cap:expires>2023-03-18T05:00:00-05:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
 <cap:category>Met</cap:category>
 <cap:urgency>Expected</cap:urgency>
 <cap:severity>Minor</cap:severity>
 <cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Alger; Luce; Northern Schoolcraft</cap:areaDesc>
+<cap:areaDesc>Northern Cook, Northern Lake; Southern Cook, North Shore; Southern Lake, North Shore</cap:areaDesc>
 <cap:polygon></cap:polygon>
 <cap:geocode>
 <valueName>FIPS6</valueName>
-<value>026003 026095 026153</value>
+<value>027031 027075</value>
 <valueName>UGC</valueName>
-<value>MIZ006 MIZ007 MIZ085</value>
+<value>MNZ012 MNZ020 MNZ021</value>
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
-<value>/O.CON.KMQT.WW.Y.0018.230317T2100Z-230319T0000Z/</value>
+<value>/O.EXT.KDLH.WW.Y.0021.000000T0000Z-230318T1000Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -3160,70 +3352,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value>/O.CON.KFGF.WW.Y.0017.000000T0000Z-230318T0200Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=MN12663CDDF1E4.WinterWeatherAdvisory.12663CEBF1E0MN.DLHWSWDLH.72e72e982b0b7f628643d5ad504f8314</id>
-<updated>2023-03-17T09:25:00-05:00</updated>
-<published>2023-03-17T09:25:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Winter Weather Advisory issued March 17 at 9:25AM CDT until March 18 at 1:00AM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MN12663CDDF1E4.WinterWeatherAdvisory.12663CEBF1E0MN.DLHWSWDLH.72e72e982b0b7f628643d5ad504f8314"/>
-<summary>...WINTER WEATHER ADVISORY REMAINS IN EFFECT UNTIL 1 AM CDT SATURDAY... * WHAT...Snow. Additional snow accumulations of 1 to 4 inches. The higher amounts are most likely in northern portions of Cook and Lake Counties. * WHERE...North St. Louis and Central St. Louis Counties. This</summary>
-<cap:event>Winter Weather Advisory</cap:event>
-<cap:effective>2023-03-17T09:25:00-05:00</cap:effective>
-<cap:expires>2023-03-18T01:00:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Central St. Louis; North St. Louis</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>027137</value>
-<valueName>UGC</valueName>
-<value>MNZ011 MNZ019</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KDLH.WW.Y.0021.000000T0000Z-230318T0600Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=MN12663CDDF1E4.WinterWeatherAdvisory.12663CEBF1E0MN.DLHWSWDLH.774b93b4ede36736f34104be5023ab97</id>
-<updated>2023-03-17T09:25:00-05:00</updated>
-<published>2023-03-17T09:25:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Winter Weather Advisory issued March 17 at 9:25AM CDT until March 18 at 1:00AM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MN12663CDDF1E4.WinterWeatherAdvisory.12663CEBF1E0MN.DLHWSWDLH.774b93b4ede36736f34104be5023ab97"/>
-<summary>...WINTER WEATHER ADVISORY REMAINS IN EFFECT UNTIL 1 AM CDT SATURDAY... * WHAT...Snow. Additional snow accumulations of 2 to 6 inches. The higher amounts are most likely over northern portions of Cook and Lake Counties. Winds gusting as high as 35 mph. * WHERE...Northern Cook and Lake, Southern Lake and Southern</summary>
-<cap:event>Winter Weather Advisory</cap:event>
-<cap:effective>2023-03-17T09:25:00-05:00</cap:effective>
-<cap:expires>2023-03-18T01:00:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Northern Cook, Northern Lake; Southern Cook, North Shore; Southern Lake, North Shore</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>027031 027075</value>
-<valueName>UGC</valueName>
-<value>MNZ012 MNZ020 MNZ021</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KDLH.WW.Y.0021.000000T0000Z-230318T0600Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -3557,17 +3685,17 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=MT12663CDD0DC4.WindChillAdvisory.12663CED5170MT.GGWWSWGGW.a591770d32a88d7e88debdb6418c2c0a</id>
-<updated>2023-03-17T02:41:00-06:00</updated>
-<published>2023-03-17T02:41:00-06:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=MT12663CDED4D8.WindChillAdvisory.12663CED5170MT.GGWWSWGGW.6ef4d3e99350f7f52542b749ca7d35ea</id>
+<updated>2023-03-17T14:06:00-06:00</updated>
+<published>2023-03-17T14:06:00-06:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Wind Chill Advisory issued March 17 at 2:41AM MDT until March 18 at 9:00AM MDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MT12663CDD0DC4.WindChillAdvisory.12663CED5170MT.GGWWSWGGW.a591770d32a88d7e88debdb6418c2c0a"/>
-<summary>...WIND CHILL ADVISORY IN EFFECT FROM MIDNIGHT TONIGHT TO 9 AM MDT SATURDAY... * WHAT...Very cold wind chills expected. Wind chills as low as 25 below zero. * WHERE...Portions of northeast Montana. * WHEN...From midnight tonight to 9 AM MDT Saturday.</summary>
+<title>Wind Chill Advisory issued March 17 at 2:06PM MDT until March 18 at 9:00AM MDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MT12663CDED4D8.WindChillAdvisory.12663CED5170MT.GGWWSWGGW.6ef4d3e99350f7f52542b749ca7d35ea"/>
+<summary>...WIND CHILL ADVISORY REMAINS IN EFFECT FROM MIDNIGHT TONIGHT TO 9 AM MDT SATURDAY... * WHAT...Very cold wind chills expected. Wind chills as low as 25 below zero. * WHERE...Portions of northeast Montana. * WHEN...From midnight tonight to 9 AM MDT Saturday.</summary>
 <cap:event>Wind Chill Advisory</cap:event>
-<cap:effective>2023-03-17T02:41:00-06:00</cap:effective>
+<cap:effective>2023-03-17T14:06:00-06:00</cap:effective>
 <cap:expires>2023-03-18T09:00:00-06:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
@@ -3575,45 +3703,13 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:urgency>Expected</cap:urgency>
 <cap:severity>Minor</cap:severity>
 <cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Central and Southern Valley; Dawson; Eastern Roosevelt; McCone; Northern Valley; Richland; Western Roosevelt; Wibaux</cap:areaDesc>
+<cap:areaDesc>Central and Southern Valley; Daniels; Dawson; Eastern Roosevelt; McCone; Northern Valley; Richland; Sheridan; Western Roosevelt; Wibaux</cap:areaDesc>
 <cap:polygon></cap:polygon>
 <cap:geocode>
 <valueName>FIPS6</valueName>
-<value>030021 030055 030083 030085 030105 030109</value>
+<value>030019 030021 030055 030083 030085 030091 030105 030109</value>
 <valueName>UGC</valueName>
-<value>MTZ017 MTZ020 MTZ023 MTZ024 MTZ025 MTZ027 MTZ061 MTZ062</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.EXA.KGGW.WC.Y.0005.230318T0600Z-230318T1500Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=MT12663CDD0DC4.WindChillAdvisory.12663CED5170MT.GGWWSWGGW.a97ca72046974edea5556dcce8fc0e82</id>
-<updated>2023-03-17T02:41:00-06:00</updated>
-<published>2023-03-17T02:41:00-06:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Wind Chill Advisory issued March 17 at 2:41AM MDT until March 18 at 9:00AM MDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MT12663CDD0DC4.WindChillAdvisory.12663CED5170MT.GGWWSWGGW.a97ca72046974edea5556dcce8fc0e82"/>
-<summary>...WIND CHILL ADVISORY REMAINS IN EFFECT FROM MIDNIGHT TONIGHT TO 9 AM MDT SATURDAY... * WHAT...Very cold wind chills expected. Wind chills as low as 30 below zero. * WHERE...Daniels and Sheridan Counties. * WHEN...From midnight tonight to 9 AM MDT Saturday.</summary>
-<cap:event>Wind Chill Advisory</cap:event>
-<cap:effective>2023-03-17T02:41:00-06:00</cap:effective>
-<cap:expires>2023-03-18T09:00:00-06:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Daniels; Sheridan</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>030019 030091</value>
-<valueName>UGC</valueName>
-<value>MTZ018 MTZ019</value>
+<value>MTZ017 MTZ018 MTZ019 MTZ020 MTZ023 MTZ024 MTZ025 MTZ027 MTZ061 MTZ062</value>
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
@@ -3976,6 +4072,38 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=NM12663CDEDB7C.WinterWeatherAdvisory.12663CEC6710NM.ABQWSWABQ.6aba6ee734648406acd28caf571c351c</id>
+<updated>2023-03-17T14:23:00-06:00</updated>
+<published>2023-03-17T14:23:00-06:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Winter Weather Advisory issued March 17 at 2:23PM MDT until March 18 at 3:00AM MDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=NM12663CDEDB7C.WinterWeatherAdvisory.12663CEC6710NM.ABQWSWABQ.6aba6ee734648406acd28caf571c351c"/>
+<summary>...WINTER WEATHER ADVISORY IN EFFECT UNTIL 3 AM MDT SATURDAY... * WHAT...Snow expected. Total snow accumulations up to 3 inches. * WHERE...Lower Rio Grande Valley, San Agustin Plains and Adjacent Lowlands, South Central Highlands, and Southwest Mountains. * WHEN...Until 3 AM MDT Saturday. * IMPACTS...Plan on snow packed or icy road conditions. This</summary>
+<cap:event>Winter Weather Advisory</cap:event>
+<cap:effective>2023-03-17T14:23:00-06:00</cap:effective>
+<cap:expires>2023-03-18T03:00:00-06:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Lower Rio Grande Valley; San Agustin Plains and Adjacent Lowlands; South Central Highlands; Southwest Mountains</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>035003 035053 035057</value>
+<valueName>UGC</valueName>
+<value>NMZ208 NMZ220 NMZ224 NMZ241</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.NEW.KABQ.WW.Y.0017.230317T2100Z-230318T0900Z/</value>
+</cap:parameter>
+</entry>
+<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=NM12663CDE4C84.FloodAdvisory.12663CFD7E10NM.EPZFLSEPZ.094d17bb9064f8fdee43b7ee5d987008</id>
 <updated>2023-03-17T10:57:00-06:00</updated>
 <published>2023-03-17T10:57:00-06:00</published>
@@ -4236,38 +4364,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <valueName>VTEC</valueName>
 <value>/O.CON.KVEF.FA.W.0006.000000T0000Z-230318T0000Z/
 /00000.0.RS.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=NY12663CDEBE30.SpecialWeatherStatement.12663CDEDE38NY.BUFSPSBUF.3617baf56afee971b1fa5f1526d5199f</id>
-<updated>2023-03-17T15:48:00-04:00</updated>
-<published>2023-03-17T15:48:00-04:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Special Weather Statement issued March 17 at 3:48PM EDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=NY12663CDEBE30.SpecialWeatherStatement.12663CDEDE38NY.BUFSPSBUF.3617baf56afee971b1fa5f1526d5199f"/>
-<summary>...A line of showers with gusty winds will impact portions of Wyoming, Cattaraugus, southeastern Erie, western Livingston, eastern Orleans, southeastern Chautauqua, western Allegany, Monroe and Genesee Counties through 430 PM EDT... At 345 PM EDT, Doppler radar was tracking showers along a line extending from Pembroke to 12 miles southwest of Gowanda.</summary>
-<cap:event>Special Weather Statement</cap:event>
-<cap:effective>2023-03-17T15:48:00-04:00</cap:effective>
-<cap:expires>2023-03-17T16:30:00-04:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Observed</cap:certainty>
-<cap:areaDesc>Allegany; Cattaraugus; Chautauqua; Genesee; Livingston; Monroe; Orleans; Southern Erie; Wyoming</cap:areaDesc>
-<cap:polygon>42,-79.16 42.78,-78.53 42.78,-78.49 42.84,-78.49 43.38,-78.04 43.27,-77.48 42,-78.21 42,-79.16</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>036003 036009 036013 036029 036037 036051 036055 036073 036121</value>
-<valueName>UGC</valueName>
-<value>NYZ002 NYZ003 NYZ011 NYZ012 NYZ013 NYZ019 NYZ020 NYZ021 NYZ085</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value></value>
 </cap:parameter>
 </entry>
 <entry>
@@ -4661,17 +4757,17 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=PR12663CDDF9B4.HighSurfAdvisory.12663CFDA520PR.JSJCFWSJU.0e33bdaddd52f6d1645f0cbcb3f09e98</id>
-<updated>2023-03-17T11:45:00-03:00</updated>
-<published>2023-03-17T11:45:00-03:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=PR12663CDEDCA8.HighSurfAdvisory.12663CFDA520PR.JSJCFWSJU.0e33bdaddd52f6d1645f0cbcb3f09e98</id>
+<updated>2023-03-17T17:26:00-03:00</updated>
+<published>2023-03-17T17:26:00-03:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>High Surf Advisory issued March 17 at 11:45AM ADT until March 19 at 7:00PM ADT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=PR12663CDDF9B4.HighSurfAdvisory.12663CFDA520PR.JSJCFWSJU.0e33bdaddd52f6d1645f0cbcb3f09e98"/>
+<title>High Surf Advisory issued March 17 at 5:26PM ADT until March 19 at 7:00PM ADT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=PR12663CDEDCA8.HighSurfAdvisory.12663CFDA520PR.JSJCFWSJU.0e33bdaddd52f6d1645f0cbcb3f09e98"/>
 <summary>...HIGH SURF ADVISORY REMAINS IN EFFECT UNTIL 6 PM AST SUNDAY... ...HIGH RIP CURRENT RISK REMAINS IN EFFECT THROUGH SUNDAY AFTERNOON... * WHAT...Large breaking waves around 13 feet and occasionally higher. Life-threatening rip currents. * WHERE...Beaches of San Juan and vicinity, northeastern, and</summary>
 <cap:event>High Surf Advisory</cap:event>
-<cap:effective>2023-03-17T11:45:00-03:00</cap:effective>
+<cap:effective>2023-03-17T17:26:00-03:00</cap:effective>
 <cap:expires>2023-03-19T19:00:00-03:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
@@ -4694,17 +4790,17 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=PR12663CDDF9B4.HighSurfAdvisory.12663CFDA520PR.JSJCFWSJU.443d018fa7fe06f3b534b612832fe93b</id>
-<updated>2023-03-17T11:45:00-03:00</updated>
-<published>2023-03-17T11:45:00-03:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=PR12663CDEDCA8.HighSurfAdvisory.12663CFDA520PR.JSJCFWSJU.443d018fa7fe06f3b534b612832fe93b</id>
+<updated>2023-03-17T17:26:00-03:00</updated>
+<published>2023-03-17T17:26:00-03:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>High Surf Advisory issued March 17 at 11:45AM ADT until March 19 at 7:00PM ADT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=PR12663CDDF9B4.HighSurfAdvisory.12663CFDA520PR.JSJCFWSJU.443d018fa7fe06f3b534b612832fe93b"/>
+<title>High Surf Advisory issued March 17 at 5:26PM ADT until March 19 at 7:00PM ADT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=PR12663CDEDCA8.HighSurfAdvisory.12663CFDA520PR.JSJCFWSJU.443d018fa7fe06f3b534b612832fe93b"/>
 <summary>...HIGH SURF ADVISORY REMAINS IN EFFECT UNTIL 6 PM AST SUNDAY... ...HIGH RIP CURRENT RISK REMAINS IN EFFECT THROUGH SUNDAY AFTERNOON... * WHAT...Large breaking waves around 13 feet and occasionally higher. Life-threatening rip currents. * WHERE...Beaches from Arecibo eastward to Dorado across the</summary>
 <cap:event>High Surf Advisory</cap:event>
-<cap:effective>2023-03-17T11:45:00-03:00</cap:effective>
+<cap:effective>2023-03-17T17:26:00-03:00</cap:effective>
 <cap:expires>2023-03-19T19:00:00-03:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
@@ -4727,17 +4823,17 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=PR12663CDDF9B4.RipCurrentStatement.12663CFDA520PR.JSJCFWSJU.3b79a777d80e76eb6d3e9f87e05bb26b</id>
-<updated>2023-03-17T11:45:00-03:00</updated>
-<published>2023-03-17T11:45:00-03:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=PR12663CDEDCA8.RipCurrentStatement.12663CFDA520PR.JSJCFWSJU.3b79a777d80e76eb6d3e9f87e05bb26b</id>
+<updated>2023-03-17T17:26:00-03:00</updated>
+<published>2023-03-17T17:26:00-03:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Rip Current Statement issued March 17 at 11:45AM ADT until March 19 at 7:00PM ADT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=PR12663CDDF9B4.RipCurrentStatement.12663CFDA520PR.JSJCFWSJU.3b79a777d80e76eb6d3e9f87e05bb26b"/>
+<title>Rip Current Statement issued March 17 at 5:26PM ADT until March 19 at 7:00PM ADT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=PR12663CDEDCA8.RipCurrentStatement.12663CFDA520PR.JSJCFWSJU.3b79a777d80e76eb6d3e9f87e05bb26b"/>
 <summary>...HIGH SURF ADVISORY REMAINS IN EFFECT UNTIL 6 PM AST SUNDAY... ...HIGH RIP CURRENT RISK REMAINS IN EFFECT THROUGH SUNDAY AFTERNOON... * WHAT...Large breaking waves around 13 feet and occasionally higher. Life-threatening rip currents. * WHERE...Beaches of San Juan and vicinity, northeastern, and</summary>
 <cap:event>Rip Current Statement</cap:event>
-<cap:effective>2023-03-17T11:45:00-03:00</cap:effective>
+<cap:effective>2023-03-17T17:26:00-03:00</cap:effective>
 <cap:expires>2023-03-19T19:00:00-03:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
@@ -4760,17 +4856,17 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=PR12663CDDF9B4.RipCurrentStatement.12663CFDA520PR.JSJCFWSJU.50b4c1e14edb17dfc87cce71e902b136</id>
-<updated>2023-03-17T11:45:00-03:00</updated>
-<published>2023-03-17T11:45:00-03:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=PR12663CDEDCA8.RipCurrentStatement.12663CFDA520PR.JSJCFWSJU.50b4c1e14edb17dfc87cce71e902b136</id>
+<updated>2023-03-17T17:26:00-03:00</updated>
+<published>2023-03-17T17:26:00-03:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Rip Current Statement issued March 17 at 11:45AM ADT until March 19 at 7:00PM ADT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=PR12663CDDF9B4.RipCurrentStatement.12663CFDA520PR.JSJCFWSJU.50b4c1e14edb17dfc87cce71e902b136"/>
+<title>Rip Current Statement issued March 17 at 5:26PM ADT until March 19 at 7:00PM ADT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=PR12663CDEDCA8.RipCurrentStatement.12663CFDA520PR.JSJCFWSJU.50b4c1e14edb17dfc87cce71e902b136"/>
 <summary>...HIGH SURF ADVISORY REMAINS IN EFFECT UNTIL 6 PM AST SUNDAY... ...HIGH RIP CURRENT RISK REMAINS IN EFFECT THROUGH SUNDAY AFTERNOON... * WHAT...Large breaking waves around 13 feet and occasionally higher. Life-threatening rip currents. * WHERE...Beaches from Arecibo eastward to Dorado across the</summary>
 <cap:event>Rip Current Statement</cap:event>
-<cap:effective>2023-03-17T11:45:00-03:00</cap:effective>
+<cap:effective>2023-03-17T17:26:00-03:00</cap:effective>
 <cap:expires>2023-03-19T19:00:00-03:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
@@ -4793,17 +4889,17 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=PR12663CDDF9B4.RipCurrentStatement.12663CFDA520PR.JSJCFWSJU.d89044d7ce63d607b4ff4480415f74aa</id>
-<updated>2023-03-17T11:45:00-03:00</updated>
-<published>2023-03-17T11:45:00-03:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=PR12663CDEDCA8.RipCurrentStatement.12663CFDA520PR.JSJCFWSJU.d89044d7ce63d607b4ff4480415f74aa</id>
+<updated>2023-03-17T17:26:00-03:00</updated>
+<published>2023-03-17T17:26:00-03:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Rip Current Statement issued March 17 at 11:45AM ADT until March 19 at 7:00PM ADT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=PR12663CDDF9B4.RipCurrentStatement.12663CFDA520PR.JSJCFWSJU.d89044d7ce63d607b4ff4480415f74aa"/>
+<title>Rip Current Statement issued March 17 at 5:26PM ADT until March 19 at 7:00PM ADT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=PR12663CDEDCA8.RipCurrentStatement.12663CFDA520PR.JSJCFWSJU.d89044d7ce63d607b4ff4480415f74aa"/>
 <summary>...HIGH RIP CURRENT RISK REMAINS IN EFFECT THROUGH SUNDAY AFTERNOON... * WHAT...Life-threatening rip currents. * WHERE...Beaches of Vieques. * WHEN...Through Sunday afternoon. * IMPACTS...Dangerous swimming and surfing conditions.</summary>
 <cap:event>Rip Current Statement</cap:event>
-<cap:effective>2023-03-17T11:45:00-03:00</cap:effective>
+<cap:effective>2023-03-17T17:26:00-03:00</cap:effective>
 <cap:expires>2023-03-19T19:00:00-03:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
@@ -5216,6 +5312,71 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=TX12663CDEDCA8.CoastalFloodAdvisory.12663CEB7CB0TX.CRPCFWCRP.46b078486b60f4403dabb14dfe6ce693</id>
+<updated>2023-03-17T15:26:00-05:00</updated>
+<published>2023-03-17T15:26:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Coastal Flood Advisory issued March 17 at 3:26PM CDT until March 17 at 10:00PM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=TX12663CDEDCA8.CoastalFloodAdvisory.12663CEB7CB0TX.CRPCFWCRP.46b078486b60f4403dabb14dfe6ce693"/>
+<summary>...COASTAL FLOOD ADVISORY IN EFFECT UNTIL 10 PM CDT THIS EVENING... * WHAT...Minor coastal flooding. * WHERE...Kleberg Islands and Nueces Islands Counties. * WHEN...Until 10 PM CDT this evening. * IMPACTS...Flooding of lots, parks, and roads with only</summary>
+<cap:event>Coastal Flood Advisory</cap:event>
+<cap:effective>2023-03-17T15:26:00-05:00</cap:effective>
+<cap:expires>2023-03-17T22:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Kleberg Islands; Nueces Islands</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>048273 048355</value>
+<valueName>UGC</valueName>
+<value>TXZ442 TXZ443</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.NEW.KCRP.CF.Y.0014.230317T2026Z-230318T0300Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=TX12663CDED730.FloodWarning.12663CEC78A4TX.FWDFLSFWD.8bb02c3d518fe320566dd19ce83468ec</id>
+<updated>2023-03-17T15:12:00-05:00</updated>
+<published>2023-03-17T15:12:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Flood Warning issued March 17 at 3:12PM CDT until March 18 at 4:45AM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=TX12663CDED730.FloodWarning.12663CEC78A4TX.FWDFLSFWD.8bb02c3d518fe320566dd19ce83468ec"/>
+<summary>...The Flood Warning is extended for the following rivers in Texas... Trinity River At Dallas affecting Dallas County. Additional information is available at www.weather.gov/fwd. ...FLOOD WARNING NOW IN EFFECT UNTIL LATE TONIGHT... * WHAT...Minor flooding is occurring and minor flooding is forecast. * WHERE...Trinity River At Dallas.</summary>
+<cap:event>Flood Warning</cap:event>
+<cap:effective>2023-03-17T15:12:00-05:00</cap:effective>
+<cap:expires>2023-03-18T04:45:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Dallas</cap:areaDesc>
+<cap:polygon>32.75,-96.93 32.81,-96.93 32.83,-96.83 32.75,-96.71 32.69,-96.76 32.78,-96.87 32.75,-96.93</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>048113</value>
+<valueName>UGC</valueName>
+<value>TXC113</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.EXT.KFWD.FL.W.0024.000000T0000Z-230318T0945Z/
+/DALT2.1.ER.230317T0824Z.230317T1430Z.230317T2145Z.NO/</value>
+</cap:parameter>
+</entry>
+<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=TX12663CDEB408.FreezeWatch.12663CFC6CA0TX.SHVNPWSHV.65f0aadb71a33d6d5486bf409094f4d6</id>
 <updated>2023-03-17T14:22:00-05:00</updated>
 <published>2023-03-17T14:22:00-05:00</published>
@@ -5614,39 +5775,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=TX12663CDDAF7C.FloodWarning.12663CEC4BB8TX.FWDFLSFWD.8bb02c3d518fe320566dd19ce83468ec</id>
-<updated>2023-03-17T07:55:00-05:00</updated>
-<published>2023-03-17T07:55:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Flood Warning issued March 17 at 7:55AM CDT until March 18 at 3:30AM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=TX12663CDDAF7C.FloodWarning.12663CEC4BB8TX.FWDFLSFWD.8bb02c3d518fe320566dd19ce83468ec"/>
-<summary>...The Flood Warning is extended for the following rivers in Texas... Trinity River At Dallas affecting Dallas County. Additional information is available at www.weather.gov/fwd. ...FLOOD WARNING NOW IN EFFECT UNTIL LATE TONIGHT... * WHAT...Minor flooding is occurring and minor flooding is forecast. * WHERE...Trinity River At Dallas.</summary>
-<cap:event>Flood Warning</cap:event>
-<cap:effective>2023-03-17T07:55:00-05:00</cap:effective>
-<cap:expires>2023-03-18T03:30:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Dallas</cap:areaDesc>
-<cap:polygon>32.75,-96.93 32.81,-96.93 32.83,-96.83 32.75,-96.71 32.69,-96.76 32.78,-96.87 32.75,-96.93</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>048113</value>
-<valueName>UGC</valueName>
-<value>TXC113</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.EXT.KFWD.FL.W.0024.000000T0000Z-230318T0830Z/
-/DALT2.1.ER.230317T0824Z.230317T1500Z.230317T2030Z.NO/</value>
-</cap:parameter>
-</entry>
-<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=TX12663CD01060.ChildAbductionEmergency.12663CDF5368TX.EPZCAEEPZ.cba9f7f190202d61d12a05a9777fdbb2</id>
 <updated>2023-03-16T18:28:00-05:00</updated>
 <published>2023-03-16T18:28:00-05:00</published>
@@ -5712,17 +5840,17 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=VI12663CDDF9B4.HighSurfAdvisory.12663CFDA520VI.JSJCFWSJU.e1a155ded1559f7668b40114b0ea7179</id>
-<updated>2023-03-17T10:45:00-04:00</updated>
-<published>2023-03-17T10:45:00-04:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=VI12663CDEDCA8.HighSurfAdvisory.12663CFDA520VI.JSJCFWSJU.e1a155ded1559f7668b40114b0ea7179</id>
+<updated>2023-03-17T16:26:00-04:00</updated>
+<published>2023-03-17T16:26:00-04:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>High Surf Advisory issued March 17 at 10:45AM AST until March 19 at 6:00PM AST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=VI12663CDDF9B4.HighSurfAdvisory.12663CFDA520VI.JSJCFWSJU.e1a155ded1559f7668b40114b0ea7179"/>
+<title>High Surf Advisory issued March 17 at 4:26PM AST until March 19 at 6:00PM AST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=VI12663CDEDCA8.HighSurfAdvisory.12663CFDA520VI.JSJCFWSJU.e1a155ded1559f7668b40114b0ea7179"/>
 <summary>...HIGH SURF ADVISORY REMAINS IN EFFECT UNTIL 6 PM AST SUNDAY... ...HIGH RIP CURRENT RISK REMAINS IN EFFECT THROUGH SUNDAY AFTERNOON... * WHAT...Large breaking waves around 13 feet and occasionally higher. Life-threatening rip currents. * WHERE...Beaches of San Juan and vicinity, northeastern, and</summary>
 <cap:event>High Surf Advisory</cap:event>
-<cap:effective>2023-03-17T10:45:00-04:00</cap:effective>
+<cap:effective>2023-03-17T16:26:00-04:00</cap:effective>
 <cap:expires>2023-03-19T18:00:00-04:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
@@ -5745,17 +5873,17 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=VI12663CDDF9B4.RipCurrentStatement.12663CFDA520VI.JSJCFWSJU.a8123b2156e8238a721cb8d75f202ba6</id>
-<updated>2023-03-17T10:45:00-04:00</updated>
-<published>2023-03-17T10:45:00-04:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=VI12663CDEDCA8.RipCurrentStatement.12663CFDA520VI.JSJCFWSJU.a8123b2156e8238a721cb8d75f202ba6</id>
+<updated>2023-03-17T16:26:00-04:00</updated>
+<published>2023-03-17T16:26:00-04:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Rip Current Statement issued March 17 at 10:45AM AST until March 19 at 6:00PM AST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=VI12663CDDF9B4.RipCurrentStatement.12663CFDA520VI.JSJCFWSJU.a8123b2156e8238a721cb8d75f202ba6"/>
+<title>Rip Current Statement issued March 17 at 4:26PM AST until March 19 at 6:00PM AST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=VI12663CDEDCA8.RipCurrentStatement.12663CFDA520VI.JSJCFWSJU.a8123b2156e8238a721cb8d75f202ba6"/>
 <summary>...HIGH SURF ADVISORY REMAINS IN EFFECT UNTIL 6 PM AST SUNDAY... ...HIGH RIP CURRENT RISK REMAINS IN EFFECT THROUGH SUNDAY AFTERNOON... * WHAT...Large breaking waves around 13 feet and occasionally higher. Life-threatening rip currents. * WHERE...Beaches of San Juan and vicinity, northeastern, and</summary>
 <cap:event>Rip Current Statement</cap:event>
-<cap:effective>2023-03-17T10:45:00-04:00</cap:effective>
+<cap:effective>2023-03-17T16:26:00-04:00</cap:effective>
 <cap:expires>2023-03-19T18:00:00-04:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
@@ -5778,17 +5906,17 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=VI12663CDDF9B4.RipCurrentStatement.12663CFDA520VI.JSJCFWSJU.82e8fba069d64da27cd68edf08d983c2</id>
-<updated>2023-03-17T10:45:00-04:00</updated>
-<published>2023-03-17T10:45:00-04:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=VI12663CDEDCA8.RipCurrentStatement.12663CFDA520VI.JSJCFWSJU.82e8fba069d64da27cd68edf08d983c2</id>
+<updated>2023-03-17T16:26:00-04:00</updated>
+<published>2023-03-17T16:26:00-04:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Rip Current Statement issued March 17 at 10:45AM AST until March 19 at 6:00PM AST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=VI12663CDDF9B4.RipCurrentStatement.12663CFDA520VI.JSJCFWSJU.82e8fba069d64da27cd68edf08d983c2"/>
+<title>Rip Current Statement issued March 17 at 4:26PM AST until March 19 at 6:00PM AST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=VI12663CDEDCA8.RipCurrentStatement.12663CFDA520VI.JSJCFWSJU.82e8fba069d64da27cd68edf08d983c2"/>
 <summary>...HIGH RIP CURRENT RISK REMAINS IN EFFECT THROUGH SUNDAY AFTERNOON... * WHAT...Life-threatening rip currents. * WHERE...Beaches of Saint Croix. * WHEN...Through Sunday afternoon. * IMPACTS...Rip currents can sweep even the best swimmers away</summary>
 <cap:event>Rip Current Statement</cap:event>
-<cap:effective>2023-03-17T10:45:00-04:00</cap:effective>
+<cap:effective>2023-03-17T16:26:00-04:00</cap:effective>
 <cap:expires>2023-03-19T18:00:00-04:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
@@ -5807,6 +5935,70 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value>/O.CON.TJSJ.RP.S.0018.000000T0000Z-230319T2200Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=WI12663CDED924.WinterStormWarning.12663CECDC40WI.DLHWSWDLH.0ac287ce4e0eef50c663edb1a43b51e2</id>
+<updated>2023-03-17T15:17:00-05:00</updated>
+<published>2023-03-17T15:17:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Winter Storm Warning issued March 17 at 3:17PM CDT until March 18 at 7:00AM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=WI12663CDED924.WinterStormWarning.12663CECDC40WI.DLHWSWDLH.0ac287ce4e0eef50c663edb1a43b51e2"/>
+<summary>...WINTER STORM WARNING NOW IN EFFECT UNTIL 7 AM CDT SATURDAY... * WHAT...Heavy snow. Additional snow accumulations of 1 to 4 inches, except 3 to 7 inches from east-central Douglas County into the Bayfield Peninsula. * WHERE...Douglas and Bayfield Counties. This includes the Tribal Lands of the Red Cliff Band.</summary>
+<cap:event>Winter Storm Warning</cap:event>
+<cap:effective>2023-03-17T15:17:00-05:00</cap:effective>
+<cap:expires>2023-03-18T07:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Bayfield; Douglas</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>055007 055031</value>
+<valueName>UGC</valueName>
+<value>WIZ001 WIZ002</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.EXT.KDLH.WS.W.0009.000000T0000Z-230318T1200Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=WI12663CDED924.WinterStormWarning.12663CEDC6A0WI.DLHWSWDLH.611f55f15d87960f0c58c7ea4c9f0618</id>
+<updated>2023-03-17T15:17:00-05:00</updated>
+<published>2023-03-17T15:17:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Winter Storm Warning issued March 17 at 3:17PM CDT until March 18 at 1:00PM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=WI12663CDED924.WinterStormWarning.12663CEDC6A0WI.DLHWSWDLH.611f55f15d87960f0c58c7ea4c9f0618"/>
+<summary>...WINTER STORM WARNING NOW IN EFFECT UNTIL 1 PM CDT SATURDAY... * WHAT...Heavy snow. Additional snow accumulations of 3 to 6 inches, except 7 to 14 inches from east-central Ashland into northern Iron Counties. Winds gusting as high as 35 mph. * WHERE...Ashland and Iron Counties. This includes the Tribal Lands of the Bad River Reservation and the northwestern area</summary>
+<cap:event>Winter Storm Warning</cap:event>
+<cap:effective>2023-03-17T15:17:00-05:00</cap:effective>
+<cap:expires>2023-03-18T13:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Ashland; Iron</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>055003 055051</value>
+<valueName>UGC</valueName>
+<value>WIZ003 WIZ004</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.EXT.KDLH.WS.W.0009.000000T0000Z-230318T1800Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -5839,70 +6031,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value>/O.CON.KGRB.WW.Y.0018.000000T0000Z-230318T1800Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=WI12663CDDF1E4.WinterStormWarning.12663CEBF1E0WI.DLHWSWDLH.0ac287ce4e0eef50c663edb1a43b51e2</id>
-<updated>2023-03-17T09:25:00-05:00</updated>
-<published>2023-03-17T09:25:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Winter Storm Warning issued March 17 at 9:25AM CDT until March 18 at 1:00AM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=WI12663CDDF1E4.WinterStormWarning.12663CEBF1E0WI.DLHWSWDLH.0ac287ce4e0eef50c663edb1a43b51e2"/>
-<summary>...WINTER STORM WARNING REMAINS IN EFFECT UNTIL 1 AM CDT SATURDAY... * WHAT...Heavy snow. Additional snow accumulations of 2 to 5 inches, except 4 to 9 inches for northeast Douglas and northern Bayfield counties. * WHERE...Douglas and Bayfield Counties. This includes the</summary>
-<cap:event>Winter Storm Warning</cap:event>
-<cap:effective>2023-03-17T09:25:00-05:00</cap:effective>
-<cap:expires>2023-03-18T01:00:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Bayfield; Douglas</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>055007 055031</value>
-<valueName>UGC</valueName>
-<value>WIZ001 WIZ002</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KDLH.WS.W.0009.000000T0000Z-230318T0600Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=WI12663CDDF1E4.WinterStormWarning.12663CECDC40WI.DLHWSWDLH.611f55f15d87960f0c58c7ea4c9f0618</id>
-<updated>2023-03-17T09:25:00-05:00</updated>
-<published>2023-03-17T09:25:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Winter Storm Warning issued March 17 at 9:25AM CDT until March 18 at 7:00AM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=WI12663CDDF1E4.WinterStormWarning.12663CECDC40WI.DLHWSWDLH.611f55f15d87960f0c58c7ea4c9f0618"/>
-<summary>...WINTER STORM WARNING REMAINS IN EFFECT UNTIL 7 AM CDT SATURDAY... * WHAT...Heavy snow. Additional snow accumulations of 3 to 7 inches, except 6 to 13 inches for east-central and northeast Ashland and northern Iron counties. * WHERE...Ashland and Iron Counties. This includes the Tribal</summary>
-<cap:event>Winter Storm Warning</cap:event>
-<cap:effective>2023-03-17T09:25:00-05:00</cap:effective>
-<cap:expires>2023-03-18T07:00:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Ashland; Iron</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>055003 055051</value>
-<valueName>UGC</valueName>
-<value>WIZ003 WIZ004</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KDLH.WS.W.0009.000000T0000Z-230318T1200Z/</value>
 </cap:parameter>
 </entry>
 <entry>
