@@ -16,16 +16,48 @@ xmlns = 'http://www.w3.org/2005/Atom'
 xmlns:cap = 'urn:oasis:names:tc:emergency:cap:1.1'
 xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 >
-<!-- http-date = Tue, 21 Mar 2023 06:32:00 GMT -->
+<!-- http-date = Tue, 21 Mar 2023 07:00:00 GMT -->
 <id>https://alerts.weather.gov/cap/us.php?x=0</id>
 <logo>http://alerts.weather.gov/images/xml_logo.gif</logo>
 <generator>NWS CAP Server</generator>
-<updated>2023-03-21T01:32:00-05:00</updated>
+<updated>2023-03-21T01:00:00-06:00</updated>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
 <title>Current Watches, Warnings and Advisories for the United States Issued by the National Weather Service</title>
 <link href="https://alerts.weather.gov/cap/us.php?x=0"/>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=AK12663D19C64C.DenseFogAdvisory.12663D1B8D60AK.AJKNPWAJK.95d72bfba2b86a71b65bd382bc6e831e</id>
+<updated>2023-03-20T22:35:00-08:00</updated>
+<published>2023-03-20T22:35:00-08:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Dense Fog Advisory issued March 20 at 10:35PM AKDT until March 21 at 10:00AM AKDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=AK12663D19C64C.DenseFogAdvisory.12663D1B8D60AK.AJKNPWAJK.95d72bfba2b86a71b65bd382bc6e831e"/>
+<summary>...DENSE FOG ADVISORY IN EFFECT UNTIL 10 AM AKDT TUESDAY... * WHAT...Visibility one quarter mile or less in dense fog. * WHERE...City and Borough of Juneau. * WHEN...Until 10 AM AKDT Tuesday. * IMPACTS...Hazardous driving conditions due to low visibility. * ADDITIONAL DETAILS...Surface observations have 1/2 mile</summary>
+<cap:event>Dense Fog Advisory</cap:event>
+<cap:effective>2023-03-20T22:35:00-08:00</cap:effective>
+<cap:expires>2023-03-21T10:00:00-08:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>City and Borough of Juneau</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>002110</value>
+<valueName>UGC</valueName>
+<value>AKZ325</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.NEW.PAJK.FG.Y.0013.230321T0900Z-230321T1800Z/</value>
+</cap:parameter>
+</entry>
 <entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=AK12663D197ED0.WinterStormWarning.12663D1AF120AK.AFGWSWWCZ.9efe7a334a2cfab903dd9c4c04945b8f</id>
 <updated>2023-03-20T20:52:00-08:00</updated>
@@ -3475,38 +3507,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=CA12663CFCCC54.AirQualityAlert.12663D19DFB0CA.PSRAQAPSR.6996ecc6b5c0c1732ec75addee943d16</id>
-<updated>2023-03-19T09:45:00-07:00</updated>
-<published>2023-03-19T09:45:00-07:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Air Quality Alert issued March 19 at 9:45AM PDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CA12663CFCCC54.AirQualityAlert.12663D19DFB0CA.PSRAQAPSR.6996ecc6b5c0c1732ec75addee943d16"/>
-<summary>...AIR QUALITY ALERT DUE TO ELEVATED PARTICULATE MATTER LEVELS FROM WINDBLOWN DUST... The Imperial County APCD has issued an air quality alert due to increased particulate matter from blowing dust. The air quality alert is in effect Monday, March 20, 2023 from the late morning until the evening.</summary>
-<cap:event>Air Quality Alert</cap:event>
-<cap:effective>2023-03-19T09:45:00-07:00</cap:effective>
-<cap:expires>2023-03-21T00:00:00-07:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Unknown</cap:urgency>
-<cap:severity>Unknown</cap:severity>
-<cap:certainty>Unknown</cap:certainty>
-<cap:areaDesc>Imperial County Southwest; Imperial County West; Imperial Valley</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>006025</value>
-<valueName>UGC</valueName>
-<value>CAZ562 CAZ566 CAZ567</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value></value>
-</cap:parameter>
-</entry>
-<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=CO12663D197E08.WinterWeatherAdvisory.12663D1B8D60CO.PUBWSWPUB.44f67d99eef5cadf66d406ebe778bf9c</id>
 <updated>2023-03-20T22:50:00-06:00</updated>
 <published>2023-03-20T22:50:00-06:00</published>
@@ -4515,6 +4515,102 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=GA12663D19CEE4.SpecialWeatherStatement.12663D281C38GA.FFCSPSFFC.24d5df3a79c9c8fd12114e45eda31c78</id>
+<updated>2023-03-21T02:57:00-04:00</updated>
+<published>2023-03-21T02:57:00-04:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Special Weather Statement issued March 21 at 2:57AM EDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=GA12663D19CEE4.SpecialWeatherStatement.12663D281C38GA.FFCSPSFFC.24d5df3a79c9c8fd12114e45eda31c78"/>
+<summary>...HIGH FIRE DANGER CONDITIONS THIS AFTERNOON INTO THE EVENING FOR ALL OF NORTH AND CENTRAL GEORGIA DUE TO LOW RELATIVE HUMIDITIES... Relative Humidities of 25 percent or less can be expected for 4 or more hours his afternoon into the evening. Winds will be easterly at 5 to 10 MPH.</summary>
+<cap:event>Special Weather Statement</cap:event>
+<cap:effective>2023-03-21T02:57:00-04:00</cap:effective>
+<cap:expires>2023-03-21T20:30:00-04:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Observed</cap:certainty>
+<cap:areaDesc>Baldwin; Banks; Barrow; Bartow; Bibb; Bleckley; Butts; Carroll; Catoosa; Chattahoochee; Chattooga; Cherokee; Clarke; Clayton; Cobb; Coweta; Crawford; Crisp; Dade; Dawson; DeKalb; Dodge; Dooly; Douglas; Emanuel; Fannin; Fayette; Floyd; Forsyth; Gilmer; Glascock; Gordon; Greene; Gwinnett; Hall; Hancock; Haralson; Harris; Heard; Henry; Houston; Jackson; Jasper; Jefferson; Johnson; Jones; Lamar; Laurens; Lumpkin; Macon; Madison; Marion; Meriwether; Monroe; Montgomery; Morgan; Murray; Muscogee; Newton; North Fulton; Oconee; Oglethorpe; Paulding; Peach; Pickens; Pike; Polk; Pulaski; Putnam; Rockdale; Schley; South Fulton; Spalding; Stewart; Sumter; Talbot; Taliaferro; Taylor; Telfair; Toombs; Towns; Treutlen; Troup; Twiggs; Union; Upson; Walker; Walton; Warren; Washington; Webster; Wheeler; White; Whitfield; Wilcox; Wilkes; Wilkinson</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>013009 013011 013013 013015 013021 013023 013035 013045 013047 013053 013055 013057 013059 013063 013067 013077 013079 013081 013083 013085 013089 013091 013093 013097 013107 013111 013113 013115 013117 013121 013123 013125 013129 013133 013135 013139 013141 013143 013145 013149 013151 013153 013157 013159 013163 013167 013169 013171 013175 013187 013193 013195 013197 013199 013207 013209 013211 013213 013215 013217 013219 013221 013223 013225 013227 013231 013233 013235 013237 013247 013249 013255 013259 013261 013263 013265 013269 013271 013279 013281 013283 013285 013289 013291 013293 013295 013297 013301 013303 013307 013309 013311 013313 013315 013317 013319</value>
+<valueName>UGC</valueName>
+<value>GAZ001 GAZ002 GAZ003 GAZ004 GAZ005 GAZ006 GAZ007 GAZ008 GAZ009 GAZ011 GAZ012 GAZ013 GAZ014 GAZ015 GAZ016 GAZ019 GAZ020 GAZ021 GAZ022 GAZ023 GAZ024 GAZ025 GAZ027 GAZ030 GAZ031 GAZ032 GAZ033 GAZ034 GAZ035 GAZ036 GAZ037 GAZ038 GAZ039 GAZ041 GAZ042 GAZ043 GAZ044 GAZ045 GAZ046 GAZ047 GAZ048 GAZ049 GAZ050 GAZ051 GAZ052 GAZ053 GAZ054 GAZ055 GAZ056 GAZ057 GAZ058 GAZ059 GAZ060 GAZ061 GAZ062 GAZ066 GAZ067 GAZ068 GAZ069 GAZ070 GAZ071 GAZ072 GAZ073 GAZ074 GAZ075 GAZ076 GAZ078 GAZ079 GAZ080 GAZ081 GAZ082 GAZ083 GAZ084 GAZ085 GAZ086 GAZ089 GAZ090 GAZ091 GAZ092 GAZ093 GAZ094 GAZ095 GAZ096 GAZ097 GAZ098 GAZ102 GAZ103 GAZ104 GAZ105 GAZ106 GAZ107 GAZ108 GAZ109 GAZ110 GAZ111 GAZ112 GAZ113</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value></value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=GA12663D19CA98.FrostAdvisory.12663D1ACA10GA.FFCNPWFFC.b72a768181156b1c2bb231dea7a714b3</id>
+<updated>2023-03-21T02:46:00-04:00</updated>
+<published>2023-03-21T02:46:00-04:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Frost Advisory issued March 21 at 2:46AM EDT until March 21 at 9:00AM EDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=GA12663D19CA98.FrostAdvisory.12663D1ACA10GA.FFCNPWFFC.b72a768181156b1c2bb231dea7a714b3"/>
+<summary>...FROST ADVISORY REMAINS IN EFFECT UNTIL 9 AM EDT THIS MORNING... * WHAT...Temperatures as low as 32 will result in frost formation. * WHERE...Portions of north and central Georgia. * WHEN...From 4 AM to 9 AM EDT Tuesday. * IMPACTS...Frost could kill sensitive outdoor vegetation if</summary>
+<cap:event>Frost Advisory</cap:event>
+<cap:effective>2023-03-21T02:46:00-04:00</cap:effective>
+<cap:expires>2023-03-21T09:00:00-04:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Bibb; Bleckley; Chattahoochee; Crawford; Crisp; Dodge; Dooly; Emanuel; Harris; Houston; Johnson; Laurens; Macon; Marion; Montgomery; Muscogee; Peach; Pulaski; Schley; Stewart; Sumter; Talbot; Taylor; Telfair; Toombs; Treutlen; Twiggs; Upson; Webster; Wheeler; Wilcox; Wilkinson</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>013021 013023 013053 013079 013081 013091 013093 013107 013145 013153 013167 013175 013193 013197 013209 013215 013225 013235 013249 013259 013261 013263 013269 013271 013279 013283 013289 013293 013307 013309 013315 013319</value>
+<valueName>UGC</valueName>
+<value>GAZ069 GAZ078 GAZ079 GAZ080 GAZ081 GAZ082 GAZ083 GAZ084 GAZ085 GAZ086 GAZ089 GAZ090 GAZ091 GAZ092 GAZ093 GAZ094 GAZ095 GAZ096 GAZ097 GAZ098 GAZ102 GAZ103 GAZ104 GAZ105 GAZ106 GAZ107 GAZ108 GAZ109 GAZ110 GAZ111 GAZ112 GAZ113</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KFFC.FR.Y.0001.230321T0800Z-230321T1300Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=GA12663D19CA98.FreezeWarning.12663D1AF120GA.FFCNPWFFC.1e1f6b24a4449fbb8fc52d3a63ba9841</id>
+<updated>2023-03-21T02:46:00-04:00</updated>
+<published>2023-03-21T02:46:00-04:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Freeze Warning issued March 21 at 2:46AM EDT until March 21 at 10:00AM EDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=GA12663D19CA98.FreezeWarning.12663D1AF120GA.FFCNPWFFC.1e1f6b24a4449fbb8fc52d3a63ba9841"/>
+<summary>...FREEZE WARNING REMAINS IN EFFECT UNTIL 10 AM EDT THIS MORNING... * WHAT...Sub-freezing temperatures as low as 30 expected. * WHERE...Portions of north and central Georgia. * WHEN...From 11 PM this evening to 10 AM EDT Tuesday. * IMPACTS...Frost and freeze conditions will kill crops, other</summary>
+<cap:event>Freeze Warning</cap:event>
+<cap:effective>2023-03-21T02:46:00-04:00</cap:effective>
+<cap:expires>2023-03-21T10:00:00-04:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Baldwin; Banks; Barrow; Bartow; Butts; Carroll; Catoosa; Chattooga; Cherokee; Clarke; Clayton; Cobb; Coweta; Dade; Dawson; DeKalb; Douglas; Fannin; Fayette; Floyd; Forsyth; Gilmer; Glascock; Gordon; Greene; Gwinnett; Hall; Hancock; Haralson; Heard; Henry; Jackson; Jasper; Jefferson; Jones; Lamar; Lumpkin; Madison; Meriwether; Monroe; Morgan; Murray; Newton; North Fulton; Oconee; Oglethorpe; Paulding; Pickens; Pike; Polk; Putnam; Rockdale; South Fulton; Spalding; Taliaferro; Towns; Troup; Union; Walker; Walton; Warren; Washington; White; Whitfield; Wilkes</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>013009 013011 013013 013015 013035 013045 013047 013055 013057 013059 013063 013067 013077 013083 013085 013089 013097 013111 013113 013115 013117 013121 013123 013125 013129 013133 013135 013139 013141 013143 013149 013151 013157 013159 013163 013169 013171 013187 013195 013199 013207 013211 013213 013217 013219 013221 013223 013227 013231 013233 013237 013247 013255 013265 013281 013285 013291 013295 013297 013301 013303 013311 013313 013317</value>
+<valueName>UGC</valueName>
+<value>GAZ001 GAZ002 GAZ003 GAZ004 GAZ005 GAZ006 GAZ007 GAZ008 GAZ009 GAZ011 GAZ012 GAZ013 GAZ014 GAZ015 GAZ016 GAZ019 GAZ020 GAZ021 GAZ022 GAZ023 GAZ024 GAZ025 GAZ027 GAZ030 GAZ031 GAZ032 GAZ033 GAZ034 GAZ035 GAZ036 GAZ037 GAZ038 GAZ039 GAZ041 GAZ042 GAZ043 GAZ044 GAZ045 GAZ046 GAZ047 GAZ048 GAZ049 GAZ050 GAZ051 GAZ052 GAZ053 GAZ054 GAZ055 GAZ056 GAZ057 GAZ058 GAZ059 GAZ060 GAZ061 GAZ062 GAZ066 GAZ067 GAZ068 GAZ070 GAZ071 GAZ072 GAZ073 GAZ074 GAZ075 GAZ076</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KFFC.FZ.W.0007.000000T0000Z-230321T1400Z/</value>
+</cap:parameter>
+</entry>
+<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=GA12663D19BAF8.RipCurrentStatement.12663D297010GA.JAXCFWJAX.f07dca7d0eef7378f99a78cbd1829c58</id>
 <updated>2023-03-21T02:06:00-04:00</updated>
 <published>2023-03-21T02:06:00-04:00</published>
@@ -4672,104 +4768,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value>/O.CON.KCAE.FZ.W.0006.230321T0500Z-230321T1400Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=GA12663D0C5C50.FrostAdvisory.12663D1ACA10GA.FFCNPWFFC.e766ae5689834faf14a3718e3a850a19</id>
-<updated>2023-03-20T14:44:00-04:00</updated>
-<published>2023-03-20T14:44:00-04:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Frost Advisory issued March 20 at 2:44PM EDT until March 21 at 9:00AM EDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=GA12663D0C5C50.FrostAdvisory.12663D1ACA10GA.FFCNPWFFC.e766ae5689834faf14a3718e3a850a19"/>
-<summary>...FROST ADVISORY IN EFFECT FROM 4 AM TO 9 AM EDT TUESDAY... * WHAT...Temperatures as low as 32 will result in frost formation. * WHERE...Upson, Crawford, Bibb, Twiggs and Wilkinson Counties. * WHEN...From 4 AM to 9 AM EDT Tuesday. * IMPACTS...Frost could kill sensitive outdoor vegetation if left</summary>
-<cap:event>Frost Advisory</cap:event>
-<cap:effective>2023-03-20T14:44:00-04:00</cap:effective>
-<cap:expires>2023-03-21T09:00:00-04:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Bibb; Crawford; Twiggs; Upson; Wilkinson</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>013021 013079 013289 013293 013319</value>
-<valueName>UGC</valueName>
-<value>GAZ069 GAZ081 GAZ082 GAZ083 GAZ084</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.UPG.KFFC.FZ.A.0007.230321T0300Z-230321T1400Z/
-/O.NEW.KFFC.FR.Y.0001.230321T0800Z-230321T1300Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=GA12663D0C5C50.FrostAdvisory.12663D1ACA10GA.FFCNPWFFC.205c2b0a5606ad232de0b2630608a0c0</id>
-<updated>2023-03-20T14:44:00-04:00</updated>
-<published>2023-03-20T14:44:00-04:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Frost Advisory issued March 20 at 2:44PM EDT until March 21 at 9:00AM EDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=GA12663D0C5C50.FrostAdvisory.12663D1ACA10GA.FFCNPWFFC.205c2b0a5606ad232de0b2630608a0c0"/>
-<summary>...FROST ADVISORY IN EFFECT FROM 4 AM TO 9 AM EDT TUESDAY... * WHAT...Temperatures as low as 33 will result in frost formation. * WHERE...Portions of central, east central, southeast and west central Georgia. * WHEN...From 4 AM to 9 AM EDT Tuesday.</summary>
-<cap:event>Frost Advisory</cap:event>
-<cap:effective>2023-03-20T14:44:00-04:00</cap:effective>
-<cap:expires>2023-03-21T09:00:00-04:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Bleckley; Chattahoochee; Crisp; Dodge; Dooly; Emanuel; Harris; Houston; Johnson; Laurens; Macon; Marion; Montgomery; Muscogee; Peach; Pulaski; Schley; Stewart; Sumter; Talbot; Taylor; Telfair; Toombs; Treutlen; Webster; Wheeler; Wilcox</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>013023 013053 013081 013091 013093 013107 013145 013153 013167 013175 013193 013197 013209 013215 013225 013235 013249 013259 013261 013263 013269 013271 013279 013283 013307 013309 013315</value>
-<valueName>UGC</valueName>
-<value>GAZ078 GAZ079 GAZ080 GAZ085 GAZ086 GAZ089 GAZ090 GAZ091 GAZ092 GAZ093 GAZ094 GAZ095 GAZ096 GAZ097 GAZ098 GAZ102 GAZ103 GAZ104 GAZ105 GAZ106 GAZ107 GAZ108 GAZ109 GAZ110 GAZ111 GAZ112 GAZ113</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.NEW.KFFC.FR.Y.0001.230321T0800Z-230321T1300Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=GA12663D0C5C50.FreezeWarning.12663D1AF120GA.FFCNPWFFC.1e1f6b24a4449fbb8fc52d3a63ba9841</id>
-<updated>2023-03-20T14:44:00-04:00</updated>
-<published>2023-03-20T14:44:00-04:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Freeze Warning issued March 20 at 2:44PM EDT until March 21 at 10:00AM EDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=GA12663D0C5C50.FreezeWarning.12663D1AF120GA.FFCNPWFFC.1e1f6b24a4449fbb8fc52d3a63ba9841"/>
-<summary>...FREEZE WARNING IN EFFECT FROM 11 PM THIS EVENING TO 10 AM EDT TUESDAY... * WHAT...Sub-freezing temperatures as low as 30 expected. * WHERE...Portions of central, east central, north central, northeast, northwest and west central Georgia. * WHEN...From 11 PM this evening to 10 AM EDT Tuesday.</summary>
-<cap:event>Freeze Warning</cap:event>
-<cap:effective>2023-03-20T14:44:00-04:00</cap:effective>
-<cap:expires>2023-03-21T10:00:00-04:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Baldwin; Banks; Barrow; Bartow; Butts; Carroll; Catoosa; Chattooga; Cherokee; Clarke; Clayton; Cobb; Coweta; Dade; Dawson; DeKalb; Douglas; Fannin; Fayette; Floyd; Forsyth; Gilmer; Glascock; Gordon; Greene; Gwinnett; Hall; Hancock; Haralson; Heard; Henry; Jackson; Jasper; Jefferson; Jones; Lamar; Lumpkin; Madison; Meriwether; Monroe; Morgan; Murray; Newton; North Fulton; Oconee; Oglethorpe; Paulding; Pickens; Pike; Polk; Putnam; Rockdale; South Fulton; Spalding; Taliaferro; Towns; Troup; Union; Walker; Walton; Warren; Washington; White; Whitfield; Wilkes</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>013009 013011 013013 013015 013035 013045 013047 013055 013057 013059 013063 013067 013077 013083 013085 013089 013097 013111 013113 013115 013117 013121 013123 013125 013129 013133 013135 013139 013141 013143 013149 013151 013157 013159 013163 013169 013171 013187 013195 013199 013207 013211 013213 013217 013219 013221 013223 013227 013231 013233 013237 013247 013255 013265 013281 013285 013291 013295 013297 013301 013303 013311 013313 013317</value>
-<valueName>UGC</valueName>
-<value>GAZ001 GAZ002 GAZ003 GAZ004 GAZ005 GAZ006 GAZ007 GAZ008 GAZ009 GAZ011 GAZ012 GAZ013 GAZ014 GAZ015 GAZ016 GAZ019 GAZ020 GAZ021 GAZ022 GAZ023 GAZ024 GAZ025 GAZ027 GAZ030 GAZ031 GAZ032 GAZ033 GAZ034 GAZ035 GAZ036 GAZ037 GAZ038 GAZ039 GAZ041 GAZ042 GAZ043 GAZ044 GAZ045 GAZ046 GAZ047 GAZ048 GAZ049 GAZ050 GAZ051 GAZ052 GAZ053 GAZ054 GAZ055 GAZ056 GAZ057 GAZ058 GAZ059 GAZ060 GAZ061 GAZ062 GAZ066 GAZ067 GAZ068 GAZ070 GAZ071 GAZ072 GAZ073 GAZ074 GAZ075 GAZ076</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.UPG.KFFC.FZ.A.0007.230321T0300Z-230321T1400Z/
-/O.NEW.KFFC.FZ.W.0007.230321T0300Z-230321T1400Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -5030,6 +5028,38 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=IL12663D19CFAC.HydrologicOutlook.12663D1C0290IL.PAHESFPAH.b611f231d23404ec2aaa2dbda0cd00bd</id>
+<updated>2023-03-21T01:59:00-05:00</updated>
+<published>2023-03-21T01:59:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Hydrologic Outlook issued March 21 at 1:59AM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=IL12663D19CFAC.HydrologicOutlook.12663D1C0290IL.PAHESFPAH.b611f231d23404ec2aaa2dbda0cd00bd"/>
+<summary>...Heavy Rainfall Forecast Thursday Night through Friday Evening... After some light rains wet the ground early this week, a heavier bout of rainfall will be moving in toward the end of the week. Forecast average storm total amounts will be in the 2 to 3 inch range by the time the rain chances end late Friday night. This amount of rainfall falling on top of wetted grounds may lead to</summary>
+<cap:event>Hydrologic Outlook</cap:event>
+<cap:effective>2023-03-21T01:59:00-05:00</cap:effective>
+<cap:expires>2023-03-21T16:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Future</cap:urgency>
+<cap:severity>Unknown</cap:severity>
+<cap:certainty>Possible</cap:certainty>
+<cap:areaDesc>Alexander; Edwards; Franklin; Gallatin; Hamilton; Hardin; Jackson; Jefferson; Johnson; Massac; Perry; Pope; Pulaski; Saline; Union; Wabash; Wayne; White; Williamson</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>017003 017047 017055 017059 017065 017069 017077 017081 017087 017127 017145 017151 017153 017165 017181 017185 017191 017193 017199</value>
+<valueName>UGC</valueName>
+<value>ILC003 ILC047 ILC055 ILC059 ILC065 ILC069 ILC077 ILC081 ILC087 ILC127 ILC145 ILC151 ILC153 ILC165 ILC181 ILC185 ILC191 ILC193 ILC199</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value></value>
+</cap:parameter>
+</entry>
+<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=IL12663D190040.FloodWarning.12663D55D740IL.ILXFLSILX.c3cca6e6ea8e69beba522b64fd418d35</id>
 <updated>2023-03-20T20:28:00-05:00</updated>
 <published>2023-03-20T20:28:00-05:00</published>
@@ -5096,6 +5126,38 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=IN12663D19CFAC.HydrologicOutlook.12663D1C0290IN.PAHESFPAH.cb46d0995d71617937187f8f2cd93570</id>
+<updated>2023-03-21T02:59:00-04:00</updated>
+<published>2023-03-21T02:59:00-04:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Hydrologic Outlook issued March 21 at 2:59AM EDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=IN12663D19CFAC.HydrologicOutlook.12663D1C0290IN.PAHESFPAH.cb46d0995d71617937187f8f2cd93570"/>
+<summary>...Heavy Rainfall Forecast Thursday Night through Friday Evening... After some light rains wet the ground early this week, a heavier bout of rainfall will be moving in toward the end of the week. Forecast average storm total amounts will be in the 2 to 3 inch range by the time the rain chances end late Friday night. This amount of rainfall falling on top of wetted grounds may lead to</summary>
+<cap:event>Hydrologic Outlook</cap:event>
+<cap:effective>2023-03-21T02:59:00-04:00</cap:effective>
+<cap:expires>2023-03-21T17:00:00-04:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Future</cap:urgency>
+<cap:severity>Unknown</cap:severity>
+<cap:certainty>Possible</cap:certainty>
+<cap:areaDesc>Gibson; Pike; Posey; Spencer; Vanderburgh; Warrick</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>018051 018125 018129 018147 018163 018173</value>
+<valueName>UGC</valueName>
+<value>INC051 INC125 INC129 INC147 INC163 INC173</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value></value>
+</cap:parameter>
+</entry>
+<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=IN12663D0C73C0.SpecialWeatherStatement.12663D1A7BF0IN.LMKSPSLMK.62ac46d495325b6abdb0e9a93e10a704</id>
 <updated>2023-03-20T15:04:00-04:00</updated>
 <published>2023-03-20T15:04:00-04:00</published>
@@ -5125,6 +5187,38 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value></value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=KS12663D19C584.HighWindWatch.12663D3779D0KS.DDCNPWDDC.4e5060fdee548d2f37d51bba6761f793</id>
+<updated>2023-03-21T01:33:00-05:00</updated>
+<published>2023-03-21T01:33:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>High Wind Watch issued March 21 at 1:33AM CDT until March 22 at 8:00PM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=KS12663D19C584.HighWindWatch.12663D3779D0KS.DDCNPWDDC.4e5060fdee548d2f37d51bba6761f793"/>
+<summary>...HIGH WIND WATCH REMAINS IN EFFECT FROM WEDNESDAY AFTERNOON THROUGH WEDNESDAY EVENING... * WHAT...Southwest winds 30 to 40 mph with gusts up to 50 to 60 mph possible. * WHERE...Hamilton, Kearny, Stanton, Grant, Morton and Stevens Counties.</summary>
+<cap:event>High Wind Watch</cap:event>
+<cap:effective>2023-03-21T01:33:00-05:00</cap:effective>
+<cap:expires>2023-03-22T20:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Future</cap:urgency>
+<cap:severity>Severe</cap:severity>
+<cap:certainty>Possible</cap:certainty>
+<cap:areaDesc>Grant; Hamilton; Kearny; Morton; Stanton; Stevens</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>020067 020075 020093 020129 020187 020189</value>
+<valueName>UGC</valueName>
+<value>KSZ061 KSZ062 KSZ074 KSZ075 KSZ084 KSZ085</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KDDC.HW.A.0003.230322T1800Z-230323T0100Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -5160,35 +5254,35 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=KS12663D0CAFE8.HighWindWatch.12663D3779D0KS.DDCNPWDDC.4e5060fdee548d2f37d51bba6761f793</id>
-<updated>2023-03-20T15:58:00-05:00</updated>
-<published>2023-03-20T15:58:00-05:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=KY12663D19CFAC.HydrologicOutlook.12663D1C0290KY.PAHESFPAH.68e601950095b3a97fab0b4a37d2fa8c</id>
+<updated>2023-03-21T02:59:00-04:00</updated>
+<published>2023-03-21T02:59:00-04:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>High Wind Watch issued March 20 at 3:58PM CDT until March 22 at 8:00PM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=KS12663D0CAFE8.HighWindWatch.12663D3779D0KS.DDCNPWDDC.4e5060fdee548d2f37d51bba6761f793"/>
-<summary>...HIGH WIND WATCH IN EFFECT FROM WEDNESDAY AFTERNOON THROUGH WEDNESDAY EVENING... * WHAT...Southwest winds 30 to 40 mph with gusts up to 60 mph possible. * WHERE...Hamilton, Kearny, Stanton, Grant, Morton and Stevens Counties.</summary>
-<cap:event>High Wind Watch</cap:event>
-<cap:effective>2023-03-20T15:58:00-05:00</cap:effective>
-<cap:expires>2023-03-22T20:00:00-05:00</cap:expires>
+<title>Hydrologic Outlook issued March 21 at 2:59AM EDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=KY12663D19CFAC.HydrologicOutlook.12663D1C0290KY.PAHESFPAH.68e601950095b3a97fab0b4a37d2fa8c"/>
+<summary>...Heavy Rainfall Forecast Thursday Night through Friday Evening... After some light rains wet the ground early this week, a heavier bout of rainfall will be moving in toward the end of the week. Forecast average storm total amounts will be in the 2 to 3 inch range by the time the rain chances end late Friday night. This amount of rainfall falling on top of wetted grounds may lead to</summary>
+<cap:event>Hydrologic Outlook</cap:event>
+<cap:effective>2023-03-21T02:59:00-04:00</cap:effective>
+<cap:expires>2023-03-21T17:00:00-04:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
 <cap:category>Met</cap:category>
 <cap:urgency>Future</cap:urgency>
-<cap:severity>Severe</cap:severity>
+<cap:severity>Unknown</cap:severity>
 <cap:certainty>Possible</cap:certainty>
-<cap:areaDesc>Grant; Hamilton; Kearny; Morton; Stanton; Stevens</cap:areaDesc>
+<cap:areaDesc>Ballard; Caldwell; Calloway; Carlisle; Christian; Crittenden; Daviess; Fulton; Graves; Henderson; Hickman; Hopkins; Livingston; Lyon; Marshall; McCracken; McLean; Muhlenberg; Todd; Trigg; Union; Webster</cap:areaDesc>
 <cap:polygon></cap:polygon>
 <cap:geocode>
 <valueName>FIPS6</valueName>
-<value>020067 020075 020093 020129 020187 020189</value>
+<value>021007 021033 021035 021039 021047 021055 021059 021075 021083 021101 021105 021107 021139 021143 021145 021149 021157 021177 021219 021221 021225 021233</value>
 <valueName>UGC</valueName>
-<value>KSZ061 KSZ062 KSZ074 KSZ075 KSZ084 KSZ085</value>
+<value>KYC007 KYC033 KYC035 KYC039 KYC047 KYC055 KYC059 KYC075 KYC083 KYC101 KYC105 KYC107 KYC139 KYC143 KYC145 KYC149 KYC157 KYC177 KYC219 KYC221 KYC225 KYC233</value>
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
-<value>/O.NEW.KDDC.HW.A.0003.230322T1800Z-230323T0100Z/</value>
+<value></value>
 </cap:parameter>
 </entry>
 <entry>
@@ -5582,6 +5676,38 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=MO12663D19CFAC.HydrologicOutlook.12663D1C0290MO.PAHESFPAH.4ee0f2e75804cb7666f47c65aa88eb75</id>
+<updated>2023-03-21T01:59:00-05:00</updated>
+<published>2023-03-21T01:59:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Hydrologic Outlook issued March 21 at 1:59AM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MO12663D19CFAC.HydrologicOutlook.12663D1C0290MO.PAHESFPAH.4ee0f2e75804cb7666f47c65aa88eb75"/>
+<summary>...Heavy Rainfall Forecast Thursday Night through Friday Evening... After some light rains wet the ground early this week, a heavier bout of rainfall will be moving in toward the end of the week. Forecast average storm total amounts will be in the 2 to 3 inch range by the time the rain chances end late Friday night. This amount of rainfall falling on top of wetted grounds may lead to</summary>
+<cap:event>Hydrologic Outlook</cap:event>
+<cap:effective>2023-03-21T01:59:00-05:00</cap:effective>
+<cap:expires>2023-03-21T16:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Future</cap:urgency>
+<cap:severity>Unknown</cap:severity>
+<cap:certainty>Possible</cap:certainty>
+<cap:areaDesc>Bollinger; Butler; Cape Girardeau; Carter; Mississippi; New Madrid; Perry; Ripley; Scott; Stoddard; Wayne</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>029017 029023 029031 029035 029133 029143 029157 029181 029201 029207 029223</value>
+<valueName>UGC</valueName>
+<value>MOC017 MOC023 MOC031 MOC035 MOC133 MOC143 MOC157 MOC181 MOC201 MOC207 MOC223</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value></value>
+</cap:parameter>
+</entry>
+<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=MS12663D1994B0.FreezeWarning.12663D1ACA10MS.MOBNPWMOB.c669496a24c734b82869e09779073b9e</id>
 <updated>2023-03-21T00:08:00-05:00</updated>
 <published>2023-03-21T00:08:00-05:00</published>
@@ -5744,17 +5870,17 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=MT12663D18DF70.WinterWeatherAdvisory.12663D1B8D60MT.TFXWSWTFX.27754a314bfbf248e2dfd469b7ef9825</id>
-<updated>2023-03-20T18:44:00-06:00</updated>
-<published>2023-03-20T18:44:00-06:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=MT12663D19DFB0.WinterWeatherAdvisory.12663D1B8D60MT.BYZWSWBYZ.a1d8342f49b87a6c72c8d4ef0fb3e897</id>
+<updated>2023-03-21T01:00:00-06:00</updated>
+<published>2023-03-21T01:00:00-06:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Winter Weather Advisory issued March 20 at 6:44PM MDT until March 21 at 12:00PM MDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MT12663D18DF70.WinterWeatherAdvisory.12663D1B8D60MT.TFXWSWTFX.27754a314bfbf248e2dfd469b7ef9825"/>
-<summary>...WINTER WEATHER ADVISORY IN EFFECT UNTIL NOON MDT TUESDAY... * WHAT...Snow. Total snow accumulations between 1 and 2 inches. * WHERE...Canyon Ferry Area and Helena Valley. * WHEN...Until Noon MDT Tuesday. * IMPACTS...Plan on slippery road conditions. The hazardous conditions could impact the Tuesday morning commute.</summary>
+<title>Winter Weather Advisory issued March 21 at 1:00AM MDT until March 21 at 12:00PM MDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MT12663D19DFB0.WinterWeatherAdvisory.12663D1B8D60MT.BYZWSWBYZ.a1d8342f49b87a6c72c8d4ef0fb3e897"/>
+<summary>...WINTER WEATHER ADVISORY IN EFFECT UNTIL NOON MDT TODAY... * WHAT...Snow expected. Total snow accumulations between 2 and 4 inches. Winds gusting as high as 30 mph. * WHERE...In Montana, Southern Big Horn, Carter, Powder River, and Southern Rosebud. In Wyoming, Sheridan Foothills. * WHEN...Until Noon MDT today.</summary>
 <cap:event>Winter Weather Advisory</cap:event>
-<cap:effective>2023-03-20T18:44:00-06:00</cap:effective>
+<cap:effective>2023-03-21T01:00:00-06:00</cap:effective>
 <cap:expires>2023-03-21T12:00:00-06:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
@@ -5762,31 +5888,31 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:urgency>Expected</cap:urgency>
 <cap:severity>Minor</cap:severity>
 <cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Canyon Ferry Area; Helena Valley</cap:areaDesc>
+<cap:areaDesc>Carter; Powder River; Southern Big Horn; Southern Rosebud</cap:areaDesc>
 <cap:polygon></cap:polygon>
 <cap:geocode>
 <valueName>FIPS6</valueName>
-<value>030007 030049</value>
+<value>030003 030011 030075 030087</value>
 <valueName>UGC</valueName>
-<value>MTZ319 MTZ323</value>
+<value>MTZ036 MTZ037 MTZ058 MTZ138</value>
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
-<value>/O.EXA.KTFX.WW.Y.0034.000000T0000Z-230321T1800Z/</value>
+<value>/O.EXA.KBYZ.WW.Y.0020.000000T0000Z-230321T1800Z/</value>
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=MT12663D18DF70.WinterWeatherAdvisory.12663D1B8D60MT.TFXWSWTFX.bea936d2bdfdf70836b717d557d294ed</id>
-<updated>2023-03-20T18:44:00-06:00</updated>
-<published>2023-03-20T18:44:00-06:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=MT12663D19DFB0.WinterWeatherAdvisory.12663D1B8D60MT.BYZWSWBYZ.ddfc3edd958b9a6be080f2c5e5512885</id>
+<updated>2023-03-21T01:00:00-06:00</updated>
+<published>2023-03-21T01:00:00-06:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Winter Weather Advisory issued March 20 at 6:44PM MDT until March 21 at 12:00PM MDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MT12663D18DF70.WinterWeatherAdvisory.12663D1B8D60MT.TFXWSWTFX.bea936d2bdfdf70836b717d557d294ed"/>
-<summary>...WINTER WEATHER ADVISORY REMAINS IN EFFECT UNTIL NOON MDT TUESDAY... * WHAT...Snow. Additional snow accumulations between 1 and 4 inches. * WHERE...The Interstate 90 Corridor between Bozeman and Whitehall, and The Madison and Beaverhead River Valleys. * WHEN...Until Noon MDT Tuesday.</summary>
+<title>Winter Weather Advisory issued March 21 at 1:00AM MDT until March 21 at 12:00PM MDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MT12663D19DFB0.WinterWeatherAdvisory.12663D1B8D60MT.BYZWSWBYZ.ddfc3edd958b9a6be080f2c5e5512885"/>
+<summary>...WINTER WEATHER ADVISORY REMAINS IN EFFECT UNTIL NOON MDT TODAY... * WHAT...Periods of snow. Total snow accumulations between 1 and 3 inches. * WHERE...A portion of south central Montana. * WHEN...Until Noon MDT today. * IMPACTS...Plan on slippery road conditions and reduced visibility</summary>
 <cap:event>Winter Weather Advisory</cap:event>
-<cap:effective>2023-03-20T18:44:00-06:00</cap:effective>
+<cap:effective>2023-03-21T01:00:00-06:00</cap:effective>
 <cap:expires>2023-03-21T12:00:00-06:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
@@ -5794,13 +5920,45 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:urgency>Expected</cap:urgency>
 <cap:severity>Minor</cap:severity>
 <cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Beaverhead and Western Madison below 6000ft; Gallatin Valley; Madison River Valley; Missouri Headwaters</cap:areaDesc>
+<cap:areaDesc>Beartooth Foothills; Livingston Area; Melville Foothills; Northern Park; Northern Sweet Grass; Paradise Valley</cap:areaDesc>
 <cap:polygon></cap:polygon>
 <cap:geocode>
 <valueName>FIPS6</valueName>
-<value>030001 030031 030043 030057</value>
+<value>030067 030095 030097 030107</value>
 <valueName>UGC</valueName>
-<value>MTZ324 MTZ325 MTZ326 MTZ328</value>
+<value>MTZ040 MTZ064 MTZ065 MTZ066 MTZ141 MTZ172</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KBYZ.WW.Y.0020.000000T0000Z-230321T1800Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=MT12663D19CC28.WinterWeatherAdvisory.12663D1B8D60MT.TFXWSWTFX.f4e9862780fe04f8ebd573a005f43ae5</id>
+<updated>2023-03-21T00:50:00-06:00</updated>
+<published>2023-03-21T00:50:00-06:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Winter Weather Advisory issued March 21 at 12:50AM MDT until March 21 at 12:00PM MDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MT12663D19CC28.WinterWeatherAdvisory.12663D1B8D60MT.TFXWSWTFX.f4e9862780fe04f8ebd573a005f43ae5"/>
+<summary>...WINTER WEATHER ADVISORY REMAINS IN EFFECT UNTIL NOON MDT TODAY... * WHAT...Snow. Total snow accumulations between 1 and 2 inches. * WHERE...Portions of central and southwest Montana. * WHEN...Until Noon MDT today. * IMPACTS...Plan on slippery road conditions. The hazardous conditions could impact the Tuesday morning commute.</summary>
+<cap:event>Winter Weather Advisory</cap:event>
+<cap:effective>2023-03-21T00:50:00-06:00</cap:effective>
+<cap:expires>2023-03-21T12:00:00-06:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Beaverhead and Western Madison below 6000ft; Canyon Ferry Area; Gallatin Valley; Helena Valley; Madison River Valley; Missouri Headwaters</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>030001 030007 030031 030043 030049 030057</value>
+<valueName>UGC</valueName>
+<value>MTZ319 MTZ323 MTZ324 MTZ325 MTZ326 MTZ328</value>
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
@@ -5808,17 +5966,17 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=MT12663D18DF70.WinterWeatherAdvisory.12663D281080MT.TFXWSWTFX.62063e04ff12f3c9b66fffb81ba91137</id>
-<updated>2023-03-20T18:44:00-06:00</updated>
-<published>2023-03-20T18:44:00-06:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=MT12663D19CC28.WinterWeatherAdvisory.12663D281080MT.TFXWSWTFX.6fdbac2cbf419942c9ec100725bd1d4c</id>
+<updated>2023-03-21T00:50:00-06:00</updated>
+<published>2023-03-21T00:50:00-06:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Winter Weather Advisory issued March 20 at 6:44PM MDT until March 21 at 6:00PM MDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MT12663D18DF70.WinterWeatherAdvisory.12663D281080MT.TFXWSWTFX.62063e04ff12f3c9b66fffb81ba91137"/>
-<summary>...WINTER WEATHER ADVISORY IN EFFECT UNTIL 6 PM MDT TUESDAY... * WHAT...Snow. Additional snow accumulations between 1 and 3 inches. * WHERE...Upper Blackfoot and MacDonald Pass. * WHEN...Until 6 PM MDT Tuesday. * IMPACTS...Roads, and especially bridges and overpasses, will likely become slick and hazardous.</summary>
+<title>Winter Weather Advisory issued March 21 at 12:50AM MDT until March 21 at 6:00PM MDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MT12663D19CC28.WinterWeatherAdvisory.12663D281080MT.TFXWSWTFX.6fdbac2cbf419942c9ec100725bd1d4c"/>
+<summary>...WINTER WEATHER ADVISORY REMAINS IN EFFECT UNTIL 6 PM MDT THIS EVENING... * WHAT...Snow. Additional snow accumulations between 1 and 3 inches. * WHERE...Big Belt, Bridger and Castle Mountains, Elkhorn and Boulder Mountains, Little Belt and Highwood Mountains and Upper Blackfoot and MacDonald Pass.</summary>
 <cap:event>Winter Weather Advisory</cap:event>
-<cap:effective>2023-03-20T18:44:00-06:00</cap:effective>
+<cap:effective>2023-03-21T00:50:00-06:00</cap:effective>
 <cap:expires>2023-03-21T18:00:00-06:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
@@ -5826,45 +5984,13 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:urgency>Expected</cap:urgency>
 <cap:severity>Minor</cap:severity>
 <cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Upper Blackfoot and MacDonald Pass</cap:areaDesc>
+<cap:areaDesc>Big Belt, Bridger and Castle Mountains; Elkhorn and Boulder Mountains; Little Belt and Highwood Mountains; Upper Blackfoot and MacDonald Pass</cap:areaDesc>
 <cap:polygon></cap:polygon>
 <cap:geocode>
 <valueName>FIPS6</valueName>
-<value>030049</value>
+<value>030007 030013 030031 030043 030045 030049 030059</value>
 <valueName>UGC</valueName>
-<value>MTZ315</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.EXA.KTFX.WW.Y.0034.000000T0000Z-230322T0000Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=MT12663D18DF70.WinterWeatherAdvisory.12663D281080MT.TFXWSWTFX.1e8511676fd9dcdce1bf1d98d5a83cf8</id>
-<updated>2023-03-20T18:44:00-06:00</updated>
-<published>2023-03-20T18:44:00-06:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Winter Weather Advisory issued March 20 at 6:44PM MDT until March 21 at 6:00PM MDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MT12663D18DF70.WinterWeatherAdvisory.12663D281080MT.TFXWSWTFX.1e8511676fd9dcdce1bf1d98d5a83cf8"/>
-<summary>...WINTER WEATHER ADVISORY REMAINS IN EFFECT UNTIL 6 PM MDT TUESDAY... * WHAT...Snow. Additional snow accumulations between 1 and 3 inches. * WHERE...Big Belt, Bridger and Castle Mountains, Elkhorn and Boulder Mountains and Little Belt and Highwood Mountains. * WHEN...Until 6 PM MDT Tuesday.</summary>
-<cap:event>Winter Weather Advisory</cap:event>
-<cap:effective>2023-03-20T18:44:00-06:00</cap:effective>
-<cap:expires>2023-03-21T18:00:00-06:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Big Belt, Bridger and Castle Mountains; Elkhorn and Boulder Mountains; Little Belt and Highwood Mountains</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>030007 030013 030031 030043 030045 030059</value>
-<valueName>UGC</valueName>
-<value>MTZ317 MTZ320 MTZ322</value>
+<value>MTZ315 MTZ317 MTZ320 MTZ322</value>
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
@@ -5872,17 +5998,17 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=MT12663D18DF70.WinterWeatherAdvisory.12663D281080MT.TFXWSWTFX.3d2ba50b184998284285963ed4e22a23</id>
-<updated>2023-03-20T18:44:00-06:00</updated>
-<published>2023-03-20T18:44:00-06:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=MT12663D19CC28.WinterWeatherAdvisory.12663D281080MT.TFXWSWTFX.3d2ba50b184998284285963ed4e22a23</id>
+<updated>2023-03-21T00:50:00-06:00</updated>
+<published>2023-03-21T00:50:00-06:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Winter Weather Advisory issued March 20 at 6:44PM MDT until March 21 at 6:00PM MDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MT12663D18DF70.WinterWeatherAdvisory.12663D281080MT.TFXWSWTFX.3d2ba50b184998284285963ed4e22a23"/>
-<summary>...WINTER WEATHER ADVISORY REMAINS IN EFFECT UNTIL 6 PM MDT TUESDAY... * WHAT...Snow. Additional snow accumulations between 2 and 4 inches, with an additional 8 inches possible in the mountains. * WHERE...The Mountains of Southwestern Montana south of Interstate 90.</summary>
+<title>Winter Weather Advisory issued March 21 at 12:50AM MDT until March 21 at 6:00PM MDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MT12663D19CC28.WinterWeatherAdvisory.12663D281080MT.TFXWSWTFX.3d2ba50b184998284285963ed4e22a23"/>
+<summary>...WINTER WEATHER ADVISORY REMAINS IN EFFECT UNTIL 6 PM MDT THIS EVENING... * WHAT...Snow. Additional snow accumulations between 1 and 3 inches, with an additional 8 inches possible in the mountains. * WHERE...The Mountains of Southwestern Montana south of Interstate 90.</summary>
 <cap:event>Winter Weather Advisory</cap:event>
-<cap:effective>2023-03-20T18:44:00-06:00</cap:effective>
+<cap:effective>2023-03-21T00:50:00-06:00</cap:effective>
 <cap:expires>2023-03-21T18:00:00-06:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
@@ -5901,38 +6027,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value>/O.CON.KTFX.WW.Y.0034.000000T0000Z-230322T0000Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=MT12663D0CAB38.WinterWeatherAdvisory.12663D1B8D60MT.BYZWSWBYZ.ddfc3edd958b9a6be080f2c5e5512885</id>
-<updated>2023-03-20T14:46:00-06:00</updated>
-<published>2023-03-20T14:46:00-06:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Winter Weather Advisory issued March 20 at 2:46PM MDT until March 21 at 12:00PM MDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MT12663D0CAB38.WinterWeatherAdvisory.12663D1B8D60MT.BYZWSWBYZ.ddfc3edd958b9a6be080f2c5e5512885"/>
-<summary>...WINTER WEATHER ADVISORY IN EFFECT UNTIL NOON MDT TUESDAY... * WHAT...Periods of snow expected. Total snow accumulations between 1 and 3 inches. * WHERE...A portion of south central Montana. * WHEN...Until Noon MDT Tuesday. * IMPACTS...Plan on slippery road conditions and reduced visibility</summary>
-<cap:event>Winter Weather Advisory</cap:event>
-<cap:effective>2023-03-20T14:46:00-06:00</cap:effective>
-<cap:expires>2023-03-21T12:00:00-06:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Beartooth Foothills; Livingston Area; Melville Foothills; Northern Park; Northern Sweet Grass; Paradise Valley</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>030067 030095 030097 030107</value>
-<valueName>UGC</valueName>
-<value>MTZ040 MTZ064 MTZ065 MTZ066 MTZ141 MTZ172</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.NEW.KBYZ.WW.Y.0020.230320T2300Z-230321T1800Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -6384,6 +6478,70 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=NM12663D19CAFC.WindAdvisory.12663D281080NM.MAFNPWMAF.410ff87dd0509b37426619ca9a3424f4</id>
+<updated>2023-03-21T00:47:00-06:00</updated>
+<published>2023-03-21T00:47:00-06:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Wind Advisory issued March 21 at 12:47AM MDT until March 21 at 6:00PM MDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=NM12663D19CAFC.WindAdvisory.12663D281080NM.MAFNPWMAF.410ff87dd0509b37426619ca9a3424f4"/>
+<summary>...WIND ADVISORY REMAINS IN EFFECT FROM 1 PM CDT /NOON MDT/ THIS AFTERNOON TO 7 PM CDT /6 PM MDT/ THIS EVENING... * WHAT...Southwest winds 25 to 35 mph with gusts up to 50 mph expected. * WHERE...Southeast New Mexico Plains, and Eastern Culberson. * WHEN...From 1 PM CDT /noon MDT/ this afternoon to 7 PM CDT /6</summary>
+<cap:event>Wind Advisory</cap:event>
+<cap:effective>2023-03-21T00:47:00-06:00</cap:effective>
+<cap:expires>2023-03-21T18:00:00-06:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Central Lea County; Eddy County Plains; Northern Lea County; Southern Lea County</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>035015 035025</value>
+<valueName>UGC</valueName>
+<value>NMZ028 NMZ029 NMZ033 NMZ034</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KMAF.WI.Y.0020.230321T1800Z-230322T0000Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=NM12663D19CAFC.HighWindWarning.12663D2885B0NM.MAFNPWMAF.7912d82b5cbbe618c79ab8849d902496</id>
+<updated>2023-03-21T00:47:00-06:00</updated>
+<published>2023-03-21T00:47:00-06:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>High Wind Warning issued March 21 at 12:47AM MDT until March 21 at 9:00PM MDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=NM12663D19CAFC.HighWindWarning.12663D2885B0NM.MAFNPWMAF.7912d82b5cbbe618c79ab8849d902496"/>
+<summary>...HIGH WIND WARNING REMAINS IN EFFECT UNTIL 10 PM CDT /9 PM MDT/ THIS EVENING... * WHAT...West winds 35 to 50 mph with gusts up to 70 mph. * WHERE...Guadalupe and Delaware Mountains. * WHEN...Until 10 PM CDT /9 PM MDT/ this evening. * IMPACTS...Severe turbulence near the mountains will be</summary>
+<cap:event>High Wind Warning</cap:event>
+<cap:effective>2023-03-21T00:47:00-06:00</cap:effective>
+<cap:expires>2023-03-21T21:00:00-06:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Severe</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Guadalupe Mountains of Eddy County</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>035015</value>
+<valueName>UGC</valueName>
+<value>NMZ027</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KMAF.HW.W.0015.000000T0000Z-230322T0300Z/</value>
+</cap:parameter>
+</entry>
+<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=NM12663D19449C.WindAdvisory.12663D1AA300NM.EPZNPWEPZ.784ec1adf3e51fce7cd57df47291f7d8</id>
 <updated>2023-03-20T21:03:00-06:00</updated>
 <published>2023-03-20T21:03:00-06:00</published>
@@ -6480,67 +6638,69 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=NM12663D0C72F8.WindAdvisory.12663D281080NM.MAFNPWMAF.410ff87dd0509b37426619ca9a3424f4</id>
-<updated>2023-03-20T13:02:00-06:00</updated>
-<published>2023-03-20T13:02:00-06:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=NV12663D19C7DC.FloodWatch.12663D2ACFA0NV.LKNFFALKN.3140adbf2b513951f366b122eabe7b9a</id>
+<updated>2023-03-20T23:39:00-07:00</updated>
+<published>2023-03-20T23:39:00-07:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Wind Advisory issued March 20 at 1:02PM MDT until March 21 at 6:00PM MDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=NM12663D0C72F8.WindAdvisory.12663D281080NM.MAFNPWMAF.410ff87dd0509b37426619ca9a3424f4"/>
-<summary>...WIND ADVISORY IN EFFECT FROM 1 PM CDT /NOON MDT/ TO 7 PM CDT /6 PM MDT/ TUESDAY... * WHAT...Southwest winds 25 to 35 mph with gusts up to 50 mph expected. * WHERE...Southeast New Mexico Plains, and Eastern Culberson. * WHEN...From 1 PM CDT /noon MDT/ to 7 PM CDT /6 PM MDT/ Tuesday.</summary>
-<cap:event>Wind Advisory</cap:event>
-<cap:effective>2023-03-20T13:02:00-06:00</cap:effective>
-<cap:expires>2023-03-21T18:00:00-06:00</cap:expires>
+<title>Flood Watch issued March 20 at 11:39PM PDT until March 22 at 11:00AM PDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=NV12663D19C7DC.FloodWatch.12663D2ACFA0NV.LKNFFALKN.3140adbf2b513951f366b122eabe7b9a"/>
+<summary>...FLOOD WATCH REMAINS IN EFFECT THROUGH WEDNESDAY AFTERNOON... * WHAT...Flooding caused by rain and snowmelt continues to be possible. * WHERE...Portions of eastern Nevada, north central Nevada and south central Nevada, including the following areas, in eastern Nevada, White Pine County. In north central Nevada, Southern Lander County</summary>
+<cap:event>Flood Watch</cap:event>
+<cap:effective>2023-03-20T23:39:00-07:00</cap:effective>
+<cap:expires>2023-03-22T11:00:00-07:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
 <cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Central Lea County; Eddy County Plains; Northern Lea County; Southern Lea County</cap:areaDesc>
+<cap:urgency>Future</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Possible</cap:certainty>
+<cap:areaDesc>Northeastern Nye County; Northwestern Nye County; Southern Lander County and Southern Eureka County</cap:areaDesc>
 <cap:polygon></cap:polygon>
 <cap:geocode>
 <valueName>FIPS6</valueName>
-<value>035015 035025</value>
+<value>032011 032015 032023</value>
 <valueName>UGC</valueName>
-<value>NMZ028 NMZ029 NMZ033 NMZ034</value>
+<value>NVZ037 NVZ040 NVZ041</value>
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
-<value>/O.NEW.KMAF.WI.Y.0020.230321T1800Z-230322T0000Z/</value>
+<value>/O.CON.KLKN.FA.A.0003.000000T0000Z-230322T2300Z/
+/00000.0.RS.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=NM12663D0C72F8.HighWindWarning.12663D2885B0NM.MAFNPWMAF.7912d82b5cbbe618c79ab8849d902496</id>
-<updated>2023-03-20T13:02:00-06:00</updated>
-<published>2023-03-20T13:02:00-06:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=NV12663D19C7DC.FloodWatch.12663D3752C0NV.LKNFFALKN.122b97f09aae075f9b7e14b625d7c64d</id>
+<updated>2023-03-20T23:39:00-07:00</updated>
+<published>2023-03-20T23:39:00-07:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>High Wind Warning issued March 20 at 1:02PM MDT until March 21 at 9:00PM MDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=NM12663D0C72F8.HighWindWarning.12663D2885B0NM.MAFNPWMAF.7912d82b5cbbe618c79ab8849d902496"/>
-<summary>...HIGH WIND WARNING REMAINS IN EFFECT FROM 1 AM CDT /MIDNIGHT MDT/ TO 10 PM CDT /9 PM MDT/ TUESDAY... * WHAT...West winds 35 to 45 mph with gusts up to 70 mph expected. * WHERE...Guadalupe and Delaware Mountains. * WHEN...From late Monday night through Tuesday evening.</summary>
-<cap:event>High Wind Warning</cap:event>
-<cap:effective>2023-03-20T13:02:00-06:00</cap:effective>
-<cap:expires>2023-03-21T21:00:00-06:00</cap:expires>
+<title>Flood Watch issued March 20 at 11:39PM PDT until March 22 at 5:00PM PDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=NV12663D19C7DC.FloodWatch.12663D3752C0NV.LKNFFALKN.122b97f09aae075f9b7e14b625d7c64d"/>
+<summary>...FLOOD WATCH REMAINS IN EFFECT THROUGH WEDNESDAY AFTERNOON... * WHAT...Flooding caused by rain and snowmelt continues to be possible. * WHERE...Portions of eastern Nevada, north central Nevada and south central Nevada, including the following areas, in eastern Nevada, White Pine County. In north central Nevada, Southern Lander County</summary>
+<cap:event>Flood Watch</cap:event>
+<cap:effective>2023-03-20T23:39:00-07:00</cap:effective>
+<cap:expires>2023-03-22T17:00:00-07:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
 <cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Severe</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Guadalupe Mountains of Eddy County</cap:areaDesc>
+<cap:urgency>Future</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Possible</cap:certainty>
+<cap:areaDesc>White Pine County</cap:areaDesc>
 <cap:polygon></cap:polygon>
 <cap:geocode>
 <valueName>FIPS6</valueName>
-<value>035015</value>
+<value>032033</value>
 <valueName>UGC</valueName>
-<value>NMZ027</value>
+<value>NVZ035</value>
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
-<value>/O.CON.KMAF.HW.W.0015.230321T0600Z-230322T0300Z/</value>
+<value>/O.CON.KLKN.FA.A.0003.000000T0000Z-230322T2300Z/
+/00000.0.RS.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -6736,72 +6896,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <value>/O.UPG.KLKN.WS.A.0003.230321T1200Z-230323T0000Z/
 /O.NEW.KLKN.WS.W.0005.230321T1800Z-230323T0000Z/
 /O.CON.KLKN.WW.Y.0017.000000T0000Z-230321T0000Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=NV12663D0CC820.FloodWatch.12663D2ACFA0NV.LKNFFALKN.3140adbf2b513951f366b122eabe7b9a</id>
-<updated>2023-03-20T14:20:00-07:00</updated>
-<published>2023-03-20T14:20:00-07:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Flood Watch issued March 20 at 2:20PM PDT until March 22 at 11:00AM PDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=NV12663D0CC820.FloodWatch.12663D2ACFA0NV.LKNFFALKN.3140adbf2b513951f366b122eabe7b9a"/>
-<summary>...FLOOD WATCH REMAINS IN EFFECT THROUGH WEDNESDAY AFTERNOON... * WHAT...Flooding caused by rain and snowmelt continues to be possible. * WHERE...Portions of eastern Nevada, north central Nevada and south central Nevada, including the following areas, in eastern Nevada, White Pine County. In north central Nevada, Southern Lander County</summary>
-<cap:event>Flood Watch</cap:event>
-<cap:effective>2023-03-20T14:20:00-07:00</cap:effective>
-<cap:expires>2023-03-22T11:00:00-07:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Future</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Possible</cap:certainty>
-<cap:areaDesc>Northeastern Nye County; Northwestern Nye County; Southern Lander County and Southern Eureka County</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>032011 032015 032023</value>
-<valueName>UGC</valueName>
-<value>NVZ037 NVZ040 NVZ041</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KLKN.FA.A.0003.000000T0000Z-230322T2300Z/
-/00000.0.RS.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=NV12663D0CC820.FloodWatch.12663D3752C0NV.LKNFFALKN.122b97f09aae075f9b7e14b625d7c64d</id>
-<updated>2023-03-20T14:20:00-07:00</updated>
-<published>2023-03-20T14:20:00-07:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Flood Watch issued March 20 at 2:20PM PDT until March 22 at 5:00PM PDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=NV12663D0CC820.FloodWatch.12663D3752C0NV.LKNFFALKN.122b97f09aae075f9b7e14b625d7c64d"/>
-<summary>...FLOOD WATCH REMAINS IN EFFECT THROUGH WEDNESDAY AFTERNOON... * WHAT...Flooding caused by rain and snowmelt continues to be possible. * WHERE...Portions of eastern Nevada, north central Nevada and south central Nevada, including the following areas, in eastern Nevada, White Pine County. In north central Nevada, Southern Lander County</summary>
-<cap:event>Flood Watch</cap:event>
-<cap:effective>2023-03-20T14:20:00-07:00</cap:effective>
-<cap:expires>2023-03-22T17:00:00-07:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Future</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Possible</cap:certainty>
-<cap:areaDesc>White Pine County</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>032033</value>
-<valueName>UGC</valueName>
-<value>NVZ035</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KLKN.FA.A.0003.000000T0000Z-230322T2300Z/
-/00000.0.RS.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -7545,6 +7639,70 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=TX12663D19CAFC.WindAdvisory.12663D281080TX.MAFNPWMAF.7ebb6937f64c0645a524b3696888ff2b</id>
+<updated>2023-03-21T01:47:00-05:00</updated>
+<published>2023-03-21T01:47:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Wind Advisory issued March 21 at 1:47AM CDT until March 21 at 7:00PM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=TX12663D19CAFC.WindAdvisory.12663D281080TX.MAFNPWMAF.7ebb6937f64c0645a524b3696888ff2b"/>
+<summary>...WIND ADVISORY REMAINS IN EFFECT FROM 1 PM CDT /NOON MDT/ THIS AFTERNOON TO 7 PM CDT /6 PM MDT/ THIS EVENING... * WHAT...Southwest winds 25 to 35 mph with gusts up to 50 mph expected. * WHERE...Southeast New Mexico Plains, and Eastern Culberson. * WHEN...From 1 PM CDT /noon MDT/ this afternoon to 7 PM CDT /6</summary>
+<cap:event>Wind Advisory</cap:event>
+<cap:effective>2023-03-21T01:47:00-05:00</cap:effective>
+<cap:expires>2023-03-21T19:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Eastern Culberson County</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>048109</value>
+<valueName>UGC</valueName>
+<value>TXZ273</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KMAF.WI.Y.0020.230321T1800Z-230322T0000Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=TX12663D19CAFC.HighWindWarning.12663D2885B0TX.MAFNPWMAF.a6afb97e44bc3ab7a68d747f4207f9ab</id>
+<updated>2023-03-21T01:47:00-05:00</updated>
+<published>2023-03-21T01:47:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>High Wind Warning issued March 21 at 1:47AM CDT until March 21 at 10:00PM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=TX12663D19CAFC.HighWindWarning.12663D2885B0TX.MAFNPWMAF.a6afb97e44bc3ab7a68d747f4207f9ab"/>
+<summary>...HIGH WIND WARNING REMAINS IN EFFECT UNTIL 10 PM CDT /9 PM MDT/ THIS EVENING... * WHAT...West winds 35 to 50 mph with gusts up to 70 mph. * WHERE...Guadalupe and Delaware Mountains. * WHEN...Until 10 PM CDT /9 PM MDT/ this evening. * IMPACTS...Severe turbulence near the mountains will be</summary>
+<cap:event>High Wind Warning</cap:event>
+<cap:effective>2023-03-21T01:47:00-05:00</cap:effective>
+<cap:expires>2023-03-21T22:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Severe</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Guadalupe Mountains Above 7000 Feet; Guadalupe and Delaware Mountains</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>048109</value>
+<valueName>UGC</valueName>
+<value>TXZ270 TXZ271</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KMAF.HW.W.0015.000000T0000Z-230322T0300Z/</value>
+</cap:parameter>
+</entry>
+<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=TX12663D190680.FloodWarning.12663D284924TX.LCHFLSLCH.5189d5a42ba48cf4a8dfa6f18713a80f</id>
 <updated>2023-03-20T20:44:00-05:00</updated>
 <published>2023-03-20T20:44:00-05:00</published>
@@ -7705,70 +7863,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value>/O.NEW.KAMA.HW.A.0005.230322T1800Z-230323T0100Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=TX12663D0C72F8.WindAdvisory.12663D281080TX.MAFNPWMAF.7ebb6937f64c0645a524b3696888ff2b</id>
-<updated>2023-03-20T14:02:00-05:00</updated>
-<published>2023-03-20T14:02:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Wind Advisory issued March 20 at 2:02PM CDT until March 21 at 7:00PM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=TX12663D0C72F8.WindAdvisory.12663D281080TX.MAFNPWMAF.7ebb6937f64c0645a524b3696888ff2b"/>
-<summary>...WIND ADVISORY IN EFFECT FROM 1 PM CDT /NOON MDT/ TO 7 PM CDT /6 PM MDT/ TUESDAY... * WHAT...Southwest winds 25 to 35 mph with gusts up to 50 mph expected. * WHERE...Southeast New Mexico Plains, and Eastern Culberson. * WHEN...From 1 PM CDT /noon MDT/ to 7 PM CDT /6 PM MDT/ Tuesday.</summary>
-<cap:event>Wind Advisory</cap:event>
-<cap:effective>2023-03-20T14:02:00-05:00</cap:effective>
-<cap:expires>2023-03-21T19:00:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Eastern Culberson County</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>048109</value>
-<valueName>UGC</valueName>
-<value>TXZ273</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.NEW.KMAF.WI.Y.0020.230321T1800Z-230322T0000Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=TX12663D0C72F8.HighWindWarning.12663D2885B0TX.MAFNPWMAF.a6afb97e44bc3ab7a68d747f4207f9ab</id>
-<updated>2023-03-20T14:02:00-05:00</updated>
-<published>2023-03-20T14:02:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>High Wind Warning issued March 20 at 2:02PM CDT until March 21 at 10:00PM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=TX12663D0C72F8.HighWindWarning.12663D2885B0TX.MAFNPWMAF.a6afb97e44bc3ab7a68d747f4207f9ab"/>
-<summary>...HIGH WIND WARNING REMAINS IN EFFECT FROM 1 AM CDT /MIDNIGHT MDT/ TO 10 PM CDT /9 PM MDT/ TUESDAY... * WHAT...West winds 35 to 45 mph with gusts up to 70 mph expected. * WHERE...Guadalupe and Delaware Mountains. * WHEN...From late Monday night through Tuesday evening.</summary>
-<cap:event>High Wind Warning</cap:event>
-<cap:effective>2023-03-20T14:02:00-05:00</cap:effective>
-<cap:expires>2023-03-21T22:00:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Severe</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Guadalupe Mountains Above 7000 Feet; Guadalupe and Delaware Mountains</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>048109</value>
-<valueName>UGC</valueName>
-<value>TXZ270 TXZ271</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KMAF.HW.W.0015.230321T0600Z-230322T0300Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -8420,6 +8514,38 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value>/O.CON.TJSJ.RP.S.0016.000000T0000Z-230321T2200Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=WY12663D19DFB0.WinterWeatherAdvisory.12663D1B8D60WY.BYZWSWBYZ.91d180838e5bbfecc414930c8cedc8ec</id>
+<updated>2023-03-21T01:00:00-06:00</updated>
+<published>2023-03-21T01:00:00-06:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Winter Weather Advisory issued March 21 at 1:00AM MDT until March 21 at 12:00PM MDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=WY12663D19DFB0.WinterWeatherAdvisory.12663D1B8D60WY.BYZWSWBYZ.91d180838e5bbfecc414930c8cedc8ec"/>
+<summary>...WINTER WEATHER ADVISORY IN EFFECT UNTIL NOON MDT TODAY... * WHAT...Snow expected. Total snow accumulations between 2 and 4 inches. Winds gusting as high as 30 mph. * WHERE...In Montana, Southern Big Horn, Carter, Powder River, and Southern Rosebud. In Wyoming, Sheridan Foothills. * WHEN...Until Noon MDT today.</summary>
+<cap:event>Winter Weather Advisory</cap:event>
+<cap:effective>2023-03-21T01:00:00-06:00</cap:effective>
+<cap:expires>2023-03-21T12:00:00-06:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Sheridan Foothills</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>056033</value>
+<valueName>UGC</valueName>
+<value>WYZ199</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.EXA.KBYZ.WW.Y.0020.000000T0000Z-230321T1800Z/</value>
 </cap:parameter>
 </entry>
 <entry>
