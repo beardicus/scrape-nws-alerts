@@ -16,11 +16,11 @@ xmlns = 'http://www.w3.org/2005/Atom'
 xmlns:cap = 'urn:oasis:names:tc:emergency:cap:1.1'
 xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 >
-<!-- http-date = Fri, 31 Mar 2023 03:02:00 GMT -->
+<!-- http-date = Fri, 31 Mar 2023 03:30:00 GMT -->
 <id>https://alerts.weather.gov/cap/us.php?x=0</id>
 <logo>http://alerts.weather.gov/images/xml_logo.gif</logo>
 <generator>NWS CAP Server</generator>
-<updated>2023-03-30T22:02:00-05:00</updated>
+<updated>2023-03-30T22:30:00-05:00</updated>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
@@ -186,6 +186,39 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <valueName>VTEC</valueName>
 <value>/O.EXT.KMOB.FL.W.0019.000000T0000Z-230402T1446Z/
 /CLBA1.1.ER.230329T0645Z.230331T1200Z.230402T0846Z.NO/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=AR12663DB1E094.FloodWarning.126641DE0328AR.SHVFLSSHV.392e746010b7c76dc9d61f09201e7341</id>
+<updated>2023-03-30T22:17:00-05:00</updated>
+<published>2023-03-30T22:17:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Flood Warning issued March 30 at 10:17PM CDT until further notice by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=AR12663DB1E094.FloodWarning.126641DE0328AR.SHVFLSSHV.392e746010b7c76dc9d61f09201e7341"/>
+<summary>...The Flood Warning continues for the following rivers in Arkansas... Ouachita River At Felsenthal Lock and Dam affecting Ashley and Union Counties. For the Ouachita River...including Felsenthal Lock and Dam, Monroe, Columbia...Minor flooding is forecast.</summary>
+<cap:event>Flood Warning</cap:event>
+<cap:effective>2023-03-30T22:17:00-05:00</cap:effective>
+<cap:expires>2023-03-31T22:30:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Ashley; Union</cap:areaDesc>
+<cap:polygon>33.11,-92.23 33.22,-92.12 33.15,-92.1 33,-92.06 33,-92.1 33.11,-92.23</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>005003 005139</value>
+<valueName>UGC</valueName>
+<value>ARC003 ARC139</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KSHV.FL.W.0029.000000T0000Z-000000T0000Z/
+/FELA4.1.ER.230203T0645Z.230328T0130Z.000000T0000Z.NO/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -645,39 +678,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value>/O.CON.KLZK.WI.Y.0010.230331T1200Z-230401T0600Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=AR12663DA4CD50.FloodWarning.12663DB423E0AR.SHVFLSSHV.392e746010b7c76dc9d61f09201e7341</id>
-<updated>2023-03-30T12:48:00-05:00</updated>
-<published>2023-03-30T12:48:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Flood Warning issued March 30 at 12:48PM CDT until further notice by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=AR12663DA4CD50.FloodWarning.12663DB423E0AR.SHVFLSSHV.392e746010b7c76dc9d61f09201e7341"/>
-<summary>...The Flood Warning continues for the following river in Arkansas... Ouachita River At Felsenthal Lock and Dam affecting Ashley and Union Counties. For the Ouachita River...including Felsenthal Lock and Dam, Monroe, Columbia...Minor flooding is forecast. ...FLOOD WARNING REMAINS IN EFFECT UNTIL FURTHER NOTICE...</summary>
-<cap:event>Flood Warning</cap:event>
-<cap:effective>2023-03-30T12:48:00-05:00</cap:effective>
-<cap:expires>2023-03-31T13:00:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Ashley; Union</cap:areaDesc>
-<cap:polygon>33.11,-92.23 33.22,-92.12 33.15,-92.1 33,-92.06 33,-92.1 33.11,-92.23</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>005003 005139</value>
-<valueName>UGC</valueName>
-<value>ARC003 ARC139</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KSHV.FL.W.0029.000000T0000Z-000000T0000Z/
-/FELA4.1.ER.230203T0645Z.230328T0130Z.000000T0000Z.NO/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -2408,35 +2408,67 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=IA12663DB1C1B8.SpecialWeatherStatement.12663DB1DFCCIA.OAXSPSOAX.d3854aa12a555462300d7b1b224e9597</id>
-<updated>2023-03-30T21:38:00-05:00</updated>
-<published>2023-03-30T21:38:00-05:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=IA12663DB1E3B4.FireWeatherWatch.126641DD8240IA.OAXRFWOAX.a9bf46d75e86109939c4f341c10fc800</id>
+<updated>2023-03-30T22:25:00-05:00</updated>
+<published>2023-03-30T22:25:00-05:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Special Weather Statement issued March 30 at 9:38PM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=IA12663DB1C1B8.SpecialWeatherStatement.12663DB1DFCCIA.OAXSPSOAX.d3854aa12a555462300d7b1b224e9597"/>
-<summary>...A strong thunderstorm will impact portions of south central Monona, northwestern Harrison, southeastern Burt and north central Washington Counties through 1015 PM CDT... At 938 PM CDT, Doppler radar was tracking a strong thunderstorm 3 miles northwest of Herman, or 5 miles southwest of Tekamah, moving northeast at 55 mph.</summary>
-<cap:event>Special Weather Statement</cap:event>
-<cap:effective>2023-03-30T21:38:00-05:00</cap:effective>
-<cap:expires>2023-03-30T22:15:00-05:00</cap:expires>
+<title>Fire Weather Watch issued March 30 at 10:25PM CDT until March 31 at 7:00PM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=IA12663DB1E3B4.FireWeatherWatch.126641DD8240IA.OAXRFWOAX.a9bf46d75e86109939c4f341c10fc800"/>
+<summary>...FIRE WEATHER WATCH REMAINS IN EFFECT FROM FRIDAY AFTERNOON THROUGH FRIDAY EVENING FOR WIND AND LOW RELATIVE HUMIDITY FOR PARTS OF SOUTHEAST NEBRASKA AND SOUTHWEST IOWA... * Affected Area...In Iowa, Mills, Montgomery, Fremont and Page. In Nebraska, Lancaster, Cass, Otoe, Saline, Jefferson, Gage, Johnson, Nemaha, Pawnee and Richardson.</summary>
+<cap:event>Fire Weather Watch</cap:event>
+<cap:effective>2023-03-30T22:25:00-05:00</cap:effective>
+<cap:expires>2023-03-31T19:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Future</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Possible</cap:certainty>
+<cap:areaDesc>Fremont; Mills; Montgomery; Page</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>019071 019129 019137 019145</value>
+<valueName>UGC</valueName>
+<value>IAZ079 IAZ080 IAZ090 IAZ091</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KOAX.FW.A.0001.230331T1800Z-230401T0000Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=IA12663DB1E224.WindAdvisory.12663DB33980IA.OAXNPWOAX.c43fc671c967449b22953a6e17eff339</id>
+<updated>2023-03-30T22:21:00-05:00</updated>
+<published>2023-03-30T22:21:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Wind Advisory issued March 30 at 10:21PM CDT until March 31 at 7:00AM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=IA12663DB1E224.WindAdvisory.12663DB33980IA.OAXNPWOAX.c43fc671c967449b22953a6e17eff339"/>
+<summary>...WIND ADVISORY REMAINS IN EFFECT UNTIL 7 AM CDT FRIDAY... * WHAT...South winds 20 to 30 mph with gusts up to 50 mph. * WHERE...Portions of southwest and west central Iowa and east central, northeast and southeast Nebraska. * WHEN...Until 7 AM CDT Friday. * IMPACTS...Gusty winds could blow around unsecured objects.</summary>
+<cap:event>Wind Advisory</cap:event>
+<cap:effective>2023-03-30T22:21:00-05:00</cap:effective>
+<cap:expires>2023-03-31T07:00:00-05:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
 <cap:category>Met</cap:category>
 <cap:urgency>Expected</cap:urgency>
 <cap:severity>Minor</cap:severity>
-<cap:certainty>Observed</cap:certainty>
-<cap:areaDesc>Harrison; Monona</cap:areaDesc>
-<cap:polygon>41.55,-96.22 41.7,-96.43 41.97,-96.17 41.95,-95.98 41.83,-95.84 41.55,-96.22</cap:polygon>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Fremont; Harrison; Mills; Monona; Montgomery; Page; Pottawattamie</cap:areaDesc>
+<cap:polygon></cap:polygon>
 <cap:geocode>
 <valueName>FIPS6</valueName>
-<value>019085 019133</value>
+<value>019071 019085 019129 019133 019137 019145 019155</value>
 <valueName>UGC</valueName>
-<value>IAZ043 IAZ055</value>
+<value>IAZ043 IAZ055 IAZ069 IAZ079 IAZ080 IAZ090 IAZ091</value>
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
-<value></value>
+<value>/O.CON.KOAX.WI.Y.0004.000000T0000Z-230331T1200Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -2502,70 +2534,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <valueName>VTEC</valueName>
 <value>/O.EXT.KFSD.FL.W.0004.230331T2000Z-000000T0000Z/
 /MIFI4.1.RS.230331T2000Z.230405T0000Z.000000T0000Z.NO/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=IA12663DA53C40.WindAdvisory.12663DB33980IA.OAXNPWOAX.c43fc671c967449b22953a6e17eff339</id>
-<updated>2023-03-30T15:32:00-05:00</updated>
-<published>2023-03-30T15:32:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Wind Advisory issued March 30 at 3:32PM CDT until March 31 at 7:00AM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=IA12663DA53C40.WindAdvisory.12663DB33980IA.OAXNPWOAX.c43fc671c967449b22953a6e17eff339"/>
-<summary>...WIND ADVISORY REMAINS IN EFFECT UNTIL 7 AM CDT FRIDAY... * WHAT...South winds mostly 25 to 35 mph with some gusts to around 50 mph possible at times. * WHERE...Portions of eastern Nebraska and southwest Iowa. * WHEN...From 4 PM Thursday to 7 AM CDT Friday. * IMPACTS...Gusty winds could blow around unsecured objects.</summary>
-<cap:event>Wind Advisory</cap:event>
-<cap:effective>2023-03-30T15:32:00-05:00</cap:effective>
-<cap:expires>2023-03-31T07:00:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Fremont; Harrison; Mills; Monona; Montgomery; Page; Pottawattamie</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>019071 019085 019129 019133 019137 019145 019155</value>
-<valueName>UGC</valueName>
-<value>IAZ043 IAZ055 IAZ069 IAZ079 IAZ080 IAZ090 IAZ091</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KOAX.WI.Y.0004.230330T2100Z-230331T1200Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=IA12663DA53AB0.FireWeatherWatch.126641DD8240IA.OAXRFWOAX.a9bf46d75e86109939c4f341c10fc800</id>
-<updated>2023-03-30T15:28:00-05:00</updated>
-<published>2023-03-30T15:28:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Fire Weather Watch issued March 30 at 3:28PM CDT until March 31 at 7:00PM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=IA12663DA53AB0.FireWeatherWatch.126641DD8240IA.OAXRFWOAX.a9bf46d75e86109939c4f341c10fc800"/>
-<summary>...FIRE WEATHER WATCH IN EFFECT FROM FRIDAY AFTERNOON THROUGH EARLY FRIDAY EVENING FOR WIND AND LOW RELATIVE HUMIDITY FOR PARTS OF SOUTHEAST NEBRASKA AND SOUTHWEST IOWA... The National Weather Service in Omaha/Valley has issued a Fire Weather Watch for wind and low relative humidity, which is in effect from Friday afternoon through Friday evening.</summary>
-<cap:event>Fire Weather Watch</cap:event>
-<cap:effective>2023-03-30T15:28:00-05:00</cap:effective>
-<cap:expires>2023-03-31T19:00:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Future</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Possible</cap:certainty>
-<cap:areaDesc>Fremont; Mills; Montgomery; Page</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>019071 019129 019137 019145</value>
-<valueName>UGC</valueName>
-<value>IAZ079 IAZ080 IAZ090 IAZ091</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.NEW.KOAX.FW.A.0001.230331T1800Z-230401T0000Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -5029,6 +4997,39 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=LA12663DB1DAB8.FloodWarning.126642888F50LA.JANFLSJAN.523963160e5a2f9b02dd4189577156d6</id>
+<updated>2023-03-30T22:02:00-05:00</updated>
+<published>2023-03-30T22:02:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Flood Warning issued March 30 at 10:02PM CDT until April 12 at 4:00PM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=LA12663DB1DAB8.FloodWarning.126642888F50LA.JANFLSJAN.523963160e5a2f9b02dd4189577156d6"/>
+<summary>...The Flood Warning continues for the following rivers in Louisiana...Mississippi... Mississippi River At Natchez affecting Adams, Wilkinson and Concordia Counties. For the Lower Mississippi River ...including Arkansas City, Greenville, Vicksburg, Natchez...Minor flooding is forecast.</summary>
+<cap:event>Flood Warning</cap:event>
+<cap:effective>2023-03-30T22:02:00-05:00</cap:effective>
+<cap:expires>2023-04-12T16:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Concordia</cap:areaDesc>
+<cap:polygon>31.01,-91.7 31.3,-91.67 31.93,-91.29 31.87,-91.14 31.3,-91.47 31,-91.54 31.01,-91.7</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>022029</value>
+<valueName>UGC</valueName>
+<value>LAC029</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.EXT.KJAN.FL.W.0044.000000T0000Z-230412T2100Z/
+/NTZM6.1.ER.230323T0000Z.230409T0600Z.230412T0300Z.NO/</value>
+</cap:parameter>
+</entry>
+<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=LA12663DB1C5A0.WindAdvisory.126641DD8240LA.SHVNPWSHV.7a430af4b9a3a6d9c72a1d7aa82be5e6</id>
 <updated>2023-03-30T21:48:00-05:00</updated>
 <published>2023-03-30T21:48:00-05:00</published>
@@ -5156,39 +5157,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value>/O.CON.KJAN.WI.Y.0010.230331T1500Z-230401T0200Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=LA12663DA27B90.FloodWarning.126642B40C20LA.JANFLSJAN.523963160e5a2f9b02dd4189577156d6</id>
-<updated>2023-03-29T21:28:00-05:00</updated>
-<published>2023-03-29T21:28:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Flood Warning issued March 29 at 9:28PM CDT until April 15 at 1:00AM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=LA12663DA27B90.FloodWarning.126642B40C20LA.JANFLSJAN.523963160e5a2f9b02dd4189577156d6"/>
-<summary>...The Flood Warning continues for the following rivers in Louisiana...Mississippi... Mississippi River At Natchez affecting Wilkinson, Concordia and Adams Counties. For the Lower Mississippi River ...including Arkansas City, Greenville, Vicksburg, Natchez...Minor flooding is forecast.</summary>
-<cap:event>Flood Warning</cap:event>
-<cap:effective>2023-03-29T21:28:00-05:00</cap:effective>
-<cap:expires>2023-04-15T01:00:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Concordia</cap:areaDesc>
-<cap:polygon>31.01,-91.7 31.3,-91.67 31.93,-91.29 31.87,-91.14 31.3,-91.47 31,-91.54 31.01,-91.7</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>022029</value>
-<valueName>UGC</valueName>
-<value>LAC029</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KJAN.FL.W.0044.000000T0000Z-230415T0600Z/
-/NTZM6.1.ER.230323T0000Z.230408T1200Z.230414T1200Z.NO/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -5645,6 +5613,38 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value></value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=MN12663DB1DD10.BlizzardWarning.126641DF5700MN.ABRWSWABR.269ef531c65af750968a29e15ca9ca95</id>
+<updated>2023-03-30T22:08:00-05:00</updated>
+<published>2023-03-30T22:08:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Blizzard Warning issued March 30 at 10:08PM CDT until April 01 at 7:00AM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MN12663DB1DD10.BlizzardWarning.126641DF5700MN.ABRWSWABR.269ef531c65af750968a29e15ca9ca95"/>
+<summary>...BLIZZARD WARNING REMAINS IN EFFECT FROM NOON FRIDAY TO 7 AM CDT SATURDAY... * WHAT...Blizzard conditions expected. Total snow accumulations of 6 to 12 inches and ice accumulations of a light glaze. Winds gusting as high as 55 mph. * WHERE...In Minnesota, Traverse and Big Stone Counties. In</summary>
+<cap:event>Blizzard Warning</cap:event>
+<cap:effective>2023-03-30T22:08:00-05:00</cap:effective>
+<cap:expires>2023-04-01T07:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Severe</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Big Stone; Traverse</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>027011 027155</value>
+<valueName>UGC</valueName>
+<value>MNZ039 MNZ046</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KABR.BZ.W.0003.230331T1700Z-230401T1200Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -6479,39 +6479,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=MN12663DA5197C.BlizzardWarning.126641DF5700MN.ABRWSWABR.269ef531c65af750968a29e15ca9ca95</id>
-<updated>2023-03-30T14:43:00-05:00</updated>
-<published>2023-03-30T14:43:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Blizzard Warning issued March 30 at 2:43PM CDT until April 01 at 7:00AM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MN12663DA5197C.BlizzardWarning.126641DF5700MN.ABRWSWABR.269ef531c65af750968a29e15ca9ca95"/>
-<summary>...BLIZZARD WARNING IN EFFECT FROM NOON FRIDAY TO 7 AM CDT SATURDAY... * WHAT...Blizzard conditions expected. Total snow accumulations of 6 to 12 inches and ice accumulations of a light glaze. Winds gusting as high as 55 mph. * WHERE...In Minnesota, Traverse and Big Stone Counties. In</summary>
-<cap:event>Blizzard Warning</cap:event>
-<cap:effective>2023-03-30T14:43:00-05:00</cap:effective>
-<cap:expires>2023-04-01T07:00:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Severe</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Big Stone; Traverse</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>027011 027155</value>
-<valueName>UGC</valueName>
-<value>MNZ039 MNZ046</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.UPG.KABR.WS.A.0005.230331T0600Z-230401T0900Z/
-/O.NEW.KABR.BZ.W.0003.230331T1700Z-230401T1200Z/</value>
-</cap:parameter>
-</entry>
-<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=MO12663DB1B9E8.FloodWarning.126641EF0E70MO.PAHFLSPAH.e8c99addbf3de9ab6d61eb438f9d7885</id>
 <updated>2023-03-30T21:18:00-05:00</updated>
 <published>2023-03-30T21:18:00-05:00</published>
@@ -7160,6 +7127,39 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=MS12663DB1DAB8.FloodWarning.126642888F50MS.JANFLSJAN.6b98af308ae421d7448128be549bfb87</id>
+<updated>2023-03-30T22:02:00-05:00</updated>
+<published>2023-03-30T22:02:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Flood Warning issued March 30 at 10:02PM CDT until April 12 at 4:00PM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MS12663DB1DAB8.FloodWarning.126642888F50MS.JANFLSJAN.6b98af308ae421d7448128be549bfb87"/>
+<summary>...The Flood Warning continues for the following rivers in Louisiana...Mississippi... Mississippi River At Natchez affecting Adams, Wilkinson and Concordia Counties. For the Lower Mississippi River ...including Arkansas City, Greenville, Vicksburg, Natchez...Minor flooding is forecast.</summary>
+<cap:event>Flood Warning</cap:event>
+<cap:effective>2023-03-30T22:02:00-05:00</cap:effective>
+<cap:expires>2023-04-12T16:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Adams; Wilkinson</cap:areaDesc>
+<cap:polygon>31.01,-91.7 31.3,-91.67 31.93,-91.29 31.87,-91.14 31.3,-91.47 31,-91.54 31.01,-91.7</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>028001 028157</value>
+<valueName>UGC</valueName>
+<value>MSC001 MSC157</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.EXT.KJAN.FL.W.0044.000000T0000Z-230412T2100Z/
+/NTZM6.1.ER.230323T0000Z.230409T0600Z.230412T0300Z.NO/</value>
+</cap:parameter>
+</entry>
+<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=MS12663DB19AA8.FloodAdvisory.1266421D4A60MS.MEGFLSMEG.3391ad61e70aa90d87bbb15c7280842f</id>
 <updated>2023-03-30T20:38:00-05:00</updated>
 <published>2023-03-30T20:38:00-05:00</published>
@@ -7320,39 +7320,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value>/O.NEW.KMEG.WI.Y.0011.230331T1200Z-230401T0600Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=MS12663DA27B90.FloodWarning.126642B40C20MS.JANFLSJAN.6b98af308ae421d7448128be549bfb87</id>
-<updated>2023-03-29T21:28:00-05:00</updated>
-<published>2023-03-29T21:28:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Flood Warning issued March 29 at 9:28PM CDT until April 15 at 1:00AM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MS12663DA27B90.FloodWarning.126642B40C20MS.JANFLSJAN.6b98af308ae421d7448128be549bfb87"/>
-<summary>...The Flood Warning continues for the following rivers in Louisiana...Mississippi... Mississippi River At Natchez affecting Wilkinson, Concordia and Adams Counties. For the Lower Mississippi River ...including Arkansas City, Greenville, Vicksburg, Natchez...Minor flooding is forecast.</summary>
-<cap:event>Flood Warning</cap:event>
-<cap:effective>2023-03-29T21:28:00-05:00</cap:effective>
-<cap:expires>2023-04-15T01:00:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Adams; Wilkinson</cap:areaDesc>
-<cap:polygon>31.01,-91.7 31.3,-91.67 31.93,-91.29 31.87,-91.14 31.3,-91.47 31,-91.54 31.01,-91.7</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>028001 028157</value>
-<valueName>UGC</valueName>
-<value>MSC001 MSC157</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KJAN.FL.W.0044.000000T0000Z-230415T0600Z/
-/NTZM6.1.ER.230323T0000Z.230408T1200Z.230414T1200Z.NO/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -8258,6 +8225,38 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=ND12663DB1DC48.WinterWeatherAdvisory.126641DEE1D0ND.BISWSWBIS.15bba477d38f36ba742b6070398909c4</id>
+<updated>2023-03-30T22:06:00-05:00</updated>
+<published>2023-03-30T22:06:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Winter Weather Advisory issued March 30 at 10:06PM CDT until April 01 at 4:00AM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=ND12663DB1DC48.WinterWeatherAdvisory.126641DEE1D0ND.BISWSWBIS.15bba477d38f36ba742b6070398909c4"/>
+<summary>...WINTER WEATHER ADVISORY REMAINS IN EFFECT UNTIL 4 AM CDT/3 AM MDT/ SATURDAY... * WHAT...Mixed precipitation possible this evening and tonight, then snow and blowing snow expected late tonight through Friday evening. Total snow accumulations between 2 and 5 inches and ice accumulations around a light glaze. Winds gusting as high as 55</summary>
+<cap:event>Winter Weather Advisory</cap:event>
+<cap:effective>2023-03-30T22:06:00-05:00</cap:effective>
+<cap:expires>2023-04-01T04:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Dickey; Emmons; Kidder; La Moure; Logan; McIntosh; Sioux; Stutsman</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>038021 038029 038043 038045 038047 038051 038085 038093</value>
+<valueName>UGC</valueName>
+<value>NDZ036 NDZ037 NDZ045 NDZ046 NDZ047 NDZ048 NDZ050 NDZ051</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KBIS.WW.Y.0016.000000T0000Z-230401T0900Z/</value>
+</cap:parameter>
+</entry>
+<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=ND12663DB19148.WinterWeatherAdvisory.12663DB33980ND.FGFWSWFGF.7cd117b63209595c53864b2a33c4e459</id>
 <updated>2023-03-30T20:14:00-05:00</updated>
 <published>2023-03-30T20:14:00-05:00</published>
@@ -8388,38 +8387,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=ND12663DA5BA08.WinterWeatherAdvisory.126641DEE1D0ND.BISWSWBIS.15bba477d38f36ba742b6070398909c4</id>
-<updated>2023-03-30T18:54:00-05:00</updated>
-<published>2023-03-30T18:54:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Winter Weather Advisory issued March 30 at 6:54PM CDT until April 01 at 4:00AM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=ND12663DA5BA08.WinterWeatherAdvisory.126641DEE1D0ND.BISWSWBIS.15bba477d38f36ba742b6070398909c4"/>
-<summary>...WINTER WEATHER ADVISORY REMAINS IN EFFECT FROM 10 PM CDT /9 PM MDT/ THIS EVENING TO 4 AM CDT /3 AM MDT/ SATURDAY... * WHAT...Mixed precipitation possible this evening and tonight, then snow and blowing snow expected late tonight through Friday evening. Total snow accumulations between 2 and 5 inches and ice accumulations around a light glaze. Winds gusting as high as 55</summary>
-<cap:event>Winter Weather Advisory</cap:event>
-<cap:effective>2023-03-30T18:54:00-05:00</cap:effective>
-<cap:expires>2023-04-01T04:00:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Dickey; Emmons; Kidder; La Moure; Logan; McIntosh; Sioux; Stutsman</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>038021 038029 038043 038045 038047 038051 038085 038093</value>
-<valueName>UGC</valueName>
-<value>NDZ036 NDZ037 NDZ045 NDZ046 NDZ047 NDZ048 NDZ050 NDZ051</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KBIS.WW.Y.0016.230331T0300Z-230401T0900Z/</value>
-</cap:parameter>
-</entry>
-<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=ND12663DA4F4C4.SpecialWeatherStatement.12663DB20100ND.BISSPSBIS.6f7126a5735f37a7bd29b0205bc5962e</id>
 <updated>2023-03-30T13:49:00-05:00</updated>
 <published>2023-03-30T13:49:00-05:00</published>
@@ -8452,95 +8419,95 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=NE12663DB1C8C0.SpecialWeatherStatement.12663DB1DFCCNE.OAXSPSOAX.698d34e13a1750bbbaec249233e156b6</id>
-<updated>2023-03-30T21:56:00-05:00</updated>
-<published>2023-03-30T21:56:00-05:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=NE12663DB1E5A8.SevereThunderstormWarning.12663DB206DCNE.OAXSVROAX.bbe33a74374d1e06069bd505ad799ff7</id>
+<updated>2023-03-30T22:30:00-05:00</updated>
+<published>2023-03-30T22:30:00-05:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Special Weather Statement issued March 30 at 9:56PM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=NE12663DB1C8C0.SpecialWeatherStatement.12663DB1DFCCNE.OAXSPSOAX.698d34e13a1750bbbaec249233e156b6"/>
-<summary>...A strong thunderstorm will impact portions of northwestern Pierce and northeastern Antelope Counties through 1015 PM CDT... At 956 PM CDT, Doppler radar was tracking a strong thunderstorm 6 miles west of Plainview, or 14 miles northeast of Neligh, moving northeast at 40 mph. HAZARD...Penny size hail.</summary>
-<cap:event>Special Weather Statement</cap:event>
-<cap:effective>2023-03-30T21:56:00-05:00</cap:effective>
-<cap:expires>2023-03-30T22:15:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Observed</cap:certainty>
-<cap:areaDesc>Antelope; Pierce</cap:areaDesc>
-<cap:polygon>42.44,-97.91 42.44,-97.77 42.41,-97.68 42.17,-97.97 42.28,-98.14 42.44,-97.91</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>031003 031139</value>
-<valueName>UGC</valueName>
-<value>NEZ016 NEZ017</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value></value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=NE12663DB1C7F8.SevereWeatherStatement.12663DB45C84NE.OAXSVSOAX.339755e7c5eff1b30b3ecbbf5ce1e534</id>
-<updated>2023-03-30T21:54:00-05:00</updated>
-<published>2023-03-30T21:54:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Severe Weather Statement issued March 30 at 9:54PM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=NE12663DB1C7F8.SevereWeatherStatement.12663DB45C84NE.OAXSVSOAX.339755e7c5eff1b30b3ecbbf5ce1e534"/>
-<summary>...THE SEVERE THUNDERSTORM WARNING FOR NORTH CENTRAL KNOX COUNTY WILL EXPIRE AT 1000 PM CDT... The storm which prompted the warning was moving out of the area into South Dakota. Therefore, the warning will be allowed to expire. This storm did produce hail up to golf ball size in Niobrara around 944 pm.</summary>
-<cap:event>Severe Weather Statement</cap:event>
-<cap:effective>2023-03-30T21:54:00-05:00</cap:effective>
-<cap:expires>2023-03-31T14:45:00-05:00</cap:expires>
+<title>Severe Thunderstorm Warning issued March 30 at 10:30PM CDT until March 30 at 11:15PM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=NE12663DB1E5A8.SevereThunderstormWarning.12663DB206DCNE.OAXSVROAX.bbe33a74374d1e06069bd505ad799ff7"/>
+<summary>The National Weather Service in Omaha has issued a * Severe Thunderstorm Warning for... Northern Antelope County in northeastern Nebraska... Southern Knox County in northeastern Nebraska... * Until 1115 PM CDT. * At 1030 PM CDT, a severe thunderstorm was located 8 miles southwest</summary>
+<cap:event>Severe Thunderstorm Warning</cap:event>
+<cap:effective>2023-03-30T22:30:00-05:00</cap:effective>
+<cap:expires>2023-03-30T23:15:00-05:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
 <cap:category>Met</cap:category>
 <cap:urgency>Immediate</cap:urgency>
 <cap:severity>Severe</cap:severity>
 <cap:certainty>Observed</cap:certainty>
-<cap:areaDesc>Knox</cap:areaDesc>
-<cap:polygon>42.76,-98.04 42.77,-97.95 42.82,-97.88 42.85,-97.87 42.86,-97.81 42.65,-97.96 42.7,-98.08 42.76,-98.04</cap:polygon>
+<cap:areaDesc>Antelope; Knox</cap:areaDesc>
+<cap:polygon>42.4,-98.3 42.51,-98.11 42.28,-97.86 42.18,-98.3 42.4,-98.3</cap:polygon>
 <cap:geocode>
 <valueName>FIPS6</valueName>
-<value>031107</value>
+<value>031003 031107</value>
 <valueName>UGC</valueName>
-<value>NEC107</value>
+<value>NEC003 NEC107</value>
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
-<value>/O.EXP.KOAX.SV.W.0001.000000T0000Z-230331T0300Z/</value>
+<value>/O.NEW.KOAX.SV.W.0002.230331T0330Z-230331T0415Z/</value>
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=NE12663DB1C1B8.SpecialWeatherStatement.12663DB1DFCCNE.OAXSPSOAX.9fa6db964f1256d4eabd50b96ebdd13f</id>
-<updated>2023-03-30T21:38:00-05:00</updated>
-<published>2023-03-30T21:38:00-05:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=NE12663DB1E47C.SevereThunderstormWarning.12663DB20100NE.LBFSVRLBF.0170e522551f47573b1003dffd4a04fe</id>
+<updated>2023-03-30T22:27:00-05:00</updated>
+<published>2023-03-30T22:27:00-05:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Special Weather Statement issued March 30 at 9:38PM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=NE12663DB1C1B8.SpecialWeatherStatement.12663DB1DFCCNE.OAXSPSOAX.9fa6db964f1256d4eabd50b96ebdd13f"/>
-<summary>...A strong thunderstorm will impact portions of south central Monona, northwestern Harrison, southeastern Burt and north central Washington Counties through 1015 PM CDT... At 938 PM CDT, Doppler radar was tracking a strong thunderstorm 3 miles northwest of Herman, or 5 miles southwest of Tekamah, moving northeast at 55 mph.</summary>
+<title>Severe Thunderstorm Warning issued March 30 at 10:27PM CDT until March 30 at 11:00PM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=NE12663DB1E47C.SevereThunderstormWarning.12663DB20100NE.LBFSVRLBF.0170e522551f47573b1003dffd4a04fe"/>
+<summary>The National Weather Service in North Platte has issued a * Severe Thunderstorm Warning for... Southeastern Holt County in north central Nebraska... * Until 1100 PM CDT. * At 1026 PM CDT, a severe thunderstorm was located 10 miles west of Ewing, or 18 miles south of O`Neill, moving northeast at 45 mph.</summary>
+<cap:event>Severe Thunderstorm Warning</cap:event>
+<cap:effective>2023-03-30T22:27:00-05:00</cap:effective>
+<cap:expires>2023-03-30T23:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Immediate</cap:urgency>
+<cap:severity>Severe</cap:severity>
+<cap:certainty>Observed</cap:certainty>
+<cap:areaDesc>Holt</cap:areaDesc>
+<cap:polygon>42.08,-98.58 42.09,-98.6 42.26,-98.68 42.43,-98.3 42.31,-98.3 42.12,-98.31 42.08,-98.58</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>031089</value>
+<valueName>UGC</valueName>
+<value>NEC089</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.NEW.KLBF.SV.W.0003.230331T0327Z-230331T0400Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=NE12663DB1E418.SpecialWeatherStatement.12663DB20100NE.OAXSPSOAX.276eaf6718d9c4adb07b39e13409f346</id>
+<updated>2023-03-30T22:26:00-05:00</updated>
+<published>2023-03-30T22:26:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Special Weather Statement issued March 30 at 10:26PM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=NE12663DB1E418.SpecialWeatherStatement.12663DB20100NE.OAXSPSOAX.276eaf6718d9c4adb07b39e13409f346"/>
+<summary>...A strong thunderstorm will impact portions of north central Pierce, southeastern Knox and central Cedar Counties through 1100 PM CDT... At 1026 PM CDT, Doppler radar was tracking a strong thunderstorm 4 miles south of Wausa, or 20 miles southwest of Hartington, moving northeast at 40 mph.</summary>
 <cap:event>Special Weather Statement</cap:event>
-<cap:effective>2023-03-30T21:38:00-05:00</cap:effective>
-<cap:expires>2023-03-30T22:15:00-05:00</cap:expires>
+<cap:effective>2023-03-30T22:26:00-05:00</cap:effective>
+<cap:expires>2023-03-30T23:00:00-05:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
 <cap:category>Met</cap:category>
 <cap:urgency>Expected</cap:urgency>
 <cap:severity>Minor</cap:severity>
 <cap:certainty>Observed</cap:certainty>
-<cap:areaDesc>Burt; Washington</cap:areaDesc>
-<cap:polygon>41.55,-96.22 41.7,-96.43 41.97,-96.17 41.95,-95.98 41.83,-95.84 41.55,-96.22</cap:polygon>
+<cap:areaDesc>Cedar; Knox; Pierce</cap:areaDesc>
+<cap:polygon>42.8,-97.16 42.77,-97.11 42.77,-97.05 42.76,-97.02 42.68,-97.01 42.59,-97.02 42.37,-97.6 42.44,-97.68 42.81,-97.21 42.8,-97.16</cap:polygon>
 <cap:geocode>
 <valueName>FIPS6</valueName>
-<value>031021 031177</value>
+<value>031027 031107 031139</value>
 <valueName>UGC</valueName>
-<value>NEZ034 NEZ045</value>
+<value>NEZ011 NEZ012 NEZ017</value>
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
@@ -8548,31 +8515,95 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=NE12663DB1C028.SpecialWeatherStatement.12663DB1DFCCNE.LBFSPSLBF.8bfe1ceba0e8a3bb76e0c75d872ce615</id>
-<updated>2023-03-30T21:34:00-05:00</updated>
-<published>2023-03-30T21:34:00-05:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=NE12663DB1E3B4.FireWeatherWatch.126641DD8240NE.OAXRFWOAX.74113b7e2be4abf99401977a3171f7a2</id>
+<updated>2023-03-30T22:25:00-05:00</updated>
+<published>2023-03-30T22:25:00-05:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Special Weather Statement issued March 30 at 9:34PM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=NE12663DB1C028.SpecialWeatherStatement.12663DB1DFCCNE.LBFSPSLBF.8bfe1ceba0e8a3bb76e0c75d872ce615"/>
-<summary>...A strong thunderstorm will impact portions of southeastern Rock, eastern Loup, Garfield, south central Holt and western Wheeler Counties through 1015 PM CDT... At 934 PM CDT, Doppler radar was tracking a strong thunderstorm near Calamus Reservoir State Recreation Area, or 8 miles north of Burwell, moving east at 30 mph.</summary>
+<title>Fire Weather Watch issued March 30 at 10:25PM CDT until March 31 at 7:00PM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=NE12663DB1E3B4.FireWeatherWatch.126641DD8240NE.OAXRFWOAX.74113b7e2be4abf99401977a3171f7a2"/>
+<summary>...FIRE WEATHER WATCH REMAINS IN EFFECT FROM FRIDAY AFTERNOON THROUGH FRIDAY EVENING FOR WIND AND LOW RELATIVE HUMIDITY FOR PARTS OF SOUTHEAST NEBRASKA AND SOUTHWEST IOWA... * Affected Area...In Iowa, Mills, Montgomery, Fremont and Page. In Nebraska, Lancaster, Cass, Otoe, Saline, Jefferson, Gage, Johnson, Nemaha, Pawnee and Richardson.</summary>
+<cap:event>Fire Weather Watch</cap:event>
+<cap:effective>2023-03-30T22:25:00-05:00</cap:effective>
+<cap:expires>2023-03-31T19:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Future</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Possible</cap:certainty>
+<cap:areaDesc>Cass; Gage; Jefferson; Johnson; Lancaster; Nemaha; Otoe; Pawnee; Richardson; Saline</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>031025 031067 031095 031097 031109 031127 031131 031133 031147 031151</value>
+<valueName>UGC</valueName>
+<value>NEZ066 NEZ067 NEZ068 NEZ078 NEZ088 NEZ089 NEZ090 NEZ091 NEZ092 NEZ093</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KOAX.FW.A.0001.230331T1800Z-230401T0000Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=NE12663DB1E224.WindAdvisory.12663DB33980NE.OAXNPWOAX.db87e886bd5b337461846d339c2f6367</id>
+<updated>2023-03-30T22:21:00-05:00</updated>
+<published>2023-03-30T22:21:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Wind Advisory issued March 30 at 10:21PM CDT until March 31 at 7:00AM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=NE12663DB1E224.WindAdvisory.12663DB33980NE.OAXNPWOAX.db87e886bd5b337461846d339c2f6367"/>
+<summary>...WIND ADVISORY REMAINS IN EFFECT UNTIL 7 AM CDT FRIDAY... * WHAT...South winds 20 to 30 mph with gusts up to 50 mph. * WHERE...Portions of southwest and west central Iowa and east central, northeast and southeast Nebraska. * WHEN...Until 7 AM CDT Friday. * IMPACTS...Gusty winds could blow around unsecured objects.</summary>
+<cap:event>Wind Advisory</cap:event>
+<cap:effective>2023-03-30T22:21:00-05:00</cap:effective>
+<cap:expires>2023-03-31T07:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Burt; Butler; Cass; Colfax; Cuming; Dodge; Douglas; Gage; Jefferson; Johnson; Lancaster; Nemaha; Otoe; Pawnee; Richardson; Saline; Sarpy; Saunders; Seward; Thurston; Washington</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>031021 031023 031025 031037 031039 031053 031055 031067 031095 031097 031109 031127 031131 031133 031147 031151 031153 031155 031159 031173 031177</value>
+<valueName>UGC</valueName>
+<value>NEZ015 NEZ033 NEZ034 NEZ043 NEZ044 NEZ045 NEZ050 NEZ051 NEZ052 NEZ053 NEZ065 NEZ066 NEZ067 NEZ068 NEZ078 NEZ088 NEZ089 NEZ090 NEZ091 NEZ092 NEZ093</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KOAX.WI.Y.0004.000000T0000Z-230331T1200Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=NE12663DB1DDD8.SpecialWeatherStatement.12663DB206DCNE.LBFSPSLBF.1dcc2bf6e09928eab0da57e542d21609</id>
+<updated>2023-03-30T22:10:00-05:00</updated>
+<published>2023-03-30T22:10:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Special Weather Statement issued March 30 at 10:10PM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=NE12663DB1DDD8.SpecialWeatherStatement.12663DB206DCNE.LBFSPSLBF.1dcc2bf6e09928eab0da57e542d21609"/>
+<summary>...A strong thunderstorm will impact portions of northeastern Garfield, southeastern Holt and northwestern Wheeler Counties through 1115 PM CDT... At 1010 PM CDT, Doppler radar was tracking a strong thunderstorm near Chambers, or 24 miles south of O`Neill, moving northeast at 35 mph. HAZARD...Winds in excess of 30 mph and penny size hail.</summary>
 <cap:event>Special Weather Statement</cap:event>
-<cap:effective>2023-03-30T21:34:00-05:00</cap:effective>
-<cap:expires>2023-03-30T22:15:00-05:00</cap:expires>
+<cap:effective>2023-03-30T22:10:00-05:00</cap:effective>
+<cap:expires>2023-03-30T23:15:00-05:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
 <cap:category>Met</cap:category>
 <cap:urgency>Expected</cap:urgency>
 <cap:severity>Minor</cap:severity>
 <cap:certainty>Observed</cap:certainty>
-<cap:areaDesc>Garfield; Holt; Loup; Rock; Wheeler</cap:areaDesc>
-<cap:polygon>41.78,-99.31 42.08,-99.31 42.17,-98.55 41.79,-98.57 41.78,-99.31</cap:polygon>
+<cap:areaDesc>Garfield; Holt; Wheeler</cap:areaDesc>
+<cap:polygon>41.95,-98.82 42.18,-98.94 42.52,-98.31 42.08,-98.3 41.95,-98.82</cap:polygon>
 <cap:geocode>
 <valueName>FIPS6</valueName>
-<value>031071 031089 031115 031149 031183</value>
+<value>031071 031089 031183</value>
 <valueName>UGC</valueName>
-<value>NEZ009 NEZ010 NEZ027 NEZ028 NEZ029</value>
+<value>NEZ010 NEZ028 NEZ029</value>
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
@@ -8609,70 +8640,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value>/O.CON.KCYS.WW.Y.0023.230331T0400Z-230401T0100Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=NE12663DA53C40.WindAdvisory.12663DB33980NE.OAXNPWOAX.db87e886bd5b337461846d339c2f6367</id>
-<updated>2023-03-30T15:32:00-05:00</updated>
-<published>2023-03-30T15:32:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Wind Advisory issued March 30 at 3:32PM CDT until March 31 at 7:00AM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=NE12663DA53C40.WindAdvisory.12663DB33980NE.OAXNPWOAX.db87e886bd5b337461846d339c2f6367"/>
-<summary>...WIND ADVISORY REMAINS IN EFFECT UNTIL 7 AM CDT FRIDAY... * WHAT...South winds mostly 25 to 35 mph with some gusts to around 50 mph possible at times. * WHERE...Portions of eastern Nebraska and southwest Iowa. * WHEN...From 4 PM Thursday to 7 AM CDT Friday. * IMPACTS...Gusty winds could blow around unsecured objects.</summary>
-<cap:event>Wind Advisory</cap:event>
-<cap:effective>2023-03-30T15:32:00-05:00</cap:effective>
-<cap:expires>2023-03-31T07:00:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Burt; Butler; Cass; Colfax; Cuming; Dodge; Douglas; Gage; Jefferson; Johnson; Lancaster; Nemaha; Otoe; Pawnee; Richardson; Saline; Sarpy; Saunders; Seward; Thurston; Washington</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>031021 031023 031025 031037 031039 031053 031055 031067 031095 031097 031109 031127 031131 031133 031147 031151 031153 031155 031159 031173 031177</value>
-<valueName>UGC</valueName>
-<value>NEZ015 NEZ033 NEZ034 NEZ043 NEZ044 NEZ045 NEZ050 NEZ051 NEZ052 NEZ053 NEZ065 NEZ066 NEZ067 NEZ068 NEZ078 NEZ088 NEZ089 NEZ090 NEZ091 NEZ092 NEZ093</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KOAX.WI.Y.0004.230330T2100Z-230331T1200Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=NE12663DA53AB0.FireWeatherWatch.126641DD8240NE.OAXRFWOAX.74113b7e2be4abf99401977a3171f7a2</id>
-<updated>2023-03-30T15:28:00-05:00</updated>
-<published>2023-03-30T15:28:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Fire Weather Watch issued March 30 at 3:28PM CDT until March 31 at 7:00PM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=NE12663DA53AB0.FireWeatherWatch.126641DD8240NE.OAXRFWOAX.74113b7e2be4abf99401977a3171f7a2"/>
-<summary>...FIRE WEATHER WATCH IN EFFECT FROM FRIDAY AFTERNOON THROUGH EARLY FRIDAY EVENING FOR WIND AND LOW RELATIVE HUMIDITY FOR PARTS OF SOUTHEAST NEBRASKA AND SOUTHWEST IOWA... The National Weather Service in Omaha/Valley has issued a Fire Weather Watch for wind and low relative humidity, which is in effect from Friday afternoon through Friday evening.</summary>
-<cap:event>Fire Weather Watch</cap:event>
-<cap:effective>2023-03-30T15:28:00-05:00</cap:effective>
-<cap:expires>2023-03-31T19:00:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Future</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Possible</cap:certainty>
-<cap:areaDesc>Cass; Gage; Jefferson; Johnson; Lancaster; Nemaha; Otoe; Pawnee; Richardson; Saline</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>031025 031067 031095 031097 031109 031127 031131 031133 031147 031151</value>
-<valueName>UGC</valueName>
-<value>NEZ066 NEZ067 NEZ068 NEZ078 NEZ088 NEZ089 NEZ090 NEZ091 NEZ092 NEZ093</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.NEW.KOAX.FW.A.0001.230331T1800Z-230401T0000Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -8742,18 +8709,18 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=NE12663D9540D8.FloodAdvisory.12663DB45C84NE.LBFFLSLBF.fa635fa8e4dc57899d1554ab858d147b</id>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=NE12663D9540D8.FloodAdvisory.12663DB206DCNE.LBFFLSLBF.fa635fa8e4dc57899d1554ab858d147b</id>
 <updated>2023-03-29T10:58:00-05:00</updated>
 <published>2023-03-29T10:58:00-05:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Flood Advisory issued March 29 at 10:58AM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=NE12663D9540D8.FloodAdvisory.12663DB45C84NE.LBFFLSLBF.fa635fa8e4dc57899d1554ab858d147b"/>
+<title>Flood Advisory issued March 29 at 10:58AM CDT until March 30 at 11:15PM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=NE12663D9540D8.FloodAdvisory.12663DB206DCNE.LBFFLSLBF.fa635fa8e4dc57899d1554ab858d147b"/>
 <summary>...FLOOD ADVISORY NOW IN EFFECT UNTIL 145 PM MDT/245 PM CDT/ FRIDAY... * WHAT...Flooding caused by rain and snowmelt continues. * WHERE...A portion of north central Nebraska, including the following county, Cherry. * WHEN...Until 145 PM MDT Friday /245 PM CDT Friday/.</summary>
 <cap:event>Flood Advisory</cap:event>
 <cap:effective>2023-03-29T10:58:00-05:00</cap:effective>
-<cap:expires>2023-03-31T14:45:00-05:00</cap:expires>
+<cap:expires>2023-03-30T23:15:00-05:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
 <cap:category>Met</cap:category>
@@ -8772,6 +8739,38 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <valueName>VTEC</valueName>
 <value>/O.EXT.KLBF.FA.Y.0001.000000T0000Z-230331T1945Z/
 /00000.N.RS.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=NM12663DB1E0F8.HighWindWarning.12663DB33980NM.EPZNPWEPZ.243244fd8b8b82f3afc3b7ff7baad657</id>
+<updated>2023-03-30T21:18:00-06:00</updated>
+<published>2023-03-30T21:18:00-06:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>High Wind Warning issued March 30 at 9:18PM MDT until March 31 at 6:00AM MDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=NM12663DB1E0F8.HighWindWarning.12663DB33980NM.EPZNPWEPZ.243244fd8b8b82f3afc3b7ff7baad657"/>
+<summary>...HIGH WIND WARNING REMAINS IN EFFECT UNTIL 6 AM MDT FRIDAY... * WHAT...Southwest winds 35 to 45 mph with gusts over 50. Some gusts up to 65 mph possible over higher elevations overnight. * WHERE...Portions of south-central and southwestern New Mexico and far west Texas. This includes the Sacramento mountains, the Black Range and highlands of the Gila region. In addition.</summary>
+<cap:event>High Wind Warning</cap:event>
+<cap:effective>2023-03-30T21:18:00-06:00</cap:effective>
+<cap:expires>2023-03-31T06:00:00-06:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Severe</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Central Tularosa Basin; East Slopes Sacramento Mountains Below 7500 Feet; Eastern Black Range Foothills; Sacramento Mountains Above 7500 Feet; Southern Gila Highlands, Black Range; Southern Tularosa Basin; West Slopes Sacramento Mountains Below 7500 Feet</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>035013 035017 035035 035051</value>
+<valueName>UGC</valueName>
+<value>NMZ402 NMZ408 NMZ412 NMZ413 NMZ414 NMZ415 NMZ416</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KEPZ.HW.W.0006.000000T0000Z-230331T1200Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -8967,38 +8966,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value>/O.CON.KMAF.FW.W.0013.230331T1400Z-230401T0000Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=NM12663DA510E4.HighWindWarning.12663DB33980NM.EPZNPWEPZ.243244fd8b8b82f3afc3b7ff7baad657</id>
-<updated>2023-03-30T13:21:00-06:00</updated>
-<published>2023-03-30T13:21:00-06:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>High Wind Warning issued March 30 at 1:21PM MDT until March 31 at 6:00AM MDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=NM12663DA510E4.HighWindWarning.12663DB33980NM.EPZNPWEPZ.243244fd8b8b82f3afc3b7ff7baad657"/>
-<summary>...HIGH WIND WARNING REMAINS IN EFFECT UNTIL 6 AM MDT FRIDAY... * WHAT...Southwest winds 35 to 45 mph with gusts over 50. Some gusts up to 70 mph possible over higher elevations this evening. * WHERE...Portions of south-central and southwestern New Mexico and far west Texas. * WHEN...From 1 PM Thursday to 6 AM MDT Friday.</summary>
-<cap:event>High Wind Warning</cap:event>
-<cap:effective>2023-03-30T13:21:00-06:00</cap:effective>
-<cap:expires>2023-03-31T06:00:00-06:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Severe</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Central Tularosa Basin; East Slopes Sacramento Mountains Below 7500 Feet; Eastern Black Range Foothills; Sacramento Mountains Above 7500 Feet; Southern Gila Highlands, Black Range; Southern Tularosa Basin; West Slopes Sacramento Mountains Below 7500 Feet</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>035013 035017 035035 035051</value>
-<valueName>UGC</valueName>
-<value>NMZ402 NMZ408 NMZ412 NMZ413 NMZ414 NMZ415 NMZ416</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KEPZ.HW.W.0006.000000T0000Z-230331T1200Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -9454,6 +9421,102 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=OR12663DB1E288.WinterStormWarning.126641FC06C0OR.PDTWSWPDT.17104b6cc26f7cd7fc2a1e9dac112768</id>
+<updated>2023-03-30T20:22:00-07:00</updated>
+<published>2023-03-30T20:22:00-07:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Winter Storm Warning issued March 30 at 8:22PM PDT until April 02 at 5:00PM PDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=OR12663DB1E288.WinterStormWarning.126641FC06C0OR.PDTWSWPDT.17104b6cc26f7cd7fc2a1e9dac112768"/>
+<summary>...WINTER STORM WARNING REMAINS IN EFFECT FROM 11 PM FRIDAY TO 5 PM PDT SUNDAY... * WHAT...Heavy snow expected above 4000 feet. Total snow accumulations of 8 to 15 inches. Winds gusting as high as 45 mph. * WHERE...In Oregon, Northern Blue Mountains of Oregon. In</summary>
+<cap:event>Winter Storm Warning</cap:event>
+<cap:effective>2023-03-30T20:22:00-07:00</cap:effective>
+<cap:expires>2023-04-02T17:00:00-07:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Northern Blue Mountains of Oregon</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>041059 041061 041063</value>
+<valueName>UGC</valueName>
+<value>ORZ502</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KPDT.WS.W.0008.230401T0600Z-230403T0000Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=OR12663DB1E288.WinterWeatherAdvisory.126641FC06C0OR.PDTWSWPDT.86aa2710afe3714981de2c83a2400dc1</id>
+<updated>2023-03-30T20:22:00-07:00</updated>
+<published>2023-03-30T20:22:00-07:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Winter Weather Advisory issued March 30 at 8:22PM PDT until April 02 at 5:00PM PDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=OR12663DB1E288.WinterWeatherAdvisory.126641FC06C0OR.PDTWSWPDT.86aa2710afe3714981de2c83a2400dc1"/>
+<summary>...WINTER WEATHER ADVISORY REMAINS IN EFFECT FROM 11 PM FRIDAY TO 5 PM PDT SUNDAY... * WHAT...Snow expected above 4000 feet. Total snow accumulations of 4 to 7 inches. Winds gusting as high as 40 mph. * WHERE...Southern Blue Mountains of Oregon and Ochoco-John Day Highlands.</summary>
+<cap:event>Winter Weather Advisory</cap:event>
+<cap:effective>2023-03-30T20:22:00-07:00</cap:effective>
+<cap:expires>2023-04-02T17:00:00-07:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Ochoco-John Day Highlands; Southern Blue Mountains of Oregon</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>041013 041017 041023 041049 041059 041061 041069</value>
+<valueName>UGC</valueName>
+<value>ORZ503 ORZ506</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KPDT.WW.Y.0025.230401T0600Z-230403T0000Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=OR12663DB1E288.WinterStormWarning.126641FCF120OR.PDTWSWPDT.401fa87431c3660868f6871a2cec87cc</id>
+<updated>2023-03-30T20:22:00-07:00</updated>
+<published>2023-03-30T20:22:00-07:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Winter Storm Warning issued March 30 at 8:22PM PDT until April 02 at 11:00PM PDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=OR12663DB1E288.WinterStormWarning.126641FCF120OR.PDTWSWPDT.401fa87431c3660868f6871a2cec87cc"/>
+<summary>...WINTER STORM WARNING REMAINS IN EFFECT FROM 5 PM FRIDAY TO 11 PM PDT SUNDAY... * WHAT...Snow. Heavy at times. Total snow accumulations of 10 to 25 inches possible, mainly above 4500 feet, with locally higher amounts near the crestline. Winds could gust as high as 45 mph. * WHERE...East Slopes of the Oregon Cascades.</summary>
+<cap:event>Winter Storm Warning</cap:event>
+<cap:effective>2023-03-30T20:22:00-07:00</cap:effective>
+<cap:expires>2023-04-02T23:00:00-07:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>East Slopes of the Oregon Cascades</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>041017 041031</value>
+<valueName>UGC</valueName>
+<value>ORZ509</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KPDT.WS.W.0008.230401T0000Z-230403T0600Z/</value>
+</cap:parameter>
+</entry>
+<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=OR12663DA56BE8.WinterWeatherAdvisory.126641FC06C0OR.PQRWSWPQR.ac84bb9ea54507f7f7e43958ceb1391e</id>
 <updated>2023-03-30T14:54:00-07:00</updated>
 <published>2023-03-30T14:54:00-07:00</published>
@@ -9548,103 +9611,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <valueName>VTEC</valueName>
 <value>/O.UPG.KPQR.WS.A.0008.230401T0000Z-230403T0000Z/
 /O.NEW.KPQR.WS.W.0009.230401T0000Z-230403T0600Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=OR12663DA566D4.WinterStormWarning.126641FC06C0OR.PDTWSWPDT.17104b6cc26f7cd7fc2a1e9dac112768</id>
-<updated>2023-03-30T14:41:00-07:00</updated>
-<published>2023-03-30T14:41:00-07:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Winter Storm Warning issued March 30 at 2:41PM PDT until April 02 at 5:00PM PDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=OR12663DA566D4.WinterStormWarning.126641FC06C0OR.PDTWSWPDT.17104b6cc26f7cd7fc2a1e9dac112768"/>
-<summary>...WINTER STORM WARNING IN EFFECT FROM 11 PM FRIDAY TO 5 PM PDT SUNDAY ABOVE 4000 FEET... * WHAT...Heavy snow expected above 4000 feet. Total snow accumulations of 8 to 15 inches. Winds gusting as high as 45 mph. * WHERE...In Oregon, Northern Blue Mountains of Oregon. In</summary>
-<cap:event>Winter Storm Warning</cap:event>
-<cap:effective>2023-03-30T14:41:00-07:00</cap:effective>
-<cap:expires>2023-04-02T17:00:00-07:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Northern Blue Mountains of Oregon</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>041059 041061 041063</value>
-<valueName>UGC</valueName>
-<value>ORZ502</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.NEW.KPDT.WS.W.0008.230401T0600Z-230403T0000Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=OR12663DA566D4.WinterWeatherAdvisory.126641FC06C0OR.PDTWSWPDT.86aa2710afe3714981de2c83a2400dc1</id>
-<updated>2023-03-30T14:41:00-07:00</updated>
-<published>2023-03-30T14:41:00-07:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Winter Weather Advisory issued March 30 at 2:41PM PDT until April 02 at 5:00PM PDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=OR12663DA566D4.WinterWeatherAdvisory.126641FC06C0OR.PDTWSWPDT.86aa2710afe3714981de2c83a2400dc1"/>
-<summary>...WINTER WEATHER ADVISORY IN EFFECT FROM 11 PM FRIDAY TO 5 PM PDT SUNDAY ABOVE 4000 FEET... * WHAT...Snow expected above 4000 feet. Total snow accumulations of 4 to 7 inches. Winds gusting as high as 40 mph. * WHERE...Southern Blue Mountains of Oregon and Ochoco-John Day Highlands.</summary>
-<cap:event>Winter Weather Advisory</cap:event>
-<cap:effective>2023-03-30T14:41:00-07:00</cap:effective>
-<cap:expires>2023-04-02T17:00:00-07:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Ochoco-John Day Highlands; Southern Blue Mountains of Oregon</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>041013 041017 041023 041049 041059 041061 041069</value>
-<valueName>UGC</valueName>
-<value>ORZ503 ORZ506</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.NEW.KPDT.WW.Y.0025.230401T0600Z-230403T0000Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=OR12663DA566D4.WinterStormWarning.126641FCF120OR.PDTWSWPDT.401fa87431c3660868f6871a2cec87cc</id>
-<updated>2023-03-30T14:41:00-07:00</updated>
-<published>2023-03-30T14:41:00-07:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Winter Storm Warning issued March 30 at 2:41PM PDT until April 02 at 11:00PM PDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=OR12663DA566D4.WinterStormWarning.126641FCF120OR.PDTWSWPDT.401fa87431c3660868f6871a2cec87cc"/>
-<summary>...WINTER STORM WARNING IN EFFECT FROM 5 PM FRIDAY TO 11 PM PDT SUNDAY... * WHAT...Heavy snow possible. Total snow accumulations of 10 to 25 inches possible, mainly above 4500 feet, with locally higher amounts near the crestline. Winds could gust as high as 45 mph. * WHERE...East Slopes of the Oregon Cascades.</summary>
-<cap:event>Winter Storm Warning</cap:event>
-<cap:effective>2023-03-30T14:41:00-07:00</cap:effective>
-<cap:expires>2023-04-02T23:00:00-07:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>East Slopes of the Oregon Cascades</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>041017 041031</value>
-<valueName>UGC</valueName>
-<value>ORZ509</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.UPG.KPDT.WS.A.0007.230401T0000Z-230403T0000Z/
-/O.NEW.KPDT.WS.W.0008.230401T0000Z-230403T0600Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -9971,18 +9937,18 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=SD12663DB1C2E4.SevereThunderstormWarning.12663DB1E5A8SD.FSDSVRFSD.2be5c53bc212b6f1ab53233ee9713af5</id>
-<updated>2023-03-30T20:41:00-06:00</updated>
-<published>2023-03-30T20:41:00-06:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=SD12663DB1E418.SevereWeatherStatement.12663DB1E800SD.FSDSVSFSD.302c2abc285117803c7b79c367b09eb9</id>
+<updated>2023-03-30T21:26:00-06:00</updated>
+<published>2023-03-30T21:26:00-06:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Severe Thunderstorm Warning issued March 30 at 8:41PM MDT until March 30 at 9:30PM MDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=SD12663DB1C2E4.SevereThunderstormWarning.12663DB1E5A8SD.FSDSVRFSD.2be5c53bc212b6f1ab53233ee9713af5"/>
-<summary>The National Weather Service in Sioux Falls has issued a * Severe Thunderstorm Warning for... Eastern Bon Homme County in southeastern South Dakota... Northwestern Yankton County in southeastern South Dakota... * Until 1030 PM CDT. * At 940 PM CDT, a severe thunderstorm was located over Niobrara, or</summary>
-<cap:event>Severe Thunderstorm Warning</cap:event>
-<cap:effective>2023-03-30T20:41:00-06:00</cap:effective>
-<cap:expires>2023-03-30T21:30:00-06:00</cap:expires>
+<title>Severe Weather Statement issued March 30 at 9:26PM MDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=SD12663DB1E418.SevereWeatherStatement.12663DB1E800SD.FSDSVSFSD.302c2abc285117803c7b79c367b09eb9"/>
+<summary>...THE SEVERE THUNDERSTORM WARNING FOR EASTERN BON HOMME AND NORTHWESTERN YANKTON COUNTIES WILL EXPIRE AT 1030 PM CDT... The storm which prompted the warning has weakened below severe limits, and no longer poses an immediate threat to life or property. Therefore, the warning will be allowed to expire. However small hail up to nickel size is still possible with this thunderstorm.</summary>
+<cap:event>Severe Weather Statement</cap:event>
+<cap:effective>2023-03-30T21:26:00-06:00</cap:effective>
+<cap:expires>2023-03-30T21:36:00-06:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
 <cap:category>Met</cap:category>
@@ -9990,7 +9956,7 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:severity>Severe</cap:severity>
 <cap:certainty>Observed</cap:certainty>
 <cap:areaDesc>Bon Homme; Yankton</cap:areaDesc>
-<cap:polygon>42.8,-98.09 43.17,-97.75 43.16,-97.39 42.85,-97.59 42.86,-97.62 42.84,-97.69 42.87,-97.85 42.86,-97.87 42.83,-97.88 42.79,-97.92 42.78,-97.92 42.77,-97.95 42.77,-98.05 42.8,-98.09</cap:polygon>
+<cap:polygon>42.94,-97.86 43.17,-97.7 43.16,-97.39 42.85,-97.59 42.86,-97.62 42.84,-97.69 42.87,-97.85 42.94,-97.86</cap:polygon>
 <cap:geocode>
 <valueName>FIPS6</valueName>
 <value>046009 046135</value>
@@ -9999,7 +9965,233 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
-<value>/O.NEW.KFSD.SV.W.0001.230331T0241Z-230331T0330Z/</value>
+<value>/O.EXP.KFSD.SV.W.0001.000000T0000Z-230331T0330Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=SD12663DB1DD10.IceStormWarning.12663DB49910SD.ABRWSWABR.2378e7ee048dc761915d4feda0ed3078</id>
+<updated>2023-03-30T21:08:00-06:00</updated>
+<published>2023-03-30T21:08:00-06:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Ice Storm Warning issued March 30 at 9:08PM MDT until March 31 at 3:00PM MDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=SD12663DB1DD10.IceStormWarning.12663DB49910SD.ABRWSWABR.2378e7ee048dc761915d4feda0ed3078"/>
+<summary>...ICE STORM WARNING REMAINS IN EFFECT UNTIL 4 PM CDT FRIDAY... ...BLIZZARD WARNING REMAINS IN EFFECT FROM 4 PM FRIDAY TO 7 AM CDT SATURDAY... * WHAT...For the Ice Storm Warning, significant icing expected. Total snow accumulations of up to two inches and ice accumulations of one tenth to one quarter of an inch. Winds</summary>
+<cap:event>Ice Storm Warning</cap:event>
+<cap:effective>2023-03-30T21:08:00-06:00</cap:effective>
+<cap:expires>2023-03-31T15:00:00-06:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Codington; Deuel; Hamlin</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>046029 046039 046057</value>
+<valueName>UGC</valueName>
+<value>SDZ020 SDZ022 SDZ023</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KABR.IS.W.0001.230331T0600Z-230331T2100Z/
+/O.CON.KABR.BZ.W.0003.230331T2100Z-230401T1200Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=SD12663DB1DD10.BlizzardWarning.126641DD8240SD.ABRWSWABR.badc273c9d302213a53e1be361428ede</id>
+<updated>2023-03-30T21:08:00-06:00</updated>
+<published>2023-03-30T21:08:00-06:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Blizzard Warning issued March 30 at 9:08PM MDT until March 31 at 6:00PM MDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=SD12663DB1DD10.BlizzardWarning.126641DD8240SD.ABRWSWABR.badc273c9d302213a53e1be361428ede"/>
+<summary>...BLIZZARD WARNING REMAINS IN EFFECT FROM 7 AM CDT /6 AM MDT/ TO 7 PM CDT /6 PM MDT/ FRIDAY... * WHAT...Blizzard conditions expected. Total snow accumulations of 2 to 8 inches. Winds gusting as high as 45 mph. * WHERE...Corson, Campbell, Walworth and Dewey Counties. * WHEN...From 7 AM CDT /6 AM MDT/ to 7 PM CDT /6 PM MDT/ Friday.</summary>
+<cap:event>Blizzard Warning</cap:event>
+<cap:effective>2023-03-30T21:08:00-06:00</cap:effective>
+<cap:expires>2023-03-31T18:00:00-06:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Severe</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Campbell; Corson; Dewey; Walworth</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>046021 046031 046041 046129</value>
+<valueName>UGC</valueName>
+<value>SDZ003 SDZ004 SDZ009 SDZ015</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KABR.BZ.W.0003.230331T1200Z-230401T0000Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=SD12663DB1DD10.BlizzardWarning.126641DDF770SD.ABRWSWABR.43a98d5793b1e11bfee1a1b76ac2c658</id>
+<updated>2023-03-30T21:08:00-06:00</updated>
+<published>2023-03-30T21:08:00-06:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Blizzard Warning issued March 30 at 9:08PM MDT until March 31 at 9:00PM MDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=SD12663DB1DD10.BlizzardWarning.126641DDF770SD.ABRWSWABR.43a98d5793b1e11bfee1a1b76ac2c658"/>
+<summary>...BLIZZARD WARNING REMAINS IN EFFECT FROM 7 AM CDT /6 AM MDT/ TO 10 PM CDT /9 PM MDT/ FRIDAY... * WHAT...Blizzard conditions expected. Total snow accumulations of 6 to 12 inches and ice accumulations of a light glaze. Winds gusting as high as 45 mph. * WHERE...Stanley, Sully, Hughes, Jones and Lyman Counties.</summary>
+<cap:event>Blizzard Warning</cap:event>
+<cap:effective>2023-03-30T21:08:00-06:00</cap:effective>
+<cap:expires>2023-03-31T21:00:00-06:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Severe</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Hughes; Jones; Lyman; Stanley; Sully</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>046065 046075 046085 046117 046119</value>
+<valueName>UGC</valueName>
+<value>SDZ033 SDZ034 SDZ035 SDZ045 SDZ048</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KABR.BZ.W.0003.230331T1200Z-230401T0300Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=SD12663DB1DD10.BlizzardWarning.126641DE6CA0SD.ABRWSWABR.bf597e27f869fa189d0a520cbbebf085</id>
+<updated>2023-03-30T21:08:00-06:00</updated>
+<published>2023-03-30T21:08:00-06:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Blizzard Warning issued March 30 at 9:08PM MDT until April 01 at 12:00AM MDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=SD12663DB1DD10.BlizzardWarning.126641DE6CA0SD.ABRWSWABR.bf597e27f869fa189d0a520cbbebf085"/>
+<summary>...BLIZZARD WARNING REMAINS IN EFFECT FROM 7 AM FRIDAY TO 1 AM CDT SATURDAY... * WHAT...Blizzard conditions expected. Total snow accumulations of 3 to 13 inches and ice accumulations of around one tenth of an inch. Winds gusting as high as 50 mph. * WHERE...Portions of central and north central South Dakota.</summary>
+<cap:event>Blizzard Warning</cap:event>
+<cap:effective>2023-03-30T21:08:00-06:00</cap:effective>
+<cap:expires>2023-04-01T00:00:00-06:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Severe</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Buffalo; Edmunds; Faulk; Hand; Hyde; McPherson; Potter</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>046017 046045 046049 046059 046069 046089 046107</value>
+<valueName>UGC</valueName>
+<value>SDZ005 SDZ010 SDZ016 SDZ017 SDZ036 SDZ037 SDZ051</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KABR.BZ.W.0003.230331T1200Z-230401T0600Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=SD12663DB1DD10.BlizzardWarning.126641DEE1D0SD.ABRWSWABR.8681e68bc23f2922a560f43755b2d6cb</id>
+<updated>2023-03-30T21:08:00-06:00</updated>
+<published>2023-03-30T21:08:00-06:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Blizzard Warning issued March 30 at 9:08PM MDT until April 01 at 3:00AM MDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=SD12663DB1DD10.BlizzardWarning.126641DEE1D0SD.ABRWSWABR.8681e68bc23f2922a560f43755b2d6cb"/>
+<summary>...BLIZZARD WARNING REMAINS IN EFFECT FROM 9 AM FRIDAY TO 4 AM CDT SATURDAY... * WHAT...Blizzard conditions expected. Total snow accumulations of 5 to 12 inches and ice accumulations of around one tenth of an inch. Winds gusting as high as 55 mph. * WHERE...Brown, Marshall, Day, Spink and Clark Counties.</summary>
+<cap:event>Blizzard Warning</cap:event>
+<cap:effective>2023-03-30T21:08:00-06:00</cap:effective>
+<cap:expires>2023-04-01T03:00:00-06:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Severe</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Brown; Clark; Day; Marshall; Spink</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>046013 046025 046037 046091 046115</value>
+<valueName>UGC</valueName>
+<value>SDZ006 SDZ007 SDZ011 SDZ018 SDZ019</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KABR.BZ.W.0003.230331T1400Z-230401T0900Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=SD12663DB1DD10.BlizzardWarning.126641DF5700SD.ABRWSWABR.9485b7fbadcc4e7baa246586ac1793fb</id>
+<updated>2023-03-30T21:08:00-06:00</updated>
+<published>2023-03-30T21:08:00-06:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Blizzard Warning issued March 30 at 9:08PM MDT until April 01 at 6:00AM MDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=SD12663DB1DD10.BlizzardWarning.126641DF5700SD.ABRWSWABR.9485b7fbadcc4e7baa246586ac1793fb"/>
+<summary>...BLIZZARD WARNING REMAINS IN EFFECT FROM NOON FRIDAY TO 7 AM CDT SATURDAY... * WHAT...Blizzard conditions expected. Total snow accumulations of 6 to 12 inches and ice accumulations of a light glaze. Winds gusting as high as 55 mph. * WHERE...In Minnesota, Traverse and Big Stone Counties. In</summary>
+<cap:event>Blizzard Warning</cap:event>
+<cap:effective>2023-03-30T21:08:00-06:00</cap:effective>
+<cap:expires>2023-04-01T06:00:00-06:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Severe</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Grant; Roberts</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>046051 046109</value>
+<valueName>UGC</valueName>
+<value>SDZ008 SDZ021</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KABR.BZ.W.0003.230331T1700Z-230401T1200Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=SD12663DB1DD10.BlizzardWarning.126641DF5700SD.ABRWSWABR.3ac4090af439edc2124ebed99600b8fa</id>
+<updated>2023-03-30T21:08:00-06:00</updated>
+<published>2023-03-30T21:08:00-06:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Blizzard Warning issued March 30 at 9:08PM MDT until April 01 at 6:00AM MDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=SD12663DB1DD10.BlizzardWarning.126641DF5700SD.ABRWSWABR.3ac4090af439edc2124ebed99600b8fa"/>
+<summary>...ICE STORM WARNING REMAINS IN EFFECT UNTIL 4 PM CDT FRIDAY... ...BLIZZARD WARNING REMAINS IN EFFECT FROM 4 PM FRIDAY TO 7 AM CDT SATURDAY... * WHAT...For the Ice Storm Warning, significant icing expected. Total snow accumulations of up to two inches and ice accumulations of one tenth to one quarter of an inch. Winds</summary>
+<cap:event>Blizzard Warning</cap:event>
+<cap:effective>2023-03-30T21:08:00-06:00</cap:effective>
+<cap:expires>2023-04-01T06:00:00-06:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Severe</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Codington; Deuel; Hamlin</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>046029 046039 046057</value>
+<valueName>UGC</valueName>
+<value>SDZ020 SDZ022 SDZ023</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KABR.IS.W.0001.230331T0600Z-230331T2100Z/
+/O.CON.KABR.BZ.W.0003.230331T2100Z-230401T1200Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -10762,239 +10954,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=SD12663DA5197C.IceStormWarning.12663DB49910SD.ABRWSWABR.2378e7ee048dc761915d4feda0ed3078</id>
-<updated>2023-03-30T13:43:00-06:00</updated>
-<published>2023-03-30T13:43:00-06:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Ice Storm Warning issued March 30 at 1:43PM MDT until March 31 at 3:00PM MDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=SD12663DA5197C.IceStormWarning.12663DB49910SD.ABRWSWABR.2378e7ee048dc761915d4feda0ed3078"/>
-<summary>...ICE STORM WARNING IN EFFECT FROM 1 AM TO 4 PM CDT FRIDAY... ...BLIZZARD WARNING IN EFFECT FROM 4 PM FRIDAY TO 7 AM CDT SATURDAY... * WHAT...For the Ice Storm Warning, significant icing expected. Total snow accumulations of up to two inches and ice accumulations of one tenth to one third of an inch. Winds</summary>
-<cap:event>Ice Storm Warning</cap:event>
-<cap:effective>2023-03-30T13:43:00-06:00</cap:effective>
-<cap:expires>2023-03-31T15:00:00-06:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Codington; Deuel; Hamlin</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>046029 046039 046057</value>
-<valueName>UGC</valueName>
-<value>SDZ020 SDZ022 SDZ023</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.UPG.KABR.WS.A.0005.230331T0600Z-230401T0900Z/
-/O.NEW.KABR.BZ.W.0003.230331T2100Z-230401T1200Z/
-/O.NEW.KABR.IS.W.0001.230331T0600Z-230331T2100Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=SD12663DA5197C.BlizzardWarning.126641DD8240SD.ABRWSWABR.badc273c9d302213a53e1be361428ede</id>
-<updated>2023-03-30T13:43:00-06:00</updated>
-<published>2023-03-30T13:43:00-06:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Blizzard Warning issued March 30 at 1:43PM MDT until March 31 at 6:00PM MDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=SD12663DA5197C.BlizzardWarning.126641DD8240SD.ABRWSWABR.badc273c9d302213a53e1be361428ede"/>
-<summary>...BLIZZARD WARNING IN EFFECT FROM 7 AM CDT /6 AM MDT/ TO 7 PM CDT /6 PM MDT/ FRIDAY... * WHAT...Blizzard conditions expected. Total snow accumulations of 2 to 8 inches. Lowest amounts expected along the ND/SD border. Winds gusting as high as 45 mph. * WHERE...Corson, Campbell, Walworth and Dewey Counties.</summary>
-<cap:event>Blizzard Warning</cap:event>
-<cap:effective>2023-03-30T13:43:00-06:00</cap:effective>
-<cap:expires>2023-03-31T18:00:00-06:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Severe</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Campbell; Corson; Dewey; Walworth</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>046021 046031 046041 046129</value>
-<valueName>UGC</valueName>
-<value>SDZ003 SDZ004 SDZ009 SDZ015</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.UPG.KABR.WS.A.0005.230331T0600Z-230401T0900Z/
-/O.NEW.KABR.BZ.W.0003.230331T1200Z-230401T0000Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=SD12663DA5197C.BlizzardWarning.126641DDF770SD.ABRWSWABR.43a98d5793b1e11bfee1a1b76ac2c658</id>
-<updated>2023-03-30T13:43:00-06:00</updated>
-<published>2023-03-30T13:43:00-06:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Blizzard Warning issued March 30 at 1:43PM MDT until March 31 at 9:00PM MDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=SD12663DA5197C.BlizzardWarning.126641DDF770SD.ABRWSWABR.43a98d5793b1e11bfee1a1b76ac2c658"/>
-<summary>...BLIZZARD WARNING IN EFFECT FROM 7 AM CDT /6 AM MDT/ TO 10 PM CDT /9 PM MDT/ FRIDAY... * WHAT...Blizzard conditions expected. Total snow accumulations of 6 to 12 inches and ice accumulations of a light glaze. Winds gusting as high as 45 mph. * WHERE...Stanley, Sully, Hughes, Jones and Lyman Counties.</summary>
-<cap:event>Blizzard Warning</cap:event>
-<cap:effective>2023-03-30T13:43:00-06:00</cap:effective>
-<cap:expires>2023-03-31T21:00:00-06:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Severe</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Hughes; Jones; Lyman; Stanley; Sully</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>046065 046075 046085 046117 046119</value>
-<valueName>UGC</valueName>
-<value>SDZ033 SDZ034 SDZ035 SDZ045 SDZ048</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.UPG.KABR.WS.A.0005.230331T0600Z-230401T0900Z/
-/O.NEW.KABR.BZ.W.0003.230331T1200Z-230401T0300Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=SD12663DA5197C.BlizzardWarning.126641DE6CA0SD.ABRWSWABR.bf597e27f869fa189d0a520cbbebf085</id>
-<updated>2023-03-30T13:43:00-06:00</updated>
-<published>2023-03-30T13:43:00-06:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Blizzard Warning issued March 30 at 1:43PM MDT until April 01 at 12:00AM MDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=SD12663DA5197C.BlizzardWarning.126641DE6CA0SD.ABRWSWABR.bf597e27f869fa189d0a520cbbebf085"/>
-<summary>...BLIZZARD WARNING IN EFFECT FROM 7 AM FRIDAY TO 1 AM CDT SATURDAY... * WHAT...Blizzard conditions expected. Total snow accumulations of 3 to 13 inches with lowest amounts along the ND/SD border and ice accumulations of up to one tenth of an inch. Winds gusting as high as 50 mph.</summary>
-<cap:event>Blizzard Warning</cap:event>
-<cap:effective>2023-03-30T13:43:00-06:00</cap:effective>
-<cap:expires>2023-04-01T00:00:00-06:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Severe</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Buffalo; Edmunds; Faulk; Hand; Hyde; McPherson; Potter</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>046017 046045 046049 046059 046069 046089 046107</value>
-<valueName>UGC</valueName>
-<value>SDZ005 SDZ010 SDZ016 SDZ017 SDZ036 SDZ037 SDZ051</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.UPG.KABR.WS.A.0005.230331T0600Z-230401T0900Z/
-/O.NEW.KABR.BZ.W.0003.230331T1200Z-230401T0600Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=SD12663DA5197C.BlizzardWarning.126641DEE1D0SD.ABRWSWABR.8681e68bc23f2922a560f43755b2d6cb</id>
-<updated>2023-03-30T13:43:00-06:00</updated>
-<published>2023-03-30T13:43:00-06:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Blizzard Warning issued March 30 at 1:43PM MDT until April 01 at 3:00AM MDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=SD12663DA5197C.BlizzardWarning.126641DEE1D0SD.ABRWSWABR.8681e68bc23f2922a560f43755b2d6cb"/>
-<summary>...BLIZZARD WARNING IN EFFECT FROM 9 AM FRIDAY TO 4 AM CDT SATURDAY... * WHAT...Blizzard conditions expected. Total snow accumulations of 5 to 12 inches and ice accumulations of up to one tenth of an inch. Winds gusting as high as 55 mph. * WHERE...Brown, Marshall, Day, Spink and Clark Counties.</summary>
-<cap:event>Blizzard Warning</cap:event>
-<cap:effective>2023-03-30T13:43:00-06:00</cap:effective>
-<cap:expires>2023-04-01T03:00:00-06:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Severe</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Brown; Clark; Day; Marshall; Spink</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>046013 046025 046037 046091 046115</value>
-<valueName>UGC</valueName>
-<value>SDZ006 SDZ007 SDZ011 SDZ018 SDZ019</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.UPG.KABR.WS.A.0005.230331T0600Z-230401T0900Z/
-/O.NEW.KABR.BZ.W.0003.230331T1400Z-230401T0900Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=SD12663DA5197C.BlizzardWarning.126641DF5700SD.ABRWSWABR.9485b7fbadcc4e7baa246586ac1793fb</id>
-<updated>2023-03-30T13:43:00-06:00</updated>
-<published>2023-03-30T13:43:00-06:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Blizzard Warning issued March 30 at 1:43PM MDT until April 01 at 6:00AM MDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=SD12663DA5197C.BlizzardWarning.126641DF5700SD.ABRWSWABR.9485b7fbadcc4e7baa246586ac1793fb"/>
-<summary>...BLIZZARD WARNING IN EFFECT FROM NOON FRIDAY TO 7 AM CDT SATURDAY... * WHAT...Blizzard conditions expected. Total snow accumulations of 6 to 12 inches and ice accumulations of a light glaze. Winds gusting as high as 55 mph. * WHERE...In Minnesota, Traverse and Big Stone Counties. In</summary>
-<cap:event>Blizzard Warning</cap:event>
-<cap:effective>2023-03-30T13:43:00-06:00</cap:effective>
-<cap:expires>2023-04-01T06:00:00-06:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Severe</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Grant; Roberts</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>046051 046109</value>
-<valueName>UGC</valueName>
-<value>SDZ008 SDZ021</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.UPG.KABR.WS.A.0005.230331T0600Z-230401T0900Z/
-/O.NEW.KABR.BZ.W.0003.230331T1700Z-230401T1200Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=SD12663DA5197C.BlizzardWarning.126641DF5700SD.ABRWSWABR.3ac4090af439edc2124ebed99600b8fa</id>
-<updated>2023-03-30T13:43:00-06:00</updated>
-<published>2023-03-30T13:43:00-06:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Blizzard Warning issued March 30 at 1:43PM MDT until April 01 at 6:00AM MDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=SD12663DA5197C.BlizzardWarning.126641DF5700SD.ABRWSWABR.3ac4090af439edc2124ebed99600b8fa"/>
-<summary>...ICE STORM WARNING IN EFFECT FROM 1 AM TO 4 PM CDT FRIDAY... ...BLIZZARD WARNING IN EFFECT FROM 4 PM FRIDAY TO 7 AM CDT SATURDAY... * WHAT...For the Ice Storm Warning, significant icing expected. Total snow accumulations of up to two inches and ice accumulations of one tenth to one third of an inch. Winds</summary>
-<cap:event>Blizzard Warning</cap:event>
-<cap:effective>2023-03-30T13:43:00-06:00</cap:effective>
-<cap:expires>2023-04-01T06:00:00-06:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Severe</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Codington; Deuel; Hamlin</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>046029 046039 046057</value>
-<valueName>UGC</valueName>
-<value>SDZ020 SDZ022 SDZ023</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.UPG.KABR.WS.A.0005.230331T0600Z-230401T0900Z/
-/O.NEW.KABR.BZ.W.0003.230331T2100Z-230401T1200Z/
-/O.NEW.KABR.IS.W.0001.230331T0600Z-230331T2100Z/</value>
-</cap:parameter>
-</entry>
-<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=TN12663DB19C9C.HighWindWatch.126641ED39B0TN.MRXNPWMRX.ebdccb8c94f217a52e27e79fe43fba25</id>
 <updated>2023-03-30T20:43:00-05:00</updated>
 <published>2023-03-30T20:43:00-05:00</published>
@@ -11188,6 +11147,103 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <valueName>VTEC</valueName>
 <value>/O.EXT.KMEG.FL.Y.0014.230327T1626Z-230406T1200Z/
 /CRTM7.N.ER.000000T0000Z.000000T0000Z.000000T0000Z.NO/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=TX12663DB1E0F8.HighWindWarning.12663DB33980TX.EPZNPWEPZ.b817778552345956bd6b6c00fe881583</id>
+<updated>2023-03-30T22:18:00-05:00</updated>
+<published>2023-03-30T22:18:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>High Wind Warning issued March 30 at 10:18PM CDT until March 31 at 7:00AM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=TX12663DB1E0F8.HighWindWarning.12663DB33980TX.EPZNPWEPZ.b817778552345956bd6b6c00fe881583"/>
+<summary>...HIGH WIND WARNING REMAINS IN EFFECT UNTIL 6 AM MDT FRIDAY... * WHAT...Southwest winds 35 to 45 mph with gusts over 50. Some gusts up to 65 mph possible over higher elevations overnight. * WHERE...Portions of south-central and southwestern New Mexico and far west Texas. This includes the Sacramento mountains, the Black Range and highlands of the Gila region. In addition.</summary>
+<cap:event>High Wind Warning</cap:event>
+<cap:effective>2023-03-30T22:18:00-05:00</cap:effective>
+<cap:expires>2023-03-31T07:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Severe</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Eastern, Central El Paso County</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>048141</value>
+<valueName>UGC</valueName>
+<value>TXZ419</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KEPZ.HW.W.0006.000000T0000Z-230331T1200Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=TX12663DB1DC48.RedFlagWarning.126641DDF770TX.LUBRFWLUB.534b6b6ffba2b571bb747fdf1a76be8b</id>
+<updated>2023-03-30T22:06:00-05:00</updated>
+<published>2023-03-30T22:06:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Red Flag Warning issued March 30 at 10:06PM CDT until March 31 at 10:00PM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=TX12663DB1DC48.RedFlagWarning.126641DDF770TX.LUBRFWLUB.534b6b6ffba2b571bb747fdf1a76be8b"/>
+<summary>...RED FLAG WARNING REMAINS IN EFFECT FROM 9 AM TO 10 PM CDT FRIDAY FOR STRONG WINDS AND LOW RELATIVE HUMIDITY FOR THE EXTREME SOUTHWESTERN TEXAS PANHANDLE AND SOUTH PLAINS... * Timing...9 AM to 10 PM CDT. * Wind...West at 30 to 40 mph with gusts up to 60 mph. * Humidity...As low as 8 percent.</summary>
+<cap:event>Red Flag Warning</cap:event>
+<cap:effective>2023-03-30T22:06:00-05:00</cap:effective>
+<cap:expires>2023-03-31T22:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Severe</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Bailey; Castro; Cochran; Hale; Hockley; Lamb; Lubbock; Parmer; Swisher; Terry; Yoakum</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>048017 048069 048079 048189 048219 048279 048303 048369 048437 048445 048501</value>
+<valueName>UGC</valueName>
+<value>TXZ021 TXZ022 TXZ023 TXZ027 TXZ028 TXZ029 TXZ033 TXZ034 TXZ035 TXZ039 TXZ040</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.EXP.KLUB.FW.W.0016.000000T0000Z-230331T0300Z/
+/O.CON.KLUB.FW.W.0017.230331T1400Z-230401T0300Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=TX12663DB1DC48.RedFlagWarning.126641DDF770TX.LUBRFWLUB.4dc7d9403c597f72803a1a70aba5d104</id>
+<updated>2023-03-30T22:06:00-05:00</updated>
+<published>2023-03-30T22:06:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Red Flag Warning issued March 30 at 10:06PM CDT until March 31 at 10:00PM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=TX12663DB1DC48.RedFlagWarning.126641DDF770TX.LUBRFWLUB.4dc7d9403c597f72803a1a70aba5d104"/>
+<summary>...RED FLAG WARNING REMAINS IN EFFECT FROM 9 AM TO 10 PM CDT FRIDAY FOR STRONG WINDS AND LOW RELATIVE HUMIDITY FOR THE EXTREME SOUTHEASTERN TEXAS PANHANDLE AND ROLLING PLAINS... * Timing...9 AM to 10 PM CDT * Wind...West at 30 to 40 mph with gusts up to 55 mph. * Humidity...As low as 8 percent.</summary>
+<cap:event>Red Flag Warning</cap:event>
+<cap:effective>2023-03-30T22:06:00-05:00</cap:effective>
+<cap:expires>2023-03-31T22:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Severe</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Briscoe; Childress; Cottle; Crosby; Dickens; Floyd; Garza; Hall; Kent; King; Lynn; Motley; Stonewall</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>048045 048075 048101 048107 048125 048153 048169 048191 048263 048269 048305 048345 048433</value>
+<valueName>UGC</valueName>
+<value>TXZ024 TXZ025 TXZ026 TXZ030 TXZ031 TXZ032 TXZ036 TXZ037 TXZ038 TXZ041 TXZ042 TXZ043 TXZ044</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KLUB.FW.W.0017.230331T1400Z-230401T0300Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -11643,38 +11699,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=TX12663DA510E4.HighWindWarning.12663DB33980TX.EPZNPWEPZ.b817778552345956bd6b6c00fe881583</id>
-<updated>2023-03-30T14:21:00-05:00</updated>
-<published>2023-03-30T14:21:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>High Wind Warning issued March 30 at 2:21PM CDT until March 31 at 7:00AM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=TX12663DA510E4.HighWindWarning.12663DB33980TX.EPZNPWEPZ.b817778552345956bd6b6c00fe881583"/>
-<summary>...HIGH WIND WARNING REMAINS IN EFFECT UNTIL 6 AM MDT FRIDAY... * WHAT...Southwest winds 35 to 45 mph with gusts over 50. Some gusts up to 70 mph possible over higher elevations this evening. * WHERE...Portions of south-central and southwestern New Mexico and far west Texas. * WHEN...From 1 PM Thursday to 6 AM MDT Friday.</summary>
-<cap:event>High Wind Warning</cap:event>
-<cap:effective>2023-03-30T14:21:00-05:00</cap:effective>
-<cap:expires>2023-03-31T07:00:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Severe</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Eastern, Central El Paso County</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>048141</value>
-<valueName>UGC</valueName>
-<value>TXZ419</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KEPZ.HW.W.0006.000000T0000Z-230331T1200Z/</value>
-</cap:parameter>
-</entry>
-<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=TX12663DA4F0DC.WindAdvisory.12663DB33980TX.MAFNPWMAF.1c4bbaf876a69bf8eb2f7d5f2d3ce815</id>
 <updated>2023-03-30T13:39:00-05:00</updated>
 <published>2023-03-30T13:39:00-05:00</published>
@@ -11772,153 +11796,81 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=TX12663DA38A44.RedFlagWarning.126641DDF770TX.LUBRFWLUB.88ba8b8b2ccbdbf77abac6532e3f7a7f</id>
-<updated>2023-03-30T04:21:00-05:00</updated>
-<published>2023-03-30T04:21:00-05:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=UT12663DB1DA54.WinterWeatherAdvisory.12663DB423E0UT.SLCWSWSLC.7674ab10dae32d844282d3c686c44b75</id>
+<updated>2023-03-30T21:01:00-06:00</updated>
+<published>2023-03-30T21:01:00-06:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Red Flag Warning issued March 30 at 4:21AM CDT until March 31 at 10:00PM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=TX12663DA38A44.RedFlagWarning.126641DDF770TX.LUBRFWLUB.88ba8b8b2ccbdbf77abac6532e3f7a7f"/>
-<summary>...RED FLAG WARNING REMAINS IN EFFECT FROM NOON TODAY TO 10 PM CDT THIS EVENING FOR STRONG WINDS AND LOW RELATIVE HUMIDITY FOR THE SOUTHWEST TEXAS PANHANDLE AND THE WESTERN SOUTH PLAINS... ...RED FLAG WARNING IN EFFECT FROM 9 AM TO 10 PM CDT FRIDAY FOR STRONG WINDS AND LOW RELATIVE HUMIDITY FOR THE SOUTHWEST TEXAS PANHANDLE AND THE WESTERN SOUTH PLAINS...</summary>
-<cap:event>Red Flag Warning</cap:event>
-<cap:effective>2023-03-30T04:21:00-05:00</cap:effective>
-<cap:expires>2023-03-31T22:00:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Severe</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Bailey; Castro; Cochran; Hockley; Lamb; Parmer; Yoakum</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>048017 048069 048079 048219 048279 048369 048501</value>
-<valueName>UGC</valueName>
-<value>TXZ021 TXZ022 TXZ027 TXZ028 TXZ033 TXZ034 TXZ039</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.UPG.KLUB.FW.A.0015.230331T1400Z-230401T0300Z/
-/O.NEW.KLUB.FW.W.0017.230331T1400Z-230401T0300Z/
-/O.CON.KLUB.FW.W.0016.230330T1700Z-230331T0300Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=TX12663DA38A44.RedFlagWarning.126641DDF770TX.LUBRFWLUB.3254fc904198391f3b7033cbe9cd9a3d</id>
-<updated>2023-03-30T04:21:00-05:00</updated>
-<published>2023-03-30T04:21:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Red Flag Warning issued March 30 at 4:21AM CDT until March 31 at 10:00PM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=TX12663DA38A44.RedFlagWarning.126641DDF770TX.LUBRFWLUB.3254fc904198391f3b7033cbe9cd9a3d"/>
-<summary>...RED FLAG WARNING IN EFFECT FROM NOON TODAY TO 10 PM CDT THIS EVENING FOR STRONG WINDS AND LOW RELATIVE HUMIDITY FOR SWISHER, HALE, LUBBOCK, AND TERRY COUNTIES... ...RED FLAG WARNING IN EFFECT FROM 9 AM TO 10 PM CDT FRIDAY FOR STRONG WINDS AND LOW RELATIVE HUMIDITY FOR SWISHER, HALE, LUBBOCK, AND TERRY COUNTIES...</summary>
-<cap:event>Red Flag Warning</cap:event>
-<cap:effective>2023-03-30T04:21:00-05:00</cap:effective>
-<cap:expires>2023-03-31T22:00:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Severe</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Hale; Lubbock; Swisher; Terry</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>048189 048303 048437 048445</value>
-<valueName>UGC</valueName>
-<value>TXZ023 TXZ029 TXZ035 TXZ040</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.UPG.KLUB.FW.A.0014.230330T1700Z-230331T0300Z/
-/O.UPG.KLUB.FW.A.0015.230331T1400Z-230401T0300Z/
-/O.NEW.KLUB.FW.W.0017.230331T1400Z-230401T0300Z/
-/O.EXA.KLUB.FW.W.0016.230330T1700Z-230331T0300Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=TX12663DA38A44.RedFlagWarning.126641DDF770TX.LUBRFWLUB.99490dd6ab90c0c543ab582feb07bf79</id>
-<updated>2023-03-30T04:21:00-05:00</updated>
-<published>2023-03-30T04:21:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Red Flag Warning issued March 30 at 4:21AM CDT until March 31 at 10:00PM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=TX12663DA38A44.RedFlagWarning.126641DDF770TX.LUBRFWLUB.99490dd6ab90c0c543ab582feb07bf79"/>
-<summary>...RED FLAG WARNING IN EFFECT FROM 9 AM TO 10 PM CDT FRIDAY FOR STRONG WINDS AND LOW RELATIVE HUMIDITY FOR BRISCOE, FLOYD, AND LYNN COUNTIES... ...FIRE WEATHER WATCH IS CANCELLED FOR STRONG WINDS AND LOW RELATIVE HUMIDITY FOR BRISCOE, FLOYD, AND LYNN COUNTIES... The National Weather Service in Lubbock has issued a Red Flag</summary>
-<cap:event>Red Flag Warning</cap:event>
-<cap:effective>2023-03-30T04:21:00-05:00</cap:effective>
-<cap:expires>2023-03-31T22:00:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Severe</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Briscoe; Floyd; Lynn</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>048045 048153 048305</value>
-<valueName>UGC</valueName>
-<value>TXZ024 TXZ030 TXZ041</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CAN.KLUB.FW.A.0014.230330T1700Z-230331T0300Z/
-/O.UPG.KLUB.FW.A.0015.230331T1400Z-230401T0300Z/
-/O.NEW.KLUB.FW.W.0017.230331T1400Z-230401T0300Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=TX12663DA38A44.RedFlagWarning.126641DDF770TX.LUBRFWLUB.bc812f32940122d08fe6deb0fbabd06f</id>
-<updated>2023-03-30T04:21:00-05:00</updated>
-<published>2023-03-30T04:21:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Red Flag Warning issued March 30 at 4:21AM CDT until March 31 at 10:00PM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=TX12663DA38A44.RedFlagWarning.126641DDF770TX.LUBRFWLUB.bc812f32940122d08fe6deb0fbabd06f"/>
-<summary>...RED FLAG WARNING IN EFFECT FROM 9 AM TO 10 PM CDT FRIDAY FOR STRONG WINDS AND LOW RELATIVE HUMIDITY FOR THE SOUTHEAST TEXAS PANHANDLE AND THE ROLLING PLAINS... The National Weather Service in Lubbock has issued a Red Flag Warning, which is in effect from 9 AM to 10 PM CDT Friday. The Fire Weather Watch is no longer in effect.</summary>
-<cap:event>Red Flag Warning</cap:event>
-<cap:effective>2023-03-30T04:21:00-05:00</cap:effective>
-<cap:expires>2023-03-31T22:00:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Severe</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Childress; Cottle; Crosby; Dickens; Garza; Hall; Kent; King; Motley; Stonewall</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>048075 048101 048107 048125 048169 048191 048263 048269 048345 048433</value>
-<valueName>UGC</valueName>
-<value>TXZ025 TXZ026 TXZ031 TXZ032 TXZ036 TXZ037 TXZ038 TXZ042 TXZ043 TXZ044</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.UPG.KLUB.FW.A.0015.230331T1400Z-230401T0300Z/
-/O.NEW.KLUB.FW.W.0017.230331T1400Z-230401T0300Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=UT12663DA55BE4.WinterWeatherAdvisory.12663DB423E0UT.SLCWSWSLC.b6ee7db479baaa465797ac170a332687</id>
-<updated>2023-03-30T15:13:00-06:00</updated>
-<published>2023-03-30T15:13:00-06:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Winter Weather Advisory issued March 30 at 3:13PM MDT until March 31 at 12:00PM MDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=UT12663DA55BE4.WinterWeatherAdvisory.12663DB423E0UT.SLCWSWSLC.b6ee7db479baaa465797ac170a332687"/>
-<summary>...WINTER WEATHER ADVISORY REMAINS IN EFFECT UNTIL NOON MDT FRIDAY... * WHAT...Snow. Additional snow accumulations of 6 to 12 inches. Winds gusting as high as 50 mph Friday morning. * WHERE...Central Mountains. * WHEN...Until noon MDT Friday.</summary>
+<title>Winter Weather Advisory issued March 30 at 9:01PM MDT until March 31 at 12:00PM MDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=UT12663DB1DA54.WinterWeatherAdvisory.12663DB423E0UT.SLCWSWSLC.7674ab10dae32d844282d3c686c44b75"/>
+<summary>...WINTER WEATHER ADVISORY REMAINS IN EFFECT UNTIL NOON MDT FRIDAY... * WHAT...Snow expected. Total snow accumulations of 1 to 3 inches on the valley floor and 4 to 10 inches on the benches. Winds gusting as high as 35 mph * WHERE...Tooele and Rush Valleys, Eastern Box Elder County,</summary>
 <cap:event>Winter Weather Advisory</cap:event>
-<cap:effective>2023-03-30T15:13:00-06:00</cap:effective>
+<cap:effective>2023-03-30T21:01:00-06:00</cap:effective>
+<cap:expires>2023-03-31T12:00:00-06:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Cache Valley, Utah Portion; Eastern Box Elder County; Northern Wasatch Front; Salt Lake Valley; Tooele and Rush Valleys; Utah Valley</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>049003 049005 049011 049035 049045 049049 049057</value>
+<valueName>UGC</valueName>
+<value>UTZ102 UTZ103 UTZ104 UTZ105 UTZ106 UTZ107</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KSLC.WW.Y.0025.000000T0000Z-230331T1800Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=UT12663DB1DA54.WinterWeatherAdvisory.12663DB423E0UT.SLCWSWSLC.6ed3a81c031ef89d98875e816dd729ac</id>
+<updated>2023-03-30T21:01:00-06:00</updated>
+<published>2023-03-30T21:01:00-06:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Winter Weather Advisory issued March 30 at 9:01PM MDT until March 31 at 12:00PM MDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=UT12663DB1DA54.WinterWeatherAdvisory.12663DB423E0UT.SLCWSWSLC.6ed3a81c031ef89d98875e816dd729ac"/>
+<summary>...WINTER WEATHER ADVISORY REMAINS IN EFFECT UNTIL NOON MDT FRIDAY... * WHAT...Snow. Additional snow accumulations of 4 to 8 inches, except up to 12 inches in the Ogden Valley. * WHERE...Wasatch Back. * WHEN...Until noon MDT Friday.</summary>
+<cap:event>Winter Weather Advisory</cap:event>
+<cap:effective>2023-03-30T21:01:00-06:00</cap:effective>
+<cap:expires>2023-03-31T12:00:00-06:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Wasatch Back</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>049029 049043 049051</value>
+<valueName>UGC</valueName>
+<value>UTZ108</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KSLC.WW.Y.0025.000000T0000Z-230331T1800Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=UT12663DB1DA54.WinterWeatherAdvisory.12663DB423E0UT.SLCWSWSLC.b6ee7db479baaa465797ac170a332687</id>
+<updated>2023-03-30T21:01:00-06:00</updated>
+<published>2023-03-30T21:01:00-06:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Winter Weather Advisory issued March 30 at 9:01PM MDT until March 31 at 12:00PM MDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=UT12663DB1DA54.WinterWeatherAdvisory.12663DB423E0UT.SLCWSWSLC.b6ee7db479baaa465797ac170a332687"/>
+<summary>...WINTER WEATHER ADVISORY REMAINS IN EFFECT UNTIL NOON MDT FRIDAY... * WHAT...Snow. Additional snow accumulations of up to 6 to 12 inches. Winds gusting as high as 50 mph Friday morning. * WHERE...Central Mountains. * WHEN...Until noon MDT Friday.</summary>
+<cap:event>Winter Weather Advisory</cap:event>
+<cap:effective>2023-03-30T21:01:00-06:00</cap:effective>
 <cap:expires>2023-03-31T12:00:00-06:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
@@ -11940,113 +11892,17 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=UT12663DA55BE4.WinterWeatherAdvisory.12663DB423E0UT.SLCWSWSLC.6ed3a81c031ef89d98875e816dd729ac</id>
-<updated>2023-03-30T15:13:00-06:00</updated>
-<published>2023-03-30T15:13:00-06:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=UT12663DB1DA54.WinterStormWarning.126641DDF770UT.SLCWSWSLC.be3dd997752b04c96d53dd5fa3b38da2</id>
+<updated>2023-03-30T21:01:00-06:00</updated>
+<published>2023-03-30T21:01:00-06:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Winter Weather Advisory issued March 30 at 3:13PM MDT until March 31 at 12:00PM MDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=UT12663DA55BE4.WinterWeatherAdvisory.12663DB423E0UT.SLCWSWSLC.6ed3a81c031ef89d98875e816dd729ac"/>
-<summary>...WINTER WEATHER ADVISORY REMAINS IN EFFECT FROM 6 PM THIS EVENING TO NOON MDT FRIDAY... * WHAT...Snow expected. Total snow accumulations of 4 to 8 inches, except up to 12 inches in the Ogden Valley. * WHERE...Wasatch Back. * WHEN...From 6 PM this evening to noon MDT Friday.</summary>
-<cap:event>Winter Weather Advisory</cap:event>
-<cap:effective>2023-03-30T15:13:00-06:00</cap:effective>
-<cap:expires>2023-03-31T12:00:00-06:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Wasatch Back</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>049029 049043 049051</value>
-<valueName>UGC</valueName>
-<value>UTZ108</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KSLC.WW.Y.0025.230331T0000Z-230331T1800Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=UT12663DA55BE4.WinterWeatherAdvisory.12663DB423E0UT.SLCWSWSLC.f69429f951cc935039e2b39f77453d46</id>
-<updated>2023-03-30T15:13:00-06:00</updated>
-<published>2023-03-30T15:13:00-06:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Winter Weather Advisory issued March 30 at 3:13PM MDT until March 31 at 12:00PM MDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=UT12663DA55BE4.WinterWeatherAdvisory.12663DB423E0UT.SLCWSWSLC.f69429f951cc935039e2b39f77453d46"/>
-<summary>...WINTER WEATHER ADVISORY REMAINS IN EFFECT FROM 9 PM THIS EVENING TO NOON MDT FRIDAY... * WHAT...Snow expected. Total snow accumulations of 1 to 3 inches on the valley floor and 4 to 10 inches on the benches. Winds gusting as high as 35 mph. * WHERE...Tooele and Rush Valleys, Northern Wasatch Front and</summary>
-<cap:event>Winter Weather Advisory</cap:event>
-<cap:effective>2023-03-30T15:13:00-06:00</cap:effective>
-<cap:expires>2023-03-31T12:00:00-06:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Northern Wasatch Front; Salt Lake Valley; Tooele and Rush Valleys</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>049011 049035 049045 049057</value>
-<valueName>UGC</valueName>
-<value>UTZ102 UTZ104 UTZ105</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KSLC.WW.Y.0025.230331T0300Z-230331T1800Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=UT12663DA55BE4.WinterWeatherAdvisory.12663DB423E0UT.SLCWSWSLC.3bea1582edeb12a83737acaf4af2ca90</id>
-<updated>2023-03-30T15:13:00-06:00</updated>
-<published>2023-03-30T15:13:00-06:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Winter Weather Advisory issued March 30 at 3:13PM MDT until March 31 at 12:00PM MDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=UT12663DA55BE4.WinterWeatherAdvisory.12663DB423E0UT.SLCWSWSLC.3bea1582edeb12a83737acaf4af2ca90"/>
-<summary>...WINTER WEATHER ADVISORY IN EFFECT FROM 9 PM THIS EVENING TO NOON MDT FRIDAY... * WHAT...Snow expected. Total snow accumulations of 1 to 4 inches. * WHERE...Eastern Box Elder County, Utah Valley and Cache Valley/Utah Portion.</summary>
-<cap:event>Winter Weather Advisory</cap:event>
-<cap:effective>2023-03-30T15:13:00-06:00</cap:effective>
-<cap:expires>2023-03-31T12:00:00-06:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Cache Valley, Utah Portion; Eastern Box Elder County; Utah Valley</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>049003 049005 049049</value>
-<valueName>UGC</valueName>
-<value>UTZ103 UTZ106 UTZ107</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.EXA.KSLC.WW.Y.0025.230331T0300Z-230331T1800Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=UT12663DA55BE4.WinterStormWarning.126641DDF770UT.SLCWSWSLC.be3dd997752b04c96d53dd5fa3b38da2</id>
-<updated>2023-03-30T15:13:00-06:00</updated>
-<published>2023-03-30T15:13:00-06:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Winter Storm Warning issued March 30 at 3:13PM MDT until March 31 at 9:00PM MDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=UT12663DA55BE4.WinterStormWarning.126641DDF770UT.SLCWSWSLC.be3dd997752b04c96d53dd5fa3b38da2"/>
-<summary>...WINTER STORM WARNING REMAINS IN EFFECT UNTIL 9 PM MDT FRIDAY... * WHAT...Heavy snow. Additional snow accumulations of 10 to 18 inches with locally up to 2 feet in the upper Cottonwoods and Ogden and Davis County-area mountains. * WHERE...Wasatch Mountains I-80 North and Wasatch Mountains South of I-80.</summary>
+<title>Winter Storm Warning issued March 30 at 9:01PM MDT until March 31 at 9:00PM MDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=UT12663DB1DA54.WinterStormWarning.126641DDF770UT.SLCWSWSLC.be3dd997752b04c96d53dd5fa3b38da2"/>
+<summary>...WINTER STORM WARNING REMAINS IN EFFECT UNTIL 9 PM MDT FRIDAY... * WHAT...Heavy snow. Additional snow accumulations of 10 to 18 inches, with up to 2 feet in the upper Cottonwoods, as well as the Ogden and Davis County-area mountains. * WHERE...Wasatch Mountains I-80 North and Wasatch Mountains South of I-80.</summary>
 <cap:event>Winter Storm Warning</cap:event>
-<cap:effective>2023-03-30T15:13:00-06:00</cap:effective>
+<cap:effective>2023-03-30T21:01:00-06:00</cap:effective>
 <cap:expires>2023-03-31T21:00:00-06:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
@@ -12068,17 +11924,17 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=UT12663DA55BE4.WinterWeatherAdvisory.126641DDF770UT.SLCWSWSLC.972480949363f3c84bb819c74009a294</id>
-<updated>2023-03-30T15:13:00-06:00</updated>
-<published>2023-03-30T15:13:00-06:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=UT12663DB1DA54.WinterWeatherAdvisory.126641DDF770UT.SLCWSWSLC.972480949363f3c84bb819c74009a294</id>
+<updated>2023-03-30T21:01:00-06:00</updated>
+<published>2023-03-30T21:01:00-06:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Winter Weather Advisory issued March 30 at 3:13PM MDT until March 31 at 9:00PM MDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=UT12663DA55BE4.WinterWeatherAdvisory.126641DDF770UT.SLCWSWSLC.972480949363f3c84bb819c74009a294"/>
-<summary>...WINTER WEATHER ADVISORY REMAINS IN EFFECT UNTIL 9 PM MDT FRIDAY... * WHAT...Snow. Additional snow accumulations of 8 to 14 inches. Winds gusting as high as 50 mph Friday morning. * WHERE...Western Uinta Mountains. * WHEN...Until 9 PM MDT Friday.</summary>
+<title>Winter Weather Advisory issued March 30 at 9:01PM MDT until March 31 at 9:00PM MDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=UT12663DB1DA54.WinterWeatherAdvisory.126641DDF770UT.SLCWSWSLC.972480949363f3c84bb819c74009a294"/>
+<summary>...WINTER WEATHER ADVISORY REMAINS IN EFFECT UNTIL 9 PM MDT FRIDAY... * WHAT...Snow. Additional snow accumulations of up to 8 to 14 inches. Winds gusting as high as 50 mph Friday morning. * WHERE...Western Uinta Mountains. * WHEN...Until 9 PM MDT Friday.</summary>
 <cap:event>Winter Weather Advisory</cap:event>
-<cap:effective>2023-03-30T15:13:00-06:00</cap:effective>
+<cap:effective>2023-03-30T21:01:00-06:00</cap:effective>
 <cap:expires>2023-03-31T21:00:00-06:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
@@ -12260,6 +12116,70 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=WA12663DB1E288.WinterStormWarning.126641FC06C0WA.PDTWSWPDT.157f56df59a233a181d4273d1089123a</id>
+<updated>2023-03-30T20:22:00-07:00</updated>
+<published>2023-03-30T20:22:00-07:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Winter Storm Warning issued March 30 at 8:22PM PDT until April 02 at 5:00PM PDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=WA12663DB1E288.WinterStormWarning.126641FC06C0WA.PDTWSWPDT.157f56df59a233a181d4273d1089123a"/>
+<summary>...WINTER STORM WARNING REMAINS IN EFFECT FROM 5 PM FRIDAY TO 5 PM PDT SUNDAY... * WHAT...Snow. Heavy at times. Total snow accumulations of 10 to 25 inches. Winds gusting as high as 40 mph. * WHERE...Upper Slopes of the Eastern Washington Cascades Crest. * WHEN...From 5 PM Friday to 5 PM PDT Sunday.</summary>
+<cap:event>Winter Storm Warning</cap:event>
+<cap:effective>2023-03-30T20:22:00-07:00</cap:effective>
+<cap:expires>2023-04-02T17:00:00-07:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Upper Slopes of the Eastern Washington Cascades Crest</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>053037 053077</value>
+<valueName>UGC</valueName>
+<value>WAZ522</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KPDT.WS.W.0008.230401T0000Z-230403T0000Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=WA12663DB1E288.WinterStormWarning.126641FC06C0WA.PDTWSWPDT.ad95702e5cce3d40cc23b37403167632</id>
+<updated>2023-03-30T20:22:00-07:00</updated>
+<published>2023-03-30T20:22:00-07:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Winter Storm Warning issued March 30 at 8:22PM PDT until April 02 at 5:00PM PDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=WA12663DB1E288.WinterStormWarning.126641FC06C0WA.PDTWSWPDT.ad95702e5cce3d40cc23b37403167632"/>
+<summary>...WINTER STORM WARNING REMAINS IN EFFECT FROM 11 PM FRIDAY TO 5 PM PDT SUNDAY... * WHAT...Heavy snow expected above 4000 feet. Total snow accumulations of 8 to 15 inches. Winds gusting as high as 45 mph. * WHERE...In Oregon, Northern Blue Mountains of Oregon. In</summary>
+<cap:event>Winter Storm Warning</cap:event>
+<cap:effective>2023-03-30T20:22:00-07:00</cap:effective>
+<cap:expires>2023-04-02T17:00:00-07:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Northwest Blue Mountains</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>053013</value>
+<valueName>UGC</valueName>
+<value>WAZ030</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KPDT.WS.W.0008.230401T0600Z-230403T0000Z/</value>
+</cap:parameter>
+</entry>
+<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=WA12663DA56CB0.WinterStormWarning.126641EDAEE0WA.SEWWSWSEW.ec7f4402812a9fd3846358ed31fb51c9</id>
 <updated>2023-03-30T14:56:00-07:00</updated>
 <published>2023-03-30T14:56:00-07:00</published>
@@ -12420,71 +12340,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value>/O.NEW.KOTX.WS.W.0007.230401T0600Z-230403T0000Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=WA12663DA566D4.WinterStormWarning.126641FC06C0WA.PDTWSWPDT.157f56df59a233a181d4273d1089123a</id>
-<updated>2023-03-30T14:41:00-07:00</updated>
-<published>2023-03-30T14:41:00-07:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Winter Storm Warning issued March 30 at 2:41PM PDT until April 02 at 5:00PM PDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=WA12663DA566D4.WinterStormWarning.126641FC06C0WA.PDTWSWPDT.157f56df59a233a181d4273d1089123a"/>
-<summary>...WINTER STORM WARNING IN EFFECT FROM 5 PM FRIDAY TO 5 PM PDT SUNDAY... * WHAT...Heavy snow possible. Total snow accumulations of 10 to 25 inches. Winds gusting as high as 40 mph. * WHERE...Upper Slopes of the Eastern Washington Cascades Crest. * WHEN...From 5 PM Friday to 5 PM PDT Sunday.</summary>
-<cap:event>Winter Storm Warning</cap:event>
-<cap:effective>2023-03-30T14:41:00-07:00</cap:effective>
-<cap:expires>2023-04-02T17:00:00-07:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Upper Slopes of the Eastern Washington Cascades Crest</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>053037 053077</value>
-<valueName>UGC</valueName>
-<value>WAZ522</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.UPG.KPDT.WS.A.0007.230401T0000Z-230403T0000Z/
-/O.NEW.KPDT.WS.W.0008.230401T0000Z-230403T0000Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=WA12663DA566D4.WinterStormWarning.126641FC06C0WA.PDTWSWPDT.ad95702e5cce3d40cc23b37403167632</id>
-<updated>2023-03-30T14:41:00-07:00</updated>
-<published>2023-03-30T14:41:00-07:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Winter Storm Warning issued March 30 at 2:41PM PDT until April 02 at 5:00PM PDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=WA12663DA566D4.WinterStormWarning.126641FC06C0WA.PDTWSWPDT.ad95702e5cce3d40cc23b37403167632"/>
-<summary>...WINTER STORM WARNING IN EFFECT FROM 11 PM FRIDAY TO 5 PM PDT SUNDAY ABOVE 4000 FEET... * WHAT...Heavy snow expected above 4000 feet. Total snow accumulations of 8 to 15 inches. Winds gusting as high as 45 mph. * WHERE...In Oregon, Northern Blue Mountains of Oregon. In</summary>
-<cap:event>Winter Storm Warning</cap:event>
-<cap:effective>2023-03-30T14:41:00-07:00</cap:effective>
-<cap:expires>2023-04-02T17:00:00-07:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Northwest Blue Mountains</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>053013</value>
-<valueName>UGC</valueName>
-<value>WAZ030</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.NEW.KPDT.WS.W.0008.230401T0600Z-230403T0000Z/</value>
 </cap:parameter>
 </entry>
 <entry>
