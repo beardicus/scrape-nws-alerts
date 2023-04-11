@@ -16,11 +16,11 @@ xmlns = 'http://www.w3.org/2005/Atom'
 xmlns:cap = 'urn:oasis:names:tc:emergency:cap:1.1'
 xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 >
-<!-- http-date = Tue, 11 Apr 2023 19:28:00 GMT -->
+<!-- http-date = Tue, 11 Apr 2023 20:02:00 GMT -->
 <id>https://alerts.weather.gov/cap/us.php?x=0</id>
 <logo>http://alerts.weather.gov/images/xml_logo.gif</logo>
 <generator>NWS CAP Server</generator>
-<updated>2023-04-11T15:28:00-04:00</updated>
+<updated>2023-04-11T15:02:00-05:00</updated>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
@@ -347,17 +347,50 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=AL126642786C10.RipCurrentStatement.126642B4CF70AL.MOBCFWMOB.cee525684f917a73509b06e065697ae3</id>
-<updated>2023-04-11T10:24:00-05:00</updated>
-<published>2023-04-11T10:24:00-05:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=AL126642790DC8.HighSurfAdvisory.126642975C60AL.MOBCFWMOB.fac27f425dc39c22c00bd9f0be921b7f</id>
+<updated>2023-04-11T14:38:00-05:00</updated>
+<published>2023-04-11T14:38:00-05:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Rip Current Statement issued April 11 at 10:24AM CDT until April 15 at 6:00AM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=AL126642786C10.RipCurrentStatement.126642B4CF70AL.MOBCFWMOB.cee525684f917a73509b06e065697ae3"/>
-<summary>...HIGH RIP CURRENT RISK REMAINS IN EFFECT THROUGH LATE FRIDAY NIGHT... * WHAT...Dangerous rip currents. * WHERE...In Alabama, Mobile Coastal and Baldwin Coastal Counties. In Florida, Escambia Coastal, Santa Rosa Coastal and Okaloosa Coastal Counties.</summary>
+<title>High Surf Advisory issued April 11 at 2:38PM CDT until April 13 at 1:00PM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=AL126642790DC8.HighSurfAdvisory.126642975C60AL.MOBCFWMOB.fac27f425dc39c22c00bd9f0be921b7f"/>
+<summary>...HIGH RIP CURRENT RISK REMAINS IN EFFECT THROUGH LATE FRIDAY NIGHT... ...HIGH SURF ADVISORY IN EFFECT FROM 7 AM WEDNESDAY TO 1 PM CDT THURSDAY... * WHAT...For the High Rip Current Risk, dangerous rip currents. For the High Surf Advisory, large breaking waves of 5 to 6 feet</summary>
+<cap:event>High Surf Advisory</cap:event>
+<cap:effective>2023-04-11T14:38:00-05:00</cap:effective>
+<cap:expires>2023-04-13T13:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Baldwin Coastal; Mobile Coastal</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>001003 001097</value>
+<valueName>UGC</valueName>
+<value>ALZ265 ALZ266</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.NEW.KMOB.SU.Y.0006.230412T1200Z-230413T1800Z/
+/O.CON.KMOB.RP.S.0019.000000T0000Z-230415T1100Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=AL126642790DC8.RipCurrentStatement.126642B4CF70AL.MOBCFWMOB.cee525684f917a73509b06e065697ae3</id>
+<updated>2023-04-11T14:38:00-05:00</updated>
+<published>2023-04-11T14:38:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Rip Current Statement issued April 11 at 2:38PM CDT until April 15 at 6:00AM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=AL126642790DC8.RipCurrentStatement.126642B4CF70AL.MOBCFWMOB.cee525684f917a73509b06e065697ae3"/>
+<summary>...HIGH RIP CURRENT RISK REMAINS IN EFFECT THROUGH LATE FRIDAY NIGHT... ...HIGH SURF ADVISORY IN EFFECT FROM 7 AM WEDNESDAY TO 1 PM CDT THURSDAY... * WHAT...For the High Rip Current Risk, dangerous rip currents. For the High Surf Advisory, large breaking waves of 5 to 6 feet</summary>
 <cap:event>Rip Current Statement</cap:event>
-<cap:effective>2023-04-11T10:24:00-05:00</cap:effective>
+<cap:effective>2023-04-11T14:38:00-05:00</cap:effective>
 <cap:expires>2023-04-15T06:00:00-05:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
@@ -375,7 +408,8 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
-<value>/O.CON.KMOB.RP.S.0019.000000T0000Z-230415T1100Z/</value>
+<value>/O.NEW.KMOB.SU.Y.0006.230412T1200Z-230413T1800Z/
+/O.CON.KMOB.RP.S.0019.000000T0000Z-230415T1100Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -1555,6 +1589,38 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=DC1266427910E8.FireWeatherWatch.126642949D40DC.LWXRFWLWX.3b94a19705f48aca52e4d949e4fec7d0</id>
+<updated>2023-04-11T15:46:00-04:00</updated>
+<published>2023-04-11T15:46:00-04:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Fire Weather Watch issued April 11 at 3:46PM EDT until April 12 at 8:00PM EDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=DC1266427910E8.FireWeatherWatch.126642949D40DC.LWXRFWLWX.3b94a19705f48aca52e4d949e4fec7d0"/>
+<summary>...FIRE WEATHER WATCH IN EFFECT FROM WEDNESDAY AFTERNOON THROUGH WEDNESDAY EVENING FOR GUSTY WINDS AND LOW HUMIDITY IN MARYLAND... * WINDS...West 10 to 20 mph with gusts up to 30 mph. * RELATIVE HUMIDITY...As low as 30 percent. * IMPACTS...The combination of dry conditions, low humidity, and strong gusty winds may result in favorable conditions for the</summary>
+<cap:event>Fire Weather Watch</cap:event>
+<cap:effective>2023-04-11T15:46:00-04:00</cap:effective>
+<cap:expires>2023-04-12T20:00:00-04:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Future</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Possible</cap:certainty>
+<cap:areaDesc>District of Columbia</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>011001</value>
+<valueName>UGC</valueName>
+<value>DCZ001</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.NEW.KLWX.FW.A.0001.230412T1600Z-230413T0000Z/</value>
+</cap:parameter>
+</entry>
+<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=DC126642780360.SpecialWeatherStatement.126642855B00DC.LWXSPSLWX.456c0c87440bd1bbec4c82b9ac26ab3e</id>
 <updated>2023-04-11T08:56:00-04:00</updated>
 <published>2023-04-11T08:56:00-04:00</published>
@@ -1616,6 +1682,202 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value></value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=FL1266427915FC.CoastalFloodStatement.12664286BA90FL.KEYCFWKEY.6c335ab07ceaf9d24d4a52d3824e2d72</id>
+<updated>2023-04-11T15:59:00-04:00</updated>
+<published>2023-04-11T15:59:00-04:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Coastal Flood Statement issued April 11 at 3:59PM EDT until April 12 at 5:00AM EDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=FL1266427915FC.CoastalFloodStatement.12664286BA90FL.KEYCFWKEY.6c335ab07ceaf9d24d4a52d3824e2d72"/>
+<summary>...COASTAL FLOOD STATEMENT IN EFFECT... * WHAT...Minor saltwater flooding. * WHERE...Upper Florida Keys. * WHEN...Through late tonight. * IMPACTS...Minor saltwater flooding of low elevation streets and lots is likely. Some storm drains will overflow, and some</summary>
+<cap:event>Coastal Flood Statement</cap:event>
+<cap:effective>2023-04-11T15:59:00-04:00</cap:effective>
+<cap:expires>2023-04-12T05:00:00-04:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Unknown</cap:urgency>
+<cap:severity>Unknown</cap:severity>
+<cap:certainty>Unknown</cap:certainty>
+<cap:areaDesc>Monroe Upper Keys</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>012087</value>
+<valueName>UGC</valueName>
+<value>FLZ076</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.NEW.KKEY.CF.S.0003.230411T1959Z-230412T0900Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=FL126642790F58.HighSurfAdvisory.126642872FC0FL.MFLCFWMFL.06fc6ae8c49add59b2917bd01da78d25</id>
+<updated>2023-04-11T15:42:00-04:00</updated>
+<published>2023-04-11T15:42:00-04:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>High Surf Advisory issued April 11 at 3:42PM EDT until April 12 at 8:00AM EDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=FL126642790F58.HighSurfAdvisory.126642872FC0FL.MFLCFWMFL.06fc6ae8c49add59b2917bd01da78d25"/>
+<summary>...HIGH SURF ADVISORY REMAINS IN EFFECT UNTIL 8 AM EDT WEDNESDAY... ...HIGH RIP CURRENT RISK REMAINS IN EFFECT THROUGH WEDNESDAY EVENING... * WHAT...For the High Surf Advisory, large breaking waves of 7 to 12 feet in the surf zone. For the High Rip Current Risk,</summary>
+<cap:event>High Surf Advisory</cap:event>
+<cap:effective>2023-04-11T15:42:00-04:00</cap:effective>
+<cap:expires>2023-04-12T08:00:00-04:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Coastal Broward County; Coastal Miami Dade County; Coastal Palm Beach County</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>012011 012086 012099</value>
+<valueName>UGC</valueName>
+<value>FLZ168 FLZ172 FLZ173</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KMFL.SU.Y.0003.000000T0000Z-230412T1200Z/
+/O.CON.KMFL.RP.S.0017.000000T0000Z-230413T0000Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=FL126642790F58.RipCurrentStatement.126642949D40FL.MFLCFWMFL.738e585ae11bd1b21c1849b9a374891c</id>
+<updated>2023-04-11T15:42:00-04:00</updated>
+<published>2023-04-11T15:42:00-04:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Rip Current Statement issued April 11 at 3:42PM EDT until April 12 at 8:00PM EDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=FL126642790F58.RipCurrentStatement.126642949D40FL.MFLCFWMFL.738e585ae11bd1b21c1849b9a374891c"/>
+<summary>...HIGH SURF ADVISORY REMAINS IN EFFECT UNTIL 8 AM EDT WEDNESDAY... ...HIGH RIP CURRENT RISK REMAINS IN EFFECT THROUGH WEDNESDAY EVENING... * WHAT...For the High Surf Advisory, large breaking waves of 7 to 12 feet in the surf zone. For the High Rip Current Risk,</summary>
+<cap:event>Rip Current Statement</cap:event>
+<cap:effective>2023-04-11T15:42:00-04:00</cap:effective>
+<cap:expires>2023-04-12T20:00:00-04:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Coastal Broward County; Coastal Miami Dade County; Coastal Palm Beach County</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>012011 012086 012099</value>
+<valueName>UGC</valueName>
+<value>FLZ168 FLZ172 FLZ173</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KMFL.SU.Y.0003.000000T0000Z-230412T1200Z/
+/O.CON.KMFL.RP.S.0017.000000T0000Z-230413T0000Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=FL126642790E90.WindAdvisory.126642855B00FL.MFLNPWMFL.a2582e0a07c5a42f3231854b56e36116</id>
+<updated>2023-04-11T15:40:00-04:00</updated>
+<published>2023-04-11T15:40:00-04:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Wind Advisory issued April 11 at 3:40PM EDT until April 11 at 8:00PM EDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=FL126642790E90.WindAdvisory.126642855B00FL.MFLNPWMFL.a2582e0a07c5a42f3231854b56e36116"/>
+<summary>...WIND ADVISORY REMAINS IN EFFECT UNTIL 8 PM EDT THIS EVENING... * WHAT...Northeast winds 20 to 30 mph with gusts up to 40 mph. * WHERE...Coastal Palm Beach, Coastal Broward and Coastal Miami- Dade Counties. * WHEN...Until 8 PM EDT this evening. * IMPACTS...Gusty winds could blow around unsecured objects.</summary>
+<cap:event>Wind Advisory</cap:event>
+<cap:effective>2023-04-11T15:40:00-04:00</cap:effective>
+<cap:expires>2023-04-11T20:00:00-04:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Coastal Broward County; Coastal Miami Dade County; Coastal Palm Beach County</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>012011 012086 012099</value>
+<valueName>UGC</valueName>
+<value>FLZ168 FLZ172 FLZ173</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KMFL.WI.Y.0003.000000T0000Z-230412T0000Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=FL126642790DC8.HighSurfAdvisory.126642975C60FL.MOBCFWMOB.14bf3b8dde4d6fc4759922a7e91adcf0</id>
+<updated>2023-04-11T15:38:00-04:00</updated>
+<published>2023-04-11T15:38:00-04:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>High Surf Advisory issued April 11 at 3:38PM EDT until April 13 at 2:00PM EDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=FL126642790DC8.HighSurfAdvisory.126642975C60FL.MOBCFWMOB.14bf3b8dde4d6fc4759922a7e91adcf0"/>
+<summary>...HIGH RIP CURRENT RISK REMAINS IN EFFECT THROUGH LATE FRIDAY NIGHT... ...HIGH SURF ADVISORY IN EFFECT FROM 7 AM WEDNESDAY TO 1 PM CDT THURSDAY... * WHAT...For the High Rip Current Risk, dangerous rip currents. For the High Surf Advisory, large breaking waves of 5 to 6 feet</summary>
+<cap:event>High Surf Advisory</cap:event>
+<cap:effective>2023-04-11T15:38:00-04:00</cap:effective>
+<cap:expires>2023-04-13T14:00:00-04:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Escambia Coastal; Okaloosa Coastal; Santa Rosa Coastal</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>012033 012091 012113</value>
+<valueName>UGC</valueName>
+<value>FLZ202 FLZ204 FLZ206</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.NEW.KMOB.SU.Y.0006.230412T1200Z-230413T1800Z/
+/O.CON.KMOB.RP.S.0019.000000T0000Z-230415T1100Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=FL126642790DC8.RipCurrentStatement.126642B4CF70FL.MOBCFWMOB.f1a137c6f33fddecdd98e2674c0bf2a3</id>
+<updated>2023-04-11T15:38:00-04:00</updated>
+<published>2023-04-11T15:38:00-04:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Rip Current Statement issued April 11 at 3:38PM EDT until April 15 at 7:00AM EDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=FL126642790DC8.RipCurrentStatement.126642B4CF70FL.MOBCFWMOB.f1a137c6f33fddecdd98e2674c0bf2a3"/>
+<summary>...HIGH RIP CURRENT RISK REMAINS IN EFFECT THROUGH LATE FRIDAY NIGHT... ...HIGH SURF ADVISORY IN EFFECT FROM 7 AM WEDNESDAY TO 1 PM CDT THURSDAY... * WHAT...For the High Rip Current Risk, dangerous rip currents. For the High Surf Advisory, large breaking waves of 5 to 6 feet</summary>
+<cap:event>Rip Current Statement</cap:event>
+<cap:effective>2023-04-11T15:38:00-04:00</cap:effective>
+<cap:expires>2023-04-15T07:00:00-04:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Escambia Coastal; Okaloosa Coastal; Santa Rosa Coastal</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>012033 012091 012113</value>
+<valueName>UGC</valueName>
+<value>FLZ202 FLZ204 FLZ206</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.NEW.KMOB.SU.Y.0006.230412T1200Z-230413T1800Z/
+/O.CON.KMOB.RP.S.0019.000000T0000Z-230415T1100Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -1750,104 +2012,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=FL126642786C10.RipCurrentStatement.126642B4CF70FL.MOBCFWMOB.f1a137c6f33fddecdd98e2674c0bf2a3</id>
-<updated>2023-04-11T11:24:00-04:00</updated>
-<published>2023-04-11T11:24:00-04:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Rip Current Statement issued April 11 at 11:24AM EDT until April 15 at 7:00AM EDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=FL126642786C10.RipCurrentStatement.126642B4CF70FL.MOBCFWMOB.f1a137c6f33fddecdd98e2674c0bf2a3"/>
-<summary>...HIGH RIP CURRENT RISK REMAINS IN EFFECT THROUGH LATE FRIDAY NIGHT... * WHAT...Dangerous rip currents. * WHERE...In Alabama, Mobile Coastal and Baldwin Coastal Counties. In Florida, Escambia Coastal, Santa Rosa Coastal and Okaloosa Coastal Counties.</summary>
-<cap:event>Rip Current Statement</cap:event>
-<cap:effective>2023-04-11T11:24:00-04:00</cap:effective>
-<cap:expires>2023-04-15T07:00:00-04:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Escambia Coastal; Okaloosa Coastal; Santa Rosa Coastal</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>012033 012091 012113</value>
-<valueName>UGC</valueName>
-<value>FLZ202 FLZ204 FLZ206</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KMOB.RP.S.0019.000000T0000Z-230415T1100Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=FL126642786508.HighSurfAdvisory.126642872FC0FL.MFLCFWMFL.06fc6ae8c49add59b2917bd01da78d25</id>
-<updated>2023-04-11T11:06:00-04:00</updated>
-<published>2023-04-11T11:06:00-04:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>High Surf Advisory issued April 11 at 11:06AM EDT until April 12 at 8:00AM EDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=FL126642786508.HighSurfAdvisory.126642872FC0FL.MFLCFWMFL.06fc6ae8c49add59b2917bd01da78d25"/>
-<summary>...HIGH SURF ADVISORY REMAINS IN EFFECT UNTIL 8 AM EDT WEDNESDAY... ...HIGH RIP CURRENT RISK REMAINS IN EFFECT THROUGH WEDNESDAY EVENING... * WHAT...For the High Rip Current Risk, dangerous rip currents. For the High Surf Advisory, large breaking waves of 7 to 12</summary>
-<cap:event>High Surf Advisory</cap:event>
-<cap:effective>2023-04-11T11:06:00-04:00</cap:effective>
-<cap:expires>2023-04-12T08:00:00-04:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Coastal Broward County; Coastal Miami Dade County; Coastal Palm Beach County</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>012011 012086 012099</value>
-<valueName>UGC</valueName>
-<value>FLZ168 FLZ172 FLZ173</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KMFL.SU.Y.0003.000000T0000Z-230412T1200Z/
-/O.CON.KMFL.RP.S.0017.000000T0000Z-230413T0000Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=FL126642786508.RipCurrentStatement.126642949D40FL.MFLCFWMFL.738e585ae11bd1b21c1849b9a374891c</id>
-<updated>2023-04-11T11:06:00-04:00</updated>
-<published>2023-04-11T11:06:00-04:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Rip Current Statement issued April 11 at 11:06AM EDT until April 12 at 8:00PM EDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=FL126642786508.RipCurrentStatement.126642949D40FL.MFLCFWMFL.738e585ae11bd1b21c1849b9a374891c"/>
-<summary>...HIGH SURF ADVISORY REMAINS IN EFFECT UNTIL 8 AM EDT WEDNESDAY... ...HIGH RIP CURRENT RISK REMAINS IN EFFECT THROUGH WEDNESDAY EVENING... * WHAT...For the High Rip Current Risk, dangerous rip currents. For the High Surf Advisory, large breaking waves of 7 to 12</summary>
-<cap:event>Rip Current Statement</cap:event>
-<cap:effective>2023-04-11T11:06:00-04:00</cap:effective>
-<cap:expires>2023-04-12T20:00:00-04:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Coastal Broward County; Coastal Miami Dade County; Coastal Palm Beach County</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>012011 012086 012099</value>
-<valueName>UGC</valueName>
-<value>FLZ168 FLZ172 FLZ173</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KMFL.SU.Y.0003.000000T0000Z-230412T1200Z/
-/O.CON.KMFL.RP.S.0017.000000T0000Z-230413T0000Z/</value>
-</cap:parameter>
-</entry>
-<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=FL1266427851E4.FloodWatch.126642794D10FL.MFLFFAMFL.470c8c8cb3fda542b829a12739c3dda2</id>
 <updated>2023-04-11T10:57:00-04:00</updated>
 <published>2023-04-11T10:57:00-04:00</published>
@@ -1944,38 +2108,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <valueName>VTEC</valueName>
 <value>/O.NEW.KMFL.FA.A.0001.230411T1457Z-230413T0000Z/
 /00000.0.ER.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=FL1266427818DC.WindAdvisory.126642855B00FL.MFLNPWMFL.a2582e0a07c5a42f3231854b56e36116</id>
-<updated>2023-04-11T09:11:00-04:00</updated>
-<published>2023-04-11T09:11:00-04:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Wind Advisory issued April 11 at 9:11AM EDT until April 11 at 8:00PM EDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=FL1266427818DC.WindAdvisory.126642855B00FL.MFLNPWMFL.a2582e0a07c5a42f3231854b56e36116"/>
-<summary>...WIND ADVISORY IN EFFECT UNTIL 8 PM EDT THIS EVENING... * WHAT...Northeast winds 20 to 25 mph with gusts up to 40 mph. * WHERE...Coastal Palm Beach, Coastal Broward and Coastal Miami- Dade Counties. * WHEN...Until 8 PM EDT this evening. * IMPACTS...Gusty winds could blow around unsecured objects. Tree</summary>
-<cap:event>Wind Advisory</cap:event>
-<cap:effective>2023-04-11T09:11:00-04:00</cap:effective>
-<cap:expires>2023-04-11T20:00:00-04:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Coastal Broward County; Coastal Miami Dade County; Coastal Palm Beach County</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>012011 012086 012099</value>
-<valueName>UGC</valueName>
-<value>FLZ168 FLZ172 FLZ173</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.NEW.KMFL.WI.Y.0003.230411T1311Z-230412T0000Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -2800,17 +2932,17 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=IL126642786E68.FireWeatherWatch.126642949D40IL.LOTRFWLOT.7736f4e74f0c972efdaa64dc51aca081</id>
-<updated>2023-04-11T10:30:00-05:00</updated>
-<published>2023-04-11T10:30:00-05:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=IL126642791084.FireWeatherWatch.126642949D40IL.LOTRFWLOT.7736f4e74f0c972efdaa64dc51aca081</id>
+<updated>2023-04-11T14:45:00-05:00</updated>
+<published>2023-04-11T14:45:00-05:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Fire Weather Watch issued April 11 at 10:30AM CDT until April 12 at 7:00PM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=IL126642786E68.FireWeatherWatch.126642949D40IL.LOTRFWLOT.7736f4e74f0c972efdaa64dc51aca081"/>
+<title>Fire Weather Watch issued April 11 at 2:45PM CDT until April 12 at 7:00PM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=IL126642791084.FireWeatherWatch.126642949D40IL.LOTRFWLOT.7736f4e74f0c972efdaa64dc51aca081"/>
 <summary>...FIRE WEATHER WATCH REMAINS IN EFFECT FROM 11 AM WEDNESDAY MORNING THROUGH 7 PM WEDNESDAY EVENING... * Affected Area...Lake IN, Porter, Winnebago, Boone, McHenry, Lake IL, Ogle, Lee, Newton, De Kalb, Jasper, Kane, DuPage, Cook, La Salle, Benton, Kendall, Grundy, Will, Kankakee, Livingston, Iroquois and Ford.</summary>
 <cap:event>Fire Weather Watch</cap:event>
-<cap:effective>2023-04-11T10:30:00-05:00</cap:effective>
+<cap:effective>2023-04-11T14:45:00-05:00</cap:effective>
 <cap:expires>2023-04-12T19:00:00-05:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
@@ -2997,6 +3129,38 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=IN126642791084.FireWeatherWatch.126642949D40IN.LOTRFWLOT.45dd7e21bc7892b1bdd5d2babfc7c6d9</id>
+<updated>2023-04-11T15:45:00-04:00</updated>
+<published>2023-04-11T15:45:00-04:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Fire Weather Watch issued April 11 at 3:45PM EDT until April 12 at 8:00PM EDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=IN126642791084.FireWeatherWatch.126642949D40IN.LOTRFWLOT.45dd7e21bc7892b1bdd5d2babfc7c6d9"/>
+<summary>...FIRE WEATHER WATCH REMAINS IN EFFECT FROM 11 AM WEDNESDAY MORNING THROUGH 7 PM WEDNESDAY EVENING... * Affected Area...Lake IN, Porter, Winnebago, Boone, McHenry, Lake IL, Ogle, Lee, Newton, De Kalb, Jasper, Kane, DuPage, Cook, La Salle, Benton, Kendall, Grundy, Will, Kankakee, Livingston, Iroquois and Ford.</summary>
+<cap:event>Fire Weather Watch</cap:event>
+<cap:effective>2023-04-11T15:45:00-04:00</cap:effective>
+<cap:expires>2023-04-12T20:00:00-04:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Future</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Possible</cap:certainty>
+<cap:areaDesc>Benton; Jasper; Lake; Newton; Porter</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>018007 018073 018089 018111 018127</value>
+<valueName>UGC</valueName>
+<value>INZ001 INZ002 INZ010 INZ011 INZ019</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KLOT.FW.A.0001.230412T1600Z-230413T0000Z/</value>
+</cap:parameter>
+</entry>
+<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=IN126642789064.FloodWarning.1266429636A0IN.INDFLSIND.0e82bb321f4ce441e41ed0baf81b5208</id>
 <updated>2023-04-11T12:17:00-04:00</updated>
 <published>2023-04-11T12:17:00-04:00</published>
@@ -3063,38 +3227,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=IN126642786E68.FireWeatherWatch.126642949D40IN.LOTRFWLOT.45dd7e21bc7892b1bdd5d2babfc7c6d9</id>
-<updated>2023-04-11T11:30:00-04:00</updated>
-<published>2023-04-11T11:30:00-04:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Fire Weather Watch issued April 11 at 11:30AM EDT until April 12 at 8:00PM EDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=IN126642786E68.FireWeatherWatch.126642949D40IN.LOTRFWLOT.45dd7e21bc7892b1bdd5d2babfc7c6d9"/>
-<summary>...FIRE WEATHER WATCH REMAINS IN EFFECT FROM 11 AM WEDNESDAY MORNING THROUGH 7 PM WEDNESDAY EVENING... * Affected Area...Lake IN, Porter, Winnebago, Boone, McHenry, Lake IL, Ogle, Lee, Newton, De Kalb, Jasper, Kane, DuPage, Cook, La Salle, Benton, Kendall, Grundy, Will, Kankakee, Livingston, Iroquois and Ford.</summary>
-<cap:event>Fire Weather Watch</cap:event>
-<cap:effective>2023-04-11T11:30:00-04:00</cap:effective>
-<cap:expires>2023-04-12T20:00:00-04:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Future</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Possible</cap:certainty>
-<cap:areaDesc>Benton; Jasper; Lake; Newton; Porter</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>018007 018073 018089 018111 018127</value>
-<valueName>UGC</valueName>
-<value>INZ001 INZ002 INZ010 INZ011 INZ019</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KLOT.FW.A.0001.230412T1600Z-230413T0000Z/</value>
-</cap:parameter>
-</entry>
-<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=IN1266427843D4.FireWeatherWatch.126642949D40IN.IWXRFWIWX.01a73a49349968efebd2321f18a3f8ae</id>
 <updated>2023-04-11T10:21:00-04:00</updated>
 <published>2023-04-11T10:21:00-04:00</published>
@@ -3157,6 +3289,143 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <valueName>VTEC</valueName>
 <value>/O.EXT.KPAH.FL.W.0038.000000T0000Z-230413T0000Z/
 /NHRI3.1.ER.230326T0645Z.230403T1315Z.230412T1800Z.NO/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=KS1266427912DC.RedFlagWarning.12664294C450KS.TOPRFWTOP.1036b6fd5658dcb5424362124bc32bd1</id>
+<updated>2023-04-11T14:51:00-05:00</updated>
+<published>2023-04-11T14:51:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Red Flag Warning issued April 11 at 2:51PM CDT until April 12 at 8:00PM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=KS1266427912DC.RedFlagWarning.12664294C450KS.TOPRFWTOP.1036b6fd5658dcb5424362124bc32bd1"/>
+<summary>...RED FLAG WARNING IN EFFECT FROM NOON TO 8 PM CDT WEDNESDAY FOR STRONG WINDS, LOW HUMIDITY, AND DRY FUELS FOR FIRE WEATHER ZONES 008, 009, 010, 020, 021, 022, 023, AND 034... The National Weather Service in Topeka has issued a Red Flag Warning, which is in effect from noon to 8 PM CDT Wednesday. * AFFECTED AREA...Fire weather zones 008, 009, 010, 020, 021,</summary>
+<cap:event>Red Flag Warning</cap:event>
+<cap:effective>2023-04-11T14:51:00-05:00</cap:effective>
+<cap:expires>2023-04-12T20:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Severe</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Clay; Cloud; Marshall; Ottawa; Pottawatomie; Republic; Riley; Washington</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>020027 020029 020117 020143 020149 020157 020161 020201</value>
+<valueName>UGC</valueName>
+<value>KSZ008 KSZ009 KSZ010 KSZ020 KSZ021 KSZ022 KSZ023 KSZ034</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.NEW.KTOP.FW.W.0006.230412T1700Z-230413T0100Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=KS126642790B70.RedFlagWarning.126642858210KS.DDCRFWDDC.1674b33e5d9e80510b70baec644c7b6d</id>
+<updated>2023-04-11T14:32:00-05:00</updated>
+<published>2023-04-11T14:32:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Red Flag Warning issued April 11 at 2:32PM CDT until April 11 at 8:00PM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=KS126642790B70.RedFlagWarning.126642858210KS.DDCRFWDDC.1674b33e5d9e80510b70baec644c7b6d"/>
+<summary>...Strong South Winds and Fire Danger Wednesday and Thursday... ..Critical Fire Danger Along and West of Highway 25... ...RED FLAG WARNING REMAINS IN EFFECT UNTIL 8 PM CDT /7 PM MDT/ THIS EVENING FOR WIND AND LOW RELATIVE HUMIDITY FOR FIRE WEATHER ZONES 061, 062, 074, 075, 084, AND 085... ...RED FLAG WARNING IN EFFECT FROM 1 PM CDT /NOON MDT/ TO 8 PM</summary>
+<cap:event>Red Flag Warning</cap:event>
+<cap:effective>2023-04-11T14:32:00-05:00</cap:effective>
+<cap:expires>2023-04-11T20:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Severe</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Grant; Hamilton; Kearny; Morton; Stanton; Stevens</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>020067 020075 020093 020129 020187 020189</value>
+<valueName>UGC</valueName>
+<value>KSZ061 KSZ062 KSZ074 KSZ075 KSZ084 KSZ085</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.UPG.KDDC.FW.A.0014.230412T1800Z-230413T0100Z/
+/O.NEW.KDDC.FW.W.0017.230412T1800Z-230413T0100Z/
+/O.NEW.KDDC.FW.A.0015.230413T1800Z-230414T0100Z/
+/O.CON.KDDC.FW.W.0016.000000T0000Z-230412T0100Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=KS126642790B70.RedFlagWarning.12664294C450KS.DDCRFWDDC.4942f94fceb59f2fde00f2f3d8ab191f</id>
+<updated>2023-04-11T14:32:00-05:00</updated>
+<published>2023-04-11T14:32:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Red Flag Warning issued April 11 at 2:32PM CDT until April 12 at 8:00PM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=KS126642790B70.RedFlagWarning.12664294C450KS.DDCRFWDDC.4942f94fceb59f2fde00f2f3d8ab191f"/>
+<summary>...Strong South Winds and Fire Danger Wednesday and Thursday... ..Critical Fire Danger Along and West of Highway 25... ...RED FLAG WARNING REMAINS IN EFFECT UNTIL 8 PM CDT /7 PM MDT/ THIS EVENING FOR WIND AND LOW RELATIVE HUMIDITY FOR FIRE WEATHER ZONES 061, 062, 074, 075, 084, AND 085... ...RED FLAG WARNING IN EFFECT FROM 1 PM CDT /NOON MDT/ TO 8 PM</summary>
+<cap:event>Red Flag Warning</cap:event>
+<cap:effective>2023-04-11T14:32:00-05:00</cap:effective>
+<cap:expires>2023-04-12T20:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Severe</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Grant; Hamilton; Kearny; Morton; Stanton; Stevens</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>020067 020075 020093 020129 020187 020189</value>
+<valueName>UGC</valueName>
+<value>KSZ061 KSZ062 KSZ074 KSZ075 KSZ084 KSZ085</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.UPG.KDDC.FW.A.0014.230412T1800Z-230413T0100Z/
+/O.NEW.KDDC.FW.W.0017.230412T1800Z-230413T0100Z/
+/O.NEW.KDDC.FW.A.0015.230413T1800Z-230414T0100Z/
+/O.CON.KDDC.FW.W.0016.000000T0000Z-230412T0100Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=KS126642790B70.FireWeatherWatch.126642A40690KS.DDCRFWDDC.3930c0bef20ced565dc04322b25f3e4b</id>
+<updated>2023-04-11T14:32:00-05:00</updated>
+<published>2023-04-11T14:32:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Fire Weather Watch issued April 11 at 2:32PM CDT until April 13 at 8:00PM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=KS126642790B70.FireWeatherWatch.126642A40690KS.DDCRFWDDC.3930c0bef20ced565dc04322b25f3e4b"/>
+<summary>...Strong South Winds and Fire Danger Wednesday and Thursday... ..Critical Fire Danger Along and West of Highway 25... ...RED FLAG WARNING REMAINS IN EFFECT UNTIL 8 PM CDT /7 PM MDT/ THIS EVENING FOR WIND AND LOW RELATIVE HUMIDITY FOR FIRE WEATHER ZONES 061, 062, 074, 075, 084, AND 085... ...RED FLAG WARNING IN EFFECT FROM 1 PM CDT /NOON MDT/ TO 8 PM</summary>
+<cap:event>Fire Weather Watch</cap:event>
+<cap:effective>2023-04-11T14:32:00-05:00</cap:effective>
+<cap:expires>2023-04-13T20:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Future</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Possible</cap:certainty>
+<cap:areaDesc>Grant; Hamilton; Kearny; Morton; Stanton; Stevens</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>020067 020075 020093 020129 020187 020189</value>
+<valueName>UGC</valueName>
+<value>KSZ061 KSZ062 KSZ074 KSZ075 KSZ084 KSZ085</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.UPG.KDDC.FW.A.0014.230412T1800Z-230413T0100Z/
+/O.NEW.KDDC.FW.W.0017.230412T1800Z-230413T0100Z/
+/O.NEW.KDDC.FW.A.0015.230413T1800Z-230414T0100Z/
+/O.CON.KDDC.FW.W.0016.000000T0000Z-230412T0100Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -3255,72 +3524,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <valueName>VTEC</valueName>
 <value>/O.CON.KGID.FW.W.0006.000000T0000Z-230412T0200Z/
 /O.CON.KGID.FW.A.0004.230412T1800Z-230413T0100Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=KS126642787764.RedFlagWarning.126642858210KS.DDCRFWDDC.1674b33e5d9e80510b70baec644c7b6d</id>
-<updated>2023-04-11T10:53:00-05:00</updated>
-<published>2023-04-11T10:53:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Red Flag Warning issued April 11 at 10:53AM CDT until April 11 at 8:00PM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=KS126642787764.RedFlagWarning.126642858210KS.DDCRFWDDC.1674b33e5d9e80510b70baec644c7b6d"/>
-<summary>...Risk of Wildfires Tuesday and Wednesday... ...Critical Fire Danger Along and West of Highway 25... ...RED FLAG WARNING REMAINS IN EFFECT UNTIL 8 PM CDT /7 PM MDT/ THIS EVENING FOR WIND AND LOW RELATIVE HUMIDITY FOR FIRE WEATHER ZONES 061, 062, 074, 075, 084, AND 085... ...FIRE WEATHER WATCH REMAINS IN EFFECT FROM WEDNESDAY AFTERNOON</summary>
-<cap:event>Red Flag Warning</cap:event>
-<cap:effective>2023-04-11T10:53:00-05:00</cap:effective>
-<cap:expires>2023-04-11T20:00:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Severe</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Grant; Hamilton; Kearny; Morton; Stanton; Stevens</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>020067 020075 020093 020129 020187 020189</value>
-<valueName>UGC</valueName>
-<value>KSZ061 KSZ062 KSZ074 KSZ075 KSZ084 KSZ085</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KDDC.FW.W.0016.230411T1600Z-230412T0100Z/
-/O.CON.KDDC.FW.A.0014.230412T1800Z-230413T0100Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=KS126642787764.FireWeatherWatch.12664294C450KS.DDCRFWDDC.ff9e10d1534f08784d2a81694bd6c6b6</id>
-<updated>2023-04-11T10:53:00-05:00</updated>
-<published>2023-04-11T10:53:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Fire Weather Watch issued April 11 at 10:53AM CDT until April 12 at 8:00PM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=KS126642787764.FireWeatherWatch.12664294C450KS.DDCRFWDDC.ff9e10d1534f08784d2a81694bd6c6b6"/>
-<summary>...Risk of Wildfires Tuesday and Wednesday... ...Critical Fire Danger Along and West of Highway 25... ...RED FLAG WARNING REMAINS IN EFFECT UNTIL 8 PM CDT /7 PM MDT/ THIS EVENING FOR WIND AND LOW RELATIVE HUMIDITY FOR FIRE WEATHER ZONES 061, 062, 074, 075, 084, AND 085... ...FIRE WEATHER WATCH REMAINS IN EFFECT FROM WEDNESDAY AFTERNOON</summary>
-<cap:event>Fire Weather Watch</cap:event>
-<cap:effective>2023-04-11T10:53:00-05:00</cap:effective>
-<cap:expires>2023-04-12T20:00:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Future</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Possible</cap:certainty>
-<cap:areaDesc>Grant; Hamilton; Kearny; Morton; Stanton; Stevens</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>020067 020075 020093 020129 020187 020189</value>
-<valueName>UGC</valueName>
-<value>KSZ061 KSZ062 KSZ074 KSZ075 KSZ084 KSZ085</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KDDC.FW.W.0016.230411T1600Z-230412T0100Z/
-/O.CON.KDDC.FW.A.0014.230412T1800Z-230413T0100Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -4045,6 +4248,70 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=MD1266427910E8.FireWeatherWatch.126642949D40MD.LWXRFWLWX.711b7f4d579838564a0cbf6b25d40c8a</id>
+<updated>2023-04-11T15:46:00-04:00</updated>
+<published>2023-04-11T15:46:00-04:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Fire Weather Watch issued April 11 at 3:46PM EDT until April 12 at 8:00PM EDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MD1266427910E8.FireWeatherWatch.126642949D40MD.LWXRFWLWX.711b7f4d579838564a0cbf6b25d40c8a"/>
+<summary>...FIRE WEATHER WATCH IN EFFECT FROM WEDNESDAY AFTERNOON THROUGH WEDNESDAY EVENING FOR GUSTY WINDS AND LOW HUMIDITY IN MARYLAND... * WINDS...West 10 to 20 mph with gusts up to 30 mph. * RELATIVE HUMIDITY...As low as 30 percent. * IMPACTS...The combination of dry conditions, low humidity, and strong gusty winds may result in favorable conditions for the</summary>
+<cap:event>Fire Weather Watch</cap:event>
+<cap:effective>2023-04-11T15:46:00-04:00</cap:effective>
+<cap:expires>2023-04-12T20:00:00-04:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Future</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Possible</cap:certainty>
+<cap:areaDesc>Anne Arundel; Calvert; Carroll; Cecil; Central and Eastern Allegany; Central and Southeast Howard; Central and Southeast Montgomery; Charles; Extreme Western Allegany; Frederick; Garrett; Northern Baltimore; Northwest Harford; Northwest Howard; Northwest Montgomery; Prince Georges; Southeast Harford; Southern Baltimore; St. Marys; Washington</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>024001 024003 024005 024009 024013 024015 024017 024021 024023 024025 024027 024031 024033 024037 024043 024510</value>
+<valueName>UGC</valueName>
+<value>MDZ001 MDZ003 MDZ004 MDZ005 MDZ006 MDZ008 MDZ011 MDZ013 MDZ014 MDZ016 MDZ017 MDZ018 MDZ501 MDZ502 MDZ503 MDZ504 MDZ505 MDZ506 MDZ507 MDZ508</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.NEW.KLWX.FW.A.0001.230412T1600Z-230413T0000Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=MD1266427910E8.FireWeatherWatch.126642949D40MD.PHIRFWPHI.1764ea9789ad5b2cb7dcd39ae78c6a78</id>
+<updated>2023-04-11T15:46:00-04:00</updated>
+<published>2023-04-11T15:46:00-04:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Fire Weather Watch issued April 11 at 3:46PM EDT until April 12 at 8:00PM EDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MD1266427910E8.FireWeatherWatch.126642949D40MD.PHIRFWPHI.1764ea9789ad5b2cb7dcd39ae78c6a78"/>
+<summary>...FIRE WEATHER WATCH IN EFFECT FROM WEDNESDAY MORNING THROUGH WEDNESDAY EVENING FOR GUSTY WINDS AND LOW RELATIVE HUMIDITY FOR THE EASTERN SHORES OF MARYLAND... The National Weather Service in Mount Holly has issued a Fire Weather Watch for gusty winds and low relative humidity, which is in effect from Wednesday morning through Wednesday evening.</summary>
+<cap:event>Fire Weather Watch</cap:event>
+<cap:effective>2023-04-11T15:46:00-04:00</cap:effective>
+<cap:expires>2023-04-12T20:00:00-04:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Future</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Possible</cap:certainty>
+<cap:areaDesc>Caroline; Kent; Queen Anne&apos;s; Talbot</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>024011 024029 024035 024041</value>
+<valueName>UGC</valueName>
+<value>MDZ012 MDZ015 MDZ019 MDZ020</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.NEW.KPHI.FW.A.0001.230412T1500Z-230413T0000Z/</value>
+</cap:parameter>
+</entry>
+<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=MD1266427893E8.SpecialWeatherStatement.126642855B00MD.AKQSPSAKQ.c2c903f92fd78471dcfd21dff0d087fb</id>
 <updated>2023-04-11T12:26:00-04:00</updated>
 <published>2023-04-11T12:26:00-04:00</published>
@@ -4202,6 +4469,70 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value></value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=MI126642791598.FireWeatherWatch.126642951270MI.APXRFWAPX.4e1de68d59261ae2250b5dc6ef2c41cd</id>
+<updated>2023-04-11T15:58:00-04:00</updated>
+<published>2023-04-11T15:58:00-04:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Fire Weather Watch issued April 11 at 3:58PM EDT until April 12 at 11:00PM EDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MI126642791598.FireWeatherWatch.126642951270MI.APXRFWAPX.4e1de68d59261ae2250b5dc6ef2c41cd"/>
+<summary>...Fire Weather Watch Wednesday Afternoon and Evening... .DISCUSSION...Temperatures warming through the 70s and into the lower 80s...combined with critical relative humidity values and west to southwest winds gusting to 30 mph will result in dangerous fire weather conditions Wednesday afternoon and evening across areas along and east of the I-75 corridor in northern Lower</summary>
+<cap:event>Fire Weather Watch</cap:event>
+<cap:effective>2023-04-11T15:58:00-04:00</cap:effective>
+<cap:expires>2023-04-12T23:00:00-04:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Future</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Possible</cap:certainty>
+<cap:areaDesc>Alcona; Alpena; Crawford; Iosco; Missaukee; Montmorency; Ogemaw; Oscoda; Presque Isle; Roscommon</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>026001 026007 026039 026069 026113 026119 026129 026135 026141 026143</value>
+<valueName>UGC</valueName>
+<value>MIZ018 MIZ023 MIZ024 MIZ028 MIZ029 MIZ030 MIZ033 MIZ034 MIZ035 MIZ036</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.NEW.KAPX.FW.A.0001.230412T1500Z-230413T0300Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=MI126642790F58.FireWeatherWatch.126642949D40MI.GRRRFWGRR.e5718786ebb632f2b8eddb9cf7f2a0ec</id>
+<updated>2023-04-11T15:42:00-04:00</updated>
+<published>2023-04-11T15:42:00-04:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Fire Weather Watch issued April 11 at 3:42PM EDT until April 12 at 8:00PM EDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MI126642790F58.FireWeatherWatch.126642949D40MI.GRRRFWGRR.e5718786ebb632f2b8eddb9cf7f2a0ec"/>
+<summary>...FIRE WEATHER WATCH IN EFFECT FROM WEDNESDAY AFTERNOON THROUGH WEDNESDAY EVENING... The National Weather Service in Grand Rapids has issued a Fire Weather Watch, which is in effect from Wednesday afternoon through Wednesday evening. * Winds...Southwest 15 to 25 mph with gusts up to 40 mph.</summary>
+<cap:event>Fire Weather Watch</cap:event>
+<cap:effective>2023-04-11T15:42:00-04:00</cap:effective>
+<cap:expires>2023-04-12T20:00:00-04:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Future</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Possible</cap:certainty>
+<cap:areaDesc>Allegan; Barry; Calhoun; Clare; Clinton; Eaton; Gratiot; Ingham; Ionia; Isabella; Jackson; Kalamazoo; Kent; Lake; Mason; Mecosta; Montcalm; Muskegon; Newaygo; Oceana; Osceola; Ottawa; Van Buren</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>026005 026015 026025 026035 026037 026045 026057 026065 026067 026073 026075 026077 026081 026085 026105 026107 026117 026121 026123 026127 026133 026139 026159</value>
+<valueName>UGC</valueName>
+<value>MIZ037 MIZ038 MIZ039 MIZ040 MIZ043 MIZ044 MIZ045 MIZ046 MIZ050 MIZ051 MIZ052 MIZ056 MIZ057 MIZ058 MIZ059 MIZ064 MIZ065 MIZ066 MIZ067 MIZ071 MIZ072 MIZ073 MIZ074</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.NEW.KGRR.FW.A.0001.230412T1600Z-230413T0000Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -4368,6 +4699,39 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=MN1266427926C8.FloodWarning.12664286995CMN.ARXFLSARX.8e092725dfe1d652cb19e07877ba9c6e</id>
+<updated>2023-04-11T15:02:00-05:00</updated>
+<published>2023-04-11T15:02:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Flood Warning issued April 11 at 3:02PM CDT until further notice by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MN1266427926C8.FloodWarning.12664286995CMN.ARXFLSARX.8e092725dfe1d652cb19e07877ba9c6e"/>
+<summary>...The Flood Warning continues for the following rivers in Wisconsin...Minnesota... Mississippi River at Wabasha affecting Wabasha and Buffalo Counties. .Warm temperatures will melt snowpack and increase river flows. ...FLOOD WARNING FOR SNOWMELT REMAINS IN EFFECT FROM LATE THURSDAY</summary>
+<cap:event>Flood Warning</cap:event>
+<cap:effective>2023-04-11T15:02:00-05:00</cap:effective>
+<cap:expires>2023-04-12T03:15:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Wabasha</cap:areaDesc>
+<cap:polygon>44.45,-92.07 44.42,-92 44.35,-91.92 44.33,-92 44.39,-92.09 44.45,-92.07</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>027157</value>
+<valueName>UGC</valueName>
+<value>MNC157</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KARX.FL.W.0008.230414T0600Z-000000T0000Z/
+/WABM5.2.SM.230414T0300Z.230418T1200Z.000000T0000Z.NO/</value>
+</cap:parameter>
+</entry>
+<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=MN12664278E7E4.HydrologicOutlook.12664288B660MN.FGFESFFGF.42b652681f334504f78497bc0bdbc6d3</id>
 <updated>2023-04-11T13:41:00-05:00</updated>
 <published>2023-04-11T13:41:00-05:00</published>
@@ -4397,39 +4761,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value></value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=MN126642789DAC.FloodWarning.126642861E50MN.ARXFLSARX.8e092725dfe1d652cb19e07877ba9c6e</id>
-<updated>2023-04-11T11:51:00-05:00</updated>
-<published>2023-04-11T11:51:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Flood Warning issued April 11 at 11:51AM CDT until further notice by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MN126642789DAC.FloodWarning.126642861E50MN.ARXFLSARX.8e092725dfe1d652cb19e07877ba9c6e"/>
-<summary>...The Flood Warning continues for the following rivers in Minnesota...Wisconsin... Mississippi River at Wabasha affecting Buffalo and Wabasha Counties. .Warm temperatures will melt snowpack and increase river flows. For the Mississippi River...including Wabasha...Moderate flooding is</summary>
-<cap:event>Flood Warning</cap:event>
-<cap:effective>2023-04-11T11:51:00-05:00</cap:effective>
-<cap:expires>2023-04-12T00:00:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Wabasha</cap:areaDesc>
-<cap:polygon>44.45,-92.07 44.42,-92 44.35,-91.92 44.33,-92 44.39,-92.09 44.45,-92.07</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>027157</value>
-<valueName>UGC</valueName>
-<value>MNC157</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KARX.FL.W.0008.230414T0600Z-000000T0000Z/
-/WABM5.2.SM.230414T0300Z.230418T1200Z.000000T0000Z.NO/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -5485,6 +5816,134 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=MT126642791598.HighWindWarning.12664285D030MT.BYZNPWBYZ.4ab107d4cf8ae3a928602c40d6c6378c</id>
+<updated>2023-04-11T13:58:00-06:00</updated>
+<published>2023-04-11T13:58:00-06:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>High Wind Warning issued April 11 at 1:58PM MDT until April 11 at 9:00PM MDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MT126642791598.HighWindWarning.12664285D030MT.BYZNPWBYZ.4ab107d4cf8ae3a928602c40d6c6378c"/>
+<summary>...HIGH WIND WARNING REMAINS IN EFFECT UNTIL 9 PM MDT THIS EVENING... * WHAT...Southwest winds gusting up to 60 mph expected. * WHERE...Portions of central and south central Montana. * WHEN...Until 9 PM MDT this evening. * IMPACTS...Strong crosswinds will make travel difficult along Highway 191 from Big Timber through Judith Gap, along Interstate</summary>
+<cap:event>High Wind Warning</cap:event>
+<cap:effective>2023-04-11T13:58:00-06:00</cap:effective>
+<cap:expires>2023-04-11T21:00:00-06:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Severe</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Judith Gap; Melville Foothills; Northern Park; Northern Sweet Grass; Paradise Valley; Red Lodge Foothills; Southern Wheatland</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>030009 030037 030067 030097 030107</value>
+<valueName>UGC</valueName>
+<value>MTZ040 MTZ056 MTZ063 MTZ064 MTZ141 MTZ172 MTZ228</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KBYZ.HW.W.0008.000000T0000Z-230412T0300Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=MT126642791598.WindAdvisory.12664285D030MT.BYZNPWBYZ.a3ae693751241025dba022b3132112b7</id>
+<updated>2023-04-11T13:58:00-06:00</updated>
+<published>2023-04-11T13:58:00-06:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Wind Advisory issued April 11 at 1:58PM MDT until April 11 at 9:00PM MDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MT126642791598.WindAdvisory.12664285D030MT.BYZNPWBYZ.a3ae693751241025dba022b3132112b7"/>
+<summary>...WIND ADVISORY REMAINS IN EFFECT UNTIL 9 PM MDT THIS EVENING... * WHAT...Southwest winds gusting up to 60 mph expected. * WHERE...Beartooth Foothills and Livingston Area. * WHEN...Until 9 PM MDT this evening. * IMPACTS...Strong crosswinds will make travel difficult along Interstate 90 from Livingston to Big Timber and roads along the</summary>
+<cap:event>Wind Advisory</cap:event>
+<cap:effective>2023-04-11T13:58:00-06:00</cap:effective>
+<cap:expires>2023-04-11T21:00:00-06:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Beartooth Foothills; Livingston Area</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>030067 030095 030097</value>
+<valueName>UGC</valueName>
+<value>MTZ065 MTZ066</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KBYZ.WI.Y.0014.000000T0000Z-230412T0300Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=MT1266427912DC.WinterStormWatch.126642A4C9E0MT.BYZWSWBYZ.3e42461cb29425516d429877291e6b48</id>
+<updated>2023-04-11T13:51:00-06:00</updated>
+<published>2023-04-11T13:51:00-06:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Winter Storm Watch issued April 11 at 1:51PM MDT until April 14 at 12:00AM MDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MT1266427912DC.WinterStormWatch.126642A4C9E0MT.BYZWSWBYZ.3e42461cb29425516d429877291e6b48"/>
+<summary>...WINTER STORM WATCH REMAINS IN EFFECT FROM WEDNESDAY EVENING THROUGH THURSDAY EVENING... * WHAT...Heavy snow possible. Total snow accumulations between 6 to 10 inches. * WHERE...Judith Gap, Southern Wheatland, Melville Foothills, and Northern Park.</summary>
+<cap:event>Winter Storm Watch</cap:event>
+<cap:effective>2023-04-11T13:51:00-06:00</cap:effective>
+<cap:expires>2023-04-14T00:00:00-06:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Future</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Possible</cap:certainty>
+<cap:areaDesc>Judith Gap; Melville Foothills; Northern Park; Southern Wheatland</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>030037 030067 030097 030107</value>
+<valueName>UGC</valueName>
+<value>MTZ040 MTZ063 MTZ172 MTZ228</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KBYZ.WS.A.0009.230413T0000Z-230414T0600Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=MT1266427912DC.WinterStormWatch.126642A4C9E0MT.BYZWSWBYZ.ae898bc25d3f87e89f867e4f061cafc9</id>
+<updated>2023-04-11T13:51:00-06:00</updated>
+<published>2023-04-11T13:51:00-06:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Winter Storm Watch issued April 11 at 1:51PM MDT until April 14 at 12:00AM MDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MT1266427912DC.WinterStormWatch.126642A4C9E0MT.BYZWSWBYZ.ae898bc25d3f87e89f867e4f061cafc9"/>
+<summary>...WINTER STORM WATCH REMAINS IN EFFECT FROM WEDNESDAY EVENING THROUGH THURSDAY EVENING... * WHAT...Heavy snow possible. Total snow accumulations between 1 to 2 feet. Winds could gust as high as 30 mph. * WHERE...Crazy Mountains. * WHEN...From Wednesday evening through Thursday evening.</summary>
+<cap:event>Winter Storm Watch</cap:event>
+<cap:effective>2023-04-11T13:51:00-06:00</cap:effective>
+<cap:expires>2023-04-14T00:00:00-06:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Future</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Possible</cap:certainty>
+<cap:areaDesc>Crazy Mountains</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>030067 030097</value>
+<valueName>UGC</valueName>
+<value>MTZ068</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KBYZ.WS.A.0009.230413T0000Z-230414T0600Z/</value>
+</cap:parameter>
+</entry>
+<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=MT12664278DCF4.HydrologicOutlook.12664297623CMT.BYZESFBYZ.a76cd9238d1d9a548badbe691a9813e2</id>
 <updated>2023-04-11T12:13:00-06:00</updated>
 <published>2023-04-11T12:13:00-06:00</published>
@@ -5908,102 +6367,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=MT12664277526C.WinterStormWatch.126642A4C9E0MT.BYZWSWBYZ.f32c50949a92707896b73e3fa7f4842c</id>
-<updated>2023-04-11T02:03:00-06:00</updated>
-<published>2023-04-11T02:03:00-06:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Winter Storm Watch issued April 11 at 2:03AM MDT until April 14 at 12:00AM MDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MT12664277526C.WinterStormWatch.126642A4C9E0MT.BYZWSWBYZ.f32c50949a92707896b73e3fa7f4842c"/>
-<summary>...WINTER STORM WATCH REMAINS IN EFFECT FROM WEDNESDAY EVENING THROUGH THURSDAY EVENING... * WHAT...Heavy snow possible. Total snow accumulations between 6 to 10 inches. * WHERE...Melville Foothills and Northern Park. * WHEN...From Wednesday evening through Thursday evening.</summary>
-<cap:event>Winter Storm Watch</cap:event>
-<cap:effective>2023-04-11T02:03:00-06:00</cap:effective>
-<cap:expires>2023-04-14T00:00:00-06:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Future</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Possible</cap:certainty>
-<cap:areaDesc>Melville Foothills; Northern Park</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>030067 030097 030107</value>
-<valueName>UGC</valueName>
-<value>MTZ040 MTZ172</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KBYZ.WS.A.0009.230413T0000Z-230414T0600Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=MT12664277526C.WinterStormWatch.126642A4C9E0MT.BYZWSWBYZ.7f975f5d2aef7ca2c1c4e327cfa035f7</id>
-<updated>2023-04-11T02:03:00-06:00</updated>
-<published>2023-04-11T02:03:00-06:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Winter Storm Watch issued April 11 at 2:03AM MDT until April 14 at 12:00AM MDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MT12664277526C.WinterStormWatch.126642A4C9E0MT.BYZWSWBYZ.7f975f5d2aef7ca2c1c4e327cfa035f7"/>
-<summary>...WINTER STORM WATCH IN EFFECT FROM WEDNESDAY EVENING THROUGH THURSDAY EVENING... * WHAT...Heavy snow possible. Total snow accumulations between 4 and 10 inches. * WHERE...Judith Gap and Southern Wheatland. * WHEN...From Wednesday evening through Thursday evening.</summary>
-<cap:event>Winter Storm Watch</cap:event>
-<cap:effective>2023-04-11T02:03:00-06:00</cap:effective>
-<cap:expires>2023-04-14T00:00:00-06:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Future</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Possible</cap:certainty>
-<cap:areaDesc>Judith Gap; Southern Wheatland</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>030037 030107</value>
-<valueName>UGC</valueName>
-<value>MTZ063 MTZ228</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.EXA.KBYZ.WS.A.0009.230413T0000Z-230414T0600Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=MT12664277526C.WinterStormWatch.126642A4C9E0MT.BYZWSWBYZ.ae898bc25d3f87e89f867e4f061cafc9</id>
-<updated>2023-04-11T02:03:00-06:00</updated>
-<published>2023-04-11T02:03:00-06:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Winter Storm Watch issued April 11 at 2:03AM MDT until April 14 at 12:00AM MDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MT12664277526C.WinterStormWatch.126642A4C9E0MT.BYZWSWBYZ.ae898bc25d3f87e89f867e4f061cafc9"/>
-<summary>...WINTER STORM WATCH REMAINS IN EFFECT FROM WEDNESDAY EVENING THROUGH THURSDAY EVENING... * WHAT...Heavy snow possible. Total snow accumulations between 1 to 2 feet. Winds could gust as high as 30 mph. * WHERE...Crazy Mountains. * WHEN...From Wednesday evening through Thursday evening.</summary>
-<cap:event>Winter Storm Watch</cap:event>
-<cap:effective>2023-04-11T02:03:00-06:00</cap:effective>
-<cap:expires>2023-04-14T00:00:00-06:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Future</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Possible</cap:certainty>
-<cap:areaDesc>Crazy Mountains</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>030067 030097</value>
-<valueName>UGC</valueName>
-<value>MTZ068</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KBYZ.WS.A.0009.230413T0000Z-230414T0600Z/</value>
-</cap:parameter>
-</entry>
-<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=MT126642773FAC.FloodAdvisory.126642969B04MT.BYZFLSBYZ.92e84f19178e9116148c9b3713126519</id>
 <updated>2023-04-11T01:55:00-06:00</updated>
 <published>2023-04-11T01:55:00-06:00</published>
@@ -6034,70 +6397,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <valueName>VTEC</valueName>
 <value>/O.CON.KBYZ.FA.Y.0001.000000T0000Z-230412T2130Z/
 /00000.N.SM.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=MT126642773908.HighWindWarning.12664285D030MT.BYZNPWBYZ.4ab107d4cf8ae3a928602c40d6c6378c</id>
-<updated>2023-04-11T01:38:00-06:00</updated>
-<published>2023-04-11T01:38:00-06:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>High Wind Warning issued April 11 at 1:38AM MDT until April 11 at 9:00PM MDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MT126642773908.HighWindWarning.12664285D030MT.BYZNPWBYZ.4ab107d4cf8ae3a928602c40d6c6378c"/>
-<summary>...HIGH WIND WARNING NOW IN EFFECT FROM 6 AM THIS MORNING TO 9 PM MDT THIS EVENING... * WHAT...Southwest winds gusting up to 60 mph expected. * WHERE...Portions of central and south central Montana. * WHEN...From 6 AM this morning to 9 PM MDT this evening. * IMPACTS...Strong crosswinds will make travel difficult along</summary>
-<cap:event>High Wind Warning</cap:event>
-<cap:effective>2023-04-11T01:38:00-06:00</cap:effective>
-<cap:expires>2023-04-11T21:00:00-06:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Severe</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Judith Gap; Melville Foothills; Northern Park; Northern Sweet Grass; Paradise Valley; Red Lodge Foothills; Southern Wheatland</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>030009 030037 030067 030097 030107</value>
-<valueName>UGC</valueName>
-<value>MTZ040 MTZ056 MTZ063 MTZ064 MTZ141 MTZ172 MTZ228</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.EXT.KBYZ.HW.W.0008.230411T1200Z-230412T0300Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=MT126642773908.WindAdvisory.12664285D030MT.BYZNPWBYZ.a3ae693751241025dba022b3132112b7</id>
-<updated>2023-04-11T01:38:00-06:00</updated>
-<published>2023-04-11T01:38:00-06:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Wind Advisory issued April 11 at 1:38AM MDT until April 11 at 9:00PM MDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MT126642773908.WindAdvisory.12664285D030MT.BYZNPWBYZ.a3ae693751241025dba022b3132112b7"/>
-<summary>...WIND ADVISORY NOW IN EFFECT UNTIL 9 PM MDT THIS EVENING... * WHAT...Southwest winds gusting up to 65 mph expected. * WHERE...Beartooth Foothills and Livingston Area. * WHEN...Until 9 PM MDT this evening. * IMPACTS...Strong crosswinds will make travel difficult along Interstate 90 from Livingston to Big Timber and roads along the</summary>
-<cap:event>Wind Advisory</cap:event>
-<cap:effective>2023-04-11T01:38:00-06:00</cap:effective>
-<cap:expires>2023-04-11T21:00:00-06:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Beartooth Foothills; Livingston Area</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>030067 030095 030097</value>
-<valueName>UGC</valueName>
-<value>MTZ065 MTZ066</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.EXT.KBYZ.WI.Y.0014.230411T0738Z-230412T0300Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -6722,6 +7021,39 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=ND126642790D00.FloodWarning.126642881A20ND.BISFLSBIS.0eccc6c536179c1095626318cae72763</id>
+<updated>2023-04-11T14:36:00-05:00</updated>
+<published>2023-04-11T14:36:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Flood Warning issued April 11 at 2:36PM CDT until April 12 at 1:00PM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=ND126642790D00.FloodWarning.126642881A20ND.BISFLSBIS.0eccc6c536179c1095626318cae72763"/>
+<summary>...The National Weather Service in Bismarck ND has issued a Flood Warning for the Knife River at Manning affecting Dunn County in North Dakota... ...FLOOD WARNING NOW IN EFFECT UNTIL EARLY TOMORROW AFTERNOON... * WHAT...Minor flooding is forecast. * WHERE...Knife River at Manning.</summary>
+<cap:event>Flood Warning</cap:event>
+<cap:effective>2023-04-11T14:36:00-05:00</cap:effective>
+<cap:expires>2023-04-12T13:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Dunn</cap:areaDesc>
+<cap:polygon>47.29,-102.96 47.14,-102.14 47.09,-102.12 47.15,-102.58 47.25,-102.96 47.29,-102.96</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>038025</value>
+<valueName>UGC</valueName>
+<value>NDC025</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.EXT.KBIS.FL.W.0003.230411T2153Z-230412T1800Z/
+/MNGN8.1.ER.230411T2153Z.230412T0000Z.230412T0600Z.NO/</value>
+</cap:parameter>
+</entry>
+<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=ND12664278E7E4.HydrologicOutlook.12664288B660ND.FGFESFFGF.696a4d5b5b191874d14c503cac9b316c</id>
 <updated>2023-04-11T13:41:00-05:00</updated>
 <published>2023-04-11T13:41:00-05:00</published>
@@ -6984,39 +7316,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=ND126642784ADC.FloodWarning.126642876288ND.BISFLWBIS.0eccc6c536179c1095626318cae72763</id>
-<updated>2023-04-11T09:39:00-05:00</updated>
-<published>2023-04-11T09:39:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Flood Warning issued April 11 at 9:39AM CDT until April 12 at 8:30AM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=ND126642784ADC.FloodWarning.126642876288ND.BISFLWBIS.0eccc6c536179c1095626318cae72763"/>
-<summary>...The National Weather Service in Bismarck ND has issued a Flood Warning for the Knife River at Manning affecting Dunn County in North Dakota... ...FLOOD WARNING IN EFFECT FROM THIS AFTERNOON TO TOMORROW MORNING... * WHAT...Minor flooding is forecast. * WHERE...Knife River at Manning.</summary>
-<cap:event>Flood Warning</cap:event>
-<cap:effective>2023-04-11T09:39:00-05:00</cap:effective>
-<cap:expires>2023-04-12T08:30:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Dunn</cap:areaDesc>
-<cap:polygon>47.29,-102.96 47.14,-102.14 47.09,-102.12 47.15,-102.58 47.25,-102.96 47.29,-102.96</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>038025</value>
-<valueName>UGC</valueName>
-<value>NDC025</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.NEW.KBIS.FL.W.0003.230411T2248Z-230412T1330Z/
-/MNGN8.1.ER.230411T2248Z.230412T0000Z.230412T0130Z.NO/</value>
-</cap:parameter>
-</entry>
-<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=ND12664269CF0C.HydrologicOutlook.126642980458ND.FGFESFFGF.e158d5a4dbaf50d352bd37593456e606</id>
 <updated>2023-04-10T14:47:00-05:00</updated>
 <published>2023-04-10T14:47:00-05:00</published>
@@ -7046,6 +7345,136 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value></value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=NE126642791278.RedFlagWarning.126642855B00NE.CYSRFWCYS.6fbd3899bfd05da2946cf2a95db24408</id>
+<updated>2023-04-11T14:50:00-05:00</updated>
+<published>2023-04-11T14:50:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Red Flag Warning issued April 11 at 2:50PM CDT until April 11 at 7:00PM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=NE126642791278.RedFlagWarning.126642855B00NE.CYSRFWCYS.6fbd3899bfd05da2946cf2a95db24408"/>
+<summary>...RED FLAG WARNING IN EFFECT THIS AFTERNOON THROUGH 6 PM... ...RED FLAG WARNING REMAINS IN EFFECT UNTIL 6 PM MDT THIS EVENING FOR LOW HUMIDITY AND GUSTY WINDS FOR FIRE WEATHER ZONES 434, 435, AND 436... * AFFECTED AREA...Fire weather zones 434 through 436. * WIND...West to southwest winds 15 to 25 MPH with gusts up to</summary>
+<cap:event>Red Flag Warning</cap:event>
+<cap:effective>2023-04-11T14:50:00-05:00</cap:effective>
+<cap:expires>2023-04-11T19:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Severe</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Box Butte, South Sioux, Niobrara River; Lower North Platte River Basin, Scottsbluff National Monument; Pine Ridge, Nebraska National Forest</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>031007 031013 031045 031123 031157 031165</value>
+<valueName>UGC</valueName>
+<value>NEZ434 NEZ435 NEZ436</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KCYS.FW.W.0001.000000T0000Z-230412T0000Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=NE126642790BD4.RedFlagWarning.12664285A920NE.LBFRFWLBF.c3c77a101f443a72a5e9f537bd7248bd</id>
+<updated>2023-04-11T14:33:00-05:00</updated>
+<published>2023-04-11T14:33:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Red Flag Warning issued April 11 at 2:33PM CDT until April 11 at 9:00PM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=NE126642790BD4.RedFlagWarning.12664285A920NE.LBFRFWLBF.c3c77a101f443a72a5e9f537bd7248bd"/>
+<summary>...CRITICAL FIRE WEATHER CONDITIONS LIKELY THIS AFTERNOON AND EVENING... ...RED FLAG WARNING REMAINS IN EFFECT UNTIL 9 PM CDT /8 PM MDT/ THIS EVENING FOR FIRE WEATHER ZONES 204 AND 208... * AFFECTED AREA...Fire weather zone 204. Fire weather zone 206. Fire weather zone 208. Fire weather zone 209. Fire weather</summary>
+<cap:event>Red Flag Warning</cap:event>
+<cap:effective>2023-04-11T14:33:00-05:00</cap:effective>
+<cap:expires>2023-04-11T21:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Severe</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Eastern Panhandle, Crescent Lake NWR; Niobrara Valley, Fort Niobrara NWR, Samuel R McKelvie National Forest</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>031005 031015 031017 031031 031049 031069 031075 031089 031101 031103 031149 031161</value>
+<valueName>UGC</valueName>
+<value>NEZ204 NEZ208</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KLBF.FW.W.0004.000000T0000Z-230412T0200Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=NE126642790BD4.RedFlagWarning.12664285A920NE.LBFRFWLBF.2951a90e7650de1bc9a2c88e0264ada5</id>
+<updated>2023-04-11T14:33:00-05:00</updated>
+<published>2023-04-11T14:33:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Red Flag Warning issued April 11 at 2:33PM CDT until April 11 at 9:00PM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=NE126642790BD4.RedFlagWarning.12664285A920NE.LBFRFWLBF.2951a90e7650de1bc9a2c88e0264ada5"/>
+<summary>...CRITICAL FIRE WEATHER CONDITIONS LIKELY THIS AFTERNOON AND EVENING... ...RED FLAG WARNING REMAINS IN EFFECT UNTIL 9 PM CDT /8 PM MDT/ THIS EVENING FOR FIRE WEATHER ZONES 206, 209, 210, AND 219... ...RED FLAG WARNING IN EFFECT FROM 1 PM CDT /NOON MDT/ TO 7 PM CDT /6 PM MDT/ WEDNESDAY FOR FIRE WEATHER ZONES 206, 209, 210, AND</summary>
+<cap:event>Red Flag Warning</cap:event>
+<cap:effective>2023-04-11T14:33:00-05:00</cap:effective>
+<cap:expires>2023-04-11T21:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Severe</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Frenchman Basin; Loess Plains; Loup Rivers Basin; Sandhills, Valentine NWR, Nebraska National Forest</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>031009 031017 031029 031031 031041 031063 031071 031085 031089 031091 031111 031113 031115 031117 031135 031149 031171 031183</value>
+<valueName>UGC</valueName>
+<value>NEZ206 NEZ209 NEZ210 NEZ219</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.NEW.KLBF.FW.W.0005.230412T1800Z-230413T0000Z/
+/O.CON.KLBF.FW.W.0004.000000T0000Z-230412T0200Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=NE126642790BD4.RedFlagWarning.126642949D40NE.LBFRFWLBF.0b382b93b708cf144bc498c0aece78db</id>
+<updated>2023-04-11T14:33:00-05:00</updated>
+<published>2023-04-11T14:33:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Red Flag Warning issued April 11 at 2:33PM CDT until April 12 at 7:00PM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=NE126642790BD4.RedFlagWarning.126642949D40NE.LBFRFWLBF.0b382b93b708cf144bc498c0aece78db"/>
+<summary>...CRITICAL FIRE WEATHER CONDITIONS LIKELY THIS AFTERNOON AND EVENING... ...RED FLAG WARNING REMAINS IN EFFECT UNTIL 9 PM CDT /8 PM MDT/ THIS EVENING FOR FIRE WEATHER ZONES 206, 209, 210, AND 219... ...RED FLAG WARNING IN EFFECT FROM 1 PM CDT /NOON MDT/ TO 7 PM CDT /6 PM MDT/ WEDNESDAY FOR FIRE WEATHER ZONES 206, 209, 210, AND</summary>
+<cap:event>Red Flag Warning</cap:event>
+<cap:effective>2023-04-11T14:33:00-05:00</cap:effective>
+<cap:expires>2023-04-12T19:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Severe</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Frenchman Basin; Loess Plains; Loup Rivers Basin; Sandhills, Valentine NWR, Nebraska National Forest</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>031009 031017 031029 031031 031041 031063 031071 031085 031089 031091 031111 031113 031115 031117 031135 031149 031171 031183</value>
+<valueName>UGC</valueName>
+<value>NEZ206 NEZ209 NEZ210 NEZ219</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.NEW.KLBF.FW.W.0005.230412T1800Z-230413T0000Z/
+/O.CON.KLBF.FW.W.0004.000000T0000Z-230412T0200Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -7343,38 +7772,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=NE126642775780.RedFlagWarning.12664285A920NE.LBFRFWLBF.d46e3e5030feb6e6b913cbcbe1a6ff20</id>
-<updated>2023-04-11T03:16:00-05:00</updated>
-<published>2023-04-11T03:16:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Red Flag Warning issued April 11 at 3:16AM CDT until April 11 at 9:00PM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=NE126642775780.RedFlagWarning.12664285A920NE.LBFRFWLBF.d46e3e5030feb6e6b913cbcbe1a6ff20"/>
-<summary>...CRITICAL FIRE WEATHER CONDITIONS LIKELY THIS AFTERNOON AND EVENING... ...RED FLAG WARNING REMAINS IN EFFECT FROM NOON CDT /11 AM MDT/ TODAY TO 9 PM CDT /8 PM MDT/ THIS EVENING FOR LOW RELATIVE HUMIDITY AND GUSTY WINDS FOR FIRE WEATHER ZONES 204, 206, 208, 209, 210, AND 219...</summary>
-<cap:event>Red Flag Warning</cap:event>
-<cap:effective>2023-04-11T03:16:00-05:00</cap:effective>
-<cap:expires>2023-04-11T21:00:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Severe</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Eastern Panhandle, Crescent Lake NWR; Frenchman Basin; Loess Plains; Loup Rivers Basin; Niobrara Valley, Fort Niobrara NWR, Samuel R McKelvie National Forest; Sandhills, Valentine NWR, Nebraska National Forest</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>031005 031009 031015 031017 031029 031031 031041 031049 031063 031069 031071 031075 031085 031089 031091 031101 031103 031111 031113 031115 031117 031135 031149 031161 031171 031183</value>
-<valueName>UGC</valueName>
-<value>NEZ204 NEZ206 NEZ208 NEZ209 NEZ210 NEZ219</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KLBF.FW.W.0004.230411T1700Z-230412T0200Z/</value>
-</cap:parameter>
-</entry>
-<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=NE126642773908.RedFlagWarning.12664285A920NE.FSDRFWFSD.a346a2bb61e7af8aedb2f1dec585bb07</id>
 <updated>2023-04-11T02:38:00-05:00</updated>
 <published>2023-04-11T02:38:00-05:00</published>
@@ -7404,39 +7801,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value>/O.CON.KFSD.FW.W.0003.230411T1700Z-230412T0200Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=NE126642772FA8.RedFlagWarning.126642855B00NE.CYSRFWCYS.6fbd3899bfd05da2946cf2a95db24408</id>
-<updated>2023-04-11T02:14:00-05:00</updated>
-<published>2023-04-11T02:14:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Red Flag Warning issued April 11 at 2:14AM CDT until April 11 at 7:00PM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=NE126642772FA8.RedFlagWarning.126642855B00NE.CYSRFWCYS.6fbd3899bfd05da2946cf2a95db24408"/>
-<summary>...RED FLAG WARNING IN EFFECT THIS AFTERNOON FROM NOON TO 6 PM... ...RED FLAG WARNING IN EFFECT FROM NOON TODAY TO 6 PM MDT THIS EVENING FOR GUSTY WINDS AND LOW HUMIDITY FOR FIRE WEATHER ZONES 434, 435, AND 436... The National Weather Service in Cheyenne has issued a Red Flag Warning, which is in effect from noon today to 6 PM MDT this</summary>
-<cap:event>Red Flag Warning</cap:event>
-<cap:effective>2023-04-11T02:14:00-05:00</cap:effective>
-<cap:expires>2023-04-11T19:00:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Severe</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Box Butte, South Sioux, Niobrara River; Lower North Platte River Basin, Scottsbluff National Monument; Pine Ridge, Nebraska National Forest</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>031007 031013 031045 031123 031157 031165</value>
-<valueName>UGC</valueName>
-<value>NEZ434 NEZ435 NEZ436</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.UPG.KCYS.FW.A.0001.230411T1800Z-230412T0000Z/
-/O.NEW.KCYS.FW.W.0001.230411T1800Z-230412T0000Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -7629,6 +7993,104 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value></value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=NM126642792664.RedFlagWarning.12664294EB60NM.ABQRFWABQ.080d0831bde0e7e7b747955e08bd4ec9</id>
+<updated>2023-04-11T14:01:00-06:00</updated>
+<published>2023-04-11T14:01:00-06:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Red Flag Warning issued April 11 at 2:01PM MDT until April 12 at 8:00PM MDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=NM126642792664.RedFlagWarning.12664294EB60NM.ABQRFWABQ.080d0831bde0e7e7b747955e08bd4ec9"/>
+<summary>...RED FLAG WARNING IN EFFECT FROM 1 PM TO 8 PM MDT WEDNESDAY FOR NORTHEAST NEW MEXICO DUE TO STRONG WINDS, LOW HUMIDITY AND AN UNSTABLE ATMOSPHERE... ...FIRE WEATHER WATCH IN EFFECT FROM THURSDAY AFTERNOON THROUGH THURSDAY EVENING FOR MUCH OF EASTERN NEW MEXICO AS WELL AS THE SOUTHWEST MOUNTAINS AND MIDDLE RIO GRANDE VALLEY DUE TO STRONG</summary>
+<cap:event>Red Flag Warning</cap:event>
+<cap:effective>2023-04-11T14:01:00-06:00</cap:effective>
+<cap:expires>2023-04-12T20:00:00-06:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Severe</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Northeast Highlands; Northeast Plains</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>035007 035021 035033 035047 035059</value>
+<valueName>UGC</valueName>
+<value>NMZ104 NMZ123</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.NEW.KABQ.FW.W.0025.230412T1900Z-230413T0200Z/
+/O.NEW.KABQ.FW.A.0018.230413T1800Z-230414T0200Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=NM126642792664.FireWeatherWatch.126642A42DA0NM.ABQRFWABQ.22baf95ecf8cfd6456d801b6580bc9dc</id>
+<updated>2023-04-11T14:01:00-06:00</updated>
+<published>2023-04-11T14:01:00-06:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Fire Weather Watch issued April 11 at 2:01PM MDT until April 13 at 8:00PM MDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=NM126642792664.FireWeatherWatch.126642A42DA0NM.ABQRFWABQ.22baf95ecf8cfd6456d801b6580bc9dc"/>
+<summary>...RED FLAG WARNING IN EFFECT FROM 1 PM TO 8 PM MDT WEDNESDAY FOR NORTHEAST NEW MEXICO DUE TO STRONG WINDS, LOW HUMIDITY AND AN UNSTABLE ATMOSPHERE... ...FIRE WEATHER WATCH IN EFFECT FROM THURSDAY AFTERNOON THROUGH THURSDAY EVENING FOR MUCH OF EASTERN NEW MEXICO AS WELL AS THE SOUTHWEST MOUNTAINS AND MIDDLE RIO GRANDE VALLEY DUE TO STRONG</summary>
+<cap:event>Fire Weather Watch</cap:event>
+<cap:effective>2023-04-11T14:01:00-06:00</cap:effective>
+<cap:expires>2023-04-13T20:00:00-06:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Future</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Possible</cap:certainty>
+<cap:areaDesc>Northeast Highlands; Northeast Plains</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>035007 035021 035033 035047 035059</value>
+<valueName>UGC</valueName>
+<value>NMZ104 NMZ123</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.NEW.KABQ.FW.W.0025.230412T1900Z-230413T0200Z/
+/O.NEW.KABQ.FW.A.0018.230413T1800Z-230414T0200Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=NM126642792664.FireWeatherWatch.126642A42DA0NM.ABQRFWABQ.f61fd5b12611cafd7d4c2cfe2c44657f</id>
+<updated>2023-04-11T14:01:00-06:00</updated>
+<published>2023-04-11T14:01:00-06:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Fire Weather Watch issued April 11 at 2:01PM MDT until April 13 at 8:00PM MDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=NM126642792664.FireWeatherWatch.126642A42DA0NM.ABQRFWABQ.f61fd5b12611cafd7d4c2cfe2c44657f"/>
+<summary>...RED FLAG WARNING IN EFFECT FROM 1 PM TO 8 PM MDT WEDNESDAY FOR NORTHEAST NEW MEXICO DUE TO STRONG WINDS, LOW HUMIDITY AND AN UNSTABLE ATMOSPHERE... ...FIRE WEATHER WATCH IN EFFECT FROM THURSDAY AFTERNOON THROUGH THURSDAY EVENING FOR MUCH OF EASTERN NEW MEXICO AS WELL AS THE SOUTHWEST MOUNTAINS AND MIDDLE RIO GRANDE VALLEY DUE TO STRONG</summary>
+<cap:event>Fire Weather Watch</cap:event>
+<cap:effective>2023-04-11T14:01:00-06:00</cap:effective>
+<cap:expires>2023-04-13T20:00:00-06:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Future</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Possible</cap:certainty>
+<cap:areaDesc>Central Highlands; East Central Plains; Middle Rio Grande Valley; Sandia and Manzano Mountains; West Central Basin and Range</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>035001 035003 035009 035011 035019 035037 035041 035043 035049 035053 035057 035061</value>
+<valueName>UGC</valueName>
+<value>NMZ106 NMZ109 NMZ124 NMZ125 NMZ126</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.NEW.KABQ.FW.A.0018.230413T1800Z-230414T0200Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -8214,6 +8676,104 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=OK126642792600.RedFlagWarning.12664294EB60OK.AMARFWAMA.26371a7bd2ce07bafd10f40b16683909</id>
+<updated>2023-04-11T15:00:00-05:00</updated>
+<published>2023-04-11T15:00:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Red Flag Warning issued April 11 at 3:00PM CDT until April 12 at 9:00PM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=OK126642792600.RedFlagWarning.12664294EB60OK.AMARFWAMA.26371a7bd2ce07bafd10f40b16683909"/>
+<summary>...RED FLAG WARNING IN EFFECT FROM 2 PM TO 9 PM CDT WEDNESDAY FOR STRONG WINDS AND LOW RELATIVE HUMIDITY FOR THE FAR NORTHWESTERN TEXAS AND WESTERN OKLAHOMA PANHANDLES... ...FIRE WEATHER WATCH IN EFFECT FROM THURSDAY AFTERNOON THROUGH THURSDAY EVENING FOR STRONG WINDS AND LOW RELATIVE HUMIDITY FOR THE FAR NORTHWESTERN TEXAS AND WESTERN OKLAHOMA PANHANDLE...</summary>
+<cap:event>Red Flag Warning</cap:event>
+<cap:effective>2023-04-11T15:00:00-05:00</cap:effective>
+<cap:expires>2023-04-12T21:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Severe</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Cimarron</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>040025</value>
+<valueName>UGC</valueName>
+<value>OKZ001</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.NEW.KAMA.FW.W.0020.230412T1900Z-230413T0200Z/
+/O.NEW.KAMA.FW.A.0017.230413T1800Z-230414T0200Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=OK126642792600.FireWeatherWatch.126642A42DA0OK.AMARFWAMA.1f63601d42716f2f192c735ede410415</id>
+<updated>2023-04-11T15:00:00-05:00</updated>
+<published>2023-04-11T15:00:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Fire Weather Watch issued April 11 at 3:00PM CDT until April 13 at 9:00PM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=OK126642792600.FireWeatherWatch.126642A42DA0OK.AMARFWAMA.1f63601d42716f2f192c735ede410415"/>
+<summary>...RED FLAG WARNING IN EFFECT FROM 2 PM TO 9 PM CDT WEDNESDAY FOR STRONG WINDS AND LOW RELATIVE HUMIDITY FOR THE FAR NORTHWESTERN TEXAS AND WESTERN OKLAHOMA PANHANDLES... ...FIRE WEATHER WATCH IN EFFECT FROM THURSDAY AFTERNOON THROUGH THURSDAY EVENING FOR STRONG WINDS AND LOW RELATIVE HUMIDITY FOR THE FAR NORTHWESTERN TEXAS AND WESTERN OKLAHOMA PANHANDLE...</summary>
+<cap:event>Fire Weather Watch</cap:event>
+<cap:effective>2023-04-11T15:00:00-05:00</cap:effective>
+<cap:expires>2023-04-13T21:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Future</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Possible</cap:certainty>
+<cap:areaDesc>Cimarron</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>040025</value>
+<valueName>UGC</valueName>
+<value>OKZ001</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.NEW.KAMA.FW.W.0020.230412T1900Z-230413T0200Z/
+/O.NEW.KAMA.FW.A.0017.230413T1800Z-230414T0200Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=OK126642792600.FireWeatherWatch.126642A42DA0OK.AMARFWAMA.8d1e1f8cfec4674ccb8f7b8490bdd65c</id>
+<updated>2023-04-11T15:00:00-05:00</updated>
+<published>2023-04-11T15:00:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Fire Weather Watch issued April 11 at 3:00PM CDT until April 13 at 9:00PM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=OK126642792600.FireWeatherWatch.126642A42DA0OK.AMARFWAMA.8d1e1f8cfec4674ccb8f7b8490bdd65c"/>
+<summary>...FIRE WEATHER WATCH IN EFFECT FROM THURSDAY AFTERNOON THROUGH THURSDAY EVENING FOR STRONG WINDS AND LOW RELATIVE HUMIDITY FOR THE CENTRAL OKLAHOMA PANHANDLE... The National Weather Service in Amarillo has issued a Fire Weather Watch for strong winds and low relative humidity, which is in effect from Thursday afternoon through Thursday evening.</summary>
+<cap:event>Fire Weather Watch</cap:event>
+<cap:effective>2023-04-11T15:00:00-05:00</cap:effective>
+<cap:expires>2023-04-13T21:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Future</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Possible</cap:certainty>
+<cap:areaDesc>Texas</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>040139</value>
+<valueName>UGC</valueName>
+<value>OKZ002</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.NEW.KAMA.FW.A.0017.230413T1800Z-230414T0200Z/</value>
+</cap:parameter>
+</entry>
+<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=OR126642790918.FloodWarning.12664287AA68OR.PDTFLWPDT.83c8a17df246b4c4f9e374f4f2f5c5a6</id>
 <updated>2023-04-11T12:26:00-07:00</updated>
 <published>2023-04-11T12:26:00-07:00</published>
@@ -8341,6 +8901,102 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value></value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=PA126642791598.FireWeatherWatch.126642949D40PA.BGMRFWBGM.0297be79e1dfb3ea354c3ab65cad730c</id>
+<updated>2023-04-11T15:58:00-04:00</updated>
+<published>2023-04-11T15:58:00-04:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Fire Weather Watch issued April 11 at 3:58PM EDT until April 12 at 8:00PM EDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=PA126642791598.FireWeatherWatch.126642949D40PA.BGMRFWBGM.0297be79e1dfb3ea354c3ab65cad730c"/>
+<summary>...FIRE WEATHER WATCH IN EFFECT FROM WEDNESDAY MORNING THROUGH WEDNESDAY EVENING FOR ALL OF NORTHEAST PENNSYLVANIA... The National Weather Service in Binghamton has issued a Fire Weather Watch, which is in effect from Wednesday morning through Wednesday evening. * AFFECTED AREA...Fire weather zones 038, 039, 040, 043, 044,</summary>
+<cap:event>Fire Weather Watch</cap:event>
+<cap:effective>2023-04-11T15:58:00-04:00</cap:effective>
+<cap:expires>2023-04-12T20:00:00-04:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Future</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Possible</cap:certainty>
+<cap:areaDesc>Bradford; Lackawanna; Luzerne; Northern Wayne; Pike; Southern Wayne; Susquehanna; Wyoming</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>042015 042069 042079 042103 042115 042127 042131</value>
+<valueName>UGC</valueName>
+<value>PAZ038 PAZ039 PAZ040 PAZ043 PAZ044 PAZ047 PAZ048 PAZ072</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.NEW.KBGM.FW.A.0003.230412T1400Z-230413T0000Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=PA126642791214.FireWeatherWatch.126642949D40PA.CTPRFWCTP.d49b0e76a3fcede6fab939dfa78af818</id>
+<updated>2023-04-11T15:49:00-04:00</updated>
+<published>2023-04-11T15:49:00-04:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Fire Weather Watch issued April 11 at 3:49PM EDT until April 12 at 8:00PM EDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=PA126642791214.FireWeatherWatch.126642949D40PA.CTPRFWCTP.d49b0e76a3fcede6fab939dfa78af818"/>
+<summary>...FIRE WEATHER WATCH IN EFFECT FROM WEDNESDAY MORNING THROUGH WEDNESDAY EVENING FOR ALL OF CENTRAL PENNSYLVANIA... The National Weather Service in State College has issued a Fire Weather Watch, which is in effect from Wednesday morning through Wednesday evening. * AFFECTED AREA...Warren, McKean, Potter, Elk, Cameron, Northern</summary>
+<cap:event>Fire Weather Watch</cap:event>
+<cap:effective>2023-04-11T15:49:00-04:00</cap:effective>
+<cap:expires>2023-04-12T20:00:00-04:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Future</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Possible</cap:certainty>
+<cap:areaDesc>Adams; Bedford; Blair; Cambria; Cameron; Clearfield; Columbia; Cumberland; Dauphin; Elk; Franklin; Fulton; Huntingdon; Juniata; Lancaster; Lebanon; McKean; Mifflin; Montour; Northern Centre; Northern Clinton; Northern Lycoming; Northumberland; Perry; Potter; Schuylkill; Snyder; Somerset; Southern Centre; Southern Clinton; Southern Lycoming; Sullivan; Tioga; Union; Warren; York</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>042001 042009 042013 042021 042023 042027 042033 042035 042037 042041 042043 042047 042055 042057 042061 042067 042071 042075 042081 042083 042087 042093 042097 042099 042105 042107 042109 042111 042113 042117 042119 042123 042133</value>
+<valueName>UGC</valueName>
+<value>PAZ004 PAZ005 PAZ006 PAZ010 PAZ011 PAZ012 PAZ017 PAZ018 PAZ019 PAZ024 PAZ025 PAZ026 PAZ027 PAZ028 PAZ033 PAZ034 PAZ035 PAZ036 PAZ037 PAZ041 PAZ042 PAZ045 PAZ046 PAZ049 PAZ050 PAZ051 PAZ052 PAZ053 PAZ056 PAZ057 PAZ058 PAZ059 PAZ063 PAZ064 PAZ065 PAZ066</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.NEW.KCTP.FW.A.0001.230412T1500Z-230413T0000Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=PA1266427910E8.FireWeatherWatch.126642949D40PA.PHIRFWPHI.371500489242da1925caf29760de6c35</id>
+<updated>2023-04-11T15:46:00-04:00</updated>
+<published>2023-04-11T15:46:00-04:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Fire Weather Watch issued April 11 at 3:46PM EDT until April 12 at 8:00PM EDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=PA1266427910E8.FireWeatherWatch.126642949D40PA.PHIRFWPHI.371500489242da1925caf29760de6c35"/>
+<summary>...FIRE WEATHER WATCH IN EFFECT FROM WEDNESDAY MORNING THROUGH WEDNESDAY EVENING FOR GUSTY WINDS AND LOW RELATIVE HUMIDITY FOR EASTERN PENNSYLVANIA... The National Weather Service in Mount Holly has issued a Fire Weather Watch for gusty winds and low relative humidity, which is in effect from Wednesday morning through Wednesday evening.</summary>
+<cap:event>Fire Weather Watch</cap:event>
+<cap:effective>2023-04-11T15:46:00-04:00</cap:effective>
+<cap:expires>2023-04-12T20:00:00-04:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Future</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Possible</cap:certainty>
+<cap:areaDesc>Berks; Carbon; Delaware; Eastern Chester; Eastern Montgomery; Lehigh; Lower Bucks; Monroe; Northampton; Philadelphia; Upper Bucks; Western Chester; Western Montgomery</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>042011 042017 042025 042029 042045 042077 042089 042091 042095 042101</value>
+<valueName>UGC</valueName>
+<value>PAZ054 PAZ055 PAZ060 PAZ061 PAZ062 PAZ070 PAZ071 PAZ101 PAZ102 PAZ103 PAZ104 PAZ105 PAZ106</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.NEW.KPHI.FW.A.0001.230412T1500Z-230413T0000Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -8925,6 +9581,39 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <valueName>VTEC</valueName>
 <value>/O.EXT.KCAE.FL.W.0030.000000T0000Z-230412T0400Z/
 /CHAS1.1.ER.230410T0324Z.230410T1615Z.230411T0400Z.NO/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=SD126642791534.FloodWarning.126642953980SD.ABRFLWABR.8d4353ed007e6fbfc021c79fb6db7a97</id>
+<updated>2023-04-11T13:57:00-06:00</updated>
+<published>2023-04-11T13:57:00-06:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Flood Warning issued April 11 at 1:57PM MDT until further notice by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=SD126642791534.FloodWarning.126642953980SD.ABRFLWABR.8d4353ed007e6fbfc021c79fb6db7a97"/>
+<summary>...The National Weather Service in Aberdeen SD has issued a Flood Warning for the following rivers in South Dakota... North Fork Yellow Medicine River near Milbank affecting Grant County. .The following river forecasts include forecast precipitation through the next 24 hours. Any additional future precipitation could</summary>
+<cap:event>Flood Warning</cap:event>
+<cap:effective>2023-04-11T13:57:00-06:00</cap:effective>
+<cap:expires>2023-04-12T22:00:00-06:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Grant</cap:areaDesc>
+<cap:polygon>45.14,-96.54 45.18,-96.54 45.2,-96.53 45.23,-96.46 45.17,-96.46 45.16,-96.47 45.14,-96.54</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>046051</value>
+<valueName>UGC</valueName>
+<value>SDC051</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.NEW.KABR.FL.W.0006.230411T1957Z-000000T0000Z/
+/MYBS2.1.SM.230411T1730Z.230411T1915Z.000000T0000Z.UU/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -9582,6 +10271,72 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=TX126642792600.RedFlagWarning.12664294EB60TX.AMARFWAMA.ec06d5163c1c6827ba70141d28f55fad</id>
+<updated>2023-04-11T15:00:00-05:00</updated>
+<published>2023-04-11T15:00:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Red Flag Warning issued April 11 at 3:00PM CDT until April 12 at 9:00PM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=TX126642792600.RedFlagWarning.12664294EB60TX.AMARFWAMA.ec06d5163c1c6827ba70141d28f55fad"/>
+<summary>...RED FLAG WARNING IN EFFECT FROM 2 PM TO 9 PM CDT WEDNESDAY FOR STRONG WINDS AND LOW RELATIVE HUMIDITY FOR THE FAR NORTHWESTERN TEXAS AND WESTERN OKLAHOMA PANHANDLES... ...FIRE WEATHER WATCH IN EFFECT FROM THURSDAY AFTERNOON THROUGH THURSDAY EVENING FOR STRONG WINDS AND LOW RELATIVE HUMIDITY FOR THE FAR NORTHWESTERN TEXAS AND WESTERN OKLAHOMA PANHANDLE...</summary>
+<cap:event>Red Flag Warning</cap:event>
+<cap:effective>2023-04-11T15:00:00-05:00</cap:effective>
+<cap:expires>2023-04-12T21:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Severe</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Dallam</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>048111</value>
+<valueName>UGC</valueName>
+<value>TXZ001</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.NEW.KAMA.FW.W.0020.230412T1900Z-230413T0200Z/
+/O.NEW.KAMA.FW.A.0017.230413T1800Z-230414T0200Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=TX126642792600.FireWeatherWatch.126642A42DA0TX.AMARFWAMA.0d362eb10e18d972cf02400640bd3c7e</id>
+<updated>2023-04-11T15:00:00-05:00</updated>
+<published>2023-04-11T15:00:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Fire Weather Watch issued April 11 at 3:00PM CDT until April 13 at 9:00PM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=TX126642792600.FireWeatherWatch.126642A42DA0TX.AMARFWAMA.0d362eb10e18d972cf02400640bd3c7e"/>
+<summary>...RED FLAG WARNING IN EFFECT FROM 2 PM TO 9 PM CDT WEDNESDAY FOR STRONG WINDS AND LOW RELATIVE HUMIDITY FOR THE FAR NORTHWESTERN TEXAS AND WESTERN OKLAHOMA PANHANDLES... ...FIRE WEATHER WATCH IN EFFECT FROM THURSDAY AFTERNOON THROUGH THURSDAY EVENING FOR STRONG WINDS AND LOW RELATIVE HUMIDITY FOR THE FAR NORTHWESTERN TEXAS AND WESTERN OKLAHOMA PANHANDLE...</summary>
+<cap:event>Fire Weather Watch</cap:event>
+<cap:effective>2023-04-11T15:00:00-05:00</cap:effective>
+<cap:expires>2023-04-13T21:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Future</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Possible</cap:certainty>
+<cap:areaDesc>Dallam</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>048111</value>
+<valueName>UGC</valueName>
+<value>TXZ001</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.NEW.KAMA.FW.W.0020.230412T1900Z-230413T0200Z/
+/O.NEW.KAMA.FW.A.0017.230413T1800Z-230414T0200Z/</value>
+</cap:parameter>
+</entry>
+<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=TX126642790148.FloodWarning.12664287A4F0TX.HGXFLSHGX.787b687a3a8294e1ee316546171ce282</id>
 <updated>2023-04-11T14:06:00-05:00</updated>
 <published>2023-04-11T14:06:00-05:00</published>
@@ -10069,6 +10824,136 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=WI1266427926C8.FloodWarning.12664286995CWI.ARXFLSARX.06fa4cc3d7dfd2d26165304ec858290f</id>
+<updated>2023-04-11T15:02:00-05:00</updated>
+<published>2023-04-11T15:02:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Flood Warning issued April 11 at 3:02PM CDT until further notice by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=WI1266427926C8.FloodWarning.12664286995CWI.ARXFLSARX.06fa4cc3d7dfd2d26165304ec858290f"/>
+<summary>...The Flood Warning continues for the following rivers in Wisconsin...Minnesota... Mississippi River at Wabasha affecting Wabasha and Buffalo Counties. .Warm temperatures will melt snowpack and increase river flows. ...FLOOD WARNING FOR SNOWMELT REMAINS IN EFFECT FROM LATE THURSDAY</summary>
+<cap:event>Flood Warning</cap:event>
+<cap:effective>2023-04-11T15:02:00-05:00</cap:effective>
+<cap:expires>2023-04-12T03:15:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Buffalo</cap:areaDesc>
+<cap:polygon>44.45,-92.07 44.42,-92 44.35,-91.92 44.33,-92 44.39,-92.09 44.45,-92.07</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>055011</value>
+<valueName>UGC</valueName>
+<value>WIC011</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KARX.FL.W.0008.230414T0600Z-000000T0000Z/
+/WABM5.2.SM.230414T0300Z.230418T1200Z.000000T0000Z.NO/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=WI1266427915FC.FireWeatherWatch.126642949D40WI.GRBRFWGRB.4b78a21d296c073f9e097e75a5a0be9e</id>
+<updated>2023-04-11T14:59:00-05:00</updated>
+<published>2023-04-11T14:59:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Fire Weather Watch issued April 11 at 2:59PM CDT until April 12 at 7:00PM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=WI1266427915FC.FireWeatherWatch.126642949D40WI.GRBRFWGRB.4b78a21d296c073f9e097e75a5a0be9e"/>
+<summary>...Critical Fire Weather Conditions Possible Wednesday Afternoon... .Record to near record warm temperatures, in combination with winds gusting in the 25 to 30 mph range and minimum relative humidity values nearing 30 percent are leading to the possibility of critical fire weather conditions occurring across east-central</summary>
+<cap:event>Fire Weather Watch</cap:event>
+<cap:effective>2023-04-11T14:59:00-05:00</cap:effective>
+<cap:expires>2023-04-12T19:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Future</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Possible</cap:certainty>
+<cap:areaDesc>Calumet; Outagamie; Portage; Waupaca; Waushara; Winnebago; Wood</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>055015 055087 055097 055135 055137 055139 055141</value>
+<valueName>UGC</valueName>
+<value>WIZ035 WIZ036 WIZ037 WIZ038 WIZ045 WIZ048 WIZ049</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.NEW.KGRB.FW.A.0001.230412T1600Z-230413T0000Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=WI126642791084.FireWeatherWatch.12664294C450WI.MKXRFWMKX.b9078694aedea8771e6edc380ebccfdb</id>
+<updated>2023-04-11T14:45:00-05:00</updated>
+<published>2023-04-11T14:45:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Fire Weather Watch issued April 11 at 2:45PM CDT until April 12 at 8:00PM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=WI126642791084.FireWeatherWatch.12664294C450WI.MKXRFWMKX.b9078694aedea8771e6edc380ebccfdb"/>
+<summary>...Critical Fire Weather Conditions Possible Wednesday Afternoon... .Very warm, windy and dry conditions are expected across south central and southeast Wisconsin Wednesday afternoon. This will bring the possibility of critical fire weather conditions occurring across the area.</summary>
+<cap:event>Fire Weather Watch</cap:event>
+<cap:effective>2023-04-11T14:45:00-05:00</cap:effective>
+<cap:expires>2023-04-12T20:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Future</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Possible</cap:certainty>
+<cap:areaDesc>Columbia; Dane; Dodge; Fond Du Lac; Green; Green Lake; Iowa; Jefferson; Kenosha; Lafayette; Marquette; Milwaukee; Ozaukee; Racine; Rock; Sauk; Sheboygan; Walworth; Washington; Waukesha</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>055021 055025 055027 055039 055045 055047 055049 055055 055059 055065 055077 055079 055089 055101 055105 055111 055117 055127 055131 055133</value>
+<valueName>UGC</valueName>
+<value>WIZ046 WIZ047 WIZ051 WIZ052 WIZ056 WIZ057 WIZ058 WIZ059 WIZ060 WIZ062 WIZ063 WIZ064 WIZ065 WIZ066 WIZ067 WIZ068 WIZ069 WIZ070 WIZ071 WIZ072</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.NEW.KMKX.FW.A.0001.230412T1600Z-230413T0100Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=WI126642790BD4.FloodWarning.12664294D5E4WI.DLHFLWDLH.1944224642ee68753468ee6b3e4e867f</id>
+<updated>2023-04-11T14:33:00-05:00</updated>
+<published>2023-04-11T14:33:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Flood Warning issued April 11 at 2:33PM CDT until further notice by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=WI126642790BD4.FloodWarning.12664294D5E4WI.DLHFLWDLH.1944224642ee68753468ee6b3e4e867f"/>
+<summary>...The National Weather Service in Duluth MN has issued a Flood Warning for the following rivers in Wisconsin... Bad River at Odanah affecting Ashland County. .Warm daytime temperatures along with low temperatures remaining above freezing overnight will accelerate snow melt. River flows will increase quickly and remain high for the next week.</summary>
+<cap:event>Flood Warning</cap:event>
+<cap:effective>2023-04-11T14:33:00-05:00</cap:effective>
+<cap:expires>2023-04-12T20:45:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Ashland</cap:areaDesc>
+<cap:polygon>46.63,-90.64 46.6,-90.66 46.6,-90.72 46.66,-90.68 46.63,-90.64</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>055003</value>
+<valueName>UGC</valueName>
+<value>WIC003</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.NEW.KDLH.FL.W.0002.230413T2100Z-000000T0000Z/
+/BDOW3.1.SM.230413T2100Z.230415T0000Z.230417T0000Z.UU/</value>
+</cap:parameter>
+</entry>
+<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=WI1266427906C0.FireWeatherWatch.12664294C450WI.ARXRFWARX.8e664829d0d1964cbff745e99427a4bf</id>
 <updated>2023-04-11T14:20:00-05:00</updated>
 <published>2023-04-11T14:20:00-05:00</published>
@@ -10131,39 +11016,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <valueName>VTEC</valueName>
 <value>/O.NEW.KDLH.FL.W.0001.230412T0417Z-000000T0000Z/
 /TYLW3.3.SM.230412T0417Z.230414T1800Z.230417T2100Z.NR/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=WI126642789DAC.FloodWarning.126642861E50WI.ARXFLSARX.06fa4cc3d7dfd2d26165304ec858290f</id>
-<updated>2023-04-11T11:51:00-05:00</updated>
-<published>2023-04-11T11:51:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Flood Warning issued April 11 at 11:51AM CDT until further notice by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=WI126642789DAC.FloodWarning.126642861E50WI.ARXFLSARX.06fa4cc3d7dfd2d26165304ec858290f"/>
-<summary>...The Flood Warning continues for the following rivers in Minnesota...Wisconsin... Mississippi River at Wabasha affecting Buffalo and Wabasha Counties. .Warm temperatures will melt snowpack and increase river flows. For the Mississippi River...including Wabasha...Moderate flooding is</summary>
-<cap:event>Flood Warning</cap:event>
-<cap:effective>2023-04-11T11:51:00-05:00</cap:effective>
-<cap:expires>2023-04-12T00:00:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Buffalo</cap:areaDesc>
-<cap:polygon>44.45,-92.07 44.42,-92 44.35,-91.92 44.33,-92 44.39,-92.09 44.45,-92.07</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>055011</value>
-<valueName>UGC</valueName>
-<value>WIC011</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KARX.FL.W.0008.230414T0600Z-000000T0000Z/
-/WABM5.2.SM.230414T0300Z.230418T1200Z.000000T0000Z.NO/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -10661,18 +11513,18 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=WI1266426997F8.FloodAdvisory.126642861E50WI.DLHFLSDLH.d64da0cba8a34f38098f79f2e6ecb4dd</id>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=WI1266426997F8.FloodAdvisory.12664286995CWI.DLHFLSDLH.d64da0cba8a34f38098f79f2e6ecb4dd</id>
 <updated>2023-04-10T13:06:00-05:00</updated>
 <published>2023-04-10T13:06:00-05:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
 <title>Flood Advisory issued April 10 at 1:06PM CDT until further notice by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=WI1266426997F8.FloodAdvisory.126642861E50WI.DLHFLSDLH.d64da0cba8a34f38098f79f2e6ecb4dd"/>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=WI1266426997F8.FloodAdvisory.12664286995CWI.DLHFLSDLH.d64da0cba8a34f38098f79f2e6ecb4dd"/>
 <summary>...FLOOD ADVISORY FOR SNOWMELT IN EFFECT UNTIL 1230 PM CDT THURSDAY... * WHAT...Flooding caused by snowmelt is expected. * WHERE...Portions of northwest Wisconsin, including the following areas, Price, Ashland, Bayfield, Burnett, Douglas, Iron, Sawyer and Washburn Counties.</summary>
 <cap:event>Flood Advisory</cap:event>
 <cap:effective>2023-04-10T13:06:00-05:00</cap:effective>
-<cap:expires>2023-04-12T00:00:00-05:00</cap:expires>
+<cap:expires>2023-04-12T03:15:00-05:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
 <cap:category>Met</cap:category>
@@ -10694,18 +11546,18 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=WI1266426997F8.FloodAdvisory.12664294AED4WI.DLHFLSDLH.00c83959d02865708e91901ab475acd5</id>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=WI1266426997F8.FloodAdvisory.12664294D5E4WI.DLHFLSDLH.00c83959d02865708e91901ab475acd5</id>
 <updated>2023-04-10T13:06:00-05:00</updated>
 <published>2023-04-10T13:06:00-05:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
 <title>Flood Advisory issued April 10 at 1:06PM CDT until further notice by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=WI1266426997F8.FloodAdvisory.12664294AED4WI.DLHFLSDLH.00c83959d02865708e91901ab475acd5"/>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=WI1266426997F8.FloodAdvisory.12664294D5E4WI.DLHFLSDLH.00c83959d02865708e91901ab475acd5"/>
 <summary>...FLOOD ADVISORY FOR SNOWMELT IN EFFECT UNTIL 1230 PM CDT THURSDAY... * WHAT...Flooding caused by snowmelt is expected. * WHERE...Portions of northwest Wisconsin, including the following areas, Price, Ashland, Bayfield, Burnett, Douglas, Iron, Sawyer and Washburn Counties.</summary>
 <cap:event>Flood Advisory</cap:event>
 <cap:effective>2023-04-10T13:06:00-05:00</cap:effective>
-<cap:expires>2023-04-12T19:45:00-05:00</cap:expires>
+<cap:expires>2023-04-12T20:45:00-05:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
 <cap:category>Met</cap:category>
@@ -10790,6 +11642,38 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <valueName>VTEC</valueName>
 <value>/O.NEW.KDLH.FA.Y.0001.230410T1806Z-230413T1730Z/
 /00000.N.SM.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=WV1266427910E8.FireWeatherWatch.126642949D40WV.LWXRFWLWX.68f04c0241073f7c62c07146034a841a</id>
+<updated>2023-04-11T15:46:00-04:00</updated>
+<published>2023-04-11T15:46:00-04:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Fire Weather Watch issued April 11 at 3:46PM EDT until April 12 at 8:00PM EDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=WV1266427910E8.FireWeatherWatch.126642949D40WV.LWXRFWLWX.68f04c0241073f7c62c07146034a841a"/>
+<summary>...FIRE WEATHER WATCH IN EFFECT FROM WEDNESDAY AFTERNOON THROUGH WEDNESDAY EVENING FOR GUSTY WINDS AND LOW HUMIDITY IN THE EASTERN WEST VIRGINIA PANHANDLE... * WINDS...West 10 to 20 mph with gusts up to 30 mph. * RELATIVE HUMIDITY...As low as 30 percent. * IMPACTS...The combination of dry conditions, low humidity, and</summary>
+<cap:event>Fire Weather Watch</cap:event>
+<cap:effective>2023-04-11T15:46:00-04:00</cap:effective>
+<cap:expires>2023-04-12T20:00:00-04:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Future</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Possible</cap:certainty>
+<cap:areaDesc>Berkeley; Eastern Grant; Eastern Mineral; Hampshire; Hardy; Jefferson; Morgan; Western Grant; Western Mineral</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>054003 054023 054027 054031 054037 054057 054065</value>
+<valueName>UGC</valueName>
+<value>WVZ050 WVZ051 WVZ052 WVZ053 WVZ055 WVZ501 WVZ502 WVZ503 WVZ504</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.NEW.KLWX.FW.A.0001.230412T1600Z-230413T0000Z/</value>
 </cap:parameter>
 </entry>
 <entry>
