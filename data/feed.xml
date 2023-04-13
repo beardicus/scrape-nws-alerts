@@ -16,16 +16,48 @@ xmlns = 'http://www.w3.org/2005/Atom'
 xmlns:cap = 'urn:oasis:names:tc:emergency:cap:1.1'
 xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 >
-<!-- http-date = Thu, 13 Apr 2023 20:01:00 GMT -->
+<!-- http-date = Thu, 13 Apr 2023 20:31:00 GMT -->
 <id>https://alerts.weather.gov/cap/us.php?x=0</id>
 <logo>http://alerts.weather.gov/images/xml_logo.gif</logo>
 <generator>NWS CAP Server</generator>
-<updated>2023-04-13T16:01:00-04:00</updated>
+<updated>2023-04-13T15:31:00-05:00</updated>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
 <title>Current Watches, Warnings and Advisories for the United States Issued by the National Weather Service</title>
 <link href="https://alerts.weather.gov/cap/us.php?x=0"/>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=AL12664297B638.SpecialWeatherStatement.12664297D190AL.BMXSPSBMX.c1d8726d29a509a75acadb59c7f9dff1</id>
+<updated>2023-04-13T15:30:00-05:00</updated>
+<published>2023-04-13T15:30:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Special Weather Statement issued April 13 at 3:30PM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=AL12664297B638.SpecialWeatherStatement.12664297D190AL.BMXSPSBMX.c1d8726d29a509a75acadb59c7f9dff1"/>
+<summary>...A strong thunderstorm will impact portions of central Walker County through 400 PM CDT... At 329 PM CDT, Doppler radar was tracking a strong thunderstorm over Parrish, or near Cordova, moving north at 35 mph. HAZARD...Pea size hail. SOURCE...Radar indicated.</summary>
+<cap:event>Special Weather Statement</cap:event>
+<cap:effective>2023-04-13T15:30:00-05:00</cap:effective>
+<cap:expires>2023-04-13T16:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Observed</cap:certainty>
+<cap:areaDesc>Walker</cap:areaDesc>
+<cap:polygon>33.99,-87.18 33.65,-87.13 33.61,-87.34 34,-87.5 33.99,-87.22 33.98,-87.2 34,-87.19 34,-87.18 33.99,-87.18</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>001127</value>
+<valueName>UGC</valueName>
+<value>ALZ015</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value></value>
+</cap:parameter>
+</entry>
 <entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=AL126642979694.CoastalFloodAdvisory.126642A454B0AL.MOBCFWMOB.599e4809bbccf4af82b30516cc21938e</id>
 <updated>2023-04-13T14:49:00-05:00</updated>
@@ -158,38 +190,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <value>/O.CON.KMOB.CF.Y.0003.000000T0000Z-230414T0300Z/
 /O.CON.KMOB.SU.Y.0006.000000T0000Z-230414T0300Z/
 /O.CON.KMOB.RP.S.0019.000000T0000Z-230414T1100Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=AL126642979374.SpecialWeatherStatement.12664297B05CAL.BMXSPSBMX.36463ad279fc5d71ac0a217f961c5c65</id>
-<updated>2023-04-13T14:41:00-05:00</updated>
-<published>2023-04-13T14:41:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Special Weather Statement issued April 13 at 2:41PM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=AL126642979374.SpecialWeatherStatement.12664297B05CAL.BMXSPSBMX.36463ad279fc5d71ac0a217f961c5c65"/>
-<summary>...A strong thunderstorm will impact portions of southern Walker, northeastern Tuscaloosa, southwestern Jefferson and east central Fayette Counties through 315 PM CDT... At 241 PM CDT, the public reported a strong thunderstorm near Concord, or 9 miles west of Hueytown, moving north at 40 mph. HAZARD...Pea size hail.</summary>
-<cap:event>Special Weather Statement</cap:event>
-<cap:effective>2023-04-13T14:41:00-05:00</cap:effective>
-<cap:expires>2023-04-13T15:15:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Observed</cap:certainty>
-<cap:areaDesc>Fayette; Jefferson; Tuscaloosa; Walker</cap:areaDesc>
-<cap:polygon>33.4,-87.01 33.34,-87.21 33.71,-87.56 33.86,-87.16 33.4,-87.01</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>001057 001073 001125 001127</value>
-<valueName>UGC</valueName>
-<value>ALZ013 ALZ015 ALZ023 ALZ024</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value></value>
 </cap:parameter>
 </entry>
 <entry>
@@ -1526,6 +1526,263 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=FL12664297B5D4.FlashFloodWarning.126642982B68FL.MFLFFWMFL.ddda8277dd1049b3eb1216037aad1592</id>
+<updated>2023-04-13T16:29:00-04:00</updated>
+<published>2023-04-13T16:29:00-04:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Flash Flood Warning issued April 13 at 4:29PM EDT until April 13 at 7:30PM EDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=FL12664297B5D4.FlashFloodWarning.126642982B68FL.MFLFFWMFL.ddda8277dd1049b3eb1216037aad1592"/>
+<summary>The National Weather Service in Miami has issued a * Flash Flood Warning for... Southern Broward County in southeastern Florida... * Until 730 PM EDT. * At 429 PM EDT, Doppler radar indicated thunderstorms producing heavy rain across the warned area. Additional rainfall amounts of</summary>
+<cap:event>Flash Flood Warning</cap:event>
+<cap:effective>2023-04-13T16:29:00-04:00</cap:effective>
+<cap:expires>2023-04-13T19:30:00-04:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Immediate</cap:urgency>
+<cap:severity>Severe</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Broward</cap:areaDesc>
+<cap:polygon>26,-80.26 26.09,-80.33 26.18,-80.29 26.2,-80.19 26.18,-80.1 26.01,-80.12 26,-80.26</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>012011</value>
+<valueName>UGC</valueName>
+<value>FLC011</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.NEW.KMFL.FF.W.0009.230413T2029Z-230413T2330Z/
+/00000.0.ER.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=FL12664297B444.SevereThunderstormWarning.12664297D190FL.JAXSVRJAX.9806c0120004a4e6a4a485b5cff63637</id>
+<updated>2023-04-13T16:25:00-04:00</updated>
+<published>2023-04-13T16:25:00-04:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Severe Thunderstorm Warning issued April 13 at 4:25PM EDT until April 13 at 5:00PM EDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=FL12664297B444.SevereThunderstormWarning.12664297D190FL.JAXSVRJAX.9806c0120004a4e6a4a485b5cff63637"/>
+<summary>The National Weather Service in Jacksonville has issued a * Severe Thunderstorm Warning for... Southeastern St. Johns County in northeastern Florida... * Until 500 PM EDT. * At 425 PM EDT, a severe thunderstorm was located 7 miles southwest of Crescent Beach, or 9 miles east of Hastings, moving northeast at</summary>
+<cap:event>Severe Thunderstorm Warning</cap:event>
+<cap:effective>2023-04-13T16:25:00-04:00</cap:effective>
+<cap:expires>2023-04-13T17:00:00-04:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Immediate</cap:urgency>
+<cap:severity>Severe</cap:severity>
+<cap:certainty>Observed</cap:certainty>
+<cap:areaDesc>St. Johns</cap:areaDesc>
+<cap:polygon>29.66,-81.18 29.66,-81.21 29.67,-81.21 29.66,-81.22 29.67,-81.22 29.67,-81.26 29.64,-81.31 29.65,-81.32 29.64,-81.32 29.63,-81.39 29.74,-81.43 29.82,-81.24 29.66,-81.18</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>012109</value>
+<valueName>UGC</valueName>
+<value>FLC109</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.NEW.KJAX.SV.W.0058.230413T2025Z-230413T2100Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=FL12664297B37C.SevereThunderstormWarning.12664297BC14FL.MFLSVSMFL.e9a3d6c20cc2530fa68b354af110c691</id>
+<updated>2023-04-13T16:23:00-04:00</updated>
+<published>2023-04-13T16:23:00-04:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Severe Thunderstorm Warning issued April 13 at 4:23PM EDT until April 13 at 4:45PM EDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=FL12664297B37C.SevereThunderstormWarning.12664297BC14FL.MFLSVSMFL.e9a3d6c20cc2530fa68b354af110c691"/>
+<summary>...A SEVERE THUNDERSTORM WARNING REMAINS IN EFFECT UNTIL 445 PM EDT FOR BROWARD AND SOUTHEASTERN PALM BEACH COUNTIES... At 422 PM EDT, a severe thunderstorm was located over Sawgrass Mills Mall, or over Sunrise, moving northeast at 30 mph. HAZARD...60 mph wind gusts and penny size hail. SOURCE...Radar indicated.</summary>
+<cap:event>Severe Thunderstorm Warning</cap:event>
+<cap:effective>2023-04-13T16:23:00-04:00</cap:effective>
+<cap:expires>2023-04-13T16:45:00-04:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Immediate</cap:urgency>
+<cap:severity>Severe</cap:severity>
+<cap:certainty>Observed</cap:certainty>
+<cap:areaDesc>Broward; Palm Beach</cap:areaDesc>
+<cap:polygon>25.96,-80.41 26.21,-80.5 26.38,-80.26 26.09,-80.07 25.96,-80.41</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>012011 012099</value>
+<valueName>UGC</valueName>
+<value>FLC011 FLC099</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KMFL.SV.W.0005.000000T0000Z-230413T2045Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=FL12664297B37C.SevereWeatherStatement.12664297BC14FL.MFLSVSMFL.f8f8ef8fa51a9ecb892d3d445380cc4e</id>
+<updated>2023-04-13T16:23:00-04:00</updated>
+<published>2023-04-13T16:23:00-04:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Severe Weather Statement issued April 13 at 4:23PM EDT until April 13 at 4:45PM EDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=FL12664297B37C.SevereWeatherStatement.12664297BC14FL.MFLSVSMFL.f8f8ef8fa51a9ecb892d3d445380cc4e"/>
+<summary>...A SEVERE THUNDERSTORM WARNING REMAINS IN EFFECT UNTIL 445 PM EDT FOR BROWARD AND SOUTHEASTERN PALM BEACH COUNTIES... At 422 PM EDT, a severe thunderstorm was located over Sawgrass Mills Mall, or over Sunrise, moving northeast at 30 mph. HAZARD...60 mph wind gusts and penny size hail. SOURCE...Radar indicated.</summary>
+<cap:event>Severe Weather Statement</cap:event>
+<cap:effective>2023-04-13T16:23:00-04:00</cap:effective>
+<cap:expires>2023-04-13T16:45:00-04:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Immediate</cap:urgency>
+<cap:severity>Severe</cap:severity>
+<cap:certainty>Observed</cap:certainty>
+<cap:areaDesc>Broward; Palm Beach</cap:areaDesc>
+<cap:polygon>25.96,-80.41 26.21,-80.5 26.38,-80.26 26.09,-80.07 25.96,-80.41</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>012011 012099</value>
+<valueName>UGC</valueName>
+<value>FLC011 FLC099</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KMFL.SV.W.0005.000000T0000Z-230413T2045Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=FL12664297B2B4.SpecialWeatherStatement.12664297D76CFL.JAXSPSJAX.2a8ec7d863d8607394b6e66b4ac63742</id>
+<updated>2023-04-13T16:21:00-04:00</updated>
+<published>2023-04-13T16:21:00-04:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Special Weather Statement issued April 13 at 4:21PM EDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=FL12664297B2B4.SpecialWeatherStatement.12664297D76CFL.JAXSPSJAX.2a8ec7d863d8607394b6e66b4ac63742"/>
+<summary>...A strong thunderstorm will impact portions of northeastern Duval County through 515 PM EDT... At 421 PM EDT, Doppler radar was tracking a strong thunderstorm near Oceanway, or near Jacksonville International Arpt, moving northeast at 10 mph. HAZARD...Wind gusts up to 50 mph, half inch hail, excessive</summary>
+<cap:event>Special Weather Statement</cap:event>
+<cap:effective>2023-04-13T16:21:00-04:00</cap:effective>
+<cap:expires>2023-04-13T17:15:00-04:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Observed</cap:certainty>
+<cap:areaDesc>Coastal Duval; Coastal Nassau; Trout River; Western Duval</cap:areaDesc>
+<cap:polygon>30.37,-81.66 30.46,-81.68 30.56,-81.57 30.43,-81.47 30.37,-81.66</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>012031 012089</value>
+<valueName>UGC</valueName>
+<value>FLZ124 FLZ125 FLZ225 FLZ425</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value></value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=FL12664297B124.SpecialWeatherStatement.12664297BC14FL.MLBSPSMLB.853638bdb49f6a57249f51f3d11a02c7</id>
+<updated>2023-04-13T16:17:00-04:00</updated>
+<published>2023-04-13T16:17:00-04:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Special Weather Statement issued April 13 at 4:17PM EDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=FL12664297B124.SpecialWeatherStatement.12664297BC14FL.MLBSPSMLB.853638bdb49f6a57249f51f3d11a02c7"/>
+<summary>...A strong thunderstorm will impact portions of northeastern Lake and northwestern Volusia Counties through 445 PM EDT... At 417 PM EDT, Doppler radar was tracking a strong thunderstorm over Pittman, or near Paisley, moving north at 25 mph. HAZARD...Winds in excess of 40 mph and half inch hail. SOURCE...Radar indicated.</summary>
+<cap:event>Special Weather Statement</cap:event>
+<cap:effective>2023-04-13T16:17:00-04:00</cap:effective>
+<cap:expires>2023-04-13T16:45:00-04:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Observed</cap:certainty>
+<cap:areaDesc>Inland Volusia; Northern Lake County</cap:areaDesc>
+<cap:polygon>28.96,-81.66 29.05,-81.66 29.05,-81.64 29.13,-81.64 29.22,-81.57 29.12,-81.37 28.88,-81.61 28.96,-81.75 28.96,-81.66</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>012069 012127</value>
+<valueName>UGC</valueName>
+<value>FLZ041 FLZ044</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value></value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=FL12664297B0C0.SpecialWeatherStatement.12664297BC14FL.MFLSPSMFL.0fb5daa2e5bbd1af989c6bb9ef596f71</id>
+<updated>2023-04-13T16:16:00-04:00</updated>
+<published>2023-04-13T16:16:00-04:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Special Weather Statement issued April 13 at 4:16PM EDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=FL12664297B0C0.SpecialWeatherStatement.12664297BC14FL.MFLSPSMFL.0fb5daa2e5bbd1af989c6bb9ef596f71"/>
+<summary>...A strong thunderstorm will impact portions of northeastern Palm Beach County through 445 PM EDT... At 416 PM EDT, National Weather Service meteorologists were tracking a strong thunderstorm near Lion Country Safari Park, or 13 miles southeast of Canal Point, moving northeast at 30 mph. HAZARD...Winds in excess of 40 mph and pea size hail.</summary>
+<cap:event>Special Weather Statement</cap:event>
+<cap:effective>2023-04-13T16:16:00-04:00</cap:effective>
+<cap:expires>2023-04-13T16:45:00-04:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Observed</cap:certainty>
+<cap:areaDesc>Inland Palm Beach County; Metro Palm Beach County</cap:areaDesc>
+<cap:polygon>26.67,-80.42 26.8,-80.54 26.96,-80.38 26.96,-80.35 26.82,-80.11 26.67,-80.42</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>012099</value>
+<valueName>UGC</valueName>
+<value>FLZ067 FLZ068</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value></value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=FL12664297AE68.SpecialWeatherStatement.12664297BC14FL.JAXSPSJAX.358c7b023f8b21726824e56a23912de5</id>
+<updated>2023-04-13T16:10:00-04:00</updated>
+<published>2023-04-13T16:10:00-04:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Special Weather Statement issued April 13 at 4:10PM EDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=FL12664297AE68.SpecialWeatherStatement.12664297BC14FL.JAXSPSJAX.358c7b023f8b21726824e56a23912de5"/>
+<summary>...A strong thunderstorm will impact portions of southeastern St. Johns County through 445 PM EDT... At 410 PM EDT, Doppler radar was tracking a strong thunderstorm over Saint Augustine, moving northeast at 40 mph. HAZARD...Winds around 40 mph and half inch hail. SOURCE...Radar indicated.</summary>
+<cap:event>Special Weather Statement</cap:event>
+<cap:effective>2023-04-13T16:10:00-04:00</cap:effective>
+<cap:expires>2023-04-13T16:45:00-04:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Observed</cap:certainty>
+<cap:areaDesc>Coastal Flagler; Coastal St. Johns; Inland St. Johns</cap:areaDesc>
+<cap:polygon>29.69,-81.2 29.65,-81.28 29.65,-81.3 29.64,-81.31 29.65,-81.32 29.63,-81.32 29.63,-81.49 29.88,-81.44 29.97,-81.29 29.69,-81.2</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>012035 012109</value>
+<valueName>UGC</valueName>
+<value>FLZ033 FLZ133 FLZ138</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value></value>
+</cap:parameter>
+</entry>
+<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=FL12664297AAE4.SevereThunderstormWatch.126642A42DA0FL.JAXWCNJAX.4185ab9b01c0ec143a896e9dec0c081f</id>
 <updated>2023-04-13T16:01:00-04:00</updated>
 <published>2023-04-13T16:01:00-04:00</published>
@@ -1558,127 +1815,31 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=FL126642979950.SpecialWeatherStatement.12664297B638FL.MFLSPSMFL.e74f0fbb89e61782d88169220e0c4bf9</id>
-<updated>2023-04-13T15:56:00-04:00</updated>
-<published>2023-04-13T15:56:00-04:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Special Weather Statement issued April 13 at 3:56PM EDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=FL126642979950.SpecialWeatherStatement.12664297B638FL.MFLSPSMFL.e74f0fbb89e61782d88169220e0c4bf9"/>
-<summary>...A strong thunderstorm will impact portions of Broward and southeastern Palm Beach Counties through 430 PM EDT... At 356 PM EDT, National Weather Service meteorologists were tracking a strong thunderstorm over Intersection I-75 And U.S. 27, or 7 miles west of Sunrise, moving northeast at 20 mph. HAZARD...Winds in excess of 30 mph and pea size hail.</summary>
-<cap:event>Special Weather Statement</cap:event>
-<cap:effective>2023-04-13T15:56:00-04:00</cap:effective>
-<cap:expires>2023-04-13T16:30:00-04:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Observed</cap:certainty>
-<cap:areaDesc>Coastal Broward County; Coastal Palm Beach County; Inland Broward County; Inland Collier County; Inland Miami-Dade County; Inland Palm Beach County; Metro Broward County; Metro Palm Beach County</cap:areaDesc>
-<cap:polygon>25.94,-80.65 26.23,-80.9 26.34,-80.76 26.58,-80.36 26.47,-80.07 26.19,-80.05 26.09,-80.25 25.94,-80.65</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>012011 012021 012086 012099</value>
-<valueName>UGC</valueName>
-<value>FLZ067 FLZ068 FLZ070 FLZ071 FLZ072 FLZ073 FLZ168 FLZ172</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value></value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=FL126642979950.SevereWeatherStatement.126642A42DA0FL.JAXSVSJAX.f300c1ba68eff548bfab56a65e118da3</id>
-<updated>2023-04-13T15:56:00-04:00</updated>
-<published>2023-04-13T15:56:00-04:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Severe Weather Statement issued April 13 at 3:56PM EDT until April 13 at 10:00PM EDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=FL126642979950.SevereWeatherStatement.126642A42DA0FL.JAXSVSJAX.f300c1ba68eff548bfab56a65e118da3"/>
-<summary>...THE SEVERE THUNDERSTORM WARNING FOR WEST CENTRAL ST. JOHNS COUNTY WILL EXPIRE AT 400 PM EDT... The storm which prompted the warning has moved out of the area. Therefore, the warning will be allowed to expire. However gusty winds are still possible with this thunderstorm. A Severe Thunderstorm Watch remains in effect until 1000 PM EDT for</summary>
-<cap:event>Severe Weather Statement</cap:event>
-<cap:effective>2023-04-13T15:56:00-04:00</cap:effective>
-<cap:expires>2023-04-13T22:00:00-04:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Immediate</cap:urgency>
-<cap:severity>Severe</cap:severity>
-<cap:certainty>Observed</cap:certainty>
-<cap:areaDesc>St. Johns</cap:areaDesc>
-<cap:polygon>30.03,-81.64 30.07,-81.62 30.01,-81.47 29.95,-81.56 30.03,-81.64</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>012109</value>
-<valueName>UGC</valueName>
-<value>FLC109</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.EXP.KJAX.SV.W.0055.000000T0000Z-230413T2000Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=FL1266429798EC.SpecialWeatherStatement.12664297B638FL.MLBSPSMLB.853638bdb49f6a57249f51f3d11a02c7</id>
-<updated>2023-04-13T15:55:00-04:00</updated>
-<published>2023-04-13T15:55:00-04:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Special Weather Statement issued April 13 at 3:55PM EDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=FL1266429798EC.SpecialWeatherStatement.12664297B638FL.MLBSPSMLB.853638bdb49f6a57249f51f3d11a02c7"/>
-<summary>...A strong thunderstorm will impact portions of north central Lake and northwestern Volusia Counties through 430 PM EDT... At 354 PM EDT, Doppler radar was tracking a strong thunderstorm over Lake George, or 8 miles southeast of Salt Springs, moving northeast at 40 mph. HAZARD...Winds in excess of 40 mph and half inch hail.</summary>
-<cap:event>Special Weather Statement</cap:event>
-<cap:effective>2023-04-13T15:55:00-04:00</cap:effective>
-<cap:expires>2023-04-13T16:30:00-04:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Observed</cap:certainty>
-<cap:areaDesc>Inland Volusia; Northern Lake County</cap:areaDesc>
-<cap:polygon>29.26,-81.42 29.26,-81.35 29.06,-81.64 29.28,-81.64 29.3,-81.65 29.31,-81.67 29.32,-81.68 29.38,-81.45 29.4,-81.43 29.4,-81.42 29.26,-81.42</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>012069 012127</value>
-<valueName>UGC</valueName>
-<value>FLZ041 FLZ044</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value></value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=FL12664297975C.FloodWatch.12664297B638FL.MFLFFAMFL.aa085b1b939ae377735d590c4fdaa03d</id>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=FL12664297975C.FloodWatch.12664297BC14FL.MFLFFAMFL.470c8c8cb3fda542b829a12739c3dda2</id>
 <updated>2023-04-13T15:51:00-04:00</updated>
 <published>2023-04-13T15:51:00-04:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
 <title>Flood Watch issued April 13 at 3:51PM EDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=FL12664297975C.FloodWatch.12664297B638FL.MFLFFAMFL.aa085b1b939ae377735d590c4fdaa03d"/>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=FL12664297975C.FloodWatch.12664297BC14FL.MFLFFAMFL.470c8c8cb3fda542b829a12739c3dda2"/>
 <summary>.Scattered storms may bring locally heavy rainfall and additional flooding concerns through early this evening. ...FLOOD WATCH REMAINS IN EFFECT UNTIL 8 PM EDT THIS EVENING... * WHAT...Flooding caused by excessive rainfall continues to be possible. * WHERE...A portion of South Florida, including the following areas,</summary>
 <cap:event>Flood Watch</cap:event>
 <cap:effective>2023-04-13T15:51:00-04:00</cap:effective>
-<cap:expires>2023-04-13T16:30:00-04:00</cap:expires>
+<cap:expires>2023-04-13T16:45:00-04:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
 <cap:category>Met</cap:category>
 <cap:urgency>Future</cap:urgency>
 <cap:severity>Moderate</cap:severity>
 <cap:certainty>Possible</cap:certainty>
-<cap:areaDesc>Coastal Broward County; Coastal Miami Dade County; Metro Broward County; Metropolitan Miami Dade</cap:areaDesc>
+<cap:areaDesc>Metro Broward County; Metropolitan Miami Dade</cap:areaDesc>
 <cap:polygon></cap:polygon>
 <cap:geocode>
 <valueName>FIPS6</valueName>
 <value>012011 012086</value>
 <valueName>UGC</valueName>
-<value>FLZ072 FLZ074 FLZ172 FLZ173</value>
+<value>FLZ072 FLZ074</value>
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
@@ -1687,18 +1848,51 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=FL126642979694.FloodWarning.126642A42DA0FL.MFLFLWMFL.3cb454d3b240fcc165c06fec295be508</id>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=FL12664297975C.FloodWatch.126642A3DF80FL.MFLFFAMFL.54494310d6c866b162579d163504276a</id>
+<updated>2023-04-13T15:51:00-04:00</updated>
+<published>2023-04-13T15:51:00-04:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Flood Watch issued April 13 at 3:51PM EDT until April 13 at 8:00PM EDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=FL12664297975C.FloodWatch.126642A3DF80FL.MFLFFAMFL.54494310d6c866b162579d163504276a"/>
+<summary>.Scattered storms may bring locally heavy rainfall and additional flooding concerns through early this evening. ...FLOOD WATCH REMAINS IN EFFECT UNTIL 8 PM EDT THIS EVENING... * WHAT...Flooding caused by excessive rainfall continues to be possible. * WHERE...A portion of South Florida, including the following areas,</summary>
+<cap:event>Flood Watch</cap:event>
+<cap:effective>2023-04-13T15:51:00-04:00</cap:effective>
+<cap:expires>2023-04-13T20:00:00-04:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Future</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Possible</cap:certainty>
+<cap:areaDesc>Coastal Broward County; Coastal Miami Dade County</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>012011 012086</value>
+<valueName>UGC</valueName>
+<value>FLZ172 FLZ173</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KMFL.FA.A.0001.000000T0000Z-230414T0000Z/
+/00000.0.ER.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=FL126642979694.FloodWarning.126642982B68FL.MFLFLWMFL.3cb454d3b240fcc165c06fec295be508</id>
 <updated>2023-04-13T15:49:00-04:00</updated>
 <published>2023-04-13T15:49:00-04:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Flood Warning issued April 13 at 3:49PM EDT until April 13 at 10:00PM EDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=FL126642979694.FloodWarning.126642A42DA0FL.MFLFLWMFL.3cb454d3b240fcc165c06fec295be508"/>
+<title>Flood Warning issued April 13 at 3:49PM EDT until April 13 at 7:30PM EDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=FL126642979694.FloodWarning.126642982B68FL.MFLFLWMFL.3cb454d3b240fcc165c06fec295be508"/>
 <summary>...FLOOD WARNING NOW IN EFFECT UNTIL 8 PM EDT THIS EVENING... * WHAT...Flooding caused by excessive rainfall continues. * WHERE...A portion of South Florida, including the following county, Broward. * WHEN...Until 800 PM EDT. * IMPACTS...Flooding of rivers, creeks, streams, and other low-lying</summary>
 <cap:event>Flood Warning</cap:event>
 <cap:effective>2023-04-13T15:49:00-04:00</cap:effective>
-<cap:expires>2023-04-13T22:00:00-04:00</cap:expires>
+<cap:expires>2023-04-13T19:30:00-04:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
 <cap:category>Met</cap:category>
@@ -1851,70 +2045,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value>/O.CON.KMFL.RP.S.0017.000000T0000Z-230414T0000Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=FL126642979504.SpecialWeatherStatement.12664297B638FL.JAXSPSJAX.9e100352bb413e9f4c56d2b15268ee72</id>
-<updated>2023-04-13T15:45:00-04:00</updated>
-<published>2023-04-13T15:45:00-04:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Special Weather Statement issued April 13 at 3:45PM EDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=FL126642979504.SpecialWeatherStatement.12664297B638FL.JAXSPSJAX.9e100352bb413e9f4c56d2b15268ee72"/>
-<summary>...A strong thunderstorm will impact portions of northern St. Johns and southeastern Duval Counties through 430 PM EDT... At 344 PM EDT, Doppler radar was tracking a strong thunderstorm near World Golf Village, or 7 miles southeast of Fruit Cove, moving northeast at 15 mph. HAZARD...Winds around 40 mph, half inch hail, and excessive</summary>
-<cap:event>Special Weather Statement</cap:event>
-<cap:effective>2023-04-13T15:45:00-04:00</cap:effective>
-<cap:expires>2023-04-13T16:30:00-04:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Observed</cap:certainty>
-<cap:areaDesc>Coastal Duval; Coastal St. Johns; Inland St. Johns; South Central Duval</cap:areaDesc>
-<cap:polygon>29.97,-81.29 29.85,-81.51 30.08,-81.62 30.29,-81.37 29.97,-81.29</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>012031 012109</value>
-<valueName>UGC</valueName>
-<value>FLZ033 FLZ125 FLZ133 FLZ325</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value></value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=FL12664297911C.SpecialWeatherStatement.12664297B05CFL.JAXSPSJAX.c53fa0f032c847d86b440883f06c88d5</id>
-<updated>2023-04-13T15:35:00-04:00</updated>
-<published>2023-04-13T15:35:00-04:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Special Weather Statement issued April 13 at 3:35PM EDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=FL12664297911C.SpecialWeatherStatement.12664297B05CFL.JAXSPSJAX.c53fa0f032c847d86b440883f06c88d5"/>
-<summary>...A strong thunderstorm will impact portions of central Nassau and north central Duval Counties through 415 PM EDT... At 335 PM EDT, Doppler radar was tracking a strong thunderstorm over Ratliff, or near Callahan, moving northeast at 15 mph. HAZARD...Winds around 40 mph and pea size hail. SOURCE...Radar indicated.</summary>
-<cap:event>Special Weather Statement</cap:event>
-<cap:effective>2023-04-13T15:35:00-04:00</cap:effective>
-<cap:expires>2023-04-13T16:15:00-04:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Observed</cap:certainty>
-<cap:areaDesc>Inland Nassau; Western Duval</cap:areaDesc>
-<cap:polygon>30.47,-81.82 30.51,-81.9 30.73,-81.79 30.59,-81.65 30.47,-81.82</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>012031 012089</value>
-<valueName>UGC</valueName>
-<value>FLZ024 FLZ425</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value></value>
 </cap:parameter>
 </entry>
 <entry>
@@ -2079,6 +2209,230 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=GA12664297B69C.SpecialWeatherStatement.12664297D190GA.FFCSPSFFC.fe50d0de59ffdfd495dac9205df223d4</id>
+<updated>2023-04-13T16:31:00-04:00</updated>
+<published>2023-04-13T16:31:00-04:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Special Weather Statement issued April 13 at 4:31PM EDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=GA12664297B69C.SpecialWeatherStatement.12664297D190GA.FFCSPSFFC.fe50d0de59ffdfd495dac9205df223d4"/>
+<summary>...Strong thunderstorms will impact portions of west central Laurens, northwestern Dodge, southeastern Twiggs and Bleckley Counties through 500 PM EDT... At 431 PM EDT, National Weather Service doppler radar indicated a line of strong storms within a tropical rain band along a line extending from near Royal to near Gresston, and moving northeast at</summary>
+<cap:event>Special Weather Statement</cap:event>
+<cap:effective>2023-04-13T16:31:00-04:00</cap:effective>
+<cap:expires>2023-04-13T17:00:00-04:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Observed</cap:certainty>
+<cap:areaDesc>Bleckley; Dodge; Laurens; Twiggs</cap:areaDesc>
+<cap:polygon>32.71,-83.39 32.48,-83.11 32.26,-83.23 32.46,-83.45 32.71,-83.39</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>013023 013091 013175 013289</value>
+<valueName>UGC</valueName>
+<value>GAZ083 GAZ096 GAZ097 GAZ109</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value></value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=GA12664297B69C.SpecialWeatherStatement.12664297D76CGA.JAXSPSJAX.41a2a246594817a27c33362cff39a082</id>
+<updated>2023-04-13T16:31:00-04:00</updated>
+<published>2023-04-13T16:31:00-04:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Special Weather Statement issued April 13 at 4:31PM EDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=GA12664297B69C.SpecialWeatherStatement.12664297D76CGA.JAXSPSJAX.41a2a246594817a27c33362cff39a082"/>
+<summary>...A strong thunderstorm will impact portions of northeastern Jeff Davis and northwestern Appling Counties through 515 PM EDT... At 430 PM EDT, Doppler radar was tracking a strong thunderstorm capable of producing a landspout over Hazlehurst, moving northeast at 20 mph. HAZARD...Funnel clouds, wind gusts up to 50 mph, and penny size hail.</summary>
+<cap:event>Special Weather Statement</cap:event>
+<cap:effective>2023-04-13T16:31:00-04:00</cap:effective>
+<cap:expires>2023-04-13T17:15:00-04:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Observed</cap:certainty>
+<cap:areaDesc>Appling; Jeff Davis</cap:areaDesc>
+<cap:polygon>31.97,-82.43 31.95,-82.41 31.96,-82.4 31.95,-82.39 31.96,-82.38 31.94,-82.38 31.93,-82.31 31.95,-82.31 31.93,-82.3 31.94,-82.28 31.92,-82.25 31.69,-82.44 31.81,-82.65 31.93,-82.62 31.96,-82.56 31.95,-82.49 31.95,-82.48 31.96,-82.5 31.97,-82.48 31.97,-82.43</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>013001 013161</value>
+<valueName>UGC</valueName>
+<value>GAZ133 GAZ135</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value></value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=GA12664297B570.TornadoWarning.12664297BC14GA.FFCSVSFFC.2d70a2b69c39135650b0e968a46ec0fd</id>
+<updated>2023-04-13T16:28:00-04:00</updated>
+<published>2023-04-13T16:28:00-04:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Tornado Warning issued April 13 at 4:28PM EDT until April 13 at 4:45PM EDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=GA12664297B570.TornadoWarning.12664297BC14GA.FFCSVSFFC.2d70a2b69c39135650b0e968a46ec0fd"/>
+<summary>...A TORNADO WARNING REMAINS IN EFFECT UNTIL 445 PM EDT FOR NORTH CENTRAL BLECKLEY COUNTY... At 428 PM EDT, a severe thunderstorm capable of producing a tornado was located 3 miles east of Royal, or 4 miles north of Cochran, moving north at 20 mph. HAZARD...Tornado.</summary>
+<cap:event>Tornado Warning</cap:event>
+<cap:effective>2023-04-13T16:28:00-04:00</cap:effective>
+<cap:expires>2023-04-13T16:45:00-04:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Immediate</cap:urgency>
+<cap:severity>Extreme</cap:severity>
+<cap:certainty>Observed</cap:certainty>
+<cap:areaDesc>Bleckley</cap:areaDesc>
+<cap:polygon>32.42,-83.35 32.51,-83.38 32.53,-83.33 32.5,-83.26 32.42,-83.31 32.42,-83.35</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>013023</value>
+<valueName>UGC</valueName>
+<value>GAC023</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KFFC.TO.W.0029.000000T0000Z-230413T2045Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=GA12664297B570.SevereWeatherStatement.126642981FB0GA.FFCSVSFFC.2eccd81949af70b01c977b7f1e06f7e6</id>
+<updated>2023-04-13T16:28:00-04:00</updated>
+<published>2023-04-13T16:28:00-04:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Severe Weather Statement issued April 13 at 4:28PM EDT until April 13 at 7:00PM EDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=GA12664297B570.SevereWeatherStatement.126642981FB0GA.FFCSVSFFC.2eccd81949af70b01c977b7f1e06f7e6"/>
+<summary>...A TORNADO WARNING REMAINS IN EFFECT UNTIL 445 PM EDT FOR NORTH CENTRAL BLECKLEY COUNTY... At 428 PM EDT, a severe thunderstorm capable of producing a tornado was located 3 miles east of Royal, or 4 miles north of Cochran, moving north at 20 mph. HAZARD...Tornado.</summary>
+<cap:event>Severe Weather Statement</cap:event>
+<cap:effective>2023-04-13T16:28:00-04:00</cap:effective>
+<cap:expires>2023-04-13T19:00:00-04:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Immediate</cap:urgency>
+<cap:severity>Severe</cap:severity>
+<cap:certainty>Observed</cap:certainty>
+<cap:areaDesc>Bleckley</cap:areaDesc>
+<cap:polygon>32.42,-83.35 32.51,-83.38 32.53,-83.33 32.5,-83.26 32.42,-83.31 32.42,-83.35</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>013023</value>
+<valueName>UGC</valueName>
+<value>GAC023</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KFFC.TO.W.0029.000000T0000Z-230413T2045Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=GA12664297B570.SevereWeatherStatement.126642981FB0GA.JAXSVSJAX.c9f7ca8ae2fbdb3bc0cde7b8d44ead6c</id>
+<updated>2023-04-13T16:28:00-04:00</updated>
+<published>2023-04-13T16:28:00-04:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Severe Weather Statement issued April 13 at 4:28PM EDT until April 13 at 7:00PM EDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=GA12664297B570.SevereWeatherStatement.126642981FB0GA.JAXSVSJAX.c9f7ca8ae2fbdb3bc0cde7b8d44ead6c"/>
+<summary>...THE SEVERE THUNDERSTORM WARNING FOR CENTRAL JEFF DAVIS COUNTY WILL EXPIRE AT 430 PM EDT... The storm which prompted the warning has weakened below severe limits, and no longer poses an immediate threat to life or property. Therefore, the warning will be allowed to expire. However small hail and gusty winds are still possible with this thunderstorm.</summary>
+<cap:event>Severe Weather Statement</cap:event>
+<cap:effective>2023-04-13T16:28:00-04:00</cap:effective>
+<cap:expires>2023-04-13T19:00:00-04:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Immediate</cap:urgency>
+<cap:severity>Severe</cap:severity>
+<cap:certainty>Observed</cap:certainty>
+<cap:areaDesc>Jeff Davis</cap:areaDesc>
+<cap:polygon>31.97,-82.46 31.7,-82.59 31.76,-82.74 31.88,-82.74 31.91,-82.68 31.92,-82.68 31.92,-82.65 31.93,-82.62 31.96,-82.55 31.96,-82.53 31.95,-82.49 31.96,-82.48 31.96,-82.5 31.97,-82.5 31.97,-82.46</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>013161</value>
+<valueName>UGC</valueName>
+<value>GAC161</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.EXP.KJAX.SV.W.0057.000000T0000Z-230413T2030Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=GA12664297B0C0.TornadoWarning.12664297BC14GA.JAXTORJAX.8ade5e49925aa6fbddc7c38afb241f5e</id>
+<updated>2023-04-13T16:16:00-04:00</updated>
+<published>2023-04-13T16:16:00-04:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Tornado Warning issued April 13 at 4:16PM EDT until April 13 at 4:45PM EDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=GA12664297B0C0.TornadoWarning.12664297BC14GA.JAXTORJAX.8ade5e49925aa6fbddc7c38afb241f5e"/>
+<summary>The National Weather Service in Jacksonville has issued a * Tornado Warning for... Northeastern Jeff Davis County in southeastern Georgia... * Until 445 PM EDT. * At 416 PM EDT, a severe thunderstorm capable of producing a tornado was located near Hazlehurst, moving northeast at 20 mph.</summary>
+<cap:event>Tornado Warning</cap:event>
+<cap:effective>2023-04-13T16:16:00-04:00</cap:effective>
+<cap:expires>2023-04-13T16:45:00-04:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Immediate</cap:urgency>
+<cap:severity>Extreme</cap:severity>
+<cap:certainty>Observed</cap:certainty>
+<cap:areaDesc>Jeff Davis</cap:areaDesc>
+<cap:polygon>31.9,-82.44 31.84,-82.5 31.84,-82.52 31.81,-82.52 31.77,-82.56 31.8,-82.65 31.94,-82.58 31.95,-82.58 31.9,-82.44</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>013161</value>
+<valueName>UGC</valueName>
+<value>GAC161</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.NEW.KJAX.TO.W.0019.230413T2016Z-230413T2045Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=GA12664297AF94.SpecialWeatherStatement.12664297D190GA.JAXSPSJAX.75a3dfa5adb68f2dca3dc986ca5b844e</id>
+<updated>2023-04-13T16:13:00-04:00</updated>
+<published>2023-04-13T16:13:00-04:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Special Weather Statement issued April 13 at 4:13PM EDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=GA12664297AF94.SpecialWeatherStatement.12664297D190GA.JAXSPSJAX.75a3dfa5adb68f2dca3dc986ca5b844e"/>
+<summary>...A strong thunderstorm will impact portions of western Pierce and southeastern Bacon Counties through 500 PM EDT... At 412 PM EDT, Doppler radar was tracking a strong thunderstorm over Jamestown, or near Waycross, moving northeast at 20 mph. HAZARD...Wind gusts up to 50 mph, nickel size hail, and excessive cloud-to-ground lightning.</summary>
+<cap:event>Special Weather Statement</cap:event>
+<cap:effective>2023-04-13T16:13:00-04:00</cap:effective>
+<cap:expires>2023-04-13T17:00:00-04:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Observed</cap:certainty>
+<cap:areaDesc>Bacon; Pierce</cap:areaDesc>
+<cap:polygon>31.48,-82.16 31.47,-82.15 31.47,-82.14 31.46,-82.1 31.23,-82.3 31.25,-82.34 31.27,-82.36 31.29,-82.37 31.29,-82.39 31.36,-82.39 31.36,-82.4 31.53,-82.36 31.48,-82.16</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>013005 013229</value>
+<valueName>UGC</valueName>
+<value>GAZ134 GAZ151</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value></value>
+</cap:parameter>
+</entry>
+<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=GA12664297AAE4.TornadoWatch.126642981FB0GA.JAXWCNJAX.a606dd32eb84b5517667b2631288c4aa</id>
 <updated>2023-04-13T16:01:00-04:00</updated>
 <published>2023-04-13T16:01:00-04:00</published>
@@ -2108,102 +2462,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value>/O.CON.KJAX.TO.A.0134.000000T0000Z-230413T2300Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=GA12664297AA80.SevereWeatherStatement.126642981FB0GA.FFCSVSFFC.ed445acc30a6c4ea7be6fcf3b192d7ce</id>
-<updated>2023-04-13T16:00:00-04:00</updated>
-<published>2023-04-13T16:00:00-04:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Severe Weather Statement issued April 13 at 4:00PM EDT until April 13 at 7:00PM EDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=GA12664297AA80.SevereWeatherStatement.126642981FB0GA.FFCSVSFFC.ed445acc30a6c4ea7be6fcf3b192d7ce"/>
-<summary>...THE TORNADO WARNING FOR SOUTHWESTERN DODGE COUNTY IS CANCELLED... The storm which prompted the warning has weakened below severe limits, and no longer appears capable of producing a tornado. Therefore, the warning has been cancelled. A Tornado Watch remains in effect until 700 PM EDT for central Georgia.</summary>
-<cap:event>Severe Weather Statement</cap:event>
-<cap:effective>2023-04-13T16:00:00-04:00</cap:effective>
-<cap:expires>2023-04-13T19:00:00-04:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Immediate</cap:urgency>
-<cap:severity>Severe</cap:severity>
-<cap:certainty>Observed</cap:certainty>
-<cap:areaDesc>Dodge</cap:areaDesc>
-<cap:polygon>32.01,-83.21 32.02,-83.28 32.11,-83.31 32.17,-83.23 32.12,-83.16 32.01,-83.21</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>013091</value>
-<valueName>UGC</valueName>
-<value>GAC091</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CAN.KFFC.TO.W.0028.000000T0000Z-230413T2015Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=GA1266429799B4.TornadoWarning.12664297B05CGA.JAXSVSJAX.21563918d2eada17c4225244a8544781</id>
-<updated>2023-04-13T15:57:00-04:00</updated>
-<published>2023-04-13T15:57:00-04:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Tornado Warning issued April 13 at 3:57PM EDT until April 13 at 4:15PM EDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=GA1266429799B4.TornadoWarning.12664297B05CGA.JAXSVSJAX.21563918d2eada17c4225244a8544781"/>
-<summary>...A TORNADO WARNING REMAINS IN EFFECT UNTIL 415 PM EDT FOR SOUTH CENTRAL JEFF DAVIS COUNTY... At 357 PM EDT, a severe thunderstorm capable of producing a tornado was located near Snipesville, or 7 miles southwest of Hazlehurst, moving northeast at 20 mph. HAZARD...Tornado.</summary>
-<cap:event>Tornado Warning</cap:event>
-<cap:effective>2023-04-13T15:57:00-04:00</cap:effective>
-<cap:expires>2023-04-13T16:15:00-04:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Immediate</cap:urgency>
-<cap:severity>Extreme</cap:severity>
-<cap:certainty>Observed</cap:certainty>
-<cap:areaDesc>Jeff Davis</cap:areaDesc>
-<cap:polygon>31.71,-82.63 31.74,-82.71 31.82,-82.69 31.83,-82.53 31.71,-82.63</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>013161</value>
-<valueName>UGC</valueName>
-<value>GAC161</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KJAX.TO.W.0018.000000T0000Z-230413T2015Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=GA1266429799B4.SevereWeatherStatement.126642981FB0GA.JAXSVSJAX.c9f7ca8ae2fbdb3bc0cde7b8d44ead6c</id>
-<updated>2023-04-13T15:57:00-04:00</updated>
-<published>2023-04-13T15:57:00-04:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Severe Weather Statement issued April 13 at 3:57PM EDT until April 13 at 7:00PM EDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=GA1266429799B4.SevereWeatherStatement.126642981FB0GA.JAXSVSJAX.c9f7ca8ae2fbdb3bc0cde7b8d44ead6c"/>
-<summary>...A TORNADO WARNING REMAINS IN EFFECT UNTIL 415 PM EDT FOR SOUTH CENTRAL JEFF DAVIS COUNTY... At 357 PM EDT, a severe thunderstorm capable of producing a tornado was located near Snipesville, or 7 miles southwest of Hazlehurst, moving northeast at 20 mph. HAZARD...Tornado.</summary>
-<cap:event>Severe Weather Statement</cap:event>
-<cap:effective>2023-04-13T15:57:00-04:00</cap:effective>
-<cap:expires>2023-04-13T19:00:00-04:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Immediate</cap:urgency>
-<cap:severity>Severe</cap:severity>
-<cap:certainty>Observed</cap:certainty>
-<cap:areaDesc>Jeff Davis</cap:areaDesc>
-<cap:polygon>31.71,-82.63 31.74,-82.71 31.82,-82.69 31.83,-82.53 31.71,-82.63</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>013161</value>
-<valueName>UGC</valueName>
-<value>GAC161</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KJAX.TO.W.0018.000000T0000Z-230413T2015Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -2791,102 +3049,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <valueName>VTEC</valueName>
 <value>/O.EXT.KFSD.FL.W.0011.000000T0000Z-230418T1800Z/
 /HWDI4.1.SM.230410T0715Z.230413T1300Z.230417T1800Z.NO/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=ID1266429603D8.WinterWeatherAdvisory.12664297D190ID.PIHWSWPIH.e1efdb6d5d1b78689e6b4ee319016301</id>
-<updated>2023-04-13T03:18:00-06:00</updated>
-<published>2023-04-13T03:18:00-06:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Winter Weather Advisory issued April 13 at 3:18AM MDT until April 13 at 3:00PM MDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=ID1266429603D8.WinterWeatherAdvisory.12664297D190ID.PIHWSWPIH.e1efdb6d5d1b78689e6b4ee319016301"/>
-<summary>...WINTER WEATHER ADVISORY REMAINS IN EFFECT UNTIL 3 PM MDT THIS AFTERNOON... * WHAT...Snow. Total snow accumulations of 2 to 6 inches. Winds gusting as high as 40 mph. * WHERE...Idaho Falls, Rexburg, St. Anthony, Pocatello, Blackfoot, American Falls, Shelley, Fort Hall, Ashton,</summary>
-<cap:event>Winter Weather Advisory</cap:event>
-<cap:effective>2023-04-13T03:18:00-06:00</cap:effective>
-<cap:expires>2023-04-13T15:00:00-06:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Lower Snake River Plain; Teton Valley; Upper Snake River Plain</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>016011 016019 016043 016051 016065 016081</value>
-<valueName>UGC</valueName>
-<value>IDZ053 IDZ054 IDZ065</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KPIH.WW.Y.0030.000000T0000Z-230413T2100Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=ID1266429603D8.WinterWeatherAdvisory.12664297D190ID.PIHWSWPIH.ea391b03a15a1bcf2ac0e686465e286f</id>
-<updated>2023-04-13T03:18:00-06:00</updated>
-<published>2023-04-13T03:18:00-06:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Winter Weather Advisory issued April 13 at 3:18AM MDT until April 13 at 3:00PM MDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=ID1266429603D8.WinterWeatherAdvisory.12664297D190ID.PIHWSWPIH.ea391b03a15a1bcf2ac0e686465e286f"/>
-<summary>...WINTER WEATHER ADVISORY REMAINS IN EFFECT UNTIL 3 PM MDT THIS AFTERNOON... * WHAT...Snow. Total snow accumulations of 6 to 10 inches above 6500 feet MSL and 3 to 6 inches below 6500 feet. Winds gusting as high as 40 mph. * WHERE...Inkom, McCammon, Downey, Lava Hot Springs, Malad,</summary>
-<cap:event>Winter Weather Advisory</cap:event>
-<cap:effective>2023-04-13T03:18:00-06:00</cap:effective>
-<cap:expires>2023-04-13T15:00:00-06:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Bear River Range; Big Hole Mountains; Blackfoot Mountains; Caribou Range; Franklin, Eastern Oneida Region; Marsh and Arbon Highlands</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>016005 016007 016011 016019 016029 016041 016065 016071 016077 016081</value>
-<valueName>UGC</valueName>
-<value>IDZ058 IDZ059 IDZ060 IDZ062 IDZ063 IDZ064</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KPIH.WW.Y.0030.000000T0000Z-230413T2100Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=ID1266429603D8.WinterWeatherAdvisory.126642A454B0ID.PIHWSWPIH.36384bb9c66c414637ebf19dfad860d3</id>
-<updated>2023-04-13T03:18:00-06:00</updated>
-<published>2023-04-13T03:18:00-06:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Winter Weather Advisory issued April 13 at 3:18AM MDT until April 13 at 9:00PM MDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=ID1266429603D8.WinterWeatherAdvisory.126642A454B0ID.PIHWSWPIH.36384bb9c66c414637ebf19dfad860d3"/>
-<summary>...WINTER WEATHER ADVISORY REMAINS IN EFFECT UNTIL 9 PM MDT THIS EVENING... * WHAT...Snow. Total snow accumulations of 6 to 10 inches above 6000 feet MSL and 3 to 6 inches below 6000 feet. Locally higher totals in excess of 10 inches possible above 7500 feet in Clark and Fremont Counties.</summary>
-<cap:event>Winter Weather Advisory</cap:event>
-<cap:effective>2023-04-13T03:18:00-06:00</cap:effective>
-<cap:expires>2023-04-13T21:00:00-06:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Beaverhead, Lemhi Highlands; Centennial Mountains, Island Park; Lost River Range</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>016023 016033 016037 016043</value>
-<valueName>UGC</valueName>
-<value>IDZ066 IDZ067 IDZ069</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KPIH.WW.Y.0030.000000T0000Z-230414T0300Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -4704,6 +4866,38 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=MI12664297AB48.RedFlagWarning.126642A3DF80MI.GRRRFWGRR.f3b237ff1646858ee30548e67c55aaaf</id>
+<updated>2023-04-13T16:02:00-04:00</updated>
+<published>2023-04-13T16:02:00-04:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Red Flag Warning issued April 13 at 4:02PM EDT until April 13 at 8:00PM EDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MI12664297AB48.RedFlagWarning.126642A3DF80MI.GRRRFWGRR.f3b237ff1646858ee30548e67c55aaaf"/>
+<summary>...RED FLAG WARNING REMAINS IN EFFECT UNTIL 8 PM EDT THIS EVENING... * Winds...Southwest 10 to 15 mph with gusts near 25 mph. * Relative Humidity...As low as 20 percent. * Temperatures...In the lower 80s inland from Lake Michigan. * Impacts...burn restrictions are likely in effect. for more</summary>
+<cap:event>Red Flag Warning</cap:event>
+<cap:effective>2023-04-13T16:02:00-04:00</cap:effective>
+<cap:expires>2023-04-13T20:00:00-04:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Severe</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Allegan; Barry; Calhoun; Clare; Clinton; Eaton; Gratiot; Ingham; Ionia; Isabella; Jackson; Kalamazoo; Kent; Lake; Mason; Mecosta; Montcalm; Muskegon; Newaygo; Oceana; Osceola; Ottawa; Van Buren</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>026005 026015 026025 026035 026037 026045 026057 026065 026067 026073 026075 026077 026081 026085 026105 026107 026117 026121 026123 026127 026133 026139 026159</value>
+<valueName>UGC</valueName>
+<value>MIZ037 MIZ038 MIZ039 MIZ040 MIZ043 MIZ044 MIZ045 MIZ046 MIZ050 MIZ051 MIZ052 MIZ056 MIZ057 MIZ058 MIZ059 MIZ064 MIZ065 MIZ066 MIZ067 MIZ071 MIZ072 MIZ073 MIZ074</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KGRR.FW.W.0002.000000T0000Z-230414T0000Z/</value>
+</cap:parameter>
+</entry>
+<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=MI126642978F28.FloodWarning.12664297D190MI.MQTFLWMQT.d37dd38ad0e0401582559cc1ce89392e</id>
 <updated>2023-04-13T15:30:00-04:00</updated>
 <published>2023-04-13T15:30:00-04:00</published>
@@ -5228,38 +5422,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=MI12664296845C.RedFlagWarning.126642A3DF80MI.GRRRFWGRR.f3b237ff1646858ee30548e67c55aaaf</id>
-<updated>2023-04-13T08:47:00-04:00</updated>
-<published>2023-04-13T08:47:00-04:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Red Flag Warning issued April 13 at 8:47AM EDT until April 13 at 8:00PM EDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MI12664296845C.RedFlagWarning.126642A3DF80MI.GRRRFWGRR.f3b237ff1646858ee30548e67c55aaaf"/>
-<summary>...RED FLAG WARNING IN EFFECT FROM NOON TODAY TO 8 PM EDT THIS EVENING... The National Weather Service in Grand Rapids has issued a Red Flag Warning, which is in effect from noon today to 8 PM EDT this evening. * Winds...Southwest 10 to 15 mph with gusts up to 25 mph.</summary>
-<cap:event>Red Flag Warning</cap:event>
-<cap:effective>2023-04-13T08:47:00-04:00</cap:effective>
-<cap:expires>2023-04-13T20:00:00-04:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Severe</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Allegan; Barry; Calhoun; Clare; Clinton; Eaton; Gratiot; Ingham; Ionia; Isabella; Jackson; Kalamazoo; Kent; Lake; Mason; Mecosta; Montcalm; Muskegon; Newaygo; Oceana; Osceola; Ottawa; Van Buren</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>026005 026015 026025 026035 026037 026045 026057 026065 026067 026073 026075 026077 026081 026085 026105 026107 026117 026121 026123 026127 026133 026139 026159</value>
-<valueName>UGC</valueName>
-<value>MIZ037 MIZ038 MIZ039 MIZ040 MIZ043 MIZ044 MIZ045 MIZ046 MIZ050 MIZ051 MIZ052 MIZ056 MIZ057 MIZ058 MIZ059 MIZ064 MIZ065 MIZ066 MIZ067 MIZ071 MIZ072 MIZ073 MIZ074</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.NEW.KGRR.FW.W.0002.230413T1600Z-230414T0000Z/</value>
-</cap:parameter>
-</entry>
-<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=MI126642968394.SpecialWeatherStatement.12664297F8A0MI.IWXSPSIWX.17151c247c59330645dd192c21bdd67c</id>
 <updated>2023-04-13T08:45:00-04:00</updated>
 <published>2023-04-13T08:45:00-04:00</published>
@@ -5453,6 +5615,137 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value></value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=MN12664297B5D4.FloodWarning.126643108400MN.FGFFLWFGF.0890745a9784d1af0b974565c4cd971a</id>
+<updated>2023-04-13T15:29:00-05:00</updated>
+<published>2023-04-13T15:29:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Flood Warning issued April 13 at 3:29PM CDT until April 21 at 7:00AM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MN12664297B5D4.FloodWarning.126643108400MN.FGFFLWFGF.0890745a9784d1af0b974565c4cd971a"/>
+<summary>...The National Weather Service in Grand Forks ND has issued a Flood Warning for the following rivers in Minnesota... Marsh River at Shelly affecting Norman County. .River rises are expected to begin over the next few days on the Marsh River due to ongoing snowmelt. The rate of rise and ultimate crest is uncertain due to the rate of the ongoing snowmelt, and the</summary>
+<cap:event>Flood Warning</cap:event>
+<cap:effective>2023-04-13T15:29:00-05:00</cap:effective>
+<cap:expires>2023-04-21T07:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Norman</cap:areaDesc>
+<cap:polygon>47.31,-96.37 47.29,-96.56 47.33,-96.74 47.42,-96.85 47.5,-96.85 47.31,-96.37</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>027107</value>
+<valueName>UGC</valueName>
+<value>MNC107</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.NEW.KFGF.FL.W.0012.230415T1942Z-230421T1200Z/
+/SHYM5.1.SM.230415T1942Z.230417T1800Z.230420T0600Z.NO/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=MN12664297B250.FloodWarning.126642B37B98MN.FGFFLWFGF.fcb5f62071f6e165c4086723d699ba00</id>
+<updated>2023-04-13T15:20:00-05:00</updated>
+<published>2023-04-13T15:20:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Flood Warning issued April 13 at 3:20PM CDT until further notice by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MN12664297B250.FloodWarning.126642B37B98MN.FGFFLWFGF.fcb5f62071f6e165c4086723d699ba00"/>
+<summary>...The National Weather Service in Grand Forks ND has issued a Flood Warning for the following rivers in Minnesota... Wild Rice River (MN) at Hendrum affecting Norman County. .Rises are occurring on the Wild Rice River at Hendrum. This initial rise due to snowmelt is expected to rise to between 25 and 27 feet. An additional rise due to backwater from the Red River is expected</summary>
+<cap:event>Flood Warning</cap:event>
+<cap:effective>2023-04-13T15:20:00-05:00</cap:effective>
+<cap:expires>2023-04-14T21:30:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Norman</cap:areaDesc>
+<cap:polygon>47.32,-96.56 47.22,-96.53 47.15,-96.73 47.24,-96.84 47.34,-96.83 47.32,-96.56</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>027107</value>
+<valueName>UGC</valueName>
+<value>MNC107</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.NEW.KFGF.FL.W.0011.230415T1136Z-000000T0000Z/
+/HNDM5.2.SM.230415T1136Z.230420T1800Z.000000T0000Z.NO/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=MN12664297B1EC.HydrologicOutlook.126642A71F88MN.FGFESFFGF.ff4c9d03db7023c0fb9e96ccb93d096c</id>
+<updated>2023-04-13T15:19:00-05:00</updated>
+<published>2023-04-13T15:19:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Hydrologic Outlook issued April 13 at 3:19PM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MN12664297B1EC.HydrologicOutlook.126642A71F88MN.FGFESFFGF.ff4c9d03db7023c0fb9e96ccb93d096c"/>
+<summary>...SNOWMELT AND ASSOCIATED FLOODING... Daytime temperatures above freezing will continue to support the ripening and melting of the snow pack, though nighttime temperatures below freezing and dry soils have slowed the response. Expect overland flooding to increase in coverage through this weekend, with additional responses on area rivers as</summary>
+<cap:event>Hydrologic Outlook</cap:event>
+<cap:effective>2023-04-13T15:19:00-05:00</cap:effective>
+<cap:expires>2023-04-14T16:30:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Future</cap:urgency>
+<cap:severity>Unknown</cap:severity>
+<cap:certainty>Possible</cap:certainty>
+<cap:areaDesc>Kittson; Marshall; Pennington; Polk; Red Lake; Roseau</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>027069 027089 027113 027119 027125 027135</value>
+<valueName>UGC</valueName>
+<value>MNC069 MNC089 MNC113 MNC119 MNC125 MNC135</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value></value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=MN12664297AC74.FloodWarning.126642A69EA0MN.MPXFLSMPX.aa24ff448489998d840218763acf43cb</id>
+<updated>2023-04-13T15:05:00-05:00</updated>
+<published>2023-04-13T15:05:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Flood Warning issued April 13 at 3:05PM CDT until April 14 at 1:00PM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MN12664297AC74.FloodWarning.126642A69EA0MN.MPXFLSMPX.aa24ff448489998d840218763acf43cb"/>
+<summary>...The Flood Warning continues for the following rivers in Minnesota... Long Prairie River at Long Prairie affecting Todd County. .The river gage at Long Prairie has been repaired and the forecast updated to reflect conditions. The river is currently running near its crest, and will remain high for the next few days.</summary>
+<cap:event>Flood Warning</cap:event>
+<cap:effective>2023-04-13T15:05:00-05:00</cap:effective>
+<cap:expires>2023-04-14T13:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Todd</cap:areaDesc>
+<cap:polygon>46.03,-95.05 46.04,-94.99 46.01,-94.93 46,-94.9 46,-94.88 46.09,-94.88 46.18,-94.82 46.22,-94.84 46.22,-94.79 46.19,-94.76 46,-94.84 45.93,-94.86 45.97,-94.9 45.98,-94.98 45.99,-95.04 46.03,-95.05</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>027153</value>
+<valueName>UGC</valueName>
+<value>MNC153</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.EXT.KMPX.FL.W.0017.000000T0000Z-230414T1800Z/
+/LGPM5.1.SM.230413T0244Z.230413T1915Z.230414T0000Z.NO/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -6080,18 +6373,18 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=MN126642971610.FloodWarning.126642D32CE0MN.FGFFLWFGF.6b75311906f3a1a6a4147c13c3dff2a7</id>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=MN126642971610.FloodWarning.126643108400MN.FGFFLWFGF.6b75311906f3a1a6a4147c13c3dff2a7</id>
 <updated>2023-04-13T11:20:00-05:00</updated>
 <published>2023-04-13T11:20:00-05:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Flood Warning issued April 13 at 11:20AM CDT until April 17 at 5:00AM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MN126642971610.FloodWarning.126642D32CE0MN.FGFFLWFGF.6b75311906f3a1a6a4147c13c3dff2a7"/>
+<title>Flood Warning issued April 13 at 11:20AM CDT until April 21 at 7:00AM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MN126642971610.FloodWarning.126643108400MN.FGFFLWFGF.6b75311906f3a1a6a4147c13c3dff2a7"/>
 <summary>...FLOOD WARNING FOR SNOWMELT IN EFFECT UNTIL 1115 AM CDT THURSDAY... * WHAT...Flooding caused by snowmelt is expected. * WHERE...A portion of northwest Minnesota, including the following counties, Mahnomen and Norman. * WHEN...Until 1115 AM CDT Thursday Apr 20. * IMPACTS...Flooding of rivers, creeks, streams, and other low-lying</summary>
 <cap:event>Flood Warning</cap:event>
 <cap:effective>2023-04-13T11:20:00-05:00</cap:effective>
-<cap:expires>2023-04-17T05:00:00-05:00</cap:expires>
+<cap:expires>2023-04-21T07:00:00-05:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
 <cap:category>Met</cap:category>
@@ -6707,39 +7000,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=MN12664297128C.FloodWarning.126642D37B00MN.MPXFLWMPX.aa24ff448489998d840218763acf43cb</id>
-<updated>2023-04-13T11:11:00-05:00</updated>
-<published>2023-04-13T11:11:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Flood Warning issued April 13 at 11:11AM CDT until April 17 at 7:00AM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MN12664297128C.FloodWarning.126642D37B00MN.MPXFLWMPX.aa24ff448489998d840218763acf43cb"/>
-<summary>...The National Weather Service in the Twin Cities has issued a Flood Warning for the following rivers in Minnesota... Minnesota River at Granite Falls HWY 212 affecting Chippewa, Yellow Medicine and Renville Counties. Minnesota River At New Ulm affecting Brown, Blue Earth and Nicollet Counties.</summary>
-<cap:event>Flood Warning</cap:event>
-<cap:effective>2023-04-13T11:11:00-05:00</cap:effective>
-<cap:expires>2023-04-17T07:00:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Todd</cap:areaDesc>
-<cap:polygon>46.03,-95.05 46.04,-94.99 46.01,-94.93 46,-94.9 46,-94.88 46.09,-94.88 46.18,-94.82 46.22,-94.84 46.22,-94.79 46.19,-94.76 46,-94.84 45.93,-94.86 45.97,-94.9 45.98,-94.98 45.99,-95.04 46.03,-95.05</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>027153</value>
-<valueName>UGC</valueName>
-<value>MNC153</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.EXT.KMPX.FL.W.0017.000000T0000Z-230417T1200Z/
-/LGPM5.2.SM.230413T0244Z.230414T0600Z.230416T1800Z.NR/</value>
-</cap:parameter>
-</entry>
-<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=MN12664297128C.FloodWarning.126642E41CD0MN.MPXFLSMPX.2c4f3ca33366a7675b5a072b24bc30a0</id>
 <updated>2023-04-13T11:11:00-05:00</updated>
 <published>2023-04-13T11:11:00-05:00</published>
@@ -6839,39 +7099,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=MN1266429711C4.FloodAdvisory.126642A65C38MN.DLHFLSDLH.419bc7db9153b36bf44d92a5fe616dfd</id>
-<updated>2023-04-13T11:09:00-05:00</updated>
-<published>2023-04-13T11:09:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Flood Advisory issued April 13 at 11:09AM CDT until further notice by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MN1266429711C4.FloodAdvisory.126642A65C38MN.DLHFLSDLH.419bc7db9153b36bf44d92a5fe616dfd"/>
-<summary>...FLOOD ADVISORY FOR SNOWMELT NOW IN EFFECT UNTIL 1230 PM CDT FRIDAY... * WHAT...Flooding caused by snowmelt continues. * WHERE...Portions of east central Minnesota, north central Minnesota and northeast Minnesota, including the following areas, in east central Minnesota, Aitkin, Crow Wing and Pine. In north</summary>
-<cap:event>Flood Advisory</cap:event>
-<cap:effective>2023-04-13T11:09:00-05:00</cap:effective>
-<cap:expires>2023-04-14T11:30:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>St. Louis</cap:areaDesc>
-<cap:polygon>47.47,-93.08 47.06,-93.08 47.05,-92.07 46.94,-91.77 46.66,-92.29 46.07,-92.29 45.89,-92.71 45.73,-92.84 45.73,-93.14 46.16,-93.05 46.15,-93.43 46.25,-93.53 46.16,-94.37 46.3,-94.35 46.39,-94.78 46.8,-94.79 46.8,-94.66 47.41,-94.67 47.47,-93.08</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>027137</value>
-<valueName>UGC</valueName>
-<value>MNC137</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.EXT.KDLH.FA.Y.0002.000000T0000Z-230414T1730Z/
-/00000.N.SM.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
-</cap:parameter>
-</entry>
-<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=MN1266429711C4.FloodAdvisory.126642A68348MN.DLHFLSDLH.fb180e49a31a3ba7bbcaf68b449426b6</id>
 <updated>2023-04-13T11:09:00-05:00</updated>
 <published>2023-04-13T11:09:00-05:00</published>
@@ -6897,6 +7124,39 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <value>027001</value>
 <valueName>UGC</valueName>
 <value>MNC001</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.EXT.KDLH.FA.Y.0002.000000T0000Z-230414T1730Z/
+/00000.N.SM.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=MN1266429711C4.FloodAdvisory.126642A71F88MN.DLHFLSDLH.419bc7db9153b36bf44d92a5fe616dfd</id>
+<updated>2023-04-13T11:09:00-05:00</updated>
+<published>2023-04-13T11:09:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Flood Advisory issued April 13 at 11:09AM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MN1266429711C4.FloodAdvisory.126642A71F88MN.DLHFLSDLH.419bc7db9153b36bf44d92a5fe616dfd"/>
+<summary>...FLOOD ADVISORY FOR SNOWMELT NOW IN EFFECT UNTIL 1230 PM CDT FRIDAY... * WHAT...Flooding caused by snowmelt continues. * WHERE...Portions of east central Minnesota, north central Minnesota and northeast Minnesota, including the following areas, in east central Minnesota, Aitkin, Crow Wing and Pine. In north</summary>
+<cap:event>Flood Advisory</cap:event>
+<cap:effective>2023-04-13T11:09:00-05:00</cap:effective>
+<cap:expires>2023-04-14T16:30:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>St. Louis</cap:areaDesc>
+<cap:polygon>47.47,-93.08 47.06,-93.08 47.05,-92.07 46.94,-91.77 46.66,-92.29 46.07,-92.29 45.89,-92.71 45.73,-92.84 45.73,-93.14 46.16,-93.05 46.15,-93.43 46.25,-93.53 46.16,-94.37 46.3,-94.35 46.39,-94.78 46.8,-94.79 46.8,-94.66 47.41,-94.67 47.47,-93.08</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>027137</value>
+<valueName>UGC</valueName>
+<value>MNC137</value>
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
@@ -7263,6 +7523,72 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=MS12664297B37C.FloodWarning.126642E41CD0MS.MOBFLSMOB.1baffded6943b62441971baee73f407b</id>
+<updated>2023-04-13T15:23:00-05:00</updated>
+<published>2023-04-13T15:23:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Flood Warning issued April 13 at 3:23PM CDT until April 18 at 4:00PM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MS12664297B37C.FloodWarning.126642E41CD0MS.MOBFLSMOB.1baffded6943b62441971baee73f407b"/>
+<summary>...The Flood Warning is extended for the following rivers in Mississippi... Chickasawhay At Leakesville affecting Greene, Wayne and George Counties. For the Chickasawhay River...including Waynesboro, Leakesville... Minor flooding is forecast.</summary>
+<cap:event>Flood Warning</cap:event>
+<cap:effective>2023-04-13T15:23:00-05:00</cap:effective>
+<cap:expires>2023-04-18T16:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>George; Greene; Wayne</cap:areaDesc>
+<cap:polygon>31.44,-88.57 31.44,-88.46 31.08,-88.54 30.98,-88.73 31,-88.75 31.1,-88.58 31.44,-88.57</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>028039 028041 028153</value>
+<valueName>UGC</valueName>
+<value>MSC039 MSC041 MSC153</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.EXT.KMOB.FL.W.0025.000000T0000Z-230418T2100Z/
+/LEKM6.1.ER.230413T1442Z.230415T1200Z.230418T1500Z.NO/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=MS12664297B2B4.FloodWarning.126642A6F878MS.MOBFLWMOB.934695d17704bf8376ceb94f452fad45</id>
+<updated>2023-04-13T15:21:00-05:00</updated>
+<published>2023-04-13T15:21:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Flood Warning issued April 13 at 3:21PM CDT until further notice by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MS12664297B2B4.FloodWarning.126642A6F878MS.MOBFLWMOB.934695d17704bf8376ceb94f452fad45"/>
+<summary>...The National Weather Service in Mobile AL has issued a Flood Warning for the following rivers in Mississippi... Leaf Near Mclain affecting Greene, Perry and George Counties. For the Leaf River...including Mclain, New Augusta...Minor flooding is forecast. ...FLOOD WARNING IN EFFECT FROM LATE FRIDAY NIGHT UNTIL FURTHER</summary>
+<cap:event>Flood Warning</cap:event>
+<cap:effective>2023-04-13T15:21:00-05:00</cap:effective>
+<cap:expires>2023-04-14T15:30:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>George; Greene; Perry</cap:areaDesc>
+<cap:polygon>31.16,-88.92 31.23,-88.92 31.16,-88.77 31,-88.71 30.98,-88.79 31.09,-88.84 31.16,-88.92</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>028039 028041 028111</value>
+<valueName>UGC</valueName>
+<value>MSC039 MSC041 MSC111</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.NEW.KMOB.FL.W.0026.230415T0936Z-000000T0000Z/
+/MCLM6.1.ER.230415T0936Z.230418T0600Z.000000T0000Z.NO/</value>
+</cap:parameter>
+</entry>
+<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=MS1266429792AC.WindAdvisory.126642A3DF80MS.JANNPWJAN.e46c704d0ac40600c0b9f111f62a06a5</id>
 <updated>2023-04-13T14:39:00-05:00</updated>
 <published>2023-04-13T14:39:00-05:00</published>
@@ -7324,39 +7650,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value>/O.CON.KLIX.CF.Y.0003.000000T0000Z-230414T1200Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=MS126642971868.FloodWarning.126642D290A0MS.MOBFLWMOB.1baffded6943b62441971baee73f407b</id>
-<updated>2023-04-13T11:26:00-05:00</updated>
-<published>2023-04-13T11:26:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Flood Warning issued April 13 at 11:26AM CDT until April 17 at 1:00AM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MS126642971868.FloodWarning.126642D290A0MS.MOBFLWMOB.1baffded6943b62441971baee73f407b"/>
-<summary>...The National Weather Service in Mobile AL has issued a Flood Warning for the following rivers in Mississippi... Chickasawhay At Leakesville affecting Greene, Wayne and George Counties. For the Chickasawhay River...including Waynesboro, Leakesville... Minor flooding is forecast.</summary>
-<cap:event>Flood Warning</cap:event>
-<cap:effective>2023-04-13T11:26:00-05:00</cap:effective>
-<cap:expires>2023-04-17T01:00:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>George; Greene; Wayne</cap:areaDesc>
-<cap:polygon>31.44,-88.57 31.44,-88.46 31.08,-88.54 30.98,-88.73 31,-88.75 31.1,-88.58 31.44,-88.57</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>028039 028041 028153</value>
-<valueName>UGC</valueName>
-<value>MSC039 MSC041 MSC153</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.NEW.KMOB.FL.W.0025.230413T1626Z-230417T0600Z/
-/LEKM6.1.ER.230413T1442Z.230415T0000Z.230417T0000Z.NO/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -7654,6 +7947,134 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <valueName>VTEC</valueName>
 <value>/O.CON.KLIX.FL.W.0064.000000T0000Z-000000T0000Z/
 /BXAL1.1.ER.000000T0000Z.230417T0000Z.000000T0000Z.NO/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=MT12664297ACD8.WinterStormWarning.126642A4C9E0MT.TFXWSWTFX.42c9dd51c74de523087a168f695177f3</id>
+<updated>2023-04-13T14:06:00-06:00</updated>
+<published>2023-04-13T14:06:00-06:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Winter Storm Warning issued April 13 at 2:06PM MDT until April 14 at 12:00AM MDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MT12664297ACD8.WinterStormWarning.126642A4C9E0MT.TFXWSWTFX.42c9dd51c74de523087a168f695177f3"/>
+<summary>...WINTER STORM WARNING REMAINS IN EFFECT UNTIL MIDNIGHT MDT TONIGHT... * WHAT...Heavy snow. Additional snow accumulation up to 4 inches. * WHERE...Portions of central, north central, and southwest Montana. * WHEN...Until Midnight MDT tonight. * IMPACTS...Ponding of water and slushy snow accumulation will</summary>
+<cap:event>Winter Storm Warning</cap:event>
+<cap:effective>2023-04-13T14:06:00-06:00</cap:effective>
+<cap:expires>2023-04-14T00:00:00-06:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Beaverhead and Western Madison below 6000ft; Elkhorn and Boulder Mountains; Gallatin and Madison County Mountains and Centennial Mountains; Gates of the Mountains; Madison River Valley; Missouri Headwaters; Northwest Beaverhead County; Ruby Mountains and Southern Beaverhead Mountains; Southern High Plains; Southern Rocky Mountain Front; Upper Blackfoot and MacDonald Pass</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>030001 030013 030031 030043 030049 030057 030099</value>
+<valueName>UGC</valueName>
+<value>MTZ307 MTZ308 MTZ315 MTZ316 MTZ322 MTZ324 MTZ325 MTZ327 MTZ328 MTZ329 MTZ330</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KTFX.WS.W.0010.000000T0000Z-230414T0600Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=MT12664297ACD8.WinterStormWarning.126642A4C9E0MT.TFXWSWTFX.3cdeb35fa66fb356fe67ecbdcc14863b</id>
+<updated>2023-04-13T14:06:00-06:00</updated>
+<published>2023-04-13T14:06:00-06:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Winter Storm Warning issued April 13 at 2:06PM MDT until April 14 at 12:00AM MDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MT12664297ACD8.WinterStormWarning.126642A4C9E0MT.TFXWSWTFX.3cdeb35fa66fb356fe67ecbdcc14863b"/>
+<summary>...WINTER STORM WARNING REMAINS IN EFFECT UNTIL MIDNIGHT MDT TONIGHT... * WHAT...Heavy snow. Additional snow accumulation 1 to 5 inches. * WHERE...Bears Paw Mountains and Southern Blaine, Cascade County below 5000ft and Fergus County below 4500ft. * WHEN...Until Midnight MDT tonight.</summary>
+<cap:event>Winter Storm Warning</cap:event>
+<cap:effective>2023-04-13T14:06:00-06:00</cap:effective>
+<cap:expires>2023-04-14T00:00:00-06:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Bears Paw Mountains and Southern Blaine; Cascade County below 5000ft; Fergus County below 4500ft</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>030005 030013 030015 030027</value>
+<valueName>UGC</valueName>
+<value>MTZ311 MTZ312 MTZ314</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KTFX.WS.W.0010.000000T0000Z-230414T0600Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=MT12664297ACD8.WinterStormWarning.126642A4C9E0MT.TFXWSWTFX.34d6817a0206a159ca27ce54b462d03a</id>
+<updated>2023-04-13T14:06:00-06:00</updated>
+<published>2023-04-13T14:06:00-06:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Winter Storm Warning issued April 13 at 2:06PM MDT until April 14 at 12:00AM MDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MT12664297ACD8.WinterStormWarning.126642A4C9E0MT.TFXWSWTFX.34d6817a0206a159ca27ce54b462d03a"/>
+<summary>...WINTER STORM WARNING REMAINS IN EFFECT UNTIL MIDNIGHT MDT TONIGHT... * WHAT...Heavy snow. Additional snow accumulations up to 4 inches. * WHERE...The Highwood, Little Belt, and Snowy Mountains, Judith Basin County and Judith Gap, Big Belt, Bridger and Castle Mountains, and Meagher County Valleys.</summary>
+<cap:event>Winter Storm Warning</cap:event>
+<cap:effective>2023-04-13T14:06:00-06:00</cap:effective>
+<cap:expires>2023-04-14T00:00:00-06:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Big Belt, Bridger and Castle Mountains; Judith Basin County and Judith Gap; Little Belt and Highwood Mountains; Meagher County Valleys; Snowy and Judith Mountains</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>030007 030013 030027 030031 030045 030059</value>
+<valueName>UGC</valueName>
+<value>MTZ313 MTZ317 MTZ318 MTZ320 MTZ321</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KTFX.WS.W.0010.000000T0000Z-230414T0600Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=MT12664297ACD8.WinterWeatherAdvisory.126642A4C9E0MT.TFXWSWTFX.fdb0c06b0c55b9c8e04d8852863c832a</id>
+<updated>2023-04-13T14:06:00-06:00</updated>
+<published>2023-04-13T14:06:00-06:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Winter Weather Advisory issued April 13 at 2:06PM MDT until April 14 at 12:00AM MDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MT12664297ACD8.WinterWeatherAdvisory.126642A4C9E0MT.TFXWSWTFX.fdb0c06b0c55b9c8e04d8852863c832a"/>
+<summary>...WINTER WEATHER ADVISORY REMAINS IN EFFECT UNTIL MIDNIGHT MDT TONIGHT... * WHAT...Snow. Additional snow accumulations up to 4 inches. * WHERE...Portions of central, north central, and southwest Montana. * WHEN...Until Midnight MDT tonight. * IMPACTS...Ponding of water and slushy snow accumulation will</summary>
+<cap:event>Winter Weather Advisory</cap:event>
+<cap:effective>2023-04-13T14:06:00-06:00</cap:effective>
+<cap:expires>2023-04-14T00:00:00-06:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Canyon Ferry Area; Eastern Pondera and Eastern Teton; Gallatin Valley; Helena Valley; Northern Blaine County; Western and Central Chouteau County</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>030005 030007 030015 030031 030049 030073 030099</value>
+<valueName>UGC</valueName>
+<value>MTZ306 MTZ309 MTZ310 MTZ319 MTZ323 MTZ326</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KTFX.WW.Y.0039.000000T0000Z-230414T0600Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -8051,134 +8472,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=MT12664296E9EC.WinterStormWarning.126642A4C9E0MT.TFXWSWTFX.42c9dd51c74de523087a168f695177f3</id>
-<updated>2023-04-13T09:07:00-06:00</updated>
-<published>2023-04-13T09:07:00-06:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Winter Storm Warning issued April 13 at 9:07AM MDT until April 14 at 12:00AM MDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MT12664296E9EC.WinterStormWarning.126642A4C9E0MT.TFXWSWTFX.42c9dd51c74de523087a168f695177f3"/>
-<summary>...WINTER STORM WARNING REMAINS IN EFFECT UNTIL MIDNIGHT MDT TONIGHT... * WHAT...Heavy snow. Additional snow accumulation between 2 and 4 inches in the valleys, and between 4 and 8 inches in the mountains. * WHERE...Portions of central, north central, and southwest Montana. * WHEN...Until Midnight MDT tonight.</summary>
-<cap:event>Winter Storm Warning</cap:event>
-<cap:effective>2023-04-13T09:07:00-06:00</cap:effective>
-<cap:expires>2023-04-14T00:00:00-06:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Beaverhead and Western Madison below 6000ft; Elkhorn and Boulder Mountains; Gallatin and Madison County Mountains and Centennial Mountains; Gates of the Mountains; Madison River Valley; Missouri Headwaters; Northwest Beaverhead County; Ruby Mountains and Southern Beaverhead Mountains; Southern High Plains; Southern Rocky Mountain Front; Upper Blackfoot and MacDonald Pass</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>030001 030013 030031 030043 030049 030057 030099</value>
-<valueName>UGC</valueName>
-<value>MTZ307 MTZ308 MTZ315 MTZ316 MTZ322 MTZ324 MTZ325 MTZ327 MTZ328 MTZ329 MTZ330</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KTFX.WS.W.0010.000000T0000Z-230414T0600Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=MT12664296E9EC.WinterStormWarning.126642A4C9E0MT.TFXWSWTFX.3cdeb35fa66fb356fe67ecbdcc14863b</id>
-<updated>2023-04-13T09:07:00-06:00</updated>
-<published>2023-04-13T09:07:00-06:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Winter Storm Warning issued April 13 at 9:07AM MDT until April 14 at 12:00AM MDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MT12664296E9EC.WinterStormWarning.126642A4C9E0MT.TFXWSWTFX.3cdeb35fa66fb356fe67ecbdcc14863b"/>
-<summary>...WINTER STORM WARNING REMAINS IN EFFECT UNTIL MIDNIGHT MDT TONIGHT... * WHAT...Heavy snow. Additional snow accumulations up to 6 inches. * WHERE...Bears Paw Mountains and Southern Blaine, Cascade County below 5000ft and Fergus County below 4500ft. * WHEN...Until Midnight MDT tonight.</summary>
-<cap:event>Winter Storm Warning</cap:event>
-<cap:effective>2023-04-13T09:07:00-06:00</cap:effective>
-<cap:expires>2023-04-14T00:00:00-06:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Bears Paw Mountains and Southern Blaine; Cascade County below 5000ft; Fergus County below 4500ft</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>030005 030013 030015 030027</value>
-<valueName>UGC</valueName>
-<value>MTZ311 MTZ312 MTZ314</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KTFX.WS.W.0010.000000T0000Z-230414T0600Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=MT12664296E9EC.WinterStormWarning.126642A4C9E0MT.TFXWSWTFX.34d6817a0206a159ca27ce54b462d03a</id>
-<updated>2023-04-13T09:07:00-06:00</updated>
-<published>2023-04-13T09:07:00-06:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Winter Storm Warning issued April 13 at 9:07AM MDT until April 14 at 12:00AM MDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MT12664296E9EC.WinterStormWarning.126642A4C9E0MT.TFXWSWTFX.34d6817a0206a159ca27ce54b462d03a"/>
-<summary>...WINTER STORM WARNING REMAINS IN EFFECT UNTIL MIDNIGHT MDT TONIGHT... * WHAT...Heavy snow. Additional snow accumulation between 3 and 8 inches at lower elevations, with higher amounts at elevations above 7000 feet. * WHERE...The Highwood, Little Belt, and Snowy Mountains, Judith</summary>
-<cap:event>Winter Storm Warning</cap:event>
-<cap:effective>2023-04-13T09:07:00-06:00</cap:effective>
-<cap:expires>2023-04-14T00:00:00-06:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Big Belt, Bridger and Castle Mountains; Judith Basin County and Judith Gap; Little Belt and Highwood Mountains; Meagher County Valleys; Snowy and Judith Mountains</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>030007 030013 030027 030031 030045 030059</value>
-<valueName>UGC</valueName>
-<value>MTZ313 MTZ317 MTZ318 MTZ320 MTZ321</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KTFX.WS.W.0010.000000T0000Z-230414T0600Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=MT12664296E9EC.WinterWeatherAdvisory.126642A4C9E0MT.TFXWSWTFX.fdb0c06b0c55b9c8e04d8852863c832a</id>
-<updated>2023-04-13T09:07:00-06:00</updated>
-<published>2023-04-13T09:07:00-06:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Winter Weather Advisory issued April 13 at 9:07AM MDT until April 14 at 12:00AM MDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MT12664296E9EC.WinterWeatherAdvisory.126642A4C9E0MT.TFXWSWTFX.fdb0c06b0c55b9c8e04d8852863c832a"/>
-<summary>...WINTER WEATHER ADVISORY REMAINS IN EFFECT UNTIL MIDNIGHT MDT TONIGHT... * WHAT...Snow. Additional snow accumulations up to 3 inches. * WHERE...Portions of central, north central, and southwest Montana. * WHEN...Until Midnight MDT tonight. * IMPACTS...Ponding of water and slushy snow accumulation will</summary>
-<cap:event>Winter Weather Advisory</cap:event>
-<cap:effective>2023-04-13T09:07:00-06:00</cap:effective>
-<cap:expires>2023-04-14T00:00:00-06:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Canyon Ferry Area; Eastern Pondera and Eastern Teton; Gallatin Valley; Helena Valley; Northern Blaine County; Western and Central Chouteau County</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>030005 030007 030015 030031 030049 030073 030099</value>
-<valueName>UGC</valueName>
-<value>MTZ306 MTZ309 MTZ310 MTZ319 MTZ323 MTZ326</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KTFX.WW.Y.0039.000000T0000Z-230414T0600Z/</value>
-</cap:parameter>
-</entry>
-<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=MT12664296E924.FloodWarning.126642A45A8CMT.GGWFLSGGW.71e68bccac2bd030756b503927bd22e5</id>
 <updated>2023-04-13T09:05:00-06:00</updated>
 <published>2023-04-13T09:05:00-06:00</published>
@@ -8435,138 +8728,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value>/O.CON.KBYZ.WW.Y.0025.000000T0000Z-230414T0600Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=MT12664294DAF8.FloodAdvisory.126642A67D6CMT.BYZFLSBYZ.92e84f19178e9116148c9b3713126519</id>
-<updated>2023-04-12T19:58:00-06:00</updated>
-<published>2023-04-12T19:58:00-06:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Flood Advisory issued April 12 at 7:58PM MDT until further notice by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MT12664294DAF8.FloodAdvisory.126642A67D6CMT.BYZFLSBYZ.92e84f19178e9116148c9b3713126519"/>
-<summary>.Snowmelt from the base of the Little Belt and Crazy Mountains has resulted in minor flooding across portions of western Wheatland County. ...FLOOD ADVISORY FOR SNOWMELT REMAINS IN EFFECT UNTIL 330 PM MDT THURSDAY... * WHAT...Small stream flooding caused by snowmelt continues.</summary>
-<cap:event>Flood Advisory</cap:event>
-<cap:effective>2023-04-12T19:58:00-06:00</cap:effective>
-<cap:expires>2023-04-14T11:15:00-06:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Wheatland</cap:areaDesc>
-<cap:polygon>46.69,-109.66 46.23,-109.73 46.23,-110.28 46.71,-110.27 46.71,-110.21 46.73,-110.19 46.72,-110.13 46.74,-110.1 46.75,-110.05 46.74,-110.03 46.75,-109.97 46.71,-109.87 46.71,-109.84 46.69,-109.82 46.69,-109.66</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>030107</value>
-<valueName>UGC</valueName>
-<value>MTC107</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KBYZ.FA.Y.0001.000000T0000Z-230413T2130Z/
-/00000.N.SM.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=MT12664294D904.FloodAdvisory.126642A67D6CMT.BYZFLSBYZ.42bf126b4cc45f0ebf38f710efb92d0f</id>
-<updated>2023-04-12T19:53:00-06:00</updated>
-<published>2023-04-12T19:53:00-06:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Flood Advisory issued April 12 at 7:53PM MDT until further notice by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MT12664294D904.FloodAdvisory.126642A67D6CMT.BYZFLSBYZ.42bf126b4cc45f0ebf38f710efb92d0f"/>
-<summary>.Snowmelt from the base of the Crazy Mountains has resulted in minor flooding across portions of northern Sweet Grass County. Additional snowmelt will likely continue to keep water levels high on small creeks and streams. ...FLOOD ADVISORY FOR SNOWMELT REMAINS IN EFFECT UNTIL 330 PM MDT THURSDAY...</summary>
-<cap:event>Flood Advisory</cap:event>
-<cap:effective>2023-04-12T19:53:00-06:00</cap:effective>
-<cap:expires>2023-04-14T11:15:00-06:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Wheatland</cap:areaDesc>
-<cap:polygon>46.23,-110.28 46.23,-109.73 46.03,-109.78 46.01,-110.29 46.03,-110.29 46.13,-110.29 46.13,-110.28 46.17,-110.28 46.18,-110.28 46.21,-110.28 46.23,-110.28</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>030107</value>
-<valueName>UGC</valueName>
-<value>MTC107</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KBYZ.FA.Y.0002.000000T0000Z-230413T2130Z/
-/00000.N.SM.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=MT12664294D904.FloodAdvisory.12664301B6F0MT.BYZFLSBYZ.cb7a8edb56ab1ed6948d7cf460782e4d</id>
-<updated>2023-04-12T19:53:00-06:00</updated>
-<published>2023-04-12T19:53:00-06:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Flood Advisory issued April 12 at 7:53PM MDT until April 20 at 9:00AM MDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MT12664294D904.FloodAdvisory.12664301B6F0MT.BYZFLSBYZ.cb7a8edb56ab1ed6948d7cf460782e4d"/>
-<summary>.Snowmelt from the base of the Crazy Mountains has resulted in minor flooding across portions of northern Sweet Grass County. Additional snowmelt will likely continue to keep water levels high on small creeks and streams. ...FLOOD ADVISORY FOR SNOWMELT REMAINS IN EFFECT UNTIL 330 PM MDT THURSDAY...</summary>
-<cap:event>Flood Advisory</cap:event>
-<cap:effective>2023-04-12T19:53:00-06:00</cap:effective>
-<cap:expires>2023-04-20T09:00:00-06:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Sweet Grass</cap:areaDesc>
-<cap:polygon>46.23,-110.28 46.23,-109.73 46.03,-109.78 46.01,-110.29 46.03,-110.29 46.13,-110.29 46.13,-110.28 46.17,-110.28 46.18,-110.28 46.21,-110.28 46.23,-110.28</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>030097</value>
-<valueName>UGC</valueName>
-<value>MTC097</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KBYZ.FA.Y.0002.000000T0000Z-230413T2130Z/
-/00000.N.SM.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=MT12664294D83C.FloodAdvisory.126642A45A8CMT.BYZFLSBYZ.1251d08ba362583d6686646716afec68</id>
-<updated>2023-04-12T19:51:00-06:00</updated>
-<published>2023-04-12T19:51:00-06:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Flood Advisory issued April 12 at 7:51PM MDT until further notice by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MT12664294D83C.FloodAdvisory.126642A45A8CMT.BYZFLSBYZ.1251d08ba362583d6686646716afec68"/>
-<summary>.Recent warm temperatures have resulted in increased snowmelt around the Shields River Valley. This has resulted in increased water moving into the creeks and streams that flow into the Shields River. ...FLOOD ADVISORY FOR SNOWMELT REMAINS IN EFFECT UNTIL NOON MDT FRIDAY... * WHAT...Small stream flooding caused by snowmelt continues.</summary>
-<cap:event>Flood Advisory</cap:event>
-<cap:effective>2023-04-12T19:51:00-06:00</cap:effective>
-<cap:expires>2023-04-13T21:15:00-06:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Park</cap:areaDesc>
-<cap:polygon>46.19,-110.78 46.19,-110.41 46.18,-110.41 46.18,-110.28 46.13,-110.28 46.13,-110.29 45.79,-110.29 45.78,-110.27 45.7,-110.46 45.76,-110.8 46.19,-110.78</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>030067</value>
-<valueName>UGC</valueName>
-<value>MTC067</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KBYZ.FA.Y.0003.000000T0000Z-230414T1800Z/
-/00000.N.SM.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -8867,64 +9028,63 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=ND1266429796F8.FloodWarning.126642A69EA0ND.BISFLWBIS.0d2bc40caf761ea49e085453b13645c8</id>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=ND12664297B1EC.HydrologicOutlook.126642A71F88ND.FGFESFFGF.696a4d5b5b191874d14c503cac9b316c</id>
+<updated>2023-04-13T15:19:00-05:00</updated>
+<published>2023-04-13T15:19:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Hydrologic Outlook issued April 13 at 3:19PM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=ND12664297B1EC.HydrologicOutlook.126642A71F88ND.FGFESFFGF.696a4d5b5b191874d14c503cac9b316c"/>
+<summary>...SNOWMELT AND ASSOCIATED FLOODING... Daytime temperatures above freezing will continue to support the ripening and melting of the snow pack, though nighttime temperatures below freezing and dry soils have slowed the response. Expect overland flooding to increase in coverage through this weekend, with additional responses on area rivers as</summary>
+<cap:event>Hydrologic Outlook</cap:event>
+<cap:effective>2023-04-13T15:19:00-05:00</cap:effective>
+<cap:expires>2023-04-14T16:30:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Future</cap:urgency>
+<cap:severity>Unknown</cap:severity>
+<cap:certainty>Possible</cap:certainty>
+<cap:areaDesc>Barnes; Benson; Cass; Cavalier; Eddy; Grand Forks; Griggs; Nelson; Pembina; Ramsey; Ransom; Richland; Sargent; Steele; Towner; Traill; Walsh</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>038003 038005 038017 038019 038027 038035 038039 038063 038067 038071 038073 038077 038081 038091 038095 038097 038099</value>
+<valueName>UGC</valueName>
+<value>NDC003 NDC005 NDC017 NDC019 NDC027 NDC035 NDC039 NDC063 NDC067 NDC071 NDC073 NDC077 NDC081 NDC091 NDC095 NDC097 NDC099</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value></value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=ND1266429796F8.FloodWarning.126642A71F88ND.BISFLWBIS.84c12557f45fe8372a4362464b926c2e</id>
 <updated>2023-04-13T14:50:00-05:00</updated>
 <published>2023-04-13T14:50:00-05:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
 <title>Flood Warning issued April 13 at 2:50PM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=ND1266429796F8.FloodWarning.126642A69EA0ND.BISFLWBIS.0d2bc40caf761ea49e085453b13645c8"/>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=ND1266429796F8.FloodWarning.126642A71F88ND.BISFLWBIS.84c12557f45fe8372a4362464b926c2e"/>
 <summary>...FLOOD WARNING FOR SNOWMELT IN EFFECT UNTIL 1 PM CDT/NOON MDT/ FRIDAY... * WHAT...Flooding caused by snowmelt is expected. * WHERE...Montrail, portions of McLean, Mercer, Morton, Grant, and Sioux * WHEN...Until 100 PM CDT Friday /noon MDT Friday/.</summary>
 <cap:event>Flood Warning</cap:event>
 <cap:effective>2023-04-13T14:50:00-05:00</cap:effective>
-<cap:expires>2023-04-14T13:00:00-05:00</cap:expires>
+<cap:expires>2023-04-14T16:30:00-05:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
 <cap:category>Met</cap:category>
 <cap:urgency>Expected</cap:urgency>
 <cap:severity>Moderate</cap:severity>
 <cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Burleigh</cap:areaDesc>
+<cap:areaDesc>Burleigh; Emmons; Grant; McLean</cap:areaDesc>
 <cap:polygon>48.55,-102.89 48.55,-101.97 47.85,-101.87 47.24,-101.25 47.21,-101.74 46.99,-101.75 47,-100.92 46.72,-100.77 46.69,-100.63 46.54,-100.52 46.08,-100.62 45.94,-100.51 45.94,-102 47.33,-102.14 47.33,-102.21 47.78,-102.26 47.75,-102.41 47.83,-102.65 48,-102.55 48.12,-102.83 48.55,-102.89</cap:polygon>
 <cap:geocode>
 <valueName>FIPS6</valueName>
-<value>038015</value>
+<value>038015 038029 038037 038055</value>
 <valueName>UGC</valueName>
-<value>NDC015</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.NEW.KBIS.FA.W.0005.230413T1950Z-230414T1800Z/
-/00000.0.SM.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=ND1266429796F8.FloodWarning.126642A72564ND.BISFLWBIS.bf80b20bbd42e863fb43d885be493c57</id>
-<updated>2023-04-13T14:50:00-05:00</updated>
-<published>2023-04-13T14:50:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Flood Warning issued April 13 at 2:50PM CDT until further notice by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=ND1266429796F8.FloodWarning.126642A72564ND.BISFLWBIS.bf80b20bbd42e863fb43d885be493c57"/>
-<summary>...FLOOD WARNING FOR SNOWMELT IN EFFECT UNTIL 1 PM CDT/NOON MDT/ FRIDAY... * WHAT...Flooding caused by snowmelt is expected. * WHERE...Montrail, portions of McLean, Mercer, Morton, Grant, and Sioux * WHEN...Until 100 PM CDT Friday /noon MDT Friday/.</summary>
-<cap:event>Flood Warning</cap:event>
-<cap:effective>2023-04-13T14:50:00-05:00</cap:effective>
-<cap:expires>2023-04-14T16:45:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Emmons; Grant; McLean; Mercer</cap:areaDesc>
-<cap:polygon>48.55,-102.89 48.55,-101.97 47.85,-101.87 47.24,-101.25 47.21,-101.74 46.99,-101.75 47,-100.92 46.72,-100.77 46.69,-100.63 46.54,-100.52 46.08,-100.62 45.94,-100.51 45.94,-102 47.33,-102.14 47.33,-102.21 47.78,-102.26 47.75,-102.41 47.83,-102.65 48,-102.55 48.12,-102.83 48.55,-102.89</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>038029 038037 038055 038057</value>
-<valueName>UGC</valueName>
-<value>NDC029 NDC037 NDC055 NDC057</value>
+<value>NDC015 NDC029 NDC037 NDC055</value>
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
@@ -8966,14 +9126,14 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=ND1266429796F8.FloodWarning.126642A76DA8ND.BISFLWBIS.be08f433020ba42b4effe86df2511b2f</id>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=ND1266429796F8.FloodWarning.126642A76DA8ND.BISFLWBIS.7ba47098b61ee9dc3fcf0d40e75f82b5</id>
 <updated>2023-04-13T14:50:00-05:00</updated>
 <published>2023-04-13T14:50:00-05:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
 <title>Flood Warning issued April 13 at 2:50PM CDT until further notice by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=ND1266429796F8.FloodWarning.126642A76DA8ND.BISFLWBIS.be08f433020ba42b4effe86df2511b2f"/>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=ND1266429796F8.FloodWarning.126642A76DA8ND.BISFLWBIS.7ba47098b61ee9dc3fcf0d40e75f82b5"/>
 <summary>...FLOOD WARNING FOR SNOWMELT IN EFFECT UNTIL 1 PM CDT/NOON MDT/ FRIDAY... * WHAT...Flooding caused by snowmelt is expected. * WHERE...Montrail, portions of McLean, Mercer, Morton, Grant, and Sioux * WHEN...Until 100 PM CDT Friday /noon MDT Friday/.</summary>
 <cap:event>Flood Warning</cap:event>
 <cap:effective>2023-04-13T14:50:00-05:00</cap:effective>
@@ -8984,13 +9144,13 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:urgency>Expected</cap:urgency>
 <cap:severity>Moderate</cap:severity>
 <cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Oliver</cap:areaDesc>
+<cap:areaDesc>Mercer; Oliver</cap:areaDesc>
 <cap:polygon>48.55,-102.89 48.55,-101.97 47.85,-101.87 47.24,-101.25 47.21,-101.74 46.99,-101.75 47,-100.92 46.72,-100.77 46.69,-100.63 46.54,-100.52 46.08,-100.62 45.94,-100.51 45.94,-102 47.33,-102.14 47.33,-102.21 47.78,-102.26 47.75,-102.41 47.83,-102.65 48,-102.55 48.12,-102.83 48.55,-102.89</cap:polygon>
 <cap:geocode>
 <valueName>FIPS6</valueName>
-<value>038065</value>
+<value>038057 038065</value>
 <valueName>UGC</valueName>
-<value>NDC065</value>
+<value>NDC057 NDC065</value>
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
@@ -9164,18 +9324,18 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=ND12664296E7F8.FloodWarning.126642A73AE0ND.FGFFLSFGF.fcf70fcc25442d5a3629f5a046e09e5d</id>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=ND12664296E7F8.FloodWarning.126642A71F88ND.FGFFLSFGF.fcf70fcc25442d5a3629f5a046e09e5d</id>
 <updated>2023-04-13T10:02:00-05:00</updated>
 <published>2023-04-13T10:02:00-05:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Flood Warning issued April 13 at 10:02AM CDT until further notice by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=ND12664296E7F8.FloodWarning.126642A73AE0ND.FGFFLSFGF.fcf70fcc25442d5a3629f5a046e09e5d"/>
+<title>Flood Warning issued April 13 at 10:02AM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=ND12664296E7F8.FloodWarning.126642A71F88ND.FGFFLSFGF.fcf70fcc25442d5a3629f5a046e09e5d"/>
 <summary>...FLOOD WARNING FOR SNOWMELT REMAINS IN EFFECT UNTIL 1015 AM CDT WEDNESDAY... * WHAT...Flooding caused by snowmelt continues. * WHERE...A portion of northeast North Dakota, including the following county, Walsh. * WHEN...Until 1015 AM CDT Wednesday.</summary>
 <cap:event>Flood Warning</cap:event>
 <cap:effective>2023-04-13T10:02:00-05:00</cap:effective>
-<cap:expires>2023-04-14T17:00:00-05:00</cap:expires>
+<cap:expires>2023-04-14T16:30:00-05:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
 <cap:category>Met</cap:category>
@@ -9296,97 +9456,31 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=ND12664294F8A8.FloodWarning.126642A69EA0ND.BISFLWBIS.cef5423effd2c0157296ee1c34f8bb47</id>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=ND12664294F8A8.FloodWarning.126642A71F88ND.BISFLWBIS.940c4ccfb95ea86b7732f9f439cd7d01</id>
 <updated>2023-04-12T21:34:00-05:00</updated>
 <published>2023-04-12T21:34:00-05:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
 <title>Flood Warning issued April 12 at 9:34PM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=ND12664294F8A8.FloodWarning.126642A69EA0ND.BISFLWBIS.cef5423effd2c0157296ee1c34f8bb47"/>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=ND12664294F8A8.FloodWarning.126642A71F88ND.BISFLWBIS.940c4ccfb95ea86b7732f9f439cd7d01"/>
 <summary>...FLOOD WARNING FOR SNOWMELT IN EFFECT UNTIL 1 PM CDT FRIDAY... * WHAT...Flooding caused by snowmelt is occurring. * WHERE...Much of south central and southeast North Dakota, including the James River Valley. * WHEN...Until 1 PM CDT Friday. * IMPACTS...Flooding of rivers, creeks, streams, and other low-lying</summary>
 <cap:event>Flood Warning</cap:event>
 <cap:effective>2023-04-12T21:34:00-05:00</cap:effective>
-<cap:expires>2023-04-14T13:00:00-05:00</cap:expires>
+<cap:expires>2023-04-14T16:30:00-05:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
 <cap:category>Met</cap:category>
 <cap:urgency>Expected</cap:urgency>
 <cap:severity>Moderate</cap:severity>
 <cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Burleigh</cap:areaDesc>
+<cap:areaDesc>Burleigh; Dickey; Emmons; Foster; Kidder; LaMoure; Logan; McIntosh; McLean; Sheridan; Stutsman</cap:areaDesc>
 <cap:polygon>46.98,-101.76 47.22,-101.75 47.24,-101.26 47.85,-101.86 47.85,-99.3 47.59,-99.26 47.59,-98.51 46.63,-98.44 46.63,-98.03 45.94,-98.01 45.94,-100.51 46.08,-100.62 46.53,-100.53 46.68,-100.64 46.71,-100.78 46.99,-100.94 46.98,-101.76</cap:polygon>
 <cap:geocode>
 <valueName>FIPS6</valueName>
-<value>038015</value>
+<value>038015 038021 038029 038031 038043 038045 038047 038051 038055 038083 038093</value>
 <valueName>UGC</valueName>
-<value>NDC015</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.NEW.KBIS.FA.W.0004.230413T0234Z-230414T1800Z/
-/00000.0.SM.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=ND12664294F8A8.FloodWarning.126642A72564ND.BISFLWBIS.de8a80dc8c8b829050ca16015a9298c1</id>
-<updated>2023-04-12T21:34:00-05:00</updated>
-<published>2023-04-12T21:34:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Flood Warning issued April 12 at 9:34PM CDT until further notice by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=ND12664294F8A8.FloodWarning.126642A72564ND.BISFLWBIS.de8a80dc8c8b829050ca16015a9298c1"/>
-<summary>...FLOOD WARNING FOR SNOWMELT IN EFFECT UNTIL 1 PM CDT FRIDAY... * WHAT...Flooding caused by snowmelt is occurring. * WHERE...Much of south central and southeast North Dakota, including the James River Valley. * WHEN...Until 1 PM CDT Friday. * IMPACTS...Flooding of rivers, creeks, streams, and other low-lying</summary>
-<cap:event>Flood Warning</cap:event>
-<cap:effective>2023-04-12T21:34:00-05:00</cap:effective>
-<cap:expires>2023-04-14T16:45:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Dickey; Emmons; Foster; Kidder; LaMoure; Logan; McIntosh; McLean; Sheridan</cap:areaDesc>
-<cap:polygon>46.98,-101.76 47.22,-101.75 47.24,-101.26 47.85,-101.86 47.85,-99.3 47.59,-99.26 47.59,-98.51 46.63,-98.44 46.63,-98.03 45.94,-98.01 45.94,-100.51 46.08,-100.62 46.53,-100.53 46.68,-100.64 46.71,-100.78 46.99,-100.94 46.98,-101.76</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>038021 038029 038031 038043 038045 038047 038051 038055 038083</value>
-<valueName>UGC</valueName>
-<value>NDC021 NDC029 NDC031 NDC043 NDC045 NDC047 NDC051 NDC055 NDC083</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.NEW.KBIS.FA.W.0004.230413T0234Z-230414T1800Z/
-/00000.0.SM.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=ND12664294F8A8.FloodWarning.126642A73AE0ND.BISFLWBIS.dc41d557205a20b0a0f4e4436591704b</id>
-<updated>2023-04-12T21:34:00-05:00</updated>
-<published>2023-04-12T21:34:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Flood Warning issued April 12 at 9:34PM CDT until further notice by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=ND12664294F8A8.FloodWarning.126642A73AE0ND.BISFLWBIS.dc41d557205a20b0a0f4e4436591704b"/>
-<summary>...FLOOD WARNING FOR SNOWMELT IN EFFECT UNTIL 1 PM CDT FRIDAY... * WHAT...Flooding caused by snowmelt is occurring. * WHERE...Much of south central and southeast North Dakota, including the James River Valley. * WHEN...Until 1 PM CDT Friday. * IMPACTS...Flooding of rivers, creeks, streams, and other low-lying</summary>
-<cap:event>Flood Warning</cap:event>
-<cap:effective>2023-04-12T21:34:00-05:00</cap:effective>
-<cap:expires>2023-04-14T17:00:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Stutsman</cap:areaDesc>
-<cap:polygon>46.98,-101.76 47.22,-101.75 47.24,-101.26 47.85,-101.86 47.85,-99.3 47.59,-99.26 47.59,-98.51 46.63,-98.44 46.63,-98.03 45.94,-98.01 45.94,-100.51 46.08,-100.62 46.53,-100.53 46.68,-100.64 46.71,-100.78 46.99,-100.94 46.98,-101.76</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>038093</value>
-<valueName>UGC</valueName>
-<value>NDC093</value>
+<value>NDC015 NDC021 NDC029 NDC031 NDC043 NDC045 NDC047 NDC051 NDC055 NDC083 NDC093</value>
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
@@ -9424,6 +9518,38 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value></value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=NE12664297AF30.RedFlagWarning.126642A3DF80NE.CYSRFWCYS.d0ac22f01a26888ae16143fc11a8eeef</id>
+<updated>2023-04-13T15:12:00-05:00</updated>
+<published>2023-04-13T15:12:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Red Flag Warning issued April 13 at 3:12PM CDT until April 13 at 7:00PM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=NE12664297AF30.RedFlagWarning.126642A3DF80NE.CYSRFWCYS.d0ac22f01a26888ae16143fc11a8eeef"/>
+<summary>...RED FLAG WARNING FOR GUSTY WINDS AND LOW HUMIDITY NEBRASKA PANHANDLE FIRE WEATHER ZONES... ...RED FLAG WARNING REMAINS IN EFFECT UNTIL 6 PM MDT THIS EVENING FOR GUSTY SOUTHWEST WINDS AND LOW HUMIDITY... * AFFECTED AREA...Fire weather zones 435...436 and 437. * WIND...Southwest winds 15-20 MPH with gusts up to 30 MPH.</summary>
+<cap:event>Red Flag Warning</cap:event>
+<cap:effective>2023-04-13T15:12:00-05:00</cap:effective>
+<cap:expires>2023-04-13T19:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Severe</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Box Butte, South Sioux, Niobrara River; Lodgepole Creek, Southern Nebraska Panhandle; Lower North Platte River Basin, Scottsbluff National Monument</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>031007 031013 031033 031045 031105 031123 031157 031165</value>
+<valueName>UGC</valueName>
+<value>NEZ435 NEZ436 NEZ437</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KCYS.FW.W.0002.000000T0000Z-230414T0000Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -9552,39 +9678,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value>/O.CON.KGID.FW.W.0008.230413T1700Z-230414T0200Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=NE12664295B428.RedFlagWarning.126642A3DF80NE.CYSRFWCYS.d0ac22f01a26888ae16143fc11a8eeef</id>
-<updated>2023-04-13T02:14:00-05:00</updated>
-<published>2023-04-13T02:14:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Red Flag Warning issued April 13 at 2:14AM CDT until April 13 at 7:00PM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=NE12664295B428.RedFlagWarning.126642A3DF80NE.CYSRFWCYS.d0ac22f01a26888ae16143fc11a8eeef"/>
-<summary>...RED FLAG WARNING FOR GUSTY WINDS AND LOW HUMIDITY NEBRASKA PANHANDLE FIRE WEATHER ZONES... ...RED FLAG WARNING IN EFFECT FROM NOON TODAY TO 6 PM MDT THIS EVENING FOR GUSTY SOUTHWEST WINDS AND LOW HUMIDITY... The National Weather Service in Cheyenne has issued a Red Flag Warning, which is in effect from noon today to 6 PM MDT this</summary>
-<cap:event>Red Flag Warning</cap:event>
-<cap:effective>2023-04-13T02:14:00-05:00</cap:effective>
-<cap:expires>2023-04-13T19:00:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Severe</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Box Butte, South Sioux, Niobrara River; Lodgepole Creek, Southern Nebraska Panhandle; Lower North Platte River Basin, Scottsbluff National Monument</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>031007 031013 031033 031045 031105 031123 031157 031165</value>
-<valueName>UGC</valueName>
-<value>NEZ435 NEZ436 NEZ437</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.UPG.KCYS.FW.A.0002.230413T1800Z-230414T0000Z/
-/O.NEW.KCYS.FW.W.0002.230413T1800Z-230414T0000Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -10078,17 +10171,17 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=NV126642878740.FloodWarning.126642E0E880NV.VEFFLWVEF.550904ea26cb5c9cb09e4db94d4cb1e7</id>
-<updated>2023-04-12T07:24:00-07:00</updated>
-<published>2023-04-12T07:24:00-07:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=NV12664297B50C.FloodWarning.126642E0E880NV.VEFFLWVEF.550904ea26cb5c9cb09e4db94d4cb1e7</id>
+<updated>2023-04-13T13:27:00-07:00</updated>
+<published>2023-04-13T13:27:00-07:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Flood Warning issued April 12 at 7:24AM PDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=NV126642878740.FloodWarning.126642E0E880NV.VEFFLWVEF.550904ea26cb5c9cb09e4db94d4cb1e7"/>
-<summary>...FLOOD WARNING FOR SNOWMELT IN EFFECT UNTIL 6 PM PDT THURSDAY... * WHAT...Flooding caused by snowmelt is occurring. * WHERE...The Meadow Valley Wash below Eagle Valley Dam in south central Nevada, including the following county, Lincoln. * WHEN...Until 600 PM PDT Thursday. * IMPACTS...Flooding of the Meadow Valley Wash and low-lying and</summary>
+<title>Flood Warning issued April 13 at 1:27PM PDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=NV12664297B50C.FloodWarning.126642E0E880NV.VEFFLWVEF.550904ea26cb5c9cb09e4db94d4cb1e7"/>
+<summary>...FLOOD WARNING FOR SNOWMELT NOW IN EFFECT UNTIL 11 AM PDT FRIDAY... * WHAT...Flooding caused by snowmelt continues. * WHERE...A portion of south central Nevada, including the following county, Lincoln. * WHEN...Until 1100 AM PDT Friday. * IMPACTS...Flooding of the Meadow Valley Wash and low-lying and</summary>
 <cap:event>Flood Warning</cap:event>
-<cap:effective>2023-04-12T07:24:00-07:00</cap:effective>
+<cap:effective>2023-04-13T13:27:00-07:00</cap:effective>
 <cap:expires>2023-04-17T17:00:00-07:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
@@ -10106,7 +10199,7 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
-<value>/O.NEW.KVEF.FA.W.0016.230412T1424Z-230414T0100Z/
+<value>/O.EXT.KVEF.FA.W.0016.000000T0000Z-230414T1800Z/
 /00000.0.SM.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
 </cap:parameter>
 </entry>
@@ -10720,39 +10813,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value>/O.NEW.KMFR.FR.Y.0007.230414T0900Z-230414T1500Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=OR126642960AE0.FloodWarning.12664297FFA8OR.BOIFLSBOI.c2606a1b2f7e80aba6efe46765377bf9</id>
-<updated>2023-04-13T02:36:00-07:00</updated>
-<published>2023-04-13T02:36:00-07:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Flood Warning issued April 13 at 2:36AM PDT until April 13 at 3:18PM PDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=OR126642960AE0.FloodWarning.12664297FFA8OR.BOIFLSBOI.c2606a1b2f7e80aba6efe46765377bf9"/>
-<summary>...The Flood Warning continues for the following rivers in Oregon... Malheur River Near Vale affecting Malheur County. .Snow melt and increased reservoir releases will cause the river flows to become high. Expect minor flooding downstream from the dam. For the Malheur River...including Vale...Minor flooding is forecast. ...FLOOD WARNING FOR SNOWMELT NOW IN EFFECT UNTIL LATE THIS</summary>
-<cap:event>Flood Warning</cap:event>
-<cap:effective>2023-04-13T02:36:00-07:00</cap:effective>
-<cap:expires>2023-04-13T15:18:00-07:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Malheur</cap:areaDesc>
-<cap:polygon>43.95,-117.45 44.02,-117.25 44.07,-116.98 44.03,-116.97 43.9,-117.32 43.95,-117.45</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>041045</value>
-<valueName>UGC</valueName>
-<value>ORC045</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.EXT.KBOI.FL.W.0004.000000T0000Z-230413T2218Z/
-/VALO3.1.SM.230411T1800Z.230412T0745Z.230413T1618Z.NO/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -12100,6 +12160,38 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=TX12664297B69C.SpecialWeatherStatement.12664297D190TX.AMASPSAMA.6d2e6c0cb9256c32228264e0381416b1</id>
+<updated>2023-04-13T15:31:00-05:00</updated>
+<published>2023-04-13T15:31:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Special Weather Statement issued April 13 at 3:31PM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=TX12664297B69C.SpecialWeatherStatement.12664297D190TX.AMASPSAMA.6d2e6c0cb9256c32228264e0381416b1"/>
+<summary>...Strong thunderstorms will impact portions of Oldham, Deaf Smith, southeastern Dallam and Hartley Counties through 400 PM CDT... At 327 PM CDT, Doppler radar was tracking strong thunderstorms along a line extending from 13 miles northeast of Romero to 5 miles southwest of Simms. Movement was north at 35 mph. HAZARD...Wind gusts of 50 to 55 mph and half inch hail.</summary>
+<cap:event>Special Weather Statement</cap:event>
+<cap:effective>2023-04-13T15:31:00-05:00</cap:effective>
+<cap:expires>2023-04-13T16:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Observed</cap:certainty>
+<cap:areaDesc>Dallam; Deaf Smith; Hartley; Oldham</cap:areaDesc>
+<cap:polygon>34.75,-102.95 36.01,-102.86 36.21,-102.31 34.75,-102.24 34.75,-102.95</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>048111 048117 048205 048359</value>
+<valueName>UGC</valueName>
+<value>TXZ001 TXZ006 TXZ011 TXZ016</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value></value>
+</cap:parameter>
+</entry>
+<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=TX126642978F28.FireWeatherWatch.126642B348D0TX.OUNRFWOUN.61c1104b23a5c24407cc0d2fed3e6ba3</id>
 <updated>2023-04-13T14:30:00-05:00</updated>
 <published>2023-04-13T14:30:00-05:00</published>
@@ -12620,6 +12712,39 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=WI12664297AF94.FloodWarning.126642A713D0WI.DLHFLSDLH.e22040936ce48da0fd3c7931a3a15f53</id>
+<updated>2023-04-13T15:13:00-05:00</updated>
+<published>2023-04-13T15:13:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Flood Warning issued April 13 at 3:13PM CDT until April 14 at 4:00PM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=WI12664297AF94.FloodWarning.126642A713D0WI.DLHFLSDLH.e22040936ce48da0fd3c7931a3a15f53"/>
+<summary>...The Flood Warning continues for the following rivers in Wisconsin... Bad River near Odanah affecting Ashland County. .Warm temperatures will melt snowpack and increase river flows. ...FLOOD WARNING FOR SNOWMELT NOW IN EFFECT FROM THIS AFTERNOON TO TOMORROW AFTERNOON...</summary>
+<cap:event>Flood Warning</cap:event>
+<cap:effective>2023-04-13T15:13:00-05:00</cap:effective>
+<cap:expires>2023-04-14T16:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Ashland</cap:areaDesc>
+<cap:polygon>46.6,-90.66 46.45,-90.65 46.45,-90.71 46.6,-90.72 46.6,-90.66</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>055003</value>
+<valueName>UGC</valueName>
+<value>WIC003</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.EXT.KDLH.FL.W.0004.230413T2013Z-230414T2100Z/
+/ODAW3.N.SM.000000T0000Z.000000T0000Z.000000T0000Z.NO/</value>
+</cap:parameter>
+</entry>
+<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=WI1266429797C0.FloodWarning.126642D37B00WI.DLHFLSDLH.1944224642ee68753468ee6b3e4e867f</id>
 <updated>2023-04-13T14:52:00-05:00</updated>
 <published>2023-04-13T14:52:00-05:00</published>
@@ -13109,18 +13234,18 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=WI126642976F20.FloodWarning.126642A71F88WI.DLHFLWDLH.71723b01749b66464b4bd4375e736f43</id>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=WI126642976F20.FloodWarning.126642A713D0WI.DLHFLWDLH.71723b01749b66464b4bd4375e736f43</id>
 <updated>2023-04-13T13:48:00-05:00</updated>
 <published>2023-04-13T13:48:00-05:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Flood Warning issued April 13 at 1:48PM CDT until further notice by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=WI126642976F20.FloodWarning.126642A71F88WI.DLHFLWDLH.71723b01749b66464b4bd4375e736f43"/>
+<title>Flood Warning issued April 13 at 1:48PM CDT until April 14 at 4:00PM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=WI126642976F20.FloodWarning.126642A713D0WI.DLHFLWDLH.71723b01749b66464b4bd4375e736f43"/>
 <summary>...FLOOD WARNING FOR SNOWMELT NOW IN EFFECT UNTIL 4 PM CDT SATURDAY... * WHAT...Flooding caused by snowmelt continues. * WHERE...A portion of northwest Wisconsin, including the following area, Bayfield County. * WHEN...Until 400 PM CDT Saturday.</summary>
 <cap:event>Flood Warning</cap:event>
 <cap:effective>2023-04-13T13:48:00-05:00</cap:effective>
-<cap:expires>2023-04-14T16:30:00-05:00</cap:expires>
+<cap:expires>2023-04-14T16:00:00-05:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
 <cap:category>Met</cap:category>
@@ -13142,18 +13267,18 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=WI126642976D2C.FloodWarning.126642A71F88WI.DLHFLWDLH.265b89041074f9b062ae23c3c79c32ae</id>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=WI126642976D2C.FloodWarning.126642A713D0WI.DLHFLWDLH.265b89041074f9b062ae23c3c79c32ae</id>
 <updated>2023-04-13T13:43:00-05:00</updated>
 <published>2023-04-13T13:43:00-05:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Flood Warning issued April 13 at 1:43PM CDT until further notice by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=WI126642976D2C.FloodWarning.126642A71F88WI.DLHFLWDLH.265b89041074f9b062ae23c3c79c32ae"/>
+<title>Flood Warning issued April 13 at 1:43PM CDT until April 14 at 4:00PM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=WI126642976D2C.FloodWarning.126642A713D0WI.DLHFLWDLH.265b89041074f9b062ae23c3c79c32ae"/>
 <summary>...FLOOD WARNING FOR SNOWMELT NOW IN EFFECT UNTIL 4 PM CDT SATURDAY... * WHAT...Flooding caused by snowmelt continues. 1 to 2 feet of snow with up to 5 to 7 inches of liquid equivalent still remain in the higher elevations of Bayfield county that will continue to melt impacting rivers, creeks, and streams flowing into Lake Superior.</summary>
 <cap:event>Flood Warning</cap:event>
 <cap:effective>2023-04-13T13:43:00-05:00</cap:effective>
-<cap:expires>2023-04-14T16:30:00-05:00</cap:expires>
+<cap:expires>2023-04-14T16:00:00-05:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
 <cap:category>Met</cap:category>
@@ -13175,18 +13300,18 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=WI126642976624.FloodWarning.126642A71F88WI.DLHFLWDLH.62cc1bde19c64a68750e04a021e7cab3</id>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=WI126642976624.FloodWarning.126642A713D0WI.DLHFLWDLH.62cc1bde19c64a68750e04a021e7cab3</id>
 <updated>2023-04-13T13:25:00-05:00</updated>
 <published>2023-04-13T13:25:00-05:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Flood Warning issued April 13 at 1:25PM CDT until further notice by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=WI126642976624.FloodWarning.126642A71F88WI.DLHFLWDLH.62cc1bde19c64a68750e04a021e7cab3"/>
+<title>Flood Warning issued April 13 at 1:25PM CDT until April 14 at 4:00PM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=WI126642976624.FloodWarning.126642A713D0WI.DLHFLWDLH.62cc1bde19c64a68750e04a021e7cab3"/>
 <summary>...FLOOD WARNING FOR SNOWMELT NOW IN EFFECT UNTIL 415 PM CDT SATURDAY... * WHAT...Flooding caused by snowmelt continues. * WHERE...A portion of northwest Wisconsin, including the following areas, Bayfield and Douglas County. * WHEN...Until 415 PM CDT Saturday.</summary>
 <cap:event>Flood Warning</cap:event>
 <cap:effective>2023-04-13T13:25:00-05:00</cap:effective>
-<cap:expires>2023-04-14T16:30:00-05:00</cap:expires>
+<cap:expires>2023-04-14T16:00:00-05:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
 <cap:category>Met</cap:category>
@@ -13241,18 +13366,18 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=WI126642975EB8.FloodWarning.126642A71F88WI.DLHFLWDLH.b6f7273321737cc1c9f6e27a7be9eafa</id>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=WI126642975EB8.FloodWarning.126642A713D0WI.DLHFLWDLH.b6f7273321737cc1c9f6e27a7be9eafa</id>
 <updated>2023-04-13T13:06:00-05:00</updated>
 <published>2023-04-13T13:06:00-05:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Flood Warning issued April 13 at 1:06PM CDT until further notice by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=WI126642975EB8.FloodWarning.126642A71F88WI.DLHFLWDLH.b6f7273321737cc1c9f6e27a7be9eafa"/>
+<title>Flood Warning issued April 13 at 1:06PM CDT until April 14 at 4:00PM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=WI126642975EB8.FloodWarning.126642A713D0WI.DLHFLWDLH.b6f7273321737cc1c9f6e27a7be9eafa"/>
 <summary>...FLOOD WARNING FOR RAPID SNOWMELT IN EFFECT FOR THE POTATO RIVER UNTIL 4 PM CDT SATURDAY... * WHAT...Flooding caused by rapid snowmelt is occurring. * WHERE...Potato River within the tribal lands of the Bad River Reservation. This includes parts of east-central Ashland County in northwest Wisconsin.</summary>
 <cap:event>Flood Warning</cap:event>
 <cap:effective>2023-04-13T13:06:00-05:00</cap:effective>
-<cap:expires>2023-04-14T16:30:00-05:00</cap:expires>
+<cap:expires>2023-04-14T16:00:00-05:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
 <cap:category>Met</cap:category>
@@ -14264,18 +14389,18 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=WI126642970EA4.FloodAdvisory.126642A71F88WI.DLHFLSDLH.00c83959d02865708e91901ab475acd5</id>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=WI126642970EA4.FloodAdvisory.126642A713D0WI.DLHFLSDLH.00c83959d02865708e91901ab475acd5</id>
 <updated>2023-04-13T11:01:00-05:00</updated>
 <published>2023-04-13T11:01:00-05:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Flood Advisory issued April 13 at 11:01AM CDT until further notice by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=WI126642970EA4.FloodAdvisory.126642A71F88WI.DLHFLSDLH.00c83959d02865708e91901ab475acd5"/>
+<title>Flood Advisory issued April 13 at 11:01AM CDT until April 14 at 4:00PM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=WI126642970EA4.FloodAdvisory.126642A713D0WI.DLHFLSDLH.00c83959d02865708e91901ab475acd5"/>
 <summary>...FLOOD ADVISORY FOR SNOWMELT NOW IN EFFECT UNTIL 1230 PM CDT FRIDAY... * WHAT...Flooding caused by snowmelt continues. * WHERE...A portion of northwest Wisconsin, including the following areas, Ashland, Bayfield, Douglas and Iron. * WHEN...Until 1230 PM CDT Friday.</summary>
 <cap:event>Flood Advisory</cap:event>
 <cap:effective>2023-04-13T11:01:00-05:00</cap:effective>
-<cap:expires>2023-04-14T16:30:00-05:00</cap:expires>
+<cap:expires>2023-04-14T16:00:00-05:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
 <cap:category>Met</cap:category>
@@ -14525,39 +14650,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <valueName>VTEC</valueName>
 <value>/O.CON.KARX.FL.W.0007.000000T0000Z-230416T1912Z/
 /CROW3.1.SM.230412T2225Z.230413T1010Z.230416T0112Z.NO/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=WI12664296C9E4.FloodWarning.126642A71F88WI.DLHFLSDLH.e22040936ce48da0fd3c7931a3a15f53</id>
-<updated>2023-04-13T09:25:00-05:00</updated>
-<published>2023-04-13T09:25:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Flood Warning issued April 13 at 9:25AM CDT until further notice by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=WI12664296C9E4.FloodWarning.126642A71F88WI.DLHFLSDLH.e22040936ce48da0fd3c7931a3a15f53"/>
-<summary>...The Flood Warning is extended for the following rivers in Wisconsin... Bad River near Odanah affecting Ashland County. .Warm temperatures will melt snowpack and increase river flows. ...FLOOD WARNING FOR SNOWMELT NOW IN EFFECT FROM THIS AFTERNOON UNTIL FURTHER NOTICE...</summary>
-<cap:event>Flood Warning</cap:event>
-<cap:effective>2023-04-13T09:25:00-05:00</cap:effective>
-<cap:expires>2023-04-14T16:30:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Ashland</cap:areaDesc>
-<cap:polygon>46.6,-90.66 46.45,-90.65 46.45,-90.71 46.6,-90.72 46.6,-90.66</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>055003</value>
-<valueName>UGC</valueName>
-<value>WIC003</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.EXT.KDLH.FL.W.0004.230413T2100Z-000000T0000Z/
-/ODAW3.1.SM.230413T2100Z.230414T1800Z.230416T1000Z.NO/</value>
 </cap:parameter>
 </entry>
 <entry>
