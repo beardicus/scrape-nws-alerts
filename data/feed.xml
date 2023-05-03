@@ -16,16 +16,48 @@ xmlns = 'http://www.w3.org/2005/Atom'
 xmlns:cap = 'urn:oasis:names:tc:emergency:cap:1.1'
 xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 >
-<!-- http-date = Wed, 03 May 2023 13:02:00 GMT -->
+<!-- http-date = Wed, 03 May 2023 13:30:00 GMT -->
 <id>https://alerts.weather.gov/cap/us.php?x=0</id>
 <logo>http://alerts.weather.gov/images/xml_logo.gif</logo>
 <generator>NWS CAP Server</generator>
-<updated>2023-05-03T09:02:00-04:00</updated>
+<updated>2023-05-03T03:30:00-10:00</updated>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
 <title>Current Watches, Warnings and Advisories for the United States Issued by the National Weather Service</title>
 <link href="https://alerts.weather.gov/cap/us.php?x=0"/>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=AK126647F3EE1C.WinterWeatherAdvisory.126648012A00AK.AFGWSWWCZ.4952dde0510974247a774b13bee72614</id>
+<updated>2023-05-03T05:27:00-08:00</updated>
+<published>2023-05-03T05:27:00-08:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Winter Weather Advisory issued May 03 at 5:27AM AKDT until May 03 at 4:00PM AKDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=AK126647F3EE1C.WinterWeatherAdvisory.126648012A00AK.AFGWSWWCZ.4952dde0510974247a774b13bee72614"/>
+<summary>...WINTER WEATHER ADVISORY REMAINS IN EFFECT UNTIL 4 PM AKDT THIS AFTERNOON... * WHAT...Snow and blowing snow with low visibility occuring. Visibility one half mile or less at times. Winds gusting as high as 40 mph. Total snow accumulations of up to one inch. * WHERE...Bering Strait Coast.</summary>
+<cap:event>Winter Weather Advisory</cap:event>
+<cap:effective>2023-05-03T05:27:00-08:00</cap:effective>
+<cap:expires>2023-05-03T16:00:00-08:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>St Lawrence Island and Bering Strait Coast</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>002180</value>
+<valueName>UGC</valueName>
+<value>AKZ213</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.PAFG.WW.Y.0098.000000T0000Z-230504T0000Z/</value>
+</cap:parameter>
+</entry>
 <entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=AK126647F3CDB0.FrostAdvisory.1266480373F0AK.AJKNPWAJK.4cdb4589c67064163af151840bc1751b</id>
 <updated>2023-05-03T04:44:00-08:00</updated>
@@ -56,38 +88,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value>/O.CON.PAJK.FR.Y.0001.230504T0800Z-230504T1500Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=AK126647F34A0C.WinterWeatherAdvisory.126648012A00AK.AFGWSWWCZ.4952dde0510974247a774b13bee72614</id>
-<updated>2023-05-03T01:07:00-08:00</updated>
-<published>2023-05-03T01:07:00-08:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Winter Weather Advisory issued May 03 at 1:07AM AKDT until May 03 at 4:00PM AKDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=AK126647F34A0C.WinterWeatherAdvisory.126648012A00AK.AFGWSWWCZ.4952dde0510974247a774b13bee72614"/>
-<summary>...WINTER WEATHER ADVISORY IN EFFECT UNTIL 4 PM AKDT THIS AFTERNOON... * WHAT...Snow and blowing snow with low visibility occuring. Visibility one half mile or less at times. Winds gusting as high as 40 mph. Total snow accumulations of up to one inch. * WHERE...Bering Strait Coast.</summary>
-<cap:event>Winter Weather Advisory</cap:event>
-<cap:effective>2023-05-03T01:07:00-08:00</cap:effective>
-<cap:expires>2023-05-03T16:00:00-08:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>St Lawrence Island and Bering Strait Coast</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>002180</value>
-<valueName>UGC</valueName>
-<value>AKZ213</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.NEW.PAFG.WW.Y.0098.230503T0907Z-230504T0000Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -220,6 +220,38 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <valueName>VTEC</valueName>
 <value>/O.EXT.KLZK.FL.W.0067.000000T0000Z-000000T0000Z/
 /CALA4.1.ER.230502T0445Z.230504T1200Z.000000T0000Z.NO/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=AS126647F3E64C.HighSurfWarning.1266480156ECAS.STUCFWPPG.b056ece958daa0afce44835a05b3d6a1</id>
+<updated>2023-05-03T02:07:00-11:00</updated>
+<published>2023-05-03T02:07:00-11:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>High Surf Warning issued May 03 at 2:07AM SST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=AS126647F3E64C.HighSurfWarning.1266480156ECAS.STUCFWPPG.b056ece958daa0afce44835a05b3d6a1"/>
+<summary>...A HIGH SURF WARNING IS IN EFFECT THROUGH TONIGHT... WHAT...High surf of 14 to 16 feet WHERE...All shores of American Samoa WHEN...Through TONIGHT IMPACTS...Moderate. Expect ocean water occasionally sweeping across beaches, very strong breaking waves, and strong longshore</summary>
+<cap:event>High Surf Warning</cap:event>
+<cap:effective>2023-05-03T02:07:00-11:00</cap:effective>
+<cap:expires>2023-05-03T14:15:00-11:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Manua; Tutuila and Aunuu</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>060010 060020 060050</value>
+<valueName>UGC</valueName>
+<value>ASZ001 ASZ002</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value></value>
 </cap:parameter>
 </entry>
 <entry>
@@ -1362,35 +1394,68 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=HI126647F21C18.HighSurfAdvisory.126647F458C0HI.HFOCFWHFO.6770d28c479f30a9a72a48d5dd4a2b55</id>
-<updated>2023-05-02T15:34:00-10:00</updated>
-<published>2023-05-02T15:34:00-10:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=HI126647F3EF48.HighSurfAdvisory.126648039B00HI.HFOCFWHFO.559a491713917ea1d2a41a151249b015</id>
+<updated>2023-05-03T03:30:00-10:00</updated>
+<published>2023-05-03T03:30:00-10:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>High Surf Advisory issued May 02 at 3:34PM HST until May 03 at 6:00AM HST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=HI126647F21C18.HighSurfAdvisory.126647F458C0HI.HFOCFWHFO.6770d28c479f30a9a72a48d5dd4a2b55"/>
-<summary>...HIGH SURF ADVISORY FOR NORTH AND WEST FACING SHORES OF KAUAI NIIHAU OAHU MOLOKAI AND FOR NORTH FACING SHORES OF MAUI UNTIL 6 AM HST WEDNESDAY... .A northwest swell will remain elevated before gradually declining on Wednesday. ...HIGH SURF ADVISORY REMAINS IN EFFECT UNTIL 6 AM HST</summary>
+<title>High Surf Advisory issued May 03 at 3:30AM HST until May 04 at 6:00AM HST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=HI126647F3EF48.HighSurfAdvisory.126648039B00HI.HFOCFWHFO.559a491713917ea1d2a41a151249b015"/>
+<summary>...HIGH SURF ADVISORY FOR ALL SOUTH FACING SHORES UNTIL 6 AM HST THURSDAY... .An arriving south swell today will elevate south-facing shore surf to advisory levels through early Thursday. ...HIGH SURF ADVISORY IN EFFECT FROM 6 AM THIS MORNING TO 6 AM HST THURSDAY...</summary>
 <cap:event>High Surf Advisory</cap:event>
-<cap:effective>2023-05-02T15:34:00-10:00</cap:effective>
-<cap:expires>2023-05-03T06:00:00-10:00</cap:expires>
+<cap:effective>2023-05-03T03:30:00-10:00</cap:effective>
+<cap:expires>2023-05-04T06:00:00-10:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
 <cap:category>Met</cap:category>
 <cap:urgency>Expected</cap:urgency>
 <cap:severity>Minor</cap:severity>
 <cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Kauai North; Kauai Southwest; Maui Central Valley North; Maui Windward West; Molokai North; Molokai West; Molokai Windward; Niihau; Oahu North Shore; Waianae Coast; Windward Haleakala</cap:areaDesc>
+<cap:areaDesc>Kauai Southwest; Niihau; Waianae Coast</cap:areaDesc>
 <cap:polygon></cap:polygon>
 <cap:geocode>
 <valueName>FIPS6</valueName>
-<value>015003 015007 015009</value>
+<value>015003 015007</value>
 <valueName>UGC</valueName>
-<value>HIZ001 HIZ003 HIZ006 HIZ007 HIZ017 HIZ029 HIZ037 HIZ039 HIZ040 HIZ045 HIZ047</value>
+<value>HIZ001 HIZ003 HIZ006</value>
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
-<value>/O.CON.PHFO.SU.Y.0018.000000T0000Z-230503T1600Z/</value>
+<value>/O.CAN.PHFO.SU.Y.0018.000000T0000Z-230503T1600Z/
+/O.NEW.PHFO.SU.Y.0019.230503T1600Z-230504T1600Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=HI126647F3EF48.HighSurfAdvisory.126648039B00HI.HFOCFWHFO.4ed1f7293e70fa68d119d795bac85258</id>
+<updated>2023-05-03T03:30:00-10:00</updated>
+<published>2023-05-03T03:30:00-10:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>High Surf Advisory issued May 03 at 3:30AM HST until May 04 at 6:00AM HST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=HI126647F3EF48.HighSurfAdvisory.126648039B00HI.HFOCFWHFO.4ed1f7293e70fa68d119d795bac85258"/>
+<summary>...HIGH SURF ADVISORY FOR ALL SOUTH FACING SHORES UNTIL 6 AM HST THURSDAY... .An arriving south swell today will elevate south-facing shore surf to advisory levels through early Thursday. ...HIGH SURF ADVISORY IN EFFECT FROM 6 AM THIS MORNING TO 6 AM HST THURSDAY...</summary>
+<cap:event>High Surf Advisory</cap:event>
+<cap:effective>2023-05-03T03:30:00-10:00</cap:effective>
+<cap:expires>2023-05-04T06:00:00-10:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Big Island South; Big Island Southeast; East Honolulu; Ewa Plain; Honolulu Metro; Kahoolawe; Kauai South; Kipahulu; Kohala; Kona; Lanai Leeward; Lanai South; Maui Central Valley South; Maui Leeward West; Molokai Leeward South; Molokai Southeast; South Haleakala; South Maui, Upcountry</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>015001 015003 015007 015009</value>
+<valueName>UGC</valueName>
+<value>HIZ016 HIZ018 HIZ023 HIZ026 HIZ031 HIZ032 HIZ033 HIZ034 HIZ038 HIZ041 HIZ043 HIZ044 HIZ046 HIZ048 HIZ049 HIZ050 HIZ051 HIZ052</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.NEW.PHFO.SU.Y.0019.230503T1600Z-230504T1600Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -6304,6 +6369,39 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=OR126647F3E714.FloodWarning.1266485DB4A0OR.PDTFLSPDT.4cdb7d0bd2102889d2060e4d878da4dc</id>
+<updated>2023-05-03T06:09:00-07:00</updated>
+<published>2023-05-03T06:09:00-07:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Flood Warning issued May 03 at 6:09AM PDT until May 09 at 11:48PM PDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=OR126647F3E714.FloodWarning.1266485DB4A0OR.PDTFLSPDT.4cdb7d0bd2102889d2060e4d878da4dc"/>
+<summary>...The Flood Warning continues for the following rivers in Oregon... Imnaha River at Imnaha affecting Wallowa County. .Warm temperatures will melt snowpack and increase river flows. For the Imnaha River...including Imnaha...Minor flooding is forecast. Additional information is available at www.weather.gov/pdt. ...FLOOD WARNING FOR SNOWMELT NOW IN EFFECT UNTIL LATE TUESDAY</summary>
+<cap:event>Flood Warning</cap:event>
+<cap:effective>2023-05-03T06:09:00-07:00</cap:effective>
+<cap:expires>2023-05-09T23:48:00-07:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Wallowa</cap:areaDesc>
+<cap:polygon>45.46,-116.83 45.63,-116.88 45.69,-116.82 45.67,-116.79 45.63,-116.83 45.46,-116.77 45.46,-116.83</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>041063</value>
+<valueName>UGC</valueName>
+<value>ORC063</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.EXT.KPDT.FL.W.0002.000000T0000Z-230510T0648Z/
+/IMNO3.1.SM.230501T0538Z.230507T0000Z.230510T0048Z.NO/</value>
+</cap:parameter>
+</entry>
+<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=OR126647F376F8.FloodWarning.1266482F65F0OR.MFRFLSMFR.999803e8735aac100607247d9719a3bd</id>
 <updated>2023-05-03T03:22:00-07:00</updated>
 <published>2023-05-03T03:22:00-07:00</published>
@@ -6334,39 +6432,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <valueName>VTEC</valueName>
 <value>/O.CON.KMFR.FL.W.0003.000000T0000Z-230507T0300Z/
 /BTYO3.1.SM.230430T0900Z.230502T0345Z.230506T1500Z.NO/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=OR126647F2BFC4.FloodWarning.1266486C47E0OR.PDTFLSPDT.4cdb7d0bd2102889d2060e4d878da4dc</id>
-<updated>2023-05-02T22:53:00-07:00</updated>
-<published>2023-05-02T22:53:00-07:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Flood Warning issued May 02 at 10:53PM PDT until May 10 at 7:00PM PDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=OR126647F2BFC4.FloodWarning.1266486C47E0OR.PDTFLSPDT.4cdb7d0bd2102889d2060e4d878da4dc"/>
-<summary>...The Flood Warning continues for the following rivers in Oregon... Imnaha River at Imnaha affecting Wallowa County. .Warm temperatures will melt snowpack and increase river flows. For the Imnaha River...including Imnaha...Minor flooding is forecast. Additional information is available at www.weather.gov/pdt. ...FLOOD WARNING FOR SNOWMELT NOW IN EFFECT UNTIL WEDNESDAY, MAY</summary>
-<cap:event>Flood Warning</cap:event>
-<cap:effective>2023-05-02T22:53:00-07:00</cap:effective>
-<cap:expires>2023-05-10T19:00:00-07:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Wallowa</cap:areaDesc>
-<cap:polygon>45.46,-116.83 45.63,-116.88 45.69,-116.82 45.67,-116.79 45.63,-116.83 45.46,-116.77 45.46,-116.83</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>041063</value>
-<valueName>UGC</valueName>
-<value>ORC063</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.EXT.KPDT.FL.W.0002.000000T0000Z-230511T0200Z/
-/IMNO3.1.SM.230501T0538Z.230506T1800Z.230510T2000Z.NO/</value>
 </cap:parameter>
 </entry>
 <entry>
