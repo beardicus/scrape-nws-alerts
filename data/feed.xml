@@ -16,11 +16,11 @@ xmlns = 'http://www.w3.org/2005/Atom'
 xmlns:cap = 'urn:oasis:names:tc:emergency:cap:1.1'
 xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 >
-<!-- http-date = Sun, 07 May 2023 03:31:00 GMT -->
+<!-- http-date = Sun, 07 May 2023 04:01:00 GMT -->
 <id>https://alerts.weather.gov/cap/us.php?x=0</id>
 <logo>http://alerts.weather.gov/images/xml_logo.gif</logo>
 <generator>NWS CAP Server</generator>
-<updated>2023-05-06T23:31:00-04:00</updated>
+<updated>2023-05-06T23:01:00-05:00</updated>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
@@ -56,6 +56,39 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value>/O.CON.PAJK.FR.Y.0003.230507T0900Z-230507T1500Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=AR1266482F7464.FloodWarning.1266483EB9C4AR.SHVFLSSHV.392e746010b7c76dc9d61f09201e7341</id>
+<updated>2023-05-06T22:37:00-05:00</updated>
+<published>2023-05-06T22:37:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Flood Warning issued May 06 at 10:37PM CDT until further notice by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=AR1266482F7464.FloodWarning.1266483EB9C4AR.SHVFLSSHV.392e746010b7c76dc9d61f09201e7341"/>
+<summary>...The Flood Warning continues for the following rivers in Arkansas... Ouachita River At Felsenthal Lock and Dam affecting Union and Ashley Counties. For the Ouachita River...including Felsenthal Lock and Dam, Monroe, Columbia...Minor flooding is forecast.</summary>
+<cap:event>Flood Warning</cap:event>
+<cap:effective>2023-05-06T22:37:00-05:00</cap:effective>
+<cap:expires>2023-05-07T22:45:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Ashley; Union</cap:areaDesc>
+<cap:polygon>33.11,-92.23 33.22,-92.12 33.15,-92.1 33,-92.06 33,-92.1 33.11,-92.23</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>005003 005139</value>
+<valueName>UGC</valueName>
+<value>ARC003 ARC139</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KSHV.FL.W.0029.000000T0000Z-000000T0000Z/
+/FELA4.1.ER.230203T0645Z.230414T1800Z.000000T0000Z.NO/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -122,39 +155,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <valueName>VTEC</valueName>
 <value>/O.EXT.KLZK.FL.W.0010.000000T0000Z-230510T0600Z/
 /CLDA4.1.ER.000000T0000Z.230404T0000Z.230509T0000Z.NO/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=AR12664821FCBC.FloodWarning.12664831408CAR.SHVFLSSHV.392e746010b7c76dc9d61f09201e7341</id>
-<updated>2023-05-06T10:11:00-05:00</updated>
-<published>2023-05-06T10:11:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Flood Warning issued May 06 at 10:11AM CDT until further notice by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=AR12664821FCBC.FloodWarning.12664831408CAR.SHVFLSSHV.392e746010b7c76dc9d61f09201e7341"/>
-<summary>...The Flood Warning continues for the following rivers in Arkansas... Ouachita River At Felsenthal Lock and Dam affecting Union and Ashley Counties. For the Ouachita River...including Felsenthal Lock and Dam, Monroe, Columbia...Minor flooding is forecast.</summary>
-<cap:event>Flood Warning</cap:event>
-<cap:effective>2023-05-06T10:11:00-05:00</cap:effective>
-<cap:expires>2023-05-07T10:15:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Ashley; Union</cap:areaDesc>
-<cap:polygon>33.11,-92.23 33.22,-92.12 33.15,-92.1 33,-92.06 33,-92.1 33.11,-92.23</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>005003 005139</value>
-<valueName>UGC</valueName>
-<value>ARC003 ARC139</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KSHV.FL.W.0029.000000T0000Z-000000T0000Z/
-/FELA4.1.ER.230203T0645Z.230414T1800Z.000000T0000Z.NO/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -778,17 +778,81 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=IA1266482F68AC.SevereWeatherStatement.126648300230IA.DVNSVSDVN.7b419a7166293153dfe7f331d83e7b5b</id>
-<updated>2023-05-06T22:07:00-05:00</updated>
-<published>2023-05-06T22:07:00-05:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=IA1266482F8D64.SevereThunderstormWarning.1266482F98B8IA.DVNSVSDVN.caf68df8b088646558d6e51a7c08b680</id>
+<updated>2023-05-06T23:01:00-05:00</updated>
+<published>2023-05-06T23:01:00-05:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Severe Weather Statement issued May 06 at 10:07PM CDT until May 07 at 2:00AM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=IA1266482F68AC.SevereWeatherStatement.126648300230IA.DVNSVSDVN.7b419a7166293153dfe7f331d83e7b5b"/>
-<summary>...A SEVERE THUNDERSTORM WARNING REMAINS IN EFFECT UNTIL 1045 PM CDT FOR NORTHEASTERN HANCOCK...HENDERSON...SOUTHWESTERN WARREN... NORTHWESTERN MCDONOUGH...SOUTHEASTERN DES MOINES AND EAST CENTRAL LEE COUNTIES... At 1007 PM CDT, a severe thunderstorm was located over Lomax, or 11 miles southeast of Burlington, moving east at 35 mph.</summary>
+<title>Severe Thunderstorm Warning issued May 06 at 11:01PM CDT until May 06 at 11:30PM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=IA1266482F8D64.SevereThunderstormWarning.1266482F98B8IA.DVNSVSDVN.caf68df8b088646558d6e51a7c08b680"/>
+<summary>...A SEVERE THUNDERSTORM WARNING REMAINS IN EFFECT UNTIL 1130 PM CDT FOR NORTHWESTERN LOUISA...NORTHEASTERN KEOKUK...SOUTHERN JOHNSON... NORTHERN WASHINGTON AND SOUTHEASTERN IOWA COUNTIES... At 1101 PM CDT, a severe thunderstorm was located over Wellman, or 15 miles northwest of Washington, moving east at 30 mph. HAZARD...Quarter size hail.</summary>
+<cap:event>Severe Thunderstorm Warning</cap:event>
+<cap:effective>2023-05-06T23:01:00-05:00</cap:effective>
+<cap:expires>2023-05-06T23:30:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Immediate</cap:urgency>
+<cap:severity>Severe</cap:severity>
+<cap:certainty>Observed</cap:certainty>
+<cap:areaDesc>Iowa; Johnson; Keokuk; Louisa; Washington</cap:areaDesc>
+<cap:polygon>41.61,-92.14 41.71,-91.37 41.39,-91.37 41.41,-92.14 41.61,-92.14</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>019095 019103 019107 019115 019183</value>
+<valueName>UGC</valueName>
+<value>IAC095 IAC103 IAC107 IAC115 IAC183</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KDVN.SV.W.0100.000000T0000Z-230507T0430Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=IA1266482F8D64.SevereWeatherStatement.1266482F98B8IA.DVNSVSDVN.b8678ec3155c6d25b4d674c092ee3a08</id>
+<updated>2023-05-06T23:01:00-05:00</updated>
+<published>2023-05-06T23:01:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Severe Weather Statement issued May 06 at 11:01PM CDT until May 06 at 11:30PM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=IA1266482F8D64.SevereWeatherStatement.1266482F98B8IA.DVNSVSDVN.b8678ec3155c6d25b4d674c092ee3a08"/>
+<summary>...A SEVERE THUNDERSTORM WARNING REMAINS IN EFFECT UNTIL 1130 PM CDT FOR NORTHWESTERN LOUISA...NORTHEASTERN KEOKUK...SOUTHERN JOHNSON... NORTHERN WASHINGTON AND SOUTHEASTERN IOWA COUNTIES... At 1101 PM CDT, a severe thunderstorm was located over Wellman, or 15 miles northwest of Washington, moving east at 30 mph. HAZARD...Quarter size hail.</summary>
 <cap:event>Severe Weather Statement</cap:event>
-<cap:effective>2023-05-06T22:07:00-05:00</cap:effective>
+<cap:effective>2023-05-06T23:01:00-05:00</cap:effective>
+<cap:expires>2023-05-06T23:30:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Immediate</cap:urgency>
+<cap:severity>Severe</cap:severity>
+<cap:certainty>Observed</cap:certainty>
+<cap:areaDesc>Iowa; Johnson; Keokuk; Washington</cap:areaDesc>
+<cap:polygon>41.61,-92.14 41.71,-91.37 41.39,-91.37 41.41,-92.14 41.61,-92.14</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>019095 019103 019107 019183</value>
+<valueName>UGC</valueName>
+<value>IAC095 IAC103 IAC107 IAC183</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KDVN.SV.W.0100.000000T0000Z-230507T0430Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=IA1266482F8D64.SevereWeatherStatement.126648300230IA.DVNSVSDVN.c750dfd8520aca31d5ae3caa9411604c</id>
+<updated>2023-05-06T23:01:00-05:00</updated>
+<published>2023-05-06T23:01:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Severe Weather Statement issued May 06 at 11:01PM CDT until May 07 at 2:00AM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=IA1266482F8D64.SevereWeatherStatement.126648300230IA.DVNSVSDVN.c750dfd8520aca31d5ae3caa9411604c"/>
+<summary>...A SEVERE THUNDERSTORM WARNING REMAINS IN EFFECT UNTIL 1130 PM CDT FOR NORTHWESTERN LOUISA...NORTHEASTERN KEOKUK...SOUTHERN JOHNSON... NORTHERN WASHINGTON AND SOUTHEASTERN IOWA COUNTIES... At 1101 PM CDT, a severe thunderstorm was located over Wellman, or 15 miles northwest of Washington, moving east at 30 mph. HAZARD...Quarter size hail.</summary>
+<cap:event>Severe Weather Statement</cap:event>
+<cap:effective>2023-05-06T23:01:00-05:00</cap:effective>
 <cap:expires>2023-05-07T02:00:00-05:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
@@ -796,17 +860,145 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:urgency>Immediate</cap:urgency>
 <cap:severity>Severe</cap:severity>
 <cap:certainty>Observed</cap:certainty>
-<cap:areaDesc>Des Moines</cap:areaDesc>
-<cap:polygon>40.61,-91.31 40.87,-91.14 40.91,-90.71 40.53,-90.72 40.61,-91.31</cap:polygon>
+<cap:areaDesc>Louisa</cap:areaDesc>
+<cap:polygon>41.61,-92.14 41.71,-91.37 41.39,-91.37 41.41,-92.14 41.61,-92.14</cap:polygon>
 <cap:geocode>
 <valueName>FIPS6</valueName>
-<value>019057</value>
+<value>019115</value>
 <valueName>UGC</valueName>
-<value>IAC057</value>
+<value>IAC115</value>
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
-<value>/O.CON.KDVN.SV.W.0096.000000T0000Z-230507T0345Z/</value>
+<value>/O.CON.KDVN.SV.W.0100.000000T0000Z-230507T0430Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=IA1266482F7BD0.SevereThunderstormWarning.1266482F98B8IA.DVNSVSDVN.eecb4b905864b576fefa99b06b8a9d80</id>
+<updated>2023-05-06T22:56:00-05:00</updated>
+<published>2023-05-06T22:56:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Severe Thunderstorm Warning issued May 06 at 10:56PM CDT until May 06 at 11:30PM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=IA1266482F7BD0.SevereThunderstormWarning.1266482F98B8IA.DVNSVSDVN.eecb4b905864b576fefa99b06b8a9d80"/>
+<summary>...A SEVERE THUNDERSTORM WARNING REMAINS IN EFFECT UNTIL 1130 PM CDT FOR WESTERN HENRY...NORTHEASTERN VAN BUREN AND JEFFERSON COUNTIES... At 1055 PM CDT, a severe thunderstorm was located over Fairfield, moving east at 30 mph. HAZARD...Ping pong ball size hail and 60 mph wind gusts. SOURCE...Radar indicated.</summary>
+<cap:event>Severe Thunderstorm Warning</cap:event>
+<cap:effective>2023-05-06T22:56:00-05:00</cap:effective>
+<cap:expires>2023-05-06T23:30:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Immediate</cap:urgency>
+<cap:severity>Severe</cap:severity>
+<cap:certainty>Observed</cap:certainty>
+<cap:areaDesc>Henry; Jefferson; Van Buren</cap:areaDesc>
+<cap:polygon>41.05,-92.18 41.16,-91.66 41.16,-91.56 40.85,-91.57 40.9,-92.15 41.05,-92.18</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>019087 019101 019177</value>
+<valueName>UGC</valueName>
+<value>IAC087 IAC101 IAC177</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KDVN.SV.W.0099.000000T0000Z-230507T0430Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=IA1266482F7BD0.SevereWeatherStatement.126648300230IA.DVNSVSDVN.06de72690293923da32a27ff7497d365</id>
+<updated>2023-05-06T22:56:00-05:00</updated>
+<published>2023-05-06T22:56:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Severe Weather Statement issued May 06 at 10:56PM CDT until May 07 at 2:00AM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=IA1266482F7BD0.SevereWeatherStatement.126648300230IA.DVNSVSDVN.06de72690293923da32a27ff7497d365"/>
+<summary>...A SEVERE THUNDERSTORM WARNING REMAINS IN EFFECT UNTIL 1130 PM CDT FOR WESTERN HENRY...NORTHEASTERN VAN BUREN AND JEFFERSON COUNTIES... At 1055 PM CDT, a severe thunderstorm was located over Fairfield, moving east at 30 mph. HAZARD...Ping pong ball size hail and 60 mph wind gusts. SOURCE...Radar indicated.</summary>
+<cap:event>Severe Weather Statement</cap:event>
+<cap:effective>2023-05-06T22:56:00-05:00</cap:effective>
+<cap:expires>2023-05-07T02:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Immediate</cap:urgency>
+<cap:severity>Severe</cap:severity>
+<cap:certainty>Observed</cap:certainty>
+<cap:areaDesc>Henry; Jefferson; Van Buren</cap:areaDesc>
+<cap:polygon>41.05,-92.18 41.16,-91.66 41.16,-91.56 40.85,-91.57 40.9,-92.15 41.05,-92.18</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>019087 019101 019177</value>
+<valueName>UGC</valueName>
+<value>IAC087 IAC101 IAC177</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KDVN.SV.W.0099.000000T0000Z-230507T0430Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=IA1266482F7A40.DenseFogAdvisory.1266483113A0IA.OAXNPWOAX.4f228386be916ded9a641fb9beee2a21</id>
+<updated>2023-05-06T22:52:00-05:00</updated>
+<published>2023-05-06T22:52:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Dense Fog Advisory issued May 06 at 10:52PM CDT until May 07 at 9:00AM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=IA1266482F7A40.DenseFogAdvisory.1266483113A0IA.OAXNPWOAX.4f228386be916ded9a641fb9beee2a21"/>
+<summary>...DENSE FOG ADVISORY IN EFFECT UNTIL 9 AM CDT SUNDAY... * WHAT...Visibility one quarter to one half mile in dense fog. * WHERE...Monona, Harrison and Shelby Counties. * WHEN...Until 9 AM CDT Sunday. * IMPACTS...Hazardous driving conditions due to low visibility. * ADDITIONAL DETAILS...Rapid changes in visibility may occur over</summary>
+<cap:event>Dense Fog Advisory</cap:event>
+<cap:effective>2023-05-06T22:52:00-05:00</cap:effective>
+<cap:expires>2023-05-07T09:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Harrison; Monona; Shelby</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>019085 019133 019165</value>
+<valueName>UGC</valueName>
+<value>IAZ043 IAZ055 IAZ056</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.NEW.KOAX.FG.Y.0005.230507T0352Z-230507T1400Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=IA1266482F75F4.DenseFogAdvisory.1266483113A0IA.DMXNPWDMX.c0ebe8f17f03cf62540116b873b33818</id>
+<updated>2023-05-06T22:41:00-05:00</updated>
+<published>2023-05-06T22:41:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Dense Fog Advisory issued May 06 at 10:41PM CDT until May 07 at 9:00AM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=IA1266482F75F4.DenseFogAdvisory.1266483113A0IA.DMXNPWDMX.c0ebe8f17f03cf62540116b873b33818"/>
+<summary>...DENSE FOG ADVISORY IN EFFECT UNTIL 9 AM CDT SUNDAY... * WHAT...Visibility one quarter mile or less in dense fog. * WHERE...Portions of northern, central and western Iowa. * WHEN...Until 9 AM CDT Sunday. * IMPACTS...Hazardous driving conditions due to low visibility. * ADDITIONAL DETAILS...Rapid changes in visibility may occur over</summary>
+<cap:event>Dense Fog Advisory</cap:event>
+<cap:effective>2023-05-06T22:41:00-05:00</cap:effective>
+<cap:expires>2023-05-07T09:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Audubon; Boone; Calhoun; Carroll; Cerro Gordo; Crawford; Dallas; Emmet; Greene; Guthrie; Hamilton; Hancock; Humboldt; Kossuth; Palo Alto; Pocahontas; Sac; Webster; Winnebago; Worth; Wright</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>019009 019015 019025 019027 019033 019047 019049 019063 019073 019077 019079 019081 019091 019109 019147 019151 019161 019187 019189 019195 019197</value>
+<valueName>UGC</valueName>
+<value>IAZ004 IAZ005 IAZ006 IAZ007 IAZ015 IAZ016 IAZ017 IAZ023 IAZ024 IAZ025 IAZ033 IAZ034 IAZ035 IAZ036 IAZ044 IAZ045 IAZ046 IAZ047 IAZ057 IAZ058 IAZ059</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.NEW.KDMX.FG.Y.0009.230507T0341Z-230507T1400Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -1963,17 +2155,17 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=IL1266482F7144.SevereThunderstormWarning.1266482F92DCIL.DVNSVRDVN.b6955b312c851b00e29f30abd14cba01</id>
-<updated>2023-05-06T22:29:00-05:00</updated>
-<published>2023-05-06T22:29:00-05:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=IL1266482F8D64.SevereThunderstormWarning.1266482F92DCIL.DVNSVSDVN.f5b2d3615eb68427449df1b3d7032b94</id>
+<updated>2023-05-06T23:01:00-05:00</updated>
+<published>2023-05-06T23:01:00-05:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Severe Thunderstorm Warning issued May 06 at 10:29PM CDT until May 06 at 11:15PM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=IL1266482F7144.SevereThunderstormWarning.1266482F92DCIL.DVNSVRDVN.b6955b312c851b00e29f30abd14cba01"/>
-<summary>The National Weather Service in the Quad Cities has issued a * Severe Thunderstorm Warning for... Southern Warren County in west central Illinois... McDonough County in west central Illinois... * Until 1115 PM CDT. * At 1029 PM CDT, severe thunderstorms were located along a line</summary>
+<title>Severe Thunderstorm Warning issued May 06 at 11:01PM CDT until May 06 at 11:15PM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=IL1266482F8D64.SevereThunderstormWarning.1266482F92DCIL.DVNSVSDVN.f5b2d3615eb68427449df1b3d7032b94"/>
+<summary>...A SEVERE THUNDERSTORM WARNING REMAINS IN EFFECT UNTIL 1115 PM CDT FOR SOUTHEASTERN MCDONOUGH COUNTY... At 1101 PM CDT, severe thunderstorms were located along a line extending from near Delong to near Marietta to near Industry, moving east at 45 mph. HAZARD...60 mph wind gusts and quarter size hail.</summary>
 <cap:event>Severe Thunderstorm Warning</cap:event>
-<cap:effective>2023-05-06T22:29:00-05:00</cap:effective>
+<cap:effective>2023-05-06T23:01:00-05:00</cap:effective>
 <cap:expires>2023-05-06T23:15:00-05:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
@@ -1981,63 +2173,31 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:urgency>Immediate</cap:urgency>
 <cap:severity>Severe</cap:severity>
 <cap:certainty>Observed</cap:certainty>
-<cap:areaDesc>McDonough; Warren</cap:areaDesc>
-<cap:polygon>40.28,-90.67 40.33,-90.83 40.87,-90.76 40.87,-90.44 40.28,-90.45 40.28,-90.67</cap:polygon>
+<cap:areaDesc>McDonough</cap:areaDesc>
+<cap:polygon>40.28,-90.67 40.33,-90.83 40.52,-90.68 40.57,-90.57 40.61,-90.45 40.28,-90.45 40.28,-90.67</cap:polygon>
 <cap:geocode>
 <valueName>FIPS6</valueName>
-<value>017109 017187</value>
+<value>017109</value>
 <valueName>UGC</valueName>
-<value>ILC109 ILC187</value>
+<value>ILC109</value>
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
-<value>/O.NEW.KDVN.SV.W.0098.230507T0329Z-230507T0415Z/</value>
+<value>/O.CON.KDVN.SV.W.0098.000000T0000Z-230507T0415Z/</value>
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=IL1266482F6F50.SevereThunderstormWarning.1266482F8D00IL.DVNSVSDVN.ba60666b345c591e8efa51bc86e338b0</id>
-<updated>2023-05-06T22:24:00-05:00</updated>
-<published>2023-05-06T22:24:00-05:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=IL1266482F8D64.SevereWeatherStatement.126648300230IL.DVNSVSDVN.d52120b9254f7a6f5dd175d31a86d8d9</id>
+<updated>2023-05-06T23:01:00-05:00</updated>
+<published>2023-05-06T23:01:00-05:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Severe Thunderstorm Warning issued May 06 at 10:24PM CDT until May 06 at 11:00PM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=IL1266482F6F50.SevereThunderstormWarning.1266482F8D00IL.DVNSVSDVN.ba60666b345c591e8efa51bc86e338b0"/>
-<summary>...A SEVERE THUNDERSTORM WARNING REMAINS IN EFFECT UNTIL 1100 PM CDT FOR NORTHEASTERN HANCOCK...SOUTH CENTRAL HENDERSON AND WESTERN MCDONOUGH COUNTIES... At 1024 PM CDT, a severe thunderstorm was located over Blandinsville, or 11 miles west of Macomb, moving southeast at 40 mph. HAZARD...60 mph wind gusts and quarter size hail.</summary>
-<cap:event>Severe Thunderstorm Warning</cap:event>
-<cap:effective>2023-05-06T22:24:00-05:00</cap:effective>
-<cap:expires>2023-05-06T23:00:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Immediate</cap:urgency>
-<cap:severity>Severe</cap:severity>
-<cap:certainty>Observed</cap:certainty>
-<cap:areaDesc>Hancock; Henderson; McDonough</cap:areaDesc>
-<cap:polygon>40.28,-90.67 40.42,-91.08 40.56,-91.03 40.67,-91.04 40.57,-90.56 40.28,-90.67</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>017067 017071 017109</value>
-<valueName>UGC</valueName>
-<value>ILC067 ILC071 ILC109</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KDVN.SV.W.0097.000000T0000Z-230507T0400Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=IL1266482F6F50.SevereWeatherStatement.126648300230IL.DVNSVSDVN.6aa1c4c2a37411b222f6eb4a159fab2e</id>
-<updated>2023-05-06T22:24:00-05:00</updated>
-<published>2023-05-06T22:24:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Severe Weather Statement issued May 06 at 10:24PM CDT until May 07 at 2:00AM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=IL1266482F6F50.SevereWeatherStatement.126648300230IL.DVNSVSDVN.6aa1c4c2a37411b222f6eb4a159fab2e"/>
-<summary>...A SEVERE THUNDERSTORM WARNING REMAINS IN EFFECT UNTIL 1100 PM CDT FOR NORTHEASTERN HANCOCK...SOUTH CENTRAL HENDERSON AND WESTERN MCDONOUGH COUNTIES... At 1024 PM CDT, a severe thunderstorm was located over Blandinsville, or 11 miles west of Macomb, moving southeast at 40 mph. HAZARD...60 mph wind gusts and quarter size hail.</summary>
+<title>Severe Weather Statement issued May 06 at 11:01PM CDT until May 07 at 2:00AM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=IL1266482F8D64.SevereWeatherStatement.126648300230IL.DVNSVSDVN.d52120b9254f7a6f5dd175d31a86d8d9"/>
+<summary>...A SEVERE THUNDERSTORM WARNING REMAINS IN EFFECT UNTIL 1115 PM CDT FOR SOUTHEASTERN MCDONOUGH COUNTY... At 1101 PM CDT, severe thunderstorms were located along a line extending from near Delong to near Marietta to near Industry, moving east at 45 mph. HAZARD...60 mph wind gusts and quarter size hail.</summary>
 <cap:event>Severe Weather Statement</cap:event>
-<cap:effective>2023-05-06T22:24:00-05:00</cap:effective>
+<cap:effective>2023-05-06T23:01:00-05:00</cap:effective>
 <cap:expires>2023-05-07T02:00:00-05:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
@@ -2045,63 +2205,457 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:urgency>Immediate</cap:urgency>
 <cap:severity>Severe</cap:severity>
 <cap:certainty>Observed</cap:certainty>
-<cap:areaDesc>Hancock; Henderson; McDonough</cap:areaDesc>
-<cap:polygon>40.28,-90.67 40.42,-91.08 40.56,-91.03 40.67,-91.04 40.57,-90.56 40.28,-90.67</cap:polygon>
+<cap:areaDesc>McDonough</cap:areaDesc>
+<cap:polygon>40.28,-90.67 40.33,-90.83 40.52,-90.68 40.57,-90.57 40.61,-90.45 40.28,-90.45 40.28,-90.67</cap:polygon>
 <cap:geocode>
 <valueName>FIPS6</valueName>
-<value>017067 017071 017109</value>
+<value>017109</value>
 <valueName>UGC</valueName>
-<value>ILC067 ILC071 ILC109</value>
+<value>ILC109</value>
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
-<value>/O.CON.KDVN.SV.W.0097.000000T0000Z-230507T0400Z/</value>
+<value>/O.CON.KDVN.SV.W.0098.000000T0000Z-230507T0415Z/</value>
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=IL1266482F6E88.SevereThunderstormWarning.1266482F7784IL.DVNSVSDVN.0d7c734cb310353b4c338565b33a8292</id>
-<updated>2023-05-06T22:22:00-05:00</updated>
-<published>2023-05-06T22:22:00-05:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=IL1266482F8D00.FloodWarning.12664840A400IL.LSXFLSLSX.ab09142ad92505c1bdf9cbaa9850227a</id>
+<updated>2023-05-06T23:00:00-05:00</updated>
+<published>2023-05-06T23:00:00-05:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Severe Thunderstorm Warning issued May 06 at 10:22PM CDT until May 06 at 10:45PM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=IL1266482F6E88.SevereThunderstormWarning.1266482F7784IL.DVNSVSDVN.0d7c734cb310353b4c338565b33a8292"/>
-<summary>...A SEVERE THUNDERSTORM WARNING REMAINS IN EFFECT UNTIL 1045 PM CDT FOR NORTHEASTERN HANCOCK...SOUTHEASTERN HENDERSON...SOUTHWESTERN WARREN AND NORTHWESTERN MCDONOUGH COUNTIES... At 1022 PM CDT, a severe thunderstorm was located over Raritan, or 15 miles southeast of Burlington, moving east at 35 mph. HAZARD...60 mph wind gusts and quarter size hail.</summary>
+<title>Flood Warning issued May 06 at 11:00PM CDT until further notice by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=IL1266482F8D00.FloodWarning.12664840A400IL.LSXFLSLSX.ab09142ad92505c1bdf9cbaa9850227a"/>
+<summary>...The Flood Warning is extended for the following rivers in Missouri...Illinois... Mississippi River at Grafton. Mississippi River at LaGrange. ...The Flood Warning continues for the following rivers in Missouri...Illinois...</summary>
+<cap:event>Flood Warning</cap:event>
+<cap:effective>2023-05-06T23:00:00-05:00</cap:effective>
+<cap:expires>2023-05-08T11:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Adams</cap:areaDesc>
+<cap:polygon>40.22,-91.54 40.22,-91.42 40.08,-91.4 40.08,-91.53 40.22,-91.54</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>017001</value>
+<valueName>UGC</valueName>
+<value>ILC001</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KLSX.FL.W.0032.000000T0000Z-000000T0000Z/
+/CANM7.1.SM.230426T0100Z.230504T2300Z.000000T0000Z.NO/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=IL1266482F8D00.FloodWarning.12664840A400IL.LSXFLSLSX.73f41d1237674834b799e71f9cd66b6c</id>
+<updated>2023-05-06T23:00:00-05:00</updated>
+<published>2023-05-06T23:00:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Flood Warning issued May 06 at 11:00PM CDT until further notice by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=IL1266482F8D00.FloodWarning.12664840A400IL.LSXFLSLSX.73f41d1237674834b799e71f9cd66b6c"/>
+<summary>...The Flood Warning is extended for the following rivers in Missouri...Illinois... Mississippi River at Grafton. Mississippi River at LaGrange. ...The Flood Warning continues for the following rivers in Missouri...Illinois...</summary>
+<cap:event>Flood Warning</cap:event>
+<cap:effective>2023-05-06T23:00:00-05:00</cap:effective>
+<cap:expires>2023-05-08T11:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Calhoun</cap:areaDesc>
+<cap:polygon>39.22,-90.81 39.23,-90.71 38.88,-90.57 38.81,-90.57 38.87,-90.74 39.22,-90.81</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>017013</value>
+<valueName>UGC</valueName>
+<value>ILC013</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KLSX.FL.W.0034.000000T0000Z-000000T0000Z/
+/CAGM7.2.SM.230426T2100Z.230507T1800Z.000000T0000Z.NO/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=IL1266482F8D00.FloodWarning.12664840A400IL.LSXFLSLSX.d5a79af73fa932ffcb19e5a6e379084a</id>
+<updated>2023-05-06T23:00:00-05:00</updated>
+<published>2023-05-06T23:00:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Flood Warning issued May 06 at 11:00PM CDT until further notice by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=IL1266482F8D00.FloodWarning.12664840A400IL.LSXFLSLSX.d5a79af73fa932ffcb19e5a6e379084a"/>
+<summary>...The Flood Warning is extended for the following rivers in Missouri...Illinois... Mississippi River at Grafton. Mississippi River at LaGrange. ...The Flood Warning continues for the following rivers in Missouri...Illinois...</summary>
+<cap:event>Flood Warning</cap:event>
+<cap:effective>2023-05-06T23:00:00-05:00</cap:effective>
+<cap:expires>2023-05-08T11:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Calhoun</cap:areaDesc>
+<cap:polygon>39.39,-90.97 39.45,-90.89 39.38,-90.77 39.23,-90.71 39.22,-90.81 39.39,-90.97</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>017013</value>
+<valueName>UGC</valueName>
+<value>ILC013</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KLSX.FL.W.0029.000000T0000Z-000000T0000Z/
+/CLKM7.1.SM.230424T1500Z.230507T0600Z.000000T0000Z.NO/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=IL1266482F8D00.FloodWarning.12664840A400IL.LSXFLSLSX.4542c89cebb8c6d6f386297b03ed6b88</id>
+<updated>2023-05-06T23:00:00-05:00</updated>
+<published>2023-05-06T23:00:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Flood Warning issued May 06 at 11:00PM CDT until further notice by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=IL1266482F8D00.FloodWarning.12664840A400IL.LSXFLSLSX.4542c89cebb8c6d6f386297b03ed6b88"/>
+<summary>...The Flood Warning is extended for the following rivers in Missouri...Illinois... Mississippi River at Grafton. Mississippi River at LaGrange. ...The Flood Warning continues for the following rivers in Missouri...Illinois...</summary>
+<cap:event>Flood Warning</cap:event>
+<cap:effective>2023-05-06T23:00:00-05:00</cap:effective>
+<cap:expires>2023-05-08T11:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Pike</cap:areaDesc>
+<cap:polygon>39.83,-91.48 39.83,-91.35 39.74,-91.21 39.67,-91.35 39.83,-91.48</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>017149</value>
+<valueName>UGC</valueName>
+<value>ILC149</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KLSX.FL.W.0031.000000T0000Z-000000T0000Z/
+/HNNM7.1.SM.230424T1752Z.230506T0330Z.000000T0000Z.NO/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=IL1266482F8D00.FloodWarning.12664840A400IL.LSXFLSLSX.b150a32c16a2bcd1c1ca5b98002b963e</id>
+<updated>2023-05-06T23:00:00-05:00</updated>
+<published>2023-05-06T23:00:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Flood Warning issued May 06 at 11:00PM CDT until further notice by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=IL1266482F8D00.FloodWarning.12664840A400IL.LSXFLSLSX.b150a32c16a2bcd1c1ca5b98002b963e"/>
+<summary>...The Flood Warning is extended for the following rivers in Missouri...Illinois... Mississippi River at Grafton. Mississippi River at LaGrange. ...The Flood Warning continues for the following rivers in Missouri...Illinois...</summary>
+<cap:event>Flood Warning</cap:event>
+<cap:effective>2023-05-06T23:00:00-05:00</cap:effective>
+<cap:expires>2023-05-08T11:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Pike</cap:areaDesc>
+<cap:polygon>39.45,-91.11 39.52,-90.97 39.45,-90.89 39.39,-90.97 39.45,-91.11</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>017149</value>
+<valueName>UGC</valueName>
+<value>ILC149</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KLSX.FL.W.0030.000000T0000Z-000000T0000Z/
+/LUSM7.1.SM.230424T2045Z.230506T2000Z.000000T0000Z.NO/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=IL1266482F8D00.FloodWarning.12664840A400IL.LSXFLSLSX.b303b9598040d0df7138dbc45b6f17ca</id>
+<updated>2023-05-06T23:00:00-05:00</updated>
+<published>2023-05-06T23:00:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Flood Warning issued May 06 at 11:00PM CDT until further notice by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=IL1266482F8D00.FloodWarning.12664840A400IL.LSXFLSLSX.b303b9598040d0df7138dbc45b6f17ca"/>
+<summary>...The Flood Warning is extended for the following rivers in Missouri...Illinois... Mississippi River at Grafton. Mississippi River at LaGrange. ...The Flood Warning continues for the following rivers in Missouri...Illinois...</summary>
+<cap:event>Flood Warning</cap:event>
+<cap:effective>2023-05-06T23:00:00-05:00</cap:effective>
+<cap:expires>2023-05-08T11:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Pike</cap:areaDesc>
+<cap:polygon>39.67,-91.35 39.74,-91.21 39.7,-91.14 39.52,-90.97 39.45,-91.11 39.67,-91.35</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>017149</value>
+<valueName>UGC</valueName>
+<value>ILC149</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KLSX.FL.W.0033.000000T0000Z-000000T0000Z/
+/SVRM7.2.SM.230425T2338Z.230506T2300Z.000000T0000Z.NO/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=IL1266482F8D00.FloodWarning.1266487DFB20IL.LSXFLSLSX.e68d78fd0ede7050828305b9b40951bd</id>
+<updated>2023-05-06T23:00:00-05:00</updated>
+<published>2023-05-06T23:00:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Flood Warning issued May 06 at 11:00PM CDT until May 12 at 1:00PM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=IL1266482F8D00.FloodWarning.1266487DFB20IL.LSXFLSLSX.e68d78fd0ede7050828305b9b40951bd"/>
+<summary>...The Flood Warning is extended for the following rivers in Missouri...Illinois... Mississippi River at Grafton. Mississippi River at LaGrange. ...The Flood Warning continues for the following rivers in Missouri...Illinois...</summary>
+<cap:event>Flood Warning</cap:event>
+<cap:effective>2023-05-06T23:00:00-05:00</cap:effective>
+<cap:expires>2023-05-12T13:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Adams</cap:areaDesc>
+<cap:polygon>40.08,-91.53 40.08,-91.4 39.99,-91.4 39.99,-91.52 40.08,-91.53</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>017001</value>
+<valueName>UGC</valueName>
+<value>ILC001</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.EXT.KLSX.FL.W.0037.000000T0000Z-230512T1800Z/
+/LGRM7.1.SM.230428T2000Z.230505T2245Z.230511T1200Z.NO/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=IL1266482F8D00.FloodWarning.1266487DFB20IL.LSXFLSLSX.d9f885b9395dcf15aec49cf5884ea7b8</id>
+<updated>2023-05-06T23:00:00-05:00</updated>
+<published>2023-05-06T23:00:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Flood Warning issued May 06 at 11:00PM CDT until May 12 at 1:00PM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=IL1266482F8D00.FloodWarning.1266487DFB20IL.LSXFLSLSX.d9f885b9395dcf15aec49cf5884ea7b8"/>
+<summary>...The Flood Warning is extended for the following rivers in Missouri...Illinois... Mississippi River at Grafton. Mississippi River at LaGrange. ...The Flood Warning continues for the following rivers in Missouri...Illinois...</summary>
+<cap:event>Flood Warning</cap:event>
+<cap:effective>2023-05-06T23:00:00-05:00</cap:effective>
+<cap:expires>2023-05-12T13:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Jersey</cap:areaDesc>
+<cap:polygon>38.81,-90.57 38.88,-90.57 38.99,-90.46 38.95,-90.28 38.82,-90.48 38.81,-90.57</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>017083</value>
+<valueName>UGC</valueName>
+<value>ILC083</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.EXT.KLSX.FL.W.0038.000000T0000Z-230512T1800Z/
+/GRFI2.1.SM.230503T2000Z.230508T1800Z.230511T1200Z.NO/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=IL1266482F8D00.FloodWarning.1266488B68A0IL.LSXFLSLSX.457bfda18073af4d8550439dd5b8b9bb</id>
+<updated>2023-05-06T23:00:00-05:00</updated>
+<published>2023-05-06T23:00:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Flood Warning issued May 06 at 11:00PM CDT until May 13 at 1:00AM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=IL1266482F8D00.FloodWarning.1266488B68A0IL.LSXFLSLSX.457bfda18073af4d8550439dd5b8b9bb"/>
+<summary>...The Flood Warning is extended for the following rivers in Missouri...Illinois... Mississippi River at Grafton. Mississippi River at LaGrange. ...The Flood Warning continues for the following rivers in Missouri...Illinois...</summary>
+<cap:event>Flood Warning</cap:event>
+<cap:effective>2023-05-06T23:00:00-05:00</cap:effective>
+<cap:expires>2023-05-13T01:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Adams</cap:areaDesc>
+<cap:polygon>39.99,-91.52 39.99,-91.4 39.91,-91.4 39.91,-91.52 39.99,-91.52</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>017001</value>
+<valueName>UGC</valueName>
+<value>ILC001</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.EXT.KLSX.FL.W.0035.000000T0000Z-230513T0600Z/
+/UINI2.1.SM.230428T1515Z.230505T2245Z.230512T0000Z.NO/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=IL1266482F8D00.FloodWarning.1266488CC830IL.LSXFLSLSX.a1eb0db75202597a7dca3860f0b3a9e6</id>
+<updated>2023-05-06T23:00:00-05:00</updated>
+<published>2023-05-06T23:00:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Flood Warning issued May 06 at 11:00PM CDT until May 13 at 10:00AM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=IL1266482F8D00.FloodWarning.1266488CC830IL.LSXFLSLSX.a1eb0db75202597a7dca3860f0b3a9e6"/>
+<summary>...The Flood Warning is extended for the following rivers in Missouri...Illinois... Mississippi River at Grafton. Mississippi River at LaGrange. ...The Flood Warning continues for the following rivers in Missouri...Illinois...</summary>
+<cap:event>Flood Warning</cap:event>
+<cap:effective>2023-05-06T23:00:00-05:00</cap:effective>
+<cap:expires>2023-05-13T10:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Adams</cap:areaDesc>
+<cap:polygon>39.91,-91.52 39.91,-91.4 39.83,-91.35 39.83,-91.48 39.91,-91.52</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>017001</value>
+<valueName>UGC</valueName>
+<value>ILC001</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KLSX.FL.W.0036.000000T0000Z-230513T1500Z/
+/QLDI2.1.SM.230428T1045Z.230505T2100Z.230512T0900Z.NO/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=IL1266482F7CFC.SevereThunderstormWarning.1266482F98B8IL.ILXSVSILX.78ba04be6ddc96f2da4862dff7018a70</id>
+<updated>2023-05-06T22:59:00-05:00</updated>
+<published>2023-05-06T22:59:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Severe Thunderstorm Warning issued May 06 at 10:59PM CDT until May 06 at 11:30PM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=IL1266482F7CFC.SevereThunderstormWarning.1266482F98B8IL.ILXSVSILX.78ba04be6ddc96f2da4862dff7018a70"/>
+<summary>...A SEVERE THUNDERSTORM WARNING REMAINS IN EFFECT UNTIL 1130 PM CDT FOR FULTON...SOUTHERN KNOX...NORTHEASTERN SCHUYLER AND WESTERN MASON COUNTIES... At 1058 PM CDT, severe thunderstorms were located along a line extending from near Gilson to near New Philadelphia to near Fandon, moving east at 50 mph.</summary>
 <cap:event>Severe Thunderstorm Warning</cap:event>
-<cap:effective>2023-05-06T22:22:00-05:00</cap:effective>
-<cap:expires>2023-05-06T22:45:00-05:00</cap:expires>
+<cap:effective>2023-05-06T22:59:00-05:00</cap:effective>
+<cap:expires>2023-05-06T23:30:00-05:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
 <cap:category>Met</cap:category>
 <cap:urgency>Immediate</cap:urgency>
 <cap:severity>Severe</cap:severity>
 <cap:certainty>Observed</cap:certainty>
-<cap:areaDesc>Hancock; Henderson; McDonough; Warren</cap:areaDesc>
-<cap:polygon>40.6,-91.04 40.67,-91.04 40.7,-91.06 40.85,-90.92 40.87,-90.71 40.53,-90.72 40.6,-91.04</cap:polygon>
+<cap:areaDesc>Fulton; Knox; Mason; Schuyler</cap:areaDesc>
+<cap:polygon>40.28,-90.68 40.28,-90.45 40.85,-90.44 40.84,-89.98 40.12,-90.01 40.19,-90.72 40.28,-90.68</cap:polygon>
 <cap:geocode>
 <valueName>FIPS6</valueName>
-<value>017067 017071 017109 017187</value>
+<value>017057 017095 017125 017169</value>
 <valueName>UGC</valueName>
-<value>ILC067 ILC071 ILC109 ILC187</value>
+<value>ILC057 ILC095 ILC125 ILC169</value>
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
-<value>/O.CON.KDVN.SV.W.0096.000000T0000Z-230507T0345Z/</value>
+<value>/O.CON.KILX.SV.W.0086.000000T0000Z-230507T0430Z/</value>
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=IL1266482F6E88.SevereWeatherStatement.126648300230IL.DVNSVSDVN.93bb7caef5cb8a31e93bae6367c54b1b</id>
-<updated>2023-05-06T22:22:00-05:00</updated>
-<published>2023-05-06T22:22:00-05:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=IL1266482F7CFC.SevereWeatherStatement.126648300230IL.ILXSVSILX.6cb17d125e45dd5a20cbb2163ea07856</id>
+<updated>2023-05-06T22:59:00-05:00</updated>
+<published>2023-05-06T22:59:00-05:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Severe Weather Statement issued May 06 at 10:22PM CDT until May 07 at 2:00AM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=IL1266482F6E88.SevereWeatherStatement.126648300230IL.DVNSVSDVN.93bb7caef5cb8a31e93bae6367c54b1b"/>
-<summary>...A SEVERE THUNDERSTORM WARNING REMAINS IN EFFECT UNTIL 1045 PM CDT FOR NORTHEASTERN HANCOCK...SOUTHEASTERN HENDERSON...SOUTHWESTERN WARREN AND NORTHWESTERN MCDONOUGH COUNTIES... At 1022 PM CDT, a severe thunderstorm was located over Raritan, or 15 miles southeast of Burlington, moving east at 35 mph. HAZARD...60 mph wind gusts and quarter size hail.</summary>
+<title>Severe Weather Statement issued May 06 at 10:59PM CDT until May 07 at 2:00AM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=IL1266482F7CFC.SevereWeatherStatement.126648300230IL.ILXSVSILX.6cb17d125e45dd5a20cbb2163ea07856"/>
+<summary>...A SEVERE THUNDERSTORM WARNING REMAINS IN EFFECT UNTIL 1130 PM CDT FOR FULTON...SOUTHERN KNOX...NORTHEASTERN SCHUYLER AND WESTERN MASON COUNTIES... At 1058 PM CDT, severe thunderstorms were located along a line extending from near Gilson to near New Philadelphia to near Fandon, moving east at 50 mph.</summary>
 <cap:event>Severe Weather Statement</cap:event>
-<cap:effective>2023-05-06T22:22:00-05:00</cap:effective>
+<cap:effective>2023-05-06T22:59:00-05:00</cap:effective>
+<cap:expires>2023-05-07T02:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Immediate</cap:urgency>
+<cap:severity>Severe</cap:severity>
+<cap:certainty>Observed</cap:certainty>
+<cap:areaDesc>Fulton; Knox; Schuyler</cap:areaDesc>
+<cap:polygon>40.28,-90.68 40.28,-90.45 40.85,-90.44 40.84,-89.98 40.12,-90.01 40.19,-90.72 40.28,-90.68</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>017057 017095 017169</value>
+<valueName>UGC</valueName>
+<value>ILC057 ILC095 ILC169</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KILX.SV.W.0086.000000T0000Z-230507T0430Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=IL1266482F7CFC.SevereWeatherStatement.126648307760IL.ILXSVSILX.3f539f88d014aef75c35d9624972bcfc</id>
+<updated>2023-05-06T22:59:00-05:00</updated>
+<published>2023-05-06T22:59:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Severe Weather Statement issued May 06 at 10:59PM CDT until May 07 at 5:00AM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=IL1266482F7CFC.SevereWeatherStatement.126648307760IL.ILXSVSILX.3f539f88d014aef75c35d9624972bcfc"/>
+<summary>...A SEVERE THUNDERSTORM WARNING REMAINS IN EFFECT UNTIL 1130 PM CDT FOR FULTON...SOUTHERN KNOX...NORTHEASTERN SCHUYLER AND WESTERN MASON COUNTIES... At 1058 PM CDT, severe thunderstorms were located along a line extending from near Gilson to near New Philadelphia to near Fandon, moving east at 50 mph.</summary>
+<cap:event>Severe Weather Statement</cap:event>
+<cap:effective>2023-05-06T22:59:00-05:00</cap:effective>
+<cap:expires>2023-05-07T05:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Immediate</cap:urgency>
+<cap:severity>Severe</cap:severity>
+<cap:certainty>Observed</cap:certainty>
+<cap:areaDesc>Mason</cap:areaDesc>
+<cap:polygon>40.28,-90.68 40.28,-90.45 40.85,-90.44 40.84,-89.98 40.12,-90.01 40.19,-90.72 40.28,-90.68</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>017125</value>
+<valueName>UGC</valueName>
+<value>ILC125</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KILX.SV.W.0086.000000T0000Z-230507T0430Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=IL1266482F79DC.SevereWeatherStatement.126648300230IL.DVNSVSDVN.93bb7caef5cb8a31e93bae6367c54b1b</id>
+<updated>2023-05-06T22:51:00-05:00</updated>
+<published>2023-05-06T22:51:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Severe Weather Statement issued May 06 at 10:51PM CDT until May 07 at 2:00AM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=IL1266482F79DC.SevereWeatherStatement.126648300230IL.DVNSVSDVN.93bb7caef5cb8a31e93bae6367c54b1b"/>
+<summary>...A SEVERE THUNDERSTORM WARNING REMAINS IN EFFECT UNTIL 1115 PM CDT FOR SOUTHEASTERN WARREN AND SOUTHEASTERN MCDONOUGH COUNTIES... At 1051 PM CDT, severe thunderstorms were located along a line extending from Abingdon to New Philadelphia to Fandon, moving east at 45 mph. HAZARD...60 mph wind gusts and quarter size hail.</summary>
+<cap:event>Severe Weather Statement</cap:event>
+<cap:effective>2023-05-06T22:51:00-05:00</cap:effective>
 <cap:expires>2023-05-07T02:00:00-05:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
@@ -2110,7 +2664,7 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:severity>Severe</cap:severity>
 <cap:certainty>Observed</cap:certainty>
 <cap:areaDesc>Warren</cap:areaDesc>
-<cap:polygon>40.6,-91.04 40.67,-91.04 40.7,-91.06 40.85,-90.92 40.87,-90.71 40.53,-90.72 40.6,-91.04</cap:polygon>
+<cap:polygon>40.28,-90.67 40.33,-90.83 40.56,-90.64 40.85,-90.54 40.87,-90.44 40.28,-90.45 40.28,-90.67</cap:polygon>
 <cap:geocode>
 <valueName>FIPS6</valueName>
 <value>017187</value>
@@ -2119,7 +2673,71 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
-<value>/O.CON.KDVN.SV.W.0096.000000T0000Z-230507T0345Z/</value>
+<value>/O.CON.KDVN.SV.W.0098.000000T0000Z-230507T0415Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=IL1266482F7720.SevereThunderstormWatch.126648300230IL.ILXWCNILX.b43610e453c0fa00cde075916e330903</id>
+<updated>2023-05-06T22:44:00-05:00</updated>
+<published>2023-05-06T22:44:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Severe Thunderstorm Watch issued May 06 at 10:44PM CDT until May 07 at 2:00AM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=IL1266482F7720.SevereThunderstormWatch.126648300230IL.ILXWCNILX.b43610e453c0fa00cde075916e330903"/>
+<summary>SEVERE THUNDERSTORM WATCH 191 REMAINS VALID UNTIL 2 AM CDT SUNDAY FOR THE FOLLOWING AREAS IN ILLINOIS THIS WATCH INCLUDES 3 COUNTIES IN WEST CENTRAL ILLINOIS FULTON KNOX SCHUYLER THIS INCLUDES THE CITIES OF CANTON, GALESBURG, AND RUSHVILLE.</summary>
+<cap:event>Severe Thunderstorm Watch</cap:event>
+<cap:effective>2023-05-06T22:44:00-05:00</cap:effective>
+<cap:expires>2023-05-07T02:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Severe</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Fulton; Knox; Schuyler</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>017057 017095 017169</value>
+<valueName>UGC</valueName>
+<value>ILC057 ILC095 ILC169</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KILX.SV.A.0191.000000T0000Z-230507T0700Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=IL1266482F7658.SevereThunderstormWatch.126648307760IL.WNSWOU4.da8b3dfa1239f114676d9f217879cef8</id>
+<updated>2023-05-06T22:42:00-05:00</updated>
+<published>2023-05-06T22:42:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Severe Thunderstorm Watch issued May 06 at 10:42PM CDT until May 07 at 5:00AM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=IL1266482F7658.SevereThunderstormWatch.126648307760IL.WNSWOU4.da8b3dfa1239f114676d9f217879cef8"/>
+<summary>SEVERE THUNDERSTORM WATCH 194 IS IN EFFECT UNTIL 500 AM CDT FOR THE FOLLOWING LOCATIONS IL . ILLINOIS COUNTIES INCLUDED ARE CASS CHAMPAIGN CHRISTIAN COLES CUMBERLAND DE WITT</summary>
+<cap:event>Severe Thunderstorm Watch</cap:event>
+<cap:effective>2023-05-06T22:42:00-05:00</cap:effective>
+<cap:expires>2023-05-07T05:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Severe</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Cass; Champaign; Christian; Coles; Cumberland; De Witt; Douglas; Logan; Macon; Mason; McLean; Menard; Morgan; Moultrie; Peoria; Piatt; Sangamon; Scott; Shelby; Tazewell; Woodford</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>017017 017019 017021 017029 017035 017039 017041 017107 017113 017115 017125 017129 017137 017139 017143 017147 017167 017171 017173 017179 017203</value>
+<valueName>UGC</valueName>
+<value>ILC017 ILC019 ILC021 ILC029 ILC035 ILC039 ILC041 ILC107 ILC113 ILC115 ILC125 ILC129 ILC137 ILC139 ILC143 ILC147 ILC167 ILC171 ILC173 ILC179 ILC203</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.NEW.KWNS.SV.A.0194.230507T0345Z-230507T1000Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -2155,14 +2773,14 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=IL1266482F2A2C.SevereThunderstormWatch.126648300230IL.WNSWOU1.a51f535ff33b60ebf818d1bbd5159925</id>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=IL1266482F2A2C.SevereThunderstormWatch.126648300230IL.WNSWOU1.c9de701bf83c0fe4081afbbb7010a450</id>
 <updated>2023-05-06T20:47:00-05:00</updated>
 <published>2023-05-06T20:47:00-05:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
 <title>Severe Thunderstorm Watch issued May 06 at 8:47PM CDT until May 07 at 2:00AM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=IL1266482F2A2C.SevereThunderstormWatch.126648300230IL.WNSWOU1.a51f535ff33b60ebf818d1bbd5159925"/>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=IL1266482F2A2C.SevereThunderstormWatch.126648300230IL.WNSWOU1.c9de701bf83c0fe4081afbbb7010a450"/>
 <summary>SEVERE THUNDERSTORM WATCH 191 IS IN EFFECT UNTIL 200 AM CDT FOR THE FOLLOWING LOCATIONS IL . ILLINOIS COUNTIES INCLUDED ARE FULTON HANCOCK HENDERSON KNOX MCDONOUGH MERCER</summary>
 <cap:event>Severe Thunderstorm Watch</cap:event>
 <cap:effective>2023-05-06T20:47:00-05:00</cap:effective>
@@ -2173,13 +2791,13 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:urgency>Expected</cap:urgency>
 <cap:severity>Severe</cap:severity>
 <cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Fulton; Hancock; Henderson; Knox; McDonough; Mercer; Schuyler; Warren</cap:areaDesc>
+<cap:areaDesc>Hancock; Henderson; McDonough; Mercer; Warren</cap:areaDesc>
 <cap:polygon></cap:polygon>
 <cap:geocode>
 <valueName>FIPS6</valueName>
-<value>017057 017067 017071 017095 017109 017131 017169 017187</value>
+<value>017067 017071 017109 017131 017187</value>
 <valueName>UGC</valueName>
-<value>ILC057 ILC067 ILC071 ILC095 ILC109 ILC131 ILC169 ILC187</value>
+<value>ILC067 ILC071 ILC109 ILC131 ILC187</value>
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
@@ -2682,397 +3300,131 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=IL126648220108.FloodWarning.1266483EB3E8IL.LSXFLSLSX.ab09142ad92505c1bdf9cbaa9850227a</id>
-<updated>2023-05-06T10:22:00-05:00</updated>
-<published>2023-05-06T10:22:00-05:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=IN1266482F7C98.SevereThunderstormWarning.1266482FB410IN.INDSVRIND.eb735c694cced2faafe6a00b16c9a52e</id>
+<updated>2023-05-06T23:58:00-04:00</updated>
+<published>2023-05-06T23:58:00-04:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Flood Warning issued May 06 at 10:22AM CDT until further notice by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=IL126648220108.FloodWarning.1266483EB3E8IL.LSXFLSLSX.ab09142ad92505c1bdf9cbaa9850227a"/>
-<summary>...The Flood Warning is extended for the following rivers in Missouri...Illinois... Mississippi River at Grafton. ...The Flood Warning continues for the following rivers in Missouri...Illinois... Mississippi River at LaGrange.</summary>
-<cap:event>Flood Warning</cap:event>
-<cap:effective>2023-05-06T10:22:00-05:00</cap:effective>
-<cap:expires>2023-05-07T22:30:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Adams</cap:areaDesc>
-<cap:polygon>40.22,-91.54 40.22,-91.42 40.08,-91.4 40.08,-91.53 40.22,-91.54</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>017001</value>
-<valueName>UGC</valueName>
-<value>ILC001</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KLSX.FL.W.0032.000000T0000Z-000000T0000Z/
-/CANM7.1.SM.230426T0100Z.230504T2300Z.000000T0000Z.NO/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=IL126648220108.FloodWarning.1266483EB3E8IL.LSXFLSLSX.73f41d1237674834b799e71f9cd66b6c</id>
-<updated>2023-05-06T10:22:00-05:00</updated>
-<published>2023-05-06T10:22:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Flood Warning issued May 06 at 10:22AM CDT until further notice by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=IL126648220108.FloodWarning.1266483EB3E8IL.LSXFLSLSX.73f41d1237674834b799e71f9cd66b6c"/>
-<summary>...The Flood Warning is extended for the following rivers in Missouri...Illinois... Mississippi River at Grafton. ...The Flood Warning continues for the following rivers in Missouri...Illinois... Mississippi River at LaGrange.</summary>
-<cap:event>Flood Warning</cap:event>
-<cap:effective>2023-05-06T10:22:00-05:00</cap:effective>
-<cap:expires>2023-05-07T22:30:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Calhoun</cap:areaDesc>
-<cap:polygon>39.22,-90.81 39.23,-90.71 38.88,-90.57 38.81,-90.57 38.87,-90.74 39.22,-90.81</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>017013</value>
-<valueName>UGC</valueName>
-<value>ILC013</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KLSX.FL.W.0034.000000T0000Z-000000T0000Z/
-/CAGM7.2.SM.230426T2100Z.230506T1800Z.000000T0000Z.NO/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=IL126648220108.FloodWarning.1266483EB3E8IL.LSXFLSLSX.d5a79af73fa932ffcb19e5a6e379084a</id>
-<updated>2023-05-06T10:22:00-05:00</updated>
-<published>2023-05-06T10:22:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Flood Warning issued May 06 at 10:22AM CDT until further notice by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=IL126648220108.FloodWarning.1266483EB3E8IL.LSXFLSLSX.d5a79af73fa932ffcb19e5a6e379084a"/>
-<summary>...The Flood Warning is extended for the following rivers in Missouri...Illinois... Mississippi River at Grafton. ...The Flood Warning continues for the following rivers in Missouri...Illinois... Mississippi River at LaGrange.</summary>
-<cap:event>Flood Warning</cap:event>
-<cap:effective>2023-05-06T10:22:00-05:00</cap:effective>
-<cap:expires>2023-05-07T22:30:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Calhoun</cap:areaDesc>
-<cap:polygon>39.39,-90.97 39.45,-90.89 39.38,-90.77 39.23,-90.71 39.22,-90.81 39.39,-90.97</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>017013</value>
-<valueName>UGC</valueName>
-<value>ILC013</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KLSX.FL.W.0029.000000T0000Z-000000T0000Z/
-/CLKM7.1.SM.230424T1500Z.230506T1500Z.000000T0000Z.NO/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=IL126648220108.FloodWarning.1266483EB3E8IL.LSXFLSLSX.4542c89cebb8c6d6f386297b03ed6b88</id>
-<updated>2023-05-06T10:22:00-05:00</updated>
-<published>2023-05-06T10:22:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Flood Warning issued May 06 at 10:22AM CDT until further notice by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=IL126648220108.FloodWarning.1266483EB3E8IL.LSXFLSLSX.4542c89cebb8c6d6f386297b03ed6b88"/>
-<summary>...The Flood Warning is extended for the following rivers in Missouri...Illinois... Mississippi River at Grafton. ...The Flood Warning continues for the following rivers in Missouri...Illinois... Mississippi River at LaGrange.</summary>
-<cap:event>Flood Warning</cap:event>
-<cap:effective>2023-05-06T10:22:00-05:00</cap:effective>
-<cap:expires>2023-05-07T22:30:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Pike</cap:areaDesc>
-<cap:polygon>39.83,-91.48 39.83,-91.35 39.74,-91.21 39.67,-91.35 39.83,-91.48</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>017149</value>
-<valueName>UGC</valueName>
-<value>ILC149</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KLSX.FL.W.0031.000000T0000Z-000000T0000Z/
-/HNNM7.1.SM.230424T1752Z.230506T0330Z.000000T0000Z.NO/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=IL126648220108.FloodWarning.1266483EB3E8IL.LSXFLSLSX.b150a32c16a2bcd1c1ca5b98002b963e</id>
-<updated>2023-05-06T10:22:00-05:00</updated>
-<published>2023-05-06T10:22:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Flood Warning issued May 06 at 10:22AM CDT until further notice by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=IL126648220108.FloodWarning.1266483EB3E8IL.LSXFLSLSX.b150a32c16a2bcd1c1ca5b98002b963e"/>
-<summary>...The Flood Warning is extended for the following rivers in Missouri...Illinois... Mississippi River at Grafton. ...The Flood Warning continues for the following rivers in Missouri...Illinois... Mississippi River at LaGrange.</summary>
-<cap:event>Flood Warning</cap:event>
-<cap:effective>2023-05-06T10:22:00-05:00</cap:effective>
-<cap:expires>2023-05-07T22:30:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Pike</cap:areaDesc>
-<cap:polygon>39.45,-91.11 39.52,-90.97 39.45,-90.89 39.39,-90.97 39.45,-91.11</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>017149</value>
-<valueName>UGC</valueName>
-<value>ILC149</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KLSX.FL.W.0030.000000T0000Z-000000T0000Z/
-/LUSM7.1.SM.230424T2045Z.230505T1700Z.000000T0000Z.NO/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=IL126648220108.FloodWarning.1266483EB3E8IL.LSXFLSLSX.b303b9598040d0df7138dbc45b6f17ca</id>
-<updated>2023-05-06T10:22:00-05:00</updated>
-<published>2023-05-06T10:22:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Flood Warning issued May 06 at 10:22AM CDT until further notice by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=IL126648220108.FloodWarning.1266483EB3E8IL.LSXFLSLSX.b303b9598040d0df7138dbc45b6f17ca"/>
-<summary>...The Flood Warning is extended for the following rivers in Missouri...Illinois... Mississippi River at Grafton. ...The Flood Warning continues for the following rivers in Missouri...Illinois... Mississippi River at LaGrange.</summary>
-<cap:event>Flood Warning</cap:event>
-<cap:effective>2023-05-06T10:22:00-05:00</cap:effective>
-<cap:expires>2023-05-07T22:30:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Pike</cap:areaDesc>
-<cap:polygon>39.67,-91.35 39.74,-91.21 39.7,-91.14 39.52,-90.97 39.45,-91.11 39.67,-91.35</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>017149</value>
-<valueName>UGC</valueName>
-<value>ILC149</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KLSX.FL.W.0033.000000T0000Z-000000T0000Z/
-/SVRM7.2.SM.230425T2338Z.230505T1500Z.000000T0000Z.NO/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=IL126648220108.FloodWarning.1266487D10C0IL.LSXFLSLSX.e68d78fd0ede7050828305b9b40951bd</id>
-<updated>2023-05-06T10:22:00-05:00</updated>
-<published>2023-05-06T10:22:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Flood Warning issued May 06 at 10:22AM CDT until May 12 at 7:00AM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=IL126648220108.FloodWarning.1266487D10C0IL.LSXFLSLSX.e68d78fd0ede7050828305b9b40951bd"/>
-<summary>...The Flood Warning is extended for the following rivers in Missouri...Illinois... Mississippi River at Grafton. ...The Flood Warning continues for the following rivers in Missouri...Illinois... Mississippi River at LaGrange.</summary>
-<cap:event>Flood Warning</cap:event>
-<cap:effective>2023-05-06T10:22:00-05:00</cap:effective>
-<cap:expires>2023-05-12T07:00:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Adams</cap:areaDesc>
-<cap:polygon>40.08,-91.53 40.08,-91.4 39.99,-91.4 39.99,-91.52 40.08,-91.53</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>017001</value>
-<valueName>UGC</valueName>
-<value>ILC001</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.EXT.KLSX.FL.W.0037.000000T0000Z-230512T1200Z/
-/LGRM7.1.SM.230428T2000Z.230505T2245Z.230511T0600Z.NO/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=IL126648220108.FloodWarning.1266487D10C0IL.LSXFLSLSX.d9f885b9395dcf15aec49cf5884ea7b8</id>
-<updated>2023-05-06T10:22:00-05:00</updated>
-<published>2023-05-06T10:22:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Flood Warning issued May 06 at 10:22AM CDT until May 12 at 7:00AM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=IL126648220108.FloodWarning.1266487D10C0IL.LSXFLSLSX.d9f885b9395dcf15aec49cf5884ea7b8"/>
-<summary>...The Flood Warning is extended for the following rivers in Missouri...Illinois... Mississippi River at Grafton. ...The Flood Warning continues for the following rivers in Missouri...Illinois... Mississippi River at LaGrange.</summary>
-<cap:event>Flood Warning</cap:event>
-<cap:effective>2023-05-06T10:22:00-05:00</cap:effective>
-<cap:expires>2023-05-12T07:00:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Jersey</cap:areaDesc>
-<cap:polygon>38.81,-90.57 38.88,-90.57 38.99,-90.46 38.95,-90.28 38.82,-90.48 38.81,-90.57</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>017083</value>
-<valueName>UGC</valueName>
-<value>ILC083</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.EXT.KLSX.FL.W.0038.000000T0000Z-230512T1200Z/
-/GRFI2.1.SM.230503T2000Z.230507T0600Z.230511T0600Z.NO/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=IL126648220108.FloodWarning.1266488BDDD0IL.LSXFLSLSX.457bfda18073af4d8550439dd5b8b9bb</id>
-<updated>2023-05-06T10:22:00-05:00</updated>
-<published>2023-05-06T10:22:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Flood Warning issued May 06 at 10:22AM CDT until May 13 at 4:00AM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=IL126648220108.FloodWarning.1266488BDDD0IL.LSXFLSLSX.457bfda18073af4d8550439dd5b8b9bb"/>
-<summary>...The Flood Warning is extended for the following rivers in Missouri...Illinois... Mississippi River at Grafton. ...The Flood Warning continues for the following rivers in Missouri...Illinois... Mississippi River at LaGrange.</summary>
-<cap:event>Flood Warning</cap:event>
-<cap:effective>2023-05-06T10:22:00-05:00</cap:effective>
-<cap:expires>2023-05-13T04:00:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Adams</cap:areaDesc>
-<cap:polygon>39.99,-91.52 39.99,-91.4 39.91,-91.4 39.91,-91.52 39.99,-91.52</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>017001</value>
-<valueName>UGC</valueName>
-<value>ILC001</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.EXT.KLSX.FL.W.0035.000000T0000Z-230513T0900Z/
-/UINI2.1.SM.230428T1515Z.230505T2245Z.230512T0300Z.NO/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=IL126648220108.FloodWarning.1266488CC830IL.LSXFLSLSX.a1eb0db75202597a7dca3860f0b3a9e6</id>
-<updated>2023-05-06T10:22:00-05:00</updated>
-<published>2023-05-06T10:22:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Flood Warning issued May 06 at 10:22AM CDT until May 13 at 10:00AM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=IL126648220108.FloodWarning.1266488CC830IL.LSXFLSLSX.a1eb0db75202597a7dca3860f0b3a9e6"/>
-<summary>...The Flood Warning is extended for the following rivers in Missouri...Illinois... Mississippi River at Grafton. ...The Flood Warning continues for the following rivers in Missouri...Illinois... Mississippi River at LaGrange.</summary>
-<cap:event>Flood Warning</cap:event>
-<cap:effective>2023-05-06T10:22:00-05:00</cap:effective>
-<cap:expires>2023-05-13T10:00:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Adams</cap:areaDesc>
-<cap:polygon>39.91,-91.52 39.91,-91.4 39.83,-91.35 39.83,-91.48 39.91,-91.52</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>017001</value>
-<valueName>UGC</valueName>
-<value>ILC001</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.EXT.KLSX.FL.W.0036.000000T0000Z-230513T1500Z/
-/QLDI2.1.SM.230428T1045Z.230505T2100Z.230512T0900Z.NO/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=IN1266482F720C.SevereThunderstormWarning.1266482F8D00IN.INDSVSIND.c7ea9384f5f4189113cf5e17a1c63ce8</id>
-<updated>2023-05-06T23:31:00-04:00</updated>
-<published>2023-05-06T23:31:00-04:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Severe Thunderstorm Warning issued May 06 at 11:31PM EDT until May 07 at 12:00AM EDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=IN1266482F720C.SevereThunderstormWarning.1266482F8D00IN.INDSVSIND.c7ea9384f5f4189113cf5e17a1c63ce8"/>
-<summary>...A SEVERE THUNDERSTORM WARNING REMAINS IN EFFECT UNTIL MIDNIGHT EDT FOR FOUNTAIN...CENTRAL WARREN AND NORTH CENTRAL VERMILLION COUNTIES... At 1131 PM EDT, a severe thunderstorm was located over Covington, or 11 miles east of Danville, moving northeast at 20 mph. HAZARD...Two inch hail.</summary>
+<title>Severe Thunderstorm Warning issued May 06 at 11:58PM EDT until May 07 at 1:00AM EDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=IN1266482F7C98.SevereThunderstormWarning.1266482FB410IN.INDSVRIND.eb735c694cced2faafe6a00b16c9a52e"/>
+<summary>The National Weather Service in Indianapolis has issued a * Severe Thunderstorm Warning for... Northern Fountain County in west central Indiana... Southwestern Tippecanoe County in west central Indiana... Central Warren County in west central Indiana... Northwestern Montgomery County in west central Indiana...</summary>
 <cap:event>Severe Thunderstorm Warning</cap:event>
-<cap:effective>2023-05-06T23:31:00-04:00</cap:effective>
-<cap:expires>2023-05-07T00:00:00-04:00</cap:expires>
+<cap:effective>2023-05-06T23:58:00-04:00</cap:effective>
+<cap:expires>2023-05-07T01:00:00-04:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
 <cap:category>Met</cap:category>
 <cap:urgency>Immediate</cap:urgency>
 <cap:severity>Severe</cap:severity>
 <cap:certainty>Observed</cap:certainty>
-<cap:areaDesc>Fountain; Vermillion; Warren</cap:areaDesc>
-<cap:polygon>40.19,-87.53 40.38,-87.09 40.02,-87.09 40.05,-87.45 40.13,-87.5 40.19,-87.53</cap:polygon>
+<cap:areaDesc>Fountain; Montgomery; Tippecanoe; Warren</cap:areaDesc>
+<cap:polygon>40.23,-86.92 40.1,-87.29 40.27,-87.43 40.48,-87.11 40.48,-87.09 40.49,-87.09 40.23,-86.92</cap:polygon>
 <cap:geocode>
 <valueName>FIPS6</valueName>
-<value>018045 018165 018171</value>
+<value>018045 018107 018157 018171</value>
 <valueName>UGC</valueName>
-<value>INC045 INC165 INC171</value>
+<value>INC045 INC107 INC157 INC171</value>
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
-<value>/O.CON.KIND.SV.W.0036.000000T0000Z-230507T0400Z/</value>
+<value>/O.NEW.KIND.SV.W.0037.230507T0358Z-230507T0500Z/</value>
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=IN1266482F720C.SevereWeatherStatement.1266482F8D00IN.INDSVSIND.8cf905aa0610fb7ac2cf155bf34bc049</id>
-<updated>2023-05-06T23:31:00-04:00</updated>
-<published>2023-05-06T23:31:00-04:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=IN1266482F78B0.SpecialWeatherStatement.1266482F98B8IN.IWXSPSIWX.b7d6583648f286f605fb530311a24abe</id>
+<updated>2023-05-06T23:48:00-04:00</updated>
+<published>2023-05-06T23:48:00-04:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Severe Weather Statement issued May 06 at 11:31PM EDT until May 07 at 12:00AM EDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=IN1266482F720C.SevereWeatherStatement.1266482F8D00IN.INDSVSIND.8cf905aa0610fb7ac2cf155bf34bc049"/>
-<summary>...A SEVERE THUNDERSTORM WARNING REMAINS IN EFFECT UNTIL MIDNIGHT EDT FOR FOUNTAIN...CENTRAL WARREN AND NORTH CENTRAL VERMILLION COUNTIES... At 1131 PM EDT, a severe thunderstorm was located over Covington, or 11 miles east of Danville, moving northeast at 20 mph. HAZARD...Two inch hail.</summary>
-<cap:event>Severe Weather Statement</cap:event>
-<cap:effective>2023-05-06T23:31:00-04:00</cap:effective>
-<cap:expires>2023-05-07T00:00:00-04:00</cap:expires>
+<title>Special Weather Statement issued May 06 at 11:48PM EDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=IN1266482F78B0.SpecialWeatherStatement.1266482F98B8IN.IWXSPSIWX.b7d6583648f286f605fb530311a24abe"/>
+<summary>...A strong thunderstorm will impact portions of northwestern St. Joseph, northern La Porte and southwestern Berrien Counties through 1230 AM EDT/1130 PM CDT/... At 1148 PM EDT/1048 PM CDT/, Doppler radar was tracking a strong thunderstorm over Michigan City, moving east at 40 mph. HAZARD...Winds in excess of 30 mph and half inch hail.</summary>
+<cap:event>Special Weather Statement</cap:event>
+<cap:effective>2023-05-06T23:48:00-04:00</cap:effective>
+<cap:expires>2023-05-07T00:30:00-04:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
 <cap:category>Met</cap:category>
-<cap:urgency>Immediate</cap:urgency>
-<cap:severity>Severe</cap:severity>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
 <cap:certainty>Observed</cap:certainty>
-<cap:areaDesc>Fountain; Vermillion; Warren</cap:areaDesc>
-<cap:polygon>40.19,-87.53 40.38,-87.09 40.02,-87.09 40.05,-87.45 40.13,-87.5 40.19,-87.53</cap:polygon>
+<cap:areaDesc>Northern La Porte; Western St. Joseph</cap:areaDesc>
+<cap:polygon>41.73,-86.91 41.75,-86.92 41.83,-86.78 41.86,-86.73 41.98,-86.4 41.73,-86.36 41.69,-86.36 41.59,-86.93 41.71,-86.93 41.73,-86.91</cap:polygon>
 <cap:geocode>
 <valueName>FIPS6</valueName>
-<value>018045 018165 018171</value>
+<value>018091 018141</value>
 <valueName>UGC</valueName>
-<value>INC045 INC165 INC171</value>
+<value>INZ103 INZ204</value>
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
-<value>/O.CON.KIND.SV.W.0036.000000T0000Z-230507T0400Z/</value>
+<value></value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=IN1266482F7784.SpecialWeatherStatement.1266482F9E94IN.INDSPSIND.b4673c42f8f3cdf6037c140df496634f</id>
+<updated>2023-05-06T23:45:00-04:00</updated>
+<published>2023-05-06T23:45:00-04:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Special Weather Statement issued May 06 at 11:45PM EDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=IN1266482F7784.SpecialWeatherStatement.1266482F9E94IN.INDSPSIND.b4673c42f8f3cdf6037c140df496634f"/>
+<summary>...A strong thunderstorm will impact portions of Montgomery County through 1245 AM EDT... At 1145 PM EDT, Doppler radar was tracking a strong thunderstorm 7 miles southwest of Crawfordsville, moving east at 20 mph. HAZARD...Nickel size hail. SOURCE...Radar indicated.</summary>
+<cap:event>Special Weather Statement</cap:event>
+<cap:effective>2023-05-06T23:45:00-04:00</cap:effective>
+<cap:expires>2023-05-07T00:45:00-04:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Observed</cap:certainty>
+<cap:areaDesc>Montgomery</cap:areaDesc>
+<cap:polygon>40.04,-87.09 40.16,-86.7 39.87,-86.69 39.88,-87.09 40.04,-87.09</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>018107</value>
+<valueName>UGC</valueName>
+<value>INZ036</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value></value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=IN1266482F7590.SpecialWeatherStatement.1266482F98B8IN.IWXSPSIWX.4ef058bc48fb5107abec56bad3cb5273</id>
+<updated>2023-05-06T23:40:00-04:00</updated>
+<published>2023-05-06T23:40:00-04:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Special Weather Statement issued May 06 at 11:40PM EDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=IN1266482F7590.SpecialWeatherStatement.1266482F98B8IN.IWXSPSIWX.4ef058bc48fb5107abec56bad3cb5273"/>
+<summary>...Strong thunderstorms will impact portions of northeastern White, western Fulton, Pulaski, northwestern Cass, southern Starke and southwestern Marshall Counties through 1230 AM EDT/1130 PM CDT/... At 1139 PM EDT/1039 PM CDT/, Doppler radar was tracking strong thunderstorms along a line extending from near North Judson to near Monon. Movement was east at 35 mph.</summary>
+<cap:event>Special Weather Statement</cap:event>
+<cap:effective>2023-05-06T23:40:00-04:00</cap:effective>
+<cap:expires>2023-05-07T00:30:00-04:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Observed</cap:certainty>
+<cap:areaDesc>Cass; Fulton; Marshall; Pulaski; Starke; White</cap:areaDesc>
+<cap:polygon>40.91,-86.93 41.24,-86.93 41.25,-86.9 41.28,-86.3 40.82,-86.33 40.87,-86.99 40.91,-86.99 40.91,-86.93</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>018017 018049 018099 018131 018149 018181</value>
+<valueName>UGC</valueName>
+<value>INZ012 INZ013 INZ014 INZ015 INZ020 INZ022</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value></value>
 </cap:parameter>
 </entry>
 <entry>
@@ -3109,14 +3461,46 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=MI1266482F7144.SpecialWeatherStatement.1266482F92DCMI.IWXSPSIWX.f23a480072fc8b2eb1148040dbade3bc</id>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=MI1266482F78B0.SpecialWeatherStatement.1266482F98B8MI.IWXSPSIWX.6eef20dbec1994324556a1232142d629</id>
+<updated>2023-05-06T23:48:00-04:00</updated>
+<published>2023-05-06T23:48:00-04:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Special Weather Statement issued May 06 at 11:48PM EDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MI1266482F78B0.SpecialWeatherStatement.1266482F98B8MI.IWXSPSIWX.6eef20dbec1994324556a1232142d629"/>
+<summary>...A strong thunderstorm will impact portions of northwestern St. Joseph, northern La Porte and southwestern Berrien Counties through 1230 AM EDT/1130 PM CDT/... At 1148 PM EDT/1048 PM CDT/, Doppler radar was tracking a strong thunderstorm over Michigan City, moving east at 40 mph. HAZARD...Winds in excess of 30 mph and half inch hail.</summary>
+<cap:event>Special Weather Statement</cap:event>
+<cap:effective>2023-05-06T23:48:00-04:00</cap:effective>
+<cap:expires>2023-05-07T00:30:00-04:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Observed</cap:certainty>
+<cap:areaDesc>Southern Berrien</cap:areaDesc>
+<cap:polygon>41.73,-86.91 41.75,-86.92 41.83,-86.78 41.86,-86.73 41.98,-86.4 41.73,-86.36 41.69,-86.36 41.59,-86.93 41.71,-86.93 41.73,-86.91</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>026021</value>
+<valueName>UGC</valueName>
+<value>MIZ277</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value></value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=MI1266482F7144.SpecialWeatherStatement.1266482F92DCMI.IWXSPSIWX.bc4293be7f6c946f2475f09dffe26cba</id>
 <updated>2023-05-06T23:29:00-04:00</updated>
 <published>2023-05-06T23:29:00-04:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
 <title>Special Weather Statement issued May 06 at 11:29PM EDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MI1266482F7144.SpecialWeatherStatement.1266482F92DCMI.IWXSPSIWX.f23a480072fc8b2eb1148040dbade3bc"/>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MI1266482F7144.SpecialWeatherStatement.1266482F92DCMI.IWXSPSIWX.bc4293be7f6c946f2475f09dffe26cba"/>
 <summary>...A strong thunderstorm will impact portions of southeastern Berrien County through 1215 AM EDT... At 1128 PM EDT, Doppler radar was tracking a strong thunderstorm near New Buffalo, or 11 miles north of Michigan City, moving northeast at 45 mph. HAZARD...Half inch hail.</summary>
 <cap:event>Special Weather Statement</cap:event>
 <cap:effective>2023-05-06T23:29:00-04:00</cap:effective>
@@ -3127,13 +3511,13 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:urgency>Expected</cap:urgency>
 <cap:severity>Minor</cap:severity>
 <cap:certainty>Observed</cap:certainty>
-<cap:areaDesc>Northern Berrien; Southern Berrien</cap:areaDesc>
+<cap:areaDesc>Northern Berrien</cap:areaDesc>
 <cap:polygon>41.98,-86.22 41.75,-86.84 41.78,-86.86 41.83,-86.78 41.92,-86.66 42.12,-86.54 42.12,-86.49 42.24,-86.37 42.24,-86.35 41.98,-86.22</cap:polygon>
 <cap:geocode>
 <valueName>FIPS6</valueName>
 <value>026021</value>
 <valueName>UGC</valueName>
-<value>MIZ177 MIZ277</value>
+<value>MIZ177</value>
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
@@ -4064,163 +4448,398 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=MO1266482F720C.SevereThunderstormWarning.1266482F8D00MO.LSXSVSLSX.6befee45aa15ce94e0316b47bee3d073</id>
-<updated>2023-05-06T22:31:00-05:00</updated>
-<published>2023-05-06T22:31:00-05:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=MO1266482F8D00.FloodWarning.12664840A400MO.LSXFLSLSX.2ce1a55e7f1fc3b46c956279a954dfc7</id>
+<updated>2023-05-06T23:00:00-05:00</updated>
+<published>2023-05-06T23:00:00-05:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Severe Thunderstorm Warning issued May 06 at 10:31PM CDT until May 06 at 11:00PM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MO1266482F720C.SevereThunderstormWarning.1266482F8D00MO.LSXSVSLSX.6befee45aa15ce94e0316b47bee3d073"/>
-<summary>...A SEVERE THUNDERSTORM WARNING REMAINS IN EFFECT UNTIL 1100 PM CDT FOR SOUTHWESTERN SHELBY AND NORTHWESTERN MONROE COUNTIES... At 1030 PM CDT, a severe thunderstorm was located over Maud, moving east at 25 mph. HAZARD...60 mph wind gusts and half dollar size hail. SOURCE...Radar indicated.</summary>
-<cap:event>Severe Thunderstorm Warning</cap:event>
-<cap:effective>2023-05-06T22:31:00-05:00</cap:effective>
-<cap:expires>2023-05-06T23:00:00-05:00</cap:expires>
+<title>Flood Warning issued May 06 at 11:00PM CDT until further notice by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MO1266482F8D00.FloodWarning.12664840A400MO.LSXFLSLSX.2ce1a55e7f1fc3b46c956279a954dfc7"/>
+<summary>...The Flood Warning is extended for the following rivers in Missouri...Illinois... Mississippi River at Grafton. Mississippi River at LaGrange. ...The Flood Warning continues for the following rivers in Missouri...Illinois...</summary>
+<cap:event>Flood Warning</cap:event>
+<cap:effective>2023-05-06T23:00:00-05:00</cap:effective>
+<cap:expires>2023-05-08T11:00:00-05:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
 <cap:category>Met</cap:category>
-<cap:urgency>Immediate</cap:urgency>
-<cap:severity>Severe</cap:severity>
-<cap:certainty>Observed</cap:certainty>
-<cap:areaDesc>Monroe; Shelby</cap:areaDesc>
-<cap:polygon>39.77,-92.29 39.7,-91.97 39.51,-92.08 39.61,-92.3 39.77,-92.29</cap:polygon>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Lewis</cap:areaDesc>
+<cap:polygon>40.22,-91.54 40.22,-91.42 40.08,-91.4 40.08,-91.53 40.22,-91.54</cap:polygon>
 <cap:geocode>
 <valueName>FIPS6</valueName>
-<value>029137 029205</value>
+<value>029111</value>
 <valueName>UGC</valueName>
-<value>MOC137 MOC205</value>
+<value>MOC111</value>
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
-<value>/O.CON.KLSX.SV.W.0103.000000T0000Z-230507T0400Z/</value>
+<value>/O.CON.KLSX.FL.W.0032.000000T0000Z-000000T0000Z/
+/CANM7.1.SM.230426T0100Z.230504T2300Z.000000T0000Z.NO/</value>
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=MO1266482F720C.SevereWeatherStatement.1266482F8D00MO.LSXSVSLSX.eb001334d6af164a23fb4e99def906e0</id>
-<updated>2023-05-06T22:31:00-05:00</updated>
-<published>2023-05-06T22:31:00-05:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=MO1266482F8D00.FloodWarning.12664840A400MO.LSXFLSLSX.57485b8967a30d9c3097c786a954b696</id>
+<updated>2023-05-06T23:00:00-05:00</updated>
+<published>2023-05-06T23:00:00-05:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Severe Weather Statement issued May 06 at 10:31PM CDT until May 06 at 11:00PM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MO1266482F720C.SevereWeatherStatement.1266482F8D00MO.LSXSVSLSX.eb001334d6af164a23fb4e99def906e0"/>
-<summary>...A SEVERE THUNDERSTORM WARNING REMAINS IN EFFECT UNTIL 1100 PM CDT FOR SOUTHWESTERN SHELBY AND NORTHWESTERN MONROE COUNTIES... At 1030 PM CDT, a severe thunderstorm was located over Maud, moving east at 25 mph. HAZARD...60 mph wind gusts and half dollar size hail. SOURCE...Radar indicated.</summary>
-<cap:event>Severe Weather Statement</cap:event>
-<cap:effective>2023-05-06T22:31:00-05:00</cap:effective>
-<cap:expires>2023-05-06T23:00:00-05:00</cap:expires>
+<title>Flood Warning issued May 06 at 11:00PM CDT until further notice by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MO1266482F8D00.FloodWarning.12664840A400MO.LSXFLSLSX.57485b8967a30d9c3097c786a954b696"/>
+<summary>...The Flood Warning is extended for the following rivers in Missouri...Illinois... Mississippi River at Grafton. Mississippi River at LaGrange. ...The Flood Warning continues for the following rivers in Missouri...Illinois...</summary>
+<cap:event>Flood Warning</cap:event>
+<cap:effective>2023-05-06T23:00:00-05:00</cap:effective>
+<cap:expires>2023-05-08T11:00:00-05:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
 <cap:category>Met</cap:category>
-<cap:urgency>Immediate</cap:urgency>
-<cap:severity>Severe</cap:severity>
-<cap:certainty>Observed</cap:certainty>
-<cap:areaDesc>Monroe; Shelby</cap:areaDesc>
-<cap:polygon>39.77,-92.29 39.7,-91.97 39.51,-92.08 39.61,-92.3 39.77,-92.29</cap:polygon>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Lincoln</cap:areaDesc>
+<cap:polygon>39.22,-90.81 39.23,-90.71 38.88,-90.57 38.81,-90.57 38.87,-90.74 39.22,-90.81</cap:polygon>
 <cap:geocode>
 <valueName>FIPS6</valueName>
-<value>029137 029205</value>
+<value>029113</value>
 <valueName>UGC</valueName>
-<value>MOC137 MOC205</value>
+<value>MOC113</value>
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
-<value>/O.CON.KLSX.SV.W.0103.000000T0000Z-230507T0400Z/</value>
+<value>/O.CON.KLSX.FL.W.0034.000000T0000Z-000000T0000Z/
+/CAGM7.2.SM.230426T2100Z.230507T1800Z.000000T0000Z.NO/</value>
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=MO1266482F6B68.SevereThunderstormWarning.1266482F7784MO.EAXSVREAX.fb833f443903660cdbf75022d2b2a583</id>
-<updated>2023-05-06T22:14:00-05:00</updated>
-<published>2023-05-06T22:14:00-05:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=MO1266482F8D00.FloodWarning.12664840A400MO.LSXFLSLSX.fcf3f9dca7e59fbd54cfd1eeb7bbfed8</id>
+<updated>2023-05-06T23:00:00-05:00</updated>
+<published>2023-05-06T23:00:00-05:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Severe Thunderstorm Warning issued May 06 at 10:14PM CDT until May 06 at 10:45PM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MO1266482F6B68.SevereThunderstormWarning.1266482F7784MO.EAXSVREAX.fb833f443903660cdbf75022d2b2a583"/>
-<summary>The National Weather Service in Pleasant Hill has issued a * Severe Thunderstorm Warning for... Southeastern Macon County in north central Missouri... * Until 1045 PM CDT. * At 1013 PM CDT, a severe thunderstorm was located near Clarence, or near Macon, moving east at 30 mph.</summary>
-<cap:event>Severe Thunderstorm Warning</cap:event>
-<cap:effective>2023-05-06T22:14:00-05:00</cap:effective>
-<cap:expires>2023-05-06T22:45:00-05:00</cap:expires>
+<title>Flood Warning issued May 06 at 11:00PM CDT until further notice by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MO1266482F8D00.FloodWarning.12664840A400MO.LSXFLSLSX.fcf3f9dca7e59fbd54cfd1eeb7bbfed8"/>
+<summary>...The Flood Warning is extended for the following rivers in Missouri...Illinois... Mississippi River at Grafton. Mississippi River at LaGrange. ...The Flood Warning continues for the following rivers in Missouri...Illinois...</summary>
+<cap:event>Flood Warning</cap:event>
+<cap:effective>2023-05-06T23:00:00-05:00</cap:effective>
+<cap:expires>2023-05-08T11:00:00-05:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
 <cap:category>Met</cap:category>
-<cap:urgency>Immediate</cap:urgency>
-<cap:severity>Severe</cap:severity>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Marion</cap:areaDesc>
+<cap:polygon>39.83,-91.48 39.83,-91.35 39.74,-91.21 39.67,-91.35 39.83,-91.48</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>029127</value>
+<valueName>UGC</valueName>
+<value>MOC127</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KLSX.FL.W.0031.000000T0000Z-000000T0000Z/
+/HNNM7.1.SM.230424T1752Z.230506T0330Z.000000T0000Z.NO/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=MO1266482F8D00.FloodWarning.12664840A400MO.LSXFLSLSX.d7b4c771750d31233792a1d34df23291</id>
+<updated>2023-05-06T23:00:00-05:00</updated>
+<published>2023-05-06T23:00:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Flood Warning issued May 06 at 11:00PM CDT until further notice by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MO1266482F8D00.FloodWarning.12664840A400MO.LSXFLSLSX.d7b4c771750d31233792a1d34df23291"/>
+<summary>...The Flood Warning is extended for the following rivers in Missouri...Illinois... Mississippi River at Grafton. Mississippi River at LaGrange. ...The Flood Warning continues for the following rivers in Missouri...Illinois...</summary>
+<cap:event>Flood Warning</cap:event>
+<cap:effective>2023-05-06T23:00:00-05:00</cap:effective>
+<cap:expires>2023-05-08T11:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Pike</cap:areaDesc>
+<cap:polygon>39.39,-90.97 39.45,-90.89 39.38,-90.77 39.23,-90.71 39.22,-90.81 39.39,-90.97</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>029163</value>
+<valueName>UGC</valueName>
+<value>MOC163</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KLSX.FL.W.0029.000000T0000Z-000000T0000Z/
+/CLKM7.1.SM.230424T1500Z.230507T0600Z.000000T0000Z.NO/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=MO1266482F8D00.FloodWarning.12664840A400MO.LSXFLSLSX.bc68fbf5484ea988bd1c22dfcd5f43e1</id>
+<updated>2023-05-06T23:00:00-05:00</updated>
+<published>2023-05-06T23:00:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Flood Warning issued May 06 at 11:00PM CDT until further notice by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MO1266482F8D00.FloodWarning.12664840A400MO.LSXFLSLSX.bc68fbf5484ea988bd1c22dfcd5f43e1"/>
+<summary>...The Flood Warning is extended for the following rivers in Missouri...Illinois... Mississippi River at Grafton. Mississippi River at LaGrange. ...The Flood Warning continues for the following rivers in Missouri...Illinois...</summary>
+<cap:event>Flood Warning</cap:event>
+<cap:effective>2023-05-06T23:00:00-05:00</cap:effective>
+<cap:expires>2023-05-08T11:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Pike</cap:areaDesc>
+<cap:polygon>39.45,-91.11 39.52,-90.97 39.45,-90.89 39.39,-90.97 39.45,-91.11</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>029163</value>
+<valueName>UGC</valueName>
+<value>MOC163</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KLSX.FL.W.0030.000000T0000Z-000000T0000Z/
+/LUSM7.1.SM.230424T2045Z.230506T2000Z.000000T0000Z.NO/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=MO1266482F8D00.FloodWarning.12664840A400MO.LSXFLSLSX.78165663433819205cbe68bb9e4a159b</id>
+<updated>2023-05-06T23:00:00-05:00</updated>
+<published>2023-05-06T23:00:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Flood Warning issued May 06 at 11:00PM CDT until further notice by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MO1266482F8D00.FloodWarning.12664840A400MO.LSXFLSLSX.78165663433819205cbe68bb9e4a159b"/>
+<summary>...The Flood Warning is extended for the following rivers in Missouri...Illinois... Mississippi River at Grafton. Mississippi River at LaGrange. ...The Flood Warning continues for the following rivers in Missouri...Illinois...</summary>
+<cap:event>Flood Warning</cap:event>
+<cap:effective>2023-05-06T23:00:00-05:00</cap:effective>
+<cap:expires>2023-05-08T11:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Ralls</cap:areaDesc>
+<cap:polygon>39.67,-91.35 39.74,-91.21 39.7,-91.14 39.52,-90.97 39.45,-91.11 39.67,-91.35</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>029173</value>
+<valueName>UGC</valueName>
+<value>MOC173</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KLSX.FL.W.0033.000000T0000Z-000000T0000Z/
+/SVRM7.2.SM.230425T2338Z.230506T2300Z.000000T0000Z.NO/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=MO1266482F8D00.FloodWarning.1266487DFB20MO.LSXFLSLSX.a3891b27f0e856e4a4e9a86a2ca0cba5</id>
+<updated>2023-05-06T23:00:00-05:00</updated>
+<published>2023-05-06T23:00:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Flood Warning issued May 06 at 11:00PM CDT until May 12 at 1:00PM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MO1266482F8D00.FloodWarning.1266487DFB20MO.LSXFLSLSX.a3891b27f0e856e4a4e9a86a2ca0cba5"/>
+<summary>...The Flood Warning is extended for the following rivers in Missouri...Illinois... Mississippi River at Grafton. Mississippi River at LaGrange. ...The Flood Warning continues for the following rivers in Missouri...Illinois...</summary>
+<cap:event>Flood Warning</cap:event>
+<cap:effective>2023-05-06T23:00:00-05:00</cap:effective>
+<cap:expires>2023-05-12T13:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Lewis</cap:areaDesc>
+<cap:polygon>40.08,-91.53 40.08,-91.4 39.99,-91.4 39.99,-91.52 40.08,-91.53</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>029111</value>
+<valueName>UGC</valueName>
+<value>MOC111</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.EXT.KLSX.FL.W.0037.000000T0000Z-230512T1800Z/
+/LGRM7.1.SM.230428T2000Z.230505T2245Z.230511T1200Z.NO/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=MO1266482F8D00.FloodWarning.1266487DFB20MO.LSXFLSLSX.260be8796d354cff5ab6b9daee995db4</id>
+<updated>2023-05-06T23:00:00-05:00</updated>
+<published>2023-05-06T23:00:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Flood Warning issued May 06 at 11:00PM CDT until May 12 at 1:00PM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MO1266482F8D00.FloodWarning.1266487DFB20MO.LSXFLSLSX.260be8796d354cff5ab6b9daee995db4"/>
+<summary>...The Flood Warning is extended for the following rivers in Missouri...Illinois... Mississippi River at Grafton. Mississippi River at LaGrange. ...The Flood Warning continues for the following rivers in Missouri...Illinois...</summary>
+<cap:event>Flood Warning</cap:event>
+<cap:effective>2023-05-06T23:00:00-05:00</cap:effective>
+<cap:expires>2023-05-12T13:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>St. Charles</cap:areaDesc>
+<cap:polygon>38.81,-90.57 38.88,-90.57 38.99,-90.46 38.95,-90.28 38.82,-90.48 38.81,-90.57</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>029183</value>
+<valueName>UGC</valueName>
+<value>MOC183</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.EXT.KLSX.FL.W.0038.000000T0000Z-230512T1800Z/
+/GRFI2.1.SM.230503T2000Z.230508T1800Z.230511T1200Z.NO/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=MO1266482F8D00.FloodWarning.1266488B68A0MO.LSXFLSLSX.ca3e493acc9045e9fc53b61b1084ceab</id>
+<updated>2023-05-06T23:00:00-05:00</updated>
+<published>2023-05-06T23:00:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Flood Warning issued May 06 at 11:00PM CDT until May 13 at 1:00AM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MO1266482F8D00.FloodWarning.1266488B68A0MO.LSXFLSLSX.ca3e493acc9045e9fc53b61b1084ceab"/>
+<summary>...The Flood Warning is extended for the following rivers in Missouri...Illinois... Mississippi River at Grafton. Mississippi River at LaGrange. ...The Flood Warning continues for the following rivers in Missouri...Illinois...</summary>
+<cap:event>Flood Warning</cap:event>
+<cap:effective>2023-05-06T23:00:00-05:00</cap:effective>
+<cap:expires>2023-05-13T01:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Marion</cap:areaDesc>
+<cap:polygon>39.99,-91.52 39.99,-91.4 39.91,-91.4 39.91,-91.52 39.99,-91.52</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>029127</value>
+<valueName>UGC</valueName>
+<value>MOC127</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.EXT.KLSX.FL.W.0035.000000T0000Z-230513T0600Z/
+/UINI2.1.SM.230428T1515Z.230505T2245Z.230512T0000Z.NO/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=MO1266482F8D00.FloodWarning.1266488CC830MO.LSXFLSLSX.addacb5bf42fd9dbcfff9d27d5b039d3</id>
+<updated>2023-05-06T23:00:00-05:00</updated>
+<published>2023-05-06T23:00:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Flood Warning issued May 06 at 11:00PM CDT until May 13 at 10:00AM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MO1266482F8D00.FloodWarning.1266488CC830MO.LSXFLSLSX.addacb5bf42fd9dbcfff9d27d5b039d3"/>
+<summary>...The Flood Warning is extended for the following rivers in Missouri...Illinois... Mississippi River at Grafton. Mississippi River at LaGrange. ...The Flood Warning continues for the following rivers in Missouri...Illinois...</summary>
+<cap:event>Flood Warning</cap:event>
+<cap:effective>2023-05-06T23:00:00-05:00</cap:effective>
+<cap:expires>2023-05-13T10:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Marion</cap:areaDesc>
+<cap:polygon>39.91,-91.52 39.91,-91.4 39.83,-91.35 39.83,-91.48 39.91,-91.52</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>029127</value>
+<valueName>UGC</valueName>
+<value>MOC127</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KLSX.FL.W.0036.000000T0000Z-230513T1500Z/
+/QLDI2.1.SM.230428T1045Z.230505T2100Z.230512T0900Z.NO/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=MO1266482F77E8.FloodWarning.1266487D10C0MO.LSXFLSLSX.df7a71aae75f1a7e8de2f8558f134b99</id>
+<updated>2023-05-06T22:46:00-05:00</updated>
+<published>2023-05-06T22:46:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Flood Warning issued May 06 at 10:46PM CDT until May 12 at 7:00AM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MO1266482F77E8.FloodWarning.1266487D10C0MO.LSXFLSLSX.df7a71aae75f1a7e8de2f8558f134b99"/>
+<summary>...The Flood Warning continues for the following rivers in Missouri... Cuivre River at Old Monroe. River forecasts are based on observed precipitation and forecast precipitation for the next 24 hours. ...FLOOD WARNING FOR SNOWMELT REMAINS IN EFFECT UNTIL FRIDAY</summary>
+<cap:event>Flood Warning</cap:event>
+<cap:effective>2023-05-06T22:46:00-05:00</cap:effective>
+<cap:expires>2023-05-12T07:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Lincoln</cap:areaDesc>
+<cap:polygon>38.92,-90.81 38.94,-90.7 38.92,-90.7 38.9,-90.8 38.92,-90.81</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>029113</value>
+<valueName>UGC</valueName>
+<value>MOC113</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KLSX.FL.W.0040.000000T0000Z-230512T1200Z/
+/OMNM7.1.SM.230503T0315Z.230507T0230Z.230511T0000Z.NO/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=MO1266482F76BC.SpecialWeatherStatement.1266482F92DCMO.EAXSPSEAX.0bcd0780d61279c85aa9881e0a925324</id>
+<updated>2023-05-06T22:43:00-05:00</updated>
+<published>2023-05-06T22:43:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Special Weather Statement issued May 06 at 10:43PM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MO1266482F76BC.SpecialWeatherStatement.1266482F92DCMO.EAXSPSEAX.0bcd0780d61279c85aa9881e0a925324"/>
+<summary>...A strong thunderstorm will impact portions of east central Macon County through 1115 PM CDT... At 1043 PM CDT, Doppler radar was tracking a strong thunderstorm near Clarence, or 9 miles east of Macon, moving east at 25 mph. HAZARD...Winds in excess of 40 mph and nickel size hail. SOURCE...Radar indicated.</summary>
+<cap:event>Special Weather Statement</cap:event>
+<cap:effective>2023-05-06T22:43:00-05:00</cap:effective>
+<cap:expires>2023-05-06T23:15:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
 <cap:certainty>Observed</cap:certainty>
 <cap:areaDesc>Macon</cap:areaDesc>
-<cap:polygon>39.61,-92.3 39.62,-92.4 39.65,-92.48 39.76,-92.49 39.81,-92.46 39.79,-92.29 39.61,-92.3</cap:polygon>
+<cap:polygon>39.7,-92.41 39.83,-92.45 39.84,-92.29 39.7,-92.29 39.7,-92.41</cap:polygon>
 <cap:geocode>
 <valueName>FIPS6</valueName>
 <value>029121</value>
 <valueName>UGC</valueName>
-<value>MOC121</value>
+<value>MOZ025</value>
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
-<value>/O.NEW.KEAX.SV.W.0083.230507T0314Z-230507T0345Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=MO1266482F2C84.TornadoWatch.1266482F8D00MO.EAXWCNEAX.08a8584a30546fc70dce73c95bf6f6bd</id>
-<updated>2023-05-06T20:53:00-05:00</updated>
-<published>2023-05-06T20:53:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Tornado Watch issued May 06 at 8:53PM CDT until May 06 at 11:00PM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MO1266482F2C84.TornadoWatch.1266482F8D00MO.EAXWCNEAX.08a8584a30546fc70dce73c95bf6f6bd"/>
-<summary>TORNADO WATCH 190 REMAINS VALID UNTIL 11 PM CDT THIS EVENING FOR THE FOLLOWING AREAS IN MISSOURI THIS WATCH INCLUDES 6 COUNTIES IN NORTH CENTRAL MISSOURI LINN MO MACON PUTNAM SULLIVAN</summary>
-<cap:event>Tornado Watch</cap:event>
-<cap:effective>2023-05-06T20:53:00-05:00</cap:effective>
-<cap:expires>2023-05-06T23:00:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Severe</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Adair; Linn; Macon; Putnam; Schuyler; Sullivan</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>029001 029115 029121 029171 029197 029211</value>
-<valueName>UGC</valueName>
-<value>MOC001 MOC115 MOC121 MOC171 MOC197 MOC211</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KEAX.TO.A.0190.000000T0000Z-230507T0400Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=MO1266482F2C84.TornadoWatch.1266482F8D00MO.EAXWCNEAX.eb454f8e5660dd91f42b45e06c7b9aaa</id>
-<updated>2023-05-06T20:53:00-05:00</updated>
-<published>2023-05-06T20:53:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Tornado Watch issued May 06 at 8:53PM CDT until May 06 at 11:00PM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MO1266482F2C84.TornadoWatch.1266482F8D00MO.EAXWCNEAX.eb454f8e5660dd91f42b45e06c7b9aaa"/>
-<summary>THE NATIONAL WEATHER SERVICE HAS EXTENDED TORNADO WATCH 190 TO INCLUDE THE FOLLOWING AREAS UNTIL 11 PM CDT THIS EVENING IN MISSOURI THIS WATCH INCLUDES 1 COUNTY IN NORTH CENTRAL MISSOURI RANDOLPH THIS INCLUDES THE CITIES OF MOBERLY.</summary>
-<cap:event>Tornado Watch</cap:event>
-<cap:effective>2023-05-06T20:53:00-05:00</cap:effective>
-<cap:expires>2023-05-06T23:00:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Severe</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Randolph</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>029175</value>
-<valueName>UGC</valueName>
-<value>MOC175</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.EXA.KEAX.TO.A.0190.000000T0000Z-230507T0400Z/</value>
+<value></value>
 </cap:parameter>
 </entry>
 <entry>
@@ -4354,366 +4973,35 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=MO126648220108.FloodWarning.1266483EB3E8MO.LSXFLSLSX.2ce1a55e7f1fc3b46c956279a954dfc7</id>
-<updated>2023-05-06T10:22:00-05:00</updated>
-<published>2023-05-06T10:22:00-05:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=MT1266482F7784.SpecialWeatherStatement.1266482F92DCMT.BYZSPSBYZ.ac576c7a8cedeeeb6e9b83e18f3660ed</id>
+<updated>2023-05-06T21:45:00-06:00</updated>
+<published>2023-05-06T21:45:00-06:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Flood Warning issued May 06 at 10:22AM CDT until further notice by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MO126648220108.FloodWarning.1266483EB3E8MO.LSXFLSLSX.2ce1a55e7f1fc3b46c956279a954dfc7"/>
-<summary>...The Flood Warning is extended for the following rivers in Missouri...Illinois... Mississippi River at Grafton. ...The Flood Warning continues for the following rivers in Missouri...Illinois... Mississippi River at LaGrange.</summary>
-<cap:event>Flood Warning</cap:event>
-<cap:effective>2023-05-06T10:22:00-05:00</cap:effective>
-<cap:expires>2023-05-07T22:30:00-05:00</cap:expires>
+<title>Special Weather Statement issued May 06 at 9:45PM MDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MT1266482F7784.SpecialWeatherStatement.1266482F92DCMT.BYZSPSBYZ.ac576c7a8cedeeeb6e9b83e18f3660ed"/>
+<summary>...A strong thunderstorm will impact portions of northern Rosebud County through 1015 PM MDT... At 941 PM MDT, Doppler radar was tracking a strong thunderstorm 8 miles east of Melstone, or 28 miles northwest of Hysham. This storm was nearly stationary. HAZARD...Pea size hail.</summary>
+<cap:event>Special Weather Statement</cap:event>
+<cap:effective>2023-05-06T21:45:00-06:00</cap:effective>
+<cap:expires>2023-05-06T22:15:00-06:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
 <cap:category>Met</cap:category>
 <cap:urgency>Expected</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Lewis</cap:areaDesc>
-<cap:polygon>40.22,-91.54 40.22,-91.42 40.08,-91.4 40.08,-91.53 40.22,-91.54</cap:polygon>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Observed</cap:certainty>
+<cap:areaDesc>Northern Rosebud</cap:areaDesc>
+<cap:polygon>46.49,-107.74 46.64,-107.81 46.74,-107.68 46.54,-107.47 46.49,-107.74</cap:polygon>
 <cap:geocode>
 <valueName>FIPS6</valueName>
-<value>029111</value>
+<value>030087</value>
 <valueName>UGC</valueName>
-<value>MOC111</value>
+<value>MTZ031</value>
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
-<value>/O.CON.KLSX.FL.W.0032.000000T0000Z-000000T0000Z/
-/CANM7.1.SM.230426T0100Z.230504T2300Z.000000T0000Z.NO/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=MO126648220108.FloodWarning.1266483EB3E8MO.LSXFLSLSX.57485b8967a30d9c3097c786a954b696</id>
-<updated>2023-05-06T10:22:00-05:00</updated>
-<published>2023-05-06T10:22:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Flood Warning issued May 06 at 10:22AM CDT until further notice by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MO126648220108.FloodWarning.1266483EB3E8MO.LSXFLSLSX.57485b8967a30d9c3097c786a954b696"/>
-<summary>...The Flood Warning is extended for the following rivers in Missouri...Illinois... Mississippi River at Grafton. ...The Flood Warning continues for the following rivers in Missouri...Illinois... Mississippi River at LaGrange.</summary>
-<cap:event>Flood Warning</cap:event>
-<cap:effective>2023-05-06T10:22:00-05:00</cap:effective>
-<cap:expires>2023-05-07T22:30:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Lincoln</cap:areaDesc>
-<cap:polygon>39.22,-90.81 39.23,-90.71 38.88,-90.57 38.81,-90.57 38.87,-90.74 39.22,-90.81</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>029113</value>
-<valueName>UGC</valueName>
-<value>MOC113</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KLSX.FL.W.0034.000000T0000Z-000000T0000Z/
-/CAGM7.2.SM.230426T2100Z.230506T1800Z.000000T0000Z.NO/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=MO126648220108.FloodWarning.1266483EB3E8MO.LSXFLSLSX.fcf3f9dca7e59fbd54cfd1eeb7bbfed8</id>
-<updated>2023-05-06T10:22:00-05:00</updated>
-<published>2023-05-06T10:22:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Flood Warning issued May 06 at 10:22AM CDT until further notice by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MO126648220108.FloodWarning.1266483EB3E8MO.LSXFLSLSX.fcf3f9dca7e59fbd54cfd1eeb7bbfed8"/>
-<summary>...The Flood Warning is extended for the following rivers in Missouri...Illinois... Mississippi River at Grafton. ...The Flood Warning continues for the following rivers in Missouri...Illinois... Mississippi River at LaGrange.</summary>
-<cap:event>Flood Warning</cap:event>
-<cap:effective>2023-05-06T10:22:00-05:00</cap:effective>
-<cap:expires>2023-05-07T22:30:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Marion</cap:areaDesc>
-<cap:polygon>39.83,-91.48 39.83,-91.35 39.74,-91.21 39.67,-91.35 39.83,-91.48</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>029127</value>
-<valueName>UGC</valueName>
-<value>MOC127</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KLSX.FL.W.0031.000000T0000Z-000000T0000Z/
-/HNNM7.1.SM.230424T1752Z.230506T0330Z.000000T0000Z.NO/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=MO126648220108.FloodWarning.1266483EB3E8MO.LSXFLSLSX.d7b4c771750d31233792a1d34df23291</id>
-<updated>2023-05-06T10:22:00-05:00</updated>
-<published>2023-05-06T10:22:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Flood Warning issued May 06 at 10:22AM CDT until further notice by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MO126648220108.FloodWarning.1266483EB3E8MO.LSXFLSLSX.d7b4c771750d31233792a1d34df23291"/>
-<summary>...The Flood Warning is extended for the following rivers in Missouri...Illinois... Mississippi River at Grafton. ...The Flood Warning continues for the following rivers in Missouri...Illinois... Mississippi River at LaGrange.</summary>
-<cap:event>Flood Warning</cap:event>
-<cap:effective>2023-05-06T10:22:00-05:00</cap:effective>
-<cap:expires>2023-05-07T22:30:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Pike</cap:areaDesc>
-<cap:polygon>39.39,-90.97 39.45,-90.89 39.38,-90.77 39.23,-90.71 39.22,-90.81 39.39,-90.97</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>029163</value>
-<valueName>UGC</valueName>
-<value>MOC163</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KLSX.FL.W.0029.000000T0000Z-000000T0000Z/
-/CLKM7.1.SM.230424T1500Z.230506T1500Z.000000T0000Z.NO/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=MO126648220108.FloodWarning.1266483EB3E8MO.LSXFLSLSX.bc68fbf5484ea988bd1c22dfcd5f43e1</id>
-<updated>2023-05-06T10:22:00-05:00</updated>
-<published>2023-05-06T10:22:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Flood Warning issued May 06 at 10:22AM CDT until further notice by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MO126648220108.FloodWarning.1266483EB3E8MO.LSXFLSLSX.bc68fbf5484ea988bd1c22dfcd5f43e1"/>
-<summary>...The Flood Warning is extended for the following rivers in Missouri...Illinois... Mississippi River at Grafton. ...The Flood Warning continues for the following rivers in Missouri...Illinois... Mississippi River at LaGrange.</summary>
-<cap:event>Flood Warning</cap:event>
-<cap:effective>2023-05-06T10:22:00-05:00</cap:effective>
-<cap:expires>2023-05-07T22:30:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Pike</cap:areaDesc>
-<cap:polygon>39.45,-91.11 39.52,-90.97 39.45,-90.89 39.39,-90.97 39.45,-91.11</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>029163</value>
-<valueName>UGC</valueName>
-<value>MOC163</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KLSX.FL.W.0030.000000T0000Z-000000T0000Z/
-/LUSM7.1.SM.230424T2045Z.230505T1700Z.000000T0000Z.NO/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=MO126648220108.FloodWarning.1266483EB3E8MO.LSXFLSLSX.78165663433819205cbe68bb9e4a159b</id>
-<updated>2023-05-06T10:22:00-05:00</updated>
-<published>2023-05-06T10:22:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Flood Warning issued May 06 at 10:22AM CDT until further notice by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MO126648220108.FloodWarning.1266483EB3E8MO.LSXFLSLSX.78165663433819205cbe68bb9e4a159b"/>
-<summary>...The Flood Warning is extended for the following rivers in Missouri...Illinois... Mississippi River at Grafton. ...The Flood Warning continues for the following rivers in Missouri...Illinois... Mississippi River at LaGrange.</summary>
-<cap:event>Flood Warning</cap:event>
-<cap:effective>2023-05-06T10:22:00-05:00</cap:effective>
-<cap:expires>2023-05-07T22:30:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Ralls</cap:areaDesc>
-<cap:polygon>39.67,-91.35 39.74,-91.21 39.7,-91.14 39.52,-90.97 39.45,-91.11 39.67,-91.35</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>029173</value>
-<valueName>UGC</valueName>
-<value>MOC173</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KLSX.FL.W.0033.000000T0000Z-000000T0000Z/
-/SVRM7.2.SM.230425T2338Z.230505T1500Z.000000T0000Z.NO/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=MO126648220108.FloodWarning.1266487D10C0MO.LSXFLSLSX.a3891b27f0e856e4a4e9a86a2ca0cba5</id>
-<updated>2023-05-06T10:22:00-05:00</updated>
-<published>2023-05-06T10:22:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Flood Warning issued May 06 at 10:22AM CDT until May 12 at 7:00AM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MO126648220108.FloodWarning.1266487D10C0MO.LSXFLSLSX.a3891b27f0e856e4a4e9a86a2ca0cba5"/>
-<summary>...The Flood Warning is extended for the following rivers in Missouri...Illinois... Mississippi River at Grafton. ...The Flood Warning continues for the following rivers in Missouri...Illinois... Mississippi River at LaGrange.</summary>
-<cap:event>Flood Warning</cap:event>
-<cap:effective>2023-05-06T10:22:00-05:00</cap:effective>
-<cap:expires>2023-05-12T07:00:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Lewis</cap:areaDesc>
-<cap:polygon>40.08,-91.53 40.08,-91.4 39.99,-91.4 39.99,-91.52 40.08,-91.53</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>029111</value>
-<valueName>UGC</valueName>
-<value>MOC111</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.EXT.KLSX.FL.W.0037.000000T0000Z-230512T1200Z/
-/LGRM7.1.SM.230428T2000Z.230505T2245Z.230511T0600Z.NO/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=MO126648220108.FloodWarning.1266487D10C0MO.LSXFLSLSX.260be8796d354cff5ab6b9daee995db4</id>
-<updated>2023-05-06T10:22:00-05:00</updated>
-<published>2023-05-06T10:22:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Flood Warning issued May 06 at 10:22AM CDT until May 12 at 7:00AM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MO126648220108.FloodWarning.1266487D10C0MO.LSXFLSLSX.260be8796d354cff5ab6b9daee995db4"/>
-<summary>...The Flood Warning is extended for the following rivers in Missouri...Illinois... Mississippi River at Grafton. ...The Flood Warning continues for the following rivers in Missouri...Illinois... Mississippi River at LaGrange.</summary>
-<cap:event>Flood Warning</cap:event>
-<cap:effective>2023-05-06T10:22:00-05:00</cap:effective>
-<cap:expires>2023-05-12T07:00:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>St. Charles</cap:areaDesc>
-<cap:polygon>38.81,-90.57 38.88,-90.57 38.99,-90.46 38.95,-90.28 38.82,-90.48 38.81,-90.57</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>029183</value>
-<valueName>UGC</valueName>
-<value>MOC183</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.EXT.KLSX.FL.W.0038.000000T0000Z-230512T1200Z/
-/GRFI2.1.SM.230503T2000Z.230507T0600Z.230511T0600Z.NO/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=MO126648220108.FloodWarning.1266488BDDD0MO.LSXFLSLSX.ca3e493acc9045e9fc53b61b1084ceab</id>
-<updated>2023-05-06T10:22:00-05:00</updated>
-<published>2023-05-06T10:22:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Flood Warning issued May 06 at 10:22AM CDT until May 13 at 4:00AM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MO126648220108.FloodWarning.1266488BDDD0MO.LSXFLSLSX.ca3e493acc9045e9fc53b61b1084ceab"/>
-<summary>...The Flood Warning is extended for the following rivers in Missouri...Illinois... Mississippi River at Grafton. ...The Flood Warning continues for the following rivers in Missouri...Illinois... Mississippi River at LaGrange.</summary>
-<cap:event>Flood Warning</cap:event>
-<cap:effective>2023-05-06T10:22:00-05:00</cap:effective>
-<cap:expires>2023-05-13T04:00:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Marion</cap:areaDesc>
-<cap:polygon>39.99,-91.52 39.99,-91.4 39.91,-91.4 39.91,-91.52 39.99,-91.52</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>029127</value>
-<valueName>UGC</valueName>
-<value>MOC127</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.EXT.KLSX.FL.W.0035.000000T0000Z-230513T0900Z/
-/UINI2.1.SM.230428T1515Z.230505T2245Z.230512T0300Z.NO/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=MO126648220108.FloodWarning.1266488CC830MO.LSXFLSLSX.addacb5bf42fd9dbcfff9d27d5b039d3</id>
-<updated>2023-05-06T10:22:00-05:00</updated>
-<published>2023-05-06T10:22:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Flood Warning issued May 06 at 10:22AM CDT until May 13 at 10:00AM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MO126648220108.FloodWarning.1266488CC830MO.LSXFLSLSX.addacb5bf42fd9dbcfff9d27d5b039d3"/>
-<summary>...The Flood Warning is extended for the following rivers in Missouri...Illinois... Mississippi River at Grafton. ...The Flood Warning continues for the following rivers in Missouri...Illinois... Mississippi River at LaGrange.</summary>
-<cap:event>Flood Warning</cap:event>
-<cap:effective>2023-05-06T10:22:00-05:00</cap:effective>
-<cap:expires>2023-05-13T10:00:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Marion</cap:areaDesc>
-<cap:polygon>39.91,-91.52 39.91,-91.4 39.83,-91.35 39.83,-91.48 39.91,-91.52</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>029127</value>
-<valueName>UGC</valueName>
-<value>MOC127</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.EXT.KLSX.FL.W.0036.000000T0000Z-230513T1500Z/
-/QLDI2.1.SM.230428T1045Z.230505T2100Z.230512T0900Z.NO/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=MO12664821FF14.FloodWarning.1266487D10C0MO.LSXFLSLSX.df7a71aae75f1a7e8de2f8558f134b99</id>
-<updated>2023-05-06T10:17:00-05:00</updated>
-<published>2023-05-06T10:17:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Flood Warning issued May 06 at 10:17AM CDT until May 12 at 7:00AM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MO12664821FF14.FloodWarning.1266487D10C0MO.LSXFLSLSX.df7a71aae75f1a7e8de2f8558f134b99"/>
-<summary>...The Flood Warning continues for the following rivers in Missouri... Cuivre River at Old Monroe. River forecasts are based on observed precipitation and forecast precipitation for the next 24 hours. ...FLOOD WARNING FOR SNOWMELT REMAINS IN EFFECT UNTIL FRIDAY</summary>
-<cap:event>Flood Warning</cap:event>
-<cap:effective>2023-05-06T10:17:00-05:00</cap:effective>
-<cap:expires>2023-05-12T07:00:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Lincoln</cap:areaDesc>
-<cap:polygon>38.92,-90.81 38.94,-90.7 38.92,-90.7 38.9,-90.8 38.92,-90.81</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>029113</value>
-<valueName>UGC</valueName>
-<value>MOC113</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KLSX.FL.W.0040.000000T0000Z-230512T1200Z/
-/OMNM7.1.SM.230503T0315Z.230506T1200Z.230511T0000Z.NO/</value>
+<value></value>
 </cap:parameter>
 </entry>
 <entry>
@@ -4747,38 +5035,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <valueName>VTEC</valueName>
 <value>/O.CON.KTFX.FL.A.0003.000000T0000Z-230508T0609Z/
 /DBRM8.0.ER.000000T0000Z.000000T0000Z.000000T0000Z.NO/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=MT1266482F6B68.SpecialWeatherStatement.1266482F7784MT.BYZSPSBYZ.62ffe12625b6376b80fb766cf6176386</id>
-<updated>2023-05-06T21:14:00-06:00</updated>
-<published>2023-05-06T21:14:00-06:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Special Weather Statement issued May 06 at 9:14PM MDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MT1266482F6B68.SpecialWeatherStatement.1266482F7784MT.BYZSPSBYZ.62ffe12625b6376b80fb766cf6176386"/>
-<summary>...A strong thunderstorm will impact portions of east central Musselshell and northern Rosebud Counties through 945 PM MDT... At 910 PM MDT, the public reported half inch hail, with surface accumulations up to an inch deep, under a strong thunderstorm near Melstone, or 31 miles northwest of Hysham, moving southeast at 5 mph. HAZARD...Half inch hail.</summary>
-<cap:event>Special Weather Statement</cap:event>
-<cap:effective>2023-05-06T21:14:00-06:00</cap:effective>
-<cap:expires>2023-05-06T21:45:00-06:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Observed</cap:certainty>
-<cap:areaDesc>Musselshell; Northern Rosebud</cap:areaDesc>
-<cap:polygon>46.62,-107.95 46.76,-107.78 46.6,-107.54 46.5,-107.67 46.5,-107.8 46.62,-107.95</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>030065 030087</value>
-<valueName>UGC</valueName>
-<value>MTZ029 MTZ031</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value></value>
 </cap:parameter>
 </entry>
 <entry>
@@ -5273,70 +5529,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=NE1266482F707C.SevereThunderstormWarning.1266482F8D00NE.OAXSVSOAX.b144afb4bfe41c27edb76643e7e849a5</id>
-<updated>2023-05-06T22:27:00-05:00</updated>
-<published>2023-05-06T22:27:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Severe Thunderstorm Warning issued May 06 at 10:27PM CDT until May 06 at 11:00PM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=NE1266482F707C.SevereThunderstormWarning.1266482F8D00NE.OAXSVSOAX.b144afb4bfe41c27edb76643e7e849a5"/>
-<summary>...A SEVERE THUNDERSTORM WARNING REMAINS IN EFFECT UNTIL 1100 PM CDT FOR SOUTHWESTERN JOHNSON...NORTHWESTERN PAWNEE AND SOUTHEASTERN GAGE COUNTIES... At 1027 PM CDT, a severe thunderstorm was located near Holmesville, or 6 miles southeast of Beatrice, moving east at 40 mph. HAZARD...Quarter size hail.</summary>
-<cap:event>Severe Thunderstorm Warning</cap:event>
-<cap:effective>2023-05-06T22:27:00-05:00</cap:effective>
-<cap:expires>2023-05-06T23:00:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Immediate</cap:urgency>
-<cap:severity>Severe</cap:severity>
-<cap:certainty>Observed</cap:certainty>
-<cap:areaDesc>Gage; Johnson; Pawnee</cap:areaDesc>
-<cap:polygon>40.14,-96.75 40.33,-96.7 40.31,-96.27 40.07,-96.34 40.14,-96.75</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>031067 031097 031133</value>
-<valueName>UGC</valueName>
-<value>NEC067 NEC097 NEC133</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KOAX.SV.W.0066.000000T0000Z-230507T0400Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=NE1266482F707C.SevereWeatherStatement.1266482F8D00NE.OAXSVSOAX.9d04f065381ef56ae2c931249514b526</id>
-<updated>2023-05-06T22:27:00-05:00</updated>
-<published>2023-05-06T22:27:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Severe Weather Statement issued May 06 at 10:27PM CDT until May 06 at 11:00PM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=NE1266482F707C.SevereWeatherStatement.1266482F8D00NE.OAXSVSOAX.9d04f065381ef56ae2c931249514b526"/>
-<summary>...A SEVERE THUNDERSTORM WARNING REMAINS IN EFFECT UNTIL 1100 PM CDT FOR SOUTHWESTERN JOHNSON...NORTHWESTERN PAWNEE AND SOUTHEASTERN GAGE COUNTIES... At 1027 PM CDT, a severe thunderstorm was located near Holmesville, or 6 miles southeast of Beatrice, moving east at 40 mph. HAZARD...Quarter size hail.</summary>
-<cap:event>Severe Weather Statement</cap:event>
-<cap:effective>2023-05-06T22:27:00-05:00</cap:effective>
-<cap:expires>2023-05-06T23:00:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Immediate</cap:urgency>
-<cap:severity>Severe</cap:severity>
-<cap:certainty>Observed</cap:certainty>
-<cap:areaDesc>Gage; Johnson; Pawnee</cap:areaDesc>
-<cap:polygon>40.14,-96.75 40.33,-96.7 40.31,-96.27 40.07,-96.34 40.14,-96.75</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>031067 031097 031133</value>
-<valueName>UGC</valueName>
-<value>NEC067 NEC097 NEC133</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KOAX.SV.W.0066.000000T0000Z-230507T0400Z/</value>
-</cap:parameter>
-</entry>
-<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=NM1266482F2BBC.RedFlagWarning.1266483E8120NM.ABQRFWABQ.2dba52826dd9ba981f235ba5cb6d9005</id>
 <updated>2023-05-06T19:51:00-06:00</updated>
 <published>2023-05-06T19:51:00-06:00</published>
@@ -5732,31 +5924,31 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=OK1266482F71A8.SpecialWeatherStatement.1266482F8D00OK.OUNSPSOUN.98750f946acc714aef6f6a01372d95d8</id>
-<updated>2023-05-06T22:30:00-05:00</updated>
-<published>2023-05-06T22:30:00-05:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=OK1266482F7BD0.SpecialWeatherStatement.1266482F92DCOK.OUNSPSOUN.14ca7fc5cc18a231d19dacb47d51c7cb</id>
+<updated>2023-05-06T22:56:00-05:00</updated>
+<published>2023-05-06T22:56:00-05:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Special Weather Statement issued May 06 at 10:30PM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=OK1266482F71A8.SpecialWeatherStatement.1266482F8D00OK.OUNSPSOUN.98750f946acc714aef6f6a01372d95d8"/>
-<summary>...A strong thunderstorm will impact portions of central Hughes County through 1100 PM CDT... At 1030 PM CDT, Doppler radar was tracking a strong thunderstorm near Atwood, moving northeast at 20 mph. HAZARD...Wind gusts up to 50 mph and nickel size hail. SOURCE...Radar indicated.</summary>
+<title>Special Weather Statement issued May 06 at 10:56PM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=OK1266482F7BD0.SpecialWeatherStatement.1266482F92DCOK.OUNSPSOUN.14ca7fc5cc18a231d19dacb47d51c7cb"/>
+<summary>...A strong thunderstorm will impact portions of east central Coal and north central Atoka Counties through 1115 PM CDT... At 1056 PM CDT, Doppler radar was tracking a strong thunderstorm 4 miles south of Wardville, moving northeast at 25 mph. HAZARD...Wind gusts up to 50 mph and nickel size hail. SOURCE...Radar indicated.</summary>
 <cap:event>Special Weather Statement</cap:event>
-<cap:effective>2023-05-06T22:30:00-05:00</cap:effective>
-<cap:expires>2023-05-06T23:00:00-05:00</cap:expires>
+<cap:effective>2023-05-06T22:56:00-05:00</cap:effective>
+<cap:expires>2023-05-06T23:15:00-05:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
 <cap:category>Met</cap:category>
 <cap:urgency>Expected</cap:urgency>
 <cap:severity>Minor</cap:severity>
 <cap:certainty>Observed</cap:certainty>
-<cap:areaDesc>Hughes</cap:areaDesc>
-<cap:polygon>35.09,-96.06 35.06,-96.07 35.05,-96.09 34.98,-96.09 34.86,-96.32 35.01,-96.46 35.24,-96.19 35.1,-96.05 35.09,-96.06</cap:polygon>
+<cap:areaDesc>Atoka; Coal</cap:areaDesc>
+<cap:polygon>34.47,-96.03 34.59,-96.19 34.71,-96.09 34.68,-96.09 34.68,-95.89 34.66,-95.88 34.6,-95.88 34.59,-95.85 34.47,-96.03</cap:polygon>
 <cap:geocode>
 <valueName>FIPS6</valueName>
-<value>040063</value>
+<value>040005 040029</value>
 <valueName>UGC</valueName>
-<value>OKZ032</value>
+<value>OKZ043 OKZ048</value>
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
@@ -5764,79 +5956,78 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=OK1266482F6654.SevereThunderstormWatch.1266482F8D00OK.OUNWCNOUN.e0da5d09c0fe0ac43afc6a0c44964c0a</id>
-<updated>2023-05-06T22:01:00-05:00</updated>
-<published>2023-05-06T22:01:00-05:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=OK1266482F7A40.WindAdvisory.126648300230OK.OUNNPWOUN.dd2bd927ff3a6f50c2410268e68cea5e</id>
+<updated>2023-05-06T22:52:00-05:00</updated>
+<published>2023-05-06T22:52:00-05:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Severe Thunderstorm Watch issued May 06 at 10:01PM CDT until May 06 at 11:00PM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=OK1266482F6654.SevereThunderstormWatch.1266482F8D00OK.OUNWCNOUN.e0da5d09c0fe0ac43afc6a0c44964c0a"/>
-<summary>SEVERE THUNDERSTORM WATCH 189 REMAINS VALID UNTIL 11 PM CDT THIS EVENING FOR THE FOLLOWING AREAS IN OKLAHOMA THIS WATCH INCLUDES 5 COUNTIES IN SOUTHEAST OKLAHOMA JOHNSTON MARSHALL IN SOUTHERN OKLAHOMA</summary>
-<cap:event>Severe Thunderstorm Watch</cap:event>
-<cap:effective>2023-05-06T22:01:00-05:00</cap:effective>
-<cap:expires>2023-05-06T23:00:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Severe</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Carter; Johnston; Love; Marshall; Murray</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>040019 040069 040085 040095 040099</value>
-<valueName>UGC</valueName>
-<value>OKC019 OKC069 OKC085 OKC095 OKC099</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KOUN.SV.A.0189.000000T0000Z-230507T0400Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=OK1266482F4E1C.FloodAdvisory.1266482F8D00OK.OUNFLSOUN.58d1b5d043fca81a456e7fe9325b1c2a</id>
-<updated>2023-05-06T21:39:00-05:00</updated>
-<published>2023-05-06T21:39:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Flood Advisory issued May 06 at 9:39PM CDT until May 06 at 11:00PM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=OK1266482F4E1C.FloodAdvisory.1266482F8D00OK.OUNFLSOUN.58d1b5d043fca81a456e7fe9325b1c2a"/>
-<summary>...FLOOD ADVISORY IN EFFECT UNTIL 1245 AM CDT SUNDAY... * WHAT...Flooding caused by excessive rainfall is expected. * WHERE...A portion of southern Oklahoma, including the following counties, Carter and Murray. * WHEN...Until 1245 AM CDT. * IMPACTS...Minor flooding in low-lying and poor drainage areas.</summary>
-<cap:event>Flood Advisory</cap:event>
-<cap:effective>2023-05-06T21:39:00-05:00</cap:effective>
-<cap:expires>2023-05-06T23:00:00-05:00</cap:expires>
+<title>Wind Advisory issued May 06 at 10:52PM CDT until May 07 at 2:00AM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=OK1266482F7A40.WindAdvisory.126648300230OK.OUNNPWOUN.dd2bd927ff3a6f50c2410268e68cea5e"/>
+<summary>...WIND ADVISORY IN EFFECT UNTIL 2 AM CDT SUNDAY... * WHAT...Southeast winds 30 to 40 mph with gusts up to 55 mph. * WHERE...Portions of central, east central, southeast, southern and southwest Oklahoma. * WHEN...Until 2 AM CDT Sunday. * IMPACTS...Gusty winds could blow around unsecured objects. Tree</summary>
+<cap:event>Wind Advisory</cap:event>
+<cap:effective>2023-05-06T22:52:00-05:00</cap:effective>
+<cap:expires>2023-05-07T02:00:00-05:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
 <cap:category>Met</cap:category>
 <cap:urgency>Expected</cap:urgency>
 <cap:severity>Minor</cap:severity>
 <cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Murray</cap:areaDesc>
-<cap:polygon>34.51,-97.15 34.51,-97.14 34.52,-97.15 34.52,-97.16 34.53,-97.09 34.33,-97.08 34.33,-97.56 34.5,-97.56 34.51,-97.45 34.51,-97.15</cap:polygon>
+<cap:areaDesc>Canadian; Carter; Cleveland; Cotton; Garvin; Grady; Jefferson; Johnston; Love; Marshall; McClain; Murray; Oklahoma; Pontotoc; Pottawatomie; Stephens</cap:areaDesc>
+<cap:polygon></cap:polygon>
 <cap:geocode>
 <valueName>FIPS6</valueName>
-<value>040099</value>
+<value>040017 040019 040027 040033 040049 040051 040067 040069 040085 040087 040095 040099 040109 040123 040125 040137</value>
 <valueName>UGC</valueName>
-<value>OKC099</value>
+<value>OKZ024 OKZ025 OKZ027 OKZ028 OKZ029 OKZ030 OKZ039 OKZ040 OKZ041 OKZ042 OKZ044 OKZ045 OKZ046 OKZ047 OKZ050 OKZ051</value>
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
-<value>/O.NEW.KOUN.FA.Y.0036.230507T0239Z-230507T0545Z/
-/00000.N.ER.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
+<value>/O.NEW.KOUN.WI.Y.0011.230507T0352Z-230507T0700Z/</value>
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=OK1266482F4E1C.FloodAdvisory.1266482FC5A4OK.OUNFLSOUN.59e57724a1523b59616f409240e43d98</id>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=OK1266482F7658.SpecialWeatherStatement.1266482F98B8OK.TSASPSTSA.2bf0dc3bfb4e576f0dc381536356fa4e</id>
+<updated>2023-05-06T22:42:00-05:00</updated>
+<published>2023-05-06T22:42:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Special Weather Statement issued May 06 at 10:42PM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=OK1266482F7658.SpecialWeatherStatement.1266482F98B8OK.TSASPSTSA.2bf0dc3bfb4e576f0dc381536356fa4e"/>
+<summary>...Strong thunderstorms will impact portions of western McIntosh and western Pittsburg Counties through 1130 PM CDT... At 1042 PM CDT, Doppler radar indicated strong thunderstorms along a line extending from 3 miles southwest of Horntown to 5 miles south of Gerty to 2 miles southeast of Olney. Movement was northeast at 35 mph.</summary>
+<cap:event>Special Weather Statement</cap:event>
+<cap:effective>2023-05-06T22:42:00-05:00</cap:effective>
+<cap:expires>2023-05-06T23:30:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Observed</cap:certainty>
+<cap:areaDesc>McIntosh; Pittsburg</cap:areaDesc>
+<cap:polygon>34.68,-95.89 34.68,-96.09 35.05,-96.09 35.12,-96.03 35.12,-96.01 35.15,-96.01 35.15,-95.98 35.34,-95.98 35.38,-95.93 35.38,-95.88 35.42,-95.88 35.5,-95.76 35.07,-95.74 34.61,-95.81 34.59,-95.88 34.68,-95.89</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>040091 040121</value>
+<valueName>UGC</valueName>
+<value>OKZ071 OKZ073</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value></value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=OK1266482F4E1C.FloodAdvisory.1266482FC5A4OK.OUNFLSOUN.77335f0ba0cb0d6968b898e4fec27765</id>
 <updated>2023-05-06T21:39:00-05:00</updated>
 <published>2023-05-06T21:39:00-05:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
 <title>Flood Advisory issued May 06 at 9:39PM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=OK1266482F4E1C.FloodAdvisory.1266482FC5A4OK.OUNFLSOUN.59e57724a1523b59616f409240e43d98"/>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=OK1266482F4E1C.FloodAdvisory.1266482FC5A4OK.OUNFLSOUN.77335f0ba0cb0d6968b898e4fec27765"/>
 <summary>...FLOOD ADVISORY IN EFFECT UNTIL 1245 AM CDT SUNDAY... * WHAT...Flooding caused by excessive rainfall is expected. * WHERE...A portion of southern Oklahoma, including the following counties, Carter and Murray. * WHEN...Until 1245 AM CDT. * IMPACTS...Minor flooding in low-lying and poor drainage areas.</summary>
 <cap:event>Flood Advisory</cap:event>
 <cap:effective>2023-05-06T21:39:00-05:00</cap:effective>
@@ -5847,13 +6038,13 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:urgency>Expected</cap:urgency>
 <cap:severity>Minor</cap:severity>
 <cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Carter</cap:areaDesc>
+<cap:areaDesc>Carter; Murray</cap:areaDesc>
 <cap:polygon>34.51,-97.15 34.51,-97.14 34.52,-97.15 34.52,-97.16 34.53,-97.09 34.33,-97.08 34.33,-97.56 34.5,-97.56 34.51,-97.45 34.51,-97.15</cap:polygon>
 <cap:geocode>
 <valueName>FIPS6</valueName>
-<value>040019</value>
+<value>040019 040099</value>
 <valueName>UGC</valueName>
-<value>OKC019</value>
+<value>OKC019 OKC099</value>
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
@@ -6224,6 +6415,135 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=TX1266482F8D64.SevereThunderstormWarning.1266482F9E94TX.FWDSVSFWD.9f88c08dbe35a01d0ea4fd431b8c1f81</id>
+<updated>2023-05-06T23:01:00-05:00</updated>
+<published>2023-05-06T23:01:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Severe Thunderstorm Warning issued May 06 at 11:01PM CDT until May 06 at 11:45PM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=TX1266482F8D64.SevereThunderstormWarning.1266482F9E94TX.FWDSVSFWD.9f88c08dbe35a01d0ea4fd431b8c1f81"/>
+<summary>...A SEVERE THUNDERSTORM WARNING REMAINS IN EFFECT UNTIL 1145 PM CDT FOR JOHNSON...SOUTHEASTERN TARRANT...NORTHWESTERN HILL...NORTHWESTERN ELLIS AND SOUTHWESTERN DALLAS COUNTIES... At 1101 PM CDT, a severe thunderstorm was located near Maypearl, or 8 miles south of Midlothian, moving east at 35 mph. HAZARD...70 mph wind gusts.</summary>
+<cap:event>Severe Thunderstorm Warning</cap:event>
+<cap:effective>2023-05-06T23:01:00-05:00</cap:effective>
+<cap:expires>2023-05-06T23:45:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Immediate</cap:urgency>
+<cap:severity>Severe</cap:severity>
+<cap:certainty>Observed</cap:certainty>
+<cap:areaDesc>Dallas; Ellis; Hill; Johnson; Tarrant</cap:areaDesc>
+<cap:polygon>32.33,-96.69 32.07,-97.43 32.62,-97.44 32.7,-97.37 32.71,-96.69 32.33,-96.69</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>048113 048139 048217 048251 048439</value>
+<valueName>UGC</valueName>
+<value>TXC113 TXC139 TXC217 TXC251 TXC439</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KFWD.SV.W.0250.000000T0000Z-230507T0445Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=TX1266482F8D64.SevereWeatherStatement.1266482F9E94TX.FWDSVSFWD.bfb55e545d929bb8b6367637593b0098</id>
+<updated>2023-05-06T23:01:00-05:00</updated>
+<published>2023-05-06T23:01:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Severe Weather Statement issued May 06 at 11:01PM CDT until May 06 at 11:45PM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=TX1266482F8D64.SevereWeatherStatement.1266482F9E94TX.FWDSVSFWD.bfb55e545d929bb8b6367637593b0098"/>
+<summary>...A SEVERE THUNDERSTORM WARNING REMAINS IN EFFECT UNTIL 1145 PM CDT FOR JOHNSON...SOUTHEASTERN TARRANT...NORTHWESTERN HILL...NORTHWESTERN ELLIS AND SOUTHWESTERN DALLAS COUNTIES... At 1101 PM CDT, a severe thunderstorm was located near Maypearl, or 8 miles south of Midlothian, moving east at 35 mph. HAZARD...70 mph wind gusts.</summary>
+<cap:event>Severe Weather Statement</cap:event>
+<cap:effective>2023-05-06T23:01:00-05:00</cap:effective>
+<cap:expires>2023-05-06T23:45:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Immediate</cap:urgency>
+<cap:severity>Severe</cap:severity>
+<cap:certainty>Observed</cap:certainty>
+<cap:areaDesc>Ellis; Hill; Johnson; Tarrant</cap:areaDesc>
+<cap:polygon>32.33,-96.69 32.07,-97.43 32.62,-97.44 32.7,-97.37 32.71,-96.69 32.33,-96.69</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>048139 048217 048251 048439</value>
+<valueName>UGC</valueName>
+<value>TXC139 TXC217 TXC251 TXC439</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KFWD.SV.W.0250.000000T0000Z-230507T0445Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=TX1266482F8D64.SevereWeatherStatement.126648305050TX.FWDSVSFWD.1a6cd296491943dbf5902b4571505902</id>
+<updated>2023-05-06T23:01:00-05:00</updated>
+<published>2023-05-06T23:01:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Severe Weather Statement issued May 06 at 11:01PM CDT until May 07 at 4:00AM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=TX1266482F8D64.SevereWeatherStatement.126648305050TX.FWDSVSFWD.1a6cd296491943dbf5902b4571505902"/>
+<summary>...A SEVERE THUNDERSTORM WARNING REMAINS IN EFFECT UNTIL 1145 PM CDT FOR JOHNSON...SOUTHEASTERN TARRANT...NORTHWESTERN HILL...NORTHWESTERN ELLIS AND SOUTHWESTERN DALLAS COUNTIES... At 1101 PM CDT, a severe thunderstorm was located near Maypearl, or 8 miles south of Midlothian, moving east at 35 mph. HAZARD...70 mph wind gusts.</summary>
+<cap:event>Severe Weather Statement</cap:event>
+<cap:effective>2023-05-06T23:01:00-05:00</cap:effective>
+<cap:expires>2023-05-07T04:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Immediate</cap:urgency>
+<cap:severity>Severe</cap:severity>
+<cap:certainty>Observed</cap:certainty>
+<cap:areaDesc>Dallas</cap:areaDesc>
+<cap:polygon>32.33,-96.69 32.07,-97.43 32.62,-97.44 32.7,-97.37 32.71,-96.69 32.33,-96.69</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>048113</value>
+<valueName>UGC</valueName>
+<value>TXC113</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KFWD.SV.W.0250.000000T0000Z-230507T0445Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=TX1266482F72D4.FloodWarning.12664840F220TX.SHVFLSSHV.3635f9c8775f728d2ab8f233ba164d46</id>
+<updated>2023-05-06T22:33:00-05:00</updated>
+<published>2023-05-06T22:33:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Flood Warning issued May 06 at 10:33PM CDT until May 08 at 1:00PM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=TX1266482F72D4.FloodWarning.12664840F220TX.SHVFLSSHV.3635f9c8775f728d2ab8f233ba164d46"/>
+<summary>...The Flood Warning continues for the following rivers in Texas... Neches River Near Diboll affecting Trinity, Tyler, Houston, Angelina and Polk Counties. For the Neches River...including Lake Palestine, Neches, Alto, Diboll, Rockland...Minor flooding is forecast. ...FLOOD WARNING REMAINS IN EFFECT UNTIL EARLY MONDAY AFTERNOON...</summary>
+<cap:event>Flood Warning</cap:event>
+<cap:effective>2023-05-06T22:33:00-05:00</cap:effective>
+<cap:expires>2023-05-08T13:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Angelina; Houston; Polk; Trinity; Tyler</cap:areaDesc>
+<cap:polygon>31.38,-94.92 31.07,-94.55 31.03,-94.59 31.11,-94.85 31.36,-95 31.38,-94.92</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>048005 048225 048373 048455 048457</value>
+<valueName>UGC</valueName>
+<value>TXC005 TXC225 TXC373 TXC455 TXC457</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KSHV.FL.W.0096.000000T0000Z-230508T1800Z/
+/DIBT2.1.ER.230428T0320Z.230429T0400Z.230508T0000Z.NO/</value>
+</cap:parameter>
+</entry>
+<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=TX1266482F71A8.FloodWarning.1266486EB8E0TX.SHVFLSSHV.f17dd3270ad810e50dcbd6d438f81806</id>
 <updated>2023-05-06T22:30:00-05:00</updated>
 <published>2023-05-06T22:30:00-05:00</published>
@@ -6257,148 +6577,18 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=TX1266482F7018.SevereThunderstormWarning.1266482F7784TX.FWDSVSFWD.3ea52b2bcfc98b3e6d6d1127ab46ec72</id>
-<updated>2023-05-06T22:26:00-05:00</updated>
-<published>2023-05-06T22:26:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Severe Thunderstorm Warning issued May 06 at 10:26PM CDT until May 06 at 10:45PM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=TX1266482F7018.SevereThunderstormWarning.1266482F7784TX.FWDSVSFWD.3ea52b2bcfc98b3e6d6d1127ab46ec72"/>
-<summary>...A SEVERE THUNDERSTORM WARNING REMAINS IN EFFECT UNTIL 1045 PM CDT FOR SOMERVELL...JOHNSON...NORTH CENTRAL BOSQUE AND EASTERN HOOD COUNTIES... At 1025 PM CDT, a severe thunderstorm was located near Godley, or near Joshua, moving northeast at 35 mph. HAZARD...70 mph wind gusts.</summary>
-<cap:event>Severe Thunderstorm Warning</cap:event>
-<cap:effective>2023-05-06T22:26:00-05:00</cap:effective>
-<cap:expires>2023-05-06T22:45:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Immediate</cap:urgency>
-<cap:severity>Severe</cap:severity>
-<cap:certainty>Observed</cap:certainty>
-<cap:areaDesc>Bosque; Hood; Johnson; Somervell</cap:areaDesc>
-<cap:polygon>32.39,-97.79 32.56,-97.77 32.55,-97.16 32.26,-97.16 32.24,-97.2 32.18,-97.47 32.17,-97.46 32.14,-97.49 32.13,-97.49 32.06,-97.71 32.15,-97.8 32.32,-97.87 32.39,-97.79</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>048035 048221 048251 048425</value>
-<valueName>UGC</valueName>
-<value>TXC035 TXC221 TXC251 TXC425</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KFWD.SV.W.0249.000000T0000Z-230507T0345Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=TX1266482F7018.SevereWeatherStatement.126648305050TX.FWDSVSFWD.f12c0171543b274427cf24814d5c9573</id>
-<updated>2023-05-06T22:26:00-05:00</updated>
-<published>2023-05-06T22:26:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Severe Weather Statement issued May 06 at 10:26PM CDT until May 07 at 4:00AM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=TX1266482F7018.SevereWeatherStatement.126648305050TX.FWDSVSFWD.f12c0171543b274427cf24814d5c9573"/>
-<summary>...A SEVERE THUNDERSTORM WARNING REMAINS IN EFFECT UNTIL 1045 PM CDT FOR SOMERVELL...JOHNSON...NORTH CENTRAL BOSQUE AND EASTERN HOOD COUNTIES... At 1025 PM CDT, a severe thunderstorm was located near Godley, or near Joshua, moving northeast at 35 mph. HAZARD...70 mph wind gusts.</summary>
-<cap:event>Severe Weather Statement</cap:event>
-<cap:effective>2023-05-06T22:26:00-05:00</cap:effective>
-<cap:expires>2023-05-07T04:00:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Immediate</cap:urgency>
-<cap:severity>Severe</cap:severity>
-<cap:certainty>Observed</cap:certainty>
-<cap:areaDesc>Bosque; Hood; Johnson; Somervell</cap:areaDesc>
-<cap:polygon>32.39,-97.79 32.56,-97.77 32.55,-97.16 32.26,-97.16 32.24,-97.2 32.18,-97.47 32.17,-97.46 32.14,-97.49 32.13,-97.49 32.06,-97.71 32.15,-97.8 32.32,-97.87 32.39,-97.79</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>048035 048221 048251 048425</value>
-<valueName>UGC</valueName>
-<value>TXC035 TXC221 TXC251 TXC425</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KFWD.SV.W.0249.000000T0000Z-230507T0345Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=TX1266482F6DC0.FlashFloodWarning.1266482F8D00TX.SJTFFSSJT.e5fd5200bbb848ed2734a770bbb80104</id>
-<updated>2023-05-06T22:20:00-05:00</updated>
-<published>2023-05-06T22:20:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Flash Flood Warning issued May 06 at 10:20PM CDT until May 06 at 11:00PM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=TX1266482F6DC0.FlashFloodWarning.1266482F8D00TX.SJTFFSSJT.e5fd5200bbb848ed2734a770bbb80104"/>
-<summary>...FLASH FLOOD WARNING REMAINS IN EFFECT UNTIL 11 PM CDT THIS EVENING FOR SOUTHERN BROWN COUNTY... At 1018 PM CDT, Rainfall within the warned area has ended. A secondary road was reported impassible near Brookesmith at l009 PM CDT. Between 2 and 3 inches of rain have fallen. Flash flooding is likely continuing.</summary>
-<cap:event>Flash Flood Warning</cap:event>
-<cap:effective>2023-05-06T22:20:00-05:00</cap:effective>
-<cap:expires>2023-05-06T23:00:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Immediate</cap:urgency>
-<cap:severity>Severe</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Brown</cap:areaDesc>
-<cap:polygon>31.46,-99.18 31.62,-99.19 31.69,-98.77 31.67,-98.76 31.6,-98.8 31.47,-99.01 31.49,-99.04 31.47,-99.07 31.46,-99.18</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>048049</value>
-<valueName>UGC</valueName>
-<value>TXC049</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KSJT.FF.W.0004.000000T0000Z-230507T0400Z/
-/00000.0.ER.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=TX1266482F6D5C.FloodAdvisory.1266482F8D00TX.FWDFLSFWD.bea00d092b13138e2c13152e4c236e69</id>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=TX1266482F6D5C.FloodAdvisory.1266482F9E94TX.FWDFLSFWD.c766b0e83378641fe82a9941087f3bac</id>
 <updated>2023-05-06T22:19:00-05:00</updated>
 <published>2023-05-06T22:19:00-05:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Flood Advisory issued May 06 at 10:19PM CDT until May 06 at 11:00PM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=TX1266482F6D5C.FloodAdvisory.1266482F8D00TX.FWDFLSFWD.bea00d092b13138e2c13152e4c236e69"/>
+<title>Flood Advisory issued May 06 at 10:19PM CDT until May 06 at 11:45PM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=TX1266482F6D5C.FloodAdvisory.1266482F9E94TX.FWDFLSFWD.c766b0e83378641fe82a9941087f3bac"/>
 <summary>...FLOOD ADVISORY IN EFFECT UNTIL 1215 AM CDT SUNDAY... * WHAT...Urban and small stream flooding caused by excessive rainfall is expected. * WHERE...A portion of north central Texas, including the following counties, Erath, Hood and Somervell. * WHEN...Until 1215 AM CDT.</summary>
 <cap:event>Flood Advisory</cap:event>
 <cap:effective>2023-05-06T22:19:00-05:00</cap:effective>
-<cap:expires>2023-05-06T23:00:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Somervell</cap:areaDesc>
-<cap:polygon>32.51,-98.07 32.56,-98.07 32.55,-97.62 32.2,-97.62 31.99,-98.06 32.51,-98.37 32.51,-98.07</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>048425</value>
-<valueName>UGC</valueName>
-<value>TXC425</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.NEW.KFWD.FA.Y.0036.230507T0319Z-230507T0515Z/
-/00000.N.ER.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=TX1266482F6D5C.FloodAdvisory.126648305050TX.FWDFLSFWD.c766b0e83378641fe82a9941087f3bac</id>
-<updated>2023-05-06T22:19:00-05:00</updated>
-<published>2023-05-06T22:19:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Flood Advisory issued May 06 at 10:19PM CDT until May 07 at 4:00AM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=TX1266482F6D5C.FloodAdvisory.126648305050TX.FWDFLSFWD.c766b0e83378641fe82a9941087f3bac"/>
-<summary>...FLOOD ADVISORY IN EFFECT UNTIL 1215 AM CDT SUNDAY... * WHAT...Urban and small stream flooding caused by excessive rainfall is expected. * WHERE...A portion of north central Texas, including the following counties, Erath, Hood and Somervell. * WHEN...Until 1215 AM CDT.</summary>
-<cap:event>Flood Advisory</cap:event>
-<cap:effective>2023-05-06T22:19:00-05:00</cap:effective>
-<cap:expires>2023-05-07T04:00:00-05:00</cap:expires>
+<cap:expires>2023-05-06T23:45:00-05:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
 <cap:category>Met</cap:category>
@@ -6412,6 +6602,39 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <value>048143 048221</value>
 <valueName>UGC</valueName>
 <value>TXC143 TXC221</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.NEW.KFWD.FA.Y.0036.230507T0319Z-230507T0515Z/
+/00000.N.ER.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=TX1266482F6D5C.FloodAdvisory.126648305050TX.FWDFLSFWD.bea00d092b13138e2c13152e4c236e69</id>
+<updated>2023-05-06T22:19:00-05:00</updated>
+<published>2023-05-06T22:19:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Flood Advisory issued May 06 at 10:19PM CDT until May 07 at 4:00AM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=TX1266482F6D5C.FloodAdvisory.126648305050TX.FWDFLSFWD.bea00d092b13138e2c13152e4c236e69"/>
+<summary>...FLOOD ADVISORY IN EFFECT UNTIL 1215 AM CDT SUNDAY... * WHAT...Urban and small stream flooding caused by excessive rainfall is expected. * WHERE...A portion of north central Texas, including the following counties, Erath, Hood and Somervell. * WHEN...Until 1215 AM CDT.</summary>
+<cap:event>Flood Advisory</cap:event>
+<cap:effective>2023-05-06T22:19:00-05:00</cap:effective>
+<cap:expires>2023-05-07T04:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Somervell</cap:areaDesc>
+<cap:polygon>32.51,-98.07 32.56,-98.07 32.55,-97.62 32.2,-97.62 31.99,-98.06 32.51,-98.37 32.51,-98.07</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>048425</value>
+<valueName>UGC</valueName>
+<value>TXC425</value>
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
@@ -6486,38 +6709,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=TX1266482F4E1C.SevereThunderstormWatch.1266482F8D00TX.FWDWCNFWD.724bdddde201989c34beb35cb7fd0353</id>
-<updated>2023-05-06T21:39:00-05:00</updated>
-<published>2023-05-06T21:39:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Severe Thunderstorm Watch issued May 06 at 9:39PM CDT until May 06 at 11:00PM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=TX1266482F4E1C.SevereThunderstormWatch.1266482F8D00TX.FWDWCNFWD.724bdddde201989c34beb35cb7fd0353"/>
-<summary>SEVERE THUNDERSTORM WATCH 189 REMAINS VALID UNTIL 11 PM CDT THIS EVENING FOR THE FOLLOWING AREAS IN TEXAS THIS WATCH INCLUDES 6 COUNTIES IN NORTH CENTRAL TEXAS COOKE JACK MONTAGUE STEPHENS WISE YOUNG</summary>
-<cap:event>Severe Thunderstorm Watch</cap:event>
-<cap:effective>2023-05-06T21:39:00-05:00</cap:effective>
-<cap:expires>2023-05-06T23:00:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Severe</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Cooke; Jack; Montague; Stephens; Wise; Young</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>048097 048237 048337 048429 048497 048503</value>
-<valueName>UGC</valueName>
-<value>TXC097 TXC237 TXC337 TXC429 TXC497 TXC503</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KFWD.SV.A.0189.000000T0000Z-230507T0400Z/</value>
-</cap:parameter>
-</entry>
-<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=TX1266482F4CF0.SevereThunderstormWatch.126648305050TX.WNSWOU3.22656046d3c0da0e216c5c79191dae5a</id>
 <updated>2023-05-06T21:36:00-05:00</updated>
 <published>2023-05-06T21:36:00-05:00</published>
@@ -6547,104 +6738,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value>/O.NEW.KWNS.SV.A.0193.230507T0240Z-230507T0900Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=TX12664822CAFC.SevereThunderstormWatch.1266482F8D00TX.WNSWOU9.7f4bd1c5804d283e23ccae9bbdc4383d</id>
-<updated>2023-05-06T15:39:00-05:00</updated>
-<published>2023-05-06T15:39:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Severe Thunderstorm Watch issued May 06 at 3:39PM CDT until May 06 at 11:00PM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=TX12664822CAFC.SevereThunderstormWatch.1266482F8D00TX.WNSWOU9.7f4bd1c5804d283e23ccae9bbdc4383d"/>
-<summary>SEVERE THUNDERSTORM WATCH 189 IS IN EFFECT UNTIL 1100 PM CDT FOR THE FOLLOWING LOCATIONS TX . TEXAS COUNTIES INCLUDED ARE ARCHER BAYLOR BROWN CALLAHAN CLAY COKE</summary>
-<cap:event>Severe Thunderstorm Watch</cap:event>
-<cap:effective>2023-05-06T15:39:00-05:00</cap:effective>
-<cap:expires>2023-05-06T23:00:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Severe</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Brown; Callahan; Coke; Coleman; Fisher; Haskell; Jones; Nolan; Runnels; Shackelford; Taylor; Throckmorton</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>048049 048059 048081 048083 048151 048207 048253 048353 048399 048417 048441 048447</value>
-<valueName>UGC</valueName>
-<value>TXC049 TXC059 TXC081 TXC083 TXC151 TXC207 TXC253 TXC353 TXC399 TXC417 TXC441 TXC447</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.NEW.KWNS.SV.A.0189.230506T2040Z-230507T0400Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=TX12664821FDE8.FloodWarning.12664840F220TX.SHVFLSSHV.3635f9c8775f728d2ab8f233ba164d46</id>
-<updated>2023-05-06T10:14:00-05:00</updated>
-<published>2023-05-06T10:14:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Flood Warning issued May 06 at 10:14AM CDT until May 08 at 1:00PM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=TX12664821FDE8.FloodWarning.12664840F220TX.SHVFLSSHV.3635f9c8775f728d2ab8f233ba164d46"/>
-<summary>...The Flood Warning is extended for the following rivers in Texas... Neches River Near Diboll affecting Trinity, Houston, Angelina, Polk and Tyler Counties. For the Neches River...including Lake Palestine, Neches, Alto, Diboll, Rockland...Minor flooding is forecast. ...FLOOD WARNING NOW IN EFFECT UNTIL EARLY MONDAY AFTERNOON...</summary>
-<cap:event>Flood Warning</cap:event>
-<cap:effective>2023-05-06T10:14:00-05:00</cap:effective>
-<cap:expires>2023-05-08T13:00:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Angelina; Houston; Polk; Trinity; Tyler</cap:areaDesc>
-<cap:polygon>31.38,-94.92 31.07,-94.55 31.03,-94.59 31.11,-94.85 31.36,-95 31.38,-94.92</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>048005 048225 048373 048455 048457</value>
-<valueName>UGC</valueName>
-<value>TXC005 TXC225 TXC373 TXC455 TXC457</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.EXT.KSHV.FL.W.0096.000000T0000Z-230508T1800Z/
-/DIBT2.1.ER.230428T0320Z.230429T0400Z.230508T0000Z.NO/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=TX12664821FD84.FloodWarning.12664830F848TX.SHVFLSSHV.977b9dfc4a854c179002841913f703cc</id>
-<updated>2023-05-06T10:13:00-05:00</updated>
-<published>2023-05-06T10:13:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Flood Warning issued May 06 at 10:13AM CDT until May 07 at 8:30AM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=TX12664821FD84.FloodWarning.12664830F848TX.SHVFLSSHV.977b9dfc4a854c179002841913f703cc"/>
-<summary>...The Flood Warning continues for the following rivers in Texas... Sulphur River Near Talco affecting Red River, Franklin, Titus and Morris Counties. For the Sulphur River...including Talco...Minor flooding is forecast. ...FLOOD WARNING NOW IN EFFECT UNTIL TOMORROW MORNING... * WHAT...Minor flooding is occurring and minor flooding is forecast.</summary>
-<cap:event>Flood Warning</cap:event>
-<cap:effective>2023-05-06T10:13:00-05:00</cap:effective>
-<cap:expires>2023-05-07T08:30:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Franklin; Morris; Red River; Titus</cap:areaDesc>
-<cap:polygon>33.38,-95.3 33.41,-94.88 33.31,-94.66 33.26,-94.66 33.31,-94.78 33.38,-95.3</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>048159 048343 048387 048449</value>
-<valueName>UGC</valueName>
-<value>TXC159 TXC343 TXC387 TXC449</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.EXT.KSHV.FL.W.0103.000000T0000Z-230507T1330Z/
-/TLCT2.1.ER.230505T2304Z.230506T0745Z.230506T1930Z.NO/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -7208,31 +7301,127 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=WI1266482F4EE4.SpecialWeatherStatement.1266482F7784WI.GRBSPSGRB.14c65a6b4a4b9fb73dbc1485a111d130</id>
-<updated>2023-05-06T21:41:00-05:00</updated>
-<published>2023-05-06T21:41:00-05:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=WI1266482F7B6C.SevereThunderstormWarning.1266482F92DCWI.GRBSVSGRB.f3a9b8b24eb7ce4e07480e5099dfae05</id>
+<updated>2023-05-06T22:55:00-05:00</updated>
+<published>2023-05-06T22:55:00-05:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Special Weather Statement issued May 06 at 9:41PM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=WI1266482F4EE4.SpecialWeatherStatement.1266482F7784WI.GRBSPSGRB.14c65a6b4a4b9fb73dbc1485a111d130"/>
-<summary>...Strong thunderstorms will impact portions of Portage, southeastern Marathon, Menominee, northwestern Winnebago, Waushara, Waupaca, central Oconto, northwestern Outagamie and Shawano Counties through 1045 PM CDT... At 940 PM CDT, trained weather spotters reported strong thunderstorms along a line extending from 7 miles north of Bevent to Amherst to 6</summary>
+<title>Severe Thunderstorm Warning issued May 06 at 10:55PM CDT until May 06 at 11:15PM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=WI1266482F7B6C.SevereThunderstormWarning.1266482F92DCWI.GRBSVSGRB.f3a9b8b24eb7ce4e07480e5099dfae05"/>
+<summary>...A SEVERE THUNDERSTORM WARNING REMAINS IN EFFECT UNTIL 1115 PM CDT FOR NORTHEASTERN PORTAGE AND SOUTHEASTERN MARATHON COUNTIES... At 1055 PM CDT, a severe thunderstorm was located near Bevent, or 13 miles northeast of Stevens Point, moving northeast at 30 mph. HAZARD...Quarter size hail. SOURCE...Radar indicated.</summary>
+<cap:event>Severe Thunderstorm Warning</cap:event>
+<cap:effective>2023-05-06T22:55:00-05:00</cap:effective>
+<cap:expires>2023-05-06T23:15:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Immediate</cap:urgency>
+<cap:severity>Severe</cap:severity>
+<cap:certainty>Observed</cap:certainty>
+<cap:areaDesc>Marathon; Portage</cap:areaDesc>
+<cap:polygon>44.62,-89.62 44.73,-89.65 44.77,-89.23 44.66,-89.23 44.62,-89.62</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>055073 055097</value>
+<valueName>UGC</valueName>
+<value>WIC073 WIC097</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KGRB.SV.W.0001.000000T0000Z-230507T0415Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=WI1266482F7B6C.SevereWeatherStatement.1266482F92DCWI.GRBSVSGRB.bd02de4a7e35817cfabb874101ee0df1</id>
+<updated>2023-05-06T22:55:00-05:00</updated>
+<published>2023-05-06T22:55:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Severe Weather Statement issued May 06 at 10:55PM CDT until May 06 at 11:15PM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=WI1266482F7B6C.SevereWeatherStatement.1266482F92DCWI.GRBSVSGRB.bd02de4a7e35817cfabb874101ee0df1"/>
+<summary>...A SEVERE THUNDERSTORM WARNING REMAINS IN EFFECT UNTIL 1115 PM CDT FOR NORTHEASTERN PORTAGE AND SOUTHEASTERN MARATHON COUNTIES... At 1055 PM CDT, a severe thunderstorm was located near Bevent, or 13 miles northeast of Stevens Point, moving northeast at 30 mph. HAZARD...Quarter size hail. SOURCE...Radar indicated.</summary>
+<cap:event>Severe Weather Statement</cap:event>
+<cap:effective>2023-05-06T22:55:00-05:00</cap:effective>
+<cap:expires>2023-05-06T23:15:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Immediate</cap:urgency>
+<cap:severity>Severe</cap:severity>
+<cap:certainty>Observed</cap:certainty>
+<cap:areaDesc>Marathon</cap:areaDesc>
+<cap:polygon>44.62,-89.62 44.73,-89.65 44.77,-89.23 44.66,-89.23 44.62,-89.62</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>055073</value>
+<valueName>UGC</valueName>
+<value>WIC073</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KGRB.SV.W.0001.000000T0000Z-230507T0415Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=WI1266482F7B6C.SevereWeatherStatement.126648322510WI.GRBSVSGRB.b38b45af2d211e0c8d917c862aa5f98a</id>
+<updated>2023-05-06T22:55:00-05:00</updated>
+<published>2023-05-06T22:55:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Severe Weather Statement issued May 06 at 10:55PM CDT until May 07 at 4:00PM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=WI1266482F7B6C.SevereWeatherStatement.126648322510WI.GRBSVSGRB.b38b45af2d211e0c8d917c862aa5f98a"/>
+<summary>...A SEVERE THUNDERSTORM WARNING REMAINS IN EFFECT UNTIL 1115 PM CDT FOR NORTHEASTERN PORTAGE AND SOUTHEASTERN MARATHON COUNTIES... At 1055 PM CDT, a severe thunderstorm was located near Bevent, or 13 miles northeast of Stevens Point, moving northeast at 30 mph. HAZARD...Quarter size hail. SOURCE...Radar indicated.</summary>
+<cap:event>Severe Weather Statement</cap:event>
+<cap:effective>2023-05-06T22:55:00-05:00</cap:effective>
+<cap:expires>2023-05-07T16:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Immediate</cap:urgency>
+<cap:severity>Severe</cap:severity>
+<cap:certainty>Observed</cap:certainty>
+<cap:areaDesc>Portage</cap:areaDesc>
+<cap:polygon>44.62,-89.62 44.73,-89.65 44.77,-89.23 44.66,-89.23 44.62,-89.62</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>055097</value>
+<valueName>UGC</valueName>
+<value>WIC097</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KGRB.SV.W.0001.000000T0000Z-230507T0415Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=WI1266482F752C.SpecialWeatherStatement.1266482F98B8WI.GRBSPSGRB.d998b77baf3a85f55ed153382f880fe6</id>
+<updated>2023-05-06T22:39:00-05:00</updated>
+<published>2023-05-06T22:39:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Special Weather Statement issued May 06 at 10:39PM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=WI1266482F752C.SpecialWeatherStatement.1266482F98B8WI.GRBSPSGRB.d998b77baf3a85f55ed153382f880fe6"/>
+<summary>...Strong thunderstorms will impact portions of western Brown, northern Portage, southeastern Marathon, southeastern Menominee, Waupaca, southern Oconto, Outagamie and Shawano Counties through 1130 PM CDT... At 1036 PM CDT, radar and trained weather spotters reported clusters of strong thunderstorms over parts of central and northeast</summary>
 <cap:event>Special Weather Statement</cap:event>
-<cap:effective>2023-05-06T21:41:00-05:00</cap:effective>
-<cap:expires>2023-05-06T22:45:00-05:00</cap:expires>
+<cap:effective>2023-05-06T22:39:00-05:00</cap:effective>
+<cap:expires>2023-05-06T23:30:00-05:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
 <cap:category>Met</cap:category>
 <cap:urgency>Expected</cap:urgency>
 <cap:severity>Minor</cap:severity>
 <cap:certainty>Observed</cap:certainty>
-<cap:areaDesc>Marathon; Menominee; Northern Oconto County; Outagamie; Portage; Shawano; Southern Oconto County; Waupaca; Waushara; Winnebago</cap:areaDesc>
-<cap:polygon>44.24,-89.6 44.25,-89.72 44.35,-89.73 44.48,-89.67 44.9,-89.52 45.17,-88.39 44.62,-88.37 44.1,-88.92 44.01,-89.6 44.24,-89.6</cap:polygon>
+<cap:areaDesc>Brown; Marathon; Menominee; Outagamie; Portage; Shawano; Southern Oconto County; Waupaca</cap:areaDesc>
+<cap:polygon>45.03,-88.31 45.02,-88.03 44.65,-87.98 44.24,-88.03 44.24,-89 44.65,-89.85 44.69,-89.85 44.68,-89.91 44.74,-90.03 45.03,-88.31</cap:polygon>
 <cap:geocode>
 <valueName>FIPS6</valueName>
-<value>055073 055078 055083 055087 055097 055115 055135 055137 055139</value>
+<value>055009 055073 055078 055083 055087 055097 055115 055135</value>
 <valueName>UGC</valueName>
-<value>WIZ020 WIZ021 WIZ030 WIZ031 WIZ036 WIZ037 WIZ038 WIZ045 WIZ048 WIZ074</value>
+<value>WIZ020 WIZ030 WIZ031 WIZ036 WIZ037 WIZ038 WIZ039 WIZ074</value>
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
@@ -7504,18 +7693,18 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=WI1266481FEB0C.FloodAdvisory.12664840F220WI.GRBFLSGRB.5eaa5025d59325e67cee924b157946fe</id>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=WI1266481FEB0C.FloodAdvisory.1266482F92DCWI.GRBFLSGRB.5eaa5025d59325e67cee924b157946fe</id>
 <updated>2023-05-05T20:55:00-05:00</updated>
 <published>2023-05-05T20:55:00-05:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Flood Advisory issued May 05 at 8:55PM CDT until May 08 at 1:00PM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=WI1266481FEB0C.FloodAdvisory.12664840F220WI.GRBFLSGRB.5eaa5025d59325e67cee924b157946fe"/>
+<title>Flood Advisory issued May 05 at 8:55PM CDT until May 06 at 11:15PM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=WI1266481FEB0C.FloodAdvisory.1266482F92DCWI.GRBFLSGRB.5eaa5025d59325e67cee924b157946fe"/>
 <summary>...FLOOD ADVISORY NOW IN EFFECT UNTIL NOON CDT MONDAY... * WHAT...Hydrologic flooding caused by rain and snowmelt continues. * WHERE...A portion of northeast Wisconsin, including the following county, Marinette. * WHEN...Until noon CDT Monday. * IMPACTS...Minor flooding in low-lying and poor drainage areas.</summary>
 <cap:event>Flood Advisory</cap:event>
 <cap:effective>2023-05-05T20:55:00-05:00</cap:effective>
-<cap:expires>2023-05-08T13:00:00-05:00</cap:expires>
+<cap:expires>2023-05-06T23:15:00-05:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
 <cap:category>Met</cap:category>
