@@ -16,16 +16,48 @@ xmlns = 'http://www.w3.org/2005/Atom'
 xmlns:cap = 'urn:oasis:names:tc:emergency:cap:1.1'
 xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 >
-<!-- http-date = Wed, 17 May 2023 06:16:00 GMT -->
+<!-- http-date = Wed, 17 May 2023 07:00:00 GMT -->
 <id>https://alerts.weather.gov/cap/us.php?x=0</id>
 <logo>http://alerts.weather.gov/images/xml_logo.gif</logo>
 <generator>NWS CAP Server</generator>
-<updated>2023-05-16T22:16:00-08:00</updated>
+<updated>2023-05-17T03:00:00-04:00</updated>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
 <title>Current Watches, Warnings and Advisories for the United States Issued by the National Weather Service</title>
 <link href="https://alerts.weather.gov/cap/us.php?x=0"/>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=AK126648C87F4C.FrostAdvisory.126648C9D130AK.AJKNPWAJK.0ff687da1467985286b9aac8f8564bd2</id>
+<updated>2023-05-16T22:35:00-08:00</updated>
+<published>2023-05-16T22:35:00-08:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Frost Advisory issued May 16 at 10:35PM AKDT until May 17 at 7:00AM AKDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=AK126648C87F4C.FrostAdvisory.126648C9D130AK.AJKNPWAJK.0ff687da1467985286b9aac8f8564bd2"/>
+<summary>...FROST ADVISORY REMAINS IN EFFECT UNTIL 7 AM AKDT WEDNESDAY... * WHAT...Temperatures as low as 35 will result in frost formation. * WHERE...Gustavus. * WHEN...From midnight tonight to 7 AM AKDT Wednesday. * IMPACTS...Frost could kill sensitive outdoor vegetation if</summary>
+<cap:event>Frost Advisory</cap:event>
+<cap:effective>2023-05-16T22:35:00-08:00</cap:effective>
+<cap:expires>2023-05-17T07:00:00-08:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Glacier Bay</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>002105</value>
+<valueName>UGC</valueName>
+<value>AKZ320</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.PAJK.FR.Y.0004.230517T0800Z-230517T1500Z/</value>
+</cap:parameter>
+</entry>
 <entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=AK126648C877E0.FloodWarning.126648D9E854AK.AFCFLWAFC.ce2f17966dbcc247d1104bdb800aa70d</id>
 <updated>2023-05-16T22:16:00-08:00</updated>
@@ -251,38 +283,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <valueName>VTEC</valueName>
 <value>/O.CON.PAFG.FA.A.0002.000000T0000Z-230518T0200Z/
 /00000.0.IJ.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=AK126648BBB2BC.FrostAdvisory.126648C9D130AK.AJKNPWAJK.0ff687da1467985286b9aac8f8564bd2</id>
-<updated>2023-05-16T14:47:00-08:00</updated>
-<published>2023-05-16T14:47:00-08:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Frost Advisory issued May 16 at 2:47PM AKDT until May 17 at 7:00AM AKDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=AK126648BBB2BC.FrostAdvisory.126648C9D130AK.AJKNPWAJK.0ff687da1467985286b9aac8f8564bd2"/>
-<summary>...FROST ADVISORY IN EFFECT FROM MIDNIGHT TONIGHT TO 7 AM AKDT WEDNESDAY... * WHAT...Temperatures as low as 35 will result in frost formation. * WHERE...Gustavus. * WHEN...From midnight tonight to 7 AM AKDT Wednesday.</summary>
-<cap:event>Frost Advisory</cap:event>
-<cap:effective>2023-05-16T14:47:00-08:00</cap:effective>
-<cap:expires>2023-05-17T07:00:00-08:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Glacier Bay</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>002105</value>
-<valueName>UGC</valueName>
-<value>AKZ320</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.NEW.PAJK.FR.Y.0004.230517T0800Z-230517T1500Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -610,6 +610,38 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <valueName>VTEC</valueName>
 <value>/O.CON.KLZK.FL.W.0070.000000T0000Z-230520T1600Z/
 /CAMA4.1.ER.230512T2240Z.230516T0915Z.230519T1000Z.NO/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=AS126648C88140.HighSurfAdvisory.126648CA57F4AS.STUCFWPPG.4eac5ee41057ecb34ada961d54bae810</id>
+<updated>2023-05-16T19:40:00-11:00</updated>
+<published>2023-05-16T19:40:00-11:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>High Surf Advisory issued May 16 at 7:40PM SST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=AS126648C88140.HighSurfAdvisory.126648CA57F4AS.STUCFWPPG.4eac5ee41057ecb34ada961d54bae810"/>
+<summary>...A HIGH SURF ADVISORY remains in effect... WHAT...High surf of 9 to 11 feet WHERE...All shores of American Samoa WHEN...Through Friday. IMPACTS...Minor. Expect some strong breaking waves, shorebreak, and strong longshore and rip currents making water recreation</summary>
+<cap:event>High Surf Advisory</cap:event>
+<cap:effective>2023-05-16T19:40:00-11:00</cap:effective>
+<cap:expires>2023-05-17T07:45:00-11:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Manua; Rose Atoll; Swains Island; Tutuila and Aunuu</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>060010 060020 060030 060040 060050</value>
+<valueName>UGC</valueName>
+<value>ASZ001 ASZ002 ASZ003 ASZ004</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value></value>
 </cap:parameter>
 </entry>
 <entry>
@@ -1631,6 +1663,38 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value>/O.CON.KALY.FZ.A.0001.230518T0600Z-230518T1300Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=FL126648C87F4C.RipCurrentStatement.126648D6C980FL.TAECFWTAE.7bb3693867f990d01ef4383f1949744c</id>
+<updated>2023-05-17T02:35:00-04:00</updated>
+<published>2023-05-17T02:35:00-04:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Rip Current Statement issued May 17 at 2:35AM EDT until May 17 at 8:00PM EDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=FL126648C87F4C.RipCurrentStatement.126648D6C980FL.TAECFWTAE.7bb3693867f990d01ef4383f1949744c"/>
+<summary>...HIGH RIP CURRENT RISK IN EFFECT THROUGH THIS EVENING... * WHAT...Dangerous rip currents. * WHERE...Gulf County Beaches. * WHEN...Through this evening. * IMPACTS...Rip currents can sweep even the best swimmers away from shore into deeper water.</summary>
+<cap:event>Rip Current Statement</cap:event>
+<cap:effective>2023-05-17T02:35:00-04:00</cap:effective>
+<cap:expires>2023-05-17T20:00:00-04:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Coastal Gulf</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>012045</value>
+<valueName>UGC</valueName>
+<value>FLZ114</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.NEW.KTAE.RP.S.0052.230517T0635Z-230518T0000Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -4202,39 +4266,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=NC126648C8312C.FloodAdvisory.126648C8CB78NC.GSPFLSGSP.3ef4e543456e200796d6bd5882119269</id>
-<updated>2023-05-17T00:35:00-04:00</updated>
-<published>2023-05-17T00:35:00-04:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Flood Advisory issued May 17 at 12:35AM EDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=NC126648C8312C.FloodAdvisory.126648C8CB78NC.GSPFLSGSP.3ef4e543456e200796d6bd5882119269"/>
-<summary>...FLOOD ADVISORY IN EFFECT UNTIL 430 AM EDT EARLY THIS MORNING... * WHAT...Flooding caused by excessive rainfall is expected. * WHERE...Cabarrus and Mecklenburg Counties in the Piedmont of North Carolina. * WHEN...Until 430 AM EDT. * IMPACTS...Minor flooding in low-lying and poor drainage areas.</summary>
-<cap:event>Flood Advisory</cap:event>
-<cap:effective>2023-05-17T00:35:00-04:00</cap:effective>
-<cap:expires>2023-05-17T04:30:00-04:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Cabarrus; Mecklenburg</cap:areaDesc>
-<cap:polygon>35.35,-80.67 35.34,-80.66 35.32,-80.66 35.32,-80.69 35.31,-80.72 35.31,-80.74 35.32,-80.75 35.34,-80.75 35.35,-80.74 35.35,-80.7 35.35,-80.67</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>037025 037119</value>
-<valueName>UGC</valueName>
-<value>NCC025 NCC119</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.NEW.KGSP.FA.Y.0036.230517T0435Z-230517T0830Z/
-/00000.N.ER.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
-</cap:parameter>
-</entry>
-<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=ND126648C7C55C.FloodWarning.126648D91370ND.FGFFLSFGF.704bb3d1440632160abb9ed5863425af</id>
 <updated>2023-05-16T20:59:00-05:00</updated>
 <published>2023-05-16T20:59:00-05:00</published>
@@ -5082,6 +5113,38 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=PA126648C898B0.FreezeWatch.126648D89E40PA.PBZNPWPBZ.7ffec212ab49f29f5ef5fcfcc8467a74</id>
+<updated>2023-05-17T03:00:00-04:00</updated>
+<published>2023-05-17T03:00:00-04:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Freeze Watch issued May 17 at 3:00AM EDT until May 18 at 8:00AM EDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=PA126648C898B0.FreezeWatch.126648D89E40PA.PBZNPWPBZ.7ffec212ab49f29f5ef5fcfcc8467a74"/>
+<summary>...FREEZE WATCH IN EFFECT FROM LATE TONIGHT THROUGH THURSDAY MORNING... * WHAT...Sub-freezing temperatures as low as 30 possible. * WHERE...Forest, Jefferson PA, Venango, and Clarion Counties. * WHEN...From late tonight through Thursday morning. * IMPACTS...Frost and freeze conditions could kill crops, other</summary>
+<cap:event>Freeze Watch</cap:event>
+<cap:effective>2023-05-17T03:00:00-04:00</cap:effective>
+<cap:expires>2023-05-18T08:00:00-04:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Future</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Possible</cap:certainty>
+<cap:areaDesc>Clarion; Forest; Jefferson; Venango</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>042031 042053 042065 042121</value>
+<valueName>UGC</valueName>
+<value>PAZ008 PAZ009 PAZ015 PAZ016</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.NEW.KPBZ.FZ.A.0003.230518T0400Z-230518T1200Z/</value>
+</cap:parameter>
+</entry>
+<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=PA126648C7E758.FreezeWatch.126648D89E40PA.CTPNPWCTP.16fee7e9d43f2bd57507918207f47902</id>
 <updated>2023-05-16T22:46:00-04:00</updated>
 <published>2023-05-16T22:46:00-04:00</published>
@@ -5241,39 +5304,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <value>/O.CAN.KBOX.FW.W.0004.000000T0000Z-230517T0000Z/
 /O.UPG.KBOX.FW.A.0003.230517T1200Z-230518T0000Z/
 /O.NEW.KBOX.FW.W.0005.230517T1200Z-230518T0000Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=SC126648C83960.FloodAdvisory.126648C8BFC0SC.GSPFLSGSP.10c6622f3db0b170b01c7ec5db69560c</id>
-<updated>2023-05-17T00:56:00-04:00</updated>
-<published>2023-05-17T00:56:00-04:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Flood Advisory issued May 17 at 12:56AM EDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=SC126648C83960.FloodAdvisory.126648C8BFC0SC.GSPFLSGSP.10c6622f3db0b170b01c7ec5db69560c"/>
-<summary>...FLOOD ADVISORY IN EFFECT UNTIL 4 AM EDT EARLY THIS MORNING... * WHAT...Flooding caused by excessive rainfall is expected. * WHERE...Greenville County in Upstate South Carolina. * WHEN...Until 400 AM EDT. * IMPACTS...Minor flooding in low-lying and poor drainage areas. * ADDITIONAL DETAILS...</summary>
-<cap:event>Flood Advisory</cap:event>
-<cap:effective>2023-05-17T00:56:00-04:00</cap:effective>
-<cap:expires>2023-05-17T04:00:00-04:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Greenville</cap:areaDesc>
-<cap:polygon>34.92,-82.23 34.86,-82.23 34.81,-82.21 34.8,-82.3 34.84,-82.35 34.92,-82.39 34.95,-82.39 34.98,-82.34 34.98,-82.3 34.95,-82.25 34.92,-82.23</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>045045</value>
-<valueName>UGC</valueName>
-<value>SCC045</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.NEW.KGSP.FA.Y.0037.230517T0456Z-230517T0800Z/
-/00000.N.ER.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
 </cap:parameter>
 </entry>
 <entry>
