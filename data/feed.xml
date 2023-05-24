@@ -16,11 +16,11 @@ xmlns = 'http://www.w3.org/2005/Atom'
 xmlns:cap = 'urn:oasis:names:tc:emergency:cap:1.1'
 xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 >
-<!-- http-date = Wed, 24 May 2023 00:12:00 GMT -->
+<!-- http-date = Wed, 24 May 2023 00:47:00 GMT -->
 <id>https://alerts.weather.gov/cap/us.php?x=0</id>
 <logo>http://alerts.weather.gov/images/xml_logo.gif</logo>
 <generator>NWS CAP Server</generator>
-<updated>2023-05-23T19:12:00-05:00</updated>
+<updated>2023-05-23T19:47:00-05:00</updated>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
@@ -418,38 +418,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=AL12664926AD74.SpecialWeatherStatement.126649326894AL.MOBSPSMOB.963f122cc0701fe86ab34eb0447cc041</id>
-<updated>2023-05-23T18:57:00-05:00</updated>
-<published>2023-05-23T18:57:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Special Weather Statement issued May 23 at 6:57PM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=AL12664926AD74.SpecialWeatherStatement.126649326894AL.MOBSPSMOB.963f122cc0701fe86ab34eb0447cc041"/>
-<summary>...A strong thunderstorm will impact portions of southwestern Mobile County through 745 PM CDT... At 656 PM CDT, National Weather Service doppler radar indicated a strong thunderstorm 5 miles south of Tanner Williams, or 11 miles north of Grand Bay, moving south at 20 mph. HAZARD...Winds between 30 and 40 mph and half inch hail.</summary>
-<cap:event>Special Weather Statement</cap:event>
-<cap:effective>2023-05-23T18:57:00-05:00</cap:effective>
-<cap:expires>2023-05-23T19:45:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Observed</cap:certainty>
-<cap:areaDesc>Mobile Central; Mobile Coastal</cap:areaDesc>
-<cap:polygon>30.39,-88.31 30.4,-88.34 30.39,-88.35 30.4,-88.36 30.39,-88.37 30.4,-88.37 30.39,-88.38 30.38,-88.38 30.39,-88.4 30.7,-88.41 30.71,-88.3 30.37,-88.2 30.37,-88.24 30.39,-88.29 30.37,-88.31 30.39,-88.31</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>001097</value>
-<valueName>UGC</valueName>
-<value>ALZ263 ALZ265</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value></value>
-</cap:parameter>
-</entry>
-<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=AL1266492605E0.FloodWatch.126649334160AL.TAEFFATAE.69592232155984bc7d3e5dc5f3dbf62b</id>
 <updated>2023-05-23T14:28:00-05:00</updated>
 <published>2023-05-23T14:28:00-05:00</published>
@@ -578,6 +546,38 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value></value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=CA126649326254.SevereThunderstormWarning.1266493283ECCA.STOSVRSTO.a8d1301ecb62f31fa7a4fde7277fe1bd</id>
+<updated>2023-05-23T17:29:00-07:00</updated>
+<published>2023-05-23T17:29:00-07:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Severe Thunderstorm Warning issued May 23 at 5:29PM PDT until May 23 at 6:15PM PDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CA126649326254.SevereThunderstormWarning.1266493283ECCA.STOSVRSTO.a8d1301ecb62f31fa7a4fde7277fe1bd"/>
+<summary>The National Weather Service in Sacramento has issued a * Severe Thunderstorm Warning for... Central Shasta County in northern California... * Until 615 PM PDT. * At 528 PM PDT, a severe thunderstorm was located over Lakehead-Lakeshore, or 13 miles north of Shasta Dam, moving south</summary>
+<cap:event>Severe Thunderstorm Warning</cap:event>
+<cap:effective>2023-05-23T17:29:00-07:00</cap:effective>
+<cap:expires>2023-05-23T18:15:00-07:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Immediate</cap:urgency>
+<cap:severity>Severe</cap:severity>
+<cap:certainty>Observed</cap:certainty>
+<cap:areaDesc>Shasta</cap:areaDesc>
+<cap:polygon>40.9,-122.48 40.94,-122.45 40.93,-122.34 40.83,-122.41 40.9,-122.48</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>006089</value>
+<valueName>UGC</valueName>
+<value>CAC089</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.NEW.KSTO.SV.W.0016.230524T0029Z-230524T0115Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -778,95 +778,31 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=CO1266493259BC.SpecialWeatherStatement.1266493262B8CO.PUBSPSPUB.00cfd87c0d07538d53338fe320c19d93</id>
-<updated>2023-05-23T18:07:00-06:00</updated>
-<published>2023-05-23T18:07:00-06:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=CO126649326768.SpecialWeatherStatement.1266493283ECCO.PUBSPSPUB.56dbfcc50d12d70701e44414c37607c8</id>
+<updated>2023-05-23T18:42:00-06:00</updated>
+<published>2023-05-23T18:42:00-06:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Special Weather Statement issued May 23 at 6:07PM MDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CO1266493259BC.SpecialWeatherStatement.1266493262B8CO.PUBSPSPUB.00cfd87c0d07538d53338fe320c19d93"/>
-<summary>...A strong thunderstorm will impact portions of central Saguache County through 630 PM MDT... At 607 PM MDT, Doppler radar was tracking a strong thunderstorm 8 miles north of Moffat, or 15 miles southwest of Hayden Pass Burn Scar, moving north at 10 mph. HAZARD...Winds in excess of 40 mph and half inch hail.</summary>
+<title>Special Weather Statement issued May 23 at 6:42PM MDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CO126649326768.SpecialWeatherStatement.1266493283ECCO.PUBSPSPUB.56dbfcc50d12d70701e44414c37607c8"/>
+<summary>...A strong thunderstorm will impact portions of east central Fremont County through 715 PM MDT... At 642 PM MDT, Doppler radar was tracking a strong thunderstorm 9 miles northwest of Penrose, or 24 miles southwest of Colorado Springs, moving northwest at 5 mph. HAZARD...Winds in excess of 40 mph and half inch hail.</summary>
 <cap:event>Special Weather Statement</cap:event>
-<cap:effective>2023-05-23T18:07:00-06:00</cap:effective>
-<cap:expires>2023-05-23T18:30:00-06:00</cap:expires>
+<cap:effective>2023-05-23T18:42:00-06:00</cap:effective>
+<cap:expires>2023-05-23T19:15:00-06:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
 <cap:category>Met</cap:category>
 <cap:urgency>Expected</cap:urgency>
 <cap:severity>Minor</cap:severity>
 <cap:certainty>Observed</cap:certainty>
-<cap:areaDesc>Del Norte Vicinity, Northern San Luis Valley Below 8500 Ft</cap:areaDesc>
-<cap:polygon>38.21,-105.83 38.19,-105.83 38.04,-105.88 38.04,-105.95 38.17,-105.98 38.18,-105.98 38.2,-105.99 38.21,-105.83</cap:polygon>
+<cap:areaDesc>Canon City Vicinity, Eastern Fremont County; Teller County, Rampart Range above 7500fT, Pike&apos;s Peak Between 7500 And 11000 Ft</cap:areaDesc>
+<cap:polygon>38.56,-105.03 38.51,-105.05 38.52,-105.17 38.62,-105.12 38.56,-105.03</cap:polygon>
 <cap:geocode>
 <valueName>FIPS6</valueName>
-<value>008105 008109</value>
+<value>008041 008043 008119</value>
 <valueName>UGC</valueName>
-<value>COZ069</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value></value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=CO12664926AB80.SpecialWeatherStatement.126649325CDCCO.PUBSPSPUB.386ca411f1fc11981bd66d8ddb253714</id>
-<updated>2023-05-23T17:52:00-06:00</updated>
-<published>2023-05-23T17:52:00-06:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Special Weather Statement issued May 23 at 5:52PM MDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CO12664926AB80.SpecialWeatherStatement.126649325CDCCO.PUBSPSPUB.386ca411f1fc11981bd66d8ddb253714"/>
-<summary>...Strong thunderstorms will impact portions of southwestern Costilla County through 615 PM MDT... At 551 PM MDT, Doppler radar was tracking strong thunderstorms along a line extending from near San Luis to near Mesita to 7 miles west of San Acacio. Movement was southeast at 5 mph. HAZARD...Winds in excess of 40 mph and half inch hail.</summary>
-<cap:event>Special Weather Statement</cap:event>
-<cap:effective>2023-05-23T17:52:00-06:00</cap:effective>
-<cap:expires>2023-05-23T18:15:00-06:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Observed</cap:certainty>
-<cap:areaDesc>Southern San Luis Valley</cap:areaDesc>
-<cap:polygon>37.14,-105.38 37.07,-105.51 37.11,-105.72 37.21,-105.73 37.18,-105.62 37.21,-105.48 37.14,-105.38</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>008021 008023</value>
-<valueName>UGC</valueName>
-<value>COZ071</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value></value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=CO12664926A9F0.SpecialWeatherStatement.126649325CDCCO.PUBSPSPUB.f9a25791536c1095e4adcb1cb71b449c</id>
-<updated>2023-05-23T17:48:00-06:00</updated>
-<published>2023-05-23T17:48:00-06:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Special Weather Statement issued May 23 at 5:48PM MDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CO12664926A9F0.SpecialWeatherStatement.126649325CDCCO.PUBSPSPUB.f9a25791536c1095e4adcb1cb71b449c"/>
-<summary>...A strong thunderstorm will impact portions of north central Costilla County through 615 PM MDT... At 547 PM MDT, Doppler radar was tracking a strong thunderstorm over Blanca, or 15 miles west of Spring Burn Scar south of Highway 160 in Costilla county, moving northeast at 5 mph. HAZARD...Winds in excess of 40 mph and half inch hail.</summary>
-<cap:event>Special Weather Statement</cap:event>
-<cap:effective>2023-05-23T17:48:00-06:00</cap:effective>
-<cap:expires>2023-05-23T18:15:00-06:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Observed</cap:certainty>
-<cap:areaDesc>Northern Sangre de Cristo Mountains Between 8500 And 11000 Ft; Southern Sangre De Cristo Mountains Between 7500 and 11000 Ft</cap:areaDesc>
-<cap:polygon>37.39,-105.52 37.45,-105.55 37.56,-105.42 37.4,-105.28 37.39,-105.52</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>008023 008055 008071 008109</value>
-<valueName>UGC</valueName>
-<value>COZ072 COZ074</value>
+<value>COZ081 COZ083</value>
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
@@ -1334,18 +1270,50 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=FL12664926AB80.FloodAdvisory.126649325CDCFL.MFLFLSMFL.312f39f0c5ba2efbd14919f5f923f38b</id>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=FL1266493261F0.SpecialWeatherStatement.126649327E10FL.MFLSPSMFL.ea28c59795d4dd006223471b118bd80c</id>
+<updated>2023-05-23T20:28:00-04:00</updated>
+<published>2023-05-23T20:28:00-04:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Special Weather Statement issued May 23 at 8:28PM EDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=FL1266493261F0.SpecialWeatherStatement.126649327E10FL.MFLSPSMFL.ea28c59795d4dd006223471b118bd80c"/>
+<summary>...Strong thunderstorms will impact portions of northeastern Collier and southeastern Hendry Counties through 900 PM EDT... At 828 PM EDT, National Weather Service meteorologists were tracking strong thunderstorms along a line extending from 8 miles northwest of Big Cypress Seminole Reservation to 9 miles southwest of Hendry Correctional. Movement was east at 30 mph.</summary>
+<cap:event>Special Weather Statement</cap:event>
+<cap:effective>2023-05-23T20:28:00-04:00</cap:effective>
+<cap:expires>2023-05-23T21:00:00-04:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Observed</cap:certainty>
+<cap:areaDesc>Hendry; Inland Collier County</cap:areaDesc>
+<cap:polygon>26.47,-81.11 26.47,-80.88 26.21,-80.88 26.02,-81.15 26.21,-81.5 26.47,-81.11</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>012021 012051</value>
+<valueName>UGC</valueName>
+<value>FLZ066 FLZ070</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value></value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=FL12664926AB80.FloodAdvisory.1266493283ECFL.MFLFLSMFL.312f39f0c5ba2efbd14919f5f923f38b</id>
 <updated>2023-05-23T19:52:00-04:00</updated>
 <published>2023-05-23T19:52:00-04:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
 <title>Flood Advisory issued May 23 at 7:52PM EDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=FL12664926AB80.FloodAdvisory.126649325CDCFL.MFLFLSMFL.312f39f0c5ba2efbd14919f5f923f38b"/>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=FL12664926AB80.FloodAdvisory.1266493283ECFL.MFLFLSMFL.312f39f0c5ba2efbd14919f5f923f38b"/>
 <summary>...FLOOD ADVISORY REMAINS IN EFFECT UNTIL 915 PM EDT THIS EVENING... * WHAT...Flooding caused by excessive rainfall continues. * WHERE...A portion of southern Florida, including the following county, Glades. * WHEN...Until 915 PM EDT. * IMPACTS...Minor flooding in low-lying and poor drainage areas.</summary>
 <cap:event>Flood Advisory</cap:event>
 <cap:effective>2023-05-23T19:52:00-04:00</cap:effective>
-<cap:expires>2023-05-23T20:15:00-04:00</cap:expires>
+<cap:expires>2023-05-23T21:15:00-04:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
 <cap:category>Met</cap:category>
@@ -1367,18 +1335,18 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=FL12664926A928.FloodAdvisory.126649325CDCFL.MLBFLSMLB.c9825a3145c4167f3f747f1b6fb7de3c</id>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=FL12664926A928.FloodAdvisory.1266493283ECFL.MLBFLSMLB.c9825a3145c4167f3f747f1b6fb7de3c</id>
 <updated>2023-05-23T19:46:00-04:00</updated>
 <published>2023-05-23T19:46:00-04:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
 <title>Flood Advisory issued May 23 at 7:46PM EDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=FL12664926A928.FloodAdvisory.126649325CDCFL.MLBFLSMLB.c9825a3145c4167f3f747f1b6fb7de3c"/>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=FL12664926A928.FloodAdvisory.1266493283ECFL.MLBFLSMLB.c9825a3145c4167f3f747f1b6fb7de3c"/>
 <summary>...FLOOD ADVISORY IN EFFECT UNTIL 915 PM EDT THIS EVENING... * WHAT...Flooding caused by excessive rainfall is expected. * WHERE...A portion of east central Florida, including the following county, Lake. * WHEN...Until 915 PM EDT. * IMPACTS...Minor flooding in low-lying and poor drainage areas.</summary>
 <cap:event>Flood Advisory</cap:event>
 <cap:effective>2023-05-23T19:46:00-04:00</cap:effective>
-<cap:expires>2023-05-23T20:15:00-04:00</cap:expires>
+<cap:expires>2023-05-23T21:15:00-04:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
 <cap:category>Met</cap:category>
@@ -1400,18 +1368,18 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=FL126649269BE0.FloodAdvisory.126649325CDCFL.TAEFLSTAE.0b5ec8e359a55e8f3042685daa6e6edf</id>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=FL126649269BE0.FloodAdvisory.1266493283ECFL.TAEFLSTAE.0b5ec8e359a55e8f3042685daa6e6edf</id>
 <updated>2023-05-23T19:12:00-04:00</updated>
 <published>2023-05-23T19:12:00-04:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
 <title>Flood Advisory issued May 23 at 7:12PM EDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=FL126649269BE0.FloodAdvisory.126649325CDCFL.TAEFLSTAE.0b5ec8e359a55e8f3042685daa6e6edf"/>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=FL126649269BE0.FloodAdvisory.1266493283ECFL.TAEFLSTAE.0b5ec8e359a55e8f3042685daa6e6edf"/>
 <summary>...FLOOD ADVISORY IN EFFECT UNTIL 915 PM EDT THIS EVENING... * WHAT...Flooding caused by excessive rainfall is expected. * WHERE...A portion of Big Bend Florida, including the following county, Taylor. * WHEN...Until 915 PM EDT. * IMPACTS...Minor flooding in low-lying and poor drainage areas.</summary>
 <cap:event>Flood Advisory</cap:event>
 <cap:effective>2023-05-23T19:12:00-04:00</cap:effective>
-<cap:expires>2023-05-23T20:15:00-04:00</cap:expires>
+<cap:expires>2023-05-23T21:15:00-04:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
 <cap:category>Met</cap:category>
@@ -1433,97 +1401,64 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=FL126649267E94.FloodAdvisory.126649325CDCFL.TAEFLSTAE.2afc1f95f1c3dcd670d724191db12645</id>
-<updated>2023-05-23T18:37:00-04:00</updated>
-<published>2023-05-23T18:37:00-04:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Flood Advisory issued May 23 at 6:37PM EDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=FL126649267E94.FloodAdvisory.126649325CDCFL.TAEFLSTAE.2afc1f95f1c3dcd670d724191db12645"/>
-<summary>...FLOOD ADVISORY IN EFFECT UNTIL 830 PM EDT THIS EVENING... * WHAT...Flooding caused by excessive rainfall is expected. * WHERE...A portion of Big Bend Florida, including the following county, Lafayette. * WHEN...Until 830 PM EDT. * IMPACTS...Minor flooding in low-lying and poor drainage areas.</summary>
-<cap:event>Flood Advisory</cap:event>
-<cap:effective>2023-05-23T18:37:00-04:00</cap:effective>
-<cap:expires>2023-05-23T20:15:00-04:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Lafayette</cap:areaDesc>
-<cap:polygon>30.07,-83.15 30.06,-83.17 30.04,-83.18 30.01,-83.22 29.99,-83.26 29.98,-83.29 29.99,-83.33 30,-83.34 30.02,-83.34 30.08,-83.3 30.1,-83.28 30.13,-83.23 30.12,-83.23 30.11,-83.22 30.1,-83.21 30.11,-83.2 30.1,-83.19 30.1,-83.17 30.11,-83.16 30.1,-83.15 30.07,-83.15</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>012067</value>
-<valueName>UGC</valueName>
-<value>FLC067</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.NEW.KTAE.FA.Y.0092.230523T2237Z-230524T0030Z/
-/00000.N.ER.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=FL12664926778C.FloodAdvisory.126649325CDCFL.TAEFLSTAE.3551b3f2b1f2edcddd08ff4ecf948e29</id>
-<updated>2023-05-23T18:19:00-04:00</updated>
-<published>2023-05-23T18:19:00-04:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Flood Advisory issued May 23 at 6:19PM EDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=FL12664926778C.FloodAdvisory.126649325CDCFL.TAEFLSTAE.3551b3f2b1f2edcddd08ff4ecf948e29"/>
-<summary>...FLOOD ADVISORY IN EFFECT UNTIL 815 PM EDT THIS EVENING... * WHAT...Flooding caused by excessive rainfall is expected. * WHERE...A portion of Big Bend Florida, including the following counties, Dixie and Taylor. * WHEN...Until 815 PM EDT. * IMPACTS...Minor flooding in low-lying and poor drainage areas.</summary>
-<cap:event>Flood Advisory</cap:event>
-<cap:effective>2023-05-23T18:19:00-04:00</cap:effective>
-<cap:expires>2023-05-23T20:15:00-04:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Dixie; Taylor</cap:areaDesc>
-<cap:polygon>29.69,-83.44 29.73,-83.44 29.76,-83.41 29.79,-83.38 29.8,-83.33 29.8,-83.3 29.77,-83.26 29.74,-83.23 29.71,-83.23 29.68,-83.2 29.65,-83.23 29.63,-83.28 29.62,-83.32 29.62,-83.37 29.62,-83.4 29.67,-83.41 29.69,-83.44</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>012029 012123</value>
-<valueName>UGC</valueName>
-<value>FLC029 FLC123</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.NEW.KTAE.FA.Y.0091.230523T2219Z-230524T0015Z/
-/00000.N.ER.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=FL1266492605E0.FloodWatch.126649325CDCFL.TAEFFATAE.4899febdb23eb3582e0a4398e34d5512</id>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=FL1266492605E0.FloodWatch.126649327E10FL.TAEFFATAE.be92c6a9e0b7475edf17cfc9fac4e433</id>
 <updated>2023-05-23T15:28:00-04:00</updated>
 <published>2023-05-23T15:28:00-04:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
 <title>Flood Watch issued May 23 at 3:28PM EDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=FL1266492605E0.FloodWatch.126649325CDCFL.TAEFFATAE.4899febdb23eb3582e0a4398e34d5512"/>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=FL1266492605E0.FloodWatch.126649327E10FL.TAEFFATAE.be92c6a9e0b7475edf17cfc9fac4e433"/>
 <summary>...FLOOD WATCH REMAINS IN EFFECT UNTIL 1 AM CDT/2 AM EDT/ WEDNESDAY... * WHAT...Flash flooding caused by excessive rainfall continues to be possible. * WHERE...Portions of southeast Alabama, Florida and Georgia, including the following areas, in southeast Alabama, Geneva and</summary>
 <cap:event>Flood Watch</cap:event>
 <cap:effective>2023-05-23T15:28:00-04:00</cap:effective>
-<cap:expires>2023-05-23T20:15:00-04:00</cap:expires>
+<cap:expires>2023-05-23T21:00:00-04:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
 <cap:category>Met</cap:category>
 <cap:urgency>Future</cap:urgency>
 <cap:severity>Moderate</cap:severity>
 <cap:certainty>Possible</cap:certainty>
-<cap:areaDesc>Calhoun; Central Walton; Coastal Bay; Coastal Franklin; Coastal Gulf; Coastal Jefferson; Gadsden; Holmes; Inland Bay; Inland Dixie; Inland Franklin; Inland Gulf; Inland Jefferson; Inland Taylor; Inland Wakulla; Jackson; Lafayette; Leon; Liberty; Madison; North Walton; South Walton; Washington</cap:areaDesc>
+<cap:areaDesc>Coastal Bay; Coastal Franklin; Coastal Gulf; Coastal Jefferson; South Walton</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>012005 012037 012045 012065 012131</value>
+<valueName>UGC</valueName>
+<value>FLZ108 FLZ112 FLZ114 FLZ115 FLZ118</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KTAE.FA.A.0004.000000T0000Z-230524T0600Z/
+/00000.0.ER.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=FL1266492605E0.FloodWatch.1266493283ECFL.TAEFFATAE.cd01659fa14663f869310e85f721f738</id>
+<updated>2023-05-23T15:28:00-04:00</updated>
+<published>2023-05-23T15:28:00-04:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Flood Watch issued May 23 at 3:28PM EDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=FL1266492605E0.FloodWatch.1266493283ECFL.TAEFFATAE.cd01659fa14663f869310e85f721f738"/>
+<summary>...FLOOD WATCH REMAINS IN EFFECT UNTIL 1 AM CDT/2 AM EDT/ WEDNESDAY... * WHAT...Flash flooding caused by excessive rainfall continues to be possible. * WHERE...Portions of southeast Alabama, Florida and Georgia, including the following areas, in southeast Alabama, Geneva and</summary>
+<cap:event>Flood Watch</cap:event>
+<cap:effective>2023-05-23T15:28:00-04:00</cap:effective>
+<cap:expires>2023-05-23T21:15:00-04:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Future</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Possible</cap:certainty>
+<cap:areaDesc>Calhoun; Central Walton; Gadsden; Holmes; Inland Bay; Inland Dixie; Inland Franklin; Inland Gulf; Inland Jefferson; Inland Taylor; Inland Wakulla; Jackson; Lafayette; Leon; Liberty; Madison; North Walton; Washington</cap:areaDesc>
 <cap:polygon></cap:polygon>
 <cap:geocode>
 <valueName>FIPS6</valueName>
 <value>012005 012013 012029 012037 012039 012045 012059 012063 012065 012067 012073 012077 012079 012123 012129 012131 012133</value>
 <valueName>UGC</valueName>
-<value>FLZ007 FLZ008 FLZ009 FLZ010 FLZ011 FLZ012 FLZ013 FLZ014 FLZ015 FLZ016 FLZ017 FLZ018 FLZ019 FLZ026 FLZ027 FLZ028 FLZ029 FLZ034 FLZ108 FLZ112 FLZ114 FLZ115 FLZ118</value>
+<value>FLZ007 FLZ008 FLZ009 FLZ010 FLZ011 FLZ012 FLZ013 FLZ014 FLZ015 FLZ016 FLZ017 FLZ018 FLZ019 FLZ026 FLZ027 FLZ028 FLZ029 FLZ034</value>
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
@@ -1759,17 +1694,50 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=IA126649262908.FloodWarning.126649445860IA.DVNFLSDVN.4a0bfee0a8b3f693f1e1d3a3696e52a5</id>
-<updated>2023-05-23T15:18:00-05:00</updated>
-<published>2023-05-23T15:18:00-05:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=IA1266493266A0.FloodWarning.126649436E00IA.DVNFLSDVN.6552efdeba2ba126ed12409ba0520ca1</id>
+<updated>2023-05-23T19:40:00-05:00</updated>
+<published>2023-05-23T19:40:00-05:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Flood Warning issued May 23 at 3:18PM CDT until May 25 at 1:00PM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=IA126649262908.FloodWarning.126649445860IA.DVNFLSDVN.4a0bfee0a8b3f693f1e1d3a3696e52a5"/>
-<summary>...The Flood Warning continues for the following rivers in Iowa... Illinois... Mississippi River at Burlington affecting Des Moines, Lee, Henderson and Hancock Counties. Mississippi River at Gladstone LD18 affecting Des Moines and Henderson Counties.</summary>
+<title>Flood Warning issued May 23 at 7:40PM CDT until May 25 at 7:00AM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=IA1266493266A0.FloodWarning.126649436E00IA.DVNFLSDVN.6552efdeba2ba126ed12409ba0520ca1"/>
+<summary>...The Flood Warning continues for the following rivers in Illinois...Iowa... Mississippi River at Burlington affecting Lee, Hancock, Henderson and Des Moines Counties. Mississippi River at Gladstone LD18 affecting Henderson and Des Moines Counties.</summary>
 <cap:event>Flood Warning</cap:event>
-<cap:effective>2023-05-23T15:18:00-05:00</cap:effective>
+<cap:effective>2023-05-23T19:40:00-05:00</cap:effective>
+<cap:expires>2023-05-25T07:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Des Moines; Lee</cap:areaDesc>
+<cap:polygon>40.86,-91.1 40.84,-91.05 40.62,-91.08 40.61,-91.42 40.67,-91.18 40.86,-91.1</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>019057 019111</value>
+<valueName>UGC</valueName>
+<value>IAC057 IAC111</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.EXT.KDVN.FL.W.0014.000000T0000Z-230525T1200Z/
+/BRLI4.1.RS.230418T1245Z.230504T1930Z.230524T1800Z.NO/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=IA1266493266A0.FloodWarning.126649445860IA.DVNFLSDVN.4a0bfee0a8b3f693f1e1d3a3696e52a5</id>
+<updated>2023-05-23T19:40:00-05:00</updated>
+<published>2023-05-23T19:40:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Flood Warning issued May 23 at 7:40PM CDT until May 25 at 1:00PM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=IA1266493266A0.FloodWarning.126649445860IA.DVNFLSDVN.4a0bfee0a8b3f693f1e1d3a3696e52a5"/>
+<summary>...The Flood Warning continues for the following rivers in Illinois...Iowa... Mississippi River at Burlington affecting Lee, Hancock, Henderson and Des Moines Counties. Mississippi River at Gladstone LD18 affecting Henderson and Des Moines Counties.</summary>
+<cap:event>Flood Warning</cap:event>
+<cap:effective>2023-05-23T19:40:00-05:00</cap:effective>
 <cap:expires>2023-05-25T13:00:00-05:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
@@ -1792,112 +1760,79 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=IA126649262908.FloodWarning.126649445860IA.DVNFLSDVN.6552efdeba2ba126ed12409ba0520ca1</id>
-<updated>2023-05-23T15:18:00-05:00</updated>
-<published>2023-05-23T15:18:00-05:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=ID126649326894.FlashFloodWarning.12664932B6B4ID.PIHFFWPIH.17450485fab643bf01fa364e99e99257</id>
+<updated>2023-05-23T18:45:00-06:00</updated>
+<published>2023-05-23T18:45:00-06:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Flood Warning issued May 23 at 3:18PM CDT until May 25 at 1:00PM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=IA126649262908.FloodWarning.126649445860IA.DVNFLSDVN.6552efdeba2ba126ed12409ba0520ca1"/>
-<summary>...The Flood Warning continues for the following rivers in Iowa... Illinois... Mississippi River at Burlington affecting Des Moines, Lee, Henderson and Hancock Counties. Mississippi River at Gladstone LD18 affecting Des Moines and Henderson Counties.</summary>
-<cap:event>Flood Warning</cap:event>
-<cap:effective>2023-05-23T15:18:00-05:00</cap:effective>
-<cap:expires>2023-05-25T13:00:00-05:00</cap:expires>
+<title>Flash Flood Warning issued May 23 at 6:45PM MDT until May 23 at 8:45PM MDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=ID126649326894.FlashFloodWarning.12664932B6B4ID.PIHFFWPIH.17450485fab643bf01fa364e99e99257"/>
+<summary>The National Weather Service in Pocatello has issued a * Flash Flood Warning for... Central Bingham County in southeastern Idaho... North Central Bonneville County in southeastern Idaho... * Until 845 PM MDT. * At 645 PM MDT, Doppler radar indicated thunderstorms producing</summary>
+<cap:event>Flash Flood Warning</cap:event>
+<cap:effective>2023-05-23T18:45:00-06:00</cap:effective>
+<cap:expires>2023-05-23T20:45:00-06:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
 <cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Moderate</cap:severity>
+<cap:urgency>Immediate</cap:urgency>
+<cap:severity>Severe</cap:severity>
 <cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Des Moines; Lee</cap:areaDesc>
-<cap:polygon>40.86,-91.1 40.84,-91.05 40.62,-91.08 40.61,-91.42 40.67,-91.18 40.86,-91.1</cap:polygon>
+<cap:areaDesc>Bingham; Bonneville</cap:areaDesc>
+<cap:polygon>43.45,-112.13 43.49,-112.11 43.54,-112.11 43.57,-112.08 43.59,-111.93 43.47,-111.94 43.4,-111.98 43.37,-112.05 43.39,-112.09 43.45,-112.13</cap:polygon>
 <cap:geocode>
 <valueName>FIPS6</valueName>
-<value>019057 019111</value>
+<value>016011 016019</value>
 <valueName>UGC</valueName>
-<value>IAC057 IAC111</value>
+<value>IDC011 IDC019</value>
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
-<value>/O.CON.KDVN.FL.W.0014.000000T0000Z-230525T1800Z/
-/BRLI4.1.RS.230418T1245Z.230504T1930Z.230525T0000Z.NO/</value>
+<value>/O.NEW.KPIH.FF.W.0001.230524T0045Z-230524T0245Z/
+/00000.0.ER.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=ID12664926A860.SevereThunderstormWarning.1266493262B8ID.PIHSVRPIH.0ad44056e9cba359e275171f1e1efc6e</id>
-<updated>2023-05-23T17:44:00-06:00</updated>
-<published>2023-05-23T17:44:00-06:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=ID126649325FFC.SevereThunderstormWarning.126649327E10ID.PIHSVRPIH.beaf73b2379315b99f0c66001e550283</id>
+<updated>2023-05-23T18:23:00-06:00</updated>
+<published>2023-05-23T18:23:00-06:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Severe Thunderstorm Warning issued May 23 at 5:44PM MDT until May 23 at 6:30PM MDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=ID12664926A860.SevereThunderstormWarning.1266493262B8ID.PIHSVRPIH.0ad44056e9cba359e275171f1e1efc6e"/>
-<summary>The National Weather Service in Pocatello has issued a * Severe Thunderstorm Warning for... Northern Bannock County in southeastern Idaho... West central Bonneville County in southeastern Idaho... Central Bingham County in southeastern Idaho... * Until 630 PM MDT.</summary>
+<title>Severe Thunderstorm Warning issued May 23 at 6:23PM MDT until May 23 at 7:00PM MDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=ID126649325FFC.SevereThunderstormWarning.126649327E10ID.PIHSVRPIH.beaf73b2379315b99f0c66001e550283"/>
+<summary>The National Weather Service in Pocatello has issued a * Severe Thunderstorm Warning for... North central Bonneville County in southeastern Idaho... East central Bingham County in southeastern Idaho... * Until 700 PM MDT. * At 622 PM MDT, a severe thunderstorm was located over Goshen,</summary>
 <cap:event>Severe Thunderstorm Warning</cap:event>
-<cap:effective>2023-05-23T17:44:00-06:00</cap:effective>
-<cap:expires>2023-05-23T18:30:00-06:00</cap:expires>
+<cap:effective>2023-05-23T18:23:00-06:00</cap:effective>
+<cap:expires>2023-05-23T19:00:00-06:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
 <cap:category>Met</cap:category>
 <cap:urgency>Immediate</cap:urgency>
 <cap:severity>Severe</cap:severity>
 <cap:certainty>Observed</cap:certainty>
-<cap:areaDesc>Bannock; Bingham; Bonneville</cap:areaDesc>
-<cap:polygon>43,-112.36 43.14,-112.52 43.52,-112.24 43.22,-111.82 43,-112.36</cap:polygon>
+<cap:areaDesc>Bingham; Bonneville</cap:areaDesc>
+<cap:polygon>43.28,-112.03 43.32,-112.14 43.6,-112.04 43.44,-111.71 43.28,-112.03</cap:polygon>
 <cap:geocode>
 <valueName>FIPS6</valueName>
-<value>016005 016011 016019</value>
+<value>016011 016019</value>
 <valueName>UGC</valueName>
-<value>IDC005 IDC011 IDC019</value>
+<value>IDC011 IDC019</value>
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
-<value>/O.NEW.KPIH.SV.W.0004.230523T2344Z-230524T0030Z/</value>
+<value>/O.NEW.KPIH.SV.W.0005.230524T0023Z-230524T0100Z/</value>
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=ID12664925D5D4.FloodAdvisory.1266493262B8ID.PIHFLSPIH.750cfdb20f9c03a4749efd42d6473ab3</id>
-<updated>2023-05-23T12:05:00-06:00</updated>
-<published>2023-05-23T12:05:00-06:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Flood Advisory issued May 23 at 12:05PM MDT until May 23 at 6:30PM MDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=ID12664925D5D4.FloodAdvisory.1266493262B8ID.PIHFLSPIH.750cfdb20f9c03a4749efd42d6473ab3"/>
-<summary>...FLOOD ADVISORY REMAINS IN EFFECT UNTIL 4 PM MDT WEDNESDAY... * WHAT...Flooding caused by rain and snowmelt continues. * WHERE...A portion of southeast Idaho, including the following counties, Bear Lake, Caribou and Franklin. * WHEN...Until 400 PM MDT Wednesday. * IMPACTS...Flooding of rivers, creeks, streams, and other low-lying</summary>
-<cap:event>Flood Advisory</cap:event>
-<cap:effective>2023-05-23T12:05:00-06:00</cap:effective>
-<cap:expires>2023-05-23T18:30:00-06:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Bear Lake</cap:areaDesc>
-<cap:polygon>42.14,-111.58 42.2,-111.62 42.27,-111.56 42.32,-111.59 42.35,-111.55 42.57,-111.63 42.59,-111.37 42.55,-111.28 42.59,-111.25 42.57,-111.22 42.47,-111.24 42.51,-111.05 42,-111.05 42,-111.25 42.39,-111.29 42.39,-111.35 42,-111.42 42,-111.51 42.07,-111.52 42.1,-111.6 42.14,-111.58</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>016007</value>
-<valueName>UGC</valueName>
-<value>IDC007</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KPIH.FA.Y.0006.000000T0000Z-230524T2200Z/
-/00000.N.RS.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=ID12664925D5D4.FloodAdvisory.12664935B260ID.PIHFLSPIH.376ee67f6d3ed6370ff5375e3818d334</id>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=ID12664925D5D4.FloodAdvisory.12664935B260ID.PIHFLSPIH.91a20eea59b2afffb1f0802cbdd7f894</id>
 <updated>2023-05-23T12:05:00-06:00</updated>
 <published>2023-05-23T12:05:00-06:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
 <title>Flood Advisory issued May 23 at 12:05PM MDT until further notice by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=ID12664925D5D4.FloodAdvisory.12664935B260ID.PIHFLSPIH.376ee67f6d3ed6370ff5375e3818d334"/>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=ID12664925D5D4.FloodAdvisory.12664935B260ID.PIHFLSPIH.91a20eea59b2afffb1f0802cbdd7f894"/>
 <summary>...FLOOD ADVISORY REMAINS IN EFFECT UNTIL 4 PM MDT WEDNESDAY... * WHAT...Flooding caused by rain and snowmelt continues. * WHERE...A portion of southeast Idaho, including the following counties, Bear Lake, Caribou and Franklin. * WHEN...Until 400 PM MDT Wednesday. * IMPACTS...Flooding of rivers, creeks, streams, and other low-lying</summary>
 <cap:event>Flood Advisory</cap:event>
 <cap:effective>2023-05-23T12:05:00-06:00</cap:effective>
@@ -1908,13 +1843,13 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:urgency>Expected</cap:urgency>
 <cap:severity>Minor</cap:severity>
 <cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Caribou; Franklin</cap:areaDesc>
+<cap:areaDesc>Bear Lake; Caribou; Franklin</cap:areaDesc>
 <cap:polygon>42.14,-111.58 42.2,-111.62 42.27,-111.56 42.32,-111.59 42.35,-111.55 42.57,-111.63 42.59,-111.37 42.55,-111.28 42.59,-111.25 42.57,-111.22 42.47,-111.24 42.51,-111.05 42,-111.05 42,-111.25 42.39,-111.29 42.39,-111.35 42,-111.42 42,-111.51 42.07,-111.52 42.1,-111.6 42.14,-111.58</cap:polygon>
 <cap:geocode>
 <valueName>FIPS6</valueName>
-<value>016029 016041</value>
+<value>016007 016029 016041</value>
 <valueName>UGC</valueName>
-<value>IDC029 IDC041</value>
+<value>IDC007 IDC029 IDC041</value>
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
@@ -2319,18 +2254,18 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=IL126649262908.FloodWarning.126649445860IL.DVNFLSDVN.04c13ef9f3afd1bb96bf088bf3e9d5db</id>
-<updated>2023-05-23T15:18:00-05:00</updated>
-<published>2023-05-23T15:18:00-05:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=IL1266493266A0.FloodWarning.126649436E00IL.DVNFLSDVN.04c13ef9f3afd1bb96bf088bf3e9d5db</id>
+<updated>2023-05-23T19:40:00-05:00</updated>
+<published>2023-05-23T19:40:00-05:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Flood Warning issued May 23 at 3:18PM CDT until May 25 at 1:00PM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=IL126649262908.FloodWarning.126649445860IL.DVNFLSDVN.04c13ef9f3afd1bb96bf088bf3e9d5db"/>
-<summary>...The Flood Warning continues for the following rivers in Iowa... Illinois... Mississippi River at Burlington affecting Des Moines, Lee, Henderson and Hancock Counties. Mississippi River at Gladstone LD18 affecting Des Moines and Henderson Counties.</summary>
+<title>Flood Warning issued May 23 at 7:40PM CDT until May 25 at 7:00AM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=IL1266493266A0.FloodWarning.126649436E00IL.DVNFLSDVN.04c13ef9f3afd1bb96bf088bf3e9d5db"/>
+<summary>...The Flood Warning continues for the following rivers in Illinois...Iowa... Mississippi River at Burlington affecting Lee, Hancock, Henderson and Des Moines Counties. Mississippi River at Gladstone LD18 affecting Henderson and Des Moines Counties.</summary>
 <cap:event>Flood Warning</cap:event>
-<cap:effective>2023-05-23T15:18:00-05:00</cap:effective>
-<cap:expires>2023-05-25T13:00:00-05:00</cap:expires>
+<cap:effective>2023-05-23T19:40:00-05:00</cap:effective>
+<cap:expires>2023-05-25T07:00:00-05:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
 <cap:category>Met</cap:category>
@@ -2347,22 +2282,22 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
-<value>/O.CON.KDVN.FL.W.0014.000000T0000Z-230525T1800Z/
-/BRLI4.1.RS.230418T1245Z.230504T1930Z.230525T0000Z.NO/</value>
+<value>/O.EXT.KDVN.FL.W.0014.000000T0000Z-230525T1200Z/
+/BRLI4.1.RS.230418T1245Z.230504T1930Z.230524T1800Z.NO/</value>
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=IL126649262908.FloodWarning.126649445860IL.DVNFLSDVN.53bd2d6fc4c4e827ef5ddf4f356c25a8</id>
-<updated>2023-05-23T15:18:00-05:00</updated>
-<published>2023-05-23T15:18:00-05:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=IL1266493266A0.FloodWarning.126649445860IL.DVNFLSDVN.53bd2d6fc4c4e827ef5ddf4f356c25a8</id>
+<updated>2023-05-23T19:40:00-05:00</updated>
+<published>2023-05-23T19:40:00-05:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Flood Warning issued May 23 at 3:18PM CDT until May 25 at 1:00PM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=IL126649262908.FloodWarning.126649445860IL.DVNFLSDVN.53bd2d6fc4c4e827ef5ddf4f356c25a8"/>
-<summary>...The Flood Warning continues for the following rivers in Iowa... Illinois... Mississippi River at Burlington affecting Des Moines, Lee, Henderson and Hancock Counties. Mississippi River at Gladstone LD18 affecting Des Moines and Henderson Counties.</summary>
+<title>Flood Warning issued May 23 at 7:40PM CDT until May 25 at 1:00PM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=IL1266493266A0.FloodWarning.126649445860IL.DVNFLSDVN.53bd2d6fc4c4e827ef5ddf4f356c25a8"/>
+<summary>...The Flood Warning continues for the following rivers in Illinois...Iowa... Mississippi River at Burlington affecting Lee, Hancock, Henderson and Des Moines Counties. Mississippi River at Gladstone LD18 affecting Henderson and Des Moines Counties.</summary>
 <cap:event>Flood Warning</cap:event>
-<cap:effective>2023-05-23T15:18:00-05:00</cap:effective>
+<cap:effective>2023-05-23T19:40:00-05:00</cap:effective>
 <cap:expires>2023-05-25T13:00:00-05:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
@@ -3038,31 +2973,31 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=MT12664932582C.SpecialWeatherStatement.1266493262B8MT.BYZSPSBYZ.0adcc3e9971214a29bc2954e27ce9664</id>
-<updated>2023-05-23T18:03:00-06:00</updated>
-<published>2023-05-23T18:03:00-06:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=MT126649326448.SpecialWeatherStatement.126649327E10MT.BYZSPSBYZ.9e8d3c0e4828b10a1967c8e29abf9700</id>
+<updated>2023-05-23T18:34:00-06:00</updated>
+<published>2023-05-23T18:34:00-06:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Special Weather Statement issued May 23 at 6:03PM MDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MT12664932582C.SpecialWeatherStatement.1266493262B8MT.BYZSPSBYZ.0adcc3e9971214a29bc2954e27ce9664"/>
-<summary>...A strong thunderstorm will impact portions of northern Stillwater, southeastern Wheatland, southern Golden Valley and northeastern Sweet Grass Counties through 630 PM MDT... At 600 PM MDT, Doppler radar was tracking a strong thunderstorm near Deadmans Basin Reservoir, or 23 miles southeast of Harlowton, moving northeast at 35 mph.</summary>
+<title>Special Weather Statement issued May 23 at 6:34PM MDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MT126649326448.SpecialWeatherStatement.126649327E10MT.BYZSPSBYZ.9e8d3c0e4828b10a1967c8e29abf9700"/>
+<summary>...Strong thunderstorms will impact portions of north central Stillwater, southeastern Wheatland and southeastern Golden Valley Counties through 700 PM MDT... At 631 PM MDT, Doppler radar was tracking strong thunderstorms 7 miles south of Ryegate, or 31 miles southeast of Harlowton, moving northeast at 30 mph.</summary>
 <cap:event>Special Weather Statement</cap:event>
-<cap:effective>2023-05-23T18:03:00-06:00</cap:effective>
-<cap:expires>2023-05-23T18:30:00-06:00</cap:expires>
+<cap:effective>2023-05-23T18:34:00-06:00</cap:effective>
+<cap:expires>2023-05-23T19:00:00-06:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
 <cap:category>Met</cap:category>
 <cap:urgency>Expected</cap:urgency>
 <cap:severity>Minor</cap:severity>
 <cap:certainty>Observed</cap:certainty>
-<cap:areaDesc>Golden Valley; Northern Stillwater; Northern Sweet Grass; Southern Wheatland</cap:areaDesc>
-<cap:polygon>46.54,-109.36 46.4,-108.94 46.08,-109.45 46.19,-109.74 46.54,-109.48 46.54,-109.36</cap:polygon>
+<cap:areaDesc>Golden Valley; Northern Stillwater; Southern Wheatland</cap:areaDesc>
+<cap:polygon>46.36,-108.84 46.35,-108.83 46.32,-108.83 46.32,-108.82 46.3,-108.81 46.03,-109.25 46.13,-109.48 46.54,-109.32 46.36,-108.84</cap:polygon>
 <cap:geocode>
 <valueName>FIPS6</valueName>
-<value>030037 030095 030097 030107</value>
+<value>030037 030095 030107</value>
 <valueName>UGC</valueName>
-<value>MTZ034 MTZ042 MTZ141 MTZ228</value>
+<value>MTZ034 MTZ042 MTZ228</value>
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
@@ -3070,95 +3005,64 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=MT1266493257C8.SpecialWeatherStatement.126649326894MT.GGWSPSGGW.0eb10debbf9fe86644b7988941e74555</id>
-<updated>2023-05-23T18:02:00-06:00</updated>
-<published>2023-05-23T18:02:00-06:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=MT126649325DA4.FlashFloodWarning.12664932D20CMT.BYZFFWBYZ.e7a80f7b37779359f40a153d58c6d6e4</id>
+<updated>2023-05-23T18:17:00-06:00</updated>
+<published>2023-05-23T18:17:00-06:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Special Weather Statement issued May 23 at 6:02PM MDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MT1266493257C8.SpecialWeatherStatement.126649326894MT.GGWSPSGGW.0eb10debbf9fe86644b7988941e74555"/>
-<summary>...A strong thunderstorm will impact portions of southeastern Daniels, northwestern Roosevelt and west central Sheridan Counties through 645 PM MDT... At 601 PM MDT, Doppler radar was tracking a strong thunderstorm 7 miles northeast of Bredette, or 20 miles southeast of Scobey, moving north at 15 mph.</summary>
-<cap:event>Special Weather Statement</cap:event>
-<cap:effective>2023-05-23T18:02:00-06:00</cap:effective>
-<cap:expires>2023-05-23T18:45:00-06:00</cap:expires>
+<title>Flash Flood Warning issued May 23 at 6:17PM MDT until May 23 at 9:15PM MDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MT126649325DA4.FlashFloodWarning.12664932D20CMT.BYZFFWBYZ.e7a80f7b37779359f40a153d58c6d6e4"/>
+<summary>The National Weather Service in Billings has issued a * Flash Flood Warning for... Central Custer County in southeastern Montana... * Until 915 PM MDT. * At 617 PM MDT, Doppler radar indicated thunderstorms producing heavy rain across the warned area. Between 2 and 3 inches of rain</summary>
+<cap:event>Flash Flood Warning</cap:event>
+<cap:effective>2023-05-23T18:17:00-06:00</cap:effective>
+<cap:expires>2023-05-23T21:15:00-06:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
 <cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Observed</cap:certainty>
-<cap:areaDesc>Daniels; Sheridan; Western Roosevelt</cap:areaDesc>
-<cap:polygon>48.51,-105.03 48.51,-105.2 48.77,-105.42 48.83,-104.93 48.51,-105.03</cap:polygon>
+<cap:urgency>Immediate</cap:urgency>
+<cap:severity>Severe</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Custer</cap:areaDesc>
+<cap:polygon>46.27,-105.37 46.36,-105.4 46.4,-105.49 46.43,-105.58 46.44,-105.68 46.4,-105.76 46.34,-105.85 46.26,-105.8 46.25,-105.52 46.25,-105.5 46.27,-105.37</cap:polygon>
 <cap:geocode>
 <valueName>FIPS6</valueName>
-<value>030019 030085 030091</value>
+<value>030017</value>
 <valueName>UGC</valueName>
-<value>MTZ018 MTZ019 MTZ020</value>
+<value>MTC017</value>
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
-<value></value>
+<value>/O.NEW.KBYZ.FF.W.0001.230524T0017Z-230524T0315Z/
+/00000.0.ER.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=MT12664926A734.SpecialWeatherStatement.1266493262B8MT.GGWSPSGGW.e3d3f9504bf7685cc9a46391f91fafda</id>
-<updated>2023-05-23T17:41:00-06:00</updated>
-<published>2023-05-23T17:41:00-06:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=MT126649325C14.SpecialWeatherStatement.126649327E10MT.BYZSPSBYZ.f390c7630a962f4311664483bae7016d</id>
+<updated>2023-05-23T18:13:00-06:00</updated>
+<published>2023-05-23T18:13:00-06:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Special Weather Statement issued May 23 at 5:41PM MDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MT12664926A734.SpecialWeatherStatement.1266493262B8MT.GGWSPSGGW.e3d3f9504bf7685cc9a46391f91fafda"/>
-<summary>...A strong thunderstorm will impact portions of southeastern Daniels, north central Roosevelt and west central Sheridan Counties through 630 PM MDT... At 541 PM MDT, Doppler radar was tracking a strong thunderstorm 12 miles east of Bredette, or 24 miles southeast of Scobey, moving north at 20 mph.</summary>
+<title>Special Weather Statement issued May 23 at 6:13PM MDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MT126649325C14.SpecialWeatherStatement.126649327E10MT.BYZSPSBYZ.f390c7630a962f4311664483bae7016d"/>
+<summary>...A strong thunderstorm will impact portions of west central Carter and northeastern Powder River Counties through 700 PM MDT... At 612 PM MDT, Doppler radar was tracking a strong thunderstorm 10 miles west of Ridgeway, or 26 miles south of Ekalaka, moving north at 15 mph. HAZARD...Winds in excess of 40 mph, penny size hail and torrential</summary>
 <cap:event>Special Weather Statement</cap:event>
-<cap:effective>2023-05-23T17:41:00-06:00</cap:effective>
-<cap:expires>2023-05-23T18:30:00-06:00</cap:expires>
+<cap:effective>2023-05-23T18:13:00-06:00</cap:effective>
+<cap:expires>2023-05-23T19:00:00-06:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
 <cap:category>Met</cap:category>
 <cap:urgency>Expected</cap:urgency>
 <cap:severity>Minor</cap:severity>
 <cap:certainty>Observed</cap:certainty>
-<cap:areaDesc>Eastern Roosevelt</cap:areaDesc>
-<cap:polygon>48.45,-104.96 48.47,-105.14 48.87,-105.18 48.79,-104.65 48.45,-104.96</cap:polygon>
+<cap:areaDesc>Carter; Powder River</cap:areaDesc>
+<cap:polygon>45.44,-104.54 45.42,-105.08 45.77,-105.11 45.79,-104.61 45.44,-104.54</cap:polygon>
 <cap:geocode>
 <valueName>FIPS6</valueName>
-<value>030085</value>
+<value>030011 030075</value>
 <valueName>UGC</valueName>
-<value>MTZ062</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value></value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=MT12664926A34C.SpecialWeatherStatement.126649325CDCMT.BYZSPSBYZ.70b8dfa0666b83a539190347f7bbf59b</id>
-<updated>2023-05-23T17:31:00-06:00</updated>
-<published>2023-05-23T17:31:00-06:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Special Weather Statement issued May 23 at 5:31PM MDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MT12664926A34C.SpecialWeatherStatement.126649325CDCMT.BYZSPSBYZ.70b8dfa0666b83a539190347f7bbf59b"/>
-<summary>...A strong thunderstorm will impact portions of west central Carter County through 615 PM MDT... At 531 PM MDT, Doppler radar was tracking a strong thunderstorm 7 miles west of Ridgeway, or 28 miles south of Ekalaka, moving north at 10 mph. HAZARD...Wind gusts up to 50 mph and penny size hail.</summary>
-<cap:event>Special Weather Statement</cap:event>
-<cap:effective>2023-05-23T17:31:00-06:00</cap:effective>
-<cap:expires>2023-05-23T18:15:00-06:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Observed</cap:certainty>
-<cap:areaDesc>Carter</cap:areaDesc>
-<cap:polygon>45.39,-104.98 45.66,-104.98 45.72,-104.54 45.43,-104.5 45.39,-104.98</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>030011</value>
-<valueName>UGC</valueName>
-<value>MTZ037</value>
+<value>MTZ036 MTZ037</value>
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
@@ -3264,18 +3168,18 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=ND126649325890.SpecialWeatherStatement.1266493262B8ND.BISSPSBIS.226d715b2240903c701c8f3fa0225b8d</id>
-<updated>2023-05-23T19:04:00-05:00</updated>
-<published>2023-05-23T19:04:00-05:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=ND12664932618C.SpecialWeatherStatement.126649327E10ND.BISSPSBIS.226d715b2240903c701c8f3fa0225b8d</id>
+<updated>2023-05-23T19:27:00-05:00</updated>
+<published>2023-05-23T19:27:00-05:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Special Weather Statement issued May 23 at 7:04PM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=ND126649325890.SpecialWeatherStatement.1266493262B8ND.BISSPSBIS.226d715b2240903c701c8f3fa0225b8d"/>
-<summary>...STRONG THUNDERSTORMS WILL IMPACT PORTIONS OF WESTERN SIOUX AND SOUTHWESTERN GRANT COUNTIES THROUGH 730 PM CDT/630 PM MDT/... At 704 PM CDT/604 PM MDT/, strong thunderstorms were located along a line extending from 17 miles north of Watauga to 5 miles north of Thunder Hawk. These storms were nearly stationary. HAZARD...Wind gusts to 40 mph and nickel size hail.</summary>
+<title>Special Weather Statement issued May 23 at 7:27PM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=ND12664932618C.SpecialWeatherStatement.126649327E10ND.BISSPSBIS.226d715b2240903c701c8f3fa0225b8d"/>
+<summary>...STRONG THUNDERSTORMS WILL IMPACT PORTIONS OF WESTERN SIOUX AND SOUTHERN GRANT COUNTIES THROUGH 700 PM MDT... At 627 PM MDT, strong thunderstorms were located along a line extending from 15 miles north of Morristown to 8 miles northeast of Thunder Hawk. These storms were nearly stationary. HAZARD...Wind gusts to 40 mph and nickel size hail.</summary>
 <cap:event>Special Weather Statement</cap:event>
-<cap:effective>2023-05-23T19:04:00-05:00</cap:effective>
-<cap:expires>2023-05-23T19:30:00-05:00</cap:expires>
+<cap:effective>2023-05-23T19:27:00-05:00</cap:effective>
+<cap:expires>2023-05-23T20:00:00-05:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
 <cap:category>Met</cap:category>
@@ -3283,7 +3187,7 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:severity>Minor</cap:severity>
 <cap:certainty>Observed</cap:certainty>
 <cap:areaDesc>Grant; Sioux</cap:areaDesc>
-<cap:polygon>45.95,-102 46.15,-102 46.33,-101.39 46.03,-101.33 45.94,-101.94 45.95,-101.99 45.95,-102</cap:polygon>
+<cap:polygon>46.21,-102 46.37,-101.42 46.06,-101.38 45.94,-101.95 45.95,-102 46.21,-102</cap:polygon>
 <cap:geocode>
 <valueName>FIPS6</valueName>
 <value>038037 038085</value>
@@ -3296,63 +3200,31 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=ND126649325700.SpecialWeatherStatement.1266493262B8ND.BISSPSBIS.59fdc6dfd9c95fdcea6ad72e1e4decbd</id>
-<updated>2023-05-23T19:00:00-05:00</updated>
-<published>2023-05-23T19:00:00-05:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=ND1266493260C4.SpecialWeatherStatement.126649327E10ND.BISSPSBIS.c3614c0be5f615804d3482f082965ae1</id>
+<updated>2023-05-23T19:25:00-05:00</updated>
+<published>2023-05-23T19:25:00-05:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Special Weather Statement issued May 23 at 7:00PM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=ND126649325700.SpecialWeatherStatement.1266493262B8ND.BISSPSBIS.59fdc6dfd9c95fdcea6ad72e1e4decbd"/>
-<summary>...A STRONG THUNDERSTORM WILL IMPACT PORTIONS OF NORTHEASTERN STUTSMAN COUNTY THROUGH 730 PM CDT... At 700 PM CDT, a strong thunderstorm was located over Courtenay, or 21 miles north of Jamestown. This storm was nearly stationary. HAZARD...Wind gusts to 50 mph and half inch hail. SOURCE...Radar indicated.</summary>
+<title>Special Weather Statement issued May 23 at 7:25PM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=ND1266493260C4.SpecialWeatherStatement.126649327E10ND.BISSPSBIS.c3614c0be5f615804d3482f082965ae1"/>
+<summary>...STRONG THUNDERSTORMS WILL IMPACT PORTIONS OF SOUTHERN FOSTER AND NORTHERN STUTSMAN COUNTIES THROUGH 800 PM CDT... At 723 PM CDT, a strong thunderstorm was located over Courtenay, or 20 miles north of Jamestown. This storm was nearly stationary. Additional storms were developing across north central Stutsman County.</summary>
 <cap:event>Special Weather Statement</cap:event>
-<cap:effective>2023-05-23T19:00:00-05:00</cap:effective>
-<cap:expires>2023-05-23T19:30:00-05:00</cap:expires>
+<cap:effective>2023-05-23T19:25:00-05:00</cap:effective>
+<cap:expires>2023-05-23T20:00:00-05:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
 <cap:category>Met</cap:category>
 <cap:urgency>Expected</cap:urgency>
 <cap:severity>Minor</cap:severity>
 <cap:certainty>Observed</cap:certainty>
-<cap:areaDesc>Stutsman</cap:areaDesc>
-<cap:polygon>47.12,-98.62 47.26,-98.67 47.32,-98.47 47.18,-98.46 47.1,-98.47 47.12,-98.62</cap:polygon>
+<cap:areaDesc>Foster; Stutsman</cap:areaDesc>
+<cap:polygon>47.12,-99.24 47.34,-99.21 47.43,-98.5 47.33,-98.5 47.33,-98.47 47.03,-98.47 47.12,-99.24</cap:polygon>
 <cap:geocode>
 <valueName>FIPS6</valueName>
-<value>038093</value>
+<value>038031 038093</value>
 <valueName>UGC</valueName>
-<value>NDZ037</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value></value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=ND12664926A734.SpecialWeatherStatement.1266493262B8ND.FGFSPSFGF.8aa78ce641d7e44ea4ce7133a02f04e4</id>
-<updated>2023-05-23T18:41:00-05:00</updated>
-<published>2023-05-23T18:41:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Special Weather Statement issued May 23 at 6:41PM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=ND12664926A734.SpecialWeatherStatement.1266493262B8ND.FGFSPSFGF.8aa78ce641d7e44ea4ce7133a02f04e4"/>
-<summary>...A strong thunderstorm will impact portions of southern Griggs, northwestern Barnes and southwestern Steele Counties through 730 PM CDT... At 640 PM CDT, Doppler radar was tracking a strong thunderstorm near Wimbledon, or 28 miles northwest of Valley City, moving east at 25 mph.</summary>
-<cap:event>Special Weather Statement</cap:event>
-<cap:effective>2023-05-23T18:41:00-05:00</cap:effective>
-<cap:expires>2023-05-23T19:30:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Observed</cap:certainty>
-<cap:areaDesc>Barnes; Griggs; Steele</cap:areaDesc>
-<cap:polygon>47.32,-98.47 47.45,-97.96 47.19,-97.85 47.1,-98.47 47.32,-98.47</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>038003 038039 038091</value>
-<valueName>UGC</valueName>
-<value>NDZ028 NDZ029 NDZ038</value>
+<value>NDZ025 NDZ037</value>
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
@@ -3456,39 +3328,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <valueName>VTEC</valueName>
 <value>/O.CON.KBIS.FL.W.0011.000000T0000Z-000000T0000Z/
 /BANN8.1.SM.230420T1715Z.230523T1500Z.000000T0000Z.NO/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=NM1266492657E8.FloodAdvisory.126649326894NM.ABQFLSABQ.5d67b540a17883ce2c86dccb066ac37a</id>
-<updated>2023-05-23T15:38:00-06:00</updated>
-<published>2023-05-23T15:38:00-06:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Flood Advisory issued May 23 at 3:38PM MDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=NM1266492657E8.FloodAdvisory.126649326894NM.ABQFLSABQ.5d67b540a17883ce2c86dccb066ac37a"/>
-<summary>...FLOOD ADVISORY IN EFFECT UNTIL 645 PM MDT THIS EVENING... * WHAT...Arroyo and small stream flooding caused by excessive rainfall is expected. * WHERE...A portion of east central New Mexico, including the following county, Curry. * WHEN...Until 645 PM MDT.</summary>
-<cap:event>Flood Advisory</cap:event>
-<cap:effective>2023-05-23T15:38:00-06:00</cap:effective>
-<cap:expires>2023-05-23T18:45:00-06:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Curry</cap:areaDesc>
-<cap:polygon>34.5,-103.04 34.6,-103.33 34.75,-103.28 34.77,-103.04 34.72,-103.04 34.71,-103.04 34.69,-103.04 34.67,-103.04 34.65,-103.04 34.59,-103.04 34.52,-103.04 34.51,-103.04 34.5,-103.04</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>035009</value>
-<valueName>UGC</valueName>
-<value>NMC009</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.NEW.KABQ.FA.Y.0026.230523T2138Z-230524T0045Z/
-/00000.N.ER.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -3719,72 +3558,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value>/O.NEW.KLKN.FA.Y.0015.230523T2311Z-230524T0215Z/
-/00000.N.ER.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=NV126649265720.FloodAdvisory.126649358B50NV.LKNFLSLKN.3177fe0e3250a10fa835bd0d1c2c53b5</id>
-<updated>2023-05-23T14:36:00-07:00</updated>
-<published>2023-05-23T14:36:00-07:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Flood Advisory issued May 23 at 2:36PM PDT until further notice by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=NV126649265720.FloodAdvisory.126649358B50NV.LKNFLSLKN.3177fe0e3250a10fa835bd0d1c2c53b5"/>
-<summary>...FLOOD ADVISORY IN EFFECT UNTIL 545 PM PDT THIS AFTERNOON... * WHAT...Flooding caused by excessive rainfall is expected. * WHERE...Portions of north central Nevada and northeast Nevada, including the following counties, in north central Nevada, Eureka. In northeast Nevada, White Pine. * WHEN...Until 545 PM PDT.</summary>
-<cap:event>Flood Advisory</cap:event>
-<cap:effective>2023-05-23T14:36:00-07:00</cap:effective>
-<cap:expires>2023-05-24T14:00:00-07:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Eureka</cap:areaDesc>
-<cap:polygon>39.61,-116.02 39.56,-115.84 39.54,-115.77 39.35,-115.91 39.32,-115.93 39.4,-116.18 39.61,-116.02</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>032011</value>
-<valueName>UGC</valueName>
-<value>NVC011</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.NEW.KLKN.FA.Y.0014.230523T2136Z-230524T0045Z/
-/00000.N.ER.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=NV126649265720.FloodAdvisory.126649420E70NV.LKNFLSLKN.946e94fd9cbc104d80760007e8294ef9</id>
-<updated>2023-05-23T14:36:00-07:00</updated>
-<published>2023-05-23T14:36:00-07:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Flood Advisory issued May 23 at 2:36PM PDT until further notice by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=NV126649265720.FloodAdvisory.126649420E70NV.LKNFLSLKN.946e94fd9cbc104d80760007e8294ef9"/>
-<summary>...FLOOD ADVISORY IN EFFECT UNTIL 545 PM PDT THIS AFTERNOON... * WHAT...Flooding caused by excessive rainfall is expected. * WHERE...Portions of north central Nevada and northeast Nevada, including the following counties, in north central Nevada, Eureka. In northeast Nevada, White Pine. * WHEN...Until 545 PM PDT.</summary>
-<cap:event>Flood Advisory</cap:event>
-<cap:effective>2023-05-23T14:36:00-07:00</cap:effective>
-<cap:expires>2023-05-24T20:00:00-07:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>White Pine</cap:areaDesc>
-<cap:polygon>39.61,-116.02 39.56,-115.84 39.54,-115.77 39.35,-115.91 39.32,-115.93 39.4,-116.18 39.61,-116.02</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>032033</value>
-<valueName>UGC</valueName>
-<value>NVC033</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.NEW.KLKN.FA.Y.0014.230523T2136Z-230524T0045Z/
 /00000.N.ER.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
 </cap:parameter>
 </entry>
@@ -4448,6 +4221,807 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=TX12664932695C.SpecialWeatherStatement.1266493289C8TX.MAFSPSMAF.6a88173acb9389a92650ee567d906cbf</id>
+<updated>2023-05-23T19:47:00-05:00</updated>
+<published>2023-05-23T19:47:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Special Weather Statement issued May 23 at 7:47PM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=TX12664932695C.SpecialWeatherStatement.1266493289C8TX.MAFSPSMAF.6a88173acb9389a92650ee567d906cbf"/>
+<summary>...A strong thunderstorm will impact portions of northeastern Glasscock and south central Howard Counties through 830 PM CDT... At 747 PM CDT, Doppler radar was tracking a strong thunderstorm over Forsan, or 13 miles southeast of Big Spring, moving east at 25 mph. HAZARD...Wind gusts of 50 to 55 mph and half inch hail. SOURCE...Radar indicated.</summary>
+<cap:event>Special Weather Statement</cap:event>
+<cap:effective>2023-05-23T19:47:00-05:00</cap:effective>
+<cap:expires>2023-05-23T20:30:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Observed</cap:certainty>
+<cap:areaDesc>Glasscock; Howard</cap:areaDesc>
+<cap:polygon>32.09,-101.26 31.91,-101.27 31.99,-101.47 32.16,-101.44 32.09,-101.21 32.09,-101.26</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>048173 048227</value>
+<valueName>UGC</valueName>
+<value>TXZ052 TXZ063</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value></value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=TX1266493268F8.SevereThunderstormWarning.1266493289C8TX.LUBSVSLUB.da899a01a34f8b3d346ff8ab9f21f7eb</id>
+<updated>2023-05-23T19:46:00-05:00</updated>
+<published>2023-05-23T19:46:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Severe Thunderstorm Warning issued May 23 at 7:46PM CDT until May 23 at 8:30PM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=TX1266493268F8.SevereThunderstormWarning.1266493289C8TX.LUBSVSLUB.da899a01a34f8b3d346ff8ab9f21f7eb"/>
+<summary>...A SEVERE THUNDERSTORM WARNING REMAINS IN EFFECT UNTIL 830 PM CDT FOR KENT AND EASTERN GARZA COUNTIES... At 745 PM CDT, severe thunderstorms were located along a line extending from 5 miles southeast of Kalgary to 6 miles northeast of Lake Alan Henry to Fluvanna, moving east at 40 mph. HAZARD...60 mph wind gusts and quarter size hail.</summary>
+<cap:event>Severe Thunderstorm Warning</cap:event>
+<cap:effective>2023-05-23T19:46:00-05:00</cap:effective>
+<cap:expires>2023-05-23T20:30:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Immediate</cap:urgency>
+<cap:severity>Severe</cap:severity>
+<cap:certainty>Observed</cap:certainty>
+<cap:areaDesc>Garza; Kent</cap:areaDesc>
+<cap:polygon>33.39,-100.53 32.96,-100.53 32.96,-101.25 33.35,-101.24 33.39,-100.53</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>048169 048263</value>
+<valueName>UGC</valueName>
+<value>TXC169 TXC263</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KLUB.SV.W.0085.000000T0000Z-230524T0130Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=TX1266493268F8.SevereWeatherStatement.12664932A520TX.LUBSVSLUB.6b3ce31a3599a0782f5db2143ff73559</id>
+<updated>2023-05-23T19:46:00-05:00</updated>
+<published>2023-05-23T19:46:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Severe Weather Statement issued May 23 at 7:46PM CDT until May 23 at 9:00PM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=TX1266493268F8.SevereWeatherStatement.12664932A520TX.LUBSVSLUB.6b3ce31a3599a0782f5db2143ff73559"/>
+<summary>...A SEVERE THUNDERSTORM WARNING REMAINS IN EFFECT UNTIL 830 PM CDT FOR KENT AND EASTERN GARZA COUNTIES... At 745 PM CDT, severe thunderstorms were located along a line extending from 5 miles southeast of Kalgary to 6 miles northeast of Lake Alan Henry to Fluvanna, moving east at 40 mph. HAZARD...60 mph wind gusts and quarter size hail.</summary>
+<cap:event>Severe Weather Statement</cap:event>
+<cap:effective>2023-05-23T19:46:00-05:00</cap:effective>
+<cap:expires>2023-05-23T21:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Immediate</cap:urgency>
+<cap:severity>Severe</cap:severity>
+<cap:certainty>Observed</cap:certainty>
+<cap:areaDesc>Garza</cap:areaDesc>
+<cap:polygon>33.39,-100.53 32.96,-100.53 32.96,-101.25 33.35,-101.24 33.39,-100.53</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>048169</value>
+<valueName>UGC</valueName>
+<value>TXC169</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KLUB.SV.W.0085.000000T0000Z-230524T0130Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=TX1266493268F8.SevereWeatherStatement.126649336870TX.LUBSVSLUB.9d0daf18acd81dde3b6fdf998a95660d</id>
+<updated>2023-05-23T19:46:00-05:00</updated>
+<published>2023-05-23T19:46:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Severe Weather Statement issued May 23 at 7:46PM CDT until May 24 at 2:00AM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=TX1266493268F8.SevereWeatherStatement.126649336870TX.LUBSVSLUB.9d0daf18acd81dde3b6fdf998a95660d"/>
+<summary>...A SEVERE THUNDERSTORM WARNING REMAINS IN EFFECT UNTIL 830 PM CDT FOR KENT AND EASTERN GARZA COUNTIES... At 745 PM CDT, severe thunderstorms were located along a line extending from 5 miles southeast of Kalgary to 6 miles northeast of Lake Alan Henry to Fluvanna, moving east at 40 mph. HAZARD...60 mph wind gusts and quarter size hail.</summary>
+<cap:event>Severe Weather Statement</cap:event>
+<cap:effective>2023-05-23T19:46:00-05:00</cap:effective>
+<cap:expires>2023-05-24T02:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Immediate</cap:urgency>
+<cap:severity>Severe</cap:severity>
+<cap:certainty>Observed</cap:certainty>
+<cap:areaDesc>Kent</cap:areaDesc>
+<cap:polygon>33.39,-100.53 32.96,-100.53 32.96,-101.25 33.35,-101.24 33.39,-100.53</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>048263</value>
+<valueName>UGC</valueName>
+<value>TXC263</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KLUB.SV.W.0085.000000T0000Z-230524T0130Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=TX126649326894.SpecialWeatherStatement.126649327E10TX.OUNSPSOUN.e59bedc703e05e320d95d4c1a37bad2e</id>
+<updated>2023-05-23T19:45:00-05:00</updated>
+<published>2023-05-23T19:45:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Special Weather Statement issued May 23 at 7:45PM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=TX126649326894.SpecialWeatherStatement.126649327E10TX.OUNSPSOUN.e59bedc703e05e320d95d4c1a37bad2e"/>
+<summary>...A strong thunderstorm will impact portions of southeastern Knox and southwestern Baylor Counties through 800 PM CDT... At 744 PM CDT, Doppler radar was tracking a strong thunderstorm 5 miles west of Millers Creek Reservoir, moving south at 15 mph. HAZARD...Wind gusts of 40 mph and nickel size hail. SOURCE...Radar indicated.</summary>
+<cap:event>Special Weather Statement</cap:event>
+<cap:effective>2023-05-23T19:45:00-05:00</cap:effective>
+<cap:expires>2023-05-23T20:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Observed</cap:certainty>
+<cap:areaDesc>Baylor; Knox</cap:areaDesc>
+<cap:polygon>33.45,-99.59 33.45,-99.36 33.4,-99.33 33.4,-99.58 33.45,-99.59</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>048023 048275</value>
+<valueName>UGC</valueName>
+<value>TXZ087 TXZ088</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value></value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=TX126649326894.SevereThunderstormWarning.126649328FA4TX.LUBSVRLUB.9cca5723239155c2bca384ef39b58015</id>
+<updated>2023-05-23T19:45:00-05:00</updated>
+<published>2023-05-23T19:45:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Severe Thunderstorm Warning issued May 23 at 7:45PM CDT until May 23 at 8:45PM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=TX126649326894.SevereThunderstormWarning.126649328FA4TX.LUBSVRLUB.9cca5723239155c2bca384ef39b58015"/>
+<summary>The National Weather Service in Lubbock Texas has issued a * Severe Thunderstorm Warning for... Western Floyd County in northwestern Texas... Northeastern Hale County in northwestern Texas... South central Swisher County in the Panhandle of Texas... * Until 845 PM CDT.</summary>
+<cap:event>Severe Thunderstorm Warning</cap:event>
+<cap:effective>2023-05-23T19:45:00-05:00</cap:effective>
+<cap:expires>2023-05-23T20:45:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Immediate</cap:urgency>
+<cap:severity>Severe</cap:severity>
+<cap:certainty>Observed</cap:certainty>
+<cap:areaDesc>Floyd; Hale; Swisher</cap:areaDesc>
+<cap:polygon>34.32,-101.83 34.39,-101.68 34.23,-101.49 34.09,-101.76 34.32,-101.83</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>048153 048189 048437</value>
+<valueName>UGC</valueName>
+<value>TXC153 TXC189 TXC437</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.NEW.KLUB.SV.W.0088.230524T0045Z-230524T0145Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=TX126649326894.FlashFloodWarning.12664932B6B4TX.LUBFFWLUB.7910bdd03ee524a16383f596d79bbfb1</id>
+<updated>2023-05-23T19:45:00-05:00</updated>
+<published>2023-05-23T19:45:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Flash Flood Warning issued May 23 at 7:45PM CDT until May 23 at 9:45PM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=TX126649326894.FlashFloodWarning.12664932B6B4TX.LUBFFWLUB.7910bdd03ee524a16383f596d79bbfb1"/>
+<summary>The National Weather Service in Lubbock has issued a * Flash Flood Warning for... Northeastern Hale County in northwestern Texas... South Central Swisher County in the panhandle of Texas... * Until 945 PM CDT. * At 745 PM CDT, Doppler radar indicated severe thunderstorms</summary>
+<cap:event>Flash Flood Warning</cap:event>
+<cap:effective>2023-05-23T19:45:00-05:00</cap:effective>
+<cap:expires>2023-05-23T21:45:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Immediate</cap:urgency>
+<cap:severity>Severe</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Hale; Swisher</cap:areaDesc>
+<cap:polygon>34.32,-101.77 34.34,-101.65 34.23,-101.57 34.2,-101.74 34.32,-101.77</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>048189 048437</value>
+<valueName>UGC</valueName>
+<value>TXC189 TXC437</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.NEW.KLUB.FF.W.0004.230524T0045Z-230524T0245Z/
+/00000.0.ER.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=TX126649326894.SevereWeatherStatement.126649336870TX.OUNSVSOUN.8d51a064b0690a2d4e8fd0f69f98b837</id>
+<updated>2023-05-23T19:45:00-05:00</updated>
+<published>2023-05-23T19:45:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Severe Weather Statement issued May 23 at 7:45PM CDT until May 24 at 2:00AM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=TX126649326894.SevereWeatherStatement.126649336870TX.OUNSVSOUN.8d51a064b0690a2d4e8fd0f69f98b837"/>
+<summary>...THE SEVERE THUNDERSTORM WARNING FOR SOUTHEASTERN KNOX AND SOUTHWESTERN BAYLOR COUNTIES HAS EXPIRED... The storm which prompted the warning has moved out of the area. Therefore, the warning has been allowed to expire. However, small hail is still possible with this thunderstorm.</summary>
+<cap:event>Severe Weather Statement</cap:event>
+<cap:effective>2023-05-23T19:45:00-05:00</cap:effective>
+<cap:expires>2023-05-24T02:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Immediate</cap:urgency>
+<cap:severity>Severe</cap:severity>
+<cap:certainty>Observed</cap:certainty>
+<cap:areaDesc>Baylor; Knox</cap:areaDesc>
+<cap:polygon>33.53,-99.63 33.56,-99.4 33.4,-99.3 33.4,-99.66 33.53,-99.63</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>048023 048275</value>
+<valueName>UGC</valueName>
+<value>TXC023 TXC275</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.EXP.KOUN.SV.W.0260.000000T0000Z-230524T0045Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=TX1266493267CC.SpecialWeatherStatement.1266493283ECTX.EWXSPSEWX.72888a64b3faa24311bd4e0ee50a9637</id>
+<updated>2023-05-23T19:43:00-05:00</updated>
+<published>2023-05-23T19:43:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Special Weather Statement issued May 23 at 7:43PM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=TX1266493267CC.SpecialWeatherStatement.1266493283ECTX.EWXSPSEWX.72888a64b3faa24311bd4e0ee50a9637"/>
+<summary>...A strong thunderstorm will impact portions of northwestern Hays and east central Blanco Counties through 815 PM CDT... At 742 PM CDT, Doppler radar was tracking a strong thunderstorm near Pedernales Falls State Park, or 9 miles northwest of Dripping Springs, moving southwest at 5 mph. HAZARD...Penny size hail.</summary>
+<cap:event>Special Weather Statement</cap:event>
+<cap:effective>2023-05-23T19:43:00-05:00</cap:effective>
+<cap:expires>2023-05-23T20:15:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Observed</cap:certainty>
+<cap:areaDesc>Blanco; Hays</cap:areaDesc>
+<cap:polygon>30.29,-98.08 30.18,-98.17 30.3,-98.33 30.37,-98.19 30.29,-98.08</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>048031 048209</value>
+<valueName>UGC</valueName>
+<value>TXZ190 TXZ191</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value></value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=TX1266493267CC.SevereThunderstormWarning.1266493283ECTX.SJTSVSSJT.280957ffddd57f7ef06fc5231b54b91a</id>
+<updated>2023-05-23T19:43:00-05:00</updated>
+<published>2023-05-23T19:43:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Severe Thunderstorm Warning issued May 23 at 7:43PM CDT until May 23 at 8:15PM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=TX1266493267CC.SevereThunderstormWarning.1266493283ECTX.SJTSVSSJT.280957ffddd57f7ef06fc5231b54b91a"/>
+<summary>...A SEVERE THUNDERSTORM WARNING REMAINS IN EFFECT UNTIL 815 PM CDT FOR NORTHEASTERN HASKELL AND NORTHWESTERN THROCKMORTON COUNTIES... At 743 PM CDT, a severe thunderstorm was located near Millers Creek Reservoir, moving southeast at 20 mph. HAZARD...60 mph wind gusts and half dollar size hail. SOURCE...Radar indicated.</summary>
+<cap:event>Severe Thunderstorm Warning</cap:event>
+<cap:effective>2023-05-23T19:43:00-05:00</cap:effective>
+<cap:expires>2023-05-23T20:15:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Immediate</cap:urgency>
+<cap:severity>Severe</cap:severity>
+<cap:certainty>Observed</cap:certainty>
+<cap:areaDesc>Haskell; Throckmorton</cap:areaDesc>
+<cap:polygon>33.17,-99.1 33.1,-99.43 33.4,-99.55 33.4,-99.28 33.17,-99.1</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>048207 048447</value>
+<valueName>UGC</valueName>
+<value>TXC207 TXC447</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KSJT.SV.W.0204.000000T0000Z-230524T0115Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=TX1266493267CC.SevereWeatherStatement.1266493283ECTX.SJTSVSSJT.550f766929ce33afecb3038208cb4340</id>
+<updated>2023-05-23T19:43:00-05:00</updated>
+<published>2023-05-23T19:43:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Severe Weather Statement issued May 23 at 7:43PM CDT until May 23 at 8:15PM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=TX1266493267CC.SevereWeatherStatement.1266493283ECTX.SJTSVSSJT.550f766929ce33afecb3038208cb4340"/>
+<summary>...A SEVERE THUNDERSTORM WARNING REMAINS IN EFFECT UNTIL 815 PM CDT FOR NORTHEASTERN HASKELL AND NORTHWESTERN THROCKMORTON COUNTIES... At 743 PM CDT, a severe thunderstorm was located near Millers Creek Reservoir, moving southeast at 20 mph. HAZARD...60 mph wind gusts and half dollar size hail. SOURCE...Radar indicated.</summary>
+<cap:event>Severe Weather Statement</cap:event>
+<cap:effective>2023-05-23T19:43:00-05:00</cap:effective>
+<cap:expires>2023-05-23T20:15:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Immediate</cap:urgency>
+<cap:severity>Severe</cap:severity>
+<cap:certainty>Observed</cap:certainty>
+<cap:areaDesc>Haskell</cap:areaDesc>
+<cap:polygon>33.17,-99.1 33.1,-99.43 33.4,-99.55 33.4,-99.28 33.17,-99.1</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>048207</value>
+<valueName>UGC</valueName>
+<value>TXC207</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KSJT.SV.W.0204.000000T0000Z-230524T0115Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=TX1266493267CC.SevereWeatherStatement.12664932A520TX.SJTSVSSJT.fbb1d0955e9b4c0529c1b8c618516d37</id>
+<updated>2023-05-23T19:43:00-05:00</updated>
+<published>2023-05-23T19:43:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Severe Weather Statement issued May 23 at 7:43PM CDT until May 23 at 9:00PM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=TX1266493267CC.SevereWeatherStatement.12664932A520TX.SJTSVSSJT.fbb1d0955e9b4c0529c1b8c618516d37"/>
+<summary>...A SEVERE THUNDERSTORM WARNING REMAINS IN EFFECT UNTIL 815 PM CDT FOR NORTHEASTERN HASKELL AND NORTHWESTERN THROCKMORTON COUNTIES... At 743 PM CDT, a severe thunderstorm was located near Millers Creek Reservoir, moving southeast at 20 mph. HAZARD...60 mph wind gusts and half dollar size hail. SOURCE...Radar indicated.</summary>
+<cap:event>Severe Weather Statement</cap:event>
+<cap:effective>2023-05-23T19:43:00-05:00</cap:effective>
+<cap:expires>2023-05-23T21:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Immediate</cap:urgency>
+<cap:severity>Severe</cap:severity>
+<cap:certainty>Observed</cap:certainty>
+<cap:areaDesc>Throckmorton</cap:areaDesc>
+<cap:polygon>33.17,-99.1 33.1,-99.43 33.4,-99.55 33.4,-99.28 33.17,-99.1</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>048447</value>
+<valueName>UGC</valueName>
+<value>TXC447</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KSJT.SV.W.0204.000000T0000Z-230524T0115Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=TX126649326768.SevereThunderstormWarning.126649328FA4TX.MAFSVRMAF.7bdd475658d66bf46812e497c54524ba</id>
+<updated>2023-05-23T19:42:00-05:00</updated>
+<published>2023-05-23T19:42:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Severe Thunderstorm Warning issued May 23 at 7:42PM CDT until May 23 at 8:45PM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=TX126649326768.SevereThunderstormWarning.126649328FA4TX.MAFSVRMAF.7bdd475658d66bf46812e497c54524ba"/>
+<summary>The National Weather Service in Midland has issued a * Severe Thunderstorm Warning for... Mitchell County in western Texas... Southern Scurry County in western Texas... Southeastern Borden County in western Texas... Northeastern Howard County in western Texas...</summary>
+<cap:event>Severe Thunderstorm Warning</cap:event>
+<cap:effective>2023-05-23T19:42:00-05:00</cap:effective>
+<cap:expires>2023-05-23T20:45:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Immediate</cap:urgency>
+<cap:severity>Severe</cap:severity>
+<cap:certainty>Observed</cap:certainty>
+<cap:areaDesc>Borden; Howard; Mitchell; Scurry</cap:areaDesc>
+<cap:polygon>32.08,-100.9 32.09,-101.19 32.42,-101.63 32.82,-101.48 32.64,-100.66 32.42,-100.66 32.08,-100.9</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>048033 048227 048335 048415</value>
+<valueName>UGC</valueName>
+<value>TXC033 TXC227 TXC335 TXC415</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.NEW.KMAF.SV.W.0073.230524T0042Z-230524T0145Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=TX126649326704.SevereThunderstormWarning.126649328FA4TX.LUBSVRLUB.c33dd19b580410bdac88529e8140a1b3</id>
+<updated>2023-05-23T19:41:00-05:00</updated>
+<published>2023-05-23T19:41:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Severe Thunderstorm Warning issued May 23 at 7:41PM CDT until May 23 at 8:45PM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=TX126649326704.SevereThunderstormWarning.126649328FA4TX.LUBSVRLUB.c33dd19b580410bdac88529e8140a1b3"/>
+<summary>The National Weather Service in Lubbock Texas has issued a * Severe Thunderstorm Warning for... Southeastern Floyd County in northwestern Texas... * Until 845 PM CDT. * At 740 PM CDT, a severe thunderstorm was located 6 miles northeast of Floydada, moving east at 5 mph.</summary>
+<cap:event>Severe Thunderstorm Warning</cap:event>
+<cap:effective>2023-05-23T19:41:00-05:00</cap:effective>
+<cap:expires>2023-05-23T20:45:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Immediate</cap:urgency>
+<cap:severity>Severe</cap:severity>
+<cap:certainty>Observed</cap:certainty>
+<cap:areaDesc>Floyd</cap:areaDesc>
+<cap:polygon>34,-101.36 34.12,-101.31 34.1,-101.05 33.89,-101.15 34,-101.36</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>048153</value>
+<valueName>UGC</valueName>
+<value>TXC153</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.NEW.KLUB.SV.W.0087.230524T0041Z-230524T0145Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=TX12664932663C.SevereThunderstormWarning.1266493283ECTX.AMASVSAMA.43db888226ca85bbc87ca44de361c1ee</id>
+<updated>2023-05-23T19:39:00-05:00</updated>
+<published>2023-05-23T19:39:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Severe Thunderstorm Warning issued May 23 at 7:39PM CDT until May 23 at 8:15PM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=TX12664932663C.SevereThunderstormWarning.1266493283ECTX.AMASVSAMA.43db888226ca85bbc87ca44de361c1ee"/>
+<summary>...A SEVERE THUNDERSTORM WARNING REMAINS IN EFFECT UNTIL 815 PM CDT FOR ARMSTRONG...SOUTHEASTERN RANDALL AND SOUTHWESTERN DONLEY COUNTIES... At 739 PM CDT, severe thunderstorms were located along a line extending from 8 miles east of Palo Duro Canyon to Wayside, moving southeast at 40 mph.</summary>
+<cap:event>Severe Thunderstorm Warning</cap:event>
+<cap:effective>2023-05-23T19:39:00-05:00</cap:effective>
+<cap:expires>2023-05-23T20:15:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Immediate</cap:urgency>
+<cap:severity>Severe</cap:severity>
+<cap:certainty>Observed</cap:certainty>
+<cap:areaDesc>Armstrong; Donley; Randall</cap:areaDesc>
+<cap:polygon>34.75,-101.75 35.07,-101.69 35.06,-101 34.75,-101.03 34.75,-101.75</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>048011 048129 048381</value>
+<valueName>UGC</valueName>
+<value>TXC011 TXC129 TXC381</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KAMA.SV.W.0076.000000T0000Z-230524T0115Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=TX12664932663C.SevereWeatherStatement.1266493283ECTX.AMASVSAMA.828ac1ef6773c004984aa2d56dadc097</id>
+<updated>2023-05-23T19:39:00-05:00</updated>
+<published>2023-05-23T19:39:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Severe Weather Statement issued May 23 at 7:39PM CDT until May 23 at 8:15PM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=TX12664932663C.SevereWeatherStatement.1266493283ECTX.AMASVSAMA.828ac1ef6773c004984aa2d56dadc097"/>
+<summary>...A SEVERE THUNDERSTORM WARNING REMAINS IN EFFECT UNTIL 815 PM CDT FOR ARMSTRONG...SOUTHEASTERN RANDALL AND SOUTHWESTERN DONLEY COUNTIES... At 739 PM CDT, severe thunderstorms were located along a line extending from 8 miles east of Palo Duro Canyon to Wayside, moving southeast at 40 mph.</summary>
+<cap:event>Severe Weather Statement</cap:event>
+<cap:effective>2023-05-23T19:39:00-05:00</cap:effective>
+<cap:expires>2023-05-23T20:15:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Immediate</cap:urgency>
+<cap:severity>Severe</cap:severity>
+<cap:certainty>Observed</cap:certainty>
+<cap:areaDesc>Armstrong; Donley; Randall</cap:areaDesc>
+<cap:polygon>34.75,-101.75 35.07,-101.69 35.06,-101 34.75,-101.03 34.75,-101.75</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>048011 048129 048381</value>
+<valueName>UGC</valueName>
+<value>TXC011 TXC129 TXC381</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KAMA.SV.W.0076.000000T0000Z-230524T0115Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=TX12664932663C.SevereThunderstormWarning.1266493289C8TX.MAFSVSMAF.6a4fa61e777606d5040800e32ea2ade8</id>
+<updated>2023-05-23T19:39:00-05:00</updated>
+<published>2023-05-23T19:39:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Severe Thunderstorm Warning issued May 23 at 7:39PM CDT until May 23 at 8:30PM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=TX12664932663C.SevereThunderstormWarning.1266493289C8TX.MAFSVSMAF.6a4fa61e777606d5040800e32ea2ade8"/>
+<summary>...A SEVERE THUNDERSTORM WARNING REMAINS IN EFFECT UNTIL 830 PM CDT FOR NORTHERN SCURRY AND NORTHEASTERN BORDEN COUNTIES... At 738 PM CDT, a severe thunderstorm was located over Fluvanna, or 12 miles southwest of Lake Alan Henry, moving east at 25 mph. HAZARD...60 mph wind gusts and quarter size hail. SOURCE...The Fluvanna mesonet reported a 61 mph wind gust at 728 PM</summary>
+<cap:event>Severe Thunderstorm Warning</cap:event>
+<cap:effective>2023-05-23T19:39:00-05:00</cap:effective>
+<cap:expires>2023-05-23T20:30:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Immediate</cap:urgency>
+<cap:severity>Severe</cap:severity>
+<cap:certainty>Observed</cap:certainty>
+<cap:areaDesc>Borden; Scurry</cap:areaDesc>
+<cap:polygon>32.63,-100.82 32.8,-101.42 32.96,-101.34 32.96,-100.71 32.63,-100.82</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>048033 048415</value>
+<valueName>UGC</valueName>
+<value>TXC033 TXC415</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KMAF.SV.W.0072.000000T0000Z-230524T0130Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=TX12664932663C.SevereWeatherStatement.1266493289C8TX.MAFSVSMAF.8c1dae2a222a51b9e960de672bbce9a9</id>
+<updated>2023-05-23T19:39:00-05:00</updated>
+<published>2023-05-23T19:39:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Severe Weather Statement issued May 23 at 7:39PM CDT until May 23 at 8:30PM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=TX12664932663C.SevereWeatherStatement.1266493289C8TX.MAFSVSMAF.8c1dae2a222a51b9e960de672bbce9a9"/>
+<summary>...A SEVERE THUNDERSTORM WARNING REMAINS IN EFFECT UNTIL 830 PM CDT FOR NORTHERN SCURRY AND NORTHEASTERN BORDEN COUNTIES... At 738 PM CDT, a severe thunderstorm was located over Fluvanna, or 12 miles southwest of Lake Alan Henry, moving east at 25 mph. HAZARD...60 mph wind gusts and quarter size hail. SOURCE...The Fluvanna mesonet reported a 61 mph wind gust at 728 PM</summary>
+<cap:event>Severe Weather Statement</cap:event>
+<cap:effective>2023-05-23T19:39:00-05:00</cap:effective>
+<cap:expires>2023-05-23T20:30:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Immediate</cap:urgency>
+<cap:severity>Severe</cap:severity>
+<cap:certainty>Observed</cap:certainty>
+<cap:areaDesc>Borden</cap:areaDesc>
+<cap:polygon>32.63,-100.82 32.8,-101.42 32.96,-101.34 32.96,-100.71 32.63,-100.82</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>048033</value>
+<valueName>UGC</valueName>
+<value>TXC033</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KMAF.SV.W.0072.000000T0000Z-230524T0130Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=TX12664932663C.SevereWeatherStatement.126649328FA4TX.MAFSVSMAF.110f5158a79320c1217e45243f1cc076</id>
+<updated>2023-05-23T19:39:00-05:00</updated>
+<published>2023-05-23T19:39:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Severe Weather Statement issued May 23 at 7:39PM CDT until May 23 at 8:45PM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=TX12664932663C.SevereWeatherStatement.126649328FA4TX.MAFSVSMAF.110f5158a79320c1217e45243f1cc076"/>
+<summary>...A SEVERE THUNDERSTORM WARNING REMAINS IN EFFECT UNTIL 830 PM CDT FOR NORTHERN SCURRY AND NORTHEASTERN BORDEN COUNTIES... At 738 PM CDT, a severe thunderstorm was located over Fluvanna, or 12 miles southwest of Lake Alan Henry, moving east at 25 mph. HAZARD...60 mph wind gusts and quarter size hail. SOURCE...The Fluvanna mesonet reported a 61 mph wind gust at 728 PM</summary>
+<cap:event>Severe Weather Statement</cap:event>
+<cap:effective>2023-05-23T19:39:00-05:00</cap:effective>
+<cap:expires>2023-05-23T20:45:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Immediate</cap:urgency>
+<cap:severity>Severe</cap:severity>
+<cap:certainty>Observed</cap:certainty>
+<cap:areaDesc>Scurry</cap:areaDesc>
+<cap:polygon>32.63,-100.82 32.8,-101.42 32.96,-101.34 32.96,-100.71 32.63,-100.82</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>048415</value>
+<valueName>UGC</valueName>
+<value>TXC415</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KMAF.SV.W.0072.000000T0000Z-230524T0130Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=TX126649326574.SevereThunderstormWatch.12664932A520TX.LUBWCNLUB.bcbc688f516e53edeaebd6c17cd13249</id>
+<updated>2023-05-23T19:37:00-05:00</updated>
+<published>2023-05-23T19:37:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Severe Thunderstorm Watch issued May 23 at 7:37PM CDT until May 23 at 9:00PM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=TX126649326574.SevereThunderstormWatch.12664932A520TX.LUBWCNLUB.bcbc688f516e53edeaebd6c17cd13249"/>
+<summary>SEVERE THUNDERSTORM WATCH 233 REMAINS VALID UNTIL 9 PM CDT THIS EVENING FOR THE FOLLOWING AREAS IN TEXAS THIS WATCH INCLUDES 16 COUNTIES IN NORTHWEST TEXAS BAILEY COCHRAN CROSBY FLOYD GARZA HALE</summary>
+<cap:event>Severe Thunderstorm Watch</cap:event>
+<cap:effective>2023-05-23T19:37:00-05:00</cap:effective>
+<cap:expires>2023-05-23T21:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Severe</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Bailey; Briscoe; Castro; Cochran; Crosby; Floyd; Garza; Hale; Hockley; Lamb; Lubbock; Lynn; Parmer; Swisher; Terry; Yoakum</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>048017 048045 048069 048079 048107 048153 048169 048189 048219 048279 048303 048305 048369 048437 048445 048501</value>
+<valueName>UGC</valueName>
+<value>TXC017 TXC045 TXC069 TXC079 TXC107 TXC153 TXC169 TXC189 TXC219 TXC279 TXC303 TXC305 TXC369 TXC437 TXC445 TXC501</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KLUB.SV.A.0233.000000T0000Z-230524T0200Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=TX1266493263E4.SpecialWeatherStatement.126649327E10TX.EWXSPSEWX.1d2437035c140651f7f4e945ac7ad9e5</id>
+<updated>2023-05-23T19:33:00-05:00</updated>
+<published>2023-05-23T19:33:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Special Weather Statement issued May 23 at 7:33PM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=TX1266493263E4.SpecialWeatherStatement.126649327E10TX.EWXSPSEWX.1d2437035c140651f7f4e945ac7ad9e5"/>
+<summary>...A strong thunderstorm will impact portions of northeastern Williamson County through 800 PM CDT... At 733 PM CDT, Doppler radar was tracking a strong thunderstorm over Jarrell, or 11 miles northeast of Serenada, moving northeast at 15 mph. HAZARD...Winds in excess of 40 mph and penny size hail.</summary>
+<cap:event>Special Weather Statement</cap:event>
+<cap:effective>2023-05-23T19:33:00-05:00</cap:effective>
+<cap:expires>2023-05-23T20:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Observed</cap:certainty>
+<cap:areaDesc>Williamson</cap:areaDesc>
+<cap:polygon>30.87,-97.63 30.76,-97.34 30.7,-97.65 30.87,-97.72 30.88,-97.69 30.87,-97.63</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>048491</value>
+<valueName>UGC</valueName>
+<value>TXZ173</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value></value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=TX12664932631C.SevereThunderstormWarning.1266493289C8TX.LUBSVRLUB.df8434bca1f9c5365f975ae060233a80</id>
+<updated>2023-05-23T19:31:00-05:00</updated>
+<published>2023-05-23T19:31:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Severe Thunderstorm Warning issued May 23 at 7:31PM CDT until May 23 at 8:30PM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=TX12664932631C.SevereThunderstormWarning.1266493289C8TX.LUBSVRLUB.df8434bca1f9c5365f975ae060233a80"/>
+<summary>The National Weather Service in Lubbock Texas has issued a * Severe Thunderstorm Warning for... Southeastern Bailey County in northwestern Texas... Northeastern Cochran County in northwestern Texas... Northern Hockley County in northwestern Texas... Southwestern Lamb County in northwestern Texas...</summary>
+<cap:event>Severe Thunderstorm Warning</cap:event>
+<cap:effective>2023-05-23T19:31:00-05:00</cap:effective>
+<cap:expires>2023-05-23T20:30:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Immediate</cap:urgency>
+<cap:severity>Severe</cap:severity>
+<cap:certainty>Observed</cap:certainty>
+<cap:areaDesc>Bailey; Cochran; Hockley; Lamb</cap:areaDesc>
+<cap:polygon>33.79,-102.76 33.94,-102.69 33.75,-102.1 33.51,-102.36 33.79,-102.76</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>048017 048079 048219 048279</value>
+<valueName>UGC</valueName>
+<value>TXC017 TXC079 TXC219 TXC279</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.NEW.KLUB.SV.W.0086.230524T0031Z-230524T0130Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=TX12664932631C.SevereThunderstormWatch.126649336870TX.WNSWOU4.9f3b105da6076570ccdd1d6833f3a9b2</id>
+<updated>2023-05-23T19:31:00-05:00</updated>
+<published>2023-05-23T19:31:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Severe Thunderstorm Watch issued May 23 at 7:31PM CDT until May 24 at 2:00AM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=TX12664932631C.SevereThunderstormWatch.126649336870TX.WNSWOU4.9f3b105da6076570ccdd1d6833f3a9b2"/>
+<summary>SEVERE THUNDERSTORM WATCH 234 IS IN EFFECT UNTIL 200 AM CDT FOR THE FOLLOWING LOCATIONS TX . TEXAS COUNTIES INCLUDED ARE ARCHER BAYLOR BROWN CALLAHAN CHILDRESS COKE</summary>
+<cap:event>Severe Thunderstorm Watch</cap:event>
+<cap:effective>2023-05-23T19:31:00-05:00</cap:effective>
+<cap:expires>2023-05-24T02:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Severe</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Archer; Baylor; Brown; Callahan; Childress; Coke; Coleman; Comanche; Concho; Cottle; Dickens; Eastland; Erath; Fisher; Foard; Hall; Hamilton; Hardeman; Haskell; Irion; Jack; Jones; Kent; King; Knox; Lampasas; McCulloch; Mills; Motley; Nolan; Palo Pinto; Runnels; San Saba; Shackelford; Stephens; Sterling; Stonewall; Taylor; Throckmorton; Tom Green; Wichita; Wilbarger; Young</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>048009 048023 048049 048059 048075 048081 048083 048093 048095 048101 048125 048133 048143 048151 048155 048191 048193 048197 048207 048235 048237 048253 048263 048269 048275 048281 048307 048333 048345 048353 048363 048399 048411 048417 048429 048431 048433 048441 048447 048451 048485 048487 048503</value>
+<valueName>UGC</valueName>
+<value>TXC009 TXC023 TXC049 TXC059 TXC075 TXC081 TXC083 TXC093 TXC095 TXC101 TXC125 TXC133 TXC143 TXC151 TXC155 TXC191 TXC193 TXC197 TXC207 TXC235 TXC237 TXC253 TXC263 TXC269 TXC275 TXC281 TXC307 TXC333 TXC345 TXC353 TXC363 TXC399 TXC411 TXC417 TXC429 TXC431 TXC433 TXC441 TXC447 TXC451 TXC485 TXC487 TXC503</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.NEW.KWNS.SV.A.0234.230524T0030Z-230524T0700Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=TX126649326128.SpecialWeatherStatement.126649327E10TX.AMASPSAMA.0c8cd2e278997cbd9346bf70f1317e09</id>
+<updated>2023-05-23T19:26:00-05:00</updated>
+<published>2023-05-23T19:26:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Special Weather Statement issued May 23 at 7:26PM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=TX126649326128.SpecialWeatherStatement.126649327E10TX.AMASPSAMA.0c8cd2e278997cbd9346bf70f1317e09"/>
+<summary>...A strong thunderstorm will impact portions of southwestern Carson and southeastern Potter Counties through 800 PM CDT... At 726 PM CDT, Doppler radar was tracking a strong thunderstorm 12 miles north of Washburn, or 14 miles west of Panhandle, moving east at 35 mph. HAZARD...Wind gusts up to 50 mph and nickel size hail.</summary>
+<cap:event>Special Weather Statement</cap:event>
+<cap:effective>2023-05-23T19:26:00-05:00</cap:effective>
+<cap:expires>2023-05-23T20:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Observed</cap:certainty>
+<cap:areaDesc>Carson; Potter</cap:areaDesc>
+<cap:polygon>35.22,-101.8 35.45,-101.87 35.45,-101.35 35.18,-101.34 35.22,-101.8</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>048065 048375</value>
+<valueName>UGC</valueName>
+<value>TXZ012 TXZ013</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value></value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=TX1266493260C4.SpecialWeatherStatement.1266493283ECTX.SJTSPSSJT.bc049aa208e716fefe7ff264f86575c7</id>
+<updated>2023-05-23T19:25:00-05:00</updated>
+<published>2023-05-23T19:25:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Special Weather Statement issued May 23 at 7:25PM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=TX1266493260C4.SpecialWeatherStatement.1266493283ECTX.SJTSPSSJT.bc049aa208e716fefe7ff264f86575c7"/>
+<summary>...A strong thunderstorm will impact portions of northeastern Haskell and northwestern Throckmorton Counties through 815 PM CDT... At 724 PM CDT, Doppler radar was tracking a strong thunderstorm over Millers Creek Reservoir, moving southeast at 20 mph. HAZARD...Wind gusts up to 50 mph and nickel size hail. SOURCE...Radar indicated.</summary>
+<cap:event>Special Weather Statement</cap:event>
+<cap:effective>2023-05-23T19:25:00-05:00</cap:effective>
+<cap:expires>2023-05-23T20:15:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Observed</cap:certainty>
+<cap:areaDesc>Haskell; Throckmorton</cap:areaDesc>
+<cap:polygon>33.18,-99.12 33.1,-99.52 33.4,-99.59 33.4,-99.25 33.18,-99.12</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>048207 048447</value>
+<valueName>UGC</valueName>
+<value>TXZ098 TXZ099</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value></value>
+</cap:parameter>
+</entry>
+<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=TX126649325B4C.SpecialWeatherStatement.126649327E10TX.EWXSPSEWX.9f623e36362d1bc014408cd270b3262b</id>
 <updated>2023-05-23T19:11:00-05:00</updated>
 <published>2023-05-23T19:11:00-05:00</published>
@@ -4477,38 +5051,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value></value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=TX126649325A84.SevereThunderstormWarning.126649326894TX.LUBSVRLUB.113ff5ab1d564dece31b08588b79bd40</id>
-<updated>2023-05-23T19:09:00-05:00</updated>
-<published>2023-05-23T19:09:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Severe Thunderstorm Warning issued May 23 at 7:09PM CDT until May 23 at 7:45PM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=TX126649325A84.SevereThunderstormWarning.126649326894TX.LUBSVRLUB.113ff5ab1d564dece31b08588b79bd40"/>
-<summary>The National Weather Service in Lubbock Texas has issued a * Severe Thunderstorm Warning for... Eastern Bailey County in northwestern Texas... Southeastern Parmer County in the Panhandle of Texas... Southwestern Castro County in the Panhandle of Texas... Northern Lamb County in northwestern Texas...</summary>
-<cap:event>Severe Thunderstorm Warning</cap:event>
-<cap:effective>2023-05-23T19:09:00-05:00</cap:effective>
-<cap:expires>2023-05-23T19:45:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Immediate</cap:urgency>
-<cap:severity>Severe</cap:severity>
-<cap:certainty>Observed</cap:certainty>
-<cap:areaDesc>Bailey; Castro; Lamb; Parmer</cap:areaDesc>
-<cap:polygon>34.23,-102.68 34.41,-102.49 34.26,-102.11 34.03,-102.35 34.1,-102.55 34.23,-102.68</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>048017 048069 048279 048369</value>
-<valueName>UGC</valueName>
-<value>TXC017 TXC069 TXC279 TXC369</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.NEW.KLUB.SV.W.0084.230524T0009Z-230524T0045Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -4545,71 +5087,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=TX126649325A20.FloodAdvisory.1266493262B8TX.AMAFLSAMA.1e4ba702d884b6198bb22a56ea6f13bc</id>
-<updated>2023-05-23T19:08:00-05:00</updated>
-<published>2023-05-23T19:08:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Flood Advisory issued May 23 at 7:08PM CDT until May 23 at 7:30PM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=TX126649325A20.FloodAdvisory.1266493262B8TX.AMAFLSAMA.1e4ba702d884b6198bb22a56ea6f13bc"/>
-<summary>...FLOOD ADVISORY IN EFFECT UNTIL 930 PM CDT THIS EVENING... * WHAT...Flooding caused by excessive rainfall is expected. * WHERE...A portion of the Panhandle of Texas, including the following county, Randall. * WHEN...Until 930 PM CDT. * IMPACTS...Minor flooding in low-lying and poor drainage areas.</summary>
-<cap:event>Flood Advisory</cap:event>
-<cap:effective>2023-05-23T19:08:00-05:00</cap:effective>
-<cap:expires>2023-05-23T19:30:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Randall</cap:areaDesc>
-<cap:polygon>34.91,-101.63 34.93,-101.73 34.96,-101.98 34.93,-102.12 35.13,-102.08 35.12,-102 35.08,-101.78 35.05,-101.72 34.99,-101.65 34.98,-101.63 34.96,-101.63 34.94,-101.63 34.91,-101.63</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>048381</value>
-<valueName>UGC</valueName>
-<value>TXC381</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.NEW.KAMA.FA.Y.0012.230524T0008Z-230524T0230Z/
-/00000.N.ER.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=TX126649325A20.SevereWeatherStatement.126649326894TX.LUBSVSLUB.da05207b3897be969fe1aaefbc52aa5c</id>
-<updated>2023-05-23T19:08:00-05:00</updated>
-<published>2023-05-23T19:08:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Severe Weather Statement issued May 23 at 7:08PM CDT until May 23 at 7:45PM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=TX126649325A20.SevereWeatherStatement.126649326894TX.LUBSVSLUB.da05207b3897be969fe1aaefbc52aa5c"/>
-<summary>...THE SEVERE THUNDERSTORM WARNING FOR NORTHWESTERN LUBBOCK... NORTHEASTERN HOCKLEY...SOUTHWESTERN HALE AND SOUTHEASTERN LAMB COUNTIES IS CANCELLED... The storm which prompted the warning has weakened below severe limits, and no longer poses an immediate threat to life or property. Therefore, the warning has been cancelled.</summary>
-<cap:event>Severe Weather Statement</cap:event>
-<cap:effective>2023-05-23T19:08:00-05:00</cap:effective>
-<cap:expires>2023-05-23T19:45:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Immediate</cap:urgency>
-<cap:severity>Severe</cap:severity>
-<cap:certainty>Observed</cap:certainty>
-<cap:areaDesc>Hockley</cap:areaDesc>
-<cap:polygon>33.64,-102.34 33.74,-102.31 33.78,-102.13 33.99,-102.11 33.98,-101.89 33.66,-101.98 33.54,-102.17 33.64,-102.34</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>048219</value>
-<valueName>UGC</valueName>
-<value>TXC219</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CAN.KLUB.SV.W.0078.000000T0000Z-230524T0030Z/</value>
-</cap:parameter>
-</entry>
-<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=TX126649325A20.SpecialWeatherStatement.126649327E10TX.AMASPSAMA.3e038cd9b4f1f03384dcfad06d8dc411</id>
 <updated>2023-05-23T19:08:00-05:00</updated>
 <published>2023-05-23T19:08:00-05:00</published>
@@ -4642,291 +5119,36 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=TX126649325A20.SevereWeatherStatement.12664932A520TX.LUBSVSLUB.48de5367d41d2e88605b042aef65b42d</id>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=TX126649325A20.FloodAdvisory.12664932A520TX.AMAFLSAMA.1e4ba702d884b6198bb22a56ea6f13bc</id>
 <updated>2023-05-23T19:08:00-05:00</updated>
 <published>2023-05-23T19:08:00-05:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Severe Weather Statement issued May 23 at 7:08PM CDT until May 23 at 9:00PM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=TX126649325A20.SevereWeatherStatement.12664932A520TX.LUBSVSLUB.48de5367d41d2e88605b042aef65b42d"/>
-<summary>...THE SEVERE THUNDERSTORM WARNING FOR NORTHWESTERN LUBBOCK... NORTHEASTERN HOCKLEY...SOUTHWESTERN HALE AND SOUTHEASTERN LAMB COUNTIES IS CANCELLED... The storm which prompted the warning has weakened below severe limits, and no longer poses an immediate threat to life or property. Therefore, the warning has been cancelled.</summary>
-<cap:event>Severe Weather Statement</cap:event>
+<title>Flood Advisory issued May 23 at 7:08PM CDT until May 23 at 9:00PM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=TX126649325A20.FloodAdvisory.12664932A520TX.AMAFLSAMA.1e4ba702d884b6198bb22a56ea6f13bc"/>
+<summary>...FLOOD ADVISORY IN EFFECT UNTIL 930 PM CDT THIS EVENING... * WHAT...Flooding caused by excessive rainfall is expected. * WHERE...A portion of the Panhandle of Texas, including the following county, Randall. * WHEN...Until 930 PM CDT. * IMPACTS...Minor flooding in low-lying and poor drainage areas.</summary>
+<cap:event>Flood Advisory</cap:event>
 <cap:effective>2023-05-23T19:08:00-05:00</cap:effective>
 <cap:expires>2023-05-23T21:00:00-05:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
 <cap:category>Met</cap:category>
-<cap:urgency>Immediate</cap:urgency>
-<cap:severity>Severe</cap:severity>
-<cap:certainty>Observed</cap:certainty>
-<cap:areaDesc>Hale; Lamb; Lubbock</cap:areaDesc>
-<cap:polygon>33.64,-102.34 33.74,-102.31 33.78,-102.13 33.99,-102.11 33.98,-101.89 33.66,-101.98 33.54,-102.17 33.64,-102.34</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>048189 048279 048303</value>
-<valueName>UGC</valueName>
-<value>TXC189 TXC279 TXC303</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CAN.KLUB.SV.W.0078.000000T0000Z-230524T0030Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=TX1266493259BC.SevereThunderstormWarning.1266493262B8TX.LUBSVSLUB.732b197f4de811c90a260ef5e9988db2</id>
-<updated>2023-05-23T19:07:00-05:00</updated>
-<published>2023-05-23T19:07:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Severe Thunderstorm Warning issued May 23 at 7:07PM CDT until May 23 at 7:30PM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=TX1266493259BC.SevereThunderstormWarning.1266493262B8TX.LUBSVSLUB.732b197f4de811c90a260ef5e9988db2"/>
-<summary>...A SEVERE THUNDERSTORM WARNING REMAINS IN EFFECT UNTIL 730 PM CDT FOR SOUTH CENTRAL SWISHER COUNTY... At 707 PM CDT, a severe thunderstorm was located 5 miles southeast of Kress, or 10 miles north of Plainview, moving southeast at 15 mph. HAZARD...60 mph wind gusts and quarter size hail. SOURCE...Radar indicated.</summary>
-<cap:event>Severe Thunderstorm Warning</cap:event>
-<cap:effective>2023-05-23T19:07:00-05:00</cap:effective>
-<cap:expires>2023-05-23T19:30:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Immediate</cap:urgency>
-<cap:severity>Severe</cap:severity>
-<cap:certainty>Observed</cap:certainty>
-<cap:areaDesc>Swisher</cap:areaDesc>
-<cap:polygon>34.32,-101.7 34.32,-101.81 34.37,-101.78 34.37,-101.69 34.38,-101.65 34.32,-101.7</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>048437</value>
-<valueName>UGC</valueName>
-<value>TXC437</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KLUB.SV.W.0076.000000T0000Z-230524T0030Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=TX1266493259BC.SevereWeatherStatement.1266493262B8TX.LUBSVSLUB.3f66072a5d19d8a2391b3dc56851594f</id>
-<updated>2023-05-23T19:07:00-05:00</updated>
-<published>2023-05-23T19:07:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Severe Weather Statement issued May 23 at 7:07PM CDT until May 23 at 7:30PM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=TX1266493259BC.SevereWeatherStatement.1266493262B8TX.LUBSVSLUB.3f66072a5d19d8a2391b3dc56851594f"/>
-<summary>...A SEVERE THUNDERSTORM WARNING REMAINS IN EFFECT UNTIL 730 PM CDT FOR SOUTH CENTRAL SWISHER COUNTY... At 707 PM CDT, a severe thunderstorm was located 5 miles southeast of Kress, or 10 miles north of Plainview, moving southeast at 15 mph. HAZARD...60 mph wind gusts and quarter size hail. SOURCE...Radar indicated.</summary>
-<cap:event>Severe Weather Statement</cap:event>
-<cap:effective>2023-05-23T19:07:00-05:00</cap:effective>
-<cap:expires>2023-05-23T19:30:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Immediate</cap:urgency>
-<cap:severity>Severe</cap:severity>
-<cap:certainty>Observed</cap:certainty>
-<cap:areaDesc>Swisher</cap:areaDesc>
-<cap:polygon>34.32,-101.7 34.32,-101.81 34.37,-101.78 34.37,-101.69 34.38,-101.65 34.32,-101.7</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>048437</value>
-<valueName>UGC</valueName>
-<value>TXC437</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KLUB.SV.W.0076.000000T0000Z-230524T0030Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=TX1266493259BC.SpecialWeatherStatement.126649326894TX.MAFSPSMAF.6951a3eb1a756a9c6f66ca23727f4de7</id>
-<updated>2023-05-23T19:07:00-05:00</updated>
-<published>2023-05-23T19:07:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Special Weather Statement issued May 23 at 7:07PM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=TX1266493259BC.SpecialWeatherStatement.126649326894TX.MAFSPSMAF.6951a3eb1a756a9c6f66ca23727f4de7"/>
-<summary>...A strong thunderstorm will impact portions of southwestern Scurry, southern Borden, Howard, northeastern Martin and southeastern Dawson Counties through 745 PM CDT... At 706 PM CDT, Doppler radar was tracking a strong thunderstorm over Ackerly, moving southeast at 30 mph. HAZARD...Wind gusts of 50 to 55 mph and half inch hail.</summary>
-<cap:event>Special Weather Statement</cap:event>
-<cap:effective>2023-05-23T19:07:00-05:00</cap:effective>
-<cap:expires>2023-05-23T19:45:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
 <cap:urgency>Expected</cap:urgency>
 <cap:severity>Minor</cap:severity>
-<cap:certainty>Observed</cap:certainty>
-<cap:areaDesc>Borden; Dawson; Howard; Martin</cap:areaDesc>
-<cap:polygon>32.16,-101.37 32.4,-101.77 32.57,-101.86 32.74,-101.73 32.53,-101.17 32.45,-101.17 32.16,-101.37</cap:polygon>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Randall</cap:areaDesc>
+<cap:polygon>34.91,-101.63 34.93,-101.73 34.96,-101.98 34.93,-102.12 35.13,-102.08 35.12,-102 35.08,-101.78 35.05,-101.72 34.99,-101.65 34.98,-101.63 34.96,-101.63 34.94,-101.63 34.91,-101.63</cap:polygon>
 <cap:geocode>
 <valueName>FIPS6</valueName>
-<value>048033 048115 048227 048317</value>
+<value>048381</value>
 <valueName>UGC</valueName>
-<value>TXZ046 TXZ047 TXZ051 TXZ052</value>
+<value>TXC381</value>
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
-<value></value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=TX126649325958.SevereThunderstormWarning.126649326894TX.LUBSVSLUB.3ca216a7d8b2065327667d18375e991a</id>
-<updated>2023-05-23T19:06:00-05:00</updated>
-<published>2023-05-23T19:06:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Severe Thunderstorm Warning issued May 23 at 7:06PM CDT until May 23 at 7:45PM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=TX126649325958.SevereThunderstormWarning.126649326894TX.LUBSVSLUB.3ca216a7d8b2065327667d18375e991a"/>
-<summary>...A SEVERE THUNDERSTORM WARNING REMAINS IN EFFECT UNTIL 745 PM CDT FOR SOUTHEASTERN BAILEY...NORTH CENTRAL COCHRAN AND SOUTHWESTERN LAMB COUNTIES... At 705 PM CDT, severe thunderstorms were located along a line extending from near Sudan to near Bula to 4 miles northeast of Maple, moving east at 25 mph.</summary>
-<cap:event>Severe Thunderstorm Warning</cap:event>
-<cap:effective>2023-05-23T19:06:00-05:00</cap:effective>
-<cap:expires>2023-05-23T19:45:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Immediate</cap:urgency>
-<cap:severity>Severe</cap:severity>
-<cap:certainty>Observed</cap:certainty>
-<cap:areaDesc>Bailey; Cochran; Lamb</cap:areaDesc>
-<cap:polygon>34.04,-102.35 33.86,-102.54 33.79,-102.78 33.96,-102.9 34.01,-102.74 34.11,-102.55 34.04,-102.35</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>048017 048079 048279</value>
-<valueName>UGC</valueName>
-<value>TXC017 TXC079 TXC279</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KLUB.SV.W.0080.000000T0000Z-230524T0045Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=TX126649325958.SevereWeatherStatement.126649326894TX.LUBSVSLUB.cad733f15190783cf2d202cd235c1e28</id>
-<updated>2023-05-23T19:06:00-05:00</updated>
-<published>2023-05-23T19:06:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Severe Weather Statement issued May 23 at 7:06PM CDT until May 23 at 7:45PM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=TX126649325958.SevereWeatherStatement.126649326894TX.LUBSVSLUB.cad733f15190783cf2d202cd235c1e28"/>
-<summary>...A SEVERE THUNDERSTORM WARNING REMAINS IN EFFECT UNTIL 745 PM CDT FOR SOUTHEASTERN BAILEY...NORTH CENTRAL COCHRAN AND SOUTHWESTERN LAMB COUNTIES... At 705 PM CDT, severe thunderstorms were located along a line extending from near Sudan to near Bula to 4 miles northeast of Maple, moving east at 25 mph.</summary>
-<cap:event>Severe Weather Statement</cap:event>
-<cap:effective>2023-05-23T19:06:00-05:00</cap:effective>
-<cap:expires>2023-05-23T19:45:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Immediate</cap:urgency>
-<cap:severity>Severe</cap:severity>
-<cap:certainty>Observed</cap:certainty>
-<cap:areaDesc>Bailey</cap:areaDesc>
-<cap:polygon>34.04,-102.35 33.86,-102.54 33.79,-102.78 33.96,-102.9 34.01,-102.74 34.11,-102.55 34.04,-102.35</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>048017</value>
-<valueName>UGC</valueName>
-<value>TXC017</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KLUB.SV.W.0080.000000T0000Z-230524T0045Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=TX126649325958.SevereThunderstormWarning.126649326894TX.OUNSVSOUN.ede06c40533f88c9c925a8f7954e6514</id>
-<updated>2023-05-23T19:06:00-05:00</updated>
-<published>2023-05-23T19:06:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Severe Thunderstorm Warning issued May 23 at 7:06PM CDT until May 23 at 7:45PM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=TX126649325958.SevereThunderstormWarning.126649326894TX.OUNSVSOUN.ede06c40533f88c9c925a8f7954e6514"/>
-<summary>...A SEVERE THUNDERSTORM WARNING REMAINS IN EFFECT UNTIL 745 PM CDT FOR SOUTHEASTERN KNOX AND SOUTHWESTERN BAYLOR COUNTIES... At 705 PM CDT, a severe thunderstorm was located near Goree, moving southeast at 10 mph. HAZARD...60 mph wind gusts and half dollar size hail. SOURCE...Radar indicated.</summary>
-<cap:event>Severe Thunderstorm Warning</cap:event>
-<cap:effective>2023-05-23T19:06:00-05:00</cap:effective>
-<cap:expires>2023-05-23T19:45:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Immediate</cap:urgency>
-<cap:severity>Severe</cap:severity>
-<cap:certainty>Observed</cap:certainty>
-<cap:areaDesc>Baylor; Knox</cap:areaDesc>
-<cap:polygon>33.4,-99.66 33.59,-99.67 33.63,-99.44 33.4,-99.3 33.4,-99.66</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>048023 048275</value>
-<valueName>UGC</valueName>
-<value>TXC023 TXC275</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KOUN.SV.W.0260.000000T0000Z-230524T0045Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=TX126649325958.SevereWeatherStatement.126649326894TX.OUNSVSOUN.8d51a064b0690a2d4e8fd0f69f98b837</id>
-<updated>2023-05-23T19:06:00-05:00</updated>
-<published>2023-05-23T19:06:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Severe Weather Statement issued May 23 at 7:06PM CDT until May 23 at 7:45PM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=TX126649325958.SevereWeatherStatement.126649326894TX.OUNSVSOUN.8d51a064b0690a2d4e8fd0f69f98b837"/>
-<summary>...A SEVERE THUNDERSTORM WARNING REMAINS IN EFFECT UNTIL 745 PM CDT FOR SOUTHEASTERN KNOX AND SOUTHWESTERN BAYLOR COUNTIES... At 705 PM CDT, a severe thunderstorm was located near Goree, moving southeast at 10 mph. HAZARD...60 mph wind gusts and half dollar size hail. SOURCE...Radar indicated.</summary>
-<cap:event>Severe Weather Statement</cap:event>
-<cap:effective>2023-05-23T19:06:00-05:00</cap:effective>
-<cap:expires>2023-05-23T19:45:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Immediate</cap:urgency>
-<cap:severity>Severe</cap:severity>
-<cap:certainty>Observed</cap:certainty>
-<cap:areaDesc>Baylor; Knox</cap:areaDesc>
-<cap:polygon>33.4,-99.66 33.59,-99.67 33.63,-99.44 33.4,-99.3 33.4,-99.66</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>048023 048275</value>
-<valueName>UGC</valueName>
-<value>TXC023 TXC275</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KOUN.SV.W.0260.000000T0000Z-230524T0045Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=TX126649325958.SevereWeatherStatement.12664932A520TX.LUBSVSLUB.bcc3a054b2edabfa16c784e7fa795084</id>
-<updated>2023-05-23T19:06:00-05:00</updated>
-<published>2023-05-23T19:06:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Severe Weather Statement issued May 23 at 7:06PM CDT until May 23 at 9:00PM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=TX126649325958.SevereWeatherStatement.12664932A520TX.LUBSVSLUB.bcc3a054b2edabfa16c784e7fa795084"/>
-<summary>...A SEVERE THUNDERSTORM WARNING REMAINS IN EFFECT UNTIL 745 PM CDT FOR SOUTHEASTERN BAILEY...NORTH CENTRAL COCHRAN AND SOUTHWESTERN LAMB COUNTIES... At 705 PM CDT, severe thunderstorms were located along a line extending from near Sudan to near Bula to 4 miles northeast of Maple, moving east at 25 mph.</summary>
-<cap:event>Severe Weather Statement</cap:event>
-<cap:effective>2023-05-23T19:06:00-05:00</cap:effective>
-<cap:expires>2023-05-23T21:00:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Immediate</cap:urgency>
-<cap:severity>Severe</cap:severity>
-<cap:certainty>Observed</cap:certainty>
-<cap:areaDesc>Cochran</cap:areaDesc>
-<cap:polygon>34.04,-102.35 33.86,-102.54 33.79,-102.78 33.96,-102.9 34.01,-102.74 34.11,-102.55 34.04,-102.35</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>048079</value>
-<valueName>UGC</valueName>
-<value>TXC079</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KLUB.SV.W.0080.000000T0000Z-230524T0045Z/</value>
+<value>/O.NEW.KAMA.FA.Y.0012.230524T0008Z-230524T0230Z/
+/00000.N.ER.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -4963,607 +5185,31 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=TX12664932582C.SevereThunderstormWarning.1266493262B8TX.LUBSVSLUB.0c0d30b52d68fbb29d85e3f5dd059a52</id>
-<updated>2023-05-23T19:03:00-05:00</updated>
-<published>2023-05-23T19:03:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Severe Thunderstorm Warning issued May 23 at 7:03PM CDT until May 23 at 7:30PM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=TX12664932582C.SevereThunderstormWarning.1266493262B8TX.LUBSVSLUB.0c0d30b52d68fbb29d85e3f5dd059a52"/>
-<summary>...A SEVERE THUNDERSTORM WARNING REMAINS IN EFFECT UNTIL 730 PM CDT FOR NORTHEASTERN BAILEY...SOUTHEASTERN PARMER...SOUTHWESTERN CASTRO AND NORTHWESTERN LAMB COUNTIES... At 703 PM CDT, a severe thunderstorm was located 7 miles southeast of Lazbuddie, or 9 miles northwest of Earth, moving east at 30 mph. HAZARD...60 mph wind gusts and quarter size hail.</summary>
-<cap:event>Severe Thunderstorm Warning</cap:event>
-<cap:effective>2023-05-23T19:03:00-05:00</cap:effective>
-<cap:expires>2023-05-23T19:30:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Immediate</cap:urgency>
-<cap:severity>Severe</cap:severity>
-<cap:certainty>Observed</cap:certainty>
-<cap:areaDesc>Bailey; Castro; Lamb; Parmer</cap:areaDesc>
-<cap:polygon>34.1,-102.58 34.21,-102.79 34.46,-102.55 34.47,-102.33 34.1,-102.58</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>048017 048069 048279 048369</value>
-<valueName>UGC</valueName>
-<value>TXC017 TXC069 TXC279 TXC369</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KLUB.SV.W.0079.000000T0000Z-230524T0030Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=TX12664932582C.SevereWeatherStatement.1266493262B8TX.LUBSVSLUB.a14ee3fca202e3445c24ad9af78d669e</id>
-<updated>2023-05-23T19:03:00-05:00</updated>
-<published>2023-05-23T19:03:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Severe Weather Statement issued May 23 at 7:03PM CDT until May 23 at 7:30PM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=TX12664932582C.SevereWeatherStatement.1266493262B8TX.LUBSVSLUB.a14ee3fca202e3445c24ad9af78d669e"/>
-<summary>...A SEVERE THUNDERSTORM WARNING REMAINS IN EFFECT UNTIL 730 PM CDT FOR NORTHEASTERN BAILEY...SOUTHEASTERN PARMER...SOUTHWESTERN CASTRO AND NORTHWESTERN LAMB COUNTIES... At 703 PM CDT, a severe thunderstorm was located 7 miles southeast of Lazbuddie, or 9 miles northwest of Earth, moving east at 30 mph. HAZARD...60 mph wind gusts and quarter size hail.</summary>
-<cap:event>Severe Weather Statement</cap:event>
-<cap:effective>2023-05-23T19:03:00-05:00</cap:effective>
-<cap:expires>2023-05-23T19:30:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Immediate</cap:urgency>
-<cap:severity>Severe</cap:severity>
-<cap:certainty>Observed</cap:certainty>
-<cap:areaDesc>Castro</cap:areaDesc>
-<cap:polygon>34.1,-102.58 34.21,-102.79 34.46,-102.55 34.47,-102.33 34.1,-102.58</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>048069</value>
-<valueName>UGC</valueName>
-<value>TXC069</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KLUB.SV.W.0079.000000T0000Z-230524T0030Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=TX12664932582C.SevereThunderstormWarning.126649326894TX.LUBSVRLUB.73c43573bfad8861325d4ba426b8314f</id>
-<updated>2023-05-23T19:03:00-05:00</updated>
-<published>2023-05-23T19:03:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Severe Thunderstorm Warning issued May 23 at 7:03PM CDT until May 23 at 7:45PM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=TX12664932582C.SevereThunderstormWarning.126649326894TX.LUBSVRLUB.73c43573bfad8861325d4ba426b8314f"/>
-<summary>The National Weather Service in Lubbock Texas has issued a * Severe Thunderstorm Warning for... Central Floyd County in northwestern Texas... * Until 745 PM CDT. * At 703 PM CDT, a severe thunderstorm was located 7 miles northeast of Floydada, moving southeast at 10 mph.</summary>
-<cap:event>Severe Thunderstorm Warning</cap:event>
-<cap:effective>2023-05-23T19:03:00-05:00</cap:effective>
-<cap:expires>2023-05-23T19:45:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Immediate</cap:urgency>
-<cap:severity>Severe</cap:severity>
-<cap:certainty>Observed</cap:certainty>
-<cap:areaDesc>Floyd</cap:areaDesc>
-<cap:polygon>34.05,-101.39 34.15,-101.27 34.1,-101.05 33.84,-101.26 34.05,-101.39</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>048153</value>
-<valueName>UGC</valueName>
-<value>TXC153</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.NEW.KLUB.SV.W.0083.230524T0003Z-230524T0045Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=TX12664932582C.SevereWeatherStatement.12664932A520TX.LUBSVSLUB.7ae46f41bc8fabb02af947cc062d2937</id>
-<updated>2023-05-23T19:03:00-05:00</updated>
-<published>2023-05-23T19:03:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Severe Weather Statement issued May 23 at 7:03PM CDT until May 23 at 9:00PM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=TX12664932582C.SevereWeatherStatement.12664932A520TX.LUBSVSLUB.7ae46f41bc8fabb02af947cc062d2937"/>
-<summary>...A SEVERE THUNDERSTORM WARNING REMAINS IN EFFECT UNTIL 730 PM CDT FOR NORTHEASTERN BAILEY...SOUTHEASTERN PARMER...SOUTHWESTERN CASTRO AND NORTHWESTERN LAMB COUNTIES... At 703 PM CDT, a severe thunderstorm was located 7 miles southeast of Lazbuddie, or 9 miles northwest of Earth, moving east at 30 mph. HAZARD...60 mph wind gusts and quarter size hail.</summary>
-<cap:event>Severe Weather Statement</cap:event>
-<cap:effective>2023-05-23T19:03:00-05:00</cap:effective>
-<cap:expires>2023-05-23T21:00:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Immediate</cap:urgency>
-<cap:severity>Severe</cap:severity>
-<cap:certainty>Observed</cap:certainty>
-<cap:areaDesc>Parmer</cap:areaDesc>
-<cap:polygon>34.1,-102.58 34.21,-102.79 34.46,-102.55 34.47,-102.33 34.1,-102.58</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>048369</value>
-<valueName>UGC</valueName>
-<value>TXC369</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KLUB.SV.W.0079.000000T0000Z-230524T0030Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=TX1266493257C8.SevereThunderstormWarning.126649325CDCTX.LUBSVSLUB.d9bf94d4903a285aa54793dbdcd4e11f</id>
-<updated>2023-05-23T19:02:00-05:00</updated>
-<published>2023-05-23T19:02:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Severe Thunderstorm Warning issued May 23 at 7:02PM CDT until May 23 at 7:15PM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=TX1266493257C8.SevereThunderstormWarning.126649325CDCTX.LUBSVSLUB.d9bf94d4903a285aa54793dbdcd4e11f"/>
-<summary>...A SEVERE THUNDERSTORM WARNING REMAINS IN EFFECT UNTIL 715 PM CDT FOR SOUTHEASTERN LYNN AND WESTERN GARZA COUNTIES... At 702 PM CDT, severe thunderstorms were located along a line extending from 7 miles northwest of Post to 12 miles north of Gail, moving east at 35 mph. HAZARD...60 mph wind gusts and quarter size hail.</summary>
-<cap:event>Severe Thunderstorm Warning</cap:event>
-<cap:effective>2023-05-23T19:02:00-05:00</cap:effective>
-<cap:expires>2023-05-23T19:15:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Immediate</cap:urgency>
-<cap:severity>Severe</cap:severity>
-<cap:certainty>Observed</cap:certainty>
-<cap:areaDesc>Garza; Lynn</cap:areaDesc>
-<cap:polygon>32.96,-101.63 33.27,-101.63 33.32,-101.44 32.96,-101.43 32.96,-101.63</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>048169 048305</value>
-<valueName>UGC</valueName>
-<value>TXC169 TXC305</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KLUB.SV.W.0077.000000T0000Z-230524T0015Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=TX1266493257C8.SevereWeatherStatement.12664932A520TX.LUBSVSLUB.333689cf3b132b22d71601ae5dd8a0d6</id>
-<updated>2023-05-23T19:02:00-05:00</updated>
-<published>2023-05-23T19:02:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Severe Weather Statement issued May 23 at 7:02PM CDT until May 23 at 9:00PM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=TX1266493257C8.SevereWeatherStatement.12664932A520TX.LUBSVSLUB.333689cf3b132b22d71601ae5dd8a0d6"/>
-<summary>...A SEVERE THUNDERSTORM WARNING REMAINS IN EFFECT UNTIL 715 PM CDT FOR SOUTHEASTERN LYNN AND WESTERN GARZA COUNTIES... At 702 PM CDT, severe thunderstorms were located along a line extending from 7 miles northwest of Post to 12 miles north of Gail, moving east at 35 mph. HAZARD...60 mph wind gusts and quarter size hail.</summary>
-<cap:event>Severe Weather Statement</cap:event>
-<cap:effective>2023-05-23T19:02:00-05:00</cap:effective>
-<cap:expires>2023-05-23T21:00:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Immediate</cap:urgency>
-<cap:severity>Severe</cap:severity>
-<cap:certainty>Observed</cap:certainty>
-<cap:areaDesc>Garza; Lynn</cap:areaDesc>
-<cap:polygon>32.96,-101.63 33.27,-101.63 33.32,-101.44 32.96,-101.43 32.96,-101.63</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>048169 048305</value>
-<valueName>UGC</valueName>
-<value>TXC169 TXC305</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KLUB.SV.W.0077.000000T0000Z-230524T0015Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=TX12664926AE3C.SevereThunderstormWarning.126649326894TX.LUBSVRLUB.8bf15fc9f51004e3b3ef030c2518dcac</id>
-<updated>2023-05-23T18:59:00-05:00</updated>
-<published>2023-05-23T18:59:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Severe Thunderstorm Warning issued May 23 at 6:59PM CDT until May 23 at 7:45PM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=TX12664926AE3C.SevereThunderstormWarning.126649326894TX.LUBSVRLUB.8bf15fc9f51004e3b3ef030c2518dcac"/>
-<summary>The National Weather Service in Lubbock Texas has issued a * Severe Thunderstorm Warning for... Northwestern Floyd County in northwestern Texas... Northeastern Hale County in northwestern Texas... South central Swisher County in the Panhandle of Texas... * Until 745 PM CDT.</summary>
-<cap:event>Severe Thunderstorm Warning</cap:event>
-<cap:effective>2023-05-23T18:59:00-05:00</cap:effective>
-<cap:expires>2023-05-23T19:45:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Immediate</cap:urgency>
-<cap:severity>Severe</cap:severity>
-<cap:certainty>Observed</cap:certainty>
-<cap:areaDesc>Floyd; Hale; Swisher</cap:areaDesc>
-<cap:polygon>34.33,-101.82 34.38,-101.65 34.28,-101.48 34.15,-101.74 34.33,-101.82</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>048153 048189 048437</value>
-<valueName>UGC</valueName>
-<value>TXC153 TXC189 TXC437</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.NEW.KLUB.SV.W.0082.230523T2359Z-230524T0045Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=TX12664926AD74.SevereThunderstormWarning.1266493262B8TX.AMASVSAMA.71da8a584b947504d3b7d6af777661d1</id>
-<updated>2023-05-23T18:57:00-05:00</updated>
-<published>2023-05-23T18:57:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Severe Thunderstorm Warning issued May 23 at 6:57PM CDT until May 23 at 7:30PM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=TX12664926AD74.SevereThunderstormWarning.1266493262B8TX.AMASVSAMA.71da8a584b947504d3b7d6af777661d1"/>
-<summary>...A SEVERE THUNDERSTORM WARNING REMAINS IN EFFECT UNTIL 730 PM CDT FOR RANDALL...SOUTHEASTERN DEAF SMITH AND SOUTHERN POTTER COUNTIES... At 656 PM CDT, severe thunderstorms were located along a line extending from 10 miles east of Valley De Oro to near Mescalero Park to 6 miles southeast of Buffalo Lake, moving east at 35 mph. HAZARD...60 mph wind gusts and quarter size hail.</summary>
-<cap:event>Severe Thunderstorm Warning</cap:event>
-<cap:effective>2023-05-23T18:57:00-05:00</cap:effective>
-<cap:expires>2023-05-23T19:30:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Immediate</cap:urgency>
-<cap:severity>Severe</cap:severity>
-<cap:certainty>Observed</cap:certainty>
-<cap:areaDesc>Deaf Smith; Potter; Randall</cap:areaDesc>
-<cap:polygon>34.75,-102.3 34.94,-102.23 35.08,-102.18 35.25,-102.12 35.46,-102.15 35.47,-101.62 34.75,-101.74 34.75,-102.3</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>048117 048375 048381</value>
-<valueName>UGC</valueName>
-<value>TXC117 TXC375 TXC381</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KAMA.SV.W.0075.000000T0000Z-230524T0030Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=TX12664926AD74.SevereWeatherStatement.1266493262B8TX.AMASVSAMA.6115410db5fb6875534cf7638ffa1a3b</id>
-<updated>2023-05-23T18:57:00-05:00</updated>
-<published>2023-05-23T18:57:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Severe Weather Statement issued May 23 at 6:57PM CDT until May 23 at 7:30PM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=TX12664926AD74.SevereWeatherStatement.1266493262B8TX.AMASVSAMA.6115410db5fb6875534cf7638ffa1a3b"/>
-<summary>...A SEVERE THUNDERSTORM WARNING REMAINS IN EFFECT UNTIL 730 PM CDT FOR RANDALL...SOUTHEASTERN DEAF SMITH AND SOUTHERN POTTER COUNTIES... At 656 PM CDT, severe thunderstorms were located along a line extending from 10 miles east of Valley De Oro to near Mescalero Park to 6 miles southeast of Buffalo Lake, moving east at 35 mph. HAZARD...60 mph wind gusts and quarter size hail.</summary>
-<cap:event>Severe Weather Statement</cap:event>
-<cap:effective>2023-05-23T18:57:00-05:00</cap:effective>
-<cap:expires>2023-05-23T19:30:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Immediate</cap:urgency>
-<cap:severity>Severe</cap:severity>
-<cap:certainty>Observed</cap:certainty>
-<cap:areaDesc>Potter; Randall</cap:areaDesc>
-<cap:polygon>34.75,-102.3 34.94,-102.23 35.08,-102.18 35.25,-102.12 35.46,-102.15 35.47,-101.62 34.75,-101.74 34.75,-102.3</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>048375 048381</value>
-<valueName>UGC</valueName>
-<value>TXC375 TXC381</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KAMA.SV.W.0075.000000T0000Z-230524T0030Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=TX12664926AD74.SevereWeatherStatement.12664932A520TX.AMASVSAMA.27759490acfe84b09ae38c09fc7acbce</id>
-<updated>2023-05-23T18:57:00-05:00</updated>
-<published>2023-05-23T18:57:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Severe Weather Statement issued May 23 at 6:57PM CDT until May 23 at 9:00PM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=TX12664926AD74.SevereWeatherStatement.12664932A520TX.AMASVSAMA.27759490acfe84b09ae38c09fc7acbce"/>
-<summary>...A SEVERE THUNDERSTORM WARNING REMAINS IN EFFECT UNTIL 730 PM CDT FOR RANDALL...SOUTHEASTERN DEAF SMITH AND SOUTHERN POTTER COUNTIES... At 656 PM CDT, severe thunderstorms were located along a line extending from 10 miles east of Valley De Oro to near Mescalero Park to 6 miles southeast of Buffalo Lake, moving east at 35 mph. HAZARD...60 mph wind gusts and quarter size hail.</summary>
-<cap:event>Severe Weather Statement</cap:event>
-<cap:effective>2023-05-23T18:57:00-05:00</cap:effective>
-<cap:expires>2023-05-23T21:00:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Immediate</cap:urgency>
-<cap:severity>Severe</cap:severity>
-<cap:certainty>Observed</cap:certainty>
-<cap:areaDesc>Deaf Smith</cap:areaDesc>
-<cap:polygon>34.75,-102.3 34.94,-102.23 35.08,-102.18 35.25,-102.12 35.46,-102.15 35.47,-101.62 34.75,-101.74 34.75,-102.3</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>048117</value>
-<valueName>UGC</valueName>
-<value>TXC117</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KAMA.SV.W.0075.000000T0000Z-230524T0030Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=TX12664926AD10.SevereThunderstormWarning.126649326894TX.LUBSVRLUB.e7ae01bb0140e878bb20c5522d82c7bc</id>
-<updated>2023-05-23T18:56:00-05:00</updated>
-<published>2023-05-23T18:56:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Severe Thunderstorm Warning issued May 23 at 6:56PM CDT until May 23 at 7:45PM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=TX12664926AD10.SevereThunderstormWarning.126649326894TX.LUBSVRLUB.e7ae01bb0140e878bb20c5522d82c7bc"/>
-<summary>The National Weather Service in Lubbock Texas has issued a * Severe Thunderstorm Warning for... Northeastern Hockley County in northwestern Texas... Southeastern Lamb County in northwestern Texas... * Until 745 PM CDT. * At 656 PM CDT, a severe thunderstorm was located near Littlefield,</summary>
-<cap:event>Severe Thunderstorm Warning</cap:event>
-<cap:effective>2023-05-23T18:56:00-05:00</cap:effective>
-<cap:expires>2023-05-23T19:45:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Immediate</cap:urgency>
-<cap:severity>Severe</cap:severity>
-<cap:certainty>Observed</cap:certainty>
-<cap:areaDesc>Hockley; Lamb</cap:areaDesc>
-<cap:polygon>33.86,-102.44 33.99,-102.32 33.96,-102.11 33.77,-102.12 33.73,-102.31 33.86,-102.44</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>048219 048279</value>
-<valueName>UGC</valueName>
-<value>TXC219 TXC279</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.NEW.KLUB.SV.W.0081.230523T2356Z-230524T0045Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=TX12664926AC48.SpecialWeatherStatement.1266493262B8TX.EWXSPSEWX.1d2437035c140651f7f4e945ac7ad9e5</id>
-<updated>2023-05-23T18:54:00-05:00</updated>
-<published>2023-05-23T18:54:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Special Weather Statement issued May 23 at 6:54PM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=TX12664926AC48.SpecialWeatherStatement.1266493262B8TX.EWXSPSEWX.1d2437035c140651f7f4e945ac7ad9e5"/>
-<summary>...A strong thunderstorm will impact portions of west central Williamson County through 730 PM CDT... At 654 PM CDT, Doppler radar was tracking a strong thunderstorm near Liberty Hill, or 10 miles west of Serenada, moving southeast at 15 mph. HAZARD...Winds in excess of 40 mph and penny size hail.</summary>
-<cap:event>Special Weather Statement</cap:event>
-<cap:effective>2023-05-23T18:54:00-05:00</cap:effective>
-<cap:expires>2023-05-23T19:30:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Observed</cap:certainty>
-<cap:areaDesc>Williamson</cap:areaDesc>
-<cap:polygon>30.63,-97.71 30.53,-97.79 30.71,-98 30.79,-97.96 30.81,-97.94 30.63,-97.71</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>048491</value>
-<valueName>UGC</valueName>
-<value>TXZ173</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value></value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=TX12664926AA54.SpecialWeatherStatement.1266493262B8TX.MAFSPSMAF.4ca7aa80ebccf23d783c5e9c6b53969f</id>
-<updated>2023-05-23T18:49:00-05:00</updated>
-<published>2023-05-23T18:49:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Special Weather Statement issued May 23 at 6:49PM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=TX12664926AA54.SpecialWeatherStatement.1266493262B8TX.MAFSPSMAF.4ca7aa80ebccf23d783c5e9c6b53969f"/>
-<summary>...A strong thunderstorm will impact portions of northwestern Scurry and northern Borden Counties through 730 PM CDT... At 649 PM CDT, Doppler radar was tracking a strong thunderstorm 12 miles north of Gail, moving east at 25 mph. HAZARD...Wind gusts of 50 to 55 mph and half inch hail. SOURCE...Radar indicated.</summary>
-<cap:event>Special Weather Statement</cap:event>
-<cap:effective>2023-05-23T18:49:00-05:00</cap:effective>
-<cap:expires>2023-05-23T19:30:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Observed</cap:certainty>
-<cap:areaDesc>Scurry</cap:areaDesc>
-<cap:polygon>32.79,-101.07 32.81,-101.65 32.96,-101.69 32.97,-101.08 32.79,-101.07</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>048415</value>
-<valueName>UGC</valueName>
-<value>TXZ048</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value></value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=TX12664926A9F0.SpecialWeatherStatement.126649325CDCTX.EWXSPSEWX.a04a28d3be7aadfa3fde4bfeb7968824</id>
-<updated>2023-05-23T18:48:00-05:00</updated>
-<published>2023-05-23T18:48:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Special Weather Statement issued May 23 at 6:48PM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=TX12664926A9F0.SpecialWeatherStatement.126649325CDCTX.EWXSPSEWX.a04a28d3be7aadfa3fde4bfeb7968824"/>
-<summary>...A strong thunderstorm will impact portions of north central Hays and west central Travis Counties through 715 PM CDT... At 648 PM CDT, Doppler radar was tracking a strong thunderstorm 7 miles west of The Hills, or 11 miles north of Dripping Springs, moving southeast at 10 mph. HAZARD...Penny size hail.</summary>
-<cap:event>Special Weather Statement</cap:event>
-<cap:effective>2023-05-23T18:48:00-05:00</cap:effective>
-<cap:expires>2023-05-23T19:15:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Observed</cap:certainty>
-<cap:areaDesc>Hays</cap:areaDesc>
-<cap:polygon>30.36,-97.96 30.2,-98.06 30.31,-98.19 30.43,-98.13 30.36,-97.96</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>048209</value>
-<valueName>UGC</valueName>
-<value>TXZ191</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value></value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=TX12664926A98C.SpecialWeatherStatement.1266493262B8TX.EWXSPSEWX.859d14198a3189272d68a8dcb21dfd8a</id>
-<updated>2023-05-23T18:47:00-05:00</updated>
-<published>2023-05-23T18:47:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Special Weather Statement issued May 23 at 6:47PM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=TX12664926A98C.SpecialWeatherStatement.1266493262B8TX.EWXSPSEWX.859d14198a3189272d68a8dcb21dfd8a"/>
-<summary>...A strong thunderstorm will impact portions of central Burnet County through 730 PM CDT... At 647 PM CDT, Doppler radar was tracking a strong thunderstorm near Burnet, moving southeast at 15 mph. HAZARD...Winds in excess of 40 mph and penny size hail. SOURCE...Radar indicated.</summary>
-<cap:event>Special Weather Statement</cap:event>
-<cap:effective>2023-05-23T18:47:00-05:00</cap:effective>
-<cap:expires>2023-05-23T19:30:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Observed</cap:certainty>
-<cap:areaDesc>Burnet</cap:areaDesc>
-<cap:polygon>30.74,-97.99 30.71,-98 30.58,-98.13 30.8,-98.28 30.86,-98.2 30.74,-97.99</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>048053</value>
-<valueName>UGC</valueName>
-<value>TXZ172</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value></value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=TX12664926A8C4.SevereWeatherStatement.12664932A520TX.AMASVSAMA.0521ba20d8691738a2d7058b0d7197ae</id>
-<updated>2023-05-23T18:45:00-05:00</updated>
-<published>2023-05-23T18:45:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Severe Weather Statement issued May 23 at 6:45PM CDT until May 23 at 9:00PM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=TX12664926A8C4.SevereWeatherStatement.12664932A520TX.AMASVSAMA.0521ba20d8691738a2d7058b0d7197ae"/>
-<summary>...A SEVERE THUNDERSTORM WARNING REMAINS IN EFFECT UNTIL 730 PM CDT FOR RANDALL...SOUTHEASTERN OLDHAM...EASTERN DEAF SMITH AND POTTER COUNTIES... At 645 PM CDT, severe thunderstorms were located along a line extending from 4 miles southeast of Valley De Oro to 5 miles northeast of Umbarger to 6 miles southwest of Buffalo Lake, moving</summary>
-<cap:event>Severe Weather Statement</cap:event>
-<cap:effective>2023-05-23T18:45:00-05:00</cap:effective>
-<cap:expires>2023-05-23T21:00:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Immediate</cap:urgency>
-<cap:severity>Severe</cap:severity>
-<cap:certainty>Observed</cap:certainty>
-<cap:areaDesc>Oldham</cap:areaDesc>
-<cap:polygon>34.75,-102.44 34.93,-102.29 35.07,-102.24 35.26,-102.23 35.46,-102.24 35.47,-101.62 34.75,-101.74 34.75,-102.44</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>048359</value>
-<valueName>UGC</valueName>
-<value>TXC359</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KAMA.SV.W.0075.000000T0000Z-230524T0030Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=TX12664926A608.SpecialWeatherStatement.1266493262B8TX.MAFSPSMAF.cbd2d4513e31e4040a12d746505d34c1</id>
-<updated>2023-05-23T18:38:00-05:00</updated>
-<published>2023-05-23T18:38:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Special Weather Statement issued May 23 at 6:38PM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=TX12664926A608.SpecialWeatherStatement.1266493262B8TX.MAFSPSMAF.cbd2d4513e31e4040a12d746505d34c1"/>
-<summary>...A strong thunderstorm will impact portions of northeastern Glasscock and southern Howard Counties through 730 PM CDT... At 637 PM CDT, Doppler radar was tracking a strong thunderstorm near Lomax, or 11 miles south of Big Spring, moving east at 15 mph. HAZARD...Wind gusts of 50 to 55 mph and half inch hail. SOURCE...Radar indicated.</summary>
-<cap:event>Special Weather Statement</cap:event>
-<cap:effective>2023-05-23T18:38:00-05:00</cap:effective>
-<cap:expires>2023-05-23T19:30:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Observed</cap:certainty>
-<cap:areaDesc>Glasscock</cap:areaDesc>
-<cap:polygon>32.09,-101.26 31.99,-101.27 31.99,-101.62 32.16,-101.66 32.24,-101.29 32.09,-101.25 32.09,-101.26</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>048173</value>
-<valueName>UGC</valueName>
-<value>TXZ063</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value></value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=TX12664926A4DC.SpecialWeatherStatement.126649325CDCTX.MAFSPSMAF.0c99f3dd1a4ad4479df9216ad6831d28</id>
-<updated>2023-05-23T18:35:00-05:00</updated>
-<published>2023-05-23T18:35:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Special Weather Statement issued May 23 at 6:35PM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=TX12664926A4DC.SpecialWeatherStatement.126649325CDCTX.MAFSPSMAF.0c99f3dd1a4ad4479df9216ad6831d28"/>
-<summary>...A strong thunderstorm will impact portions of east central Crane and northern Upton Counties through 715 PM CDT... At 634 PM CDT, Doppler radar was tracking a strong thunderstorm near Crane, moving east at 20 mph. HAZARD...Wind gusts of 50 to 55 mph and half inch hail. SOURCE...Radar indicated.</summary>
-<cap:event>Special Weather Statement</cap:event>
-<cap:effective>2023-05-23T18:35:00-05:00</cap:effective>
-<cap:expires>2023-05-23T19:15:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Observed</cap:certainty>
-<cap:areaDesc>Crane; Upton</cap:areaDesc>
-<cap:polygon>31.3,-102.36 31.42,-102.43 31.59,-102.04 31.36,-101.88 31.3,-102.36</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>048103 048461</value>
-<valueName>UGC</valueName>
-<value>TXZ068 TXZ069</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value></value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=TX12664926A158.FloodAdvisory.12664932A520TX.EWXFLSEWX.f0b91e1a8178c11227b3ac632e8633e4</id>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=TX12664926A158.FloodAdvisory.126649336870TX.EWXFLSEWX.115f8c114b814b2ab499ce623f4402e0</id>
 <updated>2023-05-23T18:26:00-05:00</updated>
 <published>2023-05-23T18:26:00-05:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Flood Advisory issued May 23 at 6:26PM CDT until May 23 at 9:00PM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=TX12664926A158.FloodAdvisory.12664932A520TX.EWXFLSEWX.f0b91e1a8178c11227b3ac632e8633e4"/>
+<title>Flood Advisory issued May 23 at 6:26PM CDT until May 24 at 2:00AM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=TX12664926A158.FloodAdvisory.126649336870TX.EWXFLSEWX.115f8c114b814b2ab499ce623f4402e0"/>
 <summary>...FLOOD ADVISORY IN EFFECT UNTIL 930 PM CDT THIS EVENING... * WHAT...Flooding caused by excessive rainfall is expected. * WHERE...A portion of south central Texas, including the following counties, Travis and Williamson. * WHEN...Until 930 PM CDT. * IMPACTS...Minor flooding in low-lying and poor drainage areas.</summary>
 <cap:event>Flood Advisory</cap:event>
 <cap:effective>2023-05-23T18:26:00-05:00</cap:effective>
-<cap:expires>2023-05-23T21:00:00-05:00</cap:expires>
+<cap:expires>2023-05-24T02:00:00-05:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
 <cap:category>Met</cap:category>
 <cap:urgency>Expected</cap:urgency>
 <cap:severity>Minor</cap:severity>
 <cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Travis</cap:areaDesc>
+<cap:areaDesc>Travis; Williamson</cap:areaDesc>
 <cap:polygon>30.4,-97.84 30.52,-98.02 30.61,-97.95 30.5,-97.76 30.4,-97.84</cap:polygon>
 <cap:geocode>
 <valueName>FIPS6</valueName>
-<value>048453</value>
+<value>048453 048491</value>
 <valueName>UGC</valueName>
-<value>TXC453</value>
+<value>TXC453 TXC491</value>
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
@@ -5572,80 +5218,14 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=TX12664926A158.FloodAdvisory.126649342BC0TX.EWXFLSEWX.6ec2573450096c131d6ddb558ea9f8c4</id>
-<updated>2023-05-23T18:26:00-05:00</updated>
-<published>2023-05-23T18:26:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Flood Advisory issued May 23 at 6:26PM CDT until May 24 at 7:00AM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=TX12664926A158.FloodAdvisory.126649342BC0TX.EWXFLSEWX.6ec2573450096c131d6ddb558ea9f8c4"/>
-<summary>...FLOOD ADVISORY IN EFFECT UNTIL 930 PM CDT THIS EVENING... * WHAT...Flooding caused by excessive rainfall is expected. * WHERE...A portion of south central Texas, including the following counties, Travis and Williamson. * WHEN...Until 930 PM CDT. * IMPACTS...Minor flooding in low-lying and poor drainage areas.</summary>
-<cap:event>Flood Advisory</cap:event>
-<cap:effective>2023-05-23T18:26:00-05:00</cap:effective>
-<cap:expires>2023-05-24T07:00:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Williamson</cap:areaDesc>
-<cap:polygon>30.4,-97.84 30.52,-98.02 30.61,-97.95 30.5,-97.76 30.4,-97.84</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>048491</value>
-<valueName>UGC</valueName>
-<value>TXC491</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.NEW.KEWX.FA.Y.0106.230523T2326Z-230524T0230Z/
-/00000.N.ER.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=TX1266492684D4.FloodAdvisory.12664932A520TX.LUBFLSLUB.68039985d4b305dbac189311d4cdb6cb</id>
-<updated>2023-05-23T17:53:00-05:00</updated>
-<published>2023-05-23T17:53:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Flood Advisory issued May 23 at 5:53PM CDT until May 23 at 9:00PM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=TX1266492684D4.FloodAdvisory.12664932A520TX.LUBFLSLUB.68039985d4b305dbac189311d4cdb6cb"/>
-<summary>...FLOOD ADVISORY IN EFFECT UNTIL 8 PM CDT THIS EVENING... * WHAT...Flooding caused by excessive rainfall is expected. * WHERE...A portion of the Panhandle of Texas, including the following county, Parmer. * WHEN...Until 800 PM CDT. * IMPACTS...Minor flooding in low-lying and poor drainage areas.</summary>
-<cap:event>Flood Advisory</cap:event>
-<cap:effective>2023-05-23T17:53:00-05:00</cap:effective>
-<cap:expires>2023-05-23T21:00:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Parmer</cap:areaDesc>
-<cap:polygon>34.32,-102.53 34.31,-103.04 34.32,-103.04 34.37,-103.04 34.38,-103.04 34.39,-103.04 34.41,-103.04 34.47,-103.04 34.5,-103.04 34.51,-103.04 34.52,-103.04 34.59,-103.04 34.6,-103.04 34.6,-102.62 34.6,-102.53 34.43,-102.53 34.32,-102.53</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>048369</value>
-<valueName>UGC</valueName>
-<value>TXC369</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.NEW.KLUB.FA.Y.0023.230523T2253Z-230524T0100Z/
-/00000.N.ER.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=TX126649262A98.SevereThunderstormWatch.12664932A520TX.WNSWOU3.224f125cc0e644e0c81b0a1949e755ba</id>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=TX126649262A98.SevereThunderstormWatch.12664932A520TX.WNSWOU3.0b3a9f2015c17deb88296c0deab4a6e8</id>
 <updated>2023-05-23T15:22:00-05:00</updated>
 <published>2023-05-23T15:22:00-05:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
 <title>Severe Thunderstorm Watch issued May 23 at 3:22PM CDT until May 23 at 9:00PM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=TX126649262A98.SevereThunderstormWatch.12664932A520TX.WNSWOU3.224f125cc0e644e0c81b0a1949e755ba"/>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=TX126649262A98.SevereThunderstormWatch.12664932A520TX.WNSWOU3.0b3a9f2015c17deb88296c0deab4a6e8"/>
 <summary>SEVERE THUNDERSTORM WATCH 233 IS IN EFFECT UNTIL 900 PM CDT FOR THE FOLLOWING LOCATIONS TX . TEXAS COUNTIES INCLUDED ARE ARMSTRONG BAILEY BORDEN BRISCOE CASTRO COCHRAN</summary>
 <cap:event>Severe Thunderstorm Watch</cap:event>
 <cap:effective>2023-05-23T15:22:00-05:00</cap:effective>
@@ -5656,13 +5236,13 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:urgency>Expected</cap:urgency>
 <cap:severity>Severe</cap:severity>
 <cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Armstrong; Bailey; Borden; Briscoe; Castro; Cochran; Crosby; Dallam; Dawson; Deaf Smith; Floyd; Gaines; Garza; Hale; Hartley; Hockley; Howard; Lamb; Lubbock; Lynn; Martin; Mitchell; Oldham; Parmer; Potter; Randall; Scurry; Swisher; Terry; Yoakum</cap:areaDesc>
+<cap:areaDesc>Armstrong; Borden; Dallam; Dawson; Deaf Smith; Gaines; Hartley; Howard; Martin; Mitchell; Oldham; Potter; Randall; Scurry</cap:areaDesc>
 <cap:polygon></cap:polygon>
 <cap:geocode>
 <valueName>FIPS6</valueName>
-<value>048011 048017 048033 048045 048069 048079 048107 048111 048115 048117 048153 048165 048169 048189 048205 048219 048227 048279 048303 048305 048317 048335 048359 048369 048375 048381 048415 048437 048445 048501</value>
+<value>048011 048033 048111 048115 048117 048165 048205 048227 048317 048335 048359 048375 048381 048415</value>
 <valueName>UGC</valueName>
-<value>TXC011 TXC017 TXC033 TXC045 TXC069 TXC079 TXC107 TXC111 TXC115 TXC117 TXC153 TXC165 TXC169 TXC189 TXC205 TXC219 TXC227 TXC279 TXC303 TXC305 TXC317 TXC335 TXC359 TXC369 TXC375 TXC381 TXC415 TXC437 TXC445 TXC501</value>
+<value>TXC011 TXC033 TXC111 TXC115 TXC117 TXC165 TXC205 TXC227 TXC317 TXC335 TXC359 TXC375 TXC381 TXC415</value>
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
@@ -5801,31 +5381,31 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=UT12664926A608.SpecialWeatherStatement.126649325CDCUT.SLCSPSSLC.944f9d1982421263d418f4c2ea5f2aad</id>
-<updated>2023-05-23T17:38:00-06:00</updated>
-<published>2023-05-23T17:38:00-06:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=UT126649325FFC.SpecialWeatherStatement.126649327E10UT.SLCSPSSLC.9f9df723619de24e61a850f4e948f7b1</id>
+<updated>2023-05-23T18:23:00-06:00</updated>
+<published>2023-05-23T18:23:00-06:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Special Weather Statement issued May 23 at 5:38PM MDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=UT12664926A608.SpecialWeatherStatement.126649325CDCUT.SLCSPSSLC.944f9d1982421263d418f4c2ea5f2aad"/>
-<summary>...Strong thunderstorms will impact portions of northwestern Wasatch...central Salt Lake...southeastern Davis and north central Utah Counties through 615 PM MDT... At 538 PM MDT, Doppler radar was tracking strong thunderstorms along a line extending from South Jordan to near Springville. Movement was north at 25 mph.</summary>
+<title>Special Weather Statement issued May 23 at 6:23PM MDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=UT126649325FFC.SpecialWeatherStatement.126649327E10UT.SLCSPSSLC.9f9df723619de24e61a850f4e948f7b1"/>
+<summary>...A strong thunderstorm will impact portions of northwestern Cache and eastern Box Elder Counties through 700 PM MDT... At 623 PM MDT, Doppler radar was tracking a strong thunderstorm over Peter, or near Logan, moving north at 40 mph. HAZARD...Wind gusts up to 50 mph. SOURCE...Radar indicated.</summary>
 <cap:event>Special Weather Statement</cap:event>
-<cap:effective>2023-05-23T17:38:00-06:00</cap:effective>
-<cap:expires>2023-05-23T18:15:00-06:00</cap:expires>
+<cap:effective>2023-05-23T18:23:00-06:00</cap:effective>
+<cap:expires>2023-05-23T19:00:00-06:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
 <cap:category>Met</cap:category>
 <cap:urgency>Expected</cap:urgency>
 <cap:severity>Minor</cap:severity>
 <cap:certainty>Observed</cap:certainty>
-<cap:areaDesc>Salt Lake Valley; Utah Valley; Wasatch Back; Wasatch Mountains I-80 North; Wasatch Mountains South of I-80; Wasatch Plateau, Book Cliffs</cap:areaDesc>
-<cap:polygon>40.14,-111.58 40.55,-112.03 40.85,-111.85 40.86,-111.84 40.38,-111.29 40.14,-111.58</cap:polygon>
+<cap:areaDesc>Cache Valley, Utah Portion; Eastern Box Elder County; Wasatch Mountains I-80 North</cap:areaDesc>
+<cap:polygon>41.68,-111.85 41.7,-112.09 42,-112.07 42,-111.76 41.99,-111.75 41.68,-111.85</cap:polygon>
 <cap:geocode>
 <valueName>FIPS6</valueName>
-<value>049005 049007 049013 049029 049033 049035 049043 049049 049051 049057</value>
+<value>049003 049005 049029 049033 049057</value>
 <valueName>UGC</valueName>
-<value>UTZ105 UTZ106 UTZ108 UTZ110 UTZ111 UTZ113</value>
+<value>UTZ103 UTZ107 UTZ110</value>
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
@@ -5998,18 +5578,18 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=UT12664925936C.FloodWatch.126649325CDCUT.SLCFFASLC.f7ef218ee0b1976985c83f4435cc7903</id>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=UT12664925936C.FloodWatch.126649351620UT.SLCFFASLC.f7ef218ee0b1976985c83f4435cc7903</id>
 <updated>2023-05-23T10:35:00-06:00</updated>
 <published>2023-05-23T10:35:00-06:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Flood Watch issued May 23 at 10:35AM MDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=UT12664925936C.FloodWatch.126649325CDCUT.SLCFFASLC.f7ef218ee0b1976985c83f4435cc7903"/>
+<title>Flood Watch issued May 23 at 10:35AM MDT until further notice by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=UT12664925936C.FloodWatch.126649351620UT.SLCFFASLC.f7ef218ee0b1976985c83f4435cc7903"/>
 <summary>.Warm temperatures will melt snowpack and reservoir releases will increase river flows. ...FLOOD WATCH FOR SNOWMELT REMAINS IN EFFECT THROUGH THURSDAY, JUNE 15... * WHAT...Flooding caused by snowmelt continues to be possible. * WHERE...A portion of Utah, including the following area, Cache</summary>
 <cap:event>Flood Watch</cap:event>
 <cap:effective>2023-05-23T10:35:00-06:00</cap:effective>
-<cap:expires>2023-05-23T18:15:00-06:00</cap:expires>
+<cap:expires>2023-05-24T12:00:00-06:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
 <cap:category>Met</cap:category>
@@ -6421,63 +6001,31 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=WY126649325A84.SpecialWeatherStatement.126649326894WY.CYSSPSCYS.9ae3c7429e9860bdb01b9753dc39e0a4</id>
-<updated>2023-05-23T18:09:00-06:00</updated>
-<published>2023-05-23T18:09:00-06:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=WY126649326128.SpecialWeatherStatement.1266493283ECWY.UNRSPSUNR.560c11b446303414368dab6370ed1fb4</id>
+<updated>2023-05-23T18:26:00-06:00</updated>
+<published>2023-05-23T18:26:00-06:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Special Weather Statement issued May 23 at 6:09PM MDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=WY126649325A84.SpecialWeatherStatement.126649326894WY.CYSSPSCYS.9ae3c7429e9860bdb01b9753dc39e0a4"/>
-<summary>...A strong thunderstorm will impact portions of northeastern Carbon and central Albany Counties through 645 PM MDT... At 608 PM MDT, Doppler radar was tracking a strong thunderstorm near Medicine Bow, or 48 miles northwest of Laramie, moving south at 5 mph. HAZARD...Winds in excess of 30 mph and half inch hail.</summary>
+<title>Special Weather Statement issued May 23 at 6:26PM MDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=WY126649326128.SpecialWeatherStatement.1266493283ECWY.UNRSPSUNR.560c11b446303414368dab6370ed1fb4"/>
+<summary>...Strong thunderstorms will impact portions of east central Campbell and southwestern Crook Counties through 715 PM MDT... At 626 PM MDT, Doppler radar was tracking strong thunderstorms along a line extending from 2 miles south of Carlile to 11 miles south of Camplex Event Facility. Movement was west at 15 mph. HAZARD...Winds in excess of 40 mph and penny size hail.</summary>
 <cap:event>Special Weather Statement</cap:event>
-<cap:effective>2023-05-23T18:09:00-06:00</cap:effective>
-<cap:expires>2023-05-23T18:45:00-06:00</cap:expires>
+<cap:effective>2023-05-23T18:26:00-06:00</cap:effective>
+<cap:expires>2023-05-23T19:15:00-06:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
 <cap:category>Met</cap:category>
 <cap:urgency>Expected</cap:urgency>
 <cap:severity>Minor</cap:severity>
 <cap:certainty>Observed</cap:certainty>
-<cap:areaDesc>Laramie Valley; North Snowy Range Foothills; Shirley Basin</cap:areaDesc>
-<cap:polygon>42.04,-106.14 41.97,-105.9 41.74,-105.95 41.86,-106.32 42.04,-106.14</cap:polygon>
+<cap:areaDesc>Northern Campbell; Southern Campbell; Western Crook</cap:areaDesc>
+<cap:polygon>44.09,-105.66 44.55,-104.91 44.47,-104.62 44.44,-104.61 44.17,-105.05 44.18,-105.08 44.15,-105.09 44.03,-105.29 44.09,-105.66</cap:polygon>
 <cap:geocode>
 <valueName>FIPS6</valueName>
-<value>056001 056007</value>
+<value>056005 056011</value>
 <valueName>UGC</valueName>
-<value>WYZ105 WYZ110 WYZ115</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value></value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=WY12664926AD74.SpecialWeatherStatement.126649326894WY.UNRSPSUNR.ab9679045396be76020192367e53d656</id>
-<updated>2023-05-23T17:57:00-06:00</updated>
-<published>2023-05-23T17:57:00-06:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Special Weather Statement issued May 23 at 5:57PM MDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=WY12664926AD74.SpecialWeatherStatement.126649326894WY.UNRSPSUNR.ab9679045396be76020192367e53d656"/>
-<summary>...A strong thunderstorm will impact portions of southwestern Crook County through 645 PM MDT... At 556 PM MDT, Doppler radar was tracking a strong thunderstorm over Keyhole Reservoir, or 22 miles west of Sundance, moving north at 10 mph. HAZARD...Winds in excess of 40 mph and penny size hail.</summary>
-<cap:event>Special Weather Statement</cap:event>
-<cap:effective>2023-05-23T17:57:00-06:00</cap:effective>
-<cap:expires>2023-05-23T18:45:00-06:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Observed</cap:certainty>
-<cap:areaDesc>Western Crook; Wyoming Black Hills</cap:areaDesc>
-<cap:polygon>44.29,-104.76 44.34,-105.01 44.58,-104.92 44.5,-104.55 44.29,-104.76</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>056011 056045</value>
-<valueName>UGC</valueName>
-<value>WYZ056 WYZ057</value>
+<value>WYZ054 WYZ055 WYZ056</value>
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
