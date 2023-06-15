@@ -16,11 +16,11 @@ xmlns = 'http://www.w3.org/2005/Atom'
 xmlns:cap = 'urn:oasis:names:tc:emergency:cap:1.1'
 xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 >
-<!-- http-date = Thu, 15 Jun 2023 09:02:00 GMT -->
+<!-- http-date = Thu, 15 Jun 2023 09:33:00 GMT -->
 <id>https://alerts.weather.gov/cap/us.php?x=0</id>
 <logo>http://alerts.weather.gov/images/xml_logo.gif</logo>
 <generator>NWS CAP Server</generator>
-<updated>2023-06-15T04:02:00-05:00</updated>
+<updated>2023-06-15T04:33:00-05:00</updated>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
@@ -220,17 +220,81 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=AL12664EA032E8.SevereThunderstormWarning.12664EA054E4AL.TAESVRTAE.481db7e95d6ba020c3d4ad450408bf43</id>
-<updated>2023-06-15T03:58:00-05:00</updated>
-<published>2023-06-15T03:58:00-05:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=AL12664EA05034.SpecialWeatherStatement.12664EA06A60AL.BMXSPSBMX.a38dbf7219ebeee7988236aef861a724</id>
+<updated>2023-06-15T04:33:00-05:00</updated>
+<published>2023-06-15T04:33:00-05:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Severe Thunderstorm Warning issued June 15 at 3:58AM CDT until June 15 at 4:45AM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=AL12664EA032E8.SevereThunderstormWarning.12664EA054E4AL.TAESVRTAE.481db7e95d6ba020c3d4ad450408bf43"/>
-<summary>The National Weather Service in Tallahassee has issued a * Severe Thunderstorm Warning for... Dale County in southeastern Alabama... Henry County in southeastern Alabama... Northeastern Coffee County in southeastern Alabama... * Until 445 AM CDT.</summary>
+<title>Special Weather Statement issued June 15 at 4:33AM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=AL12664EA05034.SpecialWeatherStatement.12664EA06A60AL.BMXSPSBMX.a38dbf7219ebeee7988236aef861a724"/>
+<summary>...A strong thunderstorm will impact portions of northwestern Autauga, southwestern Chilton, northern Perry and northeastern Dallas Counties through 500 AM CDT... At 433 AM CDT, Doppler radar was tracking a strong thunderstorm near Heiberger, or 9 miles northeast of Marion, moving east at 55 mph. HAZARD...Winds in excess of 40 mph and half inch hail.</summary>
+<cap:event>Special Weather Statement</cap:event>
+<cap:effective>2023-06-15T04:33:00-05:00</cap:effective>
+<cap:expires>2023-06-15T05:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Observed</cap:certainty>
+<cap:areaDesc>Autauga; Chilton; Dallas; Perry</cap:areaDesc>
+<cap:polygon>32.65,-87.46 32.83,-87.3 32.84,-86.71 32.53,-86.79 32.65,-87.46</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>001001 001021 001047 001105</value>
+<valueName>UGC</valueName>
+<value>ALZ033 ALZ035 ALZ040 ALZ041</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value></value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=AL12664EA05034.RipCurrentStatement.12664ECCAA80AL.MOBCFWMOB.f20200d873540a58d3b88a589e4c4dfb</id>
+<updated>2023-06-15T04:33:00-05:00</updated>
+<published>2023-06-15T04:33:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Rip Current Statement issued June 15 at 4:33AM CDT until June 17 at 7:00PM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=AL12664EA05034.RipCurrentStatement.12664ECCAA80AL.MOBCFWMOB.f20200d873540a58d3b88a589e4c4dfb"/>
+<summary>...HIGH RIP CURRENT RISK REMAINS IN EFFECT THROUGH SATURDAY EVENING... * WHAT...Dangerous rip currents. * WHERE...In Alabama, Mobile Coastal and Baldwin Coastal Counties. In Florida, Escambia Coastal, Santa Rosa Coastal and Okaloosa Coastal Counties.</summary>
+<cap:event>Rip Current Statement</cap:event>
+<cap:effective>2023-06-15T04:33:00-05:00</cap:effective>
+<cap:expires>2023-06-17T19:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Baldwin Coastal; Mobile Coastal</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>001003 001097</value>
+<valueName>UGC</valueName>
+<value>ALZ265 ALZ266</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KMOB.RP.S.0023.000000T0000Z-230618T0000Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=AL12664EA04FD0.SevereThunderstormWarning.12664EA054E4AL.TAESVSTAE.f5c0317f54c7541211b047d66b61e1f3</id>
+<updated>2023-06-15T04:32:00-05:00</updated>
+<published>2023-06-15T04:32:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Severe Thunderstorm Warning issued June 15 at 4:32AM CDT until June 15 at 4:45AM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=AL12664EA04FD0.SevereThunderstormWarning.12664EA054E4AL.TAESVSTAE.f5c0317f54c7541211b047d66b61e1f3"/>
+<summary>...A SEVERE THUNDERSTORM WARNING REMAINS IN EFFECT UNTIL 445 AM CDT FOR EASTERN DALE AND CENTRAL HENRY COUNTIES... At 432 AM CDT, severe thunderstorms were located along a line extending from 8 miles south of Fort Gaines to near Headland to Midland City, moving southeast at 50 mph. HAZARD...60 mph wind gusts and nickel size hail.</summary>
 <cap:event>Severe Thunderstorm Warning</cap:event>
-<cap:effective>2023-06-15T03:58:00-05:00</cap:effective>
+<cap:effective>2023-06-15T04:32:00-05:00</cap:effective>
 <cap:expires>2023-06-15T04:45:00-05:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
@@ -238,31 +302,63 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:urgency>Immediate</cap:urgency>
 <cap:severity>Severe</cap:severity>
 <cap:certainty>Observed</cap:certainty>
-<cap:areaDesc>Coffee; Dale; Henry</cap:areaDesc>
-<cap:polygon>31.71,-85.34 31.6,-85.06 31.57,-85.06 31.35,-85.27 31.25,-85.76 31.54,-85.97 31.62,-85.79 31.62,-85.42 31.71,-85.42 31.71,-85.34</cap:polygon>
+<cap:areaDesc>Dale; Henry</cap:areaDesc>
+<cap:polygon>31.6,-85.06 31.57,-85.06 31.35,-85.27 31.28,-85.63 31.45,-85.62 31.69,-85.28 31.6,-85.06</cap:polygon>
 <cap:geocode>
 <valueName>FIPS6</valueName>
-<value>001031 001045 001067</value>
+<value>001045 001067</value>
 <valueName>UGC</valueName>
-<value>ALC031 ALC045 ALC067</value>
+<value>ALC045 ALC067</value>
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
-<value>/O.NEW.KTAE.SV.W.0295.230615T0858Z-230615T0945Z/</value>
+<value>/O.CON.KTAE.SV.W.0295.000000T0000Z-230615T0945Z/</value>
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=AL12664EA03284.SevereThunderstormWarning.12664EA054E4AL.MOBSVRMOB.b18dc2b27f9157eb7b54f807c1cfd760</id>
-<updated>2023-06-15T03:57:00-05:00</updated>
-<published>2023-06-15T03:57:00-05:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=AL12664EA04FD0.SevereWeatherStatement.12664EA0703CAL.TAESVSTAE.c440e1576d110f562ef6a4fe46807071</id>
+<updated>2023-06-15T04:32:00-05:00</updated>
+<published>2023-06-15T04:32:00-05:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Severe Thunderstorm Warning issued June 15 at 3:57AM CDT until June 15 at 4:45AM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=AL12664EA03284.SevereThunderstormWarning.12664EA054E4AL.MOBSVRMOB.b18dc2b27f9157eb7b54f807c1cfd760"/>
-<summary>The National Weather Service in Mobile has issued a * Severe Thunderstorm Warning for... South central Monroe County in south central Alabama... Northwestern Escambia County in south central Alabama... Southern Conecuh County in south central Alabama... * Until 445 AM CDT.</summary>
+<title>Severe Weather Statement issued June 15 at 4:32AM CDT until June 15 at 5:15AM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=AL12664EA04FD0.SevereWeatherStatement.12664EA0703CAL.TAESVSTAE.c440e1576d110f562ef6a4fe46807071"/>
+<summary>...A SEVERE THUNDERSTORM WARNING REMAINS IN EFFECT UNTIL 445 AM CDT FOR EASTERN DALE AND CENTRAL HENRY COUNTIES... At 432 AM CDT, severe thunderstorms were located along a line extending from 8 miles south of Fort Gaines to near Headland to Midland City, moving southeast at 50 mph. HAZARD...60 mph wind gusts and nickel size hail.</summary>
+<cap:event>Severe Weather Statement</cap:event>
+<cap:effective>2023-06-15T04:32:00-05:00</cap:effective>
+<cap:expires>2023-06-15T05:15:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Immediate</cap:urgency>
+<cap:severity>Severe</cap:severity>
+<cap:certainty>Observed</cap:certainty>
+<cap:areaDesc>Dale; Henry</cap:areaDesc>
+<cap:polygon>31.6,-85.06 31.57,-85.06 31.35,-85.27 31.28,-85.63 31.45,-85.62 31.69,-85.28 31.6,-85.06</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>001045 001067</value>
+<valueName>UGC</valueName>
+<value>ALC045 ALC067</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KTAE.SV.W.0295.000000T0000Z-230615T0945Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=AL12664EA04CB0.SevereThunderstormWarning.12664EA054E4AL.MOBSVSMOB.7d0b8c58dc674b899096eab86e4c9a8b</id>
+<updated>2023-06-15T04:24:00-05:00</updated>
+<published>2023-06-15T04:24:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Severe Thunderstorm Warning issued June 15 at 4:24AM CDT until June 15 at 4:45AM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=AL12664EA04CB0.SevereThunderstormWarning.12664EA054E4AL.MOBSVSMOB.7d0b8c58dc674b899096eab86e4c9a8b"/>
+<summary>...A SEVERE THUNDERSTORM WARNING REMAINS IN EFFECT UNTIL 445 AM CDT FOR SOUTHEASTERN CONECUH COUNTY... At 424 AM CDT, a severe thunderstorm was located 6 miles northwest of Castleberry, or 10 miles southwest of Evergreen, moving east at 30 mph. HAZARD...60 mph wind gusts and quarter size hail.</summary>
 <cap:event>Severe Thunderstorm Warning</cap:event>
-<cap:effective>2023-06-15T03:57:00-05:00</cap:effective>
+<cap:effective>2023-06-15T04:24:00-05:00</cap:effective>
 <cap:expires>2023-06-15T04:45:00-05:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
@@ -270,45 +366,77 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:urgency>Immediate</cap:urgency>
 <cap:severity>Severe</cap:severity>
 <cap:certainty>Observed</cap:certainty>
-<cap:areaDesc>Conecuh; Escambia; Monroe</cap:areaDesc>
-<cap:polygon>31.16,-87.42 31.34,-87.51 31.57,-86.96 31.3,-86.83 31.16,-87.42</cap:polygon>
+<cap:areaDesc>Conecuh</cap:areaDesc>
+<cap:polygon>31.26,-87.14 31.4,-87.24 31.54,-86.95 31.3,-86.83 31.26,-87.14</cap:polygon>
 <cap:geocode>
 <valueName>FIPS6</valueName>
-<value>001035 001053 001099</value>
+<value>001035</value>
 <valueName>UGC</valueName>
-<value>ALC035 ALC053 ALC099</value>
+<value>ALC035</value>
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
-<value>/O.NEW.KMOB.SV.W.0149.230615T0857Z-230615T0945Z/</value>
+<value>/O.CON.KMOB.SV.W.0149.000000T0000Z-230615T0945Z/</value>
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=AL12664EA02F64.SpecialWeatherStatement.12664EA04F08AL.TAESPSTAE.148e43ea4b8f39c10f2e47b331df2f54</id>
-<updated>2023-06-15T03:49:00-05:00</updated>
-<published>2023-06-15T03:49:00-05:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=AL12664EA04CB0.SevereWeatherStatement.12664EA054E4AL.MOBSVSMOB.b8c66b8c548e05746a7eaeddc0eb3622</id>
+<updated>2023-06-15T04:24:00-05:00</updated>
+<published>2023-06-15T04:24:00-05:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Special Weather Statement issued June 15 at 3:49AM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=AL12664EA02F64.SpecialWeatherStatement.12664EA04F08AL.TAESPSTAE.148e43ea4b8f39c10f2e47b331df2f54"/>
-<summary>...Strong thunderstorms will impact portions of Dale, Henry, Coffee, northwestern Clay and southwestern Quitman Counties through 530 AM EDT/430 AM CDT/... At 448 AM EDT/348 AM CDT/, Doppler radar was tracking strong thunderstorms along a line extending from White Oak to 8 miles west of Ariton to near Dozier. Movement was east at 45 mph.</summary>
+<title>Severe Weather Statement issued June 15 at 4:24AM CDT until June 15 at 4:45AM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=AL12664EA04CB0.SevereWeatherStatement.12664EA054E4AL.MOBSVSMOB.b8c66b8c548e05746a7eaeddc0eb3622"/>
+<summary>...A SEVERE THUNDERSTORM WARNING REMAINS IN EFFECT UNTIL 445 AM CDT FOR SOUTHEASTERN CONECUH COUNTY... At 424 AM CDT, a severe thunderstorm was located 6 miles northwest of Castleberry, or 10 miles southwest of Evergreen, moving east at 30 mph. HAZARD...60 mph wind gusts and quarter size hail.</summary>
+<cap:event>Severe Weather Statement</cap:event>
+<cap:effective>2023-06-15T04:24:00-05:00</cap:effective>
+<cap:expires>2023-06-15T04:45:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Immediate</cap:urgency>
+<cap:severity>Severe</cap:severity>
+<cap:certainty>Observed</cap:certainty>
+<cap:areaDesc>Conecuh</cap:areaDesc>
+<cap:polygon>31.26,-87.14 31.4,-87.24 31.54,-86.95 31.3,-86.83 31.26,-87.14</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>001035</value>
+<valueName>UGC</valueName>
+<value>ALC035</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KMOB.SV.W.0149.000000T0000Z-230615T0945Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=AL12664EA049F4.SpecialWeatherStatement.12664EA054E4AL.BMXSPSBMX.7c5a89e401bca5b385fc2f9a300326a5</id>
+<updated>2023-06-15T04:17:00-05:00</updated>
+<published>2023-06-15T04:17:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Special Weather Statement issued June 15 at 4:17AM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=AL12664EA049F4.SpecialWeatherStatement.12664EA054E4AL.BMXSPSBMX.7c5a89e401bca5b385fc2f9a300326a5"/>
+<summary>...A strong thunderstorm will impact portions of southern Pickens and northwestern Greene Counties through 445 AM CDT... At 417 AM CDT, Doppler radar was tracking a strong thunderstorm over Bevill Lock And Dam, or near Pickensville, moving east at 55 mph. HAZARD...Winds in excess of 40 mph and penny size hail. SOURCE...Radar indicated.</summary>
 <cap:event>Special Weather Statement</cap:event>
-<cap:effective>2023-06-15T03:49:00-05:00</cap:effective>
-<cap:expires>2023-06-15T04:30:00-05:00</cap:expires>
+<cap:effective>2023-06-15T04:17:00-05:00</cap:effective>
+<cap:expires>2023-06-15T04:45:00-05:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
 <cap:category>Met</cap:category>
 <cap:urgency>Expected</cap:urgency>
 <cap:severity>Minor</cap:severity>
 <cap:certainty>Observed</cap:certainty>
-<cap:areaDesc>Coffee; Dale; Henry</cap:areaDesc>
-<cap:polygon>31.79,-84.97 31.61,-84.97 31.4,-85.3 31.3,-85.93 31.41,-86.2 31.53,-86.19 31.54,-86.14 31.62,-86.15 31.62,-85.42 31.71,-85.42 31.7,-85.22 31.74,-85.2 31.77,-85.16 31.77,-85.12 31.88,-85.13 31.89,-85.13 31.79,-84.97</cap:polygon>
+<cap:areaDesc>Greene; Pickens</cap:areaDesc>
+<cap:polygon>33.29,-88.3 33.28,-87.84 33.02,-87.83 32.98,-87.88 33.06,-88.33 33.29,-88.3</cap:polygon>
 <cap:geocode>
 <valueName>FIPS6</valueName>
-<value>001031 001045 001067</value>
+<value>001063 001107</value>
 <valueName>UGC</valueName>
-<value>ALZ065 ALZ066 ALZ067</value>
+<value>ALZ022 ALZ031</value>
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
@@ -316,78 +444,78 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=AL12664EA02AB4.SpecialWeatherStatement.12664EA04F08AL.BMXSPSBMX.7c2c8de250ce556b6a45f30f2d98e546</id>
-<updated>2023-06-15T03:37:00-05:00</updated>
-<published>2023-06-15T03:37:00-05:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=AL12664EA048C8.SevereThunderstormWarning.12664EA0703CAL.TAESVRTAE.ed1a4968542af5bb18166ce19a1022ca</id>
+<updated>2023-06-15T04:14:00-05:00</updated>
+<published>2023-06-15T04:14:00-05:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Special Weather Statement issued June 15 at 3:37AM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=AL12664EA02AB4.SpecialWeatherStatement.12664EA04F08AL.BMXSPSBMX.7c2c8de250ce556b6a45f30f2d98e546"/>
-<summary>...A strong thunderstorm will impact portions of Pike and Barbour Counties through 430 AM CDT... At 337 AM CDT, Doppler radar was tracking a strong thunderstorm over Brundidge, moving east at 55 mph. HAZARD...Winds in excess of 40 mph and half inch hail. SOURCE...Radar indicated.</summary>
-<cap:event>Special Weather Statement</cap:event>
-<cap:effective>2023-06-15T03:37:00-05:00</cap:effective>
-<cap:expires>2023-06-15T04:30:00-05:00</cap:expires>
+<title>Severe Thunderstorm Warning issued June 15 at 4:14AM CDT until June 15 at 5:15AM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=AL12664EA048C8.SevereThunderstormWarning.12664EA0703CAL.TAESVRTAE.ed1a4968542af5bb18166ce19a1022ca"/>
+<summary>The National Weather Service in Tallahassee has issued a * Severe Thunderstorm Warning for... Southern Dale County in southeastern Alabama... Southern Henry County in southeastern Alabama... Eastern Geneva County in southeastern Alabama... Houston County in southeastern Alabama...</summary>
+<cap:event>Severe Thunderstorm Warning</cap:event>
+<cap:effective>2023-06-15T04:14:00-05:00</cap:effective>
+<cap:expires>2023-06-15T05:15:00-05:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
 <cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
+<cap:urgency>Immediate</cap:urgency>
+<cap:severity>Severe</cap:severity>
 <cap:certainty>Observed</cap:certainty>
-<cap:areaDesc>Barbour; Pike</cap:areaDesc>
-<cap:polygon>31.62,-86.18 31.66,-86.15 31.79,-86.15 31.79,-86.2 31.86,-86.18 31.89,-85.79 31.88,-85.66 31.9,-85.65 31.95,-85.08 31.89,-85.13 31.77,-85.13 31.74,-85.21 31.7,-85.22 31.71,-85.41 31.62,-85.42 31.62,-86.18</cap:polygon>
+<cap:areaDesc>Dale; Geneva; Henry; Houston</cap:areaDesc>
+<cap:polygon>31.49,-84.61 31,-84.95 30.84,-85.63 31.26,-85.77 31.36,-85.29 31.6,-85.06 31.49,-84.61</cap:polygon>
 <cap:geocode>
 <valueName>FIPS6</valueName>
-<value>001005 001109</value>
+<value>001045 001061 001067 001069</value>
 <valueName>UGC</valueName>
-<value>ALZ049 ALZ050</value>
+<value>ALC045 ALC061 ALC067 ALC069</value>
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
-<value></value>
+<value>/O.NEW.KTAE.SV.W.0297.230615T0914Z-230615T1015Z/</value>
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=AL12664EA02794.SpecialWeatherStatement.12664EA04F08AL.MOBSPSMOB.aa0d43c3c321227048822acb1e3c3c77</id>
-<updated>2023-06-15T03:29:00-05:00</updated>
-<published>2023-06-15T03:29:00-05:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=AL12664EA046D4.SevereThunderstormWarning.12664EA054E4AL.TAESVRTAE.abbfafd4427c5da7e14a88b95f7d1eaa</id>
+<updated>2023-06-15T04:09:00-05:00</updated>
+<published>2023-06-15T04:09:00-05:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Special Weather Statement issued June 15 at 3:29AM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=AL12664EA02794.SpecialWeatherStatement.12664EA04F08AL.MOBSPSMOB.aa0d43c3c321227048822acb1e3c3c77"/>
-<summary>...A strong thunderstorm will impact portions of central Monroe, north central Baldwin, northwestern Escambia and west central Conecuh Counties through 430 AM CDT... At 328 AM CDT, National Weather Service doppler radar indicated a strong thunderstorm 5 miles west of Uriah, or 15 miles southwest of Frisco City, moving northeast at 40 mph.</summary>
-<cap:event>Special Weather Statement</cap:event>
-<cap:effective>2023-06-15T03:29:00-05:00</cap:effective>
-<cap:expires>2023-06-15T04:30:00-05:00</cap:expires>
+<title>Severe Thunderstorm Warning issued June 15 at 4:09AM CDT until June 15 at 4:45AM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=AL12664EA046D4.SevereThunderstormWarning.12664EA054E4AL.TAESVRTAE.abbfafd4427c5da7e14a88b95f7d1eaa"/>
+<summary>The National Weather Service in Tallahassee has issued a * Severe Thunderstorm Warning for... Northeastern Henry County in southeastern Alabama... Northwestern Clay County in southwestern Georgia... Southern Quitman County in southwestern Georgia... * Until 545 AM EDT/445 AM CDT/.</summary>
+<cap:event>Severe Thunderstorm Warning</cap:event>
+<cap:effective>2023-06-15T04:09:00-05:00</cap:effective>
+<cap:expires>2023-06-15T04:45:00-05:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
 <cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
+<cap:urgency>Immediate</cap:urgency>
+<cap:severity>Severe</cap:severity>
 <cap:certainty>Observed</cap:certainty>
-<cap:areaDesc>Baldwin Inland; Conecuh; Escambia; Monroe</cap:areaDesc>
-<cap:polygon>31.51,-86.99 31.13,-87.56 31.26,-87.8 31.43,-87.66 31.43,-87.64 31.41,-87.61 31.44,-87.57 31.48,-87.56 31.5,-87.6 31.72,-87.4 31.51,-86.99</cap:polygon>
+<cap:areaDesc>Henry</cap:areaDesc>
+<cap:polygon>31.7,-84.97 31.58,-85.05 31.7,-85.35 31.7,-85.22 31.74,-85.2 31.76,-85.17 31.77,-85.16 31.76,-85.13 31.77,-85.12 31.78,-85.14 31.79,-85.13 31.83,-85.13 31.84,-85.14 31.87,-85.13 31.87,-84.95 31.7,-84.97</cap:polygon>
 <cap:geocode>
 <valueName>FIPS6</valueName>
-<value>001003 001035 001053 001099</value>
+<value>001067</value>
 <valueName>UGC</valueName>
-<value>ALZ055 ALZ056 ALZ059 ALZ262</value>
+<value>ALC067</value>
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
-<value></value>
+<value>/O.NEW.KTAE.SV.W.0296.230615T0909Z-230615T0945Z/</value>
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=AL12664EA02348.FloodAdvisory.12664EA054E4AL.MOBFLSMOB.ee4be0d57c0caaf889393d8a77cc98dc</id>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=AL12664EA02348.FloodAdvisory.12664EA054E4AL.MOBFLSMOB.81c6a0d3291c3523111686e9aa6c2496</id>
 <updated>2023-06-15T03:18:00-05:00</updated>
 <published>2023-06-15T03:18:00-05:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
 <title>Flood Advisory issued June 15 at 3:18AM CDT until June 15 at 4:45AM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=AL12664EA02348.FloodAdvisory.12664EA054E4AL.MOBFLSMOB.ee4be0d57c0caaf889393d8a77cc98dc"/>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=AL12664EA02348.FloodAdvisory.12664EA054E4AL.MOBFLSMOB.81c6a0d3291c3523111686e9aa6c2496"/>
 <summary>...FLOOD ADVISORY IN EFFECT UNTIL 615 AM CDT THIS MORNING... * WHAT...Flooding caused by excessive rainfall is expected. * WHERE...A portion of south central Alabama, including the following counties, Butler, Crenshaw, Monroe and Wilcox. * WHEN...Until 615 AM CDT. * IMPACTS...Minor flooding in low-lying and poor drainage areas.</summary>
 <cap:event>Flood Advisory</cap:event>
 <cap:effective>2023-06-15T03:18:00-05:00</cap:effective>
@@ -398,13 +526,46 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:urgency>Expected</cap:urgency>
 <cap:severity>Minor</cap:severity>
 <cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Crenshaw; Monroe; Wilcox</cap:areaDesc>
+<cap:areaDesc>Crenshaw</cap:areaDesc>
 <cap:polygon>31.86,-87.56 32.18,-87.36 32.04,-87.18 32.05,-86.86 31.96,-86.86 31.96,-86.5 31.96,-86.41 31.97,-86.3 31.97,-86.29 31.97,-86.28 31.97,-86.27 31.97,-86.2 31.79,-86.2 31.75,-87.21 31.86,-87.56</cap:polygon>
 <cap:geocode>
 <valueName>FIPS6</valueName>
-<value>001041 001099 001131</value>
+<value>001041</value>
 <valueName>UGC</valueName>
-<value>ALC041 ALC099 ALC131</value>
+<value>ALC041</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.NEW.KMOB.FA.Y.0062.230615T0818Z-230615T1115Z/
+/00000.N.ER.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=AL12664EA02348.FloodAdvisory.12664EA0703CAL.MOBFLSMOB.32fa7c4f33aea2a7d6eab27593b548a6</id>
+<updated>2023-06-15T03:18:00-05:00</updated>
+<published>2023-06-15T03:18:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Flood Advisory issued June 15 at 3:18AM CDT until June 15 at 5:15AM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=AL12664EA02348.FloodAdvisory.12664EA0703CAL.MOBFLSMOB.32fa7c4f33aea2a7d6eab27593b548a6"/>
+<summary>...FLOOD ADVISORY IN EFFECT UNTIL 615 AM CDT THIS MORNING... * WHAT...Flooding caused by excessive rainfall is expected. * WHERE...A portion of south central Alabama, including the following counties, Butler, Crenshaw, Monroe and Wilcox. * WHEN...Until 615 AM CDT. * IMPACTS...Minor flooding in low-lying and poor drainage areas.</summary>
+<cap:event>Flood Advisory</cap:event>
+<cap:effective>2023-06-15T03:18:00-05:00</cap:effective>
+<cap:expires>2023-06-15T05:15:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Monroe; Wilcox</cap:areaDesc>
+<cap:polygon>31.86,-87.56 32.18,-87.36 32.04,-87.18 32.05,-86.86 31.96,-86.86 31.96,-86.5 31.96,-86.41 31.97,-86.3 31.97,-86.29 31.97,-86.28 31.97,-86.27 31.97,-86.2 31.79,-86.2 31.75,-87.21 31.86,-87.56</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>001099 001131</value>
+<valueName>UGC</valueName>
+<value>ALC099 ALC131</value>
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
@@ -446,18 +607,18 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=AL12664EA01E34.FloodWatch.12664EA04F08AL.MOBFFAMOB.a5b7cc7063114fe939cf8f5da22aea0f</id>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=AL12664EA01E34.FloodWatch.12664EA06A60AL.MOBFFAMOB.a5b7cc7063114fe939cf8f5da22aea0f</id>
 <updated>2023-06-15T03:05:00-05:00</updated>
 <published>2023-06-15T03:05:00-05:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
 <title>Flood Watch issued June 15 at 3:05AM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=AL12664EA01E34.FloodWatch.12664EA04F08AL.MOBFFAMOB.a5b7cc7063114fe939cf8f5da22aea0f"/>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=AL12664EA01E34.FloodWatch.12664EA06A60AL.MOBFFAMOB.a5b7cc7063114fe939cf8f5da22aea0f"/>
 <summary>...FLOOD WATCH REMAINS IN EFFECT THROUGH THIS EVENING... * WHAT...Flooding caused by excessive rainfall remains possible. * WHERE...Portions of Alabama, northwest Florida and southeast Mississippi, including the following areas, in Alabama, Baldwin Inland, Butler, Choctaw, Clarke, Conecuh, Covington, Crenshaw, Escambia, Monroe, Washington and Wilcox. In northwest Florida,</summary>
 <cap:event>Flood Watch</cap:event>
 <cap:effective>2023-06-15T03:05:00-05:00</cap:effective>
-<cap:expires>2023-06-15T04:30:00-05:00</cap:expires>
+<cap:expires>2023-06-15T05:00:00-05:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
 <cap:category>Met</cap:category>
@@ -479,31 +640,31 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=AL12664EA01E34.FloodWatch.12664EA04F08AL.MOBFFAMOB.70b1773687269e77c307b2e696fdd56b</id>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=AL12664EA01E34.FloodWatch.12664EA06A60AL.MOBFFAMOB.7d1d7ebf29e018dbd02e7a289605ca4c</id>
 <updated>2023-06-15T03:05:00-05:00</updated>
 <published>2023-06-15T03:05:00-05:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
 <title>Flood Watch issued June 15 at 3:05AM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=AL12664EA01E34.FloodWatch.12664EA04F08AL.MOBFFAMOB.70b1773687269e77c307b2e696fdd56b"/>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=AL12664EA01E34.FloodWatch.12664EA06A60AL.MOBFFAMOB.7d1d7ebf29e018dbd02e7a289605ca4c"/>
 <summary>...FLOOD WATCH IN EFFECT THROUGH THIS EVENING... * WHAT...Flooding caused by excessive rainfall is possible. * WHERE...Portions of southwest Alabama and northwest Florida, including the following areas, in southwest Alabama, Baldwin Central, Baldwin Coastal, Mobile Central, Mobile Coastal and Mobile Inland. In northwest Florida, Escambia Coastal, Okaloosa</summary>
 <cap:event>Flood Watch</cap:event>
 <cap:effective>2023-06-15T03:05:00-05:00</cap:effective>
-<cap:expires>2023-06-15T04:30:00-05:00</cap:expires>
+<cap:expires>2023-06-15T05:00:00-05:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
 <cap:category>Met</cap:category>
 <cap:urgency>Future</cap:urgency>
 <cap:severity>Moderate</cap:severity>
 <cap:certainty>Possible</cap:certainty>
-<cap:areaDesc>Baldwin Central; Mobile Central; Mobile Inland</cap:areaDesc>
+<cap:areaDesc>Baldwin Central; Mobile Central; Mobile Coastal; Mobile Inland</cap:areaDesc>
 <cap:polygon></cap:polygon>
 <cap:geocode>
 <valueName>FIPS6</valueName>
 <value>001003 001097</value>
 <valueName>UGC</valueName>
-<value>ALZ261 ALZ263 ALZ264</value>
+<value>ALZ261 ALZ263 ALZ264 ALZ265</value>
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
@@ -512,14 +673,14 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=AL12664EA01E34.FloodWatch.12664ECCAA80AL.MOBFFAMOB.32aef92e494c03f3b5f98bd3432abee5</id>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=AL12664EA01E34.FloodWatch.12664ECCAA80AL.MOBFFAMOB.58c48fe08d737d92c400df5f49cf67bc</id>
 <updated>2023-06-15T03:05:00-05:00</updated>
 <published>2023-06-15T03:05:00-05:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
 <title>Flood Watch issued June 15 at 3:05AM CDT until June 17 at 7:00PM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=AL12664EA01E34.FloodWatch.12664ECCAA80AL.MOBFFAMOB.32aef92e494c03f3b5f98bd3432abee5"/>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=AL12664EA01E34.FloodWatch.12664ECCAA80AL.MOBFFAMOB.58c48fe08d737d92c400df5f49cf67bc"/>
 <summary>...FLOOD WATCH IN EFFECT THROUGH THIS EVENING... * WHAT...Flooding caused by excessive rainfall is possible. * WHERE...Portions of southwest Alabama and northwest Florida, including the following areas, in southwest Alabama, Baldwin Central, Baldwin Coastal, Mobile Central, Mobile Coastal and Mobile Inland. In northwest Florida, Escambia Coastal, Okaloosa</summary>
 <cap:event>Flood Watch</cap:event>
 <cap:effective>2023-06-15T03:05:00-05:00</cap:effective>
@@ -530,13 +691,13 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:urgency>Future</cap:urgency>
 <cap:severity>Moderate</cap:severity>
 <cap:certainty>Possible</cap:certainty>
-<cap:areaDesc>Baldwin Coastal; Mobile Coastal</cap:areaDesc>
+<cap:areaDesc>Baldwin Coastal</cap:areaDesc>
 <cap:polygon></cap:polygon>
 <cap:geocode>
 <valueName>FIPS6</valueName>
-<value>001003 001097</value>
+<value>001003</value>
 <valueName>UGC</valueName>
-<value>ALZ265 ALZ266</value>
+<value>ALZ266</value>
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
@@ -545,50 +706,18 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=AL12664E9F443C.RipCurrentStatement.12664ECCAA80AL.MOBCFWMOB.f20200d873540a58d3b88a589e4c4dfb</id>
-<updated>2023-06-14T21:47:00-05:00</updated>
-<published>2023-06-14T21:47:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Rip Current Statement issued June 14 at 9:47PM CDT until June 17 at 7:00PM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=AL12664E9F443C.RipCurrentStatement.12664ECCAA80AL.MOBCFWMOB.f20200d873540a58d3b88a589e4c4dfb"/>
-<summary>...HIGH RIP CURRENT RISK REMAINS IN EFFECT THROUGH SATURDAY EVENING... * WHAT...Dangerous rip currents. * WHERE...In Alabama, Mobile Coastal and Baldwin Coastal Counties. In Florida, Escambia Coastal, Santa Rosa Coastal and Okaloosa Coastal Counties.</summary>
-<cap:event>Rip Current Statement</cap:event>
-<cap:effective>2023-06-14T21:47:00-05:00</cap:effective>
-<cap:expires>2023-06-17T19:00:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Baldwin Coastal; Mobile Coastal</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>001003 001097</value>
-<valueName>UGC</valueName>
-<value>ALZ265 ALZ266</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KMOB.RP.S.0023.000000T0000Z-230618T0000Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=AL12664E92E8F4.FloodWatch.12664EA04F08AL.TAEFFATAE.4b7c1ef1a0098f0325612fdb0d102574</id>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=AL12664E92E8F4.FloodWatch.12664EA06A60AL.TAEFFATAE.4b7c1ef1a0098f0325612fdb0d102574</id>
 <updated>2023-06-14T16:49:00-05:00</updated>
 <published>2023-06-14T16:49:00-05:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
 <title>Flood Watch issued June 14 at 4:49PM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=AL12664E92E8F4.FloodWatch.12664EA04F08AL.TAEFFATAE.4b7c1ef1a0098f0325612fdb0d102574"/>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=AL12664E92E8F4.FloodWatch.12664EA06A60AL.TAEFFATAE.4b7c1ef1a0098f0325612fdb0d102574"/>
 <summary>...FLOOD WATCH REMAINS IN EFFECT THROUGH FRIDAY EVENING... * WHAT...Flash Flooding caused by excessive rainfall is possible. * WHERE...Portions of southeast Alabama, Panhandle Florida and Georgia, including the following areas, in southeast Alabama, Coffee, Dale, Geneva, Henry and Houston. In Panhandle Florida, Holmes, Jackson and North Walton. In Georgia, Baker, Ben Hill,</summary>
 <cap:event>Flood Watch</cap:event>
 <cap:effective>2023-06-14T16:49:00-05:00</cap:effective>
-<cap:expires>2023-06-15T04:30:00-05:00</cap:expires>
+<cap:expires>2023-06-15T05:00:00-05:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
 <cap:category>Met</cap:category>
@@ -610,47 +739,14 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=AL12664E92B1E0.FloodWatch.12664EA04F08AL.BMXFFABMX.ecae26ed190d3f686ea03cfe480c11cf</id>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=AL12664E92B1E0.FloodWatch.12664EA054E4AL.BMXFFABMX.ff4cf2430f4cfc409c174f3d7f2f9ddd</id>
 <updated>2023-06-14T15:08:00-05:00</updated>
 <published>2023-06-14T15:08:00-05:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
 <title>Flood Watch issued June 14 at 3:08PM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=AL12664E92B1E0.FloodWatch.12664EA04F08AL.BMXFFABMX.ecae26ed190d3f686ea03cfe480c11cf"/>
-<summary>.Multiple rounds of showers and thunderstorms are forecast through Thursday evening, mainly for areas along and south of Interstate 20. Thunderstorm activity will produce locally heavy rainfall, with the potential for repeated heavy rains over the same areas. As a result, 2 to 5 inches of rain is possible through Thursday evening, with locally higher amounts possible.</summary>
-<cap:event>Flood Watch</cap:event>
-<cap:effective>2023-06-14T15:08:00-05:00</cap:effective>
-<cap:expires>2023-06-15T04:30:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Future</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Possible</cap:certainty>
-<cap:areaDesc>Barbour</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>001005</value>
-<valueName>UGC</valueName>
-<value>ALZ050</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KBMX.FA.A.0003.000000T0000Z-230616T0000Z/
-/00000.0.ER.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=AL12664E92B1E0.FloodWatch.12664EA054E4AL.BMXFFABMX.3486eab3c6cbc8cfc6860cf896bb68d0</id>
-<updated>2023-06-14T15:08:00-05:00</updated>
-<published>2023-06-14T15:08:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Flood Watch issued June 14 at 3:08PM CDT until June 15 at 4:45AM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=AL12664E92B1E0.FloodWatch.12664EA054E4AL.BMXFFABMX.3486eab3c6cbc8cfc6860cf896bb68d0"/>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=AL12664E92B1E0.FloodWatch.12664EA054E4AL.BMXFFABMX.ff4cf2430f4cfc409c174f3d7f2f9ddd"/>
 <summary>.Multiple rounds of showers and thunderstorms are forecast through Thursday evening, mainly for areas along and south of Interstate 20. Thunderstorm activity will produce locally heavy rainfall, with the potential for repeated heavy rains over the same areas. As a result, 2 to 5 inches of rain is possible through Thursday evening, with locally higher amounts possible.</summary>
 <cap:event>Flood Watch</cap:event>
 <cap:effective>2023-06-14T15:08:00-05:00</cap:effective>
@@ -661,18 +757,116 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:urgency>Future</cap:urgency>
 <cap:severity>Moderate</cap:severity>
 <cap:certainty>Possible</cap:certainty>
-<cap:areaDesc>Autauga; Bibb; Bullock; Chambers; Chilton; Clay; Coosa; Dallas; Elmore; Greene; Hale; Jefferson; Lee; Lowndes; Macon; Marengo; Montgomery; Perry; Pickens; Pike; Randolph; Russell; Shelby; Sumter; Talladega; Tallapoosa; Tuscaloosa</cap:areaDesc>
+<cap:areaDesc>Clay; Greene; Hale; Jefferson; Perry; Randolph; Shelby; Sumter; Talladega; Tuscaloosa</cap:areaDesc>
 <cap:polygon></cap:polygon>
 <cap:geocode>
 <valueName>FIPS6</valueName>
-<value>001001 001007 001011 001017 001021 001027 001037 001047 001051 001063 001065 001073 001081 001085 001087 001091 001101 001105 001107 001109 001111 001113 001117 001119 001121 001123 001125</value>
+<value>001027 001063 001065 001073 001105 001111 001117 001119 001121 001125</value>
 <valueName>UGC</valueName>
-<value>ALZ022 ALZ023 ALZ024 ALZ025 ALZ027 ALZ028 ALZ029 ALZ030 ALZ031 ALZ032 ALZ033 ALZ034 ALZ035 ALZ036 ALZ037 ALZ038 ALZ039 ALZ040 ALZ041 ALZ042 ALZ043 ALZ044 ALZ045 ALZ046 ALZ047 ALZ048 ALZ049</value>
+<value>ALZ023 ALZ024 ALZ025 ALZ027 ALZ028 ALZ029 ALZ030 ALZ031 ALZ032 ALZ033</value>
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value>/O.CON.KBMX.FA.A.0003.000000T0000Z-230616T0000Z/
 /00000.0.ER.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=AL12664E92B1E0.FloodWatch.12664EA06A60AL.BMXFFABMX.2768c246ea2e729f5cba113ccb8593e8</id>
+<updated>2023-06-14T15:08:00-05:00</updated>
+<published>2023-06-14T15:08:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Flood Watch issued June 14 at 3:08PM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=AL12664E92B1E0.FloodWatch.12664EA06A60AL.BMXFFABMX.2768c246ea2e729f5cba113ccb8593e8"/>
+<summary>.Multiple rounds of showers and thunderstorms are forecast through Thursday evening, mainly for areas along and south of Interstate 20. Thunderstorm activity will produce locally heavy rainfall, with the potential for repeated heavy rains over the same areas. As a result, 2 to 5 inches of rain is possible through Thursday evening, with locally higher amounts possible.</summary>
+<cap:event>Flood Watch</cap:event>
+<cap:effective>2023-06-14T15:08:00-05:00</cap:effective>
+<cap:expires>2023-06-15T05:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Future</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Possible</cap:certainty>
+<cap:areaDesc>Autauga; Barbour; Bibb; Bullock; Chambers; Chilton; Coosa; Dallas; Elmore; Lee; Lowndes; Macon; Marengo; Montgomery; Pike; Russell; Tallapoosa</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>001001 001005 001007 001011 001017 001021 001037 001047 001051 001081 001085 001087 001091 001101 001109 001113 001123</value>
+<valueName>UGC</valueName>
+<value>ALZ034 ALZ035 ALZ036 ALZ037 ALZ038 ALZ039 ALZ040 ALZ041 ALZ042 ALZ043 ALZ044 ALZ045 ALZ046 ALZ047 ALZ048 ALZ049 ALZ050</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KBMX.FA.A.0003.000000T0000Z-230616T0000Z/
+/00000.0.ER.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=AL12664E92B1E0.FloodWatch.12664EA0703CAL.BMXFFABMX.4acd162ff7a91170770aa3eaa625b1c5</id>
+<updated>2023-06-14T15:08:00-05:00</updated>
+<published>2023-06-14T15:08:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Flood Watch issued June 14 at 3:08PM CDT until June 15 at 5:15AM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=AL12664E92B1E0.FloodWatch.12664EA0703CAL.BMXFFABMX.4acd162ff7a91170770aa3eaa625b1c5"/>
+<summary>.Multiple rounds of showers and thunderstorms are forecast through Thursday evening, mainly for areas along and south of Interstate 20. Thunderstorm activity will produce locally heavy rainfall, with the potential for repeated heavy rains over the same areas. As a result, 2 to 5 inches of rain is possible through Thursday evening, with locally higher amounts possible.</summary>
+<cap:event>Flood Watch</cap:event>
+<cap:effective>2023-06-14T15:08:00-05:00</cap:effective>
+<cap:expires>2023-06-15T05:15:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Future</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Possible</cap:certainty>
+<cap:areaDesc>Pickens</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>001107</value>
+<valueName>UGC</valueName>
+<value>ALZ022</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KBMX.FA.A.0003.000000T0000Z-230616T0000Z/
+/00000.0.ER.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=AR12664EA04D14.SpecialWeatherStatement.12664EA06A60AR.LZKSPSLZK.c77347926e535ef8aa4bd5676f22e1b9</id>
+<updated>2023-06-15T04:25:00-05:00</updated>
+<published>2023-06-15T04:25:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Special Weather Statement issued June 15 at 4:25AM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=AR12664EA04D14.SpecialWeatherStatement.12664EA06A60AR.LZKSPSLZK.c77347926e535ef8aa4bd5676f22e1b9"/>
+<summary>...A strong thunderstorm will impact portions of southern Bradley County through 500 AM CDT... At 425 AM CDT, Doppler radar was tracking a strong thunderstorm 9 miles southeast of Hilo, or 11 miles northwest of West Crossett, moving east at 45 mph. HAZARD...Wind gusts up to 50 mph and nickel size hail.</summary>
+<cap:event>Special Weather Statement</cap:event>
+<cap:effective>2023-06-15T04:25:00-05:00</cap:effective>
+<cap:expires>2023-06-15T05:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Observed</cap:certainty>
+<cap:areaDesc>Bradley</cap:areaDesc>
+<cap:polygon>33.21,-92.18 33.21,-92.22 33.25,-92.23 33.25,-92.27 33.28,-92.3 33.26,-92.33 33.32,-92.38 33.36,-92.38 33.41,-92 33.38,-91.96 33.35,-91.99 33.3,-91.98 33.3,-92 33.28,-92 33.28,-92.04 33.24,-92.09 33.21,-92.08 33.2,-92.13 33.16,-92.15 33.16,-92.17 33.21,-92.18</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>005011</value>
+<valueName>UGC</valueName>
+<value>ARZ068</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value></value>
 </cap:parameter>
 </entry>
 <entry>
@@ -705,38 +899,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value></value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=AR12664EA02A50.SevereWeatherStatement.12664EA0492CAR.JANSVSJAN.acb61ba27c620927327f966387c85b8f</id>
-<updated>2023-06-15T03:36:00-05:00</updated>
-<published>2023-06-15T03:36:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Severe Weather Statement issued June 15 at 3:36AM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=AR12664EA02A50.SevereWeatherStatement.12664EA0492CAR.JANSVSJAN.acb61ba27c620927327f966387c85b8f"/>
-<summary>...A SEVERE THUNDERSTORM WARNING REMAINS IN EFFECT UNTIL 415 AM CDT FOR CENTRAL CHICOT...SOUTHERN WASHINGTON...NORTHWESTERN HUMPHREYS AND NORTHEASTERN SHARKEY COUNTIES... At 336 AM CDT, a severe thunderstorm was located near Avon, or 11 miles west of Hollandale, moving east at 40 mph. HAZARD...Two inch hail and 60 mph wind gusts.</summary>
-<cap:event>Severe Weather Statement</cap:event>
-<cap:effective>2023-06-15T03:36:00-05:00</cap:effective>
-<cap:expires>2023-06-15T04:15:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Immediate</cap:urgency>
-<cap:severity>Severe</cap:severity>
-<cap:certainty>Observed</cap:certainty>
-<cap:areaDesc>Chicot</cap:areaDesc>
-<cap:polygon>33.32,-91.36 33.27,-90.76 33.27,-90.67 33.26,-90.58 32.98,-90.69 33.16,-91.4 33.32,-91.36</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>005017</value>
-<valueName>UGC</valueName>
-<value>ARC017</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KJAN.SV.W.0351.000000T0000Z-230615T0915Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -1231,6 +1393,70 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=FL12664EA05034.RipCurrentStatement.12664ECCAA80FL.MOBCFWMOB.16ae0a0058a75f40734f096e2d80afc6</id>
+<updated>2023-06-15T05:33:00-04:00</updated>
+<published>2023-06-15T05:33:00-04:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Rip Current Statement issued June 15 at 5:33AM EDT until June 17 at 8:00PM EDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=FL12664EA05034.RipCurrentStatement.12664ECCAA80FL.MOBCFWMOB.16ae0a0058a75f40734f096e2d80afc6"/>
+<summary>...HIGH RIP CURRENT RISK REMAINS IN EFFECT THROUGH SATURDAY EVENING... * WHAT...Dangerous rip currents. * WHERE...In Alabama, Mobile Coastal and Baldwin Coastal Counties. In Florida, Escambia Coastal, Santa Rosa Coastal and Okaloosa Coastal Counties.</summary>
+<cap:event>Rip Current Statement</cap:event>
+<cap:effective>2023-06-15T05:33:00-04:00</cap:effective>
+<cap:expires>2023-06-17T20:00:00-04:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Escambia Coastal; Okaloosa Coastal; Santa Rosa Coastal</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>012033 012091 012113</value>
+<valueName>UGC</valueName>
+<value>FLZ202 FLZ204 FLZ206</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KMOB.RP.S.0023.000000T0000Z-230618T0000Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=FL12664EA048C8.SevereThunderstormWarning.12664EA0703CFL.TAESVRTAE.b2f990c161cf54d34649b7f6e34956ea</id>
+<updated>2023-06-15T05:14:00-04:00</updated>
+<published>2023-06-15T05:14:00-04:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Severe Thunderstorm Warning issued June 15 at 5:14AM EDT until June 15 at 6:15AM EDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=FL12664EA048C8.SevereThunderstormWarning.12664EA0703CFL.TAESVRTAE.b2f990c161cf54d34649b7f6e34956ea"/>
+<summary>The National Weather Service in Tallahassee has issued a * Severe Thunderstorm Warning for... Southern Dale County in southeastern Alabama... Southern Henry County in southeastern Alabama... Eastern Geneva County in southeastern Alabama... Houston County in southeastern Alabama...</summary>
+<cap:event>Severe Thunderstorm Warning</cap:event>
+<cap:effective>2023-06-15T05:14:00-04:00</cap:effective>
+<cap:expires>2023-06-15T06:15:00-04:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Immediate</cap:urgency>
+<cap:severity>Severe</cap:severity>
+<cap:certainty>Observed</cap:certainty>
+<cap:areaDesc>Holmes; Jackson</cap:areaDesc>
+<cap:polygon>31.49,-84.61 31,-84.95 30.84,-85.63 31.26,-85.77 31.36,-85.29 31.6,-85.06 31.49,-84.61</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>012059 012063</value>
+<valueName>UGC</valueName>
+<value>FLC059 FLC063</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.NEW.KTAE.SV.W.0297.230615T0914Z-230615T1015Z/</value>
+</cap:parameter>
+</entry>
+<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=FL12664EA01E34.FloodWatch.12664EB1A870FL.MOBFFAMOB.6e55d70a6430916dd26a235dafbd3ae3</id>
 <updated>2023-06-15T04:05:00-04:00</updated>
 <published>2023-06-15T04:05:00-04:00</published>
@@ -1394,50 +1620,18 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=FL12664E9F443C.RipCurrentStatement.12664ECCAA80FL.MOBCFWMOB.16ae0a0058a75f40734f096e2d80afc6</id>
-<updated>2023-06-14T22:47:00-04:00</updated>
-<published>2023-06-14T22:47:00-04:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Rip Current Statement issued June 14 at 10:47PM EDT until June 17 at 8:00PM EDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=FL12664E9F443C.RipCurrentStatement.12664ECCAA80FL.MOBCFWMOB.16ae0a0058a75f40734f096e2d80afc6"/>
-<summary>...HIGH RIP CURRENT RISK REMAINS IN EFFECT THROUGH SATURDAY EVENING... * WHAT...Dangerous rip currents. * WHERE...In Alabama, Mobile Coastal and Baldwin Coastal Counties. In Florida, Escambia Coastal, Santa Rosa Coastal and Okaloosa Coastal Counties.</summary>
-<cap:event>Rip Current Statement</cap:event>
-<cap:effective>2023-06-14T22:47:00-04:00</cap:effective>
-<cap:expires>2023-06-17T20:00:00-04:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Escambia Coastal; Okaloosa Coastal; Santa Rosa Coastal</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>012033 012091 012113</value>
-<valueName>UGC</valueName>
-<value>FLZ202 FLZ204 FLZ206</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KMOB.RP.S.0023.000000T0000Z-230618T0000Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=FL12664E92E8F4.FloodWatch.12664EBD6840FL.TAEFFATAE.4ffcd404657bca7a143f5a2fa3c96dd7</id>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=FL12664E92E8F4.FloodWatch.12664EA0703CFL.TAEFFATAE.4ffcd404657bca7a143f5a2fa3c96dd7</id>
 <updated>2023-06-14T17:49:00-04:00</updated>
 <published>2023-06-14T17:49:00-04:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Flood Watch issued June 14 at 5:49PM EDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=FL12664E92E8F4.FloodWatch.12664EBD6840FL.TAEFFATAE.4ffcd404657bca7a143f5a2fa3c96dd7"/>
+<title>Flood Watch issued June 14 at 5:49PM EDT until June 15 at 6:15AM EDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=FL12664E92E8F4.FloodWatch.12664EA0703CFL.TAEFFATAE.4ffcd404657bca7a143f5a2fa3c96dd7"/>
 <summary>...FLOOD WATCH REMAINS IN EFFECT THROUGH FRIDAY EVENING... * WHAT...Flash Flooding caused by excessive rainfall is possible. * WHERE...Portions of southeast Alabama, Panhandle Florida and Georgia, including the following areas, in southeast Alabama, Coffee, Dale, Geneva, Henry and Houston. In Panhandle Florida, Holmes, Jackson and North Walton. In Georgia, Baker, Ben Hill,</summary>
 <cap:event>Flood Watch</cap:event>
 <cap:effective>2023-06-14T17:49:00-04:00</cap:effective>
-<cap:expires>2023-06-16T20:00:00-04:00</cap:expires>
+<cap:expires>2023-06-15T06:15:00-04:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
 <cap:category>Met</cap:category>
@@ -1459,50 +1653,82 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=GA12664EA02F64.SpecialWeatherStatement.12664EA04F08GA.TAESPSTAE.3fcd5f867318ca5c08a250c6ead11ca6</id>
-<updated>2023-06-15T04:49:00-04:00</updated>
-<published>2023-06-15T04:49:00-04:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=GA12664EA048C8.SevereThunderstormWarning.12664EA0703CGA.TAESVRTAE.c38884c14b1e08fb2c8bf4028c9515d6</id>
+<updated>2023-06-15T05:14:00-04:00</updated>
+<published>2023-06-15T05:14:00-04:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Special Weather Statement issued June 15 at 4:49AM EDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=GA12664EA02F64.SpecialWeatherStatement.12664EA04F08GA.TAESPSTAE.3fcd5f867318ca5c08a250c6ead11ca6"/>
-<summary>...Strong thunderstorms will impact portions of Dale, Henry, Coffee, northwestern Clay and southwestern Quitman Counties through 530 AM EDT/430 AM CDT/... At 448 AM EDT/348 AM CDT/, Doppler radar was tracking strong thunderstorms along a line extending from White Oak to 8 miles west of Ariton to near Dozier. Movement was east at 45 mph.</summary>
-<cap:event>Special Weather Statement</cap:event>
-<cap:effective>2023-06-15T04:49:00-04:00</cap:effective>
-<cap:expires>2023-06-15T05:30:00-04:00</cap:expires>
+<title>Severe Thunderstorm Warning issued June 15 at 5:14AM EDT until June 15 at 6:15AM EDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=GA12664EA048C8.SevereThunderstormWarning.12664EA0703CGA.TAESVRTAE.c38884c14b1e08fb2c8bf4028c9515d6"/>
+<summary>The National Weather Service in Tallahassee has issued a * Severe Thunderstorm Warning for... Southern Dale County in southeastern Alabama... Southern Henry County in southeastern Alabama... Eastern Geneva County in southeastern Alabama... Houston County in southeastern Alabama...</summary>
+<cap:event>Severe Thunderstorm Warning</cap:event>
+<cap:effective>2023-06-15T05:14:00-04:00</cap:effective>
+<cap:expires>2023-06-15T06:15:00-04:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
 <cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
+<cap:urgency>Immediate</cap:urgency>
+<cap:severity>Severe</cap:severity>
+<cap:certainty>Observed</cap:certainty>
+<cap:areaDesc>Calhoun; Clay; Early; Miller; Seminole</cap:areaDesc>
+<cap:polygon>31.49,-84.61 31,-84.95 30.84,-85.63 31.26,-85.77 31.36,-85.29 31.6,-85.06 31.49,-84.61</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>013037 013061 013099 013201 013253</value>
+<valueName>UGC</valueName>
+<value>GAC037 GAC061 GAC099 GAC201 GAC253</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.NEW.KTAE.SV.W.0297.230615T0914Z-230615T1015Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=GA12664EA046D4.SevereThunderstormWarning.12664EA054E4GA.TAESVRTAE.b6d3d206fef356d3f3fc36187e9b4b15</id>
+<updated>2023-06-15T05:09:00-04:00</updated>
+<published>2023-06-15T05:09:00-04:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Severe Thunderstorm Warning issued June 15 at 5:09AM EDT until June 15 at 5:45AM EDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=GA12664EA046D4.SevereThunderstormWarning.12664EA054E4GA.TAESVRTAE.b6d3d206fef356d3f3fc36187e9b4b15"/>
+<summary>The National Weather Service in Tallahassee has issued a * Severe Thunderstorm Warning for... Northeastern Henry County in southeastern Alabama... Northwestern Clay County in southwestern Georgia... Southern Quitman County in southwestern Georgia... * Until 545 AM EDT/445 AM CDT/.</summary>
+<cap:event>Severe Thunderstorm Warning</cap:event>
+<cap:effective>2023-06-15T05:09:00-04:00</cap:effective>
+<cap:expires>2023-06-15T05:45:00-04:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Immediate</cap:urgency>
+<cap:severity>Severe</cap:severity>
 <cap:certainty>Observed</cap:certainty>
 <cap:areaDesc>Clay; Quitman</cap:areaDesc>
-<cap:polygon>31.79,-84.97 31.61,-84.97 31.4,-85.3 31.3,-85.93 31.41,-86.2 31.53,-86.19 31.54,-86.14 31.62,-86.15 31.62,-85.42 31.71,-85.42 31.7,-85.22 31.74,-85.2 31.77,-85.16 31.77,-85.12 31.88,-85.13 31.89,-85.13 31.79,-84.97</cap:polygon>
+<cap:polygon>31.7,-84.97 31.58,-85.05 31.7,-85.35 31.7,-85.22 31.74,-85.2 31.76,-85.17 31.77,-85.16 31.76,-85.13 31.77,-85.12 31.78,-85.14 31.79,-85.13 31.83,-85.13 31.84,-85.14 31.87,-85.13 31.87,-84.95 31.7,-84.97</cap:polygon>
 <cap:geocode>
 <valueName>FIPS6</valueName>
 <value>013061 013239</value>
 <valueName>UGC</valueName>
-<value>GAZ120 GAZ121</value>
+<value>GAC061 GAC239</value>
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
-<value></value>
+<value>/O.NEW.KTAE.SV.W.0296.230615T0909Z-230615T0945Z/</value>
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=GA12664EA02028.FloodWatch.12664EAE2600GA.FFCFFAFFC.07d238336eb7829d7fc0dc0e1ee2f96b</id>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=GA12664EA02028.FloodWatch.12664EA0703CGA.FFCFFAFFC.07d238336eb7829d7fc0dc0e1ee2f96b</id>
 <updated>2023-06-15T04:10:00-04:00</updated>
 <published>2023-06-15T04:10:00-04:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Flood Watch issued June 15 at 4:10AM EDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=GA12664EA02028.FloodWatch.12664EAE2600GA.FFCFFAFFC.07d238336eb7829d7fc0dc0e1ee2f96b"/>
+<title>Flood Watch issued June 15 at 4:10AM EDT until June 15 at 6:15AM EDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=GA12664EA02028.FloodWatch.12664EA0703CGA.FFCFFAFFC.07d238336eb7829d7fc0dc0e1ee2f96b"/>
 <summary>...FLOOD WATCH REMAINS IN EFFECT THROUGH THIS EVENING... * WHAT...Flooding caused by excessive rainfall continues to be possible. * WHERE...Portions of central Georgia and west central Georgia, including the following counties, in central Georgia, Bibb, Bleckley, Crawford, Crisp, Dodge, Dooly, Houston, Jones, Monroe,</summary>
 <cap:event>Flood Watch</cap:event>
 <cap:effective>2023-06-15T04:10:00-04:00</cap:effective>
-<cap:expires>2023-06-15T20:00:00-04:00</cap:expires>
+<cap:expires>2023-06-15T06:15:00-04:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
 <cap:category>Met</cap:category>
@@ -1524,64 +1750,31 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=GA12664E92E8F4.FloodWatch.12664EA04F08GA.TAEFFATAE.65cc6ca81225f953f2503a1bf89eaebe</id>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=GA12664E92E8F4.FloodWatch.12664EA0703CGA.TAEFFATAE.91c6bd9dbdfaaf3589876f46b2ff42a5</id>
 <updated>2023-06-14T17:49:00-04:00</updated>
 <published>2023-06-14T17:49:00-04:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Flood Watch issued June 14 at 5:49PM EDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=GA12664E92E8F4.FloodWatch.12664EA04F08GA.TAEFFATAE.65cc6ca81225f953f2503a1bf89eaebe"/>
+<title>Flood Watch issued June 14 at 5:49PM EDT until June 15 at 6:15AM EDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=GA12664E92E8F4.FloodWatch.12664EA0703CGA.TAEFFATAE.91c6bd9dbdfaaf3589876f46b2ff42a5"/>
 <summary>...FLOOD WATCH REMAINS IN EFFECT THROUGH FRIDAY EVENING... * WHAT...Flash Flooding caused by excessive rainfall is possible. * WHERE...Portions of southeast Alabama, Panhandle Florida and Georgia, including the following areas, in southeast Alabama, Coffee, Dale, Geneva, Henry and Houston. In Panhandle Florida, Holmes, Jackson and North Walton. In Georgia, Baker, Ben Hill,</summary>
 <cap:event>Flood Watch</cap:event>
 <cap:effective>2023-06-14T17:49:00-04:00</cap:effective>
-<cap:expires>2023-06-15T05:30:00-04:00</cap:expires>
+<cap:expires>2023-06-15T06:15:00-04:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
 <cap:category>Met</cap:category>
 <cap:urgency>Future</cap:urgency>
 <cap:severity>Moderate</cap:severity>
 <cap:certainty>Possible</cap:certainty>
-<cap:areaDesc>Baker; Ben Hill; Berrien; Brooks; Calhoun; Clay; Colquitt; Cook; Decatur; Dougherty; Early; Grady; Irwin; Lanier; Lee; Lowndes; Miller; Mitchell; Randolph; Seminole; Terrell; Thomas; Tift; Turner; Worth</cap:areaDesc>
+<cap:areaDesc>Baker; Ben Hill; Berrien; Brooks; Calhoun; Clay; Colquitt; Cook; Decatur; Dougherty; Early; Grady; Irwin; Lanier; Lee; Lowndes; Miller; Mitchell; Quitman; Randolph; Seminole; Terrell; Thomas; Tift; Turner; Worth</cap:areaDesc>
 <cap:polygon></cap:polygon>
 <cap:geocode>
 <valueName>FIPS6</valueName>
-<value>013007 013017 013019 013027 013037 013061 013071 013075 013087 013095 013099 013131 013155 013173 013177 013185 013201 013205 013243 013253 013273 013275 013277 013287 013321</value>
+<value>013007 013017 013019 013027 013037 013061 013071 013075 013087 013095 013099 013131 013155 013173 013177 013185 013201 013205 013239 013243 013253 013273 013275 013277 013287 013321</value>
 <valueName>UGC</valueName>
-<value>GAZ121 GAZ122 GAZ123 GAZ124 GAZ125 GAZ126 GAZ127 GAZ128 GAZ129 GAZ130 GAZ131 GAZ142 GAZ143 GAZ144 GAZ145 GAZ146 GAZ147 GAZ148 GAZ155 GAZ156 GAZ157 GAZ158 GAZ159 GAZ160 GAZ161</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KTAE.FA.A.0005.000000T0000Z-230617T0000Z/
-/00000.0.ER.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=GA12664E92E8F4.FloodWatch.12664EAE2600GA.TAEFFATAE.4309873e9e77a4b307340304a851c184</id>
-<updated>2023-06-14T17:49:00-04:00</updated>
-<published>2023-06-14T17:49:00-04:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Flood Watch issued June 14 at 5:49PM EDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=GA12664E92E8F4.FloodWatch.12664EAE2600GA.TAEFFATAE.4309873e9e77a4b307340304a851c184"/>
-<summary>...FLOOD WATCH REMAINS IN EFFECT THROUGH FRIDAY EVENING... * WHAT...Flash Flooding caused by excessive rainfall is possible. * WHERE...Portions of southeast Alabama, Panhandle Florida and Georgia, including the following areas, in southeast Alabama, Coffee, Dale, Geneva, Henry and Houston. In Panhandle Florida, Holmes, Jackson and North Walton. In Georgia, Baker, Ben Hill,</summary>
-<cap:event>Flood Watch</cap:event>
-<cap:effective>2023-06-14T17:49:00-04:00</cap:effective>
-<cap:expires>2023-06-15T20:00:00-04:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Future</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Possible</cap:certainty>
-<cap:areaDesc>Quitman</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>013239</value>
-<valueName>UGC</valueName>
-<value>GAZ120</value>
+<value>GAZ120 GAZ121 GAZ122 GAZ123 GAZ124 GAZ125 GAZ126 GAZ127 GAZ128 GAZ129 GAZ130 GAZ131 GAZ142 GAZ143 GAZ144 GAZ145 GAZ146 GAZ147 GAZ148 GAZ155 GAZ156 GAZ157 GAZ158 GAZ159 GAZ160 GAZ161</value>
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
@@ -2014,6 +2207,38 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=LA12664EA04670.HeatAdvisory.12664EAE4D10LA.LCHNPWLCH.04cc4769ab8a725ca0482f5d297abf53</id>
+<updated>2023-06-15T04:08:00-05:00</updated>
+<published>2023-06-15T04:08:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Heat Advisory issued June 15 at 4:08AM CDT until June 15 at 8:00PM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=LA12664EA04670.HeatAdvisory.12664EAE4D10LA.LCHNPWLCH.04cc4769ab8a725ca0482f5d297abf53"/>
+<summary>...HEAT ADVISORY REMAINS IN EFFECT FROM 11 AM THIS MORNING TO 8 PM CDT THIS EVENING... * WHAT...Heat index values up to 115 expected. * WHERE...Portions of central, south central, southwest and west central Louisiana and southeast Texas. * WHEN...From 11 AM this morning to 8 PM CDT this evening.</summary>
+<cap:event>Heat Advisory</cap:event>
+<cap:effective>2023-06-15T04:08:00-05:00</cap:effective>
+<cap:expires>2023-06-15T20:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Allen; Avoyelles; Beauregard; East Cameron; Evangeline; Lafayette; Lower Iberia; Lower St. Martin; Lower St. Mary; Lower Vermilion; Northern Acadia; Northern Calcasieu; Northern Jefferson Davis; Rapides; Southern Acadia; Southern Calcasieu; Southern Jefferson Davis; St. Landry; Upper Iberia; Upper St. Martin; Upper St. Mary; Upper Vermilion; Vernon; West Cameron</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>022001 022003 022009 022011 022019 022023 022039 022045 022053 022055 022079 022097 022099 022101 022113 022115</value>
+<valueName>UGC</valueName>
+<value>LAZ027 LAZ028 LAZ029 LAZ030 LAZ031 LAZ032 LAZ033 LAZ044 LAZ045 LAZ055 LAZ073 LAZ074 LAZ141 LAZ142 LAZ143 LAZ152 LAZ153 LAZ154 LAZ241 LAZ242 LAZ243 LAZ252 LAZ253 LAZ254</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KLCH.HT.Y.0002.230615T1600Z-230616T0100Z/</value>
+</cap:parameter>
+</entry>
+<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=LA12664EA02FC8.HeatAdvisory.12664EAE2600LA.LIXNPWLIX.9d5fd1e0167d3ff57faec565448e3005</id>
 <updated>2023-06-15T03:50:00-05:00</updated>
 <published>2023-06-15T03:50:00-05:00</published>
@@ -2108,38 +2333,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <valueName>VTEC</valueName>
 <value>/O.EXT.KSHV.FL.W.0118.000000T0000Z-230620T0800Z/
 /SPHL1.1.ER.230614T1353Z.230616T1200Z.230619T1400Z.NO/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=LA12664E9F10AC.HeatAdvisory.12664EAE4D10LA.LCHNPWLCH.04cc4769ab8a725ca0482f5d297abf53</id>
-<updated>2023-06-14T20:15:00-05:00</updated>
-<published>2023-06-14T20:15:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Heat Advisory issued June 14 at 8:15PM CDT until June 15 at 8:00PM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=LA12664E9F10AC.HeatAdvisory.12664EAE4D10LA.LCHNPWLCH.04cc4769ab8a725ca0482f5d297abf53"/>
-<summary>...HEAT ADVISORY REMAINS IN EFFECT FROM 11 AM TO 8 PM CDT THURSDAY... * WHAT...Heat index values 109 to 113 expected. * WHERE...Portions of central, south central, southwest and west central Louisiana and southeast Texas. * WHEN...From 11 AM to 8 PM CDT Thursday.</summary>
-<cap:event>Heat Advisory</cap:event>
-<cap:effective>2023-06-14T20:15:00-05:00</cap:effective>
-<cap:expires>2023-06-15T20:00:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Allen; Avoyelles; Beauregard; East Cameron; Evangeline; Lafayette; Lower Iberia; Lower St. Martin; Lower St. Mary; Lower Vermilion; Northern Acadia; Northern Calcasieu; Northern Jefferson Davis; Rapides; Southern Acadia; Southern Calcasieu; Southern Jefferson Davis; St. Landry; Upper Iberia; Upper St. Martin; Upper St. Mary; Upper Vermilion; Vernon; West Cameron</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>022001 022003 022009 022011 022019 022023 022039 022045 022053 022055 022079 022097 022099 022101 022113 022115</value>
-<valueName>UGC</valueName>
-<value>LAZ027 LAZ028 LAZ029 LAZ030 LAZ031 LAZ032 LAZ033 LAZ044 LAZ045 LAZ055 LAZ073 LAZ074 LAZ141 LAZ142 LAZ143 LAZ152 LAZ153 LAZ154 LAZ241 LAZ242 LAZ243 LAZ252 LAZ253 LAZ254</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KLCH.HT.Y.0002.230615T1600Z-230616T0100Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -2463,81 +2656,81 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=MS12664EA04350.SevereThunderstormWarning.12664EA0492CMS.JANSVSJAN.d61d471e3c8023a7c794667b3ae8a59a</id>
-<updated>2023-06-15T04:00:00-05:00</updated>
-<published>2023-06-15T04:00:00-05:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=MS12664EA04B20.SevereThunderstormWarning.12664EA07BF4MS.JANSVSJAN.0af8a4429d02c5901037f3fabc378cab</id>
+<updated>2023-06-15T04:20:00-05:00</updated>
+<published>2023-06-15T04:20:00-05:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Severe Thunderstorm Warning issued June 15 at 4:00AM CDT until June 15 at 4:15AM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MS12664EA04350.SevereThunderstormWarning.12664EA0492CMS.JANSVSJAN.d61d471e3c8023a7c794667b3ae8a59a"/>
-<summary>...A SEVERE THUNDERSTORM WARNING REMAINS IN EFFECT UNTIL 415 AM CDT FOR SOUTHERN WASHINGTON...NORTHWESTERN HUMPHREYS AND NORTHEASTERN SHARKEY COUNTIES... At 400 AM CDT, a severe thunderstorm was located over Hollandale, moving east at 35 mph. HAZARD...Two inch hail and 60 mph wind gusts.</summary>
+<title>Severe Thunderstorm Warning issued June 15 at 4:20AM CDT until June 15 at 5:45AM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MS12664EA04B20.SevereThunderstormWarning.12664EA07BF4MS.JANSVSJAN.0af8a4429d02c5901037f3fabc378cab"/>
+<summary>...A SEVERE THUNDERSTORM WARNING REMAINS IN EFFECT UNTIL 545 AM CDT FOR SOUTHERN NOXUBEE...KEMPER...SOUTHERN WINSTON...NESHOBA AND NORTHERN LAUDERDALE COUNTIES... At 420 AM CDT, a severe thunderstorm was located near Pearl River, moving east at 45 mph. HAZARD...70 mph wind gusts and quarter size hail.</summary>
 <cap:event>Severe Thunderstorm Warning</cap:event>
-<cap:effective>2023-06-15T04:00:00-05:00</cap:effective>
-<cap:expires>2023-06-15T04:15:00-05:00</cap:expires>
+<cap:effective>2023-06-15T04:20:00-05:00</cap:effective>
+<cap:expires>2023-06-15T05:45:00-05:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
 <cap:category>Met</cap:category>
 <cap:urgency>Immediate</cap:urgency>
 <cap:severity>Severe</cap:severity>
 <cap:certainty>Observed</cap:certainty>
-<cap:areaDesc>Humphreys; Sharkey; Washington</cap:areaDesc>
-<cap:polygon>33.27,-90.67 33.26,-90.58 32.98,-90.69 33.09,-91.13 33.13,-91.11 33.13,-91.1 33.14,-91.09 33.17,-91.09 33.28,-91.03 33.27,-90.67</cap:polygon>
+<cap:areaDesc>Kemper; Lauderdale; Neshoba; Noxubee; Winston</cap:areaDesc>
+<cap:polygon>32.41,-88.41 32.54,-88.92 32.58,-88.92 32.57,-89.07 32.64,-89.32 33.06,-89.32 33,-88.34 32.41,-88.41</cap:polygon>
 <cap:geocode>
 <valueName>FIPS6</valueName>
-<value>028053 028125 028151</value>
+<value>028069 028075 028099 028103 028159</value>
 <valueName>UGC</valueName>
-<value>MSC053 MSC125 MSC151</value>
+<value>MSC069 MSC075 MSC099 MSC103 MSC159</value>
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
-<value>/O.CON.KJAN.SV.W.0351.000000T0000Z-230615T0915Z/</value>
+<value>/O.CON.KJAN.SV.W.0352.000000T0000Z-230615T1045Z/</value>
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=MS12664EA04350.SevereWeatherStatement.12664EA0492CMS.JANSVSJAN.9382be8f9ee3d8355c322eae3e6bda0e</id>
-<updated>2023-06-15T04:00:00-05:00</updated>
-<published>2023-06-15T04:00:00-05:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=MS12664EA04B20.SevereWeatherStatement.12664EA07BF4MS.JANSVSJAN.a16b48a950466c4e0e14efcbb67ae0d2</id>
+<updated>2023-06-15T04:20:00-05:00</updated>
+<published>2023-06-15T04:20:00-05:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Severe Weather Statement issued June 15 at 4:00AM CDT until June 15 at 4:15AM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MS12664EA04350.SevereWeatherStatement.12664EA0492CMS.JANSVSJAN.9382be8f9ee3d8355c322eae3e6bda0e"/>
-<summary>...A SEVERE THUNDERSTORM WARNING REMAINS IN EFFECT UNTIL 415 AM CDT FOR SOUTHERN WASHINGTON...NORTHWESTERN HUMPHREYS AND NORTHEASTERN SHARKEY COUNTIES... At 400 AM CDT, a severe thunderstorm was located over Hollandale, moving east at 35 mph. HAZARD...Two inch hail and 60 mph wind gusts.</summary>
+<title>Severe Weather Statement issued June 15 at 4:20AM CDT until June 15 at 5:45AM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MS12664EA04B20.SevereWeatherStatement.12664EA07BF4MS.JANSVSJAN.a16b48a950466c4e0e14efcbb67ae0d2"/>
+<summary>...A SEVERE THUNDERSTORM WARNING REMAINS IN EFFECT UNTIL 545 AM CDT FOR SOUTHERN NOXUBEE...KEMPER...SOUTHERN WINSTON...NESHOBA AND NORTHERN LAUDERDALE COUNTIES... At 420 AM CDT, a severe thunderstorm was located near Pearl River, moving east at 45 mph. HAZARD...70 mph wind gusts and quarter size hail.</summary>
 <cap:event>Severe Weather Statement</cap:event>
-<cap:effective>2023-06-15T04:00:00-05:00</cap:effective>
-<cap:expires>2023-06-15T04:15:00-05:00</cap:expires>
+<cap:effective>2023-06-15T04:20:00-05:00</cap:effective>
+<cap:expires>2023-06-15T05:45:00-05:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
 <cap:category>Met</cap:category>
 <cap:urgency>Immediate</cap:urgency>
 <cap:severity>Severe</cap:severity>
 <cap:certainty>Observed</cap:certainty>
-<cap:areaDesc>Humphreys; Sharkey; Washington</cap:areaDesc>
-<cap:polygon>33.27,-90.67 33.26,-90.58 32.98,-90.69 33.09,-91.13 33.13,-91.11 33.13,-91.1 33.14,-91.09 33.17,-91.09 33.28,-91.03 33.27,-90.67</cap:polygon>
+<cap:areaDesc>Kemper; Lauderdale; Neshoba; Noxubee; Winston</cap:areaDesc>
+<cap:polygon>32.41,-88.41 32.54,-88.92 32.58,-88.92 32.57,-89.07 32.64,-89.32 33.06,-89.32 33,-88.34 32.41,-88.41</cap:polygon>
 <cap:geocode>
 <valueName>FIPS6</valueName>
-<value>028053 028125 028151</value>
+<value>028069 028075 028099 028103 028159</value>
 <valueName>UGC</valueName>
-<value>MSC053 MSC125 MSC151</value>
+<value>MSC069 MSC075 MSC099 MSC103 MSC159</value>
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
-<value>/O.CON.KJAN.SV.W.0351.000000T0000Z-230615T0915Z/</value>
+<value>/O.CON.KJAN.SV.W.0352.000000T0000Z-230615T1045Z/</value>
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=MS12664EA03220.SevereThunderstormWarning.12664EA054E4MS.JANSVSJAN.6767aa4958a2135d27ec0d9c75dc5b9b</id>
-<updated>2023-06-15T03:56:00-05:00</updated>
-<published>2023-06-15T03:56:00-05:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=MS12664EA049F4.SevereThunderstormWarning.12664EA054E4MS.JANSVSJAN.72c32c4cf93d0f1034084b6e31908522</id>
+<updated>2023-06-15T04:17:00-05:00</updated>
+<published>2023-06-15T04:17:00-05:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Severe Thunderstorm Warning issued June 15 at 3:56AM CDT until June 15 at 4:45AM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MS12664EA03220.SevereThunderstormWarning.12664EA054E4MS.JANSVSJAN.6767aa4958a2135d27ec0d9c75dc5b9b"/>
-<summary>...A SEVERE THUNDERSTORM WARNING REMAINS IN EFFECT UNTIL 445 AM CDT FOR NORTHERN LEAKE...SOUTHERN ATTALA AND NORTHEASTERN MADISON COUNTIES... At 356 AM CDT, a severe thunderstorm was located over Singleton, or 9 miles south of Kosciusko, moving east at 45 mph. HAZARD...70 mph wind gusts and quarter size hail.</summary>
+<title>Severe Thunderstorm Warning issued June 15 at 4:17AM CDT until June 15 at 4:45AM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MS12664EA049F4.SevereThunderstormWarning.12664EA054E4MS.JANSVSJAN.72c32c4cf93d0f1034084b6e31908522"/>
+<summary>...A SEVERE THUNDERSTORM WARNING REMAINS IN EFFECT UNTIL 445 AM CDT FOR NORTHERN LEAKE AND SOUTHEASTERN ATTALA COUNTIES... At 417 AM CDT, a severe thunderstorm was located near Edinburg, or near Pearl River, moving east at 35 mph. HAZARD...70 mph wind gusts and quarter size hail. SOURCE...Radar indicated.</summary>
 <cap:event>Severe Thunderstorm Warning</cap:event>
-<cap:effective>2023-06-15T03:56:00-05:00</cap:effective>
+<cap:effective>2023-06-15T04:17:00-05:00</cap:effective>
 <cap:expires>2023-06-15T04:45:00-05:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
@@ -2545,13 +2738,13 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:urgency>Immediate</cap:urgency>
 <cap:severity>Severe</cap:severity>
 <cap:certainty>Observed</cap:certainty>
-<cap:areaDesc>Attala; Leake; Madison</cap:areaDesc>
-<cap:polygon>32.87,-89.97 32.89,-89.96 32.9,-89.94 32.93,-89.9 32.93,-89.78 33.01,-89.74 33.1,-89.69 33.15,-89.61 33.18,-89.32 32.69,-89.32 32.87,-89.97</cap:polygon>
+<cap:areaDesc>Attala; Leake</cap:areaDesc>
+<cap:polygon>32.88,-89.59 32.93,-89.52 32.99,-89.46 33.05,-89.32 32.69,-89.32 32.8,-89.72 32.88,-89.59</cap:polygon>
 <cap:geocode>
 <valueName>FIPS6</valueName>
-<value>028007 028079 028089</value>
+<value>028007 028079</value>
 <valueName>UGC</valueName>
-<value>MSC007 MSC079 MSC089</value>
+<value>MSC007 MSC079</value>
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
@@ -2559,14 +2752,111 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=MS12664EA03220.SevereWeatherStatement.12664EA054E4MS.JANSVSJAN.5947a78fdd3e214d0119115ff6f6120b</id>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=MS12664EA049F4.SevereWeatherStatement.12664EA054E4MS.JANSVSJAN.f6d0ec6bf8063c6778d3246603bd140f</id>
+<updated>2023-06-15T04:17:00-05:00</updated>
+<published>2023-06-15T04:17:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Severe Weather Statement issued June 15 at 4:17AM CDT until June 15 at 4:45AM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MS12664EA049F4.SevereWeatherStatement.12664EA054E4MS.JANSVSJAN.f6d0ec6bf8063c6778d3246603bd140f"/>
+<summary>...A SEVERE THUNDERSTORM WARNING REMAINS IN EFFECT UNTIL 445 AM CDT FOR NORTHERN LEAKE AND SOUTHEASTERN ATTALA COUNTIES... At 417 AM CDT, a severe thunderstorm was located near Edinburg, or near Pearl River, moving east at 35 mph. HAZARD...70 mph wind gusts and quarter size hail. SOURCE...Radar indicated.</summary>
+<cap:event>Severe Weather Statement</cap:event>
+<cap:effective>2023-06-15T04:17:00-05:00</cap:effective>
+<cap:expires>2023-06-15T04:45:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Immediate</cap:urgency>
+<cap:severity>Severe</cap:severity>
+<cap:certainty>Observed</cap:certainty>
+<cap:areaDesc>Attala; Leake</cap:areaDesc>
+<cap:polygon>32.88,-89.59 32.93,-89.52 32.99,-89.46 33.05,-89.32 32.69,-89.32 32.8,-89.72 32.88,-89.59</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>028007 028079</value>
+<valueName>UGC</valueName>
+<value>MSC007 MSC079</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KJAN.SV.W.0350.000000T0000Z-230615T0945Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=MS12664EA04864.SevereThunderstormWarning.12664EA07618MS.JANSVRJAN.036b91f9ca96fa83772a4ecda5c6f68f</id>
+<updated>2023-06-15T04:13:00-05:00</updated>
+<published>2023-06-15T04:13:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Severe Thunderstorm Warning issued June 15 at 4:13AM CDT until June 15 at 5:30AM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MS12664EA04864.SevereThunderstormWarning.12664EA07618MS.JANSVRJAN.036b91f9ca96fa83772a4ecda5c6f68f"/>
+<summary>The National Weather Service in Jackson has issued a * Severe Thunderstorm Warning for... Southeastern Washington County in northwestern Mississippi... Humphreys County in central Mississippi... Northeastern Sharkey County in west central Mississippi... * Until 530 AM CDT.</summary>
+<cap:event>Severe Thunderstorm Warning</cap:event>
+<cap:effective>2023-06-15T04:13:00-05:00</cap:effective>
+<cap:expires>2023-06-15T05:30:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Immediate</cap:urgency>
+<cap:severity>Severe</cap:severity>
+<cap:certainty>Observed</cap:certainty>
+<cap:areaDesc>Humphreys; Sharkey; Washington</cap:areaDesc>
+<cap:polygon>33.2,-90.33 33.14,-90.33 33.12,-90.36 33.1,-90.35 33.09,-90.35 33.13,-90.37 33.12,-90.38 33.1,-90.37 33.08,-90.37 33.11,-90.43 33.05,-90.43 33.05,-90.39 33.01,-90.37 33.01,-90.45 32.94,-90.45 33.08,-91.05 33.25,-90.99 33.2,-90.33</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>028053 028125 028151</value>
+<valueName>UGC</valueName>
+<value>MSC053 MSC125 MSC151</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.NEW.KJAN.SV.W.0353.230615T0913Z-230615T1030Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=MS12664EA04670.FloodWatch.12664EA07BF4MS.JANFFAJAN.5c3d1dd31574897eefd3ce99967dce09</id>
+<updated>2023-06-15T04:08:00-05:00</updated>
+<published>2023-06-15T04:08:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Flood Watch issued June 15 at 4:08AM CDT until June 15 at 5:45AM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MS12664EA04670.FloodWatch.12664EA07BF4MS.JANFFAJAN.5c3d1dd31574897eefd3ce99967dce09"/>
+<summary>...FLOOD WATCH REMAINS IN EFFECT UNTIL 11 AM CDT THIS MORNING... * WHAT...Flooding caused by excessive rainfall continues to be possible. * WHERE...Portions of central Mississippi, east central Mississippi, northwest Mississippi, southeast Mississippi, southwest Mississippi and west central Mississippi, including the following</summary>
+<cap:event>Flood Watch</cap:event>
+<cap:effective>2023-06-15T04:08:00-05:00</cap:effective>
+<cap:expires>2023-06-15T05:45:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Future</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Possible</cap:certainty>
+<cap:areaDesc>Attala; Claiborne; Clarke; Copiah; Covington; Hinds; Holmes; Humphreys; Issaquena; Jasper; Jones; Kemper; Lauderdale; Leake; Madison; Neshoba; Newton; Noxubee; Rankin; Scott; Sharkey; Simpson; Smith; Warren; Washington; Winston; Yazoo</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>028007 028021 028023 028029 028031 028049 028051 028053 028055 028061 028067 028069 028075 028079 028089 028099 028101 028103 028121 028123 028125 028127 028129 028149 028151 028159 028163</value>
+<valueName>UGC</valueName>
+<value>MSZ034 MSZ035 MSZ036 MSZ037 MSZ038 MSZ039 MSZ040 MSZ041 MSZ042 MSZ043 MSZ044 MSZ045 MSZ046 MSZ047 MSZ048 MSZ049 MSZ050 MSZ051 MSZ052 MSZ053 MSZ054 MSZ055 MSZ056 MSZ057 MSZ058 MSZ065 MSZ066</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KJAN.FA.A.0004.000000T0000Z-230615T1600Z/
+/00000.0.ER.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=MS12664EA03220.SevereWeatherStatement.12664EA054E4MS.JANSVSJAN.baeef5e7f42a91a92e0aec4e07c8e232</id>
 <updated>2023-06-15T03:56:00-05:00</updated>
 <published>2023-06-15T03:56:00-05:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
 <title>Severe Weather Statement issued June 15 at 3:56AM CDT until June 15 at 4:45AM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MS12664EA03220.SevereWeatherStatement.12664EA054E4MS.JANSVSJAN.5947a78fdd3e214d0119115ff6f6120b"/>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MS12664EA03220.SevereWeatherStatement.12664EA054E4MS.JANSVSJAN.baeef5e7f42a91a92e0aec4e07c8e232"/>
 <summary>...A SEVERE THUNDERSTORM WARNING REMAINS IN EFFECT UNTIL 445 AM CDT FOR NORTHERN LEAKE...SOUTHERN ATTALA AND NORTHEASTERN MADISON COUNTIES... At 356 AM CDT, a severe thunderstorm was located over Singleton, or 9 miles south of Kosciusko, moving east at 45 mph. HAZARD...70 mph wind gusts and quarter size hail.</summary>
 <cap:event>Severe Weather Statement</cap:event>
 <cap:effective>2023-06-15T03:56:00-05:00</cap:effective>
@@ -2577,13 +2867,13 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:urgency>Immediate</cap:urgency>
 <cap:severity>Severe</cap:severity>
 <cap:certainty>Observed</cap:certainty>
-<cap:areaDesc>Attala; Leake; Madison</cap:areaDesc>
+<cap:areaDesc>Madison</cap:areaDesc>
 <cap:polygon>32.87,-89.97 32.89,-89.96 32.9,-89.94 32.93,-89.9 32.93,-89.78 33.01,-89.74 33.1,-89.69 33.15,-89.61 33.18,-89.32 32.69,-89.32 32.87,-89.97</cap:polygon>
 <cap:geocode>
 <valueName>FIPS6</valueName>
-<value>028007 028079 028089</value>
+<value>028089</value>
 <valueName>UGC</valueName>
-<value>MSC007 MSC079 MSC089</value>
+<value>MSC089</value>
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
@@ -2623,50 +2913,18 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=MS12664EA02668.SpecialWeatherStatement.12664EA04F08MS.JANSPSJAN.371cd74973ffe5609e72f6c8ad1ddc8f</id>
-<updated>2023-06-15T03:26:00-05:00</updated>
-<published>2023-06-15T03:26:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Special Weather Statement issued June 15 at 3:26AM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MS12664EA02668.SpecialWeatherStatement.12664EA04F08MS.JANSPSJAN.371cd74973ffe5609e72f6c8ad1ddc8f"/>
-<summary>...A strong thunderstorm will impact portions of Choctaw, Oktibbeha, central Webster, Clay and Lowndes Counties through 430 AM CDT... At 325 AM CDT, Doppler radar was tracking a cluster of strong thunderstorms near Longview, or 11 miles west of Starkville, moving east at 40 mph. HAZARD...Winds in excess of 40 mph and nickel size hail.</summary>
-<cap:event>Special Weather Statement</cap:event>
-<cap:effective>2023-06-15T03:26:00-05:00</cap:effective>
-<cap:expires>2023-06-15T04:30:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Observed</cap:certainty>
-<cap:areaDesc>Choctaw; Clay; Lowndes; Oktibbeha; Webster</cap:areaDesc>
-<cap:polygon>33.29,-88.31 33.29,-89.42 33.43,-89.42 33.46,-89.38 33.46,-89.42 33.65,-89.42 33.72,-88.72 33.68,-88.72 33.68,-88.49 33.65,-88.51 33.66,-88.5 33.67,-88.42 33.69,-88.39 33.69,-88.37 33.72,-88.33 33.74,-88.33 33.74,-88.25 33.29,-88.31</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>028019 028025 028087 028105 028155</value>
-<valueName>UGC</valueName>
-<value>MSZ029 MSZ030 MSZ031 MSZ032 MSZ033</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value></value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=MS12664EA01E34.FloodWatch.12664EA04F08MS.MOBFFAMOB.f8804dffba940a0d50e37dba3c49c66c</id>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=MS12664EA01E34.FloodWatch.12664EA07BF4MS.MOBFFAMOB.f8804dffba940a0d50e37dba3c49c66c</id>
 <updated>2023-06-15T03:05:00-05:00</updated>
 <published>2023-06-15T03:05:00-05:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Flood Watch issued June 15 at 3:05AM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MS12664EA01E34.FloodWatch.12664EA04F08MS.MOBFFAMOB.f8804dffba940a0d50e37dba3c49c66c"/>
+<title>Flood Watch issued June 15 at 3:05AM CDT until June 15 at 5:45AM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MS12664EA01E34.FloodWatch.12664EA07BF4MS.MOBFFAMOB.f8804dffba940a0d50e37dba3c49c66c"/>
 <summary>...FLOOD WATCH REMAINS IN EFFECT THROUGH THIS EVENING... * WHAT...Flooding caused by excessive rainfall remains possible. * WHERE...Portions of Alabama, northwest Florida and southeast Mississippi, including the following areas, in Alabama, Baldwin Inland, Butler, Choctaw, Clarke, Conecuh, Covington, Crenshaw, Escambia, Monroe, Washington and Wilcox. In northwest Florida,</summary>
 <cap:event>Flood Watch</cap:event>
 <cap:effective>2023-06-15T03:05:00-05:00</cap:effective>
-<cap:expires>2023-06-15T04:30:00-05:00</cap:expires>
+<cap:expires>2023-06-15T05:45:00-05:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
 <cap:category>Met</cap:category>
@@ -2684,39 +2942,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value>/O.CON.KMOB.FA.A.0003.000000T0000Z-230616T0300Z/
-/00000.0.ER.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=MS12664E9F4568.FloodWatch.12664EA04F08MS.JANFFAJAN.5c3d1dd31574897eefd3ce99967dce09</id>
-<updated>2023-06-14T21:50:00-05:00</updated>
-<published>2023-06-14T21:50:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Flood Watch issued June 14 at 9:50PM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MS12664E9F4568.FloodWatch.12664EA04F08MS.JANFFAJAN.5c3d1dd31574897eefd3ce99967dce09"/>
-<summary>...FLOOD WATCH NOW IN EFFECT THROUGH THURSDAY MORNING... * WHAT...Flooding caused by excessive rainfall continues to be possible. * WHERE...Portions of central Mississippi, east central Mississippi, northwest Mississippi, southeast Mississippi, southwest Mississippi and west central Mississippi, including the following</summary>
-<cap:event>Flood Watch</cap:event>
-<cap:effective>2023-06-14T21:50:00-05:00</cap:effective>
-<cap:expires>2023-06-15T04:30:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Future</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Possible</cap:certainty>
-<cap:areaDesc>Attala; Claiborne; Clarke; Copiah; Covington; Hinds; Holmes; Humphreys; Issaquena; Jasper; Jones; Kemper; Lauderdale; Leake; Madison; Neshoba; Newton; Noxubee; Rankin; Scott; Sharkey; Simpson; Smith; Warren; Washington; Winston; Yazoo</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>028007 028021 028023 028029 028031 028049 028051 028053 028055 028061 028067 028069 028075 028079 028089 028099 028101 028103 028121 028123 028125 028127 028129 028149 028151 028159 028163</value>
-<valueName>UGC</valueName>
-<value>MSZ034 MSZ035 MSZ036 MSZ037 MSZ038 MSZ039 MSZ040 MSZ041 MSZ042 MSZ043 MSZ044 MSZ045 MSZ046 MSZ047 MSZ048 MSZ049 MSZ050 MSZ051 MSZ052 MSZ053 MSZ054 MSZ055 MSZ056 MSZ057 MSZ058 MSZ065 MSZ066</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.EXT.KJAN.FA.A.0004.000000T0000Z-230615T1600Z/
 /00000.0.ER.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
 </cap:parameter>
 </entry>
@@ -2980,17 +3205,17 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=NV12664E92BC08.FrostAdvisory.12664EA12DB0NV.LKNNPWLKN.fafbae58c8868291691fe27851717291</id>
-<updated>2023-06-14T13:34:00-07:00</updated>
-<published>2023-06-14T13:34:00-07:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=NV12664EA04544.FrostAdvisory.12664EA12DB0NV.LKNNPWLKN.fafbae58c8868291691fe27851717291</id>
+<updated>2023-06-15T02:05:00-07:00</updated>
+<published>2023-06-15T02:05:00-07:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Frost Advisory issued June 14 at 1:34PM PDT until June 15 at 8:00AM PDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=NV12664E92BC08.FrostAdvisory.12664EA12DB0NV.LKNNPWLKN.fafbae58c8868291691fe27851717291"/>
-<summary>...FROST ADVISORY REMAINS IN EFFECT FROM 10 PM THIS EVENING TO 8 AM PDT THURSDAY... * WHAT...Temperatures as low as 34 will result in frost formation. * WHERE...Northern Elko County. * WHEN...From 10 PM this evening to 8 AM PDT Thursday.</summary>
+<title>Frost Advisory issued June 15 at 2:05AM PDT until June 15 at 8:00AM PDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=NV12664EA04544.FrostAdvisory.12664EA12DB0NV.LKNNPWLKN.fafbae58c8868291691fe27851717291"/>
+<summary>...FROST ADVISORY REMAINS IN EFFECT UNTIL 8 AM PDT THIS MORNING... ...FROST ADVISORY IN EFFECT FROM 11 PM THIS EVENING TO 8 AM PDT FRIDAY... * WHAT...For the first Frost Advisory, temperatures as low as 36 will result in frost formation. For the second Frost Advisory, temperatures as low as 34 will result in frost formation.</summary>
 <cap:event>Frost Advisory</cap:event>
-<cap:effective>2023-06-14T13:34:00-07:00</cap:effective>
+<cap:effective>2023-06-15T02:05:00-07:00</cap:effective>
 <cap:expires>2023-06-15T08:00:00-07:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
@@ -3008,7 +3233,73 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
-<value>/O.CON.KLKN.FR.Y.0001.230615T0500Z-230615T1500Z/</value>
+<value>/O.NEW.KLKN.FR.Y.0002.230616T0600Z-230616T1500Z/
+/O.CON.KLKN.FR.Y.0001.000000T0000Z-230615T1500Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=NV12664EA04544.FrostAdvisory.12664EB06FF0NV.LKNNPWLKN.3e3a7c1ef3b8845226eb4b9db2066f8c</id>
+<updated>2023-06-15T02:05:00-07:00</updated>
+<published>2023-06-15T02:05:00-07:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Frost Advisory issued June 15 at 2:05AM PDT until June 16 at 8:00AM PDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=NV12664EA04544.FrostAdvisory.12664EB06FF0NV.LKNNPWLKN.3e3a7c1ef3b8845226eb4b9db2066f8c"/>
+<summary>...FROST ADVISORY REMAINS IN EFFECT UNTIL 8 AM PDT THIS MORNING... ...FROST ADVISORY IN EFFECT FROM 11 PM THIS EVENING TO 8 AM PDT FRIDAY... * WHAT...For the first Frost Advisory, temperatures as low as 36 will result in frost formation. For the second Frost Advisory, temperatures as low as 34 will result in frost formation.</summary>
+<cap:event>Frost Advisory</cap:event>
+<cap:effective>2023-06-15T02:05:00-07:00</cap:effective>
+<cap:expires>2023-06-16T08:00:00-07:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Northern Elko County</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>032007</value>
+<valueName>UGC</valueName>
+<value>NVZ031</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.NEW.KLKN.FR.Y.0002.230616T0600Z-230616T1500Z/
+/O.CON.KLKN.FR.Y.0001.000000T0000Z-230615T1500Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=NV12664EA04544.FrostAdvisory.12664EB06FF0NV.LKNNPWLKN.41eafc41cb32395f8e5ee0c981c405d8</id>
+<updated>2023-06-15T02:05:00-07:00</updated>
+<published>2023-06-15T02:05:00-07:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Frost Advisory issued June 15 at 2:05AM PDT until June 16 at 8:00AM PDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=NV12664EA04544.FrostAdvisory.12664EB06FF0NV.LKNNPWLKN.41eafc41cb32395f8e5ee0c981c405d8"/>
+<summary>...FROST ADVISORY IN EFFECT FROM 11 PM THIS EVENING TO 8 AM PDT FRIDAY... * WHAT...Temperatures as low as 36 will result in frost formation. * WHERE...Ruby Mountains and East Humboldt Range, White Pine County, Southern Lander County and Southern Eureka County and</summary>
+<cap:event>Frost Advisory</cap:event>
+<cap:effective>2023-06-15T02:05:00-07:00</cap:effective>
+<cap:expires>2023-06-16T08:00:00-07:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Ruby Mountains and East Humboldt Range; South Central Elko County; Southern Lander County and Southern Eureka County; White Pine County</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>032007 032011 032015 032033</value>
+<valueName>UGC</valueName>
+<value>NVZ034 NVZ035 NVZ037 NVZ039</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.NEW.KLKN.FR.Y.0002.230616T0600Z-230616T1500Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -3568,6 +3859,38 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <valueName>VTEC</valueName>
 <value>/O.CON.KABR.FL.W.0036.000000T0000Z-000000T0000Z/
 /ATNS2.3.RS.230418T1000Z.230422T0401Z.000000T0000Z.NO/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=TX12664EA04670.HeatAdvisory.12664EAE4D10TX.LCHNPWLCH.162e72dc58bf3d5cfac851fde5c8d5de</id>
+<updated>2023-06-15T04:08:00-05:00</updated>
+<published>2023-06-15T04:08:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Heat Advisory issued June 15 at 4:08AM CDT until June 15 at 8:00PM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=TX12664EA04670.HeatAdvisory.12664EAE4D10TX.LCHNPWLCH.162e72dc58bf3d5cfac851fde5c8d5de"/>
+<summary>...HEAT ADVISORY REMAINS IN EFFECT FROM 11 AM THIS MORNING TO 8 PM CDT THIS EVENING... * WHAT...Heat index values up to 115 expected. * WHERE...Portions of central, south central, southwest and west central Louisiana and southeast Texas. * WHEN...From 11 AM this morning to 8 PM CDT this evening.</summary>
+<cap:event>Heat Advisory</cap:event>
+<cap:effective>2023-06-15T04:08:00-05:00</cap:effective>
+<cap:expires>2023-06-15T20:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Hardin; Lower Jefferson; Northern Jasper; Northern Newton; Northern Orange; Southern Jasper; Southern Newton; Southern Orange; Tyler; Upper Jefferson</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>048199 048241 048245 048351 048361 048457</value>
+<valueName>UGC</valueName>
+<value>TXZ180 TXZ201 TXZ259 TXZ260 TXZ261 TXZ262 TXZ515 TXZ516 TXZ615 TXZ616</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KLCH.HT.Y.0002.230615T1600Z-230616T0100Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -4352,38 +4675,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value>/O.CON.KSJT.HT.Y.0002.230615T1800Z-230616T0000Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=TX12664E9F10AC.HeatAdvisory.12664EAE4D10TX.LCHNPWLCH.162e72dc58bf3d5cfac851fde5c8d5de</id>
-<updated>2023-06-14T20:15:00-05:00</updated>
-<published>2023-06-14T20:15:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Heat Advisory issued June 14 at 8:15PM CDT until June 15 at 8:00PM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=TX12664E9F10AC.HeatAdvisory.12664EAE4D10TX.LCHNPWLCH.162e72dc58bf3d5cfac851fde5c8d5de"/>
-<summary>...HEAT ADVISORY REMAINS IN EFFECT FROM 11 AM TO 8 PM CDT THURSDAY... * WHAT...Heat index values 109 to 113 expected. * WHERE...Portions of central, south central, southwest and west central Louisiana and southeast Texas. * WHEN...From 11 AM to 8 PM CDT Thursday.</summary>
-<cap:event>Heat Advisory</cap:event>
-<cap:effective>2023-06-14T20:15:00-05:00</cap:effective>
-<cap:expires>2023-06-15T20:00:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Hardin; Lower Jefferson; Northern Jasper; Northern Newton; Northern Orange; Southern Jasper; Southern Newton; Southern Orange; Tyler; Upper Jefferson</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>048199 048241 048245 048351 048361 048457</value>
-<valueName>UGC</valueName>
-<value>TXZ180 TXZ201 TXZ259 TXZ260 TXZ261 TXZ262 TXZ515 TXZ516 TXZ615 TXZ616</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KLCH.HT.Y.0002.230615T1600Z-230616T0100Z/</value>
 </cap:parameter>
 </entry>
 <entry>
