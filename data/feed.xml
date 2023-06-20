@@ -16,16 +16,48 @@ xmlns = 'http://www.w3.org/2005/Atom'
 xmlns:cap = 'urn:oasis:names:tc:emergency:cap:1.1'
 xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 >
-<!-- http-date = Tue, 20 Jun 2023 03:02:00 GMT -->
+<!-- http-date = Tue, 20 Jun 2023 03:29:00 GMT -->
 <id>https://alerts.weather.gov/cap/us.php?x=0</id>
 <logo>http://alerts.weather.gov/images/xml_logo.gif</logo>
 <generator>NWS CAP Server</generator>
-<updated>2023-06-19T22:02:00-05:00</updated>
+<updated>2023-06-19T22:29:00-05:00</updated>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
 <title>Current Watches, Warnings and Advisories for the United States Issued by the National Weather Service</title>
 <link href="https://alerts.weather.gov/cap/us.php?x=0"/>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=AL12664EEBAD2C.RipCurrentStatement.12664EFA7140AL.MOBCFWMOB.f20200d873540a58d3b88a589e4c4dfb</id>
+<updated>2023-06-19T22:23:00-05:00</updated>
+<published>2023-06-19T22:23:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Rip Current Statement issued June 19 at 10:23PM CDT until June 20 at 7:00PM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=AL12664EEBAD2C.RipCurrentStatement.12664EFA7140AL.MOBCFWMOB.f20200d873540a58d3b88a589e4c4dfb"/>
+<summary>...HIGH RIP CURRENT RISK REMAINS IN EFFECT THROUGH TUESDAY EVENING... * WHAT...Dangerous rip currents. * WHERE...In Alabama, Mobile Coastal and Baldwin Coastal Counties. In Florida, Escambia Coastal, Santa Rosa Coastal and Okaloosa Coastal Counties.</summary>
+<cap:event>Rip Current Statement</cap:event>
+<cap:effective>2023-06-19T22:23:00-05:00</cap:effective>
+<cap:expires>2023-06-20T19:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Baldwin Coastal; Mobile Coastal</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>001003 001097</value>
+<valueName>UGC</valueName>
+<value>ALZ265 ALZ266</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KMOB.RP.S.0023.000000T0000Z-230621T0000Z/</value>
+</cap:parameter>
+</entry>
 <entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=AL12664EEB447C.FloodWarning.12664F0BD660AL.BMXFLSBMX.9223d1065f1410a52b52793f9ff458c8</id>
 <updated>2023-06-19T19:55:00-05:00</updated>
@@ -57,38 +89,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <valueName>VTEC</valueName>
 <value>/O.EXT.KBMX.FL.W.0022.000000T0000Z-230622T1400Z/
 /LVNA1.1.ER.230618T1400Z.230619T1400Z.230622T0200Z.NO/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=AL12664EDF0298.RipCurrentStatement.12664EFA7140AL.MOBCFWMOB.f20200d873540a58d3b88a589e4c4dfb</id>
-<updated>2023-06-19T15:22:00-05:00</updated>
-<published>2023-06-19T15:22:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Rip Current Statement issued June 19 at 3:22PM CDT until June 20 at 7:00PM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=AL12664EDF0298.RipCurrentStatement.12664EFA7140AL.MOBCFWMOB.f20200d873540a58d3b88a589e4c4dfb"/>
-<summary>...HIGH RIP CURRENT RISK REMAINS IN EFFECT THROUGH TUESDAY EVENING... * WHAT...Dangerous rip currents. * WHERE...In Alabama, Mobile Coastal and Baldwin Coastal Counties. In Florida, Escambia Coastal, Santa Rosa Coastal and Okaloosa Coastal Counties.</summary>
-<cap:event>Rip Current Statement</cap:event>
-<cap:effective>2023-06-19T15:22:00-05:00</cap:effective>
-<cap:expires>2023-06-20T19:00:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Baldwin Coastal; Mobile Coastal</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>001003 001097</value>
-<valueName>UGC</valueName>
-<value>ALZ265 ALZ266</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KMOB.RP.S.0023.000000T0000Z-230621T0000Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -903,6 +903,70 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=FL12664EEBAD90.SpecialWeatherStatement.12664EEBD11CFL.MLBSPSMLB.d3e17b48cd18fad59eeb41d3e99674a3</id>
+<updated>2023-06-19T23:24:00-04:00</updated>
+<published>2023-06-19T23:24:00-04:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Special Weather Statement issued June 19 at 11:24PM EDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=FL12664EEBAD90.SpecialWeatherStatement.12664EEBD11CFL.MLBSPSMLB.d3e17b48cd18fad59eeb41d3e99674a3"/>
+<summary>...Strong thunderstorms will impact portions of St. Lucie, southern Okeechobee, southeastern Indian River and central Martin Counties through 1215 AM EDT... At 1123 PM EDT, Doppler radar was tracking strong thunderstorms along a line extending from near South Beach to near Tradition to 7 miles west of Okeechobee. Movement was southeast at 15 mph.</summary>
+<cap:event>Special Weather Statement</cap:event>
+<cap:effective>2023-06-19T23:24:00-04:00</cap:effective>
+<cap:expires>2023-06-20T00:15:00-04:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Observed</cap:certainty>
+<cap:areaDesc>Coastal Indian River; Coastal Martin; Coastal St. Lucie; Inland Martin; Inland St. Lucie; Okeechobee</cap:areaDesc>
+<cap:polygon>27.03,-80.64 27.11,-80.66 27.16,-80.71 27.21,-80.79 27.2,-80.83 27.14,-80.87 27.17,-80.88 27.17,-80.9 27.19,-80.91 27.23,-80.99 27.3,-81 27.3,-81.03 27.33,-81.05 27.36,-81.03 27.38,-81.1 27.41,-81.08 27.43,-80.68 27.65,-80.33 27.34,-80.19 27.14,-80.15 27.03,-80.64</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>012061 012085 012093 012111</value>
+<valueName>UGC</valueName>
+<value>FLZ058 FLZ154 FLZ159 FLZ164 FLZ259 FLZ264</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value></value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=FL12664EEBAD2C.RipCurrentStatement.12664EFA7140FL.MOBCFWMOB.16ae0a0058a75f40734f096e2d80afc6</id>
+<updated>2023-06-19T23:23:00-04:00</updated>
+<published>2023-06-19T23:23:00-04:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Rip Current Statement issued June 19 at 11:23PM EDT until June 20 at 8:00PM EDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=FL12664EEBAD2C.RipCurrentStatement.12664EFA7140FL.MOBCFWMOB.16ae0a0058a75f40734f096e2d80afc6"/>
+<summary>...HIGH RIP CURRENT RISK REMAINS IN EFFECT THROUGH TUESDAY EVENING... * WHAT...Dangerous rip currents. * WHERE...In Alabama, Mobile Coastal and Baldwin Coastal Counties. In Florida, Escambia Coastal, Santa Rosa Coastal and Okaloosa Coastal Counties.</summary>
+<cap:event>Rip Current Statement</cap:event>
+<cap:effective>2023-06-19T23:23:00-04:00</cap:effective>
+<cap:expires>2023-06-20T20:00:00-04:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Escambia Coastal; Okaloosa Coastal; Santa Rosa Coastal</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>012033 012091 012113</value>
+<valueName>UGC</valueName>
+<value>FLZ202 FLZ204 FLZ206</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KMOB.RP.S.0023.000000T0000Z-230621T0000Z/</value>
+</cap:parameter>
+</entry>
+<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=FL12664EEB942C.FloodAdvisory.12664EFC4600FL.MLBFLSMLB.2fe4d7f896581d1fb16a6d5f6ab054f1</id>
 <updated>2023-06-19T22:59:00-04:00</updated>
 <published>2023-06-19T22:59:00-04:00</published>
@@ -936,70 +1000,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=FL12664EEB9300.SpecialWeatherStatement.12664EEBAFE8FL.MLBSPSMLB.8ac0be67cd4e6896a21bc3dd7fde6878</id>
-<updated>2023-06-19T22:56:00-04:00</updated>
-<published>2023-06-19T22:56:00-04:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Special Weather Statement issued June 19 at 10:56PM EDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=FL12664EEB9300.SpecialWeatherStatement.12664EEBAFE8FL.MLBSPSMLB.8ac0be67cd4e6896a21bc3dd7fde6878"/>
-<summary>...A strong thunderstorm will impact portions of northeastern St. Lucie and eastern Indian River Counties through 1130 PM EDT... At 1056 PM EDT, Doppler radar was tracking a strong thunderstorm over Gifford, moving southeast at 25 mph. HAZARD...Wind gusts of 50 to 55 mph. SOURCE...Radar indicated.</summary>
-<cap:event>Special Weather Statement</cap:event>
-<cap:effective>2023-06-19T22:56:00-04:00</cap:effective>
-<cap:expires>2023-06-19T23:30:00-04:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Observed</cap:certainty>
-<cap:areaDesc>Coastal Indian River; Coastal St. Lucie; Inland Indian River; Inland St. Lucie</cap:areaDesc>
-<cap:polygon>27.34,-80.54 27.47,-80.54 27.81,-80.67 27.82,-80.4 27.39,-80.21 27.34,-80.54</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>012061 012111</value>
-<valueName>UGC</valueName>
-<value>FLZ154 FLZ159 FLZ254 FLZ259</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value></value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=FL12664EEB8F7C.SpecialWeatherStatement.12664EEBAFE8FL.MLBSPSMLB.5263ff84918ced2040839e32cbf458b0</id>
-<updated>2023-06-19T22:47:00-04:00</updated>
-<published>2023-06-19T22:47:00-04:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Special Weather Statement issued June 19 at 10:47PM EDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=FL12664EEB8F7C.SpecialWeatherStatement.12664EEBAFE8FL.MLBSPSMLB.5263ff84918ced2040839e32cbf458b0"/>
-<summary>...Strong thunderstorms will impact portions of western St. Lucie, Okeechobee and western Indian River Counties through 1130 PM EDT... At 1047 PM EDT, Doppler radar was tracking strong thunderstorms along a line extending from near Pointe West to 9 miles southeast of Fort Drum to 7 miles south of Basinger. Movement was south at 25 mph. HAZARD...Wind gusts up to 50 mph.</summary>
-<cap:event>Special Weather Statement</cap:event>
-<cap:effective>2023-06-19T22:47:00-04:00</cap:effective>
-<cap:expires>2023-06-19T23:30:00-04:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Observed</cap:certainty>
-<cap:areaDesc>Okeechobee</cap:areaDesc>
-<cap:polygon>27.17,-80.88 27.17,-80.9 27.19,-80.91 27.23,-80.99 27.3,-81 27.3,-81.02 27.33,-81.05 27.36,-81.03 27.38,-81.07 27.39,-81.12 27.45,-81.15 27.58,-80.79 27.81,-80.66 27.48,-80.43 27.2,-80.65 27.2,-80.68 27.17,-80.68 27.15,-80.7 27.21,-80.81 27.14,-80.87 27.17,-80.88</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>012093</value>
-<valueName>UGC</valueName>
-<value>FLZ058</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value></value>
-</cap:parameter>
-</entry>
-<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=FL12664EEB5E44.FloodWarning.12664EFC4600FL.TAEFLSTAE.b29e4bfd3fb98cced1665be967bc24b5</id>
 <updated>2023-06-19T21:21:00-04:00</updated>
 <published>2023-06-19T21:21:00-04:00</published>
@@ -1030,38 +1030,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <valueName>VTEC</valueName>
 <value>/O.CON.KTAE.FL.W.0013.230620T0600Z-230621T1200Z/
 /CONF1.1.ER.230620T0600Z.230620T1200Z.230621T0000Z.NO/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=FL12664EDF0298.RipCurrentStatement.12664EFA7140FL.MOBCFWMOB.16ae0a0058a75f40734f096e2d80afc6</id>
-<updated>2023-06-19T16:22:00-04:00</updated>
-<published>2023-06-19T16:22:00-04:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Rip Current Statement issued June 19 at 4:22PM EDT until June 20 at 8:00PM EDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=FL12664EDF0298.RipCurrentStatement.12664EFA7140FL.MOBCFWMOB.16ae0a0058a75f40734f096e2d80afc6"/>
-<summary>...HIGH RIP CURRENT RISK REMAINS IN EFFECT THROUGH TUESDAY EVENING... * WHAT...Dangerous rip currents. * WHERE...In Alabama, Mobile Coastal and Baldwin Coastal Counties. In Florida, Escambia Coastal, Santa Rosa Coastal and Okaloosa Coastal Counties.</summary>
-<cap:event>Rip Current Statement</cap:event>
-<cap:effective>2023-06-19T16:22:00-04:00</cap:effective>
-<cap:expires>2023-06-20T20:00:00-04:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Escambia Coastal; Okaloosa Coastal; Santa Rosa Coastal</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>012033 012091 012113</value>
-<valueName>UGC</valueName>
-<value>FLZ202 FLZ204 FLZ206</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KMOB.RP.S.0023.000000T0000Z-230621T0000Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -1487,6 +1455,232 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=LA12664EEBAF84.SevereThunderstormWarning.12664EEBCB40LA.LIXSVSLIX.112c8bc00c56798395c6dac029670000</id>
+<updated>2023-06-19T22:29:00-05:00</updated>
+<published>2023-06-19T22:29:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Severe Thunderstorm Warning issued June 19 at 10:29PM CDT until June 19 at 11:00PM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=LA12664EEBAF84.SevereThunderstormWarning.12664EEBCB40LA.LIXSVSLIX.112c8bc00c56798395c6dac029670000"/>
+<summary>...A SEVERE THUNDERSTORM WARNING REMAINS IN EFFECT UNTIL 1100 PM CDT FOR WEST CENTRAL ST. TAMMANY AND CENTRAL TANGIPAHOA PARISHES... At 1029 PM CDT, severe thunderstorms were located along a line extending from near Roseland to near Robert, moving northwest at 25 mph. HAZARD...60 mph wind gusts and quarter size hail.</summary>
+<cap:event>Severe Thunderstorm Warning</cap:event>
+<cap:effective>2023-06-19T22:29:00-05:00</cap:effective>
+<cap:expires>2023-06-19T23:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Immediate</cap:urgency>
+<cap:severity>Severe</cap:severity>
+<cap:certainty>Observed</cap:certainty>
+<cap:areaDesc>St. Tammany; Tangipahoa</cap:areaDesc>
+<cap:polygon>30.66,-90.25 30.49,-89.97 30.35,-90.27 30.53,-90.38 30.57,-90.46 30.76,-90.56 30.66,-90.25</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>022103 022105</value>
+<valueName>UGC</valueName>
+<value>LAC103 LAC105</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KLIX.SV.W.0157.000000T0000Z-230620T0400Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=LA12664EEBAF84.SevereWeatherStatement.12664EEC1960LA.LIXSVSLIX.2b3add86ccca6b5ff1290dc4347dc0af</id>
+<updated>2023-06-19T22:29:00-05:00</updated>
+<published>2023-06-19T22:29:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Severe Weather Statement issued June 19 at 10:29PM CDT until June 20 at 1:00AM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=LA12664EEBAF84.SevereWeatherStatement.12664EEC1960LA.LIXSVSLIX.2b3add86ccca6b5ff1290dc4347dc0af"/>
+<summary>...A SEVERE THUNDERSTORM WARNING REMAINS IN EFFECT UNTIL 1100 PM CDT FOR WEST CENTRAL ST. TAMMANY AND CENTRAL TANGIPAHOA PARISHES... At 1029 PM CDT, severe thunderstorms were located along a line extending from near Roseland to near Robert, moving northwest at 25 mph. HAZARD...60 mph wind gusts and quarter size hail.</summary>
+<cap:event>Severe Weather Statement</cap:event>
+<cap:effective>2023-06-19T22:29:00-05:00</cap:effective>
+<cap:expires>2023-06-20T01:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Immediate</cap:urgency>
+<cap:severity>Severe</cap:severity>
+<cap:certainty>Observed</cap:certainty>
+<cap:areaDesc>St. Tammany; Tangipahoa</cap:areaDesc>
+<cap:polygon>30.66,-90.25 30.49,-89.97 30.35,-90.27 30.53,-90.38 30.57,-90.46 30.76,-90.56 30.66,-90.25</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>022103 022105</value>
+<valueName>UGC</valueName>
+<value>LAC103 LAC105</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KLIX.SV.W.0157.000000T0000Z-230620T0400Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=LA12664EEBAF20.FlashFloodWarning.12664EEC1960LA.LIXFFSLIX.4559bfb8dd6e457554a9b8593fb21630</id>
+<updated>2023-06-19T22:28:00-05:00</updated>
+<published>2023-06-19T22:28:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Flash Flood Warning issued June 19 at 10:28PM CDT until June 20 at 1:00AM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=LA12664EEBAF20.FlashFloodWarning.12664EEC1960LA.LIXFFSLIX.4559bfb8dd6e457554a9b8593fb21630"/>
+<summary>...FLASH FLOOD WARNING REMAINS IN EFFECT UNTIL 1 AM CDT TUESDAY FOR WEST CENTRAL ST. TAMMANY AND EAST CENTRAL TANGIPAHOA PARISHES... At 1028 PM CDT, Doppler radar indicated thunderstorms producing heavy rain across the warned area. Between 1 and 2 inches of rain have fallen. The expected rainfall rate is 1 to 3 inches in 1 hour. Additional rainfall amounts of 1 to 2 inches are possible in the</summary>
+<cap:event>Flash Flood Warning</cap:event>
+<cap:effective>2023-06-19T22:28:00-05:00</cap:effective>
+<cap:expires>2023-06-20T01:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Immediate</cap:urgency>
+<cap:severity>Severe</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>St. Tammany; Tangipahoa</cap:areaDesc>
+<cap:polygon>30.36,-90.25 30.59,-90.26 30.54,-89.97 30.3,-89.99 30.32,-90.01 30.32,-90.04 30.35,-90.05 30.37,-90.09 30.37,-90.12 30.39,-90.19 30.38,-90.21 30.36,-90.25</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>022103 022105</value>
+<valueName>UGC</valueName>
+<value>LAC103 LAC105</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KLIX.FF.W.0027.000000T0000Z-230620T0600Z/
+/00000.0.ER.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=LA12664EEBAEBC.SevereThunderstormWarning.12664EEBB5C4LA.LIXSVSLIX.7d01ca8f69c3741fcd1dfaece2a4cd8a</id>
+<updated>2023-06-19T22:27:00-05:00</updated>
+<published>2023-06-19T22:27:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Severe Thunderstorm Warning issued June 19 at 10:27PM CDT until June 19 at 10:45PM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=LA12664EEBAEBC.SevereThunderstormWarning.12664EEBB5C4LA.LIXSVSLIX.7d01ca8f69c3741fcd1dfaece2a4cd8a"/>
+<summary>...A SEVERE THUNDERSTORM WARNING REMAINS IN EFFECT UNTIL 1045 PM CDT FOR NORTHEASTERN ORLEANS PARISH... At 1027 PM CDT, a severe thunderstorm was located near East New Orleans, moving south at 20 mph. HAZARD...60 mph wind gusts. SOURCE...Radar indicated.</summary>
+<cap:event>Severe Thunderstorm Warning</cap:event>
+<cap:effective>2023-06-19T22:27:00-05:00</cap:effective>
+<cap:expires>2023-06-19T22:45:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Immediate</cap:urgency>
+<cap:severity>Severe</cap:severity>
+<cap:certainty>Observed</cap:certainty>
+<cap:areaDesc>Orleans</cap:areaDesc>
+<cap:polygon>30.16,-89.62 30.15,-89.62 30.09,-89.65 30.05,-89.69 30,-89.7 30.02,-89.81 29.99,-89.83 30.04,-90.02 30.07,-90.01 30.18,-89.87 30.13,-89.82 30.19,-89.76 30.17,-89.72 30.18,-89.68 30.16,-89.66 30.16,-89.62</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>022071</value>
+<valueName>UGC</valueName>
+<value>LAC071</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KLIX.SV.W.0155.000000T0000Z-230620T0345Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=LA12664EEBAEBC.SevereWeatherStatement.12664EEC1960LA.LIXSVSLIX.2217a383895d427ce7dd650d2cb4316b</id>
+<updated>2023-06-19T22:27:00-05:00</updated>
+<published>2023-06-19T22:27:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Severe Weather Statement issued June 19 at 10:27PM CDT until June 20 at 1:00AM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=LA12664EEBAEBC.SevereWeatherStatement.12664EEC1960LA.LIXSVSLIX.2217a383895d427ce7dd650d2cb4316b"/>
+<summary>...A SEVERE THUNDERSTORM WARNING REMAINS IN EFFECT UNTIL 1045 PM CDT FOR NORTHEASTERN ORLEANS PARISH... At 1027 PM CDT, a severe thunderstorm was located near East New Orleans, moving south at 20 mph. HAZARD...60 mph wind gusts. SOURCE...Radar indicated.</summary>
+<cap:event>Severe Weather Statement</cap:event>
+<cap:effective>2023-06-19T22:27:00-05:00</cap:effective>
+<cap:expires>2023-06-20T01:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Immediate</cap:urgency>
+<cap:severity>Severe</cap:severity>
+<cap:certainty>Observed</cap:certainty>
+<cap:areaDesc>Orleans</cap:areaDesc>
+<cap:polygon>30.16,-89.62 30.15,-89.62 30.09,-89.65 30.05,-89.69 30,-89.7 30.02,-89.81 29.99,-89.83 30.04,-90.02 30.07,-90.01 30.18,-89.87 30.13,-89.82 30.19,-89.76 30.17,-89.72 30.18,-89.68 30.16,-89.66 30.16,-89.62</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>022071</value>
+<valueName>UGC</valueName>
+<value>LAC071</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KLIX.SV.W.0155.000000T0000Z-230620T0345Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=LA12664EEBAA0C.FlashFloodWarning.12664EEC1F3CLA.LIXFFSLIX.6df9839330f035dda08131dbcbe3412f</id>
+<updated>2023-06-19T22:15:00-05:00</updated>
+<published>2023-06-19T22:15:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Flash Flood Warning issued June 19 at 10:15PM CDT until June 20 at 1:15AM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=LA12664EEBAA0C.FlashFloodWarning.12664EEC1F3CLA.LIXFFSLIX.6df9839330f035dda08131dbcbe3412f"/>
+<summary>...FLASH FLOOD WARNING REMAINS IN EFFECT UNTIL 115 AM CDT TUESDAY FOR SOUTHEASTERN ST. TAMMANY PARISH AND SOUTHWESTERN HANCOCK AND SOUTHWESTERN PEARL RIVER COUNTIES... At 1015 PM CDT, Doppler radar indicated thunderstorms producing heavy rain across the warned area. Between 1 and 3 inches of rain have fallen. The expected rainfall rate is 1 to 3.5 inches in 1</summary>
+<cap:event>Flash Flood Warning</cap:event>
+<cap:effective>2023-06-19T22:15:00-05:00</cap:effective>
+<cap:expires>2023-06-20T01:15:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Immediate</cap:urgency>
+<cap:severity>Severe</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>St. Tammany</cap:areaDesc>
+<cap:polygon>30.31,-90 30.55,-89.98 30.57,-89.64 30.18,-89.49 30.19,-89.53 30.18,-89.53 30.18,-89.56 30.15,-89.59 30.16,-89.62 30.16,-89.6 30.18,-89.58 30.18,-89.61 30.16,-89.63 30.18,-89.69 30.17,-89.72 30.18,-89.75 30.21,-89.8 30.23,-89.85 30.25,-89.87 30.26,-89.98 30.31,-90</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>022103</value>
+<valueName>UGC</valueName>
+<value>LAC103</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KLIX.FF.W.0026.000000T0000Z-230620T0615Z/
+/00000.0.ER.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=LA12664EEBA9A8.SevereThunderstormWarning.12664EEBCB40LA.LIXSVRLIX.81bda00a7959493af97847735f84513d</id>
+<updated>2023-06-19T22:14:00-05:00</updated>
+<published>2023-06-19T22:14:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Severe Thunderstorm Warning issued June 19 at 10:14PM CDT until June 19 at 11:00PM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=LA12664EEBA9A8.SevereThunderstormWarning.12664EEBCB40LA.LIXSVRLIX.81bda00a7959493af97847735f84513d"/>
+<summary>The National Weather Service in New Orleans has issued a * Severe Thunderstorm Warning for... Central St. Bernard Parish in southeastern Louisiana... Northwestern Plaquemines Parish in southeastern Louisiana... * Until 1100 PM CDT. * At 1014 PM CDT, a severe thunderstorm was located over Shell Beach,</summary>
+<cap:event>Severe Thunderstorm Warning</cap:event>
+<cap:effective>2023-06-19T22:14:00-05:00</cap:effective>
+<cap:expires>2023-06-19T23:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Immediate</cap:urgency>
+<cap:severity>Severe</cap:severity>
+<cap:certainty>Observed</cap:certainty>
+<cap:areaDesc>Plaquemines; St. Bernard</cap:areaDesc>
+<cap:polygon>29.62,-89.58 29.63,-89.6 29.62,-89.61 29.63,-90 29.76,-90.07 29.75,-89.73 29.93,-89.71 29.92,-89.71 29.89,-89.64 29.9,-89.62 29.94,-89.61 29.94,-89.53 29.62,-89.45 29.62,-89.58</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>022075 022087</value>
+<valueName>UGC</valueName>
+<value>LAC075 LAC087</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.NEW.KLIX.SV.W.0158.230620T0314Z-230620T0400Z/</value>
+</cap:parameter>
+</entry>
+<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=LA12664EEBA4F8.SevereThunderstormWarning.12664EEBB5C4LA.LIXSVRLIX.172882d2d3a5f113262153f70e9bb657</id>
 <updated>2023-06-19T22:02:00-05:00</updated>
 <published>2023-06-19T22:02:00-05:00</published>
@@ -1516,103 +1710,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value>/O.NEW.KLIX.SV.W.0156.230620T0302Z-230620T0345Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=LA12664EEB9364.SevereThunderstormWarning.12664EEBB5C4LA.LIXSVSLIX.bffcc5ea72fc9160d87caa46fa0fe7f9</id>
-<updated>2023-06-19T21:57:00-05:00</updated>
-<published>2023-06-19T21:57:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Severe Thunderstorm Warning issued June 19 at 9:57PM CDT until June 19 at 10:45PM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=LA12664EEB9364.SevereThunderstormWarning.12664EEBB5C4LA.LIXSVSLIX.bffcc5ea72fc9160d87caa46fa0fe7f9"/>
-<summary>...A SEVERE THUNDERSTORM WARNING REMAINS IN EFFECT UNTIL 1045 PM CDT FOR NORTHEASTERN ORLEANS AND SOUTHEASTERN ST. TAMMANY PARISHES... At 956 PM CDT, a severe thunderstorm was located near New Orleans, moving south at 35 mph. HAZARD...70 mph wind gusts. SOURCE...Radar indicated.</summary>
-<cap:event>Severe Thunderstorm Warning</cap:event>
-<cap:effective>2023-06-19T21:57:00-05:00</cap:effective>
-<cap:expires>2023-06-19T22:45:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Immediate</cap:urgency>
-<cap:severity>Severe</cap:severity>
-<cap:certainty>Observed</cap:certainty>
-<cap:areaDesc>Orleans; St. Tammany</cap:areaDesc>
-<cap:polygon>30.36,-89.66 30.25,-89.63 30.14,-89.56 30.13,-89.6 30.05,-89.69 30,-89.7 30.02,-89.81 29.99,-89.83 30.04,-90.02 30.07,-90.01 30.18,-89.87 30.13,-89.82 30.17,-89.78 30.23,-89.88 30.24,-89.98 30.47,-89.96 30.36,-89.66</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>022071 022103</value>
-<valueName>UGC</valueName>
-<value>LAC071 LAC103</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KLIX.SV.W.0155.000000T0000Z-230620T0345Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=LA12664EEB9364.SevereWeatherStatement.12664EEC1960LA.LIXSVSLIX.f299eec76ed0c6f7e1b1465eeff020df</id>
-<updated>2023-06-19T21:57:00-05:00</updated>
-<published>2023-06-19T21:57:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Severe Weather Statement issued June 19 at 9:57PM CDT until June 20 at 1:00AM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=LA12664EEB9364.SevereWeatherStatement.12664EEC1960LA.LIXSVSLIX.f299eec76ed0c6f7e1b1465eeff020df"/>
-<summary>...A SEVERE THUNDERSTORM WARNING REMAINS IN EFFECT UNTIL 1045 PM CDT FOR NORTHEASTERN ORLEANS AND SOUTHEASTERN ST. TAMMANY PARISHES... At 956 PM CDT, a severe thunderstorm was located near New Orleans, moving south at 35 mph. HAZARD...70 mph wind gusts. SOURCE...Radar indicated.</summary>
-<cap:event>Severe Weather Statement</cap:event>
-<cap:effective>2023-06-19T21:57:00-05:00</cap:effective>
-<cap:expires>2023-06-20T01:00:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Immediate</cap:urgency>
-<cap:severity>Severe</cap:severity>
-<cap:certainty>Observed</cap:certainty>
-<cap:areaDesc>Orleans; St. Tammany</cap:areaDesc>
-<cap:polygon>30.36,-89.66 30.25,-89.63 30.14,-89.56 30.13,-89.6 30.05,-89.69 30,-89.7 30.02,-89.81 29.99,-89.83 30.04,-90.02 30.07,-90.01 30.18,-89.87 30.13,-89.82 30.17,-89.78 30.23,-89.88 30.24,-89.98 30.47,-89.96 30.36,-89.66</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>022071 022103</value>
-<valueName>UGC</valueName>
-<value>LAC071 LAC103</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KLIX.SV.W.0155.000000T0000Z-230620T0345Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=LA12664EEB929C.FlashFloodWarning.12664EEC1960LA.LIXFFWLIX.4559bfb8dd6e457554a9b8593fb21630</id>
-<updated>2023-06-19T21:55:00-05:00</updated>
-<published>2023-06-19T21:55:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Flash Flood Warning issued June 19 at 9:55PM CDT until June 20 at 1:00AM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=LA12664EEB929C.FlashFloodWarning.12664EEC1960LA.LIXFFWLIX.4559bfb8dd6e457554a9b8593fb21630"/>
-<summary>The National Weather Service in New Orleans has issued a * Flash Flood Warning for... West Central St. Tammany Parish in southeastern Louisiana... East Central Tangipahoa Parish in southeastern Louisiana... * Until 100 AM CDT. * At 955 PM CDT, Doppler radar indicated thunderstorms producing</summary>
-<cap:event>Flash Flood Warning</cap:event>
-<cap:effective>2023-06-19T21:55:00-05:00</cap:effective>
-<cap:expires>2023-06-20T01:00:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Immediate</cap:urgency>
-<cap:severity>Severe</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>St. Tammany; Tangipahoa</cap:areaDesc>
-<cap:polygon>30.36,-90.25 30.59,-90.26 30.54,-89.97 30.3,-89.99 30.32,-90.01 30.32,-90.04 30.35,-90.05 30.37,-90.09 30.37,-90.12 30.39,-90.19 30.38,-90.21 30.36,-90.25</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>022103 022105</value>
-<valueName>UGC</valueName>
-<value>LAC103 LAC105</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.NEW.KLIX.FF.W.0027.230620T0255Z-230620T0600Z/
-/00000.0.ER.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -1648,71 +1745,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=LA12664EEB87AC.SevereThunderstormWarning.12664EEBAA0CLA.LIXSVRLIX.be59989b32dd8df933ca1c72d35e8ead</id>
-<updated>2023-06-19T21:27:00-05:00</updated>
-<published>2023-06-19T21:27:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Severe Thunderstorm Warning issued June 19 at 9:27PM CDT until June 19 at 10:15PM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=LA12664EEB87AC.SevereThunderstormWarning.12664EEBAA0CLA.LIXSVRLIX.be59989b32dd8df933ca1c72d35e8ead"/>
-<summary>The National Weather Service in New Orleans has issued a * Severe Thunderstorm Warning for... West central Orleans Parish in southeastern Louisiana... Northwestern Jefferson Parish in southeastern Louisiana... * Until 1015 PM CDT. * At 926 PM CDT, a severe thunderstorm was located near Arabi, or 7</summary>
-<cap:event>Severe Thunderstorm Warning</cap:event>
-<cap:effective>2023-06-19T21:27:00-05:00</cap:effective>
-<cap:expires>2023-06-19T22:15:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Immediate</cap:urgency>
-<cap:severity>Severe</cap:severity>
-<cap:certainty>Observed</cap:certainty>
-<cap:areaDesc>Jefferson; Orleans</cap:areaDesc>
-<cap:polygon>30.05,-90.28 30.05,-90.29 30.08,-90.27 30.05,-90.14 30.05,-90.1 30.07,-90.02 29.99,-90.02 29.98,-90.28 30.05,-90.28</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>022051 022071</value>
-<valueName>UGC</valueName>
-<value>LAC051 LAC071</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.NEW.KLIX.SV.W.0153.230620T0227Z-230620T0315Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=LA12664EEB8108.FlashFloodWarning.12664EEC1F3CLA.LIXFFWLIX.6df9839330f035dda08131dbcbe3412f</id>
-<updated>2023-06-19T21:10:00-05:00</updated>
-<published>2023-06-19T21:10:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Flash Flood Warning issued June 19 at 9:10PM CDT until June 20 at 1:15AM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=LA12664EEB8108.FlashFloodWarning.12664EEC1F3CLA.LIXFFWLIX.6df9839330f035dda08131dbcbe3412f"/>
-<summary>The National Weather Service in New Orleans has issued a * Flash Flood Warning for... Southeastern St. Tammany Parish in southeastern Louisiana... Southwestern Hancock County in southern Mississippi... Southwestern Pearl River County in southern Mississippi... * Until 115 AM CDT.</summary>
-<cap:event>Flash Flood Warning</cap:event>
-<cap:effective>2023-06-19T21:10:00-05:00</cap:effective>
-<cap:expires>2023-06-20T01:15:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Immediate</cap:urgency>
-<cap:severity>Severe</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>St. Tammany</cap:areaDesc>
-<cap:polygon>30.31,-90 30.55,-89.98 30.57,-89.64 30.18,-89.49 30.19,-89.53 30.18,-89.53 30.18,-89.56 30.15,-89.59 30.16,-89.62 30.16,-89.6 30.18,-89.58 30.18,-89.61 30.16,-89.63 30.18,-89.69 30.17,-89.72 30.18,-89.75 30.21,-89.8 30.23,-89.85 30.25,-89.87 30.26,-89.98 30.31,-90</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>022103</value>
-<valueName>UGC</valueName>
-<value>LAC103</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.NEW.KLIX.FF.W.0026.230620T0210Z-230620T0615Z/
-/00000.0.ER.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
-</cap:parameter>
-</entry>
-<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=LA12664EEB609C.FloodWarning.12664EEE20E8LA.LIXFLSLIX.1e6a95876b854a38ac1b0c116079b719</id>
 <updated>2023-06-19T20:27:00-05:00</updated>
 <published>2023-06-19T20:27:00-05:00</published>
@@ -1743,39 +1775,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <valueName>VTEC</valueName>
 <value>/O.EXT.KLIX.FL.W.0070.230622T1500Z-000000T0000Z/
 /BXAL1.1.ER.230622T1500Z.230629T0000Z.000000T0000Z.NO/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=LA12664EEB5F70.FloodAdvisory.12664EEC1960LA.LIXFLSLIX.23524aa2bc2f5d593967ce9d074df8c6</id>
-<updated>2023-06-19T20:24:00-05:00</updated>
-<published>2023-06-19T20:24:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Flood Advisory issued June 19 at 8:24PM CDT until June 20 at 1:00AM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=LA12664EEB5F70.FloodAdvisory.12664EEC1960LA.LIXFLSLIX.23524aa2bc2f5d593967ce9d074df8c6"/>
-<summary>...FLOOD ADVISORY IN EFFECT UNTIL 1030 PM CDT THIS EVENING... * WHAT...Flooding caused by excessive rainfall is expected. * WHERE...Portions of southeast Louisiana and southern Mississippi, including the following counties and parishes, in southeast Louisiana, Orleans and St. Tammany. In southern Mississippi, Hancock, Harrison and Pearl River.</summary>
-<cap:event>Flood Advisory</cap:event>
-<cap:effective>2023-06-19T20:24:00-05:00</cap:effective>
-<cap:expires>2023-06-20T01:00:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Orleans; St. Tammany</cap:areaDesc>
-<cap:polygon>30.17,-89.73 30.22,-89.81 30.54,-89.86 30.63,-89.66 30.61,-89.3 30.37,-89.06 30.3,-89.29 30.36,-89.28 30.37,-89.35 30.34,-89.38 30.3,-89.33 30.25,-89.42 30.18,-89.46 30.19,-89.46 30.15,-89.59 30.16,-89.62 30.18,-89.58 30.17,-89.73</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>022071 022103</value>
-<valueName>UGC</valueName>
-<value>LAC071 LAC103</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.NEW.KLIX.FA.Y.0053.230620T0124Z-230620T0330Z/
-/00000.N.ER.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -2391,17 +2390,17 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=MS12664EEB8108.FlashFloodWarning.12664EEC1F3CMS.LIXFFWLIX.142ed85ca3be2cc96cd12281ad4bb5be</id>
-<updated>2023-06-19T21:10:00-05:00</updated>
-<published>2023-06-19T21:10:00-05:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=MS12664EEBAA0C.FlashFloodWarning.12664EEC1F3CMS.LIXFFSLIX.142ed85ca3be2cc96cd12281ad4bb5be</id>
+<updated>2023-06-19T22:15:00-05:00</updated>
+<published>2023-06-19T22:15:00-05:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Flash Flood Warning issued June 19 at 9:10PM CDT until June 20 at 1:15AM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MS12664EEB8108.FlashFloodWarning.12664EEC1F3CMS.LIXFFWLIX.142ed85ca3be2cc96cd12281ad4bb5be"/>
-<summary>The National Weather Service in New Orleans has issued a * Flash Flood Warning for... Southeastern St. Tammany Parish in southeastern Louisiana... Southwestern Hancock County in southern Mississippi... Southwestern Pearl River County in southern Mississippi... * Until 115 AM CDT.</summary>
+<title>Flash Flood Warning issued June 19 at 10:15PM CDT until June 20 at 1:15AM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MS12664EEBAA0C.FlashFloodWarning.12664EEC1F3CMS.LIXFFSLIX.142ed85ca3be2cc96cd12281ad4bb5be"/>
+<summary>...FLASH FLOOD WARNING REMAINS IN EFFECT UNTIL 115 AM CDT TUESDAY FOR SOUTHEASTERN ST. TAMMANY PARISH AND SOUTHWESTERN HANCOCK AND SOUTHWESTERN PEARL RIVER COUNTIES... At 1015 PM CDT, Doppler radar indicated thunderstorms producing heavy rain across the warned area. Between 1 and 3 inches of rain have fallen. The expected rainfall rate is 1 to 3.5 inches in 1</summary>
 <cap:event>Flash Flood Warning</cap:event>
-<cap:effective>2023-06-19T21:10:00-05:00</cap:effective>
+<cap:effective>2023-06-19T22:15:00-05:00</cap:effective>
 <cap:expires>2023-06-20T01:15:00-05:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
@@ -2419,7 +2418,7 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
-<value>/O.NEW.KLIX.FF.W.0026.230620T0210Z-230620T0615Z/
+<value>/O.CON.KLIX.FF.W.0026.000000T0000Z-230620T0615Z/
 /00000.0.ER.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
 </cap:parameter>
 </entry>
@@ -2820,72 +2819,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=MS12664EEB5F70.FloodAdvisory.12664EEC1960MS.LIXFLSLIX.3db931a6301473b8a1e498632c005c8a</id>
-<updated>2023-06-19T20:24:00-05:00</updated>
-<published>2023-06-19T20:24:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Flood Advisory issued June 19 at 8:24PM CDT until June 20 at 1:00AM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MS12664EEB5F70.FloodAdvisory.12664EEC1960MS.LIXFLSLIX.3db931a6301473b8a1e498632c005c8a"/>
-<summary>...FLOOD ADVISORY IN EFFECT UNTIL 1030 PM CDT THIS EVENING... * WHAT...Flooding caused by excessive rainfall is expected. * WHERE...Portions of southeast Louisiana and southern Mississippi, including the following counties and parishes, in southeast Louisiana, Orleans and St. Tammany. In southern Mississippi, Hancock, Harrison and Pearl River.</summary>
-<cap:event>Flood Advisory</cap:event>
-<cap:effective>2023-06-19T20:24:00-05:00</cap:effective>
-<cap:expires>2023-06-20T01:00:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Harrison</cap:areaDesc>
-<cap:polygon>30.17,-89.73 30.22,-89.81 30.54,-89.86 30.63,-89.66 30.61,-89.3 30.37,-89.06 30.3,-89.29 30.36,-89.28 30.37,-89.35 30.34,-89.38 30.3,-89.33 30.25,-89.42 30.18,-89.46 30.19,-89.46 30.15,-89.59 30.16,-89.62 30.18,-89.58 30.17,-89.73</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>028047</value>
-<valueName>UGC</valueName>
-<value>MSC047</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.NEW.KLIX.FA.Y.0053.230620T0124Z-230620T0330Z/
-/00000.N.ER.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=MS12664EEB5F70.FloodAdvisory.12664EEC1F3CMS.LIXFLSLIX.402657ce179f543fd759fee00657e63f</id>
-<updated>2023-06-19T20:24:00-05:00</updated>
-<published>2023-06-19T20:24:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Flood Advisory issued June 19 at 8:24PM CDT until June 20 at 1:15AM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MS12664EEB5F70.FloodAdvisory.12664EEC1F3CMS.LIXFLSLIX.402657ce179f543fd759fee00657e63f"/>
-<summary>...FLOOD ADVISORY IN EFFECT UNTIL 1030 PM CDT THIS EVENING... * WHAT...Flooding caused by excessive rainfall is expected. * WHERE...Portions of southeast Louisiana and southern Mississippi, including the following counties and parishes, in southeast Louisiana, Orleans and St. Tammany. In southern Mississippi, Hancock, Harrison and Pearl River.</summary>
-<cap:event>Flood Advisory</cap:event>
-<cap:effective>2023-06-19T20:24:00-05:00</cap:effective>
-<cap:expires>2023-06-20T01:15:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Hancock; Pearl River</cap:areaDesc>
-<cap:polygon>30.17,-89.73 30.22,-89.81 30.54,-89.86 30.63,-89.66 30.61,-89.3 30.37,-89.06 30.3,-89.29 30.36,-89.28 30.37,-89.35 30.34,-89.38 30.3,-89.33 30.25,-89.42 30.18,-89.46 30.19,-89.46 30.15,-89.59 30.16,-89.62 30.18,-89.58 30.17,-89.73</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>028045 028109</value>
-<valueName>UGC</valueName>
-<value>MSC045 MSC109</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.NEW.KLIX.FA.Y.0053.230620T0124Z-230620T0330Z/
-/00000.N.ER.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
-</cap:parameter>
-</entry>
-<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=MS12664EEB4288.FloodWarning.12664EED2AD0MS.JANFLSJAN.91c0e850c9b465c6da919e94190c8bdb</id>
 <updated>2023-06-19T19:50:00-05:00</updated>
 <published>2023-06-19T19:50:00-05:00</published>
@@ -3047,134 +2980,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <valueName>VTEC</valueName>
 <value>/O.NEW.KLIX.FA.A.0006.230619T2306Z-230621T0000Z/
 /00000.0.ER.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=MT12664EEBA4F8.SevereThunderstormWarning.12664EEBAFE8MT.GGWSVSGGW.92c91781fa7d650f9ba4de4da69d0a6c</id>
-<updated>2023-06-19T21:02:00-06:00</updated>
-<published>2023-06-19T21:02:00-06:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Severe Thunderstorm Warning issued June 19 at 9:02PM MDT until June 19 at 9:30PM MDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MT12664EEBA4F8.SevereThunderstormWarning.12664EEBAFE8MT.GGWSVSGGW.92c91781fa7d650f9ba4de4da69d0a6c"/>
-<summary>...A SEVERE THUNDERSTORM WARNING REMAINS IN EFFECT UNTIL 930 PM MDT FOR SOUTHEASTERN WIBAUX COUNTY... At 901 PM MDT, a severe thunderstorm was located near Golva, or 8 miles south of Beach, moving northeast at 55 mph. HAZARD...60 mph wind gusts and nickel size hail. SOURCE...Radar indicated.</summary>
-<cap:event>Severe Thunderstorm Warning</cap:event>
-<cap:effective>2023-06-19T21:02:00-06:00</cap:effective>
-<cap:expires>2023-06-19T21:30:00-06:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Immediate</cap:urgency>
-<cap:severity>Severe</cap:severity>
-<cap:certainty>Observed</cap:certainty>
-<cap:areaDesc>Wibaux</cap:areaDesc>
-<cap:polygon>46.64,-104.18 46.82,-104.25 46.99,-104.05 46.64,-104.05 46.64,-104.18</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>030109</value>
-<valueName>UGC</valueName>
-<value>MTC109</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KGGW.SV.W.0034.000000T0000Z-230620T0330Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=MT12664EEBA4F8.SevereWeatherStatement.12664EEC4070MT.GGWSVSGGW.6f324f522061b597bf06cfb749447df3</id>
-<updated>2023-06-19T21:02:00-06:00</updated>
-<published>2023-06-19T21:02:00-06:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Severe Weather Statement issued June 19 at 9:02PM MDT until June 20 at 1:00AM MDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MT12664EEBA4F8.SevereWeatherStatement.12664EEC4070MT.GGWSVSGGW.6f324f522061b597bf06cfb749447df3"/>
-<summary>...A SEVERE THUNDERSTORM WARNING REMAINS IN EFFECT UNTIL 930 PM MDT FOR SOUTHEASTERN WIBAUX COUNTY... At 901 PM MDT, a severe thunderstorm was located near Golva, or 8 miles south of Beach, moving northeast at 55 mph. HAZARD...60 mph wind gusts and nickel size hail. SOURCE...Radar indicated.</summary>
-<cap:event>Severe Weather Statement</cap:event>
-<cap:effective>2023-06-19T21:02:00-06:00</cap:effective>
-<cap:expires>2023-06-20T01:00:00-06:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Immediate</cap:urgency>
-<cap:severity>Severe</cap:severity>
-<cap:certainty>Observed</cap:certainty>
-<cap:areaDesc>Wibaux</cap:areaDesc>
-<cap:polygon>46.64,-104.18 46.82,-104.25 46.99,-104.05 46.64,-104.05 46.64,-104.18</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>030109</value>
-<valueName>UGC</valueName>
-<value>MTC109</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KGGW.SV.W.0034.000000T0000Z-230620T0330Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=MT12664EEB942C.SevereThunderstormWarning.12664EEBAA0CMT.BYZSVSBYZ.0f45b7b507b7dbff8011cc0fe58428e3</id>
-<updated>2023-06-19T20:59:00-06:00</updated>
-<published>2023-06-19T20:59:00-06:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Severe Thunderstorm Warning issued June 19 at 8:59PM MDT until June 19 at 9:15PM MDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MT12664EEB942C.SevereThunderstormWarning.12664EEBAA0CMT.BYZSVSBYZ.0f45b7b507b7dbff8011cc0fe58428e3"/>
-<summary>...A SEVERE THUNDERSTORM WARNING REMAINS IN EFFECT UNTIL 915 PM MDT FOR NORTHEASTERN FALLON COUNTY... At 859 PM MDT, a severe thunderstorm was located over Carlyle, or 15 miles south of Beach, moving northeast at 40 mph. HAZARD...70 mph wind gusts and ping pong ball size hail. SOURCE...Radar indicated.</summary>
-<cap:event>Severe Thunderstorm Warning</cap:event>
-<cap:effective>2023-06-19T20:59:00-06:00</cap:effective>
-<cap:expires>2023-06-19T21:15:00-06:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Immediate</cap:urgency>
-<cap:severity>Severe</cap:severity>
-<cap:certainty>Observed</cap:certainty>
-<cap:areaDesc>Fallon</cap:areaDesc>
-<cap:polygon>46.56,-104.13 46.64,-104.19 46.64,-104.05 46.53,-104.04 46.56,-104.13</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>030025</value>
-<valueName>UGC</valueName>
-<value>MTC025</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KBYZ.SV.W.0028.000000T0000Z-230620T0315Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=MT12664EEB942C.SevereWeatherStatement.12664EEC4070MT.BYZSVSBYZ.9930e913ff59f94fdfdc2db3552e6a12</id>
-<updated>2023-06-19T20:59:00-06:00</updated>
-<published>2023-06-19T20:59:00-06:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Severe Weather Statement issued June 19 at 8:59PM MDT until June 20 at 1:00AM MDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MT12664EEB942C.SevereWeatherStatement.12664EEC4070MT.BYZSVSBYZ.9930e913ff59f94fdfdc2db3552e6a12"/>
-<summary>...A SEVERE THUNDERSTORM WARNING REMAINS IN EFFECT UNTIL 915 PM MDT FOR NORTHEASTERN FALLON COUNTY... At 859 PM MDT, a severe thunderstorm was located over Carlyle, or 15 miles south of Beach, moving northeast at 40 mph. HAZARD...70 mph wind gusts and ping pong ball size hail. SOURCE...Radar indicated.</summary>
-<cap:event>Severe Weather Statement</cap:event>
-<cap:effective>2023-06-19T20:59:00-06:00</cap:effective>
-<cap:expires>2023-06-20T01:00:00-06:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Immediate</cap:urgency>
-<cap:severity>Severe</cap:severity>
-<cap:certainty>Observed</cap:certainty>
-<cap:areaDesc>Fallon</cap:areaDesc>
-<cap:polygon>46.56,-104.13 46.64,-104.19 46.64,-104.05 46.53,-104.04 46.56,-104.13</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>030025</value>
-<valueName>UGC</valueName>
-<value>MTC025</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KBYZ.SV.W.0028.000000T0000Z-230620T0315Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -3472,17 +3277,17 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=ND12664EEB8F7C.SevereThunderstormWarning.12664EEBB5C4ND.BISSVRBIS.6be017f87b6f2bd59afe57591d1303c1</id>
-<updated>2023-06-19T21:47:00-05:00</updated>
-<published>2023-06-19T21:47:00-05:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=ND12664EEBAD2C.SevereThunderstormWarning.12664EEBB5C4ND.BISSVSBIS.6be017f87b6f2bd59afe57591d1303c1</id>
+<updated>2023-06-19T22:23:00-05:00</updated>
+<published>2023-06-19T22:23:00-05:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Severe Thunderstorm Warning issued June 19 at 9:47PM CDT until June 19 at 10:45PM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=ND12664EEB8F7C.SevereThunderstormWarning.12664EEBB5C4ND.BISSVRBIS.6be017f87b6f2bd59afe57591d1303c1"/>
-<summary>The National Weather Service in Bismarck has issued a * Severe Thunderstorm Warning for... Golden Valley County in southwestern North Dakota... Western Billings County in southwestern North Dakota... * Until 945 PM MDT. * At 846 PM MDT, a severe thunderstorm was located 5 miles north of</summary>
+<title>Severe Thunderstorm Warning issued June 19 at 10:23PM CDT until June 19 at 10:45PM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=ND12664EEBAD2C.SevereThunderstormWarning.12664EEBB5C4ND.BISSVSBIS.6be017f87b6f2bd59afe57591d1303c1"/>
+<summary>...A SEVERE THUNDERSTORM WARNING REMAINS IN EFFECT UNTIL 945 PM MDT FOR NORTHERN GOLDEN VALLEY AND WESTERN BILLINGS COUNTIES... At 923 PM MDT, a severe thunderstorm was located 5 miles west of Medora, or 17 miles east of Beach, moving northeast at 50 mph. HAZARD...60 mph wind gusts and quarter size hail. SOURCE...Radar indicated.</summary>
 <cap:event>Severe Thunderstorm Warning</cap:event>
-<cap:effective>2023-06-19T21:47:00-05:00</cap:effective>
+<cap:effective>2023-06-19T22:23:00-05:00</cap:effective>
 <cap:expires>2023-06-19T22:45:00-05:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
@@ -3491,7 +3296,7 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:severity>Severe</cap:severity>
 <cap:certainty>Observed</cap:certainty>
 <cap:areaDesc>Billings; Golden Valley</cap:areaDesc>
-<cap:polygon>47,-104.04 47.28,-103.59 47.18,-103.37 46.73,-103.36 46.63,-103.75 46.63,-103.8 46.61,-103.8 46.55,-104.04 47,-104.04</cap:polygon>
+<cap:polygon>46.94,-103.97 47.28,-103.59 47.18,-103.37 46.79,-103.37 46.72,-103.85 46.94,-103.97</cap:polygon>
 <cap:geocode>
 <valueName>FIPS6</valueName>
 <value>038007 038033</value>
@@ -3500,7 +3305,71 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
-<value>/O.NEW.KBIS.SV.W.0023.230620T0247Z-230620T0345Z/</value>
+<value>/O.CON.KBIS.SV.W.0023.000000T0000Z-230620T0345Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=ND12664EEBAD2C.SevereWeatherStatement.12664EEBB5C4ND.BISSVSBIS.13d5f9e5ff2f8c1468551feaf512362e</id>
+<updated>2023-06-19T22:23:00-05:00</updated>
+<published>2023-06-19T22:23:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Severe Weather Statement issued June 19 at 10:23PM CDT until June 19 at 10:45PM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=ND12664EEBAD2C.SevereWeatherStatement.12664EEBB5C4ND.BISSVSBIS.13d5f9e5ff2f8c1468551feaf512362e"/>
+<summary>...A SEVERE THUNDERSTORM WARNING REMAINS IN EFFECT UNTIL 945 PM MDT FOR NORTHERN GOLDEN VALLEY AND WESTERN BILLINGS COUNTIES... At 923 PM MDT, a severe thunderstorm was located 5 miles west of Medora, or 17 miles east of Beach, moving northeast at 50 mph. HAZARD...60 mph wind gusts and quarter size hail. SOURCE...Radar indicated.</summary>
+<cap:event>Severe Weather Statement</cap:event>
+<cap:effective>2023-06-19T22:23:00-05:00</cap:effective>
+<cap:expires>2023-06-19T22:45:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Immediate</cap:urgency>
+<cap:severity>Severe</cap:severity>
+<cap:certainty>Observed</cap:certainty>
+<cap:areaDesc>Golden Valley</cap:areaDesc>
+<cap:polygon>46.94,-103.97 47.28,-103.59 47.18,-103.37 46.79,-103.37 46.72,-103.85 46.94,-103.97</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>038033</value>
+<valueName>UGC</valueName>
+<value>NDC033</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KBIS.SV.W.0023.000000T0000Z-230620T0345Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=ND12664EEBAD2C.SevereWeatherStatement.12664EEC4070ND.BISSVSBIS.7ee6515754a60bc712ca5694fbdbdc1c</id>
+<updated>2023-06-19T22:23:00-05:00</updated>
+<published>2023-06-19T22:23:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Severe Weather Statement issued June 19 at 10:23PM CDT until June 20 at 2:00AM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=ND12664EEBAD2C.SevereWeatherStatement.12664EEC4070ND.BISSVSBIS.7ee6515754a60bc712ca5694fbdbdc1c"/>
+<summary>...A SEVERE THUNDERSTORM WARNING REMAINS IN EFFECT UNTIL 945 PM MDT FOR NORTHERN GOLDEN VALLEY AND WESTERN BILLINGS COUNTIES... At 923 PM MDT, a severe thunderstorm was located 5 miles west of Medora, or 17 miles east of Beach, moving northeast at 50 mph. HAZARD...60 mph wind gusts and quarter size hail. SOURCE...Radar indicated.</summary>
+<cap:event>Severe Weather Statement</cap:event>
+<cap:effective>2023-06-19T22:23:00-05:00</cap:effective>
+<cap:expires>2023-06-20T02:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Immediate</cap:urgency>
+<cap:severity>Severe</cap:severity>
+<cap:certainty>Observed</cap:certainty>
+<cap:areaDesc>Billings</cap:areaDesc>
+<cap:polygon>46.94,-103.97 47.28,-103.59 47.18,-103.37 46.79,-103.37 46.72,-103.85 46.94,-103.97</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>038007</value>
+<valueName>UGC</valueName>
+<value>NDC007</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KBIS.SV.W.0023.000000T0000Z-230620T0345Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -5802,6 +5671,38 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <value>055021 055025 055027 055039 055045 055047 055049 055055 055059 055065 055077 055079 055089 055101 055105 055111 055117 055127 055131 055133</value>
 <valueName>UGC</valueName>
 <value>WIZ046 WIZ047 WIZ051 WIZ052 WIZ056 WIZ057 WIZ058 WIZ059 WIZ060 WIZ062 WIZ063 WIZ064 WIZ065 WIZ066 WIZ067 WIZ068 WIZ069 WIZ070 WIZ071 WIZ072</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value></value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=WY12664EEBA5C0.SpecialWeatherStatement.12664EEBB5C4WY.RIWSPSRIW.b90cb489f45303006344e0b6ad190bff</id>
+<updated>2023-06-19T21:04:00-06:00</updated>
+<published>2023-06-19T21:04:00-06:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Special Weather Statement issued June 19 at 9:04PM MDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=WY12664EEBA5C0.SpecialWeatherStatement.12664EEBB5C4WY.RIWSPSRIW.b90cb489f45303006344e0b6ad190bff"/>
+<summary>...A strong thunderstorm will impact portions of west central Big Horn and eastern Park Counties through 945 PM MDT... At 903 PM MDT, Doppler radar was tracking a strong thunderstorm 17 miles northeast of Meeteetse Rim, which is also 17 miles east of Cody, moving northeast at 40 mph. HAZARD...Winds in excess of 40 mph and pea size hail.</summary>
+<cap:event>Special Weather Statement</cap:event>
+<cap:effective>2023-06-19T21:04:00-06:00</cap:effective>
+<cap:expires>2023-06-19T21:45:00-06:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Observed</cap:certainty>
+<cap:areaDesc>North Big Horn Basin</cap:areaDesc>
+<cap:polygon>44.61,-108.03 44.44,-108.67 44.51,-108.78 44.52,-108.76 44.52,-108.74 44.53,-108.74 44.53,-108.72 44.56,-108.72 44.58,-108.75 44.92,-108.47 44.61,-108.03</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>056003 056029</value>
+<valueName>UGC</valueName>
+<value>WYZ004</value>
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
