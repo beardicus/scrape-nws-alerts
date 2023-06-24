@@ -16,16 +16,48 @@ xmlns = 'http://www.w3.org/2005/Atom'
 xmlns:cap = 'urn:oasis:names:tc:emergency:cap:1.1'
 xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 >
-<!-- http-date = Sat, 24 Jun 2023 13:30:00 GMT -->
+<!-- http-date = Sat, 24 Jun 2023 14:03:00 GMT -->
 <id>https://alerts.weather.gov/cap/us.php?x=0</id>
 <logo>http://alerts.weather.gov/images/xml_logo.gif</logo>
 <generator>NWS CAP Server</generator>
-<updated>2023-06-24T05:30:00-08:00</updated>
+<updated>2023-06-24T10:03:00-04:00</updated>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
 <title>Current Watches, Warnings and Advisories for the United States Issued by the National Weather Service</title>
 <link href="https://alerts.weather.gov/cap/us.php?x=0"/>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=AK12664F2A47BC.DenseFogAdvisory.12664F2AA900AK.AFCNPWAER.d6143feac2c92d34a76d68d88672f13c</id>
+<updated>2023-06-24T05:51:00-08:00</updated>
+<published>2023-06-24T05:51:00-08:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Dense Fog Advisory issued June 24 at 5:51AM AKDT until June 24 at 8:00AM AKDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=AK12664F2A47BC.DenseFogAdvisory.12664F2AA900AK.AFCNPWAER.d6143feac2c92d34a76d68d88672f13c"/>
+<summary>...DENSE FOG ADVISORY REMAINS IN EFFECT UNTIL 8 AM AKDT THIS MORNING... * WHAT...Visibility one quarter mile or less in dense fog. * WHERE...Western Kenai Peninsula from Kenai and Soldotna south to Homer. * WHEN...Until 8 AM AKDT this morning.</summary>
+<cap:event>Dense Fog Advisory</cap:event>
+<cap:effective>2023-06-24T05:51:00-08:00</cap:effective>
+<cap:expires>2023-06-24T08:00:00-08:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Western Kenai Peninsula</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>002122</value>
+<valueName>UGC</valueName>
+<value>AKZ121</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.PAFC.FG.Y.0007.000000T0000Z-230624T1600Z/</value>
+</cap:parameter>
+</entry>
 <entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=AK12664F2A3F88.SpecialWeatherStatement.12664F37A150AK.AFCSPSAER.146b8e722075250ba6890d1d511c6af0</id>
 <updated>2023-06-24T05:30:00-08:00</updated>
@@ -88,38 +120,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value></value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=AK12664F29F35C.DenseFogAdvisory.12664F2AA900AK.AFCNPWAER.d6143feac2c92d34a76d68d88672f13c</id>
-<updated>2023-06-24T03:35:00-08:00</updated>
-<published>2023-06-24T03:35:00-08:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Dense Fog Advisory issued June 24 at 3:35AM AKDT until June 24 at 8:00AM AKDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=AK12664F29F35C.DenseFogAdvisory.12664F2AA900AK.AFCNPWAER.d6143feac2c92d34a76d68d88672f13c"/>
-<summary>...DENSE FOG ADVISORY IN EFFECT UNTIL 8 AM AKDT THIS MORNING... * WHAT...Visibility one quarter mile or less in dense fog. * WHERE...Western Kenai Peninsula from Kenai and Soldotna south to Homer. * WHEN...Until 8 AM AKDT this morning. * IMPACTS...Hazardous driving conditions due to low visibility.</summary>
-<cap:event>Dense Fog Advisory</cap:event>
-<cap:effective>2023-06-24T03:35:00-08:00</cap:effective>
-<cap:expires>2023-06-24T08:00:00-08:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Western Kenai Peninsula</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>002122</value>
-<valueName>UGC</valueName>
-<value>AKZ121</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.NEW.PAFC.FG.Y.0007.230624T1135Z-230624T1600Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -1034,6 +1034,38 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=FL12664F2A5C0C.HeatAdvisory.12664F2B6C50FL.KEYNPWKEY.19336d9badea4e978ff5c06cb0d6e536</id>
+<updated>2023-06-24T10:03:00-04:00</updated>
+<published>2023-06-24T10:03:00-04:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Heat Advisory issued June 24 at 10:03AM EDT until June 24 at 5:00PM EDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=FL12664F2A5C0C.HeatAdvisory.12664F2B6C50FL.KEYNPWKEY.19336d9badea4e978ff5c06cb0d6e536"/>
+<summary>...HEAT ADVISORY IN EFFECT... * WHAT...Heat index values of 108 to 113 expected. * WHERE...Florida Keys. * WHEN...Until 5 PM EDT this afternoon. * IMPACTS...A Heat Advisory means that a period of unusually hot temperatures and high humidity is expected, producing heat</summary>
+<cap:event>Heat Advisory</cap:event>
+<cap:effective>2023-06-24T10:03:00-04:00</cap:effective>
+<cap:expires>2023-06-24T17:00:00-04:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Monroe Lower Keys; Monroe Middle Keys; Monroe Upper Keys</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>012087</value>
+<valueName>UGC</valueName>
+<value>FLZ076 FLZ077 FLZ078</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.NEW.KKEY.HT.Y.0003.230624T1403Z-230624T2100Z/</value>
+</cap:parameter>
+</entry>
+<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=FL12664F29A154.RipCurrentStatement.12664F38D9D0FL.TAECFWTAE.20b363fc18bfce6b34c5d717d8bdfbab</id>
 <updated>2023-06-24T05:25:00-04:00</updated>
 <published>2023-06-24T05:25:00-04:00</published>
@@ -1161,6 +1193,38 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value></value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=HI12664F2A4564.HighSurfAdvisory.12664F492D80HI.HFOCFWHFO.0d064127d94bdc81bdf41d09d6289406</id>
+<updated>2023-06-24T03:45:00-10:00</updated>
+<published>2023-06-24T03:45:00-10:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>High Surf Advisory issued June 24 at 3:45AM HST until June 26 at 6:00AM HST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=HI12664F2A4564.HighSurfAdvisory.12664F492D80HI.HFOCFWHFO.0d064127d94bdc81bdf41d09d6289406"/>
+<summary>...HIGH SURF ADVISORY FOR SOUTH FACING SHORES OF ALL THE HAWAIIAN ISLANDS... .A long period south swell (170 degrees) will fill in today, peak tonight and hold into tomorrow that will elevate surf along south facing shores. A second pulse arriving Monday could keep surf elevated through early next week.</summary>
+<cap:event>High Surf Advisory</cap:event>
+<cap:effective>2023-06-24T03:45:00-10:00</cap:effective>
+<cap:expires>2023-06-26T06:00:00-10:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Big Island South; Big Island Southeast; East Honolulu; Ewa Plain; Honolulu Metro; Kahoolawe; Kauai South; Kauai Southwest; Kona; Lanai Leeward; Lanai South; Maui Central Valley South; Maui Leeward West; Molokai Leeward South; Molokai Southeast; Niihau; South Haleakala; South Maui, Upcountry; Waianae Coast</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>015001 015003 015007 015009</value>
+<valueName>UGC</valueName>
+<value>HIZ001 HIZ003 HIZ006 HIZ016 HIZ018 HIZ023 HIZ031 HIZ032 HIZ033 HIZ034 HIZ038 HIZ041 HIZ043 HIZ044 HIZ046 HIZ049 HIZ050 HIZ051 HIZ052</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.NEW.PHFO.SU.Y.0021.230624T1345Z-230626T1600Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -1484,6 +1548,38 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=KS12664F2A46F4.SpecialWeatherStatement.12664F2A60BCKS.ICTSPSICT.b9d9327d8a94ade553c9f31b66afbadd</id>
+<updated>2023-06-24T08:49:00-05:00</updated>
+<published>2023-06-24T08:49:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Special Weather Statement issued June 24 at 8:49AM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=KS12664F2A46F4.SpecialWeatherStatement.12664F2A60BCKS.ICTSPSICT.b9d9327d8a94ade553c9f31b66afbadd"/>
+<summary>...A strong thunderstorm will impact portions of northeastern Wilson, northwestern Neosho, southeastern Woodson and southwestern Allen Counties through 915 AM CDT... At 849 AM CDT, Doppler radar was tracking a strong thunderstorm near Buffalo, or 7 miles south of Yates Center, moving east at 45 mph. HAZARD...Winds in excess of 40 mph and penny size hail.</summary>
+<cap:event>Special Weather Statement</cap:event>
+<cap:effective>2023-06-24T08:49:00-05:00</cap:effective>
+<cap:expires>2023-06-24T09:15:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Observed</cap:certainty>
+<cap:areaDesc>Allen; Neosho; Wilson; Woodson</cap:areaDesc>
+<cap:polygon>37.69,-95.8 37.89,-95.82 37.97,-95.36 37.63,-95.36 37.69,-95.8</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>020001 020133 020205 020207</value>
+<valueName>UGC</valueName>
+<value>KSZ071 KSZ072 KSZ095 KSZ096</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value></value>
+</cap:parameter>
+</entry>
+<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=KY12664F295C30.AirQualityAlert.12664F381680KY.LMKAQALMK.8446fa5ae5b9a5dca1922b99a1208616</id>
 <updated>2023-06-24T03:48:00-04:00</updated>
 <published>2023-06-24T03:48:00-04:00</published>
@@ -1509,6 +1605,38 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <value>021029 021111 021185</value>
 <valueName>UGC</valueName>
 <value>KYZ029 KYZ030 KYZ031</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value></value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=LA12664F2A5B44.SpecialWeatherStatement.12664F2A81F0LA.LIXSPSLIX.350bd819bef5f7b8b30ab55624c51aeb</id>
+<updated>2023-06-24T09:01:00-05:00</updated>
+<published>2023-06-24T09:01:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Special Weather Statement issued June 24 at 9:01AM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=LA12664F2A5B44.SpecialWeatherStatement.12664F2A81F0LA.LIXSPSLIX.350bd819bef5f7b8b30ab55624c51aeb"/>
+<summary>...A strong thunderstorm will impact portions of east central Terrebonne and east central Lafourche Parishes through 1000 AM CDT... At 900 AM CDT, Doppler radar was tracking a strong thunderstorm near Lockport, or 7 miles west of Larose, moving east at 10 mph. HAZARD...Winds in excess of 30 mph and pea size hail. SOURCE...Radar indicated.</summary>
+<cap:event>Special Weather Statement</cap:event>
+<cap:effective>2023-06-24T09:01:00-05:00</cap:effective>
+<cap:expires>2023-06-24T10:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Observed</cap:certainty>
+<cap:areaDesc>Lower Lafourche; Lower Terrebonne; Upper Lafourche</cap:areaDesc>
+<cap:polygon>29.27,-90.17 29.4,-90.62 29.56,-90.59 29.56,-90.57 29.57,-90.59 29.67,-90.57 29.68,-90.32 29.52,-90.2 29.27,-90.17</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>022057 022109</value>
+<valueName>UGC</valueName>
+<value>LAZ059 LAZ066 LAZ067</value>
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
@@ -1645,38 +1773,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=ME12664F2A0D24.DenseFogAdvisory.12664F2A5AE0ME.CARNPWCAR.6910cfb52a16bcebee413b4ad0b99884</id>
-<updated>2023-06-24T08:01:00-04:00</updated>
-<published>2023-06-24T08:01:00-04:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Dense Fog Advisory issued June 24 at 8:01AM EDT until June 24 at 10:00AM EDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=ME12664F2A0D24.DenseFogAdvisory.12664F2A5AE0ME.CARNPWCAR.6910cfb52a16bcebee413b4ad0b99884"/>
-<summary>...DENSE FOG ADVISORY REMAINS IN EFFECT UNTIL 10 AM EDT THIS MORNING... * WHAT...Visibility one quarter mile or less in dense fog. * WHERE...Coastal Hancock and Coastal Washington Counties. * WHEN...Until 10 AM EDT this morning. * IMPACTS...Hazardous driving conditions due to low visibility.</summary>
-<cap:event>Dense Fog Advisory</cap:event>
-<cap:effective>2023-06-24T08:01:00-04:00</cap:effective>
-<cap:expires>2023-06-24T10:00:00-04:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Coastal Hancock; Coastal Washington</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>023009 023029</value>
-<valueName>UGC</valueName>
-<value>MEZ029 MEZ030</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KCAR.FG.Y.0010.000000T0000Z-230624T1400Z/</value>
-</cap:parameter>
-</entry>
-<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=MI12664F29332C.AirQualityAlert.12664F381680MI.APXAQAAPX.7600682492240c8facd6078dc7a1a23a</id>
 <updated>2023-06-24T02:43:00-04:00</updated>
 <published>2023-06-24T02:43:00-04:00</published>
@@ -1802,38 +1898,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value>/O.NEW.KDLH.BH.S.0007.230624T1500Z-230625T0200Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=MN12664F2999E8.DenseFogAdvisory.12664F2A5AE0MN.DLHNPWDLH.aba6803057b043bdba05261d63e593ed</id>
-<updated>2023-06-24T04:06:00-05:00</updated>
-<published>2023-06-24T04:06:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Dense Fog Advisory issued June 24 at 4:06AM CDT until June 24 at 9:00AM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MN12664F2999E8.DenseFogAdvisory.12664F2A5AE0MN.DLHNPWDLH.aba6803057b043bdba05261d63e593ed"/>
-<summary>...DENSE FOG ADVISORY IN EFFECT UNTIL 9 AM CDT THIS MORNING... * WHAT...Visibility less than one mile in dense fog. * WHERE...Southern Lake and Carlton and South St. Louis Counties. This includes the Tribal Lands of the Fond du Lac Band. * WHEN...Until 9 AM CDT this morning.</summary>
-<cap:event>Dense Fog Advisory</cap:event>
-<cap:effective>2023-06-24T04:06:00-05:00</cap:effective>
-<cap:expires>2023-06-24T09:00:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Carlton, South St. Louis; Southern Lake, North Shore</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>027017 027075 027137</value>
-<valueName>UGC</valueName>
-<value>MNZ020 MNZ037</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.EXA.KDLH.FG.Y.0006.000000T0000Z-230624T1400Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -2029,6 +2093,171 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=MS12664F2A43D4.FloodWarning.12664F4804A0MS.JANFLSJAN.9addc45a5c96b048c26acfffea369b0c</id>
+<updated>2023-06-24T08:41:00-05:00</updated>
+<published>2023-06-24T08:41:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Flood Warning issued June 24 at 8:41AM CDT until June 26 at 3:40AM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MS12664F2A43D4.FloodWarning.12664F4804A0MS.JANFLSJAN.9addc45a5c96b048c26acfffea369b0c"/>
+<summary>...The Flood Warning is extended for the following rivers in Mississippi... Big Black River At West affecting Holmes and Attala Counties. For the Big Black/Homochitto...including West, Bentonia, Bovina, Rosetta...Minor flooding is forecast. ...FLOOD WARNING NOW IN EFFECT UNTIL EARLY MONDAY MORNING...</summary>
+<cap:event>Flood Warning</cap:event>
+<cap:effective>2023-06-24T08:41:00-05:00</cap:effective>
+<cap:expires>2023-06-26T03:40:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Attala; Holmes</cap:areaDesc>
+<cap:polygon>32.91,-90.06 33.14,-89.9 33.3,-89.81 33.22,-89.63 33.13,-89.69 32.85,-89.87 32.91,-90.06</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>028007 028051</value>
+<valueName>UGC</valueName>
+<value>MSC007 MSC051</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.EXT.KJAN.FL.W.0072.000000T0000Z-230626T0840Z/
+/WSTM6.1.ER.230620T1800Z.230623T1100Z.230625T1440Z.NO/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=MS12664F2A4370.FloodWarning.12664F662B60MS.JANFLSJAN.d95a699e8502be1fa808e6e4453185e4</id>
+<updated>2023-06-24T08:40:00-05:00</updated>
+<published>2023-06-24T08:40:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Flood Warning issued June 24 at 8:40AM CDT until June 28 at 1:00AM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MS12664F2A4370.FloodWarning.12664F662B60MS.JANFLSJAN.d95a699e8502be1fa808e6e4453185e4"/>
+<summary>...The Flood Warning is extended for the following rivers in Mississippi... Pearl River Near Rockport affecting Simpson and Copiah Counties. For the Lower Pearl River ...including D`lo, Rockport, Monticello, Columbia...Minor flooding is forecast. ...FLOOD WARNING NOW IN EFFECT FROM MONDAY EVENING TO EARLY</summary>
+<cap:event>Flood Warning</cap:event>
+<cap:effective>2023-06-24T08:40:00-05:00</cap:effective>
+<cap:expires>2023-06-28T01:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Copiah; Simpson</cap:areaDesc>
+<cap:polygon>31.68,-90.19 31.78,-90.19 31.93,-90.25 31.98,-90.12 31.82,-90.05 31.69,-90.05 31.68,-90.19</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>028029 028127</value>
+<valueName>UGC</valueName>
+<value>MSC029 MSC127</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.EXT.KJAN.FL.W.0078.230627T0000Z-230628T0600Z/
+/ROCM6.1.ER.230627T0000Z.230627T0000Z.230627T1200Z.NO/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=MS12664F2A42A8.FloodWarning.12664F569B00MS.JANFLSJAN.1126ab0f88849f3e86b41ba194d5adcf</id>
+<updated>2023-06-24T08:38:00-05:00</updated>
+<published>2023-06-24T08:38:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Flood Warning issued June 24 at 8:38AM CDT until June 26 at 11:00PM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MS12664F2A42A8.FloodWarning.12664F569B00MS.JANFLSJAN.1126ab0f88849f3e86b41ba194d5adcf"/>
+<summary>...The Flood Warning is extended for the following rivers in Mississippi... Pearl River At Jackson affecting Hinds and Rankin Counties. For the Upper Pearl River...including Philadelphia, Edinburg, Carthage, Walnut Grove, Lena, Kosciusko, Ratliff`s Ferry, Ofahoma, Jackson...Minor flooding is forecast.</summary>
+<cap:event>Flood Warning</cap:event>
+<cap:effective>2023-06-24T08:38:00-05:00</cap:effective>
+<cap:expires>2023-06-26T23:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Hinds; Rankin</cap:areaDesc>
+<cap:polygon>31.93,-90.25 32.12,-90.34 32.43,-90.13 32.37,-90.02 32.13,-90.2 31.98,-90.12 31.93,-90.25</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>028049 028121</value>
+<valueName>UGC</valueName>
+<value>MSC049 MSC121</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.EXT.KJAN.FL.W.0077.000000T0000Z-230627T0400Z/
+/JACM6.1.ER.230623T1135Z.230624T1800Z.230626T1000Z.NO/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=MS12664F2A40B4.FloodWarning.12664F38C7D8MS.JANFLSJAN.1f8a6f54be4b02dd287b39538514d998</id>
+<updated>2023-06-24T08:33:00-05:00</updated>
+<published>2023-06-24T08:33:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Flood Warning issued June 24 at 8:33AM CDT until June 25 at 3:54AM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MS12664F2A40B4.FloodWarning.12664F38C7D8MS.JANFLSJAN.1f8a6f54be4b02dd287b39538514d998"/>
+<summary>...The Flood Warning continues for the following rivers in Mississippi... Yockanookany River Near Ofahoma affecting Leake County. Pearl River Near Carthage affecting Leake County. For the Upper Pearl River...including Philadelphia, Edinburg, Carthage, Walnut Grove, Lena, Kosciusko, Ratliff`s Ferry, Ofahoma,</summary>
+<cap:event>Flood Warning</cap:event>
+<cap:effective>2023-06-24T08:33:00-05:00</cap:effective>
+<cap:expires>2023-06-25T03:54:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Leake</cap:areaDesc>
+<cap:polygon>32.71,-89.64 32.77,-89.56 32.8,-89.51 32.68,-89.46 32.66,-89.52 32.63,-89.6 32.71,-89.64</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>028079</value>
+<valueName>UGC</valueName>
+<value>MSC079</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.EXT.KJAN.FL.W.0069.000000T0000Z-230625T0854Z/
+/CARM6.1.ER.230619T0811Z.230620T0230Z.230624T1454Z.NO/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=MS12664F2A40B4.FloodWarning.12664F39EB40MS.JANFLSJAN.a66b7537a3778aef6dbe10ef2aec00ca</id>
+<updated>2023-06-24T08:33:00-05:00</updated>
+<published>2023-06-24T08:33:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Flood Warning issued June 24 at 8:33AM CDT until June 25 at 11:00AM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MS12664F2A40B4.FloodWarning.12664F39EB40MS.JANFLSJAN.a66b7537a3778aef6dbe10ef2aec00ca"/>
+<summary>...The Flood Warning continues for the following rivers in Mississippi... Yockanookany River Near Ofahoma affecting Leake County. Pearl River Near Carthage affecting Leake County. For the Upper Pearl River...including Philadelphia, Edinburg, Carthage, Walnut Grove, Lena, Kosciusko, Ratliff`s Ferry, Ofahoma,</summary>
+<cap:event>Flood Warning</cap:event>
+<cap:effective>2023-06-24T08:33:00-05:00</cap:effective>
+<cap:expires>2023-06-25T11:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Leake</cap:areaDesc>
+<cap:polygon>32.67,-89.75 32.8,-89.76 32.95,-89.72 32.93,-89.58 32.8,-89.64 32.71,-89.64 32.67,-89.75</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>028079</value>
+<valueName>UGC</valueName>
+<value>MSC079</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.EXT.KJAN.FL.W.0075.000000T0000Z-230625T1600Z/
+/OFAM6.1.ER.230619T1555Z.230622T2045Z.230624T2200Z.NO/</value>
+</cap:parameter>
+</entry>
+<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=MS12664F299A4C.HeatAdvisory.12664F46E390MS.MEGNPWMEG.f4b8885bd9b94a34887cdf9f85a31aad</id>
 <updated>2023-06-24T04:07:00-05:00</updated>
 <published>2023-06-24T04:07:00-05:00</published>
@@ -2093,39 +2322,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=MS12664F2888DC.FloodWarning.12664F654100MS.JANFLSJAN.d95a699e8502be1fa808e6e4453185e4</id>
-<updated>2023-06-23T21:07:00-05:00</updated>
-<published>2023-06-23T21:07:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Flood Warning issued June 23 at 9:07PM CDT until June 27 at 7:00PM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MS12664F2888DC.FloodWarning.12664F654100MS.JANFLSJAN.d95a699e8502be1fa808e6e4453185e4"/>
-<summary>...The Flood Warning continues for the following rivers in Mississippi... Pearl River Near Rockport affecting Simpson and Copiah Counties. For the Lower Pearl River ...including D`lo, Rockport, Monticello, Columbia...Minor flooding is forecast. ...FLOOD WARNING REMAINS IN EFFECT FROM MONDAY EVENING TO TUESDAY</summary>
-<cap:event>Flood Warning</cap:event>
-<cap:effective>2023-06-23T21:07:00-05:00</cap:effective>
-<cap:expires>2023-06-27T19:00:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Copiah; Simpson</cap:areaDesc>
-<cap:polygon>31.68,-90.19 31.78,-90.19 31.93,-90.25 31.98,-90.12 31.82,-90.05 31.69,-90.05 31.68,-90.19</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>028029 028127</value>
-<valueName>UGC</valueName>
-<value>MSC029 MSC127</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KJAN.FL.W.0078.230627T0000Z-230628T0000Z/
-/ROCM6.1.ER.230627T0000Z.230627T0000Z.230627T0600Z.NO/</value>
-</cap:parameter>
-</entry>
-<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=MS12664F287298.FloodWarning.12664F578560MS.MOBFLSMOB.845e2936e03ea24d1e17f756201a86c4</id>
 <updated>2023-06-23T20:50:00-05:00</updated>
 <published>2023-06-23T20:50:00-05:00</published>
@@ -2156,138 +2352,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <valueName>VTEC</valueName>
 <value>/O.CON.KMOB.FL.W.0029.000000T0000Z-230627T1000Z/
 /LEKM6.1.ER.230619T0945Z.230625T0600Z.230627T0400Z.NO/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=MS12664F2870A4.FloodWarning.12664F47A6E0MS.JANFLSJAN.9addc45a5c96b048c26acfffea369b0c</id>
-<updated>2023-06-23T20:45:00-05:00</updated>
-<published>2023-06-23T20:45:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Flood Warning issued June 23 at 8:45PM CDT until June 26 at 1:00AM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MS12664F2870A4.FloodWarning.12664F47A6E0MS.JANFLSJAN.9addc45a5c96b048c26acfffea369b0c"/>
-<summary>...The Flood Warning continues for the following rivers in Mississippi... Big Black River At West affecting Holmes and Attala Counties. For the Big Black/Homochitto...including West, Bentonia, Bovina, Rosetta...Minor flooding is forecast. ...FLOOD WARNING NOW IN EFFECT UNTIL EARLY MONDAY MORNING...</summary>
-<cap:event>Flood Warning</cap:event>
-<cap:effective>2023-06-23T20:45:00-05:00</cap:effective>
-<cap:expires>2023-06-26T01:00:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Attala; Holmes</cap:areaDesc>
-<cap:polygon>32.91,-90.06 33.14,-89.9 33.3,-89.81 33.22,-89.63 33.13,-89.69 32.85,-89.87 32.91,-90.06</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>028007 028051</value>
-<valueName>UGC</valueName>
-<value>MSC007 MSC051</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.EXT.KJAN.FL.W.0072.000000T0000Z-230626T0600Z/
-/WSTM6.1.ER.230620T1800Z.230623T1100Z.230625T1200Z.NO/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=MS12664F286F78.FloodWarning.12664F394F00MS.JANFLSJAN.1f8a6f54be4b02dd287b39538514d998</id>
-<updated>2023-06-23T20:42:00-05:00</updated>
-<published>2023-06-23T20:42:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Flood Warning issued June 23 at 8:42PM CDT until June 25 at 7:00AM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MS12664F286F78.FloodWarning.12664F394F00MS.JANFLSJAN.1f8a6f54be4b02dd287b39538514d998"/>
-<summary>...The Flood Warning continues for the following rivers in Mississippi... Yockanookany River Near Ofahoma affecting Leake County. Pearl River Near Carthage affecting Leake County. Pearl River At Jackson affecting Rankin and Hinds Counties. Pearl River Near Ratliff`s Ferry affecting Rankin and Madison</summary>
-<cap:event>Flood Warning</cap:event>
-<cap:effective>2023-06-23T20:42:00-05:00</cap:effective>
-<cap:expires>2023-06-25T07:00:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Leake</cap:areaDesc>
-<cap:polygon>32.71,-89.64 32.77,-89.56 32.8,-89.51 32.68,-89.46 32.66,-89.52 32.63,-89.6 32.71,-89.64</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>028079</value>
-<valueName>UGC</valueName>
-<value>MSC079</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.EXT.KJAN.FL.W.0069.000000T0000Z-230625T1200Z/
-/CARM6.1.ER.230619T0811Z.230620T0230Z.230624T1800Z.NO/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=MS12664F286F78.FloodWarning.12664F46BC80MS.JANFLSJAN.a66b7537a3778aef6dbe10ef2aec00ca</id>
-<updated>2023-06-23T20:42:00-05:00</updated>
-<published>2023-06-23T20:42:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Flood Warning issued June 23 at 8:42PM CDT until June 25 at 7:00PM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MS12664F286F78.FloodWarning.12664F46BC80MS.JANFLSJAN.a66b7537a3778aef6dbe10ef2aec00ca"/>
-<summary>...The Flood Warning continues for the following rivers in Mississippi... Yockanookany River Near Ofahoma affecting Leake County. Pearl River Near Carthage affecting Leake County. Pearl River At Jackson affecting Rankin and Hinds Counties. Pearl River Near Ratliff`s Ferry affecting Rankin and Madison</summary>
-<cap:event>Flood Warning</cap:event>
-<cap:effective>2023-06-23T20:42:00-05:00</cap:effective>
-<cap:expires>2023-06-25T19:00:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Leake</cap:areaDesc>
-<cap:polygon>32.67,-89.75 32.8,-89.76 32.95,-89.72 32.93,-89.58 32.8,-89.64 32.71,-89.64 32.67,-89.75</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>028079</value>
-<valueName>UGC</valueName>
-<value>MSC079</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.EXT.KJAN.FL.W.0075.000000T0000Z-230626T0000Z/
-/OFAM6.1.ER.230619T1555Z.230622T2045Z.230625T0600Z.NO/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=MS12664F286F78.FloodWarning.12664F564CE0MS.JANFLSJAN.1126ab0f88849f3e86b41ba194d5adcf</id>
-<updated>2023-06-23T20:42:00-05:00</updated>
-<published>2023-06-23T20:42:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Flood Warning issued June 23 at 8:42PM CDT until June 26 at 9:00PM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MS12664F286F78.FloodWarning.12664F564CE0MS.JANFLSJAN.1126ab0f88849f3e86b41ba194d5adcf"/>
-<summary>...The Flood Warning continues for the following rivers in Mississippi... Yockanookany River Near Ofahoma affecting Leake County. Pearl River Near Carthage affecting Leake County. Pearl River At Jackson affecting Rankin and Hinds Counties. Pearl River Near Ratliff`s Ferry affecting Rankin and Madison</summary>
-<cap:event>Flood Warning</cap:event>
-<cap:effective>2023-06-23T20:42:00-05:00</cap:effective>
-<cap:expires>2023-06-26T21:00:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Hinds; Rankin</cap:areaDesc>
-<cap:polygon>31.93,-90.25 32.12,-90.34 32.43,-90.13 32.37,-90.02 32.13,-90.2 31.98,-90.12 31.93,-90.25</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>028049 028121</value>
-<valueName>UGC</valueName>
-<value>MSC049 MSC121</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KJAN.FL.W.0077.000000T0000Z-230627T0200Z/
-/JACM6.1.ER.230623T1135Z.230624T1200Z.230626T0800Z.NO/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -2586,72 +2650,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=MT12664F286744.FloodWarning.12664F394F00MT.BYZFLWBYZ.ac8fb9cba059580c45177f6963d3906a</id>
-<updated>2023-06-23T19:21:00-06:00</updated>
-<published>2023-06-23T19:21:00-06:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Flood Warning issued June 23 at 7:21PM MDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MT12664F286744.FloodWarning.12664F394F00MT.BYZFLWBYZ.ac8fb9cba059580c45177f6963d3906a"/>
-<summary>...FLOOD WARNING IN EFFECT UNTIL 8 AM MDT SATURDAY... * WHAT...Flooding caused by excessive rainfall is expected to continue through early Saturday morning. * WHERE...A portion of south central Montana, including the following county, Stillwater. * WHEN...Until 800 AM MDT Saturday.</summary>
-<cap:event>Flood Warning</cap:event>
-<cap:effective>2023-06-23T19:21:00-06:00</cap:effective>
-<cap:expires>2023-06-25T06:00:00-06:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Stillwater</cap:areaDesc>
-<cap:polygon>45.58,-109.67 45.53,-109.72 45.44,-109.58 45.44,-109.43 45.45,-109.42 45.45,-109.36 45.5,-109.35 45.55,-109.37 45.61,-109.47 45.58,-109.67</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>030095</value>
-<valueName>UGC</valueName>
-<value>MTC095</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.NEW.KBYZ.FA.W.0005.230624T0121Z-230624T1400Z/
-/00000.0.ER.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=MT12664F2862F8.FloodWarning.12664F394F00MT.BYZFLWBYZ.0b9466dac847beb23a7da6919205c083</id>
-<updated>2023-06-23T19:10:00-06:00</updated>
-<published>2023-06-23T19:10:00-06:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Flood Warning issued June 23 at 7:10PM MDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MT12664F2862F8.FloodWarning.12664F394F00MT.BYZFLWBYZ.0b9466dac847beb23a7da6919205c083"/>
-<summary>...FLOOD WARNING IN EFFECT UNTIL 8 AM MDT SATURDAY... * WHAT...Small stream and overland flooding caused by excessive rainfall is expected to continue through early Saturday morning. * WHERE...A portion of south central Montana, including the following county, Stillwater. * WHEN...Until 800 AM MDT Saturday.</summary>
-<cap:event>Flood Warning</cap:event>
-<cap:effective>2023-06-23T19:10:00-06:00</cap:effective>
-<cap:expires>2023-06-25T06:00:00-06:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Stillwater</cap:areaDesc>
-<cap:polygon>46.1,-109.4 46.08,-109.09 45.74,-109.17 45.65,-109.24 45.67,-109.31 45.88,-109.42 46.06,-109.41 46.1,-109.4</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>030095</value>
-<valueName>UGC</valueName>
-<value>MTC095</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.NEW.KBYZ.FA.W.0004.230624T0110Z-230624T1400Z/
-/00000.0.ER.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
-</cap:parameter>
-</entry>
-<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=NC12664F2A1364.CoastalFloodAdvisory.12664F2B4540NC.AKQCFWAKQ.e67dbfb7b7feea57d5998db2a742e155</id>
 <updated>2023-06-24T08:17:00-04:00</updated>
 <published>2023-06-24T08:17:00-04:00</published>
@@ -2684,18 +2682,18 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=NE12664F28B49C.FloodWarning.12664F2A8DA8NE.LBFFLSLBF.4a293ffea600e1288e5614ccb7e313f1</id>
-<updated>2023-06-23T22:19:00-05:00</updated>
-<published>2023-06-23T22:19:00-05:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=NE12664F2A5AE0.FloodWarning.12664F37C860NE.LBFFLSLBF.4a293ffea600e1288e5614ccb7e313f1</id>
+<updated>2023-06-24T09:00:00-05:00</updated>
+<published>2023-06-24T09:00:00-05:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Flood Warning issued June 23 at 10:19PM CDT until further notice by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=NE12664F28B49C.FloodWarning.12664F2A8DA8NE.LBFFLSLBF.4a293ffea600e1288e5614ccb7e313f1"/>
+<title>Flood Warning issued June 24 at 9:00AM CDT until further notice by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=NE12664F2A5AE0.FloodWarning.12664F37C860NE.LBFFLSLBF.4a293ffea600e1288e5614ccb7e313f1"/>
 <summary>...The Flood Warning continues for the following rivers in Nebraska... South Platte River near Roscoe affecting Deuel and Keith Counties. For the South Platte River...including Roscoe...Minor flooding is forecast. ...FLOOD WARNING REMAINS IN EFFECT UNTIL FURTHER NOTICE...</summary>
 <cap:event>Flood Warning</cap:event>
-<cap:effective>2023-06-23T22:19:00-05:00</cap:effective>
-<cap:expires>2023-06-24T10:30:00-05:00</cap:expires>
+<cap:effective>2023-06-24T09:00:00-05:00</cap:effective>
+<cap:expires>2023-06-24T21:00:00-05:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
 <cap:category>Met</cap:category>
@@ -2713,7 +2711,7 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value>/O.CON.KLBF.FL.W.0005.000000T0000Z-000000T0000Z/
-/RSON1.1.ER.230623T2022Z.230629T0000Z.000000T0000Z.NO/</value>
+/RSON1.1.ER.230623T2022Z.230629T1200Z.000000T0000Z.NR/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -3627,6 +3625,72 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=SC12664F2A4820.FloodWarning.12664F678AF0SC.ILMFLSILM.8a2875e53dcf2706cf2a82f036937439</id>
+<updated>2023-06-24T09:52:00-04:00</updated>
+<published>2023-06-24T09:52:00-04:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Flood Warning issued June 24 at 9:52AM EDT until June 28 at 11:00AM EDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=SC12664F2A4820.FloodWarning.12664F678AF0SC.ILMFLSILM.8a2875e53dcf2706cf2a82f036937439"/>
+<summary>...The Flood Warning is extended for the following rivers in South Carolina... Great Pee Dee River At Pee Dee affecting Florence and Marion Counties. For the Great Pee Dee River...including Pee Dee, Bennettsville 10sw...Minor flooding is forecast.</summary>
+<cap:event>Flood Warning</cap:event>
+<cap:effective>2023-06-24T09:52:00-04:00</cap:effective>
+<cap:expires>2023-06-28T11:00:00-04:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Florence; Marion</cap:areaDesc>
+<cap:polygon>34.24,-79.62 34.24,-79.5 34,-79.45 33.85,-79.32 33.85,-79.44 33.98,-79.57 34.24,-79.62</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>045041 045067</value>
+<valueName>UGC</valueName>
+<value>SCC041 SCC067</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.EXT.KILM.FL.W.0016.230624T1800Z-230628T1500Z/
+/PDES1.1.ER.230624T1800Z.230626T0600Z.230628T0300Z.NO/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=SC12664F2A417C.FloodWarning.12664F3987A4SC.CHSFLSCHS.346f750c9385268fc0e0a9d0a3e439e2</id>
+<updated>2023-06-24T09:35:00-04:00</updated>
+<published>2023-06-24T09:35:00-04:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Flood Warning issued June 24 at 9:35AM EDT until further notice by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=SC12664F2A417C.FloodWarning.12664F3987A4SC.CHSFLSCHS.346f750c9385268fc0e0a9d0a3e439e2"/>
+<summary>...FLOOD WARNING REMAINS IN EFFECT UNTIL FURTHER NOTICE... * WHAT...Minor flooding is forecast. * WHERE...Santee River near Jamestown. * WHEN...Until further notice. * IMPACTS...At 12.0 feet, several dirt logging roads are impassable. * ADDITIONAL DETAILS...</summary>
+<cap:event>Flood Warning</cap:event>
+<cap:effective>2023-06-24T09:35:00-04:00</cap:effective>
+<cap:expires>2023-06-25T09:45:00-04:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Berkeley; Georgetown; Williamsburg</cap:areaDesc>
+<cap:polygon>33.47,-80.02 33.54,-79.98 33.25,-79.37 33.21,-79.38 33.2,-79.51 33.29,-79.76 33.47,-80.02</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>045015 045043 045089</value>
+<valueName>UGC</valueName>
+<value>SCC015 SCC043 SCC089</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KCHS.FL.W.0022.000000T0000Z-000000T0000Z/
+/JAMS1.1.ER.230624T1456Z.230626T1200Z.000000T0000Z.NO/</value>
+</cap:parameter>
+</entry>
+<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=SC12664F294FB0.FloodWarning.12664F46BC80SC.CAEFLSCAE.b52deff19119e39838022829b013be49</id>
 <updated>2023-06-24T03:16:00-04:00</updated>
 <published>2023-06-24T03:16:00-04:00</published>
@@ -3756,72 +3820,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <valueName>VTEC</valueName>
 <value>/O.CON.KCAE.FL.W.0039.000000T0000Z-230627T1124Z/
 /GADS1.1.ER.230622T1412Z.230624T0700Z.230626T1124Z.UU/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=SC12664F288A08.FloodWarning.12664F37CE3CSC.CHSFLSCHS.346f750c9385268fc0e0a9d0a3e439e2</id>
-<updated>2023-06-23T22:10:00-04:00</updated>
-<published>2023-06-23T22:10:00-04:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Flood Warning issued June 23 at 10:10PM EDT until further notice by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=SC12664F288A08.FloodWarning.12664F37CE3CSC.CHSFLSCHS.346f750c9385268fc0e0a9d0a3e439e2"/>
-<summary>...FLOOD WARNING REMAINS IN EFFECT UNTIL FURTHER NOTICE... * WHAT...Minor flooding is forecast. * WHERE...Santee River near Jamestown. * WHEN...Until further notice. * IMPACTS...At 12.0 feet, several dirt logging roads are impassable. * ADDITIONAL DETAILS...</summary>
-<cap:event>Flood Warning</cap:event>
-<cap:effective>2023-06-23T22:10:00-04:00</cap:effective>
-<cap:expires>2023-06-24T22:15:00-04:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Berkeley; Georgetown; Williamsburg</cap:areaDesc>
-<cap:polygon>33.47,-80.02 33.54,-79.98 33.25,-79.37 33.21,-79.38 33.2,-79.51 33.29,-79.76 33.47,-80.02</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>045015 045043 045089</value>
-<valueName>UGC</valueName>
-<value>SCC015 SCC043 SCC089</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KCHS.FL.W.0022.000000T0000Z-000000T0000Z/
-/JAMS1.1.ER.230624T1130Z.230626T0000Z.000000T0000Z.NO/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=SC12664F286B2C.FloodWarning.12664F6763E0SC.ILMFLSILM.8a2875e53dcf2706cf2a82f036937439</id>
-<updated>2023-06-23T21:31:00-04:00</updated>
-<published>2023-06-23T21:31:00-04:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Flood Warning issued June 23 at 9:31PM EDT until June 28 at 10:00AM EDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=SC12664F286B2C.FloodWarning.12664F6763E0SC.ILMFLSILM.8a2875e53dcf2706cf2a82f036937439"/>
-<summary>...The Flood Warning is extended for the following rivers in South Carolina... Great Pee Dee River At Pee Dee affecting Florence and Marion Counties. For the Great Pee Dee River...including Pee Dee, Bennettsville 10sw...Minor flooding is forecast.</summary>
-<cap:event>Flood Warning</cap:event>
-<cap:effective>2023-06-23T21:31:00-04:00</cap:effective>
-<cap:expires>2023-06-28T10:00:00-04:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Florence; Marion</cap:areaDesc>
-<cap:polygon>34.24,-79.62 34.24,-79.5 34,-79.45 33.85,-79.32 33.85,-79.44 33.98,-79.57 34.24,-79.62</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>045041 045067</value>
-<valueName>UGC</valueName>
-<value>SCC041 SCC067</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.EXT.KILM.FL.W.0016.230624T1800Z-230628T1400Z/
-/PDES1.1.ER.230624T1800Z.230626T0000Z.230628T0200Z.NO/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -5283,38 +5281,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value>/O.NEW.KDLH.BH.S.0007.230624T1500Z-230625T0200Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=WI12664F2999E8.DenseFogAdvisory.12664F2A5AE0WI.DLHNPWDLH.fb13a77e7ae98f553a310afb8eddf998</id>
-<updated>2023-06-24T04:06:00-05:00</updated>
-<published>2023-06-24T04:06:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Dense Fog Advisory issued June 24 at 4:06AM CDT until June 24 at 9:00AM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=WI12664F2999E8.DenseFogAdvisory.12664F2A5AE0WI.DLHNPWDLH.fb13a77e7ae98f553a310afb8eddf998"/>
-<summary>...DENSE FOG ADVISORY REMAINS IN EFFECT UNTIL 9 AM CDT THIS MORNING... * WHAT...Visibility less than one mile in dense fog. * WHERE...Douglas, Bayfield and Ashland Counties. This includes the Tribal Lands of the Red Cliff Band and the Bad River Reservation.</summary>
-<cap:event>Dense Fog Advisory</cap:event>
-<cap:effective>2023-06-24T04:06:00-05:00</cap:effective>
-<cap:expires>2023-06-24T09:00:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Ashland; Bayfield; Douglas</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>055003 055007 055031</value>
-<valueName>UGC</valueName>
-<value>WIZ001 WIZ002 WIZ003</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KDLH.FG.Y.0006.000000T0000Z-230624T1400Z/</value>
 </cap:parameter>
 </entry>
 <entry>
