@@ -16,11 +16,11 @@ xmlns = 'http://www.w3.org/2005/Atom'
 xmlns:cap = 'urn:oasis:names:tc:emergency:cap:1.1'
 xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 >
-<!-- http-date = Sun, 02 Jul 2023 08:29:00 GMT -->
+<!-- http-date = Sun, 02 Jul 2023 09:02:00 GMT -->
 <id>https://alerts.weather.gov/cap/us.php?x=0</id>
 <logo>http://alerts.weather.gov/images/xml_logo.gif</logo>
 <generator>NWS CAP Server</generator>
-<updated>2023-07-02T04:29:00-04:00</updated>
+<updated>2023-07-02T04:02:00-05:00</updated>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
@@ -155,6 +155,38 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=AR126653CFAFA0.HeatAdvisory.126653DDD0D0AR.LZKNPWLZK.58c039f74078363982c548ee81ae83bb</id>
+<updated>2023-07-02T03:40:00-05:00</updated>
+<published>2023-07-02T03:40:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Heat Advisory issued July 02 at 3:40AM CDT until July 02 at 8:00PM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=AR126653CFAFA0.HeatAdvisory.126653DDD0D0AR.LZKNPWLZK.58c039f74078363982c548ee81ae83bb"/>
+<summary>...HEAT ADVISORY REMAINS IN EFFECT FROM NOON TODAY TO 8 PM CDT THIS EVENING... * WHAT...Heat index values up to 109 expected. * WHERE...Monroe, Arkansas, Lincoln, Desha, Bradley and Drew Counties. * WHEN...From noon today to 8 PM CDT this evening.</summary>
+<cap:event>Heat Advisory</cap:event>
+<cap:effective>2023-07-02T03:40:00-05:00</cap:effective>
+<cap:expires>2023-07-02T20:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Arkansas; Bradley; Desha; Drew; Lincoln; Monroe</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>005001 005011 005041 005043 005079 005095</value>
+<valueName>UGC</valueName>
+<value>ARZ047 ARZ057 ARZ064 ARZ065 ARZ068 ARZ069</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KLZK.HT.Y.0010.230702T1700Z-230703T0100Z/</value>
+</cap:parameter>
+</entry>
+<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=AR126653CFAA8C.HeatAdvisory.126653DDF7E0AR.JANNPWJAN.171848e9eb8d1b0e3344c97b33fc120b</id>
 <updated>2023-07-02T03:27:00-05:00</updated>
 <published>2023-07-02T03:27:00-05:00</published>
@@ -248,38 +280,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value>/O.CON.KSHV.HT.Y.0014.230702T1500Z-230703T0100Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=AR126653CEBBE0.HeatAdvisory.126653DDD0D0AR.LZKNPWLZK.58c039f74078363982c548ee81ae83bb</id>
-<updated>2023-07-01T21:16:00-05:00</updated>
-<published>2023-07-01T21:16:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Heat Advisory issued July 01 at 9:16PM CDT until July 02 at 8:00PM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=AR126653CEBBE0.HeatAdvisory.126653DDD0D0AR.LZKNPWLZK.58c039f74078363982c548ee81ae83bb"/>
-<summary>...HEAT ADVISORY REMAINS IN EFFECT FROM NOON TO 8 PM CDT SUNDAY... * WHAT...Maximum heat index values from 105 to 110 degrees. * WHERE...Southeast Arkansas. * WHEN...Noon to 8 PM CDT Sunday. * IMPACTS...Hot temperatures and high humidity may cause heat illnesses to occur.</summary>
-<cap:event>Heat Advisory</cap:event>
-<cap:effective>2023-07-01T21:16:00-05:00</cap:effective>
-<cap:expires>2023-07-02T20:00:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Arkansas; Bradley; Desha; Drew; Lincoln; Monroe</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>005001 005011 005041 005043 005079 005095</value>
-<valueName>UGC</valueName>
-<value>ARZ047 ARZ057 ARZ064 ARZ065 ARZ068 ARZ069</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KLZK.HT.Y.0010.230702T1700Z-230703T0100Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -2083,50 +2083,115 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=KY126653CFA8FC.SevereThunderstormWarning.126653CFC710KY.PAHSVRPAH.a4b00d3c4f73d9b5db10d29b030dc243</id>
-<updated>2023-07-02T04:23:00-04:00</updated>
-<published>2023-07-02T04:23:00-04:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=KY126653CFC7D8.FloodAdvisory.126653D01530KY.PAHFLSPAH.fde6c1b97ae691e1eb6ff8ade65a7c74</id>
+<updated>2023-07-02T05:02:00-04:00</updated>
+<published>2023-07-02T05:02:00-04:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Severe Thunderstorm Warning issued July 02 at 4:23AM EDT until July 02 at 5:00AM EDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=KY126653CFA8FC.SevereThunderstormWarning.126653CFC710KY.PAHSVRPAH.a4b00d3c4f73d9b5db10d29b030dc243"/>
-<summary>The National Weather Service in Paducah has issued a * Severe Thunderstorm Warning for... Southeastern Livingston County in western Kentucky... Southwestern Caldwell County in western Kentucky... Northern Marshall County in western Kentucky... Lyon County in western Kentucky...</summary>
-<cap:event>Severe Thunderstorm Warning</cap:event>
-<cap:effective>2023-07-02T04:23:00-04:00</cap:effective>
-<cap:expires>2023-07-02T05:00:00-04:00</cap:expires>
+<title>Flood Advisory issued July 02 at 5:02AM EDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=KY126653CFC7D8.FloodAdvisory.126653D01530KY.PAHFLSPAH.fde6c1b97ae691e1eb6ff8ade65a7c74"/>
+<summary>...FLOOD ADVISORY IN EFFECT UNTIL 6 AM CDT EARLY THIS MORNING... * WHAT...Urban and small stream flooding caused by excessive rainfall is expected. * WHERE...A portion of western Kentucky, including the following counties, Daviess, Henderson, Hopkins, McLean and Webster. * WHEN...Until 600 AM CDT.</summary>
+<cap:event>Flood Advisory</cap:event>
+<cap:effective>2023-07-02T05:02:00-04:00</cap:effective>
+<cap:expires>2023-07-02T07:00:00-04:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
 <cap:category>Met</cap:category>
-<cap:urgency>Immediate</cap:urgency>
-<cap:severity>Severe</cap:severity>
-<cap:certainty>Observed</cap:certainty>
-<cap:areaDesc>Caldwell; Livingston; Lyon; Marshall</cap:areaDesc>
-<cap:polygon>37.01,-88.45 37.15,-88 36.95,-87.91 36.92,-88.43 37.01,-88.45</cap:polygon>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Daviess; Henderson; Hopkins; McLean; Webster</cap:areaDesc>
+<cap:polygon>37.52,-87.75 37.64,-87.63 37.76,-87.53 37.84,-87.38 37.83,-87.23 37.8,-87.14 37.77,-87.18 37.57,-87.37 37.4,-87.33 37.32,-87.43 37.3,-87.57 37.41,-87.66 37.52,-87.75</cap:polygon>
 <cap:geocode>
 <valueName>FIPS6</valueName>
-<value>021033 021139 021143 021157</value>
+<value>021059 021101 021107 021149 021233</value>
 <valueName>UGC</valueName>
-<value>KYC033 KYC139 KYC143 KYC157</value>
+<value>KYC059 KYC101 KYC107 KYC149 KYC233</value>
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
-<value>/O.NEW.KPAH.SV.W.0298.230702T0823Z-230702T0900Z/</value>
+<value>/O.NEW.KPAH.FA.Y.0043.230702T0902Z-230702T1100Z/
+/00000.N.ER.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=KY126653CF8C78.FloodAdvisory.126653CFC710KY.PAHFLSPAH.c3d0628a53962df51fb0b55f5d4b9f08</id>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=KY126653CFC710.SpecialWeatherStatement.126653CFD2C8KY.LMKSPSLMK.01d4da011f0314a2ecddd18f7605b304</id>
+<updated>2023-07-02T05:00:00-04:00</updated>
+<published>2023-07-02T05:00:00-04:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Special Weather Statement issued July 02 at 5:00AM EDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=KY126653CFC710.SpecialWeatherStatement.126653CFD2C8KY.LMKSPSLMK.01d4da011f0314a2ecddd18f7605b304"/>
+<summary>...A strong thunderstorm will impact portions of central Ohio County through 430 AM CDT... At 400 AM CDT, Doppler radar was tracking a strong thunderstorm near Livermore, moving east at 40 mph. HAZARD...Winds in excess of 30 mph and half inch hail. SOURCE...Radar indicated.</summary>
+<cap:event>Special Weather Statement</cap:event>
+<cap:effective>2023-07-02T05:00:00-04:00</cap:effective>
+<cap:expires>2023-07-02T05:30:00-04:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Observed</cap:certainty>
+<cap:areaDesc>Ohio</cap:areaDesc>
+<cap:polygon>37.63,-86.75 37.43,-86.69 37.37,-87.04 37.37,-87.07 37.36,-87.08 37.36,-87.1 37.37,-87.1 37.38,-87.09 37.39,-87.1 37.46,-87.1 37.47,-87.12 37.63,-86.75</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>021183</value>
+<valueName>UGC</valueName>
+<value>KYZ026</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value></value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=KY126653CFB450.SpecialWeatherStatement.126653CFCCECKY.LMKSPSLMK.76d276e53fcab7411369c4a0350e1f74</id>
+<updated>2023-07-02T04:52:00-04:00</updated>
+<published>2023-07-02T04:52:00-04:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Special Weather Statement issued July 02 at 4:52AM EDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=KY126653CFB450.SpecialWeatherStatement.126653CFCCECKY.LMKSPSLMK.76d276e53fcab7411369c4a0350e1f74"/>
+<summary>...A strong thunderstorm will impact portions of southeastern Spencer, northeastern Nelson, southwestern Anderson and northwestern Washington Counties through 515 AM EDT... At 452 AM EDT, Doppler radar was tracking a strong thunderstorm over Bardstown, moving east at 55 mph. HAZARD...Winds in excess of 30 mph and half inch hail.</summary>
+<cap:event>Special Weather Statement</cap:event>
+<cap:effective>2023-07-02T04:52:00-04:00</cap:effective>
+<cap:expires>2023-07-02T05:15:00-04:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Observed</cap:certainty>
+<cap:areaDesc>Anderson; Nelson; Spencer; Washington</cap:areaDesc>
+<cap:polygon>37.93,-84.98 37.92,-84.98 37.72,-85.5 37.89,-85.58 38.04,-85.11 38.04,-85.08 38.05,-85.07 38.06,-85.05 37.93,-84.98</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>021005 021179 021215 021229</value>
+<valueName>UGC</valueName>
+<value>KYZ038 KYZ039 KYZ045 KYZ046</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value></value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=KY126653CF8C78.FloodAdvisory.126653D01530KY.PAHFLSPAH.c3d0628a53962df51fb0b55f5d4b9f08</id>
 <updated>2023-07-02T03:50:00-04:00</updated>
 <published>2023-07-02T03:50:00-04:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Flood Advisory issued July 02 at 3:50AM EDT until July 02 at 5:00AM EDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=KY126653CF8C78.FloodAdvisory.126653CFC710KY.PAHFLSPAH.c3d0628a53962df51fb0b55f5d4b9f08"/>
+<title>Flood Advisory issued July 02 at 3:50AM EDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=KY126653CF8C78.FloodAdvisory.126653D01530KY.PAHFLSPAH.c3d0628a53962df51fb0b55f5d4b9f08"/>
 <summary>...FLOOD ADVISORY IN EFFECT UNTIL 6 AM CDT EARLY THIS MORNING... * WHAT...Urban and small stream flooding caused by excessive rainfall is expected. * WHERE...A portion of western Kentucky, including the following counties, Daviess and McLean. * WHEN...Until 600 AM CDT.</summary>
 <cap:event>Flood Advisory</cap:event>
 <cap:effective>2023-07-02T03:50:00-04:00</cap:effective>
-<cap:expires>2023-07-02T05:00:00-04:00</cap:expires>
+<cap:expires>2023-07-02T07:00:00-04:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
 <cap:category>Met</cap:category>
@@ -2145,6 +2210,38 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <valueName>VTEC</valueName>
 <value>/O.NEW.KPAH.FA.Y.0042.230702T0750Z-230702T1100Z/
 /00000.N.ER.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=LA126653CFC7D8.HeatAdvisory.126653DDD0D0LA.LIXNPWLIX.663140b495d02f5506076700353c5b55</id>
+<updated>2023-07-02T04:02:00-05:00</updated>
+<published>2023-07-02T04:02:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Heat Advisory issued July 02 at 4:02AM CDT until July 02 at 8:00PM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=LA126653CFC7D8.HeatAdvisory.126653DDD0D0LA.LIXNPWLIX.663140b495d02f5506076700353c5b55"/>
+<summary>...HEAT ADVISORY REMAINS IN EFFECT FROM 11 AM THIS MORNING TO 8 PM CDT THIS EVENING... * WHAT...Heat index values up to 112 expected. * WHERE...Portions of southeast Louisiana and southern Mississippi. * WHEN...From 11 AM to 8 PM CDT today.</summary>
+<cap:event>Heat Advisory</cap:event>
+<cap:effective>2023-07-02T04:02:00-05:00</cap:effective>
+<cap:expires>2023-07-02T20:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Assumption; Central Plaquemines; Central Tangipahoa; Coastal Jefferson; East Baton Rouge; East Feliciana; Eastern Ascension; Eastern Orleans; Iberville; Lower Jefferson; Lower Lafourche; Lower Plaquemines; Lower St. Bernard; Lower Tangipahoa; Lower Terrebonne; Northern Livingston; Northern St. Tammany; Northern Tangipahoa; Pointe Coupee; Southeast St. Tammany; Southern Livingston; Southwestern St. Tammany; St. Charles; St. Helena; St. James; St. John The Baptist; Upper Jefferson; Upper Lafourche; Upper Plaquemines; Upper St. Bernard; Upper Terrebonne; Washington; West Baton Rouge; West Feliciana; Western Ascension; Western Orleans</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>022005 022007 022033 022037 022047 022051 022057 022063 022071 022075 022077 022087 022089 022091 022093 022095 022103 022105 022109 022117 022121 022125</value>
+<valueName>UGC</valueName>
+<value>LAZ034 LAZ035 LAZ036 LAZ037 LAZ039 LAZ046 LAZ047 LAZ048 LAZ056 LAZ057 LAZ058 LAZ059 LAZ060 LAZ064 LAZ065 LAZ066 LAZ067 LAZ068 LAZ069 LAZ070 LAZ071 LAZ076 LAZ077 LAZ078 LAZ079 LAZ080 LAZ081 LAZ082 LAZ083 LAZ084 LAZ085 LAZ086 LAZ087 LAZ088 LAZ089 LAZ090</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KLIX.HT.Y.0011.230702T1600Z-230703T0100Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -2276,38 +2373,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=LA126653CEC02C.HeatAdvisory.126653DDD0D0LA.LIXNPWLIX.663140b495d02f5506076700353c5b55</id>
-<updated>2023-07-01T21:27:00-05:00</updated>
-<published>2023-07-01T21:27:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Heat Advisory issued July 01 at 9:27PM CDT until July 02 at 8:00PM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=LA126653CEC02C.HeatAdvisory.126653DDD0D0LA.LIXNPWLIX.663140b495d02f5506076700353c5b55"/>
-<summary>...HEAT ADVISORY REMAINS IN EFFECT FROM 11 AM TO 8 PM CDT SUNDAY... * WHAT...Heat index values up to 109 expected. * WHERE...Portions of southeast Louisiana and southern Mississippi. * WHEN...From 11 AM to 8 PM CDT Sunday.</summary>
-<cap:event>Heat Advisory</cap:event>
-<cap:effective>2023-07-01T21:27:00-05:00</cap:effective>
-<cap:expires>2023-07-02T20:00:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Assumption; Central Plaquemines; Central Tangipahoa; Coastal Jefferson; East Baton Rouge; East Feliciana; Eastern Ascension; Eastern Orleans; Iberville; Lower Jefferson; Lower Lafourche; Lower Plaquemines; Lower St. Bernard; Lower Tangipahoa; Lower Terrebonne; Northern Livingston; Northern St. Tammany; Northern Tangipahoa; Pointe Coupee; Southeast St. Tammany; Southern Livingston; Southwestern St. Tammany; St. Charles; St. Helena; St. James; St. John The Baptist; Upper Jefferson; Upper Lafourche; Upper Plaquemines; Upper St. Bernard; Upper Terrebonne; Washington; West Baton Rouge; West Feliciana; Western Ascension; Western Orleans</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>022005 022007 022033 022037 022047 022051 022057 022063 022071 022075 022077 022087 022089 022091 022093 022095 022103 022105 022109 022117 022121 022125</value>
-<valueName>UGC</valueName>
-<value>LAZ034 LAZ035 LAZ036 LAZ037 LAZ039 LAZ046 LAZ047 LAZ048 LAZ056 LAZ057 LAZ058 LAZ059 LAZ060 LAZ064 LAZ065 LAZ066 LAZ067 LAZ068 LAZ069 LAZ070 LAZ071 LAZ076 LAZ077 LAZ078 LAZ079 LAZ080 LAZ081 LAZ082 LAZ083 LAZ084 LAZ085 LAZ086 LAZ087 LAZ088 LAZ089 LAZ090</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KLIX.HT.Y.0011.230702T1600Z-230703T0100Z/</value>
-</cap:parameter>
-</entry>
-<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=LA126653CE784C.FloodWarning.126653E0DE10LA.LIXFLSLIX.1e6a95876b854a38ac1b0c116079b719</id>
 <updated>2023-07-01T19:43:00-05:00</updated>
 <published>2023-07-01T19:43:00-05:00</published>
@@ -2403,38 +2468,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value>/O.CON.KLWX.CF.Y.0049.000000T0000Z-230702T1300Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=MD126653CF40B0.CoastalFloodStatement.126653CFC710MD.AKQCFWAKQ.c6f89fc5f2fe5b5dec949cb8ee4e3439</id>
-<updated>2023-07-02T01:56:00-04:00</updated>
-<published>2023-07-02T01:56:00-04:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Coastal Flood Statement issued July 02 at 1:56AM EDT until July 02 at 5:00AM EDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MD126653CF40B0.CoastalFloodStatement.126653CFC710MD.AKQCFWAKQ.c6f89fc5f2fe5b5dec949cb8ee4e3439"/>
-<summary>...COASTAL FLOOD STATEMENT NOW IN EFFECT UNTIL 5 AM EDT EARLY THIS MORNING... * WHAT...Up to one half foot of inundation above ground level expected in low-lying areas near shorelines and tidal waterways. * WHERE...Dorchester County. * WHEN...Until 5 AM EDT early this morning.</summary>
-<cap:event>Coastal Flood Statement</cap:event>
-<cap:effective>2023-07-02T01:56:00-04:00</cap:effective>
-<cap:expires>2023-07-02T05:00:00-04:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Unknown</cap:urgency>
-<cap:severity>Unknown</cap:severity>
-<cap:certainty>Unknown</cap:certainty>
-<cap:areaDesc>Dorchester</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>024019</value>
-<valueName>UGC</valueName>
-<value>MDZ021</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.EXT.KAKQ.CF.S.0021.000000T0000Z-230702T0900Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -2566,6 +2599,38 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=MS126653CFC7D8.HeatAdvisory.126653DDD0D0MS.LIXNPWLIX.5997679e91457bf6bcd9eb0afa506a04</id>
+<updated>2023-07-02T04:02:00-05:00</updated>
+<published>2023-07-02T04:02:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Heat Advisory issued July 02 at 4:02AM CDT until July 02 at 8:00PM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MS126653CFC7D8.HeatAdvisory.126653DDD0D0MS.LIXNPWLIX.5997679e91457bf6bcd9eb0afa506a04"/>
+<summary>...HEAT ADVISORY REMAINS IN EFFECT FROM 11 AM THIS MORNING TO 8 PM CDT THIS EVENING... * WHAT...Heat index values up to 112 expected. * WHERE...Portions of southeast Louisiana and southern Mississippi. * WHEN...From 11 AM to 8 PM CDT today.</summary>
+<cap:event>Heat Advisory</cap:event>
+<cap:effective>2023-07-02T04:02:00-05:00</cap:effective>
+<cap:expires>2023-07-02T20:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Amite; Northern Hancock; Northern Harrison; Northern Jackson; Pearl River; Pike; Southern Hancock; Southern Harrison; Southern Jackson; Walthall; Wilkinson</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>028005 028045 028047 028059 028109 028113 028147 028157</value>
+<valueName>UGC</valueName>
+<value>MSZ068 MSZ069 MSZ070 MSZ071 MSZ077 MSZ083 MSZ084 MSZ085 MSZ086 MSZ087 MSZ088</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KLIX.HT.Y.0011.230702T1600Z-230703T0100Z/</value>
+</cap:parameter>
+</entry>
+<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=MS126653CFAA8C.HeatAdvisory.126653DDF7E0MS.JANNPWJAN.5441bff30ce2d59191199a5d55fca4fb</id>
 <updated>2023-07-02T03:27:00-05:00</updated>
 <published>2023-07-02T03:27:00-05:00</published>
@@ -2659,38 +2724,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value>/O.EXT.KMOB.HT.Y.0008.230702T1600Z-230703T0000Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=MS126653CEC02C.HeatAdvisory.126653DDD0D0MS.LIXNPWLIX.5997679e91457bf6bcd9eb0afa506a04</id>
-<updated>2023-07-01T21:27:00-05:00</updated>
-<published>2023-07-01T21:27:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Heat Advisory issued July 01 at 9:27PM CDT until July 02 at 8:00PM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MS126653CEC02C.HeatAdvisory.126653DDD0D0MS.LIXNPWLIX.5997679e91457bf6bcd9eb0afa506a04"/>
-<summary>...HEAT ADVISORY REMAINS IN EFFECT FROM 11 AM TO 8 PM CDT SUNDAY... * WHAT...Heat index values up to 109 expected. * WHERE...Portions of southeast Louisiana and southern Mississippi. * WHEN...From 11 AM to 8 PM CDT Sunday.</summary>
-<cap:event>Heat Advisory</cap:event>
-<cap:effective>2023-07-01T21:27:00-05:00</cap:effective>
-<cap:expires>2023-07-02T20:00:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Amite; Northern Hancock; Northern Harrison; Northern Jackson; Pearl River; Pike; Southern Hancock; Southern Harrison; Southern Jackson; Walthall; Wilkinson</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>028005 028045 028047 028059 028109 028113 028147 028157</value>
-<valueName>UGC</valueName>
-<value>MSZ068 MSZ069 MSZ070 MSZ071 MSZ077 MSZ083 MSZ084 MSZ085 MSZ086 MSZ087 MSZ088</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KLIX.HT.Y.0011.230702T1600Z-230703T0100Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -3341,6 +3374,38 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <valueName>VTEC</valueName>
 <value>/O.NEW.KBTV.FA.W.0007.230702T0604Z-230702T0915Z/
 /00000.0.ER.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=OH126653CFAF3C.SpecialWeatherStatement.126653CFD2C8OH.PBZSPSPBZ.7062e2d40b12fa344a4ac8a3f7b44d1b</id>
+<updated>2023-07-02T04:39:00-04:00</updated>
+<published>2023-07-02T04:39:00-04:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Special Weather Statement issued July 02 at 4:39AM EDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=OH126653CFAF3C.SpecialWeatherStatement.126653CFD2C8OH.PBZSPSPBZ.7062e2d40b12fa344a4ac8a3f7b44d1b"/>
+<summary>...STRONG THUNDERSTORMS WILL IMPACT EASTERN MONROE...SOUTHEASTERN BELMONT...OHIO...NORTHERN WETZEL AND MARSHALL COUNTIES THROUGH 530 AM EDT... At 439 AM EDT, Doppler radar was tracking a cluster of strong thunderstorms along a line extending from 6 miles north of Woodsfield to near Sistersville. Movement was northeast at 35 mph.</summary>
+<cap:event>Special Weather Statement</cap:event>
+<cap:effective>2023-07-02T04:39:00-04:00</cap:effective>
+<cap:expires>2023-07-02T05:30:00-04:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Observed</cap:certainty>
+<cap:areaDesc>Belmont; Monroe</cap:areaDesc>
+<cap:polygon>39.57,-81.04 39.57,-81.05 39.87,-81.19 40.09,-80.69 39.74,-80.52 39.72,-80.52 39.72,-80.51 39.65,-80.47 39.58,-80.83 39.59,-80.85 39.6,-80.85 39.58,-80.89 39.61,-80.95 39.54,-81.03 39.57,-81.04</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>039013 039111</value>
+<valueName>UGC</valueName>
+<value>OHZ059 OHZ069</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value></value>
 </cap:parameter>
 </entry>
 <entry>
@@ -4213,6 +4278,38 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value>/O.NEW.KDLH.FG.Y.0010.230702T0718Z-230702T1300Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=WV126653CFAF3C.SpecialWeatherStatement.126653CFD2C8WV.PBZSPSPBZ.da4ba3d7e542b9a04c890fab6ae9aea6</id>
+<updated>2023-07-02T04:39:00-04:00</updated>
+<published>2023-07-02T04:39:00-04:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Special Weather Statement issued July 02 at 4:39AM EDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=WV126653CFAF3C.SpecialWeatherStatement.126653CFD2C8WV.PBZSPSPBZ.da4ba3d7e542b9a04c890fab6ae9aea6"/>
+<summary>...STRONG THUNDERSTORMS WILL IMPACT EASTERN MONROE...SOUTHEASTERN BELMONT...OHIO...NORTHERN WETZEL AND MARSHALL COUNTIES THROUGH 530 AM EDT... At 439 AM EDT, Doppler radar was tracking a cluster of strong thunderstorms along a line extending from 6 miles north of Woodsfield to near Sistersville. Movement was northeast at 35 mph.</summary>
+<cap:event>Special Weather Statement</cap:event>
+<cap:effective>2023-07-02T04:39:00-04:00</cap:effective>
+<cap:expires>2023-07-02T05:30:00-04:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Observed</cap:certainty>
+<cap:areaDesc>Marshall; Ohio; Wetzel</cap:areaDesc>
+<cap:polygon>39.57,-81.04 39.57,-81.05 39.87,-81.19 40.09,-80.69 39.74,-80.52 39.72,-80.52 39.72,-80.51 39.65,-80.47 39.58,-80.83 39.59,-80.85 39.6,-80.85 39.58,-80.89 39.61,-80.95 39.54,-81.03 39.57,-81.04</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>054051 054069 054103</value>
+<valueName>UGC</valueName>
+<value>WVZ003 WVZ004 WVZ012</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value></value>
 </cap:parameter>
 </entry>
 </feed>
