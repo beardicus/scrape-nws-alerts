@@ -16,11 +16,11 @@ xmlns = 'http://www.w3.org/2005/Atom'
 xmlns:cap = 'urn:oasis:names:tc:emergency:cap:1.1'
 xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 >
-<!-- http-date = Fri, 28 Jul 2023 03:32:00 GMT -->
+<!-- http-date = Fri, 28 Jul 2023 04:02:00 GMT -->
 <id>https://alerts.weather.gov/cap/us.php?x=0</id>
 <logo>http://alerts.weather.gov/images/xml_logo.gif</logo>
 <generator>NWS CAP Server</generator>
-<updated>2023-07-27T21:32:00-06:00</updated>
+<updated>2023-07-27T21:02:00-07:00</updated>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
@@ -414,49 +414,81 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=AZ1266555BA090.SpecialWeatherStatement.1266555BBE40AZ.TWCSPSTWC.620b79eeece587f7bc7b82db62e6bd83</id>
-<updated>2023-07-27T20:24:00-07:00</updated>
-<published>2023-07-27T20:24:00-07:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=AZ1266555BBF08.SevereThunderstormWarning.1266555BCFD4AZ.TWCSVRTWC.a73c72787de54ca04f957552a3c7bf1d</id>
+<updated>2023-07-27T21:02:00-07:00</updated>
+<published>2023-07-27T21:02:00-07:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Special Weather Statement issued July 27 at 8:24PM MST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=AZ1266555BA090.SpecialWeatherStatement.1266555BBE40AZ.TWCSPSTWC.620b79eeece587f7bc7b82db62e6bd83"/>
-<summary>...A strong thunderstorm will impact portions of eastern Pima County through 900 PM MST... At 824 PM MST, Doppler radar was tracking a strong thunderstorm near Saguaro National Park East, or 16 miles northeast of Davis-Monthan Air Force Base, moving west at 20 mph. HAZARD...Wind gusts up to 50 mph.</summary>
-<cap:event>Special Weather Statement</cap:event>
-<cap:effective>2023-07-27T20:24:00-07:00</cap:effective>
-<cap:expires>2023-07-27T21:00:00-07:00</cap:expires>
+<title>Severe Thunderstorm Warning issued July 27 at 9:02PM MST until July 27 at 9:45PM MST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=AZ1266555BBF08.SevereThunderstormWarning.1266555BCFD4AZ.TWCSVRTWC.a73c72787de54ca04f957552a3c7bf1d"/>
+<summary>The National Weather Service in Tucson has issued a * Severe Thunderstorm Warning for... Southeastern Pima County in southeastern Arizona... North central Santa Cruz County in southeastern Arizona... * Until 945 PM MST. * At 901 PM MST, a severe thunderstorm was located 11 miles south of</summary>
+<cap:event>Severe Thunderstorm Warning</cap:event>
+<cap:effective>2023-07-27T21:02:00-07:00</cap:effective>
+<cap:expires>2023-07-27T21:45:00-07:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
 <cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
+<cap:urgency>Immediate</cap:urgency>
+<cap:severity>Severe</cap:severity>
 <cap:certainty>Observed</cap:certainty>
-<cap:areaDesc>Santa Catalina and Rincon Mountains including Mount Lemmon, Summerhaven; Tucson Metro Area including Tucson, Green Valley, Marana, Vail; Upper San Pedro River Valley including Sierra Vista, Benson</cap:areaDesc>
-<cap:polygon>32.34,-110.47 32.2,-110.46 32.17,-110.76 32.36,-110.77 32.34,-110.47</cap:polygon>
+<cap:areaDesc>Pima; Santa Cruz</cap:areaDesc>
+<cap:polygon>31.95,-110.5 31.7,-110.54 31.61,-111.26 32.05,-111.23 31.95,-110.5</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>004019 004023</value>
+<valueName>UGC</valueName>
+<value>AZC019 AZC023</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.NEW.KTWC.SV.W.0043.230728T0402Z-230728T0445Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=AZ1266555BBE40.SevereWeatherStatement.1266555BC41CAZ.TWCSVSTWC.7a945df018c97e6479416e051ae68f22</id>
+<updated>2023-07-27T21:00:00-07:00</updated>
+<published>2023-07-27T21:00:00-07:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Severe Weather Statement issued July 27 at 9:00PM MST until July 27 at 9:15PM MST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=AZ1266555BBE40.SevereWeatherStatement.1266555BC41CAZ.TWCSVSTWC.7a945df018c97e6479416e051ae68f22"/>
+<summary>...THE SEVERE THUNDERSTORM WARNING FOR EAST CENTRAL PIMA AND NORTHWESTERN COCHISE COUNTIES IS CANCELLED... The storm which prompted the warning has moved out of the area. Therefore, the warning has been cancelled. However gusty winds are still possible with this thunderstorm.</summary>
+<cap:event>Severe Weather Statement</cap:event>
+<cap:effective>2023-07-27T21:00:00-07:00</cap:effective>
+<cap:expires>2023-07-27T21:15:00-07:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Immediate</cap:urgency>
+<cap:severity>Severe</cap:severity>
+<cap:certainty>Observed</cap:certainty>
+<cap:areaDesc>Cochise; Pima</cap:areaDesc>
+<cap:polygon>32.34,-110.51 32.21,-110.43 32.05,-110.71 32.27,-110.82 32.34,-110.51</cap:polygon>
 <cap:geocode>
 <valueName>FIPS6</valueName>
 <value>004003 004019</value>
 <valueName>UGC</valueName>
-<value>AZZ504 AZZ507 AZZ514</value>
+<value>AZC003 AZC019</value>
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
-<value></value>
+<value>/O.CAN.KTWC.SV.W.0042.000000T0000Z-230728T0415Z/</value>
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=AZ1266555BA02C.SevereThunderstormWarning.1266555BC41CAZ.TWCSVRTWC.fab861a0f3aa235d5b202154129ecfe9</id>
-<updated>2023-07-27T20:23:00-07:00</updated>
-<published>2023-07-27T20:23:00-07:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=AZ1266555BA8C4.SevereThunderstormWarning.1266555BC41CAZ.TWCSVSTWC.fab861a0f3aa235d5b202154129ecfe9</id>
+<updated>2023-07-27T20:45:00-07:00</updated>
+<published>2023-07-27T20:45:00-07:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Severe Thunderstorm Warning issued July 27 at 8:23PM MST until July 27 at 9:15PM MST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=AZ1266555BA02C.SevereThunderstormWarning.1266555BC41CAZ.TWCSVRTWC.fab861a0f3aa235d5b202154129ecfe9"/>
-<summary>The National Weather Service in Tucson has issued a * Severe Thunderstorm Warning for... Southeastern Pima County in southeastern Arizona... West central Cochise County in southeastern Arizona... Northeastern Santa Cruz County in southeastern Arizona... * Until 915 PM MST.</summary>
+<title>Severe Thunderstorm Warning issued July 27 at 8:45PM MST until July 27 at 9:15PM MST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=AZ1266555BA8C4.SevereThunderstormWarning.1266555BC41CAZ.TWCSVSTWC.fab861a0f3aa235d5b202154129ecfe9"/>
+<summary>...A SEVERE THUNDERSTORM WARNING REMAINS IN EFFECT UNTIL 915 PM MST FOR SOUTHEASTERN PIMA...WEST CENTRAL COCHISE AND NORTHEASTERN SANTA CRUZ COUNTIES... At 844 PM MST, a severe thunderstorm was located near Elgin, or 22 miles southwest of Benson, moving west at 10 mph. HAZARD...60 mph wind gusts and penny size hail.</summary>
 <cap:event>Severe Thunderstorm Warning</cap:event>
-<cap:effective>2023-07-27T20:23:00-07:00</cap:effective>
+<cap:effective>2023-07-27T20:45:00-07:00</cap:effective>
 <cap:expires>2023-07-27T21:15:00-07:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
@@ -465,7 +497,7 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:severity>Severe</cap:severity>
 <cap:certainty>Observed</cap:certainty>
 <cap:areaDesc>Cochise; Pima; Santa Cruz</cap:areaDesc>
-<cap:polygon>31.81,-110.41 31.63,-110.33 31.45,-110.62 31.74,-110.81 31.81,-110.41</cap:polygon>
+<cap:polygon>31.8,-110.46 31.66,-110.41 31.45,-110.62 31.74,-110.81 31.8,-110.46</cap:polygon>
 <cap:geocode>
 <valueName>FIPS6</valueName>
 <value>004003 004019 004023</value>
@@ -474,40 +506,39 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
-<value>/O.NEW.KTWC.SV.W.0041.230728T0323Z-230728T0415Z/</value>
+<value>/O.CON.KTWC.SV.W.0041.000000T0000Z-230728T0415Z/</value>
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=AZ1266555B7020.FlashFloodWarning.1266555BBE40AZ.TWCFFSTWC.56cd3892730bd02bbf89c13ae895cd65</id>
-<updated>2023-07-27T19:00:00-07:00</updated>
-<published>2023-07-27T19:00:00-07:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=AZ1266555BA8C4.SevereWeatherStatement.1266555BC41CAZ.TWCSVSTWC.f0bef24812628d39a5133ac144e95603</id>
+<updated>2023-07-27T20:45:00-07:00</updated>
+<published>2023-07-27T20:45:00-07:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Flash Flood Warning issued July 27 at 7:00PM MST until July 27 at 9:00PM MST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=AZ1266555B7020.FlashFloodWarning.1266555BBE40AZ.TWCFFSTWC.56cd3892730bd02bbf89c13ae895cd65"/>
-<summary>...FLASH FLOOD WARNING REMAINS IN EFFECT UNTIL 9 PM MST THIS EVENING FOR CENTRAL COCHISE COUNTY... At 700 PM MST, Doppler radar indicated the bulk of heavy precip was now west of the warning area. Between 1.5 and 3 inches of rain have fallen. Flash flooding is ongoing or expected to begin shortly. HAZARD...Life threatening flash flooding. Thunderstorms producing</summary>
-<cap:event>Flash Flood Warning</cap:event>
-<cap:effective>2023-07-27T19:00:00-07:00</cap:effective>
-<cap:expires>2023-07-27T21:00:00-07:00</cap:expires>
+<title>Severe Weather Statement issued July 27 at 8:45PM MST until July 27 at 9:15PM MST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=AZ1266555BA8C4.SevereWeatherStatement.1266555BC41CAZ.TWCSVSTWC.f0bef24812628d39a5133ac144e95603"/>
+<summary>...A SEVERE THUNDERSTORM WARNING REMAINS IN EFFECT UNTIL 915 PM MST FOR SOUTHEASTERN PIMA...WEST CENTRAL COCHISE AND NORTHEASTERN SANTA CRUZ COUNTIES... At 844 PM MST, a severe thunderstorm was located near Elgin, or 22 miles southwest of Benson, moving west at 10 mph. HAZARD...60 mph wind gusts and penny size hail.</summary>
+<cap:event>Severe Weather Statement</cap:event>
+<cap:effective>2023-07-27T20:45:00-07:00</cap:effective>
+<cap:expires>2023-07-27T21:15:00-07:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
 <cap:category>Met</cap:category>
 <cap:urgency>Immediate</cap:urgency>
 <cap:severity>Severe</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Cochise</cap:areaDesc>
-<cap:polygon>32.13,-110 32.07,-109.87 31.96,-109.94 32.01,-110.12 32.13,-110</cap:polygon>
+<cap:certainty>Observed</cap:certainty>
+<cap:areaDesc>Santa Cruz</cap:areaDesc>
+<cap:polygon>31.8,-110.46 31.66,-110.41 31.45,-110.62 31.74,-110.81 31.8,-110.46</cap:polygon>
 <cap:geocode>
 <valueName>FIPS6</valueName>
-<value>004003</value>
+<value>004023</value>
 <valueName>UGC</valueName>
-<value>AZC003</value>
+<value>AZC023</value>
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
-<value>/O.CON.KTWC.FF.W.0002.000000T0000Z-230728T0400Z/
-/00000.0.ER.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
+<value>/O.CON.KTWC.SV.W.0041.000000T0000Z-230728T0415Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -1249,6 +1280,38 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=CO1266555BA4DC.SpecialWeatherStatement.1266555BC41CCO.BOUSPSBOU.9538002215009e8730ab70b8ad0662fc</id>
+<updated>2023-07-27T21:35:00-06:00</updated>
+<published>2023-07-27T21:35:00-06:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Special Weather Statement issued July 27 at 9:35PM MDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CO1266555BA4DC.SpecialWeatherStatement.1266555BC41CCO.BOUSPSBOU.9538002215009e8730ab70b8ad0662fc"/>
+<summary>...A strong thunderstorm will impact portions of northeastern Grand County through 1015 PM MDT... At 928 PM MDT, Doppler radar was tracking a strong thunderstorm 10 miles north of Hot Sulphur Springs, or 59 miles west of Fort Collins, moving northeast at 25 mph. HAZARD...Winds in excess of 40 mph, brief heavy rain and penny size</summary>
+<cap:event>Special Weather Statement</cap:event>
+<cap:effective>2023-07-27T21:35:00-06:00</cap:effective>
+<cap:expires>2023-07-27T22:15:00-06:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Observed</cap:certainty>
+<cap:areaDesc>Grand and Summit Counties Below 9000 Feet; South and East Jackson, Larimer, North and Northeast Grand, Northwest Boulder Counties Above 9000 Feet</cap:areaDesc>
+<cap:polygon>40.45,-105.74 40.18,-105.71 40.18,-105.79 40.17,-105.8 40.12,-106.16 40.27,-106.19 40.45,-105.74</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>008049 008057 008069</value>
+<valueName>UGC</valueName>
+<value>COZ032 COZ033</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value></value>
+</cap:parameter>
+</entry>
+<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=CO1266554E2DFC.AirQualityAlert.1266555D6BF0CO.GJTAQAGJT.36be126bd480b63ef96af52261c0621d</id>
 <updated>2023-07-27T09:11:00-06:00</updated>
 <published>2023-07-27T09:11:00-06:00</published>
@@ -1703,6 +1766,38 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <valueName>VTEC</valueName>
 <value>/O.CON.PGUM.FA.A.0006.000000T0000Z-230728T0800Z/
 /00000.0.ER.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=IA1266555BA8C4.SpecialWeatherStatement.1266555BCFD4IA.ARXSPSARX.38295b19ef013fc5c14b787b6195e932</id>
+<updated>2023-07-27T22:45:00-05:00</updated>
+<published>2023-07-27T22:45:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Special Weather Statement issued July 27 at 10:45PM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=IA1266555BA8C4.SpecialWeatherStatement.1266555BCFD4IA.ARXSPSARX.38295b19ef013fc5c14b787b6195e932"/>
+<summary>...A band of stong, gusty winds moving south through the region... At 1037 PM CDT, Doppler radar showed a band of strong, gusty winds located from St Charles in sotheast Minnesota to Stoddard to Ontario in southwest Wisconsin. This band of winds produced a 54 mph wind gust at La Crosse Regional Airport at 1028 pm. HAZARD...Wind gusts up to 50 mph.</summary>
+<cap:event>Special Weather Statement</cap:event>
+<cap:effective>2023-07-27T22:45:00-05:00</cap:effective>
+<cap:expires>2023-07-27T23:45:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Observed</cap:certainty>
+<cap:areaDesc>Allamakee; Winneshiek</cap:areaDesc>
+<cap:polygon>43.2,-90.26 43.2,-90.28 43.21,-90.29 43.21,-90.35 43.2,-90.44 43.21,-90.55 43.2,-90.59 43.18,-90.61 43.17,-90.69 43.13,-90.74 43.11,-90.77 43.16,-92.03 43.88,-91.98 43.8,-90.31 43.56,-90.31 43.55,-90.19 43.17,-90.19 43.2,-90.26</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>019005 019191</value>
+<valueName>UGC</valueName>
+<value>IAZ010 IAZ011</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value></value>
 </cap:parameter>
 </entry>
 <entry>
@@ -3065,70 +3160,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=IN1266554E2CD0.AirQualityAlert.1266555BBE40IN.LMKAQALMK.7f9557e069613d7ce6e230e867efe288</id>
-<updated>2023-07-27T11:08:00-04:00</updated>
-<published>2023-07-27T11:08:00-04:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Air Quality Alert issued July 27 at 11:08AM EDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=IN1266554E2CD0.AirQualityAlert.1266555BBE40IN.LMKAQALMK.7f9557e069613d7ce6e230e867efe288"/>
-<summary>...AIR QUALITY ALERT IN EFFECT UNTIL MIDNIGHT EDT TONIGHT... ...AIR QUALITY ALERT IN EFFECT FROM 7 AM FRIDAY TO MIDNIGHT EDT FRIDAY NIGHT... The Louisville Metro Air Pollution Control District and the Indiana Department of Environmental Management have issued an Air Quality Alert...</summary>
-<cap:event>Air Quality Alert</cap:event>
-<cap:effective>2023-07-27T11:08:00-04:00</cap:effective>
-<cap:expires>2023-07-28T00:00:00-04:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Unknown</cap:urgency>
-<cap:severity>Unknown</cap:severity>
-<cap:certainty>Unknown</cap:certainty>
-<cap:areaDesc>Clark; Floyd</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>018019 018043</value>
-<valueName>UGC</valueName>
-<value>INZ091 INZ092</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value></value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=IN1266554E2CD0.AirQualityAlert.1266555BBE40IN.LMKAQALMK.8f796cdc651b9aa3a808f3c1aa41e0e7</id>
-<updated>2023-07-27T11:08:00-04:00</updated>
-<published>2023-07-27T11:08:00-04:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Air Quality Alert issued July 27 at 11:08AM EDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=IN1266554E2CD0.AirQualityAlert.1266555BBE40IN.LMKAQALMK.8f796cdc651b9aa3a808f3c1aa41e0e7"/>
-<summary>...AIR QUALITY ALERT IN EFFECT UNTIL MIDNIGHT EDT TONIGHT... ...AIR QUALITY ALERT IN EFFECT FROM 7 AM FRIDAY TO MIDNIGHT EDT FRIDAY NIGHT... The officials at the Indiana Department of Environmental Management have called for an Ozone action day today and again on Friday for the following counties...</summary>
-<cap:event>Air Quality Alert</cap:event>
-<cap:effective>2023-07-27T11:08:00-04:00</cap:effective>
-<cap:expires>2023-07-28T00:00:00-04:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Unknown</cap:urgency>
-<cap:severity>Unknown</cap:severity>
-<cap:certainty>Unknown</cap:certainty>
-<cap:areaDesc>Crawford; Dubois; Harrison; Jefferson; Orange; Perry; Scott; Washington</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>018025 018037 018061 018077 018117 018123 018143 018175</value>
-<valueName>UGC</valueName>
-<value>INZ076 INZ077 INZ078 INZ079 INZ083 INZ084 INZ089 INZ090</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value></value>
-</cap:parameter>
-</entry>
-<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=IN1266554E12A4.AirQualityAlert.1266555CA8A0IN.PAHAQAPAH.ab514e395bf64bd05362b3dd67909920</id>
 <updated>2023-07-27T10:41:00-04:00</updated>
 <published>2023-07-27T10:41:00-04:00</published>
@@ -3453,67 +3484,35 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=KY1266555BA284.SevereWeatherStatement.1266555BC9F8KY.ILNSVSILN.1275895c6c94e7cff481cb807770d2bd</id>
-<updated>2023-07-27T23:29:00-04:00</updated>
-<published>2023-07-27T23:29:00-04:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=KY1266555BA734.SpecialWeatherStatement.1266555BC41CKY.LMKSPSLMK.a0ddefa0bfd6e5b6268fd566e12fcf02</id>
+<updated>2023-07-27T23:41:00-04:00</updated>
+<published>2023-07-27T23:41:00-04:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Severe Weather Statement issued July 27 at 11:29PM EDT until July 28 at 12:30AM EDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=KY1266555BA284.SevereWeatherStatement.1266555BC9F8KY.ILNSVSILN.1275895c6c94e7cff481cb807770d2bd"/>
-<summary>...THE SEVERE THUNDERSTORM WARNING FOR ROBERTSON COUNTY IS CANCELLED... The storm which prompted the warning has weakened below severe limits, and no longer poses an immediate threat to life or property. Therefore, the warning has been cancelled. However heavy rain is still possible with this thunderstorm.</summary>
-<cap:event>Severe Weather Statement</cap:event>
-<cap:effective>2023-07-27T23:29:00-04:00</cap:effective>
-<cap:expires>2023-07-28T00:30:00-04:00</cap:expires>
+<title>Special Weather Statement issued July 27 at 11:41PM EDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=KY1266555BA734.SpecialWeatherStatement.1266555BC41CKY.LMKSPSLMK.a0ddefa0bfd6e5b6268fd566e12fcf02"/>
+<summary>...STRONG THUNDERSTORMS WILL IMPACT SOUTHEASTERN SCOTT...BOURBON... NICHOLAS...NORTHEASTERN FAYETTE AND SOUTH CENTRAL HARRISON COUNTIES THROUGH 1215 AM EDT... At 1141 PM EDT, Doppler radar was tracking strong thunderstorms along a line extending from near Fairview to near Carlisle to 7 miles west of Paris. Movement was southeast at 15 mph.</summary>
+<cap:event>Special Weather Statement</cap:event>
+<cap:effective>2023-07-27T23:41:00-04:00</cap:effective>
+<cap:expires>2023-07-28T00:15:00-04:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
 <cap:category>Met</cap:category>
-<cap:urgency>Immediate</cap:urgency>
-<cap:severity>Severe</cap:severity>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
 <cap:certainty>Observed</cap:certainty>
-<cap:areaDesc>Robertson</cap:areaDesc>
-<cap:polygon>38.44,-84.02 38.46,-84.1 38.48,-84.13 38.48,-84.15 38.49,-84.15 38.49,-84.17 38.5,-84.16 38.5,-84.18 38.52,-84.18 38.53,-84.14 38.58,-84.07 38.57,-84.06 38.57,-84.03 38.52,-83.96 38.47,-83.95 38.44,-83.99 38.44,-84 38.43,-84 38.44,-84.02</cap:polygon>
+<cap:areaDesc>Bourbon; Fayette; Harrison; Nicholas; Scott</cap:areaDesc>
+<cap:polygon>38.18,-83.99 38.11,-84.08 38.07,-84.28 38.05,-84.29 38.23,-84.54 38.36,-84.18 38.46,-84.08 38.43,-84 38.42,-84 38.44,-83.98 38.43,-83.95 38.36,-83.92 38.36,-83.89 38.35,-83.9 38.36,-83.87 38.33,-83.86 38.34,-83.84 38.32,-83.85 38.32,-83.83 38.18,-83.99</cap:polygon>
 <cap:geocode>
 <valueName>FIPS6</valueName>
-<value>021201</value>
+<value>021017 021067 021097 021181 021209</value>
 <valueName>UGC</valueName>
-<value>KYC201</value>
+<value>KYZ036 KYZ037 KYZ041 KYZ042 KYZ043</value>
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
-<value>/O.CAN.KILN.SV.W.0183.000000T0000Z-230728T0345Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=KY1266555BA158.SevereWeatherStatement.1266555BA8C4KY.LMKSVSLMK.bb0fd8d1457cfabaad4e7c86c7a1ecc1</id>
-<updated>2023-07-27T23:26:00-04:00</updated>
-<published>2023-07-27T23:26:00-04:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Severe Weather Statement issued July 27 at 11:26PM EDT until July 27 at 11:45PM EDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=KY1266555BA158.SevereWeatherStatement.1266555BA8C4KY.LMKSVSLMK.bb0fd8d1457cfabaad4e7c86c7a1ecc1"/>
-<summary>...THE SEVERE THUNDERSTORM WARNING FOR NORTHWESTERN NICHOLAS AND SOUTHEASTERN HARRISON COUNTIES WILL EXPIRE AT 1130 PM EDT... The storm which prompted the warning has weakened below severe limits, and no longer poses an immediate threat to life or property. Therefore, the warning will be allowed to expire. However, heavy rain is still possible with this thunderstorm.</summary>
-<cap:event>Severe Weather Statement</cap:event>
-<cap:effective>2023-07-27T23:26:00-04:00</cap:effective>
-<cap:expires>2023-07-27T23:45:00-04:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Immediate</cap:urgency>
-<cap:severity>Severe</cap:severity>
-<cap:certainty>Observed</cap:certainty>
-<cap:areaDesc>Harrison</cap:areaDesc>
-<cap:polygon>38.38,-84.08 38.36,-84.18 38.37,-84.19 38.35,-84.23 38.33,-84.3 38.45,-84.34 38.52,-84.18 38.5,-84.18 38.5,-84.16 38.49,-84.17 38.49,-84.15 38.48,-84.15 38.48,-84.13 38.47,-84.13 38.47,-84.11 38.38,-84.08</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>021097</value>
-<valueName>UGC</valueName>
-<value>KYC097</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.EXP.KLMK.SV.W.0281.000000T0000Z-230728T0330Z/</value>
+<value></value>
 </cap:parameter>
 </entry>
 <entry>
@@ -3547,70 +3546,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <valueName>VTEC</valueName>
 <value>/O.CON.KILN.FF.W.0013.000000T0000Z-230728T0545Z/
 /00000.0.ER.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=KY1266555BA158.SevereWeatherStatement.1266555BF6E4KY.LMKSVSLMK.6615668202dc917c02c75a05ac6937db</id>
-<updated>2023-07-27T23:26:00-04:00</updated>
-<published>2023-07-27T23:26:00-04:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Severe Weather Statement issued July 27 at 11:26PM EDT until July 28 at 1:45AM EDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=KY1266555BA158.SevereWeatherStatement.1266555BF6E4KY.LMKSVSLMK.6615668202dc917c02c75a05ac6937db"/>
-<summary>...THE SEVERE THUNDERSTORM WARNING FOR NORTHWESTERN NICHOLAS AND SOUTHEASTERN HARRISON COUNTIES WILL EXPIRE AT 1130 PM EDT... The storm which prompted the warning has weakened below severe limits, and no longer poses an immediate threat to life or property. Therefore, the warning will be allowed to expire. However, heavy rain is still possible with this thunderstorm.</summary>
-<cap:event>Severe Weather Statement</cap:event>
-<cap:effective>2023-07-27T23:26:00-04:00</cap:effective>
-<cap:expires>2023-07-28T01:45:00-04:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Immediate</cap:urgency>
-<cap:severity>Severe</cap:severity>
-<cap:certainty>Observed</cap:certainty>
-<cap:areaDesc>Nicholas</cap:areaDesc>
-<cap:polygon>38.38,-84.08 38.36,-84.18 38.37,-84.19 38.35,-84.23 38.33,-84.3 38.45,-84.34 38.52,-84.18 38.5,-84.18 38.5,-84.16 38.49,-84.17 38.49,-84.15 38.48,-84.15 38.48,-84.13 38.47,-84.13 38.47,-84.11 38.38,-84.08</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>021181</value>
-<valueName>UGC</valueName>
-<value>KYC181</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.EXP.KLMK.SV.W.0281.000000T0000Z-230728T0330Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=KY1266555B9F00.SevereThunderstormWarning.1266555BA8C4KY.LMKSVRLMK.2972e5534cf1142a81b8476c7876ac0d</id>
-<updated>2023-07-27T23:20:00-04:00</updated>
-<published>2023-07-27T23:20:00-04:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Severe Thunderstorm Warning issued July 27 at 11:20PM EDT until July 27 at 11:45PM EDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=KY1266555B9F00.SevereThunderstormWarning.1266555BA8C4KY.LMKSVRLMK.2972e5534cf1142a81b8476c7876ac0d"/>
-<summary>The National Weather Service in Louisville has issued a * Severe Thunderstorm Warning for... Northeastern Scott County in central Kentucky... Northwestern Bourbon County in central Kentucky... North central Fayette County in central Kentucky... Southwestern Harrison County in central Kentucky...</summary>
-<cap:event>Severe Thunderstorm Warning</cap:event>
-<cap:effective>2023-07-27T23:20:00-04:00</cap:effective>
-<cap:expires>2023-07-27T23:45:00-04:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Immediate</cap:urgency>
-<cap:severity>Severe</cap:severity>
-<cap:certainty>Observed</cap:certainty>
-<cap:areaDesc>Bourbon; Fayette; Harrison; Scott</cap:areaDesc>
-<cap:polygon>38.28,-84.59 38.41,-84.49 38.31,-84.21 38.13,-84.36 38.28,-84.59</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>021017 021067 021097 021209</value>
-<valueName>UGC</valueName>
-<value>KYC017 KYC067 KYC097 KYC209</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.NEW.KLMK.SV.W.0282.230728T0320Z-230728T0345Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -3709,105 +3644,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value>/O.CON.KLMK.FF.W.0031.000000T0000Z-230728T0545Z/
-/00000.0.ER.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=KY1266555B4EEC.FloodAdvisory.1266555BF6E4KY.ILNFLSILN.be67bb9288f5109bb4810527055c8866</id>
-<updated>2023-07-27T21:15:00-04:00</updated>
-<published>2023-07-27T21:15:00-04:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Flood Advisory issued July 27 at 9:15PM EDT until July 28 at 1:45AM EDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=KY1266555B4EEC.FloodAdvisory.1266555BF6E4KY.ILNFLSILN.be67bb9288f5109bb4810527055c8866"/>
-<summary>...FLOOD ADVISORY IN EFFECT UNTIL 1230 AM EDT FRIDAY... * WHAT...Flooding caused by excessive rainfall is expected. * WHERE...The following counties, in Northern Kentucky, Carroll and Owen. * WHEN...Until 1230 AM EDT. * IMPACTS...Minor flooding in low-lying and poor drainage areas.</summary>
-<cap:event>Flood Advisory</cap:event>
-<cap:effective>2023-07-27T21:15:00-04:00</cap:effective>
-<cap:expires>2023-07-28T01:45:00-04:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Owen</cap:areaDesc>
-<cap:polygon>38.62,-85.23 38.65,-85 38.63,-84.93 38.53,-84.88 38.51,-84.98 38.52,-84.98 38.52,-85 38.52,-85.03 38.55,-85.01 38.55,-85 38.56,-85.01 38.57,-85.04 38.57,-85.07 38.58,-85.08 38.6,-85.07 38.58,-85.21 38.6,-85.22 38.6,-85.21 38.62,-85.23</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>021187</value>
-<valueName>UGC</valueName>
-<value>KYC187</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.NEW.KILN.FA.Y.0068.230728T0115Z-230728T0430Z/
-/00000.N.ER.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=KY1266555B4EEC.FloodAdvisory.1266555C123CKY.ILNFLSILN.769b9438a4f5ff3aaff64a8064db84d9</id>
-<updated>2023-07-27T21:15:00-04:00</updated>
-<published>2023-07-27T21:15:00-04:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Flood Advisory issued July 27 at 9:15PM EDT until July 28 at 2:15AM EDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=KY1266555B4EEC.FloodAdvisory.1266555C123CKY.ILNFLSILN.769b9438a4f5ff3aaff64a8064db84d9"/>
-<summary>...FLOOD ADVISORY IN EFFECT UNTIL 1230 AM EDT FRIDAY... * WHAT...Flooding caused by excessive rainfall is expected. * WHERE...The following counties, in Northern Kentucky, Carroll and Owen. * WHEN...Until 1230 AM EDT. * IMPACTS...Minor flooding in low-lying and poor drainage areas.</summary>
-<cap:event>Flood Advisory</cap:event>
-<cap:effective>2023-07-27T21:15:00-04:00</cap:effective>
-<cap:expires>2023-07-28T02:15:00-04:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Carroll</cap:areaDesc>
-<cap:polygon>38.62,-85.23 38.65,-85 38.63,-84.93 38.53,-84.88 38.51,-84.98 38.52,-84.98 38.52,-85 38.52,-85.03 38.55,-85.01 38.55,-85 38.56,-85.01 38.57,-85.04 38.57,-85.07 38.58,-85.08 38.6,-85.07 38.58,-85.21 38.6,-85.22 38.6,-85.21 38.62,-85.23</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>021041</value>
-<valueName>UGC</valueName>
-<value>KYC041</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.NEW.KILN.FA.Y.0068.230728T0115Z-230728T0430Z/
-/00000.N.ER.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=KY1266555B4DC0.FlashFloodWarning.1266555BC9F8KY.ILNFFWILN.131c720041ab171c651072dfbf05bf38</id>
-<updated>2023-07-27T21:12:00-04:00</updated>
-<published>2023-07-27T21:12:00-04:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Flash Flood Warning issued July 27 at 9:12PM EDT until July 28 at 12:30AM EDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=KY1266555B4DC0.FlashFloodWarning.1266555BC9F8KY.ILNFFWILN.131c720041ab171c651072dfbf05bf38"/>
-<summary>The National Weather Service in Wilmington has extended the * Flash Flood Warning for... Southwestern Owen County in northern Kentucky... * Until 1230 AM EDT. * At 912 PM EDT, radar indicated thunderstorms producing heavy rain across the warned area. Between 2.5 and 3.5 inches of rain have</summary>
-<cap:event>Flash Flood Warning</cap:event>
-<cap:effective>2023-07-27T21:12:00-04:00</cap:effective>
-<cap:expires>2023-07-28T00:30:00-04:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Immediate</cap:urgency>
-<cap:severity>Severe</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Owen</cap:areaDesc>
-<cap:polygon>38.51,-84.98 38.53,-84.88 38.49,-84.83 38.44,-84.82 38.41,-84.85 38.4,-84.89 38.42,-84.88 38.43,-84.93 38.44,-84.93 38.45,-84.91 38.46,-84.91 38.46,-84.92 38.46,-84.93 38.45,-84.94 38.43,-84.94 38.43,-84.96 38.46,-84.95 38.47,-84.95 38.49,-84.98 38.51,-84.98</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>021187</value>
-<valueName>UGC</valueName>
-<value>KYC187</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.EXT.KILN.FF.W.0012.000000T0000Z-230728T0430Z/
 /00000.0.ER.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
 </cap:parameter>
 </entry>
@@ -4132,38 +3968,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value>/O.CON.KJKL.HT.Y.0001.230728T1500Z-230729T0200Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=KY1266554E2CD0.AirQualityAlert.1266555BBE40KY.LMKAQALMK.8446fa5ae5b9a5dca1922b99a1208616</id>
-<updated>2023-07-27T11:08:00-04:00</updated>
-<published>2023-07-27T11:08:00-04:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Air Quality Alert issued July 27 at 11:08AM EDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=KY1266554E2CD0.AirQualityAlert.1266555BBE40KY.LMKAQALMK.8446fa5ae5b9a5dca1922b99a1208616"/>
-<summary>...AIR QUALITY ALERT IN EFFECT UNTIL MIDNIGHT EDT TONIGHT... ...AIR QUALITY ALERT IN EFFECT FROM 7 AM FRIDAY TO MIDNIGHT EDT FRIDAY NIGHT... The Louisville Metro Air Pollution Control District and the Indiana Department of Environmental Management have issued an Air Quality Alert...</summary>
-<cap:event>Air Quality Alert</cap:event>
-<cap:effective>2023-07-27T11:08:00-04:00</cap:effective>
-<cap:expires>2023-07-28T00:00:00-04:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Unknown</cap:urgency>
-<cap:severity>Unknown</cap:severity>
-<cap:certainty>Unknown</cap:certainty>
-<cap:areaDesc>Bullitt; Jefferson; Oldham</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>021029 021111 021185</value>
-<valueName>UGC</valueName>
-<value>KYZ029 KYZ030 KYZ031</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value></value>
 </cap:parameter>
 </entry>
 <entry>
@@ -4871,6 +4675,38 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <value>026021 026027</value>
 <valueName>UGC</valueName>
 <value>MIZ078 MIZ177 MIZ277</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value></value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=MN1266555BA8C4.SpecialWeatherStatement.1266555BCFD4MN.ARXSPSARX.2cdc949cfd049d1291ab4da8bbae2e00</id>
+<updated>2023-07-27T22:45:00-05:00</updated>
+<published>2023-07-27T22:45:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Special Weather Statement issued July 27 at 10:45PM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MN1266555BA8C4.SpecialWeatherStatement.1266555BCFD4MN.ARXSPSARX.2cdc949cfd049d1291ab4da8bbae2e00"/>
+<summary>...A band of stong, gusty winds moving south through the region... At 1037 PM CDT, Doppler radar showed a band of strong, gusty winds located from St Charles in sotheast Minnesota to Stoddard to Ontario in southwest Wisconsin. This band of winds produced a 54 mph wind gust at La Crosse Regional Airport at 1028 pm. HAZARD...Wind gusts up to 50 mph.</summary>
+<cap:event>Special Weather Statement</cap:event>
+<cap:effective>2023-07-27T22:45:00-05:00</cap:effective>
+<cap:expires>2023-07-27T23:45:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Observed</cap:certainty>
+<cap:areaDesc>Fillmore; Houston; Winona</cap:areaDesc>
+<cap:polygon>43.2,-90.26 43.2,-90.28 43.21,-90.29 43.21,-90.35 43.2,-90.44 43.21,-90.55 43.2,-90.59 43.18,-90.61 43.17,-90.69 43.13,-90.74 43.11,-90.77 43.16,-92.03 43.88,-91.98 43.8,-90.31 43.56,-90.31 43.55,-90.19 43.17,-90.19 43.2,-90.26</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>027045 027055 027169</value>
+<valueName>UGC</valueName>
+<value>MNZ088 MNZ095 MNZ096</value>
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
@@ -6736,38 +6572,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=NM1266555B9CA8.SpecialWeatherStatement.1266555BBE40NM.ABQSPSABQ.afa94f9807b38b13f26449003412944a</id>
-<updated>2023-07-27T21:14:00-06:00</updated>
-<published>2023-07-27T21:14:00-06:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Special Weather Statement issued July 27 at 9:14PM MDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=NM1266555B9CA8.SpecialWeatherStatement.1266555BBE40NM.ABQSPSABQ.afa94f9807b38b13f26449003412944a"/>
-<summary>...STRONG THUNDERSTORM OUTFLOW WINDS WILL IMPACT PORTIONS OF NORTHWESTERN ROOSEVELT, EAST CENTRAL DE BACA, SOUTHWESTERN QUAY AND CURRY COUNTIES THROUGH 1000 PM MDT... At 913 PM MDT, Doppler radar was tracking an outflow boundary along a line extending from near Bellview to 12 miles southwest of Grady to near Ragland to 10 miles northwest of House. Movement was south</summary>
-<cap:event>Special Weather Statement</cap:event>
-<cap:effective>2023-07-27T21:14:00-06:00</cap:effective>
-<cap:expires>2023-07-27T22:00:00-06:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Observed</cap:certainty>
-<cap:areaDesc>Curry County; De Baca County; Quay County; Roosevelt County</cap:areaDesc>
-<cap:polygon>34.34,-103.3 34.44,-103.99 34.82,-104.04 34.75,-103.5 34.92,-103.08 34.86,-103.04 34.45,-103.04 34.34,-103.3</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>035009 035011 035037 035041</value>
-<valueName>UGC</valueName>
-<value>NMZ234 NMZ235 NMZ236 NMZ237</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value></value>
-</cap:parameter>
-</entry>
-<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=NM1266555B5D60.HeatAdvisory.1266556AB260NM.ABQNPWABQ.60f0765fbbc424abd5668ed94a6b5896</id>
 <updated>2023-07-27T19:52:00-06:00</updated>
 <published>2023-07-27T19:52:00-06:00</published>
@@ -6993,38 +6797,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=NY1266555B8664.SpecialWeatherStatement.1266555BA8C4NY.OKXSPSOKX.22491cc2efc44e1b54227d9f67e3feb3</id>
-<updated>2023-07-27T22:57:00-04:00</updated>
-<published>2023-07-27T22:57:00-04:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Special Weather Statement issued July 27 at 10:57PM EDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=NY1266555B8664.SpecialWeatherStatement.1266555BA8C4NY.OKXSPSOKX.22491cc2efc44e1b54227d9f67e3feb3"/>
-<summary>...A STRONG THUNDERSTORM WILL IMPACT CENTRAL SUFFOLK COUNTY THROUGH 1145 PM EDT... At 1056 PM EDT, Doppler radar was tracking a strong thunderstorm with frequent cloud to ground lightning near Yaphank, or over Medford, moving east at 35 mph. HAZARD...Wind gusts up to 40 mph.</summary>
-<cap:event>Special Weather Statement</cap:event>
-<cap:effective>2023-07-27T22:57:00-04:00</cap:effective>
-<cap:expires>2023-07-27T23:45:00-04:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Observed</cap:certainty>
-<cap:areaDesc>Northeast Suffolk; Northwest Suffolk; Southeast Suffolk; Southwest Suffolk</cap:areaDesc>
-<cap:polygon>40.7,-73.03 40.73,-72.95 40.74,-73.01 40.72,-73.03 40.73,-73.03 40.85,-73.06 40.96,-72.6 40.81,-72.54 40.68,-73.02 40.7,-73.03</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>036103</value>
-<valueName>UGC</valueName>
-<value>NYZ078 NYZ079 NYZ080 NYZ081</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value></value>
-</cap:parameter>
-</entry>
-<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=NY1266555B52D4.HeatAdvisory.1266556A6440NY.BGMNPWBGM.659367f8bdb412d47b0f2c1ebe5b7bc3</id>
 <updated>2023-07-27T21:25:00-04:00</updated>
 <published>2023-07-27T21:25:00-04:00</published>
@@ -7216,6 +6988,71 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <valueName>VTEC</valueName>
 <value>/O.EXB.KOKX.HT.Y.0001.230729T0100Z-230730T0000Z/
 /O.CON.KOKX.EH.W.0001.000000T0000Z-230729T0100Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=OH1266555BACAC.HeatAdvisory.1266556A8B50OH.PBZNPWPBZ.dfde626730e56cca91a75b3b7b12f348</id>
+<updated>2023-07-27T23:55:00-04:00</updated>
+<published>2023-07-27T23:55:00-04:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Heat Advisory issued July 27 at 11:55PM EDT until July 28 at 9:00PM EDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=OH1266555BACAC.HeatAdvisory.1266556A8B50OH.PBZNPWPBZ.dfde626730e56cca91a75b3b7b12f348"/>
+<summary>...HEAT ADVISORY REMAINS IN EFFECT FROM 11 AM TO 9 PM EDT TODAY... * WHAT...Heat index values up to 104 expected. * WHERE...Portions of east central Ohio. Portions of northwest, southwest, and western Pennsylvania. Portions of northern and the northern panhandle of West Virginia. * WHEN...From 11 AM to 9 PM EDT Today.</summary>
+<cap:event>Heat Advisory</cap:event>
+<cap:effective>2023-07-27T23:55:00-04:00</cap:effective>
+<cap:expires>2023-07-28T21:00:00-04:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Belmont; Carroll; Columbiana; Coshocton; Guernsey; Harrison; Jefferson; Monroe; Muskingum; Noble; Tuscarawas</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>039013 039019 039029 039031 039059 039067 039081 039111 039119 039121 039157</value>
+<valueName>UGC</valueName>
+<value>OHZ039 OHZ040 OHZ041 OHZ048 OHZ049 OHZ050 OHZ057 OHZ058 OHZ059 OHZ068 OHZ069</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KPBZ.HT.Y.0001.230728T1500Z-230729T0100Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=OH1266555BA478.FlashFloodWarning.1266555C1DF4OH.ILNFFWILN.45808703626618f374d67d7b02efe184</id>
+<updated>2023-07-27T23:34:00-04:00</updated>
+<published>2023-07-27T23:34:00-04:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Flash Flood Warning issued July 27 at 11:34PM EDT until July 28 at 2:45AM EDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=OH1266555BA478.FlashFloodWarning.1266555C1DF4OH.ILNFFWILN.45808703626618f374d67d7b02efe184"/>
+<summary>The National Weather Service in Wilmington has issued a * Flash Flood Warning for... East Central Brown County in southwestern Ohio... * Until 245 AM EDT. * At 1134 PM EDT, radar indicated thunderstorms producing heavy rain across the warned area. Between 1.5 and 3 inches of rain have</summary>
+<cap:event>Flash Flood Warning</cap:event>
+<cap:effective>2023-07-27T23:34:00-04:00</cap:effective>
+<cap:expires>2023-07-28T02:45:00-04:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Immediate</cap:urgency>
+<cap:severity>Severe</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Brown</cap:areaDesc>
+<cap:polygon>38.82,-83.85 39.01,-83.89 39.01,-83.75 38.83,-83.72 38.82,-83.85</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>039015</value>
+<valueName>UGC</valueName>
+<value>OHC015</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.NEW.KILN.FF.W.0015.230728T0334Z-230728T0645Z/
+/00000.0.ER.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -7575,38 +7412,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=OH1266554E7FA0.HeatAdvisory.1266556A8B50OH.PBZNPWPBZ.dfde626730e56cca91a75b3b7b12f348</id>
-<updated>2023-07-27T13:20:00-04:00</updated>
-<published>2023-07-27T13:20:00-04:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Heat Advisory issued July 27 at 1:20PM EDT until July 28 at 9:00PM EDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=OH1266554E7FA0.HeatAdvisory.1266556A8B50OH.PBZNPWPBZ.dfde626730e56cca91a75b3b7b12f348"/>
-<summary>...HEAT ADVISORY REMAINS IN EFFECT FROM 11 AM TO 9 PM EDT FRIDAY... * WHAT...Heat index values up to 103 expected. * WHERE...Portions of east central Ohio. Portions of northwest, southwest, and western Pennsylvania. Portions of northern and the northern panhandle of West Virginia. * WHEN...From 11 AM to 9 PM EDT Friday.</summary>
-<cap:event>Heat Advisory</cap:event>
-<cap:effective>2023-07-27T13:20:00-04:00</cap:effective>
-<cap:expires>2023-07-28T21:00:00-04:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Belmont; Carroll; Columbiana; Coshocton; Guernsey; Harrison; Jefferson; Monroe; Muskingum; Noble; Tuscarawas</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>039013 039019 039029 039031 039059 039067 039081 039111 039119 039121 039157</value>
-<valueName>UGC</valueName>
-<value>OHZ039 OHZ040 OHZ041 OHZ048 OHZ049 OHZ050 OHZ057 OHZ058 OHZ059 OHZ068 OHZ069</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KPBZ.HT.Y.0001.230728T1500Z-230729T0100Z/</value>
-</cap:parameter>
-</entry>
-<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=OK1266555B4BCC.HeatAdvisory.1266556A8B50OK.OUNNPWOUN.ad4d30a0c291e197208a6b99ed4e19a0</id>
 <updated>2023-07-27T20:07:00-05:00</updated>
 <published>2023-07-27T20:07:00-05:00</published>
@@ -7896,6 +7701,38 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value></value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=PA1266555BACAC.HeatAdvisory.1266556A8B50PA.PBZNPWPBZ.81b54b2fb24b6c55be0747db34c4bad6</id>
+<updated>2023-07-27T23:55:00-04:00</updated>
+<published>2023-07-27T23:55:00-04:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Heat Advisory issued July 27 at 11:55PM EDT until July 28 at 9:00PM EDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=PA1266555BACAC.HeatAdvisory.1266556A8B50PA.PBZNPWPBZ.81b54b2fb24b6c55be0747db34c4bad6"/>
+<summary>...HEAT ADVISORY REMAINS IN EFFECT FROM 11 AM TO 9 PM EDT TODAY... * WHAT...Heat index values up to 104 expected. * WHERE...Portions of east central Ohio. Portions of northwest, southwest, and western Pennsylvania. Portions of northern and the northern panhandle of West Virginia. * WHEN...From 11 AM to 9 PM EDT Today.</summary>
+<cap:event>Heat Advisory</cap:event>
+<cap:effective>2023-07-27T23:55:00-04:00</cap:effective>
+<cap:expires>2023-07-28T21:00:00-04:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Allegheny; Armstrong; Beaver; Butler; Clarion; Fayette; Greene; Indiana; Lawrence; Mercer; Venango; Washington; Westmoreland</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>042003 042005 042007 042019 042031 042051 042059 042063 042073 042085 042121 042125 042129</value>
+<valueName>UGC</valueName>
+<value>PAZ007 PAZ008 PAZ013 PAZ014 PAZ015 PAZ020 PAZ021 PAZ022 PAZ029 PAZ031 PAZ073 PAZ075 PAZ077</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KPBZ.HT.Y.0001.230728T1500Z-230729T0100Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -8288,38 +8125,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value>/O.CON.KCTP.HT.Y.0001.230728T1600Z-230729T0000Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=PA1266554E7FA0.HeatAdvisory.1266556A8B50PA.PBZNPWPBZ.81b54b2fb24b6c55be0747db34c4bad6</id>
-<updated>2023-07-27T13:20:00-04:00</updated>
-<published>2023-07-27T13:20:00-04:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Heat Advisory issued July 27 at 1:20PM EDT until July 28 at 9:00PM EDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=PA1266554E7FA0.HeatAdvisory.1266556A8B50PA.PBZNPWPBZ.81b54b2fb24b6c55be0747db34c4bad6"/>
-<summary>...HEAT ADVISORY REMAINS IN EFFECT FROM 11 AM TO 9 PM EDT FRIDAY... * WHAT...Heat index values up to 103 expected. * WHERE...Portions of east central Ohio. Portions of northwest, southwest, and western Pennsylvania. Portions of northern and the northern panhandle of West Virginia. * WHEN...From 11 AM to 9 PM EDT Friday.</summary>
-<cap:event>Heat Advisory</cap:event>
-<cap:effective>2023-07-27T13:20:00-04:00</cap:effective>
-<cap:expires>2023-07-28T21:00:00-04:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Allegheny; Armstrong; Beaver; Butler; Clarion; Fayette; Greene; Indiana; Lawrence; Mercer; Venango; Washington; Westmoreland</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>042003 042005 042007 042019 042031 042051 042059 042063 042073 042085 042121 042125 042129</value>
-<valueName>UGC</valueName>
-<value>PAZ007 PAZ008 PAZ013 PAZ014 PAZ015 PAZ020 PAZ021 PAZ022 PAZ029 PAZ031 PAZ073 PAZ075 PAZ077</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KPBZ.HT.Y.0001.230728T1500Z-230729T0100Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -9002,14 +8807,78 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=WI1266555BA284.SpecialWeatherStatement.1266555BC41CWI.GRBSPSGRB.a08c3cdc9a183d748afc429de6d372cc</id>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=WI1266555BADD8.SpecialWeatherStatement.1266555BC9F8WI.GRBSPSGRB.b4dda2c625ae59e7b3380a8ebc972a87</id>
+<updated>2023-07-27T22:58:00-05:00</updated>
+<published>2023-07-27T22:58:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Special Weather Statement issued July 27 at 10:58PM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=WI1266555BADD8.SpecialWeatherStatement.1266555BC9F8WI.GRBSPSGRB.b4dda2c625ae59e7b3380a8ebc972a87"/>
+<summary>...A strong thunderstorm will impact portions of northwestern Calumet, northeastern Winnebago and southern Outagamie Counties through 1130 PM CDT... At 1057 PM CDT, Doppler radar was tracking a strong thunderstorm 10 miles east of Lake Poygan, or 13 miles west of Appleton, moving east at 30 mph.</summary>
+<cap:event>Special Weather Statement</cap:event>
+<cap:effective>2023-07-27T22:58:00-05:00</cap:effective>
+<cap:expires>2023-07-27T23:30:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Observed</cap:certainty>
+<cap:areaDesc>Calumet; Outagamie; Winnebago</cap:areaDesc>
+<cap:polygon>44.14,-88.73 44.24,-88.74 44.29,-88.74 44.35,-88.31 44.13,-88.27 44.14,-88.73</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>055015 055087 055139</value>
+<valueName>UGC</valueName>
+<value>WIZ038 WIZ048 WIZ049</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value></value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=WI1266555BA8C4.SpecialWeatherStatement.1266555BCFD4WI.ARXSPSARX.3325455ed6ba2fb6671f968089ff7f30</id>
+<updated>2023-07-27T22:45:00-05:00</updated>
+<published>2023-07-27T22:45:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Special Weather Statement issued July 27 at 10:45PM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=WI1266555BA8C4.SpecialWeatherStatement.1266555BCFD4WI.ARXSPSARX.3325455ed6ba2fb6671f968089ff7f30"/>
+<summary>...A band of stong, gusty winds moving south through the region... At 1037 PM CDT, Doppler radar showed a band of strong, gusty winds located from St Charles in sotheast Minnesota to Stoddard to Ontario in southwest Wisconsin. This band of winds produced a 54 mph wind gust at La Crosse Regional Airport at 1028 pm. HAZARD...Wind gusts up to 50 mph.</summary>
+<cap:event>Special Weather Statement</cap:event>
+<cap:effective>2023-07-27T22:45:00-05:00</cap:effective>
+<cap:expires>2023-07-27T23:45:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Observed</cap:certainty>
+<cap:areaDesc>Crawford; La Crosse; Monroe; Richland; Vernon</cap:areaDesc>
+<cap:polygon>43.2,-90.26 43.2,-90.28 43.21,-90.29 43.21,-90.35 43.2,-90.44 43.21,-90.55 43.2,-90.59 43.18,-90.61 43.17,-90.69 43.13,-90.74 43.11,-90.77 43.16,-92.03 43.88,-91.98 43.8,-90.31 43.56,-90.31 43.55,-90.19 43.17,-90.19 43.2,-90.26</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>055023 055063 055081 055103 055123</value>
+<valueName>UGC</valueName>
+<value>WIZ041 WIZ042 WIZ053 WIZ054 WIZ055</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value></value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=WI1266555BA284.SpecialWeatherStatement.1266555BC41CWI.GRBSPSGRB.665c8e7dc2b85cc0ff12f2aa9b499812</id>
 <updated>2023-07-27T22:29:00-05:00</updated>
 <published>2023-07-27T22:29:00-05:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
 <title>Special Weather Statement issued July 27 at 10:29PM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=WI1266555BA284.SpecialWeatherStatement.1266555BC41CWI.GRBSPSGRB.a08c3cdc9a183d748afc429de6d372cc"/>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=WI1266555BA284.SpecialWeatherStatement.1266555BC41CWI.GRBSPSGRB.665c8e7dc2b85cc0ff12f2aa9b499812"/>
 <summary>...Strong thunderstorms will impact portions of Wood, Portage, Winnebago, Waushara, Waupaca and western Outagamie Counties through 1115 PM CDT... At 1028 PM CDT, Doppler radar was tracking a strong thunderstorm near Fremont, or 9 miles east of Waupaca, moving east at 40 mph. HAZARD...Winds in excess of 30 mph and pea size hail.</summary>
 <cap:event>Special Weather Statement</cap:event>
 <cap:effective>2023-07-27T22:29:00-05:00</cap:effective>
@@ -9020,13 +8889,13 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:urgency>Expected</cap:urgency>
 <cap:severity>Minor</cap:severity>
 <cap:certainty>Observed</cap:certainty>
-<cap:areaDesc>Outagamie; Portage; Waupaca; Waushara; Winnebago; Wood</cap:areaDesc>
+<cap:areaDesc>Portage; Waupaca; Waushara; Wood</cap:areaDesc>
 <cap:polygon>43.9,-88.89 43.98,-88.89 43.98,-89.6 44.25,-89.6 44.25,-90.32 44.68,-90.32 44.66,-88.64 44.58,-88.63 44.58,-88.45 43.89,-88.4 43.9,-88.89</cap:polygon>
 <cap:geocode>
 <valueName>FIPS6</valueName>
-<value>055087 055097 055135 055137 055139 055141</value>
+<value>055097 055135 055137 055141</value>
 <valueName>UGC</valueName>
-<value>WIZ035 WIZ036 WIZ037 WIZ038 WIZ045 WIZ048</value>
+<value>WIZ035 WIZ036 WIZ037 WIZ045</value>
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
@@ -9034,82 +8903,18 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=WI1266555B9C44.SevereThunderstormWatch.1266555BBE40WI.GRBWCNGRB.cd937e8ce9e4e56c68c99ecbfe5445f6</id>
-<updated>2023-07-27T22:13:00-05:00</updated>
-<published>2023-07-27T22:13:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Severe Thunderstorm Watch issued July 27 at 10:13PM CDT until July 27 at 11:00PM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=WI1266555B9C44.SevereThunderstormWatch.1266555BBE40WI.GRBWCNGRB.cd937e8ce9e4e56c68c99ecbfe5445f6"/>
-<summary>SEVERE THUNDERSTORM WATCH 556 REMAINS VALID UNTIL 11 PM CDT THIS EVENING FOR THE FOLLOWING AREAS IN WISCONSIN THIS WATCH INCLUDES 13 COUNTIES IN CENTRAL WISCONSIN MARATHON PORTAGE WAUSHARA WOOD</summary>
-<cap:event>Severe Thunderstorm Watch</cap:event>
-<cap:effective>2023-07-27T22:13:00-05:00</cap:effective>
-<cap:expires>2023-07-27T23:00:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Severe</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Brown; Calumet; Door; Kewaunee; Manitowoc; Marathon; Outagamie; Portage; Shawano; Waupaca; Waushara; Winnebago; Wood</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>055009 055015 055029 055061 055071 055073 055087 055097 055115 055135 055137 055139 055141</value>
-<valueName>UGC</valueName>
-<value>WIC009 WIC015 WIC029 WIC061 WIC071 WIC073 WIC087 WIC097 WIC115 WIC135 WIC137 WIC139 WIC141</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KGRB.SV.A.0556.000000T0000Z-230728T0400Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=WI1266555B8538.SevereThunderstormWatch.1266555BBE40WI.ARXWCNARX.cd9aa0ba71e5595da79aa4bd7ea46ab6</id>
-<updated>2023-07-27T21:54:00-05:00</updated>
-<published>2023-07-27T21:54:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Severe Thunderstorm Watch issued July 27 at 9:54PM CDT until July 27 at 11:00PM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=WI1266555B8538.SevereThunderstormWatch.1266555BBE40WI.ARXWCNARX.cd9aa0ba71e5595da79aa4bd7ea46ab6"/>
-<summary>SEVERE THUNDERSTORM WATCH 556 REMAINS VALID UNTIL 11 PM CDT THIS EVENING FOR THE FOLLOWING AREAS IN WISCONSIN THIS WATCH INCLUDES 1 COUNTY IN CENTRAL WISCONSIN CLARK THIS INCLUDES THE CITIES OF NEILLSVILLE.</summary>
-<cap:event>Severe Thunderstorm Watch</cap:event>
-<cap:effective>2023-07-27T21:54:00-05:00</cap:effective>
-<cap:expires>2023-07-27T23:00:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Severe</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Clark</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>055019</value>
-<valueName>UGC</valueName>
-<value>WIC019</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KARX.SV.A.0556.000000T0000Z-230728T0400Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=WI1266555B7D04.FloodWatch.1266555BBE40WI.ARXFFAARX.b01e875663fd5bfcf4bcb567027becd2</id>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=WI1266555B7D04.FloodWatch.1266555BCFD4WI.ARXFFAARX.b01e875663fd5bfcf4bcb567027becd2</id>
 <updated>2023-07-27T21:33:00-05:00</updated>
 <published>2023-07-27T21:33:00-05:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Flood Watch issued July 27 at 9:33PM CDT until July 27 at 11:00PM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=WI1266555B7D04.FloodWatch.1266555BBE40WI.ARXFFAARX.b01e875663fd5bfcf4bcb567027becd2"/>
+<title>Flood Watch issued July 27 at 9:33PM CDT until July 27 at 11:45PM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=WI1266555B7D04.FloodWatch.1266555BCFD4WI.ARXFFAARX.b01e875663fd5bfcf4bcb567027becd2"/>
 <summary>...FLOOD WATCH IN EFFECT UNTIL 5 AM CDT FRIDAY... * WHAT...Flooding caused by excessive rainfall is possible. * WHERE...Portions of southeast Minnesota and Wisconsin, including the following counties, in southeast Minnesota, Wabasha. In Wisconsin, Buffalo, Clark, Jackson, Taylor and Trempealeau. * WHEN...Until 5 AM CDT Friday.</summary>
 <cap:event>Flood Watch</cap:event>
 <cap:effective>2023-07-27T21:33:00-05:00</cap:effective>
-<cap:expires>2023-07-27T23:00:00-05:00</cap:expires>
+<cap:expires>2023-07-27T23:45:00-05:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
 <cap:category>Met</cap:category>
@@ -9131,31 +8936,64 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=WI1266555B601C.FloodAdvisory.1266555BF6E4WI.DLHFLSDLH.08b6e37fa167fa7f09e891625044c13d</id>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=WI1266555B601C.FloodAdvisory.1266555BC9F8WI.DLHFLSDLH.92b9647e8a3ff5fb99283330f68ce801</id>
 <updated>2023-07-27T20:59:00-05:00</updated>
 <published>2023-07-27T20:59:00-05:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Flood Advisory issued July 27 at 8:59PM CDT until July 28 at 12:45AM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=WI1266555B601C.FloodAdvisory.1266555BF6E4WI.DLHFLSDLH.08b6e37fa167fa7f09e891625044c13d"/>
+<title>Flood Advisory issued July 27 at 8:59PM CDT until July 27 at 11:30PM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=WI1266555B601C.FloodAdvisory.1266555BC9F8WI.DLHFLSDLH.92b9647e8a3ff5fb99283330f68ce801"/>
 <summary>...FLOOD ADVISORY IN EFFECT UNTIL 3 AM CDT FRIDAY... ...REPLACES FLASH FLOOD WARNING... * WHAT...Flooding caused by excessive rainfall is expected. * WHERE...Bayfield and Sawyer Counties. * WHEN...Until 300 AM CDT Friday. * IMPACTS...Minor flooding in low-lying and poor drainage areas.</summary>
 <cap:event>Flood Advisory</cap:event>
 <cap:effective>2023-07-27T20:59:00-05:00</cap:effective>
-<cap:expires>2023-07-28T00:45:00-05:00</cap:expires>
+<cap:expires>2023-07-27T23:30:00-05:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
 <cap:category>Met</cap:category>
 <cap:urgency>Expected</cap:urgency>
 <cap:severity>Minor</cap:severity>
 <cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Bayfield; Sawyer</cap:areaDesc>
+<cap:areaDesc>Sawyer</cap:areaDesc>
 <cap:polygon>46.67,-91.55 46.68,-90.87 46.59,-90.93 46.03,-90.92 45.98,-91.55 46.67,-91.55</cap:polygon>
 <cap:geocode>
 <valueName>FIPS6</valueName>
-<value>055007 055113</value>
+<value>055113</value>
 <valueName>UGC</valueName>
-<value>WIC007 WIC113</value>
+<value>WIC113</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.NEW.KDLH.FA.Y.0021.230728T0159Z-230728T0800Z/
+/00000.N.ER.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=WI1266555B601C.FloodAdvisory.1266555C5A80WI.DLHFLSDLH.0af8282c65539759b00889b1981c7a8a</id>
+<updated>2023-07-27T20:59:00-05:00</updated>
+<published>2023-07-27T20:59:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Flood Advisory issued July 27 at 8:59PM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=WI1266555B601C.FloodAdvisory.1266555C5A80WI.DLHFLSDLH.0af8282c65539759b00889b1981c7a8a"/>
+<summary>...FLOOD ADVISORY IN EFFECT UNTIL 3 AM CDT FRIDAY... ...REPLACES FLASH FLOOD WARNING... * WHAT...Flooding caused by excessive rainfall is expected. * WHERE...Bayfield and Sawyer Counties. * WHEN...Until 300 AM CDT Friday. * IMPACTS...Minor flooding in low-lying and poor drainage areas.</summary>
+<cap:event>Flood Advisory</cap:event>
+<cap:effective>2023-07-27T20:59:00-05:00</cap:effective>
+<cap:expires>2023-07-28T03:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Bayfield</cap:areaDesc>
+<cap:polygon>46.67,-91.55 46.68,-90.87 46.59,-90.93 46.03,-90.92 45.98,-91.55 46.67,-91.55</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>055007</value>
+<valueName>UGC</valueName>
+<value>WIC007</value>
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
@@ -9197,39 +9035,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=WI1266555B36B4.FlashFloodWarning.1266555BF6E4WI.MPXFFWMPX.b58850ed9af64ac6d39b05f870c46f5a</id>
-<updated>2023-07-27T19:53:00-05:00</updated>
-<published>2023-07-27T19:53:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Flash Flood Warning issued July 27 at 7:53PM CDT until July 28 at 12:45AM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=WI1266555B36B4.FlashFloodWarning.1266555BF6E4WI.MPXFFWMPX.b58850ed9af64ac6d39b05f870c46f5a"/>
-<summary>The National Weather Service in the Twin Cities has issued a * Flash Flood Warning for... Northeastern Barron County in northwestern Wisconsin... Rusk County in northwestern Wisconsin... * Until 1245 AM CDT. * At 753 PM CDT, Doppler radar indicated thunderstorms producing</summary>
-<cap:event>Flash Flood Warning</cap:event>
-<cap:effective>2023-07-27T19:53:00-05:00</cap:effective>
-<cap:expires>2023-07-28T00:45:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Immediate</cap:urgency>
-<cap:severity>Severe</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Barron; Rusk</cap:areaDesc>
-<cap:polygon>45.35,-91.83 45.63,-91.83 45.6,-90.68 45.38,-90.68 45.38,-90.93 45.3,-90.93 45.35,-91.83</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>055005 055107</value>
-<valueName>UGC</valueName>
-<value>WIC005 WIC107</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.NEW.KMPX.FF.W.0004.230728T0053Z-230728T0545Z/
-/00000.0.ER.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
-</cap:parameter>
-</entry>
-<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=WI1266555B34C0.FlashFloodWarning.1266555BCFD4WI.DLHFFWDLH.40ed284217d9acd9e8a4ce31260cf58e</id>
 <updated>2023-07-27T19:48:00-05:00</updated>
 <published>2023-07-27T19:48:00-05:00</published>
@@ -9263,18 +9068,18 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=WI1266555B31A0.FloodWatch.1266555BBE40WI.MPXFFAMPX.ce0d2b39b8e4c42f96b654c7db317a06</id>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=WI1266555B31A0.FloodWatch.1266555BCFD4WI.MPXFFAMPX.ce0d2b39b8e4c42f96b654c7db317a06</id>
 <updated>2023-07-27T19:40:00-05:00</updated>
 <published>2023-07-27T19:40:00-05:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Flood Watch issued July 27 at 7:40PM CDT until July 27 at 11:00PM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=WI1266555B31A0.FloodWatch.1266555BBE40WI.MPXFFAMPX.ce0d2b39b8e4c42f96b654c7db317a06"/>
+<title>Flood Watch issued July 27 at 7:40PM CDT until July 27 at 11:45PM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=WI1266555B31A0.FloodWatch.1266555BCFD4WI.MPXFFAMPX.ce0d2b39b8e4c42f96b654c7db317a06"/>
 <summary>...FLOOD WATCH IN EFFECT UNTIL 4 AM CDT FRIDAY... * WHAT...Flash flooding caused by excessive rainfall is possible. * WHERE...Portions of Minnesota and Wisconsin, including the following areas, in Minnesota, Anoka, Carver, Chisago, Dakota, Hennepin, Isanti, Ramsey, Scott, Sherburne, Washington and Wright. In Wisconsin, Barron, Chippewa, Dunn, Eau Claire, Pepin, Pierce,</summary>
 <cap:event>Flood Watch</cap:event>
 <cap:effective>2023-07-27T19:40:00-05:00</cap:effective>
-<cap:expires>2023-07-27T23:00:00-05:00</cap:expires>
+<cap:expires>2023-07-27T23:45:00-05:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
 <cap:category>Met</cap:category>
@@ -9329,31 +9134,63 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=WI1266554DF170.AirQualityAlert.1266555BBE40WI.MKXAQAMKX.8ab63ac9d630f4dcc9091c3b61eec17c</id>
-<updated>2023-07-27T08:56:00-05:00</updated>
-<published>2023-07-27T08:56:00-05:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=WV1266555BACAC.HeatAdvisory.1266556A8B50WV.PBZNPWPBZ.d739964737f4e785e945cdadb5b2cd7c</id>
+<updated>2023-07-27T23:55:00-04:00</updated>
+<published>2023-07-27T23:55:00-04:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Air Quality Alert issued July 27 at 8:56AM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=WI1266554DF170.AirQualityAlert.1266555BBE40WI.MKXAQAMKX.8ab63ac9d630f4dcc9091c3b61eec17c"/>
-<summary>...AIR QUALITY ADVISORY ISSUED FOR SOUTHEASTERN WISCONSIN... The Wisconsin Department of Natural Resources has issued an Air Quality Advisory for Ozone from 11 AM until 11:00 PM tonight. This advisory affects people living in the following counties: Dodge, Fond du Lac, Jefferson, Kenosha, Milwaukee, Ozaukee, Racine, Rock, Sheboygan, Walworth, Washington, Waukesha.</summary>
-<cap:event>Air Quality Alert</cap:event>
-<cap:effective>2023-07-27T08:56:00-05:00</cap:effective>
-<cap:expires>2023-07-27T23:00:00-05:00</cap:expires>
+<title>Heat Advisory issued July 27 at 11:55PM EDT until July 28 at 9:00PM EDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=WV1266555BACAC.HeatAdvisory.1266556A8B50WV.PBZNPWPBZ.d739964737f4e785e945cdadb5b2cd7c"/>
+<summary>...HEAT ADVISORY REMAINS IN EFFECT FROM 11 AM TO 9 PM EDT TODAY... * WHAT...Heat index values up to 104 expected. * WHERE...Portions of east central Ohio. Portions of northwest, southwest, and western Pennsylvania. Portions of northern and the northern panhandle of West Virginia. * WHEN...From 11 AM to 9 PM EDT Today.</summary>
+<cap:event>Heat Advisory</cap:event>
+<cap:effective>2023-07-27T23:55:00-04:00</cap:effective>
+<cap:expires>2023-07-28T21:00:00-04:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
 <cap:category>Met</cap:category>
-<cap:urgency>Unknown</cap:urgency>
-<cap:severity>Unknown</cap:severity>
-<cap:certainty>Unknown</cap:certainty>
-<cap:areaDesc>Dodge; Fond Du Lac; Jefferson; Kenosha; Milwaukee; Ozaukee; Racine; Rock; Sheboygan; Walworth; Washington; Waukesha</cap:areaDesc>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Brooke; Hancock; Marion; Marshall; Monongalia; Ohio; Wetzel</cap:areaDesc>
 <cap:polygon></cap:polygon>
 <cap:geocode>
 <valueName>FIPS6</valueName>
-<value>055027 055039 055055 055059 055079 055089 055101 055105 055117 055127 055131 055133</value>
+<value>054009 054029 054049 054051 054061 054069 054103</value>
 <valueName>UGC</valueName>
-<value>WIZ051 WIZ052 WIZ058 WIZ059 WIZ060 WIZ064 WIZ065 WIZ066 WIZ069 WIZ070 WIZ071 WIZ072</value>
+<value>WVZ001 WVZ002 WVZ003 WVZ004 WVZ012 WVZ021 WVZ509</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KPBZ.HT.Y.0001.230728T1500Z-230729T0100Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=WV1266555BA8C4.SpecialWeatherStatement.1266555BC41CWV.RLXSPSRLX.05431d1f5a378a1d8a49547f13486d89</id>
+<updated>2023-07-27T23:45:00-04:00</updated>
+<published>2023-07-27T23:45:00-04:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Special Weather Statement issued July 27 at 11:45PM EDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=WV1266555BA8C4.SpecialWeatherStatement.1266555BC41CWV.RLXSPSRLX.05431d1f5a378a1d8a49547f13486d89"/>
+<summary>...A strong cluster of thunderstorms will impact portions of northwestern Kanawha, central Putnam, northeastern Lincoln and north central Boone Counties through 1215 AM EDT... At 1144 PM EDT, Doppler radar was tracking a strong cluster of thunderstorms over South Charleston, or near Charleston, moving southeast at 25 mph.</summary>
+<cap:event>Special Weather Statement</cap:event>
+<cap:effective>2023-07-27T23:45:00-04:00</cap:effective>
+<cap:expires>2023-07-28T00:15:00-04:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Observed</cap:certainty>
+<cap:areaDesc>Boone; Kanawha; Lincoln; Putnam</cap:areaDesc>
+<cap:polygon>38.45,-82.02 38.57,-81.83 38.37,-81.38 38.13,-81.81 38.45,-82.02</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>054005 054039 054043 054079</value>
+<valueName>UGC</valueName>
+<value>WVZ013 WVZ014 WVZ015 WVZ026</value>
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
@@ -9361,35 +9198,36 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=WV1266555B9D0C.SpecialWeatherStatement.1266555BA8C4WV.RLXSPSRLX.4a2ee58f3f5990b5c5da5c6c6c259d73</id>
-<updated>2023-07-27T23:15:00-04:00</updated>
-<published>2023-07-27T23:15:00-04:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=WV1266555BA734.FlashFloodWarning.1266555C1DF4WV.RLXFFWRLX.5aeeb5293b1baffaa1e6d503f0b5ab19</id>
+<updated>2023-07-27T23:41:00-04:00</updated>
+<published>2023-07-27T23:41:00-04:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Special Weather Statement issued July 27 at 11:15PM EDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=WV1266555B9D0C.SpecialWeatherStatement.1266555BA8C4WV.RLXSPSRLX.4a2ee58f3f5990b5c5da5c6c6c259d73"/>
-<summary>...A strong thunderstorm will impact portions of east central Cabell, northwestern Kanawha, central Putnam and northeastern Lincoln Counties through 1145 PM EDT... At 1115 PM EDT, Doppler radar was tracking a strong thunderstorm over Teays Valley, or near Winfield, moving southeast at 10 mph. HAZARD...Winds in excess of 30 mph.</summary>
-<cap:event>Special Weather Statement</cap:event>
-<cap:effective>2023-07-27T23:15:00-04:00</cap:effective>
-<cap:expires>2023-07-27T23:45:00-04:00</cap:expires>
+<title>Flash Flood Warning issued July 27 at 11:41PM EDT until July 28 at 2:45AM EDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=WV1266555BA734.FlashFloodWarning.1266555C1DF4WV.RLXFFWRLX.5aeeb5293b1baffaa1e6d503f0b5ab19"/>
+<summary>The National Weather Service in Charleston has issued a * Flash Flood Warning for... Northwestern Kanawha County in central West Virginia... Putnam County in western West Virginia... * Until 245 AM EDT. * At 1141 PM EDT, Doppler radar indicated thunderstorms producing</summary>
+<cap:event>Flash Flood Warning</cap:event>
+<cap:effective>2023-07-27T23:41:00-04:00</cap:effective>
+<cap:expires>2023-07-28T02:45:00-04:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
 <cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Observed</cap:certainty>
-<cap:areaDesc>Cabell; Kanawha; Lincoln; Putnam</cap:areaDesc>
-<cap:polygon>38.49,-82.07 38.48,-82.06 38.49,-82.05 38.57,-81.91 38.45,-81.53 38.27,-81.93 38.46,-82.12 38.49,-82.07</cap:polygon>
+<cap:urgency>Immediate</cap:urgency>
+<cap:severity>Severe</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Kanawha; Putnam</cap:areaDesc>
+<cap:polygon>38.37,-82.02 38.64,-81.98 38.68,-81.75 38.63,-81.71 38.54,-81.63 38.24,-81.7 38.24,-81.79 38.29,-81.81 38.3,-81.81 38.32,-81.81 38.32,-81.82 38.32,-81.83 38.37,-82.02</cap:polygon>
 <cap:geocode>
 <valueName>FIPS6</valueName>
-<value>054011 054039 054043 054079</value>
+<value>054039 054079</value>
 <valueName>UGC</valueName>
-<value>WVZ006 WVZ013 WVZ014 WVZ015</value>
+<value>WVC039 WVC079</value>
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
-<value></value>
+<value>/O.NEW.KRLX.FF.W.0008.230728T0341Z-230728T0645Z/
+/00000.0.UU.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -9487,38 +9325,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value>/O.CON.KRLX.HT.Y.0002.230728T1500Z-230729T0100Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=WV1266554E7FA0.HeatAdvisory.1266556A8B50WV.PBZNPWPBZ.d739964737f4e785e945cdadb5b2cd7c</id>
-<updated>2023-07-27T13:20:00-04:00</updated>
-<published>2023-07-27T13:20:00-04:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Heat Advisory issued July 27 at 1:20PM EDT until July 28 at 9:00PM EDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=WV1266554E7FA0.HeatAdvisory.1266556A8B50WV.PBZNPWPBZ.d739964737f4e785e945cdadb5b2cd7c"/>
-<summary>...HEAT ADVISORY REMAINS IN EFFECT FROM 11 AM TO 9 PM EDT FRIDAY... * WHAT...Heat index values up to 103 expected. * WHERE...Portions of east central Ohio. Portions of northwest, southwest, and western Pennsylvania. Portions of northern and the northern panhandle of West Virginia. * WHEN...From 11 AM to 9 PM EDT Friday.</summary>
-<cap:event>Heat Advisory</cap:event>
-<cap:effective>2023-07-27T13:20:00-04:00</cap:effective>
-<cap:expires>2023-07-28T21:00:00-04:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Brooke; Hancock; Marion; Marshall; Monongalia; Ohio; Wetzel</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>054009 054029 054049 054051 054061 054069 054103</value>
-<valueName>UGC</valueName>
-<value>WVZ001 WVZ002 WVZ003 WVZ004 WVZ012 WVZ021 WVZ509</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KPBZ.HT.Y.0001.230728T1500Z-230729T0100Z/</value>
 </cap:parameter>
 </entry>
 </feed>
