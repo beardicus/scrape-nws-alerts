@@ -16,11 +16,11 @@ xmlns = 'http://www.w3.org/2005/Atom'
 xmlns:cap = 'urn:oasis:names:tc:emergency:cap:1.1'
 xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 >
-<!-- http-date = Fri, 18 Aug 2023 21:03:00 GMT -->
+<!-- http-date = Fri, 18 Aug 2023 21:31:00 GMT -->
 <id>https://alerts.weather.gov/cap/us.php?x=0</id>
 <logo>http://alerts.weather.gov/images/xml_logo.gif</logo>
 <generator>NWS CAP Server</generator>
-<updated>2023-08-18T17:03:00-04:00</updated>
+<updated>2023-08-18T15:31:00-06:00</updated>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
@@ -644,17 +644,50 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=AZ12665ABB9004.SevereThunderstormWarning.12665ABBB264AZ.TWCSVRTWC.7dafd8f4bdd228fce9b05571ddc179fc</id>
-<updated>2023-08-18T13:57:00-07:00</updated>
-<published>2023-08-18T13:57:00-07:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=AZ12665ABBA83C.FloodAdvisory.12665ABBF4CCAZ.VEFFLSVEF.c6ccab0bd97ce1946747f2e6d4f5446c</id>
+<updated>2023-08-18T14:19:00-07:00</updated>
+<published>2023-08-18T14:19:00-07:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Severe Thunderstorm Warning issued August 18 at 1:57PM MST until August 18 at 2:45PM MST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=AZ12665ABB9004.SevereThunderstormWarning.12665ABBB264AZ.TWCSVRTWC.7dafd8f4bdd228fce9b05571ddc179fc"/>
-<summary>The National Weather Service in Tucson has issued a * Severe Thunderstorm Warning for... Central Pima County in southeastern Arizona... * Until 245 PM MST. * At 157 PM MST, a severe thunderstorm was located 9 miles east of Topawa, or 14 miles southeast of Sells, moving north at 10 mph.</summary>
+<title>Flood Advisory issued August 18 at 2:19PM MST until August 18 at 4:15PM MST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=AZ12665ABBA83C.FloodAdvisory.12665ABBF4CCAZ.VEFFLSVEF.c6ccab0bd97ce1946747f2e6d4f5446c"/>
+<summary>...FLOOD ADVISORY IN EFFECT UNTIL 530 PM MST THIS AFTERNOON... * WHAT...Flooding caused by excessive rainfall is expected. * WHERE...A portion of northwest Arizona, including the following county, Mohave. * WHEN...Until 530 PM MST. * IMPACTS...Minor flooding in low-lying and poor drainage areas.</summary>
+<cap:event>Flood Advisory</cap:event>
+<cap:effective>2023-08-18T14:19:00-07:00</cap:effective>
+<cap:expires>2023-08-18T16:15:00-07:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Mohave</cap:areaDesc>
+<cap:polygon>36.7,-114.05 36.87,-114.05 37,-113.9 37,-113.57 36.87,-113.81 36.7,-114.05</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>004015</value>
+<valueName>UGC</valueName>
+<value>AZC015</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.NEW.KVEF.FA.Y.0082.230818T2119Z-230819T0030Z/
+/00000.N.ER.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=AZ12665ABBA710.SevereThunderstormWarning.12665ABBB264AZ.TWCSVSTWC.7dafd8f4bdd228fce9b05571ddc179fc</id>
+<updated>2023-08-18T14:16:00-07:00</updated>
+<published>2023-08-18T14:16:00-07:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Severe Thunderstorm Warning issued August 18 at 2:16PM MST until August 18 at 2:45PM MST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=AZ12665ABBA710.SevereThunderstormWarning.12665ABBB264AZ.TWCSVSTWC.7dafd8f4bdd228fce9b05571ddc179fc"/>
+<summary>...A SEVERE THUNDERSTORM WARNING REMAINS IN EFFECT UNTIL 245 PM MST FOR CENTRAL PIMA COUNTY... At 216 PM MST, a severe thunderstorm was located 8 miles southwest of Kitt Peak, or 13 miles east of Sells, moving north at 10 mph. HAZARD...60 mph wind gusts and quarter size hail. SOURCE...Radar indicated.</summary>
 <cap:event>Severe Thunderstorm Warning</cap:event>
-<cap:effective>2023-08-18T13:57:00-07:00</cap:effective>
+<cap:effective>2023-08-18T14:16:00-07:00</cap:effective>
 <cap:expires>2023-08-18T14:45:00-07:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
@@ -672,7 +705,105 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
-<value>/O.NEW.KTWC.SV.W.0090.230818T2057Z-230818T2145Z/</value>
+<value>/O.CON.KTWC.SV.W.0090.000000T0000Z-230818T2145Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=AZ12665ABBA710.SevereWeatherStatement.12665ABBB264AZ.TWCSVSTWC.409926986bec4a4ab450ace9f62c18c7</id>
+<updated>2023-08-18T14:16:00-07:00</updated>
+<published>2023-08-18T14:16:00-07:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Severe Weather Statement issued August 18 at 2:16PM MST until August 18 at 2:45PM MST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=AZ12665ABBA710.SevereWeatherStatement.12665ABBB264AZ.TWCSVSTWC.409926986bec4a4ab450ace9f62c18c7"/>
+<summary>...A SEVERE THUNDERSTORM WARNING REMAINS IN EFFECT UNTIL 245 PM MST FOR CENTRAL PIMA COUNTY... At 216 PM MST, a severe thunderstorm was located 8 miles southwest of Kitt Peak, or 13 miles east of Sells, moving north at 10 mph. HAZARD...60 mph wind gusts and quarter size hail. SOURCE...Radar indicated.</summary>
+<cap:event>Severe Weather Statement</cap:event>
+<cap:effective>2023-08-18T14:16:00-07:00</cap:effective>
+<cap:expires>2023-08-18T14:45:00-07:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Immediate</cap:urgency>
+<cap:severity>Severe</cap:severity>
+<cap:certainty>Observed</cap:certainty>
+<cap:areaDesc>Pima</cap:areaDesc>
+<cap:polygon>31.76,-111.46 31.73,-111.79 32.08,-111.9 32.16,-111.4 31.76,-111.46</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>004019</value>
+<valueName>UGC</valueName>
+<value>AZC019</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KTWC.SV.W.0090.000000T0000Z-230818T2145Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=AZ12665ABBA580.FloodWatch.12665ABBB264AZ.TWCFFATWC.ad21dbd8fb6c71c950764bf90951ad2a</id>
+<updated>2023-08-18T14:12:00-07:00</updated>
+<published>2023-08-18T14:12:00-07:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Flood Watch issued August 18 at 2:12PM MST until August 18 at 2:45PM MST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=AZ12665ABBA580.FloodWatch.12665ABBB264AZ.TWCFFATWC.ad21dbd8fb6c71c950764bf90951ad2a"/>
+<summary>...FLOOD WATCH REMAINS IN EFFECT FROM SATURDAY MORNING THROUGH SUNDAY EVENING... * WHAT...Flooding caused by excessive rainfall continues to be possible. * WHERE...A portion of Southeast Arizona, including the following areas, Baboquivari Mountains, Tohono O`odham Nation, Upper Santa</summary>
+<cap:event>Flood Watch</cap:event>
+<cap:effective>2023-08-18T14:12:00-07:00</cap:effective>
+<cap:expires>2023-08-18T14:45:00-07:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Future</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Possible</cap:certainty>
+<cap:areaDesc>Western Pima County Including Ajo, Organ Pipe Cactus National Monument</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>004019</value>
+<valueName>UGC</valueName>
+<value>AZZ501</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KTWC.FA.A.0001.230819T1800Z-230821T0300Z/
+/00000.0.ER.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=AZ12665ABBA580.FloodWatch.12665AE6F690AZ.TWCFFATWC.6da956a8ddd286c156f9719e4a280790</id>
+<updated>2023-08-18T14:12:00-07:00</updated>
+<published>2023-08-18T14:12:00-07:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Flood Watch issued August 18 at 2:12PM MST until August 20 at 10:00PM MST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=AZ12665ABBA580.FloodWatch.12665AE6F690AZ.TWCFFATWC.6da956a8ddd286c156f9719e4a280790"/>
+<summary>...FLOOD WATCH REMAINS IN EFFECT FROM SATURDAY MORNING THROUGH SUNDAY EVENING... * WHAT...Flooding caused by excessive rainfall continues to be possible. * WHERE...A portion of Southeast Arizona, including the following areas, Baboquivari Mountains, Tohono O`odham Nation, Upper Santa</summary>
+<cap:event>Flood Watch</cap:event>
+<cap:effective>2023-08-18T14:12:00-07:00</cap:effective>
+<cap:expires>2023-08-20T22:00:00-07:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Future</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Possible</cap:certainty>
+<cap:areaDesc>Baboquivari Mountains including Kitt Peak; Tohono O&apos;odham Nation including Sells; Upper Santa Cruz River and Altar Valleys including Nogales</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>004019 004023</value>
+<valueName>UGC</valueName>
+<value>AZZ502 AZZ503 AZZ515</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KTWC.FA.A.0001.230819T1800Z-230821T0300Z/
+/00000.0.ER.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -1003,84 +1134,1202 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=AZ12665AB9F320.FloodWatch.12665ABBB264AZ.TWCFFATWC.ad21dbd8fb6c71c950764bf90951ad2a</id>
-<updated>2023-08-18T03:00:00-07:00</updated>
-<published>2023-08-18T03:00:00-07:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=CA12665ABBAC24.SevereThunderstormWarning.12665ABBCDBCCA.VEFSVRVEF.c434d88eb5a63a822e001e99e7673f91</id>
+<updated>2023-08-18T14:29:00-07:00</updated>
+<published>2023-08-18T14:29:00-07:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Flood Watch issued August 18 at 3:00AM MST until August 18 at 2:45PM MST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=AZ12665AB9F320.FloodWatch.12665ABBB264AZ.TWCFFATWC.ad21dbd8fb6c71c950764bf90951ad2a"/>
-<summary>...FLOOD WATCH REMAINS IN EFFECT FROM SATURDAY MORNING THROUGH SUNDAY EVENING... * WHAT...Flooding caused by excessive rainfall continues to be possible. * WHERE...A portion of Southeast Arizona, including the following areas, Baboquivari Mountains, Tohono O`odham Nation, Upper Santa</summary>
-<cap:event>Flood Watch</cap:event>
-<cap:effective>2023-08-18T03:00:00-07:00</cap:effective>
-<cap:expires>2023-08-18T14:45:00-07:00</cap:expires>
+<title>Severe Thunderstorm Warning issued August 18 at 2:29PM PDT until August 18 at 3:15PM PDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CA12665ABBAC24.SevereThunderstormWarning.12665ABBCDBCCA.VEFSVRVEF.c434d88eb5a63a822e001e99e7673f91"/>
+<summary>The National Weather Service in Las Vegas has issued a * Severe Thunderstorm Warning for... Southeastern San Bernardino County in southern California... * Until 315 PM PDT. * At 228 PM PDT, a severe thunderstorm was located 20 miles east of Twentynine Palms Airport, or 28 miles east of Twentynine Palms,</summary>
+<cap:event>Severe Thunderstorm Warning</cap:event>
+<cap:effective>2023-08-18T14:29:00-07:00</cap:effective>
+<cap:expires>2023-08-18T15:15:00-07:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Immediate</cap:urgency>
+<cap:severity>Severe</cap:severity>
+<cap:certainty>Observed</cap:certainty>
+<cap:areaDesc>San Bernardino</cap:areaDesc>
+<cap:polygon>34.14,-115.43 34.1,-115.67 34.32,-115.83 34.42,-115.53 34.14,-115.43</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>006071</value>
+<valueName>UGC</valueName>
+<value>CAC071</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.NEW.KVEF.SV.W.0032.230818T2129Z-230818T2215Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=CA12665ABBABC0.TropicalStormWatch.12665AC87DC8CA.SGXTCVSGX.016cb93365154273c07b0ade3e9886f5</id>
+<updated>2023-08-18T14:28:00-07:00</updated>
+<published>2023-08-18T14:28:00-07:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Tropical Storm Watch issued August 18 at 2:28PM PDT until further notice by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CA12665ABBABC0.TropicalStormWatch.12665AC87DC8CA.SGXTCVSGX.016cb93365154273c07b0ade3e9886f5"/>
+<summary>...TROPICAL STORM WATCH REMAINS IN EFFECT... * LOCATIONS AFFECTED - Oceanside - Carlsbad - Chula Vista - San Diego</summary>
+<cap:event>Tropical Storm Watch</cap:event>
+<cap:effective>2023-08-18T14:28:00-07:00</cap:effective>
+<cap:expires>2023-08-18T22:30:00-07:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
 <cap:category>Met</cap:category>
 <cap:urgency>Future</cap:urgency>
-<cap:severity>Moderate</cap:severity>
+<cap:severity>Severe</cap:severity>
 <cap:certainty>Possible</cap:certainty>
-<cap:areaDesc>Western Pima County Including Ajo, Organ Pipe Cactus National Monument</cap:areaDesc>
+<cap:areaDesc>San Diego County Coastal Areas</cap:areaDesc>
 <cap:polygon></cap:polygon>
 <cap:geocode>
 <valueName>FIPS6</valueName>
-<value>004019</value>
+<value>006073</value>
 <valueName>UGC</valueName>
-<value>AZZ501</value>
+<value>CAZ043</value>
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
-<value>/O.CON.KTWC.FA.A.0001.230819T1800Z-230821T0300Z/
-/00000.0.ER.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
+<value>/O.CON.KSGX.TR.A.2009.000000T0000Z-000000T0000Z/</value>
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=AZ12665AB9F320.FloodWatch.12665AE6F690AZ.TWCFFATWC.6da956a8ddd286c156f9719e4a280790</id>
-<updated>2023-08-18T03:00:00-07:00</updated>
-<published>2023-08-18T03:00:00-07:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=CA12665ABBABC0.TropicalStormWatch.12665AC87DC8CA.SGXTCVSGX.036c9d8b0ede09cbe3090cc7fce596e3</id>
+<updated>2023-08-18T14:28:00-07:00</updated>
+<published>2023-08-18T14:28:00-07:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Flood Watch issued August 18 at 3:00AM MST until August 20 at 10:00PM MST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=AZ12665AB9F320.FloodWatch.12665AE6F690AZ.TWCFFATWC.6da956a8ddd286c156f9719e4a280790"/>
-<summary>...FLOOD WATCH REMAINS IN EFFECT FROM SATURDAY MORNING THROUGH SUNDAY EVENING... * WHAT...Flooding caused by excessive rainfall continues to be possible. * WHERE...A portion of Southeast Arizona, including the following areas, Baboquivari Mountains, Tohono O`odham Nation, Upper Santa</summary>
-<cap:event>Flood Watch</cap:event>
-<cap:effective>2023-08-18T03:00:00-07:00</cap:effective>
-<cap:expires>2023-08-20T22:00:00-07:00</cap:expires>
+<title>Tropical Storm Watch issued August 18 at 2:28PM PDT until further notice by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CA12665ABBABC0.TropicalStormWatch.12665AC87DC8CA.SGXTCVSGX.036c9d8b0ede09cbe3090cc7fce596e3"/>
+<summary>...TROPICAL STORM WATCH REMAINS IN EFFECT... * LOCATIONS AFFECTED - Riverside - San Bernardino - Ontario - Rancho Cucamonga</summary>
+<cap:event>Tropical Storm Watch</cap:event>
+<cap:effective>2023-08-18T14:28:00-07:00</cap:effective>
+<cap:expires>2023-08-18T22:30:00-07:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
 <cap:category>Met</cap:category>
 <cap:urgency>Future</cap:urgency>
-<cap:severity>Moderate</cap:severity>
+<cap:severity>Severe</cap:severity>
 <cap:certainty>Possible</cap:certainty>
-<cap:areaDesc>Baboquivari Mountains including Kitt Peak; Tohono O&apos;odham Nation including Sells; Upper Santa Cruz River and Altar Valleys including Nogales</cap:areaDesc>
+<cap:areaDesc>San Bernardino and Riverside County Valleys-The Inland Empire</cap:areaDesc>
 <cap:polygon></cap:polygon>
 <cap:geocode>
 <valueName>FIPS6</valueName>
-<value>004019 004023</value>
+<value>006065 006071</value>
 <valueName>UGC</valueName>
-<value>AZZ502 AZZ503 AZZ515</value>
+<value>CAZ048</value>
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
-<value>/O.CON.KTWC.FA.A.0001.230819T1800Z-230821T0300Z/
-/00000.0.ER.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
+<value>/O.CON.KSGX.TR.A.2009.000000T0000Z-000000T0000Z/</value>
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=CA12665ABBA0D0.FloodWatch.12665AC85C94CA.SGXFFASGX.3d186268fffe1adb86d75ae0e11102cf</id>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=CA12665ABBABC0.TropicalStormWatch.12665AC87DC8CA.SGXTCVSGX.eac060a5d5b38c4b0915f55a9ab2c1c3</id>
+<updated>2023-08-18T14:28:00-07:00</updated>
+<published>2023-08-18T14:28:00-07:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Tropical Storm Watch issued August 18 at 2:28PM PDT until further notice by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CA12665ABBABC0.TropicalStormWatch.12665AC87DC8CA.SGXTCVSGX.eac060a5d5b38c4b0915f55a9ab2c1c3"/>
+<summary>...TROPICAL STORM WATCH REMAINS IN EFFECT... * LOCATIONS AFFECTED - Escondido - El Cajon - Lakeside - Poway</summary>
+<cap:event>Tropical Storm Watch</cap:event>
+<cap:effective>2023-08-18T14:28:00-07:00</cap:effective>
+<cap:expires>2023-08-18T22:30:00-07:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Future</cap:urgency>
+<cap:severity>Severe</cap:severity>
+<cap:certainty>Possible</cap:certainty>
+<cap:areaDesc>San Diego County Inland Valleys</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>006073</value>
+<valueName>UGC</valueName>
+<value>CAZ050</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KSGX.TR.A.2009.000000T0000Z-000000T0000Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=CA12665ABBABC0.TropicalStormWatch.12665AC87DC8CA.SGXTCVSGX.752430db83ccb1da61490f6e5a84971f</id>
+<updated>2023-08-18T14:28:00-07:00</updated>
+<published>2023-08-18T14:28:00-07:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Tropical Storm Watch issued August 18 at 2:28PM PDT until further notice by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CA12665ABBABC0.TropicalStormWatch.12665AC87DC8CA.SGXTCVSGX.752430db83ccb1da61490f6e5a84971f"/>
+<summary>...TROPICAL STORM WATCH REMAINS IN EFFECT... * LOCATIONS AFFECTED - Crestline - Lake Arrowhead - Big Bear City - Wrightwood</summary>
+<cap:event>Tropical Storm Watch</cap:event>
+<cap:effective>2023-08-18T14:28:00-07:00</cap:effective>
+<cap:expires>2023-08-18T22:30:00-07:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Future</cap:urgency>
+<cap:severity>Severe</cap:severity>
+<cap:certainty>Possible</cap:certainty>
+<cap:areaDesc>San Bernardino County Mountains</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>006071</value>
+<valueName>UGC</valueName>
+<value>CAZ055</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KSGX.TR.A.2009.000000T0000Z-000000T0000Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=CA12665ABBABC0.TropicalStormWatch.12665AC87DC8CA.SGXTCVSGX.233363882a1399af9ee7ce4c27aff13e</id>
+<updated>2023-08-18T14:28:00-07:00</updated>
+<published>2023-08-18T14:28:00-07:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Tropical Storm Watch issued August 18 at 2:28PM PDT until further notice by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CA12665ABBABC0.TropicalStormWatch.12665AC87DC8CA.SGXTCVSGX.233363882a1399af9ee7ce4c27aff13e"/>
+<summary>...TROPICAL STORM WATCH REMAINS IN EFFECT... * LOCATIONS AFFECTED - Idyllwild * WIND - LATEST LOCAL FORECAST: Equivalent Tropical Storm force wind - Peak Wind Forecast: 35-45 mph with gusts to 65 mph</summary>
+<cap:event>Tropical Storm Watch</cap:event>
+<cap:effective>2023-08-18T14:28:00-07:00</cap:effective>
+<cap:expires>2023-08-18T22:30:00-07:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Future</cap:urgency>
+<cap:severity>Severe</cap:severity>
+<cap:certainty>Possible</cap:certainty>
+<cap:areaDesc>Riverside County Mountains</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>006065</value>
+<valueName>UGC</valueName>
+<value>CAZ056</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KSGX.TR.A.2009.000000T0000Z-000000T0000Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=CA12665ABBABC0.TropicalStormWatch.12665AC87DC8CA.SGXTCVSGX.3584e03bf98ed3e41a3c16e0220fcd7b</id>
+<updated>2023-08-18T14:28:00-07:00</updated>
+<published>2023-08-18T14:28:00-07:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Tropical Storm Watch issued August 18 at 2:28PM PDT until further notice by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CA12665ABBABC0.TropicalStormWatch.12665AC87DC8CA.SGXTCVSGX.3584e03bf98ed3e41a3c16e0220fcd7b"/>
+<summary>...TROPICAL STORM WATCH REMAINS IN EFFECT... * LOCATIONS AFFECTED - Santa Ana Mountains and Foothills * WIND - LATEST LOCAL FORECAST: Equivalent Tropical Storm force wind - Peak Wind Forecast: 35-45 mph with gusts to 65 mph</summary>
+<cap:event>Tropical Storm Watch</cap:event>
+<cap:effective>2023-08-18T14:28:00-07:00</cap:effective>
+<cap:expires>2023-08-18T22:30:00-07:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Future</cap:urgency>
+<cap:severity>Severe</cap:severity>
+<cap:certainty>Possible</cap:certainty>
+<cap:areaDesc>Santa Ana Mountains and Foothills</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>006059 006065</value>
+<valueName>UGC</valueName>
+<value>CAZ057</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KSGX.TR.A.2009.000000T0000Z-000000T0000Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=CA12665ABBABC0.TropicalStormWatch.12665AC87DC8CA.SGXTCVSGX.635ecb0be8109e4ee48cee1df5852dfa</id>
+<updated>2023-08-18T14:28:00-07:00</updated>
+<published>2023-08-18T14:28:00-07:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Tropical Storm Watch issued August 18 at 2:28PM PDT until further notice by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CA12665ABBABC0.TropicalStormWatch.12665AC87DC8CA.SGXTCVSGX.635ecb0be8109e4ee48cee1df5852dfa"/>
+<summary>...TROPICAL STORM WATCH REMAINS IN EFFECT... * LOCATIONS AFFECTED - Julian - Pine Valley * WIND - LATEST LOCAL FORECAST: Equivalent Strong Tropical Storm force</summary>
+<cap:event>Tropical Storm Watch</cap:event>
+<cap:effective>2023-08-18T14:28:00-07:00</cap:effective>
+<cap:expires>2023-08-18T22:30:00-07:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Future</cap:urgency>
+<cap:severity>Severe</cap:severity>
+<cap:certainty>Possible</cap:certainty>
+<cap:areaDesc>San Diego County Mountains</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>006073</value>
+<valueName>UGC</valueName>
+<value>CAZ058</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KSGX.TR.A.2009.000000T0000Z-000000T0000Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=CA12665ABBABC0.TropicalStormWatch.12665AC87DC8CA.SGXTCVSGX.8257d5b76213d9b20b534308b4c6b3bb</id>
+<updated>2023-08-18T14:28:00-07:00</updated>
+<published>2023-08-18T14:28:00-07:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Tropical Storm Watch issued August 18 at 2:28PM PDT until further notice by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CA12665ABBABC0.TropicalStormWatch.12665AC87DC8CA.SGXTCVSGX.8257d5b76213d9b20b534308b4c6b3bb"/>
+<summary>...TROPICAL STORM WATCH REMAINS IN EFFECT... * LOCATIONS AFFECTED - Victorville - Hesperia - Apple Valley * WIND</summary>
+<cap:event>Tropical Storm Watch</cap:event>
+<cap:effective>2023-08-18T14:28:00-07:00</cap:effective>
+<cap:expires>2023-08-18T22:30:00-07:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Future</cap:urgency>
+<cap:severity>Severe</cap:severity>
+<cap:certainty>Possible</cap:certainty>
+<cap:areaDesc>Apple and Lucerne Valleys</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>006071</value>
+<valueName>UGC</valueName>
+<value>CAZ060</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KSGX.TR.A.2009.000000T0000Z-000000T0000Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=CA12665ABBABC0.TropicalStormWatch.12665AC87DC8CA.SGXTCVSGX.9d0f9b190cbdb6e574da0238c823d54f</id>
+<updated>2023-08-18T14:28:00-07:00</updated>
+<published>2023-08-18T14:28:00-07:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Tropical Storm Watch issued August 18 at 2:28PM PDT until further notice by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CA12665ABBABC0.TropicalStormWatch.12665AC87DC8CA.SGXTCVSGX.9d0f9b190cbdb6e574da0238c823d54f"/>
+<summary>...TROPICAL STORM WATCH REMAINS IN EFFECT... * LOCATIONS AFFECTED - Indio - Palm Springs - Palm Desert * WIND</summary>
+<cap:event>Tropical Storm Watch</cap:event>
+<cap:effective>2023-08-18T14:28:00-07:00</cap:effective>
+<cap:expires>2023-08-18T22:30:00-07:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Future</cap:urgency>
+<cap:severity>Severe</cap:severity>
+<cap:certainty>Possible</cap:certainty>
+<cap:areaDesc>Coachella Valley</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>006065</value>
+<valueName>UGC</valueName>
+<value>CAZ061</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KSGX.TR.A.2009.000000T0000Z-000000T0000Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=CA12665ABBABC0.TropicalStormWatch.12665AC87DC8CA.SGXTCVSGX.cec4835e94231c27302bcb7855793d11</id>
+<updated>2023-08-18T14:28:00-07:00</updated>
+<published>2023-08-18T14:28:00-07:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Tropical Storm Watch issued August 18 at 2:28PM PDT until further notice by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CA12665ABBABC0.TropicalStormWatch.12665AC87DC8CA.SGXTCVSGX.cec4835e94231c27302bcb7855793d11"/>
+<summary>...TROPICAL STORM WATCH REMAINS IN EFFECT... * LOCATIONS AFFECTED - Borrego Springs * WIND - LATEST LOCAL FORECAST: Equivalent Strong Tropical Storm force wind</summary>
+<cap:event>Tropical Storm Watch</cap:event>
+<cap:effective>2023-08-18T14:28:00-07:00</cap:effective>
+<cap:expires>2023-08-18T22:30:00-07:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Future</cap:urgency>
+<cap:severity>Severe</cap:severity>
+<cap:certainty>Possible</cap:certainty>
+<cap:areaDesc>San Diego County Deserts</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>006073</value>
+<valueName>UGC</valueName>
+<value>CAZ062</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KSGX.TR.A.2009.000000T0000Z-000000T0000Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=CA12665ABBABC0.TropicalStormWatch.12665AC87DC8CA.SGXTCVSGX.01e5932acf67556e28fdb2844e45c2be</id>
+<updated>2023-08-18T14:28:00-07:00</updated>
+<published>2023-08-18T14:28:00-07:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Tropical Storm Watch issued August 18 at 2:28PM PDT until further notice by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CA12665ABBABC0.TropicalStormWatch.12665AC87DC8CA.SGXTCVSGX.01e5932acf67556e28fdb2844e45c2be"/>
+<summary>...TROPICAL STORM WATCH REMAINS IN EFFECT... * LOCATIONS AFFECTED - Banning - Desert Hot Springs * WIND - LATEST LOCAL FORECAST: Equivalent Tropical Storm force wind</summary>
+<cap:event>Tropical Storm Watch</cap:event>
+<cap:effective>2023-08-18T14:28:00-07:00</cap:effective>
+<cap:expires>2023-08-18T22:30:00-07:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Future</cap:urgency>
+<cap:severity>Severe</cap:severity>
+<cap:certainty>Possible</cap:certainty>
+<cap:areaDesc>San Gorgonio Pass Near Banning</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>006065</value>
+<valueName>UGC</valueName>
+<value>CAZ065</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KSGX.TR.A.2009.000000T0000Z-000000T0000Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=CA12665ABBABC0.TropicalStormWatch.12665AC87DC8CA.SGXTCVSGX.e9a0718e94833a75c99b06254c13512b</id>
+<updated>2023-08-18T14:28:00-07:00</updated>
+<published>2023-08-18T14:28:00-07:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Tropical Storm Watch issued August 18 at 2:28PM PDT until further notice by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CA12665ABBABC0.TropicalStormWatch.12665AC87DC8CA.SGXTCVSGX.e9a0718e94833a75c99b06254c13512b"/>
+<summary>...TROPICAL STORM WATCH REMAINS IN EFFECT... * LOCATIONS AFFECTED - Huntington Beach - Costa Mesa * WIND - LATEST LOCAL FORECAST: Equivalent Tropical Storm force wind</summary>
+<cap:event>Tropical Storm Watch</cap:event>
+<cap:effective>2023-08-18T14:28:00-07:00</cap:effective>
+<cap:expires>2023-08-18T22:30:00-07:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Future</cap:urgency>
+<cap:severity>Severe</cap:severity>
+<cap:certainty>Possible</cap:certainty>
+<cap:areaDesc>Orange County Coastal</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>006059</value>
+<valueName>UGC</valueName>
+<value>CAZ552</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KSGX.TR.A.2009.000000T0000Z-000000T0000Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=CA12665ABBABC0.TropicalStormWatch.12665AC87DC8CA.SGXTCVSGX.1b76927c83a18281dede147131114945</id>
+<updated>2023-08-18T14:28:00-07:00</updated>
+<published>2023-08-18T14:28:00-07:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Tropical Storm Watch issued August 18 at 2:28PM PDT until further notice by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CA12665ABBABC0.TropicalStormWatch.12665AC87DC8CA.SGXTCVSGX.1b76927c83a18281dede147131114945"/>
+<summary>...TROPICAL STORM WATCH REMAINS IN EFFECT... * LOCATIONS AFFECTED - Santa Ana - Anaheim - Irvine - Fullerton</summary>
+<cap:event>Tropical Storm Watch</cap:event>
+<cap:effective>2023-08-18T14:28:00-07:00</cap:effective>
+<cap:expires>2023-08-18T22:30:00-07:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Future</cap:urgency>
+<cap:severity>Severe</cap:severity>
+<cap:certainty>Possible</cap:certainty>
+<cap:areaDesc>Orange County Inland</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>006059</value>
+<valueName>UGC</valueName>
+<value>CAZ554</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KSGX.TR.A.2009.000000T0000Z-000000T0000Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=CA12665ABBA774.TropicalStormWatch.12665AC87DC8CA.LOXTCVLOX.d37a77c27eba5aa92e091e174e35678f</id>
+<updated>2023-08-18T14:17:00-07:00</updated>
+<published>2023-08-18T14:17:00-07:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Tropical Storm Watch issued August 18 at 2:17PM PDT until further notice by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CA12665ABBA774.TropicalStormWatch.12665AC87DC8CA.LOXTCVLOX.d37a77c27eba5aa92e091e174e35678f"/>
+<summary>...TROPICAL STORM WATCH REMAINS IN EFFECT... * LOCATIONS AFFECTED - Avalon * WIND - LATEST LOCAL FORECAST: Below tropical storm force wind - Peak Wind Forecast: 15-25 mph with gusts to 30 mph</summary>
+<cap:event>Tropical Storm Watch</cap:event>
+<cap:effective>2023-08-18T14:17:00-07:00</cap:effective>
+<cap:expires>2023-08-18T22:30:00-07:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Future</cap:urgency>
+<cap:severity>Severe</cap:severity>
+<cap:certainty>Possible</cap:certainty>
+<cap:areaDesc>Catalina and Santa Barbara Islands</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>006037</value>
+<valueName>UGC</valueName>
+<value>CAZ087</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KLOX.TR.A.2009.000000T0000Z-000000T0000Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=CA12665ABBA774.TropicalStormWatch.12665AC87DC8CA.LOXTCVLOX.48309a88040158f2a70270357b645d2c</id>
+<updated>2023-08-18T14:17:00-07:00</updated>
+<published>2023-08-18T14:17:00-07:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Tropical Storm Watch issued August 18 at 2:17PM PDT until further notice by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CA12665ABBA774.TropicalStormWatch.12665AC87DC8CA.LOXTCVLOX.48309a88040158f2a70270357b645d2c"/>
+<summary>...TROPICAL STORM WATCH REMAINS IN EFFECT... * LOCATIONS AFFECTED - Lake Castaic - Newhall - Santa Clarita - Valencia</summary>
+<cap:event>Tropical Storm Watch</cap:event>
+<cap:effective>2023-08-18T14:17:00-07:00</cap:effective>
+<cap:expires>2023-08-18T22:30:00-07:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Future</cap:urgency>
+<cap:severity>Severe</cap:severity>
+<cap:certainty>Possible</cap:certainty>
+<cap:areaDesc>Santa Clarita Valley</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>006037</value>
+<valueName>UGC</valueName>
+<value>CAZ088</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KLOX.TR.A.2009.000000T0000Z-000000T0000Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=CA12665ABBA774.TropicalStormWatch.12665AC87DC8CA.LOXTCVLOX.6075756f23e392270148b1fe66d035e7</id>
+<updated>2023-08-18T14:17:00-07:00</updated>
+<published>2023-08-18T14:17:00-07:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Tropical Storm Watch issued August 18 at 2:17PM PDT until further notice by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CA12665ABBA774.TropicalStormWatch.12665AC87DC8CA.LOXTCVLOX.6075756f23e392270148b1fe66d035e7"/>
+<summary>...TROPICAL STORM WATCH REMAINS IN EFFECT... * LOCATIONS AFFECTED - Fillmore - Piru - Santa Paula * WIND</summary>
+<cap:event>Tropical Storm Watch</cap:event>
+<cap:effective>2023-08-18T14:17:00-07:00</cap:effective>
+<cap:expires>2023-08-18T22:30:00-07:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Future</cap:urgency>
+<cap:severity>Severe</cap:severity>
+<cap:certainty>Possible</cap:certainty>
+<cap:areaDesc>Central Ventura County Valleys</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>006111</value>
+<valueName>UGC</valueName>
+<value>CAZ358</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KLOX.TR.A.2009.000000T0000Z-000000T0000Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=CA12665ABBA774.TropicalStormWatch.12665AC87DC8CA.LOXTCVLOX.0c9a559e08d33e442d74a48ce9838532</id>
+<updated>2023-08-18T14:17:00-07:00</updated>
+<published>2023-08-18T14:17:00-07:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Tropical Storm Watch issued August 18 at 2:17PM PDT until further notice by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CA12665ABBA774.TropicalStormWatch.12665AC87DC8CA.LOXTCVLOX.0c9a559e08d33e442d74a48ce9838532"/>
+<summary>...TROPICAL STORM WATCH REMAINS IN EFFECT... * LOCATIONS AFFECTED - Malibu - Pacific Palisades * WIND - LATEST LOCAL FORECAST: Below tropical storm force wind</summary>
+<cap:event>Tropical Storm Watch</cap:event>
+<cap:effective>2023-08-18T14:17:00-07:00</cap:effective>
+<cap:expires>2023-08-18T22:30:00-07:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Future</cap:urgency>
+<cap:severity>Severe</cap:severity>
+<cap:certainty>Possible</cap:certainty>
+<cap:areaDesc>Malibu Coast</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>006037</value>
+<valueName>UGC</valueName>
+<value>CAZ362</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KLOX.TR.A.2009.000000T0000Z-000000T0000Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=CA12665ABBA774.TropicalStormWatch.12665AC87DC8CA.LOXTCVLOX.858501c3522bba0af598aea3a914cc8c</id>
+<updated>2023-08-18T14:17:00-07:00</updated>
+<published>2023-08-18T14:17:00-07:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Tropical Storm Watch issued August 18 at 2:17PM PDT until further notice by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CA12665ABBA774.TropicalStormWatch.12665AC87DC8CA.LOXTCVLOX.858501c3522bba0af598aea3a914cc8c"/>
+<summary>...TROPICAL STORM WATCH REMAINS IN EFFECT... * LOCATIONS AFFECTED - LAX - Long Beach - Redondo Beach - Santa Monica</summary>
+<cap:event>Tropical Storm Watch</cap:event>
+<cap:effective>2023-08-18T14:17:00-07:00</cap:effective>
+<cap:expires>2023-08-18T22:30:00-07:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Future</cap:urgency>
+<cap:severity>Severe</cap:severity>
+<cap:certainty>Possible</cap:certainty>
+<cap:areaDesc>Los Angeles County Beaches</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>006037</value>
+<valueName>UGC</valueName>
+<value>CAZ366</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KLOX.TR.A.2009.000000T0000Z-000000T0000Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=CA12665ABBA774.TropicalStormWatch.12665AC87DC8CA.LOXTCVLOX.085ce43e7e90a3a06dcb3c9bbe22372f</id>
+<updated>2023-08-18T14:17:00-07:00</updated>
+<published>2023-08-18T14:17:00-07:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Tropical Storm Watch issued August 18 at 2:17PM PDT until further notice by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CA12665ABBA774.TropicalStormWatch.12665AC87DC8CA.LOXTCVLOX.085ce43e7e90a3a06dcb3c9bbe22372f"/>
+<summary>...TROPICAL STORM WATCH REMAINS IN EFFECT... * LOCATIONS AFFECTED - Rancho Palos Verdes * WIND - LATEST LOCAL FORECAST: Below tropical storm force wind - Peak Wind Forecast: 10-20 mph with gusts to 30 mph</summary>
+<cap:event>Tropical Storm Watch</cap:event>
+<cap:effective>2023-08-18T14:17:00-07:00</cap:effective>
+<cap:expires>2023-08-18T22:30:00-07:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Future</cap:urgency>
+<cap:severity>Severe</cap:severity>
+<cap:certainty>Possible</cap:certainty>
+<cap:areaDesc>Palos Verdes Hills</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>006037</value>
+<valueName>UGC</valueName>
+<value>CAZ367</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KLOX.TR.A.2009.000000T0000Z-000000T0000Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=CA12665ABBA774.TropicalStormWatch.12665AC87DC8CA.LOXTCVLOX.8b9d73800c6493ec37ffb684d8677361</id>
+<updated>2023-08-18T14:17:00-07:00</updated>
+<published>2023-08-18T14:17:00-07:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Tropical Storm Watch issued August 18 at 2:17PM PDT until further notice by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CA12665ABBA774.TropicalStormWatch.12665AC87DC8CA.LOXTCVLOX.8b9d73800c6493ec37ffb684d8677361"/>
+<summary>...TROPICAL STORM WATCH REMAINS IN EFFECT... * LOCATIONS AFFECTED - Beverly Hills - Compton - Culver City - Downey</summary>
+<cap:event>Tropical Storm Watch</cap:event>
+<cap:effective>2023-08-18T14:17:00-07:00</cap:effective>
+<cap:expires>2023-08-18T22:30:00-07:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Future</cap:urgency>
+<cap:severity>Severe</cap:severity>
+<cap:certainty>Possible</cap:certainty>
+<cap:areaDesc>Los Angeles County Inland Coast including Downtown Los Angeles</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>006037</value>
+<valueName>UGC</valueName>
+<value>CAZ368</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KLOX.TR.A.2009.000000T0000Z-000000T0000Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=CA12665ABBA774.TropicalStormWatch.12665AC87DC8CA.LOXTCVLOX.f7a522e71e42b9e1770b8a9122d6d60f</id>
+<updated>2023-08-18T14:17:00-07:00</updated>
+<published>2023-08-18T14:17:00-07:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Tropical Storm Watch issued August 18 at 2:17PM PDT until further notice by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CA12665ABBA774.TropicalStormWatch.12665AC87DC8CA.LOXTCVLOX.f7a522e71e42b9e1770b8a9122d6d60f"/>
+<summary>...TROPICAL STORM WATCH REMAINS IN EFFECT... * LOCATIONS AFFECTED - Malibu Bowl * WIND - LATEST LOCAL FORECAST: Below tropical storm force wind - Peak Wind Forecast: 10-20 mph with gusts to 25 mph</summary>
+<cap:event>Tropical Storm Watch</cap:event>
+<cap:effective>2023-08-18T14:17:00-07:00</cap:effective>
+<cap:expires>2023-08-18T22:30:00-07:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Future</cap:urgency>
+<cap:severity>Severe</cap:severity>
+<cap:certainty>Possible</cap:certainty>
+<cap:areaDesc>Western Santa Monica Mountains Recreational Area</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>006037 006111</value>
+<valueName>UGC</valueName>
+<value>CAZ369</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KLOX.TR.A.2009.000000T0000Z-000000T0000Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=CA12665ABBA774.TropicalStormWatch.12665AC87DC8CA.LOXTCVLOX.eb5414de83092cb6c5080d0c9ec04b48</id>
+<updated>2023-08-18T14:17:00-07:00</updated>
+<published>2023-08-18T14:17:00-07:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Tropical Storm Watch issued August 18 at 2:17PM PDT until further notice by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CA12665ABBA774.TropicalStormWatch.12665AC87DC8CA.LOXTCVLOX.eb5414de83092cb6c5080d0c9ec04b48"/>
+<summary>...TROPICAL STORM WATCH REMAINS IN EFFECT... * LOCATIONS AFFECTED - Topanga * WIND - LATEST LOCAL FORECAST: Below tropical storm force wind - Peak Wind Forecast: 10-20 mph with gusts to 25 mph</summary>
+<cap:event>Tropical Storm Watch</cap:event>
+<cap:effective>2023-08-18T14:17:00-07:00</cap:effective>
+<cap:expires>2023-08-18T22:30:00-07:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Future</cap:urgency>
+<cap:severity>Severe</cap:severity>
+<cap:certainty>Possible</cap:certainty>
+<cap:areaDesc>Eastern Santa Monica Mountains Recreational Area</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>006037</value>
+<valueName>UGC</valueName>
+<value>CAZ370</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KLOX.TR.A.2009.000000T0000Z-000000T0000Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=CA12665ABBA774.TropicalStormWatch.12665AC87DC8CA.LOXTCVLOX.7d5a0ac1cf4fa1c58d8e269a6b36abd2</id>
+<updated>2023-08-18T14:17:00-07:00</updated>
+<published>2023-08-18T14:17:00-07:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Tropical Storm Watch issued August 18 at 2:17PM PDT until further notice by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CA12665ABBA774.TropicalStormWatch.12665AC87DC8CA.LOXTCVLOX.7d5a0ac1cf4fa1c58d8e269a6b36abd2"/>
+<summary>...TROPICAL STORM WATCH REMAINS IN EFFECT... * LOCATIONS AFFECTED - Westlake Village - Malibou Lake * WIND - LATEST LOCAL FORECAST: Below tropical storm force wind</summary>
+<cap:event>Tropical Storm Watch</cap:event>
+<cap:effective>2023-08-18T14:17:00-07:00</cap:effective>
+<cap:expires>2023-08-18T22:30:00-07:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Future</cap:urgency>
+<cap:severity>Severe</cap:severity>
+<cap:certainty>Possible</cap:certainty>
+<cap:areaDesc>Calabasas and Agoura Hills</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>006037</value>
+<valueName>UGC</valueName>
+<value>CAZ371</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KLOX.TR.A.2009.000000T0000Z-000000T0000Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=CA12665ABBA774.TropicalStormWatch.12665AC87DC8CA.LOXTCVLOX.a6ea1ea3255278af93a5d7fa07b7758a</id>
+<updated>2023-08-18T14:17:00-07:00</updated>
+<published>2023-08-18T14:17:00-07:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Tropical Storm Watch issued August 18 at 2:17PM PDT until further notice by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CA12665ABBA774.TropicalStormWatch.12665AC87DC8CA.LOXTCVLOX.a6ea1ea3255278af93a5d7fa07b7758a"/>
+<summary>...TROPICAL STORM WATCH REMAINS IN EFFECT... * LOCATIONS AFFECTED - Northridge - Woodland Hills - Van Nuys - Chatsworth</summary>
+<cap:event>Tropical Storm Watch</cap:event>
+<cap:effective>2023-08-18T14:17:00-07:00</cap:effective>
+<cap:expires>2023-08-18T22:30:00-07:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Future</cap:urgency>
+<cap:severity>Severe</cap:severity>
+<cap:certainty>Possible</cap:certainty>
+<cap:areaDesc>Western San Fernando Valley</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>006037</value>
+<valueName>UGC</valueName>
+<value>CAZ372</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KLOX.TR.A.2009.000000T0000Z-000000T0000Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=CA12665ABBA774.TropicalStormWatch.12665AC87DC8CA.LOXTCVLOX.3c620e53028628764597f58420c7232d</id>
+<updated>2023-08-18T14:17:00-07:00</updated>
+<published>2023-08-18T14:17:00-07:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Tropical Storm Watch issued August 18 at 2:17PM PDT until further notice by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CA12665ABBA774.TropicalStormWatch.12665AC87DC8CA.LOXTCVLOX.3c620e53028628764597f58420c7232d"/>
+<summary>...TROPICAL STORM WATCH REMAINS IN EFFECT... * LOCATIONS AFFECTED - Burbank - Universal City - Glendale - Sunland</summary>
+<cap:event>Tropical Storm Watch</cap:event>
+<cap:effective>2023-08-18T14:17:00-07:00</cap:effective>
+<cap:expires>2023-08-18T22:30:00-07:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Future</cap:urgency>
+<cap:severity>Severe</cap:severity>
+<cap:certainty>Possible</cap:certainty>
+<cap:areaDesc>Eastern San Fernando Valley</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>006037</value>
+<valueName>UGC</valueName>
+<value>CAZ373</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KLOX.TR.A.2009.000000T0000Z-000000T0000Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=CA12665ABBA774.TropicalStormWatch.12665AC87DC8CA.LOXTCVLOX.c87112b12337c60acdec638290131fa3</id>
+<updated>2023-08-18T14:17:00-07:00</updated>
+<published>2023-08-18T14:17:00-07:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Tropical Storm Watch issued August 18 at 2:17PM PDT until further notice by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CA12665ABBA774.TropicalStormWatch.12665AC87DC8CA.LOXTCVLOX.c87112b12337c60acdec638290131fa3"/>
+<summary>...TROPICAL STORM WATCH REMAINS IN EFFECT... * LOCATIONS AFFECTED - Moorpark - Newbury Park - Simi Valley - Thousand Oaks</summary>
+<cap:event>Tropical Storm Watch</cap:event>
+<cap:effective>2023-08-18T14:17:00-07:00</cap:effective>
+<cap:expires>2023-08-18T22:30:00-07:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Future</cap:urgency>
+<cap:severity>Severe</cap:severity>
+<cap:certainty>Possible</cap:certainty>
+<cap:areaDesc>Southeastern Ventura County Valleys</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>006111</value>
+<valueName>UGC</valueName>
+<value>CAZ374</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KLOX.TR.A.2009.000000T0000Z-000000T0000Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=CA12665ABBA774.TropicalStormWatch.12665AC87DC8CA.LOXTCVLOX.a7dce770f545ea800b5c20061c9afacc</id>
+<updated>2023-08-18T14:17:00-07:00</updated>
+<published>2023-08-18T14:17:00-07:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Tropical Storm Watch issued August 18 at 2:17PM PDT until further notice by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CA12665ABBA774.TropicalStormWatch.12665AC87DC8CA.LOXTCVLOX.a7dce770f545ea800b5c20061c9afacc"/>
+<summary>...TROPICAL STORM WATCH REMAINS IN EFFECT... * LOCATIONS AFFECTED - Oat Mountain * WIND - LATEST LOCAL FORECAST: Below tropical storm force wind - Peak Wind Forecast: 15-25 mph with gusts to 35 mph</summary>
+<cap:event>Tropical Storm Watch</cap:event>
+<cap:effective>2023-08-18T14:17:00-07:00</cap:effective>
+<cap:expires>2023-08-18T22:30:00-07:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Future</cap:urgency>
+<cap:severity>Severe</cap:severity>
+<cap:certainty>Possible</cap:certainty>
+<cap:areaDesc>Santa Susana Mountains</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>006037 006111</value>
+<valueName>UGC</valueName>
+<value>CAZ375</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KLOX.TR.A.2009.000000T0000Z-000000T0000Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=CA12665ABBA774.TropicalStormWatch.12665AC87DC8CA.LOXTCVLOX.a4c9d424cfa5566c3932027798a7c167</id>
+<updated>2023-08-18T14:17:00-07:00</updated>
+<published>2023-08-18T14:17:00-07:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Tropical Storm Watch issued August 18 at 2:17PM PDT until further notice by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CA12665ABBA774.TropicalStormWatch.12665AC87DC8CA.LOXTCVLOX.a4c9d424cfa5566c3932027798a7c167"/>
+<summary>...TROPICAL STORM WATCH REMAINS IN EFFECT... * LOCATIONS AFFECTED - Rose Valley - Matilija - Topatopa Mountains * WIND</summary>
+<cap:event>Tropical Storm Watch</cap:event>
+<cap:effective>2023-08-18T14:17:00-07:00</cap:effective>
+<cap:expires>2023-08-18T22:30:00-07:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Future</cap:urgency>
+<cap:severity>Severe</cap:severity>
+<cap:certainty>Possible</cap:certainty>
+<cap:areaDesc>Southern Ventura County Mountains</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>006111</value>
+<valueName>UGC</valueName>
+<value>CAZ376</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KLOX.TR.A.2009.000000T0000Z-000000T0000Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=CA12665ABBA774.TropicalStormWatch.12665AC87DC8CA.LOXTCVLOX.d57cab9c9035f235617006783b65aff9</id>
+<updated>2023-08-18T14:17:00-07:00</updated>
+<published>2023-08-18T14:17:00-07:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Tropical Storm Watch issued August 18 at 2:17PM PDT until further notice by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CA12665ABBA774.TropicalStormWatch.12665AC87DC8CA.LOXTCVLOX.d57cab9c9035f235617006783b65aff9"/>
+<summary>...TROPICAL STORM WATCH REMAINS IN EFFECT... * LOCATIONS AFFECTED - Lockwood Valley - Mount Pinos - Ozena * WIND</summary>
+<cap:event>Tropical Storm Watch</cap:event>
+<cap:effective>2023-08-18T14:17:00-07:00</cap:effective>
+<cap:expires>2023-08-18T22:30:00-07:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Future</cap:urgency>
+<cap:severity>Severe</cap:severity>
+<cap:certainty>Possible</cap:certainty>
+<cap:areaDesc>Northern Ventura County Mountains</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>006111</value>
+<valueName>UGC</valueName>
+<value>CAZ377</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KLOX.TR.A.2009.000000T0000Z-000000T0000Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=CA12665ABBA774.TropicalStormWatch.12665AC87DC8CA.LOXTCVLOX.4633a851d9a1d9a82c5fc0f03e8142cc</id>
+<updated>2023-08-18T14:17:00-07:00</updated>
+<published>2023-08-18T14:17:00-07:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Tropical Storm Watch issued August 18 at 2:17PM PDT until further notice by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CA12665ABBA774.TropicalStormWatch.12665AC87DC8CA.LOXTCVLOX.4633a851d9a1d9a82c5fc0f03e8142cc"/>
+<summary>...TROPICAL STORM WATCH REMAINS IN EFFECT... * LOCATIONS AFFECTED - Tejon Pass - Gorman - Pyramid Lake * WIND</summary>
+<cap:event>Tropical Storm Watch</cap:event>
+<cap:effective>2023-08-18T14:17:00-07:00</cap:effective>
+<cap:expires>2023-08-18T22:30:00-07:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Future</cap:urgency>
+<cap:severity>Severe</cap:severity>
+<cap:certainty>Possible</cap:certainty>
+<cap:areaDesc>Interstate 5 Corridor</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>006037</value>
+<valueName>UGC</valueName>
+<value>CAZ378</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KLOX.TR.A.2009.000000T0000Z-000000T0000Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=CA12665ABBA774.TropicalStormWatch.12665AC87DC8CA.LOXTCVLOX.dbf66e30e05177eb0df87fbf05ce7ed7</id>
+<updated>2023-08-18T14:17:00-07:00</updated>
+<published>2023-08-18T14:17:00-07:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Tropical Storm Watch issued August 18 at 2:17PM PDT until further notice by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CA12665ABBA774.TropicalStormWatch.12665AC87DC8CA.LOXTCVLOX.dbf66e30e05177eb0df87fbf05ce7ed7"/>
+<summary>...TROPICAL STORM WATCH REMAINS IN EFFECT... * LOCATIONS AFFECTED - Acton - Warm Springs - Mill Creek * WIND</summary>
+<cap:event>Tropical Storm Watch</cap:event>
+<cap:effective>2023-08-18T14:17:00-07:00</cap:effective>
+<cap:expires>2023-08-18T22:30:00-07:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Future</cap:urgency>
+<cap:severity>Severe</cap:severity>
+<cap:certainty>Possible</cap:certainty>
+<cap:areaDesc>Western San Gabriel Mountains and Highway 14 Corridor</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>006037</value>
+<valueName>UGC</valueName>
+<value>CAZ379</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KLOX.TR.A.2009.000000T0000Z-000000T0000Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=CA12665ABBA774.TropicalStormWatch.12665AC87DC8CA.LOXTCVLOX.889e4ccbe32aff7f96f1cbaa08409b62</id>
+<updated>2023-08-18T14:17:00-07:00</updated>
+<published>2023-08-18T14:17:00-07:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Tropical Storm Watch issued August 18 at 2:17PM PDT until further notice by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CA12665ABBA774.TropicalStormWatch.12665AC87DC8CA.LOXTCVLOX.889e4ccbe32aff7f96f1cbaa08409b62"/>
+<summary>...TROPICAL STORM WATCH REMAINS IN EFFECT... * LOCATIONS AFFECTED - Mount Wilson - Mount Baldy - Wrightwood - The Angeles Crest Highway</summary>
+<cap:event>Tropical Storm Watch</cap:event>
+<cap:effective>2023-08-18T14:17:00-07:00</cap:effective>
+<cap:expires>2023-08-18T22:30:00-07:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Future</cap:urgency>
+<cap:severity>Severe</cap:severity>
+<cap:certainty>Possible</cap:certainty>
+<cap:areaDesc>Eastern San Gabriel Mountains</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>006037</value>
+<valueName>UGC</valueName>
+<value>CAZ380</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KLOX.TR.A.2009.000000T0000Z-000000T0000Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=CA12665ABBA774.TropicalStormWatch.12665AC87DC8CA.LOXTCVLOX.b2de4a1ccbe69df8805fab2354f6f1a2</id>
+<updated>2023-08-18T14:17:00-07:00</updated>
+<published>2023-08-18T14:17:00-07:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Tropical Storm Watch issued August 18 at 2:17PM PDT until further notice by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CA12665ABBA774.TropicalStormWatch.12665AC87DC8CA.LOXTCVLOX.b2de4a1ccbe69df8805fab2354f6f1a2"/>
+<summary>...TROPICAL STORM WATCH REMAINS IN EFFECT... * LOCATIONS AFFECTED - Elizabeth Lake - Lake Palmdale * WIND - LATEST LOCAL FORECAST: Below tropical storm force wind</summary>
+<cap:event>Tropical Storm Watch</cap:event>
+<cap:effective>2023-08-18T14:17:00-07:00</cap:effective>
+<cap:expires>2023-08-18T22:30:00-07:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Future</cap:urgency>
+<cap:severity>Severe</cap:severity>
+<cap:certainty>Possible</cap:certainty>
+<cap:areaDesc>Western Antelope Valley Foothills</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>006037</value>
+<valueName>UGC</valueName>
+<value>CAZ381</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KLOX.TR.A.2009.000000T0000Z-000000T0000Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=CA12665ABBA774.TropicalStormWatch.12665AC87DC8CA.LOXTCVLOX.237af79e13bf89a1d093029eddb1e711</id>
+<updated>2023-08-18T14:17:00-07:00</updated>
+<published>2023-08-18T14:17:00-07:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Tropical Storm Watch issued August 18 at 2:17PM PDT until further notice by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CA12665ABBA774.TropicalStormWatch.12665AC87DC8CA.LOXTCVLOX.237af79e13bf89a1d093029eddb1e711"/>
+<summary>...TROPICAL STORM WATCH REMAINS IN EFFECT... * LOCATIONS AFFECTED - Valyermo - Llano - Pearblossom * WIND</summary>
+<cap:event>Tropical Storm Watch</cap:event>
+<cap:effective>2023-08-18T14:17:00-07:00</cap:effective>
+<cap:expires>2023-08-18T22:30:00-07:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Future</cap:urgency>
+<cap:severity>Severe</cap:severity>
+<cap:certainty>Possible</cap:certainty>
+<cap:areaDesc>Eastern Antelope Valley Foothills</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>006037</value>
+<valueName>UGC</valueName>
+<value>CAZ382</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KLOX.TR.A.2009.000000T0000Z-000000T0000Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=CA12665ABBA774.TropicalStormWatch.12665AC87DC8CA.LOXTCVLOX.0476eefc3a00cecb2e1c4b3302e08d37</id>
+<updated>2023-08-18T14:17:00-07:00</updated>
+<published>2023-08-18T14:17:00-07:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Tropical Storm Watch issued August 18 at 2:17PM PDT until further notice by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CA12665ABBA774.TropicalStormWatch.12665AC87DC8CA.LOXTCVLOX.0476eefc3a00cecb2e1c4b3302e08d37"/>
+<summary>...TROPICAL STORM WATCH REMAINS IN EFFECT... * LOCATIONS AFFECTED - Palmdale - Lancaster - Lake Los Angeles * WIND</summary>
+<cap:event>Tropical Storm Watch</cap:event>
+<cap:effective>2023-08-18T14:17:00-07:00</cap:effective>
+<cap:expires>2023-08-18T22:30:00-07:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Future</cap:urgency>
+<cap:severity>Severe</cap:severity>
+<cap:certainty>Possible</cap:certainty>
+<cap:areaDesc>Antelope Valley</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>006037</value>
+<valueName>UGC</valueName>
+<value>CAZ383</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KLOX.TR.A.2009.000000T0000Z-000000T0000Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=CA12665ABBA774.TropicalStormWatch.12665AC87DC8CA.LOXTCVLOX.dd9f2933c2c37f534772a723f73721e3</id>
+<updated>2023-08-18T14:17:00-07:00</updated>
+<published>2023-08-18T14:17:00-07:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Tropical Storm Watch issued August 18 at 2:17PM PDT until further notice by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CA12665ABBA774.TropicalStormWatch.12665AC87DC8CA.LOXTCVLOX.dd9f2933c2c37f534772a723f73721e3"/>
+<summary>...TROPICAL STORM WATCH REMAINS IN EFFECT... * LOCATIONS AFFECTED - East Los Angeles - El Monte - Pasadena - Pomona</summary>
+<cap:event>Tropical Storm Watch</cap:event>
+<cap:effective>2023-08-18T14:17:00-07:00</cap:effective>
+<cap:expires>2023-08-18T22:30:00-07:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Future</cap:urgency>
+<cap:severity>Severe</cap:severity>
+<cap:certainty>Possible</cap:certainty>
+<cap:areaDesc>Los Angeles County San Gabriel Valley</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>006037</value>
+<valueName>UGC</valueName>
+<value>CAZ548</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KLOX.TR.A.2009.000000T0000Z-000000T0000Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=CA12665ABBA0D0.FloodWatch.12665AC87DC8CA.SGXFFASGX.3d186268fffe1adb86d75ae0e11102cf</id>
 <updated>2023-08-18T14:00:00-07:00</updated>
 <published>2023-08-18T14:00:00-07:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
 <title>Flood Watch issued August 18 at 2:00PM PDT until further notice by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CA12665ABBA0D0.FloodWatch.12665AC85C94CA.SGXFFASGX.3d186268fffe1adb86d75ae0e11102cf"/>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CA12665ABBA0D0.FloodWatch.12665AC87DC8CA.SGXFFASGX.3d186268fffe1adb86d75ae0e11102cf"/>
 <summary>...FLOOD WATCH REMAINS IN EFFECT FROM LATE SATURDAY NIGHT THROUGH MONDAY EVENING... * WHAT...Flooding caused by excessive rainfall continues to be possible. * WHERE...A portion of Southwest California, including the following areas, Orange County Coastal Areas, Orange County Inland Areas,</summary>
 <cap:event>Flood Watch</cap:event>
 <cap:effective>2023-08-18T14:00:00-07:00</cap:effective>
-<cap:expires>2023-08-18T21:45:00-07:00</cap:expires>
+<cap:expires>2023-08-18T22:30:00-07:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
 <cap:category>Met</cap:category>
@@ -1102,18 +2351,18 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=CA12665ABBA0D0.FloodWatch.12665AC85C94CA.SGXFFASGX.e03ec7c75c661094edf306573390e6fc</id>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=CA12665ABBA0D0.FloodWatch.12665AC87DC8CA.SGXFFASGX.e03ec7c75c661094edf306573390e6fc</id>
 <updated>2023-08-18T14:00:00-07:00</updated>
 <published>2023-08-18T14:00:00-07:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
 <title>Flood Watch issued August 18 at 2:00PM PDT until further notice by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CA12665ABBA0D0.FloodWatch.12665AC85C94CA.SGXFFASGX.e03ec7c75c661094edf306573390e6fc"/>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CA12665ABBA0D0.FloodWatch.12665AC87DC8CA.SGXFFASGX.e03ec7c75c661094edf306573390e6fc"/>
 <summary>...FLOOD WATCH REMAINS IN EFFECT FROM SATURDAY MORNING THROUGH MONDAY AFTERNOON... * WHAT...Flooding caused by excessive rainfall continues to be possible. * WHERE...A portion of Southwest California, including the following areas, Apple and Lucerne Valleys, Coachella Valley, Riverside</summary>
 <cap:event>Flood Watch</cap:event>
 <cap:effective>2023-08-18T14:00:00-07:00</cap:effective>
-<cap:expires>2023-08-18T21:45:00-07:00</cap:expires>
+<cap:expires>2023-08-18T22:30:00-07:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
 <cap:category>Met</cap:category>
@@ -1233,742 +2482,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=CA12665ABB8C1C.TropicalStormWatch.12665AC87210CA.LOXTCVLOX.d37a77c27eba5aa92e091e174e35678f</id>
-<updated>2023-08-18T13:47:00-07:00</updated>
-<published>2023-08-18T13:47:00-07:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Tropical Storm Watch issued August 18 at 1:47PM PDT until further notice by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CA12665ABB8C1C.TropicalStormWatch.12665AC87210CA.LOXTCVLOX.d37a77c27eba5aa92e091e174e35678f"/>
-<summary>...TROPICAL STORM WATCH REMAINS IN EFFECT... * LOCATIONS AFFECTED - Avalon * WIND - LATEST LOCAL FORECAST: Equivalent Tropical Storm force wind - Peak Wind Forecast: 30-40 mph with gusts to 50 mph</summary>
-<cap:event>Tropical Storm Watch</cap:event>
-<cap:effective>2023-08-18T13:47:00-07:00</cap:effective>
-<cap:expires>2023-08-18T22:00:00-07:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Future</cap:urgency>
-<cap:severity>Severe</cap:severity>
-<cap:certainty>Possible</cap:certainty>
-<cap:areaDesc>Catalina and Santa Barbara Islands</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>006037</value>
-<valueName>UGC</valueName>
-<value>CAZ087</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KLOX.TR.A.2009.000000T0000Z-000000T0000Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=CA12665ABB8C1C.TropicalStormWatch.12665AC87210CA.LOXTCVLOX.48309a88040158f2a70270357b645d2c</id>
-<updated>2023-08-18T13:47:00-07:00</updated>
-<published>2023-08-18T13:47:00-07:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Tropical Storm Watch issued August 18 at 1:47PM PDT until further notice by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CA12665ABB8C1C.TropicalStormWatch.12665AC87210CA.LOXTCVLOX.48309a88040158f2a70270357b645d2c"/>
-<summary>...TROPICAL STORM WATCH REMAINS IN EFFECT... * LOCATIONS AFFECTED - Lake Castaic - Newhall - Santa Clarita - Valencia</summary>
-<cap:event>Tropical Storm Watch</cap:event>
-<cap:effective>2023-08-18T13:47:00-07:00</cap:effective>
-<cap:expires>2023-08-18T22:00:00-07:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Future</cap:urgency>
-<cap:severity>Severe</cap:severity>
-<cap:certainty>Possible</cap:certainty>
-<cap:areaDesc>Santa Clarita Valley</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>006037</value>
-<valueName>UGC</valueName>
-<value>CAZ088</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KLOX.TR.A.2009.000000T0000Z-000000T0000Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=CA12665ABB8C1C.TropicalStormWatch.12665AC87210CA.LOXTCVLOX.6075756f23e392270148b1fe66d035e7</id>
-<updated>2023-08-18T13:47:00-07:00</updated>
-<published>2023-08-18T13:47:00-07:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Tropical Storm Watch issued August 18 at 1:47PM PDT until further notice by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CA12665ABB8C1C.TropicalStormWatch.12665AC87210CA.LOXTCVLOX.6075756f23e392270148b1fe66d035e7"/>
-<summary>...TROPICAL STORM WATCH IN EFFECT... A Tropical Storm Watch means tropical storm-force winds are possible somewhere within this area within the next 48 hours * LOCATIONS AFFECTED - Fillmore - Piru</summary>
-<cap:event>Tropical Storm Watch</cap:event>
-<cap:effective>2023-08-18T13:47:00-07:00</cap:effective>
-<cap:expires>2023-08-18T22:00:00-07:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Future</cap:urgency>
-<cap:severity>Severe</cap:severity>
-<cap:certainty>Possible</cap:certainty>
-<cap:areaDesc>Central Ventura County Valleys</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>006111</value>
-<valueName>UGC</valueName>
-<value>CAZ358</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.EXA.KLOX.TR.A.2009.000000T0000Z-000000T0000Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=CA12665ABB8C1C.TropicalStormWatch.12665AC87210CA.LOXTCVLOX.0c9a559e08d33e442d74a48ce9838532</id>
-<updated>2023-08-18T13:47:00-07:00</updated>
-<published>2023-08-18T13:47:00-07:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Tropical Storm Watch issued August 18 at 1:47PM PDT until further notice by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CA12665ABB8C1C.TropicalStormWatch.12665AC87210CA.LOXTCVLOX.0c9a559e08d33e442d74a48ce9838532"/>
-<summary>...TROPICAL STORM WATCH IN EFFECT... A Tropical Storm Watch means tropical storm-force winds are possible somewhere within this area within the next 48 hours * LOCATIONS AFFECTED - Malibu - Pacific Palisades</summary>
-<cap:event>Tropical Storm Watch</cap:event>
-<cap:effective>2023-08-18T13:47:00-07:00</cap:effective>
-<cap:expires>2023-08-18T22:00:00-07:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Future</cap:urgency>
-<cap:severity>Severe</cap:severity>
-<cap:certainty>Possible</cap:certainty>
-<cap:areaDesc>Malibu Coast</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>006037</value>
-<valueName>UGC</valueName>
-<value>CAZ362</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.EXA.KLOX.TR.A.2009.000000T0000Z-000000T0000Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=CA12665ABB8C1C.TropicalStormWatch.12665AC87210CA.LOXTCVLOX.858501c3522bba0af598aea3a914cc8c</id>
-<updated>2023-08-18T13:47:00-07:00</updated>
-<published>2023-08-18T13:47:00-07:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Tropical Storm Watch issued August 18 at 1:47PM PDT until further notice by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CA12665ABB8C1C.TropicalStormWatch.12665AC87210CA.LOXTCVLOX.858501c3522bba0af598aea3a914cc8c"/>
-<summary>...TROPICAL STORM WATCH IN EFFECT... A Tropical Storm Watch means tropical storm-force winds are possible somewhere within this area within the next 48 hours * LOCATIONS AFFECTED - LAX - Long Beach</summary>
-<cap:event>Tropical Storm Watch</cap:event>
-<cap:effective>2023-08-18T13:47:00-07:00</cap:effective>
-<cap:expires>2023-08-18T22:00:00-07:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Future</cap:urgency>
-<cap:severity>Severe</cap:severity>
-<cap:certainty>Possible</cap:certainty>
-<cap:areaDesc>Los Angeles County Beaches</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>006037</value>
-<valueName>UGC</valueName>
-<value>CAZ366</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.EXA.KLOX.TR.A.2009.000000T0000Z-000000T0000Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=CA12665ABB8C1C.TropicalStormWatch.12665AC87210CA.LOXTCVLOX.085ce43e7e90a3a06dcb3c9bbe22372f</id>
-<updated>2023-08-18T13:47:00-07:00</updated>
-<published>2023-08-18T13:47:00-07:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Tropical Storm Watch issued August 18 at 1:47PM PDT until further notice by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CA12665ABB8C1C.TropicalStormWatch.12665AC87210CA.LOXTCVLOX.085ce43e7e90a3a06dcb3c9bbe22372f"/>
-<summary>...TROPICAL STORM WATCH IN EFFECT... A Tropical Storm Watch means tropical storm-force winds are possible somewhere within this area within the next 48 hours * LOCATIONS AFFECTED - Rancho Palos Verdes * WIND</summary>
-<cap:event>Tropical Storm Watch</cap:event>
-<cap:effective>2023-08-18T13:47:00-07:00</cap:effective>
-<cap:expires>2023-08-18T22:00:00-07:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Future</cap:urgency>
-<cap:severity>Severe</cap:severity>
-<cap:certainty>Possible</cap:certainty>
-<cap:areaDesc>Palos Verdes Hills</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>006037</value>
-<valueName>UGC</valueName>
-<value>CAZ367</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.EXA.KLOX.TR.A.2009.000000T0000Z-000000T0000Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=CA12665ABB8C1C.TropicalStormWatch.12665AC87210CA.LOXTCVLOX.8b9d73800c6493ec37ffb684d8677361</id>
-<updated>2023-08-18T13:47:00-07:00</updated>
-<published>2023-08-18T13:47:00-07:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Tropical Storm Watch issued August 18 at 1:47PM PDT until further notice by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CA12665ABB8C1C.TropicalStormWatch.12665AC87210CA.LOXTCVLOX.8b9d73800c6493ec37ffb684d8677361"/>
-<summary>...TROPICAL STORM WATCH IN EFFECT... A Tropical Storm Watch means tropical storm-force winds are possible somewhere within this area within the next 48 hours * LOCATIONS AFFECTED - Beverly Hills - Compton</summary>
-<cap:event>Tropical Storm Watch</cap:event>
-<cap:effective>2023-08-18T13:47:00-07:00</cap:effective>
-<cap:expires>2023-08-18T22:00:00-07:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Future</cap:urgency>
-<cap:severity>Severe</cap:severity>
-<cap:certainty>Possible</cap:certainty>
-<cap:areaDesc>Los Angeles County Inland Coast including Downtown Los Angeles</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>006037</value>
-<valueName>UGC</valueName>
-<value>CAZ368</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.EXA.KLOX.TR.A.2009.000000T0000Z-000000T0000Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=CA12665ABB8C1C.TropicalStormWatch.12665AC87210CA.LOXTCVLOX.f7a522e71e42b9e1770b8a9122d6d60f</id>
-<updated>2023-08-18T13:47:00-07:00</updated>
-<published>2023-08-18T13:47:00-07:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Tropical Storm Watch issued August 18 at 1:47PM PDT until further notice by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CA12665ABB8C1C.TropicalStormWatch.12665AC87210CA.LOXTCVLOX.f7a522e71e42b9e1770b8a9122d6d60f"/>
-<summary>...TROPICAL STORM WATCH IN EFFECT... A Tropical Storm Watch means tropical storm-force winds are possible somewhere within this area within the next 48 hours * LOCATIONS AFFECTED - Malibu Bowl * WIND</summary>
-<cap:event>Tropical Storm Watch</cap:event>
-<cap:effective>2023-08-18T13:47:00-07:00</cap:effective>
-<cap:expires>2023-08-18T22:00:00-07:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Future</cap:urgency>
-<cap:severity>Severe</cap:severity>
-<cap:certainty>Possible</cap:certainty>
-<cap:areaDesc>Western Santa Monica Mountains Recreational Area</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>006037 006111</value>
-<valueName>UGC</valueName>
-<value>CAZ369</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.EXA.KLOX.TR.A.2009.000000T0000Z-000000T0000Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=CA12665ABB8C1C.TropicalStormWatch.12665AC87210CA.LOXTCVLOX.eb5414de83092cb6c5080d0c9ec04b48</id>
-<updated>2023-08-18T13:47:00-07:00</updated>
-<published>2023-08-18T13:47:00-07:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Tropical Storm Watch issued August 18 at 1:47PM PDT until further notice by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CA12665ABB8C1C.TropicalStormWatch.12665AC87210CA.LOXTCVLOX.eb5414de83092cb6c5080d0c9ec04b48"/>
-<summary>...TROPICAL STORM WATCH IN EFFECT... A Tropical Storm Watch means tropical storm-force winds are possible somewhere within this area within the next 48 hours * LOCATIONS AFFECTED - Topanga * WIND</summary>
-<cap:event>Tropical Storm Watch</cap:event>
-<cap:effective>2023-08-18T13:47:00-07:00</cap:effective>
-<cap:expires>2023-08-18T22:00:00-07:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Future</cap:urgency>
-<cap:severity>Severe</cap:severity>
-<cap:certainty>Possible</cap:certainty>
-<cap:areaDesc>Eastern Santa Monica Mountains Recreational Area</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>006037</value>
-<valueName>UGC</valueName>
-<value>CAZ370</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.EXA.KLOX.TR.A.2009.000000T0000Z-000000T0000Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=CA12665ABB8C1C.TropicalStormWatch.12665AC87210CA.LOXTCVLOX.7d5a0ac1cf4fa1c58d8e269a6b36abd2</id>
-<updated>2023-08-18T13:47:00-07:00</updated>
-<published>2023-08-18T13:47:00-07:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Tropical Storm Watch issued August 18 at 1:47PM PDT until further notice by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CA12665ABB8C1C.TropicalStormWatch.12665AC87210CA.LOXTCVLOX.7d5a0ac1cf4fa1c58d8e269a6b36abd2"/>
-<summary>...TROPICAL STORM WATCH IN EFFECT... A Tropical Storm Watch means tropical storm-force winds are possible somewhere within this area within the next 48 hours * LOCATIONS AFFECTED - Westlake Village - Malibou Lake</summary>
-<cap:event>Tropical Storm Watch</cap:event>
-<cap:effective>2023-08-18T13:47:00-07:00</cap:effective>
-<cap:expires>2023-08-18T22:00:00-07:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Future</cap:urgency>
-<cap:severity>Severe</cap:severity>
-<cap:certainty>Possible</cap:certainty>
-<cap:areaDesc>Calabasas and Agoura Hills</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>006037</value>
-<valueName>UGC</valueName>
-<value>CAZ371</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.EXA.KLOX.TR.A.2009.000000T0000Z-000000T0000Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=CA12665ABB8C1C.TropicalStormWatch.12665AC87210CA.LOXTCVLOX.a6ea1ea3255278af93a5d7fa07b7758a</id>
-<updated>2023-08-18T13:47:00-07:00</updated>
-<published>2023-08-18T13:47:00-07:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Tropical Storm Watch issued August 18 at 1:47PM PDT until further notice by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CA12665ABB8C1C.TropicalStormWatch.12665AC87210CA.LOXTCVLOX.a6ea1ea3255278af93a5d7fa07b7758a"/>
-<summary>...TROPICAL STORM WATCH IN EFFECT... A Tropical Storm Watch means tropical storm-force winds are possible somewhere within this area within the next 48 hours * LOCATIONS AFFECTED - Northridge - Woodland Hills</summary>
-<cap:event>Tropical Storm Watch</cap:event>
-<cap:effective>2023-08-18T13:47:00-07:00</cap:effective>
-<cap:expires>2023-08-18T22:00:00-07:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Future</cap:urgency>
-<cap:severity>Severe</cap:severity>
-<cap:certainty>Possible</cap:certainty>
-<cap:areaDesc>Western San Fernando Valley</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>006037</value>
-<valueName>UGC</valueName>
-<value>CAZ372</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.EXA.KLOX.TR.A.2009.000000T0000Z-000000T0000Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=CA12665ABB8C1C.TropicalStormWatch.12665AC87210CA.LOXTCVLOX.3c620e53028628764597f58420c7232d</id>
-<updated>2023-08-18T13:47:00-07:00</updated>
-<published>2023-08-18T13:47:00-07:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Tropical Storm Watch issued August 18 at 1:47PM PDT until further notice by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CA12665ABB8C1C.TropicalStormWatch.12665AC87210CA.LOXTCVLOX.3c620e53028628764597f58420c7232d"/>
-<summary>...TROPICAL STORM WATCH IN EFFECT... A Tropical Storm Watch means tropical storm-force winds are possible somewhere within this area within the next 48 hours * LOCATIONS AFFECTED - Burbank - Universal City</summary>
-<cap:event>Tropical Storm Watch</cap:event>
-<cap:effective>2023-08-18T13:47:00-07:00</cap:effective>
-<cap:expires>2023-08-18T22:00:00-07:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Future</cap:urgency>
-<cap:severity>Severe</cap:severity>
-<cap:certainty>Possible</cap:certainty>
-<cap:areaDesc>Eastern San Fernando Valley</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>006037</value>
-<valueName>UGC</valueName>
-<value>CAZ373</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.EXA.KLOX.TR.A.2009.000000T0000Z-000000T0000Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=CA12665ABB8C1C.TropicalStormWatch.12665AC87210CA.LOXTCVLOX.c87112b12337c60acdec638290131fa3</id>
-<updated>2023-08-18T13:47:00-07:00</updated>
-<published>2023-08-18T13:47:00-07:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Tropical Storm Watch issued August 18 at 1:47PM PDT until further notice by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CA12665ABB8C1C.TropicalStormWatch.12665AC87210CA.LOXTCVLOX.c87112b12337c60acdec638290131fa3"/>
-<summary>...TROPICAL STORM WATCH IN EFFECT... A Tropical Storm Watch means tropical storm-force winds are possible somewhere within this area within the next 48 hours * LOCATIONS AFFECTED - Moorpark - Newbury Park</summary>
-<cap:event>Tropical Storm Watch</cap:event>
-<cap:effective>2023-08-18T13:47:00-07:00</cap:effective>
-<cap:expires>2023-08-18T22:00:00-07:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Future</cap:urgency>
-<cap:severity>Severe</cap:severity>
-<cap:certainty>Possible</cap:certainty>
-<cap:areaDesc>Southeastern Ventura County Valleys</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>006111</value>
-<valueName>UGC</valueName>
-<value>CAZ374</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.EXA.KLOX.TR.A.2009.000000T0000Z-000000T0000Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=CA12665ABB8C1C.TropicalStormWatch.12665AC87210CA.LOXTCVLOX.a7dce770f545ea800b5c20061c9afacc</id>
-<updated>2023-08-18T13:47:00-07:00</updated>
-<published>2023-08-18T13:47:00-07:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Tropical Storm Watch issued August 18 at 1:47PM PDT until further notice by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CA12665ABB8C1C.TropicalStormWatch.12665AC87210CA.LOXTCVLOX.a7dce770f545ea800b5c20061c9afacc"/>
-<summary>...TROPICAL STORM WATCH IN EFFECT... A Tropical Storm Watch means tropical storm-force winds are possible somewhere within this area within the next 48 hours * LOCATIONS AFFECTED - Oat Mountain * WIND</summary>
-<cap:event>Tropical Storm Watch</cap:event>
-<cap:effective>2023-08-18T13:47:00-07:00</cap:effective>
-<cap:expires>2023-08-18T22:00:00-07:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Future</cap:urgency>
-<cap:severity>Severe</cap:severity>
-<cap:certainty>Possible</cap:certainty>
-<cap:areaDesc>Santa Susana Mountains</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>006037 006111</value>
-<valueName>UGC</valueName>
-<value>CAZ375</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.EXA.KLOX.TR.A.2009.000000T0000Z-000000T0000Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=CA12665ABB8C1C.TropicalStormWatch.12665AC87210CA.LOXTCVLOX.a4c9d424cfa5566c3932027798a7c167</id>
-<updated>2023-08-18T13:47:00-07:00</updated>
-<published>2023-08-18T13:47:00-07:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Tropical Storm Watch issued August 18 at 1:47PM PDT until further notice by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CA12665ABB8C1C.TropicalStormWatch.12665AC87210CA.LOXTCVLOX.a4c9d424cfa5566c3932027798a7c167"/>
-<summary>...TROPICAL STORM WATCH IN EFFECT... A Tropical Storm Watch means tropical storm-force winds are possible somewhere within this area within the next 48 hours * LOCATIONS AFFECTED - Rose Valley - Matilija</summary>
-<cap:event>Tropical Storm Watch</cap:event>
-<cap:effective>2023-08-18T13:47:00-07:00</cap:effective>
-<cap:expires>2023-08-18T22:00:00-07:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Future</cap:urgency>
-<cap:severity>Severe</cap:severity>
-<cap:certainty>Possible</cap:certainty>
-<cap:areaDesc>Southern Ventura County Mountains</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>006111</value>
-<valueName>UGC</valueName>
-<value>CAZ376</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.EXA.KLOX.TR.A.2009.000000T0000Z-000000T0000Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=CA12665ABB8C1C.TropicalStormWatch.12665AC87210CA.LOXTCVLOX.d57cab9c9035f235617006783b65aff9</id>
-<updated>2023-08-18T13:47:00-07:00</updated>
-<published>2023-08-18T13:47:00-07:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Tropical Storm Watch issued August 18 at 1:47PM PDT until further notice by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CA12665ABB8C1C.TropicalStormWatch.12665AC87210CA.LOXTCVLOX.d57cab9c9035f235617006783b65aff9"/>
-<summary>...TROPICAL STORM WATCH IN EFFECT... A Tropical Storm Watch means tropical storm-force winds are possible somewhere within this area within the next 48 hours * LOCATIONS AFFECTED - Lockwood Valley - Mount Pinos</summary>
-<cap:event>Tropical Storm Watch</cap:event>
-<cap:effective>2023-08-18T13:47:00-07:00</cap:effective>
-<cap:expires>2023-08-18T22:00:00-07:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Future</cap:urgency>
-<cap:severity>Severe</cap:severity>
-<cap:certainty>Possible</cap:certainty>
-<cap:areaDesc>Northern Ventura County Mountains</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>006111</value>
-<valueName>UGC</valueName>
-<value>CAZ377</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.EXA.KLOX.TR.A.2009.000000T0000Z-000000T0000Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=CA12665ABB8C1C.TropicalStormWatch.12665AC87210CA.LOXTCVLOX.4633a851d9a1d9a82c5fc0f03e8142cc</id>
-<updated>2023-08-18T13:47:00-07:00</updated>
-<published>2023-08-18T13:47:00-07:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Tropical Storm Watch issued August 18 at 1:47PM PDT until further notice by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CA12665ABB8C1C.TropicalStormWatch.12665AC87210CA.LOXTCVLOX.4633a851d9a1d9a82c5fc0f03e8142cc"/>
-<summary>...TROPICAL STORM WATCH REMAINS IN EFFECT... * LOCATIONS AFFECTED - Tejon Pass - Gorman - Pyramid Lake * WIND</summary>
-<cap:event>Tropical Storm Watch</cap:event>
-<cap:effective>2023-08-18T13:47:00-07:00</cap:effective>
-<cap:expires>2023-08-18T22:00:00-07:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Future</cap:urgency>
-<cap:severity>Severe</cap:severity>
-<cap:certainty>Possible</cap:certainty>
-<cap:areaDesc>Interstate 5 Corridor</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>006037</value>
-<valueName>UGC</valueName>
-<value>CAZ378</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KLOX.TR.A.2009.000000T0000Z-000000T0000Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=CA12665ABB8C1C.TropicalStormWatch.12665AC87210CA.LOXTCVLOX.dbf66e30e05177eb0df87fbf05ce7ed7</id>
-<updated>2023-08-18T13:47:00-07:00</updated>
-<published>2023-08-18T13:47:00-07:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Tropical Storm Watch issued August 18 at 1:47PM PDT until further notice by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CA12665ABB8C1C.TropicalStormWatch.12665AC87210CA.LOXTCVLOX.dbf66e30e05177eb0df87fbf05ce7ed7"/>
-<summary>...TROPICAL STORM WATCH REMAINS IN EFFECT... * LOCATIONS AFFECTED - Acton - Warm Springs - Mill Creek * WIND</summary>
-<cap:event>Tropical Storm Watch</cap:event>
-<cap:effective>2023-08-18T13:47:00-07:00</cap:effective>
-<cap:expires>2023-08-18T22:00:00-07:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Future</cap:urgency>
-<cap:severity>Severe</cap:severity>
-<cap:certainty>Possible</cap:certainty>
-<cap:areaDesc>Western San Gabriel Mountains and Highway 14 Corridor</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>006037</value>
-<valueName>UGC</valueName>
-<value>CAZ379</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KLOX.TR.A.2009.000000T0000Z-000000T0000Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=CA12665ABB8C1C.TropicalStormWatch.12665AC87210CA.LOXTCVLOX.889e4ccbe32aff7f96f1cbaa08409b62</id>
-<updated>2023-08-18T13:47:00-07:00</updated>
-<published>2023-08-18T13:47:00-07:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Tropical Storm Watch issued August 18 at 1:47PM PDT until further notice by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CA12665ABB8C1C.TropicalStormWatch.12665AC87210CA.LOXTCVLOX.889e4ccbe32aff7f96f1cbaa08409b62"/>
-<summary>...TROPICAL STORM WATCH REMAINS IN EFFECT... * LOCATIONS AFFECTED - Mount Wilson - Mount Baldy - Wrightwood - The Angeles Crest Highway</summary>
-<cap:event>Tropical Storm Watch</cap:event>
-<cap:effective>2023-08-18T13:47:00-07:00</cap:effective>
-<cap:expires>2023-08-18T22:00:00-07:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Future</cap:urgency>
-<cap:severity>Severe</cap:severity>
-<cap:certainty>Possible</cap:certainty>
-<cap:areaDesc>Eastern San Gabriel Mountains</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>006037</value>
-<valueName>UGC</valueName>
-<value>CAZ380</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KLOX.TR.A.2009.000000T0000Z-000000T0000Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=CA12665ABB8C1C.TropicalStormWatch.12665AC87210CA.LOXTCVLOX.b2de4a1ccbe69df8805fab2354f6f1a2</id>
-<updated>2023-08-18T13:47:00-07:00</updated>
-<published>2023-08-18T13:47:00-07:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Tropical Storm Watch issued August 18 at 1:47PM PDT until further notice by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CA12665ABB8C1C.TropicalStormWatch.12665AC87210CA.LOXTCVLOX.b2de4a1ccbe69df8805fab2354f6f1a2"/>
-<summary>...TROPICAL STORM WATCH REMAINS IN EFFECT... * LOCATIONS AFFECTED - Elizabeth Lake - Lake Palmdale * WIND - LATEST LOCAL FORECAST: Below tropical storm force wind</summary>
-<cap:event>Tropical Storm Watch</cap:event>
-<cap:effective>2023-08-18T13:47:00-07:00</cap:effective>
-<cap:expires>2023-08-18T22:00:00-07:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Future</cap:urgency>
-<cap:severity>Severe</cap:severity>
-<cap:certainty>Possible</cap:certainty>
-<cap:areaDesc>Western Antelope Valley Foothills</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>006037</value>
-<valueName>UGC</valueName>
-<value>CAZ381</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KLOX.TR.A.2009.000000T0000Z-000000T0000Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=CA12665ABB8C1C.TropicalStormWatch.12665AC87210CA.LOXTCVLOX.237af79e13bf89a1d093029eddb1e711</id>
-<updated>2023-08-18T13:47:00-07:00</updated>
-<published>2023-08-18T13:47:00-07:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Tropical Storm Watch issued August 18 at 1:47PM PDT until further notice by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CA12665ABB8C1C.TropicalStormWatch.12665AC87210CA.LOXTCVLOX.237af79e13bf89a1d093029eddb1e711"/>
-<summary>...TROPICAL STORM WATCH REMAINS IN EFFECT... * LOCATIONS AFFECTED - Valyermo - Llano - Pearblossom * WIND</summary>
-<cap:event>Tropical Storm Watch</cap:event>
-<cap:effective>2023-08-18T13:47:00-07:00</cap:effective>
-<cap:expires>2023-08-18T22:00:00-07:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Future</cap:urgency>
-<cap:severity>Severe</cap:severity>
-<cap:certainty>Possible</cap:certainty>
-<cap:areaDesc>Eastern Antelope Valley Foothills</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>006037</value>
-<valueName>UGC</valueName>
-<value>CAZ382</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KLOX.TR.A.2009.000000T0000Z-000000T0000Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=CA12665ABB8C1C.TropicalStormWatch.12665AC87210CA.LOXTCVLOX.0476eefc3a00cecb2e1c4b3302e08d37</id>
-<updated>2023-08-18T13:47:00-07:00</updated>
-<published>2023-08-18T13:47:00-07:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Tropical Storm Watch issued August 18 at 1:47PM PDT until further notice by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CA12665ABB8C1C.TropicalStormWatch.12665AC87210CA.LOXTCVLOX.0476eefc3a00cecb2e1c4b3302e08d37"/>
-<summary>...TROPICAL STORM WATCH IN EFFECT... A Tropical Storm Watch means tropical storm-force winds are possible somewhere within this area within the next 48 hours * LOCATIONS AFFECTED - Palmdale - Lancaster</summary>
-<cap:event>Tropical Storm Watch</cap:event>
-<cap:effective>2023-08-18T13:47:00-07:00</cap:effective>
-<cap:expires>2023-08-18T22:00:00-07:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Future</cap:urgency>
-<cap:severity>Severe</cap:severity>
-<cap:certainty>Possible</cap:certainty>
-<cap:areaDesc>Antelope Valley</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>006037</value>
-<valueName>UGC</valueName>
-<value>CAZ383</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.EXA.KLOX.TR.A.2009.000000T0000Z-000000T0000Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=CA12665ABB8C1C.TropicalStormWatch.12665AC87210CA.LOXTCVLOX.dd9f2933c2c37f534772a723f73721e3</id>
-<updated>2023-08-18T13:47:00-07:00</updated>
-<published>2023-08-18T13:47:00-07:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Tropical Storm Watch issued August 18 at 1:47PM PDT until further notice by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CA12665ABB8C1C.TropicalStormWatch.12665AC87210CA.LOXTCVLOX.dd9f2933c2c37f534772a723f73721e3"/>
-<summary>...TROPICAL STORM WATCH IN EFFECT... A Tropical Storm Watch means tropical storm-force winds are possible somewhere within this area within the next 48 hours * LOCATIONS AFFECTED - East Los Angeles - El Monte</summary>
-<cap:event>Tropical Storm Watch</cap:event>
-<cap:effective>2023-08-18T13:47:00-07:00</cap:effective>
-<cap:expires>2023-08-18T22:00:00-07:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Future</cap:urgency>
-<cap:severity>Severe</cap:severity>
-<cap:certainty>Possible</cap:certainty>
-<cap:areaDesc>Los Angeles County San Gabriel Valley</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>006037</value>
-<valueName>UGC</valueName>
-<value>CAZ548</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.EXA.KLOX.TR.A.2009.000000T0000Z-000000T0000Z/</value>
-</cap:parameter>
-</entry>
-<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=CA12665ABB8A28.FloodWatch.12665AC84B00CA.REVFFAREV.049fbccb51fdf0709020222e496a0250</id>
 <updated>2023-08-18T13:42:00-07:00</updated>
 <published>2023-08-18T13:42:00-07:00</published>
@@ -2002,434 +2515,18 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=CA12665ABB88FC.TropicalStormWatch.12665AC85C94CA.SGXTCVSGX.016cb93365154273c07b0ade3e9886f5</id>
-<updated>2023-08-18T13:39:00-07:00</updated>
-<published>2023-08-18T13:39:00-07:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Tropical Storm Watch issued August 18 at 1:39PM PDT until further notice by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CA12665ABB88FC.TropicalStormWatch.12665AC85C94CA.SGXTCVSGX.016cb93365154273c07b0ade3e9886f5"/>
-<summary>...TROPICAL STORM WATCH REMAINS IN EFFECT... * LOCATIONS AFFECTED - Oceanside - Carlsbad - Chula Vista - San Diego</summary>
-<cap:event>Tropical Storm Watch</cap:event>
-<cap:effective>2023-08-18T13:39:00-07:00</cap:effective>
-<cap:expires>2023-08-18T21:45:00-07:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Future</cap:urgency>
-<cap:severity>Severe</cap:severity>
-<cap:certainty>Possible</cap:certainty>
-<cap:areaDesc>San Diego County Coastal Areas</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>006073</value>
-<valueName>UGC</valueName>
-<value>CAZ043</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KSGX.TR.A.2009.000000T0000Z-000000T0000Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=CA12665ABB88FC.TropicalStormWatch.12665AC85C94CA.SGXTCVSGX.036c9d8b0ede09cbe3090cc7fce596e3</id>
-<updated>2023-08-18T13:39:00-07:00</updated>
-<published>2023-08-18T13:39:00-07:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Tropical Storm Watch issued August 18 at 1:39PM PDT until further notice by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CA12665ABB88FC.TropicalStormWatch.12665AC85C94CA.SGXTCVSGX.036c9d8b0ede09cbe3090cc7fce596e3"/>
-<summary>...TROPICAL STORM WATCH REMAINS IN EFFECT... * LOCATIONS AFFECTED - Riverside - San Bernardino - Ontario - Rancho Cucamonga</summary>
-<cap:event>Tropical Storm Watch</cap:event>
-<cap:effective>2023-08-18T13:39:00-07:00</cap:effective>
-<cap:expires>2023-08-18T21:45:00-07:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Future</cap:urgency>
-<cap:severity>Severe</cap:severity>
-<cap:certainty>Possible</cap:certainty>
-<cap:areaDesc>San Bernardino and Riverside County Valleys-The Inland Empire</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>006065 006071</value>
-<valueName>UGC</valueName>
-<value>CAZ048</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KSGX.TR.A.2009.000000T0000Z-000000T0000Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=CA12665ABB88FC.TropicalStormWatch.12665AC85C94CA.SGXTCVSGX.eac060a5d5b38c4b0915f55a9ab2c1c3</id>
-<updated>2023-08-18T13:39:00-07:00</updated>
-<published>2023-08-18T13:39:00-07:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Tropical Storm Watch issued August 18 at 1:39PM PDT until further notice by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CA12665ABB88FC.TropicalStormWatch.12665AC85C94CA.SGXTCVSGX.eac060a5d5b38c4b0915f55a9ab2c1c3"/>
-<summary>...TROPICAL STORM WATCH REMAINS IN EFFECT... * LOCATIONS AFFECTED - Escondido - El Cajon - Lakeside - Poway</summary>
-<cap:event>Tropical Storm Watch</cap:event>
-<cap:effective>2023-08-18T13:39:00-07:00</cap:effective>
-<cap:expires>2023-08-18T21:45:00-07:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Future</cap:urgency>
-<cap:severity>Severe</cap:severity>
-<cap:certainty>Possible</cap:certainty>
-<cap:areaDesc>San Diego County Inland Valleys</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>006073</value>
-<valueName>UGC</valueName>
-<value>CAZ050</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KSGX.TR.A.2009.000000T0000Z-000000T0000Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=CA12665ABB88FC.TropicalStormWatch.12665AC85C94CA.SGXTCVSGX.752430db83ccb1da61490f6e5a84971f</id>
-<updated>2023-08-18T13:39:00-07:00</updated>
-<published>2023-08-18T13:39:00-07:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Tropical Storm Watch issued August 18 at 1:39PM PDT until further notice by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CA12665ABB88FC.TropicalStormWatch.12665AC85C94CA.SGXTCVSGX.752430db83ccb1da61490f6e5a84971f"/>
-<summary>...TROPICAL STORM WATCH REMAINS IN EFFECT... * LOCATIONS AFFECTED - Crestline - Lake Arrowhead - Big Bear City - Wrightwood</summary>
-<cap:event>Tropical Storm Watch</cap:event>
-<cap:effective>2023-08-18T13:39:00-07:00</cap:effective>
-<cap:expires>2023-08-18T21:45:00-07:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Future</cap:urgency>
-<cap:severity>Severe</cap:severity>
-<cap:certainty>Possible</cap:certainty>
-<cap:areaDesc>San Bernardino County Mountains</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>006071</value>
-<valueName>UGC</valueName>
-<value>CAZ055</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KSGX.TR.A.2009.000000T0000Z-000000T0000Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=CA12665ABB88FC.TropicalStormWatch.12665AC85C94CA.SGXTCVSGX.233363882a1399af9ee7ce4c27aff13e</id>
-<updated>2023-08-18T13:39:00-07:00</updated>
-<published>2023-08-18T13:39:00-07:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Tropical Storm Watch issued August 18 at 1:39PM PDT until further notice by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CA12665ABB88FC.TropicalStormWatch.12665AC85C94CA.SGXTCVSGX.233363882a1399af9ee7ce4c27aff13e"/>
-<summary>...TROPICAL STORM WATCH REMAINS IN EFFECT... * LOCATIONS AFFECTED - Idyllwild * WIND - LATEST LOCAL FORECAST: Equivalent Tropical Storm force wind - Peak Wind Forecast: 35-45 mph with gusts to 65 mph</summary>
-<cap:event>Tropical Storm Watch</cap:event>
-<cap:effective>2023-08-18T13:39:00-07:00</cap:effective>
-<cap:expires>2023-08-18T21:45:00-07:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Future</cap:urgency>
-<cap:severity>Severe</cap:severity>
-<cap:certainty>Possible</cap:certainty>
-<cap:areaDesc>Riverside County Mountains</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>006065</value>
-<valueName>UGC</valueName>
-<value>CAZ056</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KSGX.TR.A.2009.000000T0000Z-000000T0000Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=CA12665ABB88FC.TropicalStormWatch.12665AC85C94CA.SGXTCVSGX.3584e03bf98ed3e41a3c16e0220fcd7b</id>
-<updated>2023-08-18T13:39:00-07:00</updated>
-<published>2023-08-18T13:39:00-07:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Tropical Storm Watch issued August 18 at 1:39PM PDT until further notice by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CA12665ABB88FC.TropicalStormWatch.12665AC85C94CA.SGXTCVSGX.3584e03bf98ed3e41a3c16e0220fcd7b"/>
-<summary>...TROPICAL STORM WATCH REMAINS IN EFFECT... * LOCATIONS AFFECTED - Santa Ana Mountains and Foothills * WIND - LATEST LOCAL FORECAST: Equivalent Tropical Storm force wind - Peak Wind Forecast: 35-45 mph with gusts to 65 mph</summary>
-<cap:event>Tropical Storm Watch</cap:event>
-<cap:effective>2023-08-18T13:39:00-07:00</cap:effective>
-<cap:expires>2023-08-18T21:45:00-07:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Future</cap:urgency>
-<cap:severity>Severe</cap:severity>
-<cap:certainty>Possible</cap:certainty>
-<cap:areaDesc>Santa Ana Mountains and Foothills</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>006059 006065</value>
-<valueName>UGC</valueName>
-<value>CAZ057</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KSGX.TR.A.2009.000000T0000Z-000000T0000Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=CA12665ABB88FC.TropicalStormWatch.12665AC85C94CA.SGXTCVSGX.635ecb0be8109e4ee48cee1df5852dfa</id>
-<updated>2023-08-18T13:39:00-07:00</updated>
-<published>2023-08-18T13:39:00-07:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Tropical Storm Watch issued August 18 at 1:39PM PDT until further notice by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CA12665ABB88FC.TropicalStormWatch.12665AC85C94CA.SGXTCVSGX.635ecb0be8109e4ee48cee1df5852dfa"/>
-<summary>...TROPICAL STORM WATCH REMAINS IN EFFECT... * LOCATIONS AFFECTED - Julian - Pine Valley * WIND - LATEST LOCAL FORECAST: Equivalent Strong Tropical Storm force</summary>
-<cap:event>Tropical Storm Watch</cap:event>
-<cap:effective>2023-08-18T13:39:00-07:00</cap:effective>
-<cap:expires>2023-08-18T21:45:00-07:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Future</cap:urgency>
-<cap:severity>Severe</cap:severity>
-<cap:certainty>Possible</cap:certainty>
-<cap:areaDesc>San Diego County Mountains</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>006073</value>
-<valueName>UGC</valueName>
-<value>CAZ058</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KSGX.TR.A.2009.000000T0000Z-000000T0000Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=CA12665ABB88FC.TropicalStormWatch.12665AC85C94CA.SGXTCVSGX.8257d5b76213d9b20b534308b4c6b3bb</id>
-<updated>2023-08-18T13:39:00-07:00</updated>
-<published>2023-08-18T13:39:00-07:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Tropical Storm Watch issued August 18 at 1:39PM PDT until further notice by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CA12665ABB88FC.TropicalStormWatch.12665AC85C94CA.SGXTCVSGX.8257d5b76213d9b20b534308b4c6b3bb"/>
-<summary>...TROPICAL STORM WATCH REMAINS IN EFFECT... * LOCATIONS AFFECTED - Victorville - Hesperia - Apple Valley * WIND</summary>
-<cap:event>Tropical Storm Watch</cap:event>
-<cap:effective>2023-08-18T13:39:00-07:00</cap:effective>
-<cap:expires>2023-08-18T21:45:00-07:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Future</cap:urgency>
-<cap:severity>Severe</cap:severity>
-<cap:certainty>Possible</cap:certainty>
-<cap:areaDesc>Apple and Lucerne Valleys</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>006071</value>
-<valueName>UGC</valueName>
-<value>CAZ060</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KSGX.TR.A.2009.000000T0000Z-000000T0000Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=CA12665ABB88FC.TropicalStormWatch.12665AC85C94CA.SGXTCVSGX.9d0f9b190cbdb6e574da0238c823d54f</id>
-<updated>2023-08-18T13:39:00-07:00</updated>
-<published>2023-08-18T13:39:00-07:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Tropical Storm Watch issued August 18 at 1:39PM PDT until further notice by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CA12665ABB88FC.TropicalStormWatch.12665AC85C94CA.SGXTCVSGX.9d0f9b190cbdb6e574da0238c823d54f"/>
-<summary>...TROPICAL STORM WATCH REMAINS IN EFFECT... * LOCATIONS AFFECTED - Indio - Palm Springs - Palm Desert * WIND</summary>
-<cap:event>Tropical Storm Watch</cap:event>
-<cap:effective>2023-08-18T13:39:00-07:00</cap:effective>
-<cap:expires>2023-08-18T21:45:00-07:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Future</cap:urgency>
-<cap:severity>Severe</cap:severity>
-<cap:certainty>Possible</cap:certainty>
-<cap:areaDesc>Coachella Valley</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>006065</value>
-<valueName>UGC</valueName>
-<value>CAZ061</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KSGX.TR.A.2009.000000T0000Z-000000T0000Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=CA12665ABB88FC.TropicalStormWatch.12665AC85C94CA.SGXTCVSGX.cec4835e94231c27302bcb7855793d11</id>
-<updated>2023-08-18T13:39:00-07:00</updated>
-<published>2023-08-18T13:39:00-07:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Tropical Storm Watch issued August 18 at 1:39PM PDT until further notice by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CA12665ABB88FC.TropicalStormWatch.12665AC85C94CA.SGXTCVSGX.cec4835e94231c27302bcb7855793d11"/>
-<summary>...TROPICAL STORM WATCH REMAINS IN EFFECT... * LOCATIONS AFFECTED - Borrego Springs * WIND - LATEST LOCAL FORECAST: Equivalent Strong Tropical Storm force wind</summary>
-<cap:event>Tropical Storm Watch</cap:event>
-<cap:effective>2023-08-18T13:39:00-07:00</cap:effective>
-<cap:expires>2023-08-18T21:45:00-07:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Future</cap:urgency>
-<cap:severity>Severe</cap:severity>
-<cap:certainty>Possible</cap:certainty>
-<cap:areaDesc>San Diego County Deserts</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>006073</value>
-<valueName>UGC</valueName>
-<value>CAZ062</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KSGX.TR.A.2009.000000T0000Z-000000T0000Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=CA12665ABB88FC.TropicalStormWatch.12665AC85C94CA.SGXTCVSGX.01e5932acf67556e28fdb2844e45c2be</id>
-<updated>2023-08-18T13:39:00-07:00</updated>
-<published>2023-08-18T13:39:00-07:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Tropical Storm Watch issued August 18 at 1:39PM PDT until further notice by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CA12665ABB88FC.TropicalStormWatch.12665AC85C94CA.SGXTCVSGX.01e5932acf67556e28fdb2844e45c2be"/>
-<summary>...TROPICAL STORM WATCH REMAINS IN EFFECT... * LOCATIONS AFFECTED - Banning - Desert Hot Springs * WIND - LATEST LOCAL FORECAST: Equivalent Tropical Storm force wind</summary>
-<cap:event>Tropical Storm Watch</cap:event>
-<cap:effective>2023-08-18T13:39:00-07:00</cap:effective>
-<cap:expires>2023-08-18T21:45:00-07:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Future</cap:urgency>
-<cap:severity>Severe</cap:severity>
-<cap:certainty>Possible</cap:certainty>
-<cap:areaDesc>San Gorgonio Pass Near Banning</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>006065</value>
-<valueName>UGC</valueName>
-<value>CAZ065</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KSGX.TR.A.2009.000000T0000Z-000000T0000Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=CA12665ABB88FC.TropicalStormWatch.12665AC85C94CA.SGXTCVSGX.e9a0718e94833a75c99b06254c13512b</id>
-<updated>2023-08-18T13:39:00-07:00</updated>
-<published>2023-08-18T13:39:00-07:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Tropical Storm Watch issued August 18 at 1:39PM PDT until further notice by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CA12665ABB88FC.TropicalStormWatch.12665AC85C94CA.SGXTCVSGX.e9a0718e94833a75c99b06254c13512b"/>
-<summary>...TROPICAL STORM WATCH REMAINS IN EFFECT... * LOCATIONS AFFECTED - Huntington Beach - Costa Mesa * WIND - LATEST LOCAL FORECAST: Equivalent Tropical Storm force wind</summary>
-<cap:event>Tropical Storm Watch</cap:event>
-<cap:effective>2023-08-18T13:39:00-07:00</cap:effective>
-<cap:expires>2023-08-18T21:45:00-07:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Future</cap:urgency>
-<cap:severity>Severe</cap:severity>
-<cap:certainty>Possible</cap:certainty>
-<cap:areaDesc>Orange County Coastal</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>006059</value>
-<valueName>UGC</valueName>
-<value>CAZ552</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KSGX.TR.A.2009.000000T0000Z-000000T0000Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=CA12665ABB88FC.TropicalStormWatch.12665AC85C94CA.SGXTCVSGX.1b76927c83a18281dede147131114945</id>
-<updated>2023-08-18T13:39:00-07:00</updated>
-<published>2023-08-18T13:39:00-07:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Tropical Storm Watch issued August 18 at 1:39PM PDT until further notice by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CA12665ABB88FC.TropicalStormWatch.12665AC85C94CA.SGXTCVSGX.1b76927c83a18281dede147131114945"/>
-<summary>...TROPICAL STORM WATCH REMAINS IN EFFECT... * LOCATIONS AFFECTED - Santa Ana - Anaheim - Irvine - Fullerton</summary>
-<cap:event>Tropical Storm Watch</cap:event>
-<cap:effective>2023-08-18T13:39:00-07:00</cap:effective>
-<cap:expires>2023-08-18T21:45:00-07:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Future</cap:urgency>
-<cap:severity>Severe</cap:severity>
-<cap:certainty>Possible</cap:certainty>
-<cap:areaDesc>Orange County Inland</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>006059</value>
-<valueName>UGC</valueName>
-<value>CAZ554</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KSGX.TR.A.2009.000000T0000Z-000000T0000Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=CA12665ABB8514.FloodWatch.12665AC87210CA.VEFFFAVEF.7b5653fa5a9af8a5063b93e7f478f02c</id>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=CA12665ABB8514.FloodWatch.12665AC87DC8CA.VEFFFAVEF.7b5653fa5a9af8a5063b93e7f478f02c</id>
 <updated>2023-08-18T13:29:00-07:00</updated>
 <published>2023-08-18T13:29:00-07:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
 <title>Flood Watch issued August 18 at 1:29PM PDT until further notice by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CA12665ABB8514.FloodWatch.12665AC87210CA.VEFFFAVEF.7b5653fa5a9af8a5063b93e7f478f02c"/>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CA12665ABB8514.FloodWatch.12665AC87DC8CA.VEFFFAVEF.7b5653fa5a9af8a5063b93e7f478f02c"/>
 <summary>.A substantial moisture surge driven by Hurricane Hilary will result in several days with bands of moderate to heavy rainfall over the weekend into early next week. Impacts will become more significant with each passing day as soils become saturated, resulting in increased runoff. ...FLOOD WATCH NOW IN EFFECT FROM SATURDAY MORNING THROUGH LATE</summary>
 <cap:event>Flood Watch</cap:event>
 <cap:effective>2023-08-18T13:29:00-07:00</cap:effective>
-<cap:expires>2023-08-18T22:00:00-07:00</cap:expires>
+<cap:expires>2023-08-18T22:30:00-07:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
 <cap:category>Met</cap:category>
@@ -2451,18 +2548,18 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=CA12665ABB8514.FloodWatch.12665AC87210CA.VEFFFAVEF.e1f9311dd682d0e1d210b6663ff10147</id>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=CA12665ABB8514.FloodWatch.12665AC87DC8CA.VEFFFAVEF.e1f9311dd682d0e1d210b6663ff10147</id>
 <updated>2023-08-18T13:29:00-07:00</updated>
 <published>2023-08-18T13:29:00-07:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
 <title>Flood Watch issued August 18 at 1:29PM PDT until further notice by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CA12665ABB8514.FloodWatch.12665AC87210CA.VEFFFAVEF.e1f9311dd682d0e1d210b6663ff10147"/>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CA12665ABB8514.FloodWatch.12665AC87DC8CA.VEFFFAVEF.e1f9311dd682d0e1d210b6663ff10147"/>
 <summary>.A substantial moisture surge driven by Hurricane Hilary will result in several days with bands of moderate to heavy rainfall over the weekend into early next week. Impacts will become more significant with each passing day as soils become saturated, resulting in increased runoff. ...FLOOD WATCH REMAINS IN EFFECT FROM SATURDAY MORNING THROUGH</summary>
 <cap:event>Flood Watch</cap:event>
 <cap:effective>2023-08-18T13:29:00-07:00</cap:effective>
-<cap:expires>2023-08-18T22:00:00-07:00</cap:expires>
+<cap:expires>2023-08-18T22:30:00-07:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
 <cap:category>Met</cap:category>
@@ -2580,18 +2677,18 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=CA12665ABB68F4.FloodWatch.12665AC85C94CA.PSRFFAPSR.a4155a0c95df1bb24e85f8be18423817</id>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=CA12665ABB68F4.FloodWatch.12665AC87DC8CA.PSRFFAPSR.a4155a0c95df1bb24e85f8be18423817</id>
 <updated>2023-08-18T12:57:00-07:00</updated>
 <published>2023-08-18T12:57:00-07:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
 <title>Flood Watch issued August 18 at 12:57PM PDT until further notice by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CA12665ABB68F4.FloodWatch.12665AC85C94CA.PSRFFAPSR.a4155a0c95df1bb24e85f8be18423817"/>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CA12665ABB68F4.FloodWatch.12665AC87DC8CA.PSRFFAPSR.a4155a0c95df1bb24e85f8be18423817"/>
 <summary>...FLOOD WATCH NOW IN EFFECT FROM SATURDAY MORNING THROUGH MONDAY AFTERNOON... * WHAT...Flash flooding caused by excessive rainfall continues to be possible. * WHERE...Portions of Arizona, including the following areas, Aguila Valley, Central La Paz, Gila Bend, Gila River Valley, Kofa, Parker</summary>
 <cap:event>Flood Watch</cap:event>
 <cap:effective>2023-08-18T12:57:00-07:00</cap:effective>
-<cap:expires>2023-08-18T21:45:00-07:00</cap:expires>
+<cap:expires>2023-08-18T22:30:00-07:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
 <cap:category>Met</cap:category>
@@ -2679,18 +2776,18 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=CA12665ABB61EC.FloodWatch.12665AC87210CA.LOXFFALOX.a7fc255d80d075b3b83d14057d5e95d0</id>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=CA12665ABB61EC.FloodWatch.12665AC87DC8CA.LOXFFALOX.a7fc255d80d075b3b83d14057d5e95d0</id>
 <updated>2023-08-18T12:39:00-07:00</updated>
 <published>2023-08-18T12:39:00-07:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
 <title>Flood Watch issued August 18 at 12:39PM PDT until further notice by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CA12665ABB61EC.FloodWatch.12665AC87210CA.LOXFFALOX.a7fc255d80d075b3b83d14057d5e95d0"/>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CA12665ABB61EC.FloodWatch.12665AC87DC8CA.LOXFFALOX.a7fc255d80d075b3b83d14057d5e95d0"/>
 <summary>.FLOOD WATCH IN EFFECT FOR LOS ANGELES AND VENTURA COUNTIES FOR SUNDAY AFTERNOON THROUGH MONDAY EVENING. * WHAT...A Flood Watch is in effect for Los Angeles and Ventura Counties for Sunday afternoon through Monday evening. Flooding caused by excessive rainfall continues to be possible. * WHERE...A portion of southwest California, including the following</summary>
 <cap:event>Flood Watch</cap:event>
 <cap:effective>2023-08-18T12:39:00-07:00</cap:effective>
-<cap:expires>2023-08-18T22:00:00-07:00</cap:expires>
+<cap:expires>2023-08-18T22:30:00-07:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
 <cap:category>Met</cap:category>
@@ -2745,18 +2842,18 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=CA12665ABB4248.FloodWatch.12665AC87210CA.HNXFFAHNX.87b8ae0fc6f212a3184370cfac345dd1</id>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=CA12665ABB4248.FloodWatch.12665AC87DC8CA.HNXFFAHNX.87b8ae0fc6f212a3184370cfac345dd1</id>
 <updated>2023-08-18T11:58:00-07:00</updated>
 <published>2023-08-18T11:58:00-07:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
 <title>Flood Watch issued August 18 at 11:58AM PDT until further notice by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CA12665ABB4248.FloodWatch.12665AC87210CA.HNXFFAHNX.87b8ae0fc6f212a3184370cfac345dd1"/>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CA12665ABB4248.FloodWatch.12665AC87DC8CA.HNXFFAHNX.87b8ae0fc6f212a3184370cfac345dd1"/>
 <summary>...FLOOD WATCH IN EFFECT FROM SATURDAY MORNING THROUGH MONDAY EVENING... * WHAT...Flooding caused by excessive rainfall continues to be possible. * WHERE...A portion of central California, including the following area, Bakersfield.</summary>
 <cap:event>Flood Watch</cap:event>
 <cap:effective>2023-08-18T11:58:00-07:00</cap:effective>
-<cap:expires>2023-08-18T22:00:00-07:00</cap:expires>
+<cap:expires>2023-08-18T22:30:00-07:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
 <cap:category>Met</cap:category>
@@ -2778,18 +2875,18 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=CA12665ABB4248.FloodWatch.12665AC87210CA.HNXFFAHNX.fb4d41d58225222f8d90d95e3cc7dc95</id>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=CA12665ABB4248.FloodWatch.12665AC87DC8CA.HNXFFAHNX.fb4d41d58225222f8d90d95e3cc7dc95</id>
 <updated>2023-08-18T11:58:00-07:00</updated>
 <published>2023-08-18T11:58:00-07:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
 <title>Flood Watch issued August 18 at 11:58AM PDT until further notice by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CA12665ABB4248.FloodWatch.12665AC87210CA.HNXFFAHNX.fb4d41d58225222f8d90d95e3cc7dc95"/>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CA12665ABB4248.FloodWatch.12665AC87DC8CA.HNXFFAHNX.fb4d41d58225222f8d90d95e3cc7dc95"/>
 <summary>...FLOOD WATCH NOW IN EFFECT FROM SATURDAY MORNING THROUGH MONDAY EVENING... * WHAT...Flooding caused by excessive rainfall continues to be possible. * WHERE...A portion of central California, including the following areas, Frazier Mountain Communities, Grant Grove Area, Grapevine,</summary>
 <cap:event>Flood Watch</cap:event>
 <cap:effective>2023-08-18T11:58:00-07:00</cap:effective>
-<cap:expires>2023-08-18T22:00:00-07:00</cap:expires>
+<cap:expires>2023-08-18T22:30:00-07:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
 <cap:category>Met</cap:category>
@@ -2907,35 +3004,69 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=CO12665ABBA198.SpecialWeatherStatement.12665ABBAC88CO.GJTSPSGJT.3f08c2648ceb89e9ed4c4fd72591a219</id>
-<updated>2023-08-18T15:02:00-06:00</updated>
-<published>2023-08-18T15:02:00-06:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=CO12665ABBA774.FloodAdvisory.12665AC7B49CCO.BOUFLSBOU.9fa32b611b3e0d2c7cfc8ff9984473c0</id>
+<updated>2023-08-18T15:17:00-06:00</updated>
+<published>2023-08-18T15:17:00-06:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Special Weather Statement issued August 18 at 3:02PM MDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CO12665ABBA198.SpecialWeatherStatement.12665ABBAC88CO.GJTSPSGJT.3f08c2648ceb89e9ed4c4fd72591a219"/>
-<summary>...A strong thunderstorm will impact portions of southeastern Moffat County through 330 PM MDT... At 301 PM MDT, Doppler radar was tracking a strong thunderstorm 16 miles north of Meeker, or 23 miles southwest of Craig, moving northeast at 35 mph. HAZARD...Wind gusts up to 50 mph and half inch hail.</summary>
-<cap:event>Special Weather Statement</cap:event>
-<cap:effective>2023-08-18T15:02:00-06:00</cap:effective>
-<cap:expires>2023-08-18T15:30:00-06:00</cap:expires>
+<title>Flood Advisory issued August 18 at 3:17PM MDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CO12665ABBA774.FloodAdvisory.12665AC7B49CCO.BOUFLSBOU.9fa32b611b3e0d2c7cfc8ff9984473c0"/>
+<summary>...FLOOD ADVISORY IN EFFECT UNTIL 615 PM MDT THIS EVENING... * WHAT...Small stream flooding caused by excessive rainfall is expected. * WHERE...A portion of north central Colorado, including the following county, Grand. * WHEN...Until 615 PM MDT.</summary>
+<cap:event>Flood Advisory</cap:event>
+<cap:effective>2023-08-18T15:17:00-06:00</cap:effective>
+<cap:expires>2023-08-18T18:15:00-06:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
 <cap:category>Met</cap:category>
 <cap:urgency>Expected</cap:urgency>
 <cap:severity>Minor</cap:severity>
-<cap:certainty>Observed</cap:certainty>
-<cap:areaDesc>Central Yampa River Basin; Flat Tops</cap:areaDesc>
-<cap:polygon>40.15,-107.88 40.33,-108.04 40.67,-107.58 40.41,-107.31 40.15,-107.88</cap:polygon>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Grand</cap:areaDesc>
+<cap:polygon>40.26,-106.27 40.17,-106.28 40.12,-106.18 40.08,-106.08 40.1,-105.97 40.12,-105.88 40.19,-105.85 40.25,-105.89 40.3,-105.99 40.3,-106.15 40.26,-106.27</cap:polygon>
 <cap:geocode>
 <valueName>FIPS6</valueName>
-<value>008045 008081 008103</value>
+<value>008049</value>
 <valueName>UGC</valueName>
-<value>COZ002 COZ013</value>
+<value>COC049</value>
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
-<value></value>
+<value>/O.NEW.KBOU.FA.Y.0148.230818T2117Z-230819T0015Z/
+/00000.N.ER.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=CO12665ABBA3F0.FlashFloodWatch.12665AC823F0CO.GJTFFAGJT.0ff1209dcb23490d9a20f49ea13e00f4</id>
+<updated>2023-08-18T15:08:00-06:00</updated>
+<published>2023-08-18T15:08:00-06:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Flash Flood Watch issued August 18 at 3:08PM MDT until August 18 at 9:00PM MDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CO12665ABBA3F0.FlashFloodWatch.12665AC823F0CO.GJTFFAGJT.0ff1209dcb23490d9a20f49ea13e00f4"/>
+<summary>...FLASH FLOOD WATCH FOR THE GRIZZLY CREEK FIRE BURN AREA IN EFFECT UNTIL 9 PM MDT THIS EVENING... * WHAT...Flash flooding and debris flows caused by excessive rainfall are possible over the Grizzly Creek Fire Burn Area. * WHERE...Portions of northwest Colorado and west central Colorado, including the following areas, in northwest Colorado, Flat Tops.</summary>
+<cap:event>Flash Flood Watch</cap:event>
+<cap:effective>2023-08-18T15:08:00-06:00</cap:effective>
+<cap:expires>2023-08-18T21:00:00-06:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Severe</cap:severity>
+<cap:certainty>Possible</cap:certainty>
+<cap:areaDesc>Central Colorado River Basin; Flat Tops; Gore and Elk Mountains, Central Mountain Valleys</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>008037 008045 008097 008103</value>
+<valueName>UGC</valueName>
+<value>COZ008 COZ010 COZ013</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.NEW.KGJT.FF.A.0004.230818T2300Z-230819T0300Z/
+/00000.0.ER.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -3101,36 +3232,35 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=FL12665ABB605C.FloodAdvisory.12665ABBAC88FL.MFLFLSMFL.4ab659dbc0d17a6269fcc2f21b2384df</id>
-<updated>2023-08-18T15:35:00-04:00</updated>
-<published>2023-08-18T15:35:00-04:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=FL12665ABBAAF8.SpecialWeatherStatement.12665ABBC7E0FL.MLBSPSMLB.540c9d13e1556a622ae4dbc7e889bd6e</id>
+<updated>2023-08-18T17:26:00-04:00</updated>
+<published>2023-08-18T17:26:00-04:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Flood Advisory issued August 18 at 3:35PM EDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=FL12665ABB605C.FloodAdvisory.12665ABBAC88FL.MFLFLSMFL.4ab659dbc0d17a6269fcc2f21b2384df"/>
-<summary>...FLOOD ADVISORY IN EFFECT UNTIL 530 PM EDT THIS AFTERNOON... * WHAT...Flooding caused by excessive rainfall is expected. * WHERE...A portion of southeast Florida, including the following county, Miami-Dade. * WHEN...Until 530 PM EDT. * IMPACTS...Minor flooding in low-lying and poor drainage areas.</summary>
-<cap:event>Flood Advisory</cap:event>
-<cap:effective>2023-08-18T15:35:00-04:00</cap:effective>
-<cap:expires>2023-08-18T17:30:00-04:00</cap:expires>
+<title>Special Weather Statement issued August 18 at 5:26PM EDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=FL12665ABBAAF8.SpecialWeatherStatement.12665ABBC7E0FL.MLBSPSMLB.540c9d13e1556a622ae4dbc7e889bd6e"/>
+<summary>...Strong thunderstorms will impact portions of northwestern St. Lucie, northeastern Okeechobee and Indian River Counties through 600 PM EDT... At 526 PM EDT, Doppler radar was tracking strong thunderstorms along a line extending from near Sebastian Highlands to Fellsmere to near Fort Drum to 6 miles east of Kissimmee Prairie Preserve. Movement was</summary>
+<cap:event>Special Weather Statement</cap:event>
+<cap:effective>2023-08-18T17:26:00-04:00</cap:effective>
+<cap:expires>2023-08-18T18:00:00-04:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
 <cap:category>Met</cap:category>
 <cap:urgency>Expected</cap:urgency>
 <cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Miami-Dade</cap:areaDesc>
-<cap:polygon>25.78,-80.33 25.79,-80.26 25.73,-80.26 25.7,-80.29 25.7,-80.35 25.76,-80.35 25.78,-80.33</cap:polygon>
+<cap:certainty>Observed</cap:certainty>
+<cap:areaDesc>Coastal Indian River; Coastal St. Lucie; Inland Indian River; Inland St. Lucie; Okeechobee</cap:areaDesc>
+<cap:polygon>27.48,-80.52 27.43,-80.81 27.59,-80.96 27.64,-80.91 27.64,-80.87 27.67,-80.87 27.82,-80.63 27.82,-80.51 27.84,-80.49 27.87,-80.49 27.87,-80.45 27.86,-80.45 27.87,-80.42 27.64,-80.32 27.48,-80.52</cap:polygon>
 <cap:geocode>
 <valueName>FIPS6</valueName>
-<value>012086</value>
+<value>012061 012093 012111</value>
 <valueName>UGC</valueName>
-<value>FLC086</value>
+<value>FLZ058 FLZ154 FLZ159 FLZ254 FLZ259</value>
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
-<value>/O.NEW.KMFL.FA.Y.0248.230818T1935Z-230818T2130Z/
-/00000.N.ER.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
+<value></value>
 </cap:parameter>
 </entry>
 <entry>
@@ -3548,38 +3678,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <value>016009 016017 016021 016055 016079</value>
 <valueName>UGC</valueName>
 <value>IDC009 IDC017 IDC021 IDC055 IDC079</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value></value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=ID12665ABB84B0.SpecialWeatherStatement.12665ABBA6ACID.BOISPSBOI.61c7ae116bcba8e6d7de11c7427cc391</id>
-<updated>2023-08-18T14:28:00-06:00</updated>
-<published>2023-08-18T14:28:00-06:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Special Weather Statement issued August 18 at 2:28PM MDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=ID12665ABB84B0.SpecialWeatherStatement.12665ABBA6ACID.BOISPSBOI.61c7ae116bcba8e6d7de11c7427cc391"/>
-<summary>...A strong thunderstorm will impact portions of east central Twin Falls and Jerome Counties through 315 PM MDT... At 227 PM MDT, Doppler radar was tracking a strong thunderstorm over Magic Valley Regional Airport, or near Twin Falls, moving northeast at 25 mph. HAZARD...Winds in excess of 40 mph and pea size hail.</summary>
-<cap:event>Special Weather Statement</cap:event>
-<cap:effective>2023-08-18T14:28:00-06:00</cap:effective>
-<cap:expires>2023-08-18T15:15:00-06:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Observed</cap:certainty>
-<cap:areaDesc>Southern Twin Falls County; Western Magic Valley</cap:areaDesc>
-<cap:polygon>42.51,-114.06 42.41,-114.07 42.42,-114.28 42.39,-114.29 42.38,-114.43 42.52,-114.59 42.82,-114.18 42.81,-114.05 42.76,-114.05 42.76,-113.93 42.54,-113.93 42.51,-114.06</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>016047 016053 016083</value>
-<valueName>UGC</valueName>
-<value>IDZ016 IDZ030</value>
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
@@ -4930,6 +5028,38 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=MA12665ABBABC0.SpecialWeatherStatement.12665ABBD398MA.BOXSPSBOX.dae6d856eef759739002ebcd634b34b4</id>
+<updated>2023-08-18T17:28:00-04:00</updated>
+<published>2023-08-18T17:28:00-04:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Special Weather Statement issued August 18 at 5:28PM EDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MA12665ABBABC0.SpecialWeatherStatement.12665ABBD398MA.BOXSPSBOX.dae6d856eef759739002ebcd634b34b4"/>
+<summary>...A strong thunderstorm will impact portions of central Essex and east central Middlesex Counties through 630 PM EDT... At 527 PM EDT, Doppler radar was tracking a strong thunderstorm over Middleton, or near Danvers, moving east at 30 mph. HAZARD...Penny size hail. SOURCE...Radar indicated.</summary>
+<cap:event>Special Weather Statement</cap:event>
+<cap:effective>2023-08-18T17:28:00-04:00</cap:effective>
+<cap:expires>2023-08-18T18:30:00-04:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Observed</cap:certainty>
+<cap:areaDesc>Central Middlesex County; Eastern Essex; Southeast Middlesex; Western Essex</cap:areaDesc>
+<cap:polygon>42.71,-70.74 42.7,-70.73 42.72,-70.62 42.65,-70.54 42.55,-70.69 42.48,-71.08 42.66,-71.15 42.77,-70.76 42.71,-70.74</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>025009 025017</value>
+<valueName>UGC</valueName>
+<value>MAZ005 MAZ006 MAZ007 MAZ014</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value></value>
+</cap:parameter>
+</entry>
+<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=MA12665ABAA4DC.FloodWarning.12665AC8CF6CMA.BOXFLWBOX.1224e56fb137bee08bd3c2c757e01a9c</id>
 <updated>2023-08-18T10:55:00-04:00</updated>
 <published>2023-08-18T10:55:00-04:00</published>
@@ -5056,6 +5186,38 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value>/O.NEW.KGRR.BH.S.0018.230819T1500Z-230820T1000Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=MN12665ABBA454.AirQualityAlert.12665AC84B00MN.DLHAQADLH.56c929f5d8c1ff45c55e2fb3999f52be</id>
+<updated>2023-08-18T16:09:00-05:00</updated>
+<published>2023-08-18T16:09:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Air Quality Alert issued August 18 at 4:09PM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MN12665ABBA454.AirQualityAlert.12665AC84B00MN.DLHAQADLH.56c929f5d8c1ff45c55e2fb3999f52be"/>
+<summary>...AIR AQUALITY ALERT IN EFFECT UNTIL 11 PM CDT TONIGHT... * WHAT...The Minnesota Pollution Control Agency has issued an Air Quality Alert for fine particles pollution. The Air Quality Index (AQI) is expected to reach the Orange or Unhealthy for Sensitive Groups category. * WHERE...Cook and Lake Counties in northeastern Minnesota.</summary>
+<cap:event>Air Quality Alert</cap:event>
+<cap:effective>2023-08-18T16:09:00-05:00</cap:effective>
+<cap:expires>2023-08-18T23:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Unknown</cap:urgency>
+<cap:severity>Unknown</cap:severity>
+<cap:certainty>Unknown</cap:certainty>
+<cap:areaDesc>Northern Cook, Northern Lake; Southern Cook, North Shore; Southern Lake, North Shore</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>027031 027075</value>
+<valueName>UGC</valueName>
+<value>MNZ012 MNZ020 MNZ021</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value></value>
 </cap:parameter>
 </entry>
 <entry>
@@ -5931,67 +6093,99 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=MT12665ABBA0D0.SevereThunderstormWarning.12665ABBAC88MT.TFXSVSTFX.bb0b7faa181f080fee57a486e27b118d</id>
-<updated>2023-08-18T15:00:00-06:00</updated>
-<published>2023-08-18T15:00:00-06:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=MT12665ABBACEC.SpecialWeatherStatement.12665ABBCDBCMT.BYZSPSBYZ.bb951d1da9b7d66d155fb127b3c26322</id>
+<updated>2023-08-18T15:31:00-06:00</updated>
+<published>2023-08-18T15:31:00-06:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Severe Thunderstorm Warning issued August 18 at 3:00PM MDT until August 18 at 3:30PM MDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MT12665ABBA0D0.SevereThunderstormWarning.12665ABBAC88MT.TFXSVSTFX.bb0b7faa181f080fee57a486e27b118d"/>
-<summary>...A SEVERE THUNDERSTORM WARNING REMAINS IN EFFECT UNTIL 330 PM MDT FOR EASTERN MADISON AND SOUTHEASTERN BEAVERHEAD COUNTIES... At 259 PM MDT, severe thunderstorms were located along a line extending from 10 miles south of Ennis to 15 miles north of Kilgore, moving east at 40 mph. HAZARD...60 mph wind gusts.</summary>
-<cap:event>Severe Thunderstorm Warning</cap:event>
-<cap:effective>2023-08-18T15:00:00-06:00</cap:effective>
-<cap:expires>2023-08-18T15:30:00-06:00</cap:expires>
+<title>Special Weather Statement issued August 18 at 3:31PM MDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MT12665ABBACEC.SpecialWeatherStatement.12665ABBCDBCMT.BYZSPSBYZ.bb951d1da9b7d66d155fb127b3c26322"/>
+<summary>...A STRONG THUNDERSTORM WILL IMPACT CENTRAL PARK COUNTY THROUGH 415 PM MDT... At 330 PM MDT, Doppler radar was tracking a strong thunderstorm 12 miles southwest of Livingston, moving east at 40 mph. HAZARD...Wind gusts up to 50 mph. SOURCE...Radar indicated.</summary>
+<cap:event>Special Weather Statement</cap:event>
+<cap:effective>2023-08-18T15:31:00-06:00</cap:effective>
+<cap:expires>2023-08-18T16:15:00-06:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
 <cap:category>Met</cap:category>
-<cap:urgency>Immediate</cap:urgency>
-<cap:severity>Severe</cap:severity>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
 <cap:certainty>Observed</cap:certainty>
-<cap:areaDesc>Beaverhead; Madison</cap:areaDesc>
-<cap:polygon>44.54,-111.86 44.56,-111.89 44.54,-111.97 44.54,-112.17 44.83,-112.14 44.98,-112.04 45.65,-111.68 45.64,-111.36 44.76,-111.37 44.71,-111.41 44.7,-111.49 44.66,-111.47 44.59,-111.53 44.55,-111.47 44.53,-111.52 44.56,-111.59 44.54,-111.86</cap:polygon>
+<cap:areaDesc>Absaroka, Beartooth Mountains; Livingston Area; Paradise Valley</cap:areaDesc>
+<cap:polygon>45.39,-110.73 45.56,-110.81 45.71,-110.56 45.74,-110.23 45.43,-110.23 45.39,-110.73</cap:polygon>
 <cap:geocode>
 <valueName>FIPS6</valueName>
-<value>030001 030057</value>
+<value>030009 030067</value>
 <valueName>UGC</valueName>
-<value>MTC001 MTC057</value>
+<value>MTZ064 MTZ065 MTZ067</value>
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
-<value>/O.CON.KTFX.SV.W.0043.000000T0000Z-230818T2130Z/</value>
+<value></value>
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=MT12665ABBA0D0.SevereWeatherStatement.12665ABBAC88MT.TFXSVSTFX.6d0788302f7e985e54b60cc1b55468e0</id>
-<updated>2023-08-18T15:00:00-06:00</updated>
-<published>2023-08-18T15:00:00-06:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=MT12665ABBAA94.SevereThunderstormWarning.12665ABBC7E0MT.TFXSVSTFX.33383a14b395bc1cdb99d9e8cd67e659</id>
+<updated>2023-08-18T15:25:00-06:00</updated>
+<published>2023-08-18T15:25:00-06:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Severe Weather Statement issued August 18 at 3:00PM MDT until August 18 at 3:30PM MDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MT12665ABBA0D0.SevereWeatherStatement.12665ABBAC88MT.TFXSVSTFX.6d0788302f7e985e54b60cc1b55468e0"/>
-<summary>...A SEVERE THUNDERSTORM WARNING REMAINS IN EFFECT UNTIL 330 PM MDT FOR EASTERN MADISON AND SOUTHEASTERN BEAVERHEAD COUNTIES... At 259 PM MDT, severe thunderstorms were located along a line extending from 10 miles south of Ennis to 15 miles north of Kilgore, moving east at 40 mph. HAZARD...60 mph wind gusts.</summary>
-<cap:event>Severe Weather Statement</cap:event>
-<cap:effective>2023-08-18T15:00:00-06:00</cap:effective>
-<cap:expires>2023-08-18T15:30:00-06:00</cap:expires>
+<title>Severe Thunderstorm Warning issued August 18 at 3:25PM MDT until August 18 at 4:00PM MDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MT12665ABBAA94.SevereThunderstormWarning.12665ABBC7E0MT.TFXSVSTFX.33383a14b395bc1cdb99d9e8cd67e659"/>
+<summary>...A SEVERE THUNDERSTORM WARNING REMAINS IN EFFECT UNTIL 400 PM MDT FOR SOUTHEASTERN LEWIS AND CLARK...BROADWATER AND WESTERN MEAGHER COUNTIES... At 325 PM MDT, severe thunderstorms were located along a line extending from 19 miles northeast of East Helena to 20 miles north of Toston to near Townsend, moving east at 40 mph.</summary>
+<cap:event>Severe Thunderstorm Warning</cap:event>
+<cap:effective>2023-08-18T15:25:00-06:00</cap:effective>
+<cap:expires>2023-08-18T16:00:00-06:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
 <cap:category>Met</cap:category>
 <cap:urgency>Immediate</cap:urgency>
 <cap:severity>Severe</cap:severity>
 <cap:certainty>Observed</cap:certainty>
-<cap:areaDesc>Beaverhead; Madison</cap:areaDesc>
-<cap:polygon>44.54,-111.86 44.56,-111.89 44.54,-111.97 44.54,-112.17 44.83,-112.14 44.98,-112.04 45.65,-111.68 45.64,-111.36 44.76,-111.37 44.71,-111.41 44.7,-111.49 44.66,-111.47 44.59,-111.53 44.55,-111.47 44.53,-111.52 44.56,-111.59 44.54,-111.86</cap:polygon>
+<cap:areaDesc>Broadwater; Lewis and Clark; Meagher</cap:areaDesc>
+<cap:polygon>46.89,-111.13 46.5,-110.95 46.2,-111.04 46.18,-111.38 46.21,-111.78 46.57,-111.79 46.57,-111.83 46.73,-111.87 46.89,-111.13</cap:polygon>
 <cap:geocode>
 <valueName>FIPS6</valueName>
-<value>030001 030057</value>
+<value>030007 030049 030059</value>
 <valueName>UGC</valueName>
-<value>MTC001 MTC057</value>
+<value>MTC007 MTC049 MTC059</value>
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
-<value>/O.CON.KTFX.SV.W.0043.000000T0000Z-230818T2130Z/</value>
+<value>/O.CON.KTFX.SV.W.0044.000000T0000Z-230818T2200Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=MT12665ABBAA94.SevereWeatherStatement.12665ABBC7E0MT.TFXSVSTFX.688fde5b8ba5be1bd5d90ff07bacee25</id>
+<updated>2023-08-18T15:25:00-06:00</updated>
+<published>2023-08-18T15:25:00-06:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Severe Weather Statement issued August 18 at 3:25PM MDT until August 18 at 4:00PM MDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MT12665ABBAA94.SevereWeatherStatement.12665ABBC7E0MT.TFXSVSTFX.688fde5b8ba5be1bd5d90ff07bacee25"/>
+<summary>...A SEVERE THUNDERSTORM WARNING REMAINS IN EFFECT UNTIL 400 PM MDT FOR SOUTHEASTERN LEWIS AND CLARK...BROADWATER AND WESTERN MEAGHER COUNTIES... At 325 PM MDT, severe thunderstorms were located along a line extending from 19 miles northeast of East Helena to 20 miles north of Toston to near Townsend, moving east at 40 mph.</summary>
+<cap:event>Severe Weather Statement</cap:event>
+<cap:effective>2023-08-18T15:25:00-06:00</cap:effective>
+<cap:expires>2023-08-18T16:00:00-06:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Immediate</cap:urgency>
+<cap:severity>Severe</cap:severity>
+<cap:certainty>Observed</cap:certainty>
+<cap:areaDesc>Broadwater; Lewis and Clark; Meagher</cap:areaDesc>
+<cap:polygon>46.89,-111.13 46.5,-110.95 46.2,-111.04 46.18,-111.38 46.21,-111.78 46.57,-111.79 46.57,-111.83 46.73,-111.87 46.89,-111.13</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>030007 030049 030059</value>
+<valueName>UGC</valueName>
+<value>MTC007 MTC049 MTC059</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KTFX.SV.W.0044.000000T0000Z-230818T2200Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -6220,38 +6414,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <valueName>VTEC</valueName>
 <value>/O.CON.KGGW.HT.Y.0003.000000T0000Z-230819T0400Z/
 /O.CON.KGGW.LW.Y.0018.000000T0000Z-230819T0400Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=MT12665ABB8A8C.SpecialWeatherStatement.12665ABBA6ACMT.BYZSPSBYZ.8eb01955e779bb41e807f283012c033b</id>
-<updated>2023-08-18T14:43:00-06:00</updated>
-<published>2023-08-18T14:43:00-06:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Special Weather Statement issued August 18 at 2:43PM MDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MT12665ABB8A8C.SpecialWeatherStatement.12665ABBA6ACMT.BYZSPSBYZ.8eb01955e779bb41e807f283012c033b"/>
-<summary>...THUNDERSTORMS WILL IMPACT WEST CENTRAL SWEET GRASS AND CENTRAL PARK COUNTIES THROUGH 315 PM MDT... At 241 PM MDT, Doppler radar was tracking an area of showers and thunderstorms near Livingston and Springdale, moving east at 30 mph. HAZARD...Wind gusts of 50 to 60 mph. SOURCE...Radar indicated.</summary>
-<cap:event>Special Weather Statement</cap:event>
-<cap:effective>2023-08-18T14:43:00-06:00</cap:effective>
-<cap:expires>2023-08-18T15:15:00-06:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Observed</cap:certainty>
-<cap:areaDesc>Beartooth Foothills; Livingston Area; Northern Park; Northern Sweet Grass</cap:areaDesc>
-<cap:polygon>45.86,-110.79 45.92,-110.42 45.88,-110.4 45.91,-110.02 45.96,-109.94 45.62,-109.85 45.59,-110.29 45.63,-110.24 45.65,-110.23 45.63,-110.36 45.62,-110.36 45.61,-110.31 45.59,-110.31 45.59,-110.33 45.63,-110.43 45.59,-110.52 45.62,-110.73 45.61,-110.73 45.64,-110.79 45.86,-110.79</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>030067 030095 030097</value>
-<valueName>UGC</valueName>
-<value>MTZ040 MTZ065 MTZ066 MTZ141</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value></value>
 </cap:parameter>
 </entry>
 <entry>
@@ -7313,38 +7475,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <valueName>VTEC</valueName>
 <value>/O.NEW.KEPZ.FA.Y.0143.230818T2048Z-230818T2245Z/
 /00000.N.ER.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=NM12665ABB8C1C.SpecialWeatherStatement.12665ABBA6ACNM.ABQSPSABQ.335e7fa52dc09f869b63bbda117258bd</id>
-<updated>2023-08-18T14:47:00-06:00</updated>
-<published>2023-08-18T14:47:00-06:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Special Weather Statement issued August 18 at 2:47PM MDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=NM12665ABB8C1C.SpecialWeatherStatement.12665ABBA6ACNM.ABQSPSABQ.335e7fa52dc09f869b63bbda117258bd"/>
-<summary>...A STRONG THUNDERSTORM WILL IMPACT NORTHWESTERN SAN JUAN COUNTY THROUGH 315 PM MDT... At 247 PM MDT, Doppler radar was tracking a strong thunderstorm 10 miles northeast of Red Rock, or 14 miles west of Shiprock, moving northeast at 30 mph. HAZARD...Wind gusts up to 50 mph and pea size hail.</summary>
-<cap:event>Special Weather Statement</cap:event>
-<cap:effective>2023-08-18T14:47:00-06:00</cap:effective>
-<cap:expires>2023-08-18T15:15:00-06:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Observed</cap:certainty>
-<cap:areaDesc>Northwest Plateau</cap:areaDesc>
-<cap:polygon>37,-108.97 36.85,-108.56 36.56,-108.85 36.64,-109.05 36.72,-109.05 37,-109 37,-108.97</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>035045</value>
-<valueName>UGC</valueName>
-<value>NMZ201</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value></value>
 </cap:parameter>
 </entry>
 <entry>
@@ -8555,35 +8685,67 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=OR12665ABB8ED8.SpecialWeatherStatement.12665ABBAC88OR.BOISPSBOI.297aee1009bcad37ce19f31dbb9b768d</id>
-<updated>2023-08-18T13:54:00-07:00</updated>
-<published>2023-08-18T13:54:00-07:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=OR12665ABBA580.RedFlagWarning.12665AC84B00OR.PDTRFWPDT.36dfaa25c093b88045af33c5fcd2a4c8</id>
+<updated>2023-08-18T14:12:00-07:00</updated>
+<published>2023-08-18T14:12:00-07:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Special Weather Statement issued August 18 at 1:54PM PDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=OR12665ABB8ED8.SpecialWeatherStatement.12665ABBAC88OR.BOISPSBOI.297aee1009bcad37ce19f31dbb9b768d"/>
-<summary>...A strong thunderstorm will impact portions of central Malheur County through 230 PM PDT... At 153 PM PDT, Doppler radar was tracking a strong thunderstorm near Iron Point, or 22 miles north of Rome, moving northeast at 20 mph. HAZARD...Winds in excess of 40 mph and half inch hail. SOURCE...Radar indicated.</summary>
-<cap:event>Special Weather Statement</cap:event>
-<cap:effective>2023-08-18T13:54:00-07:00</cap:effective>
-<cap:expires>2023-08-18T14:30:00-07:00</cap:expires>
+<title>Red Flag Warning issued August 18 at 2:12PM PDT until August 18 at 9:00PM PDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=OR12665ABBA580.RedFlagWarning.12665AC84B00OR.PDTRFWPDT.36dfaa25c093b88045af33c5fcd2a4c8"/>
+<summary>...GUSTY WINDS AND LOW HUMIDITY THROUGH THIS EVENING... .It will continue to be windy with low RH`s this afternoon and evening. Wind speeds will be at least 15-25 mph with gusts to 35 mph, except 25-35 mph with gusts to 50 mph in the Kittitas Valley. These winds will combine with low RH`s to create Red Flag conditions.</summary>
+<cap:event>Red Flag Warning</cap:event>
+<cap:effective>2023-08-18T14:12:00-07:00</cap:effective>
+<cap:expires>2023-08-18T21:00:00-07:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
 <cap:category>Met</cap:category>
 <cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Observed</cap:certainty>
-<cap:areaDesc>Malheur County</cap:areaDesc>
-<cap:polygon>43.04,-117.67 43.16,-117.75 43.42,-117.4 43.18,-117.17 43.04,-117.67</cap:polygon>
+<cap:severity>Severe</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Central Mountains of Oregon; East Slopes of Central Oregon Cascades</cap:areaDesc>
+<cap:polygon></cap:polygon>
 <cap:geocode>
 <valueName>FIPS6</valueName>
-<value>041045</value>
+<value>041013 041017 041031 041065 041069</value>
 <valueName>UGC</valueName>
-<value>ORZ063</value>
+<value>ORZ610 ORZ640</value>
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
-<value></value>
+<value>/O.CON.KPDT.FW.W.0012.000000T0000Z-230819T0400Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=OR12665ABBA580.RedFlagWarning.12665AC84B00OR.PDTRFWPDT.2a2166ae4412408350a8d36c73f6d07f</id>
+<updated>2023-08-18T14:12:00-07:00</updated>
+<published>2023-08-18T14:12:00-07:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Red Flag Warning issued August 18 at 2:12PM PDT until August 18 at 9:00PM PDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=OR12665ABBA580.RedFlagWarning.12665AC84B00OR.PDTRFWPDT.2a2166ae4412408350a8d36c73f6d07f"/>
+<summary>...GUSTY WINDS AND LOW HUMIDITY THROUGH THIS EVENING... .It will continue to be windy with low RH`s this afternoon and evening. Wind speeds will be at least 15-25 mph with gusts to 35 mph, except 25-35 mph with gusts to 50 mph in the Kittitas Valley. These winds will combine with low RH`s to create Red Flag conditions.</summary>
+<cap:event>Red Flag Warning</cap:event>
+<cap:effective>2023-08-18T14:12:00-07:00</cap:effective>
+<cap:expires>2023-08-18T21:00:00-07:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Severe</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>East Slopes of the Northern Oregon Cascades; Lower Columbia Basin of Oregon</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>041021 041027 041049 041055 041059 041065</value>
+<valueName>UGC</valueName>
+<value>ORZ639 ORZ641</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KPDT.FW.W.0012.000000T0000Z-230819T0400Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -8747,70 +8909,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=OR12665ABA79E4.RedFlagWarning.12665AC84B00OR.PDTRFWPDT.2a2166ae4412408350a8d36c73f6d07f</id>
-<updated>2023-08-18T06:45:00-07:00</updated>
-<published>2023-08-18T06:45:00-07:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Red Flag Warning issued August 18 at 6:45AM PDT until August 18 at 9:00PM PDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=OR12665ABA79E4.RedFlagWarning.12665AC84B00OR.PDTRFWPDT.2a2166ae4412408350a8d36c73f6d07f"/>
-<summary>...GUSTY WINDS AND LOW HUMIDITY THROUGH THIS EVENING... .Winds will be slightly higher than experienced on Thursday, as gusts of up to 35 mph will be possible. This, combined with the recent heat wave and RHs in the teens, will make for critical fire weather conditions. ...RED FLAG WARNING REMAINS IN EFFECT UNTIL 9 PM PDT THIS EVENING</summary>
-<cap:event>Red Flag Warning</cap:event>
-<cap:effective>2023-08-18T06:45:00-07:00</cap:effective>
-<cap:expires>2023-08-18T21:00:00-07:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Severe</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>East Slopes of the Northern Oregon Cascades; Lower Columbia Basin of Oregon</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>041021 041027 041049 041055 041059 041065</value>
-<valueName>UGC</valueName>
-<value>ORZ639 ORZ641</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KPDT.FW.W.0012.000000T0000Z-230819T0400Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=OR12665ABA79E4.RedFlagWarning.12665AC84B00OR.PDTRFWPDT.36dfaa25c093b88045af33c5fcd2a4c8</id>
-<updated>2023-08-18T06:45:00-07:00</updated>
-<published>2023-08-18T06:45:00-07:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Red Flag Warning issued August 18 at 6:45AM PDT until August 18 at 9:00PM PDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=OR12665ABA79E4.RedFlagWarning.12665AC84B00OR.PDTRFWPDT.36dfaa25c093b88045af33c5fcd2a4c8"/>
-<summary>...GUSTY WINDS AND LOW HUMIDITY THROUGH THIS EVENING... .Winds will be slightly higher than experienced on Thursday, as gusts of up to 35 mph will be possible. This, combined with the recent heat wave and RHs in the teens, will make for critical fire weather conditions. ...RED FLAG WARNING REMAINS IN EFFECT FROM 10 AM THIS MORNING TO</summary>
-<cap:event>Red Flag Warning</cap:event>
-<cap:effective>2023-08-18T06:45:00-07:00</cap:effective>
-<cap:expires>2023-08-18T21:00:00-07:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Severe</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Central Mountains of Oregon; East Slopes of Central Oregon Cascades</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>041013 041017 041031 041065 041069</value>
-<valueName>UGC</valueName>
-<value>ORZ610 ORZ640</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KPDT.FW.W.0012.230818T1700Z-230819T0400Z/</value>
-</cap:parameter>
-</entry>
-<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=OR12665AAC6660.AirQualityAlert.12665AE8A440OR.PDTAQAPDT.7e7ee2bee7c7c6588dc9c9bd6d1f4a16</id>
 <updated>2023-08-17T14:20:00-07:00</updated>
 <published>2023-08-17T14:20:00-07:00</published>
@@ -8875,50 +8973,17 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=PR12665ABB60C0.FlashFloodWarning.12665ABBC7E0PR.JSJFFWSJU.b4fe56acc9504c12a224081b02da7f4b</id>
-<updated>2023-08-18T16:36:00-03:00</updated>
-<published>2023-08-18T16:36:00-03:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=PR12665ABBA3F0.RipCurrentStatement.12665ABBC7E0PR.JSJCFWSJU.addb5fc4129d9f3c16fc413ec02e7811</id>
+<updated>2023-08-18T18:08:00-03:00</updated>
+<published>2023-08-18T18:08:00-03:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Flash Flood Warning issued August 18 at 4:36PM ADT until August 18 at 7:00PM ADT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=PR12665ABB60C0.FlashFloodWarning.12665ABBC7E0PR.JSJFFWSJU.b4fe56acc9504c12a224081b02da7f4b"/>
-<summary>The National Weather Service in San Juan has issued a * Flash Flood Warning for... Mayaguez County in Puerto Rico... * Until 600 PM AST. * At 336 PM AST, Doppler radar indicated thunderstorms producing heavy rain across the warned area. Between 1 and 2.5 inches of</summary>
-<cap:event>Flash Flood Warning</cap:event>
-<cap:effective>2023-08-18T16:36:00-03:00</cap:effective>
-<cap:expires>2023-08-18T19:00:00-03:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Immediate</cap:urgency>
-<cap:severity>Severe</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Mayaguez</cap:areaDesc>
-<cap:polygon>18.26,-67.14 18.25,-67.14 18.24,-67.12 18.25,-67.08 18.25,-67.06 18.23,-67.05 18.22,-67.03 18.21,-67.03 18.2,-67.02 18.19,-67.02 18.17,-67.08 18.15,-67.09 18.16,-67.11 18.15,-67.16 18.2,-67.13 18.21,-67.15 18.23,-67.17 18.25,-67.18 18.27,-67.19 18.26,-67.14</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>072097</value>
-<valueName>UGC</valueName>
-<value>PRC097</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.NEW.TJSJ.FF.W.0034.230818T1936Z-230818T2200Z/
-/00000.0.ER.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=PR12665ABA9668.RipCurrentStatement.12665ABBC7E0PR.JSJCFWSJU.addb5fc4129d9f3c16fc413ec02e7811</id>
-<updated>2023-08-18T11:18:00-03:00</updated>
-<published>2023-08-18T11:18:00-03:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Rip Current Statement issued August 18 at 11:18AM ADT until August 18 at 7:00PM ADT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=PR12665ABA9668.RipCurrentStatement.12665ABBC7E0PR.JSJCFWSJU.addb5fc4129d9f3c16fc413ec02e7811"/>
-<summary>...HIGH RIP CURRENT RISK REMAINS IN EFFECT UNTIL 6 PM AST THIS EVENING... * WHAT...Life-threatening rip currents due to breaking waves of 6 feet or higher. * WHERE...San Juan Metro and vicinity, and St. Croix. * WHEN...Through this afternoon. * IMPACTS...Rip currents that can sweep even the best swimmers</summary>
+<title>Rip Current Statement issued August 18 at 6:08PM ADT until August 18 at 7:00PM ADT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=PR12665ABBA3F0.RipCurrentStatement.12665ABBC7E0PR.JSJCFWSJU.addb5fc4129d9f3c16fc413ec02e7811"/>
+<summary>...HIGH RIP CURRENT RISK REMAINS IN EFFECT UNTIL 6 PM AST THIS EVENING... * WHAT...Life-threatening rip currents due to breaking waves of 6 feet or higher. * WHERE...San Juan Metro and vicinity, and St. Croix. * WHEN...Through this afternoon.</summary>
 <cap:event>Rip Current Statement</cap:event>
-<cap:effective>2023-08-18T11:18:00-03:00</cap:effective>
+<cap:effective>2023-08-18T18:08:00-03:00</cap:effective>
 <cap:expires>2023-08-18T19:00:00-03:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
@@ -8940,17 +9005,17 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=PR12665ABA9668.RipCurrentStatement.12665AC93560PR.JSJCFWSJU.8a6839ef3746e651533345caec8c698e</id>
-<updated>2023-08-18T11:18:00-03:00</updated>
-<published>2023-08-18T11:18:00-03:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=PR12665ABBA3F0.RipCurrentStatement.12665AC93560PR.JSJCFWSJU.8a6839ef3746e651533345caec8c698e</id>
+<updated>2023-08-18T18:08:00-03:00</updated>
+<published>2023-08-18T18:08:00-03:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Rip Current Statement issued August 18 at 11:18AM ADT until August 19 at 7:00AM ADT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=PR12665ABA9668.RipCurrentStatement.12665AC93560PR.JSJCFWSJU.8a6839ef3746e651533345caec8c698e"/>
+<title>Rip Current Statement issued August 18 at 6:08PM ADT until August 19 at 7:00AM ADT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=PR12665ABBA3F0.RipCurrentStatement.12665AC93560PR.JSJCFWSJU.8a6839ef3746e651533345caec8c698e"/>
 <summary>...HIGH RIP CURRENT RISK REMAINS IN EFFECT THROUGH LATE TONIGHT... * WHAT...Life-threatening rip currents due to breaking waves of 6 feet or higher. * WHERE...Beaches of northwestern and north-central Puerto Rico. * WHEN...Through late tonight. * IMPACTS...Rip currents that can sweep even the best swimmers</summary>
 <cap:event>Rip Current Statement</cap:event>
-<cap:effective>2023-08-18T11:18:00-03:00</cap:effective>
+<cap:effective>2023-08-18T18:08:00-03:00</cap:effective>
 <cap:expires>2023-08-19T07:00:00-03:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
@@ -10312,35 +10377,67 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=UT12665ABB8CE4.SpecialWeatherStatement.12665ABBA6ACUT.SLCSPSSLC.a569fc067e048259477931a8d0831e81</id>
-<updated>2023-08-18T14:49:00-06:00</updated>
-<published>2023-08-18T14:49:00-06:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=UT12665ABBABC0.SevereThunderstormWarning.12665ABBC7E0UT.SLCSVSSLC.4f7083a55ddeb659cc9cfeee7dfa4a18</id>
+<updated>2023-08-18T15:28:00-06:00</updated>
+<published>2023-08-18T15:28:00-06:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Special Weather Statement issued August 18 at 2:49PM MDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=UT12665ABB8CE4.SpecialWeatherStatement.12665ABBA6ACUT.SLCSPSSLC.a569fc067e048259477931a8d0831e81"/>
-<summary>...A strong thunderstorm will impact portions of eastern Beaver County through 315 PM MDT... At 248 PM MDT, Doppler radar was tracking a strong thunderstorm near Milford. This storm was nearly stationary. HAZARD...Wind gusts of 50 to 55 mph and pea size hail. SOURCE...Radar indicated.</summary>
-<cap:event>Special Weather Statement</cap:event>
-<cap:effective>2023-08-18T14:49:00-06:00</cap:effective>
-<cap:expires>2023-08-18T15:15:00-06:00</cap:expires>
+<title>Severe Thunderstorm Warning issued August 18 at 3:28PM MDT until August 18 at 4:00PM MDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=UT12665ABBABC0.SevereThunderstormWarning.12665ABBC7E0UT.SLCSVSSLC.4f7083a55ddeb659cc9cfeee7dfa4a18"/>
+<summary>...A SEVERE THUNDERSTORM WARNING REMAINS IN EFFECT UNTIL 400 PM MDT FOR NORTH CENTRAL EMERY AND SOUTH CENTRAL CARBON COUNTIES... At 327 PM MDT, a severe thunderstorm was located 8 miles southwest of Sunnyside, or 16 miles southeast of Price, moving north at 10 mph. HAZARD...Quarter size hail. SOURCE...Radar indicated.</summary>
+<cap:event>Severe Thunderstorm Warning</cap:event>
+<cap:effective>2023-08-18T15:28:00-06:00</cap:effective>
+<cap:expires>2023-08-18T16:00:00-06:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
 <cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
+<cap:urgency>Immediate</cap:urgency>
+<cap:severity>Severe</cap:severity>
 <cap:certainty>Observed</cap:certainty>
-<cap:areaDesc>Southern Mountains; Southwest Utah</cap:areaDesc>
-<cap:polygon>38.2,-112.87 38.26,-113.09 38.53,-113.07 38.45,-112.68 38.2,-112.87</cap:polygon>
+<cap:areaDesc>Carbon; Emery</cap:areaDesc>
+<cap:polygon>39.34,-110.48 39.38,-110.67 39.68,-110.67 39.59,-110.24 39.34,-110.48</cap:polygon>
 <cap:geocode>
 <valueName>FIPS6</valueName>
-<value>049001 049017 049021 049031 049053 049055</value>
+<value>049007 049015</value>
 <valueName>UGC</valueName>
-<value>UTZ122 UTZ125</value>
+<value>UTC007 UTC015</value>
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
-<value></value>
+<value>/O.CON.KSLC.SV.W.0079.000000T0000Z-230818T2200Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=UT12665ABBABC0.SevereWeatherStatement.12665ABBC7E0UT.SLCSVSSLC.6c6015312a4f21958488c357176d179c</id>
+<updated>2023-08-18T15:28:00-06:00</updated>
+<published>2023-08-18T15:28:00-06:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Severe Weather Statement issued August 18 at 3:28PM MDT until August 18 at 4:00PM MDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=UT12665ABBABC0.SevereWeatherStatement.12665ABBC7E0UT.SLCSVSSLC.6c6015312a4f21958488c357176d179c"/>
+<summary>...A SEVERE THUNDERSTORM WARNING REMAINS IN EFFECT UNTIL 400 PM MDT FOR NORTH CENTRAL EMERY AND SOUTH CENTRAL CARBON COUNTIES... At 327 PM MDT, a severe thunderstorm was located 8 miles southwest of Sunnyside, or 16 miles southeast of Price, moving north at 10 mph. HAZARD...Quarter size hail. SOURCE...Radar indicated.</summary>
+<cap:event>Severe Weather Statement</cap:event>
+<cap:effective>2023-08-18T15:28:00-06:00</cap:effective>
+<cap:expires>2023-08-18T16:00:00-06:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Immediate</cap:urgency>
+<cap:severity>Severe</cap:severity>
+<cap:certainty>Observed</cap:certainty>
+<cap:areaDesc>Carbon; Emery</cap:areaDesc>
+<cap:polygon>39.34,-110.48 39.38,-110.67 39.68,-110.67 39.59,-110.24 39.34,-110.48</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>049007 049015</value>
+<valueName>UGC</valueName>
+<value>UTC007 UTC015</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KSLC.SV.W.0079.000000T0000Z-230818T2200Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -10377,51 +10474,18 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=UT12665ABB5BAC.FloodWatch.12665ABBA6ACUT.SLCFFASLC.5a4d0f76f59a2a8cca515beb65b9b82e</id>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=UT12665ABB5BAC.FloodWatch.12665ABBC7E0UT.SLCFFASLC.a82ab0b3f5407e2368e51be6c7a5044b</id>
 <updated>2023-08-18T13:23:00-06:00</updated>
 <published>2023-08-18T13:23:00-06:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Flood Watch issued August 18 at 1:23PM MDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=UT12665ABB5BAC.FloodWatch.12665ABBA6ACUT.SLCFFASLC.5a4d0f76f59a2a8cca515beb65b9b82e"/>
-<summary>...FLOOD WATCH NOW IN EFFECT THROUGH SATURDAY EVENING... * WHAT...Flash flooding caused by excessive rainfall is possible. * WHERE...A portion of Utah, including the following areas, Central Mountains, Sevier Valley, Bryce Canyon Country, Capitol Reef National Park and Vicinity, Glen Canyon Recreation Area/Lake Powell, South Central Utah, Southern Mountains, Upper Sevier River</summary>
-<cap:event>Flood Watch</cap:event>
-<cap:effective>2023-08-18T13:23:00-06:00</cap:effective>
-<cap:expires>2023-08-18T15:15:00-06:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Future</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Possible</cap:certainty>
-<cap:areaDesc>Bryce Canyon Country; Capitol Reef National Park and Vicinity; Glen Canyon Recreation Area, Lake Powell; Lower Washington County; South Central Utah; Southern Mountains; Upper Sevier River Valleys; Western Canyonlands; Zion National Park</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>049001 049017 049021 049025 049031 049037 049053 049055</value>
-<valueName>UGC</valueName>
-<value>UTZ123 UTZ124 UTZ125 UTZ126 UTZ127 UTZ128 UTZ129 UTZ130 UTZ131</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.EXT.KSLC.FA.A.0004.000000T0000Z-230820T0600Z/
-/00000.0.ER.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=UT12665ABB5BAC.FloodWatch.12665ABC0084UT.SLCFFASLC.a82ab0b3f5407e2368e51be6c7a5044b</id>
-<updated>2023-08-18T13:23:00-06:00</updated>
-<published>2023-08-18T13:23:00-06:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Flood Watch issued August 18 at 1:23PM MDT until August 18 at 5:45PM MDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=UT12665ABB5BAC.FloodWatch.12665ABC0084UT.SLCFFASLC.a82ab0b3f5407e2368e51be6c7a5044b"/>
+<title>Flood Watch issued August 18 at 1:23PM MDT until August 18 at 4:00PM MDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=UT12665ABB5BAC.FloodWatch.12665ABBC7E0UT.SLCFFASLC.a82ab0b3f5407e2368e51be6c7a5044b"/>
 <summary>...FLOOD WATCH IN EFFECT FROM SATURDAY MORNING THROUGH SATURDAY EVENING... * WHAT...Flash flooding caused by excessive rainfall is possible. * WHERE...A portion of Utah, including the following areas, Wasatch Plateau/Book Cliffs and Western Uinta Mountains. * WHEN...From Saturday morning through Saturday evening.</summary>
 <cap:event>Flood Watch</cap:event>
 <cap:effective>2023-08-18T13:23:00-06:00</cap:effective>
-<cap:expires>2023-08-18T17:45:00-06:00</cap:expires>
+<cap:expires>2023-08-18T16:00:00-06:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
 <cap:category>Met</cap:category>
@@ -10443,31 +10507,31 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=UT12665ABB5BAC.FloodWatch.12665ABC0084UT.SLCFFASLC.7ec9e15ea5caf32a07b4cf002813f1da</id>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=UT12665ABB5BAC.FloodWatch.12665ABBC7E0UT.SLCFFASLC.5179db5e5404d61a3f966c02b7d53324</id>
 <updated>2023-08-18T13:23:00-06:00</updated>
 <published>2023-08-18T13:23:00-06:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Flood Watch issued August 18 at 1:23PM MDT until August 18 at 5:45PM MDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=UT12665ABB5BAC.FloodWatch.12665ABC0084UT.SLCFFASLC.7ec9e15ea5caf32a07b4cf002813f1da"/>
+<title>Flood Watch issued August 18 at 1:23PM MDT until August 18 at 4:00PM MDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=UT12665ABB5BAC.FloodWatch.12665ABBC7E0UT.SLCFFASLC.5179db5e5404d61a3f966c02b7d53324"/>
 <summary>...FLOOD WATCH NOW IN EFFECT THROUGH SATURDAY EVENING... * WHAT...Flash flooding caused by excessive rainfall is possible. * WHERE...A portion of Utah, including the following areas, Central Mountains, Sevier Valley, Bryce Canyon Country, Capitol Reef National Park and Vicinity, Glen Canyon Recreation Area/Lake Powell, South Central Utah, Southern Mountains, Upper Sevier River</summary>
 <cap:event>Flood Watch</cap:event>
 <cap:effective>2023-08-18T13:23:00-06:00</cap:effective>
-<cap:expires>2023-08-18T17:45:00-06:00</cap:expires>
+<cap:expires>2023-08-18T16:00:00-06:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
 <cap:category>Met</cap:category>
 <cap:urgency>Future</cap:urgency>
 <cap:severity>Moderate</cap:severity>
 <cap:certainty>Possible</cap:certainty>
-<cap:areaDesc>Central Mountains; Sevier Valley; Southwest Utah</cap:areaDesc>
+<cap:areaDesc>Bryce Canyon Country; Capitol Reef National Park and Vicinity; Central Mountains; Glen Canyon Recreation Area, Lake Powell; Lower Washington County; Sevier Valley; South Central Utah; Southern Mountains; Southwest Utah; Upper Sevier River Valleys; Western Canyonlands; Zion National Park</cap:areaDesc>
 <cap:polygon></cap:polygon>
 <cap:geocode>
 <valueName>FIPS6</valueName>
-<value>049001 049021 049039 049041</value>
+<value>049001 049017 049021 049025 049031 049037 049039 049041 049053 049055</value>
 <valueName>UGC</valueName>
-<value>UTZ117 UTZ119 UTZ122</value>
+<value>UTZ117 UTZ119 UTZ122 UTZ123 UTZ124 UTZ125 UTZ126 UTZ127 UTZ128 UTZ129 UTZ130 UTZ131</value>
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
@@ -10476,17 +10540,17 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=VI12665ABA9668.RipCurrentStatement.12665ABBC7E0VI.JSJCFWSJU.8f3de0b0d513d04e24b2e639d1077f28</id>
-<updated>2023-08-18T10:18:00-04:00</updated>
-<published>2023-08-18T10:18:00-04:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=VI12665ABBA3F0.RipCurrentStatement.12665ABBC7E0VI.JSJCFWSJU.8f3de0b0d513d04e24b2e639d1077f28</id>
+<updated>2023-08-18T17:08:00-04:00</updated>
+<published>2023-08-18T17:08:00-04:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Rip Current Statement issued August 18 at 10:18AM AST until August 18 at 6:00PM AST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=VI12665ABA9668.RipCurrentStatement.12665ABBC7E0VI.JSJCFWSJU.8f3de0b0d513d04e24b2e639d1077f28"/>
-<summary>...HIGH RIP CURRENT RISK REMAINS IN EFFECT UNTIL 6 PM AST THIS EVENING... * WHAT...Life-threatening rip currents due to breaking waves of 6 feet or higher. * WHERE...San Juan Metro and vicinity, and St. Croix. * WHEN...Through this afternoon. * IMPACTS...Rip currents that can sweep even the best swimmers</summary>
+<title>Rip Current Statement issued August 18 at 5:08PM AST until August 18 at 6:00PM AST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=VI12665ABBA3F0.RipCurrentStatement.12665ABBC7E0VI.JSJCFWSJU.8f3de0b0d513d04e24b2e639d1077f28"/>
+<summary>...HIGH RIP CURRENT RISK REMAINS IN EFFECT UNTIL 6 PM AST THIS EVENING... * WHAT...Life-threatening rip currents due to breaking waves of 6 feet or higher. * WHERE...San Juan Metro and vicinity, and St. Croix. * WHEN...Through this afternoon.</summary>
 <cap:event>Rip Current Statement</cap:event>
-<cap:effective>2023-08-18T10:18:00-04:00</cap:effective>
+<cap:effective>2023-08-18T17:08:00-04:00</cap:effective>
 <cap:expires>2023-08-18T18:00:00-04:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
@@ -10505,6 +10569,70 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value>/O.CON.TJSJ.RP.S.0032.000000T0000Z-230818T2200Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=WA12665ABBA774.WindAdvisory.12665AC84B00WA.PDTNPWPDT.e0302b4741c61d23224ae093afa88315</id>
+<updated>2023-08-18T14:17:00-07:00</updated>
+<published>2023-08-18T14:17:00-07:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Wind Advisory issued August 18 at 2:17PM PDT until August 18 at 9:00PM PDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=WA12665ABBA774.WindAdvisory.12665AC84B00WA.PDTNPWPDT.e0302b4741c61d23224ae093afa88315"/>
+<summary>...WIND ADVISORY REMAINS IN EFFECT UNTIL 9 PM PDT THIS EVENING... * WHAT...Northwest winds 25 to 35 mph with gusts up to 50 mph expected. * WHERE...Kittitas Valley. * WHEN...Until 9 PM PDT this evening. * IMPACTS...Gusty winds could blow around unsecured objects.</summary>
+<cap:event>Wind Advisory</cap:event>
+<cap:effective>2023-08-18T14:17:00-07:00</cap:effective>
+<cap:expires>2023-08-18T21:00:00-07:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Kittitas Valley</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>053037</value>
+<valueName>UGC</valueName>
+<value>WAZ026</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KPDT.WI.Y.0025.000000T0000Z-230819T0400Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=WA12665ABBA580.RedFlagWarning.12665AC84B00WA.PDTRFWPDT.123477577b33c6ae885f3c14b32618f9</id>
+<updated>2023-08-18T14:12:00-07:00</updated>
+<published>2023-08-18T14:12:00-07:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Red Flag Warning issued August 18 at 2:12PM PDT until August 18 at 9:00PM PDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=WA12665ABBA580.RedFlagWarning.12665AC84B00WA.PDTRFWPDT.123477577b33c6ae885f3c14b32618f9"/>
+<summary>...GUSTY WINDS AND LOW HUMIDITY THROUGH THIS EVENING... .It will continue to be windy with low RH`s this afternoon and evening. Wind speeds will be at least 15-25 mph with gusts to 35 mph, except 25-35 mph with gusts to 50 mph in the Kittitas Valley. These winds will combine with low RH`s to create Red Flag conditions.</summary>
+<cap:event>Red Flag Warning</cap:event>
+<cap:effective>2023-08-18T14:12:00-07:00</cap:effective>
+<cap:expires>2023-08-18T21:00:00-07:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Severe</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Kittitas Valley; Lower Columbia Basin</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>053005 053021 053037 053039 053071 053077</value>
+<valueName>UGC</valueName>
+<value>WAZ690 WAZ691</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KPDT.FW.W.0012.000000T0000Z-230819T0400Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -10796,70 +10924,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value>/O.NEW.KPQR.FW.W.0005.230819T1800Z-230821T0400Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=WA12665ABA79E4.RedFlagWarning.12665AC84B00WA.PDTRFWPDT.123477577b33c6ae885f3c14b32618f9</id>
-<updated>2023-08-18T06:45:00-07:00</updated>
-<published>2023-08-18T06:45:00-07:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Red Flag Warning issued August 18 at 6:45AM PDT until August 18 at 9:00PM PDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=WA12665ABA79E4.RedFlagWarning.12665AC84B00WA.PDTRFWPDT.123477577b33c6ae885f3c14b32618f9"/>
-<summary>...GUSTY WINDS AND LOW HUMIDITY THROUGH THIS EVENING... .Winds will be slightly higher than experienced on Thursday, as gusts of up to 35 mph will be possible. This, combined with the recent heat wave and RHs in the teens, will make for critical fire weather conditions. ...RED FLAG WARNING REMAINS IN EFFECT UNTIL 9 PM PDT THIS EVENING</summary>
-<cap:event>Red Flag Warning</cap:event>
-<cap:effective>2023-08-18T06:45:00-07:00</cap:effective>
-<cap:expires>2023-08-18T21:00:00-07:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Severe</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Kittitas Valley; Lower Columbia Basin</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>053005 053021 053037 053039 053071 053077</value>
-<valueName>UGC</valueName>
-<value>WAZ690 WAZ691</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KPDT.FW.W.0012.000000T0000Z-230819T0400Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=WA12665ABA0900.WindAdvisory.12665AC84B00WA.PDTNPWPDT.e0302b4741c61d23224ae093afa88315</id>
-<updated>2023-08-18T03:56:00-07:00</updated>
-<published>2023-08-18T03:56:00-07:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Wind Advisory issued August 18 at 3:56AM PDT until August 18 at 9:00PM PDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=WA12665ABA0900.WindAdvisory.12665AC84B00WA.PDTNPWPDT.e0302b4741c61d23224ae093afa88315"/>
-<summary>...WIND ADVISORY IN EFFECT FROM 10 AM THIS MORNING TO 9 PM PDT THIS EVENING... * WHAT...Northwest winds 28 to 38 mph with gusts up to 45 mph expected. * WHERE...Kittitas Valley. * WHEN...From 10 AM this morning to 9 PM PDT this evening.</summary>
-<cap:event>Wind Advisory</cap:event>
-<cap:effective>2023-08-18T03:56:00-07:00</cap:effective>
-<cap:expires>2023-08-18T21:00:00-07:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Kittitas Valley</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>053037</value>
-<valueName>UGC</valueName>
-<value>WAZ026</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.NEW.KPDT.WI.Y.0025.230818T1700Z-230819T0400Z/</value>
 </cap:parameter>
 </entry>
 <entry>
