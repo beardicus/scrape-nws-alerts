@@ -16,16 +16,48 @@ xmlns = 'http://www.w3.org/2005/Atom'
 xmlns:cap = 'urn:oasis:names:tc:emergency:cap:1.1'
 xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 >
-<!-- http-date = Thu, 24 Aug 2023 21:31:00 GMT -->
+<!-- http-date = Thu, 24 Aug 2023 22:04:00 GMT -->
 <id>https://alerts.weather.gov/cap/us.php?x=0</id>
 <logo>http://alerts.weather.gov/images/xml_logo.gif</logo>
 <generator>NWS CAP Server</generator>
-<updated>2023-08-24T17:31:00-04:00</updated>
+<updated>2023-08-24T17:04:00-05:00</updated>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
 <title>Current Watches, Warnings and Advisories for the United States Issued by the National Weather Service</title>
 <link href="https://alerts.weather.gov/cap/us.php?x=0"/>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=AK12665B1743CC.WindAdvisory.12665B420EE0AK.AFGNPWAFG.86ddbd99284bb827c2c78abda95c3e47</id>
+<updated>2023-08-24T13:55:00-08:00</updated>
+<published>2023-08-24T13:55:00-08:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Wind Advisory issued August 24 at 1:55PM AKDT until August 26 at 6:00PM AKDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=AK12665B1743CC.WindAdvisory.12665B420EE0AK.AFGNPWAFG.86ddbd99284bb827c2c78abda95c3e47"/>
+<summary>...WIND ADVISORY REMAINS IN EFFECT UNTIL 6 PM AKDT SATURDAY... * WHAT...South winds 40 mph with gusts up to 60 mph expected. * WHERE...Eastern Alaska Range. * WHEN...Until 6 PM AKDT Saturday. * IMPACTS...Gusty winds could blow around unsecured objects. Tree limbs could be blown down and a few power outages may</summary>
+<cap:event>Wind Advisory</cap:event>
+<cap:effective>2023-08-24T13:55:00-08:00</cap:effective>
+<cap:expires>2023-08-26T18:00:00-08:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Eastern Alaska Range</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>002068 002240</value>
+<valueName>UGC</valueName>
+<value>AKZ226</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.PAFG.WI.Y.0025.230824T2200Z-230827T0200Z/</value>
+</cap:parameter>
+</entry>
 <entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=AK12665B171230.FloodWatch.12665B42AB20AK.AFCFFAAFC.c3b488551537fa3d17c6ca2d219e7aaf</id>
 <updated>2023-08-24T12:28:00-08:00</updated>
@@ -218,38 +250,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value>/O.NEW.PAFG.SU.Y.0004.230824T2200Z-230827T0200Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=AK12665B15F760.WindAdvisory.12665B420EE0AK.AFGNPWAFG.86ddbd99284bb827c2c78abda95c3e47</id>
-<updated>2023-08-24T05:04:00-08:00</updated>
-<published>2023-08-24T05:04:00-08:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Wind Advisory issued August 24 at 5:04AM AKDT until August 26 at 6:00PM AKDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=AK12665B15F760.WindAdvisory.12665B420EE0AK.AFGNPWAFG.86ddbd99284bb827c2c78abda95c3e47"/>
-<summary>...WIND ADVISORY NOW IN EFFECT FROM 2 PM THIS AFTERNOON TO 6 PM AKDT SATURDAY... * WHAT...South winds 40 mph with gusts to 60 mph expected. * WHERE...Eastern Alaska Range north of Black Rapids. * WHEN...From 2 PM this afternoon to 6 PM AKDT Saturday. * IMPACTS...Gusty winds could blow around unsecured objects.</summary>
-<cap:event>Wind Advisory</cap:event>
-<cap:effective>2023-08-24T05:04:00-08:00</cap:effective>
-<cap:expires>2023-08-26T18:00:00-08:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Eastern Alaska Range</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>002068 002240</value>
-<valueName>UGC</valueName>
-<value>AKZ226</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.EXT.PAFG.WI.Y.0025.230824T2200Z-230827T0200Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -638,6 +638,70 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <valueName>VTEC</valueName>
 <value>/O.EXB.KHUN.HT.Y.0011.230826T0100Z-230827T0000Z/
 /O.CON.KHUN.EH.W.0005.000000T0000Z-230826T0100Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=AR12665B1741D8.AirQualityAlert.12665B236F08AR.MEGAQAMEG.6eae750aacb9d8facccbfd5093f622b5</id>
+<updated>2023-08-24T16:50:00-05:00</updated>
+<published>2023-08-24T16:50:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Air Quality Alert issued August 24 at 4:50PM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=AR12665B1741D8.AirQualityAlert.12665B236F08AR.MEGAQAMEG.6eae750aacb9d8facccbfd5093f622b5"/>
+<summary>...Code Orange Ozone Health Advisory in effect until Sunset... The Shelby County Health Department has issued a Code Orange Ozone Health Advisory effective for Shelby County Tennessee, Crittenden County Arkansas, and DeSoto County Mississippi, including the city of Memphis that will remain in effect until sunset. This ozone health advisory is due to monitored ozone values that are unhealthy for</summary>
+<cap:event>Air Quality Alert</cap:event>
+<cap:effective>2023-08-24T16:50:00-05:00</cap:effective>
+<cap:expires>2023-08-24T20:30:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Unknown</cap:urgency>
+<cap:severity>Unknown</cap:severity>
+<cap:certainty>Unknown</cap:certainty>
+<cap:areaDesc>Crittenden</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>005035</value>
+<valueName>UGC</valueName>
+<value>ARZ036</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value></value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=AR12665B173F1C.SpecialWeatherStatement.12665B175B3CAR.LZKSPSLZK.72db4f2be68c13b19edacd575754b8b3</id>
+<updated>2023-08-24T16:43:00-05:00</updated>
+<published>2023-08-24T16:43:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Special Weather Statement issued August 24 at 4:43PM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=AR12665B173F1C.SpecialWeatherStatement.12665B175B3CAR.LZKSPSLZK.72db4f2be68c13b19edacd575754b8b3"/>
+<summary>...A strong thunderstorm will impact portions of northeastern Conway County through 515 PM CDT... At 443 PM CDT, Doppler radar was tracking a strong thunderstorm over Lanty, or 11 miles north of Morrilton, moving south at 15 mph. HAZARD...Winds in excess of 40 mph and half inch hail. SOURCE...Radar indicated.</summary>
+<cap:event>Special Weather Statement</cap:event>
+<cap:effective>2023-08-24T16:43:00-05:00</cap:effective>
+<cap:expires>2023-08-24T17:15:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Observed</cap:certainty>
+<cap:areaDesc>Conway</cap:areaDesc>
+<cap:polygon>35.43,-92.79 35.43,-92.56 35.16,-92.54 35.17,-92.82 35.43,-92.79</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>005029</value>
+<valueName>UGC</valueName>
+<value>ARZ031</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value></value>
 </cap:parameter>
 </entry>
 <entry>
@@ -1227,6 +1291,72 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=CA12665B175628.FlashFloodWarning.12665B178828CA.VEFFFSVEF.e9103f3faa8be4eb564daf544361d85c</id>
+<updated>2023-08-24T15:02:00-07:00</updated>
+<published>2023-08-24T15:02:00-07:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Flash Flood Warning issued August 24 at 3:02PM PDT until August 24 at 4:30PM PDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CA12665B175628.FlashFloodWarning.12665B178828CA.VEFFFSVEF.e9103f3faa8be4eb564daf544361d85c"/>
+<summary>...FLASH FLOOD WARNING REMAINS IN EFFECT UNTIL 430 PM PDT THIS AFTERNOON FOR SOUTHEASTERN INYO, SAN BERNARDINO AND SOUTHWESTERN CLARK COUNTIES... At 302 PM PDT, Doppler radar indicated thunderstorms producing heavy rain across the warned area. Flash flooding is ongoing or expected to begin shortly.</summary>
+<cap:event>Flash Flood Warning</cap:event>
+<cap:effective>2023-08-24T15:02:00-07:00</cap:effective>
+<cap:expires>2023-08-24T16:30:00-07:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Immediate</cap:urgency>
+<cap:severity>Severe</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Inyo; San Bernardino</cap:areaDesc>
+<cap:polygon>35.91,-115.94 35.94,-115.75 35.78,-115.5 35.69,-115.6 35.53,-115.64 35.51,-115.77 35.65,-115.83 35.91,-115.94</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>006027 006071</value>
+<valueName>UGC</valueName>
+<value>CAC027 CAC071</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KVEF.FF.W.0086.000000T0000Z-230824T2330Z/
+/00000.0.ER.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=CA12665B173E54.FlashFloodWarning.12665B234DD4CA.VEFFFWVEF.96ece25c5f7cbd1f4e2fd9d02e5874c5</id>
+<updated>2023-08-24T14:41:00-07:00</updated>
+<published>2023-08-24T14:41:00-07:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Flash Flood Warning issued August 24 at 2:41PM PDT until August 24 at 5:45PM PDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CA12665B173E54.FlashFloodWarning.12665B234DD4CA.VEFFFWVEF.96ece25c5f7cbd1f4e2fd9d02e5874c5"/>
+<summary>The National Weather Service in Las Vegas has issued a * Flash Flood Warning for... San Bernardino County in southern California... * Until 545 PM PDT. * At 241 PM PDT, Doppler radar indicated thunderstorms producing heavy rain across the warned area. Flash flooding is ongoing or</summary>
+<cap:event>Flash Flood Warning</cap:event>
+<cap:effective>2023-08-24T14:41:00-07:00</cap:effective>
+<cap:expires>2023-08-24T17:45:00-07:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Immediate</cap:urgency>
+<cap:severity>Severe</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>San Bernardino</cap:areaDesc>
+<cap:polygon>35.53,-115.64 35.69,-115.6 35.73,-115.55 35.57,-115.34 35.48,-115.41 35.53,-115.64</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>006071</value>
+<valueName>UGC</valueName>
+<value>CAC071</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.NEW.KVEF.FF.W.0087.230824T2141Z-230825T0045Z/
+/00000.0.ER.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
+</cap:parameter>
+</entry>
+<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=CA12665B1733C8.RedFlagWarning.12665B249BD0CA.EKARFWEKA.56a36ab6938c6766e44583adcfa6f3bc</id>
 <updated>2023-08-24T14:14:00-07:00</updated>
 <published>2023-08-24T14:14:00-07:00</published>
@@ -1256,39 +1386,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value>/O.CON.KEKA.FW.W.0007.230824T2200Z-230825T0900Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=CA12665B1712F8.FlashFloodWarning.12665B178828CA.VEFFFWVEF.e9103f3faa8be4eb564daf544361d85c</id>
-<updated>2023-08-24T13:30:00-07:00</updated>
-<published>2023-08-24T13:30:00-07:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Flash Flood Warning issued August 24 at 1:30PM PDT until August 24 at 4:30PM PDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CA12665B1712F8.FlashFloodWarning.12665B178828CA.VEFFFWVEF.e9103f3faa8be4eb564daf544361d85c"/>
-<summary>The National Weather Service in Las Vegas has issued a * Flash Flood Warning for... Southeastern Inyo County in south central California... San Bernardino County in southern California... Southwestern Clark County in southern Nevada... * Until 430 PM PDT.</summary>
-<cap:event>Flash Flood Warning</cap:event>
-<cap:effective>2023-08-24T13:30:00-07:00</cap:effective>
-<cap:expires>2023-08-24T16:30:00-07:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Immediate</cap:urgency>
-<cap:severity>Severe</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Inyo; San Bernardino</cap:areaDesc>
-<cap:polygon>35.91,-115.94 35.94,-115.75 35.78,-115.5 35.69,-115.6 35.53,-115.64 35.51,-115.77 35.65,-115.83 35.91,-115.94</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>006027 006071</value>
-<valueName>UGC</valueName>
-<value>CAC027 CAC071</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.NEW.KVEF.FF.W.0086.230824T2030Z-230824T2330Z/
-/00000.0.ER.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -1452,51 +1549,50 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=CO12665B173300.FloodAdvisory.12665B175560CO.GJTFLSGJT.4b2ebd81e4856a5726ba1624ca6e6efa</id>
-<updated>2023-08-24T15:12:00-06:00</updated>
-<published>2023-08-24T15:12:00-06:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=CO12665B173F80.SpecialWeatherStatement.12665B175B3CCO.GJTSPSGJT.e0c4b85e57641aa553e84d44c425d9a9</id>
+<updated>2023-08-24T15:44:00-06:00</updated>
+<published>2023-08-24T15:44:00-06:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Flood Advisory issued August 24 at 3:12PM MDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CO12665B173300.FloodAdvisory.12665B175560CO.GJTFLSGJT.4b2ebd81e4856a5726ba1624ca6e6efa"/>
-<summary>...FLOOD ADVISORY IN EFFECT UNTIL 515 PM MDT THIS AFTERNOON... * WHAT...Flooding caused by excessive rainfall is expected. * WHERE...A portion of southwest Colorado, including the following county, Montezuma. * WHEN...Until 515 PM MDT. * IMPACTS...Minor flooding in low-lying and poor drainage areas.</summary>
-<cap:event>Flood Advisory</cap:event>
-<cap:effective>2023-08-24T15:12:00-06:00</cap:effective>
-<cap:expires>2023-08-24T16:00:00-06:00</cap:expires>
+<title>Special Weather Statement issued August 24 at 3:44PM MDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CO12665B173F80.SpecialWeatherStatement.12665B175B3CCO.GJTSPSGJT.e0c4b85e57641aa553e84d44c425d9a9"/>
+<summary>...A strong thunderstorm will impact portions of southwestern Mesa County through 415 PM MDT... At 343 PM MDT, Doppler radar was tracking a strong thunderstorm 23 miles north of Nucla, or 33 miles west of Montrose, moving north at 25 mph. HAZARD...Winds in excess of 40 mph and pea size hail. Torrential</summary>
+<cap:event>Special Weather Statement</cap:event>
+<cap:effective>2023-08-24T15:44:00-06:00</cap:effective>
+<cap:expires>2023-08-24T16:15:00-06:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
 <cap:category>Met</cap:category>
 <cap:urgency>Expected</cap:urgency>
 <cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Montezuma</cap:areaDesc>
-<cap:polygon>37.63,-108.39 37.57,-108.34 37.49,-108.37 37.54,-108.48 37.63,-108.39</cap:polygon>
+<cap:certainty>Observed</cap:certainty>
+<cap:areaDesc>Central Gunnison and Uncompahgre River Basin; Grand Valley; Uncompahgre Plateau, Dallas Divide</cap:areaDesc>
+<cap:polygon>38.51,-108.39 38.51,-108.49 38.71,-108.7 38.82,-108.4 38.51,-108.39</cap:polygon>
 <cap:geocode>
 <valueName>FIPS6</valueName>
-<value>008083</value>
+<value>008029 008077 008085 008091</value>
 <valueName>UGC</valueName>
-<value>COC083</value>
+<value>COZ006 COZ011 COZ017</value>
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
-<value>/O.NEW.KGJT.FA.Y.0050.230824T2112Z-230824T2315Z/
-/00000.N.ER.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
+<value></value>
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=CO12665B16F4E4.FloodWatch.12665B175560CO.BOUFFABOU.8735ffe5a61537c7f8e8c38b78ea0573</id>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=CO12665B16F4E4.FloodWatch.12665B175B3CCO.BOUFFABOU.8735ffe5a61537c7f8e8c38b78ea0573</id>
 <updated>2023-08-24T13:53:00-06:00</updated>
 <published>2023-08-24T13:53:00-06:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
 <title>Flood Watch issued August 24 at 1:53PM MDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CO12665B16F4E4.FloodWatch.12665B175560CO.BOUFFABOU.8735ffe5a61537c7f8e8c38b78ea0573"/>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CO12665B16F4E4.FloodWatch.12665B175B3CCO.BOUFFABOU.8735ffe5a61537c7f8e8c38b78ea0573"/>
 <summary>...FLOOD WATCH IN EFFECT THROUGH EARLY SATURDAY MORNING... * WHAT...Flash flooding caused by excessive rainfall is possible. * WHERE...Portions of central and north central Colorado, including the following areas, in central Colorado, Grand and Summit Counties Below 9000 Feet. In north central Colorado, Jackson County Below 9000 Feet and South and East Jackson/Larimer/North</summary>
 <cap:event>Flood Watch</cap:event>
 <cap:effective>2023-08-24T13:53:00-06:00</cap:effective>
-<cap:expires>2023-08-24T16:00:00-06:00</cap:expires>
+<cap:expires>2023-08-24T16:15:00-06:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
 <cap:category>Met</cap:category>
@@ -1518,18 +1614,18 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=CO12665B16F4E4.FloodWatch.12665B175560CO.BOUFFABOU.c7fa7f0320568b06c548ed657ed2b869</id>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=CO12665B16F4E4.FloodWatch.12665B175B3CCO.BOUFFABOU.c7fa7f0320568b06c548ed657ed2b869</id>
 <updated>2023-08-24T13:53:00-06:00</updated>
 <published>2023-08-24T13:53:00-06:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
 <title>Flood Watch issued August 24 at 1:53PM MDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CO12665B16F4E4.FloodWatch.12665B175560CO.BOUFFABOU.c7fa7f0320568b06c548ed657ed2b869"/>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CO12665B16F4E4.FloodWatch.12665B175B3CCO.BOUFFABOU.c7fa7f0320568b06c548ed657ed2b869"/>
 <summary>...FLOOD WATCH IN EFFECT FROM FRIDAY MORNING THROUGH SATURDAY MORNING... * WHAT...Flash flooding caused by excessive rainfall is possible. * WHERE...Portions of central, east central, north central, and northeast Colorado, including the following areas, in central Colorado, Jefferson and West Douglas Counties Above 6000</summary>
 <cap:event>Flood Watch</cap:event>
 <cap:effective>2023-08-24T13:53:00-06:00</cap:effective>
-<cap:expires>2023-08-24T16:00:00-06:00</cap:expires>
+<cap:expires>2023-08-24T16:15:00-06:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
 <cap:category>Met</cap:category>
@@ -1548,38 +1644,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <valueName>VTEC</valueName>
 <value>/O.NEW.KBOU.FA.A.0012.230825T1500Z-230826T1800Z/
 /00000.0.ER.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=CO12665B08176C.AirQualityAlert.12665B175560CO.BOUAQABOU.1cf776118c3db3569458730525db3fe1</id>
-<updated>2023-08-23T16:11:00-06:00</updated>
-<published>2023-08-23T16:11:00-06:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Air Quality Alert issued August 23 at 4:11PM MDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CO12665B08176C.AirQualityAlert.12665B175560CO.BOUAQABOU.1cf776118c3db3569458730525db3fe1"/>
-<summary>...OZONE ACTION DAY ALERT FROM 400 PM WEDNESDAY UNTIL 400 PM THURSDAY... The Colorado Department of Public Health and Environment has issued the following... WHAT...Ozone Action Day Alert. WHERE...Douglas, Jefferson, Denver, western Arapahoe, western</summary>
-<cap:event>Air Quality Alert</cap:event>
-<cap:effective>2023-08-23T16:11:00-06:00</cap:effective>
-<cap:expires>2023-08-24T16:00:00-06:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Unknown</cap:urgency>
-<cap:severity>Unknown</cap:severity>
-<cap:certainty>Unknown</cap:certainty>
-<cap:areaDesc>Adams; Arapahoe; Boulder; Broomfield; Denver; Douglas; Jefferson; Larimer; Weld</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>008001 008005 008013 008014 008031 008035 008059 008069 008123</value>
-<valueName>UGC</valueName>
-<value>COC001 COC005 COC013 COC014 COC031 COC035 COC059 COC069 COC123</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value></value>
 </cap:parameter>
 </entry>
 <entry>
@@ -1841,227 +1905,35 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=GA12665B173A6C.SevereThunderstormWarning.12665B175560GA.FFCSVSFFC.c233c9040c9346e9871ed0e05c0b8217</id>
-<updated>2023-08-24T17:31:00-04:00</updated>
-<published>2023-08-24T17:31:00-04:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=GA12665B17568C.SpecialWeatherStatement.12665B176118GA.GSPSPSGSP.22567ee39377da3df9ba94115e79d1a3</id>
+<updated>2023-08-24T18:03:00-04:00</updated>
+<published>2023-08-24T18:03:00-04:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Severe Thunderstorm Warning issued August 24 at 5:31PM EDT until August 24 at 6:00PM EDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=GA12665B173A6C.SevereThunderstormWarning.12665B175560GA.FFCSVSFFC.c233c9040c9346e9871ed0e05c0b8217"/>
-<summary>...A SEVERE THUNDERSTORM WARNING REMAINS IN EFFECT UNTIL 600 PM EDT FOR SOUTHWESTERN WALKER AND SOUTHWESTERN DADE COUNTIES... At 531 PM EDT, a severe thunderstorm was located over Rising Fawn, or 8 miles south of Trenton, moving southeast at 15 mph. HAZARD...60 mph wind gusts. SOURCE...Radar indicated.</summary>
-<cap:event>Severe Thunderstorm Warning</cap:event>
-<cap:effective>2023-08-24T17:31:00-04:00</cap:effective>
-<cap:expires>2023-08-24T18:00:00-04:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Immediate</cap:urgency>
-<cap:severity>Severe</cap:severity>
-<cap:certainty>Observed</cap:certainty>
-<cap:areaDesc>Dade; Walker</cap:areaDesc>
-<cap:polygon>34.84,-85.48 34.75,-85.41 34.59,-85.27 34.59,-85.53 34.87,-85.59 34.84,-85.48</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>013083 013295</value>
-<valueName>UGC</valueName>
-<value>GAC083 GAC295</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KFFC.SV.W.0536.000000T0000Z-230824T2200Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=GA12665B173A6C.SevereWeatherStatement.12665B175560GA.FFCSVSFFC.a617fd32d17ad9536872d0a3632f6eb8</id>
-<updated>2023-08-24T17:31:00-04:00</updated>
-<published>2023-08-24T17:31:00-04:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Severe Weather Statement issued August 24 at 5:31PM EDT until August 24 at 6:00PM EDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=GA12665B173A6C.SevereWeatherStatement.12665B175560GA.FFCSVSFFC.a617fd32d17ad9536872d0a3632f6eb8"/>
-<summary>...A SEVERE THUNDERSTORM WARNING REMAINS IN EFFECT UNTIL 600 PM EDT FOR SOUTHWESTERN WALKER AND SOUTHWESTERN DADE COUNTIES... At 531 PM EDT, a severe thunderstorm was located over Rising Fawn, or 8 miles south of Trenton, moving southeast at 15 mph. HAZARD...60 mph wind gusts. SOURCE...Radar indicated.</summary>
-<cap:event>Severe Weather Statement</cap:event>
-<cap:effective>2023-08-24T17:31:00-04:00</cap:effective>
-<cap:expires>2023-08-24T18:00:00-04:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Immediate</cap:urgency>
-<cap:severity>Severe</cap:severity>
-<cap:certainty>Observed</cap:certainty>
-<cap:areaDesc>Dade; Walker</cap:areaDesc>
-<cap:polygon>34.84,-85.48 34.75,-85.41 34.59,-85.27 34.59,-85.53 34.87,-85.59 34.84,-85.48</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>013083 013295</value>
-<valueName>UGC</valueName>
-<value>GAC083 GAC295</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KFFC.SV.W.0536.000000T0000Z-230824T2200Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=GA12665B1738DC.SevereWeatherStatement.12665B173CC4GA.FFCSVSFFC.34fa3947743bbc4d73d483f83cba96e6</id>
-<updated>2023-08-24T17:27:00-04:00</updated>
-<published>2023-08-24T17:27:00-04:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Severe Weather Statement issued August 24 at 5:27PM EDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=GA12665B1738DC.SevereWeatherStatement.12665B173CC4GA.FFCSVSFFC.34fa3947743bbc4d73d483f83cba96e6"/>
-<summary>...THE SEVERE THUNDERSTORM WARNING FOR SOUTHERN BANKS...NORTHEASTERN HALL AND NORTHEASTERN JACKSON COUNTIES WILL EXPIRE AT 530 PM EDT... The storms which prompted the warning have weakened below severe limits, and have exited the warned area. Therefore, the warning will be allowed to expire.</summary>
-<cap:event>Severe Weather Statement</cap:event>
-<cap:effective>2023-08-24T17:27:00-04:00</cap:effective>
-<cap:expires>2023-08-24T17:37:00-04:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Immediate</cap:urgency>
-<cap:severity>Severe</cap:severity>
-<cap:certainty>Observed</cap:certainty>
-<cap:areaDesc>Banks</cap:areaDesc>
-<cap:polygon>34.4,-83.65 34.31,-83.55 34.28,-83.43 34.31,-83.39 34.25,-83.34 34.23,-83.35 34.22,-83.47 34.23,-83.57 34.32,-83.7 34.42,-83.75 34.45,-83.76 34.49,-83.76 34.49,-83.71 34.4,-83.65</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>013011</value>
-<valueName>UGC</valueName>
-<value>GAC011</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.EXP.KFFC.SV.W.0535.000000T0000Z-230824T2130Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=GA12665B1738DC.SevereWeatherStatement.12665B175560GA.FFCSVSFFC.7d251a403f905fa4a7ad5d9ce63841b7</id>
-<updated>2023-08-24T17:27:00-04:00</updated>
-<published>2023-08-24T17:27:00-04:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Severe Weather Statement issued August 24 at 5:27PM EDT until August 24 at 6:00PM EDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=GA12665B1738DC.SevereWeatherStatement.12665B175560GA.FFCSVSFFC.7d251a403f905fa4a7ad5d9ce63841b7"/>
-<summary>...THE SEVERE THUNDERSTORM WARNING FOR SOUTHERN BANKS...NORTHEASTERN HALL AND NORTHEASTERN JACKSON COUNTIES WILL EXPIRE AT 530 PM EDT... The storms which prompted the warning have weakened below severe limits, and have exited the warned area. Therefore, the warning will be allowed to expire.</summary>
-<cap:event>Severe Weather Statement</cap:event>
-<cap:effective>2023-08-24T17:27:00-04:00</cap:effective>
-<cap:expires>2023-08-24T18:00:00-04:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Immediate</cap:urgency>
-<cap:severity>Severe</cap:severity>
-<cap:certainty>Observed</cap:certainty>
-<cap:areaDesc>Hall; Jackson</cap:areaDesc>
-<cap:polygon>34.4,-83.65 34.31,-83.55 34.28,-83.43 34.31,-83.39 34.25,-83.34 34.23,-83.35 34.22,-83.47 34.23,-83.57 34.32,-83.7 34.42,-83.75 34.45,-83.76 34.49,-83.76 34.49,-83.71 34.4,-83.65</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>013139 013157</value>
-<valueName>UGC</valueName>
-<value>GAC139 GAC157</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.EXP.KFFC.SV.W.0535.000000T0000Z-230824T2130Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=GA12665B173878.SpecialWeatherStatement.12665B175560GA.FFCSPSFFC.9976b3fcd736d7bf535e633b4e953415</id>
-<updated>2023-08-24T17:26:00-04:00</updated>
-<published>2023-08-24T17:26:00-04:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Special Weather Statement issued August 24 at 5:26PM EDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=GA12665B173878.SpecialWeatherStatement.12665B175560GA.FFCSPSFFC.9976b3fcd736d7bf535e633b4e953415"/>
-<summary>...A strong thunderstorm will impact portions of southeastern Lumpkin, southwestern White and northern Hall Counties through 600 PM EDT... At 526 PM EDT, a strong thunderstorm was near Clermont, or 9 miles southeast of Dahlonega, moving southwest at 15 mph. HAZARD...40 to 50 mph wind, frequent cloud to ground lightning and</summary>
+<title>Special Weather Statement issued August 24 at 6:03PM EDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=GA12665B17568C.SpecialWeatherStatement.12665B176118GA.GSPSPSGSP.22567ee39377da3df9ba94115e79d1a3"/>
+<summary>...A strong thunderstorm will impact portions of southwestern Elbert County through 630 PM EDT... At 603 PM EDT, Doppler radar was tracking a strong thunderstorm 7 miles southwest of Elberton, or 4 miles east of Carlton, moving southeast at 25 mph. HAZARD...Wind gusts up to 40 mph and pea size hail.</summary>
 <cap:event>Special Weather Statement</cap:event>
-<cap:effective>2023-08-24T17:26:00-04:00</cap:effective>
-<cap:expires>2023-08-24T18:00:00-04:00</cap:expires>
+<cap:effective>2023-08-24T18:03:00-04:00</cap:effective>
+<cap:expires>2023-08-24T18:30:00-04:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
 <cap:category>Met</cap:category>
 <cap:urgency>Expected</cap:urgency>
 <cap:severity>Minor</cap:severity>
 <cap:certainty>Observed</cap:certainty>
-<cap:areaDesc>Hall; Lumpkin; White</cap:areaDesc>
-<cap:polygon>34.4,-83.7 34.26,-83.95 34.27,-83.95 34.29,-83.93 34.29,-83.94 34.3,-83.93 34.3,-83.95 34.33,-83.95 34.36,-83.98 34.39,-83.98 34.4,-83.97 34.42,-83.98 34.46,-84.1 34.47,-84.1 34.48,-84.12 34.57,-83.8 34.4,-83.7</cap:polygon>
+<cap:areaDesc>Elbert</cap:areaDesc>
+<cap:polygon>34.01,-82.91 34.01,-82.94 34.03,-82.94 34.04,-82.95 34.04,-82.98 34.08,-83 34.08,-83.01 34.1,-83.04 34.11,-83.03 34.12,-83.04 34.15,-82.94 33.99,-82.82 33.98,-82.86 34.01,-82.91</cap:polygon>
 <cap:geocode>
 <valueName>FIPS6</valueName>
-<value>013139 013187 013311</value>
+<value>013105</value>
 <valueName>UGC</valueName>
-<value>GAZ015 GAZ016 GAZ023</value>
+<value>GAZ029</value>
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value></value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=GA12665B1731D4.SpecialWeatherStatement.12665B173FE4GA.FFCSPSFFC.a519a1551bdc59cfbbc51b9198c568f8</id>
-<updated>2023-08-24T17:09:00-04:00</updated>
-<published>2023-08-24T17:09:00-04:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Special Weather Statement issued August 24 at 5:09PM EDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=GA12665B1731D4.SpecialWeatherStatement.12665B173FE4GA.FFCSPSFFC.a519a1551bdc59cfbbc51b9198c568f8"/>
-<summary>...A strong thunderstorm will impact portions of southwestern Walker and central Dade Counties through 545 PM EDT... At 509 PM EDT, a strong thunderstorm was over Cloudland Canyon State Park, or near Trenton, moving south at 25 mph. HAZARD...40 to 50 mph wind, frequent cloud to ground lightning and heavy rain.</summary>
-<cap:event>Special Weather Statement</cap:event>
-<cap:effective>2023-08-24T17:09:00-04:00</cap:effective>
-<cap:expires>2023-08-24T17:45:00-04:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Observed</cap:certainty>
-<cap:areaDesc>Dade; Walker</cap:areaDesc>
-<cap:polygon>34.92,-85.44 34.63,-85.17 34.59,-85.31 34.59,-85.53 34.88,-85.58 34.92,-85.44</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>013083 013295</value>
-<valueName>UGC</valueName>
-<value>GAZ001 GAZ002</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value></value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=GA12665B172FE0.SevereThunderstormWarning.12665B175560GA.GSPSVRGSP.01be5f9760e928789cbe93ed53779f53</id>
-<updated>2023-08-24T17:04:00-04:00</updated>
-<published>2023-08-24T17:04:00-04:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Severe Thunderstorm Warning issued August 24 at 5:04PM EDT until August 24 at 6:00PM EDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=GA12665B172FE0.SevereThunderstormWarning.12665B175560GA.GSPSVRGSP.01be5f9760e928789cbe93ed53779f53"/>
-<summary>The National Weather Service in Greenville-Spartanburg has issued a * Severe Thunderstorm Warning for... Elbert County in northeastern Georgia... Hart County in northeastern Georgia... Southwestern Anderson County in Upstate South Carolina... Southwestern Abbeville County in Upstate South Carolina...</summary>
-<cap:event>Severe Thunderstorm Warning</cap:event>
-<cap:effective>2023-08-24T17:04:00-04:00</cap:effective>
-<cap:expires>2023-08-24T18:00:00-04:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Immediate</cap:urgency>
-<cap:severity>Severe</cap:severity>
-<cap:certainty>Observed</cap:certainty>
-<cap:areaDesc>Elbert; Hart</cap:areaDesc>
-<cap:polygon>33.98,-82.61 33.97,-82.64 33.99,-82.65 33.97,-82.78 33.99,-82.83 33.98,-82.86 34.01,-82.91 34.01,-82.94 34.03,-82.94 34.04,-82.98 34.07,-83 34.42,-83.09 34.48,-83.06 34.49,-83.04 34.47,-83 34.52,-82.95 34.54,-82.9 34.08,-82.51 34.01,-82.6 33.96,-82.57 33.98,-82.61</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>013105 013147</value>
-<valueName>UGC</valueName>
-<value>GAC105 GAC147</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.NEW.KGSP.SV.W.0328.230824T2104Z-230824T2200Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -3155,38 +3027,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=KS12665B1739A4.SpecialWeatherStatement.12665B173FE4KS.TOPSPSTOP.e7fa54d1aad98b4a49cf1c24d5f9247b</id>
-<updated>2023-08-24T16:29:00-05:00</updated>
-<published>2023-08-24T16:29:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Special Weather Statement issued August 24 at 4:29PM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=KS12665B1739A4.SpecialWeatherStatement.12665B173FE4KS.TOPSPSTOP.e7fa54d1aad98b4a49cf1c24d5f9247b"/>
-<summary>...A strong thunderstorm will impact portions of northeastern Anderson County through 445 PM CDT... At 429 PM CDT, Doppler radar was tracking a strong thunderstorm 4 miles east of Garnett, moving east at 5 mph. HAZARD...Winds in excess of 40 mph. SOURCE...Radar indicated.</summary>
-<cap:event>Special Weather Statement</cap:event>
-<cap:effective>2023-08-24T16:29:00-05:00</cap:effective>
-<cap:expires>2023-08-24T16:45:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Observed</cap:certainty>
-<cap:areaDesc>Anderson</cap:areaDesc>
-<cap:polygon>38.26,-95.07 38.19,-95.08 38.2,-95.27 38.37,-95.28 38.39,-95.12 38.39,-95.07 38.26,-95.06 38.26,-95.07</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>020003</value>
-<valueName>UGC</valueName>
-<value>KSZ059</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value></value>
-</cap:parameter>
-</entry>
-<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=KS12665B16F41C.ExcessiveHeatWarning.12665B32CCA0KS.EAXNPWEAX.7653dd9903950c07aafed7b44b05f0c5</id>
 <updated>2023-08-24T14:51:00-05:00</updated>
 <published>2023-08-24T14:51:00-05:00</published>
@@ -3831,63 +3671,31 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=LA12665B1738DC.SpecialWeatherStatement.12665B175560LA.LCHSPSLCH.f15ab0c1d2922ab267c7384fcf4ec646</id>
-<updated>2023-08-24T16:27:00-05:00</updated>
-<published>2023-08-24T16:27:00-05:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=LA12665B17423C.SpecialWeatherStatement.12665B175B3CLA.LCHSPSLCH.7d377a449adf10e8efe44c0fc483b75f</id>
+<updated>2023-08-24T16:51:00-05:00</updated>
+<published>2023-08-24T16:51:00-05:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Special Weather Statement issued August 24 at 4:27PM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=LA12665B1738DC.SpecialWeatherStatement.12665B175560LA.LCHSPSLCH.f15ab0c1d2922ab267c7384fcf4ec646"/>
-<summary>...A strong thunderstorm will impact portions of south central Avoyelles and north central St. Landry Parishes through 500 PM CDT... At 427 PM CDT, Doppler radar was tracking a strong thunderstorm near Goudeau, or 7 miles northeast of Morrow, moving southwest at 20 mph. HAZARD...Winds in excess of 40 mph and pea size hail. SOURCE...Radar indicated.</summary>
+<title>Special Weather Statement issued August 24 at 4:51PM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=LA12665B17423C.SpecialWeatherStatement.12665B175B3CLA.LCHSPSLCH.7d377a449adf10e8efe44c0fc483b75f"/>
+<summary>...A strong thunderstorm will impact portions of southeastern Beauregard, north central Calcasieu and western Allen Parishes through 515 PM CDT... At 451 PM CDT, Doppler radar was tracking a strong thunderstorm near Ragley, moving southwest at 15 mph. HAZARD...Winds in excess of 30 mph.</summary>
 <cap:event>Special Weather Statement</cap:event>
-<cap:effective>2023-08-24T16:27:00-05:00</cap:effective>
-<cap:expires>2023-08-24T17:00:00-05:00</cap:expires>
+<cap:effective>2023-08-24T16:51:00-05:00</cap:effective>
+<cap:expires>2023-08-24T17:15:00-05:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
 <cap:category>Met</cap:category>
 <cap:urgency>Expected</cap:urgency>
 <cap:severity>Minor</cap:severity>
 <cap:certainty>Observed</cap:certainty>
-<cap:areaDesc>Avoyelles; St. Landry</cap:areaDesc>
-<cap:polygon>30.98,-91.9 30.86,-91.84 30.67,-92.14 30.89,-92.21 30.98,-91.9</cap:polygon>
+<cap:areaDesc>Allen; Beauregard; Northern Calcasieu</cap:areaDesc>
+<cap:polygon>30.67,-93.25 30.53,-93.03 30.34,-93.3 30.5,-93.49 30.67,-93.25</cap:polygon>
 <cap:geocode>
 <valueName>FIPS6</valueName>
-<value>022009 022097</value>
+<value>022003 022011 022019</value>
 <valueName>UGC</valueName>
-<value>LAZ029 LAZ033</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value></value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=LA12665B173814.SpecialWeatherStatement.12665B175560LA.LCHSPSLCH.e7ff2723382014280b3e6527af5a23da</id>
-<updated>2023-08-24T16:25:00-05:00</updated>
-<published>2023-08-24T16:25:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Special Weather Statement issued August 24 at 4:25PM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=LA12665B173814.SpecialWeatherStatement.12665B175560LA.LCHSPSLCH.e7ff2723382014280b3e6527af5a23da"/>
-<summary>...A strong thunderstorm will impact portions of southwestern Calcasieu Parish through 500 PM CDT... At 425 PM CDT, Doppler radar was tracking a strong thunderstorm near Edgerly, or near Vinton, moving southwest at 15 mph. HAZARD...Winds in excess of 40 mph. SOURCE...Radar indicated.</summary>
-<cap:event>Special Weather Statement</cap:event>
-<cap:effective>2023-08-24T16:25:00-05:00</cap:effective>
-<cap:expires>2023-08-24T17:00:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Observed</cap:certainty>
-<cap:areaDesc>Northern Calcasieu; Southern Calcasieu</cap:areaDesc>
-<cap:polygon>30.4,-93.63 30.28,-93.37 30.1,-93.46 30.23,-93.77 30.4,-93.63</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>022019</value>
-<valueName>UGC</valueName>
-<value>LAZ141 LAZ241</value>
+<value>LAZ030 LAZ031 LAZ141</value>
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
@@ -4581,6 +4389,38 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=MI12665B174368.SevereThunderstormWarning.12665B177C70MI.GRRSVRGRR.873b068e3fd63514083e8ee190db2316</id>
+<updated>2023-08-24T17:54:00-04:00</updated>
+<published>2023-08-24T17:54:00-04:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Severe Thunderstorm Warning issued August 24 at 5:54PM EDT until August 24 at 7:00PM EDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MI12665B174368.SevereThunderstormWarning.12665B177C70MI.GRRSVRGRR.873b068e3fd63514083e8ee190db2316"/>
+<summary>The National Weather Service in Grand Rapids has issued a * Severe Thunderstorm Warning for... Clare County in central Michigan... * Until 700 PM EDT. * At 553 PM EDT, a severe thunderstorm was located near Harrison, or 9 miles northwest of Clare, moving east at 35 mph.</summary>
+<cap:event>Severe Thunderstorm Warning</cap:event>
+<cap:effective>2023-08-24T17:54:00-04:00</cap:effective>
+<cap:expires>2023-08-24T19:00:00-04:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Immediate</cap:urgency>
+<cap:severity>Severe</cap:severity>
+<cap:certainty>Observed</cap:certainty>
+<cap:areaDesc>Clare</cap:areaDesc>
+<cap:polygon>44.09,-84.61 43.82,-84.61 43.81,-84.66 43.81,-84.75 43.88,-85.09 44.11,-85.08 44.09,-84.61</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>026035</value>
+<valueName>UGC</valueName>
+<value>MIC035</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.NEW.KGRR.SV.W.0071.230824T2154Z-230824T2300Z/</value>
+</cap:parameter>
+</entry>
+<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=MI12665B16EF08.HeatAdvisory.12665B236350MI.GRRNPWGRR.9524fa0da98f84c5bb0685f3c7e077fb</id>
 <updated>2023-08-24T15:38:00-04:00</updated>
 <published>2023-08-24T15:38:00-04:00</published>
@@ -5191,6 +5031,102 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=MS12665B1741D8.AirQualityAlert.12665B236F08MS.MEGAQAMEG.c01a8e733f4f755149a2b37d3275621d</id>
+<updated>2023-08-24T16:50:00-05:00</updated>
+<published>2023-08-24T16:50:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Air Quality Alert issued August 24 at 4:50PM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MS12665B1741D8.AirQualityAlert.12665B236F08MS.MEGAQAMEG.c01a8e733f4f755149a2b37d3275621d"/>
+<summary>...Code Orange Ozone Health Advisory in effect until Sunset... The Shelby County Health Department has issued a Code Orange Ozone Health Advisory effective for Shelby County Tennessee, Crittenden County Arkansas, and DeSoto County Mississippi, including the city of Memphis that will remain in effect until sunset. This ozone health advisory is due to monitored ozone values that are unhealthy for</summary>
+<cap:event>Air Quality Alert</cap:event>
+<cap:effective>2023-08-24T16:50:00-05:00</cap:effective>
+<cap:expires>2023-08-24T20:30:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Unknown</cap:urgency>
+<cap:severity>Unknown</cap:severity>
+<cap:certainty>Unknown</cap:certainty>
+<cap:areaDesc>DeSoto</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>028033</value>
+<valueName>UGC</valueName>
+<value>MSZ001</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value></value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=MS12665B174048.SpecialWeatherStatement.12665B175B3CMS.JANSPSJAN.7388ef719d16b53ca2c34021a42c077d</id>
+<updated>2023-08-24T16:46:00-05:00</updated>
+<published>2023-08-24T16:46:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Special Weather Statement issued August 24 at 4:46PM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MS12665B174048.SpecialWeatherStatement.12665B175B3CMS.JANSPSJAN.7388ef719d16b53ca2c34021a42c077d"/>
+<summary>...A strong thunderstorm will impact portions of south central Hinds and north central Copiah Counties through 515 PM CDT... At 446 PM CDT, Doppler radar was tracking a strong thunderstorm near Dry Grove, or 8 miles northwest of Crystal Springs, moving southwest at 10 mph. HAZARD...Winds in excess of 40 mph.</summary>
+<cap:event>Special Weather Statement</cap:event>
+<cap:effective>2023-08-24T16:46:00-05:00</cap:effective>
+<cap:expires>2023-08-24T17:15:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Observed</cap:certainty>
+<cap:areaDesc>Copiah; Hinds</cap:areaDesc>
+<cap:polygon>32.18,-90.52 32.1,-90.37 31.93,-90.43 32.02,-90.62 32.18,-90.52</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>028029 028049</value>
+<valueName>UGC</valueName>
+<value>MSZ048 MSZ054</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value></value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=MS12665B173B34.SpecialWeatherStatement.12665B175B3CMS.JANSPSJAN.918a64d5827887cc10fe0986fdadf958</id>
+<updated>2023-08-24T16:33:00-05:00</updated>
+<published>2023-08-24T16:33:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Special Weather Statement issued August 24 at 4:33PM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MS12665B173B34.SpecialWeatherStatement.12665B175B3CMS.JANSPSJAN.918a64d5827887cc10fe0986fdadf958"/>
+<summary>...A strong thunderstorm will impact portions of central Rankin County through 515 PM CDT... At 433 PM CDT, Doppler radar was tracking a strong thunderstorm near Brandon, moving southwest at 10 mph. HAZARD...Winds in excess of 40 mph. SOURCE...Radar indicated.</summary>
+<cap:event>Special Weather Statement</cap:event>
+<cap:effective>2023-08-24T16:33:00-05:00</cap:effective>
+<cap:expires>2023-08-24T17:15:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Observed</cap:certainty>
+<cap:areaDesc>Rankin</cap:areaDesc>
+<cap:polygon>32.36,-90.05 32.29,-89.94 32.18,-90.01 32.24,-90.18 32.36,-90.05</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>028121</value>
+<valueName>UGC</valueName>
+<value>MSZ049</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value></value>
+</cap:parameter>
+</entry>
+<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=MS12665B173A6C.SpecialWeatherStatement.12665B175B3CMS.JANSPSJAN.f902053f09a3c92794d850d68f77dc06</id>
 <updated>2023-08-24T16:31:00-05:00</updated>
 <published>2023-08-24T16:31:00-05:00</published>
@@ -5649,6 +5585,102 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=NC12665B1744F8.SpecialWeatherStatement.12665B177C70NC.RAHSPSRAH.f7d0f84e2dfac78eee945f894016d524</id>
+<updated>2023-08-24T17:58:00-04:00</updated>
+<published>2023-08-24T17:58:00-04:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Special Weather Statement issued August 24 at 5:58PM EDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=NC12665B1744F8.SpecialWeatherStatement.12665B177C70NC.RAHSPSRAH.f7d0f84e2dfac78eee945f894016d524"/>
+<summary>...Strong thunderstorms will impact portions of Forsyth County through 700 PM EDT... At 557 PM EDT, Doppler radar was tracking strong thunderstorms along a line extending from Pinnacle to near East Bend to Buck Shoals. Movement was southeast at 15 mph. HAZARD...Winds in excess of 40 mph, pea size hail, and heavy rain.</summary>
+<cap:event>Special Weather Statement</cap:event>
+<cap:effective>2023-08-24T17:58:00-04:00</cap:effective>
+<cap:expires>2023-08-24T19:00:00-04:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Observed</cap:certainty>
+<cap:areaDesc>Forsyth</cap:areaDesc>
+<cap:polygon>36.11,-80.51 36.12,-80.46 36.14,-80.44 36.21,-80.45 36.22,-80.43 36.24,-80.45 36.26,-80.45 36.26,-80.12 36.03,-80.19 36.02,-80.21 36,-80.22 36,-80.32 35.97,-80.4 35.99,-80.42 36.01,-80.42 36.06,-80.46 36.04,-80.49 36.05,-80.51 36.09,-80.52 36.11,-80.51</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>037067</value>
+<valueName>UGC</valueName>
+<value>NCZ021</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value></value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=NC12665B174174.SpecialWeatherStatement.12665B176118NC.RNKSPSRNK.dd6ee665aefa03d57908c06cd9ad8b22</id>
+<updated>2023-08-24T17:49:00-04:00</updated>
+<published>2023-08-24T17:49:00-04:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Special Weather Statement issued August 24 at 5:49PM EDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=NC12665B174174.SpecialWeatherStatement.12665B176118NC.RNKSPSRNK.dd6ee665aefa03d57908c06cd9ad8b22"/>
+<summary>...A STRONG THUNDERSTORM WILL IMPACT NORTHEASTERN STOKES...NORTHWESTERN ROCKINGHAM...SOUTHWESTERN HENRY AND PATRICK COUNTIES THROUGH 630 PM EDT... At 548 PM EDT, Doppler radar was tracking a strong thunderstorm near Stuart, moving southeast at 20 mph. HAZARD...Wind gusts up to 50 mph and pea size hail.</summary>
+<cap:event>Special Weather Statement</cap:event>
+<cap:effective>2023-08-24T17:49:00-04:00</cap:effective>
+<cap:expires>2023-08-24T18:30:00-04:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Observed</cap:certainty>
+<cap:areaDesc>Rockingham; Stokes</cap:areaDesc>
+<cap:polygon>36.68,-80.46 36.84,-80.23 36.61,-79.91 36.37,-80.03 36.68,-80.46</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>037157 037169</value>
+<valueName>UGC</valueName>
+<value>NCZ004 NCZ005</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value></value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=NC12665B173E54.SpecialWeatherStatement.12665B175B3CNC.RNKSPSRNK.e237c5476cbfa485b8afd37409065e0a</id>
+<updated>2023-08-24T17:41:00-04:00</updated>
+<published>2023-08-24T17:41:00-04:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Special Weather Statement issued August 24 at 5:41PM EDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=NC12665B173E54.SpecialWeatherStatement.12665B175B3CNC.RNKSPSRNK.e237c5476cbfa485b8afd37409065e0a"/>
+<summary>...A STRONG THUNDERSTORM WILL IMPACT SOUTHEASTERN SURRY AND YADKIN COUNTIES THROUGH 615 PM EDT... At 541 PM EDT, Doppler radar was tracking a strong thunderstorm over Boonville, moving southeast at 20 mph. HAZARD...Wind gusts up to 50 mph and pea size hail. SOURCE...Radar indicated.</summary>
+<cap:event>Special Weather Statement</cap:event>
+<cap:effective>2023-08-24T17:41:00-04:00</cap:effective>
+<cap:expires>2023-08-24T18:15:00-04:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Observed</cap:certainty>
+<cap:areaDesc>Surry; Yadkin</cap:areaDesc>
+<cap:polygon>36.05,-80.63 36.22,-80.86 36.35,-80.71 36.26,-80.45 36.24,-80.45 36.23,-80.43 36.22,-80.43 36.21,-80.45 36.17,-80.44 36.14,-80.44 36.12,-80.46 36.11,-80.5 36.09,-80.51 36.05,-80.58 36.05,-80.63</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>037171 037197</value>
+<valueName>UGC</valueName>
+<value>NCZ003 NCZ020</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value></value>
+</cap:parameter>
+</entry>
+<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=NC12665B16CD0C.BeachHazardsStatement.12665B233C40NC.AKQCFWAKQ.9a3b59b6b791a876fe4aa944634cec97</id>
 <updated>2023-08-24T14:51:00-04:00</updated>
 <published>2023-08-24T14:51:00-04:00</published>
@@ -5713,81 +5745,49 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=ND12665B173940.SevereWeatherStatement.12665B236350ND.BISSVSBIS.b39396a5196ef9719a1e531dc5c013da</id>
-<updated>2023-08-24T16:28:00-05:00</updated>
-<published>2023-08-24T16:28:00-05:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=ND12665B174430.SevereThunderstormWarning.12665B175B3CND.FGFSVSFGF.0547982aec0b1b47a849610558fc9a0b</id>
+<updated>2023-08-24T16:56:00-05:00</updated>
+<published>2023-08-24T16:56:00-05:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Severe Weather Statement issued August 24 at 4:28PM CDT until August 24 at 8:00PM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=ND12665B173940.SevereWeatherStatement.12665B236350ND.BISSVSBIS.b39396a5196ef9719a1e531dc5c013da"/>
-<summary>...THE SEVERE THUNDERSTORM WARNING FOR NORTH CENTRAL MCLEAN COUNTY WILL EXPIRE AT 430 PM CDT... The storm which prompted the warning has weakened below severe limits, and no longer poses an immediate threat to life or property. Therefore, the warning will be allowed to expire. However small hail is still possible with this thunderstorm.</summary>
-<cap:event>Severe Weather Statement</cap:event>
-<cap:effective>2023-08-24T16:28:00-05:00</cap:effective>
-<cap:expires>2023-08-24T20:00:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Immediate</cap:urgency>
-<cap:severity>Severe</cap:severity>
-<cap:certainty>Observed</cap:certainty>
-<cap:areaDesc>McLean</cap:areaDesc>
-<cap:polygon>47.76,-101.54 47.54,-101.53 47.53,-101.64 47.54,-101.7 47.53,-101.73 47.52,-101.77 47.52,-101.92 47.68,-101.96 47.76,-101.54</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>038055</value>
-<valueName>UGC</valueName>
-<value>NDC055</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.EXP.KBIS.SV.W.0113.000000T0000Z-230824T2130Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=ND12665B17374C.SevereThunderstormWarning.12665B175560ND.BISSVSBIS.4bc4e12673cc065004c3c4135fd7bd4a</id>
-<updated>2023-08-24T16:23:00-05:00</updated>
-<published>2023-08-24T16:23:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Severe Thunderstorm Warning issued August 24 at 4:23PM CDT until August 24 at 5:00PM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=ND12665B17374C.SevereThunderstormWarning.12665B175560ND.BISSVSBIS.4bc4e12673cc065004c3c4135fd7bd4a"/>
-<summary>...A SEVERE THUNDERSTORM WARNING REMAINS IN EFFECT UNTIL 500 PM CDT FOR NORTHERN MCHENRY COUNTY... At 421 PM CDT, a severe thunderstorm was located 6 miles east of Deering, or 20 miles northeast of Minot, moving east at 35 mph. HAZARD...60 mph wind gusts and quarter size hail. SOURCE...Radar indicated.</summary>
+<title>Severe Thunderstorm Warning issued August 24 at 4:56PM CDT until August 24 at 5:15PM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=ND12665B174430.SevereThunderstormWarning.12665B175B3CND.FGFSVSFGF.0547982aec0b1b47a849610558fc9a0b"/>
+<summary>...A SEVERE THUNDERSTORM WARNING REMAINS IN EFFECT UNTIL 515 PM CDT FOR NORTH CENTRAL CAVALIER COUNTY... At 456 PM CDT, a severe thunderstorm was located over Hannah, or 18 miles northwest of Langdon, moving southeast at 30 mph. HAZARD...60 mph wind gusts and quarter size hail. SOURCE...Radar indicated.</summary>
 <cap:event>Severe Thunderstorm Warning</cap:event>
-<cap:effective>2023-08-24T16:23:00-05:00</cap:effective>
-<cap:expires>2023-08-24T17:00:00-05:00</cap:expires>
+<cap:effective>2023-08-24T16:56:00-05:00</cap:effective>
+<cap:expires>2023-08-24T17:15:00-05:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
 <cap:category>Met</cap:category>
 <cap:urgency>Immediate</cap:urgency>
 <cap:severity>Severe</cap:severity>
 <cap:certainty>Observed</cap:certainty>
-<cap:areaDesc>McHenry</cap:areaDesc>
-<cap:polygon>48.63,-100.41 48.55,-100.41 48.54,-100.33 48.18,-100.29 48.29,-101.01 48.37,-101.01 48.37,-101.06 48.49,-101.06 48.63,-100.41</cap:polygon>
+<cap:areaDesc>Cavalier</cap:areaDesc>
+<cap:polygon>49,-98.11 48.85,-98.31 48.82,-98.41 49,-98.81 49,-98.11</cap:polygon>
 <cap:geocode>
 <valueName>FIPS6</valueName>
-<value>038049</value>
+<value>038019</value>
 <valueName>UGC</valueName>
-<value>NDC049</value>
+<value>NDC019</value>
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
-<value>/O.CON.KBIS.SV.W.0115.000000T0000Z-230824T2200Z/</value>
+<value>/O.CON.KFGF.SV.W.0129.000000T0000Z-230824T2215Z/</value>
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=ND12665B17374C.SevereWeatherStatement.12665B236350ND.BISSVSBIS.d4aa4b8e3dd2c10749895cc832461be8</id>
-<updated>2023-08-24T16:23:00-05:00</updated>
-<published>2023-08-24T16:23:00-05:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=ND12665B174430.SevereWeatherStatement.12665B236350ND.FGFSVSFGF.9ef059b444f9363192a527f814aecbec</id>
+<updated>2023-08-24T16:56:00-05:00</updated>
+<published>2023-08-24T16:56:00-05:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Severe Weather Statement issued August 24 at 4:23PM CDT until August 24 at 8:00PM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=ND12665B17374C.SevereWeatherStatement.12665B236350ND.BISSVSBIS.d4aa4b8e3dd2c10749895cc832461be8"/>
-<summary>...A SEVERE THUNDERSTORM WARNING REMAINS IN EFFECT UNTIL 500 PM CDT FOR NORTHERN MCHENRY COUNTY... At 421 PM CDT, a severe thunderstorm was located 6 miles east of Deering, or 20 miles northeast of Minot, moving east at 35 mph. HAZARD...60 mph wind gusts and quarter size hail. SOURCE...Radar indicated.</summary>
+<title>Severe Weather Statement issued August 24 at 4:56PM CDT until August 24 at 8:00PM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=ND12665B174430.SevereWeatherStatement.12665B236350ND.FGFSVSFGF.9ef059b444f9363192a527f814aecbec"/>
+<summary>...A SEVERE THUNDERSTORM WARNING REMAINS IN EFFECT UNTIL 515 PM CDT FOR NORTH CENTRAL CAVALIER COUNTY... At 456 PM CDT, a severe thunderstorm was located over Hannah, or 18 miles northwest of Langdon, moving southeast at 30 mph. HAZARD...60 mph wind gusts and quarter size hail. SOURCE...Radar indicated.</summary>
 <cap:event>Severe Weather Statement</cap:event>
-<cap:effective>2023-08-24T16:23:00-05:00</cap:effective>
+<cap:effective>2023-08-24T16:56:00-05:00</cap:effective>
 <cap:expires>2023-08-24T20:00:00-05:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
@@ -5795,81 +5795,49 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:urgency>Immediate</cap:urgency>
 <cap:severity>Severe</cap:severity>
 <cap:certainty>Observed</cap:certainty>
-<cap:areaDesc>McHenry</cap:areaDesc>
-<cap:polygon>48.63,-100.41 48.55,-100.41 48.54,-100.33 48.18,-100.29 48.29,-101.01 48.37,-101.01 48.37,-101.06 48.49,-101.06 48.63,-100.41</cap:polygon>
+<cap:areaDesc>Cavalier</cap:areaDesc>
+<cap:polygon>49,-98.11 48.85,-98.31 48.82,-98.41 49,-98.81 49,-98.11</cap:polygon>
 <cap:geocode>
 <valueName>FIPS6</valueName>
-<value>038049</value>
+<value>038019</value>
 <valueName>UGC</valueName>
-<value>NDC049</value>
+<value>NDC019</value>
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
-<value>/O.CON.KBIS.SV.W.0115.000000T0000Z-230824T2200Z/</value>
+<value>/O.CON.KFGF.SV.W.0129.000000T0000Z-230824T2215Z/</value>
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=ND12665B173620.SevereThunderstormWarning.12665B173FE4ND.BISSVSBIS.bed7afd1c6fd8ff150344d5a9b2ae7a9</id>
-<updated>2023-08-24T16:20:00-05:00</updated>
-<published>2023-08-24T16:20:00-05:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=ND12665B1742A0.SevereThunderstormWarning.12665B1766F4ND.BISSVRBIS.cd0d5abf0807146f87d3ce6dbfd579a8</id>
+<updated>2023-08-24T16:52:00-05:00</updated>
+<published>2023-08-24T16:52:00-05:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Severe Thunderstorm Warning issued August 24 at 4:20PM CDT until August 24 at 4:45PM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=ND12665B173620.SevereThunderstormWarning.12665B173FE4ND.BISSVSBIS.bed7afd1c6fd8ff150344d5a9b2ae7a9"/>
-<summary>...A SEVERE THUNDERSTORM WARNING REMAINS IN EFFECT UNTIL 445 PM CDT FOR NORTHEASTERN BOTTINEAU AND NORTHWESTERN ROLETTE COUNTIES... At 420 PM CDT, a severe thunderstorm was located near Bottineau, moving northeast at 10 mph. HAZARD...60 mph wind gusts and quarter size hail. SOURCE...Radar indicated.</summary>
+<title>Severe Thunderstorm Warning issued August 24 at 4:52PM CDT until August 24 at 5:45PM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=ND12665B1742A0.SevereThunderstormWarning.12665B1766F4ND.BISSVRBIS.cd0d5abf0807146f87d3ce6dbfd579a8"/>
+<summary>The National Weather Service in Bismarck has issued a * Severe Thunderstorm Warning for... Pierce County in north central North Dakota... Northeastern McHenry County in north central North Dakota... * Until 545 PM CDT. * At 451 PM CDT, a severe thunderstorm was located near Towner, or 22</summary>
 <cap:event>Severe Thunderstorm Warning</cap:event>
-<cap:effective>2023-08-24T16:20:00-05:00</cap:effective>
-<cap:expires>2023-08-24T16:45:00-05:00</cap:expires>
+<cap:effective>2023-08-24T16:52:00-05:00</cap:effective>
+<cap:expires>2023-08-24T17:45:00-05:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
 <cap:category>Met</cap:category>
 <cap:urgency>Immediate</cap:urgency>
 <cap:severity>Severe</cap:severity>
 <cap:certainty>Observed</cap:certainty>
-<cap:areaDesc>Bottineau; Rolette</cap:areaDesc>
-<cap:polygon>48.78,-100.39 48.86,-100.58 49,-100.53 49,-100 48.86,-100.18 48.78,-100.39</cap:polygon>
+<cap:areaDesc>McHenry; Pierce</cap:areaDesc>
+<cap:polygon>48.37,-99.5 48.37,-99.85 48.02,-99.85 48.02,-99.81 48,-99.81 48.15,-100.7 48.48,-100.59 48.5,-99.49 48.37,-99.5</cap:polygon>
 <cap:geocode>
 <valueName>FIPS6</valueName>
-<value>038009 038079</value>
+<value>038049 038069</value>
 <valueName>UGC</valueName>
-<value>NDC009 NDC079</value>
+<value>NDC049 NDC069</value>
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
-<value>/O.CON.KBIS.SV.W.0114.000000T0000Z-230824T2145Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=ND12665B173620.SevereWeatherStatement.12665B236350ND.BISSVSBIS.bb2edd7c416b08ddbc68da43783af9c8</id>
-<updated>2023-08-24T16:20:00-05:00</updated>
-<published>2023-08-24T16:20:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Severe Weather Statement issued August 24 at 4:20PM CDT until August 24 at 8:00PM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=ND12665B173620.SevereWeatherStatement.12665B236350ND.BISSVSBIS.bb2edd7c416b08ddbc68da43783af9c8"/>
-<summary>...A SEVERE THUNDERSTORM WARNING REMAINS IN EFFECT UNTIL 445 PM CDT FOR NORTHEASTERN BOTTINEAU AND NORTHWESTERN ROLETTE COUNTIES... At 420 PM CDT, a severe thunderstorm was located near Bottineau, moving northeast at 10 mph. HAZARD...60 mph wind gusts and quarter size hail. SOURCE...Radar indicated.</summary>
-<cap:event>Severe Weather Statement</cap:event>
-<cap:effective>2023-08-24T16:20:00-05:00</cap:effective>
-<cap:expires>2023-08-24T20:00:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Immediate</cap:urgency>
-<cap:severity>Severe</cap:severity>
-<cap:certainty>Observed</cap:certainty>
-<cap:areaDesc>Bottineau; Rolette</cap:areaDesc>
-<cap:polygon>48.78,-100.39 48.86,-100.58 49,-100.53 49,-100 48.86,-100.18 48.78,-100.39</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>038009 038079</value>
-<valueName>UGC</valueName>
-<value>NDC009 NDC079</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KBIS.SV.W.0114.000000T0000Z-230824T2145Z/</value>
+<value>/O.NEW.KBIS.SV.W.0116.230824T2152Z-230824T2245Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -6194,50 +6162,18 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=NM12665B173940.SpecialWeatherStatement.12665B175560NM.ABQSPSABQ.84aa6705d11d4ad9569b48d4353a3a81</id>
-<updated>2023-08-24T15:28:00-06:00</updated>
-<published>2023-08-24T15:28:00-06:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Special Weather Statement issued August 24 at 3:28PM MDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=NM12665B173940.SpecialWeatherStatement.12665B175560NM.ABQSPSABQ.84aa6705d11d4ad9569b48d4353a3a81"/>
-<summary>...A STRONG THUNDERSTORM WILL IMPACT NORTHEASTERN MCKINLEY... SOUTHWESTERN RIO ARRIBA...NORTHWESTERN SANDOVAL AND SOUTHEASTERN SAN JUAN COUNTIES THROUGH 400 PM MDT... At 327 PM MDT, Doppler radar was tracking a strong thunderstorm capable of producing funnel clouds 7 miles north of Pueblo Pintado, or 36 miles west of Cuba, moving northeast at 10 mph.</summary>
-<cap:event>Special Weather Statement</cap:event>
-<cap:effective>2023-08-24T15:28:00-06:00</cap:effective>
-<cap:expires>2023-08-24T16:00:00-06:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Observed</cap:certainty>
-<cap:areaDesc>Northwest Highlands</cap:areaDesc>
-<cap:polygon>35.94,-107.56 36.04,-107.74 36.28,-107.61 36.13,-107.33 35.94,-107.56</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>035031 035043</value>
-<valueName>UGC</valueName>
-<value>NMZ204</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value></value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=NM12665B16A5FC.FloodWatch.12665B175560NM.ABQFFAABQ.72fcf723118eb09da8e431dbdbe34819</id>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=NM12665B16A5FC.FloodWatch.12665B23B170NM.ABQFFAABQ.72fcf723118eb09da8e431dbdbe34819</id>
 <updated>2023-08-24T11:51:00-06:00</updated>
 <published>2023-08-24T11:51:00-06:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
 <title>Flood Watch issued August 24 at 11:51AM MDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=NM12665B16A5FC.FloodWatch.12665B175560NM.ABQFFAABQ.72fcf723118eb09da8e431dbdbe34819"/>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=NM12665B16A5FC.FloodWatch.12665B23B170NM.ABQFFAABQ.72fcf723118eb09da8e431dbdbe34819"/>
 <summary>...FLOOD WATCH REMAINS IN EFFECT UNTIL 9 PM MDT THIS EVENING... * WHAT...Flash flooding caused by excessive rainfall is possible again this afternoon. * WHERE...A portion of central New Mexico, including the following area, South Central Mountains. * WHEN...Until 9 PM MDT this evening.</summary>
 <cap:event>Flood Watch</cap:event>
 <cap:effective>2023-08-24T11:51:00-06:00</cap:effective>
-<cap:expires>2023-08-24T16:00:00-06:00</cap:expires>
+<cap:expires>2023-08-24T21:00:00-06:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
 <cap:category>Met</cap:category>
@@ -6259,17 +6195,17 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=NV12665B1712F8.FlashFloodWarning.12665B178828NV.VEFFFWVEF.dbcb6e748d06a5625b2298673c264bb2</id>
-<updated>2023-08-24T13:30:00-07:00</updated>
-<published>2023-08-24T13:30:00-07:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=NV12665B175628.FlashFloodWarning.12665B178828NV.VEFFFSVEF.dbcb6e748d06a5625b2298673c264bb2</id>
+<updated>2023-08-24T15:02:00-07:00</updated>
+<published>2023-08-24T15:02:00-07:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Flash Flood Warning issued August 24 at 1:30PM PDT until August 24 at 4:30PM PDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=NV12665B1712F8.FlashFloodWarning.12665B178828NV.VEFFFWVEF.dbcb6e748d06a5625b2298673c264bb2"/>
-<summary>The National Weather Service in Las Vegas has issued a * Flash Flood Warning for... Southeastern Inyo County in south central California... San Bernardino County in southern California... Southwestern Clark County in southern Nevada... * Until 430 PM PDT.</summary>
+<title>Flash Flood Warning issued August 24 at 3:02PM PDT until August 24 at 4:30PM PDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=NV12665B175628.FlashFloodWarning.12665B178828NV.VEFFFSVEF.dbcb6e748d06a5625b2298673c264bb2"/>
+<summary>...FLASH FLOOD WARNING REMAINS IN EFFECT UNTIL 430 PM PDT THIS AFTERNOON FOR SOUTHEASTERN INYO, SAN BERNARDINO AND SOUTHWESTERN CLARK COUNTIES... At 302 PM PDT, Doppler radar indicated thunderstorms producing heavy rain across the warned area. Flash flooding is ongoing or expected to begin shortly.</summary>
 <cap:event>Flash Flood Warning</cap:event>
-<cap:effective>2023-08-24T13:30:00-07:00</cap:effective>
+<cap:effective>2023-08-24T15:02:00-07:00</cap:effective>
 <cap:expires>2023-08-24T16:30:00-07:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
@@ -6287,7 +6223,7 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
-<value>/O.NEW.KVEF.FF.W.0086.230824T2030Z-230824T2330Z/
+<value>/O.CON.KVEF.FF.W.0086.000000T0000Z-230824T2330Z/
 /00000.0.ER.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
 </cap:parameter>
 </entry>
@@ -6911,18 +6847,18 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=OK12665B1738DC.SpecialWeatherStatement.12665B175560OK.TSASPSTSA.449cf14f6b72867e1adca0efcf3a503a</id>
-<updated>2023-08-24T16:27:00-05:00</updated>
-<published>2023-08-24T16:27:00-05:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=OK12665B1744F8.SpecialWeatherStatement.12665B176118OK.TSASPSTSA.449cf14f6b72867e1adca0efcf3a503a</id>
+<updated>2023-08-24T16:58:00-05:00</updated>
+<published>2023-08-24T16:58:00-05:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Special Weather Statement issued August 24 at 4:27PM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=OK12665B1738DC.SpecialWeatherStatement.12665B175560OK.TSASPSTSA.449cf14f6b72867e1adca0efcf3a503a"/>
-<summary>...STRONG THUNDERSTORMS WILL IMPACT CENTRAL PUSHMATAHA COUNTY THROUGH 500 PM CDT... At 426 PM CDT, Doppler radar indicated strong thunderstorms along a line extending from 3 miles south of Stanley to 3 miles east of Oleta. Movement was west at 10 mph. HAZARD...Wind gusts up to 40 mph.</summary>
+<title>Special Weather Statement issued August 24 at 4:58PM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=OK12665B1744F8.SpecialWeatherStatement.12665B176118OK.TSASPSTSA.449cf14f6b72867e1adca0efcf3a503a"/>
+<summary>...A STRONG THUNDERSTORM WILL IMPACT WEST CENTRAL PUSHMATAHA COUNTY THROUGH 530 PM CDT... At 457 PM CDT, Doppler radar indicated a strong thunderstorm 4 miles southwest of Dunbar, moving west at 5 mph. HAZARD...Wind gusts up to 40 mph. SOURCE...Radar indicated.</summary>
 <cap:event>Special Weather Statement</cap:event>
-<cap:effective>2023-08-24T16:27:00-05:00</cap:effective>
-<cap:expires>2023-08-24T17:00:00-05:00</cap:expires>
+<cap:effective>2023-08-24T16:58:00-05:00</cap:effective>
+<cap:expires>2023-08-24T17:30:00-05:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
 <cap:category>Met</cap:category>
@@ -6930,7 +6866,7 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:severity>Minor</cap:severity>
 <cap:certainty>Observed</cap:certainty>
 <cap:areaDesc>Pushmataha</cap:areaDesc>
-<cap:polygon>34.58,-95.65 34.16,-95.44 34.16,-95.16 34.58,-95.4 34.58,-95.65</cap:polygon>
+<cap:polygon>34.33,-95.78 34.5,-95.78 34.51,-95.77 34.51,-95.67 34.5,-95.49 34.31,-95.46 34.33,-95.78</cap:polygon>
 <cap:geocode>
 <valueName>FIPS6</valueName>
 <value>040127</value>
@@ -7307,6 +7243,38 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=OR12665B173F1C.AirQualityAlert.12665B327E80OR.PQRAQAPQR.f8735c19c367713a8cba8dd01ddbed82</id>
+<updated>2023-08-24T14:43:00-07:00</updated>
+<published>2023-08-24T14:43:00-07:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Air Quality Alert issued August 24 at 2:43PM PDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=OR12665B173F1C.AirQualityAlert.12665B327E80OR.PQRAQAPQR.f8735c19c367713a8cba8dd01ddbed82"/>
+<summary>...AIR QUALITY ADVISORY IN EFFECT UNTIL 4 PM PDT SUNDAY... The Lane Regional Air Protection Agency has issued an Air Quality Advisory, which is IN EFFECT UNTIL 4 PM PDT SUNDAY. An Air Quality Advisory for Smoke has been issued. Wildfires burning in the region combined with forecasted conditions will cause air quality to reach unhealthy levels at times through Sunday afternoon.</summary>
+<cap:event>Air Quality Alert</cap:event>
+<cap:effective>2023-08-24T14:43:00-07:00</cap:effective>
+<cap:expires>2023-08-25T17:00:00-07:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Unknown</cap:urgency>
+<cap:severity>Unknown</cap:severity>
+<cap:certainty>Unknown</cap:certainty>
+<cap:areaDesc>Cascade Foothills in Lane County; Cascades in Lane County</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>041039</value>
+<valueName>UGC</valueName>
+<value>ORZ012 ORZ013</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value></value>
+</cap:parameter>
+</entry>
+<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=OR12665B1735BC.RedFlagWarning.12665B25FB60OR.PQRRFWPQR.f2e32a3687218f9ab36b2759f96f03ef</id>
 <updated>2023-08-24T14:19:00-07:00</updated>
 <published>2023-08-24T14:19:00-07:00</published>
@@ -7531,49 +7499,17 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=SC12665B172FE0.SevereThunderstormWarning.12665B175560SC.GSPSVRGSP.b9069e9b0f2439fba4c6e0cb69d71620</id>
-<updated>2023-08-24T17:04:00-04:00</updated>
-<published>2023-08-24T17:04:00-04:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=SD12665B17568C.SevereThunderstormWarning.12665B176118SD.UNRSVSUNR.201f52607c921f2bf29aaf3a554f5dd1</id>
+<updated>2023-08-24T16:03:00-06:00</updated>
+<published>2023-08-24T16:03:00-06:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Severe Thunderstorm Warning issued August 24 at 5:04PM EDT until August 24 at 6:00PM EDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=SC12665B172FE0.SevereThunderstormWarning.12665B175560SC.GSPSVRGSP.b9069e9b0f2439fba4c6e0cb69d71620"/>
-<summary>The National Weather Service in Greenville-Spartanburg has issued a * Severe Thunderstorm Warning for... Elbert County in northeastern Georgia... Hart County in northeastern Georgia... Southwestern Anderson County in Upstate South Carolina... Southwestern Abbeville County in Upstate South Carolina...</summary>
+<title>Severe Thunderstorm Warning issued August 24 at 4:03PM MDT until August 24 at 4:30PM MDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=SD12665B17568C.SevereThunderstormWarning.12665B176118SD.UNRSVSUNR.201f52607c921f2bf29aaf3a554f5dd1"/>
+<summary>...A SEVERE THUNDERSTORM WARNING REMAINS IN EFFECT UNTIL 430 PM MDT FOR SOUTHWESTERN MEADE COUNTY... At 402 PM MDT, a severe thunderstorm was located over northern Ellsworth Air Force Base, or 9 miles northeast of Rapid City, moving southeast at 20 mph. HAZARD...60 mph wind gusts and penny size hail.</summary>
 <cap:event>Severe Thunderstorm Warning</cap:event>
-<cap:effective>2023-08-24T17:04:00-04:00</cap:effective>
-<cap:expires>2023-08-24T18:00:00-04:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Immediate</cap:urgency>
-<cap:severity>Severe</cap:severity>
-<cap:certainty>Observed</cap:certainty>
-<cap:areaDesc>Abbeville; Anderson</cap:areaDesc>
-<cap:polygon>33.98,-82.61 33.97,-82.64 33.99,-82.65 33.97,-82.78 33.99,-82.83 33.98,-82.86 34.01,-82.91 34.01,-82.94 34.03,-82.94 34.04,-82.98 34.07,-83 34.42,-83.09 34.48,-83.06 34.49,-83.04 34.47,-83 34.52,-82.95 34.54,-82.9 34.08,-82.51 34.01,-82.6 33.96,-82.57 33.98,-82.61</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>045001 045007</value>
-<valueName>UGC</valueName>
-<value>SCC001 SCC007</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.NEW.KGSP.SV.W.0328.230824T2104Z-230824T2200Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=SD12665B1738DC.SevereThunderstormWarning.12665B176118SD.UNRSVRUNR.201f52607c921f2bf29aaf3a554f5dd1</id>
-<updated>2023-08-24T15:27:00-06:00</updated>
-<published>2023-08-24T15:27:00-06:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Severe Thunderstorm Warning issued August 24 at 3:27PM MDT until August 24 at 4:30PM MDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=SD12665B1738DC.SevereThunderstormWarning.12665B176118SD.UNRSVRUNR.201f52607c921f2bf29aaf3a554f5dd1"/>
-<summary>The National Weather Service in Rapid City has issued a * Severe Thunderstorm Warning for... Southwestern Meade County in west central South Dakota... * Until 430 PM MDT. * At 327 PM MDT, a severe thunderstorm was located 4 miles northeast of Piedmont, or 14 miles north of Rapid City, moving east at 20</summary>
-<cap:event>Severe Thunderstorm Warning</cap:event>
-<cap:effective>2023-08-24T15:27:00-06:00</cap:effective>
+<cap:effective>2023-08-24T16:03:00-06:00</cap:effective>
 <cap:expires>2023-08-24T16:30:00-06:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
@@ -7582,7 +7518,7 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:severity>Severe</cap:severity>
 <cap:certainty>Observed</cap:certainty>
 <cap:areaDesc>Meade</cap:areaDesc>
-<cap:polygon>44.14,-103.45 44.38,-103.45 44.37,-102.97 44.14,-102.96 44.14,-103.45</cap:polygon>
+<cap:polygon>44.26,-103.45 44.37,-102.99 44.37,-102.97 44.14,-102.96 44.14,-103.45 44.26,-103.45</cap:polygon>
 <cap:geocode>
 <valueName>FIPS6</valueName>
 <value>046093</value>
@@ -7591,35 +7527,67 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
-<value>/O.NEW.KUNR.SV.W.0307.230824T2127Z-230824T2230Z/</value>
+<value>/O.CON.KUNR.SV.W.0307.000000T0000Z-230824T2230Z/</value>
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=SD12665B173620.SpecialWeatherStatement.12665B175560SD.UNRSPSUNR.2cb9db79ce87d2aa0a4456ab148a6462</id>
-<updated>2023-08-24T15:20:00-06:00</updated>
-<published>2023-08-24T15:20:00-06:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=SD12665B17568C.SevereWeatherStatement.12665B176118SD.UNRSVSUNR.7a1fe226b970ac1cfcd86c78a93403e2</id>
+<updated>2023-08-24T16:03:00-06:00</updated>
+<published>2023-08-24T16:03:00-06:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Special Weather Statement issued August 24 at 3:20PM MDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=SD12665B173620.SpecialWeatherStatement.12665B175560SD.UNRSPSUNR.2cb9db79ce87d2aa0a4456ab148a6462"/>
-<summary>...A STRONG THUNDERSTORM WILL IMPACT SOUTHWESTERN MEADE COUNTY THROUGH 400 PM MDT... At 319 PM MDT, Doppler radar was tracking a strong thunderstorm 3 miles northeast of Piedmont, or 11 miles southeast of Sturgis, moving east at 20 mph. HAZARD...Wind gusts up to 50 mph and nickel size hail.</summary>
+<title>Severe Weather Statement issued August 24 at 4:03PM MDT until August 24 at 4:30PM MDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=SD12665B17568C.SevereWeatherStatement.12665B176118SD.UNRSVSUNR.7a1fe226b970ac1cfcd86c78a93403e2"/>
+<summary>...A SEVERE THUNDERSTORM WARNING REMAINS IN EFFECT UNTIL 430 PM MDT FOR SOUTHWESTERN MEADE COUNTY... At 402 PM MDT, a severe thunderstorm was located over northern Ellsworth Air Force Base, or 9 miles northeast of Rapid City, moving southeast at 20 mph. HAZARD...60 mph wind gusts and penny size hail.</summary>
+<cap:event>Severe Weather Statement</cap:event>
+<cap:effective>2023-08-24T16:03:00-06:00</cap:effective>
+<cap:expires>2023-08-24T16:30:00-06:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Immediate</cap:urgency>
+<cap:severity>Severe</cap:severity>
+<cap:certainty>Observed</cap:certainty>
+<cap:areaDesc>Meade</cap:areaDesc>
+<cap:polygon>44.26,-103.45 44.37,-102.99 44.37,-102.97 44.14,-102.96 44.14,-103.45 44.26,-103.45</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>046093</value>
+<valueName>UGC</valueName>
+<value>SDC093</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KUNR.SV.W.0307.000000T0000Z-230824T2230Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=SD12665B174048.SpecialWeatherStatement.12665B176118SD.UNRSPSUNR.0519677e20ff9212e4f0d06db8dad19c</id>
+<updated>2023-08-24T15:46:00-06:00</updated>
+<published>2023-08-24T15:46:00-06:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Special Weather Statement issued August 24 at 3:46PM MDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=SD12665B174048.SpecialWeatherStatement.12665B176118SD.UNRSPSUNR.0519677e20ff9212e4f0d06db8dad19c"/>
+<summary>...GUSTY OUTFLOW WINDS WILL IMPACT CENTRAL PENNINGTON COUNTY THROUGH 430 PM MDT... At 345 PM MDT, Doppler radar was tracking gusty outflow winds along a line extending from 4 miles northwest of Ellsworth Air Force Base to 3 miles south of Black Hawk to Silver City. Movement was southeast at 20 mph.</summary>
 <cap:event>Special Weather Statement</cap:event>
-<cap:effective>2023-08-24T15:20:00-06:00</cap:effective>
-<cap:expires>2023-08-24T16:00:00-06:00</cap:expires>
+<cap:effective>2023-08-24T15:46:00-06:00</cap:effective>
+<cap:expires>2023-08-24T16:30:00-06:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
 <cap:category>Met</cap:category>
 <cap:urgency>Expected</cap:urgency>
 <cap:severity>Minor</cap:severity>
 <cap:certainty>Observed</cap:certainty>
-<cap:areaDesc>Southern Meade Co Plains; Sturgis, Piedmont Foot Hills</cap:areaDesc>
-<cap:polygon>44.21,-103.42 44.25,-103.45 44.34,-103.46 44.47,-103.05 44.16,-103.03 44.21,-103.42</cap:polygon>
+<cap:areaDesc>Central Black Hills; Pennington Co Plains; Rapid City</cap:areaDesc>
+<cap:polygon>44.07,-102.9 43.93,-103.12 43.92,-103.5 44.14,-103.56 44.14,-102.96 44.07,-102.9</cap:polygon>
 <cap:geocode>
 <valueName>FIPS6</valueName>
-<value>046093</value>
+<value>046103</value>
 <valueName>UGC</valueName>
-<value>SDZ072 SDZ073</value>
+<value>SDZ026 SDZ028 SDZ031</value>
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
@@ -7722,6 +7690,38 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <valueName>VTEC</valueName>
 <value>/O.CON.KABR.FL.W.0027.000000T0000Z-000000T0000Z/
 /SFDS2.2.RS.230415T1215Z.230528T1100Z.000000T0000Z.NO/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=TN12665B1741D8.AirQualityAlert.12665B236F08TN.MEGAQAMEG.afdc5db8ac5f49a672688577356a13e1</id>
+<updated>2023-08-24T16:50:00-05:00</updated>
+<published>2023-08-24T16:50:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Air Quality Alert issued August 24 at 4:50PM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=TN12665B1741D8.AirQualityAlert.12665B236F08TN.MEGAQAMEG.afdc5db8ac5f49a672688577356a13e1"/>
+<summary>...Code Orange Ozone Health Advisory in effect until Sunset... The Shelby County Health Department has issued a Code Orange Ozone Health Advisory effective for Shelby County Tennessee, Crittenden County Arkansas, and DeSoto County Mississippi, including the city of Memphis that will remain in effect until sunset. This ozone health advisory is due to monitored ozone values that are unhealthy for</summary>
+<cap:event>Air Quality Alert</cap:event>
+<cap:effective>2023-08-24T16:50:00-05:00</cap:effective>
+<cap:expires>2023-08-24T20:30:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Unknown</cap:urgency>
+<cap:severity>Unknown</cap:severity>
+<cap:certainty>Unknown</cap:certainty>
+<cap:areaDesc>Shelby</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>047157</value>
+<valueName>UGC</valueName>
+<value>TNZ088</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value></value>
 </cap:parameter>
 </entry>
 <entry>
@@ -7883,38 +7883,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value>/O.CON.KOHX.HT.Y.0008.000000T0000Z-230826T0100Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=TX12665B173814.SpecialWeatherStatement.12665B175560TX.LCHSPSLCH.428c8fcfd8173cc62597a56a34689ecc</id>
-<updated>2023-08-24T16:25:00-05:00</updated>
-<published>2023-08-24T16:25:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Special Weather Statement issued August 24 at 4:25PM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=TX12665B173814.SpecialWeatherStatement.12665B175560TX.LCHSPSLCH.428c8fcfd8173cc62597a56a34689ecc"/>
-<summary>...A strong thunderstorm will impact portions of southwestern Calcasieu Parish through 500 PM CDT... At 425 PM CDT, Doppler radar was tracking a strong thunderstorm near Edgerly, or near Vinton, moving southwest at 15 mph. HAZARD...Winds in excess of 40 mph. SOURCE...Radar indicated.</summary>
-<cap:event>Special Weather Statement</cap:event>
-<cap:effective>2023-08-24T16:25:00-05:00</cap:effective>
-<cap:expires>2023-08-24T17:00:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Observed</cap:certainty>
-<cap:areaDesc>Northern Orange; Southern Newton</cap:areaDesc>
-<cap:polygon>30.4,-93.63 30.28,-93.37 30.1,-93.46 30.23,-93.77 30.4,-93.63</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>048351 048361</value>
-<valueName>UGC</valueName>
-<value>TXZ262 TXZ516</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value></value>
 </cap:parameter>
 </entry>
 <entry>
@@ -8963,31 +8931,31 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=VA12665B1733C8.SpecialWeatherStatement.12665B175560VA.RNKSPSRNK.7c3ece8f7b485eaf7150a6a826247a9a</id>
-<updated>2023-08-24T17:14:00-04:00</updated>
-<published>2023-08-24T17:14:00-04:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=VA12665B174174.SpecialWeatherStatement.12665B176118VA.RNKSPSRNK.d865b3f760d5f8ee4f619aa24ecad3a3</id>
+<updated>2023-08-24T17:49:00-04:00</updated>
+<published>2023-08-24T17:49:00-04:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Special Weather Statement issued August 24 at 5:14PM EDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=VA12665B1733C8.SpecialWeatherStatement.12665B175560VA.RNKSPSRNK.7c3ece8f7b485eaf7150a6a826247a9a"/>
-<summary>...A STRONG THUNDERSTORM WILL IMPACT SOUTHEASTERN ROANOKE...SOUTHWESTERN BEDFORD AND NORTHEASTERN FRANKLIN COUNTIES AND THE CITY OF ROANOKE THROUGH 600 PM EDT... At 513 PM EDT, Doppler radar was tracking a strong thunderstorm over Roanoke Mountain, or near Roanoke, moving southeast at 20 mph. HAZARD...Wind gusts up to 40 mph and pea size hail.</summary>
+<title>Special Weather Statement issued August 24 at 5:49PM EDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=VA12665B174174.SpecialWeatherStatement.12665B176118VA.RNKSPSRNK.d865b3f760d5f8ee4f619aa24ecad3a3"/>
+<summary>...A STRONG THUNDERSTORM WILL IMPACT NORTHEASTERN STOKES...NORTHWESTERN ROCKINGHAM...SOUTHWESTERN HENRY AND PATRICK COUNTIES THROUGH 630 PM EDT... At 548 PM EDT, Doppler radar was tracking a strong thunderstorm near Stuart, moving southeast at 20 mph. HAZARD...Wind gusts up to 50 mph and pea size hail.</summary>
 <cap:event>Special Weather Statement</cap:event>
-<cap:effective>2023-08-24T17:14:00-04:00</cap:effective>
-<cap:expires>2023-08-24T18:00:00-04:00</cap:expires>
+<cap:effective>2023-08-24T17:49:00-04:00</cap:effective>
+<cap:expires>2023-08-24T18:30:00-04:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
 <cap:category>Met</cap:category>
 <cap:urgency>Expected</cap:urgency>
 <cap:severity>Minor</cap:severity>
 <cap:certainty>Observed</cap:certainty>
-<cap:areaDesc>Bedford; Franklin; Roanoke</cap:areaDesc>
-<cap:polygon>37.17,-80.08 37.32,-79.94 37.15,-79.57 36.92,-79.78 37.17,-80.08</cap:polygon>
+<cap:areaDesc>Henry; Patrick</cap:areaDesc>
+<cap:polygon>36.68,-80.46 36.84,-80.23 36.61,-79.91 36.37,-80.03 36.68,-80.46</cap:polygon>
 <cap:geocode>
 <valueName>FIPS6</valueName>
-<value>051019 051067 051161 051770 051775</value>
+<value>051089 051141 051690</value>
 <valueName>UGC</valueName>
-<value>VAZ022 VAZ033 VAZ034</value>
+<value>VAZ032 VAZ043</value>
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
@@ -8995,31 +8963,31 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=VA12665B172F18.SpecialWeatherStatement.12665B173FE4VA.RNKSPSRNK.7a8fcd575472f875b7b26322b1c50d41</id>
-<updated>2023-08-24T17:02:00-04:00</updated>
-<published>2023-08-24T17:02:00-04:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=VA12665B173F80.SpecialWeatherStatement.12665B176118VA.RNKSPSRNK.dc667d6fbbfa1de08d961be05e320b60</id>
+<updated>2023-08-24T17:44:00-04:00</updated>
+<published>2023-08-24T17:44:00-04:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Special Weather Statement issued August 24 at 5:02PM EDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=VA12665B172F18.SpecialWeatherStatement.12665B173FE4VA.RNKSPSRNK.7a8fcd575472f875b7b26322b1c50d41"/>
-<summary>...A STRONG THUNDERSTORM WILL IMPACT SOUTH CENTRAL PULASKI...SOUTHWESTERN FLOYD...EASTERN CARROLL AND NORTHWESTERN PATRICK COUNTIES THROUGH 545 PM EDT... At 501 PM EDT, Doppler radar was tracking a strong thunderstorm near Sylvatus, or near Patterson, moving southeast at 20 mph. HAZARD...Wind gusts up to 40 mph and pea size hail.</summary>
+<title>Special Weather Statement issued August 24 at 5:44PM EDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=VA12665B173F80.SpecialWeatherStatement.12665B176118VA.RNKSPSRNK.dc667d6fbbfa1de08d961be05e320b60"/>
+<summary>...A STRONG THUNDERSTORM WILL IMPACT HENRY AND SOUTH CENTRAL FRANKLIN COUNTIES AND THE CITY OF MARTINSVILLE THROUGH 630 PM EDT... At 544 PM EDT, Doppler radar was tracking a strong thunderstorm over Stanleytown, or near Bassett, moving southeast at 20 mph. HAZARD...Wind gusts up to 40 mph and pea size hail. SOURCE...Radar indicated.</summary>
 <cap:event>Special Weather Statement</cap:event>
-<cap:effective>2023-08-24T17:02:00-04:00</cap:effective>
-<cap:expires>2023-08-24T17:45:00-04:00</cap:expires>
+<cap:effective>2023-08-24T17:44:00-04:00</cap:effective>
+<cap:expires>2023-08-24T18:30:00-04:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
 <cap:category>Met</cap:category>
 <cap:urgency>Expected</cap:urgency>
 <cap:severity>Minor</cap:severity>
 <cap:certainty>Observed</cap:certainty>
-<cap:areaDesc>Carroll; Floyd; Patrick; Pulaski</cap:areaDesc>
-<cap:polygon>36.82,-80.85 36.87,-80.79 36.88,-80.74 36.89,-80.75 36.95,-80.68 36.8,-80.25 36.57,-80.58 36.82,-80.85</cap:polygon>
+<cap:areaDesc>Franklin</cap:areaDesc>
+<cap:polygon>36.72,-80.05 36.87,-79.91 36.75,-79.66 36.54,-79.71 36.54,-79.81 36.72,-80.05</cap:polygon>
 <cap:geocode>
 <valueName>FIPS6</valueName>
-<value>051035 051063 051141 051155 051640</value>
+<value>051067</value>
 <valueName>UGC</valueName>
-<value>VAZ013 VAZ016 VAZ017 VAZ032</value>
+<value>VAZ033</value>
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
@@ -9059,6 +9027,38 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=WA12665B173F1C.RedFlagWarning.12665B327E80WA.SEWRFWSEW.0968bb9de4d9ef8f72d80905d04fb4e4</id>
+<updated>2023-08-24T14:43:00-07:00</updated>
+<published>2023-08-24T14:43:00-07:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Red Flag Warning issued August 24 at 2:43PM PDT until August 25 at 5:00PM PDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=WA12665B173F1C.RedFlagWarning.12665B327E80WA.SEWRFWSEW.0968bb9de4d9ef8f72d80905d04fb4e4"/>
+<summary>...RED FLAG WARNING REMAINS IN EFFECT UNTIL 5 PM PDT FRIDAY FOR GUSTY WINDS AS WELL AS DRY AND UNSTABLE CONDITIONS FOR FIRE WEATHER ZONE 659... * AFFECTED AREA...Fire Weather Zone 659 West Slopes of the Central Cascades Generally above 1500 Feet. * WINDS...East 10 to 15 mph.</summary>
+<cap:event>Red Flag Warning</cap:event>
+<cap:effective>2023-08-24T14:43:00-07:00</cap:effective>
+<cap:expires>2023-08-25T17:00:00-07:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Severe</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>West Slopes of the Central Cascades Generally above 1500 Feet</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>053033 053041 053053</value>
+<valueName>UGC</valueName>
+<value>WAZ659</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KSEW.FW.W.0005.000000T0000Z-230826T0000Z/</value>
+</cap:parameter>
+</entry>
+<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=WA12665B1735BC.RedFlagWarning.12665B25FB60WA.PQRRFWPQR.cdf1b86580ef356d839df3e718333e71</id>
 <updated>2023-08-24T14:19:00-07:00</updated>
 <published>2023-08-24T14:19:00-07:00</published>
@@ -9091,67 +9091,67 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=WA12665B154860.RedFlagWarning.12665B327E80WA.SEWRFWSEW.0968bb9de4d9ef8f72d80905d04fb4e4</id>
-<updated>2023-08-24T01:56:00-07:00</updated>
-<published>2023-08-24T01:56:00-07:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=WI12665B17423C.SevereThunderstormWarning.12665B176118WI.MKXSVRMKX.0e7444e8bd266efecde0a1991191a439</id>
+<updated>2023-08-24T16:51:00-05:00</updated>
+<published>2023-08-24T16:51:00-05:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Red Flag Warning issued August 24 at 1:56AM PDT until August 25 at 5:00PM PDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=WA12665B154860.RedFlagWarning.12665B327E80WA.SEWRFWSEW.0968bb9de4d9ef8f72d80905d04fb4e4"/>
-<summary>...RED FLAG WARNING REMAINS IN EFFECT FROM 11 AM THIS MORNING TO 5 PM PDT FRIDAY FOR GUSTY WINDS AS WELL AS DRY AND UNSTABLE CONDITIONS FOR FIRE WEATHER ZONE 659... * AFFECTED AREA...Fire Weather Zone 659 West Slopes of the Central Cascades Generally above 1500 Feet. * WINDS...East 10 to 15 mph.</summary>
-<cap:event>Red Flag Warning</cap:event>
-<cap:effective>2023-08-24T01:56:00-07:00</cap:effective>
-<cap:expires>2023-08-25T17:00:00-07:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Severe</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>West Slopes of the Central Cascades Generally above 1500 Feet</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>053033 053041 053053</value>
-<valueName>UGC</valueName>
-<value>WAZ659</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KSEW.FW.W.0005.230824T1800Z-230826T0000Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=WI12665B173558.SevereThunderstormWarning.12665B175560WI.MKXSVRMKX.a59845c78973d36d4c27b492df4e6a61</id>
-<updated>2023-08-24T16:18:00-05:00</updated>
-<published>2023-08-24T16:18:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Severe Thunderstorm Warning issued August 24 at 4:18PM CDT until August 24 at 5:00PM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=WI12665B173558.SevereThunderstormWarning.12665B175560WI.MKXSVRMKX.a59845c78973d36d4c27b492df4e6a61"/>
-<summary>The National Weather Service in Milwaukee/Sullivan has issued a * Severe Thunderstorm Warning for... Milwaukee County in southeastern Wisconsin... Southeastern Waukesha County in southeastern Wisconsin... * Until 500 PM CDT. * At 418 PM CDT, a severe thunderstorm was located over West Allis,</summary>
+<title>Severe Thunderstorm Warning issued August 24 at 4:51PM CDT until August 24 at 5:30PM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=WI12665B17423C.SevereThunderstormWarning.12665B176118WI.MKXSVRMKX.0e7444e8bd266efecde0a1991191a439"/>
+<summary>The National Weather Service in Milwaukee/Sullivan has issued a * Severe Thunderstorm Warning for... Southern Milwaukee County in southeastern Wisconsin... Racine County in southeastern Wisconsin... Southeastern Waukesha County in southeastern Wisconsin... * Until 530 PM CDT.</summary>
 <cap:event>Severe Thunderstorm Warning</cap:event>
-<cap:effective>2023-08-24T16:18:00-05:00</cap:effective>
-<cap:expires>2023-08-24T17:00:00-05:00</cap:expires>
+<cap:effective>2023-08-24T16:51:00-05:00</cap:effective>
+<cap:expires>2023-08-24T17:30:00-05:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
 <cap:category>Met</cap:category>
 <cap:urgency>Immediate</cap:urgency>
 <cap:severity>Severe</cap:severity>
 <cap:certainty>Observed</cap:certainty>
-<cap:areaDesc>Milwaukee; Waukesha</cap:areaDesc>
-<cap:polygon>42.84,-87.84 42.85,-87.96 42.84,-88.04 42.86,-88.19 43.08,-88.18 43.05,-87.89 43.02,-87.9 42.96,-87.85 42.88,-87.85 42.87,-87.84 42.85,-87.83 42.84,-87.84</cap:polygon>
+<cap:areaDesc>Milwaukee; Racine; Waukesha</cap:areaDesc>
+<cap:polygon>42.76,-87.77 42.71,-87.77 42.67,-87.79 42.67,-88.26 42.96,-88.24 42.95,-87.85 42.88,-87.85 42.85,-87.83 42.79,-87.75 42.77,-87.75 42.76,-87.77</cap:polygon>
 <cap:geocode>
 <valueName>FIPS6</valueName>
-<value>055079 055133</value>
+<value>055079 055101 055133</value>
 <valueName>UGC</valueName>
-<value>WIC079 WIC133</value>
+<value>WIC079 WIC101 WIC133</value>
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
-<value>/O.NEW.KMKX.SV.W.0090.230824T2118Z-230824T2200Z/</value>
+<value>/O.NEW.KMKX.SV.W.0092.230824T2151Z-230824T2230Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=WI12665B174174.SevereThunderstormWarning.12665B176118WI.MKXSVRMKX.5acedad2caed77f95ab199718f975dca</id>
+<updated>2023-08-24T16:49:00-05:00</updated>
+<published>2023-08-24T16:49:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Severe Thunderstorm Warning issued August 24 at 4:49PM CDT until August 24 at 5:30PM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=WI12665B174174.SevereThunderstormWarning.12665B176118WI.MKXSVRMKX.5acedad2caed77f95ab199718f975dca"/>
+<summary>The National Weather Service in Milwaukee/Sullivan has issued a * Severe Thunderstorm Warning for... Northeastern Dane County in south central Wisconsin... Northwestern Jefferson County in southeastern Wisconsin... Southwestern Dodge County in southeastern Wisconsin... * Until 530 PM CDT.</summary>
+<cap:event>Severe Thunderstorm Warning</cap:event>
+<cap:effective>2023-08-24T16:49:00-05:00</cap:effective>
+<cap:expires>2023-08-24T17:30:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Immediate</cap:urgency>
+<cap:severity>Severe</cap:severity>
+<cap:certainty>Observed</cap:certainty>
+<cap:areaDesc>Dane; Dodge; Jefferson</cap:areaDesc>
+<cap:polygon>43.24,-89.09 43.29,-89.05 43.29,-89.01 43.34,-89.01 43.35,-89 43.23,-88.57 43.01,-88.78 43.24,-89.09</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>055025 055027 055055</value>
+<valueName>UGC</valueName>
+<value>WIC025 WIC027 WIC055</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.NEW.KMKX.SV.W.0091.230824T2149Z-230824T2230Z/</value>
 </cap:parameter>
 </entry>
 <entry>
