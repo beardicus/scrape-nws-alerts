@@ -16,11 +16,11 @@ xmlns = 'http://www.w3.org/2005/Atom'
 xmlns:cap = 'urn:oasis:names:tc:emergency:cap:1.1'
 xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 >
-<!-- http-date = Wed, 13 Sep 2023 13:52:00 GMT -->
+<!-- http-date = Wed, 13 Sep 2023 14:31:00 GMT -->
 <id>https://alerts.weather.gov/cap/us.php?x=0</id>
 <logo>http://alerts.weather.gov/images/xml_logo.gif</logo>
 <generator>NWS CAP Server</generator>
-<updated>2023-09-13T09:52:00-04:00</updated>
+<updated>2023-09-13T10:31:00-04:00</updated>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
@@ -191,18 +191,51 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=AZ126660640FA4.SevereThunderstormWarning.1266606430D8AZ.PSRSVRPSR.4e06326fe3fae15ea64f1e533e13695f</id>
-<updated>2023-09-13T06:45:00-07:00</updated>
-<published>2023-09-13T06:45:00-07:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=AZ1266606430D8.FloodAdvisory.126660647340AZ.PSRFLSPSR.5ef385699105acb421f6d45143ab13ae</id>
+<updated>2023-09-13T07:30:00-07:00</updated>
+<published>2023-09-13T07:30:00-07:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Severe Thunderstorm Warning issued September 13 at 6:45AM MST until September 13 at 7:30AM MST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=AZ126660640FA4.SevereThunderstormWarning.1266606430D8AZ.PSRSVRPSR.4e06326fe3fae15ea64f1e533e13695f"/>
-<summary>The National Weather Service in Phoenix has issued a * Severe Thunderstorm Warning for... Gila County in east central Arizona... * Until 730 AM MST. * At 645 AM MST, a severe thunderstorm was located over Miami, or near Globe, moving east at 25 mph.</summary>
-<cap:event>Severe Thunderstorm Warning</cap:event>
-<cap:effective>2023-09-13T06:45:00-07:00</cap:effective>
-<cap:expires>2023-09-13T07:30:00-07:00</cap:expires>
+<title>Flood Advisory issued September 13 at 7:30AM MST until September 13 at 9:00AM MST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=AZ1266606430D8.FloodAdvisory.126660647340AZ.PSRFLSPSR.5ef385699105acb421f6d45143ab13ae"/>
+<summary>...FLOOD ADVISORY IN EFFECT UNTIL 1030 AM MST THIS MORNING... * WHAT...Flooding caused by excessive rainfall is expected. * WHERE...A portion of east central Arizona, including the following county, Gila. * WHEN...Until 1030 AM MST. * IMPACTS...Minor flooding in low-lying and poor drainage areas.</summary>
+<cap:event>Flood Advisory</cap:event>
+<cap:effective>2023-09-13T07:30:00-07:00</cap:effective>
+<cap:expires>2023-09-13T09:00:00-07:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Gila</cap:areaDesc>
+<cap:polygon>33.76,-111.1 33.78,-111.07 33.75,-110.98 33.64,-110.92 33.67,-110.86 33.63,-110.8 33.59,-110.9 33.56,-110.98 33.56,-110.99 33.76,-111.1</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>004007</value>
+<valueName>UGC</valueName>
+<value>AZC007</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.NEW.KPSR.FA.Y.0048.230913T1430Z-230913T1730Z/
+/00000.N.ER.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=AZ126660642E80.SevereWeatherStatement.126660647340AZ.PSRSVSPSR.2de72052d067addc1467bb620334f896</id>
+<updated>2023-09-13T07:24:00-07:00</updated>
+<published>2023-09-13T07:24:00-07:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Severe Weather Statement issued September 13 at 7:24AM MST until September 13 at 9:00AM MST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=AZ126660642E80.SevereWeatherStatement.126660647340AZ.PSRSVSPSR.2de72052d067addc1467bb620334f896"/>
+<summary>...THE SEVERE THUNDERSTORM WARNING FOR GILA COUNTY WILL EXPIRE AT 730 AM MST... The storm which prompted the warning has weakened below severe limits, and no longer poses an immediate threat to life or property. Therefore, the warning will be allowed to expire. However gusty winds and heavy rain are still possible with this thunderstorm.</summary>
+<cap:event>Severe Weather Statement</cap:event>
+<cap:effective>2023-09-13T07:24:00-07:00</cap:effective>
+<cap:expires>2023-09-13T09:00:00-07:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
 <cap:category>Met</cap:category>
@@ -219,39 +252,40 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
-<value>/O.NEW.KPSR.SV.W.0082.230913T1345Z-230913T1430Z/</value>
+<value>/O.EXP.KPSR.SV.W.0082.000000T0000Z-230913T1430Z/</value>
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=AZ126660640E14.SevereThunderstormWarning.126660642AFCAZ.PSRSVRPSR.d4f8b0fae1ba7582e031aa8f4b0f77ab</id>
-<updated>2023-09-13T06:41:00-07:00</updated>
-<published>2023-09-13T06:41:00-07:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=AZ126660642C8C.FlashFloodWarning.126660647340AZ.PSRFFWPSR.e34f8882850abf08306f135fcc894edd</id>
+<updated>2023-09-13T07:19:00-07:00</updated>
+<published>2023-09-13T07:19:00-07:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Severe Thunderstorm Warning issued September 13 at 6:41AM MST until September 13 at 7:15AM MST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=AZ126660640E14.SevereThunderstormWarning.126660642AFCAZ.PSRSVRPSR.d4f8b0fae1ba7582e031aa8f4b0f77ab"/>
-<summary>The National Weather Service in Phoenix has issued a * Severe Thunderstorm Warning for... Maricopa County in south central Arizona... * Until 715 AM MST. * At 641 AM MST, a severe thunderstorm was located over Downtown Scottsdale, or near Paradise Valley, moving east at 15 mph.</summary>
-<cap:event>Severe Thunderstorm Warning</cap:event>
-<cap:effective>2023-09-13T06:41:00-07:00</cap:effective>
-<cap:expires>2023-09-13T07:15:00-07:00</cap:expires>
+<title>Flash Flood Warning issued September 13 at 7:19AM MST until September 13 at 9:00AM MST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=AZ126660642C8C.FlashFloodWarning.126660647340AZ.PSRFFWPSR.e34f8882850abf08306f135fcc894edd"/>
+<summary>The National Weather Service in Phoenix has extended the * Flash Flood Warning for... Gila County in east central Arizona... Maricopa County in south central Arizona... * Until 900 AM MST. * At 719 AM MST, Doppler radar continues to indicate thunderstorms</summary>
+<cap:event>Flash Flood Warning</cap:event>
+<cap:effective>2023-09-13T07:19:00-07:00</cap:effective>
+<cap:expires>2023-09-13T09:00:00-07:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
 <cap:category>Met</cap:category>
 <cap:urgency>Immediate</cap:urgency>
 <cap:severity>Severe</cap:severity>
-<cap:certainty>Observed</cap:certainty>
-<cap:areaDesc>Maricopa</cap:areaDesc>
-<cap:polygon>33.38,-112 33.55,-112.04 33.65,-111.75 33.4,-111.65 33.38,-112</cap:polygon>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Gila; Maricopa</cap:areaDesc>
+<cap:polygon>33.76,-111.1 33.56,-110.99 33.54,-111.39 33.62,-111.44 33.76,-111.1</cap:polygon>
 <cap:geocode>
 <valueName>FIPS6</valueName>
-<value>004013</value>
+<value>004007 004013</value>
 <valueName>UGC</valueName>
-<value>AZC013</value>
+<value>AZC007 AZC013</value>
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
-<value>/O.NEW.KPSR.SV.W.0081.230913T1341Z-230913T1415Z/</value>
+<value>/O.EXT.KPSR.FF.W.0040.000000T0000Z-230913T1600Z/
+/00000.0.ER.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -288,39 +322,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=AZ12666063E18C.FlashFloodWarning.126660644C30AZ.PSRFFWPSR.e34f8882850abf08306f135fcc894edd</id>
-<updated>2023-09-13T05:27:00-07:00</updated>
-<published>2023-09-13T05:27:00-07:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Flash Flood Warning issued September 13 at 5:27AM MST until September 13 at 8:00AM MST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=AZ12666063E18C.FlashFloodWarning.126660644C30AZ.PSRFFWPSR.e34f8882850abf08306f135fcc894edd"/>
-<summary>The National Weather Service in Phoenix has extended the * Flash Flood Warning for... Gila County in east central Arizona... Maricopa County in south central Arizona... * Until 800 AM MST. * At 527 AM MST, Doppler radar indicated thunderstorms producing</summary>
-<cap:event>Flash Flood Warning</cap:event>
-<cap:effective>2023-09-13T05:27:00-07:00</cap:effective>
-<cap:expires>2023-09-13T08:00:00-07:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Immediate</cap:urgency>
-<cap:severity>Severe</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Gila; Maricopa</cap:areaDesc>
-<cap:polygon>33.76,-111.1 33.56,-110.99 33.54,-111.39 33.62,-111.44 33.76,-111.1</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>004007 004013</value>
-<valueName>UGC</valueName>
-<value>AZC007 AZC013</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.EXT.KPSR.FF.W.0040.000000T0000Z-230913T1500Z/
-/00000.0.ER.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
-</cap:parameter>
-</entry>
-<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=CA126660635168.BeachHazardsStatement.126660908C50CA.SGXCFWSGX.0ec95d70f7ac7b239a79eb05ff9e73af</id>
 <updated>2023-09-13T01:58:00-07:00</updated>
 <published>2023-09-13T01:58:00-07:00</published>
@@ -353,6 +354,104 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=CT12666064313C.FlashFloodWarning.12666064A608CT.BOXFFWBOX.619a305ac4171a8ca5f469dc1a759056</id>
+<updated>2023-09-13T10:31:00-04:00</updated>
+<published>2023-09-13T10:31:00-04:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Flash Flood Warning issued September 13 at 10:31AM EDT until September 13 at 1:30PM EDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CT12666064313C.FlashFloodWarning.12666064A608CT.BOXFFWBOX.619a305ac4171a8ca5f469dc1a759056"/>
+<summary>The National Weather Service in Norton has issued a * Flash Flood Warning for... Southeastern Hartford County in northern Connecticut... Southern Tolland County in northern Connecticut... Western Windham County in northern Connecticut... * Until 130 PM EDT.</summary>
+<cap:event>Flash Flood Warning</cap:event>
+<cap:effective>2023-09-13T10:31:00-04:00</cap:effective>
+<cap:expires>2023-09-13T13:30:00-04:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Immediate</cap:urgency>
+<cap:severity>Severe</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Hartford; Tolland; Windham</cap:areaDesc>
+<cap:polygon>41.66,-72.52 41.76,-72.44 41.99,-72.12 41.86,-71.95 41.66,-72.16 41.71,-72.24 41.7,-72.25 41.69,-72.27 41.67,-72.27 41.64,-72.33 41.62,-72.32 41.61,-72.33 41.6,-72.38 41.59,-72.39 41.6,-72.41 41.59,-72.42 41.58,-72.47 41.66,-72.52</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>009003 009013 009015</value>
+<valueName>UGC</valueName>
+<value>CTC003 CTC013 CTC015</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.NEW.KBOX.FF.W.0069.230913T1431Z-230913T1730Z/
+/00000.0.ER.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=CT126660642E80.FlashFloodWarning.126660649A50CT.BOXFFWBOX.aef6ddd493e88714552ea0ff5222ab27</id>
+<updated>2023-09-13T10:24:00-04:00</updated>
+<published>2023-09-13T10:24:00-04:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Flash Flood Warning issued September 13 at 10:24AM EDT until September 13 at 1:00PM EDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CT126660642E80.FlashFloodWarning.126660649A50CT.BOXFFWBOX.aef6ddd493e88714552ea0ff5222ab27"/>
+<summary>The National Weather Service in Norton has extended the * Flash Flood Warning for... Hartford County in northern Connecticut... West Central Tolland County in northern Connecticut... * Until 100 PM EDT. * At 1024 AM EDT, local law enforcement reported thunderstorms</summary>
+<cap:event>Flash Flood Warning</cap:event>
+<cap:effective>2023-09-13T10:24:00-04:00</cap:effective>
+<cap:expires>2023-09-13T13:00:00-04:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Immediate</cap:urgency>
+<cap:severity>Severe</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Hartford; Tolland</cap:areaDesc>
+<cap:polygon>42.03,-72.68 41.88,-72.48 41.73,-72.43 41.65,-72.51 41.63,-72.71 41.59,-72.75 41.58,-72.75 41.56,-72.83 41.57,-72.83 41.57,-72.85 41.55,-72.85 41.56,-72.88 41.56,-72.95 41.64,-72.94 41.64,-72.98 41.8,-73.02 41.81,-72.95 41.89,-72.94 41.9,-72.92 41.95,-72.89 42.03,-72.68</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>009003 009013</value>
+<valueName>UGC</valueName>
+<value>CTC003 CTC013</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.EXT.KBOX.FF.W.0067.000000T0000Z-230913T1700Z/
+/00000.0.ER.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=CT126660642D54.SpecialWeatherStatement.12666064520CCT.BOXSPSBOX.a1a94fe5cc8165c5bc339a3fb402552e</id>
+<updated>2023-09-13T10:21:00-04:00</updated>
+<published>2023-09-13T10:21:00-04:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Special Weather Statement issued September 13 at 10:21AM EDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CT126660642D54.SpecialWeatherStatement.12666064520CCT.BOXSPSBOX.a1a94fe5cc8165c5bc339a3fb402552e"/>
+<summary>...A strong thunderstorm will impact portions of northwestern Windham, Tolland, southeastern Hartford and southeastern Hampden Counties through 1115 AM EDT... At 1021 AM EDT, Doppler radar was tracking a strong thunderstorm near Cromwell, moving north at 30 mph. HAZARD...Winds in excess of 40 mph and pea size hail.</summary>
+<cap:event>Special Weather Statement</cap:event>
+<cap:effective>2023-09-13T10:21:00-04:00</cap:effective>
+<cap:expires>2023-09-13T11:15:00-04:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Observed</cap:certainty>
+<cap:areaDesc>Hartford; Tolland; Windham</cap:areaDesc>
+<cap:polygon>42.04,-72.45 41.98,-72.13 41.59,-72.39 41.6,-72.41 41.59,-72.42 41.58,-72.45 41.59,-72.47 41.65,-72.51 41.63,-72.61 41.64,-72.63 42.04,-72.45</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>009003 009013 009015</value>
+<valueName>UGC</valueName>
+<value>CTZ002 CTZ003 CTZ004</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value></value>
+</cap:parameter>
+</entry>
+<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=CT126660641260.FlashFloodWarning.1266606436B4CT.ALYFFSALY.851a2326e5e2cc84fd8cf2fc1a82f2d4</id>
 <updated>2023-09-13T09:52:00-04:00</updated>
 <published>2023-09-13T09:52:00-04:00</published>
@@ -382,39 +481,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value>/O.CON.KALY.FF.W.0036.000000T0000Z-230913T1445Z/
-/00000.0.ER.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=CT126660640A90.FlashFloodWarning.126660644C30CT.BOXFFSBOX.aef6ddd493e88714552ea0ff5222ab27</id>
-<updated>2023-09-13T09:32:00-04:00</updated>
-<published>2023-09-13T09:32:00-04:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Flash Flood Warning issued September 13 at 9:32AM EDT until September 13 at 11:00AM EDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CT126660640A90.FlashFloodWarning.126660644C30CT.BOXFFSBOX.aef6ddd493e88714552ea0ff5222ab27"/>
-<summary>...FLASH FLOOD WARNING REMAINS IN EFFECT UNTIL 11 AM EDT THIS MORNING FOR HARTFORD AND WEST CENTRAL TOLLAND COUNTIES... At 932 AM EDT, the public reported thunderstorms producing heavy rain across southwestern Hartford County. Between 1 and 3 inches of rain have fallen. The expected rainfall rate is 1 to 3 inches in 1 hour. Additional rainfall amounts of 1 to 3 inches are possible in</summary>
-<cap:event>Flash Flood Warning</cap:event>
-<cap:effective>2023-09-13T09:32:00-04:00</cap:effective>
-<cap:expires>2023-09-13T11:00:00-04:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Immediate</cap:urgency>
-<cap:severity>Severe</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Hartford; Tolland</cap:areaDesc>
-<cap:polygon>42.03,-72.68 41.88,-72.48 41.73,-72.43 41.65,-72.51 41.63,-72.71 41.59,-72.75 41.58,-72.75 41.56,-72.83 41.57,-72.83 41.57,-72.85 41.55,-72.85 41.56,-72.88 41.56,-72.95 41.64,-72.94 41.64,-72.98 41.8,-73.02 41.81,-72.95 41.89,-72.94 41.9,-72.92 41.95,-72.89 42.03,-72.68</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>009003 009013</value>
-<valueName>UGC</valueName>
-<value>CTC003 CTC013</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KBOX.FF.W.0067.000000T0000Z-230913T1500Z/
 /00000.0.ER.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
 </cap:parameter>
 </entry>
@@ -452,105 +518,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=CT12666064025C.FlashFloodWarning.12666064520CCT.OKXFFWOKX.598a77c1d0ea6417072a4675bae49017</id>
-<updated>2023-09-13T09:11:00-04:00</updated>
-<published>2023-09-13T09:11:00-04:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Flash Flood Warning issued September 13 at 9:11AM EDT until September 13 at 11:15AM EDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CT12666064025C.FlashFloodWarning.12666064520CCT.OKXFFWOKX.598a77c1d0ea6417072a4675bae49017"/>
-<summary>The National Weather Service in Upton has issued a * Flash Flood Warning for... Central New Haven County in southern Connecticut... * Until 1115 AM EDT. * At 911 AM EDT, Doppler radar indicated thunderstorms producing heavy rain across the warned area. Between 1 and 2 inches of rain</summary>
-<cap:event>Flash Flood Warning</cap:event>
-<cap:effective>2023-09-13T09:11:00-04:00</cap:effective>
-<cap:expires>2023-09-13T11:15:00-04:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Immediate</cap:urgency>
-<cap:severity>Severe</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>New Haven</cap:areaDesc>
-<cap:polygon>41.55,-72.87 41.55,-72.85 41.57,-72.85 41.57,-72.83 41.33,-72.99 41.32,-73.09 41.35,-73.14 41.38,-73.16 41.39,-73.18 41.47,-73.15 41.59,-73.08 41.59,-73.06 41.61,-73.06 41.61,-73.02 41.63,-73.02 41.64,-72.98 41.64,-72.94 41.61,-72.93 41.56,-72.95 41.56,-72.88 41.55,-72.87</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>009009</value>
-<valueName>UGC</valueName>
-<value>CTC009</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.NEW.KOKX.FF.W.0050.230913T1311Z-230913T1515Z/
-/00000.0.ER.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=CT12666063E830.FloodAdvisory.126660642AFCCT.OKXFLSOKX.dd40e7160bc7f7be0b2502fa9629b1cb</id>
-<updated>2023-09-13T08:44:00-04:00</updated>
-<published>2023-09-13T08:44:00-04:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Flood Advisory issued September 13 at 8:44AM EDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CT12666063E830.FloodAdvisory.126660642AFCCT.OKXFLSOKX.dd40e7160bc7f7be0b2502fa9629b1cb"/>
-<summary>...FLOOD ADVISORY IN EFFECT UNTIL 1015 AM EDT THIS MORNING... * WHAT...Flooding caused by excessive rainfall is expected. * WHERE...A portion of southern Connecticut, including the following counties, Fairfield, Middlesex and New Haven. * WHEN...Until 1015 AM EDT. * IMPACTS...Minor flooding in low-lying and poor drainage areas.</summary>
-<cap:event>Flood Advisory</cap:event>
-<cap:effective>2023-09-13T08:44:00-04:00</cap:effective>
-<cap:expires>2023-09-13T10:15:00-04:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Fairfield</cap:areaDesc>
-<cap:polygon>41.39,-73.11 41.56,-73.16 41.57,-73.09 41.59,-73.06 41.61,-73.06 41.61,-73.02 41.63,-73.02 41.64,-72.94 41.56,-72.95 41.56,-72.88 41.55,-72.85 41.57,-72.85 41.57,-72.83 41.55,-72.82 41.58,-72.75 41.61,-72.72 41.63,-72.71 41.64,-72.63 41.31,-72.88 41.03,-73.5 41.39,-73.11</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>009001</value>
-<valueName>UGC</valueName>
-<value>CTC001</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.NEW.KOKX.FA.Y.0191.230913T1244Z-230913T1415Z/
-/00000.N.ER.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=CT12666063E830.FloodAdvisory.126660714A5CCT.OKXFLSOKX.2adbbd1244bcbaeb47b2c60e184d7a63</id>
-<updated>2023-09-13T08:44:00-04:00</updated>
-<published>2023-09-13T08:44:00-04:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Flood Advisory issued September 13 at 8:44AM EDT until further notice by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CT12666063E830.FloodAdvisory.126660714A5CCT.OKXFLSOKX.2adbbd1244bcbaeb47b2c60e184d7a63"/>
-<summary>...FLOOD ADVISORY IN EFFECT UNTIL 1015 AM EDT THIS MORNING... * WHAT...Flooding caused by excessive rainfall is expected. * WHERE...A portion of southern Connecticut, including the following counties, Fairfield, Middlesex and New Haven. * WHEN...Until 1015 AM EDT. * IMPACTS...Minor flooding in low-lying and poor drainage areas.</summary>
-<cap:event>Flood Advisory</cap:event>
-<cap:effective>2023-09-13T08:44:00-04:00</cap:effective>
-<cap:expires>2023-09-13T20:15:00-04:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Middlesex; New Haven</cap:areaDesc>
-<cap:polygon>41.39,-73.11 41.56,-73.16 41.57,-73.09 41.59,-73.06 41.61,-73.06 41.61,-73.02 41.63,-73.02 41.64,-72.94 41.56,-72.95 41.56,-72.88 41.55,-72.85 41.57,-72.85 41.57,-72.83 41.55,-72.82 41.58,-72.75 41.61,-72.72 41.63,-72.71 41.64,-72.63 41.31,-72.88 41.03,-73.5 41.39,-73.11</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>009007 009009</value>
-<valueName>UGC</valueName>
-<value>CTC007 CTC009</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.NEW.KOKX.FA.Y.0191.230913T1244Z-230913T1415Z/
-/00000.N.ER.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
-</cap:parameter>
-</entry>
-<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=CT12666063DAE8.FloodWarning.126660714A5CCT.ALYFLWALY.f73f864d6ac5fe31b73156ace1877278</id>
 <updated>2023-09-13T08:10:00-04:00</updated>
 <published>2023-09-13T08:10:00-04:00</published>
@@ -584,31 +551,31 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=CT126660639240.FloodWatch.126660647EF8CT.ALYFFAALY.abd14715d63b35e5340e08eab521b0db</id>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=CT126660639240.FloodWatch.12666064520CCT.ALYFFAALY.baef0f0ad3e57c7d690e347adf2779f2</id>
 <updated>2023-09-13T06:24:00-04:00</updated>
 <published>2023-09-13T06:24:00-04:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Flood Watch issued September 13 at 6:24AM EDT until September 13 at 12:30PM EDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CT126660639240.FloodWatch.126660647EF8CT.ALYFFAALY.abd14715d63b35e5340e08eab521b0db"/>
+<title>Flood Watch issued September 13 at 6:24AM EDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CT126660639240.FloodWatch.12666064520CCT.ALYFFAALY.baef0f0ad3e57c7d690e347adf2779f2"/>
 <summary>...FLOOD WATCH REMAINS IN EFFECT UNTIL 6 PM EDT THIS EVENING... * WHAT...Flooding caused by excessive rainfall continues to be possible. * WHERE...Portions of northwestern Connecticut, including the following areas, Litchfield County. Portions of east central New York, including the following areas, Dutchess and Ulster Counties.</summary>
 <cap:event>Flood Watch</cap:event>
 <cap:effective>2023-09-13T06:24:00-04:00</cap:effective>
-<cap:expires>2023-09-13T12:30:00-04:00</cap:expires>
+<cap:expires>2023-09-13T11:15:00-04:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
 <cap:category>Met</cap:category>
 <cap:urgency>Future</cap:urgency>
 <cap:severity>Moderate</cap:severity>
 <cap:certainty>Possible</cap:certainty>
-<cap:areaDesc>Northern Litchfield; Southern Litchfield</cap:areaDesc>
+<cap:areaDesc>Southern Litchfield</cap:areaDesc>
 <cap:polygon></cap:polygon>
 <cap:geocode>
 <valueName>FIPS6</valueName>
 <value>009005</value>
 <valueName>UGC</valueName>
-<value>CTZ001 CTZ013</value>
+<value>CTZ013</value>
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
@@ -617,18 +584,51 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=CT126660636A68.FloodWatch.126660647EF8CT.OKXFFAOKX.0536265f265de79a8e50d9a38bbfd7a8</id>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=CT126660639240.FloodWatch.12666064A608CT.ALYFFAALY.88bb970b6ef3df7a3a140aa6ecdba9a3</id>
+<updated>2023-09-13T06:24:00-04:00</updated>
+<published>2023-09-13T06:24:00-04:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Flood Watch issued September 13 at 6:24AM EDT until September 13 at 1:30PM EDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CT126660639240.FloodWatch.12666064A608CT.ALYFFAALY.88bb970b6ef3df7a3a140aa6ecdba9a3"/>
+<summary>...FLOOD WATCH REMAINS IN EFFECT UNTIL 6 PM EDT THIS EVENING... * WHAT...Flooding caused by excessive rainfall continues to be possible. * WHERE...Portions of northwestern Connecticut, including the following areas, Litchfield County. Portions of east central New York, including the following areas, Dutchess and Ulster Counties.</summary>
+<cap:event>Flood Watch</cap:event>
+<cap:effective>2023-09-13T06:24:00-04:00</cap:effective>
+<cap:expires>2023-09-13T13:30:00-04:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Future</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Possible</cap:certainty>
+<cap:areaDesc>Northern Litchfield</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>009005</value>
+<valueName>UGC</valueName>
+<value>CTZ001</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KALY.FA.A.0013.000000T0000Z-230913T2200Z/
+/00000.0.ER.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=CT126660636A68.FloodWatch.12666064520CCT.OKXFFAOKX.0536265f265de79a8e50d9a38bbfd7a8</id>
 <updated>2023-09-13T05:22:00-04:00</updated>
 <published>2023-09-13T05:22:00-04:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Flood Watch issued September 13 at 5:22AM EDT until September 13 at 12:30PM EDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CT126660636A68.FloodWatch.126660647EF8CT.OKXFFAOKX.0536265f265de79a8e50d9a38bbfd7a8"/>
+<title>Flood Watch issued September 13 at 5:22AM EDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CT126660636A68.FloodWatch.12666064520CCT.OKXFFAOKX.0536265f265de79a8e50d9a38bbfd7a8"/>
 <summary>...FLOOD WATCH REMAINS IN EFFECT THROUGH THIS AFTERNOON... * WHAT...Flooding caused by excessive rainfall continues to be possible. * WHERE...Portions of southern Connecticut, including the following areas, Northern Fairfield and Southern Fairfield. Portions of northeast New Jersey, including the following areas, Eastern</summary>
 <cap:event>Flood Watch</cap:event>
 <cap:effective>2023-09-13T05:22:00-04:00</cap:effective>
-<cap:expires>2023-09-13T12:30:00-04:00</cap:expires>
+<cap:expires>2023-09-13T11:15:00-04:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
 <cap:category>Met</cap:category>
@@ -650,18 +650,18 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=CT126660636A68.FloodWatch.126660647EF8CT.OKXFFAOKX.846320f890d176d429eb001978185395</id>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=CT126660636A68.FloodWatch.12666064520CCT.OKXFFAOKX.846320f890d176d429eb001978185395</id>
 <updated>2023-09-13T05:22:00-04:00</updated>
 <published>2023-09-13T05:22:00-04:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Flood Watch issued September 13 at 5:22AM EDT until September 13 at 12:30PM EDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CT126660636A68.FloodWatch.126660647EF8CT.OKXFFAOKX.846320f890d176d429eb001978185395"/>
+<title>Flood Watch issued September 13 at 5:22AM EDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CT126660636A68.FloodWatch.12666064520CCT.OKXFFAOKX.846320f890d176d429eb001978185395"/>
 <summary>...FLOOD WATCH REMAINS IN EFFECT THROUGH LATE TONIGHT... * WHAT...Flooding caused by excessive rainfall continues to be possible. * WHERE...Portions of southern Connecticut, including the following areas, Northern Middlesex, Northern New Haven, Northern New London, Southern Middlesex, Southern New Haven and Southern New</summary>
 <cap:event>Flood Watch</cap:event>
 <cap:effective>2023-09-13T05:22:00-04:00</cap:effective>
-<cap:expires>2023-09-13T12:30:00-04:00</cap:expires>
+<cap:expires>2023-09-13T11:15:00-04:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
 <cap:category>Met</cap:category>
@@ -683,18 +683,18 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=CT126660634420.FloodWatch.126660647EF8CT.BOXFFABOX.6fdb7c81353310f07654450a6f7af111</id>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=CT126660634420.FloodWatch.12666064520CCT.BOXFFABOX.6fdb7c81353310f07654450a6f7af111</id>
 <updated>2023-09-13T04:24:00-04:00</updated>
 <published>2023-09-13T04:24:00-04:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Flood Watch issued September 13 at 4:24AM EDT until September 13 at 12:30PM EDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CT126660634420.FloodWatch.126660647EF8CT.BOXFFABOX.6fdb7c81353310f07654450a6f7af111"/>
+<title>Flood Watch issued September 13 at 4:24AM EDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CT126660634420.FloodWatch.12666064520CCT.BOXFFABOX.6fdb7c81353310f07654450a6f7af111"/>
 <summary>...FLOOD WATCH REMAINS IN EFFECT FROM 11 AM EDT THIS MORNING THROUGH THURSDAY MORNING... * WHAT...Flooding caused by excessive rainfall continues to be possible. * WHERE...Portions of northern Connecticut, including the following areas, Hartford CT, Tolland CT and Windham CT. Portions of</summary>
 <cap:event>Flood Watch</cap:event>
 <cap:effective>2023-09-13T04:24:00-04:00</cap:effective>
-<cap:expires>2023-09-13T12:30:00-04:00</cap:expires>
+<cap:expires>2023-09-13T11:15:00-04:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
 <cap:category>Met</cap:category>
@@ -745,6 +745,39 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value>/O.EXT.KPHI.RP.S.0006.000000T0000Z-230915T0100Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=FL126660642A98.FloodWarning.126660714480FL.TBWFLSTBW.78459bfaf805ab5cf364320b72553f12</id>
+<updated>2023-09-13T10:14:00-04:00</updated>
+<published>2023-09-13T10:14:00-04:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Flood Warning issued September 13 at 10:14AM EDT until September 13 at 8:00PM EDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=FL126660642A98.FloodWarning.126660714480FL.TBWFLSTBW.78459bfaf805ab5cf364320b72553f12"/>
+<summary>...The Flood Warning is extended for the following rivers in Florida... Myakka River At Myakka River State Park affecting Sarasota County. For the Myakka...including Myakka River State Park...Minor flooding is forecast. ...FLOOD WARNING NOW IN EFFECT UNTIL THIS AFTERNOON...</summary>
+<cap:event>Flood Warning</cap:event>
+<cap:effective>2023-09-13T10:14:00-04:00</cap:effective>
+<cap:expires>2023-09-13T20:00:00-04:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Sarasota</cap:areaDesc>
+<cap:polygon>27.26,-82.26 27.15,-82.34 27.15,-82.38 27.31,-82.26 27.26,-82.26</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>012115</value>
+<valueName>UGC</valueName>
+<value>FLC115</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.EXT.KTBW.FL.W.0009.000000T0000Z-230914T0000Z/
+/MKCF1.1.ER.230904T0530Z.230906T2130Z.230913T1800Z.NO/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -809,39 +842,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value>/O.EXT.KJAX.RP.S.0031.000000T0000Z-230915T0900Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=FL126660621118.FloodWarning.12666064C160FL.TBWFLSTBW.78459bfaf805ab5cf364320b72553f12</id>
-<updated>2023-09-12T20:38:00-04:00</updated>
-<published>2023-09-12T20:38:00-04:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Flood Warning issued September 12 at 8:38PM EDT until September 13 at 2:00PM EDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=FL126660621118.FloodWarning.12666064C160FL.TBWFLSTBW.78459bfaf805ab5cf364320b72553f12"/>
-<summary>...The Flood Warning is extended for the following rivers in Florida... Myakka River At Myakka River State Park affecting Sarasota County. For the Myakka...including Myakka River State Park...Minor flooding is forecast. ...FLOOD WARNING NOW IN EFFECT UNTIL EARLY TOMORROW AFTERNOON...</summary>
-<cap:event>Flood Warning</cap:event>
-<cap:effective>2023-09-12T20:38:00-04:00</cap:effective>
-<cap:expires>2023-09-13T14:00:00-04:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Sarasota</cap:areaDesc>
-<cap:polygon>27.26,-82.26 27.15,-82.34 27.15,-82.38 27.31,-82.26 27.26,-82.26</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>012115</value>
-<valueName>UGC</valueName>
-<value>FLC115</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.EXT.KTBW.FL.W.0009.000000T0000Z-230913T1800Z/
-/MKCF1.1.ER.230904T0530Z.230906T2130Z.230913T1200Z.NO/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -942,6 +942,38 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=MA126660642D54.SpecialWeatherStatement.12666064520CMA.BOXSPSBOX.7b569efda92ad6cc8d83dcae6938ff3d</id>
+<updated>2023-09-13T10:21:00-04:00</updated>
+<published>2023-09-13T10:21:00-04:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Special Weather Statement issued September 13 at 10:21AM EDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MA126660642D54.SpecialWeatherStatement.12666064520CMA.BOXSPSBOX.7b569efda92ad6cc8d83dcae6938ff3d"/>
+<summary>...A strong thunderstorm will impact portions of northwestern Windham, Tolland, southeastern Hartford and southeastern Hampden Counties through 1115 AM EDT... At 1021 AM EDT, Doppler radar was tracking a strong thunderstorm near Cromwell, moving north at 30 mph. HAZARD...Winds in excess of 40 mph and pea size hail.</summary>
+<cap:event>Special Weather Statement</cap:event>
+<cap:effective>2023-09-13T10:21:00-04:00</cap:effective>
+<cap:expires>2023-09-13T11:15:00-04:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Observed</cap:certainty>
+<cap:areaDesc>Eastern Hampden</cap:areaDesc>
+<cap:polygon>42.04,-72.45 41.98,-72.13 41.59,-72.39 41.6,-72.41 41.59,-72.42 41.58,-72.45 41.59,-72.47 41.65,-72.51 41.63,-72.61 41.64,-72.63 42.04,-72.45</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>025013</value>
+<valueName>UGC</valueName>
+<value>MAZ011</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value></value>
+</cap:parameter>
+</entry>
+<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=MA12666064070C.FlashFloodWarning.126660647EF8MA.BOXFFWBOX.4c0767aa07e508a68ada36023774d4de</id>
 <updated>2023-09-13T09:23:00-04:00</updated>
 <published>2023-09-13T09:23:00-04:00</published>
@@ -975,14 +1007,47 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=MA126660634420.FloodWatch.126660647EF8MA.BOXFFABOX.6a8f5a813060931cf9f44cbaf0703127</id>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=MA126660634420.FloodWatch.12666064520CMA.BOXFFABOX.afc02350ee1605f0d71ff1e589847dda</id>
+<updated>2023-09-13T04:24:00-04:00</updated>
+<published>2023-09-13T04:24:00-04:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Flood Watch issued September 13 at 4:24AM EDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MA126660634420.FloodWatch.12666064520CMA.BOXFFABOX.afc02350ee1605f0d71ff1e589847dda"/>
+<summary>...FLOOD WATCH REMAINS IN EFFECT FROM 11 AM EDT THIS MORNING THROUGH THURSDAY MORNING... * WHAT...Flooding caused by excessive rainfall continues to be possible. * WHERE...Portions of northern Connecticut, including the following areas, Hartford CT, Tolland CT and Windham CT. Portions of</summary>
+<cap:event>Flood Watch</cap:event>
+<cap:effective>2023-09-13T04:24:00-04:00</cap:effective>
+<cap:expires>2023-09-13T11:15:00-04:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Future</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Possible</cap:certainty>
+<cap:areaDesc>Eastern Norfolk; Eastern Plymouth; Northern Bristol; Southeast Middlesex; Southern Bristol; Southern Worcester; Suffolk; Western Norfolk; Western Plymouth</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>025005 025017 025021 025023 025025 025027</value>
+<valueName>UGC</valueName>
+<value>MAZ012 MAZ013 MAZ014 MAZ015 MAZ016 MAZ017 MAZ018 MAZ019 MAZ020</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KBOX.FA.A.0013.230913T1500Z-230914T1200Z/
+/00000.0.ER.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=MA126660634420.FloodWatch.126660647EF8MA.BOXFFABOX.c5854747bc3bb4ce7fc45fb4ae858132</id>
 <updated>2023-09-13T04:24:00-04:00</updated>
 <published>2023-09-13T04:24:00-04:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
 <title>Flood Watch issued September 13 at 4:24AM EDT until September 13 at 12:30PM EDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MA126660634420.FloodWatch.126660647EF8MA.BOXFFABOX.6a8f5a813060931cf9f44cbaf0703127"/>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MA126660634420.FloodWatch.126660647EF8MA.BOXFFABOX.c5854747bc3bb4ce7fc45fb4ae858132"/>
 <summary>...FLOOD WATCH REMAINS IN EFFECT FROM 11 AM EDT THIS MORNING THROUGH THURSDAY MORNING... * WHAT...Flooding caused by excessive rainfall continues to be possible. * WHERE...Portions of northern Connecticut, including the following areas, Hartford CT, Tolland CT and Windham CT. Portions of</summary>
 <cap:event>Flood Watch</cap:event>
 <cap:effective>2023-09-13T04:24:00-04:00</cap:effective>
@@ -993,13 +1058,13 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:urgency>Future</cap:urgency>
 <cap:severity>Moderate</cap:severity>
 <cap:certainty>Possible</cap:certainty>
-<cap:areaDesc>Central Middlesex County; Eastern Essex; Eastern Franklin; Eastern Hampden; Eastern Hampshire; Eastern Norfolk; Eastern Plymouth; Northern Bristol; Northern Worcester; Southeast Middlesex; Southern Bristol; Southern Worcester; Suffolk; Western Essex; Western Norfolk; Western Plymouth</cap:areaDesc>
+<cap:areaDesc>Central Middlesex County; Eastern Essex; Eastern Franklin; Eastern Hampden; Eastern Hampshire; Northern Worcester; Western Essex</cap:areaDesc>
 <cap:polygon></cap:polygon>
 <cap:geocode>
 <valueName>FIPS6</valueName>
-<value>025005 025009 025011 025013 025015 025017 025021 025023 025025 025027</value>
+<value>025009 025011 025013 025015 025017 025027</value>
 <valueName>UGC</valueName>
-<value>MAZ003 MAZ004 MAZ005 MAZ006 MAZ007 MAZ010 MAZ011 MAZ012 MAZ013 MAZ014 MAZ015 MAZ016 MAZ017 MAZ018 MAZ019 MAZ020</value>
+<value>MAZ003 MAZ004 MAZ005 MAZ006 MAZ007 MAZ010 MAZ011</value>
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
@@ -1102,70 +1167,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value>/O.CON.KAKQ.BH.S.0014.000000T0000Z-230914T0000Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=MN1266606407D4.DenseFogAdvisory.126660644C30MN.FGFNPWFGF.53042769c4a8cba8ea8728aac1812419</id>
-<updated>2023-09-13T08:25:00-05:00</updated>
-<published>2023-09-13T08:25:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Dense Fog Advisory issued September 13 at 8:25AM CDT until September 13 at 10:00AM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MN1266606407D4.DenseFogAdvisory.126660644C30MN.FGFNPWFGF.53042769c4a8cba8ea8728aac1812419"/>
-<summary>...DENSE FOG ADVISORY REMAINS IN EFFECT UNTIL 10 AM CDT THIS MORNING... * WHAT...Visibility one quarter mile or less in dense fog. * WHERE...Hubbard, East Becker, East Otter Tail and Wadena Counties. * WHEN...Until 10 AM CDT this morning.</summary>
-<cap:event>Dense Fog Advisory</cap:event>
-<cap:effective>2023-09-13T08:25:00-05:00</cap:effective>
-<cap:expires>2023-09-13T10:00:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>East Becker; East Otter Tail; Hubbard; Wadena</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>027005 027057 027111 027159</value>
-<valueName>UGC</valueName>
-<value>MNZ024 MNZ028 MNZ031 MNZ032</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KFGF.FG.Y.0014.000000T0000Z-230913T1500Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=MN12666063D958.SpecialWeatherStatement.126660642AFCMN.MPXSPSMPX.56b1a020527e8fa903bc80e7d77aa809</id>
-<updated>2023-09-13T07:06:00-05:00</updated>
-<published>2023-09-13T07:06:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Special Weather Statement issued September 13 at 7:06AM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MN12666063D958.SpecialWeatherStatement.126660642AFCMN.MPXSPSMPX.56b1a020527e8fa903bc80e7d77aa809"/>
-<summary>...AREAS OF DENSE FOG EARLY THIS MORNING... Areas of dense fog have developed across west central Minnesota and will continue through mid morning. Visibilities have dropped to a quarter mile or less. Use caution while driving and be prepared to encounter rapid visibility reductions. Fog will dissipate later this morning.</summary>
-<cap:event>Special Weather Statement</cap:event>
-<cap:effective>2023-09-13T07:06:00-05:00</cap:effective>
-<cap:expires>2023-09-13T09:15:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Observed</cap:certainty>
-<cap:areaDesc>Douglas; Pope; Stearns; Todd</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>027041 027121 027145 027153</value>
-<valueName>UGC</valueName>
-<value>MNZ041 MNZ042 MNZ048 MNZ049</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value></value>
 </cap:parameter>
 </entry>
 <entry>
