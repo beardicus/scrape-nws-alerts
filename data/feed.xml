@@ -16,16 +16,48 @@ xmlns = 'http://www.w3.org/2005/Atom'
 xmlns:cap = 'urn:oasis:names:tc:emergency:cap:1.1'
 xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 >
-<!-- http-date = Thu, 12 Oct 2023 18:02:00 GMT -->
+<!-- http-date = Thu, 12 Oct 2023 18:31:00 GMT -->
 <id>https://alerts.weather.gov/cap/us.php?x=0</id>
 <logo>http://alerts.weather.gov/images/xml_logo.gif</logo>
 <generator>NWS CAP Server</generator>
-<updated>2023-10-12T13:02:00-05:00</updated>
+<updated>2023-10-12T13:31:00-05:00</updated>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
 <title>Current Watches, Warnings and Advisories for the United States Issued by the National Weather Service</title>
 <link href="https://alerts.weather.gov/cap/us.php?x=0"/>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=AK1266664B6534.HighWindWarning.126666580A50AK.AFCNPWALU.2d3477f1ca3f886f4e453f9ae10d2a2b</id>
+<updated>2023-10-12T10:13:00-08:00</updated>
+<published>2023-10-12T10:13:00-08:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>High Wind Warning issued October 12 at 10:13AM AKDT until October 12 at 5:00PM AKDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=AK1266664B6534.HighWindWarning.126666580A50AK.AFCNPWALU.2d3477f1ca3f886f4e453f9ae10d2a2b"/>
+<summary>...HIGH WIND WARNING REMAINS IN EFFECT UNTIL 5 PM AKDT THIS AFTERNOON... * WHAT...West winds 50 to 65 mph with gusts up to 80 mph. Isolated gusts to 100 mph possible for Adak. * WHERE...Central Aleutians, including Adak and Atka. * WHEN...Until 5 PM AKDT this afternoon.</summary>
+<cap:event>High Wind Warning</cap:event>
+<cap:effective>2023-10-12T10:13:00-08:00</cap:effective>
+<cap:expires>2023-10-12T17:00:00-08:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Severe</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Central Aleutians</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>002016</value>
+<valueName>UGC</valueName>
+<value>AKZ187</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.PAFC.HW.W.0013.000000T0000Z-231013T0100Z/</value>
+</cap:parameter>
+</entry>
 <entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=AK1266664B44C8.FloodWatch.12666658102CAK.AJKFFAAJK.808c2dc48bde736b568837ff0ce9aac5</id>
 <updated>2023-10-12T09:30:00-08:00</updated>
@@ -89,38 +121,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value></value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=AK1266664AD18C.HighWindWarning.126666580A50AK.AFCNPWALU.2d3477f1ca3f886f4e453f9ae10d2a2b</id>
-<updated>2023-10-12T06:35:00-08:00</updated>
-<published>2023-10-12T06:35:00-08:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>High Wind Warning issued October 12 at 6:35AM AKDT until October 12 at 5:00PM AKDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=AK1266664AD18C.HighWindWarning.126666580A50AK.AFCNPWALU.2d3477f1ca3f886f4e453f9ae10d2a2b"/>
-<summary>...HIGH WIND WARNING REMAINS IN EFFECT UNTIL 5 PM AKDT THIS AFTERNOON... * WHAT...West winds 50 to 65 mph with gusts up to 80 mph. Isolated gusts to 100 mph possible for Adak. * WHERE...Central Aleutians, including Adak and Atka. * WHEN...Until 5 PM AKDT this afternoon.</summary>
-<cap:event>High Wind Warning</cap:event>
-<cap:effective>2023-10-12T06:35:00-08:00</cap:effective>
-<cap:expires>2023-10-12T17:00:00-08:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Severe</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Central Aleutians</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>002016</value>
-<valueName>UGC</valueName>
-<value>AKZ187</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.COR.PAFC.HW.W.0013.000000T0000Z-231013T0100Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -254,18 +254,18 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=AL1266664A3E48.RipCurrentStatement.12666668FA40AL.MOBCFWMOB.970dd42d9bbc2e4fd78e2adc8abc668a</id>
-<updated>2023-10-12T05:58:00-05:00</updated>
-<published>2023-10-12T05:58:00-05:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=AL1266664B6C3C.RipCurrentStatement.12666668D330AL.MOBCFWMOB.970dd42d9bbc2e4fd78e2adc8abc668a</id>
+<updated>2023-10-12T13:31:00-05:00</updated>
+<published>2023-10-12T13:31:00-05:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Rip Current Statement issued October 12 at 5:58AM CDT until October 14 at 7:00AM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=AL1266664A3E48.RipCurrentStatement.12666668FA40AL.MOBCFWMOB.970dd42d9bbc2e4fd78e2adc8abc668a"/>
-<summary>...HIGH SURF ADVISORY REMAINS IN EFFECT UNTIL NOON CDT TODAY... ...HIGH RIP CURRENT RISK REMAINS IN EFFECT THROUGH SATURDAY MORNING... * WHAT...For the High Surf Advisory, large breaking waves of 4 to 6 feet in the surf zone. For the High Rip Current Risk, dangerous rip currents.</summary>
+<title>Rip Current Statement issued October 12 at 1:31PM CDT until October 14 at 6:00AM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=AL1266664B6C3C.RipCurrentStatement.12666668D330AL.MOBCFWMOB.970dd42d9bbc2e4fd78e2adc8abc668a"/>
+<summary>...HIGH RIP CURRENT RISK NOW IN EFFECT THROUGH LATE FRIDAY NIGHT... * WHAT...Dangerous rip currents. * WHERE...In Alabama, Mobile Coastal and Baldwin Coastal Counties. In Florida, Escambia Coastal, Santa Rosa Coastal and Okaloosa Coastal Counties.</summary>
 <cap:event>Rip Current Statement</cap:event>
-<cap:effective>2023-10-12T05:58:00-05:00</cap:effective>
-<cap:expires>2023-10-14T07:00:00-05:00</cap:expires>
+<cap:effective>2023-10-12T13:31:00-05:00</cap:effective>
+<cap:expires>2023-10-14T06:00:00-05:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
 <cap:category>Met</cap:category>
@@ -282,40 +282,7 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
-<value>/O.CON.KMOB.SU.Y.0008.000000T0000Z-231012T1700Z/
-/O.CON.KMOB.RP.S.0032.000000T0000Z-231014T1200Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=AS126666498C8C.HighSurfAdvisory.1266664B65FCAS.STUCFWPPG.4eac5ee41057ecb34ada961d54bae810</id>
-<updated>2023-10-11T19:03:00-11:00</updated>
-<published>2023-10-11T19:03:00-11:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>High Surf Advisory issued October 11 at 7:03PM SST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=AS126666498C8C.HighSurfAdvisory.1266664B65FCAS.STUCFWPPG.4eac5ee41057ecb34ada961d54bae810"/>
-<summary>...HIGH SURF ADVISORY IN EFFECT UNTIL SUNDAY... WHAT...Surf of 10 to 12 feet WHERE...Eastern and southern shores WHEN...Through SUNDAY IMPACTS...Expect some strong breaking waves, shorebreak, and strong longshore and rip currents making water recreation difficult and</summary>
-<cap:event>High Surf Advisory</cap:event>
-<cap:effective>2023-10-11T19:03:00-11:00</cap:effective>
-<cap:expires>2023-10-12T07:15:00-11:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Manua; Rose Atoll; Swains Island; Tutuila and Aunuu</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>060010 060020 060030 060040 060050</value>
-<valueName>UGC</valueName>
-<value>ASZ001 ASZ002 ASZ003 ASZ004</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value></value>
+<value>/O.EXT.KMOB.RP.S.0032.000000T0000Z-231014T1100Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -380,6 +347,38 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value>/O.NEW.KFGZ.FZ.W.0001.231013T0400Z-231013T1500Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=CA1266664B6408.HighSurfAdvisory.1266664BFC60CA.LOXCFWLOX.5c8a9a1fcdb9ef4b337dc44f62a5df45</id>
+<updated>2023-10-12T11:10:00-07:00</updated>
+<published>2023-10-12T11:10:00-07:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>High Surf Advisory issued October 12 at 11:10AM PDT until October 12 at 3:00PM PDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CA1266664B6408.HighSurfAdvisory.1266664BFC60CA.LOXCFWLOX.5c8a9a1fcdb9ef4b337dc44f62a5df45"/>
+<summary>...HIGH SURF ADVISORY REMAINS IN EFFECT UNTIL 3 PM PDT THIS AFTERNOON... * WHAT...Large breaking waves of 8 to 12 feet with dangerous rip currents. * WHERE...San Luis Obispo County Beaches and Santa Barbara County Central Coast Beaches.</summary>
+<cap:event>High Surf Advisory</cap:event>
+<cap:effective>2023-10-12T11:10:00-07:00</cap:effective>
+<cap:expires>2023-10-12T15:00:00-07:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>San Luis Obispo County Beaches; Santa Barbara County Central Coast Beaches</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>006079 006083</value>
+<valueName>UGC</valueName>
+<value>CAZ340 CAZ346</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KLOX.SU.Y.0023.000000T0000Z-231012T2200Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -476,38 +475,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value>/O.CON.KLOX.WI.Y.0089.000000T0000Z-231012T1900Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=CA1266664A2E44.HighSurfAdvisory.1266664BFC60CA.LOXCFWLOX.5c8a9a1fcdb9ef4b337dc44f62a5df45</id>
-<updated>2023-10-12T03:17:00-07:00</updated>
-<published>2023-10-12T03:17:00-07:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>High Surf Advisory issued October 12 at 3:17AM PDT until October 12 at 3:00PM PDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CA1266664A2E44.HighSurfAdvisory.1266664BFC60CA.LOXCFWLOX.5c8a9a1fcdb9ef4b337dc44f62a5df45"/>
-<summary>...HIGH SURF ADVISORY REMAINS IN EFFECT UNTIL 3 PM PDT THIS AFTERNOON... * WHAT...Large breaking waves of 8 to 12 feet with dangerous rip currents. * WHERE...San Luis Obispo County Beaches and Santa Barbara County Central Coast Beaches.</summary>
-<cap:event>High Surf Advisory</cap:event>
-<cap:effective>2023-10-12T03:17:00-07:00</cap:effective>
-<cap:expires>2023-10-12T15:00:00-07:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>San Luis Obispo County Beaches; Santa Barbara County Central Coast Beaches</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>006079 006083</value>
-<valueName>UGC</valueName>
-<value>CAZ340 CAZ346</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KLOX.SU.Y.0023.000000T0000Z-231012T2200Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -668,38 +635,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value>/O.CON.KPUB.WW.Y.0026.000000T0000Z-231013T1200Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=CO1266664B420C.SpecialWeatherStatement.1266664B65FCCO.PUBSPSPUB.82a34d7d06205554efec0dec0c253cd8</id>
-<updated>2023-10-12T11:23:00-06:00</updated>
-<published>2023-10-12T11:23:00-06:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Special Weather Statement issued October 12 at 11:23AM MDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CO1266664B420C.SpecialWeatherStatement.1266664B65FCCO.PUBSPSPUB.82a34d7d06205554efec0dec0c253cd8"/>
-<summary>...Thunderstorms will impact portions of northwestern Kiowa County through 1215 PM MDT... At 1123 AM MDT, broadcast media reported thunderstorms producing a landspout over Haswell, or 37 miles northeast of North La Junta, moving east at 15 mph. HAZARD...Landspouts.</summary>
-<cap:event>Special Weather Statement</cap:event>
-<cap:effective>2023-10-12T11:23:00-06:00</cap:effective>
-<cap:expires>2023-10-12T12:15:00-06:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Observed</cap:certainty>
-<cap:areaDesc>Eastern Kiowa County; Western Kiowa County</cap:areaDesc>
-<cap:polygon>38.38,-103.12 38.36,-103.35 38.48,-103.4 38.53,-103.34 38.53,-103.17 38.61,-103.17 38.61,-102.62 38.38,-103.12</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>008061</value>
-<valueName>UGC</valueName>
-<value>COZ095 COZ096</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value></value>
 </cap:parameter>
 </entry>
 <entry>
@@ -994,6 +929,38 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=FL1266664B6C3C.RipCurrentStatement.12666668D330FL.MOBCFWMOB.d1b912de41ec7b4a93534db9d76e5740</id>
+<updated>2023-10-12T14:31:00-04:00</updated>
+<published>2023-10-12T14:31:00-04:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Rip Current Statement issued October 12 at 2:31PM EDT until October 14 at 7:00AM EDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=FL1266664B6C3C.RipCurrentStatement.12666668D330FL.MOBCFWMOB.d1b912de41ec7b4a93534db9d76e5740"/>
+<summary>...HIGH RIP CURRENT RISK NOW IN EFFECT THROUGH LATE FRIDAY NIGHT... * WHAT...Dangerous rip currents. * WHERE...In Alabama, Mobile Coastal and Baldwin Coastal Counties. In Florida, Escambia Coastal, Santa Rosa Coastal and Okaloosa Coastal Counties.</summary>
+<cap:event>Rip Current Statement</cap:event>
+<cap:effective>2023-10-12T14:31:00-04:00</cap:effective>
+<cap:expires>2023-10-14T07:00:00-04:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Escambia Coastal; Okaloosa Coastal; Santa Rosa Coastal</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>012033 012091 012113</value>
+<valueName>UGC</valueName>
+<value>FLZ202 FLZ204 FLZ206</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.EXT.KMOB.RP.S.0032.000000T0000Z-231014T1100Z/</value>
+</cap:parameter>
+</entry>
+<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=FL1266664B4DC4.FloodAdvisory.1266664B8730FL.JAXFLSJAX.b18efa4057a237feb4400533bad82055</id>
 <updated>2023-10-12T13:53:00-04:00</updated>
 <published>2023-10-12T13:53:00-04:00</published>
@@ -1088,72 +1055,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value>/O.NEW.KJAX.FA.Y.0221.231012T1642Z-231012T1845Z/
-/00000.N.ER.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=FL1266664B0198.FloodAdvisory.1266664B8730FL.JAXFLSJAX.b78f45cf7f0c754bb3262b6d3797bee8</id>
-<updated>2023-10-12T11:58:00-04:00</updated>
-<published>2023-10-12T11:58:00-04:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Flood Advisory issued October 12 at 11:58AM EDT until October 12 at 3:00PM EDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=FL1266664B0198.FloodAdvisory.1266664B8730FL.JAXFLSJAX.b78f45cf7f0c754bb3262b6d3797bee8"/>
-<summary>...FLOOD ADVISORY IN EFFECT UNTIL 215 PM EDT THIS AFTERNOON... * WHAT...Flooding caused by excessive rainfall is expected. * WHERE...A portion of northeast Florida, including the following county, Duval. * WHEN...Until 215 PM EDT. * IMPACTS...Minor flooding in low-lying and poor drainage areas.</summary>
-<cap:event>Flood Advisory</cap:event>
-<cap:effective>2023-10-12T11:58:00-04:00</cap:effective>
-<cap:expires>2023-10-12T15:00:00-04:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Duval</cap:areaDesc>
-<cap:polygon>30.35,-81.44 30.24,-81.84 30.32,-81.91 30.34,-81.83 30.47,-81.45 30.49,-81.41 30.36,-81.4 30.35,-81.44</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>012031</value>
-<valueName>UGC</valueName>
-<value>FLC031</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.NEW.KJAX.FA.Y.0220.231012T1558Z-231012T1815Z/
-/00000.N.ER.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=FL1266664AEE74.FloodAdvisory.1266664B8730FL.JAXFLSJAX.520c263213e6155e4a4d6e11f7f985ff</id>
-<updated>2023-10-12T11:09:00-04:00</updated>
-<published>2023-10-12T11:09:00-04:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Flood Advisory issued October 12 at 11:09AM EDT until October 12 at 3:00PM EDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=FL1266664AEE74.FloodAdvisory.1266664B8730FL.JAXFLSJAX.520c263213e6155e4a4d6e11f7f985ff"/>
-<summary>...FLOOD ADVISORY IN EFFECT UNTIL 215 PM EDT THIS AFTERNOON... * WHAT...Flooding caused by excessive rainfall is expected. * WHERE...A portion of northeast Florida, including the following counties, Duval and Nassau. * WHEN...Until 215 PM EDT. * IMPACTS...Minor flooding in low-lying and poor drainage areas.</summary>
-<cap:event>Flood Advisory</cap:event>
-<cap:effective>2023-10-12T11:09:00-04:00</cap:effective>
-<cap:expires>2023-10-12T15:00:00-04:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Duval; Nassau</cap:areaDesc>
-<cap:polygon>30.49,-81.82 30.59,-81.46 30.49,-81.42 30.47,-81.46 30.34,-81.83 30.49,-81.82</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>012031 012089</value>
-<valueName>UGC</valueName>
-<value>FLC031 FLC089</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.NEW.KJAX.FA.Y.0219.231012T1509Z-231012T1815Z/
 /00000.N.ER.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
 </cap:parameter>
 </entry>
@@ -1516,39 +1417,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=FL1266664A3E48.RipCurrentStatement.12666668FA40FL.MOBCFWMOB.d1b912de41ec7b4a93534db9d76e5740</id>
-<updated>2023-10-12T06:58:00-04:00</updated>
-<published>2023-10-12T06:58:00-04:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Rip Current Statement issued October 12 at 6:58AM EDT until October 14 at 8:00AM EDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=FL1266664A3E48.RipCurrentStatement.12666668FA40FL.MOBCFWMOB.d1b912de41ec7b4a93534db9d76e5740"/>
-<summary>...HIGH SURF ADVISORY REMAINS IN EFFECT UNTIL NOON CDT TODAY... ...HIGH RIP CURRENT RISK REMAINS IN EFFECT THROUGH SATURDAY MORNING... * WHAT...For the High Surf Advisory, large breaking waves of 4 to 6 feet in the surf zone. For the High Rip Current Risk, dangerous rip currents.</summary>
-<cap:event>Rip Current Statement</cap:event>
-<cap:effective>2023-10-12T06:58:00-04:00</cap:effective>
-<cap:expires>2023-10-14T08:00:00-04:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Escambia Coastal; Okaloosa Coastal; Santa Rosa Coastal</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>012033 012091 012113</value>
-<valueName>UGC</valueName>
-<value>FLZ202 FLZ204 FLZ206</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KMOB.SU.Y.0008.000000T0000Z-231012T1700Z/
-/O.CON.KMOB.RP.S.0032.000000T0000Z-231014T1200Z/</value>
-</cap:parameter>
-</entry>
-<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=FL12666649C080.WindAdvisory.1266664BAE40FL.MLBNPWMLB.25b076bd65b79df76f7f44db929f4121</id>
 <updated>2023-10-12T03:36:00-04:00</updated>
 <published>2023-10-12T03:36:00-04:00</published>
@@ -1874,6 +1742,38 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value>/O.CON.PGUM.SU.Y.0040.000000T0000Z-231015T0700Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=KS1266664B63A4.TornadoWatch.12666657E340KS.WNSWOU9.0e499a3965bdbe9eb8958802b149c61c</id>
+<updated>2023-10-12T13:09:00-05:00</updated>
+<published>2023-10-12T13:09:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Tornado Watch issued October 12 at 1:09PM CDT until October 12 at 7:00PM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=KS1266664B63A4.TornadoWatch.12666657E340KS.WNSWOU9.0e499a3965bdbe9eb8958802b149c61c"/>
+<summary>TORNADO WATCH 709 IS IN EFFECT UNTIL 700 PM CDT FOR THE FOLLOWING LOCATIONS KS . KANSAS COUNTIES INCLUDED ARE DECATUR GRAHAM JEWELL MITCHELL NORTON OSBORNE</summary>
+<cap:event>Tornado Watch</cap:event>
+<cap:effective>2023-10-12T13:09:00-05:00</cap:effective>
+<cap:expires>2023-10-12T19:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Severe</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Decatur; Graham; Jewell; Mitchell; Norton; Osborne; Phillips; Rooks; Sheridan; Smith</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>020039 020065 020089 020123 020137 020141 020147 020163 020179 020183</value>
+<valueName>UGC</valueName>
+<value>KSC039 KSC065 KSC089 KSC123 KSC137 KSC141 KSC147 KSC163 KSC179 KSC183</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.NEW.KWNS.TO.A.0709.231012T1810Z-231013T0000Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -2361,178 +2261,146 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=NE1266664B60E8.SevereThunderstormWarning.1266664B6BD8NE.GIDSVSGID.c0486d7880c1a98c0c5d032b8b6d5a45</id>
-<updated>2023-10-12T13:02:00-05:00</updated>
-<published>2023-10-12T13:02:00-05:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=NE1266664B6854.SpecialWeatherStatement.1266664B8730NE.GIDSPSGID.dec5f833d0c746646b6b2fcbc1cb0802</id>
+<updated>2023-10-12T13:21:00-05:00</updated>
+<published>2023-10-12T13:21:00-05:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Severe Thunderstorm Warning issued October 12 at 1:02PM CDT until October 12 at 1:30PM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=NE1266664B60E8.SevereThunderstormWarning.1266664B6BD8NE.GIDSVSGID.c0486d7880c1a98c0c5d032b8b6d5a45"/>
-<summary>...A SEVERE THUNDERSTORM WARNING REMAINS IN EFFECT UNTIL 130 PM CDT FOR SOUTHWESTERN DAWSON COUNTY... At 101 PM CDT, a severe thunderstorm was located near Eustis, or 18 miles west of Lexington, moving north at 25 mph. HAZARD...60 mph wind gusts and quarter size hail. SOURCE...Radar indicated.</summary>
-<cap:event>Severe Thunderstorm Warning</cap:event>
-<cap:effective>2023-10-12T13:02:00-05:00</cap:effective>
-<cap:expires>2023-10-12T13:30:00-05:00</cap:expires>
+<title>Special Weather Statement issued October 12 at 1:21PM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=NE1266664B6854.SpecialWeatherStatement.1266664B8730NE.GIDSPSGID.dec5f833d0c746646b6b2fcbc1cb0802"/>
+<summary>...A STRONG THUNDERSTORM WILL IMPACT GOSPER COUNTy THROUGH 200 PM CDT... At 120 PM CDT, Doppler radar was tracking a strong thunderstorm 7 miles north of Arapahoe, or 25 miles west of Holdrege, moving north at 25 mph. HAZARD...Wind gusts up to 40 mph and half inch hail.</summary>
+<cap:event>Special Weather Statement</cap:event>
+<cap:effective>2023-10-12T13:21:00-05:00</cap:effective>
+<cap:expires>2023-10-12T14:00:00-05:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
 <cap:category>Met</cap:category>
-<cap:urgency>Immediate</cap:urgency>
-<cap:severity>Severe</cap:severity>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
 <cap:certainty>Observed</cap:certainty>
-<cap:areaDesc>Dawson</cap:areaDesc>
-<cap:polygon>40.97,-100.22 40.95,-99.84 40.7,-99.96 40.7,-100.22 40.97,-100.22</cap:polygon>
+<cap:areaDesc>Gosper</cap:areaDesc>
+<cap:polygon>40.44,-100 40.44,-99.98 40.7,-99.98 40.7,-99.71 40.69,-99.65 40.55,-99.64 40.35,-99.74 40.35,-100 40.44,-100</cap:polygon>
 <cap:geocode>
 <valueName>FIPS6</valueName>
-<value>031047</value>
+<value>031073</value>
 <valueName>UGC</valueName>
-<value>NEC047</value>
+<value>NEZ072</value>
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
-<value>/O.CON.KGID.SV.W.0321.000000T0000Z-231012T1830Z/</value>
+<value></value>
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=NE1266664B60E8.SevereWeatherStatement.1266664B6BD8NE.GIDSVSGID.68b0fe1ceaa522ef36a27c07c39ef3e2</id>
-<updated>2023-10-12T13:02:00-05:00</updated>
-<published>2023-10-12T13:02:00-05:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=NE1266664B6660.SpecialWeatherStatement.1266664B71B4NE.GIDSPSGID.cf39ba3f94174cb696d00ecc8bc60b9d</id>
+<updated>2023-10-12T13:16:00-05:00</updated>
+<published>2023-10-12T13:16:00-05:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Severe Weather Statement issued October 12 at 1:02PM CDT until October 12 at 1:30PM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=NE1266664B60E8.SevereWeatherStatement.1266664B6BD8NE.GIDSVSGID.68b0fe1ceaa522ef36a27c07c39ef3e2"/>
-<summary>...A SEVERE THUNDERSTORM WARNING REMAINS IN EFFECT UNTIL 130 PM CDT FOR SOUTHWESTERN DAWSON COUNTY... At 101 PM CDT, a severe thunderstorm was located near Eustis, or 18 miles west of Lexington, moving north at 25 mph. HAZARD...60 mph wind gusts and quarter size hail. SOURCE...Radar indicated.</summary>
-<cap:event>Severe Weather Statement</cap:event>
-<cap:effective>2023-10-12T13:02:00-05:00</cap:effective>
-<cap:expires>2023-10-12T13:30:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Immediate</cap:urgency>
-<cap:severity>Severe</cap:severity>
-<cap:certainty>Observed</cap:certainty>
-<cap:areaDesc>Dawson</cap:areaDesc>
-<cap:polygon>40.97,-100.22 40.95,-99.84 40.7,-99.96 40.7,-100.22 40.97,-100.22</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>031047</value>
-<valueName>UGC</valueName>
-<value>NEC047</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KGID.SV.W.0321.000000T0000Z-231012T1830Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=NE1266664B4FB8.SevereThunderstormWarning.1266664B6BD8NE.LBFSVSLBF.c829951ff6d5c62713ba88faf5050521</id>
-<updated>2023-10-12T12:58:00-05:00</updated>
-<published>2023-10-12T12:58:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Severe Thunderstorm Warning issued October 12 at 12:58PM CDT until October 12 at 1:30PM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=NE1266664B4FB8.SevereThunderstormWarning.1266664B6BD8NE.LBFSVSLBF.c829951ff6d5c62713ba88faf5050521"/>
-<summary>...A SEVERE THUNDERSTORM WARNING REMAINS IN EFFECT UNTIL 130 PM CDT FOR NORTHEASTERN FRONTIER COUNTY... At 1257 PM CDT, a severe thunderstorm was located near Eustis, or 20 miles west of Lexington, moving north at 20 mph. HAZARD...Half dollar size hail. SOURCE...Radar indicated.</summary>
-<cap:event>Severe Thunderstorm Warning</cap:event>
-<cap:effective>2023-10-12T12:58:00-05:00</cap:effective>
-<cap:expires>2023-10-12T13:30:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Immediate</cap:urgency>
-<cap:severity>Severe</cap:severity>
-<cap:certainty>Observed</cap:certainty>
-<cap:areaDesc>Frontier</cap:areaDesc>
-<cap:polygon>40.7,-100.22 40.7,-99.98 40.65,-99.98 40.6,-99.99 40.6,-100.22 40.7,-100.22</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>031063</value>
-<valueName>UGC</valueName>
-<value>NEC063</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KLBF.SV.W.0360.000000T0000Z-231012T1830Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=NE1266664B4FB8.SevereWeatherStatement.1266664B6BD8NE.LBFSVSLBF.15182dc9916b256dc33ea0af19efa727</id>
-<updated>2023-10-12T12:58:00-05:00</updated>
-<published>2023-10-12T12:58:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Severe Weather Statement issued October 12 at 12:58PM CDT until October 12 at 1:30PM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=NE1266664B4FB8.SevereWeatherStatement.1266664B6BD8NE.LBFSVSLBF.15182dc9916b256dc33ea0af19efa727"/>
-<summary>...A SEVERE THUNDERSTORM WARNING REMAINS IN EFFECT UNTIL 130 PM CDT FOR NORTHEASTERN FRONTIER COUNTY... At 1257 PM CDT, a severe thunderstorm was located near Eustis, or 20 miles west of Lexington, moving north at 20 mph. HAZARD...Half dollar size hail. SOURCE...Radar indicated.</summary>
-<cap:event>Severe Weather Statement</cap:event>
-<cap:effective>2023-10-12T12:58:00-05:00</cap:effective>
-<cap:expires>2023-10-12T13:30:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Immediate</cap:urgency>
-<cap:severity>Severe</cap:severity>
-<cap:certainty>Observed</cap:certainty>
-<cap:areaDesc>Frontier</cap:areaDesc>
-<cap:polygon>40.7,-100.22 40.7,-99.98 40.65,-99.98 40.6,-99.99 40.6,-100.22 40.7,-100.22</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>031063</value>
-<valueName>UGC</valueName>
-<value>NEC063</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KLBF.SV.W.0360.000000T0000Z-231012T1830Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=NE1266664B4DC4.SevereThunderstormWarning.1266664B71B4NE.GIDSVRGID.c19b8b34e56d58129586f27aec47ebb3</id>
-<updated>2023-10-12T12:53:00-05:00</updated>
-<published>2023-10-12T12:53:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Severe Thunderstorm Warning issued October 12 at 12:53PM CDT until October 12 at 1:45PM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=NE1266664B4DC4.SevereThunderstormWarning.1266664B71B4NE.GIDSVRGID.c19b8b34e56d58129586f27aec47ebb3"/>
-<summary>The National Weather Service in Hastings has issued a * Severe Thunderstorm Warning for... Southern Gosper County in south central Nebraska... Northwestern Furnas County in south central Nebraska... * Until 145 PM CDT. * At 1252 PM CDT, a severe thunderstorm was located over Holbrook, or</summary>
-<cap:event>Severe Thunderstorm Warning</cap:event>
-<cap:effective>2023-10-12T12:53:00-05:00</cap:effective>
+<title>Special Weather Statement issued October 12 at 1:16PM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=NE1266664B6660.SpecialWeatherStatement.1266664B71B4NE.GIDSPSGID.cf39ba3f94174cb696d00ecc8bc60b9d"/>
+<summary>...A STRONG THUNDERSTORM WILL IMPACT WESTERN DAWSON COUNTY THROUGH 145 PM CDT... At 115 PM CDT, Doppler radar was tracking a strong thunderstorm near Willow Island, or 16 miles west of Lexington, moving north at 25 mph. HAZARD...Wind gusts up to 40 mph and half inch hail. SOURCE...Radar indicated.</summary>
+<cap:event>Special Weather Statement</cap:event>
+<cap:effective>2023-10-12T13:16:00-05:00</cap:effective>
 <cap:expires>2023-10-12T13:45:00-05:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
 <cap:category>Met</cap:category>
-<cap:urgency>Immediate</cap:urgency>
-<cap:severity>Severe</cap:severity>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
 <cap:certainty>Observed</cap:certainty>
-<cap:areaDesc>Furnas; Gosper</cap:areaDesc>
-<cap:polygon>40.35,-100.13 40.35,-100.1 40.44,-100.09 40.44,-99.98 40.61,-99.98 40.55,-99.73 40.14,-99.94 40.16,-100.2 40.17,-100.2 40.35,-100.13</cap:polygon>
+<cap:areaDesc>Dawson</cap:areaDesc>
+<cap:polygon>40.76,-100.19 41.05,-100.12 41.05,-99.79 40.71,-99.96 40.76,-100.19</cap:polygon>
 <cap:geocode>
 <valueName>FIPS6</valueName>
-<value>031065 031073</value>
+<value>031047</value>
 <valueName>UGC</valueName>
-<value>NEC065 NEC073</value>
+<value>NEZ060</value>
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
-<value>/O.NEW.KGID.SV.W.0322.231012T1753Z-231012T1845Z/</value>
+<value></value>
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=NE1266664B4CFC.FloodAdvisory.1266664C3504NE.LBFFLSLBF.05c7c5523bd36f0da8c53e35dcc912bf</id>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=NE1266664B64D0.SpecialWeatherStatement.1266664B8730NE.LBFSPSLBF.4403d9ef139126e39a18e24c0cf592ed</id>
+<updated>2023-10-12T13:12:00-05:00</updated>
+<published>2023-10-12T13:12:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Special Weather Statement issued October 12 at 1:12PM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=NE1266664B64D0.SpecialWeatherStatement.1266664B8730NE.LBFSPSLBF.4403d9ef139126e39a18e24c0cf592ed"/>
+<summary>...A STRONG THUNDERSTORM WILL IMPACT SOUTHEASTERN LINCOLN COUNTY THROUGH 200 PM CDT... At 112 PM CDT, Doppler radar was tracking a strong thunderstorm near Brady, or 22 miles north of Curtis, moving north at 20 mph. HAZARD...Penny size hail. SOURCE...Radar indicated.</summary>
+<cap:event>Special Weather Statement</cap:event>
+<cap:effective>2023-10-12T13:12:00-05:00</cap:effective>
+<cap:expires>2023-10-12T14:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Observed</cap:certainty>
+<cap:areaDesc>Lincoln</cap:areaDesc>
+<cap:polygon>40.79,-100.23 40.81,-100.48 41.14,-100.51 41.14,-100.25 40.79,-100.23</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>031111</value>
+<valueName>UGC</valueName>
+<value>NEZ059</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value></value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=NE1266664B63A4.TornadoWatch.12666657E340NE.WNSWOU9.8a9c6e2e2aa7ffba59a263acc5cc0e20</id>
+<updated>2023-10-12T13:09:00-05:00</updated>
+<published>2023-10-12T13:09:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Tornado Watch issued October 12 at 1:09PM CDT until October 12 at 7:00PM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=NE1266664B63A4.TornadoWatch.12666657E340NE.WNSWOU9.8a9c6e2e2aa7ffba59a263acc5cc0e20"/>
+<summary>TORNADO WATCH 709 IS IN EFFECT UNTIL 700 PM CDT FOR THE FOLLOWING LOCATIONS NE . NEBRASKA COUNTIES INCLUDED ARE ADAMS BLAINE BROWN BUFFALO CLAY CUSTER</summary>
+<cap:event>Tornado Watch</cap:event>
+<cap:effective>2023-10-12T13:09:00-05:00</cap:effective>
+<cap:expires>2023-10-12T19:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Severe</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Adams; Blaine; Brown; Buffalo; Clay; Custer; Dawson; Franklin; Frontier; Furnas; Garfield; Gosper; Greeley; Hall; Hamilton; Harlan; Holt; Howard; Kearney; Loup; Merrick; Nance; Nuckolls; Phelps; Red Willow; Rock; Sherman; Valley; Webster; Wheeler</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>031001 031009 031017 031019 031035 031041 031047 031061 031063 031065 031071 031073 031077 031079 031081 031083 031089 031093 031099 031115 031121 031125 031129 031137 031145 031149 031163 031175 031181 031183</value>
+<valueName>UGC</valueName>
+<value>NEC001 NEC009 NEC017 NEC019 NEC035 NEC041 NEC047 NEC061 NEC063 NEC065 NEC071 NEC073 NEC077 NEC079 NEC081 NEC083 NEC089 NEC093 NEC099 NEC115 NEC121 NEC125 NEC129 NEC137 NEC145 NEC149 NEC163 NEC175 NEC181 NEC183</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.NEW.KWNS.TO.A.0709.231012T1810Z-231013T0000Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=NE1266664B4CFC.FloodAdvisory.12666657E340NE.LBFFLSLBF.05c7c5523bd36f0da8c53e35dcc912bf</id>
 <updated>2023-10-12T12:51:00-05:00</updated>
 <published>2023-10-12T12:51:00-05:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Flood Advisory issued October 12 at 12:51PM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=NE1266664B4CFC.FloodAdvisory.1266664C3504NE.LBFFLSLBF.05c7c5523bd36f0da8c53e35dcc912bf"/>
+<title>Flood Advisory issued October 12 at 12:51PM CDT until October 12 at 7:00PM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=NE1266664B4CFC.FloodAdvisory.12666657E340NE.LBFFLSLBF.05c7c5523bd36f0da8c53e35dcc912bf"/>
 <summary>...FLOOD ADVISORY IN EFFECT UNTIL 645 PM CDT THIS EVENING... * WHAT...Flooding caused by excessive rainfall is expected. * WHERE...A portion of central Nebraska, including the following county, Custer. * WHEN...Until 645 PM CDT. * IMPACTS...Minor flooding in low-lying and poor drainage areas.</summary>
 <cap:event>Flood Advisory</cap:event>
 <cap:effective>2023-10-12T12:51:00-05:00</cap:effective>
-<cap:expires>2023-10-12T18:45:00-05:00</cap:expires>
+<cap:expires>2023-10-12T19:00:00-05:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
 <cap:category>Met</cap:category>
@@ -2551,38 +2419,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <valueName>VTEC</valueName>
 <value>/O.NEW.KLBF.FA.Y.0091.231012T1751Z-231012T2345Z/
 /00000.N.ER.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=NE1266664B4338.SpecialWeatherStatement.1266664B65FCNE.LBFSPSLBF.9e40bda48b696fea43bd7ab5d78fb8cf</id>
-<updated>2023-10-12T12:26:00-05:00</updated>
-<published>2023-10-12T12:26:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Special Weather Statement issued October 12 at 12:26PM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=NE1266664B4338.SpecialWeatherStatement.1266664B65FCNE.LBFSPSLBF.9e40bda48b696fea43bd7ab5d78fb8cf"/>
-<summary>...A STRONG THUNDERSTORM WILL IMPACT EASTERN FRONTIER COUNTY THROUGH 115 PM CDT... At 1226 PM CDT, Doppler radar was tracking a strong thunderstorm 10 miles northeast of Medicine Creek Reservoir State Recreation Area, or 19 miles east of Curtis, moving northeast at 35 mph. HAZARD...Penny size hail.</summary>
-<cap:event>Special Weather Statement</cap:event>
-<cap:effective>2023-10-12T12:26:00-05:00</cap:effective>
-<cap:expires>2023-10-12T13:15:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Observed</cap:certainty>
-<cap:areaDesc>Frontier</cap:areaDesc>
-<cap:polygon>40.36,-100.33 40.7,-100.22 40.7,-99.98 40.44,-99.98 40.44,-100.09 40.35,-100.1 40.35,-100.21 40.36,-100.33</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>031063</value>
-<valueName>UGC</valueName>
-<value>NEZ071</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value></value>
 </cap:parameter>
 </entry>
 <entry>
