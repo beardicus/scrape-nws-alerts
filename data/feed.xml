@@ -16,11 +16,11 @@ xmlns = 'http://www.w3.org/2005/Atom'
 xmlns:cap = 'urn:oasis:names:tc:emergency:cap:1.1'
 xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 >
-<!-- http-date = Mon, 30 Oct 2023 03:32:00 GMT -->
+<!-- http-date = Mon, 30 Oct 2023 04:00:00 GMT -->
 <id>https://alerts.weather.gov/cap/us.php?x=0</id>
 <logo>http://alerts.weather.gov/images/xml_logo.gif</logo>
 <generator>NWS CAP Server</generator>
-<updated>2023-10-29T22:32:00-05:00</updated>
+<updated>2023-10-29T23:00:00-05:00</updated>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
@@ -705,35 +705,67 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=AZ1266672FFEB0.AirQualityAlert.1266675BE5C0AZ.PSRAQAPSR.6182238282b2767f5819506cb0ed6000</id>
-<updated>2023-10-27T09:28:00-07:00</updated>
-<published>2023-10-27T09:28:00-07:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=CA1266675BD5BC.FreezeWarning.1266675DBA80CA.EKANPWEKA.d223c962e23b79ac0f6792bc56ec3b38</id>
+<updated>2023-10-29T20:59:00-07:00</updated>
+<published>2023-10-29T20:59:00-07:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Air Quality Alert issued October 27 at 9:28AM MST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=AZ1266672FFEB0.AirQualityAlert.1266675BE5C0AZ.PSRAQAPSR.6182238282b2767f5819506cb0ed6000"/>
-<summary>...PM-10 HIGH POLLUTION ADVISORY FOR THE YUMA AREA SUNDAY... The Arizona Department of Environmental Quality (ADEQ) has issued a PM-10 High Pollution Advisory for the Yuma area on Sunday. An episode of strong and gusty winds is forecast to generate widespread blowing dust that may result in local PM-10 concentrations that pose a health risk. Adverse health effects</summary>
-<cap:event>Air Quality Alert</cap:event>
-<cap:effective>2023-10-27T09:28:00-07:00</cap:effective>
-<cap:expires>2023-10-29T21:00:00-07:00</cap:expires>
+<title>Freeze Warning issued October 29 at 8:59PM PDT until October 30 at 9:00AM PDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CA1266675BD5BC.FreezeWarning.1266675DBA80CA.EKANPWEKA.d223c962e23b79ac0f6792bc56ec3b38"/>
+<summary>...FREEZE WARNING IN EFFECT FROM 1 AM TO 9 AM PDT MONDAY... * WHAT...Sub-freezing temperatures as low as 30 expected in the calm valleys. * WHERE...Northwestern Mendocino Interior, Northeastern Mendocino Interior and Southwestern Mendocino Interior Counties. * WHEN...From 1 AM to 9 AM PDT Monday.</summary>
+<cap:event>Freeze Warning</cap:event>
+<cap:effective>2023-10-29T20:59:00-07:00</cap:effective>
+<cap:expires>2023-10-30T09:00:00-07:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
 <cap:category>Met</cap:category>
-<cap:urgency>Unknown</cap:urgency>
-<cap:severity>Unknown</cap:severity>
-<cap:certainty>Unknown</cap:certainty>
-<cap:areaDesc>Yuma</cap:areaDesc>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Northeastern Mendocino Interior; Northwestern Mendocino Interior; Southwestern Mendocino Interior</cap:areaDesc>
 <cap:polygon></cap:polygon>
 <cap:geocode>
 <valueName>FIPS6</valueName>
-<value>004027</value>
+<value>006045</value>
 <valueName>UGC</valueName>
-<value>AZZ532</value>
+<value>CAZ110 CAZ111 CAZ112</value>
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
-<value></value>
+<value>/O.NEW.KEKA.FZ.W.0019.231030T0800Z-231030T1600Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=CA1266675BD5BC.FrostAdvisory.1266675DBA80CA.EKANPWEKA.9826f193060494b29635fdee77ad9e09</id>
+<updated>2023-10-29T20:59:00-07:00</updated>
+<published>2023-10-29T20:59:00-07:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Frost Advisory issued October 29 at 8:59PM PDT until October 30 at 9:00AM PDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CA1266675BD5BC.FrostAdvisory.1266675DBA80CA.EKANPWEKA.9826f193060494b29635fdee77ad9e09"/>
+<summary>...FROST ADVISORY IN EFFECT FROM 1 AM TO 9 AM PDT MONDAY... * WHAT...Temperatures as low as 35 will result in frost formation. * WHERE...Northern Humboldt Coast, Southwestern Humboldt, Northern Humboldt Interior, Southern Humboldt Interior and Mendocino Coast Counties.</summary>
+<cap:event>Frost Advisory</cap:event>
+<cap:effective>2023-10-29T20:59:00-07:00</cap:effective>
+<cap:expires>2023-10-30T09:00:00-07:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Mendocino Coast; Northern Humboldt Coast; Northern Humboldt Interior; Southern Humboldt Interior; Southwestern Humboldt</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>006023 006045</value>
+<valueName>UGC</valueName>
+<value>CAZ103 CAZ104 CAZ105 CAZ106 CAZ109</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.NEW.KEKA.FR.Y.0028.231030T0800Z-231030T1600Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -4111,6 +4143,38 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=OH1266675BCF18.FreezeWatch.1266676CAEA0OH.PBZNPWPBZ.c9a12581151a4802b3f877a9e9312f7e</id>
+<updated>2023-10-29T23:42:00-04:00</updated>
+<published>2023-10-29T23:42:00-04:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Freeze Watch issued October 29 at 11:42PM EDT until October 31 at 10:00AM EDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=OH1266675BCF18.FreezeWatch.1266676CAEA0OH.PBZNPWPBZ.c9a12581151a4802b3f877a9e9312f7e"/>
+<summary>...FREEZE WATCH REMAINS IN EFFECT FROM LATE MONDAY NIGHT THROUGH TUESDAY MORNING... * WHAT...Sub-freezing temperatures as low as 26 possible. * WHERE...Portions of east central Ohio. Portions of northwest, southwest, and western Pennsylvania. Portions of northern and the northern panhandle of West Virginia.</summary>
+<cap:event>Freeze Watch</cap:event>
+<cap:effective>2023-10-29T23:42:00-04:00</cap:effective>
+<cap:expires>2023-10-31T10:00:00-04:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Future</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Possible</cap:certainty>
+<cap:areaDesc>Belmont; Carroll; Columbiana; Coshocton; Guernsey; Harrison; Jefferson; Monroe; Muskingum; Noble; Tuscarawas</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>039013 039019 039029 039031 039059 039067 039081 039111 039119 039121 039157</value>
+<valueName>UGC</valueName>
+<value>OHZ039 OHZ040 OHZ041 OHZ048 OHZ049 OHZ050 OHZ057 OHZ058 OHZ059 OHZ068 OHZ069</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KPBZ.FZ.A.0005.231031T0400Z-231031T1400Z/</value>
+</cap:parameter>
+</entry>
+<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=OH1266675B9A5C.FreezeWatch.1266676CAEA0OH.CLENPWCLE.054247b7c3008ddef09d324f355e39ee</id>
 <updated>2023-10-29T22:07:00-04:00</updated>
 <published>2023-10-29T22:07:00-04:00</published>
@@ -4204,38 +4268,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value>/O.CON.KILN.FZ.A.0003.231031T0600Z-231031T1400Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=OH1266674ED920.FreezeWatch.1266676CAEA0OH.PBZNPWPBZ.c9a12581151a4802b3f877a9e9312f7e</id>
-<updated>2023-10-29T14:48:00-04:00</updated>
-<published>2023-10-29T14:48:00-04:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Freeze Watch issued October 29 at 2:48PM EDT until October 31 at 10:00AM EDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=OH1266674ED920.FreezeWatch.1266676CAEA0OH.PBZNPWPBZ.c9a12581151a4802b3f877a9e9312f7e"/>
-<summary>...FREEZE WATCH IN EFFECT FROM LATE MONDAY NIGHT THROUGH TUESDAY MORNING... * WHAT...Sub-freezing temperatures as low as 26 possible. * WHERE...Portions of east central Ohio. Portions of northwest, southwest, and western Pennsylvania. Portions of northern and the northern panhandle of West Virginia.</summary>
-<cap:event>Freeze Watch</cap:event>
-<cap:effective>2023-10-29T14:48:00-04:00</cap:effective>
-<cap:expires>2023-10-31T10:00:00-04:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Future</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Possible</cap:certainty>
-<cap:areaDesc>Belmont; Carroll; Columbiana; Coshocton; Guernsey; Harrison; Jefferson; Monroe; Muskingum; Noble; Tuscarawas</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>039013 039019 039029 039031 039059 039067 039081 039111 039119 039121 039157</value>
-<valueName>UGC</valueName>
-<value>OHZ039 OHZ040 OHZ041 OHZ048 OHZ049 OHZ050 OHZ057 OHZ058 OHZ059 OHZ068 OHZ069</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.NEW.KPBZ.FZ.A.0005.231031T0400Z-231031T1400Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -4335,6 +4367,38 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=PA1266675BCF18.FreezeWatch.1266676CAEA0PA.PBZNPWPBZ.644d714aa4e72951e9935c4a1e7d717a</id>
+<updated>2023-10-29T23:42:00-04:00</updated>
+<published>2023-10-29T23:42:00-04:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Freeze Watch issued October 29 at 11:42PM EDT until October 31 at 10:00AM EDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=PA1266675BCF18.FreezeWatch.1266676CAEA0PA.PBZNPWPBZ.644d714aa4e72951e9935c4a1e7d717a"/>
+<summary>...FREEZE WATCH REMAINS IN EFFECT FROM LATE MONDAY NIGHT THROUGH TUESDAY MORNING... * WHAT...Sub-freezing temperatures as low as 26 possible. * WHERE...Portions of east central Ohio. Portions of northwest, southwest, and western Pennsylvania. Portions of northern and the northern panhandle of West Virginia.</summary>
+<cap:event>Freeze Watch</cap:event>
+<cap:effective>2023-10-29T23:42:00-04:00</cap:effective>
+<cap:expires>2023-10-31T10:00:00-04:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Future</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Possible</cap:certainty>
+<cap:areaDesc>Allegheny; Armstrong; Beaver; Butler; Clarion; Fayette; Fayette Ridges; Forest; Greene; Higher Elevations of Indiana; Indiana; Jefferson; Lawrence; Mercer; Venango; Washington; Westmoreland; Westmoreland Ridges</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>042003 042005 042007 042019 042031 042051 042053 042059 042063 042065 042073 042085 042121 042125 042129</value>
+<valueName>UGC</valueName>
+<value>PAZ007 PAZ008 PAZ009 PAZ013 PAZ014 PAZ015 PAZ016 PAZ020 PAZ021 PAZ022 PAZ029 PAZ031 PAZ073 PAZ074 PAZ075 PAZ076 PAZ077 PAZ078</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KPBZ.FZ.A.0005.231031T0400Z-231031T1400Z/</value>
+</cap:parameter>
+</entry>
+<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=PA1266675B9A5C.FreezeWatch.1266676CAEA0PA.CLENPWCLE.acdf487ec714d8e3b8fb1bdea4c41fb6</id>
 <updated>2023-10-29T22:07:00-04:00</updated>
 <published>2023-10-29T22:07:00-04:00</published>
@@ -4364,38 +4428,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value>/O.CON.KCLE.FZ.A.0004.231031T0200Z-231031T1400Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=PA1266674ED920.FreezeWatch.1266676CAEA0PA.PBZNPWPBZ.644d714aa4e72951e9935c4a1e7d717a</id>
-<updated>2023-10-29T14:48:00-04:00</updated>
-<published>2023-10-29T14:48:00-04:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Freeze Watch issued October 29 at 2:48PM EDT until October 31 at 10:00AM EDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=PA1266674ED920.FreezeWatch.1266676CAEA0PA.PBZNPWPBZ.644d714aa4e72951e9935c4a1e7d717a"/>
-<summary>...FREEZE WATCH IN EFFECT FROM LATE MONDAY NIGHT THROUGH TUESDAY MORNING... * WHAT...Sub-freezing temperatures as low as 26 possible. * WHERE...Portions of east central Ohio. Portions of northwest, southwest, and western Pennsylvania. Portions of northern and the northern panhandle of West Virginia.</summary>
-<cap:event>Freeze Watch</cap:event>
-<cap:effective>2023-10-29T14:48:00-04:00</cap:effective>
-<cap:expires>2023-10-31T10:00:00-04:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Future</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Possible</cap:certainty>
-<cap:areaDesc>Allegheny; Armstrong; Beaver; Butler; Clarion; Fayette; Fayette Ridges; Forest; Greene; Higher Elevations of Indiana; Indiana; Jefferson; Lawrence; Mercer; Venango; Washington; Westmoreland; Westmoreland Ridges</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>042003 042005 042007 042019 042031 042051 042053 042059 042063 042065 042073 042085 042121 042125 042129</value>
-<valueName>UGC</valueName>
-<value>PAZ007 PAZ008 PAZ009 PAZ013 PAZ014 PAZ015 PAZ016 PAZ020 PAZ021 PAZ022 PAZ029 PAZ031 PAZ073 PAZ074 PAZ075 PAZ076 PAZ077 PAZ078</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.NEW.KPBZ.FZ.A.0005.231031T0400Z-231031T1400Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -4437,7 +4469,7 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Flood Watch issued October 29 at 4:33PM ADT by NWS</title>
+<title>Flood Watch issued October 29 at 4:33PM ADT until October 30 at 9:00AM ADT by NWS</title>
 <link href="https://alerts.weather.gov/cap/wwacapget.php?x=PR1266674EFA54.FloodWatch.1266675D1E40PR.JSJFFASJU.ee18ef08143371c80f6d79aae4943df4"/>
 <summary>...FLOOD WATCH REMAINS IN EFFECT THROUGH MONDAY MORNING... * WHAT...Flooding caused by excessive rainfall continues to be possible. * WHERE...Portions of Puerto Rico, including the following areas, Central Interior, Culebra, Eastern Interior, Mayaguez and Vicinity, North Central, Northeast, Northwest, Ponce and Vicinity,</summary>
 <cap:event>Flood Watch</cap:event>
@@ -4526,6 +4558,38 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <valueName>VTEC</valueName>
 <value>/O.CAN.KMEG.FR.Y.0003.231031T0200Z-231031T1400Z/
 /O.EXA.KMEG.FZ.A.0005.231031T0500Z-231031T1400Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=TX1266675BE5C0.FreezeWarning.1266675DBA80TX.AMANPWAMA.7281d7137b9a279ec82d5afedbca749e</id>
+<updated>2023-10-29T23:00:00-05:00</updated>
+<published>2023-10-29T23:00:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Freeze Warning issued October 29 at 11:00PM CDT until October 30 at 11:00AM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=TX1266675BE5C0.FreezeWarning.1266675DBA80TX.AMANPWAMA.7281d7137b9a279ec82d5afedbca749e"/>
+<summary>...FREEZE WARNING REMAINS IN EFFECT UNTIL 11 AM CDT MONDAY... * WHAT...Well below freezing temperatures ranging from 20 degrees to 27 degrees are expected. * WHERE...Collingsworth, Donley, Hemphill, and Wheeler Counties. * WHEN...Until 11 AM CDT Monday. * IMPACTS...Frost and freeze conditions could kill crops, other</summary>
+<cap:event>Freeze Warning</cap:event>
+<cap:effective>2023-10-29T23:00:00-05:00</cap:effective>
+<cap:expires>2023-10-30T11:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Collingsworth; Donley; Hemphill; Wheeler</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>048087 048129 048211 048483</value>
+<valueName>UGC</valueName>
+<value>TXZ010 TXZ015 TXZ019 TXZ020</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KAMA.FZ.W.0007.000000T0000Z-231030T1600Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -4948,38 +5012,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value>/O.CON.KOUN.FZ.W.0003.231030T0500Z-231030T1400Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=TX1266674EF414.FreezeWarning.1266675DBA80TX.AMANPWAMA.7281d7137b9a279ec82d5afedbca749e</id>
-<updated>2023-10-29T14:17:00-05:00</updated>
-<published>2023-10-29T14:17:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Freeze Warning issued October 29 at 2:17PM CDT until October 30 at 11:00AM CDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=TX1266674EF414.FreezeWarning.1266675DBA80TX.AMANPWAMA.7281d7137b9a279ec82d5afedbca749e"/>
-<summary>...FREEZE WARNING IN EFFECT FROM 7 PM THIS EVENING TO 11 AM CDT MONDAY... * WHAT...Well below freezing temperatures ranging from 20 degrees to 27 degrees are expected. * WHERE...Collingsworth, Donley, Hemphill, and Wheeler Counties. * WHEN...From 7 PM this evening to 11 AM CDT Monday.</summary>
-<cap:event>Freeze Warning</cap:event>
-<cap:effective>2023-10-29T14:17:00-05:00</cap:effective>
-<cap:expires>2023-10-30T11:00:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Collingsworth; Donley; Hemphill; Wheeler</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>048087 048129 048211 048483</value>
-<valueName>UGC</valueName>
-<value>TXZ010 TXZ015 TXZ019 TXZ020</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.NEW.KAMA.FZ.W.0007.231030T0000Z-231030T1600Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -5630,17 +5662,17 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=WV1266674ED920.FreezeWatch.1266676CAEA0WV.PBZNPWPBZ.3f4ea221f920c76fab4300279211481b</id>
-<updated>2023-10-29T14:48:00-04:00</updated>
-<published>2023-10-29T14:48:00-04:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=WV1266675BCF18.FreezeWatch.1266676CAEA0WV.PBZNPWPBZ.3f4ea221f920c76fab4300279211481b</id>
+<updated>2023-10-29T23:42:00-04:00</updated>
+<published>2023-10-29T23:42:00-04:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Freeze Watch issued October 29 at 2:48PM EDT until October 31 at 10:00AM EDT by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=WV1266674ED920.FreezeWatch.1266676CAEA0WV.PBZNPWPBZ.3f4ea221f920c76fab4300279211481b"/>
-<summary>...FREEZE WATCH IN EFFECT FROM LATE MONDAY NIGHT THROUGH TUESDAY MORNING... * WHAT...Sub-freezing temperatures as low as 26 possible. * WHERE...Portions of east central Ohio. Portions of northwest, southwest, and western Pennsylvania. Portions of northern and the northern panhandle of West Virginia.</summary>
+<title>Freeze Watch issued October 29 at 11:42PM EDT until October 31 at 10:00AM EDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=WV1266675BCF18.FreezeWatch.1266676CAEA0WV.PBZNPWPBZ.3f4ea221f920c76fab4300279211481b"/>
+<summary>...FREEZE WATCH REMAINS IN EFFECT FROM LATE MONDAY NIGHT THROUGH TUESDAY MORNING... * WHAT...Sub-freezing temperatures as low as 26 possible. * WHERE...Portions of east central Ohio. Portions of northwest, southwest, and western Pennsylvania. Portions of northern and the northern panhandle of West Virginia.</summary>
 <cap:event>Freeze Watch</cap:event>
-<cap:effective>2023-10-29T14:48:00-04:00</cap:effective>
+<cap:effective>2023-10-29T23:42:00-04:00</cap:effective>
 <cap:expires>2023-10-31T10:00:00-04:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
@@ -5658,7 +5690,7 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
-<value>/O.NEW.KPBZ.FZ.A.0005.231031T0400Z-231031T1400Z/</value>
+<value>/O.CON.KPBZ.FZ.A.0005.231031T0400Z-231031T1400Z/</value>
 </cap:parameter>
 </entry>
 </feed>
