@@ -16,16 +16,48 @@ xmlns = 'http://www.w3.org/2005/Atom'
 xmlns:cap = 'urn:oasis:names:tc:emergency:cap:1.1'
 xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 >
-<!-- http-date = Wed, 08 Nov 2023 15:14:00 GMT -->
+<!-- http-date = Wed, 08 Nov 2023 15:58:00 GMT -->
 <id>https://alerts.weather.gov/cap/us.php?x=0</id>
 <logo>http://alerts.weather.gov/images/xml_logo.gif</logo>
 <generator>NWS CAP Server</generator>
-<updated>2023-11-08T06:14:00-09:00</updated>
+<updated>2023-11-08T08:58:00-07:00</updated>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
 <title>Current Watches, Warnings and Advisories for the United States Issued by the National Weather Service</title>
 <link href="https://alerts.weather.gov/cap/us.php?x=0"/>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=AK12666C03D7A4.HighWindWarning.12666C137A60AK.AJKNPWAJK.1374f8035f514473bc6fb09b318e2aed</id>
+<updated>2023-11-08T06:53:00-09:00</updated>
+<published>2023-11-08T06:53:00-09:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>High Wind Warning issued November 08 at 6:53AM AKST until November 09 at 9:00AM AKST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=AK12666C03D7A4.HighWindWarning.12666C137A60AK.AJKNPWAJK.1374f8035f514473bc6fb09b318e2aed"/>
+<summary>...HIGH WIND WARNING REMAINS IN EFFECT FROM 6 PM THIS EVENING TO 9 AM AKST THURSDAY... * WHAT...Southeast winds 30 to 40 mph with gusts up to 65 mph expected. * WHERE...Prince of Wales Island. * WHEN...From 6 PM Wednesday to 9 AM AKST Thursday.</summary>
+<cap:event>High Wind Warning</cap:event>
+<cap:effective>2023-11-08T06:53:00-09:00</cap:effective>
+<cap:expires>2023-11-09T09:00:00-09:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Severe</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Prince of Wales Island</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>002198</value>
+<valueName>UGC</valueName>
+<value>AKZ328</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.PAJK.HW.W.0009.231109T0300Z-231109T1800Z/</value>
+</cap:parameter>
+</entry>
 <entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=AK12666C03C868.WindAdvisory.12666C11A5A0AK.AFGNPWAFG.c941e7907b4f417e6cfd9b26059d899e</id>
 <updated>2023-11-08T06:14:00-09:00</updated>
@@ -345,38 +377,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value>/O.EXT.PAFG.HW.A.0002.231109T1300Z-231110T1600Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=AK12666C029F88.HighWindWarning.12666C137A60AK.AJKNPWAJK.1374f8035f514473bc6fb09b318e2aed</id>
-<updated>2023-11-07T22:54:00-09:00</updated>
-<published>2023-11-07T22:54:00-09:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>High Wind Warning issued November 07 at 10:54PM AKST until November 09 at 9:00AM AKST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=AK12666C029F88.HighWindWarning.12666C137A60AK.AJKNPWAJK.1374f8035f514473bc6fb09b318e2aed"/>
-<summary>...HIGH WIND WARNING REMAINS IN EFFECT FROM 6 PM WEDNESDAY TO 9 AM AKST THURSDAY... * WHAT...Southeast winds 30 to 40 mph with gusts up to 65 mph expected. * WHERE...Prince of Wales Island. * WHEN...From 6 PM Wednesday to 9 AM AKST Thursday.</summary>
-<cap:event>High Wind Warning</cap:event>
-<cap:effective>2023-11-07T22:54:00-09:00</cap:effective>
-<cap:expires>2023-11-09T09:00:00-09:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Severe</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Prince of Wales Island</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>002198</value>
-<valueName>UGC</valueName>
-<value>AKZ328</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.PAJK.HW.W.0009.231109T0300Z-231109T1800Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -1283,6 +1283,70 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=FL12666C03D4E8.CoastalFloodAdvisory.12666C04D460FL.KEYCFWKEY.2914de989163498c05caf17780a32b96</id>
+<updated>2023-11-08T10:46:00-05:00</updated>
+<published>2023-11-08T10:46:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Coastal Flood Advisory issued November 08 at 10:46AM EST until November 08 at 5:00PM EST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=FL12666C03D4E8.CoastalFloodAdvisory.12666C04D460FL.KEYCFWKEY.2914de989163498c05caf17780a32b96"/>
+<summary>...COASTAL FLOOD ADVISORY REMAINS IN EFFECT UNTIL 5 PM EST THIS AFTERNOON... * WHAT...Moderate saltwater flooding. * WHERE...Upper Keys. * WHEN...Through late this afternoon. * IMPACTS...Saltwater flooding of low elevation streets and lots</summary>
+<cap:event>Coastal Flood Advisory</cap:event>
+<cap:effective>2023-11-08T10:46:00-05:00</cap:effective>
+<cap:expires>2023-11-08T17:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Monroe Upper Keys</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>012087</value>
+<valueName>UGC</valueName>
+<value>FLZ076</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KKEY.CF.Y.0012.000000T0000Z-231108T2200Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=FL12666C03D4E8.CoastalFloodStatement.12666C04D460FL.KEYCFWKEY.9bc40c13aa1e1ec46291a7167dce08d7</id>
+<updated>2023-11-08T10:46:00-05:00</updated>
+<published>2023-11-08T10:46:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Coastal Flood Statement issued November 08 at 10:46AM EST until November 08 at 5:00PM EST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=FL12666C03D4E8.CoastalFloodStatement.12666C04D460FL.KEYCFWKEY.9bc40c13aa1e1ec46291a7167dce08d7"/>
+<summary>...COASTAL FLOOD STATEMENT REMAINS IN EFFECT UNTIL 5 PM EST THIS AFTERNOON... * WHAT...Minor saltwater flooding. * WHERE...Middle Keys. * WHEN...Through this afternoon. * IMPACTS...Minor saltwater flooding of low elevation streets</summary>
+<cap:event>Coastal Flood Statement</cap:event>
+<cap:effective>2023-11-08T10:46:00-05:00</cap:effective>
+<cap:expires>2023-11-08T17:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Unknown</cap:urgency>
+<cap:severity>Unknown</cap:severity>
+<cap:certainty>Unknown</cap:certainty>
+<cap:areaDesc>Monroe Middle Keys</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>012087</value>
+<valueName>UGC</valueName>
+<value>FLZ077</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KKEY.CF.S.0020.000000T0000Z-231108T2200Z/</value>
+</cap:parameter>
+</entry>
+<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=FL12666C03A2E8.FloodWarning.12666C4EAEA0FL.MLBFLSMLB.766595e7f094ce75bcde2920c4fff444</id>
 <updated>2023-11-08T09:18:00-05:00</updated>
 <published>2023-11-08T09:18:00-05:00</published>
@@ -1313,70 +1377,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <valueName>VTEC</valueName>
 <value>/O.EXT.KMLB.FL.W.0004.000000T0000Z-231113T0600Z/
 /ASTF1.1.WT.230928T1325Z.231004T1730Z.231113T0000Z.NO/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=FL12666C02C7C4.CoastalFloodAdvisory.12666C04D460FL.KEYCFWKEY.2914de989163498c05caf17780a32b96</id>
-<updated>2023-11-08T03:57:00-05:00</updated>
-<published>2023-11-08T03:57:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Coastal Flood Advisory issued November 08 at 3:57AM EST until November 08 at 5:00PM EST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=FL12666C02C7C4.CoastalFloodAdvisory.12666C04D460FL.KEYCFWKEY.2914de989163498c05caf17780a32b96"/>
-<summary>...COASTAL FLOOD ADVISORY REMAINS IN EFFECT... * WHAT...Moderate saltwater flooding. * WHERE...Upper Keys. * WHEN...Through late this afternoon. * IMPACTS...Saltwater flooding of low elevation streets and lots is expected. Some storm drains will overflow, and some</summary>
-<cap:event>Coastal Flood Advisory</cap:event>
-<cap:effective>2023-11-08T03:57:00-05:00</cap:effective>
-<cap:expires>2023-11-08T17:00:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Monroe Upper Keys</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>012087</value>
-<valueName>UGC</valueName>
-<value>FLZ076</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.EXT.KKEY.CF.Y.0012.000000T0000Z-231108T2200Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=FL12666C02C7C4.CoastalFloodStatement.12666C04D460FL.KEYCFWKEY.9bc40c13aa1e1ec46291a7167dce08d7</id>
-<updated>2023-11-08T03:57:00-05:00</updated>
-<published>2023-11-08T03:57:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Coastal Flood Statement issued November 08 at 3:57AM EST until November 08 at 5:00PM EST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=FL12666C02C7C4.CoastalFloodStatement.12666C04D460FL.KEYCFWKEY.9bc40c13aa1e1ec46291a7167dce08d7"/>
-<summary>...COASTAL FLOOD STATEMENT REMAINS IN EFFECT... * WHAT...Minor saltwater flooding. * WHERE...Middle Keys. * WHEN...Through this afternoon. * IMPACTS...Minor saltwater flooding of low elevation streets and lots is likely. Some storm drains will overflow, and some</summary>
-<cap:event>Coastal Flood Statement</cap:event>
-<cap:effective>2023-11-08T03:57:00-05:00</cap:effective>
-<cap:expires>2023-11-08T17:00:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Unknown</cap:urgency>
-<cap:severity>Unknown</cap:severity>
-<cap:certainty>Unknown</cap:certainty>
-<cap:areaDesc>Monroe Middle Keys</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>012087</value>
-<valueName>UGC</valueName>
-<value>FLZ077</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.EXT.KKEY.CF.S.0020.000000T0000Z-231108T2200Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -1633,38 +1633,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value>/O.CON.KMEG.WI.Y.0016.231108T1400Z-231109T0000Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=MT12666C033B64.SpecialWeatherStatement.12666C03EA00MT.TFXSPSTFX.b882ff01ab4b4e6e6f4c34b72b15cc41</id>
-<updated>2023-11-08T04:53:00-07:00</updated>
-<published>2023-11-08T04:53:00-07:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Special Weather Statement issued November 08 at 4:53AM MST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MT12666C033B64.SpecialWeatherStatement.12666C03EA00MT.TFXSPSTFX.b882ff01ab4b4e6e6f4c34b72b15cc41"/>
-<summary>...Difficult travel likely over Kings Hill Pass this morning... The snow has mostly moved out of the Little Belt Mountains early this morning, but it has likely left behind snow covered and icy roads over Kings Hill Pass. If you need to travel over the pass this morning, make sure to take it slow, and be prepared for rapidly changing road conditions.</summary>
-<cap:event>Special Weather Statement</cap:event>
-<cap:effective>2023-11-08T04:53:00-07:00</cap:effective>
-<cap:expires>2023-11-08T09:00:00-07:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Observed</cap:certainty>
-<cap:areaDesc>Little Belt and Highwood Mountains</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>030013 030045 030059</value>
-<valueName>UGC</valueName>
-<value>MTZ317</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value></value>
 </cap:parameter>
 </entry>
 <entry>
@@ -2116,69 +2084,35 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=PR12666C03B0F8.FloodAdvisory.12666C03EA00PR.JSJFLSSJU.a428a56e01182b53fdd7bf80096e465f</id>
-<updated>2023-11-08T10:54:00-04:00</updated>
-<published>2023-11-08T10:54:00-04:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=SD12666C03D998.WindAdvisory.12666C04FB70SD.UNRNPWUNR.db3e46a8512f7f48788697d3bf9ce7f6</id>
+<updated>2023-11-08T08:58:00-07:00</updated>
+<published>2023-11-08T08:58:00-07:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Flood Advisory issued November 08 at 10:54AM AST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=PR12666C03B0F8.FloodAdvisory.12666C03EA00PR.JSJFLSSJU.a428a56e01182b53fdd7bf80096e465f"/>
-<summary>...FLOOD ADVISORY IN EFFECT UNTIL NOON AST TODAY... ...REPLACES FLASH FLOOD WARNING... * WHAT...Excessive runoff and mudslides affecting local roads. * WHERE...Luquillo. * WHEN...Until noon AST. * IMPACTS...Local roads impassable due to mudslides.</summary>
-<cap:event>Flood Advisory</cap:event>
-<cap:effective>2023-11-08T10:54:00-04:00</cap:effective>
-<cap:expires>2023-11-08T12:00:00-04:00</cap:expires>
+<title>Wind Advisory issued November 08 at 8:58AM MST until November 08 at 4:00PM MST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=SD12666C03D998.WindAdvisory.12666C04FB70SD.UNRNPWUNR.db3e46a8512f7f48788697d3bf9ce7f6"/>
+<summary>...WIND ADVISORY NOW IN EFFECT UNTIL 4 PM MST THIS AFTERNOON... * WHAT...Northwest winds 25 to 35 mph with gusts up to 50 mph. * WHERE...Portions of northwestern and southwestern South Dakota. This includes the Tribal Lands of the Cheyenne River Reservation. * WHEN...Until 4 PM MST this afternoon.</summary>
+<cap:event>Wind Advisory</cap:event>
+<cap:effective>2023-11-08T08:58:00-07:00</cap:effective>
+<cap:expires>2023-11-08T16:00:00-07:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
 <cap:category>Met</cap:category>
 <cap:urgency>Expected</cap:urgency>
 <cap:severity>Minor</cap:severity>
 <cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Luquillo</cap:areaDesc>
-<cap:polygon>18.38,-65.76 18.39,-65.72 18.37,-65.71 18.36,-65.67 18.32,-65.69 18.32,-65.7 18.31,-65.71 18.31,-65.72 18.29,-65.73 18.3,-65.75 18.29,-65.76 18.31,-65.76 18.33,-65.75 18.34,-65.75 18.36,-65.77 18.37,-65.77 18.37,-65.76 18.38,-65.76</cap:polygon>
+<cap:areaDesc>Butte; Harding; Northern Meade Co Plains; Northern Perkins; Pennington Co Plains; Southern Meade Co Plains; Southern Perkins; Ziebach</cap:areaDesc>
+<cap:polygon></cap:polygon>
 <cap:geocode>
 <valueName>FIPS6</valueName>
-<value>072089</value>
+<value>046019 046063 046093 046103 046105 046137</value>
 <valueName>UGC</valueName>
-<value>PRC089</value>
+<value>SDZ001 SDZ002 SDZ012 SDZ013 SDZ014 SDZ031 SDZ073 SDZ078</value>
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
-<value>/O.NEW.TJSJ.FA.Y.0407.231108T1454Z-231108T1600Z/
-/00000.N.ER.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=PR12666C03AE3C.FloodAdvisory.12666C03EA00PR.JSJFLSSJU.5f7cc4f814a14508036e9929f5965fa0</id>
-<updated>2023-11-08T10:47:00-04:00</updated>
-<published>2023-11-08T10:47:00-04:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Flood Advisory issued November 08 at 10:47AM AST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=PR12666C03AE3C.FloodAdvisory.12666C03EA00PR.JSJFLSSJU.5f7cc4f814a14508036e9929f5965fa0"/>
-<summary>...FLOOD ADVISORY IN EFFECT UNTIL NOON AST TODAY... ...REPLACES FLASH FLOOD WARNING... * WHAT...Urban and small stream flooding caused by excessive runoff. * WHERE...Fajardo. * WHEN...Until noon AST. * IMPACTS...Minor flooding in low-lying and poor drainage areas.</summary>
-<cap:event>Flood Advisory</cap:event>
-<cap:effective>2023-11-08T10:47:00-04:00</cap:effective>
-<cap:expires>2023-11-08T12:00:00-04:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Fajardo</cap:areaDesc>
-<cap:polygon>18.38,-65.61 18.34,-65.64 18.33,-65.63 18.28,-65.63 18.28,-65.64 18.29,-65.67 18.28,-65.68 18.29,-65.69 18.27,-65.72 18.29,-65.73 18.31,-65.71 18.32,-65.7 18.32,-65.68 18.36,-65.67 18.38,-65.64 18.38,-65.61</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>072053</value>
-<valueName>UGC</valueName>
-<value>PRC053</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.NEW.TJSJ.FA.Y.0406.231108T1447Z-231108T1600Z/
-/00000.N.ER.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
+<value>/O.EXT.KUNR.WI.Y.0026.231108T1558Z-231108T2300Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -2211,38 +2145,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value>/O.CON.KABR.WI.Y.0020.231108T1700Z-231108T2300Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=SD12666C02DD40.WindAdvisory.12666C04FB70SD.UNRNPWUNR.db3e46a8512f7f48788697d3bf9ce7f6</id>
-<updated>2023-11-08T02:12:00-07:00</updated>
-<published>2023-11-08T02:12:00-07:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Wind Advisory issued November 08 at 2:12AM MST until November 08 at 4:00PM MST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=SD12666C02DD40.WindAdvisory.12666C04FB70SD.UNRNPWUNR.db3e46a8512f7f48788697d3bf9ce7f6"/>
-<summary>...WIND ADVISORY IN EFFECT FROM 10 AM THIS MORNING TO 4 PM MST THIS AFTERNOON... * WHAT...Northwest winds 25 to 35 mph with gusts up to 45 mph expected. * WHERE...Portions of northwestern and southwestern South Dakota. This includes the Tribal Lands of the Cheyenne River</summary>
-<cap:event>Wind Advisory</cap:event>
-<cap:effective>2023-11-08T02:12:00-07:00</cap:effective>
-<cap:expires>2023-11-08T16:00:00-07:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Butte; Harding; Northern Meade Co Plains; Northern Perkins; Pennington Co Plains; Southern Meade Co Plains; Southern Perkins; Ziebach</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>046019 046063 046093 046103 046105 046137</value>
-<valueName>UGC</valueName>
-<value>SDZ001 SDZ002 SDZ012 SDZ013 SDZ014 SDZ031 SDZ073 SDZ078</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.NEW.KUNR.WI.Y.0026.231108T1700Z-231108T2300Z/</value>
 </cap:parameter>
 </entry>
 <entry>
