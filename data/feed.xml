@@ -16,16 +16,48 @@ xmlns = 'http://www.w3.org/2005/Atom'
 xmlns:cap = 'urn:oasis:names:tc:emergency:cap:1.1'
 xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 >
-<!-- http-date = Wed, 15 Nov 2023 12:40:00 GMT -->
+<!-- http-date = Wed, 15 Nov 2023 12:51:00 GMT -->
 <id>https://alerts.weather.gov/cap/us.php?x=0</id>
 <logo>http://alerts.weather.gov/images/xml_logo.gif</logo>
 <generator>NWS CAP Server</generator>
-<updated>2023-11-15T03:40:00-09:00</updated>
+<updated>2023-11-15T06:51:00-06:00</updated>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
 <title>Current Watches, Warnings and Advisories for the United States Issued by the National Weather Service</title>
 <link href="https://alerts.weather.gov/cap/us.php?x=0"/>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=AK12666C6E2D20.WinterWeatherAdvisory.12666C9A5DA0AK.AFCWSWAER.3dc5c17c9843af93a501855ed29dbacd</id>
+<updated>2023-11-15T03:40:00-09:00</updated>
+<published>2023-11-15T03:40:00-09:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Winter Weather Advisory issued November 15 at 3:40AM AKST until November 17 at 5:00PM AKST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=AK12666C6E2D20.WinterWeatherAdvisory.12666C9A5DA0AK.AFCWSWAER.3dc5c17c9843af93a501855ed29dbacd"/>
+<summary>...WINTER WEATHER ADVISORY REMAINS IN EFFECT UNTIL 5 PM AKST FRIDAY... * WHAT...Snow. Additional snow accumulations of 10 to 25 inches. * WHERE...Susitna Valley, for Talkeetna and north. * WHEN...Until 5 PM AKST Friday. * IMPACTS...Travel could be very difficult. The hazardous</summary>
+<cap:event>Winter Weather Advisory</cap:event>
+<cap:effective>2023-11-15T03:40:00-09:00</cap:effective>
+<cap:expires>2023-11-17T17:00:00-09:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Susitna Valley</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>002122 002170</value>
+<valueName>UGC</valueName>
+<value>AKZ145</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.PAFC.WW.Y.0047.000000T0000Z-231118T0200Z/</value>
+</cap:parameter>
+</entry>
 <entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=AK12666C6E20A0.WindAdvisory.12666C7C7560AK.AFGNPWAFG.4536812fb14b1ff7414e0e8ca28dd927</id>
 <updated>2023-11-15T03:08:00-09:00</updated>
@@ -440,38 +472,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value>/O.NEW.PAJK.FG.Y.0048.231115T0919Z-231115T1400Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=AK12666C6C72F0.WinterWeatherAdvisory.12666C9A5DA0AK.AFCWSWAER.3dc5c17c9843af93a501855ed29dbacd</id>
-<updated>2023-11-14T16:08:00-09:00</updated>
-<published>2023-11-14T16:08:00-09:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Winter Weather Advisory issued November 14 at 4:08PM AKST until November 17 at 5:00PM AKST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=AK12666C6C72F0.WinterWeatherAdvisory.12666C9A5DA0AK.AFCWSWAER.3dc5c17c9843af93a501855ed29dbacd"/>
-<summary>...WINTER WEATHER ADVISORY IN EFFECT FROM 1 AM WEDNESDAY TO 5 PM AKST FRIDAY FOR TALKEETNA AND NORTH... * WHAT...Snow expected. Total snow accumulations of 10 to 25 inches. * WHERE...Susitna Valley, for Talkeetna and north. * WHEN...From 1 AM Wednesday to 5 PM AKST Friday.</summary>
-<cap:event>Winter Weather Advisory</cap:event>
-<cap:effective>2023-11-14T16:08:00-09:00</cap:effective>
-<cap:expires>2023-11-17T17:00:00-09:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Susitna Valley</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>002122 002170</value>
-<valueName>UGC</valueName>
-<value>AKZ145</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.NEW.PAFC.WW.Y.0047.231115T1000Z-231118T0200Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -3219,6 +3219,70 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=TX12666C6E316C.DenseFogAdvisory.12666C6E92B0TX.AMANPWAMA.0ea27e1a7b9039551406fcd17b160780</id>
+<updated>2023-11-15T06:51:00-06:00</updated>
+<published>2023-11-15T06:51:00-06:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Dense Fog Advisory issued November 15 at 6:51AM CST until November 15 at 9:00AM CST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=TX12666C6E316C.DenseFogAdvisory.12666C6E92B0TX.AMANPWAMA.0ea27e1a7b9039551406fcd17b160780"/>
+<summary>...DENSE FOG ADVISORY REMAINS IN EFFECT UNTIL 9 AM CST THIS MORNING... * WHAT...Localized fog reducing visibilities to 1/4 mile or less. * WHERE...Gray, Hansford, Hemphill, Hutchinson, Lipscomb, Ochiltree, Roberts, and Wheeler Counties. * WHEN...Until 9 AM CST this morning.</summary>
+<cap:event>Dense Fog Advisory</cap:event>
+<cap:effective>2023-11-15T06:51:00-06:00</cap:effective>
+<cap:expires>2023-11-15T09:00:00-06:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Gray; Hansford; Hemphill; Hutchinson; Lipscomb; Ochiltree; Roberts; Wheeler</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>048179 048195 048211 048233 048295 048357 048393 048483</value>
+<valueName>UGC</valueName>
+<value>TXZ003 TXZ004 TXZ005 TXZ008 TXZ009 TXZ010 TXZ014 TXZ015</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KAMA.FG.Y.0007.000000T0000Z-231115T1500Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=TX12666C6E316C.DenseFogAdvisory.12666C6E92B0TX.AMANPWAMA.7db010f9af7e1100c1fcd297d8075fa5</id>
+<updated>2023-11-15T06:51:00-06:00</updated>
+<published>2023-11-15T06:51:00-06:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Dense Fog Advisory issued November 15 at 6:51AM CST until November 15 at 9:00AM CST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=TX12666C6E316C.DenseFogAdvisory.12666C6E92B0TX.AMANPWAMA.7db010f9af7e1100c1fcd297d8075fa5"/>
+<summary>...DENSE FOG ADVISORY IN EFFECT UNTIL 9 AM CST THIS MORNING... * WHAT...Localized fog reducing visibilities to 1/4 mile or less. * WHERE...Collingsworth and Moore Counties. * WHEN...Until 9 AM CST this morning. * IMPACTS...Low visibility could make driving conditions hazardous.</summary>
+<cap:event>Dense Fog Advisory</cap:event>
+<cap:effective>2023-11-15T06:51:00-06:00</cap:effective>
+<cap:expires>2023-11-15T09:00:00-06:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Collingsworth; Moore</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>048087 048341</value>
+<valueName>UGC</valueName>
+<value>TXZ007 TXZ020</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.EXA.KAMA.FG.Y.0007.000000T0000Z-231115T1500Z/</value>
+</cap:parameter>
+</entry>
+<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=TX12666C6E2A00.DenseFogAdvisory.12666C6EB9C0TX.SJTNPWSJT.c9105ee38aa4b2617948e39f702a7b37</id>
 <updated>2023-11-15T06:32:00-06:00</updated>
 <published>2023-11-15T06:32:00-06:00</published>
@@ -3248,38 +3312,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value>/O.NEW.KSJT.FG.Y.0003.231115T1232Z-231115T1600Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=TX12666C6E2550.DenseFogAdvisory.12666C6E92B0TX.AMANPWAMA.0ea27e1a7b9039551406fcd17b160780</id>
-<updated>2023-11-15T06:20:00-06:00</updated>
-<published>2023-11-15T06:20:00-06:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Dense Fog Advisory issued November 15 at 6:20AM CST until November 15 at 9:00AM CST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=TX12666C6E2550.DenseFogAdvisory.12666C6E92B0TX.AMANPWAMA.0ea27e1a7b9039551406fcd17b160780"/>
-<summary>...DENSE FOG ADVISORY IN EFFECT UNTIL 9 AM CST THIS MORNING... * WHAT...Localized fog reducing visibilities to 1/4 mile or less. * WHERE...Gray, Hansford, Hemphill, Hutchinson, Lipscomb, Ochiltree, Roberts, and Wheeler Counties. * WHEN...Until 9 AM CST this morning. * IMPACTS...Low visibility could make driving conditions hazardous.</summary>
-<cap:event>Dense Fog Advisory</cap:event>
-<cap:effective>2023-11-15T06:20:00-06:00</cap:effective>
-<cap:expires>2023-11-15T09:00:00-06:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Gray; Hansford; Hemphill; Hutchinson; Lipscomb; Ochiltree; Roberts; Wheeler</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>048179 048195 048211 048233 048295 048357 048393 048483</value>
-<valueName>UGC</valueName>
-<value>TXZ003 TXZ004 TXZ005 TXZ008 TXZ009 TXZ010 TXZ014 TXZ015</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.NEW.KAMA.FG.Y.0007.231115T1220Z-231115T1500Z/</value>
 </cap:parameter>
 </entry>
 <entry>
