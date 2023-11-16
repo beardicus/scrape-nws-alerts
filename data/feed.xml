@@ -16,16 +16,48 @@ xmlns = 'http://www.w3.org/2005/Atom'
 xmlns:cap = 'urn:oasis:names:tc:emergency:cap:1.1'
 xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 >
-<!-- http-date = Thu, 16 Nov 2023 16:22:00 GMT -->
+<!-- http-date = Thu, 16 Nov 2023 16:44:00 GMT -->
 <id>https://alerts.weather.gov/cap/us.php?x=0</id>
 <logo>http://alerts.weather.gov/images/xml_logo.gif</logo>
 <generator>NWS CAP Server</generator>
-<updated>2023-11-16T10:22:00-06:00</updated>
+<updated>2023-11-16T10:44:00-06:00</updated>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
 <title>Current Watches, Warnings and Advisories for the United States Issued by the National Weather Service</title>
 <link href="https://alerts.weather.gov/cap/us.php?x=0"/>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=AK12666C7E0AD8.WindAdvisory.12666C8B4270AK.AFGNPWAFG.1ebfa19f72078e3184c23c668e579ef3</id>
+<updated>2023-11-16T07:38:00-09:00</updated>
+<published>2023-11-16T07:38:00-09:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Wind Advisory issued November 16 at 7:38AM AKST until November 16 at 6:00PM AKST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=AK12666C7E0AD8.WindAdvisory.12666C8B4270AK.AFGNPWAFG.1ebfa19f72078e3184c23c668e579ef3"/>
+<summary>...WIND ADVISORY IN EFFECT UNTIL 6 PM AKST THIS EVENING... * WHAT...South winds 15 to 25 mph with gusts up to 60 mph. * WHERE...Northern Denali Borough and Eastern Alaska Range North of Trims Camp. * WHEN...Until 6 PM AKST this evening. * IMPACTS...Gusty winds could blow around unsecured objects. Tree</summary>
+<cap:event>Wind Advisory</cap:event>
+<cap:effective>2023-11-16T07:38:00-09:00</cap:effective>
+<cap:expires>2023-11-16T18:00:00-09:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Eastern Alaska Range North of Trims Camp; Northern Denali Borough</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>002068 002240</value>
+<valueName>UGC</valueName>
+<value>AKZ847 AKZ849</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.NEW.PAFG.WI.Y.0040.231116T1638Z-231117T0300Z/</value>
+</cap:parameter>
+</entry>
 <entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=AK12666C7D87FC.HighSurfAdvisory.12666C8B4270AK.AFGCFWAFG.95aa210270661837858a5c80c060375f</id>
 <updated>2023-11-16T04:03:00-09:00</updated>
@@ -378,6 +410,38 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <valueName>VTEC</valueName>
 <value>/O.CON.KMOB.SU.Y.0010.000000T0000Z-231116T1800Z/
 /O.CON.KMOB.RP.S.0034.000000T0000Z-231118T0000Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=FL12666C7E0B3C.RipCurrentStatement.12666C8C05C0FL.TAECFWTAE.b48ca166066f2ece668e0061ebd7969b</id>
+<updated>2023-11-16T11:39:00-05:00</updated>
+<published>2023-11-16T11:39:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Rip Current Statement issued November 16 at 11:39AM EST until November 17 at 3:00AM EST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=FL12666C7E0B3C.RipCurrentStatement.12666C8C05C0FL.TAECFWTAE.b48ca166066f2ece668e0061ebd7969b"/>
+<summary>...HIGH RIP CURRENT RISK REMAINS IN EFFECT THROUGH LATE TONIGHT... * WHAT...Dangerous rip currents. * WHERE...Walton, Bay, Gulf, and Franklin County Beaches. * WHEN...Through late tonight. * IMPACTS...Rip currents can sweep even the best swimmers away from shore into deeper water.</summary>
+<cap:event>Rip Current Statement</cap:event>
+<cap:effective>2023-11-16T11:39:00-05:00</cap:effective>
+<cap:expires>2023-11-17T03:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Coastal Bay; Coastal Franklin; Coastal Gulf; South Walton</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>012005 012037 012045 012131</value>
+<valueName>UGC</valueName>
+<value>FLZ108 FLZ112 FLZ114 FLZ115</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KTAE.RP.S.0124.000000T0000Z-231117T0800Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -813,140 +877,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=FL12666C7CB250.RipCurrentStatement.12666C8C05C0FL.TAECFWTAE.7c6e8ddced1c9fda8e408884fccbd61f</id>
-<updated>2023-11-16T02:56:00-05:00</updated>
-<published>2023-11-16T02:56:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Rip Current Statement issued November 16 at 2:56AM EST until November 17 at 3:00AM EST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=FL12666C7CB250.RipCurrentStatement.12666C8C05C0FL.TAECFWTAE.7c6e8ddced1c9fda8e408884fccbd61f"/>
-<summary>...HIGH RIP CURRENT RISK REMAINS IN EFFECT THROUGH LATE TONIGHT... ...HIGH SURF ADVISORY IS CANCELLED... ...COASTAL FLOOD ADVISORY WILL EXPIRE AT 2 AM CST EARLY THIS MORNING... * WHAT...Dangerous rip currents. * WHERE...Walton County Beaches.</summary>
-<cap:event>Rip Current Statement</cap:event>
-<cap:effective>2023-11-16T02:56:00-05:00</cap:effective>
-<cap:expires>2023-11-17T03:00:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>South Walton</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>012131</value>
-<valueName>UGC</valueName>
-<value>FLZ108</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CAN.KTAE.SU.Y.0008.000000T0000Z-231116T1800Z/
-/O.EXP.KTAE.CF.Y.0006.000000T0000Z-231116T0800Z/
-/O.CON.KTAE.RP.S.0124.000000T0000Z-231117T0800Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=FL12666C7CB250.RipCurrentStatement.12666C8C05C0FL.TAECFWTAE.d1c145af38af0d6ce7301d5bbe00d634</id>
-<updated>2023-11-16T02:56:00-05:00</updated>
-<published>2023-11-16T02:56:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Rip Current Statement issued November 16 at 2:56AM EST until November 17 at 3:00AM EST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=FL12666C7CB250.RipCurrentStatement.12666C8C05C0FL.TAECFWTAE.d1c145af38af0d6ce7301d5bbe00d634"/>
-<summary>...HIGH RIP CURRENT RISK REMAINS IN EFFECT THROUGH LATE TONIGHT... ...COASTAL FLOOD ADVISORY WILL EXPIRE AT 2 AM CST EARLY THIS MORNING... * WHAT...Dangerous rip currents. * WHERE...Coastal Bay County. * WHEN...Through late tonight.</summary>
-<cap:event>Rip Current Statement</cap:event>
-<cap:effective>2023-11-16T02:56:00-05:00</cap:effective>
-<cap:expires>2023-11-17T03:00:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Coastal Bay</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>012005</value>
-<valueName>UGC</valueName>
-<value>FLZ112</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.EXP.KTAE.CF.Y.0006.000000T0000Z-231116T0800Z/
-/O.CON.KTAE.RP.S.0124.000000T0000Z-231117T0800Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=FL12666C7CB250.RipCurrentStatement.12666C8C05C0FL.TAECFWTAE.6b3dc5e2e068bf02f06645907dc99456</id>
-<updated>2023-11-16T02:56:00-05:00</updated>
-<published>2023-11-16T02:56:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Rip Current Statement issued November 16 at 2:56AM EST until November 17 at 3:00AM EST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=FL12666C7CB250.RipCurrentStatement.12666C8C05C0FL.TAECFWTAE.6b3dc5e2e068bf02f06645907dc99456"/>
-<summary>...HIGH RIP CURRENT RISK REMAINS IN EFFECT THROUGH LATE TONIGHT... ...COASTAL FLOOD ADVISORY IS CANCELLED... * WHAT...Dangerous rip currents expected. * WHERE...Gulf County Beaches. * WHEN...Through late tonight. * IMPACTS...Flooding of lots, parks, and roads with only</summary>
-<cap:event>Rip Current Statement</cap:event>
-<cap:effective>2023-11-16T02:56:00-05:00</cap:effective>
-<cap:expires>2023-11-17T03:00:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Coastal Gulf</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>012045</value>
-<valueName>UGC</valueName>
-<value>FLZ114</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CAN.KTAE.CF.Y.0006.000000T0000Z-231116T1200Z/
-/O.CON.KTAE.RP.S.0124.000000T0000Z-231117T0800Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=FL12666C7CB250.RipCurrentStatement.12666C8C05C0FL.TAECFWTAE.2d830f64613f31d0280374a57e1f3223</id>
-<updated>2023-11-16T02:56:00-05:00</updated>
-<published>2023-11-16T02:56:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Rip Current Statement issued November 16 at 2:56AM EST until November 17 at 3:00AM EST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=FL12666C7CB250.RipCurrentStatement.12666C8C05C0FL.TAECFWTAE.2d830f64613f31d0280374a57e1f3223"/>
-<summary>...HIGH RIP CURRENT RISK REMAINS IN EFFECT THROUGH LATE TONIGHT... ...COASTAL FLOOD ADVISORY IS CANCELLED... ...HIGH SURF ADVISORY IS CANCELLED... * WHAT...Dangerous rip currents. * WHERE...Franklin County Beaches. * WHEN...Through late tonight.</summary>
-<cap:event>Rip Current Statement</cap:event>
-<cap:effective>2023-11-16T02:56:00-05:00</cap:effective>
-<cap:expires>2023-11-17T03:00:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Coastal Franklin</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>012037</value>
-<valueName>UGC</valueName>
-<value>FLZ115</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CAN.KTAE.CF.Y.0006.000000T0000Z-231116T1200Z/
-/O.CAN.KTAE.SU.Y.0008.000000T0000Z-231116T1800Z/
-/O.CON.KTAE.RP.S.0124.000000T0000Z-231117T0800Z/</value>
-</cap:parameter>
-</entry>
-<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=FL12666C7CA4A4.CoastalFloodAdvisory.12666C8C2CD0FL.JAXCFWJAX.7c1cf802fd0105d35ef95c92eebe65d5</id>
 <updated>2023-11-16T02:21:00-05:00</updated>
 <published>2023-11-16T02:21:00-05:00</published>
@@ -1344,6 +1274,70 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=IA12666C7E0D30.WindAdvisory.12666C8AF450IA.ARXNPWARX.0d146718327e5ce5015f7c8de2734392</id>
+<updated>2023-11-16T10:44:00-06:00</updated>
+<published>2023-11-16T10:44:00-06:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Wind Advisory issued November 16 at 10:44AM CST until November 16 at 7:00PM CST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=IA12666C7E0D30.WindAdvisory.12666C8AF450IA.ARXNPWARX.0d146718327e5ce5015f7c8de2734392"/>
+<summary>...WIND ADVISORY REMAINS IN EFFECT UNTIL 7 PM CST THIS EVENING... * WHAT...Southwest winds 20 to 30 mph with gusts up to 45 to 50 mph expected. * WHERE...In Iowa, Floyd, Mitchell, Chickasaw, and Howard Counties. In Minnesota, Dodge, Fillmore, Mower, Olmsted, and Wabasha Counties.</summary>
+<cap:event>Wind Advisory</cap:event>
+<cap:effective>2023-11-16T10:44:00-06:00</cap:effective>
+<cap:expires>2023-11-16T19:00:00-06:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Chickasaw; Floyd; Howard; Mitchell</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>019037 019067 019089 019131</value>
+<valueName>UGC</valueName>
+<value>IAZ008 IAZ009 IAZ018 IAZ019</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KARX.WI.Y.0005.000000T0000Z-231117T0100Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=IA12666C7E0D30.WindAdvisory.12666C8AF450IA.ARXNPWARX.0a086abc3750a8b1cf1d2034dbdd0240</id>
+<updated>2023-11-16T10:44:00-06:00</updated>
+<published>2023-11-16T10:44:00-06:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Wind Advisory issued November 16 at 10:44AM CST until November 16 at 7:00PM CST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=IA12666C7E0D30.WindAdvisory.12666C8AF450IA.ARXNPWARX.0a086abc3750a8b1cf1d2034dbdd0240"/>
+<summary>...WIND ADVISORY IN EFFECT UNTIL 7 PM CST THIS EVENING... * WHAT...Southwest winds 20 to 30 mph with gusts up to near 45 mph expected. * WHERE...In Iowa, Fayette and Winneshiek Counties. In Minnesota, Houston and Winona Counties. In Wisconsin, Clark, Taylor, Buffalo, Jackson, and Trempealeau Counties.</summary>
+<cap:event>Wind Advisory</cap:event>
+<cap:effective>2023-11-16T10:44:00-06:00</cap:effective>
+<cap:expires>2023-11-16T19:00:00-06:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Fayette; Winneshiek</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>019065 019191</value>
+<valueName>UGC</valueName>
+<value>IAZ010 IAZ029</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.EXA.KARX.WI.Y.0005.000000T0000Z-231117T0100Z/</value>
+</cap:parameter>
+</entry>
+<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=IA12666C7E03D0.WindAdvisory.12666C7E9840IA.FSDNPWFSD.b2aa729af0d0c310387a82aade249897</id>
 <updated>2023-11-16T10:20:00-06:00</updated>
 <published>2023-11-16T10:20:00-06:00</published>
@@ -1405,38 +1399,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value>/O.CON.KDMX.WI.Y.0008.000000T0000Z-231117T0100Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=IA12666C7DEBFC.WindAdvisory.12666C8AF450IA.ARXNPWARX.0d146718327e5ce5015f7c8de2734392</id>
-<updated>2023-11-16T09:59:00-06:00</updated>
-<published>2023-11-16T09:59:00-06:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Wind Advisory issued November 16 at 9:59AM CST until November 16 at 7:00PM CST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=IA12666C7DEBFC.WindAdvisory.12666C8AF450IA.ARXNPWARX.0d146718327e5ce5015f7c8de2734392"/>
-<summary>...WIND ADVISORY REMAINS IN EFFECT UNTIL 7 PM CST THIS EVENING... * WHAT...Southwest winds 20 to 30 mph with gusts up to 45 to 50 mph expected. * WHERE...In Iowa, Floyd, Mitchell, Chickasaw, and Howard Counties. In Minnesota, Dodge, Fillmore, Mower, Olmsted, and Wabasha Counties.</summary>
-<cap:event>Wind Advisory</cap:event>
-<cap:effective>2023-11-16T09:59:00-06:00</cap:effective>
-<cap:expires>2023-11-16T19:00:00-06:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Chickasaw; Floyd; Howard; Mitchell</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>019037 019067 019089 019131</value>
-<valueName>UGC</valueName>
-<value>IAZ008 IAZ009 IAZ018 IAZ019</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KARX.WI.Y.0005.000000T0000Z-231117T0100Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -1857,6 +1819,70 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=MN12666C7E0D30.WindAdvisory.12666C8AF450MN.ARXNPWARX.2e52493ff16e216bd9d60b5236efe1a3</id>
+<updated>2023-11-16T10:44:00-06:00</updated>
+<published>2023-11-16T10:44:00-06:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Wind Advisory issued November 16 at 10:44AM CST until November 16 at 7:00PM CST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MN12666C7E0D30.WindAdvisory.12666C8AF450MN.ARXNPWARX.2e52493ff16e216bd9d60b5236efe1a3"/>
+<summary>...WIND ADVISORY REMAINS IN EFFECT UNTIL 7 PM CST THIS EVENING... * WHAT...Southwest winds 20 to 30 mph with gusts up to 45 to 50 mph expected. * WHERE...In Iowa, Floyd, Mitchell, Chickasaw, and Howard Counties. In Minnesota, Dodge, Fillmore, Mower, Olmsted, and Wabasha Counties.</summary>
+<cap:event>Wind Advisory</cap:event>
+<cap:effective>2023-11-16T10:44:00-06:00</cap:effective>
+<cap:expires>2023-11-16T19:00:00-06:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Dodge; Fillmore; Mower; Olmsted; Wabasha</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>027039 027045 027099 027109 027157</value>
+<valueName>UGC</valueName>
+<value>MNZ079 MNZ086 MNZ087 MNZ094 MNZ095</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KARX.WI.Y.0005.000000T0000Z-231117T0100Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=MN12666C7E0D30.WindAdvisory.12666C8AF450MN.ARXNPWARX.8b0b4857cb92847097dfc9cc489c5132</id>
+<updated>2023-11-16T10:44:00-06:00</updated>
+<published>2023-11-16T10:44:00-06:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Wind Advisory issued November 16 at 10:44AM CST until November 16 at 7:00PM CST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MN12666C7E0D30.WindAdvisory.12666C8AF450MN.ARXNPWARX.8b0b4857cb92847097dfc9cc489c5132"/>
+<summary>...WIND ADVISORY IN EFFECT UNTIL 7 PM CST THIS EVENING... * WHAT...Southwest winds 20 to 30 mph with gusts up to near 45 mph expected. * WHERE...In Iowa, Fayette and Winneshiek Counties. In Minnesota, Houston and Winona Counties. In Wisconsin, Clark, Taylor, Buffalo, Jackson, and Trempealeau Counties.</summary>
+<cap:event>Wind Advisory</cap:event>
+<cap:effective>2023-11-16T10:44:00-06:00</cap:effective>
+<cap:expires>2023-11-16T19:00:00-06:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Houston; Winona</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>027055 027169</value>
+<valueName>UGC</valueName>
+<value>MNZ088 MNZ096</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.EXA.KARX.WI.Y.0005.000000T0000Z-231117T0100Z/</value>
+</cap:parameter>
+</entry>
+<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=MN12666C7E0498.WindAdvisory.12666C8AF450MN.MPXNPWMPX.b1205495b912834d3953968f6cc7f471</id>
 <updated>2023-11-16T10:22:00-06:00</updated>
 <published>2023-11-16T10:22:00-06:00</published>
@@ -1950,38 +1976,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value>/O.CON.KFSD.WI.Y.0014.000000T0000Z-231116T2000Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=MN12666C7DEBFC.WindAdvisory.12666C8AF450MN.ARXNPWARX.2e52493ff16e216bd9d60b5236efe1a3</id>
-<updated>2023-11-16T09:59:00-06:00</updated>
-<published>2023-11-16T09:59:00-06:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Wind Advisory issued November 16 at 9:59AM CST until November 16 at 7:00PM CST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MN12666C7DEBFC.WindAdvisory.12666C8AF450MN.ARXNPWARX.2e52493ff16e216bd9d60b5236efe1a3"/>
-<summary>...WIND ADVISORY REMAINS IN EFFECT UNTIL 7 PM CST THIS EVENING... * WHAT...Southwest winds 20 to 30 mph with gusts up to 45 to 50 mph expected. * WHERE...In Iowa, Floyd, Mitchell, Chickasaw, and Howard Counties. In Minnesota, Dodge, Fillmore, Mower, Olmsted, and Wabasha Counties.</summary>
-<cap:event>Wind Advisory</cap:event>
-<cap:effective>2023-11-16T09:59:00-06:00</cap:effective>
-<cap:expires>2023-11-16T19:00:00-06:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Dodge; Fillmore; Mower; Olmsted; Wabasha</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>027039 027045 027099 027109 027157</value>
-<valueName>UGC</valueName>
-<value>MNZ079 MNZ086 MNZ087 MNZ094 MNZ095</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KARX.WI.Y.0005.000000T0000Z-231117T0100Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -2178,38 +2172,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=MT12666C7DBB28.SpecialWeatherStatement.12666C7E0D94MT.TFXSPSTFX.f2dc2801333ae50300e224472d1e5503</id>
-<updated>2023-11-16T07:34:00-07:00</updated>
-<published>2023-11-16T07:34:00-07:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Special Weather Statement issued November 16 at 7:34AM MST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MT12666C7DBB28.SpecialWeatherStatement.12666C7E0D94MT.TFXSPSTFX.f2dc2801333ae50300e224472d1e5503"/>
-<summary>...Areas of Fog Reducing Visibility This Morning... Areas of fog are reducing visibility to around a half mile or less at times across portions of the region this morning. Be prepared for quickly changing visibility. If you encounter fog, allow for plenty of room between you and the vehicle in front of you. Fog is expected to diminish later this morning.</summary>
-<cap:event>Special Weather Statement</cap:event>
-<cap:effective>2023-11-16T07:34:00-07:00</cap:effective>
-<cap:expires>2023-11-16T09:45:00-07:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Observed</cap:certainty>
-<cap:areaDesc>Bears Paw Mountains and Southern Blaine; Eastern Toole and Liberty; Fergus County below 4500ft; Hill County; Judith Basin County and Judith Gap; Northern Blaine County; Snowy and Judith Mountains</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>030005 030015 030027 030041 030045 030051 030101</value>
-<valueName>UGC</valueName>
-<value>MTZ304 MTZ305 MTZ306 MTZ311 MTZ313 MTZ314 MTZ318</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value></value>
-</cap:parameter>
-</entry>
-<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=ND12666C7DBA60.WindAdvisory.12666C7EBF50ND.BISNPWBIS.4b0bfcc5487b1516346c91ed58b02370</id>
 <updated>2023-11-16T08:32:00-06:00</updated>
 <published>2023-11-16T08:32:00-06:00</published>
@@ -2399,38 +2361,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value></value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=OK12666C7DB7A4.DenseFogAdvisory.12666C7E2310OK.OUNNPWOUN.fdb1104699bade9178668c0f3fca9228</id>
-<updated>2023-11-16T08:25:00-06:00</updated>
-<published>2023-11-16T08:25:00-06:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Dense Fog Advisory issued November 16 at 8:25AM CST until November 16 at 11:00AM CST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=OK12666C7DB7A4.DenseFogAdvisory.12666C7E2310OK.OUNNPWOUN.fdb1104699bade9178668c0f3fca9228"/>
-<summary>...DENSE FOG ADVISORY REMAINS IN EFFECT UNTIL 11 AM CST THIS MORNING... * WHAT...Visibility one quarter mile or less in dense fog. * WHERE...Portions of central, east central, southeast and southern Oklahoma. * WHEN...Until 11 AM CST this morning.</summary>
-<cap:event>Dense Fog Advisory</cap:event>
-<cap:effective>2023-11-16T08:25:00-06:00</cap:effective>
-<cap:expires>2023-11-16T11:00:00-06:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Carter; Cleveland; Garvin; Grady; Jefferson; Love; McClain; Murray; Oklahoma; Stephens</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>040019 040027 040049 040051 040067 040085 040087 040099 040109 040137</value>
-<valueName>UGC</valueName>
-<value>OKZ025 OKZ027 OKZ028 OKZ029 OKZ039 OKZ040 OKZ041 OKZ045 OKZ046 OKZ050</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KOUN.FG.Y.0011.000000T0000Z-231116T1700Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -3295,6 +3225,38 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value>/O.NEW.KPDT.FG.Y.0012.231116T0845Z-231116T1800Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=WI12666C7E0D30.WindAdvisory.12666C8AF450WI.ARXNPWARX.e3423b69c8a192d80ed9f6768ebb6304</id>
+<updated>2023-11-16T10:44:00-06:00</updated>
+<published>2023-11-16T10:44:00-06:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Wind Advisory issued November 16 at 10:44AM CST until November 16 at 7:00PM CST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=WI12666C7E0D30.WindAdvisory.12666C8AF450WI.ARXNPWARX.e3423b69c8a192d80ed9f6768ebb6304"/>
+<summary>...WIND ADVISORY IN EFFECT UNTIL 7 PM CST THIS EVENING... * WHAT...Southwest winds 20 to 30 mph with gusts up to near 45 mph expected. * WHERE...In Iowa, Fayette and Winneshiek Counties. In Minnesota, Houston and Winona Counties. In Wisconsin, Clark, Taylor, Buffalo, Jackson, and Trempealeau Counties.</summary>
+<cap:event>Wind Advisory</cap:event>
+<cap:effective>2023-11-16T10:44:00-06:00</cap:effective>
+<cap:expires>2023-11-16T19:00:00-06:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Buffalo; Clark; Jackson; Taylor; Trempealeau</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>055011 055019 055053 055119 055121</value>
+<valueName>UGC</valueName>
+<value>WIZ017 WIZ029 WIZ032 WIZ033 WIZ034</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.EXA.KARX.WI.Y.0005.000000T0000Z-231117T0100Z/</value>
 </cap:parameter>
 </entry>
 <entry>
