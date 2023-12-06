@@ -16,11 +16,11 @@ xmlns = 'http://www.w3.org/2005/Atom'
 xmlns:cap = 'urn:oasis:names:tc:emergency:cap:1.1'
 xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 >
-<!-- http-date = Wed, 06 Dec 2023 02:58:00 GMT -->
+<!-- http-date = Wed, 06 Dec 2023 03:10:00 GMT -->
 <id>https://alerts.weather.gov/cap/us.php?x=0</id>
 <logo>http://alerts.weather.gov/images/xml_logo.gif</logo>
 <generator>NWS CAP Server</generator>
-<updated>2023-12-05T18:58:00-08:00</updated>
+<updated>2023-12-05T22:10:00-05:00</updated>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
@@ -412,17 +412,82 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=CA126671D92788.WindAdvisory.126671E90220CA.REVNPWREV.31cfa2c50745188c772c070bd11b5ba4</id>
-<updated>2023-12-05T18:10:00-08:00</updated>
-<published>2023-12-05T18:10:00-08:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=CA126671D94CA4.BeachHazardsStatement.126671E9EC80CA.MTRCFWMTR.07aac47a80a5701c194c88fbeb3df79e</id>
+<updated>2023-12-05T19:05:00-08:00</updated>
+<published>2023-12-05T19:05:00-08:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Wind Advisory issued December 05 at 6:10PM PST until December 06 at 10:00PM PST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CA126671D92788.WindAdvisory.126671E90220CA.REVNPWREV.31cfa2c50745188c772c070bd11b5ba4"/>
-<summary>...WIND ADVISORY REMAINS IN EFFECT FROM 10 AM TO 10 PM PST WEDNESDAY... * WHAT...Southwest winds 30 to 40 mph with gusts up to 80 mph. * WHERE...In California, Mono County. In Nevada, Greater Reno-Carson City-Minden Area. * WHEN...From 10 AM to 10 PM PST Wednesday.</summary>
+<title>Beach Hazards Statement issued December 05 at 7:05PM PST until December 07 at 4:00AM PST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CA126671D94CA4.BeachHazardsStatement.126671E9EC80CA.MTRCFWMTR.07aac47a80a5701c194c88fbeb3df79e"/>
+<summary>...BEACH HAZARDS STATEMENT REMAINS IN EFFECT THROUGH LATE WEDNESDAY NIGHT... * WHAT...Breaking waves of 9 to 13 feet expected. * WHERE...Northern Monterey Bay County. * WHEN...From this evening through late Wednesday night. * IMPACTS...Dangerous swimming and surfing conditions and</summary>
+<cap:event>Beach Hazards Statement</cap:event>
+<cap:effective>2023-12-05T19:05:00-08:00</cap:effective>
+<cap:expires>2023-12-07T04:00:00-08:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Northern Monterey Bay</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>006087</value>
+<valueName>UGC</valueName>
+<value>CAZ529</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KMTR.BH.S.0018.000000T0000Z-231207T1200Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=CA126671D94CA4.HighSurfAdvisory.126671E9EC80CA.MTRCFWMTR.e8b3c697d6cefd83ff467bda8610f55c</id>
+<updated>2023-12-05T19:05:00-08:00</updated>
+<published>2023-12-05T19:05:00-08:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>High Surf Advisory issued December 05 at 7:05PM PST until December 07 at 4:00AM PST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CA126671D94CA4.HighSurfAdvisory.126671E9EC80CA.MTRCFWMTR.e8b3c697d6cefd83ff467bda8610f55c"/>
+<summary>...HIGH SURF ADVISORY REMAINS IN EFFECT UNTIL 4 AM PST THURSDAY... ...BEACH HAZARDS STATEMENT HAS EXPIRED... * WHAT...Large breaking waves of 18 to 22 feet. * WHERE...San Francisco, Coastal North Bay Including Point Reyes National Seashore, San Francisco Peninsula Coast and Southern Monterey Bay and Big Sur Coast Counties.</summary>
+<cap:event>High Surf Advisory</cap:event>
+<cap:effective>2023-12-05T19:05:00-08:00</cap:effective>
+<cap:expires>2023-12-07T04:00:00-08:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Coastal North Bay Including Point Reyes National Seashore; San Francisco; San Fransisco Peninsula Coast; Southern Monterey Bay and Big Sur Coast</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>006041 006053 006075 006081 006097</value>
+<valueName>UGC</valueName>
+<value>CAZ006 CAZ505 CAZ509 CAZ530</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.EXP.KMTR.BH.S.0017.000000T0000Z-231206T0300Z/
+/O.CON.KMTR.SU.Y.0009.000000T0000Z-231207T1200Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=CA126671D94C40.WindAdvisory.126671E90220CA.REVNPWREV.31cfa2c50745188c772c070bd11b5ba4</id>
+<updated>2023-12-05T19:04:00-08:00</updated>
+<published>2023-12-05T19:04:00-08:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Wind Advisory issued December 05 at 7:04PM PST until December 06 at 10:00PM PST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CA126671D94C40.WindAdvisory.126671E90220CA.REVNPWREV.31cfa2c50745188c772c070bd11b5ba4"/>
+<summary>...WIND ADVISORY REMAINS IN EFFECT FROM 10 AM TO 10 PM PST WEDNESDAY... * WHAT...Southwest winds 20 to 30 mph with gusts up to 50 mph. Localized gusts to 60-70 mph in wind prone areas along US-395/I-580 are possible. * WHERE...In California, Eastern Alpine County, Mono County. In</summary>
 <cap:event>Wind Advisory</cap:event>
-<cap:effective>2023-12-05T18:10:00-08:00</cap:effective>
+<cap:effective>2023-12-05T19:04:00-08:00</cap:effective>
 <cap:expires>2023-12-06T22:00:00-08:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
@@ -440,21 +505,21 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
-<value>/O.CON.KREV.WI.Y.0019.231206T1800Z-231207T0600Z/</value>
+<value>/O.COR.KREV.WI.Y.0019.231206T1800Z-231207T0600Z/</value>
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=CA126671D92788.LakeWindAdvisory.126671E97750CA.REVNPWREV.ea48e768c4f205c95c40ebdcde2608af</id>
-<updated>2023-12-05T18:10:00-08:00</updated>
-<published>2023-12-05T18:10:00-08:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=CA126671D94C40.LakeWindAdvisory.126671E97750CA.REVNPWREV.ea48e768c4f205c95c40ebdcde2608af</id>
+<updated>2023-12-05T19:04:00-08:00</updated>
+<published>2023-12-05T19:04:00-08:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Lake Wind Advisory issued December 05 at 6:10PM PST until December 07 at 1:00AM PST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CA126671D92788.LakeWindAdvisory.126671E97750CA.REVNPWREV.ea48e768c4f205c95c40ebdcde2608af"/>
+<title>Lake Wind Advisory issued December 05 at 7:04PM PST until December 07 at 1:00AM PST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CA126671D94C40.LakeWindAdvisory.126671E97750CA.REVNPWREV.ea48e768c4f205c95c40ebdcde2608af"/>
 <summary>...LAKE WIND ADVISORY REMAINS IN EFFECT FROM 10 AM WEDNESDAY TO 1 AM PST THURSDAY FOR LAKE TAHOE... * WHAT...Southwest winds 20 to 30 mph with gusts up to 45 mph and waves 2 to 4 feet for Lake Tahoe. * WHERE...Greater Lake Tahoe Area. * WHEN...From 10 AM Wednesday to 1 AM PST Thursday.</summary>
 <cap:event>Lake Wind Advisory</cap:event>
-<cap:effective>2023-12-05T18:10:00-08:00</cap:effective>
+<cap:effective>2023-12-05T19:04:00-08:00</cap:effective>
 <cap:expires>2023-12-07T01:00:00-08:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
@@ -927,71 +992,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=CA126671CB4988.BeachHazardsStatement.126671E9EC80CA.MTRCFWMTR.07aac47a80a5701c194c88fbeb3df79e</id>
-<updated>2023-12-05T03:22:00-08:00</updated>
-<published>2023-12-05T03:22:00-08:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Beach Hazards Statement issued December 05 at 3:22AM PST until December 07 at 4:00AM PST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CA126671CB4988.BeachHazardsStatement.126671E9EC80CA.MTRCFWMTR.07aac47a80a5701c194c88fbeb3df79e"/>
-<summary>...BEACH HAZARDS STATEMENT IN EFFECT FROM THIS EVENING THROUGH LATE WEDNESDAY NIGHT... * WHAT...Breaking waves of 9 to 13 feet expected. * WHERE...Northern Monterey Bay County. * WHEN...From this evening through late Wednesday night. * IMPACTS...Dangerous swimming and surfing conditions and</summary>
-<cap:event>Beach Hazards Statement</cap:event>
-<cap:effective>2023-12-05T03:22:00-08:00</cap:effective>
-<cap:expires>2023-12-07T04:00:00-08:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Northern Monterey Bay</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>006087</value>
-<valueName>UGC</valueName>
-<value>CAZ529</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.NEW.KMTR.BH.S.0018.231206T0300Z-231207T1200Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=CA126671CB4988.HighSurfAdvisory.126671E9EC80CA.MTRCFWMTR.e8b3c697d6cefd83ff467bda8610f55c</id>
-<updated>2023-12-05T03:22:00-08:00</updated>
-<published>2023-12-05T03:22:00-08:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>High Surf Advisory issued December 05 at 3:22AM PST until December 07 at 4:00AM PST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CA126671CB4988.HighSurfAdvisory.126671E9EC80CA.MTRCFWMTR.e8b3c697d6cefd83ff467bda8610f55c"/>
-<summary>...BEACH HAZARDS STATEMENT NOW IN EFFECT THROUGH THIS EVENING... ...HIGH SURF ADVISORY IN EFFECT FROM 7 PM THIS EVENING TO 4 AM PST THURSDAY... * WHAT...For the Beach Hazards Statement, increased risk of sneaker waves expected. For the High Surf Advisory, large breaking waves of 18 to 22 feet.</summary>
-<cap:event>High Surf Advisory</cap:event>
-<cap:effective>2023-12-05T03:22:00-08:00</cap:effective>
-<cap:expires>2023-12-07T04:00:00-08:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Coastal North Bay Including Point Reyes National Seashore; San Francisco; San Fransisco Peninsula Coast; Southern Monterey Bay and Big Sur Coast</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>006041 006053 006075 006081 006097</value>
-<valueName>UGC</valueName>
-<value>CAZ006 CAZ505 CAZ509 CAZ530</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.NEW.KMTR.SU.Y.0009.231206T0300Z-231207T1200Z/
-/O.EXT.KMTR.BH.S.0017.000000T0000Z-231206T0300Z/</value>
-</cap:parameter>
-</entry>
-<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=CO126671CCD028.HighWindWatch.126671F75A00CO.BOUNPWBOU.ef9772b91a75d1a4765935e098812b02</id>
 <updated>2023-12-05T14:22:00-07:00</updated>
 <published>2023-12-05T14:22:00-07:00</published>
@@ -1380,6 +1380,70 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=NC126671D94E98.WinterWeatherAdvisory.126671DC09D0NC.GSPWSWGSP.f973f758c420bbeeff1b94b4f7b30f93</id>
+<updated>2023-12-05T22:10:00-05:00</updated>
+<published>2023-12-05T22:10:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Winter Weather Advisory issued December 05 at 10:10PM EST until December 06 at 4:00PM EST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=NC126671D94E98.WinterWeatherAdvisory.126671DC09D0NC.GSPWSWGSP.f973f758c420bbeeff1b94b4f7b30f93"/>
+<summary>...WINTER WEATHER ADVISORY REMAINS IN EFFECT UNTIL 4 PM EST WEDNESDAY... * WHAT...Snow. Total snow accumulations of up to two inches, with up to 4 inches in higher elevations. Winds will gust 35 to 40 mph at times through Wednesday morning. * WHERE...Avery County.</summary>
+<cap:event>Winter Weather Advisory</cap:event>
+<cap:effective>2023-12-05T22:10:00-05:00</cap:effective>
+<cap:expires>2023-12-06T16:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Avery</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>037011</value>
+<valueName>UGC</valueName>
+<value>NCZ033</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KGSP.WW.Y.0006.000000T0000Z-231206T2100Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=NC126671D94E98.WinterWeatherAdvisory.126671DC09D0NC.GSPWSWGSP.57b71894a7489a7cc7bb9a84b7fd4816</id>
+<updated>2023-12-05T22:10:00-05:00</updated>
+<published>2023-12-05T22:10:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Winter Weather Advisory issued December 05 at 10:10PM EST until December 06 at 4:00PM EST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=NC126671D94E98.WinterWeatherAdvisory.126671DC09D0NC.GSPWSWGSP.57b71894a7489a7cc7bb9a84b7fd4816"/>
+<summary>...WINTER WEATHER ADVISORY REMAINS IN EFFECT UNTIL 4 PM EST WEDNESDAY ABOVE 3500 FEET... * WHAT...Snow. Total snow accumulations of generally 2 to 3 inches at elevations above 3500 feet. The highest elevations in the Smokies may see totals of 6 to 8 inches. Winds will gust as high as 40 mph through Wednesday morning.</summary>
+<cap:event>Winter Weather Advisory</cap:event>
+<cap:effective>2023-12-05T22:10:00-05:00</cap:effective>
+<cap:expires>2023-12-06T16:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Graham; Haywood; Madison; Mitchell; Swain; Yancey</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>037075 037087 037115 037121 037173 037199</value>
+<valueName>UGC</valueName>
+<value>NCZ048 NCZ049 NCZ050 NCZ051 NCZ052 NCZ058</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KGSP.WW.Y.0006.000000T0000Z-231206T2100Z/</value>
+</cap:parameter>
+</entry>
+<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=NC126671D9265C.WinterWeatherAdvisory.126671DC09D0NC.RNKWSWRNK.48b51552429a9f7e1c695b55d4fb8e7d</id>
 <updated>2023-12-05T21:07:00-05:00</updated>
 <published>2023-12-05T21:07:00-05:00</published>
@@ -1412,81 +1476,17 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=NC126671CC8E24.WinterWeatherAdvisory.126671DC09D0NC.GSPWSWGSP.f973f758c420bbeeff1b94b4f7b30f93</id>
-<updated>2023-12-05T14:53:00-05:00</updated>
-<published>2023-12-05T14:53:00-05:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=NV126671D94C40.LakeWindAdvisory.126671E90220NV.REVNPWREV.38a782153d3b48af6d6d454647b922b5</id>
+<updated>2023-12-05T19:04:00-08:00</updated>
+<published>2023-12-05T19:04:00-08:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Winter Weather Advisory issued December 05 at 2:53PM EST until December 06 at 4:00PM EST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=NC126671CC8E24.WinterWeatherAdvisory.126671DC09D0NC.GSPWSWGSP.f973f758c420bbeeff1b94b4f7b30f93"/>
-<summary>...WINTER WEATHER ADVISORY REMAINS IN EFFECT FROM 10 PM THIS EVENING TO 4 PM EST WEDNESDAY... * WHAT...Snow expected. Total snow accumulations of up to two inches, with up to 4 inches in higher elevations. Winds will gust 35 to 40 mph at times Wednesday morning. * WHERE...Avery County.</summary>
-<cap:event>Winter Weather Advisory</cap:event>
-<cap:effective>2023-12-05T14:53:00-05:00</cap:effective>
-<cap:expires>2023-12-06T16:00:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Avery</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>037011</value>
-<valueName>UGC</valueName>
-<value>NCZ033</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KGSP.WW.Y.0006.231206T0300Z-231206T2100Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=NC126671CC8E24.WinterWeatherAdvisory.126671DC09D0NC.GSPWSWGSP.57b71894a7489a7cc7bb9a84b7fd4816</id>
-<updated>2023-12-05T14:53:00-05:00</updated>
-<published>2023-12-05T14:53:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Winter Weather Advisory issued December 05 at 2:53PM EST until December 06 at 4:00PM EST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=NC126671CC8E24.WinterWeatherAdvisory.126671DC09D0NC.GSPWSWGSP.57b71894a7489a7cc7bb9a84b7fd4816"/>
-<summary>...WINTER WEATHER ADVISORY REMAINS IN EFFECT FROM 10 PM THIS EVENING TO 4 PM EST WEDNESDAY ABOVE 3500 FEET... * WHAT...Snow expected. Total snow accumulations of generally 2 to 3 inches at elevations above 3500 feet. The highest elevations in the Smokies may see totals of 6 to 8 inches. Winds will gust as high as 40 mph Wednesday morning.</summary>
-<cap:event>Winter Weather Advisory</cap:event>
-<cap:effective>2023-12-05T14:53:00-05:00</cap:effective>
-<cap:expires>2023-12-06T16:00:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Graham; Haywood; Madison; Mitchell; Swain; Yancey</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>037075 037087 037115 037121 037173 037199</value>
-<valueName>UGC</valueName>
-<value>NCZ048 NCZ049 NCZ050 NCZ051 NCZ052 NCZ058</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KGSP.WW.Y.0006.231206T0300Z-231206T2100Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=NV126671D92788.LakeWindAdvisory.126671E90220NV.REVNPWREV.38a782153d3b48af6d6d454647b922b5</id>
-<updated>2023-12-05T18:10:00-08:00</updated>
-<published>2023-12-05T18:10:00-08:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Lake Wind Advisory issued December 05 at 6:10PM PST until December 06 at 10:00PM PST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=NV126671D92788.LakeWindAdvisory.126671E90220NV.REVNPWREV.38a782153d3b48af6d6d454647b922b5"/>
+<title>Lake Wind Advisory issued December 05 at 7:04PM PST until December 06 at 10:00PM PST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=NV126671D94C40.LakeWindAdvisory.126671E90220NV.REVNPWREV.38a782153d3b48af6d6d454647b922b5"/>
 <summary>...LAKE WIND ADVISORY IN EFFECT FROM 10 AM TO 10 PM PST WEDNESDAY FOR PYRAMID LAKE... * WHAT...Southwest winds 15 to 25 mph with gusts up to 45 mph and waves 2 to 4 feet for Pyramid Lake. * WHERE...Pyramid Lake. * WHEN...From 10 AM to 10 PM PST Wednesday.</summary>
 <cap:event>Lake Wind Advisory</cap:event>
-<cap:effective>2023-12-05T18:10:00-08:00</cap:effective>
+<cap:effective>2023-12-05T19:04:00-08:00</cap:effective>
 <cap:expires>2023-12-06T22:00:00-08:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
@@ -1504,21 +1504,21 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
-<value>/O.EXB.KREV.LW.Y.0043.231206T1800Z-231207T0600Z/</value>
+<value>/O.COR.KREV.LW.Y.0043.231206T1800Z-231207T0600Z/</value>
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=NV126671D92788.WindAdvisory.126671E90220NV.REVNPWREV.a1f3fe5df4279247fb66dc536d1d1b59</id>
-<updated>2023-12-05T18:10:00-08:00</updated>
-<published>2023-12-05T18:10:00-08:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=NV126671D94C40.WindAdvisory.126671E90220NV.REVNPWREV.a1f3fe5df4279247fb66dc536d1d1b59</id>
+<updated>2023-12-05T19:04:00-08:00</updated>
+<published>2023-12-05T19:04:00-08:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Wind Advisory issued December 05 at 6:10PM PST until December 06 at 10:00PM PST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=NV126671D92788.WindAdvisory.126671E90220NV.REVNPWREV.a1f3fe5df4279247fb66dc536d1d1b59"/>
-<summary>...WIND ADVISORY REMAINS IN EFFECT FROM 10 AM TO 10 PM PST WEDNESDAY... * WHAT...Southwest winds 30 to 40 mph with gusts up to 80 mph. * WHERE...In California, Mono County. In Nevada, Greater Reno-Carson City-Minden Area. * WHEN...From 10 AM to 10 PM PST Wednesday.</summary>
+<title>Wind Advisory issued December 05 at 7:04PM PST until December 06 at 10:00PM PST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=NV126671D94C40.WindAdvisory.126671E90220NV.REVNPWREV.a1f3fe5df4279247fb66dc536d1d1b59"/>
+<summary>...WIND ADVISORY REMAINS IN EFFECT FROM 10 AM TO 10 PM PST WEDNESDAY... * WHAT...Southwest winds 20 to 30 mph with gusts up to 50 mph. Localized gusts to 60-70 mph in wind prone areas along US-395/I-580 are possible. * WHERE...In California, Eastern Alpine County, Mono County. In</summary>
 <cap:event>Wind Advisory</cap:event>
-<cap:effective>2023-12-05T18:10:00-08:00</cap:effective>
+<cap:effective>2023-12-05T19:04:00-08:00</cap:effective>
 <cap:expires>2023-12-06T22:00:00-08:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
@@ -1536,21 +1536,21 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
-<value>/O.CON.KREV.WI.Y.0019.231206T1800Z-231207T0600Z/</value>
+<value>/O.COR.KREV.WI.Y.0019.231206T1800Z-231207T0600Z/</value>
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=NV126671D92788.LakeWindAdvisory.126671E97750NV.REVNPWREV.39fba941b8dcc6003ba5c09c88149a28</id>
-<updated>2023-12-05T18:10:00-08:00</updated>
-<published>2023-12-05T18:10:00-08:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=NV126671D94C40.LakeWindAdvisory.126671E97750NV.REVNPWREV.39fba941b8dcc6003ba5c09c88149a28</id>
+<updated>2023-12-05T19:04:00-08:00</updated>
+<published>2023-12-05T19:04:00-08:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Lake Wind Advisory issued December 05 at 6:10PM PST until December 07 at 1:00AM PST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=NV126671D92788.LakeWindAdvisory.126671E97750NV.REVNPWREV.39fba941b8dcc6003ba5c09c88149a28"/>
+<title>Lake Wind Advisory issued December 05 at 7:04PM PST until December 07 at 1:00AM PST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=NV126671D94C40.LakeWindAdvisory.126671E97750NV.REVNPWREV.39fba941b8dcc6003ba5c09c88149a28"/>
 <summary>...LAKE WIND ADVISORY REMAINS IN EFFECT FROM 10 AM WEDNESDAY TO 1 AM PST THURSDAY FOR LAKE TAHOE... * WHAT...Southwest winds 20 to 30 mph with gusts up to 45 mph and waves 2 to 4 feet for Lake Tahoe. * WHERE...Greater Lake Tahoe Area. * WHEN...From 10 AM Wednesday to 1 AM PST Thursday.</summary>
 <cap:event>Lake Wind Advisory</cap:event>
-<cap:effective>2023-12-05T18:10:00-08:00</cap:effective>
+<cap:effective>2023-12-05T19:04:00-08:00</cap:effective>
 <cap:expires>2023-12-07T01:00:00-08:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
@@ -2160,17 +2160,17 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=TN126671CC8E88.WinterWeatherAdvisory.126671DC09D0TN.MRXWSWMRX.88ad7364077b6d547b916e32dba269ef</id>
-<updated>2023-12-05T13:54:00-06:00</updated>
-<published>2023-12-05T13:54:00-06:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=TN126671D94BDC.WinterWeatherAdvisory.126671DC09D0TN.MRXWSWMRX.88ad7364077b6d547b916e32dba269ef</id>
+<updated>2023-12-05T21:03:00-06:00</updated>
+<published>2023-12-05T21:03:00-06:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Winter Weather Advisory issued December 05 at 1:54PM CST until December 06 at 3:00PM CST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=TN126671CC8E88.WinterWeatherAdvisory.126671DC09D0TN.MRXWSWMRX.88ad7364077b6d547b916e32dba269ef"/>
-<summary>...WINTER WEATHER ADVISORY REMAINS IN EFFECT FROM 10 PM THIS EVENING TO 4 PM EST WEDNESDAY... * WHAT...Snow expected. Total snow accumulations of 1 to 3 inches above 2500 feet, with greater than 3 inches possible above 4000 feet. * WHERE...Mountains of East Tennessee, mainly above 2500 feet.</summary>
+<title>Winter Weather Advisory issued December 05 at 9:03PM CST until December 06 at 3:00PM CST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=TN126671D94BDC.WinterWeatherAdvisory.126671DC09D0TN.MRXWSWMRX.88ad7364077b6d547b916e32dba269ef"/>
+<summary>...WINTER WEATHER ADVISORY REMAINS IN EFFECT UNTIL 4 PM EST WEDNESDAY... * WHAT...Snow expected. Total snow accumulations of 1 to 3 inches above 2500 feet with greater than 3 inches possible above 4000 feet. * WHERE...Mountains of East Tennessee, mainly above 2500 feet.</summary>
 <cap:event>Winter Weather Advisory</cap:event>
-<cap:effective>2023-12-05T13:54:00-06:00</cap:effective>
+<cap:effective>2023-12-05T21:03:00-06:00</cap:effective>
 <cap:expires>2023-12-06T15:00:00-06:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
@@ -2188,7 +2188,71 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
-<value>/O.CON.KMRX.WW.Y.0005.231206T0300Z-231206T2100Z/</value>
+<value>/O.CON.KMRX.WW.Y.0005.000000T0000Z-231206T2100Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=VA126671D94BDC.SpecialWeatherStatement.126671DA3AECVA.RNKSPSRNK.9bfd426b1c662d02e3b66ba666c4cb83</id>
+<updated>2023-12-05T22:03:00-05:00</updated>
+<published>2023-12-05T22:03:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Special Weather Statement issued December 05 at 10:03PM EST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=VA126671D94BDC.SpecialWeatherStatement.126671DA3AECVA.RNKSPSRNK.9bfd426b1c662d02e3b66ba666c4cb83"/>
+<summary>...Light Snow Expected Tonight and Wednesday Morning... Rain will change this snow overnight across southwest Virginia, northwest North Carolina, and southeast West Virginia. Snow will continue through the morning on Wednesday before tapering off by the afternoon. Snow amounts by Wednesday morning will be up to 2 inches, with the higher amounts at the higher elevations.</summary>
+<cap:event>Special Weather Statement</cap:event>
+<cap:effective>2023-12-05T22:03:00-05:00</cap:effective>
+<cap:expires>2023-12-06T04:15:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Observed</cap:certainty>
+<cap:areaDesc>Bland; Giles; Smyth; Tazewell; Wythe</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>051021 051071 051173 051185 051197</value>
+<valueName>UGC</valueName>
+<value>VAZ007 VAZ009 VAZ010 VAZ011 VAZ012</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value></value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=VA126671D94BDC.WinterWeatherAdvisory.126671DC09D0VA.MRXWSWMRX.b4a8f4b818d81f11ff0ff6bef8ef61ff</id>
+<updated>2023-12-05T22:03:00-05:00</updated>
+<published>2023-12-05T22:03:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Winter Weather Advisory issued December 05 at 10:03PM EST until December 06 at 4:00PM EST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=VA126671D94BDC.WinterWeatherAdvisory.126671DC09D0VA.MRXWSWMRX.b4a8f4b818d81f11ff0ff6bef8ef61ff"/>
+<summary>...WINTER WEATHER ADVISORY REMAINS IN EFFECT UNTIL 4 PM EST WEDNESDAY... * WHAT...Snow expected. Total snow accumulations of up to two inches for locations above 2500 feet. * WHERE...Wise and Russell Counties, mainly above 2500 feet. * WHEN...From 10 PM this evening to 4 PM EST Wednesday.</summary>
+<cap:event>Winter Weather Advisory</cap:event>
+<cap:effective>2023-12-05T22:03:00-05:00</cap:effective>
+<cap:expires>2023-12-06T16:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Russell; Wise</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>051167 051195 051720</value>
+<valueName>UGC</valueName>
+<value>VAZ002 VAZ006</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KMRX.WW.Y.0005.000000T0000Z-231206T2100Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -2285,38 +2349,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value>/O.CON.KLWX.WW.Y.0023.000000T0000Z-231206T1800Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=VA126671CC8E88.WinterWeatherAdvisory.126671DC09D0VA.MRXWSWMRX.b4a8f4b818d81f11ff0ff6bef8ef61ff</id>
-<updated>2023-12-05T14:54:00-05:00</updated>
-<published>2023-12-05T14:54:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Winter Weather Advisory issued December 05 at 2:54PM EST until December 06 at 4:00PM EST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=VA126671CC8E88.WinterWeatherAdvisory.126671DC09D0VA.MRXWSWMRX.b4a8f4b818d81f11ff0ff6bef8ef61ff"/>
-<summary>...WINTER WEATHER ADVISORY REMAINS IN EFFECT FROM 10 PM THIS EVENING TO 4 PM EST WEDNESDAY... * WHAT...Snow expected. Total snow accumulations of up to two inches for locations above 2500 feet. * WHERE...Wise and Russell Counties, mainly above 2500 feet. * WHEN...From 10 PM this evening to 4 PM EST Wednesday.</summary>
-<cap:event>Winter Weather Advisory</cap:event>
-<cap:effective>2023-12-05T14:54:00-05:00</cap:effective>
-<cap:expires>2023-12-06T16:00:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Russell; Wise</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>051167 051195 051720</value>
-<valueName>UGC</valueName>
-<value>VAZ002 VAZ006</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KMRX.WW.Y.0005.231206T0300Z-231206T2100Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -3899,6 +3931,38 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value>/O.CON.KPQR.BH.S.0009.000000T0000Z-231207T1200Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=WV126671D94BDC.SpecialWeatherStatement.126671DA3AECWV.RNKSPSRNK.9487a80e2c49e8dd4c68e2f6040983a5</id>
+<updated>2023-12-05T22:03:00-05:00</updated>
+<published>2023-12-05T22:03:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Special Weather Statement issued December 05 at 10:03PM EST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=WV126671D94BDC.SpecialWeatherStatement.126671DA3AECWV.RNKSPSRNK.9487a80e2c49e8dd4c68e2f6040983a5"/>
+<summary>...Light Snow Expected Tonight and Wednesday Morning... Rain will change this snow overnight across southwest Virginia, northwest North Carolina, and southeast West Virginia. Snow will continue through the morning on Wednesday before tapering off by the afternoon. Snow amounts by Wednesday morning will be up to 2 inches, with the higher amounts at the higher elevations.</summary>
+<cap:event>Special Weather Statement</cap:event>
+<cap:effective>2023-12-05T22:03:00-05:00</cap:effective>
+<cap:expires>2023-12-06T04:15:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Observed</cap:certainty>
+<cap:areaDesc>Eastern Greenbrier; Mercer; Monroe; Summers</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>054025 054055 054063 054089</value>
+<valueName>UGC</valueName>
+<value>WVZ042 WVZ043 WVZ044 WVZ507</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value></value>
 </cap:parameter>
 </entry>
 <entry>
