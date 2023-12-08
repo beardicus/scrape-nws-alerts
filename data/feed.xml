@@ -16,16 +16,48 @@ xmlns = 'http://www.w3.org/2005/Atom'
 xmlns:cap = 'urn:oasis:names:tc:emergency:cap:1.1'
 xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 >
-<!-- http-date = Fri, 08 Dec 2023 22:54:00 GMT -->
+<!-- http-date = Fri, 08 Dec 2023 23:31:00 GMT -->
 <id>https://alerts.weather.gov/cap/us.php?x=0</id>
 <logo>http://alerts.weather.gov/images/xml_logo.gif</logo>
 <generator>NWS CAP Server</generator>
-<updated>2023-12-08T14:54:00-08:00</updated>
+<updated>2023-12-08T15:31:00-08:00</updated>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
 <title>Current Watches, Warnings and Advisories for the United States Issued by the National Weather Service</title>
 <link href="https://alerts.weather.gov/cap/us.php?x=0"/>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=AK126671FAE378.WinterWeatherAdvisory.12667208E630AK.AFGWSWNSB.8db4a62ba734a07e56c6d5bed01b7b13</id>
+<updated>2023-12-08T14:18:00-09:00</updated>
+<published>2023-12-08T14:18:00-09:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Winter Weather Advisory issued December 08 at 2:18PM AKST until December 09 at 6:00AM AKST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=AK126671FAE378.WinterWeatherAdvisory.12667208E630AK.AFGWSWNSB.8db4a62ba734a07e56c6d5bed01b7b13"/>
+<summary>...WINTER WEATHER ADVISORY REMAINS IN EFFECT UNTIL 6 AM AKST SATURDAY... * WHAT...Snow and blowing snow with low visibility. Additional snow accumulations of up to one inch. Winds gusting to 50 mph. Visibility one half mile or less at times. * WHERE...Western Arctic Coast.</summary>
+<cap:event>Winter Weather Advisory</cap:event>
+<cap:effective>2023-12-08T14:18:00-09:00</cap:effective>
+<cap:expires>2023-12-09T06:00:00-09:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Western Arctic Coast</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>002185</value>
+<valueName>UGC</valueName>
+<value>AKZ801</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.PAFG.WW.Y.0135.000000T0000Z-231209T1500Z/</value>
+</cap:parameter>
+</entry>
 <entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=AK126671FA2924.HighWindWarning.12667215DE80AK.AJKNPWAJK.f16fed5cef87b3aba7ed92de1d8c1601</id>
 <updated>2023-12-08T09:41:00-09:00</updated>
@@ -90,38 +122,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <valueName>VTEC</valueName>
 <value>/O.UPG.PAJK.HW.A.0007.231209T1200Z-231210T0000Z/
 /O.NEW.PAJK.HW.W.0011.231209T1500Z-231210T0000Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=AK126671FA2410.WinterWeatherAdvisory.12667208E630AK.AFGWSWNSB.8db4a62ba734a07e56c6d5bed01b7b13</id>
-<updated>2023-12-08T09:28:00-09:00</updated>
-<published>2023-12-08T09:28:00-09:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Winter Weather Advisory issued December 08 at 9:28AM AKST until December 09 at 6:00AM AKST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=AK126671FA2410.WinterWeatherAdvisory.12667208E630AK.AFGWSWNSB.8db4a62ba734a07e56c6d5bed01b7b13"/>
-<summary>...WINTER WEATHER ADVISORY IN EFFECT UNTIL 6 AM AKST SATURDAY... * WHAT...Snow and blowing snow with low visibility. Additional snow accumulations of up to one inch. Winds gusting to 50 mph. Visibility one half mile or less at times. * WHERE...Western Arctic Coast. * WHEN...Until 6 AM AKST Saturday.</summary>
-<cap:event>Winter Weather Advisory</cap:event>
-<cap:effective>2023-12-08T09:28:00-09:00</cap:effective>
-<cap:expires>2023-12-09T06:00:00-09:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Western Arctic Coast</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>002185</value>
-<valueName>UGC</valueName>
-<value>AKZ801</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.NEW.PAFG.WW.Y.0135.231208T1828Z-231209T1500Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -314,6 +314,71 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value>/O.CON.KVEF.WI.Y.0044.231209T0800Z-231210T0000Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=CA126671FAE058.RedFlagWarning.12667208BF20CA.LOXRFWLOX.c4f85705da6f45ed8854746ebb0e8a66</id>
+<updated>2023-12-08T15:10:00-08:00</updated>
+<published>2023-12-08T15:10:00-08:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Red Flag Warning issued December 08 at 3:10PM PST until December 09 at 6:00AM PST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CA126671FAE058.RedFlagWarning.12667208BF20CA.LOXRFWLOX.c4f85705da6f45ed8854746ebb0e8a66"/>
+<summary>...RED FLAG WARNING IN EFFECT THROUGH TONIGHT OVER MOST MOUNTAINS OF SANTA BARBARA COUNTY... ...RED FLAG WARNING IN EFFECT FROM SATURDAY MORNING THROUGH SUNDAY AFTERNOON OVER MOST OF LOS ANGELES AND VENTURA COUNTIES... .Moderate to strong north to northeast winds combined with low relative humidities will elevate the risk for extreme fire</summary>
+<cap:event>Red Flag Warning</cap:event>
+<cap:effective>2023-12-08T15:10:00-08:00</cap:effective>
+<cap:expires>2023-12-09T06:00:00-08:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Severe</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Santa Barbara County Interior Mountains; Santa Ynez Mountains Eastern Range</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>006083 006111</value>
+<valueName>UGC</valueName>
+<value>CAZ352 CAZ353</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KLOX.FW.W.0004.000000T0000Z-231209T1400Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=CA126671FAE058.RedFlagWarning.1266721960F0CA.LOXRFWLOX.5c0e2058c345028c8aa44305f23f6fba</id>
+<updated>2023-12-08T15:10:00-08:00</updated>
+<published>2023-12-08T15:10:00-08:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Red Flag Warning issued December 08 at 3:10PM PST until December 10 at 3:00PM PST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CA126671FAE058.RedFlagWarning.1266721960F0CA.LOXRFWLOX.5c0e2058c345028c8aa44305f23f6fba"/>
+<summary>...RED FLAG WARNING IN EFFECT THROUGH TONIGHT OVER MOST MOUNTAINS OF SANTA BARBARA COUNTY... ...RED FLAG WARNING IN EFFECT FROM SATURDAY MORNING THROUGH SUNDAY AFTERNOON OVER MOST OF LOS ANGELES AND VENTURA COUNTIES... .Moderate to strong north to northeast winds combined with low relative humidities will elevate the risk for extreme fire</summary>
+<cap:event>Red Flag Warning</cap:event>
+<cap:effective>2023-12-08T15:10:00-08:00</cap:effective>
+<cap:expires>2023-12-10T15:00:00-08:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Severe</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Calabasas and Agoura Hills; Central Ventura County Valleys; Eastern San Fernando Valley; Eastern San Gabriel Mountains; Eastern Santa Monica Mountains Recreational Area; Interstate 5 Corridor; Malibu Coast; Northern Ventura County Mountains; Santa Clarita Valley; Santa Susana Mountains; Southeastern Ventura County Valleys; Southern Ventura County Mountains; Ventura County Beaches; Ventura County Inland Coast; Western San Fernando Valley; Western San Gabriel Mountains and Highway 14 Corridor; Western Santa Monica Mountains Recreational Area</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>006037 006111</value>
+<valueName>UGC</valueName>
+<value>CAZ288 CAZ354 CAZ355 CAZ358 CAZ362 CAZ369 CAZ370 CAZ371 CAZ372 CAZ373 CAZ374 CAZ375 CAZ376 CAZ377 CAZ378 CAZ379 CAZ380</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.UPG.KLOX.FW.A.0005.231209T1800Z-231210T2000Z/
+/O.NEW.KLOX.FW.W.0005.231209T1600Z-231210T2300Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -864,102 +929,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=CA126671FA0020.RedFlagWarning.12667208BF20CA.LOXRFWLOX.c4f85705da6f45ed8854746ebb0e8a66</id>
-<updated>2023-12-08T09:36:00-08:00</updated>
-<published>2023-12-08T09:36:00-08:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Red Flag Warning issued December 08 at 9:36AM PST until December 09 at 6:00AM PST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CA126671FA0020.RedFlagWarning.12667208BF20CA.LOXRFWLOX.c4f85705da6f45ed8854746ebb0e8a66"/>
-<summary>CORRECTED STALE HEADLINES AND DISCUSSION ...RED FLAG WARNING IN EFFECT FROM LATE THIS AFTERNOON THROUGH TONIGHT OVER SANTA BARBARA COUNTY... ...FIRE WEATHER WATCH IN EFFECT FROM LATE SATURDAY MORNING THROUGH SUNDAY MORNING OVER MOST OF LOS ANGELES AND VENTURA COUNTIES... .Moderate to strong north to northeast winds combined with low</summary>
-<cap:event>Red Flag Warning</cap:event>
-<cap:effective>2023-12-08T09:36:00-08:00</cap:effective>
-<cap:expires>2023-12-09T06:00:00-08:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Severe</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Santa Barbara County Interior Mountains; Santa Ynez Mountains Eastern Range</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>006083 006111</value>
-<valueName>UGC</valueName>
-<value>CAZ352 CAZ353</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KLOX.FW.W.0004.231208T2300Z-231209T1400Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=CA126671FA0020.FireWeatherWatch.12667218EBC0CA.LOXRFWLOX.c015c93a95ad6d3916a113cc92e73ab3</id>
-<updated>2023-12-08T09:36:00-08:00</updated>
-<published>2023-12-08T09:36:00-08:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Fire Weather Watch issued December 08 at 9:36AM PST until December 10 at 12:00PM PST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CA126671FA0020.FireWeatherWatch.12667218EBC0CA.LOXRFWLOX.c015c93a95ad6d3916a113cc92e73ab3"/>
-<summary>CORRECTED STALE HEADLINES AND DISCUSSION ...RED FLAG WARNING IN EFFECT FROM LATE THIS AFTERNOON THROUGH TONIGHT OVER SANTA BARBARA COUNTY... ...FIRE WEATHER WATCH IN EFFECT FROM LATE SATURDAY MORNING THROUGH SUNDAY MORNING OVER MOST OF LOS ANGELES AND VENTURA COUNTIES... .Moderate to strong north to northeast winds combined with low</summary>
-<cap:event>Fire Weather Watch</cap:event>
-<cap:effective>2023-12-08T09:36:00-08:00</cap:effective>
-<cap:expires>2023-12-10T12:00:00-08:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Future</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Possible</cap:certainty>
-<cap:areaDesc>Eastern San Gabriel Mountains; Eastern Santa Monica Mountains Recreational Area; Interstate 5 Corridor; Northern Ventura County Mountains; Santa Clarita Valley; Santa Susana Mountains; Southern Ventura County Mountains; Western San Gabriel Mountains and Highway 14 Corridor; Western Santa Monica Mountains Recreational Area</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>006037 006111</value>
-<valueName>UGC</valueName>
-<value>CAZ288 CAZ369 CAZ370 CAZ375 CAZ376 CAZ377 CAZ378 CAZ379 CAZ380</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KLOX.FW.A.0005.231209T1800Z-231210T2000Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=CA126671FA0020.FireWeatherWatch.12667218EBC0CA.LOXRFWLOX.289b7e7817b863cafb25bd9529921a7d</id>
-<updated>2023-12-08T09:36:00-08:00</updated>
-<published>2023-12-08T09:36:00-08:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Fire Weather Watch issued December 08 at 9:36AM PST until December 10 at 12:00PM PST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CA126671FA0020.FireWeatherWatch.12667218EBC0CA.LOXRFWLOX.289b7e7817b863cafb25bd9529921a7d"/>
-<summary>CORRECTED STALE HEADLINES AND DISCUSSION ...RED FLAG WARNING IN EFFECT FROM LATE THIS AFTERNOON THROUGH TONIGHT OVER SANTA BARBARA COUNTY... ...FIRE WEATHER WATCH IN EFFECT FROM LATE SATURDAY MORNING THROUGH SUNDAY MORNING OVER MOST OF LOS ANGELES AND VENTURA COUNTIES... .Moderate to strong north to northeast winds combined with low</summary>
-<cap:event>Fire Weather Watch</cap:event>
-<cap:effective>2023-12-08T09:36:00-08:00</cap:effective>
-<cap:expires>2023-12-10T12:00:00-08:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Future</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Possible</cap:certainty>
-<cap:areaDesc>Calabasas and Agoura Hills; Central Ventura County Valleys; Eastern San Fernando Valley; Malibu Coast; Southeastern Ventura County Valleys; Ventura County Beaches; Ventura County Inland Coast; Western San Fernando Valley</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>006037 006111</value>
-<valueName>UGC</valueName>
-<value>CAZ354 CAZ355 CAZ358 CAZ362 CAZ371 CAZ372 CAZ373 CAZ374</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KLOX.FW.A.0005.231209T1800Z-231210T2000Z/</value>
-</cap:parameter>
-</entry>
-<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=CA126671F9DC94.FreezeWarning.126672095B60CA.MTRNPWMTR.ca02b66b96c51e6d5e42b57b3e996563</id>
 <updated>2023-12-08T08:45:00-08:00</updated>
 <published>2023-12-08T08:45:00-08:00</published>
@@ -1189,38 +1158,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value>/O.CON.KLOX.SU.Y.0028.000000T0000Z-231209T0000Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=CO126671FAC758.SnowSquallWarning.126671FAE828CO.PUBSQWPUB.b69f1640000ffef634ca0eea5d8f3581</id>
-<updated>2023-12-08T15:46:00-07:00</updated>
-<published>2023-12-08T15:46:00-07:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Snow Squall Warning issued December 08 at 3:46PM MST until December 08 at 4:30PM MST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CO126671FAC758.SnowSquallWarning.126671FAE828CO.PUBSQWPUB.b69f1640000ffef634ca0eea5d8f3581"/>
-<summary>The National Weather Service in Pueblo has issued a * Snow Squall Warning for... Eastern Alamosa County in southeastern Colorado... West central Huerfano County in southeastern Colorado... Northeastern Costilla County in south central Colorado... * Until 430 PM MST.</summary>
-<cap:event>Snow Squall Warning</cap:event>
-<cap:effective>2023-12-08T15:46:00-07:00</cap:effective>
-<cap:expires>2023-12-08T16:30:00-07:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Extreme</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Alamosa; Costilla; Huerfano</cap:areaDesc>
-<cap:polygon>37.44,-105.74 37.65,-105.79 37.73,-105.34 37.49,-105.24 37.44,-105.74 37.44,-105.74</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>008003 008023 008055</value>
-<valueName>UGC</valueName>
-<value>COC003 COC023 COC055</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.NEW.KPUB.SQ.W.0024.231208T2246Z-231208T2330Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -1673,6 +1610,39 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=CT126671FAE698.FloodWatch.126672346300CT.BOXFFABOX.51fbdcaf44272b920cbe1bd415201c43</id>
+<updated>2023-12-08T18:26:00-05:00</updated>
+<published>2023-12-08T18:26:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Flood Watch issued December 08 at 6:26PM EST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CT126671FAE698.FloodWatch.126672346300CT.BOXFFABOX.51fbdcaf44272b920cbe1bd415201c43"/>
+<summary>...FLOOD WATCH REMAINS IN EFFECT FROM SUNDAY AFTERNOON THROUGH MONDAY EVENING... * WHAT...Flooding caused by excessive rainfall is possible. * WHERE...Portions of northern Connecticut, including the following areas, Hartford CT, Tolland CT and Windham CT and Massachusetts, including the following areas, Eastern Franklin MA, Eastern</summary>
+<cap:event>Flood Watch</cap:event>
+<cap:effective>2023-12-08T18:26:00-05:00</cap:effective>
+<cap:expires>2023-12-11T19:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Future</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Possible</cap:certainty>
+<cap:areaDesc>Hartford; Tolland; Windham</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>009003 009013 009015</value>
+<valueName>UGC</valueName>
+<value>CTZ002 CTZ003 CTZ004</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KBOX.FA.A.0015.231210T2100Z-231212T0000Z/
+/00000.0.ER.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
+</cap:parameter>
+</entry>
+<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=CT126671FA7168.FloodWatch.126672346300CT.OKXFFAOKX.f9277a06d31afdd5ba78dbcd1c2faed4</id>
 <updated>2023-12-08T15:26:00-05:00</updated>
 <published>2023-12-08T15:26:00-05:00</published>
@@ -1735,39 +1705,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value>/O.NEW.KALY.FA.A.0015.231210T1800Z-231212T0000Z/
-/00000.0.ER.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=CT126671FA492C.FloodWatch.126672346300CT.BOXFFABOX.51fbdcaf44272b920cbe1bd415201c43</id>
-<updated>2023-12-08T14:23:00-05:00</updated>
-<published>2023-12-08T14:23:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Flood Watch issued December 08 at 2:23PM EST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CT126671FA492C.FloodWatch.126672346300CT.BOXFFABOX.51fbdcaf44272b920cbe1bd415201c43"/>
-<summary>...FLOOD WATCH IN EFFECT FROM SUNDAY AFTERNOON THROUGH MONDAY EVENING... * WHAT...Flooding caused by excessive rainfall is possible. * WHERE...Portions of northern Connecticut, including the following areas, Hartford CT, Tolland CT and Windham CT and Massachusetts, including the following areas, Eastern Franklin MA, Eastern</summary>
-<cap:event>Flood Watch</cap:event>
-<cap:effective>2023-12-08T14:23:00-05:00</cap:effective>
-<cap:expires>2023-12-11T19:00:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Future</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Possible</cap:certainty>
-<cap:areaDesc>Hartford; Tolland; Windham</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>009003 009013 009015</value>
-<valueName>UGC</valueName>
-<value>CTZ002 CTZ003 CTZ004</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.NEW.KBOX.FA.A.0015.231210T2100Z-231212T0000Z/
 /00000.0.ER.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
 </cap:parameter>
 </entry>
@@ -2317,6 +2254,72 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=MA126671FAE698.FloodWatch.12667227DFE0MA.BOXFFABOX.7b6524dfb18f949089bd232ff39236ae</id>
+<updated>2023-12-08T18:26:00-05:00</updated>
+<published>2023-12-08T18:26:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Flood Watch issued December 08 at 6:26PM EST until December 11 at 1:00PM EST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MA126671FAE698.FloodWatch.12667227DFE0MA.BOXFFABOX.7b6524dfb18f949089bd232ff39236ae"/>
+<summary>...FLOOD WATCH REMAINS IN EFFECT FROM SUNDAY AFTERNOON THROUGH MONDAY EVENING... * WHAT...Flooding caused by excessive rainfall is possible. * WHERE...Portions of northern Connecticut, including the following areas, Hartford CT, Tolland CT and Windham CT and Massachusetts, including the following areas, Eastern Franklin MA, Eastern</summary>
+<cap:event>Flood Watch</cap:event>
+<cap:effective>2023-12-08T18:26:00-05:00</cap:effective>
+<cap:expires>2023-12-11T13:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Future</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Possible</cap:certainty>
+<cap:areaDesc>Northwest Middlesex County</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>025017</value>
+<valueName>UGC</valueName>
+<value>MAZ026</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KBOX.FA.A.0015.231210T2100Z-231212T0000Z/
+/00000.0.ER.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=MA126671FAE698.FloodWatch.126672346300MA.BOXFFABOX.56d5271ea5e7418c0b52d8d39eee0f3c</id>
+<updated>2023-12-08T18:26:00-05:00</updated>
+<published>2023-12-08T18:26:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Flood Watch issued December 08 at 6:26PM EST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MA126671FAE698.FloodWatch.126672346300MA.BOXFFABOX.56d5271ea5e7418c0b52d8d39eee0f3c"/>
+<summary>...FLOOD WATCH REMAINS IN EFFECT FROM SUNDAY AFTERNOON THROUGH MONDAY EVENING... * WHAT...Flooding caused by excessive rainfall is possible. * WHERE...Portions of northern Connecticut, including the following areas, Hartford CT, Tolland CT and Windham CT and Massachusetts, including the following areas, Eastern Franklin MA, Eastern</summary>
+<cap:event>Flood Watch</cap:event>
+<cap:effective>2023-12-08T18:26:00-05:00</cap:effective>
+<cap:expires>2023-12-11T19:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Future</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Possible</cap:certainty>
+<cap:areaDesc>Eastern Franklin; Eastern Hampden; Eastern Hampshire; Northern Worcester; Southern Worcester; Western Franklin; Western Hampden; Western Hampshire</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>025011 025013 025015 025027</value>
+<valueName>UGC</valueName>
+<value>MAZ002 MAZ003 MAZ004 MAZ008 MAZ009 MAZ010 MAZ011 MAZ012</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KBOX.FA.A.0015.231210T2100Z-231212T0000Z/
+/00000.0.ER.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
+</cap:parameter>
+</entry>
+<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=MA126671FA50FC.FloodWatch.12667227DFE0MA.ALYFFAALY.88a3f99d9d25d06da77a9d862b3d6ffa</id>
 <updated>2023-12-08T14:43:00-05:00</updated>
 <published>2023-12-08T14:43:00-05:00</published>
@@ -2412,72 +2415,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value>/O.NEW.KBOX.HW.A.0002.231211T0600Z-231211T1800Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=MA126671FA492C.FloodWatch.12667227DFE0MA.BOXFFABOX.7b6524dfb18f949089bd232ff39236ae</id>
-<updated>2023-12-08T14:23:00-05:00</updated>
-<published>2023-12-08T14:23:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Flood Watch issued December 08 at 2:23PM EST until December 11 at 1:00PM EST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MA126671FA492C.FloodWatch.12667227DFE0MA.BOXFFABOX.7b6524dfb18f949089bd232ff39236ae"/>
-<summary>...FLOOD WATCH IN EFFECT FROM SUNDAY AFTERNOON THROUGH MONDAY EVENING... * WHAT...Flooding caused by excessive rainfall is possible. * WHERE...Portions of northern Connecticut, including the following areas, Hartford CT, Tolland CT and Windham CT and Massachusetts, including the following areas, Eastern Franklin MA, Eastern</summary>
-<cap:event>Flood Watch</cap:event>
-<cap:effective>2023-12-08T14:23:00-05:00</cap:effective>
-<cap:expires>2023-12-11T13:00:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Future</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Possible</cap:certainty>
-<cap:areaDesc>Northwest Middlesex County</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>025017</value>
-<valueName>UGC</valueName>
-<value>MAZ026</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.NEW.KBOX.FA.A.0015.231210T2100Z-231212T0000Z/
-/00000.0.ER.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=MA126671FA492C.FloodWatch.126672346300MA.BOXFFABOX.56d5271ea5e7418c0b52d8d39eee0f3c</id>
-<updated>2023-12-08T14:23:00-05:00</updated>
-<published>2023-12-08T14:23:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Flood Watch issued December 08 at 2:23PM EST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MA126671FA492C.FloodWatch.126672346300MA.BOXFFABOX.56d5271ea5e7418c0b52d8d39eee0f3c"/>
-<summary>...FLOOD WATCH IN EFFECT FROM SUNDAY AFTERNOON THROUGH MONDAY EVENING... * WHAT...Flooding caused by excessive rainfall is possible. * WHERE...Portions of northern Connecticut, including the following areas, Hartford CT, Tolland CT and Windham CT and Massachusetts, including the following areas, Eastern Franklin MA, Eastern</summary>
-<cap:event>Flood Watch</cap:event>
-<cap:effective>2023-12-08T14:23:00-05:00</cap:effective>
-<cap:expires>2023-12-11T19:00:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Future</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Possible</cap:certainty>
-<cap:areaDesc>Eastern Franklin; Eastern Hampden; Eastern Hampshire; Northern Worcester; Southern Worcester; Western Franklin; Western Hampden; Western Hampshire</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>025011 025013 025015 025027</value>
-<valueName>UGC</valueName>
-<value>MAZ002 MAZ003 MAZ004 MAZ008 MAZ009 MAZ010 MAZ011 MAZ012</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.NEW.KBOX.FA.A.0015.231210T2100Z-231212T0000Z/
-/00000.0.ER.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -5478,6 +5415,136 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=WA126671FAE88C.FloodWatch.126672096718WA.SEWFFASEW.90dfb1fda11dd6a3e2a21700f54f8d10</id>
+<updated>2023-12-08T15:31:00-08:00</updated>
+<published>2023-12-08T15:31:00-08:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Flood Watch issued December 08 at 3:31PM PST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=WA126671FAE88C.FloodWatch.126672096718WA.SEWFFASEW.90dfb1fda11dd6a3e2a21700f54f8d10"/>
+<summary>...FLOOD WATCH NOW IN EFFECT THROUGH MONDAY MORNING... * WHAT...Flooding caused by excessive rainfall continues to be possible. * WHERE...A portion of northwest Washington, including the following county, Mason. * WHEN...Through Monday morning.</summary>
+<cap:event>Flood Watch</cap:event>
+<cap:effective>2023-12-08T15:31:00-08:00</cap:effective>
+<cap:expires>2023-12-09T10:30:00-08:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Future</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Possible</cap:certainty>
+<cap:areaDesc>Mason</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>053045</value>
+<valueName>UGC</valueName>
+<value>WAC045</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.EXT.KSEW.FA.A.0008.000000T0000Z-231211T1800Z/
+/00000.0.ER.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=WA126671FAE56C.FloodWarning.12667208F9B8WA.SEWFLSSEW.0706ec9a899e085a326699fcd065c99a</id>
+<updated>2023-12-08T15:23:00-08:00</updated>
+<published>2023-12-08T15:23:00-08:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Flood Warning issued December 08 at 3:23PM PST until December 09 at 7:50AM PST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=WA126671FAE56C.FloodWarning.12667208F9B8WA.SEWFLSSEW.0706ec9a899e085a326699fcd065c99a"/>
+<summary>...The Flood Warning is extended for the following rivers in Washington... Chehalis River At Porter affecting Grays Harbor County. .Weather will be dry until the next rain storm will Saturday into Sunday. With the river running high still, the additional rain could push the Chehalis at Porter up to flood level again.</summary>
+<cap:event>Flood Warning</cap:event>
+<cap:effective>2023-12-08T15:23:00-08:00</cap:effective>
+<cap:expires>2023-12-09T07:50:00-08:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Grays Harbor</cap:areaDesc>
+<cap:polygon>46.82,-123.4 46.89,-123.47 46.89,-123.62 47.06,-123.6 47.07,-123.33 46.93,-123.18 46.82,-123.4</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>053027</value>
+<valueName>UGC</valueName>
+<value>WAC027</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.EXT.KSEW.FL.W.0031.000000T0000Z-231209T1550Z/
+/CRPW1.1.ER.231207T0503Z.231208T1145Z.231209T0349Z.NO/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=WA126671FADE64.WindAdvisory.126672162CA0WA.SEWNPWSEW.125d6634233dac9969e69d9e6198cea2</id>
+<updated>2023-12-08T15:05:00-08:00</updated>
+<published>2023-12-08T15:05:00-08:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Wind Advisory issued December 08 at 3:05PM PST until December 09 at 6:00PM PST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=WA126671FADE64.WindAdvisory.126672162CA0WA.SEWNPWSEW.125d6634233dac9969e69d9e6198cea2"/>
+<summary>...WIND ADVISORY IN EFFECT FROM 7 AM TO 6 PM PST SATURDAY... * WHAT...Southeast winds 25 to 35 mph with gusts up to 50 mph expected. * WHERE...North Coast. * WHEN...From 7 AM to 6 PM PST Saturday. * IMPACTS...Gusty winds could blow around unsecured objects. Tree</summary>
+<cap:event>Wind Advisory</cap:event>
+<cap:effective>2023-12-08T15:05:00-08:00</cap:effective>
+<cap:expires>2023-12-09T18:00:00-08:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>North Coast</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>053009 053031</value>
+<valueName>UGC</valueName>
+<value>WAZ516</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.NEW.KSEW.WI.Y.0021.231209T1500Z-231210T0200Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=WA126671FADE64.WindAdvisory.12667216A1D0WA.SEWNPWSEW.07a2dd289c704c0c5d50a8fd9981cf3f</id>
+<updated>2023-12-08T15:05:00-08:00</updated>
+<published>2023-12-08T15:05:00-08:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Wind Advisory issued December 08 at 3:05PM PST until December 09 at 9:00PM PST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=WA126671FADE64.WindAdvisory.12667216A1D0WA.SEWNPWSEW.07a2dd289c704c0c5d50a8fd9981cf3f"/>
+<summary>...WIND ADVISORY IN EFFECT FROM 9 AM TO 9 PM PST SATURDAY... * WHAT...Southeast winds 25 to 35 mph with gusts up to 50 mph expected. * WHERE...San Juan County and Admiralty Inlet Area. * WHEN...From 9 AM to 9 PM PST Saturday. * IMPACTS...Gusty winds could blow around unsecured objects. Tree</summary>
+<cap:event>Wind Advisory</cap:event>
+<cap:effective>2023-12-08T15:05:00-08:00</cap:effective>
+<cap:expires>2023-12-09T21:00:00-08:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Admiralty Inlet Area; San Juan County</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>053029 053031 053055</value>
+<valueName>UGC</valueName>
+<value>WAZ001 WAZ510</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.NEW.KSEW.WI.Y.0021.231209T1700Z-231210T0500Z/</value>
+</cap:parameter>
+</entry>
+<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=WA126671FACA78.WinterWeatherAdvisory.12667217B340WA.SEWWSWSEW.6a1142f44406b580ee06c37babba3ee0</id>
 <updated>2023-12-08T14:54:00-08:00</updated>
 <published>2023-12-08T14:54:00-08:00</published>
@@ -5795,72 +5862,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value></value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=WA126671F9AC24.FloodWarning.12667208BF84WA.SEWFLSSEW.0706ec9a899e085a326699fcd065c99a</id>
-<updated>2023-12-08T07:21:00-08:00</updated>
-<published>2023-12-08T07:21:00-08:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Flood Warning issued December 08 at 7:21AM PST until December 09 at 6:01AM PST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=WA126671F9AC24.FloodWarning.12667208BF84WA.SEWFLSSEW.0706ec9a899e085a326699fcd065c99a"/>
-<summary>...The Flood Warning continues for the following rivers in Washington... Chehalis River At Porter affecting Grays Harbor County. .The Chehalis River at Porter will crest today in minor flood stage then slowly recede. ...FLOOD WARNING NOW IN EFFECT UNTIL TOMORROW MORNING...</summary>
-<cap:event>Flood Warning</cap:event>
-<cap:effective>2023-12-08T07:21:00-08:00</cap:effective>
-<cap:expires>2023-12-09T06:01:00-08:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Grays Harbor</cap:areaDesc>
-<cap:polygon>46.82,-123.4 46.89,-123.47 46.89,-123.62 47.06,-123.6 47.07,-123.33 46.93,-123.18 46.82,-123.4</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>053027</value>
-<valueName>UGC</valueName>
-<value>WAC027</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.EXT.KSEW.FL.W.0031.000000T0000Z-231209T1401Z/
-/CRPW1.1.ER.231207T0503Z.231208T1145Z.231209T0501Z.NO/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=WA126671F8F7AC.FloodWatch.126672096718WA.SEWFFASEW.90dfb1fda11dd6a3e2a21700f54f8d10</id>
-<updated>2023-12-08T02:59:00-08:00</updated>
-<published>2023-12-08T02:59:00-08:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Flood Watch issued December 08 at 2:59AM PST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=WA126671F8F7AC.FloodWatch.126672096718WA.SEWFFASEW.90dfb1fda11dd6a3e2a21700f54f8d10"/>
-<summary>.Moderate to heavy rainfall from the next frontal system over the Olympics along with snowmelt as snow levels rise closer to 7500 feet Saturday night will lead to rapid rises on the Skokomish River Saturday with the potential for river flooding by early Sunday morning. ...FLOOD WATCH NOW IN EFFECT THROUGH SUNDAY MORNING...</summary>
-<cap:event>Flood Watch</cap:event>
-<cap:effective>2023-12-08T02:59:00-08:00</cap:effective>
-<cap:expires>2023-12-09T10:30:00-08:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Future</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Possible</cap:certainty>
-<cap:areaDesc>Mason</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>053045</value>
-<valueName>UGC</valueName>
-<value>WAC045</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.EXT.KSEW.FA.A.0008.000000T0000Z-231210T1800Z/
-/00000.0.ER.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
 </cap:parameter>
 </entry>
 <entry>
