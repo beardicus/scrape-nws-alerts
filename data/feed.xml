@@ -16,16 +16,48 @@ xmlns = 'http://www.w3.org/2005/Atom'
 xmlns:cap = 'urn:oasis:names:tc:emergency:cap:1.1'
 xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 >
-<!-- http-date = Wed, 13 Dec 2023 05:31:00 GMT -->
+<!-- http-date = Wed, 13 Dec 2023 05:57:00 GMT -->
 <id>https://alerts.weather.gov/cap/us.php?x=0</id>
 <logo>http://alerts.weather.gov/images/xml_logo.gif</logo>
 <generator>NWS CAP Server</generator>
-<updated>2023-12-12T22:31:00-07:00</updated>
+<updated>2023-12-12T20:57:00-09:00</updated>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
 <title>Current Watches, Warnings and Advisories for the United States Issued by the National Weather Service</title>
 <link href="https://alerts.weather.gov/cap/us.php?x=0"/>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=AK126672447ED4.HighWindWarning.126672457A00AK.AJKNPWAJK.930c96a86ffa58d55f4ccbc3178f8733</id>
+<updated>2023-12-12T20:57:00-09:00</updated>
+<published>2023-12-12T20:57:00-09:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>High Wind Warning issued December 12 at 8:57PM AKST until December 13 at 3:00AM AKST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=AK126672447ED4.HighWindWarning.126672457A00AK.AJKNPWAJK.930c96a86ffa58d55f4ccbc3178f8733"/>
+<summary>...HIGH WIND WARNING REMAINS IN EFFECT UNTIL 3 AM AKST WEDNESDAY... * WHAT...Southeast winds 25 to 35 mph with gusts up to 60 mph. * WHERE...Municipality of Skagway, City and Borough of Sitka and City and Borough of Juneau. * WHEN...Until 3 AM AKST Wednesday.</summary>
+<cap:event>High Wind Warning</cap:event>
+<cap:effective>2023-12-12T20:57:00-09:00</cap:effective>
+<cap:expires>2023-12-13T03:00:00-09:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Severe</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>City and Borough of Juneau; City and Borough of Sitka; Municipality of Skagway</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>002110 002220 002230</value>
+<valueName>UGC</valueName>
+<value>AKZ318 AKZ323 AKZ325</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.PAJK.HW.W.0013.000000T0000Z-231213T1200Z/</value>
+</cap:parameter>
+</entry>
 <entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=AK126672446890.FloodAdvisory.126672457A00AK.AJKFLSAJK.8d3edc4071daeca05e3204d966029a20</id>
 <updated>2023-12-12T20:00:00-09:00</updated>
@@ -57,38 +89,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <valueName>VTEC</valueName>
 <value>/O.NEW.PAJK.FA.Y.0027.231213T0500Z-231213T1700Z/
 /00000.N.ER.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=AK1266724450BC.WinterWeatherAdvisory.126672448FA0AK.AFCWSWAER.803432a8ab8cc580a7eb9b628535fc85</id>
-<updated>2023-12-12T19:39:00-09:00</updated>
-<published>2023-12-12T19:39:00-09:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Winter Weather Advisory issued December 12 at 7:39PM AKST until December 12 at 9:00PM AKST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=AK1266724450BC.WinterWeatherAdvisory.126672448FA0AK.AFCWSWAER.803432a8ab8cc580a7eb9b628535fc85"/>
-<summary>...WINTER WEATHER ADVISORY REMAINS IN EFFECT UNTIL 9 PM AKST THIS EVENING... * WHAT...Snow and blowing snow. Additional snow accumulations of 1 to 3 inches. West winds up to 25 mph through Turnagain Arm may lower visibility to one half mile at times. * WHERE...Anchorage.</summary>
-<cap:event>Winter Weather Advisory</cap:event>
-<cap:effective>2023-12-12T19:39:00-09:00</cap:effective>
-<cap:expires>2023-12-12T21:00:00-09:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Anchorage</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>002020</value>
-<valueName>UGC</valueName>
-<value>AKZ102</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.PAFC.WW.Y.0060.000000T0000Z-231213T0600Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -636,134 +636,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=AK12667243DFD8.HighWindWarning.126672448FA0AK.AJKNPWAJK.9292623534547b25fa2f7dcbc529101e</id>
-<updated>2023-12-12T16:50:00-09:00</updated>
-<published>2023-12-12T16:50:00-09:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>High Wind Warning issued December 12 at 4:50PM AKST until December 12 at 9:00PM AKST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=AK12667243DFD8.HighWindWarning.126672448FA0AK.AJKNPWAJK.9292623534547b25fa2f7dcbc529101e"/>
-<summary>...HIGH WIND WARNING REMAINS IN EFFECT UNTIL 9 PM AKST THIS EVENING... * WHAT...Southeast winds 25 to 35 mph with gusts up to 60 mph expected. * WHERE...Prince of Wales Island, Ketchikan Gateway Borough and Annette Island.</summary>
-<cap:event>High Wind Warning</cap:event>
-<cap:effective>2023-12-12T16:50:00-09:00</cap:effective>
-<cap:expires>2023-12-12T21:00:00-09:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Severe</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Annette Island; Ketchikan Gateway Borough; Prince of Wales Island</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>002130 002198</value>
-<valueName>UGC</valueName>
-<value>AKZ328 AKZ330 AKZ332</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.PAJK.HW.W.0013.000000T0000Z-231213T0600Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=AK12667243DFD8.HighWindWarning.126672457A00AK.AJKNPWAJK.b4f24602ea277f57ecd45df9c1e086ee</id>
-<updated>2023-12-12T16:50:00-09:00</updated>
-<published>2023-12-12T16:50:00-09:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>High Wind Warning issued December 12 at 4:50PM AKST until December 13 at 3:00AM AKST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=AK12667243DFD8.HighWindWarning.126672457A00AK.AJKNPWAJK.b4f24602ea277f57ecd45df9c1e086ee"/>
-<summary>...HIGH WIND WARNING REMAINS IN EFFECT UNTIL 3 AM AKST WEDNESDAY... * WHAT...Southeast winds 25 to 35 mph with gusts up to 60 mph expected. * WHERE...City and Borough of Juneau. * WHEN...Until 3 AM AKST Wednesday.</summary>
-<cap:event>High Wind Warning</cap:event>
-<cap:effective>2023-12-12T16:50:00-09:00</cap:effective>
-<cap:expires>2023-12-13T03:00:00-09:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Severe</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>City and Borough of Juneau</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>002110</value>
-<valueName>UGC</valueName>
-<value>AKZ325</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.PAJK.HW.W.0013.000000T0000Z-231213T1200Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=AK12667243DFD8.HighWindWarning.126672457A00AK.AJKNPWAJK.ee8801b9373e8e5b071f7a67dab194ed</id>
-<updated>2023-12-12T16:50:00-09:00</updated>
-<published>2023-12-12T16:50:00-09:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>High Wind Warning issued December 12 at 4:50PM AKST until December 13 at 3:00AM AKST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=AK12667243DFD8.HighWindWarning.126672457A00AK.AJKNPWAJK.ee8801b9373e8e5b071f7a67dab194ed"/>
-<summary>...HIGH WIND WARNING REMAINS IN EFFECT UNTIL 3 AM AKST WEDNESDAY... * WHAT...South winds 25 to 35 mph with gusts up to 60 mph expected. * WHERE...Municipality of Skagway and City and Borough of Sitka. * WHEN...Until 3 AM AKST Wednesday.</summary>
-<cap:event>High Wind Warning</cap:event>
-<cap:effective>2023-12-12T16:50:00-09:00</cap:effective>
-<cap:expires>2023-12-13T03:00:00-09:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Severe</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>City and Borough of Sitka; Municipality of Skagway</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>002220 002230</value>
-<valueName>UGC</valueName>
-<value>AKZ318 AKZ323</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.PAJK.HW.W.0013.231213T0300Z-231213T1200Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=AK12667243AA54.WinterStormWarning.126672448FA0AK.AJKWSWAJK.865be28575654d72fbbb580fbc2fcf6a</id>
-<updated>2023-12-12T15:13:00-09:00</updated>
-<published>2023-12-12T15:13:00-09:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Winter Storm Warning issued December 12 at 3:13PM AKST until December 12 at 9:00PM AKST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=AK12667243AA54.WinterStormWarning.126672448FA0AK.AJKWSWAJK.865be28575654d72fbbb580fbc2fcf6a"/>
-<summary>...LONG DURATION HEAVY SNOW EVENT FOR THE KLONDIKE HIGHWAY NEAR WHITE PASS... A wave of moisture is moving through the northern panhandle Tuesday. With cold air in place, moderate to heavy snow is expected to continue through late Tuesday evening near White Pass.</summary>
-<cap:event>Winter Storm Warning</cap:event>
-<cap:effective>2023-12-12T15:13:00-09:00</cap:effective>
-<cap:expires>2023-12-12T21:00:00-09:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Municipality of Skagway</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>002230</value>
-<valueName>UGC</valueName>
-<value>AKZ318</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.PAJK.WS.W.0011.000000T0000Z-231213T0600Z/</value>
-</cap:parameter>
-</entry>
-<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=AK12667237F1F0.SpecialWeatherStatement.12667245EF30AK.AFGSPSAFG.ab2f3f8484e6c9d94f403b5bb4477bf4</id>
 <updated>2023-12-12T14:32:00-09:00</updated>
 <published>2023-12-12T14:32:00-09:00</published>
@@ -796,79 +668,14 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=AK12667237EA84.WinterWeatherAdvisory.126672448FA0AK.AFCWSWALU.1782989a3a6f3e2a03f77e7518b88fe9</id>
-<updated>2023-12-12T14:13:00-09:00</updated>
-<published>2023-12-12T14:13:00-09:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Winter Weather Advisory issued December 12 at 2:13PM AKST until December 12 at 9:00PM AKST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=AK12667237EA84.WinterWeatherAdvisory.126672448FA0AK.AFCWSWALU.1782989a3a6f3e2a03f77e7518b88fe9"/>
-<summary>...WINTER WEATHER ADVISORY IN EFFECT UNTIL 9 PM AKST THIS EVENING... * WHAT...Blowing snow. Additional snow accumulations of up to three inches. Visibility reduced to as low as one half mile or less at times. Northwesterly winds gusting as high as 60 mph. * WHERE...Alaska Peninsula.</summary>
-<cap:event>Winter Weather Advisory</cap:event>
-<cap:effective>2023-12-12T14:13:00-09:00</cap:effective>
-<cap:expires>2023-12-12T21:00:00-09:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Alaska Peninsula</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>002013 002164</value>
-<valueName>UGC</valueName>
-<value>AKZ181</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.NEW.PAFC.WW.Y.0061.231212T2313Z-231213T0600Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=AK126672372EA0.FloodWatch.126672448FA0AK.AJKFFAAJK.8b5f81824be63e68e82519f9a5e0ece2</id>
-<updated>2023-12-12T09:32:00-09:00</updated>
-<published>2023-12-12T09:32:00-09:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Flood Watch issued December 12 at 9:32AM AKST until December 12 at 9:00PM AKST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=AK126672372EA0.FloodWatch.126672448FA0AK.AJKFFAAJK.8b5f81824be63e68e82519f9a5e0ece2"/>
-<summary>...FLOOD WATCH REMAINS IN EFFECT THROUGH WEDNESDAY MORNING... * WHAT...Flooding caused by excessive rainfall continues to be possible. * WHERE...The following areas, Prince of Wales, Southern Inner Channels, Central Inner Channels and Eastern Gulf Coast. This includes the cities of Gustavus, Hoonah, Tenakee Springs, Elfin</summary>
-<cap:event>Flood Watch</cap:event>
-<cap:effective>2023-12-12T09:32:00-09:00</cap:effective>
-<cap:expires>2023-12-12T21:00:00-09:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Future</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Possible</cap:certainty>
-<cap:areaDesc>Annette Island; Cape Fairweather to Lisianski Strait; City and Borough of Sitka; City and Borough of Wrangell; Eastern Chichagof Island; Glacier Bay; Ketchikan Gateway Borough</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>002105 002130 002198 002220 002275</value>
-<valueName>UGC</valueName>
-<value>AKZ320 AKZ321 AKZ322 AKZ323 AKZ329 AKZ330 AKZ332</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.PAJK.FA.A.0008.000000T0000Z-231213T1800Z/
-/00000.0.ER.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=AK126672372EA0.FloodWatch.126672457A00AK.AJKFFAAJK.aa3d264f0275f6bf9d4379ccb0c6c78e</id>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=AK126672372EA0.FloodWatch.126672457A00AK.AJKFFAAJK.acafca1bac4bb473eb02b1139b8d69c9</id>
 <updated>2023-12-12T09:32:00-09:00</updated>
 <published>2023-12-12T09:32:00-09:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
 <title>Flood Watch issued December 12 at 9:32AM AKST until December 13 at 3:00AM AKST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=AK126672372EA0.FloodWatch.126672457A00AK.AJKFFAAJK.aa3d264f0275f6bf9d4379ccb0c6c78e"/>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=AK126672372EA0.FloodWatch.126672457A00AK.AJKFFAAJK.acafca1bac4bb473eb02b1139b8d69c9"/>
 <summary>...FLOOD WATCH REMAINS IN EFFECT THROUGH WEDNESDAY MORNING... * WHAT...Flooding caused by excessive rainfall continues to be possible. * WHERE...The following areas, Prince of Wales, Southern Inner Channels, Central Inner Channels and Eastern Gulf Coast. This includes the cities of Gustavus, Hoonah, Tenakee Springs, Elfin</summary>
 <cap:event>Flood Watch</cap:event>
 <cap:effective>2023-12-12T09:32:00-09:00</cap:effective>
@@ -879,13 +686,13 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:urgency>Future</cap:urgency>
 <cap:severity>Moderate</cap:severity>
 <cap:certainty>Possible</cap:certainty>
-<cap:areaDesc>Admiralty Island; City and Borough of Juneau; Petersburg Borough; Prince of Wales Island; Western Kupreanof and Kuiu Island</cap:areaDesc>
+<cap:areaDesc>Admiralty Island; Annette Island; Cape Fairweather to Lisianski Strait; City and Borough of Juneau; City and Borough of Sitka; City and Borough of Wrangell; Eastern Chichagof Island; Glacier Bay; Ketchikan Gateway Borough; Petersburg Borough; Prince of Wales Island; Western Kupreanof and Kuiu Island</cap:areaDesc>
 <cap:polygon></cap:polygon>
 <cap:geocode>
 <valueName>FIPS6</valueName>
-<value>002105 002110 002195 002198</value>
+<value>002105 002110 002130 002195 002198 002220 002275</value>
 <valueName>UGC</valueName>
-<value>AKZ324 AKZ325 AKZ326 AKZ327 AKZ328</value>
+<value>AKZ320 AKZ321 AKZ322 AKZ323 AKZ324 AKZ325 AKZ326 AKZ327 AKZ328 AKZ329 AKZ330 AKZ332</value>
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
@@ -1150,6 +957,166 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=CO1266724474AC.WinterStormWarning.12667255A6A0CO.PUBWSWPUB.11faf12377ace16f186f8d344038bd11</id>
+<updated>2023-12-12T22:31:00-07:00</updated>
+<published>2023-12-12T22:31:00-07:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Winter Storm Warning issued December 12 at 10:31PM MST until December 14 at 11:00AM MST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CO1266724474AC.WinterStormWarning.12667255A6A0CO.PUBWSWPUB.11faf12377ace16f186f8d344038bd11"/>
+<summary>...WINTER STORM WARNING REMAINS IN EFFECT FROM 11 AM WEDNESDAY TO 11 AM MST THURSDAY... * WHAT...Heavy snow expected. Total snow accumulations of 8 to 16 inches. * WHERE...Eastern San Juan Mountains Above 10000 Feet. * WHEN...From 11 AM Wednesday to 11 AM MST Thursday.</summary>
+<cap:event>Winter Storm Warning</cap:event>
+<cap:effective>2023-12-12T22:31:00-07:00</cap:effective>
+<cap:expires>2023-12-14T11:00:00-07:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Eastern San Juan Mountains Above 10000 Ft</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>008021 008079 008105</value>
+<valueName>UGC</valueName>
+<value>COZ068</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KPUB.WS.W.0017.231213T1800Z-231214T1800Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=CO1266724474AC.WinterWeatherAdvisory.12667255A6A0CO.PUBWSWPUB.bf3188c8e7406c819197261908d0b72d</id>
+<updated>2023-12-12T22:31:00-07:00</updated>
+<published>2023-12-12T22:31:00-07:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Winter Weather Advisory issued December 12 at 10:31PM MST until December 14 at 11:00AM MST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CO1266724474AC.WinterWeatherAdvisory.12667255A6A0CO.PUBWSWPUB.bf3188c8e7406c819197261908d0b72d"/>
+<summary>...WINTER WEATHER ADVISORY REMAINS IN EFFECT FROM 11 AM WEDNESDAY TO 11 AM MST THURSDAY... * WHAT...Snow expected. Total snow accumulations of 4 to 10 inches. * WHERE...Saguache County East of Continental Divide Below 10000 Feet, La Garita Mountains Above 10000 Feet and the Upper Rio</summary>
+<cap:event>Winter Weather Advisory</cap:event>
+<cap:effective>2023-12-12T22:31:00-07:00</cap:effective>
+<cap:expires>2023-12-14T11:00:00-07:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>La Garita Mountains Above 10000 Ft; Saguache County East of Continental Divide below 10000 Ft; Upper Rio Grande Valley, Eastern San Juan Mountains Below 10000 Ft</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>008021 008079 008105 008109</value>
+<valueName>UGC</valueName>
+<value>COZ065 COZ066 COZ067</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KPUB.WW.Y.0036.231213T1800Z-231214T1800Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=CO1266724474AC.WinterWeatherAdvisory.12667255A6A0CO.PUBWSWPUB.ce309375e346566f27b99ca915344bc4</id>
+<updated>2023-12-12T22:31:00-07:00</updated>
+<published>2023-12-12T22:31:00-07:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Winter Weather Advisory issued December 12 at 10:31PM MST until December 14 at 11:00AM MST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CO1266724474AC.WinterWeatherAdvisory.12667255A6A0CO.PUBWSWPUB.ce309375e346566f27b99ca915344bc4"/>
+<summary>...WINTER WEATHER ADVISORY REMAINS IN EFFECT FROM 11 AM WEDNESDAY TO 11 AM MST THURSDAY... * WHAT...Snow expected. Total snow accumulations of 3 to 6 inches. * WHERE...The San Luis Valley. * WHEN...From 11 AM Wednesday to 11 AM MST Thursday.</summary>
+<cap:event>Winter Weather Advisory</cap:event>
+<cap:effective>2023-12-12T22:31:00-07:00</cap:effective>
+<cap:expires>2023-12-14T11:00:00-07:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Alamosa Vicinity, Central San Luis Valley Below 8500 Ft; Del Norte Vicinity, Northern San Luis Valley Below 8500 Ft; Southern San Luis Valley</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>008003 008021 008023 008105 008109</value>
+<valueName>UGC</valueName>
+<value>COZ069 COZ070 COZ071</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KPUB.WW.Y.0036.231213T1800Z-231214T1800Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=CO1266724474AC.WinterWeatherAdvisory.12667255A6A0CO.PUBWSWPUB.5a413deda4a78f2f275baf3b66732af8</id>
+<updated>2023-12-12T22:31:00-07:00</updated>
+<published>2023-12-12T22:31:00-07:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Winter Weather Advisory issued December 12 at 10:31PM MST until December 14 at 11:00AM MST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CO1266724474AC.WinterWeatherAdvisory.12667255A6A0CO.PUBWSWPUB.5a413deda4a78f2f275baf3b66732af8"/>
+<summary>...WINTER WEATHER ADVISORY REMAINS IN EFFECT FROM 11 AM WEDNESDAY TO 11 AM MST THURSDAY... * WHAT...Snow expected. Total snow accumulations of 4 to 9 inches with locally higher amounts possible. * WHERE...Northern Sangre de Cristo Mountains, Wet Mountains, and the Wet Mountain Valley.</summary>
+<cap:event>Winter Weather Advisory</cap:event>
+<cap:effective>2023-12-12T22:31:00-07:00</cap:effective>
+<cap:expires>2023-12-14T11:00:00-07:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Northern Sangre de Cristo Mountains Between 8500 And 11000 Ft; Northern Sangre de Cristo Mountains above 11000 Ft; Wet Mountain Valley Below 8500 Ft; Wet Mountains above 10000 Ft; Wet Mountains between 6300 and 10000Ft</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>008027 008055 008101 008109</value>
+<valueName>UGC</valueName>
+<value>COZ072 COZ073 COZ078 COZ079 COZ080</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KPUB.WW.Y.0036.231213T1800Z-231214T1800Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=CO1266724474AC.WinterStormWarning.1266726229C0CO.PUBWSWPUB.54999500cd043ab2a6893b385bd720f6</id>
+<updated>2023-12-12T22:31:00-07:00</updated>
+<published>2023-12-12T22:31:00-07:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Winter Storm Warning issued December 12 at 10:31PM MST until December 14 at 5:00PM MST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CO1266724474AC.WinterStormWarning.1266726229C0CO.PUBWSWPUB.54999500cd043ab2a6893b385bd720f6"/>
+<summary>...WINTER STORM WARNING REMAINS IN EFFECT FROM 11 AM WEDNESDAY TO 5 PM MST THURSDAY... * WHAT...Heavy snow expected. Total snow accumulations of 6 to 12 inches with locally higher amounts possible across the higher terrain. * WHERE...Southern Sangre de Cristo Mountains, Huerfano and Las</summary>
+<cap:event>Winter Storm Warning</cap:event>
+<cap:effective>2023-12-12T22:31:00-07:00</cap:effective>
+<cap:expires>2023-12-14T17:00:00-07:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Eastern Las Animas County; Southern Sangre De Cristo Mountains Above 11000 Ft; Southern Sangre De Cristo Mountains Between 7500 and 11000 Ft; Trinidad Vicinity, Western Las Animas County Below 7500 Ft; Walsenburg Vicinity, Upper Huerfano River Basin Below 7500 Ft</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>008023 008055 008071</value>
+<valueName>UGC</valueName>
+<value>COZ074 COZ075 COZ087 COZ088 COZ094</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KPUB.WS.W.0017.231213T1800Z-231215T0000Z/</value>
+</cap:parameter>
+</entry>
+<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=CO12667243B030.WinterWeatherAdvisory.126672468B70CO.BOUWSWBOU.f00335361a40b888eebd6b16a0b29f6f</id>
 <updated>2023-12-12T17:28:00-07:00</updated>
 <published>2023-12-12T17:28:00-07:00</published>
@@ -1179,168 +1146,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value>/O.NEW.KBOU.WW.Y.0039.231213T0028Z-231213T1900Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=CO12667237A308.WinterStormWarning.12667255A6A0CO.PUBWSWPUB.11faf12377ace16f186f8d344038bd11</id>
-<updated>2023-12-12T14:30:00-07:00</updated>
-<published>2023-12-12T14:30:00-07:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Winter Storm Warning issued December 12 at 2:30PM MST until December 14 at 11:00AM MST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CO12667237A308.WinterStormWarning.12667255A6A0CO.PUBWSWPUB.11faf12377ace16f186f8d344038bd11"/>
-<summary>...WINTER STORM WARNING IN EFFECT FROM 11 AM WEDNESDAY TO 11 AM MST THURSDAY... * WHAT...Heavy snow expected. Total snow accumulations of 8 to 16 inches. * WHERE...Eastern San Juan Mountains Above 10000 Feet. * WHEN...From 11 AM Wednesday to 11 AM MST Thursday.</summary>
-<cap:event>Winter Storm Warning</cap:event>
-<cap:effective>2023-12-12T14:30:00-07:00</cap:effective>
-<cap:expires>2023-12-14T11:00:00-07:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Eastern San Juan Mountains Above 10000 Ft</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>008021 008079 008105</value>
-<valueName>UGC</valueName>
-<value>COZ068</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.UPG.KPUB.WS.A.0015.231213T1800Z-231215T1500Z/
-/O.NEW.KPUB.WS.W.0017.231213T1800Z-231214T1800Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=CO12667237A308.WinterWeatherAdvisory.12667255A6A0CO.PUBWSWPUB.bf3188c8e7406c819197261908d0b72d</id>
-<updated>2023-12-12T14:30:00-07:00</updated>
-<published>2023-12-12T14:30:00-07:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Winter Weather Advisory issued December 12 at 2:30PM MST until December 14 at 11:00AM MST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CO12667237A308.WinterWeatherAdvisory.12667255A6A0CO.PUBWSWPUB.bf3188c8e7406c819197261908d0b72d"/>
-<summary>...WINTER WEATHER ADVISORY IN EFFECT FROM 11 AM WEDNESDAY TO 11 AM MST THURSDAY... * WHAT...Snow expected. Total snow accumulations of 4 to 10 inches. * WHERE...Saguache County East of Continental Divide Below 10000 Feet, La Garita Mountains Above 10000 Feet and the Upper Rio</summary>
-<cap:event>Winter Weather Advisory</cap:event>
-<cap:effective>2023-12-12T14:30:00-07:00</cap:effective>
-<cap:expires>2023-12-14T11:00:00-07:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>La Garita Mountains Above 10000 Ft; Saguache County East of Continental Divide below 10000 Ft; Upper Rio Grande Valley, Eastern San Juan Mountains Below 10000 Ft</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>008021 008079 008105 008109</value>
-<valueName>UGC</valueName>
-<value>COZ065 COZ066 COZ067</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.NEW.KPUB.WW.Y.0036.231213T1800Z-231214T1800Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=CO12667237A308.WinterWeatherAdvisory.12667255A6A0CO.PUBWSWPUB.ce309375e346566f27b99ca915344bc4</id>
-<updated>2023-12-12T14:30:00-07:00</updated>
-<published>2023-12-12T14:30:00-07:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Winter Weather Advisory issued December 12 at 2:30PM MST until December 14 at 11:00AM MST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CO12667237A308.WinterWeatherAdvisory.12667255A6A0CO.PUBWSWPUB.ce309375e346566f27b99ca915344bc4"/>
-<summary>...WINTER WEATHER ADVISORY IN EFFECT FROM 11 AM WEDNESDAY TO 11 AM MST THURSDAY... * WHAT...Snow expected. Total snow accumulations of 3 to 6 inches. * WHERE...The San Luis Valley. * WHEN...From 11 AM Wednesday to 11 AM MST Thursday.</summary>
-<cap:event>Winter Weather Advisory</cap:event>
-<cap:effective>2023-12-12T14:30:00-07:00</cap:effective>
-<cap:expires>2023-12-14T11:00:00-07:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Alamosa Vicinity, Central San Luis Valley Below 8500 Ft; Del Norte Vicinity, Northern San Luis Valley Below 8500 Ft; Southern San Luis Valley</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>008003 008021 008023 008105 008109</value>
-<valueName>UGC</valueName>
-<value>COZ069 COZ070 COZ071</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.NEW.KPUB.WW.Y.0036.231213T1800Z-231214T1800Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=CO12667237A308.WinterWeatherAdvisory.12667255A6A0CO.PUBWSWPUB.5a413deda4a78f2f275baf3b66732af8</id>
-<updated>2023-12-12T14:30:00-07:00</updated>
-<published>2023-12-12T14:30:00-07:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Winter Weather Advisory issued December 12 at 2:30PM MST until December 14 at 11:00AM MST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CO12667237A308.WinterWeatherAdvisory.12667255A6A0CO.PUBWSWPUB.5a413deda4a78f2f275baf3b66732af8"/>
-<summary>...WINTER WEATHER ADVISORY IN EFFECT FROM 11 AM WEDNESDAY TO 11 AM MST THURSDAY... * WHAT...Snow expected. Total snow accumulations of 4 to 9 inches with locally higher amounts possible. * WHERE...Northern Sangre de Cristo Mountains, Wet Mountains, and the Wet Mountain Valley.</summary>
-<cap:event>Winter Weather Advisory</cap:event>
-<cap:effective>2023-12-12T14:30:00-07:00</cap:effective>
-<cap:expires>2023-12-14T11:00:00-07:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Northern Sangre de Cristo Mountains Between 8500 And 11000 Ft; Northern Sangre de Cristo Mountains above 11000 Ft; Wet Mountain Valley Below 8500 Ft; Wet Mountains above 10000 Ft; Wet Mountains between 6300 and 10000Ft</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>008027 008055 008101 008109</value>
-<valueName>UGC</valueName>
-<value>COZ072 COZ073 COZ078 COZ079 COZ080</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.NEW.KPUB.WW.Y.0036.231213T1800Z-231214T1800Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=CO12667237A308.WinterStormWarning.1266726229C0CO.PUBWSWPUB.54999500cd043ab2a6893b385bd720f6</id>
-<updated>2023-12-12T14:30:00-07:00</updated>
-<published>2023-12-12T14:30:00-07:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Winter Storm Warning issued December 12 at 2:30PM MST until December 14 at 5:00PM MST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CO12667237A308.WinterStormWarning.1266726229C0CO.PUBWSWPUB.54999500cd043ab2a6893b385bd720f6"/>
-<summary>...WINTER STORM WARNING IN EFFECT FROM 11 AM WEDNESDAY TO 5 PM MST THURSDAY... * WHAT...Heavy snow expected. Total snow accumulations of 6 to 12 inches with locally higher amounts possible across the higher terrain. * WHERE...Southern Sangre de Cristo Mountains, Huerfano and Las</summary>
-<cap:event>Winter Storm Warning</cap:event>
-<cap:effective>2023-12-12T14:30:00-07:00</cap:effective>
-<cap:expires>2023-12-14T17:00:00-07:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Eastern Las Animas County; Southern Sangre De Cristo Mountains Above 11000 Ft; Southern Sangre De Cristo Mountains Between 7500 and 11000 Ft; Trinidad Vicinity, Western Las Animas County Below 7500 Ft; Walsenburg Vicinity, Upper Huerfano River Basin Below 7500 Ft</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>008023 008055 008071</value>
-<valueName>UGC</valueName>
-<value>COZ074 COZ075 COZ087 COZ088 COZ094</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.UPG.KPUB.WS.A.0015.231213T1800Z-231215T1500Z/
-/O.NEW.KPUB.WS.W.0017.231213T1800Z-231215T0000Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -1766,6 +1571,38 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=GU126672447574.RipCurrentStatement.12667292FDC0GU.GUMCFWGUM.2b886b36e621ae3b9c5356bf019cb688</id>
+<updated>2023-12-13T15:33:00+10:00</updated>
+<published>2023-12-13T15:33:00+10:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Rip Current Statement issued December 13 at 3:33PM ChST until December 19 at 6:00AM ChST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=GU126672447574.RipCurrentStatement.12667292FDC0GU.GUMCFWGUM.2b886b36e621ae3b9c5356bf019cb688"/>
+<summary>...HIGH RISK OF RIP CURRENTS THROUGH LATE MONDAY NIGHT... * WHAT...Dangerous rip currents. * WHERE...East facing reefs of the Marianas. * WHEN...Through late Monday night. * IMPACTS...Rip currents can sweep even the best swimmers away from shore into deeper water.</summary>
+<cap:event>Rip Current Statement</cap:event>
+<cap:effective>2023-12-13T15:33:00+10:00</cap:effective>
+<cap:expires>2023-12-19T06:00:00+10:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Guam</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>066010</value>
+<valueName>UGC</valueName>
+<value>GUZ001</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.NEW.PGUM.RP.S.0023.231213T0533Z-231218T2000Z/</value>
+</cap:parameter>
+</entry>
+<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=HI12667243D2F4.WindAdvisory.126672461640HI.HFONPWHFO.6b35f0606f02a8812d809e9b082c0e79</id>
 <updated>2023-12-12T15:17:00-10:00</updated>
 <published>2023-12-12T15:17:00-10:00</published>
@@ -2023,35 +1860,35 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=MT126672444374.SpecialWeatherStatement.126672448FA0MT.BYZSPSBYZ.43106e4a25235e92536e4e12545f7405</id>
-<updated>2023-12-12T21:05:00-07:00</updated>
-<published>2023-12-12T21:05:00-07:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=MP126672447574.RipCurrentStatement.12667292FDC0MP.GUMCFWGUM.c5dfa282811c86a44653dfbf0813524e</id>
+<updated>2023-12-13T15:33:00+10:00</updated>
+<published>2023-12-13T15:33:00+10:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Special Weather Statement issued December 12 at 9:05PM MST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MT126672444374.SpecialWeatherStatement.126672448FA0MT.BYZSPSBYZ.43106e4a25235e92536e4e12545f7405"/>
-<summary>...PATCHY DENSE FOG WILL AFFECT SOUTHEASTERN BIG HORN...SOUTHWESTERN POWDER RIVER...SOUTHERN ROSEBUD AND EASTERN SHERIDAN COUNTIES... Patchy dense fog continues in the Sheridan area this evening as well as along I-90 to the Aberdeen Hill vicinity. Visibility is under a half mile locally. The dense fog is also expanding north into southern Rosebud County in Montana.</summary>
-<cap:event>Special Weather Statement</cap:event>
-<cap:effective>2023-12-12T21:05:00-07:00</cap:effective>
-<cap:expires>2023-12-12T23:00:00-07:00</cap:expires>
+<title>Rip Current Statement issued December 13 at 3:33PM ChST until December 19 at 6:00AM ChST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MP126672447574.RipCurrentStatement.12667292FDC0MP.GUMCFWGUM.c5dfa282811c86a44653dfbf0813524e"/>
+<summary>...HIGH RISK OF RIP CURRENTS THROUGH LATE MONDAY NIGHT... * WHAT...Dangerous rip currents. * WHERE...East facing reefs of the Marianas. * WHEN...Through late Monday night. * IMPACTS...Rip currents can sweep even the best swimmers away from shore into deeper water.</summary>
+<cap:event>Rip Current Statement</cap:event>
+<cap:effective>2023-12-13T15:33:00+10:00</cap:effective>
+<cap:expires>2023-12-19T06:00:00+10:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
 <cap:category>Met</cap:category>
 <cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Observed</cap:certainty>
-<cap:areaDesc>Northern Big Horn; Powder River; Southern Big Horn; Southern Rosebud</cap:areaDesc>
-<cap:polygon>44.99,-107.34 45.65,-106.7 45.64,-106.27 45,-105.8 44.99,-106.03 44.87,-106.02 44.86,-106.01 44.56,-106.01 44.56,-106.71 44.99,-107.34</cap:polygon>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Rota; Saipan; Tinian</cap:areaDesc>
+<cap:polygon></cap:polygon>
 <cap:geocode>
 <valueName>FIPS6</valueName>
-<value>030003 030075 030087</value>
+<value>069100 069110 069120</value>
 <valueName>UGC</valueName>
-<value>MTZ036 MTZ057 MTZ058 MTZ138</value>
+<value>MPZ001 MPZ002 MPZ003</value>
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
-<value></value>
+<value>/O.NEW.PGUM.RP.S.0023.231213T0533Z-231218T2000Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -2087,17 +1924,17 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=NM126672379AD4.WinterStormWarning.126672638950NM.ABQWSWABQ.875a1daf9901e530d32427996cd60dee</id>
-<updated>2023-12-12T14:09:00-07:00</updated>
-<published>2023-12-12T14:09:00-07:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=NM126672447AEC.WinterStormWarning.126672638950NM.ABQWSWABQ.875a1daf9901e530d32427996cd60dee</id>
+<updated>2023-12-12T22:47:00-07:00</updated>
+<published>2023-12-12T22:47:00-07:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Winter Storm Warning issued December 12 at 2:09PM MST until December 15 at 2:00AM MST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=NM126672379AD4.WinterStormWarning.126672638950NM.ABQWSWABQ.875a1daf9901e530d32427996cd60dee"/>
-<summary>...WINTER STORM WARNING IN EFFECT FROM 11 AM WEDNESDAY TO 2 AM MST FRIDAY... * WHAT...Heavy snow possible. Total snow accumulations between 4 and 10 inches below 7,500 feet with higher amounts of 10 to 24 inches above 7500 feet possible. * WHERE...Portions of north central and northeast New Mexico,</summary>
+<title>Winter Storm Warning issued December 12 at 10:47PM MST until December 15 at 2:00AM MST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=NM126672447AEC.WinterStormWarning.126672638950NM.ABQWSWABQ.875a1daf9901e530d32427996cd60dee"/>
+<summary>...WINTER STORM WARNING REMAINS IN EFFECT FROM 11 AM WEDNESDAY TO 2 AM MST FRIDAY... * WHAT...Heavy snow possible. Total snow accumulations between 4 and 10 inches below 7,500 feet with higher amounts of 10 to 24 inches above 7500 feet possible. * WHERE...Portions of north central and northeast New Mexico.</summary>
 <cap:event>Winter Storm Warning</cap:event>
-<cap:effective>2023-12-12T14:09:00-07:00</cap:effective>
+<cap:effective>2023-12-12T22:47:00-07:00</cap:effective>
 <cap:expires>2023-12-15T02:00:00-07:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
@@ -2115,22 +1952,21 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
-<value>/O.UPG.KABQ.WS.A.0013.231213T1800Z-231215T1500Z/
-/O.NEW.KABQ.WS.W.0014.231213T1800Z-231215T0900Z/</value>
+<value>/O.CON.KABQ.WS.W.0014.231213T1800Z-231215T0900Z/</value>
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=NM126672379AD4.WinterWeatherAdvisory.126672638950NM.ABQWSWABQ.439f363c768050f67b9d99d769542045</id>
-<updated>2023-12-12T14:09:00-07:00</updated>
-<published>2023-12-12T14:09:00-07:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=NM126672447AEC.WinterWeatherAdvisory.126672638950NM.ABQWSWABQ.439f363c768050f67b9d99d769542045</id>
+<updated>2023-12-12T22:47:00-07:00</updated>
+<published>2023-12-12T22:47:00-07:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Winter Weather Advisory issued December 12 at 2:09PM MST until December 15 at 2:00AM MST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=NM126672379AD4.WinterWeatherAdvisory.126672638950NM.ABQWSWABQ.439f363c768050f67b9d99d769542045"/>
-<summary>...WINTER WEATHER ADVISORY IN EFFECT FROM 5 PM WEDNESDAY TO 2 AM MST FRIDAY... * WHAT...Snow expected. Total snow accumulations between 1 and 3 inches except between 3 and 5 inches above 7500 feet. Locally higher amounts up to 9 inches atop the Sandia Crest. Winds gusting as high as 35 mph.</summary>
+<title>Winter Weather Advisory issued December 12 at 10:47PM MST until December 15 at 2:00AM MST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=NM126672447AEC.WinterWeatherAdvisory.126672638950NM.ABQWSWABQ.439f363c768050f67b9d99d769542045"/>
+<summary>...WINTER WEATHER ADVISORY REMAINS IN EFFECT FROM 5 PM WEDNESDAY TO 2 AM MST FRIDAY... * WHAT...Snow expected. Total snow accumulations between 1 and 3 inches except between 3 and 5 inches above 7500 feet. Locally higher amounts up to 9 inches atop the Sandia Crest. Winds gusting as high as 35 mph.</summary>
 <cap:event>Winter Weather Advisory</cap:event>
-<cap:effective>2023-12-12T14:09:00-07:00</cap:effective>
+<cap:effective>2023-12-12T22:47:00-07:00</cap:effective>
 <cap:expires>2023-12-15T02:00:00-07:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
@@ -2148,7 +1984,7 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
-<value>/O.NEW.KABQ.WW.Y.0027.231214T0000Z-231215T0900Z/</value>
+<value>/O.CON.KABQ.WW.Y.0027.231214T0000Z-231215T0900Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -2568,39 +2404,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=RI12667243CCB4.FloodWarning.126672449068RI.BOXFLSBOX.3ba166b16a6c97919520909361ba0efd</id>
-<updated>2023-12-12T20:01:00-05:00</updated>
-<published>2023-12-12T20:01:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Flood Warning issued December 12 at 8:01PM EST until December 13 at 1:02AM EST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=RI12667243CCB4.FloodWarning.126672449068RI.BOXFLSBOX.3ba166b16a6c97919520909361ba0efd"/>
-<summary>...The Flood Warning continues for the following rivers in Rhode Island...Massachusetts... Pawtuxet River At Cranston affecting Providence and Kent Counties. Shawsheen River At Andover affecting Essex County. ...The Flood Warning is extended for the following rivers in Rhode Island...</summary>
-<cap:event>Flood Warning</cap:event>
-<cap:effective>2023-12-12T20:01:00-05:00</cap:effective>
-<cap:expires>2023-12-13T01:02:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Washington</cap:areaDesc>
-<cap:polygon>41.43,-71.76 41.6,-71.74 41.6,-71.63 41.44,-71.64 41.43,-71.76</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>044009</value>
-<valueName>UGC</valueName>
-<value>RIC009</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.EXT.KBOX.FL.W.0040.000000T0000Z-231213T0602Z/
-/HOPR1.1.ER.231211T2000Z.231212T0730Z.231213T0002Z.NO/</value>
-</cap:parameter>
-</entry>
-<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=RI12667243CCB4.FloodWarning.12667246BBE0RI.BOXFLSBOX.6d5de5d6df1c892c7d81f952b72bc674</id>
 <updated>2023-12-12T20:01:00-05:00</updated>
 <published>2023-12-12T20:01:00-05:00</published>
@@ -2791,38 +2594,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value>/O.CON.KSEW.FG.Y.0005.000000T0000Z-231213T1800Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=WY126672444374.SpecialWeatherStatement.126672448FA0WY.BYZSPSBYZ.a99e334f1c0e2263336bb367c1e2d07b</id>
-<updated>2023-12-12T21:05:00-07:00</updated>
-<published>2023-12-12T21:05:00-07:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Special Weather Statement issued December 12 at 9:05PM MST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=WY126672444374.SpecialWeatherStatement.126672448FA0WY.BYZSPSBYZ.a99e334f1c0e2263336bb367c1e2d07b"/>
-<summary>...PATCHY DENSE FOG WILL AFFECT SOUTHEASTERN BIG HORN...SOUTHWESTERN POWDER RIVER...SOUTHERN ROSEBUD AND EASTERN SHERIDAN COUNTIES... Patchy dense fog continues in the Sheridan area this evening as well as along I-90 to the Aberdeen Hill vicinity. Visibility is under a half mile locally. The dense fog is also expanding north into southern Rosebud County in Montana.</summary>
-<cap:event>Special Weather Statement</cap:event>
-<cap:effective>2023-12-12T21:05:00-07:00</cap:effective>
-<cap:expires>2023-12-12T23:00:00-07:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Observed</cap:certainty>
-<cap:areaDesc>Sheridan Foothills</cap:areaDesc>
-<cap:polygon>44.99,-107.34 45.65,-106.7 45.64,-106.27 45,-105.8 44.99,-106.03 44.87,-106.02 44.86,-106.01 44.56,-106.01 44.56,-106.71 44.99,-107.34</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>056033</value>
-<valueName>UGC</valueName>
-<value>WYZ199</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value></value>
 </cap:parameter>
 </entry>
 <entry>
