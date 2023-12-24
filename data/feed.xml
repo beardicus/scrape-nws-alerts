@@ -16,16 +16,48 @@ xmlns = 'http://www.w3.org/2005/Atom'
 xmlns:cap = 'urn:oasis:names:tc:emergency:cap:1.1'
 xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 >
-<!-- http-date = Sun, 24 Dec 2023 00:11:00 GMT -->
+<!-- http-date = Sun, 24 Dec 2023 00:45:00 GMT -->
 <id>https://alerts.weather.gov/cap/us.php?x=0</id>
 <logo>http://alerts.weather.gov/images/xml_logo.gif</logo>
 <generator>NWS CAP Server</generator>
-<updated>2023-12-23T17:11:00-07:00</updated>
+<updated>2023-12-23T18:45:00-06:00</updated>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
 <title>Current Watches, Warnings and Advisories for the United States Issued by the National Weather Service</title>
 <link href="https://alerts.weather.gov/cap/us.php?x=0"/>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=AK126672EB8A80.WinterStormWarning.126672EDC7F0AK.AJKWSWAJK.92cf5c5a8cf35f783ec503fbfe823541</id>
+<updated>2023-12-23T15:32:00-09:00</updated>
+<published>2023-12-23T15:32:00-09:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Winter Storm Warning issued December 23 at 3:32PM AKST until December 24 at 6:00AM AKST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=AK126672EB8A80.WinterStormWarning.126672EDC7F0AK.AJKWSWAJK.92cf5c5a8cf35f783ec503fbfe823541"/>
+<summary>...FRONT WILL BRING HEAVY SNOW TO THE HIGHWAYS... Snow has changed to rain near Haines, but has remained snow out the road and near the boarder. For Skagway, cold air and light winds have allowed for precipitation to remain snow near sea level. Wet and heavy snow is expected to continue for Skagway overnight with highest totals towards White Pass.</summary>
+<cap:event>Winter Storm Warning</cap:event>
+<cap:effective>2023-12-23T15:32:00-09:00</cap:effective>
+<cap:expires>2023-12-24T06:00:00-09:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Haines Borough and Klukwan; Municipality of Skagway</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>002100 002230</value>
+<valueName>UGC</valueName>
+<value>AKZ318 AKZ319</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.PAJK.WS.W.0013.000000T0000Z-231224T1500Z/</value>
+</cap:parameter>
+</entry>
 <entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=AK126672DD611C.HighWindWarning.126672ECDD90AK.AJKNPWAJK.87ecd01f058d22e88de5bd567eb9121c</id>
 <updated>2023-12-22T22:51:00-09:00</updated>
@@ -88,38 +120,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value>/O.CON.PAJK.HW.W.0014.231223T1800Z-231224T1500Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=AK126672DD611C.WinterStormWarning.126672EDC7F0AK.AJKWSWAJK.92cf5c5a8cf35f783ec503fbfe823541</id>
-<updated>2023-12-22T22:51:00-09:00</updated>
-<published>2023-12-22T22:51:00-09:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Winter Storm Warning issued December 22 at 10:51PM AKST until December 24 at 6:00AM AKST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=AK126672DD611C.WinterStormWarning.126672EDC7F0AK.AJKWSWAJK.92cf5c5a8cf35f783ec503fbfe823541"/>
-<summary>...FRONT WILL BRING HEAVY SNOW TO THE HIGHWAYS... .Area of surface low pressure will track north towards south- central Alaska. The associated front will swing south to north over the panhandle. Cold air ahead of the front will bring snow to the northern Lynn Canal area. As warmer air slides north, snow switching to rain is likely by Saturday afternoon for Haines and</summary>
-<cap:event>Winter Storm Warning</cap:event>
-<cap:effective>2023-12-22T22:51:00-09:00</cap:effective>
-<cap:expires>2023-12-24T06:00:00-09:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Haines Borough and Klukwan; Municipality of Skagway</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>002100 002230</value>
-<valueName>UGC</valueName>
-<value>AKZ318 AKZ319</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.PAJK.WS.W.0013.231223T1500Z-231224T1500Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -2364,6 +2364,102 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=IL126672EB8A1C.DenseFogAdvisory.126672EDC7F0IL.ILXNPWILX.32e3866b23e318c010726f59baadb752</id>
+<updated>2023-12-23T18:31:00-06:00</updated>
+<published>2023-12-23T18:31:00-06:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Dense Fog Advisory issued December 23 at 6:31PM CST until December 24 at 9:00AM CST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=IL126672EB8A1C.DenseFogAdvisory.126672EDC7F0IL.ILXNPWILX.32e3866b23e318c010726f59baadb752"/>
+<summary>...DENSE FOG ADVISORY IN EFFECT UNTIL 9 AM CST SUNDAY... * WHAT...Visibility one quarter mile or less in areas of dense fog. * WHERE...Portions of central and east central Illinois, generally along and north of a Peoria to Paris line. * WHEN...Until 9 AM CST Sunday. * IMPACTS...Low visibility could make driving conditions hazardous.</summary>
+<cap:event>Dense Fog Advisory</cap:event>
+<cap:effective>2023-12-23T18:31:00-06:00</cap:effective>
+<cap:expires>2023-12-24T09:00:00-06:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Champaign; De Witt; Douglas; Edgar; Marshall; McLean; Peoria; Piatt; Stark; Tazewell; Vermilion; Woodford</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>017019 017039 017041 017045 017113 017123 017143 017147 017175 017179 017183 017203</value>
+<valueName>UGC</valueName>
+<value>ILZ028 ILZ029 ILZ030 ILZ031 ILZ037 ILZ038 ILZ043 ILZ044 ILZ045 ILZ046 ILZ055 ILZ057</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.NEW.KILX.FG.Y.0020.231224T0031Z-231224T1500Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=IL126672EB89B8.DenseFogAdvisory.126672EDC7F0IL.LOTNPWLOT.7a258f7ae176e71afceb287a0fa67bfb</id>
+<updated>2023-12-23T18:30:00-06:00</updated>
+<published>2023-12-23T18:30:00-06:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Dense Fog Advisory issued December 23 at 6:30PM CST until December 24 at 9:00AM CST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=IL126672EB89B8.DenseFogAdvisory.126672EDC7F0IL.LOTNPWLOT.7a258f7ae176e71afceb287a0fa67bfb"/>
+<summary>...DENSE FOG ADVISORY IN EFFECT UNTIL 9 AM CST /10 AM EST/ SUNDAY... * WHAT...Visibility one quarter mile or less in dense fog. * WHERE...Portions of central, east central, north central and northeast Illinois and northwest Indiana. * WHEN...Until 9 AM CST /10 AM EST/ Sunday.</summary>
+<cap:event>Dense Fog Advisory</cap:event>
+<cap:effective>2023-12-23T18:30:00-06:00</cap:effective>
+<cap:expires>2023-12-24T09:00:00-06:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Boone; Central Cook; Ford; Iroquois; Kankakee; Lake; Livingston; McHenry; Northern Cook; Winnebago</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>017007 017031 017053 017075 017091 017097 017105 017111 017201</value>
+<valueName>UGC</valueName>
+<value>ILZ003 ILZ004 ILZ005 ILZ006 ILZ023 ILZ032 ILZ033 ILZ039 ILZ103 ILZ104</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.EXB.KLOT.FG.Y.0017.000000T0000Z-231224T1500Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=IL126672EB89B8.DenseFogAdvisory.126672EDC7F0IL.LOTNPWLOT.018ce77b39270a1b228a06845338d568</id>
+<updated>2023-12-23T18:30:00-06:00</updated>
+<published>2023-12-23T18:30:00-06:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Dense Fog Advisory issued December 23 at 6:30PM CST until December 24 at 9:00AM CST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=IL126672EB89B8.DenseFogAdvisory.126672EDC7F0IL.LOTNPWLOT.018ce77b39270a1b228a06845338d568"/>
+<summary>...DENSE FOG ADVISORY NOW IN EFFECT UNTIL 9 AM CST SUNDAY... * WHAT...Visibility one quarter mile or less in dense fog. * WHERE...Portions of north central and northeast Illinois and northwest Indiana. * WHEN...Until 9 AM CST Sunday. * IMPACTS...Hazardous driving conditions due to low visibility.</summary>
+<cap:event>Dense Fog Advisory</cap:event>
+<cap:effective>2023-12-23T18:30:00-06:00</cap:effective>
+<cap:expires>2023-12-24T09:00:00-06:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>De Kalb; DuPage; Eastern Will; Grundy; Kane; Kendall; La Salle; Lee; Northern Will; Ogle; Southern Cook; Southern Will</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>017031 017037 017043 017063 017089 017093 017099 017103 017141 017197</value>
+<valueName>UGC</valueName>
+<value>ILZ008 ILZ010 ILZ011 ILZ012 ILZ013 ILZ019 ILZ020 ILZ021 ILZ105 ILZ106 ILZ107 ILZ108</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.EXT.KLOT.FG.Y.0017.000000T0000Z-231224T1500Z/</value>
+</cap:parameter>
+</entry>
+<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=IL126672DFC150.DenseFogAdvisory.126672EC6860IL.DVNNPWDVN.8a9475c1e7bc063cee7743c8137c926f</id>
 <updated>2023-12-23T17:08:00-06:00</updated>
 <published>2023-12-23T17:08:00-06:00</published>
@@ -2428,67 +2524,67 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=IL126672DF7B64.DenseFogAdvisory.126672EBCC20IL.LOTNPWLOT.7f68c171a5cd27cc8448e84e25e2e63b</id>
-<updated>2023-12-23T15:29:00-06:00</updated>
-<published>2023-12-23T15:29:00-06:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=IN126672EB89B8.DenseFogAdvisory.126672EDC7F0IN.LOTNPWLOT.413a365ca39a816649f2b869f7f12b9f</id>
+<updated>2023-12-23T19:30:00-05:00</updated>
+<published>2023-12-23T19:30:00-05:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Dense Fog Advisory issued December 23 at 3:29PM CST until December 23 at 8:00PM CST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=IL126672DF7B64.DenseFogAdvisory.126672EBCC20IL.LOTNPWLOT.7f68c171a5cd27cc8448e84e25e2e63b"/>
-<summary>...DENSE FOG ADVISORY IN EFFECT UNTIL 8 PM CST THIS EVENING... * WHAT...Visibility one quarter mile or less in dense fog. * WHERE...La Salle, Grundy, Southern Will and Eastern Will Counties. * WHEN...Until 8 PM CST this evening. * IMPACTS...Hazardous driving conditions due to low visibility.</summary>
+<title>Dense Fog Advisory issued December 23 at 7:30PM EST until December 24 at 10:00AM EST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=IN126672EB89B8.DenseFogAdvisory.126672EDC7F0IN.LOTNPWLOT.413a365ca39a816649f2b869f7f12b9f"/>
+<summary>...DENSE FOG ADVISORY NOW IN EFFECT UNTIL 9 AM CST SUNDAY... * WHAT...Visibility one quarter mile or less in dense fog. * WHERE...Portions of north central and northeast Illinois and northwest Indiana. * WHEN...Until 9 AM CST Sunday. * IMPACTS...Hazardous driving conditions due to low visibility.</summary>
 <cap:event>Dense Fog Advisory</cap:event>
-<cap:effective>2023-12-23T15:29:00-06:00</cap:effective>
-<cap:expires>2023-12-23T20:00:00-06:00</cap:expires>
+<cap:effective>2023-12-23T19:30:00-05:00</cap:effective>
+<cap:expires>2023-12-24T10:00:00-05:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
 <cap:category>Met</cap:category>
 <cap:urgency>Expected</cap:urgency>
 <cap:severity>Minor</cap:severity>
 <cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Eastern Will; Grundy; La Salle; Southern Will</cap:areaDesc>
+<cap:areaDesc>Lake; Porter</cap:areaDesc>
 <cap:polygon></cap:polygon>
 <cap:geocode>
 <valueName>FIPS6</valueName>
-<value>017063 017099 017197</value>
+<value>018089 018127</value>
 <valueName>UGC</valueName>
-<value>ILZ019 ILZ021 ILZ107 ILZ108</value>
+<value>INZ001 INZ002</value>
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
-<value>/O.NEW.KLOT.FG.Y.0017.231223T2129Z-231224T0200Z/</value>
+<value>/O.EXT.KLOT.FG.Y.0017.000000T0000Z-231224T1500Z/</value>
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=IL126672DF7B64.DenseFogAdvisory.126672EC6860IL.LOTNPWLOT.27f6d43ae0ad5aa465ddd553e68adeda</id>
-<updated>2023-12-23T15:29:00-06:00</updated>
-<published>2023-12-23T15:29:00-06:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=IN126672EB89B8.DenseFogAdvisory.126672EDC7F0IN.LOTNPWLOT.53553c1d715af38a152e215d85f521c7</id>
+<updated>2023-12-23T19:30:00-05:00</updated>
+<published>2023-12-23T19:30:00-05:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Dense Fog Advisory issued December 23 at 3:29PM CST until December 24 at 12:00AM CST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=IL126672DF7B64.DenseFogAdvisory.126672EC6860IL.LOTNPWLOT.27f6d43ae0ad5aa465ddd553e68adeda"/>
-<summary>...DENSE FOG ADVISORY IN EFFECT UNTIL MIDNIGHT CST TONIGHT... * WHAT...Visibility one quarter mile or less in dense fog. * WHERE...In Illinois, Ogle, Lee, De Kalb, Kane, DuPage, Kendall, Southern Cook and Northern Will Counties. In Indiana, Lake IN and Porter Counties. * WHEN...Until midnight CST tonight.</summary>
+<title>Dense Fog Advisory issued December 23 at 7:30PM EST until December 24 at 10:00AM EST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=IN126672EB89B8.DenseFogAdvisory.126672EDC7F0IN.LOTNPWLOT.53553c1d715af38a152e215d85f521c7"/>
+<summary>...DENSE FOG ADVISORY IN EFFECT UNTIL 9 AM CST /10 AM EST/ SUNDAY... * WHAT...Visibility one quarter mile or less in dense fog. * WHERE...Portions of central, east central, north central and northeast Illinois and northwest Indiana. * WHEN...Until 9 AM CST /10 AM EST/ Sunday.</summary>
 <cap:event>Dense Fog Advisory</cap:event>
-<cap:effective>2023-12-23T15:29:00-06:00</cap:effective>
-<cap:expires>2023-12-24T00:00:00-06:00</cap:expires>
+<cap:effective>2023-12-23T19:30:00-05:00</cap:effective>
+<cap:expires>2023-12-24T10:00:00-05:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
 <cap:category>Met</cap:category>
 <cap:urgency>Expected</cap:urgency>
 <cap:severity>Minor</cap:severity>
 <cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>De Kalb; DuPage; Kane; Kendall; Lee; Northern Will; Ogle; Southern Cook</cap:areaDesc>
+<cap:areaDesc>Benton; Jasper; Newton</cap:areaDesc>
 <cap:polygon></cap:polygon>
 <cap:geocode>
 <valueName>FIPS6</valueName>
-<value>017031 017037 017043 017089 017093 017103 017141 017197</value>
+<value>018007 018073 018111</value>
 <valueName>UGC</valueName>
-<value>ILZ008 ILZ010 ILZ011 ILZ012 ILZ013 ILZ020 ILZ105 ILZ106</value>
+<value>INZ010 INZ011 INZ019</value>
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
-<value>/O.NEW.KLOT.FG.Y.0017.231223T2129Z-231224T0600Z/</value>
+<value>/O.EXB.KLOT.FG.Y.0017.000000T0000Z-231224T1500Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -2585,38 +2681,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value>/O.NEW.KIND.FG.Y.0010.231223T2216Z-231224T1600Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=IN126672DF7B64.DenseFogAdvisory.126672EC6860IN.LOTNPWLOT.413a365ca39a816649f2b869f7f12b9f</id>
-<updated>2023-12-23T16:29:00-05:00</updated>
-<published>2023-12-23T16:29:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Dense Fog Advisory issued December 23 at 4:29PM EST until December 24 at 1:00AM EST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=IN126672DF7B64.DenseFogAdvisory.126672EC6860IN.LOTNPWLOT.413a365ca39a816649f2b869f7f12b9f"/>
-<summary>...DENSE FOG ADVISORY IN EFFECT UNTIL MIDNIGHT CST TONIGHT... * WHAT...Visibility one quarter mile or less in dense fog. * WHERE...In Illinois, Ogle, Lee, De Kalb, Kane, DuPage, Kendall, Southern Cook and Northern Will Counties. In Indiana, Lake IN and Porter Counties. * WHEN...Until midnight CST tonight.</summary>
-<cap:event>Dense Fog Advisory</cap:event>
-<cap:effective>2023-12-23T16:29:00-05:00</cap:effective>
-<cap:expires>2023-12-24T01:00:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Lake; Porter</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>018089 018127</value>
-<valueName>UGC</valueName>
-<value>INZ001 INZ002</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.NEW.KLOT.FG.Y.0017.231223T2129Z-231224T0600Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -2746,39 +2810,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <valueName>VTEC</valueName>
 <value>/O.CON.KBOX.FL.W.0053.000000T0000Z-000000T0000Z/
 /DOVM3.1.ER.231218T1715Z.231222T1500Z.000000T0000Z.NO/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=MA126672DEC174.FloodWarning.126672EC6860MA.BOXFLSBOX.0e0440b3b75c0b0cbcc5c8df8b7aea16</id>
-<updated>2023-12-23T11:53:00-05:00</updated>
-<published>2023-12-23T11:53:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Flood Warning issued December 23 at 11:53AM EST until December 24 at 1:00AM EST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MA126672DEC174.FloodWarning.126672EC6860MA.BOXFLSBOX.0e0440b3b75c0b0cbcc5c8df8b7aea16"/>
-<summary>...The Flood Warning continues for the following rivers in Connecticut...Massachusetts... Connecticut River At Hartford affecting Middlesex and Hartford Counties. Connecticut River At Middle Haddam affecting Middlesex County. Concord River At Lowell affecting Middlesex County.</summary>
-<cap:event>Flood Warning</cap:event>
-<cap:effective>2023-12-23T11:53:00-05:00</cap:effective>
-<cap:expires>2023-12-24T01:00:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Middlesex</cap:areaDesc>
-<cap:polygon>42.43,-71.34 42.46,-71.4 42.66,-71.34 42.64,-71.23 42.43,-71.34</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>025017</value>
-<valueName>UGC</valueName>
-<value>MAC017</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KBOX.FL.W.0072.000000T0000Z-231224T0600Z/
-/LCNM3.1.ER.231220T2137Z.231222T0200Z.231224T0000Z.NO/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -3300,17 +3331,17 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=ND126672EB8058.DenseFogAdvisory.126672EC1A40ND.FGFNPWFGF.caf236ba20958d4008b0493ef74d8a90</id>
-<updated>2023-12-23T18:06:00-06:00</updated>
-<published>2023-12-23T18:06:00-06:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=ND126672EB8F94.DenseFogAdvisory.126672EC1A40ND.FGFNPWFGF.caf236ba20958d4008b0493ef74d8a90</id>
+<updated>2023-12-23T18:45:00-06:00</updated>
+<published>2023-12-23T18:45:00-06:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Dense Fog Advisory issued December 23 at 6:06PM CST until December 23 at 10:00PM CST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=ND126672EB8058.DenseFogAdvisory.126672EC1A40ND.FGFNPWFGF.caf236ba20958d4008b0493ef74d8a90"/>
-<summary>...DENSE FOG ADVISORY IN EFFECT UNTIL 10 PM CST THIS EVENING... * WHAT...Visibility one quarter mile or less in dense fog. * WHERE...Barnes, Ransom and Sargent Counties. * WHEN...Until 10 PM CST this evening. * IMPACTS...Hazardous driving conditions due to low visibility.</summary>
+<title>Dense Fog Advisory issued December 23 at 6:45PM CST until December 23 at 10:00PM CST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=ND126672EB8F94.DenseFogAdvisory.126672EC1A40ND.FGFNPWFGF.caf236ba20958d4008b0493ef74d8a90"/>
+<summary>...DENSE FOG ADVISORY REMAINS IN EFFECT UNTIL 10 PM CST THIS EVENING... * WHAT...Visibility one quarter mile or less in dense fog. * WHERE...Barnes, Ransom and Sargent Counties. * WHEN...Until 10 PM CST this evening. * IMPACTS...Hazardous driving conditions due to low visibility.</summary>
 <cap:event>Dense Fog Advisory</cap:event>
-<cap:effective>2023-12-23T18:06:00-06:00</cap:effective>
+<cap:effective>2023-12-23T18:45:00-06:00</cap:effective>
 <cap:expires>2023-12-23T22:00:00-06:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
@@ -3328,21 +3359,21 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
-<value>/O.NEW.KFGF.FG.Y.0026.231224T0006Z-231224T0400Z/</value>
+<value>/O.CON.KFGF.FG.Y.0026.000000T0000Z-231224T0400Z/</value>
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=ND126672EB8058.DenseFogAdvisory.126672EC6860ND.FGFNPWFGF.7b512d034b0821ecfb1e72482ab89409</id>
-<updated>2023-12-23T18:06:00-06:00</updated>
-<published>2023-12-23T18:06:00-06:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=ND126672EB8F94.DenseFogAdvisory.126672EC6860ND.FGFNPWFGF.7b512d034b0821ecfb1e72482ab89409</id>
+<updated>2023-12-23T18:45:00-06:00</updated>
+<published>2023-12-23T18:45:00-06:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Dense Fog Advisory issued December 23 at 6:06PM CST until December 24 at 12:00AM CST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=ND126672EB8058.DenseFogAdvisory.126672EC6860ND.FGFNPWFGF.7b512d034b0821ecfb1e72482ab89409"/>
-<summary>...DENSE FOG ADVISORY IN EFFECT UNTIL MIDNIGHT CST TONIGHT... * WHAT...Visibility one quarter mile or less in dense fog. * WHERE...Towner, Cavalier, Benson, Ramsey, Eddy, Nelson, Griggs, Steele and Western Walsh Counties. * WHEN...Until midnight CST tonight. * IMPACTS...Hazardous driving conditions due to low visibility.</summary>
+<title>Dense Fog Advisory issued December 23 at 6:45PM CST until December 24 at 12:00AM CST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=ND126672EB8F94.DenseFogAdvisory.126672EC6860ND.FGFNPWFGF.7b512d034b0821ecfb1e72482ab89409"/>
+<summary>...DENSE FOG ADVISORY REMAINS IN EFFECT UNTIL MIDNIGHT CST TONIGHT... * WHAT...Visibility one quarter mile or less in dense fog. * WHERE...Towner, Cavalier, Benson, Ramsey, Eddy, Nelson, Griggs, Steele and Western Walsh Counties. * WHEN...Until midnight CST tonight.</summary>
 <cap:event>Dense Fog Advisory</cap:event>
-<cap:effective>2023-12-23T18:06:00-06:00</cap:effective>
+<cap:effective>2023-12-23T18:45:00-06:00</cap:effective>
 <cap:expires>2023-12-24T00:00:00-06:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
@@ -3360,7 +3391,39 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
-<value>/O.NEW.KFGF.FG.Y.0026.231224T0006Z-231224T0600Z/</value>
+<value>/O.CON.KFGF.FG.Y.0026.000000T0000Z-231224T0600Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=ND126672EB8F94.DenseFogAdvisory.126672EC6860ND.FGFNPWFGF.1c216c0a7909be0a8788d4f1dda688e3</id>
+<updated>2023-12-23T18:45:00-06:00</updated>
+<published>2023-12-23T18:45:00-06:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Dense Fog Advisory issued December 23 at 6:45PM CST until December 24 at 12:00AM CST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=ND126672EB8F94.DenseFogAdvisory.126672EC6860ND.FGFNPWFGF.1c216c0a7909be0a8788d4f1dda688e3"/>
+<summary>...DENSE FOG ADVISORY IN EFFECT UNTIL MIDNIGHT CST TONIGHT... * WHAT...Visibility one quarter mile or less in dense fog. * WHERE...Pembina, Eastern Walsh, Grand Forks and Traill Counties. * WHEN...Until midnight CST tonight. * IMPACTS...Hazardous driving conditions due to low visibility.</summary>
+<cap:event>Dense Fog Advisory</cap:event>
+<cap:effective>2023-12-23T18:45:00-06:00</cap:effective>
+<cap:expires>2023-12-24T00:00:00-06:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Eastern Walsh County; Grand Forks; Pembina; Traill</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>038035 038067 038097 038099</value>
+<valueName>UGC</valueName>
+<value>NDZ008 NDZ016 NDZ027 NDZ030</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.EXA.KFGF.FG.Y.0026.000000T0000Z-231224T0600Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -3878,38 +3941,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <valueName>VTEC</valueName>
 <value>/O.CON.KPHI.FL.W.0052.000000T0000Z-000000T0000Z/
 /PINN4.3.ER.231218T1448Z.231220T1230Z.231225T1200Z.NO/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=NM126672DFD154.SpecialWeatherStatement.126672EB89B8NM.MAFSPSMAF.91b291b600fe5b5dd6ce9816c9e3f33e</id>
-<updated>2023-12-23T16:49:00-07:00</updated>
-<published>2023-12-23T16:49:00-07:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Special Weather Statement issued December 23 at 4:49PM MST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=NM126672DFD154.SpecialWeatherStatement.126672EB89B8NM.MAFSPSMAF.91b291b600fe5b5dd6ce9816c9e3f33e"/>
-<summary>...STRONG THUNDERSTORMS WILL IMPACT SOUTHEASTERN LEA...NORTH CENTRAL PECOS...ECTOR...SOUTHERN ANDREWS...EAST CENTRAL REEVES...WARD... WINKLER AND CRANE COUNTIES THROUGH 630 PM CST/530 PM MST/... At 548 PM CST/448 PM MST/, Doppler radar was tracking strong thunderstorms along a line extending from 7 miles north of Kermit to near Thorntonville to 13 miles south of Pyote. Movement was east at</summary>
-<cap:event>Special Weather Statement</cap:event>
-<cap:effective>2023-12-23T16:49:00-07:00</cap:effective>
-<cap:expires>2023-12-23T17:30:00-07:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Observed</cap:certainty>
-<cap:areaDesc>Southern Lea County</cap:areaDesc>
-<cap:polygon>32.3,-102.45 32.04,-102.33 31.63,-102.32 31.36,-102.38 31.26,-103.3 31.58,-103.17 32.08,-103.33 32.3,-102.45</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>035025</value>
-<valueName>UGC</valueName>
-<value>NMZ034</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value></value>
 </cap:parameter>
 </entry>
 <entry>
@@ -4784,159 +4815,63 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=TX126672EB7F90.SevereThunderstormWarning.126672EB83DCTX.MAFSVSMAF.7ed0ddfaed2cf2117a8a83068e40ad96</id>
-<updated>2023-12-23T18:04:00-06:00</updated>
-<published>2023-12-23T18:04:00-06:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=TX126672EB8ECC.SevereThunderstormWarning.126672EBB0C8TX.MAFSVRMAF.5b6643ec7ccbba9e8fb531931c41f076</id>
+<updated>2023-12-23T18:43:00-06:00</updated>
+<published>2023-12-23T18:43:00-06:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Severe Thunderstorm Warning issued December 23 at 6:04PM CST until December 23 at 6:15PM CST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=TX126672EB7F90.SevereThunderstormWarning.126672EB83DCTX.MAFSVSMAF.7ed0ddfaed2cf2117a8a83068e40ad96"/>
-<summary>...A SEVERE THUNDERSTORM WARNING REMAINS IN EFFECT UNTIL 615 PM CST FOR SOUTHWESTERN PECOS AND NORTH CENTRAL BREWSTER COUNTIES... At 604 PM CST, a severe thunderstorm was located near Marathon, or 32 miles southeast of Alpine, moving east at 40 mph. HAZARD...60 mph wind gusts and quarter size hail. SOURCE...Radar indicated.</summary>
+<title>Severe Thunderstorm Warning issued December 23 at 6:43PM CST until December 23 at 7:30PM CST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=TX126672EB8ECC.SevereThunderstormWarning.126672EBB0C8TX.MAFSVRMAF.5b6643ec7ccbba9e8fb531931c41f076"/>
+<summary>The National Weather Service in Midland has issued a * Severe Thunderstorm Warning for... Southeastern Ector County in western Texas... Midland County in western Texas... Northern Crane County in western Texas... Northern Upton County in western Texas...</summary>
 <cap:event>Severe Thunderstorm Warning</cap:event>
-<cap:effective>2023-12-23T18:04:00-06:00</cap:effective>
-<cap:expires>2023-12-23T18:15:00-06:00</cap:expires>
+<cap:effective>2023-12-23T18:43:00-06:00</cap:effective>
+<cap:expires>2023-12-23T19:30:00-06:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
 <cap:category>Met</cap:category>
 <cap:urgency>Immediate</cap:urgency>
 <cap:severity>Severe</cap:severity>
 <cap:certainty>Observed</cap:certainty>
-<cap:areaDesc>Brewster; Pecos</cap:areaDesc>
-<cap:polygon>30.04,-103.28 30.18,-103.39 30.53,-103.12 30.15,-102.82 30.04,-103.28</cap:polygon>
+<cap:areaDesc>Crane; Ector; Midland; Upton</cap:areaDesc>
+<cap:polygon>31.48,-102.67 31.83,-102.65 32.02,-101.96 31.57,-101.82 31.48,-102.67</cap:polygon>
 <cap:geocode>
 <valueName>FIPS6</valueName>
-<value>048043 048371</value>
+<value>048103 048135 048329 048461</value>
 <valueName>UGC</valueName>
-<value>TXC043 TXC371</value>
+<value>TXC103 TXC135 TXC329 TXC461</value>
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
-<value>/O.CON.KMAF.SV.W.0344.000000T0000Z-231224T0015Z/</value>
+<value>/O.NEW.KMAF.SV.W.0348.231224T0043Z-231224T0130Z/</value>
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=TX126672EB7F90.SevereWeatherStatement.126672EC4150TX.MAFSVSMAF.eb67ed5077d7b9891964c03be5ea3ca4</id>
-<updated>2023-12-23T18:04:00-06:00</updated>
-<published>2023-12-23T18:04:00-06:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=TX126672EB8DA0.SpecialWeatherStatement.126672EBB0C8TX.MAFSPSMAF.64f43d77f6e1ce15280b36fcfa681ab5</id>
+<updated>2023-12-23T18:40:00-06:00</updated>
+<published>2023-12-23T18:40:00-06:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Severe Weather Statement issued December 23 at 6:04PM CST until December 23 at 11:00PM CST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=TX126672EB7F90.SevereWeatherStatement.126672EC4150TX.MAFSVSMAF.eb67ed5077d7b9891964c03be5ea3ca4"/>
-<summary>...A SEVERE THUNDERSTORM WARNING REMAINS IN EFFECT UNTIL 615 PM CST FOR SOUTHWESTERN PECOS AND NORTH CENTRAL BREWSTER COUNTIES... At 604 PM CST, a severe thunderstorm was located near Marathon, or 32 miles southeast of Alpine, moving east at 40 mph. HAZARD...60 mph wind gusts and quarter size hail. SOURCE...Radar indicated.</summary>
-<cap:event>Severe Weather Statement</cap:event>
-<cap:effective>2023-12-23T18:04:00-06:00</cap:effective>
-<cap:expires>2023-12-23T23:00:00-06:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Immediate</cap:urgency>
-<cap:severity>Severe</cap:severity>
-<cap:certainty>Observed</cap:certainty>
-<cap:areaDesc>Brewster; Pecos</cap:areaDesc>
-<cap:polygon>30.04,-103.28 30.18,-103.39 30.53,-103.12 30.15,-102.82 30.04,-103.28</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>048043 048371</value>
-<valueName>UGC</valueName>
-<value>TXC043 TXC371</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KMAF.SV.W.0344.000000T0000Z-231224T0015Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=TX126672EB7F2C.SevereThunderstormWarning.126672EB8F94TX.MAFSVRMAF.d601e5f895b99854dfc70469740691e4</id>
-<updated>2023-12-23T18:03:00-06:00</updated>
-<published>2023-12-23T18:03:00-06:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Severe Thunderstorm Warning issued December 23 at 6:03PM CST until December 23 at 6:45PM CST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=TX126672EB7F2C.SevereThunderstormWarning.126672EB8F94TX.MAFSVRMAF.d601e5f895b99854dfc70469740691e4"/>
-<summary>The National Weather Service in Midland has issued a * Severe Thunderstorm Warning for... Southern Ector County in western Texas... Northeastern Ward County in western Texas... Southeastern Winkler County in western Texas... Northern Crane County in western Texas...</summary>
-<cap:event>Severe Thunderstorm Warning</cap:event>
-<cap:effective>2023-12-23T18:03:00-06:00</cap:effective>
-<cap:expires>2023-12-23T18:45:00-06:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Immediate</cap:urgency>
-<cap:severity>Severe</cap:severity>
-<cap:certainty>Observed</cap:certainty>
-<cap:areaDesc>Crane; Ector; Ward; Winkler</cap:areaDesc>
-<cap:polygon>31.65,-102.32 31.61,-102.32 31.35,-102.98 31.36,-102.99 31.56,-103.1 31.92,-102.75 31.88,-102.49 31.65,-102.31 31.65,-102.32</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>048103 048135 048475 048495</value>
-<valueName>UGC</valueName>
-<value>TXC103 TXC135 TXC475 TXC495</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.NEW.KMAF.SV.W.0346.231224T0003Z-231224T0045Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=TX126672EB7E64.SevereThunderstormWarning.126672EB8F94TX.MAFSVRMAF.3173e6143fea069b7b391a8d12251d9e</id>
-<updated>2023-12-23T18:01:00-06:00</updated>
-<published>2023-12-23T18:01:00-06:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Severe Thunderstorm Warning issued December 23 at 6:01PM CST until December 23 at 6:45PM CST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=TX126672EB7E64.SevereThunderstormWarning.126672EB8F94TX.MAFSVRMAF.3173e6143fea069b7b391a8d12251d9e"/>
-<summary>The National Weather Service in Midland has issued a * Severe Thunderstorm Warning for... Northwestern Glasscock County in western Texas... Northeastern Midland County in western Texas... Southwestern Howard County in western Texas... Southeastern Martin County in western Texas...</summary>
-<cap:event>Severe Thunderstorm Warning</cap:event>
-<cap:effective>2023-12-23T18:01:00-06:00</cap:effective>
-<cap:expires>2023-12-23T18:45:00-06:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Immediate</cap:urgency>
-<cap:severity>Severe</cap:severity>
-<cap:certainty>Observed</cap:certainty>
-<cap:areaDesc>Glasscock; Howard; Martin; Midland</cap:areaDesc>
-<cap:polygon>31.77,-102.03 31.93,-102.12 32.3,-101.61 32,-101.38 31.77,-102.03</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>048173 048227 048317 048329</value>
-<valueName>UGC</valueName>
-<value>TXC173 TXC227 TXC317 TXC329</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.NEW.KMAF.SV.W.0345.231224T0001Z-231224T0045Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=TX126672DFD154.SpecialWeatherStatement.126672EB89B8TX.MAFSPSMAF.8af977362c25554a317f7618ce114a26</id>
-<updated>2023-12-23T17:49:00-06:00</updated>
-<published>2023-12-23T17:49:00-06:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Special Weather Statement issued December 23 at 5:49PM CST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=TX126672DFD154.SpecialWeatherStatement.126672EB89B8TX.MAFSPSMAF.8af977362c25554a317f7618ce114a26"/>
-<summary>...STRONG THUNDERSTORMS WILL IMPACT SOUTHEASTERN LEA...NORTH CENTRAL PECOS...ECTOR...SOUTHERN ANDREWS...EAST CENTRAL REEVES...WARD... WINKLER AND CRANE COUNTIES THROUGH 630 PM CST/530 PM MST/... At 548 PM CST/448 PM MST/, Doppler radar was tracking strong thunderstorms along a line extending from 7 miles north of Kermit to near Thorntonville to 13 miles south of Pyote. Movement was east at</summary>
+<title>Special Weather Statement issued December 23 at 6:40PM CST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=TX126672EB8DA0.SpecialWeatherStatement.126672EBB0C8TX.MAFSPSMAF.64f43d77f6e1ce15280b36fcfa681ab5"/>
+<summary>...A STRONG THUNDERSTORM WILL IMPACT NORTHWESTERN GLASSCOCK... SOUTHWESTERN MITCHELL...HOWARD AND SOUTHEASTERN MARTIN COUNTIES THROUGH 730 PM CST... At 640 PM CST, Doppler radar was tracking a strong thunderstorm over Lomax, or 13 miles southwest of Big Spring, moving northeast at 35 mph.</summary>
 <cap:event>Special Weather Statement</cap:event>
-<cap:effective>2023-12-23T17:49:00-06:00</cap:effective>
-<cap:expires>2023-12-23T18:30:00-06:00</cap:expires>
+<cap:effective>2023-12-23T18:40:00-06:00</cap:effective>
+<cap:expires>2023-12-23T19:30:00-06:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
 <cap:category>Met</cap:category>
 <cap:urgency>Expected</cap:urgency>
 <cap:severity>Minor</cap:severity>
 <cap:certainty>Observed</cap:certainty>
-<cap:areaDesc>Andrews; Crane; Ector; Pecos; Reeves County Plains; Ward; Winkler</cap:areaDesc>
-<cap:polygon>32.3,-102.45 32.04,-102.33 31.63,-102.32 31.36,-102.38 31.26,-103.3 31.58,-103.17 32.08,-103.33 32.3,-102.45</cap:polygon>
+<cap:areaDesc>Glasscock; Howard; Martin; Mitchell</cap:areaDesc>
+<cap:polygon>31.99,-101.66 32.13,-101.77 32.52,-101.29 32.15,-101.03 31.99,-101.66</cap:polygon>
 <cap:geocode>
 <valueName>FIPS6</valueName>
-<value>048003 048103 048135 048371 048389 048475 048495</value>
+<value>048173 048227 048317 048335</value>
 <valueName>UGC</valueName>
-<value>TXZ050 TXZ060 TXZ061 TXZ067 TXZ068 TXZ075 TXZ274</value>
+<value>TXZ051 TXZ052 TXZ053 TXZ063</value>
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
@@ -4944,17 +4879,81 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=TX126672DFC858.FloodAdvisory.126672EC4150TX.LUBFLSLUB.0e6a9ddfd28dac75693cb2d3f9f461e5</id>
-<updated>2023-12-23T17:26:00-06:00</updated>
-<published>2023-12-23T17:26:00-06:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=TX126672EB8CD8.SevereThunderstormWarning.126672EBA510TX.MAFSVSMAF.944cbfefc82b74c3987a5a5c0b6bc18a</id>
+<updated>2023-12-23T18:38:00-06:00</updated>
+<published>2023-12-23T18:38:00-06:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Flood Advisory issued December 23 at 5:26PM CST until December 23 at 11:00PM CST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=TX126672DFC858.FloodAdvisory.126672EC4150TX.LUBFLSLUB.0e6a9ddfd28dac75693cb2d3f9f461e5"/>
-<summary>...FLOOD ADVISORY NOW IN EFFECT UNTIL 630 PM CST THIS EVENING... * WHAT...Flooding caused by excessive rainfall continues. * WHERE...A portion of northwest Texas, including the following county, Lubbock. * WHEN...Until 630 PM CST. * IMPACTS...Minor flooding in low-lying and poor drainage areas.</summary>
+<title>Severe Thunderstorm Warning issued December 23 at 6:38PM CST until December 23 at 7:00PM CST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=TX126672EB8CD8.SevereThunderstormWarning.126672EBA510TX.MAFSVSMAF.944cbfefc82b74c3987a5a5c0b6bc18a"/>
+<summary>...A SEVERE THUNDERSTORM WARNING REMAINS IN EFFECT UNTIL 700 PM CST FOR EAST CENTRAL ECTOR...NORTHWESTERN MIDLAND AND SOUTHWESTERN MARTIN COUNTIES... At 638 PM CST, a severe thunderstorm was located near Odessa, moving northeast at 30 mph. HAZARD...60 mph wind gusts and quarter size hail.</summary>
+<cap:event>Severe Thunderstorm Warning</cap:event>
+<cap:effective>2023-12-23T18:38:00-06:00</cap:effective>
+<cap:expires>2023-12-23T19:00:00-06:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Immediate</cap:urgency>
+<cap:severity>Severe</cap:severity>
+<cap:certainty>Observed</cap:certainty>
+<cap:areaDesc>Ector; Martin; Midland</cap:areaDesc>
+<cap:polygon>31.86,-102.31 31.94,-102.38 32.09,-102.26 32.09,-102.21 32.12,-102.21 32.17,-102.14 31.89,-101.93 31.86,-102.31</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>048135 048317 048329</value>
+<valueName>UGC</valueName>
+<value>TXC135 TXC317 TXC329</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KMAF.SV.W.0347.000000T0000Z-231224T0100Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=TX126672EB8CD8.SevereWeatherStatement.126672EC4150TX.MAFSVSMAF.1fb23b720370f250bb6c654d0d33fe30</id>
+<updated>2023-12-23T18:38:00-06:00</updated>
+<published>2023-12-23T18:38:00-06:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Severe Weather Statement issued December 23 at 6:38PM CST until December 23 at 11:00PM CST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=TX126672EB8CD8.SevereWeatherStatement.126672EC4150TX.MAFSVSMAF.1fb23b720370f250bb6c654d0d33fe30"/>
+<summary>...A SEVERE THUNDERSTORM WARNING REMAINS IN EFFECT UNTIL 700 PM CST FOR EAST CENTRAL ECTOR...NORTHWESTERN MIDLAND AND SOUTHWESTERN MARTIN COUNTIES... At 638 PM CST, a severe thunderstorm was located near Odessa, moving northeast at 30 mph. HAZARD...60 mph wind gusts and quarter size hail.</summary>
+<cap:event>Severe Weather Statement</cap:event>
+<cap:effective>2023-12-23T18:38:00-06:00</cap:effective>
+<cap:expires>2023-12-23T23:00:00-06:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Immediate</cap:urgency>
+<cap:severity>Severe</cap:severity>
+<cap:certainty>Observed</cap:certainty>
+<cap:areaDesc>Ector; Martin; Midland</cap:areaDesc>
+<cap:polygon>31.86,-102.31 31.94,-102.38 32.09,-102.26 32.09,-102.21 32.12,-102.21 32.17,-102.14 31.89,-101.93 31.86,-102.31</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>048135 048317 048329</value>
+<valueName>UGC</valueName>
+<value>TXC135 TXC317 TXC329</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KMAF.SV.W.0347.000000T0000Z-231224T0100Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=TX126672EB84A4.FloodAdvisory.126672EC4150TX.LUBFLSLUB.0e6a9ddfd28dac75693cb2d3f9f461e5</id>
+<updated>2023-12-23T18:17:00-06:00</updated>
+<published>2023-12-23T18:17:00-06:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Flood Advisory issued December 23 at 6:17PM CST until December 23 at 11:00PM CST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=TX126672EB84A4.FloodAdvisory.126672EC4150TX.LUBFLSLUB.0e6a9ddfd28dac75693cb2d3f9f461e5"/>
+<summary>...FLOOD ADVISORY NOW IN EFFECT UNTIL 7 PM CST THIS EVENING... * WHAT...Flooding caused by excessive rainfall continues. * WHERE...A portion of northwest Texas, including the following county, Lubbock. * WHEN...Until 700 PM CST. * IMPACTS...Minor flooding in low-lying and poor drainage areas.</summary>
 <cap:event>Flood Advisory</cap:event>
-<cap:effective>2023-12-23T17:26:00-06:00</cap:effective>
+<cap:effective>2023-12-23T18:17:00-06:00</cap:effective>
 <cap:expires>2023-12-23T23:00:00-06:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
@@ -4972,8 +4971,40 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
-<value>/O.EXT.KLUB.FA.Y.0087.000000T0000Z-231224T0030Z/
+<value>/O.EXT.KLUB.FA.Y.0087.000000T0000Z-231224T0100Z/
 /00000.N.ER.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=TX126672EB8378.SpecialWeatherStatement.126672EBA510TX.MAFSPSMAF.64404f5cec0eb3157e1042e9c40d8c12</id>
+<updated>2023-12-23T18:14:00-06:00</updated>
+<published>2023-12-23T18:14:00-06:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Special Weather Statement issued December 23 at 6:14PM CST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=TX126672EB8378.SpecialWeatherStatement.126672EBA510TX.MAFSPSMAF.64404f5cec0eb3157e1042e9c40d8c12"/>
+<summary>...A STRONG THUNDERSTORM WILL IMPACT SOUTH CENTRAL PECOS...NORTH CENTRAL BREWSTER AND WESTERN TERRELL COUNTIES THROUGH 700 PM CST... At 614 PM CST, Doppler radar was tracking a strong thunderstorm 17 miles northeast of Marathon, or 35 miles south of Fort Stockton, moving northeast at 30 mph. HAZARD...Wind gusts of 50 to 55 mph and nickel size hail.</summary>
+<cap:event>Special Weather Statement</cap:event>
+<cap:effective>2023-12-23T18:14:00-06:00</cap:effective>
+<cap:expires>2023-12-23T19:00:00-06:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Observed</cap:certainty>
+<cap:areaDesc>Central Brewster County; Davis Mountains Foothills; Pecos</cap:areaDesc>
+<cap:polygon>30.33,-103.29 30.8,-102.8 30.32,-102.43 30.28,-102.53 30.28,-102.56 30.26,-102.57 30.08,-103.02 30.33,-103.29</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>048043 048109 048243 048371</value>
+<valueName>UGC</valueName>
+<value>TXZ075 TXZ278 TXZ279</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value></value>
 </cap:parameter>
 </entry>
 <entry>
@@ -5138,6 +5169,70 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=WI126672EB8D3C.DenseFogAdvisory.126672EDC7F0WI.MKXNPWMKX.0a44318f07a1c3fba1ca20a98bf247e2</id>
+<updated>2023-12-23T18:39:00-06:00</updated>
+<published>2023-12-23T18:39:00-06:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Dense Fog Advisory issued December 23 at 6:39PM CST until December 24 at 9:00AM CST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=WI126672EB8D3C.DenseFogAdvisory.126672EDC7F0WI.MKXNPWMKX.0a44318f07a1c3fba1ca20a98bf247e2"/>
+<summary>...DENSE FOG ADVISORY REMAINS IN EFFECT UNTIL 9 AM CST SUNDAY... * WHAT...Visibility one quarter mile or less in dense fog. * WHERE...Green, Iowa, and Lafayette Counties. * WHEN...Until 9 AM CST Sunday. * IMPACTS...Low visibility could make driving conditions hazardous.</summary>
+<cap:event>Dense Fog Advisory</cap:event>
+<cap:effective>2023-12-23T18:39:00-06:00</cap:effective>
+<cap:expires>2023-12-24T09:00:00-06:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Green; Iowa; Lafayette</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>055045 055049 055065</value>
+<valueName>UGC</valueName>
+<value>WIZ062 WIZ067 WIZ068</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KMKX.FG.Y.0017.000000T0000Z-231224T1500Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=WI126672EB8D3C.DenseFogAdvisory.126672EDC7F0WI.MKXNPWMKX.06f1e6c473e659aecf4b0e68914582bf</id>
+<updated>2023-12-23T18:39:00-06:00</updated>
+<published>2023-12-23T18:39:00-06:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Dense Fog Advisory issued December 23 at 6:39PM CST until December 24 at 9:00AM CST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=WI126672EB8D3C.DenseFogAdvisory.126672EDC7F0WI.MKXNPWMKX.06f1e6c473e659aecf4b0e68914582bf"/>
+<summary>...DENSE FOG ADVISORY IN EFFECT UNTIL 9 AM CST SUNDAY... * WHAT...Visibility of one quarter mile or less in dense fog. * WHERE...Dane, Rock, Jefferson, Kenosha, Milwaukee, Racine, Walworth, and Waukesha Counties. * WHEN...Until 9 AM CST Sunday. * IMPACTS...Low visibility could make driving conditions hazardous.</summary>
+<cap:event>Dense Fog Advisory</cap:event>
+<cap:effective>2023-12-23T18:39:00-06:00</cap:effective>
+<cap:expires>2023-12-24T09:00:00-06:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Dane; Jefferson; Kenosha; Milwaukee; Racine; Rock; Walworth; Waukesha</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>055025 055055 055059 055079 055101 055105 055127 055133</value>
+<valueName>UGC</valueName>
+<value>WIZ063 WIZ064 WIZ065 WIZ066 WIZ069 WIZ070 WIZ071 WIZ072</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.EXA.KMKX.FG.Y.0017.000000T0000Z-231224T1500Z/</value>
+</cap:parameter>
+</entry>
+<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=WI126672DFC024.DenseFogAdvisory.126672EDC7F0WI.ARXNPWARX.c6e7aa5fd4df876d10fd46a67a6c2bac</id>
 <updated>2023-12-23T17:05:00-06:00</updated>
 <published>2023-12-23T17:05:00-06:00</published>
@@ -5295,38 +5390,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value>/O.EXB.KDLH.FG.Y.0028.231224T0000Z-231224T1700Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=WI126672DF5198.DenseFogAdvisory.126672EDC7F0WI.MKXNPWMKX.0a44318f07a1c3fba1ca20a98bf247e2</id>
-<updated>2023-12-23T14:22:00-06:00</updated>
-<published>2023-12-23T14:22:00-06:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Dense Fog Advisory issued December 23 at 2:22PM CST until December 24 at 9:00AM CST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=WI126672DF5198.DenseFogAdvisory.126672EDC7F0WI.MKXNPWMKX.0a44318f07a1c3fba1ca20a98bf247e2"/>
-<summary>...DENSE FOG ADVISORY NOW IN EFFECT UNTIL 9 AM CST SUNDAY... * WHAT...Visibility one quarter mile or less in dense fog. * WHERE...Iowa, Lafayette and Green Counties. * WHEN...Until 9 AM CST Sunday. * IMPACTS...Hazardous driving conditions due to low visibility.</summary>
-<cap:event>Dense Fog Advisory</cap:event>
-<cap:effective>2023-12-23T14:22:00-06:00</cap:effective>
-<cap:expires>2023-12-24T09:00:00-06:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Green; Iowa; Lafayette</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>055045 055049 055065</value>
-<valueName>UGC</valueName>
-<value>WIZ062 WIZ067 WIZ068</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KMKX.FG.Y.0017.000000T0000Z-231224T1500Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -5775,134 +5838,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value>/O.CON.KBYZ.WW.Y.0033.000000T0000Z-231224T1200Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=WY126672DE43AC.SpecialWeatherStatement.126672EB83DCWY.RIWSPSRIW.47c8444cbf6cebb5a6766a9039435487</id>
-<updated>2023-12-23T06:31:00-07:00</updated>
-<published>2023-12-23T06:31:00-07:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Special Weather Statement issued December 23 at 6:31AM MST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=WY126672DE43AC.SpecialWeatherStatement.126672EB83DCWY.RIWSPSRIW.47c8444cbf6cebb5a6766a9039435487"/>
-<summary>...Snow returning today... This is a special weather statement from the National Weather Service Office in Riverton. * WHAT...Periods of snow. Accumulations of 2 to 4 inches. * WHERE...Yellowstone Park and the Absaroka Mountains. * WHEN...Today, with the heaviest snow in the morning in</summary>
-<cap:event>Special Weather Statement</cap:event>
-<cap:effective>2023-12-23T06:31:00-07:00</cap:effective>
-<cap:expires>2023-12-23T17:15:00-07:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Observed</cap:certainty>
-<cap:areaDesc>Absaroka Mountains; Yellowstone National Park</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>056013 056029 056039</value>
-<valueName>UGC</valueName>
-<value>WYZ001 WYZ002</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value></value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=WY126672DE43AC.SpecialWeatherStatement.126672EB83DCWY.RIWSPSRIW.4d1fedcd9a83dab8f84faa012f49cf50</id>
-<updated>2023-12-23T06:31:00-07:00</updated>
-<published>2023-12-23T06:31:00-07:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Special Weather Statement issued December 23 at 6:31AM MST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=WY126672DE43AC.SpecialWeatherStatement.126672EB83DCWY.RIWSPSRIW.4d1fedcd9a83dab8f84faa012f49cf50"/>
-<summary>...Snow returning today... This is a special weather statement from the National Weather Service Office in Riverton. * WHAT...Periods of snow. Accumulations of 3 to 6 inches in the mountains; 1 to 3 inches in the valleys. * WHERE...The Jackson and Star Valleys as well as the Tetons.</summary>
-<cap:event>Special Weather Statement</cap:event>
-<cap:effective>2023-12-23T06:31:00-07:00</cap:effective>
-<cap:expires>2023-12-23T17:15:00-07:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Observed</cap:certainty>
-<cap:areaDesc>Jackson Hole; Star Valley; Teton and Gros Ventre Mountains</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>056023 056039</value>
-<valueName>UGC</valueName>
-<value>WYZ012 WYZ013 WYZ023</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value></value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=WY126672DE43AC.SpecialWeatherStatement.126672EB83DCWY.RIWSPSRIW.0f5dd60ac712cf55413069d2e2ed46b5</id>
-<updated>2023-12-23T06:31:00-07:00</updated>
-<published>2023-12-23T06:31:00-07:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Special Weather Statement issued December 23 at 6:31AM MST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=WY126672DE43AC.SpecialWeatherStatement.126672EB83DCWY.RIWSPSRIW.0f5dd60ac712cf55413069d2e2ed46b5"/>
-<summary>...Snow this afternoon and tonight... This is a special weather statement from the National Weather Service Office in Riverton. * WHAT...Periods of snow. Accumulations of 3 to 6 inches expected. * WHERE...The Wind River Mountains. * WHEN...This afternoon and tonight. The heaviest snow is expected</summary>
-<cap:event>Special Weather Statement</cap:event>
-<cap:effective>2023-12-23T06:31:00-07:00</cap:effective>
-<cap:expires>2023-12-23T17:15:00-07:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Observed</cap:certainty>
-<cap:areaDesc>Wind River Mountains West</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>056035</value>
-<valueName>UGC</valueName>
-<value>WYZ014</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value></value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=WY126672DE43AC.SpecialWeatherStatement.126672EB83DCWY.RIWSPSRIW.ddff01e048b7c0ff34959dd9fb63b8a3</id>
-<updated>2023-12-23T06:31:00-07:00</updated>
-<published>2023-12-23T06:31:00-07:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Special Weather Statement issued December 23 at 6:31AM MST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=WY126672DE43AC.SpecialWeatherStatement.126672EB83DCWY.RIWSPSRIW.ddff01e048b7c0ff34959dd9fb63b8a3"/>
-<summary>...Snow this afternoon and tonight... This is a special weather statement from the National Weather Service Office in Riverton. * WHAT...Periods of snow. Accumulations of 1 to 3 inches expected. * WHERE...The Upper Wind River Basin. * WHEN...This afternoon into tonight. The heaviest snow is</summary>
-<cap:event>Special Weather Statement</cap:event>
-<cap:effective>2023-12-23T06:31:00-07:00</cap:effective>
-<cap:expires>2023-12-23T17:15:00-07:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Observed</cap:certainty>
-<cap:areaDesc>Upper Wind River Basin</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>056013</value>
-<valueName>UGC</valueName>
-<value>WYZ016</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value></value>
 </cap:parameter>
 </entry>
 </feed>
