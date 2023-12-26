@@ -16,16 +16,48 @@ xmlns = 'http://www.w3.org/2005/Atom'
 xmlns:cap = 'urn:oasis:names:tc:emergency:cap:1.1'
 xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 >
-<!-- http-date = Tue, 26 Dec 2023 20:59:00 GMT -->
+<!-- http-date = Tue, 26 Dec 2023 21:24:00 GMT -->
 <id>https://alerts.weather.gov/cap/us.php?x=0</id>
 <logo>http://alerts.weather.gov/images/xml_logo.gif</logo>
 <generator>NWS CAP Server</generator>
-<updated>2023-12-26T15:59:00-05:00</updated>
+<updated>2023-12-26T13:24:00-08:00</updated>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
 <title>Current Watches, Warnings and Advisories for the United States Issued by the National Weather Service</title>
 <link href="https://alerts.weather.gov/cap/us.php?x=0"/>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=AK1266730D39F0.WindChillAdvisory.1266731AA450AK.AFGWSWWCZ.8ff5079ec5e5afde773a20d3aa731450</id>
+<updated>2023-12-26T12:08:00-09:00</updated>
+<published>2023-12-26T12:08:00-09:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Wind Chill Advisory issued December 26 at 12:08PM AKST until December 27 at 12:00AM AKST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=AK1266730D39F0.WindChillAdvisory.1266731AA450AK.AFGWSWWCZ.8ff5079ec5e5afde773a20d3aa731450"/>
+<summary>...WIND CHILL ADVISORY REMAINS IN EFFECT UNTIL MIDNIGHT AKST TONIGHT... * WHAT...Very cold wind chills to 50 below expected. * WHERE...Lower Kobuk Valley, Baldwin Peninsula and Northern Seward Peninsula. * WHEN...Until midnight AKST tonight.</summary>
+<cap:event>Wind Chill Advisory</cap:event>
+<cap:effective>2023-12-26T12:08:00-09:00</cap:effective>
+<cap:expires>2023-12-27T00:00:00-09:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Baldwin Peninsula; Lower Kobuk Valley; Northern Seward Peninsula</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>002188</value>
+<valueName>UGC</valueName>
+<value>AKZ816 AKZ817 AKZ818</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.PAFG.WC.Y.0024.000000T0000Z-231227T0900Z/</value>
+</cap:parameter>
+</entry>
 <entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=AK1266730D1DD0.AirQualityAlert.1266732C0970AK.AFGAQAAFG.8fd3198138fb1f59865a46855a0c82d5</id>
 <updated>2023-12-26T11:36:00-09:00</updated>
@@ -184,38 +216,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value>/O.CON.PAFC.WW.Y.0071.000000T0000Z-231227T1800Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=AK1266730C362C.WindChillAdvisory.1266731AA450AK.AFGWSWWCZ.8ff5079ec5e5afde773a20d3aa731450</id>
-<updated>2023-12-26T05:43:00-09:00</updated>
-<published>2023-12-26T05:43:00-09:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Wind Chill Advisory issued December 26 at 5:43AM AKST until December 27 at 12:00AM AKST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=AK1266730C362C.WindChillAdvisory.1266731AA450AK.AFGWSWWCZ.8ff5079ec5e5afde773a20d3aa731450"/>
-<summary>...WIND CHILL ADVISORY REMAINS IN EFFECT UNTIL MIDNIGHT AKST TONIGHT... * WHAT...Very cold wind chills to 50 below expected. * WHERE...Lower Kobuk Valley, Baldwin Peninsula and Northern Seward Peninsula. * WHEN...Until midnight AKST tonight.</summary>
-<cap:event>Wind Chill Advisory</cap:event>
-<cap:effective>2023-12-26T05:43:00-09:00</cap:effective>
-<cap:expires>2023-12-27T00:00:00-09:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Baldwin Peninsula; Lower Kobuk Valley; Northern Seward Peninsula</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>002188</value>
-<valueName>UGC</valueName>
-<value>AKZ816 AKZ817 AKZ818</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.PAFG.WC.Y.0024.231226T1500Z-231227T0900Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -443,6 +443,511 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=CA1266730D3EA0.BeachHazardsStatement.1266732A5BC0CA.LOXCFWLOX.ff59f1bd3559d0044fc17f34e8ee610a</id>
+<updated>2023-12-26T13:20:00-08:00</updated>
+<published>2023-12-26T13:20:00-08:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Beach Hazards Statement issued December 26 at 1:20PM PST until December 28 at 4:00AM PST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CA1266730D3EA0.BeachHazardsStatement.1266732A5BC0CA.LOXCFWLOX.ff59f1bd3559d0044fc17f34e8ee610a"/>
+<summary>...BEACH HAZARDS STATEMENT REMAINS IN EFFECT THROUGH LATE WEDNESDAY NIGHT... ...COASTAL FLOOD ADVISORY REMAINS IN EFFECT FROM 4 AM THURSDAY TO 10 PM PST SATURDAY... ...HIGH SURF ADVISORY REMAINS IN EFFECT FROM 4 AM THURSDAY TO 10 PM PST SATURDAY...</summary>
+<cap:event>Beach Hazards Statement</cap:event>
+<cap:effective>2023-12-26T13:20:00-08:00</cap:effective>
+<cap:expires>2023-12-28T04:00:00-08:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Catalina and Santa Barbara Islands; Los Angeles County Beaches; Malibu Coast; Santa Barbara County Southeastern Coast; Santa Barbara County Southwestern Coast</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>006037 006083</value>
+<valueName>UGC</valueName>
+<value>CAZ087 CAZ349 CAZ350 CAZ362 CAZ366</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KLOX.CF.Y.0005.231228T1200Z-231231T0600Z/
+/O.CON.KLOX.SU.Y.0029.231228T1200Z-231231T0600Z/
+/O.CON.KLOX.BH.S.0021.000000T0000Z-231228T1200Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=CA1266730D3EA0.HighSurfAdvisory.1266732A5BC0CA.LOXCFWLOX.2ce20993742377f561746412d658bb36</id>
+<updated>2023-12-26T13:20:00-08:00</updated>
+<published>2023-12-26T13:20:00-08:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>High Surf Advisory issued December 26 at 1:20PM PST until December 28 at 4:00AM PST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CA1266730D3EA0.HighSurfAdvisory.1266732A5BC0CA.LOXCFWLOX.2ce20993742377f561746412d658bb36"/>
+<summary>...HIGH SURF ADVISORY REMAINS IN EFFECT UNTIL 4 AM PST THURSDAY... ...COASTAL FLOOD WARNING REMAINS IN EFFECT FROM 4 AM THURSDAY TO 10 PM PST SATURDAY... ...HIGH SURF WARNING REMAINS IN EFFECT FROM 4 AM THURSDAY TO 10 PM PST SATURDAY... * WHAT...For the High Surf Advisory, large breaking waves of 10</summary>
+<cap:event>High Surf Advisory</cap:event>
+<cap:effective>2023-12-26T13:20:00-08:00</cap:effective>
+<cap:expires>2023-12-28T04:00:00-08:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>San Luis Obispo County Beaches; Santa Barbara County Central Coast Beaches</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>006079 006083</value>
+<valueName>UGC</valueName>
+<value>CAZ340 CAZ346</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KLOX.CF.W.0001.231228T1200Z-231231T0600Z/
+/O.CON.KLOX.SU.W.0003.231228T1200Z-231231T0600Z/
+/O.CON.KLOX.SU.Y.0029.000000T0000Z-231228T1200Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=CA1266730D3EA0.HighSurfAdvisory.1266732A5BC0CA.LOXCFWLOX.d581b0fd9067f1feef9cb31fdaea979d</id>
+<updated>2023-12-26T13:20:00-08:00</updated>
+<published>2023-12-26T13:20:00-08:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>High Surf Advisory issued December 26 at 1:20PM PST until December 28 at 4:00AM PST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CA1266730D3EA0.HighSurfAdvisory.1266732A5BC0CA.LOXCFWLOX.d581b0fd9067f1feef9cb31fdaea979d"/>
+<summary>...HIGH SURF ADVISORY REMAINS IN EFFECT UNTIL 4 AM PST THURSDAY... ...COASTAL FLOOD WARNING REMAINS IN EFFECT FROM 4 AM THURSDAY TO 10 PM PST SATURDAY... ...HIGH SURF WARNING REMAINS IN EFFECT FROM 4 AM THURSDAY TO 10 PM PST SATURDAY... * WHAT...For the High Surf Advisory, large breaking waves of 5 to</summary>
+<cap:event>High Surf Advisory</cap:event>
+<cap:effective>2023-12-26T13:20:00-08:00</cap:effective>
+<cap:expires>2023-12-28T04:00:00-08:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Ventura County Beaches</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>006111</value>
+<valueName>UGC</valueName>
+<value>CAZ354</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KLOX.CF.W.0001.231228T1200Z-231231T0600Z/
+/O.CON.KLOX.SU.W.0003.231228T1200Z-231231T0600Z/
+/O.CON.KLOX.SU.Y.0030.000000T0000Z-231228T1200Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=CA1266730D3EA0.CoastalFloodAdvisory.126673573820CA.LOXCFWLOX.2de7993a33803f978ad6ce4fbec8dfa7</id>
+<updated>2023-12-26T13:20:00-08:00</updated>
+<published>2023-12-26T13:20:00-08:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Coastal Flood Advisory issued December 26 at 1:20PM PST until December 30 at 10:00PM PST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CA1266730D3EA0.CoastalFloodAdvisory.126673573820CA.LOXCFWLOX.2de7993a33803f978ad6ce4fbec8dfa7"/>
+<summary>...BEACH HAZARDS STATEMENT REMAINS IN EFFECT THROUGH LATE WEDNESDAY NIGHT... ...COASTAL FLOOD ADVISORY REMAINS IN EFFECT FROM 4 AM THURSDAY TO 10 PM PST SATURDAY... ...HIGH SURF ADVISORY REMAINS IN EFFECT FROM 4 AM THURSDAY TO 10 PM PST SATURDAY...</summary>
+<cap:event>Coastal Flood Advisory</cap:event>
+<cap:effective>2023-12-26T13:20:00-08:00</cap:effective>
+<cap:expires>2023-12-30T22:00:00-08:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Catalina and Santa Barbara Islands; Los Angeles County Beaches; Malibu Coast; Santa Barbara County Southeastern Coast; Santa Barbara County Southwestern Coast</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>006037 006083</value>
+<valueName>UGC</valueName>
+<value>CAZ087 CAZ349 CAZ350 CAZ362 CAZ366</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KLOX.CF.Y.0005.231228T1200Z-231231T0600Z/
+/O.CON.KLOX.SU.Y.0029.231228T1200Z-231231T0600Z/
+/O.CON.KLOX.BH.S.0021.000000T0000Z-231228T1200Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=CA1266730D3EA0.CoastalFloodWarning.126673573820CA.LOXCFWLOX.4659e5f74508524f6e23b271822c2192</id>
+<updated>2023-12-26T13:20:00-08:00</updated>
+<published>2023-12-26T13:20:00-08:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Coastal Flood Warning issued December 26 at 1:20PM PST until December 30 at 10:00PM PST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CA1266730D3EA0.CoastalFloodWarning.126673573820CA.LOXCFWLOX.4659e5f74508524f6e23b271822c2192"/>
+<summary>...HIGH SURF ADVISORY REMAINS IN EFFECT UNTIL 4 AM PST THURSDAY... ...COASTAL FLOOD WARNING REMAINS IN EFFECT FROM 4 AM THURSDAY TO 10 PM PST SATURDAY... ...HIGH SURF WARNING REMAINS IN EFFECT FROM 4 AM THURSDAY TO 10 PM PST SATURDAY... * WHAT...For the High Surf Advisory, large breaking waves of 10</summary>
+<cap:event>Coastal Flood Warning</cap:event>
+<cap:effective>2023-12-26T13:20:00-08:00</cap:effective>
+<cap:expires>2023-12-30T22:00:00-08:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>San Luis Obispo County Beaches; Santa Barbara County Central Coast Beaches</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>006079 006083</value>
+<valueName>UGC</valueName>
+<value>CAZ340 CAZ346</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KLOX.CF.W.0001.231228T1200Z-231231T0600Z/
+/O.CON.KLOX.SU.W.0003.231228T1200Z-231231T0600Z/
+/O.CON.KLOX.SU.Y.0029.000000T0000Z-231228T1200Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=CA1266730D3EA0.CoastalFloodWarning.126673573820CA.LOXCFWLOX.50f11bc18d1be63be2e65527a25760ae</id>
+<updated>2023-12-26T13:20:00-08:00</updated>
+<published>2023-12-26T13:20:00-08:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Coastal Flood Warning issued December 26 at 1:20PM PST until December 30 at 10:00PM PST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CA1266730D3EA0.CoastalFloodWarning.126673573820CA.LOXCFWLOX.50f11bc18d1be63be2e65527a25760ae"/>
+<summary>...HIGH SURF ADVISORY REMAINS IN EFFECT UNTIL 4 AM PST THURSDAY... ...COASTAL FLOOD WARNING REMAINS IN EFFECT FROM 4 AM THURSDAY TO 10 PM PST SATURDAY... ...HIGH SURF WARNING REMAINS IN EFFECT FROM 4 AM THURSDAY TO 10 PM PST SATURDAY... * WHAT...For the High Surf Advisory, large breaking waves of 5 to</summary>
+<cap:event>Coastal Flood Warning</cap:event>
+<cap:effective>2023-12-26T13:20:00-08:00</cap:effective>
+<cap:expires>2023-12-30T22:00:00-08:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Ventura County Beaches</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>006111</value>
+<valueName>UGC</valueName>
+<value>CAZ354</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KLOX.CF.W.0001.231228T1200Z-231231T0600Z/
+/O.CON.KLOX.SU.W.0003.231228T1200Z-231231T0600Z/
+/O.CON.KLOX.SU.Y.0030.000000T0000Z-231228T1200Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=CA1266730D3EA0.HighSurfAdvisory.126673573820CA.LOXCFWLOX.f74f4f7a157ce3dbb5b091739665208f</id>
+<updated>2023-12-26T13:20:00-08:00</updated>
+<published>2023-12-26T13:20:00-08:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>High Surf Advisory issued December 26 at 1:20PM PST until December 30 at 10:00PM PST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CA1266730D3EA0.HighSurfAdvisory.126673573820CA.LOXCFWLOX.f74f4f7a157ce3dbb5b091739665208f"/>
+<summary>...BEACH HAZARDS STATEMENT REMAINS IN EFFECT THROUGH LATE WEDNESDAY NIGHT... ...COASTAL FLOOD ADVISORY REMAINS IN EFFECT FROM 4 AM THURSDAY TO 10 PM PST SATURDAY... ...HIGH SURF ADVISORY REMAINS IN EFFECT FROM 4 AM THURSDAY TO 10 PM PST SATURDAY...</summary>
+<cap:event>High Surf Advisory</cap:event>
+<cap:effective>2023-12-26T13:20:00-08:00</cap:effective>
+<cap:expires>2023-12-30T22:00:00-08:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Catalina and Santa Barbara Islands; Los Angeles County Beaches; Malibu Coast; Santa Barbara County Southeastern Coast; Santa Barbara County Southwestern Coast</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>006037 006083</value>
+<valueName>UGC</valueName>
+<value>CAZ087 CAZ349 CAZ350 CAZ362 CAZ366</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KLOX.CF.Y.0005.231228T1200Z-231231T0600Z/
+/O.CON.KLOX.SU.Y.0029.231228T1200Z-231231T0600Z/
+/O.CON.KLOX.BH.S.0021.000000T0000Z-231228T1200Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=CA1266730D3EA0.HighSurfWarning.126673573820CA.LOXCFWLOX.e86bd453d06266f0f021f9977249996e</id>
+<updated>2023-12-26T13:20:00-08:00</updated>
+<published>2023-12-26T13:20:00-08:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>High Surf Warning issued December 26 at 1:20PM PST until December 30 at 10:00PM PST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CA1266730D3EA0.HighSurfWarning.126673573820CA.LOXCFWLOX.e86bd453d06266f0f021f9977249996e"/>
+<summary>...HIGH SURF ADVISORY REMAINS IN EFFECT UNTIL 4 AM PST THURSDAY... ...COASTAL FLOOD WARNING REMAINS IN EFFECT FROM 4 AM THURSDAY TO 10 PM PST SATURDAY... ...HIGH SURF WARNING REMAINS IN EFFECT FROM 4 AM THURSDAY TO 10 PM PST SATURDAY... * WHAT...For the High Surf Advisory, large breaking waves of 10</summary>
+<cap:event>High Surf Warning</cap:event>
+<cap:effective>2023-12-26T13:20:00-08:00</cap:effective>
+<cap:expires>2023-12-30T22:00:00-08:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>San Luis Obispo County Beaches; Santa Barbara County Central Coast Beaches</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>006079 006083</value>
+<valueName>UGC</valueName>
+<value>CAZ340 CAZ346</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KLOX.CF.W.0001.231228T1200Z-231231T0600Z/
+/O.CON.KLOX.SU.W.0003.231228T1200Z-231231T0600Z/
+/O.CON.KLOX.SU.Y.0029.000000T0000Z-231228T1200Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=CA1266730D3EA0.HighSurfWarning.126673573820CA.LOXCFWLOX.e2c5b22e1756f12e37bee1cb4ff1b5e7</id>
+<updated>2023-12-26T13:20:00-08:00</updated>
+<published>2023-12-26T13:20:00-08:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>High Surf Warning issued December 26 at 1:20PM PST until December 30 at 10:00PM PST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CA1266730D3EA0.HighSurfWarning.126673573820CA.LOXCFWLOX.e2c5b22e1756f12e37bee1cb4ff1b5e7"/>
+<summary>...HIGH SURF ADVISORY REMAINS IN EFFECT UNTIL 4 AM PST THURSDAY... ...COASTAL FLOOD WARNING REMAINS IN EFFECT FROM 4 AM THURSDAY TO 10 PM PST SATURDAY... ...HIGH SURF WARNING REMAINS IN EFFECT FROM 4 AM THURSDAY TO 10 PM PST SATURDAY... * WHAT...For the High Surf Advisory, large breaking waves of 5 to</summary>
+<cap:event>High Surf Warning</cap:event>
+<cap:effective>2023-12-26T13:20:00-08:00</cap:effective>
+<cap:expires>2023-12-30T22:00:00-08:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Ventura County Beaches</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>006111</value>
+<valueName>UGC</valueName>
+<value>CAZ354</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KLOX.CF.W.0001.231228T1200Z-231231T0600Z/
+/O.CON.KLOX.SU.W.0003.231228T1200Z-231231T0600Z/
+/O.CON.KLOX.SU.Y.0030.000000T0000Z-231228T1200Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=CA1266730D3B1C.AirQualityAlert.12667329BF80CA.SGXAQASGX.c05d867fd8b228c3669b27f2bb1111ac</id>
+<updated>2023-12-26T13:11:00-08:00</updated>
+<published>2023-12-26T13:11:00-08:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Air Quality Alert issued December 26 at 1:11PM PST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CA1266730D3B1C.AirQualityAlert.12667329BF80CA.SGXAQASGX.c05d867fd8b228c3669b27f2bb1111ac"/>
+<summary>...AIR QUALITY ALERT: MANDATORY WOOD-BURNING BAN IN EFFECT... The South Coast AQMD has extended a mandatory wood-burning ban for residents in the South Coast Air Basin for Tuesday and Wednesday. No-Burn days are declared to protect public health when levels of fine particle air pollution in the region are forecast to be high. Smoke from wood burning can cause health problems. Breathing high</summary>
+<cap:event>Air Quality Alert</cap:event>
+<cap:effective>2023-12-26T13:11:00-08:00</cap:effective>
+<cap:expires>2023-12-28T00:00:00-08:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Unknown</cap:urgency>
+<cap:severity>Unknown</cap:severity>
+<cap:certainty>Unknown</cap:certainty>
+<cap:areaDesc>Orange County Coastal; Orange County Inland; Riverside County Mountains; San Bernardino and Riverside County Valleys-The Inland Empire; San Gorgonio Pass Near Banning</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>006059 006065 006071</value>
+<valueName>UGC</valueName>
+<value>CAZ048 CAZ056 CAZ065 CAZ552 CAZ554</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value></value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=CA1266730D3860.CoastalFloodAdvisory.1266731C7910CA.MTRCFWMTR.ff7b344d6b3d7845a41fc2cac472a684</id>
+<updated>2023-12-26T13:04:00-08:00</updated>
+<published>2023-12-26T13:04:00-08:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Coastal Flood Advisory issued December 26 at 1:04PM PST until December 27 at 1:00PM PST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CA1266730D3860.CoastalFloodAdvisory.1266731C7910CA.MTRCFWMTR.ff7b344d6b3d7845a41fc2cac472a684"/>
+<summary>...COASTAL FLOOD ADVISORY REMAINS IN EFFECT FROM 9 AM TO 1 PM PST WEDNESDAY... ...PREVIOUS COASTAL FLOOD ADVISORY HAS EXPIRED... * WHAT...Minor coastal flooding expected. * WHERE...North Bay Interior Valleys and San Francisco Bay Shoreline Counties.</summary>
+<cap:event>Coastal Flood Advisory</cap:event>
+<cap:effective>2023-12-26T13:04:00-08:00</cap:effective>
+<cap:expires>2023-12-27T13:00:00-08:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>North Bay Interior Valleys; San Francisco Bay Shoreline</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>006001 006041 006055 006081 006097</value>
+<valueName>UGC</valueName>
+<value>CAZ506 CAZ508</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.EXP.KMTR.CF.Y.0022.000000T0000Z-231226T2100Z/
+/O.CON.KMTR.CF.Y.0023.231227T1700Z-231227T2100Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=CA1266730D3860.CoastalFloodAdvisory.1266733976F0CA.MTRCFWMTR.4a1657ca6903458eb731984ce85c8318</id>
+<updated>2023-12-26T13:04:00-08:00</updated>
+<published>2023-12-26T13:04:00-08:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Coastal Flood Advisory issued December 26 at 1:04PM PST until December 29 at 3:00AM PST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CA1266730D3860.CoastalFloodAdvisory.1266733976F0CA.MTRCFWMTR.4a1657ca6903458eb731984ce85c8318"/>
+<summary>...COASTAL FLOOD ADVISORY REMAINS IN EFFECT FROM 9 AM WEDNESDAY TO 3 AM PST FRIDAY... ...HIGH SURF WARNING REMAINS IN EFFECT FROM 3 AM THURSDAY TO 3 AM PST FRIDAY... ...PREVIOUS COASTAL FLOOD ADVISORY HAS EXPIRED... * WHAT...For the Coastal Flood Advisory, minor coastal flooding</summary>
+<cap:event>Coastal Flood Advisory</cap:event>
+<cap:effective>2023-12-26T13:04:00-08:00</cap:effective>
+<cap:expires>2023-12-29T03:00:00-08:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>San Francisco</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>006075</value>
+<valueName>UGC</valueName>
+<value>CAZ006</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.EXP.KMTR.CF.Y.0022.000000T0000Z-231226T2100Z/
+/O.CON.KMTR.SU.W.0004.231228T1100Z-231229T1100Z/
+/O.CON.KMTR.CF.Y.0023.231227T1700Z-231229T1100Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=CA1266730D3860.CoastalFloodAdvisory.1266733976F0CA.MTRCFWMTR.a1b38344c1c31f5dd795d7e2ffadd0f2</id>
+<updated>2023-12-26T13:04:00-08:00</updated>
+<published>2023-12-26T13:04:00-08:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Coastal Flood Advisory issued December 26 at 1:04PM PST until December 29 at 3:00AM PST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CA1266730D3860.CoastalFloodAdvisory.1266733976F0CA.MTRCFWMTR.a1b38344c1c31f5dd795d7e2ffadd0f2"/>
+<summary>...COASTAL FLOOD ADVISORY REMAINS IN EFFECT FROM 9 AM WEDNESDAY TO 3 AM PST FRIDAY... ...HIGH SURF WARNING REMAINS IN EFFECT FROM 3 AM THURSDAY TO 3 AM PST FRIDAY... * WHAT...For the Coastal Flood Advisory, minor coastal flooding expected. For the High Surf Warning, dangerous large breaking</summary>
+<cap:event>Coastal Flood Advisory</cap:event>
+<cap:effective>2023-12-26T13:04:00-08:00</cap:effective>
+<cap:expires>2023-12-29T03:00:00-08:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Coastal North Bay Including Point Reyes National Seashore; Northern Monterey Bay; San Fransisco Peninsula Coast; Southern Monterey Bay and Big Sur Coast</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>006041 006053 006081 006087 006097</value>
+<valueName>UGC</valueName>
+<value>CAZ505 CAZ509 CAZ529 CAZ530</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KMTR.SU.W.0004.231228T1100Z-231229T1100Z/
+/O.CON.KMTR.CF.Y.0023.231227T1700Z-231229T1100Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=CA1266730D3860.HighSurfWarning.1266733976F0CA.MTRCFWMTR.2024f03fbb4053983e7b002d49b3617c</id>
+<updated>2023-12-26T13:04:00-08:00</updated>
+<published>2023-12-26T13:04:00-08:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>High Surf Warning issued December 26 at 1:04PM PST until December 29 at 3:00AM PST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CA1266730D3860.HighSurfWarning.1266733976F0CA.MTRCFWMTR.2024f03fbb4053983e7b002d49b3617c"/>
+<summary>...COASTAL FLOOD ADVISORY REMAINS IN EFFECT FROM 9 AM WEDNESDAY TO 3 AM PST FRIDAY... ...HIGH SURF WARNING REMAINS IN EFFECT FROM 3 AM THURSDAY TO 3 AM PST FRIDAY... ...PREVIOUS COASTAL FLOOD ADVISORY HAS EXPIRED... * WHAT...For the Coastal Flood Advisory, minor coastal flooding</summary>
+<cap:event>High Surf Warning</cap:event>
+<cap:effective>2023-12-26T13:04:00-08:00</cap:effective>
+<cap:expires>2023-12-29T03:00:00-08:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>San Francisco</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>006075</value>
+<valueName>UGC</valueName>
+<value>CAZ006</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.EXP.KMTR.CF.Y.0022.000000T0000Z-231226T2100Z/
+/O.CON.KMTR.SU.W.0004.231228T1100Z-231229T1100Z/
+/O.CON.KMTR.CF.Y.0023.231227T1700Z-231229T1100Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=CA1266730D3860.HighSurfWarning.1266733976F0CA.MTRCFWMTR.8753d4b7feb7be6689eb881c8dd66137</id>
+<updated>2023-12-26T13:04:00-08:00</updated>
+<published>2023-12-26T13:04:00-08:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>High Surf Warning issued December 26 at 1:04PM PST until December 29 at 3:00AM PST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CA1266730D3860.HighSurfWarning.1266733976F0CA.MTRCFWMTR.8753d4b7feb7be6689eb881c8dd66137"/>
+<summary>...COASTAL FLOOD ADVISORY REMAINS IN EFFECT FROM 9 AM WEDNESDAY TO 3 AM PST FRIDAY... ...HIGH SURF WARNING REMAINS IN EFFECT FROM 3 AM THURSDAY TO 3 AM PST FRIDAY... * WHAT...For the Coastal Flood Advisory, minor coastal flooding expected. For the High Surf Warning, dangerous large breaking</summary>
+<cap:event>High Surf Warning</cap:event>
+<cap:effective>2023-12-26T13:04:00-08:00</cap:effective>
+<cap:expires>2023-12-29T03:00:00-08:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Coastal North Bay Including Point Reyes National Seashore; Northern Monterey Bay; San Fransisco Peninsula Coast; Southern Monterey Bay and Big Sur Coast</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>006041 006053 006081 006087 006097</value>
+<valueName>UGC</valueName>
+<value>CAZ505 CAZ509 CAZ529 CAZ530</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KMTR.SU.W.0004.231228T1100Z-231229T1100Z/
+/O.CON.KMTR.CF.Y.0023.231227T1700Z-231229T1100Z/</value>
+</cap:parameter>
+</entry>
+<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=CA1266730D2410.HighSurfAdvisory.1268840949E0CA.SGXCFWSGX.bfd496e0a4e1eccfdd432359ec7314a4</id>
 <updated>2023-12-26T12:52:00-08:00</updated>
 <published>2023-12-26T12:52:00-08:00</published>
@@ -536,173 +1041,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value></value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=CA1266730D1600.CoastalFloodAdvisory.1266731C7910CA.MTRCFWMTR.ff7b344d6b3d7845a41fc2cac472a684</id>
-<updated>2023-12-26T12:16:00-08:00</updated>
-<published>2023-12-26T12:16:00-08:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Coastal Flood Advisory issued December 26 at 12:16PM PST until December 27 at 1:00PM PST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CA1266730D1600.CoastalFloodAdvisory.1266731C7910CA.MTRCFWMTR.ff7b344d6b3d7845a41fc2cac472a684"/>
-<summary>...COASTAL FLOOD ADVISORY REMAINS IN EFFECT UNTIL 1 PM PST THIS AFTERNOON... ...COASTAL FLOOD ADVISORY IN EFFECT FROM 9 AM TO 1 PM PST WEDNESDAY... * WHAT...For the first Coastal Flood Advisory, minor coastal flooding. For the second Coastal Flood Advisory, minor coastal</summary>
-<cap:event>Coastal Flood Advisory</cap:event>
-<cap:effective>2023-12-26T12:16:00-08:00</cap:effective>
-<cap:expires>2023-12-27T13:00:00-08:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>North Bay Interior Valleys; San Francisco Bay Shoreline</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>006001 006041 006055 006081 006097</value>
-<valueName>UGC</valueName>
-<value>CAZ506 CAZ508</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.NEW.KMTR.CF.Y.0023.231227T1700Z-231227T2100Z/
-/O.CON.KMTR.CF.Y.0022.000000T0000Z-231226T2100Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=CA1266730D1600.CoastalFloodAdvisory.1266733976F0CA.MTRCFWMTR.4a1657ca6903458eb731984ce85c8318</id>
-<updated>2023-12-26T12:16:00-08:00</updated>
-<published>2023-12-26T12:16:00-08:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Coastal Flood Advisory issued December 26 at 12:16PM PST until December 29 at 3:00AM PST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CA1266730D1600.CoastalFloodAdvisory.1266733976F0CA.MTRCFWMTR.4a1657ca6903458eb731984ce85c8318"/>
-<summary>...COASTAL FLOOD ADVISORY REMAINS IN EFFECT UNTIL 1 PM PST THIS AFTERNOON... ...COASTAL FLOOD ADVISORY IN EFFECT FROM 9 AM WEDNESDAY TO 3 AM PST FRIDAY... ...HIGH SURF WARNING REMAINS IN EFFECT FROM 3 AM THURSDAY TO 3 AM PST FRIDAY...</summary>
-<cap:event>Coastal Flood Advisory</cap:event>
-<cap:effective>2023-12-26T12:16:00-08:00</cap:effective>
-<cap:expires>2023-12-29T03:00:00-08:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>San Francisco</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>006075</value>
-<valueName>UGC</valueName>
-<value>CAZ006</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.NEW.KMTR.CF.Y.0023.231227T1700Z-231229T1100Z/
-/O.CON.KMTR.SU.W.0004.231228T1100Z-231229T1100Z/
-/O.CON.KMTR.CF.Y.0022.000000T0000Z-231226T2100Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=CA1266730D1600.CoastalFloodAdvisory.1266733976F0CA.MTRCFWMTR.a1b38344c1c31f5dd795d7e2ffadd0f2</id>
-<updated>2023-12-26T12:16:00-08:00</updated>
-<published>2023-12-26T12:16:00-08:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Coastal Flood Advisory issued December 26 at 12:16PM PST until December 29 at 3:00AM PST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CA1266730D1600.CoastalFloodAdvisory.1266733976F0CA.MTRCFWMTR.a1b38344c1c31f5dd795d7e2ffadd0f2"/>
-<summary>...COASTAL FLOOD ADVISORY IN EFFECT FROM 9 AM WEDNESDAY TO 3 AM PST FRIDAY... ...HIGH SURF WARNING REMAINS IN EFFECT FROM 3 AM THURSDAY TO 3 AM PST FRIDAY... * WHAT...For the Coastal Flood Advisory, minor coastal flooding expected. For the High Surf Warning, dangerous large breaking</summary>
-<cap:event>Coastal Flood Advisory</cap:event>
-<cap:effective>2023-12-26T12:16:00-08:00</cap:effective>
-<cap:expires>2023-12-29T03:00:00-08:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Coastal North Bay Including Point Reyes National Seashore; Northern Monterey Bay; San Fransisco Peninsula Coast; Southern Monterey Bay and Big Sur Coast</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>006041 006053 006081 006087 006097</value>
-<valueName>UGC</valueName>
-<value>CAZ505 CAZ509 CAZ529 CAZ530</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.NEW.KMTR.CF.Y.0023.231227T1700Z-231229T1100Z/
-/O.CON.KMTR.SU.W.0004.231228T1100Z-231229T1100Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=CA1266730D1600.HighSurfWarning.1266733976F0CA.MTRCFWMTR.2024f03fbb4053983e7b002d49b3617c</id>
-<updated>2023-12-26T12:16:00-08:00</updated>
-<published>2023-12-26T12:16:00-08:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>High Surf Warning issued December 26 at 12:16PM PST until December 29 at 3:00AM PST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CA1266730D1600.HighSurfWarning.1266733976F0CA.MTRCFWMTR.2024f03fbb4053983e7b002d49b3617c"/>
-<summary>...COASTAL FLOOD ADVISORY REMAINS IN EFFECT UNTIL 1 PM PST THIS AFTERNOON... ...COASTAL FLOOD ADVISORY IN EFFECT FROM 9 AM WEDNESDAY TO 3 AM PST FRIDAY... ...HIGH SURF WARNING REMAINS IN EFFECT FROM 3 AM THURSDAY TO 3 AM PST FRIDAY...</summary>
-<cap:event>High Surf Warning</cap:event>
-<cap:effective>2023-12-26T12:16:00-08:00</cap:effective>
-<cap:expires>2023-12-29T03:00:00-08:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>San Francisco</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>006075</value>
-<valueName>UGC</valueName>
-<value>CAZ006</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.NEW.KMTR.CF.Y.0023.231227T1700Z-231229T1100Z/
-/O.CON.KMTR.SU.W.0004.231228T1100Z-231229T1100Z/
-/O.CON.KMTR.CF.Y.0022.000000T0000Z-231226T2100Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=CA1266730D1600.HighSurfWarning.1266733976F0CA.MTRCFWMTR.8753d4b7feb7be6689eb881c8dd66137</id>
-<updated>2023-12-26T12:16:00-08:00</updated>
-<published>2023-12-26T12:16:00-08:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>High Surf Warning issued December 26 at 12:16PM PST until December 29 at 3:00AM PST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CA1266730D1600.HighSurfWarning.1266733976F0CA.MTRCFWMTR.8753d4b7feb7be6689eb881c8dd66137"/>
-<summary>...COASTAL FLOOD ADVISORY IN EFFECT FROM 9 AM WEDNESDAY TO 3 AM PST FRIDAY... ...HIGH SURF WARNING REMAINS IN EFFECT FROM 3 AM THURSDAY TO 3 AM PST FRIDAY... * WHAT...For the Coastal Flood Advisory, minor coastal flooding expected. For the High Surf Warning, dangerous large breaking</summary>
-<cap:event>High Surf Warning</cap:event>
-<cap:effective>2023-12-26T12:16:00-08:00</cap:effective>
-<cap:expires>2023-12-29T03:00:00-08:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Coastal North Bay Including Point Reyes National Seashore; Northern Monterey Bay; San Fransisco Peninsula Coast; Southern Monterey Bay and Big Sur Coast</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>006041 006053 006081 006087 006097</value>
-<valueName>UGC</valueName>
-<value>CAZ505 CAZ509 CAZ529 CAZ530</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.NEW.KMTR.CF.Y.0023.231227T1700Z-231229T1100Z/
-/O.CON.KMTR.SU.W.0004.231228T1100Z-231229T1100Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -800,321 +1138,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value></value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=CA1266730CA580.BeachHazardsStatement.1266732A5BC0CA.LOXCFWLOX.ff59f1bd3559d0044fc17f34e8ee610a</id>
-<updated>2023-12-26T09:28:00-08:00</updated>
-<published>2023-12-26T09:28:00-08:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Beach Hazards Statement issued December 26 at 9:28AM PST until December 28 at 4:00AM PST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CA1266730CA580.BeachHazardsStatement.1266732A5BC0CA.LOXCFWLOX.ff59f1bd3559d0044fc17f34e8ee610a"/>
-<summary>...BEACH HAZARDS STATEMENT NOW IN EFFECT THROUGH LATE WEDNESDAY NIGHT... ...COASTAL FLOOD ADVISORY NOW IN EFFECT FROM 4 AM THURSDAY TO 10 PM PST SATURDAY... ...HIGH SURF ADVISORY NOW IN EFFECT FROM 4 AM THURSDAY TO 10 PM PST SATURDAY...</summary>
-<cap:event>Beach Hazards Statement</cap:event>
-<cap:effective>2023-12-26T09:28:00-08:00</cap:effective>
-<cap:expires>2023-12-28T04:00:00-08:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Catalina and Santa Barbara Islands; Los Angeles County Beaches; Malibu Coast; Santa Barbara County Southeastern Coast; Santa Barbara County Southwestern Coast</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>006037 006083</value>
-<valueName>UGC</valueName>
-<value>CAZ087 CAZ349 CAZ350 CAZ362 CAZ366</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.EXT.KLOX.CF.Y.0005.231228T1200Z-231231T0600Z/
-/O.EXT.KLOX.SU.Y.0029.231228T1200Z-231231T0600Z/
-/O.EXT.KLOX.BH.S.0021.000000T0000Z-231228T1200Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=CA1266730CA580.HighSurfAdvisory.1266732A5BC0CA.LOXCFWLOX.2ce20993742377f561746412d658bb36</id>
-<updated>2023-12-26T09:28:00-08:00</updated>
-<published>2023-12-26T09:28:00-08:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>High Surf Advisory issued December 26 at 9:28AM PST until December 28 at 4:00AM PST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CA1266730CA580.HighSurfAdvisory.1266732A5BC0CA.LOXCFWLOX.2ce20993742377f561746412d658bb36"/>
-<summary>...HIGH SURF ADVISORY NOW IN EFFECT UNTIL 4 AM PST THURSDAY... ...COASTAL FLOOD WARNING IN EFFECT FROM 4 AM THURSDAY TO 10 PM PST SATURDAY... ...HIGH SURF WARNING NOW IN EFFECT FROM 4 AM THURSDAY TO 10 PM PST SATURDAY... * WHAT...For the High Surf Advisory, large breaking waves of 10 to</summary>
-<cap:event>High Surf Advisory</cap:event>
-<cap:effective>2023-12-26T09:28:00-08:00</cap:effective>
-<cap:expires>2023-12-28T04:00:00-08:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>San Luis Obispo County Beaches; Santa Barbara County Central Coast Beaches</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>006079 006083</value>
-<valueName>UGC</valueName>
-<value>CAZ340 CAZ346</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.UPG.KLOX.CF.Y.0005.231228T1100Z-231230T2300Z/
-/O.NEW.KLOX.CF.W.0001.231228T1200Z-231231T0600Z/
-/O.EXT.KLOX.SU.W.0003.231228T1200Z-231231T0600Z/
-/O.EXT.KLOX.SU.Y.0029.000000T0000Z-231228T1200Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=CA1266730CA580.HighSurfAdvisory.1266732A5BC0CA.LOXCFWLOX.d581b0fd9067f1feef9cb31fdaea979d</id>
-<updated>2023-12-26T09:28:00-08:00</updated>
-<published>2023-12-26T09:28:00-08:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>High Surf Advisory issued December 26 at 9:28AM PST until December 28 at 4:00AM PST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CA1266730CA580.HighSurfAdvisory.1266732A5BC0CA.LOXCFWLOX.d581b0fd9067f1feef9cb31fdaea979d"/>
-<summary>...HIGH SURF ADVISORY NOW IN EFFECT UNTIL 4 AM PST THURSDAY REPLACING BEACH HAZARDS STATEMENT... ...COASTAL FLOOD WARNING IN EFFECT FROM 4 AM THURSDAY TO 10 PM PST SATURDAY... ...HIGH SURF WARNING NOW IN EFFECT FROM 4 AM THURSDAY TO 10 PM PST SATURDAY...</summary>
-<cap:event>High Surf Advisory</cap:event>
-<cap:effective>2023-12-26T09:28:00-08:00</cap:effective>
-<cap:expires>2023-12-28T04:00:00-08:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Ventura County Beaches</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>006111</value>
-<valueName>UGC</valueName>
-<value>CAZ354</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CAN.KLOX.BH.S.0021.000000T0000Z-231226T1900Z/
-/O.UPG.KLOX.CF.Y.0005.231228T1100Z-231230T2300Z/
-/O.NEW.KLOX.CF.W.0001.231228T1200Z-231231T0600Z/
-/O.EXT.KLOX.SU.W.0003.231228T1200Z-231231T0600Z/
-/O.EXT.KLOX.SU.Y.0030.231226T1728Z-231228T1200Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=CA1266730CA580.CoastalFloodAdvisory.126673573820CA.LOXCFWLOX.2de7993a33803f978ad6ce4fbec8dfa7</id>
-<updated>2023-12-26T09:28:00-08:00</updated>
-<published>2023-12-26T09:28:00-08:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Coastal Flood Advisory issued December 26 at 9:28AM PST until December 30 at 10:00PM PST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CA1266730CA580.CoastalFloodAdvisory.126673573820CA.LOXCFWLOX.2de7993a33803f978ad6ce4fbec8dfa7"/>
-<summary>...BEACH HAZARDS STATEMENT NOW IN EFFECT THROUGH LATE WEDNESDAY NIGHT... ...COASTAL FLOOD ADVISORY NOW IN EFFECT FROM 4 AM THURSDAY TO 10 PM PST SATURDAY... ...HIGH SURF ADVISORY NOW IN EFFECT FROM 4 AM THURSDAY TO 10 PM PST SATURDAY...</summary>
-<cap:event>Coastal Flood Advisory</cap:event>
-<cap:effective>2023-12-26T09:28:00-08:00</cap:effective>
-<cap:expires>2023-12-30T22:00:00-08:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Catalina and Santa Barbara Islands; Los Angeles County Beaches; Malibu Coast; Santa Barbara County Southeastern Coast; Santa Barbara County Southwestern Coast</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>006037 006083</value>
-<valueName>UGC</valueName>
-<value>CAZ087 CAZ349 CAZ350 CAZ362 CAZ366</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.EXT.KLOX.CF.Y.0005.231228T1200Z-231231T0600Z/
-/O.EXT.KLOX.SU.Y.0029.231228T1200Z-231231T0600Z/
-/O.EXT.KLOX.BH.S.0021.000000T0000Z-231228T1200Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=CA1266730CA580.CoastalFloodWarning.126673573820CA.LOXCFWLOX.4659e5f74508524f6e23b271822c2192</id>
-<updated>2023-12-26T09:28:00-08:00</updated>
-<published>2023-12-26T09:28:00-08:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Coastal Flood Warning issued December 26 at 9:28AM PST until December 30 at 10:00PM PST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CA1266730CA580.CoastalFloodWarning.126673573820CA.LOXCFWLOX.4659e5f74508524f6e23b271822c2192"/>
-<summary>...HIGH SURF ADVISORY NOW IN EFFECT UNTIL 4 AM PST THURSDAY... ...COASTAL FLOOD WARNING IN EFFECT FROM 4 AM THURSDAY TO 10 PM PST SATURDAY... ...HIGH SURF WARNING NOW IN EFFECT FROM 4 AM THURSDAY TO 10 PM PST SATURDAY... * WHAT...For the High Surf Advisory, large breaking waves of 10 to</summary>
-<cap:event>Coastal Flood Warning</cap:event>
-<cap:effective>2023-12-26T09:28:00-08:00</cap:effective>
-<cap:expires>2023-12-30T22:00:00-08:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>San Luis Obispo County Beaches; Santa Barbara County Central Coast Beaches</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>006079 006083</value>
-<valueName>UGC</valueName>
-<value>CAZ340 CAZ346</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.UPG.KLOX.CF.Y.0005.231228T1100Z-231230T2300Z/
-/O.NEW.KLOX.CF.W.0001.231228T1200Z-231231T0600Z/
-/O.EXT.KLOX.SU.W.0003.231228T1200Z-231231T0600Z/
-/O.EXT.KLOX.SU.Y.0029.000000T0000Z-231228T1200Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=CA1266730CA580.CoastalFloodWarning.126673573820CA.LOXCFWLOX.50f11bc18d1be63be2e65527a25760ae</id>
-<updated>2023-12-26T09:28:00-08:00</updated>
-<published>2023-12-26T09:28:00-08:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Coastal Flood Warning issued December 26 at 9:28AM PST until December 30 at 10:00PM PST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CA1266730CA580.CoastalFloodWarning.126673573820CA.LOXCFWLOX.50f11bc18d1be63be2e65527a25760ae"/>
-<summary>...HIGH SURF ADVISORY NOW IN EFFECT UNTIL 4 AM PST THURSDAY REPLACING BEACH HAZARDS STATEMENT... ...COASTAL FLOOD WARNING IN EFFECT FROM 4 AM THURSDAY TO 10 PM PST SATURDAY... ...HIGH SURF WARNING NOW IN EFFECT FROM 4 AM THURSDAY TO 10 PM PST SATURDAY...</summary>
-<cap:event>Coastal Flood Warning</cap:event>
-<cap:effective>2023-12-26T09:28:00-08:00</cap:effective>
-<cap:expires>2023-12-30T22:00:00-08:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Ventura County Beaches</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>006111</value>
-<valueName>UGC</valueName>
-<value>CAZ354</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CAN.KLOX.BH.S.0021.000000T0000Z-231226T1900Z/
-/O.UPG.KLOX.CF.Y.0005.231228T1100Z-231230T2300Z/
-/O.NEW.KLOX.CF.W.0001.231228T1200Z-231231T0600Z/
-/O.EXT.KLOX.SU.W.0003.231228T1200Z-231231T0600Z/
-/O.EXT.KLOX.SU.Y.0030.231226T1728Z-231228T1200Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=CA1266730CA580.HighSurfAdvisory.126673573820CA.LOXCFWLOX.f74f4f7a157ce3dbb5b091739665208f</id>
-<updated>2023-12-26T09:28:00-08:00</updated>
-<published>2023-12-26T09:28:00-08:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>High Surf Advisory issued December 26 at 9:28AM PST until December 30 at 10:00PM PST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CA1266730CA580.HighSurfAdvisory.126673573820CA.LOXCFWLOX.f74f4f7a157ce3dbb5b091739665208f"/>
-<summary>...BEACH HAZARDS STATEMENT NOW IN EFFECT THROUGH LATE WEDNESDAY NIGHT... ...COASTAL FLOOD ADVISORY NOW IN EFFECT FROM 4 AM THURSDAY TO 10 PM PST SATURDAY... ...HIGH SURF ADVISORY NOW IN EFFECT FROM 4 AM THURSDAY TO 10 PM PST SATURDAY...</summary>
-<cap:event>High Surf Advisory</cap:event>
-<cap:effective>2023-12-26T09:28:00-08:00</cap:effective>
-<cap:expires>2023-12-30T22:00:00-08:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Catalina and Santa Barbara Islands; Los Angeles County Beaches; Malibu Coast; Santa Barbara County Southeastern Coast; Santa Barbara County Southwestern Coast</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>006037 006083</value>
-<valueName>UGC</valueName>
-<value>CAZ087 CAZ349 CAZ350 CAZ362 CAZ366</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.EXT.KLOX.CF.Y.0005.231228T1200Z-231231T0600Z/
-/O.EXT.KLOX.SU.Y.0029.231228T1200Z-231231T0600Z/
-/O.EXT.KLOX.BH.S.0021.000000T0000Z-231228T1200Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=CA1266730CA580.HighSurfWarning.126673573820CA.LOXCFWLOX.e86bd453d06266f0f021f9977249996e</id>
-<updated>2023-12-26T09:28:00-08:00</updated>
-<published>2023-12-26T09:28:00-08:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>High Surf Warning issued December 26 at 9:28AM PST until December 30 at 10:00PM PST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CA1266730CA580.HighSurfWarning.126673573820CA.LOXCFWLOX.e86bd453d06266f0f021f9977249996e"/>
-<summary>...HIGH SURF ADVISORY NOW IN EFFECT UNTIL 4 AM PST THURSDAY... ...COASTAL FLOOD WARNING IN EFFECT FROM 4 AM THURSDAY TO 10 PM PST SATURDAY... ...HIGH SURF WARNING NOW IN EFFECT FROM 4 AM THURSDAY TO 10 PM PST SATURDAY... * WHAT...For the High Surf Advisory, large breaking waves of 10 to</summary>
-<cap:event>High Surf Warning</cap:event>
-<cap:effective>2023-12-26T09:28:00-08:00</cap:effective>
-<cap:expires>2023-12-30T22:00:00-08:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>San Luis Obispo County Beaches; Santa Barbara County Central Coast Beaches</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>006079 006083</value>
-<valueName>UGC</valueName>
-<value>CAZ340 CAZ346</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.UPG.KLOX.CF.Y.0005.231228T1100Z-231230T2300Z/
-/O.NEW.KLOX.CF.W.0001.231228T1200Z-231231T0600Z/
-/O.EXT.KLOX.SU.W.0003.231228T1200Z-231231T0600Z/
-/O.EXT.KLOX.SU.Y.0029.000000T0000Z-231228T1200Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=CA1266730CA580.HighSurfWarning.126673573820CA.LOXCFWLOX.e2c5b22e1756f12e37bee1cb4ff1b5e7</id>
-<updated>2023-12-26T09:28:00-08:00</updated>
-<published>2023-12-26T09:28:00-08:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>High Surf Warning issued December 26 at 9:28AM PST until December 30 at 10:00PM PST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CA1266730CA580.HighSurfWarning.126673573820CA.LOXCFWLOX.e2c5b22e1756f12e37bee1cb4ff1b5e7"/>
-<summary>...HIGH SURF ADVISORY NOW IN EFFECT UNTIL 4 AM PST THURSDAY REPLACING BEACH HAZARDS STATEMENT... ...COASTAL FLOOD WARNING IN EFFECT FROM 4 AM THURSDAY TO 10 PM PST SATURDAY... ...HIGH SURF WARNING NOW IN EFFECT FROM 4 AM THURSDAY TO 10 PM PST SATURDAY...</summary>
-<cap:event>High Surf Warning</cap:event>
-<cap:effective>2023-12-26T09:28:00-08:00</cap:effective>
-<cap:expires>2023-12-30T22:00:00-08:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Ventura County Beaches</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>006111</value>
-<valueName>UGC</valueName>
-<value>CAZ354</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CAN.KLOX.BH.S.0021.000000T0000Z-231226T1900Z/
-/O.UPG.KLOX.CF.Y.0005.231228T1100Z-231230T2300Z/
-/O.NEW.KLOX.CF.W.0001.231228T1200Z-231231T0600Z/
-/O.EXT.KLOX.SU.W.0003.231228T1200Z-231231T0600Z/
-/O.EXT.KLOX.SU.Y.0030.231226T1728Z-231228T1200Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -1373,38 +1396,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <valueName>VTEC</valueName>
 <value>/O.CON.KMFR.HW.W.0010.231227T1200Z-231228T1200Z/
 /O.CON.KMFR.WI.Y.0024.231227T1200Z-231228T1200Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=CA126672FD7F60.AirQualityAlert.1266731A7D40CA.SGXAQASGX.c05d867fd8b228c3669b27f2bb1111ac</id>
-<updated>2023-12-25T10:00:00-08:00</updated>
-<published>2023-12-25T10:00:00-08:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Air Quality Alert issued December 25 at 10:00AM PST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CA126672FD7F60.AirQualityAlert.1266731A7D40CA.SGXAQASGX.c05d867fd8b228c3669b27f2bb1111ac"/>
-<summary>...AIR QUALITY ALERT: MANDATORY WOOD-BURNING BAN IN EFFECT... The South Coast AQMD has extended a mandatory wood-burning ban for residents in the South Coast Air Basin for Monday Dec 25 and Tuesday Dec 26. No-Burn days are declared to protect public health when levels of fine particle air pollution in the region are forecast to be high.</summary>
-<cap:event>Air Quality Alert</cap:event>
-<cap:effective>2023-12-25T10:00:00-08:00</cap:effective>
-<cap:expires>2023-12-27T00:00:00-08:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Unknown</cap:urgency>
-<cap:severity>Unknown</cap:severity>
-<cap:certainty>Unknown</cap:certainty>
-<cap:areaDesc>Orange County Coastal; Orange County Inland; Riverside County Mountains; San Bernardino and Riverside County Valleys-The Inland Empire; San Gorgonio Pass Near Banning</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>006059 006065 006071</value>
-<valueName>UGC</valueName>
-<value>CAZ048 CAZ056 CAZ065 CAZ552 CAZ554</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value></value>
 </cap:parameter>
 </entry>
 <entry>
@@ -1792,6 +1783,38 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=FL1266730D3928.SpecialWeatherStatement.1266731944C0FL.KEYSPSKEY.bdebc2aebd328a204c2ab9a1fd557b16</id>
+<updated>2023-12-26T16:06:00-05:00</updated>
+<published>2023-12-26T16:06:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Special Weather Statement issued December 26 at 4:06PM EST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=FL1266730D3928.SpecialWeatherStatement.1266731944C0FL.KEYSPSKEY.bdebc2aebd328a204c2ab9a1fd557b16"/>
+<summary>...AREAS OF FOG ACROSS THE MIDDLE AND UPPER KEYS... Areas of fog will continue late this afternoon and into the evening hours across the Middle and Upper Keys. Visibilities will be reduced to 2 miles or less, with localized visibilities below 1 mile. Motorists are advised to drive with caution, especially on</summary>
+<cap:event>Special Weather Statement</cap:event>
+<cap:effective>2023-12-26T16:06:00-05:00</cap:effective>
+<cap:expires>2023-12-26T19:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Observed</cap:certainty>
+<cap:areaDesc>Monroe Middle Keys; Monroe Upper Keys</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>012087</value>
+<valueName>UGC</valueName>
+<value>FLZ076 FLZ077</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value></value>
+</cap:parameter>
+</entry>
+<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=FL1266730CF530.RipCurrentStatement.1266731944C0FL.MOBCFWMOB.2464e2a57cdba6d3bbc73176a031e42d</id>
 <updated>2023-12-26T14:32:00-05:00</updated>
 <published>2023-12-26T14:32:00-05:00</published>
@@ -1821,38 +1844,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value>/O.CON.KMOB.RP.S.0039.000000T0000Z-231227T0000Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=FL1266730CEEF0.SpecialWeatherStatement.1266730D4288FL.KEYSPSKEY.bdebc2aebd328a204c2ab9a1fd557b16</id>
-<updated>2023-12-26T14:16:00-05:00</updated>
-<published>2023-12-26T14:16:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Special Weather Statement issued December 26 at 2:16PM EST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=FL1266730CEEF0.SpecialWeatherStatement.1266730D4288FL.KEYSPSKEY.bdebc2aebd328a204c2ab9a1fd557b16"/>
-<summary>Patches of fog, some locally dense, have developed across the Middle and Upper Keys. Visibilities are likely to be reduced to around 1 mile in general, with localized areas experiencing even further reduced visibilities. If lower visibilities materialize, a dense fog advisory will be needed. Motorists are advised to drive with caution as visibilities may</summary>
-<cap:event>Special Weather Statement</cap:event>
-<cap:effective>2023-12-26T14:16:00-05:00</cap:effective>
-<cap:expires>2023-12-26T16:30:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Observed</cap:certainty>
-<cap:areaDesc>Monroe Middle Keys; Monroe Upper Keys</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>012087</value>
-<valueName>UGC</valueName>
-<value>FLZ076 FLZ077</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value></value>
 </cap:parameter>
 </entry>
 <entry>
@@ -2150,39 +2141,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=GA1266730CA83C.FloodWarning.1266730D95BCGA.FFCFLSFFC.d4b79925f5a3b3d4fd1531cc77f84b95</id>
-<updated>2023-12-26T12:35:00-05:00</updated>
-<published>2023-12-26T12:35:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Flood Warning issued December 26 at 12:35PM EST until December 26 at 6:43PM EST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=GA1266730CA83C.FloodWarning.1266730D95BCGA.FFCFLSFFC.d4b79925f5a3b3d4fd1531cc77f84b95"/>
-<summary>...The Flood Warning is extended for the following rivers in Georgia... Big Creek at GA 9 near Cumming affecting Forsyth County. For the Big Creek...including Cumming, Alpharetta, Roswell...Minor flooding is forecast. ...FLOOD WARNING NOW IN EFFECT UNTIL THIS EVENING...</summary>
-<cap:event>Flood Warning</cap:event>
-<cap:effective>2023-12-26T12:35:00-05:00</cap:effective>
-<cap:expires>2023-12-26T18:43:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Forsyth</cap:areaDesc>
-<cap:polygon>34.18,-84.24 34.17,-84.2 34.11,-84.19 34.1,-84.2 34.1,-84.25 34.11,-84.24 34.18,-84.24</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>013117</value>
-<valueName>UGC</valueName>
-<value>GAC117</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.EXT.KFFC.FL.W.0115.000000T0000Z-231226T2343Z/
-/CMGG1.1.ER.231226T0745Z.231226T1515Z.231226T1743Z.UU/</value>
-</cap:parameter>
-</entry>
-<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=GA1266730C2A74.FloodWarning.1266731B6D7CGA.JAXFLSJAX.42717db9d87f9849886ee59414a1818a</id>
 <updated>2023-12-26T09:13:00-05:00</updated>
 <published>2023-12-26T09:13:00-05:00</published>
@@ -2475,6 +2433,38 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=KS1266730D3EA0.WinterWeatherAdvisory.1266731B1980KS.GIDWSWGID.b4b1db9050160f84833935ff3e31564a</id>
+<updated>2023-12-26T15:20:00-06:00</updated>
+<published>2023-12-26T15:20:00-06:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Winter Weather Advisory issued December 26 at 3:20PM CST until December 27 at 6:00AM CST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=KS1266730D3EA0.WinterWeatherAdvisory.1266731B1980KS.GIDWSWGID.b4b1db9050160f84833935ff3e31564a"/>
+<summary>...LINGERING LIGHT SNOW AND/OR FREEZING DRIZZLE... ...WINTER WEATHER ADVISORY REMAINS IN EFFECT UNTIL 6 AM CST WEDNESDAY... * WHAT...Mixed precipitation with a combination of light snow and light freezing drizzle. Additional snow accumulation mainly well under 1 inch. Ice accumulation of a light glaze. North-northwest</summary>
+<cap:event>Winter Weather Advisory</cap:event>
+<cap:effective>2023-12-26T15:20:00-06:00</cap:effective>
+<cap:expires>2023-12-27T06:00:00-06:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Jewell; Mitchell; Osborne; Phillips; Rooks; Smith</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>020089 020123 020141 020147 020163 020183</value>
+<valueName>UGC</valueName>
+<value>KSZ005 KSZ006 KSZ007 KSZ017 KSZ018 KSZ019</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KGID.WW.Y.0014.000000T0000Z-231227T1200Z/</value>
+</cap:parameter>
+</entry>
+<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=KS1266730D1C40.WinterWeatherAdvisory.1266731B1980KS.EAXWSWEAX.725b2a324435d0391b124cad3468fd1d</id>
 <updated>2023-12-26T14:32:00-06:00</updated>
 <published>2023-12-26T14:32:00-06:00</published>
@@ -2665,38 +2655,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value>/O.EXT.KTOP.WW.Y.0008.000000T0000Z-231227T0600Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=KS1266730C0A08.WinterWeatherAdvisory.1266731B1980KS.GIDWSWGID.b4b1db9050160f84833935ff3e31564a</id>
-<updated>2023-12-26T07:30:00-06:00</updated>
-<published>2023-12-26T07:30:00-06:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Winter Weather Advisory issued December 26 at 7:30AM CST until December 27 at 6:00AM CST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=KS1266730C0A08.WinterWeatherAdvisory.1266731B1980KS.GIDWSWGID.b4b1db9050160f84833935ff3e31564a"/>
-<summary>...WINTER WEATHER ADVISORY REMAINS IN EFFECT UNTIL 6 AM CST WEDNESDAY... * WHAT...Mixed precipitation with a combination of light snow and light freezing drizzle. Additional snow accumulations from only a dusting up to perhaps 1 to 2 inches in a few spots. Ice accumulations of a light glaze. North-northwest winds only 10 to</summary>
-<cap:event>Winter Weather Advisory</cap:event>
-<cap:effective>2023-12-26T07:30:00-06:00</cap:effective>
-<cap:expires>2023-12-27T06:00:00-06:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Jewell; Mitchell; Osborne; Phillips; Rooks; Smith</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>020089 020123 020141 020147 020163 020183</value>
-<valueName>UGC</valueName>
-<value>KSZ005 KSZ006 KSZ007 KSZ017 KSZ018 KSZ019</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KGID.WW.Y.0014.000000T0000Z-231227T1200Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -3152,6 +3110,39 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=NC1266730D3A54.FloodAdvisory.1266731B1980NC.GSPFLSGSP.75bbd4d65cecb54548fb4ed5d740e4d3</id>
+<updated>2023-12-26T16:09:00-05:00</updated>
+<published>2023-12-26T16:09:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Flood Advisory issued December 26 at 4:09PM EST until December 27 at 7:00AM EST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=NC1266730D3A54.FloodAdvisory.1266731B1980NC.GSPFLSGSP.75bbd4d65cecb54548fb4ed5d740e4d3"/>
+<summary>...FLOOD ADVISORY IN EFFECT UNTIL 8 PM EST THIS EVENING... * WHAT...Flooding caused by excessive rainfall is expected. * WHERE...Gaston County in Piedmont North Carolina. * WHEN...Until 800 PM EST. * IMPACTS...Minor flooding in low-lying and poor drainage areas. * ADDITIONAL DETAILS...</summary>
+<cap:event>Flood Advisory</cap:event>
+<cap:effective>2023-12-26T16:09:00-05:00</cap:effective>
+<cap:expires>2023-12-27T07:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Gaston</cap:areaDesc>
+<cap:polygon>35.4,-80.96 35.38,-80.98 35.38,-80.99 35.36,-80.98 35.38,-80.96 35.36,-80.92 35.34,-80.98 35.33,-80.98 35.29,-81.01 35.27,-81.01 35.18,-81 35.15,-81.01 35.16,-81.33 35.26,-81.32 35.28,-81.35 35.32,-81.37 35.33,-81.36 35.35,-81.4 35.42,-81.46 35.4,-80.96</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>037071</value>
+<valueName>UGC</valueName>
+<value>NCC071</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.NEW.KGSP.FA.Y.0141.231226T2109Z-231227T0100Z/
+/00000.N.ER.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
+</cap:parameter>
+</entry>
+<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=NC1266730D2348.FloodAdvisory.1266731AF270NC.GSPFLSGSP.09a75bc2656507c7c6d32a24dd964a26</id>
 <updated>2023-12-26T15:50:00-05:00</updated>
 <published>2023-12-26T15:50:00-05:00</published>
@@ -3411,105 +3402,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value>/O.EXT.KGSP.FA.Y.0136.000000T0000Z-231226T2300Z/
-/00000.N.ER.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=NC1266730CE914.FloodAdvisory.1266730D4288NC.RNKFLSRNK.c7814cdcd77d1cafef19171e90ae5692</id>
-<updated>2023-12-26T14:01:00-05:00</updated>
-<published>2023-12-26T14:01:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Flood Advisory issued December 26 at 2:01PM EST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=NC1266730CE914.FloodAdvisory.1266730D4288NC.RNKFLSRNK.c7814cdcd77d1cafef19171e90ae5692"/>
-<summary>...FLOOD ADVISORY NOW IN EFFECT UNTIL 430 PM EST THIS AFTERNOON... * WHAT...Flooding caused by excessive rainfall continues. * WHERE...Portions of North Carolina, including the following counties, Alleghany NC, Ashe, Surry, Watauga and Wilkes and southwest Virginia, including the following counties and independent city, Carroll, City of Galax, Grayson and Wythe.</summary>
-<cap:event>Flood Advisory</cap:event>
-<cap:effective>2023-12-26T14:01:00-05:00</cap:effective>
-<cap:expires>2023-12-26T16:30:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Alleghany; Ashe</cap:areaDesc>
-<cap:polygon>36.12,-81.74 36.2,-81.74 36.44,-81.44 36.69,-81.3 36.75,-81.3 36.76,-81.26 36.83,-81.29 37.04,-81.24 37.03,-81.02 37,-80.97 36.76,-80.86 36.59,-80.82 36.34,-80.83 36.15,-80.9 36.1,-80.94 36.03,-81.09 36.04,-81.2 36,-81.32 36.07,-81.41 36.12,-81.55 36.12,-81.74</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>037005 037009</value>
-<valueName>UGC</valueName>
-<value>NCC005 NCC009</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.EXT.KRNK.FA.Y.0114.000000T0000Z-231226T2130Z/
-/00000.N.ER.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=NC1266730CE914.FloodAdvisory.1266731AF270NC.RNKFLSRNK.42c5841b1c6f10f8503543926d5460c2</id>
-<updated>2023-12-26T14:01:00-05:00</updated>
-<published>2023-12-26T14:01:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Flood Advisory issued December 26 at 2:01PM EST until December 27 at 6:00AM EST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=NC1266730CE914.FloodAdvisory.1266731AF270NC.RNKFLSRNK.42c5841b1c6f10f8503543926d5460c2"/>
-<summary>...FLOOD ADVISORY NOW IN EFFECT UNTIL 430 PM EST THIS AFTERNOON... * WHAT...Flooding caused by excessive rainfall continues. * WHERE...Portions of North Carolina, including the following counties, Alleghany NC, Ashe, Surry, Watauga and Wilkes and southwest Virginia, including the following counties and independent city, Carroll, City of Galax, Grayson and Wythe.</summary>
-<cap:event>Flood Advisory</cap:event>
-<cap:effective>2023-12-26T14:01:00-05:00</cap:effective>
-<cap:expires>2023-12-27T06:00:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Surry</cap:areaDesc>
-<cap:polygon>36.12,-81.74 36.2,-81.74 36.44,-81.44 36.69,-81.3 36.75,-81.3 36.76,-81.26 36.83,-81.29 37.04,-81.24 37.03,-81.02 37,-80.97 36.76,-80.86 36.59,-80.82 36.34,-80.83 36.15,-80.9 36.1,-80.94 36.03,-81.09 36.04,-81.2 36,-81.32 36.07,-81.41 36.12,-81.55 36.12,-81.74</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>037171</value>
-<valueName>UGC</valueName>
-<value>NCC171</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.EXT.KRNK.FA.Y.0114.000000T0000Z-231226T2130Z/
-/00000.N.ER.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=NC1266730CE914.FloodAdvisory.1266732A5BC0NC.RNKFLSRNK.4f42e4b7efe19d8ba6f31cbff0b756fc</id>
-<updated>2023-12-26T14:01:00-05:00</updated>
-<published>2023-12-26T14:01:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Flood Advisory issued December 26 at 2:01PM EST until December 28 at 7:00AM EST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=NC1266730CE914.FloodAdvisory.1266732A5BC0NC.RNKFLSRNK.4f42e4b7efe19d8ba6f31cbff0b756fc"/>
-<summary>...FLOOD ADVISORY NOW IN EFFECT UNTIL 430 PM EST THIS AFTERNOON... * WHAT...Flooding caused by excessive rainfall continues. * WHERE...Portions of North Carolina, including the following counties, Alleghany NC, Ashe, Surry, Watauga and Wilkes and southwest Virginia, including the following counties and independent city, Carroll, City of Galax, Grayson and Wythe.</summary>
-<cap:event>Flood Advisory</cap:event>
-<cap:effective>2023-12-26T14:01:00-05:00</cap:effective>
-<cap:expires>2023-12-28T07:00:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Watauga; Wilkes</cap:areaDesc>
-<cap:polygon>36.12,-81.74 36.2,-81.74 36.44,-81.44 36.69,-81.3 36.75,-81.3 36.76,-81.26 36.83,-81.29 37.04,-81.24 37.03,-81.02 37,-80.97 36.76,-80.86 36.59,-80.82 36.34,-80.83 36.15,-80.9 36.1,-80.94 36.03,-81.09 36.04,-81.2 36,-81.32 36.07,-81.41 36.12,-81.55 36.12,-81.74</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>037189 037193</value>
-<valueName>UGC</valueName>
-<value>NCC189 NCC193</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.EXT.KRNK.FA.Y.0114.000000T0000Z-231226T2130Z/
 /00000.N.ER.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
 </cap:parameter>
 </entry>
@@ -4365,6 +4257,198 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=NE1266730D3EA0.WinterWeatherAdvisory.1266731944C0NE.GIDWSWGID.a365c09903bb15db436e68cad261cc00</id>
+<updated>2023-12-26T15:20:00-06:00</updated>
+<published>2023-12-26T15:20:00-06:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Winter Weather Advisory issued December 26 at 3:20PM CST until December 26 at 6:00PM CST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=NE1266730D3EA0.WinterWeatherAdvisory.1266731944C0NE.GIDWSWGID.a365c09903bb15db436e68cad261cc00"/>
+<summary>...LINGERING LIGHT SNOW AND/OR FREEZING DRIZZLE... ...WINTER WEATHER ADVISORY REMAINS IN EFFECT UNTIL 6 PM CST THIS EVENING... * WHAT...Mainly intermittent light snow. Additional snow accumulation mainly well under 1 inch. North-northeast winds only 10 to 15 MPH.</summary>
+<cap:event>Winter Weather Advisory</cap:event>
+<cap:effective>2023-12-26T15:20:00-06:00</cap:effective>
+<cap:expires>2023-12-26T18:00:00-06:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Clay; Fillmore; Hamilton; Merrick; Nance; Nuckolls; Polk; Thayer; York</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>031035 031059 031081 031121 031125 031129 031143 031169 031185</value>
+<valueName>UGC</valueName>
+<value>NEZ041 NEZ048 NEZ049 NEZ063 NEZ064 NEZ076 NEZ077 NEZ086 NEZ087</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KGID.WW.Y.0014.000000T0000Z-231227T0000Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=NE1266730D3EA0.WinterWeatherAdvisory.1266731B1980NE.GIDWSWGID.7097675a8fc2bb10863596c8dcaac571</id>
+<updated>2023-12-26T15:20:00-06:00</updated>
+<published>2023-12-26T15:20:00-06:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Winter Weather Advisory issued December 26 at 3:20PM CST until December 27 at 6:00AM CST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=NE1266730D3EA0.WinterWeatherAdvisory.1266731B1980NE.GIDWSWGID.7097675a8fc2bb10863596c8dcaac571"/>
+<summary>...LINGERING LIGHT SNOW AND/OR FREEZING DRIZZLE... ...WINTER WEATHER ADVISORY REMAINS IN EFFECT UNTIL 6 AM CST WEDNESDAY... * WHAT...Mixed precipitation with a combination of light snow and light freezing drizzle. Additional snow accumulation mainly well under 1 inch. Ice accumulation of a light glaze. North-northwest</summary>
+<cap:event>Winter Weather Advisory</cap:event>
+<cap:effective>2023-12-26T15:20:00-06:00</cap:effective>
+<cap:expires>2023-12-27T06:00:00-06:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Adams; Buffalo; Dawson; Franklin; Furnas; Gosper; Greeley; Hall; Harlan; Howard; Kearney; Phelps; Sherman; Valley; Webster</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>031001 031019 031047 031061 031065 031073 031077 031079 031083 031093 031099 031137 031163 031175 031181</value>
+<valueName>UGC</valueName>
+<value>NEZ039 NEZ040 NEZ046 NEZ047 NEZ060 NEZ061 NEZ062 NEZ072 NEZ073 NEZ074 NEZ075 NEZ082 NEZ083 NEZ084 NEZ085</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KGID.WW.Y.0014.000000T0000Z-231227T1200Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=NE1266730D3CAC.BlizzardWarning.1266731B1980NE.CYSWSWCYS.fcf3fcb751aa71fbbabd100e3580549e</id>
+<updated>2023-12-26T15:15:00-06:00</updated>
+<published>2023-12-26T15:15:00-06:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Blizzard Warning issued December 26 at 3:15PM CST until December 27 at 6:00AM CST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=NE1266730D3CAC.BlizzardWarning.1266731B1980NE.CYSWSWCYS.fcf3fcb751aa71fbbabd100e3580549e"/>
+<summary>...BLIZZARD WARNING REMAINS IN EFFECT UNTIL 5 AM MST WEDNESDAY... * WHAT...Blizzard conditions expected. Additional snowfall accumulations generally ranging from 1 to 3 inches, with local amounts up to 5 inches possible. Winds gusting as high as 60 MPH. * WHERE...In Wyoming, eastern Laramie County including Interstate</summary>
+<cap:event>Blizzard Warning</cap:event>
+<cap:effective>2023-12-26T15:15:00-06:00</cap:effective>
+<cap:expires>2023-12-27T06:00:00-06:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Severe</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Banner; Cheyenne; Kimball</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>031007 031033 031105</value>
+<valueName>UGC</valueName>
+<value>NEZ020 NEZ054 NEZ055</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KCYS.BZ.W.0004.000000T0000Z-231227T1200Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=NE1266730D3CAC.WinterStormWarning.1266731B1980NE.CYSWSWCYS.7705400eb48ec3d5d6a9faf589597ce2</id>
+<updated>2023-12-26T15:15:00-06:00</updated>
+<published>2023-12-26T15:15:00-06:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Winter Storm Warning issued December 26 at 3:15PM CST until December 27 at 6:00AM CST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=NE1266730D3CAC.WinterStormWarning.1266731B1980NE.CYSWSWCYS.7705400eb48ec3d5d6a9faf589597ce2"/>
+<summary>...WINTER STORM WARNING REMAINS IN EFFECT UNTIL 5 AM MST WEDNESDAY... * WHAT...Heavy snow and near-blizzard conditions expected. Additional snowfall accumulations of 6 to 10 inches possible, mainly along the Pine Ridge. Winds gusting up to 45 MPH. * WHERE...In Wyoming, southern Niobrara County including Lusk</summary>
+<cap:event>Winter Storm Warning</cap:event>
+<cap:effective>2023-12-26T15:15:00-06:00</cap:effective>
+<cap:expires>2023-12-27T06:00:00-06:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Dawes; North Sioux</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>031045 031165</value>
+<valueName>UGC</valueName>
+<value>NEZ002 NEZ095</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KCYS.WS.W.0017.000000T0000Z-231227T1200Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=NE1266730D3CAC.WinterStormWarning.1266731B1980NE.CYSWSWCYS.f312e1566e207ecfa6adabb7a0378e93</id>
+<updated>2023-12-26T15:15:00-06:00</updated>
+<published>2023-12-26T15:15:00-06:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Winter Storm Warning issued December 26 at 3:15PM CST until December 27 at 6:00AM CST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=NE1266730D3CAC.WinterStormWarning.1266731B1980NE.CYSWSWCYS.f312e1566e207ecfa6adabb7a0378e93"/>
+<summary>...WINTER STORM WARNING REMAINS IN EFFECT UNTIL 5 AM MST WEDNESDAY... * WHAT...Heavy snow and blowing snow expected with near-blizzard conditions possible. Additional snowfall accumulations of 1 to 3 inches. Winds gusting as high as 45 MPH. * WHERE...Morrill and Box Butte Counties including Hemingford</summary>
+<cap:event>Winter Storm Warning</cap:event>
+<cap:effective>2023-12-26T15:15:00-06:00</cap:effective>
+<cap:expires>2023-12-27T06:00:00-06:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Box Butte; Morrill</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>031013 031123</value>
+<valueName>UGC</valueName>
+<value>NEZ003 NEZ021</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KCYS.WS.W.0017.000000T0000Z-231227T1200Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=NE1266730D3CAC.WinterWeatherAdvisory.1266731B1980NE.CYSWSWCYS.0f67496e024fdf06128971e85fb55af4</id>
+<updated>2023-12-26T15:15:00-06:00</updated>
+<published>2023-12-26T15:15:00-06:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Winter Weather Advisory issued December 26 at 3:15PM CST until December 27 at 6:00AM CST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=NE1266730D3CAC.WinterWeatherAdvisory.1266731B1980NE.CYSWSWCYS.0f67496e024fdf06128971e85fb55af4"/>
+<summary>...WINTER WEATHER ADVISORY REMAINS IN EFFECT UNTIL 5 AM MST WEDNESDAY... * WHAT...Snow and blowing snow expected. Additional snowfall accumulations generally less than one inch. Winds gusting as high as 55 MPH. * WHERE...Goshen, Scotts Bluff, and southern Sioux Counties.</summary>
+<cap:event>Winter Weather Advisory</cap:event>
+<cap:effective>2023-12-26T15:15:00-06:00</cap:effective>
+<cap:expires>2023-12-27T06:00:00-06:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Scotts Bluff; South Sioux</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>031157 031165</value>
+<valueName>UGC</valueName>
+<value>NEZ019 NEZ096</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KCYS.WW.Y.0038.000000T0000Z-231227T1200Z/</value>
+</cap:parameter>
+</entry>
+<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=NE1266730D1150.BlizzardWarning.1266731A2F20NE.LBFWSWLBF.4ba3c17eec3c6f6e0c156949f13aade1</id>
 <updated>2023-12-26T14:04:00-06:00</updated>
 <published>2023-12-26T14:04:00-06:00</published>
@@ -4657,198 +4741,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=NE1266730C0A08.WinterWeatherAdvisory.1266731944C0NE.GIDWSWGID.a365c09903bb15db436e68cad261cc00</id>
-<updated>2023-12-26T07:30:00-06:00</updated>
-<published>2023-12-26T07:30:00-06:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Winter Weather Advisory issued December 26 at 7:30AM CST until December 26 at 6:00PM CST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=NE1266730C0A08.WinterWeatherAdvisory.1266731944C0NE.GIDWSWGID.a365c09903bb15db436e68cad261cc00"/>
-<summary>...WINTER WEATHER ADVISORY REMAINS IN EFFECT UNTIL 6 PM CST THIS EVENING... * WHAT...Mainly intermittent light snow. Additional snow accumulations from a dusting up to around 1 inch, highest in any possible heavier afternoon snow showers. * WHERE...Portions of central, east central, and south central</summary>
-<cap:event>Winter Weather Advisory</cap:event>
-<cap:effective>2023-12-26T07:30:00-06:00</cap:effective>
-<cap:expires>2023-12-26T18:00:00-06:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Clay; Fillmore; Hamilton; Merrick; Nance; Nuckolls; Polk; Thayer; York</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>031035 031059 031081 031121 031125 031129 031143 031169 031185</value>
-<valueName>UGC</valueName>
-<value>NEZ041 NEZ048 NEZ049 NEZ063 NEZ064 NEZ076 NEZ077 NEZ086 NEZ087</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KGID.WW.Y.0014.000000T0000Z-231227T0000Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=NE1266730C0A08.WinterWeatherAdvisory.1266731B1980NE.GIDWSWGID.7097675a8fc2bb10863596c8dcaac571</id>
-<updated>2023-12-26T07:30:00-06:00</updated>
-<published>2023-12-26T07:30:00-06:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Winter Weather Advisory issued December 26 at 7:30AM CST until December 27 at 6:00AM CST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=NE1266730C0A08.WinterWeatherAdvisory.1266731B1980NE.GIDWSWGID.7097675a8fc2bb10863596c8dcaac571"/>
-<summary>...WINTER WEATHER ADVISORY REMAINS IN EFFECT UNTIL 6 AM CST WEDNESDAY... * WHAT...Mixed precipitation with a combination of light snow and light freezing drizzle. Additional snow accumulations from only a dusting up to perhaps 1 to 2 inches in a few spots. Ice accumulations of a light glaze. North-northwest winds only 10 to</summary>
-<cap:event>Winter Weather Advisory</cap:event>
-<cap:effective>2023-12-26T07:30:00-06:00</cap:effective>
-<cap:expires>2023-12-27T06:00:00-06:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Adams; Buffalo; Dawson; Franklin; Furnas; Gosper; Greeley; Hall; Harlan; Howard; Kearney; Phelps; Sherman; Valley; Webster</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>031001 031019 031047 031061 031065 031073 031077 031079 031083 031093 031099 031137 031163 031175 031181</value>
-<valueName>UGC</valueName>
-<value>NEZ039 NEZ040 NEZ046 NEZ047 NEZ060 NEZ061 NEZ062 NEZ072 NEZ073 NEZ074 NEZ075 NEZ082 NEZ083 NEZ084 NEZ085</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KGID.WW.Y.0014.000000T0000Z-231227T1200Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=NE1266730B6B70.BlizzardWarning.1266731B1980NE.CYSWSWCYS.fcf3fcb751aa71fbbabd100e3580549e</id>
-<updated>2023-12-26T03:24:00-06:00</updated>
-<published>2023-12-26T03:24:00-06:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Blizzard Warning issued December 26 at 3:24AM CST until December 27 at 6:00AM CST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=NE1266730B6B70.BlizzardWarning.1266731B1980NE.CYSWSWCYS.fcf3fcb751aa71fbbabd100e3580549e"/>
-<summary>...BLIZZARD WARNING REMAINS IN EFFECT UNTIL 5 AM MST WEDNESDAY... * WHAT...Blizzard conditions expected. Total snow accumulations of 3 to 7 inches, with higher amounts of 8 to 12 inches possible along the Cheyenne Ridge. Winds gusting as high as 60 mph. * WHERE...In Wyoming, eastern Laramie County including</summary>
-<cap:event>Blizzard Warning</cap:event>
-<cap:effective>2023-12-26T03:24:00-06:00</cap:effective>
-<cap:expires>2023-12-27T06:00:00-06:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Severe</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Banner; Cheyenne; Kimball</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>031007 031033 031105</value>
-<valueName>UGC</valueName>
-<value>NEZ020 NEZ054 NEZ055</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KCYS.BZ.W.0004.000000T0000Z-231227T1200Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=NE1266730B6B70.WinterStormWarning.1266731B1980NE.CYSWSWCYS.7705400eb48ec3d5d6a9faf589597ce2</id>
-<updated>2023-12-26T03:24:00-06:00</updated>
-<published>2023-12-26T03:24:00-06:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Winter Storm Warning issued December 26 at 3:24AM CST until December 27 at 6:00AM CST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=NE1266730B6B70.WinterStormWarning.1266731B1980NE.CYSWSWCYS.7705400eb48ec3d5d6a9faf589597ce2"/>
-<summary>...WINTER STORM WARNING REMAINS IN EFFECT UNTIL 5 AM MST WEDNESDAY... * WHAT...Heavy snow and near-blizzard conditions expected. Total snow accumulations of 8 to 16 inches, with the highest amounts expected along the Pine Ridge. Wind gusts up to 45 MPH. * WHERE...In Wyoming, southern Niobrara County including Lusk</summary>
-<cap:event>Winter Storm Warning</cap:event>
-<cap:effective>2023-12-26T03:24:00-06:00</cap:effective>
-<cap:expires>2023-12-27T06:00:00-06:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Dawes; North Sioux</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>031045 031165</value>
-<valueName>UGC</valueName>
-<value>NEZ002 NEZ095</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KCYS.WS.W.0017.000000T0000Z-231227T1200Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=NE1266730B6B70.WinterStormWarning.1266731B1980NE.CYSWSWCYS.f312e1566e207ecfa6adabb7a0378e93</id>
-<updated>2023-12-26T03:24:00-06:00</updated>
-<published>2023-12-26T03:24:00-06:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Winter Storm Warning issued December 26 at 3:24AM CST until December 27 at 6:00AM CST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=NE1266730B6B70.WinterStormWarning.1266731B1980NE.CYSWSWCYS.f312e1566e207ecfa6adabb7a0378e93"/>
-<summary>...WINTER STORM WARNING REMAINS IN EFFECT UNTIL 5 AM MST WEDNESDAY... * WHAT...Heavy snow and blowing snow expected with near-blizzard conditions possible. Total snow accumulations of 3 to 7 inches possible. Locally higher amounts are possible over northern Box Butte County and eastern Morrill County. Winds gusting as high</summary>
-<cap:event>Winter Storm Warning</cap:event>
-<cap:effective>2023-12-26T03:24:00-06:00</cap:effective>
-<cap:expires>2023-12-27T06:00:00-06:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Box Butte; Morrill</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>031013 031123</value>
-<valueName>UGC</valueName>
-<value>NEZ003 NEZ021</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KCYS.WS.W.0017.000000T0000Z-231227T1200Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=NE1266730B6B70.WinterWeatherAdvisory.1266731B1980NE.CYSWSWCYS.0f67496e024fdf06128971e85fb55af4</id>
-<updated>2023-12-26T03:24:00-06:00</updated>
-<published>2023-12-26T03:24:00-06:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Winter Weather Advisory issued December 26 at 3:24AM CST until December 27 at 6:00AM CST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=NE1266730B6B70.WinterWeatherAdvisory.1266731B1980NE.CYSWSWCYS.0f67496e024fdf06128971e85fb55af4"/>
-<summary>...WINTER WEATHER ADVISORY REMAINS IN EFFECT UNTIL 5 AM MST WEDNESDAY... * WHAT...Snow and blowing snow expected. Total snow accumulations generally up to 1 inch, with amounts greater than 6 inches possible over extreme northern and southern portions of Goshen County. Winds gusting as high as 55 MPH.</summary>
-<cap:event>Winter Weather Advisory</cap:event>
-<cap:effective>2023-12-26T03:24:00-06:00</cap:effective>
-<cap:expires>2023-12-27T06:00:00-06:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Scotts Bluff; South Sioux</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>031157 031165</value>
-<valueName>UGC</valueName>
-<value>NEZ019 NEZ096</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KCYS.WW.Y.0038.000000T0000Z-231227T1200Z/</value>
-</cap:parameter>
-</entry>
-<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=NM1266730C8384.WindAdvisory.1266731944C0NM.ABQNPWABQ.f8fc47eae718398e73c58818e96072a2</id>
 <updated>2023-12-26T09:41:00-07:00</updated>
 <published>2023-12-26T09:41:00-07:00</published>
@@ -4945,6 +4837,72 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=OR1266730D4030.HighWindWarning.126673297160OR.PDTNPWPDT.b7e76ec24c9b6160cddd49b7d1012712</id>
+<updated>2023-12-26T13:24:00-08:00</updated>
+<published>2023-12-26T13:24:00-08:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>High Wind Warning issued December 26 at 1:24PM PST until December 27 at 10:00PM PST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=OR1266730D4030.HighWindWarning.126673297160OR.PDTNPWPDT.b7e76ec24c9b6160cddd49b7d1012712"/>
+<summary>...HIGH WIND WARNING IN EFFECT FROM 10 PM THIS EVENING TO 10 PM PST WEDNESDAY... * WHAT...South winds 25 to 35 mph with gusts up to 65 mph expected, strongest for Ladd and Pyles Canyons. * WHERE...Grande Ronde Valley. * WHEN...From 10 PM this evening to 10 PM PST Wednesday.</summary>
+<cap:event>High Wind Warning</cap:event>
+<cap:effective>2023-12-26T13:24:00-08:00</cap:effective>
+<cap:expires>2023-12-27T22:00:00-08:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Severe</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Grande Ronde Valley</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>041061</value>
+<valueName>UGC</valueName>
+<value>ORZ049</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.UPG.KPDT.HW.A.0003.231227T0900Z-231228T0300Z/
+/O.NEW.KPDT.HW.W.0008.231227T0600Z-231228T0600Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=OR1266730D4030.WindAdvisory.126673297160OR.PDTNPWPDT.2bd47dfe9eb838a5bf03118c41ee1096</id>
+<updated>2023-12-26T13:24:00-08:00</updated>
+<published>2023-12-26T13:24:00-08:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Wind Advisory issued December 26 at 1:24PM PST until December 27 at 10:00PM PST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=OR1266730D4030.WindAdvisory.126673297160OR.PDTNPWPDT.2bd47dfe9eb838a5bf03118c41ee1096"/>
+<summary>...WIND ADVISORY IN EFFECT FROM 10 PM THIS EVENING TO 10 PM PST WEDNESDAY FOR THE BASE OF THE NORTHERN BLUE MOUNTAINS OF OREGON... * WHAT...Southeast winds 25 to 35 mph with gusts up to 55 mph expected for the base of the northern Blue Mountains of Oregon. * WHERE...Foothills of the Northern Blue Mountains of Oregon. * WHEN...From 10 PM this evening to 10 PM PST Wednesday.</summary>
+<cap:event>Wind Advisory</cap:event>
+<cap:effective>2023-12-26T13:24:00-08:00</cap:effective>
+<cap:expires>2023-12-27T22:00:00-08:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Foothills of the Northern Blue Mountains of Oregon</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>041059</value>
+<valueName>UGC</valueName>
+<value>ORZ507</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.UPG.KPDT.HW.A.0003.231227T0900Z-231228T0300Z/
+/O.NEW.KPDT.WI.Y.0041.231227T0600Z-231228T0600Z/</value>
+</cap:parameter>
+</entry>
+<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=OR1266730D22E4.BeachHazardsStatement.12667329BF80OR.PQRCFWPQR.269e421e68e4a9ed2c2c0d79fa912ae1</id>
 <updated>2023-12-26T12:49:00-08:00</updated>
 <published>2023-12-26T12:49:00-08:00</published>
@@ -4974,103 +4932,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value>/O.NEW.KPQR.BH.S.0011.231226T2049Z-231228T0800Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=OR1266730C3244.HighWindWatch.12667328FC30OR.PDTNPWPDT.208895fae07703c1c3f9784dd64c0b3b</id>
-<updated>2023-12-26T06:33:00-08:00</updated>
-<published>2023-12-26T06:33:00-08:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>High Wind Watch issued December 26 at 6:33AM PST until December 27 at 7:00PM PST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=OR1266730C3244.HighWindWatch.12667328FC30OR.PDTNPWPDT.208895fae07703c1c3f9784dd64c0b3b"/>
-<summary>...HIGH WIND WATCH REMAINS IN EFFECT FROM LATE TONIGHT THROUGH WEDNESDAY EVENING... ...WIND ADVISORY IS CANCELLED... * WHAT...South winds 25 to 35 mph with gusts up to 60 mph possible. * WHERE...Grande Ronde Valley.</summary>
-<cap:event>High Wind Watch</cap:event>
-<cap:effective>2023-12-26T06:33:00-08:00</cap:effective>
-<cap:expires>2023-12-27T19:00:00-08:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Future</cap:urgency>
-<cap:severity>Severe</cap:severity>
-<cap:certainty>Possible</cap:certainty>
-<cap:areaDesc>Grande Ronde Valley</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>041061</value>
-<valueName>UGC</valueName>
-<value>ORZ049</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CAN.KPDT.WI.Y.0040.000000T0000Z-231226T1500Z/
-/O.CON.KPDT.HW.A.0003.231227T0900Z-231228T0300Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=OR1266730C3244.HighWindWatch.12667328FC30OR.PDTNPWPDT.56252eebaabe9c85c7877254d529ad07</id>
-<updated>2023-12-26T06:33:00-08:00</updated>
-<published>2023-12-26T06:33:00-08:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>High Wind Watch issued December 26 at 6:33AM PST until December 27 at 7:00PM PST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=OR1266730C3244.HighWindWatch.12667328FC30OR.PDTNPWPDT.56252eebaabe9c85c7877254d529ad07"/>
-<summary>...HIGH WIND WATCH REMAINS IN EFFECT FROM LATE TONIGHT THROUGH WEDNESDAY EVENING... * WHAT...South winds 25 to 35 mph with gusts up to 60 mph possible. * WHERE...Northern Blue Mountains of Oregon. * WHEN...From late tonight through Wednesday evening.</summary>
-<cap:event>High Wind Watch</cap:event>
-<cap:effective>2023-12-26T06:33:00-08:00</cap:effective>
-<cap:expires>2023-12-27T19:00:00-08:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Future</cap:urgency>
-<cap:severity>Severe</cap:severity>
-<cap:certainty>Possible</cap:certainty>
-<cap:areaDesc>Northern Blue Mountains of Oregon</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>041059 041061 041063</value>
-<valueName>UGC</valueName>
-<value>ORZ502</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KPDT.HW.A.0003.231227T0900Z-231228T0300Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=OR1266730C3244.HighWindWatch.12667328FC30OR.PDTNPWPDT.ac92be3e05dd7a592d6535c8857916ab</id>
-<updated>2023-12-26T06:33:00-08:00</updated>
-<published>2023-12-26T06:33:00-08:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>High Wind Watch issued December 26 at 6:33AM PST until December 27 at 7:00PM PST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=OR1266730C3244.HighWindWatch.12667328FC30OR.PDTNPWPDT.ac92be3e05dd7a592d6535c8857916ab"/>
-<summary>...HIGH WIND WATCH REMAINS IN EFFECT FROM LATE TONIGHT THROUGH WEDNESDAY EVENING FOR THE BASE OF THE NORTHERN BLUE MOUNTAINS OF OREGON... * WHAT...Southeast winds 25 to 35 mph with gusts up to 60 mph possible for the base of the northern Blue Mountains of Oregon. * WHERE...Foothills of the Northern Blue Mountains of Oregon.</summary>
-<cap:event>High Wind Watch</cap:event>
-<cap:effective>2023-12-26T06:33:00-08:00</cap:effective>
-<cap:expires>2023-12-27T19:00:00-08:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Future</cap:urgency>
-<cap:severity>Severe</cap:severity>
-<cap:certainty>Possible</cap:certainty>
-<cap:areaDesc>Foothills of the Northern Blue Mountains of Oregon</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>041059</value>
-<valueName>UGC</valueName>
-<value>ORZ507</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KPDT.HW.A.0003.231227T0900Z-231228T0300Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -5398,6 +5259,168 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <valueName>VTEC</valueName>
 <value>/O.CON.KILM.FL.W.0031.000000T0000Z-231228T1800Z/
 /GALS1.1.ER.231219T1245Z.231221T1015Z.231228T0600Z.NO/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=SD1266730D38C4.BlizzardWarning.1266731944C0SD.ABRWSWABR.d2a64552e8315bbe177c5278173dc459</id>
+<updated>2023-12-26T14:05:00-07:00</updated>
+<published>2023-12-26T14:05:00-07:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Blizzard Warning issued December 26 at 2:05PM MST until December 26 at 5:00PM MST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=SD1266730D38C4.BlizzardWarning.1266731944C0SD.ABRWSWABR.d2a64552e8315bbe177c5278173dc459"/>
+<summary>...BLIZZARD WARNING REMAINS IN EFFECT UNTIL 6 PM CST /5 PM MST/ THIS EVENING... ...WINTER WEATHER ADVISORY REMAINS IN EFFECT FROM 6 PM CST /5 PM MST/ THIS EVENING TO MIDNIGHT CST /11 PM MST/ TONIGHT... * WHAT...For the Blizzard Warning, blizzard conditions. Additional snow accumulations of up to one inch. For the Winter Weather</summary>
+<cap:event>Blizzard Warning</cap:event>
+<cap:effective>2023-12-26T14:05:00-07:00</cap:effective>
+<cap:expires>2023-12-26T17:00:00-07:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Severe</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Jones; Lyman; Stanley</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>046075 046085 046117</value>
+<valueName>UGC</valueName>
+<value>SDZ033 SDZ045 SDZ048</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KABR.BZ.W.0006.000000T0000Z-231227T0000Z/
+/O.CON.KABR.WW.Y.0026.231227T0000Z-231227T0600Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=SD1266730D38C4.IceStormWarning.1266731A2F20SD.ABRWSWABR.3446ee1052c15f666cbe9722dde02e04</id>
+<updated>2023-12-26T14:05:00-07:00</updated>
+<published>2023-12-26T14:05:00-07:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Ice Storm Warning issued December 26 at 2:05PM MST until December 26 at 11:00PM MST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=SD1266730D38C4.IceStormWarning.1266731A2F20SD.ABRWSWABR.3446ee1052c15f666cbe9722dde02e04"/>
+<summary>...ICE STORM WARNING REMAINS IN EFFECT UNTIL MIDNIGHT CST /11 PM MST/ TONIGHT... * WHAT...Significant icing. Additional snow accumulations of up to one inch and ice accumulations of up to one tenth of an inch. Total ice accumulations up to one half inch or more. Winds gusting as high as 35 mph.</summary>
+<cap:event>Ice Storm Warning</cap:event>
+<cap:effective>2023-12-26T14:05:00-07:00</cap:effective>
+<cap:expires>2023-12-26T23:00:00-07:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Campbell; Corson; Dewey; McPherson; Walworth</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>046021 046031 046041 046089 046129</value>
+<valueName>UGC</valueName>
+<value>SDZ003 SDZ004 SDZ005 SDZ009 SDZ015</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KABR.IS.W.0002.000000T0000Z-231227T0600Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=SD1266730D38C4.WinterWeatherAdvisory.1266731A2F20SD.ABRWSWABR.e35057bae464d5833bf5c61da55bcc1e</id>
+<updated>2023-12-26T14:05:00-07:00</updated>
+<published>2023-12-26T14:05:00-07:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Winter Weather Advisory issued December 26 at 2:05PM MST until December 26 at 11:00PM MST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=SD1266730D38C4.WinterWeatherAdvisory.1266731A2F20SD.ABRWSWABR.e35057bae464d5833bf5c61da55bcc1e"/>
+<summary>...WINTER WEATHER ADVISORY REMAINS IN EFFECT UNTIL MIDNIGHT CST TONIGHT... * WHAT...Mixed precipitation. Additional snow accumulations of up to one inch and ice accumulations of a light glaze. * WHERE...Edmunds, Potter and Faulk Counties. * WHEN...Until midnight CST tonight.</summary>
+<cap:event>Winter Weather Advisory</cap:event>
+<cap:effective>2023-12-26T14:05:00-07:00</cap:effective>
+<cap:expires>2023-12-26T23:00:00-07:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Edmunds; Faulk; Potter</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>046045 046049 046107</value>
+<valueName>UGC</valueName>
+<value>SDZ010 SDZ016 SDZ017</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KABR.WW.Y.0026.000000T0000Z-231227T0600Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=SD1266730D38C4.WinterWeatherAdvisory.1266731A2F20SD.ABRWSWABR.a16436a57d85eef7cc1eeef35916b715</id>
+<updated>2023-12-26T14:05:00-07:00</updated>
+<published>2023-12-26T14:05:00-07:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Winter Weather Advisory issued December 26 at 2:05PM MST until December 26 at 11:00PM MST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=SD1266730D38C4.WinterWeatherAdvisory.1266731A2F20SD.ABRWSWABR.a16436a57d85eef7cc1eeef35916b715"/>
+<summary>...WINTER WEATHER ADVISORY REMAINS IN EFFECT UNTIL MIDNIGHT CST TONIGHT... * WHAT...Mixed precipitation. Additional snow accumulations of up to one inch and ice accumulations of a light glaze. * WHERE...Sully, Hughes, Hyde, Hand and Buffalo Counties. * WHEN...Until midnight CST tonight.</summary>
+<cap:event>Winter Weather Advisory</cap:event>
+<cap:effective>2023-12-26T14:05:00-07:00</cap:effective>
+<cap:expires>2023-12-26T23:00:00-07:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Buffalo; Hand; Hughes; Hyde; Sully</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>046017 046059 046065 046069 046119</value>
+<valueName>UGC</valueName>
+<value>SDZ034 SDZ035 SDZ036 SDZ037 SDZ051</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KABR.WW.Y.0026.000000T0000Z-231227T0600Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=SD1266730D38C4.WinterWeatherAdvisory.1266731A2F20SD.ABRWSWABR.c5b2bfdbcf25892ce91f5b57890ae30e</id>
+<updated>2023-12-26T14:05:00-07:00</updated>
+<published>2023-12-26T14:05:00-07:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Winter Weather Advisory issued December 26 at 2:05PM MST until December 26 at 11:00PM MST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=SD1266730D38C4.WinterWeatherAdvisory.1266731A2F20SD.ABRWSWABR.c5b2bfdbcf25892ce91f5b57890ae30e"/>
+<summary>...BLIZZARD WARNING REMAINS IN EFFECT UNTIL 6 PM CST /5 PM MST/ THIS EVENING... ...WINTER WEATHER ADVISORY REMAINS IN EFFECT FROM 6 PM CST /5 PM MST/ THIS EVENING TO MIDNIGHT CST /11 PM MST/ TONIGHT... * WHAT...For the Blizzard Warning, blizzard conditions. Additional snow accumulations of up to one inch. For the Winter Weather</summary>
+<cap:event>Winter Weather Advisory</cap:event>
+<cap:effective>2023-12-26T14:05:00-07:00</cap:effective>
+<cap:expires>2023-12-26T23:00:00-07:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Jones; Lyman; Stanley</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>046075 046085 046117</value>
+<valueName>UGC</valueName>
+<value>SDZ033 SDZ045 SDZ048</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KABR.BZ.W.0006.000000T0000Z-231227T0000Z/
+/O.CON.KABR.WW.Y.0026.231227T0000Z-231227T0600Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -5920,268 +5943,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=SD1266730C85DC.BlizzardWarning.1266731944C0SD.ABRWSWABR.d2a64552e8315bbe177c5278173dc459</id>
-<updated>2023-12-26T09:47:00-07:00</updated>
-<published>2023-12-26T09:47:00-07:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Blizzard Warning issued December 26 at 9:47AM MST until December 26 at 5:00PM MST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=SD1266730C85DC.BlizzardWarning.1266731944C0SD.ABRWSWABR.d2a64552e8315bbe177c5278173dc459"/>
-<summary>...BLIZZARD WARNING REMAINS IN EFFECT UNTIL 6 PM CST /5 PM MST/ THIS EVENING... ...WINTER WEATHER ADVISORY IN EFFECT FROM 6 PM CST /5 PM MST/ THIS EVENING TO MIDNIGHT CST /11 PM MST/ TONIGHT... * WHAT...For the Blizzard Warning, blizzard conditions. Additional snow accumulations of up to 3 inches and ice accumulations of a</summary>
-<cap:event>Blizzard Warning</cap:event>
-<cap:effective>2023-12-26T09:47:00-07:00</cap:effective>
-<cap:expires>2023-12-26T17:00:00-07:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Severe</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Jones; Lyman; Stanley</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>046075 046085 046117</value>
-<valueName>UGC</valueName>
-<value>SDZ033 SDZ045 SDZ048</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.EXB.KABR.WW.Y.0026.231227T0000Z-231227T0600Z/
-/O.CON.KABR.BZ.W.0006.000000T0000Z-231227T0000Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=SD1266730C85DC.IceStormWarning.1266731A2F20SD.ABRWSWABR.11ebb4d39506805e7227cd9eeacb775d</id>
-<updated>2023-12-26T09:47:00-07:00</updated>
-<published>2023-12-26T09:47:00-07:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Ice Storm Warning issued December 26 at 9:47AM MST until December 26 at 11:00PM MST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=SD1266730C85DC.IceStormWarning.1266731A2F20SD.ABRWSWABR.11ebb4d39506805e7227cd9eeacb775d"/>
-<summary>...ICE STORM WARNING IN EFFECT UNTIL MIDNIGHT CST /11 PM MST/ TONIGHT... * WHAT...Significant icing. Additional snow accumulations of up to one inch and ice accumulations of up to three tenths of an inch. Winds gusting as high as 45 mph. * WHERE...Corson, Campbell and Walworth Counties.</summary>
-<cap:event>Ice Storm Warning</cap:event>
-<cap:effective>2023-12-26T09:47:00-07:00</cap:effective>
-<cap:expires>2023-12-26T23:00:00-07:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Campbell; Corson; Walworth</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>046021 046031 046129</value>
-<valueName>UGC</valueName>
-<value>SDZ003 SDZ004 SDZ009</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.UPG.KABR.WS.W.0009.000000T0000Z-231227T0000Z/
-/O.EXB.KABR.IS.W.0002.000000T0000Z-231227T0600Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=SD1266730C85DC.IceStormWarning.1266731A2F20SD.ABRWSWABR.8d182ccb9b4223099300ad0f6caf3df7</id>
-<updated>2023-12-26T09:47:00-07:00</updated>
-<published>2023-12-26T09:47:00-07:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Ice Storm Warning issued December 26 at 9:47AM MST until December 26 at 11:00PM MST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=SD1266730C85DC.IceStormWarning.1266731A2F20SD.ABRWSWABR.8d182ccb9b4223099300ad0f6caf3df7"/>
-<summary>...ICE STORM WARNING NOW IN EFFECT UNTIL MIDNIGHT CST TONIGHT... * WHAT...Significant icing. Additional snow accumulations of up to one inch and ice accumulations of up to one tenth of an inch. Total ice accumulation of up to three tenths of an inch. Winds gusting as high as 35 mph. * WHERE...McPherson County.</summary>
-<cap:event>Ice Storm Warning</cap:event>
-<cap:effective>2023-12-26T09:47:00-07:00</cap:effective>
-<cap:expires>2023-12-26T23:00:00-07:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>McPherson</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>046089</value>
-<valueName>UGC</valueName>
-<value>SDZ005</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.EXT.KABR.IS.W.0002.000000T0000Z-231227T0600Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=SD1266730C85DC.IceStormWarning.1266731A2F20SD.ABRWSWABR.67d0de90da115aecb183ca8d20a83915</id>
-<updated>2023-12-26T09:47:00-07:00</updated>
-<published>2023-12-26T09:47:00-07:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Ice Storm Warning issued December 26 at 9:47AM MST until December 26 at 11:00PM MST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=SD1266730C85DC.IceStormWarning.1266731A2F20SD.ABRWSWABR.67d0de90da115aecb183ca8d20a83915"/>
-<summary>...ICE STORM WARNING IN EFFECT UNTIL 11 PM MST THIS EVENING... ...BLIZZARD WARNING IS CANCELLED... * WHAT...Significant icing. Additional snow accumulations of up to two inches and ice accumulations of up to three tenths of an inch. Winds gusting as high as 40 mph. * WHERE...Dewey County.</summary>
-<cap:event>Ice Storm Warning</cap:event>
-<cap:effective>2023-12-26T09:47:00-07:00</cap:effective>
-<cap:expires>2023-12-26T23:00:00-07:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Dewey</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>046041</value>
-<valueName>UGC</valueName>
-<value>SDZ015</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CAN.KABR.BZ.W.0006.000000T0000Z-231227T0000Z/
-/O.EXB.KABR.IS.W.0002.000000T0000Z-231227T0600Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=SD1266730C85DC.WinterWeatherAdvisory.1266731A2F20SD.ABRWSWABR.214985c2810bf049526ceb6e2e40746f</id>
-<updated>2023-12-26T09:47:00-07:00</updated>
-<published>2023-12-26T09:47:00-07:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Winter Weather Advisory issued December 26 at 9:47AM MST until December 26 at 11:00PM MST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=SD1266730C85DC.WinterWeatherAdvisory.1266731A2F20SD.ABRWSWABR.214985c2810bf049526ceb6e2e40746f"/>
-<summary>...WINTER WEATHER ADVISORY IN EFFECT UNTIL MIDNIGHT CST TONIGHT... ...ICE STORM WARNING IS CANCELLED... * WHAT...Mixed precipitation. Additional snow accumulations of up to one inch and ice accumulations of a light glaze. Winds gusting as high as 35 mph. * WHERE...Edmunds and Faulk Counties.</summary>
-<cap:event>Winter Weather Advisory</cap:event>
-<cap:effective>2023-12-26T09:47:00-07:00</cap:effective>
-<cap:expires>2023-12-26T23:00:00-07:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Edmunds; Faulk</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>046045 046049</value>
-<valueName>UGC</valueName>
-<value>SDZ010 SDZ017</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CAN.KABR.IS.W.0002.000000T0000Z-231227T0000Z/
-/O.EXB.KABR.WW.Y.0026.000000T0000Z-231227T0600Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=SD1266730C85DC.WinterWeatherAdvisory.1266731A2F20SD.ABRWSWABR.ce91fc74fc363c23b2729bcdcf2d2c48</id>
-<updated>2023-12-26T09:47:00-07:00</updated>
-<published>2023-12-26T09:47:00-07:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Winter Weather Advisory issued December 26 at 9:47AM MST until December 26 at 11:00PM MST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=SD1266730C85DC.WinterWeatherAdvisory.1266731A2F20SD.ABRWSWABR.ce91fc74fc363c23b2729bcdcf2d2c48"/>
-<summary>...WINTER WEATHER ADVISORY IN EFFECT UNTIL MIDNIGHT CST TONIGHT... ...WINTER STORM WARNING IS CANCELLED... * WHAT...Mixed precipitation. Additional snow accumulations of up to one inch and ice accumulations of a light glaze. Winds gusting as high as 35 mph. * WHERE...Potter County.</summary>
-<cap:event>Winter Weather Advisory</cap:event>
-<cap:effective>2023-12-26T09:47:00-07:00</cap:effective>
-<cap:expires>2023-12-26T23:00:00-07:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Potter</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>046107</value>
-<valueName>UGC</valueName>
-<value>SDZ016</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CAN.KABR.WS.W.0009.000000T0000Z-231227T0000Z/
-/O.EXB.KABR.WW.Y.0026.000000T0000Z-231227T0600Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=SD1266730C85DC.WinterWeatherAdvisory.1266731A2F20SD.ABRWSWABR.a16436a57d85eef7cc1eeef35916b715</id>
-<updated>2023-12-26T09:47:00-07:00</updated>
-<published>2023-12-26T09:47:00-07:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Winter Weather Advisory issued December 26 at 9:47AM MST until December 26 at 11:00PM MST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=SD1266730C85DC.WinterWeatherAdvisory.1266731A2F20SD.ABRWSWABR.a16436a57d85eef7cc1eeef35916b715"/>
-<summary>...WINTER WEATHER ADVISORY NOW IN EFFECT UNTIL MIDNIGHT CST TONIGHT... * WHAT...Mixed precipitation. Additional snow accumulations of up to one inch and ice accumulations of a light glaze. Winds gusting as high as 35 mph. * WHERE...Sully, Hughes, Hyde, Hand and Buffalo Counties.</summary>
-<cap:event>Winter Weather Advisory</cap:event>
-<cap:effective>2023-12-26T09:47:00-07:00</cap:effective>
-<cap:expires>2023-12-26T23:00:00-07:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Buffalo; Hand; Hughes; Hyde; Sully</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>046017 046059 046065 046069 046119</value>
-<valueName>UGC</valueName>
-<value>SDZ034 SDZ035 SDZ036 SDZ037 SDZ051</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.EXT.KABR.WW.Y.0026.000000T0000Z-231227T0600Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=SD1266730C85DC.WinterWeatherAdvisory.1266731A2F20SD.ABRWSWABR.c5b2bfdbcf25892ce91f5b57890ae30e</id>
-<updated>2023-12-26T09:47:00-07:00</updated>
-<published>2023-12-26T09:47:00-07:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Winter Weather Advisory issued December 26 at 9:47AM MST until December 26 at 11:00PM MST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=SD1266730C85DC.WinterWeatherAdvisory.1266731A2F20SD.ABRWSWABR.c5b2bfdbcf25892ce91f5b57890ae30e"/>
-<summary>...BLIZZARD WARNING REMAINS IN EFFECT UNTIL 6 PM CST /5 PM MST/ THIS EVENING... ...WINTER WEATHER ADVISORY IN EFFECT FROM 6 PM CST /5 PM MST/ THIS EVENING TO MIDNIGHT CST /11 PM MST/ TONIGHT... * WHAT...For the Blizzard Warning, blizzard conditions. Additional snow accumulations of up to 3 inches and ice accumulations of a</summary>
-<cap:event>Winter Weather Advisory</cap:event>
-<cap:effective>2023-12-26T09:47:00-07:00</cap:effective>
-<cap:expires>2023-12-26T23:00:00-07:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Jones; Lyman; Stanley</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>046075 046085 046117</value>
-<valueName>UGC</valueName>
-<value>SDZ033 SDZ045 SDZ048</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.EXB.KABR.WW.Y.0026.231227T0000Z-231227T0600Z/
-/O.CON.KABR.BZ.W.0006.000000T0000Z-231227T0000Z/</value>
-</cap:parameter>
-</entry>
-<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=TX1266730D1CA4.FloodWarning.1266732A84C4TX.FWDFLSFWD.02cd1b66049e8d74e47ae26d356bc766</id>
 <updated>2023-12-26T14:33:00-06:00</updated>
 <published>2023-12-26T14:33:00-06:00</published>
@@ -6248,18 +6009,18 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=VA1266730D1CA4.FloodAdvisory.1266730D4288VA.RNKFLSRNK.3ef37bb5be82ff682dcfbf6178bec36f</id>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=VA1266730D1CA4.FloodAdvisory.1266730D90A8VA.RNKFLSRNK.3ef37bb5be82ff682dcfbf6178bec36f</id>
 <updated>2023-12-26T15:33:00-05:00</updated>
 <published>2023-12-26T15:33:00-05:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
 <title>Flood Advisory issued December 26 at 3:33PM EST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=VA1266730D1CA4.FloodAdvisory.1266730D4288VA.RNKFLSRNK.3ef37bb5be82ff682dcfbf6178bec36f"/>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=VA1266730D1CA4.FloodAdvisory.1266730D90A8VA.RNKFLSRNK.3ef37bb5be82ff682dcfbf6178bec36f"/>
 <summary>...FLOOD ADVISORY IN EFFECT UNTIL 630 PM EST THIS EVENING... * WHAT...Flooding caused by excessive rainfall is expected. * WHERE...Portions of North Carolina, including the following counties, Stokes, Surry and Yadkin and southwest Virginia, including the following county, Patrick. * WHEN...Until 630 PM EST.</summary>
 <cap:event>Flood Advisory</cap:event>
 <cap:effective>2023-12-26T15:33:00-05:00</cap:effective>
-<cap:expires>2023-12-26T16:30:00-05:00</cap:expires>
+<cap:expires>2023-12-26T18:30:00-05:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
 <cap:category>Met</cap:category>
@@ -6281,51 +6042,18 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=VA1266730CE914.FloodAdvisory.1266730D4288VA.RNKFLSRNK.230e447505e140ef287a21ba54662e65</id>
-<updated>2023-12-26T14:01:00-05:00</updated>
-<published>2023-12-26T14:01:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Flood Advisory issued December 26 at 2:01PM EST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=VA1266730CE914.FloodAdvisory.1266730D4288VA.RNKFLSRNK.230e447505e140ef287a21ba54662e65"/>
-<summary>...FLOOD ADVISORY NOW IN EFFECT UNTIL 430 PM EST THIS AFTERNOON... * WHAT...Flooding caused by excessive rainfall continues. * WHERE...Portions of North Carolina, including the following counties, Alleghany NC, Ashe, Surry, Watauga and Wilkes and southwest Virginia, including the following counties and independent city, Carroll, City of Galax, Grayson and Wythe.</summary>
-<cap:event>Flood Advisory</cap:event>
-<cap:effective>2023-12-26T14:01:00-05:00</cap:effective>
-<cap:expires>2023-12-26T16:30:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Carroll; City of Galax; Grayson; Wythe</cap:areaDesc>
-<cap:polygon>36.12,-81.74 36.2,-81.74 36.44,-81.44 36.69,-81.3 36.75,-81.3 36.76,-81.26 36.83,-81.29 37.04,-81.24 37.03,-81.02 37,-80.97 36.76,-80.86 36.59,-80.82 36.34,-80.83 36.15,-80.9 36.1,-80.94 36.03,-81.09 36.04,-81.2 36,-81.32 36.07,-81.41 36.12,-81.55 36.12,-81.74</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>051035 051077 051197 051640</value>
-<valueName>UGC</valueName>
-<value>VAC035 VAC077 VAC197 VAC640</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.EXT.KRNK.FA.Y.0114.000000T0000Z-231226T2130Z/
-/00000.N.ER.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=VA1266730C8834.FloodWatch.1266730D4288VA.RNKFFARNK.0851dec2a7504693c0bbdd774a1ec82d</id>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=VA1266730C8834.FloodWatch.1266730D90A8VA.RNKFFARNK.0851dec2a7504693c0bbdd774a1ec82d</id>
 <updated>2023-12-26T11:53:00-05:00</updated>
 <published>2023-12-26T11:53:00-05:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
 <title>Flood Watch issued December 26 at 11:53AM EST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=VA1266730C8834.FloodWatch.1266730D4288VA.RNKFFARNK.0851dec2a7504693c0bbdd774a1ec82d"/>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=VA1266730C8834.FloodWatch.1266730D90A8VA.RNKFFARNK.0851dec2a7504693c0bbdd774a1ec82d"/>
 <summary>...FLOOD WATCH REMAINS IN EFFECT THROUGH WEDNESDAY MORNING... * WHAT...Flooding caused by excessive rainfall continues to be possible. * WHERE...Portions of North Carolina, including the following counties, Surry and Wilkes and southwest Virginia, including the following counties, Carroll, Floyd, Grayson and Patrick.</summary>
 <cap:event>Flood Watch</cap:event>
 <cap:effective>2023-12-26T11:53:00-05:00</cap:effective>
-<cap:expires>2023-12-26T16:30:00-05:00</cap:expires>
+<cap:expires>2023-12-26T18:30:00-05:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
 <cap:category>Met</cap:category>
@@ -6444,6 +6172,358 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=WY1266730D3E3C.HighWindWarning.12667319B9F0WY.CYSNPWCYS.3b364f5e0b101e03cf1f0fc6982db8fa</id>
+<updated>2023-12-26T14:19:00-07:00</updated>
+<published>2023-12-26T14:19:00-07:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>High Wind Warning issued December 26 at 2:19PM MST until December 26 at 8:00PM MST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=WY1266730D3E3C.HighWindWarning.12667319B9F0WY.CYSNPWCYS.3b364f5e0b101e03cf1f0fc6982db8fa"/>
+<summary>...HIGH WIND WARNING REMAINS IN EFFECT UNTIL 8 PM MST THIS EVENING... * WHAT...Northwest winds 30 to 40 mph with gusts up to 60 mph. * WHERE...East Platte County. * WHEN...Until 8 PM MST this evening. * IMPACTS...Mainly to transportation. Strong cross winds will be</summary>
+<cap:event>High Wind Warning</cap:event>
+<cap:effective>2023-12-26T14:19:00-07:00</cap:effective>
+<cap:expires>2023-12-26T20:00:00-07:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Severe</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>East Platte County</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>056031</value>
+<valueName>UGC</valueName>
+<value>WYZ107</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KCYS.HW.W.0051.000000T0000Z-231227T0300Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=WY1266730D3E3C.HighWindWarning.1266731B1980WY.CYSNPWCYS.992c6293c485af08e7c097e90605f5f3</id>
+<updated>2023-12-26T14:19:00-07:00</updated>
+<published>2023-12-26T14:19:00-07:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>High Wind Warning issued December 26 at 2:19PM MST until December 27 at 5:00AM MST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=WY1266730D3E3C.HighWindWarning.1266731B1980WY.CYSNPWCYS.992c6293c485af08e7c097e90605f5f3"/>
+<summary>...HIGH WIND WARNING REMAINS IN EFFECT UNTIL 5 AM MST WEDNESDAY... * WHAT...Northwest winds 35 to 45 mph with gusts up to 60 mph expected. Blizzard conditions possible at times. * WHERE...South Laramie Range including the Interstate 80 Summit between Laramie and Cheyenne. * WHEN...Until 5 AM MST Wednesday.</summary>
+<cap:event>High Wind Warning</cap:event>
+<cap:effective>2023-12-26T14:19:00-07:00</cap:effective>
+<cap:expires>2023-12-27T05:00:00-07:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Severe</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>South Laramie Range</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>056001 056021</value>
+<valueName>UGC</valueName>
+<value>WYZ116</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KCYS.HW.W.0051.000000T0000Z-231227T1200Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=WY1266730D3E3C.HighWindWarning.1266731B1980WY.CYSNPWCYS.5096f90212b4c291cc0cc2330d9c17e3</id>
+<updated>2023-12-26T14:19:00-07:00</updated>
+<published>2023-12-26T14:19:00-07:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>High Wind Warning issued December 26 at 2:19PM MST until December 27 at 5:00AM MST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=WY1266730D3E3C.HighWindWarning.1266731B1980WY.CYSNPWCYS.5096f90212b4c291cc0cc2330d9c17e3"/>
+<summary>...HIGH WIND WARNING REMAINS IN EFFECT UNTIL 5 AM MST WEDNESDAY... * WHAT...Northwest winds 30 to 40 mph with gusts up to 60 mph expected. Areas of blowing and drifting snow. * WHERE...South Laramie Range Foothills and Central Laramie County including Cheyenne. * WHEN...Until 5 AM MST Wednesday.</summary>
+<cap:event>High Wind Warning</cap:event>
+<cap:effective>2023-12-26T14:19:00-07:00</cap:effective>
+<cap:expires>2023-12-27T05:00:00-07:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Severe</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Central Laramie County; South Laramie Range Foothills</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>056021</value>
+<valueName>UGC</valueName>
+<value>WYZ117 WYZ118</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KCYS.HW.W.0051.000000T0000Z-231227T1200Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=WY1266730D3CAC.BlizzardWarning.1266731A2F20WY.CYSWSWCYS.3f38e882c2b65aae281216361160b2b9</id>
+<updated>2023-12-26T14:15:00-07:00</updated>
+<published>2023-12-26T14:15:00-07:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Blizzard Warning issued December 26 at 2:15PM MST until December 26 at 11:00PM MST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=WY1266730D3CAC.BlizzardWarning.1266731A2F20WY.CYSWSWCYS.3f38e882c2b65aae281216361160b2b9"/>
+<summary>...BLIZZARD WARNING REMAINS IN EFFECT UNTIL 11 PM MST THIS EVENING... * WHAT...Blizzard conditions expected. Additional snowfall accumulations of 1 to 3 inches. Winds gusting as high as 60 MPH. * WHERE...South Laramie Range including the Interstate 80 Summit between Laramie and Cheyenne, especially between Mile Markers</summary>
+<cap:event>Blizzard Warning</cap:event>
+<cap:effective>2023-12-26T14:15:00-07:00</cap:effective>
+<cap:expires>2023-12-26T23:00:00-07:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Severe</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>South Laramie Range</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>056001 056021</value>
+<valueName>UGC</valueName>
+<value>WYZ116</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KCYS.BZ.W.0004.000000T0000Z-231227T0600Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=WY1266730D3CAC.BlizzardWarning.1266731B1980WY.CYSWSWCYS.8812419e530064cfc013693f6e172a0e</id>
+<updated>2023-12-26T14:15:00-07:00</updated>
+<published>2023-12-26T14:15:00-07:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Blizzard Warning issued December 26 at 2:15PM MST until December 27 at 5:00AM MST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=WY1266730D3CAC.BlizzardWarning.1266731B1980WY.CYSWSWCYS.8812419e530064cfc013693f6e172a0e"/>
+<summary>...BLIZZARD WARNING REMAINS IN EFFECT UNTIL 5 AM MST WEDNESDAY... * WHAT...Blizzard conditions expected. Additional snowfall accumulations generally ranging from 1 to 3 inches, with local amounts up to 5 inches possible. Winds gusting as high as 60 MPH. * WHERE...In Wyoming, eastern Laramie County including Interstate</summary>
+<cap:event>Blizzard Warning</cap:event>
+<cap:effective>2023-12-26T14:15:00-07:00</cap:effective>
+<cap:expires>2023-12-27T05:00:00-07:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Severe</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>East Laramie County</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>056021</value>
+<valueName>UGC</valueName>
+<value>WYZ119</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KCYS.BZ.W.0004.000000T0000Z-231227T1200Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=WY1266730D3CAC.WinterStormWarning.1266731B1980WY.CYSWSWCYS.b04d6019d056bdb6056dd1be908f4588</id>
+<updated>2023-12-26T14:15:00-07:00</updated>
+<published>2023-12-26T14:15:00-07:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Winter Storm Warning issued December 26 at 2:15PM MST until December 27 at 5:00AM MST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=WY1266730D3CAC.WinterStormWarning.1266731B1980WY.CYSWSWCYS.b04d6019d056bdb6056dd1be908f4588"/>
+<summary>...WINTER STORM WARNING REMAINS IN EFFECT UNTIL 5 AM MST WEDNESDAY... * WHAT...Heavy snow and near-blizzard conditions expected. Additional snowfall accumulations of 6 to 10 inches possible, mainly along the Pine Ridge. Winds gusting up to 45 MPH. * WHERE...In Wyoming, southern Niobrara County including Lusk</summary>
+<cap:event>Winter Storm Warning</cap:event>
+<cap:effective>2023-12-26T14:15:00-07:00</cap:effective>
+<cap:expires>2023-12-27T05:00:00-07:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Niobrara County</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>056027</value>
+<valueName>UGC</valueName>
+<value>WYZ102</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KCYS.WS.W.0017.000000T0000Z-231227T1200Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=WY1266730D3CAC.WinterStormWarning.1266731B1980WY.CYSWSWCYS.b2d28610bbfe15fe29f4f6d701be96ec</id>
+<updated>2023-12-26T14:15:00-07:00</updated>
+<published>2023-12-26T14:15:00-07:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Winter Storm Warning issued December 26 at 2:15PM MST until December 27 at 5:00AM MST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=WY1266730D3CAC.WinterStormWarning.1266731B1980WY.CYSWSWCYS.b2d28610bbfe15fe29f4f6d701be96ec"/>
+<summary>...WINTER STORM WARNING REMAINS IN EFFECT UNTIL 5 AM MST WEDNESDAY... * WHAT...Snow and blowing snow expected. Additional snowfall accumulations generally less than one inch. Winds gusting up to 60 MPH. * WHERE...Central Laramie County, mainly north and east of the</summary>
+<cap:event>Winter Storm Warning</cap:event>
+<cap:effective>2023-12-26T14:15:00-07:00</cap:effective>
+<cap:expires>2023-12-27T05:00:00-07:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Central Laramie County</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>056021</value>
+<valueName>UGC</valueName>
+<value>WYZ118</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KCYS.WS.W.0017.000000T0000Z-231227T1200Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=WY1266730D3CAC.WinterWeatherAdvisory.1266731B1980WY.CYSWSWCYS.2dd56892fcb0ba74b230bc8f5b2e01e0</id>
+<updated>2023-12-26T14:15:00-07:00</updated>
+<published>2023-12-26T14:15:00-07:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Winter Weather Advisory issued December 26 at 2:15PM MST until December 27 at 5:00AM MST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=WY1266730D3CAC.WinterWeatherAdvisory.1266731B1980WY.CYSWSWCYS.2dd56892fcb0ba74b230bc8f5b2e01e0"/>
+<summary>...WINTER WEATHER ADVISORY REMAINS IN EFFECT UNTIL 5 AM MST WEDNESDAY... * WHAT...Snow and blowing snow expected. Additional snowfall accumulations generally less than one inch. Winds gusting as high as 45 MPH. * WHERE...Eastern Converse County.</summary>
+<cap:event>Winter Weather Advisory</cap:event>
+<cap:effective>2023-12-26T14:15:00-07:00</cap:effective>
+<cap:expires>2023-12-27T05:00:00-07:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Converse County Lower Elevations</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>056009</value>
+<valueName>UGC</valueName>
+<value>WYZ101</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KCYS.WW.Y.0038.000000T0000Z-231227T1200Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=WY1266730D3CAC.WinterWeatherAdvisory.1266731B1980WY.CYSWSWCYS.53ab120b8d00ba844a2304dfe3b9809e</id>
+<updated>2023-12-26T14:15:00-07:00</updated>
+<published>2023-12-26T14:15:00-07:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Winter Weather Advisory issued December 26 at 2:15PM MST until December 27 at 5:00AM MST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=WY1266730D3CAC.WinterWeatherAdvisory.1266731B1980WY.CYSWSWCYS.53ab120b8d00ba844a2304dfe3b9809e"/>
+<summary>...WINTER WEATHER ADVISORY REMAINS IN EFFECT UNTIL 5 AM MST WEDNESDAY... * WHAT...Snow and blowing snow expected. Additional snowfall accumulations generally less than one inch. Winds gusting as high as 55 MPH. * WHERE...Platte County in southeast Wyoming.</summary>
+<cap:event>Winter Weather Advisory</cap:event>
+<cap:effective>2023-12-26T14:15:00-07:00</cap:effective>
+<cap:expires>2023-12-27T05:00:00-07:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Central Laramie Range and Southwest Platte County; East Platte County</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>056001 056031</value>
+<valueName>UGC</valueName>
+<value>WYZ106 WYZ107</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KCYS.WW.Y.0038.000000T0000Z-231227T1200Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=WY1266730D3CAC.WinterWeatherAdvisory.1266731B1980WY.CYSWSWCYS.a7c5af5419d68306e1b5f5710a1a2aa8</id>
+<updated>2023-12-26T14:15:00-07:00</updated>
+<published>2023-12-26T14:15:00-07:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Winter Weather Advisory issued December 26 at 2:15PM MST until December 27 at 5:00AM MST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=WY1266730D3CAC.WinterWeatherAdvisory.1266731B1980WY.CYSWSWCYS.a7c5af5419d68306e1b5f5710a1a2aa8"/>
+<summary>...WINTER WEATHER ADVISORY REMAINS IN EFFECT UNTIL 5 AM MST WEDNESDAY... * WHAT...Snow and blowing snow expected. Additional snowfall accumulations generally less than one inch. Winds gusting as high as 55 MPH. * WHERE...Goshen, Scotts Bluff, and southern Sioux Counties.</summary>
+<cap:event>Winter Weather Advisory</cap:event>
+<cap:effective>2023-12-26T14:15:00-07:00</cap:effective>
+<cap:expires>2023-12-27T05:00:00-07:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Goshen County</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>056015</value>
+<valueName>UGC</valueName>
+<value>WYZ108</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KCYS.WW.Y.0038.000000T0000Z-231227T1200Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=WY1266730D3CAC.WinterWeatherAdvisory.1266731B1980WY.CYSWSWCYS.ae9c0e163701034487d146f9d4ffa41a</id>
+<updated>2023-12-26T14:15:00-07:00</updated>
+<published>2023-12-26T14:15:00-07:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Winter Weather Advisory issued December 26 at 2:15PM MST until December 27 at 5:00AM MST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=WY1266730D3CAC.WinterWeatherAdvisory.1266731B1980WY.CYSWSWCYS.ae9c0e163701034487d146f9d4ffa41a"/>
+<summary>...WINTER WEATHER ADVISORY REMAINS IN EFFECT UNTIL 5 AM MST WEDNESDAY... * WHAT...Snow and blowing snow expected. Additional snowfall accumulations generally less than one inch. Winds gusting as high as 60 MPH. * WHERE...South Laramie Range Foothills including Interstate 80</summary>
+<cap:event>Winter Weather Advisory</cap:event>
+<cap:effective>2023-12-26T14:15:00-07:00</cap:effective>
+<cap:expires>2023-12-27T05:00:00-07:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>South Laramie Range Foothills</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>056021</value>
+<valueName>UGC</valueName>
+<value>WYZ117</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KCYS.WW.Y.0038.000000T0000Z-231227T1200Z/</value>
+</cap:parameter>
+</entry>
+<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=WY1266730D12E0.WinterStormWarning.12667319B9F0WY.UNRWSWUNR.1ecd18dbc4cf9c6336caa9944d566cfe</id>
 <updated>2023-12-26T13:08:00-07:00</updated>
 <published>2023-12-26T13:08:00-07:00</published>
@@ -6505,358 +6585,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value>/O.CON.KUNR.WS.W.0014.000000T0000Z-231227T0600Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=WY1266730BE744.HighWindWarning.12667319B9F0WY.CYSNPWCYS.3b364f5e0b101e03cf1f0fc6982db8fa</id>
-<updated>2023-12-26T05:41:00-07:00</updated>
-<published>2023-12-26T05:41:00-07:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>High Wind Warning issued December 26 at 5:41AM MST until December 26 at 8:00PM MST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=WY1266730BE744.HighWindWarning.12667319B9F0WY.CYSNPWCYS.3b364f5e0b101e03cf1f0fc6982db8fa"/>
-<summary>...HIGH WIND WARNING IN EFFECT UNTIL 8 PM MST THIS EVENING... * WHAT...Northwest winds 30 to 40 mph with gusts up to 60 mph. * WHERE...East Platte County. * WHEN...Until 8 PM MST this evening. * IMPACTS...Dangerous travel conditions due to slick roads and reduced visibilities in falling and blowing snow. High winds</summary>
-<cap:event>High Wind Warning</cap:event>
-<cap:effective>2023-12-26T05:41:00-07:00</cap:effective>
-<cap:expires>2023-12-26T20:00:00-07:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Severe</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>East Platte County</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>056031</value>
-<valueName>UGC</valueName>
-<value>WYZ107</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.EXB.KCYS.HW.W.0051.000000T0000Z-231227T0300Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=WY1266730BE744.HighWindWarning.1266731B1980WY.CYSNPWCYS.992c6293c485af08e7c097e90605f5f3</id>
-<updated>2023-12-26T05:41:00-07:00</updated>
-<published>2023-12-26T05:41:00-07:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>High Wind Warning issued December 26 at 5:41AM MST until December 27 at 5:00AM MST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=WY1266730BE744.HighWindWarning.1266731B1980WY.CYSNPWCYS.992c6293c485af08e7c097e90605f5f3"/>
-<summary>...HIGH WIND WARNING REMAINS IN EFFECT UNTIL 5 AM MST WEDNESDAY... * WHAT...Northwest winds 35 to 45 mph with gusts up to 75 mph expected. Blizzard conditions likely. * WHERE...South Laramie Range including the Interstate 80 Summit between Laramie and Cheyenne. * WHEN...Until 5 AM MST Wednesday. The worst conditions are</summary>
-<cap:event>High Wind Warning</cap:event>
-<cap:effective>2023-12-26T05:41:00-07:00</cap:effective>
-<cap:expires>2023-12-27T05:00:00-07:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Severe</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>South Laramie Range</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>056001 056021</value>
-<valueName>UGC</valueName>
-<value>WYZ116</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KCYS.HW.W.0051.000000T0000Z-231227T1200Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=WY1266730BE744.HighWindWarning.1266731B1980WY.CYSNPWCYS.5096f90212b4c291cc0cc2330d9c17e3</id>
-<updated>2023-12-26T05:41:00-07:00</updated>
-<published>2023-12-26T05:41:00-07:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>High Wind Warning issued December 26 at 5:41AM MST until December 27 at 5:00AM MST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=WY1266730BE744.HighWindWarning.1266731B1980WY.CYSNPWCYS.5096f90212b4c291cc0cc2330d9c17e3"/>
-<summary>...HIGH WIND WARNING REMAINS IN EFFECT UNTIL 5 AM MST WEDNESDAY... * WHAT...Northwest winds 30 to 40 mph with gusts up to 70 mph expected. Heavy snow, blowing snow, and near-blizzard conditions possible. * WHERE...South Laramie Range Foothills and Central Laramie County including Cheyenne.</summary>
-<cap:event>High Wind Warning</cap:event>
-<cap:effective>2023-12-26T05:41:00-07:00</cap:effective>
-<cap:expires>2023-12-27T05:00:00-07:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Severe</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Central Laramie County; South Laramie Range Foothills</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>056021</value>
-<valueName>UGC</valueName>
-<value>WYZ117 WYZ118</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KCYS.HW.W.0051.000000T0000Z-231227T1200Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=WY1266730B6B70.BlizzardWarning.1266731A2F20WY.CYSWSWCYS.3f38e882c2b65aae281216361160b2b9</id>
-<updated>2023-12-26T02:24:00-07:00</updated>
-<published>2023-12-26T02:24:00-07:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Blizzard Warning issued December 26 at 2:24AM MST until December 26 at 11:00PM MST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=WY1266730B6B70.BlizzardWarning.1266731A2F20WY.CYSWSWCYS.3f38e882c2b65aae281216361160b2b9"/>
-<summary>...BLIZZARD WARNING REMAINS IN EFFECT UNTIL 11 PM MST THIS EVENING... * WHAT...Blizzard conditions expected. Total snow accumulations of 4 to 8 inches, with locally higher amounts possible. Winds gusting as high as 75 mph. * WHERE...South Laramie Range including the Interstate 80 Summit</summary>
-<cap:event>Blizzard Warning</cap:event>
-<cap:effective>2023-12-26T02:24:00-07:00</cap:effective>
-<cap:expires>2023-12-26T23:00:00-07:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Severe</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>South Laramie Range</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>056001 056021</value>
-<valueName>UGC</valueName>
-<value>WYZ116</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KCYS.BZ.W.0004.000000T0000Z-231227T0600Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=WY1266730B6B70.BlizzardWarning.1266731B1980WY.CYSWSWCYS.8812419e530064cfc013693f6e172a0e</id>
-<updated>2023-12-26T02:24:00-07:00</updated>
-<published>2023-12-26T02:24:00-07:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Blizzard Warning issued December 26 at 2:24AM MST until December 27 at 5:00AM MST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=WY1266730B6B70.BlizzardWarning.1266731B1980WY.CYSWSWCYS.8812419e530064cfc013693f6e172a0e"/>
-<summary>...BLIZZARD WARNING REMAINS IN EFFECT UNTIL 5 AM MST WEDNESDAY... * WHAT...Blizzard conditions expected. Total snow accumulations of 3 to 7 inches, with higher amounts of 8 to 12 inches possible along the Cheyenne Ridge. Winds gusting as high as 60 mph. * WHERE...In Wyoming, eastern Laramie County including</summary>
-<cap:event>Blizzard Warning</cap:event>
-<cap:effective>2023-12-26T02:24:00-07:00</cap:effective>
-<cap:expires>2023-12-27T05:00:00-07:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Severe</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>East Laramie County</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>056021</value>
-<valueName>UGC</valueName>
-<value>WYZ119</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KCYS.BZ.W.0004.000000T0000Z-231227T1200Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=WY1266730B6B70.WinterStormWarning.1266731B1980WY.CYSWSWCYS.b04d6019d056bdb6056dd1be908f4588</id>
-<updated>2023-12-26T02:24:00-07:00</updated>
-<published>2023-12-26T02:24:00-07:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Winter Storm Warning issued December 26 at 2:24AM MST until December 27 at 5:00AM MST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=WY1266730B6B70.WinterStormWarning.1266731B1980WY.CYSWSWCYS.b04d6019d056bdb6056dd1be908f4588"/>
-<summary>...WINTER STORM WARNING REMAINS IN EFFECT UNTIL 5 AM MST WEDNESDAY... * WHAT...Heavy snow and near-blizzard conditions expected. Total snow accumulations of 8 to 16 inches, with the highest amounts expected along the Pine Ridge. Wind gusts up to 45 MPH. * WHERE...In Wyoming, southern Niobrara County including Lusk</summary>
-<cap:event>Winter Storm Warning</cap:event>
-<cap:effective>2023-12-26T02:24:00-07:00</cap:effective>
-<cap:expires>2023-12-27T05:00:00-07:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Niobrara County</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>056027</value>
-<valueName>UGC</valueName>
-<value>WYZ102</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KCYS.WS.W.0017.000000T0000Z-231227T1200Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=WY1266730B6B70.WinterStormWarning.1266731B1980WY.CYSWSWCYS.b2d28610bbfe15fe29f4f6d701be96ec</id>
-<updated>2023-12-26T02:24:00-07:00</updated>
-<published>2023-12-26T02:24:00-07:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Winter Storm Warning issued December 26 at 2:24AM MST until December 27 at 5:00AM MST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=WY1266730B6B70.WinterStormWarning.1266731B1980WY.CYSWSWCYS.b2d28610bbfe15fe29f4f6d701be96ec"/>
-<summary>...WINTER STORM WARNING REMAINS IN EFFECT UNTIL 5 AM MST WEDNESDAY... * WHAT...Heavy snow and blowing snow expected, with near- blizzard conditions possible. Total snowfall accumulations of 2 to 8 inches expected. A sharp gradient in snowfall will exist across Interstate 80, with the lowest amounts expected</summary>
-<cap:event>Winter Storm Warning</cap:event>
-<cap:effective>2023-12-26T02:24:00-07:00</cap:effective>
-<cap:expires>2023-12-27T05:00:00-07:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Central Laramie County</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>056021</value>
-<valueName>UGC</valueName>
-<value>WYZ118</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KCYS.WS.W.0017.000000T0000Z-231227T1200Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=WY1266730B6B70.WinterWeatherAdvisory.1266731B1980WY.CYSWSWCYS.2dd56892fcb0ba74b230bc8f5b2e01e0</id>
-<updated>2023-12-26T02:24:00-07:00</updated>
-<published>2023-12-26T02:24:00-07:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Winter Weather Advisory issued December 26 at 2:24AM MST until December 27 at 5:00AM MST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=WY1266730B6B70.WinterWeatherAdvisory.1266731B1980WY.CYSWSWCYS.2dd56892fcb0ba74b230bc8f5b2e01e0"/>
-<summary>...WINTER WEATHER ADVISORY REMAINS IN EFFECT UNTIL 5 AM MST WEDNESDAY... * WHAT...Snow and blowing snow expected. Total snow accumulations of 1 to 3 inches, with local amounts in excess of 6 inches possible along the Pine Ridge in far southeast Converse County. Winds gusting as high as 45 mph.</summary>
-<cap:event>Winter Weather Advisory</cap:event>
-<cap:effective>2023-12-26T02:24:00-07:00</cap:effective>
-<cap:expires>2023-12-27T05:00:00-07:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Converse County Lower Elevations</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>056009</value>
-<valueName>UGC</valueName>
-<value>WYZ101</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KCYS.WW.Y.0038.000000T0000Z-231227T1200Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=WY1266730B6B70.WinterWeatherAdvisory.1266731B1980WY.CYSWSWCYS.53ab120b8d00ba844a2304dfe3b9809e</id>
-<updated>2023-12-26T02:24:00-07:00</updated>
-<published>2023-12-26T02:24:00-07:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Winter Weather Advisory issued December 26 at 2:24AM MST until December 27 at 5:00AM MST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=WY1266730B6B70.WinterWeatherAdvisory.1266731B1980WY.CYSWSWCYS.53ab120b8d00ba844a2304dfe3b9809e"/>
-<summary>...WINTER WEATHER ADVISORY REMAINS IN EFFECT UNTIL 5 AM MST WEDNESDAY... * WHAT...Snow and blowing snow expected. Total snow accumulations generally less than one inch, with local amounts in excess of 6 inches possible over extreme northern and southern portions of Platte County. Winds gusting as high as</summary>
-<cap:event>Winter Weather Advisory</cap:event>
-<cap:effective>2023-12-26T02:24:00-07:00</cap:effective>
-<cap:expires>2023-12-27T05:00:00-07:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Central Laramie Range and Southwest Platte County; East Platte County</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>056001 056031</value>
-<valueName>UGC</valueName>
-<value>WYZ106 WYZ107</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KCYS.WW.Y.0038.000000T0000Z-231227T1200Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=WY1266730B6B70.WinterWeatherAdvisory.1266731B1980WY.CYSWSWCYS.a7c5af5419d68306e1b5f5710a1a2aa8</id>
-<updated>2023-12-26T02:24:00-07:00</updated>
-<published>2023-12-26T02:24:00-07:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Winter Weather Advisory issued December 26 at 2:24AM MST until December 27 at 5:00AM MST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=WY1266730B6B70.WinterWeatherAdvisory.1266731B1980WY.CYSWSWCYS.a7c5af5419d68306e1b5f5710a1a2aa8"/>
-<summary>...WINTER WEATHER ADVISORY REMAINS IN EFFECT UNTIL 5 AM MST WEDNESDAY... * WHAT...Snow and blowing snow expected. Total snow accumulations generally up to 1 inch, with amounts greater than 6 inches possible over extreme northern and southern portions of Goshen County. Winds gusting as high as 55 MPH.</summary>
-<cap:event>Winter Weather Advisory</cap:event>
-<cap:effective>2023-12-26T02:24:00-07:00</cap:effective>
-<cap:expires>2023-12-27T05:00:00-07:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Goshen County</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>056015</value>
-<valueName>UGC</valueName>
-<value>WYZ108</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KCYS.WW.Y.0038.000000T0000Z-231227T1200Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=WY1266730B6B70.WinterWeatherAdvisory.1266731B1980WY.CYSWSWCYS.ae9c0e163701034487d146f9d4ffa41a</id>
-<updated>2023-12-26T02:24:00-07:00</updated>
-<published>2023-12-26T02:24:00-07:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Winter Weather Advisory issued December 26 at 2:24AM MST until December 27 at 5:00AM MST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=WY1266730B6B70.WinterWeatherAdvisory.1266731B1980WY.CYSWSWCYS.ae9c0e163701034487d146f9d4ffa41a"/>
-<summary>...WINTER WEATHER ADVISORY REMAINS IN EFFECT UNTIL 5 AM MST WEDNESDAY... * WHAT...Snow and blowing snow expected. Total snow accumulations generally 1 to 3 inches with 4 to 8 inches possible over extreme northwestern Laramie County. Winds gusting as high as 70 mph.</summary>
-<cap:event>Winter Weather Advisory</cap:event>
-<cap:effective>2023-12-26T02:24:00-07:00</cap:effective>
-<cap:expires>2023-12-27T05:00:00-07:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>South Laramie Range Foothills</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>056021</value>
-<valueName>UGC</valueName>
-<value>WYZ117</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KCYS.WW.Y.0038.000000T0000Z-231227T1200Z/</value>
 </cap:parameter>
 </entry>
 </feed>
