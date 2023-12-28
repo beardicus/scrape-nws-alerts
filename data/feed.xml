@@ -16,16 +16,48 @@ xmlns = 'http://www.w3.org/2005/Atom'
 xmlns:cap = 'urn:oasis:names:tc:emergency:cap:1.1'
 xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 >
-<!-- http-date = Thu, 28 Dec 2023 07:09:00 GMT -->
+<!-- http-date = Thu, 28 Dec 2023 08:01:00 GMT -->
 <id>https://alerts.weather.gov/cap/us.php?x=0</id>
 <logo>http://alerts.weather.gov/images/xml_logo.gif</logo>
 <generator>NWS CAP Server</generator>
-<updated>2023-12-28T02:09:00-05:00</updated>
+<updated>2023-12-28T03:01:00-05:00</updated>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
 <title>Current Watches, Warnings and Advisories for the United States Issued by the National Weather Service</title>
 <link href="https://alerts.weather.gov/cap/us.php?x=0"/>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=AK12667329A9A0.WinterWeatherAdvisory.126673399E00AK.AJKWSWAJK.682599683d00523f13cc0bb3d62cbe10</id>
+<updated>2023-12-27T22:44:00-09:00</updated>
+<published>2023-12-27T22:44:00-09:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Winter Weather Advisory issued December 27 at 10:44PM AKST until December 29 at 3:00AM AKST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=AK12667329A9A0.WinterWeatherAdvisory.126673399E00AK.AJKWSWAJK.682599683d00523f13cc0bb3d62cbe10"/>
+<summary>...SNOW RETURNS TO HAINES AND THE HIGHWAY... .Light to moderate snow will return to Haines late tonight as a surface low lifts north through the Panhandle. Snow is expected through Thursday night before changing to rain Friday. ...WINTER WEATHER ADVISORY REMAINS IN EFFECT FROM 3 AM THURSDAY TO 3 AM AKST FRIDAY...</summary>
+<cap:event>Winter Weather Advisory</cap:event>
+<cap:effective>2023-12-27T22:44:00-09:00</cap:effective>
+<cap:expires>2023-12-29T03:00:00-09:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Haines Borough and Klukwan</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>002100</value>
+<valueName>UGC</valueName>
+<value>AKZ319</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.PAJK.WW.Y.0023.231228T1200Z-231229T1200Z/</value>
+</cap:parameter>
+</entry>
 <entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=AK12667329133C.BlizzardWarning.12667329E690AK.AFCWSWALU.6aa5a1292064ae2d04e496df4d81d682</id>
 <updated>2023-12-27T18:59:00-09:00</updated>
@@ -56,38 +88,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value>/O.CON.PAFC.BZ.W.0023.000000T0000Z-231228T0900Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=AK126673288A20.WinterWeatherAdvisory.126673399E00AK.AJKWSWAJK.682599683d00523f13cc0bb3d62cbe10</id>
-<updated>2023-12-27T15:08:00-09:00</updated>
-<published>2023-12-27T15:08:00-09:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Winter Weather Advisory issued December 27 at 3:08PM AKST until December 29 at 3:00AM AKST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=AK126673288A20.WinterWeatherAdvisory.126673399E00AK.AJKWSWAJK.682599683d00523f13cc0bb3d62cbe10"/>
-<summary>...SNOW RETURNS TO HAINES AND THE HIGHWAY... .Light to moderate snow will return to Haines late tonight as a surface low lifts north through the Panhandle. Snow is expected through Thursday night before changing to rain Friday. ...WINTER WEATHER ADVISORY IN EFFECT FROM 3 AM THURSDAY TO 3 AM AKST FRIDAY...</summary>
-<cap:event>Winter Weather Advisory</cap:event>
-<cap:effective>2023-12-27T15:08:00-09:00</cap:effective>
-<cap:expires>2023-12-29T03:00:00-09:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Haines Borough and Klukwan</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>002100</value>
-<valueName>UGC</valueName>
-<value>AKZ319</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.NEW.PAJK.WW.Y.0023.231228T1200Z-231229T1200Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -853,35 +853,36 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=CA1266730CA648.AirQualityAlert.12667329BF80CA.PSRAQAPSR.0b1db86c0270f712db235c821d1952b4</id>
-<updated>2023-12-26T09:30:00-08:00</updated>
-<published>2023-12-26T09:30:00-08:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=CT12667329BFE4.FloodAdvisory.1266732A34B0CT.OKXFLSOKX.2f6ae3a7171155537b00b00ce81f5039</id>
+<updated>2023-12-28T03:01:00-05:00</updated>
+<published>2023-12-28T03:01:00-05:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Air Quality Alert issued December 26 at 9:30AM PST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CA1266730CA648.AirQualityAlert.12667329BF80CA.PSRAQAPSR.0b1db86c0270f712db235c821d1952b4"/>
-<summary>...AIR QUALITY ALERT: MANDATORY WOOD BURNING CURTAILMENT IN EFFECT... The Imperial County APCD has declared a mandatory wood burning curtailment for residents within the Calexico area for Wednesday, December 27. The declaration of a Mandatory curtailment, when forecast indicate elevated levels of fine particulate air pollution in the region, is</summary>
-<cap:event>Air Quality Alert</cap:event>
-<cap:effective>2023-12-26T09:30:00-08:00</cap:effective>
-<cap:expires>2023-12-28T00:00:00-08:00</cap:expires>
+<title>Flood Advisory issued December 28 at 3:01AM EST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CT12667329BFE4.FloodAdvisory.1266732A34B0CT.OKXFLSOKX.2f6ae3a7171155537b00b00ce81f5039"/>
+<summary>...FLOOD ADVISORY IN EFFECT UNTIL 6 AM EST EARLY THIS MORNING... * WHAT...Urban and small stream flooding caused by excessive rainfall is expected. * WHERE...Portions of southern Connecticut, including the following county, Fairfield, northeast New Jersey, including the following counties, Bergen, Essex, Hudson and Union, and southeast New York,</summary>
+<cap:event>Flood Advisory</cap:event>
+<cap:effective>2023-12-28T03:01:00-05:00</cap:effective>
+<cap:expires>2023-12-28T06:00:00-05:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
 <cap:category>Met</cap:category>
-<cap:urgency>Unknown</cap:urgency>
-<cap:severity>Unknown</cap:severity>
-<cap:certainty>Unknown</cap:certainty>
-<cap:areaDesc>Imperial Valley</cap:areaDesc>
-<cap:polygon></cap:polygon>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Fairfield</cap:areaDesc>
+<cap:polygon>40.59,-74.3 40.82,-74.12 41.01,-74.06 41.52,-73.6 41.53,-73.53 41.67,-73.51 41.66,-73.49 41.49,-73.44 41.45,-73.28 41.26,-73.24 41.03,-73.42 40.93,-73.74 40.86,-73.75 40.85,-73.75 40.92,-73.5 40.58,-73.52 40.53,-73.94 40.6,-74.04 40.49,-74.27 40.59,-74.2 40.59,-74.3</cap:polygon>
 <cap:geocode>
 <valueName>FIPS6</valueName>
-<value>006025</value>
+<value>009001</value>
 <valueName>UGC</valueName>
-<value>CAZ567</value>
+<value>CTC001</value>
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
-<value></value>
+<value>/O.NEW.KOKX.FA.Y.0254.231228T0801Z-231228T1100Z/
+/00000.N.ER.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -2322,6 +2323,203 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=NJ12667329BFE4.FloodAdvisory.1266732A34B0NJ.OKXFLSOKX.e1b897c67fcefe2e8b8c6aa0bee77256</id>
+<updated>2023-12-28T03:01:00-05:00</updated>
+<published>2023-12-28T03:01:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Flood Advisory issued December 28 at 3:01AM EST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=NJ12667329BFE4.FloodAdvisory.1266732A34B0NJ.OKXFLSOKX.e1b897c67fcefe2e8b8c6aa0bee77256"/>
+<summary>...FLOOD ADVISORY IN EFFECT UNTIL 6 AM EST EARLY THIS MORNING... * WHAT...Urban and small stream flooding caused by excessive rainfall is expected. * WHERE...Portions of southern Connecticut, including the following county, Fairfield, northeast New Jersey, including the following counties, Bergen, Essex, Hudson and Union, and southeast New York,</summary>
+<cap:event>Flood Advisory</cap:event>
+<cap:effective>2023-12-28T03:01:00-05:00</cap:effective>
+<cap:expires>2023-12-28T06:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Bergen; Essex; Hudson</cap:areaDesc>
+<cap:polygon>40.59,-74.3 40.82,-74.12 41.01,-74.06 41.52,-73.6 41.53,-73.53 41.67,-73.51 41.66,-73.49 41.49,-73.44 41.45,-73.28 41.26,-73.24 41.03,-73.42 40.93,-73.74 40.86,-73.75 40.85,-73.75 40.92,-73.5 40.58,-73.52 40.53,-73.94 40.6,-74.04 40.49,-74.27 40.59,-74.2 40.59,-74.3</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>034003 034013 034017</value>
+<valueName>UGC</valueName>
+<value>NJC003 NJC013 NJC017</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.NEW.KOKX.FA.Y.0254.231228T0801Z-231228T1100Z/
+/00000.N.ER.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=NJ12667329BFE4.FloodAdvisory.1266732B51D8NJ.OKXFLSOKX.d671239a8898ff954a252e59ec0e9a5b</id>
+<updated>2023-12-28T03:01:00-05:00</updated>
+<published>2023-12-28T03:01:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Flood Advisory issued December 28 at 3:01AM EST until December 28 at 1:30PM EST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=NJ12667329BFE4.FloodAdvisory.1266732B51D8NJ.OKXFLSOKX.d671239a8898ff954a252e59ec0e9a5b"/>
+<summary>...FLOOD ADVISORY IN EFFECT UNTIL 6 AM EST EARLY THIS MORNING... * WHAT...Urban and small stream flooding caused by excessive rainfall is expected. * WHERE...Portions of southern Connecticut, including the following county, Fairfield, northeast New Jersey, including the following counties, Bergen, Essex, Hudson and Union, and southeast New York,</summary>
+<cap:event>Flood Advisory</cap:event>
+<cap:effective>2023-12-28T03:01:00-05:00</cap:effective>
+<cap:expires>2023-12-28T13:30:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Union</cap:areaDesc>
+<cap:polygon>40.59,-74.3 40.82,-74.12 41.01,-74.06 41.52,-73.6 41.53,-73.53 41.67,-73.51 41.66,-73.49 41.49,-73.44 41.45,-73.28 41.26,-73.24 41.03,-73.42 40.93,-73.74 40.86,-73.75 40.85,-73.75 40.92,-73.5 40.58,-73.52 40.53,-73.94 40.6,-74.04 40.49,-74.27 40.59,-74.2 40.59,-74.3</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>034039</value>
+<valueName>UGC</valueName>
+<value>NJC039</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.NEW.KOKX.FA.Y.0254.231228T0801Z-231228T1100Z/
+/00000.N.ER.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=NJ12667329AB30.FloodWarning.1266732B51D8NJ.PHIFLWPHI.b160f3fed92d1217ffb12487ac191260</id>
+<updated>2023-12-28T02:48:00-05:00</updated>
+<published>2023-12-28T02:48:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Flood Warning issued December 28 at 2:48AM EST until December 28 at 1:30PM EST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=NJ12667329AB30.FloodWarning.1266732B51D8NJ.PHIFLWPHI.b160f3fed92d1217ffb12487ac191260"/>
+<summary>...FLOOD WARNING IN EFFECT UNTIL 845 AM EST THIS MORNING... * WHAT...Flooding caused by excessive rainfall is expected. * WHERE...A portion of northern New Jersey, including the following county, Morris. * WHEN...Until 845 AM EST. * IMPACTS...Flooding of rivers, creeks, streams, and other low-lying</summary>
+<cap:event>Flood Warning</cap:event>
+<cap:effective>2023-12-28T02:48:00-05:00</cap:effective>
+<cap:expires>2023-12-28T13:30:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Morris</cap:areaDesc>
+<cap:polygon>40.83,-74.49 40.79,-74.49 40.79,-74.4 40.83,-74.35 40.86,-74.37 40.83,-74.49</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>034027</value>
+<valueName>UGC</valueName>
+<value>NJC027</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.NEW.KPHI.FA.W.0096.231228T0748Z-231228T1345Z/
+/00000.0.ER.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=NJ12667329AA68.FloodWarning.1266732A34B0NJ.OKXFLWOKX.28a5537485e34d52f6eabaa851eef98f</id>
+<updated>2023-12-28T02:46:00-05:00</updated>
+<published>2023-12-28T02:46:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Flood Warning issued December 28 at 2:46AM EST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=NJ12667329AA68.FloodWarning.1266732A34B0NJ.OKXFLWOKX.28a5537485e34d52f6eabaa851eef98f"/>
+<summary>...FLOOD WARNING IN EFFECT UNTIL 830 AM EST THIS MORNING... ...REPLACES FLOOD ADVISORY... * WHAT...Urban area and small stream flooding caused by excessive rainfall is expected. * WHERE...Portions of northeast New Jersey, including the following counties, Bergen, Essex, Passaic and Union and southeast New York,</summary>
+<cap:event>Flood Warning</cap:event>
+<cap:effective>2023-12-28T02:46:00-05:00</cap:effective>
+<cap:expires>2023-12-28T06:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Bergen; Essex</cap:areaDesc>
+<cap:polygon>41.36,-74.69 41.49,-74.76 41.51,-74.48 41.63,-74.26 41.59,-73.95 41.44,-73.98 41.49,-73.93 41.52,-73.6 41.01,-74.05 40.6,-74.3 40.6,-74.46 40.66,-74.4 40.67,-74.46 40.75,-74.36 40.91,-74.33 40.9,-74.27 40.97,-74.28 41.05,-74.45 41.04,-74.5 41.2,-74.37 41.36,-74.69</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>034003 034013</value>
+<valueName>UGC</valueName>
+<value>NJC003 NJC013</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.NEW.KOKX.FA.W.0014.231228T0746Z-231228T1330Z/
+/00000.0.ER.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=NJ12667329AA68.FloodWarning.1266732B51D8NJ.OKXFLWOKX.16cf116079aa784c6449c46d2d906a0f</id>
+<updated>2023-12-28T02:46:00-05:00</updated>
+<published>2023-12-28T02:46:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Flood Warning issued December 28 at 2:46AM EST until December 28 at 1:30PM EST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=NJ12667329AA68.FloodWarning.1266732B51D8NJ.OKXFLWOKX.16cf116079aa784c6449c46d2d906a0f"/>
+<summary>...FLOOD WARNING IN EFFECT UNTIL 830 AM EST THIS MORNING... ...REPLACES FLOOD ADVISORY... * WHAT...Urban area and small stream flooding caused by excessive rainfall is expected. * WHERE...Portions of northeast New Jersey, including the following counties, Bergen, Essex, Passaic and Union and southeast New York,</summary>
+<cap:event>Flood Warning</cap:event>
+<cap:effective>2023-12-28T02:46:00-05:00</cap:effective>
+<cap:expires>2023-12-28T13:30:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Passaic; Union</cap:areaDesc>
+<cap:polygon>41.36,-74.69 41.49,-74.76 41.51,-74.48 41.63,-74.26 41.59,-73.95 41.44,-73.98 41.49,-73.93 41.52,-73.6 41.01,-74.05 40.6,-74.3 40.6,-74.46 40.66,-74.4 40.67,-74.46 40.75,-74.36 40.91,-74.33 40.9,-74.27 40.97,-74.28 41.05,-74.45 41.04,-74.5 41.2,-74.37 41.36,-74.69</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>034031 034039</value>
+<valueName>UGC</valueName>
+<value>NJC031 NJC039</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.NEW.KOKX.FA.W.0014.231228T0746Z-231228T1330Z/
+/00000.0.ER.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=NJ12667329A554.CoastalFloodAdvisory.1266732B4620NJ.PHICFWPHI.5d757da0b9b3a72263535993c4173459</id>
+<updated>2023-12-28T02:33:00-05:00</updated>
+<published>2023-12-28T02:33:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Coastal Flood Advisory issued December 28 at 2:33AM EST until December 28 at 1:00PM EST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=NJ12667329A554.CoastalFloodAdvisory.1266732B4620NJ.PHICFWPHI.5d757da0b9b3a72263535993c4173459"/>
+<summary>...COASTAL FLOOD ADVISORY IN EFFECT FROM 6 AM THIS MORNING TO 1 PM EST THIS AFTERNOON... * WHAT...Up to one foot of inundation above ground level expected in low-lying areas near shorelines and tidal waterways. * WHERE...Middlesex, Western Monmouth, Eastern Monmouth, Ocean,</summary>
+<cap:event>Coastal Flood Advisory</cap:event>
+<cap:effective>2023-12-28T02:33:00-05:00</cap:effective>
+<cap:expires>2023-12-28T13:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Coastal Ocean; Eastern Monmouth; Middlesex; Ocean; Southeastern Burlington; Western Monmouth</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>034005 034023 034025 034029</value>
+<valueName>UGC</valueName>
+<value>NJZ012 NJZ013 NJZ014 NJZ020 NJZ026 NJZ027</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.NEW.KPHI.CF.Y.0052.231228T1100Z-231228T1800Z/</value>
+</cap:parameter>
+</entry>
+<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=NJ1266732984E8.FloodWarning.1266732B51D8NJ.PHIFLWPHI.ecdfdc33b66ba62245d22c23378252a4</id>
 <updated>2023-12-28T01:50:00-05:00</updated>
 <published>2023-12-28T01:50:00-05:00</published>
@@ -2388,18 +2586,18 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=NJ126673295AB8.FloodWarning.12667329CB38NJ.PHIFLSPHI.3d0314585f1617abd7dcb31ea99997ed</id>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=NJ126673295AB8.FloodWarning.1266732A34B0NJ.PHIFLSPHI.3d0314585f1617abd7dcb31ea99997ed</id>
 <updated>2023-12-28T00:42:00-05:00</updated>
 <published>2023-12-28T00:42:00-05:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
 <title>Flood Warning issued December 28 at 12:42AM EST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=NJ126673295AB8.FloodWarning.12667329CB38NJ.PHIFLSPHI.3d0314585f1617abd7dcb31ea99997ed"/>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=NJ126673295AB8.FloodWarning.1266732A34B0NJ.PHIFLSPHI.3d0314585f1617abd7dcb31ea99997ed"/>
 <summary>...FLOOD WARNING REMAINS IN EFFECT UNTIL 530 AM EST EARLY THIS MORNING... * WHAT...Flooding caused by excessive rainfall continues. * WHERE...Portions of New Jersey, including the following counties, Burlington, Camden, Gloucester, Hunterdon, Mercer, Morris, Salem, Somerset and Warren and southeast Pennsylvania, including the</summary>
 <cap:event>Flood Warning</cap:event>
 <cap:effective>2023-12-28T00:42:00-05:00</cap:effective>
-<cap:expires>2023-12-28T03:30:00-05:00</cap:expires>
+<cap:expires>2023-12-28T06:00:00-05:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
 <cap:category>Met</cap:category>
@@ -2454,72 +2652,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=NJ126673295734.FloodAdvisory.12667329CB38NJ.OKXFLSOKX.ce139512b25f451a2a5c232df8494a14</id>
-<updated>2023-12-28T00:33:00-05:00</updated>
-<published>2023-12-28T00:33:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Flood Advisory issued December 28 at 12:33AM EST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=NJ126673295734.FloodAdvisory.12667329CB38NJ.OKXFLSOKX.ce139512b25f451a2a5c232df8494a14"/>
-<summary>...FLOOD ADVISORY IN EFFECT UNTIL 330 AM EST EARLY THIS MORNING... * WHAT...Flooding caused by excessive rainfall is expected. * WHERE...Portions of northeast New Jersey, including the following counties, Bergen, Essex, Passaic and Union and southeast New York, including the following counties, Orange, Putnam, Rockland and Westchester.</summary>
-<cap:event>Flood Advisory</cap:event>
-<cap:effective>2023-12-28T00:33:00-05:00</cap:effective>
-<cap:expires>2023-12-28T03:30:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Bergen; Essex</cap:areaDesc>
-<cap:polygon>40.75,-74.36 40.91,-74.33 40.9,-74.27 40.97,-74.28 41.03,-74.5 41.2,-74.37 41.36,-74.69 41.49,-74.76 41.51,-74.48 41.63,-74.26 41.59,-73.95 41.44,-73.98 41.49,-73.93 41.52,-73.6 41.01,-74.05 40.6,-74.3 40.61,-74.3 40.6,-74.46 40.66,-74.4 40.67,-74.46 40.75,-74.36</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>034003 034013</value>
-<valueName>UGC</valueName>
-<value>NJC003 NJC013</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.NEW.KOKX.FA.Y.0253.231228T0533Z-231228T0830Z/
-/00000.N.ER.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=NJ126673295734.FloodAdvisory.1266732B51D8NJ.OKXFLSOKX.e29af7df1b2c43e1fdb580a310a0c978</id>
-<updated>2023-12-28T00:33:00-05:00</updated>
-<published>2023-12-28T00:33:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Flood Advisory issued December 28 at 12:33AM EST until December 28 at 1:30PM EST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=NJ126673295734.FloodAdvisory.1266732B51D8NJ.OKXFLSOKX.e29af7df1b2c43e1fdb580a310a0c978"/>
-<summary>...FLOOD ADVISORY IN EFFECT UNTIL 330 AM EST EARLY THIS MORNING... * WHAT...Flooding caused by excessive rainfall is expected. * WHERE...Portions of northeast New Jersey, including the following counties, Bergen, Essex, Passaic and Union and southeast New York, including the following counties, Orange, Putnam, Rockland and Westchester.</summary>
-<cap:event>Flood Advisory</cap:event>
-<cap:effective>2023-12-28T00:33:00-05:00</cap:effective>
-<cap:expires>2023-12-28T13:30:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Passaic; Union</cap:areaDesc>
-<cap:polygon>40.75,-74.36 40.91,-74.33 40.9,-74.27 40.97,-74.28 41.03,-74.5 41.2,-74.37 41.36,-74.69 41.49,-74.76 41.51,-74.48 41.63,-74.26 41.59,-73.95 41.44,-73.98 41.49,-73.93 41.52,-73.6 41.01,-74.05 40.6,-74.3 40.61,-74.3 40.6,-74.46 40.66,-74.4 40.67,-74.46 40.75,-74.36</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>034031 034039</value>
-<valueName>UGC</valueName>
-<value>NJC031 NJC039</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.NEW.KOKX.FA.Y.0253.231228T0533Z-231228T0830Z/
-/00000.N.ER.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
-</cap:parameter>
-</entry>
-<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=NJ1266732953B0.FloodWarning.1266732B51D8NJ.PHIFLWPHI.74daa5c488cfc193db6bddb5dc8f3442</id>
 <updated>2023-12-28T00:24:00-05:00</updated>
 <published>2023-12-28T00:24:00-05:00</published>
@@ -2553,14 +2685,47 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=NJ12667328D6B0.FloodWatch.1266732B51D8NJ.PHIFFAPHI.e6a559b2c5ae00553c3325737798236e</id>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=NJ12667328D6B0.FloodWatch.1266732B4620NJ.PHIFFAPHI.e53275ed2002fb5ded056ed4735b757e</id>
+<updated>2023-12-27T21:04:00-05:00</updated>
+<published>2023-12-27T21:04:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Flood Watch issued December 27 at 9:04PM EST until December 28 at 1:00PM EST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=NJ12667328D6B0.FloodWatch.1266732B4620NJ.PHIFFAPHI.e53275ed2002fb5ded056ed4735b757e"/>
+<summary>...FLOOD WATCH REMAINS IN EFFECT THROUGH THURSDAY EVENING... * WHAT...Flooding caused by excessive rainfall continues to be possible. * WHERE...Portions of northern Delaware, including the following area, New Castle, New Jersey, including the following areas, Atlantic, Atlantic Coastal Cape May, Camden, Cape May, Coastal</summary>
+<cap:event>Flood Watch</cap:event>
+<cap:effective>2023-12-27T21:04:00-05:00</cap:effective>
+<cap:expires>2023-12-28T13:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Future</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Possible</cap:certainty>
+<cap:areaDesc>Atlantic; Atlantic Coastal Cape May; Camden; Cape May; Coastal Atlantic; Coastal Ocean; Cumberland; Eastern Monmouth; Gloucester; Mercer; Middlesex; Northwestern Burlington; Ocean; Salem; Southeastern Burlington; Western Monmouth</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>034001 034005 034007 034009 034011 034015 034021 034023 034025 034029 034033</value>
+<valueName>UGC</valueName>
+<value>NJZ012 NJZ013 NJZ014 NJZ015 NJZ016 NJZ017 NJZ018 NJZ019 NJZ020 NJZ021 NJZ022 NJZ023 NJZ024 NJZ025 NJZ026 NJZ027</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KPHI.FA.A.0012.000000T0000Z-231229T0000Z/
+/00000.0.ER.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=NJ12667328D6B0.FloodWatch.1266732B51D8NJ.PHIFFAPHI.fdd415e3f711ad458c7d0ce65e729b35</id>
 <updated>2023-12-27T21:04:00-05:00</updated>
 <published>2023-12-27T21:04:00-05:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
 <title>Flood Watch issued December 27 at 9:04PM EST until December 28 at 1:30PM EST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=NJ12667328D6B0.FloodWatch.1266732B51D8NJ.PHIFFAPHI.e6a559b2c5ae00553c3325737798236e"/>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=NJ12667328D6B0.FloodWatch.1266732B51D8NJ.PHIFFAPHI.fdd415e3f711ad458c7d0ce65e729b35"/>
 <summary>...FLOOD WATCH REMAINS IN EFFECT THROUGH THURSDAY EVENING... * WHAT...Flooding caused by excessive rainfall continues to be possible. * WHERE...Portions of northern Delaware, including the following area, New Castle, New Jersey, including the following areas, Atlantic, Atlantic Coastal Cape May, Camden, Cape May, Coastal</summary>
 <cap:event>Flood Watch</cap:event>
 <cap:effective>2023-12-27T21:04:00-05:00</cap:effective>
@@ -2571,17 +2736,83 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:urgency>Future</cap:urgency>
 <cap:severity>Moderate</cap:severity>
 <cap:certainty>Possible</cap:certainty>
-<cap:areaDesc>Atlantic; Atlantic Coastal Cape May; Camden; Cape May; Coastal Atlantic; Coastal Ocean; Cumberland; Eastern Monmouth; Gloucester; Hunterdon; Mercer; Middlesex; Morris; Northwestern Burlington; Ocean; Salem; Somerset; Southeastern Burlington; Sussex; Warren; Western Monmouth</cap:areaDesc>
+<cap:areaDesc>Hunterdon; Morris; Somerset; Sussex; Warren</cap:areaDesc>
 <cap:polygon></cap:polygon>
 <cap:geocode>
 <valueName>FIPS6</valueName>
-<value>034001 034005 034007 034009 034011 034015 034019 034021 034023 034025 034027 034029 034033 034035 034037 034041</value>
+<value>034019 034027 034035 034037 034041</value>
 <valueName>UGC</valueName>
-<value>NJZ001 NJZ007 NJZ008 NJZ009 NJZ010 NJZ012 NJZ013 NJZ014 NJZ015 NJZ016 NJZ017 NJZ018 NJZ019 NJZ020 NJZ021 NJZ022 NJZ023 NJZ024 NJZ025 NJZ026 NJZ027</value>
+<value>NJZ001 NJZ007 NJZ008 NJZ009 NJZ010</value>
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value>/O.CON.KPHI.FA.A.0012.000000T0000Z-231229T0000Z/
+/00000.0.ER.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=NY12667329BFE4.FloodAdvisory.1266732A34B0NY.OKXFLSOKX.ae5eddf30b84e802016734d3fbdf97d9</id>
+<updated>2023-12-28T03:01:00-05:00</updated>
+<published>2023-12-28T03:01:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Flood Advisory issued December 28 at 3:01AM EST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=NY12667329BFE4.FloodAdvisory.1266732A34B0NY.OKXFLSOKX.ae5eddf30b84e802016734d3fbdf97d9"/>
+<summary>...FLOOD ADVISORY IN EFFECT UNTIL 6 AM EST EARLY THIS MORNING... * WHAT...Urban and small stream flooding caused by excessive rainfall is expected. * WHERE...Portions of southern Connecticut, including the following county, Fairfield, northeast New Jersey, including the following counties, Bergen, Essex, Hudson and Union, and southeast New York,</summary>
+<cap:event>Flood Advisory</cap:event>
+<cap:effective>2023-12-28T03:01:00-05:00</cap:effective>
+<cap:expires>2023-12-28T06:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Bronx; Kings; Nassau; New York (Manhattan); Putnam; Queens; Richmond; Rockland; Westchester</cap:areaDesc>
+<cap:polygon>40.59,-74.3 40.82,-74.12 41.01,-74.06 41.52,-73.6 41.53,-73.53 41.67,-73.51 41.66,-73.49 41.49,-73.44 41.45,-73.28 41.26,-73.24 41.03,-73.42 40.93,-73.74 40.86,-73.75 40.85,-73.75 40.92,-73.5 40.58,-73.52 40.53,-73.94 40.6,-74.04 40.49,-74.27 40.59,-74.2 40.59,-74.3</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>036005 036047 036059 036061 036079 036081 036085 036087 036119</value>
+<valueName>UGC</valueName>
+<value>NYC005 NYC047 NYC059 NYC061 NYC079 NYC081 NYC085 NYC087 NYC119</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.NEW.KOKX.FA.Y.0254.231228T0801Z-231228T1100Z/
+/00000.N.ER.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=NY12667329AA68.FloodWarning.1266732A34B0NY.OKXFLWOKX.6f9cb69df9cbe239eec7e0a4f35b0f00</id>
+<updated>2023-12-28T02:46:00-05:00</updated>
+<published>2023-12-28T02:46:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Flood Warning issued December 28 at 2:46AM EST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=NY12667329AA68.FloodWarning.1266732A34B0NY.OKXFLWOKX.6f9cb69df9cbe239eec7e0a4f35b0f00"/>
+<summary>...FLOOD WARNING IN EFFECT UNTIL 830 AM EST THIS MORNING... ...REPLACES FLOOD ADVISORY... * WHAT...Urban area and small stream flooding caused by excessive rainfall is expected. * WHERE...Portions of northeast New Jersey, including the following counties, Bergen, Essex, Passaic and Union and southeast New York,</summary>
+<cap:event>Flood Warning</cap:event>
+<cap:effective>2023-12-28T02:46:00-05:00</cap:effective>
+<cap:expires>2023-12-28T06:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Orange; Putnam; Rockland; Westchester</cap:areaDesc>
+<cap:polygon>41.36,-74.69 41.49,-74.76 41.51,-74.48 41.63,-74.26 41.59,-73.95 41.44,-73.98 41.49,-73.93 41.52,-73.6 41.01,-74.05 40.6,-74.3 40.6,-74.46 40.66,-74.4 40.67,-74.46 40.75,-74.36 40.91,-74.33 40.9,-74.27 40.97,-74.28 41.05,-74.45 41.04,-74.5 41.2,-74.37 41.36,-74.69</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>036071 036079 036087 036119</value>
+<valueName>UGC</valueName>
+<value>NYC071 NYC079 NYC087 NYC119</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.NEW.KOKX.FA.W.0014.231228T0746Z-231228T1330Z/
 /00000.0.ER.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
 </cap:parameter>
 </entry>
@@ -2615,39 +2846,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value></value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=NY126673295734.FloodAdvisory.12667329CB38NY.OKXFLSOKX.600ec3016ab1b22dd0c70307feb7db7c</id>
-<updated>2023-12-28T00:33:00-05:00</updated>
-<published>2023-12-28T00:33:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Flood Advisory issued December 28 at 12:33AM EST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=NY126673295734.FloodAdvisory.12667329CB38NY.OKXFLSOKX.600ec3016ab1b22dd0c70307feb7db7c"/>
-<summary>...FLOOD ADVISORY IN EFFECT UNTIL 330 AM EST EARLY THIS MORNING... * WHAT...Flooding caused by excessive rainfall is expected. * WHERE...Portions of northeast New Jersey, including the following counties, Bergen, Essex, Passaic and Union and southeast New York, including the following counties, Orange, Putnam, Rockland and Westchester.</summary>
-<cap:event>Flood Advisory</cap:event>
-<cap:effective>2023-12-28T00:33:00-05:00</cap:effective>
-<cap:expires>2023-12-28T03:30:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Orange; Putnam; Rockland; Westchester</cap:areaDesc>
-<cap:polygon>40.75,-74.36 40.91,-74.33 40.9,-74.27 40.97,-74.28 41.03,-74.5 41.2,-74.37 41.36,-74.69 41.49,-74.76 41.51,-74.48 41.63,-74.26 41.59,-73.95 41.44,-73.98 41.49,-73.93 41.52,-73.6 41.01,-74.05 40.6,-74.3 40.61,-74.3 40.6,-74.46 40.66,-74.4 40.67,-74.46 40.75,-74.36</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>036071 036079 036087 036119</value>
-<valueName>UGC</valueName>
-<value>NYC071 NYC079 NYC087 NYC119</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.NEW.KOKX.FA.Y.0253.231228T0533Z-231228T0830Z/
-/00000.N.ER.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -2907,72 +3105,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=OH1266732934D4.FloodWarning.12667329BF80OH.PBZFLWPBZ.f56c7ee9a426f9a01e9d19841f98e98f</id>
-<updated>2023-12-27T23:45:00-05:00</updated>
-<published>2023-12-27T23:45:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Flood Warning issued December 27 at 11:45PM EST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=OH1266732934D4.FloodWarning.12667329BF80OH.PBZFLWPBZ.f56c7ee9a426f9a01e9d19841f98e98f"/>
-<summary>...FLOOD WARNING NOW IN EFFECT UNTIL 3 AM EST THURSDAY... * WHAT...Flooding caused by excessive rainfall continues. * WHERE...A portion of east central Ohio, including the following counties, Monroe and Noble. * WHEN...Until 300 AM EST. * IMPACTS...Flooding of rivers, creeks, streams, and other low-lying</summary>
-<cap:event>Flood Warning</cap:event>
-<cap:effective>2023-12-27T23:45:00-05:00</cap:effective>
-<cap:expires>2023-12-28T03:00:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Monroe; Noble</cap:areaDesc>
-<cap:polygon>39.62,-81.41 39.63,-81.41 39.63,-81.45 39.65,-81.45 39.65,-81.47 39.58,-81.47 39.59,-81.56 39.89,-81.57 39.89,-81.32 39.71,-81.32 39.7,-81.29 39.59,-81.28 39.59,-81.36 39.6,-81.36 39.6,-81.39 39.61,-81.39 39.62,-81.41</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>039111 039121</value>
-<valueName>UGC</valueName>
-<value>OHC111 OHC121</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.EXT.KPBZ.FA.W.0007.000000T0000Z-231228T0800Z/
-/00000.0.ER.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=OH126673292728.FloodWarning.12667329BF80OH.RLXFLWRLX.844c4b3ce6166b5f713fcf24f2ada7b5</id>
-<updated>2023-12-27T23:10:00-05:00</updated>
-<published>2023-12-27T23:10:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Flood Warning issued December 27 at 11:10PM EST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=OH126673292728.FloodWarning.12667329BF80OH.RLXFLWRLX.844c4b3ce6166b5f713fcf24f2ada7b5"/>
-<summary>...FLOOD WARNING NOW IN EFFECT UNTIL 3 AM EST THURSDAY... * WHAT...Flooding caused by excessive rainfall continues. * WHERE...A portion of southeast Ohio, including the following county, Washington. * WHEN...Until 300 AM EST. * IMPACTS...Flooding of creeks, streams, and other low-lying and</summary>
-<cap:event>Flood Warning</cap:event>
-<cap:effective>2023-12-27T23:10:00-05:00</cap:effective>
-<cap:expires>2023-12-28T03:00:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Washington</cap:areaDesc>
-<cap:polygon>39.63,-81.45 39.63,-81.41 39.62,-81.41 39.62,-81.4 39.58,-81.4 39.58,-81.47 39.65,-81.47 39.65,-81.45 39.63,-81.45</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>039167</value>
-<valueName>UGC</valueName>
-<value>OHC167</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.EXT.KRLX.FA.W.0026.000000T0000Z-231228T0800Z/
-/00000.0.ER.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
-</cap:parameter>
-</entry>
-<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=OR1266732976D8.DenseFogAdvisory.1266732B4620OR.PDTNPWPDT.b2ab2ef633b53b9ece86942bf8594451</id>
 <updated>2023-12-27T22:14:00-08:00</updated>
 <published>2023-12-27T22:14:00-08:00</published>
@@ -3164,6 +3296,171 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <valueName>VTEC</valueName>
 <value>/O.CAN.KPQR.BH.S.0011.000000T0000Z-231228T0600Z/
 /O.CON.KPQR.SU.Y.0004.231228T0600Z-231229T0000Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=PA12667329AEB4.FloodWarning.12667329C55CPA.PHIFLWPHI.aa4aba732d265d83b504ace6c1709194</id>
+<updated>2023-12-28T02:57:00-05:00</updated>
+<published>2023-12-28T02:57:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Flood Warning issued December 28 at 2:57AM EST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=PA12667329AEB4.FloodWarning.12667329C55CPA.PHIFLWPHI.aa4aba732d265d83b504ace6c1709194"/>
+<summary>...FLOOD WARNING IN EFFECT UNTIL 9 AM EST THIS MORNING... * WHAT...Flooding caused by excessive rainfall is expected. * WHERE...A portion of southeast Pennsylvania, including the following county, Bucks. * WHEN...Until 900 AM EST Thursday. * IMPACTS...Flooding of rivers, creeks, streams, and other low-lying</summary>
+<cap:event>Flood Warning</cap:event>
+<cap:effective>2023-12-28T02:57:00-05:00</cap:effective>
+<cap:expires>2023-12-28T03:15:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Bucks</cap:areaDesc>
+<cap:polygon>40.24,-75.04 40.27,-75.01 40.2,-74.9 40.16,-74.94 40.18,-74.96 40.2,-74.97 40.24,-75.04</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>042017</value>
+<valueName>UGC</valueName>
+<value>PAC017</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.NEW.KPHI.FA.W.0098.231228T0757Z-231228T1400Z/
+/00000.0.ER.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=PA12667329AB30.FloodWarning.12667337C940PA.PHIFLWPHI.c6f78822483d0607a8e212c2c3d40ceb</id>
+<updated>2023-12-28T02:48:00-05:00</updated>
+<published>2023-12-28T02:48:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Flood Warning issued December 28 at 2:48AM EST until December 28 at 7:00PM EST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=PA12667329AB30.FloodWarning.12667337C940PA.PHIFLWPHI.c6f78822483d0607a8e212c2c3d40ceb"/>
+<summary>...FLOOD WARNING IN EFFECT UNTIL 845 AM EST THIS MORNING... * WHAT...Flooding caused by excessive rainfall is expected. * WHERE...A portion of east central Pennsylvania, including the following county, Lehigh. * WHEN...Until 845 AM EST. * IMPACTS...Flooding of rivers, creeks, streams, and other low-lying</summary>
+<cap:event>Flood Warning</cap:event>
+<cap:effective>2023-12-28T02:48:00-05:00</cap:effective>
+<cap:expires>2023-12-28T19:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Lehigh</cap:areaDesc>
+<cap:polygon>40.53,-75.65 40.5,-75.6 40.53,-75.55 40.57,-75.61 40.53,-75.65</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>042077</value>
+<valueName>UGC</valueName>
+<value>PAC077</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.NEW.KPHI.FA.W.0097.231228T0748Z-231228T1345Z/
+/00000.0.ER.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=PA12667329A8D8.FloodWarning.1266732B4620PA.PHIFLWPHI.485045f6d8faad5bb3878ee780ddab35</id>
+<updated>2023-12-28T02:42:00-05:00</updated>
+<published>2023-12-28T02:42:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Flood Warning issued December 28 at 2:42AM EST until December 28 at 1:00PM EST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=PA12667329A8D8.FloodWarning.1266732B4620PA.PHIFLWPHI.485045f6d8faad5bb3878ee780ddab35"/>
+<summary>...FLOOD WARNING IN EFFECT UNTIL 845 AM EST THIS MORNING... * WHAT...Flooding caused by excessive rainfall is expected. * WHERE...A portion of southeast Pennsylvania, including the following counties, Montgomery and Philadelphia. * WHEN...Until 845 AM EST Thursday. * IMPACTS...Flooding of rivers, creeks, streams, and other low-lying</summary>
+<cap:event>Flood Warning</cap:event>
+<cap:effective>2023-12-28T02:42:00-05:00</cap:effective>
+<cap:expires>2023-12-28T13:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Montgomery; Philadelphia</cap:areaDesc>
+<cap:polygon>40.15,-75.26 40.15,-75.21 40.02,-75.18 40.02,-75.21 40.04,-75.24 40.15,-75.26</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>042091 042101</value>
+<valueName>UGC</valueName>
+<value>PAC091 PAC101</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.NEW.KPHI.FA.W.0095.231228T0742Z-231228T1345Z/
+/00000.0.ER.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=PA12667329A5B8.FloodWarning.1266732B4620PA.PHIFLWPHI.c9dafca82851557dc03c1aa5490f8ba1</id>
+<updated>2023-12-28T02:34:00-05:00</updated>
+<published>2023-12-28T02:34:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Flood Warning issued December 28 at 2:34AM EST until December 28 at 1:00PM EST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=PA12667329A5B8.FloodWarning.1266732B4620PA.PHIFLWPHI.c9dafca82851557dc03c1aa5490f8ba1"/>
+<summary>...FLOOD WARNING IN EFFECT UNTIL 830 AM EST THIS MORNING... * WHAT...Flooding caused by excessive rainfall is expected. * WHERE...A portion of southeast Pennsylvania, including the following county, Montgomery. * WHEN...Until 830 AM EST. * IMPACTS...Flooding of rivers, creeks, streams, and other low-lying</summary>
+<cap:event>Flood Warning</cap:event>
+<cap:effective>2023-12-28T02:34:00-05:00</cap:effective>
+<cap:expires>2023-12-28T13:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Montgomery</cap:areaDesc>
+<cap:polygon>40.23,-75.41 40.23,-75.48 40.34,-75.49 40.34,-75.37 40.32,-75.36 40.23,-75.41</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>042091</value>
+<valueName>UGC</valueName>
+<value>PAC091</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.NEW.KPHI.FA.W.0094.231228T0734Z-231228T1330Z/
+/00000.0.ER.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=PA12667329A554.FloodWarning.12667329C55CPA.PHIFLSPHI.10f16caf3e8d92f5a9d3fca8a99ed7bc</id>
+<updated>2023-12-28T02:33:00-05:00</updated>
+<published>2023-12-28T02:33:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Flood Warning issued December 28 at 2:33AM EST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=PA12667329A554.FloodWarning.12667329C55CPA.PHIFLSPHI.10f16caf3e8d92f5a9d3fca8a99ed7bc"/>
+<summary>...FLOOD WARNING REMAINS IN EFFECT UNTIL 630 AM EST THIS MORNING... * WHAT...Flooding caused by excessive rainfall continues. * WHERE...A portion of southeast Pennsylvania, including the following county, Bucks. * WHEN...Until 630 AM EST. * IMPACTS...Flooding of rivers, creeks, streams, and other low-lying</summary>
+<cap:event>Flood Warning</cap:event>
+<cap:effective>2023-12-28T02:33:00-05:00</cap:effective>
+<cap:expires>2023-12-28T03:15:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Bucks</cap:areaDesc>
+<cap:polygon>40.37,-75.33 40.33,-75.31 40.39,-75.21 40.43,-75.23 40.37,-75.33</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>042017</value>
+<valueName>UGC</valueName>
+<value>PAC017</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KPHI.FA.W.0088.000000T0000Z-231228T1130Z/
+/00000.0.ER.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -3592,39 +3889,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value></value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=PA12667329566C.FloodWarning.12667329C55CPA.PHIFLWPHI.10f16caf3e8d92f5a9d3fca8a99ed7bc</id>
-<updated>2023-12-28T00:31:00-05:00</updated>
-<published>2023-12-28T00:31:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Flood Warning issued December 28 at 12:31AM EST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=PA12667329566C.FloodWarning.12667329C55CPA.PHIFLWPHI.10f16caf3e8d92f5a9d3fca8a99ed7bc"/>
-<summary>...FLOOD WARNING IN EFFECT UNTIL 630 AM EST THIS MORNING... * WHAT...Flooding caused by excessive rainfall is expected. * WHERE...A portion of southeast Pennsylvania, including the following county, Bucks. * WHEN...Until 630 AM EST. * IMPACTS...Flooding of rivers, creeks, streams, and other low-lying</summary>
-<cap:event>Flood Warning</cap:event>
-<cap:effective>2023-12-28T00:31:00-05:00</cap:effective>
-<cap:expires>2023-12-28T03:15:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Bucks</cap:areaDesc>
-<cap:polygon>40.37,-75.33 40.33,-75.31 40.39,-75.21 40.43,-75.23 40.37,-75.33</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>042017</value>
-<valueName>UGC</valueName>
-<value>PAC017</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.NEW.KPHI.FA.W.0088.231228T0531Z-231228T1130Z/
-/00000.0.ER.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -4121,14 +4385,46 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=TN126673290E8C.SpecialWeatherStatement.1266732A0DA0TN.MRXSPSMRX.bd69d740bfbb1420591ce36006fbd8d4</id>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=TN12667329A748.SpecialWeatherStatement.1266732AA9E0TN.MRXSPSMRX.f763ffffed9960743aa6fc520436cf60</id>
+<updated>2023-12-28T01:38:00-06:00</updated>
+<published>2023-12-28T01:38:00-06:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Special Weather Statement issued December 28 at 1:38AM CST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=TN12667329A748.SpecialWeatherStatement.1266732AA9E0TN.MRXSPSMRX.f763ffffed9960743aa6fc520436cf60"/>
+<summary>...Patchy Dense Fog Early This Morning... Patchy fog has developed across portions of the area, some locally dense limiting visibility to a quarter mile or less. The fog will gradually dissipate after sunrise. If traveling, slow down, use low beam headlights, and allow extra time to reach your destination.</summary>
+<cap:event>Special Weather Statement</cap:event>
+<cap:effective>2023-12-28T01:38:00-06:00</cap:effective>
+<cap:expires>2023-12-28T08:00:00-06:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Observed</cap:certainty>
+<cap:areaDesc>Anderson; Campbell; Claiborne; Grainger; Hamblen; Hancock; Hawkins; Morgan; Northwest Carter; Northwest Greene; Scott; Sullivan; Union; Washington</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>047001 047013 047019 047025 047057 047059 047063 047067 047073 047129 047151 047163 047173 047179</value>
+<valueName>UGC</valueName>
+<value>TNZ012 TNZ013 TNZ014 TNZ015 TNZ016 TNZ017 TNZ035 TNZ036 TNZ037 TNZ038 TNZ039 TNZ042 TNZ044 TNZ046</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value></value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=TN126673290E8C.SpecialWeatherStatement.1266732A0DA0TN.MRXSPSMRX.498057f7471cea9f44a5411c22766ff2</id>
 <updated>2023-12-27T21:47:00-06:00</updated>
 <published>2023-12-27T21:47:00-06:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
 <title>Special Weather Statement issued December 27 at 9:47PM CST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=TN126673290E8C.SpecialWeatherStatement.1266732A0DA0TN.MRXSPSMRX.bd69d740bfbb1420591ce36006fbd8d4"/>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=TN126673290E8C.SpecialWeatherStatement.1266732A0DA0TN.MRXSPSMRX.498057f7471cea9f44a5411c22766ff2"/>
 <summary>...Patchy Dense Fog Overnight... Dense fog has developed in some areas, limiting visibility to a quarter mile or less. Clouds are expected to spread in from the west later tonight, which should cause the fog should lift and eventually dissipate in most locations before sunrise. If traveling, slow down, use low beam headlights, and allow extra</summary>
 <cap:event>Special Weather Statement</cap:event>
 <cap:effective>2023-12-27T21:47:00-06:00</cap:effective>
@@ -4139,13 +4435,13 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:urgency>Expected</cap:urgency>
 <cap:severity>Minor</cap:severity>
 <cap:certainty>Observed</cap:certainty>
-<cap:areaDesc>Anderson; Campbell; Claiborne; Grainger; Hamblen; Hancock; Hawkins; Jefferson; Knox; Morgan; North Sevier; Northwest Carter; Northwest Cocke; Northwest Greene; Scott; Sullivan; Union; Washington</cap:areaDesc>
+<cap:areaDesc>Jefferson; Knox; North Sevier; Northwest Cocke</cap:areaDesc>
 <cap:polygon></cap:polygon>
 <cap:geocode>
 <valueName>FIPS6</valueName>
-<value>047001 047013 047019 047025 047029 047057 047059 047063 047067 047073 047089 047093 047129 047151 047155 047163 047173 047179</value>
+<value>047029 047089 047093 047155</value>
 <valueName>UGC</valueName>
-<value>TNZ012 TNZ013 TNZ014 TNZ015 TNZ016 TNZ017 TNZ035 TNZ036 TNZ037 TNZ038 TNZ039 TNZ040 TNZ042 TNZ044 TNZ046 TNZ069 TNZ070 TNZ073</value>
+<value>TNZ040 TNZ069 TNZ070 TNZ073</value>
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
@@ -4178,6 +4474,38 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <value>048025 048297 048311</value>
 <valueName>UGC</valueName>
 <value>TXZ230 TXZ231 TXZ232</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value></value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=VA12667329A748.SpecialWeatherStatement.1266732AA9E0VA.MRXSPSMRX.3d7d5825554e67fd0908f593d55b5d96</id>
+<updated>2023-12-28T02:38:00-05:00</updated>
+<published>2023-12-28T02:38:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Special Weather Statement issued December 28 at 2:38AM EST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=VA12667329A748.SpecialWeatherStatement.1266732AA9E0VA.MRXSPSMRX.3d7d5825554e67fd0908f593d55b5d96"/>
+<summary>...Patchy Dense Fog Early This Morning... Patchy fog has developed across portions of the area, some locally dense limiting visibility to a quarter mile or less. The fog will gradually dissipate after sunrise. If traveling, slow down, use low beam headlights, and allow extra time to reach your destination.</summary>
+<cap:event>Special Weather Statement</cap:event>
+<cap:effective>2023-12-28T02:38:00-05:00</cap:effective>
+<cap:expires>2023-12-28T09:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Observed</cap:certainty>
+<cap:areaDesc>Lee; Russell; Scott; Washington; Wise</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>051105 051167 051169 051191 051195 051520 051720</value>
+<valueName>UGC</valueName>
+<value>VAZ001 VAZ002 VAZ005 VAZ006 VAZ008</value>
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
@@ -4242,38 +4570,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <value>051005 051009 051011 051017 051019 051021 051023 051029 051031 051035 051037 051045 051063 051067 051071 051077 051083 051089 051121 051141 051143 051155 051161 051163 051173 051185 051197 051530 051580 051590 051640 051678 051680 051690 051750 051770 051775</value>
 <valueName>UGC</valueName>
 <value>VAZ007 VAZ009 VAZ010 VAZ011 VAZ012 VAZ013 VAZ014 VAZ015 VAZ016 VAZ017 VAZ018 VAZ019 VAZ020 VAZ022 VAZ023 VAZ024 VAZ032 VAZ033 VAZ034 VAZ035 VAZ043 VAZ044 VAZ045 VAZ046 VAZ047 VAZ058 VAZ059</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value></value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=VA126673290E8C.SpecialWeatherStatement.1266732A0DA0VA.MRXSPSMRX.3d7d5825554e67fd0908f593d55b5d96</id>
-<updated>2023-12-27T22:47:00-05:00</updated>
-<published>2023-12-27T22:47:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Special Weather Statement issued December 27 at 10:47PM EST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=VA126673290E8C.SpecialWeatherStatement.1266732A0DA0VA.MRXSPSMRX.3d7d5825554e67fd0908f593d55b5d96"/>
-<summary>...Patchy Dense Fog Overnight... Dense fog has developed in some areas, limiting visibility to a quarter mile or less. Clouds are expected to spread in from the west later tonight, which should cause the fog should lift and eventually dissipate in most locations before sunrise. If traveling, slow down, use low beam headlights, and allow extra</summary>
-<cap:event>Special Weather Statement</cap:event>
-<cap:effective>2023-12-27T22:47:00-05:00</cap:effective>
-<cap:expires>2023-12-28T05:00:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Observed</cap:certainty>
-<cap:areaDesc>Lee; Russell; Scott; Washington; Wise</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>051105 051167 051169 051191 051195 051520 051720</value>
-<valueName>UGC</valueName>
-<value>VAZ001 VAZ002 VAZ005 VAZ006 VAZ008</value>
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
