@@ -16,11 +16,11 @@ xmlns = 'http://www.w3.org/2005/Atom'
 xmlns:cap = 'urn:oasis:names:tc:emergency:cap:1.1'
 xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 >
-<!-- http-date = Tue, 09 Jan 2024 01:51:00 GMT -->
+<!-- http-date = Tue, 09 Jan 2024 02:15:00 GMT -->
 <id>https://alerts.weather.gov/cap/us.php?x=0</id>
 <logo>http://alerts.weather.gov/images/xml_logo.gif</logo>
 <generator>NWS CAP Server</generator>
-<updated>2024-01-08T20:51:00-05:00</updated>
+<updated>2024-01-08T21:15:00-05:00</updated>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
@@ -344,6 +344,39 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value>/O.NEW.PAFG.WS.A.0004.240110T1200Z-240112T1800Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=AL1268848224F0.FloodWarning.126884A3E20CAL.HUNFLSHUN.fdb766508a819e4b640552153afb07d6</id>
+<updated>2024-01-08T20:04:00-06:00</updated>
+<published>2024-01-08T20:04:00-06:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Flood Warning issued January 08 at 8:04PM CST until January 11 at 5:15PM CST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=AL1268848224F0.FloodWarning.126884A3E20CAL.HUNFLSHUN.fdb766508a819e4b640552153afb07d6"/>
+<summary>...The Flood Warning continues for the following rivers in Alabama... Paint Rock River near Woodville affecting Jackson, Madison and Marshall Counties. For the PAINT ROCK RIVER...including Woodville...Minor flooding is forecast. ...FLOOD WARNING NOW IN EFFECT FROM LATE TUESDAY NIGHT TO THURSDAY</summary>
+<cap:event>Flood Warning</cap:event>
+<cap:effective>2024-01-08T20:04:00-06:00</cap:effective>
+<cap:expires>2024-01-11T17:15:00-06:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Jackson; Madison; Marshall</cap:areaDesc>
+<cap:polygon>34.91,-86.28 34.89,-86.06 34.42,-86.37 34.5,-86.53 34.91,-86.28</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>001071 001089 001095</value>
+<valueName>UGC</valueName>
+<value>ALC071 ALC089 ALC095</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.EXT.KHUN.FL.W.0001.240110T0800Z-240111T2315Z/
+/WDVA1.1.ER.240110T0800Z.240111T0000Z.240111T1715Z.NO/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -676,39 +709,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value>/O.CON.KBMX.WI.Y.0001.240108T2100Z-240110T0000Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=AL12688474C0D0.FloodWarning.126884A3E270AL.HUNFLWHUN.fdb766508a819e4b640552153afb07d6</id>
-<updated>2024-01-08T08:28:00-06:00</updated>
-<published>2024-01-08T08:28:00-06:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Flood Warning issued January 08 at 8:28AM CST until January 11 at 5:16PM CST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=AL12688474C0D0.FloodWarning.126884A3E270AL.HUNFLWHUN.fdb766508a819e4b640552153afb07d6"/>
-<summary>...The National Weather Service in Huntsville AL has issued a Flood Warning for the following rivers in Alabama... Paint Rock River NEAR Woodville affecting Madison, Marshall and Jackson Counties. For the PAINT ROCK RIVER...including Woodville...Minor flooding is forecast.</summary>
-<cap:event>Flood Warning</cap:event>
-<cap:effective>2024-01-08T08:28:00-06:00</cap:effective>
-<cap:expires>2024-01-11T17:16:00-06:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Jackson; Madison; Marshall</cap:areaDesc>
-<cap:polygon>34.91,-86.28 34.89,-86.06 34.42,-86.37 34.5,-86.53 34.91,-86.28</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>001071 001089 001095</value>
-<valueName>UGC</valueName>
-<value>ALC071 ALC089 ALC095</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.NEW.KHUN.FL.W.0001.240110T0800Z-240111T2316Z/
-/WDVA1.1.ER.240110T0800Z.240111T0000Z.240111T1715Z.NO/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -5134,64 +5134,96 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=HI12688481DE3C.FlashFloodWarning.126884825628HI.HFOFFWHFO.51551bcf687c55634628d5e59908fb27</id>
-<updated>2024-01-08T14:23:00-10:00</updated>
-<published>2024-01-08T14:23:00-10:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=HI1268848227AC.HighSurfAdvisory.126884938880HI.HFOCFWHFO.2aaafe8ea7fdb74ced4dd3ece919e426</id>
+<updated>2024-01-08T16:11:00-10:00</updated>
+<published>2024-01-08T16:11:00-10:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Flash Flood Warning issued January 08 at 2:23PM HST until January 08 at 5:30PM HST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=HI12688481DE3C.FlashFloodWarning.126884825628HI.HFOFFWHFO.51551bcf687c55634628d5e59908fb27"/>
-<summary>The National Weather Service in Honolulu has issued a * Flash Flood Warning for... The island of Oahu in Honolulu County * Until 530 PM HST. * At 223 PM HST, radar indicated heavy rain over Metro Honolulu and the southeast portion of Oahu. Rain was falling at a rate of 2 to</summary>
-<cap:event>Flash Flood Warning</cap:event>
-<cap:effective>2024-01-08T14:23:00-10:00</cap:effective>
-<cap:expires>2024-01-08T17:30:00-10:00</cap:expires>
+<title>High Surf Advisory issued January 08 at 4:11PM HST until January 10 at 6:00AM HST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=HI1268848227AC.HighSurfAdvisory.126884938880HI.HFOCFWHFO.2aaafe8ea7fdb74ced4dd3ece919e426"/>
+<summary>...HIGH SURF ADVISORY FOR THE NORTH AND WEST FACING SHORES OF NIIHAU KAUAI OAHU MOLOKAI AND NORTH FACING SHORES OF MAUI... .The combination of a moderate size, medium period northwest and north swell both moving through the western island waters through Tuesday will increase surf heights along many northern and western exposures to advisory levels.</summary>
+<cap:event>High Surf Advisory</cap:event>
+<cap:effective>2024-01-08T16:11:00-10:00</cap:effective>
+<cap:expires>2024-01-10T06:00:00-10:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
 <cap:category>Met</cap:category>
-<cap:urgency>Immediate</cap:urgency>
-<cap:severity>Severe</cap:severity>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
 <cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Oahu in Honolulu</cap:areaDesc>
-<cap:polygon>21.31,-157.64 21.25,-157.69 21.25,-157.72 21.27,-157.73 21.24,-157.82 21.3,-157.9 21.31,-157.97 21.29,-158.11 21.36,-158.15 21.48,-158.24 21.53,-158.25 21.58,-158.29 21.6,-158.13 21.73,-157.98 21.55,-157.83 21.47,-157.83 21.43,-157.79 21.47,-157.79 21.47,-157.72 21.41,-157.73 21.31,-157.64</cap:polygon>
+<cap:areaDesc>Kauai East; Kauai North; Kauai Southwest; Maui Central Valley North; Maui Windward West; Molokai North; Molokai West; Molokai Windward; Niihau; Oahu North Shore; Waianae Coast; Windward Haleakala</cap:areaDesc>
+<cap:polygon></cap:polygon>
 <cap:geocode>
 <valueName>FIPS6</valueName>
-<value>015003</value>
+<value>015003 015007 015009</value>
 <valueName>UGC</valueName>
-<value>HIC003</value>
+<value>HIZ001 HIZ003 HIZ006 HIZ007 HIZ017 HIZ029 HIZ030 HIZ037 HIZ039 HIZ040 HIZ045 HIZ047</value>
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
-<value>/O.NEW.PHFO.FF.W.0002.240109T0023Z-240109T0330Z/
-/00000.0.ER.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
+<value>/O.NEW.PHFO.SU.Y.0003.240109T0211Z-240110T1600Z/</value>
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=HI12688474C0D0.FloodWatch.126884825628HI.HFOFFAHFO.b2685d5cf24deceacef5d4de022ed542</id>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=HI12688474C0D0.FloodWatch.12688491B3C0HI.HFOFFAHFO.b3697f9da25c0c390c3d1f8061128243</id>
 <updated>2024-01-08T04:28:00-10:00</updated>
 <published>2024-01-08T04:28:00-10:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Flood Watch issued January 08 at 4:28AM HST until January 08 at 5:30PM HST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=HI12688474C0D0.FloodWatch.126884825628HI.HFOFFAHFO.b2685d5cf24deceacef5d4de022ed542"/>
+<title>Flood Watch issued January 08 at 4:28AM HST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=HI12688474C0D0.FloodWatch.12688491B3C0HI.HFOFFAHFO.b3697f9da25c0c390c3d1f8061128243"/>
 <summary>...FLOOD WATCH FOR ALL HAWAIIAN ISLANDS THROUGH TUESDAY AFTERNOON... * WHAT...Flash flooding caused by excessive rainfall is possible. * WHERE...All Hawaiian islands. * WHEN...Through Tuesday afternoon. * IMPACTS...Flood prone roads and other low lying areas may be closed due to elevated runoff and overflowing streams. Urban areas</summary>
 <cap:event>Flood Watch</cap:event>
 <cap:effective>2024-01-08T04:28:00-10:00</cap:effective>
-<cap:expires>2024-01-08T17:30:00-10:00</cap:expires>
+<cap:expires>2024-01-09T18:00:00-10:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
 <cap:category>Met</cap:category>
 <cap:urgency>Future</cap:urgency>
 <cap:severity>Moderate</cap:severity>
 <cap:certainty>Possible</cap:certainty>
-<cap:areaDesc>Big Island East; Big Island Interior; Big Island North; Big Island South; Big Island Southeast; Central Oahu; East Honolulu; Ewa Plain; Haleakala Summit; Honolulu Metro; Kahoolawe; Kauai East; Kauai Mountains; Kauai North; Kauai South; Kauai Southwest; Kipahulu; Kohala; Kona; Koolau Leeward; Koolau Windward; Lanai Leeward; Lanai Mauka; Lanai South; Lanai Windward; Maui Central Valley North; Maui Central Valley South; Maui Leeward West; Maui Windward West; Molokai Leeward South; Molokai North; Molokai Southeast; Molokai West; Molokai Windward; Niihau; Oahu North Shore; Olomana; South Haleakala; South Maui, Upcountry; Waianae Coast; Waianae Mountains; Windward Haleakala</cap:areaDesc>
+<cap:areaDesc>Niihau</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>015007</value>
+<valueName>UGC</valueName>
+<value>HIZ001</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.PHFO.FA.A.0001.000000T0000Z-240110T0400Z/
+/00000.0.ER.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=HI12688474C0D0.FloodWatch.126884938880HI.HFOFFAHFO.6a82106bb6443e22560a5fc206056362</id>
+<updated>2024-01-08T04:28:00-10:00</updated>
+<published>2024-01-08T04:28:00-10:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Flood Watch issued January 08 at 4:28AM HST until January 10 at 6:00AM HST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=HI12688474C0D0.FloodWatch.126884938880HI.HFOFFAHFO.6a82106bb6443e22560a5fc206056362"/>
+<summary>...FLOOD WATCH FOR ALL HAWAIIAN ISLANDS THROUGH TUESDAY AFTERNOON... * WHAT...Flash flooding caused by excessive rainfall is possible. * WHERE...All Hawaiian islands. * WHEN...Through Tuesday afternoon. * IMPACTS...Flood prone roads and other low lying areas may be closed due to elevated runoff and overflowing streams. Urban areas</summary>
+<cap:event>Flood Watch</cap:event>
+<cap:effective>2024-01-08T04:28:00-10:00</cap:effective>
+<cap:expires>2024-01-10T06:00:00-10:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Future</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Possible</cap:certainty>
+<cap:areaDesc>Big Island East; Big Island Interior; Big Island North; Big Island South; Big Island Southeast; Central Oahu; East Honolulu; Ewa Plain; Haleakala Summit; Honolulu Metro; Kahoolawe; Kauai East; Kauai Mountains; Kauai North; Kauai South; Kauai Southwest; Kipahulu; Kohala; Kona; Koolau Leeward; Koolau Windward; Lanai Leeward; Lanai Mauka; Lanai South; Lanai Windward; Maui Central Valley North; Maui Central Valley South; Maui Leeward West; Maui Windward West; Molokai Leeward South; Molokai North; Molokai Southeast; Molokai West; Molokai Windward; Oahu North Shore; Olomana; South Haleakala; South Maui, Upcountry; Waianae Coast; Waianae Mountains; Windward Haleakala</cap:areaDesc>
 <cap:polygon></cap:polygon>
 <cap:geocode>
 <valueName>FIPS6</valueName>
 <value>015001 015003 015007 015009</value>
 <valueName>UGC</valueName>
-<value>HIZ001 HIZ003 HIZ004 HIZ006 HIZ007 HIZ009 HIZ010 HIZ011 HIZ015 HIZ016 HIZ017 HIZ018 HIZ022 HIZ023 HIZ026 HIZ027 HIZ029 HIZ030 HIZ031 HIZ032 HIZ033 HIZ034 HIZ035 HIZ036 HIZ037 HIZ038 HIZ039 HIZ040 HIZ041 HIZ042 HIZ043 HIZ044 HIZ045 HIZ046 HIZ047 HIZ048 HIZ049 HIZ050 HIZ051 HIZ052 HIZ053 HIZ054</value>
+<value>HIZ003 HIZ004 HIZ006 HIZ007 HIZ009 HIZ010 HIZ011 HIZ015 HIZ016 HIZ017 HIZ018 HIZ022 HIZ023 HIZ026 HIZ027 HIZ029 HIZ030 HIZ031 HIZ032 HIZ033 HIZ034 HIZ035 HIZ036 HIZ037 HIZ038 HIZ039 HIZ040 HIZ041 HIZ042 HIZ043 HIZ044 HIZ045 HIZ046 HIZ047 HIZ048 HIZ049 HIZ050 HIZ051 HIZ052 HIZ053 HIZ054</value>
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
@@ -7553,38 +7585,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=KS12688476056C.CivilEmergencyMessage.126884822360KS.DDCCEMDDC.0acd5d95d193f08d9484218ad71400af</id>
-<updated>2024-01-08T16:59:00-06:00</updated>
-<published>2024-01-08T16:59:00-06:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Civil Emergency Message issued January 08 at 4:59PM CST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=KS12688476056C.CivilEmergencyMessage.126884822360KS.DDCCEMDDC.0acd5d95d193f08d9484218ad71400af"/>
-<summary>...DANGEROUS TRAVEL CONDITIONS ACROSS SEWARD COUNTY... The following message is transmitted at the request of the Kansas EMERGENCY MANAGEMENT AGENCY Dodge City Kansas. THE SEWARD COUNTY EMERGENCY MANAGEMENT IS REQUESTING FOR ALL CITIZENS IN THE COUNTY TO SHELTER IN PLACE DUE TO DANGEROUS BLIZZARD CONDITIONS. ALL MAJOR ROADWAYS IN AND OUT OF SEWARD</summary>
-<cap:event>Civil Emergency Message</cap:event>
-<cap:effective>2024-01-08T16:59:00-06:00</cap:effective>
-<cap:expires>2024-01-08T20:00:00-06:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Unknown</cap:urgency>
-<cap:severity>Unknown</cap:severity>
-<cap:certainty>Unknown</cap:certainty>
-<cap:areaDesc>Seward</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>020175</value>
-<valueName>UGC</valueName>
-<value>KSC175</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value></value>
-</cap:parameter>
-</entry>
-<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=KS12688475D6F0.BlizzardWarning.126884841F30KS.GIDWSWGID.cae5c9f4ef231e015ec1d48f679e4c81</id>
 <updated>2024-01-08T15:40:00-06:00</updated>
 <published>2024-01-08T15:40:00-06:00</published>
@@ -7972,6 +7972,102 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=LA1268848224F0.CoastalFloodWarning.12688482BFA0LA.LCHCFWLCH.67daa02fface8946cdcd2034e252e671</id>
+<updated>2024-01-08T20:04:00-06:00</updated>
+<published>2024-01-08T20:04:00-06:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Coastal Flood Warning issued January 08 at 8:04PM CST until January 09 at 12:00AM CST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=LA1268848224F0.CoastalFloodWarning.12688482BFA0LA.LCHCFWLCH.67daa02fface8946cdcd2034e252e671"/>
+<summary>...COASTAL FLOOD WARNING REMAINS IN EFFECT UNTIL MIDNIGHT CST TONIGHT... * WHAT...Significant coastal flooding. * WHERE...Lower Vermilion, Lower Iberia and Lower St. Mary Parishes. * WHEN...Until midnight CST tonight.</summary>
+<cap:event>Coastal Flood Warning</cap:event>
+<cap:effective>2024-01-08T20:04:00-06:00</cap:effective>
+<cap:expires>2024-01-09T00:00:00-06:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Lower Iberia; Lower St. Mary; Lower Vermilion</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>022045 022101 022113</value>
+<valueName>UGC</valueName>
+<value>LAZ252 LAZ253 LAZ254</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KLCH.CF.W.0001.000000T0000Z-240109T0600Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=LA126884822360.SpecialWeatherStatement.1268848234F4LA.LCHSPSLCH.1816820a6e39f1e002eb70dbdd34ec6b</id>
+<updated>2024-01-08T20:00:00-06:00</updated>
+<published>2024-01-08T20:00:00-06:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Special Weather Statement issued January 08 at 8:00PM CST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=LA126884822360.SpecialWeatherStatement.1268848234F4LA.LCHSPSLCH.1816820a6e39f1e002eb70dbdd34ec6b"/>
+<summary>...STRONG THUNDERSTORMS WILL IMPACT SOUTHEASTERN RAPIDES...EASTERN EVANGELINE...NORTHWESTERN ST. MARTIN...AVOYELLES AND ST. LANDRY PARISHES THROUGH 845 PM CST... At 800 PM CST, Doppler radar was tracking strong thunderstorms along a line extending from near Acme to Savoy. Movement was east at 30 mph.</summary>
+<cap:event>Special Weather Statement</cap:event>
+<cap:effective>2024-01-08T20:00:00-06:00</cap:effective>
+<cap:expires>2024-01-08T20:45:00-06:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Observed</cap:certainty>
+<cap:areaDesc>Avoyelles; Evangeline; Rapides; St. Landry; Upper St. Martin</cap:areaDesc>
+<cap:polygon>31.32,-92 31.22,-91.99 31.23,-91.92 31.27,-91.95 31.3,-91.91 31.19,-91.68 31.05,-91.72 30.97,-91.81 30.85,-91.82 30.7,-91.73 30.5,-91.76 30.44,-91.64 30.36,-91.65 30.26,-91.59 30.38,-92.05 30.3,-92.14 30.44,-92.18 30.48,-92.24 30.48,-92.33 31.38,-92.19 31.32,-92</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>022009 022039 022079 022097 022099</value>
+<valueName>UGC</valueName>
+<value>LAZ028 LAZ029 LAZ032 LAZ033 LAZ045</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value></value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=LA1268848211CC.TornadoWatch.12688482BFA0LA.LCHWCNLCH.e9d8f9a685fddbbdfa66da97ac4cb5af</id>
+<updated>2024-01-08T19:55:00-06:00</updated>
+<published>2024-01-08T19:55:00-06:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Tornado Watch issued January 08 at 7:55PM CST until January 09 at 12:00AM CST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=LA1268848211CC.TornadoWatch.12688482BFA0LA.LCHWCNLCH.e9d8f9a685fddbbdfa66da97ac4cb5af"/>
+<summary>TORNADO WATCH 1, PREVIOUSLY IN EFFECT UNTIL 9 PM CST THIS EVENING, IS NOW IN EFFECT UNTIL MIDNIGHT CST TONIGHT FOR THE FOLLOWING AREAS IN LOUISIANA THIS WATCH INCLUDES 9 PARISHES IN CENTRAL LOUISIANA AVOYELLES EVANGELINE ST. LANDRY</summary>
+<cap:event>Tornado Watch</cap:event>
+<cap:effective>2024-01-08T19:55:00-06:00</cap:effective>
+<cap:expires>2024-01-09T00:00:00-06:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Severe</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Acadia; Avoyelles; Evangeline; Iberia; Lafayette; St. Landry; St. Martin; St. Mary; Vermilion</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>022001 022009 022039 022045 022055 022097 022099 022101 022113</value>
+<valueName>UGC</valueName>
+<value>LAC001 LAC009 LAC039 LAC045 LAC055 LAC097 LAC099 LAC101 LAC113</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.EXT.KLCH.TO.A.0001.000000T0000Z-240109T0600Z/</value>
+</cap:parameter>
+</entry>
+<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=LA126884820BF0.HighWindWarning.1268848334D0LA.LIXNPWLIX.f810d236656185121c724aecbaba29bb</id>
 <updated>2024-01-08T19:40:00-06:00</updated>
 <published>2024-01-08T19:40:00-06:00</published>
@@ -8102,38 +8198,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=LA12688482086C.SpecialWeatherStatement.126884822360LA.LCHSPSLCH.8b905cd6a77465a0f3d05ef8cd35f92c</id>
-<updated>2024-01-08T19:31:00-06:00</updated>
-<published>2024-01-08T19:31:00-06:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Special Weather Statement issued January 08 at 7:31PM CST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=LA12688482086C.SpecialWeatherStatement.126884822360LA.LCHSPSLCH.8b905cd6a77465a0f3d05ef8cd35f92c"/>
-<summary>...STRONG THUNDERSTORMS WILL IMPACT SOUTHEASTERN RAPIDES... EVANGELINE...AVOYELLES AND ST. LANDRY PARISHES THROUGH 800 PM CST... At 731 PM CST, Doppler radar was tracking strong thunderstorms along a line extending from Effie to near Bayou Chicot to near Reddell to near Mamou. Movement was northeast at 55 mph. HAZARD...Wind gusts up to 40 mph and pea size hail.</summary>
-<cap:event>Special Weather Statement</cap:event>
-<cap:effective>2024-01-08T19:31:00-06:00</cap:effective>
-<cap:expires>2024-01-08T20:00:00-06:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Observed</cap:certainty>
-<cap:areaDesc>Avoyelles; Evangeline; Rapides; St. Landry</cap:areaDesc>
-<cap:polygon>31.36,-92.08 31.33,-92.08 31.34,-92.03 31.22,-91.99 31.25,-91.96 31.23,-91.92 31.28,-91.95 31.3,-91.91 31.2,-91.68 31.02,-91.75 30.97,-91.81 30.9,-91.8 30.38,-92.05 30.3,-92.14 30.44,-92.18 30.44,-92.22 30.48,-92.24 30.49,-92.61 31.4,-92.21 31.4,-92.14 31.36,-92.08</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>022009 022039 022079 022097</value>
-<valueName>UGC</valueName>
-<value>LAZ028 LAZ029 LAZ032 LAZ033</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value></value>
-</cap:parameter>
-</entry>
-<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=LA126884820678.SpecialWeatherStatement.126884822F18LA.LCHSPSLCH.2196321e4a026583556d217a55172497</id>
 <updated>2024-01-08T19:26:00-06:00</updated>
 <published>2024-01-08T19:26:00-06:00</published>
@@ -8196,71 +8260,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <valueName>VTEC</valueName>
 <value>/O.EXT.KLIX.FL.W.0001.240110T0320Z-240113T0234Z/
 /ROBL1.1.ER.240110T0320Z.240111T1200Z.240112T2034Z.NO/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=LA12688481E1C0.TornadoWatch.126884824A70LA.LCHWCNLCH.98a1a2c2ec18df30714de94652e9d36c</id>
-<updated>2024-01-08T18:32:00-06:00</updated>
-<published>2024-01-08T18:32:00-06:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Tornado Watch issued January 08 at 6:32PM CST until January 08 at 9:00PM CST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=LA12688481E1C0.TornadoWatch.126884824A70LA.LCHWCNLCH.98a1a2c2ec18df30714de94652e9d36c"/>
-<summary>TORNADO WATCH 1 REMAINS VALID UNTIL 9 PM CST THIS EVENING FOR THE FOLLOWING AREAS IN LOUISIANA THIS WATCH INCLUDES 14 PARISHES IN CENTRAL LOUISIANA AVOYELLES EVANGELINE RAPIDES ST. LANDRY</summary>
-<cap:event>Tornado Watch</cap:event>
-<cap:effective>2024-01-08T18:32:00-06:00</cap:effective>
-<cap:expires>2024-01-08T21:00:00-06:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Severe</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Acadia; Allen; Avoyelles; Calcasieu; Cameron; Evangeline; Iberia; Jefferson Davis; Lafayette; Rapides; St. Landry; St. Martin; St. Mary; Vermilion</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>022001 022003 022009 022019 022023 022039 022045 022053 022055 022079 022097 022099 022101 022113</value>
-<valueName>UGC</valueName>
-<value>LAC001 LAC003 LAC009 LAC019 LAC023 LAC039 LAC045 LAC053 LAC055 LAC079 LAC097 LAC099 LAC101 LAC113</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KLCH.TO.A.0001.000000T0000Z-240109T0300Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=LA126884761C78.FlashFloodWarning.126884822F18LA.LIXFFWLIX.b1a6787433726098e98fca42b813d78a</id>
-<updated>2024-01-08T17:18:00-06:00</updated>
-<published>2024-01-08T17:18:00-06:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Flash Flood Warning issued January 08 at 5:18PM CST until January 08 at 8:30PM CST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=LA126884761C78.FlashFloodWarning.126884822F18LA.LIXFFWLIX.b1a6787433726098e98fca42b813d78a"/>
-<summary>The National Weather Service in New Orleans has issued a * Flash Flood Warning for... Southern St. Tammany Parish in southeastern Louisiana... Southwestern Hancock County in southern Mississippi... * Until 830 PM CST. * At 518 PM CST, Doppler radar indicated thunderstorms producing</summary>
-<cap:event>Flash Flood Warning</cap:event>
-<cap:effective>2024-01-08T17:18:00-06:00</cap:effective>
-<cap:expires>2024-01-08T20:30:00-06:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Immediate</cap:urgency>
-<cap:severity>Severe</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>St. Tammany</cap:areaDesc>
-<cap:polygon>30.37,-90.14 30.52,-90.08 30.43,-89.59 30.16,-89.63 30.18,-89.69 30.17,-89.7 30.18,-89.75 30.21,-89.79 30.23,-89.85 30.25,-89.87 30.26,-89.98 30.31,-90 30.32,-90.04 30.37,-90.09 30.37,-90.14</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>022103</value>
-<valueName>UGC</valueName>
-<value>LAC103</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.NEW.KLIX.FF.W.0002.240108T2318Z-240109T0230Z/
-/00000.0.ER.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -8394,70 +8393,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=LA12688475B300.CoastalFloodAdvisory.126884822360LA.LCHCFWLCH.5e50a354a762dba1328fb7fb65ef19ab</id>
-<updated>2024-01-08T14:48:00-06:00</updated>
-<published>2024-01-08T14:48:00-06:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Coastal Flood Advisory issued January 08 at 2:48PM CST until January 08 at 8:00PM CST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=LA12688475B300.CoastalFloodAdvisory.126884822360LA.LCHCFWLCH.5e50a354a762dba1328fb7fb65ef19ab"/>
-<summary>...COASTAL FLOOD ADVISORY REMAINS IN EFFECT UNTIL 8 PM CST THIS EVENING... * WHAT...Minor coastal flooding. * WHERE...In Louisiana, West Cameron and East Cameron Parishes. In Texas, Lower Jefferson County. * WHEN...Until 8 PM CST this evening.</summary>
-<cap:event>Coastal Flood Advisory</cap:event>
-<cap:effective>2024-01-08T14:48:00-06:00</cap:effective>
-<cap:expires>2024-01-08T20:00:00-06:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>East Cameron; West Cameron</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>022023</value>
-<valueName>UGC</valueName>
-<value>LAZ073 LAZ074</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KLCH.CF.Y.0001.000000T0000Z-240109T0200Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=LA12688475B300.CoastalFloodWarning.12688482BFA0LA.LCHCFWLCH.67daa02fface8946cdcd2034e252e671</id>
-<updated>2024-01-08T14:48:00-06:00</updated>
-<published>2024-01-08T14:48:00-06:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Coastal Flood Warning issued January 08 at 2:48PM CST until January 09 at 12:00AM CST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=LA12688475B300.CoastalFloodWarning.12688482BFA0LA.LCHCFWLCH.67daa02fface8946cdcd2034e252e671"/>
-<summary>...COASTAL FLOOD WARNING REMAINS IN EFFECT UNTIL MIDNIGHT CST TONIGHT... * WHAT...Significant coastal flooding. * WHERE...Lower Vermilion, Lower Iberia and Lower St. Mary Parishes. * WHEN...Until midnight CST tonight.</summary>
-<cap:event>Coastal Flood Warning</cap:event>
-<cap:effective>2024-01-08T14:48:00-06:00</cap:effective>
-<cap:expires>2024-01-09T00:00:00-06:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Lower Iberia; Lower St. Mary; Lower Vermilion</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>022045 022101 022113</value>
-<valueName>UGC</valueName>
-<value>LAZ252 LAZ253 LAZ254</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KLCH.CF.W.0001.000000T0000Z-240109T0600Z/</value>
-</cap:parameter>
-</entry>
-<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=LA12688475B1D4.WindAdvisory.126884911780LA.LCHNPWLCH.b95aa52a1eb276f0807bc76e2a79af46</id>
 <updated>2024-01-08T14:45:00-06:00</updated>
 <published>2024-01-08T14:45:00-06:00</published>
@@ -8522,39 +8457,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=LA12688475AB30.FloodWatch.126884822360LA.LCHFFALCH.d2fbaebf4c79a140a11fad297f56d23f</id>
-<updated>2024-01-08T14:28:00-06:00</updated>
-<published>2024-01-08T14:28:00-06:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Flood Watch issued January 08 at 2:28PM CST until January 08 at 8:00PM CST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=LA12688475AB30.FloodWatch.126884822360LA.LCHFFALCH.d2fbaebf4c79a140a11fad297f56d23f"/>
-<summary>...FLOOD WATCH IN EFFECT UNTIL MIDNIGHT CST TONIGHT... * WHAT...Flooding caused by excessive rainfall continues to be possible. * WHERE...Portions of central, southwest, and west central Louisiana, including the following parishes, in central Louisiana, Avoyelles, Evangeline, Rapides and St. Landry. In southwest</summary>
-<cap:event>Flood Watch</cap:event>
-<cap:effective>2024-01-08T14:28:00-06:00</cap:effective>
-<cap:expires>2024-01-08T20:00:00-06:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Future</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Possible</cap:certainty>
-<cap:areaDesc>East Cameron; West Cameron</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>022023</value>
-<valueName>UGC</valueName>
-<value>LAZ073 LAZ074</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.EXB.KLCH.FA.A.0001.000000T0000Z-240109T0600Z/
-/00000.0.ER.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
-</cap:parameter>
-</entry>
-<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=LA12688475AB30.FloodWatch.12688482BFA0LA.LCHFFALCH.be51a1621632368257815b6d187d5e9c</id>
 <updated>2024-01-08T14:28:00-06:00</updated>
 <published>2024-01-08T14:28:00-06:00</published>
@@ -8588,14 +8490,14 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=LA12688475AB30.FloodWatch.126884911780LA.LCHFFALCH.33038224b9b08196ec44eb6dc89a099e</id>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=LA12688475AB30.FloodWatch.126884911780LA.LCHFFALCH.d7fa0048bdf6ba6ebb7449cd3e3a1253</id>
 <updated>2024-01-08T14:28:00-06:00</updated>
 <published>2024-01-08T14:28:00-06:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
 <title>Flood Watch issued January 08 at 2:28PM CST until January 09 at 6:00PM CST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=LA12688475AB30.FloodWatch.126884911780LA.LCHFFALCH.33038224b9b08196ec44eb6dc89a099e"/>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=LA12688475AB30.FloodWatch.126884911780LA.LCHFFALCH.d7fa0048bdf6ba6ebb7449cd3e3a1253"/>
 <summary>...FLOOD WATCH IN EFFECT UNTIL MIDNIGHT CST TONIGHT... * WHAT...Flooding caused by excessive rainfall continues to be possible. * WHERE...Portions of central, southwest, and west central Louisiana, including the following parishes, in central Louisiana, Avoyelles, Evangeline, Rapides and St. Landry. In southwest</summary>
 <cap:event>Flood Watch</cap:event>
 <cap:effective>2024-01-08T14:28:00-06:00</cap:effective>
@@ -8606,13 +8508,13 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:urgency>Future</cap:urgency>
 <cap:severity>Moderate</cap:severity>
 <cap:certainty>Possible</cap:certainty>
-<cap:areaDesc>Allen; Avoyelles; Beauregard; Evangeline; Northern Acadia; Northern Calcasieu; Northern Jefferson Davis; Rapides; Southern Acadia; Southern Calcasieu; Southern Jefferson Davis; St. Landry; Vernon</cap:areaDesc>
+<cap:areaDesc>Allen; Avoyelles; Beauregard; East Cameron; Evangeline; Northern Acadia; Northern Calcasieu; Northern Jefferson Davis; Rapides; Southern Acadia; Southern Calcasieu; Southern Jefferson Davis; St. Landry; Vernon; West Cameron</cap:areaDesc>
 <cap:polygon></cap:polygon>
 <cap:geocode>
 <valueName>FIPS6</valueName>
-<value>022001 022003 022009 022011 022019 022039 022053 022079 022097 022115</value>
+<value>022001 022003 022009 022011 022019 022023 022039 022053 022079 022097 022115</value>
 <valueName>UGC</valueName>
-<value>LAZ027 LAZ028 LAZ029 LAZ030 LAZ031 LAZ032 LAZ033 LAZ141 LAZ142 LAZ143 LAZ241 LAZ242 LAZ243</value>
+<value>LAZ027 LAZ028 LAZ029 LAZ030 LAZ031 LAZ032 LAZ033 LAZ073 LAZ074 LAZ141 LAZ142 LAZ143 LAZ241 LAZ242 LAZ243</value>
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
@@ -9042,6 +8944,70 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value>/O.NEW.KBOX.WI.Y.0002.240109T2200Z-240110T1800Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=MD1268848226E4.WinterWeatherAdvisory.126884849460MD.LWXWSWLWX.e25eff04c165c9e9f976bfee9d85ab11</id>
+<updated>2024-01-08T21:09:00-05:00</updated>
+<published>2024-01-08T21:09:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Winter Weather Advisory issued January 08 at 9:09PM EST until January 09 at 1:00PM EST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MD1268848226E4.WinterWeatherAdvisory.126884849460MD.LWXWSWLWX.e25eff04c165c9e9f976bfee9d85ab11"/>
+<summary>...WINTER WEATHER ADVISORY REMAINS IN EFFECT FROM 4 AM TO 1 PM EST TUESDAY... * WHAT...Mixed precipitation expected. Total snow accumulation ranging from a coating to around an inch or two west of Keysers Ridge with 3 to 6 inches expected along and east of Keysers Ridge into western Allegany County including Savage</summary>
+<cap:event>Winter Weather Advisory</cap:event>
+<cap:effective>2024-01-08T21:09:00-05:00</cap:effective>
+<cap:expires>2024-01-09T13:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Extreme Western Allegany; Garrett</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>024001 024023</value>
+<valueName>UGC</valueName>
+<value>MDZ001 MDZ501</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KLWX.WW.Y.0003.240109T0900Z-240109T1800Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=MD1268848226E4.WinterWeatherAdvisory.126884849460MD.LWXWSWLWX.d4a595d98ab3ebd30546eb390c37ad48</id>
+<updated>2024-01-08T21:09:00-05:00</updated>
+<published>2024-01-08T21:09:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Winter Weather Advisory issued January 08 at 9:09PM EST until January 09 at 1:00PM EST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MD1268848226E4.WinterWeatherAdvisory.126884849460MD.LWXWSWLWX.d4a595d98ab3ebd30546eb390c37ad48"/>
+<summary>...WINTER WEATHER ADVISORY REMAINS IN EFFECT FROM 4 AM TO 1 PM EST TUESDAY... * WHAT...Mixed precipitation expected. Total snow accumulation ranging from a coating to around one inch in the Blue Ridge Mountains and valleys of the Potomac Highlands to around 1 to 3 inches near the Allegheny Front in western Maryland and</summary>
+<cap:event>Winter Weather Advisory</cap:event>
+<cap:effective>2024-01-08T21:09:00-05:00</cap:effective>
+<cap:expires>2024-01-09T13:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Central and Eastern Allegany</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>024001</value>
+<valueName>UGC</valueName>
+<value>MDZ502</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KLWX.WW.Y.0003.240109T0900Z-240109T1800Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -9631,70 +9597,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <valueName>VTEC</valueName>
 <value>/O.UPG.KAKQ.HW.A.0001.240109T2100Z-240110T0900Z/
 /O.NEW.KAKQ.HW.W.0001.240109T2100Z-240110T0900Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=MD12688475A040.WinterWeatherAdvisory.126884849460MD.LWXWSWLWX.e25eff04c165c9e9f976bfee9d85ab11</id>
-<updated>2024-01-08T15:00:00-05:00</updated>
-<published>2024-01-08T15:00:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Winter Weather Advisory issued January 08 at 3:00PM EST until January 09 at 1:00PM EST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MD12688475A040.WinterWeatherAdvisory.126884849460MD.LWXWSWLWX.e25eff04c165c9e9f976bfee9d85ab11"/>
-<summary>...WINTER WEATHER ADVISORY REMAINS IN EFFECT FROM 4 AM TO 1 PM EST TUESDAY... * WHAT...Mixed precipitation expected. Total snow accumulation ranging from a coating to around an inch or two west of Keysers Ridge with 3 to 6 inches expected along and east of Keysers Ridge into western Allegany County including Savage Mountain.</summary>
-<cap:event>Winter Weather Advisory</cap:event>
-<cap:effective>2024-01-08T15:00:00-05:00</cap:effective>
-<cap:expires>2024-01-09T13:00:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Extreme Western Allegany; Garrett</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>024001 024023</value>
-<valueName>UGC</valueName>
-<value>MDZ001 MDZ501</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KLWX.WW.Y.0003.240109T0900Z-240109T1800Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=MD12688475A040.WinterWeatherAdvisory.126884849460MD.LWXWSWLWX.d4a595d98ab3ebd30546eb390c37ad48</id>
-<updated>2024-01-08T15:00:00-05:00</updated>
-<published>2024-01-08T15:00:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Winter Weather Advisory issued January 08 at 3:00PM EST until January 09 at 1:00PM EST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MD12688475A040.WinterWeatherAdvisory.126884849460MD.LWXWSWLWX.d4a595d98ab3ebd30546eb390c37ad48"/>
-<summary>...WINTER WEATHER ADVISORY IN EFFECT FROM 4 AM TO 1 PM EST TUESDAY... * WHAT...Mixed precipitation expected. Total snow accumulation ranging from a coating to around one inch in the Blue Ridge Mountains and valleys of the Potomac Highlands to around 1 to 3 inches near the Allegheny Front in western Maryland and eastern</summary>
-<cap:event>Winter Weather Advisory</cap:event>
-<cap:effective>2024-01-08T15:00:00-05:00</cap:effective>
-<cap:expires>2024-01-09T13:00:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Central and Eastern Allegany</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>024001</value>
-<valueName>UGC</valueName>
-<value>MDZ502</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.EXA.KLWX.WW.Y.0003.240109T0900Z-240109T1800Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -12096,6 +11998,39 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=MS126884822874.FloodWarning.126884B0B5A4MS.JANFLSJAN.2733c4b09edbd2c60285265b224a4d72</id>
+<updated>2024-01-08T20:13:00-06:00</updated>
+<published>2024-01-08T20:13:00-06:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Flood Warning issued January 08 at 8:13PM CST until January 12 at 1:21AM CST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MS126884822874.FloodWarning.126884B0B5A4MS.JANFLSJAN.2733c4b09edbd2c60285265b224a4d72"/>
+<summary>...The Flood Warning continues for the following rivers in Mississippi... Tallahala Creek At Laurel affecting Jones County. ...FLOOD WARNING NOW IN EFFECT FROM TUESDAY MORNING TO EARLY FRIDAY MORNING... * WHAT...Minor flooding is forecast.</summary>
+<cap:event>Flood Warning</cap:event>
+<cap:effective>2024-01-08T20:13:00-06:00</cap:effective>
+<cap:expires>2024-01-12T01:21:00-06:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Jones</cap:areaDesc>
+<cap:polygon>31.37,-89.15 31.56,-89.23 31.81,-89.13 31.82,-89.02 31.56,-89.11 31.4,-89.14 31.37,-89.15</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>028067</value>
+<valueName>UGC</valueName>
+<value>MSC067</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.EXT.KJAN.FL.W.0001.240109T1415Z-240112T0721Z/
+/LURM6.1.ER.240109T1415Z.240110T1800Z.240111T1321Z.NO/</value>
+</cap:parameter>
+</entry>
+<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=MS126884820BF0.HighWindWarning.1268848334D0MS.LIXNPWLIX.47a7b6d2ef1a45833eb3c19d0872f0b4</id>
 <updated>2024-01-08T19:40:00-06:00</updated>
 <published>2024-01-08T19:40:00-06:00</published>
@@ -12255,104 +12190,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value>/O.CON.KLIX.CF.W.0001.000000T0000Z-240109T1800Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=MS126884820B28.SpecialWeatherStatement.12688482293CMS.LIXSPSLIX.7163e0e505a4c0124d3422a9f0757d93</id>
-<updated>2024-01-08T19:38:00-06:00</updated>
-<published>2024-01-08T19:38:00-06:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Special Weather Statement issued January 08 at 7:38PM CST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MS126884820B28.SpecialWeatherStatement.12688482293CMS.LIXSPSLIX.7163e0e505a4c0124d3422a9f0757d93"/>
-<summary>...A STRONG THUNDERSTORM WILL IMPACT PORTIONS OF PIKE AND NORTHEASTERN AMITE COUNTIES THROUGH 815 PM CST... At 738 PM CST, Doppler radar was tracking a strong thunderstorm near Magnolia, or near Mccomb, moving northeast at 60 mph. HAZARD...Wind gusts up to 50 mph. SOURCE...Radar indicated.</summary>
-<cap:event>Special Weather Statement</cap:event>
-<cap:effective>2024-01-08T19:38:00-06:00</cap:effective>
-<cap:expires>2024-01-08T20:15:00-06:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Observed</cap:certainty>
-<cap:areaDesc>Amite; Pike</cap:areaDesc>
-<cap:polygon>31.23,-90.26 31.03,-90.53 31.11,-90.73 31.35,-90.58 31.35,-90.26 31.23,-90.26</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>028005 028113</value>
-<valueName>UGC</valueName>
-<value>MSZ069 MSZ070</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value></value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=MS12688481DA54.FlashFloodWarning.12688482504CMS.LIXFFWLIX.695d3c2547db892f6cc4791bc9d34aa9</id>
-<updated>2024-01-08T18:13:00-06:00</updated>
-<published>2024-01-08T18:13:00-06:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Flash Flood Warning issued January 08 at 6:13PM CST until January 08 at 9:15PM CST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MS12688481DA54.FlashFloodWarning.12688482504CMS.LIXFFWLIX.695d3c2547db892f6cc4791bc9d34aa9"/>
-<summary>The National Weather Service in New Orleans has issued a * Flash Flood Warning for... Northern Hancock County in southern Mississippi... Northwestern Harrison County in southern Mississippi... Southeastern Pearl River County in southern Mississippi... * Until 915 PM CST.</summary>
-<cap:event>Flash Flood Warning</cap:event>
-<cap:effective>2024-01-08T18:13:00-06:00</cap:effective>
-<cap:expires>2024-01-08T21:15:00-06:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Immediate</cap:urgency>
-<cap:severity>Severe</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Hancock; Harrison; Pearl River</cap:areaDesc>
-<cap:polygon>30.52,-89.63 30.69,-89.34 30.65,-89.34 30.65,-89.24 30.68,-89.23 30.68,-88.94 30.32,-89.47 30.52,-89.63</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>028045 028047 028109</value>
-<valueName>UGC</valueName>
-<value>MSC045 MSC047 MSC109</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.NEW.KLIX.FF.W.0003.240109T0013Z-240109T0315Z/
-/00000.0.ER.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=MS126884761C78.FlashFloodWarning.126884822F18MS.LIXFFWLIX.645661103b56b7c1f94e7cbc63ff6739</id>
-<updated>2024-01-08T17:18:00-06:00</updated>
-<published>2024-01-08T17:18:00-06:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Flash Flood Warning issued January 08 at 5:18PM CST until January 08 at 8:30PM CST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MS126884761C78.FlashFloodWarning.126884822F18MS.LIXFFWLIX.645661103b56b7c1f94e7cbc63ff6739"/>
-<summary>The National Weather Service in New Orleans has issued a * Flash Flood Warning for... Southern St. Tammany Parish in southeastern Louisiana... Southwestern Hancock County in southern Mississippi... * Until 830 PM CST. * At 518 PM CST, Doppler radar indicated thunderstorms producing</summary>
-<cap:event>Flash Flood Warning</cap:event>
-<cap:effective>2024-01-08T17:18:00-06:00</cap:effective>
-<cap:expires>2024-01-08T20:30:00-06:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Immediate</cap:urgency>
-<cap:severity>Severe</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Hancock</cap:areaDesc>
-<cap:polygon>30.37,-90.14 30.52,-90.08 30.43,-89.59 30.16,-89.63 30.18,-89.69 30.17,-89.7 30.18,-89.75 30.21,-89.79 30.23,-89.85 30.25,-89.87 30.26,-89.98 30.31,-90 30.32,-90.04 30.37,-90.09 30.37,-90.14</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>028045</value>
-<valueName>UGC</valueName>
-<value>MSC045</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.NEW.KLIX.FF.W.0002.240108T2318Z-240109T0230Z/
-/00000.0.ER.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -12547,39 +12384,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value>/O.CON.KMOB.WI.Y.0002.240108T2200Z-240110T0000Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=MS12688474C38C.FloodWarning.126884B0B608MS.JANFLWJAN.2733c4b09edbd2c60285265b224a4d72</id>
-<updated>2024-01-08T08:35:00-06:00</updated>
-<published>2024-01-08T08:35:00-06:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Flood Warning issued January 08 at 8:35AM CST until January 12 at 1:22AM CST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MS12688474C38C.FloodWarning.126884B0B608MS.JANFLWJAN.2733c4b09edbd2c60285265b224a4d72"/>
-<summary>...The National Weather Service in Jackson MS has issued a Flood Warning for the following rivers in Mississippi... Tallahala Creek At Laurel affecting Jones County. ...FLOOD WARNING IN EFFECT FROM TUESDAY MORNING TO EARLY FRIDAY MORNING... * WHAT...Minor flooding is forecast.</summary>
-<cap:event>Flood Warning</cap:event>
-<cap:effective>2024-01-08T08:35:00-06:00</cap:effective>
-<cap:expires>2024-01-12T01:22:00-06:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Jones</cap:areaDesc>
-<cap:polygon>31.37,-89.15 31.56,-89.23 31.81,-89.13 31.82,-89.02 31.56,-89.11 31.4,-89.14 31.37,-89.15</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>028067</value>
-<valueName>UGC</valueName>
-<value>MSC067</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.NEW.KJAN.FL.W.0001.240109T1415Z-240112T0722Z/
-/LURM6.1.ER.240109T1415Z.240110T1800Z.240111T1321Z.NO/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -13157,6 +12961,39 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value>/O.CON.KTFX.HW.A.0001.240109T1900Z-240110T0700Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=NC126884822810.FloodWarning.126884AF9C00NC.GSPFLWGSP.5f66c4a7f1c55becc468b1ac7f3c2ee0</id>
+<updated>2024-01-08T21:12:00-05:00</updated>
+<published>2024-01-08T21:12:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Flood Warning issued January 08 at 9:12PM EST until January 11 at 7:00PM EST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=NC126884822810.FloodWarning.126884AF9C00NC.GSPFLWGSP.5f66c4a7f1c55becc468b1ac7f3c2ee0"/>
+<summary>...Forecast flooding changed from Minor to Moderate severity and increased in duration for the following rivers in North Carolina... French Broad River At Blantyre affecting Henderson and Transylvania Counties. .A potent storm system is expected to produce 4-6 inches of rainfall across the upper French Broad River watershed from early Tuesday</summary>
+<cap:event>Flood Warning</cap:event>
+<cap:effective>2024-01-08T21:12:00-05:00</cap:effective>
+<cap:expires>2024-01-11T19:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Henderson; Transylvania</cap:areaDesc>
+<cap:polygon>35.38,-82.57 35.37,-82.5 35.29,-82.54 35.21,-82.67 35.26,-82.74 35.34,-82.61 35.38,-82.57</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>037089 037175</value>
+<valueName>UGC</valueName>
+<value>NCC089 NCC175</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.EXT.KGSP.FL.W.0002.240109T1700Z-240112T0000Z/
+/BLAN7.2.ER.240109T2344Z.240110T1200Z.240111T1200Z.NO/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -14929,39 +14766,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=NC126884758D1C.FloodWarning.126884A318E0NC.GSPFLWGSP.5f66c4a7f1c55becc468b1ac7f3c2ee0</id>
-<updated>2024-01-08T14:51:00-05:00</updated>
-<published>2024-01-08T14:51:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Flood Warning issued January 08 at 2:51PM EST until January 11 at 1:00PM EST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=NC126884758D1C.FloodWarning.126884A318E0NC.GSPFLWGSP.5f66c4a7f1c55becc468b1ac7f3c2ee0"/>
-<summary>...The National Weather Service in Greenville-Spartanburg SC has issued a Flood Warning for the following rivers in North Carolina... French Broad River At Blantyre affecting Henderson and Transylvania Counties. French Broad River Near Fletcher affecting Henderson and Buncombe Counties.</summary>
-<cap:event>Flood Warning</cap:event>
-<cap:effective>2024-01-08T14:51:00-05:00</cap:effective>
-<cap:expires>2024-01-11T13:00:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Henderson; Transylvania</cap:areaDesc>
-<cap:polygon>35.38,-82.57 35.37,-82.5 35.29,-82.54 35.21,-82.67 35.26,-82.74 35.34,-82.61 35.38,-82.57</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>037089 037175</value>
-<valueName>UGC</valueName>
-<value>NCC089 NCC175</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.NEW.KGSP.FL.W.0002.240109T1700Z-240111T1800Z/
-/BLAN7.1.ER.240110T0000Z.240110T1200Z.240111T0916Z.NO/</value>
-</cap:parameter>
-</entry>
-<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=NC126884758100.FloodWatch.126884918CB0NC.RAHFFARAH.a62c1cc821688fe5b71435d2b922ae59</id>
 <updated>2024-01-08T14:20:00-05:00</updated>
 <published>2024-01-08T14:20:00-05:00</published>
@@ -15057,6 +14861,39 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value>/O.CON.KRAH.WI.Y.0001.240109T1500Z-240110T0300Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=NE126884821168.FloodAdvisory.126884844640NE.LBFFLSLBF.c8300683cee59c099babddff996d3628</id>
+<updated>2024-01-08T19:54:00-06:00</updated>
+<published>2024-01-08T19:54:00-06:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Flood Advisory issued January 08 at 7:54PM CST until further notice by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=NE126884821168.FloodAdvisory.126884844640NE.LBFFLSLBF.c8300683cee59c099babddff996d3628"/>
+<summary>...The Flood Advisory continues for the following rivers in Nebraska... North Platte River at Lewellen affecting Garden and Keith Counties. .An ice jam will cause water to infiltrate the lowlands along the river.</summary>
+<cap:event>Flood Advisory</cap:event>
+<cap:effective>2024-01-08T19:54:00-06:00</cap:effective>
+<cap:expires>2024-01-09T10:00:00-06:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Garden; Keith</cap:areaDesc>
+<cap:polygon>41.36,-102.35 41.4,-102.35 41.3,-101.96 41.26,-101.97 41.36,-102.35</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>031069 031101</value>
+<valueName>UGC</valueName>
+<value>NEC069 NEC101</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KLBF.FL.Y.0001.000000T0000Z-000000T0000Z/
+/LEWN1.N.IJ.000000T0000Z.000000T0000Z.000000T0000Z.UU/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -15442,39 +15279,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value>/O.EXT.KFSD.WS.W.0001.000000T0000Z-240110T0000Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=NE126884751850.FloodAdvisory.126884829890NE.LBFFLSLBF.c8300683cee59c099babddff996d3628</id>
-<updated>2024-01-08T10:52:00-06:00</updated>
-<published>2024-01-08T10:52:00-06:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Flood Advisory issued January 08 at 10:52AM CST until further notice by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=NE126884751850.FloodAdvisory.126884829890NE.LBFFLSLBF.c8300683cee59c099babddff996d3628"/>
-<summary>...The National Weather Service in North Platte has issued a Flood Advisory for the following rivers in Nebraska... North Platte River at Lewellen affecting Garden and Keith Counties. .An ice jam will cause water to infiltrate the lowlands along the river.</summary>
-<cap:event>Flood Advisory</cap:event>
-<cap:effective>2024-01-08T10:52:00-06:00</cap:effective>
-<cap:expires>2024-01-08T23:00:00-06:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Garden; Keith</cap:areaDesc>
-<cap:polygon>41.36,-102.35 41.4,-102.35 41.3,-101.96 41.26,-101.97 41.36,-102.35</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>031069 031101</value>
-<valueName>UGC</valueName>
-<value>NEC069 NEC101</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.NEW.KLBF.FL.Y.0001.240108T1652Z-000000T0000Z/
-/LEWN1.N.IJ.000000T0000Z.000000T0000Z.000000T0000Z.UU/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -21619,6 +21423,135 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=TX1268848226E4.SpecialWeatherStatement.126884825628TX.BROSPSBRO.1271af03893acbf9538c1d1e1968e0bc</id>
+<updated>2024-01-08T20:09:00-06:00</updated>
+<published>2024-01-08T20:09:00-06:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Special Weather Statement issued January 08 at 8:09PM CST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=TX1268848226E4.SpecialWeatherStatement.126884825628TX.BROSPSBRO.1271af03893acbf9538c1d1e1968e0bc"/>
+<summary>...Cold Front Arriving With Gusty Northwesterly Winds... The cold front is working south through Cameron County with gusty northwesterly winds in its wake. Sustained northerly winds approach 30 mph with gusts to 40-45 mph with the frontal passage. If these winds persist beyond the next hour, a Wind Advisory may be issued.</summary>
+<cap:event>Special Weather Statement</cap:event>
+<cap:effective>2024-01-08T20:09:00-06:00</cap:effective>
+<cap:expires>2024-01-08T21:30:00-06:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Observed</cap:certainty>
+<cap:areaDesc>Inland Cameron; Inland Willacy</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>048061 048489</value>
+<valueName>UGC</valueName>
+<value>TXZ254 TXZ255</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value></value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=TX126884821294.WindAdvisory.126884849460TX.EWXNPWEWX.3bd83f5c3ec39b83e02481575da3acba</id>
+<updated>2024-01-08T19:57:00-06:00</updated>
+<published>2024-01-08T19:57:00-06:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Wind Advisory issued January 08 at 7:57PM CST until January 09 at 12:00PM CST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=TX126884821294.WindAdvisory.126884849460TX.EWXNPWEWX.3bd83f5c3ec39b83e02481575da3acba"/>
+<summary>...WIND ADVISORY REMAINS IN EFFECT UNTIL NOON CST TUESDAY... * WHAT...West-northwesterly winds of 25 to 35 mph with gusts up to 50 mph are possible. * WHERE...Portions of south central Texas including the Winter Garden, Edwards Plateau, and Hill Country. * WHEN...Until noon CST Tuesday.</summary>
+<cap:event>Wind Advisory</cap:event>
+<cap:effective>2024-01-08T19:57:00-06:00</cap:effective>
+<cap:expires>2024-01-09T12:00:00-06:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Bandera; Blanco; Burnet; Dimmit; Edwards; Gillespie; Kendall; Kerr; Llano; Real; Uvalde; Zavala</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>048019 048031 048053 048127 048137 048171 048259 048265 048299 048385 048463 048507</value>
+<valueName>UGC</valueName>
+<value>TXZ171 TXZ172 TXZ184 TXZ185 TXZ186 TXZ187 TXZ188 TXZ189 TXZ190 TXZ203 TXZ218 TXZ228</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KEWX.WI.Y.0001.000000T0000Z-240109T1800Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=TX126884821294.WindAdvisory.126884849460TX.EWXNPWEWX.42da13d4799d04adb8fa489aeb43095f</id>
+<updated>2024-01-08T19:57:00-06:00</updated>
+<published>2024-01-08T19:57:00-06:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Wind Advisory issued January 08 at 7:57PM CST until January 09 at 12:00PM CST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=TX126884821294.WindAdvisory.126884849460TX.EWXNPWEWX.42da13d4799d04adb8fa489aeb43095f"/>
+<summary>...WIND ADVISORY REMAINS IN EFFECT UNTIL NOON CST TUESDAY... * WHAT...West-northwest winds 20 to 35 mph with gusts up to 50 mph expected. * WHERE...Portions of south central Texas, including the I- 35 corridor, and coastal Plains. * WHEN...Until noon CST Tuesday.</summary>
+<cap:event>Wind Advisory</cap:event>
+<cap:effective>2024-01-08T19:57:00-06:00</cap:effective>
+<cap:expires>2024-01-09T12:00:00-06:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Atascosa; Bastrop; Bexar; Caldwell; Comal; De Witt; Fayette; Frio; Gonzales; Guadalupe; Hays; Karnes; Lavaca; Lee; Medina; Travis; Williamson; Wilson</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>048013 048021 048029 048055 048091 048123 048149 048163 048177 048187 048209 048255 048285 048287 048325 048453 048491 048493</value>
+<valueName>UGC</valueName>
+<value>TXZ173 TXZ191 TXZ192 TXZ193 TXZ194 TXZ204 TXZ205 TXZ206 TXZ207 TXZ208 TXZ209 TXZ219 TXZ220 TXZ221 TXZ222 TXZ223 TXZ224 TXZ225</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KEWX.WI.Y.0002.000000T0000Z-240109T1800Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=TX126884821294.WindAdvisory.126884849460TX.EWXNPWEWX.2fad3444f1e9ef7b7ddafc17e2a4ed8d</id>
+<updated>2024-01-08T19:57:00-06:00</updated>
+<published>2024-01-08T19:57:00-06:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Wind Advisory issued January 08 at 7:57PM CST until January 09 at 12:00PM CST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=TX126884821294.WindAdvisory.126884849460TX.EWXNPWEWX.2fad3444f1e9ef7b7ddafc17e2a4ed8d"/>
+<summary>...WIND ADVISORY NOW IN EFFECT UNTIL NOON CST TUESDAY... ...HIGH WIND WARNING IS CANCELLED... * WHAT...Northwest winds 25 to 35 mph with gusts up to 50 mph expected. * WHERE...Val Verde, Kinney and Maverick Counties. * WHEN...Until noon CST Tuesday.</summary>
+<cap:event>Wind Advisory</cap:event>
+<cap:effective>2024-01-08T19:57:00-06:00</cap:effective>
+<cap:expires>2024-01-09T12:00:00-06:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Kinney; Maverick; Val Verde</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>048271 048323 048465</value>
+<valueName>UGC</valueName>
+<value>TXZ183 TXZ202 TXZ217</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CAN.KEWX.HW.W.0001.000000T0000Z-240109T0200Z/
+/O.EXT.KEWX.WI.Y.0003.240109T0157Z-240109T1800Z/</value>
+</cap:parameter>
+</entry>
+<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=TX126884820C54.WindAdvisory.126884911780TX.HGXNPWHGX.6512c9aa7efd85ca4058d0c90e99b256</id>
 <updated>2024-01-08T19:41:00-06:00</updated>
 <published>2024-01-08T19:41:00-06:00</published>
@@ -21907,203 +21840,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=TX12688475F5CC.HighWindWarning.126884822360TX.EWXNPWEWX.2bb745b17576ce617148de65d529e69a</id>
-<updated>2024-01-08T16:19:00-06:00</updated>
-<published>2024-01-08T16:19:00-06:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>High Wind Warning issued January 08 at 4:19PM CST until January 08 at 8:00PM CST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=TX12688475F5CC.HighWindWarning.126884822360TX.EWXNPWEWX.2bb745b17576ce617148de65d529e69a"/>
-<summary>...HIGH WIND WARNING IN EFFECT UNTIL 8 PM CST THIS EVENING... ...WIND ADVISORY IN EFFECT FROM 8 PM THIS EVENING TO NOON CST TUESDAY... * WHAT...For the High Wind Warning, northwest winds 35 to 45 mph with gusts up to 60 mph. For the Wind Advisory, northwest winds 25 to 35 mph with gusts up to 50 mph expected.</summary>
-<cap:event>High Wind Warning</cap:event>
-<cap:effective>2024-01-08T16:19:00-06:00</cap:effective>
-<cap:expires>2024-01-08T20:00:00-06:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Severe</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Kinney; Maverick; Val Verde</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>048271 048323 048465</value>
-<valueName>UGC</valueName>
-<value>TXZ183 TXZ202 TXZ217</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.UPG.KEWX.WI.Y.0001.000000T0000Z-240109T1800Z/
-/O.NEW.KEWX.HW.W.0001.240108T2219Z-240109T0200Z/
-/O.NEW.KEWX.WI.Y.0003.240109T0200Z-240109T1800Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=TX12688475F5CC.WindAdvisory.126884849460TX.EWXNPWEWX.3bd83f5c3ec39b83e02481575da3acba</id>
-<updated>2024-01-08T16:19:00-06:00</updated>
-<published>2024-01-08T16:19:00-06:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Wind Advisory issued January 08 at 4:19PM CST until January 09 at 12:00PM CST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=TX12688475F5CC.WindAdvisory.126884849460TX.EWXNPWEWX.3bd83f5c3ec39b83e02481575da3acba"/>
-<summary>...WIND ADVISORY REMAINS IN EFFECT UNTIL NOON CST TUESDAY... * WHAT...West-northwesterly winds of 25 to 35 mph with gusts up to 50 mph are possible. The higher elevations in the Hill Country and Edwards Plateau could see a few gusts near 55 mph. * WHERE...Portions of south central Texas including the Winter Garden, Edwards Plateau, and Hill Country.</summary>
-<cap:event>Wind Advisory</cap:event>
-<cap:effective>2024-01-08T16:19:00-06:00</cap:effective>
-<cap:expires>2024-01-09T12:00:00-06:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Bandera; Blanco; Burnet; Dimmit; Edwards; Gillespie; Kendall; Kerr; Llano; Real; Uvalde; Zavala</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>048019 048031 048053 048127 048137 048171 048259 048265 048299 048385 048463 048507</value>
-<valueName>UGC</valueName>
-<value>TXZ171 TXZ172 TXZ184 TXZ185 TXZ186 TXZ187 TXZ188 TXZ189 TXZ190 TXZ203 TXZ218 TXZ228</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KEWX.WI.Y.0001.000000T0000Z-240109T1800Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=TX12688475F5CC.WindAdvisory.126884849460TX.EWXNPWEWX.42da13d4799d04adb8fa489aeb43095f</id>
-<updated>2024-01-08T16:19:00-06:00</updated>
-<published>2024-01-08T16:19:00-06:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Wind Advisory issued January 08 at 4:19PM CST until January 09 at 12:00PM CST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=TX12688475F5CC.WindAdvisory.126884849460TX.EWXNPWEWX.42da13d4799d04adb8fa489aeb43095f"/>
-<summary>...WIND ADVISORY REMAINS IN EFFECT UNTIL NOON CST TUESDAY... * WHAT...Northwest winds 20 to 35 mph with gusts up to 50 mph expected. * WHERE...Portions of south central Texas, including the I- 35 corridor, and coastal Plains. * WHEN...Until noon CST Tuesday.</summary>
-<cap:event>Wind Advisory</cap:event>
-<cap:effective>2024-01-08T16:19:00-06:00</cap:effective>
-<cap:expires>2024-01-09T12:00:00-06:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Atascosa; Bastrop; Bexar; Caldwell; Comal; De Witt; Fayette; Frio; Gonzales; Guadalupe; Hays; Karnes; Lavaca; Lee; Medina; Travis; Williamson; Wilson</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>048013 048021 048029 048055 048091 048123 048149 048163 048177 048187 048209 048255 048285 048287 048325 048453 048491 048493</value>
-<valueName>UGC</valueName>
-<value>TXZ173 TXZ191 TXZ192 TXZ193 TXZ194 TXZ204 TXZ205 TXZ206 TXZ207 TXZ208 TXZ209 TXZ219 TXZ220 TXZ221 TXZ222 TXZ223 TXZ224 TXZ225</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KEWX.WI.Y.0002.000000T0000Z-240109T1800Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=TX12688475F5CC.WindAdvisory.126884849460TX.EWXNPWEWX.2fad3444f1e9ef7b7ddafc17e2a4ed8d</id>
-<updated>2024-01-08T16:19:00-06:00</updated>
-<published>2024-01-08T16:19:00-06:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Wind Advisory issued January 08 at 4:19PM CST until January 09 at 12:00PM CST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=TX12688475F5CC.WindAdvisory.126884849460TX.EWXNPWEWX.2fad3444f1e9ef7b7ddafc17e2a4ed8d"/>
-<summary>...HIGH WIND WARNING IN EFFECT UNTIL 8 PM CST THIS EVENING... ...WIND ADVISORY IN EFFECT FROM 8 PM THIS EVENING TO NOON CST TUESDAY... * WHAT...For the High Wind Warning, northwest winds 35 to 45 mph with gusts up to 60 mph. For the Wind Advisory, northwest winds 25 to 35 mph with gusts up to 50 mph expected.</summary>
-<cap:event>Wind Advisory</cap:event>
-<cap:effective>2024-01-08T16:19:00-06:00</cap:effective>
-<cap:expires>2024-01-09T12:00:00-06:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Kinney; Maverick; Val Verde</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>048271 048323 048465</value>
-<valueName>UGC</valueName>
-<value>TXZ183 TXZ202 TXZ217</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.UPG.KEWX.WI.Y.0001.000000T0000Z-240109T1800Z/
-/O.NEW.KEWX.HW.W.0001.240108T2219Z-240109T0200Z/
-/O.NEW.KEWX.WI.Y.0003.240109T0200Z-240109T1800Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=TX12688475DB3C.BlizzardWarning.126884822360TX.LUBWSWLUB.dcecb8ceefae62b177f312053f2403b9</id>
-<updated>2024-01-08T15:51:00-06:00</updated>
-<published>2024-01-08T15:51:00-06:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Blizzard Warning issued January 08 at 3:51PM CST until January 08 at 8:00PM CST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=TX12688475DB3C.BlizzardWarning.126884822360TX.LUBWSWLUB.dcecb8ceefae62b177f312053f2403b9"/>
-<summary>...BLIZZARD WARNING IN EFFECT UNTIL 8 PM CST THIS EVENING... * WHAT...Blizzard conditions. Additional snow accumulations up to two inches. Winds gusting as high as 60 mph. * WHERE...Castro and Parmer Counties. * WHEN...Until 8 PM CST this evening. * IMPACTS...Plan on slippery road conditions. The hazardous</summary>
-<cap:event>Blizzard Warning</cap:event>
-<cap:effective>2024-01-08T15:51:00-06:00</cap:effective>
-<cap:expires>2024-01-08T20:00:00-06:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Severe</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Castro; Parmer</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>048069 048369</value>
-<valueName>UGC</valueName>
-<value>TXZ021 TXZ022</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.UPG.KLUB.WW.Y.0002.000000T0000Z-240109T0200Z/
-/O.NEW.KLUB.BZ.W.0001.240108T2151Z-240109T0200Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=TX12688475DB3C.WinterWeatherAdvisory.126884822360TX.LUBWSWLUB.e6693780d01c541c4bf22ad719bccd1a</id>
-<updated>2024-01-08T15:51:00-06:00</updated>
-<published>2024-01-08T15:51:00-06:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Winter Weather Advisory issued January 08 at 3:51PM CST until January 08 at 8:00PM CST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=TX12688475DB3C.WinterWeatherAdvisory.126884822360TX.LUBWSWLUB.e6693780d01c541c4bf22ad719bccd1a"/>
-<summary>...WINTER WEATHER ADVISORY IN EFFECT UNTIL 8 PM CST THIS EVENING... * WHAT...Snow. Additional snow accumulations up to one inch. Winds gusting as high as 60 mph. * WHERE...Bailey, Hale, Lamb, and Swisher Counties. * WHEN...Until 8 PM CST this evening. * IMPACTS...Plan on slippery road conditions. The hazardous</summary>
-<cap:event>Winter Weather Advisory</cap:event>
-<cap:effective>2024-01-08T15:51:00-06:00</cap:effective>
-<cap:expires>2024-01-08T20:00:00-06:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Bailey; Hale; Lamb; Swisher</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>048017 048189 048279 048437</value>
-<valueName>UGC</valueName>
-<value>TXZ023 TXZ027 TXZ028 TXZ029</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.NEW.KLUB.WW.Y.0003.240108T2151Z-240109T0200Z/</value>
-</cap:parameter>
-</entry>
-<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=TX12688475D434.HighWindWarning.12688483AA00TX.AMANPWAMA.ebb74ab13c72eae17745a2aa05ec5c70</id>
 <updated>2024-01-08T15:33:00-06:00</updated>
 <published>2024-01-08T15:33:00-06:00</published>
@@ -22198,38 +21934,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <valueName>VTEC</valueName>
 <value>/O.UPG.KBRO.FW.A.0001.240109T0200Z-240110T0000Z/
 /O.NEW.KBRO.FW.W.0001.240109T0200Z-240110T0000Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=TX12688475B300.CoastalFloodAdvisory.126884822360TX.LCHCFWLCH.d27ac8126aac964190ddd1dff38eddc8</id>
-<updated>2024-01-08T14:48:00-06:00</updated>
-<published>2024-01-08T14:48:00-06:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Coastal Flood Advisory issued January 08 at 2:48PM CST until January 08 at 8:00PM CST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=TX12688475B300.CoastalFloodAdvisory.126884822360TX.LCHCFWLCH.d27ac8126aac964190ddd1dff38eddc8"/>
-<summary>...COASTAL FLOOD ADVISORY REMAINS IN EFFECT UNTIL 8 PM CST THIS EVENING... * WHAT...Minor coastal flooding. * WHERE...In Louisiana, West Cameron and East Cameron Parishes. In Texas, Lower Jefferson County. * WHEN...Until 8 PM CST this evening.</summary>
-<cap:event>Coastal Flood Advisory</cap:event>
-<cap:effective>2024-01-08T14:48:00-06:00</cap:effective>
-<cap:expires>2024-01-08T20:00:00-06:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Lower Jefferson</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>048245</value>
-<valueName>UGC</valueName>
-<value>TXZ615</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KLCH.CF.Y.0001.000000T0000Z-240109T0200Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -23268,6 +22972,38 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=VA1268848226E4.WinterWeatherAdvisory.126884849460VA.LWXWSWLWX.f5ea955b3ad80ccb70bca8d41da97ee9</id>
+<updated>2024-01-08T21:09:00-05:00</updated>
+<published>2024-01-08T21:09:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Winter Weather Advisory issued January 08 at 9:09PM EST until January 09 at 1:00PM EST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=VA1268848226E4.WinterWeatherAdvisory.126884849460VA.LWXWSWLWX.f5ea955b3ad80ccb70bca8d41da97ee9"/>
+<summary>...WINTER WEATHER ADVISORY REMAINS IN EFFECT FROM 4 AM TO 1 PM EST TUESDAY... * WHAT...Mixed precipitation expected. Total snow accumulation ranging from a coating to around one inch in the Blue Ridge Mountains and valleys of the Potomac Highlands to around 1 to 3 inches near the Allegheny Front in western Maryland and</summary>
+<cap:event>Winter Weather Advisory</cap:event>
+<cap:effective>2024-01-08T21:09:00-05:00</cap:effective>
+<cap:expires>2024-01-09T13:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Augusta; Central Virginia Blue Ridge; Eastern Highland; Northern Virginia Blue Ridge; Page; Rockingham; Shenandoah; Western Highland</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>051015 051079 051091 051113 051125 051139 051157 051165 051171 051660 051790 051820</value>
+<valueName>UGC</valueName>
+<value>VAZ025 VAZ026 VAZ027 VAZ029 VAZ503 VAZ504 VAZ507 VAZ508</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KLWX.WW.Y.0003.240109T0900Z-240109T1800Z/</value>
+</cap:parameter>
+</entry>
+<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=VA12688476218C.FloodWatch.126884A0F984VA.LWXFFALWX.a68c0899c957fd5373ec215d733977d8</id>
 <updated>2024-01-08T18:31:00-05:00</updated>
 <published>2024-01-08T18:31:00-05:00</published>
@@ -24116,70 +23852,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value>/O.CON.KMRX.WI.Y.0002.240109T0600Z-240110T0000Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=VA12688475A040.WinterWeatherAdvisory.126884849460VA.LWXWSWLWX.7cd39346ee09207861957104c417c69f</id>
-<updated>2024-01-08T15:00:00-05:00</updated>
-<published>2024-01-08T15:00:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Winter Weather Advisory issued January 08 at 3:00PM EST until January 09 at 1:00PM EST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=VA12688475A040.WinterWeatherAdvisory.126884849460VA.LWXWSWLWX.7cd39346ee09207861957104c417c69f"/>
-<summary>...WINTER WEATHER ADVISORY IN EFFECT FROM 4 AM TO 1 PM EST TUESDAY... * WHAT...Mixed precipitation expected. Total snow accumulation ranging from a coating to around one inch in the Blue Ridge Mountains and valleys of the Potomac Highlands to around 1 to 3 inches near the Allegheny Front in western Maryland and eastern</summary>
-<cap:event>Winter Weather Advisory</cap:event>
-<cap:effective>2024-01-08T15:00:00-05:00</cap:effective>
-<cap:expires>2024-01-09T13:00:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Augusta; Central Virginia Blue Ridge; Northern Virginia Blue Ridge; Page; Rockingham; Shenandoah</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>051015 051079 051113 051125 051139 051157 051165 051171 051660 051790 051820</value>
-<valueName>UGC</valueName>
-<value>VAZ025 VAZ026 VAZ027 VAZ029 VAZ507 VAZ508</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.EXA.KLWX.WW.Y.0003.240109T0900Z-240109T1800Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=VA12688475A040.WinterWeatherAdvisory.126884849460VA.LWXWSWLWX.f680fbfb7fd5b1876c7e9aad57c06126</id>
-<updated>2024-01-08T15:00:00-05:00</updated>
-<published>2024-01-08T15:00:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Winter Weather Advisory issued January 08 at 3:00PM EST until January 09 at 1:00PM EST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=VA12688475A040.WinterWeatherAdvisory.126884849460VA.LWXWSWLWX.f680fbfb7fd5b1876c7e9aad57c06126"/>
-<summary>...WINTER WEATHER ADVISORY NOW IN EFFECT FROM 4 AM TO 1 PM EST TUESDAY... * WHAT...Mixed precipitation expected. Total snow accumulation ranging from 1 to 3 inches above 2,000 feet to a coating to one inch below 2,000 feet. Ice accumulations ranging from a trace to a tenth of an inch for most areas above 1,000 feet with</summary>
-<cap:event>Winter Weather Advisory</cap:event>
-<cap:effective>2024-01-08T15:00:00-05:00</cap:effective>
-<cap:expires>2024-01-09T13:00:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Eastern Highland; Western Highland</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>051091</value>
-<valueName>UGC</valueName>
-<value>VAZ503 VAZ504</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.EXT.KLWX.WW.Y.0003.240109T0900Z-240109T1800Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -27210,6 +26882,136 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=WV126884822748.FloodWatch.126884846D50WV.RLXFFARLX.a96ed2e1c68412d43affca5f206733d4</id>
+<updated>2024-01-08T21:10:00-05:00</updated>
+<published>2024-01-08T21:10:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Flood Watch issued January 08 at 9:10PM EST until January 09 at 12:00PM EST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=WV126884822748.FloodWatch.126884846D50WV.RLXFFARLX.a96ed2e1c68412d43affca5f206733d4"/>
+<summary>...FLOOD WATCH REMAINS IN EFFECT FROM TUESDAY MORNING THROUGH TUESDAY EVENING... * WHAT...Flooding caused by rain and snowmelt continues to be possible. * WHERE...Portions of northeast and southeast West Virginia, including the following counties, in northeast West Virginia,</summary>
+<cap:event>Flood Watch</cap:event>
+<cap:effective>2024-01-08T21:10:00-05:00</cap:effective>
+<cap:expires>2024-01-09T12:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Future</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Possible</cap:certainty>
+<cap:areaDesc>Northwest Pocahontas; Southeast Pocahontas</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>054075</value>
+<valueName>UGC</valueName>
+<value>WVZ523 WVZ524</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KRLX.FA.A.0001.240109T1500Z-240110T0100Z/
+/00000.0.RS.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=WV126884822748.FloodWatch.12688492EC40WV.RLXFFARLX.6d7bca88714dbc53031427528430ae01</id>
+<updated>2024-01-08T21:10:00-05:00</updated>
+<published>2024-01-08T21:10:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Flood Watch issued January 08 at 9:10PM EST until January 10 at 7:00AM EST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=WV126884822748.FloodWatch.12688492EC40WV.RLXFFARLX.6d7bca88714dbc53031427528430ae01"/>
+<summary>...FLOOD WATCH REMAINS IN EFFECT FROM TUESDAY MORNING THROUGH TUESDAY EVENING... * WHAT...Flooding caused by rain and snowmelt continues to be possible. * WHERE...Portions of northeast and southeast West Virginia, including the following counties, in northeast West Virginia,</summary>
+<cap:event>Flood Watch</cap:event>
+<cap:effective>2024-01-08T21:10:00-05:00</cap:effective>
+<cap:expires>2024-01-10T07:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Future</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Possible</cap:certainty>
+<cap:areaDesc>Southeast Fayette; Southeast Nicholas; Southeast Randolph; Southeast Webster</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>054019 054067 054083 054101</value>
+<valueName>UGC</valueName>
+<value>WVZ518 WVZ520 WVZ522 WVZ526</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KRLX.FA.A.0001.240109T1500Z-240110T0100Z/
+/00000.0.RS.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=WV1268848226E4.WinterWeatherAdvisory.126884849460WV.LWXWSWLWX.568ffaff21c871e1e78037654dca84d4</id>
+<updated>2024-01-08T21:09:00-05:00</updated>
+<published>2024-01-08T21:09:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Winter Weather Advisory issued January 08 at 9:09PM EST until January 09 at 1:00PM EST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=WV1268848226E4.WinterWeatherAdvisory.126884849460WV.LWXWSWLWX.568ffaff21c871e1e78037654dca84d4"/>
+<summary>...WINTER WEATHER ADVISORY REMAINS IN EFFECT FROM 4 AM TO 1 PM EST TUESDAY... * WHAT...Mixed precipitation expected. Total snow accumulation ranging from a coating to around one inch in the Blue Ridge Mountains and valleys of the Potomac Highlands to around 1 to 3 inches near the Allegheny Front in western Maryland and</summary>
+<cap:event>Winter Weather Advisory</cap:event>
+<cap:effective>2024-01-08T21:09:00-05:00</cap:effective>
+<cap:expires>2024-01-09T13:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Eastern Grant; Eastern Mineral; Eastern Pendleton; Hampshire; Hardy; Western Grant; Western Pendleton</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>054023 054027 054031 054057 054071</value>
+<valueName>UGC</valueName>
+<value>WVZ050 WVZ055 WVZ501 WVZ502 WVZ504 WVZ505 WVZ506</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KLWX.WW.Y.0003.240109T0900Z-240109T1800Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=WV1268848226E4.WinterWeatherAdvisory.126884849460WV.LWXWSWLWX.66c248e43f0a842c78eeefc09b7127b9</id>
+<updated>2024-01-08T21:09:00-05:00</updated>
+<published>2024-01-08T21:09:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Winter Weather Advisory issued January 08 at 9:09PM EST until January 09 at 1:00PM EST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=WV1268848226E4.WinterWeatherAdvisory.126884849460WV.LWXWSWLWX.66c248e43f0a842c78eeefc09b7127b9"/>
+<summary>...WINTER WEATHER ADVISORY REMAINS IN EFFECT FROM 4 AM TO 1 PM EST TUESDAY... * WHAT...Mixed precipitation expected. Total snow accumulation ranging from a coating to around an inch or two west of Keysers Ridge with 3 to 6 inches expected along and east of Keysers Ridge into western Allegany County including Savage</summary>
+<cap:event>Winter Weather Advisory</cap:event>
+<cap:effective>2024-01-08T21:09:00-05:00</cap:effective>
+<cap:expires>2024-01-09T13:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Western Mineral</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>054057</value>
+<valueName>UGC</valueName>
+<value>WVZ503</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KLWX.WW.Y.0003.240109T0900Z-240109T1800Z/</value>
+</cap:parameter>
+</entry>
+<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=WV126884762128.FloodWatch.126884A059C0WV.LWXFFALWX.04a5089619b2458ffa0a78e8f197dd8b</id>
 <updated>2024-01-08T18:30:00-05:00</updated>
 <published>2024-01-08T18:30:00-05:00</published>
@@ -27405,102 +27207,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <valueName>VTEC</valueName>
 <value>/O.EXB.KRNK.FA.A.0001.240109T1400Z-240110T0600Z/
 /00000.0.ER.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=WV12688475A040.WinterWeatherAdvisory.126884849460WV.LWXWSWLWX.d3c0585a4c168c00b00c2fd14601506b</id>
-<updated>2024-01-08T15:00:00-05:00</updated>
-<published>2024-01-08T15:00:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Winter Weather Advisory issued January 08 at 3:00PM EST until January 09 at 1:00PM EST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=WV12688475A040.WinterWeatherAdvisory.126884849460WV.LWXWSWLWX.d3c0585a4c168c00b00c2fd14601506b"/>
-<summary>...WINTER WEATHER ADVISORY IN EFFECT FROM 4 AM TO 1 PM EST TUESDAY... * WHAT...Mixed precipitation expected. Total snow accumulation ranging from a coating to around one inch in the Blue Ridge Mountains and valleys of the Potomac Highlands to around 1 to 3 inches near the Allegheny Front in western Maryland and eastern</summary>
-<cap:event>Winter Weather Advisory</cap:event>
-<cap:effective>2024-01-08T15:00:00-05:00</cap:effective>
-<cap:expires>2024-01-09T13:00:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Eastern Grant; Eastern Mineral; Hampshire; Hardy</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>054023 054027 054031 054057</value>
-<valueName>UGC</valueName>
-<value>WVZ050 WVZ055 WVZ502 WVZ504</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.EXA.KLWX.WW.Y.0003.240109T0900Z-240109T1800Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=WV12688475A040.WinterWeatherAdvisory.126884849460WV.LWXWSWLWX.ed14ea653afa0093bb07fab9291a3298</id>
-<updated>2024-01-08T15:00:00-05:00</updated>
-<published>2024-01-08T15:00:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Winter Weather Advisory issued January 08 at 3:00PM EST until January 09 at 1:00PM EST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=WV12688475A040.WinterWeatherAdvisory.126884849460WV.LWXWSWLWX.ed14ea653afa0093bb07fab9291a3298"/>
-<summary>...WINTER WEATHER ADVISORY NOW IN EFFECT FROM 4 AM TO 1 PM EST TUESDAY... * WHAT...Mixed precipitation expected. Total snow accumulation ranging from 1 to 3 inches above 2,000 feet to a coating to one inch below 2,000 feet. Ice accumulations ranging from a trace to a tenth of an inch for most areas above 1,000 feet with</summary>
-<cap:event>Winter Weather Advisory</cap:event>
-<cap:effective>2024-01-08T15:00:00-05:00</cap:effective>
-<cap:expires>2024-01-09T13:00:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Eastern Pendleton; Western Grant; Western Pendleton</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>054023 054071</value>
-<valueName>UGC</valueName>
-<value>WVZ501 WVZ505 WVZ506</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.EXT.KLWX.WW.Y.0003.240109T0900Z-240109T1800Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=WV12688475A040.WinterWeatherAdvisory.126884849460WV.LWXWSWLWX.66c248e43f0a842c78eeefc09b7127b9</id>
-<updated>2024-01-08T15:00:00-05:00</updated>
-<published>2024-01-08T15:00:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Winter Weather Advisory issued January 08 at 3:00PM EST until January 09 at 1:00PM EST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=WV12688475A040.WinterWeatherAdvisory.126884849460WV.LWXWSWLWX.66c248e43f0a842c78eeefc09b7127b9"/>
-<summary>...WINTER WEATHER ADVISORY NOW IN EFFECT FROM 4 AM TO 1 PM EST TUESDAY... * WHAT...Mixed precipitation expected. Total snow accumulations of 2 to 4 inches and ice accumulations of around one tenth of an inch. Southeast winds gusting around 30 to 40 mph. * WHERE...Western Mineral County.</summary>
-<cap:event>Winter Weather Advisory</cap:event>
-<cap:effective>2024-01-08T15:00:00-05:00</cap:effective>
-<cap:expires>2024-01-09T13:00:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Western Mineral</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>054057</value>
-<valueName>UGC</valueName>
-<value>WVZ503</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.EXT.KLWX.WW.Y.0003.240109T0900Z-240109T1800Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -27991,72 +27697,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value>/O.NEW.KRLX.WW.Y.0003.240109T0600Z-240109T1700Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=WV126884755284.FloodWatch.126884846D50WV.RLXFFARLX.a96ed2e1c68412d43affca5f206733d4</id>
-<updated>2024-01-08T13:01:00-05:00</updated>
-<published>2024-01-08T13:01:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Flood Watch issued January 08 at 1:01PM EST until January 09 at 12:00PM EST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=WV126884755284.FloodWatch.126884846D50WV.RLXFFARLX.a96ed2e1c68412d43affca5f206733d4"/>
-<summary>...FLOOD WATCH IN EFFECT FROM TUESDAY MORNING THROUGH TUESDAY EVENING... * WHAT...Flooding caused by rain and snowmelt is possible. * WHERE...Portions of northeast and southeast West Virginia, including the following counties, in northeast West Virginia, Northwest Pocahontas, Southeast Pocahontas, Southeast Randolph and</summary>
-<cap:event>Flood Watch</cap:event>
-<cap:effective>2024-01-08T13:01:00-05:00</cap:effective>
-<cap:expires>2024-01-09T12:00:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Future</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Possible</cap:certainty>
-<cap:areaDesc>Northwest Pocahontas; Southeast Pocahontas</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>054075</value>
-<valueName>UGC</valueName>
-<value>WVZ523 WVZ524</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.NEW.KRLX.FA.A.0001.240109T1500Z-240110T0100Z/
-/00000.0.RS.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=WV126884755284.FloodWatch.12688492EC40WV.RLXFFARLX.6d7bca88714dbc53031427528430ae01</id>
-<updated>2024-01-08T13:01:00-05:00</updated>
-<published>2024-01-08T13:01:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Flood Watch issued January 08 at 1:01PM EST until January 10 at 7:00AM EST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=WV126884755284.FloodWatch.12688492EC40WV.RLXFFARLX.6d7bca88714dbc53031427528430ae01"/>
-<summary>...FLOOD WATCH IN EFFECT FROM TUESDAY MORNING THROUGH TUESDAY EVENING... * WHAT...Flooding caused by rain and snowmelt is possible. * WHERE...Portions of northeast and southeast West Virginia, including the following counties, in northeast West Virginia, Northwest Pocahontas, Southeast Pocahontas, Southeast Randolph and</summary>
-<cap:event>Flood Watch</cap:event>
-<cap:effective>2024-01-08T13:01:00-05:00</cap:effective>
-<cap:expires>2024-01-10T07:00:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Future</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Possible</cap:certainty>
-<cap:areaDesc>Southeast Fayette; Southeast Nicholas; Southeast Randolph; Southeast Webster</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>054019 054067 054083 054101</value>
-<valueName>UGC</valueName>
-<value>WVZ518 WVZ520 WVZ522 WVZ526</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.NEW.KRLX.FA.A.0001.240109T1500Z-240110T0100Z/
-/00000.0.RS.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
 </cap:parameter>
 </entry>
 <entry>
