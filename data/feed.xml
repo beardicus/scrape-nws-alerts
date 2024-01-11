@@ -16,16 +16,48 @@ xmlns = 'http://www.w3.org/2005/Atom'
 xmlns:cap = 'urn:oasis:names:tc:emergency:cap:1.1'
 xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 >
-<!-- http-date = Thu, 11 Jan 2024 13:31:00 GMT -->
+<!-- http-date = Thu, 11 Jan 2024 13:58:00 GMT -->
 <id>https://alerts.weather.gov/cap/us.php?x=0</id>
 <logo>http://alerts.weather.gov/images/xml_logo.gif</logo>
 <generator>NWS CAP Server</generator>
-<updated>2024-01-11T08:31:00-05:00</updated>
+<updated>2024-01-11T08:58:00-05:00</updated>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
 <title>Current Watches, Warnings and Advisories for the United States Issued by the National Weather Service</title>
 <link href="https://alerts.weather.gov/cap/us.php?x=0"/>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=AK126884A265F8.HighWindWarning.126884A38E10AK.AJKNPWAJK.5465dde8a43b440b553392a0e9239eb6</id>
+<updated>2024-01-11T04:42:00-09:00</updated>
+<published>2024-01-11T04:42:00-09:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>High Wind Warning issued January 11 at 4:42AM AKST until January 11 at 12:00PM AKST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=AK126884A265F8.HighWindWarning.126884A38E10AK.AJKNPWAJK.5465dde8a43b440b553392a0e9239eb6"/>
+<summary>...HIGH WIND WARNING REMAINS IN EFFECT UNTIL NOON AKST TODAY... * WHAT...Northeast winds 15 to 25 mph with gusts up to 65 mph expected. * WHERE...Downtown Juneau and Douglas. * WHEN...Through noon AKST Thursday. * IMPACTS...High winds will blow around unsecured objects and</summary>
+<cap:event>High Wind Warning</cap:event>
+<cap:effective>2024-01-11T04:42:00-09:00</cap:effective>
+<cap:expires>2024-01-11T12:00:00-09:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Severe</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>City and Borough of Juneau</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>002110</value>
+<valueName>UGC</valueName>
+<value>AKZ325</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.PAJK.HW.W.0001.000000T0000Z-240111T2100Z/</value>
+</cap:parameter>
+</entry>
 <entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=AK126884A2426C.SpecialWeatherStatement.126884B01130AK.AFCSPSALU.5990db79d6f32dfee2e5632f591d323e</id>
 <updated>2024-01-11T03:51:00-09:00</updated>
@@ -88,38 +120,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value>/O.CON.PAJK.WC.Y.0001.000000T0000Z-240112T2100Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=AK126884A12990.HighWindWarning.126884A38E10AK.AJKNPWAJK.5465dde8a43b440b553392a0e9239eb6</id>
-<updated>2024-01-10T20:32:00-09:00</updated>
-<published>2024-01-10T20:32:00-09:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>High Wind Warning issued January 10 at 8:32PM AKST until January 11 at 12:00PM AKST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=AK126884A12990.HighWindWarning.126884A38E10AK.AJKNPWAJK.5465dde8a43b440b553392a0e9239eb6"/>
-<summary>...HIGH WIND WARNING REMAINS IN EFFECT UNTIL NOON AKST THURSDAY... * WHAT...Northeast winds 15 to 25 mph with gusts up to 65 mph expected. * WHERE...Downtown Juneau and Douglas. * WHEN...From 9 PM this evening to noon AKST Thursday. * IMPACTS...High winds will blow around unsecured objects and</summary>
-<cap:event>High Wind Warning</cap:event>
-<cap:effective>2024-01-10T20:32:00-09:00</cap:effective>
-<cap:expires>2024-01-11T12:00:00-09:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Severe</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>City and Borough of Juneau</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>002110</value>
-<valueName>UGC</valueName>
-<value>AKZ325</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.PAJK.HW.W.0001.240111T0600Z-240111T2100Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -3912,6 +3912,138 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=FL126884A26918.FloodWarning.126884BFC8A0FL.TAEFLSTAE.77f36c1e7268b8d8560b441f728ea2c4</id>
+<updated>2024-01-11T08:50:00-05:00</updated>
+<published>2024-01-11T08:50:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Flood Warning issued January 11 at 8:50AM EST until January 13 at 1:00AM EST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=FL126884A26918.FloodWarning.126884BFC8A0FL.TAEFLSTAE.77f36c1e7268b8d8560b441f728ea2c4"/>
+<summary>...The Flood Warning continues for the following rivers in Florida... Aucilla River at Lamont (US 27) affecting Jefferson, Madison and Taylor Counties. For the Aucilla River...including Lamont (US 27)...Minor flooding is forecast. ...FLOOD WARNING NOW IN EFFECT UNTIL EARLY SATURDAY MORNING...</summary>
+<cap:event>Flood Warning</cap:event>
+<cap:effective>2024-01-11T08:50:00-05:00</cap:effective>
+<cap:expires>2024-01-13T01:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Jefferson; Madison; Taylor</cap:areaDesc>
+<cap:polygon>30.47,-83.69 30.31,-83.77 30.09,-83.96 30.13,-84.04 30.32,-83.88 30.47,-83.78 30.47,-83.69</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>012065 012079 012123</value>
+<valueName>UGC</valueName>
+<value>FLC065 FLC079 FLC123</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.EXT.KTAE.FL.W.0001.000000T0000Z-240113T0600Z/
+/LAMF1.1.ER.240108T0045Z.240110T1800Z.240112T1800Z.NO/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=FL126884A267EC.FloodWarning.126884B1BEE0FL.JAXFLSJAX.c8aabfe2e51f704716fb13b6de8ebe9d</id>
+<updated>2024-01-11T08:47:00-05:00</updated>
+<published>2024-01-11T08:47:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Flood Warning issued January 11 at 8:47AM EST until further notice by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=FL126884A267EC.FloodWarning.126884B1BEE0FL.JAXFLSJAX.c8aabfe2e51f704716fb13b6de8ebe9d"/>
+<summary>...The Flood Warning continues for the following rivers in Georgia... Florida... St Mary`s River At Macclenny affecting Charlton, Baker and Nassau Counties. Additional information is available at https://water.weather.gov/ahps2/forecasts.php?wfo=jax.</summary>
+<cap:event>Flood Warning</cap:event>
+<cap:effective>2024-01-11T08:47:00-05:00</cap:effective>
+<cap:expires>2024-01-12T09:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Baker; Nassau</cap:areaDesc>
+<cap:polygon>30.41,-82.21 30.38,-82.07 30.62,-82.04 30.62,-81.98 30.34,-82.03 30.35,-82.2 30.41,-82.21</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>012003 012089</value>
+<valueName>UGC</valueName>
+<value>FLC003 FLC089</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KJAX.FL.W.0003.000000T0000Z-000000T0000Z/
+/MACF1.1.ER.240110T2030Z.240113T1200Z.000000T0000Z.NO/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=FL126884A26788.FloodWarning.126884B1BEE0FL.JAXFLSJAX.824009e78daa83ff5bdcc55fdcf49f4c</id>
+<updated>2024-01-11T08:46:00-05:00</updated>
+<published>2024-01-11T08:46:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Flood Warning issued January 11 at 8:46AM EST until further notice by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=FL126884A26788.FloodWarning.126884B1BEE0FL.JAXFLSJAX.824009e78daa83ff5bdcc55fdcf49f4c"/>
+<summary>...The Flood Warning is extended for the following rivers in Florida... Santa Fe River At Three Rivers Estates affecting Columbia, Gilchrist and Suwannee Counties. Santa Fe River Near O`Leno State Park affecting Columbia and Alachua Counties.</summary>
+<cap:event>Flood Warning</cap:event>
+<cap:effective>2024-01-11T08:46:00-05:00</cap:effective>
+<cap:expires>2024-01-12T09:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Columbia; Gilchrist; Suwannee</cap:areaDesc>
+<cap:polygon>29.9,-82.78 29.92,-82.8 29.9,-82.83 29.93,-82.83 29.96,-82.79 29.93,-82.76 29.9,-82.78</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>012023 012041 012121</value>
+<valueName>UGC</valueName>
+<value>FLC023 FLC041 FLC121</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.EXT.KJAX.FL.W.0002.240113T0900Z-000000T0000Z/
+/TREF1.1.ER.240113T0900Z.240116T0600Z.000000T0000Z.NO/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=FL126884A26788.FloodWarning.126884B1BEE0FL.JAXFLSJAX.a0bf18f4a4fbb467dd73209d9305b055</id>
+<updated>2024-01-11T08:46:00-05:00</updated>
+<published>2024-01-11T08:46:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Flood Warning issued January 11 at 8:46AM EST until further notice by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=FL126884A26788.FloodWarning.126884B1BEE0FL.JAXFLSJAX.a0bf18f4a4fbb467dd73209d9305b055"/>
+<summary>...The Flood Warning is extended for the following rivers in Florida... Santa Fe River At Three Rivers Estates affecting Columbia, Gilchrist and Suwannee Counties. Santa Fe River Near O`Leno State Park affecting Columbia and Alachua Counties.</summary>
+<cap:event>Flood Warning</cap:event>
+<cap:effective>2024-01-11T08:46:00-05:00</cap:effective>
+<cap:expires>2024-01-12T09:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Alachua; Columbia</cap:areaDesc>
+<cap:polygon>29.88,-82.61 29.94,-82.59 29.95,-82.53 29.93,-82.53 29.91,-82.56 29.87,-82.57 29.88,-82.61</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>012001 012023</value>
+<valueName>UGC</valueName>
+<value>FLC001 FLC023</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.EXT.KJAX.FL.W.0001.240113T1500Z-000000T0000Z/
+/OLPF1.1.ER.240113T1500Z.240115T0600Z.000000T0000Z.NO/</value>
+</cap:parameter>
+</entry>
+<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=FL126884A1F384.HighSurfAdvisory.126884C03DD0FL.MOBCFWMOB.66c201616cd671c91c4e645c019b213b</id>
 <updated>2024-01-11T05:49:00-05:00</updated>
 <published>2024-01-11T05:49:00-05:00</published>
@@ -4174,135 +4306,36 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=FL126884A0B460.FloodWarning.126884A38E10FL.TAEFLSTAE.77f36c1e7268b8d8560b441f728ea2c4</id>
-<updated>2024-01-10T21:32:00-05:00</updated>
-<published>2024-01-10T21:32:00-05:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=GA126884A267EC.FloodWarning.126884B1BEE0GA.JAXFLSJAX.81cf9491f040d977b762ca2ec2fdbacd</id>
+<updated>2024-01-11T08:47:00-05:00</updated>
+<published>2024-01-11T08:47:00-05:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Flood Warning issued January 10 at 9:32PM EST until further notice by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=FL126884A0B460.FloodWarning.126884A38E10FL.TAEFLSTAE.77f36c1e7268b8d8560b441f728ea2c4"/>
-<summary>...The Flood Warning continues for the following rivers in Florida... Aucilla River at Lamont (US 27) affecting Taylor, Madison and Jefferson Counties. For the Aucilla River...including Lamont (US 27)...Minor flooding is forecast. ...FLOOD WARNING REMAINS IN EFFECT UNTIL FURTHER NOTICE...</summary>
+<title>Flood Warning issued January 11 at 8:47AM EST until further notice by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=GA126884A267EC.FloodWarning.126884B1BEE0GA.JAXFLSJAX.81cf9491f040d977b762ca2ec2fdbacd"/>
+<summary>...The Flood Warning continues for the following rivers in Georgia... Florida... St Mary`s River At Macclenny affecting Charlton, Baker and Nassau Counties. Additional information is available at https://water.weather.gov/ahps2/forecasts.php?wfo=jax.</summary>
 <cap:event>Flood Warning</cap:event>
-<cap:effective>2024-01-10T21:32:00-05:00</cap:effective>
-<cap:expires>2024-01-11T16:00:00-05:00</cap:expires>
+<cap:effective>2024-01-11T08:47:00-05:00</cap:effective>
+<cap:expires>2024-01-12T09:00:00-05:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
 <cap:category>Met</cap:category>
 <cap:urgency>Expected</cap:urgency>
 <cap:severity>Moderate</cap:severity>
 <cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Jefferson; Madison; Taylor</cap:areaDesc>
-<cap:polygon>30.47,-83.69 30.31,-83.77 30.09,-83.96 30.13,-84.04 30.32,-83.88 30.47,-83.78 30.47,-83.69</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>012065 012079 012123</value>
-<valueName>UGC</valueName>
-<value>FLC065 FLC079 FLC123</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KTAE.FL.W.0001.000000T0000Z-000000T0000Z/
-/LAMF1.1.ER.240108T0045Z.240113T0000Z.000000T0000Z.NO/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=FL126884A0AF4C.FloodWarning.126884AFF5D8FL.JAXFLSJAX.a0bf18f4a4fbb467dd73209d9305b055</id>
-<updated>2024-01-10T21:19:00-05:00</updated>
-<published>2024-01-10T21:19:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Flood Warning issued January 10 at 9:19PM EST until further notice by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=FL126884A0AF4C.FloodWarning.126884AFF5D8FL.JAXFLSJAX.a0bf18f4a4fbb467dd73209d9305b055"/>
-<summary>...The Flood Warning is extended for the following rivers in Florida... Santa Fe River Near O`Leno State Park affecting Columbia and Alachua Counties. Additional information is available at https://water.weather.gov/ahps2/forecasts.php?wfo=jax.</summary>
-<cap:event>Flood Warning</cap:event>
-<cap:effective>2024-01-10T21:19:00-05:00</cap:effective>
-<cap:expires>2024-01-11T21:30:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Alachua; Columbia</cap:areaDesc>
-<cap:polygon>29.88,-82.61 29.94,-82.59 29.95,-82.53 29.93,-82.53 29.91,-82.56 29.87,-82.57 29.88,-82.61</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>012001 012023</value>
-<valueName>UGC</valueName>
-<value>FLC001 FLC023</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.EXT.KJAX.FL.W.0001.240113T0900Z-000000T0000Z/
-/OLPF1.1.ER.240113T0900Z.240116T0000Z.000000T0000Z.NO/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=FL126884A0AEE8.FloodWarning.126884AFF5D8FL.JAXFLSJAX.824009e78daa83ff5bdcc55fdcf49f4c</id>
-<updated>2024-01-10T21:18:00-05:00</updated>
-<published>2024-01-10T21:18:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Flood Warning issued January 10 at 9:18PM EST until further notice by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=FL126884A0AEE8.FloodWarning.126884AFF5D8FL.JAXFLSJAX.824009e78daa83ff5bdcc55fdcf49f4c"/>
-<summary>...The Flood Warning is extended for the following rivers in Florida... Santa Fe River At Three Rivers Estates affecting Columbia, Gilchrist and Suwannee Counties. Additional information is available at https://water.weather.gov/ahps2/forecasts.php?wfo=jax.</summary>
-<cap:event>Flood Warning</cap:event>
-<cap:effective>2024-01-10T21:18:00-05:00</cap:effective>
-<cap:expires>2024-01-11T21:30:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Columbia; Gilchrist; Suwannee</cap:areaDesc>
-<cap:polygon>29.9,-82.78 29.92,-82.8 29.9,-82.83 29.93,-82.83 29.96,-82.79 29.93,-82.76 29.9,-82.78</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>012023 012041 012121</value>
-<valueName>UGC</valueName>
-<value>FLC023 FLC041 FLC121</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.EXT.KJAX.FL.W.0002.240112T2100Z-000000T0000Z/
-/TREF1.1.ER.240112T2100Z.240116T0000Z.000000T0000Z.NO/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=FL126884A0AC90.FloodWarning.126884AFEFFCFL.JAXFLSJAX.c8aabfe2e51f704716fb13b6de8ebe9d</id>
-<updated>2024-01-10T21:12:00-05:00</updated>
-<published>2024-01-10T21:12:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Flood Warning issued January 10 at 9:12PM EST until further notice by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=FL126884A0AC90.FloodWarning.126884AFEFFCFL.JAXFLSJAX.c8aabfe2e51f704716fb13b6de8ebe9d"/>
-<summary>...The Flood Warning continues for the following rivers in Florida... Georgia... St Mary`s River At Macclenny affecting Baker, Charlton and Nassau Counties. Additional information is available at https://water.weather.gov/ahps2/forecasts.php?wfo=jax.</summary>
-<cap:event>Flood Warning</cap:event>
-<cap:effective>2024-01-10T21:12:00-05:00</cap:effective>
-<cap:expires>2024-01-11T21:15:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Baker; Nassau</cap:areaDesc>
+<cap:areaDesc>Charlton</cap:areaDesc>
 <cap:polygon>30.41,-82.21 30.38,-82.07 30.62,-82.04 30.62,-81.98 30.34,-82.03 30.35,-82.2 30.41,-82.21</cap:polygon>
 <cap:geocode>
 <valueName>FIPS6</valueName>
-<value>012003 012089</value>
+<value>013049</value>
 <valueName>UGC</valueName>
-<value>FLC003 FLC089</value>
+<value>GAC049</value>
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value>/O.CON.KJAX.FL.W.0003.000000T0000Z-000000T0000Z/
-/MACF1.1.ER.240110T2030Z.240113T0600Z.000000T0000Z.NO/</value>
+/MACF1.1.ER.240110T2030Z.240113T1200Z.000000T0000Z.NO/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -4932,36 +4965,35 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=GA126884A0AC90.FloodWarning.126884AFEFFCGA.JAXFLSJAX.81cf9491f040d977b762ca2ec2fdbacd</id>
-<updated>2024-01-10T21:12:00-05:00</updated>
-<published>2024-01-10T21:12:00-05:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=HI126884A267EC.HighWindWarning.126884BF7A80HI.HFONPWHFO.e8ef9cbf4e29e858ed59b41cd9b221c0</id>
+<updated>2024-01-11T03:47:00-10:00</updated>
+<published>2024-01-11T03:47:00-10:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Flood Warning issued January 10 at 9:12PM EST until further notice by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=GA126884A0AC90.FloodWarning.126884AFEFFCGA.JAXFLSJAX.81cf9491f040d977b762ca2ec2fdbacd"/>
-<summary>...The Flood Warning continues for the following rivers in Florida... Georgia... St Mary`s River At Macclenny affecting Baker, Charlton and Nassau Counties. Additional information is available at https://water.weather.gov/ahps2/forecasts.php?wfo=jax.</summary>
-<cap:event>Flood Warning</cap:event>
-<cap:effective>2024-01-10T21:12:00-05:00</cap:effective>
-<cap:expires>2024-01-11T21:15:00-05:00</cap:expires>
+<title>High Wind Warning issued January 11 at 3:47AM HST until January 12 at 6:00PM HST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=HI126884A267EC.HighWindWarning.126884BF7A80HI.HFONPWHFO.e8ef9cbf4e29e858ed59b41cd9b221c0"/>
+<summary>...HIGH WIND WARNING FOR THE SUMMIT OF HALEAKALA ON MAUI AND THE BIG ISLAND SUMMITS... ...HIGH WIND WARNING REMAINS IN EFFECT UNTIL 6 PM HST FRIDAY... * WHAT...West wind gusts will increase to 50 to 70 mph on the summit of Haleakala and 60 to 80 mph on the high summits of Mauna Kea and Mauna Loa on the Big Island later today.</summary>
+<cap:event>High Wind Warning</cap:event>
+<cap:effective>2024-01-11T03:47:00-10:00</cap:effective>
+<cap:expires>2024-01-12T18:00:00-10:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
 <cap:category>Met</cap:category>
 <cap:urgency>Expected</cap:urgency>
-<cap:severity>Moderate</cap:severity>
+<cap:severity>Severe</cap:severity>
 <cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Charlton</cap:areaDesc>
-<cap:polygon>30.41,-82.21 30.38,-82.07 30.62,-82.04 30.62,-81.98 30.34,-82.03 30.35,-82.2 30.41,-82.21</cap:polygon>
+<cap:areaDesc>Big Island Summit; Haleakala Summit</cap:areaDesc>
+<cap:polygon></cap:polygon>
 <cap:geocode>
 <valueName>FIPS6</valueName>
-<value>013049</value>
+<value>015001 015009</value>
 <valueName>UGC</valueName>
-<value>GAC049</value>
+<value>HIZ022 HIZ028</value>
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
-<value>/O.CON.KJAX.FL.W.0003.000000T0000Z-000000T0000Z/
-/MACF1.1.ER.240110T2030Z.240113T0600Z.000000T0000Z.NO/</value>
+<value>/O.CON.PHFO.HW.W.0002.000000T0000Z-240113T0400Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -5060,38 +5092,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <valueName>VTEC</valueName>
 <value>/O.NEW.PHFO.SU.Y.0004.240111T2200Z-240113T1600Z/
 /O.CON.PHFO.CF.S.0001.000000T0000Z-240113T1600Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=HI126884A0932C.HighWindWarning.126884BF7A80HI.HFONPWHFO.e8ef9cbf4e29e858ed59b41cd9b221c0</id>
-<updated>2024-01-10T15:47:00-10:00</updated>
-<published>2024-01-10T15:47:00-10:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>High Wind Warning issued January 10 at 3:47PM HST until January 12 at 6:00PM HST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=HI126884A0932C.HighWindWarning.126884BF7A80HI.HFONPWHFO.e8ef9cbf4e29e858ed59b41cd9b221c0"/>
-<summary>...HIGH WIND WARNING FOR THE SUMMIT OF HALEAKALA ON MAUI AND THE BIG ISLAND SUMMITS... ...HIGH WIND WARNING IN EFFECT FROM MIDNIGHT TONIGHT TO 6 PM HST FRIDAY... * WHAT...West winds will increase to 40 to 50 mph tonight and build to 50 to 70 mph on the summit of Haleakala and 60 to 80</summary>
-<cap:event>High Wind Warning</cap:event>
-<cap:effective>2024-01-10T15:47:00-10:00</cap:effective>
-<cap:expires>2024-01-12T18:00:00-10:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Severe</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Big Island Summit; Haleakala Summit</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>015001 015009</value>
-<valueName>UGC</valueName>
-<value>HIZ022 HIZ028</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.NEW.PHFO.HW.W.0002.240111T1000Z-240113T0400Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -5260,38 +5260,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <value>/O.CON.KOAX.WS.W.0002.240111T2100Z-240113T0600Z/
 /O.CON.KOAX.WC.W.0001.240114T0000Z-240116T1800Z/
 /O.CON.KOAX.WC.Y.0002.240113T0300Z-240114T0000Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=IA126884A1E2B8.SpecialWeatherStatement.126884A27CA0IA.ARXSPSARX.453880a1335b30828a5face93d5eab48</id>
-<updated>2024-01-11T04:06:00-06:00</updated>
-<published>2024-01-11T04:06:00-06:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Special Weather Statement issued January 11 at 4:06AM CST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=IA126884A1E2B8.SpecialWeatherStatement.126884A27CA0IA.ARXSPSARX.453880a1335b30828a5face93d5eab48"/>
-<summary>...Slick Roadways This Morning... Minor snow accumulations overnight have led to some fresh snow cover on area roadways. Use caution during your morning commute, especially on less traveled roads that have not been treated. Reduce your speed and allow extra braking distances. Be careful on bridges, overpasses, and corners.</summary>
-<cap:event>Special Weather Statement</cap:event>
-<cap:effective>2024-01-11T04:06:00-06:00</cap:effective>
-<cap:expires>2024-01-11T08:00:00-06:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Observed</cap:certainty>
-<cap:areaDesc>Allamakee; Chickasaw; Clayton; Fayette; Floyd; Howard; Mitchell; Winneshiek</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>019005 019037 019043 019065 019067 019089 019131 019191</value>
-<valueName>UGC</valueName>
-<value>IAZ008 IAZ009 IAZ010 IAZ011 IAZ018 IAZ019 IAZ029 IAZ030</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value></value>
 </cap:parameter>
 </entry>
 <entry>
@@ -5521,6 +5489,70 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <valueName>VTEC</valueName>
 <value>/O.UPG.KDVN.WS.A.0002.240112T0300Z-240113T1800Z/
 /O.NEW.KDVN.WS.W.0002.240112T0300Z-240113T1800Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=ID126884A265F8.AvalancheWatch.126884AFC310ID.PIHAVAPIH.0d18a07b4b718e5d3acfbe4ff499774d</id>
+<updated>2024-01-11T06:42:00-07:00</updated>
+<published>2024-01-11T06:42:00-07:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Avalanche Watch issued January 11 at 6:42AM MST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=ID126884A265F8.AvalancheWatch.126884AFC310ID.PIHAVAPIH.0d18a07b4b718e5d3acfbe4ff499774d"/>
+<summary>...The Forest Service Sawtooth Avalanche Center in Ketchum has ISSUED an AVALANCHE WATCH which is in effect from 6 AM Thursday through 6 PM Thursday. * WHAT...Very dangerous avalanche conditions are expected to develop tonight. Backcountry avalanche warnings may be issued. * WHERE...The southern Salmon River, Sawtooth, White Cloud, Smoky,</summary>
+<cap:event>Avalanche Watch</cap:event>
+<cap:effective>2024-01-11T06:42:00-07:00</cap:effective>
+<cap:expires>2024-01-11T18:00:00-07:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Unknown</cap:urgency>
+<cap:severity>Unknown</cap:severity>
+<cap:certainty>Unknown</cap:certainty>
+<cap:areaDesc>Big Lost Highlands, Copper Basin; Sawtooth, Stanley Basin; Sun Valley Region</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>016013 016037</value>
+<valueName>UGC</valueName>
+<value>IDZ072 IDZ073 IDZ074</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value></value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=ID126884A262D8.AvalancheWatch.126884AFC310ID.BOIAVABOI.f04d7d9ea4f5fefd26e58c087c71308a</id>
+<updated>2024-01-11T06:34:00-07:00</updated>
+<published>2024-01-11T06:34:00-07:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Avalanche Watch issued January 11 at 6:34AM MST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=ID126884A262D8.AvalancheWatch.126884AFC310ID.BOIAVABOI.f04d7d9ea4f5fefd26e58c087c71308a"/>
+<summary>The following message is transmitted at the request of the Forest Service Sawtooth Avalanche Center. ...The Forest Service Sawtooth Avalanche Center in Ketchum has issued a BACKCOUNTRY AVALANCHE WATCH... * WHAT...Very dangerous avalanche conditions are expected to develop tonight. Backcountry AVALANCHE WARNINGS may be issued.</summary>
+<cap:event>Avalanche Watch</cap:event>
+<cap:effective>2024-01-11T06:34:00-07:00</cap:effective>
+<cap:expires>2024-01-11T18:00:00-07:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Unknown</cap:urgency>
+<cap:severity>Unknown</cap:severity>
+<cap:certainty>Unknown</cap:certainty>
+<cap:areaDesc>Boise; Camas; Elmore; Valley</cap:areaDesc>
+<cap:polygon>43.37,-115.08 43.61,-115.08 44.09,-115.19 44.2,-115.16 44.3,-115.18 44.34,-115.3 44.31,-115.44 44.52,-115.45 44.52,-115.28 44.46,-115.23 44.31,-115.17 44.16,-115.03 43.86,-114.99 43.81,-114.71 43.6,-114.68 43.48,-114.51 43.4,-114.55 43.37,-115.08</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>016015 016025 016039 016085</value>
+<valueName>UGC</valueName>
+<value>IDC015 IDC025 IDC039 IDC085</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value></value>
 </cap:parameter>
 </entry>
 <entry>
@@ -9264,38 +9296,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=ME126884942A38.SpecialWeatherStatement.126884A27CA0ME.CARSPSCAR.d0ea850c650ae8304f9716cad6df4bd0</id>
-<updated>2024-01-10T15:14:00-05:00</updated>
-<published>2024-01-10T15:14:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Special Weather Statement issued January 10 at 3:14PM EST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=ME126884942A38.SpecialWeatherStatement.126884A27CA0ME.CARSPSCAR.d0ea850c650ae8304f9716cad6df4bd0"/>
-<summary>...Icy Roads Developing... Roads remain wet and falling temperatures behind a cold front will cause wet roads to freeze, resulting in icy and slippery roads. Use extra caution late tonight and during the commute hours Thursday morning, especially on untreated surfaces.</summary>
-<cap:event>Special Weather Statement</cap:event>
-<cap:effective>2024-01-10T15:14:00-05:00</cap:effective>
-<cap:expires>2024-01-11T09:00:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Observed</cap:certainty>
-<cap:areaDesc>Central Penobscot; Central Piscataquis; Central Washington; Coastal Hancock; Coastal Washington; Interior Hancock; Northeast Aroostook; Northern Penobscot; Northern Piscataquis; Northern Somerset; Northern Washington; Northwest Aroostook; Southeast Aroostook; Southern Penobscot; Southern Piscataquis</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>023003 023009 023019 023021 023025 023029</value>
-<valueName>UGC</valueName>
-<value>MEZ001 MEZ002 MEZ003 MEZ004 MEZ005 MEZ006 MEZ010 MEZ011 MEZ015 MEZ016 MEZ017 MEZ029 MEZ030 MEZ031 MEZ032</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value></value>
-</cap:parameter>
-</entry>
-<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=MI126884A23D58.SpecialWeatherStatement.126884A2B544MI.DTXSPSDTX.c26f7238d1877dc31dd3c30caccdee57</id>
 <updated>2024-01-11T07:38:00-05:00</updated>
 <published>2024-01-11T07:38:00-05:00</published>
@@ -9321,38 +9321,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <value>026017 026049 026063 026087 026091 026093 026099 026111 026115 026125 026145 026147 026151 026155 026157 026161 026163</value>
 <valueName>UGC</valueName>
 <value>MIZ047 MIZ048 MIZ049 MIZ053 MIZ054 MIZ055 MIZ060 MIZ061 MIZ062 MIZ063 MIZ068 MIZ069 MIZ070 MIZ075 MIZ076 MIZ082 MIZ083</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value></value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=MI126884A1F708.SpecialWeatherStatement.126884A27CA0MI.GRRSPSGRR.47968ad45a7baa826de02cc84ec9535e</id>
-<updated>2024-01-11T05:58:00-05:00</updated>
-<published>2024-01-11T05:58:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Special Weather Statement issued January 11 at 5:58AM EST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MI126884A1F708.SpecialWeatherStatement.126884A27CA0MI.GRRSPSGRR.47968ad45a7baa826de02cc84ec9535e"/>
-<summary>...CAUTIOUS TRAVEL ADVISED THIS MORNING FOR SLICK ROADS AND REDUCED VISIBILITIES... Light snowfall will impact West Michigan during the Thursday morning commute. Additional accumulations of 1-2 inches are possible through 9 AM. Air and road temperatures of 30-32 degrees have allowed snow to</summary>
-<cap:event>Special Weather Statement</cap:event>
-<cap:effective>2024-01-11T05:58:00-05:00</cap:effective>
-<cap:expires>2024-01-11T09:00:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Observed</cap:certainty>
-<cap:areaDesc>Allegan; Barry; Calhoun; Clare; Clinton; Eaton; Gratiot; Ingham; Ionia; Isabella; Jackson; Kalamazoo; Kent; Lake; Mason; Mecosta; Montcalm; Muskegon; Newaygo; Oceana; Osceola; Ottawa; Van Buren</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>026005 026015 026025 026035 026037 026045 026057 026065 026067 026073 026075 026077 026081 026085 026105 026107 026117 026121 026123 026127 026133 026139 026159</value>
-<valueName>UGC</valueName>
-<value>MIZ037 MIZ038 MIZ039 MIZ040 MIZ043 MIZ044 MIZ045 MIZ046 MIZ050 MIZ051 MIZ052 MIZ056 MIZ057 MIZ058 MIZ059 MIZ064 MIZ065 MIZ066 MIZ067 MIZ071 MIZ072 MIZ073 MIZ074</value>
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
@@ -9616,17 +9584,17 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=MN126884A23A9C.WinterWeatherAdvisory.126884AF9C00MN.FGFWSWFGF.3dfa321e4275147b08a53b2eb7177582</id>
-<updated>2024-01-11T06:31:00-06:00</updated>
-<published>2024-01-11T06:31:00-06:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=MN126884A26850.WinterWeatherAdvisory.126884AF9C00MN.FGFWSWFGF.2768d2746850289d1ca4c4a4a9b0396b</id>
+<updated>2024-01-11T07:48:00-06:00</updated>
+<published>2024-01-11T07:48:00-06:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Winter Weather Advisory issued January 11 at 6:31AM CST until January 11 at 6:00PM CST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MN126884A23A9C.WinterWeatherAdvisory.126884AF9C00MN.FGFWSWFGF.3dfa321e4275147b08a53b2eb7177582"/>
-<summary>...WINTER WEATHER ADVISORY IN EFFECT UNTIL 6 PM CST THIS EVENING... * WHAT...Snow. Additional snow accumulations of 1 to 3 inches. * WHERE...Kittson, Roseau and Lake Of The Woods Counties. * WHEN...Until 6 PM CST this evening. * IMPACTS...Plan on slippery road conditions.</summary>
+<title>Winter Weather Advisory issued January 11 at 7:48AM CST until January 11 at 6:00PM CST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MN126884A26850.WinterWeatherAdvisory.126884AF9C00MN.FGFWSWFGF.2768d2746850289d1ca4c4a4a9b0396b"/>
+<summary>...WINTER WEATHER ADVISORY REMAINS IN EFFECT UNTIL 6 PM CST THIS EVENING... * WHAT...Snow and blowing snow. Additional snow accumulations of 1 inch and wind gusts to 35 mph causing reduced visibilities in blowing snow. * WHERE...Kittson, Roseau and Lake Of The Woods Counties.</summary>
 <cap:event>Winter Weather Advisory</cap:event>
-<cap:effective>2024-01-11T06:31:00-06:00</cap:effective>
+<cap:effective>2024-01-11T07:48:00-06:00</cap:effective>
 <cap:expires>2024-01-11T18:00:00-06:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
@@ -9634,17 +9602,81 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:urgency>Expected</cap:urgency>
 <cap:severity>Minor</cap:severity>
 <cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Kittson; Lake Of The Woods; Roseau</cap:areaDesc>
+<cap:areaDesc>Kittson</cap:areaDesc>
 <cap:polygon></cap:polygon>
 <cap:geocode>
 <valueName>FIPS6</valueName>
-<value>027069 027077 027135</value>
+<value>027069</value>
 <valueName>UGC</valueName>
-<value>MNZ004 MNZ005 MNZ006</value>
+<value>MNZ004</value>
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
-<value>/O.NEW.KFGF.WW.Y.0003.240111T1231Z-240112T0000Z/</value>
+<value>/O.CON.KFGF.WW.Y.0003.000000T0000Z-240112T0000Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=MN126884A26850.WinterWeatherAdvisory.126884AF9C00MN.FGFWSWFGF.511941eace9f55dcc2ced4cd23a2a8a7</id>
+<updated>2024-01-11T07:48:00-06:00</updated>
+<published>2024-01-11T07:48:00-06:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Winter Weather Advisory issued January 11 at 7:48AM CST until January 11 at 6:00PM CST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MN126884A26850.WinterWeatherAdvisory.126884AF9C00MN.FGFWSWFGF.511941eace9f55dcc2ced4cd23a2a8a7"/>
+<summary>...WINTER WEATHER ADVISORY REMAINS IN EFFECT UNTIL 6 PM CST THIS EVENING... * WHAT...Snow. Additional snow accumulations of 1 to 3 inches. * WHERE...Kittson, Roseau and Lake Of The Woods Counties. * WHEN...Until 6 PM CST this evening. * IMPACTS...Plan on slippery road conditions.</summary>
+<cap:event>Winter Weather Advisory</cap:event>
+<cap:effective>2024-01-11T07:48:00-06:00</cap:effective>
+<cap:expires>2024-01-11T18:00:00-06:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Lake Of The Woods; Roseau</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>027077 027135</value>
+<valueName>UGC</valueName>
+<value>MNZ005 MNZ006</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KFGF.WW.Y.0003.000000T0000Z-240112T0000Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=MN126884A26850.WinterWeatherAdvisory.126884AF9C00MN.FGFWSWFGF.09ec8e44be7fbccf1e061fde935b5791</id>
+<updated>2024-01-11T07:48:00-06:00</updated>
+<published>2024-01-11T07:48:00-06:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Winter Weather Advisory issued January 11 at 7:48AM CST until January 11 at 6:00PM CST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MN126884A26850.WinterWeatherAdvisory.126884AF9C00MN.FGFWSWFGF.09ec8e44be7fbccf1e061fde935b5791"/>
+<summary>...WINTER WEATHER ADVISORY IN EFFECT UNTIL 6 PM CST THIS EVENING... * WHAT...Snow and blowing snow. Additional snow accumulations of up to one inch. Winds gusting as high as 35 mph causing reduced visibilities in blowing snow. * WHERE...West Marshall County.</summary>
+<cap:event>Winter Weather Advisory</cap:event>
+<cap:effective>2024-01-11T07:48:00-06:00</cap:effective>
+<cap:expires>2024-01-11T18:00:00-06:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>West Marshall</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>027089</value>
+<valueName>UGC</valueName>
+<value>MNZ007</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.EXA.KFGF.WW.Y.0003.000000T0000Z-240112T0000Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -9673,38 +9705,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <value>027007 027069 027077 027089 027135</value>
 <valueName>UGC</valueName>
 <value>MNZ004 MNZ005 MNZ006 MNZ007 MNZ008 MNZ009</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value></value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=MN126884A1E2B8.SpecialWeatherStatement.126884A27CA0MN.ARXSPSARX.07f63193db937fb73321f9d1caad4e67</id>
-<updated>2024-01-11T04:06:00-06:00</updated>
-<published>2024-01-11T04:06:00-06:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Special Weather Statement issued January 11 at 4:06AM CST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MN126884A1E2B8.SpecialWeatherStatement.126884A27CA0MN.ARXSPSARX.07f63193db937fb73321f9d1caad4e67"/>
-<summary>...Slick Roadways This Morning... Minor snow accumulations overnight have led to some fresh snow cover on area roadways. Use caution during your morning commute, especially on less traveled roads that have not been treated. Reduce your speed and allow extra braking distances. Be careful on bridges, overpasses, and corners.</summary>
-<cap:event>Special Weather Statement</cap:event>
-<cap:effective>2024-01-11T04:06:00-06:00</cap:effective>
-<cap:expires>2024-01-11T08:00:00-06:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Observed</cap:certainty>
-<cap:areaDesc>Dodge; Fillmore; Houston; Mower; Olmsted; Wabasha; Winona</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>027039 027045 027055 027099 027109 027157 027169</value>
-<valueName>UGC</valueName>
-<value>MNZ079 MNZ086 MNZ087 MNZ088 MNZ094 MNZ095 MNZ096</value>
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
@@ -12214,35 +12214,36 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=MT1268849366E8.AvalancheWarning.126884A27CA0MT.MSOAVWMSO.fce59ca128852d48776e45aa2e319d66</id>
-<updated>2024-01-10T08:14:00-07:00</updated>
-<published>2024-01-10T08:14:00-07:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=NC126884A26C38.FloodWarning.126884A33FF0NC.RNKFLSRNK.684a5d247e5750033522abfca7897a99</id>
+<updated>2024-01-11T08:58:00-05:00</updated>
+<published>2024-01-11T08:58:00-05:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Avalanche Warning issued January 10 at 8:14AM MST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MT1268849366E8.AvalancheWarning.126884A27CA0MT.MSOAVWMSO.fce59ca128852d48776e45aa2e319d66"/>
-<summary>The following message is transmitted at the request of Idaho Panhandle Avalanche Center Sandpoint ID. ...AVALANCHE WARNING ISSUED BY THE IDAHO PANHANDLE AVALANCHE CENTER... 07:00 PST Tue Jan 09 2024 The Idaho Panhandle Avalanche Center in Sandpoint has continued a BACKCOUNTRY AVALANCHE WARNING for the following areas:</summary>
-<cap:event>Avalanche Warning</cap:event>
-<cap:effective>2024-01-10T08:14:00-07:00</cap:effective>
-<cap:expires>2024-01-11T07:00:00-07:00</cap:expires>
+<title>Flood Warning issued January 11 at 8:58AM EST until January 11 at 2:00PM EST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=NC126884A26C38.FloodWarning.126884A33FF0NC.RNKFLSRNK.684a5d247e5750033522abfca7897a99"/>
+<summary>...The Flood Warning continues for the following rivers in Virginia...North Carolina... Roanoke (Staunton) River at Randolph affecting Halifax and Charlotte Counties. Dan River at Dan River at Paces affecting Halifax County. Dan River at South Boston affecting Halifax County.</summary>
+<cap:event>Flood Warning</cap:event>
+<cap:effective>2024-01-11T08:58:00-05:00</cap:effective>
+<cap:expires>2024-01-11T14:00:00-05:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
 <cap:category>Met</cap:category>
-<cap:urgency>Unknown</cap:urgency>
-<cap:severity>Unknown</cap:severity>
-<cap:certainty>Unknown</cap:certainty>
-<cap:areaDesc>Lincoln; Mineral; Sanders</cap:areaDesc>
-<cap:polygon></cap:polygon>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Caswell; Rockingham</cap:areaDesc>
+<cap:polygon>36.46,-79.74 36.5,-79.76 36.64,-79.41 36.63,-79.2 36.48,-79.23 36.5,-79.49 36.46,-79.74</cap:polygon>
 <cap:geocode>
 <valueName>FIPS6</valueName>
-<value>030053 030061 030089</value>
+<value>037033 037157</value>
 <valueName>UGC</valueName>
-<value>MTC053 MTC061 MTC089</value>
+<value>NCC033 NCC157</value>
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
-<value></value>
+<value>/O.CON.KRNK.FL.W.0002.000000T0000Z-240111T1900Z/
+/DVLV2.1.ER.240110T0425Z.240111T0815Z.240111T1849Z.UU/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -12342,39 +12343,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <valueName>VTEC</valueName>
 <value>/O.EXT.KRAH.FL.W.0008.000000T0000Z-240112T1324Z/
 /LOUN7.1.ER.240111T0827Z.240111T1800Z.240112T0123Z.NO/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=NC126884A25784.FloodWarning.126884A33FF0NC.RNKFLSRNK.684a5d247e5750033522abfca7897a99</id>
-<updated>2024-01-11T08:05:00-05:00</updated>
-<published>2024-01-11T08:05:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Flood Warning issued January 11 at 8:05AM EST until January 11 at 2:00PM EST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=NC126884A25784.FloodWarning.126884A33FF0NC.RNKFLSRNK.684a5d247e5750033522abfca7897a99"/>
-<summary>...The Flood Warning continues for the following rivers in North Carolina...Virginia... Dan River near Danville affecting Pittsylvania, City of Danville, Caswell and Rockingham independent cities. .Several inches of rain fell Tuesday into Wednesday. Excessive runoff on saturated ground continues to cause minor flooding along</summary>
-<cap:event>Flood Warning</cap:event>
-<cap:effective>2024-01-11T08:05:00-05:00</cap:effective>
-<cap:expires>2024-01-11T14:00:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Caswell; Rockingham</cap:areaDesc>
-<cap:polygon>36.46,-79.74 36.5,-79.76 36.64,-79.41 36.63,-79.2 36.48,-79.23 36.5,-79.49 36.46,-79.74</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>037033 037157</value>
-<valueName>UGC</valueName>
-<value>NCC033 NCC157</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KRNK.FL.W.0002.000000T0000Z-240111T1900Z/
-/DVLV2.1.ER.240110T0425Z.240111T0815Z.240111T1849Z.UU/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -12705,17 +12673,17 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=ND126884A23A9C.WindChillAdvisory.126884A318E0ND.FGFWSWFGF.f9bb6ada32961d287f56e3b207572c76</id>
-<updated>2024-01-11T06:31:00-06:00</updated>
-<published>2024-01-11T06:31:00-06:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=ND126884A26850.WindChillAdvisory.126884A318E0ND.FGFWSWFGF.5a416fa5105c64c36567744ce864ed22</id>
+<updated>2024-01-11T07:48:00-06:00</updated>
+<published>2024-01-11T07:48:00-06:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Wind Chill Advisory issued January 11 at 6:31AM CST until January 11 at 12:00PM CST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=ND126884A23A9C.WindChillAdvisory.126884A318E0ND.FGFWSWFGF.f9bb6ada32961d287f56e3b207572c76"/>
+<title>Wind Chill Advisory issued January 11 at 7:48AM CST until January 11 at 12:00PM CST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=ND126884A26850.WindChillAdvisory.126884A318E0ND.FGFWSWFGF.5a416fa5105c64c36567744ce864ed22"/>
 <summary>...WIND CHILL ADVISORY REMAINS IN EFFECT UNTIL NOON CST TODAY... * WHAT...Very cold wind chills. Wind chills as low as 30 below zero. * WHERE...Portions of northeast and southeast North Dakota. * WHEN...Until noon CST today. * IMPACTS...The cold wind chills could cause frostbite on</summary>
 <cap:event>Wind Chill Advisory</cap:event>
-<cap:effective>2024-01-11T06:31:00-06:00</cap:effective>
+<cap:effective>2024-01-11T07:48:00-06:00</cap:effective>
 <cap:expires>2024-01-11T12:00:00-06:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
@@ -12723,13 +12691,13 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:urgency>Expected</cap:urgency>
 <cap:severity>Minor</cap:severity>
 <cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Barnes; Benson; Eddy; Griggs; Nelson; Ramsey; Towner</cap:areaDesc>
+<cap:areaDesc>Barnes; Benson; Eddy; Griggs; Nelson; Towner</cap:areaDesc>
 <cap:polygon></cap:polygon>
 <cap:geocode>
 <valueName>FIPS6</valueName>
-<value>038003 038005 038027 038039 038063 038071 038095</value>
+<value>038003 038005 038027 038039 038063 038095</value>
 <valueName>UGC</valueName>
-<value>NDZ006 NDZ014 NDZ015 NDZ024 NDZ026 NDZ028 NDZ038</value>
+<value>NDZ006 NDZ014 NDZ024 NDZ026 NDZ028 NDZ038</value>
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
@@ -12737,17 +12705,17 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=ND126884A23A9C.WindChillAdvisory.126884A318E0ND.FGFWSWFGF.1922ed04cfc431deb4765ea7e1e97210</id>
-<updated>2024-01-11T06:31:00-06:00</updated>
-<published>2024-01-11T06:31:00-06:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=ND126884A26850.WindChillAdvisory.126884A318E0ND.FGFWSWFGF.1922ed04cfc431deb4765ea7e1e97210</id>
+<updated>2024-01-11T07:48:00-06:00</updated>
+<published>2024-01-11T07:48:00-06:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Wind Chill Advisory issued January 11 at 6:31AM CST until January 11 at 12:00PM CST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=ND126884A23A9C.WindChillAdvisory.126884A318E0ND.FGFWSWFGF.1922ed04cfc431deb4765ea7e1e97210"/>
-<summary>...WINTER WEATHER ADVISORY IN EFFECT UNTIL 6 PM CST THIS EVENING... ...WIND CHILL ADVISORY REMAINS IN EFFECT UNTIL NOON CST TODAY... * WHAT...For the Winter Weather Advisory, snow. Additional snow accumulations of up to one inch. Winds gusting as high as 40 mph. For the Wind Chill Advisory, very cold wind chills. Wind</summary>
+<title>Wind Chill Advisory issued January 11 at 7:48AM CST until January 11 at 12:00PM CST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=ND126884A26850.WindChillAdvisory.126884A318E0ND.FGFWSWFGF.1922ed04cfc431deb4765ea7e1e97210"/>
+<summary>...WIND CHILL ADVISORY REMAINS IN EFFECT UNTIL NOON CST TODAY... ...WINTER WEATHER ADVISORY REMAINS IN EFFECT UNTIL 6 PM CST THIS EVENING... * WHAT...For the Winter Weather Advisory, blowing snow and light snow. Additional snow accumulations of up to one inch. Winds gusting as high as 40 mph causing reduced visibilities in</summary>
 <cap:event>Wind Chill Advisory</cap:event>
-<cap:effective>2024-01-11T06:31:00-06:00</cap:effective>
+<cap:effective>2024-01-11T07:48:00-06:00</cap:effective>
 <cap:expires>2024-01-11T12:00:00-06:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
@@ -12765,22 +12733,55 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
-<value>/O.NEW.KFGF.WW.Y.0003.240111T1231Z-240112T0000Z/
+<value>/O.CON.KFGF.WC.Y.0001.000000T0000Z-240111T1800Z/
+/O.CON.KFGF.WW.Y.0003.000000T0000Z-240112T0000Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=ND126884A26850.WindChillAdvisory.126884A318E0ND.FGFWSWFGF.16d763ba1704ba11d7e8717639f0e464</id>
+<updated>2024-01-11T07:48:00-06:00</updated>
+<published>2024-01-11T07:48:00-06:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Wind Chill Advisory issued January 11 at 7:48AM CST until January 11 at 12:00PM CST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=ND126884A26850.WindChillAdvisory.126884A318E0ND.FGFWSWFGF.16d763ba1704ba11d7e8717639f0e464"/>
+<summary>...WINTER WEATHER ADVISORY IN EFFECT UNTIL 6 PM CST THIS EVENING... ...WIND CHILL ADVISORY REMAINS IN EFFECT UNTIL NOON CST TODAY... * WHAT...For the Winter Weather Advisory, blowing snow. Winds gusting as high as 35 mph causing reduced visibility in blowing snow north of Devils Lake. For the wind Chill Advisory, very</summary>
+<cap:event>Wind Chill Advisory</cap:event>
+<cap:effective>2024-01-11T07:48:00-06:00</cap:effective>
+<cap:expires>2024-01-11T12:00:00-06:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Ramsey</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>038071</value>
+<valueName>UGC</valueName>
+<value>NDZ015</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.EXA.KFGF.WW.Y.0003.000000T0000Z-240112T0000Z/
 /O.CON.KFGF.WC.Y.0001.000000T0000Z-240111T1800Z/</value>
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=ND126884A23A9C.WinterWeatherAdvisory.126884AF9C00ND.FGFWSWFGF.de4c9fe7156c2a92fa905e0e74e7eeb9</id>
-<updated>2024-01-11T06:31:00-06:00</updated>
-<published>2024-01-11T06:31:00-06:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=ND126884A26850.WinterWeatherAdvisory.126884AF9C00ND.FGFWSWFGF.de4c9fe7156c2a92fa905e0e74e7eeb9</id>
+<updated>2024-01-11T07:48:00-06:00</updated>
+<published>2024-01-11T07:48:00-06:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Winter Weather Advisory issued January 11 at 6:31AM CST until January 11 at 6:00PM CST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=ND126884A23A9C.WinterWeatherAdvisory.126884AF9C00ND.FGFWSWFGF.de4c9fe7156c2a92fa905e0e74e7eeb9"/>
-<summary>...WINTER WEATHER ADVISORY IN EFFECT UNTIL 6 PM CST THIS EVENING... ...WIND CHILL ADVISORY REMAINS IN EFFECT UNTIL NOON CST TODAY... * WHAT...For the Winter Weather Advisory, snow. Additional snow accumulations of up to one inch. Winds gusting as high as 40 mph. For the Wind Chill Advisory, very cold wind chills. Wind</summary>
+<title>Winter Weather Advisory issued January 11 at 7:48AM CST until January 11 at 6:00PM CST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=ND126884A26850.WinterWeatherAdvisory.126884AF9C00ND.FGFWSWFGF.de4c9fe7156c2a92fa905e0e74e7eeb9"/>
+<summary>...WIND CHILL ADVISORY REMAINS IN EFFECT UNTIL NOON CST TODAY... ...WINTER WEATHER ADVISORY REMAINS IN EFFECT UNTIL 6 PM CST THIS EVENING... * WHAT...For the Winter Weather Advisory, blowing snow and light snow. Additional snow accumulations of up to one inch. Winds gusting as high as 40 mph causing reduced visibilities in</summary>
 <cap:event>Winter Weather Advisory</cap:event>
-<cap:effective>2024-01-11T06:31:00-06:00</cap:effective>
+<cap:effective>2024-01-11T07:48:00-06:00</cap:effective>
 <cap:expires>2024-01-11T18:00:00-06:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
@@ -12798,22 +12799,22 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
-<value>/O.NEW.KFGF.WW.Y.0003.240111T1231Z-240112T0000Z/
-/O.CON.KFGF.WC.Y.0001.000000T0000Z-240111T1800Z/</value>
+<value>/O.CON.KFGF.WC.Y.0001.000000T0000Z-240111T1800Z/
+/O.CON.KFGF.WW.Y.0003.000000T0000Z-240112T0000Z/</value>
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=ND126884A23A9C.WinterWeatherAdvisory.126884AF9C00ND.FGFWSWFGF.e2fe871b4dcabb0d13ddabb15bf47cc4</id>
-<updated>2024-01-11T06:31:00-06:00</updated>
-<published>2024-01-11T06:31:00-06:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=ND126884A26850.WinterWeatherAdvisory.126884AF9C00ND.FGFWSWFGF.e2fe871b4dcabb0d13ddabb15bf47cc4</id>
+<updated>2024-01-11T07:48:00-06:00</updated>
+<published>2024-01-11T07:48:00-06:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Winter Weather Advisory issued January 11 at 6:31AM CST until January 11 at 6:00PM CST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=ND126884A23A9C.WinterWeatherAdvisory.126884AF9C00ND.FGFWSWFGF.e2fe871b4dcabb0d13ddabb15bf47cc4"/>
-<summary>...WINTER WEATHER ADVISORY IN EFFECT UNTIL 6 PM CST THIS EVENING... * WHAT...Snow and blowing snow. Additional snow accumulations of up to one inch. Winds gusting as high as 40 mph. * WHERE...Pembina and Eastern Walsh Counties. * WHEN...Until 6 PM CST this evening.</summary>
+<title>Winter Weather Advisory issued January 11 at 7:48AM CST until January 11 at 6:00PM CST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=ND126884A26850.WinterWeatherAdvisory.126884AF9C00ND.FGFWSWFGF.e2fe871b4dcabb0d13ddabb15bf47cc4"/>
+<summary>...WINTER WEATHER ADVISORY REMAINS IN EFFECT UNTIL 6 PM CST THIS EVENING... * WHAT...Snow and blowing snow. Additional snow accumulations of 1 inch and wind gusts to 35 mph causing reduced visibilities in blowing snow. * WHERE...Kittson, Roseau and Lake Of The Woods Counties.</summary>
 <cap:event>Winter Weather Advisory</cap:event>
-<cap:effective>2024-01-11T06:31:00-06:00</cap:effective>
+<cap:effective>2024-01-11T07:48:00-06:00</cap:effective>
 <cap:expires>2024-01-11T18:00:00-06:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
@@ -12831,7 +12832,40 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
-<value>/O.NEW.KFGF.WW.Y.0003.240111T1231Z-240112T0000Z/</value>
+<value>/O.CON.KFGF.WW.Y.0003.000000T0000Z-240112T0000Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=ND126884A26850.WinterWeatherAdvisory.126884AF9C00ND.FGFWSWFGF.98f8b3aca00d9e407e326fcd39820c54</id>
+<updated>2024-01-11T07:48:00-06:00</updated>
+<published>2024-01-11T07:48:00-06:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Winter Weather Advisory issued January 11 at 7:48AM CST until January 11 at 6:00PM CST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=ND126884A26850.WinterWeatherAdvisory.126884AF9C00ND.FGFWSWFGF.98f8b3aca00d9e407e326fcd39820c54"/>
+<summary>...WINTER WEATHER ADVISORY IN EFFECT UNTIL 6 PM CST THIS EVENING... ...WIND CHILL ADVISORY REMAINS IN EFFECT UNTIL NOON CST TODAY... * WHAT...For the Winter Weather Advisory, blowing snow. Winds gusting as high as 35 mph causing reduced visibility in blowing snow north of Devils Lake. For the wind Chill Advisory, very</summary>
+<cap:event>Winter Weather Advisory</cap:event>
+<cap:effective>2024-01-11T07:48:00-06:00</cap:effective>
+<cap:expires>2024-01-11T18:00:00-06:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Ramsey</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>038071</value>
+<valueName>UGC</valueName>
+<value>NDZ015</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.EXA.KFGF.WW.Y.0003.000000T0000Z-240112T0000Z/
+/O.CON.KFGF.WC.Y.0001.000000T0000Z-240111T1800Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -14811,6 +14845,39 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=NJ126884A268B4.FloodWarning.126884A318E0NJ.PHIFLWPHI.d1b07f783db3283e0f2285dec6058646</id>
+<updated>2024-01-11T08:49:00-05:00</updated>
+<published>2024-01-11T08:49:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Flood Warning issued January 11 at 8:49AM EST until January 11 at 1:00PM EST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=NJ126884A268B4.FloodWarning.126884A318E0NJ.PHIFLWPHI.d1b07f783db3283e0f2285dec6058646"/>
+<summary>...FLOOD WARNING NOW IN EFFECT UNTIL 3 PM EST THIS AFTERNOON... * WHAT...Flooding caused by excessive rainfall continues. * WHERE...A portion of northern New Jersey, including the following county, Sussex. * WHEN...Until 300 PM EST Thursday. * IMPACTS...Flooding of rivers, creeks, streams, and other low-lying</summary>
+<cap:event>Flood Warning</cap:event>
+<cap:effective>2024-01-11T08:49:00-05:00</cap:effective>
+<cap:expires>2024-01-11T13:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Sussex</cap:areaDesc>
+<cap:polygon>41.04,-74.73 40.98,-74.71 40.93,-74.78 40.99,-74.85 41.04,-74.73</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>034037</value>
+<valueName>UGC</valueName>
+<value>NJC037</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.EXT.KPHI.FA.W.0031.000000T0000Z-240111T2000Z/
+/00000.0.ER.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
+</cap:parameter>
+</entry>
+<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=NJ126884A1EED4.FloodWarning.126884B25B20NJ.PHIFLSPHI.64811be9ceb1db2dad273ebc3b01fb0b</id>
 <updated>2024-01-11T05:37:00-05:00</updated>
 <published>2024-01-11T05:37:00-05:00</published>
@@ -14841,39 +14908,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <valueName>VTEC</valueName>
 <value>/O.CON.KPHI.FL.W.0002.000000T0000Z-240112T1800Z/
 /PPPN4.2.ER.240110T0631Z.240110T2030Z.240112T0430Z.NO/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=NJ126884A1EC18.FloodWarning.126884A318E0NJ.PHIFLWPHI.9f5c1ac6df36a088a1549a1d55679972</id>
-<updated>2024-01-11T05:30:00-05:00</updated>
-<published>2024-01-11T05:30:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Flood Warning issued January 11 at 5:30AM EST until January 11 at 1:00PM EST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=NJ126884A1EC18.FloodWarning.126884A318E0NJ.PHIFLWPHI.9f5c1ac6df36a088a1549a1d55679972"/>
-<summary>...FLOOD WARNING NOW IN EFFECT UNTIL 9 AM EST THIS MORNING... * WHAT...Flooding caused by excessive rainfall continues. * WHERE...A portion of northern New Jersey, including the following counties, Sussex and Warren. * WHEN...Until 900 AM EST. * IMPACTS...Flooding of rivers, creeks, streams, and other low-lying</summary>
-<cap:event>Flood Warning</cap:event>
-<cap:effective>2024-01-11T05:30:00-05:00</cap:effective>
-<cap:expires>2024-01-11T13:00:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Sussex; Warren</cap:areaDesc>
-<cap:polygon>41.04,-74.73 40.98,-74.71 40.93,-74.78 40.86,-74.89 40.87,-74.94 40.95,-75.02 41.01,-75.01 41.06,-74.96 41.04,-74.73</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>034037 034041</value>
-<valueName>UGC</valueName>
-<value>NJC037 NJC041</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.EXT.KPHI.FA.W.0031.000000T0000Z-240111T1400Z/
-/00000.0.ER.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -15037,39 +15071,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <valueName>VTEC</valueName>
 <value>/O.CON.KPHI.FL.W.0007.000000T0000Z-240112T1800Z/
 /MCPN4.1.ER.240110T0410Z.240110T1630Z.000000T0000Z.NO/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=NJ126884A19A74.FloodWarning.126884A36700NJ.PHIFLSPHI.08b67652dee232320e7e05122a4a76fb</id>
-<updated>2024-01-11T03:21:00-05:00</updated>
-<published>2024-01-11T03:21:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Flood Warning issued January 11 at 3:21AM EST until January 11 at 3:00PM EST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=NJ126884A19A74.FloodWarning.126884A36700NJ.PHIFLSPHI.08b67652dee232320e7e05122a4a76fb"/>
-<summary>...The Flood Warning continues for the following rivers in New Jersey... Ramapo River At Pompton Lakes affecting Bergen, Morris and Passaic Counties. For the Ramapo River...including Pompton Lakes...Minor flooding is forecast.</summary>
-<cap:event>Flood Warning</cap:event>
-<cap:effective>2024-01-11T03:21:00-05:00</cap:effective>
-<cap:expires>2024-01-11T15:00:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Bergen; Morris; Passaic</cap:areaDesc>
-<cap:polygon>40.96,-74.31 40.95,-74.25 40.96,-74.25 40.98,-74.24 41,-74.3 40.99,-74.32 40.96,-74.31</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>034003 034027 034031</value>
-<valueName>UGC</valueName>
-<value>NJC003 NJC027 NJC031</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KPHI.FL.W.0001.000000T0000Z-240111T2000Z/
-/PPTN4.2.ER.240110T0541Z.240110T1640Z.240111T1245Z.NO/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -16590,6 +16591,38 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=OR126884A26B0C.WindAdvisory.126884B1E5F0OR.PDTNPWPDT.607658c5f18c4f0dd4f0017dce7f8884</id>
+<updated>2024-01-11T05:55:00-08:00</updated>
+<published>2024-01-11T05:55:00-08:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Wind Advisory issued January 11 at 5:55AM PST until January 12 at 7:00AM PST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=OR126884A26B0C.WindAdvisory.126884B1E5F0OR.PDTNPWPDT.607658c5f18c4f0dd4f0017dce7f8884"/>
+<summary>...WIND ADVISORY REMAINS IN EFFECT UNTIL 7 AM PST FRIDAY... * WHAT...West winds 25 to 35 mph with gusts up to 50 mph expected. * WHERE...In Oregon, Eastern Columbia River Gorge of Oregon, Lower Columbia Basin of Oregon and North Central Oregon. In Washington, Eastern Columbia River Gorge of Washington and</summary>
+<cap:event>Wind Advisory</cap:event>
+<cap:effective>2024-01-11T05:55:00-08:00</cap:effective>
+<cap:expires>2024-01-12T07:00:00-08:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Eastern Columbia River Gorge of Oregon; Foothills of the Northern Blue Mountains of Oregon; Foothills of the Southern Blue Mountains of Oregon; Lower Columbia Basin of Oregon; North Central Oregon</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>041021 041049 041055 041059 041065</value>
+<valueName>UGC</valueName>
+<value>ORZ041 ORZ044 ORZ507 ORZ508 ORZ510</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KPDT.WI.Y.0003.000000T0000Z-240112T1500Z/</value>
+</cap:parameter>
+</entry>
+<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=OR126884A23650.WinterStormWarning.126884CE2080OR.BOIWSWBOI.7edbdfef3372b9dfdfc92040656a39ca</id>
 <updated>2024-01-11T04:20:00-08:00</updated>
 <published>2024-01-11T04:20:00-08:00</published>
@@ -17697,38 +17730,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value>/O.CON.KPQR.WS.A.0003.240113T0000Z-240114T1200Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=OR126884A14B8C.WindAdvisory.126884B1E5F0OR.PDTNPWPDT.607658c5f18c4f0dd4f0017dce7f8884</id>
-<updated>2024-01-10T22:19:00-08:00</updated>
-<published>2024-01-10T22:19:00-08:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Wind Advisory issued January 10 at 10:19PM PST until January 12 at 7:00AM PST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=OR126884A14B8C.WindAdvisory.126884B1E5F0OR.PDTNPWPDT.607658c5f18c4f0dd4f0017dce7f8884"/>
-<summary>...WIND ADVISORY REMAINS IN EFFECT FROM 4 AM THURSDAY TO 7 AM PST FRIDAY... * WHAT...West winds 25 to 35 mph with gusts up to 50 mph expected. * WHERE...In Oregon, Eastern Columbia River Gorge of Oregon, Lower Columbia Basin of Oregon and North Central Oregon. In</summary>
-<cap:event>Wind Advisory</cap:event>
-<cap:effective>2024-01-10T22:19:00-08:00</cap:effective>
-<cap:expires>2024-01-12T07:00:00-08:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Eastern Columbia River Gorge of Oregon; Foothills of the Northern Blue Mountains of Oregon; Foothills of the Southern Blue Mountains of Oregon; Lower Columbia Basin of Oregon; North Central Oregon</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>041021 041049 041055 041059 041065</value>
-<valueName>UGC</valueName>
-<value>ORZ041 ORZ044 ORZ507 ORZ508 ORZ510</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KPDT.WI.Y.0003.240111T1200Z-240112T1500Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -20997,6 +20998,138 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=VA126884A26C38.FloodWarning.126884A33FF0VA.RNKFLSRNK.2bece2018752695eee68d9d3c23557da</id>
+<updated>2024-01-11T08:58:00-05:00</updated>
+<published>2024-01-11T08:58:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Flood Warning issued January 11 at 8:58AM EST until January 11 at 2:00PM EST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=VA126884A26C38.FloodWarning.126884A33FF0VA.RNKFLSRNK.2bece2018752695eee68d9d3c23557da"/>
+<summary>...The Flood Warning continues for the following rivers in Virginia...North Carolina... Roanoke (Staunton) River at Randolph affecting Halifax and Charlotte Counties. Dan River at Dan River at Paces affecting Halifax County. Dan River at South Boston affecting Halifax County.</summary>
+<cap:event>Flood Warning</cap:event>
+<cap:effective>2024-01-11T08:58:00-05:00</cap:effective>
+<cap:expires>2024-01-11T14:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>City of Danville; Pittsylvania</cap:areaDesc>
+<cap:polygon>36.46,-79.74 36.5,-79.76 36.64,-79.41 36.63,-79.2 36.48,-79.23 36.5,-79.49 36.46,-79.74</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>051143 051590</value>
+<valueName>UGC</valueName>
+<value>VAC143 VAC590</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KRNK.FL.W.0002.000000T0000Z-240111T1900Z/
+/DVLV2.1.ER.240110T0425Z.240111T0815Z.240111T1849Z.UU/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=VA126884A26C38.FloodWarning.126884B1F400VA.RNKFLSRNK.69cc9c496e5735e86106cde300ab9c14</id>
+<updated>2024-01-11T08:58:00-05:00</updated>
+<published>2024-01-11T08:58:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Flood Warning issued January 11 at 8:58AM EST until January 12 at 10:36AM EST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=VA126884A26C38.FloodWarning.126884B1F400VA.RNKFLSRNK.69cc9c496e5735e86106cde300ab9c14"/>
+<summary>...The Flood Warning continues for the following rivers in Virginia...North Carolina... Roanoke (Staunton) River at Randolph affecting Halifax and Charlotte Counties. Dan River at Dan River at Paces affecting Halifax County. Dan River at South Boston affecting Halifax County.</summary>
+<cap:event>Flood Warning</cap:event>
+<cap:effective>2024-01-11T08:58:00-05:00</cap:effective>
+<cap:expires>2024-01-12T10:36:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Halifax</cap:areaDesc>
+<cap:polygon>36.48,-79.23 36.63,-79.2 36.72,-79.02 36.6,-78.98 36.56,-79.11 36.48,-79.23</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>051083</value>
+<valueName>UGC</valueName>
+<value>VAC083</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KRNK.FL.W.0004.000000T0000Z-240112T1536Z/
+/PCEV2.1.ER.240110T2115Z.240112T0000Z.240112T1708Z.NO/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=VA126884A26C38.FloodWarning.126884B2353CVA.RNKFLSRNK.20ff383072787a75ec4bf11b2713ba5e</id>
+<updated>2024-01-11T08:58:00-05:00</updated>
+<published>2024-01-11T08:58:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Flood Warning issued January 11 at 8:58AM EST until January 12 at 12:03PM EST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=VA126884A26C38.FloodWarning.126884B2353CVA.RNKFLSRNK.20ff383072787a75ec4bf11b2713ba5e"/>
+<summary>...The Flood Warning continues for the following rivers in Virginia...North Carolina... Roanoke (Staunton) River at Randolph affecting Halifax and Charlotte Counties. Dan River at Dan River at Paces affecting Halifax County. Dan River at South Boston affecting Halifax County.</summary>
+<cap:event>Flood Warning</cap:event>
+<cap:effective>2024-01-11T08:58:00-05:00</cap:effective>
+<cap:expires>2024-01-12T12:03:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Charlotte; Halifax</cap:areaDesc>
+<cap:polygon>36.95,-78.85 37.03,-78.82 37.02,-78.72 36.9,-78.66 36.8,-78.63 36.8,-78.7 36.95,-78.85</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>051037 051083</value>
+<valueName>UGC</valueName>
+<value>VAC037 VAC083</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KRNK.FL.W.0006.000000T0000Z-240112T1703Z/
+/RNDV2.1.ER.240110T1105Z.240111T1800Z.240112T0943Z.NO/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=VA126884A26C38.FloodWarning.126884C0052CVA.RNKFLSRNK.b5c9fe8f00618bcd11a4a6fbcb441b8b</id>
+<updated>2024-01-11T08:58:00-05:00</updated>
+<published>2024-01-11T08:58:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Flood Warning issued January 11 at 8:58AM EST until January 13 at 2:55AM EST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=VA126884A26C38.FloodWarning.126884C0052CVA.RNKFLSRNK.b5c9fe8f00618bcd11a4a6fbcb441b8b"/>
+<summary>...The Flood Warning continues for the following rivers in Virginia...North Carolina... Roanoke (Staunton) River at Randolph affecting Halifax and Charlotte Counties. Dan River at Dan River at Paces affecting Halifax County. Dan River at South Boston affecting Halifax County.</summary>
+<cap:event>Flood Warning</cap:event>
+<cap:effective>2024-01-11T08:58:00-05:00</cap:effective>
+<cap:expires>2024-01-13T02:55:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Halifax</cap:areaDesc>
+<cap:polygon>36.6,-78.98 36.72,-79.02 36.75,-78.84 36.68,-78.79 36.6,-78.98</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>051083</value>
+<valueName>UGC</valueName>
+<value>VAC083</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KRNK.FL.W.0003.000000T0000Z-240113T0755Z/
+/SBNV2.1.ER.240110T0933Z.240112T0600Z.240113T0627Z.NO/</value>
+</cap:parameter>
+</entry>
+<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=VA126884A25E28.FloodWarning.126884AFCEC8VA.AKQFLSAKQ.f9c3a9c445b3f5a9772828f8c3be4b90</id>
 <updated>2024-01-11T08:22:00-05:00</updated>
 <published>2024-01-11T08:22:00-05:00</published>
@@ -21192,39 +21325,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <valueName>VTEC</valueName>
 <value>/O.EXT.KAKQ.FL.W.0007.000000T0000Z-240112T2200Z/
 /RMDV2.2.ER.240110T1055Z.240111T1130Z.240112T1600Z.NO/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=VA126884A25784.FloodWarning.126884A33FF0VA.RNKFLSRNK.2bece2018752695eee68d9d3c23557da</id>
-<updated>2024-01-11T08:05:00-05:00</updated>
-<published>2024-01-11T08:05:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Flood Warning issued January 11 at 8:05AM EST until January 11 at 2:00PM EST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=VA126884A25784.FloodWarning.126884A33FF0VA.RNKFLSRNK.2bece2018752695eee68d9d3c23557da"/>
-<summary>...The Flood Warning continues for the following rivers in North Carolina...Virginia... Dan River near Danville affecting Pittsylvania, City of Danville, Caswell and Rockingham independent cities. .Several inches of rain fell Tuesday into Wednesday. Excessive runoff on saturated ground continues to cause minor flooding along</summary>
-<cap:event>Flood Warning</cap:event>
-<cap:effective>2024-01-11T08:05:00-05:00</cap:effective>
-<cap:expires>2024-01-11T14:00:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>City of Danville; Pittsylvania</cap:areaDesc>
-<cap:polygon>36.46,-79.74 36.5,-79.76 36.64,-79.41 36.63,-79.2 36.48,-79.23 36.5,-79.49 36.46,-79.74</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>051143 051590</value>
-<valueName>UGC</valueName>
-<value>VAC143 VAC590</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KRNK.FL.W.0002.000000T0000Z-240111T1900Z/
-/DVLV2.1.ER.240110T0425Z.240111T0815Z.240111T1849Z.UU/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -21523,105 +21623,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=VA126884948280.FloodWarning.126884B1F400VA.RNKFLSRNK.69cc9c496e5735e86106cde300ab9c14</id>
-<updated>2024-01-10T17:40:00-05:00</updated>
-<published>2024-01-10T17:40:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Flood Warning issued January 10 at 5:40PM EST until January 12 at 10:36AM EST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=VA126884948280.FloodWarning.126884B1F400VA.RNKFLSRNK.69cc9c496e5735e86106cde300ab9c14"/>
-<summary>...The Flood Warning is extended for the following rivers in Virginia... Roanoke (Staunton) River at Randolph affecting Halifax and Charlotte Counties. Dan River at Dan River at Paces affecting Halifax County. Dan River at South Boston affecting Halifax County.</summary>
-<cap:event>Flood Warning</cap:event>
-<cap:effective>2024-01-10T17:40:00-05:00</cap:effective>
-<cap:expires>2024-01-12T10:36:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Halifax</cap:areaDesc>
-<cap:polygon>36.48,-79.23 36.63,-79.2 36.72,-79.02 36.6,-78.98 36.56,-79.11 36.48,-79.23</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>051083</value>
-<valueName>UGC</valueName>
-<value>VAC083</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.EXT.KRNK.FL.W.0004.000000T0000Z-240112T1536Z/
-/PCEV2.1.ER.240110T2115Z.240111T1200Z.240112T0336Z.NO/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=VA126884948280.FloodWarning.126884B2353CVA.RNKFLSRNK.20ff383072787a75ec4bf11b2713ba5e</id>
-<updated>2024-01-10T17:40:00-05:00</updated>
-<published>2024-01-10T17:40:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Flood Warning issued January 10 at 5:40PM EST until January 12 at 12:03PM EST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=VA126884948280.FloodWarning.126884B2353CVA.RNKFLSRNK.20ff383072787a75ec4bf11b2713ba5e"/>
-<summary>...The Flood Warning is extended for the following rivers in Virginia... Roanoke (Staunton) River at Randolph affecting Halifax and Charlotte Counties. Dan River at Dan River at Paces affecting Halifax County. Dan River at South Boston affecting Halifax County.</summary>
-<cap:event>Flood Warning</cap:event>
-<cap:effective>2024-01-10T17:40:00-05:00</cap:effective>
-<cap:expires>2024-01-12T12:03:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Charlotte; Halifax</cap:areaDesc>
-<cap:polygon>36.95,-78.85 37.03,-78.82 37.02,-78.72 36.9,-78.66 36.8,-78.63 36.8,-78.7 36.95,-78.85</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>051037 051083</value>
-<valueName>UGC</valueName>
-<value>VAC037 VAC083</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.EXT.KRNK.FL.W.0006.000000T0000Z-240112T1703Z/
-/RNDV2.1.ER.240110T1105Z.240111T0600Z.240112T0503Z.NO/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=VA126884948280.FloodWarning.126884C0052CVA.RNKFLSRNK.b5c9fe8f00618bcd11a4a6fbcb441b8b</id>
-<updated>2024-01-10T17:40:00-05:00</updated>
-<published>2024-01-10T17:40:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Flood Warning issued January 10 at 5:40PM EST until January 13 at 2:55AM EST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=VA126884948280.FloodWarning.126884C0052CVA.RNKFLSRNK.b5c9fe8f00618bcd11a4a6fbcb441b8b"/>
-<summary>...The Flood Warning is extended for the following rivers in Virginia... Roanoke (Staunton) River at Randolph affecting Halifax and Charlotte Counties. Dan River at Dan River at Paces affecting Halifax County. Dan River at South Boston affecting Halifax County.</summary>
-<cap:event>Flood Warning</cap:event>
-<cap:effective>2024-01-10T17:40:00-05:00</cap:effective>
-<cap:expires>2024-01-13T02:55:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Halifax</cap:areaDesc>
-<cap:polygon>36.6,-78.98 36.72,-79.02 36.75,-78.84 36.68,-78.79 36.6,-78.98</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>051083</value>
-<valueName>UGC</valueName>
-<value>VAC083</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.EXT.KRNK.FL.W.0003.000000T0000Z-240113T0755Z/
-/SBNV2.1.ER.240110T0933Z.240111T1800Z.240112T1955Z.NO/</value>
-</cap:parameter>
-</entry>
-<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=VI126884A1C378.RipCurrentStatement.126884B122A0VI.JSJCFWSJU.4536e22c9544b02f129568fa35370c69</id>
 <updated>2024-01-11T05:26:00-04:00</updated>
 <published>2024-01-11T05:26:00-04:00</published>
@@ -21715,6 +21716,38 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value>/O.NEW.KALY.HW.A.0002.240113T0300Z-240113T1500Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=WA126884A26B0C.WindAdvisory.126884B1E5F0WA.PDTNPWPDT.8e1585fbb0258ad16244fea9b1d7b110</id>
+<updated>2024-01-11T05:55:00-08:00</updated>
+<published>2024-01-11T05:55:00-08:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Wind Advisory issued January 11 at 5:55AM PST until January 12 at 7:00AM PST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=WA126884A26B0C.WindAdvisory.126884B1E5F0WA.PDTNPWPDT.8e1585fbb0258ad16244fea9b1d7b110"/>
+<summary>...WIND ADVISORY REMAINS IN EFFECT UNTIL 7 AM PST FRIDAY... * WHAT...West winds 25 to 35 mph with gusts up to 50 mph expected. * WHERE...In Oregon, Eastern Columbia River Gorge of Oregon, Lower Columbia Basin of Oregon and North Central Oregon. In Washington, Eastern Columbia River Gorge of Washington and</summary>
+<cap:event>Wind Advisory</cap:event>
+<cap:effective>2024-01-11T05:55:00-08:00</cap:effective>
+<cap:expires>2024-01-12T07:00:00-08:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Eastern Columbia River Gorge of Washington; Foothills of the Blue Mountains of Washington; Simcoe Highlands</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>053013 053039 053071 053077</value>
+<valueName>UGC</valueName>
+<value>WAZ024 WAZ029 WAZ521</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KPDT.WI.Y.0003.000000T0000Z-240112T1500Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -22627,38 +22660,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=WA126884A14B8C.WindAdvisory.126884B1E5F0WA.PDTNPWPDT.8e1585fbb0258ad16244fea9b1d7b110</id>
-<updated>2024-01-10T22:19:00-08:00</updated>
-<published>2024-01-10T22:19:00-08:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Wind Advisory issued January 10 at 10:19PM PST until January 12 at 7:00AM PST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=WA126884A14B8C.WindAdvisory.126884B1E5F0WA.PDTNPWPDT.8e1585fbb0258ad16244fea9b1d7b110"/>
-<summary>...WIND ADVISORY REMAINS IN EFFECT FROM 4 AM THURSDAY TO 7 AM PST FRIDAY... * WHAT...West winds 25 to 35 mph with gusts up to 50 mph expected. * WHERE...In Oregon, Eastern Columbia River Gorge of Oregon, Lower Columbia Basin of Oregon and North Central Oregon. In</summary>
-<cap:event>Wind Advisory</cap:event>
-<cap:effective>2024-01-10T22:19:00-08:00</cap:effective>
-<cap:expires>2024-01-12T07:00:00-08:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Eastern Columbia River Gorge of Washington; Foothills of the Blue Mountains of Washington; Simcoe Highlands</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>053013 053039 053071 053077</value>
-<valueName>UGC</valueName>
-<value>WAZ024 WAZ029 WAZ521</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KPDT.WI.Y.0003.240111T1200Z-240112T1500Z/</value>
-</cap:parameter>
-</entry>
-<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=WI126884A1EE0C.SpecialWeatherStatement.126884A2A3B0WI.MKXSPSMKX.caa467bb76943f2d55b5a2a58f328256</id>
 <updated>2024-01-11T04:35:00-06:00</updated>
 <published>2024-01-11T04:35:00-06:00</published>
@@ -22684,38 +22685,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <value>055021 055025 055027 055039 055045 055047 055049 055055 055059 055065 055077 055079 055089 055101 055105 055111 055117 055127 055131 055133</value>
 <valueName>UGC</valueName>
 <value>WIZ046 WIZ047 WIZ051 WIZ052 WIZ056 WIZ057 WIZ058 WIZ059 WIZ060 WIZ062 WIZ063 WIZ064 WIZ065 WIZ066 WIZ067 WIZ068 WIZ069 WIZ070 WIZ071 WIZ072</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value></value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=WI126884A1E2B8.SpecialWeatherStatement.126884A27CA0WI.ARXSPSARX.9a682679c547e769f4e7c901aee38991</id>
-<updated>2024-01-11T04:06:00-06:00</updated>
-<published>2024-01-11T04:06:00-06:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Special Weather Statement issued January 11 at 4:06AM CST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=WI126884A1E2B8.SpecialWeatherStatement.126884A27CA0WI.ARXSPSARX.9a682679c547e769f4e7c901aee38991"/>
-<summary>...Slick Roadways This Morning... Minor snow accumulations overnight have led to some fresh snow cover on area roadways. Use caution during your morning commute, especially on less traveled roads that have not been treated. Reduce your speed and allow extra braking distances. Be careful on bridges, overpasses, and corners.</summary>
-<cap:event>Special Weather Statement</cap:event>
-<cap:effective>2024-01-11T04:06:00-06:00</cap:effective>
-<cap:expires>2024-01-11T08:00:00-06:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Observed</cap:certainty>
-<cap:areaDesc>Adams; Buffalo; Clark; Crawford; Grant; Jackson; Juneau; La Crosse; Monroe; Richland; Trempealeau; Vernon</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>055001 055011 055019 055023 055043 055053 055057 055063 055081 055103 055121 055123</value>
-<valueName>UGC</valueName>
-<value>WIZ029 WIZ032 WIZ033 WIZ034 WIZ041 WIZ042 WIZ043 WIZ044 WIZ053 WIZ054 WIZ055 WIZ061</value>
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
