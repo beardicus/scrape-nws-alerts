@@ -16,16 +16,48 @@ xmlns = 'http://www.w3.org/2005/Atom'
 xmlns:cap = 'urn:oasis:names:tc:emergency:cap:1.1'
 xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 >
-<!-- http-date = Thu, 11 Jan 2024 22:31:00 GMT -->
+<!-- http-date = Thu, 11 Jan 2024 22:56:00 GMT -->
 <id>https://alerts.weather.gov/cap/us.php?x=0</id>
 <logo>http://alerts.weather.gov/images/xml_logo.gif</logo>
 <generator>NWS CAP Server</generator>
-<updated>2024-01-11T14:31:00-08:00</updated>
+<updated>2024-01-11T14:56:00-08:00</updated>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
 <title>Current Watches, Warnings and Advisories for the United States Issued by the National Weather Service</title>
 <link href="https://alerts.weather.gov/cap/us.php?x=0"/>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=AK126884A3C2CC.WindChillAdvisory.126884B2D050AK.AJKWSWAJK.3ab5434fce3788e133b6294bbabeeb68</id>
+<updated>2024-01-11T13:35:00-09:00</updated>
+<published>2024-01-11T13:35:00-09:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Wind Chill Advisory issued January 11 at 1:35PM AKST until January 12 at 12:00PM AKST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=AK126884A3C2CC.WindChillAdvisory.126884B2D050AK.AJKWSWAJK.3ab5434fce3788e133b6294bbabeeb68"/>
+<summary>...WIND CHILL ADVISORY REMAINS IN EFFECT UNTIL NOON AKST FRIDAY... * WHAT...Very cold wind chills. Wind chills as low as 35 below zero. * WHERE...Klondike Highway near White Pass. * WHEN...Until noon AKST Friday. * IMPACTS...The dangerously cold wind chills could cause</summary>
+<cap:event>Wind Chill Advisory</cap:event>
+<cap:effective>2024-01-11T13:35:00-09:00</cap:effective>
+<cap:expires>2024-01-12T12:00:00-09:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Municipality of Skagway</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>002230</value>
+<valueName>UGC</valueName>
+<value>AKZ318</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.PAJK.WC.Y.0001.000000T0000Z-240112T2100Z/</value>
+</cap:parameter>
+</entry>
 <entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=AK126884A3A260.WinterWeatherAdvisory.126884B1E5F0AK.AFGWSWWCZ.e60deb44e58d9fcd83e4017e4ddd771b</id>
 <updated>2024-01-11T12:52:00-09:00</updated>
@@ -728,38 +760,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value></value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=AK126884A28A4C.WindChillAdvisory.126884B2D050AK.AJKWSWAJK.3ab5434fce3788e133b6294bbabeeb68</id>
-<updated>2024-01-11T05:35:00-09:00</updated>
-<published>2024-01-11T05:35:00-09:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Wind Chill Advisory issued January 11 at 5:35AM AKST until January 12 at 12:00PM AKST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=AK126884A28A4C.WindChillAdvisory.126884B2D050AK.AJKWSWAJK.3ab5434fce3788e133b6294bbabeeb68"/>
-<summary>...VERY COLD TEMPERATURES AND WIND CHILLS THIS WEEK... .The first significant outflow event of the season will continue to decrease temperatures and wind chills through tonight. Northerly winds of 20 to 30 mph with gusts of 40 to 50 mph with temperatures dropping to 10 degrees below zero at higher elevations along the Klondike Highway are expected through Friday</summary>
-<cap:event>Wind Chill Advisory</cap:event>
-<cap:effective>2024-01-11T05:35:00-09:00</cap:effective>
-<cap:expires>2024-01-12T12:00:00-09:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Municipality of Skagway</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>002230</value>
-<valueName>UGC</valueName>
-<value>AKZ318</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.PAJK.WC.Y.0001.000000T0000Z-240112T2100Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -1668,6 +1668,71 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=CA126884A3C844.WinterWeatherAdvisory.126884CF0AE0CA.STOWSWSTO.e431606b804a93e0b08d2aee1483713d</id>
+<updated>2024-01-11T14:49:00-08:00</updated>
+<published>2024-01-11T14:49:00-08:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Winter Weather Advisory issued January 11 at 2:49PM PST until January 13 at 10:00PM PST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CA126884A3C844.WinterWeatherAdvisory.126884CF0AE0CA.STOWSWSTO.e431606b804a93e0b08d2aee1483713d"/>
+<summary>...WINTER WEATHER ADVISORY IN EFFECT FROM 4 PM FRIDAY TO 10 PM PST SATURDAY... * WHAT...Snow expected. Total snow accumulations 4 to 8 inches. Up to 15 inches over the highest peaks. Winds gusting as high as 35 mph. * WHERE...Coastal Range, Burney Basin and Shasta County Mountains</summary>
+<cap:event>Winter Weather Advisory</cap:event>
+<cap:effective>2024-01-11T14:49:00-08:00</cap:effective>
+<cap:expires>2024-01-13T22:00:00-08:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Burney Basin, Eastern Shasta County; Mountains Southwestern Shasta County to Western Colusa County; Shasta Lake Area, Northern Shasta County</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>006011 006021 006089 006103</value>
+<valueName>UGC</valueName>
+<value>CAZ013 CAZ014 CAZ063</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.NEW.KSTO.WW.Y.0004.240113T0000Z-240114T0600Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=CA126884A3C844.WinterStormWarning.126884CFF540CA.STOWSWSTO.9fa755f3aae5b81c2b657f7b682e0000</id>
+<updated>2024-01-11T14:49:00-08:00</updated>
+<published>2024-01-11T14:49:00-08:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Winter Storm Warning issued January 11 at 2:49PM PST until January 14 at 4:00AM PST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CA126884A3C844.WinterStormWarning.126884CFF540CA.STOWSWSTO.9fa755f3aae5b81c2b657f7b682e0000"/>
+<summary>...WINTER STORM WARNING IN EFFECT FROM 7 PM FRIDAY TO 4 AM PST SUNDAY... * WHAT...Heavy snow expected. Total snow accumulations of 1 to 2 feet. Winds could gust as high as 50 mph. * WHERE...Western Plumas County/Lassen Park and West Slope Northern Sierra Nevada, including Interstate 80 over Donner</summary>
+<cap:event>Winter Storm Warning</cap:event>
+<cap:effective>2024-01-11T14:49:00-08:00</cap:effective>
+<cap:expires>2024-01-14T04:00:00-08:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>West Slope Northern Sierra Nevada; Western Plumas County, Lassen Park</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>006003 006005 006009 006017 006057 006061 006063 006089 006091 006109</value>
+<valueName>UGC</valueName>
+<value>CAZ068 CAZ069</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.UPG.KSTO.WS.A.0003.240113T0000Z-240114T1200Z/
+/O.NEW.KSTO.WS.W.0004.240113T0300Z-240114T1200Z/</value>
+</cap:parameter>
+</entry>
+<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=CA126884A3B778.HighSurfAdvisory.126884B05F50CA.LOXCFWLOX.4ad9d41739263500b90ab83fe0e8161d</id>
 <updated>2024-01-11T14:06:00-08:00</updated>
 <published>2024-01-11T14:06:00-08:00</published>
@@ -2447,38 +2512,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <valueName>VTEC</valueName>
 <value>/O.CAN.KREV.WW.Y.0003.000000T0000Z-240111T1200Z/
 /O.NEW.KREV.WS.A.0003.240113T0000Z-240114T1200Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=CA126884A1BC0C.WinterStormWatch.126884CFF540CA.STOWSWSTO.66a8b1ec5158e8e8c1a93f74ae212032</id>
-<updated>2024-01-11T01:07:00-08:00</updated>
-<published>2024-01-11T01:07:00-08:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Winter Storm Watch issued January 11 at 1:07AM PST until January 14 at 4:00AM PST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CA126884A1BC0C.WinterStormWatch.126884CFF540CA.STOWSWSTO.66a8b1ec5158e8e8c1a93f74ae212032"/>
-<summary>...WINTER STORM WATCH IN EFFECT FROM LATE FRIDAY AFTERNOON THROUGH EARLY SUNDAY MORNING ABOVE 4500 FEET... * WHAT...Heavy snow possible. Total snow accumulations of 1 to 2 feet possible. Winds could gust as high as 50 mph. * WHERE...Western Plumas County/Lassen Park and West Slope Northern Sierra Nevada, including Interstate 80 over Donner</summary>
-<cap:event>Winter Storm Watch</cap:event>
-<cap:effective>2024-01-11T01:07:00-08:00</cap:effective>
-<cap:expires>2024-01-14T04:00:00-08:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Future</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Possible</cap:certainty>
-<cap:areaDesc>West Slope Northern Sierra Nevada; Western Plumas County, Lassen Park</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>006003 006005 006009 006017 006057 006061 006063 006089 006091 006109</value>
-<valueName>UGC</valueName>
-<value>CAZ068 CAZ069</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.NEW.KSTO.WS.A.0003.240113T0000Z-240114T1200Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -6065,6 +6098,268 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=ID126884A3C524.WinterStormWarning.126884B170C0ID.OTXWSWOTX.d21b454579e03d053e28b9ced389f513</id>
+<updated>2024-01-11T15:41:00-07:00</updated>
+<published>2024-01-11T15:41:00-07:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Winter Storm Warning issued January 11 at 3:41PM MST until January 12 at 5:00AM MST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=ID126884A3C524.WinterStormWarning.126884B170C0ID.OTXWSWOTX.d21b454579e03d053e28b9ced389f513"/>
+<summary>...WINTER STORM WARNING REMAINS IN EFFECT UNTIL 4 AM PST FRIDAY... ...WIND CHILL WARNING REMAINS IN EFFECT FROM 10 PM THIS EVENING TO NOON PST SATURDAY... * WHAT...For the Winter Storm Warning, heavy snow. Additional snow accumulations between 1 and 4 inches. Winds gusting as high as 35 mph with areas of blowing and drifting snow. For the Wind Chill</summary>
+<cap:event>Winter Storm Warning</cap:event>
+<cap:effective>2024-01-11T15:41:00-07:00</cap:effective>
+<cap:expires>2024-01-12T05:00:00-07:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Idaho Palouse</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>016009 016057</value>
+<valueName>UGC</valueName>
+<value>IDZ003</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KOTX.WS.W.0002.000000T0000Z-240112T1200Z/
+/O.CON.KOTX.WC.W.0001.240112T0600Z-240113T2000Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=ID126884A3C524.WinterStormWarning.126884B170C0ID.OTXWSWOTX.798bcec56c392d846dac694a76a81b44</id>
+<updated>2024-01-11T15:41:00-07:00</updated>
+<published>2024-01-11T15:41:00-07:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Winter Storm Warning issued January 11 at 3:41PM MST until January 12 at 5:00AM MST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=ID126884A3C524.WinterStormWarning.126884B170C0ID.OTXWSWOTX.798bcec56c392d846dac694a76a81b44"/>
+<summary>...WINTER STORM WARNING REMAINS IN EFFECT UNTIL 4 AM PST FRIDAY... ...WIND CHILL WARNING REMAINS IN EFFECT FROM 10 PM THIS EVENING TO NOON PST SATURDAY... * WHAT...For the Winter Storm Warning, heavy snow. Additional snow accumulations between 3 and 6 inches. Winds gusting as high as 35 mph will produce areas of blowing and drifting snow. For the Wind</summary>
+<cap:event>Winter Storm Warning</cap:event>
+<cap:effective>2024-01-11T15:41:00-07:00</cap:effective>
+<cap:expires>2024-01-12T05:00:00-07:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Central Panhandle Mountains</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>016009 016055 016057 016079</value>
+<valueName>UGC</valueName>
+<value>IDZ004</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KOTX.WS.W.0002.000000T0000Z-240112T1200Z/
+/O.CON.KOTX.WC.W.0001.240112T0600Z-240113T2000Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=ID126884A3C524.WinterStormWarning.126884B170C0ID.OTXWSWOTX.0990bea25d7b4640e28de6d54ff02b58</id>
+<updated>2024-01-11T15:41:00-07:00</updated>
+<published>2024-01-11T15:41:00-07:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Winter Storm Warning issued January 11 at 3:41PM MST until January 12 at 5:00AM MST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=ID126884A3C524.WinterStormWarning.126884B170C0ID.OTXWSWOTX.0990bea25d7b4640e28de6d54ff02b58"/>
+<summary>...WINTER STORM WARNING REMAINS IN EFFECT UNTIL 4 AM PST FRIDAY... * WHAT...Heavy snow expected. Total snow accumulations between 3 and 7 inches. Winds gusting as high as 30 to 40 mph will produce areas of blowing and drifting snow. * WHERE...Nezperce, Winchester, Soldiers Meadow Road, Kamiah, and Craigmont.</summary>
+<cap:event>Winter Storm Warning</cap:event>
+<cap:effective>2024-01-11T15:41:00-07:00</cap:effective>
+<cap:expires>2024-01-12T05:00:00-07:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Lewis and Southern Nez Perce Counties</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>016061 016069</value>
+<valueName>UGC</valueName>
+<value>IDZ027</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KOTX.WS.W.0002.000000T0000Z-240112T1200Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=ID126884A3C524.WinterWeatherAdvisory.126884B170C0ID.OTXWSWOTX.5551217f89f7a346e550134c3084ccbd</id>
+<updated>2024-01-11T15:41:00-07:00</updated>
+<published>2024-01-11T15:41:00-07:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Winter Weather Advisory issued January 11 at 3:41PM MST until January 12 at 5:00AM MST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=ID126884A3C524.WinterWeatherAdvisory.126884B170C0ID.OTXWSWOTX.5551217f89f7a346e550134c3084ccbd"/>
+<summary>...WINTER WEATHER ADVISORY REMAINS IN EFFECT UNTIL 4 AM PST FRIDAY... ...WIND CHILL WARNING REMAINS IN EFFECT FROM 10 PM THIS EVENING TO NOON PST SATURDAY... * WHAT...For the Winter Weather Advisory, snow. Additional snow accumulations up to 1 inches with blowing and drifting snow in open areas. For the Wind Chill Warning, dangerously cold wind</summary>
+<cap:event>Winter Weather Advisory</cap:event>
+<cap:effective>2024-01-11T15:41:00-07:00</cap:effective>
+<cap:expires>2024-01-12T05:00:00-07:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Coeur d&apos;Alene Area; Northern Panhandle</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>016017 016021 016055</value>
+<valueName>UGC</valueName>
+<value>IDZ001 IDZ002</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KOTX.WC.W.0001.240112T0600Z-240113T2000Z/
+/O.CON.KOTX.WW.Y.0004.000000T0000Z-240112T1200Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=ID126884A3C524.WinterWeatherAdvisory.126884B170C0ID.OTXWSWOTX.f38ea8860bfde34e3ba6373103f5fcfa</id>
+<updated>2024-01-11T15:41:00-07:00</updated>
+<published>2024-01-11T15:41:00-07:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Winter Weather Advisory issued January 11 at 3:41PM MST until January 12 at 5:00AM MST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=ID126884A3C524.WinterWeatherAdvisory.126884B170C0ID.OTXWSWOTX.f38ea8860bfde34e3ba6373103f5fcfa"/>
+<summary>...WINTER WEATHER ADVISORY REMAINS IN EFFECT UNTIL 4 AM PST FRIDAY... * WHAT...Snow expected. Total snow accumulations between 1 and 4 inches with local accumulations up to 5 inches. Winds gusting as high as 40 mph will result in areas of blowing and drifting snow. * WHERE...Alpowa Summit, Pomeroy, Peck, Culdesac, Lapwai, Gifford, Clarkston, Lewiston Grade, and Lewiston.</summary>
+<cap:event>Winter Weather Advisory</cap:event>
+<cap:effective>2024-01-11T15:41:00-07:00</cap:effective>
+<cap:expires>2024-01-12T05:00:00-07:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Lewiston Area</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>016069</value>
+<valueName>UGC</valueName>
+<value>IDZ026</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KOTX.WW.Y.0004.000000T0000Z-240112T1200Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=ID126884A3C524.WindChillWarning.126884C1EB80ID.OTXWSWOTX.73d01d3a7fc352ee9dd09f8dd4ba410d</id>
+<updated>2024-01-11T15:41:00-07:00</updated>
+<published>2024-01-11T15:41:00-07:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Wind Chill Warning issued January 11 at 3:41PM MST until January 13 at 1:00PM MST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=ID126884A3C524.WindChillWarning.126884C1EB80ID.OTXWSWOTX.73d01d3a7fc352ee9dd09f8dd4ba410d"/>
+<summary>...WINTER WEATHER ADVISORY REMAINS IN EFFECT UNTIL 4 AM PST FRIDAY... ...WIND CHILL WARNING REMAINS IN EFFECT FROM 10 PM THIS EVENING TO NOON PST SATURDAY... * WHAT...For the Winter Weather Advisory, snow. Additional snow accumulations up to 1 inches with blowing and drifting snow in open areas. For the Wind Chill Warning, dangerously cold wind</summary>
+<cap:event>Wind Chill Warning</cap:event>
+<cap:effective>2024-01-11T15:41:00-07:00</cap:effective>
+<cap:expires>2024-01-13T13:00:00-07:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Coeur d&apos;Alene Area; Northern Panhandle</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>016017 016021 016055</value>
+<valueName>UGC</valueName>
+<value>IDZ001 IDZ002</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KOTX.WC.W.0001.240112T0600Z-240113T2000Z/
+/O.CON.KOTX.WW.Y.0004.000000T0000Z-240112T1200Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=ID126884A3C524.WindChillWarning.126884C1EB80ID.OTXWSWOTX.8c113c5663de5d8e6f8b6a0619bcdd7f</id>
+<updated>2024-01-11T15:41:00-07:00</updated>
+<published>2024-01-11T15:41:00-07:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Wind Chill Warning issued January 11 at 3:41PM MST until January 13 at 1:00PM MST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=ID126884A3C524.WindChillWarning.126884C1EB80ID.OTXWSWOTX.8c113c5663de5d8e6f8b6a0619bcdd7f"/>
+<summary>...WINTER STORM WARNING REMAINS IN EFFECT UNTIL 4 AM PST FRIDAY... ...WIND CHILL WARNING REMAINS IN EFFECT FROM 10 PM THIS EVENING TO NOON PST SATURDAY... * WHAT...For the Winter Storm Warning, heavy snow. Additional snow accumulations between 1 and 4 inches. Winds gusting as high as 35 mph with areas of blowing and drifting snow. For the Wind Chill</summary>
+<cap:event>Wind Chill Warning</cap:event>
+<cap:effective>2024-01-11T15:41:00-07:00</cap:effective>
+<cap:expires>2024-01-13T13:00:00-07:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Idaho Palouse</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>016009 016057</value>
+<valueName>UGC</valueName>
+<value>IDZ003</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KOTX.WS.W.0002.000000T0000Z-240112T1200Z/
+/O.CON.KOTX.WC.W.0001.240112T0600Z-240113T2000Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=ID126884A3C524.WindChillWarning.126884C1EB80ID.OTXWSWOTX.e6598d54c4433143b5c9e3bb0e11c3d3</id>
+<updated>2024-01-11T15:41:00-07:00</updated>
+<published>2024-01-11T15:41:00-07:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Wind Chill Warning issued January 11 at 3:41PM MST until January 13 at 1:00PM MST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=ID126884A3C524.WindChillWarning.126884C1EB80ID.OTXWSWOTX.e6598d54c4433143b5c9e3bb0e11c3d3"/>
+<summary>...WINTER STORM WARNING REMAINS IN EFFECT UNTIL 4 AM PST FRIDAY... ...WIND CHILL WARNING REMAINS IN EFFECT FROM 10 PM THIS EVENING TO NOON PST SATURDAY... * WHAT...For the Winter Storm Warning, heavy snow. Additional snow accumulations between 3 and 6 inches. Winds gusting as high as 35 mph will produce areas of blowing and drifting snow. For the Wind</summary>
+<cap:event>Wind Chill Warning</cap:event>
+<cap:effective>2024-01-11T15:41:00-07:00</cap:effective>
+<cap:expires>2024-01-13T13:00:00-07:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Central Panhandle Mountains</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>016009 016055 016057 016079</value>
+<valueName>UGC</valueName>
+<value>IDZ004</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KOTX.WS.W.0002.000000T0000Z-240112T1200Z/
+/O.CON.KOTX.WC.W.0001.240112T0600Z-240113T2000Z/</value>
+</cap:parameter>
+</entry>
+<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=ID126884A39B58.BlizzardWarning.126884C0B300ID.BOIWSWBOI.0131f4ba00a1e37917fdd7fce6106aeb</id>
 <updated>2024-01-11T14:34:00-07:00</updated>
 <published>2024-01-11T14:34:00-07:00</published>
@@ -6612,274 +6907,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value>/O.CON.KMSO.WW.Y.0004.240112T0000Z-240113T0000Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=ID126884A36958.WinterStormWarning.126884B170C0ID.OTXWSWOTX.d21b454579e03d053e28b9ced389f513</id>
-<updated>2024-01-11T13:06:00-07:00</updated>
-<published>2024-01-11T13:06:00-07:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Winter Storm Warning issued January 11 at 1:06PM MST until January 12 at 5:00AM MST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=ID126884A36958.WinterStormWarning.126884B170C0ID.OTXWSWOTX.d21b454579e03d053e28b9ced389f513"/>
-<summary>...WINTER STORM WARNING REMAINS IN EFFECT UNTIL 4 AM PST FRIDAY... ...WIND CHILL WARNING IN EFFECT FROM 10 PM THIS EVENING TO NOON PST SATURDAY... * WHAT...For the Winter Storm Warning, heavy snow. Additional snow accumulations between 1 and 4 inches. Winds gusting as high as 35 mph with areas of blowing and drifting snow. For the Wind Chill</summary>
-<cap:event>Winter Storm Warning</cap:event>
-<cap:effective>2024-01-11T13:06:00-07:00</cap:effective>
-<cap:expires>2024-01-12T05:00:00-07:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Idaho Palouse</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>016009 016057</value>
-<valueName>UGC</valueName>
-<value>IDZ003</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.UPG.KOTX.WC.A.0001.240112T0600Z-240114T2000Z/
-/O.NEW.KOTX.WC.W.0001.240112T0600Z-240113T2000Z/
-/O.CON.KOTX.WS.W.0002.000000T0000Z-240112T1200Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=ID126884A36958.WinterStormWarning.126884B170C0ID.OTXWSWOTX.798bcec56c392d846dac694a76a81b44</id>
-<updated>2024-01-11T13:06:00-07:00</updated>
-<published>2024-01-11T13:06:00-07:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Winter Storm Warning issued January 11 at 1:06PM MST until January 12 at 5:00AM MST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=ID126884A36958.WinterStormWarning.126884B170C0ID.OTXWSWOTX.798bcec56c392d846dac694a76a81b44"/>
-<summary>...WINTER STORM WARNING REMAINS IN EFFECT UNTIL 4 AM PST FRIDAY... ...WIND CHILL WARNING IN EFFECT FROM 10 PM THIS EVENING TO NOON PST SATURDAY... * WHAT...For the Winter Storm Warning, heavy snow. Additional snow accumulations between 3 and 6 inches. Winds gusting as high as 35 mph will produce areas of blowing and drifting snow. For the Wind</summary>
-<cap:event>Winter Storm Warning</cap:event>
-<cap:effective>2024-01-11T13:06:00-07:00</cap:effective>
-<cap:expires>2024-01-12T05:00:00-07:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Central Panhandle Mountains</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>016009 016055 016057 016079</value>
-<valueName>UGC</valueName>
-<value>IDZ004</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.UPG.KOTX.WC.A.0001.240112T0600Z-240114T2000Z/
-/O.NEW.KOTX.WC.W.0001.240112T0600Z-240113T2000Z/
-/O.CON.KOTX.WS.W.0002.000000T0000Z-240112T1200Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=ID126884A36958.WinterStormWarning.126884B170C0ID.OTXWSWOTX.0990bea25d7b4640e28de6d54ff02b58</id>
-<updated>2024-01-11T13:06:00-07:00</updated>
-<published>2024-01-11T13:06:00-07:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Winter Storm Warning issued January 11 at 1:06PM MST until January 12 at 5:00AM MST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=ID126884A36958.WinterStormWarning.126884B170C0ID.OTXWSWOTX.0990bea25d7b4640e28de6d54ff02b58"/>
-<summary>...WINTER STORM WARNING REMAINS IN EFFECT UNTIL 4 AM PST FRIDAY... * WHAT...Heavy snow expected. Total snow accumulations between 3 and 7 inches. Winds gusting as high as 30 to 40 mph will produce areas of blowing and drifting snow. * WHERE...Soldiers Meadow Road, Nezperce, Winchester, Kamiah, and Craigmont.</summary>
-<cap:event>Winter Storm Warning</cap:event>
-<cap:effective>2024-01-11T13:06:00-07:00</cap:effective>
-<cap:expires>2024-01-12T05:00:00-07:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Lewis and Southern Nez Perce Counties</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>016061 016069</value>
-<valueName>UGC</valueName>
-<value>IDZ027</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KOTX.WS.W.0002.000000T0000Z-240112T1200Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=ID126884A36958.WinterWeatherAdvisory.126884B170C0ID.OTXWSWOTX.5551217f89f7a346e550134c3084ccbd</id>
-<updated>2024-01-11T13:06:00-07:00</updated>
-<published>2024-01-11T13:06:00-07:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Winter Weather Advisory issued January 11 at 1:06PM MST until January 12 at 5:00AM MST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=ID126884A36958.WinterWeatherAdvisory.126884B170C0ID.OTXWSWOTX.5551217f89f7a346e550134c3084ccbd"/>
-<summary>...WINTER WEATHER ADVISORY REMAINS IN EFFECT UNTIL 4 AM PST FRIDAY... ...WIND CHILL WARNING IN EFFECT FROM 10 PM THIS EVENING TO NOON PST SATURDAY... * WHAT...For the Winter Weather Advisory, snow. Additional snow accumulations up to 1 inches with blowing and drifting snow in open areas. For the Wind Chill Warning, dangerously cold wind</summary>
-<cap:event>Winter Weather Advisory</cap:event>
-<cap:effective>2024-01-11T13:06:00-07:00</cap:effective>
-<cap:expires>2024-01-12T05:00:00-07:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Coeur d&apos;Alene Area; Northern Panhandle</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>016017 016021 016055</value>
-<valueName>UGC</valueName>
-<value>IDZ001 IDZ002</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.UPG.KOTX.WC.A.0001.240112T0600Z-240114T2000Z/
-/O.NEW.KOTX.WC.W.0001.240112T0600Z-240113T2000Z/
-/O.CON.KOTX.WW.Y.0004.000000T0000Z-240112T1200Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=ID126884A36958.WinterWeatherAdvisory.126884B170C0ID.OTXWSWOTX.f38ea8860bfde34e3ba6373103f5fcfa</id>
-<updated>2024-01-11T13:06:00-07:00</updated>
-<published>2024-01-11T13:06:00-07:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Winter Weather Advisory issued January 11 at 1:06PM MST until January 12 at 5:00AM MST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=ID126884A36958.WinterWeatherAdvisory.126884B170C0ID.OTXWSWOTX.f38ea8860bfde34e3ba6373103f5fcfa"/>
-<summary>...WINTER WEATHER ADVISORY REMAINS IN EFFECT UNTIL 4 AM PST FRIDAY... * WHAT...Snow expected. Total snow accumulations between 1 and 4 inches with local accumulations up to 5 inches. Winds gusting as high as 40 mph will result in areas of blowing and drifting snow. * WHERE...Gifford, Alpowa Summit, Lewiston Grade, Culdesac, Clarkston, Pomeroy, Peck, Lapwai, and Lewiston.</summary>
-<cap:event>Winter Weather Advisory</cap:event>
-<cap:effective>2024-01-11T13:06:00-07:00</cap:effective>
-<cap:expires>2024-01-12T05:00:00-07:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Lewiston Area</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>016069</value>
-<valueName>UGC</valueName>
-<value>IDZ026</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KOTX.WW.Y.0004.000000T0000Z-240112T1200Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=ID126884A36958.WindChillWarning.126884C1EB80ID.OTXWSWOTX.73d01d3a7fc352ee9dd09f8dd4ba410d</id>
-<updated>2024-01-11T13:06:00-07:00</updated>
-<published>2024-01-11T13:06:00-07:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Wind Chill Warning issued January 11 at 1:06PM MST until January 13 at 1:00PM MST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=ID126884A36958.WindChillWarning.126884C1EB80ID.OTXWSWOTX.73d01d3a7fc352ee9dd09f8dd4ba410d"/>
-<summary>...WINTER WEATHER ADVISORY REMAINS IN EFFECT UNTIL 4 AM PST FRIDAY... ...WIND CHILL WARNING IN EFFECT FROM 10 PM THIS EVENING TO NOON PST SATURDAY... * WHAT...For the Winter Weather Advisory, snow. Additional snow accumulations up to 1 inches with blowing and drifting snow in open areas. For the Wind Chill Warning, dangerously cold wind</summary>
-<cap:event>Wind Chill Warning</cap:event>
-<cap:effective>2024-01-11T13:06:00-07:00</cap:effective>
-<cap:expires>2024-01-13T13:00:00-07:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Coeur d&apos;Alene Area; Northern Panhandle</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>016017 016021 016055</value>
-<valueName>UGC</valueName>
-<value>IDZ001 IDZ002</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.UPG.KOTX.WC.A.0001.240112T0600Z-240114T2000Z/
-/O.NEW.KOTX.WC.W.0001.240112T0600Z-240113T2000Z/
-/O.CON.KOTX.WW.Y.0004.000000T0000Z-240112T1200Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=ID126884A36958.WindChillWarning.126884C1EB80ID.OTXWSWOTX.8c113c5663de5d8e6f8b6a0619bcdd7f</id>
-<updated>2024-01-11T13:06:00-07:00</updated>
-<published>2024-01-11T13:06:00-07:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Wind Chill Warning issued January 11 at 1:06PM MST until January 13 at 1:00PM MST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=ID126884A36958.WindChillWarning.126884C1EB80ID.OTXWSWOTX.8c113c5663de5d8e6f8b6a0619bcdd7f"/>
-<summary>...WINTER STORM WARNING REMAINS IN EFFECT UNTIL 4 AM PST FRIDAY... ...WIND CHILL WARNING IN EFFECT FROM 10 PM THIS EVENING TO NOON PST SATURDAY... * WHAT...For the Winter Storm Warning, heavy snow. Additional snow accumulations between 1 and 4 inches. Winds gusting as high as 35 mph with areas of blowing and drifting snow. For the Wind Chill</summary>
-<cap:event>Wind Chill Warning</cap:event>
-<cap:effective>2024-01-11T13:06:00-07:00</cap:effective>
-<cap:expires>2024-01-13T13:00:00-07:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Idaho Palouse</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>016009 016057</value>
-<valueName>UGC</valueName>
-<value>IDZ003</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.UPG.KOTX.WC.A.0001.240112T0600Z-240114T2000Z/
-/O.NEW.KOTX.WC.W.0001.240112T0600Z-240113T2000Z/
-/O.CON.KOTX.WS.W.0002.000000T0000Z-240112T1200Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=ID126884A36958.WindChillWarning.126884C1EB80ID.OTXWSWOTX.e6598d54c4433143b5c9e3bb0e11c3d3</id>
-<updated>2024-01-11T13:06:00-07:00</updated>
-<published>2024-01-11T13:06:00-07:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Wind Chill Warning issued January 11 at 1:06PM MST until January 13 at 1:00PM MST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=ID126884A36958.WindChillWarning.126884C1EB80ID.OTXWSWOTX.e6598d54c4433143b5c9e3bb0e11c3d3"/>
-<summary>...WINTER STORM WARNING REMAINS IN EFFECT UNTIL 4 AM PST FRIDAY... ...WIND CHILL WARNING IN EFFECT FROM 10 PM THIS EVENING TO NOON PST SATURDAY... * WHAT...For the Winter Storm Warning, heavy snow. Additional snow accumulations between 3 and 6 inches. Winds gusting as high as 35 mph will produce areas of blowing and drifting snow. For the Wind</summary>
-<cap:event>Wind Chill Warning</cap:event>
-<cap:effective>2024-01-11T13:06:00-07:00</cap:effective>
-<cap:expires>2024-01-13T13:00:00-07:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Central Panhandle Mountains</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>016009 016055 016057 016079</value>
-<valueName>UGC</valueName>
-<value>IDZ004</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.UPG.KOTX.WC.A.0001.240112T0600Z-240114T2000Z/
-/O.NEW.KOTX.WC.W.0001.240112T0600Z-240113T2000Z/
-/O.CON.KOTX.WS.W.0002.000000T0000Z-240112T1200Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -19193,17 +19220,17 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=NM126884A3BD54.DustStormWarning.126884A3E20CNM.ABQDSWABQ.79dfc21d5a9c3a9c110579b37ad47764</id>
-<updated>2024-01-11T15:21:00-07:00</updated>
-<published>2024-01-11T15:21:00-07:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=NM126884A3C970.DustStormWarning.126884A3E20CNM.ABQDSWABQ.79dfc21d5a9c3a9c110579b37ad47764</id>
+<updated>2024-01-11T15:52:00-07:00</updated>
+<published>2024-01-11T15:52:00-07:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Dust Storm Warning issued January 11 at 3:21PM MST until January 11 at 4:15PM MST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=NM126884A3BD54.DustStormWarning.126884A3E20CNM.ABQDSWABQ.79dfc21d5a9c3a9c110579b37ad47764"/>
-<summary>The National Weather Service in Albuquerque has issued a * Dust Storm Warning for... Central Chaves County in southeastern New Mexico... * Until 415 PM MST. * At 318 PM MST, a dust storm was across southern Chaves County near Roswell.</summary>
+<title>Dust Storm Warning issued January 11 at 3:52PM MST until January 11 at 4:15PM MST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=NM126884A3C970.DustStormWarning.126884A3E20CNM.ABQDSWABQ.79dfc21d5a9c3a9c110579b37ad47764"/>
+<summary>...A DUST STORM WARNING REMAINS IN EFFECT UNTIL 415 PM MST FOR CENTRAL CHAVES COUNTY... At 350 PM MST, a dust storm continued across southern Chaves County near Roswell. HAZARD...Less than one quarter mile visibility with strong wind in excess of 50 mph.</summary>
 <cap:event>Dust Storm Warning</cap:event>
-<cap:effective>2024-01-11T15:21:00-07:00</cap:effective>
+<cap:effective>2024-01-11T15:52:00-07:00</cap:effective>
 <cap:expires>2024-01-11T16:15:00-07:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
@@ -19221,7 +19248,71 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
-<value>/O.NEW.KABQ.DS.W.0001.240111T2221Z-240111T2315Z/</value>
+<value>/O.CON.KABQ.DS.W.0001.000000T0000Z-240111T2315Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=NM126884A3C650.WinterWeatherAdvisory.126884B01130NM.EPZWSWEPZ.ed293fecab3972b260342cedb735e317</id>
+<updated>2024-01-11T15:44:00-07:00</updated>
+<published>2024-01-11T15:44:00-07:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Winter Weather Advisory issued January 11 at 3:44PM MST until January 11 at 8:00PM MST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=NM126884A3C650.WinterWeatherAdvisory.126884B01130NM.EPZWSWEPZ.ed293fecab3972b260342cedb735e317"/>
+<summary>...WINTER WEATHER ADVISORY REMAINS IN EFFECT UNTIL 8 PM MST THIS EVENING... * WHAT...Snow expected. Total snow accumulations of up to 5 inches. Winds gusting as high as 50 mph. * WHERE...Central Grant County/Silver City Area. * WHEN...From 8 AM to 8 PM MST Thursday.</summary>
+<cap:event>Winter Weather Advisory</cap:event>
+<cap:effective>2024-01-11T15:44:00-07:00</cap:effective>
+<cap:expires>2024-01-11T20:00:00-07:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Central Grant County, Silver City Area; Southern Gila Region Highlands, Black Range</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>035017 035051</value>
+<valueName>UGC</valueName>
+<value>NMZ425 NMZ426</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KEPZ.WW.Y.0003.000000T0000Z-240112T0300Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=NM126884A3C650.WindChillWarning.126884B20D00NM.EPZWSWEPZ.ffe92f91b9987798c6e7b89240c74760</id>
+<updated>2024-01-11T15:44:00-07:00</updated>
+<published>2024-01-11T15:44:00-07:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Wind Chill Warning issued January 11 at 3:44PM MST until January 12 at 9:00AM MST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=NM126884A3C650.WindChillWarning.126884B20D00NM.EPZWSWEPZ.ffe92f91b9987798c6e7b89240c74760"/>
+<summary>...WIND CHILL WARNING IN EFFECT FROM MIDNIGHT TONIGHT TO 9 AM MST FRIDAY... * WHAT...Dangerously cold wind chills expected. Wind chills as low as 20 below zero. * WHERE...Sacramento Mountains Above 7500 Feet. * WHEN...From midnight tonight to 9 AM MST Friday.</summary>
+<cap:event>Wind Chill Warning</cap:event>
+<cap:effective>2024-01-11T15:44:00-07:00</cap:effective>
+<cap:expires>2024-01-12T09:00:00-07:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Sacramento Mountains Above 7500 Feet</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>035035</value>
+<valueName>UGC</valueName>
+<value>NMZ415</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.NEW.KEPZ.WC.W.0001.240112T0700Z-240112T1600Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -19839,38 +19930,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=NM126884A1A820.WinterWeatherAdvisory.126884B01130NM.EPZWSWEPZ.ed293fecab3972b260342cedb735e317</id>
-<updated>2024-01-11T01:56:00-07:00</updated>
-<published>2024-01-11T01:56:00-07:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Winter Weather Advisory issued January 11 at 1:56AM MST until January 11 at 8:00PM MST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=NM126884A1A820.WinterWeatherAdvisory.126884B01130NM.EPZWSWEPZ.ed293fecab3972b260342cedb735e317"/>
-<summary>...WINTER WEATHER ADVISORY REMAINS IN EFFECT FROM 8 AM THIS MORNING TO 8 PM MST THIS EVENING... * WHAT...Snow expected. Total snow accumulations of up to 5 inches. Winds gusting as high as 50 mph. * WHERE...Central Grant County/Silver City Area. * WHEN...From 8 AM to 8 PM MST Thursday.</summary>
-<cap:event>Winter Weather Advisory</cap:event>
-<cap:effective>2024-01-11T01:56:00-07:00</cap:effective>
-<cap:expires>2024-01-11T20:00:00-07:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Central Grant County, Silver City Area; Southern Gila Region Highlands, Black Range</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>035017 035051</value>
-<valueName>UGC</valueName>
-<value>NMZ425 NMZ426</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KEPZ.WW.Y.0003.240111T1500Z-240112T0300Z/</value>
-</cap:parameter>
-</entry>
-<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=NV126884A3BDB8.BlizzardWarning.126884CF0AE0NV.LKNWSWLKN.bd9bedcf87648755408043c0f9515bd4</id>
 <updated>2024-01-11T14:22:00-08:00</updated>
 <published>2024-01-11T14:22:00-08:00</published>
@@ -20258,70 +20317,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <valueName>VTEC</valueName>
 <value>/O.UPG.KOKX.CF.A.0001.240113T1200Z-240113T2300Z/
 /O.NEW.KOKX.CF.W.0002.240113T1200Z-240113T2300Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=NY126884A37B50.WinterWeatherAdvisory.126884A3DC30NY.BGMWSWBGM.f67a0fcfa53aa8dbd0c820e1681d51e2</id>
-<updated>2024-01-11T15:52:00-05:00</updated>
-<published>2024-01-11T15:52:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Winter Weather Advisory issued January 11 at 3:52PM EST until January 11 at 6:00PM EST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=NY126884A37B50.WinterWeatherAdvisory.126884A3DC30NY.BGMWSWBGM.f67a0fcfa53aa8dbd0c820e1681d51e2"/>
-<summary>...WINTER WEATHER ADVISORY REMAINS IN EFFECT UNTIL 6 PM EST THIS EVENING... * WHAT...Snow. Additional snow accumulations of up to one inch. * WHERE...Northern Oneida county. * WHEN...Until 6 PM EST this evening. * IMPACTS...Plan on slippery road conditions. The hazardous</summary>
-<cap:event>Winter Weather Advisory</cap:event>
-<cap:effective>2024-01-11T15:52:00-05:00</cap:effective>
-<cap:expires>2024-01-11T18:00:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Northern Oneida</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>036065</value>
-<valueName>UGC</valueName>
-<value>NYZ009</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KBGM.WW.Y.0003.000000T0000Z-240111T2300Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=NY126884A3718C.WinterWeatherAdvisory.126884A3DC30NY.ALYWSWALY.c4b5bd891511eed9e48a0d100e5cbdff</id>
-<updated>2024-01-11T15:27:00-05:00</updated>
-<published>2024-01-11T15:27:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Winter Weather Advisory issued January 11 at 3:27PM EST until January 11 at 6:00PM EST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=NY126884A3718C.WinterWeatherAdvisory.126884A3DC30NY.ALYWSWALY.c4b5bd891511eed9e48a0d100e5cbdff"/>
-<summary>...WINTER WEATHER ADVISORY REMAINS IN EFFECT UNTIL 6 PM EST THIS EVENING... * WHAT...Snow. Additional snow accumulations of 2 to 4 inches. Total accumulations 3 to 6 inches in a few locations. * WHERE...Northern Herkimer County. * WHEN...Until 6 PM EST this evening.</summary>
-<cap:event>Winter Weather Advisory</cap:event>
-<cap:effective>2024-01-11T15:27:00-05:00</cap:effective>
-<cap:expires>2024-01-11T18:00:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Northern Herkimer</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>036043</value>
-<valueName>UGC</valueName>
-<value>NYZ032</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KALY.WW.Y.0003.000000T0000Z-240111T2300Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -20971,39 +20966,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=OH126884A1F640.FloodWarning.126884D0DFA0OH.PBZFLWPBZ.f38b5e056290b329c4e4e351e9aa11d3</id>
-<updated>2024-01-11T05:56:00-05:00</updated>
-<published>2024-01-11T05:56:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Flood Warning issued January 11 at 5:56AM EST until January 14 at 1:00PM EST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=OH126884A1F640.FloodWarning.126884D0DFA0OH.PBZFLWPBZ.f38b5e056290b329c4e4e351e9aa11d3"/>
-<summary>...The National Weather Service in Pittsburgh PA has issued a Flood Warning for the following rivers in Ohio... Stillwater Creek At Uhrichsville affecting Tuscarawas County. ...FLOOD WARNING IN EFFECT FROM SATURDAY MORNING TO EARLY SUNDAY AFTERNOON... ...REPLACES RIVER FLOOD WATCH...</summary>
-<cap:event>Flood Warning</cap:event>
-<cap:effective>2024-01-11T05:56:00-05:00</cap:effective>
-<cap:expires>2024-01-14T13:00:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Tuscarawas</cap:areaDesc>
-<cap:polygon>40.41,-81.36 40.41,-81.32 40.38,-81.32 40.38,-81.36 40.41,-81.36</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>039157</value>
-<valueName>UGC</valueName>
-<value>OHC157</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.NEW.KPBZ.FL.W.0001.240113T1100Z-240114T1800Z/
-/URVO1.1.ER.000000T0000Z.000000T0000Z.000000T0000Z.NO/</value>
-</cap:parameter>
-</entry>
-<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=OK126884A3BAFC.WindChillAdvisory.126884B1E5F0OK.OUNWSWOUN.3f6e0bd4285fd9086c2959d3c4d13b0b</id>
 <updated>2024-01-11T16:15:00-06:00</updated>
 <published>2024-01-11T16:15:00-06:00</published>
@@ -21293,6 +21255,596 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value>/O.NEW.KSHV.WI.Y.0002.240112T0000Z-240113T0000Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=OR126884A3CB00.WinterWeatherAdvisory.126884B25B20OR.PDTWSWPDT.71ed8b8089397b5816c5d006aa33b559</id>
+<updated>2024-01-11T14:56:00-08:00</updated>
+<published>2024-01-11T14:56:00-08:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Winter Weather Advisory issued January 11 at 2:56PM PST until January 12 at 10:00AM PST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=OR126884A3CB00.WinterWeatherAdvisory.126884B25B20OR.PDTWSWPDT.71ed8b8089397b5816c5d006aa33b559"/>
+<summary>...WINTER WEATHER ADVISORY REMAINS IN EFFECT UNTIL 10 AM PST FRIDAY... ...WIND CHILL WATCH IN EFFECT FROM FRIDAY AFTERNOON THROUGH SATURDAY MORNING... ...WINTER STORM WATCH REMAINS IN EFFECT FROM LATE FRIDAY NIGHT THROUGH LATE SATURDAY NIGHT...</summary>
+<cap:event>Winter Weather Advisory</cap:event>
+<cap:effective>2024-01-11T14:56:00-08:00</cap:effective>
+<cap:expires>2024-01-12T10:00:00-08:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Foothills of the Northern Blue Mountains of Oregon</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>041059</value>
+<valueName>UGC</valueName>
+<value>ORZ507</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.NEW.KPDT.WC.A.0001.240113T0000Z-240113T1800Z/
+/O.CON.KPDT.WW.Y.0005.240112T0000Z-240112T1800Z/
+/O.CON.KPDT.WS.A.0003.240113T1200Z-240114T1200Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=OR126884A3CB00.WindChillWatch.126884C19D60OR.PDTWSWPDT.754334f149c347570bfc3c74c22726a3</id>
+<updated>2024-01-11T14:56:00-08:00</updated>
+<published>2024-01-11T14:56:00-08:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Wind Chill Watch issued January 11 at 2:56PM PST until January 13 at 10:00AM PST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=OR126884A3CB00.WindChillWatch.126884C19D60OR.PDTWSWPDT.754334f149c347570bfc3c74c22726a3"/>
+<summary>...WIND CHILL WATCH IN EFFECT FROM FRIDAY AFTERNOON THROUGH SATURDAY MORNING... ...WINTER STORM WATCH REMAINS IN EFFECT FROM LATE FRIDAY NIGHT THROUGH LATE SATURDAY NIGHT... * WHAT...For the Wind Chill Watch, dangerously cold wind chills possible. Wind chills as low as 15 below zero. For the Winter</summary>
+<cap:event>Wind Chill Watch</cap:event>
+<cap:effective>2024-01-11T14:56:00-08:00</cap:effective>
+<cap:expires>2024-01-13T10:00:00-08:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Future</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Possible</cap:certainty>
+<cap:areaDesc>Lower Columbia Basin of Oregon</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>041049 041059</value>
+<valueName>UGC</valueName>
+<value>ORZ044</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.NEW.KPDT.WC.A.0001.240113T0000Z-240113T1800Z/
+/O.CON.KPDT.WS.A.0003.240113T1200Z-240114T1200Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=OR126884A3CB00.WindChillWatch.126884C19D60OR.PDTWSWPDT.544a9ed1f6062b0786c5b2e3887c250c</id>
+<updated>2024-01-11T14:56:00-08:00</updated>
+<published>2024-01-11T14:56:00-08:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Wind Chill Watch issued January 11 at 2:56PM PST until January 13 at 10:00AM PST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=OR126884A3CB00.WindChillWatch.126884C19D60OR.PDTWSWPDT.544a9ed1f6062b0786c5b2e3887c250c"/>
+<summary>...WINTER STORM WARNING REMAINS IN EFFECT UNTIL 4 AM PST SUNDAY... ...WIND CHILL WATCH IN EFFECT FROM FRIDAY AFTERNOON THROUGH SATURDAY MORNING... * WHAT...For the Winter Storm Warning, heavy snow. Additional snow accumulations of 4 to 12 inches. Winds gusting as high as 40 mph. For the Wind Chill Watch, dangerously cold wind chills</summary>
+<cap:event>Wind Chill Watch</cap:event>
+<cap:effective>2024-01-11T14:56:00-08:00</cap:effective>
+<cap:expires>2024-01-13T10:00:00-08:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Future</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Possible</cap:certainty>
+<cap:areaDesc>Grande Ronde Valley; Wallowa County</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>041061 041063</value>
+<valueName>UGC</valueName>
+<value>ORZ049 ORZ050</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.NEW.KPDT.WC.A.0001.240113T0000Z-240113T1800Z/
+/O.CON.KPDT.WS.W.0001.000000T0000Z-240114T1200Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=OR126884A3CB00.WindChillWatch.126884C19D60OR.PDTWSWPDT.e997e1cdd4ac9399f621c8426270c4a5</id>
+<updated>2024-01-11T14:56:00-08:00</updated>
+<published>2024-01-11T14:56:00-08:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Wind Chill Watch issued January 11 at 2:56PM PST until January 13 at 10:00AM PST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=OR126884A3CB00.WindChillWatch.126884C19D60OR.PDTWSWPDT.e997e1cdd4ac9399f621c8426270c4a5"/>
+<summary>...WINTER WEATHER ADVISORY REMAINS IN EFFECT UNTIL 10 AM PST FRIDAY... ...WIND CHILL WATCH IN EFFECT FROM FRIDAY AFTERNOON THROUGH SATURDAY MORNING... ...WINTER STORM WATCH REMAINS IN EFFECT FROM LATE FRIDAY NIGHT THROUGH LATE SATURDAY NIGHT...</summary>
+<cap:event>Wind Chill Watch</cap:event>
+<cap:effective>2024-01-11T14:56:00-08:00</cap:effective>
+<cap:expires>2024-01-13T10:00:00-08:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Future</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Possible</cap:certainty>
+<cap:areaDesc>Foothills of the Northern Blue Mountains of Oregon</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>041059</value>
+<valueName>UGC</valueName>
+<value>ORZ507</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.NEW.KPDT.WC.A.0001.240113T0000Z-240113T1800Z/
+/O.CON.KPDT.WW.Y.0005.240112T0000Z-240112T1800Z/
+/O.CON.KPDT.WS.A.0003.240113T1200Z-240114T1200Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=OR126884A3CB00.WindChillWatch.126884CFF540OR.PDTWSWPDT.5ec6a579dd3a70c1f835cf6c35bdaed2</id>
+<updated>2024-01-11T14:56:00-08:00</updated>
+<published>2024-01-11T14:56:00-08:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Wind Chill Watch issued January 11 at 2:56PM PST until January 14 at 4:00AM PST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=OR126884A3CB00.WindChillWatch.126884CFF540OR.PDTWSWPDT.5ec6a579dd3a70c1f835cf6c35bdaed2"/>
+<summary>...WINTER STORM WARNING REMAINS IN EFFECT UNTIL 4 AM PST SUNDAY... ...WIND CHILL WATCH IN EFFECT FROM FRIDAY AFTERNOON THROUGH LATE SATURDAY NIGHT... * WHAT...For the Winter Storm Warning, heavy snow expected. Total snow accumulations of 5 to 16 inches. Winds gusting as high as 45 mph. For the Wind Chill Watch, dangerously cold</summary>
+<cap:event>Wind Chill Watch</cap:event>
+<cap:effective>2024-01-11T14:56:00-08:00</cap:effective>
+<cap:expires>2024-01-14T04:00:00-08:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Future</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Possible</cap:certainty>
+<cap:areaDesc>Foothills of the Southern Blue Mountains of Oregon; North Central Oregon</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>041021 041049 041055 041065</value>
+<valueName>UGC</valueName>
+<value>ORZ508 ORZ510</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.NEW.KPDT.WC.A.0001.240113T0000Z-240114T1200Z/
+/O.CON.KPDT.WS.W.0002.240112T0000Z-240114T1200Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=OR126884A3CB00.WindChillWatch.126884CFF540OR.PDTWSWPDT.2f45152bc9ba7db55e43143700e6612e</id>
+<updated>2024-01-11T14:56:00-08:00</updated>
+<published>2024-01-11T14:56:00-08:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Wind Chill Watch issued January 11 at 2:56PM PST until January 14 at 4:00AM PST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=OR126884A3CB00.WindChillWatch.126884CFF540OR.PDTWSWPDT.2f45152bc9ba7db55e43143700e6612e"/>
+<summary>...WINTER STORM WARNING REMAINS IN EFFECT FROM 1 AM FRIDAY TO 4 AM PST SUNDAY... ...WIND CHILL WATCH IN EFFECT FROM FRIDAY EVENING THROUGH LATE SATURDAY NIGHT... * WHAT...For the Winter Storm Warning, heavy snow expected. Total snow accumulations of 10 to 16 inches. Winds gusting as</summary>
+<cap:event>Wind Chill Watch</cap:event>
+<cap:effective>2024-01-11T14:56:00-08:00</cap:effective>
+<cap:expires>2024-01-14T04:00:00-08:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Future</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Possible</cap:certainty>
+<cap:areaDesc>Central Oregon</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>041017 041031</value>
+<valueName>UGC</valueName>
+<value>ORZ511</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.NEW.KPDT.WC.A.0001.240113T0600Z-240114T1200Z/
+/O.CON.KPDT.WS.W.0002.240112T0900Z-240114T1200Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=OR126884A3CB00.WinterStormWarning.126884CFF540OR.PDTWSWPDT.9c97613ddb26fd6d19fb9f1b4d37ba00</id>
+<updated>2024-01-11T14:56:00-08:00</updated>
+<published>2024-01-11T14:56:00-08:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Winter Storm Warning issued January 11 at 2:56PM PST until January 14 at 4:00AM PST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=OR126884A3CB00.WinterStormWarning.126884CFF540OR.PDTWSWPDT.9c97613ddb26fd6d19fb9f1b4d37ba00"/>
+<summary>...WINTER STORM WARNING REMAINS IN EFFECT UNTIL 4 AM PST SUNDAY... ...WIND CHILL WATCH IN EFFECT FROM FRIDAY AFTERNOON THROUGH SATURDAY MORNING... * WHAT...For the Winter Storm Warning, heavy snow. Additional snow accumulations of 4 to 12 inches. Winds gusting as high as 40 mph. For the Wind Chill Watch, dangerously cold wind chills</summary>
+<cap:event>Winter Storm Warning</cap:event>
+<cap:effective>2024-01-11T14:56:00-08:00</cap:effective>
+<cap:expires>2024-01-14T04:00:00-08:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Grande Ronde Valley; Wallowa County</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>041061 041063</value>
+<valueName>UGC</valueName>
+<value>ORZ049 ORZ050</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.NEW.KPDT.WC.A.0001.240113T0000Z-240113T1800Z/
+/O.CON.KPDT.WS.W.0001.000000T0000Z-240114T1200Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=OR126884A3CB00.WinterStormWarning.126884CFF540OR.PDTWSWPDT.3bb6389cf1dd7b33398990d721cd8526</id>
+<updated>2024-01-11T14:56:00-08:00</updated>
+<published>2024-01-11T14:56:00-08:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Winter Storm Warning issued January 11 at 2:56PM PST until January 14 at 4:00AM PST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=OR126884A3CB00.WinterStormWarning.126884CFF540OR.PDTWSWPDT.3bb6389cf1dd7b33398990d721cd8526"/>
+<summary>...WINTER STORM WARNING REMAINS IN EFFECT UNTIL 4 AM PST SUNDAY... * WHAT...Heavy snow. Additional snow accumulations of 7 to 23 inches. Winds gusting as high as 50 mph. * WHERE...In Oregon, Northern Blue Mountains of Oregon. In Washington, Northwest Blue Mountains. * WHEN...Until 4 AM PST Sunday.</summary>
+<cap:event>Winter Storm Warning</cap:event>
+<cap:effective>2024-01-11T14:56:00-08:00</cap:effective>
+<cap:expires>2024-01-14T04:00:00-08:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Northern Blue Mountains of Oregon</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>041059 041061 041063</value>
+<valueName>UGC</valueName>
+<value>ORZ502</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KPDT.WS.W.0001.000000T0000Z-240114T1200Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=OR126884A3CB00.WinterStormWarning.126884CFF540OR.PDTWSWPDT.5e2f398a374d13d077bad23558f34c42</id>
+<updated>2024-01-11T14:56:00-08:00</updated>
+<published>2024-01-11T14:56:00-08:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Winter Storm Warning issued January 11 at 2:56PM PST until January 14 at 4:00AM PST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=OR126884A3CB00.WinterStormWarning.126884CFF540OR.PDTWSWPDT.5e2f398a374d13d077bad23558f34c42"/>
+<summary>...WINTER STORM WARNING REMAINS IN EFFECT UNTIL 4 AM PST SUNDAY... * WHAT...Heavy snow expected. Total snow accumulations of 9 to 22 inches. Winds gusting as high as 50 mph. * WHERE...Southern Blue Mountains of Oregon. * WHEN...From 10 AM this morning to 4 AM PST Sunday. * IMPACTS...Travel could be very difficult to impossible.</summary>
+<cap:event>Winter Storm Warning</cap:event>
+<cap:effective>2024-01-11T14:56:00-08:00</cap:effective>
+<cap:expires>2024-01-14T04:00:00-08:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Southern Blue Mountains of Oregon</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>041023 041049 041059 041061</value>
+<valueName>UGC</valueName>
+<value>ORZ503</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KPDT.WS.W.0002.000000T0000Z-240114T1200Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=OR126884A3CB00.WinterStormWarning.126884CFF540OR.PDTWSWPDT.3404b664865369693f9ad0a8e0d11bd8</id>
+<updated>2024-01-11T14:56:00-08:00</updated>
+<published>2024-01-11T14:56:00-08:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Winter Storm Warning issued January 11 at 2:56PM PST until January 14 at 4:00AM PST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=OR126884A3CB00.WinterStormWarning.126884CFF540OR.PDTWSWPDT.3404b664865369693f9ad0a8e0d11bd8"/>
+<summary>...WINTER STORM WARNING REMAINS IN EFFECT UNTIL 4 AM PST SUNDAY... * WHAT...Heavy snow expected. Total snow accumulations of 9 to 15 inches. Winds gusting as high as 50 mph. * WHERE...John Day Basin. * WHEN...From 10 AM this morning to 4 AM PST Sunday. * IMPACTS...Travel could be very difficult to impossible. Patchy</summary>
+<cap:event>Winter Storm Warning</cap:event>
+<cap:effective>2024-01-11T14:56:00-08:00</cap:effective>
+<cap:expires>2024-01-14T04:00:00-08:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>John Day Basin</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>041023 041069</value>
+<valueName>UGC</valueName>
+<value>ORZ505</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KPDT.WS.W.0002.000000T0000Z-240114T1200Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=OR126884A3CB00.WinterStormWarning.126884CFF540OR.PDTWSWPDT.d7f74bf57b450cf435dcd1007dd0b39d</id>
+<updated>2024-01-11T14:56:00-08:00</updated>
+<published>2024-01-11T14:56:00-08:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Winter Storm Warning issued January 11 at 2:56PM PST until January 14 at 4:00AM PST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=OR126884A3CB00.WinterStormWarning.126884CFF540OR.PDTWSWPDT.d7f74bf57b450cf435dcd1007dd0b39d"/>
+<summary>...WINTER STORM WARNING REMAINS IN EFFECT UNTIL 4 AM PST SUNDAY... * WHAT...Heavy snow expected. Total snow accumulations of 10 to 18 inches. Winds gusting as high as 55 mph. * WHERE...Ochoco-John Day Highlands. * WHEN...From 10 AM this morning to 4 AM PST Sunday. * IMPACTS...Travel could be very difficult to impossible. Patchy</summary>
+<cap:event>Winter Storm Warning</cap:event>
+<cap:effective>2024-01-11T14:56:00-08:00</cap:effective>
+<cap:expires>2024-01-14T04:00:00-08:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Ochoco-John Day Highlands</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>041013 041017 041023 041069</value>
+<valueName>UGC</valueName>
+<value>ORZ506</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KPDT.WS.W.0002.000000T0000Z-240114T1200Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=OR126884A3CB00.WinterStormWarning.126884CFF540OR.PDTWSWPDT.6cfdf9c6484db7e7ee60d23af4831392</id>
+<updated>2024-01-11T14:56:00-08:00</updated>
+<published>2024-01-11T14:56:00-08:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Winter Storm Warning issued January 11 at 2:56PM PST until January 14 at 4:00AM PST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=OR126884A3CB00.WinterStormWarning.126884CFF540OR.PDTWSWPDT.6cfdf9c6484db7e7ee60d23af4831392"/>
+<summary>...WINTER STORM WARNING REMAINS IN EFFECT UNTIL 4 AM PST SUNDAY... * WHAT...Heavy snow expected. Total snow accumulations of 16 to 40 inches. Winds gusting as high as 60 mph. * WHERE...East Slopes of the Oregon Cascades. * WHEN...Until 4 AM PST Sunday. * IMPACTS...Travel could be very difficult to impossible.</summary>
+<cap:event>Winter Storm Warning</cap:event>
+<cap:effective>2024-01-11T14:56:00-08:00</cap:effective>
+<cap:expires>2024-01-14T04:00:00-08:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>East Slopes of the Oregon Cascades</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>041017 041031</value>
+<valueName>UGC</valueName>
+<value>ORZ509</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KPDT.WS.W.0002.000000T0000Z-240114T1200Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=OR126884A3CB00.WinterStormWarning.126884CFF540OR.PDTWSWPDT.ccb01f61ced3ab486b929ea9e6b0ab2e</id>
+<updated>2024-01-11T14:56:00-08:00</updated>
+<published>2024-01-11T14:56:00-08:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Winter Storm Warning issued January 11 at 2:56PM PST until January 14 at 4:00AM PST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=OR126884A3CB00.WinterStormWarning.126884CFF540OR.PDTWSWPDT.ccb01f61ced3ab486b929ea9e6b0ab2e"/>
+<summary>...WINTER STORM WARNING REMAINS IN EFFECT UNTIL 4 AM PST SUNDAY... ...WIND CHILL WATCH IN EFFECT FROM FRIDAY AFTERNOON THROUGH LATE SATURDAY NIGHT... * WHAT...For the Winter Storm Warning, heavy snow expected. Total snow accumulations of 5 to 16 inches. Winds gusting as high as 45 mph. For the Wind Chill Watch, dangerously cold</summary>
+<cap:event>Winter Storm Warning</cap:event>
+<cap:effective>2024-01-11T14:56:00-08:00</cap:effective>
+<cap:expires>2024-01-14T04:00:00-08:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Foothills of the Southern Blue Mountains of Oregon; North Central Oregon</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>041021 041049 041055 041065</value>
+<valueName>UGC</valueName>
+<value>ORZ508 ORZ510</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.NEW.KPDT.WC.A.0001.240113T0000Z-240114T1200Z/
+/O.CON.KPDT.WS.W.0002.240112T0000Z-240114T1200Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=OR126884A3CB00.WinterStormWarning.126884CFF540OR.PDTWSWPDT.6bcbb3b6839c967409e1bed3c8ad4ff8</id>
+<updated>2024-01-11T14:56:00-08:00</updated>
+<published>2024-01-11T14:56:00-08:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Winter Storm Warning issued January 11 at 2:56PM PST until January 14 at 4:00AM PST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=OR126884A3CB00.WinterStormWarning.126884CFF540OR.PDTWSWPDT.6bcbb3b6839c967409e1bed3c8ad4ff8"/>
+<summary>...WINTER STORM WARNING REMAINS IN EFFECT FROM 1 AM FRIDAY TO 4 AM PST SUNDAY... ...WIND CHILL WATCH IN EFFECT FROM FRIDAY EVENING THROUGH LATE SATURDAY NIGHT... * WHAT...For the Winter Storm Warning, heavy snow expected. Total snow accumulations of 10 to 16 inches. Winds gusting as</summary>
+<cap:event>Winter Storm Warning</cap:event>
+<cap:effective>2024-01-11T14:56:00-08:00</cap:effective>
+<cap:expires>2024-01-14T04:00:00-08:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Central Oregon</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>041017 041031</value>
+<valueName>UGC</valueName>
+<value>ORZ511</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.NEW.KPDT.WC.A.0001.240113T0600Z-240114T1200Z/
+/O.CON.KPDT.WS.W.0002.240112T0900Z-240114T1200Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=OR126884A3CB00.WinterStormWatch.126884CFF540OR.PDTWSWPDT.980bc5d20a1c9687602142bb88eb4144</id>
+<updated>2024-01-11T14:56:00-08:00</updated>
+<published>2024-01-11T14:56:00-08:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Winter Storm Watch issued January 11 at 2:56PM PST until January 14 at 4:00AM PST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=OR126884A3CB00.WinterStormWatch.126884CFF540OR.PDTWSWPDT.980bc5d20a1c9687602142bb88eb4144"/>
+<summary>...WINTER STORM WATCH REMAINS IN EFFECT FROM LATE FRIDAY NIGHT THROUGH LATE SATURDAY NIGHT... * WHAT...Heavy snow possible. Total snow accumulations of 3 to 6 inches possible. * WHERE...In Oregon, Eastern Columbia River Gorge of Oregon and Lower Columbia Basin of Oregon. In Washington, Eastern</summary>
+<cap:event>Winter Storm Watch</cap:event>
+<cap:effective>2024-01-11T14:56:00-08:00</cap:effective>
+<cap:expires>2024-01-14T04:00:00-08:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Future</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Possible</cap:certainty>
+<cap:areaDesc>Eastern Columbia River Gorge of Oregon</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>041021 041055 041065</value>
+<valueName>UGC</valueName>
+<value>ORZ041</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KPDT.WS.A.0003.240113T1200Z-240114T1200Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=OR126884A3CB00.WinterStormWatch.126884CFF540OR.PDTWSWPDT.3394f84c388da41056a249e0bc068312</id>
+<updated>2024-01-11T14:56:00-08:00</updated>
+<published>2024-01-11T14:56:00-08:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Winter Storm Watch issued January 11 at 2:56PM PST until January 14 at 4:00AM PST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=OR126884A3CB00.WinterStormWatch.126884CFF540OR.PDTWSWPDT.3394f84c388da41056a249e0bc068312"/>
+<summary>...WIND CHILL WATCH IN EFFECT FROM FRIDAY AFTERNOON THROUGH SATURDAY MORNING... ...WINTER STORM WATCH REMAINS IN EFFECT FROM LATE FRIDAY NIGHT THROUGH LATE SATURDAY NIGHT... * WHAT...For the Wind Chill Watch, dangerously cold wind chills possible. Wind chills as low as 15 below zero. For the Winter</summary>
+<cap:event>Winter Storm Watch</cap:event>
+<cap:effective>2024-01-11T14:56:00-08:00</cap:effective>
+<cap:expires>2024-01-14T04:00:00-08:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Future</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Possible</cap:certainty>
+<cap:areaDesc>Lower Columbia Basin of Oregon</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>041049 041059</value>
+<valueName>UGC</valueName>
+<value>ORZ044</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.NEW.KPDT.WC.A.0001.240113T0000Z-240113T1800Z/
+/O.CON.KPDT.WS.A.0003.240113T1200Z-240114T1200Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=OR126884A3CB00.WinterStormWatch.126884CFF540OR.PDTWSWPDT.b14883f9a365eca65ae8c680701222fa</id>
+<updated>2024-01-11T14:56:00-08:00</updated>
+<published>2024-01-11T14:56:00-08:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Winter Storm Watch issued January 11 at 2:56PM PST until January 14 at 4:00AM PST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=OR126884A3CB00.WinterStormWatch.126884CFF540OR.PDTWSWPDT.b14883f9a365eca65ae8c680701222fa"/>
+<summary>...WINTER WEATHER ADVISORY REMAINS IN EFFECT UNTIL 10 AM PST FRIDAY... ...WIND CHILL WATCH IN EFFECT FROM FRIDAY AFTERNOON THROUGH SATURDAY MORNING... ...WINTER STORM WATCH REMAINS IN EFFECT FROM LATE FRIDAY NIGHT THROUGH LATE SATURDAY NIGHT...</summary>
+<cap:event>Winter Storm Watch</cap:event>
+<cap:effective>2024-01-11T14:56:00-08:00</cap:effective>
+<cap:expires>2024-01-14T04:00:00-08:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Future</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Possible</cap:certainty>
+<cap:areaDesc>Foothills of the Northern Blue Mountains of Oregon</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>041059</value>
+<valueName>UGC</valueName>
+<value>ORZ507</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.NEW.KPDT.WC.A.0001.240113T0000Z-240113T1800Z/
+/O.CON.KPDT.WW.Y.0005.240112T0000Z-240112T1800Z/
+/O.CON.KPDT.WS.A.0003.240113T1200Z-240114T1200Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=OR126884A3C718.WindAdvisory.126884B1E5F0OR.PDTNPWPDT.607658c5f18c4f0dd4f0017dce7f8884</id>
+<updated>2024-01-11T14:46:00-08:00</updated>
+<published>2024-01-11T14:46:00-08:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Wind Advisory issued January 11 at 2:46PM PST until January 12 at 7:00AM PST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=OR126884A3C718.WindAdvisory.126884B1E5F0OR.PDTNPWPDT.607658c5f18c4f0dd4f0017dce7f8884"/>
+<summary>...WIND ADVISORY REMAINS IN EFFECT UNTIL 7 AM PST FRIDAY... * WHAT...West winds 25 to 35 mph with gusts up to 50 mph expected. * WHERE...In Oregon, Eastern Columbia River Gorge of Oregon, Lower Columbia Basin of Oregon and North Central Oregon. In Washington, Eastern Columbia River Gorge of Washington and</summary>
+<cap:event>Wind Advisory</cap:event>
+<cap:effective>2024-01-11T14:46:00-08:00</cap:effective>
+<cap:expires>2024-01-12T07:00:00-08:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Eastern Columbia River Gorge of Oregon; Foothills of the Northern Blue Mountains of Oregon; Foothills of the Southern Blue Mountains of Oregon; Lower Columbia Basin of Oregon; North Central Oregon</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>041021 041049 041055 041059 041065</value>
+<valueName>UGC</valueName>
+<value>ORZ041 ORZ044 ORZ507 ORZ508 ORZ510</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KPDT.WI.Y.0003.000000T0000Z-240112T1500Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -21751,396 +22303,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <valueName>VTEC</valueName>
 <value>/O.NEW.KMFR.FL.A.0001.240114T0300Z-240116T0600Z/
 /COQO3.0.ER.000000T0000Z.000000T0000Z.000000T0000Z.NO/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=OR126884A26B0C.WindAdvisory.126884B1E5F0OR.PDTNPWPDT.607658c5f18c4f0dd4f0017dce7f8884</id>
-<updated>2024-01-11T05:55:00-08:00</updated>
-<published>2024-01-11T05:55:00-08:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Wind Advisory issued January 11 at 5:55AM PST until January 12 at 7:00AM PST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=OR126884A26B0C.WindAdvisory.126884B1E5F0OR.PDTNPWPDT.607658c5f18c4f0dd4f0017dce7f8884"/>
-<summary>...WIND ADVISORY REMAINS IN EFFECT UNTIL 7 AM PST FRIDAY... * WHAT...West winds 25 to 35 mph with gusts up to 50 mph expected. * WHERE...In Oregon, Eastern Columbia River Gorge of Oregon, Lower Columbia Basin of Oregon and North Central Oregon. In Washington, Eastern Columbia River Gorge of Washington and</summary>
-<cap:event>Wind Advisory</cap:event>
-<cap:effective>2024-01-11T05:55:00-08:00</cap:effective>
-<cap:expires>2024-01-12T07:00:00-08:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Eastern Columbia River Gorge of Oregon; Foothills of the Northern Blue Mountains of Oregon; Foothills of the Southern Blue Mountains of Oregon; Lower Columbia Basin of Oregon; North Central Oregon</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>041021 041049 041055 041059 041065</value>
-<valueName>UGC</valueName>
-<value>ORZ041 ORZ044 ORZ507 ORZ508 ORZ510</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KPDT.WI.Y.0003.000000T0000Z-240112T1500Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=OR126884A2183C.WinterWeatherAdvisory.126884B25B20OR.PDTWSWPDT.71ed8b8089397b5816c5d006aa33b559</id>
-<updated>2024-01-11T03:43:00-08:00</updated>
-<published>2024-01-11T03:43:00-08:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Winter Weather Advisory issued January 11 at 3:43AM PST until January 12 at 10:00AM PST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=OR126884A2183C.WinterWeatherAdvisory.126884B25B20OR.PDTWSWPDT.71ed8b8089397b5816c5d006aa33b559"/>
-<summary>...WINTER WEATHER ADVISORY IN EFFECT FROM 4 PM THIS AFTERNOON TO 10 AM PST FRIDAY... ...WINTER STORM WATCH NOW IN EFFECT FROM LATE FRIDAY NIGHT THROUGH LATE SATURDAY NIGHT... * WHAT...For the Winter Weather Advisory, snow expected. Total snow accumulations of 2 to 5 inches. Winds gusting as high as 50</summary>
-<cap:event>Winter Weather Advisory</cap:event>
-<cap:effective>2024-01-11T03:43:00-08:00</cap:effective>
-<cap:expires>2024-01-12T10:00:00-08:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Foothills of the Northern Blue Mountains of Oregon</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>041059</value>
-<valueName>UGC</valueName>
-<value>ORZ507</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.NEW.KPDT.WW.Y.0005.240112T0000Z-240112T1800Z/
-/O.EXT.KPDT.WS.A.0003.240113T1200Z-240114T1200Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=OR126884A2183C.WinterStormWarning.126884CFF540OR.PDTWSWPDT.3bb6389cf1dd7b33398990d721cd8526</id>
-<updated>2024-01-11T03:43:00-08:00</updated>
-<published>2024-01-11T03:43:00-08:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Winter Storm Warning issued January 11 at 3:43AM PST until January 14 at 4:00AM PST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=OR126884A2183C.WinterStormWarning.126884CFF540OR.PDTWSWPDT.3bb6389cf1dd7b33398990d721cd8526"/>
-<summary>...WINTER STORM WARNING REMAINS IN EFFECT UNTIL 4 AM PST SUNDAY... * WHAT...Heavy snow. Additional snow accumulations of 7 to 23 inches. Winds gusting as high as 50 mph. * WHERE...In Oregon, Northern Blue Mountains of Oregon. In Washington, Northwest Blue Mountains. * WHEN...Until 4 AM PST Sunday.</summary>
-<cap:event>Winter Storm Warning</cap:event>
-<cap:effective>2024-01-11T03:43:00-08:00</cap:effective>
-<cap:expires>2024-01-14T04:00:00-08:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Northern Blue Mountains of Oregon</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>041059 041061 041063</value>
-<valueName>UGC</valueName>
-<value>ORZ502</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KPDT.WS.W.0001.000000T0000Z-240114T1200Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=OR126884A2183C.WinterStormWarning.126884CFF540OR.PDTWSWPDT.6cfdf9c6484db7e7ee60d23af4831392</id>
-<updated>2024-01-11T03:43:00-08:00</updated>
-<published>2024-01-11T03:43:00-08:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Winter Storm Warning issued January 11 at 3:43AM PST until January 14 at 4:00AM PST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=OR126884A2183C.WinterStormWarning.126884CFF540OR.PDTWSWPDT.6cfdf9c6484db7e7ee60d23af4831392"/>
-<summary>...WINTER STORM WARNING REMAINS IN EFFECT UNTIL 4 AM PST SUNDAY... * WHAT...Heavy snow expected. Total snow accumulations of 16 to 40 inches. Winds gusting as high as 60 mph. * WHERE...East Slopes of the Oregon Cascades. * WHEN...Until 4 AM PST Sunday. * IMPACTS...Travel could be very difficult to impossible.</summary>
-<cap:event>Winter Storm Warning</cap:event>
-<cap:effective>2024-01-11T03:43:00-08:00</cap:effective>
-<cap:expires>2024-01-14T04:00:00-08:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>East Slopes of the Oregon Cascades</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>041017 041031</value>
-<valueName>UGC</valueName>
-<value>ORZ509</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KPDT.WS.W.0002.240111T1200Z-240114T1200Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=OR126884A2183C.WinterStormWarning.126884CFF540OR.PDTWSWPDT.9c97613ddb26fd6d19fb9f1b4d37ba00</id>
-<updated>2024-01-11T03:43:00-08:00</updated>
-<published>2024-01-11T03:43:00-08:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Winter Storm Warning issued January 11 at 3:43AM PST until January 14 at 4:00AM PST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=OR126884A2183C.WinterStormWarning.126884CFF540OR.PDTWSWPDT.9c97613ddb26fd6d19fb9f1b4d37ba00"/>
-<summary>...WINTER STORM WARNING REMAINS IN EFFECT FROM 10 AM THIS MORNING TO 4 AM PST SUNDAY... * WHAT...Heavy snow expected. Total snow accumulations of 4 to 10 inches. Winds gusting as high as 45 mph. * WHERE...Grande Ronde Valley and Wallowa County. * WHEN...From 10 AM this morning to 4 AM PST Sunday.</summary>
-<cap:event>Winter Storm Warning</cap:event>
-<cap:effective>2024-01-11T03:43:00-08:00</cap:effective>
-<cap:expires>2024-01-14T04:00:00-08:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Grande Ronde Valley; Wallowa County</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>041061 041063</value>
-<valueName>UGC</valueName>
-<value>ORZ049 ORZ050</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KPDT.WS.W.0001.240111T1800Z-240114T1200Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=OR126884A2183C.WinterStormWarning.126884CFF540OR.PDTWSWPDT.5e2f398a374d13d077bad23558f34c42</id>
-<updated>2024-01-11T03:43:00-08:00</updated>
-<published>2024-01-11T03:43:00-08:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Winter Storm Warning issued January 11 at 3:43AM PST until January 14 at 4:00AM PST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=OR126884A2183C.WinterStormWarning.126884CFF540OR.PDTWSWPDT.5e2f398a374d13d077bad23558f34c42"/>
-<summary>...WINTER STORM WARNING REMAINS IN EFFECT FROM 10 AM THIS MORNING TO 4 AM PST SUNDAY... * WHAT...Heavy snow expected. Total snow accumulations of 9 to 22 inches. Winds gusting as high as 50 mph. * WHERE...Southern Blue Mountains of Oregon. * WHEN...From 10 AM this morning to 4 AM PST Sunday.</summary>
-<cap:event>Winter Storm Warning</cap:event>
-<cap:effective>2024-01-11T03:43:00-08:00</cap:effective>
-<cap:expires>2024-01-14T04:00:00-08:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Southern Blue Mountains of Oregon</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>041023 041049 041059 041061</value>
-<valueName>UGC</valueName>
-<value>ORZ503</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KPDT.WS.W.0002.240111T1800Z-240114T1200Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=OR126884A2183C.WinterStormWarning.126884CFF540OR.PDTWSWPDT.3404b664865369693f9ad0a8e0d11bd8</id>
-<updated>2024-01-11T03:43:00-08:00</updated>
-<published>2024-01-11T03:43:00-08:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Winter Storm Warning issued January 11 at 3:43AM PST until January 14 at 4:00AM PST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=OR126884A2183C.WinterStormWarning.126884CFF540OR.PDTWSWPDT.3404b664865369693f9ad0a8e0d11bd8"/>
-<summary>...WINTER STORM WARNING IN EFFECT FROM 10 AM THIS MORNING TO 4 AM PST SUNDAY... * WHAT...Heavy snow expected. Total snow accumulations of 9 to 15 inches. Winds gusting as high as 50 mph. * WHERE...John Day Basin. * WHEN...From 10 AM this morning to 4 AM PST Sunday.</summary>
-<cap:event>Winter Storm Warning</cap:event>
-<cap:effective>2024-01-11T03:43:00-08:00</cap:effective>
-<cap:expires>2024-01-14T04:00:00-08:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>John Day Basin</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>041023 041069</value>
-<valueName>UGC</valueName>
-<value>ORZ505</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.UPG.KPDT.WS.A.0003.240112T0800Z-240114T1200Z/
-/O.EXA.KPDT.WS.W.0002.240111T1800Z-240114T1200Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=OR126884A2183C.WinterStormWarning.126884CFF540OR.PDTWSWPDT.d7f74bf57b450cf435dcd1007dd0b39d</id>
-<updated>2024-01-11T03:43:00-08:00</updated>
-<published>2024-01-11T03:43:00-08:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Winter Storm Warning issued January 11 at 3:43AM PST until January 14 at 4:00AM PST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=OR126884A2183C.WinterStormWarning.126884CFF540OR.PDTWSWPDT.d7f74bf57b450cf435dcd1007dd0b39d"/>
-<summary>...WINTER STORM WARNING IN EFFECT FROM 10 AM THIS MORNING TO 4 AM PST SUNDAY... * WHAT...Heavy snow expected. Total snow accumulations of 10 to 18 inches. Winds gusting as high as 55 mph. * WHERE...Ochoco-John Day Highlands. * WHEN...From 10 AM this morning to 4 AM PST Sunday.</summary>
-<cap:event>Winter Storm Warning</cap:event>
-<cap:effective>2024-01-11T03:43:00-08:00</cap:effective>
-<cap:expires>2024-01-14T04:00:00-08:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Ochoco-John Day Highlands</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>041013 041017 041023 041069</value>
-<valueName>UGC</valueName>
-<value>ORZ506</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.UPG.KPDT.WS.A.0003.240112T0800Z-240114T1200Z/
-/O.EXA.KPDT.WS.W.0002.240111T1800Z-240114T1200Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=OR126884A2183C.WinterStormWarning.126884CFF540OR.PDTWSWPDT.ccb01f61ced3ab486b929ea9e6b0ab2e</id>
-<updated>2024-01-11T03:43:00-08:00</updated>
-<published>2024-01-11T03:43:00-08:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Winter Storm Warning issued January 11 at 3:43AM PST until January 14 at 4:00AM PST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=OR126884A2183C.WinterStormWarning.126884CFF540OR.PDTWSWPDT.ccb01f61ced3ab486b929ea9e6b0ab2e"/>
-<summary>...WINTER STORM WARNING IN EFFECT FROM 4 PM THIS AFTERNOON TO 4 AM PST SUNDAY... * WHAT...Heavy snow expected. Total snow accumulations of 5 to 12 inches. Winds gusting as high as 50 mph. * WHERE...Foothills of the Southern Blue Mountains of Oregon and North Central Oregon.</summary>
-<cap:event>Winter Storm Warning</cap:event>
-<cap:effective>2024-01-11T03:43:00-08:00</cap:effective>
-<cap:expires>2024-01-14T04:00:00-08:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Foothills of the Southern Blue Mountains of Oregon; North Central Oregon</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>041021 041049 041055 041065</value>
-<valueName>UGC</valueName>
-<value>ORZ508 ORZ510</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.UPG.KPDT.WS.A.0003.240112T0800Z-240114T1200Z/
-/O.EXB.KPDT.WS.W.0002.240112T0000Z-240114T1200Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=OR126884A2183C.WinterStormWarning.126884CFF540OR.PDTWSWPDT.6bcbb3b6839c967409e1bed3c8ad4ff8</id>
-<updated>2024-01-11T03:43:00-08:00</updated>
-<published>2024-01-11T03:43:00-08:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Winter Storm Warning issued January 11 at 3:43AM PST until January 14 at 4:00AM PST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=OR126884A2183C.WinterStormWarning.126884CFF540OR.PDTWSWPDT.6bcbb3b6839c967409e1bed3c8ad4ff8"/>
-<summary>...WINTER STORM WARNING IN EFFECT FROM 1 AM FRIDAY TO 4 AM PST SUNDAY... * WHAT...Heavy snow expected. Total snow accumulations around 1 foot. Winds gusting as high as 45 mph. * WHERE...Central Oregon. * WHEN...From 1 AM Friday to 4 AM PST Sunday.</summary>
-<cap:event>Winter Storm Warning</cap:event>
-<cap:effective>2024-01-11T03:43:00-08:00</cap:effective>
-<cap:expires>2024-01-14T04:00:00-08:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Central Oregon</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>041017 041031</value>
-<valueName>UGC</valueName>
-<value>ORZ511</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.UPG.KPDT.WS.A.0003.240112T0800Z-240114T1200Z/
-/O.EXB.KPDT.WS.W.0002.240112T0900Z-240114T1200Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=OR126884A2183C.WinterStormWatch.126884CFF540OR.PDTWSWPDT.04a424cb9ec69d4cc1700eef4966e6d5</id>
-<updated>2024-01-11T03:43:00-08:00</updated>
-<published>2024-01-11T03:43:00-08:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Winter Storm Watch issued January 11 at 3:43AM PST until January 14 at 4:00AM PST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=OR126884A2183C.WinterStormWatch.126884CFF540OR.PDTWSWPDT.04a424cb9ec69d4cc1700eef4966e6d5"/>
-<summary>...WINTER STORM WATCH NOW IN EFFECT FROM LATE FRIDAY NIGHT THROUGH LATE SATURDAY NIGHT... * WHAT...Heavy snow possible. Total snow accumulations of 3 to 6 inches possible. * WHERE...In Oregon, Eastern Columbia River Gorge of Oregon and Lower Columbia Basin of Oregon. In Washington, Eastern</summary>
-<cap:event>Winter Storm Watch</cap:event>
-<cap:effective>2024-01-11T03:43:00-08:00</cap:effective>
-<cap:expires>2024-01-14T04:00:00-08:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Future</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Possible</cap:certainty>
-<cap:areaDesc>Eastern Columbia River Gorge of Oregon; Lower Columbia Basin of Oregon</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>041021 041049 041055 041059 041065</value>
-<valueName>UGC</valueName>
-<value>ORZ041 ORZ044</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.EXT.KPDT.WS.A.0003.240113T1200Z-240114T1200Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=OR126884A2183C.WinterStormWatch.126884CFF540OR.PDTWSWPDT.b14883f9a365eca65ae8c680701222fa</id>
-<updated>2024-01-11T03:43:00-08:00</updated>
-<published>2024-01-11T03:43:00-08:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Winter Storm Watch issued January 11 at 3:43AM PST until January 14 at 4:00AM PST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=OR126884A2183C.WinterStormWatch.126884CFF540OR.PDTWSWPDT.b14883f9a365eca65ae8c680701222fa"/>
-<summary>...WINTER WEATHER ADVISORY IN EFFECT FROM 4 PM THIS AFTERNOON TO 10 AM PST FRIDAY... ...WINTER STORM WATCH NOW IN EFFECT FROM LATE FRIDAY NIGHT THROUGH LATE SATURDAY NIGHT... * WHAT...For the Winter Weather Advisory, snow expected. Total snow accumulations of 2 to 5 inches. Winds gusting as high as 50</summary>
-<cap:event>Winter Storm Watch</cap:event>
-<cap:effective>2024-01-11T03:43:00-08:00</cap:effective>
-<cap:expires>2024-01-14T04:00:00-08:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Future</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Possible</cap:certainty>
-<cap:areaDesc>Foothills of the Northern Blue Mountains of Oregon</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>041059</value>
-<valueName>UGC</valueName>
-<value>ORZ507</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.NEW.KPDT.WW.Y.0005.240112T0000Z-240112T1800Z/
-/O.EXT.KPDT.WS.A.0003.240113T1200Z-240114T1200Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -26138,6 +26300,233 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=UT126884A3C9D4.WinterStormWarning.126884DD62C0UT.SLCWSWSLC.fee5b8b64815d32d714ecb769567d635</id>
+<updated>2024-01-11T15:53:00-07:00</updated>
+<published>2024-01-11T15:53:00-07:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Winter Storm Warning issued January 11 at 3:53PM MST until January 14 at 5:00PM MST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=UT126884A3C9D4.WinterStormWarning.126884DD62C0UT.SLCWSWSLC.fee5b8b64815d32d714ecb769567d635"/>
+<summary>...WINTER STORM WARNING IN EFFECT FROM 11 PM THIS EVENING TO 5 PM MST SUNDAY... * WHAT...Heavy snow expected. Total snow accumulation of 18 to 32 inches with locally higher amounts possible. Winds gusting as high as 40 mph. * WHERE...Wasatch Back.</summary>
+<cap:event>Winter Storm Warning</cap:event>
+<cap:effective>2024-01-11T15:53:00-07:00</cap:effective>
+<cap:expires>2024-01-14T17:00:00-07:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Wasatch Back</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>049029 049043 049051</value>
+<valueName>UGC</valueName>
+<value>UTZ108</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.UPG.KSLC.WS.A.0003.240112T1200Z-240115T0000Z/
+/O.NEW.KSLC.WS.W.0003.240112T0600Z-240115T0000Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=UT126884A3C9D4.WinterStormWarning.126884DD62C0UT.SLCWSWSLC.11a82eb59ecfcde952a33dce01026d24</id>
+<updated>2024-01-11T15:53:00-07:00</updated>
+<published>2024-01-11T15:53:00-07:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Winter Storm Warning issued January 11 at 3:53PM MST until January 14 at 5:00PM MST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=UT126884A3C9D4.WinterStormWarning.126884DD62C0UT.SLCWSWSLC.11a82eb59ecfcde952a33dce01026d24"/>
+<summary>...WINTER STORM WARNING IN EFFECT FROM 11 PM THIS EVENING TO 5 PM MST SUNDAY... * WHAT...Heavy snow expected. Total snow accumulations of 2 to 4 feet, with locally higher amounts up to 5 feet in higher mountain peaks and favored areas such as the Upper Cottonwoods. Winds could gust as high as 65 mph.</summary>
+<cap:event>Winter Storm Warning</cap:event>
+<cap:effective>2024-01-11T15:53:00-07:00</cap:effective>
+<cap:expires>2024-01-14T17:00:00-07:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Central Mountains; Wasatch Mountains I-80 North; Wasatch Mountains South of I-80; Wasatch Plateau, Book Cliffs; Western Uinta Mountains</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>049005 049007 049013 049029 049033 049039 049041 049043 049049 049051 049057</value>
+<valueName>UGC</valueName>
+<value>UTZ110 UTZ111 UTZ112 UTZ113 UTZ117</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.UPG.KSLC.WS.A.0003.240112T1200Z-240115T0000Z/
+/O.NEW.KSLC.WS.W.0003.240112T0600Z-240115T0000Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=UT126884A3C9D4.WinterStormWarning.126884DD62C0UT.SLCWSWSLC.badcbd52674d6c0d5810b6f412d5f7e3</id>
+<updated>2024-01-11T15:53:00-07:00</updated>
+<published>2024-01-11T15:53:00-07:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Winter Storm Warning issued January 11 at 3:53PM MST until January 14 at 5:00PM MST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=UT126884A3C9D4.WinterStormWarning.126884DD62C0UT.SLCWSWSLC.badcbd52674d6c0d5810b6f412d5f7e3"/>
+<summary>...WINTER STORM WARNING IN EFFECT FROM 5 AM FRIDAY TO 5 PM MST SUNDAY... * WHAT...Heavy snow expected. Total snow accumulations of 8 to 18 inches. Winds gusting as high as 50 mph. * WHERE...Bear Lake and Bear River Valley. * WHEN...From 5 AM Friday to 5 PM MST Sunday.</summary>
+<cap:event>Winter Storm Warning</cap:event>
+<cap:effective>2024-01-11T15:53:00-07:00</cap:effective>
+<cap:expires>2024-01-14T17:00:00-07:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Bear Lake and Bear River Valley</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>049033</value>
+<valueName>UGC</valueName>
+<value>UTZ109</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.UPG.KSLC.WS.A.0003.240112T1800Z-240115T0000Z/
+/O.NEW.KSLC.WS.W.0003.240112T1200Z-240115T0000Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=UT126884A3C9D4.WinterStormWatch.126884DD62C0UT.SLCWSWSLC.f349a9815d67ad4e85327ea370ba5a06</id>
+<updated>2024-01-11T15:53:00-07:00</updated>
+<published>2024-01-11T15:53:00-07:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Winter Storm Watch issued January 11 at 3:53PM MST until January 14 at 5:00PM MST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=UT126884A3C9D4.WinterStormWatch.126884DD62C0UT.SLCWSWSLC.f349a9815d67ad4e85327ea370ba5a06"/>
+<summary>...WINTER STORM WATCH IN EFFECT FROM LATE TONIGHT THROUGH SUNDAY AFTERNOON... * WHAT...Heavy snow possible at elevations above 6000 feet. Total snow accumulations of 18 to 30 inches possible. Winds could gust as high as 50 mph. * WHERE...Great Salt Lake Desert and Mountains, particularly</summary>
+<cap:event>Winter Storm Watch</cap:event>
+<cap:effective>2024-01-11T15:53:00-07:00</cap:effective>
+<cap:expires>2024-01-14T17:00:00-07:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Future</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Possible</cap:certainty>
+<cap:areaDesc>Great Salt Lake Desert and Mountains</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>049003 049045</value>
+<valueName>UGC</valueName>
+<value>UTZ101</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.EXB.KSLC.WS.A.0003.240112T1200Z-240115T0000Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=UT126884A3C9D4.WinterStormWatch.126884DD62C0UT.SLCWSWSLC.211cee56e4d310cb3cfb51b0fba79371</id>
+<updated>2024-01-11T15:53:00-07:00</updated>
+<published>2024-01-11T15:53:00-07:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Winter Storm Watch issued January 11 at 3:53PM MST until January 14 at 5:00PM MST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=UT126884A3C9D4.WinterStormWatch.126884DD62C0UT.SLCWSWSLC.211cee56e4d310cb3cfb51b0fba79371"/>
+<summary>...WINTER STORM WATCH IN EFFECT FROM FRIDAY MORNING THROUGH SUNDAY AFTERNOON... * WHAT...Heavy snow possible. Total snow accumulations of 6 to 16 inches possible. * WHERE...Tooele and Rush Valleys and Eastern Juab/Millard Counties.</summary>
+<cap:event>Winter Storm Watch</cap:event>
+<cap:effective>2024-01-11T15:53:00-07:00</cap:effective>
+<cap:expires>2024-01-14T17:00:00-07:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Future</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Possible</cap:certainty>
+<cap:areaDesc>Eastern Juab, Millard Counties; Tooele and Rush Valleys</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>049023 049027 049045</value>
+<valueName>UGC</valueName>
+<value>UTZ102 UTZ116</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.EXA.KSLC.WS.A.0003.240112T1800Z-240115T0000Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=UT126884A3C9D4.WinterStormWatch.126884DD62C0UT.SLCWSWSLC.65ae18a337d157b61b5113970db7e8bf</id>
+<updated>2024-01-11T15:53:00-07:00</updated>
+<published>2024-01-11T15:53:00-07:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Winter Storm Watch issued January 11 at 3:53PM MST until January 14 at 5:00PM MST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=UT126884A3C9D4.WinterStormWatch.126884DD62C0UT.SLCWSWSLC.65ae18a337d157b61b5113970db7e8bf"/>
+<summary>...WINTER STORM WATCH REMAINS IN EFFECT FROM FRIDAY MORNING THROUGH SUNDAY AFTERNOON... * WHAT...Heavy snow possible. Total snow accumulations of 8 to 18 inches possible with locally higher amounts at bench locations. Winds could gust as high as 40 mph Friday. * WHERE...Eastern Box Elder County, Northern Wasatch Front, Salt</summary>
+<cap:event>Winter Storm Watch</cap:event>
+<cap:effective>2024-01-11T15:53:00-07:00</cap:effective>
+<cap:expires>2024-01-14T17:00:00-07:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Future</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Possible</cap:certainty>
+<cap:areaDesc>Eastern Box Elder County; Northern Wasatch Front; Salt Lake Valley; Utah Valley</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>049003 049011 049035 049049 049057</value>
+<valueName>UGC</valueName>
+<value>UTZ103 UTZ104 UTZ105 UTZ106</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KSLC.WS.A.0003.240112T1800Z-240115T0000Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=UT126884A3C9D4.WinterStormWatch.126884DD62C0UT.SLCWSWSLC.ca423f21b9d5ed9f7ca9d3ec2edb99d1</id>
+<updated>2024-01-11T15:53:00-07:00</updated>
+<published>2024-01-11T15:53:00-07:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Winter Storm Watch issued January 11 at 3:53PM MST until January 14 at 5:00PM MST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=UT126884A3C9D4.WinterStormWatch.126884DD62C0UT.SLCWSWSLC.ca423f21b9d5ed9f7ca9d3ec2edb99d1"/>
+<summary>...WINTER STORM WATCH REMAINS IN EFFECT FROM FRIDAY MORNING THROUGH SUNDAY AFTERNOON... * WHAT...Heavy snow possible. Total snow accumulations of 10 to 18 inches possible. Winds could gust as high as 40 mph Friday. * WHERE...Cache Valley/Utah Portion. * WHEN...From Friday morning through Sunday afternoon.</summary>
+<cap:event>Winter Storm Watch</cap:event>
+<cap:effective>2024-01-11T15:53:00-07:00</cap:effective>
+<cap:expires>2024-01-14T17:00:00-07:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Future</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Possible</cap:certainty>
+<cap:areaDesc>Cache Valley, Utah Portion</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>049005</value>
+<valueName>UGC</valueName>
+<value>UTZ107</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KSLC.WS.A.0003.240112T1800Z-240115T0000Z/</value>
+</cap:parameter>
+</entry>
+<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=UT126884A2B6D4.AvalancheWarning.126884B19DACUT.SLCAVWSLC.8fff437bc8e86b17d4484cdeea011f11</id>
 <updated>2024-01-11T08:49:00-07:00</updated>
 <published>2024-01-11T08:49:00-07:00</published>
@@ -26167,202 +26556,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value></value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=UT126884A2089C.WinterStormWatch.126884DD62C0UT.SLCWSWSLC.2d446df8db4c25f9e8e82f56132ee796</id>
-<updated>2024-01-11T04:03:00-07:00</updated>
-<published>2024-01-11T04:03:00-07:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Winter Storm Watch issued January 11 at 4:03AM MST until January 14 at 5:00PM MST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=UT126884A2089C.WinterStormWatch.126884DD62C0UT.SLCWSWSLC.2d446df8db4c25f9e8e82f56132ee796"/>
-<summary>...WINTER STORM WATCH REMAINS IN EFFECT FROM LATE TONIGHT THROUGH SUNDAY AFTERNOON... ...WINTER STORM WARNING IS CANCELLED... * WHAT...Heavy snow possible. Total snow accumulations of 14 to 24 inches possible. Winds could gust as high as 40 mph. * WHERE...Wasatch Back.</summary>
-<cap:event>Winter Storm Watch</cap:event>
-<cap:effective>2024-01-11T04:03:00-07:00</cap:effective>
-<cap:expires>2024-01-14T17:00:00-07:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Future</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Possible</cap:certainty>
-<cap:areaDesc>Wasatch Back</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>049029 049043 049051</value>
-<valueName>UGC</valueName>
-<value>UTZ108</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CAN.KSLC.WS.W.0002.000000T0000Z-240111T1200Z/
-/O.CON.KSLC.WS.A.0003.240112T1200Z-240115T0000Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=UT126884A2089C.WinterStormWatch.126884DD62C0UT.SLCWSWSLC.dcfc3940b6b0e440be50c0b32d3a3657</id>
-<updated>2024-01-11T04:03:00-07:00</updated>
-<published>2024-01-11T04:03:00-07:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Winter Storm Watch issued January 11 at 4:03AM MST until January 14 at 5:00PM MST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=UT126884A2089C.WinterStormWatch.126884DD62C0UT.SLCWSWSLC.dcfc3940b6b0e440be50c0b32d3a3657"/>
-<summary>...WINTER STORM WATCH REMAINS IN EFFECT FROM LATE TONIGHT THROUGH SUNDAY AFTERNOON... ...WINTER STORM WARNING IS CANCELLED... * WHAT...Heavy snow possible. Total snow accumulations of up to 25 inches possible, with locally up to 35 to 40 inches in the upper Cottonwood canyons. Winds could gust as high as 65 mph.</summary>
-<cap:event>Winter Storm Watch</cap:event>
-<cap:effective>2024-01-11T04:03:00-07:00</cap:effective>
-<cap:expires>2024-01-14T17:00:00-07:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Future</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Possible</cap:certainty>
-<cap:areaDesc>Wasatch Mountains I-80 North; Wasatch Mountains South of I-80; Wasatch Plateau, Book Cliffs; Western Uinta Mountains</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>049005 049007 049013 049029 049033 049043 049049 049051 049057</value>
-<valueName>UGC</valueName>
-<value>UTZ110 UTZ111 UTZ112 UTZ113</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CAN.KSLC.WS.W.0002.000000T0000Z-240111T1200Z/
-/O.CON.KSLC.WS.A.0003.240112T1200Z-240115T0000Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=UT126884A2089C.WinterStormWatch.126884DD62C0UT.SLCWSWSLC.e64962f0e92268b693e41dfd563c7d32</id>
-<updated>2024-01-11T04:03:00-07:00</updated>
-<published>2024-01-11T04:03:00-07:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Winter Storm Watch issued January 11 at 4:03AM MST until January 14 at 5:00PM MST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=UT126884A2089C.WinterStormWatch.126884DD62C0UT.SLCWSWSLC.e64962f0e92268b693e41dfd563c7d32"/>
-<summary>...WINTER WEATHER ADVISORY NOW IN EFFECT UNTIL 6 AM MST EARLY THIS MORNING... ...WINTER STORM WATCH REMAINS IN EFFECT FROM LATE TONIGHT THROUGH SUNDAY AFTERNOON... * WHAT...For the Winter Weather Advisory, snow. Additional snow accumulations of up to one inch. Winds gusting as high as 40</summary>
-<cap:event>Winter Storm Watch</cap:event>
-<cap:effective>2024-01-11T04:03:00-07:00</cap:effective>
-<cap:expires>2024-01-14T17:00:00-07:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Future</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Possible</cap:certainty>
-<cap:areaDesc>Central Mountains</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>049039 049041</value>
-<valueName>UGC</valueName>
-<value>UTZ117</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.EXT.KSLC.WW.Y.0004.000000T0000Z-240111T1300Z/
-/O.CON.KSLC.WS.A.0003.240112T1200Z-240115T0000Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=UT126884A2089C.WinterStormWatch.126884DD62C0UT.SLCWSWSLC.50d15ce4173b1551128ccb72019db634</id>
-<updated>2024-01-11T04:03:00-07:00</updated>
-<published>2024-01-11T04:03:00-07:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Winter Storm Watch issued January 11 at 4:03AM MST until January 14 at 5:00PM MST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=UT126884A2089C.WinterStormWatch.126884DD62C0UT.SLCWSWSLC.50d15ce4173b1551128ccb72019db634"/>
-<summary>...WINTER STORM WATCH REMAINS IN EFFECT FROM FRIDAY MORNING THROUGH SUNDAY AFTERNOON... * WHAT...Heavy snow possible. Total snow accumulations of 5 to 10 inches possible. Winds could gust as high as 35 mph. * WHERE...Eastern Box Elder County. * WHEN...From Friday morning through Sunday afternoon.</summary>
-<cap:event>Winter Storm Watch</cap:event>
-<cap:effective>2024-01-11T04:03:00-07:00</cap:effective>
-<cap:expires>2024-01-14T17:00:00-07:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Future</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Possible</cap:certainty>
-<cap:areaDesc>Eastern Box Elder County</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>049003</value>
-<valueName>UGC</valueName>
-<value>UTZ103</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KSLC.WS.A.0003.240112T1800Z-240115T0000Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=UT126884A2089C.WinterStormWatch.126884DD62C0UT.SLCWSWSLC.39790a273199ef083f17042a9872a7da</id>
-<updated>2024-01-11T04:03:00-07:00</updated>
-<published>2024-01-11T04:03:00-07:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Winter Storm Watch issued January 11 at 4:03AM MST until January 14 at 5:00PM MST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=UT126884A2089C.WinterStormWatch.126884DD62C0UT.SLCWSWSLC.39790a273199ef083f17042a9872a7da"/>
-<summary>...WINTER STORM WATCH REMAINS IN EFFECT FROM FRIDAY MORNING THROUGH SUNDAY AFTERNOON... ...WINTER WEATHER ADVISORY IS CANCELLED... * WHAT...Heavy snow possible. Total snow accumulations of 5 to 12 inches possible. Winds could gust as high as 35 mph. * WHERE...Northern Wasatch Front, Salt Lake Valley and Utah</summary>
-<cap:event>Winter Storm Watch</cap:event>
-<cap:effective>2024-01-11T04:03:00-07:00</cap:effective>
-<cap:expires>2024-01-14T17:00:00-07:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Future</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Possible</cap:certainty>
-<cap:areaDesc>Northern Wasatch Front; Salt Lake Valley; Utah Valley</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>049011 049035 049049 049057</value>
-<valueName>UGC</valueName>
-<value>UTZ104 UTZ105 UTZ106</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CAN.KSLC.WW.Y.0004.000000T0000Z-240111T1200Z/
-/O.CON.KSLC.WS.A.0003.240112T1800Z-240115T0000Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=UT126884A2089C.WinterStormWatch.126884DD62C0UT.SLCWSWSLC.d2f984a3f65ee2fd9b955a88c78ea898</id>
-<updated>2024-01-11T04:03:00-07:00</updated>
-<published>2024-01-11T04:03:00-07:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Winter Storm Watch issued January 11 at 4:03AM MST until January 14 at 5:00PM MST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=UT126884A2089C.WinterStormWatch.126884DD62C0UT.SLCWSWSLC.d2f984a3f65ee2fd9b955a88c78ea898"/>
-<summary>...WINTER STORM WATCH REMAINS IN EFFECT FROM FRIDAY MORNING THROUGH SUNDAY AFTERNOON... * WHAT...Heavy snow possible. Total snow accumulations of 4 to 8 inches possible. Winds could gust as high as 55 mph. * WHERE...Cache Valley/Utah Portion and Bear Lake and Bear River Valley.</summary>
-<cap:event>Winter Storm Watch</cap:event>
-<cap:effective>2024-01-11T04:03:00-07:00</cap:effective>
-<cap:expires>2024-01-14T17:00:00-07:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Future</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Possible</cap:certainty>
-<cap:areaDesc>Bear Lake and Bear River Valley; Cache Valley, Utah Portion</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>049005 049033</value>
-<valueName>UGC</valueName>
-<value>UTZ107 UTZ109</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KSLC.WS.A.0003.240112T1800Z-240115T0000Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -27147,35 +27340,681 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=WA126884A3C13C.SnowSquallWarning.126884A3DC30WA.OTXSQWOTX.c278181678e33a8e771384a31245017e</id>
-<updated>2024-01-11T14:31:00-08:00</updated>
-<published>2024-01-11T14:31:00-08:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=WA126884A3CB00.WinterStormWarning.126884B25B20WA.PDTWSWPDT.9428cc2daa5228514a553a389936baca</id>
+<updated>2024-01-11T14:56:00-08:00</updated>
+<published>2024-01-11T14:56:00-08:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Snow Squall Warning issued January 11 at 2:31PM PST until January 11 at 3:00PM PST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=WA126884A3C13C.SnowSquallWarning.126884A3DC30WA.OTXSQWOTX.c278181678e33a8e771384a31245017e"/>
-<summary>The National Weather Service in Spokane has issued a * Snow Squall Warning for... West central Douglas County in north central Washington... South central Chelan County in north central Washington... * Until 300 PM PST. * At 230 PM PST, a dangerous snow squall was located from Cashmere</summary>
-<cap:event>Snow Squall Warning</cap:event>
-<cap:effective>2024-01-11T14:31:00-08:00</cap:effective>
-<cap:expires>2024-01-11T15:00:00-08:00</cap:expires>
+<title>Winter Storm Warning issued January 11 at 2:56PM PST until January 12 at 10:00AM PST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=WA126884A3CB00.WinterStormWarning.126884B25B20WA.PDTWSWPDT.9428cc2daa5228514a553a389936baca"/>
+<summary>...WINTER STORM WARNING REMAINS IN EFFECT UNTIL 10 AM PST FRIDAY... * WHAT...Heavy snow expected. Total snow accumulations of 6 to 14 inches. Winds gusting as high as 60 mph. * WHERE...Upper Slopes of the Eastern Washington Cascades Crest. * WHEN...Until 10 AM PST Friday.</summary>
+<cap:event>Winter Storm Warning</cap:event>
+<cap:effective>2024-01-11T14:56:00-08:00</cap:effective>
+<cap:expires>2024-01-12T10:00:00-08:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
 <cap:category>Met</cap:category>
 <cap:urgency>Expected</cap:urgency>
-<cap:severity>Extreme</cap:severity>
+<cap:severity>Moderate</cap:severity>
 <cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Chelan; Douglas</cap:areaDesc>
-<cap:polygon>47.46,-120.52 47.6,-120.45 47.53,-119.99 47.28,-120.16 47.46,-120.52 47.46,-120.52</cap:polygon>
+<cap:areaDesc>Upper Slopes of the Eastern Washington Cascades Crest</cap:areaDesc>
+<cap:polygon></cap:polygon>
 <cap:geocode>
 <valueName>FIPS6</valueName>
-<value>053007 053017</value>
+<value>053037 053077</value>
 <valueName>UGC</valueName>
-<value>WAC007 WAC017</value>
+<value>WAZ522</value>
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
-<value>/O.NEW.KOTX.SQ.W.0001.240111T2231Z-240111T2300Z/</value>
+<value>/O.CON.KPDT.WS.W.0002.000000T0000Z-240112T1800Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=WA126884A3CB00.WinterWeatherAdvisory.126884B25B20WA.PDTWSWPDT.ace2f98b697149fa5a152cd464055433</id>
+<updated>2024-01-11T14:56:00-08:00</updated>
+<published>2024-01-11T14:56:00-08:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Winter Weather Advisory issued January 11 at 2:56PM PST until January 12 at 10:00AM PST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=WA126884A3CB00.WinterWeatherAdvisory.126884B25B20WA.PDTWSWPDT.ace2f98b697149fa5a152cd464055433"/>
+<summary>...WINTER WEATHER ADVISORY REMAINS IN EFFECT UNTIL 10 AM PST FRIDAY... ...WIND CHILL WATCH IN EFFECT FROM FRIDAY AFTERNOON THROUGH SATURDAY MORNING... * WHAT...For the Winter Weather Advisory, snow expected. Total snow accumulations of 1 to 4 inches. For the Wind Chill Watch,</summary>
+<cap:event>Winter Weather Advisory</cap:event>
+<cap:effective>2024-01-11T14:56:00-08:00</cap:effective>
+<cap:expires>2024-01-12T10:00:00-08:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Foothills of the Blue Mountains of Washington</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>053013 053071</value>
+<valueName>UGC</valueName>
+<value>WAZ029</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.NEW.KPDT.WC.A.0001.240113T0000Z-240113T1800Z/
+/O.CON.KPDT.WW.Y.0005.240112T0000Z-240112T1800Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=WA126884A3CB00.WindChillWatch.126884C19D60WA.PDTWSWPDT.73c46a0b781746c8a60b55c429d3da18</id>
+<updated>2024-01-11T14:56:00-08:00</updated>
+<published>2024-01-11T14:56:00-08:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Wind Chill Watch issued January 11 at 2:56PM PST until January 13 at 10:00AM PST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=WA126884A3CB00.WindChillWatch.126884C19D60WA.PDTWSWPDT.73c46a0b781746c8a60b55c429d3da18"/>
+<summary>...WIND CHILL WATCH IN EFFECT FROM FRIDAY AFTERNOON THROUGH SATURDAY MORNING... * WHAT...Dangerously cold wind chills possible. Wind chills as low as 20 below zero. * WHERE...Yakima Valley and Lower Columbia Basin of Washington. * WHEN...From Friday afternoon through Saturday morning.</summary>
+<cap:event>Wind Chill Watch</cap:event>
+<cap:effective>2024-01-11T14:56:00-08:00</cap:effective>
+<cap:expires>2024-01-13T10:00:00-08:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Future</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Possible</cap:certainty>
+<cap:areaDesc>Lower Columbia Basin of Washington; Yakima Valley</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>053005 053021 053071 053077</value>
+<valueName>UGC</valueName>
+<value>WAZ027 WAZ028</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.NEW.KPDT.WC.A.0001.240113T0000Z-240113T1800Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=WA126884A3CB00.WindChillWatch.126884C19D60WA.PDTWSWPDT.d545fd04907ddfc4312b8329a8150a00</id>
+<updated>2024-01-11T14:56:00-08:00</updated>
+<published>2024-01-11T14:56:00-08:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Wind Chill Watch issued January 11 at 2:56PM PST until January 13 at 10:00AM PST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=WA126884A3CB00.WindChillWatch.126884C19D60WA.PDTWSWPDT.d545fd04907ddfc4312b8329a8150a00"/>
+<summary>...WINTER WEATHER ADVISORY REMAINS IN EFFECT UNTIL 10 AM PST FRIDAY... ...WIND CHILL WATCH IN EFFECT FROM FRIDAY AFTERNOON THROUGH SATURDAY MORNING... * WHAT...For the Winter Weather Advisory, snow expected. Total snow accumulations of 1 to 4 inches. For the Wind Chill Watch,</summary>
+<cap:event>Wind Chill Watch</cap:event>
+<cap:effective>2024-01-11T14:56:00-08:00</cap:effective>
+<cap:expires>2024-01-13T10:00:00-08:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Future</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Possible</cap:certainty>
+<cap:areaDesc>Foothills of the Blue Mountains of Washington</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>053013 053071</value>
+<valueName>UGC</valueName>
+<value>WAZ029</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.NEW.KPDT.WC.A.0001.240113T0000Z-240113T1800Z/
+/O.CON.KPDT.WW.Y.0005.240112T0000Z-240112T1800Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=WA126884A3CB00.WindChillWatch.126884CFF540WA.PDTWSWPDT.5f047e47314466d46feafaa8c1dcba62</id>
+<updated>2024-01-11T14:56:00-08:00</updated>
+<published>2024-01-11T14:56:00-08:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Wind Chill Watch issued January 11 at 2:56PM PST until January 14 at 4:00AM PST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=WA126884A3CB00.WindChillWatch.126884CFF540WA.PDTWSWPDT.5f047e47314466d46feafaa8c1dcba62"/>
+<summary>...WIND CHILL WATCH IN EFFECT FROM FRIDAY AFTERNOON THROUGH LATE SATURDAY NIGHT... * WHAT...Dangerously cold wind chills possible. Wind chills as low as 25 below zero. * WHERE...Kittitas Valley. * WHEN...From Friday afternoon through late Saturday night.</summary>
+<cap:event>Wind Chill Watch</cap:event>
+<cap:effective>2024-01-11T14:56:00-08:00</cap:effective>
+<cap:expires>2024-01-14T04:00:00-08:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Future</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Possible</cap:certainty>
+<cap:areaDesc>Kittitas Valley</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>053037</value>
+<valueName>UGC</valueName>
+<value>WAZ026</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.NEW.KPDT.WC.A.0001.240113T0000Z-240114T1200Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=WA126884A3CB00.WindChillWatch.126884CFF540WA.PDTWSWPDT.cad3d5468877c0c4a8db6853f2c4c80b</id>
+<updated>2024-01-11T14:56:00-08:00</updated>
+<published>2024-01-11T14:56:00-08:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Wind Chill Watch issued January 11 at 2:56PM PST until January 14 at 4:00AM PST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=WA126884A3CB00.WindChillWatch.126884CFF540WA.PDTWSWPDT.cad3d5468877c0c4a8db6853f2c4c80b"/>
+<summary>...WIND CHILL WATCH IN EFFECT FROM FRIDAY AFTERNOON THROUGH LATE SATURDAY NIGHT... ...WINTER STORM WATCH REMAINS IN EFFECT FROM LATE FRIDAY NIGHT THROUGH LATE SATURDAY NIGHT... * WHAT...For the Wind Chill Watch, dangerously cold wind chills possible. Wind chills as low as 30 below zero. For the Winter</summary>
+<cap:event>Wind Chill Watch</cap:event>
+<cap:effective>2024-01-11T14:56:00-08:00</cap:effective>
+<cap:expires>2024-01-14T04:00:00-08:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Future</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Possible</cap:certainty>
+<cap:areaDesc>Simcoe Highlands</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>053039 053077</value>
+<valueName>UGC</valueName>
+<value>WAZ521</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.NEW.KPDT.WC.A.0001.240113T0000Z-240114T1200Z/
+/O.CON.KPDT.WS.A.0003.240113T1200Z-240114T1200Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=WA126884A3CB00.WinterStormWarning.126884CFF540WA.PDTWSWPDT.8ee35509bfa3d1884294b3e2851447d6</id>
+<updated>2024-01-11T14:56:00-08:00</updated>
+<published>2024-01-11T14:56:00-08:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Winter Storm Warning issued January 11 at 2:56PM PST until January 14 at 4:00AM PST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=WA126884A3CB00.WinterStormWarning.126884CFF540WA.PDTWSWPDT.8ee35509bfa3d1884294b3e2851447d6"/>
+<summary>...WINTER STORM WARNING REMAINS IN EFFECT UNTIL 4 AM PST SUNDAY... * WHAT...Heavy snow. Additional snow accumulations of 7 to 23 inches. Winds gusting as high as 50 mph. * WHERE...In Oregon, Northern Blue Mountains of Oregon. In Washington, Northwest Blue Mountains. * WHEN...Until 4 AM PST Sunday.</summary>
+<cap:event>Winter Storm Warning</cap:event>
+<cap:effective>2024-01-11T14:56:00-08:00</cap:effective>
+<cap:expires>2024-01-14T04:00:00-08:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Northwest Blue Mountains</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>053013</value>
+<valueName>UGC</valueName>
+<value>WAZ030</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KPDT.WS.W.0001.000000T0000Z-240114T1200Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=WA126884A3CB00.WinterStormWatch.126884CFF540WA.PDTWSWPDT.77de19784030a0af9b63fbc2c3417ec1</id>
+<updated>2024-01-11T14:56:00-08:00</updated>
+<published>2024-01-11T14:56:00-08:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Winter Storm Watch issued January 11 at 2:56PM PST until January 14 at 4:00AM PST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=WA126884A3CB00.WinterStormWatch.126884CFF540WA.PDTWSWPDT.77de19784030a0af9b63fbc2c3417ec1"/>
+<summary>...WINTER STORM WATCH REMAINS IN EFFECT FROM LATE FRIDAY NIGHT THROUGH LATE SATURDAY NIGHT... * WHAT...Heavy snow possible. Total snow accumulations of 3 to 6 inches possible. * WHERE...In Oregon, Eastern Columbia River Gorge of Oregon and Lower Columbia Basin of Oregon. In Washington, Eastern</summary>
+<cap:event>Winter Storm Watch</cap:event>
+<cap:effective>2024-01-11T14:56:00-08:00</cap:effective>
+<cap:expires>2024-01-14T04:00:00-08:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Future</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Possible</cap:certainty>
+<cap:areaDesc>Eastern Columbia River Gorge of Washington; Lower Slopes of the Eastern Washington Cascades Crest</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>053037 053039 053077</value>
+<valueName>UGC</valueName>
+<value>WAZ024 WAZ523</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KPDT.WS.A.0003.240113T1200Z-240114T1200Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=WA126884A3CB00.WinterStormWatch.126884CFF540WA.PDTWSWPDT.b9433092423fb4f07c3677b399051f0e</id>
+<updated>2024-01-11T14:56:00-08:00</updated>
+<published>2024-01-11T14:56:00-08:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Winter Storm Watch issued January 11 at 2:56PM PST until January 14 at 4:00AM PST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=WA126884A3CB00.WinterStormWatch.126884CFF540WA.PDTWSWPDT.b9433092423fb4f07c3677b399051f0e"/>
+<summary>...WIND CHILL WATCH IN EFFECT FROM FRIDAY AFTERNOON THROUGH LATE SATURDAY NIGHT... ...WINTER STORM WATCH REMAINS IN EFFECT FROM LATE FRIDAY NIGHT THROUGH LATE SATURDAY NIGHT... * WHAT...For the Wind Chill Watch, dangerously cold wind chills possible. Wind chills as low as 30 below zero. For the Winter</summary>
+<cap:event>Winter Storm Watch</cap:event>
+<cap:effective>2024-01-11T14:56:00-08:00</cap:effective>
+<cap:expires>2024-01-14T04:00:00-08:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Future</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Possible</cap:certainty>
+<cap:areaDesc>Simcoe Highlands</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>053039 053077</value>
+<valueName>UGC</valueName>
+<value>WAZ521</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.NEW.KPDT.WC.A.0001.240113T0000Z-240114T1200Z/
+/O.CON.KPDT.WS.A.0003.240113T1200Z-240114T1200Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=WA126884A3C7E0.SpecialWeatherStatement.126884A3E7E8WA.OTXSPSOTX.7bc1cf72159a1f0f4c5ea3c9856ca0cb</id>
+<updated>2024-01-11T14:48:00-08:00</updated>
+<published>2024-01-11T14:48:00-08:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Special Weather Statement issued January 11 at 2:48PM PST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=WA126884A3C7E0.SpecialWeatherStatement.126884A3E7E8WA.OTXSPSOTX.7bc1cf72159a1f0f4c5ea3c9856ca0cb"/>
+<summary>...AN AREA OF HEAVY SNOW WILL AFFECT SOUTHWESTERN GRANT COUNTY... At 247 PM PST, an area of heavy snow was located from Vantage to Sililca Road on Interestate 90. Locations impacted include... Royal City, George, and Gorge Amphitheatre. This includes Interstate 90 in Washington between mile markers 138</summary>
+<cap:event>Special Weather Statement</cap:event>
+<cap:effective>2024-01-11T14:48:00-08:00</cap:effective>
+<cap:expires>2024-01-11T15:30:00-08:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Observed</cap:certainty>
+<cap:areaDesc>Moses Lake Area</cap:areaDesc>
+<cap:polygon>47.12,-119.99 47.06,-119.47 46.87,-119.58 46.91,-119.96 47,-120 47.02,-120.01 47.12,-119.99</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>053025</value>
+<valueName>UGC</valueName>
+<value>WAZ034</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value></value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=WA126884A3C718.WindAdvisory.126884B1E5F0WA.PDTNPWPDT.8e1585fbb0258ad16244fea9b1d7b110</id>
+<updated>2024-01-11T14:46:00-08:00</updated>
+<published>2024-01-11T14:46:00-08:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Wind Advisory issued January 11 at 2:46PM PST until January 12 at 7:00AM PST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=WA126884A3C718.WindAdvisory.126884B1E5F0WA.PDTNPWPDT.8e1585fbb0258ad16244fea9b1d7b110"/>
+<summary>...WIND ADVISORY REMAINS IN EFFECT UNTIL 7 AM PST FRIDAY... * WHAT...West winds 25 to 35 mph with gusts up to 50 mph expected. * WHERE...In Oregon, Eastern Columbia River Gorge of Oregon, Lower Columbia Basin of Oregon and North Central Oregon. In Washington, Eastern Columbia River Gorge of Washington and</summary>
+<cap:event>Wind Advisory</cap:event>
+<cap:effective>2024-01-11T14:46:00-08:00</cap:effective>
+<cap:expires>2024-01-12T07:00:00-08:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Eastern Columbia River Gorge of Washington; Foothills of the Blue Mountains of Washington; Simcoe Highlands</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>053013 053039 053071 053077</value>
+<valueName>UGC</valueName>
+<value>WAZ024 WAZ029 WAZ521</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KPDT.WI.Y.0003.000000T0000Z-240112T1500Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=WA126884A3C524.WinterStormWarning.126884B170C0WA.OTXWSWOTX.822043ae9742224d7419fa1e24eb68da</id>
+<updated>2024-01-11T14:41:00-08:00</updated>
+<published>2024-01-11T14:41:00-08:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Winter Storm Warning issued January 11 at 2:41PM PST until January 12 at 4:00AM PST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=WA126884A3C524.WinterStormWarning.126884B170C0WA.OTXWSWOTX.822043ae9742224d7419fa1e24eb68da"/>
+<summary>...WINTER STORM WARNING REMAINS IN EFFECT UNTIL 4 AM PST FRIDAY... * WHAT...Heavy snow. Additional snow accumulations between 2 and 6 inches. Winds gusting as high as 40 mph will result in blowing and drifting snow. * WHERE...Stehekin, Holden Village, and Stevens Pass. * WHEN...Until 4 AM PST Friday.</summary>
+<cap:event>Winter Storm Warning</cap:event>
+<cap:effective>2024-01-11T14:41:00-08:00</cap:effective>
+<cap:expires>2024-01-12T04:00:00-08:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Western Chelan County</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>053007</value>
+<valueName>UGC</valueName>
+<value>WAZ048</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KOTX.WS.W.0002.000000T0000Z-240112T1200Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=WA126884A3C524.WinterWeatherAdvisory.126884B170C0WA.OTXWSWOTX.6dbcad420274b8cc261309726e4b74d0</id>
+<updated>2024-01-11T14:41:00-08:00</updated>
+<published>2024-01-11T14:41:00-08:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Winter Weather Advisory issued January 11 at 2:41PM PST until January 12 at 4:00AM PST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=WA126884A3C524.WinterWeatherAdvisory.126884B170C0WA.OTXWSWOTX.6dbcad420274b8cc261309726e4b74d0"/>
+<summary>...WINTER WEATHER ADVISORY REMAINS IN EFFECT UNTIL 4 AM PST FRIDAY... * WHAT...Snow expected. Total snow accumulations between 1 and 4 inches with local accumulations up to 5 inches. Winds gusting as high as 40 mph will result in areas of blowing and drifting snow. * WHERE...Alpowa Summit, Pomeroy, Peck, Culdesac, Lapwai, Gifford, Clarkston, Lewiston Grade, and Lewiston.</summary>
+<cap:event>Winter Weather Advisory</cap:event>
+<cap:effective>2024-01-11T14:41:00-08:00</cap:effective>
+<cap:expires>2024-01-12T04:00:00-08:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Lower Garfield and Asotin Counties</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>053003 053023</value>
+<valueName>UGC</valueName>
+<value>WAZ032</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KOTX.WW.Y.0004.000000T0000Z-240112T1200Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=WA126884A3C524.WinterWeatherAdvisory.126884B170C0WA.OTXWSWOTX.12ec7810c84e081a5dbbe71c71e811f2</id>
+<updated>2024-01-11T14:41:00-08:00</updated>
+<published>2024-01-11T14:41:00-08:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Winter Weather Advisory issued January 11 at 2:41PM PST until January 12 at 4:00AM PST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=WA126884A3C524.WinterWeatherAdvisory.126884B170C0WA.OTXWSWOTX.12ec7810c84e081a5dbbe71c71e811f2"/>
+<summary>...WINTER WEATHER ADVISORY REMAINS IN EFFECT UNTIL 4 AM PST FRIDAY... ...WIND CHILL WARNING REMAINS IN EFFECT FROM 10 PM THIS EVENING TO NOON PST SATURDAY... * WHAT...For the Winter Weather Advisory, snow. Additional snow accumulations between 1 and 2 inches mainly across the eastern half of Whitman County. Winds gusting as high as 40 mph. Expect</summary>
+<cap:event>Winter Weather Advisory</cap:event>
+<cap:effective>2024-01-11T14:41:00-08:00</cap:effective>
+<cap:expires>2024-01-12T04:00:00-08:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Washington Palouse</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>053075</value>
+<valueName>UGC</valueName>
+<value>WAZ033</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KOTX.WC.W.0001.240112T0600Z-240113T2000Z/
+/O.CON.KOTX.WW.Y.0004.000000T0000Z-240112T1200Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=WA126884A3C524.WinterStormWarning.126884B25B20WA.OTXWSWOTX.52a6830bd3e3ddec82293178a28882ac</id>
+<updated>2024-01-11T14:41:00-08:00</updated>
+<published>2024-01-11T14:41:00-08:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Winter Storm Warning issued January 11 at 2:41PM PST until January 12 at 10:00AM PST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=WA126884A3C524.WinterStormWarning.126884B25B20WA.OTXWSWOTX.52a6830bd3e3ddec82293178a28882ac"/>
+<summary>...WINTER STORM WARNING REMAINS IN EFFECT UNTIL 10 AM PST FRIDAY... * WHAT...Heavy snow. Additional snow accumulations between 3 and 8 inches. Winds gusting as high as 40 to 50 mph. * WHERE...Mountain Road, Anatone, Peola, and Cloverland Road. * WHEN...Until 10 AM PST Friday. * IMPACTS...Travel could be very difficult. The hazardous conditions</summary>
+<cap:event>Winter Storm Warning</cap:event>
+<cap:effective>2024-01-11T14:41:00-08:00</cap:effective>
+<cap:expires>2024-01-12T10:00:00-08:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Northeast Blue Mountains</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>053003 053023</value>
+<valueName>UGC</valueName>
+<value>WAZ031</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KOTX.WS.W.0002.000000T0000Z-240112T1800Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=WA126884A3C524.WindChillAdvisory.126884C1EB80WA.OTXWSWOTX.40362fd676969df067d1aa18d631aa43</id>
+<updated>2024-01-11T14:41:00-08:00</updated>
+<published>2024-01-11T14:41:00-08:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Wind Chill Advisory issued January 11 at 2:41PM PST until January 13 at 12:00PM PST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=WA126884A3C524.WindChillAdvisory.126884C1EB80WA.OTXWSWOTX.40362fd676969df067d1aa18d631aa43"/>
+<summary>...WIND CHILL ADVISORY IN EFFECT FROM 10 PM THIS EVENING TO NOON PST SATURDAY... * WHAT...Very cold wind chills expected. Wind chills negative 5 to 20 below zero. * WHERE...Ephrata, Quincy, Othello, and Moses Lake. * WHEN...From 10 PM this evening to noon PST Saturday.</summary>
+<cap:event>Wind Chill Advisory</cap:event>
+<cap:effective>2024-01-11T14:41:00-08:00</cap:effective>
+<cap:expires>2024-01-13T12:00:00-08:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Moses Lake Area</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>053025</value>
+<valueName>UGC</valueName>
+<value>WAZ034</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.NEW.KOTX.WC.Y.0001.240112T0600Z-240113T2000Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=WA126884A3C524.WindChillWarning.126884C1EB80WA.OTXWSWOTX.377998a49c9722eb9f27abf2d4a9e636</id>
+<updated>2024-01-11T14:41:00-08:00</updated>
+<published>2024-01-11T14:41:00-08:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Wind Chill Warning issued January 11 at 2:41PM PST until January 13 at 12:00PM PST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=WA126884A3C524.WindChillWarning.126884C1EB80WA.OTXWSWOTX.377998a49c9722eb9f27abf2d4a9e636"/>
+<summary>...WINTER WEATHER ADVISORY REMAINS IN EFFECT UNTIL 4 AM PST FRIDAY... ...WIND CHILL WARNING REMAINS IN EFFECT FROM 10 PM THIS EVENING TO NOON PST SATURDAY... * WHAT...For the Winter Weather Advisory, snow. Additional snow accumulations between 1 and 2 inches mainly across the eastern half of Whitman County. Winds gusting as high as 40 mph. Expect</summary>
+<cap:event>Wind Chill Warning</cap:event>
+<cap:effective>2024-01-11T14:41:00-08:00</cap:effective>
+<cap:expires>2024-01-13T12:00:00-08:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Washington Palouse</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>053075</value>
+<valueName>UGC</valueName>
+<value>WAZ033</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KOTX.WC.W.0001.240112T0600Z-240113T2000Z/
+/O.CON.KOTX.WW.Y.0004.000000T0000Z-240112T1200Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=WA126884A3C524.WindChillWarning.126884C1EB80WA.OTXWSWOTX.4a15e24a5cabd051b40d8cdc1ed2c08a</id>
+<updated>2024-01-11T14:41:00-08:00</updated>
+<published>2024-01-11T14:41:00-08:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Wind Chill Warning issued January 11 at 2:41PM PST until January 13 at 12:00PM PST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=WA126884A3C524.WindChillWarning.126884C1EB80WA.OTXWSWOTX.4a15e24a5cabd051b40d8cdc1ed2c08a"/>
+<summary>...WIND CHILL WARNING REMAINS IN EFFECT FROM 10 PM THIS EVENING TO NOON PST SATURDAY... * WHAT...Dangerously cold wind chills expected. Wind chills as low as 30 below zero. * WHERE...Spokane Valley, Harrington, Cheney, Odessa, Rockford, Grand Coulee, Downtown Spokane, Wilbur, Ritzville, Davenport,</summary>
+<cap:event>Wind Chill Warning</cap:event>
+<cap:effective>2024-01-11T14:41:00-08:00</cap:effective>
+<cap:expires>2024-01-13T12:00:00-08:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Spokane Area; Upper Columbia Basin</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>053001 053025 053043 053063</value>
+<valueName>UGC</valueName>
+<value>WAZ035 WAZ036</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KOTX.WC.W.0001.240112T0600Z-240113T2000Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=WA126884A3C524.WindChillWarning.126884C1EB80WA.OTXWSWOTX.c1bcb3e316e9cafbe0a9de4f012b7cbd</id>
+<updated>2024-01-11T14:41:00-08:00</updated>
+<published>2024-01-11T14:41:00-08:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Wind Chill Warning issued January 11 at 2:41PM PST until January 13 at 12:00PM PST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=WA126884A3C524.WindChillWarning.126884C1EB80WA.OTXWSWOTX.c1bcb3e316e9cafbe0a9de4f012b7cbd"/>
+<summary>...WIND CHILL WARNING IN EFFECT FROM 10 PM THIS EVENING TO NOON PST SATURDAY... * WHAT...Dangerously cold wind chills expected. Wind chills 15 to 30 below zero. Wind gusts 15 to 25 mph, strongest tonight and Friday morning. * WHERE...Boulder Creek Road, Deer Park, Kettle Falls, Sherman Pass,</summary>
+<cap:event>Wind Chill Warning</cap:event>
+<cap:effective>2024-01-11T14:41:00-08:00</cap:effective>
+<cap:expires>2024-01-13T12:00:00-08:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Northeast Mountains; Okanogan Highlands</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>053019 053047 053051 053065</value>
+<valueName>UGC</valueName>
+<value>WAZ037 WAZ038</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.EXA.KOTX.WC.W.0001.240112T0600Z-240113T2000Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=WA126884A3C524.WindChillWarning.126884C1EB80WA.OTXWSWOTX.57f2958e7dad2b1a4a16b4c78908622b</id>
+<updated>2024-01-11T14:41:00-08:00</updated>
+<published>2024-01-11T14:41:00-08:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Wind Chill Warning issued January 11 at 2:41PM PST until January 13 at 12:00PM PST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=WA126884A3C524.WindChillWarning.126884C1EB80WA.OTXWSWOTX.57f2958e7dad2b1a4a16b4c78908622b"/>
+<summary>...WIND CHILL WARNING REMAINS IN EFFECT FROM 10 PM THIS EVENING TO NOON PST SATURDAY... * WHAT...Dangerously cold wind chills expected. Wind chills as low as 20 to 35 below zero. * WHERE...Omak, Bridgeport, Badger Mountain Road, Oroville, Nespelem, Disautel Pass, Tonasket, Waterville, Okanogan,</summary>
+<cap:event>Wind Chill Warning</cap:event>
+<cap:effective>2024-01-11T14:41:00-08:00</cap:effective>
+<cap:expires>2024-01-13T12:00:00-08:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Okanogan Valley; Waterville Plateau</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>053017 053047</value>
+<valueName>UGC</valueName>
+<value>WAZ043 WAZ044</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KOTX.WC.W.0001.240112T0600Z-240113T2000Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=WA126884A3C524.WindChillWarning.126884C1EB80WA.OTXWSWOTX.862199ad9b294a7526f636a5cd00133e</id>
+<updated>2024-01-11T14:41:00-08:00</updated>
+<published>2024-01-11T14:41:00-08:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Wind Chill Warning issued January 11 at 2:41PM PST until January 13 at 12:00PM PST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=WA126884A3C524.WindChillWarning.126884C1EB80WA.OTXWSWOTX.862199ad9b294a7526f636a5cd00133e"/>
+<summary>...WIND CHILL WARNING IN EFFECT FROM 10 PM THIS EVENING TO NOON PST SATURDAY... * WHAT...Dangerously cold wind chills expected. Wind chills as low as 30 below zero. Wind gusts 15 to 30 mph, strongest tonight and Friday morning. * WHERE...Winthrop, Methow, Mazama, Twisp, Loup Loup Pass, and</summary>
+<cap:event>Wind Chill Warning</cap:event>
+<cap:effective>2024-01-11T14:41:00-08:00</cap:effective>
+<cap:expires>2024-01-13T12:00:00-08:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Western Okanogan County</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>053047</value>
+<valueName>UGC</valueName>
+<value>WAZ049</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.EXA.KOTX.WC.W.0001.240112T0600Z-240113T2000Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -27240,270 +28079,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value></value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=WA126884A36958.WinterStormWarning.126884B170C0WA.OTXWSWOTX.822043ae9742224d7419fa1e24eb68da</id>
-<updated>2024-01-11T12:06:00-08:00</updated>
-<published>2024-01-11T12:06:00-08:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Winter Storm Warning issued January 11 at 12:06PM PST until January 12 at 4:00AM PST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=WA126884A36958.WinterStormWarning.126884B170C0WA.OTXWSWOTX.822043ae9742224d7419fa1e24eb68da"/>
-<summary>...WINTER STORM WARNING REMAINS IN EFFECT UNTIL 4 AM PST FRIDAY... * WHAT...Heavy snow. Additional snow accumulations between 2 and 6 inches. Winds gusting as high as 40 mph will result in blowing and drifting snow. * WHERE...Holden Village, Stehekin, and Stevens Pass. * WHEN...Until 4 AM PST Friday.</summary>
-<cap:event>Winter Storm Warning</cap:event>
-<cap:effective>2024-01-11T12:06:00-08:00</cap:effective>
-<cap:expires>2024-01-12T04:00:00-08:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Western Chelan County</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>053007</value>
-<valueName>UGC</valueName>
-<value>WAZ048</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KOTX.WS.W.0002.000000T0000Z-240112T1200Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=WA126884A36958.WinterWeatherAdvisory.126884B170C0WA.OTXWSWOTX.6dbcad420274b8cc261309726e4b74d0</id>
-<updated>2024-01-11T12:06:00-08:00</updated>
-<published>2024-01-11T12:06:00-08:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Winter Weather Advisory issued January 11 at 12:06PM PST until January 12 at 4:00AM PST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=WA126884A36958.WinterWeatherAdvisory.126884B170C0WA.OTXWSWOTX.6dbcad420274b8cc261309726e4b74d0"/>
-<summary>...WINTER WEATHER ADVISORY REMAINS IN EFFECT UNTIL 4 AM PST FRIDAY... * WHAT...Snow expected. Total snow accumulations between 1 and 4 inches with local accumulations up to 5 inches. Winds gusting as high as 40 mph will result in areas of blowing and drifting snow. * WHERE...Gifford, Alpowa Summit, Lewiston Grade, Culdesac, Clarkston, Pomeroy, Peck, Lapwai, and Lewiston.</summary>
-<cap:event>Winter Weather Advisory</cap:event>
-<cap:effective>2024-01-11T12:06:00-08:00</cap:effective>
-<cap:expires>2024-01-12T04:00:00-08:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Lower Garfield and Asotin Counties</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>053003 053023</value>
-<valueName>UGC</valueName>
-<value>WAZ032</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KOTX.WW.Y.0004.000000T0000Z-240112T1200Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=WA126884A36958.WinterWeatherAdvisory.126884B170C0WA.OTXWSWOTX.12ec7810c84e081a5dbbe71c71e811f2</id>
-<updated>2024-01-11T12:06:00-08:00</updated>
-<published>2024-01-11T12:06:00-08:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Winter Weather Advisory issued January 11 at 12:06PM PST until January 12 at 4:00AM PST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=WA126884A36958.WinterWeatherAdvisory.126884B170C0WA.OTXWSWOTX.12ec7810c84e081a5dbbe71c71e811f2"/>
-<summary>...WINTER WEATHER ADVISORY REMAINS IN EFFECT UNTIL 4 AM PST FRIDAY... ...WIND CHILL WARNING IN EFFECT FROM 10 PM THIS EVENING TO NOON PST SATURDAY... * WHAT...For the Winter Weather Advisory, snow. Additional snow accumulations between 1 and 2 inches mainly across the eastern half of Whitman County. Winds gusting as high as 40 mph. Expect</summary>
-<cap:event>Winter Weather Advisory</cap:event>
-<cap:effective>2024-01-11T12:06:00-08:00</cap:effective>
-<cap:expires>2024-01-12T04:00:00-08:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Washington Palouse</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>053075</value>
-<valueName>UGC</valueName>
-<value>WAZ033</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.UPG.KOTX.WC.A.0001.240112T0600Z-240114T2000Z/
-/O.NEW.KOTX.WC.W.0001.240112T0600Z-240113T2000Z/
-/O.CON.KOTX.WW.Y.0004.000000T0000Z-240112T1200Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=WA126884A36958.WinterStormWarning.126884B25B20WA.OTXWSWOTX.52a6830bd3e3ddec82293178a28882ac</id>
-<updated>2024-01-11T12:06:00-08:00</updated>
-<published>2024-01-11T12:06:00-08:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Winter Storm Warning issued January 11 at 12:06PM PST until January 12 at 10:00AM PST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=WA126884A36958.WinterStormWarning.126884B25B20WA.OTXWSWOTX.52a6830bd3e3ddec82293178a28882ac"/>
-<summary>...WINTER STORM WARNING REMAINS IN EFFECT UNTIL 10 AM PST FRIDAY... * WHAT...Heavy snow. Additional snow accumulations between 3 and 8 inches. Winds gusting as high as 40 to 50 mph. * WHERE...Mountain Road, Peola, Anatone, and Cloverland Road. * WHEN...Until 10 AM PST Friday. * IMPACTS...Travel could be very difficult. The hazardous conditions</summary>
-<cap:event>Winter Storm Warning</cap:event>
-<cap:effective>2024-01-11T12:06:00-08:00</cap:effective>
-<cap:expires>2024-01-12T10:00:00-08:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Northeast Blue Mountains</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>053003 053023</value>
-<valueName>UGC</valueName>
-<value>WAZ031</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KOTX.WS.W.0002.000000T0000Z-240112T1800Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=WA126884A36958.WindChillWarning.126884C1EB80WA.OTXWSWOTX.377998a49c9722eb9f27abf2d4a9e636</id>
-<updated>2024-01-11T12:06:00-08:00</updated>
-<published>2024-01-11T12:06:00-08:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Wind Chill Warning issued January 11 at 12:06PM PST until January 13 at 12:00PM PST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=WA126884A36958.WindChillWarning.126884C1EB80WA.OTXWSWOTX.377998a49c9722eb9f27abf2d4a9e636"/>
-<summary>...WINTER WEATHER ADVISORY REMAINS IN EFFECT UNTIL 4 AM PST FRIDAY... ...WIND CHILL WARNING IN EFFECT FROM 10 PM THIS EVENING TO NOON PST SATURDAY... * WHAT...For the Winter Weather Advisory, snow. Additional snow accumulations between 1 and 2 inches mainly across the eastern half of Whitman County. Winds gusting as high as 40 mph. Expect</summary>
-<cap:event>Wind Chill Warning</cap:event>
-<cap:effective>2024-01-11T12:06:00-08:00</cap:effective>
-<cap:expires>2024-01-13T12:00:00-08:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Washington Palouse</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>053075</value>
-<valueName>UGC</valueName>
-<value>WAZ033</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.UPG.KOTX.WC.A.0001.240112T0600Z-240114T2000Z/
-/O.NEW.KOTX.WC.W.0001.240112T0600Z-240113T2000Z/
-/O.CON.KOTX.WW.Y.0004.000000T0000Z-240112T1200Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=WA126884A36958.WindChillWarning.126884C1EB80WA.OTXWSWOTX.a02299ef99ececb6a6135885232eff69</id>
-<updated>2024-01-11T12:06:00-08:00</updated>
-<published>2024-01-11T12:06:00-08:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Wind Chill Warning issued January 11 at 12:06PM PST until January 13 at 12:00PM PST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=WA126884A36958.WindChillWarning.126884C1EB80WA.OTXWSWOTX.a02299ef99ececb6a6135885232eff69"/>
-<summary>...WIND CHILL WARNING IN EFFECT FROM 10 PM THIS EVENING TO NOON PST SATURDAY... * WHAT...Dangerously cold wind chills expected. Wind chills as low as 20 to 30 below zero. * WHERE...Coulee City, Odessa, Harrington, Creston, Grand Coulee, Ritzville, and Wilbur.</summary>
-<cap:event>Wind Chill Warning</cap:event>
-<cap:effective>2024-01-11T12:06:00-08:00</cap:effective>
-<cap:expires>2024-01-13T12:00:00-08:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Upper Columbia Basin</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>053001 053025 053043</value>
-<valueName>UGC</valueName>
-<value>WAZ035</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.UPG.KOTX.WC.A.0001.240112T0600Z-240114T2000Z/
-/O.NEW.KOTX.WC.W.0001.240112T0600Z-240113T2000Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=WA126884A36958.WindChillWarning.126884C1EB80WA.OTXWSWOTX.b3df416196dd86583c58dc45f016e2c7</id>
-<updated>2024-01-11T12:06:00-08:00</updated>
-<published>2024-01-11T12:06:00-08:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Wind Chill Warning issued January 11 at 12:06PM PST until January 13 at 12:00PM PST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=WA126884A36958.WindChillWarning.126884C1EB80WA.OTXWSWOTX.b3df416196dd86583c58dc45f016e2c7"/>
-<summary>...WIND CHILL WARNING IN EFFECT FROM 10 PM THIS EVENING TO NOON PST SATURDAY... ...WINTER WEATHER ADVISORY IS CANCELLED... * WHAT...Dangerously cold wind chills expected. Wind chills from 20 to 30 below zero are expected. * WHERE...Airway Heights, Davenport, Rockford, Spokane Valley,</summary>
-<cap:event>Wind Chill Warning</cap:event>
-<cap:effective>2024-01-11T12:06:00-08:00</cap:effective>
-<cap:expires>2024-01-13T12:00:00-08:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Spokane Area</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>053043 053063</value>
-<valueName>UGC</valueName>
-<value>WAZ036</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CAN.KOTX.WW.Y.0004.000000T0000Z-240112T1200Z/
-/O.UPG.KOTX.WC.A.0001.240112T0600Z-240114T2000Z/
-/O.NEW.KOTX.WC.W.0001.240112T0600Z-240113T2000Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=WA126884A36958.WindChillWarning.126884C1EB80WA.OTXWSWOTX.57f2958e7dad2b1a4a16b4c78908622b</id>
-<updated>2024-01-11T12:06:00-08:00</updated>
-<published>2024-01-11T12:06:00-08:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Wind Chill Warning issued January 11 at 12:06PM PST until January 13 at 12:00PM PST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=WA126884A36958.WindChillWarning.126884C1EB80WA.OTXWSWOTX.57f2958e7dad2b1a4a16b4c78908622b"/>
-<summary>...WIND CHILL WARNING IN EFFECT FROM 10 PM THIS EVENING TO NOON PST SATURDAY... * WHAT...Dangerously cold wind chills expected. Wind chills as low as 20 to 35 below zero. * WHERE...Omak, Okanogan, Nespelem, Waterville, Bridgeport, Oroville, Mansfield, Brewster, Tonasket, Disautel Pass, and Badger</summary>
-<cap:event>Wind Chill Warning</cap:event>
-<cap:effective>2024-01-11T12:06:00-08:00</cap:effective>
-<cap:expires>2024-01-13T12:00:00-08:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Okanogan Valley; Waterville Plateau</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>053017 053047</value>
-<valueName>UGC</valueName>
-<value>WAZ043 WAZ044</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.UPG.KOTX.WC.A.0001.240112T0600Z-240113T2000Z/
-/O.NEW.KOTX.WC.W.0001.240112T0600Z-240113T2000Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -27635,38 +28210,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=WA126884A26B0C.WindAdvisory.126884B1E5F0WA.PDTNPWPDT.8e1585fbb0258ad16244fea9b1d7b110</id>
-<updated>2024-01-11T05:55:00-08:00</updated>
-<published>2024-01-11T05:55:00-08:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Wind Advisory issued January 11 at 5:55AM PST until January 12 at 7:00AM PST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=WA126884A26B0C.WindAdvisory.126884B1E5F0WA.PDTNPWPDT.8e1585fbb0258ad16244fea9b1d7b110"/>
-<summary>...WIND ADVISORY REMAINS IN EFFECT UNTIL 7 AM PST FRIDAY... * WHAT...West winds 25 to 35 mph with gusts up to 50 mph expected. * WHERE...In Oregon, Eastern Columbia River Gorge of Oregon, Lower Columbia Basin of Oregon and North Central Oregon. In Washington, Eastern Columbia River Gorge of Washington and</summary>
-<cap:event>Wind Advisory</cap:event>
-<cap:effective>2024-01-11T05:55:00-08:00</cap:effective>
-<cap:expires>2024-01-12T07:00:00-08:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Eastern Columbia River Gorge of Washington; Foothills of the Blue Mountains of Washington; Simcoe Highlands</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>053013 053039 053071 053077</value>
-<valueName>UGC</valueName>
-<value>WAZ024 WAZ029 WAZ521</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KPDT.WI.Y.0003.000000T0000Z-240112T1500Z/</value>
-</cap:parameter>
-</entry>
-<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=WA126884A23C2C.WindAdvisory.126884C12830WA.SEWNPWSEW.a3885c131fa64001a55025958649d683</id>
 <updated>2024-01-11T04:35:00-08:00</updated>
 <published>2024-01-11T04:35:00-08:00</published>
@@ -27696,169 +28239,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value>/O.NEW.KSEW.WI.Y.0003.240112T0000Z-240113T1500Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=WA126884A2183C.WinterStormWarning.126884B25B20WA.PDTWSWPDT.9428cc2daa5228514a553a389936baca</id>
-<updated>2024-01-11T03:43:00-08:00</updated>
-<published>2024-01-11T03:43:00-08:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Winter Storm Warning issued January 11 at 3:43AM PST until January 12 at 10:00AM PST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=WA126884A2183C.WinterStormWarning.126884B25B20WA.PDTWSWPDT.9428cc2daa5228514a553a389936baca"/>
-<summary>...WINTER STORM WARNING REMAINS IN EFFECT UNTIL 10 AM PST FRIDAY... ...WINTER STORM WATCH IS CANCELLED... * WHAT...Heavy snow expected. Total snow accumulations of 6 to 14 inches. Winds gusting as high as 60 mph. * WHERE...Upper Slopes of the Eastern Washington Cascades Crest.</summary>
-<cap:event>Winter Storm Warning</cap:event>
-<cap:effective>2024-01-11T03:43:00-08:00</cap:effective>
-<cap:expires>2024-01-12T10:00:00-08:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Upper Slopes of the Eastern Washington Cascades Crest</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>053037 053077</value>
-<valueName>UGC</valueName>
-<value>WAZ522</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CAN.KPDT.WS.A.0003.240112T1800Z-240114T1200Z/
-/O.CON.KPDT.WS.W.0002.240111T1200Z-240112T1800Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=WA126884A2183C.WinterWeatherAdvisory.126884B25B20WA.PDTWSWPDT.ace2f98b697149fa5a152cd464055433</id>
-<updated>2024-01-11T03:43:00-08:00</updated>
-<published>2024-01-11T03:43:00-08:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Winter Weather Advisory issued January 11 at 3:43AM PST until January 12 at 10:00AM PST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=WA126884A2183C.WinterWeatherAdvisory.126884B25B20WA.PDTWSWPDT.ace2f98b697149fa5a152cd464055433"/>
-<summary>...WINTER WEATHER ADVISORY IN EFFECT FROM 4 PM THIS AFTERNOON TO 10 AM PST FRIDAY... * WHAT...Snow expected. Total snow accumulations of 2 to 5 inches Winds gusting as high as 40 mph. * WHERE...Foothills of the Blue Mountains of Washington. * WHEN...From 4 PM this afternoon to 10 AM PST Friday.</summary>
-<cap:event>Winter Weather Advisory</cap:event>
-<cap:effective>2024-01-11T03:43:00-08:00</cap:effective>
-<cap:expires>2024-01-12T10:00:00-08:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Foothills of the Blue Mountains of Washington</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>053013 053071</value>
-<valueName>UGC</valueName>
-<value>WAZ029</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.UPG.KPDT.WS.A.0003.240112T0800Z-240114T1200Z/
-/O.NEW.KPDT.WW.Y.0005.240112T0000Z-240112T1800Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=WA126884A2183C.WinterStormWarning.126884CFF540WA.PDTWSWPDT.8ee35509bfa3d1884294b3e2851447d6</id>
-<updated>2024-01-11T03:43:00-08:00</updated>
-<published>2024-01-11T03:43:00-08:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Winter Storm Warning issued January 11 at 3:43AM PST until January 14 at 4:00AM PST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=WA126884A2183C.WinterStormWarning.126884CFF540WA.PDTWSWPDT.8ee35509bfa3d1884294b3e2851447d6"/>
-<summary>...WINTER STORM WARNING REMAINS IN EFFECT UNTIL 4 AM PST SUNDAY... * WHAT...Heavy snow. Additional snow accumulations of 7 to 23 inches. Winds gusting as high as 50 mph. * WHERE...In Oregon, Northern Blue Mountains of Oregon. In Washington, Northwest Blue Mountains. * WHEN...Until 4 AM PST Sunday.</summary>
-<cap:event>Winter Storm Warning</cap:event>
-<cap:effective>2024-01-11T03:43:00-08:00</cap:effective>
-<cap:expires>2024-01-14T04:00:00-08:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Northwest Blue Mountains</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>053013</value>
-<valueName>UGC</valueName>
-<value>WAZ030</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KPDT.WS.W.0001.000000T0000Z-240114T1200Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=WA126884A2183C.WinterStormWatch.126884CFF540WA.PDTWSWPDT.a47a738debbf82ba5ec14438c64e625a</id>
-<updated>2024-01-11T03:43:00-08:00</updated>
-<published>2024-01-11T03:43:00-08:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Winter Storm Watch issued January 11 at 3:43AM PST until January 14 at 4:00AM PST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=WA126884A2183C.WinterStormWatch.126884CFF540WA.PDTWSWPDT.a47a738debbf82ba5ec14438c64e625a"/>
-<summary>...WINTER STORM WATCH NOW IN EFFECT FROM LATE FRIDAY NIGHT THROUGH LATE SATURDAY NIGHT... * WHAT...Heavy snow possible. Total snow accumulations of 3 to 6 inches possible. * WHERE...In Oregon, Eastern Columbia River Gorge of Oregon and Lower Columbia Basin of Oregon. In Washington, Eastern</summary>
-<cap:event>Winter Storm Watch</cap:event>
-<cap:effective>2024-01-11T03:43:00-08:00</cap:effective>
-<cap:expires>2024-01-14T04:00:00-08:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Future</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Possible</cap:certainty>
-<cap:areaDesc>Eastern Columbia River Gorge of Washington</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>053039</value>
-<valueName>UGC</valueName>
-<value>WAZ024</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.EXT.KPDT.WS.A.0003.240113T1200Z-240114T1200Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=WA126884A2183C.WinterStormWatch.126884CFF540WA.PDTWSWPDT.8ceac8162a5bf4787c7b141292b72a5c</id>
-<updated>2024-01-11T03:43:00-08:00</updated>
-<published>2024-01-11T03:43:00-08:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Winter Storm Watch issued January 11 at 3:43AM PST until January 14 at 4:00AM PST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=WA126884A2183C.WinterStormWatch.126884CFF540WA.PDTWSWPDT.8ceac8162a5bf4787c7b141292b72a5c"/>
-<summary>...WINTER STORM WATCH NOW IN EFFECT FROM LATE FRIDAY NIGHT THROUGH LATE SATURDAY NIGHT... ...WINTER WEATHER ADVISORY IS CANCELLED... * WHAT...Heavy snow possible. Total snow accumulations of up to 7 inches possible. * WHERE...Simcoe Highlands and Lower Slopes of the Eastern</summary>
-<cap:event>Winter Storm Watch</cap:event>
-<cap:effective>2024-01-11T03:43:00-08:00</cap:effective>
-<cap:expires>2024-01-14T04:00:00-08:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Future</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Possible</cap:certainty>
-<cap:areaDesc>Lower Slopes of the Eastern Washington Cascades Crest; Simcoe Highlands</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>053037 053039 053077</value>
-<valueName>UGC</valueName>
-<value>WAZ521 WAZ523</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CAN.KPDT.WW.Y.0004.240111T1200Z-240112T1800Z/
-/O.EXT.KPDT.WS.A.0003.240113T1200Z-240114T1200Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -28932,6 +29312,39 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <valueName>VTEC</valueName>
 <value>/O.NEW.KRLX.HW.W.0002.240112T1500Z-240113T0300Z/
 /O.NEW.KRLX.WI.Y.0002.240113T0300Z-240114T1300Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=WY126884A3C9D4.WinterStormWarning.126884CFF540WY.SLCWSWSLC.6f2684cb73e016bb0a7178a84e6f0512</id>
+<updated>2024-01-11T15:53:00-07:00</updated>
+<published>2024-01-11T15:53:00-07:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Winter Storm Warning issued January 11 at 3:53PM MST until January 14 at 5:00AM MST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=WY126884A3C9D4.WinterStormWarning.126884CFF540WY.SLCWSWSLC.6f2684cb73e016bb0a7178a84e6f0512"/>
+<summary>...WINTER STORM WARNING IN EFFECT FROM 5 AM FRIDAY TO 5 AM MST SUNDAY... * WHAT...Heavy snow expected. Total snow accumulations of 6 to 16 inches. Winds gusting as high as 60 mph. * WHERE...Southwest Wyoming. * WHEN...From 5 AM Friday to 5 AM MST Sunday.</summary>
+<cap:event>Winter Storm Warning</cap:event>
+<cap:effective>2024-01-11T15:53:00-07:00</cap:effective>
+<cap:expires>2024-01-14T05:00:00-07:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Southwest Wyoming</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>056041</value>
+<valueName>UGC</valueName>
+<value>WYZ021</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.UPG.KSLC.WS.A.0003.240112T1800Z-240115T0000Z/
+/O.NEW.KSLC.WS.W.0003.240112T1200Z-240114T1200Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -30010,39 +30423,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value></value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=WY126884A2089C.WinterStormWatch.126884DD62C0WY.SLCWSWSLC.cfd5470a64139cddd80354a2d7f6de4c</id>
-<updated>2024-01-11T04:03:00-07:00</updated>
-<published>2024-01-11T04:03:00-07:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Winter Storm Watch issued January 11 at 4:03AM MST until January 14 at 5:00PM MST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=WY126884A2089C.WinterStormWatch.126884DD62C0WY.SLCWSWSLC.cfd5470a64139cddd80354a2d7f6de4c"/>
-<summary>...WINTER STORM WATCH REMAINS IN EFFECT FROM FRIDAY MORNING THROUGH SUNDAY AFTERNOON... ...WINTER STORM WARNING IS CANCELLED... * WHAT...Heavy snow possible. Total snow accumulations of 3 to 7 inches possible. Winds could gust as high as 60 mph. * WHERE...Southwest Wyoming.</summary>
-<cap:event>Winter Storm Watch</cap:event>
-<cap:effective>2024-01-11T04:03:00-07:00</cap:effective>
-<cap:expires>2024-01-14T17:00:00-07:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Future</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Possible</cap:certainty>
-<cap:areaDesc>Southwest Wyoming</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>056041</value>
-<valueName>UGC</valueName>
-<value>WYZ021</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CAN.KSLC.WS.W.0002.000000T0000Z-240111T1200Z/
-/O.CON.KSLC.WS.A.0003.240112T1800Z-240115T0000Z/</value>
 </cap:parameter>
 </entry>
 </feed>
