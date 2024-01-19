@@ -16,16 +16,48 @@ xmlns = 'http://www.w3.org/2005/Atom'
 xmlns:cap = 'urn:oasis:names:tc:emergency:cap:1.1'
 xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 >
-<!-- http-date = Fri, 19 Jan 2024 20:26:00 GMT -->
+<!-- http-date = Fri, 19 Jan 2024 21:03:00 GMT -->
 <id>https://alerts.weather.gov/cap/us.php?x=0</id>
 <logo>http://alerts.weather.gov/images/xml_logo.gif</logo>
 <generator>NWS CAP Server</generator>
-<updated>2024-01-19T15:26:00-05:00</updated>
+<updated>2024-01-19T13:03:00-08:00</updated>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
 <title>Current Watches, Warnings and Advisories for the United States Issued by the National Weather Service</title>
 <link href="https://alerts.weather.gov/cap/us.php?x=0"/>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=AK1268851D89CC.HighWindWarning.1268852A9860AK.AJKNPWAJK.f9f1b18faaeb73de63c01794e8aad2e0</id>
+<updated>2024-01-19T11:43:00-09:00</updated>
+<published>2024-01-19T11:43:00-09:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>High Wind Warning issued January 19 at 11:43AM AKST until January 19 at 9:00PM AKST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=AK1268851D89CC.HighWindWarning.1268852A9860AK.AJKNPWAJK.f9f1b18faaeb73de63c01794e8aad2e0"/>
+<summary>...HIGH WIND WARNING NOW IN EFFECT UNTIL 9 PM AKST THIS EVENING... * WHAT...East winds 25 to 35 mph with gusts up to 60 mph. * WHERE...Downtown Juneau and Douglas. * WHEN...Until 9 PM AKST this evening. * IMPACTS...High winds may blow around unsecured objects, damage property, and cause power outages. Travel will be difficult.</summary>
+<cap:event>High Wind Warning</cap:event>
+<cap:effective>2024-01-19T11:43:00-09:00</cap:effective>
+<cap:expires>2024-01-19T21:00:00-09:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Severe</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>City and Borough of Juneau</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>002110</value>
+<valueName>UGC</valueName>
+<value>AKZ325</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.EXT.PAJK.HW.W.0002.000000T0000Z-240120T0600Z/</value>
+</cap:parameter>
+</entry>
 <entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=AK1268851D2B44.WinterWeatherAdvisory.1268852BF7F0AK.AJKWSWAJK.2740d3f0c6564bd5d55eaeafeba24777</id>
 <updated>2024-01-19T09:01:00-09:00</updated>
@@ -88,38 +120,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value>/O.CON.PAJK.WW.Y.0004.240120T0300Z-240120T1500Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=AK1268851CA228.HighWindWarning.1268851DA010AK.AJKNPWAJK.f9f1b18faaeb73de63c01794e8aad2e0</id>
-<updated>2024-01-19T05:50:00-09:00</updated>
-<published>2024-01-19T05:50:00-09:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>High Wind Warning issued January 19 at 5:50AM AKST until January 19 at 12:00PM AKST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=AK1268851CA228.HighWindWarning.1268851DA010AK.AJKNPWAJK.f9f1b18faaeb73de63c01794e8aad2e0"/>
-<summary>...HIGH WIND WARNING NOW IN EFFECT UNTIL NOON AKST TODAY... * WHAT...East winds 15 to 25 mph with gusts up to 60 mph. * WHERE...Downtown Juneau and Douglas. * WHEN...Until noon AKST today. * IMPACTS...High winds will blow around unsecured objects and may damage property and cause power outages. Travel will be</summary>
-<cap:event>High Wind Warning</cap:event>
-<cap:effective>2024-01-19T05:50:00-09:00</cap:effective>
-<cap:expires>2024-01-19T12:00:00-09:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Severe</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>City and Borough of Juneau</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>002110</value>
-<valueName>UGC</valueName>
-<value>AKZ325</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.EXT.PAJK.HW.W.0002.000000T0000Z-240119T2100Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -705,6 +705,102 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=AR1268851D8D50.WindChillAdvisory.1268852C1F00AR.TSAWSWTSA.b7777c757626e4cd2167c4953966ae12</id>
+<updated>2024-01-19T14:52:00-06:00</updated>
+<published>2024-01-19T14:52:00-06:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Wind Chill Advisory issued January 19 at 2:52PM CST until January 20 at 10:00AM CST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=AR1268851D8D50.WindChillAdvisory.1268852C1F00AR.TSAWSWTSA.b7777c757626e4cd2167c4953966ae12"/>
+<summary>...WIND CHILL ADVISORY REMAINS IN EFFECT FROM MIDNIGHT TONIGHT TO 10 AM CST SATURDAY... * WHAT...Very cold wind chills expected. Wind chills as low as 10 below zero. * WHERE...Portions of northwest Arkansas and northeast Oklahoma. * WHEN...From midnight tonight to 10 AM CST Saturday.</summary>
+<cap:event>Wind Chill Advisory</cap:event>
+<cap:effective>2024-01-19T14:52:00-06:00</cap:effective>
+<cap:expires>2024-01-20T10:00:00-06:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Benton; Carroll; Madison; Washington</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>005007 005015 005087 005143</value>
+<valueName>UGC</valueName>
+<value>ARZ001 ARZ002 ARZ010 ARZ011</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KTSA.WC.Y.0004.240120T0600Z-240120T1600Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=AR1268851D8CEC.WindChillAdvisory.1268852C6D20AR.JANWSWJAN.0e7c4dd76d065c2c538232d6ae8bfed7</id>
+<updated>2024-01-19T14:51:00-06:00</updated>
+<published>2024-01-19T14:51:00-06:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Wind Chill Advisory issued January 19 at 2:51PM CST until January 20 at 12:00PM CST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=AR1268851D8CEC.WindChillAdvisory.1268852C6D20AR.JANWSWJAN.0e7c4dd76d065c2c538232d6ae8bfed7"/>
+<summary>...WIND CHILL ADVISORY REMAINS IN EFFECT FROM 10 PM THIS EVENING TO NOON CST SATURDAY... * WHAT...Very low wind chills expected. Wind chills as low as zero. * WHERE...Portions of southeast Arkansas, northeast Louisiana, and central Mississippi.</summary>
+<cap:event>Wind Chill Advisory</cap:event>
+<cap:effective>2024-01-19T14:51:00-06:00</cap:effective>
+<cap:expires>2024-01-20T12:00:00-06:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Ashley; Chicot</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>005003 005017</value>
+<valueName>UGC</valueName>
+<value>ARZ074 ARZ075</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KJAN.WC.Y.0002.240120T0400Z-240120T1800Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=AR1268851D8BC0.HardFreezeWarning.1268853BAF60AR.JANNPWJAN.97893b223a90339b07e2d625e9a6e869</id>
+<updated>2024-01-19T14:48:00-06:00</updated>
+<published>2024-01-19T14:48:00-06:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Hard Freeze Warning issued January 19 at 2:48PM CST until January 21 at 12:00PM CST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=AR1268851D8BC0.HardFreezeWarning.1268853BAF60AR.JANNPWJAN.97893b223a90339b07e2d625e9a6e869"/>
+<summary>...HARD FREEZE WARNING REMAINS IN EFFECT FROM 6 PM THIS EVENING TO NOON CST SUNDAY... * WHAT...Sub-freezing temperatures as low as 10 degrees expected in northern locations along the Highway 82 corridor, and as low as near 15 to 20 degrees for the remainder of the area. High temperatures will struggle to reach or rise above freezing</summary>
+<cap:event>Hard Freeze Warning</cap:event>
+<cap:effective>2024-01-19T14:48:00-06:00</cap:effective>
+<cap:expires>2024-01-21T12:00:00-06:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Ashley; Chicot</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>005003 005017</value>
+<valueName>UGC</valueName>
+<value>ARZ074 ARZ075</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KJAN.HZ.W.0002.240120T0000Z-240121T1800Z/</value>
+</cap:parameter>
+</entry>
+<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=AR1268851D8260.WindChillAdvisory.1268852C6D20AR.LZKWSWLZK.229b8703ec2334fd869c511a1c4bb117</id>
 <updated>2024-01-19T14:24:00-06:00</updated>
 <published>2024-01-19T14:24:00-06:00</published>
@@ -935,70 +1031,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=AR1268851BE130.WindChillAdvisory.1268852C6D20AR.JANWSWJAN.0e7c4dd76d065c2c538232d6ae8bfed7</id>
-<updated>2024-01-19T03:56:00-06:00</updated>
-<published>2024-01-19T03:56:00-06:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Wind Chill Advisory issued January 19 at 3:56AM CST until January 20 at 12:00PM CST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=AR1268851BE130.WindChillAdvisory.1268852C6D20AR.JANWSWJAN.0e7c4dd76d065c2c538232d6ae8bfed7"/>
-<summary>...WIND CHILL ADVISORY IN EFFECT FROM 10 PM THIS EVENING TO NOON CST SATURDAY... * WHAT...Very low wind chills expected. Wind chills as low as zero. * WHERE...Portions of southeast Arkansas, northeast Louisiana and central, east central, north central, northeast,</summary>
-<cap:event>Wind Chill Advisory</cap:event>
-<cap:effective>2024-01-19T03:56:00-06:00</cap:effective>
-<cap:expires>2024-01-20T12:00:00-06:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Ashley; Chicot</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>005003 005017</value>
-<valueName>UGC</valueName>
-<value>ARZ074 ARZ075</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.NEW.KJAN.WC.Y.0002.240120T0400Z-240120T1800Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=AR1268851BE004.HardFreezeWarning.1268853BAF60AR.JANNPWJAN.97893b223a90339b07e2d625e9a6e869</id>
-<updated>2024-01-19T03:53:00-06:00</updated>
-<published>2024-01-19T03:53:00-06:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Hard Freeze Warning issued January 19 at 3:53AM CST until January 21 at 12:00PM CST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=AR1268851BE004.HardFreezeWarning.1268853BAF60AR.JANNPWJAN.97893b223a90339b07e2d625e9a6e869"/>
-<summary>...HARD FREEZE WARNING REMAINS IN EFFECT FROM 6 PM THIS EVENING TO NOON CST SUNDAY... * WHAT...Sub-freezing temperatures as low as 10 degrees expected. * WHERE...Far southeast Arkansas, far northeast Louisiana, and portions of northern and central Mississippi.</summary>
-<cap:event>Hard Freeze Warning</cap:event>
-<cap:effective>2024-01-19T03:53:00-06:00</cap:effective>
-<cap:expires>2024-01-21T12:00:00-06:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Ashley; Chicot</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>005003 005017</value>
-<valueName>UGC</valueName>
-<value>ARZ074 ARZ075</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KJAN.HZ.W.0002.240120T0000Z-240121T1800Z/</value>
-</cap:parameter>
-</entry>
-<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=AR1268851BB69C.WindChillAdvisory.1268852C4610AR.MEGWSWMEG.b1080be659935c8a5c83cacbefc669a6</id>
 <updated>2024-01-19T02:47:00-06:00</updated>
 <published>2024-01-19T02:47:00-06:00</published>
@@ -1031,36 +1063,132 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=AR1268851B8D34.WindChillAdvisory.1268852C1F00AR.TSAWSWTSA.b7777c757626e4cd2167c4953966ae12</id>
-<updated>2024-01-19T01:41:00-06:00</updated>
-<published>2024-01-19T01:41:00-06:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=CA1268851DA13C.BeachHazardsStatement.1268853B8850CA.SGXCFWSGX.f4bf508704e102e47d5986fe60ceadf7</id>
+<updated>2024-01-19T13:03:00-08:00</updated>
+<published>2024-01-19T13:03:00-08:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Wind Chill Advisory issued January 19 at 1:41AM CST until January 20 at 10:00AM CST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=AR1268851B8D34.WindChillAdvisory.1268852C1F00AR.TSAWSWTSA.b7777c757626e4cd2167c4953966ae12"/>
-<summary>...WIND CHILL ADVISORY REMAINS IN EFFECT UNTIL NOON CST TODAY... ...WIND CHILL ADVISORY IN EFFECT FROM MIDNIGHT TONIGHT TO 10 AM CST SATURDAY... * WHAT...For the first Wind Chill Advisory, very cold wind chills expected. Wind chills as low as 10 below zero. For the second Wind Chill Advisory, very cold wind chills expected.</summary>
-<cap:event>Wind Chill Advisory</cap:event>
-<cap:effective>2024-01-19T01:41:00-06:00</cap:effective>
-<cap:expires>2024-01-20T10:00:00-06:00</cap:expires>
+<title>Beach Hazards Statement issued January 19 at 1:03PM PST until January 21 at 9:00AM PST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CA1268851DA13C.BeachHazardsStatement.1268853B8850CA.SGXCFWSGX.f4bf508704e102e47d5986fe60ceadf7"/>
+<summary>...BEACH HAZARDS STATEMENT REMAINS IN EFFECT FROM EARLY SATURDAY THROUGH SUNDAY MORNING... * WHAT...Breaking waves of 4 to 6 feet are expected. * WHERE...Orange County Coastal Areas. * WHEN...From early Saturday through Sunday morning. * IMPACTS...Strong rip currents leading to hazardous swimming</summary>
+<cap:event>Beach Hazards Statement</cap:event>
+<cap:effective>2024-01-19T13:03:00-08:00</cap:effective>
+<cap:expires>2024-01-21T09:00:00-08:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Orange County Coastal</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>006059</value>
+<valueName>UGC</valueName>
+<value>CAZ552</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KSGX.BH.S.0003.240120T1200Z-240121T1700Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=CA1268851DA13C.HighSurfAdvisory.1268853C4BA0CA.SGXCFWSGX.3deb35dd5ccd7db3ae949acd7bf44c70</id>
+<updated>2024-01-19T13:03:00-08:00</updated>
+<published>2024-01-19T13:03:00-08:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>High Surf Advisory issued January 19 at 1:03PM PST until January 21 at 2:00PM PST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CA1268851DA13C.HighSurfAdvisory.1268853C4BA0CA.SGXCFWSGX.3deb35dd5ccd7db3ae949acd7bf44c70"/>
+<summary>...HIGH SURF ADVISORY REMAINS IN EFFECT FROM 4 AM SATURDAY TO 2 PM PST SUNDAY... * WHAT...Large breaking waves of 5 to 7 feet with sets to 8 feet are expected. * WHERE...San Diego County Coastal Areas. * WHEN...From 4 AM Saturday to 2 PM PST Sunday.</summary>
+<cap:event>High Surf Advisory</cap:event>
+<cap:effective>2024-01-19T13:03:00-08:00</cap:effective>
+<cap:expires>2024-01-21T14:00:00-08:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
 <cap:category>Met</cap:category>
 <cap:urgency>Expected</cap:urgency>
 <cap:severity>Minor</cap:severity>
 <cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Benton; Carroll; Madison; Washington</cap:areaDesc>
+<cap:areaDesc>San Diego County Coastal Areas</cap:areaDesc>
 <cap:polygon></cap:polygon>
 <cap:geocode>
 <valueName>FIPS6</valueName>
-<value>005007 005015 005087 005143</value>
+<value>006073</value>
 <valueName>UGC</valueName>
-<value>ARZ001 ARZ002 ARZ010 ARZ011</value>
+<value>CAZ043</value>
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
-<value>/O.NEW.KTSA.WC.Y.0004.240120T0600Z-240120T1600Z/
-/O.CON.KTSA.WC.Y.0003.240119T0900Z-240119T1800Z/</value>
+<value>/O.CON.KSGX.SU.Y.0004.240120T1200Z-240121T2200Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=CA1268851D8C24.WindAdvisory.126885396570CA.MFRNPWMFR.456b6c589f3c94fad2e14c0ce0c8023b</id>
+<updated>2024-01-19T12:49:00-08:00</updated>
+<published>2024-01-19T12:49:00-08:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Wind Advisory issued January 19 at 12:49PM PST until January 20 at 7:00PM PST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CA1268851D8C24.WindAdvisory.126885396570CA.MFRNPWMFR.456b6c589f3c94fad2e14c0ce0c8023b"/>
+<summary>...WIND ADVISORY IN EFFECT FROM 4 AM TO 7 PM PST SATURDAY... * WHAT...Southeast winds 20 to 30 mph with gusts up to 55 mph expected. * WHERE...Southern portions of the Shasta Valley in Central Siskiyou County. This includes Weed and Interstate 5 between Weed and Grenada.</summary>
+<cap:event>Wind Advisory</cap:event>
+<cap:effective>2024-01-19T12:49:00-08:00</cap:effective>
+<cap:expires>2024-01-20T19:00:00-08:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Central Siskiyou County</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>006093</value>
+<valueName>UGC</valueName>
+<value>CAZ081</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.NEW.KMFR.WI.Y.0006.240120T1200Z-240121T0300Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=CA1268851D8968.FloodWatch.126885396570CA.MFRFFAMFR.e686b1ff8d1dd1af46a6375609dd6d4d</id>
+<updated>2024-01-19T12:42:00-08:00</updated>
+<published>2024-01-19T12:42:00-08:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Flood Watch issued January 19 at 12:42PM PST until January 20 at 7:00PM PST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CA1268851D8968.FloodWatch.126885396570CA.MFRFFAMFR.e686b1ff8d1dd1af46a6375609dd6d4d"/>
+<summary>.Heavy rainfall of 2 to 5 inches is expected tonight through Saturday in south-central Siskiyou County below 5500 feet with heavy snow above that elevation. Heavy rainfall combined with snowmelt will allow streams to rise and bring a potential for small stream and urban flooding. ...FLOOD WATCH IN EFFECT FROM MIDNIGHT PST TONIGHT THROUGH LATE</summary>
+<cap:event>Flood Watch</cap:event>
+<cap:effective>2024-01-19T12:42:00-08:00</cap:effective>
+<cap:expires>2024-01-20T19:00:00-08:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Future</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Possible</cap:certainty>
+<cap:areaDesc>South Central Siskiyou County</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>006093</value>
+<valueName>UGC</valueName>
+<value>CAZ082</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.EXB.KMFR.FA.A.0002.240120T0800Z-240121T0900Z/
+/00000.0.RS.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -1520,70 +1648,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <valueName>VTEC</valueName>
 <value>/O.NEW.KEKA.FA.A.0002.240120T1200Z-240121T0600Z/
 /00000.0.ER.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=CA1268851BD2BC.BeachHazardsStatement.1268853B8850CA.SGXCFWSGX.f4bf508704e102e47d5986fe60ceadf7</id>
-<updated>2024-01-19T01:19:00-08:00</updated>
-<published>2024-01-19T01:19:00-08:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Beach Hazards Statement issued January 19 at 1:19AM PST until January 21 at 9:00AM PST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CA1268851BD2BC.BeachHazardsStatement.1268853B8850CA.SGXCFWSGX.f4bf508704e102e47d5986fe60ceadf7"/>
-<summary>...BEACH HAZARDS STATEMENT IN EFFECT FROM 4 AM SATURDAY TO 9 AM SUNDAY... * WHAT...Breaking waves of 4 to 6 feet are expected. * WHERE...Orange County Coastal Areas. * WHEN...From late tonight through Sunday morning. * IMPACTS...Hazardous swimming conditions.</summary>
-<cap:event>Beach Hazards Statement</cap:event>
-<cap:effective>2024-01-19T01:19:00-08:00</cap:effective>
-<cap:expires>2024-01-21T09:00:00-08:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Orange County Coastal</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>006059</value>
-<valueName>UGC</valueName>
-<value>CAZ552</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.NEW.KSGX.BH.S.0003.240120T1200Z-240121T1700Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=CA1268851BD2BC.HighSurfAdvisory.1268853C4BA0CA.SGXCFWSGX.3deb35dd5ccd7db3ae949acd7bf44c70</id>
-<updated>2024-01-19T01:19:00-08:00</updated>
-<published>2024-01-19T01:19:00-08:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>High Surf Advisory issued January 19 at 1:19AM PST until January 21 at 2:00PM PST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CA1268851BD2BC.HighSurfAdvisory.1268853C4BA0CA.SGXCFWSGX.3deb35dd5ccd7db3ae949acd7bf44c70"/>
-<summary>...HIGH SURF ADVISORY IN EFFECT FROM 4 AM SATURDAY TO 2 PM PST SUNDAY... * WHAT...Large breaking waves of 5 to 7 feet with sets to 8 feet are expected. * WHERE...San Diego County Coastal Areas. * WHEN...From 4 AM Saturday to 2 PM PST Sunday.</summary>
-<cap:event>High Surf Advisory</cap:event>
-<cap:effective>2024-01-19T01:19:00-08:00</cap:effective>
-<cap:expires>2024-01-21T14:00:00-08:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>San Diego County Coastal Areas</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>006073</value>
-<valueName>UGC</valueName>
-<value>CAZ043</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.NEW.KSGX.SU.Y.0004.240120T1200Z-240121T2200Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -3341,6 +3405,70 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=IA1268851D8DB4.WindChillAdvisory.1268852C6D20IA.DVNWSWDVN.e5ebb25f59209b4b1ff21680c0e3fd78</id>
+<updated>2024-01-19T14:53:00-06:00</updated>
+<published>2024-01-19T14:53:00-06:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Wind Chill Advisory issued January 19 at 2:53PM CST until January 20 at 12:00PM CST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=IA1268851D8DB4.WindChillAdvisory.1268852C6D20IA.DVNWSWDVN.e5ebb25f59209b4b1ff21680c0e3fd78"/>
+<summary>...WIND CHILL ADVISORY REMAINS IN EFFECT FROM 6 PM THIS EVENING TO NOON CST SATURDAY... * WHAT...Very cold wind chills expected. Wind chills as low as 30 below zero. * WHERE...Portions of northwest and west central Illinois, east central, northeast and southeast Iowa and northeast Missouri.</summary>
+<cap:event>Wind Chill Advisory</cap:event>
+<cap:effective>2024-01-19T14:53:00-06:00</cap:effective>
+<cap:expires>2024-01-20T12:00:00-06:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Benton; Buchanan; Cedar; Clinton; Delaware; Des Moines; Dubuque; Henry; Iowa; Jackson; Jefferson; Johnson; Jones; Keokuk; Lee; Linn; Louisa; Muscatine; Scott; Van Buren; Washington</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>019011 019019 019031 019045 019055 019057 019061 019087 019095 019097 019101 019103 019105 019107 019111 019113 019115 019139 019163 019177 019183</value>
+<valueName>UGC</valueName>
+<value>IAZ040 IAZ041 IAZ042 IAZ051 IAZ052 IAZ053 IAZ054 IAZ063 IAZ064 IAZ065 IAZ066 IAZ067 IAZ068 IAZ076 IAZ077 IAZ078 IAZ087 IAZ088 IAZ089 IAZ098 IAZ099</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KDVN.WC.Y.0004.240120T0000Z-240120T1800Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=IA1268851D8D50.WindChillAdvisory.1268852C6D20IA.FSDWSWFSD.114b28a59c770bb6bd4458f286592f1c</id>
+<updated>2024-01-19T14:52:00-06:00</updated>
+<published>2024-01-19T14:52:00-06:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Wind Chill Advisory issued January 19 at 2:52PM CST until January 20 at 12:00PM CST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=IA1268851D8D50.WindChillAdvisory.1268852C6D20IA.FSDWSWFSD.114b28a59c770bb6bd4458f286592f1c"/>
+<summary>...WIND CHILL ADVISORY NOW IN EFFECT FROM 9 PM THIS EVENING TO NOON CST SATURDAY... * WHAT...Very cold wind chills expected. Wind chills as low as 35 below zero. * WHERE...Portions of northwest and west central Iowa, southwest Minnesota, northeast Nebraska and central, east central, south</summary>
+<cap:event>Wind Chill Advisory</cap:event>
+<cap:effective>2024-01-19T14:52:00-06:00</cap:effective>
+<cap:expires>2024-01-20T12:00:00-06:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Buena Vista; Cherokee; Clay; Dickinson; Ida; Lyon; O&apos;Brien; Osceola; Plymouth; Sioux; Woodbury</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>019021 019035 019041 019059 019093 019119 019141 019143 019149 019167 019193</value>
+<valueName>UGC</valueName>
+<value>IAZ001 IAZ002 IAZ003 IAZ012 IAZ013 IAZ014 IAZ020 IAZ021 IAZ022 IAZ031 IAZ032</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.EXT.KFSD.WC.Y.0003.240120T0300Z-240120T1800Z/</value>
+</cap:parameter>
+</entry>
+<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=IA1268851D5D44.WindChillAdvisory.1268852BF7F0IA.ARXWSWARX.e40138aa493f783f009d04405c0a3118</id>
 <updated>2024-01-19T13:29:00-06:00</updated>
 <published>2024-01-19T13:29:00-06:00</published>
@@ -3402,71 +3530,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value>/O.CON.KARX.WC.Y.0006.240120T0900Z-240120T1500Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=IA1268851D19B0.WindChillAdvisory.1268852C6D20IA.DVNWSWDVN.e5ebb25f59209b4b1ff21680c0e3fd78</id>
-<updated>2024-01-19T11:56:00-06:00</updated>
-<published>2024-01-19T11:56:00-06:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Wind Chill Advisory issued January 19 at 11:56AM CST until January 20 at 12:00PM CST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=IA1268851D19B0.WindChillAdvisory.1268852C6D20IA.DVNWSWDVN.e5ebb25f59209b4b1ff21680c0e3fd78"/>
-<summary>...WIND CHILL ADVISORY REMAINS IN EFFECT FROM 6 PM THIS EVENING TO NOON CST SATURDAY... ...WIND CHILL ADVISORY WILL EXPIRE AT NOON CST TODAY... * WHAT...Very cold wind chills expected. Wind chills as low as 30 below zero. * WHERE...Portions of northwest and west central Illinois, east</summary>
-<cap:event>Wind Chill Advisory</cap:event>
-<cap:effective>2024-01-19T11:56:00-06:00</cap:effective>
-<cap:expires>2024-01-20T12:00:00-06:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Benton; Buchanan; Cedar; Clinton; Delaware; Des Moines; Dubuque; Henry; Iowa; Jackson; Jefferson; Johnson; Jones; Keokuk; Lee; Linn; Louisa; Muscatine; Scott; Van Buren; Washington</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>019011 019019 019031 019045 019055 019057 019061 019087 019095 019097 019101 019103 019105 019107 019111 019113 019115 019139 019163 019177 019183</value>
-<valueName>UGC</valueName>
-<value>IAZ040 IAZ041 IAZ042 IAZ051 IAZ052 IAZ053 IAZ054 IAZ063 IAZ064 IAZ065 IAZ066 IAZ067 IAZ068 IAZ076 IAZ077 IAZ078 IAZ087 IAZ088 IAZ089 IAZ098 IAZ099</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.EXP.KDVN.WC.Y.0003.000000T0000Z-240119T1800Z/
-/O.CON.KDVN.WC.Y.0004.240120T0000Z-240120T1800Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=IA1268851D1500.WindChillAdvisory.1268852C6D20IA.FSDWSWFSD.114b28a59c770bb6bd4458f286592f1c</id>
-<updated>2024-01-19T11:44:00-06:00</updated>
-<published>2024-01-19T11:44:00-06:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Wind Chill Advisory issued January 19 at 11:44AM CST until January 20 at 12:00PM CST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=IA1268851D1500.WindChillAdvisory.1268852C6D20IA.FSDWSWFSD.114b28a59c770bb6bd4458f286592f1c"/>
-<summary>...WIND CHILL ADVISORY REMAINS IN EFFECT FROM 6 PM THIS EVENING TO NOON CST SATURDAY... * WHAT...Very cold wind chills expected. Wind chills as low as 35 below zero. * WHERE...Portions of northwest and west central Iowa, southwest Minnesota, northeast Nebraska and central, east central, south</summary>
-<cap:event>Wind Chill Advisory</cap:event>
-<cap:effective>2024-01-19T11:44:00-06:00</cap:effective>
-<cap:expires>2024-01-20T12:00:00-06:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Buena Vista; Cherokee; Clay; Dickinson; Ida; Lyon; O&apos;Brien; Osceola; Plymouth; Sioux; Woodbury</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>019021 019035 019041 019059 019093 019119 019141 019143 019149 019167 019193</value>
-<valueName>UGC</valueName>
-<value>IAZ001 IAZ002 IAZ003 IAZ012 IAZ013 IAZ014 IAZ020 IAZ021 IAZ022 IAZ031 IAZ032</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KFSD.WC.Y.0003.240120T0000Z-240120T1800Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -3664,35 +3727,35 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=ID1268850E2338.WinterWeatherAdvisory.1268851DA010ID.MSOWSWMSO.7e7904d6eb1eacc4a6d2a1d275b98abc</id>
-<updated>2024-01-18T12:50:00-07:00</updated>
-<published>2024-01-18T12:50:00-07:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=IL1268851D8DB4.WindChillAdvisory.1268852C6D20IL.DVNWSWDVN.b4ae50537514adeaf42570c07c283312</id>
+<updated>2024-01-19T14:53:00-06:00</updated>
+<published>2024-01-19T14:53:00-06:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Winter Weather Advisory issued January 18 at 12:50PM MST until January 19 at 2:00PM MST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=ID1268850E2338.WinterWeatherAdvisory.1268851DA010ID.MSOWSWMSO.7e7904d6eb1eacc4a6d2a1d275b98abc"/>
-<summary>...WINTER WEATHER ADVISORY REMAINS IN EFFECT FROM 4 PM THIS AFTERNOON TO 1 PM PST FRIDAY... * WHAT...Mixed precipitation expected. Total snow accumulations up to two inches and ice accumulations around a light glaze. * WHERE...Highway 95 Slate Creek to Riggins, Greer Grade, White Bird Grade, Grangeville and vicinity, and Camas Prairie.</summary>
-<cap:event>Winter Weather Advisory</cap:event>
-<cap:effective>2024-01-18T12:50:00-07:00</cap:effective>
-<cap:expires>2024-01-19T14:00:00-07:00</cap:expires>
+<title>Wind Chill Advisory issued January 19 at 2:53PM CST until January 20 at 12:00PM CST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=IL1268851D8DB4.WindChillAdvisory.1268852C6D20IL.DVNWSWDVN.b4ae50537514adeaf42570c07c283312"/>
+<summary>...WIND CHILL ADVISORY REMAINS IN EFFECT FROM 6 PM THIS EVENING TO NOON CST SATURDAY... * WHAT...Very cold wind chills expected. Wind chills as low as 30 below zero. * WHERE...Portions of northwest and west central Illinois, east central, northeast and southeast Iowa and northeast Missouri.</summary>
+<cap:event>Wind Chill Advisory</cap:event>
+<cap:effective>2024-01-19T14:53:00-06:00</cap:effective>
+<cap:expires>2024-01-20T12:00:00-06:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
 <cap:category>Met</cap:category>
 <cap:urgency>Expected</cap:urgency>
 <cap:severity>Minor</cap:severity>
 <cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Lower Hells Canyon, Salmon River Region; Orofino, Grangeville Region</cap:areaDesc>
+<cap:areaDesc>Bureau; Carroll; Hancock; Henderson; Henry; Jo Daviess; McDonough; Mercer; Putnam; Rock Island; Stephenson; Warren; Whiteside</cap:areaDesc>
 <cap:polygon></cap:polygon>
 <cap:geocode>
 <valueName>FIPS6</valueName>
-<value>016035 016049</value>
+<value>017011 017015 017067 017071 017073 017085 017109 017131 017155 017161 017177 017187 017195</value>
 <valueName>UGC</valueName>
-<value>IDZ007 IDZ008</value>
+<value>ILZ001 ILZ002 ILZ007 ILZ009 ILZ015 ILZ016 ILZ017 ILZ018 ILZ024 ILZ025 ILZ026 ILZ034 ILZ035</value>
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
-<value>/O.CON.KMSO.WW.Y.0008.240119T0000Z-240119T2100Z/</value>
+<value>/O.CON.KDVN.WC.Y.0004.240120T0000Z-240120T1800Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -3822,71 +3885,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value>/O.CON.KPAH.WC.Y.0003.240120T0300Z-240120T1500Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=IL1268851D19B0.WindChillAdvisory.1268852C6D20IL.DVNWSWDVN.5a7cf18acc56d6431ed63cceb7636495</id>
-<updated>2024-01-19T11:56:00-06:00</updated>
-<published>2024-01-19T11:56:00-06:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Wind Chill Advisory issued January 19 at 11:56AM CST until January 20 at 12:00PM CST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=IL1268851D19B0.WindChillAdvisory.1268852C6D20IL.DVNWSWDVN.5a7cf18acc56d6431ed63cceb7636495"/>
-<summary>...WIND CHILL ADVISORY REMAINS IN EFFECT FROM 6 PM THIS EVENING TO NOON CST SATURDAY... * WHAT...Very cold wind chills expected. Wind chills as low as 25 below zero. * WHERE...Portions of north central and northwest Illinois. * WHEN...From 6 PM this evening to noon CST Saturday.</summary>
-<cap:event>Wind Chill Advisory</cap:event>
-<cap:effective>2024-01-19T11:56:00-06:00</cap:effective>
-<cap:expires>2024-01-20T12:00:00-06:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Bureau; Carroll; Henry; Jo Daviess; Putnam; Stephenson; Whiteside</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>017011 017015 017073 017085 017155 017177 017195</value>
-<valueName>UGC</valueName>
-<value>ILZ001 ILZ002 ILZ007 ILZ009 ILZ016 ILZ017 ILZ018</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KDVN.WC.Y.0004.240120T0000Z-240120T1800Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=IL1268851D19B0.WindChillAdvisory.1268852C6D20IL.DVNWSWDVN.6402fa6230cf48fc5ba6809db07aa2a7</id>
-<updated>2024-01-19T11:56:00-06:00</updated>
-<published>2024-01-19T11:56:00-06:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Wind Chill Advisory issued January 19 at 11:56AM CST until January 20 at 12:00PM CST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=IL1268851D19B0.WindChillAdvisory.1268852C6D20IL.DVNWSWDVN.6402fa6230cf48fc5ba6809db07aa2a7"/>
-<summary>...WIND CHILL ADVISORY REMAINS IN EFFECT FROM 6 PM THIS EVENING TO NOON CST SATURDAY... ...WIND CHILL ADVISORY WILL EXPIRE AT NOON CST TODAY... * WHAT...Very cold wind chills expected. Wind chills as low as 30 below zero. * WHERE...Portions of northwest and west central Illinois, east</summary>
-<cap:event>Wind Chill Advisory</cap:event>
-<cap:effective>2024-01-19T11:56:00-06:00</cap:effective>
-<cap:expires>2024-01-20T12:00:00-06:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Hancock; Henderson; McDonough; Mercer; Rock Island; Warren</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>017067 017071 017109 017131 017161 017187</value>
-<valueName>UGC</valueName>
-<value>ILZ015 ILZ024 ILZ025 ILZ026 ILZ034 ILZ035</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.EXP.KDVN.WC.Y.0003.000000T0000Z-240119T1800Z/
-/O.CON.KDVN.WC.Y.0004.240120T0000Z-240120T1800Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -4151,6 +4149,134 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=IN1268851D86AC.WinterWeatherAdvisory.1268852B82C0IN.IWXWSWIWX.3d5bb21a5c21c21008a5b6542aa91958</id>
+<updated>2024-01-19T15:35:00-05:00</updated>
+<published>2024-01-19T15:35:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Winter Weather Advisory issued January 19 at 3:35PM EST until January 20 at 7:00AM EST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=IN1268851D86AC.WinterWeatherAdvisory.1268852B82C0IN.IWXWSWIWX.3d5bb21a5c21c21008a5b6542aa91958"/>
+<summary>...WINTER WEATHER ADVISORY REMAINS IN EFFECT UNTIL 7 AM EST /6 AM CST/ SATURDAY... * WHAT...Lake effect snow. Additional snow accumulations of up to two inches. * WHERE...Starke and Marshall Counties. * WHEN...Until 7 AM EST /6 AM CST/ Saturday.</summary>
+<cap:event>Winter Weather Advisory</cap:event>
+<cap:effective>2024-01-19T15:35:00-05:00</cap:effective>
+<cap:expires>2024-01-20T07:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Marshall; Starke</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>018099 018149</value>
+<valueName>UGC</valueName>
+<value>INZ012 INZ014</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KIWX.WW.Y.0005.000000T0000Z-240120T1200Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=IN1268851D86AC.WinterStormWarning.1268852C6D20IN.IWXWSWIWX.2cffc79c28b553a9a25363f624f49bbc</id>
+<updated>2024-01-19T15:35:00-05:00</updated>
+<published>2024-01-19T15:35:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Winter Storm Warning issued January 19 at 3:35PM EST until January 20 at 1:00PM EST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=IN1268851D86AC.WinterStormWarning.1268852C6D20IN.IWXWSWIWX.2cffc79c28b553a9a25363f624f49bbc"/>
+<summary>...WINTER STORM WARNING NOW IN EFFECT UNTIL 1 PM EST /NOON CST/ SATURDAY... * WHAT...Heavy lake effect snow. Additional snow accumulations of 2 to 8 inches. Whiteout conditions with near zero visibility expected at times due to snow and potentially blowing snow. * WHERE...In Indiana, Northern La Porte, Southern La Porte and</summary>
+<cap:event>Winter Storm Warning</cap:event>
+<cap:effective>2024-01-19T15:35:00-05:00</cap:effective>
+<cap:expires>2024-01-20T13:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Northern La Porte; Southern La Porte; Western St. Joseph</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>018091 018141</value>
+<valueName>UGC</valueName>
+<value>INZ103 INZ203 INZ204</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.EXT.KIWX.WS.W.0002.000000T0000Z-240120T1800Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=IN1268851D86AC.WinterStormWarning.1268852C6D20IN.IWXWSWIWX.3301ba26856d3f25ede9904c571d8824</id>
+<updated>2024-01-19T15:35:00-05:00</updated>
+<published>2024-01-19T15:35:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Winter Storm Warning issued January 19 at 3:35PM EST until January 20 at 1:00PM EST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=IN1268851D86AC.WinterStormWarning.1268852C6D20IN.IWXWSWIWX.3301ba26856d3f25ede9904c571d8824"/>
+<summary>...WINTER STORM WARNING NOW IN EFFECT UNTIL 1 PM EST SATURDAY... * WHAT...Heavy lake effect snow. Additional snow accumulations of 3 to 5 inches. Near whiteout conditions with less than a half mile visibility expected at times. * WHERE...In Indiana, Eastern St. Joseph IN County. In Michigan, Northern Berrien County.</summary>
+<cap:event>Winter Storm Warning</cap:event>
+<cap:effective>2024-01-19T15:35:00-05:00</cap:effective>
+<cap:expires>2024-01-20T13:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Eastern St. Joseph</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>018141</value>
+<valueName>UGC</valueName>
+<value>INZ104</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.EXT.KIWX.WS.W.0002.000000T0000Z-240120T1800Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=IN1268851D86AC.WinterWeatherAdvisory.126885396570IN.IWXWSWIWX.de33ee122a4725b3ac99f63c4036fdbe</id>
+<updated>2024-01-19T15:35:00-05:00</updated>
+<published>2024-01-19T15:35:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Winter Weather Advisory issued January 19 at 3:35PM EST until January 20 at 10:00PM EST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=IN1268851D86AC.WinterWeatherAdvisory.126885396570IN.IWXWSWIWX.de33ee122a4725b3ac99f63c4036fdbe"/>
+<summary>...WINTER WEATHER ADVISORY IN EFFECT FROM 7 PM THIS EVENING TO 10 PM EST SATURDAY... * WHAT...Lake effect snow expected. Total snow accumulations of 2 to 4 inches. Lowered visibility to less than a mile will be possible in the heavier snow. * WHERE...In Indiana, Elkhart County. In Michigan, Cass MI</summary>
+<cap:event>Winter Weather Advisory</cap:event>
+<cap:effective>2024-01-19T15:35:00-05:00</cap:effective>
+<cap:expires>2024-01-20T22:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Elkhart</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>018039</value>
+<valueName>UGC</valueName>
+<value>INZ005</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.EXB.KIWX.WW.Y.0005.240120T0000Z-240121T0300Z/</value>
+</cap:parameter>
+</entry>
+<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=IN1268851D5CE0.WinterWeatherAdvisory.12688529AE00IN.LMKWSWLMK.595ab6415bf4e7f4384fc1ac04b41752</id>
 <updated>2024-01-19T14:28:00-05:00</updated>
 <published>2024-01-19T14:28:00-05:00</published>
@@ -4380,103 +4506,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=IN1268851D1A78.WinterStormWarning.1268852B82C0IN.IWXWSWIWX.2cffc79c28b553a9a25363f624f49bbc</id>
-<updated>2024-01-19T12:58:00-05:00</updated>
-<published>2024-01-19T12:58:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Winter Storm Warning issued January 19 at 12:58PM EST until January 20 at 7:00AM EST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=IN1268851D1A78.WinterStormWarning.1268852B82C0IN.IWXWSWIWX.2cffc79c28b553a9a25363f624f49bbc"/>
-<summary>...WINTER STORM WARNING REMAINS IN EFFECT UNTIL 7 AM EST /6 AM CST/ SATURDAY... * WHAT...Heavy lake effect snow. Additional snow accumulations of 2 to 9 inches. Whiteout conditions with near zero visibility expected at times. * WHERE...In Indiana, Northern La Porte, Southern La Porte and</summary>
-<cap:event>Winter Storm Warning</cap:event>
-<cap:effective>2024-01-19T12:58:00-05:00</cap:effective>
-<cap:expires>2024-01-20T07:00:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Northern La Porte; Southern La Porte; Western St. Joseph</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>018091 018141</value>
-<valueName>UGC</valueName>
-<value>INZ103 INZ203 INZ204</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KIWX.WS.W.0002.000000T0000Z-240120T1200Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=IN1268851D1A78.WinterStormWarning.1268852B82C0IN.IWXWSWIWX.3301ba26856d3f25ede9904c571d8824</id>
-<updated>2024-01-19T12:58:00-05:00</updated>
-<published>2024-01-19T12:58:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Winter Storm Warning issued January 19 at 12:58PM EST until January 20 at 7:00AM EST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=IN1268851D1A78.WinterStormWarning.1268852B82C0IN.IWXWSWIWX.3301ba26856d3f25ede9904c571d8824"/>
-<summary>...WINTER STORM WARNING REMAINS IN EFFECT UNTIL 7 AM EST SATURDAY... * WHAT...Heavy lake effect snow. Additional snow accumulations of 3 to 5 inches. Near whiteout conditions with less than a half mile visibility expected at times. * WHERE...In Indiana, Eastern St. Joseph IN County. In Michigan,</summary>
-<cap:event>Winter Storm Warning</cap:event>
-<cap:effective>2024-01-19T12:58:00-05:00</cap:effective>
-<cap:expires>2024-01-20T07:00:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Eastern St. Joseph</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>018141</value>
-<valueName>UGC</valueName>
-<value>INZ104</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KIWX.WS.W.0002.000000T0000Z-240120T1200Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=IN1268851D1A78.WinterWeatherAdvisory.1268852B82C0IN.IWXWSWIWX.3d5bb21a5c21c21008a5b6542aa91958</id>
-<updated>2024-01-19T12:58:00-05:00</updated>
-<published>2024-01-19T12:58:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Winter Weather Advisory issued January 19 at 12:58PM EST until January 20 at 7:00AM EST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=IN1268851D1A78.WinterWeatherAdvisory.1268852B82C0IN.IWXWSWIWX.3d5bb21a5c21c21008a5b6542aa91958"/>
-<summary>...WINTER WEATHER ADVISORY IN EFFECT UNTIL 7 AM EST /6 AM CST/ SATURDAY... ...WINTER STORM WARNING IS CANCELLED... * WHAT...Lake effect snow. Additional snow accumulations of 1 to 3 inches. Localized higher amounts are possible should the lake effect snow band linger in any one spot.</summary>
-<cap:event>Winter Weather Advisory</cap:event>
-<cap:effective>2024-01-19T12:58:00-05:00</cap:effective>
-<cap:expires>2024-01-20T07:00:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Marshall; Starke</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>018099 018149</value>
-<valueName>UGC</valueName>
-<value>INZ012 INZ014</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CAN.KIWX.WS.W.0002.000000T0000Z-240120T1200Z/
-/O.NEW.KIWX.WW.Y.0005.240119T1758Z-240120T1200Z/</value>
-</cap:parameter>
-</entry>
-<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=IN1268851D17BC.WinterStormWarning.1268852B82C0IN.LOTWSWLOT.5de68a8c4ad4610f06e64d866f644cd5</id>
 <updated>2024-01-19T12:51:00-05:00</updated>
 <published>2024-01-19T12:51:00-05:00</published>
@@ -4540,6 +4569,70 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value></value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=KS1268851D8F44.WindChillAdvisory.1268852C6D20KS.EAXWSWEAX.575bf348072d7157cfc2d14c19d13eb2</id>
+<updated>2024-01-19T14:57:00-06:00</updated>
+<published>2024-01-19T14:57:00-06:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Wind Chill Advisory issued January 19 at 2:57PM CST until January 20 at 12:00PM CST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=KS1268851D8F44.WindChillAdvisory.1268852C6D20KS.EAXWSWEAX.575bf348072d7157cfc2d14c19d13eb2"/>
+<summary>...WIND CHILL ADVISORY REMAINS IN EFFECT UNTIL NOON CST SATURDAY... * WHAT...Very cold wind chills. Wind chills as low as 25 below zero. * WHERE...Portions of east central and northeast Kansas and central, north central, northwest and west central Missouri.</summary>
+<cap:event>Wind Chill Advisory</cap:event>
+<cap:effective>2024-01-19T14:57:00-06:00</cap:effective>
+<cap:expires>2024-01-20T12:00:00-06:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Atchison; Doniphan; Johnson; Leavenworth; Linn; Miami; Wyandotte</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>020005 020043 020091 020103 020107 020121 020209</value>
+<valueName>UGC</valueName>
+<value>KSZ025 KSZ057 KSZ060 KSZ102 KSZ103 KSZ104 KSZ105</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KEAX.WC.Y.0002.000000T0000Z-240120T1800Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=KS1268851D8968.WindChillAdvisory.1268852C6D20KS.SGFWSWSGF.f85b0f7f57f9451741c4499ae9e13049</id>
+<updated>2024-01-19T14:42:00-06:00</updated>
+<published>2024-01-19T14:42:00-06:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Wind Chill Advisory issued January 19 at 2:42PM CST until January 20 at 12:00PM CST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=KS1268851D8968.WindChillAdvisory.1268852C6D20KS.SGFWSWSGF.f85b0f7f57f9451741c4499ae9e13049"/>
+<summary>...WIND CHILL ADVISORY REMAINS IN EFFECT UNTIL NOON CST SATURDAY... * WHAT...Very cold wind chills. Wind chills as low as 15 below zero. * WHERE...Portions of southeast Kansas and central, east central, south central, southwest, and west central Missouri. * WHEN...Until noon CST Saturday. * IMPACTS...Exposed skin may become quickly frostbitten or frozen.</summary>
+<cap:event>Wind Chill Advisory</cap:event>
+<cap:effective>2024-01-19T14:42:00-06:00</cap:effective>
+<cap:expires>2024-01-20T12:00:00-06:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Bourbon; Cherokee; Crawford</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>020011 020021 020037</value>
+<valueName>UGC</valueName>
+<value>KSZ073 KSZ097 KSZ101</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KSGF.WC.Y.0002.000000T0000Z-240120T1800Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -4703,70 +4796,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <valueName>VTEC</valueName>
 <value>/O.CAN.KGLD.WC.Y.0002.000000T0000Z-240119T1800Z/
 /O.CON.KGLD.WC.Y.0003.240120T0600Z-240120T1800Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=KS1268851BBAE8.WindChillAdvisory.1268852C6D20KS.EAXWSWEAX.575bf348072d7157cfc2d14c19d13eb2</id>
-<updated>2024-01-19T02:58:00-06:00</updated>
-<published>2024-01-19T02:58:00-06:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Wind Chill Advisory issued January 19 at 2:58AM CST until January 20 at 12:00PM CST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=KS1268851BBAE8.WindChillAdvisory.1268852C6D20KS.EAXWSWEAX.575bf348072d7157cfc2d14c19d13eb2"/>
-<summary>...WIND CHILL ADVISORY REMAINS IN EFFECT UNTIL NOON CST SATURDAY... * WHAT...Very cold wind chills expected. Wind chills as low as 25 below zero. * WHERE...Portions of east central and northeast Kansas and central, north central, northwest and west central Missouri.</summary>
-<cap:event>Wind Chill Advisory</cap:event>
-<cap:effective>2024-01-19T02:58:00-06:00</cap:effective>
-<cap:expires>2024-01-20T12:00:00-06:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Atchison; Doniphan; Johnson; Leavenworth; Linn; Miami; Wyandotte</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>020005 020043 020091 020103 020107 020121 020209</value>
-<valueName>UGC</valueName>
-<value>KSZ025 KSZ057 KSZ060 KSZ102 KSZ103 KSZ104 KSZ105</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KEAX.WC.Y.0002.000000T0000Z-240120T1800Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=KS1268851BB9BC.WindChillAdvisory.1268852C6D20KS.SGFWSWSGF.f85b0f7f57f9451741c4499ae9e13049</id>
-<updated>2024-01-19T02:55:00-06:00</updated>
-<published>2024-01-19T02:55:00-06:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Wind Chill Advisory issued January 19 at 2:55AM CST until January 20 at 12:00PM CST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=KS1268851BB9BC.WindChillAdvisory.1268852C6D20KS.SGFWSWSGF.f85b0f7f57f9451741c4499ae9e13049"/>
-<summary>...WIND CHILL ADVISORY REMAINS IN EFFECT UNTIL NOON CST SATURDAY... * WHAT...Very cold wind chills. Wind chills as low as 15 below zero. * WHERE...Portions of southeast Kansas and central, east central, south central, southwest, and west central Missouri. * WHEN...Until noon CST Saturday. * IMPACTS...Exposed skin may become quickly frostbitten or frozen.</summary>
-<cap:event>Wind Chill Advisory</cap:event>
-<cap:effective>2024-01-19T02:55:00-06:00</cap:effective>
-<cap:expires>2024-01-20T12:00:00-06:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Bourbon; Cherokee; Crawford</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>020011 020021 020037</value>
-<valueName>UGC</valueName>
-<value>KSZ073 KSZ097 KSZ101</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KSGF.WC.Y.0002.000000T0000Z-240120T1800Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -5362,6 +5391,70 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=LA1268851D8CEC.WindChillAdvisory.1268852C6D20LA.JANWSWJAN.c6869cfb43e5aa7407319e7e6bab0682</id>
+<updated>2024-01-19T14:51:00-06:00</updated>
+<published>2024-01-19T14:51:00-06:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Wind Chill Advisory issued January 19 at 2:51PM CST until January 20 at 12:00PM CST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=LA1268851D8CEC.WindChillAdvisory.1268852C6D20LA.JANWSWJAN.c6869cfb43e5aa7407319e7e6bab0682"/>
+<summary>...WIND CHILL ADVISORY REMAINS IN EFFECT FROM 10 PM THIS EVENING TO NOON CST SATURDAY... * WHAT...Very low wind chills expected. Wind chills as low as zero. * WHERE...Portions of southeast Arkansas, northeast Louisiana, and central Mississippi.</summary>
+<cap:event>Wind Chill Advisory</cap:event>
+<cap:effective>2024-01-19T14:51:00-06:00</cap:effective>
+<cap:expires>2024-01-20T12:00:00-06:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Catahoula; Concordia; East Carroll; Franklin; Madison; Morehouse; Richland; Tensas; West Carroll</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>022025 022029 022035 022041 022065 022067 022083 022107 022123</value>
+<valueName>UGC</valueName>
+<value>LAZ007 LAZ008 LAZ009 LAZ015 LAZ016 LAZ023 LAZ024 LAZ025 LAZ026</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KJAN.WC.Y.0002.240120T0400Z-240120T1800Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=LA1268851D8BC0.HardFreezeWarning.1268853BAF60LA.JANNPWJAN.05f09f59f12392f73543c7cc8e61775e</id>
+<updated>2024-01-19T14:48:00-06:00</updated>
+<published>2024-01-19T14:48:00-06:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Hard Freeze Warning issued January 19 at 2:48PM CST until January 21 at 12:00PM CST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=LA1268851D8BC0.HardFreezeWarning.1268853BAF60LA.JANNPWJAN.05f09f59f12392f73543c7cc8e61775e"/>
+<summary>...HARD FREEZE WARNING REMAINS IN EFFECT FROM 6 PM THIS EVENING TO NOON CST SUNDAY... * WHAT...Sub-freezing temperatures as low as 10 degrees expected in northern locations along the Highway 82 corridor, and as low as near 15 to 20 degrees for the remainder of the area. High temperatures will struggle to reach or rise above freezing</summary>
+<cap:event>Hard Freeze Warning</cap:event>
+<cap:effective>2024-01-19T14:48:00-06:00</cap:effective>
+<cap:expires>2024-01-21T12:00:00-06:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Catahoula; Concordia; East Carroll; Franklin; Madison; Morehouse; Richland; Tensas; West Carroll</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>022025 022029 022035 022041 022065 022067 022083 022107 022123</value>
+<valueName>UGC</valueName>
+<value>LAZ007 LAZ008 LAZ009 LAZ015 LAZ016 LAZ023 LAZ024 LAZ025 LAZ026</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KJAN.HZ.W.0002.240120T0000Z-240121T1800Z/</value>
+</cap:parameter>
+</entry>
+<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=LA1268851D7A2C.HardFreezeWarning.1268852BF7F0LA.SHVNPWSHV.277deb2e23c9ea25184d343fbbfcfe2b</id>
 <updated>2024-01-19T14:03:00-06:00</updated>
 <published>2024-01-19T14:03:00-06:00</published>
@@ -5624,105 +5717,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=LA1268851CE558.WindAdvisory.1268851DA010LA.LCHNPWLCH.b3db38c73b5606e7dddae894d77874ae</id>
-<updated>2024-01-19T10:22:00-06:00</updated>
-<published>2024-01-19T10:22:00-06:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Wind Advisory issued January 19 at 10:22AM CST until January 19 at 3:00PM CST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=LA1268851CE558.WindAdvisory.1268851DA010LA.LCHNPWLCH.b3db38c73b5606e7dddae894d77874ae"/>
-<summary>...WIND ADVISORY IN EFFECT UNTIL 3 PM CST THIS AFTERNOON... ...HARD FREEZE WARNING REMAINS IN EFFECT FROM MIDNIGHT TONIGHT TO 9 AM CST SATURDAY... ...HARD FREEZE WARNING REMAINS IN EFFECT FROM MIDNIGHT SATURDAY NIGHT TO 9 AM CST SUNDAY... * WHAT...For the Wind Advisory, north winds 15 to 25 mph with</summary>
-<cap:event>Wind Advisory</cap:event>
-<cap:effective>2024-01-19T10:22:00-06:00</cap:effective>
-<cap:expires>2024-01-19T15:00:00-06:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Lafayette; Northern Acadia; Northern Calcasieu; Northern Jefferson Davis; Southern Acadia; Southern Calcasieu; Southern Jefferson Davis; Upper St. Martin</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>022001 022019 022053 022055 022099</value>
-<valueName>UGC</valueName>
-<value>LAZ044 LAZ045 LAZ141 LAZ142 LAZ143 LAZ241 LAZ242 LAZ243</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.NEW.KLCH.WI.Y.0005.240119T1622Z-240119T2100Z/
-/O.CON.KLCH.HZ.W.0003.240120T0600Z-240120T1500Z/
-/O.CON.KLCH.HZ.W.0004.240121T0600Z-240121T1500Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=LA1268851CE558.WindAdvisory.1268851DA010LA.LCHNPWLCH.6ce4fad5f87c3c2d96542576ae5864c3</id>
-<updated>2024-01-19T10:22:00-06:00</updated>
-<published>2024-01-19T10:22:00-06:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Wind Advisory issued January 19 at 10:22AM CST until January 19 at 3:00PM CST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=LA1268851CE558.WindAdvisory.1268851DA010LA.LCHNPWLCH.6ce4fad5f87c3c2d96542576ae5864c3"/>
-<summary>...WIND ADVISORY IN EFFECT UNTIL 3 PM CST THIS AFTERNOON... * WHAT...North winds 15 to 25 mph with gusts up to 30 mph. * WHERE...In Louisiana, Lower St. Martin, West Cameron, East Cameron, Upper St. Mary, Lower Vermilion, Lower Iberia and Lower St. Mary Parishes. In Texas, Upper Jefferson and Lower Jefferson Counties.</summary>
-<cap:event>Wind Advisory</cap:event>
-<cap:effective>2024-01-19T10:22:00-06:00</cap:effective>
-<cap:expires>2024-01-19T15:00:00-06:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>East Cameron; Lower Iberia; Lower St. Martin; Lower St. Mary; Lower Vermilion; Upper St. Mary; West Cameron</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>022023 022045 022099 022101 022113</value>
-<valueName>UGC</valueName>
-<value>LAZ055 LAZ073 LAZ074 LAZ154 LAZ252 LAZ253 LAZ254</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.NEW.KLCH.WI.Y.0005.240119T1622Z-240119T2100Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=LA1268851CE558.WindAdvisory.1268851DA010LA.LCHNPWLCH.90c4866ecb938b471acf92f57de210ec</id>
-<updated>2024-01-19T10:22:00-06:00</updated>
-<published>2024-01-19T10:22:00-06:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Wind Advisory issued January 19 at 10:22AM CST until January 19 at 3:00PM CST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=LA1268851CE558.WindAdvisory.1268851DA010LA.LCHNPWLCH.90c4866ecb938b471acf92f57de210ec"/>
-<summary>...WIND ADVISORY IN EFFECT UNTIL 3 PM CST THIS AFTERNOON... ...HARD FREEZE WARNING REMAINS IN EFFECT FROM MIDNIGHT TONIGHT TO 9 AM CST SATURDAY... * WHAT...For the Wind Advisory, north winds 15 to 25 mph with gusts up to 30 mph. For the Hard Freeze Warning, sub-freezing temperatures as low as 25 degrees expected.</summary>
-<cap:event>Wind Advisory</cap:event>
-<cap:effective>2024-01-19T10:22:00-06:00</cap:effective>
-<cap:expires>2024-01-19T15:00:00-06:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Upper Iberia; Upper Vermilion</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>022045 022113</value>
-<valueName>UGC</valueName>
-<value>LAZ152 LAZ153</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.NEW.KLCH.WI.Y.0005.240119T1622Z-240119T2100Z/
-/O.CON.KLCH.HZ.W.0003.240120T0600Z-240120T1500Z/</value>
-</cap:parameter>
-</entry>
-<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=LA1268851CE558.HardFreezeWarning.1268852BF7F0LA.LCHNPWLCH.85568d5bbd77ea664110b5c011c82878</id>
 <updated>2024-01-19T10:22:00-06:00</updated>
 <published>2024-01-19T10:22:00-06:00</published>
@@ -5890,102 +5884,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=LA1268851BE130.WindChillAdvisory.1268852C6D20LA.JANWSWJAN.c6869cfb43e5aa7407319e7e6bab0682</id>
-<updated>2024-01-19T03:56:00-06:00</updated>
-<published>2024-01-19T03:56:00-06:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Wind Chill Advisory issued January 19 at 3:56AM CST until January 20 at 12:00PM CST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=LA1268851BE130.WindChillAdvisory.1268852C6D20LA.JANWSWJAN.c6869cfb43e5aa7407319e7e6bab0682"/>
-<summary>...WIND CHILL ADVISORY IN EFFECT FROM 10 PM THIS EVENING TO NOON CST SATURDAY... * WHAT...Very low wind chills expected. Wind chills as low as zero. * WHERE...Portions of southeast Arkansas, northeast Louisiana and central, east central, north central, northeast,</summary>
-<cap:event>Wind Chill Advisory</cap:event>
-<cap:effective>2024-01-19T03:56:00-06:00</cap:effective>
-<cap:expires>2024-01-20T12:00:00-06:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Catahoula; Concordia; East Carroll; Franklin; Madison; Morehouse; Richland; Tensas; West Carroll</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>022025 022029 022035 022041 022065 022067 022083 022107 022123</value>
-<valueName>UGC</valueName>
-<value>LAZ007 LAZ008 LAZ009 LAZ015 LAZ016 LAZ023 LAZ024 LAZ025 LAZ026</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.NEW.KJAN.WC.Y.0002.240120T0400Z-240120T1800Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=LA1268851BE004.HardFreezeWarning.1268853BAF60LA.JANNPWJAN.aa3d7c5e41e81cbb1f30228f84bce347</id>
-<updated>2024-01-19T03:53:00-06:00</updated>
-<published>2024-01-19T03:53:00-06:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Hard Freeze Warning issued January 19 at 3:53AM CST until January 21 at 12:00PM CST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=LA1268851BE004.HardFreezeWarning.1268853BAF60LA.JANNPWJAN.aa3d7c5e41e81cbb1f30228f84bce347"/>
-<summary>...HARD FREEZE WARNING REMAINS IN EFFECT FROM 6 PM THIS EVENING TO NOON CST SUNDAY... * WHAT...Sub-freezing temperatures as low as 10 degrees expected. * WHERE...Far southeast Arkansas, far northeast Louisiana, and portions of northern and central Mississippi.</summary>
-<cap:event>Hard Freeze Warning</cap:event>
-<cap:effective>2024-01-19T03:53:00-06:00</cap:effective>
-<cap:expires>2024-01-21T12:00:00-06:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>East Carroll; Morehouse; West Carroll</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>022035 022067 022123</value>
-<valueName>UGC</valueName>
-<value>LAZ007 LAZ008 LAZ009</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KJAN.HZ.W.0002.240120T0000Z-240121T1800Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=LA1268851BE004.HardFreezeWarning.1268853BAF60LA.JANNPWJAN.0ecae1fe486bd24dc3c7a8758f65243c</id>
-<updated>2024-01-19T03:53:00-06:00</updated>
-<published>2024-01-19T03:53:00-06:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Hard Freeze Warning issued January 19 at 3:53AM CST until January 21 at 12:00PM CST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=LA1268851BE004.HardFreezeWarning.1268853BAF60LA.JANNPWJAN.0ecae1fe486bd24dc3c7a8758f65243c"/>
-<summary>...HARD FREEZE WARNING IN EFFECT FROM 6 PM THIS EVENING TO NOON CST SUNDAY... * WHAT...Sub-freezing temperatures as low as 14 expected. * WHERE...Portions of northeast Louisiana and central and south Mississippi. * WHEN...From 6 PM this evening through Sunday morning.</summary>
-<cap:event>Hard Freeze Warning</cap:event>
-<cap:effective>2024-01-19T03:53:00-06:00</cap:effective>
-<cap:expires>2024-01-21T12:00:00-06:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Catahoula; Concordia; Franklin; Madison; Richland; Tensas</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>022025 022029 022041 022065 022083 022107</value>
-<valueName>UGC</valueName>
-<value>LAZ015 LAZ016 LAZ023 LAZ024 LAZ025 LAZ026</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.EXA.KJAN.HZ.W.0002.240120T0000Z-240121T1800Z/</value>
-</cap:parameter>
-</entry>
-<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=LA1268851BCF38.WindChillAdvisory.1268852BF7F0LA.LCHWSWLCH.fb2cc7f4eb69314782eba47d0e0fb74b</id>
 <updated>2024-01-19T03:10:00-06:00</updated>
 <published>2024-01-19T03:10:00-06:00</published>
@@ -6112,6 +6010,38 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value>/O.CON.KBOX.CF.S.0001.240120T0800Z-240120T1400Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=MD1268851D883C.WinterWeatherAdvisory.1268852A2330MD.AKQWSWAKQ.52aa48d720a545a4fe064cd0f663f640</id>
+<updated>2024-01-19T15:39:00-05:00</updated>
+<published>2024-01-19T15:39:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Winter Weather Advisory issued January 19 at 3:39PM EST until January 19 at 10:00PM EST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MD1268851D883C.WinterWeatherAdvisory.1268852A2330MD.AKQWSWAKQ.52aa48d720a545a4fe064cd0f663f640"/>
+<summary>...WINTER WEATHER ADVISORY REMAINS IN EFFECT UNTIL 10 PM EST THIS EVENING... * WHAT...Snow expected. Additional snow accumulation of up to one inch, storm total snow amounts will average 1 to 3 inches. * WHERE...Dorchester and Wicomico County. * WHEN...Until 10 PM EST this evening.</summary>
+<cap:event>Winter Weather Advisory</cap:event>
+<cap:effective>2024-01-19T15:39:00-05:00</cap:effective>
+<cap:expires>2024-01-19T22:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Dorchester; Wicomico</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>024019 024045</value>
+<valueName>UGC</valueName>
+<value>MDZ021 MDZ022</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KAKQ.WW.Y.0003.000000T0000Z-240120T0300Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -6503,35 +6433,99 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=MD1268851C74D8.WinterWeatherAdvisory.1268852A2330MD.AKQWSWAKQ.52aa48d720a545a4fe064cd0f663f640</id>
-<updated>2024-01-19T08:34:00-05:00</updated>
-<published>2024-01-19T08:34:00-05:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=MI1268851D86AC.WinterStormWarning.1268852C6D20MI.IWXWSWIWX.94c0de89f6f84e3902e6b480da103c26</id>
+<updated>2024-01-19T15:35:00-05:00</updated>
+<published>2024-01-19T15:35:00-05:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Winter Weather Advisory issued January 19 at 8:34AM EST until January 19 at 10:00PM EST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MD1268851C74D8.WinterWeatherAdvisory.1268852A2330MD.AKQWSWAKQ.52aa48d720a545a4fe064cd0f663f640"/>
-<summary>...WINTER WEATHER ADVISORY REMAINS IN EFFECT UNTIL 10 PM EST THIS EVENING... * WHAT...Snow expected. Total snow accumulations of up to one inch, with up to 2 inches possible. * WHERE...Dorchester and Wicomico County. * WHEN...Until 10 PM EST this evening.</summary>
+<title>Winter Storm Warning issued January 19 at 3:35PM EST until January 20 at 1:00PM EST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MI1268851D86AC.WinterStormWarning.1268852C6D20MI.IWXWSWIWX.94c0de89f6f84e3902e6b480da103c26"/>
+<summary>...WINTER STORM WARNING NOW IN EFFECT UNTIL 1 PM EST SATURDAY... * WHAT...Heavy lake effect snow. Additional snow accumulations of 3 to 5 inches. Near whiteout conditions with less than a half mile visibility expected at times. * WHERE...In Indiana, Eastern St. Joseph IN County. In Michigan, Northern Berrien County.</summary>
+<cap:event>Winter Storm Warning</cap:event>
+<cap:effective>2024-01-19T15:35:00-05:00</cap:effective>
+<cap:expires>2024-01-20T13:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Northern Berrien</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>026021</value>
+<valueName>UGC</valueName>
+<value>MIZ177</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.EXT.KIWX.WS.W.0002.000000T0000Z-240120T1800Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=MI1268851D86AC.WinterStormWarning.1268852C6D20MI.IWXWSWIWX.fbc8356fd7902a372ef1957f7dd01026</id>
+<updated>2024-01-19T15:35:00-05:00</updated>
+<published>2024-01-19T15:35:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Winter Storm Warning issued January 19 at 3:35PM EST until January 20 at 1:00PM EST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MI1268851D86AC.WinterStormWarning.1268852C6D20MI.IWXWSWIWX.fbc8356fd7902a372ef1957f7dd01026"/>
+<summary>...WINTER STORM WARNING NOW IN EFFECT UNTIL 1 PM EST /NOON CST/ SATURDAY... * WHAT...Heavy lake effect snow. Additional snow accumulations of 2 to 8 inches. Whiteout conditions with near zero visibility expected at times due to snow and potentially blowing snow. * WHERE...In Indiana, Northern La Porte, Southern La Porte and</summary>
+<cap:event>Winter Storm Warning</cap:event>
+<cap:effective>2024-01-19T15:35:00-05:00</cap:effective>
+<cap:expires>2024-01-20T13:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Southern Berrien</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>026021</value>
+<valueName>UGC</valueName>
+<value>MIZ277</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.EXT.KIWX.WS.W.0002.000000T0000Z-240120T1800Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=MI1268851D86AC.WinterWeatherAdvisory.126885396570MI.IWXWSWIWX.962d9671297446b7fb7c22310c501da8</id>
+<updated>2024-01-19T15:35:00-05:00</updated>
+<published>2024-01-19T15:35:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Winter Weather Advisory issued January 19 at 3:35PM EST until January 20 at 10:00PM EST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MI1268851D86AC.WinterWeatherAdvisory.126885396570MI.IWXWSWIWX.962d9671297446b7fb7c22310c501da8"/>
+<summary>...WINTER WEATHER ADVISORY IN EFFECT FROM 7 PM THIS EVENING TO 10 PM EST SATURDAY... * WHAT...Lake effect snow expected. Total snow accumulations of 2 to 4 inches. Lowered visibility to less than a mile will be possible in the heavier snow. * WHERE...In Indiana, Elkhart County. In Michigan, Cass MI</summary>
 <cap:event>Winter Weather Advisory</cap:event>
-<cap:effective>2024-01-19T08:34:00-05:00</cap:effective>
-<cap:expires>2024-01-19T22:00:00-05:00</cap:expires>
+<cap:effective>2024-01-19T15:35:00-05:00</cap:effective>
+<cap:expires>2024-01-20T22:00:00-05:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
 <cap:category>Met</cap:category>
 <cap:urgency>Expected</cap:urgency>
 <cap:severity>Minor</cap:severity>
 <cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Dorchester; Wicomico</cap:areaDesc>
+<cap:areaDesc>Cass</cap:areaDesc>
 <cap:polygon></cap:polygon>
 <cap:geocode>
 <valueName>FIPS6</valueName>
-<value>024019 024045</value>
+<value>026027</value>
 <valueName>UGC</valueName>
-<value>MDZ021 MDZ022</value>
+<value>MIZ078</value>
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
-<value>/O.CON.KAKQ.WW.Y.0003.000000T0000Z-240120T0300Z/</value>
+<value>/O.EXB.KIWX.WW.Y.0005.240120T0000Z-240121T0300Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -6759,102 +6753,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=MI1268851D1A78.WinterStormWarning.1268852B82C0MI.IWXWSWIWX.94c0de89f6f84e3902e6b480da103c26</id>
-<updated>2024-01-19T12:58:00-05:00</updated>
-<published>2024-01-19T12:58:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Winter Storm Warning issued January 19 at 12:58PM EST until January 20 at 7:00AM EST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MI1268851D1A78.WinterStormWarning.1268852B82C0MI.IWXWSWIWX.94c0de89f6f84e3902e6b480da103c26"/>
-<summary>...WINTER STORM WARNING REMAINS IN EFFECT UNTIL 7 AM EST SATURDAY... * WHAT...Heavy lake effect snow. Additional snow accumulations of 3 to 5 inches. Near whiteout conditions with less than a half mile visibility expected at times. * WHERE...In Indiana, Eastern St. Joseph IN County. In Michigan,</summary>
-<cap:event>Winter Storm Warning</cap:event>
-<cap:effective>2024-01-19T12:58:00-05:00</cap:effective>
-<cap:expires>2024-01-20T07:00:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Northern Berrien</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>026021</value>
-<valueName>UGC</valueName>
-<value>MIZ177</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KIWX.WS.W.0002.000000T0000Z-240120T1200Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=MI1268851D1A78.WinterStormWarning.1268852B82C0MI.IWXWSWIWX.fbc8356fd7902a372ef1957f7dd01026</id>
-<updated>2024-01-19T12:58:00-05:00</updated>
-<published>2024-01-19T12:58:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Winter Storm Warning issued January 19 at 12:58PM EST until January 20 at 7:00AM EST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MI1268851D1A78.WinterStormWarning.1268852B82C0MI.IWXWSWIWX.fbc8356fd7902a372ef1957f7dd01026"/>
-<summary>...WINTER STORM WARNING REMAINS IN EFFECT UNTIL 7 AM EST /6 AM CST/ SATURDAY... * WHAT...Heavy lake effect snow. Additional snow accumulations of 2 to 9 inches. Whiteout conditions with near zero visibility expected at times. * WHERE...In Indiana, Northern La Porte, Southern La Porte and</summary>
-<cap:event>Winter Storm Warning</cap:event>
-<cap:effective>2024-01-19T12:58:00-05:00</cap:effective>
-<cap:expires>2024-01-20T07:00:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Southern Berrien</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>026021</value>
-<valueName>UGC</valueName>
-<value>MIZ277</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KIWX.WS.W.0002.000000T0000Z-240120T1200Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=MI1268851D1820.WinterWeatherAdvisory.1268851DA010MI.DTXWSWDTX.79fa2b1d2f46e5489c68afd9db896f8b</id>
-<updated>2024-01-19T12:52:00-05:00</updated>
-<published>2024-01-19T12:52:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Winter Weather Advisory issued January 19 at 12:52PM EST until January 19 at 4:00PM EST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MI1268851D1820.WinterWeatherAdvisory.1268851DA010MI.DTXWSWDTX.79fa2b1d2f46e5489c68afd9db896f8b"/>
-<summary>...WINTER WEATHER ADVISORY REMAINS IN EFFECT UNTIL 4 PM EST THIS AFTERNOON... * WHAT...Snow showers. Additional snow accumulations of up to one inch. * WHERE...Huron, Tuscola, Sanilac and St. Clair Counties. * WHEN...Until 4 PM EST this afternoon.</summary>
-<cap:event>Winter Weather Advisory</cap:event>
-<cap:effective>2024-01-19T12:52:00-05:00</cap:effective>
-<cap:expires>2024-01-19T16:00:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Huron; Sanilac; St. Clair; Tuscola</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>026063 026147 026151 026157</value>
-<valueName>UGC</valueName>
-<value>MIZ049 MIZ054 MIZ055 MIZ063</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KDTX.WW.Y.0003.000000T0000Z-240119T2100Z/</value>
-</cap:parameter>
-</entry>
-<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=MI1268851C1C2C.HydrologicOutlook.1268852B618CMI.IWXESFIWX.ee9be6036d944ffb703cff1523abfb4c</id>
 <updated>2024-01-19T06:07:00-05:00</updated>
 <published>2024-01-19T06:07:00-05:00</published>
@@ -6884,6 +6782,38 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value></value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=MN1268851D8D50.WindChillAdvisory.1268852C6D20MN.FSDWSWFSD.ee994f5006d794a9f690366675e58aae</id>
+<updated>2024-01-19T14:52:00-06:00</updated>
+<published>2024-01-19T14:52:00-06:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Wind Chill Advisory issued January 19 at 2:52PM CST until January 20 at 12:00PM CST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MN1268851D8D50.WindChillAdvisory.1268852C6D20MN.FSDWSWFSD.ee994f5006d794a9f690366675e58aae"/>
+<summary>...WIND CHILL ADVISORY NOW IN EFFECT FROM 9 PM THIS EVENING TO NOON CST SATURDAY... * WHAT...Very cold wind chills expected. Wind chills as low as 35 below zero. * WHERE...Portions of northwest and west central Iowa, southwest Minnesota, northeast Nebraska and central, east central, south</summary>
+<cap:event>Wind Chill Advisory</cap:event>
+<cap:effective>2024-01-19T14:52:00-06:00</cap:effective>
+<cap:expires>2024-01-20T12:00:00-06:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Cottonwood; Jackson; Lincoln; Lyon; Murray; Nobles; Pipestone; Rock</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>027033 027063 027081 027083 027101 027105 027117 027133</value>
+<valueName>UGC</valueName>
+<value>MNZ071 MNZ072 MNZ080 MNZ081 MNZ089 MNZ090 MNZ097 MNZ098</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.EXT.KFSD.WC.Y.0003.240120T0300Z-240120T1800Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -7015,17 +6945,50 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=MN1268851D1500.WindChillAdvisory.1268852C6D20MN.FSDWSWFSD.ee994f5006d794a9f690366675e58aae</id>
-<updated>2024-01-19T11:44:00-06:00</updated>
-<published>2024-01-19T11:44:00-06:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=MO1268851D8F44.WindChillAdvisory.12688529AE00MO.EAXWSWEAX.8c271f8ee0ee62be349aa1538d4a6c95</id>
+<updated>2024-01-19T14:57:00-06:00</updated>
+<published>2024-01-19T14:57:00-06:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Wind Chill Advisory issued January 19 at 11:44AM CST until January 20 at 12:00PM CST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MN1268851D1500.WindChillAdvisory.1268852C6D20MN.FSDWSWFSD.ee994f5006d794a9f690366675e58aae"/>
-<summary>...WIND CHILL ADVISORY REMAINS IN EFFECT FROM 6 PM THIS EVENING TO NOON CST SATURDAY... * WHAT...Very cold wind chills expected. Wind chills as low as 35 below zero. * WHERE...Portions of northwest and west central Iowa, southwest Minnesota, northeast Nebraska and central, east central, south</summary>
+<title>Wind Chill Advisory issued January 19 at 2:57PM CST until January 19 at 6:00PM CST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MO1268851D8F44.WindChillAdvisory.12688529AE00MO.EAXWSWEAX.8c271f8ee0ee62be349aa1538d4a6c95"/>
+<summary>...WIND CHILL ADVISORY REMAINS IN EFFECT UNTIL 6 PM CST THIS EVENING... ...WIND CHILL WARNING REMAINS IN EFFECT FROM 6 PM THIS EVENING TO NOON CST SATURDAY... * WHAT...For the Wind Chill Advisory, very cold wind chills. Wind chills as low as 15 below zero. For the Wind Chill</summary>
 <cap:event>Wind Chill Advisory</cap:event>
-<cap:effective>2024-01-19T11:44:00-06:00</cap:effective>
+<cap:effective>2024-01-19T14:57:00-06:00</cap:effective>
+<cap:expires>2024-01-19T18:00:00-06:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Adair; Andrew; Atchison; Daviess; De Kalb; Gentry; Grundy; Harrison; Holt; Linn; Macon; Mercer; Nodaway; Putnam; Schuyler; Sullivan; Worth</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>029001 029003 029005 029061 029063 029075 029079 029081 029087 029115 029121 029129 029147 029171 029197 029211 029227</value>
+<valueName>UGC</valueName>
+<value>MOZ001 MOZ002 MOZ003 MOZ004 MOZ005 MOZ006 MOZ007 MOZ008 MOZ011 MOZ012 MOZ013 MOZ014 MOZ015 MOZ016 MOZ017 MOZ024 MOZ025</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KEAX.WC.W.0002.240120T0000Z-240120T1800Z/
+/O.CON.KEAX.WC.Y.0002.000000T0000Z-240120T0000Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=MO1268851D8F44.WindChillAdvisory.1268852C6D20MO.EAXWSWEAX.dc840b7962567751a59d15a9691ea9ae</id>
+<updated>2024-01-19T14:57:00-06:00</updated>
+<published>2024-01-19T14:57:00-06:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Wind Chill Advisory issued January 19 at 2:57PM CST until January 20 at 12:00PM CST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MO1268851D8F44.WindChillAdvisory.1268852C6D20MO.EAXWSWEAX.dc840b7962567751a59d15a9691ea9ae"/>
+<summary>...WIND CHILL ADVISORY REMAINS IN EFFECT UNTIL NOON CST SATURDAY... * WHAT...Very cold wind chills. Wind chills as low as 25 below zero. * WHERE...Portions of east central and northeast Kansas and central, north central, northwest and west central Missouri.</summary>
+<cap:event>Wind Chill Advisory</cap:event>
+<cap:effective>2024-01-19T14:57:00-06:00</cap:effective>
 <cap:expires>2024-01-20T12:00:00-06:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
@@ -7033,17 +6996,114 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:urgency>Expected</cap:urgency>
 <cap:severity>Minor</cap:severity>
 <cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Cottonwood; Jackson; Lincoln; Lyon; Murray; Nobles; Pipestone; Rock</cap:areaDesc>
+<cap:areaDesc>Bates; Buchanan; Caldwell; Carroll; Cass; Chariton; Clay; Clinton; Cooper; Henry; Howard; Jackson; Johnson; Lafayette; Livingston; Pettis; Platte; Randolph; Ray; Saline</cap:areaDesc>
 <cap:polygon></cap:polygon>
 <cap:geocode>
 <valueName>FIPS6</valueName>
-<value>027033 027063 027081 027083 027101 027105 027117 027133</value>
+<value>029013 029021 029025 029033 029037 029041 029047 029049 029053 029083 029089 029095 029101 029107 029117 029159 029165 029175 029177 029195</value>
 <valueName>UGC</valueName>
-<value>MNZ071 MNZ072 MNZ080 MNZ081 MNZ089 MNZ090 MNZ097 MNZ098</value>
+<value>MOZ020 MOZ021 MOZ022 MOZ023 MOZ028 MOZ029 MOZ030 MOZ031 MOZ032 MOZ033 MOZ037 MOZ038 MOZ039 MOZ040 MOZ043 MOZ044 MOZ045 MOZ046 MOZ053 MOZ054</value>
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
-<value>/O.CON.KFSD.WC.Y.0003.240120T0000Z-240120T1800Z/</value>
+<value>/O.CON.KEAX.WC.Y.0002.000000T0000Z-240120T1800Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=MO1268851D8F44.WindChillWarning.1268852C6D20MO.EAXWSWEAX.f936d71b5801861bc205356aee4f6de0</id>
+<updated>2024-01-19T14:57:00-06:00</updated>
+<published>2024-01-19T14:57:00-06:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Wind Chill Warning issued January 19 at 2:57PM CST until January 20 at 12:00PM CST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MO1268851D8F44.WindChillWarning.1268852C6D20MO.EAXWSWEAX.f936d71b5801861bc205356aee4f6de0"/>
+<summary>...WIND CHILL ADVISORY REMAINS IN EFFECT UNTIL 6 PM CST THIS EVENING... ...WIND CHILL WARNING REMAINS IN EFFECT FROM 6 PM THIS EVENING TO NOON CST SATURDAY... * WHAT...For the Wind Chill Advisory, very cold wind chills. Wind chills as low as 15 below zero. For the Wind Chill</summary>
+<cap:event>Wind Chill Warning</cap:event>
+<cap:effective>2024-01-19T14:57:00-06:00</cap:effective>
+<cap:expires>2024-01-20T12:00:00-06:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Adair; Andrew; Atchison; Daviess; De Kalb; Gentry; Grundy; Harrison; Holt; Linn; Macon; Mercer; Nodaway; Putnam; Schuyler; Sullivan; Worth</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>029001 029003 029005 029061 029063 029075 029079 029081 029087 029115 029121 029129 029147 029171 029197 029211 029227</value>
+<valueName>UGC</valueName>
+<value>MOZ001 MOZ002 MOZ003 MOZ004 MOZ005 MOZ006 MOZ007 MOZ008 MOZ011 MOZ012 MOZ013 MOZ014 MOZ015 MOZ016 MOZ017 MOZ024 MOZ025</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KEAX.WC.W.0002.240120T0000Z-240120T1800Z/
+/O.CON.KEAX.WC.Y.0002.000000T0000Z-240120T0000Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=MO1268851D8DB4.WindChillAdvisory.1268852C6D20MO.DVNWSWDVN.0633c38d932e9d1f2143be0ee3a7ed78</id>
+<updated>2024-01-19T14:53:00-06:00</updated>
+<published>2024-01-19T14:53:00-06:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Wind Chill Advisory issued January 19 at 2:53PM CST until January 20 at 12:00PM CST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MO1268851D8DB4.WindChillAdvisory.1268852C6D20MO.DVNWSWDVN.0633c38d932e9d1f2143be0ee3a7ed78"/>
+<summary>...WIND CHILL ADVISORY REMAINS IN EFFECT FROM 6 PM THIS EVENING TO NOON CST SATURDAY... * WHAT...Very cold wind chills expected. Wind chills as low as 30 below zero. * WHERE...Portions of northwest and west central Illinois, east central, northeast and southeast Iowa and northeast Missouri.</summary>
+<cap:event>Wind Chill Advisory</cap:event>
+<cap:effective>2024-01-19T14:53:00-06:00</cap:effective>
+<cap:expires>2024-01-20T12:00:00-06:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Clark; Scotland</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>029045 029199</value>
+<valueName>UGC</valueName>
+<value>MOZ009 MOZ010</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KDVN.WC.Y.0004.240120T0000Z-240120T1800Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=MO1268851D8968.WindChillAdvisory.1268852C6D20MO.SGFWSWSGF.8ff4cadc65f08d98ad5f11579bb40b13</id>
+<updated>2024-01-19T14:42:00-06:00</updated>
+<published>2024-01-19T14:42:00-06:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Wind Chill Advisory issued January 19 at 2:42PM CST until January 20 at 12:00PM CST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MO1268851D8968.WindChillAdvisory.1268852C6D20MO.SGFWSWSGF.8ff4cadc65f08d98ad5f11579bb40b13"/>
+<summary>...WIND CHILL ADVISORY REMAINS IN EFFECT UNTIL NOON CST SATURDAY... * WHAT...Very cold wind chills. Wind chills as low as 15 below zero. * WHERE...Portions of southeast Kansas and central, east central, south central, southwest, and west central Missouri. * WHEN...Until noon CST Saturday. * IMPACTS...Exposed skin may become quickly frostbitten or frozen.</summary>
+<cap:event>Wind Chill Advisory</cap:event>
+<cap:effective>2024-01-19T14:42:00-06:00</cap:effective>
+<cap:expires>2024-01-20T12:00:00-06:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Barry; Barton; Benton; Camden; Cedar; Christian; Dade; Dallas; Dent; Douglas; Greene; Hickory; Howell; Jasper; Laclede; Lawrence; Maries; McDonald; Miller; Morgan; Newton; Oregon; Ozark; Phelps; Polk; Pulaski; Shannon; St. Clair; Stone; Taney; Texas; Vernon; Webster; Wright</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>029009 029011 029015 029029 029039 029043 029057 029059 029065 029067 029077 029085 029091 029097 029105 029109 029119 029125 029131 029141 029145 029149 029153 029161 029167 029169 029185 029203 029209 029213 029215 029217 029225 029229</value>
+<valueName>UGC</valueName>
+<value>MOZ055 MOZ056 MOZ057 MOZ058 MOZ066 MOZ067 MOZ068 MOZ069 MOZ070 MOZ071 MOZ077 MOZ078 MOZ079 MOZ080 MOZ081 MOZ082 MOZ083 MOZ088 MOZ089 MOZ090 MOZ091 MOZ092 MOZ093 MOZ094 MOZ095 MOZ096 MOZ097 MOZ098 MOZ101 MOZ102 MOZ103 MOZ104 MOZ105 MOZ106</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KSGF.WC.Y.0002.000000T0000Z-240120T1800Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -7109,39 +7169,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <valueName>VTEC</valueName>
 <value>/O.EXP.KPAH.WW.Y.0002.000000T0000Z-240119T1800Z/
 /O.CON.KPAH.WC.Y.0003.240120T0300Z-240120T1500Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=MO1268851D19B0.WindChillAdvisory.1268852C6D20MO.DVNWSWDVN.0633c38d932e9d1f2143be0ee3a7ed78</id>
-<updated>2024-01-19T11:56:00-06:00</updated>
-<published>2024-01-19T11:56:00-06:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Wind Chill Advisory issued January 19 at 11:56AM CST until January 20 at 12:00PM CST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MO1268851D19B0.WindChillAdvisory.1268852C6D20MO.DVNWSWDVN.0633c38d932e9d1f2143be0ee3a7ed78"/>
-<summary>...WIND CHILL ADVISORY REMAINS IN EFFECT FROM 6 PM THIS EVENING TO NOON CST SATURDAY... ...WIND CHILL ADVISORY WILL EXPIRE AT NOON CST TODAY... * WHAT...Very cold wind chills expected. Wind chills as low as 30 below zero. * WHERE...Portions of northwest and west central Illinois, east</summary>
-<cap:event>Wind Chill Advisory</cap:event>
-<cap:effective>2024-01-19T11:56:00-06:00</cap:effective>
-<cap:expires>2024-01-20T12:00:00-06:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Clark; Scotland</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>029045 029199</value>
-<valueName>UGC</valueName>
-<value>MOZ009 MOZ010</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.EXP.KDVN.WC.Y.0003.000000T0000Z-240119T1800Z/
-/O.CON.KDVN.WC.Y.0004.240120T0000Z-240120T1800Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -7275,136 +7302,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=MO1268851BBAE8.WindChillAdvisory.12688529AE00MO.EAXWSWEAX.8c271f8ee0ee62be349aa1538d4a6c95</id>
-<updated>2024-01-19T02:58:00-06:00</updated>
-<published>2024-01-19T02:58:00-06:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Wind Chill Advisory issued January 19 at 2:58AM CST until January 19 at 6:00PM CST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MO1268851BBAE8.WindChillAdvisory.12688529AE00MO.EAXWSWEAX.8c271f8ee0ee62be349aa1538d4a6c95"/>
-<summary>...WIND CHILL ADVISORY REMAINS IN EFFECT UNTIL 6 PM CST THIS EVENING... ...WIND CHILL WARNING REMAINS IN EFFECT FROM 6 PM THIS EVENING TO NOON CST SATURDAY... * WHAT...For the Wind Chill Advisory, very cold wind chills expected. Wind chills as low as 25 below zero. For the Wind</summary>
-<cap:event>Wind Chill Advisory</cap:event>
-<cap:effective>2024-01-19T02:58:00-06:00</cap:effective>
-<cap:expires>2024-01-19T18:00:00-06:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Adair; Andrew; Atchison; Daviess; De Kalb; Gentry; Grundy; Harrison; Holt; Linn; Macon; Mercer; Nodaway; Putnam; Schuyler; Sullivan; Worth</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>029001 029003 029005 029061 029063 029075 029079 029081 029087 029115 029121 029129 029147 029171 029197 029211 029227</value>
-<valueName>UGC</valueName>
-<value>MOZ001 MOZ002 MOZ003 MOZ004 MOZ005 MOZ006 MOZ007 MOZ008 MOZ011 MOZ012 MOZ013 MOZ014 MOZ015 MOZ016 MOZ017 MOZ024 MOZ025</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KEAX.WC.W.0002.240120T0000Z-240120T1800Z/
-/O.CON.KEAX.WC.Y.0002.000000T0000Z-240120T0000Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=MO1268851BBAE8.WindChillAdvisory.1268852C6D20MO.EAXWSWEAX.dc840b7962567751a59d15a9691ea9ae</id>
-<updated>2024-01-19T02:58:00-06:00</updated>
-<published>2024-01-19T02:58:00-06:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Wind Chill Advisory issued January 19 at 2:58AM CST until January 20 at 12:00PM CST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MO1268851BBAE8.WindChillAdvisory.1268852C6D20MO.EAXWSWEAX.dc840b7962567751a59d15a9691ea9ae"/>
-<summary>...WIND CHILL ADVISORY REMAINS IN EFFECT UNTIL NOON CST SATURDAY... * WHAT...Very cold wind chills expected. Wind chills as low as 25 below zero. * WHERE...Portions of east central and northeast Kansas and central, north central, northwest and west central Missouri.</summary>
-<cap:event>Wind Chill Advisory</cap:event>
-<cap:effective>2024-01-19T02:58:00-06:00</cap:effective>
-<cap:expires>2024-01-20T12:00:00-06:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Bates; Buchanan; Caldwell; Carroll; Cass; Chariton; Clay; Clinton; Cooper; Henry; Howard; Jackson; Johnson; Lafayette; Livingston; Pettis; Platte; Randolph; Ray; Saline</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>029013 029021 029025 029033 029037 029041 029047 029049 029053 029083 029089 029095 029101 029107 029117 029159 029165 029175 029177 029195</value>
-<valueName>UGC</valueName>
-<value>MOZ020 MOZ021 MOZ022 MOZ023 MOZ028 MOZ029 MOZ030 MOZ031 MOZ032 MOZ033 MOZ037 MOZ038 MOZ039 MOZ040 MOZ043 MOZ044 MOZ045 MOZ046 MOZ053 MOZ054</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KEAX.WC.Y.0002.000000T0000Z-240120T1800Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=MO1268851BBAE8.WindChillWarning.1268852C6D20MO.EAXWSWEAX.f936d71b5801861bc205356aee4f6de0</id>
-<updated>2024-01-19T02:58:00-06:00</updated>
-<published>2024-01-19T02:58:00-06:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Wind Chill Warning issued January 19 at 2:58AM CST until January 20 at 12:00PM CST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MO1268851BBAE8.WindChillWarning.1268852C6D20MO.EAXWSWEAX.f936d71b5801861bc205356aee4f6de0"/>
-<summary>...WIND CHILL ADVISORY REMAINS IN EFFECT UNTIL 6 PM CST THIS EVENING... ...WIND CHILL WARNING REMAINS IN EFFECT FROM 6 PM THIS EVENING TO NOON CST SATURDAY... * WHAT...For the Wind Chill Advisory, very cold wind chills expected. Wind chills as low as 25 below zero. For the Wind</summary>
-<cap:event>Wind Chill Warning</cap:event>
-<cap:effective>2024-01-19T02:58:00-06:00</cap:effective>
-<cap:expires>2024-01-20T12:00:00-06:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Adair; Andrew; Atchison; Daviess; De Kalb; Gentry; Grundy; Harrison; Holt; Linn; Macon; Mercer; Nodaway; Putnam; Schuyler; Sullivan; Worth</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>029001 029003 029005 029061 029063 029075 029079 029081 029087 029115 029121 029129 029147 029171 029197 029211 029227</value>
-<valueName>UGC</valueName>
-<value>MOZ001 MOZ002 MOZ003 MOZ004 MOZ005 MOZ006 MOZ007 MOZ008 MOZ011 MOZ012 MOZ013 MOZ014 MOZ015 MOZ016 MOZ017 MOZ024 MOZ025</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KEAX.WC.W.0002.240120T0000Z-240120T1800Z/
-/O.CON.KEAX.WC.Y.0002.000000T0000Z-240120T0000Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=MO1268851BB9BC.WindChillAdvisory.1268852C6D20MO.SGFWSWSGF.8ff4cadc65f08d98ad5f11579bb40b13</id>
-<updated>2024-01-19T02:55:00-06:00</updated>
-<published>2024-01-19T02:55:00-06:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Wind Chill Advisory issued January 19 at 2:55AM CST until January 20 at 12:00PM CST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MO1268851BB9BC.WindChillAdvisory.1268852C6D20MO.SGFWSWSGF.8ff4cadc65f08d98ad5f11579bb40b13"/>
-<summary>...WIND CHILL ADVISORY REMAINS IN EFFECT UNTIL NOON CST SATURDAY... * WHAT...Very cold wind chills. Wind chills as low as 15 below zero. * WHERE...Portions of southeast Kansas and central, east central, south central, southwest, and west central Missouri. * WHEN...Until noon CST Saturday. * IMPACTS...Exposed skin may become quickly frostbitten or frozen.</summary>
-<cap:event>Wind Chill Advisory</cap:event>
-<cap:effective>2024-01-19T02:55:00-06:00</cap:effective>
-<cap:expires>2024-01-20T12:00:00-06:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Barry; Barton; Benton; Camden; Cedar; Christian; Dade; Dallas; Dent; Douglas; Greene; Hickory; Howell; Jasper; Laclede; Lawrence; Maries; McDonald; Miller; Morgan; Newton; Oregon; Ozark; Phelps; Polk; Pulaski; Shannon; St. Clair; Stone; Taney; Texas; Vernon; Webster; Wright</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>029009 029011 029015 029029 029039 029043 029057 029059 029065 029067 029077 029085 029091 029097 029105 029109 029119 029125 029131 029141 029145 029149 029153 029161 029167 029169 029185 029203 029209 029213 029215 029217 029225 029229</value>
-<valueName>UGC</valueName>
-<value>MOZ055 MOZ056 MOZ057 MOZ058 MOZ066 MOZ067 MOZ068 MOZ069 MOZ070 MOZ071 MOZ077 MOZ078 MOZ079 MOZ080 MOZ081 MOZ082 MOZ083 MOZ088 MOZ089 MOZ090 MOZ091 MOZ092 MOZ093 MOZ094 MOZ095 MOZ096 MOZ097 MOZ098 MOZ101 MOZ102 MOZ103 MOZ104 MOZ105 MOZ106</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KSGF.WC.Y.0002.000000T0000Z-240120T1800Z/</value>
-</cap:parameter>
-</entry>
-<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=MO1268851BB69C.WindChillAdvisory.1268852C4610MO.MEGWSWMEG.b7477f5aef1017e8ac85a5dc91367979</id>
 <updated>2024-01-19T02:47:00-06:00</updated>
 <published>2024-01-19T02:47:00-06:00</published>
@@ -7500,6 +7397,70 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <valueName>VTEC</valueName>
 <value>/O.CON.PGUM.SU.Y.0006.000000T0000Z-240121T2000Z/
 /O.CON.PGUM.RP.S.0002.000000T0000Z-240121T2000Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=MS1268851D8CEC.WindChillAdvisory.1268852C6D20MS.JANWSWJAN.5b292fb2f97417fa9464d28fdeb34321</id>
+<updated>2024-01-19T14:51:00-06:00</updated>
+<published>2024-01-19T14:51:00-06:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Wind Chill Advisory issued January 19 at 2:51PM CST until January 20 at 12:00PM CST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MS1268851D8CEC.WindChillAdvisory.1268852C6D20MS.JANWSWJAN.5b292fb2f97417fa9464d28fdeb34321"/>
+<summary>...WIND CHILL ADVISORY REMAINS IN EFFECT FROM 10 PM THIS EVENING TO NOON CST SATURDAY... * WHAT...Very low wind chills expected. Wind chills as low as zero. * WHERE...Portions of southeast Arkansas, northeast Louisiana, and central Mississippi.</summary>
+<cap:event>Wind Chill Advisory</cap:event>
+<cap:effective>2024-01-19T14:51:00-06:00</cap:effective>
+<cap:expires>2024-01-20T12:00:00-06:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Adams; Attala; Bolivar; Carroll; Choctaw; Claiborne; Clarke; Clay; Copiah; Covington; Forrest; Franklin; Grenada; Hinds; Holmes; Humphreys; Issaquena; Jasper; Jefferson; Jefferson Davis; Jones; Kemper; Lamar; Lauderdale; Lawrence; Leake; Leflore; Lincoln; Lowndes; Madison; Marion; Montgomery; Neshoba; Newton; Noxubee; Oktibbeha; Rankin; Scott; Sharkey; Simpson; Smith; Sunflower; Warren; Washington; Webster; Winston; Yazoo</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>028001 028007 028011 028015 028019 028021 028023 028025 028029 028031 028035 028037 028043 028049 028051 028053 028055 028061 028063 028065 028067 028069 028073 028075 028077 028079 028083 028085 028087 028089 028091 028097 028099 028101 028103 028105 028121 028123 028125 028127 028129 028133 028149 028151 028155 028159 028163</value>
+<valueName>UGC</valueName>
+<value>MSZ018 MSZ019 MSZ025 MSZ026 MSZ027 MSZ028 MSZ029 MSZ030 MSZ031 MSZ032 MSZ033 MSZ034 MSZ035 MSZ036 MSZ037 MSZ038 MSZ039 MSZ040 MSZ041 MSZ042 MSZ043 MSZ044 MSZ045 MSZ046 MSZ047 MSZ048 MSZ049 MSZ050 MSZ051 MSZ052 MSZ053 MSZ054 MSZ055 MSZ056 MSZ057 MSZ058 MSZ059 MSZ060 MSZ061 MSZ062 MSZ063 MSZ064 MSZ065 MSZ066 MSZ072 MSZ073 MSZ074</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KJAN.WC.Y.0002.240120T0400Z-240120T1800Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=MS1268851D8BC0.HardFreezeWarning.1268853BAF60MS.JANNPWJAN.6324ae4ae55b848b00935a07c279a485</id>
+<updated>2024-01-19T14:48:00-06:00</updated>
+<published>2024-01-19T14:48:00-06:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Hard Freeze Warning issued January 19 at 2:48PM CST until January 21 at 12:00PM CST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MS1268851D8BC0.HardFreezeWarning.1268853BAF60MS.JANNPWJAN.6324ae4ae55b848b00935a07c279a485"/>
+<summary>...HARD FREEZE WARNING REMAINS IN EFFECT FROM 6 PM THIS EVENING TO NOON CST SUNDAY... * WHAT...Sub-freezing temperatures as low as 10 degrees expected in northern locations along the Highway 82 corridor, and as low as near 15 to 20 degrees for the remainder of the area. High temperatures will struggle to reach or rise above freezing</summary>
+<cap:event>Hard Freeze Warning</cap:event>
+<cap:effective>2024-01-19T14:48:00-06:00</cap:effective>
+<cap:expires>2024-01-21T12:00:00-06:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Adams; Attala; Bolivar; Carroll; Choctaw; Claiborne; Clarke; Clay; Copiah; Covington; Forrest; Franklin; Grenada; Hinds; Holmes; Humphreys; Issaquena; Jasper; Jefferson; Jefferson Davis; Jones; Kemper; Lamar; Lauderdale; Lawrence; Leake; Leflore; Lincoln; Lowndes; Madison; Marion; Montgomery; Neshoba; Newton; Noxubee; Oktibbeha; Rankin; Scott; Sharkey; Simpson; Smith; Sunflower; Warren; Washington; Webster; Winston; Yazoo</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>028001 028007 028011 028015 028019 028021 028023 028025 028029 028031 028035 028037 028043 028049 028051 028053 028055 028061 028063 028065 028067 028069 028073 028075 028077 028079 028083 028085 028087 028089 028091 028097 028099 028101 028103 028105 028121 028123 028125 028127 028129 028133 028149 028151 028155 028159 028163</value>
+<valueName>UGC</valueName>
+<value>MSZ018 MSZ019 MSZ025 MSZ026 MSZ027 MSZ028 MSZ029 MSZ030 MSZ031 MSZ032 MSZ033 MSZ034 MSZ035 MSZ036 MSZ037 MSZ038 MSZ039 MSZ040 MSZ041 MSZ042 MSZ043 MSZ044 MSZ045 MSZ046 MSZ047 MSZ048 MSZ049 MSZ050 MSZ051 MSZ052 MSZ053 MSZ054 MSZ055 MSZ056 MSZ057 MSZ058 MSZ059 MSZ060 MSZ061 MSZ062 MSZ063 MSZ064 MSZ065 MSZ066 MSZ072 MSZ073 MSZ074</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KJAN.HZ.W.0002.240120T0000Z-240121T1800Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -7667,102 +7628,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=MS1268851BE130.WindChillAdvisory.1268852C6D20MS.JANWSWJAN.5b292fb2f97417fa9464d28fdeb34321</id>
-<updated>2024-01-19T03:56:00-06:00</updated>
-<published>2024-01-19T03:56:00-06:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Wind Chill Advisory issued January 19 at 3:56AM CST until January 20 at 12:00PM CST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MS1268851BE130.WindChillAdvisory.1268852C6D20MS.JANWSWJAN.5b292fb2f97417fa9464d28fdeb34321"/>
-<summary>...WIND CHILL ADVISORY IN EFFECT FROM 10 PM THIS EVENING TO NOON CST SATURDAY... * WHAT...Very low wind chills expected. Wind chills as low as zero. * WHERE...Portions of southeast Arkansas, northeast Louisiana and central, east central, north central, northeast,</summary>
-<cap:event>Wind Chill Advisory</cap:event>
-<cap:effective>2024-01-19T03:56:00-06:00</cap:effective>
-<cap:expires>2024-01-20T12:00:00-06:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Adams; Attala; Bolivar; Carroll; Choctaw; Claiborne; Clarke; Clay; Copiah; Covington; Forrest; Franklin; Grenada; Hinds; Holmes; Humphreys; Issaquena; Jasper; Jefferson; Jefferson Davis; Jones; Kemper; Lamar; Lauderdale; Lawrence; Leake; Leflore; Lincoln; Lowndes; Madison; Marion; Montgomery; Neshoba; Newton; Noxubee; Oktibbeha; Rankin; Scott; Sharkey; Simpson; Smith; Sunflower; Warren; Washington; Webster; Winston; Yazoo</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>028001 028007 028011 028015 028019 028021 028023 028025 028029 028031 028035 028037 028043 028049 028051 028053 028055 028061 028063 028065 028067 028069 028073 028075 028077 028079 028083 028085 028087 028089 028091 028097 028099 028101 028103 028105 028121 028123 028125 028127 028129 028133 028149 028151 028155 028159 028163</value>
-<valueName>UGC</valueName>
-<value>MSZ018 MSZ019 MSZ025 MSZ026 MSZ027 MSZ028 MSZ029 MSZ030 MSZ031 MSZ032 MSZ033 MSZ034 MSZ035 MSZ036 MSZ037 MSZ038 MSZ039 MSZ040 MSZ041 MSZ042 MSZ043 MSZ044 MSZ045 MSZ046 MSZ047 MSZ048 MSZ049 MSZ050 MSZ051 MSZ052 MSZ053 MSZ054 MSZ055 MSZ056 MSZ057 MSZ058 MSZ059 MSZ060 MSZ061 MSZ062 MSZ063 MSZ064 MSZ065 MSZ066 MSZ072 MSZ073 MSZ074</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.NEW.KJAN.WC.Y.0002.240120T0400Z-240120T1800Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=MS1268851BE004.HardFreezeWarning.1268853BAF60MS.JANNPWJAN.23343bf28baf42f0074481a02b4ca2d3</id>
-<updated>2024-01-19T03:53:00-06:00</updated>
-<published>2024-01-19T03:53:00-06:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Hard Freeze Warning issued January 19 at 3:53AM CST until January 21 at 12:00PM CST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MS1268851BE004.HardFreezeWarning.1268853BAF60MS.JANNPWJAN.23343bf28baf42f0074481a02b4ca2d3"/>
-<summary>...HARD FREEZE WARNING REMAINS IN EFFECT FROM 6 PM THIS EVENING TO NOON CST SUNDAY... * WHAT...Sub-freezing temperatures as low as 10 degrees expected. * WHERE...Far southeast Arkansas, far northeast Louisiana, and portions of northern and central Mississippi.</summary>
-<cap:event>Hard Freeze Warning</cap:event>
-<cap:effective>2024-01-19T03:53:00-06:00</cap:effective>
-<cap:expires>2024-01-21T12:00:00-06:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Attala; Bolivar; Carroll; Choctaw; Clay; Grenada; Holmes; Humphreys; Issaquena; Kemper; Leake; Leflore; Lowndes; Madison; Montgomery; Neshoba; Noxubee; Oktibbeha; Sharkey; Sunflower; Washington; Webster; Winston; Yazoo</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>028007 028011 028015 028019 028025 028043 028051 028053 028055 028069 028079 028083 028087 028089 028097 028099 028103 028105 028125 028133 028151 028155 028159 028163</value>
-<valueName>UGC</valueName>
-<value>MSZ018 MSZ019 MSZ025 MSZ026 MSZ027 MSZ028 MSZ029 MSZ030 MSZ031 MSZ032 MSZ033 MSZ034 MSZ035 MSZ036 MSZ037 MSZ038 MSZ039 MSZ040 MSZ041 MSZ042 MSZ043 MSZ044 MSZ045 MSZ046</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KJAN.HZ.W.0002.240120T0000Z-240121T1800Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=MS1268851BE004.HardFreezeWarning.1268853BAF60MS.JANNPWJAN.e2d7736f84884938c489aa6530c179ea</id>
-<updated>2024-01-19T03:53:00-06:00</updated>
-<published>2024-01-19T03:53:00-06:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Hard Freeze Warning issued January 19 at 3:53AM CST until January 21 at 12:00PM CST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MS1268851BE004.HardFreezeWarning.1268853BAF60MS.JANNPWJAN.e2d7736f84884938c489aa6530c179ea"/>
-<summary>...HARD FREEZE WARNING IN EFFECT FROM 6 PM THIS EVENING TO NOON CST SUNDAY... * WHAT...Sub-freezing temperatures as low as 14 expected. * WHERE...Portions of northeast Louisiana and central and south Mississippi. * WHEN...From 6 PM this evening through Sunday morning.</summary>
-<cap:event>Hard Freeze Warning</cap:event>
-<cap:effective>2024-01-19T03:53:00-06:00</cap:effective>
-<cap:expires>2024-01-21T12:00:00-06:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Adams; Claiborne; Clarke; Copiah; Covington; Forrest; Franklin; Hinds; Jasper; Jefferson; Jefferson Davis; Jones; Lamar; Lauderdale; Lawrence; Lincoln; Marion; Newton; Rankin; Scott; Simpson; Smith; Warren</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>028001 028021 028023 028029 028031 028035 028037 028049 028061 028063 028065 028067 028073 028075 028077 028085 028091 028101 028121 028123 028127 028129 028149</value>
-<valueName>UGC</valueName>
-<value>MSZ047 MSZ048 MSZ049 MSZ050 MSZ051 MSZ052 MSZ053 MSZ054 MSZ055 MSZ056 MSZ057 MSZ058 MSZ059 MSZ060 MSZ061 MSZ062 MSZ063 MSZ064 MSZ065 MSZ066 MSZ072 MSZ073 MSZ074</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.EXA.KJAN.HZ.W.0002.240120T0000Z-240121T1800Z/</value>
-</cap:parameter>
-</entry>
-<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=MS1268851BDDAC.WindChillAdvisory.1268852BF7F0MS.MOBWSWMOB.d5ef509ce7fa6cb4e5519a0b543f8533</id>
 <updated>2024-01-19T03:47:00-06:00</updated>
 <published>2024-01-19T03:47:00-06:00</published>
@@ -7824,6 +7689,70 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value>/O.CON.KMEG.WC.Y.0003.240120T0400Z-240120T1700Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=MT1268851D8E18.WindChillAdvisory.1268852C1F00MT.GGWWSWGGW.61a6110da9e3f0200bc917772e16953c</id>
+<updated>2024-01-19T13:54:00-07:00</updated>
+<published>2024-01-19T13:54:00-07:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Wind Chill Advisory issued January 19 at 1:54PM MST until January 20 at 9:00AM MST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MT1268851D8E18.WindChillAdvisory.1268852C1F00MT.GGWWSWGGW.61a6110da9e3f0200bc917772e16953c"/>
+<summary>...WIND CHILL ADVISORY REMAINS IN EFFECT UNTIL 9 AM MST SATURDAY... * WHAT...Cold wind chills as low as 30 below zero. * WHERE...Portions of northeast Montana, generally north and east of Fort Peck Lake * WHEN...Until 9 AM MST Saturday.</summary>
+<cap:event>Wind Chill Advisory</cap:event>
+<cap:effective>2024-01-19T13:54:00-07:00</cap:effective>
+<cap:expires>2024-01-20T09:00:00-07:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Central and Southeast Phillips; Central and Southern Valley; Daniels; Eastern Roosevelt; Northern Phillips; Northern Valley; Richland; Sheridan; Western Roosevelt; Wibaux</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>030019 030071 030083 030085 030091 030105 030109</value>
+<valueName>UGC</valueName>
+<value>MTZ016 MTZ017 MTZ018 MTZ019 MTZ020 MTZ024 MTZ027 MTZ059 MTZ061 MTZ062</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KGGW.WC.Y.0004.000000T0000Z-240120T1600Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=MT1268851D86AC.WindChillAdvisory.1268852C6D20MT.BYZWSWBYZ.de6aaabbe5750cf5dab7d2704cf62ad5</id>
+<updated>2024-01-19T13:35:00-07:00</updated>
+<published>2024-01-19T13:35:00-07:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Wind Chill Advisory issued January 19 at 1:35PM MST until January 20 at 11:00AM MST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MT1268851D86AC.WindChillAdvisory.1268852C6D20MT.BYZWSWBYZ.de6aaabbe5750cf5dab7d2704cf62ad5"/>
+<summary>...WIND CHILL ADVISORY REMAINS IN EFFECT UNTIL 11 AM MST SATURDAY... * WHAT...Very cold wind chills. Wind chills as low as 30 below zero. * WHERE...Carter, Custer, and Fallon. * WHEN...Until 11 AM MST Saturday. * IMPACTS...The dangerously cold wind chills could cause frostbite on exposed skin in as little as 30 minutes.</summary>
+<cap:event>Wind Chill Advisory</cap:event>
+<cap:effective>2024-01-19T13:35:00-07:00</cap:effective>
+<cap:expires>2024-01-20T11:00:00-07:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Carter; Custer; Fallon</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>030011 030017 030025</value>
+<valueName>UGC</valueName>
+<value>MTZ032 MTZ033 MTZ037</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KBYZ.WC.Y.0003.000000T0000Z-240120T1800Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -7921,70 +7850,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <valueName>VTEC</valueName>
 <value>/O.EXT.KTFX.FA.Y.0005.000000T0000Z-240120T1800Z/
 /00000.N.IJ.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=MT1268851D11E0.WindChillAdvisory.1268852C6D20MT.BYZWSWBYZ.de6aaabbe5750cf5dab7d2704cf62ad5</id>
-<updated>2024-01-19T10:36:00-07:00</updated>
-<published>2024-01-19T10:36:00-07:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Wind Chill Advisory issued January 19 at 10:36AM MST until January 20 at 11:00AM MST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MT1268851D11E0.WindChillAdvisory.1268852C6D20MT.BYZWSWBYZ.de6aaabbe5750cf5dab7d2704cf62ad5"/>
-<summary>...WIND CHILL ADVISORY NOW IN EFFECT UNTIL 11 AM MST SATURDAY... * WHAT...Very cold wind chills. Wind chills as low as 25 below zero. * WHERE...Carter, Custer, and Fallon. * WHEN...Until 11 AM MST Saturday. * IMPACTS...The dangerously cold wind chills could cause frostbite on exposed skin in as little as 30 minutes.</summary>
-<cap:event>Wind Chill Advisory</cap:event>
-<cap:effective>2024-01-19T10:36:00-07:00</cap:effective>
-<cap:expires>2024-01-20T11:00:00-07:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Carter; Custer; Fallon</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>030011 030017 030025</value>
-<valueName>UGC</valueName>
-<value>MTZ032 MTZ033 MTZ037</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.EXT.KBYZ.WC.Y.0003.000000T0000Z-240120T1800Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=MT1268851CF3CC.WindChillAdvisory.1268852C1F00MT.GGWWSWGGW.61a6110da9e3f0200bc917772e16953c</id>
-<updated>2024-01-19T09:59:00-07:00</updated>
-<published>2024-01-19T09:59:00-07:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Wind Chill Advisory issued January 19 at 9:59AM MST until January 20 at 9:00AM MST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MT1268851CF3CC.WindChillAdvisory.1268852C1F00MT.GGWWSWGGW.61a6110da9e3f0200bc917772e16953c"/>
-<summary>...WIND CHILL ADVISORY NOW IN EFFECT UNTIL 9 AM MST SATURDAY... * WHAT...Cold wind chills as low as 30 below zero. * WHERE...Portions of northeast Montana. * WHEN...Until 9 AM MST Saturday. * IMPACTS...The cold wind chills could cause frostbite on exposed skin in as little as 30 minutes.</summary>
-<cap:event>Wind Chill Advisory</cap:event>
-<cap:effective>2024-01-19T09:59:00-07:00</cap:effective>
-<cap:expires>2024-01-20T09:00:00-07:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Central and Southeast Phillips; Central and Southern Valley; Daniels; Eastern Roosevelt; Northern Phillips; Northern Valley; Richland; Sheridan; Western Roosevelt; Wibaux</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>030019 030071 030083 030085 030091 030105 030109</value>
-<valueName>UGC</valueName>
-<value>MTZ016 MTZ017 MTZ018 MTZ019 MTZ020 MTZ024 MTZ027 MTZ059 MTZ061 MTZ062</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.EXT.KGGW.WC.Y.0004.000000T0000Z-240120T1600Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -8116,38 +7981,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <valueName>VTEC</valueName>
 <value>/O.EXT.KBYZ.FA.W.0001.000000T0000Z-240120T2115Z/
 /00000.0.IJ.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=MT1268850E2338.WinterWeatherAdvisory.1268851DA010MT.MSOWSWMSO.59de021b20776a90bc2a0000a8976cbe</id>
-<updated>2024-01-18T12:50:00-07:00</updated>
-<published>2024-01-18T12:50:00-07:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Winter Weather Advisory issued January 18 at 12:50PM MST until January 19 at 2:00PM MST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MT1268850E2338.WinterWeatherAdvisory.1268851DA010MT.MSOWSWMSO.59de021b20776a90bc2a0000a8976cbe"/>
-<summary>...WINTER WEATHER ADVISORY IN EFFECT FROM 9 PM THIS EVENING TO 2 PM MST FRIDAY... * WHAT...Snow expected. Total snow accumulations of one to three inches. Snow will transition to light freezing rain in the southern Bitterroot Valley, with a glaze of ice by the morning commute.</summary>
-<cap:event>Winter Weather Advisory</cap:event>
-<cap:effective>2024-01-18T12:50:00-07:00</cap:effective>
-<cap:expires>2024-01-19T14:00:00-07:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Missoula, Bitterroot Valleys</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>030063 030081</value>
-<valueName>UGC</valueName>
-<value>MTZ005</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.EXB.KMSO.WW.Y.0008.240119T0400Z-240119T2100Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -8541,6 +8374,134 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=NE1268851DA0D8.WindChillAdvisory.1268852C6D20NE.LBFWSWLBF.0c94ebce33d3efd242948e75bcdcf9c0</id>
+<updated>2024-01-19T15:02:00-06:00</updated>
+<published>2024-01-19T15:02:00-06:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Wind Chill Advisory issued January 19 at 3:02PM CST until January 20 at 12:00PM CST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=NE1268851DA0D8.WindChillAdvisory.1268852C6D20NE.LBFWSWLBF.0c94ebce33d3efd242948e75bcdcf9c0"/>
+<summary>...WIND CHILL ADVISORY REMAINS IN EFFECT FROM 6 PM THIS EVENING TO NOON CST SATURDAY... * WHAT...Very cold wind chills expected. Wind chills as low as 30 below zero. * WHERE...Portions of central and north central Nebraska. * WHEN...From 6 PM this evening to noon CST Saturday.</summary>
+<cap:event>Wind Chill Advisory</cap:event>
+<cap:effective>2024-01-19T15:02:00-06:00</cap:effective>
+<cap:expires>2024-01-20T12:00:00-06:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Blaine; Boyd; Brown; Custer; Garfield; Holt; Keya Paha; Loup; Rock; Wheeler</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>031009 031015 031017 031041 031071 031089 031103 031115 031149 031183</value>
+<valueName>UGC</valueName>
+<value>NEZ006 NEZ007 NEZ008 NEZ009 NEZ010 NEZ026 NEZ027 NEZ028 NEZ029 NEZ038</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KLBF.WC.Y.0003.240120T0000Z-240120T1800Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=NE1268851DA0D8.WindChillAdvisory.1268852C6D20NE.LBFWSWLBF.86a2b24319fc1d343f367bca22796d24</id>
+<updated>2024-01-19T15:02:00-06:00</updated>
+<published>2024-01-19T15:02:00-06:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Wind Chill Advisory issued January 19 at 3:02PM CST until January 20 at 12:00PM CST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=NE1268851DA0D8.WindChillAdvisory.1268852C6D20NE.LBFWSWLBF.86a2b24319fc1d343f367bca22796d24"/>
+<summary>...WIND CHILL ADVISORY IN EFFECT FROM 11 PM THIS EVENING TO 11 AM MST SATURDAY... * WHAT...Very cold wind chills expected. Wind chills as low as 25 below zero. * WHERE...Sheridan, Grant, Arthur and Western Cherry Counties. * WHEN...From 11 PM this evening to 11 AM MST Saturday.</summary>
+<cap:event>Wind Chill Advisory</cap:event>
+<cap:effective>2024-01-19T15:02:00-06:00</cap:effective>
+<cap:expires>2024-01-20T12:00:00-06:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Arthur; Grant; Sheridan; Western Cherry</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>031005 031031 031075 031161</value>
+<valueName>UGC</valueName>
+<value>NEZ004 NEZ023 NEZ035 NEZ094</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.EXA.KLBF.WC.Y.0003.240120T0600Z-240120T1800Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=NE1268851DA0D8.WindChillAdvisory.1268852C6D20NE.LBFWSWLBF.18bb1ac1bca2fedb661fd6e298743e32</id>
+<updated>2024-01-19T15:02:00-06:00</updated>
+<published>2024-01-19T15:02:00-06:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Wind Chill Advisory issued January 19 at 3:02PM CST until January 20 at 12:00PM CST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=NE1268851DA0D8.WindChillAdvisory.1268852C6D20NE.LBFWSWLBF.18bb1ac1bca2fedb661fd6e298743e32"/>
+<summary>...WIND CHILL ADVISORY REMAINS IN EFFECT FROM MIDNIGHT CST /11 PM MST/ TONIGHT TO NOON CST /11 AM MST/ SATURDAY... * WHAT...Very cold wind chills expected. Wind chills as low as 30 below zero. * WHERE...Portions of north central, southwest and west central Nebraska.</summary>
+<cap:event>Wind Chill Advisory</cap:event>
+<cap:effective>2024-01-19T15:02:00-06:00</cap:effective>
+<cap:expires>2024-01-20T12:00:00-06:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Eastern Cherry; Frontier; Hayes; Hooker; Lincoln; Logan; McPherson; Thomas</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>031031 031063 031085 031091 031111 031113 031117 031171</value>
+<valueName>UGC</valueName>
+<value>NEZ005 NEZ024 NEZ025 NEZ036 NEZ037 NEZ059 NEZ070 NEZ071</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KLBF.WC.Y.0003.240120T0600Z-240120T1800Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=NE1268851D8D50.WindChillAdvisory.1268852C6D20NE.FSDWSWFSD.70c7a43681b03b903331ca92d9ebae2b</id>
+<updated>2024-01-19T14:52:00-06:00</updated>
+<published>2024-01-19T14:52:00-06:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Wind Chill Advisory issued January 19 at 2:52PM CST until January 20 at 12:00PM CST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=NE1268851D8D50.WindChillAdvisory.1268852C6D20NE.FSDWSWFSD.70c7a43681b03b903331ca92d9ebae2b"/>
+<summary>...WIND CHILL ADVISORY NOW IN EFFECT FROM 9 PM THIS EVENING TO NOON CST SATURDAY... * WHAT...Very cold wind chills expected. Wind chills as low as 35 below zero. * WHERE...Portions of northwest and west central Iowa, southwest Minnesota, northeast Nebraska and central, east central, south</summary>
+<cap:event>Wind Chill Advisory</cap:event>
+<cap:effective>2024-01-19T14:52:00-06:00</cap:effective>
+<cap:expires>2024-01-20T12:00:00-06:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Dakota; Dixon</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>031043 031051</value>
+<valueName>UGC</valueName>
+<value>NEZ013 NEZ014</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.EXT.KFSD.WC.Y.0003.240120T0300Z-240120T1800Z/</value>
+</cap:parameter>
+</entry>
+<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=NE1268851D1A78.WindChillAdvisory.1268852C6D20NE.GIDWSWGID.d6def8accf2a556fa5a01935c5eaddd2</id>
 <updated>2024-01-19T11:58:00-06:00</updated>
 <published>2024-01-19T11:58:00-06:00</published>
@@ -8571,38 +8532,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <valueName>VTEC</valueName>
 <value>/O.EXP.KGID.WC.Y.0002.000000T0000Z-240119T1800Z/
 /O.CON.KGID.WC.Y.0003.240120T0000Z-240120T1800Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=NE1268851D1500.WindChillAdvisory.1268852C6D20NE.FSDWSWFSD.70c7a43681b03b903331ca92d9ebae2b</id>
-<updated>2024-01-19T11:44:00-06:00</updated>
-<published>2024-01-19T11:44:00-06:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Wind Chill Advisory issued January 19 at 11:44AM CST until January 20 at 12:00PM CST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=NE1268851D1500.WindChillAdvisory.1268852C6D20NE.FSDWSWFSD.70c7a43681b03b903331ca92d9ebae2b"/>
-<summary>...WIND CHILL ADVISORY REMAINS IN EFFECT FROM 6 PM THIS EVENING TO NOON CST SATURDAY... * WHAT...Very cold wind chills expected. Wind chills as low as 35 below zero. * WHERE...Portions of northwest and west central Iowa, southwest Minnesota, northeast Nebraska and central, east central, south</summary>
-<cap:event>Wind Chill Advisory</cap:event>
-<cap:effective>2024-01-19T11:44:00-06:00</cap:effective>
-<cap:expires>2024-01-20T12:00:00-06:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Dakota; Dixon</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>031043 031051</value>
-<valueName>UGC</valueName>
-<value>NEZ013 NEZ014</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KFSD.WC.Y.0003.240120T0000Z-240120T1800Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -8702,72 +8631,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <valueName>VTEC</valueName>
 <value>/O.CON.KLBF.FL.W.0001.000000T0000Z-000000T0000Z/
 /SPKN1.1.IJ.240115T0019Z.240115T1315Z.000000T0000Z.NO/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=NE1268851BD578.WindChillAdvisory.1268852C6D20NE.LBFWSWLBF.0c94ebce33d3efd242948e75bcdcf9c0</id>
-<updated>2024-01-19T03:26:00-06:00</updated>
-<published>2024-01-19T03:26:00-06:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Wind Chill Advisory issued January 19 at 3:26AM CST until January 20 at 12:00PM CST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=NE1268851BD578.WindChillAdvisory.1268852C6D20NE.LBFWSWLBF.0c94ebce33d3efd242948e75bcdcf9c0"/>
-<summary>...WIND CHILL ADVISORY REMAINS IN EFFECT UNTIL NOON CST TODAY... ...WIND CHILL ADVISORY REMAINS IN EFFECT FROM 6 PM THIS EVENING TO NOON CST SATURDAY... * WHAT...For the first Wind Chill Advisory, very cold wind chills. Wind chills as low as 30 below zero. For the second Wind Chill Advisory, very cold wind chills expected. Wind</summary>
-<cap:event>Wind Chill Advisory</cap:event>
-<cap:effective>2024-01-19T03:26:00-06:00</cap:effective>
-<cap:expires>2024-01-20T12:00:00-06:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Blaine; Boyd; Brown; Custer; Garfield; Holt; Keya Paha; Loup; Rock; Wheeler</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>031009 031015 031017 031041 031071 031089 031103 031115 031149 031183</value>
-<valueName>UGC</valueName>
-<value>NEZ006 NEZ007 NEZ008 NEZ009 NEZ010 NEZ026 NEZ027 NEZ028 NEZ029 NEZ038</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KLBF.WC.Y.0002.000000T0000Z-240119T1800Z/
-/O.CON.KLBF.WC.Y.0003.240120T0000Z-240120T1800Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=NE1268851BD578.WindChillAdvisory.1268852C6D20NE.LBFWSWLBF.18bb1ac1bca2fedb661fd6e298743e32</id>
-<updated>2024-01-19T03:26:00-06:00</updated>
-<published>2024-01-19T03:26:00-06:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Wind Chill Advisory issued January 19 at 3:26AM CST until January 20 at 12:00PM CST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=NE1268851BD578.WindChillAdvisory.1268852C6D20NE.LBFWSWLBF.18bb1ac1bca2fedb661fd6e298743e32"/>
-<summary>...WIND CHILL ADVISORY REMAINS IN EFFECT UNTIL NOON CST /11 AM MST/ TODAY... ...WIND CHILL ADVISORY REMAINS IN EFFECT FROM MIDNIGHT CST /11 PM MST/ TONIGHT TO NOON CST /11 AM MST/ SATURDAY... * WHAT...For the first Wind Chill Advisory, very cold wind chills. Wind chills as low as 30 below zero. For the second</summary>
-<cap:event>Wind Chill Advisory</cap:event>
-<cap:effective>2024-01-19T03:26:00-06:00</cap:effective>
-<cap:expires>2024-01-20T12:00:00-06:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Eastern Cherry; Frontier; Hayes; Hooker; Lincoln; Logan; McPherson; Thomas</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>031031 031063 031085 031091 031111 031113 031117 031171</value>
-<valueName>UGC</valueName>
-<value>NEZ005 NEZ024 NEZ025 NEZ036 NEZ037 NEZ059 NEZ070 NEZ071</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KLBF.WC.Y.0002.000000T0000Z-240119T1800Z/
-/O.CON.KLBF.WC.Y.0003.240120T0600Z-240120T1800Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -9125,6 +8988,38 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=NY1268851DA0D8.SpecialWeatherStatement.1268851DEE30NY.BUFSPSBUF.8408930a7e69a891e7d39b8e1f310d0a</id>
+<updated>2024-01-19T16:02:00-05:00</updated>
+<published>2024-01-19T16:02:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Special Weather Statement issued January 19 at 4:02PM EST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=NY1268851DA0D8.SpecialWeatherStatement.1268851DEE30NY.BUFSPSBUF.8408930a7e69a891e7d39b8e1f310d0a"/>
+<summary>...SNOW LEADING TO SLIPPERY TRAVEL DURING THE EVENING COMMUTE... Lake enhanced snow showers of varying intensity will continue across western New York through the evening. Snowfall rates up to an inch per hour with visibility down to a half mile or less will be possible in the most persistent snow. The heaviest snows will occur near Lake Ontario and along the</summary>
+<cap:event>Special Weather Statement</cap:event>
+<cap:effective>2024-01-19T16:02:00-05:00</cap:effective>
+<cap:expires>2024-01-19T18:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Observed</cap:certainty>
+<cap:areaDesc>Cattaraugus; Chautauqua; Genesee; Niagara; Northern Erie; Orleans; Southern Erie</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>036009 036013 036029 036037 036063 036073</value>
+<valueName>UGC</valueName>
+<value>NYZ001 NYZ002 NYZ010 NYZ011 NYZ019 NYZ020 NYZ085</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value></value>
+</cap:parameter>
+</entry>
+<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=NY1268851D7EDC.SpecialWeatherStatement.12688529AE00NY.OKXSPSOKX.a24b09db086bc02f408cfb7d1428896c</id>
 <updated>2024-01-19T15:15:00-05:00</updated>
 <published>2024-01-19T15:15:00-05:00</published>
@@ -9282,6 +9177,38 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value>/O.NEW.KBGM.WW.Y.0007.240120T0000Z-240121T1500Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=OH1268851D8648.SpecialWeatherStatement.1268851DC720OH.CLESPSCLE.7aa752e4f0f90cb194a43650b2dd5afe</id>
+<updated>2024-01-19T15:34:00-05:00</updated>
+<published>2024-01-19T15:34:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Special Weather Statement issued January 19 at 3:34PM EST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=OH1268851D8648.SpecialWeatherStatement.1268851DC720OH.CLESPSCLE.7aa752e4f0f90cb194a43650b2dd5afe"/>
+<summary>...An intense lake effect snow band will affect Portage... southwestern Mahoning...Huron...Erie...southwestern Geauga... Medina...Cuyahoga...northern Ashland...northeastern Stark...Summit and Lorain Counties Until 500 PM EST.... At 332 PM EST, radar indicated an intense lake effect snow band along a line extending from near Bellevue to near Hudson, moving south at</summary>
+<cap:event>Special Weather Statement</cap:event>
+<cap:effective>2024-01-19T15:34:00-05:00</cap:effective>
+<cap:expires>2024-01-19T17:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Observed</cap:certainty>
+<cap:areaDesc>Ashland; Cuyahoga; Erie; Geauga; Huron; Lorain; Mahoning; Medina; Portage; Stark; Summit</cap:areaDesc>
+<cap:polygon>40.97,-81.19 41,-82.83 41.26,-82.83 41.55,-81.41 40.93,-80.88 40.9,-80.9 40.97,-81.19</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>039005 039035 039043 039055 039077 039093 039099 039103 039133 039151 039153</value>
+<valueName>UGC</valueName>
+<value>OHZ009 OHZ010 OHZ011 OHZ013 OHZ019 OHZ020 OHZ021 OHZ022 OHZ030 OHZ032 OHZ033</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value></value>
 </cap:parameter>
 </entry>
 <entry>
@@ -9736,6 +9663,38 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=OK1268851D8D50.WindChillAdvisory.1268852C1F00OK.TSAWSWTSA.9c64a9c9f10013ec8fcc8fe856e9c9e9</id>
+<updated>2024-01-19T14:52:00-06:00</updated>
+<published>2024-01-19T14:52:00-06:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Wind Chill Advisory issued January 19 at 2:52PM CST until January 20 at 10:00AM CST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=OK1268851D8D50.WindChillAdvisory.1268852C1F00OK.TSAWSWTSA.9c64a9c9f10013ec8fcc8fe856e9c9e9"/>
+<summary>...WIND CHILL ADVISORY REMAINS IN EFFECT FROM MIDNIGHT TONIGHT TO 10 AM CST SATURDAY... * WHAT...Very cold wind chills expected. Wind chills as low as 10 below zero. * WHERE...Portions of northwest Arkansas and northeast Oklahoma. * WHEN...From midnight tonight to 10 AM CST Saturday.</summary>
+<cap:event>Wind Chill Advisory</cap:event>
+<cap:effective>2024-01-19T14:52:00-06:00</cap:effective>
+<cap:expires>2024-01-20T10:00:00-06:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Adair; Craig; Delaware; Mayes; Nowata; Osage; Ottawa; Rogers; Washington</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>040001 040035 040041 040097 040105 040113 040115 040131 040147</value>
+<valueName>UGC</valueName>
+<value>OKZ054 OKZ055 OKZ056 OKZ057 OKZ058 OKZ061 OKZ062 OKZ063 OKZ069</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KTSA.WC.Y.0004.240120T0600Z-240120T1600Z/</value>
+</cap:parameter>
+</entry>
+<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=OK1268851D7A2C.HardFreezeWarning.1268852BF7F0OK.SHVNPWSHV.ebd9f2f2d124d1f0157dbfeb4130d536</id>
 <updated>2024-01-19T14:03:00-06:00</updated>
 <published>2024-01-19T14:03:00-06:00</published>
@@ -9802,68 +9761,36 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=OK1268851B8D34.WindChillAdvisory.1268852C1F00OK.TSAWSWTSA.a24616395d527c306d2f910996241d19</id>
-<updated>2024-01-19T01:41:00-06:00</updated>
-<published>2024-01-19T01:41:00-06:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=OR1268851D8968.FloodWatch.1268855774C0OR.MFRFFAMFR.c83bf6700519fa128e7610e5dd0d73f3</id>
+<updated>2024-01-19T12:42:00-08:00</updated>
+<published>2024-01-19T12:42:00-08:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Wind Chill Advisory issued January 19 at 1:41AM CST until January 20 at 10:00AM CST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=OK1268851B8D34.WindChillAdvisory.1268852C1F00OK.TSAWSWTSA.a24616395d527c306d2f910996241d19"/>
-<summary>...WIND CHILL ADVISORY REMAINS IN EFFECT UNTIL NOON CST TODAY... ...WIND CHILL ADVISORY IN EFFECT FROM MIDNIGHT TONIGHT TO 10 AM CST SATURDAY... * WHAT...For the first Wind Chill Advisory, very cold wind chills expected. Wind chills as low as 10 below zero. For the second Wind Chill Advisory, very cold wind chills expected.</summary>
-<cap:event>Wind Chill Advisory</cap:event>
-<cap:effective>2024-01-19T01:41:00-06:00</cap:effective>
-<cap:expires>2024-01-20T10:00:00-06:00</cap:expires>
+<title>Flood Watch issued January 19 at 12:42PM PST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=OR1268851D8968.FloodWatch.1268855774C0OR.MFRFFAMFR.c83bf6700519fa128e7610e5dd0d73f3"/>
+<summary>.Heavy rainfall of 2 to 5 inches is expected tonight through Saturday in south-central Siskiyou County below 5500 feet with heavy snow above that elevation. Heavy rainfall combined with snowmelt will allow streams to rise and bring a potential for small stream and urban flooding. ...FLOOD WATCH REMAINS IN EFFECT FROM SATURDAY MORNING THROUGH</summary>
+<cap:event>Flood Watch</cap:event>
+<cap:effective>2024-01-19T12:42:00-08:00</cap:effective>
+<cap:expires>2024-01-22T16:00:00-08:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
 <cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Craig; Delaware; Mayes; Nowata; Osage; Ottawa; Rogers; Washington</cap:areaDesc>
+<cap:urgency>Future</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Possible</cap:certainty>
+<cap:areaDesc>Curry County Coast</cap:areaDesc>
 <cap:polygon></cap:polygon>
 <cap:geocode>
 <valueName>FIPS6</valueName>
-<value>040035 040041 040097 040105 040113 040115 040131 040147</value>
+<value>041015</value>
 <valueName>UGC</valueName>
-<value>OKZ054 OKZ055 OKZ056 OKZ057 OKZ058 OKZ061 OKZ062 OKZ063</value>
+<value>ORZ022</value>
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
-<value>/O.NEW.KTSA.WC.Y.0004.240120T0600Z-240120T1600Z/
-/O.CON.KTSA.WC.Y.0003.240119T0900Z-240119T1800Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=OK1268851B8D34.WindChillAdvisory.1268852C1F00OK.TSAWSWTSA.3632130f5522e52fe8960a685a5555d0</id>
-<updated>2024-01-19T01:41:00-06:00</updated>
-<published>2024-01-19T01:41:00-06:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Wind Chill Advisory issued January 19 at 1:41AM CST until January 20 at 10:00AM CST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=OK1268851B8D34.WindChillAdvisory.1268852C1F00OK.TSAWSWTSA.3632130f5522e52fe8960a685a5555d0"/>
-<summary>...WIND CHILL ADVISORY IN EFFECT FROM MIDNIGHT TONIGHT TO 10 AM CST SATURDAY... * WHAT...Very cold wind chills expected. Wind chills as low as 10 below zero. * WHERE...Adair County. * WHEN...From midnight tonight to 10 AM CST Saturday.</summary>
-<cap:event>Wind Chill Advisory</cap:event>
-<cap:effective>2024-01-19T01:41:00-06:00</cap:effective>
-<cap:expires>2024-01-20T10:00:00-06:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Adair</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>040001</value>
-<valueName>UGC</valueName>
-<value>OKZ069</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.NEW.KTSA.WC.Y.0004.240120T0600Z-240120T1600Z/</value>
+<value>/O.CON.KMFR.FA.A.0002.240120T1800Z-240122T1800Z/
+/00000.0.ER.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -9896,39 +9823,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value></value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=OR1268851B6CC8.FloodWatch.1268855774C0OR.MFRFFAMFR.c83bf6700519fa128e7610e5dd0d73f3</id>
-<updated>2024-01-18T22:58:00-08:00</updated>
-<published>2024-01-18T22:58:00-08:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Flood Watch issued January 18 at 10:58PM PST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=OR1268851B6CC8.FloodWatch.1268855774C0OR.MFRFFAMFR.c83bf6700519fa128e7610e5dd0d73f3"/>
-<summary>.A long duration atmospheric river event is forecast to bring 2 to 5 inches of rain to the region from Friday night through Monday morning. ...FLOOD WATCH NOW IN EFFECT FROM SATURDAY MORNING THROUGH MONDAY MORNING... The Flood Watch continues for</summary>
-<cap:event>Flood Watch</cap:event>
-<cap:effective>2024-01-18T22:58:00-08:00</cap:effective>
-<cap:expires>2024-01-22T16:00:00-08:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Future</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Possible</cap:certainty>
-<cap:areaDesc>Curry County Coast</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>041015</value>
-<valueName>UGC</valueName>
-<value>ORZ022</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KMFR.FA.A.0002.240120T1800Z-240122T1800Z/
-/00000.0.ER.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -10642,6 +10536,38 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=SD1268851D8D50.WindChillAdvisory.1268852C6D20SD.FSDWSWFSD.578bdf87cd1ff8e75e9756742692742b</id>
+<updated>2024-01-19T13:52:00-07:00</updated>
+<published>2024-01-19T13:52:00-07:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Wind Chill Advisory issued January 19 at 1:52PM MST until January 20 at 11:00AM MST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=SD1268851D8D50.WindChillAdvisory.1268852C6D20SD.FSDWSWFSD.578bdf87cd1ff8e75e9756742692742b"/>
+<summary>...WIND CHILL ADVISORY NOW IN EFFECT FROM 9 PM THIS EVENING TO NOON CST SATURDAY... * WHAT...Very cold wind chills expected. Wind chills as low as 35 below zero. * WHERE...Portions of northwest and west central Iowa, southwest Minnesota, northeast Nebraska and central, east central, south</summary>
+<cap:event>Wind Chill Advisory</cap:event>
+<cap:effective>2024-01-19T13:52:00-07:00</cap:effective>
+<cap:expires>2024-01-20T11:00:00-07:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Aurora; Beadle; Bon Homme; Brookings; Brule; Charles Mix; Clay; Davison; Douglas; Gregory; Hanson; Hutchinson; Jerauld; Kingsbury; Lake; Lincoln; McCook; Miner; Minnehaha; Moody; Sanborn; Turner; Union; Yankton</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>046003 046005 046009 046011 046015 046023 046027 046035 046043 046053 046061 046067 046073 046077 046079 046083 046087 046097 046099 046101 046111 046125 046127 046135</value>
+<valueName>UGC</valueName>
+<value>SDZ038 SDZ039 SDZ040 SDZ050 SDZ052 SDZ053 SDZ054 SDZ055 SDZ056 SDZ057 SDZ058 SDZ059 SDZ060 SDZ061 SDZ062 SDZ063 SDZ064 SDZ065 SDZ066 SDZ067 SDZ068 SDZ069 SDZ070 SDZ071</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.EXT.KFSD.WC.Y.0003.240120T0300Z-240120T1800Z/</value>
+</cap:parameter>
+</entry>
+<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=SD1268851D7B58.WindChillAdvisory.1268852C6D20SD.ABRWSWABR.3a1587df419ecbb667ef932836b223e8</id>
 <updated>2024-01-19T13:06:00-07:00</updated>
 <published>2024-01-19T13:06:00-07:00</published>
@@ -10735,38 +10661,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value>/O.NEW.KUNR.WC.Y.0004.240120T0500Z-240120T1800Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=SD1268851D1500.WindChillAdvisory.1268852C6D20SD.FSDWSWFSD.578bdf87cd1ff8e75e9756742692742b</id>
-<updated>2024-01-19T10:44:00-07:00</updated>
-<published>2024-01-19T10:44:00-07:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Wind Chill Advisory issued January 19 at 10:44AM MST until January 20 at 11:00AM MST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=SD1268851D1500.WindChillAdvisory.1268852C6D20SD.FSDWSWFSD.578bdf87cd1ff8e75e9756742692742b"/>
-<summary>...WIND CHILL ADVISORY REMAINS IN EFFECT FROM 6 PM THIS EVENING TO NOON CST SATURDAY... * WHAT...Very cold wind chills expected. Wind chills as low as 35 below zero. * WHERE...Portions of northwest and west central Iowa, southwest Minnesota, northeast Nebraska and central, east central, south</summary>
-<cap:event>Wind Chill Advisory</cap:event>
-<cap:effective>2024-01-19T10:44:00-07:00</cap:effective>
-<cap:expires>2024-01-20T11:00:00-07:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Aurora; Beadle; Bon Homme; Brookings; Brule; Charles Mix; Clay; Davison; Douglas; Gregory; Hanson; Hutchinson; Jerauld; Kingsbury; Lake; Lincoln; McCook; Miner; Minnehaha; Moody; Sanborn; Turner; Union; Yankton</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>046003 046005 046009 046011 046015 046023 046027 046035 046043 046053 046061 046067 046073 046077 046079 046083 046087 046097 046099 046101 046111 046125 046127 046135</value>
-<valueName>UGC</valueName>
-<value>SDZ038 SDZ039 SDZ040 SDZ050 SDZ052 SDZ053 SDZ054 SDZ055 SDZ056 SDZ057 SDZ058 SDZ059 SDZ060 SDZ061 SDZ062 SDZ063 SDZ064 SDZ065 SDZ066 SDZ067 SDZ068 SDZ069 SDZ070 SDZ071</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KFSD.WC.Y.0003.240120T0000Z-240120T1800Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -11128,6 +11022,102 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=TX1268851D8DB4.FreezeWarning.1268852BF7F0TX.CRPNPWCRP.9cd719502762251b7fa0ff92b6f9643f</id>
+<updated>2024-01-19T14:53:00-06:00</updated>
+<published>2024-01-19T14:53:00-06:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Freeze Warning issued January 19 at 2:53PM CST until January 20 at 9:00AM CST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=TX1268851D8DB4.FreezeWarning.1268852BF7F0TX.CRPNPWCRP.9cd719502762251b7fa0ff92b6f9643f"/>
+<summary>...FREEZE WARNING REMAINS IN EFFECT FROM 1 AM TO 9 AM CST SATURDAY... * WHAT...Sub-freezing temperatures as low as 25 expected. * WHERE...Inland counties of South Texas * WHEN...From 1 AM to 9 AM CST Saturday. * IMPACTS...Frost and freeze conditions will kill crops, other</summary>
+<cap:event>Freeze Warning</cap:event>
+<cap:effective>2024-01-19T14:53:00-06:00</cap:effective>
+<cap:expires>2024-01-20T09:00:00-06:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Bee; Duval; Goliad; Inland Calhoun; Inland Kleberg; Inland Nueces; Inland Refugio; Inland San Patricio; Jim Wells; La Salle; Live Oak; McMullen; Victoria; Webb</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>048025 048057 048131 048175 048249 048273 048283 048297 048311 048355 048391 048409 048469 048479</value>
+<valueName>UGC</valueName>
+<value>TXZ229 TXZ230 TXZ231 TXZ232 TXZ233 TXZ234 TXZ239 TXZ240 TXZ241 TXZ242 TXZ243 TXZ244 TXZ246 TXZ247</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KCRP.FZ.W.0005.240120T0700Z-240120T1500Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=TX1268851D8DB4.FreezeWarning.1268852BF7F0TX.CRPNPWCRP.22c9f27997be9b34d185df0570e913d2</id>
+<updated>2024-01-19T14:53:00-06:00</updated>
+<published>2024-01-19T14:53:00-06:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Freeze Warning issued January 19 at 2:53PM CST until January 20 at 9:00AM CST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=TX1268851D8DB4.FreezeWarning.1268852BF7F0TX.CRPNPWCRP.22c9f27997be9b34d185df0570e913d2"/>
+<summary>...FREEZE WARNING IN EFFECT FROM 1 AM TO 9 AM CST SATURDAY... * WHAT...Sub-freezing temperatures as low as 29 expected. * WHERE...Coastal Aransas, Coastal San Patricio, Coastal Refugio and Coastal Calhoun Counties. * WHEN...From 1 AM to 9 AM CST Saturday. * IMPACTS...Frost and freeze conditions will kill crops, other</summary>
+<cap:event>Freeze Warning</cap:event>
+<cap:effective>2024-01-19T14:53:00-06:00</cap:effective>
+<cap:expires>2024-01-20T09:00:00-06:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Coastal Aransas; Coastal Calhoun; Coastal Refugio; Coastal San Patricio</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>048007 048057 048391 048409</value>
+<valueName>UGC</valueName>
+<value>TXZ245 TXZ344 TXZ346 TXZ347</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.EXA.KCRP.FZ.W.0005.240120T0700Z-240120T1500Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=TX1268851D88A0.SpecialWeatherStatement.1268852B34A0TX.EWXSPSEWX.5686c112debacf0d1018bd91884b3340</id>
+<updated>2024-01-19T14:40:00-06:00</updated>
+<published>2024-01-19T14:40:00-06:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Special Weather Statement issued January 19 at 2:40PM CST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=TX1268851D88A0.SpecialWeatherStatement.1268852B34A0TX.EWXSPSEWX.5686c112debacf0d1018bd91884b3340"/>
+<summary>...COLD AND BREEZY TONIGHT WITH LOW WIND CHILL TEMPERATURES OVER THE HILL COUNTRY AND I-35 CORRIDOR... Breezy winds will continue to bring colder air to South Central Texas tonight. Low temperatures will be in the 20s and upper 10s across the I-35 Corridor and Hill Country. Combined with 10 to 15 mph winds this will result in wind chill temperatures in the lower</summary>
+<cap:event>Special Weather Statement</cap:event>
+<cap:effective>2024-01-19T14:40:00-06:00</cap:effective>
+<cap:expires>2024-01-20T04:00:00-06:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Observed</cap:certainty>
+<cap:areaDesc>Bandera; Bastrop; Bexar; Blanco; Burnet; Caldwell; Comal; Edwards; Gillespie; Guadalupe; Hays; Kendall; Kerr; Llano; Real; Travis; Williamson</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>048019 048021 048029 048031 048053 048055 048091 048137 048171 048187 048209 048259 048265 048299 048385 048453 048491</value>
+<valueName>UGC</valueName>
+<value>TXZ171 TXZ172 TXZ173 TXZ184 TXZ185 TXZ186 TXZ187 TXZ188 TXZ189 TXZ190 TXZ191 TXZ192 TXZ193 TXZ205 TXZ206 TXZ207 TXZ208</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value></value>
+</cap:parameter>
+</entry>
+<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=TX1268851D806C.HardFreezeWarning.1268852BF7F0TX.HGXNPWHGX.50c295f41295e2064a0f7e67b4a8e67a</id>
 <updated>2024-01-19T14:19:00-06:00</updated>
 <published>2024-01-19T14:19:00-06:00</published>
@@ -11290,71 +11280,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=TX1268851CE558.WindAdvisory.1268851DA010TX.LCHNPWLCH.ddb398ce0b4341d0234a5daf01f8fe9f</id>
-<updated>2024-01-19T10:22:00-06:00</updated>
-<published>2024-01-19T10:22:00-06:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Wind Advisory issued January 19 at 10:22AM CST until January 19 at 3:00PM CST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=TX1268851CE558.WindAdvisory.1268851DA010TX.LCHNPWLCH.ddb398ce0b4341d0234a5daf01f8fe9f"/>
-<summary>...WIND ADVISORY IN EFFECT UNTIL 3 PM CST THIS AFTERNOON... * WHAT...North winds 15 to 25 mph with gusts up to 30 mph. * WHERE...In Louisiana, Lower St. Martin, West Cameron, East Cameron, Upper St. Mary, Lower Vermilion, Lower Iberia and Lower St. Mary Parishes. In Texas, Upper Jefferson and Lower Jefferson Counties.</summary>
-<cap:event>Wind Advisory</cap:event>
-<cap:effective>2024-01-19T10:22:00-06:00</cap:effective>
-<cap:expires>2024-01-19T15:00:00-06:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Lower Jefferson; Upper Jefferson</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>048245</value>
-<valueName>UGC</valueName>
-<value>TXZ515 TXZ615</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.NEW.KLCH.WI.Y.0005.240119T1622Z-240119T2100Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=TX1268851CE558.WindAdvisory.1268851DA010TX.LCHNPWLCH.d524f75203119477690e07a0177d42eb</id>
-<updated>2024-01-19T10:22:00-06:00</updated>
-<published>2024-01-19T10:22:00-06:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Wind Advisory issued January 19 at 10:22AM CST until January 19 at 3:00PM CST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=TX1268851CE558.WindAdvisory.1268851DA010TX.LCHNPWLCH.d524f75203119477690e07a0177d42eb"/>
-<summary>...WIND ADVISORY IN EFFECT UNTIL 3 PM CST THIS AFTERNOON... ...HARD FREEZE WARNING REMAINS IN EFFECT FROM MIDNIGHT TONIGHT TO 9 AM CST SATURDAY... * WHAT...For the Wind Advisory, north winds 15 to 25 mph with gusts up to 30 mph. For the Hard Freeze Warning, sub-freezing temperatures as low as 25 degrees expected.</summary>
-<cap:event>Wind Advisory</cap:event>
-<cap:effective>2024-01-19T10:22:00-06:00</cap:effective>
-<cap:expires>2024-01-19T15:00:00-06:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Northern Orange; Southern Orange</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>048361</value>
-<valueName>UGC</valueName>
-<value>TXZ516 TXZ616</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.NEW.KLCH.WI.Y.0005.240119T1622Z-240119T2100Z/
-/O.CON.KLCH.HZ.W.0003.240120T0600Z-240120T1500Z/</value>
-</cap:parameter>
-</entry>
-<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=TX1268851CE558.HardFreezeWarning.1268852BF7F0TX.LCHNPWLCH.05c21cb531ed0354423310a3c9481c5d</id>
 <updated>2024-01-19T10:22:00-06:00</updated>
 <published>2024-01-19T10:22:00-06:00</published>
@@ -11483,136 +11408,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <valueName>VTEC</valueName>
 <value>/O.CON.KLCH.HZ.W.0003.240120T0600Z-240120T1500Z/
 /O.CON.KLCH.HZ.W.0004.240121T0600Z-240121T1500Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=TX1268851CCA00.SpecialWeatherStatement.1268851DA010TX.EWXSPSEWX.eee7c74db222fa6ace3aab9924e75e36</id>
-<updated>2024-01-19T09:52:00-06:00</updated>
-<published>2024-01-19T09:52:00-06:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Special Weather Statement issued January 19 at 9:52AM CST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=TX1268851CCA00.SpecialWeatherStatement.1268851DA010TX.EWXSPSEWX.eee7c74db222fa6ace3aab9924e75e36"/>
-<summary>...HIGH WIND GUSTS THROUGH THE MORNING... A strong cold front has moved through South-Central Texas. Northerly winds or 15 to 25 mph with gusts up to 40 mph are blowing across most of the region. These winds will continue until the middle of the afternoon.</summary>
-<cap:event>Special Weather Statement</cap:event>
-<cap:effective>2024-01-19T09:52:00-06:00</cap:effective>
-<cap:expires>2024-01-19T15:00:00-06:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Observed</cap:certainty>
-<cap:areaDesc>Atascosa; Bandera; Bastrop; Bexar; Blanco; Burnet; Caldwell; Comal; De Witt; Edwards; Fayette; Frio; Gillespie; Gonzales; Guadalupe; Hays; Karnes; Kendall; Kerr; Lavaca; Lee; Llano; Medina; Real; Travis; Uvalde; Williamson; Wilson</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>048013 048019 048021 048029 048031 048053 048055 048091 048123 048137 048149 048163 048171 048177 048187 048209 048255 048259 048265 048285 048287 048299 048325 048385 048453 048463 048491 048493</value>
-<valueName>UGC</valueName>
-<value>TXZ171 TXZ172 TXZ173 TXZ184 TXZ185 TXZ186 TXZ187 TXZ188 TXZ189 TXZ190 TXZ191 TXZ192 TXZ193 TXZ194 TXZ203 TXZ204 TXZ205 TXZ206 TXZ207 TXZ208 TXZ209 TXZ219 TXZ220 TXZ221 TXZ222 TXZ223 TXZ224 TXZ225</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value></value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=TX1268851C0840.FreezeWarning.1268852BF7F0TX.CRPNPWCRP.368447bc549d10ed3e683a10af444d85</id>
-<updated>2024-01-19T04:56:00-06:00</updated>
-<published>2024-01-19T04:56:00-06:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Freeze Warning issued January 19 at 4:56AM CST until January 20 at 9:00AM CST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=TX1268851C0840.FreezeWarning.1268852BF7F0TX.CRPNPWCRP.368447bc549d10ed3e683a10af444d85"/>
-<summary>...FREEZE WARNING REMAINS IN EFFECT FROM 1 AM TO 9 AM CST SATURDAY... * WHAT...Sub-freezing temperatures as low as 26 expected. * WHERE...La Salle, McMullen, Live Oak, Bee, Goliad, Webb, Duval and Jim Wells Counties. * WHEN...From 1 AM to 9 AM CST Saturday.</summary>
-<cap:event>Freeze Warning</cap:event>
-<cap:effective>2024-01-19T04:56:00-06:00</cap:effective>
-<cap:expires>2024-01-20T09:00:00-06:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Bee; Duval; Goliad; Jim Wells; La Salle; Live Oak; McMullen; Webb</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>048025 048131 048175 048249 048283 048297 048311 048479</value>
-<valueName>UGC</valueName>
-<value>TXZ229 TXZ230 TXZ231 TXZ232 TXZ233 TXZ239 TXZ240 TXZ241</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KCRP.FZ.W.0005.240120T0700Z-240120T1500Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=TX1268851C0840.FreezeWarning.1268852BF7F0TX.CRPNPWCRP.54cf898037854342273f4f70d6572b50</id>
-<updated>2024-01-19T04:56:00-06:00</updated>
-<published>2024-01-19T04:56:00-06:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Freeze Warning issued January 19 at 4:56AM CST until January 20 at 9:00AM CST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=TX1268851C0840.FreezeWarning.1268852BF7F0TX.CRPNPWCRP.54cf898037854342273f4f70d6572b50"/>
-<summary>...DENSE FOG ADVISORY REMAINS IN EFFECT UNTIL 6 AM CST EARLY THIS MORNING... ...FREEZE WARNING REMAINS IN EFFECT FROM 1 AM TO 9 AM CST SATURDAY... * WHAT...For the Dense Fog Advisory, Visibility one quarter mile or less in dense fog. For the Freeze Warning, sub-freezing</summary>
-<cap:event>Freeze Warning</cap:event>
-<cap:effective>2024-01-19T04:56:00-06:00</cap:effective>
-<cap:expires>2024-01-20T09:00:00-06:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Inland Calhoun; Inland Refugio; Inland San Patricio; Victoria</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>048057 048391 048409 048469</value>
-<valueName>UGC</valueName>
-<value>TXZ234 TXZ244 TXZ246 TXZ247</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KCRP.FZ.W.0005.240120T0700Z-240120T1500Z/
-/O.CON.KCRP.FG.Y.0003.000000T0000Z-240119T1200Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=TX1268851C0840.FreezeWarning.1268852BF7F0TX.CRPNPWCRP.1e9c1348cfd3cb17c874ac53193b6fc3</id>
-<updated>2024-01-19T04:56:00-06:00</updated>
-<published>2024-01-19T04:56:00-06:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Freeze Warning issued January 19 at 4:56AM CST until January 20 at 9:00AM CST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=TX1268851C0840.FreezeWarning.1268852BF7F0TX.CRPNPWCRP.1e9c1348cfd3cb17c874ac53193b6fc3"/>
-<summary>...DENSE FOG ADVISORY NOW IN EFFECT UNTIL 7 AM CST THIS MORNING... ...FREEZE WARNING REMAINS IN EFFECT FROM 1 AM TO 9 AM CST SATURDAY... * WHAT...For the Dense Fog Advisory, Visibility one quarter mile or less in dense fog. For the Freeze Warning, sub-freezing temperatures as low as 27 expected.</summary>
-<cap:event>Freeze Warning</cap:event>
-<cap:effective>2024-01-19T04:56:00-06:00</cap:effective>
-<cap:expires>2024-01-20T09:00:00-06:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Inland Kleberg; Inland Nueces</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>048273 048355</value>
-<valueName>UGC</valueName>
-<value>TXZ242 TXZ243</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.EXT.KCRP.FG.Y.0003.000000T0000Z-240119T1300Z/
-/O.CON.KCRP.FZ.W.0005.240120T0700Z-240120T1500Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -12196,38 +11991,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value>/O.NEW.KRNK.WC.Y.0003.240120T0500Z-240120T1700Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=VA1268851C74D8.WinterWeatherAdvisory.1268851DA010VA.AKQWSWAKQ.e322a2b26ac94b27b31e1c6873ec14fa</id>
-<updated>2024-01-19T08:34:00-05:00</updated>
-<published>2024-01-19T08:34:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Winter Weather Advisory issued January 19 at 8:34AM EST until January 19 at 4:00PM EST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=VA1268851C74D8.WinterWeatherAdvisory.1268851DA010VA.AKQWSWAKQ.e322a2b26ac94b27b31e1c6873ec14fa"/>
-<summary>...WINTER WEATHER ADVISORY REMAINS IN EFFECT UNTIL 4 PM EST THIS AFTERNOON... * WHAT...Snow expected. Total snow accumulations of up to one inch. * WHERE...Portions of east central and north central Virginia. * WHEN...Until 4 PM EST this afternoon. The primary timeframe for</summary>
-<cap:event>Winter Weather Advisory</cap:event>
-<cap:effective>2024-01-19T08:34:00-05:00</cap:effective>
-<cap:expires>2024-01-19T16:00:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Richmond; Westmoreland</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>051159 051193</value>
-<valueName>UGC</valueName>
-<value>VAZ075 VAZ076</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KAKQ.WW.Y.0003.000000T0000Z-240119T2100Z/</value>
 </cap:parameter>
 </entry>
 <entry>
