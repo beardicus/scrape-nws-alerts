@@ -16,11 +16,11 @@ xmlns = 'http://www.w3.org/2005/Atom'
 xmlns:cap = 'urn:oasis:names:tc:emergency:cap:1.1'
 xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 >
-<!-- http-date = Sun, 21 Jan 2024 13:55:00 GMT -->
+<!-- http-date = Sun, 21 Jan 2024 14:32:00 GMT -->
 <id>https://alerts.weather.gov/cap/us.php?x=0</id>
 <logo>http://alerts.weather.gov/images/xml_logo.gif</logo>
 <generator>NWS CAP Server</generator>
-<updated>2024-01-21T03:55:00-10:00</updated>
+<updated>2024-01-21T09:32:00-05:00</updated>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
@@ -443,6 +443,38 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=AL1268853B1578.WindChillAdvisory.1268853B3A30AL.TAEWSWTAE.d20ad5a5133e8ba3eac17987e0f4083d</id>
+<updated>2024-01-21T08:06:00-06:00</updated>
+<published>2024-01-21T08:06:00-06:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Wind Chill Advisory issued January 21 at 8:06AM CST until January 21 at 9:00AM CST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=AL1268853B1578.WindChillAdvisory.1268853B3A30AL.TAEWSWTAE.d20ad5a5133e8ba3eac17987e0f4083d"/>
+<summary>...WIND CHILL ADVISORY REMAINS IN EFFECT UNTIL 10 AM EST /9 AM CST/ THIS MORNING... * WHAT...Very cold wind chills occurring. Wind chills as low as 15 degrees. * WHERE...Southeast Alabama, south central and southwest Georgia, and portions of the Florida Panhandle.</summary>
+<cap:event>Wind Chill Advisory</cap:event>
+<cap:effective>2024-01-21T08:06:00-06:00</cap:effective>
+<cap:expires>2024-01-21T09:00:00-06:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Coffee; Dale; Geneva; Henry; Houston</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>001031 001045 001061 001067 001069</value>
+<valueName>UGC</valueName>
+<value>ALZ065 ALZ066 ALZ067 ALZ068 ALZ069</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KTAE.WC.Y.0003.000000T0000Z-240121T1500Z/</value>
+</cap:parameter>
+</entry>
+<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=AL1268853A9F80.WindChillAdvisory.1268853B3A30AL.MOBWSWMOB.095ae98813e7ab3bd03c1edd81c50a0a</id>
 <updated>2024-01-21T05:04:00-06:00</updated>
 <published>2024-01-21T05:04:00-06:00</published>
@@ -568,38 +600,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value>/O.CON.KHUN.WC.Y.0002.000000T0000Z-240121T1500Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=AL1268852CA754.WindChillAdvisory.1268853B3A30AL.TAEWSWTAE.d20ad5a5133e8ba3eac17987e0f4083d</id>
-<updated>2024-01-20T13:49:00-06:00</updated>
-<published>2024-01-20T13:49:00-06:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Wind Chill Advisory issued January 20 at 1:49PM CST until January 21 at 9:00AM CST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=AL1268852CA754.WindChillAdvisory.1268853B3A30AL.TAEWSWTAE.d20ad5a5133e8ba3eac17987e0f4083d"/>
-<summary>...WIND CHILL ADVISORY REMAINS IN EFFECT FROM 8 PM EST /7 PM CST/ THIS EVENING TO 10 AM EST /9 AM CST/ SUNDAY... * WHAT...Very cold wind chills expected. Wind chills as low as 10 above zero. * WHERE...Southeast Alabama, south central and southwest Georgia, and portions of the Florida Panhandle.</summary>
-<cap:event>Wind Chill Advisory</cap:event>
-<cap:effective>2024-01-20T13:49:00-06:00</cap:effective>
-<cap:expires>2024-01-21T09:00:00-06:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Coffee; Dale; Geneva; Henry; Houston</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>001031 001045 001061 001067 001069</value>
-<valueName>UGC</valueName>
-<value>ALZ065 ALZ066 ALZ067 ALZ068 ALZ069</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KTAE.WC.Y.0003.240121T0100Z-240121T1500Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -2459,6 +2459,137 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=FL1268853B17D0.FreezeWarning.1268854A2E50FL.JAXNPWJAX.b0c89aa02cfd1cc413da9e85775cb23d</id>
+<updated>2024-01-21T09:12:00-05:00</updated>
+<published>2024-01-21T09:12:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Freeze Warning issued January 21 at 9:12AM EST until January 22 at 8:00AM EST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=FL1268853B17D0.FreezeWarning.1268854A2E50FL.JAXNPWJAX.b0c89aa02cfd1cc413da9e85775cb23d"/>
+<summary>...FREEZE WARNING REMAINS IN EFFECT FROM 9 PM THIS EVENING TO 8 AM EST MONDAY... ...HARD FREEZE WARNING HAS EXPIRED THIS MORNING... * WHAT...Sub-freezing temperatures as low as 28 expected. * WHERE...Portions of northeast and northern Florida and southeast Georgia.</summary>
+<cap:event>Freeze Warning</cap:event>
+<cap:effective>2024-01-21T09:12:00-05:00</cap:effective>
+<cap:expires>2024-01-22T08:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Baker; Hamilton; Inland Nassau; Northern Columbia; Southern Columbia; Suwannee</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>012003 012023 012047 012089 012121</value>
+<valueName>UGC</valueName>
+<value>FLZ020 FLZ021 FLZ023 FLZ024 FLZ122 FLZ222</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.EXP.KJAX.HZ.W.0004.000000T0000Z-240121T1400Z/
+/O.CON.KJAX.FZ.W.0006.240122T0200Z-240122T1300Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=FL1268853B17D0.FrostAdvisory.1268854A2E50FL.JAXNPWJAX.f031eba3d6b19bf5776eeae0448459a0</id>
+<updated>2024-01-21T09:12:00-05:00</updated>
+<published>2024-01-21T09:12:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Frost Advisory issued January 21 at 9:12AM EST until January 22 at 8:00AM EST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=FL1268853B17D0.FrostAdvisory.1268854A2E50FL.JAXNPWJAX.f031eba3d6b19bf5776eeae0448459a0"/>
+<summary>...FROST ADVISORY IN EFFECT FROM 9 PM THIS EVENING TO 8 AM EST MONDAY... ...HARD FREEZE WARNING HAS EXPIRED THIS MORNING... * WHAT...Temperatures as low as 33 will result in frost formation. * WHERE...In Florida, Union, Gilchrist and Western Duval</summary>
+<cap:event>Frost Advisory</cap:event>
+<cap:effective>2024-01-21T09:12:00-05:00</cap:effective>
+<cap:expires>2024-01-22T08:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Gilchrist; Union; Western Duval</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>012031 012041 012125</value>
+<valueName>UGC</valueName>
+<value>FLZ030 FLZ035 FLZ425</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.EXP.KJAX.HZ.W.0004.000000T0000Z-240121T1400Z/
+/O.NEW.KJAX.FR.Y.0005.240122T0200Z-240122T1300Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=FL1268853B1708.FloodWarning.1268854A5B3CFL.JAXFLSJAX.824009e78daa83ff5bdcc55fdcf49f4c</id>
+<updated>2024-01-21T09:10:00-05:00</updated>
+<published>2024-01-21T09:10:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Flood Warning issued January 21 at 9:10AM EST until further notice by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=FL1268853B1708.FloodWarning.1268854A5B3CFL.JAXFLSJAX.824009e78daa83ff5bdcc55fdcf49f4c"/>
+<summary>...The Flood Warning continues for the following rivers in Florida... Santa Fe River At Three Rivers Estates affecting Suwannee, Gilchrist and Columbia Counties. Additional information is available at https://water.weather.gov/ahps2/forecasts.php?wfo=jax. The next statement will be issued Monday morning at 915 AM EST.</summary>
+<cap:event>Flood Warning</cap:event>
+<cap:effective>2024-01-21T09:10:00-05:00</cap:effective>
+<cap:expires>2024-01-22T09:15:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Columbia; Gilchrist; Suwannee</cap:areaDesc>
+<cap:polygon>29.9,-82.78 29.92,-82.8 29.9,-82.83 29.93,-82.83 29.96,-82.79 29.93,-82.76 29.9,-82.78</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>012023 012041 012121</value>
+<valueName>UGC</valueName>
+<value>FLC023 FLC041 FLC121</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KJAX.FL.W.0002.000000T0000Z-000000T0000Z/
+/TREF1.1.ER.240116T0200Z.240121T0400Z.000000T0000Z.NO/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=FL1268853B1578.WindChillAdvisory.1268853B3A30FL.TAEWSWTAE.67a883ec5f4558c86344a03b26755a30</id>
+<updated>2024-01-21T09:06:00-05:00</updated>
+<published>2024-01-21T09:06:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Wind Chill Advisory issued January 21 at 9:06AM EST until January 21 at 10:00AM EST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=FL1268853B1578.WindChillAdvisory.1268853B3A30FL.TAEWSWTAE.67a883ec5f4558c86344a03b26755a30"/>
+<summary>...WIND CHILL ADVISORY REMAINS IN EFFECT UNTIL 10 AM EST /9 AM CST/ THIS MORNING... * WHAT...Very cold wind chills occurring. Wind chills as low as 15 degrees. * WHERE...Southeast Alabama, south central and southwest Georgia, and portions of the Florida Panhandle.</summary>
+<cap:event>Wind Chill Advisory</cap:event>
+<cap:effective>2024-01-21T09:06:00-05:00</cap:effective>
+<cap:expires>2024-01-21T10:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Central Walton; Holmes; Jackson; North Walton; South Walton; Washington</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>012059 012063 012131 012133</value>
+<valueName>UGC</valueName>
+<value>FLZ007 FLZ008 FLZ009 FLZ010 FLZ011 FLZ108</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KTAE.WC.Y.0003.000000T0000Z-240121T1500Z/</value>
+</cap:parameter>
+</entry>
+<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=FL1268853AF958.HighSurfAdvisory.1268855774C0FL.MFLCFWMFL.a66d414adb8f738b3a6ab747c47abcf6</id>
 <updated>2024-01-21T08:34:00-05:00</updated>
 <published>2024-01-21T08:34:00-05:00</published>
@@ -2749,40 +2880,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=FL12688539E400.FreezeWarning.1268854A2E50FL.JAXNPWJAX.b0c89aa02cfd1cc413da9e85775cb23d</id>
-<updated>2024-01-21T01:24:00-05:00</updated>
-<published>2024-01-21T01:24:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Freeze Warning issued January 21 at 1:24AM EST until January 22 at 8:00AM EST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=FL12688539E400.FreezeWarning.1268854A2E50FL.JAXNPWJAX.b0c89aa02cfd1cc413da9e85775cb23d"/>
-<summary>...HARD FREEZE WARNING REMAINS IN EFFECT UNTIL 9 AM EST THIS MORNING... ...FREEZE WARNING IN EFFECT FROM 9 PM THIS EVENING TO 8 AM EST MONDAY... * WHAT...For the Hard Freeze Warning, sub-freezing temperatures as low as 21. For the Freeze Warning, sub-freezing</summary>
-<cap:event>Freeze Warning</cap:event>
-<cap:effective>2024-01-21T01:24:00-05:00</cap:effective>
-<cap:expires>2024-01-22T08:00:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Baker; Hamilton; Inland Nassau; Northern Columbia; Southern Columbia; Suwannee</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>012003 012023 012047 012089 012121</value>
-<valueName>UGC</valueName>
-<value>FLZ020 FLZ021 FLZ023 FLZ024 FLZ122 FLZ222</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.UPG.KJAX.FZ.A.0006.240122T0200Z-240122T1300Z/
-/O.NEW.KJAX.FZ.W.0006.240122T0200Z-240122T1300Z/
-/O.CON.KJAX.HZ.W.0004.000000T0000Z-240121T1400Z/</value>
-</cap:parameter>
-</entry>
-<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=FL126885391E58.WindChillAdvisory.1268853B3A30FL.JAXWSWJAX.fc2fd71a5a16940092dfcc4c1c59f7a3</id>
 <updated>2024-01-20T20:18:00-05:00</updated>
 <published>2024-01-20T20:18:00-05:00</published>
@@ -2815,50 +2912,182 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=FL126885391DF4.FloodWarning.126885486548FL.JAXFLSJAX.824009e78daa83ff5bdcc55fdcf49f4c</id>
-<updated>2024-01-20T20:17:00-05:00</updated>
-<published>2024-01-20T20:17:00-05:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=GA1268853B1834.FloodWarning.1268854A5B3CGA.JAXFLSJAX.0361914d02005898c1d3248c5fa4f008</id>
+<updated>2024-01-21T09:13:00-05:00</updated>
+<published>2024-01-21T09:13:00-05:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Flood Warning issued January 20 at 8:17PM EST until further notice by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=FL126885391DF4.FloodWarning.126885486548FL.JAXFLSJAX.824009e78daa83ff5bdcc55fdcf49f4c"/>
-<summary>...The Flood Warning continues for the following rivers in Florida... Santa Fe River At Three Rivers Estates affecting Gilchrist, Suwannee and Columbia Counties. Additional information is available at https://water.weather.gov/ahps2/forecasts.php?wfo=jax. Sunday evening at 830 PM EST.</summary>
+<title>Flood Warning issued January 21 at 9:13AM EST until further notice by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=GA1268853B1834.FloodWarning.1268854A5B3CGA.JAXFLSJAX.0361914d02005898c1d3248c5fa4f008"/>
+<summary>...The Flood Warning continues for the following rivers in Georgia... Satilla River At Atkinson affecting Brantley County. Additional information is available at https://water.weather.gov/ahps2/forecasts.php?wfo=jax. The next statement will be issued Monday morning at 915 AM EST. &amp;&amp;</summary>
 <cap:event>Flood Warning</cap:event>
-<cap:effective>2024-01-20T20:17:00-05:00</cap:effective>
-<cap:expires>2024-01-21T20:30:00-05:00</cap:expires>
+<cap:effective>2024-01-21T09:13:00-05:00</cap:effective>
+<cap:expires>2024-01-22T09:15:00-05:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
 <cap:category>Met</cap:category>
 <cap:urgency>Expected</cap:urgency>
 <cap:severity>Moderate</cap:severity>
 <cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Columbia; Gilchrist; Suwannee</cap:areaDesc>
-<cap:polygon>29.9,-82.78 29.92,-82.8 29.9,-82.83 29.93,-82.83 29.96,-82.79 29.93,-82.76 29.9,-82.78</cap:polygon>
+<cap:areaDesc>Brantley</cap:areaDesc>
+<cap:polygon>31.29,-81.84 31.14,-81.83 31.14,-81.9 31.28,-81.91 31.29,-81.84</cap:polygon>
 <cap:geocode>
 <valueName>FIPS6</valueName>
-<value>012023 012041 012121</value>
+<value>013025</value>
 <valueName>UGC</valueName>
-<value>FLC023 FLC041 FLC121</value>
+<value>GAC025</value>
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
-<value>/O.CON.KJAX.FL.W.0002.000000T0000Z-000000T0000Z/
-/TREF1.1.ER.240116T0200Z.240121T1200Z.000000T0000Z.NO/</value>
+<value>/O.CON.KJAX.FL.W.0006.000000T0000Z-000000T0000Z/
+/ATKG1.1.ER.240117T0830Z.240121T1330Z.000000T0000Z.NO/</value>
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=FL1268852CA754.WindChillAdvisory.1268853B3A30FL.TAEWSWTAE.67a883ec5f4558c86344a03b26755a30</id>
-<updated>2024-01-20T14:49:00-05:00</updated>
-<published>2024-01-20T14:49:00-05:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=GA1268853B17D0.FreezeWarning.1268854A2E50GA.JAXNPWJAX.c65937e10a42b5fcfaec90f43d19e4b5</id>
+<updated>2024-01-21T09:12:00-05:00</updated>
+<published>2024-01-21T09:12:00-05:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Wind Chill Advisory issued January 20 at 2:49PM EST until January 21 at 10:00AM EST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=FL1268852CA754.WindChillAdvisory.1268853B3A30FL.TAEWSWTAE.67a883ec5f4558c86344a03b26755a30"/>
-<summary>...WIND CHILL ADVISORY REMAINS IN EFFECT FROM 8 PM EST /7 PM CST/ THIS EVENING TO 10 AM EST /9 AM CST/ SUNDAY... * WHAT...Very cold wind chills expected. Wind chills as low as 10 above zero. * WHERE...Southeast Alabama, south central and southwest Georgia, and portions of the Florida Panhandle.</summary>
+<title>Freeze Warning issued January 21 at 9:12AM EST until January 22 at 8:00AM EST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=GA1268853B17D0.FreezeWarning.1268854A2E50GA.JAXNPWJAX.c65937e10a42b5fcfaec90f43d19e4b5"/>
+<summary>...FREEZE WARNING REMAINS IN EFFECT FROM 9 PM THIS EVENING TO 8 AM EST MONDAY... ...HARD FREEZE WARNING HAS EXPIRED THIS MORNING... * WHAT...Sub-freezing temperatures as low as 28 expected. * WHERE...Portions of northeast and northern Florida and southeast Georgia.</summary>
+<cap:event>Freeze Warning</cap:event>
+<cap:effective>2024-01-21T09:12:00-05:00</cap:effective>
+<cap:expires>2024-01-22T08:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Appling; Atkinson; Bacon; Brantley; Clinch; Coffee; Echols; Inland Camden; Inland Glynn; Jeff Davis; Northeastern Charlton; Northern Ware; Pierce; Southern Ware; Wayne; Western Charlton</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>013001 013003 013005 013025 013039 013049 013065 013069 013101 013127 013161 013229 013299 013305</value>
+<valueName>UGC</valueName>
+<value>GAZ132 GAZ133 GAZ134 GAZ135 GAZ136 GAZ149 GAZ151 GAZ152 GAZ153 GAZ162 GAZ163 GAZ165 GAZ250 GAZ264 GAZ350 GAZ364</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.EXP.KJAX.HZ.W.0004.000000T0000Z-240121T1400Z/
+/O.CON.KJAX.FZ.W.0006.240122T0200Z-240122T1300Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=GA1268853B17D0.FrostAdvisory.1268854A2E50GA.JAXNPWJAX.5e2d6122248331ee60451dec68e9423c</id>
+<updated>2024-01-21T09:12:00-05:00</updated>
+<published>2024-01-21T09:12:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Frost Advisory issued January 21 at 9:12AM EST until January 22 at 8:00AM EST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=GA1268853B17D0.FrostAdvisory.1268854A2E50GA.JAXNPWJAX.5e2d6122248331ee60451dec68e9423c"/>
+<summary>...FROST ADVISORY IN EFFECT FROM 9 PM THIS EVENING TO 8 AM EST MONDAY... ...HARD FREEZE WARNING HAS EXPIRED THIS MORNING... * WHAT...Temperatures as low as 33 will result in frost formation. * WHERE...In Florida, Union, Gilchrist and Western Duval</summary>
+<cap:event>Frost Advisory</cap:event>
+<cap:effective>2024-01-21T09:12:00-05:00</cap:effective>
+<cap:expires>2024-01-22T08:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Coastal Camden; Coastal Glynn</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>013039 013127</value>
+<valueName>UGC</valueName>
+<value>GAZ154 GAZ166</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.EXP.KJAX.HZ.W.0004.000000T0000Z-240121T1400Z/
+/O.NEW.KJAX.FR.Y.0005.240122T0200Z-240122T1300Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=GA1268853B17D0.FloodWarning.12688567A160GA.JAXFLSJAX.92c91ed3cf056a2300b4c2f1dcb1744f</id>
+<updated>2024-01-21T09:12:00-05:00</updated>
+<published>2024-01-21T09:12:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Flood Warning issued January 21 at 9:12AM EST until January 24 at 1:00AM EST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=GA1268853B17D0.FloodWarning.12688567A160GA.JAXFLSJAX.92c91ed3cf056a2300b4c2f1dcb1744f"/>
+<summary>...The Flood Warning continues for the following rivers in Georgia... Altamaha River At Charlotteville affecting Toombs, Jeff Davis and Montgomery Counties. Additional information is available at https://water.weather.gov/ahps2/forecasts.php?wfo=jax. The next statement will be issued Monday morning at 915 AM EST.</summary>
+<cap:event>Flood Warning</cap:event>
+<cap:effective>2024-01-21T09:12:00-05:00</cap:effective>
+<cap:expires>2024-01-24T01:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Jeff Davis; Montgomery; Toombs</cap:areaDesc>
+<cap:polygon>31.99,-82.54 32,-82.43 31.94,-82.43 31.94,-82.55 31.99,-82.54</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>013161 013209 013279</value>
+<valueName>UGC</valueName>
+<value>GAC161 GAC209 GAC279</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.EXT.KJAX.FL.W.0004.000000T0000Z-240124T0600Z/
+/CHRG1.1.ER.240118T0500Z.240121T1800Z.240124T0000Z.NO/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=GA1268853B17D0.FloodWarning.126885766E70GA.JAXFLSJAX.b439e0626717f2d70750ea4ce01e0208</id>
+<updated>2024-01-21T09:12:00-05:00</updated>
+<published>2024-01-21T09:12:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Flood Warning issued January 21 at 9:12AM EST until January 24 at 10:00PM EST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=GA1268853B17D0.FloodWarning.126885766E70GA.JAXFLSJAX.b439e0626717f2d70750ea4ce01e0208"/>
+<summary>...The Flood Warning continues for the following rivers in Georgia... Altamaha River At Baxley affecting Toombs, Tattnall, Appling and Wayne Counties. Additional information is available at https://water.weather.gov/ahps2/forecasts.php?wfo=jax. The next statement will be issued Monday morning at 915 AM EST.</summary>
+<cap:event>Flood Warning</cap:event>
+<cap:effective>2024-01-21T09:12:00-05:00</cap:effective>
+<cap:expires>2024-01-24T22:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Appling; Tattnall; Toombs; Wayne</cap:areaDesc>
+<cap:polygon>32,-82.43 31.93,-82.13 31.83,-81.95 31.76,-81.99 31.88,-82.22 31.94,-82.43 32,-82.43</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>013001 013267 013279 013305</value>
+<valueName>UGC</valueName>
+<value>GAC001 GAC267 GAC279 GAC305</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.EXT.KJAX.FL.W.0005.000000T0000Z-240125T0300Z/
+/BAXG1.1.ER.240118T0620Z.240122T0600Z.240124T2100Z.NO/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=GA1268853B1578.WindChillAdvisory.1268853B3A30GA.TAEWSWTAE.71f4b2159c999ec271b2c1357d37995d</id>
+<updated>2024-01-21T09:06:00-05:00</updated>
+<published>2024-01-21T09:06:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Wind Chill Advisory issued January 21 at 9:06AM EST until January 21 at 10:00AM EST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=GA1268853B1578.WindChillAdvisory.1268853B3A30GA.TAEWSWTAE.71f4b2159c999ec271b2c1357d37995d"/>
+<summary>...WIND CHILL ADVISORY REMAINS IN EFFECT UNTIL 10 AM EST /9 AM CST/ THIS MORNING... * WHAT...Very cold wind chills occurring. Wind chills as low as 15 degrees. * WHERE...Southeast Alabama, south central and southwest Georgia, and portions of the Florida Panhandle.</summary>
 <cap:event>Wind Chill Advisory</cap:event>
-<cap:effective>2024-01-20T14:49:00-05:00</cap:effective>
+<cap:effective>2024-01-21T09:06:00-05:00</cap:effective>
 <cap:expires>2024-01-21T10:00:00-05:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
@@ -2866,17 +3095,17 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:urgency>Expected</cap:urgency>
 <cap:severity>Minor</cap:severity>
 <cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Central Walton; Holmes; Jackson; North Walton; South Walton; Washington</cap:areaDesc>
+<cap:areaDesc>Baker; Ben Hill; Berrien; Brooks; Calhoun; Clay; Colquitt; Cook; Decatur; Dougherty; Early; Grady; Irwin; Lanier; Lee; Lowndes; Miller; Mitchell; Quitman; Randolph; Seminole; Terrell; Thomas; Tift; Turner; Worth</cap:areaDesc>
 <cap:polygon></cap:polygon>
 <cap:geocode>
 <valueName>FIPS6</valueName>
-<value>012059 012063 012131 012133</value>
+<value>013007 013017 013019 013027 013037 013061 013071 013075 013087 013095 013099 013131 013155 013173 013177 013185 013201 013205 013239 013243 013253 013273 013275 013277 013287 013321</value>
 <valueName>UGC</valueName>
-<value>FLZ007 FLZ008 FLZ009 FLZ010 FLZ011 FLZ108</value>
+<value>GAZ120 GAZ121 GAZ122 GAZ123 GAZ124 GAZ125 GAZ126 GAZ127 GAZ128 GAZ129 GAZ130 GAZ131 GAZ142 GAZ143 GAZ144 GAZ145 GAZ146 GAZ147 GAZ148 GAZ155 GAZ156 GAZ157 GAZ158 GAZ159 GAZ160 GAZ161</value>
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
-<value>/O.CON.KTAE.WC.Y.0003.240121T0100Z-240121T1500Z/</value>
+<value>/O.CON.KTAE.WC.Y.0003.000000T0000Z-240121T1500Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -3040,40 +3269,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=GA12688539E400.FreezeWarning.1268854A2E50GA.JAXNPWJAX.c65937e10a42b5fcfaec90f43d19e4b5</id>
-<updated>2024-01-21T01:24:00-05:00</updated>
-<published>2024-01-21T01:24:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Freeze Warning issued January 21 at 1:24AM EST until January 22 at 8:00AM EST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=GA12688539E400.FreezeWarning.1268854A2E50GA.JAXNPWJAX.c65937e10a42b5fcfaec90f43d19e4b5"/>
-<summary>...HARD FREEZE WARNING REMAINS IN EFFECT UNTIL 9 AM EST THIS MORNING... ...FREEZE WARNING IN EFFECT FROM 9 PM THIS EVENING TO 8 AM EST MONDAY... * WHAT...For the Hard Freeze Warning, sub-freezing temperatures as low as 21. For the Freeze Warning, sub-freezing</summary>
-<cap:event>Freeze Warning</cap:event>
-<cap:effective>2024-01-21T01:24:00-05:00</cap:effective>
-<cap:expires>2024-01-22T08:00:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Appling; Atkinson; Bacon; Brantley; Clinch; Coffee; Echols; Inland Camden; Inland Glynn; Jeff Davis; Northeastern Charlton; Northern Ware; Pierce; Southern Ware; Wayne; Western Charlton</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>013001 013003 013005 013025 013039 013049 013065 013069 013101 013127 013161 013229 013299 013305</value>
-<valueName>UGC</valueName>
-<value>GAZ132 GAZ133 GAZ134 GAZ135 GAZ136 GAZ149 GAZ151 GAZ152 GAZ153 GAZ162 GAZ163 GAZ165 GAZ250 GAZ264 GAZ350 GAZ364</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.UPG.KJAX.FZ.A.0006.240122T0200Z-240122T1300Z/
-/O.NEW.KJAX.FZ.W.0006.240122T0200Z-240122T1300Z/
-/O.CON.KJAX.HZ.W.0004.000000T0000Z-240121T1400Z/</value>
-</cap:parameter>
-</entry>
-<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=GA126885391E58.WindChillAdvisory.1268853B3A30GA.JAXWSWJAX.102fb5ee7fd24ed8246f21a4ac569031</id>
 <updated>2024-01-20T20:18:00-05:00</updated>
 <published>2024-01-20T20:18:00-05:00</published>
@@ -3103,137 +3298,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value>/O.EXT.KJAX.WC.Y.0003.240121T0400Z-240121T1500Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=GA126885391DF4.FloodWarning.126885486548GA.JAXFLSJAX.0361914d02005898c1d3248c5fa4f008</id>
-<updated>2024-01-20T20:17:00-05:00</updated>
-<published>2024-01-20T20:17:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Flood Warning issued January 20 at 8:17PM EST until further notice by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=GA126885391DF4.FloodWarning.126885486548GA.JAXFLSJAX.0361914d02005898c1d3248c5fa4f008"/>
-<summary>...The Flood Warning continues for the following rivers in Georgia... Satilla River At Atkinson affecting Brantley County. Additional information is available at https://water.weather.gov/ahps2/forecasts.php?wfo=jax. Sunday evening at 830 PM EST. &amp;&amp;</summary>
-<cap:event>Flood Warning</cap:event>
-<cap:effective>2024-01-20T20:17:00-05:00</cap:effective>
-<cap:expires>2024-01-21T20:30:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Brantley</cap:areaDesc>
-<cap:polygon>31.29,-81.84 31.14,-81.83 31.14,-81.9 31.28,-81.91 31.29,-81.84</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>013025</value>
-<valueName>UGC</valueName>
-<value>GAC025</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KJAX.FL.W.0006.000000T0000Z-000000T0000Z/
-/ATKG1.1.ER.240117T0830Z.240121T1200Z.000000T0000Z.NO/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=GA126885391D90.FloodWarning.126885697620GA.JAXFLSJAX.92c91ed3cf056a2300b4c2f1dcb1744f</id>
-<updated>2024-01-20T20:16:00-05:00</updated>
-<published>2024-01-20T20:16:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Flood Warning issued January 20 at 8:16PM EST until January 24 at 1:00PM EST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=GA126885391D90.FloodWarning.126885697620GA.JAXFLSJAX.92c91ed3cf056a2300b4c2f1dcb1744f"/>
-<summary>...The Flood Warning is extended for the following rivers in Georgia... Altamaha River At Baxley affecting Appling, Wayne, Tattnall and Toombs Counties. Altamaha River At Charlotteville affecting Jeff Davis, Montgomery and Toombs Counties.</summary>
-<cap:event>Flood Warning</cap:event>
-<cap:effective>2024-01-20T20:16:00-05:00</cap:effective>
-<cap:expires>2024-01-24T13:00:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Jeff Davis; Montgomery; Toombs</cap:areaDesc>
-<cap:polygon>31.99,-82.54 32,-82.43 31.94,-82.43 31.94,-82.55 31.99,-82.54</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>013161 013209 013279</value>
-<valueName>UGC</valueName>
-<value>GAC161 GAC209 GAC279</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.EXT.KJAX.FL.W.0004.000000T0000Z-240124T1800Z/
-/CHRG1.1.ER.240118T0500Z.240121T1800Z.240124T1200Z.NO/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=GA126885391D90.FloodWarning.1268857800C8GA.JAXFLSJAX.b439e0626717f2d70750ea4ce01e0208</id>
-<updated>2024-01-20T20:16:00-05:00</updated>
-<published>2024-01-20T20:16:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Flood Warning issued January 20 at 8:16PM EST until January 25 at 8:30AM EST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=GA126885391D90.FloodWarning.1268857800C8GA.JAXFLSJAX.b439e0626717f2d70750ea4ce01e0208"/>
-<summary>...The Flood Warning is extended for the following rivers in Georgia... Altamaha River At Baxley affecting Appling, Wayne, Tattnall and Toombs Counties. Altamaha River At Charlotteville affecting Jeff Davis, Montgomery and Toombs Counties.</summary>
-<cap:event>Flood Warning</cap:event>
-<cap:effective>2024-01-20T20:16:00-05:00</cap:effective>
-<cap:expires>2024-01-25T08:30:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Appling; Tattnall; Toombs; Wayne</cap:areaDesc>
-<cap:polygon>32,-82.43 31.93,-82.13 31.83,-81.95 31.76,-81.99 31.88,-82.22 31.94,-82.43 32,-82.43</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>013001 013267 013279 013305</value>
-<valueName>UGC</valueName>
-<value>GAC001 GAC267 GAC279 GAC305</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.EXT.KJAX.FL.W.0005.000000T0000Z-240125T1330Z/
-/BAXG1.1.ER.240118T0620Z.240122T1200Z.240125T0730Z.NO/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=GA1268852CA754.WindChillAdvisory.1268853B3A30GA.TAEWSWTAE.71f4b2159c999ec271b2c1357d37995d</id>
-<updated>2024-01-20T14:49:00-05:00</updated>
-<published>2024-01-20T14:49:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Wind Chill Advisory issued January 20 at 2:49PM EST until January 21 at 10:00AM EST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=GA1268852CA754.WindChillAdvisory.1268853B3A30GA.TAEWSWTAE.71f4b2159c999ec271b2c1357d37995d"/>
-<summary>...WIND CHILL ADVISORY REMAINS IN EFFECT FROM 8 PM EST /7 PM CST/ THIS EVENING TO 10 AM EST /9 AM CST/ SUNDAY... * WHAT...Very cold wind chills expected. Wind chills as low as 10 above zero. * WHERE...Southeast Alabama, south central and southwest Georgia, and portions of the Florida Panhandle.</summary>
-<cap:event>Wind Chill Advisory</cap:event>
-<cap:effective>2024-01-20T14:49:00-05:00</cap:effective>
-<cap:expires>2024-01-21T10:00:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Baker; Ben Hill; Berrien; Brooks; Calhoun; Clay; Colquitt; Cook; Decatur; Dougherty; Early; Grady; Irwin; Lanier; Lee; Lowndes; Miller; Mitchell; Quitman; Randolph; Seminole; Terrell; Thomas; Tift; Turner; Worth</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>013007 013017 013019 013027 013037 013061 013071 013075 013087 013095 013099 013131 013155 013173 013177 013185 013201 013205 013239 013243 013253 013273 013275 013277 013287 013321</value>
-<valueName>UGC</valueName>
-<value>GAZ120 GAZ121 GAZ122 GAZ123 GAZ124 GAZ125 GAZ126 GAZ127 GAZ128 GAZ129 GAZ130 GAZ131 GAZ142 GAZ143 GAZ144 GAZ145 GAZ146 GAZ147 GAZ148 GAZ155 GAZ156 GAZ157 GAZ158 GAZ159 GAZ160 GAZ161</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KTAE.WC.Y.0003.240121T0100Z-240121T1500Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -6790,6 +6854,39 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=NC1268853B144C.FloodWarning.1268855A33E0NC.ILMFLSILM.26592d98b3d5f308d9b5c428a3742b34</id>
+<updated>2024-01-21T09:03:00-05:00</updated>
+<published>2024-01-21T09:03:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Flood Warning issued January 21 at 9:03AM EST until January 23 at 1:00PM EST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=NC1268853B144C.FloodWarning.1268855A33E0NC.ILMFLSILM.26592d98b3d5f308d9b5c428a3742b34"/>
+<summary>...The Flood Warning continues for the following rivers in North Carolina... Lumber River Near Lumberton affecting Robeson County. ...The Flood Warning is extended for the following rivers in South Carolina... Great Pee Dee River At Pee Dee affecting Florence and Marion</summary>
+<cap:event>Flood Warning</cap:event>
+<cap:effective>2024-01-21T09:03:00-05:00</cap:effective>
+<cap:expires>2024-01-23T13:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Robeson</cap:areaDesc>
+<cap:polygon>34.67,-79.16 34.68,-79.03 34.57,-78.91 34.52,-78.99 34.59,-79.08 34.58,-79.15 34.67,-79.16</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>037155</value>
+<valueName>UGC</valueName>
+<value>NCC155</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.EXT.KILM.FL.W.0001.000000T0000Z-240123T1800Z/
+/LBRN7.1.ER.240110T0100Z.240118T0920Z.240123T0600Z.UU/</value>
+</cap:parameter>
+</entry>
+<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=NC1268853AFA84.FloodWarning.126885486B24NC.RAHFLSRAH.6c377fb4f580be0673fa79aa1d1baff2</id>
 <updated>2024-01-21T08:37:00-05:00</updated>
 <published>2024-01-21T08:37:00-05:00</published>
@@ -7045,39 +7142,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value>/O.CON.KRNK.WC.Y.0003.000000T0000Z-240121T1500Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=NC126885391EBC.FloodWarning.12688566B700NC.ILMFLSILM.26592d98b3d5f308d9b5c428a3742b34</id>
-<updated>2024-01-20T20:19:00-05:00</updated>
-<published>2024-01-20T20:19:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Flood Warning issued January 20 at 8:19PM EST until January 23 at 7:00PM EST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=NC126885391EBC.FloodWarning.12688566B700NC.ILMFLSILM.26592d98b3d5f308d9b5c428a3742b34"/>
-<summary>...The Flood Warning continues for the following rivers in South Carolina...North Carolina... Great Pee Dee River At Pee Dee affecting Florence and Marion Counties. Lumber River Near Lumberton affecting Robeson County. ...FLOOD WARNING REMAINS IN EFFECT UNTIL TUESDAY EVENING...</summary>
-<cap:event>Flood Warning</cap:event>
-<cap:effective>2024-01-20T20:19:00-05:00</cap:effective>
-<cap:expires>2024-01-23T19:00:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Robeson</cap:areaDesc>
-<cap:polygon>34.67,-79.16 34.68,-79.03 34.57,-78.91 34.52,-78.99 34.59,-79.08 34.58,-79.15 34.67,-79.16</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>037155</value>
-<valueName>UGC</valueName>
-<value>NCC155</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KILM.FL.W.0001.000000T0000Z-240124T0000Z/
-/LBRN7.1.ER.240110T0100Z.240118T0920Z.240123T1200Z.UU/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -7459,6 +7523,38 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <value>032005 032031 032510</value>
 <valueName>UGC</valueName>
 <value>NVZ002</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value></value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=NY1268853B14B0.SpecialWeatherStatement.1268853B4BC4NY.BGMSPSBGM.11a784febe0c92046f492f835296ea0a</id>
+<updated>2024-01-21T09:04:00-05:00</updated>
+<published>2024-01-21T09:04:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Special Weather Statement issued January 21 at 9:04AM EST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=NY1268853B14B0.SpecialWeatherStatement.1268853B4BC4NY.BGMSPSBGM.11a784febe0c92046f492f835296ea0a"/>
+<summary>...Lake Effect Snow Bands Continue to Affect Central New York... At 9 AM, radar and other observations indicated lake effect snow bands were intensifying, especially downwind of the Finger Lakes. This will lead to slippery roads and visibility under a mile. Brief periods of lower visibility are possible as winds gust to around 20 mph.</summary>
+<cap:event>Special Weather Statement</cap:event>
+<cap:effective>2024-01-21T09:04:00-05:00</cap:effective>
+<cap:expires>2024-01-21T10:45:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Observed</cap:certainty>
+<cap:areaDesc>Broome; Chenango; Cortland; Madison; Onondaga; Southern Cayuga; Tioga; Tompkins</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>036007 036011 036017 036023 036053 036067 036107 036109</value>
+<valueName>UGC</valueName>
+<value>NYZ017 NYZ018 NYZ025 NYZ036 NYZ044 NYZ045 NYZ055 NYZ056</value>
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
@@ -8106,6 +8202,39 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=SC1268853B144C.FloodWarning.126885781C20SC.ILMFLSILM.d603344db13518108ca2a01bcee1e25c</id>
+<updated>2024-01-21T09:03:00-05:00</updated>
+<published>2024-01-21T09:03:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Flood Warning issued January 21 at 9:03AM EST until January 25 at 9:00AM EST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=SC1268853B144C.FloodWarning.126885781C20SC.ILMFLSILM.d603344db13518108ca2a01bcee1e25c"/>
+<summary>...The Flood Warning continues for the following rivers in North Carolina... Lumber River Near Lumberton affecting Robeson County. ...The Flood Warning is extended for the following rivers in South Carolina... Great Pee Dee River At Pee Dee affecting Florence and Marion</summary>
+<cap:event>Flood Warning</cap:event>
+<cap:effective>2024-01-21T09:03:00-05:00</cap:effective>
+<cap:expires>2024-01-25T09:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Florence; Marion</cap:areaDesc>
+<cap:polygon>34.24,-79.62 34.24,-79.5 34,-79.45 33.85,-79.32 33.85,-79.44 33.98,-79.57 34.24,-79.62</cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>045041 045067</value>
+<valueName>UGC</valueName>
+<value>SCC041 SCC067</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.EXT.KILM.FL.W.0002.000000T0000Z-240125T1400Z/
+/PDES1.2.ER.240110T1440Z.240117T0100Z.240125T0200Z.NO/</value>
+</cap:parameter>
+</entry>
+<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=SC1268853AB498.WindChillAdvisory.1268853B3A30SC.CHSWSWCHS.c77a61e579c8e1ecf7b30fa7f7227543</id>
 <updated>2024-01-21T06:58:00-05:00</updated>
 <published>2024-01-21T06:58:00-05:00</published>
@@ -8199,39 +8328,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value></value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=SC126885391EBC.FloodWarning.12688577CE00SC.ILMFLSILM.d603344db13518108ca2a01bcee1e25c</id>
-<updated>2024-01-20T20:19:00-05:00</updated>
-<published>2024-01-20T20:19:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Flood Warning issued January 20 at 8:19PM EST until January 25 at 7:00AM EST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=SC126885391EBC.FloodWarning.12688577CE00SC.ILMFLSILM.d603344db13518108ca2a01bcee1e25c"/>
-<summary>...The Flood Warning continues for the following rivers in South Carolina...North Carolina... Great Pee Dee River At Pee Dee affecting Florence and Marion Counties. Lumber River Near Lumberton affecting Robeson County. ...FLOOD WARNING NOW IN EFFECT UNTIL THURSDAY MORNING...</summary>
-<cap:event>Flood Warning</cap:event>
-<cap:effective>2024-01-20T20:19:00-05:00</cap:effective>
-<cap:expires>2024-01-25T07:00:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Moderate</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Florence; Marion</cap:areaDesc>
-<cap:polygon>34.24,-79.62 34.24,-79.5 34,-79.45 33.85,-79.32 33.85,-79.44 33.98,-79.57 34.24,-79.62</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>045041 045067</value>
-<valueName>UGC</valueName>
-<value>SCC041 SCC067</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.EXT.KILM.FL.W.0002.000000T0000Z-240125T1200Z/
-/PDES1.2.ER.240110T1440Z.240117T0100Z.240125T0000Z.NO/</value>
 </cap:parameter>
 </entry>
 <entry>
