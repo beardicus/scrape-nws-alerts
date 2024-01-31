@@ -16,16 +16,48 @@ xmlns = 'http://www.w3.org/2005/Atom'
 xmlns:cap = 'urn:oasis:names:tc:emergency:cap:1.1'
 xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 >
-<!-- http-date = Wed, 31 Jan 2024 07:59:00 GMT -->
+<!-- http-date = Wed, 31 Jan 2024 08:30:00 GMT -->
 <id>https://alerts.weather.gov/cap/us.php?x=0</id>
 <logo>http://alerts.weather.gov/images/xml_logo.gif</logo>
 <generator>NWS CAP Server</generator>
-<updated>2024-01-31T00:59:00-07:00</updated>
+<updated>2024-01-31T03:30:00-05:00</updated>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
 <title>Current Watches, Warnings and Advisories for the United States Issued by the National Weather Service</title>
 <link href="https://alerts.weather.gov/cap/us.php?x=0"/>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=AK126885D2C580.WinterWeatherAdvisory.126885D3A9A0AK.AFCWSWALU.818ca79bd142f85edd2607ba86030ca5</id>
+<updated>2024-01-30T23:16:00-09:00</updated>
+<published>2024-01-30T23:16:00-09:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Winter Weather Advisory issued January 30 at 11:16PM AKST until January 31 at 5:00AM AKST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=AK126885D2C580.WinterWeatherAdvisory.126885D3A9A0AK.AFCWSWALU.818ca79bd142f85edd2607ba86030ca5"/>
+<summary>...WINTER WEATHER ADVISORY REMAINS IN EFFECT UNTIL 5 AM AKST WEDNESDAY... * WHAT...Snow and blowing snow occurring. Total snow accumulations 1 to 3 inches. Winds gusting as high as 45 mph. Visibility as low as one half mile. * WHERE...Kuskokwim Delta Coast.</summary>
+<cap:event>Winter Weather Advisory</cap:event>
+<cap:effective>2024-01-30T23:16:00-09:00</cap:effective>
+<cap:expires>2024-01-31T05:00:00-09:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Kuskokwim Delta</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>002050</value>
+<valueName>UGC</valueName>
+<value>AKZ155</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.PAFC.WW.Y.0008.000000T0000Z-240131T1400Z/</value>
+</cap:parameter>
+</entry>
 <entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=AK126885D2ACE4.WinterStormWarning.12688A0CE680AK.AJKWSWAJK.6a6835416526cbc77e302f004e040d1f</id>
 <updated>2024-01-30T22:53:00-09:00</updated>
@@ -184,38 +216,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value>/O.NEW.PAFG.WW.Y.0030.240131T0325Z-240131T1500Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=AK126885D19598.WinterWeatherAdvisory.126885D3A9A0AK.AFCWSWALU.818ca79bd142f85edd2607ba86030ca5</id>
-<updated>2024-01-30T15:38:00-09:00</updated>
-<published>2024-01-30T15:38:00-09:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Winter Weather Advisory issued January 30 at 3:38PM AKST until January 31 at 5:00AM AKST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=AK126885D19598.WinterWeatherAdvisory.126885D3A9A0AK.AFCWSWALU.818ca79bd142f85edd2607ba86030ca5"/>
-<summary>...WINTER WEATHER ADVISORY NOW IN EFFECT UNTIL 5 AM AKST WEDNESDAY... * WHAT...Snow and blowing snow occurring. Total snow accumulations 1 to 3 inches. Winds gusting as high as 40 mph. Visibility as low as one half mile. * WHERE...Kuskokwim Delta Coast.</summary>
-<cap:event>Winter Weather Advisory</cap:event>
-<cap:effective>2024-01-30T15:38:00-09:00</cap:effective>
-<cap:expires>2024-01-31T05:00:00-09:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Kuskokwim Delta</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>002050</value>
-<valueName>UGC</valueName>
-<value>AKZ155</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.EXT.PAFC.WW.Y.0008.240131T0038Z-240131T1400Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -870,6 +870,70 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value></value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=CA126885D2C38C.HighWindWarning.126889FF7900CA.HNXNPWHNX.ce20738784078d070075b876c6ccbe9e</id>
+<updated>2024-01-31T00:11:00-08:00</updated>
+<published>2024-01-31T00:11:00-08:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>High Wind Warning issued January 31 at 12:11AM PST until February 01 at 4:00AM PST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CA126885D2C38C.HighWindWarning.126889FF7900CA.HNXNPWHNX.ce20738784078d070075b876c6ccbe9e"/>
+<summary>...A HIGH WIND WARNING IS IN EFFECT FROM 9 AM PST THIS MORNING UNTIL 4 AM PST THURSDAY MORNING... * WHAT...Sustained south winds 30 to 40 mph, with gusts near 65 mph expected. * WHERE...Frazier Mountain Communities, Grapevine, and Tehachapi. * WHEN...From 9 AM PST this morning until 4 AM PST Thursday morning.</summary>
+<cap:event>High Wind Warning</cap:event>
+<cap:effective>2024-01-31T00:11:00-08:00</cap:effective>
+<cap:expires>2024-02-01T04:00:00-08:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Severe</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Frazier Mountain Communities; Grapevine; Tehachapi</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>006029</value>
+<valueName>UGC</valueName>
+<value>CAZ334 CAZ335 CAZ336</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.NEW.KHNX.HW.W.0003.240131T1700Z-240201T1200Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=CA126885D2C38C.WindAdvisory.126889FF7900CA.HNXNPWHNX.851e8fdaad8b8d081635db458650bf2e</id>
+<updated>2024-01-31T00:11:00-08:00</updated>
+<published>2024-01-31T00:11:00-08:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Wind Advisory issued January 31 at 12:11AM PST until February 01 at 4:00AM PST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=CA126885D2C38C.WindAdvisory.126889FF7900CA.HNXNPWHNX.851e8fdaad8b8d081635db458650bf2e"/>
+<summary>...A WIND ADVISORY IS IN EFFECT FROM 9 AM PST THIS MORNING UNTIL 4 AM PST THURSDAY MORNING... * WHAT...Sustained south winds 15 to 25 mph, with gusts near 45 mph expected. * WHERE...The Coastal Range and San Joaquin Valley. * WHEN...From 9 AM PST this morning until 4 AM PST Thursday morning.</summary>
+<cap:event>Wind Advisory</cap:event>
+<cap:effective>2024-01-31T00:11:00-08:00</cap:effective>
+<cap:expires>2024-02-01T04:00:00-08:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Bakersfield; Buena Vista; Buttonwillow - Lost Hills - I5; Caruthers - San Joaquin - Selma; Coalinga - Avenal; Delano-Wasco-Shafter; Fresno-Clovis; Hanford - Corcoran - Lemoore; Los Banos - Dos Palos; Merced - Madera - Mendota; Planada - Le Grand - Snelling; South End San Joaquin Valley; Southeast San Joaquin Valley; Visalia - Porterville - Reedley; West Side Mountains South of 198; West Side Mountains north of 198; West Side of Fresno and Kings Counties</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>006019 006029 006031 006039 006047 006107</value>
+<valueName>UGC</valueName>
+<value>CAZ300 CAZ301 CAZ302 CAZ303 CAZ304 CAZ305 CAZ306 CAZ307 CAZ308 CAZ309 CAZ310 CAZ311 CAZ312 CAZ313 CAZ314 CAZ315 CAZ316</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.NEW.KHNX.WI.Y.0006.240131T1700Z-240201T1200Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -2919,6 +2983,70 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=FL126885D2C51C.RipCurrentStatement.126885D445E0FL.TAECFWTAE.a36a9afaec054db9766ef5d7a592378a</id>
+<updated>2024-01-31T03:15:00-05:00</updated>
+<published>2024-01-31T03:15:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Rip Current Statement issued January 31 at 3:15AM EST until January 31 at 1:00PM EST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=FL126885D2C51C.RipCurrentStatement.126885D445E0FL.TAECFWTAE.a36a9afaec054db9766ef5d7a592378a"/>
+<summary>...HIGH RIP CURRENT RISK IN EFFECT UNTIL NOON CST TODAY... * WHAT...Dangerous rip currents. * WHERE...Walton County Beaches. * WHEN...Until noon CST today. * IMPACTS...Rip currents can sweep even the best swimmers away from shore into deeper water.</summary>
+<cap:event>Rip Current Statement</cap:event>
+<cap:effective>2024-01-31T03:15:00-05:00</cap:effective>
+<cap:expires>2024-01-31T13:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>South Walton</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>012131</value>
+<valueName>UGC</valueName>
+<value>FLZ108</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.NEW.KTAE.RP.S.0008.240131T0815Z-240131T1800Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=FL126885D2C51C.RipCurrentStatement.126889FE4080FL.TAECFWTAE.99ddf4f5424f82c6c247b43b3491cfa4</id>
+<updated>2024-01-31T03:15:00-05:00</updated>
+<published>2024-01-31T03:15:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Rip Current Statement issued January 31 at 3:15AM EST until January 31 at 11:00PM EST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=FL126885D2C51C.RipCurrentStatement.126889FE4080FL.TAECFWTAE.99ddf4f5424f82c6c247b43b3491cfa4"/>
+<summary>...HIGH RIP CURRENT RISK IN EFFECT THROUGH THIS EVENING... * WHAT...Dangerous rip currents. * WHERE...Bay and Gulf County Beaches. * WHEN...Through this evening. * IMPACTS...Rip currents can sweep even the best swimmers away from shore into deeper water.</summary>
+<cap:event>Rip Current Statement</cap:event>
+<cap:effective>2024-01-31T03:15:00-05:00</cap:effective>
+<cap:expires>2024-01-31T23:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Moderate</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Coastal Bay; Coastal Gulf</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>012005 012045</value>
+<valueName>UGC</valueName>
+<value>FLZ112 FLZ114</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.NEW.KTAE.RP.S.0008.240131T0815Z-240201T0400Z/</value>
+</cap:parameter>
+</entry>
+<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=GU126885D23494.HighSurfAdvisory.12688A0DD0E0GU.GUMCFWGUM.be96ffa148285c28f03ee1235c07780f</id>
 <updated>2024-01-31T14:45:00+10:00</updated>
 <published>2024-01-31T14:45:00+10:00</published>
@@ -3081,6 +3209,70 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=IA126885D2C7D8.DenseFogAdvisory.126885D35B80IA.OAXNPWOAX.6b943baa32ce1a57b81a5dd99d7bdd86</id>
+<updated>2024-01-31T02:22:00-06:00</updated>
+<published>2024-01-31T02:22:00-06:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Dense Fog Advisory issued January 31 at 2:22AM CST until January 31 at 6:00AM CST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=IA126885D2C7D8.DenseFogAdvisory.126885D35B80IA.OAXNPWOAX.6b943baa32ce1a57b81a5dd99d7bdd86"/>
+<summary>...DENSE FOG ADVISORY REMAINS IN EFFECT UNTIL 6 AM CST EARLY THIS MORNING... * WHAT...Visibility as low as one quarter mile at times in dense fog. * WHERE...Montgomery, Pottawattamie, and Shelby Counties. * WHEN...Until 6 AM CST early this morning. * IMPACTS...Low visibility could make driving conditions hazardous.</summary>
+<cap:event>Dense Fog Advisory</cap:event>
+<cap:effective>2024-01-31T02:22:00-06:00</cap:effective>
+<cap:expires>2024-01-31T06:00:00-06:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Montgomery; Pottawattamie; Shelby</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>019137 019155 019165</value>
+<valueName>UGC</valueName>
+<value>IAZ056 IAZ069 IAZ080</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KOAX.FG.Y.0009.000000T0000Z-240131T1200Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=IA126885D2C7D8.DenseFogAdvisory.126885D35B80IA.OAXNPWOAX.ba378d45f25db8a799cb4a6a8477d2e0</id>
+<updated>2024-01-31T02:22:00-06:00</updated>
+<published>2024-01-31T02:22:00-06:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Dense Fog Advisory issued January 31 at 2:22AM CST until January 31 at 6:00AM CST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=IA126885D2C7D8.DenseFogAdvisory.126885D35B80IA.OAXNPWOAX.ba378d45f25db8a799cb4a6a8477d2e0"/>
+<summary>...DENSE FOG ADVISORY IN EFFECT UNTIL 6 AM CST EARLY THIS MORNING... * WHAT...Visibility as low as one quarter mile at times in dense fog. * WHERE...Fremont, Mills, and Page Counties. * WHEN...Until 6 AM CST early this morning. * IMPACTS...Low visibility could make driving conditions hazardous. Moisture could freeze onto untreated surfaces and lead to slick</summary>
+<cap:event>Dense Fog Advisory</cap:event>
+<cap:effective>2024-01-31T02:22:00-06:00</cap:effective>
+<cap:expires>2024-01-31T06:00:00-06:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Fremont; Mills; Page</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>019071 019129 019145</value>
+<valueName>UGC</valueName>
+<value>IAZ079 IAZ090 IAZ091</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.EXA.KOAX.FG.Y.0009.000000T0000Z-240131T1200Z/</value>
+</cap:parameter>
+</entry>
+<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=IA126885D260B8.DenseFogAdvisory.126885D30D60IA.FSDNPWFSD.ddd236e9acb9b18fd09144e07ef972ae</id>
 <updated>2024-01-30T23:58:00-06:00</updated>
 <published>2024-01-30T23:58:00-06:00</published>
@@ -3142,38 +3334,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value>/O.EXA.KFSD.FG.Y.0009.000000T0000Z-240131T1000Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=IA126885D25820.DenseFogAdvisory.126885D35B80IA.OAXNPWOAX.6b943baa32ce1a57b81a5dd99d7bdd86</id>
-<updated>2024-01-30T23:36:00-06:00</updated>
-<published>2024-01-30T23:36:00-06:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Dense Fog Advisory issued January 30 at 11:36PM CST until January 31 at 6:00AM CST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=IA126885D25820.DenseFogAdvisory.126885D35B80IA.OAXNPWOAX.6b943baa32ce1a57b81a5dd99d7bdd86"/>
-<summary>...DENSE FOG ADVISORY IN EFFECT UNTIL 6 AM CST WEDNESDAY... * WHAT...Visibility less than one mile in dense fog. * WHERE...Montgomery, Pottawattamie, and Shelby Counties. * WHEN...Until 6 AM CST Wednesday. * IMPACTS...Low visibility could make driving conditions hazardous.</summary>
-<cap:event>Dense Fog Advisory</cap:event>
-<cap:effective>2024-01-30T23:36:00-06:00</cap:effective>
-<cap:expires>2024-01-31T06:00:00-06:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Montgomery; Pottawattamie; Shelby</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>019137 019155 019165</value>
-<valueName>UGC</valueName>
-<value>IAZ056 IAZ069 IAZ080</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.NEW.KOAX.FG.Y.0009.240131T0536Z-240131T1200Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -5286,6 +5446,38 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=MD126885D2C38C.CoastalFloodStatement.126885D38290MD.AKQCFWAKQ.dd824f09517207d56635b6ec4c527790</id>
+<updated>2024-01-31T03:11:00-05:00</updated>
+<published>2024-01-31T03:11:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Coastal Flood Statement issued January 31 at 3:11AM EST until January 31 at 8:00AM EST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MD126885D2C38C.CoastalFloodStatement.126885D38290MD.AKQCFWAKQ.dd824f09517207d56635b6ec4c527790"/>
+<summary>...COASTAL FLOOD STATEMENT REMAINS IN EFFECT UNTIL 8 AM EST THIS MORNING... * WHAT...Up to one half foot of inundation above ground level expected in low-lying areas near shorelines and tidal waterways. * WHERE...Dorchester, Wicomico and Somerset Counties.</summary>
+<cap:event>Coastal Flood Statement</cap:event>
+<cap:effective>2024-01-31T03:11:00-05:00</cap:effective>
+<cap:expires>2024-01-31T08:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Unknown</cap:urgency>
+<cap:severity>Unknown</cap:severity>
+<cap:certainty>Unknown</cap:certainty>
+<cap:areaDesc>Dorchester; Somerset; Wicomico</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>024019 024039 024045</value>
+<valueName>UGC</valueName>
+<value>MDZ021 MDZ022 MDZ023</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KAKQ.CF.S.0004.000000T0000Z-240131T1300Z/</value>
+</cap:parameter>
+</entry>
+<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=MD126885D2882C.CoastalFloodWarning.126889FE1970MD.LWXCFWLWX.e8409ebb93373dcaaae8c078042f2496</id>
 <updated>2024-01-31T01:59:00-05:00</updated>
 <published>2024-01-31T01:59:00-05:00</published>
@@ -5350,67 +5542,35 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=MD126885D1BC44.CoastalFloodStatement.126885D38290MD.AKQCFWAKQ.dd824f09517207d56635b6ec4c527790</id>
-<updated>2024-01-30T20:37:00-05:00</updated>
-<published>2024-01-30T20:37:00-05:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=MI126885D2C710.SpecialWeatherStatement.126885D33470MI.DTXSPSDTX.c26f7238d1877dc31dd3c30caccdee57</id>
+<updated>2024-01-31T03:20:00-05:00</updated>
+<published>2024-01-31T03:20:00-05:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Coastal Flood Statement issued January 30 at 8:37PM EST until January 31 at 8:00AM EST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MD126885D1BC44.CoastalFloodStatement.126885D38290MD.AKQCFWAKQ.dd824f09517207d56635b6ec4c527790"/>
-<summary>...COASTAL FLOOD STATEMENT REMAINS IN EFFECT FROM 1 AM TO 8 AM EST WEDNESDAY... * WHAT...Up to one half foot of inundation above ground level expected in low-lying areas near shorelines and tidal waterways. * WHERE...Dorchester, Wicomico and Somerset Counties.</summary>
-<cap:event>Coastal Flood Statement</cap:event>
-<cap:effective>2024-01-30T20:37:00-05:00</cap:effective>
-<cap:expires>2024-01-31T08:00:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Unknown</cap:urgency>
-<cap:severity>Unknown</cap:severity>
-<cap:certainty>Unknown</cap:certainty>
-<cap:areaDesc>Dorchester; Somerset; Wicomico</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>024019 024039 024045</value>
-<valueName>UGC</valueName>
-<value>MDZ021 MDZ022 MDZ023</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KAKQ.CF.S.0004.240131T0600Z-240131T1300Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=MI126885D212FC.DenseFogAdvisory.126885D3A9A0MI.GRRNPWGRR.e80b42ac54ac6537b2138ee469261dbc</id>
-<updated>2024-01-30T22:59:00-05:00</updated>
-<published>2024-01-30T22:59:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Dense Fog Advisory issued January 30 at 10:59PM EST until January 31 at 9:00AM EST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MI126885D212FC.DenseFogAdvisory.126885D3A9A0MI.GRRNPWGRR.e80b42ac54ac6537b2138ee469261dbc"/>
-<summary>...DENSE FOG ADVISORY REMAINS IN EFFECT UNTIL 9 AM EST WEDNESDAY... * WHAT...Visibility one quarter mile or less in dense fog. * WHERE...Portions of central, south central, southwest and west central Michigan. * WHEN...Until 9 AM EST Wednesday.</summary>
-<cap:event>Dense Fog Advisory</cap:event>
-<cap:effective>2024-01-30T22:59:00-05:00</cap:effective>
-<cap:expires>2024-01-31T09:00:00-05:00</cap:expires>
+<title>Special Weather Statement issued January 31 at 3:20AM EST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MI126885D2C710.SpecialWeatherStatement.126885D33470MI.DTXSPSDTX.c26f7238d1877dc31dd3c30caccdee57"/>
+<summary>...Locally dense fog early this morning... Fog, locally dense, will persist this early this morning. Motorists should be prepared for rapid fluctuations in visibility with locally dense fog leading to visibility between a quarter and half a mile. Drivers should allow for extra time.</summary>
+<cap:event>Special Weather Statement</cap:event>
+<cap:effective>2024-01-31T03:20:00-05:00</cap:effective>
+<cap:expires>2024-01-31T06:00:00-05:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
 <cap:category>Met</cap:category>
 <cap:urgency>Expected</cap:urgency>
 <cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Barry; Calhoun; Clare; Clinton; Eaton; Gratiot; Ingham; Ionia; Isabella; Jackson; Kalamazoo; Kent; Mecosta; Montcalm; Newaygo; Osceola</cap:areaDesc>
+<cap:certainty>Observed</cap:certainty>
+<cap:areaDesc>Bay; Genesee; Huron; Lapeer; Lenawee; Livingston; Macomb; Midland; Monroe; Oakland; Saginaw; Sanilac; Shiawassee; St. Clair; Tuscola; Washtenaw; Wayne</cap:areaDesc>
 <cap:polygon></cap:polygon>
 <cap:geocode>
 <valueName>FIPS6</valueName>
-<value>026015 026025 026035 026037 026045 026057 026065 026067 026073 026075 026077 026081 026107 026117 026123 026133</value>
+<value>026017 026049 026063 026087 026091 026093 026099 026111 026115 026125 026145 026147 026151 026155 026157 026161 026163</value>
 <valueName>UGC</valueName>
-<value>MIZ039 MIZ040 MIZ044 MIZ045 MIZ046 MIZ051 MIZ052 MIZ057 MIZ058 MIZ059 MIZ065 MIZ066 MIZ067 MIZ072 MIZ073 MIZ074</value>
+<value>MIZ047 MIZ048 MIZ049 MIZ053 MIZ054 MIZ055 MIZ060 MIZ061 MIZ062 MIZ063 MIZ068 MIZ069 MIZ070 MIZ075 MIZ076 MIZ082 MIZ083</value>
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
-<value>/O.CON.KGRR.FG.Y.0002.000000T0000Z-240131T1400Z/</value>
+<value></value>
 </cap:parameter>
 </entry>
 <entry>
@@ -5509,38 +5669,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <valueName>VTEC</valueName>
 <value>/O.EXT.KIWX.FL.W.0007.000000T0000Z-240202T1800Z/
 /TRVM4.1.RS.240129T1052Z.240130T1930Z.240201T1800Z.NO/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=MI126885C5673C.DenseFogAdvisory.126885D3D0B0MI.DTXNPWDTX.99301b3560e45b5126534236fa103efc</id>
-<updated>2024-01-30T15:55:00-05:00</updated>
-<published>2024-01-30T15:55:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Dense Fog Advisory issued January 30 at 3:55PM EST until January 31 at 10:00AM EST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=MI126885C5673C.DenseFogAdvisory.126885D3D0B0MI.DTXNPWDTX.99301b3560e45b5126534236fa103efc"/>
-<summary>...DENSE FOG ADVISORY IN EFFECT FROM 7 PM THIS EVENING TO 10 AM WEDNESDAY... * WHAT...Visibility one quarter mile or less in dense fog. * WHERE...Midland, Bay, Huron, Saginaw, Tuscola, Sanilac, Shiawassee, Genesee, Lapeer and Livingston Counties. * WHEN...From 7 PM this evening to 10 AM EST Wednesday. * IMPACTS...Hazardous driving conditions due to low visibility.</summary>
-<cap:event>Dense Fog Advisory</cap:event>
-<cap:effective>2024-01-30T15:55:00-05:00</cap:effective>
-<cap:expires>2024-01-31T10:00:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Bay; Genesee; Huron; Lapeer; Livingston; Midland; Saginaw; Sanilac; Shiawassee; Tuscola</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>026017 026049 026063 026087 026093 026111 026145 026151 026155 026157</value>
-<valueName>UGC</valueName>
-<value>MIZ047 MIZ048 MIZ049 MIZ053 MIZ054 MIZ055 MIZ060 MIZ061 MIZ062 MIZ068</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.NEW.KDTX.FG.Y.0002.240131T0000Z-240131T1500Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -6460,31 +6588,31 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=NH126885D1E674.SpecialWeatherStatement.126885D2CAF8NH.GYXSPSGYX.768aa433aeb98175b50783362dcba345</id>
-<updated>2024-01-30T21:45:00-05:00</updated>
-<published>2024-01-30T21:45:00-05:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=NH126885D2CAF8.SpecialWeatherStatement.126885D38290NH.GYXSPSGYX.00233355da10c485b71ea4e481b1f067</id>
+<updated>2024-01-31T03:30:00-05:00</updated>
+<published>2024-01-31T03:30:00-05:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Special Weather Statement issued January 30 at 9:45PM EST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=NH126885D1E674.SpecialWeatherStatement.126885D2CAF8NH.GYXSPSGYX.768aa433aeb98175b50783362dcba345"/>
-<summary>...SLIPPERY CONDITIONS IN SOME AREAS TONIGHT... Areas of freezing drizzle are causing slippery travel, especially where roads are untreated. Motorists are urged to use caution as long stretches of dry pavement may become icy in short order.</summary>
+<title>Special Weather Statement issued January 31 at 3:30AM EST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=NH126885D2CAF8.SpecialWeatherStatement.126885D38290NH.GYXSPSGYX.00233355da10c485b71ea4e481b1f067"/>
+<summary>...SLIPPERY CONDITIONS IN SOME AREAS THIS MORNING... Patchy freezing drizzle overnight has led to areas of slippery travel this morning, especially where roads are untreated. Motorists are urged to use caution this morning, especially in hilly areas.</summary>
 <cap:event>Special Weather Statement</cap:event>
-<cap:effective>2024-01-30T21:45:00-05:00</cap:effective>
-<cap:expires>2024-01-31T03:30:00-05:00</cap:expires>
+<cap:effective>2024-01-31T03:30:00-05:00</cap:effective>
+<cap:expires>2024-01-31T08:00:00-05:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
 <cap:category>Met</cap:category>
 <cap:urgency>Expected</cap:urgency>
 <cap:severity>Minor</cap:severity>
 <cap:certainty>Observed</cap:certainty>
-<cap:areaDesc>Belknap; Cheshire; Coastal Rockingham; Eastern Hillsborough; Interior Rockingham; Merrimack; Northern Carroll; Northern Grafton; Southern Carroll; Southern Grafton; Strafford; Sullivan; Western And Central Hillsborough</cap:areaDesc>
+<cap:areaDesc>Cheshire; Merrimack; Southern Grafton; Sullivan; Western And Central Hillsborough</cap:areaDesc>
 <cap:polygon></cap:polygon>
 <cap:geocode>
 <valueName>FIPS6</valueName>
-<value>033001 033003 033005 033009 033011 033013 033015 033017 033019</value>
+<value>033005 033009 033011 033013 033019</value>
 <valueName>UGC</valueName>
-<value>NHZ003 NHZ004 NHZ005 NHZ006 NHZ007 NHZ008 NHZ009 NHZ010 NHZ011 NHZ012 NHZ013 NHZ014 NHZ015</value>
+<value>NHZ005 NHZ007 NHZ008 NHZ011 NHZ015</value>
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
@@ -6492,18 +6620,18 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=NJ126885C5B1D8.CoastalFloodAdvisory.126885D2E650NJ.PHICFWPHI.ae8e60840c07aaef60bd05471abe2750</id>
-<updated>2024-01-30T17:46:00-05:00</updated>
-<published>2024-01-30T17:46:00-05:00</published>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=NJ126885D2C2C4.CoastalFloodAdvisory.126885D50930NJ.PHICFWPHI.ae8e60840c07aaef60bd05471abe2750</id>
+<updated>2024-01-31T03:09:00-05:00</updated>
+<published>2024-01-31T03:09:00-05:00</published>
 <author>
 <name>w-nws.webmaster@noaa.gov</name>
 </author>
-<title>Coastal Flood Advisory issued January 30 at 5:46PM EST until January 31 at 4:00AM EST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=NJ126885C5B1D8.CoastalFloodAdvisory.126885D2E650NJ.PHICFWPHI.ae8e60840c07aaef60bd05471abe2750"/>
-<summary>...COASTAL FLOOD ADVISORY NOW IN EFFECT UNTIL 4 AM EST WEDNESDAY... * WHAT...Up to one half foot of inundation above ground level in low-lying areas near shorelines and tidal waterways. * WHERE...Ocean and Coastal Ocean. * WHEN...Until 4 AM EST Wednesday.</summary>
+<title>Coastal Flood Advisory issued January 31 at 3:09AM EST until January 31 at 6:00PM EST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=NJ126885D2C2C4.CoastalFloodAdvisory.126885D50930NJ.PHICFWPHI.ae8e60840c07aaef60bd05471abe2750"/>
+<summary>...COASTAL FLOOD ADVISORY NOW IN EFFECT UNTIL 6 PM EST THIS EVENING... * WHAT...Up to one half foot of inundation above ground level in low-lying areas near shorelines and tidal waterways. * WHERE...Ocean and Coastal Ocean. * WHEN...Until 6 PM EST this evening.</summary>
 <cap:event>Coastal Flood Advisory</cap:event>
-<cap:effective>2024-01-30T17:46:00-05:00</cap:effective>
-<cap:expires>2024-01-31T04:00:00-05:00</cap:expires>
+<cap:effective>2024-01-31T03:09:00-05:00</cap:effective>
+<cap:expires>2024-01-31T18:00:00-05:00</cap:expires>
 <cap:status>Actual</cap:status>
 <cap:msgType>Alert</cap:msgType>
 <cap:category>Met</cap:category>
@@ -6520,7 +6648,7 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:geocode>
 <cap:parameter>
 <valueName>VTEC</valueName>
-<value>/O.EXT.KPHI.CF.Y.0008.000000T0000Z-240131T0900Z/</value>
+<value>/O.EXT.KPHI.CF.Y.0008.000000T0000Z-240131T2300Z/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -6908,6 +7036,38 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value>/O.NEW.KLKN.WW.Y.0008.240201T1800Z-240203T0000Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=OH126885D2C8A0.SpecialWeatherStatement.126885D34028OH.ILNSPSILN.dbfcb0aba82864b2cc6c2f0064ab78c7</id>
+<updated>2024-01-31T03:24:00-05:00</updated>
+<published>2024-01-31T03:24:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Special Weather Statement issued January 31 at 3:24AM EST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=OH126885D2C8A0.SpecialWeatherStatement.126885D34028OH.ILNSPSILN.dbfcb0aba82864b2cc6c2f0064ab78c7"/>
+<summary>...PATCHES OF DENSE FOG ARE EXPECTED THROUGH DAYBREAK... Fog found across the region this morning will see visibility drop to under a half mile at times, which could present a hazard to commuters. Expect the locally dense fog to diminish closer to daybreak, with a lighter fog and mist lingering into the morning.</summary>
+<cap:event>Special Weather Statement</cap:event>
+<cap:effective>2024-01-31T03:24:00-05:00</cap:effective>
+<cap:expires>2024-01-31T06:30:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Observed</cap:certainty>
+<cap:areaDesc>Auglaize; Champaign; Darke; Delaware; Hardin; Licking; Logan; Mercer; Miami; Shelby; Union</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>039011 039021 039037 039041 039065 039089 039091 039107 039109 039149 039159</value>
+<valueName>UGC</valueName>
+<value>OHZ026 OHZ034 OHZ035 OHZ042 OHZ043 OHZ044 OHZ045 OHZ046 OHZ051 OHZ052 OHZ056</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value></value>
 </cap:parameter>
 </entry>
 <entry>
@@ -7592,39 +7752,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <valueName>VTEC</valueName>
 <value>/O.CON.KMFR.HW.W.0001.240131T0900Z-240201T0600Z/
 /O.CON.KMFR.WI.Y.0008.240131T0600Z-240201T0600Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=PR126885D27634.FloodAdvisory.126885D2C51CPR.JSJFLSSJU.1c5dee0cdda98a6161e73433e23a91a1</id>
-<updated>2024-01-31T02:13:00-04:00</updated>
-<published>2024-01-31T02:13:00-04:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Flood Advisory issued January 31 at 2:13AM AST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=PR126885D27634.FloodAdvisory.126885D2C51CPR.JSJFLSSJU.1c5dee0cdda98a6161e73433e23a91a1"/>
-<summary>...FLOOD ADVISORY IN EFFECT UNTIL 415 AM AST EARLY THIS MORNING... * WHAT...Urban and small stream flooding caused by excessive rainfall is expected. * WHERE...A portion of Puerto Rico, including the following counties, Luquillo and Rio Grande. * WHEN...Until 415 AM AST.</summary>
-<cap:event>Flood Advisory</cap:event>
-<cap:effective>2024-01-31T02:13:00-04:00</cap:effective>
-<cap:expires>2024-01-31T04:15:00-04:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Expected</cap:urgency>
-<cap:severity>Minor</cap:severity>
-<cap:certainty>Likely</cap:certainty>
-<cap:areaDesc>Luquillo; Rio Grande</cap:areaDesc>
-<cap:polygon>18.42,-65.79 18.4,-65.8 18.41,-65.77 18.39,-65.75 18.38,-65.75 18.39,-65.72 18.37,-65.72 18.36,-65.67 18.29,-65.73 18.27,-65.83 18.29,-65.87 18.41,-65.87 18.41,-65.9 18.44,-65.88 18.43,-65.84 18.4,-65.81 18.42,-65.79</cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>072089 072119</value>
-<valueName>UGC</valueName>
-<value>PRC089 PRC119</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.NEW.TJSJ.FA.Y.0003.240131T0613Z-240131T0815Z/
-/00000.N.ER.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
 </cap:parameter>
 </entry>
 <entry>
@@ -8483,6 +8610,38 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 </cap:parameter>
 </entry>
 <entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=VA126885D2C38C.CoastalFloodStatement.126889FE1970VA.AKQCFWAKQ.5a729fe815c39b6dbd6364bd5ed450be</id>
+<updated>2024-01-31T03:11:00-05:00</updated>
+<published>2024-01-31T03:11:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Coastal Flood Statement issued January 31 at 3:11AM EST until January 31 at 10:00PM EST by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=VA126885D2C38C.CoastalFloodStatement.126889FE1970VA.AKQCFWAKQ.5a729fe815c39b6dbd6364bd5ed450be"/>
+<summary>...COASTAL FLOOD STATEMENT REMAINS IN EFFECT THROUGH THIS EVENING... * WHAT...Up to one half foot of inundation above ground level expected in low-lying areas near shorelines and tidal waterways. * WHERE...Westmoreland, Northumberland and Lancaster Counties.</summary>
+<cap:event>Coastal Flood Statement</cap:event>
+<cap:effective>2024-01-31T03:11:00-05:00</cap:effective>
+<cap:expires>2024-01-31T22:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Unknown</cap:urgency>
+<cap:severity>Unknown</cap:severity>
+<cap:certainty>Unknown</cap:certainty>
+<cap:areaDesc>Lancaster; Northumberland; Westmoreland</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>051103 051133 051193</value>
+<valueName>UGC</valueName>
+<value>VAZ075 VAZ077 VAZ078</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KAKQ.CF.S.0004.000000T0000Z-240201T0300Z/</value>
+</cap:parameter>
+</entry>
+<entry>
 <id>https://alerts.weather.gov/cap/wwacapget.php?x=VA126885D2882C.CoastalFloodAdvisory.126889FEDCC0VA.LWXCFWLWX.18381ef45bd66c9125bb8afe307dc1ba</id>
 <updated>2024-01-31T01:59:00-05:00</updated>
 <published>2024-01-31T01:59:00-05:00</published>
@@ -8512,38 +8671,6 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <cap:parameter>
 <valueName>VTEC</valueName>
 <value>/O.CON.KLWX.CF.Y.0011.000000T0000Z-240201T0800Z/</value>
-</cap:parameter>
-</entry>
-<entry>
-<id>https://alerts.weather.gov/cap/wwacapget.php?x=VA126885D1BC44.CoastalFloodStatement.126889FE1970VA.AKQCFWAKQ.5a729fe815c39b6dbd6364bd5ed450be</id>
-<updated>2024-01-30T20:37:00-05:00</updated>
-<published>2024-01-30T20:37:00-05:00</published>
-<author>
-<name>w-nws.webmaster@noaa.gov</name>
-</author>
-<title>Coastal Flood Statement issued January 30 at 8:37PM EST until January 31 at 10:00PM EST by NWS</title>
-<link href="https://alerts.weather.gov/cap/wwacapget.php?x=VA126885D1BC44.CoastalFloodStatement.126889FE1970VA.AKQCFWAKQ.5a729fe815c39b6dbd6364bd5ed450be"/>
-<summary>...COASTAL FLOOD STATEMENT REMAINS IN EFFECT FROM 1 AM EST WEDNESDAY THROUGH WEDNESDAY EVENING... * WHAT...Up to one half foot of inundation above ground level expected in low-lying areas near shorelines and tidal waterways. * WHERE...Westmoreland, Northumberland and Lancaster Counties.</summary>
-<cap:event>Coastal Flood Statement</cap:event>
-<cap:effective>2024-01-30T20:37:00-05:00</cap:effective>
-<cap:expires>2024-01-31T22:00:00-05:00</cap:expires>
-<cap:status>Actual</cap:status>
-<cap:msgType>Alert</cap:msgType>
-<cap:category>Met</cap:category>
-<cap:urgency>Unknown</cap:urgency>
-<cap:severity>Unknown</cap:severity>
-<cap:certainty>Unknown</cap:certainty>
-<cap:areaDesc>Lancaster; Northumberland; Westmoreland</cap:areaDesc>
-<cap:polygon></cap:polygon>
-<cap:geocode>
-<valueName>FIPS6</valueName>
-<value>051103 051133 051193</value>
-<valueName>UGC</valueName>
-<value>VAZ075 VAZ077 VAZ078</value>
-</cap:geocode>
-<cap:parameter>
-<valueName>VTEC</valueName>
-<value>/O.CON.KAKQ.CF.S.0004.240131T0600Z-240201T0300Z/</value>
 </cap:parameter>
 </entry>
 <entry>
