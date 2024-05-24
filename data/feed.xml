@@ -2,53 +2,88 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xmlns:cap="urn:oasis:names:tc:emergency:cap:1.2">
     <id>https://api.weather.gov/alerts.atom?region_type=land&amp;limit=500&amp;active=1</id>
     <generator>NWS CAP Server</generator>
-    <updated>2024-05-24T16:32:34+00:00</updated>
+    <updated>2024-05-24T17:02:24+00:00</updated>
     <author>
         <name>w-nws.webmaster@noaa.gov</name>
     </author>
     <title>Current watches, warnings, and advisories for United States land zones</title>
     <link rel="self" href="https://api.weather.gov/alerts.atom?region_type=land&amp;limit=500&amp;active=1"/>
     <entry>
-        <id>https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0-KEEPALIVE-52638</id>
-        <link rel="alternate" href="https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0-KEEPALIVE-52638.cap"/>
-        <updated>2024-05-24T16:32:24+00:00</updated>
-        <published>2024-05-24T16:32:24+00:00</published>
+        <id>https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.5456feb98cb2f02019732c42c9bfa96733e749e9.001.1</id>
+        <link rel="alternate" href="https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.5456feb98cb2f02019732c42c9bfa96733e749e9.001.1.cap"/>
+        <updated>2024-05-24T11:57:00-05:00</updated>
+        <published>2024-05-24T11:57:00-05:00</published>
         <author>
             <name>NWS</name>
         </author>
-        <title/>
-        <summary>Monitoring message only. Please disregard.</summary>
-        <cap:event>Test Message</cap:event>
-        <cap:sent>2024-05-24T16:32:24+00:00</cap:sent>
-        <cap:effective>2024-05-24T16:32:24+00:00</cap:effective>
-        <cap:expires>2024-05-24T16:42:24+00:00</cap:expires>
-        <cap:status>Test</cap:status>
-        <cap:msgType>Alert</cap:msgType>
+        <title>Tornado Warning issued May 24 at 11:57AM CDT until May 24 at 12:15PM CDT by NWS Quad Cities IA IL</title>
+        <summary>At 1157 AM CDT, a severe thunderstorm capable of producing a tornado
+was located near Webster, or 8 miles east of Carthage, moving east at
+35 mph.
+
+HAZARD...Tornado.
+
+SOURCE...Radar indicated rotation.
+
+IMPACT...Flying debris will be dangerous to those caught without
+shelter. Mobile homes will be damaged or destroyed. Damage
+to roofs, windows, and vehicles will occur.  Tree damage is
+likely.
+
+This tornadic thunderstorm will remain over mainly rural areas of
+east central Hancock and west central McDonough Counties.</summary>
+        <cap:event>Tornado Warning</cap:event>
+        <cap:sent>2024-05-24T11:57:00-05:00</cap:sent>
+        <cap:effective>2024-05-24T11:57:00-05:00</cap:effective>
+        <cap:onset>2024-05-24T11:57:00-05:00</cap:onset>
+        <cap:expires>2024-05-24T12:15:00-05:00</cap:expires>
+        <cap:status>Actual</cap:status>
+        <cap:msgType>Update</cap:msgType>
         <cap:category>Met</cap:category>
-        <cap:urgency>Unknown</cap:urgency>
-        <cap:severity>Unknown</cap:severity>
-        <cap:certainty>Unknown</cap:certainty>
-        <cap:areaDesc>Montgomery</cap:areaDesc>
-        <cap:polygon/>
+        <cap:urgency>Immediate</cap:urgency>
+        <cap:severity>Extreme</cap:severity>
+        <cap:certainty>Observed</cap:certainty>
+        <cap:areaDesc>Hancock, IL; McDonough, IL</cap:areaDesc>
+        <cap:polygon>40.38,-91.08 40.43,-91.09 40.49,-90.89 40.35,-90.89 40.38,-91.08</cap:polygon>
         <cap:geocode>
             <valueName>SAME</valueName>
-            <value>024031</value>
+            <value>017067</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>SAME</valueName>
+            <value>017109</value>
         </cap:geocode>
         <cap:geocode>
             <valueName>UGC</valueName>
-            <value>MDC031</value>
+            <value>ILC067</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>UGC</valueName>
+            <value>ILC109</value>
         </cap:geocode>
         <cap:parameter>
             <valueName>AWIPSidentifier</valueName>
-            <value>KEPWBC</value>
+            <value>SVSDVN</value>
         </cap:parameter>
         <cap:parameter>
             <valueName>WMOidentifier</valueName>
-            <value>NZUS91 KWBC 241632</value>
+            <value>WWUS53 KDVN 241657</value>
         </cap:parameter>
         <cap:parameter>
-            <valueName>BLOCKCHANNEL</valueName>
-            <value>CMAS</value>
+            <valueName>NWSheadline</valueName>
+            <value>A TORNADO WARNING REMAINS IN EFFECT UNTIL 1215 PM CDT FOR EAST CENTRAL HANCOCK AND WEST CENTRAL MCDONOUGH COUNTIES</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>eventMotionDescription</valueName>
+            <value>2024-05-24T16:57:00-00:00...storm...258DEG...28KT...40.41,-90.98</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>maxHailSize</valueName>
+            <value>Up to .75</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>tornadoDetection</valueName>
+            <value>RADAR INDICATED</value>
         </cap:parameter>
         <cap:parameter>
             <valueName>BLOCKCHANNEL</valueName>
@@ -58,91 +93,180 @@
             <valueName>BLOCKCHANNEL</valueName>
             <value>NWEM</value>
         </cap:parameter>
+        <cap:parameter>
+            <valueName>BLOCKCHANNEL</valueName>
+            <value>CMAS</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>EAS-ORG</valueName>
+            <value>WXR</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>VTEC</valueName>
+            <value>/O.CON.KDVN.TO.W.0036.000000T0000Z-240524T1715Z/</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>eventEndingTime</valueName>
+            <value>2024-05-24T17:15:00+00:00</value>
+        </cap:parameter>
     </entry>
     <entry>
-        <id>https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.d42c27bff1bf46c58edf3a0e8cc3bca9d4f2afba.002.1</id>
-        <link rel="alternate" href="https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.d42c27bff1bf46c58edf3a0e8cc3bca9d4f2afba.002.1.cap"/>
-        <updated>2024-05-24T11:32:00-05:00</updated>
-        <published>2024-05-24T11:32:00-05:00</published>
+        <id>https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.da456ad1a0de753c4813f135bc8778fbef53e59a.001.1</id>
+        <link rel="alternate" href="https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.da456ad1a0de753c4813f135bc8778fbef53e59a.001.1.cap"/>
+        <updated>2024-05-24T11:56:00-05:00</updated>
+        <published>2024-05-24T11:56:00-05:00</published>
         <author>
             <name>NWS</name>
         </author>
-        <title>Severe Thunderstorm Warning issued May 24 at 11:32AM CDT until May 24 at 11:45AM CDT by NWS Milwaukee/Sullivan WI</title>
-        <summary>At 1131 AM CDT, severe thunderstorms were located along a line
-extending from near Hartford to near Sussex to New Berlin, moving
-east at 40 mph.
+        <title>Flood Advisory issued May 24 at 11:56AM CDT until May 24 at 3:00PM CDT by NWS Memphis TN</title>
+        <summary>* WHAT...Flooding caused by excessive rainfall is expected.
 
-HAZARD...60 mph wind gusts and penny size hail.
+* WHERE...A portion of West Tennessee, including the following
+counties, Haywood and Madison.
+
+* WHEN...Until 300 PM CDT.
+
+* IMPACTS...Minor flooding in low-lying and poor drainage areas.
+
+* ADDITIONAL DETAILS...
+- At 1155 AM CDT, the public reported heavy rain in the
+advisory area due to thunderstorms. Minor flooding is ongoing
+or expected to begin shortly. Between 1 and 2 inches of rain
+have fallen.
+- Additional rainfall amounts up to 1 inch are expected over
+the area. This additional rain will result in minor flooding.
+- Some locations that will experience flooding include...
+Brownsville, Holly Grove, Hillville, Belle Eagle, Allens,
+Sunnyhill, Jones, Leighton, Rudolph, Morton Hill and Hatchie.
+- http://www.weather.gov/safety/flood</summary>
+        <cap:event>Flood Advisory</cap:event>
+        <cap:sent>2024-05-24T11:56:00-05:00</cap:sent>
+        <cap:effective>2024-05-24T11:56:00-05:00</cap:effective>
+        <cap:onset>2024-05-24T11:56:00-05:00</cap:onset>
+        <cap:expires>2024-05-24T15:00:00-05:00</cap:expires>
+        <cap:status>Actual</cap:status>
+        <cap:msgType>Alert</cap:msgType>
+        <cap:category>Met</cap:category>
+        <cap:urgency>Expected</cap:urgency>
+        <cap:severity>Minor</cap:severity>
+        <cap:certainty>Likely</cap:certainty>
+        <cap:areaDesc>Haywood, TN; Madison, TN</cap:areaDesc>
+        <cap:polygon>35.7,-89.29 35.71,-89.12 35.7,-89.12 35.7,-89.11 35.7,-89.1 35.7,-89.09 35.7,-89.08 35.69,-89.0699999 35.68,-89.06 35.43,-89.05 35.43,-89.29 35.7,-89.29</cap:polygon>
+        <cap:geocode>
+            <valueName>SAME</valueName>
+            <value>047075</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>SAME</valueName>
+            <value>047113</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>UGC</valueName>
+            <value>TNC075</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>UGC</valueName>
+            <value>TNC113</value>
+        </cap:geocode>
+        <cap:parameter>
+            <valueName>AWIPSidentifier</valueName>
+            <value>FLSMEG</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>WMOidentifier</valueName>
+            <value>WGUS84 KMEG 241656</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>NWSheadline</valueName>
+            <value>FLOOD ADVISORY IN EFFECT UNTIL 3 PM CDT THIS AFTERNOON</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>BLOCKCHANNEL</valueName>
+            <value>EAS</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>BLOCKCHANNEL</valueName>
+            <value>NWEM</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>BLOCKCHANNEL</valueName>
+            <value>CMAS</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>VTEC</valueName>
+            <value>/O.NEW.KMEG.FA.Y.0045.240524T1656Z-240524T2000Z/</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>eventEndingTime</valueName>
+            <value>2024-05-24T20:00:00+00:00</value>
+        </cap:parameter>
+    </entry>
+    <entry>
+        <id>https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.0dc21c568161db8f57ae0ce5292b7a59cc9761e9.001.1</id>
+        <link rel="alternate" href="https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.0dc21c568161db8f57ae0ce5292b7a59cc9761e9.001.1.cap"/>
+        <updated>2024-05-24T11:55:00-05:00</updated>
+        <published>2024-05-24T11:55:00-05:00</published>
+        <author>
+            <name>NWS</name>
+        </author>
+        <title>Severe Thunderstorm Warning issued May 24 at 11:55AM CDT until May 24 at 12:15PM CDT by NWS Memphis TN</title>
+        <summary>At 1155 AM CDT, a severe thunderstorm was located near Okolona,
+moving east at 20 mph.
+
+HAZARD...Ping pong ball size hail.
 
 SOURCE...Radar indicated.
 
-IMPACT...Expect damage to roofs, siding, and trees.
+IMPACT...People and animals outdoors will be injured. Expect damage
+to roofs, siding, windows, and vehicles.
 
 Locations impacted include...
-Milwaukee, Waukesha, West Allis, Wauwatosa, New Berlin, Brookfield,
-Greenfield, Menomonee Falls, West Bend, Muskego, Mequon, Cudahy,
-Whitefish Bay, Greendale, Pewaukee, Brown Deer, Grafton, Cedarburg,
-Port Washington, and Sussex.</summary>
+Amory, Aberdeen, Okolona, New Wren, Nettleton, Egypt, Wren, Buena
+Vista, and Leotis.</summary>
         <cap:event>Severe Thunderstorm Warning</cap:event>
-        <cap:sent>2024-05-24T11:32:00-05:00</cap:sent>
-        <cap:effective>2024-05-24T11:32:00-05:00</cap:effective>
-        <cap:onset>2024-05-24T11:32:00-05:00</cap:onset>
-        <cap:expires>2024-05-24T11:45:00-05:00</cap:expires>
+        <cap:sent>2024-05-24T11:55:00-05:00</cap:sent>
+        <cap:effective>2024-05-24T11:55:00-05:00</cap:effective>
+        <cap:onset>2024-05-24T11:55:00-05:00</cap:onset>
+        <cap:expires>2024-05-24T12:15:00-05:00</cap:expires>
         <cap:status>Actual</cap:status>
         <cap:msgType>Update</cap:msgType>
         <cap:category>Met</cap:category>
         <cap:urgency>Immediate</cap:urgency>
         <cap:severity>Severe</cap:severity>
         <cap:certainty>Observed</cap:certainty>
-        <cap:areaDesc>Milwaukee, WI; Ozaukee, WI; Washington, WI; Waukesha, WI</cap:areaDesc>
-        <cap:polygon>42.89,-88.12 42.99,-88.25 43.2,-88.42 43.26,-88.42 43.51,-88.02 43.37,-87.87 43.26,-87.91 43.18,-87.88 43.12,-87.9 43.07,-87.87 43.02,-87.9 42.96,-87.85 42.89,-88.12</cap:polygon>
+        <cap:areaDesc>Chickasaw, MS; Monroe, MS</cap:areaDesc>
+        <cap:polygon>34.02,-88.87 34.09,-88.68 34.09,-88.54 33.83,-88.48 33.81,-88.8 33.84,-88.84 34.02,-88.87</cap:polygon>
         <cap:geocode>
             <valueName>SAME</valueName>
-            <value>055079</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>SAME</valueName>
-            <value>055089</value>
+            <value>028017</value>
         </cap:geocode>
         <cap:geocode>
             <valueName>SAME</valueName>
-            <value>055131</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>SAME</valueName>
-            <value>055133</value>
+            <value>028095</value>
         </cap:geocode>
         <cap:geocode>
             <valueName>UGC</valueName>
-            <value>WIC079</value>
+            <value>MSC017</value>
         </cap:geocode>
         <cap:geocode>
             <valueName>UGC</valueName>
-            <value>WIC089</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>UGC</valueName>
-            <value>WIC131</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>UGC</valueName>
-            <value>WIC133</value>
+            <value>MSC095</value>
         </cap:geocode>
         <cap:parameter>
             <valueName>AWIPSidentifier</valueName>
-            <value>SVSMKX</value>
+            <value>SVSMEG</value>
         </cap:parameter>
         <cap:parameter>
             <valueName>WMOidentifier</valueName>
-            <value>WWUS53 KMKX 241632</value>
+            <value>WWUS54 KMEG 241655</value>
         </cap:parameter>
         <cap:parameter>
             <valueName>NWSheadline</valueName>
-            <value>A SEVERE THUNDERSTORM WARNING REMAINS IN EFFECT UNTIL 1145 AM CDT FOR OZAUKEE...MILWAUKEE...NORTHEASTERN WAUKESHA AND SOUTHERN WASHINGTON COUNTIES</value>
+            <value>A SEVERE THUNDERSTORM WARNING REMAINS IN EFFECT UNTIL 1215 PM CDT FOR NORTHEASTERN CHICKASAW AND NORTHWESTERN MONROE COUNTIES</value>
         </cap:parameter>
         <cap:parameter>
             <valueName>eventMotionDescription</valueName>
-            <value>2024-05-24T16:31:00-00:00...storm...270DEG...36KT...43.25,-88.33 43.1,-88.2 42.97,-88.1</value>
+            <value>2024-05-24T16:55:00-00:00...storm...263DEG...17KT...33.92,-88.75</value>
         </cap:parameter>
         <cap:parameter>
             <valueName>windThreat</valueName>
@@ -150,7 +274,7 @@ Port Washington, and Sussex.</summary>
         </cap:parameter>
         <cap:parameter>
             <valueName>maxWindGust</valueName>
-            <value>60 MPH</value>
+            <value>Up to 50 MPH</value>
         </cap:parameter>
         <cap:parameter>
             <valueName>hailThreat</valueName>
@@ -158,11 +282,7 @@ Port Washington, and Sussex.</summary>
         </cap:parameter>
         <cap:parameter>
             <valueName>maxHailSize</valueName>
-            <value>0.75</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>tornadoDetection</valueName>
-            <value>POSSIBLE</value>
+            <value>1.50</value>
         </cap:parameter>
         <cap:parameter>
             <valueName>BLOCKCHANNEL</valueName>
@@ -182,140 +302,25 @@ Port Washington, and Sussex.</summary>
         </cap:parameter>
         <cap:parameter>
             <valueName>VTEC</valueName>
-            <value>/O.CON.KMKX.SV.W.0090.000000T0000Z-240524T1645Z/</value>
+            <value>/O.CON.KMEG.SV.W.0118.000000T0000Z-240524T1715Z/</value>
         </cap:parameter>
         <cap:parameter>
             <valueName>eventEndingTime</valueName>
-            <value>2024-05-24T16:45:00+00:00</value>
+            <value>2024-05-24T17:15:00+00:00</value>
         </cap:parameter>
     </entry>
     <entry>
-        <id>https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.ea62285d3fa192a887286823a7f264599f7de4b4.001.1</id>
-        <link rel="alternate" href="https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.ea62285d3fa192a887286823a7f264599f7de4b4.001.1.cap"/>
-        <updated>2024-05-24T11:31:00-05:00</updated>
-        <published>2024-05-24T11:31:00-05:00</published>
+        <id>https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.19e78bbdfce1dd4717ab639762b5696f5f457568.002.1</id>
+        <link rel="alternate" href="https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.19e78bbdfce1dd4717ab639762b5696f5f457568.002.1.cap"/>
+        <updated>2024-05-24T11:53:00-05:00</updated>
+        <published>2024-05-24T11:53:00-05:00</published>
         <author>
             <name>NWS</name>
         </author>
-        <title>Severe Thunderstorm Warning issued May 24 at 11:31AM CDT until May 24 at 12:30PM CDT by NWS Chicago IL</title>
-        <summary>SVRLOT
-
-The National Weather Service in Chicago has issued a
-
-* Severe Thunderstorm Warning for...
-Northwestern Will County in northeastern Illinois...
-Northeastern Grundy County in northeastern Illinois...
-
-* Until 1230 PM CDT.
-
-* At 1130 AM CDT, severe thunderstorms were located along a line
-extending from near Oswego to near Minooka, moving east at 25 mph.
-
-HAZARD...60 mph wind gusts and half dollar size hail.
-
-SOURCE...Radar indicated.
-
-IMPACT...Hail damage to vehicles is expected. Expect wind damage
-to roofs, siding, and trees.
-
-* Locations impacted include...
-Joliet, Naperville, Bolingbrook, Romeoville, Plainfield, Woodridge,
-Lockport, New Lenox, Homer Glen, Mokena, Frankfort, Channahon,
-Minooka, Crest Hill, Shorewood, Manhattan, Ingalls Park, Elwood,
-Preston Heights, Fairmont, Rockdale, and Crystal Lawns.</summary>
-        <cap:event>Severe Thunderstorm Warning</cap:event>
-        <cap:sent>2024-05-24T11:31:00-05:00</cap:sent>
-        <cap:effective>2024-05-24T11:31:00-05:00</cap:effective>
-        <cap:onset>2024-05-24T11:31:00-05:00</cap:onset>
-        <cap:expires>2024-05-24T12:30:00-05:00</cap:expires>
-        <cap:status>Actual</cap:status>
-        <cap:msgType>Alert</cap:msgType>
-        <cap:category>Met</cap:category>
-        <cap:urgency>Immediate</cap:urgency>
-        <cap:severity>Severe</cap:severity>
-        <cap:certainty>Observed</cap:certainty>
-        <cap:areaDesc>Grundy, IL; Will, IL</cap:areaDesc>
-        <cap:polygon>41.4,-88.38 41.46,-88.38 41.46,-88.25 41.69,-88.26 41.7299999,-88.05 41.7299999,-88.03 41.64,-88.03 41.64,-87.91 41.56,-87.91 41.56,-87.9 41.44,-87.9 41.4,-88.38</cap:polygon>
-        <cap:geocode>
-            <valueName>SAME</valueName>
-            <value>017063</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>SAME</valueName>
-            <value>017197</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>UGC</valueName>
-            <value>ILC063</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>UGC</valueName>
-            <value>ILC197</value>
-        </cap:geocode>
-        <cap:parameter>
-            <valueName>AWIPSidentifier</valueName>
-            <value>SVRLOT</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>WMOidentifier</valueName>
-            <value>WUUS53 KLOT 241631</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>eventMotionDescription</valueName>
-            <value>2024-05-24T16:30:00-00:00...storm...252DEG...24KT...41.66,-88.33 41.44,-88.3</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>windThreat</valueName>
-            <value>RADAR INDICATED</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>maxWindGust</valueName>
-            <value>60 MPH</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>hailThreat</valueName>
-            <value>RADAR INDICATED</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>maxHailSize</valueName>
-            <value>1.25</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>BLOCKCHANNEL</valueName>
-            <value>EAS</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>BLOCKCHANNEL</valueName>
-            <value>NWEM</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>BLOCKCHANNEL</valueName>
-            <value>CMAS</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>EAS-ORG</valueName>
-            <value>WXR</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>VTEC</valueName>
-            <value>/O.NEW.KLOT.SV.W.0050.240524T1631Z-240524T1730Z/</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>eventEndingTime</valueName>
-            <value>2024-05-24T17:30:00+00:00</value>
-        </cap:parameter>
-    </entry>
-    <entry>
-        <id>https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.c823846cdd4829c8e933c93ee5e82fda75c9e3f8.002.1</id>
-        <link rel="alternate" href="https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.c823846cdd4829c8e933c93ee5e82fda75c9e3f8.002.1.cap"/>
-        <updated>2024-05-24T11:26:00-05:00</updated>
-        <published>2024-05-24T11:26:00-05:00</published>
-        <author>
-            <name>NWS</name>
-        </author>
-        <title>Severe Thunderstorm Warning issued May 24 at 11:26AM CDT until May 24 at 12:00PM CDT by NWS Chicago IL</title>
-        <summary>At 1125 AM CDT, a severe thunderstorm was located 8 miles southeast
-of Yorkville, moving east at 25 mph.
+        <title>Severe Thunderstorm Warning issued May 24 at 11:53AM CDT until May 24 at 12:30PM CDT by NWS Chicago IL</title>
+        <summary>At 1153 AM CDT, severe thunderstorms were located along a line
+extending from near Plainfield to near Channahon, moving east at 30
+mph.
 
 HAZARD...60 mph wind gusts and quarter size hail.
 
@@ -325,27 +330,30 @@ IMPACT...Hail damage to vehicles is expected. Expect wind damage to
 roofs, siding, and trees.
 
 Locations impacted include...
-Joliet, Plainfield, Minooka, and Plattville.</summary>
+Joliet, Naperville, Bolingbrook, Romeoville, Plainfield, Woodridge,
+Lockport, New Lenox, Homer Glen, Mokena, Frankfort, Channahon,
+Minooka, Crest Hill, Shorewood, Manhattan, Ingalls Park, Elwood,
+Preston Heights, Fairmont, Rockdale, and Crystal Lawns.</summary>
         <cap:event>Severe Thunderstorm Warning</cap:event>
-        <cap:sent>2024-05-24T11:26:00-05:00</cap:sent>
-        <cap:effective>2024-05-24T11:26:00-05:00</cap:effective>
-        <cap:onset>2024-05-24T11:26:00-05:00</cap:onset>
-        <cap:expires>2024-05-24T12:00:00-05:00</cap:expires>
+        <cap:sent>2024-05-24T11:53:00-05:00</cap:sent>
+        <cap:effective>2024-05-24T11:53:00-05:00</cap:effective>
+        <cap:onset>2024-05-24T11:53:00-05:00</cap:onset>
+        <cap:expires>2024-05-24T12:30:00-05:00</cap:expires>
         <cap:status>Actual</cap:status>
         <cap:msgType>Update</cap:msgType>
         <cap:category>Met</cap:category>
         <cap:urgency>Immediate</cap:urgency>
         <cap:severity>Severe</cap:severity>
         <cap:certainty>Observed</cap:certainty>
-        <cap:areaDesc>Kendall, IL</cap:areaDesc>
-        <cap:polygon>41.64,-88.26 41.46,-88.25 41.46,-88.45 41.59,-88.49 41.64,-88.26</cap:polygon>
+        <cap:areaDesc>Will, IL</cap:areaDesc>
+        <cap:polygon>41.4099999,-88.25 41.69,-88.26 41.7299999,-88.05 41.7299999,-88.03 41.64,-88.03 41.64,-87.91 41.56,-87.91 41.56,-87.9 41.44,-87.9 41.4099999,-88.25</cap:polygon>
         <cap:geocode>
             <valueName>SAME</valueName>
-            <value>017093</value>
+            <value>017197</value>
         </cap:geocode>
         <cap:geocode>
             <valueName>UGC</valueName>
-            <value>ILC093</value>
+            <value>ILC197</value>
         </cap:geocode>
         <cap:parameter>
             <valueName>AWIPSidentifier</valueName>
@@ -353,15 +361,15 @@ Joliet, Plainfield, Minooka, and Plattville.</summary>
         </cap:parameter>
         <cap:parameter>
             <valueName>WMOidentifier</valueName>
-            <value>WWUS53 KLOT 241626</value>
+            <value>WWUS53 KLOT 241653</value>
         </cap:parameter>
         <cap:parameter>
             <valueName>NWSheadline</valueName>
-            <value>A SEVERE THUNDERSTORM WARNING REMAINS IN EFFECT UNTIL NOON CDT FOR SOUTHEASTERN KENDALL COUNTY</value>
+            <value>A SEVERE THUNDERSTORM WARNING REMAINS IN EFFECT UNTIL 1230 PM CDT FOR NORTHWESTERN WILL COUNTY</value>
         </cap:parameter>
         <cap:parameter>
             <valueName>eventMotionDescription</valueName>
-            <value>2024-05-24T16:25:00-00:00...storm...268DEG...20KT...41.53,-88.39</value>
+            <value>2024-05-24T16:53:00-00:00...storm...256DEG...25KT...41.68,-88.2 41.46,-88.17</value>
         </cap:parameter>
         <cap:parameter>
             <valueName>windThreat</valueName>
@@ -397,11 +405,767 @@ Joliet, Plainfield, Minooka, and Plattville.</summary>
         </cap:parameter>
         <cap:parameter>
             <valueName>VTEC</valueName>
-            <value>/O.CON.KLOT.SV.W.0049.000000T0000Z-240524T1700Z/</value>
+            <value>/O.CON.KLOT.SV.W.0050.000000T0000Z-240524T1730Z/</value>
         </cap:parameter>
         <cap:parameter>
             <valueName>eventEndingTime</valueName>
-            <value>2024-05-24T17:00:00+00:00</value>
+            <value>2024-05-24T17:30:00+00:00</value>
+        </cap:parameter>
+    </entry>
+    <entry>
+        <id>https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.a36f7ec6f0b65edaea400e5fd0bc7ccd4431c9e1.001.1</id>
+        <link rel="alternate" href="https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.a36f7ec6f0b65edaea400e5fd0bc7ccd4431c9e1.001.1.cap"/>
+        <updated>2024-05-24T11:50:00-05:00</updated>
+        <published>2024-05-24T11:50:00-05:00</published>
+        <author>
+            <name>NWS</name>
+        </author>
+        <title>Flood Advisory issued May 24 at 11:50AM CDT until May 24 at 2:00PM CDT by NWS Memphis TN</title>
+        <summary>* WHAT...Flooding caused by excessive rainfall is expected.
+
+* WHERE...A portion of West Tennessee, including the following
+counties, Crockett, Gibson and Madison.
+
+* WHEN...Until 200 PM CDT.
+
+* IMPACTS...Minor flooding in low-lying and poor drainage areas.
+Water over roadways.
+
+* ADDITIONAL DETAILS...
+- At 1150 AM CDT, Doppler radar indicated heavy rain due to
+thunderstorms. Minor flooding is ongoing or expected to begin
+shortly in the advisory area. Between 1 and 4 inches of rain
+have fallen.
+- Additional rainfall amounts up to 1 inch are expected over
+the area. This additional rain will result in minor flooding.
+- Some locations that will experience flooding include...
+Jackson, Humboldt, Trenton, Fairview, Alamo, Bells, Dyer,
+Three Way, Adair, Eaton, Carroll, Gadsden, Coxville, Gibson
+Wells, Mason Grove, Fruitland, Quincy, Fruitvale, Brazil and
+Gum Flat.
+- http://www.weather.gov/safety/flood</summary>
+        <cap:event>Flood Advisory</cap:event>
+        <cap:sent>2024-05-24T11:50:00-05:00</cap:sent>
+        <cap:effective>2024-05-24T11:50:00-05:00</cap:effective>
+        <cap:onset>2024-05-24T11:50:00-05:00</cap:onset>
+        <cap:expires>2024-05-24T14:00:00-05:00</cap:expires>
+        <cap:status>Actual</cap:status>
+        <cap:msgType>Alert</cap:msgType>
+        <cap:category>Met</cap:category>
+        <cap:urgency>Expected</cap:urgency>
+        <cap:severity>Minor</cap:severity>
+        <cap:certainty>Likely</cap:certainty>
+        <cap:areaDesc>Crockett, TN; Gibson, TN; Madison, TN</cap:areaDesc>
+        <cap:polygon>36.03,-89.16 36.08,-88.95 35.8,-88.83 35.71,-88.7 35.58,-88.95 35.67,-89.01 35.6,-89.0699999 35.69,-89.0699999 35.67,-89.02 35.93,-89.23 36.03,-89.16</cap:polygon>
+        <cap:geocode>
+            <valueName>SAME</valueName>
+            <value>047033</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>SAME</valueName>
+            <value>047053</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>SAME</valueName>
+            <value>047113</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>UGC</valueName>
+            <value>TNC033</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>UGC</valueName>
+            <value>TNC053</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>UGC</valueName>
+            <value>TNC113</value>
+        </cap:geocode>
+        <cap:parameter>
+            <valueName>AWIPSidentifier</valueName>
+            <value>FLSMEG</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>WMOidentifier</valueName>
+            <value>WGUS84 KMEG 241650</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>NWSheadline</valueName>
+            <value>FLOOD ADVISORY IN EFFECT UNTIL 2 PM CDT THIS AFTERNOON</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>BLOCKCHANNEL</valueName>
+            <value>EAS</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>BLOCKCHANNEL</valueName>
+            <value>NWEM</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>BLOCKCHANNEL</valueName>
+            <value>CMAS</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>VTEC</valueName>
+            <value>/O.NEW.KMEG.FA.Y.0044.240524T1650Z-240524T1900Z/</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>eventEndingTime</valueName>
+            <value>2024-05-24T19:00:00+00:00</value>
+        </cap:parameter>
+    </entry>
+    <entry>
+        <id>https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.930d92cd68dd465b1ee3094158663afe2c826724.001.1</id>
+        <link rel="alternate" href="https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.930d92cd68dd465b1ee3094158663afe2c826724.001.1.cap"/>
+        <updated>2024-05-24T11:43:00-05:00</updated>
+        <published>2024-05-24T11:43:00-05:00</published>
+        <author>
+            <name>NWS</name>
+        </author>
+        <title>Special Weather Statement issued May 24 at 11:43AM CDT by NWS Memphis TN</title>
+        <summary>At 1143 AM CDT, Doppler radar was tracking a strong thunderstorm near
+Trebloc, or 7 miles southwest of Okolona, moving east at 20 mph.
+
+HAZARD...Winds in excess of 30 mph and penny size hail.
+
+SOURCE...Radar indicated.
+
+IMPACT...Gusty winds could knock down tree limbs and blow around
+unsecured objects. Minor hail damage to vegetation is
+possible.
+
+Locations impacted include...
+Amory, Aberdeen, Okolona, Shannon, New Wren, Trebloc, Nettleton,
+Becker, Van Vleet, Egypt, Wren, McCondy, Bigbee, Leotis, and Buena
+Vista.</summary>
+        <cap:event>Special Weather Statement</cap:event>
+        <cap:sent>2024-05-24T11:43:00-05:00</cap:sent>
+        <cap:effective>2024-05-24T11:43:00-05:00</cap:effective>
+        <cap:onset>2024-05-24T11:43:00-05:00</cap:onset>
+        <cap:expires>2024-05-24T12:15:00-05:00</cap:expires>
+        <cap:status>Actual</cap:status>
+        <cap:msgType>Alert</cap:msgType>
+        <cap:category>Met</cap:category>
+        <cap:urgency>Expected</cap:urgency>
+        <cap:severity>Moderate</cap:severity>
+        <cap:certainty>Observed</cap:certainty>
+        <cap:areaDesc>Lee; Chickasaw; Monroe</cap:areaDesc>
+        <cap:polygon>33.99,-88.9599999 34.15,-88.56 34.1,-88.54 34.09,-88.54 33.83,-88.44 33.81,-88.75 33.81,-88.91 33.99,-88.9599999</cap:polygon>
+        <cap:geocode>
+            <valueName>SAME</valueName>
+            <value>028081</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>SAME</valueName>
+            <value>028017</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>SAME</valueName>
+            <value>028095</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>UGC</valueName>
+            <value>MSZ016</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>UGC</valueName>
+            <value>MSZ023</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>UGC</valueName>
+            <value>MSZ024</value>
+        </cap:geocode>
+        <cap:parameter>
+            <valueName>AWIPSidentifier</valueName>
+            <value>SPSMEG</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>WMOidentifier</valueName>
+            <value>WWUS84 KMEG 241643</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>NWSheadline</valueName>
+            <value>A STRONG THUNDERSTORM WILL IMPACT EASTERN CHICKASAW...SOUTHEASTERN LEE AND NORTHWESTERN MONROE COUNTIES THROUGH 1215 PM CDT</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>eventMotionDescription</valueName>
+            <value>2024-05-24T16:43:00-00:00...storm...259DEG...16KT...33.91,-88.82</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>maxWindGust</valueName>
+            <value>30 MPH</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>maxHailSize</valueName>
+            <value>0.75</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>BLOCKCHANNEL</valueName>
+            <value>EAS</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>BLOCKCHANNEL</valueName>
+            <value>NWEM</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>BLOCKCHANNEL</valueName>
+            <value>CMAS</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>EAS-ORG</valueName>
+            <value>WXR</value>
+        </cap:parameter>
+    </entry>
+    <entry>
+        <id>https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.06879a6c442a7aef5d046a4ef50a024142ab4e40.001.1</id>
+        <link rel="alternate" href="https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.06879a6c442a7aef5d046a4ef50a024142ab4e40.001.1.cap"/>
+        <updated>2024-05-24T11:42:00-05:00</updated>
+        <published>2024-05-24T11:42:00-05:00</published>
+        <author>
+            <name>NWS</name>
+        </author>
+        <title>Flood Watch issued May 24 at 11:42AM CDT until May 24 at 4:00PM CDT by NWS Quad Cities IA IL</title>
+        <summary>* WHAT...Flooding caused by excessive rainfall continues to be
+possible.
+
+* WHERE...Portions of east central, northeast, and southeast Iowa,
+including the following counties, in east central Iowa, Benton,
+Cedar, Clinton, Iowa, Jackson, Johnson, Jones, Linn, Muscatine and
+Scott. In northeast Iowa, Buchanan, Delaware and Dubuque. In
+southeast Iowa, Keokuk, Louisa and Washington.
+
+* WHEN...Until 4 PM CDT this afternoon.
+
+* IMPACTS...Excessive runoff may result in flooding of rivers,
+creeks, streams, and other low-lying and flood-prone locations.
+Creeks and streams may rise out of their banks. Flooding may occur
+in poor drainage and urban areas.</summary>
+        <cap:event>Flood Watch</cap:event>
+        <cap:sent>2024-05-24T11:42:00-05:00</cap:sent>
+        <cap:effective>2024-05-24T11:42:00-05:00</cap:effective>
+        <cap:onset>2024-05-24T11:42:00-05:00</cap:onset>
+        <cap:expires>2024-05-24T16:00:00-05:00</cap:expires>
+        <cap:status>Actual</cap:status>
+        <cap:msgType>Update</cap:msgType>
+        <cap:category>Met</cap:category>
+        <cap:urgency>Future</cap:urgency>
+        <cap:severity>Severe</cap:severity>
+        <cap:certainty>Possible</cap:certainty>
+        <cap:areaDesc>Buchanan; Delaware; Dubuque; Benton; Linn; Jones; Jackson; Iowa; Johnson; Cedar; Clinton; Muscatine; Scott; Keokuk; Washington; Louisa</cap:areaDesc>
+        <cap:polygon/>
+        <cap:geocode>
+            <valueName>SAME</valueName>
+            <value>019019</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>SAME</valueName>
+            <value>019055</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>SAME</valueName>
+            <value>019061</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>SAME</valueName>
+            <value>019011</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>SAME</valueName>
+            <value>019113</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>SAME</valueName>
+            <value>019105</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>SAME</valueName>
+            <value>019097</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>SAME</valueName>
+            <value>019095</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>SAME</valueName>
+            <value>019103</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>SAME</valueName>
+            <value>019031</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>SAME</valueName>
+            <value>019045</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>SAME</valueName>
+            <value>019139</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>SAME</valueName>
+            <value>019163</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>SAME</valueName>
+            <value>019107</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>SAME</valueName>
+            <value>019183</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>SAME</valueName>
+            <value>019115</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>UGC</valueName>
+            <value>IAZ040</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>UGC</valueName>
+            <value>IAZ041</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>UGC</valueName>
+            <value>IAZ042</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>UGC</valueName>
+            <value>IAZ051</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>UGC</valueName>
+            <value>IAZ052</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>UGC</valueName>
+            <value>IAZ053</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>UGC</valueName>
+            <value>IAZ054</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>UGC</valueName>
+            <value>IAZ063</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>UGC</valueName>
+            <value>IAZ064</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>UGC</valueName>
+            <value>IAZ065</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>UGC</valueName>
+            <value>IAZ066</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>UGC</valueName>
+            <value>IAZ067</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>UGC</valueName>
+            <value>IAZ068</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>UGC</valueName>
+            <value>IAZ076</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>UGC</valueName>
+            <value>IAZ077</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>UGC</valueName>
+            <value>IAZ078</value>
+        </cap:geocode>
+        <cap:parameter>
+            <valueName>AWIPSidentifier</valueName>
+            <value>FFADVN</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>WMOidentifier</valueName>
+            <value>WGUS63 KDVN 241642</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>NWSheadline</valueName>
+            <value>FLOOD WATCH REMAINS IN EFFECT UNTIL 4 PM CDT THIS AFTERNOON</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>BLOCKCHANNEL</valueName>
+            <value>EAS</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>BLOCKCHANNEL</valueName>
+            <value>NWEM</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>BLOCKCHANNEL</valueName>
+            <value>CMAS</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>EAS-ORG</valueName>
+            <value>WXR</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>VTEC</valueName>
+            <value>/O.CON.KDVN.FA.A.0005.000000T0000Z-240524T2100Z/</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>eventEndingTime</valueName>
+            <value>2024-05-24T21:00:00+00:00</value>
+        </cap:parameter>
+    </entry>
+    <entry>
+        <id>https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.23d599e2d9aa4eac69a4828a6573ea82c73af9ad.001.1</id>
+        <link rel="alternate" href="https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.23d599e2d9aa4eac69a4828a6573ea82c73af9ad.001.1.cap"/>
+        <updated>2024-05-24T11:42:00-05:00</updated>
+        <published>2024-05-24T11:42:00-05:00</published>
+        <author>
+            <name>NWS</name>
+        </author>
+        <title>Special Weather Statement issued May 24 at 11:42AM CDT by NWS Milwaukee/Sullivan WI</title>
+        <summary>At 1142 AM CDT, Doppler radar was tracking strong thunderstorms along
+a line extending from near Kewaskum to Oak Creek. Movement was
+northeast at 35 mph.
+
+HAZARD...Wind gusts of 40 to 50 mph and half inch hail.
+
+SOURCE...Radar indicated.
+
+IMPACT...Gusty winds could knock down tree limbs and blow around
+unsecured objects. Minor hail damage to vegetation is
+possible.
+
+Locations impacted include...
+Milwaukee, West Allis, Sheboygan, Wauwatosa, Brookfield, Greenfield,
+Menomonee Falls, Oak Creek, West Bend, Mequon, South Milwaukee,
+Cudahy, Whitefish Bay, Greendale, Brown Deer, Grafton, Cedarburg,
+Port Washington, St. Francis, and Sheboygan Falls.
+
+This includes the following highways...
+Interstate 94 between mile markers 304 and 310.
+Interstate 43 between mile markers 73 and 125.
+Interstate 41 between mile markers 40 and 65, and near mile marker
+79.
+U.S. Highway 45 between mile markers 61 and 73.
+Interstate 41/894 between mile markers 0 and 3.
+Interstate 41/43/894 between mile markers 6 and 9.
+Interstate 43/94 between mile markers 311 and 316.
+Interstate 41/94 between mile markers 317 and 325.
+Interstate 794 between mile markers 1 and 3.</summary>
+        <cap:event>Special Weather Statement</cap:event>
+        <cap:sent>2024-05-24T11:42:00-05:00</cap:sent>
+        <cap:effective>2024-05-24T11:42:00-05:00</cap:effective>
+        <cap:onset>2024-05-24T11:42:00-05:00</cap:onset>
+        <cap:expires>2024-05-24T12:45:00-05:00</cap:expires>
+        <cap:status>Actual</cap:status>
+        <cap:msgType>Alert</cap:msgType>
+        <cap:category>Met</cap:category>
+        <cap:urgency>Expected</cap:urgency>
+        <cap:severity>Moderate</cap:severity>
+        <cap:certainty>Observed</cap:certainty>
+        <cap:areaDesc>Fond Du Lac; Sheboygan; Washington; Ozaukee; Waukesha; Milwaukee</cap:areaDesc>
+        <cap:polygon>43.68,-87.7 43.57,-87.79 43.49,-87.79 43.38,-87.87 43.26,-87.91 43.18,-87.88 43.12,-87.9 43.07,-87.87 43.02,-87.9 42.96,-87.85 42.85,-87.8199999 42.84,-87.95 43.52,-88.38 43.77,-87.7 43.68,-87.7</cap:polygon>
+        <cap:geocode>
+            <valueName>SAME</valueName>
+            <value>055039</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>SAME</valueName>
+            <value>055117</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>SAME</valueName>
+            <value>055131</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>SAME</valueName>
+            <value>055089</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>SAME</valueName>
+            <value>055133</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>SAME</valueName>
+            <value>055079</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>UGC</valueName>
+            <value>WIZ051</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>UGC</valueName>
+            <value>WIZ052</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>UGC</valueName>
+            <value>WIZ059</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>UGC</valueName>
+            <value>WIZ060</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>UGC</valueName>
+            <value>WIZ065</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>UGC</valueName>
+            <value>WIZ066</value>
+        </cap:geocode>
+        <cap:parameter>
+            <valueName>AWIPSidentifier</valueName>
+            <value>SPSMKX</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>WMOidentifier</valueName>
+            <value>WWUS83 KMKX 241642</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>NWSheadline</valueName>
+            <value>STRONG THUNDERSTORMS WILL IMPACT OZAUKEE...MILWAUKEE... SOUTHEASTERN FOND DU LAC...NORTHEASTERN WAUKESHA...WASHINGTON AND SOUTHERN SHEBOYGAN COUNTIES THROUGH 1245 PM CDT</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>eventMotionDescription</valueName>
+            <value>2024-05-24T16:42:00-00:00...storm...242DEG...31KT...43.49,-88.26 42.89,-87.9</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>maxWindGust</valueName>
+            <value>50 MPH</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>maxHailSize</valueName>
+            <value>0.50</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>BLOCKCHANNEL</valueName>
+            <value>EAS</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>BLOCKCHANNEL</valueName>
+            <value>NWEM</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>BLOCKCHANNEL</valueName>
+            <value>CMAS</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>EAS-ORG</valueName>
+            <value>WXR</value>
+        </cap:parameter>
+    </entry>
+    <entry>
+        <id>https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.b47f84416158962a29aedc0afe4039b6618d5a32.001.1</id>
+        <link rel="alternate" href="https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.b47f84416158962a29aedc0afe4039b6618d5a32.001.1.cap"/>
+        <updated>2024-05-24T11:40:00-05:00</updated>
+        <published>2024-05-24T11:40:00-05:00</published>
+        <author>
+            <name>NWS</name>
+        </author>
+        <title>Severe Thunderstorm Warning issued May 24 at 11:40AM CDT until May 24 at 12:15PM CDT by NWS Little Rock AR</title>
+        <summary>SVRLZK
+
+The National Weather Service in Little Rock has issued a
+
+* Severe Thunderstorm Warning for...
+Southeastern Logan County in western Arkansas...
+Eastern Scott County in western Arkansas...
+Northwestern Yell County in central Arkansas...
+
+* Until 1215 PM CDT.
+
+* At 1140 AM CDT, a severe thunderstorm was located over Blue
+Mountain, or 11 miles east of Booneville, moving east at 35 mph.
+
+HAZARD...60 mph wind gusts and quarter size hail.
+
+SOURCE...Radar indicated.
+
+IMPACT...Hail damage to vehicles is expected. Expect wind damage
+to roofs, siding, and trees.
+
+* Locations impacted include...
+Danville...                       Magazine...
+Blue Mountain...                  Stonehouse Recreation Area...
+Mount Magazine...                 Plainview in Yell County...
+Belleville...                     Havana...
+Corinth...                        Ranger...
+Macedonia in Yell County...       Waveland...
+Kingston...                       Chickalah...
+Sugar Grove...                    Spring Lake Campground...</summary>
+        <cap:event>Severe Thunderstorm Warning</cap:event>
+        <cap:sent>2024-05-24T11:40:00-05:00</cap:sent>
+        <cap:effective>2024-05-24T11:40:00-05:00</cap:effective>
+        <cap:onset>2024-05-24T11:40:00-05:00</cap:onset>
+        <cap:expires>2024-05-24T12:15:00-05:00</cap:expires>
+        <cap:status>Actual</cap:status>
+        <cap:msgType>Alert</cap:msgType>
+        <cap:category>Met</cap:category>
+        <cap:urgency>Immediate</cap:urgency>
+        <cap:severity>Severe</cap:severity>
+        <cap:certainty>Observed</cap:certainty>
+        <cap:areaDesc>Logan, AR; Scott, AR; Yell, AR</cap:areaDesc>
+        <cap:polygon>35.01,-93.8 35.19,-93.81 35.24,-93.28 34.97,-93.27 35.01,-93.8</cap:polygon>
+        <cap:geocode>
+            <valueName>SAME</valueName>
+            <value>005083</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>SAME</valueName>
+            <value>005127</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>SAME</valueName>
+            <value>005149</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>UGC</valueName>
+            <value>ARC083</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>UGC</valueName>
+            <value>ARC127</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>UGC</valueName>
+            <value>ARC149</value>
+        </cap:geocode>
+        <cap:parameter>
+            <valueName>AWIPSidentifier</valueName>
+            <value>SVRLZK</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>WMOidentifier</valueName>
+            <value>WUUS54 KLZK 241640</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>eventMotionDescription</valueName>
+            <value>2024-05-24T16:40:00-00:00...storm...268DEG...32KT...35.1,-93.72</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>windThreat</valueName>
+            <value>RADAR INDICATED</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>maxWindGust</valueName>
+            <value>60 MPH</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>hailThreat</valueName>
+            <value>RADAR INDICATED</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>maxHailSize</valueName>
+            <value>1.00</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>BLOCKCHANNEL</valueName>
+            <value>EAS</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>BLOCKCHANNEL</valueName>
+            <value>NWEM</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>BLOCKCHANNEL</valueName>
+            <value>CMAS</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>EAS-ORG</valueName>
+            <value>WXR</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>VTEC</valueName>
+            <value>/O.NEW.KLZK.SV.W.0188.240524T1640Z-240524T1715Z/</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>eventEndingTime</valueName>
+            <value>2024-05-24T17:15:00+00:00</value>
+        </cap:parameter>
+    </entry>
+    <entry>
+        <id>https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.1ba377ac96543eaa847872fb932f320ef2c463ff.002.1</id>
+        <link rel="alternate" href="https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.1ba377ac96543eaa847872fb932f320ef2c463ff.002.1.cap"/>
+        <updated>2024-05-24T11:36:00-05:00</updated>
+        <published>2024-05-24T11:36:00-05:00</published>
+        <author>
+            <name>NWS</name>
+        </author>
+        <title>Severe Thunderstorm Watch issued May 24 at 11:36AM CDT until May 24 at 1:00PM CDT by NWS Quad Cities IA IL</title>
+        <summary>SEVERE THUNDERSTORM WATCH 301 REMAINS VALID UNTIL 1 PM CDT THIS
+AFTERNOON FOR THE FOLLOWING AREAS
+
+IN ILLINOIS THIS WATCH INCLUDES 2 COUNTIES
+
+IN WEST CENTRAL ILLINOIS
+
+HANCOCK               MCDONOUGH
+
+THIS INCLUDES THE CITIES OF CARTHAGE AND MACOMB.</summary>
+        <cap:event>Severe Thunderstorm Watch</cap:event>
+        <cap:sent>2024-05-24T11:36:00-05:00</cap:sent>
+        <cap:effective>2024-05-24T11:36:00-05:00</cap:effective>
+        <cap:onset>2024-05-24T11:36:00-05:00</cap:onset>
+        <cap:expires>2024-05-24T13:00:00-05:00</cap:expires>
+        <cap:status>Actual</cap:status>
+        <cap:msgType>Update</cap:msgType>
+        <cap:category>Met</cap:category>
+        <cap:urgency>Future</cap:urgency>
+        <cap:severity>Severe</cap:severity>
+        <cap:certainty>Possible</cap:certainty>
+        <cap:areaDesc>Hancock, IL; McDonough, IL</cap:areaDesc>
+        <cap:polygon/>
+        <cap:geocode>
+            <valueName>SAME</valueName>
+            <value>017067</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>SAME</valueName>
+            <value>017109</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>UGC</valueName>
+            <value>ILC067</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>UGC</valueName>
+            <value>ILC109</value>
+        </cap:geocode>
+        <cap:parameter>
+            <valueName>AWIPSidentifier</valueName>
+            <value>WCNDVN</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>WMOidentifier</valueName>
+            <value>WWUS63 KDVN 241636</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>BLOCKCHANNEL</valueName>
+            <value>EAS</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>BLOCKCHANNEL</valueName>
+            <value>NWEM</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>BLOCKCHANNEL</valueName>
+            <value>CMAS</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>EAS-ORG</valueName>
+            <value>WXR</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>VTEC</valueName>
+            <value>/O.CON.KDVN.SV.A.0301.000000T0000Z-240524T1800Z/</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>eventEndingTime</valueName>
+            <value>2024-05-24T18:00:00+00:00</value>
         </cap:parameter>
     </entry>
     <entry>
@@ -1116,198 +1880,6 @@ Highways 89 and 105 were closed due to flooding in Trimble.</summary>
         </cap:parameter>
     </entry>
     <entry>
-        <id>https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.377b891db27a240492adf3192a0778cb0f38f7cc.001.1</id>
-        <link rel="alternate" href="https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.377b891db27a240492adf3192a0778cb0f38f7cc.001.1.cap"/>
-        <updated>2024-05-24T11:09:00-05:00</updated>
-        <published>2024-05-24T11:09:00-05:00</published>
-        <author>
-            <name>NWS</name>
-        </author>
-        <title>Special Weather Statement issued May 24 at 11:09AM CDT by NWS Little Rock AR</title>
-        <summary>At 1108 AM CDT, Doppler radar was tracking a strong thunderstorm over
-Kingston, or 11 miles southeast of Huntsville, moving east at 35 mph.
-
-HAZARD...Winds in excess of 40 mph and penny size hail.
-
-SOURCE...Radar indicated.
-
-IMPACT...Gusty winds could knock down tree limbs and blow around
-unsecured objects. Minor damage to outdoor objects is
-possible.
-
-Locations impacted include...
-Jasper...                         Lost Valley State Park...
-Erbie...                          Upper Buffalo Wilderness Area...
-Pruitt...                         Marble Falls...
-Boxley...                         Compton...
-Low Gap...                        Parthenon...
-Gaither...                        Ponca...
-Mt Sherman...</summary>
-        <cap:event>Special Weather Statement</cap:event>
-        <cap:sent>2024-05-24T11:09:00-05:00</cap:sent>
-        <cap:effective>2024-05-24T11:09:00-05:00</cap:effective>
-        <cap:onset>2024-05-24T11:09:00-05:00</cap:onset>
-        <cap:expires>2024-05-24T11:45:00-05:00</cap:expires>
-        <cap:status>Actual</cap:status>
-        <cap:msgType>Alert</cap:msgType>
-        <cap:category>Met</cap:category>
-        <cap:urgency>Expected</cap:urgency>
-        <cap:severity>Moderate</cap:severity>
-        <cap:certainty>Observed</cap:certainty>
-        <cap:areaDesc>Boone County Except Southwest; Newton County Higher Elevations; Boone County Higher Elevations; Newton County Lower Elevations</cap:areaDesc>
-        <cap:polygon>35.95,-93.11 35.92,-93.51 35.93,-93.48 35.95,-93.49 35.95,-93.47 35.97,-93.47 35.97,-93.45 36.08,-93.45 36.08,-93.48 36.13,-93.48 36.12,-93.3 36.18,-93.3 36.21,-93.18 35.95,-93.11</cap:polygon>
-        <cap:geocode>
-            <valueName>SAME</valueName>
-            <value>005009</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>SAME</valueName>
-            <value>005101</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>UGC</valueName>
-            <value>ARZ103</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>UGC</valueName>
-            <value>ARZ112</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>UGC</valueName>
-            <value>ARZ203</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>UGC</valueName>
-            <value>ARZ212</value>
-        </cap:geocode>
-        <cap:parameter>
-            <valueName>AWIPSidentifier</valueName>
-            <value>SPSLZK</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>WMOidentifier</valueName>
-            <value>WWUS84 KLZK 241609</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>NWSheadline</valueName>
-            <value>A strong thunderstorm will impact portions of northwestern Newton and southwestern Boone Counties through 1145 AM CDT</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>eventMotionDescription</valueName>
-            <value>2024-05-24T16:08:00-00:00...storm...259DEG...29KT...36.02,-93.55</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>maxWindGust</valueName>
-            <value>40 MPH</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>maxHailSize</valueName>
-            <value>0.75</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>BLOCKCHANNEL</valueName>
-            <value>EAS</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>BLOCKCHANNEL</valueName>
-            <value>NWEM</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>BLOCKCHANNEL</valueName>
-            <value>CMAS</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>EAS-ORG</valueName>
-            <value>WXR</value>
-        </cap:parameter>
-    </entry>
-    <entry>
-        <id>https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.9e986817d10b3d53d4c125c32733e6641f212492.001.1</id>
-        <link rel="alternate" href="https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.9e986817d10b3d53d4c125c32733e6641f212492.001.1.cap"/>
-        <updated>2024-05-24T11:08:00-05:00</updated>
-        <published>2024-05-24T11:08:00-05:00</published>
-        <author>
-            <name>NWS</name>
-        </author>
-        <title>Special Weather Statement issued May 24 at 11:08AM CDT by NWS Birmingham AL</title>
-        <summary>At 1107 AM CDT, Doppler radar was tracking a strong thunderstorm near
-Needmore, or near Haleyville, moving northeast at 55 mph.
-
-HAZARD...Wind gusts up to 40 mph and penny size hail.
-
-SOURCE...Radar indicated.
-
-IMPACT...Gusty winds could knock down tree limbs and blow around
-unsecured objects. Minor hail damage to vegetation is
-possible.
-
-Locations impacted include...
-Haleyville, Brushy Lake, Needmore, Moreland, Ashridge, Weiss, Posey
-Field Airport, Upshaw, Pebble, Delmar, Sipsey River Rec Area,
-Grayson, and Bankhead National Forest.</summary>
-        <cap:event>Special Weather Statement</cap:event>
-        <cap:sent>2024-05-24T11:08:00-05:00</cap:sent>
-        <cap:effective>2024-05-24T11:08:00-05:00</cap:effective>
-        <cap:onset>2024-05-24T11:08:00-05:00</cap:onset>
-        <cap:expires>2024-05-24T11:45:00-05:00</cap:expires>
-        <cap:status>Actual</cap:status>
-        <cap:msgType>Alert</cap:msgType>
-        <cap:category>Met</cap:category>
-        <cap:urgency>Expected</cap:urgency>
-        <cap:severity>Moderate</cap:severity>
-        <cap:certainty>Observed</cap:certainty>
-        <cap:areaDesc>Winston</cap:areaDesc>
-        <cap:polygon>34.3,-87.11 34.28,-87.11 34.1,-87.63 34.31,-87.63 34.3,-87.11</cap:polygon>
-        <cap:geocode>
-            <valueName>SAME</valueName>
-            <value>001133</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>UGC</valueName>
-            <value>ALZ014</value>
-        </cap:geocode>
-        <cap:parameter>
-            <valueName>AWIPSidentifier</valueName>
-            <value>SPSBMX</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>WMOidentifier</valueName>
-            <value>WWUS84 KBMX 241608</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>NWSheadline</valueName>
-            <value>A STRONG THUNDERSTORM WILL IMPACT NORTHERN WINSTON COUNTY THROUGH 1145 AM CDT</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>eventMotionDescription</valueName>
-            <value>2024-05-24T16:07:00-00:00...storm...239DEG...49KT...34.22,-87.54</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>maxWindGust</valueName>
-            <value>40 MPH</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>maxHailSize</valueName>
-            <value>0.75</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>BLOCKCHANNEL</valueName>
-            <value>EAS</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>BLOCKCHANNEL</valueName>
-            <value>NWEM</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>BLOCKCHANNEL</valueName>
-            <value>CMAS</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>EAS-ORG</valueName>
-            <value>WXR</value>
-        </cap:parameter>
-    </entry>
-    <entry>
         <id>https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.083f0d0982a7126cb84946de6dab10e0cf6e9008.001.1</id>
         <link rel="alternate" href="https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.083f0d0982a7126cb84946de6dab10e0cf6e9008.001.1.cap"/>
         <updated>2024-05-24T11:03:00-05:00</updated>
@@ -1835,129 +2407,6 @@ in poor drainage and urban areas.
         <cap:parameter>
             <valueName>eventEndingTime</valueName>
             <value>2024-05-27T12:00:00+00:00</value>
-        </cap:parameter>
-    </entry>
-    <entry>
-        <id>https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.df2ddefc374e1b038ca83b5bba94bccca6c47bdb.001.1</id>
-        <link rel="alternate" href="https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.df2ddefc374e1b038ca83b5bba94bccca6c47bdb.001.1.cap"/>
-        <updated>2024-05-24T11:03:00-05:00</updated>
-        <published>2024-05-24T11:03:00-05:00</published>
-        <author>
-            <name>NWS</name>
-        </author>
-        <title>Special Weather Statement issued May 24 at 11:03AM CDT by NWS Milwaukee/Sullivan WI</title>
-        <summary>At 1103 AM CDT, Doppler radar was tracking strong thunderstorms along
-a line extending from near North Prairie to near Potter Lake to Pell
-Lake. Movement was northeast at 40 mph.
-
-HAZARD...Wind gusts up to 50 mph and half inch hail.
-
-SOURCE...Radar indicated.
-
-IMPACT...Gusty winds could knock down tree limbs and blow around
-unsecured objects. Minor hail damage to vegetation is
-possible.
-
-Locations impacted include...
-Milwaukee, Kenosha, Racine, Waukesha, West Allis, Wauwatosa, New
-Berlin, Brookfield, Greenfield, Oak Creek, Mount Pleasant, Muskego,
-South Milwaukee, Pleasant Prairie, Cudahy, Antioch, Whitefish Bay,
-Greendale, St. Francis, and Hales Corners.
-
-This includes the following highways...
-Interstate 94 between mile markers 301 and 310.
-Interstate 43 between mile markers 45 and 61, and between mile
-markers 73 and 78.
-Interstate 41 between mile markers 40 and 41.
-Interstate 41/894 between mile markers 0 and 4.
-Interstate 41/43/894 between mile markers 5 and 9.
-Interstate 43/94 between mile markers 311 and 316.
-Interstate 41/94 between mile markers 317 and 349.
-Interstate 794 between mile markers 1 and 3.</summary>
-        <cap:event>Special Weather Statement</cap:event>
-        <cap:sent>2024-05-24T11:03:00-05:00</cap:sent>
-        <cap:effective>2024-05-24T11:03:00-05:00</cap:effective>
-        <cap:onset>2024-05-24T11:03:00-05:00</cap:onset>
-        <cap:expires>2024-05-24T12:00:00-05:00</cap:expires>
-        <cap:status>Actual</cap:status>
-        <cap:msgType>Alert</cap:msgType>
-        <cap:category>Met</cap:category>
-        <cap:urgency>Expected</cap:urgency>
-        <cap:severity>Moderate</cap:severity>
-        <cap:certainty>Observed</cap:certainty>
-        <cap:areaDesc>Waukesha; Milwaukee; Racine; Kenosha</cap:areaDesc>
-        <cap:polygon>42.93,-88.31 43.13,-87.9 43.07,-87.87 43.02,-87.9 42.96,-87.85 42.85,-87.83 42.78,-87.75 42.76,-87.77 42.71,-87.77 42.6599999,-87.81 42.61,-87.8199999 42.49,-87.8 42.49,-88.3 42.93,-88.31</cap:polygon>
-        <cap:geocode>
-            <valueName>SAME</valueName>
-            <value>055133</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>SAME</valueName>
-            <value>055079</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>SAME</valueName>
-            <value>055101</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>SAME</valueName>
-            <value>055059</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>UGC</valueName>
-            <value>WIZ065</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>UGC</valueName>
-            <value>WIZ066</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>UGC</valueName>
-            <value>WIZ071</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>UGC</valueName>
-            <value>WIZ072</value>
-        </cap:geocode>
-        <cap:parameter>
-            <valueName>AWIPSidentifier</valueName>
-            <value>SPSMKX</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>WMOidentifier</valueName>
-            <value>WWUS83 KMKX 241603</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>NWSheadline</valueName>
-            <value>STRONG THUNDERSTORMS WILL IMPACT MILWAUKEE...RACINE...SOUTHEASTERN WAUKESHA AND KENOSHA COUNTIES THROUGH NOON CDT</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>eventMotionDescription</valueName>
-            <value>2024-05-24T16:03:00-00:00...storm...247DEG...36KT...42.9,-88.38 42.78,-88.31 42.54,-88.36</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>maxWindGust</valueName>
-            <value>50 MPH</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>maxHailSize</valueName>
-            <value>0.50</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>BLOCKCHANNEL</valueName>
-            <value>EAS</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>BLOCKCHANNEL</valueName>
-            <value>NWEM</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>BLOCKCHANNEL</valueName>
-            <value>CMAS</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>EAS-ORG</valueName>
-            <value>WXR</value>
         </cap:parameter>
     </entry>
     <entry>
@@ -2666,124 +3115,6 @@ tomorrow evening and continue falling.
         <cap:parameter>
             <valueName>expiredReferences</valueName>
             <value>w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.c1d0ce13dac47164313bb3f6b6e7145ac60e1e26.001.1,2024-05-23T20:13:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.22da0d61f2e39a02a1714f3c9ba7d09399e295dd.001.1,2024-05-23T11:24:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.47a3e2edb1696bd8f85b7c7fd774016bebc8078e.001.1,2024-05-22T20:47:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.e76e0b5c49337aa8f90599e8393a0b628d9c6dd4.001.1,2024-05-22T10:26:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.6938c3716d16425a2c77d9421dc4a4a9bdba083e.001.1,2024-05-21T20:06:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.0a57e5c8d98173009dd4438a12ffab01c1425ea9.001.1,2024-05-21T11:11:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.be775e9817b3634ef99c56c88d0570d21508eca5.001.1,2024-05-20T20:10:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.2102e2b741498c6e49ac1add3fc9ff6152750122.001.1,2024-05-20T12:13:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.17459d236def3c821d09a6687d6f741ee62cb1b5.001.1,2024-05-19T20:04:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.ef86ee179af96bddd6b628aebe00341d807fdb4a.001.1,2024-05-19T10:19:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.01077139c3a42708c86971d8ad596d71b2c6adde.001.1,2024-05-18T20:08:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.3594eb083c752c4f75d2b8c991106bbdba127a68.001.1,2024-05-17T20:28:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.5ca853c035db085c3d4d87abf010367fde1ee511.001.1,2024-05-17T09:00:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.2a5832042292d187133ef2d9d216a1f174a45bd7.001.1,2024-05-16T20:58:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.bcbb08cd405440bfe274cb3f36225d7889d062ea.001.1,2024-05-16T10:52:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.e375864fc3a718585c21a203d82ba1fbcd743e48.001.1,2024-05-15T21:40:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.33d417fe0c5baca55bcdd6f3792f118038f76a35.001.1,2024-05-15T10:29:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.876a4f6c9446e5bfdb3e2c44b17c8c3fa6fafaa1.001.1,2024-05-14T22:04:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.3e3a1a1040178ae661f7afe04245c2ba4132e89b.001.1,2024-05-14T10:57:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.e00b80b2befb27105a3564633226cf419f46b78c.001.1,2024-05-13T20:07:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.c739738187db6960f4fb2388371d1a81f33294c2.001.1,2024-05-12T20:35:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.a5f642817d60ca4a299adf86a2a7e863452155f6.001.1,2024-05-12T10:06:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.4bc1bd1befdee54ea249d69912d489de7635ece9.001.1,2024-05-11T20:28:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.12010da5beed48ccc54dbe4a08c22f6d29609b82.001.1,2024-05-11T10:00:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.22e91a8c2ff3b9f568ab6bc34a16ead57f538573.001.1,2024-05-10T20:21:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.2b958011515a5422ba682526c5d5903a4f0c4e52.001.1,2024-05-10T11:55:00-05:00</value>
-        </cap:parameter>
-    </entry>
-    <entry>
-        <id>https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.915e86e35b4ea3c1760fbef182822ee525c596e1.001.1</id>
-        <link rel="alternate" href="https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.915e86e35b4ea3c1760fbef182822ee525c596e1.001.1.cap"/>
-        <updated>2024-05-24T10:59:00-05:00</updated>
-        <published>2024-05-24T10:59:00-05:00</published>
-        <author>
-            <name>NWS</name>
-        </author>
-        <title>Special Weather Statement issued May 24 at 10:59AM CDT by NWS Huntsville AL</title>
-        <summary>At 1058 AM CDT, Doppler radar was tracking strong thunderstorms along
-a line extending from near Muscle Shoals to near Phil Campbell.
-Movement was east at 20 mph.
-
-HAZARD...Wind gusts up to 50 mph and pea size hail.
-
-SOURCE...Radar indicated.
-
-IMPACT...Gusty winds could knock down tree limbs and blow around
-unsecured objects. Minor hail damage to vegetation is
-possible.
-
-Locations impacted include...
-Muscle Shoals, Russellville, Tuscumbia, Moulton, Rogersville, Phil
-Campbell, Town Creek, Littleville, Leighton, and Courtland.</summary>
-        <cap:event>Special Weather Statement</cap:event>
-        <cap:sent>2024-05-24T10:59:00-05:00</cap:sent>
-        <cap:effective>2024-05-24T10:59:00-05:00</cap:effective>
-        <cap:onset>2024-05-24T10:59:00-05:00</cap:onset>
-        <cap:expires>2024-05-24T11:45:00-05:00</cap:expires>
-        <cap:status>Actual</cap:status>
-        <cap:msgType>Alert</cap:msgType>
-        <cap:category>Met</cap:category>
-        <cap:urgency>Expected</cap:urgency>
-        <cap:severity>Moderate</cap:severity>
-        <cap:certainty>Observed</cap:certainty>
-        <cap:areaDesc>Lauderdale; Colbert; Franklin; Lawrence; Limestone</cap:areaDesc>
-        <cap:polygon>34.7299999,-87.7 34.88,-87.17 34.84,-87.16 34.79,-87.14 34.77,-87.13 34.72,-87.12 34.3,-87.14 34.3,-87.3199999 34.31,-87.72 34.7299999,-87.7</cap:polygon>
-        <cap:geocode>
-            <valueName>SAME</valueName>
-            <value>001077</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>SAME</valueName>
-            <value>001033</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>SAME</valueName>
-            <value>001059</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>SAME</valueName>
-            <value>001079</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>SAME</valueName>
-            <value>001083</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>UGC</valueName>
-            <value>ALZ001</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>UGC</valueName>
-            <value>ALZ002</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>UGC</valueName>
-            <value>ALZ003</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>UGC</valueName>
-            <value>ALZ004</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>UGC</valueName>
-            <value>ALZ005</value>
-        </cap:geocode>
-        <cap:parameter>
-            <valueName>AWIPSidentifier</valueName>
-            <value>SPSHUN</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>WMOidentifier</valueName>
-            <value>WWUS84 KHUN 241559</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>NWSheadline</valueName>
-            <value>STRONG THUNDERSTORMS WILL IMPACT WEST CENTRAL LIMESTONE... SOUTHEASTERN LAUDERDALE...SOUTHEASTERN COLBERT...EASTERN FRANKLIN AND LAWRENCE COUNTIES THROUGH 1145 AM CDT</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>eventMotionDescription</valueName>
-            <value>2024-05-24T15:58:00-00:00...storm...254DEG...19KT...34.7,-87.64 34.36,-87.65</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>maxWindGust</valueName>
-            <value>50 MPH</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>maxHailSize</valueName>
-            <value>0.25</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>BLOCKCHANNEL</valueName>
-            <value>EAS</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>BLOCKCHANNEL</valueName>
-            <value>NWEM</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>BLOCKCHANNEL</valueName>
-            <value>CMAS</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>EAS-ORG</valueName>
-            <value>WXR</value>
         </cap:parameter>
     </entry>
     <entry>
@@ -4813,85 +5144,6 @@ morning.
         </cap:parameter>
     </entry>
     <entry>
-        <id>https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.7a6360d4284427a1e952dbca07cfef49fdb0d11c.001.1</id>
-        <link rel="alternate" href="https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.7a6360d4284427a1e952dbca07cfef49fdb0d11c.001.1.cap"/>
-        <updated>2024-05-24T08:31:00-07:00</updated>
-        <published>2024-05-24T08:31:00-07:00</published>
-        <author>
-            <name>NWS</name>
-        </author>
-        <title>Wind Advisory issued May 24 at 8:31AM PDT until May 25 at 8:00AM PDT by NWS Hanford CA</title>
-        <summary>* WHAT...Southwest winds 15 to 25 mph with gusts up to 45 mph
-expected.
-
-* WHERE...Indian Wells Valley and Mojave Desert.
-
-* WHEN...From 2 PM this afternoon to 8 AM PDT Saturday.
-
-* IMPACTS...Travel will be difficult, particularly for high profile
-vehicles. Blowing dust will reduce visibilities at times.
-
-* ADDITIONAL DETAILS...Highways affected include, but are not
-limited to U.S. Highway 395, Highway 58, and Highway 178.</summary>
-        <cap:event>Wind Advisory</cap:event>
-        <cap:sent>2024-05-24T08:31:00-07:00</cap:sent>
-        <cap:effective>2024-05-24T08:31:00-07:00</cap:effective>
-        <cap:onset>2024-05-24T14:00:00-07:00</cap:onset>
-        <cap:expires>2024-05-24T17:00:00-07:00</cap:expires>
-        <cap:status>Actual</cap:status>
-        <cap:msgType>Update</cap:msgType>
-        <cap:category>Met</cap:category>
-        <cap:urgency>Expected</cap:urgency>
-        <cap:severity>Moderate</cap:severity>
-        <cap:certainty>Likely</cap:certainty>
-        <cap:areaDesc>Indian Wells Valley; Mojave Desert</cap:areaDesc>
-        <cap:polygon/>
-        <cap:geocode>
-            <valueName>SAME</valueName>
-            <value>006029</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>UGC</valueName>
-            <value>CAZ337</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>UGC</valueName>
-            <value>CAZ339</value>
-        </cap:geocode>
-        <cap:parameter>
-            <valueName>AWIPSidentifier</valueName>
-            <value>NPWHNX</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>WMOidentifier</valueName>
-            <value>WWUS76 KHNX 241531</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>NWSheadline</valueName>
-            <value>WIND ADVISORY REMAINS IN EFFECT FROM 2 PM THIS AFTERNOON TO 8 AM PDT SATURDAY</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>BLOCKCHANNEL</valueName>
-            <value>EAS</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>BLOCKCHANNEL</valueName>
-            <value>NWEM</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>BLOCKCHANNEL</valueName>
-            <value>CMAS</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>VTEC</valueName>
-            <value>/O.CON.KHNX.WI.Y.0039.240524T2100Z-240525T1500Z/</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>eventEndingTime</valueName>
-            <value>2024-05-25T15:00:00+00:00</value>
-        </cap:parameter>
-    </entry>
-    <entry>
         <id>https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.7a6360d4284427a1e952dbca07cfef49fdb0d11c.002.1</id>
         <link rel="alternate" href="https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.7a6360d4284427a1e952dbca07cfef49fdb0d11c.002.1.cap"/>
         <updated>2024-05-24T08:31:00-07:00</updated>
@@ -4971,84 +5223,62 @@ Highway 178 below Walker Pass.</summary>
         </cap:parameter>
     </entry>
     <entry>
-        <id>https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.555af2922bbb59c18c7972bb789582419814b6bc.001.1</id>
-        <link rel="alternate" href="https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.555af2922bbb59c18c7972bb789582419814b6bc.001.1.cap"/>
-        <updated>2024-05-24T10:22:00-05:00</updated>
-        <published>2024-05-24T10:22:00-05:00</published>
+        <id>https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.7a6360d4284427a1e952dbca07cfef49fdb0d11c.001.1</id>
+        <link rel="alternate" href="https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.7a6360d4284427a1e952dbca07cfef49fdb0d11c.001.1.cap"/>
+        <updated>2024-05-24T08:31:00-07:00</updated>
+        <published>2024-05-24T08:31:00-07:00</published>
         <author>
             <name>NWS</name>
         </author>
-        <title>Flash Flood Warning issued May 24 at 10:22AM CDT until May 24 at 12:00PM CDT by NWS Memphis TN</title>
-        <summary>At 1022 AM CDT, Doppler radar indicated thunderstorms producing
-heavy rain across the warned area. Between 1 and 4 inches of rain
-have fallen. The heaviest rainfall has moved east of the warned
-area, but additional rainfall amounts up to 1 inch are possible.
-Flash flooding is ongoing or expected to begin shortly.
+        <title>Wind Advisory issued May 24 at 8:31AM PDT until May 25 at 8:00AM PDT by NWS Hanford CA</title>
+        <summary>* WHAT...Southwest winds 15 to 25 mph with gusts up to 45 mph
+expected.
 
-HAZARD...Flash flooding caused by thunderstorms.
+* WHERE...Indian Wells Valley and Mojave Desert.
 
-SOURCE...Radar.
+* WHEN...From 2 PM this afternoon to 8 AM PDT Saturday.
 
-IMPACT...Flash flooding of small creeks and streams, urban areas,
-highways, streets and underpasses as well as other poor
-drainage and low-lying areas.
+* IMPACTS...Travel will be difficult, particularly for high profile
+vehicles. Blowing dust will reduce visibilities at times.
 
-Some locations that will experience flash flooding include...
-Jackson, Humboldt, Trenton, Fairview, Alamo, Bells, Dyer, Three
-Way, Adair, Eaton, Carroll, Gadsden, Coxville, Gibson Wells,
-Fruitland, Mason Grove, Quincy, Fruitvale, Brazil and Mount Orange.</summary>
-        <cap:event>Flash Flood Warning</cap:event>
-        <cap:sent>2024-05-24T10:22:00-05:00</cap:sent>
-        <cap:effective>2024-05-24T10:22:00-05:00</cap:effective>
-        <cap:onset>2024-05-24T10:22:00-05:00</cap:onset>
-        <cap:expires>2024-05-24T12:00:00-05:00</cap:expires>
+* ADDITIONAL DETAILS...Highways affected include, but are not
+limited to U.S. Highway 395, Highway 58, and Highway 178.</summary>
+        <cap:event>Wind Advisory</cap:event>
+        <cap:sent>2024-05-24T08:31:00-07:00</cap:sent>
+        <cap:effective>2024-05-24T08:31:00-07:00</cap:effective>
+        <cap:onset>2024-05-24T14:00:00-07:00</cap:onset>
+        <cap:expires>2024-05-24T17:00:00-07:00</cap:expires>
         <cap:status>Actual</cap:status>
         <cap:msgType>Update</cap:msgType>
         <cap:category>Met</cap:category>
-        <cap:urgency>Immediate</cap:urgency>
-        <cap:severity>Severe</cap:severity>
+        <cap:urgency>Expected</cap:urgency>
+        <cap:severity>Moderate</cap:severity>
         <cap:certainty>Likely</cap:certainty>
-        <cap:areaDesc>Crockett, TN; Gibson, TN; Madison, TN</cap:areaDesc>
-        <cap:polygon>35.95,-89.22 35.95,-89.2099999 35.96,-89.2099999 35.97,-89.2 35.9799999,-89.2 35.99,-89.19 36,-89.19 36.03,-89.15 36.08,-88.95 35.8,-88.83 35.71,-88.7 35.58,-88.95 35.67,-89.02 35.93,-89.23 35.95,-89.22</cap:polygon>
+        <cap:areaDesc>Indian Wells Valley; Mojave Desert</cap:areaDesc>
+        <cap:polygon/>
         <cap:geocode>
             <valueName>SAME</valueName>
-            <value>047033</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>SAME</valueName>
-            <value>047053</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>SAME</valueName>
-            <value>047113</value>
+            <value>006029</value>
         </cap:geocode>
         <cap:geocode>
             <valueName>UGC</valueName>
-            <value>TNC033</value>
+            <value>CAZ337</value>
         </cap:geocode>
         <cap:geocode>
             <valueName>UGC</valueName>
-            <value>TNC053</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>UGC</valueName>
-            <value>TNC113</value>
+            <value>CAZ339</value>
         </cap:geocode>
         <cap:parameter>
             <valueName>AWIPSidentifier</valueName>
-            <value>FFSMEG</value>
+            <value>NPWHNX</value>
         </cap:parameter>
         <cap:parameter>
             <valueName>WMOidentifier</valueName>
-            <value>WGUS74 KMEG 241522</value>
+            <value>WWUS76 KHNX 241531</value>
         </cap:parameter>
         <cap:parameter>
             <valueName>NWSheadline</valueName>
-            <value>FLASH FLOOD WARNING REMAINS IN EFFECT UNTIL NOON CDT TODAY FOR CENTRAL CROCKETT, SOUTHWESTERN GIBSON AND NORTHERN MADISON COUNTIES</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>flashFloodDetection</valueName>
-            <value>RADAR INDICATED</value>
+            <value>WIND ADVISORY REMAINS IN EFFECT FROM 2 PM THIS AFTERNOON TO 8 AM PDT SATURDAY</value>
         </cap:parameter>
         <cap:parameter>
             <valueName>BLOCKCHANNEL</valueName>
@@ -5063,16 +5293,12 @@ Fruitland, Mason Grove, Quincy, Fruitvale, Brazil and Mount Orange.</summary>
             <value>CMAS</value>
         </cap:parameter>
         <cap:parameter>
-            <valueName>EAS-ORG</valueName>
-            <value>WXR</value>
-        </cap:parameter>
-        <cap:parameter>
             <valueName>VTEC</valueName>
-            <value>/O.CON.KMEG.FF.W.0009.000000T0000Z-240524T1700Z/</value>
+            <value>/O.CON.KHNX.WI.Y.0039.240524T2100Z-240525T1500Z/</value>
         </cap:parameter>
         <cap:parameter>
             <valueName>eventEndingTime</valueName>
-            <value>2024-05-24T17:00:00+00:00</value>
+            <value>2024-05-25T15:00:00+00:00</value>
         </cap:parameter>
     </entry>
     <entry>
@@ -5600,109 +5826,6 @@ additional rainfall Saturday night.
         </cap:parameter>
     </entry>
     <entry>
-        <id>https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.242f9ef9c9e685054365d8c50a45e5b7fe85716e.002.1</id>
-        <link rel="alternate" href="https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.242f9ef9c9e685054365d8c50a45e5b7fe85716e.002.1.cap"/>
-        <updated>2024-05-24T10:18:00-05:00</updated>
-        <published>2024-05-24T10:18:00-05:00</published>
-        <author>
-            <name>NWS</name>
-        </author>
-        <title>Flood Advisory issued May 24 at 10:18AM CDT until May 24 at 11:45AM CDT by NWS Memphis TN</title>
-        <summary>* WHAT...Urban and small stream flooding caused by excessive
-rainfall continues.
-
-* WHERE...A portion of North Mississippi, including the following
-counties, Alcorn, Prentiss and Tishomingo.
-
-* WHEN...Until 1145 AM CDT.
-
-* IMPACTS...Minor flooding in low-lying and poor drainage areas.
-Water over roadways. Ponding of water in urban or other areas is
-occurring or is imminent.
-
-* ADDITIONAL DETAILS...
-- At 1018 AM CDT, Doppler radar indicated heavy rain due to
-thunderstorms. This will cause urban and small stream
-flooding. Between 0.5 and 2 inches of rain have fallen.
-- Additional rainfall amounts up to 1 inch are expected over
-the area. This additional rain will result in minor flooding.
-- Some locations that will experience flooding include...
-Corinth, Iuka, J P Coleman State Park, Burnsville, Glen,
-Leedy, Hinkle, Pineflat, Theo, Farmington, Guys, Rienzi,
-Kossuth, Strickland, Jobes, Biggersville, Kendrick,
-Allentown, Holts Spur and Doskie.
-- http://www.weather.gov/safety/flood</summary>
-        <cap:event>Flood Advisory</cap:event>
-        <cap:sent>2024-05-24T10:18:00-05:00</cap:sent>
-        <cap:effective>2024-05-24T10:18:00-05:00</cap:effective>
-        <cap:onset>2024-05-24T10:18:00-05:00</cap:onset>
-        <cap:expires>2024-05-24T11:45:00-05:00</cap:expires>
-        <cap:status>Actual</cap:status>
-        <cap:msgType>Update</cap:msgType>
-        <cap:category>Met</cap:category>
-        <cap:urgency>Expected</cap:urgency>
-        <cap:severity>Minor</cap:severity>
-        <cap:certainty>Likely</cap:certainty>
-        <cap:areaDesc>Alcorn, MS; Prentiss, MS; Tishomingo, MS</cap:areaDesc>
-        <cap:polygon>34.86,-88.75 34.86,-88.77 35,-88.78 35,-88.2 34.92,-88.15 34.89,-88.1 34.78,-88.11 34.77,-88.13 34.7299999,-88.72 34.76,-88.72 34.76,-88.75 34.86,-88.75</cap:polygon>
-        <cap:geocode>
-            <valueName>SAME</valueName>
-            <value>028003</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>SAME</valueName>
-            <value>028117</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>SAME</valueName>
-            <value>028141</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>UGC</valueName>
-            <value>MSC003</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>UGC</valueName>
-            <value>MSC117</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>UGC</valueName>
-            <value>MSC141</value>
-        </cap:geocode>
-        <cap:parameter>
-            <valueName>AWIPSidentifier</valueName>
-            <value>FLSMEG</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>WMOidentifier</valueName>
-            <value>WGUS84 KMEG 241518</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>NWSheadline</valueName>
-            <value>FLOOD ADVISORY REMAINS IN EFFECT UNTIL 1145 AM CDT THIS MORNING</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>BLOCKCHANNEL</valueName>
-            <value>EAS</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>BLOCKCHANNEL</valueName>
-            <value>NWEM</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>BLOCKCHANNEL</valueName>
-            <value>CMAS</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>VTEC</valueName>
-            <value>/O.CON.KMEG.FA.Y.0041.000000T0000Z-240524T1645Z/</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>eventEndingTime</valueName>
-            <value>2024-05-24T16:45:00+00:00</value>
-        </cap:parameter>
-    </entry>
-    <entry>
         <id>https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.4a7f92474950d5d58f0ece8b0fded37611b4773b.001.1</id>
         <link rel="alternate" href="https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.4a7f92474950d5d58f0ece8b0fded37611b4773b.001.1.cap"/>
         <updated>2024-05-24T10:15:00-05:00</updated>
@@ -6093,120 +6216,6 @@ your neighborhood, smoke has reached levels that are unhealthy.</summary>
         </cap:parameter>
     </entry>
     <entry>
-        <id>https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.e98433050658658aae2081ea7010099afa3c2d11.003.1</id>
-        <link rel="alternate" href="https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.e98433050658658aae2081ea7010099afa3c2d11.003.1.cap"/>
-        <updated>2024-05-24T10:00:00-05:00</updated>
-        <published>2024-05-24T10:00:00-05:00</published>
-        <author>
-            <name>NWS</name>
-        </author>
-        <title>Severe Thunderstorm Watch issued May 24 at 10:00AM CDT until May 24 at 1:00PM CDT by NWS Quad Cities IA IL</title>
-        <summary>SEVERE THUNDERSTORM WATCH 301 REMAINS VALID UNTIL 1 PM CDT THIS
-AFTERNOON FOR THE FOLLOWING AREAS
-
-IN ILLINOIS THIS WATCH INCLUDES 5 COUNTIES
-
-IN NORTH CENTRAL ILLINOIS
-
-BUREAU                PUTNAM
-
-IN NORTHWEST ILLINOIS
-
-STEPHENSON
-
-IN WEST CENTRAL ILLINOIS
-
-HANCOCK               MCDONOUGH
-
-THIS INCLUDES THE CITIES OF CARTHAGE, FREEPORT, HENNEPIN, MACOMB,
-AND PRINCETON.</summary>
-        <cap:event>Severe Thunderstorm Watch</cap:event>
-        <cap:sent>2024-05-24T10:00:00-05:00</cap:sent>
-        <cap:effective>2024-05-24T10:00:00-05:00</cap:effective>
-        <cap:onset>2024-05-24T10:00:00-05:00</cap:onset>
-        <cap:expires>2024-05-24T13:00:00-05:00</cap:expires>
-        <cap:status>Actual</cap:status>
-        <cap:msgType>Update</cap:msgType>
-        <cap:category>Met</cap:category>
-        <cap:urgency>Future</cap:urgency>
-        <cap:severity>Severe</cap:severity>
-        <cap:certainty>Possible</cap:certainty>
-        <cap:areaDesc>Bureau, IL; Hancock, IL; McDonough, IL; Putnam, IL; Stephenson, IL</cap:areaDesc>
-        <cap:polygon/>
-        <cap:geocode>
-            <valueName>SAME</valueName>
-            <value>017011</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>SAME</valueName>
-            <value>017067</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>SAME</valueName>
-            <value>017109</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>SAME</valueName>
-            <value>017155</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>SAME</valueName>
-            <value>017177</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>UGC</valueName>
-            <value>ILC011</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>UGC</valueName>
-            <value>ILC067</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>UGC</valueName>
-            <value>ILC109</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>UGC</valueName>
-            <value>ILC155</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>UGC</valueName>
-            <value>ILC177</value>
-        </cap:geocode>
-        <cap:parameter>
-            <valueName>AWIPSidentifier</valueName>
-            <value>WCNDVN</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>WMOidentifier</valueName>
-            <value>WWUS63 KDVN 241500</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>BLOCKCHANNEL</valueName>
-            <value>EAS</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>BLOCKCHANNEL</valueName>
-            <value>NWEM</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>BLOCKCHANNEL</valueName>
-            <value>CMAS</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>EAS-ORG</valueName>
-            <value>WXR</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>VTEC</valueName>
-            <value>/O.CON.KDVN.SV.A.0301.000000T0000Z-240524T1800Z/</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>eventEndingTime</valueName>
-            <value>2024-05-24T18:00:00+00:00</value>
-        </cap:parameter>
-    </entry>
-    <entry>
         <id>https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.8cb110a30e748cd0c17b1aeeaea98da419911ee7.001.1</id>
         <link rel="alternate" href="https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.8cb110a30e748cd0c17b1aeeaea98da419911ee7.001.1.cap"/>
         <updated>2024-05-24T10:00:00-05:00</updated>
@@ -6511,88 +6520,6 @@ early Tuesday morning.
         <cap:parameter>
             <valueName>expiredReferences</valueName>
             <value>w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.a7cdd3911ce911d8da83cff4859ae9e205bd2220.001.1,2024-05-22T08:47:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.42816eadd2a31ad578d56346aeaa1f5574b59d41.001.1,2024-05-21T21:26:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.725f7065648d8fe8e47bf320ac62ef39d9ba2f34.001.1,2024-05-21T11:13:00-05:00</value>
-        </cap:parameter>
-    </entry>
-    <entry>
-        <id>https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.5e14e12be9b64b9c7ec340bde0a0fcb7a151e5c3.001.1</id>
-        <link rel="alternate" href="https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.5e14e12be9b64b9c7ec340bde0a0fcb7a151e5c3.001.1.cap"/>
-        <updated>2024-05-24T09:53:00-05:00</updated>
-        <published>2024-05-24T09:53:00-05:00</published>
-        <author>
-            <name>NWS</name>
-        </author>
-        <title>Flood Advisory issued May 24 at 9:53AM CDT until May 24 at 11:45AM CDT by NWS Paducah KY</title>
-        <summary>* WHAT...Flooding caused by excessive rainfall is expected.
-
-* WHERE...A portion of western Kentucky, including the following
-county, Fulton.
-
-* WHEN...Until 1145 AM CDT.
-
-* IMPACTS...Minor flooding in low-lying and poor drainage areas.
-
-* ADDITIONAL DETAILS...
-- At 952 AM CDT, Doppler radar indicated heavy rain due to
-thunderstorms. Minor flooding is ongoing or expected to begin
-shortly in the advisory area. Radar estimates up to 2 inches
-of rain has fallen, and more is repeating over these same
-areas.
-- Additional rainfall amounts up to 1 inch are expected over
-the area. This additional rain will result in minor flooding.
-- Some locations that will experience flooding include...
-Fulton, Hickman, Cayce, and Boundurant.</summary>
-        <cap:event>Flood Advisory</cap:event>
-        <cap:sent>2024-05-24T09:53:00-05:00</cap:sent>
-        <cap:effective>2024-05-24T09:53:00-05:00</cap:effective>
-        <cap:onset>2024-05-24T09:53:00-05:00</cap:onset>
-        <cap:expires>2024-05-24T11:45:00-05:00</cap:expires>
-        <cap:status>Actual</cap:status>
-        <cap:msgType>Alert</cap:msgType>
-        <cap:category>Met</cap:category>
-        <cap:urgency>Expected</cap:urgency>
-        <cap:severity>Minor</cap:severity>
-        <cap:certainty>Likely</cap:certainty>
-        <cap:areaDesc>Fulton, KY</cap:areaDesc>
-        <cap:polygon>36.58,-89.55 36.58,-89.53 36.57,-89.48 36.54,-89.47 36.63,-89.37 36.63,-89.33 36.57,-89.27 36.57,-89.24 36.58,-89.2099999 36.65,-89.18 36.65,-89.15 36.59,-89.03 36.59,-88.94 36.58,-88.9 36.5,-88.84 36.5,-89.42 36.53,-89.47 36.5,-89.48 36.5,-89.54 36.55,-89.5699999 36.58,-89.55</cap:polygon>
-        <cap:geocode>
-            <valueName>SAME</valueName>
-            <value>021075</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>UGC</valueName>
-            <value>KYC075</value>
-        </cap:geocode>
-        <cap:parameter>
-            <valueName>AWIPSidentifier</valueName>
-            <value>FLSPAH</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>WMOidentifier</valueName>
-            <value>WGUS83 KPAH 241453</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>NWSheadline</valueName>
-            <value>FLOOD ADVISORY IN EFFECT UNTIL 1145 AM CDT THIS MORNING</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>BLOCKCHANNEL</valueName>
-            <value>EAS</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>BLOCKCHANNEL</valueName>
-            <value>NWEM</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>BLOCKCHANNEL</valueName>
-            <value>CMAS</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>VTEC</valueName>
-            <value>/O.NEW.KPAH.FA.Y.0058.240524T1453Z-240524T1645Z/</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>eventEndingTime</valueName>
-            <value>2024-05-24T16:45:00+00:00</value>
         </cap:parameter>
     </entry>
     <entry>
@@ -8807,145 +8734,6 @@ stage at 69.2 feet.
         </cap:parameter>
     </entry>
     <entry>
-        <id>https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.0ca4916be193e2ee181d1e29cd21125614b37cb3.009.1</id>
-        <link rel="alternate" href="https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.0ca4916be193e2ee181d1e29cd21125614b37cb3.009.1.cap"/>
-        <updated>2024-05-24T08:50:00-05:00</updated>
-        <published>2024-05-24T08:50:00-05:00</published>
-        <author>
-            <name>NWS</name>
-        </author>
-        <title>Flood Warning issued May 24 at 8:50AM CDT by NWS Lake Charles LA</title>
-        <summary>...The Flood Warning continues for the following rivers in
-Louisiana...Texas...
-
-Calcasieu River Near Salt Water Barrier
-
-Calcasieu River Near Glenmora
-
-Sabine River Near Deweyville
-
-Neches River Near Evadale
-
-Neches River Near Town Bluff
-
-Neches River at Neches River Saltwater Barrier
-
-...The Flood Warning is extended for the following rivers in
-Louisiana...Texas...
-
-Calcasieu River near White Oak Park
-
-Mermentau River Near Mermentau
-
-Pine Island Bayou Near Sour Lake
-
-Additional information is available at www.weather.gov.
-
-The next statement will be issued Saturday morning at 900 AM CDT.
-
-* WHAT...Minor flooding is occurring and minor flooding is forecast.
-
-* WHERE...Sabine River near Deweyville.
-
-* WHEN...Until further notice.
-
-* IMPACTS...At 26.0 feet, Moderate lowland flooding will occur. The
-lowest homes between Deweyville and the river begin to flood,
-especially in the Indian Lakes and River Oaks sections. Low-lying
-roads and a few homes in Southwestern Beauregard Parish have some
-flooding.
-
-* ADDITIONAL DETAILS...
-- At 7:45 AM CDT Friday the stage was 25.9 feet.
-- Recent Activity...The maximum river stage in the 24 hours
-ending at 7:45 AM CDT Friday was 26.1 feet.
-- Forecast...The river is expected to fall to 25.1 feet
-Wednesday morning.
-- Flood stage is 24.0 feet.
-- http://www.weather.gov/safety/flood</summary>
-        <cap:event>Flood Warning</cap:event>
-        <cap:sent>2024-05-24T08:50:00-05:00</cap:sent>
-        <cap:effective>2024-05-24T08:50:00-05:00</cap:effective>
-        <cap:onset>2024-05-24T08:50:00-05:00</cap:onset>
-        <cap:expires>2024-05-25T09:00:00-05:00</cap:expires>
-        <cap:status>Actual</cap:status>
-        <cap:msgType>Update</cap:msgType>
-        <cap:category>Met</cap:category>
-        <cap:urgency>Immediate</cap:urgency>
-        <cap:severity>Severe</cap:severity>
-        <cap:certainty>Observed</cap:certainty>
-        <cap:areaDesc>Beauregard, LA; Calcasieu, LA; Newton, TX; Orange, TX</cap:areaDesc>
-        <cap:polygon>30.57,-93.63 30.11,-93.64 30.11,-93.78 30.31,-93.81 30.62,-93.78 30.57,-93.63</cap:polygon>
-        <cap:geocode>
-            <valueName>SAME</valueName>
-            <value>022011</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>SAME</valueName>
-            <value>022019</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>SAME</valueName>
-            <value>048351</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>SAME</valueName>
-            <value>048361</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>UGC</valueName>
-            <value>LAC011</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>UGC</valueName>
-            <value>LAC019</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>UGC</valueName>
-            <value>TXC351</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>UGC</valueName>
-            <value>TXC361</value>
-        </cap:geocode>
-        <cap:parameter>
-            <valueName>AWIPSidentifier</valueName>
-            <value>FLSLCH</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>WMOidentifier</valueName>
-            <value>WGUS84 KLCH 241350</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>NWSheadline</valueName>
-            <value>FLOOD WARNING REMAINS IN EFFECT UNTIL FURTHER NOTICE</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>BLOCKCHANNEL</valueName>
-            <value>EAS</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>BLOCKCHANNEL</valueName>
-            <value>NWEM</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>BLOCKCHANNEL</valueName>
-            <value>CMAS</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>EAS-ORG</valueName>
-            <value>WXR</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>VTEC</valueName>
-            <value>/O.CON.KLCH.FL.W.0035.000000T0000Z-000000T0000Z/</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>expiredReferences</valueName>
-            <value>w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.d10206c512b8787b7501d048005cd0474fe0b2ff.013.1,2024-05-22T21:47:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.17ef5cdf1e2bcd0e70de0f49ca36d533abd22fc6.013.1,2024-05-22T10:29:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.5cda9c37a949d54efd01e71801cdbef14f60ab82.006.1,2024-05-21T19:58:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.c5c556566cd5daaac226ba9d3eb519b75c21add9.013.1,2024-05-21T10:18:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.9bbbd3359eef9ebd36841f1fac5efb770829540a.008.1,2024-05-20T20:30:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.7161119ef60da970412c399bd94412bb14beafc4.018.1,2024-05-20T09:38:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.767a34e54816864738508afa2b3052c49ef93fce.008.1,2024-05-19T21:59:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.7b3b1f14d5562b2140cb6687ca2a938717ec23ca.013.1,2024-05-19T13:36:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.52473ef2f72202629f25f973ff2891143e913616.019.1,2024-05-19T10:13:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.d6b8cc5a896388e714006dda306785a47307f001.008.1,2024-05-18T20:46:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.73f9d2d9a9ce747c9d6897c271a26f733f87e3b9.020.1,2024-05-18T09:52:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.8b33d1afbeed114c066f6102cfb831f71c815428.020.1,2024-05-17T20:46:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.bec33267981c04c955686a8f285ebbfcedfb1c78.001.1,2024-05-17T09:59:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.7756f596061858a8a841b07a78c559dbcf2ac64c.017.1,2024-05-16T20:15:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.a3d23712312397e1e352753f641e7ed874cd778c.007.1,2024-05-16T14:56:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.6f93201eebd3a1128ea35b772e5fe4a932c2704f.014.1,2024-05-16T09:47:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.8968014f1f35bf0f6bf41b32aa355c7353a1e574.016.1,2024-05-15T20:42:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.94ff75482a663ccd7fb8e3bd0f0cdc27185d5ba7.018.1,2024-05-15T09:48:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.81c04739e6f7c4464e991710fc46799a1c13ccf1.016.1,2024-05-14T22:05:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.06b50ea3f1317e02983f89c02d21430e2ed0da76.015.1,2024-05-14T11:24:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.ca66a2deff793dcea90c15baea9f42c38ea35f17.005.1,2024-05-13T23:01:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.2e7ceae925946d8025febafbd5816b07370b2bd6.011.1,2024-05-13T20:41:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.9144c6a76a852231e5af269fd090ea567f3aca01.003.1,2024-05-13T14:36:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.cf1db95d2e0f5c2e75d0d824130ed9ebb2a90957.009.1,2024-05-13T10:35:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.0fa3ff33605b829f0676707666fada46c4e8166a.004.1,2024-05-12T21:45:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.58794ae45cf359b53e6dbed7dac66495e2496778.007.1,2024-05-12T10:52:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.2ccd778e8610162ff54d129661d0742ebec8ba8d.008.1,2024-05-11T22:02:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.9bd80441c1c1ff52f4f4d6fb90d16a23d7798a1e.008.1,2024-05-11T09:57:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.e66769af26e9922a401e04bb673d717d5bce6e3a.008.1,2024-05-10T20:26:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.cae2ce02efe98020d6038753e27f4cc6d8261cb1.008.1,2024-05-10T11:08:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.038ac773f81edf5c0aa3af2e9546f1261fbf82f3.004.1,2024-05-09T20:27:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.4550d4e9433e1282b89bdb4476cf0574faf96327.009.1,2024-05-09T10:57:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.a8e4ff060decc034a3ab5e0baaeee7f1fcd9435a.010.1,2024-05-08T20:27:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.e8a681b109b37ef067764eaa85f6bc53d6454e94.008.1,2024-05-08T08:51:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.9a9b1273cf6758942b5cecb6448a3c71b6a82cab.011.1,2024-05-07T20:52:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.c3156ad26f6ff5432588bba6f4a2400d60a36d19.013.1,2024-05-07T09:36:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.de2c6030c3da0ddf84f8c31d3af2a4e51f0c998f.012.1,2024-05-06T20:45:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.797d75bd7050340661740d45defd3b52312a2473.013.1,2024-05-06T09:37:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.54cf889314359ebafc1731cbed9a8d7031fa7629.001.1,2024-05-05T21:08:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.20733b1439c259e8f1b1c47d484877d4e4e89f98.003.1,2024-05-05T13:55:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.008981cc57a425205c94085b631f560c13671b1b.012.1,2024-05-05T08:09:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.b7ea761be5c1beaddf73290ecfd289ed7d05f0a1.012.1,2024-05-04T20:27:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.d45115bcd8e671d95a67706260fd9245d35c17fc.008.1,2024-05-04T09:53:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.393c77e707c2fe6afedc00d6ff8feb4d770e5fda.001.1,2024-05-03T20:11:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.b6b652820ec809661fae1e47ee08d98667ba099f.006.1,2024-05-03T14:47:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.57f7aadf79aa8cccacefb7386435327b39c4ee15.012.1,2024-05-03T10:19:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.4a832655e7915a1178caebecc53bd24aac1c632c.011.1,2024-05-02T20:48:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.13426ea4df1e4abe0778f690fa4f0d36f88329d3.011.1,2024-05-02T14:47:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.f58d922fa980288ae064c087dbd52a149816a904.008.1,2024-05-02T10:39:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.f75ec0f2f517602d1c5a62a811efd3096b7e91fe.003.1,2024-05-02T09:01:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.6cfe1a12e1f565ab95340edb47d72e6680f3c1de.011.1,2024-05-01T19:58:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.c89da6b626574ea1800cee4c0063a1ec8177395b.012.1,2024-05-01T10:47:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.d15b0dea7ec47b004b8e8a42de90a1f8b010a420.006.1,2024-04-30T20:43:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.e9439974f42032148c03e6b32353ddadf5b17ee5.015.1,2024-04-30T09:20:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.95fca957bf69009af8a43d18a681079cebf3385d.008.1,2024-04-29T20:17:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.dbaf83d7ea81587b2a93393326b4ed126303f2f9.003.1,2024-04-29T15:05:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.cedd38c8ab5289649e9c283101ea35e0b2548ea1.006.1,2024-04-29T09:15:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.67498b70f3ebbe1ab335a60825f86131270e8bc6.001.1,2024-04-29T02:56:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.988d774cbfefd49aef763701aa150b65730a3f4f.004.1,2024-04-28T20:40:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.1dbcbc4cd1e5bca5b037669ee071144c39b2d96d.005.1,2024-04-28T10:13:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.ac70c026a94b22fc19334b0c643281843a2d7d6d.004.1,2024-04-27T22:24:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.e2d5cb71fb90cc350a33b5a43237818e3c61d108.002.1,2024-04-27T10:25:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.0bf3d1637ec382dc8f0a6d55d289862fbfa491a8.002.1,2024-04-26T20:49:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.2e08a0c8fc563faf1e6287da6e3c0cb7a051b707.003.1,2024-04-26T10:15:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.dacd7381c633e8c022e52519766fecd2138de5ca.002.1,2024-04-25T21:30:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.dcee5deb6133b9579631f0ac33324546dc9826a9.002.1,2024-04-25T16:01:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.363f0348e98d4f2ef29a1235168a50b7381c35fc.003.1,2024-04-25T10:00:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.884409999e2ad3a2c1de2f3d2a5f6e3289d5c358.003.1,2024-04-24T22:06:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.c93d3bd80b8e36a6635b05b14fd32fd4a488f5e6.001.1,2024-04-24T10:38:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.adf1c34ecc1a9d253b1d21d4060b95e9e2f6b768.003.1,2024-04-24T09:09:00-05:00</value>
-        </cap:parameter>
-    </entry>
-    <entry>
         <id>https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.0ca4916be193e2ee181d1e29cd21125614b37cb3.005.1</id>
         <link rel="alternate" href="https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.0ca4916be193e2ee181d1e29cd21125614b37cb3.005.1.cap"/>
         <updated>2024-05-24T08:50:00-05:00</updated>
@@ -9313,6 +9101,145 @@ Wednesday morning.
         <cap:parameter>
             <valueName>expiredReferences</valueName>
             <value>w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.d10206c512b8787b7501d048005cd0474fe0b2ff.008.1,2024-05-22T21:47:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.17ef5cdf1e2bcd0e70de0f49ca36d533abd22fc6.008.1,2024-05-22T10:29:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.83de7a97b1c23713042ebbf2ae3e269437062c89.006.1,2024-05-21T20:02:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.c5c556566cd5daaac226ba9d3eb519b75c21add9.008.1,2024-05-21T10:18:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.091e52ec616980cd5df8164088c792f8d752e035.007.1,2024-05-20T20:35:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.7161119ef60da970412c399bd94412bb14beafc4.012.1,2024-05-20T09:38:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.063e2577b568ff8670af65ff1660dbc011180387.010.1,2024-05-19T22:05:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.52473ef2f72202629f25f973ff2891143e913616.012.1,2024-05-19T10:13:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.218d5ce7e2bfd262dbaeb600c7d818f70e24174e.010.1,2024-05-18T21:03:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.73f9d2d9a9ce747c9d6897c271a26f733f87e3b9.013.1,2024-05-18T09:52:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.8b33d1afbeed114c066f6102cfb831f71c815428.013.1,2024-05-17T20:46:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.fff72b1612d1a33be30608ee202c28aa05fef55d.001.1,2024-05-17T10:04:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.92185d7fa55a3b9e2e7a758774dde22e12f5b701.001.1,2024-05-16T20:15:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.6f93201eebd3a1128ea35b772e5fe4a932c2704f.009.1,2024-05-16T09:47:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.8968014f1f35bf0f6bf41b32aa355c7353a1e574.010.1,2024-05-15T20:42:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.94ff75482a663ccd7fb8e3bd0f0cdc27185d5ba7.012.1,2024-05-15T09:48:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.81c04739e6f7c4464e991710fc46799a1c13ccf1.010.1,2024-05-14T22:05:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.06b50ea3f1317e02983f89c02d21430e2ed0da76.009.1,2024-05-14T11:24:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.2e7ceae925946d8025febafbd5816b07370b2bd6.005.1,2024-05-13T20:41:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.cf1db95d2e0f5c2e75d0d824130ed9ebb2a90957.004.1,2024-05-13T10:35:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.d65344f3bdf9cd138a7a25a687856de9c8bc6bcb.001.1,2024-05-12T21:45:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.e44c1b03592121c0ba528c1923ba22749773809e.001.1,2024-05-12T10:45:00-05:00</value>
+        </cap:parameter>
+    </entry>
+    <entry>
+        <id>https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.0ca4916be193e2ee181d1e29cd21125614b37cb3.009.1</id>
+        <link rel="alternate" href="https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.0ca4916be193e2ee181d1e29cd21125614b37cb3.009.1.cap"/>
+        <updated>2024-05-24T08:50:00-05:00</updated>
+        <published>2024-05-24T08:50:00-05:00</published>
+        <author>
+            <name>NWS</name>
+        </author>
+        <title>Flood Warning issued May 24 at 8:50AM CDT by NWS Lake Charles LA</title>
+        <summary>...The Flood Warning continues for the following rivers in
+Louisiana...Texas...
+
+Calcasieu River Near Salt Water Barrier
+
+Calcasieu River Near Glenmora
+
+Sabine River Near Deweyville
+
+Neches River Near Evadale
+
+Neches River Near Town Bluff
+
+Neches River at Neches River Saltwater Barrier
+
+...The Flood Warning is extended for the following rivers in
+Louisiana...Texas...
+
+Calcasieu River near White Oak Park
+
+Mermentau River Near Mermentau
+
+Pine Island Bayou Near Sour Lake
+
+Additional information is available at www.weather.gov.
+
+The next statement will be issued Saturday morning at 900 AM CDT.
+
+* WHAT...Minor flooding is occurring and minor flooding is forecast.
+
+* WHERE...Sabine River near Deweyville.
+
+* WHEN...Until further notice.
+
+* IMPACTS...At 26.0 feet, Moderate lowland flooding will occur. The
+lowest homes between Deweyville and the river begin to flood,
+especially in the Indian Lakes and River Oaks sections. Low-lying
+roads and a few homes in Southwestern Beauregard Parish have some
+flooding.
+
+* ADDITIONAL DETAILS...
+- At 7:45 AM CDT Friday the stage was 25.9 feet.
+- Recent Activity...The maximum river stage in the 24 hours
+ending at 7:45 AM CDT Friday was 26.1 feet.
+- Forecast...The river is expected to fall to 25.1 feet
+Wednesday morning.
+- Flood stage is 24.0 feet.
+- http://www.weather.gov/safety/flood</summary>
+        <cap:event>Flood Warning</cap:event>
+        <cap:sent>2024-05-24T08:50:00-05:00</cap:sent>
+        <cap:effective>2024-05-24T08:50:00-05:00</cap:effective>
+        <cap:onset>2024-05-24T08:50:00-05:00</cap:onset>
+        <cap:expires>2024-05-25T09:00:00-05:00</cap:expires>
+        <cap:status>Actual</cap:status>
+        <cap:msgType>Update</cap:msgType>
+        <cap:category>Met</cap:category>
+        <cap:urgency>Immediate</cap:urgency>
+        <cap:severity>Severe</cap:severity>
+        <cap:certainty>Observed</cap:certainty>
+        <cap:areaDesc>Beauregard, LA; Calcasieu, LA; Newton, TX; Orange, TX</cap:areaDesc>
+        <cap:polygon>30.57,-93.63 30.11,-93.64 30.11,-93.78 30.31,-93.81 30.62,-93.78 30.57,-93.63</cap:polygon>
+        <cap:geocode>
+            <valueName>SAME</valueName>
+            <value>022011</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>SAME</valueName>
+            <value>022019</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>SAME</valueName>
+            <value>048351</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>SAME</valueName>
+            <value>048361</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>UGC</valueName>
+            <value>LAC011</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>UGC</valueName>
+            <value>LAC019</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>UGC</valueName>
+            <value>TXC351</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>UGC</valueName>
+            <value>TXC361</value>
+        </cap:geocode>
+        <cap:parameter>
+            <valueName>AWIPSidentifier</valueName>
+            <value>FLSLCH</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>WMOidentifier</valueName>
+            <value>WGUS84 KLCH 241350</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>NWSheadline</valueName>
+            <value>FLOOD WARNING REMAINS IN EFFECT UNTIL FURTHER NOTICE</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>BLOCKCHANNEL</valueName>
+            <value>EAS</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>BLOCKCHANNEL</valueName>
+            <value>NWEM</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>BLOCKCHANNEL</valueName>
+            <value>CMAS</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>EAS-ORG</valueName>
+            <value>WXR</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>VTEC</valueName>
+            <value>/O.CON.KLCH.FL.W.0035.000000T0000Z-000000T0000Z/</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>expiredReferences</valueName>
+            <value>w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.d10206c512b8787b7501d048005cd0474fe0b2ff.013.1,2024-05-22T21:47:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.17ef5cdf1e2bcd0e70de0f49ca36d533abd22fc6.013.1,2024-05-22T10:29:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.5cda9c37a949d54efd01e71801cdbef14f60ab82.006.1,2024-05-21T19:58:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.c5c556566cd5daaac226ba9d3eb519b75c21add9.013.1,2024-05-21T10:18:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.9bbbd3359eef9ebd36841f1fac5efb770829540a.008.1,2024-05-20T20:30:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.7161119ef60da970412c399bd94412bb14beafc4.018.1,2024-05-20T09:38:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.767a34e54816864738508afa2b3052c49ef93fce.008.1,2024-05-19T21:59:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.7b3b1f14d5562b2140cb6687ca2a938717ec23ca.013.1,2024-05-19T13:36:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.52473ef2f72202629f25f973ff2891143e913616.019.1,2024-05-19T10:13:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.d6b8cc5a896388e714006dda306785a47307f001.008.1,2024-05-18T20:46:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.73f9d2d9a9ce747c9d6897c271a26f733f87e3b9.020.1,2024-05-18T09:52:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.8b33d1afbeed114c066f6102cfb831f71c815428.020.1,2024-05-17T20:46:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.bec33267981c04c955686a8f285ebbfcedfb1c78.001.1,2024-05-17T09:59:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.7756f596061858a8a841b07a78c559dbcf2ac64c.017.1,2024-05-16T20:15:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.a3d23712312397e1e352753f641e7ed874cd778c.007.1,2024-05-16T14:56:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.6f93201eebd3a1128ea35b772e5fe4a932c2704f.014.1,2024-05-16T09:47:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.8968014f1f35bf0f6bf41b32aa355c7353a1e574.016.1,2024-05-15T20:42:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.94ff75482a663ccd7fb8e3bd0f0cdc27185d5ba7.018.1,2024-05-15T09:48:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.81c04739e6f7c4464e991710fc46799a1c13ccf1.016.1,2024-05-14T22:05:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.06b50ea3f1317e02983f89c02d21430e2ed0da76.015.1,2024-05-14T11:24:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.ca66a2deff793dcea90c15baea9f42c38ea35f17.005.1,2024-05-13T23:01:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.2e7ceae925946d8025febafbd5816b07370b2bd6.011.1,2024-05-13T20:41:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.9144c6a76a852231e5af269fd090ea567f3aca01.003.1,2024-05-13T14:36:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.cf1db95d2e0f5c2e75d0d824130ed9ebb2a90957.009.1,2024-05-13T10:35:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.0fa3ff33605b829f0676707666fada46c4e8166a.004.1,2024-05-12T21:45:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.58794ae45cf359b53e6dbed7dac66495e2496778.007.1,2024-05-12T10:52:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.2ccd778e8610162ff54d129661d0742ebec8ba8d.008.1,2024-05-11T22:02:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.9bd80441c1c1ff52f4f4d6fb90d16a23d7798a1e.008.1,2024-05-11T09:57:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.e66769af26e9922a401e04bb673d717d5bce6e3a.008.1,2024-05-10T20:26:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.cae2ce02efe98020d6038753e27f4cc6d8261cb1.008.1,2024-05-10T11:08:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.038ac773f81edf5c0aa3af2e9546f1261fbf82f3.004.1,2024-05-09T20:27:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.4550d4e9433e1282b89bdb4476cf0574faf96327.009.1,2024-05-09T10:57:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.a8e4ff060decc034a3ab5e0baaeee7f1fcd9435a.010.1,2024-05-08T20:27:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.e8a681b109b37ef067764eaa85f6bc53d6454e94.008.1,2024-05-08T08:51:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.9a9b1273cf6758942b5cecb6448a3c71b6a82cab.011.1,2024-05-07T20:52:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.c3156ad26f6ff5432588bba6f4a2400d60a36d19.013.1,2024-05-07T09:36:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.de2c6030c3da0ddf84f8c31d3af2a4e51f0c998f.012.1,2024-05-06T20:45:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.797d75bd7050340661740d45defd3b52312a2473.013.1,2024-05-06T09:37:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.54cf889314359ebafc1731cbed9a8d7031fa7629.001.1,2024-05-05T21:08:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.20733b1439c259e8f1b1c47d484877d4e4e89f98.003.1,2024-05-05T13:55:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.008981cc57a425205c94085b631f560c13671b1b.012.1,2024-05-05T08:09:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.b7ea761be5c1beaddf73290ecfd289ed7d05f0a1.012.1,2024-05-04T20:27:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.d45115bcd8e671d95a67706260fd9245d35c17fc.008.1,2024-05-04T09:53:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.393c77e707c2fe6afedc00d6ff8feb4d770e5fda.001.1,2024-05-03T20:11:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.b6b652820ec809661fae1e47ee08d98667ba099f.006.1,2024-05-03T14:47:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.57f7aadf79aa8cccacefb7386435327b39c4ee15.012.1,2024-05-03T10:19:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.4a832655e7915a1178caebecc53bd24aac1c632c.011.1,2024-05-02T20:48:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.13426ea4df1e4abe0778f690fa4f0d36f88329d3.011.1,2024-05-02T14:47:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.f58d922fa980288ae064c087dbd52a149816a904.008.1,2024-05-02T10:39:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.f75ec0f2f517602d1c5a62a811efd3096b7e91fe.003.1,2024-05-02T09:01:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.6cfe1a12e1f565ab95340edb47d72e6680f3c1de.011.1,2024-05-01T19:58:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.c89da6b626574ea1800cee4c0063a1ec8177395b.012.1,2024-05-01T10:47:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.d15b0dea7ec47b004b8e8a42de90a1f8b010a420.006.1,2024-04-30T20:43:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.e9439974f42032148c03e6b32353ddadf5b17ee5.015.1,2024-04-30T09:20:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.95fca957bf69009af8a43d18a681079cebf3385d.008.1,2024-04-29T20:17:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.dbaf83d7ea81587b2a93393326b4ed126303f2f9.003.1,2024-04-29T15:05:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.cedd38c8ab5289649e9c283101ea35e0b2548ea1.006.1,2024-04-29T09:15:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.67498b70f3ebbe1ab335a60825f86131270e8bc6.001.1,2024-04-29T02:56:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.988d774cbfefd49aef763701aa150b65730a3f4f.004.1,2024-04-28T20:40:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.1dbcbc4cd1e5bca5b037669ee071144c39b2d96d.005.1,2024-04-28T10:13:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.ac70c026a94b22fc19334b0c643281843a2d7d6d.004.1,2024-04-27T22:24:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.e2d5cb71fb90cc350a33b5a43237818e3c61d108.002.1,2024-04-27T10:25:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.0bf3d1637ec382dc8f0a6d55d289862fbfa491a8.002.1,2024-04-26T20:49:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.2e08a0c8fc563faf1e6287da6e3c0cb7a051b707.003.1,2024-04-26T10:15:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.dacd7381c633e8c022e52519766fecd2138de5ca.002.1,2024-04-25T21:30:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.dcee5deb6133b9579631f0ac33324546dc9826a9.002.1,2024-04-25T16:01:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.363f0348e98d4f2ef29a1235168a50b7381c35fc.003.1,2024-04-25T10:00:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.884409999e2ad3a2c1de2f3d2a5f6e3289d5c358.003.1,2024-04-24T22:06:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.c93d3bd80b8e36a6635b05b14fd32fd4a488f5e6.001.1,2024-04-24T10:38:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.adf1c34ecc1a9d253b1d21d4060b95e9e2f6b768.003.1,2024-04-24T09:09:00-05:00</value>
         </cap:parameter>
     </entry>
     <entry>
@@ -10780,6 +10707,106 @@ limbs could be blown down and a few power outages may result.</summary>
         </cap:parameter>
     </entry>
     <entry>
+        <id>https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.8751736a35aa15a6185ac09285e60bd3377f63f3.002.1</id>
+        <link rel="alternate" href="https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.8751736a35aa15a6185ac09285e60bd3377f63f3.002.1.cap"/>
+        <updated>2024-05-24T08:12:00-05:00</updated>
+        <published>2024-05-24T08:12:00-05:00</published>
+        <author>
+            <name>NWS</name>
+        </author>
+        <title>Heat Advisory issued May 24 at 8:12AM CDT until May 24 at 7:00PM CDT by NWS Brownsville TX</title>
+        <summary>* WHAT...Heat index values up to 114.
+
+* WHERE...Coastal Cameron, Coastal Kenedy, Coastal Willacy, Inland
+Cameron, and Inland Willacy Counties.
+
+* WHEN...Until 7 PM CDT this evening.
+
+* IMPACTS...Heat related illnesses increase significantly during
+extreme heat and high humidity events.</summary>
+        <cap:event>Heat Advisory</cap:event>
+        <cap:sent>2024-05-24T08:12:00-05:00</cap:sent>
+        <cap:effective>2024-05-24T08:12:00-05:00</cap:effective>
+        <cap:onset>2024-05-24T08:12:00-05:00</cap:onset>
+        <cap:expires>2024-05-24T19:00:00-05:00</cap:expires>
+        <cap:status>Actual</cap:status>
+        <cap:msgType>Update</cap:msgType>
+        <cap:category>Met</cap:category>
+        <cap:urgency>Expected</cap:urgency>
+        <cap:severity>Moderate</cap:severity>
+        <cap:certainty>Likely</cap:certainty>
+        <cap:areaDesc>Inland Willacy; Inland Cameron; Coastal Kenedy; Coastal Willacy; Coastal Cameron</cap:areaDesc>
+        <cap:polygon/>
+        <cap:geocode>
+            <valueName>SAME</valueName>
+            <value>048489</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>SAME</valueName>
+            <value>048061</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>SAME</valueName>
+            <value>048261</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>UGC</valueName>
+            <value>TXZ254</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>UGC</valueName>
+            <value>TXZ255</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>UGC</valueName>
+            <value>TXZ351</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>UGC</valueName>
+            <value>TXZ354</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>UGC</valueName>
+            <value>TXZ355</value>
+        </cap:geocode>
+        <cap:parameter>
+            <valueName>AWIPSidentifier</valueName>
+            <value>NPWBRO</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>WMOidentifier</valueName>
+            <value>WWUS74 KBRO 241312</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>NWSheadline</valueName>
+            <value>HEAT ADVISORY REMAINS IN EFFECT UNTIL 7 PM CDT THIS EVENING</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>BLOCKCHANNEL</valueName>
+            <value>EAS</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>BLOCKCHANNEL</valueName>
+            <value>NWEM</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>BLOCKCHANNEL</valueName>
+            <value>CMAS</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>VTEC</valueName>
+            <value>/O.CON.KBRO.HT.Y.0006.000000T0000Z-240525T0000Z/</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>eventEndingTime</valueName>
+            <value>2024-05-25T00:00:00+00:00</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>expiredReferences</valueName>
+            <value>w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.b8a7284b07b0f82dd71245dfabaecc6c0f5c4f9b.001.1,2024-05-23T09:50:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.902610a5c7e9ffdf6c802ee8557097bfdc88e079.001.1,2024-05-23T02:00:00-05:00</value>
+        </cap:parameter>
+    </entry>
+    <entry>
         <id>https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.8751736a35aa15a6185ac09285e60bd3377f63f3.001.1</id>
         <link rel="alternate" href="https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.8751736a35aa15a6185ac09285e60bd3377f63f3.001.1.cap"/>
         <updated>2024-05-24T08:12:00-05:00</updated>
@@ -10896,106 +10923,6 @@ extreme heat and high humidity events.</summary>
         <cap:parameter>
             <valueName>eventEndingTime</valueName>
             <value>2024-05-25T00:00:00+00:00</value>
-        </cap:parameter>
-    </entry>
-    <entry>
-        <id>https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.8751736a35aa15a6185ac09285e60bd3377f63f3.002.1</id>
-        <link rel="alternate" href="https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.8751736a35aa15a6185ac09285e60bd3377f63f3.002.1.cap"/>
-        <updated>2024-05-24T08:12:00-05:00</updated>
-        <published>2024-05-24T08:12:00-05:00</published>
-        <author>
-            <name>NWS</name>
-        </author>
-        <title>Heat Advisory issued May 24 at 8:12AM CDT until May 24 at 7:00PM CDT by NWS Brownsville TX</title>
-        <summary>* WHAT...Heat index values up to 114.
-
-* WHERE...Coastal Cameron, Coastal Kenedy, Coastal Willacy, Inland
-Cameron, and Inland Willacy Counties.
-
-* WHEN...Until 7 PM CDT this evening.
-
-* IMPACTS...Heat related illnesses increase significantly during
-extreme heat and high humidity events.</summary>
-        <cap:event>Heat Advisory</cap:event>
-        <cap:sent>2024-05-24T08:12:00-05:00</cap:sent>
-        <cap:effective>2024-05-24T08:12:00-05:00</cap:effective>
-        <cap:onset>2024-05-24T08:12:00-05:00</cap:onset>
-        <cap:expires>2024-05-24T19:00:00-05:00</cap:expires>
-        <cap:status>Actual</cap:status>
-        <cap:msgType>Update</cap:msgType>
-        <cap:category>Met</cap:category>
-        <cap:urgency>Expected</cap:urgency>
-        <cap:severity>Moderate</cap:severity>
-        <cap:certainty>Likely</cap:certainty>
-        <cap:areaDesc>Inland Willacy; Inland Cameron; Coastal Kenedy; Coastal Willacy; Coastal Cameron</cap:areaDesc>
-        <cap:polygon/>
-        <cap:geocode>
-            <valueName>SAME</valueName>
-            <value>048489</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>SAME</valueName>
-            <value>048061</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>SAME</valueName>
-            <value>048261</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>UGC</valueName>
-            <value>TXZ254</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>UGC</valueName>
-            <value>TXZ255</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>UGC</valueName>
-            <value>TXZ351</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>UGC</valueName>
-            <value>TXZ354</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>UGC</valueName>
-            <value>TXZ355</value>
-        </cap:geocode>
-        <cap:parameter>
-            <valueName>AWIPSidentifier</valueName>
-            <value>NPWBRO</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>WMOidentifier</valueName>
-            <value>WWUS74 KBRO 241312</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>NWSheadline</valueName>
-            <value>HEAT ADVISORY REMAINS IN EFFECT UNTIL 7 PM CDT THIS EVENING</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>BLOCKCHANNEL</valueName>
-            <value>EAS</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>BLOCKCHANNEL</valueName>
-            <value>NWEM</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>BLOCKCHANNEL</valueName>
-            <value>CMAS</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>VTEC</valueName>
-            <value>/O.CON.KBRO.HT.Y.0006.000000T0000Z-240525T0000Z/</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>eventEndingTime</valueName>
-            <value>2024-05-25T00:00:00+00:00</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>expiredReferences</valueName>
-            <value>w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.b8a7284b07b0f82dd71245dfabaecc6c0f5c4f9b.001.1,2024-05-23T09:50:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.902610a5c7e9ffdf6c802ee8557097bfdc88e079.001.1,2024-05-23T02:00:00-05:00</value>
         </cap:parameter>
     </entry>
     <entry>
@@ -13693,210 +13620,6 @@ Smith...Randall and Palo Duro Canyon.
         </cap:parameter>
     </entry>
     <entry>
-        <id>https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.94352e80ec01710503e2ca61dfbfcd31644eddf4.001.1</id>
-        <link rel="alternate" href="https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.94352e80ec01710503e2ca61dfbfcd31644eddf4.001.1.cap"/>
-        <updated>2024-05-24T02:38:00-05:00</updated>
-        <published>2024-05-24T02:38:00-05:00</published>
-        <author>
-            <name>NWS</name>
-        </author>
-        <title>Flood Watch issued May 24 at 2:38AM CDT until May 24 at 4:00PM CDT by NWS Quad Cities IA IL</title>
-        <summary>* WHAT...Flooding caused by excessive rainfall is possible.
-
-* WHERE...Portions of east central, northeast, and southeast Iowa,
-including the following counties, in east central Iowa, Benton,
-Cedar, Clinton, Iowa, Jackson, Johnson, Jones, Linn, Muscatine and
-Scott. In northeast Iowa, Buchanan, Delaware and Dubuque. In
-southeast Iowa, Keokuk, Louisa and Washington.
-
-* WHEN...From 7 AM CDT this morning through this afternoon.
-
-* IMPACTS...Excessive runoff may result in flooding of rivers,
-creeks, streams, and other low-lying and flood-prone locations.
-Creeks and streams may rise out of their banks. Flooding may occur
-in poor drainage and urban areas.
-
-* ADDITIONAL DETAILS...
-- http://www.weather.gov/safety/flood</summary>
-        <cap:event>Flood Watch</cap:event>
-        <cap:sent>2024-05-24T02:38:00-05:00</cap:sent>
-        <cap:effective>2024-05-24T02:38:00-05:00</cap:effective>
-        <cap:onset>2024-05-24T07:00:00-05:00</cap:onset>
-        <cap:expires>2024-05-24T16:00:00-05:00</cap:expires>
-        <cap:status>Actual</cap:status>
-        <cap:msgType>Alert</cap:msgType>
-        <cap:category>Met</cap:category>
-        <cap:urgency>Future</cap:urgency>
-        <cap:severity>Severe</cap:severity>
-        <cap:certainty>Possible</cap:certainty>
-        <cap:areaDesc>Buchanan; Delaware; Dubuque; Benton; Linn; Jones; Jackson; Iowa; Johnson; Cedar; Clinton; Muscatine; Scott; Keokuk; Washington; Louisa</cap:areaDesc>
-        <cap:polygon/>
-        <cap:geocode>
-            <valueName>SAME</valueName>
-            <value>019019</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>SAME</valueName>
-            <value>019055</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>SAME</valueName>
-            <value>019061</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>SAME</valueName>
-            <value>019011</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>SAME</valueName>
-            <value>019113</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>SAME</valueName>
-            <value>019105</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>SAME</valueName>
-            <value>019097</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>SAME</valueName>
-            <value>019095</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>SAME</valueName>
-            <value>019103</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>SAME</valueName>
-            <value>019031</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>SAME</valueName>
-            <value>019045</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>SAME</valueName>
-            <value>019139</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>SAME</valueName>
-            <value>019163</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>SAME</valueName>
-            <value>019107</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>SAME</valueName>
-            <value>019183</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>SAME</valueName>
-            <value>019115</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>UGC</valueName>
-            <value>IAZ040</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>UGC</valueName>
-            <value>IAZ041</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>UGC</valueName>
-            <value>IAZ042</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>UGC</valueName>
-            <value>IAZ051</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>UGC</valueName>
-            <value>IAZ052</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>UGC</valueName>
-            <value>IAZ053</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>UGC</valueName>
-            <value>IAZ054</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>UGC</valueName>
-            <value>IAZ063</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>UGC</valueName>
-            <value>IAZ064</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>UGC</valueName>
-            <value>IAZ065</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>UGC</valueName>
-            <value>IAZ066</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>UGC</valueName>
-            <value>IAZ067</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>UGC</valueName>
-            <value>IAZ068</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>UGC</valueName>
-            <value>IAZ076</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>UGC</valueName>
-            <value>IAZ077</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>UGC</valueName>
-            <value>IAZ078</value>
-        </cap:geocode>
-        <cap:parameter>
-            <valueName>AWIPSidentifier</valueName>
-            <value>FFADVN</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>WMOidentifier</valueName>
-            <value>WGUS63 KDVN 240738</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>NWSheadline</valueName>
-            <value>FLOOD WATCH IN EFFECT FROM 7 AM CDT THIS MORNING THROUGH THIS AFTERNOON</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>BLOCKCHANNEL</valueName>
-            <value>EAS</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>BLOCKCHANNEL</valueName>
-            <value>NWEM</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>BLOCKCHANNEL</valueName>
-            <value>CMAS</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>EAS-ORG</valueName>
-            <value>WXR</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>VTEC</valueName>
-            <value>/O.NEW.KDVN.FA.A.0005.240524T1200Z-240524T2100Z/</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>eventEndingTime</valueName>
-            <value>2024-05-24T21:00:00+00:00</value>
-        </cap:parameter>
-    </entry>
-    <entry>
         <id>https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.eebe2e76393421622d115a3901d3e79744f60405.001.1</id>
         <link rel="alternate" href="https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.eebe2e76393421622d115a3901d3e79744f60405.001.1.cap"/>
         <updated>2024-05-24T01:19:00-06:00</updated>
@@ -15613,114 +15336,6 @@ late tomorrow evening to a crest of 14.9 feet Monday morning.
         </cap:parameter>
     </entry>
     <entry>
-        <id>https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.2b862c59c08ea48ae8e14e39aefbf191aa990ef5.007.1</id>
-        <link rel="alternate" href="https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.2b862c59c08ea48ae8e14e39aefbf191aa990ef5.007.1.cap"/>
-        <updated>2024-05-23T21:23:00-05:00</updated>
-        <published>2024-05-23T21:23:00-05:00</published>
-        <author>
-            <name>NWS</name>
-        </author>
-        <title>Flood Warning issued May 23 at 9:23PM CDT by NWS Quad Cities IA IL</title>
-        <summary>...The Flood Warning is extended for the following rivers in Iowa...
-
-Wapsipinicon River near Anamosa Shaw Rd affecting Jones, Linn and
-Cedar Counties.
-
-Cedar River AT Palo Blairs Ferry Rd affecting Linn County.
-
-Cedar River at Cedar Rapids affecting Cedar County.
-
-Cedar River near Conesville affecting Muscatine and Louisa
-Counties.
-
-North Skunk River near Sigourney affecting Keokuk County.
-
-...The Flood Warning continues for the following rivers in Iowa...
-
-Wapsipinicon River near De Witt 4S affecting Clinton and Scott
-Counties.
-
-Iowa River at Marengo affecting Iowa and Benton Counties.
-
-* WHAT...Major flooding is forecast. This approaches the flood of
-record.
-
-* WHERE...Wapsipinicon River near De Witt 4S.
-
-* WHEN...From Saturday morning until further notice.
-
-* IMPACTS...At 13.0 feet, Water affects many residences along the
-river.
-
-* ADDITIONAL DETAILS...
-- At 8:30 PM CDT Thursday the stage was 9.9 feet.
-- Forecast...The river is expected to rise above flood stage
-Saturday morning and continue rising to a crest of 13.2 feet
-early Wednesday morning.
-- Flood stage is 11.0 feet.</summary>
-        <cap:event>Flood Warning</cap:event>
-        <cap:sent>2024-05-23T21:23:00-05:00</cap:sent>
-        <cap:effective>2024-05-23T21:23:00-05:00</cap:effective>
-        <cap:onset>2024-05-25T07:00:00-05:00</cap:onset>
-        <cap:expires>2024-05-24T21:30:00-05:00</cap:expires>
-        <cap:status>Actual</cap:status>
-        <cap:msgType>Update</cap:msgType>
-        <cap:category>Met</cap:category>
-        <cap:urgency>Immediate</cap:urgency>
-        <cap:severity>Severe</cap:severity>
-        <cap:certainty>Observed</cap:certainty>
-        <cap:areaDesc>Clinton, IA; Scott, IA</cap:areaDesc>
-        <cap:polygon>42,-90.9 41.84,-90.7099999 41.77,-90.33 41.69,-90.35 41.71,-90.8 41.85,-90.9 42,-90.9</cap:polygon>
-        <cap:geocode>
-            <valueName>SAME</valueName>
-            <value>019045</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>SAME</valueName>
-            <value>019163</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>UGC</valueName>
-            <value>IAC045</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>UGC</valueName>
-            <value>IAC163</value>
-        </cap:geocode>
-        <cap:parameter>
-            <valueName>AWIPSidentifier</valueName>
-            <value>FLSDVN</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>WMOidentifier</valueName>
-            <value>WGUS83 KDVN 240223</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>NWSheadline</valueName>
-            <value>FLOOD WARNING REMAINS IN EFFECT FROM SATURDAY MORNING UNTIL FURTHER NOTICE</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>BLOCKCHANNEL</valueName>
-            <value>EAS</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>BLOCKCHANNEL</valueName>
-            <value>NWEM</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>BLOCKCHANNEL</valueName>
-            <value>CMAS</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>EAS-ORG</valueName>
-            <value>WXR</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>VTEC</valueName>
-            <value>/O.CON.KDVN.FL.W.0024.240525T1200Z-000000T0000Z/</value>
-        </cap:parameter>
-    </entry>
-    <entry>
         <id>https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.2b862c59c08ea48ae8e14e39aefbf191aa990ef5.006.1</id>
         <link rel="alternate" href="https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.2b862c59c08ea48ae8e14e39aefbf191aa990ef5.006.1.cap"/>
         <updated>2024-05-23T21:23:00-05:00</updated>
@@ -15833,8 +15448,116 @@ feet early Monday morning.
         </cap:parameter>
     </entry>
     <entry>
-        <id>https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.12476133ec9184c4e03eed9de3b815b8d729a97d.001.1</id>
-        <link rel="alternate" href="https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.12476133ec9184c4e03eed9de3b815b8d729a97d.001.1.cap"/>
+        <id>https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.2b862c59c08ea48ae8e14e39aefbf191aa990ef5.007.1</id>
+        <link rel="alternate" href="https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.2b862c59c08ea48ae8e14e39aefbf191aa990ef5.007.1.cap"/>
+        <updated>2024-05-23T21:23:00-05:00</updated>
+        <published>2024-05-23T21:23:00-05:00</published>
+        <author>
+            <name>NWS</name>
+        </author>
+        <title>Flood Warning issued May 23 at 9:23PM CDT by NWS Quad Cities IA IL</title>
+        <summary>...The Flood Warning is extended for the following rivers in Iowa...
+
+Wapsipinicon River near Anamosa Shaw Rd affecting Jones, Linn and
+Cedar Counties.
+
+Cedar River AT Palo Blairs Ferry Rd affecting Linn County.
+
+Cedar River at Cedar Rapids affecting Cedar County.
+
+Cedar River near Conesville affecting Muscatine and Louisa
+Counties.
+
+North Skunk River near Sigourney affecting Keokuk County.
+
+...The Flood Warning continues for the following rivers in Iowa...
+
+Wapsipinicon River near De Witt 4S affecting Clinton and Scott
+Counties.
+
+Iowa River at Marengo affecting Iowa and Benton Counties.
+
+* WHAT...Major flooding is forecast. This approaches the flood of
+record.
+
+* WHERE...Wapsipinicon River near De Witt 4S.
+
+* WHEN...From Saturday morning until further notice.
+
+* IMPACTS...At 13.0 feet, Water affects many residences along the
+river.
+
+* ADDITIONAL DETAILS...
+- At 8:30 PM CDT Thursday the stage was 9.9 feet.
+- Forecast...The river is expected to rise above flood stage
+Saturday morning and continue rising to a crest of 13.2 feet
+early Wednesday morning.
+- Flood stage is 11.0 feet.</summary>
+        <cap:event>Flood Warning</cap:event>
+        <cap:sent>2024-05-23T21:23:00-05:00</cap:sent>
+        <cap:effective>2024-05-23T21:23:00-05:00</cap:effective>
+        <cap:onset>2024-05-25T07:00:00-05:00</cap:onset>
+        <cap:expires>2024-05-24T21:30:00-05:00</cap:expires>
+        <cap:status>Actual</cap:status>
+        <cap:msgType>Update</cap:msgType>
+        <cap:category>Met</cap:category>
+        <cap:urgency>Immediate</cap:urgency>
+        <cap:severity>Severe</cap:severity>
+        <cap:certainty>Observed</cap:certainty>
+        <cap:areaDesc>Clinton, IA; Scott, IA</cap:areaDesc>
+        <cap:polygon>42,-90.9 41.84,-90.7099999 41.77,-90.33 41.69,-90.35 41.71,-90.8 41.85,-90.9 42,-90.9</cap:polygon>
+        <cap:geocode>
+            <valueName>SAME</valueName>
+            <value>019045</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>SAME</valueName>
+            <value>019163</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>UGC</valueName>
+            <value>IAC045</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>UGC</valueName>
+            <value>IAC163</value>
+        </cap:geocode>
+        <cap:parameter>
+            <valueName>AWIPSidentifier</valueName>
+            <value>FLSDVN</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>WMOidentifier</valueName>
+            <value>WGUS83 KDVN 240223</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>NWSheadline</valueName>
+            <value>FLOOD WARNING REMAINS IN EFFECT FROM SATURDAY MORNING UNTIL FURTHER NOTICE</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>BLOCKCHANNEL</valueName>
+            <value>EAS</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>BLOCKCHANNEL</valueName>
+            <value>NWEM</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>BLOCKCHANNEL</valueName>
+            <value>CMAS</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>EAS-ORG</valueName>
+            <value>WXR</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>VTEC</valueName>
+            <value>/O.CON.KDVN.FL.W.0024.240525T1200Z-000000T0000Z/</value>
+        </cap:parameter>
+    </entry>
+    <entry>
+        <id>https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.12476133ec9184c4e03eed9de3b815b8d729a97d.002.1</id>
+        <link rel="alternate" href="https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.12476133ec9184c4e03eed9de3b815b8d729a97d.002.1.cap"/>
         <updated>2024-05-23T21:16:00-05:00</updated>
         <published>2024-05-23T21:16:00-05:00</published>
         <author>
@@ -15861,40 +15584,30 @@ Counties.
 
 * WHAT...Flooding is possible.
 
-* WHERE...Mississippi River at Keithsburg.
+* WHERE...Mississippi River at Gladstone LD18.
 
-* WHEN...From Monday afternoon until further notice.
-
-* IMPACTS...At 14.5 feet, Water affects low lying areas in Oquawka.
+* WHEN...From Monday morning until further notice.
 
 * ADDITIONAL DETAILS...
-- At 8:30 PM CDT Thursday the stage was 11.9 feet.
-- Forecast...Flood stage may be reached Monday afternoon.
-- Flood stage is 14.0 feet.</summary>
+- At 9:00 PM CDT Thursday the stage was 8.3 feet.
+- Forecast...Flood stage may be reached Monday morning.
+- Flood stage is 10.0 feet.</summary>
         <cap:event>Flood Watch</cap:event>
         <cap:sent>2024-05-23T21:16:00-05:00</cap:sent>
         <cap:effective>2024-05-23T21:16:00-05:00</cap:effective>
-        <cap:onset>2024-05-27T16:00:00-05:00</cap:onset>
+        <cap:onset>2024-05-27T07:00:00-05:00</cap:onset>
         <cap:expires>2024-05-24T21:30:00-05:00</cap:expires>
         <cap:status>Actual</cap:status>
-        <cap:msgType>Alert</cap:msgType>
+        <cap:msgType>Update</cap:msgType>
         <cap:category>Met</cap:category>
         <cap:urgency>Future</cap:urgency>
         <cap:severity>Severe</cap:severity>
         <cap:certainty>Possible</cap:certainty>
-        <cap:areaDesc>Louisa; Des Moines; Mercer; Henderson</cap:areaDesc>
-        <cap:polygon>41.17,-91.06 41.1599999,-90.97 41.08,-90.91 40.9099999,-90.94 40.94,-90.99 41.17,-91.06</cap:polygon>
-        <cap:geocode>
-            <valueName>SAME</valueName>
-            <value>019115</value>
-        </cap:geocode>
+        <cap:areaDesc>Des Moines; Henderson</cap:areaDesc>
+        <cap:polygon>40.94,-90.99 40.9099999,-90.94 40.84,-91.05 40.86,-91.1 40.94,-90.99</cap:polygon>
         <cap:geocode>
             <valueName>SAME</valueName>
             <value>019057</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>SAME</valueName>
-            <value>017131</value>
         </cap:geocode>
         <cap:geocode>
             <valueName>SAME</valueName>
@@ -15902,15 +15615,7 @@ Counties.
         </cap:geocode>
         <cap:geocode>
             <valueName>UGC</valueName>
-            <value>IAZ078</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>UGC</valueName>
             <value>IAZ089</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>UGC</valueName>
-            <value>ILZ024</value>
         </cap:geocode>
         <cap:geocode>
             <valueName>UGC</valueName>
@@ -15926,7 +15631,7 @@ Counties.
         </cap:parameter>
         <cap:parameter>
             <valueName>NWSheadline</valueName>
-            <value>FLOOD WATCH IN EFFECT FROM MONDAY AFTERNOON UNTIL FURTHER NOTICE</value>
+            <value>FLOOD WATCH NOW IN EFFECT FROM MONDAY MORNING UNTIL FURTHER NOTICE</value>
         </cap:parameter>
         <cap:parameter>
             <valueName>BLOCKCHANNEL</valueName>
@@ -15946,109 +15651,7 @@ Counties.
         </cap:parameter>
         <cap:parameter>
             <valueName>VTEC</valueName>
-            <value>/O.NEW.KDVN.FL.A.0029.240527T2100Z-000000T0000Z/</value>
-        </cap:parameter>
-    </entry>
-    <entry>
-        <id>https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.12476133ec9184c4e03eed9de3b815b8d729a97d.004.1</id>
-        <link rel="alternate" href="https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.12476133ec9184c4e03eed9de3b815b8d729a97d.004.1.cap"/>
-        <updated>2024-05-23T21:16:00-05:00</updated>
-        <published>2024-05-23T21:16:00-05:00</published>
-        <author>
-            <name>NWS</name>
-        </author>
-        <title>Flood Watch issued May 23 at 9:16PM CDT by NWS Quad Cities IA IL</title>
-        <summary>...The National Weather Service in Quad Cities IA IL has issued a
-Flood Watch for the following rivers in Iowa...Illinois...
-
-Mississippi River at Keithsburg affecting Des Moines, Mercer,
-Henderson and Louisa Counties.
-
-...The Flood Watch is extended for the following rivers in Iowa...
-Illinois...Missouri...
-
-Mississippi River at Gladstone LD18 affecting Des Moines and
-Henderson Counties.
-
-Mississippi River at Burlington affecting Des Moines, Hancock,
-Henderson and Lee Counties.
-
-Mississippi River at Gregory Landing affecting Clark and Hancock
-Counties.
-
-* WHAT...Flooding is possible.
-
-* WHERE...Mississippi River at Gregory Landing.
-
-* WHEN...From Tuesday morning until further notice.
-
-* IMPACTS...At 16.0 feet, Water affects buildings in unprotected low
-areas.
-
-* ADDITIONAL DETAILS...
-- At 9:00 PM CDT Thursday the stage was 12.3 feet.
-- Forecast...Flood stage may be reached Tuesday morning.
-- Flood stage is 15.0 feet.</summary>
-        <cap:event>Flood Watch</cap:event>
-        <cap:sent>2024-05-23T21:16:00-05:00</cap:sent>
-        <cap:effective>2024-05-23T21:16:00-05:00</cap:effective>
-        <cap:onset>2024-05-28T07:00:00-05:00</cap:onset>
-        <cap:expires>2024-05-24T21:30:00-05:00</cap:expires>
-        <cap:status>Actual</cap:status>
-        <cap:msgType>Update</cap:msgType>
-        <cap:category>Met</cap:category>
-        <cap:urgency>Future</cap:urgency>
-        <cap:severity>Severe</cap:severity>
-        <cap:certainty>Possible</cap:certainty>
-        <cap:areaDesc>Hancock; Clark</cap:areaDesc>
-        <cap:polygon>40.22,-91.54 40.39,-91.49 40.38,-91.34 40.29,-91.43 40.22,-91.42 40.22,-91.54</cap:polygon>
-        <cap:geocode>
-            <valueName>SAME</valueName>
-            <value>017067</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>SAME</valueName>
-            <value>029045</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>UGC</valueName>
-            <value>ILZ034</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>UGC</valueName>
-            <value>MOZ010</value>
-        </cap:geocode>
-        <cap:parameter>
-            <valueName>AWIPSidentifier</valueName>
-            <value>FFADVN</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>WMOidentifier</valueName>
-            <value>WGUS63 KDVN 240216</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>NWSheadline</valueName>
-            <value>FLOOD WATCH NOW IN EFFECT FROM TUESDAY MORNING UNTIL FURTHER NOTICE</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>BLOCKCHANNEL</valueName>
-            <value>EAS</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>BLOCKCHANNEL</valueName>
-            <value>NWEM</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>BLOCKCHANNEL</valueName>
-            <value>CMAS</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>EAS-ORG</valueName>
-            <value>WXR</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>VTEC</valueName>
-            <value>/O.EXT.KDVN.FL.A.0028.240528T1200Z-000000T0000Z/</value>
+            <value>/O.EXT.KDVN.FL.A.0026.240527T1200Z-000000T0000Z/</value>
         </cap:parameter>
     </entry>
     <entry>
@@ -16170,8 +15773,8 @@ homes in Montrose and Niota.
         </cap:parameter>
     </entry>
     <entry>
-        <id>https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.12476133ec9184c4e03eed9de3b815b8d729a97d.002.1</id>
-        <link rel="alternate" href="https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.12476133ec9184c4e03eed9de3b815b8d729a97d.002.1.cap"/>
+        <id>https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.12476133ec9184c4e03eed9de3b815b8d729a97d.004.1</id>
+        <link rel="alternate" href="https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.12476133ec9184c4e03eed9de3b815b8d729a97d.004.1.cap"/>
         <updated>2024-05-23T21:16:00-05:00</updated>
         <published>2024-05-23T21:16:00-05:00</published>
         <author>
@@ -16198,18 +15801,21 @@ Counties.
 
 * WHAT...Flooding is possible.
 
-* WHERE...Mississippi River at Gladstone LD18.
+* WHERE...Mississippi River at Gregory Landing.
 
-* WHEN...From Monday morning until further notice.
+* WHEN...From Tuesday morning until further notice.
+
+* IMPACTS...At 16.0 feet, Water affects buildings in unprotected low
+areas.
 
 * ADDITIONAL DETAILS...
-- At 9:00 PM CDT Thursday the stage was 8.3 feet.
-- Forecast...Flood stage may be reached Monday morning.
-- Flood stage is 10.0 feet.</summary>
+- At 9:00 PM CDT Thursday the stage was 12.3 feet.
+- Forecast...Flood stage may be reached Tuesday morning.
+- Flood stage is 15.0 feet.</summary>
         <cap:event>Flood Watch</cap:event>
         <cap:sent>2024-05-23T21:16:00-05:00</cap:sent>
         <cap:effective>2024-05-23T21:16:00-05:00</cap:effective>
-        <cap:onset>2024-05-27T07:00:00-05:00</cap:onset>
+        <cap:onset>2024-05-28T07:00:00-05:00</cap:onset>
         <cap:expires>2024-05-24T21:30:00-05:00</cap:expires>
         <cap:status>Actual</cap:status>
         <cap:msgType>Update</cap:msgType>
@@ -16217,23 +15823,23 @@ Counties.
         <cap:urgency>Future</cap:urgency>
         <cap:severity>Severe</cap:severity>
         <cap:certainty>Possible</cap:certainty>
-        <cap:areaDesc>Des Moines; Henderson</cap:areaDesc>
-        <cap:polygon>40.94,-90.99 40.9099999,-90.94 40.84,-91.05 40.86,-91.1 40.94,-90.99</cap:polygon>
+        <cap:areaDesc>Hancock; Clark</cap:areaDesc>
+        <cap:polygon>40.22,-91.54 40.39,-91.49 40.38,-91.34 40.29,-91.43 40.22,-91.42 40.22,-91.54</cap:polygon>
         <cap:geocode>
             <valueName>SAME</valueName>
-            <value>019057</value>
+            <value>017067</value>
         </cap:geocode>
         <cap:geocode>
             <valueName>SAME</valueName>
-            <value>017071</value>
+            <value>029045</value>
         </cap:geocode>
         <cap:geocode>
             <valueName>UGC</valueName>
-            <value>IAZ089</value>
+            <value>ILZ034</value>
         </cap:geocode>
         <cap:geocode>
             <valueName>UGC</valueName>
-            <value>ILZ025</value>
+            <value>MOZ010</value>
         </cap:geocode>
         <cap:parameter>
             <valueName>AWIPSidentifier</valueName>
@@ -16245,7 +15851,7 @@ Counties.
         </cap:parameter>
         <cap:parameter>
             <valueName>NWSheadline</valueName>
-            <value>FLOOD WATCH NOW IN EFFECT FROM MONDAY MORNING UNTIL FURTHER NOTICE</value>
+            <value>FLOOD WATCH NOW IN EFFECT FROM TUESDAY MORNING UNTIL FURTHER NOTICE</value>
         </cap:parameter>
         <cap:parameter>
             <valueName>BLOCKCHANNEL</valueName>
@@ -16265,7 +15871,124 @@ Counties.
         </cap:parameter>
         <cap:parameter>
             <valueName>VTEC</valueName>
-            <value>/O.EXT.KDVN.FL.A.0026.240527T1200Z-000000T0000Z/</value>
+            <value>/O.EXT.KDVN.FL.A.0028.240528T1200Z-000000T0000Z/</value>
+        </cap:parameter>
+    </entry>
+    <entry>
+        <id>https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.12476133ec9184c4e03eed9de3b815b8d729a97d.001.1</id>
+        <link rel="alternate" href="https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.12476133ec9184c4e03eed9de3b815b8d729a97d.001.1.cap"/>
+        <updated>2024-05-23T21:16:00-05:00</updated>
+        <published>2024-05-23T21:16:00-05:00</published>
+        <author>
+            <name>NWS</name>
+        </author>
+        <title>Flood Watch issued May 23 at 9:16PM CDT by NWS Quad Cities IA IL</title>
+        <summary>...The National Weather Service in Quad Cities IA IL has issued a
+Flood Watch for the following rivers in Iowa...Illinois...
+
+Mississippi River at Keithsburg affecting Des Moines, Mercer,
+Henderson and Louisa Counties.
+
+...The Flood Watch is extended for the following rivers in Iowa...
+Illinois...Missouri...
+
+Mississippi River at Gladstone LD18 affecting Des Moines and
+Henderson Counties.
+
+Mississippi River at Burlington affecting Des Moines, Hancock,
+Henderson and Lee Counties.
+
+Mississippi River at Gregory Landing affecting Clark and Hancock
+Counties.
+
+* WHAT...Flooding is possible.
+
+* WHERE...Mississippi River at Keithsburg.
+
+* WHEN...From Monday afternoon until further notice.
+
+* IMPACTS...At 14.5 feet, Water affects low lying areas in Oquawka.
+
+* ADDITIONAL DETAILS...
+- At 8:30 PM CDT Thursday the stage was 11.9 feet.
+- Forecast...Flood stage may be reached Monday afternoon.
+- Flood stage is 14.0 feet.</summary>
+        <cap:event>Flood Watch</cap:event>
+        <cap:sent>2024-05-23T21:16:00-05:00</cap:sent>
+        <cap:effective>2024-05-23T21:16:00-05:00</cap:effective>
+        <cap:onset>2024-05-27T16:00:00-05:00</cap:onset>
+        <cap:expires>2024-05-24T21:30:00-05:00</cap:expires>
+        <cap:status>Actual</cap:status>
+        <cap:msgType>Alert</cap:msgType>
+        <cap:category>Met</cap:category>
+        <cap:urgency>Future</cap:urgency>
+        <cap:severity>Severe</cap:severity>
+        <cap:certainty>Possible</cap:certainty>
+        <cap:areaDesc>Louisa; Des Moines; Mercer; Henderson</cap:areaDesc>
+        <cap:polygon>41.17,-91.06 41.1599999,-90.97 41.08,-90.91 40.9099999,-90.94 40.94,-90.99 41.17,-91.06</cap:polygon>
+        <cap:geocode>
+            <valueName>SAME</valueName>
+            <value>019115</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>SAME</valueName>
+            <value>019057</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>SAME</valueName>
+            <value>017131</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>SAME</valueName>
+            <value>017071</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>UGC</valueName>
+            <value>IAZ078</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>UGC</valueName>
+            <value>IAZ089</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>UGC</valueName>
+            <value>ILZ024</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>UGC</valueName>
+            <value>ILZ025</value>
+        </cap:geocode>
+        <cap:parameter>
+            <valueName>AWIPSidentifier</valueName>
+            <value>FFADVN</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>WMOidentifier</valueName>
+            <value>WGUS63 KDVN 240216</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>NWSheadline</valueName>
+            <value>FLOOD WATCH IN EFFECT FROM MONDAY AFTERNOON UNTIL FURTHER NOTICE</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>BLOCKCHANNEL</valueName>
+            <value>EAS</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>BLOCKCHANNEL</valueName>
+            <value>NWEM</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>BLOCKCHANNEL</valueName>
+            <value>CMAS</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>EAS-ORG</valueName>
+            <value>WXR</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>VTEC</valueName>
+            <value>/O.NEW.KDVN.FL.A.0029.240527T2100Z-000000T0000Z/</value>
         </cap:parameter>
     </entry>
     <entry>
