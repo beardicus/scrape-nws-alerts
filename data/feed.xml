@@ -2,53 +2,96 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xmlns:cap="urn:oasis:names:tc:emergency:cap:1.2">
     <id>https://api.weather.gov/alerts.atom?region_type=land&amp;limit=500&amp;active=1</id>
     <generator>NWS CAP Server</generator>
-    <updated>2024-06-14T06:05:56+00:00</updated>
+    <updated>2024-06-14T06:35:44+00:00</updated>
     <author>
         <name>w-nws.webmaster@noaa.gov</name>
     </author>
     <title>Current watches, warnings, and advisories for United States land zones</title>
     <link rel="self" href="https://api.weather.gov/alerts.atom?region_type=land&amp;limit=500&amp;active=1"/>
     <entry>
-        <id>https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0-KEEPALIVE-4238</id>
-        <link rel="alternate" href="https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0-KEEPALIVE-4238.cap"/>
-        <updated>2024-06-14T06:05:44+00:00</updated>
-        <published>2024-06-14T06:05:44+00:00</published>
+        <id>https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.f891b5f0c6b664ce983ae0b1afc7dfd463ecafc2.002.1</id>
+        <link rel="alternate" href="https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.f891b5f0c6b664ce983ae0b1afc7dfd463ecafc2.002.1.cap"/>
+        <updated>2024-06-14T01:24:00-05:00</updated>
+        <published>2024-06-14T01:24:00-05:00</published>
         <author>
             <name>NWS</name>
         </author>
-        <title/>
-        <summary>Monitoring message only. Please disregard.</summary>
-        <cap:event>Test Message</cap:event>
-        <cap:sent>2024-06-14T06:05:44+00:00</cap:sent>
-        <cap:effective>2024-06-14T06:05:44+00:00</cap:effective>
-        <cap:expires>2024-06-14T06:15:44+00:00</cap:expires>
-        <cap:status>Test</cap:status>
-        <cap:msgType>Alert</cap:msgType>
+        <title>Severe Thunderstorm Warning issued June 14 at 1:24AM CDT until June 14 at 1:45AM CDT by NWS Springfield MO</title>
+        <summary>At 124 AM CDT, severe thunderstorms were located along a line
+extending from 7 miles west of Lebanon to 8 miles northwest of Conway
+to 7 miles southwest of Buffalo, moving south at 35 mph.
+
+HAZARD...60 mph wind gusts.
+
+SOURCE...Radar indicated.
+
+IMPACT...Expect damage to roofs, siding, and trees.
+
+Locations impacted include...
+Bennett Spring State Park, Conway, Phillipsburg, Bennett Springs,
+Windyville, Plad, and Long Lane.
+
+This includes Interstate 44 between mile markers 111 and 121.</summary>
+        <cap:event>Severe Thunderstorm Warning</cap:event>
+        <cap:sent>2024-06-14T01:24:00-05:00</cap:sent>
+        <cap:effective>2024-06-14T01:24:00-05:00</cap:effective>
+        <cap:onset>2024-06-14T01:24:00-05:00</cap:onset>
+        <cap:expires>2024-06-14T01:45:00-05:00</cap:expires>
+        <cap:status>Actual</cap:status>
+        <cap:msgType>Update</cap:msgType>
         <cap:category>Met</cap:category>
-        <cap:urgency>Unknown</cap:urgency>
-        <cap:severity>Unknown</cap:severity>
-        <cap:certainty>Unknown</cap:certainty>
-        <cap:areaDesc>Montgomery</cap:areaDesc>
-        <cap:polygon/>
+        <cap:urgency>Immediate</cap:urgency>
+        <cap:severity>Severe</cap:severity>
+        <cap:certainty>Observed</cap:certainty>
+        <cap:areaDesc>Dallas, MO; Laclede, MO</cap:areaDesc>
+        <cap:polygon>37.83,-92.7 37.49,-92.69 37.49,-92.87 37.81,-93.11 37.83,-92.7</cap:polygon>
         <cap:geocode>
             <valueName>SAME</valueName>
-            <value>024031</value>
+            <value>029059</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>SAME</valueName>
+            <value>029105</value>
         </cap:geocode>
         <cap:geocode>
             <valueName>UGC</valueName>
-            <value>MDC031</value>
+            <value>MOC059</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>UGC</valueName>
+            <value>MOC105</value>
         </cap:geocode>
         <cap:parameter>
             <valueName>AWIPSidentifier</valueName>
-            <value>KEPWBC</value>
+            <value>SVSSGF</value>
         </cap:parameter>
         <cap:parameter>
             <valueName>WMOidentifier</valueName>
-            <value>NZUS91 KWBC 140605</value>
+            <value>WWUS53 KSGF 140624</value>
         </cap:parameter>
         <cap:parameter>
-            <valueName>BLOCKCHANNEL</valueName>
-            <value>CMAS</value>
+            <valueName>NWSheadline</valueName>
+            <value>A SEVERE THUNDERSTORM WARNING REMAINS IN EFFECT UNTIL 145 AM CDT FOR NORTHEASTERN DALLAS AND WESTERN LACLEDE COUNTIES</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>eventMotionDescription</valueName>
+            <value>2024-06-14T06:24:00-00:00...storm...348DEG...30KT...37.66,-92.8 37.59,-92.93 37.56,-93.19</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>windThreat</valueName>
+            <value>RADAR INDICATED</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>maxWindGust</valueName>
+            <value>60 MPH</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>hailThreat</valueName>
+            <value>RADAR INDICATED</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>maxHailSize</valueName>
+            <value>Up to .75</value>
         </cap:parameter>
         <cap:parameter>
             <valueName>BLOCKCHANNEL</valueName>
@@ -57,6 +100,22 @@
         <cap:parameter>
             <valueName>BLOCKCHANNEL</valueName>
             <value>NWEM</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>BLOCKCHANNEL</valueName>
+            <value>CMAS</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>EAS-ORG</valueName>
+            <value>WXR</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>VTEC</valueName>
+            <value>/O.CON.KSGF.SV.W.0309.000000T0000Z-240614T0645Z/</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>eventEndingTime</valueName>
+            <value>2024-06-14T06:45:00+00:00</value>
         </cap:parameter>
     </entry>
     <entry>
@@ -184,143 +243,6 @@ and Island Park Reservoir.</summary>
         <cap:parameter>
             <valueName>EAS-ORG</valueName>
             <value>WXR</value>
-        </cap:parameter>
-    </entry>
-    <entry>
-        <id>https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.8ef748a7baed13c34e815e1bed3ee6e4c65fffbb.001.1</id>
-        <link rel="alternate" href="https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.8ef748a7baed13c34e815e1bed3ee6e4c65fffbb.001.1.cap"/>
-        <updated>2024-06-14T01:01:00-05:00</updated>
-        <published>2024-06-14T01:01:00-05:00</published>
-        <author>
-            <name>NWS</name>
-        </author>
-        <title>Severe Thunderstorm Warning issued June 14 at 1:01AM CDT until June 14 at 1:30AM CDT by NWS Kansas City/Pleasant Hill MO</title>
-        <summary>SVREAX
-
-The National Weather Service in Pleasant Hill has issued a
-
-* Severe Thunderstorm Warning for...
-Southeastern Clinton County in northwestern Missouri...
-Eastern Clay County in west central Missouri...
-Southwestern Ray County in west central Missouri...
-Northeastern Jackson County in west central Missouri...
-
-* Until 130 AM CDT.
-
-* At 101 AM CDT, a severe thunderstorm was located over Excelsior
-Springs, moving southeast at 30 mph.
-
-HAZARD...60 mph wind gusts and quarter size hail.
-
-SOURCE...Radar indicated.
-
-IMPACT...Hail damage to vehicles is expected. Expect wind damage
-to roofs, siding, and trees.
-
-* Locations impacted include...
-Independence, Liberty, Excelsior Springs, Kearney, Richmond, Sugar
-Creek, Buckner, Lawson, Orrick, Holt, Crystal Lakes, Sibley,
-Missouri City, Excelsior Estates, Levasy, River Bend, Woods
-Heights, Rayville, Napoleon, and Mosby.
-
-This includes Interstate 35 in Missouri between mile markers 31 and
-34.</summary>
-        <cap:event>Severe Thunderstorm Warning</cap:event>
-        <cap:sent>2024-06-14T01:01:00-05:00</cap:sent>
-        <cap:effective>2024-06-14T01:01:00-05:00</cap:effective>
-        <cap:onset>2024-06-14T01:01:00-05:00</cap:onset>
-        <cap:expires>2024-06-14T01:30:00-05:00</cap:expires>
-        <cap:status>Actual</cap:status>
-        <cap:msgType>Alert</cap:msgType>
-        <cap:category>Met</cap:category>
-        <cap:urgency>Immediate</cap:urgency>
-        <cap:severity>Severe</cap:severity>
-        <cap:certainty>Observed</cap:certainty>
-        <cap:areaDesc>Clay, MO; Clinton, MO; Jackson, MO; Ray, MO</cap:areaDesc>
-        <cap:polygon>39.49,-94.31 39.4,-93.93 39.13,-94.0699999 39.14,-94.11 39.07,-94.11 39.04,-94.12 39.19,-94.45 39.49,-94.31</cap:polygon>
-        <cap:geocode>
-            <valueName>SAME</valueName>
-            <value>029047</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>SAME</valueName>
-            <value>029049</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>SAME</valueName>
-            <value>029095</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>SAME</valueName>
-            <value>029177</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>UGC</valueName>
-            <value>MOC047</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>UGC</valueName>
-            <value>MOC049</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>UGC</valueName>
-            <value>MOC095</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>UGC</valueName>
-            <value>MOC177</value>
-        </cap:geocode>
-        <cap:parameter>
-            <valueName>AWIPSidentifier</valueName>
-            <value>SVREAX</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>WMOidentifier</valueName>
-            <value>WUUS53 KEAX 140601</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>eventMotionDescription</valueName>
-            <value>2024-06-14T06:01:00-00:00...storm...303DEG...24KT...39.31,-94.26</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>windThreat</valueName>
-            <value>RADAR INDICATED</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>maxWindGust</valueName>
-            <value>60 MPH</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>hailThreat</valueName>
-            <value>RADAR INDICATED</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>maxHailSize</valueName>
-            <value>1.00</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>BLOCKCHANNEL</valueName>
-            <value>EAS</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>BLOCKCHANNEL</valueName>
-            <value>NWEM</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>BLOCKCHANNEL</valueName>
-            <value>CMAS</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>EAS-ORG</valueName>
-            <value>WXR</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>VTEC</valueName>
-            <value>/O.NEW.KEAX.SV.W.0243.240614T0601Z-240614T0630Z/</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>eventEndingTime</valueName>
-            <value>2024-06-14T06:30:00+00:00</value>
         </cap:parameter>
     </entry>
     <entry>
@@ -524,367 +446,6 @@ Flemington.</summary>
         <cap:parameter>
             <valueName>maxHailSize</valueName>
             <value>0.25</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>BLOCKCHANNEL</valueName>
-            <value>EAS</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>BLOCKCHANNEL</valueName>
-            <value>NWEM</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>BLOCKCHANNEL</valueName>
-            <value>CMAS</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>EAS-ORG</valueName>
-            <value>WXR</value>
-        </cap:parameter>
-    </entry>
-    <entry>
-        <id>https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.2c63b72096ed481cae3971c11cb7fbef55dd792a.001.1</id>
-        <link rel="alternate" href="https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.2c63b72096ed481cae3971c11cb7fbef55dd792a.001.1.cap"/>
-        <updated>2024-06-14T00:50:00-05:00</updated>
-        <published>2024-06-14T00:50:00-05:00</published>
-        <author>
-            <name>NWS</name>
-        </author>
-        <title>Severe Thunderstorm Warning issued June 14 at 12:50AM CDT until June 14 at 1:30AM CDT by NWS Kansas City/Pleasant Hill MO</title>
-        <summary>SVREAX
-
-The National Weather Service in Pleasant Hill has issued a
-
-* Severe Thunderstorm Warning for...
-West central Chariton County in north central Missouri...
-Southeastern Ray County in west central Missouri...
-Carroll County in north central Missouri...
-Western Saline County in central Missouri...
-Northeastern Lafayette County in west central Missouri...
-
-* Until 130 AM CDT.
-
-* At 1250 AM CDT, a severe thunderstorm was located over Corder, or 7
-miles northeast of Higginsville, moving southeast at 30 mph.
-
-HAZARD...60 mph wind gusts and quarter size hail.
-
-SOURCE...Radar indicated.
-
-IMPACT...Hail damage to vehicles is expected. Expect wind damage
-to roofs, siding, and trees.
-
-* Locations impacted include...
-Richmond, Higginsville, Lexington, Carrollton, Concordia, Waverly,
-Norborne, Hardin, Corder, Alma, Henrietta, Bosworth, Malta Bend,
-Blackburn, Wakenda, Emma, Miami, Bogard, De Witt, and Dover.
-
-This includes Interstate 70 in Missouri between mile markers 60 and
-66.</summary>
-        <cap:event>Severe Thunderstorm Warning</cap:event>
-        <cap:sent>2024-06-14T00:50:00-05:00</cap:sent>
-        <cap:effective>2024-06-14T00:50:00-05:00</cap:effective>
-        <cap:onset>2024-06-14T00:50:00-05:00</cap:onset>
-        <cap:expires>2024-06-14T01:30:00-05:00</cap:expires>
-        <cap:status>Actual</cap:status>
-        <cap:msgType>Alert</cap:msgType>
-        <cap:category>Met</cap:category>
-        <cap:urgency>Immediate</cap:urgency>
-        <cap:severity>Severe</cap:severity>
-        <cap:certainty>Observed</cap:certainty>
-        <cap:areaDesc>Carroll, MO; Chariton, MO; Lafayette, MO; Ray, MO; Saline, MO</cap:areaDesc>
-        <cap:polygon>39.2299999,-94.01 39.54,-93.56 39.5,-93.1 38.94,-93.45 39.2299999,-94.01</cap:polygon>
-        <cap:geocode>
-            <valueName>SAME</valueName>
-            <value>029033</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>SAME</valueName>
-            <value>029041</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>SAME</valueName>
-            <value>029107</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>SAME</valueName>
-            <value>029177</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>SAME</valueName>
-            <value>029195</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>UGC</valueName>
-            <value>MOC033</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>UGC</valueName>
-            <value>MOC041</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>UGC</valueName>
-            <value>MOC107</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>UGC</valueName>
-            <value>MOC177</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>UGC</valueName>
-            <value>MOC195</value>
-        </cap:geocode>
-        <cap:parameter>
-            <valueName>AWIPSidentifier</valueName>
-            <value>SVREAX</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>WMOidentifier</valueName>
-            <value>WUUS53 KEAX 140550</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>eventMotionDescription</valueName>
-            <value>2024-06-14T05:50:00-00:00...storm...306DEG...25KT...39.12,-93.61</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>windThreat</valueName>
-            <value>RADAR INDICATED</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>maxWindGust</valueName>
-            <value>60 MPH</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>hailThreat</valueName>
-            <value>RADAR INDICATED</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>maxHailSize</valueName>
-            <value>1.00</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>BLOCKCHANNEL</valueName>
-            <value>EAS</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>BLOCKCHANNEL</valueName>
-            <value>NWEM</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>BLOCKCHANNEL</valueName>
-            <value>CMAS</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>EAS-ORG</valueName>
-            <value>WXR</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>VTEC</valueName>
-            <value>/O.NEW.KEAX.SV.W.0242.240614T0550Z-240614T0630Z/</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>eventEndingTime</valueName>
-            <value>2024-06-14T06:30:00+00:00</value>
-        </cap:parameter>
-    </entry>
-    <entry>
-        <id>https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.fa3b497c59c1309675f3cb962900dba35c841c89.001.1</id>
-        <link rel="alternate" href="https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.fa3b497c59c1309675f3cb962900dba35c841c89.001.1.cap"/>
-        <updated>2024-06-14T00:47:00-05:00</updated>
-        <published>2024-06-14T00:47:00-05:00</published>
-        <author>
-            <name>NWS</name>
-        </author>
-        <title>Severe Thunderstorm Warning issued June 14 at 12:47AM CDT until June 14 at 1:45AM CDT by NWS Springfield MO</title>
-        <summary>SVRSGF
-
-The National Weather Service in Springfield has issued a
-
-* Severe Thunderstorm Warning for...
-Northeastern Dallas County in southwestern Missouri...
-Laclede County in southwestern Missouri...
-Southern Camden County in central Missouri...
-
-* Until 145 AM CDT.
-
-* At 1247 AM CDT, severe thunderstorms were located along a line
-extending from near Village of Four Seasons to near Camdenton to 6
-miles northeast of Urbana, moving south at 30 mph.
-
-HAZARD...60 mph wind gusts and penny size hail.
-
-SOURCE...Radar indicated.
-
-IMPACT...Expect damage to roofs, siding, and trees.
-
-* Locations impacted include...
-Lebanon, Lake of The Ozarks, Ha Ha Tonka State Park, Bennett Spring
-State Park, Lake of The Ozarks State Park, Camdenton, Richland,
-Morgan, Conway, Linn Creek, Phillipsburg, Stoutland, Bennett
-Springs, Twin Bridges, Windyville, Tunas, Sleeper, Freedom, Falcon,
-and Branch.
-
-This includes Interstate 44 between mile markers 110 and 144.</summary>
-        <cap:event>Severe Thunderstorm Warning</cap:event>
-        <cap:sent>2024-06-14T00:47:00-05:00</cap:sent>
-        <cap:effective>2024-06-14T00:47:00-05:00</cap:effective>
-        <cap:onset>2024-06-14T00:47:00-05:00</cap:onset>
-        <cap:expires>2024-06-14T01:45:00-05:00</cap:expires>
-        <cap:status>Actual</cap:status>
-        <cap:msgType>Alert</cap:msgType>
-        <cap:category>Met</cap:category>
-        <cap:urgency>Immediate</cap:urgency>
-        <cap:severity>Severe</cap:severity>
-        <cap:certainty>Observed</cap:certainty>
-        <cap:areaDesc>Camden, MO; Dallas, MO; Laclede, MO</cap:areaDesc>
-        <cap:polygon>38.02,-92.41 37.72,-92.41 37.69,-92.36 37.49,-92.37 37.49,-92.87 37.9,-93.18 37.9,-93.0699999 38.06,-92.74 38.02,-92.41</cap:polygon>
-        <cap:geocode>
-            <valueName>SAME</valueName>
-            <value>029029</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>SAME</valueName>
-            <value>029059</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>SAME</valueName>
-            <value>029105</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>UGC</valueName>
-            <value>MOC029</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>UGC</valueName>
-            <value>MOC059</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>UGC</valueName>
-            <value>MOC105</value>
-        </cap:geocode>
-        <cap:parameter>
-            <valueName>AWIPSidentifier</valueName>
-            <value>SVRSGF</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>WMOidentifier</valueName>
-            <value>WUUS53 KSGF 140547</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>eventMotionDescription</valueName>
-            <value>2024-06-14T05:47:00-00:00...storm...342DEG...26KT...38.16,-92.71 37.95,-92.8 37.9,-93.08</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>windThreat</valueName>
-            <value>RADAR INDICATED</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>maxWindGust</valueName>
-            <value>60 MPH</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>hailThreat</valueName>
-            <value>RADAR INDICATED</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>maxHailSize</valueName>
-            <value>0.75</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>BLOCKCHANNEL</valueName>
-            <value>EAS</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>BLOCKCHANNEL</valueName>
-            <value>NWEM</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>BLOCKCHANNEL</valueName>
-            <value>CMAS</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>EAS-ORG</valueName>
-            <value>WXR</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>VTEC</valueName>
-            <value>/O.NEW.KSGF.SV.W.0309.240614T0547Z-240614T0645Z/</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>eventEndingTime</valueName>
-            <value>2024-06-14T06:45:00+00:00</value>
-        </cap:parameter>
-    </entry>
-    <entry>
-        <id>https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.21623ef363f8b39b0a2235a7babbb1584b66b132.001.1</id>
-        <link rel="alternate" href="https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.21623ef363f8b39b0a2235a7babbb1584b66b132.001.1.cap"/>
-        <updated>2024-06-14T00:46:00-05:00</updated>
-        <published>2024-06-14T00:46:00-05:00</published>
-        <author>
-            <name>NWS</name>
-        </author>
-        <title>Special Weather Statement issued June 14 at 12:46AM CDT by NWS Lincoln IL</title>
-        <summary>At 1245 AM CDT, Doppler radar was tracking a strong thunderstorm over
-Hartsburg, or 7 miles north of Lincoln, moving southeast at 25 mph.
-
-HAZARD...Wind gusts of 50 to 55 mph and penny size hail.
-
-SOURCE...Radar indicated.
-
-IMPACT...Gusty winds could knock down tree limbs and blow around
-unsecured objects. Minor hail damage to vegetation is
-possible.
-
-Locations impacted include...
-Lincoln, Emden, Hartsburg, and Lawndale.
-
-This includes the following highways...
-Interstate 155 between mile markers 0 and 10.
-Interstate 55 between mile markers 123 and 138.</summary>
-        <cap:event>Special Weather Statement</cap:event>
-        <cap:sent>2024-06-14T00:46:00-05:00</cap:sent>
-        <cap:effective>2024-06-14T00:46:00-05:00</cap:effective>
-        <cap:onset>2024-06-14T00:46:00-05:00</cap:onset>
-        <cap:expires>2024-06-14T01:15:00-05:00</cap:expires>
-        <cap:status>Actual</cap:status>
-        <cap:msgType>Alert</cap:msgType>
-        <cap:category>Met</cap:category>
-        <cap:urgency>Expected</cap:urgency>
-        <cap:severity>Moderate</cap:severity>
-        <cap:certainty>Observed</cap:certainty>
-        <cap:areaDesc>Logan</cap:areaDesc>
-        <cap:polygon>40.32,-89.6 40.32,-89.4 40.21,-89.16 40.08,-89.49 40.32,-89.6</cap:polygon>
-        <cap:geocode>
-            <valueName>SAME</valueName>
-            <value>017107</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>UGC</valueName>
-            <value>ILZ042</value>
-        </cap:geocode>
-        <cap:parameter>
-            <valueName>AWIPSidentifier</valueName>
-            <value>SPSILX</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>WMOidentifier</valueName>
-            <value>WWUS83 KILX 140546</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>NWSheadline</valueName>
-            <value>A STRONG THUNDERSTORM WILL IMPACT NORTHERN LOGAN COUNTY THROUGH 115 AM CDT</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>eventMotionDescription</valueName>
-            <value>2024-06-14T05:45:00-00:00...storm...317DEG...20KT...40.26,-89.4</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>maxWindGust</valueName>
-            <value>55 MPH</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>maxHailSize</valueName>
-            <value>0.75</value>
         </cap:parameter>
         <cap:parameter>
             <valueName>BLOCKCHANNEL</valueName>
@@ -1275,152 +836,6 @@ the D E Q website opc.deq.state.ms.us/aqi.</summary>
         <cap:parameter>
             <valueName>BLOCKCHANNEL</valueName>
             <value>CMAS</value>
-        </cap:parameter>
-    </entry>
-    <entry>
-        <id>https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.ce079aa3c79d8ad561dc27c261c63ccfe4e0f4a9.001.1</id>
-        <link rel="alternate" href="https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.ce079aa3c79d8ad561dc27c261c63ccfe4e0f4a9.001.1.cap"/>
-        <updated>2024-06-13T23:17:00-06:00</updated>
-        <published>2024-06-13T23:17:00-06:00</published>
-        <author>
-            <name>NWS</name>
-        </author>
-        <title>Special Weather Statement issued June 13 at 11:17PM MDT by NWS Pocatello ID</title>
-        <summary>At 1117 PM MDT, Doppler radar was tracking a strong thunderstorm 7
-miles northwest of Idaho Falls, moving northeast at 25 mph.
-
-HAZARD...Wind gusts in excess of 45 mph and pea size hail.
-
-SOURCE...Radar indicated.
-
-IMPACT...Gusty winds could knock down tree limbs and blow around
-unsecured objects. Minor hail damage to outdoor objects is
-possible.
-
-Locations impacted include...
-Idaho Falls, Rexburg, Rigby, Ririe Reservoir, Lorenzo, Ammon,
-Shelley, Iona, Ucon, Menan, Ririe, Roberts, Lewisville, Archer,
-Plano, Sage Junction, Osgood, Thornton, Kettle Butte, and Heise.</summary>
-        <cap:event>Special Weather Statement</cap:event>
-        <cap:sent>2024-06-13T23:17:00-06:00</cap:sent>
-        <cap:effective>2024-06-13T23:17:00-06:00</cap:effective>
-        <cap:onset>2024-06-13T23:17:00-06:00</cap:onset>
-        <cap:expires>2024-06-14T00:15:00-06:00</cap:expires>
-        <cap:status>Actual</cap:status>
-        <cap:msgType>Alert</cap:msgType>
-        <cap:category>Met</cap:category>
-        <cap:urgency>Expected</cap:urgency>
-        <cap:severity>Moderate</cap:severity>
-        <cap:certainty>Observed</cap:certainty>
-        <cap:areaDesc>Arco/Mud Lake Desert; Upper Snake River Plain; Lower Snake River Plain; Blackfoot Mountains; Caribou Range; Big Hole Mountains</cap:areaDesc>
-        <cap:polygon>43.29,-112.26 43.72,-112.43 43.99,-111.96 43.58,-111.45 43.29,-112.26</cap:polygon>
-        <cap:geocode>
-            <valueName>SAME</valueName>
-            <value>016011</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>SAME</valueName>
-            <value>016019</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>SAME</valueName>
-            <value>016023</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>SAME</valueName>
-            <value>016051</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>SAME</valueName>
-            <value>016043</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>SAME</valueName>
-            <value>016065</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>SAME</valueName>
-            <value>016005</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>SAME</valueName>
-            <value>016077</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>SAME</valueName>
-            <value>016029</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>SAME</valueName>
-            <value>016007</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>SAME</valueName>
-            <value>016081</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>UGC</valueName>
-            <value>IDZ052</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>UGC</valueName>
-            <value>IDZ053</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>UGC</valueName>
-            <value>IDZ054</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>UGC</valueName>
-            <value>IDZ062</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>UGC</valueName>
-            <value>IDZ063</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>UGC</valueName>
-            <value>IDZ064</value>
-        </cap:geocode>
-        <cap:parameter>
-            <valueName>AWIPSidentifier</valueName>
-            <value>SPSPIH</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>WMOidentifier</valueName>
-            <value>WWUS85 KPIH 140517</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>NWSheadline</valueName>
-            <value>A STRONG THUNDERSTORM WILL IMPACT SOUTHERN FREMONT...EASTERN JEFFERSON...NORTHWESTERN BONNEVILLE...WESTERN MADISON AND CENTRAL BINGHAM COUNTIES THROUGH 1215 AM MDT</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>eventMotionDescription</valueName>
-            <value>2024-06-14T05:17:00-00:00...storm...240DEG...49KT...43.57,-112.13</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>maxWindGust</valueName>
-            <value>45 MPH</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>maxHailSize</valueName>
-            <value>0.25</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>BLOCKCHANNEL</valueName>
-            <value>EAS</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>BLOCKCHANNEL</valueName>
-            <value>NWEM</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>BLOCKCHANNEL</valueName>
-            <value>CMAS</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>EAS-ORG</valueName>
-            <value>WXR</value>
         </cap:parameter>
     </entry>
     <entry>
