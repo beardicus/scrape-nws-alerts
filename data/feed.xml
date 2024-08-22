@@ -2,53 +2,91 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xmlns:cap="urn:oasis:names:tc:emergency:cap:1.2">
     <id>https://api.weather.gov/alerts.atom?region_type=land&amp;limit=500&amp;active=1</id>
     <generator>NWS CAP Server</generator>
-    <updated>2024-08-22T18:08:21+00:00</updated>
+    <updated>2024-08-22T18:37:04+00:00</updated>
     <author>
         <name>w-nws.webmaster@noaa.gov</name>
     </author>
     <title>Current watches, warnings, and advisories for United States land zones</title>
     <link rel="self" href="https://api.weather.gov/alerts.atom?region_type=land&amp;limit=500&amp;active=1"/>
     <entry>
-        <id>https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0-KEEPALIVE-562</id>
-        <link rel="alternate" href="https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0-KEEPALIVE-562.cap"/>
-        <updated>2024-08-22T18:07:04+00:00</updated>
-        <published>2024-08-22T18:07:04+00:00</published>
+        <id>https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.024bbbb1639e1ccf8ba04d501bc06ea600fbabe8.001.1</id>
+        <link rel="alternate" href="https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.024bbbb1639e1ccf8ba04d501bc06ea600fbabe8.001.1.cap"/>
+        <updated>2024-08-22T12:36:00-06:00</updated>
+        <published>2024-08-22T12:36:00-06:00</published>
         <author>
             <name>NWS</name>
         </author>
-        <title/>
-        <summary>Monitoring message only. Please disregard.</summary>
-        <cap:event>Test Message</cap:event>
-        <cap:sent>2024-08-22T18:07:04+00:00</cap:sent>
-        <cap:effective>2024-08-22T18:07:04+00:00</cap:effective>
-        <cap:expires>2024-08-22T18:17:04+00:00</cap:expires>
-        <cap:status>Test</cap:status>
-        <cap:msgType>Alert</cap:msgType>
+        <title>Flash Flood Warning issued August 22 at 12:36PM MDT until August 22 at 2:45PM MDT by NWS Salt Lake City UT</title>
+        <summary>FFWSLC
+
+The National Weather Service in Salt Lake City has extended the
+
+* Flash Flood Warning for...
+West Central Kane County in southern Utah...
+East Central Washington County in southwestern Utah...
+
+* Until 245 PM MDT.
+
+* At 1236 PM MDT, Park Ranger reported flooding and Doppler radar
+indicated thunderstorms producing heavy rain across Zion National
+Park. Between 0.5 and 1.5 inches of rain has fallen. Flash
+flooding is ongoing.
+
+HAZARD...Life threatening flash flooding. Thunderstorms
+producing flash flooding.
+
+SOURCE...Radar and Park Ranger observed.
+
+IMPACT...Life threatening flash flooding of creeks and streams,
+roadways, typically dry washes, and slot canyons.
+
+* Some locations that will experience flash flooding include...
+Zion National Park, including portions of the North Fork and East
+Fork of the Virgin River and associated nearby tributaries.</summary>
+        <cap:event>Flash Flood Warning</cap:event>
+        <cap:sent>2024-08-22T12:36:00-06:00</cap:sent>
+        <cap:effective>2024-08-22T12:36:00-06:00</cap:effective>
+        <cap:onset>2024-08-22T12:36:00-06:00</cap:onset>
+        <cap:expires>2024-08-22T14:45:00-06:00</cap:expires>
+        <cap:status>Actual</cap:status>
+        <cap:msgType>Update</cap:msgType>
         <cap:category>Met</cap:category>
-        <cap:urgency>Unknown</cap:urgency>
-        <cap:severity>Unknown</cap:severity>
-        <cap:certainty>Unknown</cap:certainty>
-        <cap:areaDesc>Montgomery</cap:areaDesc>
-        <cap:polygon/>
+        <cap:urgency>Immediate</cap:urgency>
+        <cap:severity>Severe</cap:severity>
+        <cap:certainty>Likely</cap:certainty>
+        <cap:areaDesc>Kane, UT; Washington, UT</cap:areaDesc>
+        <cap:polygon>37.14,-113.08 37.21,-113.17 37.4,-113.06 37.42,-112.98 37.43,-112.85 37.37,-112.79 37.1599999,-112.78 37.1,-112.83 37.1,-112.93 37.14,-113.08</cap:polygon>
         <cap:geocode>
             <valueName>SAME</valueName>
-            <value>024031</value>
+            <value>049025</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>SAME</valueName>
+            <value>049053</value>
         </cap:geocode>
         <cap:geocode>
             <valueName>UGC</valueName>
-            <value>MDC031</value>
+            <value>UTC025</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>UGC</valueName>
+            <value>UTC053</value>
         </cap:geocode>
         <cap:parameter>
             <valueName>AWIPSidentifier</valueName>
-            <value>KEPWBC</value>
+            <value>FFWSLC</value>
         </cap:parameter>
         <cap:parameter>
             <valueName>WMOidentifier</valueName>
-            <value>NZUS91 KWBC 221807</value>
+            <value>WGUS55 KSLC 221836</value>
         </cap:parameter>
         <cap:parameter>
-            <valueName>BLOCKCHANNEL</valueName>
-            <value>CMAS</value>
+            <valueName>flashFloodDetection</valueName>
+            <value>RADAR INDICATED</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>flashFloodDamageThreat</valueName>
+            <value>CONSIDERABLE</value>
         </cap:parameter>
         <cap:parameter>
             <valueName>BLOCKCHANNEL</valueName>
@@ -57,6 +95,1233 @@
         <cap:parameter>
             <valueName>BLOCKCHANNEL</valueName>
             <value>NWEM</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>EAS-ORG</valueName>
+            <value>WXR</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>VTEC</valueName>
+            <value>/O.EXT.KSLC.FF.W.0064.000000T0000Z-240822T2045Z/</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>eventEndingTime</valueName>
+            <value>2024-08-22T20:45:00+00:00</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>WEAHandling</valueName>
+            <value>Imminent Threat</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>CMAMtext</valueName>
+            <value>NWS: FLASH FLOOD WARNING this area til 2:45 PM MDT. Avoid flooded areas.</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>CMAMlongtext</valueName>
+            <value>National Weather Service: A FLASH FLOOD WARNING is in effect for this area until 2:45 PM MDT. This is a dangerous and life-threatening situation. Do not attempt to travel unless you are fleeing an area subject to flooding or under an evacuation order.</value>
+        </cap:parameter>
+    </entry>
+    <entry>
+        <id>https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.258b4322ebd1e286563987ac21419ecd37f8ff58.001.1</id>
+        <link rel="alternate" href="https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.258b4322ebd1e286563987ac21419ecd37f8ff58.001.1.cap"/>
+        <updated>2024-08-22T11:35:00-07:00</updated>
+        <published>2024-08-22T11:35:00-07:00</published>
+        <author>
+            <name>NWS</name>
+        </author>
+        <title>Severe Thunderstorm Warning issued August 22 at 11:35AM MST until August 22 at 12:15PM MST by NWS Las Vegas NV</title>
+        <summary>SVRVEF
+
+The National Weather Service in Las Vegas has issued a
+
+* Severe Thunderstorm Warning for...
+North central Mohave County in northwestern Arizona...
+
+* Until 1215 PM MST.
+
+* At 1133 AM MST, a severe thunderstorm was located 23 miles north of
+Mt. Trumbull, or 25 miles southwest of Colorado City, moving
+northeast at 20 mph.
+
+HAZARD...60 mph wind gusts and quarter size hail.
+
+SOURCE...Radar indicated.
+
+IMPACT...Hail damage to vehicles is expected. Expect wind damage
+to roofs and trees.
+
+* Locations impacted include...
+Colorado City.
+
+This includes the following roads...
+State Route 389 in Mohave County between mile markers 0 and 11.
+Mount Trumbull Loop Road between mile markers 91 and 110.</summary>
+        <cap:event>Severe Thunderstorm Warning</cap:event>
+        <cap:sent>2024-08-22T11:35:00-07:00</cap:sent>
+        <cap:effective>2024-08-22T11:35:00-07:00</cap:effective>
+        <cap:onset>2024-08-22T11:35:00-07:00</cap:onset>
+        <cap:expires>2024-08-22T12:15:00-07:00</cap:expires>
+        <cap:status>Actual</cap:status>
+        <cap:msgType>Alert</cap:msgType>
+        <cap:category>Met</cap:category>
+        <cap:urgency>Immediate</cap:urgency>
+        <cap:severity>Severe</cap:severity>
+        <cap:certainty>Observed</cap:certainty>
+        <cap:areaDesc>Mohave, AZ</cap:areaDesc>
+        <cap:polygon>36.78,-112.8 36.59,-113.29 36.75,-113.41 37,-113 37,-112.96 36.78,-112.8</cap:polygon>
+        <cap:geocode>
+            <valueName>SAME</valueName>
+            <value>004015</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>UGC</valueName>
+            <value>AZC015</value>
+        </cap:geocode>
+        <cap:parameter>
+            <valueName>AWIPSidentifier</valueName>
+            <value>SVRVEF</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>WMOidentifier</valueName>
+            <value>WUUS55 KVEF 221835</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>eventMotionDescription</valueName>
+            <value>2024-08-22T18:33:00-00:00...storm...237DEG...19KT...36.72,-113.27</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>windThreat</valueName>
+            <value>RADAR INDICATED</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>maxWindGust</valueName>
+            <value>60 MPH</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>hailThreat</valueName>
+            <value>RADAR INDICATED</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>maxHailSize</valueName>
+            <value>1.00</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>BLOCKCHANNEL</valueName>
+            <value>EAS</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>BLOCKCHANNEL</valueName>
+            <value>NWEM</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>BLOCKCHANNEL</valueName>
+            <value>CMAS</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>EAS-ORG</valueName>
+            <value>WXR</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>VTEC</valueName>
+            <value>/O.NEW.KVEF.SV.W.0028.240822T1835Z-240822T1915Z/</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>eventEndingTime</valueName>
+            <value>2024-08-22T19:15:00+00:00</value>
+        </cap:parameter>
+    </entry>
+    <entry>
+        <id>https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.3d356bbb732c77c7bb4b66ac07d80fbdf84d8d0a.001.1</id>
+        <link rel="alternate" href="https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.3d356bbb732c77c7bb4b66ac07d80fbdf84d8d0a.001.1.cap"/>
+        <updated>2024-08-22T14:33:00-04:00</updated>
+        <published>2024-08-22T14:33:00-04:00</published>
+        <author>
+            <name>NWS</name>
+        </author>
+        <title>Special Weather Statement issued August 22 at 2:33PM EDT by NWS Tallahassee FL</title>
+        <summary>At 233 PM EDT, Doppler radar was tracking a strong thunderstorm 9
+miles southeast of St. Marks, moving west at 20 mph.
+
+HAZARD...Wind gusts up to 40 mph.
+
+SOURCE...Radar indicated.
+
+IMPACT...Gusty winds could knock down tree limbs and blow around
+unsecured objects.
+
+Locations impacted include...
+Woodville, St. Marks, Crawfordville, Wakulla, Newport, Shadeville,
+Hells Half Acre, Hyde Park, Wakulla Springs, Vereen, Plum Orchard,
+Shell Point, Port Leon, Wakulla Beach, Fanlew, Spring Creek, Natural
+Bridge, and Liveoak Island.</summary>
+        <cap:event>Special Weather Statement</cap:event>
+        <cap:sent>2024-08-22T14:33:00-04:00</cap:sent>
+        <cap:effective>2024-08-22T14:33:00-04:00</cap:effective>
+        <cap:onset>2024-08-22T14:33:00-04:00</cap:onset>
+        <cap:expires>2024-08-22T15:15:00-04:00</cap:expires>
+        <cap:status>Actual</cap:status>
+        <cap:msgType>Alert</cap:msgType>
+        <cap:category>Met</cap:category>
+        <cap:urgency>Expected</cap:urgency>
+        <cap:severity>Moderate</cap:severity>
+        <cap:certainty>Observed</cap:certainty>
+        <cap:areaDesc>Leon; Inland Jefferson; Inland Wakulla; Coastal Jefferson; Coastal Wakulla</cap:areaDesc>
+        <cap:polygon>30.02,-84.09 30.04,-84.38 30.35,-84.27 30.23,-83.94 30.02,-84.02 30.02,-84.09</cap:polygon>
+        <cap:geocode>
+            <valueName>SAME</valueName>
+            <value>012073</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>SAME</valueName>
+            <value>012065</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>SAME</valueName>
+            <value>012129</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>UGC</valueName>
+            <value>FLZ017</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>UGC</valueName>
+            <value>FLZ018</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>UGC</valueName>
+            <value>FLZ027</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>UGC</valueName>
+            <value>FLZ118</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>UGC</valueName>
+            <value>FLZ127</value>
+        </cap:geocode>
+        <cap:parameter>
+            <valueName>AWIPSidentifier</valueName>
+            <value>SPSTAE</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>WMOidentifier</valueName>
+            <value>WWUS82 KTAE 221833</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>NWSheadline</valueName>
+            <value>A STRONG THUNDERSTORM WILL IMPACT EASTERN WAKULLA...SOUTHWESTERN JEFFERSON AND SOUTH CENTRAL LEON COUNTIES THROUGH 315 PM EDT</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>eventMotionDescription</valueName>
+            <value>2024-08-22T18:33:00-00:00...storm...103DEG...17KT...30.11,-84.07</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>maxWindGust</valueName>
+            <value>40 MPH</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>maxHailSize</valueName>
+            <value>0.00</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>BLOCKCHANNEL</valueName>
+            <value>EAS</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>BLOCKCHANNEL</valueName>
+            <value>NWEM</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>BLOCKCHANNEL</valueName>
+            <value>CMAS</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>EAS-ORG</valueName>
+            <value>WXR</value>
+        </cap:parameter>
+    </entry>
+    <entry>
+        <id>https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.7db32c359877670d0f57718a05b2024d4cc0ae4a.002.1</id>
+        <link rel="alternate" href="https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.7db32c359877670d0f57718a05b2024d4cc0ae4a.002.1.cap"/>
+        <updated>2024-08-22T14:30:00-04:00</updated>
+        <published>2024-08-22T14:30:00-04:00</published>
+        <author>
+            <name>NWS</name>
+        </author>
+        <title>Beach Hazards Statement issued August 22 at 2:30PM EDT until August 22 at 8:00PM EDT by NWS Wilmington NC</title>
+        <summary>* WHAT...Strong north to south longshore current. There is also a
+Moderate Risk of rip currents.
+
+* WHERE...In North Carolina, Coastal Pender and Coastal New
+Hanover Counties. In South Carolina, Coastal Georgetown County.
+
+* WHEN...Until 8 PM EDT this evening.
+
+* IMPACTS...Longshore currents can sweep swimmers and surfers
+into rip currents, piers, jetties, and other hazardous areas.
+It may sweep swimmers off their feet, making it difficult to
+return to shore.</summary>
+        <cap:event>Beach Hazards Statement</cap:event>
+        <cap:sent>2024-08-22T14:30:00-04:00</cap:sent>
+        <cap:effective>2024-08-22T14:30:00-04:00</cap:effective>
+        <cap:onset>2024-08-22T14:30:00-04:00</cap:onset>
+        <cap:expires>2024-08-22T20:00:00-04:00</cap:expires>
+        <cap:status>Actual</cap:status>
+        <cap:msgType>Update</cap:msgType>
+        <cap:category>Met</cap:category>
+        <cap:urgency>Expected</cap:urgency>
+        <cap:severity>Moderate</cap:severity>
+        <cap:certainty>Likely</cap:certainty>
+        <cap:areaDesc>Coastal Pender; Coastal New Hanover; Coastal Georgetown</cap:areaDesc>
+        <cap:polygon/>
+        <cap:geocode>
+            <valueName>SAME</valueName>
+            <value>037141</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>SAME</valueName>
+            <value>037129</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>SAME</valueName>
+            <value>045043</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>UGC</valueName>
+            <value>NCZ106</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>UGC</valueName>
+            <value>NCZ108</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>UGC</valueName>
+            <value>SCZ056</value>
+        </cap:geocode>
+        <cap:parameter>
+            <valueName>AWIPSidentifier</valueName>
+            <value>CFWILM</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>WMOidentifier</valueName>
+            <value>WHUS42 KILM 221830</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>NWSheadline</valueName>
+            <value>BEACH HAZARDS STATEMENT REMAINS IN EFFECT UNTIL 8 PM EDT THIS EVENING</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>BLOCKCHANNEL</valueName>
+            <value>EAS</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>BLOCKCHANNEL</valueName>
+            <value>NWEM</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>BLOCKCHANNEL</valueName>
+            <value>CMAS</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>VTEC</valueName>
+            <value>/O.CON.KILM.BH.S.0029.000000T0000Z-240823T0000Z/</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>eventEndingTime</valueName>
+            <value>2024-08-23T00:00:00+00:00</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>expiredReferences</valueName>
+            <value>w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.e5f8d65737c44b2eaa59b41be84cace5d32d5724.002.1,2024-08-22T02:31:00-04:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.cdfe45977915a90980faf1b39b64a0e5e8fde8c0.001.2,2024-08-21T22:53:00-04:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.42c17b44eb5d4cb99a29b42c6cfc6759c4b27a68.003.1,2024-08-21T20:05:00-04:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.42c17b44eb5d4cb99a29b42c6cfc6759c4b27a68.002.2,2024-08-21T20:05:00-04:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.42c17b44eb5d4cb99a29b42c6cfc6759c4b27a68.001.2,2024-08-21T20:05:00-04:00</value>
+        </cap:parameter>
+    </entry>
+    <entry>
+        <id>https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.7db32c359877670d0f57718a05b2024d4cc0ae4a.003.1</id>
+        <link rel="alternate" href="https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.7db32c359877670d0f57718a05b2024d4cc0ae4a.003.1.cap"/>
+        <updated>2024-08-22T14:30:00-04:00</updated>
+        <published>2024-08-22T14:30:00-04:00</published>
+        <author>
+            <name>NWS</name>
+        </author>
+        <title>Beach Hazards Statement issued August 22 at 2:30PM EDT until August 22 at 8:00PM EDT by NWS Wilmington NC</title>
+        <summary>* WHAT...Strong north to south longshore current.
+
+* WHERE...Coastal Horry County.
+
+* WHEN...Until 8 PM EDT this evening.
+
+* IMPACTS...Longshore currents can sweep swimmers and surfers
+into rip currents, piers, jetties, and other hazardous areas.
+It may sweep swimmers off their feet, making it difficult to
+return to shore.</summary>
+        <cap:event>Beach Hazards Statement</cap:event>
+        <cap:sent>2024-08-22T14:30:00-04:00</cap:sent>
+        <cap:effective>2024-08-22T14:30:00-04:00</cap:effective>
+        <cap:onset>2024-08-22T14:30:00-04:00</cap:onset>
+        <cap:expires>2024-08-22T20:00:00-04:00</cap:expires>
+        <cap:status>Actual</cap:status>
+        <cap:msgType>Update</cap:msgType>
+        <cap:category>Met</cap:category>
+        <cap:urgency>Expected</cap:urgency>
+        <cap:severity>Moderate</cap:severity>
+        <cap:certainty>Likely</cap:certainty>
+        <cap:areaDesc>Coastal Horry</cap:areaDesc>
+        <cap:polygon/>
+        <cap:geocode>
+            <valueName>SAME</valueName>
+            <value>045051</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>UGC</valueName>
+            <value>SCZ054</value>
+        </cap:geocode>
+        <cap:parameter>
+            <valueName>AWIPSidentifier</valueName>
+            <value>CFWILM</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>WMOidentifier</valueName>
+            <value>WHUS42 KILM 221830</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>NWSheadline</valueName>
+            <value>BEACH HAZARDS STATEMENT REMAINS IN EFFECT UNTIL 8 PM EDT THIS EVENING</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>BLOCKCHANNEL</valueName>
+            <value>EAS</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>BLOCKCHANNEL</valueName>
+            <value>NWEM</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>BLOCKCHANNEL</valueName>
+            <value>CMAS</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>VTEC</valueName>
+            <value>/O.CON.KILM.BH.S.0029.000000T0000Z-240823T0000Z/</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>eventEndingTime</valueName>
+            <value>2024-08-23T00:00:00+00:00</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>expiredReferences</valueName>
+            <value>w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.e5f8d65737c44b2eaa59b41be84cace5d32d5724.003.1,2024-08-22T02:31:00-04:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.cdfe45977915a90980faf1b39b64a0e5e8fde8c0.002.2,2024-08-21T22:53:00-04:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.42c17b44eb5d4cb99a29b42c6cfc6759c4b27a68.004.1,2024-08-21T20:05:00-04:00</value>
+        </cap:parameter>
+    </entry>
+    <entry>
+        <id>https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.7db32c359877670d0f57718a05b2024d4cc0ae4a.001.1</id>
+        <link rel="alternate" href="https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.7db32c359877670d0f57718a05b2024d4cc0ae4a.001.1.cap"/>
+        <updated>2024-08-22T14:30:00-04:00</updated>
+        <published>2024-08-22T14:30:00-04:00</published>
+        <author>
+            <name>NWS</name>
+        </author>
+        <title>Coastal Flood Advisory issued August 22 at 2:30PM EDT until August 24 at 4:00AM EDT by NWS Wilmington NC</title>
+        <summary>* WHAT...Up to one foot of inundation above ground level in low-
+lying areas near shorelines and tidal waterways.
+
+* WHERE...The lower Cape Fear River including downtown
+Wilmington.
+
+* WHEN...Until 4 AM EDT Saturday, during late night high tides and
+afternoon high tide Friday.
+
+* IMPACTS...The lowest portions of Battleship Road and USS North
+Carolina Road observe minor coastal flooding of about one foot
+in depth. In downtown Wilmington, several blocks of Water
+Street observe shallow flooding from one half to one foot in
+depth. The low-lying areas along River Road and adjacent
+residential roads, south of River Road Park, will begin to
+flood. Route 133 at Little Mallory Creek may begin to flood.
+Check with local officials for any road closures or impacts.
+
+* ADDITIONAL DETAILS...Affected areas listed are based on
+average tide conditions. Additional locations may experience
+flooding during periods of heavy rainfall, high winds, or
+other factors.</summary>
+        <cap:event>Coastal Flood Advisory</cap:event>
+        <cap:sent>2024-08-22T14:30:00-04:00</cap:sent>
+        <cap:effective>2024-08-22T14:30:00-04:00</cap:effective>
+        <cap:onset>2024-08-22T14:30:00-04:00</cap:onset>
+        <cap:expires>2024-08-22T20:00:00-04:00</cap:expires>
+        <cap:status>Actual</cap:status>
+        <cap:msgType>Update</cap:msgType>
+        <cap:category>Met</cap:category>
+        <cap:urgency>Expected</cap:urgency>
+        <cap:severity>Minor</cap:severity>
+        <cap:certainty>Likely</cap:certainty>
+        <cap:areaDesc>Inland New Hanover</cap:areaDesc>
+        <cap:polygon/>
+        <cap:geocode>
+            <valueName>SAME</valueName>
+            <value>037129</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>UGC</valueName>
+            <value>NCZ107</value>
+        </cap:geocode>
+        <cap:parameter>
+            <valueName>AWIPSidentifier</valueName>
+            <value>CFWILM</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>WMOidentifier</valueName>
+            <value>WHUS42 KILM 221830</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>NWSheadline</valueName>
+            <value>COASTAL FLOOD ADVISORY NOW IN EFFECT UNTIL 4 AM EDT SATURDAY</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>BLOCKCHANNEL</valueName>
+            <value>EAS</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>BLOCKCHANNEL</valueName>
+            <value>NWEM</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>BLOCKCHANNEL</valueName>
+            <value>CMAS</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>VTEC</valueName>
+            <value>/O.EXT.KILM.CF.Y.0100.000000T0000Z-240824T0800Z/</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>eventEndingTime</valueName>
+            <value>2024-08-24T08:00:00+00:00</value>
+        </cap:parameter>
+    </entry>
+    <entry>
+        <id>https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.802aa8f86c0268b3d74f1ef2313452a06cf89b31.001.1</id>
+        <link rel="alternate" href="https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.802aa8f86c0268b3d74f1ef2313452a06cf89b31.001.1.cap"/>
+        <updated>2024-08-22T14:26:00-04:00</updated>
+        <published>2024-08-22T14:26:00-04:00</published>
+        <author>
+            <name>NWS</name>
+        </author>
+        <title>Special Weather Statement issued August 22 at 2:26PM EDT by NWS Melbourne FL</title>
+        <summary>At 225 PM EDT, Doppler radar was tracking a strong thunderstorm over
+Tequesta, moving northeast at 25 mph.
+
+HAZARD...Wind gusts up to 40 mph.
+
+SOURCE...Radar indicated.
+
+IMPACT...Gusty winds could knock down tree limbs and blow around
+unsecured objects.
+
+Locations impacted include...
+Jupiter, Tequesta, Jupiter Island, Hobe Sound, and Hobe Sound Beach.</summary>
+        <cap:event>Special Weather Statement</cap:event>
+        <cap:sent>2024-08-22T14:26:00-04:00</cap:sent>
+        <cap:effective>2024-08-22T14:26:00-04:00</cap:effective>
+        <cap:onset>2024-08-22T14:26:00-04:00</cap:onset>
+        <cap:expires>2024-08-22T15:00:00-04:00</cap:expires>
+        <cap:status>Actual</cap:status>
+        <cap:msgType>Alert</cap:msgType>
+        <cap:category>Met</cap:category>
+        <cap:urgency>Expected</cap:urgency>
+        <cap:severity>Moderate</cap:severity>
+        <cap:certainty>Observed</cap:certainty>
+        <cap:areaDesc>Coastal Martin; Inland Martin</cap:areaDesc>
+        <cap:polygon>26.97,-80.08 26.97,-80.14 26.96,-80.14 26.95,-80.15 26.96,-80.37 27.17,-80.12 27.03,-80.08 26.97,-80.08</cap:polygon>
+        <cap:geocode>
+            <valueName>SAME</valueName>
+            <value>012085</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>UGC</valueName>
+            <value>FLZ164</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>UGC</valueName>
+            <value>FLZ264</value>
+        </cap:geocode>
+        <cap:parameter>
+            <valueName>AWIPSidentifier</valueName>
+            <value>SPSMLB</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>WMOidentifier</valueName>
+            <value>WWUS82 KMLB 221826</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>NWSheadline</valueName>
+            <value>A STRONG THUNDERSTORM WILL IMPACT SOUTHEASTERN MARTIN COUNTY THROUGH 300 PM EDT</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>eventMotionDescription</valueName>
+            <value>2024-08-22T18:25:00-00:00...storm...204DEG...20KT...26.98,-80.13</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>maxWindGust</valueName>
+            <value>40 MPH</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>maxHailSize</valueName>
+            <value>0.00</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>BLOCKCHANNEL</valueName>
+            <value>EAS</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>BLOCKCHANNEL</valueName>
+            <value>NWEM</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>BLOCKCHANNEL</valueName>
+            <value>CMAS</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>EAS-ORG</valueName>
+            <value>WXR</value>
+        </cap:parameter>
+    </entry>
+    <entry>
+        <id>https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.b8b591cf153efe104764031fe9a8a5609e589073.001.1</id>
+        <link rel="alternate" href="https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.b8b591cf153efe104764031fe9a8a5609e589073.001.1.cap"/>
+        <updated>2024-08-22T14:14:00-04:00</updated>
+        <published>2024-08-22T14:14:00-04:00</published>
+        <author>
+            <name>NWS</name>
+        </author>
+        <title>Flood Advisory issued August 22 at 2:14PM EDT until August 22 at 3:15PM EDT by NWS Jacksonville FL</title>
+        <summary>* WHAT...Flooding caused by excessive rainfall is expected.
+
+* WHERE...A portion of northeast Florida, including the following
+counties, Duval and Nassau.
+
+* WHEN...Until 315 PM EDT.
+
+* IMPACTS...Minor flooding in low-lying and poor drainage areas.
+
+* ADDITIONAL DETAILS...
+- At 214 PM EDT, Doppler radar indicated heavy rain due to
+thunderstorms. Minor flooding is ongoing or expected to begin
+shortly in the advisory area. Between 1.5 and 2 inches of
+rain have fallen.
+- Additional rainfall amounts of 1 to 1.5 inches are expected
+over the area. This additional rain will result in minor
+flooding.
+- Some locations that will experience flooding include...
+Jacksonville, Jacksonville International Arpt and Nassau
+Village-Ratliff.
+- http://www.weather.gov/safety/flood</summary>
+        <cap:event>Flood Advisory</cap:event>
+        <cap:sent>2024-08-22T14:14:00-04:00</cap:sent>
+        <cap:effective>2024-08-22T14:14:00-04:00</cap:effective>
+        <cap:onset>2024-08-22T14:14:00-04:00</cap:onset>
+        <cap:expires>2024-08-22T15:15:00-04:00</cap:expires>
+        <cap:status>Actual</cap:status>
+        <cap:msgType>Alert</cap:msgType>
+        <cap:category>Met</cap:category>
+        <cap:urgency>Expected</cap:urgency>
+        <cap:severity>Minor</cap:severity>
+        <cap:certainty>Likely</cap:certainty>
+        <cap:areaDesc>Duval, FL; Nassau, FL</cap:areaDesc>
+        <cap:polygon>30.63,-81.77 30.64,-81.73 30.64,-81.68 30.62,-81.63 30.6,-81.62 30.57,-81.59 30.56,-81.59 30.54,-81.6 30.53,-81.61 30.5,-81.65 30.47,-81.67 30.46,-81.69 30.46,-81.72 30.47,-81.75 30.48,-81.77 30.53,-81.78 30.62,-81.78 30.63,-81.77</cap:polygon>
+        <cap:geocode>
+            <valueName>SAME</valueName>
+            <value>012031</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>SAME</valueName>
+            <value>012089</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>UGC</valueName>
+            <value>FLC031</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>UGC</valueName>
+            <value>FLC089</value>
+        </cap:geocode>
+        <cap:parameter>
+            <valueName>AWIPSidentifier</valueName>
+            <value>FLSJAX</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>WMOidentifier</valueName>
+            <value>WGUS82 KJAX 221814</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>NWSheadline</valueName>
+            <value>FLOOD ADVISORY IN EFFECT UNTIL 315 PM EDT THIS AFTERNOON</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>BLOCKCHANNEL</valueName>
+            <value>EAS</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>BLOCKCHANNEL</valueName>
+            <value>NWEM</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>BLOCKCHANNEL</valueName>
+            <value>CMAS</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>VTEC</valueName>
+            <value>/O.NEW.KJAX.FA.Y.0229.240822T1814Z-240822T1915Z/</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>eventEndingTime</valueName>
+            <value>2024-08-22T19:15:00+00:00</value>
+        </cap:parameter>
+    </entry>
+    <entry>
+        <id>https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.7fb5b30a8a62ef5d36059cf28fc8890c5c09328b.001.1</id>
+        <link rel="alternate" href="https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.7fb5b30a8a62ef5d36059cf28fc8890c5c09328b.001.1.cap"/>
+        <updated>2024-08-22T13:14:00-05:00</updated>
+        <published>2024-08-22T13:14:00-05:00</published>
+        <author>
+            <name>NWS</name>
+        </author>
+        <title>Special Weather Statement issued August 22 at 1:14PM CDT by NWS Grand Forks ND</title>
+        <summary>At 114 PM CDT, Doppler radar was tracking a strong thunderstorm near
+Harold, or 26 miles southeast of Grand Forks, moving northeast at 30
+mph.
+
+HAZARD...Wind gusts up to 50 mph and nickel size hail.
+
+SOURCE...Radar indicated.
+
+IMPACT...Gusty winds could knock down tree limbs and blow around
+unsecured objects. Minor hail damage to vegetation is
+possible.
+
+Locations impacted include...
+Crookston, Maple Bay, Gentilly, Huot, Harold, Greenview, and Melvin.</summary>
+        <cap:event>Special Weather Statement</cap:event>
+        <cap:sent>2024-08-22T13:14:00-05:00</cap:sent>
+        <cap:effective>2024-08-22T13:14:00-05:00</cap:effective>
+        <cap:onset>2024-08-22T13:14:00-05:00</cap:onset>
+        <cap:expires>2024-08-22T13:45:00-05:00</cap:expires>
+        <cap:status>Actual</cap:status>
+        <cap:msgType>Alert</cap:msgType>
+        <cap:category>Met</cap:category>
+        <cap:urgency>Expected</cap:urgency>
+        <cap:severity>Moderate</cap:severity>
+        <cap:certainty>Observed</cap:certainty>
+        <cap:areaDesc>West Polk; Red Lake; East Polk</cap:areaDesc>
+        <cap:polygon>47.61,-96.64 47.68,-96.74 47.94,-96.39 47.63,-96.13 47.61,-96.64</cap:polygon>
+        <cap:geocode>
+            <valueName>SAME</valueName>
+            <value>027119</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>SAME</valueName>
+            <value>027125</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>UGC</valueName>
+            <value>MNZ001</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>UGC</valueName>
+            <value>MNZ014</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>UGC</valueName>
+            <value>MNZ015</value>
+        </cap:geocode>
+        <cap:parameter>
+            <valueName>AWIPSidentifier</valueName>
+            <value>SPSFGF</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>WMOidentifier</valueName>
+            <value>WWUS83 KFGF 221814</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>NWSheadline</valueName>
+            <value>A STRONG THUNDERSTORM WILL IMPACT SOUTHWESTERN RED LAKE AND SOUTH CENTRAL POLK COUNTIES THROUGH 145 PM CDT</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>eventMotionDescription</valueName>
+            <value>2024-08-22T18:14:00-00:00...storm...244DEG...25KT...47.69,-96.58</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>maxWindGust</valueName>
+            <value>50 MPH</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>maxHailSize</valueName>
+            <value>0.88</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>BLOCKCHANNEL</valueName>
+            <value>EAS</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>BLOCKCHANNEL</valueName>
+            <value>NWEM</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>BLOCKCHANNEL</valueName>
+            <value>CMAS</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>EAS-ORG</valueName>
+            <value>WXR</value>
+        </cap:parameter>
+    </entry>
+    <entry>
+        <id>https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.d678329a0799391b1f2b4172e1d8469d00fb7299.001.1</id>
+        <link rel="alternate" href="https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.d678329a0799391b1f2b4172e1d8469d00fb7299.001.1.cap"/>
+        <updated>2024-08-22T14:11:00-04:00</updated>
+        <published>2024-08-22T14:11:00-04:00</published>
+        <author>
+            <name>NWS</name>
+        </author>
+        <title>Flood Advisory issued August 22 at 2:11PM EDT until August 22 at 4:15PM EDT by NWS Melbourne FL</title>
+        <summary>* WHAT...Flooding caused by excessive rainfall is expected.
+
+* WHERE...A portion of east central Florida, including the following
+county, Brevard.
+
+* WHEN...Until 415 PM EDT.
+
+* IMPACTS...Minor flooding in low-lying and poor drainage areas.
+
+* ADDITIONAL DETAILS...
+- At 211 PM EDT, Doppler radar indicated heavy rain due to
+thunderstorms. Minor flooding is ongoing or expected to begin
+shortly in the advisory area. Between 2 and 3.5 inches of
+rain have fallen.
+- Additional rainfall amounts up to 1 inch are expected over
+the area. This additional rain will result in minor flooding.
+- Some locations that will experience flooding include...
+Palm Bay, Melbourne, Satellite Beach, Camp Holly Fish Camp,
+Patrick Air Force Base, Merritt Island, West Melbourne,
+Indian Harbour Beach, Suntree, South Patrick Shores, Palm
+Shores, Melbourne Village, Eau Gallie, Melbourne Airport and
+June Park.
+- http://www.weather.gov/safety/flood</summary>
+        <cap:event>Flood Advisory</cap:event>
+        <cap:sent>2024-08-22T14:11:00-04:00</cap:sent>
+        <cap:effective>2024-08-22T14:11:00-04:00</cap:effective>
+        <cap:onset>2024-08-22T14:11:00-04:00</cap:onset>
+        <cap:expires>2024-08-22T16:15:00-04:00</cap:expires>
+        <cap:status>Actual</cap:status>
+        <cap:msgType>Alert</cap:msgType>
+        <cap:category>Met</cap:category>
+        <cap:urgency>Expected</cap:urgency>
+        <cap:severity>Minor</cap:severity>
+        <cap:certainty>Likely</cap:certainty>
+        <cap:areaDesc>Brevard, FL</cap:areaDesc>
+        <cap:polygon>28.21,-80.83 28.25,-80.59 28.13,-80.5699999 28,-80.77 28.11,-80.79 28.21,-80.83</cap:polygon>
+        <cap:geocode>
+            <valueName>SAME</valueName>
+            <value>012009</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>UGC</valueName>
+            <value>FLC009</value>
+        </cap:geocode>
+        <cap:parameter>
+            <valueName>AWIPSidentifier</valueName>
+            <value>FLSMLB</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>WMOidentifier</valueName>
+            <value>WGUS82 KMLB 221811</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>NWSheadline</valueName>
+            <value>FLOOD ADVISORY IN EFFECT UNTIL 415 PM EDT THIS AFTERNOON</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>BLOCKCHANNEL</valueName>
+            <value>EAS</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>BLOCKCHANNEL</valueName>
+            <value>NWEM</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>BLOCKCHANNEL</valueName>
+            <value>CMAS</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>VTEC</valueName>
+            <value>/O.NEW.KMLB.FA.Y.0070.240822T1811Z-240822T2015Z/</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>eventEndingTime</valueName>
+            <value>2024-08-22T20:15:00+00:00</value>
+        </cap:parameter>
+    </entry>
+    <entry>
+        <id>https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.3a280481908af201841d6ec3dff34e0db96f4a04.001.1</id>
+        <link rel="alternate" href="https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.3a280481908af201841d6ec3dff34e0db96f4a04.001.1.cap"/>
+        <updated>2024-08-22T14:11:00-04:00</updated>
+        <published>2024-08-22T14:11:00-04:00</published>
+        <author>
+            <name>NWS</name>
+        </author>
+        <title>Special Weather Statement issued August 22 at 2:11PM EDT by NWS Miami FL</title>
+        <summary>At 211 PM EDT, National Weather Service meteorologists were tracking
+a strong thunderstorm near North County Airport, or 7 miles northwest
+of Palm Beach Gardens, moving northeast at 10 mph.
+
+HAZARD...Wind gusts of 45 to 50 mph.
+
+SOURCE...Radar indicated.
+
+IMPACT...Gusty winds could knock down tree limbs and blow around
+unsecured objects.
+
+Locations impacted include...
+West Palm Beach, Jupiter, Palm Beach Gardens, Riviera Beach,
+Tequesta, Juno Beach, Royal Palm Beach, North Palm Beach, Lake Park,
+Golden Lakes, North County Airport, Loxahatchee Groves, Schall
+Circle, Juno Ridge, The Acreage, Port Of Palm Beach, Lake Belvedere
+Estates, Mangonia Park, Lakeside Green, and Philo Farms.</summary>
+        <cap:event>Special Weather Statement</cap:event>
+        <cap:sent>2024-08-22T14:11:00-04:00</cap:sent>
+        <cap:effective>2024-08-22T14:11:00-04:00</cap:effective>
+        <cap:onset>2024-08-22T14:11:00-04:00</cap:onset>
+        <cap:expires>2024-08-22T14:45:00-04:00</cap:expires>
+        <cap:status>Actual</cap:status>
+        <cap:msgType>Alert</cap:msgType>
+        <cap:category>Met</cap:category>
+        <cap:urgency>Expected</cap:urgency>
+        <cap:severity>Moderate</cap:severity>
+        <cap:certainty>Observed</cap:certainty>
+        <cap:areaDesc>Inland Palm Beach County; Metro Palm Beach County; Coastal Palm Beach County</cap:areaDesc>
+        <cap:polygon>26.78,-80.05 26.66,-80.17 26.76,-80.41 26.96,-80.4 26.96,-80.11 26.95,-80.12 26.94,-80.12 26.95,-80.11 26.96,-80.08 26.95,-80.09 26.82,-80.04 26.81,-80.04 26.84,-80.05 26.84,-80.06 26.79,-80.05 26.79,-80.04 26.8,-80.03 26.78,-80.03 26.78,-80.05</cap:polygon>
+        <cap:geocode>
+            <valueName>SAME</valueName>
+            <value>012099</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>UGC</valueName>
+            <value>FLZ067</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>UGC</valueName>
+            <value>FLZ068</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>UGC</valueName>
+            <value>FLZ168</value>
+        </cap:geocode>
+        <cap:parameter>
+            <valueName>AWIPSidentifier</valueName>
+            <value>SPSMFL</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>WMOidentifier</valueName>
+            <value>WWUS82 KMFL 221811</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>NWSheadline</valueName>
+            <value>A strong thunderstorm will impact portions of northeastern Palm Beach County through 245 PM EDT</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>eventMotionDescription</valueName>
+            <value>2024-08-22T18:11:00-00:00...storm...227DEG...9KT...26.91,-80.26</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>maxWindGust</valueName>
+            <value>50 MPH</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>maxHailSize</valueName>
+            <value>0.00</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>BLOCKCHANNEL</valueName>
+            <value>EAS</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>BLOCKCHANNEL</valueName>
+            <value>NWEM</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>BLOCKCHANNEL</valueName>
+            <value>CMAS</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>EAS-ORG</valueName>
+            <value>WXR</value>
+        </cap:parameter>
+    </entry>
+    <entry>
+        <id>https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.02b02274a2aa9e07744e947f3ada162e1bdc28e4.001.1</id>
+        <link rel="alternate" href="https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.02b02274a2aa9e07744e947f3ada162e1bdc28e4.001.1.cap"/>
+        <updated>2024-08-22T12:11:00-06:00</updated>
+        <published>2024-08-22T12:11:00-06:00</published>
+        <author>
+            <name>NWS</name>
+        </author>
+        <title>Air Quality Alert issued August 22 at 12:11PM MDT by NWS Rapid City SD</title>
+        <summary>The following message is transmitted in collaboration with the
+Wyoming Department of Environmental Quality, Air Quality Division,
+and the Wyoming Department of Health.
+
+* WHAT...Air Quality Alert for Wildfire Smoke.
+
+* WHERE...Northeast Wyoming.
+
+* WHEN...Noon Thursday through 1 PM MDT Friday.
+
+* IMPACTS...Poor air quality due to wildfire smoke.</summary>
+        <cap:event>Air Quality Alert</cap:event>
+        <cap:sent>2024-08-22T12:11:00-06:00</cap:sent>
+        <cap:effective>2024-08-22T12:11:00-06:00</cap:effective>
+        <cap:onset>2024-08-22T12:11:00-06:00</cap:onset>
+        <cap:expires>2024-08-23T12:15:00-06:00</cap:expires>
+        <cap:status>Actual</cap:status>
+        <cap:msgType>Alert</cap:msgType>
+        <cap:category>Met</cap:category>
+        <cap:urgency>Unknown</cap:urgency>
+        <cap:severity>Unknown</cap:severity>
+        <cap:certainty>Unknown</cap:certainty>
+        <cap:areaDesc>Northern Campbell</cap:areaDesc>
+        <cap:polygon/>
+        <cap:geocode>
+            <valueName>SAME</valueName>
+            <value>056005</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>UGC</valueName>
+            <value>WYZ054</value>
+        </cap:geocode>
+        <cap:parameter>
+            <valueName>AWIPSidentifier</valueName>
+            <value>AQAUNR</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>WMOidentifier</valueName>
+            <value>AEUS73 KUNR 221811</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>NWSheadline</valueName>
+            <value>THE WYOMING AIR QUALITY DIVISION HAS ISSUED AN AIR QUALITY ALERT FOR WILDFIRE SMOKE IN EFFECT UNTIL 1 PM MDT FRIDAY</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>BLOCKCHANNEL</valueName>
+            <value>EAS</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>BLOCKCHANNEL</valueName>
+            <value>NWEM</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>BLOCKCHANNEL</valueName>
+            <value>CMAS</value>
+        </cap:parameter>
+    </entry>
+    <entry>
+        <id>https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.0c658a2d214c44fc51e0b926206d82d57bf7ac79.001.1</id>
+        <link rel="alternate" href="https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.0c658a2d214c44fc51e0b926206d82d57bf7ac79.001.1.cap"/>
+        <updated>2024-08-22T14:08:00-04:00</updated>
+        <published>2024-08-22T14:08:00-04:00</published>
+        <author>
+            <name>NWS</name>
+        </author>
+        <title>Rip Current Statement issued August 22 at 2:08PM EDT until August 24 at 2:00AM EDT by NWS Jacksonville FL</title>
+        <summary>* WHAT...Dangerous rip currents.
+
+* WHERE...Southeast Georgia and Northeast Florida Beaches.
+
+* WHEN...Through late Friday night.
+
+* IMPACTS...Rip currents can sweep even the best swimmers away
+from shore into deeper water.</summary>
+        <cap:event>Rip Current Statement</cap:event>
+        <cap:sent>2024-08-22T14:08:00-04:00</cap:sent>
+        <cap:effective>2024-08-22T14:08:00-04:00</cap:effective>
+        <cap:onset>2024-08-22T14:08:00-04:00</cap:onset>
+        <cap:expires>2024-08-23T04:30:00-04:00</cap:expires>
+        <cap:status>Actual</cap:status>
+        <cap:msgType>Update</cap:msgType>
+        <cap:category>Met</cap:category>
+        <cap:urgency>Expected</cap:urgency>
+        <cap:severity>Moderate</cap:severity>
+        <cap:certainty>Likely</cap:certainty>
+        <cap:areaDesc>Coastal Nassau; Coastal Duval; Coastal St. Johns; Coastal Flagler; Coastal Glynn; Coastal Camden</cap:areaDesc>
+        <cap:polygon/>
+        <cap:geocode>
+            <valueName>SAME</valueName>
+            <value>012089</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>SAME</valueName>
+            <value>012031</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>SAME</valueName>
+            <value>012109</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>SAME</valueName>
+            <value>012035</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>SAME</valueName>
+            <value>013127</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>SAME</valueName>
+            <value>013039</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>UGC</valueName>
+            <value>FLZ124</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>UGC</valueName>
+            <value>FLZ125</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>UGC</valueName>
+            <value>FLZ133</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>UGC</valueName>
+            <value>FLZ138</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>UGC</valueName>
+            <value>GAZ154</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>UGC</valueName>
+            <value>GAZ166</value>
+        </cap:geocode>
+        <cap:parameter>
+            <valueName>AWIPSidentifier</valueName>
+            <value>CFWJAX</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>WMOidentifier</valueName>
+            <value>WHUS42 KJAX 221808</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>NWSheadline</valueName>
+            <value>HIGH RIP CURRENT RISK REMAINS IN EFFECT THROUGH LATE FRIDAY NIGHT</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>BLOCKCHANNEL</valueName>
+            <value>EAS</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>BLOCKCHANNEL</valueName>
+            <value>NWEM</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>BLOCKCHANNEL</valueName>
+            <value>CMAS</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>VTEC</valueName>
+            <value>/O.CON.KJAX.RP.S.0020.000000T0000Z-240824T0600Z/</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>eventEndingTime</valueName>
+            <value>2024-08-24T06:00:00+00:00</value>
+        </cap:parameter>
+    </entry>
+    <entry>
+        <id>https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.9c3327adb2d52d01d4057f7dbe56bed708245ea4.001.1</id>
+        <link rel="alternate" href="https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.9c3327adb2d52d01d4057f7dbe56bed708245ea4.001.1.cap"/>
+        <updated>2024-08-22T14:08:00-04:00</updated>
+        <published>2024-08-22T14:08:00-04:00</published>
+        <author>
+            <name>NWS</name>
+        </author>
+        <title>Special Weather Statement issued August 22 at 2:08PM EDT by NWS Miami FL</title>
+        <summary>At 208 PM EDT, National Weather Service meteorologists were tracking
+a strong thunderstorm near Loop Road Ee Center, or 21 miles east of
+Chokoloskee. This storm was nearly stationary.
+
+HAZARD...Wind gusts of 45 to 50 mph.
+
+SOURCE...Radar indicated.
+
+IMPACT...Gusty winds could knock down tree limbs and blow around
+unsecured objects.
+
+Locations impacted include...
+Loop Road Ee Center and Big Cypress National Preserve.</summary>
+        <cap:event>Special Weather Statement</cap:event>
+        <cap:sent>2024-08-22T14:08:00-04:00</cap:sent>
+        <cap:effective>2024-08-22T14:08:00-04:00</cap:effective>
+        <cap:onset>2024-08-22T14:08:00-04:00</cap:onset>
+        <cap:expires>2024-08-22T14:45:00-04:00</cap:expires>
+        <cap:status>Actual</cap:status>
+        <cap:msgType>Alert</cap:msgType>
+        <cap:category>Met</cap:category>
+        <cap:urgency>Expected</cap:urgency>
+        <cap:severity>Moderate</cap:severity>
+        <cap:certainty>Observed</cap:certainty>
+        <cap:areaDesc>Inland Collier County; Mainland Monroe</cap:areaDesc>
+        <cap:polygon>25.92,-80.89 25.82,-80.91 25.73,-80.95 25.72,-81.04 25.76,-81.13 25.87,-81.11 25.97,-81.06 25.97,-80.9599999 25.92,-80.89</cap:polygon>
+        <cap:geocode>
+            <valueName>SAME</valueName>
+            <value>012021</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>SAME</valueName>
+            <value>012087</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>UGC</valueName>
+            <value>FLZ070</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>UGC</valueName>
+            <value>FLZ075</value>
+        </cap:geocode>
+        <cap:parameter>
+            <valueName>AWIPSidentifier</valueName>
+            <value>SPSMFL</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>WMOidentifier</valueName>
+            <value>WWUS82 KMFL 221808</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>NWSheadline</valueName>
+            <value>A strong thunderstorm will impact portions of southeastern Collier and north central Mainland Monroe Counties through 245 PM EDT</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>eventMotionDescription</valueName>
+            <value>2024-08-22T18:08:00-00:00...storm...096DEG...2KT...25.83,-81.01</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>maxWindGust</valueName>
+            <value>50 MPH</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>maxHailSize</valueName>
+            <value>0.00</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>BLOCKCHANNEL</valueName>
+            <value>EAS</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>BLOCKCHANNEL</valueName>
+            <value>NWEM</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>BLOCKCHANNEL</valueName>
+            <value>CMAS</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>EAS-ORG</valueName>
+            <value>WXR</value>
         </cap:parameter>
     </entry>
     <entry>
@@ -734,95 +1999,6 @@ working or participating in outdoor activities.</summary>
         </cap:parameter>
     </entry>
     <entry>
-        <id>https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.a3793c3cdb9a304a9dfe8ac72e7b4ab24bc00bbb.001.1</id>
-        <link rel="alternate" href="https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.a3793c3cdb9a304a9dfe8ac72e7b4ab24bc00bbb.001.1.cap"/>
-        <updated>2024-08-22T13:59:00-04:00</updated>
-        <published>2024-08-22T13:59:00-04:00</published>
-        <author>
-            <name>NWS</name>
-        </author>
-        <title>Special Weather Statement issued August 22 at 1:59PM EDT by NWS Miami FL</title>
-        <summary>At 158 PM EDT, National Weather Service meteorologists were tracking
-a strong thunderstorm 9 miles west of Miccosukee Resort, or 17 miles
-northwest of The Redland, moving west at 5 mph.
-
-HAZARD...Wind gusts of 45 to 50 mph.
-
-SOURCE...Radar indicated.
-
-IMPACT...Gusty winds could knock down tree limbs and blow around
-unsecured objects.
-
-Locations impacted include...
-Doral, Tamiami, Intersection Krome And Kendall Drive, The Hammocks,
-Miccosukee Resort, Kendale Lakes, and Kendall West.</summary>
-        <cap:event>Special Weather Statement</cap:event>
-        <cap:sent>2024-08-22T13:59:00-04:00</cap:sent>
-        <cap:effective>2024-08-22T13:59:00-04:00</cap:effective>
-        <cap:onset>2024-08-22T13:59:00-04:00</cap:onset>
-        <cap:expires>2024-08-22T14:30:00-04:00</cap:expires>
-        <cap:status>Actual</cap:status>
-        <cap:msgType>Alert</cap:msgType>
-        <cap:category>Met</cap:category>
-        <cap:urgency>Expected</cap:urgency>
-        <cap:severity>Moderate</cap:severity>
-        <cap:certainty>Observed</cap:certainty>
-        <cap:areaDesc>Inland Miami-Dade County; Metropolitan Miami Dade</cap:areaDesc>
-        <cap:polygon>25.82,-80.37 25.64,-80.44 25.71,-80.74 25.89,-80.68 25.82,-80.37</cap:polygon>
-        <cap:geocode>
-            <valueName>SAME</valueName>
-            <value>012086</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>UGC</valueName>
-            <value>FLZ073</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>UGC</valueName>
-            <value>FLZ074</value>
-        </cap:geocode>
-        <cap:parameter>
-            <valueName>AWIPSidentifier</valueName>
-            <value>SPSMFL</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>WMOidentifier</valueName>
-            <value>WWUS82 KMFL 221759</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>NWSheadline</valueName>
-            <value>A strong thunderstorm will impact portions of northern Miami-Dade County through 230 PM EDT</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>eventMotionDescription</valueName>
-            <value>2024-08-22T17:58:00-00:00...storm...103DEG...5KT...25.76,-80.64</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>maxWindGust</valueName>
-            <value>50 MPH</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>maxHailSize</valueName>
-            <value>0.00</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>BLOCKCHANNEL</valueName>
-            <value>EAS</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>BLOCKCHANNEL</valueName>
-            <value>NWEM</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>BLOCKCHANNEL</valueName>
-            <value>CMAS</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>EAS-ORG</valueName>
-            <value>WXR</value>
-        </cap:parameter>
-    </entry>
-    <entry>
         <id>https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.55250e8177c791dbea3a2d160016c79f089535ee.001.1</id>
         <link rel="alternate" href="https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.55250e8177c791dbea3a2d160016c79f089535ee.001.1.cap"/>
         <updated>2024-08-22T13:59:00-04:00</updated>
@@ -1093,91 +2269,6 @@ http://www.wyvisnet.com/</summary>
         </cap:parameter>
     </entry>
     <entry>
-        <id>https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.79696ff35903c4612c3f1cbb03c31f041528e2e3.001.1</id>
-        <link rel="alternate" href="https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.79696ff35903c4612c3f1cbb03c31f041528e2e3.001.1.cap"/>
-        <updated>2024-08-22T12:47:00-05:00</updated>
-        <published>2024-08-22T12:47:00-05:00</published>
-        <author>
-            <name>NWS</name>
-        </author>
-        <title>Special Weather Statement issued August 22 at 12:47PM CDT by NWS Grand Forks ND</title>
-        <summary>At 1246 PM CDT, Doppler radar was tracking a strong thunderstorm near
-Greenview, or 25 miles southeast of Grand Forks, moving east at 30
-mph.
-
-HAZARD...Wind gusts up to 50 mph and nickel size hail.
-
-SOURCE...Radar indicated.
-
-IMPACT...Gusty winds could knock down tree limbs and blow around
-unsecured objects. Minor hail damage to vegetation is
-possible.
-
-Locations impacted include...
-Climax, Gentilly, Greenview, Harold, and Melvin.</summary>
-        <cap:event>Special Weather Statement</cap:event>
-        <cap:sent>2024-08-22T12:47:00-05:00</cap:sent>
-        <cap:effective>2024-08-22T12:47:00-05:00</cap:effective>
-        <cap:onset>2024-08-22T12:47:00-05:00</cap:onset>
-        <cap:expires>2024-08-22T13:15:00-05:00</cap:expires>
-        <cap:status>Actual</cap:status>
-        <cap:msgType>Alert</cap:msgType>
-        <cap:category>Met</cap:category>
-        <cap:urgency>Expected</cap:urgency>
-        <cap:severity>Moderate</cap:severity>
-        <cap:certainty>Observed</cap:certainty>
-        <cap:areaDesc>West Polk</cap:areaDesc>
-        <cap:polygon>47.56,-96.81 47.65,-96.83 47.82,-96.37 47.67,-96.35 47.54,-96.35 47.56,-96.81</cap:polygon>
-        <cap:geocode>
-            <valueName>SAME</valueName>
-            <value>027119</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>UGC</valueName>
-            <value>MNZ001</value>
-        </cap:geocode>
-        <cap:parameter>
-            <valueName>AWIPSidentifier</valueName>
-            <value>SPSFGF</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>WMOidentifier</valueName>
-            <value>WWUS83 KFGF 221747</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>NWSheadline</valueName>
-            <value>A STRONG THUNDERSTORM WILL IMPACT SOUTHWESTERN POLK COUNTY THROUGH 115 PM CDT</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>eventMotionDescription</valueName>
-            <value>2024-08-22T17:46:00-00:00...storm...258DEG...27KT...47.63,-96.67</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>maxWindGust</valueName>
-            <value>50 MPH</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>maxHailSize</valueName>
-            <value>0.88</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>BLOCKCHANNEL</valueName>
-            <value>EAS</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>BLOCKCHANNEL</valueName>
-            <value>NWEM</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>BLOCKCHANNEL</valueName>
-            <value>CMAS</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>EAS-ORG</valueName>
-            <value>WXR</value>
-        </cap:parameter>
-    </entry>
-    <entry>
         <id>https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.1dbf870da38ff09573dc5139e7a1096906fe1b69.001.1</id>
         <link rel="alternate" href="https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.1dbf870da38ff09573dc5139e7a1096906fe1b69.001.1.cap"/>
         <updated>2024-08-22T11:45:00-06:00</updated>
@@ -1300,128 +2391,6 @@ Saturday afternoon.</summary>
         <cap:parameter>
             <valueName>eventEndingTime</valueName>
             <value>2024-08-25T04:00:00+00:00</value>
-        </cap:parameter>
-    </entry>
-    <entry>
-        <id>https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.07d4d56028278f1dc8e096d26df39630596094c7.001.1</id>
-        <link rel="alternate" href="https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.07d4d56028278f1dc8e096d26df39630596094c7.001.1.cap"/>
-        <updated>2024-08-22T13:40:00-04:00</updated>
-        <published>2024-08-22T13:40:00-04:00</published>
-        <author>
-            <name>NWS</name>
-        </author>
-        <title>Special Weather Statement issued August 22 at 1:40PM EDT by NWS Jacksonville FL</title>
-        <summary>At 140 PM EDT, Doppler radar was tracking a cluster of strong
-thunderstorms near Palatka that are nearly stationary.
-
-HAZARD...Wind gusts around 40 mph and minor flooding due to heavy
-rainfall.
-
-SOURCE...Radar indicated.
-
-IMPACT...Gusty winds could knock down tree limbs and blow around
-unsecured objects. Minor flooding due to heavy rainfall is
-possible.
-
-Locations impacted include...
-Palatka, Crescent City, Interlachen, Pomona Park, East Palatka, Lake
-Delancy, Fruitland, Florahome, Bostwick, and Melrose Landing.</summary>
-        <cap:event>Special Weather Statement</cap:event>
-        <cap:sent>2024-08-22T13:40:00-04:00</cap:sent>
-        <cap:effective>2024-08-22T13:40:00-04:00</cap:effective>
-        <cap:onset>2024-08-22T13:40:00-04:00</cap:onset>
-        <cap:expires>2024-08-22T14:15:00-04:00</cap:expires>
-        <cap:status>Actual</cap:status>
-        <cap:msgType>Alert</cap:msgType>
-        <cap:category>Met</cap:category>
-        <cap:urgency>Expected</cap:urgency>
-        <cap:severity>Moderate</cap:severity>
-        <cap:certainty>Observed</cap:certainty>
-        <cap:areaDesc>Inland St. Johns; Inland Flagler; Eastern Putnam; Eastern Marion; Western Clay; Western Putnam</cap:areaDesc>
-        <cap:polygon>29.39,-81.51 29.38,-81.76 29.63,-82.04 29.89,-81.7099999 29.85,-81.66 29.84,-81.66 29.84,-81.65 29.72,-81.52 29.39,-81.51</cap:polygon>
-        <cap:geocode>
-            <valueName>SAME</valueName>
-            <value>012109</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>SAME</valueName>
-            <value>012035</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>SAME</valueName>
-            <value>012107</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>SAME</valueName>
-            <value>012083</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>SAME</valueName>
-            <value>012019</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>UGC</valueName>
-            <value>FLZ033</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>UGC</valueName>
-            <value>FLZ038</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>UGC</valueName>
-            <value>FLZ137</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>UGC</valueName>
-            <value>FLZ140</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>UGC</valueName>
-            <value>FLZ232</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>UGC</valueName>
-            <value>FLZ237</value>
-        </cap:geocode>
-        <cap:parameter>
-            <valueName>AWIPSidentifier</valueName>
-            <value>SPSJAX</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>WMOidentifier</valueName>
-            <value>WWUS82 KJAX 221740</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>NWSheadline</valueName>
-            <value>STRONG THUNDERSTORMS WILL IMPACT WEST CENTRAL FLAGLER... NORTHEASTERN MARION...PUTNAM AND EAST CENTRAL CLAY COUNTIES THROUGH 215 PM EDT</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>eventMotionDescription</valueName>
-            <value>2024-08-22T17:40:00-00:00...storm...219DEG...7KT...29.61,-81.68</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>maxWindGust</valueName>
-            <value>40 MPH</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>maxHailSize</valueName>
-            <value>0.00</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>BLOCKCHANNEL</valueName>
-            <value>EAS</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>BLOCKCHANNEL</valueName>
-            <value>NWEM</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>BLOCKCHANNEL</valueName>
-            <value>CMAS</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>EAS-ORG</valueName>
-            <value>WXR</value>
         </cap:parameter>
     </entry>
     <entry>
@@ -1670,188 +2639,6 @@ new fire starts or existing fires may spread rapidly.</summary>
         <cap:parameter>
             <valueName>eventEndingTime</valueName>
             <value>2024-08-25T06:00:00+00:00</value>
-        </cap:parameter>
-    </entry>
-    <entry>
-        <id>https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.995b2748c16a43cfa3e4298701ab2077240b0ac0.001.1</id>
-        <link rel="alternate" href="https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.995b2748c16a43cfa3e4298701ab2077240b0ac0.001.1.cap"/>
-        <updated>2024-08-22T13:19:00-04:00</updated>
-        <published>2024-08-22T13:19:00-04:00</published>
-        <author>
-            <name>NWS</name>
-        </author>
-        <title>Flood Advisory issued August 22 at 1:19PM EDT until August 22 at 2:15PM EDT by NWS Miami FL</title>
-        <summary>* WHAT...Flooding caused by excessive rainfall is expected.
-
-* WHERE...A portion of southeast Florida, including the following
-county, Miami-Dade.
-
-* WHEN...Until 215 PM EDT.
-
-* IMPACTS...Minor flooding in low-lying and poor drainage areas.
-
-* ADDITIONAL DETAILS...
-- At 119 PM EDT, Doppler radar indicated heavy rain due to
-thunderstorms. Minor flooding is ongoing or expected to begin
-shortly in the advisory area. Between 1 and 2 inches of rain
-have fallen.
-- Additional rainfall amounts of 1 to 2 inches are possible
-over the area. This additional rain will result in minor
-flooding.
-- Some locations that will experience flooding include...
-Hialeah, Doral, Hialeah Gardens, Sweetwater, Medley,
-Pennsuco, Fountainbleau and Tamiami.
-- http://www.weather.gov/safety/flood</summary>
-        <cap:event>Flood Advisory</cap:event>
-        <cap:sent>2024-08-22T13:19:00-04:00</cap:sent>
-        <cap:effective>2024-08-22T13:19:00-04:00</cap:effective>
-        <cap:onset>2024-08-22T13:19:00-04:00</cap:onset>
-        <cap:expires>2024-08-22T14:15:00-04:00</cap:expires>
-        <cap:status>Actual</cap:status>
-        <cap:msgType>Alert</cap:msgType>
-        <cap:category>Met</cap:category>
-        <cap:urgency>Expected</cap:urgency>
-        <cap:severity>Minor</cap:severity>
-        <cap:certainty>Likely</cap:certainty>
-        <cap:areaDesc>Miami-Dade, FL</cap:areaDesc>
-        <cap:polygon>25.8,-80.44 25.9,-80.38 25.88,-80.29 25.77,-80.36 25.8,-80.44</cap:polygon>
-        <cap:geocode>
-            <valueName>SAME</valueName>
-            <value>012086</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>UGC</valueName>
-            <value>FLC086</value>
-        </cap:geocode>
-        <cap:parameter>
-            <valueName>AWIPSidentifier</valueName>
-            <value>FLSMFL</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>WMOidentifier</valueName>
-            <value>WGUS82 KMFL 221719</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>NWSheadline</valueName>
-            <value>FLOOD ADVISORY IN EFFECT UNTIL 215 PM EDT THIS AFTERNOON</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>BLOCKCHANNEL</valueName>
-            <value>EAS</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>BLOCKCHANNEL</valueName>
-            <value>NWEM</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>BLOCKCHANNEL</valueName>
-            <value>CMAS</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>VTEC</valueName>
-            <value>/O.NEW.KMFL.FA.Y.0146.240822T1719Z-240822T1815Z/</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>eventEndingTime</valueName>
-            <value>2024-08-22T18:15:00+00:00</value>
-        </cap:parameter>
-    </entry>
-    <entry>
-        <id>https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.0570c4e861a382bf0540d8c392080e905b35995e.001.1</id>
-        <link rel="alternate" href="https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.0570c4e861a382bf0540d8c392080e905b35995e.001.1.cap"/>
-        <updated>2024-08-22T11:10:00-06:00</updated>
-        <published>2024-08-22T11:10:00-06:00</published>
-        <author>
-            <name>NWS</name>
-        </author>
-        <title>Flash Flood Warning issued August 22 at 11:10AM MDT until August 22 at 12:45PM MDT by NWS Salt Lake City UT</title>
-        <summary>At 1110 AM MDT, Park Ranger reported flooding and Doppler radar
-indicated thunderstorms producing heavy rain across Zion National
-Park. Between 0.5 and 1.5 inches of rain has fallen. Flash flooding
-is ongoing.
-
-HAZARD...Life threatening flash flooding. Thunderstorms producing
-flash flooding.
-
-SOURCE...Radar and Park Ranger observed.
-
-IMPACT...Life threatening flash flooding of creeks and streams,
-roadways, typically dry washes, and slot canyons.
-
-Some locations that will experience flash flooding include...
-Zion National Park.</summary>
-        <cap:event>Flash Flood Warning</cap:event>
-        <cap:sent>2024-08-22T11:10:00-06:00</cap:sent>
-        <cap:effective>2024-08-22T11:10:00-06:00</cap:effective>
-        <cap:onset>2024-08-22T11:10:00-06:00</cap:onset>
-        <cap:expires>2024-08-22T12:45:00-06:00</cap:expires>
-        <cap:status>Actual</cap:status>
-        <cap:msgType>Update</cap:msgType>
-        <cap:category>Met</cap:category>
-        <cap:urgency>Immediate</cap:urgency>
-        <cap:severity>Severe</cap:severity>
-        <cap:certainty>Likely</cap:certainty>
-        <cap:areaDesc>Kane, UT; Washington, UT</cap:areaDesc>
-        <cap:polygon>37.14,-113.08 37.21,-113.17 37.4,-113.06 37.42,-112.98 37.43,-112.85 37.37,-112.79 37.1599999,-112.78 37.1,-112.83 37.1,-112.93 37.14,-113.08</cap:polygon>
-        <cap:geocode>
-            <valueName>SAME</valueName>
-            <value>049025</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>SAME</valueName>
-            <value>049053</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>UGC</valueName>
-            <value>UTC025</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>UGC</valueName>
-            <value>UTC053</value>
-        </cap:geocode>
-        <cap:parameter>
-            <valueName>AWIPSidentifier</valueName>
-            <value>FFSSLC</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>WMOidentifier</valueName>
-            <value>WGUS75 KSLC 221710</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>NWSheadline</valueName>
-            <value>FLASH FLOOD WARNING REMAINS IN EFFECT UNTIL 1245 PM MDT THIS AFTERNOON FOR WEST CENTRAL KANE AND EAST CENTRAL WASHINGTON COUNTIES</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>flashFloodDetection</valueName>
-            <value>RADAR INDICATED</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>flashFloodDamageThreat</valueName>
-            <value>CONSIDERABLE</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>BLOCKCHANNEL</valueName>
-            <value>EAS</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>BLOCKCHANNEL</valueName>
-            <value>NWEM</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>BLOCKCHANNEL</valueName>
-            <value>CMAS</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>EAS-ORG</valueName>
-            <value>WXR</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>VTEC</valueName>
-            <value>/O.CON.KSLC.FF.W.0064.000000T0000Z-240822T1845Z/</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>eventEndingTime</valueName>
-            <value>2024-08-22T18:45:00+00:00</value>
         </cap:parameter>
     </entry>
     <entry>
@@ -2363,6 +3150,89 @@ improve.</summary>
         </cap:parameter>
     </entry>
     <entry>
+        <id>https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.6622890849fd9e690f2cdfd0f5d766e863376e55.001.2</id>
+        <link rel="alternate" href="https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.6622890849fd9e690f2cdfd0f5d766e863376e55.001.2.cap"/>
+        <updated>2024-08-22T12:49:00-04:00</updated>
+        <published>2024-08-22T12:49:00-04:00</published>
+        <author>
+            <name>NWS</name>
+        </author>
+        <title>Rip Current Statement issued August 22 at 12:49PM EDT until August 22 at 8:00PM EDT by NWS Charleston SC</title>
+        <summary>* WHAT...Dangerous rip currents.
+
+* WHERE...Coastal Colleton and Charleston Counties.
+
+* WHEN...Until 8 PM EDT this evening.
+
+* IMPACTS...Rip currents can sweep even the best swimmers away
+from shore into deeper water.</summary>
+        <cap:event>Rip Current Statement</cap:event>
+        <cap:sent>2024-08-22T12:49:00-04:00</cap:sent>
+        <cap:effective>2024-08-22T12:49:00-04:00</cap:effective>
+        <cap:onset>2024-08-22T12:49:00-04:00</cap:onset>
+        <cap:expires>2024-08-22T20:00:00-04:00</cap:expires>
+        <cap:status>Actual</cap:status>
+        <cap:msgType>Update</cap:msgType>
+        <cap:category>Met</cap:category>
+        <cap:urgency>Expected</cap:urgency>
+        <cap:severity>Moderate</cap:severity>
+        <cap:certainty>Likely</cap:certainty>
+        <cap:areaDesc>Coastal Colleton; Charleston</cap:areaDesc>
+        <cap:polygon/>
+        <cap:geocode>
+            <valueName>SAME</valueName>
+            <value>045029</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>SAME</valueName>
+            <value>045019</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>UGC</valueName>
+            <value>SCZ049</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>UGC</valueName>
+            <value>SCZ050</value>
+        </cap:geocode>
+        <cap:parameter>
+            <valueName>AWIPSidentifier</valueName>
+            <value>CFWCHS</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>WMOidentifier</valueName>
+            <value>WHUS42 KCHS 221649</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>NWSheadline</valueName>
+            <value>HIGH RIP CURRENT RISK REMAINS IN EFFECT UNTIL 8 PM EDT THIS EVENING... ...COASTAL FLOOD ADVISORY IS CANCELLED</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>BLOCKCHANNEL</valueName>
+            <value>EAS</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>BLOCKCHANNEL</valueName>
+            <value>NWEM</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>BLOCKCHANNEL</valueName>
+            <value>CMAS</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>VTEC</valueName>
+            <value>/O.CON.KCHS.RP.S.0007.000000T0000Z-240823T0000Z/</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>eventEndingTime</valueName>
+            <value>2024-08-23T00:00:00+00:00</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>expiredReferences</valueName>
+            <value>w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.80bbbddc5acb7a30d2af703c7dec2ce5abc65dbe.001.1,2024-08-22T03:03:00-04:00</value>
+        </cap:parameter>
+    </entry>
+    <entry>
         <id>https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.6622890849fd9e690f2cdfd0f5d766e863376e55.002.1</id>
         <link rel="alternate" href="https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.6622890849fd9e690f2cdfd0f5d766e863376e55.002.1.cap"/>
         <updated>2024-08-22T12:49:00-04:00</updated>
@@ -2451,89 +3321,6 @@ from shore into deeper water.</summary>
         <cap:parameter>
             <valueName>NWSheadline</valueName>
             <value>HIGH RIP CURRENT RISK REMAINS IN EFFECT UNTIL 8 PM EDT THIS EVENING</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>BLOCKCHANNEL</valueName>
-            <value>EAS</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>BLOCKCHANNEL</valueName>
-            <value>NWEM</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>BLOCKCHANNEL</valueName>
-            <value>CMAS</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>VTEC</valueName>
-            <value>/O.CON.KCHS.RP.S.0007.000000T0000Z-240823T0000Z/</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>eventEndingTime</valueName>
-            <value>2024-08-23T00:00:00+00:00</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>expiredReferences</valueName>
-            <value>w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.80bbbddc5acb7a30d2af703c7dec2ce5abc65dbe.001.1,2024-08-22T03:03:00-04:00</value>
-        </cap:parameter>
-    </entry>
-    <entry>
-        <id>https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.6622890849fd9e690f2cdfd0f5d766e863376e55.001.2</id>
-        <link rel="alternate" href="https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.6622890849fd9e690f2cdfd0f5d766e863376e55.001.2.cap"/>
-        <updated>2024-08-22T12:49:00-04:00</updated>
-        <published>2024-08-22T12:49:00-04:00</published>
-        <author>
-            <name>NWS</name>
-        </author>
-        <title>Rip Current Statement issued August 22 at 12:49PM EDT until August 22 at 8:00PM EDT by NWS Charleston SC</title>
-        <summary>* WHAT...Dangerous rip currents.
-
-* WHERE...Coastal Colleton and Charleston Counties.
-
-* WHEN...Until 8 PM EDT this evening.
-
-* IMPACTS...Rip currents can sweep even the best swimmers away
-from shore into deeper water.</summary>
-        <cap:event>Rip Current Statement</cap:event>
-        <cap:sent>2024-08-22T12:49:00-04:00</cap:sent>
-        <cap:effective>2024-08-22T12:49:00-04:00</cap:effective>
-        <cap:onset>2024-08-22T12:49:00-04:00</cap:onset>
-        <cap:expires>2024-08-22T20:00:00-04:00</cap:expires>
-        <cap:status>Actual</cap:status>
-        <cap:msgType>Update</cap:msgType>
-        <cap:category>Met</cap:category>
-        <cap:urgency>Expected</cap:urgency>
-        <cap:severity>Moderate</cap:severity>
-        <cap:certainty>Likely</cap:certainty>
-        <cap:areaDesc>Coastal Colleton; Charleston</cap:areaDesc>
-        <cap:polygon/>
-        <cap:geocode>
-            <valueName>SAME</valueName>
-            <value>045029</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>SAME</valueName>
-            <value>045019</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>UGC</valueName>
-            <value>SCZ049</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>UGC</valueName>
-            <value>SCZ050</value>
-        </cap:geocode>
-        <cap:parameter>
-            <valueName>AWIPSidentifier</valueName>
-            <value>CFWCHS</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>WMOidentifier</valueName>
-            <value>WHUS42 KCHS 221649</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>NWSheadline</valueName>
-            <value>HIGH RIP CURRENT RISK REMAINS IN EFFECT UNTIL 8 PM EDT THIS EVENING... ...COASTAL FLOOD ADVISORY IS CANCELLED</value>
         </cap:parameter>
         <cap:parameter>
             <valueName>BLOCKCHANNEL</valueName>
@@ -5801,119 +6588,6 @@ Sunday morning.
         </cap:parameter>
     </entry>
     <entry>
-        <id>https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.31fc013f36c745f8f9d82f692916581ffa22b2d6.004.1</id>
-        <link rel="alternate" href="https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.31fc013f36c745f8f9d82f692916581ffa22b2d6.004.1.cap"/>
-        <updated>2024-08-22T09:24:00-04:00</updated>
-        <published>2024-08-22T09:24:00-04:00</published>
-        <author>
-            <name>NWS</name>
-        </author>
-        <title>Flood Warning issued August 22 at 9:24AM EDT by NWS Tampa Bay Ruskin FL</title>
-        <summary>...The Flood Warning is extended for the following rivers in
-Florida...
-
-Manatee River At Rye Bridge affecting Manatee County.
-
-Horse Creek Near Arcadia at SR 72 affecting DeSoto County.
-
-...The Flood Warning continues for the following rivers in Florida...
-
-Manatee River Near Myakka Head at SR 64 affecting Manatee County.
-
-Withlacoochee At US 301 Trilby affecting Pasco and Hernando
-Counties.
-
-Myakka River At Myakka River State Park affecting Sarasota County.
-
-...The Flood Warning is cancelled for the following rivers in
-Florida...
-
-Little Manatee River At Wimauma at US 301 affecting Hillsborough
-County.
-
-For the Withlacoochee...including US 301 Trilby, Croom, SR 200
-Holder, US 41 Dunnellon...Minor flooding is forecast.
-For the Manatee...including Myakka Head at SR 64, Rye Bridge...Minor
-flooding is forecast.
-For the Myakka...including Myakka River State Park...Minor flooding
-is forecast.
-For the Horse Creek...including Arcadia at SR 72...Minor flooding is
-forecast.
-
-* WHAT...Minor flooding is forecast.
-
-* WHERE...Horse Creek near Arcadia at SR 72.
-
-* WHEN...From late tonight until further notice.
-
-* IMPACTS...At 12.0 feet, The access road to Hidden Acres is
-impassable.
-
-* ADDITIONAL DETAILS...
-- At 8:30 AM EDT Thursday the stage was 10.9 feet.
-- Bankfull stage is 12.0 feet.
-- Forecast...The river is expected to rise above flood stage
-late tonight and continue rising to a crest of 12.4 feet
-Saturday morning.
-- Flood stage is 12.0 feet.
-- Flood History...This crest compares to a previous crest of
-12.4 feet on 07/31/1965.
-- https://www.weather.gov/safety/flood</summary>
-        <cap:event>Flood Warning</cap:event>
-        <cap:sent>2024-08-22T09:24:00-04:00</cap:sent>
-        <cap:effective>2024-08-22T09:24:00-04:00</cap:effective>
-        <cap:onset>2024-08-23T05:00:00-04:00</cap:onset>
-        <cap:expires>2024-08-23T00:30:00-04:00</cap:expires>
-        <cap:status>Actual</cap:status>
-        <cap:msgType>Update</cap:msgType>
-        <cap:category>Met</cap:category>
-        <cap:urgency>Immediate</cap:urgency>
-        <cap:severity>Severe</cap:severity>
-        <cap:certainty>Observed</cap:certainty>
-        <cap:areaDesc>DeSoto, FL</cap:areaDesc>
-        <cap:polygon>27.26,-81.94 27.08,-81.98 27.08,-82.02 27.26,-82.01 27.26,-81.94</cap:polygon>
-        <cap:geocode>
-            <valueName>SAME</valueName>
-            <value>012027</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>UGC</valueName>
-            <value>FLC027</value>
-        </cap:geocode>
-        <cap:parameter>
-            <valueName>AWIPSidentifier</valueName>
-            <value>FLSTBW</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>WMOidentifier</valueName>
-            <value>WGUS82 KTBW 221324</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>NWSheadline</valueName>
-            <value>FLOOD WARNING NOW IN EFFECT FROM LATE TONIGHT UNTIL FURTHER NOTICE</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>BLOCKCHANNEL</valueName>
-            <value>EAS</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>BLOCKCHANNEL</valueName>
-            <value>NWEM</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>BLOCKCHANNEL</valueName>
-            <value>CMAS</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>EAS-ORG</valueName>
-            <value>WXR</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>VTEC</valueName>
-            <value>/O.EXT.KTBW.FL.W.0023.240823T0900Z-000000T0000Z/</value>
-        </cap:parameter>
-    </entry>
-    <entry>
         <id>https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.31fc013f36c745f8f9d82f692916581ffa22b2d6.006.1</id>
         <link rel="alternate" href="https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.31fc013f36c745f8f9d82f692916581ffa22b2d6.006.1.cap"/>
         <updated>2024-08-22T09:24:00-04:00</updated>
@@ -6031,157 +6705,96 @@ Sunday morning. Additional rises are possible thereafter.
         </cap:parameter>
     </entry>
     <entry>
-        <id>https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.97f8fe143fe2c9f81bbf061518183f79e95e5f85.001.1</id>
-        <link rel="alternate" href="https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.97f8fe143fe2c9f81bbf061518183f79e95e5f85.001.1.cap"/>
-        <updated>2024-08-22T09:21:00-04:00</updated>
-        <published>2024-08-22T09:21:00-04:00</published>
+        <id>https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.31fc013f36c745f8f9d82f692916581ffa22b2d6.004.1</id>
+        <link rel="alternate" href="https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.31fc013f36c745f8f9d82f692916581ffa22b2d6.004.1.cap"/>
+        <updated>2024-08-22T09:24:00-04:00</updated>
+        <published>2024-08-22T09:24:00-04:00</published>
         <author>
             <name>NWS</name>
         </author>
-        <title>Rip Current Statement issued August 22 at 9:21AM EDT until August 24 at 2:00AM EDT by NWS Jacksonville FL</title>
-        <summary>* WHAT...Dangerous rip currents.
+        <title>Flood Warning issued August 22 at 9:24AM EDT by NWS Tampa Bay Ruskin FL</title>
+        <summary>...The Flood Warning is extended for the following rivers in
+Florida...
 
-* WHERE...Coastal St. Johns and Coastal Flagler Counties.
+Manatee River At Rye Bridge affecting Manatee County.
 
-* WHEN...Through late Friday night.
+Horse Creek Near Arcadia at SR 72 affecting DeSoto County.
 
-* IMPACTS...Rip currents can sweep even the best swimmers away
-from shore into deeper water.</summary>
-        <cap:event>Rip Current Statement</cap:event>
-        <cap:sent>2024-08-22T09:21:00-04:00</cap:sent>
-        <cap:effective>2024-08-22T09:21:00-04:00</cap:effective>
-        <cap:onset>2024-08-22T09:21:00-04:00</cap:onset>
-        <cap:expires>2024-08-23T03:15:00-04:00</cap:expires>
-        <cap:status>Actual</cap:status>
-        <cap:msgType>Alert</cap:msgType>
-        <cap:category>Met</cap:category>
-        <cap:urgency>Expected</cap:urgency>
-        <cap:severity>Moderate</cap:severity>
-        <cap:certainty>Likely</cap:certainty>
-        <cap:areaDesc>Coastal St. Johns; Coastal Flagler</cap:areaDesc>
-        <cap:polygon/>
-        <cap:geocode>
-            <valueName>SAME</valueName>
-            <value>012109</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>SAME</valueName>
-            <value>012035</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>UGC</valueName>
-            <value>FLZ133</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>UGC</valueName>
-            <value>FLZ138</value>
-        </cap:geocode>
-        <cap:parameter>
-            <valueName>AWIPSidentifier</valueName>
-            <value>CFWJAX</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>WMOidentifier</valueName>
-            <value>WHUS42 KJAX 221321</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>NWSheadline</valueName>
-            <value>HIGH RIP CURRENT RISK IN EFFECT THROUGH LATE FRIDAY NIGHT</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>BLOCKCHANNEL</valueName>
-            <value>EAS</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>BLOCKCHANNEL</valueName>
-            <value>NWEM</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>BLOCKCHANNEL</valueName>
-            <value>CMAS</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>VTEC</valueName>
-            <value>/O.EXA.KJAX.RP.S.0020.000000T0000Z-240824T0600Z/</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>eventEndingTime</valueName>
-            <value>2024-08-24T06:00:00+00:00</value>
-        </cap:parameter>
-    </entry>
-    <entry>
-        <id>https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.97f8fe143fe2c9f81bbf061518183f79e95e5f85.002.1</id>
-        <link rel="alternate" href="https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.97f8fe143fe2c9f81bbf061518183f79e95e5f85.002.1.cap"/>
-        <updated>2024-08-22T09:21:00-04:00</updated>
-        <published>2024-08-22T09:21:00-04:00</published>
-        <author>
-            <name>NWS</name>
-        </author>
-        <title>Rip Current Statement issued August 22 at 9:21AM EDT until August 24 at 2:00AM EDT by NWS Jacksonville FL</title>
-        <summary>* WHAT...Dangerous rip currents.
+...The Flood Warning continues for the following rivers in Florida...
 
-* WHERE...Southeast Georgia Beaches.
+Manatee River Near Myakka Head at SR 64 affecting Manatee County.
 
-* WHEN...Through late Friday night.
+Withlacoochee At US 301 Trilby affecting Pasco and Hernando
+Counties.
 
-* IMPACTS...Rip currents can sweep even the best swimmers away
-from shore into deeper water.</summary>
-        <cap:event>Rip Current Statement</cap:event>
-        <cap:sent>2024-08-22T09:21:00-04:00</cap:sent>
-        <cap:effective>2024-08-22T09:21:00-04:00</cap:effective>
-        <cap:onset>2024-08-22T09:21:00-04:00</cap:onset>
-        <cap:expires>2024-08-23T03:15:00-04:00</cap:expires>
+Myakka River At Myakka River State Park affecting Sarasota County.
+
+...The Flood Warning is cancelled for the following rivers in
+Florida...
+
+Little Manatee River At Wimauma at US 301 affecting Hillsborough
+County.
+
+For the Withlacoochee...including US 301 Trilby, Croom, SR 200
+Holder, US 41 Dunnellon...Minor flooding is forecast.
+For the Manatee...including Myakka Head at SR 64, Rye Bridge...Minor
+flooding is forecast.
+For the Myakka...including Myakka River State Park...Minor flooding
+is forecast.
+For the Horse Creek...including Arcadia at SR 72...Minor flooding is
+forecast.
+
+* WHAT...Minor flooding is forecast.
+
+* WHERE...Horse Creek near Arcadia at SR 72.
+
+* WHEN...From late tonight until further notice.
+
+* IMPACTS...At 12.0 feet, The access road to Hidden Acres is
+impassable.
+
+* ADDITIONAL DETAILS...
+- At 8:30 AM EDT Thursday the stage was 10.9 feet.
+- Bankfull stage is 12.0 feet.
+- Forecast...The river is expected to rise above flood stage
+late tonight and continue rising to a crest of 12.4 feet
+Saturday morning.
+- Flood stage is 12.0 feet.
+- Flood History...This crest compares to a previous crest of
+12.4 feet on 07/31/1965.
+- https://www.weather.gov/safety/flood</summary>
+        <cap:event>Flood Warning</cap:event>
+        <cap:sent>2024-08-22T09:24:00-04:00</cap:sent>
+        <cap:effective>2024-08-22T09:24:00-04:00</cap:effective>
+        <cap:onset>2024-08-23T05:00:00-04:00</cap:onset>
+        <cap:expires>2024-08-23T00:30:00-04:00</cap:expires>
         <cap:status>Actual</cap:status>
         <cap:msgType>Update</cap:msgType>
         <cap:category>Met</cap:category>
-        <cap:urgency>Expected</cap:urgency>
-        <cap:severity>Moderate</cap:severity>
-        <cap:certainty>Likely</cap:certainty>
-        <cap:areaDesc>Coastal Nassau; Coastal Duval; Coastal Glynn; Coastal Camden</cap:areaDesc>
-        <cap:polygon/>
+        <cap:urgency>Immediate</cap:urgency>
+        <cap:severity>Severe</cap:severity>
+        <cap:certainty>Observed</cap:certainty>
+        <cap:areaDesc>DeSoto, FL</cap:areaDesc>
+        <cap:polygon>27.26,-81.94 27.08,-81.98 27.08,-82.02 27.26,-82.01 27.26,-81.94</cap:polygon>
         <cap:geocode>
             <valueName>SAME</valueName>
-            <value>012089</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>SAME</valueName>
-            <value>012031</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>SAME</valueName>
-            <value>013127</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>SAME</valueName>
-            <value>013039</value>
+            <value>012027</value>
         </cap:geocode>
         <cap:geocode>
             <valueName>UGC</valueName>
-            <value>FLZ124</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>UGC</valueName>
-            <value>FLZ125</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>UGC</valueName>
-            <value>GAZ154</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>UGC</valueName>
-            <value>GAZ166</value>
+            <value>FLC027</value>
         </cap:geocode>
         <cap:parameter>
             <valueName>AWIPSidentifier</valueName>
-            <value>CFWJAX</value>
+            <value>FLSTBW</value>
         </cap:parameter>
         <cap:parameter>
             <valueName>WMOidentifier</valueName>
-            <value>WHUS42 KJAX 221321</value>
+            <value>WGUS82 KTBW 221324</value>
         </cap:parameter>
         <cap:parameter>
             <valueName>NWSheadline</valueName>
-            <value>HIGH RIP CURRENT RISK REMAINS IN EFFECT THROUGH LATE FRIDAY NIGHT</value>
+            <value>FLOOD WARNING NOW IN EFFECT FROM LATE TONIGHT UNTIL FURTHER NOTICE</value>
         </cap:parameter>
         <cap:parameter>
             <valueName>BLOCKCHANNEL</valueName>
@@ -6196,12 +6809,12 @@ from shore into deeper water.</summary>
             <value>CMAS</value>
         </cap:parameter>
         <cap:parameter>
-            <valueName>VTEC</valueName>
-            <value>/O.CON.KJAX.RP.S.0020.000000T0000Z-240824T0600Z/</value>
+            <valueName>EAS-ORG</valueName>
+            <value>WXR</value>
         </cap:parameter>
         <cap:parameter>
-            <valueName>eventEndingTime</valueName>
-            <value>2024-08-24T06:00:00+00:00</value>
+            <valueName>VTEC</valueName>
+            <value>/O.EXT.KTBW.FL.W.0023.240823T0900Z-000000T0000Z/</value>
         </cap:parameter>
     </entry>
     <entry>
@@ -8334,256 +8947,6 @@ thunderstorm activity expected this afternoon and evening.
         </cap:parameter>
     </entry>
     <entry>
-        <id>https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.e36a29a1f07a7603def2da68be4ee5991b249123.002.1</id>
-        <link rel="alternate" href="https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.e36a29a1f07a7603def2da68be4ee5991b249123.002.1.cap"/>
-        <updated>2024-08-22T03:24:00-04:00</updated>
-        <published>2024-08-22T03:24:00-04:00</published>
-        <author>
-            <name>NWS</name>
-        </author>
-        <title>Beach Hazards Statement issued August 22 at 3:24AM EDT until August 22 at 8:00PM EDT by NWS Wilmington NC</title>
-        <summary>* WHAT...Strong north to south longshore current. There is also a
-Moderate Risk of rip currents.
-
-* WHERE...In North Carolina, Coastal Pender and Coastal New
-Hanover Counties. In South Carolina, Coastal Georgetown County.
-
-* WHEN...Through this evening.
-
-* IMPACTS...Longshore currents can sweep swimmers and surfers
-into rip currents, piers, jetties, and other hazardous areas.
-It may sweep swimmers off their feet, making it difficult to
-return to shore.</summary>
-        <cap:event>Beach Hazards Statement</cap:event>
-        <cap:sent>2024-08-22T03:24:00-04:00</cap:sent>
-        <cap:effective>2024-08-22T03:24:00-04:00</cap:effective>
-        <cap:onset>2024-08-22T06:00:00-04:00</cap:onset>
-        <cap:expires>2024-08-22T15:00:00-04:00</cap:expires>
-        <cap:status>Actual</cap:status>
-        <cap:msgType>Update</cap:msgType>
-        <cap:category>Met</cap:category>
-        <cap:urgency>Expected</cap:urgency>
-        <cap:severity>Moderate</cap:severity>
-        <cap:certainty>Likely</cap:certainty>
-        <cap:areaDesc>Coastal Pender; Coastal New Hanover; Coastal Georgetown</cap:areaDesc>
-        <cap:polygon/>
-        <cap:geocode>
-            <valueName>SAME</valueName>
-            <value>037141</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>SAME</valueName>
-            <value>037129</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>SAME</valueName>
-            <value>045043</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>UGC</valueName>
-            <value>NCZ106</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>UGC</valueName>
-            <value>NCZ108</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>UGC</valueName>
-            <value>SCZ056</value>
-        </cap:geocode>
-        <cap:parameter>
-            <valueName>AWIPSidentifier</valueName>
-            <value>CFWILM</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>WMOidentifier</valueName>
-            <value>WHUS42 KILM 220724</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>NWSheadline</valueName>
-            <value>BEACH HAZARDS STATEMENT REMAINS IN EFFECT THROUGH THIS EVENING</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>BLOCKCHANNEL</valueName>
-            <value>EAS</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>BLOCKCHANNEL</valueName>
-            <value>NWEM</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>BLOCKCHANNEL</valueName>
-            <value>CMAS</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>VTEC</valueName>
-            <value>/O.CON.KILM.BH.S.0029.240822T1000Z-240823T0000Z/</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>eventEndingTime</valueName>
-            <value>2024-08-23T00:00:00+00:00</value>
-        </cap:parameter>
-    </entry>
-    <entry>
-        <id>https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.e36a29a1f07a7603def2da68be4ee5991b249123.003.1</id>
-        <link rel="alternate" href="https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.e36a29a1f07a7603def2da68be4ee5991b249123.003.1.cap"/>
-        <updated>2024-08-22T03:24:00-04:00</updated>
-        <published>2024-08-22T03:24:00-04:00</published>
-        <author>
-            <name>NWS</name>
-        </author>
-        <title>Beach Hazards Statement issued August 22 at 3:24AM EDT until August 22 at 8:00PM EDT by NWS Wilmington NC</title>
-        <summary>* WHAT...Strong north to south longshore current.
-
-* WHERE...Coastal Horry County.
-
-* WHEN...Through this evening.
-
-* IMPACTS...Longshore currents can sweep swimmers and surfers
-into rip currents, piers, jetties, and other hazardous areas.
-It may sweep swimmers off their feet, making it difficult to
-return to shore.</summary>
-        <cap:event>Beach Hazards Statement</cap:event>
-        <cap:sent>2024-08-22T03:24:00-04:00</cap:sent>
-        <cap:effective>2024-08-22T03:24:00-04:00</cap:effective>
-        <cap:onset>2024-08-22T06:00:00-04:00</cap:onset>
-        <cap:expires>2024-08-22T15:00:00-04:00</cap:expires>
-        <cap:status>Actual</cap:status>
-        <cap:msgType>Update</cap:msgType>
-        <cap:category>Met</cap:category>
-        <cap:urgency>Expected</cap:urgency>
-        <cap:severity>Moderate</cap:severity>
-        <cap:certainty>Likely</cap:certainty>
-        <cap:areaDesc>Coastal Horry</cap:areaDesc>
-        <cap:polygon/>
-        <cap:geocode>
-            <valueName>SAME</valueName>
-            <value>045051</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>UGC</valueName>
-            <value>SCZ054</value>
-        </cap:geocode>
-        <cap:parameter>
-            <valueName>AWIPSidentifier</valueName>
-            <value>CFWILM</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>WMOidentifier</valueName>
-            <value>WHUS42 KILM 220724</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>NWSheadline</valueName>
-            <value>BEACH HAZARDS STATEMENT REMAINS IN EFFECT THROUGH THIS EVENING</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>BLOCKCHANNEL</valueName>
-            <value>EAS</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>BLOCKCHANNEL</valueName>
-            <value>NWEM</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>BLOCKCHANNEL</valueName>
-            <value>CMAS</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>VTEC</valueName>
-            <value>/O.CON.KILM.BH.S.0029.240822T1000Z-240823T0000Z/</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>eventEndingTime</valueName>
-            <value>2024-08-23T00:00:00+00:00</value>
-        </cap:parameter>
-    </entry>
-    <entry>
-        <id>https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.e36a29a1f07a7603def2da68be4ee5991b249123.001.1</id>
-        <link rel="alternate" href="https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.e36a29a1f07a7603def2da68be4ee5991b249123.001.1.cap"/>
-        <updated>2024-08-22T03:24:00-04:00</updated>
-        <published>2024-08-22T03:24:00-04:00</published>
-        <author>
-            <name>NWS</name>
-        </author>
-        <title>Coastal Flood Advisory issued August 22 at 3:24AM EDT until August 23 at 4:00PM EDT by NWS Wilmington NC</title>
-        <summary>* WHAT...Up to one foot of inundation above ground level
-expected in low-lying areas near shorelines and tidal
-waterways.
-
-* WHERE...The lower Cape Fear River including downtown
-Wilmington.
-
-* WHEN...From 10 AM this morning to 4 PM EDT Friday around times
-of high tide.
-
-* IMPACTS...The lowest portions of Battleship Road and USS North
-Carolina Road observe minor coastal flooding of about one foot
-in depth. In downtown Wilmington, several blocks of Water
-Street observe shallow flooding from one half to one foot in
-depth. The low-lying areas along River Road and adjacent
-residential roads, south of River Road Park, will begin to
-flood. Route 133 at Little Mallory Creek may begin to flood.
-Check with local officials for any road closures or impacts.
-
-* ADDITIONAL DETAILS...Affected areas listed are based on
-average tide conditions. Additional locations may experience
-flooding during periods of heavy rainfall, high winds, or
-other factors.</summary>
-        <cap:event>Coastal Flood Advisory</cap:event>
-        <cap:sent>2024-08-22T03:24:00-04:00</cap:sent>
-        <cap:effective>2024-08-22T03:24:00-04:00</cap:effective>
-        <cap:onset>2024-08-22T10:00:00-04:00</cap:onset>
-        <cap:expires>2024-08-22T15:00:00-04:00</cap:expires>
-        <cap:status>Actual</cap:status>
-        <cap:msgType>Alert</cap:msgType>
-        <cap:category>Met</cap:category>
-        <cap:urgency>Expected</cap:urgency>
-        <cap:severity>Minor</cap:severity>
-        <cap:certainty>Likely</cap:certainty>
-        <cap:areaDesc>Inland New Hanover</cap:areaDesc>
-        <cap:polygon/>
-        <cap:geocode>
-            <valueName>SAME</valueName>
-            <value>037129</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>UGC</valueName>
-            <value>NCZ107</value>
-        </cap:geocode>
-        <cap:parameter>
-            <valueName>AWIPSidentifier</valueName>
-            <value>CFWILM</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>WMOidentifier</valueName>
-            <value>WHUS42 KILM 220724</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>NWSheadline</valueName>
-            <value>COASTAL FLOOD ADVISORY IN EFFECT FROM 10 AM THIS MORNING TO 4 PM EDT FRIDAY</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>BLOCKCHANNEL</valueName>
-            <value>EAS</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>BLOCKCHANNEL</valueName>
-            <value>NWEM</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>BLOCKCHANNEL</valueName>
-            <value>CMAS</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>VTEC</valueName>
-            <value>/O.NEW.KILM.CF.Y.0100.240822T1400Z-240823T2000Z/</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>eventEndingTime</valueName>
-            <value>2024-08-23T20:00:00+00:00</value>
-        </cap:parameter>
-    </entry>
-    <entry>
         <id>https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.f3b1748399496c70159322c236466d75e08dbf56.001.1</id>
         <link rel="alternate" href="https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.f3b1748399496c70159322c236466d75e08dbf56.001.1.cap"/>
         <updated>2024-08-22T02:21:00-05:00</updated>
@@ -10008,209 +10371,6 @@ illnesses.</summary>
         </cap:parameter>
     </entry>
     <entry>
-        <id>https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.e59aadf255942d1df65af0ec7bedb9a54b0dc57d.001.1</id>
-        <link rel="alternate" href="https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.e59aadf255942d1df65af0ec7bedb9a54b0dc57d.001.1.cap"/>
-        <updated>2024-08-22T01:53:00-05:00</updated>
-        <published>2024-08-22T01:53:00-05:00</published>
-        <author>
-            <name>NWS</name>
-        </author>
-        <title>Excessive Heat Warning issued August 22 at 1:53AM CDT until August 22 at 9:00PM CDT by NWS Midland/Odessa TX</title>
-        <summary>* WHAT...Dangerously hot conditions with temperatures up to 112
-degrees expected.
-
-* WHERE...Western low rolling plains.
-
-* WHEN...Until 9 PM CDT this evening.
-
-* IMPACTS...Heat related illnesses increase significantly during
-extreme heat events.</summary>
-        <cap:event>Excessive Heat Warning</cap:event>
-        <cap:sent>2024-08-22T01:53:00-05:00</cap:sent>
-        <cap:effective>2024-08-22T01:53:00-05:00</cap:effective>
-        <cap:onset>2024-08-22T01:53:00-05:00</cap:onset>
-        <cap:expires>2024-08-22T21:00:00-05:00</cap:expires>
-        <cap:status>Actual</cap:status>
-        <cap:msgType>Update</cap:msgType>
-        <cap:category>Met</cap:category>
-        <cap:urgency>Expected</cap:urgency>
-        <cap:severity>Severe</cap:severity>
-        <cap:certainty>Likely</cap:certainty>
-        <cap:areaDesc>Scurry; Mitchell</cap:areaDesc>
-        <cap:polygon/>
-        <cap:geocode>
-            <valueName>SAME</valueName>
-            <value>048415</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>SAME</valueName>
-            <value>048335</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>UGC</valueName>
-            <value>TXZ048</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>UGC</valueName>
-            <value>TXZ053</value>
-        </cap:geocode>
-        <cap:parameter>
-            <valueName>AWIPSidentifier</valueName>
-            <value>NPWMAF</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>WMOidentifier</valueName>
-            <value>WWUS74 KMAF 220653</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>NWSheadline</valueName>
-            <value>EXCESSIVE HEAT WARNING REMAINS IN EFFECT UNTIL 9 PM CDT THIS EVENING</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>BLOCKCHANNEL</valueName>
-            <value>EAS</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>BLOCKCHANNEL</valueName>
-            <value>NWEM</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>BLOCKCHANNEL</valueName>
-            <value>CMAS</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>VTEC</valueName>
-            <value>/O.CON.KMAF.EH.W.0002.000000T0000Z-240823T0200Z/</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>eventEndingTime</valueName>
-            <value>2024-08-23T02:00:00+00:00</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>expiredReferences</valueName>
-            <value>w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.d91c77b58e172ede6a3147a3b2688b0102a9376f.001.1,2024-08-21T01:53:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.b8ad250d99e2a3e7a1c6c3aa380fccf67792b72e.001.1,2024-08-20T13:04:00-05:00</value>
-        </cap:parameter>
-    </entry>
-    <entry>
-        <id>https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.e59aadf255942d1df65af0ec7bedb9a54b0dc57d.002.1</id>
-        <link rel="alternate" href="https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.e59aadf255942d1df65af0ec7bedb9a54b0dc57d.002.1.cap"/>
-        <updated>2024-08-22T01:53:00-05:00</updated>
-        <published>2024-08-22T01:53:00-05:00</published>
-        <author>
-            <name>NWS</name>
-        </author>
-        <title>Heat Advisory issued August 22 at 1:53AM CDT until August 22 at 9:00PM CDT by NWS Midland/Odessa TX</title>
-        <summary>* WHAT...Temperatures up to 95 to 101 degrees expected.
-
-* WHERE...In New Mexico, Guadalupe Mountains of Eddy County. In
-Texas, Central Brewster County County, and Chinati Mountains,
-Chisos Basin, Davis Mountains, Davis Mountains Foothills, and
-Guadalupe and Delaware Mountains.
-
-* WHEN...Until 8 PM MDT /9 PM CDT/ this evening.
-
-* IMPACTS...Pets may succumb to the effects of excessive heat. The
-elderly, very young, sick, and people with heart conditions are
-most at risk in extreme heat.</summary>
-        <cap:event>Heat Advisory</cap:event>
-        <cap:sent>2024-08-22T01:53:00-05:00</cap:sent>
-        <cap:effective>2024-08-22T01:53:00-05:00</cap:effective>
-        <cap:onset>2024-08-22T01:53:00-05:00</cap:onset>
-        <cap:expires>2024-08-22T21:00:00-05:00</cap:expires>
-        <cap:status>Actual</cap:status>
-        <cap:msgType>Alert</cap:msgType>
-        <cap:category>Met</cap:category>
-        <cap:urgency>Expected</cap:urgency>
-        <cap:severity>Moderate</cap:severity>
-        <cap:certainty>Likely</cap:certainty>
-        <cap:areaDesc>Guadalupe Mountains of Eddy County; Guadalupe and Delaware Mountains; Chinati Mountains; Davis Mountains; Davis Mountains Foothills; Central Brewster County; Chisos Basin</cap:areaDesc>
-        <cap:polygon/>
-        <cap:geocode>
-            <valueName>SAME</valueName>
-            <value>035015</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>SAME</valueName>
-            <value>048109</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>SAME</valueName>
-            <value>048377</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>SAME</valueName>
-            <value>048043</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>SAME</valueName>
-            <value>048243</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>SAME</valueName>
-            <value>048389</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>UGC</valueName>
-            <value>NMZ027</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>UGC</valueName>
-            <value>TXZ271</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>UGC</valueName>
-            <value>TXZ275</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>UGC</valueName>
-            <value>TXZ277</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>UGC</valueName>
-            <value>TXZ278</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>UGC</valueName>
-            <value>TXZ279</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>UGC</valueName>
-            <value>TXZ280</value>
-        </cap:geocode>
-        <cap:parameter>
-            <valueName>AWIPSidentifier</valueName>
-            <value>NPWMAF</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>WMOidentifier</valueName>
-            <value>WWUS74 KMAF 220653</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>NWSheadline</valueName>
-            <value>HEAT ADVISORY IN EFFECT UNTIL 8 PM MDT /9 PM CDT/ THIS EVENING</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>BLOCKCHANNEL</valueName>
-            <value>EAS</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>BLOCKCHANNEL</valueName>
-            <value>NWEM</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>BLOCKCHANNEL</valueName>
-            <value>CMAS</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>VTEC</valueName>
-            <value>/O.EXA.KMAF.HT.Y.0035.000000T0000Z-240823T0200Z/</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>eventEndingTime</valueName>
-            <value>2024-08-23T02:00:00+00:00</value>
-        </cap:parameter>
-    </entry>
-    <entry>
         <id>https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.e59aadf255942d1df65af0ec7bedb9a54b0dc57d.003.1</id>
         <link rel="alternate" href="https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.e59aadf255942d1df65af0ec7bedb9a54b0dc57d.003.1.cap"/>
         <updated>2024-08-22T01:53:00-05:00</updated>
@@ -10413,6 +10573,209 @@ most at risk in extreme heat.</summary>
         <cap:parameter>
             <valueName>expiredReferences</valueName>
             <value>w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.d91c77b58e172ede6a3147a3b2688b0102a9376f.002.1,2024-08-21T01:53:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.b8ad250d99e2a3e7a1c6c3aa380fccf67792b72e.003.1,2024-08-20T13:04:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.b8ad250d99e2a3e7a1c6c3aa380fccf67792b72e.002.1,2024-08-20T13:04:00-05:00</value>
+        </cap:parameter>
+    </entry>
+    <entry>
+        <id>https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.e59aadf255942d1df65af0ec7bedb9a54b0dc57d.002.1</id>
+        <link rel="alternate" href="https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.e59aadf255942d1df65af0ec7bedb9a54b0dc57d.002.1.cap"/>
+        <updated>2024-08-22T01:53:00-05:00</updated>
+        <published>2024-08-22T01:53:00-05:00</published>
+        <author>
+            <name>NWS</name>
+        </author>
+        <title>Heat Advisory issued August 22 at 1:53AM CDT until August 22 at 9:00PM CDT by NWS Midland/Odessa TX</title>
+        <summary>* WHAT...Temperatures up to 95 to 101 degrees expected.
+
+* WHERE...In New Mexico, Guadalupe Mountains of Eddy County. In
+Texas, Central Brewster County County, and Chinati Mountains,
+Chisos Basin, Davis Mountains, Davis Mountains Foothills, and
+Guadalupe and Delaware Mountains.
+
+* WHEN...Until 8 PM MDT /9 PM CDT/ this evening.
+
+* IMPACTS...Pets may succumb to the effects of excessive heat. The
+elderly, very young, sick, and people with heart conditions are
+most at risk in extreme heat.</summary>
+        <cap:event>Heat Advisory</cap:event>
+        <cap:sent>2024-08-22T01:53:00-05:00</cap:sent>
+        <cap:effective>2024-08-22T01:53:00-05:00</cap:effective>
+        <cap:onset>2024-08-22T01:53:00-05:00</cap:onset>
+        <cap:expires>2024-08-22T21:00:00-05:00</cap:expires>
+        <cap:status>Actual</cap:status>
+        <cap:msgType>Alert</cap:msgType>
+        <cap:category>Met</cap:category>
+        <cap:urgency>Expected</cap:urgency>
+        <cap:severity>Moderate</cap:severity>
+        <cap:certainty>Likely</cap:certainty>
+        <cap:areaDesc>Guadalupe Mountains of Eddy County; Guadalupe and Delaware Mountains; Chinati Mountains; Davis Mountains; Davis Mountains Foothills; Central Brewster County; Chisos Basin</cap:areaDesc>
+        <cap:polygon/>
+        <cap:geocode>
+            <valueName>SAME</valueName>
+            <value>035015</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>SAME</valueName>
+            <value>048109</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>SAME</valueName>
+            <value>048377</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>SAME</valueName>
+            <value>048043</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>SAME</valueName>
+            <value>048243</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>SAME</valueName>
+            <value>048389</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>UGC</valueName>
+            <value>NMZ027</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>UGC</valueName>
+            <value>TXZ271</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>UGC</valueName>
+            <value>TXZ275</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>UGC</valueName>
+            <value>TXZ277</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>UGC</valueName>
+            <value>TXZ278</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>UGC</valueName>
+            <value>TXZ279</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>UGC</valueName>
+            <value>TXZ280</value>
+        </cap:geocode>
+        <cap:parameter>
+            <valueName>AWIPSidentifier</valueName>
+            <value>NPWMAF</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>WMOidentifier</valueName>
+            <value>WWUS74 KMAF 220653</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>NWSheadline</valueName>
+            <value>HEAT ADVISORY IN EFFECT UNTIL 8 PM MDT /9 PM CDT/ THIS EVENING</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>BLOCKCHANNEL</valueName>
+            <value>EAS</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>BLOCKCHANNEL</valueName>
+            <value>NWEM</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>BLOCKCHANNEL</valueName>
+            <value>CMAS</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>VTEC</valueName>
+            <value>/O.EXA.KMAF.HT.Y.0035.000000T0000Z-240823T0200Z/</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>eventEndingTime</valueName>
+            <value>2024-08-23T02:00:00+00:00</value>
+        </cap:parameter>
+    </entry>
+    <entry>
+        <id>https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.e59aadf255942d1df65af0ec7bedb9a54b0dc57d.001.1</id>
+        <link rel="alternate" href="https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.e59aadf255942d1df65af0ec7bedb9a54b0dc57d.001.1.cap"/>
+        <updated>2024-08-22T01:53:00-05:00</updated>
+        <published>2024-08-22T01:53:00-05:00</published>
+        <author>
+            <name>NWS</name>
+        </author>
+        <title>Excessive Heat Warning issued August 22 at 1:53AM CDT until August 22 at 9:00PM CDT by NWS Midland/Odessa TX</title>
+        <summary>* WHAT...Dangerously hot conditions with temperatures up to 112
+degrees expected.
+
+* WHERE...Western low rolling plains.
+
+* WHEN...Until 9 PM CDT this evening.
+
+* IMPACTS...Heat related illnesses increase significantly during
+extreme heat events.</summary>
+        <cap:event>Excessive Heat Warning</cap:event>
+        <cap:sent>2024-08-22T01:53:00-05:00</cap:sent>
+        <cap:effective>2024-08-22T01:53:00-05:00</cap:effective>
+        <cap:onset>2024-08-22T01:53:00-05:00</cap:onset>
+        <cap:expires>2024-08-22T21:00:00-05:00</cap:expires>
+        <cap:status>Actual</cap:status>
+        <cap:msgType>Update</cap:msgType>
+        <cap:category>Met</cap:category>
+        <cap:urgency>Expected</cap:urgency>
+        <cap:severity>Severe</cap:severity>
+        <cap:certainty>Likely</cap:certainty>
+        <cap:areaDesc>Scurry; Mitchell</cap:areaDesc>
+        <cap:polygon/>
+        <cap:geocode>
+            <valueName>SAME</valueName>
+            <value>048415</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>SAME</valueName>
+            <value>048335</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>UGC</valueName>
+            <value>TXZ048</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>UGC</valueName>
+            <value>TXZ053</value>
+        </cap:geocode>
+        <cap:parameter>
+            <valueName>AWIPSidentifier</valueName>
+            <value>NPWMAF</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>WMOidentifier</valueName>
+            <value>WWUS74 KMAF 220653</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>NWSheadline</valueName>
+            <value>EXCESSIVE HEAT WARNING REMAINS IN EFFECT UNTIL 9 PM CDT THIS EVENING</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>BLOCKCHANNEL</valueName>
+            <value>EAS</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>BLOCKCHANNEL</valueName>
+            <value>NWEM</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>BLOCKCHANNEL</valueName>
+            <value>CMAS</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>VTEC</valueName>
+            <value>/O.CON.KMAF.EH.W.0002.000000T0000Z-240823T0200Z/</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>eventEndingTime</valueName>
+            <value>2024-08-23T02:00:00+00:00</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>expiredReferences</valueName>
+            <value>w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.d91c77b58e172ede6a3147a3b2688b0102a9376f.001.1,2024-08-21T01:53:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.b8ad250d99e2a3e7a1c6c3aa380fccf67792b72e.001.1,2024-08-20T13:04:00-05:00</value>
         </cap:parameter>
     </entry>
     <entry>
