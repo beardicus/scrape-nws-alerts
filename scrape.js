@@ -17,7 +17,7 @@ async function scrape() {
   for (const entry of $("entry")) {
     const date = $("published", entry).text().split("T")[0]
     const link = $("link", entry).attr("href")
-    const id = link.split("/")[4]
+    const id = $("id", entry).text().split("/")[4]
     const directory = `data/${date}`
     const fullPath = `${directory}/${id}.xml`
 
