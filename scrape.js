@@ -1,23 +1,23 @@
-const { writeFile, mkdir, access } = require('fs').promises
-const cheerio = require('cheerio')
-const axios = require('axios')
+const { writeFile, mkdir, access } = require("fs").promises
+const cheerio = require("cheerio")
+const axios = require("axios")
 
 async function scrape() {
   let saved = 0
   let skipped = 0
 
   // fetch and save the atom feed
-  const feedData = await fetch('https://alerts.weather.gov/cap/us.php?x=0')
-  await save('data/feed.xml', feedData)
+  const feedData = await fetch("https://alerts.weather.gov/cap/us.php?x=0")
+  await save("data/feed.xml", feedData)
 
   // load the feed into the parser
   const $ = cheerio.load(feedData)
 
   // for each atom xml <entry>
-  for (const entry of $('entry')) {
-    const date = $('published', entry).text().split('T')[0]
-    const link = $('link', entry).attr('href')
-    const id = link.split('=')[1]
+  for (const entry of $("entry")) {
+    const date = $("published", entry).text().split("T")[0]
+    const link = $("link", entry).attr("href")
+    const id = link.split("/")[4]
     const directory = `data/${date}`
     const fullPath = `${directory}/${id}.xml`
 
