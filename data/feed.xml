@@ -2,53 +2,94 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xmlns:cap="urn:oasis:names:tc:emergency:cap:1.2">
     <id>https://api.weather.gov/alerts.atom?region_type=land&amp;limit=500&amp;active=1</id>
     <generator>NWS CAP Server</generator>
-    <updated>2025-04-19T10:03:19+00:00</updated>
+    <updated>2025-04-19T10:36:46+00:00</updated>
     <author>
         <name>w-nws.webmaster@noaa.gov</name>
     </author>
     <title>Current watches, warnings, and advisories for United States land zones</title>
     <link rel="self" href="https://api.weather.gov/alerts.atom?region_type=land&amp;limit=500&amp;active=1"/>
     <entry>
-        <id>https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0-KEEPALIVE-22705</id>
-        <link rel="alternate" href="https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0-KEEPALIVE-22705.cap"/>
-        <updated>2025-04-19T10:02:20+00:00</updated>
-        <published>2025-04-19T10:02:20+00:00</published>
+        <id>https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.3dc55f946100a6cf29f44270d0120725d125ef89.002.1</id>
+        <link rel="alternate" href="https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.3dc55f946100a6cf29f44270d0120725d125ef89.002.1.cap"/>
+        <updated>2025-04-19T06:36:00-04:00</updated>
+        <published>2025-04-19T06:36:00-04:00</published>
         <author>
             <name>NWS</name>
         </author>
-        <title/>
-        <summary>Monitoring message only. Please disregard.</summary>
-        <cap:event>Test Message</cap:event>
-        <cap:sent>2025-04-19T10:02:20+00:00</cap:sent>
-        <cap:effective>2025-04-19T10:02:20+00:00</cap:effective>
-        <cap:expires>2025-04-19T10:12:20+00:00</cap:expires>
-        <cap:status>Test</cap:status>
-        <cap:msgType>Alert</cap:msgType>
+        <title>Severe Thunderstorm Warning issued April 19 at 6:36AM EDT until April 19 at 7:00AM EDT by NWS Wilmington OH</title>
+        <summary>At 636 AM EDT, a severe thunderstorm was located over New Madison,
+moving east at 75 mph.
+
+HAZARD...60 mph wind gusts and penny size hail.
+
+SOURCE...Radar indicated.
+
+IMPACT...Expect damage to trees and power lines.
+
+Locations impacted include...
+Abbottsville, Greenville, Sharps Crossing, Arcanum, Wayne Lakes,
+Hollansburg, Rose Hill, New Madison, Cosmos, Union City, Sharpeye,
+and Palestine.</summary>
+        <cap:event>Severe Thunderstorm Warning</cap:event>
+        <cap:sent>2025-04-19T06:36:00-04:00</cap:sent>
+        <cap:effective>2025-04-19T06:36:00-04:00</cap:effective>
+        <cap:onset>2025-04-19T06:36:00-04:00</cap:onset>
+        <cap:expires>2025-04-19T07:00:00-04:00</cap:expires>
+        <cap:status>Actual</cap:status>
+        <cap:msgType>Update</cap:msgType>
         <cap:category>Met</cap:category>
-        <cap:urgency>Unknown</cap:urgency>
-        <cap:severity>Unknown</cap:severity>
-        <cap:certainty>Unknown</cap:certainty>
-        <cap:areaDesc>Montgomery</cap:areaDesc>
-        <cap:polygon/>
+        <cap:urgency>Immediate</cap:urgency>
+        <cap:severity>Severe</cap:severity>
+        <cap:certainty>Observed</cap:certainty>
+        <cap:areaDesc>Darke, OH; Preble, OH</cap:areaDesc>
+        <cap:polygon>39.96,-84.53 39.89,-84.81 40.32,-84.8 40.34,-84.73 39.96,-84.53</cap:polygon>
         <cap:geocode>
             <valueName>SAME</valueName>
-            <value>024031</value>
+            <value>039037</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>SAME</valueName>
+            <value>039135</value>
         </cap:geocode>
         <cap:geocode>
             <valueName>UGC</valueName>
-            <value>MDC031</value>
+            <value>OHC037</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>UGC</valueName>
+            <value>OHC135</value>
         </cap:geocode>
         <cap:parameter>
             <valueName>AWIPSidentifier</valueName>
-            <value>KEPWBC</value>
+            <value>SVSILN</value>
         </cap:parameter>
         <cap:parameter>
             <valueName>WMOidentifier</valueName>
-            <value>NZUS91 KWBC 191002</value>
+            <value>WWUS51 KILN 191036</value>
         </cap:parameter>
         <cap:parameter>
-            <valueName>BLOCKCHANNEL</valueName>
-            <value>CMAS</value>
+            <valueName>NWSheadline</valueName>
+            <value>A SEVERE THUNDERSTORM WARNING REMAINS IN EFFECT UNTIL 700 AM EDT FOR NORTHWESTERN PREBLE AND WESTERN DARKE COUNTIES</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>eventMotionDescription</valueName>
+            <value>2025-04-19T10:36:00-00:00...storm...249DEG...66KT...40.0,-84.73</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>windThreat</valueName>
+            <value>RADAR INDICATED</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>maxWindGust</valueName>
+            <value>60 MPH</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>hailThreat</valueName>
+            <value>RADAR INDICATED</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>maxHailSize</valueName>
+            <value>0.75</value>
         </cap:parameter>
         <cap:parameter>
             <valueName>BLOCKCHANNEL</valueName>
@@ -58,30 +99,36 @@
             <valueName>BLOCKCHANNEL</valueName>
             <value>NWEM</value>
         </cap:parameter>
+        <cap:parameter>
+            <valueName>BLOCKCHANNEL</valueName>
+            <value>CMAS</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>EAS-ORG</valueName>
+            <value>WXR</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>VTEC</valueName>
+            <value>/O.CON.KILN.SV.W.0064.000000T0000Z-250419T1100Z/</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>eventEndingTime</valueName>
+            <value>2025-04-19T11:00:00+00:00</value>
+        </cap:parameter>
     </entry>
     <entry>
-        <id>https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.ab90031aaa37eba9112b095baa947acf18255c26.001.1</id>
-        <link rel="alternate" href="https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.ab90031aaa37eba9112b095baa947acf18255c26.001.1.cap"/>
-        <updated>2025-04-19T05:02:00-05:00</updated>
-        <published>2025-04-19T05:02:00-05:00</published>
+        <id>https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.67f5f7dad96f6c4ed6150060177047333065cc86.002.1</id>
+        <link rel="alternate" href="https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.67f5f7dad96f6c4ed6150060177047333065cc86.002.1.cap"/>
+        <updated>2025-04-19T05:34:00-05:00</updated>
+        <published>2025-04-19T05:34:00-05:00</published>
         <author>
             <name>NWS</name>
         </author>
-        <title>Severe Thunderstorm Warning issued April 19 at 5:02AM CDT until April 19 at 5:45AM CDT by NWS St Louis MO</title>
-        <summary>SVRLSX
-
-The National Weather Service in St Louis has issued a
-
-* Severe Thunderstorm Warning for...
-Iron County in southeastern Missouri...
-Reynolds County in southeastern Missouri...
-
-* Until 545 AM CDT.
-
-* At 502 AM CDT, severe thunderstorms were located along a line from
-over Oates to 9 miles southwest of Ellington, or along a line from
-25 miles west of Ironton to 39 miles southwest of Ironton, moving
-east at 70 mph.
+        <title>Severe Thunderstorm Warning issued April 19 at 5:34AM CDT until April 19 at 5:45AM CDT by NWS St Louis MO</title>
+        <summary>At 534 AM CDT, severe thunderstorms were located along a line from
+near Roselle to 11 miles southwest of Saco, or along a line from 5
+miles northeast of Ironton to 25 miles south of Ironton, moving east
+at 60 mph.
 
 HAZARD...60 mph wind gusts.
 
@@ -89,55 +136,48 @@ SOURCE...Radar indicated.
 
 IMPACT...Expect damage to roofs, siding, and trees.
 
-* Locations impacted include...
-Ironton, Reynolds, Ellington, Pilot Knob, Arcadia, Annapolis,
-Glover, Oates, Belleview, Garwood, Roselle, Centerville, Des Arc,
-Lesterville, Redford, Black, Sabula, Chloride, Corridon and Hogan.
+Locations impacted include...
+Ironton, Pilot Knob, Arcadia, Annapolis, Glover, Belleview, Des
+Arc, Chloride, Hogan, Sabula, Granite and Vulcan.
 
 This includes the following State Parks...
-Johnsons Shut-Ins State Park, Fort Davidson Historic Site, Elephant
-Rocks State Park, Taum Sauk Mountain State Park and Clearwater Lake
-Recreational Area.</summary>
+Fort Davidson Historic Site and Elephant Rocks State Park.</summary>
         <cap:event>Severe Thunderstorm Warning</cap:event>
-        <cap:sent>2025-04-19T05:02:00-05:00</cap:sent>
-        <cap:effective>2025-04-19T05:02:00-05:00</cap:effective>
-        <cap:onset>2025-04-19T05:02:00-05:00</cap:onset>
+        <cap:sent>2025-04-19T05:34:00-05:00</cap:sent>
+        <cap:effective>2025-04-19T05:34:00-05:00</cap:effective>
+        <cap:onset>2025-04-19T05:34:00-05:00</cap:onset>
         <cap:expires>2025-04-19T05:45:00-05:00</cap:expires>
         <cap:status>Actual</cap:status>
-        <cap:msgType>Alert</cap:msgType>
+        <cap:msgType>Update</cap:msgType>
         <cap:category>Met</cap:category>
         <cap:urgency>Immediate</cap:urgency>
         <cap:severity>Severe</cap:severity>
         <cap:certainty>Observed</cap:certainty>
-        <cap:areaDesc>Iron, MO; Reynolds, MO</cap:areaDesc>
-        <cap:polygon>37.59,-91.25 37.59,-91.16 37.64,-91.15 37.7299999,-90.65 37.64,-90.65 37.64,-90.53 37.27,-90.55 37.27,-90.74 37.05,-90.78 37.05,-90.9599999 37.1,-90.9599999 37.1,-91.02 37.17,-91.03 37.2,-91.13 37.25,-91.12 37.31,-91.18 37.4099999,-91.18 37.42,-91.2099999 37.5,-91.2099999 37.5,-91.25 37.59,-91.25</cap:polygon>
+        <cap:areaDesc>Iron, MO</cap:areaDesc>
+        <cap:polygon>37.62,-90.54 37.6,-90.54 37.6,-90.55 37.27,-90.55 37.27,-90.75 37.37,-90.75 37.37,-90.77 37.6,-90.77 37.6,-90.81 37.7,-90.8 37.7299999,-90.65 37.64,-90.65 37.64,-90.53 37.63,-90.54 37.62,-90.54</cap:polygon>
         <cap:geocode>
             <valueName>SAME</valueName>
             <value>029093</value>
         </cap:geocode>
         <cap:geocode>
-            <valueName>SAME</valueName>
-            <value>029179</value>
-        </cap:geocode>
-        <cap:geocode>
             <valueName>UGC</valueName>
             <value>MOC093</value>
         </cap:geocode>
-        <cap:geocode>
-            <valueName>UGC</valueName>
-            <value>MOC179</value>
-        </cap:geocode>
         <cap:parameter>
             <valueName>AWIPSidentifier</valueName>
-            <value>SVRLSX</value>
+            <value>SVSLSX</value>
         </cap:parameter>
         <cap:parameter>
             <valueName>WMOidentifier</valueName>
-            <value>WUUS53 KLSX 191002</value>
+            <value>WWUS53 KLSX 191034</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>NWSheadline</valueName>
+            <value>SEVERE THUNDERSTORM WARNING REMAINS IN EFFECT UNTIL 545 AM CDT FOR IRON COUNTY</value>
         </cap:parameter>
         <cap:parameter>
             <valueName>eventMotionDescription</valueName>
-            <value>2025-04-19T10:02:00-00:00...storm...256DEG...61KT...37.56,-91.11 37.36,-91.11 37.15,-91.11</value>
+            <value>2025-04-19T10:19:00-00:00...storm...257DEG...55KT...37.6,-90.83 37.39,-90.83 37.19,-90.83</value>
         </cap:parameter>
         <cap:parameter>
             <valueName>windThreat</valueName>
@@ -177,7 +217,7 @@ Recreational Area.</summary>
         </cap:parameter>
         <cap:parameter>
             <valueName>VTEC</valueName>
-            <value>/O.NEW.KLSX.SV.W.0085.250419T1002Z-250419T1045Z/</value>
+            <value>/O.CON.KLSX.SV.W.0085.000000T0000Z-250419T1045Z/</value>
         </cap:parameter>
         <cap:parameter>
             <valueName>eventEndingTime</valueName>
@@ -185,108 +225,139 @@ Recreational Area.</summary>
         </cap:parameter>
     </entry>
     <entry>
-        <id>https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.c34c31fcb5b35bd2c97e57da68fadc1d99595b1d.002.1</id>
-        <link rel="alternate" href="https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.c34c31fcb5b35bd2c97e57da68fadc1d99595b1d.002.1.cap"/>
-        <updated>2025-04-19T06:01:00-04:00</updated>
-        <published>2025-04-19T06:01:00-04:00</published>
+        <id>https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0-KEEPALIVE-18619</id>
+        <link rel="alternate" href="https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0-KEEPALIVE-18619.cap"/>
+        <updated>2025-04-19T10:32:20+00:00</updated>
+        <published>2025-04-19T10:32:20+00:00</published>
         <author>
             <name>NWS</name>
         </author>
-        <title>Severe Thunderstorm Warning issued April 19 at 6:01AM EDT until April 19 at 6:30AM EDT by NWS Indianapolis IN</title>
-        <summary>At 600 AM EDT, severe thunderstorms were located along a line
-extending from 8 miles northwest of Anderson to 7 miles east of
-Greenfield, moving northeast at 75 mph.
+        <title/>
+        <summary>Monitoring message only. Please disregard.</summary>
+        <cap:event>Test Message</cap:event>
+        <cap:sent>2025-04-19T10:32:20+00:00</cap:sent>
+        <cap:effective>2025-04-19T10:32:20+00:00</cap:effective>
+        <cap:expires>2025-04-19T10:42:20+00:00</cap:expires>
+        <cap:status>Test</cap:status>
+        <cap:msgType>Alert</cap:msgType>
+        <cap:category>Met</cap:category>
+        <cap:urgency>Unknown</cap:urgency>
+        <cap:severity>Unknown</cap:severity>
+        <cap:certainty>Unknown</cap:certainty>
+        <cap:areaDesc>Montgomery</cap:areaDesc>
+        <cap:polygon/>
+        <cap:geocode>
+            <valueName>SAME</valueName>
+            <value>024031</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>UGC</valueName>
+            <value>MDC031</value>
+        </cap:geocode>
+        <cap:parameter>
+            <valueName>AWIPSidentifier</valueName>
+            <value>KEPWBC</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>WMOidentifier</valueName>
+            <value>NZUS91 KWBC 191032</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>BLOCKCHANNEL</valueName>
+            <value>CMAS</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>BLOCKCHANNEL</valueName>
+            <value>EAS</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>BLOCKCHANNEL</valueName>
+            <value>NWEM</value>
+        </cap:parameter>
+    </entry>
+    <entry>
+        <id>https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.0a20249b0dc46317d190661067ce431b9507c5db.001.1</id>
+        <link rel="alternate" href="https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.0a20249b0dc46317d190661067ce431b9507c5db.001.1.cap"/>
+        <updated>2025-04-19T05:32:00-05:00</updated>
+        <published>2025-04-19T05:32:00-05:00</published>
+        <author>
+            <name>NWS</name>
+        </author>
+        <title>Severe Thunderstorm Warning issued April 19 at 5:32AM CDT until April 19 at 6:15AM CDT by NWS St Louis MO</title>
+        <summary>SVRLSX
 
-THESE ARE DESTRUCTIVE STORMS FOR SOUTHEAST MADISON...NORTHWEST HENRY
-AND SOUTHERN DELAWARE COUNTIES.
+The National Weather Service in St Louis has issued a
 
-HAZARD...80 mph wind gusts.
+* Severe Thunderstorm Warning for...
+Madison County in southeastern Missouri...
+Southeastern Sainte Genevieve County in southeastern Missouri...
+Southern Saint Francois County in southeastern Missouri...
+
+* Until 615 AM CDT.
+
+* At 532 AM CDT, severe thunderstorms were located along a line from
+over Roselle to 16 miles southwest of Saco, or along a line from
+near Ironton to 31 miles south of Ironton, moving east at 60 mph.
+
+HAZARD...60 mph wind gusts.
 
 SOURCE...Radar indicated.
 
-IMPACT...Flying debris will be dangerous to those caught without
-shelter. Mobile homes will be heavily damaged. Expect
-considerable damage to roofs, windows, and vehicles.
-Extensive tree damage and power outages are likely.
+IMPACT...Expect damage to roofs, siding, and trees.
 
-Locations impacted include...
-Summit Lake State Park, Greensboro, Ingalls, Cadiz, New Castle, Ball
-State University, Selma, Muncie, River Forest, Sulphur Springs,
-Daleville, Kennard, Shirley, Mooreland, Albany, Edgewood, Pendleton,
-Springport, Wilkinson, and Anderson.
-
-This includes the following highways...
-Interstate 69 between mile markers 216 and 241.
-Interstate 70 between mile markers 103 and 113, and between mile
-markers 115 and 116.</summary>
+* Locations impacted include...
+Farmington, Fredericktown, Iron Mountain Lake, Junction City,
+Cobalt, Marquand, Knob Lick, Womac, Roselle, Saco, Buckhorn,
+Coffman, Iron Mountain, Catherine Place, Mine La Motte,
+Libertyville, Doe Run and Minnith.</summary>
         <cap:event>Severe Thunderstorm Warning</cap:event>
-        <cap:sent>2025-04-19T06:01:00-04:00</cap:sent>
-        <cap:effective>2025-04-19T06:01:00-04:00</cap:effective>
-        <cap:onset>2025-04-19T06:01:00-04:00</cap:onset>
-        <cap:expires>2025-04-19T06:30:00-04:00</cap:expires>
+        <cap:sent>2025-04-19T05:32:00-05:00</cap:sent>
+        <cap:effective>2025-04-19T05:32:00-05:00</cap:effective>
+        <cap:onset>2025-04-19T05:32:00-05:00</cap:onset>
+        <cap:expires>2025-04-19T06:15:00-05:00</cap:expires>
         <cap:status>Actual</cap:status>
-        <cap:msgType>Update</cap:msgType>
+        <cap:msgType>Alert</cap:msgType>
         <cap:category>Met</cap:category>
         <cap:urgency>Immediate</cap:urgency>
         <cap:severity>Severe</cap:severity>
         <cap:certainty>Observed</cap:certainty>
-        <cap:areaDesc>Delaware, IN; Hancock, IN; Henry, IN; Madison, IN; Randolph, IN</cap:areaDesc>
-        <cap:polygon>39.78,-85.78 40.12,-85.86 40.35,-85.22 39.93,-85.2 39.78,-85.78</cap:polygon>
+        <cap:areaDesc>Madison, MO; Ste. Genevieve, MO; St. Francois, MO</cap:areaDesc>
+        <cap:polygon>37.64,-90.53 37.64,-90.65 37.7299999,-90.65 37.85,-89.97 37.64,-90.15 37.31,-90.15 37.32,-90.55 37.6,-90.55 37.6,-90.54 37.64,-90.53</cap:polygon>
         <cap:geocode>
             <valueName>SAME</valueName>
-            <value>018035</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>SAME</valueName>
-            <value>018059</value>
+            <value>029123</value>
         </cap:geocode>
         <cap:geocode>
             <valueName>SAME</valueName>
-            <value>018065</value>
+            <value>029186</value>
         </cap:geocode>
         <cap:geocode>
             <valueName>SAME</valueName>
-            <value>018095</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>SAME</valueName>
-            <value>018135</value>
+            <value>029187</value>
         </cap:geocode>
         <cap:geocode>
             <valueName>UGC</valueName>
-            <value>INC035</value>
+            <value>MOC123</value>
         </cap:geocode>
         <cap:geocode>
             <valueName>UGC</valueName>
-            <value>INC059</value>
+            <value>MOC186</value>
         </cap:geocode>
         <cap:geocode>
             <valueName>UGC</valueName>
-            <value>INC065</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>UGC</valueName>
-            <value>INC095</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>UGC</valueName>
-            <value>INC135</value>
+            <value>MOC187</value>
         </cap:geocode>
         <cap:parameter>
             <valueName>AWIPSidentifier</valueName>
-            <value>SVSIND</value>
+            <value>SVRLSX</value>
         </cap:parameter>
         <cap:parameter>
             <valueName>WMOidentifier</valueName>
-            <value>WWUS53 KIND 191001</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>NWSheadline</valueName>
-            <value>A SEVERE THUNDERSTORM WARNING REMAINS IN EFFECT UNTIL 630 AM EDT FOR SOUTHERN MADISON...NORTHEASTERN HANCOCK...SOUTHWESTERN RANDOLPH...DELAWARE AND HENRY COUNTIES</value>
+            <value>WUUS53 KLSX 191032</value>
         </cap:parameter>
         <cap:parameter>
             <valueName>eventMotionDescription</valueName>
-            <value>2025-04-19T10:00:00-00:00...storm...243DEG...64KT...40.14,-85.82 39.81,-85.63</value>
+            <value>2025-04-19T10:32:00-00:00...storm...269DEG...61KT...37.63,-90.58 37.39,-90.54 37.16,-90.57</value>
         </cap:parameter>
         <cap:parameter>
             <valueName>windThreat</valueName>
@@ -294,7 +365,7 @@ markers 115 and 116.</summary>
         </cap:parameter>
         <cap:parameter>
             <valueName>maxWindGust</valueName>
-            <value>80 MPH</value>
+            <value>60 MPH</value>
         </cap:parameter>
         <cap:parameter>
             <valueName>hailThreat</valueName>
@@ -302,11 +373,7 @@ markers 115 and 116.</summary>
         </cap:parameter>
         <cap:parameter>
             <valueName>maxHailSize</valueName>
-            <value>Up to .75</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>thunderstormDamageThreat</valueName>
-            <value>DESTRUCTIVE</value>
+            <value>0.00</value>
         </cap:parameter>
         <cap:parameter>
             <valueName>BLOCKCHANNEL</valueName>
@@ -326,11 +393,837 @@ markers 115 and 116.</summary>
         </cap:parameter>
         <cap:parameter>
             <valueName>VTEC</valueName>
-            <value>/O.CON.KIND.SV.W.0084.000000T0000Z-250419T1030Z/</value>
+            <value>/O.NEW.KLSX.SV.W.0086.250419T1032Z-250419T1115Z/</value>
         </cap:parameter>
         <cap:parameter>
             <valueName>eventEndingTime</valueName>
-            <value>2025-04-19T10:30:00+00:00</value>
+            <value>2025-04-19T11:15:00+00:00</value>
+        </cap:parameter>
+    </entry>
+    <entry>
+        <id>https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.944d1e9d52aa960739c9e4082a35420e9cfd3bef.001.1</id>
+        <link rel="alternate" href="https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.944d1e9d52aa960739c9e4082a35420e9cfd3bef.001.1.cap"/>
+        <updated>2025-04-19T06:31:00-04:00</updated>
+        <published>2025-04-19T06:31:00-04:00</published>
+        <author>
+            <name>NWS</name>
+        </author>
+        <title>Severe Thunderstorm Warning issued April 19 at 6:31AM EDT until April 19 at 7:00AM EDT by NWS Wilmington OH</title>
+        <summary>SVRILN
+
+The National Weather Service in Wilmington has issued a
+
+* Severe Thunderstorm Warning for...
+Shelby County in west central Ohio...
+Darke County in west central Ohio...
+Southwestern Auglaize County in west central Ohio...
+Southeastern Mercer County in west central Ohio...
+Miami County in west central Ohio...
+
+* Until 700 AM EDT.
+
+* At 631 AM EDT, a severe thunderstorm was located over Union City,
+moving northeast at 75 mph.
+
+HAZARD...60 mph wind gusts and penny size hail.
+
+SOURCE...Radar indicated.
+
+IMPACT...Expect damage to trees and power lines.
+
+* Locations impacted include...
+New Weston, Casstown, Union Corners, Newbern, Bradford, Potsdam,
+Lockington, New Bremen, Darke County Airport, Covington, State
+Route 47 at US Route 127, Eldora Speedway, Fort Loramie, Osgood,
+Hardin, Piqua, Bloomer, Greenville, Lake Loramie State Park, and
+Arcanum.
+
+This includes I-75 in Ohio between mile markers 72 and 96.</summary>
+        <cap:event>Severe Thunderstorm Warning</cap:event>
+        <cap:sent>2025-04-19T06:31:00-04:00</cap:sent>
+        <cap:effective>2025-04-19T06:31:00-04:00</cap:effective>
+        <cap:onset>2025-04-19T06:31:00-04:00</cap:onset>
+        <cap:expires>2025-04-19T07:00:00-04:00</cap:expires>
+        <cap:status>Actual</cap:status>
+        <cap:msgType>Alert</cap:msgType>
+        <cap:category>Met</cap:category>
+        <cap:urgency>Immediate</cap:urgency>
+        <cap:severity>Severe</cap:severity>
+        <cap:certainty>Observed</cap:certainty>
+        <cap:areaDesc>Auglaize, OH; Darke, OH; Mercer, OH; Miami, OH; Shelby, OH</cap:areaDesc>
+        <cap:polygon>40.52,-84.23 40.06,-84.04 39.92,-84.54 39.92,-84.6 40.33,-84.8 40.52,-84.23</cap:polygon>
+        <cap:geocode>
+            <valueName>SAME</valueName>
+            <value>039011</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>SAME</valueName>
+            <value>039037</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>SAME</valueName>
+            <value>039107</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>SAME</valueName>
+            <value>039109</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>SAME</valueName>
+            <value>039149</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>UGC</valueName>
+            <value>OHC011</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>UGC</valueName>
+            <value>OHC037</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>UGC</valueName>
+            <value>OHC107</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>UGC</valueName>
+            <value>OHC109</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>UGC</valueName>
+            <value>OHC149</value>
+        </cap:geocode>
+        <cap:parameter>
+            <valueName>AWIPSidentifier</valueName>
+            <value>SVRILN</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>WMOidentifier</valueName>
+            <value>WUUS51 KILN 191031</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>eventMotionDescription</valueName>
+            <value>2025-04-19T10:31:00-00:00...storm...240DEG...66KT...40.2,-84.83</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>windThreat</valueName>
+            <value>RADAR INDICATED</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>maxWindGust</valueName>
+            <value>60 MPH</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>hailThreat</valueName>
+            <value>RADAR INDICATED</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>maxHailSize</valueName>
+            <value>0.75</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>BLOCKCHANNEL</valueName>
+            <value>EAS</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>BLOCKCHANNEL</valueName>
+            <value>NWEM</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>BLOCKCHANNEL</valueName>
+            <value>CMAS</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>EAS-ORG</valueName>
+            <value>WXR</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>VTEC</valueName>
+            <value>/O.NEW.KILN.SV.W.0066.250419T1031Z-250419T1100Z/</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>eventEndingTime</valueName>
+            <value>2025-04-19T11:00:00+00:00</value>
+        </cap:parameter>
+    </entry>
+    <entry>
+        <id>https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.c2ba936ddfb50c085ce7f02ba9b59411a66c8ac7.002.1</id>
+        <link rel="alternate" href="https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.c2ba936ddfb50c085ce7f02ba9b59411a66c8ac7.002.1.cap"/>
+        <updated>2025-04-19T06:29:00-04:00</updated>
+        <published>2025-04-19T06:29:00-04:00</published>
+        <author>
+            <name>NWS</name>
+        </author>
+        <title>Severe Thunderstorm Warning issued April 19 at 6:29AM EDT until April 19 at 6:45AM EDT by NWS Indianapolis IN</title>
+        <summary>At 627 AM EDT, severe thunderstorms were located along a line
+extending from near Dunkirk to near Centerville, moving northeast at
+70 mph.
+
+HAZARD...70 mph wind gusts.
+
+SOURCE...Radar indicated.
+
+IMPACT...Expect considerable tree damage. Damage is likely to mobile
+homes, roofs, and outbuildings.
+
+Locations impacted include...
+Saratoga, Modoc, Farmland, Lynn, Winchester, Union City, and
+Ridgeville.</summary>
+        <cap:event>Severe Thunderstorm Warning</cap:event>
+        <cap:sent>2025-04-19T06:29:00-04:00</cap:sent>
+        <cap:effective>2025-04-19T06:29:00-04:00</cap:effective>
+        <cap:onset>2025-04-19T06:29:00-04:00</cap:onset>
+        <cap:expires>2025-04-19T06:45:00-04:00</cap:expires>
+        <cap:status>Actual</cap:status>
+        <cap:msgType>Update</cap:msgType>
+        <cap:category>Met</cap:category>
+        <cap:urgency>Immediate</cap:urgency>
+        <cap:severity>Severe</cap:severity>
+        <cap:certainty>Observed</cap:certainty>
+        <cap:areaDesc>Randolph, IN</cap:areaDesc>
+        <cap:polygon>40.01,-85.13 40.31,-85.22 40.31,-84.8 40.01,-84.81 40.01,-85.13</cap:polygon>
+        <cap:geocode>
+            <valueName>SAME</valueName>
+            <value>018135</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>UGC</valueName>
+            <value>INC135</value>
+        </cap:geocode>
+        <cap:parameter>
+            <valueName>AWIPSidentifier</valueName>
+            <value>SVSIND</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>WMOidentifier</valueName>
+            <value>WWUS53 KIND 191029</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>NWSheadline</valueName>
+            <value>A SEVERE THUNDERSTORM WARNING REMAINS IN EFFECT UNTIL 645 AM EDT FOR RANDOLPH COUNTY</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>eventMotionDescription</valueName>
+            <value>2025-04-19T10:27:00-00:00...storm...247DEG...63KT...40.42,-85.19 39.85,-85.08</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>windThreat</valueName>
+            <value>RADAR INDICATED</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>maxWindGust</valueName>
+            <value>70 MPH</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>hailThreat</valueName>
+            <value>RADAR INDICATED</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>maxHailSize</valueName>
+            <value>Up to .75</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>thunderstormDamageThreat</valueName>
+            <value>CONSIDERABLE</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>BLOCKCHANNEL</valueName>
+            <value>EAS</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>BLOCKCHANNEL</valueName>
+            <value>NWEM</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>BLOCKCHANNEL</valueName>
+            <value>CMAS</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>EAS-ORG</valueName>
+            <value>WXR</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>VTEC</valueName>
+            <value>/O.CON.KIND.SV.W.0085.000000T0000Z-250419T1045Z/</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>eventEndingTime</valueName>
+            <value>2025-04-19T10:45:00+00:00</value>
+        </cap:parameter>
+    </entry>
+    <entry>
+        <id>https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.637e76879e24a92f8ce6aa7e55cea8be4b883d6f.001.1</id>
+        <link rel="alternate" href="https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.637e76879e24a92f8ce6aa7e55cea8be4b883d6f.001.1.cap"/>
+        <updated>2025-04-19T06:28:00-04:00</updated>
+        <published>2025-04-19T06:28:00-04:00</published>
+        <author>
+            <name>NWS</name>
+        </author>
+        <title>Special Weather Statement issued April 19 at 6:28AM EDT by NWS Northern Indiana</title>
+        <summary>At 628 AM EDT, Doppler radar was tracking a strong thunderstorm over
+Andrews, or near Huntington, moving northeast at 70 mph.
+
+HAZARD...Wind gusts of 50 to 55 mph and nickel size hail.
+
+SOURCE...Radar indicated.
+
+IMPACT...Gusty winds could knock down tree limbs and blow around
+unsecured objects. Minor hail damage to vegetation is
+possible.
+
+Locations impacted include...
+Laud, Churubusco, Blue Lake, Aboite, Huntington, Roanoke, Raber,
+Arcola, Bippus, Rolling Hills, Lake Everett, Luther, Peabody, Nine
+Mile, Bowerstown, Dunfee, Andrews, Bracken, Goblesville, and Coesse.
+
+This includes the following highways...
+Interstate 469 between mile markers 7 and 8.
+Interstate 69 in Indiana between mile markers 291 and 292, and
+between mile markers 294 and 311.</summary>
+        <cap:event>Special Weather Statement</cap:event>
+        <cap:sent>2025-04-19T06:28:00-04:00</cap:sent>
+        <cap:effective>2025-04-19T06:28:00-04:00</cap:effective>
+        <cap:onset>2025-04-19T06:28:00-04:00</cap:onset>
+        <cap:expires>2025-04-19T07:00:00-04:00</cap:expires>
+        <cap:status>Actual</cap:status>
+        <cap:msgType>Alert</cap:msgType>
+        <cap:category>Met</cap:category>
+        <cap:urgency>Expected</cap:urgency>
+        <cap:severity>Moderate</cap:severity>
+        <cap:certainty>Observed</cap:certainty>
+        <cap:areaDesc>Whitley; Allen; Wabash; Huntington</cap:areaDesc>
+        <cap:polygon>40.85,-85.79 41.26,-85.35 41.26,-85.33 41.07,-85.0699999 40.92,-85.31 40.92,-85.33 40.9,-85.33 40.72,-85.61 40.85,-85.79</cap:polygon>
+        <cap:geocode>
+            <valueName>SAME</valueName>
+            <value>018183</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>SAME</valueName>
+            <value>018003</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>SAME</valueName>
+            <value>018169</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>SAME</valueName>
+            <value>018069</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>UGC</valueName>
+            <value>INZ017</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>UGC</valueName>
+            <value>INZ018</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>UGC</valueName>
+            <value>INZ024</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>UGC</valueName>
+            <value>INZ025</value>
+        </cap:geocode>
+        <cap:parameter>
+            <valueName>AWIPSidentifier</valueName>
+            <value>SPSIWX</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>WMOidentifier</valueName>
+            <value>WWUS83 KIWX 191028</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>NWSheadline</valueName>
+            <value>A STRONG THUNDERSTORM WILL IMPACT SOUTHWESTERN ALLEN...EAST CENTRAL WABASH...SOUTHEASTERN WHITLEY AND NORTHERN HUNTINGTON COUNTIES THROUGH 700 AM EDT</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>eventMotionDescription</valueName>
+            <value>2025-04-19T10:28:00-00:00...storm...227DEG...61KT...40.85,-85.6</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>maxWindGust</valueName>
+            <value>55 MPH</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>maxHailSize</valueName>
+            <value>0.88</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>BLOCKCHANNEL</valueName>
+            <value>EAS</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>BLOCKCHANNEL</valueName>
+            <value>NWEM</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>BLOCKCHANNEL</valueName>
+            <value>CMAS</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>EAS-ORG</valueName>
+            <value>WXR</value>
+        </cap:parameter>
+    </entry>
+    <entry>
+        <id>https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.57d76fcfe028f0b03e88339e359223259c10abc4.001.1</id>
+        <link rel="alternate" href="https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.57d76fcfe028f0b03e88339e359223259c10abc4.001.1.cap"/>
+        <updated>2025-04-19T06:25:00-04:00</updated>
+        <published>2025-04-19T06:25:00-04:00</published>
+        <author>
+            <name>NWS</name>
+        </author>
+        <title>Severe Thunderstorm Warning issued April 19 at 6:25AM EDT until April 19 at 7:00AM EDT by NWS Wilmington OH</title>
+        <summary>SVRILN
+
+The National Weather Service in Wilmington has issued a
+
+* Severe Thunderstorm Warning for...
+North central Shelby County in west central Ohio...
+Northwestern Darke County in west central Ohio...
+Northwestern Auglaize County in west central Ohio...
+Mercer County in west central Ohio...
+
+* Until 700 AM EDT.
+
+* At 625 AM EDT, a severe thunderstorm was located over Portland,
+moving northeast at 70 mph.
+
+HAZARD...60 mph wind gusts and penny size hail.
+
+SOURCE...Radar indicated.
+
+IMPACT...Expect damage to trees and power lines.
+
+* Locations impacted include...
+New Weston, Wabash, Tama, Chickasaw, New Bremen, Fort Recovery,
+Rose Hill, Maria Stein, New Knoxville, Neptune, Moulton, Coldwater,
+St. Marys, Chattanooga, Kossuth, Celina, North Dayton, Mendon,
+Burkettsville, and Montezuma.</summary>
+        <cap:event>Severe Thunderstorm Warning</cap:event>
+        <cap:sent>2025-04-19T06:25:00-04:00</cap:sent>
+        <cap:effective>2025-04-19T06:25:00-04:00</cap:effective>
+        <cap:onset>2025-04-19T06:25:00-04:00</cap:onset>
+        <cap:expires>2025-04-19T07:00:00-04:00</cap:expires>
+        <cap:status>Actual</cap:status>
+        <cap:msgType>Alert</cap:msgType>
+        <cap:category>Met</cap:category>
+        <cap:urgency>Immediate</cap:urgency>
+        <cap:severity>Severe</cap:severity>
+        <cap:certainty>Observed</cap:certainty>
+        <cap:areaDesc>Auglaize, OH; Darke, OH; Mercer, OH; Shelby, OH</cap:areaDesc>
+        <cap:polygon>40.7299999,-84.4599999 40.68,-84.45 40.69,-84.3199999 40.47,-84.23 40.28,-84.8 40.7299999,-84.8 40.7299999,-84.4599999</cap:polygon>
+        <cap:geocode>
+            <valueName>SAME</valueName>
+            <value>039011</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>SAME</valueName>
+            <value>039037</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>SAME</valueName>
+            <value>039107</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>SAME</valueName>
+            <value>039149</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>UGC</valueName>
+            <value>OHC011</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>UGC</valueName>
+            <value>OHC037</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>UGC</valueName>
+            <value>OHC107</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>UGC</valueName>
+            <value>OHC149</value>
+        </cap:geocode>
+        <cap:parameter>
+            <valueName>AWIPSidentifier</valueName>
+            <value>SVRILN</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>WMOidentifier</valueName>
+            <value>WUUS51 KILN 191025</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>eventMotionDescription</valueName>
+            <value>2025-04-19T10:25:00-00:00...storm...244DEG...62KT...40.43,-84.97</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>windThreat</valueName>
+            <value>RADAR INDICATED</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>maxWindGust</valueName>
+            <value>60 MPH</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>hailThreat</valueName>
+            <value>RADAR INDICATED</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>maxHailSize</valueName>
+            <value>0.75</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>BLOCKCHANNEL</valueName>
+            <value>EAS</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>BLOCKCHANNEL</valueName>
+            <value>NWEM</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>BLOCKCHANNEL</valueName>
+            <value>CMAS</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>EAS-ORG</valueName>
+            <value>WXR</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>VTEC</valueName>
+            <value>/O.NEW.KILN.SV.W.0065.250419T1025Z-250419T1100Z/</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>eventEndingTime</valueName>
+            <value>2025-04-19T11:00:00+00:00</value>
+        </cap:parameter>
+    </entry>
+    <entry>
+        <id>https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.4f920ba61cfaa17d5ff3bbf9d7d423023f0fd83c.001.1</id>
+        <link rel="alternate" href="https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.4f920ba61cfaa17d5ff3bbf9d7d423023f0fd83c.001.1.cap"/>
+        <updated>2025-04-19T05:19:00-05:00</updated>
+        <published>2025-04-19T05:19:00-05:00</published>
+        <author>
+            <name>NWS</name>
+        </author>
+        <title>Severe Thunderstorm Warning issued April 19 at 5:19AM CDT until April 19 at 6:00AM CDT by NWS Paducah KY</title>
+        <summary>SVRPAH
+
+The National Weather Service in Paducah has issued a
+
+* Severe Thunderstorm Warning for...
+Northern Wayne County in southeastern Missouri...
+
+* Until 600 AM CDT.
+
+* At 518 AM CDT, a severe thunderstorm was located near Garwood, or 9
+miles west of Piedmont, moving east at 55 mph.
+
+HAZARD...60 mph wind gusts and quarter size hail.
+
+SOURCE...Radar indicated.
+
+IMPACT...Hail damage to vehicles is expected. Expect wind damage
+to roofs, siding, and trees.
+
+* Locations impacted include...
+Piedmont, Lodi, Sam A. Baker State Park, Greenville, and Cascade.</summary>
+        <cap:event>Severe Thunderstorm Warning</cap:event>
+        <cap:sent>2025-04-19T05:19:00-05:00</cap:sent>
+        <cap:effective>2025-04-19T05:19:00-05:00</cap:effective>
+        <cap:onset>2025-04-19T05:19:00-05:00</cap:onset>
+        <cap:expires>2025-04-19T06:00:00-05:00</cap:expires>
+        <cap:status>Actual</cap:status>
+        <cap:msgType>Alert</cap:msgType>
+        <cap:category>Met</cap:category>
+        <cap:urgency>Immediate</cap:urgency>
+        <cap:severity>Severe</cap:severity>
+        <cap:certainty>Observed</cap:certainty>
+        <cap:areaDesc>Wayne, MO</cap:areaDesc>
+        <cap:polygon>37.14,-90.78 37.14,-90.76 37.17,-90.76 37.17,-90.74 37.27,-90.73 37.27,-90.55 37.32,-90.55 37.31,-90.22 37.14,-90.23 37.06,-90.78 37.14,-90.78</cap:polygon>
+        <cap:geocode>
+            <valueName>SAME</valueName>
+            <value>029223</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>UGC</valueName>
+            <value>MOC223</value>
+        </cap:geocode>
+        <cap:parameter>
+            <valueName>AWIPSidentifier</valueName>
+            <value>SVRPAH</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>WMOidentifier</valueName>
+            <value>WUUS53 KPAH 191019</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>eventMotionDescription</valueName>
+            <value>2025-04-19T10:18:00-00:00...storm...256DEG...48KT...37.16,-90.87</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>windThreat</valueName>
+            <value>RADAR INDICATED</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>maxWindGust</valueName>
+            <value>60 MPH</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>hailThreat</valueName>
+            <value>RADAR INDICATED</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>maxHailSize</valueName>
+            <value>1.00</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>BLOCKCHANNEL</valueName>
+            <value>EAS</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>BLOCKCHANNEL</valueName>
+            <value>NWEM</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>BLOCKCHANNEL</valueName>
+            <value>CMAS</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>EAS-ORG</valueName>
+            <value>WXR</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>VTEC</valueName>
+            <value>/O.NEW.KPAH.SV.W.0178.250419T1019Z-250419T1100Z/</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>eventEndingTime</valueName>
+            <value>2025-04-19T11:00:00+00:00</value>
+        </cap:parameter>
+    </entry>
+    <entry>
+        <id>https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.4cdb1d17b183658bf025a769f099585d88d02689.001.1</id>
+        <link rel="alternate" href="https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.4cdb1d17b183658bf025a769f099585d88d02689.001.1.cap"/>
+        <updated>2025-04-19T06:16:00-04:00</updated>
+        <published>2025-04-19T06:16:00-04:00</published>
+        <author>
+            <name>NWS</name>
+        </author>
+        <title>Severe Thunderstorm Warning issued April 19 at 6:16AM EDT until April 19 at 7:00AM EDT by NWS Northern Indiana</title>
+        <summary>SVRIWX
+
+The National Weather Service in Northern Indiana has issued a
+
+* Severe Thunderstorm Warning for...
+Southeastern Blackford County in east central Indiana...
+Jay County in east central Indiana...
+
+* Until 700 AM EDT.
+
+* At 616 AM EDT, a severe thunderstorm was located near Muncie,
+moving northeast at 75 mph.
+
+HAZARD...70 mph wind gusts.
+
+SOURCE...Radar indicated.
+
+IMPACT...Expect considerable tree damage. Damage is likely to
+mobile homes, roofs, and outbuildings.
+
+* Locations impacted include...
+Westchester, Center, Portland, Trinity, Redkey, Brice, Mill Grove,
+Como, Bellfountain, College Corner, Boundary City, Liber, Blaine,
+Collett, Bluff Point, Powers, Dunkirk, New Mount Pleasant, and
+Salamonia.</summary>
+        <cap:event>Severe Thunderstorm Warning</cap:event>
+        <cap:sent>2025-04-19T06:16:00-04:00</cap:sent>
+        <cap:effective>2025-04-19T06:16:00-04:00</cap:effective>
+        <cap:onset>2025-04-19T06:16:00-04:00</cap:onset>
+        <cap:expires>2025-04-19T07:00:00-04:00</cap:expires>
+        <cap:status>Actual</cap:status>
+        <cap:msgType>Alert</cap:msgType>
+        <cap:category>Met</cap:category>
+        <cap:urgency>Immediate</cap:urgency>
+        <cap:severity>Severe</cap:severity>
+        <cap:certainty>Observed</cap:certainty>
+        <cap:areaDesc>Blackford, IN; Jay, IN</cap:areaDesc>
+        <cap:polygon>40.38,-85.22 40.38,-85.41 40.57,-84.8199999 40.57,-84.8 40.31,-84.81 40.31,-85.22 40.38,-85.22</cap:polygon>
+        <cap:geocode>
+            <valueName>SAME</valueName>
+            <value>018009</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>SAME</valueName>
+            <value>018075</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>UGC</valueName>
+            <value>INC009</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>UGC</valueName>
+            <value>INC075</value>
+        </cap:geocode>
+        <cap:parameter>
+            <valueName>AWIPSidentifier</valueName>
+            <value>SVRIWX</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>WMOidentifier</valueName>
+            <value>WUUS53 KIWX 191016</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>eventMotionDescription</valueName>
+            <value>2025-04-19T10:16:00-00:00...storm...240DEG...65KT...40.2,-85.32</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>windThreat</valueName>
+            <value>RADAR INDICATED</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>maxWindGust</valueName>
+            <value>70 MPH</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>hailThreat</valueName>
+            <value>RADAR INDICATED</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>maxHailSize</valueName>
+            <value>Up to .75</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>thunderstormDamageThreat</valueName>
+            <value>CONSIDERABLE</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>BLOCKCHANNEL</valueName>
+            <value>EAS</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>BLOCKCHANNEL</valueName>
+            <value>NWEM</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>BLOCKCHANNEL</valueName>
+            <value>CMAS</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>EAS-ORG</valueName>
+            <value>WXR</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>VTEC</valueName>
+            <value>/O.NEW.KIWX.SV.W.0048.250419T1016Z-250419T1100Z/</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>eventEndingTime</valueName>
+            <value>2025-04-19T11:00:00+00:00</value>
+        </cap:parameter>
+    </entry>
+    <entry>
+        <id>https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.cf41a31bbc7c6dc8532c75f16766c370be822370.001.1</id>
+        <link rel="alternate" href="https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.cf41a31bbc7c6dc8532c75f16766c370be822370.001.1.cap"/>
+        <updated>2025-04-19T06:10:00-04:00</updated>
+        <published>2025-04-19T06:10:00-04:00</published>
+        <author>
+            <name>NWS</name>
+        </author>
+        <title>Special Weather Statement issued April 19 at 6:10AM EDT by NWS Wilmington OH</title>
+        <summary>At 609 AM EDT, a strong thunderstorm was located near New Castle,
+moving northeast at 70 mph.
+
+HAZARD...Wind gusts up to 50 mph and pea size hail.
+
+SOURCE...Radar indicated.
+
+IMPACT...Gusty winds could knock down tree limbs and blow around
+unsecured objects. Hail may cause minor damage to
+vegetation.
+
+Locations impacted include...
+Mount Auburn, Franklin, Dublin, Spring Grove, Cambridge City,
+Middleboro, Whitewater, Jacksonburg, East Germantown, Centerville,
+Interstate 70 at Exit 145, Bentonville, Economy, Greens Fork,
+Williamsburg, Bethel, Milton, Hagerstown, Fountain City, and
+Richmond.
+
+This includes I-70 in Indiana between mile markers 134 and 153.
+
+If outdoors, consider seeking shelter inside a sturdy building.
+
+To report hazardous weather conditions, go to our website at
+weather.gov/iln and submit your report via social media, when you can
+do so safely.</summary>
+        <cap:event>Special Weather Statement</cap:event>
+        <cap:sent>2025-04-19T06:10:00-04:00</cap:sent>
+        <cap:effective>2025-04-19T06:10:00-04:00</cap:effective>
+        <cap:onset>2025-04-19T06:10:00-04:00</cap:onset>
+        <cap:expires>2025-04-19T06:45:00-04:00</cap:expires>
+        <cap:status>Actual</cap:status>
+        <cap:msgType>Alert</cap:msgType>
+        <cap:category>Met</cap:category>
+        <cap:urgency>Expected</cap:urgency>
+        <cap:severity>Moderate</cap:severity>
+        <cap:certainty>Observed</cap:certainty>
+        <cap:areaDesc>Wayne; Fayette</cap:areaDesc>
+        <cap:polygon>39.79,-85.22 39.87,-85.22 39.87,-85.2 40.01,-85.2 40,-84.8199999 39.87,-84.81 39.7299999,-85.3 39.79,-85.3 39.79,-85.22</cap:polygon>
+        <cap:geocode>
+            <valueName>SAME</valueName>
+            <value>018177</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>SAME</valueName>
+            <value>018041</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>UGC</valueName>
+            <value>INZ050</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>UGC</valueName>
+            <value>INZ058</value>
+        </cap:geocode>
+        <cap:parameter>
+            <valueName>AWIPSidentifier</valueName>
+            <value>SPSILN</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>WMOidentifier</valueName>
+            <value>WWUS81 KILN 191010</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>NWSheadline</valueName>
+            <value>A STRONG THUNDERSTORM WILL IMPACT PORTIONS OF WAYNE AND NORTHWESTERN FAYETTE COUNTIES THROUGH 645 AM EDT</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>eventMotionDescription</valueName>
+            <value>2025-04-19T10:09:00-00:00...storm...239DEG...62KT...39.85,-85.3</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>maxWindGust</valueName>
+            <value>50 MPH</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>maxHailSize</valueName>
+            <value>0.25</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>BLOCKCHANNEL</valueName>
+            <value>EAS</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>BLOCKCHANNEL</valueName>
+            <value>NWEM</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>BLOCKCHANNEL</valueName>
+            <value>CMAS</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>EAS-ORG</valueName>
+            <value>WXR</value>
         </cap:parameter>
     </entry>
     <entry>
@@ -1417,77 +2310,6 @@ power lines may create power outages.</summary>
         </cap:parameter>
     </entry>
     <entry>
-        <id>https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.de3b25fbed8bd006cd6e1f6a036d4b7b0ae9c0cc.002.1</id>
-        <link rel="alternate" href="https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.de3b25fbed8bd006cd6e1f6a036d4b7b0ae9c0cc.002.1.cap"/>
-        <updated>2025-04-19T03:35:00-06:00</updated>
-        <published>2025-04-19T03:35:00-06:00</published>
-        <author>
-            <name>NWS</name>
-        </author>
-        <title>Winter Weather Advisory issued April 19 at 3:35AM MDT until April 20 at 12:00AM MDT by NWS Albuquerque NM</title>
-        <summary>* WHAT...Snow expected. Total snow accumulations up to 3 inches.
-
-* WHERE...Northeast Highlands.
-
-* WHEN...Until midnight MDT tonight.
-
-* IMPACTS...Plan on snow packed or icy road conditions. This
-includes portions of I-25.</summary>
-        <cap:event>Winter Weather Advisory</cap:event>
-        <cap:sent>2025-04-19T03:35:00-06:00</cap:sent>
-        <cap:effective>2025-04-19T03:35:00-06:00</cap:effective>
-        <cap:onset>2025-04-19T06:00:00-06:00</cap:onset>
-        <cap:expires>2025-04-19T15:00:00-06:00</cap:expires>
-        <cap:status>Actual</cap:status>
-        <cap:msgType>Alert</cap:msgType>
-        <cap:category>Met</cap:category>
-        <cap:urgency>Expected</cap:urgency>
-        <cap:severity>Moderate</cap:severity>
-        <cap:certainty>Likely</cap:certainty>
-        <cap:areaDesc>Northeast Highlands</cap:areaDesc>
-        <cap:polygon/>
-        <cap:geocode>
-            <valueName>SAME</valueName>
-            <value>035047</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>UGC</valueName>
-            <value>NMZ229</value>
-        </cap:geocode>
-        <cap:parameter>
-            <valueName>AWIPSidentifier</valueName>
-            <value>WSWABQ</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>WMOidentifier</valueName>
-            <value>WWUS45 KABQ 190935</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>NWSheadline</valueName>
-            <value>WINTER WEATHER ADVISORY IN EFFECT UNTIL MIDNIGHT MDT TONIGHT</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>BLOCKCHANNEL</valueName>
-            <value>EAS</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>BLOCKCHANNEL</valueName>
-            <value>NWEM</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>BLOCKCHANNEL</valueName>
-            <value>CMAS</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>VTEC</valueName>
-            <value>/O.EXB.KABQ.WW.Y.0013.250419T1200Z-250420T0600Z/</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>eventEndingTime</valueName>
-            <value>2025-04-20T06:00:00+00:00</value>
-        </cap:parameter>
-    </entry>
-    <entry>
         <id>https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.de3b25fbed8bd006cd6e1f6a036d4b7b0ae9c0cc.005.1</id>
         <link rel="alternate" href="https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.de3b25fbed8bd006cd6e1f6a036d4b7b0ae9c0cc.005.1.cap"/>
         <updated>2025-04-19T03:35:00-06:00</updated>
@@ -1722,222 +2544,54 @@ power lines may create power outages.</summary>
         </cap:parameter>
     </entry>
     <entry>
-        <id>https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.34a96840ed55a4615d71c50fa995a96c867bc45d.001.1</id>
-        <link rel="alternate" href="https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.34a96840ed55a4615d71c50fa995a96c867bc45d.001.1.cap"/>
-        <updated>2025-04-19T04:30:00-05:00</updated>
-        <published>2025-04-19T04:30:00-05:00</published>
+        <id>https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.de3b25fbed8bd006cd6e1f6a036d4b7b0ae9c0cc.002.1</id>
+        <link rel="alternate" href="https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.de3b25fbed8bd006cd6e1f6a036d4b7b0ae9c0cc.002.1.cap"/>
+        <updated>2025-04-19T03:35:00-06:00</updated>
+        <published>2025-04-19T03:35:00-06:00</published>
         <author>
             <name>NWS</name>
         </author>
-        <title>Special Weather Statement issued April 19 at 4:30AM CDT by NWS Fort Worth TX</title>
-        <summary>At 430 AM CDT, Doppler radar was tracking strong thunderstorms along
-a line extending from near Paradise to 7 miles south of Aledo.
-Movement was east at 40 mph.
+        <title>Winter Weather Advisory issued April 19 at 3:35AM MDT until April 20 at 12:00AM MDT by NWS Albuquerque NM</title>
+        <summary>* WHAT...Snow expected. Total snow accumulations up to 3 inches.
 
-HAZARD...Wind gusts up to 50 mph.
+* WHERE...Northeast Highlands.
 
-SOURCE...Radar indicated.
+* WHEN...Until midnight MDT tonight.
 
-IMPACT...Gusty winds could knock down tree limbs and blow around
-unsecured objects.
-
-Strong thunderstorms will be near...
-Aurora, Boyd, White Settlement, Lake Worth, Pecan Acres, Eagle
-Mountain, New Fairview, Fort Worth, Briar, and Benbrook around 435
-AM CDT.
-Edgecliff Village, Haslet, Sansom Park, Crowley, River Oaks, and
-Saginaw around 440 AM CDT.
-Burleson, Edgecliff, Rendon, Blue Mound, and Everman around 445 AM
-CDT.
-Justin, Kennedale, North Richland Hills, Haltom City, Forest Hill,
-and Watauga around 450 AM CDT.
-Denton, Roanoke, Keller, Richland Hills, Northlake, Arlington,
-Mansfield, and Hurst around 455 AM CDT.
-Flower Mound, Bartonville, Pantego, Euless, Corral City,
-Colleyville, Bedford, Trophy Club, Argyle, and Southlake around
-500 AM CDT.
-Grand Prairie and Grapevine around 505 AM CDT.
-
-Other locations impacted by these storms include Lake Arlington,
-Keeter, Westlake, Stony, Ponder, Benbrook Lake, Lake Worth, Westover
-Hills, Lakeside, and Newark.
-
-This includes the following highways...
-Interstate 35 between mile markers 468 and 474.
-Interstate 35W between mile markers 37 and 85.
-Interstate 35E between mile markers 461 and 466.
-Interstate 20 between mile markers 416 and 452.
-Interstate 30 between mile markers 1 and 30.</summary>
-        <cap:event>Special Weather Statement</cap:event>
-        <cap:sent>2025-04-19T04:30:00-05:00</cap:sent>
-        <cap:effective>2025-04-19T04:30:00-05:00</cap:effective>
-        <cap:onset>2025-04-19T04:30:00-05:00</cap:onset>
-        <cap:expires>2025-04-19T05:15:00-05:00</cap:expires>
+* IMPACTS...Plan on snow packed or icy road conditions. This
+includes portions of I-25.</summary>
+        <cap:event>Winter Weather Advisory</cap:event>
+        <cap:sent>2025-04-19T03:35:00-06:00</cap:sent>
+        <cap:effective>2025-04-19T03:35:00-06:00</cap:effective>
+        <cap:onset>2025-04-19T06:00:00-06:00</cap:onset>
+        <cap:expires>2025-04-19T15:00:00-06:00</cap:expires>
         <cap:status>Actual</cap:status>
         <cap:msgType>Alert</cap:msgType>
         <cap:category>Met</cap:category>
         <cap:urgency>Expected</cap:urgency>
         <cap:severity>Moderate</cap:severity>
-        <cap:certainty>Observed</cap:certainty>
-        <cap:areaDesc>Wise; Denton; Parker; Tarrant; Johnson</cap:areaDesc>
-        <cap:polygon>33.35,-97.09 32.56,-97.05 32.52,-97.62 32.55,-97.62 32.56,-97.63 33.14,-97.7099999 33.35,-97.09</cap:polygon>
-        <cap:geocode>
-            <valueName>SAME</valueName>
-            <value>048497</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>SAME</valueName>
-            <value>048121</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>SAME</valueName>
-            <value>048367</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>SAME</valueName>
-            <value>048439</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>SAME</valueName>
-            <value>048251</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>UGC</valueName>
-            <value>TXZ102</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>UGC</valueName>
-            <value>TXZ103</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>UGC</valueName>
-            <value>TXZ117</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>UGC</valueName>
-            <value>TXZ118</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>UGC</valueName>
-            <value>TXZ133</value>
-        </cap:geocode>
-        <cap:parameter>
-            <valueName>AWIPSidentifier</valueName>
-            <value>SPSFWD</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>WMOidentifier</valueName>
-            <value>WWUS84 KFWD 190930</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>NWSheadline</valueName>
-            <value>Strong thunderstorms will impact portions of southeastern Wise, northwestern Johnson, western Denton, eastern Parker and Tarrant Counties through 515 AM CDT</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>eventMotionDescription</valueName>
-            <value>2025-04-19T09:30:00-00:00...storm...265DEG...35KT...33.11,-97.64 32.59,-97.56</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>maxWindGust</valueName>
-            <value>50 MPH</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>maxHailSize</valueName>
-            <value>0.00</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>BLOCKCHANNEL</valueName>
-            <value>EAS</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>BLOCKCHANNEL</valueName>
-            <value>NWEM</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>BLOCKCHANNEL</valueName>
-            <value>CMAS</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>EAS-ORG</valueName>
-            <value>WXR</value>
-        </cap:parameter>
-    </entry>
-    <entry>
-        <id>https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.185e02f07e3012b4c657c757e0b739ed7bfd5ed1.002.1</id>
-        <link rel="alternate" href="https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.185e02f07e3012b4c657c757e0b739ed7bfd5ed1.002.1.cap"/>
-        <updated>2025-04-19T04:28:00-05:00</updated>
-        <published>2025-04-19T04:28:00-05:00</published>
-        <author>
-            <name>NWS</name>
-        </author>
-        <title>Severe Thunderstorm Watch issued April 19 at 4:28AM CDT until April 19 at 7:00AM CDT by NWS Fort Worth TX</title>
-        <summary>SEVERE THUNDERSTORM WATCH 146 REMAINS VALID UNTIL 7 AM CDT THIS
-MORNING FOR THE FOLLOWING AREAS
-
-IN TEXAS THIS WATCH INCLUDES 4 COUNTIES
-
-IN CENTRAL TEXAS
-
-COMANCHE              HAMILTON              MILLS
-
-IN NORTH CENTRAL TEXAS
-
-ERATH
-
-THIS INCLUDES THE CITIES OF COMANCHE, DE LEON, DUBLIN,
-GOLDTHWAITE, HAMILTON, HICO, AND STEPHENVILLE.</summary>
-        <cap:event>Severe Thunderstorm Watch</cap:event>
-        <cap:sent>2025-04-19T04:28:00-05:00</cap:sent>
-        <cap:effective>2025-04-19T04:28:00-05:00</cap:effective>
-        <cap:onset>2025-04-19T04:28:00-05:00</cap:onset>
-        <cap:expires>2025-04-19T07:00:00-05:00</cap:expires>
-        <cap:status>Actual</cap:status>
-        <cap:msgType>Update</cap:msgType>
-        <cap:category>Met</cap:category>
-        <cap:urgency>Future</cap:urgency>
-        <cap:severity>Severe</cap:severity>
-        <cap:certainty>Possible</cap:certainty>
-        <cap:areaDesc>Comanche, TX; Erath, TX; Hamilton, TX; Mills, TX</cap:areaDesc>
+        <cap:certainty>Likely</cap:certainty>
+        <cap:areaDesc>Northeast Highlands</cap:areaDesc>
         <cap:polygon/>
         <cap:geocode>
             <valueName>SAME</valueName>
-            <value>048093</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>SAME</valueName>
-            <value>048143</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>SAME</valueName>
-            <value>048193</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>SAME</valueName>
-            <value>048333</value>
+            <value>035047</value>
         </cap:geocode>
         <cap:geocode>
             <valueName>UGC</valueName>
-            <value>TXC093</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>UGC</valueName>
-            <value>TXC143</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>UGC</valueName>
-            <value>TXC193</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>UGC</valueName>
-            <value>TXC333</value>
+            <value>NMZ229</value>
         </cap:geocode>
         <cap:parameter>
             <valueName>AWIPSidentifier</valueName>
-            <value>WCNFWD</value>
+            <value>WSWABQ</value>
         </cap:parameter>
         <cap:parameter>
             <valueName>WMOidentifier</valueName>
-            <value>WWUS64 KFWD 190928</value>
+            <value>WWUS45 KABQ 190935</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>NWSheadline</valueName>
+            <value>WINTER WEATHER ADVISORY IN EFFECT UNTIL MIDNIGHT MDT TONIGHT</value>
         </cap:parameter>
         <cap:parameter>
             <valueName>BLOCKCHANNEL</valueName>
@@ -1952,16 +2606,12 @@ GOLDTHWAITE, HAMILTON, HICO, AND STEPHENVILLE.</summary>
             <value>CMAS</value>
         </cap:parameter>
         <cap:parameter>
-            <valueName>EAS-ORG</valueName>
-            <value>WXR</value>
-        </cap:parameter>
-        <cap:parameter>
             <valueName>VTEC</valueName>
-            <value>/O.CON.KFWD.SV.A.0146.000000T0000Z-250419T1200Z/</value>
+            <value>/O.EXB.KABQ.WW.Y.0013.250419T1200Z-250420T0600Z/</value>
         </cap:parameter>
         <cap:parameter>
             <valueName>eventEndingTime</valueName>
-            <value>2025-04-19T12:00:00+00:00</value>
+            <value>2025-04-20T06:00:00+00:00</value>
         </cap:parameter>
     </entry>
     <entry>
@@ -5487,107 +6137,6 @@ Okaloosa Inland, and Santa Rosa Inland Counties.
         </cap:parameter>
     </entry>
     <entry>
-        <id>https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.d1f1dc9b039a5a36809c1e063027497cb1723716.001.1</id>
-        <link rel="alternate" href="https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.d1f1dc9b039a5a36809c1e063027497cb1723716.001.1.cap"/>
-        <updated>2025-04-19T03:10:00-05:00</updated>
-        <published>2025-04-19T03:10:00-05:00</published>
-        <author>
-            <name>NWS</name>
-        </author>
-        <title>Freeze Warning issued April 19 at 3:10AM CDT until April 19 at 9:00AM CDT by NWS Amarillo TX</title>
-        <summary>* WHAT...Sub-freezing temperatures as low as 31.
-
-* WHERE...In Oklahoma, Cimarron County. In Texas, Dallam, Hartley,
-and Sherman Counties.
-
-* WHEN...Until 9 AM CDT this morning.
-
-* IMPACTS...Frost and freeze conditions could kill crops, other
-sensitive vegetation and possibly damage unprotected outdoor
-plumbing.</summary>
-        <cap:event>Freeze Warning</cap:event>
-        <cap:sent>2025-04-19T03:10:00-05:00</cap:sent>
-        <cap:effective>2025-04-19T03:10:00-05:00</cap:effective>
-        <cap:onset>2025-04-19T03:10:00-05:00</cap:onset>
-        <cap:expires>2025-04-19T09:00:00-05:00</cap:expires>
-        <cap:status>Actual</cap:status>
-        <cap:msgType>Update</cap:msgType>
-        <cap:category>Met</cap:category>
-        <cap:urgency>Expected</cap:urgency>
-        <cap:severity>Moderate</cap:severity>
-        <cap:certainty>Likely</cap:certainty>
-        <cap:areaDesc>Cimarron; Dallam; Sherman; Hartley</cap:areaDesc>
-        <cap:polygon/>
-        <cap:geocode>
-            <valueName>SAME</valueName>
-            <value>040025</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>SAME</valueName>
-            <value>048111</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>SAME</valueName>
-            <value>048421</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>SAME</valueName>
-            <value>048205</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>UGC</valueName>
-            <value>OKZ001</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>UGC</valueName>
-            <value>TXZ001</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>UGC</valueName>
-            <value>TXZ002</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>UGC</valueName>
-            <value>TXZ006</value>
-        </cap:geocode>
-        <cap:parameter>
-            <valueName>AWIPSidentifier</valueName>
-            <value>NPWAMA</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>WMOidentifier</valueName>
-            <value>WWUS74 KAMA 190810</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>NWSheadline</valueName>
-            <value>FREEZE WARNING REMAINS IN EFFECT UNTIL 9 AM CDT THIS MORNING</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>BLOCKCHANNEL</valueName>
-            <value>EAS</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>BLOCKCHANNEL</valueName>
-            <value>NWEM</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>BLOCKCHANNEL</valueName>
-            <value>CMAS</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>VTEC</valueName>
-            <value>/O.CON.KAMA.FZ.W.0001.000000T0000Z-250419T1400Z/</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>eventEndingTime</valueName>
-            <value>2025-04-19T14:00:00+00:00</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>expiredReferences</valueName>
-            <value>w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.00366fd47f6c207698773b14ad5bda99dc00ef88.001.1,2025-04-18T14:07:00-05:00</value>
-        </cap:parameter>
-    </entry>
-    <entry>
         <id>https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.de8f76c57bc80b889b183977307af70c4c7b8bb9.001.1</id>
         <link rel="alternate" href="https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.de8f76c57bc80b889b183977307af70c4c7b8bb9.001.1.cap"/>
         <updated>2025-04-19T02:52:00-05:00</updated>
@@ -6244,93 +6793,6 @@ Window Rock:      1 to 2&quot;</summary>
         </cap:parameter>
     </entry>
     <entry>
-        <id>https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.76aabb9a6b8a3ac2f9ecc0ea243219107ef75c1b.002.1</id>
-        <link rel="alternate" href="https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.76aabb9a6b8a3ac2f9ecc0ea243219107ef75c1b.002.1.cap"/>
-        <updated>2025-04-19T02:49:00-05:00</updated>
-        <published>2025-04-19T02:49:00-05:00</published>
-        <author>
-            <name>NWS</name>
-        </author>
-        <title>Red Flag Warning issued April 19 at 2:49AM CDT until April 19 at 10:00PM CDT by NWS Midland/Odessa TX</title>
-        <summary>...RED FLAG WARNING IN EFFECT FROM NOON CDT /11 AM MDT/ TODAY TO
-10 PM CDT /9 PM MDT/ THIS EVENING FOR 20-FT WINDS OF 20 MPH OR
-MORE, RELATIVE HUMIDITY OF 15% OR LESS, AND HIGH TO EXTREME FIRE
-DANGER FOR SOUTHEAST NEW MEXICO AND MOST OF WEST TEXAS...
-
-* WINDS...Southwest 15 to 25 mph with gusts up to 35 mph.
-
-* RELATIVE HUMIDITY...As low as 12 percent.
-
-* RFTI...1 or elevated.
-
-* IMPACTS...Avoid the use of open flames or any activities that
-may generate sparks.  Accidental ignitions will have the
-potential to grow into dangerous wind-driven wildfires.  Fires
-can start from the smallest of flames or sparks and are highly
-discouraged.  Observe local burn bans.
-
-* SEVERITY...
-
-FUELS (ERC)...70th-89th percentile...4 (out of 5).
-
-WEATHER...Elevated...1 (out of 5).
-
-FIRE ENVIRONMENT...5 (out of 10).</summary>
-        <cap:event>Red Flag Warning</cap:event>
-        <cap:sent>2025-04-19T02:49:00-05:00</cap:sent>
-        <cap:effective>2025-04-19T02:49:00-05:00</cap:effective>
-        <cap:onset>2025-04-19T12:00:00-05:00</cap:onset>
-        <cap:expires>2025-04-19T22:00:00-05:00</cap:expires>
-        <cap:status>Actual</cap:status>
-        <cap:msgType>Alert</cap:msgType>
-        <cap:category>Met</cap:category>
-        <cap:urgency>Expected</cap:urgency>
-        <cap:severity>Severe</cap:severity>
-        <cap:certainty>Likely</cap:certainty>
-        <cap:areaDesc>Ector</cap:areaDesc>
-        <cap:polygon/>
-        <cap:geocode>
-            <valueName>SAME</valueName>
-            <value>048135</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>UGC</valueName>
-            <value>TXZ061</value>
-        </cap:geocode>
-        <cap:parameter>
-            <valueName>AWIPSidentifier</valueName>
-            <value>RFWMAF</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>WMOidentifier</valueName>
-            <value>WWUS84 KMAF 190749</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>NWSheadline</valueName>
-            <value>RED FLAG WARNING IN EFFECT FROM NOON TODAY TO 10 PM CDT THIS EVENING FOR FOR 20-FT WINDS OF 20 MPH OR MORE, RELATIVE HUMIDITY OF 15% OR LESS, AND HIGH TO EXTREME FIRE DANGER</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>BLOCKCHANNEL</valueName>
-            <value>EAS</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>BLOCKCHANNEL</valueName>
-            <value>NWEM</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>BLOCKCHANNEL</valueName>
-            <value>CMAS</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>VTEC</valueName>
-            <value>/O.NEW.KMAF.FW.W.0020.250419T1700Z-250420T0300Z/</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>eventEndingTime</valueName>
-            <value>2025-04-20T03:00:00+00:00</value>
-        </cap:parameter>
-    </entry>
-    <entry>
         <id>https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.76aabb9a6b8a3ac2f9ecc0ea243219107ef75c1b.001.2</id>
         <link rel="alternate" href="https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.76aabb9a6b8a3ac2f9ecc0ea243219107ef75c1b.001.2.cap"/>
         <updated>2025-04-19T02:49:00-05:00</updated>
@@ -6551,6 +7013,93 @@ FIRE ENVIRONMENT...5 (out of 10).</summary>
         <cap:parameter>
             <valueName>NWSheadline</valueName>
             <value>RED FLAG WARNING IN EFFECT FROM NOON CDT /11 AM MDT/ TODAY TO 10 PM CDT /9 PM MDT/ THIS EVENING FOR 20-FT WINDS OF 20 MPH OR MORE, RELATIVE HUMIDITY OF 15% OR LESS, AND HIGH TO EXTREME FIRE DANGER</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>BLOCKCHANNEL</valueName>
+            <value>EAS</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>BLOCKCHANNEL</valueName>
+            <value>NWEM</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>BLOCKCHANNEL</valueName>
+            <value>CMAS</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>VTEC</valueName>
+            <value>/O.NEW.KMAF.FW.W.0020.250419T1700Z-250420T0300Z/</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>eventEndingTime</valueName>
+            <value>2025-04-20T03:00:00+00:00</value>
+        </cap:parameter>
+    </entry>
+    <entry>
+        <id>https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.76aabb9a6b8a3ac2f9ecc0ea243219107ef75c1b.002.1</id>
+        <link rel="alternate" href="https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.76aabb9a6b8a3ac2f9ecc0ea243219107ef75c1b.002.1.cap"/>
+        <updated>2025-04-19T02:49:00-05:00</updated>
+        <published>2025-04-19T02:49:00-05:00</published>
+        <author>
+            <name>NWS</name>
+        </author>
+        <title>Red Flag Warning issued April 19 at 2:49AM CDT until April 19 at 10:00PM CDT by NWS Midland/Odessa TX</title>
+        <summary>...RED FLAG WARNING IN EFFECT FROM NOON CDT /11 AM MDT/ TODAY TO
+10 PM CDT /9 PM MDT/ THIS EVENING FOR 20-FT WINDS OF 20 MPH OR
+MORE, RELATIVE HUMIDITY OF 15% OR LESS, AND HIGH TO EXTREME FIRE
+DANGER FOR SOUTHEAST NEW MEXICO AND MOST OF WEST TEXAS...
+
+* WINDS...Southwest 15 to 25 mph with gusts up to 35 mph.
+
+* RELATIVE HUMIDITY...As low as 12 percent.
+
+* RFTI...1 or elevated.
+
+* IMPACTS...Avoid the use of open flames or any activities that
+may generate sparks.  Accidental ignitions will have the
+potential to grow into dangerous wind-driven wildfires.  Fires
+can start from the smallest of flames or sparks and are highly
+discouraged.  Observe local burn bans.
+
+* SEVERITY...
+
+FUELS (ERC)...70th-89th percentile...4 (out of 5).
+
+WEATHER...Elevated...1 (out of 5).
+
+FIRE ENVIRONMENT...5 (out of 10).</summary>
+        <cap:event>Red Flag Warning</cap:event>
+        <cap:sent>2025-04-19T02:49:00-05:00</cap:sent>
+        <cap:effective>2025-04-19T02:49:00-05:00</cap:effective>
+        <cap:onset>2025-04-19T12:00:00-05:00</cap:onset>
+        <cap:expires>2025-04-19T22:00:00-05:00</cap:expires>
+        <cap:status>Actual</cap:status>
+        <cap:msgType>Alert</cap:msgType>
+        <cap:category>Met</cap:category>
+        <cap:urgency>Expected</cap:urgency>
+        <cap:severity>Severe</cap:severity>
+        <cap:certainty>Likely</cap:certainty>
+        <cap:areaDesc>Ector</cap:areaDesc>
+        <cap:polygon/>
+        <cap:geocode>
+            <valueName>SAME</valueName>
+            <value>048135</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>UGC</valueName>
+            <value>TXZ061</value>
+        </cap:geocode>
+        <cap:parameter>
+            <valueName>AWIPSidentifier</valueName>
+            <value>RFWMAF</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>WMOidentifier</valueName>
+            <value>WWUS84 KMAF 190749</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>NWSheadline</valueName>
+            <value>RED FLAG WARNING IN EFFECT FROM NOON TODAY TO 10 PM CDT THIS EVENING FOR FOR 20-FT WINDS OF 20 MPH OR MORE, RELATIVE HUMIDITY OF 15% OR LESS, AND HIGH TO EXTREME FIRE DANGER</value>
         </cap:parameter>
         <cap:parameter>
             <valueName>BLOCKCHANNEL</valueName>
