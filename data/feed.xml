@@ -2,53 +2,86 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xmlns:cap="urn:oasis:names:tc:emergency:cap:1.2">
     <id>https://api.weather.gov/alerts.atom?region_type=land&amp;active=1</id>
     <generator>NWS CAP Server</generator>
-    <updated>2025-09-29T17:07:23+00:00</updated>
+    <updated>2025-09-29T17:34:39+00:00</updated>
     <author>
         <name>w-nws.webmaster@noaa.gov</name>
     </author>
     <title>Current watches, warnings, and advisories for United States land zones</title>
     <link rel="self" href="https://api.weather.gov/alerts.atom?region_type=land&amp;active=1"/>
     <entry>
-        <id>https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0-KEEPALIVE-45338</id>
-        <link rel="alternate" href="https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0-KEEPALIVE-45338.cap"/>
-        <updated>2025-09-29T17:04:02+00:00</updated>
-        <published>2025-09-29T17:04:02+00:00</published>
+        <id>https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.50277cf236ad62b0025897dccba764b07152a495.001.1</id>
+        <link rel="alternate" href="https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.50277cf236ad62b0025897dccba764b07152a495.001.1.cap"/>
+        <updated>2025-09-29T13:32:00-04:00</updated>
+        <published>2025-09-29T13:32:00-04:00</published>
         <author>
             <name>NWS</name>
         </author>
-        <title/>
-        <summary>Monitoring message only. Please disregard.</summary>
-        <cap:event>Test Message</cap:event>
-        <cap:sent>2025-09-29T17:04:02+00:00</cap:sent>
-        <cap:effective>2025-09-29T17:04:02+00:00</cap:effective>
-        <cap:expires>2025-09-29T17:14:02+00:00</cap:expires>
-        <cap:status>Test</cap:status>
+        <title>Rip Current Statement issued September 29 at 1:32PM EDT until September 30 at 8:00PM EDT by NWS Gray ME</title>
+        <summary>* WHAT...Dangerous rip currents expected.
+
+* WHERE...Coastal Cumberland, Sagadahoc, Lincoln and Knox
+Counties.
+
+* WHEN...From Tuesday morning through Tuesday evening.
+
+* IMPACTS...Rip currents can sweep even the best swimmers away
+from shore into deeper water.</summary>
+        <cap:event>Rip Current Statement</cap:event>
+        <cap:sent>2025-09-29T13:32:00-04:00</cap:sent>
+        <cap:effective>2025-09-29T13:32:00-04:00</cap:effective>
+        <cap:onset>2025-09-30T08:00:00-04:00</cap:onset>
+        <cap:expires>2025-09-29T21:45:00-04:00</cap:expires>
+        <cap:status>Actual</cap:status>
         <cap:msgType>Alert</cap:msgType>
         <cap:category>Met</cap:category>
-        <cap:urgency>Unknown</cap:urgency>
-        <cap:severity>Unknown</cap:severity>
-        <cap:certainty>Unknown</cap:certainty>
-        <cap:areaDesc>Montgomery</cap:areaDesc>
+        <cap:urgency>Expected</cap:urgency>
+        <cap:severity>Moderate</cap:severity>
+        <cap:certainty>Likely</cap:certainty>
+        <cap:areaDesc>Coastal Cumberland; Sagadahoc; Lincoln; Knox</cap:areaDesc>
         <cap:polygon/>
         <cap:geocode>
             <valueName>SAME</valueName>
-            <value>024031</value>
+            <value>023005</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>SAME</valueName>
+            <value>023023</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>SAME</valueName>
+            <value>023015</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>SAME</valueName>
+            <value>023013</value>
         </cap:geocode>
         <cap:geocode>
             <valueName>UGC</valueName>
-            <value>MDC031</value>
+            <value>MEZ024</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>UGC</valueName>
+            <value>MEZ025</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>UGC</valueName>
+            <value>MEZ026</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>UGC</valueName>
+            <value>MEZ027</value>
         </cap:geocode>
         <cap:parameter>
             <valueName>AWIPSidentifier</valueName>
-            <value>KEPWBC</value>
+            <value>CFWGYX</value>
         </cap:parameter>
         <cap:parameter>
             <valueName>WMOidentifier</valueName>
-            <value>NZUS91 KWBC 291704</value>
+            <value>WHUS41 KGYX 291732</value>
         </cap:parameter>
         <cap:parameter>
-            <valueName>BLOCKCHANNEL</valueName>
-            <value>CMAS</value>
+            <valueName>NWSheadline</valueName>
+            <value>HIGH RIP CURRENT RISK IN EFFECT FROM TUESDAY MORNING THROUGH TUESDAY EVENING</value>
         </cap:parameter>
         <cap:parameter>
             <valueName>BLOCKCHANNEL</valueName>
@@ -57,6 +90,18 @@
         <cap:parameter>
             <valueName>BLOCKCHANNEL</valueName>
             <value>NWEM</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>BLOCKCHANNEL</valueName>
+            <value>CMAS</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>VTEC</valueName>
+            <value>/O.NEW.KGYX.RP.S.0003.250930T1200Z-251001T0000Z/</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>eventEndingTime</valueName>
+            <value>2025-09-30T20:00:00-04:00</value>
         </cap:parameter>
         <cap:scope>Public</cap:scope>
         <cap:code>IPAWSv1.0</cap:code>
@@ -68,12 +113,308 @@
         </cap:eventCode>
         <cap:eventCode>
             <valueName>NationalWeatherService</valueName>
-            <value>TST</value>
+            <value>RPS</value>
         </cap:eventCode>
     </entry>
     <entry>
-        <id>https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.316a8731a224f685389765a7c88b0f0b731f8c5a.002.3</id>
-        <link rel="alternate" href="https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.316a8731a224f685389765a7c88b0f0b731f8c5a.002.3.cap"/>
+        <id>https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.e2ad65db964195420ffcbbdfa6e6b9aa617c4f68.001.1</id>
+        <link rel="alternate" href="https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.e2ad65db964195420ffcbbdfa6e6b9aa617c4f68.001.1.cap"/>
+        <updated>2025-09-29T13:09:00-04:00</updated>
+        <published>2025-09-29T13:09:00-04:00</published>
+        <author>
+            <name>NWS</name>
+        </author>
+        <title>Rip Current Statement issued September 29 at 1:09PM EDT until September 30 at 8:00PM EDT by NWS Charleston SC</title>
+        <summary>* WHAT...For the High Rip Current Risk, dangerous rip currents.
+For the High Surf Advisory, large breaking waves of 5 to 7 feet
+expected in the surf zone.
+
+* WHERE...South Carolina Beaches, and Georgia Beaches.
+
+* WHEN...For the High Rip Current Risk, through Tuesday evening.
+For the High Surf Advisory, from 8 PM this evening to 8 AM EDT
+Saturday.
+
+* IMPACTS...Dangerous swimming and surfing conditions and
+localized beach erosion. Rip currents can sweep even the best
+swimmers away from shore into deeper water.</summary>
+        <cap:event>Rip Current Statement</cap:event>
+        <cap:sent>2025-09-29T13:09:00-04:00</cap:sent>
+        <cap:effective>2025-09-29T13:09:00-04:00</cap:effective>
+        <cap:onset>2025-09-29T13:09:00-04:00</cap:onset>
+        <cap:expires>2025-09-29T21:15:00-04:00</cap:expires>
+        <cap:status>Actual</cap:status>
+        <cap:msgType>Update</cap:msgType>
+        <cap:category>Met</cap:category>
+        <cap:urgency>Expected</cap:urgency>
+        <cap:severity>Moderate</cap:severity>
+        <cap:certainty>Likely</cap:certainty>
+        <cap:areaDesc>Coastal Bryan; Coastal Chatham; Coastal Liberty; Coastal McIntosh; Beaufort; Coastal Colleton; Charleston; Coastal Jasper</cap:areaDesc>
+        <cap:polygon/>
+        <cap:geocode>
+            <valueName>SAME</valueName>
+            <value>013029</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>SAME</valueName>
+            <value>013051</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>SAME</valueName>
+            <value>013179</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>SAME</valueName>
+            <value>013191</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>SAME</valueName>
+            <value>045013</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>SAME</valueName>
+            <value>045029</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>SAME</valueName>
+            <value>045019</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>SAME</valueName>
+            <value>045053</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>UGC</valueName>
+            <value>GAZ117</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>UGC</valueName>
+            <value>GAZ119</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>UGC</valueName>
+            <value>GAZ139</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>UGC</valueName>
+            <value>GAZ141</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>UGC</valueName>
+            <value>SCZ048</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>UGC</valueName>
+            <value>SCZ049</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>UGC</valueName>
+            <value>SCZ050</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>UGC</valueName>
+            <value>SCZ051</value>
+        </cap:geocode>
+        <cap:parameter>
+            <valueName>AWIPSidentifier</valueName>
+            <value>CFWCHS</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>WMOidentifier</valueName>
+            <value>WHUS42 KCHS 291709</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>NWSheadline</valueName>
+            <value>HIGH RIP CURRENT RISK NOW IN EFFECT THROUGH TUESDAY EVENING... ...HIGH SURF ADVISORY REMAINS IN EFFECT FROM 8 PM THIS EVENING TO 8 AM EDT SATURDAY</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>BLOCKCHANNEL</valueName>
+            <value>EAS</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>BLOCKCHANNEL</valueName>
+            <value>NWEM</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>BLOCKCHANNEL</valueName>
+            <value>CMAS</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>VTEC</valueName>
+            <value>/O.EXT.KCHS.RP.S.0009.000000T0000Z-251001T0000Z/</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>eventEndingTime</valueName>
+            <value>2025-09-30T20:00:00-04:00</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>expiredReferences</valueName>
+            <value>w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.f780d468603e7a744e3df45c796f51c25fbf0777.001.2,2025-09-29T02:17:00-04:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.19d081c273c3402cc424aa9f56169735f34d0d49.001.1,2025-09-28T20:32:00-04:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.86f30bae19b3828ac2e93acbae2a084fdd6f5e14.001.1,2025-09-28T13:26:00-04:00</value>
+        </cap:parameter>
+        <cap:scope>Public</cap:scope>
+        <cap:code>IPAWSv1.0</cap:code>
+        <cap:language>en-US</cap:language>
+        <cap:web>http://www.weather.gov</cap:web>
+        <cap:eventCode>
+            <valueName>SAME</valueName>
+            <value>NWS</value>
+        </cap:eventCode>
+        <cap:eventCode>
+            <valueName>NationalWeatherService</valueName>
+            <value>RPS</value>
+        </cap:eventCode>
+    </entry>
+    <entry>
+        <id>https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.e2ad65db964195420ffcbbdfa6e6b9aa617c4f68.001.2</id>
+        <link rel="alternate" href="https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.e2ad65db964195420ffcbbdfa6e6b9aa617c4f68.001.2.cap"/>
+        <updated>2025-09-29T13:09:00-04:00</updated>
+        <published>2025-09-29T13:09:00-04:00</published>
+        <author>
+            <name>NWS</name>
+        </author>
+        <title>High Surf Advisory issued September 29 at 1:09PM EDT until October 4 at 8:00AM EDT by NWS Charleston SC</title>
+        <summary>* WHAT...For the High Rip Current Risk, dangerous rip currents.
+For the High Surf Advisory, large breaking waves of 5 to 7 feet
+expected in the surf zone.
+
+* WHERE...South Carolina Beaches, and Georgia Beaches.
+
+* WHEN...For the High Rip Current Risk, through Tuesday evening.
+For the High Surf Advisory, from 8 PM this evening to 8 AM EDT
+Saturday.
+
+* IMPACTS...Dangerous swimming and surfing conditions and
+localized beach erosion. Rip currents can sweep even the best
+swimmers away from shore into deeper water.</summary>
+        <cap:event>High Surf Advisory</cap:event>
+        <cap:sent>2025-09-29T13:09:00-04:00</cap:sent>
+        <cap:effective>2025-09-29T13:09:00-04:00</cap:effective>
+        <cap:onset>2025-09-29T20:00:00-04:00</cap:onset>
+        <cap:expires>2025-09-29T21:15:00-04:00</cap:expires>
+        <cap:status>Actual</cap:status>
+        <cap:msgType>Update</cap:msgType>
+        <cap:category>Met</cap:category>
+        <cap:urgency>Expected</cap:urgency>
+        <cap:severity>Minor</cap:severity>
+        <cap:certainty>Likely</cap:certainty>
+        <cap:areaDesc>Coastal Bryan; Coastal Chatham; Coastal Liberty; Coastal McIntosh; Beaufort; Coastal Colleton; Charleston; Coastal Jasper</cap:areaDesc>
+        <cap:polygon/>
+        <cap:geocode>
+            <valueName>SAME</valueName>
+            <value>013029</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>SAME</valueName>
+            <value>013051</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>SAME</valueName>
+            <value>013179</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>SAME</valueName>
+            <value>013191</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>SAME</valueName>
+            <value>045013</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>SAME</valueName>
+            <value>045029</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>SAME</valueName>
+            <value>045019</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>SAME</valueName>
+            <value>045053</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>UGC</valueName>
+            <value>GAZ117</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>UGC</valueName>
+            <value>GAZ119</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>UGC</valueName>
+            <value>GAZ139</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>UGC</valueName>
+            <value>GAZ141</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>UGC</valueName>
+            <value>SCZ048</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>UGC</valueName>
+            <value>SCZ049</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>UGC</valueName>
+            <value>SCZ050</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>UGC</valueName>
+            <value>SCZ051</value>
+        </cap:geocode>
+        <cap:parameter>
+            <valueName>AWIPSidentifier</valueName>
+            <value>CFWCHS</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>WMOidentifier</valueName>
+            <value>WHUS42 KCHS 291709</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>NWSheadline</valueName>
+            <value>HIGH RIP CURRENT RISK NOW IN EFFECT THROUGH TUESDAY EVENING... ...HIGH SURF ADVISORY REMAINS IN EFFECT FROM 8 PM THIS EVENING TO 8 AM EDT SATURDAY</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>BLOCKCHANNEL</valueName>
+            <value>EAS</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>BLOCKCHANNEL</valueName>
+            <value>NWEM</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>BLOCKCHANNEL</valueName>
+            <value>CMAS</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>VTEC</valueName>
+            <value>/O.CON.KCHS.SU.Y.0007.250930T0000Z-251004T1200Z/</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>eventEndingTime</valueName>
+            <value>2025-10-04T08:00:00-04:00</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>expiredReferences</valueName>
+            <value>w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.f780d468603e7a744e3df45c796f51c25fbf0777.001.1,2025-09-29T02:17:00-04:00</value>
+        </cap:parameter>
+        <cap:scope>Public</cap:scope>
+        <cap:code>IPAWSv1.0</cap:code>
+        <cap:language>en-US</cap:language>
+        <cap:web>http://www.weather.gov</cap:web>
+        <cap:eventCode>
+            <valueName>SAME</valueName>
+            <value>NWS</value>
+        </cap:eventCode>
+        <cap:eventCode>
+            <valueName>NationalWeatherService</valueName>
+            <value>SUY</value>
+        </cap:eventCode>
+    </entry>
+    <entry>
+        <id>https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.316a8731a224f685389765a7c88b0f0b731f8c5a.004.3</id>
+        <link rel="alternate" href="https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.316a8731a224f685389765a7c88b0f0b731f8c5a.004.3.cap"/>
         <updated>2025-09-29T11:10:00-04:00</updated>
         <published>2025-09-29T11:10:00-04:00</published>
         <author>
@@ -82,17 +423,18 @@
         <title>Beach Hazards Statement issued September 29 at 11:10AM EDT until September 29 at 8:00PM EDT by NWS Newport/Morehead City NC</title>
         <summary>* WHAT...For the Beach Hazards Statement, dangerous rip
 currents. For the High Surf Advisory, large breaking waves of
-6 to 8 feet, building to 10 to 12 feet expected in the surf
-zone. For the Coastal Flood Advisory, minor inundation 1 to 2
-feet of inundation above ground level expected in low-lying
-areas near shorelines and tidal waterways.
+5 to 8 feet expected in the surf zone. For the Coastal Flood
+Advisory, minor coastal flooding, 1 to 2 feet of inundation
+above ground level expected in low- lying areas near
+shorelines and tidal waterways.
 
-* WHERE...Northern Outer Banks.
+* WHERE...Coastal Onslow County.
 
 * WHEN...For the Beach Hazards Statement, from 8 AM EDT this
 morning through this evening. For the High Surf Advisory, from
-5 PM this afternoon to 8 AM EDT Saturday. For the Coastal
-Flood Advisory, from 11 AM Tuesday to 8 PM EDT Friday.
+11 AM Tuesday to 11 AM EDT Wednesday. For the Coastal Flood
+Advisory, from 11 PM Tuesday to 8 PM EDT Thursday. Impacts
+greatest during the afternoon high tide cycles.
 
 * IMPACTS...Minor inundation, 1 to 2 feet above ground level, is
 possible in low-lying areas near shorelines and tidal
@@ -100,12 +442,11 @@ waterways resulting in a low threat of property damage. Some
 roads and low lying property including parking lots, parks,
 lawns, and homes adjacent to the waterfront will experience
 shallow flooding. Dangerous swimming and surfing conditions
-and beach erosion. Rip currents can sweep even the best
-swimmers away from shore into deeper water.
-
-* ADDITIONAL DETAILS...The most likely time for strong rip
-currents to occur is a couple hours either side of low tide,
-which will occur around 7:00 PM Monday.</summary>
+and localized beach erosion. Rip currents can sweep even the
+best swimmers away from shore into deeper water. The most
+likely time for strong rip currents to occur is a couple hours
+either side of low tide, which will occur around 7:00 PM
+Monday.</summary>
         <cap:event>Beach Hazards Statement</cap:event>
         <cap:sent>2025-09-29T11:10:00-04:00</cap:sent>
         <cap:effective>2025-09-29T11:10:00-04:00</cap:effective>
@@ -117,15 +458,15 @@ which will occur around 7:00 PM Monday.</summary>
         <cap:urgency>Expected</cap:urgency>
         <cap:severity>Moderate</cap:severity>
         <cap:certainty>Likely</cap:certainty>
-        <cap:areaDesc>Northern Outer Banks</cap:areaDesc>
+        <cap:areaDesc>Coastal Onslow</cap:areaDesc>
         <cap:polygon/>
         <cap:geocode>
             <valueName>SAME</valueName>
-            <value>037055</value>
+            <value>037133</value>
         </cap:geocode>
         <cap:geocode>
             <valueName>UGC</valueName>
-            <value>NCZ203</value>
+            <value>NCZ199</value>
         </cap:geocode>
         <cap:parameter>
             <valueName>AWIPSidentifier</valueName>
@@ -137,7 +478,7 @@ which will occur around 7:00 PM Monday.</summary>
         </cap:parameter>
         <cap:parameter>
             <valueName>NWSheadline</valueName>
-            <value>BEACH HAZARDS STATEMENT REMAINS IN EFFECT UNTIL 8 PM EDT THIS EVENING... ...HIGH SURF ADVISORY REMAINS IN EFFECT FROM 5 PM THIS AFTERNOON TO 8 AM EDT SATURDAY... ...COASTAL FLOOD ADVISORY REMAINS IN EFFECT FROM 11 AM TUESDAY TO 8 PM EDT FRIDAY</value>
+            <value>BEACH HAZARDS STATEMENT REMAINS IN EFFECT UNTIL 8 PM EDT THIS EVENING... ...HIGH SURF ADVISORY REMAINS IN EFFECT FROM 11 AM TUESDAY TO 11 AM EDT WEDNESDAY... ...COASTAL FLOOD ADVISORY REMAINS IN EFFECT FROM 11 PM TUESDAY TO 8 PM EDT THURSDAY</value>
         </cap:parameter>
         <cap:parameter>
             <valueName>BLOCKCHANNEL</valueName>
@@ -161,7 +502,7 @@ which will occur around 7:00 PM Monday.</summary>
         </cap:parameter>
         <cap:parameter>
             <valueName>expiredReferences</valueName>
-            <value>w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.b82ffcc30766a7e19a460bb34eeac3113e9aa9d1.002.1,2025-09-28T20:36:00-04:00</value>
+            <value>w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.b82ffcc30766a7e19a460bb34eeac3113e9aa9d1.005.1,2025-09-28T20:36:00-04:00</value>
         </cap:parameter>
         <cap:scope>Public</cap:scope>
         <cap:code>IPAWSv1.0</cap:code>
@@ -263,111 +604,6 @@ Monday.</summary>
         <cap:parameter>
             <valueName>eventEndingTime</valueName>
             <value>2025-10-01T11:00:00-04:00</value>
-        </cap:parameter>
-        <cap:scope>Public</cap:scope>
-        <cap:code>IPAWSv1.0</cap:code>
-        <cap:language>en-US</cap:language>
-        <cap:web>http://www.weather.gov</cap:web>
-        <cap:eventCode>
-            <valueName>SAME</valueName>
-            <value>NWS</value>
-        </cap:eventCode>
-        <cap:eventCode>
-            <valueName>NationalWeatherService</valueName>
-            <value>SUY</value>
-        </cap:eventCode>
-    </entry>
-    <entry>
-        <id>https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.316a8731a224f685389765a7c88b0f0b731f8c5a.002.1</id>
-        <link rel="alternate" href="https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.316a8731a224f685389765a7c88b0f0b731f8c5a.002.1.cap"/>
-        <updated>2025-09-29T11:10:00-04:00</updated>
-        <published>2025-09-29T11:10:00-04:00</published>
-        <author>
-            <name>NWS</name>
-        </author>
-        <title>High Surf Advisory issued September 29 at 11:10AM EDT until October 4 at 8:00AM EDT by NWS Newport/Morehead City NC</title>
-        <summary>* WHAT...For the Beach Hazards Statement, dangerous rip
-currents. For the High Surf Advisory, large breaking waves of
-6 to 8 feet, building to 10 to 12 feet expected in the surf
-zone. For the Coastal Flood Advisory, minor inundation 1 to 2
-feet of inundation above ground level expected in low-lying
-areas near shorelines and tidal waterways.
-
-* WHERE...Northern Outer Banks.
-
-* WHEN...For the Beach Hazards Statement, from 8 AM EDT this
-morning through this evening. For the High Surf Advisory, from
-5 PM this afternoon to 8 AM EDT Saturday. For the Coastal
-Flood Advisory, from 11 AM Tuesday to 8 PM EDT Friday.
-
-* IMPACTS...Minor inundation, 1 to 2 feet above ground level, is
-possible in low-lying areas near shorelines and tidal
-waterways resulting in a low threat of property damage. Some
-roads and low lying property including parking lots, parks,
-lawns, and homes adjacent to the waterfront will experience
-shallow flooding. Dangerous swimming and surfing conditions
-and beach erosion. Rip currents can sweep even the best
-swimmers away from shore into deeper water.
-
-* ADDITIONAL DETAILS...The most likely time for strong rip
-currents to occur is a couple hours either side of low tide,
-which will occur around 7:00 PM Monday.</summary>
-        <cap:event>High Surf Advisory</cap:event>
-        <cap:sent>2025-09-29T11:10:00-04:00</cap:sent>
-        <cap:effective>2025-09-29T11:10:00-04:00</cap:effective>
-        <cap:onset>2025-09-29T17:00:00-04:00</cap:onset>
-        <cap:expires>2025-09-29T23:15:00-04:00</cap:expires>
-        <cap:status>Actual</cap:status>
-        <cap:msgType>Update</cap:msgType>
-        <cap:category>Met</cap:category>
-        <cap:urgency>Expected</cap:urgency>
-        <cap:severity>Minor</cap:severity>
-        <cap:certainty>Likely</cap:certainty>
-        <cap:areaDesc>Northern Outer Banks</cap:areaDesc>
-        <cap:polygon/>
-        <cap:geocode>
-            <valueName>SAME</valueName>
-            <value>037055</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>UGC</valueName>
-            <value>NCZ203</value>
-        </cap:geocode>
-        <cap:parameter>
-            <valueName>AWIPSidentifier</valueName>
-            <value>CFWMHX</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>WMOidentifier</valueName>
-            <value>WHUS42 KMHX 291510</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>NWSheadline</valueName>
-            <value>BEACH HAZARDS STATEMENT REMAINS IN EFFECT UNTIL 8 PM EDT THIS EVENING... ...HIGH SURF ADVISORY REMAINS IN EFFECT FROM 5 PM THIS AFTERNOON TO 8 AM EDT SATURDAY... ...COASTAL FLOOD ADVISORY REMAINS IN EFFECT FROM 11 AM TUESDAY TO 8 PM EDT FRIDAY</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>BLOCKCHANNEL</valueName>
-            <value>EAS</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>BLOCKCHANNEL</valueName>
-            <value>NWEM</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>BLOCKCHANNEL</valueName>
-            <value>CMAS</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>VTEC</valueName>
-            <value>/O.CON.KMHX.SU.Y.0008.250929T2100Z-251004T1200Z/</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>eventEndingTime</valueName>
-            <value>2025-10-04T08:00:00-04:00</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>expiredReferences</valueName>
-            <value>w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.b82ffcc30766a7e19a460bb34eeac3113e9aa9d1.002.2,2025-09-28T20:36:00-04:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.2be1bc6465318773517c7504cb7e9e8c73dc576a.002.1,2025-09-28T15:34:00-04:00</value>
         </cap:parameter>
         <cap:scope>Public</cap:scope>
         <cap:code>IPAWSv1.0</cap:code>
@@ -615,6 +851,111 @@ tide, which will occur around 7:00 PM Monday.</summary>
         </cap:eventCode>
     </entry>
     <entry>
+        <id>https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.316a8731a224f685389765a7c88b0f0b731f8c5a.002.1</id>
+        <link rel="alternate" href="https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.316a8731a224f685389765a7c88b0f0b731f8c5a.002.1.cap"/>
+        <updated>2025-09-29T11:10:00-04:00</updated>
+        <published>2025-09-29T11:10:00-04:00</published>
+        <author>
+            <name>NWS</name>
+        </author>
+        <title>High Surf Advisory issued September 29 at 11:10AM EDT until October 4 at 8:00AM EDT by NWS Newport/Morehead City NC</title>
+        <summary>* WHAT...For the Beach Hazards Statement, dangerous rip
+currents. For the High Surf Advisory, large breaking waves of
+6 to 8 feet, building to 10 to 12 feet expected in the surf
+zone. For the Coastal Flood Advisory, minor inundation 1 to 2
+feet of inundation above ground level expected in low-lying
+areas near shorelines and tidal waterways.
+
+* WHERE...Northern Outer Banks.
+
+* WHEN...For the Beach Hazards Statement, from 8 AM EDT this
+morning through this evening. For the High Surf Advisory, from
+5 PM this afternoon to 8 AM EDT Saturday. For the Coastal
+Flood Advisory, from 11 AM Tuesday to 8 PM EDT Friday.
+
+* IMPACTS...Minor inundation, 1 to 2 feet above ground level, is
+possible in low-lying areas near shorelines and tidal
+waterways resulting in a low threat of property damage. Some
+roads and low lying property including parking lots, parks,
+lawns, and homes adjacent to the waterfront will experience
+shallow flooding. Dangerous swimming and surfing conditions
+and beach erosion. Rip currents can sweep even the best
+swimmers away from shore into deeper water.
+
+* ADDITIONAL DETAILS...The most likely time for strong rip
+currents to occur is a couple hours either side of low tide,
+which will occur around 7:00 PM Monday.</summary>
+        <cap:event>High Surf Advisory</cap:event>
+        <cap:sent>2025-09-29T11:10:00-04:00</cap:sent>
+        <cap:effective>2025-09-29T11:10:00-04:00</cap:effective>
+        <cap:onset>2025-09-29T17:00:00-04:00</cap:onset>
+        <cap:expires>2025-09-29T23:15:00-04:00</cap:expires>
+        <cap:status>Actual</cap:status>
+        <cap:msgType>Update</cap:msgType>
+        <cap:category>Met</cap:category>
+        <cap:urgency>Expected</cap:urgency>
+        <cap:severity>Minor</cap:severity>
+        <cap:certainty>Likely</cap:certainty>
+        <cap:areaDesc>Northern Outer Banks</cap:areaDesc>
+        <cap:polygon/>
+        <cap:geocode>
+            <valueName>SAME</valueName>
+            <value>037055</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>UGC</valueName>
+            <value>NCZ203</value>
+        </cap:geocode>
+        <cap:parameter>
+            <valueName>AWIPSidentifier</valueName>
+            <value>CFWMHX</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>WMOidentifier</valueName>
+            <value>WHUS42 KMHX 291510</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>NWSheadline</valueName>
+            <value>BEACH HAZARDS STATEMENT REMAINS IN EFFECT UNTIL 8 PM EDT THIS EVENING... ...HIGH SURF ADVISORY REMAINS IN EFFECT FROM 5 PM THIS AFTERNOON TO 8 AM EDT SATURDAY... ...COASTAL FLOOD ADVISORY REMAINS IN EFFECT FROM 11 AM TUESDAY TO 8 PM EDT FRIDAY</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>BLOCKCHANNEL</valueName>
+            <value>EAS</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>BLOCKCHANNEL</valueName>
+            <value>NWEM</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>BLOCKCHANNEL</valueName>
+            <value>CMAS</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>VTEC</valueName>
+            <value>/O.CON.KMHX.SU.Y.0008.250929T2100Z-251004T1200Z/</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>eventEndingTime</valueName>
+            <value>2025-10-04T08:00:00-04:00</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>expiredReferences</valueName>
+            <value>w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.b82ffcc30766a7e19a460bb34eeac3113e9aa9d1.002.2,2025-09-28T20:36:00-04:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.2be1bc6465318773517c7504cb7e9e8c73dc576a.002.1,2025-09-28T15:34:00-04:00</value>
+        </cap:parameter>
+        <cap:scope>Public</cap:scope>
+        <cap:code>IPAWSv1.0</cap:code>
+        <cap:language>en-US</cap:language>
+        <cap:web>http://www.weather.gov</cap:web>
+        <cap:eventCode>
+            <valueName>SAME</valueName>
+            <value>NWS</value>
+        </cap:eventCode>
+        <cap:eventCode>
+            <valueName>NationalWeatherService</valueName>
+            <value>SUY</value>
+        </cap:eventCode>
+    </entry>
+    <entry>
         <id>https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.316a8731a224f685389765a7c88b0f0b731f8c5a.002.2</id>
         <link rel="alternate" href="https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.316a8731a224f685389765a7c88b0f0b731f8c5a.002.2.cap"/>
         <updated>2025-09-29T11:10:00-04:00</updated>
@@ -713,6 +1054,135 @@ which will occur around 7:00 PM Monday.</summary>
         <cap:eventCode>
             <valueName>NationalWeatherService</valueName>
             <value>CFY</value>
+        </cap:eventCode>
+    </entry>
+    <entry>
+        <id>https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.316a8731a224f685389765a7c88b0f0b731f8c5a.001.1</id>
+        <link rel="alternate" href="https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.316a8731a224f685389765a7c88b0f0b731f8c5a.001.1.cap"/>
+        <updated>2025-09-29T11:10:00-04:00</updated>
+        <published>2025-09-29T11:10:00-04:00</published>
+        <author>
+            <name>NWS</name>
+        </author>
+        <title>Coastal Flood Warning issued September 29 at 11:10AM EDT until October 3 at 8:00PM EDT by NWS Newport/Morehead City NC</title>
+        <summary>* WHAT...For the Beach Hazards Statement, dangerous rip
+currents. For the High Surf Advisory, large breaking waves of
+6 to 8 feet, building to 10 to 12 feet expected in the surf
+zone. For the Coastal Flood Warning, moderate oceanside
+coastal flooding expected, with 2 to 3 feet of inundation
+above ground level expected in low-lying areas near shorelines
+and tidal waterways. Minor soundside flooding expected,
+inundation 1 to 2 feet above ground level.
+
+* WHERE...East Carteret County, and Ocracoke Island and Hatteras
+Island.
+
+* WHEN...For the Beach Hazards Statement, from 8 AM EDT this
+morning through this evening. For the High Surf Advisory, from
+5 PM this afternoon to 8 AM EDT Saturday. For the Coastal
+Flood Warning, from 11 AM Tuesday to 8 PM EDT Friday.
+
+* IMPACTS...Moderate oceanside coastal flooding, with inundation
+2 to 3 feet above ground level, locally higher with wave
+action, resulting in an elevated threat of property damage.
+Flooding will likely extend inland from the waterfront
+threatening some homes, businesses and critical
+infrastructure. Dangerous swimming, surfing conditions and
+beach erosion expected. Rip currents can sweep even the best
+swimmers away from shore into deeper water.
+
+* ADDITIONAL DETAILS...Greatest potential for impacts along
+vulnerable portions of Highway 12 on Ocracoke and Hatteras
+Islands. Portions of Highway 12 may be impassable at times due
+to ocean overwash, especially around times of high tide. Minor
+soundside flooding also expected, with greatest impacts
+expected in Downeast Carteret. The most likely time for strong
+rip currents to occur is a couple hours either side of low
+tide, which will occur around 7:00 PM Monday.</summary>
+        <cap:event>Coastal Flood Warning</cap:event>
+        <cap:sent>2025-09-29T11:10:00-04:00</cap:sent>
+        <cap:effective>2025-09-29T11:10:00-04:00</cap:effective>
+        <cap:onset>2025-09-30T11:00:00-04:00</cap:onset>
+        <cap:expires>2025-09-29T23:15:00-04:00</cap:expires>
+        <cap:status>Actual</cap:status>
+        <cap:msgType>Update</cap:msgType>
+        <cap:category>Met</cap:category>
+        <cap:urgency>Expected</cap:urgency>
+        <cap:severity>Severe</cap:severity>
+        <cap:certainty>Likely</cap:certainty>
+        <cap:areaDesc>East Carteret; Ocracoke Island; Hatteras Island</cap:areaDesc>
+        <cap:polygon/>
+        <cap:geocode>
+            <valueName>SAME</valueName>
+            <value>037031</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>SAME</valueName>
+            <value>037095</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>SAME</valueName>
+            <value>037055</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>UGC</valueName>
+            <value>NCZ196</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>UGC</valueName>
+            <value>NCZ204</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>UGC</valueName>
+            <value>NCZ205</value>
+        </cap:geocode>
+        <cap:parameter>
+            <valueName>AWIPSidentifier</valueName>
+            <value>CFWMHX</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>WMOidentifier</valueName>
+            <value>WHUS42 KMHX 291510</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>NWSheadline</valueName>
+            <value>BEACH HAZARDS STATEMENT REMAINS IN EFFECT UNTIL 8 PM EDT THIS EVENING... ...HIGH SURF ADVISORY REMAINS IN EFFECT FROM 5 PM THIS AFTERNOON TO 8 AM EDT SATURDAY... ...COASTAL FLOOD WARNING REMAINS IN EFFECT FROM 11 AM TUESDAY TO 8 PM EDT FRIDAY</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>BLOCKCHANNEL</valueName>
+            <value>EAS</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>BLOCKCHANNEL</valueName>
+            <value>NWEM</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>BLOCKCHANNEL</valueName>
+            <value>CMAS</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>EAS-ORG</valueName>
+            <value>WXR</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>VTEC</valueName>
+            <value>/O.CON.KMHX.CF.W.0003.250930T1500Z-251004T0000Z/</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>eventEndingTime</valueName>
+            <value>2025-10-03T20:00:00-04:00</value>
+        </cap:parameter>
+        <cap:scope>Public</cap:scope>
+        <cap:code>IPAWSv1.0</cap:code>
+        <cap:language>en-US</cap:language>
+        <cap:web>http://www.weather.gov</cap:web>
+        <cap:eventCode>
+            <valueName>SAME</valueName>
+            <value>CFW</value>
+        </cap:eventCode>
+        <cap:eventCode>
+            <valueName>NationalWeatherService</valueName>
+            <value>CFW</value>
         </cap:eventCode>
     </entry>
     <entry>
@@ -817,111 +1287,6 @@ Monday.</summary>
         </cap:eventCode>
     </entry>
     <entry>
-        <id>https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.316a8731a224f685389765a7c88b0f0b731f8c5a.004.3</id>
-        <link rel="alternate" href="https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.316a8731a224f685389765a7c88b0f0b731f8c5a.004.3.cap"/>
-        <updated>2025-09-29T11:10:00-04:00</updated>
-        <published>2025-09-29T11:10:00-04:00</published>
-        <author>
-            <name>NWS</name>
-        </author>
-        <title>Beach Hazards Statement issued September 29 at 11:10AM EDT until September 29 at 8:00PM EDT by NWS Newport/Morehead City NC</title>
-        <summary>* WHAT...For the Beach Hazards Statement, dangerous rip
-currents. For the High Surf Advisory, large breaking waves of
-5 to 8 feet expected in the surf zone. For the Coastal Flood
-Advisory, minor coastal flooding, 1 to 2 feet of inundation
-above ground level expected in low- lying areas near
-shorelines and tidal waterways.
-
-* WHERE...Coastal Onslow County.
-
-* WHEN...For the Beach Hazards Statement, from 8 AM EDT this
-morning through this evening. For the High Surf Advisory, from
-11 AM Tuesday to 11 AM EDT Wednesday. For the Coastal Flood
-Advisory, from 11 PM Tuesday to 8 PM EDT Thursday. Impacts
-greatest during the afternoon high tide cycles.
-
-* IMPACTS...Minor inundation, 1 to 2 feet above ground level, is
-possible in low-lying areas near shorelines and tidal
-waterways resulting in a low threat of property damage. Some
-roads and low lying property including parking lots, parks,
-lawns, and homes adjacent to the waterfront will experience
-shallow flooding. Dangerous swimming and surfing conditions
-and localized beach erosion. Rip currents can sweep even the
-best swimmers away from shore into deeper water. The most
-likely time for strong rip currents to occur is a couple hours
-either side of low tide, which will occur around 7:00 PM
-Monday.</summary>
-        <cap:event>Beach Hazards Statement</cap:event>
-        <cap:sent>2025-09-29T11:10:00-04:00</cap:sent>
-        <cap:effective>2025-09-29T11:10:00-04:00</cap:effective>
-        <cap:onset>2025-09-29T11:10:00-04:00</cap:onset>
-        <cap:expires>2025-09-29T23:15:00-04:00</cap:expires>
-        <cap:status>Actual</cap:status>
-        <cap:msgType>Update</cap:msgType>
-        <cap:category>Met</cap:category>
-        <cap:urgency>Expected</cap:urgency>
-        <cap:severity>Moderate</cap:severity>
-        <cap:certainty>Likely</cap:certainty>
-        <cap:areaDesc>Coastal Onslow</cap:areaDesc>
-        <cap:polygon/>
-        <cap:geocode>
-            <valueName>SAME</valueName>
-            <value>037133</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>UGC</valueName>
-            <value>NCZ199</value>
-        </cap:geocode>
-        <cap:parameter>
-            <valueName>AWIPSidentifier</valueName>
-            <value>CFWMHX</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>WMOidentifier</valueName>
-            <value>WHUS42 KMHX 291510</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>NWSheadline</valueName>
-            <value>BEACH HAZARDS STATEMENT REMAINS IN EFFECT UNTIL 8 PM EDT THIS EVENING... ...HIGH SURF ADVISORY REMAINS IN EFFECT FROM 11 AM TUESDAY TO 11 AM EDT WEDNESDAY... ...COASTAL FLOOD ADVISORY REMAINS IN EFFECT FROM 11 PM TUESDAY TO 8 PM EDT THURSDAY</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>BLOCKCHANNEL</valueName>
-            <value>EAS</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>BLOCKCHANNEL</valueName>
-            <value>NWEM</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>BLOCKCHANNEL</valueName>
-            <value>CMAS</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>VTEC</valueName>
-            <value>/O.CON.KMHX.BH.S.0076.000000T0000Z-250930T0000Z/</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>eventEndingTime</valueName>
-            <value>2025-09-29T20:00:00-04:00</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>expiredReferences</valueName>
-            <value>w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.b82ffcc30766a7e19a460bb34eeac3113e9aa9d1.005.1,2025-09-28T20:36:00-04:00</value>
-        </cap:parameter>
-        <cap:scope>Public</cap:scope>
-        <cap:code>IPAWSv1.0</cap:code>
-        <cap:language>en-US</cap:language>
-        <cap:web>http://www.weather.gov</cap:web>
-        <cap:eventCode>
-            <valueName>SAME</valueName>
-            <value>NWS</value>
-        </cap:eventCode>
-        <cap:eventCode>
-            <valueName>NationalWeatherService</valueName>
-            <value>BHS</value>
-        </cap:eventCode>
-    </entry>
-    <entry>
         <id>https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.316a8731a224f685389765a7c88b0f0b731f8c5a.003.1</id>
         <link rel="alternate" href="https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.316a8731a224f685389765a7c88b0f0b731f8c5a.003.1.cap"/>
         <updated>2025-09-29T11:10:00-04:00</updated>
@@ -1010,6 +1375,111 @@ Monday.
         <cap:parameter>
             <valueName>eventEndingTime</valueName>
             <value>2025-09-29T20:00:00-04:00</value>
+        </cap:parameter>
+        <cap:scope>Public</cap:scope>
+        <cap:code>IPAWSv1.0</cap:code>
+        <cap:language>en-US</cap:language>
+        <cap:web>http://www.weather.gov</cap:web>
+        <cap:eventCode>
+            <valueName>SAME</valueName>
+            <value>NWS</value>
+        </cap:eventCode>
+        <cap:eventCode>
+            <valueName>NationalWeatherService</valueName>
+            <value>BHS</value>
+        </cap:eventCode>
+    </entry>
+    <entry>
+        <id>https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.316a8731a224f685389765a7c88b0f0b731f8c5a.002.3</id>
+        <link rel="alternate" href="https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.316a8731a224f685389765a7c88b0f0b731f8c5a.002.3.cap"/>
+        <updated>2025-09-29T11:10:00-04:00</updated>
+        <published>2025-09-29T11:10:00-04:00</published>
+        <author>
+            <name>NWS</name>
+        </author>
+        <title>Beach Hazards Statement issued September 29 at 11:10AM EDT until September 29 at 8:00PM EDT by NWS Newport/Morehead City NC</title>
+        <summary>* WHAT...For the Beach Hazards Statement, dangerous rip
+currents. For the High Surf Advisory, large breaking waves of
+6 to 8 feet, building to 10 to 12 feet expected in the surf
+zone. For the Coastal Flood Advisory, minor inundation 1 to 2
+feet of inundation above ground level expected in low-lying
+areas near shorelines and tidal waterways.
+
+* WHERE...Northern Outer Banks.
+
+* WHEN...For the Beach Hazards Statement, from 8 AM EDT this
+morning through this evening. For the High Surf Advisory, from
+5 PM this afternoon to 8 AM EDT Saturday. For the Coastal
+Flood Advisory, from 11 AM Tuesday to 8 PM EDT Friday.
+
+* IMPACTS...Minor inundation, 1 to 2 feet above ground level, is
+possible in low-lying areas near shorelines and tidal
+waterways resulting in a low threat of property damage. Some
+roads and low lying property including parking lots, parks,
+lawns, and homes adjacent to the waterfront will experience
+shallow flooding. Dangerous swimming and surfing conditions
+and beach erosion. Rip currents can sweep even the best
+swimmers away from shore into deeper water.
+
+* ADDITIONAL DETAILS...The most likely time for strong rip
+currents to occur is a couple hours either side of low tide,
+which will occur around 7:00 PM Monday.</summary>
+        <cap:event>Beach Hazards Statement</cap:event>
+        <cap:sent>2025-09-29T11:10:00-04:00</cap:sent>
+        <cap:effective>2025-09-29T11:10:00-04:00</cap:effective>
+        <cap:onset>2025-09-29T11:10:00-04:00</cap:onset>
+        <cap:expires>2025-09-29T23:15:00-04:00</cap:expires>
+        <cap:status>Actual</cap:status>
+        <cap:msgType>Update</cap:msgType>
+        <cap:category>Met</cap:category>
+        <cap:urgency>Expected</cap:urgency>
+        <cap:severity>Moderate</cap:severity>
+        <cap:certainty>Likely</cap:certainty>
+        <cap:areaDesc>Northern Outer Banks</cap:areaDesc>
+        <cap:polygon/>
+        <cap:geocode>
+            <valueName>SAME</valueName>
+            <value>037055</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>UGC</valueName>
+            <value>NCZ203</value>
+        </cap:geocode>
+        <cap:parameter>
+            <valueName>AWIPSidentifier</valueName>
+            <value>CFWMHX</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>WMOidentifier</valueName>
+            <value>WHUS42 KMHX 291510</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>NWSheadline</valueName>
+            <value>BEACH HAZARDS STATEMENT REMAINS IN EFFECT UNTIL 8 PM EDT THIS EVENING... ...HIGH SURF ADVISORY REMAINS IN EFFECT FROM 5 PM THIS AFTERNOON TO 8 AM EDT SATURDAY... ...COASTAL FLOOD ADVISORY REMAINS IN EFFECT FROM 11 AM TUESDAY TO 8 PM EDT FRIDAY</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>BLOCKCHANNEL</valueName>
+            <value>EAS</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>BLOCKCHANNEL</valueName>
+            <value>NWEM</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>BLOCKCHANNEL</valueName>
+            <value>CMAS</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>VTEC</valueName>
+            <value>/O.CON.KMHX.BH.S.0076.000000T0000Z-250930T0000Z/</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>eventEndingTime</valueName>
+            <value>2025-09-29T20:00:00-04:00</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>expiredReferences</valueName>
+            <value>w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.b82ffcc30766a7e19a460bb34eeac3113e9aa9d1.002.1,2025-09-28T20:36:00-04:00</value>
         </cap:parameter>
         <cap:scope>Public</cap:scope>
         <cap:code>IPAWSv1.0</cap:code>
@@ -1257,49 +1727,31 @@ Monday.
         </cap:eventCode>
     </entry>
     <entry>
-        <id>https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.316a8731a224f685389765a7c88b0f0b731f8c5a.001.1</id>
-        <link rel="alternate" href="https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.316a8731a224f685389765a7c88b0f0b731f8c5a.001.1.cap"/>
+        <id>https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.316a8731a224f685389765a7c88b0f0b731f8c5a.006.1</id>
+        <link rel="alternate" href="https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.316a8731a224f685389765a7c88b0f0b731f8c5a.006.1.cap"/>
         <updated>2025-09-29T11:10:00-04:00</updated>
         <published>2025-09-29T11:10:00-04:00</published>
         <author>
             <name>NWS</name>
         </author>
-        <title>Coastal Flood Warning issued September 29 at 11:10AM EDT until October 3 at 8:00PM EDT by NWS Newport/Morehead City NC</title>
-        <summary>* WHAT...For the Beach Hazards Statement, dangerous rip
-currents. For the High Surf Advisory, large breaking waves of
-6 to 8 feet, building to 10 to 12 feet expected in the surf
-zone. For the Coastal Flood Warning, moderate oceanside
-coastal flooding expected, with 2 to 3 feet of inundation
-above ground level expected in low-lying areas near shorelines
-and tidal waterways. Minor soundside flooding expected,
-inundation 1 to 2 feet above ground level.
+        <title>Coastal Flood Advisory issued September 29 at 11:10AM EDT until October 3 at 8:00AM EDT by NWS Newport/Morehead City NC</title>
+        <summary>* WHAT... Minor coastal flooding, 1 to 2 feet of inundation
+above ground level, expected in low-lying areas near tidal
+waterways.
 
-* WHERE...East Carteret County, and Ocracoke Island and Hatteras
-Island.
+* WHERE...Areas along the Pamlico and Pungo Rivers and adjacent
+tidal creeks.
 
-* WHEN...For the Beach Hazards Statement, from 8 AM EDT this
-morning through this evening. For the High Surf Advisory, from
-5 PM this afternoon to 8 AM EDT Saturday. For the Coastal
-Flood Warning, from 11 AM Tuesday to 8 PM EDT Friday.
+* WHEN...From 11 AM Tuesday to 8 AM EDT Friday. Impacts greatest
+during the afternoon high tide cycles.
 
-* IMPACTS...Moderate oceanside coastal flooding, with inundation
-2 to 3 feet above ground level, locally higher with wave
-action, resulting in an elevated threat of property damage.
-Flooding will likely extend inland from the waterfront
-threatening some homes, businesses and critical
-infrastructure. Dangerous swimming, surfing conditions and
-beach erosion expected. Rip currents can sweep even the best
-swimmers away from shore into deeper water.
-
-* ADDITIONAL DETAILS...Greatest potential for impacts along
-vulnerable portions of Highway 12 on Ocracoke and Hatteras
-Islands. Portions of Highway 12 may be impassable at times due
-to ocean overwash, especially around times of high tide. Minor
-soundside flooding also expected, with greatest impacts
-expected in Downeast Carteret. The most likely time for strong
-rip currents to occur is a couple hours either side of low
-tide, which will occur around 7:00 PM Monday.</summary>
-        <cap:event>Coastal Flood Warning</cap:event>
+* IMPACTS...Minor inundation, 1 to 2 feet above ground level, is
+possible in low-lying areas near shorelines and tidal
+waterways resulting in a low threat of property damage. Some
+roads and low lying property including parking lots, parks,
+lawns, and homes adjacent to the waterfront will experience
+shallow flooding.</summary>
+        <cap:event>Coastal Flood Advisory</cap:event>
         <cap:sent>2025-09-29T11:10:00-04:00</cap:sent>
         <cap:effective>2025-09-29T11:10:00-04:00</cap:effective>
         <cap:onset>2025-09-30T11:00:00-04:00</cap:onset>
@@ -1308,33 +1760,17 @@ tide, which will occur around 7:00 PM Monday.</summary>
         <cap:msgType>Update</cap:msgType>
         <cap:category>Met</cap:category>
         <cap:urgency>Expected</cap:urgency>
-        <cap:severity>Severe</cap:severity>
+        <cap:severity>Minor</cap:severity>
         <cap:certainty>Likely</cap:certainty>
-        <cap:areaDesc>East Carteret; Ocracoke Island; Hatteras Island</cap:areaDesc>
+        <cap:areaDesc>Beaufort</cap:areaDesc>
         <cap:polygon/>
         <cap:geocode>
             <valueName>SAME</valueName>
-            <value>037031</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>SAME</valueName>
-            <value>037095</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>SAME</valueName>
-            <value>037055</value>
+            <value>037013</value>
         </cap:geocode>
         <cap:geocode>
             <valueName>UGC</valueName>
-            <value>NCZ196</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>UGC</valueName>
-            <value>NCZ204</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>UGC</valueName>
-            <value>NCZ205</value>
+            <value>NCZ080</value>
         </cap:geocode>
         <cap:parameter>
             <valueName>AWIPSidentifier</valueName>
@@ -1346,7 +1782,7 @@ tide, which will occur around 7:00 PM Monday.</summary>
         </cap:parameter>
         <cap:parameter>
             <valueName>NWSheadline</valueName>
-            <value>BEACH HAZARDS STATEMENT REMAINS IN EFFECT UNTIL 8 PM EDT THIS EVENING... ...HIGH SURF ADVISORY REMAINS IN EFFECT FROM 5 PM THIS AFTERNOON TO 8 AM EDT SATURDAY... ...COASTAL FLOOD WARNING REMAINS IN EFFECT FROM 11 AM TUESDAY TO 8 PM EDT FRIDAY</value>
+            <value>COASTAL FLOOD ADVISORY REMAINS IN EFFECT FROM 11 AM TUESDAY TO 8 AM EDT FRIDAY</value>
         </cap:parameter>
         <cap:parameter>
             <valueName>BLOCKCHANNEL</valueName>
@@ -1361,16 +1797,12 @@ tide, which will occur around 7:00 PM Monday.</summary>
             <value>CMAS</value>
         </cap:parameter>
         <cap:parameter>
-            <valueName>EAS-ORG</valueName>
-            <value>WXR</value>
-        </cap:parameter>
-        <cap:parameter>
             <valueName>VTEC</valueName>
-            <value>/O.CON.KMHX.CF.W.0003.250930T1500Z-251004T0000Z/</value>
+            <value>/O.CON.KMHX.CF.Y.0011.250930T1500Z-251003T1200Z/</value>
         </cap:parameter>
         <cap:parameter>
             <valueName>eventEndingTime</valueName>
-            <value>2025-10-03T20:00:00-04:00</value>
+            <value>2025-10-03T08:00:00-04:00</value>
         </cap:parameter>
         <cap:scope>Public</cap:scope>
         <cap:code>IPAWSv1.0</cap:code>
@@ -1378,11 +1810,11 @@ tide, which will occur around 7:00 PM Monday.</summary>
         <cap:web>http://www.weather.gov</cap:web>
         <cap:eventCode>
             <valueName>SAME</valueName>
-            <value>CFW</value>
+            <value>NWS</value>
         </cap:eventCode>
         <cap:eventCode>
             <valueName>NationalWeatherService</valueName>
-            <value>CFW</value>
+            <value>CFY</value>
         </cap:eventCode>
     </entry>
     <entry>
@@ -1438,97 +1870,6 @@ shallow flooding.</summary>
         <cap:geocode>
             <valueName>UGC</valueName>
             <value>NCZ194</value>
-        </cap:geocode>
-        <cap:parameter>
-            <valueName>AWIPSidentifier</valueName>
-            <value>CFWMHX</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>WMOidentifier</valueName>
-            <value>WHUS42 KMHX 291510</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>NWSheadline</valueName>
-            <value>COASTAL FLOOD ADVISORY REMAINS IN EFFECT FROM 11 AM TUESDAY TO 8 AM EDT FRIDAY</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>BLOCKCHANNEL</valueName>
-            <value>EAS</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>BLOCKCHANNEL</valueName>
-            <value>NWEM</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>BLOCKCHANNEL</valueName>
-            <value>CMAS</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>VTEC</valueName>
-            <value>/O.CON.KMHX.CF.Y.0011.250930T1500Z-251003T1200Z/</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>eventEndingTime</valueName>
-            <value>2025-10-03T08:00:00-04:00</value>
-        </cap:parameter>
-        <cap:scope>Public</cap:scope>
-        <cap:code>IPAWSv1.0</cap:code>
-        <cap:language>en-US</cap:language>
-        <cap:web>http://www.weather.gov</cap:web>
-        <cap:eventCode>
-            <valueName>SAME</valueName>
-            <value>NWS</value>
-        </cap:eventCode>
-        <cap:eventCode>
-            <valueName>NationalWeatherService</valueName>
-            <value>CFY</value>
-        </cap:eventCode>
-    </entry>
-    <entry>
-        <id>https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.316a8731a224f685389765a7c88b0f0b731f8c5a.006.1</id>
-        <link rel="alternate" href="https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.316a8731a224f685389765a7c88b0f0b731f8c5a.006.1.cap"/>
-        <updated>2025-09-29T11:10:00-04:00</updated>
-        <published>2025-09-29T11:10:00-04:00</published>
-        <author>
-            <name>NWS</name>
-        </author>
-        <title>Coastal Flood Advisory issued September 29 at 11:10AM EDT until October 3 at 8:00AM EDT by NWS Newport/Morehead City NC</title>
-        <summary>* WHAT... Minor coastal flooding, 1 to 2 feet of inundation
-above ground level, expected in low-lying areas near tidal
-waterways.
-
-* WHERE...Areas along the Pamlico and Pungo Rivers and adjacent
-tidal creeks.
-
-* WHEN...From 11 AM Tuesday to 8 AM EDT Friday. Impacts greatest
-during the afternoon high tide cycles.
-
-* IMPACTS...Minor inundation, 1 to 2 feet above ground level, is
-possible in low-lying areas near shorelines and tidal
-waterways resulting in a low threat of property damage. Some
-roads and low lying property including parking lots, parks,
-lawns, and homes adjacent to the waterfront will experience
-shallow flooding.</summary>
-        <cap:event>Coastal Flood Advisory</cap:event>
-        <cap:sent>2025-09-29T11:10:00-04:00</cap:sent>
-        <cap:effective>2025-09-29T11:10:00-04:00</cap:effective>
-        <cap:onset>2025-09-30T11:00:00-04:00</cap:onset>
-        <cap:expires>2025-09-29T23:15:00-04:00</cap:expires>
-        <cap:status>Actual</cap:status>
-        <cap:msgType>Update</cap:msgType>
-        <cap:category>Met</cap:category>
-        <cap:urgency>Expected</cap:urgency>
-        <cap:severity>Minor</cap:severity>
-        <cap:certainty>Likely</cap:certainty>
-        <cap:areaDesc>Beaufort</cap:areaDesc>
-        <cap:polygon/>
-        <cap:geocode>
-            <valueName>SAME</valueName>
-            <value>037013</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>UGC</valueName>
-            <value>NCZ080</value>
         </cap:geocode>
         <cap:parameter>
             <valueName>AWIPSidentifier</valueName>
@@ -1924,6 +2265,98 @@ Thursday.
         <cap:eventCode>
             <valueName>NationalWeatherService</valueName>
             <value>FLW</value>
+        </cap:eventCode>
+    </entry>
+    <entry>
+        <id>https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.f7f949a284e408ca7679847ef9cf288a5c349d98.001.2</id>
+        <link rel="alternate" href="https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.f7f949a284e408ca7679847ef9cf288a5c349d98.001.2.cap"/>
+        <updated>2025-09-29T06:31:00-07:00</updated>
+        <published>2025-09-29T06:31:00-07:00</published>
+        <author>
+            <name>NWS</name>
+        </author>
+        <title>Wind Advisory issued September 29 at 6:31AM PDT until September 30 at 11:00PM PDT by NWS Medford OR</title>
+        <summary>* WHAT...For the first Wind Advisory, south winds 20 to 35 mph with
+gusts up to 50 mph. For the second Wind Advisory, south winds 20
+to 35 mph with gusts up to 50 mph expected.
+
+* WHERE...The Shasta Valley in central Siskiyou County, including
+Weed, Grenada, Gazelle, Montague, and portions of Interstate 5 and
+Highway 97.
+
+* WHEN...For the first Wind Advisory, until 5 PM PDT this afternoon.
+For the second Wind Advisory, from 9 AM to 11 PM PDT Tuesday.
+
+* IMPACTS...Gusty winds will blow around unsecured objects. Tree
+limbs could be blown down and a few power outages may result.
+
+* ADDITIONAL DETAILS...Many area trees still have foliage, and this
+could place additional wind stress on any weakened or damaged
+branches and trunks.</summary>
+        <cap:event>Wind Advisory</cap:event>
+        <cap:sent>2025-09-29T06:31:00-07:00</cap:sent>
+        <cap:effective>2025-09-29T06:31:00-07:00</cap:effective>
+        <cap:onset>2025-09-30T09:00:00-07:00</cap:onset>
+        <cap:expires>2025-09-29T16:00:00-07:00</cap:expires>
+        <cap:status>Actual</cap:status>
+        <cap:msgType>Update</cap:msgType>
+        <cap:category>Met</cap:category>
+        <cap:urgency>Expected</cap:urgency>
+        <cap:severity>Moderate</cap:severity>
+        <cap:certainty>Likely</cap:certainty>
+        <cap:areaDesc>Central Siskiyou County</cap:areaDesc>
+        <cap:polygon/>
+        <cap:geocode>
+            <valueName>SAME</valueName>
+            <value>006093</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>UGC</valueName>
+            <value>CAZ081</value>
+        </cap:geocode>
+        <cap:parameter>
+            <valueName>AWIPSidentifier</valueName>
+            <value>NPWMFR</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>WMOidentifier</valueName>
+            <value>WWUS76 KMFR 291331</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>NWSheadline</valueName>
+            <value>WIND ADVISORY REMAINS IN EFFECT UNTIL 5 PM PDT THIS AFTERNOON... ...WIND ADVISORY REMAINS IN EFFECT FROM 9 AM TO 11 PM PDT TUESDAY</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>BLOCKCHANNEL</valueName>
+            <value>EAS</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>BLOCKCHANNEL</valueName>
+            <value>NWEM</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>BLOCKCHANNEL</valueName>
+            <value>CMAS</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>VTEC</valueName>
+            <value>/O.CON.KMFR.WI.Y.0018.250930T1600Z-251001T0600Z/</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>eventEndingTime</valueName>
+            <value>2025-09-30T23:00:00-07:00</value>
+        </cap:parameter>
+        <cap:scope>Public</cap:scope>
+        <cap:code>IPAWSv1.0</cap:code>
+        <cap:language>en-US</cap:language>
+        <cap:web>http://www.weather.gov</cap:web>
+        <cap:eventCode>
+            <valueName>SAME</valueName>
+            <value>NWS</value>
+        </cap:eventCode>
+        <cap:eventCode>
+            <valueName>NationalWeatherService</valueName>
+            <value>WIY</value>
         </cap:eventCode>
     </entry>
     <entry>
@@ -2333,98 +2766,6 @@ beds, especially Summer Lake and Fossil Lake.</summary>
         </cap:eventCode>
     </entry>
     <entry>
-        <id>https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.f7f949a284e408ca7679847ef9cf288a5c349d98.001.2</id>
-        <link rel="alternate" href="https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.f7f949a284e408ca7679847ef9cf288a5c349d98.001.2.cap"/>
-        <updated>2025-09-29T06:31:00-07:00</updated>
-        <published>2025-09-29T06:31:00-07:00</published>
-        <author>
-            <name>NWS</name>
-        </author>
-        <title>Wind Advisory issued September 29 at 6:31AM PDT until September 30 at 11:00PM PDT by NWS Medford OR</title>
-        <summary>* WHAT...For the first Wind Advisory, south winds 20 to 35 mph with
-gusts up to 50 mph. For the second Wind Advisory, south winds 20
-to 35 mph with gusts up to 50 mph expected.
-
-* WHERE...The Shasta Valley in central Siskiyou County, including
-Weed, Grenada, Gazelle, Montague, and portions of Interstate 5 and
-Highway 97.
-
-* WHEN...For the first Wind Advisory, until 5 PM PDT this afternoon.
-For the second Wind Advisory, from 9 AM to 11 PM PDT Tuesday.
-
-* IMPACTS...Gusty winds will blow around unsecured objects. Tree
-limbs could be blown down and a few power outages may result.
-
-* ADDITIONAL DETAILS...Many area trees still have foliage, and this
-could place additional wind stress on any weakened or damaged
-branches and trunks.</summary>
-        <cap:event>Wind Advisory</cap:event>
-        <cap:sent>2025-09-29T06:31:00-07:00</cap:sent>
-        <cap:effective>2025-09-29T06:31:00-07:00</cap:effective>
-        <cap:onset>2025-09-30T09:00:00-07:00</cap:onset>
-        <cap:expires>2025-09-29T16:00:00-07:00</cap:expires>
-        <cap:status>Actual</cap:status>
-        <cap:msgType>Update</cap:msgType>
-        <cap:category>Met</cap:category>
-        <cap:urgency>Expected</cap:urgency>
-        <cap:severity>Moderate</cap:severity>
-        <cap:certainty>Likely</cap:certainty>
-        <cap:areaDesc>Central Siskiyou County</cap:areaDesc>
-        <cap:polygon/>
-        <cap:geocode>
-            <valueName>SAME</valueName>
-            <value>006093</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>UGC</valueName>
-            <value>CAZ081</value>
-        </cap:geocode>
-        <cap:parameter>
-            <valueName>AWIPSidentifier</valueName>
-            <value>NPWMFR</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>WMOidentifier</valueName>
-            <value>WWUS76 KMFR 291331</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>NWSheadline</valueName>
-            <value>WIND ADVISORY REMAINS IN EFFECT UNTIL 5 PM PDT THIS AFTERNOON... ...WIND ADVISORY REMAINS IN EFFECT FROM 9 AM TO 11 PM PDT TUESDAY</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>BLOCKCHANNEL</valueName>
-            <value>EAS</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>BLOCKCHANNEL</valueName>
-            <value>NWEM</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>BLOCKCHANNEL</valueName>
-            <value>CMAS</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>VTEC</valueName>
-            <value>/O.CON.KMFR.WI.Y.0018.250930T1600Z-251001T0600Z/</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>eventEndingTime</valueName>
-            <value>2025-09-30T23:00:00-07:00</value>
-        </cap:parameter>
-        <cap:scope>Public</cap:scope>
-        <cap:code>IPAWSv1.0</cap:code>
-        <cap:language>en-US</cap:language>
-        <cap:web>http://www.weather.gov</cap:web>
-        <cap:eventCode>
-            <valueName>SAME</valueName>
-            <value>NWS</value>
-        </cap:eventCode>
-        <cap:eventCode>
-            <valueName>NationalWeatherService</valueName>
-            <value>WIY</value>
-        </cap:eventCode>
-    </entry>
-    <entry>
         <id>https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.ae8213d065947f0b4653a9ebb1c1b7b43a9b1046.001.1</id>
         <link rel="alternate" href="https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.ae8213d065947f0b4653a9ebb1c1b7b43a9b1046.001.1.cap"/>
         <updated>2025-09-29T09:27:00-04:00</updated>
@@ -2638,259 +2979,58 @@ evening.
         </cap:eventCode>
     </entry>
     <entry>
-        <id>https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.9f36e236bbb69184a52eea1be2dcc83a7545b7bf.001.1</id>
-        <link rel="alternate" href="https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.9f36e236bbb69184a52eea1be2dcc83a7545b7bf.001.1.cap"/>
-        <updated>2025-09-29T08:51:00-04:00</updated>
-        <published>2025-09-29T08:51:00-04:00</published>
+        <id>https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.7f992fd77feb38fdb1f7e4411496221a117b86c2.002.1</id>
+        <link rel="alternate" href="https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.7f992fd77feb38fdb1f7e4411496221a117b86c2.002.1.cap"/>
+        <updated>2025-09-29T02:21:00-07:00</updated>
+        <published>2025-09-29T02:21:00-07:00</published>
         <author>
             <name>NWS</name>
         </author>
-        <title>High Surf Advisory issued September 29 at 8:51AM EDT until October 4 at 8:00AM EDT by NWS Charleston SC</title>
-        <summary>* WHAT...For the High Rip Current Risk, dangerous rip currents
-expected. For the High Surf Advisory, large breaking waves of
-5 to 6 feet expected in the surf zone.
+        <title>Wind Advisory issued September 29 at 2:21AM PDT until October 1 at 1:00AM PDT by NWS Eureka CA</title>
+        <summary>* WHAT...South winds 20 to 30 mph with gusts up to 50 mph expected.
 
-* WHERE...South Carolina Beaches, and Georgia Beaches.
+* WHERE...Del Norte County.
 
-* WHEN...For the High Rip Current Risk, through this evening.
-For the High Surf Advisory, from 8 PM this evening to 8 AM EDT
-Saturday.
+* WHEN...From 11 AM Tuesday to 1 AM PDT Wednesday.
 
-* IMPACTS...Dangerous swimming and surfing conditions and
-localized beach erosion. Rip currents can sweep even the best
-swimmers away from shore into deeper water.</summary>
-        <cap:event>High Surf Advisory</cap:event>
-        <cap:sent>2025-09-29T08:51:00-04:00</cap:sent>
-        <cap:effective>2025-09-29T08:51:00-04:00</cap:effective>
-        <cap:onset>2025-09-29T20:00:00-04:00</cap:onset>
-        <cap:expires>2025-09-29T17:00:00-04:00</cap:expires>
-        <cap:status>Actual</cap:status>
-        <cap:msgType>Update</cap:msgType>
-        <cap:category>Met</cap:category>
-        <cap:urgency>Expected</cap:urgency>
-        <cap:severity>Minor</cap:severity>
-        <cap:certainty>Likely</cap:certainty>
-        <cap:areaDesc>Coastal Bryan; Coastal Chatham; Coastal Liberty; Coastal McIntosh; Beaufort; Coastal Colleton; Charleston; Coastal Jasper</cap:areaDesc>
-        <cap:polygon/>
-        <cap:geocode>
-            <valueName>SAME</valueName>
-            <value>013029</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>SAME</valueName>
-            <value>013051</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>SAME</valueName>
-            <value>013179</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>SAME</valueName>
-            <value>013191</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>SAME</valueName>
-            <value>045013</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>SAME</valueName>
-            <value>045029</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>SAME</valueName>
-            <value>045019</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>SAME</valueName>
-            <value>045053</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>UGC</valueName>
-            <value>GAZ117</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>UGC</valueName>
-            <value>GAZ119</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>UGC</valueName>
-            <value>GAZ139</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>UGC</valueName>
-            <value>GAZ141</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>UGC</valueName>
-            <value>SCZ048</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>UGC</valueName>
-            <value>SCZ049</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>UGC</valueName>
-            <value>SCZ050</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>UGC</valueName>
-            <value>SCZ051</value>
-        </cap:geocode>
-        <cap:parameter>
-            <valueName>AWIPSidentifier</valueName>
-            <value>CFWCHS</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>WMOidentifier</valueName>
-            <value>WHUS42 KCHS 291251</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>NWSheadline</valueName>
-            <value>HIGH RIP CURRENT RISK REMAINS IN EFFECT UNTIL 8 PM EDT THIS EVENING... ...HIGH SURF ADVISORY REMAINS IN EFFECT FROM 8 PM THIS EVENING TO 8 AM EDT SATURDAY</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>BLOCKCHANNEL</valueName>
-            <value>EAS</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>BLOCKCHANNEL</valueName>
-            <value>NWEM</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>BLOCKCHANNEL</valueName>
-            <value>CMAS</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>VTEC</valueName>
-            <value>/O.CON.KCHS.SU.Y.0007.250930T0000Z-251004T1200Z/</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>eventEndingTime</valueName>
-            <value>2025-10-04T08:00:00-04:00</value>
-        </cap:parameter>
-        <cap:scope>Public</cap:scope>
-        <cap:code>IPAWSv1.0</cap:code>
-        <cap:language>en-US</cap:language>
-        <cap:web>http://www.weather.gov</cap:web>
-        <cap:eventCode>
-            <valueName>SAME</valueName>
-            <value>NWS</value>
-        </cap:eventCode>
-        <cap:eventCode>
-            <valueName>NationalWeatherService</valueName>
-            <value>SUY</value>
-        </cap:eventCode>
-    </entry>
-    <entry>
-        <id>https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.9f36e236bbb69184a52eea1be2dcc83a7545b7bf.001.2</id>
-        <link rel="alternate" href="https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.9f36e236bbb69184a52eea1be2dcc83a7545b7bf.001.2.cap"/>
-        <updated>2025-09-29T08:51:00-04:00</updated>
-        <published>2025-09-29T08:51:00-04:00</published>
-        <author>
-            <name>NWS</name>
-        </author>
-        <title>Rip Current Statement issued September 29 at 8:51AM EDT until September 29 at 8:00PM EDT by NWS Charleston SC</title>
-        <summary>* WHAT...For the High Rip Current Risk, dangerous rip currents
-expected. For the High Surf Advisory, large breaking waves of
-5 to 6 feet expected in the surf zone.
-
-* WHERE...South Carolina Beaches, and Georgia Beaches.
-
-* WHEN...For the High Rip Current Risk, through this evening.
-For the High Surf Advisory, from 8 PM this evening to 8 AM EDT
-Saturday.
-
-* IMPACTS...Dangerous swimming and surfing conditions and
-localized beach erosion. Rip currents can sweep even the best
-swimmers away from shore into deeper water.</summary>
-        <cap:event>Rip Current Statement</cap:event>
-        <cap:sent>2025-09-29T08:51:00-04:00</cap:sent>
-        <cap:effective>2025-09-29T08:51:00-04:00</cap:effective>
-        <cap:onset>2025-09-29T08:51:00-04:00</cap:onset>
-        <cap:expires>2025-09-29T17:00:00-04:00</cap:expires>
+* IMPACTS...Wind gusts will be particularly strong along windward
+ridges and exposed coastal headlands.</summary>
+        <cap:event>Wind Advisory</cap:event>
+        <cap:sent>2025-09-29T02:21:00-07:00</cap:sent>
+        <cap:effective>2025-09-29T02:21:00-07:00</cap:effective>
+        <cap:onset>2025-09-30T11:00:00-07:00</cap:onset>
+        <cap:expires>2025-09-29T10:30:00-07:00</cap:expires>
         <cap:status>Actual</cap:status>
         <cap:msgType>Update</cap:msgType>
         <cap:category>Met</cap:category>
         <cap:urgency>Expected</cap:urgency>
         <cap:severity>Moderate</cap:severity>
         <cap:certainty>Likely</cap:certainty>
-        <cap:areaDesc>Coastal Bryan; Coastal Chatham; Coastal Liberty; Coastal McIntosh; Beaufort; Coastal Colleton; Charleston; Coastal Jasper</cap:areaDesc>
+        <cap:areaDesc>Coastal Del Norte; Del Norte Interior</cap:areaDesc>
         <cap:polygon/>
         <cap:geocode>
             <valueName>SAME</valueName>
-            <value>013029</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>SAME</valueName>
-            <value>013051</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>SAME</valueName>
-            <value>013179</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>SAME</valueName>
-            <value>013191</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>SAME</valueName>
-            <value>045013</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>SAME</valueName>
-            <value>045029</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>SAME</valueName>
-            <value>045019</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>SAME</valueName>
-            <value>045053</value>
+            <value>006015</value>
         </cap:geocode>
         <cap:geocode>
             <valueName>UGC</valueName>
-            <value>GAZ117</value>
+            <value>CAZ101</value>
         </cap:geocode>
         <cap:geocode>
             <valueName>UGC</valueName>
-            <value>GAZ119</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>UGC</valueName>
-            <value>GAZ139</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>UGC</valueName>
-            <value>GAZ141</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>UGC</valueName>
-            <value>SCZ048</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>UGC</valueName>
-            <value>SCZ049</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>UGC</valueName>
-            <value>SCZ050</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>UGC</valueName>
-            <value>SCZ051</value>
+            <value>CAZ102</value>
         </cap:geocode>
         <cap:parameter>
             <valueName>AWIPSidentifier</valueName>
-            <value>CFWCHS</value>
+            <value>NPWEKA</value>
         </cap:parameter>
         <cap:parameter>
             <valueName>WMOidentifier</valueName>
-            <value>WHUS42 KCHS 291251</value>
+            <value>WWUS76 KEKA 290921</value>
         </cap:parameter>
         <cap:parameter>
             <valueName>NWSheadline</valueName>
-            <value>HIGH RIP CURRENT RISK REMAINS IN EFFECT UNTIL 8 PM EDT THIS EVENING... ...HIGH SURF ADVISORY REMAINS IN EFFECT FROM 8 PM THIS EVENING TO 8 AM EDT SATURDAY</value>
+            <value>WIND ADVISORY REMAINS IN EFFECT FROM 11 AM TUESDAY TO 1 AM PDT WEDNESDAY</value>
         </cap:parameter>
         <cap:parameter>
             <valueName>BLOCKCHANNEL</valueName>
@@ -2906,15 +3046,11 @@ swimmers away from shore into deeper water.</summary>
         </cap:parameter>
         <cap:parameter>
             <valueName>VTEC</valueName>
-            <value>/O.CON.KCHS.RP.S.0009.000000T0000Z-250930T0000Z/</value>
+            <value>/O.CON.KEKA.WI.Y.0018.250930T1800Z-251001T0800Z/</value>
         </cap:parameter>
         <cap:parameter>
             <valueName>eventEndingTime</valueName>
-            <value>2025-09-29T20:00:00-04:00</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>expiredReferences</valueName>
-            <value>w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.19d081c273c3402cc424aa9f56169735f34d0d49.001.1,2025-09-28T20:32:00-04:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.86f30bae19b3828ac2e93acbae2a084fdd6f5e14.001.1,2025-09-28T13:26:00-04:00</value>
+            <value>2025-10-01T01:00:00-07:00</value>
         </cap:parameter>
         <cap:scope>Public</cap:scope>
         <cap:code>IPAWSv1.0</cap:code>
@@ -2926,7 +3062,7 @@ swimmers away from shore into deeper water.</summary>
         </cap:eventCode>
         <cap:eventCode>
             <valueName>NationalWeatherService</valueName>
-            <value>RPS</value>
+            <value>WIY</value>
         </cap:eventCode>
     </entry>
     <entry>
@@ -3002,93 +3138,6 @@ ridges and exposed coastal headlands.</summary>
         <cap:parameter>
             <valueName>VTEC</valueName>
             <value>/O.EXT.KEKA.WI.Y.0018.250930T1800Z-251001T0800Z/</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>eventEndingTime</valueName>
-            <value>2025-10-01T01:00:00-07:00</value>
-        </cap:parameter>
-        <cap:scope>Public</cap:scope>
-        <cap:code>IPAWSv1.0</cap:code>
-        <cap:language>en-US</cap:language>
-        <cap:web>http://www.weather.gov</cap:web>
-        <cap:eventCode>
-            <valueName>SAME</valueName>
-            <value>NWS</value>
-        </cap:eventCode>
-        <cap:eventCode>
-            <valueName>NationalWeatherService</valueName>
-            <value>WIY</value>
-        </cap:eventCode>
-    </entry>
-    <entry>
-        <id>https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.7f992fd77feb38fdb1f7e4411496221a117b86c2.002.1</id>
-        <link rel="alternate" href="https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.7f992fd77feb38fdb1f7e4411496221a117b86c2.002.1.cap"/>
-        <updated>2025-09-29T02:21:00-07:00</updated>
-        <published>2025-09-29T02:21:00-07:00</published>
-        <author>
-            <name>NWS</name>
-        </author>
-        <title>Wind Advisory issued September 29 at 2:21AM PDT until October 1 at 1:00AM PDT by NWS Eureka CA</title>
-        <summary>* WHAT...South winds 20 to 30 mph with gusts up to 50 mph expected.
-
-* WHERE...Del Norte County.
-
-* WHEN...From 11 AM Tuesday to 1 AM PDT Wednesday.
-
-* IMPACTS...Wind gusts will be particularly strong along windward
-ridges and exposed coastal headlands.</summary>
-        <cap:event>Wind Advisory</cap:event>
-        <cap:sent>2025-09-29T02:21:00-07:00</cap:sent>
-        <cap:effective>2025-09-29T02:21:00-07:00</cap:effective>
-        <cap:onset>2025-09-30T11:00:00-07:00</cap:onset>
-        <cap:expires>2025-09-29T10:30:00-07:00</cap:expires>
-        <cap:status>Actual</cap:status>
-        <cap:msgType>Update</cap:msgType>
-        <cap:category>Met</cap:category>
-        <cap:urgency>Expected</cap:urgency>
-        <cap:severity>Moderate</cap:severity>
-        <cap:certainty>Likely</cap:certainty>
-        <cap:areaDesc>Coastal Del Norte; Del Norte Interior</cap:areaDesc>
-        <cap:polygon/>
-        <cap:geocode>
-            <valueName>SAME</valueName>
-            <value>006015</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>UGC</valueName>
-            <value>CAZ101</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>UGC</valueName>
-            <value>CAZ102</value>
-        </cap:geocode>
-        <cap:parameter>
-            <valueName>AWIPSidentifier</valueName>
-            <value>NPWEKA</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>WMOidentifier</valueName>
-            <value>WWUS76 KEKA 290921</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>NWSheadline</valueName>
-            <value>WIND ADVISORY REMAINS IN EFFECT FROM 11 AM TUESDAY TO 1 AM PDT WEDNESDAY</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>BLOCKCHANNEL</valueName>
-            <value>EAS</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>BLOCKCHANNEL</valueName>
-            <value>NWEM</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>BLOCKCHANNEL</valueName>
-            <value>CMAS</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>VTEC</valueName>
-            <value>/O.CON.KEKA.WI.Y.0018.250930T1800Z-251001T0800Z/</value>
         </cap:parameter>
         <cap:parameter>
             <valueName>eventEndingTime</valueName>
@@ -3516,105 +3565,6 @@ areas. .</summary>
         </cap:eventCode>
     </entry>
     <entry>
-        <id>https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.f7c1a837d9acf66671083e295bdb504d4eed8a58.002.1</id>
-        <link rel="alternate" href="https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.f7c1a837d9acf66671083e295bdb504d4eed8a58.002.1.cap"/>
-        <updated>2025-09-29T01:21:00-07:00</updated>
-        <published>2025-09-29T01:21:00-07:00</published>
-        <author>
-            <name>NWS</name>
-        </author>
-        <title>Lake Wind Advisory issued September 29 at 1:21AM PDT until September 29 at 8:00PM PDT by NWS Reno NV</title>
-        <summary>* WHAT...Southwest winds 10 to 20 mph with gusts up to 35 mph and
-waves 1 to 3 feet. Quick bursts of stronger winds and higher wave
-heights may also occur this afternoon as showers and thunderstorms
-develop.
-
-* WHERE...Western Nevada Basin and Range including Pyramid Lake.
-
-* WHEN...From noon today to 8 PM PDT this evening.
-
-* IMPACTS...Small boats, kayaks and paddle boards will be prone to
-capsizing and should remain off lake waters until conditions
-improve.</summary>
-        <cap:event>Lake Wind Advisory</cap:event>
-        <cap:sent>2025-09-29T01:21:00-07:00</cap:sent>
-        <cap:effective>2025-09-29T01:21:00-07:00</cap:effective>
-        <cap:onset>2025-09-29T12:00:00-07:00</cap:onset>
-        <cap:expires>2025-09-29T20:00:00-07:00</cap:expires>
-        <cap:status>Actual</cap:status>
-        <cap:msgType>Alert</cap:msgType>
-        <cap:category>Met</cap:category>
-        <cap:urgency>Expected</cap:urgency>
-        <cap:severity>Moderate</cap:severity>
-        <cap:certainty>Likely</cap:certainty>
-        <cap:areaDesc>Western Nevada Basin and Range including Pyramid Lake</cap:areaDesc>
-        <cap:polygon/>
-        <cap:geocode>
-            <valueName>SAME</valueName>
-            <value>032001</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>SAME</valueName>
-            <value>032019</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>SAME</valueName>
-            <value>032027</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>SAME</valueName>
-            <value>032031</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>UGC</valueName>
-            <value>NVZ004</value>
-        </cap:geocode>
-        <cap:parameter>
-            <valueName>AWIPSidentifier</valueName>
-            <value>NPWREV</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>WMOidentifier</valueName>
-            <value>WWUS75 KREV 290821</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>NWSheadline</valueName>
-            <value>LAKE WIND ADVISORY IN EFFECT FROM NOON TODAY TO 8 PM PDT THIS EVENING</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>BLOCKCHANNEL</valueName>
-            <value>EAS</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>BLOCKCHANNEL</valueName>
-            <value>NWEM</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>BLOCKCHANNEL</valueName>
-            <value>CMAS</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>VTEC</valueName>
-            <value>/O.NEW.KREV.LW.Y.0032.250929T1900Z-250930T0300Z/</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>eventEndingTime</valueName>
-            <value>2025-09-29T20:00:00-07:00</value>
-        </cap:parameter>
-        <cap:scope>Public</cap:scope>
-        <cap:code>IPAWSv1.0</cap:code>
-        <cap:language>en-US</cap:language>
-        <cap:web>http://www.weather.gov</cap:web>
-        <cap:eventCode>
-            <valueName>SAME</valueName>
-            <value>NWS</value>
-        </cap:eventCode>
-        <cap:eventCode>
-            <valueName>NationalWeatherService</valueName>
-            <value>LWY</value>
-        </cap:eventCode>
-    </entry>
-    <entry>
         <id>https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.f7c1a837d9acf66671083e295bdb504d4eed8a58.001.1</id>
         <link rel="alternate" href="https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.f7c1a837d9acf66671083e295bdb504d4eed8a58.001.1.cap"/>
         <updated>2025-09-29T01:21:00-07:00</updated>
@@ -3683,6 +3633,105 @@ improve.</summary>
         <cap:geocode>
             <valueName>UGC</valueName>
             <value>NVZ002</value>
+        </cap:geocode>
+        <cap:parameter>
+            <valueName>AWIPSidentifier</valueName>
+            <value>NPWREV</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>WMOidentifier</valueName>
+            <value>WWUS75 KREV 290821</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>NWSheadline</valueName>
+            <value>LAKE WIND ADVISORY IN EFFECT FROM NOON TODAY TO 8 PM PDT THIS EVENING</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>BLOCKCHANNEL</valueName>
+            <value>EAS</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>BLOCKCHANNEL</valueName>
+            <value>NWEM</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>BLOCKCHANNEL</valueName>
+            <value>CMAS</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>VTEC</valueName>
+            <value>/O.NEW.KREV.LW.Y.0032.250929T1900Z-250930T0300Z/</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>eventEndingTime</valueName>
+            <value>2025-09-29T20:00:00-07:00</value>
+        </cap:parameter>
+        <cap:scope>Public</cap:scope>
+        <cap:code>IPAWSv1.0</cap:code>
+        <cap:language>en-US</cap:language>
+        <cap:web>http://www.weather.gov</cap:web>
+        <cap:eventCode>
+            <valueName>SAME</valueName>
+            <value>NWS</value>
+        </cap:eventCode>
+        <cap:eventCode>
+            <valueName>NationalWeatherService</valueName>
+            <value>LWY</value>
+        </cap:eventCode>
+    </entry>
+    <entry>
+        <id>https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.f7c1a837d9acf66671083e295bdb504d4eed8a58.002.1</id>
+        <link rel="alternate" href="https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.f7c1a837d9acf66671083e295bdb504d4eed8a58.002.1.cap"/>
+        <updated>2025-09-29T01:21:00-07:00</updated>
+        <published>2025-09-29T01:21:00-07:00</published>
+        <author>
+            <name>NWS</name>
+        </author>
+        <title>Lake Wind Advisory issued September 29 at 1:21AM PDT until September 29 at 8:00PM PDT by NWS Reno NV</title>
+        <summary>* WHAT...Southwest winds 10 to 20 mph with gusts up to 35 mph and
+waves 1 to 3 feet. Quick bursts of stronger winds and higher wave
+heights may also occur this afternoon as showers and thunderstorms
+develop.
+
+* WHERE...Western Nevada Basin and Range including Pyramid Lake.
+
+* WHEN...From noon today to 8 PM PDT this evening.
+
+* IMPACTS...Small boats, kayaks and paddle boards will be prone to
+capsizing and should remain off lake waters until conditions
+improve.</summary>
+        <cap:event>Lake Wind Advisory</cap:event>
+        <cap:sent>2025-09-29T01:21:00-07:00</cap:sent>
+        <cap:effective>2025-09-29T01:21:00-07:00</cap:effective>
+        <cap:onset>2025-09-29T12:00:00-07:00</cap:onset>
+        <cap:expires>2025-09-29T20:00:00-07:00</cap:expires>
+        <cap:status>Actual</cap:status>
+        <cap:msgType>Alert</cap:msgType>
+        <cap:category>Met</cap:category>
+        <cap:urgency>Expected</cap:urgency>
+        <cap:severity>Moderate</cap:severity>
+        <cap:certainty>Likely</cap:certainty>
+        <cap:areaDesc>Western Nevada Basin and Range including Pyramid Lake</cap:areaDesc>
+        <cap:polygon/>
+        <cap:geocode>
+            <valueName>SAME</valueName>
+            <value>032001</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>SAME</valueName>
+            <value>032019</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>SAME</valueName>
+            <value>032027</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>SAME</valueName>
+            <value>032031</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>UGC</valueName>
+            <value>NVZ004</value>
         </cap:geocode>
         <cap:parameter>
             <valueName>AWIPSidentifier</valueName>
