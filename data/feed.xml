@@ -2,53 +2,73 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xmlns:cap="urn:oasis:names:tc:emergency:cap:1.2">
     <id>https://api.weather.gov/alerts.atom?region_type=land&amp;active=1</id>
     <generator>NWS CAP Server</generator>
-    <updated>2025-10-26T22:05:40+00:00</updated>
+    <updated>2025-10-26T22:34:02+00:00</updated>
     <author>
         <name>w-nws.webmaster@noaa.gov</name>
     </author>
     <title>Current watches, warnings, and advisories for United States land zones</title>
     <link rel="self" href="https://api.weather.gov/alerts.atom?region_type=land&amp;active=1"/>
     <entry>
-        <id>https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0-KEEPALIVE-28575</id>
-        <link rel="alternate" href="https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0-KEEPALIVE-28575.cap"/>
-        <updated>2025-10-26T22:04:02+00:00</updated>
-        <published>2025-10-26T22:04:02+00:00</published>
+        <id>https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.0763fb949e26364219577b2efcdac1454e71dfa8.001.1</id>
+        <link rel="alternate" href="https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.0763fb949e26364219577b2efcdac1454e71dfa8.001.1.cap"/>
+        <updated>2025-10-26T18:28:00-04:00</updated>
+        <published>2025-10-26T18:28:00-04:00</published>
         <author>
             <name>NWS</name>
         </author>
-        <title/>
-        <summary>Monitoring message only. Please disregard.</summary>
-        <cap:event>Test Message</cap:event>
-        <cap:sent>2025-10-26T22:04:02+00:00</cap:sent>
-        <cap:effective>2025-10-26T22:04:02+00:00</cap:effective>
-        <cap:expires>2025-10-26T22:14:02+00:00</cap:expires>
-        <cap:status>Test</cap:status>
+        <title>Flood Advisory issued October 26 at 6:28PM EDT until October 26 at 8:30PM EDT by NWS Melbourne FL</title>
+        <summary>* WHAT...Flooding caused by excessive rainfall is expected.
+
+* WHERE...A portion of east central Florida, including the following
+county, Lake.
+
+* WHEN...Until 830 PM EDT.
+
+* IMPACTS...Minor flooding in low-lying and poor drainage areas.
+
+* ADDITIONAL DETAILS...
+- At 628 PM EDT, Doppler radar indicated heavy rain due to
+thunderstorms. Minor flooding is ongoing or expected to begin
+shortly in the advisory area. Between 2.5 and 3.5 inches of
+rain have fallen.
+- Additional rainfall amounts of 1 to 2 inches are expected
+over the area. This additional rain will result in minor
+flooding.
+- Some locations that will experience flooding include...
+Eustis, Mount Dora and Umatilla.
+- http://www.weather.gov/safety/flood</summary>
+        <cap:event>Flood Advisory</cap:event>
+        <cap:sent>2025-10-26T18:28:00-04:00</cap:sent>
+        <cap:effective>2025-10-26T18:28:00-04:00</cap:effective>
+        <cap:onset>2025-10-26T18:28:00-04:00</cap:onset>
+        <cap:expires>2025-10-26T20:30:00-04:00</cap:expires>
+        <cap:status>Actual</cap:status>
         <cap:msgType>Alert</cap:msgType>
         <cap:category>Met</cap:category>
-        <cap:urgency>Unknown</cap:urgency>
-        <cap:severity>Unknown</cap:severity>
-        <cap:certainty>Unknown</cap:certainty>
-        <cap:areaDesc>Montgomery</cap:areaDesc>
-        <cap:polygon/>
+        <cap:urgency>Expected</cap:urgency>
+        <cap:severity>Minor</cap:severity>
+        <cap:certainty>Likely</cap:certainty>
+        <cap:areaDesc>Lake, FL</cap:areaDesc>
+        <cap:polygon>28.9,-81.54 28.84,-81.56 28.79,-81.64 28.83,-81.7 28.97,-81.63 28.97,-81.59 28.9,-81.54</cap:polygon>
         <cap:geocode>
             <valueName>SAME</valueName>
-            <value>024031</value>
+            <value>012069</value>
         </cap:geocode>
         <cap:geocode>
             <valueName>UGC</valueName>
-            <value>MDC031</value>
+            <value>FLC069</value>
         </cap:geocode>
         <cap:parameter>
             <valueName>AWIPSidentifier</valueName>
-            <value>KEPWBC</value>
+            <value>FLSMLB</value>
         </cap:parameter>
         <cap:parameter>
             <valueName>WMOidentifier</valueName>
-            <value>NZUS91 KWBC 262204</value>
+            <value>WGUS82 KMLB 262228</value>
         </cap:parameter>
         <cap:parameter>
-            <valueName>BLOCKCHANNEL</valueName>
-            <value>CMAS</value>
+            <valueName>NWSheadline</valueName>
+            <value>FLOOD ADVISORY IN EFFECT UNTIL 830 PM EDT THIS EVENING</value>
         </cap:parameter>
         <cap:parameter>
             <valueName>BLOCKCHANNEL</valueName>
@@ -57,6 +77,18 @@
         <cap:parameter>
             <valueName>BLOCKCHANNEL</valueName>
             <value>NWEM</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>BLOCKCHANNEL</valueName>
+            <value>CMAS</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>VTEC</valueName>
+            <value>/O.NEW.KMLB.FA.Y.0132.251026T2228Z-251027T0030Z/</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>eventEndingTime</valueName>
+            <value>2025-10-26T20:30:00-04:00</value>
         </cap:parameter>
         <cap:scope>Public</cap:scope>
         <cap:code>IPAWSv1.0</cap:code>
@@ -68,7 +100,328 @@
         </cap:eventCode>
         <cap:eventCode>
             <valueName>NationalWeatherService</valueName>
-            <value>TST</value>
+            <value>FAY</value>
+        </cap:eventCode>
+    </entry>
+    <entry>
+        <id>https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.0d67f89908377e85123bd5a487436407cf92cdb9.001.1</id>
+        <link rel="alternate" href="https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.0d67f89908377e85123bd5a487436407cf92cdb9.001.1.cap"/>
+        <updated>2025-10-26T17:15:00-05:00</updated>
+        <published>2025-10-26T17:15:00-05:00</published>
+        <author>
+            <name>NWS</name>
+        </author>
+        <title>Special Weather Statement issued October 26 at 5:15PM CDT by NWS Jackson MS</title>
+        <summary>At 514 PM CDT, Doppler radar was tracking a strong thunderstorm over
+Robinwood, or near Monticello, moving east at 15 mph.
+
+HAZARD...Wind gusts up to 40 mph and half inch hail.
+
+SOURCE...Radar indicated.
+
+IMPACT...Gusty winds could knock down tree limbs and blow around
+unsecured objects. Minor hail damage to vegetation is
+possible.
+
+Locations impacted include...
+Monticello, Robinwood, and Arm.</summary>
+        <cap:event>Special Weather Statement</cap:event>
+        <cap:sent>2025-10-26T17:15:00-05:00</cap:sent>
+        <cap:effective>2025-10-26T17:15:00-05:00</cap:effective>
+        <cap:onset>2025-10-26T17:15:00-05:00</cap:onset>
+        <cap:expires>2025-10-26T17:45:00-05:00</cap:expires>
+        <cap:status>Actual</cap:status>
+        <cap:msgType>Alert</cap:msgType>
+        <cap:category>Met</cap:category>
+        <cap:urgency>Expected</cap:urgency>
+        <cap:severity>Moderate</cap:severity>
+        <cap:certainty>Observed</cap:certainty>
+        <cap:areaDesc>Lawrence</cap:areaDesc>
+        <cap:polygon>31.47,-90.16 31.56,-90.14 31.57,-89.98 31.53,-89.98 31.44,-89.99 31.47,-90.16</cap:polygon>
+        <cap:geocode>
+            <valueName>SAME</valueName>
+            <value>028077</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>UGC</valueName>
+            <value>MSZ063</value>
+        </cap:geocode>
+        <cap:parameter>
+            <valueName>AWIPSidentifier</valueName>
+            <value>SPSJAN</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>WMOidentifier</valueName>
+            <value>WWUS84 KJAN 262215</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>NWSheadline</valueName>
+            <value>A STRONG THUNDERSTORM WILL IMPACT CENTRAL LAWRENCE COUNTY THROUGH 545 PM CDT</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>eventMotionDescription</valueName>
+            <value>2025-10-26T22:14:00-00:00...storm...272DEG...13KT...31.5,-90.09</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>maxWindGust</valueName>
+            <value>40 MPH</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>maxHailSize</valueName>
+            <value>0.50</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>BLOCKCHANNEL</valueName>
+            <value>EAS</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>BLOCKCHANNEL</valueName>
+            <value>NWEM</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>BLOCKCHANNEL</valueName>
+            <value>CMAS</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>EAS-ORG</valueName>
+            <value>WXR</value>
+        </cap:parameter>
+        <cap:scope>Public</cap:scope>
+        <cap:code>IPAWSv1.0</cap:code>
+        <cap:language>en-US</cap:language>
+        <cap:web>http://www.weather.gov</cap:web>
+        <cap:eventCode>
+            <valueName>SAME</valueName>
+            <value>SPS</value>
+        </cap:eventCode>
+        <cap:eventCode>
+            <valueName>NationalWeatherService</valueName>
+            <value>SPS</value>
+        </cap:eventCode>
+    </entry>
+    <entry>
+        <id>https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.e678e335d9026f9eca64b16f27634be1fc0427ce.001.1</id>
+        <link rel="alternate" href="https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.e678e335d9026f9eca64b16f27634be1fc0427ce.001.1.cap"/>
+        <updated>2025-10-26T18:07:00-04:00</updated>
+        <published>2025-10-26T18:07:00-04:00</published>
+        <author>
+            <name>NWS</name>
+        </author>
+        <title>Flash Flood Warning issued October 26 at 6:07PM EDT until October 26 at 8:00PM EDT by NWS Melbourne FL</title>
+        <summary>FFWMLB
+
+The National Weather Service in Melbourne has issued a
+
+* Flash Flood Warning for...
+Northwestern Brevard County in east central Florida...
+
+* Until 800 PM EDT.
+
+* At 607 PM EDT, Doppler radar indicated thunderstorms producing
+heavy rain across the warned area. Between 3 and 5 inches of rain
+have fallen. Additional rainfall amounts of 1 to 2 inches are
+possible in the warned area. Flash flooding is ongoing or expected
+to begin shortly.
+
+HAZARD...Flash flooding caused by thunderstorms.
+
+SOURCE...Radar.
+
+IMPACT...Flash flooding of small creeks and streams, urban
+areas, highways, streets and underpasses as well as
+other poor drainage and low-lying areas.
+
+* Some locations that will experience flash flooding include...
+Titusville, Mims and Lagrange.</summary>
+        <cap:event>Flash Flood Warning</cap:event>
+        <cap:sent>2025-10-26T18:07:00-04:00</cap:sent>
+        <cap:effective>2025-10-26T18:07:00-04:00</cap:effective>
+        <cap:onset>2025-10-26T18:07:00-04:00</cap:onset>
+        <cap:expires>2025-10-26T20:00:00-04:00</cap:expires>
+        <cap:status>Actual</cap:status>
+        <cap:msgType>Alert</cap:msgType>
+        <cap:category>Met</cap:category>
+        <cap:urgency>Immediate</cap:urgency>
+        <cap:severity>Severe</cap:severity>
+        <cap:certainty>Likely</cap:certainty>
+        <cap:areaDesc>Brevard, FL</cap:areaDesc>
+        <cap:polygon>28.64,-80.81 28.56,-80.79 28.53,-80.87 28.64,-80.89 28.64,-80.81</cap:polygon>
+        <cap:geocode>
+            <valueName>SAME</valueName>
+            <value>012009</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>UGC</valueName>
+            <value>FLC009</value>
+        </cap:geocode>
+        <cap:parameter>
+            <valueName>AWIPSidentifier</valueName>
+            <value>FFWMLB</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>WMOidentifier</valueName>
+            <value>WGUS52 KMLB 262207</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>flashFloodDetection</valueName>
+            <value>RADAR INDICATED</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>BLOCKCHANNEL</valueName>
+            <value>EAS</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>BLOCKCHANNEL</valueName>
+            <value>NWEM</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>BLOCKCHANNEL</valueName>
+            <value>CMAS</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>EAS-ORG</valueName>
+            <value>WXR</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>VTEC</valueName>
+            <value>/O.NEW.KMLB.FF.W.0015.251026T2207Z-251027T0000Z/</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>eventEndingTime</valueName>
+            <value>2025-10-26T20:00:00-04:00</value>
+        </cap:parameter>
+        <cap:scope>Public</cap:scope>
+        <cap:code>IPAWSv1.0</cap:code>
+        <cap:language>en-US</cap:language>
+        <cap:web>http://www.weather.gov</cap:web>
+        <cap:eventCode>
+            <valueName>SAME</valueName>
+            <value>FFW</value>
+        </cap:eventCode>
+        <cap:eventCode>
+            <valueName>NationalWeatherService</valueName>
+            <value>FFW</value>
+        </cap:eventCode>
+    </entry>
+    <entry>
+        <id>https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.83c5c5f84c90be461af8424061efd5939d830429.001.1</id>
+        <link rel="alternate" href="https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.83c5c5f84c90be461af8424061efd5939d830429.001.1.cap"/>
+        <updated>2025-10-26T15:06:00-07:00</updated>
+        <published>2025-10-26T15:06:00-07:00</published>
+        <author>
+            <name>NWS</name>
+        </author>
+        <title>Winter Weather Advisory issued October 26 at 3:06PM PDT until October 26 at 11:00PM PDT by NWS Seattle WA</title>
+        <summary>* WHAT...Snow. Additional snow accumulations up to 3 to 5 inches are
+expected through this evening.
+
+* WHERE...Cascades of Snohomish and Northern King Counties, Cascades
+of Whatcom and Skagit Counties, Cascades of Pierce and Lewis
+Counties, and Cascades of Southern King County.
+
+* WHEN...Until 11 PM PDT this evening.
+
+* IMPACTS...Travel could be very difficult.</summary>
+        <cap:event>Winter Weather Advisory</cap:event>
+        <cap:sent>2025-10-26T15:06:00-07:00</cap:sent>
+        <cap:effective>2025-10-26T15:06:00-07:00</cap:effective>
+        <cap:onset>2025-10-26T15:06:00-07:00</cap:onset>
+        <cap:expires>2025-10-26T23:00:00-07:00</cap:expires>
+        <cap:status>Actual</cap:status>
+        <cap:msgType>Update</cap:msgType>
+        <cap:category>Met</cap:category>
+        <cap:urgency>Expected</cap:urgency>
+        <cap:severity>Moderate</cap:severity>
+        <cap:certainty>Likely</cap:certainty>
+        <cap:areaDesc>Cascades of Whatcom and Skagit Counties; Cascades of Snohomish and Northern King Counties; Cascades of Southern King County; Cascades of Pierce and Lewis Counties</cap:areaDesc>
+        <cap:polygon/>
+        <cap:geocode>
+            <valueName>SAME</valueName>
+            <value>053073</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>SAME</valueName>
+            <value>053057</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>SAME</valueName>
+            <value>053061</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>SAME</valueName>
+            <value>053033</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>SAME</valueName>
+            <value>053053</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>SAME</valueName>
+            <value>053041</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>UGC</valueName>
+            <value>WAZ301</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>UGC</valueName>
+            <value>WAZ302</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>UGC</valueName>
+            <value>WAZ303</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>UGC</valueName>
+            <value>WAZ304</value>
+        </cap:geocode>
+        <cap:parameter>
+            <valueName>AWIPSidentifier</valueName>
+            <value>WSWSEW</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>WMOidentifier</valueName>
+            <value>WWUS46 KSEW 262206</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>NWSheadline</valueName>
+            <value>WINTER WEATHER ADVISORY REMAINS IN EFFECT UNTIL 11 PM PDT THIS EVENING</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>BLOCKCHANNEL</valueName>
+            <value>EAS</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>BLOCKCHANNEL</valueName>
+            <value>NWEM</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>BLOCKCHANNEL</valueName>
+            <value>CMAS</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>VTEC</valueName>
+            <value>/O.CON.KSEW.WW.Y.0017.000000T0000Z-251027T0600Z/</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>eventEndingTime</valueName>
+            <value>2025-10-26T23:00:00-07:00</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>expiredReferences</valueName>
+            <value>w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.0c0e89e42266626246f8d8a5db3b1c0bbac81509.001.1,2025-10-25T12:59:00-07:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.1c74b40ec44a7a77d73b30323efed26a8388a37a.001.1,2025-10-25T05:04:00-07:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.dc25c8fcccc048038f9ac5de14bda73f033c36e6.001.1,2025-10-24T15:18:00-07:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.f6c1a59e4cd60fb7c1b52d2af241206c87a6e7b7.001.1,2025-10-24T02:03:00-07:00</value>
+        </cap:parameter>
+        <cap:scope>Public</cap:scope>
+        <cap:code>IPAWSv1.0</cap:code>
+        <cap:language>en-US</cap:language>
+        <cap:web>http://www.weather.gov</cap:web>
+        <cap:eventCode>
+            <valueName>SAME</valueName>
+            <value>NWS</value>
+        </cap:eventCode>
+        <cap:eventCode>
+            <valueName>NationalWeatherService</valueName>
+            <value>WWY</value>
         </cap:eventCode>
     </entry>
     <entry>
@@ -486,261 +839,6 @@ likely become slick and hazardous.</summary>
         </cap:eventCode>
     </entry>
     <entry>
-        <id>https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.aefb7611460a0923931c42c093b10511e1784fab.003.1</id>
-        <link rel="alternate" href="https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.aefb7611460a0923931c42c093b10511e1784fab.003.1.cap"/>
-        <updated>2025-10-26T17:41:00-04:00</updated>
-        <published>2025-10-26T17:41:00-04:00</published>
-        <author>
-            <name>NWS</name>
-        </author>
-        <title>Frost Advisory issued October 26 at 5:41PM EDT until October 27 at 9:00AM EDT by NWS Mount Holly NJ</title>
-        <summary>* WHAT...Temperatures as low as 33 degrees will result in frost
-formation.
-
-* WHERE...Atlantic, Camden, Cape May, Cumberland, Gloucester,
-Northwestern Burlington, Ocean, Salem, and Southeastern Burlington
-Counties.
-
-* WHEN...From 1 AM to 9 AM EDT Monday.
-
-* IMPACTS...Frost could harm sensitive outdoor vegetation. Sensitive
-outdoor plants may be killed if left uncovered.</summary>
-        <cap:event>Frost Advisory</cap:event>
-        <cap:sent>2025-10-26T17:41:00-04:00</cap:sent>
-        <cap:effective>2025-10-26T17:41:00-04:00</cap:effective>
-        <cap:onset>2025-10-27T01:00:00-04:00</cap:onset>
-        <cap:expires>2025-10-27T06:45:00-04:00</cap:expires>
-        <cap:status>Actual</cap:status>
-        <cap:msgType>Update</cap:msgType>
-        <cap:category>Met</cap:category>
-        <cap:urgency>Expected</cap:urgency>
-        <cap:severity>Minor</cap:severity>
-        <cap:certainty>Likely</cap:certainty>
-        <cap:areaDesc>Salem; Gloucester; Camden; Northwestern Burlington; Ocean; Cumberland; Atlantic; Cape May; Southeastern Burlington</cap:areaDesc>
-        <cap:polygon/>
-        <cap:geocode>
-            <valueName>SAME</valueName>
-            <value>034033</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>SAME</valueName>
-            <value>034015</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>SAME</valueName>
-            <value>034007</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>SAME</valueName>
-            <value>034005</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>SAME</valueName>
-            <value>034029</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>SAME</valueName>
-            <value>034011</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>SAME</valueName>
-            <value>034001</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>SAME</valueName>
-            <value>034009</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>UGC</valueName>
-            <value>NJZ016</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>UGC</valueName>
-            <value>NJZ017</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>UGC</valueName>
-            <value>NJZ018</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>UGC</valueName>
-            <value>NJZ019</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>UGC</valueName>
-            <value>NJZ020</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>UGC</valueName>
-            <value>NJZ021</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>UGC</valueName>
-            <value>NJZ022</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>UGC</valueName>
-            <value>NJZ023</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>UGC</valueName>
-            <value>NJZ027</value>
-        </cap:geocode>
-        <cap:parameter>
-            <valueName>AWIPSidentifier</valueName>
-            <value>NPWPHI</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>WMOidentifier</valueName>
-            <value>WWUS71 KPHI 262141</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>NWSheadline</valueName>
-            <value>FROST ADVISORY REMAINS IN EFFECT FROM 1 AM TO 9 AM EDT MONDAY</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>BLOCKCHANNEL</valueName>
-            <value>EAS</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>BLOCKCHANNEL</valueName>
-            <value>NWEM</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>BLOCKCHANNEL</valueName>
-            <value>CMAS</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>VTEC</valueName>
-            <value>/O.CON.KPHI.FR.Y.0007.251027T0500Z-251027T1300Z/</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>eventEndingTime</valueName>
-            <value>2025-10-27T09:00:00-04:00</value>
-        </cap:parameter>
-        <cap:scope>Public</cap:scope>
-        <cap:code>IPAWSv1.0</cap:code>
-        <cap:language>en-US</cap:language>
-        <cap:web>http://www.weather.gov</cap:web>
-        <cap:eventCode>
-            <valueName>SAME</valueName>
-            <value>NWS</value>
-        </cap:eventCode>
-        <cap:eventCode>
-            <valueName>NationalWeatherService</valueName>
-            <value>FRY</value>
-        </cap:eventCode>
-    </entry>
-    <entry>
-        <id>https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.aefb7611460a0923931c42c093b10511e1784fab.004.1</id>
-        <link rel="alternate" href="https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.aefb7611460a0923931c42c093b10511e1784fab.004.1.cap"/>
-        <updated>2025-10-26T17:41:00-04:00</updated>
-        <published>2025-10-26T17:41:00-04:00</published>
-        <author>
-            <name>NWS</name>
-        </author>
-        <title>Frost Advisory issued October 26 at 5:41PM EDT until October 27 at 9:00AM EDT by NWS Mount Holly NJ</title>
-        <summary>* WHAT...Temperatures as low as 33 degrees will result in frost
-formation.
-
-* WHERE...Delaware, Eastern Montgomery, Lower Bucks, and
-Philadelphia Counties.
-
-* WHEN...From 1 AM to 9 AM EDT Monday.
-
-* IMPACTS...Frost could harm sensitive outdoor vegetation. Sensitive
-outdoor plants may be killed if left uncovered.</summary>
-        <cap:event>Frost Advisory</cap:event>
-        <cap:sent>2025-10-26T17:41:00-04:00</cap:sent>
-        <cap:effective>2025-10-26T17:41:00-04:00</cap:effective>
-        <cap:onset>2025-10-27T01:00:00-04:00</cap:onset>
-        <cap:expires>2025-10-27T06:45:00-04:00</cap:expires>
-        <cap:status>Actual</cap:status>
-        <cap:msgType>Update</cap:msgType>
-        <cap:category>Met</cap:category>
-        <cap:urgency>Expected</cap:urgency>
-        <cap:severity>Minor</cap:severity>
-        <cap:certainty>Likely</cap:certainty>
-        <cap:areaDesc>Delaware; Philadelphia; Eastern Montgomery; Lower Bucks</cap:areaDesc>
-        <cap:polygon/>
-        <cap:geocode>
-            <valueName>SAME</valueName>
-            <value>042045</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>SAME</valueName>
-            <value>042101</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>SAME</valueName>
-            <value>042091</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>SAME</valueName>
-            <value>042017</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>UGC</valueName>
-            <value>PAZ070</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>UGC</valueName>
-            <value>PAZ071</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>UGC</valueName>
-            <value>PAZ104</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>UGC</valueName>
-            <value>PAZ106</value>
-        </cap:geocode>
-        <cap:parameter>
-            <valueName>AWIPSidentifier</valueName>
-            <value>NPWPHI</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>WMOidentifier</valueName>
-            <value>WWUS71 KPHI 262141</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>NWSheadline</valueName>
-            <value>FROST ADVISORY REMAINS IN EFFECT FROM 1 AM TO 9 AM EDT MONDAY</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>BLOCKCHANNEL</valueName>
-            <value>EAS</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>BLOCKCHANNEL</valueName>
-            <value>NWEM</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>BLOCKCHANNEL</valueName>
-            <value>CMAS</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>VTEC</valueName>
-            <value>/O.CON.KPHI.FR.Y.0007.251027T0500Z-251027T1300Z/</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>eventEndingTime</valueName>
-            <value>2025-10-27T09:00:00-04:00</value>
-        </cap:parameter>
-        <cap:scope>Public</cap:scope>
-        <cap:code>IPAWSv1.0</cap:code>
-        <cap:language>en-US</cap:language>
-        <cap:web>http://www.weather.gov</cap:web>
-        <cap:eventCode>
-            <valueName>SAME</valueName>
-            <value>NWS</value>
-        </cap:eventCode>
-        <cap:eventCode>
-            <valueName>NationalWeatherService</valueName>
-            <value>FRY</value>
-        </cap:eventCode>
-    </entry>
-    <entry>
         <id>https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.aefb7611460a0923931c42c093b10511e1784fab.002.1</id>
         <link rel="alternate" href="https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.aefb7611460a0923931c42c093b10511e1784fab.002.1.cap"/>
         <updated>2025-10-26T17:41:00-04:00</updated>
@@ -974,6 +1072,261 @@ outdoor plants may be killed if left uncovered.</summary>
         </cap:eventCode>
     </entry>
     <entry>
+        <id>https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.aefb7611460a0923931c42c093b10511e1784fab.004.1</id>
+        <link rel="alternate" href="https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.aefb7611460a0923931c42c093b10511e1784fab.004.1.cap"/>
+        <updated>2025-10-26T17:41:00-04:00</updated>
+        <published>2025-10-26T17:41:00-04:00</published>
+        <author>
+            <name>NWS</name>
+        </author>
+        <title>Frost Advisory issued October 26 at 5:41PM EDT until October 27 at 9:00AM EDT by NWS Mount Holly NJ</title>
+        <summary>* WHAT...Temperatures as low as 33 degrees will result in frost
+formation.
+
+* WHERE...Delaware, Eastern Montgomery, Lower Bucks, and
+Philadelphia Counties.
+
+* WHEN...From 1 AM to 9 AM EDT Monday.
+
+* IMPACTS...Frost could harm sensitive outdoor vegetation. Sensitive
+outdoor plants may be killed if left uncovered.</summary>
+        <cap:event>Frost Advisory</cap:event>
+        <cap:sent>2025-10-26T17:41:00-04:00</cap:sent>
+        <cap:effective>2025-10-26T17:41:00-04:00</cap:effective>
+        <cap:onset>2025-10-27T01:00:00-04:00</cap:onset>
+        <cap:expires>2025-10-27T06:45:00-04:00</cap:expires>
+        <cap:status>Actual</cap:status>
+        <cap:msgType>Update</cap:msgType>
+        <cap:category>Met</cap:category>
+        <cap:urgency>Expected</cap:urgency>
+        <cap:severity>Minor</cap:severity>
+        <cap:certainty>Likely</cap:certainty>
+        <cap:areaDesc>Delaware; Philadelphia; Eastern Montgomery; Lower Bucks</cap:areaDesc>
+        <cap:polygon/>
+        <cap:geocode>
+            <valueName>SAME</valueName>
+            <value>042045</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>SAME</valueName>
+            <value>042101</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>SAME</valueName>
+            <value>042091</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>SAME</valueName>
+            <value>042017</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>UGC</valueName>
+            <value>PAZ070</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>UGC</valueName>
+            <value>PAZ071</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>UGC</valueName>
+            <value>PAZ104</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>UGC</valueName>
+            <value>PAZ106</value>
+        </cap:geocode>
+        <cap:parameter>
+            <valueName>AWIPSidentifier</valueName>
+            <value>NPWPHI</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>WMOidentifier</valueName>
+            <value>WWUS71 KPHI 262141</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>NWSheadline</valueName>
+            <value>FROST ADVISORY REMAINS IN EFFECT FROM 1 AM TO 9 AM EDT MONDAY</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>BLOCKCHANNEL</valueName>
+            <value>EAS</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>BLOCKCHANNEL</valueName>
+            <value>NWEM</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>BLOCKCHANNEL</valueName>
+            <value>CMAS</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>VTEC</valueName>
+            <value>/O.CON.KPHI.FR.Y.0007.251027T0500Z-251027T1300Z/</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>eventEndingTime</valueName>
+            <value>2025-10-27T09:00:00-04:00</value>
+        </cap:parameter>
+        <cap:scope>Public</cap:scope>
+        <cap:code>IPAWSv1.0</cap:code>
+        <cap:language>en-US</cap:language>
+        <cap:web>http://www.weather.gov</cap:web>
+        <cap:eventCode>
+            <valueName>SAME</valueName>
+            <value>NWS</value>
+        </cap:eventCode>
+        <cap:eventCode>
+            <valueName>NationalWeatherService</valueName>
+            <value>FRY</value>
+        </cap:eventCode>
+    </entry>
+    <entry>
+        <id>https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.aefb7611460a0923931c42c093b10511e1784fab.003.1</id>
+        <link rel="alternate" href="https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.aefb7611460a0923931c42c093b10511e1784fab.003.1.cap"/>
+        <updated>2025-10-26T17:41:00-04:00</updated>
+        <published>2025-10-26T17:41:00-04:00</published>
+        <author>
+            <name>NWS</name>
+        </author>
+        <title>Frost Advisory issued October 26 at 5:41PM EDT until October 27 at 9:00AM EDT by NWS Mount Holly NJ</title>
+        <summary>* WHAT...Temperatures as low as 33 degrees will result in frost
+formation.
+
+* WHERE...Atlantic, Camden, Cape May, Cumberland, Gloucester,
+Northwestern Burlington, Ocean, Salem, and Southeastern Burlington
+Counties.
+
+* WHEN...From 1 AM to 9 AM EDT Monday.
+
+* IMPACTS...Frost could harm sensitive outdoor vegetation. Sensitive
+outdoor plants may be killed if left uncovered.</summary>
+        <cap:event>Frost Advisory</cap:event>
+        <cap:sent>2025-10-26T17:41:00-04:00</cap:sent>
+        <cap:effective>2025-10-26T17:41:00-04:00</cap:effective>
+        <cap:onset>2025-10-27T01:00:00-04:00</cap:onset>
+        <cap:expires>2025-10-27T06:45:00-04:00</cap:expires>
+        <cap:status>Actual</cap:status>
+        <cap:msgType>Update</cap:msgType>
+        <cap:category>Met</cap:category>
+        <cap:urgency>Expected</cap:urgency>
+        <cap:severity>Minor</cap:severity>
+        <cap:certainty>Likely</cap:certainty>
+        <cap:areaDesc>Salem; Gloucester; Camden; Northwestern Burlington; Ocean; Cumberland; Atlantic; Cape May; Southeastern Burlington</cap:areaDesc>
+        <cap:polygon/>
+        <cap:geocode>
+            <valueName>SAME</valueName>
+            <value>034033</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>SAME</valueName>
+            <value>034015</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>SAME</valueName>
+            <value>034007</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>SAME</valueName>
+            <value>034005</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>SAME</valueName>
+            <value>034029</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>SAME</valueName>
+            <value>034011</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>SAME</valueName>
+            <value>034001</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>SAME</valueName>
+            <value>034009</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>UGC</valueName>
+            <value>NJZ016</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>UGC</valueName>
+            <value>NJZ017</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>UGC</valueName>
+            <value>NJZ018</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>UGC</valueName>
+            <value>NJZ019</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>UGC</valueName>
+            <value>NJZ020</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>UGC</valueName>
+            <value>NJZ021</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>UGC</valueName>
+            <value>NJZ022</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>UGC</valueName>
+            <value>NJZ023</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>UGC</valueName>
+            <value>NJZ027</value>
+        </cap:geocode>
+        <cap:parameter>
+            <valueName>AWIPSidentifier</valueName>
+            <value>NPWPHI</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>WMOidentifier</valueName>
+            <value>WWUS71 KPHI 262141</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>NWSheadline</valueName>
+            <value>FROST ADVISORY REMAINS IN EFFECT FROM 1 AM TO 9 AM EDT MONDAY</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>BLOCKCHANNEL</valueName>
+            <value>EAS</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>BLOCKCHANNEL</valueName>
+            <value>NWEM</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>BLOCKCHANNEL</valueName>
+            <value>CMAS</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>VTEC</valueName>
+            <value>/O.CON.KPHI.FR.Y.0007.251027T0500Z-251027T1300Z/</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>eventEndingTime</valueName>
+            <value>2025-10-27T09:00:00-04:00</value>
+        </cap:parameter>
+        <cap:scope>Public</cap:scope>
+        <cap:code>IPAWSv1.0</cap:code>
+        <cap:language>en-US</cap:language>
+        <cap:web>http://www.weather.gov</cap:web>
+        <cap:eventCode>
+            <valueName>SAME</valueName>
+            <value>NWS</value>
+        </cap:eventCode>
+        <cap:eventCode>
+            <valueName>NationalWeatherService</valueName>
+            <value>FRY</value>
+        </cap:eventCode>
+    </entry>
+    <entry>
         <id>https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.9c98b6f60d2c9d7c62c92681a7e5137d30d108a6.001.1</id>
         <link rel="alternate" href="https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.9c98b6f60d2c9d7c62c92681a7e5137d30d108a6.001.1.cap"/>
         <updated>2025-10-26T17:33:00-04:00</updated>
@@ -1159,6 +1512,116 @@ limbs could be blown down and a few power outages may result.
         </cap:eventCode>
     </entry>
     <entry>
+        <id>https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.0410ac9d83e667d839fbb5e922b49353509605b1.001.1</id>
+        <link rel="alternate" href="https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.0410ac9d83e667d839fbb5e922b49353509605b1.001.1.cap"/>
+        <updated>2025-10-26T13:20:00-08:00</updated>
+        <published>2025-10-26T13:20:00-08:00</published>
+        <author>
+            <name>NWS</name>
+        </author>
+        <title>High Wind Watch issued October 26 at 1:20PM AKDT until October 29 at 4:00AM AKDT by NWS Juneau AK</title>
+        <summary>* WHAT...East winds 20 to 30 mph with gusts up to 60 mph
+possible.
+
+* WHERE...Prince of Wales Island, Ketchikan Gateway Borough and
+Annette Island.
+
+* WHEN...From Tuesday afternoon through late Tuesday night.
+
+* IMPACTS...High winds could blow around unsecured objects,
+damage property and cause power outages. Travel could be
+difficult.
+
+* ADDITIONAL DETAILS...Confidence has increased on a low pressure
+centered tracking north towards the southern panhandle. This
+pattern usually brings elevated sustained winds across SE AK and
+high wind gusts, upwards of 60 mph, to the southern panhandle.
+Current peak gusts are projected to happen late Tuesday
+afternoon into Tuesday evening. If the low continues to track
+farther north, the watch may need to be expanded.</summary>
+        <cap:event>High Wind Watch</cap:event>
+        <cap:sent>2025-10-26T13:20:00-08:00</cap:sent>
+        <cap:effective>2025-10-26T13:20:00-08:00</cap:effective>
+        <cap:onset>2025-10-28T13:00:00-08:00</cap:onset>
+        <cap:expires>2025-10-27T06:00:00-08:00</cap:expires>
+        <cap:status>Actual</cap:status>
+        <cap:msgType>Alert</cap:msgType>
+        <cap:category>Met</cap:category>
+        <cap:urgency>Future</cap:urgency>
+        <cap:severity>Severe</cap:severity>
+        <cap:certainty>Possible</cap:certainty>
+        <cap:areaDesc>Prince of Wales Island; Ketchikan Gateway Borough; Annette Island</cap:areaDesc>
+        <cap:polygon/>
+        <cap:geocode>
+            <valueName>SAME</valueName>
+            <value>002198</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>SAME</valueName>
+            <value>002130</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>UGC</valueName>
+            <value>AKZ328</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>UGC</valueName>
+            <value>AKZ330</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>UGC</valueName>
+            <value>AKZ332</value>
+        </cap:geocode>
+        <cap:parameter>
+            <valueName>AWIPSidentifier</valueName>
+            <value>NPWAJK</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>WMOidentifier</valueName>
+            <value>WWAK77 PAJK 262120</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>NWSheadline</valueName>
+            <value>HIGH WIND WATCH IN EFFECT FROM TUESDAY AFTERNOON THROUGH LATE TUESDAY NIGHT</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>BLOCKCHANNEL</valueName>
+            <value>EAS</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>BLOCKCHANNEL</valueName>
+            <value>NWEM</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>BLOCKCHANNEL</valueName>
+            <value>CMAS</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>EAS-ORG</valueName>
+            <value>WXR</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>VTEC</valueName>
+            <value>/O.NEW.PAJK.HW.A.0009.251028T2100Z-251029T1200Z/</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>eventEndingTime</valueName>
+            <value>2025-10-29T04:00:00-08:00</value>
+        </cap:parameter>
+        <cap:scope>Public</cap:scope>
+        <cap:code>IPAWSv1.0</cap:code>
+        <cap:language>en-US</cap:language>
+        <cap:web>http://www.weather.gov</cap:web>
+        <cap:eventCode>
+            <valueName>SAME</valueName>
+            <value>HWA</value>
+        </cap:eventCode>
+        <cap:eventCode>
+            <valueName>NationalWeatherService</valueName>
+            <value>HWA</value>
+        </cap:eventCode>
+    </entry>
+    <entry>
         <id>https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.b4527bf6a45299a8bc3505cadedda3b0ddfc4ce7.001.1</id>
         <link rel="alternate" href="https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.b4527bf6a45299a8bc3505cadedda3b0ddfc4ce7.001.1.cap"/>
         <updated>2025-10-26T13:20:00-08:00</updated>
@@ -1329,216 +1792,6 @@ weather.gov/juneau</summary>
         <cap:eventCode>
             <valueName>NationalWeatherService</valueName>
             <value>SPS</value>
-        </cap:eventCode>
-    </entry>
-    <entry>
-        <id>https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.0410ac9d83e667d839fbb5e922b49353509605b1.001.1</id>
-        <link rel="alternate" href="https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.0410ac9d83e667d839fbb5e922b49353509605b1.001.1.cap"/>
-        <updated>2025-10-26T13:20:00-08:00</updated>
-        <published>2025-10-26T13:20:00-08:00</published>
-        <author>
-            <name>NWS</name>
-        </author>
-        <title>High Wind Watch issued October 26 at 1:20PM AKDT until October 29 at 4:00AM AKDT by NWS Juneau AK</title>
-        <summary>* WHAT...East winds 20 to 30 mph with gusts up to 60 mph
-possible.
-
-* WHERE...Prince of Wales Island, Ketchikan Gateway Borough and
-Annette Island.
-
-* WHEN...From Tuesday afternoon through late Tuesday night.
-
-* IMPACTS...High winds could blow around unsecured objects,
-damage property and cause power outages. Travel could be
-difficult.
-
-* ADDITIONAL DETAILS...Confidence has increased on a low pressure
-centered tracking north towards the southern panhandle. This
-pattern usually brings elevated sustained winds across SE AK and
-high wind gusts, upwards of 60 mph, to the southern panhandle.
-Current peak gusts are projected to happen late Tuesday
-afternoon into Tuesday evening. If the low continues to track
-farther north, the watch may need to be expanded.</summary>
-        <cap:event>High Wind Watch</cap:event>
-        <cap:sent>2025-10-26T13:20:00-08:00</cap:sent>
-        <cap:effective>2025-10-26T13:20:00-08:00</cap:effective>
-        <cap:onset>2025-10-28T13:00:00-08:00</cap:onset>
-        <cap:expires>2025-10-27T06:00:00-08:00</cap:expires>
-        <cap:status>Actual</cap:status>
-        <cap:msgType>Alert</cap:msgType>
-        <cap:category>Met</cap:category>
-        <cap:urgency>Future</cap:urgency>
-        <cap:severity>Severe</cap:severity>
-        <cap:certainty>Possible</cap:certainty>
-        <cap:areaDesc>Prince of Wales Island; Ketchikan Gateway Borough; Annette Island</cap:areaDesc>
-        <cap:polygon/>
-        <cap:geocode>
-            <valueName>SAME</valueName>
-            <value>002198</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>SAME</valueName>
-            <value>002130</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>UGC</valueName>
-            <value>AKZ328</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>UGC</valueName>
-            <value>AKZ330</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>UGC</valueName>
-            <value>AKZ332</value>
-        </cap:geocode>
-        <cap:parameter>
-            <valueName>AWIPSidentifier</valueName>
-            <value>NPWAJK</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>WMOidentifier</valueName>
-            <value>WWAK77 PAJK 262120</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>NWSheadline</valueName>
-            <value>HIGH WIND WATCH IN EFFECT FROM TUESDAY AFTERNOON THROUGH LATE TUESDAY NIGHT</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>BLOCKCHANNEL</valueName>
-            <value>EAS</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>BLOCKCHANNEL</valueName>
-            <value>NWEM</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>BLOCKCHANNEL</valueName>
-            <value>CMAS</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>EAS-ORG</valueName>
-            <value>WXR</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>VTEC</valueName>
-            <value>/O.NEW.PAJK.HW.A.0009.251028T2100Z-251029T1200Z/</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>eventEndingTime</valueName>
-            <value>2025-10-29T04:00:00-08:00</value>
-        </cap:parameter>
-        <cap:scope>Public</cap:scope>
-        <cap:code>IPAWSv1.0</cap:code>
-        <cap:language>en-US</cap:language>
-        <cap:web>http://www.weather.gov</cap:web>
-        <cap:eventCode>
-            <valueName>SAME</valueName>
-            <value>HWA</value>
-        </cap:eventCode>
-        <cap:eventCode>
-            <valueName>NationalWeatherService</valueName>
-            <value>HWA</value>
-        </cap:eventCode>
-    </entry>
-    <entry>
-        <id>https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.12f2773388f3b544e44d8a7e7e0d5a38ff41097e.004.1</id>
-        <link rel="alternate" href="https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.12f2773388f3b544e44d8a7e7e0d5a38ff41097e.004.1.cap"/>
-        <updated>2025-10-26T17:09:00-04:00</updated>
-        <published>2025-10-26T17:09:00-04:00</published>
-        <author>
-            <name>NWS</name>
-        </author>
-        <title>Frost Advisory issued October 26 at 5:09PM EDT until October 27 at 9:00AM EDT by NWS Cleveland OH</title>
-        <summary>* WHAT...Temperatures as low as 26 will result in frost formation.
-
-* WHERE...In Ohio, Ashtabula Lakeshore and Lake Counties. In
-Pennsylvania, Northern Erie County.
-
-* WHEN...From midnight tonight to 9 AM EDT Monday.
-
-* IMPACTS...Frost could harm sensitive outdoor vegetation. Sensitive
-outdoor plants may be killed if left uncovered.</summary>
-        <cap:event>Frost Advisory</cap:event>
-        <cap:sent>2025-10-26T17:09:00-04:00</cap:sent>
-        <cap:effective>2025-10-26T17:09:00-04:00</cap:effective>
-        <cap:onset>2025-10-27T00:00:00-04:00</cap:onset>
-        <cap:expires>2025-10-27T01:15:00-04:00</cap:expires>
-        <cap:status>Actual</cap:status>
-        <cap:msgType>Alert</cap:msgType>
-        <cap:category>Met</cap:category>
-        <cap:urgency>Expected</cap:urgency>
-        <cap:severity>Minor</cap:severity>
-        <cap:certainty>Likely</cap:certainty>
-        <cap:areaDesc>Lake; Ashtabula Lakeshore; Northern Erie</cap:areaDesc>
-        <cap:polygon/>
-        <cap:geocode>
-            <valueName>SAME</valueName>
-            <value>039085</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>SAME</valueName>
-            <value>039007</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>SAME</valueName>
-            <value>042049</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>UGC</valueName>
-            <value>OHZ012</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>UGC</valueName>
-            <value>OHZ089</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>UGC</valueName>
-            <value>PAZ001</value>
-        </cap:geocode>
-        <cap:parameter>
-            <valueName>AWIPSidentifier</valueName>
-            <value>NPWCLE</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>WMOidentifier</valueName>
-            <value>WWUS71 KCLE 262109</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>NWSheadline</valueName>
-            <value>FROST ADVISORY IN EFFECT FROM MIDNIGHT TONIGHT TO 9 AM EDT MONDAY</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>BLOCKCHANNEL</valueName>
-            <value>EAS</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>BLOCKCHANNEL</valueName>
-            <value>NWEM</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>BLOCKCHANNEL</valueName>
-            <value>CMAS</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>VTEC</valueName>
-            <value>/O.EXA.KCLE.FR.Y.0008.251027T0400Z-251027T1300Z/</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>eventEndingTime</valueName>
-            <value>2025-10-27T09:00:00-04:00</value>
-        </cap:parameter>
-        <cap:scope>Public</cap:scope>
-        <cap:code>IPAWSv1.0</cap:code>
-        <cap:language>en-US</cap:language>
-        <cap:web>http://www.weather.gov</cap:web>
-        <cap:eventCode>
-            <valueName>SAME</valueName>
-            <value>NWS</value>
-        </cap:eventCode>
-        <cap:eventCode>
-            <valueName>NationalWeatherService</valueName>
-            <value>FRY</value>
         </cap:eventCode>
     </entry>
     <entry>
@@ -1967,54 +2220,71 @@ plumbing.</summary>
         </cap:eventCode>
     </entry>
     <entry>
-        <id>https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.4155898799f7318d8786a81d7742eb62059c8419.003.1</id>
-        <link rel="alternate" href="https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.4155898799f7318d8786a81d7742eb62059c8419.003.1.cap"/>
-        <updated>2025-10-26T13:48:00-07:00</updated>
-        <published>2025-10-26T13:48:00-07:00</published>
+        <id>https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.12f2773388f3b544e44d8a7e7e0d5a38ff41097e.004.1</id>
+        <link rel="alternate" href="https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.12f2773388f3b544e44d8a7e7e0d5a38ff41097e.004.1.cap"/>
+        <updated>2025-10-26T17:09:00-04:00</updated>
+        <published>2025-10-26T17:09:00-04:00</published>
         <author>
             <name>NWS</name>
         </author>
-        <title>Winter Weather Advisory issued October 26 at 1:48PM PDT until October 26 at 11:00PM PDT by NWS Spokane WA</title>
-        <summary>* WHAT...Snow ABOVE 3000 FEET. Additional snow accumulations up to
-one inch.
+        <title>Frost Advisory issued October 26 at 5:09PM EDT until October 27 at 9:00AM EDT by NWS Cleveland OH</title>
+        <summary>* WHAT...Temperatures as low as 26 will result in frost formation.
 
-* WHERE...Loup Loup Pass.
+* WHERE...In Ohio, Ashtabula Lakeshore and Lake Counties. In
+Pennsylvania, Northern Erie County.
 
-* WHEN...Until 11 PM PDT this evening.
+* WHEN...From midnight tonight to 9 AM EDT Monday.
 
-* IMPACTS...Plan on slippery road conditions.</summary>
-        <cap:event>Winter Weather Advisory</cap:event>
-        <cap:sent>2025-10-26T13:48:00-07:00</cap:sent>
-        <cap:effective>2025-10-26T13:48:00-07:00</cap:effective>
-        <cap:onset>2025-10-26T13:48:00-07:00</cap:onset>
-        <cap:expires>2025-10-26T23:00:00-07:00</cap:expires>
+* IMPACTS...Frost could harm sensitive outdoor vegetation. Sensitive
+outdoor plants may be killed if left uncovered.</summary>
+        <cap:event>Frost Advisory</cap:event>
+        <cap:sent>2025-10-26T17:09:00-04:00</cap:sent>
+        <cap:effective>2025-10-26T17:09:00-04:00</cap:effective>
+        <cap:onset>2025-10-27T00:00:00-04:00</cap:onset>
+        <cap:expires>2025-10-27T01:15:00-04:00</cap:expires>
         <cap:status>Actual</cap:status>
-        <cap:msgType>Update</cap:msgType>
+        <cap:msgType>Alert</cap:msgType>
         <cap:category>Met</cap:category>
         <cap:urgency>Expected</cap:urgency>
-        <cap:severity>Moderate</cap:severity>
+        <cap:severity>Minor</cap:severity>
         <cap:certainty>Likely</cap:certainty>
-        <cap:areaDesc>Western Okanogan County</cap:areaDesc>
+        <cap:areaDesc>Lake; Ashtabula Lakeshore; Northern Erie</cap:areaDesc>
         <cap:polygon/>
         <cap:geocode>
             <valueName>SAME</valueName>
-            <value>053047</value>
+            <value>039085</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>SAME</valueName>
+            <value>039007</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>SAME</valueName>
+            <value>042049</value>
         </cap:geocode>
         <cap:geocode>
             <valueName>UGC</valueName>
-            <value>WAZ049</value>
+            <value>OHZ012</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>UGC</valueName>
+            <value>OHZ089</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>UGC</valueName>
+            <value>PAZ001</value>
         </cap:geocode>
         <cap:parameter>
             <valueName>AWIPSidentifier</valueName>
-            <value>WSWOTX</value>
+            <value>NPWCLE</value>
         </cap:parameter>
         <cap:parameter>
             <valueName>WMOidentifier</valueName>
-            <value>WWUS46 KOTX 262048</value>
+            <value>WWUS71 KCLE 262109</value>
         </cap:parameter>
         <cap:parameter>
             <valueName>NWSheadline</valueName>
-            <value>WINTER WEATHER ADVISORY REMAINS IN EFFECT UNTIL 11 PM PDT THIS EVENING ABOVE 3000 FEET</value>
+            <value>FROST ADVISORY IN EFFECT FROM MIDNIGHT TONIGHT TO 9 AM EDT MONDAY</value>
         </cap:parameter>
         <cap:parameter>
             <valueName>BLOCKCHANNEL</valueName>
@@ -2030,15 +2300,11 @@ one inch.
         </cap:parameter>
         <cap:parameter>
             <valueName>VTEC</valueName>
-            <value>/O.CON.KOTX.WW.Y.0025.000000T0000Z-251027T0600Z/</value>
+            <value>/O.EXA.KCLE.FR.Y.0008.251027T0400Z-251027T1300Z/</value>
         </cap:parameter>
         <cap:parameter>
             <valueName>eventEndingTime</valueName>
-            <value>2025-10-26T23:00:00-07:00</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>expiredReferences</valueName>
-            <value>w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.9fa3a4276fb432c332d4bae03a0012827ed5113e.002.1,2025-10-25T13:31:00-07:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.c4daea69e69dff9b589195c858bfeadc515bf7dd.001.1,2025-10-25T06:56:00-07:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.e9adbd6a2bbed6fef7767048282cf3631cb15a25.001.1,2025-10-24T15:36:00-07:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.bc1ff387578c928340e4ae7014831ad1aa090fcf.001.1,2025-10-24T01:00:00-07:00</value>
+            <value>2025-10-27T09:00:00-04:00</value>
         </cap:parameter>
         <cap:scope>Public</cap:scope>
         <cap:code>IPAWSv1.0</cap:code>
@@ -2050,7 +2316,7 @@ one inch.
         </cap:eventCode>
         <cap:eventCode>
             <valueName>NationalWeatherService</valueName>
-            <value>WWY</value>
+            <value>FRY</value>
         </cap:eventCode>
     </entry>
     <entry>
@@ -2126,6 +2392,93 @@ inches.
         <cap:parameter>
             <valueName>expiredReferences</valueName>
             <value>w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.9fa3a4276fb432c332d4bae03a0012827ed5113e.001.1,2025-10-25T13:31:00-07:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.c4daea69e69dff9b589195c858bfeadc515bf7dd.002.1,2025-10-25T06:56:00-07:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.e9adbd6a2bbed6fef7767048282cf3631cb15a25.002.1,2025-10-24T15:36:00-07:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.bc1ff387578c928340e4ae7014831ad1aa090fcf.001.1,2025-10-24T01:00:00-07:00</value>
+        </cap:parameter>
+        <cap:scope>Public</cap:scope>
+        <cap:code>IPAWSv1.0</cap:code>
+        <cap:language>en-US</cap:language>
+        <cap:web>http://www.weather.gov</cap:web>
+        <cap:eventCode>
+            <valueName>SAME</valueName>
+            <value>NWS</value>
+        </cap:eventCode>
+        <cap:eventCode>
+            <valueName>NationalWeatherService</valueName>
+            <value>WWY</value>
+        </cap:eventCode>
+    </entry>
+    <entry>
+        <id>https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.4155898799f7318d8786a81d7742eb62059c8419.003.1</id>
+        <link rel="alternate" href="https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.4155898799f7318d8786a81d7742eb62059c8419.003.1.cap"/>
+        <updated>2025-10-26T13:48:00-07:00</updated>
+        <published>2025-10-26T13:48:00-07:00</published>
+        <author>
+            <name>NWS</name>
+        </author>
+        <title>Winter Weather Advisory issued October 26 at 1:48PM PDT until October 26 at 11:00PM PDT by NWS Spokane WA</title>
+        <summary>* WHAT...Snow ABOVE 3000 FEET. Additional snow accumulations up to
+one inch.
+
+* WHERE...Loup Loup Pass.
+
+* WHEN...Until 11 PM PDT this evening.
+
+* IMPACTS...Plan on slippery road conditions.</summary>
+        <cap:event>Winter Weather Advisory</cap:event>
+        <cap:sent>2025-10-26T13:48:00-07:00</cap:sent>
+        <cap:effective>2025-10-26T13:48:00-07:00</cap:effective>
+        <cap:onset>2025-10-26T13:48:00-07:00</cap:onset>
+        <cap:expires>2025-10-26T23:00:00-07:00</cap:expires>
+        <cap:status>Actual</cap:status>
+        <cap:msgType>Update</cap:msgType>
+        <cap:category>Met</cap:category>
+        <cap:urgency>Expected</cap:urgency>
+        <cap:severity>Moderate</cap:severity>
+        <cap:certainty>Likely</cap:certainty>
+        <cap:areaDesc>Western Okanogan County</cap:areaDesc>
+        <cap:polygon/>
+        <cap:geocode>
+            <valueName>SAME</valueName>
+            <value>053047</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>UGC</valueName>
+            <value>WAZ049</value>
+        </cap:geocode>
+        <cap:parameter>
+            <valueName>AWIPSidentifier</valueName>
+            <value>WSWOTX</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>WMOidentifier</valueName>
+            <value>WWUS46 KOTX 262048</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>NWSheadline</valueName>
+            <value>WINTER WEATHER ADVISORY REMAINS IN EFFECT UNTIL 11 PM PDT THIS EVENING ABOVE 3000 FEET</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>BLOCKCHANNEL</valueName>
+            <value>EAS</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>BLOCKCHANNEL</valueName>
+            <value>NWEM</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>BLOCKCHANNEL</valueName>
+            <value>CMAS</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>VTEC</valueName>
+            <value>/O.CON.KOTX.WW.Y.0025.000000T0000Z-251027T0600Z/</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>eventEndingTime</valueName>
+            <value>2025-10-26T23:00:00-07:00</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>expiredReferences</valueName>
+            <value>w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.9fa3a4276fb432c332d4bae03a0012827ed5113e.002.1,2025-10-25T13:31:00-07:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.c4daea69e69dff9b589195c858bfeadc515bf7dd.001.1,2025-10-25T06:56:00-07:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.e9adbd6a2bbed6fef7767048282cf3631cb15a25.001.1,2025-10-24T15:36:00-07:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.bc1ff387578c928340e4ae7014831ad1aa090fcf.001.1,2025-10-24T01:00:00-07:00</value>
         </cap:parameter>
         <cap:scope>Public</cap:scope>
         <cap:code>IPAWSv1.0</cap:code>
@@ -2344,24 +2697,23 @@ Bellwood.</summary>
         </cap:eventCode>
     </entry>
     <entry>
-        <id>https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.f4f647a9ca877c24efc699b5a185a65def8111c0.002.1</id>
-        <link rel="alternate" href="https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.f4f647a9ca877c24efc699b5a185a65def8111c0.002.1.cap"/>
+        <id>https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.f4f647a9ca877c24efc699b5a185a65def8111c0.001.1</id>
+        <link rel="alternate" href="https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.f4f647a9ca877c24efc699b5a185a65def8111c0.001.1.cap"/>
         <updated>2025-10-26T13:33:00-07:00</updated>
         <published>2025-10-26T13:33:00-07:00</published>
         <author>
             <name>NWS</name>
         </author>
-        <title>Winter Weather Advisory issued October 26 at 1:33PM PDT until October 26 at 11:00PM PDT by NWS Pendleton OR</title>
-        <summary>* WHAT...Snow above 4000 feet. Additional snow accumulations between
-2 and 4 inches.
+        <title>Winter Weather Advisory issued October 26 at 1:33PM PDT until October 27 at 2:00AM PDT by NWS Pendleton OR</title>
+        <summary>* WHAT...Snow above 4500 feet. Additional snow accumulations up to 5
+inches. Winds gusting as high as 35 mph.
 
-* WHERE...Upper Slopes of the Eastern Washington Cascades Crest.
+* WHERE...East Slopes of the Oregon Cascades.
 
-* WHEN...Until 11 PM PDT this evening.
+* WHEN...Until 2 AM PDT Monday.
 
-* IMPACTS...Periods of moderate and heavy snow will combine with low
-visibilities to create difficult driving conditions. Exercise
-caution if driving on I-90 or other roadways in this area.</summary>
+* IMPACTS...Travel could be difficult due to periods of moderate to
+heavy snow.</summary>
         <cap:event>Winter Weather Advisory</cap:event>
         <cap:sent>2025-10-26T13:33:00-07:00</cap:sent>
         <cap:effective>2025-10-26T13:33:00-07:00</cap:effective>
@@ -2373,19 +2725,23 @@ caution if driving on I-90 or other roadways in this area.</summary>
         <cap:urgency>Expected</cap:urgency>
         <cap:severity>Moderate</cap:severity>
         <cap:certainty>Likely</cap:certainty>
-        <cap:areaDesc>Upper Slopes of the Eastern Washington Cascades Crest</cap:areaDesc>
+        <cap:areaDesc>East Slopes of the Oregon Cascades</cap:areaDesc>
         <cap:polygon/>
         <cap:geocode>
             <valueName>SAME</valueName>
-            <value>053037</value>
+            <value>041017</value>
         </cap:geocode>
         <cap:geocode>
             <valueName>SAME</valueName>
-            <value>053077</value>
+            <value>041031</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>SAME</valueName>
+            <value>041065</value>
         </cap:geocode>
         <cap:geocode>
             <valueName>UGC</valueName>
-            <value>WAZ522</value>
+            <value>ORZ509</value>
         </cap:geocode>
         <cap:parameter>
             <valueName>AWIPSidentifier</valueName>
@@ -2397,7 +2753,7 @@ caution if driving on I-90 or other roadways in this area.</summary>
         </cap:parameter>
         <cap:parameter>
             <valueName>NWSheadline</valueName>
-            <value>WINTER WEATHER ADVISORY REMAINS IN EFFECT UNTIL 11 PM PDT THIS EVENING ABOVE 4000 FEET</value>
+            <value>WINTER WEATHER ADVISORY REMAINS IN EFFECT UNTIL 2 AM PDT MONDAY ABOVE 4500 FEET</value>
         </cap:parameter>
         <cap:parameter>
             <valueName>BLOCKCHANNEL</valueName>
@@ -2413,15 +2769,15 @@ caution if driving on I-90 or other roadways in this area.</summary>
         </cap:parameter>
         <cap:parameter>
             <valueName>VTEC</valueName>
-            <value>/O.CON.KPDT.WW.Y.0023.000000T0000Z-251027T0600Z/</value>
+            <value>/O.CON.KPDT.WW.Y.0023.000000T0000Z-251027T0900Z/</value>
         </cap:parameter>
         <cap:parameter>
             <valueName>eventEndingTime</valueName>
-            <value>2025-10-26T23:00:00-07:00</value>
+            <value>2025-10-27T02:00:00-07:00</value>
         </cap:parameter>
         <cap:parameter>
             <valueName>expiredReferences</valueName>
-            <value>w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.a2909baf8507f75f372fd776ea911f029d7e95c0.002.1,2025-10-25T13:29:00-07:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.b6b37c0bb7d7510db5f47c068e6ba922da4790a9.002.1,2025-10-25T03:00:00-07:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.7f26d980157bbb195b8e40ec1d8e744efe4fa65e.002.1,2025-10-25T02:33:00-07:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.714bcd3bea0312a777153c6f8099aa1a78eaf149.002.1,2025-10-24T13:59:00-07:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.2b4d23d6d5acb5f7dc5d90f718278bf223422993.002.1,2025-10-24T01:22:00-07:00</value>
+            <value>w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.a2909baf8507f75f372fd776ea911f029d7e95c0.001.1,2025-10-25T13:29:00-07:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.b6b37c0bb7d7510db5f47c068e6ba922da4790a9.001.1,2025-10-25T03:00:00-07:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.7f26d980157bbb195b8e40ec1d8e744efe4fa65e.001.1,2025-10-25T02:33:00-07:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.714bcd3bea0312a777153c6f8099aa1a78eaf149.001.1,2025-10-24T13:59:00-07:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.2b4d23d6d5acb5f7dc5d90f718278bf223422993.001.1,2025-10-24T01:22:00-07:00</value>
         </cap:parameter>
         <cap:scope>Public</cap:scope>
         <cap:code>IPAWSv1.0</cap:code>
@@ -2542,23 +2898,24 @@ heavy snow.</summary>
         </cap:eventCode>
     </entry>
     <entry>
-        <id>https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.f4f647a9ca877c24efc699b5a185a65def8111c0.001.1</id>
-        <link rel="alternate" href="https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.f4f647a9ca877c24efc699b5a185a65def8111c0.001.1.cap"/>
+        <id>https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.f4f647a9ca877c24efc699b5a185a65def8111c0.002.1</id>
+        <link rel="alternate" href="https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.f4f647a9ca877c24efc699b5a185a65def8111c0.002.1.cap"/>
         <updated>2025-10-26T13:33:00-07:00</updated>
         <published>2025-10-26T13:33:00-07:00</published>
         <author>
             <name>NWS</name>
         </author>
-        <title>Winter Weather Advisory issued October 26 at 1:33PM PDT until October 27 at 2:00AM PDT by NWS Pendleton OR</title>
-        <summary>* WHAT...Snow above 4500 feet. Additional snow accumulations up to 5
-inches. Winds gusting as high as 35 mph.
+        <title>Winter Weather Advisory issued October 26 at 1:33PM PDT until October 26 at 11:00PM PDT by NWS Pendleton OR</title>
+        <summary>* WHAT...Snow above 4000 feet. Additional snow accumulations between
+2 and 4 inches.
 
-* WHERE...East Slopes of the Oregon Cascades.
+* WHERE...Upper Slopes of the Eastern Washington Cascades Crest.
 
-* WHEN...Until 2 AM PDT Monday.
+* WHEN...Until 11 PM PDT this evening.
 
-* IMPACTS...Travel could be difficult due to periods of moderate to
-heavy snow.</summary>
+* IMPACTS...Periods of moderate and heavy snow will combine with low
+visibilities to create difficult driving conditions. Exercise
+caution if driving on I-90 or other roadways in this area.</summary>
         <cap:event>Winter Weather Advisory</cap:event>
         <cap:sent>2025-10-26T13:33:00-07:00</cap:sent>
         <cap:effective>2025-10-26T13:33:00-07:00</cap:effective>
@@ -2570,23 +2927,19 @@ heavy snow.</summary>
         <cap:urgency>Expected</cap:urgency>
         <cap:severity>Moderate</cap:severity>
         <cap:certainty>Likely</cap:certainty>
-        <cap:areaDesc>East Slopes of the Oregon Cascades</cap:areaDesc>
+        <cap:areaDesc>Upper Slopes of the Eastern Washington Cascades Crest</cap:areaDesc>
         <cap:polygon/>
         <cap:geocode>
             <valueName>SAME</valueName>
-            <value>041017</value>
+            <value>053037</value>
         </cap:geocode>
         <cap:geocode>
             <valueName>SAME</valueName>
-            <value>041031</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>SAME</valueName>
-            <value>041065</value>
+            <value>053077</value>
         </cap:geocode>
         <cap:geocode>
             <valueName>UGC</valueName>
-            <value>ORZ509</value>
+            <value>WAZ522</value>
         </cap:geocode>
         <cap:parameter>
             <valueName>AWIPSidentifier</valueName>
@@ -2598,7 +2951,7 @@ heavy snow.</summary>
         </cap:parameter>
         <cap:parameter>
             <valueName>NWSheadline</valueName>
-            <value>WINTER WEATHER ADVISORY REMAINS IN EFFECT UNTIL 2 AM PDT MONDAY ABOVE 4500 FEET</value>
+            <value>WINTER WEATHER ADVISORY REMAINS IN EFFECT UNTIL 11 PM PDT THIS EVENING ABOVE 4000 FEET</value>
         </cap:parameter>
         <cap:parameter>
             <valueName>BLOCKCHANNEL</valueName>
@@ -2614,15 +2967,15 @@ heavy snow.</summary>
         </cap:parameter>
         <cap:parameter>
             <valueName>VTEC</valueName>
-            <value>/O.CON.KPDT.WW.Y.0023.000000T0000Z-251027T0900Z/</value>
+            <value>/O.CON.KPDT.WW.Y.0023.000000T0000Z-251027T0600Z/</value>
         </cap:parameter>
         <cap:parameter>
             <valueName>eventEndingTime</valueName>
-            <value>2025-10-27T02:00:00-07:00</value>
+            <value>2025-10-26T23:00:00-07:00</value>
         </cap:parameter>
         <cap:parameter>
             <valueName>expiredReferences</valueName>
-            <value>w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.a2909baf8507f75f372fd776ea911f029d7e95c0.001.1,2025-10-25T13:29:00-07:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.b6b37c0bb7d7510db5f47c068e6ba922da4790a9.001.1,2025-10-25T03:00:00-07:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.7f26d980157bbb195b8e40ec1d8e744efe4fa65e.001.1,2025-10-25T02:33:00-07:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.714bcd3bea0312a777153c6f8099aa1a78eaf149.001.1,2025-10-24T13:59:00-07:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.2b4d23d6d5acb5f7dc5d90f718278bf223422993.001.1,2025-10-24T01:22:00-07:00</value>
+            <value>w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.a2909baf8507f75f372fd776ea911f029d7e95c0.002.1,2025-10-25T13:29:00-07:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.b6b37c0bb7d7510db5f47c068e6ba922da4790a9.002.1,2025-10-25T03:00:00-07:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.7f26d980157bbb195b8e40ec1d8e744efe4fa65e.002.1,2025-10-25T02:33:00-07:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.714bcd3bea0312a777153c6f8099aa1a78eaf149.002.1,2025-10-24T13:59:00-07:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.2b4d23d6d5acb5f7dc5d90f718278bf223422993.002.1,2025-10-24T01:22:00-07:00</value>
         </cap:parameter>
         <cap:scope>Public</cap:scope>
         <cap:code>IPAWSv1.0</cap:code>
@@ -3016,6 +3369,98 @@ areas of poor driving visibility.</summary>
         </cap:eventCode>
     </entry>
     <entry>
+        <id>https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.534ca9bbc2cb66c76dfe34d996f82c74a418a7e3.002.1</id>
+        <link rel="alternate" href="https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.534ca9bbc2cb66c76dfe34d996f82c74a418a7e3.002.1.cap"/>
+        <updated>2025-10-26T14:07:00-06:00</updated>
+        <published>2025-10-26T14:07:00-06:00</published>
+        <author>
+            <name>NWS</name>
+        </author>
+        <title>Winter Weather Advisory issued October 26 at 2:07PM MDT until October 27 at 12:00PM MDT by NWS Salt Lake City UT</title>
+        <summary>* WHAT...Snow expected. Total snow accumulations 3 to 9 inches above
+8500 feet.
+
+* WHERE...Western Uinta Mountains.
+
+* WHEN...Until noon MDT Monday.
+
+* IMPACTS...Winter driving conditions are expected including Mirror
+Lake Highway.</summary>
+        <cap:event>Winter Weather Advisory</cap:event>
+        <cap:sent>2025-10-26T14:07:00-06:00</cap:sent>
+        <cap:effective>2025-10-26T14:07:00-06:00</cap:effective>
+        <cap:onset>2025-10-26T15:00:00-06:00</cap:onset>
+        <cap:expires>2025-10-27T07:00:00-06:00</cap:expires>
+        <cap:status>Actual</cap:status>
+        <cap:msgType>Update</cap:msgType>
+        <cap:category>Met</cap:category>
+        <cap:urgency>Expected</cap:urgency>
+        <cap:severity>Moderate</cap:severity>
+        <cap:certainty>Likely</cap:certainty>
+        <cap:areaDesc>Western Uinta Mountains</cap:areaDesc>
+        <cap:polygon/>
+        <cap:geocode>
+            <valueName>SAME</valueName>
+            <value>049013</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>SAME</valueName>
+            <value>049043</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>SAME</valueName>
+            <value>049051</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>UGC</valueName>
+            <value>UTZ112</value>
+        </cap:geocode>
+        <cap:parameter>
+            <valueName>AWIPSidentifier</valueName>
+            <value>WSWSLC</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>WMOidentifier</valueName>
+            <value>WWUS45 KSLC 262007</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>NWSheadline</valueName>
+            <value>WINTER WEATHER ADVISORY REMAINS IN EFFECT UNTIL NOON MDT MONDAY</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>BLOCKCHANNEL</valueName>
+            <value>EAS</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>BLOCKCHANNEL</valueName>
+            <value>NWEM</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>BLOCKCHANNEL</valueName>
+            <value>CMAS</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>VTEC</valueName>
+            <value>/O.CON.KSLC.WW.Y.0022.251026T2100Z-251027T1800Z/</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>eventEndingTime</valueName>
+            <value>2025-10-27T12:00:00-06:00</value>
+        </cap:parameter>
+        <cap:scope>Public</cap:scope>
+        <cap:code>IPAWSv1.0</cap:code>
+        <cap:language>en-US</cap:language>
+        <cap:web>http://www.weather.gov</cap:web>
+        <cap:eventCode>
+            <valueName>SAME</valueName>
+            <value>NWS</value>
+        </cap:eventCode>
+        <cap:eventCode>
+            <valueName>NationalWeatherService</valueName>
+            <value>WWY</value>
+        </cap:eventCode>
+    </entry>
+    <entry>
         <id>https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.534ca9bbc2cb66c76dfe34d996f82c74a418a7e3.001.1</id>
         <link rel="alternate" href="https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.534ca9bbc2cb66c76dfe34d996f82c74a418a7e3.001.1.cap"/>
         <updated>2025-10-26T14:07:00-06:00</updated>
@@ -3120,98 +3565,6 @@ east of Ogden.</summary>
         <cap:parameter>
             <valueName>expiredReferences</valueName>
             <value>w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.3eaf43b1bcddaeae923a01a1c23bc5e4d2967958.001.1,2025-10-25T14:05:00-06:00</value>
-        </cap:parameter>
-        <cap:scope>Public</cap:scope>
-        <cap:code>IPAWSv1.0</cap:code>
-        <cap:language>en-US</cap:language>
-        <cap:web>http://www.weather.gov</cap:web>
-        <cap:eventCode>
-            <valueName>SAME</valueName>
-            <value>NWS</value>
-        </cap:eventCode>
-        <cap:eventCode>
-            <valueName>NationalWeatherService</valueName>
-            <value>WWY</value>
-        </cap:eventCode>
-    </entry>
-    <entry>
-        <id>https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.534ca9bbc2cb66c76dfe34d996f82c74a418a7e3.002.1</id>
-        <link rel="alternate" href="https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.534ca9bbc2cb66c76dfe34d996f82c74a418a7e3.002.1.cap"/>
-        <updated>2025-10-26T14:07:00-06:00</updated>
-        <published>2025-10-26T14:07:00-06:00</published>
-        <author>
-            <name>NWS</name>
-        </author>
-        <title>Winter Weather Advisory issued October 26 at 2:07PM MDT until October 27 at 12:00PM MDT by NWS Salt Lake City UT</title>
-        <summary>* WHAT...Snow expected. Total snow accumulations 3 to 9 inches above
-8500 feet.
-
-* WHERE...Western Uinta Mountains.
-
-* WHEN...Until noon MDT Monday.
-
-* IMPACTS...Winter driving conditions are expected including Mirror
-Lake Highway.</summary>
-        <cap:event>Winter Weather Advisory</cap:event>
-        <cap:sent>2025-10-26T14:07:00-06:00</cap:sent>
-        <cap:effective>2025-10-26T14:07:00-06:00</cap:effective>
-        <cap:onset>2025-10-26T15:00:00-06:00</cap:onset>
-        <cap:expires>2025-10-27T07:00:00-06:00</cap:expires>
-        <cap:status>Actual</cap:status>
-        <cap:msgType>Update</cap:msgType>
-        <cap:category>Met</cap:category>
-        <cap:urgency>Expected</cap:urgency>
-        <cap:severity>Moderate</cap:severity>
-        <cap:certainty>Likely</cap:certainty>
-        <cap:areaDesc>Western Uinta Mountains</cap:areaDesc>
-        <cap:polygon/>
-        <cap:geocode>
-            <valueName>SAME</valueName>
-            <value>049013</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>SAME</valueName>
-            <value>049043</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>SAME</valueName>
-            <value>049051</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>UGC</valueName>
-            <value>UTZ112</value>
-        </cap:geocode>
-        <cap:parameter>
-            <valueName>AWIPSidentifier</valueName>
-            <value>WSWSLC</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>WMOidentifier</valueName>
-            <value>WWUS45 KSLC 262007</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>NWSheadline</valueName>
-            <value>WINTER WEATHER ADVISORY REMAINS IN EFFECT UNTIL NOON MDT MONDAY</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>BLOCKCHANNEL</valueName>
-            <value>EAS</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>BLOCKCHANNEL</valueName>
-            <value>NWEM</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>BLOCKCHANNEL</valueName>
-            <value>CMAS</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>VTEC</valueName>
-            <value>/O.CON.KSLC.WW.Y.0022.251026T2100Z-251027T1800Z/</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>eventEndingTime</valueName>
-            <value>2025-10-27T12:00:00-06:00</value>
         </cap:parameter>
         <cap:scope>Public</cap:scope>
         <cap:code>IPAWSv1.0</cap:code>
@@ -4558,6 +4911,150 @@ limbs could be blown down and a few power outages may result.</summary>
         </cap:eventCode>
     </entry>
     <entry>
+        <id>https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.d1325c558fd8e70a80c9b2c2392e54c3d46c8b78.001.1</id>
+        <link rel="alternate" href="https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.d1325c558fd8e70a80c9b2c2392e54c3d46c8b78.001.1.cap"/>
+        <updated>2025-10-26T12:48:00-07:00</updated>
+        <published>2025-10-26T12:48:00-07:00</published>
+        <author>
+            <name>NWS</name>
+        </author>
+        <title>Heat Advisory issued October 26 at 12:48PM PDT until October 29 at 7:00PM PDT by NWS Los Angeles/Oxnard CA</title>
+        <summary>* WHAT...Temperatures up to 93 expected.
+
+* WHERE...A portion of southwest California.
+
+* WHEN...From 10 AM Tuesday to 7 PM PDT Wednesday.
+
+* IMPACTS...There is a high risk for heat illness for sensitive
+populations including the very young, the very old, those without
+air conditioning, and those active outdoors.</summary>
+        <cap:event>Heat Advisory</cap:event>
+        <cap:sent>2025-10-26T12:48:00-07:00</cap:sent>
+        <cap:effective>2025-10-26T12:48:00-07:00</cap:effective>
+        <cap:onset>2025-10-28T10:00:00-07:00</cap:onset>
+        <cap:expires>2025-10-27T06:00:00-07:00</cap:expires>
+        <cap:status>Actual</cap:status>
+        <cap:msgType>Update</cap:msgType>
+        <cap:category>Met</cap:category>
+        <cap:urgency>Expected</cap:urgency>
+        <cap:severity>Moderate</cap:severity>
+        <cap:certainty>Likely</cap:certainty>
+        <cap:areaDesc>Ventura County Beaches; Ventura County Inland Coast; Central Ventura County Valleys; Malibu Coast; Los Angeles County Beaches; Palos Verdes Hills; Los Angeles County Inland Coast including Downtown Los Angeles; Western Santa Monica Mountains Recreational Area; Eastern Santa Monica Mountains Recreational Area; Calabasas and Agoura Hills; Western San Fernando Valley; Eastern San Fernando Valley; Southeastern Ventura County Valleys; Santa Susana Mountains; Los Angeles County San Gabriel Valley</cap:areaDesc>
+        <cap:polygon/>
+        <cap:geocode>
+            <valueName>SAME</valueName>
+            <value>006111</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>SAME</valueName>
+            <value>006037</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>UGC</valueName>
+            <value>CAZ354</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>UGC</valueName>
+            <value>CAZ355</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>UGC</valueName>
+            <value>CAZ358</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>UGC</valueName>
+            <value>CAZ362</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>UGC</valueName>
+            <value>CAZ366</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>UGC</valueName>
+            <value>CAZ367</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>UGC</valueName>
+            <value>CAZ368</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>UGC</valueName>
+            <value>CAZ369</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>UGC</valueName>
+            <value>CAZ370</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>UGC</valueName>
+            <value>CAZ371</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>UGC</valueName>
+            <value>CAZ372</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>UGC</valueName>
+            <value>CAZ373</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>UGC</valueName>
+            <value>CAZ374</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>UGC</valueName>
+            <value>CAZ375</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>UGC</valueName>
+            <value>CAZ548</value>
+        </cap:geocode>
+        <cap:parameter>
+            <valueName>AWIPSidentifier</valueName>
+            <value>NPWLOX</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>WMOidentifier</valueName>
+            <value>WWUS76 KLOX 261948</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>NWSheadline</valueName>
+            <value>HEAT ADVISORY NOW IN EFFECT FROM 10 AM TUESDAY TO 7 PM PDT WEDNESDAY</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>BLOCKCHANNEL</valueName>
+            <value>EAS</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>BLOCKCHANNEL</valueName>
+            <value>NWEM</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>BLOCKCHANNEL</valueName>
+            <value>CMAS</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>VTEC</valueName>
+            <value>/O.EXT.KLOX.HT.Y.0010.251028T1700Z-251030T0200Z/</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>eventEndingTime</valueName>
+            <value>2025-10-29T19:00:00-07:00</value>
+        </cap:parameter>
+        <cap:scope>Public</cap:scope>
+        <cap:code>IPAWSv1.0</cap:code>
+        <cap:language>en-US</cap:language>
+        <cap:web>http://www.weather.gov</cap:web>
+        <cap:eventCode>
+            <valueName>SAME</valueName>
+            <value>NWS</value>
+        </cap:eventCode>
+        <cap:eventCode>
+            <valueName>NationalWeatherService</valueName>
+            <value>HTY</value>
+        </cap:eventCode>
+    </entry>
+    <entry>
         <id>https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.d1325c558fd8e70a80c9b2c2392e54c3d46c8b78.004.1</id>
         <link rel="alternate" href="https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.d1325c558fd8e70a80c9b2c2392e54c3d46c8b78.004.1.cap"/>
         <updated>2025-10-26T12:48:00-07:00</updated>
@@ -4841,234 +5338,6 @@ into Monday morning.</summary>
         </cap:eventCode>
     </entry>
     <entry>
-        <id>https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.d1325c558fd8e70a80c9b2c2392e54c3d46c8b78.001.1</id>
-        <link rel="alternate" href="https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.d1325c558fd8e70a80c9b2c2392e54c3d46c8b78.001.1.cap"/>
-        <updated>2025-10-26T12:48:00-07:00</updated>
-        <published>2025-10-26T12:48:00-07:00</published>
-        <author>
-            <name>NWS</name>
-        </author>
-        <title>Heat Advisory issued October 26 at 12:48PM PDT until October 29 at 7:00PM PDT by NWS Los Angeles/Oxnard CA</title>
-        <summary>* WHAT...Temperatures up to 93 expected.
-
-* WHERE...A portion of southwest California.
-
-* WHEN...From 10 AM Tuesday to 7 PM PDT Wednesday.
-
-* IMPACTS...There is a high risk for heat illness for sensitive
-populations including the very young, the very old, those without
-air conditioning, and those active outdoors.</summary>
-        <cap:event>Heat Advisory</cap:event>
-        <cap:sent>2025-10-26T12:48:00-07:00</cap:sent>
-        <cap:effective>2025-10-26T12:48:00-07:00</cap:effective>
-        <cap:onset>2025-10-28T10:00:00-07:00</cap:onset>
-        <cap:expires>2025-10-27T06:00:00-07:00</cap:expires>
-        <cap:status>Actual</cap:status>
-        <cap:msgType>Update</cap:msgType>
-        <cap:category>Met</cap:category>
-        <cap:urgency>Expected</cap:urgency>
-        <cap:severity>Moderate</cap:severity>
-        <cap:certainty>Likely</cap:certainty>
-        <cap:areaDesc>Ventura County Beaches; Ventura County Inland Coast; Central Ventura County Valleys; Malibu Coast; Los Angeles County Beaches; Palos Verdes Hills; Los Angeles County Inland Coast including Downtown Los Angeles; Western Santa Monica Mountains Recreational Area; Eastern Santa Monica Mountains Recreational Area; Calabasas and Agoura Hills; Western San Fernando Valley; Eastern San Fernando Valley; Southeastern Ventura County Valleys; Santa Susana Mountains; Los Angeles County San Gabriel Valley</cap:areaDesc>
-        <cap:polygon/>
-        <cap:geocode>
-            <valueName>SAME</valueName>
-            <value>006111</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>SAME</valueName>
-            <value>006037</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>UGC</valueName>
-            <value>CAZ354</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>UGC</valueName>
-            <value>CAZ355</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>UGC</valueName>
-            <value>CAZ358</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>UGC</valueName>
-            <value>CAZ362</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>UGC</valueName>
-            <value>CAZ366</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>UGC</valueName>
-            <value>CAZ367</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>UGC</valueName>
-            <value>CAZ368</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>UGC</valueName>
-            <value>CAZ369</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>UGC</valueName>
-            <value>CAZ370</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>UGC</valueName>
-            <value>CAZ371</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>UGC</valueName>
-            <value>CAZ372</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>UGC</valueName>
-            <value>CAZ373</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>UGC</valueName>
-            <value>CAZ374</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>UGC</valueName>
-            <value>CAZ375</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>UGC</valueName>
-            <value>CAZ548</value>
-        </cap:geocode>
-        <cap:parameter>
-            <valueName>AWIPSidentifier</valueName>
-            <value>NPWLOX</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>WMOidentifier</valueName>
-            <value>WWUS76 KLOX 261948</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>NWSheadline</valueName>
-            <value>HEAT ADVISORY NOW IN EFFECT FROM 10 AM TUESDAY TO 7 PM PDT WEDNESDAY</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>BLOCKCHANNEL</valueName>
-            <value>EAS</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>BLOCKCHANNEL</valueName>
-            <value>NWEM</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>BLOCKCHANNEL</valueName>
-            <value>CMAS</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>VTEC</valueName>
-            <value>/O.EXT.KLOX.HT.Y.0010.251028T1700Z-251030T0200Z/</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>eventEndingTime</valueName>
-            <value>2025-10-29T19:00:00-07:00</value>
-        </cap:parameter>
-        <cap:scope>Public</cap:scope>
-        <cap:code>IPAWSv1.0</cap:code>
-        <cap:language>en-US</cap:language>
-        <cap:web>http://www.weather.gov</cap:web>
-        <cap:eventCode>
-            <valueName>SAME</valueName>
-            <value>NWS</value>
-        </cap:eventCode>
-        <cap:eventCode>
-            <valueName>NationalWeatherService</valueName>
-            <value>HTY</value>
-        </cap:eventCode>
-    </entry>
-    <entry>
-        <id>https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.4a442f6f501febaeab544641b0bfa169366e45e8.001.1</id>
-        <link rel="alternate" href="https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.4a442f6f501febaeab544641b0bfa169366e45e8.001.1.cap"/>
-        <updated>2025-10-26T13:40:00-06:00</updated>
-        <published>2025-10-26T13:40:00-06:00</published>
-        <author>
-            <name>NWS</name>
-        </author>
-        <title>Winter Weather Advisory issued October 26 at 1:40PM MDT until October 27 at 6:00PM MDT by NWS Billings MT</title>
-        <summary>* WHAT...Snow expected. Total snow accumulations between 4 and 8
-inches. Winds gusting as high as 35 mph.
-
-* WHERE...Northeast Bighorn Mountains.
-
-* WHEN...From 6 PM this evening to 6 PM MDT Monday.
-
-* IMPACTS...Travel could be difficult on Highway 14 and Highway 14
-A. Areas of blowing snow could significantly reduce visibility.</summary>
-        <cap:event>Winter Weather Advisory</cap:event>
-        <cap:sent>2025-10-26T13:40:00-06:00</cap:sent>
-        <cap:effective>2025-10-26T13:40:00-06:00</cap:effective>
-        <cap:onset>2025-10-26T18:00:00-06:00</cap:onset>
-        <cap:expires>2025-10-27T13:45:00-06:00</cap:expires>
-        <cap:status>Actual</cap:status>
-        <cap:msgType>Alert</cap:msgType>
-        <cap:category>Met</cap:category>
-        <cap:urgency>Expected</cap:urgency>
-        <cap:severity>Moderate</cap:severity>
-        <cap:certainty>Likely</cap:certainty>
-        <cap:areaDesc>Northeast Bighorn Mountains</cap:areaDesc>
-        <cap:polygon/>
-        <cap:geocode>
-            <valueName>SAME</valueName>
-            <value>056033</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>UGC</valueName>
-            <value>WYZ198</value>
-        </cap:geocode>
-        <cap:parameter>
-            <valueName>AWIPSidentifier</valueName>
-            <value>WSWBYZ</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>WMOidentifier</valueName>
-            <value>WWUS45 KBYZ 261940</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>NWSheadline</valueName>
-            <value>WINTER WEATHER ADVISORY IN EFFECT FROM 6 PM THIS EVENING TO 6 PM MDT MONDAY</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>BLOCKCHANNEL</valueName>
-            <value>EAS</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>BLOCKCHANNEL</valueName>
-            <value>NWEM</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>BLOCKCHANNEL</valueName>
-            <value>CMAS</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>VTEC</valueName>
-            <value>/O.NEW.KBYZ.WW.Y.0035.251027T0000Z-251028T0000Z/</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>eventEndingTime</valueName>
-            <value>2025-10-27T18:00:00-06:00</value>
-        </cap:parameter>
-        <cap:scope>Public</cap:scope>
-        <cap:code>IPAWSv1.0</cap:code>
-        <cap:language>en-US</cap:language>
-        <cap:web>http://www.weather.gov</cap:web>
-        <cap:eventCode>
-            <valueName>SAME</valueName>
-            <value>NWS</value>
-        </cap:eventCode>
-        <cap:eventCode>
-            <valueName>NationalWeatherService</valueName>
-            <value>WWY</value>
-        </cap:eventCode>
-    </entry>
-    <entry>
         <id>https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.5c904a2f636e954f24e46d95de1a353065a82744.001.1</id>
         <link rel="alternate" href="https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.5c904a2f636e954f24e46d95de1a353065a82744.001.1.cap"/>
         <updated>2025-10-26T12:40:00-07:00</updated>
@@ -5164,6 +5433,90 @@ commute.</summary>
         <cap:parameter>
             <valueName>expiredReferences</valueName>
             <value>w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.b0827f772107c37358ce327d6a509a7288024433.001.1,2025-10-25T13:48:00-07:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.7c3fb9b20bae280b29f9a0fb595f3081664a206d.001.1,2025-10-24T17:13:00-07:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.d0e135ae04b05eeb75a11fb82865b38e956b3e53.001.1,2025-10-24T14:27:00-07:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.9aef6962192fb8a3f828a07ea5fa9143f57754c8.001.1,2025-10-24T01:22:00-07:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.848f66127fca27b037d11e668bdd4bbd0f35d845.001.1,2025-10-23T12:48:00-07:00</value>
+        </cap:parameter>
+        <cap:scope>Public</cap:scope>
+        <cap:code>IPAWSv1.0</cap:code>
+        <cap:language>en-US</cap:language>
+        <cap:web>http://www.weather.gov</cap:web>
+        <cap:eventCode>
+            <valueName>SAME</valueName>
+            <value>NWS</value>
+        </cap:eventCode>
+        <cap:eventCode>
+            <valueName>NationalWeatherService</valueName>
+            <value>WWY</value>
+        </cap:eventCode>
+    </entry>
+    <entry>
+        <id>https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.4a442f6f501febaeab544641b0bfa169366e45e8.001.1</id>
+        <link rel="alternate" href="https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.4a442f6f501febaeab544641b0bfa169366e45e8.001.1.cap"/>
+        <updated>2025-10-26T13:40:00-06:00</updated>
+        <published>2025-10-26T13:40:00-06:00</published>
+        <author>
+            <name>NWS</name>
+        </author>
+        <title>Winter Weather Advisory issued October 26 at 1:40PM MDT until October 27 at 6:00PM MDT by NWS Billings MT</title>
+        <summary>* WHAT...Snow expected. Total snow accumulations between 4 and 8
+inches. Winds gusting as high as 35 mph.
+
+* WHERE...Northeast Bighorn Mountains.
+
+* WHEN...From 6 PM this evening to 6 PM MDT Monday.
+
+* IMPACTS...Travel could be difficult on Highway 14 and Highway 14
+A. Areas of blowing snow could significantly reduce visibility.</summary>
+        <cap:event>Winter Weather Advisory</cap:event>
+        <cap:sent>2025-10-26T13:40:00-06:00</cap:sent>
+        <cap:effective>2025-10-26T13:40:00-06:00</cap:effective>
+        <cap:onset>2025-10-26T18:00:00-06:00</cap:onset>
+        <cap:expires>2025-10-27T13:45:00-06:00</cap:expires>
+        <cap:status>Actual</cap:status>
+        <cap:msgType>Alert</cap:msgType>
+        <cap:category>Met</cap:category>
+        <cap:urgency>Expected</cap:urgency>
+        <cap:severity>Moderate</cap:severity>
+        <cap:certainty>Likely</cap:certainty>
+        <cap:areaDesc>Northeast Bighorn Mountains</cap:areaDesc>
+        <cap:polygon/>
+        <cap:geocode>
+            <valueName>SAME</valueName>
+            <value>056033</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>UGC</valueName>
+            <value>WYZ198</value>
+        </cap:geocode>
+        <cap:parameter>
+            <valueName>AWIPSidentifier</valueName>
+            <value>WSWBYZ</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>WMOidentifier</valueName>
+            <value>WWUS45 KBYZ 261940</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>NWSheadline</valueName>
+            <value>WINTER WEATHER ADVISORY IN EFFECT FROM 6 PM THIS EVENING TO 6 PM MDT MONDAY</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>BLOCKCHANNEL</valueName>
+            <value>EAS</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>BLOCKCHANNEL</valueName>
+            <value>NWEM</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>BLOCKCHANNEL</valueName>
+            <value>CMAS</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>VTEC</valueName>
+            <value>/O.NEW.KBYZ.WW.Y.0035.251027T0000Z-251028T0000Z/</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>eventEndingTime</valueName>
+            <value>2025-10-27T18:00:00-06:00</value>
         </cap:parameter>
         <cap:scope>Public</cap:scope>
         <cap:code>IPAWSv1.0</cap:code>
@@ -5937,6 +6290,108 @@ branches.</summary>
         </cap:eventCode>
     </entry>
     <entry>
+        <id>https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.a935059c6e158d4619b63e55b40eb7562d7f6270.003.1</id>
+        <link rel="alternate" href="https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.a935059c6e158d4619b63e55b40eb7562d7f6270.003.1.cap"/>
+        <updated>2025-10-26T13:15:00-06:00</updated>
+        <published>2025-10-26T13:15:00-06:00</published>
+        <author>
+            <name>NWS</name>
+        </author>
+        <title>Winter Weather Advisory issued October 26 at 1:15PM MDT until October 27 at 6:00PM MDT by NWS Riverton WY</title>
+        <summary>* WHAT...Snow expected. Total snow accumulations of 6 to 10 inches
+along and north of Highway 16. Accumulations of 1 to 4 inches
+farther south. Winds gusting as high as 35 mph.
+
+* WHERE...Bighorn Mountains West.
+
+* WHEN...From 6 PM this evening to 6 PM MDT Monday.
+
+* IMPACTS...Travel could be difficult along mountain roads,
+including over Powder River Pass on Highway 16 and Granite Pass on
+Highway 14.</summary>
+        <cap:event>Winter Weather Advisory</cap:event>
+        <cap:sent>2025-10-26T13:15:00-06:00</cap:sent>
+        <cap:effective>2025-10-26T13:15:00-06:00</cap:effective>
+        <cap:onset>2025-10-26T18:00:00-06:00</cap:onset>
+        <cap:expires>2025-10-27T07:00:00-06:00</cap:expires>
+        <cap:status>Actual</cap:status>
+        <cap:msgType>Alert</cap:msgType>
+        <cap:category>Met</cap:category>
+        <cap:urgency>Expected</cap:urgency>
+        <cap:severity>Moderate</cap:severity>
+        <cap:certainty>Likely</cap:certainty>
+        <cap:areaDesc>Bighorn Mountains West</cap:areaDesc>
+        <cap:polygon/>
+        <cap:geocode>
+            <valueName>SAME</valueName>
+            <value>056003</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>SAME</valueName>
+            <value>056013</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>SAME</valueName>
+            <value>056019</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>SAME</valueName>
+            <value>056025</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>SAME</valueName>
+            <value>056043</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>UGC</valueName>
+            <value>WYZ008</value>
+        </cap:geocode>
+        <cap:parameter>
+            <valueName>AWIPSidentifier</valueName>
+            <value>WSWRIW</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>WMOidentifier</valueName>
+            <value>WWUS45 KRIW 261915</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>NWSheadline</valueName>
+            <value>WINTER WEATHER ADVISORY IN EFFECT FROM 6 PM THIS EVENING TO 6 PM MDT MONDAY</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>BLOCKCHANNEL</valueName>
+            <value>EAS</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>BLOCKCHANNEL</valueName>
+            <value>NWEM</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>BLOCKCHANNEL</valueName>
+            <value>CMAS</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>VTEC</valueName>
+            <value>/O.EXB.KRIW.WW.Y.0029.251027T0000Z-251028T0000Z/</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>eventEndingTime</valueName>
+            <value>2025-10-27T18:00:00-06:00</value>
+        </cap:parameter>
+        <cap:scope>Public</cap:scope>
+        <cap:code>IPAWSv1.0</cap:code>
+        <cap:language>en-US</cap:language>
+        <cap:web>http://www.weather.gov</cap:web>
+        <cap:eventCode>
+            <valueName>SAME</valueName>
+            <value>NWS</value>
+        </cap:eventCode>
+        <cap:eventCode>
+            <valueName>NationalWeatherService</valueName>
+            <value>WWY</value>
+        </cap:eventCode>
+    </entry>
+    <entry>
         <id>https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.a935059c6e158d4619b63e55b40eb7562d7f6270.001.1</id>
         <link rel="alternate" href="https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.a935059c6e158d4619b63e55b40eb7562d7f6270.001.1.cap"/>
         <updated>2025-10-26T13:15:00-06:00</updated>
@@ -6441,73 +6896,96 @@ lower terrain. Winds gusting as high as 60 mph.
         </cap:eventCode>
     </entry>
     <entry>
-        <id>https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.a935059c6e158d4619b63e55b40eb7562d7f6270.003.1</id>
-        <link rel="alternate" href="https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.a935059c6e158d4619b63e55b40eb7562d7f6270.003.1.cap"/>
-        <updated>2025-10-26T13:15:00-06:00</updated>
-        <published>2025-10-26T13:15:00-06:00</published>
+        <id>https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.615fe386486d4eb9122e7afde4f5c48e9a41ff28.001.2</id>
+        <link rel="alternate" href="https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.615fe386486d4eb9122e7afde4f5c48e9a41ff28.001.2.cap"/>
+        <updated>2025-10-26T14:22:00-04:00</updated>
+        <published>2025-10-26T14:22:00-04:00</published>
         <author>
             <name>NWS</name>
         </author>
-        <title>Winter Weather Advisory issued October 26 at 1:15PM MDT until October 27 at 6:00PM MDT by NWS Riverton WY</title>
-        <summary>* WHAT...Snow expected. Total snow accumulations of 6 to 10 inches
-along and north of Highway 16. Accumulations of 1 to 4 inches
-farther south. Winds gusting as high as 35 mph.
+        <title>Freeze Warning issued October 26 at 2:22PM EDT until October 27 at 9:00AM EDT by NWS Upton NY</title>
+        <summary>* WHAT...Sub-freezing temperatures as low as 31 expected.
 
-* WHERE...Bighorn Mountains West.
+* WHERE...In Connecticut, Northern Fairfield, Northern Middlesex,
+Northern New Haven, and Northern New London Counties. In New
+Jersey, Western Passaic County. In New York, Putnam County.
 
-* WHEN...From 6 PM this evening to 6 PM MDT Monday.
+* WHEN...From 1 AM to 9 AM EDT Monday.
 
-* IMPACTS...Travel could be difficult along mountain roads,
-including over Powder River Pass on Highway 16 and Granite Pass on
-Highway 14.</summary>
-        <cap:event>Winter Weather Advisory</cap:event>
-        <cap:sent>2025-10-26T13:15:00-06:00</cap:sent>
-        <cap:effective>2025-10-26T13:15:00-06:00</cap:effective>
-        <cap:onset>2025-10-26T18:00:00-06:00</cap:onset>
-        <cap:expires>2025-10-27T07:00:00-06:00</cap:expires>
+* IMPACTS...Frost and freeze conditions could kill crops and other
+sensitive vegetation.</summary>
+        <cap:event>Freeze Warning</cap:event>
+        <cap:sent>2025-10-26T14:22:00-04:00</cap:sent>
+        <cap:effective>2025-10-26T14:22:00-04:00</cap:effective>
+        <cap:onset>2025-10-27T01:00:00-04:00</cap:onset>
+        <cap:expires>2025-10-27T04:00:00-04:00</cap:expires>
         <cap:status>Actual</cap:status>
         <cap:msgType>Alert</cap:msgType>
         <cap:category>Met</cap:category>
         <cap:urgency>Expected</cap:urgency>
         <cap:severity>Moderate</cap:severity>
         <cap:certainty>Likely</cap:certainty>
-        <cap:areaDesc>Bighorn Mountains West</cap:areaDesc>
+        <cap:areaDesc>Northern Fairfield; Northern New Haven; Northern Middlesex; Northern New London; Western Passaic; Putnam</cap:areaDesc>
         <cap:polygon/>
         <cap:geocode>
             <valueName>SAME</valueName>
-            <value>056003</value>
+            <value>009001</value>
         </cap:geocode>
         <cap:geocode>
             <valueName>SAME</valueName>
-            <value>056013</value>
+            <value>009009</value>
         </cap:geocode>
         <cap:geocode>
             <valueName>SAME</valueName>
-            <value>056019</value>
+            <value>009007</value>
         </cap:geocode>
         <cap:geocode>
             <valueName>SAME</valueName>
-            <value>056025</value>
+            <value>009011</value>
         </cap:geocode>
         <cap:geocode>
             <valueName>SAME</valueName>
-            <value>056043</value>
+            <value>034031</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>SAME</valueName>
+            <value>036079</value>
         </cap:geocode>
         <cap:geocode>
             <valueName>UGC</valueName>
-            <value>WYZ008</value>
+            <value>CTZ005</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>UGC</valueName>
+            <value>CTZ006</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>UGC</valueName>
+            <value>CTZ007</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>UGC</valueName>
+            <value>CTZ008</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>UGC</valueName>
+            <value>NJZ002</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>UGC</valueName>
+            <value>NYZ068</value>
         </cap:geocode>
         <cap:parameter>
             <valueName>AWIPSidentifier</valueName>
-            <value>WSWRIW</value>
+            <value>NPWOKX</value>
         </cap:parameter>
         <cap:parameter>
             <valueName>WMOidentifier</valueName>
-            <value>WWUS45 KRIW 261915</value>
+            <value>WWUS71 KOKX 261822</value>
         </cap:parameter>
         <cap:parameter>
             <valueName>NWSheadline</valueName>
-            <value>WINTER WEATHER ADVISORY IN EFFECT FROM 6 PM THIS EVENING TO 6 PM MDT MONDAY</value>
+            <value>FREEZE WARNING IN EFFECT FROM 1 AM TO 9 AM EDT MONDAY</value>
         </cap:parameter>
         <cap:parameter>
             <valueName>BLOCKCHANNEL</valueName>
@@ -6523,11 +7001,11 @@ Highway 14.</summary>
         </cap:parameter>
         <cap:parameter>
             <valueName>VTEC</valueName>
-            <value>/O.EXB.KRIW.WW.Y.0029.251027T0000Z-251028T0000Z/</value>
+            <value>/O.NEW.KOKX.FZ.W.0004.251027T0500Z-251027T1300Z/</value>
         </cap:parameter>
         <cap:parameter>
             <valueName>eventEndingTime</valueName>
-            <value>2025-10-27T18:00:00-06:00</value>
+            <value>2025-10-27T09:00:00-04:00</value>
         </cap:parameter>
         <cap:scope>Public</cap:scope>
         <cap:code>IPAWSv1.0</cap:code>
@@ -6539,7 +7017,7 @@ Highway 14.</summary>
         </cap:eventCode>
         <cap:eventCode>
             <valueName>NationalWeatherService</valueName>
-            <value>WWY</value>
+            <value>FZW</value>
         </cap:eventCode>
     </entry>
     <entry>
@@ -6579,6 +7057,89 @@ sensitive vegetation.</summary>
         <cap:geocode>
             <valueName>UGC</valueName>
             <value>NYZ067</value>
+        </cap:geocode>
+        <cap:parameter>
+            <valueName>AWIPSidentifier</valueName>
+            <value>NPWOKX</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>WMOidentifier</valueName>
+            <value>WWUS71 KOKX 261822</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>NWSheadline</valueName>
+            <value>FREEZE WARNING IN EFFECT FROM 1 AM TO 9 AM EDT MONDAY</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>BLOCKCHANNEL</valueName>
+            <value>EAS</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>BLOCKCHANNEL</valueName>
+            <value>NWEM</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>BLOCKCHANNEL</valueName>
+            <value>CMAS</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>VTEC</valueName>
+            <value>/O.NEW.KOKX.FZ.W.0004.251027T0500Z-251027T1300Z/</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>eventEndingTime</valueName>
+            <value>2025-10-27T09:00:00-04:00</value>
+        </cap:parameter>
+        <cap:scope>Public</cap:scope>
+        <cap:code>IPAWSv1.0</cap:code>
+        <cap:language>en-US</cap:language>
+        <cap:web>http://www.weather.gov</cap:web>
+        <cap:eventCode>
+            <valueName>SAME</valueName>
+            <value>NWS</value>
+        </cap:eventCode>
+        <cap:eventCode>
+            <valueName>NationalWeatherService</valueName>
+            <value>FZW</value>
+        </cap:eventCode>
+    </entry>
+    <entry>
+        <id>https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.615fe386486d4eb9122e7afde4f5c48e9a41ff28.003.1</id>
+        <link rel="alternate" href="https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.615fe386486d4eb9122e7afde4f5c48e9a41ff28.003.1.cap"/>
+        <updated>2025-10-26T14:22:00-04:00</updated>
+        <published>2025-10-26T14:22:00-04:00</published>
+        <author>
+            <name>NWS</name>
+        </author>
+        <title>Freeze Warning issued October 26 at 2:22PM EDT until October 27 at 9:00AM EDT by NWS Upton NY</title>
+        <summary>* WHAT...Sub-freezing temperatures as low as 31 expected.
+
+* WHERE...Northern Westchester County.
+
+* WHEN...From 1 AM to 9 AM EDT Monday.
+
+* IMPACTS...Frost and freeze conditions could kill crops and other
+sensitive vegetation.</summary>
+        <cap:event>Freeze Warning</cap:event>
+        <cap:sent>2025-10-26T14:22:00-04:00</cap:sent>
+        <cap:effective>2025-10-26T14:22:00-04:00</cap:effective>
+        <cap:onset>2025-10-27T01:00:00-04:00</cap:onset>
+        <cap:expires>2025-10-27T04:00:00-04:00</cap:expires>
+        <cap:status>Actual</cap:status>
+        <cap:msgType>Alert</cap:msgType>
+        <cap:category>Met</cap:category>
+        <cap:urgency>Expected</cap:urgency>
+        <cap:severity>Moderate</cap:severity>
+        <cap:certainty>Likely</cap:certainty>
+        <cap:areaDesc>Northern Westchester</cap:areaDesc>
+        <cap:polygon/>
+        <cap:geocode>
+            <valueName>SAME</valueName>
+            <value>036119</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>UGC</valueName>
+            <value>NYZ070</value>
         </cap:geocode>
         <cap:parameter>
             <valueName>AWIPSidentifier</valueName>
@@ -6782,214 +7343,6 @@ outdoor plants may be killed if left uncovered.</summary>
         <cap:eventCode>
             <valueName>NationalWeatherService</valueName>
             <value>FRY</value>
-        </cap:eventCode>
-    </entry>
-    <entry>
-        <id>https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.615fe386486d4eb9122e7afde4f5c48e9a41ff28.003.1</id>
-        <link rel="alternate" href="https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.615fe386486d4eb9122e7afde4f5c48e9a41ff28.003.1.cap"/>
-        <updated>2025-10-26T14:22:00-04:00</updated>
-        <published>2025-10-26T14:22:00-04:00</published>
-        <author>
-            <name>NWS</name>
-        </author>
-        <title>Freeze Warning issued October 26 at 2:22PM EDT until October 27 at 9:00AM EDT by NWS Upton NY</title>
-        <summary>* WHAT...Sub-freezing temperatures as low as 31 expected.
-
-* WHERE...Northern Westchester County.
-
-* WHEN...From 1 AM to 9 AM EDT Monday.
-
-* IMPACTS...Frost and freeze conditions could kill crops and other
-sensitive vegetation.</summary>
-        <cap:event>Freeze Warning</cap:event>
-        <cap:sent>2025-10-26T14:22:00-04:00</cap:sent>
-        <cap:effective>2025-10-26T14:22:00-04:00</cap:effective>
-        <cap:onset>2025-10-27T01:00:00-04:00</cap:onset>
-        <cap:expires>2025-10-27T04:00:00-04:00</cap:expires>
-        <cap:status>Actual</cap:status>
-        <cap:msgType>Alert</cap:msgType>
-        <cap:category>Met</cap:category>
-        <cap:urgency>Expected</cap:urgency>
-        <cap:severity>Moderate</cap:severity>
-        <cap:certainty>Likely</cap:certainty>
-        <cap:areaDesc>Northern Westchester</cap:areaDesc>
-        <cap:polygon/>
-        <cap:geocode>
-            <valueName>SAME</valueName>
-            <value>036119</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>UGC</valueName>
-            <value>NYZ070</value>
-        </cap:geocode>
-        <cap:parameter>
-            <valueName>AWIPSidentifier</valueName>
-            <value>NPWOKX</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>WMOidentifier</valueName>
-            <value>WWUS71 KOKX 261822</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>NWSheadline</valueName>
-            <value>FREEZE WARNING IN EFFECT FROM 1 AM TO 9 AM EDT MONDAY</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>BLOCKCHANNEL</valueName>
-            <value>EAS</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>BLOCKCHANNEL</valueName>
-            <value>NWEM</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>BLOCKCHANNEL</valueName>
-            <value>CMAS</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>VTEC</valueName>
-            <value>/O.NEW.KOKX.FZ.W.0004.251027T0500Z-251027T1300Z/</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>eventEndingTime</valueName>
-            <value>2025-10-27T09:00:00-04:00</value>
-        </cap:parameter>
-        <cap:scope>Public</cap:scope>
-        <cap:code>IPAWSv1.0</cap:code>
-        <cap:language>en-US</cap:language>
-        <cap:web>http://www.weather.gov</cap:web>
-        <cap:eventCode>
-            <valueName>SAME</valueName>
-            <value>NWS</value>
-        </cap:eventCode>
-        <cap:eventCode>
-            <valueName>NationalWeatherService</valueName>
-            <value>FZW</value>
-        </cap:eventCode>
-    </entry>
-    <entry>
-        <id>https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.615fe386486d4eb9122e7afde4f5c48e9a41ff28.001.2</id>
-        <link rel="alternate" href="https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.615fe386486d4eb9122e7afde4f5c48e9a41ff28.001.2.cap"/>
-        <updated>2025-10-26T14:22:00-04:00</updated>
-        <published>2025-10-26T14:22:00-04:00</published>
-        <author>
-            <name>NWS</name>
-        </author>
-        <title>Freeze Warning issued October 26 at 2:22PM EDT until October 27 at 9:00AM EDT by NWS Upton NY</title>
-        <summary>* WHAT...Sub-freezing temperatures as low as 31 expected.
-
-* WHERE...In Connecticut, Northern Fairfield, Northern Middlesex,
-Northern New Haven, and Northern New London Counties. In New
-Jersey, Western Passaic County. In New York, Putnam County.
-
-* WHEN...From 1 AM to 9 AM EDT Monday.
-
-* IMPACTS...Frost and freeze conditions could kill crops and other
-sensitive vegetation.</summary>
-        <cap:event>Freeze Warning</cap:event>
-        <cap:sent>2025-10-26T14:22:00-04:00</cap:sent>
-        <cap:effective>2025-10-26T14:22:00-04:00</cap:effective>
-        <cap:onset>2025-10-27T01:00:00-04:00</cap:onset>
-        <cap:expires>2025-10-27T04:00:00-04:00</cap:expires>
-        <cap:status>Actual</cap:status>
-        <cap:msgType>Alert</cap:msgType>
-        <cap:category>Met</cap:category>
-        <cap:urgency>Expected</cap:urgency>
-        <cap:severity>Moderate</cap:severity>
-        <cap:certainty>Likely</cap:certainty>
-        <cap:areaDesc>Northern Fairfield; Northern New Haven; Northern Middlesex; Northern New London; Western Passaic; Putnam</cap:areaDesc>
-        <cap:polygon/>
-        <cap:geocode>
-            <valueName>SAME</valueName>
-            <value>009001</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>SAME</valueName>
-            <value>009009</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>SAME</valueName>
-            <value>009007</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>SAME</valueName>
-            <value>009011</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>SAME</valueName>
-            <value>034031</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>SAME</valueName>
-            <value>036079</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>UGC</valueName>
-            <value>CTZ005</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>UGC</valueName>
-            <value>CTZ006</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>UGC</valueName>
-            <value>CTZ007</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>UGC</valueName>
-            <value>CTZ008</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>UGC</valueName>
-            <value>NJZ002</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>UGC</valueName>
-            <value>NYZ068</value>
-        </cap:geocode>
-        <cap:parameter>
-            <valueName>AWIPSidentifier</valueName>
-            <value>NPWOKX</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>WMOidentifier</valueName>
-            <value>WWUS71 KOKX 261822</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>NWSheadline</valueName>
-            <value>FREEZE WARNING IN EFFECT FROM 1 AM TO 9 AM EDT MONDAY</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>BLOCKCHANNEL</valueName>
-            <value>EAS</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>BLOCKCHANNEL</valueName>
-            <value>NWEM</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>BLOCKCHANNEL</valueName>
-            <value>CMAS</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>VTEC</valueName>
-            <value>/O.NEW.KOKX.FZ.W.0004.251027T0500Z-251027T1300Z/</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>eventEndingTime</valueName>
-            <value>2025-10-27T09:00:00-04:00</value>
-        </cap:parameter>
-        <cap:scope>Public</cap:scope>
-        <cap:code>IPAWSv1.0</cap:code>
-        <cap:language>en-US</cap:language>
-        <cap:web>http://www.weather.gov</cap:web>
-        <cap:eventCode>
-            <valueName>SAME</valueName>
-            <value>NWS</value>
-        </cap:eventCode>
-        <cap:eventCode>
-            <valueName>NationalWeatherService</valueName>
-            <value>FZW</value>
         </cap:eventCode>
     </entry>
     <entry>
@@ -9134,128 +9487,6 @@ morning. Additional rises are possible thereafter.
         </cap:eventCode>
     </entry>
     <entry>
-        <id>https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.68493f38e8ec9476c9a5036b7eb4d8e044ecdfee.001.1</id>
-        <link rel="alternate" href="https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.68493f38e8ec9476c9a5036b7eb4d8e044ecdfee.001.1.cap"/>
-        <updated>2025-10-26T04:30:00-07:00</updated>
-        <published>2025-10-26T04:30:00-07:00</published>
-        <author>
-            <name>NWS</name>
-        </author>
-        <title>Winter Weather Advisory issued October 26 at 4:30AM PDT until October 26 at 11:00PM PDT by NWS Seattle WA</title>
-        <summary>* WHAT...Snow expected. Additional snow accumulations of 3 to 6
-inches above 3500 feet except on Mount Rainier where 5 to 10
-inches is forecast.
-
-* WHERE...Cascades of Snohomish and Northern King Counties, Cascades
-of Whatcom and Skagit Counties, Cascades of Pierce and Lewis
-Counties, and Cascades of Southern King County.
-
-* WHEN...Until 11 PM PDT this evening.
-
-* IMPACTS...Travel could be very difficult.</summary>
-        <cap:event>Winter Weather Advisory</cap:event>
-        <cap:sent>2025-10-26T04:30:00-07:00</cap:sent>
-        <cap:effective>2025-10-26T04:30:00-07:00</cap:effective>
-        <cap:onset>2025-10-26T04:30:00-07:00</cap:onset>
-        <cap:expires>2025-10-26T16:00:00-07:00</cap:expires>
-        <cap:status>Actual</cap:status>
-        <cap:msgType>Update</cap:msgType>
-        <cap:category>Met</cap:category>
-        <cap:urgency>Expected</cap:urgency>
-        <cap:severity>Moderate</cap:severity>
-        <cap:certainty>Likely</cap:certainty>
-        <cap:areaDesc>Cascades of Whatcom and Skagit Counties; Cascades of Snohomish and Northern King Counties; Cascades of Southern King County; Cascades of Pierce and Lewis Counties</cap:areaDesc>
-        <cap:polygon/>
-        <cap:geocode>
-            <valueName>SAME</valueName>
-            <value>053073</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>SAME</valueName>
-            <value>053057</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>SAME</valueName>
-            <value>053061</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>SAME</valueName>
-            <value>053033</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>SAME</valueName>
-            <value>053053</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>SAME</valueName>
-            <value>053041</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>UGC</valueName>
-            <value>WAZ301</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>UGC</valueName>
-            <value>WAZ302</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>UGC</valueName>
-            <value>WAZ303</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>UGC</valueName>
-            <value>WAZ304</value>
-        </cap:geocode>
-        <cap:parameter>
-            <valueName>AWIPSidentifier</valueName>
-            <value>WSWSEW</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>WMOidentifier</valueName>
-            <value>WWUS46 KSEW 261130</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>NWSheadline</valueName>
-            <value>WINTER WEATHER ADVISORY REMAINS IN EFFECT UNTIL 11 PM PDT THIS EVENING</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>BLOCKCHANNEL</valueName>
-            <value>EAS</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>BLOCKCHANNEL</valueName>
-            <value>NWEM</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>BLOCKCHANNEL</valueName>
-            <value>CMAS</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>VTEC</valueName>
-            <value>/O.CON.KSEW.WW.Y.0017.000000T0000Z-251027T0600Z/</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>eventEndingTime</valueName>
-            <value>2025-10-26T23:00:00-07:00</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>expiredReferences</valueName>
-            <value>w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.1c74b40ec44a7a77d73b30323efed26a8388a37a.001.1,2025-10-25T05:04:00-07:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.dc25c8fcccc048038f9ac5de14bda73f033c36e6.001.1,2025-10-24T15:18:00-07:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.f6c1a59e4cd60fb7c1b52d2af241206c87a6e7b7.001.1,2025-10-24T02:03:00-07:00</value>
-        </cap:parameter>
-        <cap:scope>Public</cap:scope>
-        <cap:code>IPAWSv1.0</cap:code>
-        <cap:language>en-US</cap:language>
-        <cap:web>http://www.weather.gov</cap:web>
-        <cap:eventCode>
-            <valueName>SAME</valueName>
-            <value>NWS</value>
-        </cap:eventCode>
-        <cap:eventCode>
-            <valueName>NationalWeatherService</valueName>
-            <value>WWY</value>
-        </cap:eventCode>
-    </entry>
-    <entry>
         <id>https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.e2bd0cac4aa91533af264d3d455dbe068843855c.001.1</id>
         <link rel="alternate" href="https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.e2bd0cac4aa91533af264d3d455dbe068843855c.001.1.cap"/>
         <updated>2025-10-26T02:21:00-07:00</updated>
@@ -9367,55 +9598,47 @@ https://www.wrh.noaa.gov/map/?wfo=mfr</summary>
         </cap:eventCode>
     </entry>
     <entry>
-        <id>https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.34c1194f9afe2f22ec395a82462c7e28de908617.001.1</id>
-        <link rel="alternate" href="https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.34c1194f9afe2f22ec395a82462c7e28de908617.001.1.cap"/>
+        <id>https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.34c1194f9afe2f22ec395a82462c7e28de908617.004.1</id>
+        <link rel="alternate" href="https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.34c1194f9afe2f22ec395a82462c7e28de908617.004.1.cap"/>
         <updated>2025-10-26T01:26:00-07:00</updated>
         <published>2025-10-26T01:26:00-07:00</published>
         <author>
             <name>NWS</name>
         </author>
         <title>Wind Advisory issued October 26 at 1:26AM PDT until October 26 at 9:00PM PDT by NWS Reno NV</title>
-        <summary>* WHAT...Southwest winds 20 to 30 mph with gusts up to 50 mph. Wind
-gusts up to 70 mph along wind prone areas of US-395 from
-Susanville south to California-Nevada stateline.
+        <summary>* WHAT...West winds 20 to 30 mph with gusts up to 50 mph. Gusts up
+to 65 mph along wind prone areas of US-95 near Walker Lake.
 
-* WHERE...Lassen-Eastern Plumas-Eastern Sierra Counties.
+* WHERE...Mineral and Southern Lyon Counties.
 
 * WHEN...From 11 AM this morning to 9 PM PDT this evening.
 
 * IMPACTS...Gusty winds will blow around unsecured objects. Tree
-limbs could be blown down and a few power outages may result.
-
-* ADDITIONAL DETAILS...The strongest winds will be mainly near and
-south of Susanville.</summary>
+limbs could be blown down and a few power outages may result.</summary>
         <cap:event>Wind Advisory</cap:event>
         <cap:sent>2025-10-26T01:26:00-07:00</cap:sent>
         <cap:effective>2025-10-26T01:26:00-07:00</cap:effective>
         <cap:onset>2025-10-26T11:00:00-07:00</cap:onset>
         <cap:expires>2025-10-26T21:00:00-07:00</cap:expires>
         <cap:status>Actual</cap:status>
-        <cap:msgType>Alert</cap:msgType>
+        <cap:msgType>Update</cap:msgType>
         <cap:category>Met</cap:category>
         <cap:urgency>Expected</cap:urgency>
         <cap:severity>Moderate</cap:severity>
         <cap:certainty>Likely</cap:certainty>
-        <cap:areaDesc>Lassen-Eastern Plumas-Eastern Sierra Counties</cap:areaDesc>
+        <cap:areaDesc>Mineral and Southern Lyon Counties</cap:areaDesc>
         <cap:polygon/>
         <cap:geocode>
             <valueName>SAME</valueName>
-            <value>006035</value>
+            <value>032019</value>
         </cap:geocode>
         <cap:geocode>
             <valueName>SAME</valueName>
-            <value>006063</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>SAME</valueName>
-            <value>006091</value>
+            <value>032021</value>
         </cap:geocode>
         <cap:geocode>
             <valueName>UGC</valueName>
-            <value>CAZ071</value>
+            <value>NVZ001</value>
         </cap:geocode>
         <cap:parameter>
             <valueName>AWIPSidentifier</valueName>
@@ -9427,7 +9650,7 @@ south of Susanville.</summary>
         </cap:parameter>
         <cap:parameter>
             <valueName>NWSheadline</valueName>
-            <value>WIND ADVISORY IN EFFECT FROM 11 AM THIS MORNING TO 9 PM PDT THIS EVENING</value>
+            <value>WIND ADVISORY NOW IN EFFECT FROM 11 AM THIS MORNING TO 9 PM PDT THIS EVENING</value>
         </cap:parameter>
         <cap:parameter>
             <valueName>BLOCKCHANNEL</valueName>
@@ -9443,7 +9666,94 @@ south of Susanville.</summary>
         </cap:parameter>
         <cap:parameter>
             <valueName>VTEC</valueName>
-            <value>/O.EXB.KREV.WI.Y.0019.251026T1800Z-251027T0400Z/</value>
+            <value>/O.EXT.KREV.WI.Y.0019.251026T1800Z-251027T0400Z/</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>eventEndingTime</valueName>
+            <value>2025-10-26T21:00:00-07:00</value>
+        </cap:parameter>
+        <cap:scope>Public</cap:scope>
+        <cap:code>IPAWSv1.0</cap:code>
+        <cap:language>en-US</cap:language>
+        <cap:web>http://www.weather.gov</cap:web>
+        <cap:eventCode>
+            <valueName>SAME</valueName>
+            <value>NWS</value>
+        </cap:eventCode>
+        <cap:eventCode>
+            <valueName>NationalWeatherService</valueName>
+            <value>WIY</value>
+        </cap:eventCode>
+    </entry>
+    <entry>
+        <id>https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.34c1194f9afe2f22ec395a82462c7e28de908617.003.1</id>
+        <link rel="alternate" href="https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.34c1194f9afe2f22ec395a82462c7e28de908617.003.1.cap"/>
+        <updated>2025-10-26T01:26:00-07:00</updated>
+        <published>2025-10-26T01:26:00-07:00</published>
+        <author>
+            <name>NWS</name>
+        </author>
+        <title>Wind Advisory issued October 26 at 1:26AM PDT until October 26 at 9:00PM PDT by NWS Reno NV</title>
+        <summary>* WHAT...Southwest winds 20 to 35 mph with gusts up to 60 mph. Gusts
+up to 75 mph in wind prone areas along US-395. Ridge gusts up to
+100 mph.
+
+* WHERE...Mono County.
+
+* WHEN...From 11 AM this morning to 9 PM PDT this evening.
+
+* IMPACTS...Gusty winds will blow around unsecured objects. Tree
+limbs could be blown down and a few power outages may result.
+Small boats, kayaks and paddle boards will be prone to capsizing
+and should remain off lake waters until conditions improve.</summary>
+        <cap:event>Wind Advisory</cap:event>
+        <cap:sent>2025-10-26T01:26:00-07:00</cap:sent>
+        <cap:effective>2025-10-26T01:26:00-07:00</cap:effective>
+        <cap:onset>2025-10-26T11:00:00-07:00</cap:onset>
+        <cap:expires>2025-10-26T21:00:00-07:00</cap:expires>
+        <cap:status>Actual</cap:status>
+        <cap:msgType>Update</cap:msgType>
+        <cap:category>Met</cap:category>
+        <cap:urgency>Expected</cap:urgency>
+        <cap:severity>Moderate</cap:severity>
+        <cap:certainty>Likely</cap:certainty>
+        <cap:areaDesc>Mono</cap:areaDesc>
+        <cap:polygon/>
+        <cap:geocode>
+            <valueName>SAME</valueName>
+            <value>006051</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>UGC</valueName>
+            <value>CAZ073</value>
+        </cap:geocode>
+        <cap:parameter>
+            <valueName>AWIPSidentifier</valueName>
+            <value>NPWREV</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>WMOidentifier</valueName>
+            <value>WWUS75 KREV 260826</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>NWSheadline</valueName>
+            <value>WIND ADVISORY NOW IN EFFECT FROM 11 AM THIS MORNING TO 9 PM PDT THIS EVENING</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>BLOCKCHANNEL</valueName>
+            <value>EAS</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>BLOCKCHANNEL</valueName>
+            <value>NWEM</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>BLOCKCHANNEL</valueName>
+            <value>CMAS</value>
+        </cap:parameter>
+        <cap:parameter>
+            <valueName>VTEC</valueName>
+            <value>/O.EXT.KREV.WI.Y.0019.251026T1800Z-251027T0400Z/</value>
         </cap:parameter>
         <cap:parameter>
             <valueName>eventEndingTime</valueName>
@@ -9780,134 +10090,55 @@ and should remain off lake waters until conditions improve.</summary>
         </cap:eventCode>
     </entry>
     <entry>
-        <id>https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.34c1194f9afe2f22ec395a82462c7e28de908617.004.1</id>
-        <link rel="alternate" href="https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.34c1194f9afe2f22ec395a82462c7e28de908617.004.1.cap"/>
+        <id>https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.34c1194f9afe2f22ec395a82462c7e28de908617.001.1</id>
+        <link rel="alternate" href="https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.34c1194f9afe2f22ec395a82462c7e28de908617.001.1.cap"/>
         <updated>2025-10-26T01:26:00-07:00</updated>
         <published>2025-10-26T01:26:00-07:00</published>
         <author>
             <name>NWS</name>
         </author>
         <title>Wind Advisory issued October 26 at 1:26AM PDT until October 26 at 9:00PM PDT by NWS Reno NV</title>
-        <summary>* WHAT...West winds 20 to 30 mph with gusts up to 50 mph. Gusts up
-to 65 mph along wind prone areas of US-95 near Walker Lake.
+        <summary>* WHAT...Southwest winds 20 to 30 mph with gusts up to 50 mph. Wind
+gusts up to 70 mph along wind prone areas of US-395 from
+Susanville south to California-Nevada stateline.
 
-* WHERE...Mineral and Southern Lyon Counties.
-
-* WHEN...From 11 AM this morning to 9 PM PDT this evening.
-
-* IMPACTS...Gusty winds will blow around unsecured objects. Tree
-limbs could be blown down and a few power outages may result.</summary>
-        <cap:event>Wind Advisory</cap:event>
-        <cap:sent>2025-10-26T01:26:00-07:00</cap:sent>
-        <cap:effective>2025-10-26T01:26:00-07:00</cap:effective>
-        <cap:onset>2025-10-26T11:00:00-07:00</cap:onset>
-        <cap:expires>2025-10-26T21:00:00-07:00</cap:expires>
-        <cap:status>Actual</cap:status>
-        <cap:msgType>Update</cap:msgType>
-        <cap:category>Met</cap:category>
-        <cap:urgency>Expected</cap:urgency>
-        <cap:severity>Moderate</cap:severity>
-        <cap:certainty>Likely</cap:certainty>
-        <cap:areaDesc>Mineral and Southern Lyon Counties</cap:areaDesc>
-        <cap:polygon/>
-        <cap:geocode>
-            <valueName>SAME</valueName>
-            <value>032019</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>SAME</valueName>
-            <value>032021</value>
-        </cap:geocode>
-        <cap:geocode>
-            <valueName>UGC</valueName>
-            <value>NVZ001</value>
-        </cap:geocode>
-        <cap:parameter>
-            <valueName>AWIPSidentifier</valueName>
-            <value>NPWREV</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>WMOidentifier</valueName>
-            <value>WWUS75 KREV 260826</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>NWSheadline</valueName>
-            <value>WIND ADVISORY NOW IN EFFECT FROM 11 AM THIS MORNING TO 9 PM PDT THIS EVENING</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>BLOCKCHANNEL</valueName>
-            <value>EAS</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>BLOCKCHANNEL</valueName>
-            <value>NWEM</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>BLOCKCHANNEL</valueName>
-            <value>CMAS</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>VTEC</valueName>
-            <value>/O.EXT.KREV.WI.Y.0019.251026T1800Z-251027T0400Z/</value>
-        </cap:parameter>
-        <cap:parameter>
-            <valueName>eventEndingTime</valueName>
-            <value>2025-10-26T21:00:00-07:00</value>
-        </cap:parameter>
-        <cap:scope>Public</cap:scope>
-        <cap:code>IPAWSv1.0</cap:code>
-        <cap:language>en-US</cap:language>
-        <cap:web>http://www.weather.gov</cap:web>
-        <cap:eventCode>
-            <valueName>SAME</valueName>
-            <value>NWS</value>
-        </cap:eventCode>
-        <cap:eventCode>
-            <valueName>NationalWeatherService</valueName>
-            <value>WIY</value>
-        </cap:eventCode>
-    </entry>
-    <entry>
-        <id>https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.34c1194f9afe2f22ec395a82462c7e28de908617.003.1</id>
-        <link rel="alternate" href="https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.34c1194f9afe2f22ec395a82462c7e28de908617.003.1.cap"/>
-        <updated>2025-10-26T01:26:00-07:00</updated>
-        <published>2025-10-26T01:26:00-07:00</published>
-        <author>
-            <name>NWS</name>
-        </author>
-        <title>Wind Advisory issued October 26 at 1:26AM PDT until October 26 at 9:00PM PDT by NWS Reno NV</title>
-        <summary>* WHAT...Southwest winds 20 to 35 mph with gusts up to 60 mph. Gusts
-up to 75 mph in wind prone areas along US-395. Ridge gusts up to
-100 mph.
-
-* WHERE...Mono County.
+* WHERE...Lassen-Eastern Plumas-Eastern Sierra Counties.
 
 * WHEN...From 11 AM this morning to 9 PM PDT this evening.
 
 * IMPACTS...Gusty winds will blow around unsecured objects. Tree
 limbs could be blown down and a few power outages may result.
-Small boats, kayaks and paddle boards will be prone to capsizing
-and should remain off lake waters until conditions improve.</summary>
+
+* ADDITIONAL DETAILS...The strongest winds will be mainly near and
+south of Susanville.</summary>
         <cap:event>Wind Advisory</cap:event>
         <cap:sent>2025-10-26T01:26:00-07:00</cap:sent>
         <cap:effective>2025-10-26T01:26:00-07:00</cap:effective>
         <cap:onset>2025-10-26T11:00:00-07:00</cap:onset>
         <cap:expires>2025-10-26T21:00:00-07:00</cap:expires>
         <cap:status>Actual</cap:status>
-        <cap:msgType>Update</cap:msgType>
+        <cap:msgType>Alert</cap:msgType>
         <cap:category>Met</cap:category>
         <cap:urgency>Expected</cap:urgency>
         <cap:severity>Moderate</cap:severity>
         <cap:certainty>Likely</cap:certainty>
-        <cap:areaDesc>Mono</cap:areaDesc>
+        <cap:areaDesc>Lassen-Eastern Plumas-Eastern Sierra Counties</cap:areaDesc>
         <cap:polygon/>
         <cap:geocode>
             <valueName>SAME</valueName>
-            <value>006051</value>
+            <value>006035</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>SAME</valueName>
+            <value>006063</value>
+        </cap:geocode>
+        <cap:geocode>
+            <valueName>SAME</valueName>
+            <value>006091</value>
         </cap:geocode>
         <cap:geocode>
             <valueName>UGC</valueName>
-            <value>CAZ073</value>
+            <value>CAZ071</value>
         </cap:geocode>
         <cap:parameter>
             <valueName>AWIPSidentifier</valueName>
@@ -9919,7 +10150,7 @@ and should remain off lake waters until conditions improve.</summary>
         </cap:parameter>
         <cap:parameter>
             <valueName>NWSheadline</valueName>
-            <value>WIND ADVISORY NOW IN EFFECT FROM 11 AM THIS MORNING TO 9 PM PDT THIS EVENING</value>
+            <value>WIND ADVISORY IN EFFECT FROM 11 AM THIS MORNING TO 9 PM PDT THIS EVENING</value>
         </cap:parameter>
         <cap:parameter>
             <valueName>BLOCKCHANNEL</valueName>
@@ -9935,7 +10166,7 @@ and should remain off lake waters until conditions improve.</summary>
         </cap:parameter>
         <cap:parameter>
             <valueName>VTEC</valueName>
-            <value>/O.EXT.KREV.WI.Y.0019.251026T1800Z-251027T0400Z/</value>
+            <value>/O.EXB.KREV.WI.Y.0019.251026T1800Z-251027T0400Z/</value>
         </cap:parameter>
         <cap:parameter>
             <valueName>eventEndingTime</valueName>
